@@ -1,0 +1,33 @@
+---
+user-guide-title: Erste Schritte mit Experience Platform für Datenarchitekten und Dateningenieure
+breadcrumb-title: Erste Schritte für Datenarchitekten und -ingenieure
+user-guide-description: Ein praktisches Tutorial zur Implementierung von Platform. Beispieldaten und Kreativelemente werden bereitgestellt.
+audience: all
+doc-type: multipage
+recommendations: noDisplay,noCatalog
+source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 46%
+
+---
+
+
+# Erste Schritte mit Experience Platform für Datenarchitekten und Dateningenieure {#getting-started-for-data-architects-and-data-engineers}
+
++ [Tutorial zum Datenarchitekten und -ingenieur](overview.md)
++ [1. Berechtigungen konfigurieren](configure-permissions.md)
++ [2. Sandbox erstellen](create-a-sandbox.md)
++ [3. Einrichten von Developer Console und Postman](set-up-developer-console-and-postman.md)
++ [4. Modelldaten in Schemata](model-data-in-schemas.md)
++ [5. Zuordnungsidentitäten](map-identities.md)
++ [6. Erstellen von Datensätzen](create-datasets.md)
++ [7. Profile aktivieren](enable-profiles.md)
++ [8. Abonnieren von Datenerfassungsereignissen](subscribe-to-data-ingestion-events.md)
++ [9. Batch-Daten erfassen](ingest-batch-data.md)
++ [10. Aufnehmen von Streaming-Daten](ingest-streaming-data.md)
++ [11. Zusammenführungsrichtlinien erstellen](create-merge-policies.md)
++ [12. Data Governance-Framework anwenden](apply-data-governance-framework.md)
++ [13. Abfragen ausführen](run-queries.md)
++ [14. Segmente erstellen](build-segments.md)
++ [Zusammenfassung](conclusion.md)
