@@ -3,9 +3,9 @@ title: Erstellen eines XDM-Schemas für Webdaten
 description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webdaten erstellen. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
+source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1125'
 ht-degree: 6%
 
 ---
@@ -47,7 +47,7 @@ In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen Grundfeldgrupp
 
    >[!NOTE]
    >
-   >Wenn Sie Kunde einer plattformbasierten Anwendung wie der Echtzeit-Kundendatenplattform sind, empfehlen wir für dieses Tutorial die Verwendung einer Entwicklungs-Sandbox.
+   >Wenn Sie Kunde einer plattformbasierten Anwendung wie der Echtzeit-Kundendatenplattform sind, empfehlen wir für dieses Tutorial die Verwendung einer Entwicklungs-Sandbox. Wenn nicht, verwenden Sie die **[!UICONTROL Prod]** Sandbox.
 
 1. Navigieren Sie zu **[!UICONTROL Schemas]** in der linken Navigation
 1. Wählen Sie die **[!UICONTROL Schema erstellen]** Schaltfläche oben rechts
@@ -63,10 +63,10 @@ Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein pro
 
 >[!TIP]
 > 
->In dieser Übung fügen Sie die empfohlenen vordefinierten Feldergruppen für die Web-Datenerfassung hinzu: _**[!UICONTROL ExperienceEvent-Mixin für das AEP Web SDK]**_ und _**[!UICONTROL Ereignis für Kundenerlebnisse]**_.
+>In dieser Übung fügen Sie die empfohlenen vordefinierten Feldergruppen für die Web-Datenerfassung hinzu: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ und _**[!UICONTROL Ereignis für Kundenerlebnisse]**_.
 
-1. Keep **[!UICONTROL Vorhandene Feldergruppe verwenden]** Optionsfeld ausgewählt
-1. Suchen Sie nach [!UICONTROL `AEP Web SDK ExperienceEvent Mixin`].
+1. Im **[!UICONTROL Feldergruppen]** Bereich, wählen Sie **[!UICONTROL Hinzufügen]**
+1. Suchen Sie nach [!UICONTROL `AEP Web SDK ExperienceEvent`].
 1. Aktivieren Sie das Kontrollkästchen
 1. Suchen Sie nach [!UICONTROL `Consumer Experience Event`].
 1. Aktivieren Sie das Kontrollkästchen
@@ -83,7 +83,7 @@ Wenn die Feldergruppen ausgewählt sind, können Sie Ihr Schema benennen. Eine g
 
 ![Luma-Web-Ereignisdaten](assets/schema-luma-web-event-data.png)
 
-Beachten Sie bei beiden Feldergruppen, dass Sie Zugriff auf die am häufigsten verwendeten Schlüssel-Wert-Paare haben, die für die Datenerfassung im Internet erforderlich sind. Wenn Sie auf einen der Feldgruppennamen klicken, wird in der Benutzeroberfläche hervorgehoben, zu welchen Schlüssel-Wert-Paargruppierungen gehören. Im folgenden Beispiel sehen Sie, zu welchen Gruppen gehören **[!UICONTROL Ereignis für Kundenerlebnisse]**.
+Beachten Sie bei beiden Feldergruppen, dass Sie Zugriff auf die am häufigsten verwendeten Schlüssel-Wert-Paare haben, die für die Datenerfassung im Internet erforderlich sind. Die [!UICONTROL Anzeigename] für Marketing-Experten in der Segment Builder-Oberfläche von Platform-basierten Anwendungen angezeigt werden und Sie können den Anzeigenamen von Standardfeldern an Ihre Anforderungen anpassen. Sie können auch Felder entfernen, die Sie nicht möchten. Wenn Sie auf einen der Feldgruppennamen klicken, wird in der Benutzeroberfläche hervorgehoben, zu welchen Schlüssel-Wert-Paargruppierungen gehören. Im folgenden Beispiel sehen Sie, zu welchen Gruppen gehören **[!UICONTROL Ereignis für Kundenerlebnisse]**.
 
 ![Schemafeldgruppen](assets/schema-consumer-experience-event.jpg)
 

@@ -3,9 +3,9 @@ title: Berechtigungen für das Tutorial konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf das Experience Platform Web SDK anfordern und die zum Abschließen des Tutorials "Implementieren von Adobe Experience Cloud mit Web SDK"erforderliche Berechtigung konfigurieren.
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 7%
 
 ---
@@ -16,14 +16,14 @@ Erfahren Sie, wie Sie den Zugriff auf das Experience Platform Web SDK anfordern 
 
 ## Datenerfassung
 
-* Erhalten Sie Berechtigungen für **[!UICONTROL Entwickeln]**, **[!UICONTROL Bearbeiten]**, **[!UICONTROL Genehmigen]**, **[!UICONTROL Veröffentlichen]**, **[!UICONTROL Verwalten von Erweiterungen]** und **[!UICONTROL Verwalten von Umgebungen]** Tag-Eigenschaften. Weitere Informationen zu Berechtigungen für Tags finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de).
+* Erhalten Sie Berechtigungen für **[!UICONTROL Entwickeln]**, **[!UICONTROL Bearbeiten]**, **[!UICONTROL Genehmigen]**, **[!UICONTROL Veröffentlichen]**, **[!UICONTROL Verwalten von Erweiterungen]**, **[!UICONTROL Verwalten von Umgebungen]** und **[!UICONTROL Eigenschaften verwalten]**. Weitere Informationen zu Berechtigungen für Tags finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de).
 * Wenn Sie die Lektion zur optionalen Ereignisweiterleitung abschließen, verfügen Sie über eine Produktlizenz, die die Edge-Weiterleitung und das Berechtigungselement enthält **[!UICONTROL Plattformen]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
 Diese Funktionen sollten für alle Experience Cloud-Kunden verfügbar sein, auch wenn Sie keine plattformbasierte Anwendung wie die Echtzeit-Kundendatenplattform verwenden.
 
-* Zugriff auf **Standardproduktion** Sandbox.
+* Zugriff auf **Standardproduktion**, **&quot;Prod&quot;** Sandbox (.
 * Zugriff auf **[!UICONTROL Verwalten von Schemas]** und **[!UICONTROL Anzeigen von Schemas]** under **[!UICONTROL Datenmodellierung]**
 * Zugriff auf **[!UICONTROL Verwalten von Identitäts-Namespaces]** und **[!UICONTROL Anzeigen von Identitäts-Namespaces]** under **[!UICONTROL Identity Management]**
 * Zugriff auf **[!UICONTROL Verwalten von Datenspeichern]** und **[!UICONTROL Anzeigen von Datenspeichern]** under **[!UICONTROL Datenerfassung]**

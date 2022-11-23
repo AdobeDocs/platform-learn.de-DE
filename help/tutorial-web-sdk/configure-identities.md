@@ -3,9 +3,9 @@ title: Identitäts-Namespace konfigurieren
 description: Erfahren Sie, wie Sie Identitäts-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
 feature: Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2b5013ea01bf4e2388a6e1fc046b1685945be238
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '695'
 ht-degree: 8%
 
 ---
@@ -52,6 +52,11 @@ Erstellen Sie nun einen Namespace für die Luma CRM-ID:
 
 1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target=&quot;_blank&quot;}
 1. Wählen Sie die Sandbox aus, die Sie für das Tutorial verwenden
+
+   >[!NOTE]
+   >
+   >Wenn Sie Kunde einer plattformbasierten Anwendung wie der Echtzeit-Kundendatenplattform sind, empfehlen wir für dieses Tutorial die Verwendung einer Entwicklungs-Sandbox. Wenn nicht, verwenden Sie die **[!UICONTROL Prod]** Sandbox.
+
 1. Auswählen **[!UICONTROL Identitäten]** in der linken Navigation
 1. Klicken Sie auf **[!UICONTROL Durchsuchen]**
 
