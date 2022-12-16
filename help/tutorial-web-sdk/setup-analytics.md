@@ -3,9 +3,9 @@ title: Einrichten von Adobe Analytics mithilfe des Experience Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Analytics mithilfe des Experience Platform Web SDK einrichten. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3554'
 ht-degree: 2%
 
 ---
@@ -121,7 +121,7 @@ Erfassen Sie als Nächstes zusätzliche Daten aus der Datenschicht &quot;Luma&qu
 
 ### Erstellen von E-Commerce-Datenelementen
 
-Während der Lektion zum Erstellen von Datenelementen haben Sie folgende Möglichkeiten: [erstellte JavaScript-Datenelemente](create-data-elements.md#create-data-elements-to-capture-the-data-layer) , die Inhalte und Identitätsdetails erfasst haben. Jetzt erstellen Sie zusätzliche Datenelemente, um E-Commerce-Daten zu erfassen. Da die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} verwendet unterschiedliche Datenschichtstrukturen für Produktdetailseiten und Produkte im Warenkorb. Sie müssen Datenelemente für jedes Szenario erstellen. Verwenden Sie die unten angegebenen Code-Snippets:
+Während der Lektion zum Erstellen von Datenelementen haben Sie folgende Möglichkeiten: [erstellte JavaScript-Datenelemente](create-data-elements.md#create-data-elements-to-capture-the-data-layer) , die Inhalte und Identitätsdetails erfasst haben. Jetzt erstellen Sie zusätzliche Datenelemente, um E-Commerce-Daten zu erfassen. Da die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} verwendet unterschiedliche Datenschichtstrukturen für Produktdetailseiten und Produkte im Warenkorb. Sie müssen Datenelemente für jedes Szenario erstellen. Sie müssen einige Datenelemente mit benutzerdefiniertem Code erstellen, um die benötigten Daten aus der Luma-Datenschicht abzurufen, was bei der Implementierung auf Ihrer eigenen Site erforderlich sein kann oder nicht. In diesem Fall müssen Sie eine Reihe von Warenkorbelementen durchlaufen, um spezifische Details zu den einzelnen Produkten abzurufen. Verwenden Sie die unten angegebenen Code-Snippets:
 
 1. Öffnen Sie die Tag-Eigenschaft, die Sie für das Tutorial verwenden
 1. Navigieren Sie zu **[!UICONTROL Datenelemente]**
