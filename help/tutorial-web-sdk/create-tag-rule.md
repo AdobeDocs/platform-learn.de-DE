@@ -3,10 +3,10 @@ title: Tag-Regel erstellen
 description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform Edge Network senden. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 6%
+source-wordcount: '849'
+ht-degree: 5%
 
 ---
 
@@ -54,6 +54,8 @@ Hier gilt;
 
 ## Tag-Regel erstellen
 
+In -Tags werden Regeln verwendet, um unter verschiedenen Bedingungen Aktionen (Aufrufe auslösen) auszuführen. Sie verwenden diese erste Regel, um das XDM-Objekt mithilfe des Web SDKs an das Edge-Netzwerk zu senden. [!UICONTROL Ereignis senden] Aktion. Später in diesem Tutorial senden Sie verschiedene Versionen des XDM-Objekts basierend auf dem Typ der Seite, auf der sich der Besucher befindet. Aus diesem Grund verwenden Sie Regelbedingungen, um diese anderen Seitentypen auszuschließen.
+
 So erstellen Sie eine Tag-Regel:
 
 1. Öffnen Sie die Tag-Eigenschaft, die Sie für dieses Tutorial verwenden
@@ -84,7 +86,7 @@ So erstellen Sie eine Tag-Regel:
 1. Fügen Sie drei weitere Ausnahmen für die folgenden URL-Pfade hinzu
 
    * **`Core - checkout page`** for `/content/luma/us/en/user/checkout.html`
-   * **`Core - thank you page`** für `/content/luma/us/en/user/checkout/order/thank-you.html`
+   * **`Core - thank you page`** for `/content/luma/us/en/user/checkout/order/thank-you.html`
    * **`Core - product page`** für `/products/` mit aktiviertem Regex-Schalter
 
    ![Bedingungen hinzufügen](assets/rule-condition-exception-all.png)
