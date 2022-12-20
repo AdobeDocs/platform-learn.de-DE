@@ -2,7 +2,7 @@
 title: Erstellen eines Datenspeichers
 description: Erstellen eines Datenspeichers
 exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Im nächsten Bildschirm können Sie hinzufügen, welche Adobe-Produkte und -Dien
 
 Unternehmen haben normalerweise einen Promotionspfad für alle Website-Aktualisierungen. Jemand im Unternehmen (ein Marketing-Experte oder -Techniker, je nach Änderungen) testet seine Änderungen in einer Entwicklungsumgebung, die nur von dieser Person verwendet wird. Sobald sie mit den Änderungen vertraut sind, werden die Änderungen in eine Staging-Umgebung weitergeleitet, in der sie weitere Tests erhalten. Schließlich werden die Änderungen auf der Produktions-Website veröffentlicht, die Benutzer sehen. Datastreams unterstützen dieses Promotion-Muster.
 
-Wenn Sie plattformbasierte Anwendungen wie Echtzeit-Kundendatenplattform, Journey Optimizer oder Customer Journey Analytics unterstützen, müssen zusätzliche Datenspeicher in den separaten Platform-Sandboxes erstellt werden, die diesen Umgebungen entsprechen.
+Wenn Sie plattformbasierte Anwendungen wie Real-Time CDP, Journey Optimizer oder Customer Journey Analytics unterstützen, müssen zusätzliche Datenspeicher in den separaten Platform-Sandboxes erstellt werden, die diesen Umgebungen entsprechen.
 
 Wenn Sie kein Platform-Kunde sind, können Sie mehrere Datenspeicher in einer Sandbox erstellen und die Funktion zum Kopieren von Datensätzen verwenden, um Einstellungen zu duplizieren.
 

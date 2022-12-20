@@ -6,7 +6,7 @@ feature: Sources
 kt: 3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 15%
@@ -23,4 +23,4 @@ Mit dem Adobe Analytics Source Connector können Sie Daten aus Adobe Analytics n
 >
 > Dieses Video ist Teil eines Kurses [Datenaufnahme für Dateningenieure](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion?lang=de), kostenlos auf Experience League!
 
-Weitere Informationen finden Sie im [Dokumentation zum Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+Weitere Informationen finden Sie im [Dokumentation zum Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).

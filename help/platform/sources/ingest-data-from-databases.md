@@ -1,12 +1,12 @@
 ---
 title: Daten mithilfe eines Datenbank-Quell-Connectors erfassen
-description: In diesem Video wird erläutert, wie Sie nahtlos und skalierbar eine Batch-Erfassung von Daten aus einer Datenbankquelle in das Echtzeit-Kundenprofil von Adobe Experience Platform und den Experience Data Lake durchführen können.
+description: In diesem Video wird erläutert, wie Sie nahtlos und skalierbar einen Batch-Datensatz aus einer Datenbankquelle in das Echtzeit-Kundenprofil von Adobe Experience Platform und den Experience Data Lake integrieren können.
 role: Data Engineer
 feature: Sources
 kt: 6546
 thumbnail: 329317.jpg
 exl-id: c881e088-9569-4342-8f27-3815f187b217
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Daten mithilfe des Datenbank-Quell-Connectors erfassen
 
-In diesem Video wird erläutert, wie Sie nahtlos und skalierbar eine Batch-Erfassung von Daten aus einer Datenbankquelle in das Echtzeit-Kundenprofil von Adobe Experience Platform und den Experience Data Lake durchführen können. Weitere Informationen finden Sie in der Produktdokumentation unter [Datenbank](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) auf der Übersichtsseite &quot;Source Connectors&quot;.
+In diesem Video wird erläutert, wie Sie nahtlos und skalierbar einen Batch-Datensatz aus einer Datenbankquelle in das Echtzeit-Kundenprofil von Adobe Experience Platform und den Experience Data Lake integrieren können. Weitere Informationen finden Sie in der Produktdokumentation unter [Datenbank](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) auf der Übersichtsseite &quot;Source Connectors&quot;.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329317?quality=12&learn=on)
 

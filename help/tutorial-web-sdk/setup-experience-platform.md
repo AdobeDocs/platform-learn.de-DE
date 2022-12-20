@@ -2,7 +2,7 @@
 title: Streamen von Daten an Adobe Experience Platform mit dem Web SDK
 description: Erfahren Sie, wie Sie Webdaten mit dem Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 10%
@@ -23,7 +23,7 @@ Am Ende dieser Lektion können Sie:
 
 * Datensatz in Adobe Experience Platform erstellen
 * Konfigurieren des Datenspeichers zum Senden von Web SDK-Daten an Adobe Experience Platform
-* Aktivieren von Streaming-Webdaten für Echtzeit-Kundenprofil
+* Streaming-Webdaten für Echtzeit-Kundenprofil aktivieren
 * Überprüfen, ob die Daten sowohl im Platform-Datensatz als auch im Echtzeit-Kundenprofil gelandet sind
 
 ## Voraussetzungen
@@ -235,7 +235,7 @@ Zunächst müssen Sie weitere Beispieldaten generieren. Wiederholen Sie die Schr
 
    ![Kundenprofil](assets/experience-platform-validate-dataset-custProfile.png)
 
-Sie haben jetzt das Platform Web SDK für die Experience Platform aktiviert (und die Echtzeit-Kundendatenplattform! Und Customer Journey Analytics! Und Journey Optimizer!)!
+Sie haben jetzt das Platform Web SDK für die Experience Platform aktiviert (und Real-Time CDP! Und Customer Journey Analytics! Und Journey Optimizer!)!
 
 
 [Weiter: ](setup-analytics.md)

@@ -6,7 +6,7 @@ role: User
 kt: 9257
 thumbnail: 338249.jpg
 exl-id: a1bde52d-33f7-4de2-953e-ff7abcc7ef84
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -21,6 +21,6 @@ Erfahren Sie, wie B2B-Marketer (Business-to-Business) Benutzer und Kontoprofile 
 
 >[!INFO]
 >
-> Dieses Video ist Teil eines Kurses, [Erste Schritte mit der Echtzeit-Kundendatenplattform, B2B Edition für Marketing-Experten](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), kostenlos auf Experience League!
+> Dieses Video ist Teil eines Kurses, [Erste Schritte mit Real-Time CDP, B2B Edition für Marketer](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), kostenlos auf Experience League!
 
-Weitere Informationen finden Sie unter [Dokumentation zur Echtzeit-Kundendatenplattform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).
+Weitere Informationen finden Sie unter [Dokumentation zu Real-Time CDP B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).

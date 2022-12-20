@@ -1,6 +1,6 @@
 ---
 title: Echtzeit-Kundenprofile aktivieren
-seo-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Echtzeit-Kundenprofile aktivieren
 description: In dieser Lektion aktivieren Sie Ihre Schemas und Datensätze für das Echtzeit-Kundenprofil.
 role: Data Architect
@@ -8,10 +8,10 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ Es gibt wichtige [Limits für Echtzeit-Kundenprofil-Daten](https://experiencelea
 
 <!--is this accurate. Are there other considerations to point out? -->
 
-**Datenarchitekten** muss Echtzeit-Kundenprofil außerhalb dieses Tutorials aktivieren.
+**Datenarchitekten** müssen das Echtzeit-Kundenprofil außerhalb dieses Tutorials aktiviert werden.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über das Echtzeit-Kundenprofil zu erfahren:
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
@@ -118,7 +118,7 @@ Sie sollten in der Benutzeroberfläche sehen können, dass alle fünf Schemas f�
 ![Alle Schemas aktiviert](assets/profile-allSchemasEnabled.png)
 
 
-## Aktivieren von Datensätzen für Echtzeit-Kundenprofil über die Platform-Benutzeroberfläche
+## Aktivieren von Datensätzen für Echtzeit-Kundenprofil über die Benutzeroberfläche von Platform
 
 Die Datensätze müssen auch für Profil aktiviert werden, und der Prozess ist noch einfacher:
 

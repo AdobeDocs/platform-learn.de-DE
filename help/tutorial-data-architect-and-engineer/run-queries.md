@@ -8,10 +8,10 @@ feature: Queries
 kt: 4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 15%
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 15%
 <!-- 15 min-->
 In dieser Lektion erfahren Sie, wie Sie Abfragen einrichten, schreiben und ausführen, um die erfassten Daten zu validieren.
 
-Adobe Experience Platform Query Service hilft Ihnen, Ihre Daten zu verstehen, indem es Ihnen ermöglicht, SQL-Standard zur Abfrage von Daten in Platform zu verwenden. Mit Query Service können Sie beliebige Datensätze in den Daten-Pool einbinden und die Abfragen als neuen Datensatz erfassen, der bei Reporting und maschinellem Lernen oder zur Aufnahme in das Echtzeit-Kundenprofil verwendet werden kann.
+Adobe Experience Platform Query Service hilft Ihnen, Ihre Daten zu verstehen, indem es Ihnen ermöglicht, SQL-Standard zur Abfrage von Daten in Platform zu verwenden. Mithilfe von Query Service können Sie einen beliebigen Datensatz in den Data Lake einbinden und die Abfrageergebnisse als neuen Datensatz erfassen, der für Berichte, maschinelles Lernen oder die Aufnahme in das Echtzeit-Kundenprofil verwendet werden kann.
 
 **Datenarchitekten** und **Dateningenieure** müssen den Abfragedienst außerhalb dieses Tutorials verwenden.
 

@@ -8,7 +8,7 @@ feature: Data Governance
 kt: 4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 <!-- 30 min-->
 In dieser Lektion erstellen wir einige Segmente basierend auf den Profildaten, die wir in den vorherigen Lektionen erfasst haben.
 
-Sobald Sie Echtzeit-Kundenprofile haben, können Sie Segmente von Einzelanwendern erstellen, die ähnliche Eigenschaften aufweisen und möglicherweise ähnlich auf Marketing-Strategien reagieren. Die Bausteine dieser Segmente sind die XDM-Felder, die Sie zuvor erstellt haben.
+Sobald Sie über Echtzeit-Kundenprofile verfügen, können Sie Segmente von Einzelanwendern erstellen, die ähnliche Eigenschaften aufweisen und möglicherweise ähnlich auf Marketing-Strategien reagieren. Die Bausteine dieser Segmente sind die XDM-Felder, die Sie zuvor erstellt haben.
 
 **Datenarchitekten** müssen Segmente außerhalb dieses Tutorials erstellen und ihre Kollegen bei dieser Aufgabe unterstützen.
 

@@ -2,7 +2,7 @@
 title: Erstellen eines XDM-Schemas
 description: Erfahren Sie, wie Sie ein XDM-Schema für App-Ereignisse erstellen.
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 15%
@@ -53,7 +53,7 @@ In dieser Lektion werden Sie:
 
    >[!NOTE]
    >
-   > Kunden von plattformbasierten Anwendungen wie der Echtzeit-Kundendatenplattform sollten für dieses Tutorial eine Entwicklungs-Sandbox verwenden. Andere Kunden verwenden die standardmäßige Produktions-Sandbox.
+   > Kunden von Platform-basierten Anwendungen wie Real-Time CDP sollten für dieses Tutorial eine Entwicklungs-Sandbox verwenden. Andere Kunden verwenden die standardmäßige Produktions-Sandbox.
 
 
 1. Auswählen **[!UICONTROL Schemas]** under **[!UICONTROL Data Management]**.
@@ -66,7 +66,7 @@ Sie befinden sich nun auf der Hauptseite der Schemas und erhalten eine Liste der
 * **Klassen** definieren die Verhaltensaspekte der Daten, die das Schema enthält. Beispiel: `XDM ExperienceEvent` erfasst Zeitreihen, Ereignisdaten und `XDM Individual Profile` erfasst Attributdaten zu einer Person.
 * **Datentypen** werden als Referenzfeldtypen in Klassen oder Feldgruppen auf die gleiche Weise wie grundlegende literale Felder verwendet.
 
-Die obigen Beschreibungen geben einen Überblick auf hoher Ebene. Weitere Informationen finden Sie unter [Schema-Bausteine](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=de) Video oder lesen [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) in der Produktdokumentation.
+Die obigen Beschreibungen geben einen Überblick auf hoher Ebene. Weitere Informationen finden Sie unter [Schema-Bausteine](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=de) Video oder lesen [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de) in der Produktdokumentation.
 
 In diesem Tutorial verwenden Sie die Feldergruppe &quot;Consumer Experience Event&quot;und erstellen eine benutzerdefinierte, um den Prozess zu demonstrieren.
 

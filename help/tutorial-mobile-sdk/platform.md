@@ -2,7 +2,7 @@
 title: Daten an Adobe Experience Platform senden
 description: Erfahren Sie, wie Sie Daten an Adobe Experience Platform senden.
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 Erfahren Sie, wie Sie Daten an Adobe Experience Platform senden.
 
-Diese optionale Lektion ist für alle Kunden von Real-time Customer Data Platform (Echtzeit-Kundendatenplattform), Journey Optimizer und Customer Journey Analytics relevant. Experience Platform, die Grundlage von Experience Cloud-Produkten, ist ein offenes System, das all Ihre Daten - Adobe und Nicht-Adobe - in robuste Kundenprofile umwandelt, die in Echtzeit aktualisiert werden und mithilfe von KI-gestützten Einblicken die richtigen Erlebnisse für alle  bereitstellt.
+Diese optionale Lektion ist für alle Kunden von Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer und Customer Journey Analytics relevant. Experience Platform, die Grundlage von Experience Cloud-Produkten, ist ein offenes System, das all Ihre Daten - Adobe und Nicht-Adobe - in robuste Kundenprofile umwandelt, die in Echtzeit aktualisiert werden und mithilfe von KI-gestützten Einblicken die richtigen Erlebnisse für alle  bereitstellt.
 
 Die [event](events.md), [Lebenszyklus](lifecycle-data.md)und [identity](identity.md) Daten, die Sie in früheren Lektionen gesammelt und an Platform Edge Network gesendet haben, werden an die in Ihrem Datastream konfigurierten Dienste weitergeleitet, einschließlich Adobe Experience Platform.
 
@@ -31,7 +31,7 @@ In dieser Lektion werden Sie:
 * Erstellen Sie einen Experience Platform-Datensatz.
 * Validieren Sie Daten im Datensatz.
 * Aktivieren Sie Ihr Schema und Ihren Datensatz für das Echtzeit-Kundenprofil.
-* Validieren von Daten im Echtzeit-Kundenprofil.
+* Validieren Sie Daten im Echtzeit-Kundenprofil.
 * Validieren Sie Daten im Identitätsdiagramm.
 
 

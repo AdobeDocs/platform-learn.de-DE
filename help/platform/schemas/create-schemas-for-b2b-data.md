@@ -7,7 +7,7 @@ role: Data Architect
 kt: 9258
 thumbnail: 338241.jpg
 exl-id: bbb47887-f982-4831-8002-6d1fa539a39b
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 5%
@@ -22,6 +22,6 @@ Erfahren Sie, wie Sie mit Real-time Customer Data Platform, B2B Edition Schemas 
 
 >[!INFO]
 >
-> Dieses Video ist Teil eines Kurses, [Erste Schritte mit der Echtzeit-Kundendatenplattform, B2B Edition für Marketing-Experten](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), kostenlos auf Experience League!
+> Dieses Video ist Teil eines Kurses, [Erste Schritte mit Real-Time CDP, B2B Edition für Marketer](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), kostenlos auf Experience League!
 
 Weitere Informationen finden Sie unter [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
