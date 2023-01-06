@@ -2,9 +2,9 @@
 title: VEC-Aktivitäten rendern | Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie Visual Experience Composer-Aktivitäten mit einer Web SDK-Implementierung von Adobe Target abrufen und anwenden.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
+source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Target-Aktivitäten werden entweder mit dem Visual Experience Composer (VEC) oder dem formularbasierten Composer eingerichtet. Das Platform Web SDK kann VEC-basierte Aktivitäten wie at.js abrufen und auf die Seite anwenden. Für diesen Teil der Migration werden Sie:
 
-* Installieren Sie bei Bedarf die Browsererweiterung Visual Editing Helper .
+* Installieren der Visual Editing Helper-Browsererweiterung
 * Führen Sie einen `sendEvent` mit dem Platform Web SDK aufrufen, um Aktivitäten anzufordern.
 * Aktualisieren Sie alle Verweise Ihrer at.js-Implementierung, die `getOffers()` zum Ausführen eines Target `pageLoad` -Anfrage.
 

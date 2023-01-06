@@ -1,9 +1,9 @@
 ---
 title: Vergleich von at.js 2.x mit Web SDK | Migrieren von Target von at.js 2.x zum Web SDK
 description: Lernen Sie die Unterschiede zwischen at.js 2.x und dem Platform Web SDK kennen, einschließlich Funktionen, Einstellungen und Datenfluss.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2164'
 ht-degree: 8%
 
 ---
@@ -44,7 +44,7 @@ Wenn Sie mit dem Platform Web SDK noch nicht vertraut sind, machen Sie sich kein
 | Weiterleitungsangebote | Unterstützt | Unterstützt. Eine Umleitung von einer Seite mit Platform Web SDK zu einer Seite mit at.js (und umgekehrt) wird jedoch nicht unterstützt. |
 | On-Device Decisioning | Unterstützt | Derzeit nicht unterstützt |
 | Vorabruf-mboxes | Unterstützt | Teilweise unterstützt. Wenden Sie sich an den Support, um diese Funktion zu aktivieren, da sie das Verhalten beim Vorabruf der Aktivität ändert. |
-| Benutzerspezifische Ereignisse | Unterstützt | Teilweise unterstützt über [Überwachungshooks](https://github.com/adobe/alloy/wiki/Monitoring-Hooks) |
+| Benutzerspezifische Ereignisse | Unterstützt | Nicht unterstützt. Siehe [öffentliche Roadmap](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) für den aktuellen Status. |
 | Antwort-Token | Unterstützt | Unterstützt. Siehe Abschnitt [Dokumentation zu dedizierten Antwort-Token](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) für Codebeispiele und Unterschiede zwischen at.js und Platform Web SDK |
 | Datenanbieter   | Unterstützt | Nicht unterstützt. Benutzerdefinierter Code kann zum Trigger eines Platform Web SDK verwendet werden `sendEvent` -Befehl aus, nachdem Daten von einem anderen Anbieter abgerufen wurden. |
 
@@ -79,7 +79,7 @@ Viele at.js-Funktionen verwenden einen äquivalenten Ansatz mit dem Platform Web
 | `trackEvent()` und `sendNotifications()` | Verwenden Sie die `sendEvent` -Befehl mit [spezifisch `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) set:<br><br>`decisioning.propositionDisplay` signalisiert das Rendering einer Aktivität<br><br>`decisioning.propositionInteract` signalisiert eine Benutzerinteraktion mit einer Aktivität, z. B. einen Mausklick. |
 | `targetGlobalSettings()` | Keine direkte Entsprechung. Siehe Abschnitt [Vergleich der Zieleinstellungen](detailed-comparison.md) für weitere Details. |
 | `targetPageParams()` und `targetPageParamsAll()` | Alle Daten, die an die `xdm` der `sendEvent` -Befehl den Target-Mbox-Parametern zugeordnet. Da Mbox-Parameter mit serialisierter Punktnotation benannt werden, müssen Sie bei der Migration zum Platform Web SDK möglicherweise vorhandene Zielgruppen und Aktivitäten aktualisieren, um die neuen Mbox-Parameternamen zu verwenden. <br><br>Daten, die als Teil von `data.__adobe.target` des `sendEvent` -Befehl wird zugeordnet zu [Target-Profil und Recommendations-spezifische Parameter](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| Benutzerdefinierte at.js-Ereignisse | Nicht unterstützt. Allerdings [Antwort-Token](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) als Teil der `propositions` in der Antwort der `sendEvent` aufrufen. |
+| Benutzerdefinierte at.js-Ereignisse | Nicht unterstützt. Siehe [öffentliche Roadmap](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) für den aktuellen Status. [Antwort-Token](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) als Teil der `propositions` in der Antwort der `sendEvent` aufrufen. |
 
 ## at.js-Einstellungen und entsprechende Platform Web SDK-Elemente
 
