@@ -30,7 +30,7 @@ ht-degree: 38%
 + Web SDK{#web-sdk}
    + [Übersicht](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
-   + [Implementierungs-Tutorial (mit Tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Implementierungs-Tutorial (mit Tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de){target=&quot;_blank&quot;}
    + Einverständnis{#consent}
       + [Übersicht](web-sdk/consent/overview.md)
       + [Festlegen von Zustimmungswerten mithilfe des Adobe-Standards](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +41,7 @@ ht-degree: 38%
    + [Übersicht](mobile-sdk/overview.md)
    + [Erstellen mobiler Eigenschaften](mobile-sdk/create-mobile-properties.md)
    + [Verwenden von Abhängigkeitsmanagern](mobile-sdk/use-dependency-managers.md)
-   + [Implementieren in Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Implementieren in Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de){target=&quot;_blank&quot;}
 + Server-API{#server-api}
    + [Übersicht](server-api/overview.md)
    + [Grundlagen von APIs](server-api/introduction.md)
