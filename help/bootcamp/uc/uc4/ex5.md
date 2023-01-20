@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: b44d2a7ad44dd113889a7f996d7e33da46402b4a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1497'
 ht-degree: 2%
 
 ---
@@ -31,7 +30,7 @@ Verwenden wir das Projekt, das Sie in [4.4 Datenvorbereitung in Analysis Workspa
 
 Öffnen Sie Ihr Projekt `yourLastName - Omnichannel Analysis`.
 
-Mit geöffnetem Projekt und Datenansicht `yourLastName - Omnichannel Analysis` ausgewählt haben, können Sie mit der Erstellung Ihrer ersten Visualisierungen beginnen.
+Mit geöffnetem Projekt und Datenansicht `CJA Bootcamp - Omnichannel Data View` ausgewählt haben, können Sie mit der Erstellung Ihrer ersten Visualisierungen beginnen.
 
 ![Demo](./images/prodataView1.png)
 
@@ -41,7 +40,7 @@ Zunächst müssen wir die richtigen Daten für die Analyse der Daten auswählen.
 
 >[!IMPORTANT]
 >
->Wählen Sie einen Datumsbereich wie **Diese Woche** oder **Diesen Monat**. Die neuesten verfügbaren Daten wurden am 19. September 2022 erfasst.
+>Die neuesten verfügbaren Daten wurden am 9.19.2022 erfasst. Bitte wählen Sie einen Datumsbereich aus, der dieses Datum enthält.
 
 ![Demo](./images/pro1.png)
 
@@ -77,7 +76,7 @@ Klicken Sie anschließend auf **Auswahl sperren** und wählen Sie **Ausgewählte
 
 ![Demo](./images/pro7b.png)
 
-## Die fünf häufigsten angezeigten Produkte
+## Die vier beliebtesten Produkte
 
 Welche Produkte werden am häufigsten angezeigt?
 
@@ -88,7 +87,7 @@ Vergessen Sie nicht, das Projekt ab und zu zu zu speichern.
 | Windows | Kontrolle + S |
 | Mac | Befehl + S |
 
-Beginnen wir damit, die fünf am häufigsten angezeigten Produkte zu finden. Suchen Sie im Menü links die **Produktname** - Dimension.
+Beginnen wir damit, die vier am häufigsten angezeigten Produkte zu finden. Suchen Sie im Menü links die **Produktname** - Dimension.
 
 ![Demo](./images/pro8.png)
 
@@ -102,7 +101,7 @@ Versuchen Sie als Nächstes, eines der Produkte nach Markenname aufzuschlüsseln
 
 ![Demo](./images/pro13.png)
 
-Erstellen Sie anschließend eine Aufschlüsselung mithilfe des Benutzeragenten. Suchen Sie nach **Benutzeragent** und ziehen Sie es unter den Markennamen.
+Erstellen Sie anschließend eine Aufschlüsselung anhand der Treuestufe. Suchen Sie nach **Treuestufe** und ziehen Sie es unter den Markennamen.
 
 ![Demo](./images/pro15.png)
 
@@ -114,7 +113,7 @@ Schließlich können Sie weitere Visualisierungen hinzufügen. Suchen Sie auf de
 
 ![Demo](./images/pro18.png)
 
-Wählen Sie als Nächstes in der Tabelle die ersten 5 **Benutzeragent**  Zeilen aus der Aufschlüsselung, die wir unter **Google Pixel XL 32 GB Black Smartphone** > **Citi Signal**. Halten Sie bei Auswahl der fünf Zeilen die **STRG** (unter Windows) oder **Befehl** Schaltfläche (in Mac).
+Wählen Sie als Nächstes in der Tabelle die 3 **Treuestufe**  Zeilen aus der Aufschlüsselung, die wir unter **Google Pixel XL 32 GB Black Smartphone** > **Citi Signal**. Halten Sie bei Auswahl der drei Zeilen die **STRG** (unter Windows) oder **Befehl** Schaltfläche (in Mac).
 
 ![Demo](./images/pro20.png)
 
@@ -154,7 +153,7 @@ Klicken Sie auf die Visualisierung **Fallout**.
 
 Wählen Sie denselben Datumsbereich wie in der vorherigen Übung aus.
 
-![Demo](./images/prodatef.png)
+![Demo](./images/pro1.png)
 
 Dann wirst du das sehen.
 
@@ -216,7 +215,7 @@ Daraufhin sehen Sie Folgendes:
 
 Wählen Sie denselben Datumsbereich wie in der vorherigen Übung aus.
 
-![Demo](./images/pro0b.png)
+![Demo](./images/pro1.png)
 
 Dimension suchen **Seitenname** unter den Komponenten auf der linken Seite:
 
@@ -297,7 +296,7 @@ Fügen Sie jetzt ein neues leeres Bedienfeld hinzu, indem Sie auf **+ Leeres Bed
 
 Wählen Sie denselben Datumsbereich wie in der vorherigen Übung aus.
 
-![Demo](./images/pro24d.png)
+![Demo](./images/pro1.png)
 
 Klicken Sie auf **Freiformtabelle**.
 

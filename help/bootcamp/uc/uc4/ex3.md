@@ -5,11 +5,10 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 402e032fe150745893528ffbd6a01533f30fb5d6
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 2%
+source-wordcount: '1615'
+ht-degree: 3%
 
 ---
 
@@ -175,6 +174,8 @@ Als Nächstes müssen Sie viele Dimensionen und Metriken konfigurieren, wie in d
 | Transaction ID | Transaction ID |  |
 | URL (web.webPageDetails.URL) | URL |  |
 | Benutzeragent | Benutzeragent | Zuletzt verwendete Sitzung |
+| usw | Treuestufe |  |
+| Punkte | Kundenlebenszeitwert |  |
 
 ### METRIKEN
 

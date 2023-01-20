@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 3%
 
 ---
@@ -60,7 +59,7 @@ Suche nach dem Datensatz `Demo System - Event Dataset for Website (Global v1.1)`
 
 ![Demo](./images/cja7.png)
 
-Suchen Sie jetzt und aktivieren Sie die Kontrollkästchen für `Demo System - Event Dataset for Voice Assistants (Global v1.1)` und `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Suchen Sie jetzt und aktivieren Sie die Kontrollkästchen für `Demo System - Profile Dataset for Loyalty (Global v1.1)` und `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
 Dann wirst du das haben. Klicken Sie auf **Weiter**.
 
@@ -84,7 +83,7 @@ Sie können jedoch weiterhin beeinflussen, welche Kennung zum Zuordnen von Daten
 
 Wie bereits erwähnt, können Sie für jeden Datensatz verschiedene Personen-IDs festlegen. Auf diese Weise können Sie verschiedene Datensätze aus mehreren Quellen in CJA zusammenführen. Stellen Sie sich vor, Sie würden NPS- oder Umfragedaten einbringen, die sehr interessant und hilfreich wären, um den Kontext und die Gründe zu verstehen, warum etwas passiert ist.
 
-Der Name des Felds Personen-ID ist nicht wichtig, solange der Wert in den Feldern Personen-ID übereinstimmt. Sagen wir, wir haben `email` in einem Datensatz und `emailAddress` in einem anderen Datensatz, der als Personen-ID definiert ist. Wenn `delaigle@adobe.com` denselben Wert für das Personen-ID-Feld in beiden Datensätzen hat, kann CJA die Daten zuordnen.
+Der Name des Felds Personen-ID ist nicht wichtig, solange der Wert in den Feldern Personen-ID übereinstimmt. Wenn die Personen-ID beispielsweise `email` in einem Datensatz und `emailAddress` in einem anderen und `dnb-bootcamp@adobe.com` denselben Wert für das Personen-ID-Feld in beiden Datensätzen hat, kann CJA die Daten zuordnen.
 
 Derzeit gibt es einige andere Einschränkungen, wie die Zuordnung des anonymen Verhaltens zu bekannt. Lesen Sie die häufig gestellten Fragen hier: [FAQs](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de).
 
@@ -107,7 +106,7 @@ Sobald Sie die drei Datensätze zugeordnet haben, können wir fortfahren.
 | Datensatz | Personen-ID |
 | ----------------- |-------------| 
 | Demosystem - Ereignis-Datensatz für Website (Global v1.1) | email |
-| Demosystem - Ereignis-Datensatz für Sprachassistenten (Global v1.1) | email |
+| Demosystem - Profildatensatz für Treueprogramm (Global v1.1) | email |
 | Demosystem - Ereignis-Datensatz für das Callcenter (Global v1.1) | email |
 
 Sie müssen außerdem sicherstellen, dass diese Optionen für jeden Datensatz aktiviert sind:

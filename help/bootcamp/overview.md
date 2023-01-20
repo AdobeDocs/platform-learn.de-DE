@@ -3,9 +3,9 @@ title: Experience Maker Bootcamp
 description: Startpunkt für Teilnehmer des Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '716'
 ht-degree: 1%
 
 ---
@@ -28,41 +28,45 @@ Personalisierung im Maßstab beginnt damit, zu verstehen, was verbessert werden 
 
 10.00 - 10.30 Uhr: Schnellstart und Einführung
 
-10.30 - 11.15 Uhr: Whiteboard-Sitzung: &quot;1-1 Personalisierung, Reibungsjagd, Silos, Adobe POV&quot;
+10.30 - 11.00 Uhr: &quot;Customer Journey Demo - Art des Möglichen&quot;
 
-11.15 - 11.30 Uhr: Break
+11.00 - 11.45 Uhr: Whiteboard-Sitzung: &quot;1-1 Personalisierung, Reibungsjagd, Silos, Adobe POV&quot;
 
-11.30 - 12.00 Uhr: &quot;Customer Journey Demo - Art des Möglichen&quot;
+11.45 - 12.00 Uhr: Break
 
-12.00 - 12.45 Uhr: Whiteboard-Sitzung: &quot;Aufschlüsselung der Lösungsarchitektur&quot;
+12.00 - 13.00 Uhr: Whiteboard-Sitzung: &quot;Aufschlüsselung der Lösungsarchitektur&quot;
 
-12.45 - 13.45 Uhr: Break
+13.00 - 14.00 Uhr: Mittagessen
 
-13.45 - 15.00 Uhr: Benutzerfluss 1: praktische Übung &quot;Akquise&quot;
+14.00 - 15.30 Uhr: Benutzerfluss 1: praktische Übung &quot;Akquise&quot;
 
 15.00 - 15.15 Uhr: Break
 
 15.15 - 17.00 Uhr: Benutzerfluss 2: &quot;Registrierung und Onboarding&quot;-praktische Übung
 
+18.00 - 19.00 Uhr: Erlebnis &quot;Cocktail Making Competition&quot;
+
+19.00 - 22.00 Uhr: Abendessen
+
 ### Tag 2
 
-08.00 - 09.30 Uhr: Frühstückssitzung: &quot;Einführung in Journey-basiertes Versand, Teamstruktur, Versandrückstand&quot;
+09.00 - 09.30 Uhr: &quot;Einführung in Journey-basiertes Versand, Teamstruktur, Versandrückstand&quot;
 
 09.30 - 09.45: Break
 
-09.45 - 11.15: Benutzerfluss 3: &quot;Blenden von physischer und digitaler&quot;Übungen
+09.45 - 11.15: Benutzerfluss 4: praktische Übung &quot;Kundenanalyse&quot;
 
 11.15 - 11.30 Uhr: Break
 
-11.30 - 12.30 Uhr: Benutzerfluss 3 fortgesetzt
+11.30 - 12.30 Uhr: &quot;Einführung in Journey-basiertes Versand, Teamstruktur, Versandrückstand&quot;
 
 12.30 - 13.30 Uhr: Mittagessen
 
-13.30 - 14.30 Uhr: Benutzerfluss 4: praktische Übung &quot;Kundenanalyse&quot;
+13.30 - 14.30 Uhr: Personalisierung im Maßstab - Wie lässt sich das erreichen?
 
 14.30 - 15.00 Uhr: Zusammenfassung, Zusammenfassung und nächste Schritte
 
-15:30: Abfahrt
+15.00 Uhr: Adjourn
 
 ## Voraussetzungen
 

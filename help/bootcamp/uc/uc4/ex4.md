@@ -6,10 +6,10 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: bc872b4fe440106475668eeb790242e1862875aa
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 3%
+source-wordcount: '755'
+ht-degree: 2%
 
 ---
 
@@ -48,9 +48,7 @@ Dann sehen Sie ein leeres Projekt.
 
 ![Demo](./images/premptyprojects.png)
 
-Wählen Sie zuerst die richtige Datenansicht in der oberen rechten Ecke des Bildschirms aus. In diesem Beispiel lautet die auszuwählende Datenansicht . `vangeluwe - Omnichannel Data View`.
-
-![Demo](./images/prdv.png)
+Wählen Sie zuerst die richtige Datenansicht in der oberen rechten Ecke des Bildschirms aus. In diesem Beispiel lautet die auszuwählende Datenansicht . `CJA Bootcamp - Omnichannel Data View`.
 
 Als Nächstes speichern Sie Ihr Projekt und geben ihm einen Namen. Sie können den folgenden Befehl zum Speichern verwenden:
 
@@ -113,7 +111,7 @@ Die Konversionsrate wird häufig in Prozent dargestellt. Ändern wir also das Fo
 
 | Titel | Beschreibung |
 | ----------------- |-------------| 
-| Konversionsrate | Konversionsrate |
+| yourLastName - Konversionsrate | yourLastName - Konversionsrate |
 
 Sie haben so etwas auf Ihrem Bildschirm:
 
