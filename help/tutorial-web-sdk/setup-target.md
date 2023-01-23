@@ -3,9 +3,9 @@ title: Einrichten von Adobe Target mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3779'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Erfahren Sie, wie Sie Erlebnisse bereitstellen und zusätzliche Parameter an Target übergeben.
 
-[Adobe Target](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html) ist die Adobe Experience Cloud-Anwendung, die Ihnen all das bietet, was Sie benötigen, um die Erlebnisse Ihrer Kunden anzupassen und zu personalisieren, sodass Sie Umsätze auf Ihren Web- und mobilen Sites, in Apps und anderen digitalen Kanälen maximieren können.
+[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=de) ist die Adobe Experience Cloud-Anwendung, die Ihnen all das bietet, was Sie benötigen, um die Erlebnisse Ihrer Kunden anzupassen und zu personalisieren, sodass Sie Umsätze auf Ihren Web- und mobilen Sites, in Apps und anderen digitalen Kanälen maximieren können.
 
 ## Lernziele
 
@@ -117,7 +117,7 @@ Target muss in der Datastream-Konfiguration aktiviert sein, bevor Target-Aktivit
 
 So konfigurieren Sie Target im Datastream:
 
-1. Navigieren Sie zu [Datenerfassung](https://experience.adobe.com/#/data-collection)Benutzeroberfläche von {target=&quot;blank&quot;}
+1. Navigieren Sie zu [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} Benutzeroberfläche
 1. Wählen Sie im linken Navigationsbereich die Option **[!UICONTROL Datenspeicher]**
 1. Wählen Sie die zuvor erstellte `Luma Web SDK` datastream
 
@@ -161,7 +161,7 @@ Um Umgebungs-IDs einzurichten oder zu finden, navigieren Sie zu **Adobe Target**
 
 ### Target-Drittanbieter-ID-Namespace
 
-Mit dieser optionalen Einstellung können Sie festlegen, welches Identitätssymbol für die Target-Drittanbieter-ID verwendet werden soll. Target unterstützt nur die Profilsynchronisierung für ein einzelnes Identitätssymbol oder einen einzelnen Namespace. Weitere Informationen finden Sie unter [Echtzeit-Profilsynchronisierung für mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) im Target-Handbuch.
+Mit dieser optionalen Einstellung können Sie festlegen, welches Identitätssymbol für die Target-Drittanbieter-ID verwendet werden soll. Target unterstützt nur die Profilsynchronisierung für ein einzelnes Identitätssymbol oder einen einzelnen Namespace. Weitere Informationen finden Sie unter [Echtzeit-Profilsynchronisierung für mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=de) im Target-Handbuch.
 
 Die Identitätssymbole befinden sich in der Identitätsliste unter **Datenerfassung** > **[!UICONTROL Kunde]** > **[!UICONTROL Identitäten]**.
 
@@ -184,7 +184,7 @@ Zunächst sollten Sie die in den Target- und Tag-Schnittstellen verwendete Termi
 
 Entscheidungen zur visuellen Personalisierung von Target werden vom Platform Web SDK bereitgestellt, wenn Target im Datastream aktiviert ist. Allerdings _werden nicht automatisch gerendert_. Sie müssen die globale Seitenladeregel ändern, um das automatische Rendering zu aktivieren.
 
-1. Im [Datenerfassung](https://experience.adobe.com/#/data-collection)Benutzeroberfläche {target=&quot;blank&quot;} öffnen Sie die Tag-Eigenschaft, die Sie für dieses Tutorial verwenden
+1. Im [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} -Oberfläche verwenden, öffnen Sie die Tag-Eigenschaft, die Sie für dieses Tutorial verwenden
 1. Öffnen Sie die `all pages - library load - AA & AT` Regel
 1. Wählen Sie die `Adobe Experience Platform Web SDK - Send event` action
 1. Aktivieren **[!UICONTROL visuelle Personalisierungsentscheidungen rendern]** mit dem Kontrollkästchen
@@ -334,7 +334,7 @@ Nachdem Sie das Platform Web SDK konfiguriert haben, um Inhalte für die `homepa
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
