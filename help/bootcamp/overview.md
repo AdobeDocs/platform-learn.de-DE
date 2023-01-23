@@ -3,7 +3,7 @@ title: Experience Maker Bootcamp
 description: Startpunkt für Teilnehmer des Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
+source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 1%
@@ -40,9 +40,9 @@ Personalisierung im Maßstab beginnt damit, zu verstehen, was verbessert werden 
 
 14.00 - 15.30 Uhr: Benutzerfluss 1: praktische Übung &quot;Akquise&quot;
 
-15.00 - 15.15 Uhr: Break
+15.30 - 15.45 Uhr: Break
 
-15.15 - 17.00 Uhr: Benutzerfluss 2: &quot;Registrierung und Onboarding&quot;-praktische Übung
+15.45 - 17.00 Uhr: Benutzerfluss 2: &quot;Registrierung und Onboarding&quot;-praktische Übung
 
 18.00 - 19.00 Uhr: Erlebnis &quot;Cocktail Making Competition&quot;
 
