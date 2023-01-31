@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 4%
+source-wordcount: '1650'
+ht-degree: 7%
 
 ---
 
@@ -50,6 +50,7 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die [Postman](ht
 
 1. Verschieben Sie aus dem Ordner Downloads den `platform-utils-main.zip` an den gewünschten Speicherort auf Ihrem Computer zu kopieren und zu dekomprimieren.
 1. Im `luma-data` Ordner, öffnen Sie alle `json` -Dateien in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` mit Ihrer eigenen Mandanten-ID, der ein Unterstrich vorangestellt ist.
+1. Öffnen `luma-offline-purchases.json` in einem Texteditor verwenden und alle Zeitstempel so aktualisieren, dass die Ereignisse im letzten Monat eintreten (suchen Sie beispielsweise nach `"timestamp":"2022-06` und ersetzen Jahr und Monat)
 1. Notieren Sie den Speicherort des entpackten Ordners, wie Sie ihn später bei der Einrichtung der `FILE_PATH` Postman-Umgebungsvariable:
 
    >[!NOTE]
@@ -183,6 +184,6 @@ Wenn Sie eine Mobile SDK-Beispielimplementierung erstellen möchten, um eine Ver
 
 ## Sandbox-Umgebung zurücksetzen {#reset-sandbox}
 
-Beim Zurücksetzen einer Nicht-Produktions-Sandbox werden alle mit dieser Sandbox verknüpften Ressourcen (Schemas, Datensätze usw.) gelöscht, wobei der Name der Sandbox und die zugehörigen Berechtigungen beibehalten werden. Diese &quot;saubere&quot;Sandbox ist weiterhin unter demselben Namen für Benutzer verfügbar, die Zugriff darauf haben.
+Beim Zurücksetzen einer Nicht-Produktions-Sandbox werden alle mit dieser Sandbox verbundenen Ressourcen (Schemas, Datensätze usw.) gelöscht, wobei der Name der Sandbox und die zugehörigen Berechtigungen beibehalten werden. Diese „saubere“ Sandbox ist für Benutzer, die Zugriff darauf haben, unter demselben Namen weiter verfügbar.
 
 Führen Sie die Schritte aus [here](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) , um eine Sandbox-Umgebung zurückzusetzen.
