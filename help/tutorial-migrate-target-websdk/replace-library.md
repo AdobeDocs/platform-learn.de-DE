@@ -1,9 +1,9 @@
 ---
 title: Bibliothek ersetzen | Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung von at.js 2.x auf das Adobe Experience Platform Web SDK migrieren. Zu den Themen gehören die Bibliotheksübersicht, Implementierungsunterschiede und andere bemerkenswerte Hinweise.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1708'
 ht-degree: 4%
 
 ---
@@ -207,6 +207,12 @@ Weiterführende Informationen zur Verwaltung von Flackern mit dem Platform Web S
 
 Das Platform Web SDK muss bei jedem Laden der Seite konfiguriert werden. Die `configure` muss immer der erste SDK-Befehl mit dem Namen sein. Im folgenden Beispiel wird davon ausgegangen, dass die gesamte Site in einer Bereitstellung auf das Platform Web SDK aktualisiert wird:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+Die `edgeConfigId` ist die [!UICONTROL Datenspeicher-ID]
+
 ```JavaScript
 alloy("configure", {
   "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
@@ -214,7 +220,19 @@ alloy("configure", {
 });
 ```
 
+>[!TAB tags]
+
+In Tag-Implementierungen werden viele Felder automatisch ausgefüllt oder können aus Dropdown-Menüs ausgewählt werden. Beachten Sie, dass verschiedene Platform [!UICONTROL Sandboxes] und [!UICONTROL datastreams] kann für jede Umgebung ausgewählt werden. Der Datastream ändert sich basierend auf dem Status der Tag-Bibliothek im Veröffentlichungsprozess.
+
+![Konfigurieren der Web SDK-Tag-Erweiterung](assets/tags-config.png)
+>[!ENDTABS]
+
 Wenn Sie eine seitenweise Migration von at.js zum Platform Web SDK planen, sind die folgenden Konfigurationsoptionen erforderlich:
+
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("configure", {
@@ -224,6 +242,11 @@ alloy("configure", {
   "idMigrationEnabled":true
 });
 ```
+
+>[!TAB tags]
+
+![Konfigurieren der Migrationsoptionen für die Web SDK-Tag-Erweiterung](assets/tags-config-migration.png)
+>[!ENDTABS]
 
 Die wichtigen Konfigurationsoptionen für Target sind unten beschrieben:
 
