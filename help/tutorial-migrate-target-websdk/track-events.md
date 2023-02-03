@@ -1,9 +1,9 @@
 ---
 title: Ereignisse verfolgen | Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie Adobe Target-Konversionsereignisse mithilfe des Experience Platform Web SDK verfolgen.
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '654'
 ht-degree: 1%
 
 ---
@@ -16,10 +16,6 @@ Konversionsereignisse für Target können mit dem Platform Web SDK ähnlich wie 
 * Automatisch getrackte Ereignisse ohne Konfiguration
 * Kaufkonversionsereignisse, die für eine Best Practice-Implementierung des Platform Web SDK angepasst werden sollten
 * Konversionsereignisse ohne Kauf, für die Codeaktualisierungen erforderlich sind
-
->[!WARNING]
->
-> Möglicherweise müssen nach dem 1. Oktober 2022 begonnene Implementierungen des Platform Web SDK die [Vorabruf-Problemumgehung](prefetch-workaround.md) um einige der auf dieser Seite beschriebenen Ereignisse erfolgreich zu verfolgen.
 
 ## Vergleich der Zielverfolgung
 

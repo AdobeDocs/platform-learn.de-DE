@@ -1,9 +1,9 @@
 ---
 title: Zielgruppen und Profilskripte aktualisieren | Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie Adobe Target-Zielgruppen und Profilskripte aktualisieren können, um die Kompatibilität mit dem Experience Platform Web SDK zu gewährleisten.
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,6 @@ Alle Target-Mbox-Parameter müssen im XDM-Format mit einer Platform Web SDK-Impl
 * Zielgruppen aktualisieren, die Mbox-Parameter verwenden
 * Profilskripte aktualisieren, die Mbox-Parameter verwenden
 * Aktualisieren Sie alle Angebote und Aktivitäten, indem Sie die Ersetzung des Mbox-Parameter-Tokens verwenden (z. B. `${mbox.parameter_name}`)
-
-
->[!WARNING]
->
-> Möglicherweise müssen nach dem 1. Oktober 2022 begonnene Implementierungen des Platform Web SDK die [Vorabruf-Problemumgehung](prefetch-workaround.md) um einige der auf dieser Seite beschriebenen Funktionen erfolgreich zu verwenden.
 
 ## Zielgruppen anpassen
 
