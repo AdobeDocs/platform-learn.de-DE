@@ -5,31 +5,30 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 1%
+source-wordcount: '97'
+ht-degree: 0%
 
 ---
 
-# 4.6 Von Einblicken zu Aktionen
+# 4.6 Dos Insights à ação
 
-## Ziele
+## Objetivos
 
-- Erfahren Sie, wie Sie eine Zielgruppe basierend auf einem in Customer Journey Analytics erfassten Einblick erstellen
-- Verwenden dieser Zielgruppe in Real-Time CDP und Adobe Journey Optimizer
+- Entenda como criar um público com base em uma visão coletada nein Customer Journey Analytics
+- Verwenden Sie esse público no CDP em tempo real e no Adobe Journey Optimizer
 
-## 4.6.1 Erstellen und Veröffentlichen einer Audience
+## 4.6.1 Crie uma audiência e publique-a
 
-In Ihrem Projekt haben Sie einen Filter erstellt, der
+Em seu Projekt, você criou um filo.
 
-## 4.6.2 Zielgruppe als Teil eines Segments verwenden
+## 4.6.2 Verwenden Sie sua audiência como parte de um segmento
 
+## 4.6.2 Verwenden Sie &quot;seu segmento an Real-Time CDP em tempo real&quot;
 
-## 4.6.2 Segment in Real-Time CDP verwenden
-
-## 4.6.3 Segment in Adobe Journey Optimizer verwenden
+## 4.6.3 Verwenden von Segmentierung zu Adobe Journey Optimizer
 
 [Zurück zum Benutzerfluss 4](./uc4.md)
 
-[Zu allen Modulen zurückkehren](./../../overview.md)
+[Voltar para todos os módulos](./../../overview.md)

@@ -5,182 +5,184 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 2%
+source-wordcount: '933'
+ht-degree: 0%
 
 ---
 
-# 1.4 Maßnahmen ergreifen: Senden Ihres Segments an Adobe Target
+# 1.4 Ação: Bereitstellen von Segmento-Para für Adobe Target
 
-Navigieren Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
 ![Datenaufnahme](./images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox**. Die auszuwählende Sandbox heißt ``Bootcamp``. Klicken Sie hierzu auf den Text **[!UICONTROL Produktionsprodukt]** in der blauen Zeile auf Ihrem Bildschirm. Nach Auswahl der entsprechenden [!UICONTROL Sandbox], sehen Sie die Änderung des Bildschirms und befinden sich jetzt in Ihrem [!UICONTROL Sandbox].
+Antes de Continuar, você recisa selecionar um **Sandbox**. O nome do sandbox ein ser selecionado é Bootcamp. É besitzível fazer isso clicando no texto **[!UICONTROL Produktionsprodukt]** na linha azul na parte überlegen da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL Sandbox] widado.
 
 ![Datenaufnahme](./images/sb1.png)
 
-## 1.4.1 Aktivieren Sie Ihr Segment für Ihr Adobe Target-Ziel
+## 1.4.1 Ative Seu segmento para o destino do Adobe Target
 
-Adobe Target ist als Ziel von Real-Time CDP verfügbar. Informationen zum Einrichten der Adobe Target-Integration finden Sie unter **Ziele**, um **Katalog**.
+O Adobe Target está disponível como um destino do CDP em tempo real. Para configuration sua integrração com o Adobe Target, acesse **Ziele** e **Katalog**.
 
-Klicken **Personalisierung** im **Kategorien** Menü. Sie werden dann die **Adobe Target** Zielkarte. Klicken **Segmente aktivieren**.
+Clique em **Personalisierung** kein Menü **Kategorien**. Você verá o cartão de destino do **Adobe Target**. Clique em **Segmente aktivieren**.
 
 ![AT](./images/atdest1.png)
 
-Ziel auswählen ``Bootcamp Target`` und klicken Sie auf **Nächste**.
+Auswahl des Ziels ``Bootcamp Target`` e clique **Nächste**.
 
 ![AT](./images/atdest3.png)
 
-Wählen Sie in der Liste der verfügbaren Segmente das Segment aus, das Sie in [1.3 Segment erstellen](./ex3.md), der `yourLastName - Interest in Real-Time CDP`. Klicken Sie dann auf **Weiter**.
+Na lista de segmentos disponíveis, selecione o segmento que você criou em [1.3 Crime um segmento](./ex3.md), com o nome `yourLastName - Interest in Real-Time CDP`. Em seguida, clique em **Nächste**.
 
 ![AT](./images/atdest8.png)
 
-Klicken Sie auf der nächsten Seite auf **Nächste**.
+Na próxima página, clique em **Nächste**.
 
 ![AT](./images/atdest9.png)
 
-Klicken Sie auf **Fertigstellen**.
+Clique em **Beenden**.
 
 ![AT](./images/atdest10.png)
 
-Ihr Segment ist jetzt für Adobe Target aktiviert.
+Seu segmento agora está ativado para o Adobe Target.
 
 ![AT](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Wenn Sie Ihr Adobe Target-Ziel gerade in Real-Time CDP erstellt haben, kann es bis zu einer Stunde dauern, bis das Ziel aktiv ist. Dies ist eine einmalige Wartezeit aufgrund der Einrichtung der Backend-Konfiguration. Sobald die anfängliche Wartezeit von einer Stunde und die Backend-Konfiguration abgeschlossen sind, sind neu hinzugefügte Edge-Segmente, die an das Adobe Target-Ziel gesendet werden, für das Targeting in Echtzeit verfügbar.
+>Imediatamente após criar seu destino do Adobe Target no Real-Time CDP, pode levar até uma hora para que o destino seja ativado. Este é um tempo de espera único devido à definição da configuration ação de Back-End. Depois que o tempo de espera inicial de 1 hora e a configuration ação do Back-End forem finídos, os segmentos de borda recém-adicionados que são enviados ao destino do Adobe Target estarão disponíveis para segmentação em tempo real.
 
-## 1.4.2 Konfigurieren der formularbasierten Adobe Target-Aktivität
+## 1.4.2 Konfigurieren von sua atividade baseada em formário do Adobe Target
 
-Nachdem Ihr Real-Time CDP-Segment für den Versand an Adobe Target konfiguriert wurde, können Sie Ihre Erlebnis-Targeting-Aktivität in Adobe Target konfigurieren. In dieser Übung konfigurieren Sie eine Visual Experience Composer-basierte Aktivität.
+Agora que seu segmento Real-Time CDP está konfigurado para ser enviado ao Adobe Target, é besitzível configuration sua atividade Segmentação por experiência no Adobe Target. Neste übício, você irá konfigurar uma atividade baseada no Visual Experience Composer.
 
-Rufen Sie die Adobe Experience Cloud-Homepage auf, indem Sie [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Klicken **Target** um es zu öffnen.
+Acesse a página inicial da Adobe Experience Cloud acessando [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Clique em **Target** para abrir.
 
 ![RTCDP](./images/excl.png)
 
 Im **Adobe Target** Homepage werden Sie alle vorhandenen Aktivitäten sehen.
 Klicken **+ Aktivität erstellen** , um eine neue Aktivität zu erstellen.
+Na página inicial do **Adobe Target**, você verá todas as atividades existentes.
+Clique em **+ Aktivität erstellen** para criar uma nova atividade.
 
 ![RTCDP](./images/exclatov.png)
 
-Auswählen **Erlebnis-Targeting**.
+Selecione **Erlebnis-Targeting**.
 
 ![RTCDP](./images/exclatcrxt.png)
 
-Auswählen **Visuell** und legen Sie die **Aktivitäts-URL** nach `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, aber bevor Sie dies tun, ersetzen Sie XX durch eine Zahl zwischen 01 und 30.
+Selecione **Visuell** e defina **Aktivitäts-URL** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes disso, replace a XX por um número entre 01 e 30.
 
 >[!IMPORTANT]
 >
->Jeder Teilnehmer der Aktivierung sollte eine separate Webseite verwenden, um Kollisionen verschiedener Adobe Target-Erlebnisse zu vermeiden. Sie können eine Webseite auswählen und die URL finden, indem Sie hier gehen: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Cada Participante da kondenação deve usar uma página da Web separada para evitar a colisão de várias experiências do Adobe Target. É besitzível escolher uma página da Web e enkontrared eine URL acessando: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
->Seiten teilen alle dieselbe Basis-URL und enden in der Anzahl der Teilnehmer.
+>Todas als páginas compartilham eine mesma URL base e terminam com o número do Participante.
 >
->Beispiel: Teilnehmer 1 sollte URL verwenden `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, Teilnehmer 30 sollte URL verwenden `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Por exemplo, o Participante 1 deve usar a URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o Participante 30 deve usar a URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
-Arbeitsbereich auswählen **AT Bootcamp**.
+Auswahl des Arbeitsbereichs **AT Bootcamp**.
 
-Klicken Sie auf **Weiter**.
+Clique em **Nächste**.
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
-Sie befinden sich jetzt im Visual Experience Composer. Es kann 20-30 Sekunden dauern, bis die Website vollständig geladen ist.
+Agora você está no Visual Experience Composer. Pode levar de 20 a 30 segundos até que o site esteja completamente carregado.
 
 ![RTCDP](./images/atform1.png)
 
-Die Standardzielgruppe ist derzeit **Alle Besucher**. Klicken Sie auf **3 Punkte** neben **Alle Besucher** und klicken Sie auf **Zielgruppe ändern**.
+Atualmente, o público padrão são **Alle Besucher**. Clique nos **3 Punkte** ao lado de **Alle Besucher** e clique em **Zielgruppe ändern**.
 
 ![RTCDP](./images/atform3.png)
 
-Jetzt wird die Liste der verfügbaren Zielgruppen angezeigt. Das Adobe Experience Platform-Segment, das Sie zuvor erstellt und an Adobe Target gesendet haben, ist jetzt Teil dieser Liste. Wählen Sie das Segment aus, das Sie zuvor in Adobe Experience Platform erstellt haben. Klicken **Zielgruppe zuweisen**.
+Agora você está vendo a lista de públicos disponíveis, e o segmento da Adobe Experience Platform que você criou anteriormente e enviou ao Adobe Target agora faz parte dessa lista. Selecione o segmento que você criou anteriormente na Adobe Experience Platform. Clique em **Zielgruppe zuweisen**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Ihr Adobe Experience Platform-Segment ist jetzt Teil dieser Erlebnis-Targeting-Aktivität.
+Seu segmento da Adobe Experience Platform agora faz parte dessa Atividade de segmentação por experiência.
 
 ![RTCDP](./images/atform4.png)
 
-Bevor Sie das Hero-Bild ändern können, müssen Sie auf **Alle zulassen** im Cookie-Banner.
+Antes de alterar a imagem principal, você deve clicar em **Alle zulassen** kein Banner de Cookies.
 
-Gehen Sie dazu zu **Durchsuchen**
+Para isso, vá para **Durchsuchen**
 
 ![RTCDP](./images/cook1.png)
 
-Klicken Sie anschließend auf **Alle zulassen**.
+Em seguida, clique em **Alle zulassen**.
 
 ![RTCDP](./images/cook2.png)
 
-Gehen Sie als Nächstes zurück zu **Erstellen**.
+Em seguida, retorne para **Erstellen**.
 
 ![RTCDP](./images/cook3.png)
 
-Ändern wir nun das Hero-Bild auf der Startseite der Website. Klicken Sie auf das standardmäßige Hero-Bild auf der Website und klicken Sie auf **Inhalt ersetzen** und wählen Sie **Bild**.
+Agora vamos mudar a imagem principal na página inicial do site. Clique na imagem principal padrão no site, clique em **Inhalt ersetzen** e selecione **Bild**.
 
 ![RTCDP](./images/atform5.png)
 
-Suchen Sie nach der Bilddatei. **rtcdp.png**. Wählen Sie es aus und klicken Sie dann auf **Speichern**.
+Pesquise o arquivo de imagem **rtcdp.png**. Selecione e clique em **Speichern**.
 
 ![RTCDP](./images/atform6.png)
 
-Anschließend sehen Sie das neue Erlebnis mit dem neuen Bild für Ihre ausgewählte Zielgruppe.
+Você verá a nova experiência com a nova imagem para o seu Público selecionado
 
 ![RTCDP](./images/atform7.png)
 
-Klicken Sie oben links auf den Titel Ihrer Aktivität, um sie umzubenennen.
+Clique no título da sua atividade no canto Superior esquerdo para renomeá-la.
 
 ![RTCDP](./images/exclatvecname.png)
 
-Für den Namen verwenden Sie bitte:
+Para o nome, use:
 
 - `yourLastName - RTCDP - XT (VEC)`
 
-Klicken Sie auf **Weiter**.
+Clique em **Nächste**.
 
 ![RTCDP](./images/atform8.png)
 
-Klicken Sie auf **Weiter**.
+Clique em **Nächste**.
 
 ![RTCDP](./images/atform8a.png)
 
-Im **Ziele und Einstellungen** - Seite, navigieren Sie zu **Zielmetriken**.
+Na página **Ziele und Einstellungen**, acesse **Zielmetriken**.
 
 ![RTCDP](./images/atform9.png)
 
-Primäres Ziel festlegen auf **Interaktion** - **Besuchszeit pro Site**. Klicken Sie auf **Speichern und schließen**.
+Definieren eines Meta-Prinzipal-Como **Interaktion** - **Besuchszeit pro Site**. Clique em **Speichern und schließen**.
 
 ![RTCDP](./images/vec3.png)
 
-Du bist jetzt auf der **Aktivitätsübersicht** Seite. Sie müssen Ihre Aktivität weiterhin aktivieren.
+Agora você está na página **Aktivitätsübersicht**. Você ainda recisa ativar sua Atividade.
 
 ![RTCDP](./images/atform10.png)
 
-Klicken Sie auf das Feld **Inaktiv** und wählen Sie **Aktivieren**.
+Clique no campo **Inaktiv** e selecione **Aktivieren**.
 
 ![RTCDP](./images/atform11.png)
 
-Sie erhalten dann eine visuelle Bestätigung, dass Ihre Aktivität jetzt live ist.
+Você receberá uma validation mação visual de que sua atividade agora está ativa.
 
 ![RTCDP](./images/atform12.png)
 
-Ihre Aktivität ist jetzt live und kann auf der Bootcamp-Website getestet werden.
+Agora sua atividade está ativa e pode ser testada no site do bootcamp.
 
-Wenn Sie jetzt zu Ihrer Demo-Website zurückkehren und die Produktseite für **Real-Time CDP** eingeben, werden Sie sich sofort für das Segment qualifizieren, das Sie erstellt haben, und die Adobe Target-Aktivität wird auf der Startseite in Echtzeit angezeigt.
+Se agora você voltar ao seu site de demonstração e visitar a página do produto para **Real-Time CDP**, você se qualificará instantaneamente para o segmento que criou e verá a atividade do Adobe Target exibida na página inicial em tempo real.
 
 >[!IMPORTANT]
 >
->Jeder Teilnehmer der Aktivierung sollte eine separate Webseite verwenden, um Kollisionen verschiedener Adobe Target-Erlebnisse zu vermeiden. Sie können eine Webseite auswählen und die URL finden, indem Sie hier gehen: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Cada Participante da kondenação deve usar uma página da Web separada para evitar a colisão de várias experiências do Adobe Target. É besitzível escolher uma página da Web e enkontrared eine URL acessando ao link: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
->Seiten teilen alle dieselbe Basis-URL und enden in der Anzahl der Teilnehmer.
+>Todas als páginas compartilham eine mesma URL base e terminam com o número do Participante.
 >
->Beispiel: Teilnehmer 1 sollte URL verwenden `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, Teilnehmer 30 sollte URL verwenden `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Por exemplo, o Participante 1 deve usar a `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o Participante 30 deve usar a URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
 ![RTCDP](./images/atform12a.png)
 
-Nächster Schritt: [1.5 Maßnahmen ergreifen: Senden Ihres Segments an Facebook](./ex5.md)
+Próxima etapa: [1.5 Maßnahmen ergreifen: Senden Ihres Segments an Facebook](./ex5.md)
 
-[Zurück zum Benutzerfluss 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

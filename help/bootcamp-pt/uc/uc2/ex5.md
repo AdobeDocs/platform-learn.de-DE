@@ -5,88 +5,89 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 1%
+source-wordcount: '269'
+ht-degree: 0%
 
 ---
 
-# 2.5 Mobile App installieren und verwenden
+# 2.5 Instale e use o aplicativo móvel
 
 
-## Installieren der App
+## Instant o aplicativo móvel
 
-Vor der Installation des Programms müssen Sie **Tracking** auf Ihrem iOS-Gerät. Gehen Sie dazu zu **Einstellungen** > **Datenschutz und Sicherheit** > **Tracking** und stellen sicher, dass die Option **Zulassen, dass Apps die Verfolgung anfordern**.
+Antes de instalar o aplicativo, é notwendigen ário abilitar Rastreamento no seu dispositivo iOS. Para isso, acesse Configurações > Privacidade e segurança > Rastreamento e validation a opção Permitir que os aplicativos solicitem o rastreamento.
 
 ![DSN](./../uc3/images/app4.png)
 
-Navigieren Sie zur Apple App Store und suchen Sie nach `aepmobile-bootcamp`. Klicken **Installieren** oder **Download**.
+Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`.\
+Clique em **Instalar** ou **Download**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Nachdem die App installiert wurde, klicken Sie auf **Öffnen**.
+Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Klicken Sie auf **OK**.
+Clique em **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Klicken **Zulassen**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Klicken **Ich stimme zu**.
+Clique em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Klicken **Verwendung der App zulassen**.
+Clique em **Permitir enquanto uso app**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Klicken **Zulassen**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Sie befinden sich jetzt in der App auf der Startseite und können die Journey durchlaufen.
+Agora você está no aplicativo, na página inicial, pronto(a) para verificar toda a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Journey-Fluss des Kunden
+## Fluxo da jornada do cliente
 
-Zunächst müssen Sie sich anmelden. Klicken Sie auf **Anmelden**.
+Primeiramente, é notwendiário fazer o login. Clique em **Anmelden**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Nachdem Sie Ihr Konto in den vorherigen Übungen erstellt haben, haben Sie dies auf der Website gesehen. Sie müssen jetzt die E-Mail-Adresse des Kontos, das Sie in der App erstellt haben, erneut verwenden, um sich anzumelden.
+Depois de criar sua conta nos übícios anteriores, isso é exibido no site. Agora é notwendiário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
 
 ![Demo](./../uc3/images/pv1.png)
 
-Geben Sie hier die E-Mail-Adresse ein, die Sie auf der Website verwendet haben, und klicken Sie auf **Anmelden**.
+Digite o endereço de e-mail que você usou no site e clique em **Anmelden**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Sie erhalten dann eine Bestätigung, dass Sie angemeldet sind, und Sie erhalten eine Push-Benachrichtigung.
+Você receberá uma bestätigmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./../uc3/images/app15.png)
 
-Kehren Sie zur Homepage in der App zurück und sehen Sie zusätzliche Funktionen.
+Retorne para a página inicial do aplicativo e os recursos adicionais irão aparecer.
 
 ![DSN](./../uc3/images/app17.png)
 
-Navigieren Sie zu **Produkte**. Klicken Sie in diesem Beispiel auf ein beliebiges Produkt. **Kaffee zum Mitnehmen**.
+Acesse **Produkte**. Clique em qualquer product, neste exemplo: **Kaffee zum Mitnehmen**.
 
 ![DSN](./images/app19.png)
 
-Du wirst die **Kaffee zum Mitnehmen** Produktseite in der App. Klicken **Kaufen**.
+Você verá a página do produto **Kaffee zum Mitnehmen** keine Anwendung. Clique em **Kaufen**.
 
 ![DSN](./images/app20.png)
 
-Du hast diese Übung nun beendet und bist für die nächsten Übungen bereit.
+Agora você terminou este übício e está pronto para as próximas atividades.
 
-Nächster Schritt: [2.6 Personalisierung im Callcenter](./ex6.md)
+Próxima etapa: [ 2.6 Personalização kein Callcenter](./ex6.md)
 
-[Zurück zum Benutzerfluss 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

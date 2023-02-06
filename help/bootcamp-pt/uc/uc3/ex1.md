@@ -5,34 +5,36 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
-# 3.1 Verwenden der App und Trigger eines Beacon-Eintrags
+# 3.1 Verwendung von aplicativo móvel e acione um beacon
 
-## Installieren der App
+## Instant o aplicativo móvel
 
 Vor der Installation des Programms müssen Sie **Tracking** auf Ihrem iOS-Gerät. Gehen Sie dazu zu **Einstellungen** > **Datenschutz und Sicherheit** > **Tracking** und stellen sicher, dass die Option **Zulassen, dass Apps die Verfolgung anfordern**.
 
+Antes de instalar o aplicativo, é notwendiário abilitar **Rastreamento** keine seu dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
+
 ![DSN](./../uc3/images/app4.png)
 
-Navigieren Sie zur Apple App Store und suchen Sie nach `aepmobile-bootcamp`. Klicken **Installieren** oder **Download**.
+Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Instalar** ou **Download**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Nachdem die App installiert wurde, klicken Sie auf **Öffnen**.
+Depois que o aplicativo estiver instalado, clique em **Öffnen**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Klicken Sie auf **OK**.
+Clique em **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Klicken **Zulassen**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
@@ -40,92 +42,93 @@ Klicken **Ich stimme zu**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Klicken **Verwendung der App zulassen**.
+Clique em **Permitir enquanto usa o aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Klicken **Zulassen**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Sie befinden sich jetzt in der App auf der Startseite und können die Journey durchlaufen.
+Agora você está no aplicativo, na página inicial, pronto(a) para verificar toda a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Journey-Fluss des Kunden
+## Fluxo da jornada do cliente
 
-Zunächst müssen Sie sich anmelden. Klicken Sie auf **Anmelden**.
+Primeiramente, é notwendiário fazer o login. Clique em **Anmelden**.
 
 ![DSN](./images/app13.png)
 
-Nachdem Sie Ihr Konto in den vorherigen Übungen erstellt haben, haben Sie dies auf der Website gesehen. Sie müssen jetzt die E-Mail-Adresse des Kontos, das Sie in der App erstellt haben, erneut verwenden, um sich anzumelden.
+Depois de criar sua conta nos übícios anteriores, isso é exibido no site. Agora é notwendiário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
 
 ![Demo](./images/pv1.png)
 
-Geben Sie hier die E-Mail-Adresse ein, die Sie auf der Website verwendet haben, und klicken Sie auf **Anmelden**.
+Digite o endereço de e-mail que você usou no site e clique em **Anmelden**.
 
 ![DSN](./images/app14.png)
 
-Sie erhalten dann eine Bestätigung, dass Sie angemeldet sind, und Sie erhalten eine Push-Benachrichtigung.
+Você receberá uma bestätigmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./images/app15.png)
 
-Kehren Sie zur Homepage in der App zurück und sehen Sie zusätzliche Funktionen.
+Retorne para a página inicial do aplicativo e os recursos adicionais irão aparecer.
 
 ![DSN](./images/app17.png)
 
-Gehen Sie zuerst zu **Produkte**. Klicken Sie in diesem Beispiel auf ein beliebiges Produkt. **Kaffee zum Mitnehmen**.
+Primeiro, acesse **Produkte**. Clique em qualquer product, neste exemplo: **Kaffee zum Mitnehmen**.
 
 ![DSN](./images/app19.png)
 
-Du wirst die **Kaffee zum Mitnehmen** Produktseite in der App.
+Você verá a página do produto **Kaffee zum Mitnehmen** keine Anwendung.
 
 ![DSN](./images/app20.png)
 
-Sie simulieren jetzt ein Beacon-Eintrittsereignis an einem Offline-Store-Speicherort. Das Ziel der Simulation ist es, das Kundenerlebnis auf den In-Store-Bildschirmen zu personalisieren. Um das Erlebnis im Store zu visualisieren, wurde eine Seite erstellt, auf der die Informationen dynamisch angezeigt werden, die für den Kunden relevant sind, der gerade in den Store eingetreten ist.
+Agora você irá simular um evento de entrada de sinalização (Beacon) em um local de armazenamento offline. O objetivo da simação é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informmações relevantes para o cliente ao entrar na loja.
 
-Bevor Sie fortfahren, öffnen Sie bitte diese Webseite auf Ihrem Computer: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de Continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Daraufhin sehen Sie Folgendes:
+Em seguida, a tela abaixo será exibida:
 
 ![DSN](./images/screen1.png)
 
-Gehen Sie dann zurück zur Homepage. Klicken Sie auf **Beacon** Symbol.
+Em seguida, retorne para a página inicial. Clique no ícone do **Beacon**.
 
 ![DSN](./images/app23.png)
 
 Dann wirst du das sehen. Wählen Sie zuerst **Bootcamp Screen Beacon** und klicken Sie dann auf **Einstieg** Schaltfläche. Auf diese Weise können Sie einen Beacon-Eintrag simulieren.
+Após essa etapa, o seguinte será exibido. Primeiro, selecione **Bootcamp Screen Beacon** e clique no botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
 
-Sehen Sie sich nun den Bildschirm im Geschäft an. Das zuletzt angezeigte Produkt wird innerhalb von 5 Sekunden angezeigt.
+Agora bestätigte eine tela da loja. Você verá o último produto visualizado aparecer diena tela em 5 segundos.
 
 ![DSN](./images/screen2.png)
 
-Gehen Sie dann zurück zu **Produkte**. Klicken Sie in diesem Beispiel auf ein beliebiges Produkt. **Stranddecke Tan**.
+Em seguida, retorne para **Produkte**. Clique em qualquer product, neste exemplo: **Stranddecke Tan**.
 
 ![DSN](./images/app22.png)
 
-Gehen Sie dann zurück zur Homepage. Klicken Sie auf **Beacon** Symbol.
+Em seguida, retorne para a página inicial. Clique no ícone do **Beacon**.
 
 ![DSN](./images/app23.png)
 
-Dann wirst du das sehen. Wählen Sie zuerst **Bootcamp Screen Beacon** und klicken Sie dann auf **Einstieg** erneut. Auf diese Weise können Sie einen Beacon-Eintrag simulieren.
+Em seguida, selecione **Bootcamp Screen Beacon** e clique no botão de **Entrada** novamente. Isso permitirá que você simule uma entrada de sinalização (Beacon).
 
 ![DSN](./images/app21.png)
 
-Sehen Sie sich nun noch einmal den Bildschirm im Geschäft an. Das zuletzt angezeigte Produkt wird innerhalb von 5 Sekunden angezeigt.
+Agora, bestätiga tela da loja novamente. Você verá o último produto visualizado aparecer diena tela em 5 segundos.
 
 ![DSN](./images/screen3.png)
 
-Sehen wir uns jetzt auch Ihren Profil-Viewer auf der Website an. Dort wurden viele Ereignisse hinzugefügt, um zu zeigen, dass jede Interaktion mit einem Kunden in Adobe Experience Platform erfasst und gespeichert wird.
+Agora, vamos verificar também o seu Visualizador de Perfil kein Standort. Você verá muitos eventos que foram adicionados, para mostrar que qualquer interação com um cliente é coletada e armazenada na Adobe Experience Platform.
 
 ![DSN](./images/screen4.png)
 
-In den nächsten Übungen konfigurieren und testen Sie Ihre eigene Beacon-Einstiegs-Journey.
+Nr. próximos übícios, você irá configuration e testar sua própria jornada de entrada do beacon.
 
-Nächster Schritt: [3.2 Ereignis erstellen](./ex2.md)
+Próxima etapa: [3.2 Kritisches Ereignis](./ex2.md)
 
-[Zurück zum Benutzerfluss 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

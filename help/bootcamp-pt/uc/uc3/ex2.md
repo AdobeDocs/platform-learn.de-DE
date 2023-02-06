@@ -5,83 +5,83 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
-# 3.2 Ereignis erstellen
+# 3.2 Kritisches Ereignis
 
-Melden Sie sich bei Adobe Journey Optimizer an, indem Sie [Adobe Experience Cloud](https://experience.adobe.com). Klicken **Journey Optimizer**.
+Faça login bei Adobe Journey Optimizer acessando a [Adobe Experience Cloud]. Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Sie werden zum **Startseite**  in Journey Optimizer anzeigen. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `Bootcamp`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **Prod** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **Bootcamp2**. Sie sind dann im **Startseite** Ansicht Ihrer Sandbox `Bootcamp`.
+Você será redirecionado para **Startseite** Keine Journey Optimizer. Primeiro, verifique se você está usando o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** Auswahl von Sandbox- und Lista-Werten. Neste Exemplo, o nome do sandbox é **Bootcamp2**. Você estará na visualização da **Startseite** Ausführen einer Sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-Scrollen Sie im linken Menü nach unten und klicken Sie auf **Konfigurationen**. Klicken Sie anschließend auf das **Verwalten** Schaltfläche unter **Veranstaltungen**.
+No menu à esquerda, role para baixo e clique em **Konfigurationen**. Em seguida, clique no botão **Verwalten** em Eventos.
 
 ![ACOP](./images/acopmenu.png)
 
-Daraufhin wird eine Übersicht über alle verfügbaren Ereignisse angezeigt. Klicken **Ereignis erstellen** , um mit der Erstellung Ihres eigenen Ereignisses zu beginnen.
+Você verá uma visão geral de todos os eventos disponíveis. Clique em **Ereignis erstellen** para começar a criar seu próprio evento.
 
 ![ACOP](./images/emptyevent.png)
 
-Daraufhin wird ein neues, leeres Ereignisfenster angezeigt.
+Uma nova janela de evento vazia irá aparecer.
 
-Geben Sie Ihrem Ereignis zunächst einen Namen wie den folgenden: `yourLastNameBeaconEntryEvent` und fügen Sie eine Beschreibung wie die folgende hinzu `Beacon Entry Event`.
+Em primeiro lugar, dê um nome ao seu evento como, por exemplo: `yourLastNameBeaconEntryEvent` e adicione uma descrição como, por exemplo: `Beacon Entry Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-Stellen Sie als Nächstes sicher, dass die **Typ** auf **Einzelfall** und für die **Ereignis-ID-Typ** Auswahl, wählen Sie **Systemgeneriert**.
+Em seguida, certificate-se de que **Typ** está definido como **Einzelfall** e, para a selção de **Ereignis-ID-Typ**, selecione **Systemgeneriert**.
 
 ![ACOP](./images/eventidtype.png)
 
-Als Nächstes folgt die Schemaauswahl. Für diese Übung wurde ein Schema vorbereitet. Bitte verwenden Sie das Schema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
+Ein etapa seguinte é a selção do schema. Um schema foi vorbereitado para este übício. Schema verwenden `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-Nach Auswahl des Schemas werden im **Felder** Abschnitt. Sie sollten jetzt den Mauszeiger über die **Felder** und Sie sehen 3 Symbole. Klicken Sie auf **Bearbeiten** Symbol.
+Depois de selecionar o Schema, você verá vários campos sendo selecionados na seção **Felder**. Agora você deve passar o mouse sobre a seção **Felder** e três ícones pop-up serão exibidos. Clique no ícone de **Bearbeiten**.
 
 ![ACOP](./images/eventpayload.png)
 
-Sie werden eine **Felder** -Fenster, in dem Sie einige der Felder auswählen müssen, die wir zum Personalisieren der Journey benötigen.  Später werden wir mithilfe der bereits in Adobe Experience Platform vorhandenen Daten andere Profilattribute auswählen.
+Você verá uma janela pop-up de **Felder**, onde você deve selecionar alguns dos campos que preisamos para personalizar a jornada. Escolheremos outros atributos de perfil posteriormente, utilizando os dados já existentes na Adobe Experience Platform
 
 ![ACOP](./images/eventfields.png)
 
-Scrollen Sie nach unten, bis das Objekt angezeigt wird `Place context` und aktivieren Sie das Kontrollkästchen. Dadurch wird der gesamte Kontext des Standorts des Kunden dem Journey zur Verfügung gestellt. Klicken **Ok** , um Ihre Änderungen zu speichern.
+Rolle para baixo até ver o objeto `Place context` e marque a caixa de selekção. Com isso, todo o contexto da localização do cliente será disponibilizado para a jornada. Clique em **Ok** para salvar suas alterações.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-Dann sollten Sie das sehen. Klicken **Speichern** erneut, um Ihre Änderungen zu speichern.
+Em seguida, você deverá per tela abaixo. Clique em **Speichern** mais uma vez para salvar suas alterações.
 
 ![ACOP](./images/eventsave.png)
 
-Ihr Ereignis ist jetzt konfiguriert und gespeichert.
+Seu evento agora está konfigurado e salvo.
 
 ![ACOP](./images/eventdone.png)
 
-Klicken Sie erneut auf das Ereignis, um die **Ereignis bearbeiten** erneut angezeigt. Bewegen **Felder** erneut, um die 3 Symbole anzuzeigen. Klicken Sie auf **Ansicht** Symbol.
+Clique no seu evento novamente para abrir a tela **Ereignis bearbeiten** mais uma vez. Maus-Sobre einfügen **Felder** para ver os 3 ícones. Clique no ícone **Ansicht**.
 
 ![ACOP](./images/viewevent.png)
 
-Sie sehen nun ein Beispiel der erwarteten Payload.
-Ihr Ereignis verfügt über eine eindeutige eventID für die Orchestrierung, die Sie finden können, indem Sie in dieser Payload nach unten scrollen, bis Sie `_experience.campaign.orchestration.eventID`.
+Agora você verá um exemplo da carga útil esperada.
+Seu evento tem um eventID de orquestração único, que você pode encounter rolando para baixo diena carga útil até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-Die Ereignis-ID muss an Adobe Experience Platform gesendet werden, um die Journey Trigger, die Sie in einer der nächsten Übungen erstellen werden. Denken Sie an diese eventID, da Sie sie möglicherweise später benötigen.
+O eventID é o que deve ser enviado à Adobe Experience Platform para acionar a jornada que você construirá em um dos próximos übícios. Lembre-se deste eventID, você pode recisar dele posteriormente.
 `"eventID": "e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5"`
 
-Klicken **Ok**, gefolgt von einem Klick auf **Abbrechen**.
+Clique em **Ok** e, em seguida, clique em **Abbruch**.
 
-Du bist jetzt mit dieser Übung fertig.
+Você terminou este übício.
 
-Nächster Schritt: [3.3 Journey- und Push-Benachrichtigung erstellen](./ex3.md)
+Próxima etapa: [3.3 Crie sua jornada e notificação push](./ex3.md)
 
-[Zurück zum Benutzerfluss 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

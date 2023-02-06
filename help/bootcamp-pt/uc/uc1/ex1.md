@@ -5,61 +5,59 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
 
-# 1.1 Von unbekannt zu bekannt auf der Website
+# 1.1 Do desconhecido ao conhecido em nosso site
 
-## Kontext
+## ContextTo
 
-Die Journey von unbekanntem bis bekanntem ist eines der wichtigsten Themen der heutigen Marken, ebenso wie die Journey des Kunden von der Akquise bis zur Aufbewahrung.
+Ein Adobe Experience Platform desempenha um papel importante wird zu einer jornada. A plataforma é o cérebro da comunicação, o **Erlebnissystem**.
 
-Adobe Experience Platform spielt bei diesem Journey eine große Rolle. Plattform ist das Gehirn für Kommunikation, **Erlebnissystem**.
+Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecidos. Um visitante desconhecido no site também é um cliente do ponto de vista da Plataforma e, como tal, todo o comportamento de um visitante desconhecido também é enviado à Plataforma. Graças a essa abordagem, quando esse visitante eventalmente se torna um cliente conhecido, uma marca também pode visualizar o que aconteceu antes daquele momento. Isso ajuda a partir de uma perspectiva de otimização de atribuição e experiência.
 
-Platform ist eine Umgebung, in der das Wort Kunde breiter ist als nur die bekannten Kunden. Ein unbekannter Besucher auf der Website ist auch aus Sicht von Platform ein Kunde. Daher wird das gesamte Verhalten als unbekannter Besucher auch an Platform gesendet. Durch diesen Ansatz kann eine Marke visualisieren, was vor diesem Zeitpunkt auch passiert ist, wenn dieser Besucher schließlich ein bekannter Kunde wird. Dies hilft aus der Sicht der Attribution und Erlebnisoptimierung.
+## Fluxo da jornada do cliente
 
-## Journey-Fluss des Kunden
-
-Navigieren Sie zu [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Klicken **Alle zulassen**.
+Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Alle zulassen**.
 
 ![DSN](./images/web8.png)
 
-Klicken Sie auf das Symbol für das Adobe-Logo oben links im Bildschirm, um den Profilanzeige zu öffnen.
+Clique no ícone do logotipo da Adobe kein Canto Superior esquerdo da tela para abrir o Visualizador de perfil.
 
 ![Demo](./images/pv1.png)
 
-Sehen Sie sich das Bedienfeld Profil-Viewer und das Echtzeit-Kundenprofil mit dem **Experience Cloud-ID** als primäre Kennung für diesen derzeit unbekannten Kunden.
+Verifique o ainel do Visualizador de perfil e no Perfil do cliente em tempo real com o **Experience Cloud-ID** como identificador primário para este cliente que ainda é desconhecido.
 
 ![Demo](./images/pv2.png)
 
-Sie können auch alle Erlebnisereignisse sehen, die basierend auf dem Kundenverhalten erfasst wurden. Die Liste ist derzeit leer, aber das wird sich bald ändern.
+Você também pode ver todos os Eventos de Experiência coletados com base no comportamento do cliente. Eine lista está vazia no momento, mas isso mudará em breve.
 
 ![Demo](./images/pv3.png)
 
-Navigieren Sie zu **Anwendungsdienste** Menüoption und auf das Produkt klicken **Real-Time CDP**.
+Acesse a opção de menu **Anwendungsdienste** e clique no produto **Real-Time CDP**.
 
 ![Demo](./images/pv4.png)
 
-Daraufhin wird die Produktdetailseite angezeigt. Erlebnisereignis des Typs **Produktansicht** wurde jetzt mit der Web SDK-Implementierung an Adobe Experience Platform gesendet, die Sie in Modul 1 überprüft haben. Öffnen Sie das Bedienfeld &quot;Profil-Viewer&quot;und sehen Sie sich Ihre **Erlebnisereignisse**.
+Você verá a página de detalhes do produto. Um Evento de experiência do tipo **Produktansicht** agora foi enviado para a Adobe Experience Platform usando a implementação do Web SDK que você revisou no Módulo 1. Abra o ainel Visualizador de perfil e verifique seque **Erlebnisereignisse**.
 
 ![Demo](./images/pv5.png)
 
-Navigieren Sie zu **Anwendungsdienste** Menüoption und auf das Produkt klicken **Adobe Journey Optimizer**. Ein weiteres Erlebnisereignis wurde an Adobe Experience Platform gesendet.
+Acesse a opção de menu **Anwendungsdienste** e clique no produto **Adobe Journey Optimizer**. Mais um Evento de experiência foi enviado para a Adobe Experience Platform.
 
 ![Demo](./images/pv7.png)
 
-Öffnen Sie das Bedienfeld Profil-Viewer . Es werden nun zwei Erlebnisereignisse des Typs angezeigt **Produktansicht**. Während das Verhalten anonym ist, wird jeder Klick verfolgt und in Adobe Experience Platform gespeichert. Sobald der anonyme Kunde bekannt ist, können wir das gesamte anonyme Verhalten automatisch mit dem Bekannten Profil zusammenführen.
+Abra o schmerel Visualizador de perfil. Agora você verá 2 Eventos de experiência do tipo **Produktansicht**. Embora o comportamento seja anônimo, cada clique é rastreado e rüzenado na Adobe Experience Platform. Depois que o cliente anônimo se tornar conhecido, poderemos mesclar todo o comportamento anônimo automaticamente ao perfil conhecido.
 
 ![Demo](./images/pv8.png)
 
-Lassen Sie uns nun Ihr Kundenprofil analysieren und dann Ihr Verhalten verwenden, um Ihr Kundenerlebnis auf der Website zu personalisieren.
+Agora vamos analisar seu perfil de cliente e usar seu comportamento para personalizar sua experiência do cliente no site.
 
-Nächster Schritt: [1.2 Visualisieren Sie Ihr eigenes Echtzeit-Kundenprofil - Benutzeroberfläche](./ex2.md)
+Próxima etapa: [1.2 Visualize seu próprio perfil de cliente em tempo real - UI](./ex2.md)
 
-[Zurück zum Benutzerfluss 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

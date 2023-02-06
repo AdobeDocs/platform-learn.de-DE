@@ -5,54 +5,54 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 1%
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
-# 3.4 Journey testen
+# 3.4 Teste sua jornada
 
-Um Ihre Journey zu testen, müssen Sie die Ereignis-ID des Ereignisses verwenden, das Sie in Übung 3.2 erstellt haben. Diese sieht wie folgt aus.
+Para testar sua jornada, você deve usar o eventID criado no übício 3.2, que deve ser semelhante ao seguinte.
 
 ![ACOP](./images/payloadeventID.png)
 
-Die Ereignis-ID muss an Adobe Experience Platform gesendet werden, damit der Journey Trigger werden kann. In diesem Beispiel lautet die eventID:
+O eventID é o que preisa ser enviado à Adobe Experience Platform para acionar a jornada. Neste exemplo, o eventID é:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Öffnen Sie die mobile App und rufen Sie die Startseite auf. Klicken Sie auf das Symbol **Einstellungen**.
+Abra o aplicativo móvel e vá para a página inicial. Clique no ícone de **Configuração**.
 
 ![DSN](./images/appsett.png)
 
-Fügen Sie Ihre eventID in das Feld ein. **Beacon EventID** und klicken Sie auf **Speichern**.
+Cole seu eventID no campo **Beacon EventID** e clique em **Speichern**.
 
 ![DSN](./images/beacon1.png)
 
-Bevor Sie fortfahren, öffnen Sie bitte diese Webseite auf Ihrem Computer: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de Continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Daraufhin sehen Sie Folgendes:
+Em seguida, será exibida a tela:
 
 ![DSN](./images/screen1.png)
 
-Gehen Sie dann zurück zur Homepage. Klicken Sie auf **Beacon** Symbol.
+Retorne para a página inicial. Clique no ícone do **Beacon**.
 
 ![DSN](./images/app23.png)
 
-Dann wirst du das sehen. Wählen Sie zuerst **Bootcamp Screen Beacon** und klicken Sie dann auf **Einstieg** Schaltfläche. Auf diese Weise können Sie einen Beacon-Eintrag simulieren.
+Primeiro, selecione **Bootcamp Screen Beacon** e clique no botão de **entrada** Schaltfläche. Isso permitirá que você simule uma entrada do beacon.
 
 ![DSN](./images/app21.png)
 
-Sehen Sie sich nun den Bildschirm im Geschäft an. Das zuletzt angezeigte Produkt wird innerhalb von 5 Sekunden angezeigt.
+Agora bestätigte eine tela da loja. Você verá o último produto visualizado aparecer diena tela em 5 segundos.
 
 ![DSN](./images/beacon3.png)
 
-Sie erhalten auch Ihre Push-Benachrichtigung.
+Você também terá recebido sua notificação push.
 
 ![DSN](./images/beacon2.png)
 
-Du bist jetzt mit dieser Übung fertig.
+Você terminou este übício.
 
-[Zurück zum Benutzerfluss 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

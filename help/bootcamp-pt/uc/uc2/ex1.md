@@ -5,69 +5,69 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '368'
 ht-degree: 2%
 
 ---
 
-# 2.1 Besuchen Sie die Website und erstellen Sie Ihr Konto
+# 2.1 Website e cria sua conta
 
-## Kontext
+## ContextTo
 
-Die Journey von unbekanntem bis bekanntem ist eines der wichtigsten Themen der heutigen Marken, ebenso wie die Journey des Kunden von der Akquise bis zur Aufbewahrung.
+Eine jornada do desconhecido ao conhecido é um dos tópicos mais importantes para as marcas atualmente, assim como a jornada do cliente, da aquisição à retenção.
 
-Adobe Experience Platform spielt bei diesem Journey eine große Rolle. Plattform ist das Gehirn für Kommunikation, **Erlebnissystem**.
+Ein Adobe Experience Platform desempenha um papel importante wird zu einer jornada. A plataforma é o cérebro da comunicação, o **Erlebnissystem**.
 
-Platform ist eine Umgebung, in der das Wort Kunde breiter ist als nur die bekannten Kunden. Ein unbekannter Besucher auf der Website ist auch aus Sicht von Platform ein Kunde. Daher wird das gesamte Verhalten als unbekannter Besucher auch an Platform gesendet. Durch diesen Ansatz kann eine Marke visualisieren, was vor diesem Zeitpunkt auch passiert ist, wenn dieser Besucher schließlich ein bekannter Kunde wird. Dies hilft aus der Sicht der Attribution und Erlebnisoptimierung.
+Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecidos. Um visitante desconhecido no site também é um cliente do ponto de vista da Plataforma e, como tal, todo o comportamento de um visitante desconhecido também é enviado à Plataforma. Graças a essa abordagem, quando esse visitante eventalmente se torna um cliente conhecido, uma marca também pode visualizar o que aconteceu antes daquele momento. Isso ajuda a partir de uma perspectiva de otimização de atribuição e experiência.
 
-## Journey-Fluss des Kunden
+## Fluxo da jornada do cliente
 
-Navigieren Sie zu [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Klicken **Alle zulassen**. Basierend auf Ihrem Browsing-Verhalten im vorherigen Benutzerfluss wird auf der Startseite der Website eine Personalisierung angezeigt.
+Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Alle zulassen**. Com base no seu comportamento de navegação no fluxo de usuário anterieur, você verá a personalização acontecer na página inicial do site.
 
 ![DSN](./images/web8.png)
 
-Klicken Sie auf das Symbol für das Adobe-Logo oben links im Bildschirm, um den Profilanzeige zu öffnen. Sehen Sie sich das Bedienfeld Profil-Viewer und das Echtzeit-Kundenprofil mit dem **Experience Cloud-ID** als primäre Kennung für diesen derzeit unbekannten Kunden.
+Clique no ícone do logotipo da Adobe kein Canto Superior esquerdo da tela para abrir o Visualizador de perfil. Verifique o ainel do Visualizador de perfil e no Perfil do cliente em tempo real com o **Experience Cloud-ID** como identificador primário para este cliente que ainda é desconhecido.
 
 ![Demo](./images/pv1.png)
 
-Sie können auch alle Erlebnisereignisse sehen, die basierend auf dem Kundenverhalten erfasst wurden.
+Você também pode ver todos os Eventos de experiência coletados com base no comportamento do cliente.
 
 ![Demo](./images/pv3.png)
 
-Klicken Sie auf **Profil** in der oberen rechten Ecke des Bildschirms angezeigt.
+Clique no ícone **Profil** kein Canto Superior Direito da tela.
 
 ![Demo](./images/pv4.png)
 
-Klicken **Konto erstellen**.
+Clique em **Konto erstellen**.
 
 ![Demo](./images/pv5.png)
 
-Füllen Sie alle Felder des Formulars aus. Verwenden Sie einen echten Wert für E-Mail-Adresse und Telefonnummer, da dieser Wert in späteren Übungen zum Versand von E-Mails und SMS verwendet wird.
+Preencha todos os campos do formário. Verwenden Sie den Wert echte para endereço de e-mail e número de fax, pois será usado em übícios posteriores para envio de e-mail e SMS.
 
 ![Demo](./images/pv7.png)
 
-Scrollen Sie nach unten und klicken Sie auf **registrieren**.
+Rolle para baixo e clique em **registrieren**.
 
 ![Demo](./images/pv8.png)
 
-Dann wirst du das sehen.
+Em seguida, o seguinte será exibido.
 
 ![Demo](./images/pv9.png)
 
-Sie erhalten außerdem diese E-Mail:
+Você também receberá o seguinte e-mail:
 
 ![Demo](./images/pv10.png)
 
-Einige Minuten später erhalten Sie auch diese E-Mail:
+E alguns minutos depois, você também receberá o seguinte E-Mail:
 
 ![Demo](./images/pv11.png)
 
-Sehen wir uns an, wie diese Onboarding-Journey als Nächstes konfiguriert wurde.
+Vamos Konferenz ein seguir como essa jornada de onboarding foi konfigurada.
 
-Nächster Schritt: [2.2 Ereignis erstellen](./ex2.md)
+Próxima etapa [2.2 Kritisches Ereignis](./ex2.md)
 
-[Zurück zum Benutzerfluss 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

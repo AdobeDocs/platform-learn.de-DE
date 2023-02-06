@@ -5,55 +5,56 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 2%
 
 ---
 
-# 2.4 Journey testen
+# 2.4 Teste sua jornada
 
-## Journey-Fluss des Kunden
+## Fluxo da jornada do cliente
 
-Öffnen Sie ein neues, sauberes Inkognito-Browserfenster und navigieren Sie zu [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Klicken **Alle zulassen**. Basierend auf Ihrem Browsing-Verhalten im vorherigen Benutzerfluss wird auf der Startseite der Website eine Personalisierung angezeigt.
+Abra uma nova janela e anônima do navegador e vá para [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Alle zulassen**. Com base no seu comportamento de navegação no fluxo de usuário anterieur, você verá a personalização acontecer na página inicial do site.
 
 ![DSN](./images/web8a.png)
 
-Klicken Sie auf **Profil** in der oberen rechten Ecke des Bildschirms angezeigt.
+Clique no ícone **Profil** kein Canto Superior Direito da tela.
 
 ![Demo](./images/web8b.png)
 
-Klicken **Konto erstellen**.
+Clique em **Konto erstellen**.
 
 ![Demo](./images/pv5.png)
 
-Füllen Sie alle Felder des Formulars aus. Verwenden Sie einen echten Wert für E-Mail-Adresse und Telefonnummer, da dieser Wert in späteren Übungen zum Versand von E-Mails und SMS verwendet wird.
+Preencha todos os campos do formário. Verwenden Sie den Wert echte para endereço de e-mail e número de fax, pois será usado em übícios posteriores para envio de e-mail e SMS.
 
 ![Demo](./images/pv7a.png)
 
-Scrollen Sie nach unten. Sie müssen jetzt die eventID Ihres benutzerspezifischen Ereignisses eingeben, die Sie in Übung 2.2 erstellt haben. Sie finden sie hier:
+Rolle para baixo. Agora você deve inserir o eventID do seu evento personalizado que você criou no übício 2.2. Você pode encontá-lo aqui:
 
 ![ACOP](./images/payloadeventID.png)
 
-Die Ereignis-ID muss an Adobe Experience Platform gesendet werden, um die von Ihnen erstellte Journey Trigger. Dies ist die eventID in diesem Beispiel: `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
+O eventID é o que preisa ser enviado à Adobe Experience Platform para acionar a jornada que você construiu. Este é o eventID neste exemplo:
+`19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-Füllen Sie die eventID im Feld aus **Ihre Ereignis-ID für die Kontoerstellung** und klicken Sie auf **registrieren**.
+Preencha o eventID no campo **Ihre Ereignis-ID für die Kontoerstellung** e clique em **registrieren**.
 
 ![Demo](./images/pv8a.png)
 
-Dann wirst du das sehen.
+Em seguida, a tela abaixo será exibida:
 
 ![Demo](./images/pv9.png)
 
-Sie erhalten auch diese E-Mail, die die E-Mail ist, die Sie im Rahmen dieser Übung selbst erstellt haben.
+Você também receberá este e-mail, que é o e-mail que você mesmo criou como parte deste übício.
 
 ![Demo](./images/pv10a.png)
 
-Du bist jetzt mit dieser Übung fertig.
+Você terminou este übício.
 
-Nächster Schritt: [2.5 Mobile App installieren und verwenden](./ex5.md)
+Próxima etapa: [2.5 Instale e use o aplicativo móvel](./ex5.md)
 
-[Zurück zum Benutzerfluss 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

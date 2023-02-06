@@ -5,106 +5,105 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 3%
+source-wordcount: '793'
+ht-degree: 1%
 
 ---
 
-# 4.4 Datenvorbereitung in Analysis Workspace
+# 4.4 Customer Journey Analytics des Präparação de dados
 
-## Ziele
+## Objetivos
 
-- Grundlegendes zur Analysis Workspace-Benutzeroberfläche in CJA
-- Grundlegendes zur Datenvorbereitung in Analysis Workspace
-- Erfahren Sie, wie Sie Datenberechnungen durchführen.
+- Entenda a UO do Analysis Workspace on CJA
+- Entenda os conceitos de vorbereitação de dados in Analysis Workspace
+- Aprenda a fazer cálculos de dados
 
-## 4.4.1 Analysis Workspace-Benutzeroberfläche in CJA
+## 4.4.1 Benutzeroberfläche führt Analysis Workspace auf CJA aus
 
-Analysis Workspace beseitigt alle typischen Einschränkungen eines einzelnen Analytics-Berichts. Es bietet eine robuste, flexible Arbeitsfläche zum Erstellen benutzerdefinierter Analyseprojekte. Ziehen Sie per Drag-and-Drop eine beliebige Anzahl von Datentabellen, Visualisierungen und Komponenten (Dimensionen, Metriken, Segmente und Zeitgranularitäten) in ein Projekt. Erstellen Sie sofort Aufschlüsselungen und Segmente, erstellen Sie Kohorten für die Analyse, erstellen Sie Warnhinweise, vergleichen Sie Segmente, führen Sie Fluss- und Fallout-Analysen durch und kuratieren und planen Sie Berichte für die Freigabe für andere in Ihrem Unternehmen.
+O Analysis Workspace entfernen todas als limitações típicas de um único relatório do Analytics. Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados. Array e solte qualquer número de tabelas de dados, visualizações e components (dimensões, métricas, segmentos e granularidades de tempo) para um projeto. Criação instantânea de avarias e segmentos, criação de cortes para análise, criação de alertas, Comparação de segmentos, análise de fluxo e de falhas e relatórios de curadoria e agendamento para compartilhar com qualpessoa em seu negócio.
 
-Customer Journey Analytics stellt diese Lösung auf die Platform-Daten. Es wird dringend empfohlen, sich dieses vierminütige Übersichtsvideo anzusehen:
+O Customer Journey Analytics traz essa solução além dos dados da plataforma. É altamente recomendável assistir a este vídeo de visão geral de Quatro minutos:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
-Wenn Sie Analysis Workspace noch nie verwendet haben, empfehlen wir dringend, sich dieses Video anzusehen:
+Se você nunca usou o Analysis Workspace antes, recomendamos este vídeo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
-### Projekt erstellen
+### Crie Seu Project
 
-Jetzt ist es an der Zeit, Ihr erstes CJA-Projekt zu erstellen. Navigieren Sie zur Registerkarte &quot;Projekte&quot;in CJA.
-Klicken Sie auf **Neu erstellen**.
+Agora é hora de criar seu primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. Clique em **Neu erstellen**.
 
 ![Demo](./images/prmenu.png)
 
-Dann wirst du das sehen. Auswählen **Leeres Projekt** und klicken Sie anschließend auf **Erstellen**.
+Em seguida, você verá a tela abaixo. Selecione **Leeres Projekt** então clique em **Erstellen**.
 
 ![Demo](./images/prmenu1.png)
 
-Dann sehen Sie ein leeres Projekt.
+Você verá um projeto vazio.
 
 ![Demo](./images/premptyprojects.png)
 
-Wählen Sie zuerst die richtige Datenansicht in der oberen rechten Ecke des Bildschirms aus. In diesem Beispiel lautet die auszuwählende Datenansicht . `vangeluwe - Omnichannel Data View`.
+Primeiro, certificate-se de selecionar a Visualização de dados correta no canto überlegen direito da tela. Neste Exemplo, Visualização de dados a ser selecionada é `vangeluwe - Omnichannel Data View`.
 
 ![Demo](./images/prdv.png)
 
-Als Nächstes speichern Sie Ihr Projekt und geben ihm einen Namen. Sie können den folgenden Befehl zum Speichern verwenden:
+Em seguida, você irá salvar seu projeto e dar um nome a ele. Você pode usar o seguinte comando para salvar:
 
 | BS | Kurzschnitt |
 | ----------------- |-------------| 
 | Windows | Kontrolle + S |
 | Mac | Befehl + S |
 
-Dieses Popup wird angezeigt:
+Pop-up Você verá este:
 
 ![Demo](./images/prsave.png)
 
-Bitte verwenden Sie diese Namenskonvention:
+Verwenden Sie das este Modell de nomenclatura:
 
 | Name | Beschreibung |
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-Klicken Sie anschließend auf **Speichern**.
+Em seguida, clique em **Speichern**.
 
 ![Demo](./images/prsave2.png)
 
-## 4.4.2 Berechnete Metriken
+## 4.4.2 Métricas kalkadas
 
-Obwohl wir alle Komponenten in der Datenansicht organisiert haben, müssen Sie dennoch einige davon anpassen, damit Geschäftsbenutzer bereit sind, ihre Analyse zu starten. Außerdem können Sie bei jeder Analyse eine berechnete Metrik erstellen, um die Insights-Suche genauer zu untersuchen.
+Embora tenhamos organizado todos os componentes na Visualização de dados, você ainda deve adaptar alguns deles para que os usuários de negócios estejam prontos para iniciar suas análises. Além disso, durante qualquer processo de analytics, você pode criar métricas calculadas para aprofundar a descoberta de insights.
 
-Als Beispiel erstellen wir eine berechnete **Konversionsrate** mithilfe der **Käufe** Metrik/Ereignis, die wir in der Datenansicht definiert haben.
+Como exemplo, criaremos uma Taxa de versão calculada usando a métrica/evento Compras que definimos na Visualização de dados.
 
-### Konversionsrate
+## Taxa de dialogão
 
-Beginnen wir damit, den Generator für berechnete Metriken zu öffnen. Klicken Sie auf **+** , um Ihre erste berechnete Metrik in Analysis Workspace zu erstellen.
+Vamos começar a abrir o construtor de métricas calculadas. Clique em **+** para criar sua primeira Métrica calculada auf Analysis Workspace.
 
 ![Demo](./images/pradd.png)
 
-Die **Generator für berechnete Metriken** wird angezeigt:
+O **Generator für berechnete Metriken** irá aparecer:
 
 ![Demo](./images/prbuilder.png)
 
-Suchen Sie die **Käufe** in der Liste der Metriken im Menü auf der linken Seite. under **Metriken** click **Alle anzeigen**
+Sichern **Käufe** na lista de métricas kein Menü do lado esquerdo. Em **Metriken** clique em **Alle anzeigen**
 
 ![Demo](./images/calcbuildercr1.png)
 
-Ziehen Sie jetzt eine Dropdown-Liste **Käufe** -Metrik in die Definition der berechneten Metrik ein.
+Agora arraste e solte a métrica **Käufe** na definição da métrica calculada.
 
 ![Demo](./images/calcbuildercr2.png)
 
-Normalerweise bedeutet Konversionsrate **Konversionen/Sitzungen**. Gehen wir also dieselbe Berechnung in die Arbeitsfläche der berechneten Metrik-Definition. Suchen Sie die **Sitzungen** Metrik und ziehen Sie sie per Drag-and-Drop in den Definition-Builder unter **Käufe** -Ereignis.
+Normalmente, taxa de dialogão signia **Konversionen/Sitzungen**. Então, vamos fazer o mesmo cálculo na tela de definição de métrica calculada. Encontre a métrica **Sitzungen** e arraste e solte-a no criador de definição, no evento **Käufe**.
 
 ![Demo](./images/calcbuildercr3.png)
 
-Beachten Sie, dass der Trennzeichen-Operator automatisch ausgewählt ist.
+Observe que o operador de divisão é selecionado automaticamente.
 
 ![Demo](./images/calcbuildercr4.png)
 
-Die Konversionsrate wird häufig in Prozent dargestellt. Ändern wir also das Format in Prozent und wählen 2 Dezimalstellen aus.
+Ein Taxa de dialogão é comumente darada em porcentagem. Então, vamos mudar o formato para porcentagem e selecionar 2 casas decimais.
 
 ![Demo](./images/calcbuildercr5.png)
 
@@ -114,46 +113,46 @@ Die Konversionsrate wird häufig in Prozent dargestellt. Ändern wir also das Fo
 | ----------------- |-------------| 
 | Konversionsrate | Konversionsrate |
 
-Sie haben so etwas auf Ihrem Bildschirm:
+Por fim, altere o nome e a descrição da métrica calculada:
 
 ![Demo](./images/calcbuildercr6.png)
 
-Vergiss nicht, **Speichern** die berechnete Metrik.
+Não se esqueça de **Salvar** eine Métrica Calculada.
 
 ![Demo](./images/pr9.png)
 
-## 4.4.3 Berechnete Dimensionen: Filter (Segmentierung) und Datumsbereiche
+## 4.4.3 Dimensões calculate: Filtros (segmentação) e intervalos de datas
 
-### Filter: Berechnete Dimensionen
+### Filter: Dimensões calculate
 
-Berechnungen sind nicht nur für Metriken vorgesehen. Bevor Sie mit einer Analyse beginnen, ist es auch interessant, einige **Berechnete Dimensionen**. Das bedeutet **Segmente** zurück in Adobe Analytics. Im Customer Journey Analytics werden diese Segmente **Filter**.
+Os cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interessante algumas **Berechnete Dimensionen**. Isso signia, essencialmente **Segmente** Keine Adobe Analytics. Kein Customer Journey Analytics, weist segmentos são chamados de **Filter**.
 
 ![Demo](./images/prfilters.png)
 
-Das Erstellen von Filtern hilft Benutzern aus Unternehmen, die Analyse mit einigen wertvollen berechneten Dimensionen zu beginnen. Dadurch werden einige Aufgaben automatisiert und der Adoptionsteil unterstützt. Im Folgenden finden Sie einige Beispiele:
+Ein criação de filtros ajudará os usuários de negócios a iniciar o analytics com algumas dimensões calculadas valiosas. Isso irá automatizar algumas tarefas, além de ajudar na parte de adoção. Abaixo estão alguns example:
 
-1. Eigene Medien, gebührenpflichtige Medien,
-2. Neue und wiederkehrende Besuche
-3. Kunden mit Warenkorb
+1. Mídia Própria, Mídia Paga,
+2. Visitas novas x recorrentes
+3. Clientcom carrinho abandonado
 
-Diese Filter können vor oder während des Analyseabschnitts erstellt werden (was Sie in der nächsten Übung tun werden).
+Esses filtros podem ser criados antes ou durante a parte de análise (o que você fará no próximo übício).
 
-### Datumsbereiche: Berechnete Dimensionen
+### Intervalos de datas: Dimensões de tempo calculadas
 
-Zeitdimensionen sind andere Dimensionen. Einige sind bereits erstellt, Sie können aber auch Ihre eigenen benutzerdefinierten Time-Dimensionen in der Datenvorbereitungsphase erstellen.
+Als dimensões de tempo são outro tipo de dimensões calculadas. Alguns já foram criados, mas você também pode criar suas próprias Dimensões de tempo personalizadas na fase de prepare ação de dados.
 
-Mithilfe dieser Dimensionen für berechnete Zeit können Analysten und Geschäftsbenutzer wichtige Daten speichern und diese zum Filtern und Ändern der Berichtszeit verwenden. Typische Fragen und Zweifel, die uns bei der Analyse am Herzen liegen:
+Essas Dimensões de tempo calculado ajudarão analistas e usuários de negócios a lembrar datas importantes e usá-las para filtrar e alterar o tempo de relatório. Perguntas e dúvidas típicas quando fazemos análises:
 
-- Wann war Black Friday letztes Jahr? 21.-29.?
-- Wann haben wir diese Fernsehkampagne im Dezember geführt?
-- Von wann bis wann haben wir die Sommerverkäufe 2018 getätigt? Ich möchte es mit 2019 vergleichen. Wissen Sie übrigens genau die Tage 2019?
+- Quando foi ein Black Friday do ano passado? Geben Sie os dias 21 e 29 ein?
+- Quando veiculamos aquela campanha de TV em dezembro?
+- De quando a quando fiemos as vendas de verão de 2018? Quero Comparar com 2019. a propósito, você sabe os dias exatos em 2019?
 
 ![Demo](./images/timedimensions.png)
 
-Sie haben die Datenvorbereitung mit CJA Analysis Workspace abgeschlossen.
+Agora você schlüssiiu o übício de vorbereitação de dados usando o Analysis Workspace do CJA.
 
-Nächster Schritt: [4.5 Visualisierung mit Customer Journey Analytics](./ex5.md)
+Próxima etapa: [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
-[Zurück zum Benutzerfluss 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Zu allen Modulen zurückkehren](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

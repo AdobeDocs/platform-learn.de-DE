@@ -5,137 +5,137 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 4%
+source-wordcount: '842'
+ht-degree: 2%
 
 ---
 
-# 3.3 Journey- und Push-Benachrichtigung erstellen
+# 3.3 Crie sua jornada e notificação push
 
-In dieser Übung konfigurieren Sie die Journey und Nachricht, die ausgelöst werden müssen, wenn ein Benutzer mithilfe der App ein Beacon betritt.
+Neste übício, você irá configuration a jornada e a mensagem que preisa ser acionada quando alguém inserir uma sinalização (Beacon) usando o aplicativo móvel.
 
-Melden Sie sich bei Adobe Journey Optimizer an, indem Sie [Adobe Experience Cloud](https://experience.adobe.com). Klicken **Journey Optimizer**.
+Faça login bei Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Sie werden zum **Startseite**  in Journey Optimizer anzeigen. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `Bootcamp`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **Prod** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **Bootcamp**. Sie sind dann im **Startseite** Ansicht Ihrer Sandbox `Bootcamp`.
+Você será redirecionado para visualização da **Startseite** Keine Journey Optimizer. Primeiro, verifique se você está usando o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** Auswahl von Sandbox- und Lista-Werten. Neste Exemplo, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Startseite**  Ausführen einer Sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.3.1 Journey erstellen
+## 3.3.1 Crie a sua jornada
 
-Klicken Sie im linken Menü auf **Journeys**. Klicken Sie anschließend auf **Journey erstellen** , um eine neue Journey zu erstellen.
+No menu à esquerda, clique em **Journey**. Em seguida, clique em **Journey erstellen** para criar uma nova jornada.
 
 ![ACOP](./images/createjourney.png)
 
-Dann sehen Sie einen leeren Journey-Bildschirm.
+Você verá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-In der vorherigen Übung haben Sie eine neue **Ereignis**. Sie haben es wie folgt benannt: `yourLastNameBeaconEntryEvent` und ersetzt `yourLastName` mit Ihrem Nachnamen. Dies war das Ergebnis der Ereigniserstellung:
+No übício anteriore, você criou um novo **Ereignis**. Você nomeou o evento `yourLastNameBeaconEntryEvent` e substitution `yourLastName` pelo seu sobrenome. Este foi o result tado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
-Jetzt müssen Sie dieses Ereignis als Beginn dieser Journey nehmen. Gehen Sie dazu zur linken Seite des Bildschirms und suchen Sie in der Ereignisliste nach Ihrem Ereignis.
+Agora você deve rücksichtsar este evento como início desta Jornada. Você pode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-Wählen Sie das Ereignis aus, ziehen Sie es auf die Journey-Arbeitsfläche und legen Sie es ab. Ihre Journey sieht jetzt so aus. Klicken **Ok** , um Ihre Änderungen zu speichern.
+Selecione seu evento, arraste e solte o evento na tela de jornada. Sua jornada agora deve ser semelhante ao seguinte. Clique em **Ok** para salvar suas alterações.
 
 ![ACOP](./images/journeyevent.png)
 
-Als zweiten Schritt im Journey müssen Sie eine **Push** Aktion. Navigieren Sie zur linken Seite Ihres Bildschirms, um **Aktionen**, wählen Sie die **Push** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den zweiten Knoten im Journey.
+Como segunda etapa da jornada, você deve adicionar uma ação **Push**. Vá para o lado esquerdo da tela para **Aktionen**, selecione a ação **Push** e arraste e solte a ação no segundo nó da sua jornada.
 
 ![ACOP](./images/journeyactions.png)
 
-Erstellen Sie nun auf der rechten Bildschirmseite Ihre Push-Benachrichtigung.
+No lado direito da tela, agora você deve criar sua notificação push.
 
-Legen Sie die **Kategorie** nach **Marketing** und wählen Sie eine Push-Oberfläche aus, über die Sie Push-Benachrichtigungen versenden können. In diesem Fall ist die auszuwählende Push-Oberfläche **mmeeewis-app-mobile-bootcamp**.
+Definieren Sie eine **Kategorie** como **Marketing** e selecione uma superfície push que permite enviar notificações push. Nesse caso, ein Superfície push a ser selecionada é **mmeeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.3.2 Nachricht erstellen
+## 3.3.2 Krim a sua mensagem
 
-Klicken **Inhalt bearbeiten**.
+Clique em **Inhalt bearbeiten**.
 
 ![ACOP](./images/emptymsg.png)
 
-Daraufhin sehen Sie Folgendes:
+Em seguida, a tela abaixo será exibida:
 
 ![ACOP](./images/emailmsglist.png)
 
-Definieren wir den Inhalt der Push-Benachrichtigung.
+Vamos definir o conteúdo da notificação push.
 
-Klicken Sie auf **Titel** Textfeld.
+Clique no campo de texto **Titel**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-Beginnen Sie im Textbereich mit dem Schreiben **Hi**. Wählen Sie das Personalisierungssymbol aus.
+Na área de texto, comece **Olá**. Clique no ícone de personalização.
 
 ![Journey Optimizer](./images/msg6.png)
 
-Jetzt müssen Sie das Personalisierungstoken für das Feld einfügen **Vorname** die unter `profile.person.name.firstName`. Wählen Sie im linken Menü die Option **Profilattribute**, scrollen Sie nach unten/navigieren Sie zu der **Person** und auf den Pfeil klicken, um eine Ebene tiefer zu gehen, bis Sie das Feld erreichen `profile.person.name.firstName`. Klicken Sie auf **+** -Symbol, um das Feld zur Arbeitsfläche hinzuzufügen. Klicken Sie auf **Speichern**.
+Agora você recisa trazer o token de personalização para o campo **Vorname** que está armazenado em `profile.person.name.firstName`. No menu à esquerda, selecione **Profilattribute**, role para baixo/navegue para encounter o elemento **Person** e clique na seta para avançar um nível até chegar ao campo `profile.person.name.firstName`. Clique no ícone **+** para adicionar o campo à tela. Clique em **Speichern**.
 
 ![Journey Optimizer](./images/msg7.png)
 
-Du wirst dann wieder hier sein. Klicken Sie auf das Personalisierungssymbol neben dem Feld. **body**.
+Então, você irá retornar para esta tela. Clique no ícone de personalização ao lado do campo **body**.
 
 ![Journey Optimizer](./images/msg11.png)
 
-Schreiben Sie im Textbereich `Welcome at the `.
+Na área de texto, escreva `Bem-vindo(a)`.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Klicken Sie anschließend auf **Kontextuelle Attribute** und dann **Journey Orchestration**.
+Em seguida, clique em  **Kontextuelle Attribute** und dann **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
-Klicken **Veranstaltungen**.
+Clique em **Veranstaltungen**.
 
 ![ACOP](./images/jomsg4.png)
 
-Klicken Sie auf den Namen Ihres Ereignisses, der wie folgt aussehen sollte: **yourLastNameBeaconEntryEvent**.
+Clique no nome do seu evento, que deve ser semelhante ao seguinte: **yourLastNameBeaconEntryEvent**.
 
 ![ACOP](./images/jomsg5.png)
 
-Klicken **Ortskontext**.
+Clique em **Ortskontext**.
 
 ![ACOP](./images/jomsg6.png)
 
-Klicken **POI-Interaktion**.
+Clique em **POI-Interaktion**.
 
 ![ACOP](./images/jomsg7.png)
 
-Klicken **POI-Detail**.
+Clique em **POI-Detail**.
 
 ![ACOP](./images/jomsg8.png)
 
-Klicken Sie auf **+** Symbol auf **POI-Name**.
-Dann wirst du das sehen. Klicken Sie auf **Speichern**.
+Klicks nein **+** icon no **POI-Name**.
+Em seguida, o seguinte será exibido. Clique em **Speichern**.
 
 ![ACOP](./images/jomsg9.png)
 
-Ihre Nachricht ist jetzt bereit. Klicken Sie auf den Pfeil in der oberen linken Ecke, um zu Ihrer Journey zurückzukehren.
+Sua mensagem agora está pronta. Clique na seta no canto Superior esquerdo para retornar à sua jornada.
 
 ![ACOP](./images/jomsg11.png)
 
-Klicken Sie auf **OK**.
+Clique em **Ok**.
 
 ![ACOP](./images/jomsg14.png)
 
-## 3.3.2 Nachricht an einen Bildschirm senden
+## 3.3.2 Envie uma mensagem para uma tela
 
-Als dritten Schritt im Journey müssen Sie eine **sendMessageToScreen** Aktion. Navigieren Sie zur linken Seite Ihres Bildschirms, um **Aktionen**, wählen Sie die **sendMessageToScreen** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den dritten Knoten in Ihre Journey. Dann wirst du das sehen.
+Como terceira etapa da jornada, você deve adicionar uma ação  **sendMessageToScreen** Aktion. Vá para o lado esquerdo da tela para **Aktionen**, selecione a ação **sendMessageToScreen** e arraste e solte a ação no terceiro nó da sua jornada. Em seguida, você verá a tela abaixo.
 
 ![ACOP](./images/jomsg15.png)
 
-Die **sendMessageToScreen** action ist eine benutzerdefinierte Aktion, mit der eine Nachricht an dem Endpunkt veröffentlicht wird, der von der In-Store-Anzeige verwendet wird. Die **sendMessageToScreen** -Aktion erwartet die Definition einer Reihe von Variablen. Sie können diese Variablen anzeigen, indem Sie nach unten scrollen, bis Sie **Aktionsparameter**.
+**sendMessageToScreen** é uma ação personalizada que irá publicar uma mensagem no ponto de extremidade usado pela exibição na loja. A ação **sendMessageToScreen** espera que múltiplas variáveis sejam definidas. Você pode visualizar essas variáveis rolando para baixo até ver **Aktionsparameter**.
 
 ![ACOP](./images/jomsg16.png)
 
-Sie müssen jetzt die Werte für jeden Aktionsparameter festlegen. In dieser Tabelle erfahren Sie, welche Werte wohin benötigt werden.
+Agora você preisa definir os valores para cada parâmetro de ação. Siga esta tabela para entender quais valores são notwendiários e onde.
 
 | Parameter | value |
 |:-------------:| :---------------:|
@@ -151,29 +151,29 @@ Sie müssen jetzt die Werte für jeden Aktionsparameter festlegen. In dieser Tab
 
 {style=&quot;table-layout:auto&quot;}
 
-Um diese Werte festzulegen, klicken Sie auf das **Bearbeiten** Symbol.
+Para definir esses valores, clique no ícone **Bearbeiten**.
 
 ![ACOP](./images/jomsg17.png)
 
-Wählen Sie als Nächstes **Erweiterter Modus**.
+Em seguida, selecione **Erweiterter Modus**.
 
 ![ACOP](./images/jomsg18.png)
 
-Fügen Sie dann den Wert basierend auf der obigen Tabelle ein. Klicken Sie auf **OK**.
+Em seguida, cole o valor com base na tabela acima. Clique em **Ok**.
 
 ![ACOP](./images/jomsg19.png)
 
-Wiederholen Sie diesen Vorgang, um Werte für jedes Feld hinzuzufügen.
+Repita esse processo para adicionar valores para cada campo.
 
 >[!IMPORTANT]
 >
->Für das Feld ECID gibt es einen Verweis auf das Ereignis `yourLastNameBeaconEntryEvent`. Bitte stellen Sie sicher, dass Sie `yourLastName` durch Ihren Nachnamen.
+>Para o campo ECID, há uma referência ao evento`yourLastNameBeaconEntryEvent`. Lembre-se de substitution  `yourLastName` pelo seu sobrenome.
 
-Das Endergebnis sollte wie folgt aussehen:
+O result tado final deve ser semelhante ao seguinte:
 
 ![ACOP](./images/jomsg20.png)
 
-Scrollen Sie nach oben und klicken Sie auf **Ok**.
+Rolle para cima e clique em **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
@@ -181,28 +181,28 @@ Sie müssen Ihrer Journey noch einen Namen geben. Klicken Sie hierzu auf die Sch
 
 ![ACOP](./images/journeyname.png)
 
-Dann können Sie hier den Namen des Journey eingeben. Verwenden Sie `yourLastName - Beacon Entry Journey`. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+Você pode inserir o nome da jornada aqui. Verwenden von `yourLastName - Beacon Entry Journey`. Clique em **OK** para salvar suas alterações.
 
 ![ACOP](./images/journeyname1.png)
 
-Sie können Ihre Journey jetzt veröffentlichen, indem Sie auf **Veröffentlichen**.
+Agora você pode publicar sua jornada clicando em **Veröffentlichen**.
 
 ![ACOP](./images/publishjourney.png)
 
-Klicken **Veröffentlichen** erneut.
+Clique em **Veröffentlichen** novamente.
 
 ![ACOP](./images/publish1.png)
 
-Sie sehen dann eine grüne Bestätigungsleiste, dass Ihre Journey jetzt veröffentlicht ist.
+Você verá uma barra de bestätigmação verde informando que sua jornada agora está Publicada.
 
 ![ACOP](./images/published.png)
 
-Ihre Journey ist jetzt live und kann ausgelöst werden.
+Sua jornada agora está ativa e pode ser acionada.
 
-Du bist jetzt mit dieser Übung fertig.
+Você terminou este übício.
 
-Nächster Schritt: [3.4 Journey testen](./ex4.md)
+Próxima etapa: [3.4 Teste sua jornada](./ex4.md)
 
-[Zurück zum Benutzerfluss 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)
