@@ -3,7 +3,7 @@ title: Berechtigungen für das Tutorial konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf das Experience Platform Web SDK anfordern und die zum Abschließen des Tutorials "Implementieren von Adobe Experience Cloud mit Web SDK"erforderliche Berechtigung konfigurieren.
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4eaa7ae1cf4c4c1478484eaeb877733a43c6fdf5
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 7%
@@ -23,7 +23,7 @@ Erfahren Sie, wie Sie den Zugriff auf das Experience Platform Web SDK anfordern 
 
 Diese Funktionen sollten für alle Experience Cloud-Kunden verfügbar sein, auch wenn Sie keine plattformbasierte Anwendung wie Real-Time CDP verwenden.
 
-* Zugriff auf **Standardproduktion**, **&quot;Prod&quot;** Sandbox (.
+* Zugriff auf **Standardproduktion**, **&quot;Prod&quot;** Sandbox.
 * Zugriff auf **[!UICONTROL Verwalten von Schemas]** und **[!UICONTROL Anzeigen von Schemas]** under **[!UICONTROL Datenmodellierung]**
 * Zugriff auf **[!UICONTROL Verwalten von Identitäts-Namespaces]** und **[!UICONTROL Anzeigen von Identitäts-Namespaces]** under **[!UICONTROL Identity Management]**
 * Zugriff auf **[!UICONTROL Verwalten von Datenspeichern]** und **[!UICONTROL Anzeigen von Datenspeichern]** under **[!UICONTROL Datenerfassung]**
