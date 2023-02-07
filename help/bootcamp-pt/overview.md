@@ -2,9 +2,9 @@
 title: Experience Maker Bootcamp - Brasilien
 description: Startpunkt für Teilnehmer des Experience Makers Bootcamp
 doc-type: multipage-overview
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Muitas empresas não estão cientes do atrito que existe na jornada dos seus clientes, folgenência de uma abordagem fragmentada e não integrada ao orquestrar a comunicação com o cliente. Dados, perfil e conteúdo recisam estar perfeitamente alinhados para projetar e oferecer experiências exccionais ao consumidor.
 
-Nehmen Sie an der Deste Bootcamp para aprender como uma abordagem baseada em plataforma pode ajudar na obtenção dos insights need ários para identificar e remover pontos de atrito para aprimorar a jornada do seu cliente teil.
+Teilnehmer deste Bootcamp para aprender como uma abordagem baseada em Experience Platform pode ajudar na obtenção dos insights need ários para identificar e remover pontos de atrito para jornada do seu cliente.
 
-Ein personalização em escala começa com a compreensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente é essencial. Insights levam à ação, o que leva a mais insights. a abordagem exclusiva da Adobe focada na plataforma forneca as ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua equipe e sua kapidade de oferecer uma experiência holística ao cliente em vez de uma experiência do cliente específica por channel.
+Ein personalização em escala começa com a compreensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente é essencial. Insights levam à ação, o que leva a mais insights. a abordagem exclusiva da Adobe focada na Experience Platform fornecas ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua equipe e sua kapidade de oferecer uma experiência holística ao cliente em vez de uma experiência clido ente específica por channel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 

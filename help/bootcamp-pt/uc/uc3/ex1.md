@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,7 @@ ht-degree: 0%
 
 ## Instant o aplicativo móvel
 
-Vor der Installation des Programms müssen Sie **Tracking** auf Ihrem iOS-Gerät. Gehen Sie dazu zu **Einstellungen** > **Datenschutz und Sicherheit** > **Tracking** und stellen sicher, dass die Option **Zulassen, dass Apps die Verfolgung anfordern**.
-
-Antes de instalar o aplicativo, é notwendiário abilitar **Rastreamento** keine seu dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
+Antes de instalar o aplicativo, é notwendiário abilitar o **Rastreamento** keine seu dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
@@ -26,7 +24,7 @@ Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Ins
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Öffnen**.
+Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -84,7 +82,7 @@ Você verá a página do produto **Kaffee zum Mitnehmen** keine Anwendung.
 
 ![DSN](./images/app20.png)
 
-Agora você irá simular um evento de entrada de sinalização (Beacon) em um local de armazenamento offline. O objetivo da simação é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informmações relevantes para o cliente ao entrar na loja.
+Agora você irá simular um evento de entrada de sinalização (beacon) em uma loja offline. O objetivo da simação é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informmações relevantes para o cliente ao entrar na loja.
 
 Antes de Continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
@@ -96,7 +94,6 @@ Em seguida, retorne para a página inicial. Clique no ícone do **Beacon**.
 
 ![DSN](./images/app23.png)
 
-Dann wirst du das sehen. Wählen Sie zuerst **Bootcamp Screen Beacon** und klicken Sie dann auf **Einstieg** Schaltfläche. Auf diese Weise können Sie einen Beacon-Eintrag simulieren.
 Após essa etapa, o seguinte será exibido. Primeiro, selecione **Bootcamp Screen Beacon** e clique no botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
