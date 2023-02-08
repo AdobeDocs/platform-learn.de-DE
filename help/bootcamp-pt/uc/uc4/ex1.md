@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -91,10 +91,8 @@ Verifique verwendet Schemas und Datensätze in Adobe Experience Platform.
 
 Certifique-se de ter verificado ao menos:
 
-- Identitäten: CRMID, phoneNumber, ECID, email. Welche Identitäten sind die primären Identifikatoren, welche sind die sekundären Identifikatoren?
-Sie können die Kennungen finden, indem Sie ein Schema öffnen und sich das Objekt ansehen `_experienceplatform.identification.core`. Sehen Sie sich das Schema an [Demosystem - Ereignisschema für Website (Global v1.1)](https://experience.adobe.com/platform/schema).
-
 - Identitäten: CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores primários, quais são os identificadores secundários?
+
 Você pode encounter os identificadores abrindo um schema e observando o objeto `_experienceplatform.identification.core`. Überprüfung des Schemas [Demosystem - Ereignisschema für Website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![Demo](./images/identity.png)
@@ -107,7 +105,7 @@ Você pode encounter os identificadores abrindo um schema e observando o objeto�
 
 Agora você está pronto para começar a usar a interface do usuário do Customer Journey Analytics.
 
-Próxima etapa: [Konkrete Datensätze da Adobe Experience Platform kein Customer Journey Analytics](./ex2.md)
+Próxima etapa: [4.2 Konkrete Datensätze da Adobe Experience Platform kein Customer Journey Analytics](./ex2.md)
 
 [Retornar para Fluxo de Usuário 4](./uc4.md)
 

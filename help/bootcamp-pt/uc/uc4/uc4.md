@@ -5,16 +5,16 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
 
 # 4. Customer Journey Analysis
 
-Neste fluxo de usuário, você terá experiência prática com o serviço de aplicativo Customer Journey Analytics.
+Neste Benutzerfluss, você terá experiencia pratica com oder Customer Journey Analytics.
 
 O Customer Journey Analytics fornece uma interface em que os times de Analytics, Negócios e Tecnologia conseguem unir todos os dados da companhia e analisar a jornada cross-channel (online e offline) do cliente de ponta a ponta. O Customer Journey Analytics é capaz de fornecer contexto e clareza para as jornadas de cliente multicanal komplexe. O contexto fornecido gera uma visão acionável em cima das dificuldades no processo de dialogão e possibility experiências relevant e personalizadas nos pontos mais relevant antes.
 
@@ -28,7 +28,7 @@ Mais informmações sobre o Customer Journey Analytics podem ser enkontradas [Aq
 
 - com a UI do Customer Journey Analytics
 - Traga os-Datensätze da Adobe Experience Platform para o Customer Journey Analytics
-- Entenda o ID da pessoa e a junção de dados no Customer Journey Analytics
+- Entenda o Person ID e a junção de dados no CJA
 - Entenda os conceitos de uma conexão de dados e uma visualização de dados
 - Verwenden von Analysis Workspace com-Datensätzen da Adobe Experience Platform
 
