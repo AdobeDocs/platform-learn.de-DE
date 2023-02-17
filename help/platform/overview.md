@@ -4,33 +4,16 @@ description: Informationen zu Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 73313bf0b2f9a0f539c8b52bda2d9bd66bed65d1
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 35%
+source-wordcount: '164'
+ht-degree: 40%
 
 ---
 
 # Tutorials zu Adobe Experience Platform
 
 Adobe Experience Platform ist eines der leistungsfähigsten, flexibelsten und offensten auf dem Markt verfügbaren Systeme für die Einrichtung und Verwaltung umfassender Lösungen zur Umsetzung starker Kundenerlebnisse. Mit Adobe Experience Platform können Unternehmen Kundendaten und Content aus beliebigen Systemen zentral zusammenführen und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung umfassender, personalisierter Erlebnisse erheblich verbessern. In diesen Videos und Tutorials erfahren Sie mehr über die vielen Komponenten von Experience Platform.
-
-
-<div id="whats-new-section">
-
-## Neue Funktionen
-
-* **[Konfigurieren der attributbasierten Zugriffskontrolle (Video)](admin/configure-attribute-based-access-control.md)**
-
-   *Zugriff auf bestimmte Ressourcen beschränken*
-* **[Übersicht über die Datenhygiene (Video)](/help/platform/data-hygiene/overview.md)**
-
-   *Verbessern der Minimierungspraktiken für Daten*
-* **[Datensätze löschen (Video)](/help/platform/data-hygiene/delete-datasets.md)**
-
-   *Lebensdauer von Datensätzen festlegen*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
