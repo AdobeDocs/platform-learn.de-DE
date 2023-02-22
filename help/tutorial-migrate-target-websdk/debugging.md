@@ -1,10 +1,10 @@
 ---
 title: Debuggen | Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung mit dem Adobe Experience Platform Web SDK debuggen. Zu den Themen gehören Debugging-Optionen, Browsererweiterungen und Unterschiede zwischen at.js und dem Platform Web SDK.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 4%
+source-wordcount: '1534'
+ht-degree: 3%
 
 ---
 
@@ -120,7 +120,7 @@ Um Platform Web SDK Target-Traces mit dem Adobe Experience Platform Debugger anz
 1. Laden Sie die Seite neu, und das Protokoll sollte mit detaillierten Informationen zu den Interaktionen im Edge-Netzwerk gefüllt werden.
 1. Konzentrieren Sie sich auf die Protokolleinträge, die in der Beschreibung mit &quot;Target Traces&quot;beginnen, und wählen Sie **[!UICONTROL Ansicht]** Anzeigen von Target-Trace-Details
 
-![Anzeigen von Target-Traces mit Adobe Experience Platform Debugger](assets/target-trace-debugger.png)
+![Anzeigen von Target-Traces mit Adobe Experience Platform Debugger](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
 
 Nach Auswahl **[!UICONTROL Ansicht]** wird eine Überlagerung angezeigt, über die Sie die folgenden Informationen zur Anfrage sehen können:
 
@@ -142,7 +142,7 @@ Target-Trace-Informationen sind sowohl in der Browsererweiterung &quot;Adobe Exp
 1. Wählen Sie einen Protokolleintrag mit dem Typ `com.adobe.target.trace`
 1. Erweitern Sie die Details der Payload und zeigen Sie die Informationen unter `context > targetTrace`
 
-![Anzeigen von Target-Traces mit Assurance](assets/target-trace-assurance.png)
+![Anzeigen von Target-Traces mit Assurance](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
 
 ## Netzwerkanforderung und -antwort untersuchen
 
@@ -150,7 +150,7 @@ Anfrage-Payload und Antwort des Platform Web SDK `sendEvent` -Aufrufe unterschei
 
 ### Payload der Inhaltsanforderung
 
-![Target-spezifische Elemente der Platform Web SDK-Payload](assets/target-payload.png)
+![Target-spezifische Elemente der Platform Web SDK-Payload](assets/target-payload.png){zoomable=&quot;yes&quot;}
 
 - Profil-, Entitäts- und andere Nicht-Mbox-Parameter werden im Ereignis-Array unter `data.__adobe.target`
 - Entscheidungsbereiche befinden sich im Ereignisarray unter `query.personalization.decisionScopes`
@@ -158,7 +158,7 @@ Anfrage-Payload und Antwort des Platform Web SDK `sendEvent` -Aufrufe unterschei
 
 ### Inhalts-Antworttext
 
-![Target-spezifische Elemente des Platform Web SDK-Antworttextes](assets/target-response.png)
+![Target-spezifische Elemente des Platform Web SDK-Antworttextes](assets/target-response.png){zoomable=&quot;yes&quot;}
 
 - Das Platform Web SDK gibt Aktionen für alle Adobe Apps unter der `handle` Objekt
 - Die `personalization:decisions` Aktion bedeutet eine Antwort von Target oder offer decisioning
@@ -169,7 +169,7 @@ Anfrage-Payload und Antwort des Platform Web SDK `sendEvent` -Aufrufe unterschei
 
 ### Payload des Vorschlags-Ereignisses
 
-![Beispiel für Target-Vorschlagsereignis](assets/target-proposition-event.png)
+![Beispiel für Target-Vorschlagsereignis](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
 
 - Target-spezifische SDK-Ereignisse sind entweder `decisioning.propositionDisplay` für eine Impression oder `decisioning.propositionInteract` für eine Interaktion, z. B. einen Klick
 - Die Details des Vorschlagsereignisses befinden sich im &quot;events&quot;-Array unter `xdm._experience.decisioning`

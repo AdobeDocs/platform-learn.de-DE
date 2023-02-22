@@ -1,9 +1,9 @@
 ---
 title: Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung von at.js 2.x auf das Adobe Experience Platform Web SDK migrieren. Zu den Themen gehören die Bibliotheksübersicht, Implementierungsunterschiede und andere bemerkenswerte Hinweise.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '411'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,8 @@ Einige Target-Implementierungen können regionale Mboxes (jetzt als &quot;Bereic
 
 Aktivitäten, die mit dem formularbasierten Composer von Target erstellt und an regionale Mboxes gesendet werden, können nicht automatisch vom Platform Web SDK gerendert werden. Ähnlich wie bei at.js müssen Angebote, die an bestimmte Target-Orte bereitgestellt werden, bei Bedarf gerendert werden.
 
-at.js-Beispiel mit `getOffer()` und `applyOffer()`:
+
++++at.js-Beispiel mit `getOffer()` und `applyOffer()`:
 
 1. Ausführen `getOffer()` , um ein Angebot für einen Standort anzufordern
 1. Ausführen `applyOffer()` , um das Angebot an einen bestimmten Selektor zu rendern
@@ -45,7 +46,9 @@ adobe.target.getOffer({
 });
 ```
 
-Platform Web SDK-Äquivalent mit der `applyPropositions` command:
++++
+
++++Platform Web SDK-Entsprechung mithilfe der `applyPropositions` command:
 
 1. Ausführen `sendEvent` -Befehl zum Anfordern von Angeboten (Vorschlägen) für einen oder mehrere Orte (Bereiche)
 1. Ausführen `applyPropositions` -Befehl mit dem Metadatenobjekt, das Anweisungen zum Anwenden von Inhalten auf die Seite für jeden Bereich enthält
@@ -86,6 +89,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 Das Platform Web SDK bietet mehr Kontrolle über das Anwenden formularbasierter Aktivitäten auf die Seite mithilfe der `applyPropositions` -Befehl mit `actionType` spezifiziert:
 
 | `actionType` | Beschreibung | at.js `applyOffer()` | Platform Web-SDK `applyPropositions` |
@@ -99,6 +104,8 @@ Siehe Abschnitt [dedizierte Dokumentation](https://experienceleague.adobe.com/do
 ## Implementierungsbeispiel
 
 Die folgende Beispielseite baut auf der Implementierung auf, die im vorherigen Abschnitt beschrieben wurde, fügt nur zusätzliche Bereiche zum `sendEvent` Befehl.
+
++++Platform Web SDK-Beispiel mit mehreren Scopes
 
 ```HTML
 <!doctype html>

@@ -1,9 +1,9 @@
 ---
 title: Bibliothek ersetzen | Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung von at.js 2.x auf das Adobe Experience Platform Web SDK migrieren. Zu den Themen gehören die Bibliotheksübersicht, Implementierungsunterschiede und andere bemerkenswerte Hinweise.
-source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1646'
 ht-degree: 4%
 
 ---
@@ -64,7 +64,7 @@ Angenommen, eine einfache Target-Implementierung mit at.js:
 * Ein Codeausschnitt zur Vorab-Ausblendung, um Flackern zu vermeiden
 * Die at.js-Bibliothek von Target wird asynchron mit Standardeinstellungen geladen, um Aktivitäten automatisch anzufordern und zu rendern:
 
-+++Siehe Beispiel-HTML-Code eines at.js
++++at.js-Beispiel einer Implementierung auf einer HTML-Seite
 
 ```HTML
 <!doctype html>
@@ -201,21 +201,17 @@ Adobe empfiehlt die asynchrone Implementierung des Platform Web SDK , um die Sei
 
 Der Vorabausblendungsstil für synchrone Implementierungen kann mithilfe der [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) -Option. Die Konfiguration des Platform Web SDK wird im nächsten Abschnitt behandelt.
 
->[!TIP]
->
-> Wenn Sie die Tag-Funktion (früher Launch) zur Implementierung des Web SDK verwenden, kann der Vorab-Ausblendestil in der Konfiguration der Adobe Experience Platform Web SDK-Erweiterung bearbeitet werden.
-
 Weiterführende Informationen zur Verwaltung von Flackern mit dem Platform Web SDK finden Sie im Abschnitt zum Handbuch:  [Beheben von Flackern bei personalisierten Erlebnissen](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
 
 ## Konfigurieren des Platform Web SDK
 
-Das Platform Web SDK muss bei jedem Laden der Seite konfiguriert werden. Die `configure` muss immer der erste SDK-Befehl mit dem Namen sein. Im folgenden Beispiel wird davon ausgegangen, dass die gesamte Site in einer Bereitstellung auf das Platform Web SDK aktualisiert wird:
+Das Platform Web SDK muss bei jedem Laden der Seite konfiguriert werden. Im folgenden Beispiel wird davon ausgegangen, dass die gesamte Site in einer Bereitstellung auf das Platform Web SDK aktualisiert wird:
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-Die `edgeConfigId` ist die [!UICONTROL Datenspeicher-ID]
+Die `configure` muss immer der erste SDK-Befehl mit dem Namen sein. Die `edgeConfigId` ist die [!UICONTROL Datenspeicher-ID]
 
 ```JavaScript
 alloy("configure", {
@@ -228,7 +224,7 @@ alloy("configure", {
 
 In Tag-Implementierungen werden viele Felder automatisch ausgefüllt oder können aus Dropdown-Menüs ausgewählt werden. Beachten Sie, dass verschiedene Platform [!UICONTROL Sandboxes] und [!UICONTROL datastreams] kann für jede Umgebung ausgewählt werden. Der Datastream ändert sich basierend auf dem Status der Tag-Bibliothek im Veröffentlichungsprozess.
 
-![Konfigurieren der Web SDK-Tag-Erweiterung](assets/tags-config.png)
+![Konfigurieren der Web SDK-Tag-Erweiterung](assets/tags-config.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 Wenn Sie eine seitenweise Migration von at.js zum Platform Web SDK planen, sind die folgenden Konfigurationsoptionen erforderlich:
@@ -247,9 +243,9 @@ alloy("configure", {
 });
 ```
 
->[!TAB tags]
+>[!TAB Tags]
 
-![Konfigurieren der Migrationsoptionen für die Web SDK-Tag-Erweiterung](assets/tags-config-migration.png)
+![Konfigurieren der Migrationsoptionen für die Web SDK-Tag-Erweiterung](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 Die wichtigen Konfigurationsoptionen für Target sind unten beschrieben:
@@ -263,19 +259,15 @@ Die wichtigen Konfigurationsoptionen für Target sind unten beschrieben:
 | `thirdPartyCookiesEnabled` | Aktiviert die Einstellung von Adobe-Drittanbieter-Cookies. Das SDK kann die Besucher-ID in einem Drittanbieterkontext beibehalten, damit dieselbe Besucher-ID siteübergreifend verwendet werden kann. Verwenden Sie diese Option, wenn Sie mehrere Sites haben. Manchmal ist diese Option jedoch aus Datenschutzgründen nicht wünschenswert. | `true` |
 | `prehidingStyle` | Wird verwendet, um eine CSS-Stildefinition zu erstellen, die Inhaltsbereiche Ihrer Web-Seite ausblendet, während personalisierter Inhalt vom Server geladen wird. Dies wird nur bei synchronen Bereitstellungen des SDK verwendet. | `body { opacity: 0 !important }` |
 
->[!NOTE]
->
->`thirdPartyCookiesEnabled` kann auf `true` um ein konsistentes Target-Besucherprofil über mehrere Domänen hinweg zu erhalten. Diese Option sollte auf `false` oder ausgelassen wurde, es sei denn, die Besucherprofil-Persistenz mehrerer Domänen ist erforderlich.
-
->[!TIP]
->
-> Wenn Sie die Tag-Funktion (früher Launch) zur Implementierung des Web SDK verwenden, können diese Konfigurationen in der Konfiguration der Adobe Experience Platform Web SDK-Erweiterung verwaltet werden.
-
 Eine vollständige Liste der Optionen finden Sie im Abschnitt [Konfigurieren des Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=de) Handbuch.
 
 ## Implementierungsbeispiel
 
 Sobald das Platform Web SDK ordnungsgemäß eingerichtet ist, würde die Beispielseite wie folgt aussehen:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!doctype html>
@@ -332,9 +324,61 @@ Sobald das Platform Web SDK ordnungsgemäß eingerichtet ist, würde die Beispie
 </html>
 ```
 
->[!TIP]
->
-> Bei Verwendung der Funktion &quot;Tags&quot;(früher Launch) zur Implementierung des Web SDK ersetzt der Einbettungscode für Tags den obigen Abschnitt &quot;Basis-Code für das Platform Web SDK&quot;, &quot;Plattform-Web-SDK asynchron geladen&quot;und &quot;Platform Web SDK konfigurieren&quot;.
+>[!TAB Tags]
+
+Seiten-Code:
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+Fügen Sie in Tags die Adobe Experience Platform Web SDK-Erweiterung hinzu:
+
+![Hinzufügen der Adobe Experience Platform Web SDK-Erweiterung](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+Fügen Sie die gewünschten Konfigurationen hinzu:
+![Konfigurieren der Migrationsoptionen für die Web SDK-Tag-Erweiterung](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
+
 
 Es ist wichtig zu beachten, dass durch das Einschließen und Konfigurieren der Platform Web SDK-Bibliothek wie oben gezeigt keine Netzwerkaufrufe an das Adobe Edge-Netzwerk ausgeführt werden.
 
