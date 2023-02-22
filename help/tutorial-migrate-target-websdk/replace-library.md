@@ -1,9 +1,9 @@
 ---
 title: Bibliothek ersetzen | Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung von at.js 2.x auf das Adobe Experience Platform Web SDK migrieren. Zu den Themen gehören die Bibliotheksübersicht, Implementierungsunterschiede und andere bemerkenswerte Hinweise.
-source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
+source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 4%
 
 ---
@@ -63,6 +63,8 @@ Angenommen, eine einfache Target-Implementierung mit at.js:
 * Eine oder mehrere Drittanbieter-Hilfsbibliotheken, deren Funktionen in Target-Aktivitäten verwendet werden können (z. B. jQuery)
 * Ein Codeausschnitt zur Vorab-Ausblendung, um Flackern zu vermeiden
 * Die at.js-Bibliothek von Target wird asynchron mit Standardeinstellungen geladen, um Aktivitäten automatisch anzufordern und zu rendern:
+
++++Siehe Beispiel-HTML-Code eines at.js
 
 ```HTML
 <!doctype html>
@@ -126,6 +128,8 @@ Angenommen, eine einfache Target-Implementierung mit at.js:
 </body>
 </html>
 ```
+
++++
 
 Um Target für die Verwendung des Platform Web SDK zu aktualisieren, müssen Sie zunächst at.js entfernen:
 
@@ -220,7 +224,7 @@ alloy("configure", {
 });
 ```
 
->[!TAB tags]
+>[!TAB Tags]
 
 In Tag-Implementierungen werden viele Felder automatisch ausgefüllt oder können aus Dropdown-Menüs ausgewählt werden. Beachten Sie, dass verschiedene Platform [!UICONTROL Sandboxes] und [!UICONTROL datastreams] kann für jede Umgebung ausgewählt werden. Der Datastream ändert sich basierend auf dem Status der Tag-Bibliothek im Veröffentlichungsprozess.
 
