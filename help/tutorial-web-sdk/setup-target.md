@@ -3,9 +3,9 @@ title: Einrichten von Adobe Target mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '3779'
+source-wordcount: '3801'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 2%
 Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Erfahren Sie, wie Sie Erlebnisse bereitstellen und zusätzliche Parameter an Target übergeben.
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=de) ist die Adobe Experience Cloud-Anwendung, die Ihnen all das bietet, was Sie benötigen, um die Erlebnisse Ihrer Kunden anzupassen und zu personalisieren, sodass Sie Umsätze auf Ihren Web- und mobilen Sites, in Apps und anderen digitalen Kanälen maximieren können.
+
 
 ## Lernziele
 
@@ -26,6 +27,10 @@ Am Ende dieser Lektion können Sie:
 * Übergeben von XDM-Daten an Target und Verstehen der Zuordnung zu Target-Parametern
 * Übergeben benutzerdefinierter Daten an Target, z. B. Profil- und Entitätsparameter
 * Validieren einer Target-Implementierung mit dem Platform Web SDK
+
+>[!TIP]
+>
+>Siehe [Migrieren von Target von at.js 2.x zum Platform Web SDK](/help/tutorial-migrate-target-websdk/introduction.md) Tutorial für eine schrittweise Anleitung zum Migrieren Ihrer vorhandenen at.js-Implementierung.
 
 
 ## Voraussetzungen
