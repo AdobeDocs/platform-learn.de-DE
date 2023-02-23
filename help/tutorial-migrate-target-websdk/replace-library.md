@@ -1,9 +1,9 @@
 ---
 title: Bibliothek ersetzen | Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung von at.js 2.x auf das Adobe Experience Platform Web SDK migrieren. Zu den Themen gehören die Bibliotheksübersicht, Implementierungsunterschiede und andere bemerkenswerte Hinweise.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: ac5cee1888b39e5ba0134c850c378737e142f1d4
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1654'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ Erfahren Sie, wie Sie Ihre On-Page-Adobe Target-Implementierung ersetzen, um von
 * Überprüfen Sie Ihre Target-Verwaltungseinstellungen und notieren Sie sich Ihre IMS-Organisations-ID.
 * at.js-Bibliothek durch das Platform Web SDK ersetzen
 * Vorabausblendungs-Snippet für synchrone Bibliotheksimplementierungen aktualisieren
-* Konfigurieren des Platform Web SDK auf der Seite
+* Konfigurieren des Platform Web SDK
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Angenommen, eine einfache Target-Implementierung mit at.js:
 * Ein Codeausschnitt zur Vorab-Ausblendung, um Flackern zu vermeiden
 * Die at.js-Bibliothek von Target wird asynchron mit Standardeinstellungen geladen, um Aktivitäten automatisch anzufordern und zu rendern:
 
-+++at.js-Beispiel einer Implementierung auf einer HTML-Seite
+Beispielimplementierung von +++at.js auf einer HTML-Seite
 
 ```HTML
 <!doctype html>
@@ -138,7 +138,11 @@ Um Target für die Verwendung des Platform Web SDK zu aktualisieren, müssen Sie
 <script src="/libraries/at.js" async></script>
 ```
 
-Ersetzen Sie durch die aktuelle unterstützte Version des Platform Web SDK (legierte.js):
+Ersetzen Sie sie durch die legierte JavaScript-Bibliothek oder den eingebetteten Tag-Code und die Adobe Experience Platform Web SDK-Erweiterung:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!--Platform Web SDK base code-->
@@ -152,12 +156,21 @@ Ersetzen Sie durch die aktuelle unterstützte Version des Platform Web SDK (legi
 <script src="https://cdn1.adoberesources.net/alloy/2.13.1/alloy.min.js" async></script>
 ```
 
+>[!TAB Tags]
+
+```HTML
+<!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+<script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+```
+
+Fügen Sie in der Tag-Eigenschaft die Adobe Experience Platform Web SDK-Erweiterung hinzu:
+
+![Hinzufügen der Adobe Experience Platform Web SDK-Erweiterung](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
 Die vordefinierte eigenständige Version erfordert einen &quot;Basis-Code&quot;, der direkt zur Seite hinzugefügt wird und eine globale Funktion namens Legierung erstellt. Verwenden Sie diese Funktion, um mit dem SDK zu interagieren. Wenn Sie der globalen Funktion einen anderen Namen geben möchten, ändern Sie die `alloy` name.
-
->[!TIP]
->
-> Wenn Sie die Tag-Funktion (früher Launch) zur Implementierung des Web SDK verwenden, wird die Bibliothek &quot;legierte.js&quot;der Tag-Bibliothek hinzugefügt, indem die Adobe Experience Platform Web SDK-Erweiterung hinzugefügt wird.
-
 
 Siehe Abschnitt [Installieren des Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=de) Dokumentation für weitere Details und Bereitstellungsoptionen.
 
@@ -168,9 +181,9 @@ Je nachdem, ob die Bibliothek asynchron oder synchron geladen wird, erfordert di
 
 ### Asynchrone Implementierung
 
-Genau wie bei at.js kann das Rendern der Seite abgeschlossen sein, wenn die Platform Web SDK-Bibliothek asynchron geladen wird, bevor Target einen Inhaltsaustausch durchgeführt hat. Dieses Verhalten kann zum so genannten &quot;Flackern&quot;führen. Dabei wird kurz der Standardinhalt angezeigt, bevor er durch den von Target angegebenen personalisierten Inhalt ersetzt wird. Wenn Sie dieses Flackern vermeiden möchten, empfiehlt Adobe, unmittelbar vor der asynchronen Referenz zum Web SDK-Skript für Platform einen speziellen Codeausschnitt zur Vorab-Ausblendung hinzuzufügen.
+Genau wie bei at.js kann das Rendern der Seite abgeschlossen sein, wenn die Platform Web SDK-Bibliothek asynchron geladen wird, bevor Target einen Inhaltsaustausch durchgeführt hat. Dieses Verhalten kann zum so genannten &quot;Flackern&quot;führen. Dabei wird kurz der Standardinhalt angezeigt, bevor er durch den von Target angegebenen personalisierten Inhalt ersetzt wird. Wenn Sie dieses Flimmern vermeiden möchten, empfiehlt Adobe, unmittelbar vor dem asynchronen Platform Web SDK-Skript-Verweis oder -Einbettungscode ein spezielles Codefragment zum Vorab-Ausblenden hinzuzufügen.
 
-Wenn Ihre Implementierung asynchron ist, wie im Beispiel oben gezeigt, ersetzen Sie das at.js-Codeausschnitt zur Vorab-Ausblendung durch die unten stehende Version, die mit dem Platform Web SDK kompatibel ist:
+Wenn Ihre Implementierung asynchron wie die obigen Beispiele ist, ersetzen Sie das at.js-Codeausschnitt zur Vorab-Ausblendung durch die unten stehende Version, die mit dem Platform Web SDK kompatibel ist:
 
 ```HTML
 <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
@@ -191,13 +204,13 @@ Das Vorabausblendungsverhalten wird durch zwei Konfigurationen am Ende des Aussc
 
 * `3000` gibt die Zeitüberschreitung in Millisekunden für die Vorab-Ausblendung an. Wenn vor der Zeitüberschreitung keine Antwort von Target empfangen wird, wird das Tag zum Vorab-Ausblenden entfernt. Das Erreichen dieser Zeitüberschreitung sollte selten sein.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Stellen Sie sicher, dass Sie das richtige Snippet für das Platform Web SDK verwenden, da es eine andere Stil-ID verwendet als `alloy-prehiding`. Wenn das Vorabausblendungs-Snippet für at.js verwendet wird, funktioniert es möglicherweise nicht ordnungsgemäß.
 
 ### Synchrone Implementierung
 
-Adobe empfiehlt die asynchrone Implementierung des Platform Web SDK , um die Seitenleistung insgesamt zu optimieren. Wenn die Bibliothek jedoch synchron geladen wird, ist das Vorabausblendungs-Snippet nicht erforderlich. Stattdessen wird der Stil für die Vorab-Ausblendung in der Konfiguration des Platform Web SDK angegeben.
+Adobe empfiehlt die asynchrone Implementierung des Platform Web SDK , um die Seitenleistung insgesamt zu optimieren. Wenn der Einbettungscode der Bibliothek &quot;legierte.js&quot;oder der Tags jedoch synchron geladen wird, ist das Vorabausblendungs-Snippet nicht erforderlich. Stattdessen wird der Stil für die Vorab-Ausblendung in der Konfiguration des Platform Web SDK angegeben.
 
 Der Vorabausblendungsstil für synchrone Implementierungen kann mithilfe der [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) -Option. Die Konfiguration des Platform Web SDK wird im nächsten Abschnitt behandelt.
 
@@ -246,6 +259,7 @@ alloy("configure", {
 >[!TAB Tags]
 
 ![Konfigurieren der Migrationsoptionen für die Web SDK-Tag-Erweiterung](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
 >[!ENDTABS]
 
 Die wichtigen Konfigurationsoptionen für Target sind unten beschrieben:
@@ -352,9 +366,8 @@ Seiten-Code:
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
 
-    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
     <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Tags Header Embed Code-->
 </head>
 <body>
   <h1 id="title">Home Page</h1><br><br>
@@ -386,4 +399,4 @@ Als Nächstes erfahren Sie, wie Sie [VEC-basierte Aktivitäten anfordern und anw
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Target-Migration von at.js zum Web SDK. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies bitte mit, indem Sie [diese Gemeinschaftsdiskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Wir unterstützen Sie bei der erfolgreichen Target-Migration von at.js zum Web SDK. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies bitte mit, indem Sie [diese Gemeinschaftsdiskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
