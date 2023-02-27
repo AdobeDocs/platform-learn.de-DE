@@ -1,13 +1,12 @@
 ---
 title: Geschäftlicher Nutzen von Attribution AI
 description: In diesem Video wird gezeigt, wie Marketingexperten die Ausgaben für Marketing und Werbung messen und optimieren können, indem sie die Auswirkungen jeder einzelnen Kundeninteraktion in den einzelnen Phasen der Journey der Kunden mit Attribution AI verstehen.
-role: User
-solution: Intelligent Services
 feature: Attribution AI
+role: User
 kt: 6248
 thumbnail: 40375.jpg
 exl-id: 12aa5c9a-ac48-4506-bbe7-14106fc17675
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 8%
