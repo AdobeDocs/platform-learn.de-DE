@@ -8,7 +8,7 @@ exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 54%
+ht-degree: 59%
 
 ---
 
@@ -23,4 +23,4 @@ Erfahren Sie, wie der Adobe Experience Platform Debugger funktioniert. [Chrome-E
 * [Herunterladen des Firefox-Add-ons](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome-Erweiterung herunterladen](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Dokumentation zu Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=de)
-* [Implementierung von Tags debuggen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)
+* [Implementierung von Tags debuggen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=de)

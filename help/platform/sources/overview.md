@@ -9,7 +9,7 @@ exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
 source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 15%
+ht-degree: 35%
 
 ---
 
@@ -21,6 +21,6 @@ Erfahren Sie, wie Sie in der Adobe Experience Platform-Benutzeroberfläche Quell
 
 >[!INFO]
 >
-> Dieses Video ist Teil eines Kurses [Datenaufnahme für Dateningenieure](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion?lang=de), kostenlos auf Experience League!
+> Dieses Video ist Teil eines Kurses [Datenaufnahme für Dateningenieure](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=de), kostenlos auf Experience League!
 
 Weitere Informationen finden Sie im [Quelldokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de).

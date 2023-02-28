@@ -22,4 +22,4 @@ Erfahren Sie, wie Sie Datenfelder als Identitäten kennzeichnen, Identitätsdate
 
 >[!INFO]
 >
-> Dieses Video ist Teil eines Kurses, [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm), kostenlos auf Experience League!
+> Dieses Video ist Teil eines Kurses, [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de), kostenlos auf Experience League!

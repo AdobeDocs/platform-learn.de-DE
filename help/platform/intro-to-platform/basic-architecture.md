@@ -20,6 +20,6 @@ Erfahren Sie in einer geführten Tour durch ein Übersichtsdiagramm mehr über d
 
 >[!INFO]
 >
-> Dieses Video ist Teil eines Kurses [Einführung in Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1), kostenlos auf Experience League!
+> Dieses Video ist Teil eines Kurses [Einführung in Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=de), kostenlos auf Experience League!
 
 
