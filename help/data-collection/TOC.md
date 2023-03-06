@@ -4,7 +4,7 @@ breadcrumb-title: Tutorials zur Datenerfassung
 user-guide-description: Anleitungsvideos und Tutorials, die Sie zu einem Power-User der Datenerfassung in Experience Platform machen.
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
+source-git-commit: 286a5570d33d1d812d1a54c28e1ea4f68f00b988
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 43%
@@ -31,7 +31,7 @@ ht-degree: 43%
    + [Übersicht](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
    + [Implementierungs-Tutorial (mit Tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de){target="_blank"}
-   + [Tutorial zur Target-Migration](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de){target="_blank"}
+   + [Tutorial zur Target-Migration](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=de){target="_blank"}
    + Einverständnis{#consent}
       + [Übersicht](web-sdk/consent/overview.md)
       + [Festlegen von Zustimmungswerten mithilfe des Adobe-Standards](web-sdk/consent/set-consent-adobe.md)
