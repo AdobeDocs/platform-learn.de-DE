@@ -6,10 +6,10 @@ audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f018e3aae714879de0cccb3a47b1f2242b57abc1
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 6%
+source-wordcount: '938'
+ht-degree: 5%
 
 ---
 
@@ -113,11 +113,11 @@ Im nächsten Bildschirm werden Sie mit 3 verschiedenen Methoden aufgefordert, de
 - **Eigene Code**: Erstellen Sie eine eigene E-Mail-Vorlage durch Codierung mithilfe von HTML
 - **HTML importieren**: Importieren Sie eine vorhandene HTML-Vorlage, die Sie bearbeiten können.
 
-Klicken **HTML importieren**.
+Klicken **HTML importieren**. Alternativ können Sie auf **Gespeicherte Vorlagen** und wählen Sie die Vorlage aus **Bootcamp - E-Mail-Vorlage**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Datei per Drag-and-Drop verschieben **mailtemplatebootcamp.html** herunterladen [here](../../assets/html/mailtemplatebootcamp.html.zip). Wählen Sie Importieren.
+Wenn Sie **HTML importieren** können Sie jetzt die Datei per Drag-and-Drop verschieben **mailtemplatebootcamp.html** herunterladen [here](../../assets/html/mailtemplatebootcamp.html.zip). Wählen Sie Importieren.
 
 ![Journey Optimizer](./images/msg13.png)
 

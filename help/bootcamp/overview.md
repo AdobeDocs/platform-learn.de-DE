@@ -3,10 +3,10 @@ title: Experience Maker Bootcamp
 description: Startpunkt für Teilnehmer des Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
+source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -26,47 +26,12 @@ Personalisierung im Maßstab beginnt damit, zu verstehen, was verbessert werden 
 
 ### Tag 1
 
-10.00 - 10.30 Uhr: Schnellstart und Einführung
 
-10.30 - 11.00 Uhr: &quot;Customer Journey Demo - Art des Möglichen&quot;
-
-11.00 - 11.45 Uhr: Whiteboard-Sitzung: &quot;1-1 Personalisierung, Reibungsjagd, Silos, Adobe POV&quot;
-
-11.45 - 12.00 Uhr: Break
-
-12.00 - 13.00 Uhr: Whiteboard-Sitzung: &quot;Aufschlüsselung der Lösungsarchitektur&quot;
-
-13.00 - 14.00 Uhr: Mittagessen
-
-14.00 - 15.30 Uhr: Benutzerfluss 1: praktische Übung &quot;Akquise&quot;
-
-15.30 - 15.45 Uhr: Break
-
-15.45 - 17.00 Uhr: Benutzerfluss 2: &quot;Registrierung und Onboarding&quot;-praktische Übung
-
-18.00 - 19.00 Uhr: Erlebnis &quot;Cocktail Making Competition&quot;
-
-19.00 - 22.00 Uhr: Abendessen
+10:00: Startpunkt 10:30: Journey-Demo für Kunden: Artikel 11:00: 1-1 Personalisierung, Reibungsjagd, Silos, Adobe POV (Whiteboard) 11:45: Pause 12:00: Aufschlüsselung der Lösungsarchitektur (Whiteboard) 13:00: Mittagessen 14:00: Benutzerfluss 1 Registrierung &amp; Onboarding - exemplarische Vorgehensweise (Why-what-how) 15:30: Pause 16:00: Benutzerfluss 2 Füllen von physischem und digitalem Material - Umgehungslösung und praktische Schritte / Tiefgang 18:00: Pause 18:30: Spaziergang zum Restaurant 19:00: Abendessen
 
 ### Tag 2
 
-09.00 - 09.30 Uhr: &quot;Einführung in Journey-basiertes Versand, Teamstruktur, Versandrückstand&quot;
-
-09.30 - 09.45: Break
-
-09.45 - 11.15: Benutzerfluss 4: praktische Übung &quot;Kundenanalyse&quot;
-
-11.15 - 11.30 Uhr: Break
-
-11.30 - 12.30 Uhr: &quot;Einführung in Journey-basiertes Versand, Teamstruktur, Versandrückstand&quot;
-
-12.30 - 13.30 Uhr: Mittagessen
-
-13.30 - 14.30 Uhr: Personalisierung im Maßstab - Wie lässt sich das erreichen?
-
-14.30 - 15.00 Uhr: Zusammenfassung, Zusammenfassung und nächste Schritte
-
-15.00 Uhr: Adjourn
+08:00: Frühstück 08:30: Einführung in die benutzerspezifische Journey-basierte Bereitstellung, Teamstruktur, Versandrückstand 09.45: UserFlow 3 Blending physical and digital - Walkthrough with praxisnahe Übung 11.15: Break 11.30: Benutzerflüsse schließen sich ab - (Was-Wo-Wann) 12:00: Gruppe Presentations 12.30: Mittagessen 13.30: Benutzerfluss 4: Kundenanalyse - Vertiefung 14.30: Zusammenfassung, Zusammenfassung und nächste Schritte 15.00: Getränke &amp; Adjourn
 
 ## Voraussetzungen
 
@@ -100,7 +65,7 @@ Weitere interessante Videos [über unseren YouTube-Kanal](https://www.youtube.co
 
 ## Benutzerfluss
 
-[1. Akquise](./uc/uc1/uc1.md)
+[1. Akquise ](./uc/uc1/uc1.md)
 
 In diesem Benutzerfluss werden Sie alle Elemente verstehen, die Sie benötigen, um akquise Anwendungsfälle für unbekannte, nicht authentifizierte Benutzer neben bekannten, authentifizierten Benutzern mithilfe von Real-Time CDP zu implementieren.
 
@@ -108,10 +73,10 @@ In diesem Benutzerfluss werden Sie alle Elemente verstehen, die Sie benötigen, 
 
 In diesem Benutzerfluss werden Sie alle Elemente kennen, die Sie zur Implementierung von Registrierungs- und Onboarding-Anwendungsfällen mithilfe von Real-Time CDP und Adobe Journey Optimizer benötigen.
 
-[3. Verknüpfung von physischem und digitalem](./uc/uc3/uc3.md)
+[3. Kombinieren von physischem und digitalem](./uc/uc3/uc3.md)
 
 In diesem Benutzerfluss personalisieren Sie mithilfe von Real-Time CDP und Adobe Journey Optimizer das Kundenerlebnis über Online- und Offline-Kanäle hinweg einheitlich.
 
-[4. Customer Journey Analysis](./uc/uc4/uc4.md)
+[4. Journey-Analyse von Kunden](./uc/uc4/uc4.md)
 
 In diesem Benutzerfluss lernen Sie Customer Journey Analytics kennen und erhalten Einblicke in die Entwicklung der Kunden von einem Kanal zum anderen, von Online zum Offline zum Callcenter und mehr.
