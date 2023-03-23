@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Attribution AI-Bewertungen und -Insights
-description: Erfahren Sie, wie Sie mithilfe der Insights-Seite „Attribution AI“ den ROI von Marketing-Kanälen und -Kampagnen verstehen können.
+description: Erfahren Sie, wie Sie mithilfe der Insights-Seite „Attribution AI“ den ROI von Marketing-Kanälen und -Kampagnen verstehen können
 feature: Attribution AI
 role: User
 kt: 4173
@@ -9,13 +9,13 @@ exl-id: 3e3ede4b-baf4-4118-921a-6661d37f1a33
 source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 33%
+ht-degree: 53%
 
 ---
 
 # Verwenden von Attribution AI-Bewertungen und -Insights
 
-Erfahren Sie, wie Sie mit der Attribution AI Insights-Seite den ROI von Marketingkanälen und Kampagnen verstehen können.
+Erfahren Sie, wie Sie mithilfe der Insights-Seite „Attribution AI“ den ROI von Marketing-Kanälen und -Kampagnen verstehen können.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?quality=12&learn=on)
 
