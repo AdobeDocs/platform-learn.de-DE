@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 7%
+source-wordcount: '1752'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Lum
 
 >[!NOTE]
 >
->Das Endergebnis dieses Tutorials ist eine Sandbox, die dieselben Beispieldaten wie die [Tutorial zu den ersten Schritten mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>Das Endergebnis dieses Tutorials ist eine Sandbox mit ähnlichen Daten wie die [Tutorial zu den ersten Schritten mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Sie wurde im April 2023 aktualisiert, um die [Herausforderungen für Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de).
 
 
 ## Voraussetzungen
@@ -48,9 +48,9 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die [Postman](ht
    >
    >Benutzerdaten, die in der Variablen [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) -Datei ist fiktiv und nur zu Demonstrationszwecken verwendet.
 
-1. Verschieben Sie aus dem Ordner Downloads den `platform-utils-main.zip` an den gewünschten Speicherort auf Ihrem Computer zu kopieren und zu dekomprimieren.
-1. Im `luma-data` Ordner, öffnen Sie alle `json` -Dateien in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` mit Ihrer eigenen Mandanten-ID, der ein Unterstrich vorangestellt ist.
-1. Öffnen `luma-offline-purchases.json` in einem Texteditor verwenden und alle Zeitstempel so aktualisieren, dass die Ereignisse im letzten Monat eintreten (suchen Sie beispielsweise nach `"timestamp":"2022-06` und ersetzen Jahr und Monat)
+1. Verschieben Sie die Datei `platform-utils-main.zip` aus dem Downloads-Ordner an den gewünschten Speicherort auf Ihrem Computer und entpacken Sie sie.
+1. Im `luma-data` Ordner, öffnen Sie alle `json` -Dateien in einem Texteditor und ersetzen Sie alle Instanzen von `_yourOrganizationID` mit Ihrer eigenen Mandanten-ID, der ein Unterstrich vorangestellt ist.
+1. Öffnen `luma-offline-purchases.json` und `luma-web-events.json` in einem Texteditor verwenden und alle Zeitstempel so aktualisieren, dass die Ereignisse im letzten Monat eintreten (suchen Sie beispielsweise nach `"timestamp":"2022-11` und ersetzen Jahr und Monat)
 1. Notieren Sie den Speicherort des entpackten Ordners, wie Sie ihn später bei der Einrichtung der `FILE_PATH` Postman-Umgebungsvariable:
 
    >[!NOTE]
@@ -113,6 +113,9 @@ Als Nächstes müssen Sie die Sammlungen in Postman importieren.
    * `2-Luma-CRM-Data.postman_collection.json`
    * `3-Luma-Product-Catalog.postman_collection.json`
    * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+   * `5-Luma-Product-Inventory-Events.postman_collection.json`
+   * `6-Luma-Test-Profiles.postman_collection.json`
+   * `7-Luma-Web-Events.postman_collection.json`
 
    ![Kollektionsimport](../assets/data-generator/images/collection-files.png)
 
@@ -158,6 +161,11 @@ Jetzt können Sie die Daten vorbereiten und in Ihre Platform-Sandbox importieren
    * `3-Luma-Product-Catalog.postman_collection.json` erstellt ein Schema und einen ausgefüllten Datensatz für Produktkataloginformationen. Das Schema basiert auf einer benutzerdefinierten Produktkatalogklasse und verwendet eine benutzerdefinierte Feldgruppe für den Produktkatalog.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` erstellt ein Schema und einen ausgefüllten Datensatz für Offline-Kaufereignisdaten von Kunden. Das Schema basiert auf der XDM ExperienceEvent-Klasse und umfasst eine benutzerdefinierte Identitäts- und Commerce-Details-Feldergruppe.
 
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` erstellt ein Schema und einen befüllten Datensatz für Ereignisse im Zusammenhang mit Produkten, die auf Lager sind. Das Schema basiert auf einer benutzerdefinierten Business-Event-Klasse und einer benutzerdefinierten Feldergruppe.
+   * `6-Luma-Test-Profiles.postman_collection.json` erstellt ein Schema und einen Datensatz mit Testprofilen, die in Adobe Journey Optimizer verwendet werden sollen
+   * `7-Luma-Web-Events.postman_collection.json` erstellt ein Schema und einen befüllten Datensatz mit einfachen historischen Webdaten.
+
+
 ## Validierung
 
 Die Beispieldaten wurden so konzipiert, dass bei der Ausführung der Sammlungen Echtzeit-Kundenprofile erstellt werden, die Daten aus mehreren Systemen kombinieren. Ein gutes Beispiel dafür ist der erste Datensatz der Datensätze zu Treue, CRM und Offline-Einkäufen. Überprüfen Sie dieses Profil, um zu bestätigen, dass die Daten erfasst wurden. Im [Adobe Experience Platform-Benutzeroberfläche](https://platform.adobe.com/):
@@ -173,6 +181,8 @@ Durch Durchsuchen der Daten im **[!UICONTROL Attribute]** und **[!UICONTROL Vera
 ![Ereignisdaten aus der Datei &quot;Offline-Kaufereignisse&quot;](../assets/data-generator/images/validation-profile-events.png)
 
 ## Nächste Schritte
+
+Wenn Sie mehr über Adobe Journey Optimizer erfahren möchten, enthält diese Sandbox alles, was Sie zum [Herausforderungen für Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de)
 
 Wenn Sie mehr über Zusammenführungsrichtlinien, Data Governance, Query Service und den Segment Builder erfahren möchten, können Sie zu [Lektion 11 im Tutorial &quot;Erste Schritte für Datenarchitekten und Dateningenieure&quot;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Die früheren Lektionen dieses anderen Tutorials zeigen Ihnen, wie Sie manuell alles erstellen können, was gerade von diesen Postman-Sammlungen befüllt wurde - genießen Sie den Vorsprung!
 
