@@ -6,10 +6,10 @@ description: In dieser Lektion konfigurieren Sie Adobe Experience Platform-Benut
 role: Data Architect, Data Engineer
 kt: 4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 5%
+source-wordcount: '426'
+ht-degree: 4%
 
 ---
 
@@ -50,9 +50,5 @@ Die wichtigsten Ressourcen:
 * [Experience Platform-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 * [Experience Platform-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de)
 * [Experience Leaguen](https://experienceleague.adobe.com/?lang=de#dashboard/learning)
-
-Hier finden Sie ein weiteres Tutorial, das Sie lesen können, um mehr über Verbindungen zu Drittanbieteranwendungen zu erfahren:
-
-* [Umfassendes technisches Tutorial für Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
 
 Vielen Dank für Ihre Bemühungen und viel Glück auf Ihrem Journey mit Adobe Experience Platform!
