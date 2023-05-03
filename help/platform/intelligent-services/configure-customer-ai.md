@@ -10,7 +10,7 @@ exl-id: 84600a0f-ec10-484d-ae36-766fc6f8ca16
 source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 33%
+ht-degree: 38%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie eine Instanz der Kunden-KI erstellen, um das Kundenverhalt
 
 >[!TIP]
 >
->Customer AI unterstützt sowohl Adobe Analytics- als auch Adobe Audience Manager-Datensätze, ohne dass Ihre Daten einer ETL unterzogen werden müssen, um dem Schema Consumer Experience Event (CEE) zu entsprechen. Weitere Informationen finden Sie unter [Leitfaden zur Datenvorbereitung für Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html).
+>Customer AI unterstützt sowohl Adobe Analytics- als auch Adobe Audience Manager-Datensätze, ohne dass Ihre Daten einer ETL unterzogen werden müssen, um dem Schema Consumer Experience Event (CEE) zu entsprechen. Weitere Informationen finden Sie unter [Leitfaden zur Datenvorbereitung für Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32665?quality=12&learn=on)
 
