@@ -1,26 +1,26 @@
 ---
-title: Wie gebe ich Segmente und Profilattribute von der Echtzeit-Kundendatenplattform von Adobe für Adobe Target frei?
-description: Erfahren Sie, wie Sie Segmente und Profilattribute von Adobe Real-time Customer Data Platform für Adobe Target freigeben können, um in Echtzeit personalisierte Inhalte in Ihren Websites, mobilen Apps und anderen digitalen Eigenschaften anzuzeigen.
+title: Wie aktiviere ich Segmente und Profilattribute von der Echtzeit-Kundendatenplattform von Adobe nach Adobe Target?
+description: Erfahren Sie, wie Sie Segmente und Profilattribute von Adobe Real-time Customer Data Platform in Adobe Target aktivieren, um in Echtzeit personalisierte Inhalte in Ihren Websites, mobilen Apps und anderen digitalen Eigenschaften anzuzeigen.
 feature: Destinations
 role: User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13140
-source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
+source-git-commit: 7195ef3b361424079069202f4835728c265b12f1
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
 
 
-# Segmente und Profilattribute freigeben
+# Aktivieren von Segmenten und Profilattributen
 
-Erfahren Sie, wie Sie Segmente und Profilattribute von Adobe Real-time Customer Data Platform für Adobe Target freigeben können, um in Echtzeit personalisierte Inhalte in Ihren Websites, mobilen Apps und anderen digitalen Eigenschaften anzuzeigen. Weitere Informationen finden Sie unter [Dokumentation zu Zielgruppendaten für Profilanfrageziele aktivieren](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html).
+Erfahren Sie, wie Sie Segmente und Profilattribute von Adobe Real-time Customer Data Platform in Adobe Target aktivieren, um in Echtzeit personalisierte Inhalte in Ihren Websites, mobilen Apps und anderen digitalen Eigenschaften anzuzeigen. Weitere Informationen finden Sie unter [Dokumentation zu Zielgruppendaten für Profilanfrageziele aktivieren](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html).
 
 >[!IMPORTANT]
 >
->Mit der Beta-Version des erweiterten Adobe Target V2-Ziel-Connectors werden möglicherweise zwei Adobe Target-Karten im Zielkatalog angezeigt. Der Ziel-Connector für Adobe Target V2 befindet sich in der Beta-Phase und steht nur einer bestimmten Anzahl von Kunden zur Verfügung.
+>Die Real-Time CDP-Profilattributfunktion ist derzeit als Betaversion verfügbar. Der erweiterte Adobe Target V2-Ziel-Connector, der die Profilattributfunktion enthält, befindet sich derzeit in der Beta-Phase und steht nur einer bestimmten Anzahl von Kunden zur Verfügung.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419036/?learn=on)
