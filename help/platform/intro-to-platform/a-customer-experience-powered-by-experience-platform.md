@@ -5,10 +5,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 kt: 4339
 thumbnail: 27361.jpg
 exl-id: a8acbcc9-d500-4e7a-a2b4-015617f25bdc
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 4%
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
 
@@ -17,8 +17,4 @@ ht-degree: 4%
 Sehen Sie sich ein hypothetisches Erlebnis an, das mit Adobe Experience Platform erstellt wurde, wie aus der Sicht eines Kunden ersichtlich ist. Erfahren Sie, wie Experience Platform ein umfangreiches, relevantes und Echtzeit-Erlebnis schafft.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27361?quality=12&learn=on)
-
->[!INFO]
->
-> Dieses Video ist Teil eines Kurses [Einführung in Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1), kostenlos auf Experience League!
 

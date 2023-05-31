@@ -5,10 +5,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 kt: 4332
 thumbnail: 32502.jpg
 exl-id: d46373b9-4a80-4fe0-a072-51ec48585b3f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 6%
+source-wordcount: '66'
+ht-degree: 3%
 
 ---
 
@@ -23,8 +23,4 @@ Erfahren Sie mehr über die wichtigsten Funktionen der Experience Platform:
 1. Vertrauen in Governance-, Sicherheits- und Datenschutzkontrollen gewinnen
 
 >[!VIDEO](https://video.tv.adobe.com/v/32502?quality=12&learn=on)
-
->[!INFO]
->
-> Dieses Video ist Teil eines Kurses [Einführung in Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1), kostenlos auf Experience League!
 

@@ -6,10 +6,10 @@ feature: Sources
 thumbnail: 331214.jpg
 kt: 7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 4%
+source-wordcount: '295'
+ht-degree: 2%
 
 ---
 
@@ -24,9 +24,5 @@ Wenn Sie Ihre Prozesse und Mitarbeiter für den Wechsel von Adobe Audience Manag
 >Im obigen Video wird eine Option zur Auswahl ALLER Segmente und/oder Eigenschaften angezeigt. Es wird empfohlen, diese Option nur zu verwenden, wenn eine begrenzte Anzahl von Segmenten mit einer verständlichen Anzahl von Unique Visitors in diesen Segmenten vorhanden ist. Wenn Sie eine große Anzahl von Besucherprofilen in &quot;alle Segmente&quot;oder &quot;alle Eigenschaften&quot;integrieren, kann der Profildienst in Real-Time CDP aktiviert werden, was sich sehr auf die Preise der Anwendung auswirken kann (da die Anzahl der Profile Ihre App-Kosten beeinflusst). Es wird daher empfohlen, anstelle von &quot;all&quot;bestimmte Segmente auszuwählen, die an Real-Time CDP übermittelt werden sollen.
 >
 >Bitte achten Sie auf [28. April 2022 Folge der Experience League LIVE](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html?lang=de) wo dies ausführlich besprochen wird.
-
->[!INFO]
->
-> Dieses Video ist Teil eines Kurses [Datenaufnahme für Dateningenieure](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion?lang=de), kostenlos auf Experience League!
 
 Weitere Informationen finden Sie im [Dokumentation zum Audience Manager-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).

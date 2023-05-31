@@ -7,10 +7,10 @@ role: User
 kt: 6247
 thumbnail: 40374.jpg
 exl-id: 2dc34425-62e7-4d56-ab13-6855371b1d7d
-source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 61%
+source-wordcount: '64'
+ht-degree: 85%
 
 ---
 
@@ -19,9 +19,5 @@ ht-degree: 61%
 In diesem Video wird gezeigt, wie Customer AI Kundenprofile mit KI-basierten Eigenschaften anreichert sowie bei der Kundensegmentierung und Zielgruppenbestimmung hilft.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40374?quality=12&learn=on)
-
->[!INFO]
->
-> Dieses Video ist Teil eines Kurses, [Erste Schritte mit Intelligent Services für Marketingexperten](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), kostenlos auf Experience League!
 
 Weitere Informationen finden Sie unter [Dokumentation zu Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de)

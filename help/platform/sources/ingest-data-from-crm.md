@@ -7,10 +7,10 @@ kt: 3826, 13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 6%
+source-wordcount: '208'
+ht-degree: 4%
 
 ---
 
@@ -29,10 +29,6 @@ Erfahren Sie, wie Sie den Quell-Connector für Salesforce CRM mithilfe des Stand
 Erfahren Sie, wie Sie den Quell-Connector für Salesforce CRM mithilfe des Vorlagen-Workflows konfigurieren. Dieser Workflow generiert automatisch Assets, die für die Aufnahme von Salesforce-Daten basierend auf Vorlagen erforderlich sind. Dadurch sparen Sie im Voraus Zeit und die Assets können entsprechend Ihren Anforderungen angepasst werden. Dieser Workflow wird nicht für alle CRM-Quell-Connectoren unterstützt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?quality=12&learn=on)
-
->[!INFO]
->
-> Dieses Video ist Teil eines Kurses [Datenaufnahme für Dateningenieure](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=de), kostenlos auf Experience League!
 
 Weitere Informationen finden Sie in der folgenden Dokumentation:
 * [Salesforce erstellt eine Dokumentation zur Verbindung](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
