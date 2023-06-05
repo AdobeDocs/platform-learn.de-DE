@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie eine mobile Tag-Eigenschaft in der Datenerfas
 feature: Mobile SDK
 kt: null
 exl-id: c0bfdd5a-03f7-49db-9124-7d420a884048
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 3%
+source-wordcount: '88'
+ht-degree: 4%
 
 ---
 
@@ -21,4 +21,4 @@ Erfahren Sie, wie Sie eine mobile Tag-Eigenschaft in der Datenerfassung erstelle
 
 >[!VIDEO](https://video.tv.adobe.com/v/26264/?quality=12&learn=on)
 
-Weitere Informationen finden Sie unter [Dokumentation zum Mobile SDK](https://aep-sdks.gitbook.io/docs/).
+Weitere Informationen finden Sie unter [Dokumentation zum Mobile SDK](https://developer.adobe.com/client-sdks/documentation/).

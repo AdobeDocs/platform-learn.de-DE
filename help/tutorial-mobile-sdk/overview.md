@@ -1,12 +1,12 @@
 ---
 title: Tutorial zur Implementierung von Adobe Experience Cloud in Apps - Überblick
 description: Erfahren Sie, wie Sie die mobilen Adobe Experience Cloud-Anwendungen implementieren. Dieses Tutorial führt Sie durch eine Implementierung von Experience Cloud-Anwendungen in einer Swift-Beispielanwendung.
-recommendation: noDisplay,catalog
+recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 10%
+source-wordcount: '643'
+ht-degree: 11%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Erfahren Sie, wie Sie Adobe Experience Cloud-Programme mit dem Adobe Experience Platform Mobile SDK in Ihrer Mobile App implementieren.
 
-Experience Platform Mobile SDK ist ein Client-seitiges SDK, das es Adobe Experience Cloud-Kunden ermöglicht, über das Adobe Experience Platform Edge Network sowohl mit Adobe Apps als auch mit Drittanbieterdiensten zu interagieren. Siehe [Dokumentation zum Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/) für detailliertere Informationen.
+Experience Platform Mobile SDK ist ein Client-seitiges SDK, das es Adobe Experience Cloud-Kunden ermöglicht, über das Adobe Experience Platform Edge Network sowohl mit Adobe Apps als auch mit Drittanbieterdiensten zu interagieren. Siehe [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) für detailliertere Informationen.
 
 ![Build-Einstellungen](assets/data-collection-mobile-sdk.png)
 
@@ -26,7 +26,7 @@ Die Lektionen sind für iOS konzipiert und in Swift geschrieben, aber viele der 
 Nach Abschluss dieses Tutorials können Sie:
 
 * Erstellen Sie ein Schema mit standardmäßigen und benutzerdefinierten Feldergruppen.
-* Richten Sie einen Datastream ein.
+* Einrichten eines Datenstroms.
 * Konfigurieren Sie eine mobile Tag-Eigenschaft.
 * Richten Sie einen Experience Platform-Datensatz ein (optional).
 * Installieren und implementieren Sie Tag-Erweiterungen in einer App.
@@ -55,7 +55,7 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe ID und die
    * **[!UICONTROL Eigenschaftsrechte]**—Berechtigungselemente zu **[!UICONTROL Entwickeln]**, **[!UICONTROL Genehmigen]**, **[!UICONTROL Veröffentlichen]**, **[!UICONTROL Verwalten von Erweiterungen]** und **[!UICONTROL Verwalten von Umgebungen]**.
    * **[!UICONTROL Unternehmensrechte]**—Berechtigungselemente zu **[!UICONTROL Eigenschaften verwalten]** und, wenn Sie die optionale Lektion zu Push-Nachrichten abschließen **[!UICONTROL App-Konfigurationen verwalten]**
 
-      Weitere Informationen zu Tag-Berechtigungen finden Sie unter [Benutzerberechtigungen für Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de){target=&quot;_blank&quot;} in der Produktdokumentation.
+      Weitere Informationen zu Tag-Berechtigungen finden Sie unter [Benutzerberechtigungen für Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de){target="_blank"} in der Produktdokumentation.
 * In Experience Platform müssen Sie über Folgendes verfügen:
    * **[!UICONTROL Datenmodellierung]**—Berechtigungselemente zum Verwalten und Anzeigen von Schemas.
    * **[!UICONTROL Identity Management]**—Berechtigungselemente zum Verwalten und Anzeigen von Identitäts-Namespaces.
@@ -74,8 +74,8 @@ Außerdem wird davon ausgegangen, dass Sie mit [!DNL Swift]. Sie müssen kein Ex
 
 Zwei Versionen der Beispiel-App können heruntergeladen werden.
 
-1. [Empty](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;} - Version ohne Experience Cloud-Code zum Abschließen der Übungen in diesem Tutorial
-1. [Vollständig implementiert](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;} - Version mit vollständiger Experience Cloud-Implementierung als Referenz.
+1. [Empty](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} - Version ohne Experience Cloud-Code, um die Übungen in diesem Tutorial abzuschließen.
+1. [Vollständig implementiert](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} - Version mit vollständiger Experience Cloud-Implementierung als Referenz.
 
 Los geht‘s!
 

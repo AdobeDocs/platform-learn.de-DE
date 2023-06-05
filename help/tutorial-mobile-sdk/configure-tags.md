@@ -2,10 +2,10 @@
 title: Tag-Eigenschaft konfigurieren
 description: Erfahren Sie, wie Sie eine Tag-Eigenschaft im [!UICONTROL Datenerfassung] -Schnittstelle.
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -33,7 +33,7 @@ In dieser Lektion werden Sie:
 ## Ersteinrichtung
 
 1. Erstellen Sie eine neue mobile Tag-Eigenschaft:
-   1. Im [Datenerfassungsoberfläche](https://experience.adobe.com/data-collection/){target=&quot;_blank&quot;}, wählen Sie **[!UICONTROL Tags]** in der linken Navigation
+   1. Im [Datenerfassungsoberfläche](https://experience.adobe.com/data-collection/){target="_blank"}auswählen **[!UICONTROL Tags]** in der linken Navigation
    1. Wählen Sie **[!UICONTROL Neue Eigenschaft]** aus
 
       ![Tag-Eigenschaft erstellen](assets/mobile-tags-new-property.png).
@@ -45,7 +45,7 @@ In dieser Lektion werden Sie:
 
       >[!NOTE]
       >
-      > Die standardmäßigen Zustimmungseinstellungen für die Edge-basierten mobilen SDK-Implementierungen, wie z. B. die in diesem Tutorial ausgeführten, stammen aus dem [!UICONTROL Zustimmungserweiterung] und nicht [!UICONTROL Datenschutz] in der Konfiguration der Tag-Eigenschaft fest. Sie werden die Erweiterung &quot;Einverständnis&quot;später in dieser Lektion hinzufügen und konfigurieren. Weitere Informationen finden Sie unter [die Dokumentation](https://aep-sdks.gitbook.io/docs/resources/privacy-and-gdpr).
+      > Die standardmäßigen Zustimmungseinstellungen für die Edge-basierten mobilen SDK-Implementierungen, wie z. B. die in diesem Tutorial ausgeführten, stammen aus dem [!UICONTROL Zustimmungserweiterung] und nicht [!UICONTROL Datenschutz] in der Konfiguration der Tag-Eigenschaft fest. Sie werden die Erweiterung &quot;Einverständnis&quot;später in dieser Lektion hinzufügen und konfigurieren. Weitere Informationen finden Sie unter [die Dokumentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Öffnen Sie die neue Eigenschaft
@@ -75,13 +75,13 @@ In dieser Lektion werden Sie:
 
 1. Verwenden Sie die [!UICONTROL Suche] , um die folgenden Erweiterungen zu finden und zu installieren. Keine dieser Erweiterungen erfordert eine Konfiguration:
    * Identität
-   * AEP Assurance
+   * AEP-Sicherheit
 
 ## Erweiterungskonfiguration
 
 1. Installieren Sie die **Einverständnis** -Erweiterung.
 
-   Wählen Sie für die Zwecke dieses Tutorials **[!UICONTROL Ausstehend]**. Weitere Informationen zur Erweiterung &quot;Einverständnis&quot;finden Sie unter [die Dokumentation](https://aep-sdks.gitbook.io/docs/foundation-extensions/consent-for-edge-network).
+   Wählen Sie für die Zwecke dieses Tutorials **[!UICONTROL Ausstehend]**. Weitere Informationen zur Erweiterung &quot;Einverständnis&quot;finden Sie unter [die Dokumentation](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
 
    ![Zustimmungseinstellungen](assets/mobile-tags-extension-consent.png)
 
@@ -110,14 +110,14 @@ In dieser Lektion werden Sie:
 
 1. Die Installationsanweisungen bieten einen guten Ausgangspunkt für die Implementierung.
 
-   Weitere Informationen finden Sie unter [here](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk).
+   Weitere Informationen finden Sie unter [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
    * **[!UICONTROL Umgebungsdatei-ID]**: Diese eindeutige ID verweist auf Ihre Entwicklungsumgebung. Beachten Sie diesen Wert. Produktions-/Staging-/Entwicklungswerte weisen alle unterschiedliche ID-Werte auf.
    * **[!UICONTROL Podfile]**: CocoaPods werden zur Verwaltung von SDK-Versionen und -Downloads verwendet. Weitere Informationen finden Sie unter [Dokumentation](https://cocoapods.org/).
    * **[!UICONTROL Initialisierungscode]**: Dieser Codeblock zeigt, wie Sie die erforderlichen SDKs importieren und die Erweiterungen beim Start registrieren.
 
 >[!NOTE]
->Die Installationsanweisungen sollten als Ausgangspunkt und nicht als endgültige Dokumentation betrachtet werden. Die neuesten SDK-Versionen und Codebeispiele finden Sie in der offiziellen [Dokumentation](https://aep-sdks.gitbook.io/docs/).
+>Die Installationsanweisungen sollten als Ausgangspunkt und nicht als endgültige Dokumentation betrachtet werden. Die neuesten SDK-Versionen und Codebeispiele finden Sie in der offiziellen [Dokumentation](https://developer.adobe.com/client-sdks/documentation/).
 
 ## Architektur von mobilen Tags
 

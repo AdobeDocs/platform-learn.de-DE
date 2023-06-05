@@ -2,10 +2,10 @@
 title: Installieren von Adobe Experience Platform Mobile SDKs
 description: Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK in eine Mobile App implementieren.
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 1%
+source-wordcount: '573'
+ht-degree: 2%
 
 ---
 
@@ -17,9 +17,9 @@ Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK in eine Mobile Ap
 
 * Erfolgreich erstellte Tag-Bibliothek mit den Erweiterungen, die im Abschnitt [vorherige Lektion](configure-tags.md).
 * Entwicklungsumgebung - Datei-ID aus [Installationsanweisungen für Mobilgeräte](configure-tags.md#generate-sdk-install-instructions).
-* Heruntergeladen, leer [Beispielanwendung](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;}.
-* Erlebnis mit [XCode](https://developer.apple.com/xcode/){target=&quot;_blank&quot;}.
-* Allgemein [Befehlszeile](https://en.wikipedia.org/wiki/Command-line_interface){target=&quot;_blank&quot;} Kenntnisse.
+* Heruntergeladen, leer [Beispielanwendung](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* Erlebnis mit [XCode](https://developer.apple.com/xcode/){target="_blank"}.
+* Allgemein [Befehlszeile](https://en.wikipedia.org/wiki/Command-line_interface){target="_blank"} Wissen.
 
 ## Lernziele
 
@@ -142,7 +142,7 @@ Der obige Code führt Folgendes aus:
 
 * Registriert die erforderlichen Erweiterungen.
 * Konfiguriert MobileCore und andere Erweiterungen für die Verwendung Ihrer Tag-Eigenschaftenkonfiguration.
-* Aktiviert die Debug-Protokollierung. Weitere Informationen und Optionen finden Sie im [Dokumentation zum Mobile SDK](https://aep-sdks.gitbook.io/docs/getting-started/enable-debug-logging).
+* Aktiviert die Debug-Protokollierung. Weitere Informationen und Optionen finden Sie im [Dokumentation zum Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
 
 >[!IMPORTANT]
 >In einer Produktions-App müssen Sie AppId basierend auf der aktuellen Umgebung (dev/stage/prod) wechseln.

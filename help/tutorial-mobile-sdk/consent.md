@@ -2,10 +2,10 @@
 title: Einverständnis
 description: Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementieren.
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementieren.
 
-Die mobile Adobe Experience Platform-Erweiterung &quot;Einverständnis&quot;ermöglicht die Erfassung von Zustimmungsvoreinstellungen von Ihrer mobilen App bei Verwendung des Adobe Experience Platform Mobile SDK und der Edge Network-Erweiterung. Weitere Informationen zum [Zustimmungserweiterung](https://aep-sdks.gitbook.io/docs/foundation-extensions/consent-for-edge-network), in der Dokumentation.
+Die mobile Adobe Experience Platform-Erweiterung &quot;Einverständnis&quot;ermöglicht die Erfassung von Zustimmungsvoreinstellungen von Ihrer mobilen App bei Verwendung des Adobe Experience Platform Mobile SDK und der Edge Network-Erweiterung. Weitere Informationen zum [Zustimmungserweiterung](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), in der Dokumentation.
 
 ## Voraussetzungen
 
@@ -33,7 +33,7 @@ Wenn Sie das Tutorial von Anfang an befolgt haben, werden Sie sich daran erinner
 
 1. Sie möchten den Benutzer nur einmal fragen. Eine einfache Möglichkeit, dies zu verwalten, besteht darin, einfach `UserDefaults`.
 1. Navigieren Sie zu `Home.swift`.
-1. Fügen Sie den folgenden Code zu `viewDidLoad()`.
+1. Fügen Sie den folgenden Code zu `viewDidLoad()` hinzu.
 
    ```swift
    let defaults = UserDefaults.standard
@@ -41,7 +41,7 @@ Wenn Sie das Tutorial von Anfang an befolgt haben, werden Sie sich daran erinner
    let hidePopUp = defaults.bool(forKey: consentKey)
    ```
 
-1. Wenn der Benutzer den Warnhinweis noch nie gesehen hat, zeigen Sie ihn an und aktualisieren Sie die Einwilligung je nach Antwort. Fügen Sie den folgenden Code zu `viewDidLoad()`.
+1. Wenn der Benutzer den Warnhinweis noch nie gesehen hat, zeigen Sie ihn an und aktualisieren Sie die Einwilligung je nach Antwort. Fügen Sie den folgenden Code zu `viewDidLoad()` hinzu.
 
    ```swift
    if(hidePopUp == false){
@@ -71,7 +71,7 @@ Wenn Sie das Tutorial von Anfang an befolgt haben, werden Sie sich daran erinner
 Die mobile Erweiterung &quot;Einverständnis&quot;unterdrückt/unterdrückt/lässt/lässt das Tracking basierend auf dem aktuellen Zustimmungswert. Sie können auch selbst auf den aktuellen Zustimmungsstatus zugreifen:
 
 1. Navigieren Sie zu `Home.swift`.
-1. Fügen Sie den folgenden Code zu `viewDidLoad()`.
+1. Fügen Sie den folgenden Code zu `viewDidLoad()` hinzu.
 
 ```swift
 Consent.getConsents{ consents, error in

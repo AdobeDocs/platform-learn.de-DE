@@ -4,9 +4,9 @@ description: Erfahren Sie, wie das Adobe Experience Platform Mobile SDK die durc
 feature: Mobile SDK
 kt: 3698
 exl-id: 0d55971d-35cc-4684-b1fb-f1aabd0b561c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 82%
 
 ---
@@ -21,4 +21,4 @@ Erfahren Sie, wie das Adobe Experience Platform Mobile SDK die durchgängige Int
 
 >[!VIDEO](https://video.tv.adobe.com/v/28948?quality=12&learn=on)
 
-Weitere Informationen finden Sie unter [Dokumentation zum mobilen Platform-SDK](https://aep-sdks.gitbook.io/docs/).
+Weitere Informationen finden Sie unter [Dokumentation zum mobilen Platform-SDK](https://developer.adobe.com/client-sdks/documentation/).

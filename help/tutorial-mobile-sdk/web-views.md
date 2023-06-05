@@ -3,7 +3,7 @@ title: WebViews verarbeiten
 description: Erfahren Sie, wie Sie die Datenerfassung mit WebViews in einer mobilen App durchführen.
 kt: 6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 1%
@@ -72,7 +72,7 @@ if var urlString = url?.absoluteString {
 }
 ```
 
-Weitere Informationen zum `Identity.getUrlVariables` API im [Referenzhandbuch zur Identity für die Edge Network Extension-API](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network/api-reference#geturlvariables).
+Weitere Informationen zum `Identity.getUrlVariables` API im [Referenzhandbuch zur Identity für die Edge Network Extension-API](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
 ## Validierung
 

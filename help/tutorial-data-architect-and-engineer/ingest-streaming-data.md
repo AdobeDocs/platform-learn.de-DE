@@ -8,10 +8,10 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '3344'
-ht-degree: 2%
+source-wordcount: '3346'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Bevor Sie mit den Übungen beginnen, sehen Sie sich diese beiden kurzen Videos a
 
 >[!NOTE]
 >
->Während dieses Tutorial die Streaming-Erfassung von Websites mit Web SDK zum Schwerpunkt hat, können Sie Daten auch mithilfe der [Adobe Mobile SDK](https://aep-sdks.gitbook.io/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)und anderen Mechanismen.
+>Während dieses Tutorial die Streaming-Erfassung von Websites mit Web SDK zum Schwerpunkt hat, können Sie Daten auch mithilfe der [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)und anderen Mechanismen.
 
 ## Erforderliche Berechtigungen
 
@@ -290,7 +290,7 @@ Der Experience Platform Debugger verfügt über eine coole Funktion, mit der Sie
 1. Die Luma-Website wird jetzt neu geladen _mit der Tag-Eigenschaft_. Hilfe, ich wurde gehackt! Mach nur Spaß.
    ![Tag-Eigenschaft ersetzt](assets/websdk-debugger-propertyReplaced.png)
 1. Navigieren Sie zu **[!UICONTROL Zusammenfassung]** in der linken Navigation, um die Details Ihrer [!UICONTROL Launch] property
-   ![Registerkarte &quot;Zusammenfassung&quot;](assets/websdk-debugger-summary.png)
+   ![Registerkarte „Zusammenfassung“](assets/websdk-debugger-summary.png)
 1. Gehen Sie jetzt zu **[!UICONTROL AEP Web SDK]** in der linken Navigation, um die **[!UICONTROL Netzwerkanforderungen]**
 1. Öffnen Sie die **[!UICONTROL events]** row
 
@@ -324,7 +324,7 @@ Sie können auch bestätigen, dass das neue Profil angezeigt wird:
 1. Wählen Sie die **[!UICONTROL Profil-ID]** zum Öffnen des Profils
    ![Profil suchen und öffnen](assets/websdk-platform-openProfile.png)
 1. Wählen Sie die **[!UICONTROL Veranstaltungen]** Registerkarte, um die angezeigten Seiten anzuzeigen
-   ![Profilereignisse](assets/websdk-platform-profileEvents.png)
+   ![Profilereignisse](assets/websdk-platform-profileEvents.png)\
    <!--![](assets/websdk-platform-confirmProfile.png)-->
 
 ## Hinzufügen benutzerdefinierter Daten zum Ereignis
@@ -361,7 +361,7 @@ Im **[!UICONTROL Datenelemente]** Seite:
 1. Als **[!UICONTROL Datenelementtyp]** auswählen `XDM object`
 1. Als **[!UICONTROL Sandbox]**, wählen Sie `Luma Tutorial` Sandbox
 1. Als **[!UICONTROL Schema]**, wählen Sie `Luma Web Events Schema`
-1. Wählen Sie die `web.webPageDetails.name` field
+1. Wählen Sie das Feld `web.webPageDetails.name` aus
 1. Als **[!UICONTROL Wert]**, wählen Sie das Symbol aus, um das Datenelement-Auswahlmodul zu öffnen, und wählen Sie Ihre `Page Name` Datenelement
 1. Auswählen **[!UICONTROL In Bibliothek speichern]**
 
@@ -461,7 +461,7 @@ So überprüfen Sie, ob die CRM-ID jetzt vom Web SDK gesendet wird:
 * [Dokumentation zur Streaming-Erfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=de)
 * [Referenz zur Streaming-Aufnahme-API](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
 
-Gute Arbeit! Das waren viele Informationen zum Web SDK und Launch. Es gibt viel mehr an einer vollständigen Implementierung, aber dies sind die Grundlagen, die Ihnen bei den ersten Schritten und der Anzeige der Ergebnisse in Platform helfen.
+Gute gemacht! Das waren viele Informationen zum Web SDK und Launch. Es gibt viel mehr an einer vollständigen Implementierung, aber dies sind die Grundlagen, die Ihnen bei den ersten Schritten und der Anzeige der Ergebnisse in Platform helfen.
 
 >[!NOTE]
 >

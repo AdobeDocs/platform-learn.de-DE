@@ -2,10 +2,10 @@
 title: Lebenszyklusdaten
 description: Erfahren Sie, wie Sie Lebenszyklusdaten in einer mobilen App erfassen.
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie Lebenszyklusdaten in einer mobilen App erfassen.
 
-Die Adobe Experience Platform Mobile SDK Lifecycle-Erweiterung ermöglicht die Erfassung von Lebenszyklusdaten aus Ihrer mobilen App. Die Adobe Experience Platform Edge Network-Erweiterung sendet diese Lebenszyklusdaten an das Platform Edge Network, wo sie dann gemäß Ihrer Datenspeicherkonfiguration an andere Anwendungen und Dienste weitergeleitet werden. Weitere Informationen zum [Lebenszykluserweiterung](https://aep-sdks.gitbook.io/docs/foundation-extensions/lifecycle-for-edge-network) in der Produktdokumentation.
+Die Adobe Experience Platform Mobile SDK Lifecycle-Erweiterung ermöglicht die Erfassung von Lebenszyklusdaten aus Ihrer mobilen App. Die Adobe Experience Platform Edge Network-Erweiterung sendet diese Lebenszyklusdaten an das Platform Edge Network, wo sie dann gemäß Ihrer Datenspeicherkonfiguration an andere Anwendungen und Dienste weitergeleitet werden. Weitere Informationen zum [Lebenszykluserweiterung](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) in der Produktdokumentation.
 
 
 ## Voraussetzungen
@@ -45,7 +45,7 @@ Die Feldergruppe &quot;Consumer Experience Event&quot;, die Sie im [vorherige Le
    ![Auswählen](assets/mobile-lifecycle-add.png)
 1. Geben Sie in der Suchleiste &quot;Lebenszyklus&quot;ein.
 1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL AEP Mobile-Lebenszyklusdetails]**.
-1. Auswählen **[!UICONTROL Feldergruppen hinzufügen]**.
+1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
    ![Feldergruppe hinzufügen](assets/mobile-lifecycle-lifecycle-field-group.png)
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
    ![Speichern](assets/mobile-lifecycle-lifecycle-save.png)
@@ -55,7 +55,7 @@ Die Feldergruppe &quot;Consumer Experience Event&quot;, die Sie im [vorherige Le
 
 Jetzt können Sie aktualisieren `AppDelegate.swift` zum Registrieren der Lebenszyklusereignisse:
 
-1. Wenn Ihre App beim Start aus einem Hintergrundstatus fortgesetzt wird, kann iOS Ihre `applicationWillEnterForeground:` delegate-Methode. Addieren `lifecycleStart:`
+1. Wenn Ihre App beim Start aus einem Hintergrundstatus fortgesetzt wird, kann iOS Ihre `applicationWillEnterForeground:` delegate-Methode. Hinzufügen `lifecycleStart:`
 
    ```swift
    MobileCore.lifecycleStart(additionalContextData: nil)
@@ -69,7 +69,7 @@ Jetzt können Sie aktualisieren `AppDelegate.swift` zum Registrieren der Lebensz
 
 >[!NOTE]
 >
->Informationen zu iOS 13 und höher finden Sie im Abschnitt [Dokumentation](https://aep-sdks.gitbook.io/docs/foundation-extensions/mobile-core/lifecycle#register-lifecycle-with-mobile-core-and-add-appropriate-start-pause-calls) für etwas anderen Code.
+>Informationen zu iOS 13 und höher finden Sie im Abschnitt [Dokumentation](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/#register-lifecycle-with-mobile-core-and-add-appropriate-startpause-calls) für etwas anderen Code.
 
 ## Validierung mit Versicherung
 
@@ -82,7 +82,7 @@ Jetzt können Sie aktualisieren `AppDelegate.swift` zum Registrieren der Lebensz
 
 ## Weiterleiten von Daten an Platform Edge Network
 
-Die vorherige Übung sendet die Vordergrund- und Hintergrundereignisse an das Mobile SDK. Gehen Sie wie folgt vor, um diese Ereignisse an Platform Edge Network zu senden [here](https://aep-sdks.gitbook.io/docs/foundation-extensions/lifecycle-for-edge-network#configure-a-rule-to-forward-lifecycle-metrics-to-platform). Sobald die Ereignisse an Platform Edge Network gesendet werden, werden sie gemäß Ihrer Datastream-Konfiguration an andere Anwendungen und Dienste weitergeleitet.
+Die vorherige Übung sendet die Vordergrund- und Hintergrundereignisse an das Mobile SDK. Gehen Sie wie folgt vor, um diese Ereignisse an Platform Edge Network zu senden [here](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/#configure-a-rule-to-forward-lifecycle-metrics-to-platform). Sobald die Ereignisse an Platform Edge Network gesendet werden, werden sie gemäß Ihrer Datastream-Konfiguration an andere Anwendungen und Dienste weitergeleitet.
 
 Nachdem Sie die Regel zum Senden der Lebenszyklusereignisse an Platform Edge Network hinzugefügt haben, sollte Folgendes angezeigt werden: `Application Close (Background)` und `Application Launch (Foreground)` Ereignisse, die XDM-Daten in Assurance enthalten.
 

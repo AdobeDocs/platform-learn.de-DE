@@ -3,10 +3,10 @@ title: Einrichten einer Ereignisweiterleitungs-Eigenschaft
 description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mit Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
 feature: Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '1888'
-ht-degree: 6%
+source-wordcount: '1887'
+ht-degree: 7%
 
 ---
 
@@ -19,8 +19,8 @@ Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassu
 Um die Ereignisweiterleitung in Adobe Experience Platform zu verwenden, müssen Daten zunächst mit einer oder mehreren der folgenden drei Optionen an Adobe Experience Platform Edge Network gesendet werden:
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/)
-<!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
+   <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 
 >[!NOTE]
@@ -84,7 +84,7 @@ Damit die Ereignisweiterleitung die an das Edge-Netzwerk gesendeten Daten verwen
 
 So konfigurieren Sie Target im Datastream:
 
-1. Navigieren Sie zu [Datenerfassung](https://experience.adobe.com/#/data-collection)Benutzeroberfläche von {target=&quot;blank&quot;}
+1. Navigieren Sie zu [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} Benutzeroberfläche
 1. Wählen Sie im linken Navigationsbereich die Option **[!UICONTROL Datenspeicher]**
 1. Wählen Sie die zuvor erstellte `Luma Web SDK` datastream
 
@@ -165,7 +165,7 @@ In dieser Übung leiten Sie die Höhe des Browser-Viewports und die Experience C
 
 1. Erstellen eines weiteren Datenelements
 
-1. **[!UICONTROL Name]** it `ecid`
+1. **** Benennen Sie sie `ecid`
 
 1. under **[!UICONTROL Erweiterung]**, verlassen `CORE`
 
@@ -238,11 +238,11 @@ Um eine Regel zum Weiterleiten von Daten an Ihren Webhook zu konfigurieren, müs
 
 1. Zurück **[!UICONTROL Datenerfassung]** > **[!UICONTROL Ereignisweiterleitung]** > **[!UICONTROL Regeln]** über die linke Navigation
 
-1. Auswählen **[!UICONTROL Neue Regel erstellen]**
+1. Wählen Sie **[!UICONTROL Neue Regel erstellen]** aus
 
    ![Neue Regel zur Ereignisweiterleitung](assets/event-forwarding-new-rules.png)
 
-1. Benennen Sie ihn `all events - ad cloud connector - webhook`
+1. Benennen Sie sie `all events - ad cloud connector - webhook`
 
 1. Hinzufügen einer Aktion
 

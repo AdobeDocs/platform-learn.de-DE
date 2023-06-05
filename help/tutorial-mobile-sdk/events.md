@@ -1,19 +1,19 @@
 ---
-title: Ereignisse
+title: Events
 description: Erfahren Sie, wie Sie Ereignisdaten in einer Mobile App erfassen.
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
 
-# Ereignisse
+# Events
 
 Erfahren Sie, wie Sie Ereignisse in einer Mobile App verfolgen.
 
-Die Edge Network-Erweiterung stellt eine API zum Senden von Erlebnisereignissen an Platform Edge Network bereit. Ein Erlebnisereignis ist ein Objekt, das Daten enthält, die der XDM ExperienceEvent-Schemadefinition entsprechen. Sie erfassen einfach, was Benutzer in Ihrer mobilen App tun. Sobald Daten vom Platform Edge Network empfangen wurden, können sie an Anwendungen und Dienste weitergeleitet werden, die in Ihrem Datenspeicher konfiguriert sind, z. B. Adobe Analytics und Experience Platform. Weitere Informationen zum [Erlebnisereignisse](https://aep-sdks.gitbook.io/docs/getting-started/initialize-the-sdk) in der Produktdokumentation.
+Die Edge Network-Erweiterung stellt eine API zum Senden von Erlebnisereignissen an Platform Edge Network bereit. Ein Erlebnisereignis ist ein Objekt, das Daten enthält, die der XDM ExperienceEvent-Schemadefinition entsprechen. Sie erfassen einfach, was Benutzer in Ihrer mobilen App tun. Sobald Daten vom Platform Edge Network empfangen wurden, können sie an Anwendungen und Dienste weitergeleitet werden, die in Ihrem Datenspeicher konfiguriert sind, z. B. Adobe Analytics und Experience Platform. Weitere Informationen zum [Erlebnisereignisse](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in der Produktdokumentation.
 
 ## Voraussetzungen
 
@@ -176,7 +176,7 @@ Sehen wir uns ein paar Beispiele an.
 Die obigen Beispiele haben hoffentlich den Gedankenprozess beim Erstellen eines XDM-Datenobjekts erläutert. Als Nächstes fügen wir das Tracking der Bildschirmansichten in der Luma-App hinzu.
 
 1. Navigieren Sie zu `Home.swift`.
-1. Fügen Sie den folgenden Code zu `viewDidAppear(...)`.
+1. Fügen Sie den folgenden Code zu `viewDidAppear(...)` hinzu.
 
    ```swift
            let stateName = "luma: content: ios: us: en: home"

@@ -2,9 +2,9 @@
 title: Identität
 description: Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen.
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '591'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen.
 
 Mit Adobe Experience Platform Identity Service erhalten Sie einen besseren Überblick über Ihre Kunden und deren Verhalten, indem Sie Identitäten zwischen Geräten und Systemen überbrücken und so effektive persönliche digitale Erlebnisse in Echtzeit bereitstellen. Identitätsfelder und Namespaces sind der Kleber, der verschiedene Datenquellen verbindet, um das 360-Grad-Echtzeit-Kundenprofil zu erstellen.
 
-Weitere Informationen zum [Identitätserweiterung](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network) und [Identitätsdienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) in der Dokumentation.
+Weitere Informationen zum [Identitätserweiterung](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) und [Identitätsdienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) in der Dokumentation.
 
 ## Voraussetzungen
 
@@ -65,10 +65,10 @@ Aktualisieren Sie zunächst die Identitätszuordnung des Benutzers, wenn er sich
 
 ## Einrichten eines benutzerdefinierten Identitäts-Namespace
 
-Identitäts-Namespaces sind Komponenten von [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) , die als Indikatoren für den Kontext dienen, auf den sich eine Identität bezieht. Sie unterscheiden beispielsweise den Wert &quot;name@email.com&quot;als E-Mail-Adresse oder &quot;443522&quot;als numerische CRM-ID.
+Identitäts-Namespaces sind Komponenten von [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) , die als Indikatoren für den Kontext dienen, auf den sich eine Identität bezieht. Sie unterscheiden beispielsweise den Wert &quot;name@email.com&quot;als E-Mail-Adresse oder &quot;443522&quot;als numerische CRM-ID.
 
 1. Wählen Sie in der Datenerfassungsoberfläche die Option **[!UICONTROL Identitäten]** über die Navigationsleiste auf der linken Schiene aus.
-1. Auswählen **[!UICONTROL Identitäts-Namespace erstellen]**.
+1. Wählen Sie **[!UICONTROL Identity-Namespace erstellen]** aus.
 1. Bereitstellung einer **[!UICONTROL Anzeigename]** von `Luma CRM ID` und **[!UICONTROL Identitätssymbol]** Wert von `lumaCrmId`.
 1. Auswählen **[!UICONTROL Geräteübergreifende ID]**.
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.

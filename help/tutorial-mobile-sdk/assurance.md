@@ -2,10 +2,10 @@
 title: Einrichten der Sicherheit
 description: Erfahren Sie, wie Sie die Assurance-Erweiterung in eine mobile App implementieren.
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 7df759ec0ea248ee91ae673e3468ffa3f6cc5be5
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 3%
+source-wordcount: '585'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ Erfahren Sie, wie Sie Adobe Experience Platform Assurance in einer Mobile App ei
 
 Assurance, formell als Project Griffon bekannt, soll Ihnen dabei helfen, zu untersuchen, zu testen, zu simulieren und zu überprüfen, wie Sie Daten erfassen oder Erlebnisse in Ihrer mobilen App bereitstellen.
 
-Mithilfe von &quot;Assurance&quot;können Sie unformatierte SDK-Ereignisse überprüfen, die vom Adobe Experience Platform Mobile SDK generiert wurden. Alle vom SDK erfassten Ereignisse stehen zur Überprüfung zur Verfügung. SDK-Ereignisse werden in einer Listenansicht geladen, sortiert nach Zeit. Jedes Ereignis verfügt über eine detaillierte Ansicht, die weitere Details enthält. Zusätzliche Ansichten zum Durchsuchen von SDK-Konfigurationen, Datenelementen, freigegebenen Status und SDK-Erweiterungsversionen werden ebenfalls bereitgestellt. Weitere Informationen zum [Sicherheit](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance) in der Produktdokumentation.
+Mithilfe von &quot;Assurance&quot;können Sie unformatierte SDK-Ereignisse überprüfen, die vom Adobe Experience Platform Mobile SDK generiert wurden. Alle vom SDK erfassten Ereignisse stehen zur Überprüfung zur Verfügung. SDK-Ereignisse werden in einer Listenansicht geladen, sortiert nach Zeit. Jedes Ereignis verfügt über eine detaillierte Ansicht, die weitere Details enthält. Zusätzliche Ansichten zum Durchsuchen von SDK-Konfigurationen, Datenelementen, freigegebenen Status und SDK-Erweiterungsversionen werden ebenfalls bereitgestellt. Weitere Informationen zum [Sicherheit](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de) in der Produktdokumentation.
 
 
 ## Voraussetzungen
@@ -61,7 +61,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 }
 ```
 
-Weitere Informationen finden Sie [hier](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target="_blank"}.
+Weitere Informationen finden Sie [hier](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## Einrichten einer Basis-URL
 
@@ -94,7 +94,7 @@ Die Sicherung funktioniert durch Öffnen einer URL, entweder über einen Browser
    * Experience Cloud-Ereignisse, die in der Web-Benutzeroberfläche auftreten.
       ![Zuverlässigkeitsereignisse](assets/mobile-assurance-events.png)
 
-Wenn Sie auf Herausforderungen stoßen, lesen Sie bitte die [technisch](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target="_blank"} and [general documentation](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target="_blank"}.
+Wenn Sie auf Herausforderungen stoßen, lesen Sie bitte die [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de){target="_blank"}.
 
 Weiter: **[Einverständnis](consent.md)**
 
