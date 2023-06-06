@@ -7,10 +7,10 @@ kt: 10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: f19d3851c5d8e8c54823aa115cc7068f91776da6
+source-git-commit: 3df5214a445cbf4c9862bb82cd32a9f243228539
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 29%
+source-wordcount: '79'
+ht-degree: 8%
 
 ---
 
@@ -23,7 +23,3 @@ Erfahren Sie, wie Sie eine attributbasierte Zugriffskontrolle konfigurieren, um 
 >[!NOTE]
 >
 > Die in diesem Video angezeigte Funktion zum Erstellen von Richtlinien ist nicht vollständig verfügbar, aber die Standardrichtlinie in Kundenkonten wird ähnlich wie die angezeigte konfiguriert.
-
->[!IMPORTANT]
->
-> Die attributbasierte Zugriffssteuerung ist derzeit nur in einer eingeschränkten Version für US-Kunden im Gesundheitswesen verfügbar. Diese Funktion steht allen Kundinnen und Kunden von Real-time Customer Data Platform nach der vollständigen Veröffentlichung zur Verfügung. Außerdem ist die in diesem Video verwendete Beschriftung für regulierte Gesundheitsdaten nur für Kunden des Gesundheitsschilds zulässig.
