@@ -8,10 +8,10 @@ feature: Data Management
 kt: 4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 9%
+source-wordcount: '569'
+ht-degree: 10%
 
 ---
 
@@ -76,7 +76,7 @@ Erstellen Sie nun die `Luma CRM Dataset` die API verwenden.
 Zuerst müssen wir die `$id` des `Luma CRM Schema`:
 
 1. Öffnen [!DNL Postman]
-1. Wenn Sie in den letzten 24 Stunden keine Anfrage gestellt haben, sind Ihre Autorisierungstoken wahrscheinlich abgelaufen. Anfrage öffnen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** und wählen Sie **Senden** , um neue JWT- und Zugriffstoken anzufordern, genau wie Sie dies in der [!DNL Postman] Lektion.
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern, genau wie Sie es in der [!DNL Postman] Lektion.
 1. Anfrage öffnen **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Wählen Sie die **Senden** button
 1. Sie sollten eine 200-Antwort erhalten
@@ -117,10 +117,9 @@ Jetzt können Sie den Datensatz erstellen:
 > Häufige Probleme, die diese Anfrage verursachen, und mögliche Fehlerbehebungen:
 >
 > * `400: There was a problem retrieving xdm schema`. Stellen Sie sicher, dass Sie die ID im obigen Beispiel durch die ID Ihrer eigenen ersetzt haben. `Luma CRM Schema`
-> * Kein Authentifizierungstoken: Führen Sie die **IMS: JWT-Generierung + Auth über Benutzer-Token** Aufruf zum Generieren neuer Token
+> * Kein Authentifizierungstoken: Führen Sie die **OAuth: Zugriffstoken anfordern** Anfrage zum Generieren eines neuen Tokens
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Aktualisieren Sie die **CONTAINER_ID** Umgebungsvariable aus `global` nach `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`: Benutzerberechtigungen in der Admin Console überprüfen
-
 
 
 Sie können zum **[!UICONTROL Datensätze]** in der Platform-Benutzeroberfläche können Sie die erfolgreiche Erstellung aller fünf Datensätze überprüfen!

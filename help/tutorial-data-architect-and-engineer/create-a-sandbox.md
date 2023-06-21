@@ -8,9 +8,9 @@ feature: Sandboxes
 kt: 4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '404'
 ht-degree: 5%
 
 ---
@@ -64,27 +64,17 @@ Warten Sie, bis Ihre Sandbox[!UICONTROL Aktiv]&quot;, bevor sie mit der nächste
 
 ## Hinzufügen der neuen Sandbox zum Produktprofil
 
-Sobald die Sandbox aktiv ist, müssen Sie sie in Ihr Produktprofil aufnehmen, um sie verwenden zu können. So fügen Sie ihn Ihrem Produktprofil hinzu:
+Sobald die Sandbox aktiv ist, müssen Sie sie in Ihre Rolle aufnehmen, um sie verwenden zu können. So fügen Sie sie Ihrer Rolle hinzu (Systemadministrator- oder Produktadministratorberechtigungen erforderlich):
 
-1. Melden Sie sich auf einer separaten Browser-Registerkarte bei der [Admin Console](https://adminconsole.adobe.com)
-1. Navigieren Sie zu **[!UICONTROL Produkte > Adobe Experience Platform]**
-1. Öffnen Sie die `Luma Tutorial Platform` profile
-
-   ![Produktprofil auswählen](assets/sandbox-selectProfile.png)
-
-1. Navigieren Sie zu **[!UICONTROL Berechtigungen]** tab
-
+1. Navigieren Sie zu [!UICONTROL Berechtigungen] Bildschirm
+1. Öffnen Sie die `Luma Tutorial Platform` Rolle
+1. _Entfernen_ die `Prod` Sandbox aus der Rolle
+1. Fügen Sie die `Luma Tutorial` Sandbox
+1. Wählen Sie **[!UICONTROL Speichern]** aus
 1. Im [!UICONTROL Sandboxes] Zeile auswählen **[!UICONTROL Bearbeiten]**
 
-   ![Wählen Sie Bearbeiten](assets/sandbox-selectSandboxes.png) aus
+   ![Tutorial zum Hinzufügen von Luma](assets/sandbox-addLumaTutorial.png)
 
-1. _Entfernen_ die **[!UICONTROL Prod]** Sandbox, die Sie dem Profil ursprünglich zugewiesen haben
-1. Wählen Sie die **[!UICONTROL +]** Symbol zum Hinzufügen der neuen `Luma Tutorial` Sandbox in der rechten Spalte
-1. Auswählen **[!UICONTROL Speichern]** , um die aktualisierten Berechtigungen zu speichern
-
-   ![Verschieben der Sandbox in die andere Spalte](assets/sandbox-addLumaTutorial.png)
-
-1. Kehren Sie zur Browser-Registerkarte mit Experience Platform zurück.
 1. Laden Sie die Seite neu (oder drücken Sie die Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt-Umschalt). `Luma Tutorial` Sandbox oder sie sollte in der Sandbox-Dropdown-Liste angezeigt werden
 1. Wechseln Sie zu `Luma Tutorial` Sandbox, falls noch nicht vorhanden
 

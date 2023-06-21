@@ -8,10 +8,10 @@ feature: Schemas
 kt: 4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 6%
+source-wordcount: '2485'
+ht-degree: 10%
 
 ---
 
@@ -47,7 +47,7 @@ Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um me
 
 >[!TIP]
 >
-> Für einen tieferen Einblick in die Datenmodellierung in Experience Platform empfehlen wir, diesen Kurs zu absolvieren [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm), kostenlos auf Experience League!
+> Für einen tieferen Einblick in die Datenmodellierung in Experience Platform empfehlen wir, diesen Kurs zu absolvieren [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de), kostenlos auf Experience League!
 
 ## Erforderliche Berechtigungen
 
@@ -71,7 +71,7 @@ In dieser Übung erstellen wir ein Schema für die Treuedaten von Luma.
 
 1. Wechseln Sie zur Benutzeroberfläche von Platform und stellen Sie sicher, dass Ihre Sandbox ausgewählt ist.
 1. Navigieren Sie zu **[!UICONTROL Schemas]** in der linken Navigation
-1. Wählen Sie die **[!UICONTROL Schema erstellen]** Schaltfläche oben rechts
+1. Klicken Sie auf **[!UICONTROL Schema erstellen]** oben rechts
 1. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL XDM Individual Profile]**, da wir Attribute eines einzelnen Kunden modellieren werden (Punkte, Status usw.).
    ![Schema mit OOTB-Feldergruppe](assets/schemas-loyaltyCreateSchema.png)
 
@@ -79,7 +79,7 @@ In dieser Übung erstellen wir ein Schema für die Treuedaten von Luma.
 
 Als Nächstes werden Sie aufgefordert, dem Schema Feldergruppen hinzuzufügen. Alle Felder müssen mithilfe von Gruppen zu Schemas hinzugefügt werden. Sie können aus einem großen Satz von Feldergruppen mit Industriestandard wählen, die von Adobe bereitgestellt werden, oder eine eigene erstellen. Wenn Sie mit der Modellierung Ihrer eigenen Daten in Experience Platform beginnen, sollten Sie sich mit den branchenüblichen Feldergruppen vertraut machen, die von Adobe bereitgestellt werden. Wenn möglich, empfiehlt es sich, sie zu verwenden, da sie manchmal nachgelagerte Dienste wie Customer AI, Attribution AI und Adobe Analytics betreiben.
 
-Beim Arbeiten mit Ihren eigenen Daten besteht ein großer Schritt darin, zu bestimmen, welche Ihrer eigenen Daten in Platform erfasst und wie sie modelliert werden sollen. Dieses große Thema wird im Laufe des Kurses eingehender diskutiert [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). In diesem Tutorial werde ich Sie lediglich durch die Implementierung einiger vorab festgelegter Schemas führen.
+Beim Arbeiten mit Ihren eigenen Daten besteht ein großer Schritt darin, zu bestimmen, welche Ihrer eigenen Daten in Platform erfasst und wie sie modelliert werden sollen. Dieses große Thema wird im Laufe des Kurses eingehender diskutiert [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de). In diesem Tutorial werde ich Sie lediglich durch die Implementierung einiger vorab festgelegter Schemas führen.
 
 So fügen Sie Feldergruppen hinzu:
 
@@ -87,11 +87,11 @@ So fügen Sie Feldergruppen hinzu:
    1. **[!UICONTROL Demografische Details]** für grundlegende Kundendaten wie Name und Geburtsdatum
    1. **[!UICONTROL Persönliche Kontaktangaben]** für grundlegende Kontaktdaten wie E-Mail-Adresse und Telefonnummer
 1. Sie können eine Vorschau der in der Feldergruppe hinzugefügten Felder anzeigen, indem Sie auf das Symbol rechts in der Zeile klicken.
-   ![Standardfeldgruppen auswählen](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
+   ![Auswahl der Standardfeldergruppen](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
 1. Überprüfen Sie die **[!UICONTROL Branche]** > **[!UICONTROL Einzelhandel]** zum Anzeigen branchenspezifischer Feldergruppen.
 1. Auswählen **[!UICONTROL Treue]** , um die Felder des Treueprogramms hinzuzufügen.
-1. Auswählen **[!UICONTROL Feldergruppe hinzufügen]** , um alle drei Feldergruppen zum Schema hinzuzufügen.
+1. Wählen Sie **[!UICONTROL Feldergruppe hinzufügen]** aus, um alle drei Feldergruppen zum Schema hinzuzufügen.
    ![Hinzufügen von Standardfeldgruppen zum Treueschema](assets/schemas-loyalty-saveOotbMixins.png)
 
 
@@ -118,21 +118,20 @@ Feldergruppen müssen im Schema-Workflow erstellt werden. So erstellen Sie die F
 
 1. Auswählen **[!UICONTROL Hinzufügen]** unter **[!UICONTROL Schemafeldgruppen]** heading
    ![Neue Feldergruppe hinzufügen](assets/schemas-loyalty-addFieldGroup.png)
-1. Auswählen **[!UICONTROL Neue Feldergruppe erstellen]**
+1. Wählen Sie **[!UICONTROL Neue Feldergruppe erstellen]** aus
 1. Verwendung `Luma Identity profile field group` als **[!UICONTROL Anzeigename]**
 1. Verwendung `system identifiers for XDM Individual Profile class` als **[!UICONTROL Beschreibung]**
-1. Auswählen **[!UICONTROL Feldergruppen hinzufügen]**
-
+1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus
    ![Neue Feldergruppe hinzufügen](assets/schemas-loyalty-nameFieldGroup.png)
 
-Die neue leere Feldergruppe wird Ihrem Schema hinzugefügt. Die **[!UICONTROL +]** -Schaltflächen können verwendet werden, um neue Felder an einer beliebigen Stelle in der Hierarchie hinzuzufügen. In unserem Fall möchten wir Felder auf der Stammebene hinzufügen:
+Die neue, leere Feldergruppe wird Ihrem Schema hinzugefügt. Die **[!UICONTROL +]** -Schaltflächen können verwendet werden, um neue Felder an einer beliebigen Stelle in der Hierarchie hinzuzufügen. In unserem Fall möchten wir Felder auf der Stammebene hinzufügen:
 
-1. Auswählen **[!UICONTROL +]** neben dem Namen des Schemas. Dadurch wird ein neues Feld unter Ihrem Mandanten-ID-Namespace hinzugefügt, um Konflikte zwischen Ihren benutzerdefinierten Feldern und beliebigen Standardfeldern zu verwalten.
+1. Klicken Sie auf **[!UICONTROL +]** neben dem Namen des Schemas. Dadurch wird ein neues Feld unter Ihrem Mandanten-ID-Namespace hinzugefügt, um Konflikte zwischen Ihren benutzerdefinierten Feldern und beliebigen Standardfeldern zu verwalten.
 1. Im **[!UICONTROL Feldeigenschaften]** Seitenleiste fügen Sie die Details des neuen Felds hinzu:
    1. **[!UICONTROL Feldname]**: `systemIdentifier`
    1. **[!UICONTROL Anzeigename]**: `System Identifier`
    1. **[!UICONTROL Typ]**: **[!UICONTROL Objekt]**
-   1. Auswählen **[!UICONTROL Anwenden]**
+   1. Wählen Sie **[!UICONTROL Anwenden]** aus
 
    ![Neue Feldergruppe hinzufügen](assets/schemas-loyalty-addSystemIdentifier.png)
 
@@ -174,14 +173,13 @@ Jetzt erstellen wir ein Schema mit der API.
 > Wenn Sie die API-Übung lieber überspringen möchten, können Sie das folgende Schema mithilfe der Methode der Benutzeroberfläche erstellen:
 >
 > 1. Verwenden Sie die [!UICONTROL XDM Individual Profile] class
-> 1. Benennen Sie ihn `Luma CRM Schema`
+> 1. Benennen Sie sie `Luma CRM Schema`
 > 1. Verwenden Sie die folgenden Feldergruppen: Feldergruppe &quot;Demografische Details&quot;, &quot;Persönliche Kontaktdetails&quot;und &quot;Luma-Identitätsprofil&quot;
-
 
 Zuerst erstellen wir ein leeres Schema:
 
 1. Öffnen [!DNL Postman]
-1. Wenn Sie in den letzten 24 Stunden keine Anfrage gestellt haben, sind Ihre Autorisierungstoken wahrscheinlich abgelaufen. Anfrage öffnen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** und wählen Sie **Senden** , um neue JWT- und Zugriffstoken anzufordern.
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern.
 1. Öffnen Sie Ihre Umgebungsvariablen und ändern Sie den Wert von **CONTAINER_ID** von `global` nach `tenant`. Denken Sie daran, dass Sie `tenant` wann immer Sie mit Ihren eigenen benutzerdefinierten Elementen in Platform interagieren möchten, z. B. beim Erstellen eines Schemas.
 1. Wählen Sie **Speichern** aus
    ![CONTAINER_ID in Mandanten ändern](assets/schemas-crm-changeContainerId.png)
@@ -218,10 +216,9 @@ Zuerst erstellen wir ein leeres Schema:
 >
 > Häufige Probleme mit diesem Aufruf und mögliche Fehlerbehebungen:
 >
-> * Kein Authentifizierungstoken: Führen Sie die **IMS: JWT-Generierung + Auth über Benutzer-Token** Aufruf zum Generieren neuer Token
+> * Kein Authentifizierungstoken: Führen Sie die **OAuth: Zugriffstoken anfordern** Anfrage zum Generieren eines neuen Tokens
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Aktualisieren Sie die **CONTAINER_ID** Umgebungsvariable aus `global` nach `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`: Benutzerberechtigungen in der Admin Console überprüfen
-
 
 ### Standardfeldgruppen hinzufügen
 
@@ -277,7 +274,6 @@ Fügen wir nun unsere `Luma Identity profile field group` zum Schema. Zunächst 
    ```
 
 1. Auswählen **Senden**
-
    ![Hinzufügen der Gruppe &quot;Identitätsfeld&quot;](assets/schemas-crm-addIdentityMixin.png)
 
 Überprüfen Sie, ob die Feldergruppe zum Schema hinzugefügt wurde, indem Sie sowohl die API-Antwort als auch die Benutzeroberfläche überprüfen.
@@ -297,7 +293,7 @@ Erstellen wir nun ein Schema basierend auf der **[!UICONTROL XDM ExperienceEvent
 1. Als **[!UICONTROL Anzeigename]**, eingeben `System Identifier`
 1. Als **[!UICONTROL Typ]** auswählen **Systemkennung** der benutzerdefinierte Datentyp ist, den Sie zuvor erstellt haben
 1. Wählen Sie die **[!UICONTROL Anwenden]** button
-1. Benennen Sie Ihr Schema. `Luma Offline Purchase Events Schema`
+1. Benennen des Schemas `Luma Offline Purchase Events Schema`
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**
 
 Beachten Sie, dass der Datentyp alle Felder hinzugefügt hat!
@@ -316,7 +312,7 @@ Jetzt erstellen wir ein weiteres Schema für die Website-Daten von Luma. An dies
 |---------------|-----------------|
 | Klasse | XDM ExperienceEvent |
 | Feldergruppe | ExperienceEvent-Mixin für das AEP Web SDK |
-| Feldergruppe | Ereignis für Kundenerlebnisse |
+| Feldergruppe | Kundenerlebnisereignis |
 | Schemaname | Luma-Webereignisschema |
 
 Wählen Sie die **[!UICONTROL Ereignis für Kundenerlebnisse]** Feldergruppe. Diese Feldergruppe enthält die Commerce- und productListItems-Objekte, die sich auch in [!UICONTROL Commerce-Details]. Tatsächlich [!UICONTROL Ereignis für Kundenerlebnisse] ist eine Kombination aus mehreren anderen Standardfeldgruppen, die auch separat verfügbar sind. [!UICONTROL ExperienceEvent-Mixin für das AEP Web SDK] Feldergruppe enthält auch andere Feldergruppen, darunter einige der gleichen in [!UICONTROL Ereignis für Kundenerlebnisse]. Glücklicherweise verschmelzen sie sich nahtlos.
@@ -337,7 +333,7 @@ Zunächst müssen wir ein Schema für den Produktkatalog von Luma mithilfe einer
 1. Wählen Sie die **[!UICONTROL Schema erstellen]** und wählen Sie die **[!UICONTROL Durchsuchen]** Option aus der Dropdown-Liste
    ![Neues Schema erstellen](assets/schemas-newSchema-browseClasses.png)
 1. Wählen Sie die **[!UICONTROL Neue Klasse erstellen]** Optionsfeld
-1. Benennen Sie ihn `Luma Product Catalog Class`
+1. Benennen Sie sie `Luma Product Catalog Class`
 1. Lassen Sie die **[!UICONTROL Verhalten]** as **[!UICONTROL Datensatz]**
 1. Wählen Sie die **[!UICONTROL Klasse zuweisen]** button
    ![Neue Klasse erstellen](assets/schemas-productClass.png)

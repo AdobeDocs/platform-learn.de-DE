@@ -8,10 +8,10 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 4%
+source-wordcount: '944'
+ht-degree: 11%
 
 ---
 
@@ -49,7 +49,7 @@ Im [Berechtigungen konfigurieren](configure-permissions.md) Lektion erstellen Si
 
 ## Identity-Namespace erstellen
 
-In dieser Übung erstellen wir Identitäts-Namespaces für die benutzerdefinierten Identitätsfelder von Luma, `loyaltyId`, `crmId`und `productSku`. Identitäts-Namespaces spielen eine entscheidende Rolle beim Erstellen von Echtzeit-Kundenprofilen, da zwei übereinstimmende Werte im selben Namespace es zwei Datenquellen ermöglichen, ein Identitätsdiagramm zu erstellen.
+In dieser Übung erstellen wir Identitäts-Namespaces für die benutzerdefinierten Identitätsfelder von Luma, `loyaltyId`, `crmId`und `productSku`. Identity-Namespaces spielen eine entscheidende Rolle beim Erstellen von Echtzeit-Kundenprofilen, da zwei übereinstimmende Werte im selben Namespace es zwei Datenquellen ermöglichen, ein Identitätsdiagramm zu erstellen.
 
 
 ### Erstellen von Namespaces in der Benutzeroberfläche
@@ -76,7 +76,7 @@ Richten Sie jetzt einen weiteren Namespace für das Luma Product Catalog-Schema 
 |---------------|-----------|
 | Anzeigename | Luma Product SKU |
 | Identitätssymbol | lumaProductSKU |
-| Typ | Personenidentifizierung |
+| Typ | Nichtpersonenkennung |
 
 
 
@@ -92,12 +92,11 @@ Wir erstellen unseren CRM-Namespace per API.
 > 1. Als **[!UICONTROL Identitätssymbol]**, verwenden `lumaCrmId`
 > 1. Als **[!UICONTROL Typ]**, verwenden Sie geräteübergreifend
 
-
 Erstellen wir den Identity-Namespace `Luma CRM Id`:
 
 1. Download [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) auf `Luma Tutorial Assets` Ordner
 1. Importieren Sie die Sammlung in [!DNL Postman]
-1. Wenn Sie in den letzten 24 Stunden keine Anfrage gestellt haben, sind Ihre Autorisierungstoken wahrscheinlich abgelaufen. Anfrage öffnen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** und wählen Sie **Senden** , um neue JWT- und Zugriffstoken anzufordern.
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern.
 1. Anforderung auswählen **[!UICONTROL Identity Service] > [!UICONTROL Identitäts-Namespace] > [!UICONTROL Neuen Identitäts-Namespace erstellen].**
 1. Fügen Sie Folgendes als [!DNL Body] des Antrags:
 
@@ -128,13 +127,13 @@ Für jedes mit dem Echtzeit-Kundenprofil verwendete Schema muss eine primäre Id
 
 Fügen wir eine primäre Identität zur `Luma Loyalty Schema`:
 
-1. Öffnen Sie die `Luma Loyalty Schema`
+1. Öffnen Sie `Luma Loyalty Schema`
 1. Wählen Sie die `Luma Identity profile field group`
-1. Wählen Sie die `loyaltyId` field
+1. Wählen Sie das Feld `loyaltyId` aus
 1. Überprüfen Sie die **[!UICONTROL Identität]** box
 1. Überprüfen Sie die **[!UICONTROL Primäre Identität]** auch
-1. Wählen Sie die `Luma Loyalty Id` Namespace aus **[!UICONTROL Identitäts-Namespaces]** Dropdown
-1. Auswählen **[!UICONTROL Anwenden]**
+1. Wählen Sie den `Luma Loyalty Id`-Namespace aus der Dropdown-Liste **[!UICONTROL Identity-Namespaces]** aus
+1. Wählen Sie **[!UICONTROL Anwenden]** aus
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
    ![Primäre Identität ](assets/identity-loyalty-primary.png)
@@ -157,11 +156,11 @@ Mit unserer Auswahl an primären Identitäten ist es klar zu sehen, wie `Luma CR
 
 Einem Schema können mehrere Identitätsfelder hinzugefügt werden. Nicht-primäre Identitäten werden häufig als sekundäre Identitäten bezeichnet. Um Offline-Käufe mit dem Online-Verhalten zu verbinden, fügen wir die crmId als sekundäre Kennung zu unserem `Luma Loyalty Schema` und später in unseren Web-Ereignisdaten. Aktualisieren wir die `Luma Loyalty Schema`:
 
-1. Öffnen Sie die `Luma Loyalty Schema`
+1. Öffnen Sie `Luma Loyalty Schema`
 1. Auswählen `Luma Identity Profile Field group`
 1. Auswählen `crmId` field
 1. Überprüfen Sie die **[!UICONTROL Identität]** box
-1. Wählen Sie die `Luma CRM Id` Namespace aus **[!UICONTROL Identitäts-Namespaces]** Dropdown
+1. Wählen Sie den `Luma CRM Id`-Namespace aus der Dropdown-Liste **[!UICONTROL Identity-Namespaces]** aus
 1. Auswählen **[!UICONTROL Anwenden]** und wählen Sie dann die **[!UICONTROL Speichern]** Schaltfläche zum Speichern Ihrer Änderungen
 
    ![Sekundäre Identität](assets/identity-loyalty-secondaryId.png)
@@ -170,13 +169,13 @@ Einem Schema können mehrere Identitätsfelder hinzugefügt werden. Nicht-primä
 
 Nachdem wir nun unsere Identitätsfelder beschriftet haben, können wir die Einrichtung der Schemabeziehungen zwischen dem Produktkatalog von Luma und den Ereignisschemata abschließen:
 
-1. Öffnen Sie die `Luma Offline Purchase Events Schema`
+1. Öffnen Sie `Luma Offline Purchase Events Schema`
 1. Auswählen **[!UICONTROL Commerce-Details]** Feldergruppe
 1. Auswählen **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** field
 1. Überprüfen Sie die **[!UICONTROL Beziehung]** box
 1. Auswählen `Luma Product Catalog Schema` als **[!UICONTROL Referenzschema]**
 1. `Luma Product SKU` sollte automatisch mit **[!UICONTROL Referenz-Identitäts-Namespace]**
-1. Auswählen **[!UICONTROL Anwenden]**
+1. Wählen Sie **[!UICONTROL Anwenden]** aus
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
    ![Referenzfeld](assets/identity-offlinePurchase-relationship.png)

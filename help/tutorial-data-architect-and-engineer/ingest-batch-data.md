@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '2538'
+source-wordcount: '2528'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,6 @@ Rufen Sie zunächst die Beispieldaten ab und passen Sie sie für Ihren Mandanten
 >* Durch die Aktivierung der Fehlerdiagnose werden Daten über die Erfassung Ihrer Daten generiert, die Sie dann mithilfe der Data Access API überprüfen können. Weitere Informationen dazu finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
 >* Partielle Erfassung ermöglicht die Aufnahme von fehlerhaften Daten bis zu einem bestimmten Schwellenwert, den Sie angeben können. Weitere Informationen dazu finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
-
 ### Daten validieren
 
 Es gibt einige Möglichkeiten, um zu bestätigen, dass die Daten erfolgreich erfasst wurden.
@@ -103,7 +102,6 @@ So bestätigen Sie, dass die in Profil gelandeten Daten (es kann einige Minuten 
 1. Wählen Sie Ihre `Luma Loyalty Id` namespace
 1. Geben Sie dann einen der `loyaltyId` Werte aus Ihrem Datensatz,  `5625458`
 1. Auswählen **[!UICONTROL Ansicht]**
-
    ![Profil aus Datensatz bestätigen](assets/ingestion-loyalty-profile.png)
 
 #### Validieren mit Datenerfassungsereignissen
@@ -137,7 +135,7 @@ Laden wir nun Daten mithilfe der API hoch.
 Zunächst rufen wir die ID der Datensatz-ID des Datensatzes ab, in den wir Daten aufnehmen möchten:
 
 1. Öffnen [!DNL Postman]
-1. Wenn Sie in den letzten 24 Stunden keine Anfrage gestellt haben, sind Ihre Autorisierungstoken wahrscheinlich abgelaufen. Anfrage öffnen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** und wählen Sie **Senden** , um neue JWT- und Zugriffstoken anzufordern, genau wie Sie dies in der [!DNL Postman] Lektion.
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern, genau wie Sie es in der [!DNL Postman] Lektion.
 1. Öffnen Sie Ihre Umgebungsvariablen und stellen Sie sicher, dass der Wert von **CONTAINER_ID** ist noch `tenant`
 1. Anfrage öffnen **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** und wählen Sie **Senden**
 1. Sie sollten eine `200 OK` response
@@ -337,12 +335,12 @@ Adobe arbeitet mit mehreren ETL-Anbietern zusammen, um die Datenerfassung in Exp
 
 * [Entwickeln von ETL-Integrationen für Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Informatica Adobe Experience Platform Connector-Seite auf Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Informationsdokumentation für den Adobe Experience Platform Connector ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
+* [Informationsdokumentation für den Adobe Experience Platform Connector](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Weitere Ressourcen
 
 * [Dokumentation zur Batch-Erfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
-* [Referenz zur Batch Ingestion-API](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
+* [Referenz zur Batch-Aufnahme-API](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
 
 Jetzt lass uns [Streamen von Daten mit dem Web SDK](ingest-streaming-data.md)

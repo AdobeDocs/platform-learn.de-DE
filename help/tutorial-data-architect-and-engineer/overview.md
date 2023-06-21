@@ -6,8 +6,9 @@ role: Data Architect, Data Engineer
 kt: 4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
+last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 191fe710c6cd00b5355881158a7e0af85523e22e
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -47,7 +48,7 @@ Adobe Experience Platform ist eine technische Plattform, mit der Sie Marketingzi
 
 ## Voraussetzungen
 
-* Sie haben die [Einführung in den Adobe Experience Platform-Kurs](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) zur Experience League und mit Platform-Funktionen vertraut sind
+* Sie haben die [Einführung in den Adobe Experience Platform-Kurs](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=de) zur Experience League und mit Platform-Funktionen vertraut sind
 * Sie haben Zugriff auf ein mit Adobe Experience Platform bereitgestelltes Konto (oder eine plattformbasierte Anwendung wie Real-Time CDP oder Journey Optimizer) und auf die Datenerfassung (früher Launch).
 * Sie sind Systemadministrator dieses Kontos oder können über einen [Benutzerberechtigungen konfigurieren](configure-permissions.md) für Sie.
 

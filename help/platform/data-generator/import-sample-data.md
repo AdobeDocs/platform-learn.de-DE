@@ -1,19 +1,20 @@
 ---
-title: Beispieldaten nach Adobe Experience Platform importieren
+title: Importieren von Beispieldaten nach Adobe Experience Platform
 description: Erfahren Sie, wie Sie eine Experience Platform-Sandbox-Umgebung mit einigen Beispieldaten einrichten.
 role: Developer
 feature: API
 kt: 7349
 thumbnail: 7349.jpg
+last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: d5988bd8e6d31b183e2a264bea4fb05cd90ef1a7
+source-git-commit: 60f509ef55ce121f572466a8f13953dba982a0ce
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1831'
 ht-degree: 8%
 
 ---
 
-# Beispieldaten nach Adobe Experience Platform importieren
+# Importieren von Beispieldaten nach Adobe Experience Platform
 
 Erfahren Sie, wie Sie eine Experience Platform-Sandbox-Umgebung mit Beispieldaten einrichten. Mithilfe einer Postman-Sammlung können Sie Feldergruppen, Schemata und Datensätze erstellen und dann Beispieldaten in Experience Platform importieren.
 
@@ -25,22 +26,21 @@ Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Lum
 
 >[!NOTE]
 >
->Das Endergebnis dieses Tutorials ist eine Sandbox mit ähnlichen Daten wie die [Tutorial zu den ersten Schritten mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Sie wurde im April 2023 aktualisiert, um die [Herausforderungen für Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de).
+>Das Endergebnis dieses Tutorials ist eine Sandbox mit ähnlichen Daten wie die [Tutorial zu den ersten Schritten mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Sie wurde im April 2023 aktualisiert, um die [Herausforderungen für Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de). Es wurde im Juni 2023 aktualisiert, um die Authentifizierungsmethode auf OAuth umzustellen.
 
 
 ## Voraussetzungen
 
-* Sie haben Zugriff auf Experience Platform-APIs und können sich authentifizieren. Wenn nicht, lesen Sie bitte diesen Abschnitt [Tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=de).
+* Sie haben Zugriff auf Experience Platform-APIs und können sich authentifizieren. Wenn nicht, überprüfen Sie dies [Tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=de).
 * Sie haben Zugriff auf eine Sandbox zur Entwicklung von Experience Platformen.
 * Sie kennen Ihre Experience Platform-Mandanten-ID. Sie können sie abrufen, indem Sie eine authentifizierte [API-Anfrage](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)
-oder extrahieren Sie sie aus der URL, wenn Sie sich bei Ihrem Platform-Konto anmelden. In der folgenden URL lautet der Mandant beispielsweise &quot;
-`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
+oder extrahieren Sie sie aus der URL, wenn Sie sich bei Ihrem Platform-Konto anmelden. In der folgenden URL lautet der Mandant beispielsweise &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
-## Verwenden von Postman {#postman}
+## Verwenden [!DNL Postman] {#postman}
 
 ### Umgebungsvariablen einrichten
 
-Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die [Postman](https://www.postman.com/downloads/) Anwendung.  Los geht‘s!
+Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die [Postman](https://www.postman.com/downloads/) Anwendung. Los geht‘s!
 
 1. Laden Sie die [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) -Datei, die alle für dieses Tutorial erforderlichen Dateien enthält.
 
@@ -49,9 +49,9 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die [Postman](ht
    >Benutzerdaten, die in der Variablen [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) -Datei ist fiktiv und nur zu Demonstrationszwecken verwendet.
 
 1. Verschieben Sie die Datei `platform-utils-main.zip` aus dem Downloads-Ordner an den gewünschten Speicherort auf Ihrem Computer und entpacken Sie sie.
-1. Im `luma-data` Ordner, öffnen Sie alle `json` -Dateien in einem Texteditor und ersetzen Sie alle Instanzen von `_yourOrganizationID` mit Ihrer eigenen Mandanten-ID, der ein Unterstrich vorangestellt ist.
-1. Öffnen `luma-offline-purchases.json` und `luma-web-events.json` in einem Texteditor verwenden und alle Zeitstempel so aktualisieren, dass die Ereignisse im letzten Monat eintreten (suchen Sie beispielsweise nach `"timestamp":"2022-11` und ersetzen Jahr und Monat)
-1. Notieren Sie den Speicherort des entpackten Ordners, wie Sie ihn später bei der Einrichtung der `FILE_PATH` Postman-Umgebungsvariable:
+1. Im `luma-data` Ordner, öffnen Sie alle `json` -Dateien in einem Texteditor und ersetzen Sie alle Instanzen von `_yourTenantId` mit Ihrer eigenen Mandanten-ID, der ein Unterstrich vorangestellt ist.
+1. Öffnen `luma-offline-purchases.json`, `luma-inventory-events.json`und `luma-web-events.json` in einem Texteditor verwenden und alle Zeitstempel so aktualisieren, dass die Ereignisse im letzten Monat eintreten (suchen Sie beispielsweise nach `"timestamp":"2022-11` und ersetzen Jahr und Monat)
+1. Notieren Sie den Speicherort des entpackten Ordners, wie Sie ihn später bei der Einrichtung der `FILE_PATH` [!DNL Postman] Umgebungsvariable:
 
    >[!NOTE]
    > Um den Dateipfad auf Ihrem Mac abzurufen, navigieren Sie zum `platform-utils-main` Ordner, klicken Sie mit der rechten Maustaste auf den Ordner und wählen Sie **Informationen abrufen** -Option.
@@ -63,16 +63,16 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die [Postman](ht
    > 
    > ![Windows-Dateipfad](../assets/data-generator/images/windows-file-path.png)
 
-1. Öffnen Sie Postman und erstellen Sie einen neuen Arbeitsbereich über die **Arbeitsbereiche** Dropdown-Menü:\
+1. Öffnen [!DNL Postman] und erstellen Sie einen Arbeitsbereich aus dem **Arbeitsbereiche** Dropdown-Menü:\
    ![Arbeitsbereich erstellen](../assets/data-generator/images/create-workspace.png)
-1. Geben Sie einen **Name** und optional **Zusammenfassung** für Ihren Arbeitsbereich und klicken Sie auf **Arbeitsbereich erstellen**. Postman wechselt bei der Erstellung zu Ihrem neuen Arbeitsbereich.
+1. Geben Sie einen **Name** und optional **Zusammenfassung** für Ihren Arbeitsbereich und klicken Sie auf **Arbeitsbereich erstellen**. [!DNL Postman] Wechselt beim Erstellen zu Ihrem neuen Arbeitsbereich.
    ![Arbeitsbereich speichern](../assets/data-generator/images/save-workspace.png)
-1. Passen Sie jetzt einige Einstellungen an, um die Postman-Sammlungen in diesem Arbeitsbereich auszuführen. Klicken Sie in der Kopfzeile von Postman auf das Zahnradsymbol und wählen Sie **Einstellungen** , um das Einstellungs-Modal zu öffnen. Sie können auch den Tastaturbefehl (CMD/STRG + , ) verwenden, um das Modal zu öffnen.
+1. Passen Sie jetzt einige Einstellungen an, um die [!DNL Postman] Sammlungen in diesem Arbeitsbereich. In der Kopfzeile von [!DNL Postman], klicken Sie auf das Zahnradsymbol und wählen Sie **Einstellungen** , um das Einstellungs-Modal zu öffnen. Sie können auch den Tastaturbefehl (CMD/STRG + , ) verwenden, um das Modal zu öffnen.
 1. Unter dem `General` -Tab, aktualisieren Sie den Anforderungstimeout in ms auf `5000 ms` und aktivieren `allow reading file outside this directory`
    ![Einstellungen](../assets/data-generator/images/settings.png)
 
    >[!NOTE]
-   > Wenn Dateien aus dem Arbeitsverzeichnis geladen werden, wird sie geräteübergreifend reibungslos ausgeführt, wenn dieselben Dateien auf den anderen Geräten gespeichert werden. Wenn Sie jedoch Dateien von außerhalb des Arbeitsverzeichnisses ausführen möchten, muss eine Einstellung aktiviert sein, um denselben Intent anzugeben. Wenn `FILE_PATH` nicht mit dem Arbeitsordnerpfad von Postman übereinstimmt, sollte diese Option aktiviert sein.
+   > Wenn Dateien aus dem Arbeitsverzeichnis geladen werden, wird sie geräteübergreifend reibungslos ausgeführt, wenn dieselben Dateien auf den anderen Geräten gespeichert werden. Wenn Sie jedoch Dateien von außerhalb des Arbeitsverzeichnisses ausführen möchten, muss eine Einstellung aktiviert sein, um denselben Intent anzugeben. Wenn `FILE_PATH` ist nicht dasselbe wie das [!DNL Postman]den Arbeitsverzeichnispfad festgelegt hat, sollte diese Option aktiviert sein.
 
 1. Schließen Sie die **Einstellungen** Bereich.
 1. Wählen Sie die **Umgebungen** und wählen Sie **Import**:
@@ -85,14 +85,13 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die [Postman](ht
 
    * `CLIENT_SECRET`
    * `API_KEY`—`Client ID` in der Adobe Developer Console
+   * `SCOPES`
    * `TECHNICAL_ACCOUNT_ID`
-   * `META_SCOPE`
    * `IMS`
    * `IMS_ORG`—`Organization ID` in der Adobe Developer Console
-   * `PRIVATE_KEY`
    * `SANDBOX_NAME`
-   * `CONTAINER_ID`
    * `TENANT_ID`—Stellen Sie sicher, dass Sie mit einem Unterstrich führen, z. B. `_techmarketingdemos`
+   * `CONTAINER_ID`
    * `platform_end_point`
    * `FILE_PATH`—Verwenden Sie den lokalen Ordnerpfad, aus dem Sie die `platform-utils-main.zip` -Datei. Vergewissern Sie sich, dass darin der Ordnername enthalten ist, z. B. `/Users/dwright/Desktop/platform-utils-main`
 
@@ -123,11 +122,11 @@ Als Nächstes müssen Sie die Sammlungen in Postman importieren.
 
 Als Nächstes müssen Sie sich authentifizieren und ein Benutzer-Token generieren. Bitte beachten Sie, dass die in diesem Tutorial verwendeten Methoden zur Token-Generierung nur für produktionsfremde Zwecke geeignet sind. &quot;Lokales Signieren&quot;lädt eine JavaScript-Bibliothek von einem Drittanbieter-Host und das Remote-Signieren sendet den privaten Schlüssel an einen von Adoben verwalteten und verwalteten Webdienst. Während Adobe diesen privaten Schlüssel nicht speichert, sollten Produktionsschlüssel nie für andere freigegeben werden.
 
-1. Öffnen Sie die `Authentication` Sammlung, wählen Sie die `IMS: JWT Generate + Auth via User Token` POST-Anfrage und klicken Sie auf `SEND` , um sich zu authentifizieren und das Zugriffstoken abzurufen.
+1. Öffnen Sie die `0-Authentication` Sammlung, wählen Sie die `OAuth: Request Access Token` anfordern und auf `SEND` , um sich zu authentifizieren und das Zugriffstoken abzurufen.
 
    ![Kollektionsimport](../assets/data-generator/images/authentication.png)
 
-1. Überprüfen Sie die Umgebungsvariablen und beachten Sie, dass die `JWT_TOKEN` und `ACCESS_TOKEN` werden nun ausgefüllt.
+1. Überprüfen Sie die Umgebungsvariablen und beachten Sie, dass die `ACCESS_TOKEN` wird nun ausgefüllt.
 
 ### Datenimport
 
@@ -167,7 +166,7 @@ Jetzt können Sie die Daten vorbereiten und in Ihre Platform-Sandbox importieren
 
 ## Validierung
 
-Die Beispieldaten wurden so konzipiert, dass bei der Ausführung der Sammlungen Echtzeit-Kundenprofile erstellt werden, die Daten aus mehreren Systemen kombinieren. Ein gutes Beispiel dafür ist der erste Datensatz der Datensätze zu Treue, CRM und Offline-Einkäufen. Überprüfen Sie dieses Profil, um zu bestätigen, dass die Daten erfasst wurden. Im [Adobe Experience Platform-Benutzeroberfläche](https://platform.adobe.com/):
+Die Beispieldaten wurden so konzipiert, dass bei der Ausführung der Sammlungen Echtzeit-Kundenprofile erstellt werden, die Daten aus mehreren Systemen kombinieren. Ein gutes Beispiel dafür ist der erste Datensatz der Datensätze zu Treue, CRM und Offline-Einkäufen. Überprüfen Sie dieses Profil, um zu bestätigen, dass die Daten erfasst wurden. Im [Adobe Experience Platform-Benutzeroberfläche](https://experience.adobe.com/platform/):
 
 1. Navigieren Sie zu **[!UICONTROL Profile]** > **[!UICONTROL Durchsuchen]**
 1. Auswählen `Luma Loyalty Id` als **[!UICONTROL Identitäts-Namespace]**

@@ -8,9 +8,9 @@ feature: API
 kt: 4348
 thumbnail: 4348-set-up-developer-console-and-postman.jpg
 exl-id: 72b541fa-3ea1-4352-b82b-c5b79ff98491
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1320'
 ht-degree: 2%
 
 ---
@@ -38,11 +38,11 @@ Im [Berechtigungen konfigurieren](configure-permissions.md) Lektion erstellen Si
 
 ## Einrichten der Adobe Developer-Konsole
 
-Adobe Developer Console ist das Entwicklerziel für den Zugriff auf Adobe-APIs und SDKs, das Abhören von nahezu Echtzeit-Ereignissen, das Ausführen von Funktionen in Runtime oder das Erstellen von Plug-ins oder App Builder-Apps. Sie greifen damit auf die Experience Platform-API zu. Weitere Informationen finden Sie unter [Dokumentation zur Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html)
+Adobe Developer Console ist das Entwicklerziel für den Zugriff auf Adobe-APIs und SDKs, das Abhören von nahezu Echtzeit-Ereignissen, das Ausführen von Funktionen in Runtime oder das Erstellen von Plug-ins oder App Builder-Anwendungen. Sie greifen damit auf die Experience Platform-API zu. Weitere Informationen finden Sie unter [Dokumentation zur Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html)
 
 1. Erstellen Sie auf Ihrem lokalen Computer einen Ordner mit dem Namen `Luma Tutorial Assets` für Dateien, die im Tutorial verwendet werden.
 
-1. Öffnen Sie die [Adobe Developer-Konsole](https://console.adobe.io)
+1. Öffnen Sie die [Adobe Developer-Konsole](https://console.adobe.io){target="_blank"}
 
 1. Melden Sie sich an und vergewissern Sie sich, dass Sie sich in der richtigen Organisation befinden
 
@@ -50,7 +50,15 @@ Adobe Developer Console ist das Entwicklerziel für den Zugriff auf Adobe-APIs u
 
    ![Neues Projekt erstellen](assets/adobeio-createNewProject.png)
 
-1. Wählen Sie im neu erstellten Projekt die **[!UICONTROL Zum Projekt hinzufügen]** und wählen Sie **[!UICONTROL API]**
+
+1. Wählen Sie im neu erstellten Projekt die **[!UICONTROL Projekt bearbeiten]** button
+1. Ändern Sie die **[!UICONTROL Projekttitel]** nach `Luma Tutorial API Project` (Fügen Sie am Ende Ihren Namen hinzu, wenn mehrere Personen aus Ihrem Unternehmen dieses Tutorial absolvieren)
+1. Wählen Sie **[!UICONTROL Speichern]** aus
+
+   ![Konfiguration der Adobe Developer Console-Projekt-API](assets/adobeio-renameProject.png)
+
+
+1. Auswählen **[!UICONTROL API hinzufügen]**
 
    ![Konfiguration der Adobe Developer Console-Projekt-API](assets/adobeio-addAPI.png)
 
@@ -60,104 +68,64 @@ Adobe Developer Console ist das Entwicklerziel für den Zugriff auf Adobe-APIs u
 
    ![Konfiguration der Adobe Developer Console-Projekt-API](assets/adobeio-AEPAPI.png)
 
-1. Für die Authentifizierung durch externe Systeme wie [!DNL Postman], benötigen wir ein Paar aus öffentlichem/privatem Schlüssel. Um ein neues Schlüsselpaar zu generieren, wählen Sie **[!UICONTROL Option 1]**  und drücken Sie die **[!UICONTROL Generieren von keypair]** button
+1. Auswählen **[!UICONTROL OAuth Server-zu-Server]** als Berechtigung und wählen Sie **[!UICONTROL Nächste]**.
+   ![OAuth Server-zu-Server auswählen](assets/adobeio-choose-auth.png)
 
-   ![Konfiguration der Adobe Developer Console-Projekt-API](assets/adobeio-keypair.png)
-
-1. Sobald die Schlüssel fertig sind, werden Sie möglicherweise aufgefordert, die Schlüssel auf Ihren lokalen Computer herunterzuladen. Speichern Sie die in `config.zip` in den Ordner `Luma Tutorial Assets`. Wir werden sie in der nächsten Übung brauchen.
-
-
-1. Nachdem der Schlüssel generiert wurde, wird der öffentliche Schlüssel automatisch zum Projekt hinzugefügt, wie im Screenshot gezeigt. Wählen Sie die **[!UICONTROL Nächste]** Schaltfläche.
-
-   ![ Anzeigen nach der Generierung und Auswahl des Schlüssels](assets/adobeio-afterKeyIsGenerated.png)
-
-1. Wählen Sie die `Luma Tutorial Platform` Produktprofil und wählen Sie die **[!UICONTROL Konfigurierte API speichern]** button
+1. Wählen Sie die `AEP-Default-All-Users` Produktprofil und wählen Sie **[!UICONTROL Konfigurierte API speichern]**
 
    ![Profil auswählen](assets/adobeio-selectProductProfile.png)
 
 1. Jetzt wurde Ihr Entwicklerkonsole-Projekt erstellt!
 
-1. Im **[!UICONTROL Testen]** -Abschnitt der Seite, wählen Sie **[!UICONTROL Herunterladen für Postman]** und wählen Sie **[!UICONTROL Dienstkonto (JWT)]** zum Herunterladen der [!DNL Postman] Umgebungs-JSON-Datei. Speichern Sie die `service.postman_environment.json` in `Luma Tutorial Assets` Ordner.
+1. Im **[!UICONTROL Testen]** -Abschnitt der Seite, wählen Sie **[!UICONTROL Herunterladen für Postman]** und wählen Sie **[!UICONTROL OAuth Server-zu-Server]** zum Herunterladen der [!DNL Postman] Umgebungs-JSON-Datei. Speichern Sie die `oauth_server_to_server.postman_environment.json` in `Luma Tutorial Assets` Ordner.
 
 
    ![Konfiguration der Adobe Developer Console-Projekt-API](assets/adobeio-io-api.png)
 
-   >[!NOTE]
-   >
-   >Systemadministratoren Ihres Unternehmens können das Projekt als &quot;API-Berechtigung&quot;im Produktprofil in der Admin Console anzeigen.
-   >
-   >![Konfiguration der Adobe Developer Console-Projekt-API](assets/adobeio-io-integrationInAdminConsole.png)
+## Bitten Sie einen Systemadministrator, die API-Berechtigung zur Rolle hinzuzufügen.
 
-Möglicherweise ist Ihnen aufgefallen, dass dem Projekt eine Nummer zugewiesen wurde, z. B. &quot;Projekt 12&quot;:
+Damit Sie die API-Anmeldeinformationen für die Interaktion mit Experience Platform verwenden können, muss ein Systemadministrator die API-Anmeldeinformationen der in der vorherigen Lektion erstellten Rolle zuweisen.  Wenn Sie kein Systemadministrator sind, senden Sie ihnen Folgendes:
 
-1. Wählen Sie die Projektnummer im Breadcrumb aus.
-1. Wählen Sie die **[!UICONTROL Projekt bearbeiten]** button
-1. Ändern Sie die **[!UICONTROL Projekttitel]** nach `Luma Tutorial API Project` (Fügen Sie am Ende Ihren Namen hinzu, wenn mehrere Personen aus Ihrem Unternehmen dieses Tutorial absolvieren)
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**
+1. Die [!UICONTROL Name] Ihrer API-Anmeldedaten (`Credential in Luma Tutorial API Project`)
+1. Die [!UICONTROL Email für technische Konten] Ihrer Anmeldedaten (dies hilft dem Systemadministrator, die Anmeldedaten zu finden)
 
-   ![Konfiguration der Adobe Developer Console-Projekt-API](assets/adobeio-renameProject.png)
+   ![[!UICONTROL Name] und [!UICONTROL Email für technische Konten] Ihrer Anmeldedaten](assets/postman-credentialDetails.png)
 
+Hier finden Sie die Anweisungen für den Systemadministrator:
+
+1. Anmelden [Adobe Experience Platform](https://platform.adobe.com)
+1. Auswählen **[!UICONTROL Berechtigungen]** in der linken Navigation, die Sie zum [!UICONTROL Rollen] Bildschirm
+1. Öffnen Sie die `Luma Tutorial Platform` Rolle
+   ![Rolle öffnen](assets/postman-openRole.png)
+1. Wählen Sie die **[!UICONTROL API-Anmeldeinformationen]** tab
+1. Auswählen **[!UICONTROL API-Anmeldeinformationen hinzufügen]**
+   ![Berechtigung hinzufügen](assets/postman-addCredential.png)
+1. Suchen Sie die `Credential in Luma Tutorial API Project` Berechtigung, mit der [!UICONTROL Email für technische Konten] bereitgestellt vom Tutorial-Teilnehmer, wenn die Liste lang ist
+1. Berechtigung auswählen
+1. Wählen Sie **[!UICONTROL Speichern]** aus
+
+
+   ![Berechtigung hinzufügen](assets/postman-findCredential.png)
 
 ## Einrichten von Postman
 
 >[!CAUTION]
 >
->Die Benutzeroberfläche von Postman wird regelmäßig aktualisiert. Die Screenshots in diesem Tutorial wurden mit Postman Version 9.0.5 für Mac erstellt, die Benutzeroberflächenoptionen wurden jedoch möglicherweise geändert.
+>Die Benutzeroberfläche von Postman wird regelmäßig aktualisiert. Die Screenshots in diesem Tutorial wurden mit Postman v10.15.1 für Mac erstellt, die Benutzeroberflächenoptionen wurden jedoch möglicherweise geändert.
 
 
 1. Herunterladen und installieren [[!DNL Postman]](https://www.postman.com/downloads/)
-1. Öffnen [!DNL Postman] und importieren Sie die heruntergeladene JSON-Umgebungsdatei, `service.postman_environment.json`
+1. Öffnen [!DNL Postman] und erstellen Sie einen Arbeitsbereich
+   ![Importumgebung](assets/postman-createWorkspace.png)
+
+1. Importieren Sie die heruntergeladene JSON-Umgebungsdatei, `oauth_server_to_server.postman_environment.json`
    ![Importumgebung](assets/postman-importEnvironment.png)
 1. In [!DNL Postman], wählen Sie Ihre Umgebung im Dropdown-Menü aus.
 
+1. Wählen Sie das Symbol aus, um die Umgebungsvariablen anzuzeigen:
+
    ![Umgebung ändern](assets/postman-changeEnvironment.png)
-1. Wählen Sie die **Auge** -Symbol, um die Umgebungsvariablen anzuzeigen:
 
-   ![Konfiguration der Adobe Developer Console-Projekt-API](assets/postman-PostmanEnvironment.png)
-
-### Aktualisieren des Umgebungsnamens
-
-Da der exportierte Name der Umgebung aus der Developer Console zufällig generiert wird, geben Sie ihr einen beschreibenden Namen, damit Sie Umgebungen später nicht verwirren, wenn Sie mit der eigentlichen Platform-Implementierung beginnen:
-
-1. Wenn der Bildschirm &quot;Umgebungsvariablen&quot;noch geöffnet ist, wählen Sie **Bearbeiten** oben rechts
-1. Aktualisieren Sie die **Umgebungsname** nach `Luma Tutorial`
-1. Urlaub **Verwalten von Umgebungen** Modal im Bearbeitungsmodus öffnen, da wir sie im nächsten Schritt weiter bearbeiten werden
-
-   ![Aktualisieren des Postman-Umgebungsnamens](assets/postman-updateEnvName.png)
-
-### Privaten Schlüssel hinzufügen
-
-Jetzt ist es an der Zeit, den Wert PRIVATE_KEY zur Postman-Umgebung hinzuzufügen
-
-1. Heruntergeladene Daten extrahieren `config.zip` -Datei, die in der vorherigen Übung beim Erstellen des Developer Console-Projekts generiert wurde. Diese ZIP-Datei enthält zwei Dateien:
-   * `private.key`
-   * `certificate_pub.crt`
-1. Öffnen Sie die `private.key` in einen Texteditor einfügen und den Inhalt kopieren.
-1. In Postman im **Verwalten von Umgebungen** > **Bearbeiten** -Modal, das nach der letzten Übung noch geöffnet ist, kopieren Sie die kopierten Werte vor **PRIVATE_KEY** im **Anfangswert** und **Aktueller Wert** Spalten.
-1. Wählen Sie **Speichern** aus
-
-   ![In Postman eingefügter privater Schlüssel](assets/postman-privateKey.png)
-
-### JWT- und Zugriffstoken hinzufügen
-
-Adobe bietet eine umfangreiche Auswahl an [!DNL Postman] Sammlungen, die Ihnen bei der Erforschung der API von Experience Platform helfen. Diese Sammlungen befinden sich im [Adobe Experience Platform Postman-Beispiele für GitHub-Repository](https://github.com/adobe/experience-platform-postman-samples). Sie sollten dieses Repo mit einem Lesezeichen versehen, da Sie es in diesem Tutorial und später bei der Implementierung der Experience Platform für Ihr eigenes Unternehmen mehrmals verwenden werden.
-
-Die erste Sammlung funktioniert mit den Adobe Identity Management Service (IMS)-APIs. Dies ist eine praktische Möglichkeit, JWT_TOKEN und ACCESS_TOKEN aus Postman zu füllen. *für nicht produktionsfremde Anwendungsfälle* z. B. dieses Tutorial in Ihrer Sandbox absolvieren. Alternativ kann das JWT-Token in der Adobe Developer-Konsole generiert werden. Da diese Sammlung jedoch regelmäßig abläuft, können Sie sie mit dieser Sammlung aktualisieren, ohne die Adobe Developer-Konsole erneut aufrufen zu müssen, während Sie dieses Tutorial absolvieren.
-
->[!WARNING]
->
->Wie im Abschnitt [Adobe Identity Management Service APIs - README](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims), sind die angegebenen Erzeugungsmethoden für die Verwendung ohne Produktionscharakter geeignet. &quot;Lokales Signieren&quot;lädt eine JavaScript-Bibliothek von einem Drittanbieter-Host und das Remote-Signieren sendet den privaten Schlüssel an einen von Adoben verwalteten und verwalteten Webdienst. Während Adobe diesen privaten Schlüssel nicht speichert, sollten Produktionsschlüssel nie für andere freigegeben werden.
-
-So generieren Sie die Token:
-
-1. Laden Sie die [Erfassung von Zugriffstoken für die Entwicklerkonsole](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/ims/Identity%20Management%20Service.postman_collection.json) auf `Luma Tutorial Assets` Ordner
-1. Importieren Sie die Sammlung in [!DNL Postman]
-1. Anforderung auswählen **IMS: JWT-Generierung + Auth über Benutzer-Token** und wählen Sie **Senden**
-
-   ![Token anfordern](assets/postman-requestToken.png)
-1. Die **JWT_TOKEN** und **ACCESS_TOKEN** automatisch in die Umgebungsvariablen von [!DNL Postman].
-
-   ![Postman](assets/postman-config.png)
 
 ### Sandbox-Name und Mandanten-ID hinzufügen
 
@@ -186,7 +154,30 @@ Die `SANDBOX_NAME` und `TENANT_ID` und `CONTAINER_ID` -Variablen sind nicht im A
    ![Die Felder SANDBOX_NAME, TENANT_ID und CONTAINER_ID wurden als Umgebungsvariablen hinzugefügt](assets/postman-addEnvFields.png)
 
 
-## Einrichten eines Platform-API-Aufrufs
+
+## API-Aufrufe erstellen
+
+### Zugriffstoken abrufen
+
+Adobe bietet eine umfangreiche Auswahl an [!DNL Postman] Sammlungen, die Ihnen bei der Erforschung der API von Experience Platform helfen. Diese Sammlungen befinden sich im [Adobe Experience Platform Postman-Beispiele für GitHub-Repository](https://github.com/adobe/experience-platform-postman-samples). Sie sollten dieses Repo mit einem Lesezeichen versehen, da Sie es in diesem Tutorial und später bei der Implementierung der Experience Platform für Ihr eigenes Unternehmen mehrmals verwenden werden.
+
+Die erste Sammlung funktioniert mit den Adobe Identity Management Service (IMS)-APIs. Dies ist eine praktische Methode, um ein Zugriffstoken aus Postman abzurufen.
+
+So generieren Sie das Zugriffstoken:
+
+1. Laden Sie die [Erfassung von Identity Management Service-APIs](https://github.com/adobe/experience-platform-postman-samples/blob/master/apis/ims/Identity%20Management%20Service.postman_collection.json) auf `Luma Tutorial Assets` Ordner
+1. Importieren Sie die Sammlung in [!DNL Postman]
+1. Anforderung auswählen **oAuth: Zugriffstoken anfordern** Anforderung und Auswahl **Senden**
+1. Sie sollten eine `200 OK` Antwort mit einem Zugriffstoken in der Antwort
+
+   ![Token anfordern](assets/postman-requestToken.png)
+
+1. Das Zugriffstoken sollte automatisch als **ACCESS_TOKEN** Umgebungsvariable Ihres [!DNL Postman] Umgebung.
+
+   ![Postman](assets/postman-config.png)
+
+
+### Interagieren mit einer Platform-API
 
 Nehmen wir nun einen Platform-API-Aufruf vor, um zu bestätigen, dass wir alles korrekt konfiguriert haben.
 
@@ -196,12 +187,12 @@ Nehmen wir nun unseren ersten API-Aufruf vor:
 
 1. Laden Sie die [Schema Registry-API-Sammlung](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json) auf `Luma Tutorial Assets` Ordner
 1. Importieren in [!DNL Postman]
-1. Öffnen **Schema Registry-API > Klassen > Listenklassen**
+1. Öffnen **Schema Registry-API > Schemas > Schemas auflisten**
 1. Sehen Sie sich die **Parameter** und **Kopfzeilen** -Tabs und beachten Sie, dass sie einige der zuvor eingegebenen Umgebungsvariablen enthalten.
 1. Beachten Sie Folgendes: **Kopfzeilen > Wertefeld akzeptieren** auf `application/vnd.adobe.xed-id+json`. Für die Schema Registry-APIs ist eine dieser Voraussetzungen erforderlich [angegebene Accept-Kopfzeilenwerte](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) , die unterschiedliche Formate in der Antwort bereitstellen.
 1. Auswählen **Senden** , um Ihren ersten Platform-API-Aufruf durchzuführen!
 
-Hoffentlich haben Sie einen erfolgreichen `200 OK` Antwort mit einer Liste der verfügbaren Standard-XDM-Klassen in Ihrer Sandbox, wie unten dargestellt.
+Hoffentlich haben Sie einen erfolgreichen `200 OK` Antwort mit einer Liste der verfügbaren von der Adobe bereitgestellten XDM-Schemas in Ihrer Sandbox, wie unten dargestellt.
 
 ![Erster API-Aufruf in Postman](assets/postman-firstAPICall.png)
 

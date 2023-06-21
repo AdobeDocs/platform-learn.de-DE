@@ -8,10 +8,10 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 2%
+source-wordcount: '1103'
+ht-degree: 3%
 
 ---
 
@@ -68,7 +68,6 @@ Beginnen wir mit der einfachen Aufgabe, ein Schema zu aktivieren:
    > 1. Daten erneut verwenden
 
 
-
    ![Profil-Umschalter](assets/profile-loyalty-enableSchema.png)
 
 Einfach richtig? Wiederholen Sie die obigen Schritte für dieses andere Schema:
@@ -86,7 +85,7 @@ Jetzt ist es an der Zeit, die `Luma CRM Schema` mit der API. Wenn Sie diese Übu
 Zunächst wollen wir die `meta:altId` des `Luma CRM Schema`:
 
 1. Öffnen [!DNL Postman]
-1. Wenn Sie in den letzten 24 Stunden keine Anfrage gestellt haben, sind Ihre Autorisierungstoken wahrscheinlich abgelaufen. Anfrage öffnen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** und wählen Sie **Senden** , um neue JWT- und Zugriffstoken anzufordern, genau wie Sie dies in der [!DNL Postman] Lektion.
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern, genau wie Sie es in der [!DNL Postman] Lektion.
 1. Anfrage öffnen **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Wählen Sie die **Senden** button
 1. Sie sollten eine 200-Antwort erhalten
@@ -147,14 +146,14 @@ Jetzt aktivieren Sie einen Datensatz für Profil mithilfe der API. Auch wenn Sie
 Zuerst müssen wir die `id` des `Luma CRM Dataset`:
 
 1. Öffnen [!DNL Postman]
-1. Wenn Sie in den letzten 24 Stunden keine Anfrage gestellt haben, sind Ihre Autorisierungstoken wahrscheinlich abgelaufen. Anfrage öffnen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** und wählen Sie **Senden** , um neue JWT- und Zugriffstoken anzufordern, genau wie Sie dies in der [!DNL Postman] Lektion.
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern, genau wie Sie es in der [!DNL Postman] Lektion.
 1. Anfrage öffnen **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
 1. Wählen Sie die **Senden** button
 1. Sie sollten eine 200-Antwort erhalten
 1. Suchen Sie in der Antwort nach der `Luma CRM Dataset` -Element und kopieren Sie die ID:
    ![ID kopieren](assets/profile-crm-copyDatasetId.png)
 
-### Datensatz aktivieren
+### Aktivieren des Datensatzes
 
 Nachdem wir nun die ID des Datensatzes haben, können wir ihn für das Profil aktivieren:
 
