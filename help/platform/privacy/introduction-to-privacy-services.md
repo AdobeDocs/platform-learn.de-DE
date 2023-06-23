@@ -3,10 +3,10 @@ title: Einführung in Privacy Service
 description: Erfahren Sie mehr über Datenschutzbestimmungen und deren Auswirkungen auf Datenvorgänge. Erfahren Sie außerdem, wie Privacy Service mit diesen Herausforderungen umgeht.
 role: Data Engineer, Data Architect
 feature: Privacy
-kt: 7713
+jira: KT-7713
 thumbnail: 336074.png
 exl-id: ead028e3-8bdd-406e-8176-1b250809ce94
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 10%

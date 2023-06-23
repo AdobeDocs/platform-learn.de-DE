@@ -1,11 +1,12 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Erstellen einer Datenansicht
 description: Customer Journey Analytics - Erstellen einer Datenansicht
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 402e032fe150745893528ffbd6a01533f30fb5d6
+exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 3%
@@ -117,7 +118,7 @@ Lassen Sie den Seitennamen als Eigenschaft. Daher müssen Sie keine **Persistenz
 
 | Komponentenname zur Suche | Neuer Name | Persistenz-Einstellungen |
 | ----------------- |-------------| --------------------| 
-| Name (web.webPageDetails.name) | Page Name |  |
+| Name (web.webPageDetails.name) | Seitenname |          |
 
 Wählen Sie als Nächstes die Dimension aus **phoneNumber** und legen Sie es auf der Arbeitsfläche ab. Der neue Name sollte **Telefonnummer**.
 
@@ -145,7 +146,7 @@ Suchen Sie im Menü auf der linken Seite nach `web.webPageDetails.pageViews.valu
 
 | Komponentenname zur Suche | Neuer Name | Attributionseinstellungen |
 | ----------------- |-------------| --------------------| 
-| web.webPageDetails.pageViews.value | Page Views |  |
+| web.webPageDetails.pageViews.value | Seitenansichten |         |
 
 ![Demo](./images/7-v2.png)
 
@@ -161,28 +162,28 @@ Als Nächstes müssen Sie viele Dimensionen und Metriken konfigurieren, wie in d
 | Komponentenname zur Suche | Neuer Name | Persistenz-Einstellungen |
 | ----------------- |-------------| --------------------| 
 | brandName | Markenname | Zuletzt verwendete Sitzung |
-| Rückruf | Rufempfindlichkeit |  |
-| Aufruf-ID | Interaktionstyp aufrufen |  |
+| Rückruf | Rufempfindlichkeit |          |
+| Aufruf-ID | Interaktionstyp aufrufen |          |
 | callTopic | Anrufthema | Zuletzt verwendete Sitzung |
 | ecid | ECID | Zuletzt verwendet, Person (Berichtsfenster) |
-| email | Email ID | Zuletzt verwendet, Person (Berichtsfenster) |
-| Zahlungsart | Zahlungsart |  |
+| E-Mail | Email ID | Zuletzt verwendet, Person (Berichtsfenster) |
+| Zahlungsart | Zahlungsart |          |
 | Methode zum Hinzufügen von Produkten | Methode zum Hinzufügen von Produkten | Zuletzt verwendete Sitzung |
-| Ereignistyp | Ereignistyp |  |
-| Name (productListItems.name) | Produktname |  |
+| Ereignistyp | Ereignistyp |         |
+| Name (productListItems.name) | Produktname |         |
 | SKU | SKU (Sitzung) | Zuletzt verwendete Sitzung |
-| Transaction ID | Transaction ID |  |
-| URL (web.webPageDetails.URL) | URL |  |
+| Transaction ID | Transaction ID |         |
+| URL (web.webPageDetails.URL) | URL |         |
 | Benutzeragent | Benutzeragent | Zuletzt verwendete Sitzung |
-| usw | Treuestufe |  |
-| Punkte | Kundenlebenszeitwert |  |
+| usw | Treuestufe |          |
+| Punkte | Kundenlebenszeitwert |          |
 
 ### METRIKEN
 
 | Komponentenname zur Suche | Neuer Name | Attributionseinstellungen |
 | ----------------- |-------------| --------------------| 
-| Menge | Menge |  |
-| commerce.order.priceTotal | Umsatz |  |
+| Menge | Menge |          |
+| commerce.order.priceTotal | Umsatz |         |
 
 Ihre Konfiguration sollte dann wie folgt aussehen:
 

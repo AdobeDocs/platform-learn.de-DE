@@ -5,10 +5,10 @@ breadcrumb-title: Abonnieren von Datenerfassungsereignissen
 description: In dieser Lektion abonnieren Sie Datenerfassungsereignisse, indem Sie einen Webhook mit der Adobe Developer Console und ein Online-Webhook-Entwicklungstool einrichten. Sie werden diese Ereignisse verwenden, um den Status Ihrer Datenerfassungsaufträge in den nachfolgenden Lektionen zu überwachen.
 role: Data Engineer
 feature: Data Management
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 5%
@@ -50,7 +50,7 @@ In dieser Übung erstellen wir einen Webhook mit einem Online-Tool namens webhoo
 
    ![Antwort bearbeiten](assets/ioevents-webhook-editResponse.png)
 
-## Setup
+## Einrichten
 
 1. Öffnen Sie auf einer anderen Browser-Registerkarte die [Adobe Developer-Konsole](https://console.adobe.io/)
 1. Öffnen Sie Ihre `Luma Tutorial API Project`

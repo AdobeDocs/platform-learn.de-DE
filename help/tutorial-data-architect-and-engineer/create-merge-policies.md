@@ -5,13 +5,13 @@ breadcrumb-title: Zusammenführungsrichtlinien erstellen
 description: In dieser Lektion erstellen Sie Zusammenführungsrichtlinien, um zu bestimmen, wie Daten zu Profilen zusammengeführt werden.
 role: Data Architect, Data Engineer
 feature: Profiles
-kt: 4348
+jira: KT-4348
 audience: data architect
 doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 1%
@@ -73,8 +73,8 @@ Was passiert, wenn Ihnen diese standardmäßige Zusammenführungsrichtlinie nich
 1. Drag &amp; Drop `Luma Loyalty Dataset` und `Luma CRM Dataset` der **[!UICONTROL Datensatz]** Bereich.
 1. Stellen Sie sicher `Luma Loyalty Dataset` befindet sich oben, indem Sie sie per Drag-and-Drop über dem `Luma CRM Dataset`
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**
-<!--do i need to explain Private Graph? Is that GA?-->
-![Zusammenführungsrichtlinie](assets/mergepolicies-newPolicy.png)
+   <!--do i need to explain Private Graph? Is that GA?-->
+   ![Zusammenführungsrichtlinie](assets/mergepolicies-newPolicy.png)
 
 ## Validieren der Zusammenführungsrichtlinie
 

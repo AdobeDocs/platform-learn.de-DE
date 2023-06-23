@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials
 user-guide-description: Lernen Sie die vielen Komponenten von Experience Platform kennen.
 audience: all
 doc-type: video
-source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
+source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 41%
+source-wordcount: '937'
+ht-degree: 43%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 41%
 + Data Governance {#data-governance}
    + [Übersicht](/help/platform/governance/understanding-data-governance.md)
    + [End-to-End-Demo](/help/platform/governance/introduction-to-data-governance.md)
-   + [Daten mithilfe von Bezeichnungen klassifizieren](/help/platform/governance/classify-data-using-labels.md)
+   + [Klassifizieren von Daten mithilfe von Kennzeichnungen](/help/platform/governance/classify-data-using-labels.md)
    + [Erstellen von Richtlinien zur Datennutzung](/help/platform/governance/create-data-usage-policies.md)
    + [Durchsetzen von Richtlinien zur Datennutzung](/help/platform/governance/enforce-data-usage-policies.md)
    + [Zustimmung erzwingen](/help/platform/governance/enforce-consent.md)
@@ -183,7 +183,7 @@ ht-degree: 41%
    + [Erstellen von Segmenten mit mehreren Entitäten](/help/platform/segments/create-multi-entity-segments.md)
    + [Segmente mit B2B-Daten erstellen](/help/platform/segments/create-segments-with-b2b-data.md)
    + [Demo der Streaming-Segmentierung](/help/platform/segments/streaming-segmentation-demo.md)
-   + [Bewerten eines Segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [Bewerten eines Segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=de){target="_blank"}
    + [Erstellen eines Datensatzes zum Exportieren von Daten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [Einrichten der Segment Match-Verbindung](/help/platform/segments/segment-match-connection-setup.md)
    + [Data Governance bei Segment Match](/help/platform/segments/segment-match-data-governance.md)
@@ -203,7 +203,7 @@ ht-degree: 41%
    + [Nächste Hit-Personalisierung mit Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud-Integrationen {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Kampagnen mit Marketo Engage koordinieren](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Kampagnen mit Marketo Engage koordinieren](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
 + Trends in der Branche {#industry}
    + [Die Zukunft des Daten-Managements und die sich verändernde Umgebung](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Eine Geschichte von zwei Wahrnehmungen – Marken vs. Verbraucher](/help/platform/industry/brands-vs-consumers.md)

@@ -3,10 +3,10 @@ title: Einbinden von Daten in das Echtzeit-Kundenprofil
 description: Das Echtzeit-Kundenprofil ermöglicht die umfassende Personalisierung von Kanälen in jeder Phase der Customer Journey. Batch- oder Streaming-Daten können für das Echtzeit-Kundenprofil aktiviert werden, indem sowohl das Schema als auch der entsprechende Datensatz aktiviert werden.
 role: Data Architect, Data Engineer
 feature: Profiles
-kt: 2702
+jira: KT-2702
 thumbnail: 27301.jpg
 exl-id: fc7aad9e-8eaf-4101-b41e-a0d9b127f8be
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 27%

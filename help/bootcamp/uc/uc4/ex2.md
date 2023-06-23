@@ -1,11 +1,12 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Adobe Experience Platform-Datensätze in Customer Journey Analytics verbinden
 description: Bootcamp - Customer Journey Analytics - Adobe Experience Platform-Datensätze in Customer Journey Analytics verbinden
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
+exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 3%
@@ -105,9 +106,9 @@ Sobald Sie die drei Datensätze zugeordnet haben, können wir fortfahren.
 
 | Datensatz | Personen-ID |
 | ----------------- |-------------| 
-| Demosystem - Ereignis-Datensatz für Website (Global v1.1) | email |
-| Demosystem - Profildatensatz für Treueprogramm (Global v1.1) | email |
-| Demosystem - Ereignis-Datensatz für das Callcenter (Global v1.1) | email |
+| Demosystem - Ereignis-Datensatz für Website (Global v1.1) | E-Mail |
+| Demosystem - Profildatensatz für Treueprogramm (Global v1.1) | E-Mail |
+| Demosystem - Ereignis-Datensatz für das Callcenter (Global v1.1) | E-Mail |
 
 Sie müssen außerdem sicherstellen, dass diese Optionen für jeden Datensatz aktiviert sind:
 

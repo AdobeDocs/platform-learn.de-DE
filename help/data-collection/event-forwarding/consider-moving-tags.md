@@ -3,11 +3,11 @@ title: Erwägen Sie, Anbieter-Tags zur Ereignisweiterleitung zu verschieben.
 description: Erfahren Sie, wie Sie ein Client-seitiges Anbieter-Tag für die serverseitige Datenverteilung auswerten.
 feature: Event Forwarding, Tags, Integrations
 solution: Data Collection
-kt: 9921
+jira: KT-9921
 level: Intermediate, Experienced
 role: Admin, Developer, Architect
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 6%
@@ -102,6 +102,6 @@ Die Untersuchung und Prüfung von Anbieter-API-Endpunkten ist mit Tools wie [Pos
 
 Dieser Artikel enthält eine Reihe von Schritten zum Auswerten eines clientseitigen Tags eines Anbieters und zum möglichen Verschieben dieses Tags serverseitig in eine Ereignisweiterleitungseigenschaft. Weitere Informationen zu verwandten Themen finden Sie unter diesen Links:
 
-- [Tag-Management](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) in Adobe Experience Platform
+- [Tag-Management](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) in Adobe Experience Platform
 - [Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) für die serverseitige Verarbeitung
-- [Aktualisierungen der Terminologie](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) in der Datenerfassung
+- [Aktualisierungen der Terminologie](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=de) in der Datenerfassung

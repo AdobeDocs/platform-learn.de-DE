@@ -1,10 +1,11 @@
 ---
 title: CSC Bootcamp - Referenzmaterial
 description: Interessante Ausgangspunkte, die Ihnen helfen, die Themen, die in diesem Bootcamp behandelt werden, besser zu verstehen.
-kt: 5342
+jira: KT-5342
 doc-type: tutorial
 activity: develop
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 8dda3ba5-ad68-41b7-b247-aedb217256a4
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%

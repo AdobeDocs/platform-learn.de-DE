@@ -2,10 +2,10 @@
 title: Erstellen einer Ereignisweiterleitungs-Eigenschaft
 description: Erfahren Sie, wie Sie eine Ereignisweiterleitungs-Eigenschaft in der Datenerfassung erstellen.
 feature: Event Forwarding
-kt: 6420
+jira: KT-6420
 thumbnail: 331938.jpeg
 exl-id: 63a578d3-1220-4588-b289-7310f4905d52
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 17%
@@ -23,7 +23,6 @@ Erfahren Sie, wie Sie eine Ereignisweiterleitungs-Eigenschaft in der Datenerfass
 > * platform launch (Client-seitig) ist jetzt **[!DNL tags]**
 > * platform launch Server Side ist jetzt **[!DNL event forwarding]**
 > * Edge-Konfigurationen sind jetzt verfügbar **[!DNL datastreams]**
-
 
 >[!VIDEO](https://video.tv.adobe.com/v/331938?quality=12&learn=on)
 

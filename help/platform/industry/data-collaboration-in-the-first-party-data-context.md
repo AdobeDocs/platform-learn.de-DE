@@ -6,12 +6,12 @@ role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 337665.jpg
-kt: 9145
+jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 27%
+ht-degree: 29%
 
 ---
 
@@ -21,7 +21,7 @@ Bereitstellung von Erlebnissen trotz eingeschränkten Datenzugriffs. Unabhängig
 
 >[!VIDEO](https://video.tv.adobe.com/v/337665/?quality=12&learn=on)
 
-## Wichtige Vorteile:
+## Wichtige Schlussfolgerungen:
 
 * So integrieren Sie Datenzusammenarbeitsmodelle mit Zustimmung des Verbrauchers in den Erstanbieterdatenkontext.
 * Erstellen von Marken-zu-Marke- und Herausgeber-direkten Partnerschaften, die das Erlebnisversprechen einhalten.
@@ -29,7 +29,7 @@ Bereitstellung von Erlebnissen trotz eingeschränkten Datenzugriffs. Unabhängig
 
 ## Zusätzliche Informationen
 
-[Übersicht über Segmentübereinstimmungen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match.html?lang=en)
+[Übersicht zu Segment Match](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match.html?lang=en)
 
 [Audience Marketplace für Datenkäufer](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
 

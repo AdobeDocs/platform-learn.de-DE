@@ -5,13 +5,13 @@ breadcrumb-title: Abfragen ausführen
 description: In dieser Lektion erfahren Sie, wie Sie Abfragen einrichten, schreiben und ausführen, um die erfassten Daten zu validieren.
 role: Data Architect, Data Engineer
 feature: Queries
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -119,7 +119,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## Weitere Ressourcen
 
-* [Dokumentation zu Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de)
+* [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de)
 * [Query Service-API-Referenz](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
 Und nun zur abschließenden praktischen Lektion: [Segmente erstellen](build-segments.md)!

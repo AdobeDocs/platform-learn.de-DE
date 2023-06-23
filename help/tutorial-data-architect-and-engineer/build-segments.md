@@ -5,13 +5,13 @@ breadcrumb-title: Erstellen von Segmenten
 description: In dieser Lektion erstellen wir einige Segmente basierend auf den Profildaten, die wir in den vorherigen Lektionen erfasst haben.
 role: Data Architect
 feature: Data Governance
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -67,7 +67,6 @@ In dieser Übung erstellen wir ein Segment für Kunden, die dasselbe Produkt inn
 1. Ziehen Sie die **[!UICONTROL Käufe]** Ereignistyp auf der Arbeitsfläche _zwei separate_
 1. Wählen Sie das Uhrensymbol zwischen den beiden **[!UICONTROL Käufe]** Ereignisse und wählen Sie &quot;innerhalb von 30 Tagen&quot;aus.
 1. Überprüfen Sie, ob Ihre Segmentdefinition an dieser Stelle wie folgt lautet: **&quot;Schließen Sie Zielgruppe ein, die mindestens 1 Kaufereignis hat und dann innerhalb von 30 Tagen mindestens 1 Kaufereignis hat.&quot;**
-
    ![Zwei Käufe innerhalb von 30 Tagen](assets/segment-twoPurchases.png)
 1. Ändern Sie jetzt den Ereignisfilter in `sku`
 1. Ziehen Sie das SKU-Feld zum zweiten Kaufereignis

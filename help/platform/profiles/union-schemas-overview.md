@@ -3,10 +3,10 @@ title: Übersicht über Vereinigungsschemas
 description: Das Echtzeit-Kundenprofil ermöglicht die umfassende Personalisierung von Kanälen in jeder Phase der Customer Journey. Batch- oder Streaming-Daten können für das Echtzeit-Kundenprofil aktiviert werden, indem sowohl das Schema als auch der entsprechende Datensatz aktiviert werden.
 role: Data Architect, Data Engineer
 feature: Profiles
-kt: 6754
+jira: KT-6754
 thumbnail: 329940.jpg
 exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 19%

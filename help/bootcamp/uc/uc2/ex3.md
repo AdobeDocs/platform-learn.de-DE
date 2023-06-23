@@ -1,12 +1,12 @@
 ---
 title: Bootcamp - Journey Optimizer Erstellen Ihrer Journey- und E-Mail-Nachricht
 description: Bootcamp - Journey Optimizer Erstellen Ihrer Journey- und E-Mail-Nachricht
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: f018e3aae714879de0cccb3a47b1f2242b57abc1
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 5%
@@ -99,7 +99,7 @@ Suchen Sie abschließend die **Vorname** und klicken Sie auf **+** daneben unter
 
 ![Journey Optimizer](./images/msg9.png)
 
-Fügen Sie als Nächstes den Text hinzu **, danke für die Anmeldung!**. Klicken Sie auf **Speichern**.
+Fügen Sie als Nächstes den Text hinzu **, danke für die Registrierung!**. Klicken Sie auf **Speichern**.
 
 ![Journey Optimizer](./images/msg10.png)
 

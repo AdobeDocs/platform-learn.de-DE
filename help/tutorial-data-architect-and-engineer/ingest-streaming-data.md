@@ -5,10 +5,10 @@ breadcrumb-title: Streaming-Daten erfassen
 description: In dieser Lektion streamen Sie Daten mithilfe des Web SDK an Experience Platform.
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '3346'
 ht-degree: 3%
@@ -82,7 +82,6 @@ Zuerst konfigurieren wir den Datastream. Ein Datastream teilt dem Adobe Edge-Net
 So erstellen Sie Ihre [!UICONTROL datastream]:
 
 1. Melden Sie sich bei der [Benutzeroberfläche der Datenerfassung von Experience Platform](https://experience.adobe.com/launch/)
-
    <!--when will the edge config go live?-->
 
 1. Auswählen **[!UICONTROL Datenspeicher]** in der linken Navigation
@@ -103,7 +102,6 @@ Geben Sie im nächsten Bildschirm an, wohin Daten gesendet werden sollen. So sen
 1. Für **[!UICONTROL Ereignis-Datensatz]** auswählen `Luma Web Events Dataset`
 1. Wenn Sie andere Adobe-Applikationen verwenden, sollten Sie sich die anderen Abschnitte ansehen, um zu sehen, welche Informationen in der Edge-Konfiguration dieser anderen Lösungen erforderlich sind. Beachten Sie, dass das Web SDK nicht nur zum Streamen von Daten in Experience Platform entwickelt wurde, sondern auch zum Ersetzen aller vorherigen JavaScript-Bibliotheken, die von anderen Adobe Apps verwendet wurden. Die Edge-Konfiguration wird verwendet, um die Kontodetails jeder Anwendung anzugeben, an die Sie die Daten senden möchten.
 1. Wählen Sie **[!UICONTROL Speichern]** aus
-
    ![Konfigurieren des Datastreams und Speichern](assets/websdk-edgeConfig-addEnvironment.png)
 
 Nachdem die Edge-Konfiguration gespeichert wurde, werden im resultierenden Bildschirm drei Umgebungen für Entwicklung, Staging und Produktion erstellt. Zusätzliche Entwicklungsumgebungen können hinzugefügt werden:
@@ -124,7 +122,6 @@ So erstellen Sie eine Eigenschaft:
 1. Als **[!UICONTROL Name]**, eingeben `Luma Platform Tutorial` (Fügen Sie am Ende Ihren Namen hinzu, wenn mehrere Personen aus Ihrem Unternehmen dieses Tutorial absolvieren)
 1. Als **[!UICONTROL Domänen]**, eingeben `enablementadobe.com` (später erklärt)
 1. Wählen Sie **[!UICONTROL Speichern]** aus
-
    ![Eigenschaftendetails](assets/websdk-property-propertyDetails.png)
 
 <!--
@@ -248,7 +245,7 @@ Wie Sie auf der [!UICONTROL Veröffentlichungsfluss] -Bildschirm gibt es viel me
 
 ## Überprüfen der Daten in der Anforderung
 
-### Hinzufügen des Adobe Experience Platform-Debuggers
+### Adobe Experience Platform Debugger hinzufügen
 
 Der Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die auf Ihren Webseiten implementierte Adobe zu sehen. Laden Sie die Version für Ihren bevorzugten Browser herunter:
 
@@ -281,7 +278,6 @@ Der Experience Platform Debugger verfügt über eine coole Funktion, mit der Sie
 1. Gehen Sie jetzt zu **[!UICONTROL Launch]** in der linken Navigation
 1. Wählen Sie die Registerkarte Konfiguration .
 1. Rechts neben dem Ort, an dem Sie die **[!UICONTROL Seiten-Einbettungscodes]**, öffnen Sie die **[!UICONTROL Aktionen]** und wählen Sie **[!UICONTROL Ersetzen]**
-
    ![Aktionen auswählen > Ersetzen](assets/websdk-debugger-replaceLibrary.png)
 1. Da Sie authentifiziert sind, ruft der Debugger Ihre verfügbaren Launch-Eigenschaften und -Umgebungen ab. Wählen Sie Ihre `Luma Platform Tutorial` property
 1. Wählen Sie Ihre `Development` Umgebung
@@ -364,7 +360,6 @@ Im **[!UICONTROL Datenelemente]** Seite:
 1. Wählen Sie das Feld `web.webPageDetails.name` aus
 1. Als **[!UICONTROL Wert]**, wählen Sie das Symbol aus, um das Datenelement-Auswahlmodul zu öffnen, und wählen Sie Ihre `Page Name` Datenelement
 1. Auswählen **[!UICONTROL In Bibliothek speichern]**
-
    ![Ordnen Sie den Seitennamen dem XDM-Objekt-Datenelement zu.](assets/websdk-property-dataElement-createXDMObject.png)
 
 Dasselbe Verfahren wird verwendet, um zusätzliche benutzerdefinierte Daten auf Ihrer Website XDM-Feldern zuzuordnen.

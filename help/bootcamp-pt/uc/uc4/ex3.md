@@ -1,11 +1,12 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Eine Datenansicht erstellen - Brasilien
 description: Customer Journey Analytics - Erstellen einer Datenansicht - Brasilien
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 072179998d19c32589280defdb257a86d8728fea
+exl-id: 8cfd4467-167d-4235-a305-4596e3a7d4fb
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1655'
 ht-degree: 2%
@@ -116,7 +117,7 @@ Vamos deixar o Nome da Página como Prop. Dessa forma, você não recisa alterar
 
 | Komponentenname zur Suche | Neuer Name | Persistenz-Einstellungen |
 | ----------------- |-------------| --------------------| 
-| Name (web.webPageDetails.name) | Page Name |  |
+| Name (web.webPageDetails.name) | Seitenname |          |
 
 Em seguida, escolha a dimensão **phoneNumber** e solte-a na tela. O novo nome deve ser **Telefonnummer**.
 
@@ -144,7 +145,7 @@ Altere o nome para **Seitenansichten** unter **Komponenteneinstellungen**.
 
 | Komponentenname zur Suche | Neuer Name | Attributionseinstellungen |
 | ----------------- |-------------| --------------------| 
-| web.webPageDetails.pageViews.value | Page Views |  |
+| web.webPageDetails.pageViews.value | Seitenansichten |         |
 
 ![Demo](./images/7-v2.png)
 
@@ -159,26 +160,26 @@ Em seguida, você terá que konfigurar várias Dimensões e Métricas, conforme 
 | Komponentenname zur Suche | Neuer Name | Persistenz-Einstellungen |
 | ----------------- |-------------| --------------------| 
 | brandName | Markenname | Zuletzt verwendete Sitzung |
-| Rückruf | Rufempfindlichkeit |  |
-| Aufruf-ID | Interaktionstyp aufrufen |  |
+| Rückruf | Rufempfindlichkeit |          |
+| Aufruf-ID | Interaktionstyp aufrufen |          |
 | callTopic | Anrufthema | Zuletzt verwendete Sitzung |
 | ecid | ECID | Zuletzt verwendet, Person (Berichtsfenster) |
-| email | Email ID | Zuletzt verwendet, Person (Berichtsfenster) |
-| Zahlungsart | Zahlungsart |  |
+| E-Mail | Email ID | Zuletzt verwendet, Person (Berichtsfenster) |
+| Zahlungsart | Zahlungsart |          |
 | Methode zum Hinzufügen von Produkten | Methode zum Hinzufügen von Produkten | Zuletzt verwendete Sitzung |
-| Ereignistyp | Ereignistyp |  |
-| Name (productListItems.name) | Produktname |  |
+| Ereignistyp | Ereignistyp |         |
+| Name (productListItems.name) | Produktname |         |
 | SKU | SKU (Sitzung) | Zuletzt verwendete Sitzung |
-| Transaction ID | Transaction ID |  |
-| URL (web.webPageDetails.URL) | URL |  |
+| Transaction ID | Transaction ID |         |
+| URL (web.webPageDetails.URL) | URL |         |
 | Benutzeragent | Benutzeragent | Zuletzt verwendete Sitzung |
 
 ### MÉTRICA
 
 | Komponentenname zur Suche | Neuer Name | Attributionseinstellungen |
 | ----------------- |-------------| --------------------| 
-| Menge | Menge |  |
-| commerce.order.priceTotal | Umsatz |  |
+| Menge | Menge |          |
+| commerce.order.priceTotal | Umsatz |         |
 
 Sua configuration ação deve ser semelhante ao seguinte:
 

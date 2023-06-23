@@ -3,10 +3,10 @@ title: Erstellen von Segmenten mit mehreren Entitäten
 description: In diesem Video erfahren Sie, wie Sie im Segmentaufbau von Adobe Experience Platform Segmente mit mehreren Entitäten erstellen.  Die Segmentierung mit mehreren Entitäten oder die Segmentierung über Klassen hinweg ermöglicht Ihnen das Erstellen von Segmenten, die Daten basierend auf mehreren XDM-Klassen kombinieren.
 role: User
 feature: Segments
-kt: 3697
+jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 7%

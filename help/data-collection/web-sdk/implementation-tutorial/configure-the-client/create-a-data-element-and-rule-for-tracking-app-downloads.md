@@ -5,11 +5,11 @@ feature: Web SDK
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: cb322540-e8ef-4226-b537-a67c7ca273f5
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 3%
@@ -87,7 +87,7 @@ Für diese Regel (im Gegensatz zu den anderen von Ihnen erstellten Regeln) über
 
 Sie fragen sich vielleicht: &quot;Das klingt gut. Warum ist diese Option dann nicht immer aktiviert?&quot;
 
-Nun, es ist ein wenig kompliziert, aber bei Verwendung dieser Funktion verwendet das SDK eine Browser-Methode namens [`sendBeacon`](https://developer.mozilla.org/de-DE/docs/Web/API/Navigator/sendBeacon) , um die Anfrage zu senden. Beim Senden einer Anforderung mit `sendBeacon`, erlaubt der Browser dem SDK (oder anderen) nicht den Zugriff auf vom Server zurückgegebene Daten. Wenn das SDK diese Funktion für jede Anfrage verwenden würde, könnte das SDK nie Daten vom Server empfangen. Aus diesem Grund ist es wichtig, die [!UICONTROL Dokument wird entladen] nur dann, wenn das aktuelle Dokument entladen wird. In diesem Fall können die Antwortdaten trotzdem verworfen werden.
+Nun, es ist ein wenig kompliziert, aber bei Verwendung dieser Funktion verwendet das SDK eine Browser-Methode namens [`sendBeacon`](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon) , um die Anfrage zu senden. Beim Senden einer Anforderung mit `sendBeacon`, erlaubt der Browser dem SDK (oder anderen) nicht den Zugriff auf vom Server zurückgegebene Daten. Wenn das SDK diese Funktion für jede Anfrage verwenden würde, könnte das SDK nie Daten vom Server empfangen. Aus diesem Grund ist es wichtig, die [!UICONTROL Dokument wird entladen] nur dann, wenn das aktuelle Dokument entladen wird. In diesem Fall können die Antwortdaten trotzdem verworfen werden.
 
 ![Kontrollkästchen &quot;Dokument wird entladen&quot;](../../../assets/implementation-strategy/document-will-unload.png)
 

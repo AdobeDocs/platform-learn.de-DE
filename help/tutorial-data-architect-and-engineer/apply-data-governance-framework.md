@@ -5,13 +5,13 @@ breadcrumb-title: Anwenden des Data Governance-Frameworks
 description: In dieser Lektion wenden Sie das Data Governance-Framework auf die Daten an, die Sie in Ihre Sandbox aufgenommen haben.
 role: Data Architect
 feature: Data Governance
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -57,7 +57,7 @@ Es gibt viele native Beschriftungen. Zusätzlich können Sie Ihre eigenen über 
 Jetzt ist es an der Zeit, die Daten zu kennzeichnen, deren Nutzung wir beschränken möchten:
 
 1. Wählen Sie in der Benutzeroberfläche von Platform die Option **[!UICONTROL Datensätze]** in der linken Navigation
-1. Öffnen Sie die `Luma Loyalty Dataset`
+1. Öffnen Sie `Luma Loyalty Dataset`
 1. Navigieren Sie zu **[!UICONTROL Data Governance]** tab
 1. Sie können entweder Bezeichnungen auf einzelne Felder anwenden oder sie auf den gesamten Datensatz anwenden. Wir wenden die Bezeichnung auf den gesamten Datensatz an. Klicken Sie auf das Stiftsymbol. Wenn das Symbol nicht angezeigt wird, versuchen Sie, den Browser zu erweitern oder scrollen Sie im mittleren Bereich nach rechts.
    ![Data Governance](assets/governance-dataset.png)

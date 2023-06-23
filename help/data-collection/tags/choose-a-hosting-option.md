@@ -2,9 +2,9 @@
 title: Wählen Sie eine Hosting-Option für Ihre Tag-Bibliothek (ehemals Launch-Bibliothek)
 description: Erfahren Sie, wie Sie die beste Hosting-Option für Ihre Tag-Bibliothek auswählen.
 feature: Tags
-kt: 3526
+jira: KT-3526
 exl-id: adc00363-7490-44ab-95e2-46f9f630021c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%

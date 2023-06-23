@@ -1,14 +1,15 @@
 ---
 title: Bootcamp - Vermischen von physisch und digital - Journey Optimizer Journey und Push erstellen - Brazilnotification
 description: Bootcamp - Vermischen von physisch und digital - Journey Optimizer Journey und Push erstellen - Brazilnotification
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: a4ef6eaf-6b39-4450-82bf-7db99595a323
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 2%
+source-wordcount: '835'
+ht-degree: 1%
 
 ---
 
@@ -149,7 +150,7 @@ Agora você preisa definir os valores para cada parâmetro de ação. Siga esta 
 | ACTIVITYID | `''` |
 | PLACEMENTID | `''` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Para definir esses valores, clique no ícone **Bearbeiten**.
 
@@ -181,7 +182,7 @@ Sie müssen Ihrer Journey noch einen Namen geben. Klicken Sie hierzu auf die Sch
 
 ![ACOP](./images/journeyname.png)
 
-Você pode inserir o nome da jornada aqui. Verwenden von `yourLastName - Beacon Entry Journey`. Clique em **OK** para salvar suas alterações.
+Você pode inserir o nome da jornada aqui. Verwenden Sie `yourLastName - Beacon Entry Journey`. Clique em **OK** para salvar suas alterações.
 
 ![ACOP](./images/journeyname1.png)
 
