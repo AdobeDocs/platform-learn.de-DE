@@ -8,9 +8,9 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
@@ -73,5 +73,10 @@ Platform ist als API-Erste konzipiert. Während es für alle wichtigen Platform-
 ### Drittanbietertechnologien
 
 Obwohl Sie in diesem Tutorial mehrere Technologien verwenden werden, bleiben Sie fast vollständig im Ökosystem der Adobe. In Ihrer eigenen Platform-Implementierung integrieren Sie Platform wahrscheinlich mit bestimmten Drittanbietertechnologien. Um dieses Tutorial für alle Kunden relevant zu halten, verwenden wir eine allgemeinere Implementierung.
+
+## Tutorial-Aktualisierungen
+
+* Juni 2023: Aktualisierung, um neuen Berechtigungs-Workflow und OAuth-Server-zu-Server-API-Anmeldedaten einzuschließen
+
 
 Gehen wir nun zur ersten Lektion über —[Berechtigungen konfigurieren](configure-permissions.md).
