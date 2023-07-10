@@ -1,12 +1,12 @@
 ---
 title: Erneutes Laden Ihrer Kundendaten für die Bereitstellung elektrisierter Erlebnisse
 description: Erfahren Sie, wie Sie die Auswirkungen von Daten mit geringer Qualität verringern, die Zeit bis zur Wertschöpfung reduzieren und den ROI multiplizieren können, indem Sie dieselben Daten für eine Vielzahl von Anwendungsfällen verwenden.
-role: Data Engineer, Data Architect, Developer
 feature: Queries
+role: Data Engineer, Data Architect, Developer
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%

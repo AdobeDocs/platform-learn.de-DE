@@ -1,12 +1,12 @@
 ---
 title: Erstellen eines XDM-Schemas für Webdaten
 description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webdaten erstellen. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
-feature: Schemas
+feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 6%
+source-wordcount: '1121'
+ht-degree: 7%
 
 ---
 
@@ -22,7 +22,7 @@ Das Platform Web SDK verwendet Ihr Schema zur Standardisierung Ihrer Web-Ereigni
 >
 > Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema, um die angezeigten Inhalte und die von Kunden im Abschnitt gekauften Produkte zu erfassen. [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html). Sie können diese Schritte zwar verwenden, um ein anderes Schema für Ihre eigenen Zwecke zu erstellen, es wird jedoch empfohlen, zunächst das Beispielschema zu erstellen, um mehr über die Funktionen des Schema-Editors zu erfahren.
 
-Weitere Informationen zu XDM-Schemata finden Sie im Kurs &quot;[Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)&quot; oder sehen Sie die [XDM-System - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
+Weitere Informationen zu XDM-Schemata finden Sie im Kurs &quot;[Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de)&quot; oder sehen Sie die [XDM-System - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
 ## Lernziele
 
@@ -40,9 +40,9 @@ Alle erforderlichen Bereitstellungs- und Benutzerberechtigungen für die Datener
 
 XDM-Schemata sind die Standardmethode, um Daten in Experience Platform zu beschreiben, sodass alle Daten, die den Schemas entsprechen, in einer Organisation ohne Konflikte wiederverwendet oder sogar von mehreren Organisationen gemeinsam genutzt werden können. Weitere Informationen finden Sie unter [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de).
 
-In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen Grundfeldgruppen für die Erfassung von Webereignisdaten auf der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;}:
+In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen Grundfeldgruppen für die Erfassung von Webereignisdaten auf der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
-1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target="_blank"}
 1. Vergewissern Sie sich, dass Sie sich in der richtigen Sandbox befinden.
 
    >[!NOTE]
@@ -50,7 +50,7 @@ In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen Grundfeldgrupp
    >Wenn Sie Platform-basierte Anwendungen wie Real-Time CDP verwenden, empfehlen wir für dieses Tutorial die Verwendung einer Entwicklungs-Sandbox. Wenn nicht, verwenden Sie die **[!UICONTROL Prod]** Sandbox.
 
 1. Navigieren Sie zu **[!UICONTROL Schemas]** in der linken Navigation
-1. Wählen Sie die **[!UICONTROL Schema erstellen]** Schaltfläche oben rechts
+1. Klicken Sie auf **[!UICONTROL Schema erstellen]** oben rechts
 1. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL XDM ExperienceEvent]**
 
 ![Schema-Erlebnisereignis](assets/schema-XDM-experience-event.jpg)
@@ -70,7 +70,7 @@ Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein pro
 1. Aktivieren Sie das Kontrollkästchen
 1. Suchen Sie nach [!UICONTROL `Consumer Experience Event`].
 1. Aktivieren Sie das Kontrollkästchen
-1. Auswählen **[!UICONTROL Feldergruppen hinzufügen]**
+1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus
 
    ![Feldergruppe hinzufügen](assets/schema-add-field-group.jpg)
 

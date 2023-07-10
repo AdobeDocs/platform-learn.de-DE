@@ -3,10 +3,13 @@ title: Übersicht über das Adobe Experience Platform Web SDK und Edge Network
 description: Erfahren Sie, wie Kunden mit dem Adobe Experience Platform Web SDK und Edge Network unter Verwendung einer einzigen JavaScript-Bibliothek und eines einzigen Beacon Daten an Adobe-Anwendungen und Drittanbieter-Ziele senden.
 landing-page-description: Verschaffen Sie sich einen Überblick über das Web SDK und Edge Network.
 short-description: Verschaffen Sie sich einen Überblick über das Web SDK und Edge Network.
+feature: Web SDK
+role: Developer
+level: Beginner
 jira: KT-5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 41%

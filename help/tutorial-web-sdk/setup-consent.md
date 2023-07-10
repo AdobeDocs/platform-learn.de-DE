@@ -1,8 +1,9 @@
 ---
 title: Einrichten der Zustimmung mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 0%
@@ -36,7 +37,6 @@ Bevor Sie mit der Konfiguration der Datenschutzeinstellungen und der Erstellung 
 >1. Eine Consent Management Platform (oder CMP) wird von Organisationen verwendet, um die Einwilligungsoptionen eines Besuchers gesetzlich zu dokumentieren und zu verwalten, bevor Besucherdaten aus Online-Quellen wie Websites und Apps erfasst, weitergegeben oder verkauft werden.
 >
 >2. Der empfohlene Ansatz für die Injektion einer CMP erfolgt direkt über den Quellcode vor dem Tag-Manager-Skript.
-
 
 ### Klaro konfigurieren
 

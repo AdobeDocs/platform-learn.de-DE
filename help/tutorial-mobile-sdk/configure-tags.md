@@ -1,8 +1,9 @@
 ---
 title: Tag-Eigenschaft konfigurieren
 description: Erfahren Sie, wie Sie eine Tag-Eigenschaft im [!UICONTROL Datenerfassung] -Schnittstelle.
+feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 12%
@@ -35,7 +36,6 @@ In dieser Lektion werden Sie:
 1. Erstellen Sie eine neue mobile Tag-Eigenschaft:
    1. Im [Datenerfassungsoberfläche](https://experience.adobe.com/data-collection/){target="_blank"}auswählen **[!UICONTROL Tags]** in der linken Navigation
    1. Wählen Sie **[!UICONTROL Neue Eigenschaft]** aus
-
       ![Tag-Eigenschaft erstellen](assets/mobile-tags-new-property.png).
    1. Für **[!UICONTROL Name]**, eingeben `Mobile SDK Course`.
    1. Für **[!UICONTROL Plattform]** auswählen **[!UICONTROL Mobile]**.

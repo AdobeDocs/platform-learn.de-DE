@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3344'
 ht-degree: 3%
 
 ---
@@ -30,6 +30,7 @@ In der Datenerfassungsoberfläche müssen wir zwei Hauptaufgaben erledigen:
 **Dateningenieure** müssen Streaming-Daten außerhalb dieses Tutorials erfassen. Bei der Implementierung von Web- oder Mobile-SDKs von Adobe Experience Platform ist normalerweise ein Web- oder Mobilentwickler an der Erstellung von Datenschichten und der Konfiguration von Tag-Eigenschaften beteiligt.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich diese beiden kurzen Videos an, um mehr über die Erfassung von Streaming-Daten und das Web SDK zu erfahren:
+
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
@@ -454,7 +455,7 @@ So überprüfen Sie, ob die CRM-ID jetzt vom Web SDK gesendet wird:
 
 * [Implementieren von Adobe Experience Cloud mit dem Web SDK](/help/tutorial-web-sdk/overview.md)
 * [Dokumentation zur Streaming-Erfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=de)
-* [Referenz zur Streaming-Aufnahme-API](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [Referenz zur Streaming-Aufnahme-API](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 Gute gemacht! Das waren viele Informationen zum Web SDK und Launch. Es gibt viel mehr an einer vollständigen Implementierung, aber dies sind die Grundlagen, die Ihnen bei den ersten Schritten und der Anzeige der Ergebnisse in Platform helfen.
 

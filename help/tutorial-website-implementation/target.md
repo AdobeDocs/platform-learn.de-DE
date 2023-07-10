@@ -3,7 +3,7 @@ title: Hinzufügen von Adobe Target mit Tags
 description: Erfahren Sie, wie Sie Adobe Target mithilfe von Tags mit at.js, einer Seitenladeanforderung, Parametern, einer Bestellanforderung und benutzerdefiniertem Kopf-/Fußzeilencode implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren des Experience Cloud in Websites .
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 75%
@@ -14,7 +14,7 @@ ht-degree: 75%
 
 In dieser Lektion implementieren wir die [Adobe Target-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=de) mit einer Seitenladeanforderung und benutzerdefinierten Parametern.
 
-[Adobe Target](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html) ist die Adobe Experience Cloud-Lösung, die Ihnen all das bietet, was Sie benötigen, um die Erlebnisse Ihrer Kunden anzupassen und zu personalisieren, sodass Sie Umsätze auf Ihren Web- und mobilen Sites, in Apps, sozialen Medien und anderen digitalen Kanälen maximieren können.
+[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=de) ist die Adobe Experience Cloud-Lösung, die Ihnen all das bietet, was Sie benötigen, um die Erlebnisse Ihrer Kunden anzupassen und zu personalisieren, sodass Sie Umsätze auf Ihren Web- und mobilen Sites, in Apps, sozialen Medien und anderen digitalen Kanälen maximieren können.
 
 >[!NOTE]
 >
@@ -23,7 +23,6 @@ In dieser Lektion implementieren wir die [Adobe Target-Erweiterung](https://exp
 > * platform launch (Client-seitig) ist jetzt **[!DNL tags]**
 > * platform launch Server Side ist jetzt **[!DNL event forwarding]**
 > * Edge-Konfigurationen sind jetzt verfügbar **[!DNL datastreams]**
-
 
 ## Lernziele
 
@@ -298,7 +297,7 @@ Sie müssen in diesem Tutorial keine Entitätsparameter übergeben, aber der Wor
 
 ### Hinzufügen von Kunden-ID-Parametern
 
-Die Erfassung von Kunden-IDs mit Adobe Experience Platform Identity Service erleichtert den Import von CRM-Daten in Target mithilfe der Funktion [Kundenattribute](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) in Adobe Experience Cloud. Sie ermöglicht auch die [geräteübergreifende Besucherzuordnung](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), sodass Sie eine einheitliche Benutzererfahrung gewährleisten können, wenn Ihre Kunden zwischen ihren Laptops und ihren Mobilgeräten wechseln.
+Die Erfassung von Kunden-IDs mit Adobe Experience Platform Identity Service erleichtert den Import von CRM-Daten in Target mithilfe der Funktion [Kundenattribute](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=de) in Adobe Experience Cloud. Sie ermöglicht auch die [geräteübergreifende Besucherzuordnung](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), sodass Sie eine einheitliche Benutzererfahrung gewährleisten können, wenn Ihre Kunden zwischen ihren Laptops und ihren Mobilgeräten wechseln.
 
 Es ist unbedingt erforderlich, die Kunden-ID in der `Set Customer IDs`-Aktion des ID-Dienstes festzulegen, bevor die Seitenladeanforderung ausgelöst wird. Zu diesem Zweck müssen Sie die folgenden Funktionen auf Ihrer Site bereitstellen:
 
@@ -388,7 +387,6 @@ Im Folgenden finden Sie eine optionale Übung für Target Premium-Kunden, wenn 
    ![Klicken Sie auf Änderungen beibehalten](images/target-addATProperty-keepChanges.png)
 
 1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**.
-
    ![Klicken Sie auf „Speichern und in Bibliothek erstellen“](images/target-addATProperty-save.png)
 
 >[!WARNING]
@@ -566,7 +564,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 Es gibt nur wenige Fälle, in denen Sie andere Target-Anforderungen als die Seitenladeanforderung und die Bestellbestätigungsanforderung stellen müssen. Manchmal werden wichtige Daten, die Sie für die Personalisierung verwenden möchten, nicht vor den Tag-Einbettungscodes auf der Seite definiert. Sie können am Ende der Seite fest codiert sein oder von einer asynchronen API-Anfrage zurückgegeben werden. Diese Daten können mit einer zusätzlichen Anfrage an Target gesendet werden. Es ist jedoch nicht optimal, diese Anfrage für die Inhaltsbereitstellung zu verwenden, da die Seite bereits sichtbar ist. Diese Daten können verwendet werden, um das Besucherprofil zur späteren Verwendung anzureichern (mithilfe von Profilparametern) oder um den Recommendations-Katalog zu füllen.
 
-Unter diesen Umständen verwenden Sie die Aktion mit benutzerdefiniertem Code in der Core-Erweiterung, um eine Anforderung mit den Methoden [getOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-applyoffer.html) und [trackEvent()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-trackevent.html)
+Unter diesen Umständen verwenden Sie die Aktion mit benutzerdefiniertem Code in der Core-Erweiterung, um eine Anforderung mit den Methoden [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) und [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html)
 auszulösen. Dieser Vorgang ähnelt den Schritten sehr, die Sie in der [Bestellbestätigungsanforderung](#order-confirmation-request) durchgeführt haben. Sie verwenden einfach einen anderen Anforderungsnamen und nicht die speziellen Bestellparameter. Denken Sie daran, die **[!UICONTROL Target laden]**-Aktion zu verwenden, bevor Sie Target-Anforderungen aus benutzerdefiniertem Code durchführen.
 
 ## Bibliothekskopf- und -fußzeile

@@ -2,9 +2,11 @@
 title: Übersicht über das Adobe Experience Platform Mobile SDK
 description: Erfahren Sie, wie das Adobe Experience Platform Mobile SDK die durchgängige Interaktion mit Ihren Mobile Apps ermöglicht. Das Platform Mobile SDK hilft Ihnen bei der Akquise, der Analyse, der Interaktion und der Optimierung. Leistungsstark, modular, erweiterbar und in die Datenerfassung integriert. Die ausgereifte Regel-Engine, Berechtigungen und Publishing-Workflows der Datenerfassung unterstützen Sie bei der effizienten Implementierung von Adobe Analytics, Campaign, Audience Manager, Target und Lösungen von Drittanbietern in Ihre Mobile Apps.
 feature: Mobile SDK
+role: Developer
+level: Beginner
 jira: KT-3698
 exl-id: 0d55971d-35cc-4684-b1fb-f1aabd0b561c
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 82%

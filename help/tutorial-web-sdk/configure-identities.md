@@ -1,12 +1,12 @@
 ---
 title: Identitäts-Namespace konfigurieren
 description: Erfahren Sie, wie Sie Identitäts-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
-feature: Identities
+feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 8%
+source-wordcount: '693'
+ht-degree: 13%
 
 ---
 
@@ -43,14 +43,14 @@ Sie müssen die vorherigen Lektionen bereits abgeschlossen haben:
 
 ## Erstellen eines Identity-Namespace
 
-In dieser Übung erstellen Sie einen Identitäts-Namespace für das benutzerdefinierte Identitätsfeld von Luma, `lumaCrmId`. Identitäts-Namespaces spielen eine entscheidende Rolle beim Erstellen von Echtzeit-Kundenprofilen, da zwei übereinstimmende Werte im selben Namespace es zwei Datenquellen ermöglichen, ein Identitätsdiagramm zu erstellen.
+In dieser Übung erstellen Sie einen Identitäts-Namespace für das benutzerdefinierte Identitätsfeld von Luma, `lumaCrmId`. Identity-Namespaces spielen eine entscheidende Rolle beim Erstellen von Echtzeit-Kundenprofilen, da zwei übereinstimmende Werte im selben Namespace es zwei Datenquellen ermöglichen, ein Identitätsdiagramm zu erstellen.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über die Identität in Adobe Experience Platform zu erfahren:
 >[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
 
 Erstellen Sie nun einen Namespace für die Luma CRM-ID:
 
-1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target="_blank"}
 1. Wählen Sie die Sandbox aus, die Sie für das Tutorial verwenden
 
    >[!NOTE]
@@ -62,7 +62,7 @@ Erstellen Sie nun einen Namespace für die Luma CRM-ID:
 
    In der Hauptbenutzeroberfläche der Seite wird eine Liste von Identitäts-Namespaces angezeigt, die ihren Namen, Identitätssymbole, das letzte aktualisierte Datum und die Frage, ob es sich um standardmäßige oder benutzerdefinierte Namespaces handelt, enthalten. Die rechte Leiste enthält Informationen zur Stärke des Identitätsdiagramms.
 
-1. Auswählen **[!UICONTROL Identitäts-Namespace erstellen]**
+1. Wählen Sie **[!UICONTROL Identity-Namespace erstellen]** aus
 
    ![Identitäten anzeigen](assets/configure-identities-screen.png)
 

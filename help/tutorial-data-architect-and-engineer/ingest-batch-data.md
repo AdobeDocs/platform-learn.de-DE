@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2526'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,7 @@ Mit der Batch-Datenerfassung können Sie eine große Datenmenge gleichzeitig in 
 **Dateningenieure** Batch-Daten müssen außerhalb dieses Tutorials erfasst werden.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über die Datenerfassung zu erfahren:
+
 >[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
 
 
@@ -341,6 +342,6 @@ Adobe arbeitet mit mehreren ETL-Anbietern zusammen, um die Datenerfassung in Exp
 ## Weitere Ressourcen
 
 * [Dokumentation zur Batch-Erfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
-* [Referenz zur Batch-Aufnahme-API](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
+* [Referenz zur Batch-Aufnahme-API](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Jetzt lass uns [Streamen von Daten mit dem Web SDK](ingest-streaming-data.md)

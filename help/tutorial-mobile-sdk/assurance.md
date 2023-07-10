@@ -1,8 +1,9 @@
 ---
 title: Einrichten der Sicherheit
 description: Erfahren Sie, wie Sie die Assurance-Erweiterung in eine mobile App implementieren.
+feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 6%
@@ -90,9 +91,9 @@ Die Sicherung funktioniert durch Öffnen einer URL, entweder über einen Browser
    ![Sicherungs-Node](assets/mobile-assurance-enter-pin.png)
 1. Wenn die Verbindung erfolgreich hergestellt wurde, werden Ereignisse in der Web-Benutzeroberfläche &quot;Assurance&quot;und ein unverankertes Assurance-Symbol in der App angezeigt.
    * Symbol &quot;Versicherung&quot;unverankert.
-      ![Zuverlässigkeitsmodal](assets/mobile-assurance-modal.png)
+     ![Zuverlässigkeitsmodal](assets/mobile-assurance-modal.png)
    * Experience Cloud-Ereignisse, die in der Web-Benutzeroberfläche auftreten.
-      ![Zuverlässigkeitsereignisse](assets/mobile-assurance-events.png)
+     ![Zuverlässigkeitsereignisse](assets/mobile-assurance-events.png)
 
 Wenn Sie auf Herausforderungen stoßen, lesen Sie bitte die [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de){target="_blank"}.
 

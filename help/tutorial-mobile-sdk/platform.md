@@ -1,8 +1,10 @@
 ---
 title: Daten an Adobe Experience Platform senden
 description: Erfahren Sie, wie Sie Daten an Adobe Experience Platform senden.
+solution: Data Collection,Experience Platform
+feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 11%
@@ -52,7 +54,7 @@ Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, wer
 
 1. Suchen Sie nach Ihrem Schema und wählen Sie aus.
 
-1. Wählen Sie **[!UICONTROL Weiter]** aus.
+1. Klicken Sie auf **[!UICONTROL Weiter]**.
    ![Datensatzkonfiguration](assets/mobile-dataset-configure.png)
 
 1. Bereitstellung einer **[!UICONTROL Name]**, **[!UICONTROL Beschreibung]** und wählen Sie **[!UICONTROL Beenden]**.
@@ -90,7 +92,7 @@ Das Echtzeit-Kundenprofil von Experience Platform ermöglicht es Ihnen, eine gan
 
    ![Aktivieren des Schemas für das Profil](assets/mobile-platform-profile-schema.png)
 
-### Datensatz aktivieren
+### Aktivieren des Datensatzes
 
 1. Datensatz öffnen
 1. Aktivieren **[!UICONTROL Profil]**

@@ -1,11 +1,12 @@
 ---
 title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie in Experience Platform einen Datastream erstellen.
+feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -29,10 +30,10 @@ In dieser Lektion werden Sie:
 
 ## Erstellen eines Datenspeichers
 
-Datenspeicher können im [!UICONTROL Datenerfassung] -Benutzeroberfläche mithilfe der [!UICONTROL Datastream] Konfigurationstool. So erstellen Sie einen Datastream:
+Datenspeicher können im [!UICONTROL Datenerfassung] -Schnittstelle mithilfe der [!UICONTROL Datastream] Konfigurationstool. So erstellen Sie einen Datastream:
 
 1. Vergewissern Sie sich, dass Sie sich in der richtigen Platform-Sandbox befinden.
-1. Auswählen **[!UICONTROL Neuer Datenspeicher]**.
+1. Wählen Sie **[!UICONTROL Neuer Datenstrom]** aus.
 
    ![datastreams home](assets/mobile-datastream-new.png)
 

@@ -1,18 +1,18 @@
 ---
 title: Validieren von Web SDK-Implementierungen mit Experience Platform Debugger
-description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger überprüfen. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
-feature: Debugger
+description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 5%
+source-wordcount: '1073'
+ht-degree: 6%
 
 ---
 
 # Validieren von Web SDK-Implementierungen mit Experience Platform Debugger
 
-Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger überprüfen.
+Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren.
 
 Der Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die auf Ihren Webseiten implementierte Adobe zu sehen. Laden Sie die Version für Ihren bevorzugten Browser herunter:
 
@@ -36,7 +36,7 @@ Am Ende dieser Lektion können Sie den Debugger für Folgendes verwenden:
 
 ## Voraussetzungen
 
-Sie kennen Datenerfassungs-Tags und die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} und haben die folgenden vorherigen Lektionen im Tutorial abgeschlossen:
+Sie kennen Datenerfassungs-Tags und die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und haben die folgenden vorherigen Lektionen im Tutorial abgeschlossen:
 
 * [Berechtigungen konfigurieren](configure-permissions.md)
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
@@ -86,7 +86,7 @@ Sie können den Debugger verwenden, um Ihre Platform Web SDK-Implementierung zu 
 
 1. Navigieren Sie zu **[!UICONTROL Zusammenfassung]** in der linken Navigation, um die Details Ihrer Tag-Eigenschaft anzuzeigen
 
-   ![Registerkarte &quot;Zusammenfassung&quot;](assets/validate-summary.png)
+   ![Registerkarte „Zusammenfassung“](assets/validate-summary.png)
 
 1. Gehen Sie jetzt zu **[!UICONTROL Experience Platform Web SDK]** in der linken Navigation, um die **[!UICONTROL Netzwerkanforderungen]**
 1. Öffnen Sie die **[!UICONTROL events]** Zeile (keine Sorge, wenn dieser Screenshot mehr Anforderungen als Ihre anzeigt, enthält er Anforderungen aus zukünftigen Lektionen und Sie können ihn vorerst ignorieren)
@@ -99,7 +99,7 @@ Sie können den Debugger verwenden, um Ihre Platform Web SDK-Implementierung zu 
 
 1. Scrollen Sie nach unten zum `web` -Objekt, wählen Sie aus, um es zu öffnen und die `webPageDetails.name`, `webPageDetails.server`und `webPageDetails.siteSection`. Sie sollten mit den entsprechenden DigitalData-Datenschichtvariablen auf der Homepage übereinstimmen.
 
-   ![Netzwerkregisterkarte](assets/validate-xdm-content.png)
+   ![Registerkarte „Netzwerk“](assets/validate-xdm-content.png)
 
 Sie können auch die Identitätszuordnungsdetails überprüfen:
 
@@ -125,11 +125,11 @@ Diese Arten von Anforderungsdetails sind auch in den Webentwickler-Tools des Bro
 
 1. Öffnen Sie die Webentwickler-Tools des Browsers. **Netzwerk** und laden Sie die Seite neu. Filtern von Aufrufen mit `/ee` Um den Aufruf zu finden, wählen Sie ihn aus und sehen Sie sich dann im **Kopfzeilen** und **Nutzlast** tab
 
-   ![Netzwerkregisterkarte](assets/validate-dev-console.png)
+   ![Registerkarte „Netzwerk“](assets/validate-dev-console.png)
 
 1. Navigieren Sie zu **Reaktion** und beachten Sie, wie der ECID-Wert in der Antwort enthalten ist. Kopieren Sie diesen Wert, da Sie ihn verwenden werden, um die Profilinformationen in der nächsten Übung zu überprüfen.
 
-   ![Netzwerkregisterkarte](assets/validate-dev-console-ecid.png)
+   ![Registerkarte „Netzwerk“](assets/validate-dev-console-ecid.png)
 
    >[!NOTE]
    >

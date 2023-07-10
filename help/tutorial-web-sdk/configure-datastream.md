@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Lösungen konfigurieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
-feature: Datastreams
+feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '448'
 ht-degree: 9%
 
 ---
@@ -38,7 +38,7 @@ Jetzt können Sie einen Datastream erstellen, um Platform Edge Network mitzuteil
 
 **So erstellen Sie einen Datastream:**
 
-1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target="_blank"}
 1. Vergewissern Sie sich, dass Sie sich in der richtigen Sandbox befinden.
 
    >[!NOTE]

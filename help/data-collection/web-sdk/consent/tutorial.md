@@ -5,10 +5,10 @@ feature: Web SDK, Tags
 role: Developer, Data Engineer
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: 951987c5c360aca005c78a976a6090d088f36455
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3323'
-ht-degree: 2%
+source-wordcount: '3321'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,6 @@ Viele gesetzliche Datenschutzbestimmungen haben Anforderungen an die aktive und 
 > * platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
 > * platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt verfügbar **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
-
 
 In diesem Tutorial erfahren Sie, wie Sie mithilfe der Platform Web SDK-Erweiterung in der Datenerfassung Einwilligungsdaten implementieren und aktivieren, die von einer Consent Management Platform (CMP) erhalten wurden. Dazu verwenden wir sowohl die Adobe-Standards als auch den IAB TCF 2.0-Zustimmungsstandard, wobei OneTrust oder SourcePoint als Beispiel-CMPs verwendet wird.
 
@@ -42,7 +41,7 @@ Für den Platform-Zustimmungsstandard v2.0 benötigen wir außerdem Zugriff auf 
 In diesem Tutorial wird davon ausgegangen, dass Sie Zugriff auf die Datenerfassung haben und eine clientseitige Tags-Eigenschaft mit installierter Web SDK-Erweiterung und einer für die Entwicklung erstellten und erstellten Arbeitsbibliothek erstellt haben. Diese Themen werden in diesen Dokumenten ausführlich beschrieben:
 
 * [Erstellen und Konfigurieren von Eigenschaften](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
-* [Übersicht über Bibliotheken](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html)
+* [Übersicht über Bibliotheken](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=de)
 * [Veröffentlichungsübersicht](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de)
 
 Wir werden auch die [Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome-Erweiterung zur Überprüfung und Validierung unserer Implementierung.
@@ -231,7 +230,7 @@ Wählen Sie die blaue Schaltfläche Speichern , um die Aktion zu speichern, und 
 
 ### Schritt 3: In Bibliothek speichern und erstellen
 
-Wenn Sie die [Arbeitsbibliothek](https://experienceleague.adobe.com/docs/launch-learn/implement-in-websites-with-launch/configure-tags/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) Voraussetzung ist, dass Sie diese Änderungen bereits gespeichert und Ihre Entwicklungsbibliothek erstellt haben:
+Wenn Sie die [Arbeitsbibliothek](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html#use-the-working-library-feature) Voraussetzung ist, dass Sie diese Änderungen bereits gespeichert und Ihre Entwicklungsbibliothek erstellt haben:
 
 ![](./images/save-library.png)
 

@@ -1,11 +1,12 @@
 ---
 title: Erstellen eines XDM-Schemas
 description: Erfahren Sie, wie Sie ein XDM-Schema für App-Ereignisse erstellen.
+feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 15%
+ht-degree: 18%
 
 ---
 
@@ -21,9 +22,9 @@ XDM ist eine öffentlich dokumentierte Spezifikation, die die Leistungsfähigkei
 
 Schemas dienen in Experience Platform zur konsistenten und wiederverwendbaren Beschreibung der Struktur von Daten. Durch die systemübergreifende einheitliche Definition von Daten wird es einfacher, deren Bedeutung beizubehalten und somit Wert aus Daten zu ziehen.
 
-Bevor Daten in Platform erfasst werden können, muss ein Schema erstellt werden, das die Datenstruktur beschreibt und Einschränkungen für den Datentyp enthält, der in jedem Feld enthalten sein kann. Schemas bestehen aus einer Basisklasse und keiner oder mehreren Schema-Feldergruppen.
+Bevor Daten in Platform aufgenommen werden können, muss ein Schema erstellt werden, das die Datenstruktur beschreibt und den Datentyp entsprechend des jeweiligen Feldes einschränkt. Schemas bestehen aus einer Basisklasse und keiner oder mehreren Schema-Feldergruppen.
 
-Weitere Informationen zum Schema-Kompositionsmodell, einschließlich Designgrundsätzen und Best Practices, finden Sie in der [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de) oder des Kurses [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm).
+Weitere Informationen zum Schema-Kompositionsmodell, einschließlich Designgrundsätzen und Best Practices, finden Sie in der [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de) oder des Kurses [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de).
 
 >[!TIP]
 >
@@ -117,7 +118,7 @@ Zu Lernzwecken verwenden Sie vordefinierte und benutzerdefinierte Feldergruppen.
 >
 >Die `Consumer Experience Event` hat einen Datentyp namens `Web information`, der Ereignisse wie Seitenansichten und Link-Klicks beschreibt. Zum Zeitpunkt des Schreibens gibt es keine App-Parität für diese Funktion. Daher erstellen Sie Ihre eigene.
 
-## Benutzerdefinierten Datentyp erstellen
+## Erstellen eines benutzerdefinierten Datentyps
 
 Erstellen Sie zunächst einen benutzerdefinierten Datentyp, der die beiden Ereignisse beschreibt:
 
@@ -141,7 +142,7 @@ Erstellen Sie zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 
    Dieses Feld ist ein Container-Objekt für die App-Interaktion. Gib ihm ein Kamelgehäuse **[!UICONTROL Feldname]** `appInteraction`, **[!UICONTROL Anzeigename]** `App Interaction`und **[!UICONTROL type]** `Object`.
 
-1. Auswählen **[!UICONTROL Anwenden]**.
+1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
    ![Hinzufügen eines neuen App-Aktionsereignisses](assets/mobile-schema-datatype-app-action.png)
 
@@ -151,7 +152,7 @@ Erstellen Sie zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 
    Dieser Schritt entspricht einem Erfolgsereignis in Adobe Analytics.
 
-1. Auswählen **[!UICONTROL Anwenden]**.
+1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
    ![Feld für Aktionsnamen hinzufügen](assets/mobile-schema-datatype-action-name.png)
 
@@ -193,7 +194,7 @@ Fügen Sie nun mithilfe Ihres benutzerdefinierten Datentyps eine benutzerdefinie
 
 1. Auswählen `App Information` von **[!UICONTROL Typ]** Dropdown-Liste den Datentyp aus, den Sie in der vorherigen Übung erstellt haben.
 
-1. Auswählen **[!UICONTROL Anwenden]**.
+1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
    ![Anwenden auswählen](assets/mobile-schema-fieldgroup-apply.png)
 

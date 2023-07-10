@@ -1,12 +1,12 @@
 ---
 title: Ausführen von Abfragen mit Query Service
 description: In diesem Video wird gezeigt, wie Abfragen in der Adobe Experience Platform-Benutzeroberfläche und in einem PSQL-Client ausgeführt werden. Darüber hinaus wird die Verwendung einzelner Eigenschaften in einem XDM-Objekt, die Verwendung von Adobe-definierten Funktionen und die Verwendung von CREATE TABLE AS SELECT (CTAS) demonstriert.
-role: Data Engineer,User
 feature: Queries
+role: Data Engineer
 jira: KT-3140
 thumbnail: 29796.jpg
 exl-id: 7b264733-a0e0-44cd-a2c0-680a473f8cf6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 46%

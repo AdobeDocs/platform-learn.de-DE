@@ -3,10 +3,12 @@ user-guide-title: Experience Maker Content Supply Chain Bootcamp
 breadcrumb-title: Experience Maker Content Supply Chain Bootcamp
 user-guide-description: Ein praktisches Tutorial, das zeigt, wie die Adobe-Produkte Ihnen bei der Optimierung Ihrer Inhaltsversorgungskette helfen können.
 audience: all
+role: User,Developer
+level: Beginner,Intermediate
 index: false
 hide: true
 doc-type: multipage
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 3%

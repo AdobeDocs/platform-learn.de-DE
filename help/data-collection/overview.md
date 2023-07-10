@@ -1,9 +1,9 @@
 ---
 title: Tutorials zur Datenerfassung
 description: Anleitungen und Tutorials, um Sie zu einem leistungsstarken Benutzer der Datenerfassung zu machen
-mini-toc-levels: 1
+mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 40%
@@ -19,14 +19,11 @@ Die Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für We
 ## Neue Funktionen
 
 * **[Übersicht über die Server-API (Video)](server-api/overview.md)**
-
-   *Senden Sie Daten mit einer sicheren, authentifizierten Server-API.*
+  *Senden Sie Daten mit einer sicheren, authentifizierten Server-API.*
 * **[Implementieren von Adobe Experience Cloud in Apps (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de)**
-
-   *Implementieren von Experience Cloud-Anwendungen mit dem Mobile SDK.*
+  *Implementieren von Experience Cloud-Anwendungen mit dem Mobile SDK.*
 * **[Verschieben von clientseitigen Tags (Tutorial)](event-forwarding/consider-moving-tags.md)**
-
-   *Ziehen Sie das Verschieben clientseitiger Tags zur Ereignisweiterleitung in Erwägung.*
+  *Ziehen Sie das Verschieben clientseitiger Tags zur Ereignisweiterleitung in Erwägung.*
 
 </div>
 
@@ -48,7 +45,7 @@ Die Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für We
       <img alt="Implementieren von Adobe Experience Cloud mit dem Web SDK" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de" target="_blank">
     <strong>Implementieren des Experience Cloud mit dem Web SDK</strong>
     </a>
     </div>
@@ -57,11 +54,11 @@ Die Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für We
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de" target="_blank">
       <img alt="Implementieren in Apps" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank"><strong> zum Implementieren von Experience Cloud in Mobile Apps</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de" target="_blank"><strong> zum Implementieren von Experience Cloud in Mobile Apps</strong></a>
     </div>
     <p>
     <em>Verwenden von Tags zur Implementierung des Platform Mobile SDK</em>

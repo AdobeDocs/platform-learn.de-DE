@@ -1,11 +1,14 @@
 ---
 title: Push-Nachrichten in Adobe Journey Optimizer
 description: Erfahren Sie, wie Sie mit dem Platform Mobile SDK und Adobe Journey Optimizer Push-Nachrichten für eine Mobile App erstellen.
+solution: Data Collection,Journey Optimizer
+feature-set: Journey Optimizer
+feature: Push
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '881'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -80,7 +83,7 @@ Zusätzliche Dokumentation kann [hier finden](https://help.apple.com/developer-a
 1. Schalten Sie die **[!UICONTROL Push-Anmeldedaten]** -Schaltfläche, um Ihre Anmeldedaten hinzuzufügen.
 1. Ziehen und ablegen `.p8` **Authentifizierungsschlüssel für Apple-Push-Benachrichtigungen** -Datei.
 1. Geben Sie die Schlüssel-ID an, eine 10-stellige Zeichenfolge, die bei der Erstellung von `p8` Authentifizierungsschlüssel. Sie finden sie auf der Registerkarte Schlüssel auf der Seite **Zertifikate, Kennungen und Profile**.
-1. Geben Sie die Team ID an. Dies ist ein string -Wert, der unter der **Mitgliedschaft** Registerkarte.
+1. Geben Sie die Team ID an. Dies ist ein Zeichenfolgenwert, der auf der Registerkarte **Mitgliedschaft** zu finden ist.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
    ![App-Oberflächenkonfiguration](assets/mobile-push-app-surface-config.png)
 
@@ -95,6 +98,7 @@ Zusätzliche Dokumentation kann [hier finden](https://help.apple.com/developer-a
 
 >[!NOTE]
 >Wenn Sie &quot;CJM Push Tracking Experience Event Datensatz&quot;nicht als Option sehen, wenden Sie sich an die Kundenunterstützung.
+>
 
 ## Implementieren von Adobe Journey Optimizer in die App
 
