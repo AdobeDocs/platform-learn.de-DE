@@ -3,10 +3,10 @@ title: Erstellen von Datenelementen
 description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 9b112881a3b062cbd56502b3644c701c82380735
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 5%
+source-wordcount: '1163'
+ht-degree: 6%
 
 ---
 
@@ -47,7 +47,7 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} Datenschicht und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die folgenden vorherigen Schritte im Tutorial ausgeführt haben
+Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die folgenden vorherigen Schritte im Tutorial ausgeführt haben
 
 * [Berechtigungen konfigurieren](configure-permissions.md)
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
@@ -61,7 +61,7 @@ Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;
 
 ## Erstellen von Datenelementen zum Erfassen der Datenschicht
 
-Bevor Sie mit der Erstellung des XDM-Objekts beginnen, erstellen Sie den folgenden Satz von Datenelementen, die dem [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} Datenschicht:
+Bevor Sie mit der Erstellung des XDM-Objekts beginnen, erstellen Sie den folgenden Satz von Datenelementen, die dem [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Datenschicht:
 
 1. Navigieren Sie zu **[!UICONTROL Datenelemente]** und wählen Sie **[!UICONTROL Datenelement hinzufügen]** (oder **[!UICONTROL Neues Datenelement erstellen]** wenn in der Tag-Eigenschaft keine Datenelemente vorhanden sind)
 
@@ -81,16 +81,16 @@ Bevor Sie mit der Erstellung des XDM-Objekts beginnen, erstellen Sie den folgend
 Führen Sie dieselben Schritte aus, um diese vier zusätzlichen Datenelemente zu erstellen:
 
 * **`page.pageInfo.server`**  zugeordnet zu
-   `digitalData.page.pageInfo.server`
+  `digitalData.page.pageInfo.server`
 
 * **`page.pageInfo.hierarchie1`**  zugeordnet zu
-   `digitalData.page.pageInfo.hierarchie1`
+  `digitalData.page.pageInfo.hierarchie1`
 
 * **`user.profile.attributes.username`**  zugeordnet zu
-   `digitalData.user.0.profile.0.attributes.username`
+  `digitalData.user.0.profile.0.attributes.username`
 
 * **`user.profile.attributes.loggedIn`** zugeordnet zu
-   `digitalData.user.0.profile.0.attributes.loggedIn`
+  `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`cart.orderId`** zugeordnet zu `digitalData.cart.orderId` (Sie verwenden dies während der [Einrichten von Analytics](setup-analytics.md) Lektion)
 
@@ -135,10 +135,6 @@ Als Nächstes können Sie das Datenelement &quot;Identity Map&quot;erstellen:
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
    ![Datenerfassungsoberfläche](assets/identity-id-namespace.png)
-
->[!WARNING]
->
->Die primäre Identität ist in allen an Adobe Experience Platform gesendeten Datensätzen erforderlich. Standardmäßig wird die Experience Cloud-ID (ECID) als primäre Identität des Platform Web SDK verwendet. Sie möchten nie etwas wie das `Luma CRM ID` als primäre Identität mit dem Web SDK verwenden, da sie erst existiert, nachdem sich der Benutzer authentifiziert hat, und daher nicht in allen Datensätzen verfügbar wäre.
 
 <!--
 1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
@@ -208,10 +204,10 @@ Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt werden:
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
 | `page.pageInfo.hierarchie1` | `xdm.content` |
-| `page.pageInfo.pageName` |  |
-| `page.pageInfo.server` |  |
-| `user.profile.attributes.loggedIn` |  |
-| `user.profile.attributes.username` |  |
+| `page.pageInfo.pageName` | |
+| `page.pageInfo.server` | |
+| `user.profile.attributes.loggedIn` | |
+| `user.profile.attributes.username` | |
 
 Wenn diese Datenelemente vorhanden sind, können Sie mit dem Senden von Daten an Platform Edge Network über das XDM-Objekt beginnen, indem Sie eine Regel in Tags erstellen.
 
