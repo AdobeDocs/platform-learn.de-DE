@@ -6,14 +6,14 @@ feature: Segments
 jira: KT-2705
 thumbnail: 27428.jpg
 exl-id: 5e3b7d65-10e6-418f-98ab-99a3ac47e839
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: f1930db43c5e6fbfd4fe3daf116049fa09fcfb8b
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 7%
 
 ---
 
-# Dynamische Segmente erstellen
+# Dynamische Zielgruppen erstellen
 
 Dynamische Zielgruppen sind eine erweiterte Segmentierungsfunktion in Adobe Experience Platform, mit der sich die Skalierbarkeitsprobleme lösen lassen, mit denen Marketingexperten traditionell beim Erstellen von Zielgruppen für Marketingkampagnen konfrontiert sind.
 
