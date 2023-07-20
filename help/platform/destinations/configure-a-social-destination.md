@@ -1,14 +1,14 @@
 ---
 title: Konfigurieren eines sozialen Ziels
 description: In diesem Video gehen wir durch die Konfiguration eines sozialen Ziels in Adobe Experience Platform, einschließlich Authentifizierung, Segmentzuweisung, ID-Zuordnung usw.
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User
 level: Beginner
 jira: KT-7206
 thumbnail: 332599.jpg
 exl-id: 9ec200e6-8ef9-47f5-98ca-1c1a2da3fb29
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 9%
