@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials
 user-guide-description: Lernen Sie die vielen Komponenten von Experience Platform kennen.
 audience: all
 doc-type: video
-source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
+source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 41%
+source-wordcount: '978'
+ht-degree: 42%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 41%
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [Übersicht über B2B Edition](/help/platform/rtcdp/b2b-overview.md)
    + [Kampagnen mit Marketo Engage koordinieren](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [Erste Schritte: Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
++ [Erste Schritte: Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de){target="_blank"}
 + [Bei Experience Platform-APIs authentifizieren](/help/platform/authentication/platform-api-authentication.md)
 + [Importieren von Beispieldaten nach Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
@@ -205,8 +205,11 @@ ht-degree: 41%
    + [Streamen von Daten mithilfe von Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Nächste Hit-Personalisierung mit Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud-Integrationen {#experience-cloud}
-   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Kampagnen mit Marketo Engage koordinieren](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=de)
+   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
+   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Zielgruppe](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Trends in der Branche {#industry}
    + [Die Zukunft des Daten-Managements und die sich verändernde Umgebung](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Eine Geschichte von zwei Wahrnehmungen – Marken vs. Verbraucher](/help/platform/industry/brands-vs-consumers.md)
