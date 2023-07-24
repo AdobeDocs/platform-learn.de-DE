@@ -3,9 +3,9 @@ title: Erstellen von Datenelementen
 description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 28333d3079f586996cd6b6933831ffd9f3caacd1
+source-git-commit: 0c9c8c679c2c0b3446e802bf52028194b08e6644
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1206'
 ht-degree: 6%
 
 ---
@@ -140,6 +140,9 @@ Als Nächstes können Sie das Datenelement &quot;Identity Map&quot;erstellen:
 >[!TIP]
 >
 > Adobe empfiehlt, Identitäten zu senden, die eine Person repräsentieren, z. B. `Luma CRM Id`als [!UICONTROL primary] Identität.
+>
+> Wenn die Identitätszuordnung beide `Luma CRM Id` und ECID, dann `Luma CRM Id` wird [!UICONTROL primary] Identität. Wenn die Identitätszuordnung nur ECID enthält, wird ECID zum [!UICONTROL primary] Identität.
+
 
 
 
