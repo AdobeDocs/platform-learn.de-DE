@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials
 user-guide-description: Lernen Sie die vielen Komponenten von Experience Platform kennen.
 audience: all
 doc-type: video
-source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
+source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 42%
+source-wordcount: '975'
+ht-degree: 43%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 42%
 + [Platform-Tutorials](/help/platform/overview.md)
 + Einführung in Platform {#intro-to-platform}
    + [Kundenerlebnis auf der Basis von Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
-   + [Hinter den Kulissen: Kundenerlebnis auf der Basis von Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+   + [Hinter den Kulissen: Ein Kundenerlebnis basierend auf Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Übersicht zu Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Wichtigste Funktionen](/help/platform/intro-to-platform/key-capabilities.md)
    + [Anwendungen und intelligente Dienste](/help/platform/intro-to-platform/application-and-intelligent-services.md)
    + [Integrationen mit Experience Cloud-Anwendungen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Wichtige Anwendungsfälle](/help/platform/intro-to-platform/key-use-cases.md)
    + [Grundlegende Architektur](/help/platform/intro-to-platform/basic-architecture.md)
-   + [Verwenden der Benutzeroberfläche von Platform](/help/platform/intro-to-platform/interface-tour.md)
+   + [Benutzeroberfläche](/help/platform/intro-to-platform/interface-tour.md)
    + [Rollen und Projektphasen](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Einführung in Real-Time CDP {#rtcdp}
    + [Übersicht](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
@@ -96,7 +96,7 @@ ht-degree: 42%
    + [Architektur](data-science-workspace/architecture-overview.md)
    + [Kursschema und -datensatz erstellen](data-science-workspace/create-the-course-schema-and-dataset.md)
    + [Laden von Daten in JupyterLab-Notebooks](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-   + [Daten in JupyterLab-Notebooks abfragen und ermitteln](data-science-workspace/dsw-query-service.md)
+   + [Daten in JupyterLab-Notebooks abfragen und aufdecken](data-science-workspace/dsw-query-service.md)
    + [Explorative Datenanalyse](data-science-workspace/eda.md)
    + [Rezepte, Modelle und Dienste - Übersicht](data-science-workspace/recipes-models-services-overview.md)
    + [Erstellen eines Modells mithilfe der Rezept-Builder-Vorlage](data-science-workspace/recipe-builder-template.md)
@@ -123,7 +123,7 @@ ht-degree: 42%
       + [Aktivieren von Segmenten und Profilattributen](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Verwenden von Real-Time CDP-Segmenten in Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Real-Time CDP-Profilattribute in Target verwenden](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
-   + [Webinar zur Datenaktivierung für Nicht-Adobe-Apps](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
+   + [Webinar zur Datenaktivierung für Anwendungen ohne Adobe](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identitäten {#identities}
    + [Identitäts- und Identitätsdiagramme - Übersicht](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Identitätsdaten beschriften, erfassen und überprüfen](/help/platform/identities/label-ingest-and-verify-identity-data.md)
