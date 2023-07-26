@@ -5,11 +5,10 @@ landing-page-description: Hier erfahren Sie, wie Sie mit dem Experience Cloud De
 short-description: Hier erfahren Sie, wie Sie mit dem Experience Cloud Debugger eine Fehlerbehebung bei Implementierungen durchführen. Machen Sie sich ein Bild davon, welche Adobe-Lösungen implementiert sind und welche Aufrufe sie durchführen.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html
 feature: Debugger
-role: Data Engineer
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 50%

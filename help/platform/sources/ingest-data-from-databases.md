@@ -1,12 +1,13 @@
 ---
-title: Daten mithilfe eines Datenbank-Quell-Connectors erfassen
+title: Daten mithilfe eines Quell-Connectors erfassen
 description: In diesem Video wird erläutert, wie Sie nahtlos und skalierbar einen Batch-Datensatz aus einer Datenbankquelle in das Echtzeit-Kundenprofil von Adobe Experience Platform und den Experience Data Lake integrieren können.
-role: Data Engineer
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 jira: KT-6546
 thumbnail: 329317.jpg
 exl-id: c881e088-9569-4342-8f27-3815f187b217
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%

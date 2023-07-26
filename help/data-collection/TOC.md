@@ -4,7 +4,8 @@ breadcrumb-title: Tutorials zur Datenerfassung
 user-guide-description: Anleitungsvideos und Tutorials, die Sie zu einem Power-User der Datenerfassung in Experience Platform machen.
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 286a5570d33d1d812d1a54c28e1ea4f68f00b988
+role: Developer, Data Engineer
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 43%
@@ -41,7 +42,7 @@ ht-degree: 43%
 + Mobile SDK{#mobile-sdk}
    + [Übersicht](mobile-sdk/overview.md)
    + [Erstellen mobiler Eigenschaften](mobile-sdk/create-mobile-properties.md)
-   + [Verwenden von Abhängigkeitsmanagern](mobile-sdk/use-dependency-managers.md)
+   + [Abhängigkeitsmanager verwenden](mobile-sdk/use-dependency-managers.md)
    + [Implementieren in Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de){target="_blank"}
 + Server-API{#server-api}
    + [Übersicht](server-api/overview.md)

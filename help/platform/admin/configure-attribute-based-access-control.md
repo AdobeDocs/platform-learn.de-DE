@@ -1,16 +1,17 @@
 ---
 title: Konfigurieren der attributbasierten Zugriffskontrolle
 description: Erfahren Sie, wie Sie die attributbasierte Zugriffskontrolle konfigurieren, um den Zugriff auf bestimmte Experience Platform-Ressourcen zu steuern.
-role: Admin, User
 feature: Access Control
+role: Admin, User
+level: Beginner
 jira: KT-10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '79'
-ht-degree: 8%
+ht-degree: 18%
 
 ---
 

@@ -2,12 +2,11 @@
 title: Erstellen einer Ereignisweiterleitungs-Eigenschaft
 description: Erfahren Sie, wie Sie eine Ereignisweiterleitungs-Eigenschaft in der Datenerfassung erstellen.
 feature: Event Forwarding
-role: Data Engineer
 level: Intermediate
 jira: KT-6420
 thumbnail: 331938.jpeg
 exl-id: 63a578d3-1220-4588-b289-7310f4905d52
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 17%
@@ -22,8 +21,8 @@ Erfahren Sie, wie Sie eine Ereignisweiterleitungs-Eigenschaft in der Datenerfass
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * platform launch (Client-seitig) ist jetzt **[!DNL tags]**
-> * platform launch Server Side ist jetzt **[!DNL event forwarding]**
+> * Platform launch (Client-seitig) ist jetzt **[!DNL tags]**
+> * Platform launch Server Side ist jetzt **[!DNL event forwarding]**
 > * Edge-Konfigurationen sind jetzt verfügbar **[!DNL datastreams]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/331938?quality=12&learn=on)

@@ -1,12 +1,13 @@
 ---
 title: Data Governance - Übersicht
 description: Erfahren Sie, wie Sie die vollständige Kontrolle über Ihre Daten von dem Punkt an übernehmen können, an dem sie in Datenquellen erfasst werden, bis zu dem Zeitpunkt, an dem sie mit Zielen außerhalb von Adobe Experience Platform synchronisiert werden.
-role: Data Architect
 feature: Data Governance
+role: User, Developer, Data Architect, Admin
+level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 5%

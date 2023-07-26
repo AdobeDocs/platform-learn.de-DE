@@ -4,12 +4,11 @@ description: Erfahren Sie, wie Sie mit der Chrome-Erweiterung Adobe Experience P
 landing-page-description: Debuggen Sie Ihre Web-Implementierungen des Adobe Experience Platform Web SDK und von Experience Cloud-Programmen.
 short-description: Debuggen Sie Ihre Web-Implementierungen des Adobe Experience Platform Web SDK und von Experience Cloud-Programmen.
 feature: Debugger
-role: Data Engineer
 level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 63%

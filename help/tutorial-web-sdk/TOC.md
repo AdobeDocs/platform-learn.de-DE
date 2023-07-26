@@ -3,11 +3,11 @@ user-guide-title: Tutorial zur Implementierung von Adobe Experience Cloud mit We
 breadcrumb-title: Web SDK-Tutorial
 solution: Data Collection
 feature: Web SDK,Tags
-role: Data Engineer
+role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 41%
@@ -28,7 +28,7 @@ ht-degree: 41%
    + [Installieren der Web SDK-Erweiterung](install-web-sdk.md)
    + [Erstellen von Datenelementen](create-data-elements.md)
    + [Tag-Regel erstellen](create-tag-rule.md)
-   + [Mit Debugger überprüfen](validate-with-debugger.md)
+   + [Validieren mit Debugger](validate-with-debugger.md)
 
 + Anwendungseinstellungen {#applications-setup}
    + [Einrichten der Experience Platform](setup-experience-platform.md)

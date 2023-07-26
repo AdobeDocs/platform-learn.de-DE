@@ -2,10 +2,11 @@
 user-guide-title: Erste Schritte mit Experience Platform für Datenarchitekten und Dateningenieure
 breadcrumb-title: Erste Schritte für Datenarchitekten und -ingenieure
 user-guide-description: Ein praktisches Tutorial zur Implementierung von Platform. Beispieldaten und Kreativelemente werden bereitgestellt.
-audience: all
+role: Data Architect, Data Engineer, Developer
+level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 46%

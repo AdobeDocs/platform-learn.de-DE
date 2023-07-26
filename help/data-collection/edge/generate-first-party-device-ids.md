@@ -2,10 +2,11 @@
 title: Generieren von First-Party-Geräte-IDs
 description: Erfahren Sie, wie Erstanbieter-Geräte-IDs generiert werden
 feature: Web SDK
+level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 2%
@@ -32,7 +33,7 @@ Im Folgenden finden Sie ein kurzes Beispiel für die Funktionsweise der Funktion
 1. Die Adobe Experience Platform Web SDK-Implementierung des Kunden sendet eine Anfrage an das Platform Edge Network, einschließlich der FPID in der Identitätszuordnung.
 1. Experience Platform Edge Network empfängt die FPID und generiert mit ihr eine Experience Cloud-ID (ECID).
 1. Die Antwort des Platform Web SDK sendet die ECID zurück an den Browser des Endbenutzers.
-1. Wenn die Variable `idMigrationEnabled=true`verwendet das Platform Web SDK JavaScript, um die ECID als `AMCV_` -Cookie im Browser des Endbenutzers.
+1. Wenn die Variable `idMigrationEnabled=true`, verwendet das Platform Web SDK JavaScript, um die ECID als `AMCV_` -Cookie im Browser des Endbenutzers.
 1. Im Ereignis wird die `AMCV_` -Cookie abläuft, wiederholt sich der Prozess selbst. Solange dieselbe Erstanbieter-Geräte-ID verfügbar ist, wird ein neuer `AMCV_` -Cookie mit demselben ECID-Wert wie zuvor erstellt.
 
 >[!NOTE]
@@ -133,7 +134,7 @@ Der letzte Schritt besteht darin, PHP zu verwenden, um den Cookie-Wert mit der I
 
 >[!IMPORTANT]
 >
->Das Identitäts-Namespace-Symbol, das in der Identitätszuordnung verwendet wird, muss aufgerufen werden `FPID`.
+>Das in der Identitätszuordnung verwendete Identitäts-Namespace-Symbol muss aufgerufen werden `FPID`.
 >
 > `FPID` ist ein reservierter Identitäts-Namespace, der nicht in den Benutzeroberflächenlisten von Identitäts-Namespaces angezeigt wird.
 

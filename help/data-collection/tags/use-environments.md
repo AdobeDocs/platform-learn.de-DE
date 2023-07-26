@@ -2,9 +2,10 @@
 title: Verwenden von Tag-Umgebungen (ehemals Launch-Umgebungen)
 description: Erfahren Sie, wie Sie mit Entwicklungs-, Staging- und Produktionsumgebungen Ihre Tag-Eigenschaft entwickeln und überprüfen können.
 feature: Tags
+level: Beginner
 jira: KT-3527
 exl-id: 95399c9a-72f6-4b20-905c-0627f106ccfb
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%

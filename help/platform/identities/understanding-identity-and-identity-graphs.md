@@ -1,12 +1,13 @@
 ---
 title: Identitäts- und Identitätsdiagramme - Übersicht
 description: Erfahren Sie mehr über die wichtigsten Funktionen zur Identitätsauflösung in Adobe Experience Platform&mdash, zur Identitätskollektion, zu Identitätsdiagrammen und den APIs. Erfahren Sie, wie der Identity-Dienst getrennte Identitäten verknüpft, um durch die Erstellung eines einheitlichen Profils ein konsistentes vernetztes Erlebnis bereitzustellen.
-role: Data Architect
 feature: Identities
+role: Data Architect, Data Engineer, Developer
+level: Beginner
 jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 5%

@@ -1,19 +1,20 @@
 ---
 title: Übersichtsdiagramm des Echtzeit-Kundenprofils
 description: Dieses Video führt Sie durch ein Übersichtsdiagramm, das die Echtzeit-Kundenprofilfunktion von Adobe Experience Platform veranschaulicht.
-role: Data Architect, Data Engineer
 feature: Profiles
+role: Data Engineer, Data Architect, Developer, User
+level: Beginner
 jira: KT-4943
 thumbnail: 33600.jpg
 exl-id: 1cff5492-82bb-484c-a96a-3417288d4766
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 9%
 
 ---
 
-# Übersichtsdiagramm des Echtzeit-Kundenprofils
+# Übersicht über das Echtzeit-Kundenprofil
 
 Dieses Video führt Sie durch ein Übersichtsdiagramm, das die Echtzeit-Kundenprofilfunktion von Adobe Experience Platform veranschaulicht.
 

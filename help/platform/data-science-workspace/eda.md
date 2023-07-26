@@ -1,12 +1,13 @@
 ---
 title: Analyse von Forschungsdaten in Data Science Workspace
 description: Das Tutorial zur Analyse von Explorationsdaten (EDA) soll Ihnen dabei helfen, Muster in Daten zu ermitteln, die Datensicherheit zu überprüfen und die relevanten Daten für Vorhersagemodelle zusammenzufassen.
-role: User
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7288
 thumbnail: 333310.jpg
 exl-id: ddb6f5d8-c432-4e03-a6e0-fa7da73a6f3d
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%

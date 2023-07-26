@@ -3,10 +3,11 @@ title: Erneutes Laden Ihrer Kundendaten für die Bereitstellung elektrisierter E
 description: Erfahren Sie, wie Sie die Auswirkungen von Daten mit geringer Qualität verringern, die Zeit bis zur Wertschöpfung reduzieren und den ROI multiplizieren können, indem Sie dieselben Daten für eine Vielzahl von Anwendungsfällen verwenden.
 feature: Queries
 role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Erneutes Laden Ihrer Kundendaten für die Bereitstellung elektrisierter Erlebnisse
 
-Omnichannel-Daten sind ein wichtiger Bestandteil zur Unterstützung umsetzbarer Kundenprofile, die von Marketing-Experten verwendet werden, um die Aktivierung zu orchestrieren und die resultierenden Journey zu messen. Unternehmen stehen jedoch vor Herausforderungen bei der Verwaltung der Qualität, des Umfangs und der Vielfalt dieser Daten. Sie erfordern optimierte Lösungen, um die Auswirkungen minderwertiger Daten zu verringern, die Zeit bis zur Wertschöpfung zu reduzieren und den ROI zu multiplizieren, indem für viele Anwendungsfälle dieselben Daten verwendet werden.
+Omnichannel-Daten sind ein wichtiger Bestandteil zur Unterstützung umsetzbarer Kundenprofile, die von Marketing-Experten verwendet werden, um die Aktivierung zu orchestrieren und die resultierenden Journey zu messen. Unternehmen stehen jedoch vor Herausforderungen bei der Verwaltung der Qualität, des Umfangs und der Vielfalt dieser Daten. Sie erfordern optimierte Lösungen, um die Auswirkungen minderwertiger Daten zu verringern, die Zeit bis zur Wertschöpfung zu reduzieren und den ROI zu multiplizieren, indem dieselben Daten für eine Vielzahl von Anwendungsfällen verwendet werden.
 
 In diesem Video wird Folgendes untersucht:
 

@@ -1,12 +1,13 @@
 ---
 title: Erstellen eines Modells mithilfe der Rezept-Builder-Vorlage
-description: In diesem Video wird gezeigt, wie mithilfe der Vorlage "Rezept-Builder"im JupyterLab-Starter ein Tendenzmodell trainiert und bewertet und ein Rezept erstellt wird.
-role: User
+description: In diesem Video wird die Verwendung der Vorlage "Rezept-Builder"im JupyterLab-Starter gezeigt, um ein Tendenzmodell zu trainieren und zu bewerten und ein Rezept zu erstellen.
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7290
 thumbnail: 333570.jpg
 exl-id: 49b86450-d49a-4467-805d-02bd65e7ca95
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 7%
@@ -15,7 +16,7 @@ ht-degree: 7%
 
 # Erstellen eines Modells mithilfe der Rezept-Builder-Vorlage
 
-In diesem Video wird gezeigt, wie mithilfe der Vorlage &quot;Rezept-Builder&quot;im JupyterLab-Starter ein Tendenzmodell trainiert und bewertet und ein Rezept erstellt wird.
+In diesem Video wird die Verwendung der Vorlage &quot;Rezept-Builder&quot;im JupyterLab-Starter gezeigt, um ein Tendenzmodell zu trainieren und zu bewerten und ein Rezept zu erstellen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333570?quality=12&learn=on)
 

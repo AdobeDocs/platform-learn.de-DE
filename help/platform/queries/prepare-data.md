@@ -2,11 +2,12 @@
 title: Vorbereiten von Daten
 description: Erfahren Sie, wie Sie Daten aus mehreren Datensätzen bereinigen, vorbereiten und kombinieren, um mithilfe von CTAS (Create Table AS)- und Spark SQL-Funktionen für Reporting und Dashboards einen neuen Datensatz zu erstellen.
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Beginner
 jira: KT-8005
 thumbnail: 333699.jpg
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 12%

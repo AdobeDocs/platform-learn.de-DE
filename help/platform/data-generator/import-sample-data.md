@@ -1,13 +1,14 @@
 ---
 title: Importieren von Beispieldaten nach Adobe Experience Platform
 description: Erfahren Sie, wie Sie eine Experience Platform-Sandbox-Umgebung mit einigen Beispieldaten einrichten.
-role: Developer
 feature: API
+role: Developer
+level: Experienced
 jira: KT-7349
 thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 8%
@@ -26,7 +27,7 @@ Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Lum
 
 >[!NOTE]
 >
->Das Endergebnis dieses Tutorials ist eine Sandbox mit ähnlichen Daten wie die [Tutorial zu den ersten Schritten mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Sie wurde im April 2023 aktualisiert, um die [Herausforderungen für Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de). Es wurde im Juni 2023 aktualisiert, um die Authentifizierungsmethode auf OAuth umzustellen.
+>Das Endergebnis dieses Tutorials ist eine Sandbox mit ähnlichen Daten wie die [Tutorial zu den ersten Schritten mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de). Sie wurde im April 2023 aktualisiert, um die [Herausforderungen für Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de). Es wurde im Juni 2023 aktualisiert, um die Authentifizierungsmethode auf OAuth umzustellen.
 
 
 ## Voraussetzungen
@@ -46,17 +47,17 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die [Postman](ht
 
    >[!NOTE]
    >
-   >Benutzerdaten, die in der Variablen [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) -Datei ist fiktiv und nur zu Demonstrationszwecken verwendet.
+   >Benutzerdaten, die im [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) -Datei ist fiktiv und nur zu Demonstrationszwecken verwendet.
 
 1. Verschieben Sie die Datei `platform-utils-main.zip` aus dem Downloads-Ordner an den gewünschten Speicherort auf Ihrem Computer und entpacken Sie sie.
 1. Im `luma-data` Ordner, öffnen Sie alle `json` -Dateien in einem Texteditor und ersetzen Sie alle Instanzen von `_yourTenantId` mit Ihrer eigenen Mandanten-ID, der ein Unterstrich vorangestellt ist.
-1. Öffnen `luma-offline-purchases.json`, `luma-inventory-events.json`und `luma-web-events.json` in einem Texteditor verwenden und alle Zeitstempel so aktualisieren, dass die Ereignisse im letzten Monat eintreten (suchen Sie beispielsweise nach `"timestamp":"2022-11` und ersetzen Jahr und Monat)
+1. Öffnen `luma-offline-purchases.json`, `luma-inventory-events.json`, und `luma-web-events.json` in einem Texteditor verwenden und alle Zeitstempel so aktualisieren, dass die Ereignisse im letzten Monat eintreten (suchen Sie beispielsweise nach `"timestamp":"2022-11` und ersetzen Jahr und Monat)
 1. Notieren Sie den Speicherort des entpackten Ordners, wie Sie ihn später bei der Einrichtung der `FILE_PATH` [!DNL Postman] Umgebungsvariable:
 
    >[!NOTE]
    > Um den Dateipfad auf Ihrem Mac abzurufen, navigieren Sie zum `platform-utils-main` Ordner, klicken Sie mit der rechten Maustaste auf den Ordner und wählen Sie **Informationen abrufen** -Option.
    >
-   > ![Mac-Dateipfad](../assets/data-generator/images/mac-file-path.png)
+   > ![MAC-Dateipfad](../assets/data-generator/images/mac-file-path.png)
 
    >[!NOTE]
    > Um den Dateipfad in Ihren Fenstern abzurufen, klicken Sie auf den Speicherort des gewünschten Ordners und klicken Sie dann mit der rechten Maustaste rechts neben dem Pfad in der Adressleiste. Kopieren Sie die Adresse, um den Dateipfad abzurufen.
@@ -67,14 +68,14 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die [Postman](ht
    ![Arbeitsbereich erstellen](../assets/data-generator/images/create-workspace.png)
 1. Geben Sie einen **Name** und optional **Zusammenfassung** für Ihren Arbeitsbereich und klicken Sie auf **Arbeitsbereich erstellen**. [!DNL Postman] Wechselt beim Erstellen zu Ihrem neuen Arbeitsbereich.
    ![Arbeitsbereich speichern](../assets/data-generator/images/save-workspace.png)
-1. Passen Sie jetzt einige Einstellungen an, um die [!DNL Postman] Sammlungen in diesem Arbeitsbereich. In der Kopfzeile von [!DNL Postman], klicken Sie auf das Zahnradsymbol und wählen Sie **Einstellungen** , um das Einstellungs-Modal zu öffnen. Sie können auch den Tastaturbefehl (CMD/STRG + , ) verwenden, um das Modal zu öffnen.
+1. Passen Sie jetzt einige Einstellungen an, um die [!DNL Postman] Sammlungen in diesem Arbeitsbereich. In der Kopfzeile von [!DNL Postman], klicken Sie auf das Zahnradsymbol und wählen Sie **Einstellungen** , um das Einstellungsmodul zu öffnen. Sie können auch den Tastaturbefehl (CMD/STRG + , ) verwenden, um das Modal zu öffnen.
 1. Unter dem `General` -Tab, aktualisieren Sie den Anforderungstimeout in ms auf `5000 ms` und aktivieren `allow reading file outside this directory`
    ![Einstellungen](../assets/data-generator/images/settings.png)
 
    >[!NOTE]
    > Wenn Dateien aus dem Arbeitsverzeichnis geladen werden, wird sie geräteübergreifend reibungslos ausgeführt, wenn dieselben Dateien auf den anderen Geräten gespeichert werden. Wenn Sie jedoch Dateien von außerhalb des Arbeitsverzeichnisses ausführen möchten, muss eine Einstellung aktiviert sein, um denselben Intent anzugeben. Wenn `FILE_PATH` ist nicht dasselbe wie das [!DNL Postman]den Arbeitsverzeichnispfad festgelegt hat, sollte diese Option aktiviert sein.
 
-1. Schließen Sie die **Einstellungen** Bereich.
+1. Schließen Sie die **Einstellungen** Bedienfeld.
 1. Wählen Sie die **Umgebungen** und wählen Sie **Import**:
    ![Umgebungs-Import](../assets/data-generator/images/env-import.png)
 1. Importieren Sie die heruntergeladene JSON-Umgebungsdatei, `DataInExperiencePlatform.postman_environment`
@@ -90,10 +91,10 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die [Postman](ht
    * `IMS`
    * `IMS_ORG`—`Organization ID` in der Adobe Developer Console
    * `SANDBOX_NAME`
-   * `TENANT_ID`—Stellen Sie sicher, dass Sie mit einem Unterstrich führen, z. B. `_techmarketingdemos`
+   * `TENANT_ID`—Stellen Sie sicher, dass Sie mit einem Unterstrich führen, zum Beispiel `_techmarketingdemos`
    * `CONTAINER_ID`
    * `platform_end_point`
-   * `FILE_PATH`—Verwenden Sie den lokalen Ordnerpfad, aus dem Sie die `platform-utils-main.zip` -Datei. Vergewissern Sie sich, dass darin der Ordnername enthalten ist, z. B. `/Users/dwright/Desktop/platform-utils-main`
+   * `FILE_PATH`—Verwenden Sie den lokalen Ordnerpfad, aus dem Sie die `platform-utils-main.zip` -Datei. Stellen Sie sicher, dass der Ordnername enthalten ist, z. B. `/Users/dwright/Desktop/platform-utils-main`
 
 1. **Speichern** die aktualisierte Umgebung
 
@@ -152,7 +153,7 @@ Jetzt können Sie die Daten vorbereiten und in Ihre Platform-Sandbox importieren
 
    ![Treueergebnis](../assets/data-generator/images/loyalty-result.png)
 
-1. Melden wir uns jetzt bei an [Adobe Experience Platform-Benutzeroberfläche](https://platform.adobe.com/) und zu Datensätzen navigieren.
+1. Melden wir uns jetzt bei an. [Adobe Experience Platform-Benutzeroberfläche](https://platform.adobe.com/) und zu Datensätzen navigieren.
 1. Öffnen Sie die `Luma Loyalty Dataset` -Datensatz und im Fenster mit der Datensatzaktivität können Sie eine erfolgreiche Batch-Ausführung anzeigen, die 1.000 Datensätze erfasst hat. Sie können auch auf die Option Datensatz-Vorschau klicken, um die erfassten Datensätze zu überprüfen. Möglicherweise müssen Sie mehrere Minuten warten, um zu bestätigen, dass 1000 [!UICONTROL Neue Profilfragmente] erstellt wurden.
    ![Treuedatensatz](../assets/data-generator/images/loyalty-dataset.png)
 1. Wiederholen Sie die Schritte 1 bis 3, um die anderen Sammlungen auszuführen:
@@ -178,10 +179,10 @@ Die Beispieldaten wurden so konzipiert, dass bei der Ausführung der Sammlungen 
 >Wenn das Profil nicht angezeigt wird, überprüfen Sie die [!UICONTROL Datensätze] -Seite, um zu bestätigen, dass alle Datensätze erfolgreich erstellt und erfasst wurden. Wenn das gut aussieht, warten Sie fünfzehn Minuten und überprüfen Sie, ob das Profil im Viewer verfügbar ist.  Wenn bei der Datenerfassung Probleme aufgetreten sind, überprüfen Sie die Fehlermeldungen, um das Problem zu finden. Sie können auch versuchen, die Fehlerdiagnose für die [!UICONTROL Datensätze] und ziehen Sie die JSON-Datendatei per Drag-and-Drop, um die Daten erneut zu erfassen.
 
 
-![Öffnen eines Profils](../assets/data-generator/images/validation-profile-open.png)
+![Profil öffnen](../assets/data-generator/images/validation-profile-open.png)
 
 Durch Durchsuchen der Daten im **[!UICONTROL Attribute]** und **[!UICONTROL Veranstaltungen]** -Tabs anzeigen, sollte das Profil Daten aus den verschiedenen Datendateien enthalten:
-![Ereignisdaten aus der Datei &quot;Offline-Kaufereignisse&quot;](../assets/data-generator/images/validation-profile-events.png)
+![Ereignisdaten aus der Datei Offline-Kaufereignisse](../assets/data-generator/images/validation-profile-events.png)
 
 ## Nächste Schritte
 
@@ -199,4 +200,4 @@ Wenn Sie eine Mobile SDK-Beispielimplementierung erstellen möchten, um eine Ver
 
 Beim Zurücksetzen einer Nicht-Produktions-Sandbox werden alle mit dieser Sandbox verbundenen Ressourcen (Schemas, Datensätze usw.) gelöscht, wobei der Name der Sandbox und die zugehörigen Berechtigungen beibehalten werden. Diese „saubere“ Sandbox ist für Benutzer, die Zugriff darauf haben, unter demselben Namen weiter verfügbar.
 
-Führen Sie die Schritte aus [here](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) , um eine Sandbox-Umgebung zurückzusetzen.
+Führen Sie die Schritte aus [here](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) zum Zurücksetzen einer Sandbox-Umgebung.

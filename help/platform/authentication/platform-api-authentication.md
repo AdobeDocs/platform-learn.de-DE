@@ -1,20 +1,21 @@
 ---
 title: Authentifizieren und Zugreifen auf Experience Platform-APIs
 description: Erfahren Sie, wie Sie auf Adobe Experience Platform-APIs zugreifen können.
-role: Developer
 feature: API
+role: Developer
+level: Beginner
 jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
-# Authentifizierung und Zugriff [!DNL Experience Platform] APIs
+# Authentifizieren und Aufrufen von [!DNL Experience Platform]-APIs
 
 Erfahren Sie mehr über die ersten Schritte mit Adobe Experience Platform-APIs. Dieses Tutorial führt Sie durch den Prozess zum Erstellen von Authentifizierungsberechtigungen und zum Starten von Experience Platform-API-Anfragen.
 

@@ -4,11 +4,10 @@ description: Hier erhalten Sie eine Einführung in den Audience Rule Builder in 
 feature: Segments
 role: User
 level: Beginner
-doc-type: feature video
-thumbnail: 333301.jpg
 jira: KT-7887
+thumbnail: 333301.jpg
 exl-id: ed66a76e-909b-4b60-887f-58e3d6ab349f
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 6%
@@ -21,7 +20,7 @@ Hier erhalten Sie eine Einführung in den Audience Rule Builder in Experience Pl
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmente]&quot; wurden umbenannt.[!UICONTROL Zielgruppen]&quot;in der Platform-Oberfläche. Auswählen **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]** , um den Regel-Builder in diesem Video aufzurufen.
+> &quot;[!UICONTROL Segmente]&quot; wurden umbenannt.[!UICONTROL Zielgruppen]&quot;in der Platform-Oberfläche. Auswählen **[!UICONTROL Erstellen einer Zielgruppe]** > **[!UICONTROL Regel erstellen]** , um den Regel-Builder in diesem Video aufzurufen.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/333301/?quality=12&learn=on)

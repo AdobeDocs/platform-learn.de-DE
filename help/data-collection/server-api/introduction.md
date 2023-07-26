@@ -6,11 +6,11 @@ doc-type: article
 feature-set: Experience Platform
 feature: Server API,API,Data Collection,Integrations
 level: Beginner
-role: User,Developer
+role: User, Data Engineer, Developer
 solution: Data Collection
 topic: Integrations
 exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '2087'
 ht-degree: 0%
@@ -29,15 +29,15 @@ Am Ende dieses Artikels sollten Sie ein klares Verständnis dieser grundlegenden
 
 >[!NOTE]
 >
-> Obwohl es viele APIs gibt, wird der Schwerpunkt hier auf Web- und Browser-APIs liegen: im Grunde, wenn eine Software-Anwendung über das Internet mit einer anderen interagiert.
+> Obwohl es viele APIs gibt, wird der Fokus hier auf Web- und Browser-APIs liegen: im Grunde, wenn eine Software-Anwendung über das Internet mit einer anderen interagiert.
 
 ## API-Begriffe und -Konzepte
 
-Was bedeutet ein Wort oder eine Wortgruppe, und wie kann ich einfach und einfach darüber nachdenken? In einer API bedeutet der &quot;Anwendungs&quot;-Teil eine Softwareanwendung oder ein Programm. Der Teil &quot;Programmierschnittstelle&quot; bezieht sich darauf, wie und wo eine Anwendung für bestimmte Zwecke mit einer anderen Anwendung interagiert. Wenn Sie in unserem Webseitenbeispiel auf einen Link klicken, sendet der Browser eine Anforderung für die Webseite an einen Server.
+Was bedeutet ein Wort oder eine Wortgruppe, und wie kann ich einfach und einfach darüber nachdenken? In einer API bedeutet der &quot;Anwendungs&quot;-Teil eine Software-Anwendung oder ein Programm. Der Teil &quot;Programmierschnittstelle&quot; bezieht sich darauf, wie und wo eine Anwendung für bestimmte Zwecke mit einer anderen Anwendung interagiert. Wenn Sie in unserem Webseitenbeispiel auf einen Link klicken, sendet der Browser eine Anforderung für die Webseite an einen Server.
 
 ![Bild des Hyperlinks mit Ziel-URL](../assets/api101-link-destination.png)
 
-In diesem Screenshot bewegt sich der Mauszeiger über den Adobe Experience Platform-Link. Unten befindet sich die Statusleiste des Webbrowsers, die die &quot;Adresse&quot;der Seite anzeigt, die der Browser erhält. Mit anderen Worten: Durch Klicken auf den Link Adobe Experience Platform wird der Browser angewiesen, &quot;die Seite für mich zu erhalten, damit ich sie hier auf meinem Bildschirm sehen kann&quot;.
+In diesem Screenshot bewegt sich der Mauszeiger über den Adobe Experience Platform-Link. Unten befindet sich die Statusleiste des Webbrowsers, die die &quot;Adresse&quot;der Seite anzeigt, die der Browser erhält. Mit anderen Worten: Wenn Sie auf den Link Adobe Experience Platform klicken, wird der Browser angewiesen, &quot;diese Seite für mich zu erhalten, damit ich sie hier auf meinem Bildschirm sehen kann&quot;.
 
 Wenn auf einen Link geklickt wird, fordert der Browser einen Server an, eine Seite zu erhalten. Dies ist ein `GET` -Anfrage, eine der Anforderungsmethoden, die häufig mit Web-APIs verwendet werden. Eine Sache, die der Browser benötigt, um die Anfrage zu erfüllen, ist die Seite &quot;Adresse&quot; - wo ist es im Web?
 
@@ -55,7 +55,7 @@ Diese Adresse, die URL, hat bestimmte Teile, die für Web- und Browser-APIs sehr
 
 **Regelung**
 
-Die `scheme` oben wird auch als `protocol` mit Web-APIs verwendet werden, ist dies normalerweise entweder `http` oder `https`. HTTP oder HyperText Transfer Protocol ist die Art und Weise, wie Ressourcen wie Webseiten von einem Webserver auf einen Webbrowser übertragen werden. HTTPS ist die sichere Version, bei der die Übertragung über das Internet unter Verwendung von Sicherheitsfunktionen erfolgt, die eine Störung der übertragenen Ressource verhindern sollen. In der Adressleiste des Browsers wird häufig ein kleines Sperrsymbol angezeigt, wenn eine Seite über HTTPS angezeigt wird.
+Die `scheme` oben wird auch als `protocol` mit Web-APIs verwendet werden, ist dies normalerweise entweder `http` oder `https`. HTTP oder HyperText Transfer Protocol ist die Art und Weise, wie Ressourcen wie Webseiten von einem Webserver auf einen Webbrowser übertragen werden. HTTPS ist die sichere Version, bei der die Übertragung über das Internet unter Verwendung von Sicherheitsfunktionen erfolgt, die eine Störung der übertragenen Ressource verhindern sollen. In der Browser-Adressleiste wird häufig ein kleines Sperrsymbol angezeigt, wenn eine Seite über HTTPS angezeigt wird.
 
 Bei Web-APIs erfolgt die Übertragung dieser Ressourcen über HTTP-Anfragen - also HTTP-Anfragen.
 
@@ -65,11 +65,11 @@ Die `business.adobe.com` ist der Host der angeforderten Ressource. Wenn auf unse
 
 Domänennamen sind Teil des Domänennamensystems, besser bekannt als DNS. Die meisten denken an `adobe.com` oder `example.com` als &quot;Domänenname&quot;bezeichnet, es gibt jedoch Teile, die für APIs relevant sind. `www.adobe.com` und `business.adobe.com` kann als Domänennamen bezeichnet werden, die `www.` und `business.` Teile werden als Subdomänen bezeichnet. APIs interagieren oft mit einer URL, die eine Subdomain enthält, z. B. `api.example.com` oder `sub.www.example.com`.
 
-Es ist sehr üblich, den Begriff zu sehen _Host_ einen vollständigen Domänennamen einschließlich aller Subdomänen wie `business.adobe.com`. Es ist auch üblich, die Begriffe zu sehen _domain_ oder _Domänenname_ , wenn auf einen Host ohne die Subdomäne verwiesen wird wie `adobe.com`. Es ist hier nicht wichtig, die spezifischen Begriffe für jeden Teil und jede Variante eines Hosts zu merken. Aber es ist wichtig, dass Sie wissen, dass diese Begriffe häufig verwendet werden, damit Sie alle relevanten Details für Ihr Geschäft und Ihre Diskussionen klären können.
+Es ist sehr üblich, den Begriff _Host_ einen vollständigen Domänennamen einschließlich aller Subdomänen wie `business.adobe.com`. Es ist auch üblich, die Begriffe zu sehen _domain_ oder _Domänenname_ , wenn auf einen Host ohne die Subdomäne verwiesen wird wie `adobe.com`. Es ist hier nicht wichtig, die spezifischen Begriffe für jeden Teil und jede Variante eines Hosts zu merken. Aber es ist wichtig, dass Sie wissen, dass diese Begriffe häufig verwendet werden, damit Sie alle relevanten Details für Ihr Geschäft und Ihre Diskussionen klären können.
 
-**Origin**
+**Herkunft**
 
-Der Ursprung ist ein weiterer Begriff, der darauf aufmerksam gemacht wird, dass eng mit den Teilen einer URL verbunden ist. Auf grundlegender Ebene ist der Ursprung ungefähr der `scheme` plus `host` plus `domain` like `https://business.adobe.com`. Verschiedene Werte stellen oft unterschiedliche Ursprünge dar wie `https://business.adobe.com` und `http://business.adobe.com` nicht die gleiche Herkunft haben, weil sie unterschiedliche Systeme haben. `https://www.adobe.com` und `https://business.adobe.com` sind aufgrund der verschiedenen Subdomains in vielen Anwendungen nicht der gleiche Ursprung.
+Der Ursprung ist ein weiterer Begriff, der darauf aufmerksam gemacht wird, dass eng mit den Teilen einer URL verbunden ist. Auf grundlegender Ebene ist der Ursprung ungefähr der `scheme` plus die `host` plus die `domain` like `https://business.adobe.com`. Verschiedene Werte stellen oft unterschiedliche Ursprünge dar wie `https://business.adobe.com` und `http://business.adobe.com` nicht die gleiche Herkunft haben, weil sie unterschiedliche Systeme haben. `https://www.adobe.com` und `https://business.adobe.com` sind aufgrund der verschiedenen Subdomains in vielen Anwendungen nicht der gleiche Ursprung.
 
 **Path**
 
@@ -89,7 +89,7 @@ Neben der Tageszeit, dem Wetter oder personalisierten Inhalten werden viele Web-
 
 ## Beispiel-APIs
 
-Browser-APIs ermöglichen es Programmierern, direkt mit Funktionen des Browsers zu interagieren. Mit der Battery-API kann die Software den Akkustatus eines Geräts überprüfen, damit Sie bei Bedarf benachrichtigt werden können. Mit der Zwischenablage-API kann Software mit der Zwischenablage des Geräts kopieren oder einfügen. Mit der Vollbild-API kann die Software die Option zum Erweitern der Ansicht auf den Vollbildmodus des Geräts bereitstellen, z. B. YouTube.
+Browser-APIs ermöglichen Programmierern die direkte Interaktion mit Funktionen des Browsers. Mit der Battery-API kann die Software den Akkustatus eines Geräts überprüfen, damit Sie bei Bedarf benachrichtigt werden können. Mit der Zwischenablage-API kann Software mit der Zwischenablage des Geräts kopieren oder einfügen. Mit der Vollbild-API kann die Software die Option zum Erweitern der Ansicht auf den Vollbildmodus des Geräts bereitstellen, z. B. YouTube.
 
 Die Adobe Experience Platform Data Access API ist eine Web-API, mit der Programmierer auf Datensatzdateien von Adobe Experience Platform zugreifen und diese herunterladen können, sodass sie Kundenprofildaten in ihren eigenen Programmen verwenden können. Es ist sehr häufig, dass APIs wie diese Teil eines Softwareautomatisierungsprozesses sind, bei dem Software so programmiert wird, dass sie eine Reihe von Schritten mit mehreren APIs in Kombination durchführen. Dies kann im Vergleich zur manuellen Ausführung derselben Schritte häufig zu erheblichen Kosteneinsparungen führen.
 
@@ -103,7 +103,7 @@ Anders ausgedrückt: Genau wie der Browser eine Seite an eine bestimmte URL erh�
 
 ## HTTP-Anfragemethoden
 
-An dieser Stelle sollte klar sein, dass Web-APIs Anfragen für Ressourcen wie Webseiten oder Datensätze stellen. Wie die meisten Softwarekonzepte folgen diese HTTP-Anforderungen wiederholbaren Mustern. Eine Anfrage wird von einer Software-Anwendung an eine andere Software-Anwendung gesendet, die die Anfrage auswertet und dann antwortet: Der Browser fordert eine Seite von einem Webserver an und antwortet mit dem Seiteninhalt.
+An dieser Stelle sollte klar sein, dass Web-APIs Anfragen für Ressourcen wie Webseiten oder Datensätze stellen. Wie die meisten Softwarekonzepte folgen diese HTTP-Anforderungen wiederholbaren Mustern. Eine Anfrage wird von einer Software-Anwendung an eine andere Software-Anwendung gesendet, die die Anfrage auswertet und dann antwortet: Der Browser fordert eine Seite von einem Webserver an und antwortet mit den Seiteninhalten.
 
 Der gesamte Prozess von Anfrage bis Antwort umfasst viele kleinere und sehr detaillierte Schritte, aber die Anforderungsmethoden sind einfach. Anfragemethoden definieren den angeforderten Vorgang.
 
@@ -127,13 +127,13 @@ Die `PATCH` -Anfragemethode wird verwendet, um Daten zu senden, die einen Teil e
 
 Die `DELETE` -Anfragemethode entfernt eine in der Anfrage angegebene Ressource, z. B. wenn Sie auf einen Link klicken, um unser Kontoprofil vollständig zu löschen.
 
-Es gibt mehrere andere, aber dies ist eine Liste der häufigsten Methoden für die Arbeit mit APIs.
+Es gibt mehrere weitere Methoden. Dies ist jedoch eine Liste der am häufigsten verwendeten Methoden für die Arbeit mit APIs.
 
 ### Anforderungsbeispiel
 
 Da Sie nun über die grundlegenden Begriffe, Konzepte und Schritte verfügen, die mit APIs verbunden sind, können wir uns eine Beispiel-API-Anfrage in der Praxis ansehen.
 
-Die Seite aus unserem Browser-Beispiel hat die URL von `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Wenn auf den Adobe Experience Platform-Link geklickt wird, führt der Browser eine `GET` -Anfrage für diese Seite. Da wir den Browser haben, der die Arbeit für uns erledigt, müssen wir nur klicken, aber wenn ein Programmierer möchte, dass diese Anfrage in einer Software-Anwendung erfolgt, muss er alle erforderlichen Details angeben, damit die API-Anfrage erfolgreich erfüllt werden kann.
+Die Seite aus unserem Browser-Beispiel hat die URL von `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Wenn auf den Adobe Experience Platform-Link geklickt wird, führt der Browser eine `GET` -Anfrage für diese Seite an. Da wir den Browser haben, der die Arbeit für uns erledigt, müssen wir nur klicken, aber wenn ein Programmierer möchte, dass diese Anfrage in einer Software-Anwendung erfolgt, muss er alle erforderlichen Details angeben, damit die API-Anfrage erfolgreich erfüllt werden kann.
 
 So sieht das im Code aus:
 
@@ -165,4 +165,4 @@ fetch(
 Im obigen Code können Sie die `URL` Der Browser fordert an und unten unten befindet sich der `method: "GET"` -Anfragemethode. Die anderen Codezeilen sind ebenfalls Teile der Anfrage, überschreiten jedoch den Geltungsbereich dieses Artikels.
 
 
-*[API]: Programming Interface *[URL]: Uniform Resource Locator *[HTTP]: HyperText Transfer Protocol *[DNS]: Domain Name System
+*[API]: Application Programming Interface *[URL]: Uniform Resource Locator *[HTTP]: HyperText Transfer Protocol *[DNS]: Domain Name System

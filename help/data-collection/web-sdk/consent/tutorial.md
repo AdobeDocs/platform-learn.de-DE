@@ -2,10 +2,10 @@
 title: Implementieren der Zustimmung mit einer Zustimmungsverwaltungsplattform (CMP)
 description: Erfahren Sie, wie Sie mithilfe der Adobe Experience Platform Web SDK-Erweiterung in der Datenerfassung Einwilligungsdaten aus einer Consent Management Platform (CMP) implementieren und aktivieren.
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '3321'
 ht-degree: 3%
@@ -20,8 +20,8 @@ Viele gesetzliche Datenschutzbestimmungen haben Anforderungen an die aktive und 
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt verfügbar **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 In diesem Tutorial erfahren Sie, wie Sie mithilfe der Platform Web SDK-Erweiterung in der Datenerfassung Einwilligungsdaten implementieren und aktivieren, die von einer Consent Management Platform (CMP) erhalten wurden. Dazu verwenden wir sowohl die Adobe-Standards als auch den IAB TCF 2.0-Zustimmungsstandard, wobei OneTrust oder SourcePoint als Beispiel-CMPs verwendet wird.
@@ -38,7 +38,7 @@ Auf dieser Seite ist ein &quot;Ereignis-Datensatz&quot;erforderlich. Genau wie e
 
 Für den Platform-Zustimmungsstandard v2.0 benötigen wir außerdem Zugriff auf Adobe Experience Platform, um ein Schema und einen Datensatz für individuelle XDM-Profile zu erstellen. Eine Anleitung zur Schemaerstellung finden Sie unter [Erstellen eines Schemas mit dem Schema Editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#tutorials) und für die erforderliche Feldergruppe &quot;Einverständniserklärung und Voreinstellungsdetails&quot;siehe [Datensatz konfigurieren, um Einwilligungs- und Voreinstellungsdaten zu erfassen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html).
 
-In diesem Tutorial wird davon ausgegangen, dass Sie Zugriff auf die Datenerfassung haben und eine clientseitige Tags-Eigenschaft mit installierter Web SDK-Erweiterung und einer für die Entwicklung erstellten und erstellten Arbeitsbibliothek erstellt haben. Diese Themen werden in diesen Dokumenten ausführlich beschrieben:
+In diesem Tutorial wird davon ausgegangen, dass Sie Zugriff auf die Datenerfassung haben und eine clientseitige Tags-Eigenschaft mit installierter Web SDK-Erweiterung und einer für die Entwicklung erstellten und erstellten Arbeitsbibliothek erstellt haben. Diese Themen werden in diesen Dokumenten ausführlich beschrieben und dargestellt:
 
 * [Erstellen und Konfigurieren von Eigenschaften](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
 * [Übersicht über Bibliotheken](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=de)
@@ -65,8 +65,8 @@ Nachdem wir die Platform Web SDK-Erweiterung in einer Tags-Eigenschaft installie
 Im Abschnitt &quot;Datenschutz&quot;wird die Zustimmungsstufe für das SDK festgelegt, wenn der Benutzer zuvor keine Zustimmungseinstellungen angegeben hat. Dadurch wird der Standardstatus für die Einwilligung und die Ereignisdatenerfassung im SDK festgelegt. Die ausgewählte Einstellung beantwortet die Frage &quot;Was sollte das SDK tun, wenn der Benutzer noch keine expliziten Zustimmungsvoreinstellungen angegeben hat?&quot;
 
 * In - Erfasst Ereignisse, die auftreten, bevor der Benutzer Zustimmungsvoreinstellungen bereitstellt.
-* Out - Drop-Ereignisse, die auftreten, bevor der Benutzer Zustimmungsvoreinstellungen bereitstellt.
-* Ausstehend - Queue-Ereignisse, die auftreten, bevor der Benutzer Zustimmungsvoreinstellungen bereitstellt.
+* Out - Drop-Ereignisse, die auftreten, bevor der Benutzer Zustimmungseinstellungen bereitstellt.
+* Ausstehend - Queue-Ereignisse, die auftreten, bevor der Benutzer Zustimmungseinstellungen bereitstellt.
 * Wird vom Datenelement bereitgestellt
 
 Wenn die standardmäßige Zustimmungseinstellung &quot;In&quot;lautet, teilt dies dem SDK mit, dass es nicht auf die ausdrückliche Zustimmung warten sollte und die Ereignisse erfassen sollte, die auftreten, bevor der Benutzer Zustimmungsvoreinstellungen bereitstellt. Diese Voreinstellungen werden normalerweise in einer CMP verarbeitet und gespeichert.
@@ -87,9 +87,9 @@ Weitere Informationen zum Konfigurieren der Web SDK-Erweiterung finden Sie unter
 
 Wählen Sie für dieses Beispiel die Option &quot;Ausstehend&quot;aus und wählen Sie **Speichern** um unsere Konfigurationseinstellungen zu speichern.
 
-### Schritt 2: Voreinstellungen für die Übermittlung
+### Schritt 2: Voreinstellungen für die Übermittlung von Einverständnissen
 
-Nachdem wir nun das Standardverhalten des SDK festgelegt haben, können wir Tags verwenden, um die expliziten Zustimmungsvoreinstellungen eines Besuchers an Platform zu senden. Das Senden von Einwilligungsdaten mit dem Adobe 1.0- oder 2.0-Standard ist einfach mithilfe der `setConsent` Aktion des Web SDK in Ihren Tag-Regeln.
+Nachdem wir nun das Standardverhalten des SDK festgelegt haben, können wir Tags verwenden, um die expliziten Zustimmungsvoreinstellungen eines Besuchers an Platform zu senden. Das Senden von Einwilligungsdaten mit dem Adobe 1.0- oder 2.0-Standard ist einfach mit der `setConsent` Aktion des Web SDK in Ihren Tag-Regeln.
 
 #### Festlegen der Zustimmung mit Platform Consent Standard 1.0
 
@@ -103,9 +103,9 @@ Wir können &quot;In&quot;, &quot;Out&quot;oder &quot;Provided by data element&q
 
 In diesem Beispiel wählen wir &quot;In&quot;aus, um anzugeben, dass der Besucher zugestimmt hat, dem Web SDK zu erlauben, Daten an Platform zu senden. Wählen Sie die blaue Schaltfläche &quot;Änderungen beibehalten&quot;, um diese Aktion zu speichern, und dann &quot;Speichern&quot;, um diese Regel zu speichern.
 
-Hinweis: Nachdem sich ein Besucher der Website abgemeldet hat, ist es im SDK nicht möglich, die Zustimmung der Benutzer auf einzustellen.
+Hinweis: Nachdem sich ein Website-Besucher abgemeldet hat, können Sie im SDK die Benutzerzustimmung nicht mehr auf &quot;in&quot;einstellen.
 
-Ihre Tag-Regeln können durch eine Vielzahl integrierter oder benutzerdefinierter [events](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html) die verwendet werden kann, um diese Zustimmungsdaten zum richtigen Zeitpunkt während einer Besuchersitzung zu übergeben. Im obigen Beispiel haben wir das Ereignis &quot;window loaded&quot;verwendet, um die Regel Trigger. In einem späteren Abschnitt verwenden wir ein Zustimmungsvoreinstellungsereignis von einer CMP, um eine Einwilligungsaktion festlegen Trigger. Sie können die Aktion &quot;Einverständniserklärung festlegen&quot;in einer Regel verwenden, die von einem von Ihnen bevorzugten Ereignis ausgelöst wird, das eine Opt-in-Voreinstellung angibt.
+Ihre Tag-Regeln können durch eine Vielzahl integrierter oder benutzerdefinierter [events](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html) , die verwendet werden kann, um diese Zustimmungsdaten zum richtigen Zeitpunkt während einer Besuchersitzung zu übergeben. Im obigen Beispiel haben wir das Ereignis &quot;window loaded&quot;verwendet, um die Regel Trigger. In einem späteren Abschnitt verwenden wir ein Zustimmungsvoreinstellungsereignis von einer CMP, um eine Einwilligungsaktion festlegen Trigger. Sie können die Aktion &quot;Einverständniserklärung festlegen&quot;in einer Regel verwenden, die von einem von Ihnen bevorzugten Ereignis ausgelöst wird, das eine Opt-in-Voreinstellung angibt.
 
 #### Festlegen der Zustimmung mit Platform Consent Standard 2.0
 
@@ -134,7 +134,7 @@ return {
 
 Im Zeitfeld sollte angegeben werden, wann der Benutzer seine Zustimmungseinstellungen zuletzt aktualisiert hat. Wir erstellen hier einen Zeitstempel als Beispiel mit einer Standardmethode für das JavaScript-Datumsobjekt. Wählen Sie Speichern aus, um den benutzerdefinierten Code zu speichern, und wählen Sie erneut Speichern aus, um das Datenelement zu speichern.
 
-Wählen Sie anschließend Regeln aus und geben Sie dann die blaue Schaltfläche Regel hinzufügen den Namen &quot;setConsent onLoad - Consent 2.0&quot;ein. Wählen Sie als Trigger &quot;Fenster geladen&quot;und dann unter &quot;Aktionen&quot;die Option Hinzufügen aus. Wählen Sie die Platform Web SDK-Erweiterung und wählen Sie für Aktionstyp die Option Einverständnis festlegen. Der Standard sollte Adobe sein und die Version 2.0. Für Wert verwenden wir das soeben erstellte Datenelement, das die erfassten Werte und Zeitwerte enthält, die wir an Platform senden müssen:
+Wählen Sie anschließend Regeln aus und geben Sie dann die blaue Schaltfläche Regel hinzufügen den Namen &quot;setConsent onLoad - Consent 2.0&quot;ein. Wählen Sie als Trigger &quot;Fenster geladen&quot;und dann unter &quot;Aktionen&quot;die Option Hinzufügen aus. Wählen Sie die Platform Web SDK-Erweiterung und wählen Sie für Aktionstyp die Option &quot;Einverständnis festlegen&quot;. Der Standard sollte Adobe und Version 2.0 sein. Für den Wert verwenden wir das soeben erstellte Datenelement, das die erfassten Werte und Zeitwerte enthält, die wir an Platform senden müssen:
 
 ![](./images/2-0-form.png)
 
@@ -154,7 +154,7 @@ Um die Einwilligungsvoreinstellungsdaten mithilfe dieses Standards festzulegen, 
 
 Diese Feldergruppe enthält die Einwilligungsvoreinstellungsfelder, die vom IAB TCF 2.0-Standard benötigt werden. Weitere Informationen zu Schemas und Feldergruppen finden Sie im Abschnitt [XDM-Systemübersicht](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
-### Schritt 1: Einverständnisdatenelement erstellen
+### Schritt 1: Erstellen eines Datenelements für die Zustimmung
 
 Um Einwilligungsereignisdaten von Tags mithilfe des IAB TCF 2.0-Zustimmungsstandards zu senden, richten wir zunächst ein xdm-Datenelement mit den erforderlichen Einwilligungsfeldern ein:
 
@@ -172,7 +172,7 @@ Wir legen jeden der consentStrings wie folgt fest:
 * **`containsPersonalData`**:  `False` (über die Schaltfläche Wert auswählen ausgewählt)
 * **`gdprApplies`**:  `%IAB TCF Consent GDPR%`
 
-Die `consentStandard` und `consentStandardVersion` -Felder sind beides nur Textzeichenfolgen für den Standard, den wir verwenden, nämlich IAB TCF Version 2.0. Die `consentStringValue` referenziert ein Datenelement mit dem Namen &quot;IAB TCF Consent String&quot;. Die Prozentzeichen um den Text zeigen den Namen eines Datenelements an, und wir werden uns das gleich ansehen. Die `containsPersonalData` gibt an, ob die IAB TCF 2.0-Zustimmungszeichenfolge personenbezogene Daten mit &quot;True&quot;oder &quot;False&quot;enthält. Die `gdprApplies` gibt entweder &quot;true&quot;für die DSGVO an, &quot;false&quot;für die DSGVO gilt nicht, oder &quot;undefined&quot;für unbekannt, ob die DSGVO zutrifft. Derzeit behandelt das Web SDK &quot;undefined&quot;als &quot;true&quot;. Daher werden Einwilligungsdaten, die mit &quot;gdprApplies&quot;gesendet werden, wie folgt behandelt: undefined&quot;so behandelt, als befinde sich der Besucher in einem Gebiet, in dem die DSGVO gilt.
+Die `consentStandard` und `consentStandardVersion` -Felder sind beide nur Textzeichenfolgen für den Standard, den wir verwenden, nämlich IAB TCF Version 2.0. Die `consentStringValue` referenziert ein Datenelement mit dem Namen &quot;IAB TCF Consent String&quot;. Die Prozentzeichen um den Text zeigen den Namen eines Datenelements an, und wir werden uns das gleich ansehen. Die `containsPersonalData` gibt an, ob die IAB TCF 2.0-Zustimmungszeichenfolge personenbezogene Daten mit &quot;True&quot;oder &quot;False&quot;enthält. Die `gdprApplies` gibt entweder &quot;true&quot;für die DSGVO an, &quot;false&quot;für die DSGVO gilt nicht, oder &quot;undefined&quot;für unbekannt, ob die DSGVO zutrifft. Derzeit behandelt das Web SDK &quot;undefined&quot;als &quot;true&quot;, sodass mit &quot;gdprApplies: undefined&quot;gesendete Zustimmungsdaten so behandelt werden, als befinde sich der Besucher in einem Gebiet, in dem die DSGVO gilt.
 
 Siehe [Einverständnisdokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html#getting-started) Weitere Informationen zu diesen Eigenschaften und zu IAB TCF 2.0 in Tags.
 
@@ -218,7 +218,7 @@ Richten wir nun die Aktion Einverständnisregel festlegen ein, um diese Werte zu
 
 Wählen Sie im Abschnitt Aktionen die Option Hinzufügen aus. Wählen Sie unter Erweiterung die Option Platform Web SDK aus der Dropdown-Liste aus. Wählen Sie unter Aktionstyp die Option Einverständnis festlegen aus. Benennen wir diese Aktion setConsent.
 
-Wählen Sie in der Aktionskonfiguration unter Einverständnisinformationen die Option Formular ausfüllen aus. Wählen Sie für Standard IAB TCF und für Version 2.0 aus. Für den Wert verwenden wir die benutzerdefinierte Variable aus unserem Ereignis und geben `%IAB TCF Consent String%` aus dem [tcData](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) Wir haben oben in unserer benutzerspezifischen Regelereignis-Funktion erfasst.
+Wählen Sie in der Aktionskonfiguration unter Einverständnisinformationen die Option Formular ausfüllen aus. Wählen Sie für Standard IAB TCF und für Version 2.0. Für den Wert verwenden wir die benutzerdefinierte Variable aus unserem Ereignis und geben `%IAB TCF Consent String%` aus dem [tcData](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) Wir haben oben in unserer benutzerspezifischen Regelereignis-Funktion erfasst.
 
 Unter Anwendung der DSGVO verwenden wir die andere benutzerdefinierte Variable aus unserem Ereignis und geben `%IAB TCF Consent GDPR%` die auch aus dem `tcData` Wir haben oben in unserer benutzerspezifischen Regelereignis-Funktion erfasst. Wenn Sie wissen, dass die DSGVO definitiv für Besucher dieser Website gilt oder nicht, können Sie je nach Bedarf Ja oder Nein auswählen, anstatt die benutzerdefinierte Variable (Datenelement) zu verwenden. Sie können auch Bedingungslogik in einem Datenelement verwenden, um zu überprüfen, ob die DSGVO zutrifft, und den entsprechenden Wert zurückgeben.
 
@@ -234,7 +234,7 @@ Wenn Sie die [Arbeitsbibliothek](https://experienceleague.adobe.com/docs/platfor
 
 ![](./images/save-library.png)
 
-### Schritt 4: Inspect und Validieren der Datenerfassung
+### Schritt 4: Inspect und Datenerfassung überprüfen
 
 Auf unserer Site aktualisieren wir die Seite und bestätigen den Bibliotheks-Build im [Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Chrome-Erweiterung im Bereich des Tags-Menüs:
 
