@@ -4,9 +4,9 @@ breadcrumb-title: Tutorials
 user-guide-description: Lernen Sie die vielen Komponenten von Experience Platform kennen.
 audience: all
 doc-type: video
-source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
+source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '965'
 ht-degree: 43%
 
 ---
@@ -203,7 +203,7 @@ ht-degree: 43%
    + [Daten aus Datenbanken aufnehmen](/help/platform/sources/ingest-data-from-databases.md)
    + [Streamen von Daten mit der HTTP-API](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Streamen von Daten mithilfe von Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
-   + [Nächste Hit-Personalisierung mit Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [Fehlerbehebung: SFTP Connector](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Experience Cloud-Integrationen {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=de)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
