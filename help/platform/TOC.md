@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials
 user-guide-description: Lernen Sie die vielen Komponenten von Experience Platform kennen.
 audience: all
 doc-type: video
-source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
+source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 43%
+source-wordcount: '989'
+ht-degree: 42%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 43%
 
 + [Platform-Tutorials](/help/platform/overview.md)
 + Einführung in Platform {#intro-to-platform}
-   + [Kundenerlebnis auf der Basis von Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
-   + [Hinter den Kulissen: Ein Kundenerlebnis basierend auf Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+   + [Ein Kundenerlebnis auf Basis von Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+   + [Hinter den Kulissen: Ein Kundenerlebnis auf Basis von Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Übersicht zu Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Wichtigste Funktionen](/help/platform/intro-to-platform/key-capabilities.md)
    + [Anwendungen und intelligente Dienste](/help/platform/intro-to-platform/application-and-intelligent-services.md)
-   + [Integrationen mit Experience Cloud-Anwendungen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [Integrationen mit Experience Cloud-Applikationen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Wichtige Anwendungsfälle](/help/platform/intro-to-platform/key-use-cases.md)
    + [Grundlegende Architektur](/help/platform/intro-to-platform/basic-architecture.md)
    + [Benutzeroberfläche](/help/platform/intro-to-platform/interface-tour.md)
@@ -123,7 +123,7 @@ ht-degree: 43%
       + [Aktivieren von Segmenten und Profilattributen](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Verwenden von Real-Time CDP-Segmenten in Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Real-Time CDP-Profilattribute in Target verwenden](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
-   + [Webinar zur Datenaktivierung für Anwendungen ohne Adobe](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
+   + [Webinar zur Datenaktivierung für Nicht-Adobe-Anwendungen](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identitäten {#identities}
    + [Identitäts- und Identitätsdiagramme - Übersicht](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Identitätsdaten beschriften, erfassen und überprüfen](/help/platform/identities/label-ingest-and-verify-identity-data.md)
@@ -142,6 +142,11 @@ ht-degree: 43%
    + [Überwachen der Datenaufnahme](/help/platform/monitoring/monitoring-dashboard.md)
    + [Segmentaktivierung überwachen](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Überwachen von Datenflüssen](/help/platform/monitoring/data-monitoring.md)
++ Unterstützung von Partnerdaten {#partner-data-support}
+   + [Übersicht über die Unterstützung von Partnerdaten](/platform/partner-data-support/partner-data-support-overview.md)
+   + [Unterstützung der Offsite-Prospektion](/platform/partner-data-support/offsite-prospecting-partner-data.md)
+   + [Hinzufügen von Partnerattributen zu Profilen](/platform/partner-data-support/partner-enrichment-partner-data.md)
+   + [Personalisieren von Onsite für unbekannte Besucher](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + Profile {#profiles}
    + [Grundlagen zum Echtzeit-Kundenprofil](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Profil - Übersichtsdiagramm](/help/platform/profiles/overview-diagram.md)
