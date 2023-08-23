@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie eine Tag-Eigenschaft im [!UICONTROL Datenerfa
 feature: Mobile SDK,Tags
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1015'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ Um die Lektion abzuschließen, müssen Sie über die Berechtigung zum Erstellen 
 
 >[!NOTE]
 >
-> Platform launch (Client-seitig) ist jetzt [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)
+> Platform launch (Client-seitig) ist jetzt [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)
 
 ## Lernziele
 
@@ -136,7 +136,12 @@ Ihre Bibliothek wird für die neuen Erweiterungen und Konfigurationen erstellt. 
 
    Die Installationsanweisungen bieten einen guten Ausgangspunkt für die Implementierung. Weitere Informationen finden Sie unter [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. Wählen Sie die **[!UICONTROL Swift]** Registerkarte unten **[!UICONTROL Initialisierungscode hinzufügen]**. Dieser Codeblock zeigt, wie Sie die erforderlichen SDKs importieren und die Erweiterungen beim Start registrieren.
+   >[!INFO]
+   >
+   >Für die restliche Anleitung werden Sie **not** Verwenden Sie die CocoaPods-Anweisungen, sondern stattdessen ein natives Swift Package Manager (SPM)-basiertes Setup.
+   >
+
+1. Wählen Sie die **[!UICONTROL Swift]** Registerkarte unten **[!UICONTROL Initialisierungscode hinzufügen]**. Dieser Codeblock zeigt, wie Sie die erforderlichen SDKs importieren und die Erweiterungen beim Start registrieren. Weitere Informationen hierzu finden Sie unter [SDKs installieren](install-sdks.md).
 
 1. Kopieren ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) die **[!UICONTROL Umgebungsdatei-ID]** und speichern Sie es an einem Ort, wie Sie es später benötigen. Diese eindeutige ID verweist auf Ihre Entwicklungsumgebung. Jede Umgebung (Produktion, Staging, Entwicklung) verfügt über einen eigenen eindeutigen ID-Wert.
 
@@ -145,11 +150,6 @@ Ihre Bibliothek wird für die neuen Erweiterungen und Konfigurationen erstellt. 
 >[!NOTE]
 >
 >Die Installationsanweisungen sollten als Ausgangspunkt und nicht als endgültige Dokumentation betrachtet werden. Die neuesten SDK-Versionen und Codebeispiele finden Sie in der offiziellen [Dokumentation](https://developer.adobe.com/client-sdks/documentation/).
-
->[!INFO]
->
->Für den Rest dieses Tutorials sind Sie **not** unter Verwendung der CocoaPods-Anweisungen, aber sehen Sie sich ein natives Swift-Paket-basiertes Setup an.
-
 
 ## Architektur von mobilen Tags
 
