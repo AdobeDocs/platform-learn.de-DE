@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie In-App-Nachrichten mit dem Platform Mobile SD
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
+source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -123,6 +123,7 @@ Sie verfügen über alle nötigen Ressourcen, um eine In-App-Nachricht zu senden
 1. Navigieren Sie zu **[!UICONTROL Einstellungen]** Registerkarte.
 
 1. Tippen **[!UICONTROL In-App-Nachricht]**. Die In-App-Nachricht wird in Ihrer App angezeigt.
+
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
