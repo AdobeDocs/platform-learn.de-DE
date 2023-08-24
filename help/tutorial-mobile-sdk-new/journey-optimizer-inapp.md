@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie In-App-Nachrichten mit dem Platform Mobile SD
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 4fa65f2e39d3fa7b8b77f5d06d51f10235474b36
+source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -73,11 +73,11 @@ In diesem Tutorial verwenden Sie die generischen und erweiterungsunabhängigen M
 1. Nach unten scrollen zu **[!UICONTROL Aktion]** und wählen Sie **[!UICONTROL Inhalt bearbeiten]**.
 1. Im **[!UICONTROL In-App-Nachricht]** screen:
    1. Auswählen **[!UICONTROL Modal]** als **[!UICONTROL Nachrichtenlayout]**.
-   1. Eingabe `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` für **[!UICONTROL Medien-URL]**.
-   1. Geben Sie einen **[!UICONTROL Kopfzeile]**, beispielsweise `Welcome to this Luma In-App Message` und geben Sie einen **[!UICONTROL body]**, beispielsweise `Triggered by pushing that button in the app...`.
-   1. Eingabe **[!UICONTROL Verwerfen]** als **[!UICONTROL Schaltfläche 1 Text (primär)]**.
-   1. Beachten Sie, wie die Vorschau aktualisiert wird.
-   1. Auswählen **[!UICONTROL Aktivieren]**.
+   2. Eingabe `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` für **[!UICONTROL Medien-URL]**.
+   3. Geben Sie einen **[!UICONTROL Kopfzeile]**, beispielsweise `Welcome to this Luma In-App Message` und geben Sie einen **[!UICONTROL body]**, beispielsweise `Triggered by pushing that button in the app...`.
+   4. Eingabe **[!UICONTROL Verwerfen]** als **[!UICONTROL Schaltfläche 1 Text (primär)]**.
+   5. Beachten Sie, wie die Vorschau aktualisiert wird.
+   6. Auswählen **[!UICONTROL Aktivieren]**.
       ![In-App-Editor](assets/ajo-in-app-editor.png)
 1. Im **[!UICONTROL Überprüfung zur Aktivierung (Luma - In-App Messaging Campaign)]** Bildschirm, auswählen ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) im **[!UICONTROL Zeitplan]** Kachel.
    ![Zeitplan überprüfen: Zeitplan auswählen](assets/ajo-review-select-schedule.png)
@@ -88,7 +88,7 @@ In diesem Tutorial verwenden Sie die generischen und erweiterungsunabhängigen M
    1. Klicken Sie auf **[!UICONTROL Fertig]**.
       ![Trigger-Logik](assets/ajo-trigger-logic.png)
 
-   Sie haben eine Verfolgungsaktion definiert, bei der die Variable **[!UICONTROL Aktion]** gleich `in-app` und **[!UICONTROL Kontextdaten]** mit der Aktion ist ein Schlüsselwertpaar `showMessage = true`.
+   Sie haben eine Verfolgungsaktion definiert, bei der die Variable **[!UICONTROL Aktion]** gleich `in-app` und **[!UICONTROL Kontextdaten]** mit der Aktion ist ein Schlüsselwertpaar `"showMessage" : "true"`.
 
 1. Zurück im **[!UICONTROL Luma - In-App-Nachrichtenkampagne]** Bildschirm, auswählen **[!UICONTROL Aktivieren]**.
 1. Im **[!UICONTROL Überprüfung zur Aktivierung (Luma - In-App Messaging Campaign)]** Bildschirm, auswählen **[!UICONTROL Aktivieren]**.
@@ -103,14 +103,14 @@ Sie verfügen über alle nötigen Ressourcen, um eine In-App-Nachricht zu senden
 1. Navigieren Sie zu Luma > Luma > Utils > MobileSDK im Xcode-Projekt-Navigator und suchen Sie nach der `func sendTrackAction(action: String, data: [String: Any]?)` und fügen Sie den folgenden Code hinzu, der die `MobileCore.track` -Funktion basierend auf den Parametern `action` und `data`.
 
 
-   ```
+   ```swift
    // send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
-1. Navigieren Sie im Xcode-Projektnavigator zu Luma > Luma > Ansichten > Allgemein > ConfigView . Suchen Sie den Code für die Schaltfläche In-App-Nachricht und fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Allgemein]** > **[!UICONTROL ConfigView]** im Xcode-Projektnavigator. Suchen Sie den Code für die Schaltfläche In-App-Nachricht und fügen Sie den folgenden Code hinzu:
 
-   ```
+   ```swift
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
