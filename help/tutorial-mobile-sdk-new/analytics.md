@@ -3,10 +3,9 @@ title: Analytics-Zuordnung
 description: Erfahren Sie, wie Sie Daten für Adobe Analytics in einer App erfassen.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
@@ -174,9 +173,9 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 So könnte eine Verarbeitungsregel, die diese Daten verwendet, aussehen:
 
-* Sie überschreiben den Wert von `App Screen Name (eVar2)` 1) mit dem Wert von `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` 2. wenn `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` festgelegt ist.
+* You **[!UICONTROL Wert von überschreiben]** Absatz 1 **[!UICONTROL App-Bildschirmname (eVar2)]** 2) mit dem Wert **[!UICONTROL a.x_techmarketingdemo.appinformation.appstatedetails.screename]** 3. wenn **[!UICONTROL a.x_techmarketingdemo.appinformation.appstatedetails.screename]** Absatz 4 **[!UICONTROL festgelegt ist]** Absatz 5.
 
-* Sie legen `Add to Wishlist (Event 3)` nach `a.x.commerce.saveForLaters.value(Context)` if `a.x.commerce.saveForLaters.value(Context)` festgelegt ist.
+* You **[!UICONTROL Ereignis festlegen]** Absatz 6 **[!UICONTROL Zu Wunschliste hinzufügen (Ereignis 3)]** 7 bis **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** 8, wenn **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** 9. **[!UICONTROL festgelegt ist]** 10.
 
 ![Analytics-Verarbeitungsregeln](assets/analytics-processing-rules.png)
 

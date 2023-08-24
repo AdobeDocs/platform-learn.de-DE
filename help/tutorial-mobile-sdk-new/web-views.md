@@ -3,13 +3,13 @@ title: WebViews verarbeiten
 description: Erfahren Sie, wie Sie die Datenerfassung mit WebViews in einer mobilen App durchführen.
 jira: KT-6987
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
+
 
 # WebViews verarbeiten
 
@@ -36,35 +36,30 @@ Die JavaScript-Erweiterung &quot;Experience Cloud ID-Dienst&quot;in WebView extr
 
 ## Implementierung
 
-Suchen Sie in der Beispielanwendung &quot;Luma&quot;die **[!UICONTROL termsOfServiceSheet]** -Datei (in der **[!UICONTROL Info]** ) und suchen Sie den folgenden Code im `SwiftUIWebViewModel` -Klasse:
+Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Info]** > **[!UICONTROL termsOfServiceSheet]** und suchen Sie nach `func loadUrl()` -Funktion in `final class SwiftUIWebViewModel: ObservableObject` -Klasse. Fügen Sie den folgenden Aufruf zur Verarbeitung der Webansicht hinzu:
 
-```swift {highlight="6-22"}
-    func loadUrl() {
-        let url = Bundle.main.url(forResource: "tou", withExtension: "html")
-        if var urlString = url?.absoluteString {
-            // Adobe Experience Platform - Handle Web View
-            AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
-                if let error = error {
-                    print("Error with Webview", error)
-                    return;
-                }
-                
-                if let urlVariables: String = urlVariables {
-                    urlString.append("?" + urlVariables)
-                    guard let url = URL(string: urlString) else {
-                        return
-                    }
-                    DispatchQueue.main.async {
-                        self.webView.load(URLRequest(url: url))
-                    }
-                }
-                Logger.aepMobileSDK.info("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
-            }
+```swift
+// Adobe Experience Platform - Handle Web View
+AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
+    if let error = error {
+        print("Error with Webview", error)
+        return;
+    }
+    
+    if let urlVariables: String = urlVariables {
+        urlString.append("?" + urlVariables)
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        DispatchQueue.main.async {
+            self.webView.load(URLRequest(url: url))
         }
     }
+    Logger.aepMobileSDK.info("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
+}
 ```
 
-Der wichtigste Teil dieses Codes ist die `AEPEdgeIdentity.Identity.getUrlVariables` schließen (hervorgehoben). Durch den Abschluss werden die Variablen für die URL so eingerichtet, dass sie alle relevanten Informationen wie ECID usw. enthalten. Im Beispiel verwenden Sie eine lokale Datei, die gleichen Konzepte gelten jedoch für Remote-Seiten.
+Die `AEPEdgeIdentity.Identity.getUrlVariables` Die API richtet die Variablen für die URL so ein, dass sie alle relevanten Informationen wie ECID und mehr enthalten. Im Beispiel verwenden Sie eine lokale Datei, die gleichen Konzepte gelten jedoch für Remote-Seiten.
 
 Weitere Informationen zum `Identity.getUrlVariables` API im [Referenzhandbuch zur Identity für die Edge Network Extension-API](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 

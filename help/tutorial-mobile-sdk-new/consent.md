@@ -3,11 +3,10 @@ title: Einverständnis
 description: Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementieren.
 feature: Mobile SDK,Consent
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 3%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +36,7 @@ Um mit der Datenerfassung zu beginnen, müssen Sie die Zustimmung des Benutzers 
 
 1. Sie möchten den Benutzer nur einmal fragen. Daher möchten Sie die Mobile SDK-Zustimmung mit den erforderlichen Berechtigungen zum Tracking mit Apples [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency). In dieser App gehen Sie davon aus, dass der Benutzer bei der Autorisierung des Trackings auch der Erfassung von Ereignissen zustimmt.
 
-1. Navigieren Sie zu `MobileSDK`, eine generische statische Struktur, in der alle API-Aufrufe an das Adobe Experience Platform SDK zur einfachen Wiederverwendung gebündelt werden.
+1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator.
 
    Fügen Sie diesen Code zum `updateConsent` -Funktion.
 
@@ -48,17 +47,17 @@ Um mit der Datenerfassung zu beginnen, müssen Sie die Zustimmung des Benutzers 
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Navigieren Sie zu `DisclaimerView.swift`, die Ansicht, die angezeigt wird, nachdem die Anwendung installiert oder neu installiert und die App zum ersten Mal gestartet wurde. Der Benutzer wird aufgefordert, das Tracking pro Apple zu autorisieren. [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency). Wenn der Benutzer autorisiert, aktualisieren Sie auch die Zustimmung.
+1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Allgemein]** > **[!UICONTROL DisclaimerView]** im Projektnavigator von Xcode, der die Ansicht ist, die nach der ersten Installation oder Neuinstallation der Anwendung und dem ersten Starten der App angezeigt wird. Der Benutzer wird aufgefordert, das Tracking pro Apple zu autorisieren. [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency). Wenn der Benutzer autorisiert, aktualisieren Sie auch die Zustimmung.
 
    Fügen Sie den folgenden Code zum `ATTrackingManager.requestTrackingAuthorization { status in` Schließung.
 
-   ```swift {highlight="3,6"}
+   ```swift
    if status == .authorized {
-       // Set consent to yes
-       MobileSDK.shared.updateConsent(value: "y")
+         // Set consent to yes
+         MobileSDK.shared.updateConsent(value: "y")
    }
    else {
-       MobileSDK.shared.updateConsent(value: "n")
+         MobileSDK.shared.updateConsent(value: "n")
    }
    ```
 
@@ -66,28 +65,26 @@ Um mit der Datenerfassung zu beginnen, müssen Sie die Zustimmung des Benutzers 
 
 Die mobile Erweiterung &quot;Einverständnis&quot;unterdrückt/sticht/ermöglicht das Tracking basierend auf dem aktuellen Zustimmungswert automatisch. Sie können auch selbst auf den aktuellen Zustimmungsstatus zugreifen:
 
-1. Navigieren Sie zu `MobileSDK.swift`.
+1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Projektnavigator von Xcode.
 
    Fügen Sie den folgenden Code zum `getConsents` Funktion:
 
    ```swift
    Consent.getConsents { consents, error in
-            guard error == nil, let consents = consents else { return }
-            guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
-            guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
-            Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
-        }
+      guard error == nil, let consents = consents else { return }
+      guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
+      guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
+      Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
+   }
    ```
 
-2. Navigieren Sie zu **[!UICONTROL HomeView]**.
+2. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Allgemein]** > **[!UICONTROL HomeView]** im Projektnavigator von Xcode.
 
-   Fügen Sie den folgenden hervorgehobenen Code zum `.task` modifier:
+   Fügen Sie den folgenden Code zum `.task` modifier:
 
-   ```swift {highlight="3"}
-   .task {
-        // Ask status of consents
-        MobileSDK.shared.getConsents()   
-   }
+   ```swift
+   // Ask status of consents
+   MobileSDK.shared.getConsents()   
    ```
 
 Im obigen Beispiel protokollieren Sie einfach den Zustimmungsstatus in Xcode in der Konsole. In einem realen Szenario können Sie damit ändern, welche Menüs oder Optionen dem Benutzer angezeigt werden.

@@ -2,10 +2,9 @@
 title: Lebenszyklusdaten
 description: Erfahren Sie, wie Sie Lebenszyklusdaten in einer mobilen App erfassen.
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '612'
 ht-degree: 3%
 
 ---
@@ -51,23 +50,22 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 ## Implementierungsänderungen
 
-Jetzt können Sie aktualisieren `SceneDelegate` zum Registrieren der Lebenszyklusereignisse:
+Jetzt können Sie Ihr Projekt aktualisieren, um die Lebenszyklusereignisse zu registrieren.
 
-1. Wenn Ihre App beim Start aus einem Hintergrundstatus fortgesetzt wird, kann iOS Ihre `sceneWillEnterForeground:` -Delegierungsmethode verwenden. Hier möchten Sie ein Lebenszyklusstartereignis Trigger werden. Fügen Sie den hervorgehobenen Code hinzu:
+1. Navigieren Sie im Xcode-Projekt-Navigator zu Luma > Luma > SceneDelegate .
 
-   ```swift {highlight="3"}
-   func sceneWillEnterForeground(_ scene: UIScene) {
-      // When in foreground start lifecycle data collection
-      MobileCore.lifecycleStart(additionalContextData: nil)
-   }
+1. Wenn Ihre App beim Start aus einem Hintergrundstatus fortgesetzt wird, kann iOS Ihre `sceneWillEnterForeground:` -Delegierungsmethode verwenden. Hier möchten Sie ein Lebenszyklusstartereignis Trigger werden. Fügen Sie diesen Code zu `func sceneWillEnterForeground(_ scene: UIScene)`:
+
+   ```swift
+   // When in foreground start lifecycle data collection
+   MobileCore.lifecycleStart(additionalContextData: nil)
    ```
 
-1. Wenn die App in den Hintergrund gelangt, möchten Sie die Erfassung der Lebenszyklusdaten aus der App anhalten `sceneDidEnterBackground:` delegate-Methode. Fügen Sie den hervorgehobenen Code hinzu:
+1. Wenn die App in den Hintergrund gelangt, möchten Sie die Erfassung der Lebenszyklusdaten aus der App anhalten `sceneDidEnterBackground:` delegate-Methode. Fügen Sie diesen Code zu  `func sceneDidEnterBackground(_ scene: UIScene)`:
 
-   ```swift {highlight="3"}
-   func sceneDidEnterBackground(_ scene: UIScene) {
-      // When in background pause lifecycle data collection
-      MobileCore.lifecyclePause()
+   ```swift
+   // When in background pause lifecycle data collection
+   MobileCore.lifecyclePause()
    }
    ```
 
