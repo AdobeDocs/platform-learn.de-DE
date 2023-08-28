@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
+source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2005'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ Mit Journey Optimizer können Sie Ihre Journey erstellen und Nachrichten an Ziel
 
 ## Lernziele
 
-In dieser Lektion werden Sie:
+In dieser Lektion werden Sie
 
 * Registrieren Sie die App-ID beim Apple Push Notification Service (APN).
 * Erstellen Sie eine **[!UICONTROL App-Oberfläche]** in AJO.
@@ -81,8 +81,8 @@ Weitere Dokumentationen können [hier finden](https://help.apple.com/developer-a
 1. Geben Sie die Bundle ID der Mobile App im Feld App-ID (iOS Bundle ID) ein. Wenn Sie zusammen mit der Luma-App folgen, lautet der Wert `com.adobe.luma.tutorial.swiftui`.
 1. Schalten Sie die **[!UICONTROL Push-Anmeldedaten]** -Schaltfläche, um Ihre Anmeldedaten hinzuzufügen.
 1. Ziehen und ablegen `.p8` **Authentifizierungsschlüssel für Apple-Push-Benachrichtigungen** -Datei.
-1. Stellen Sie die **[!UICONTROL Schlüssel-ID]**, eine 10-stellige Zeichenfolge, die bei der Erstellung von `p8` Authentifizierungsschlüssel. Sie finden sie unter **[!UICONTROL Schlüssel]** Registerkarte in **Zertifikate, Kennungen und Profile** auf den Apple Developer Portal-Seiten.
-1. Geben Sie die **[!UICONTROL Team ID]** an. Die Team-ID ist ein Wert, der unter der **Mitgliedschaft** oder oben auf den Apple Developer Portal-Seiten.
+1. Stellen Sie die **[!UICONTROL Schlüssel-ID]**, eine 10-stellige Zeichenfolge, die bei der Erstellung von `p8` Authentifizierungsschlüssel. Sie finden sie unter der **[!UICONTROL Schlüssel]** im **Zertifikate, Kennungen und Profile** auf den Apple Developer Portal-Seiten.
+1. Geben Sie die **[!UICONTROL Team ID]** an. Die Team-ID ist ein Wert, der unter der **Mitgliedschaft** oder oben auf der Apple Developer Portal-Seite.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![App-Oberflächenkonfiguration](assets/push-app-surface-config.png)
@@ -105,7 +105,7 @@ Weitere Dokumentationen können [hier finden](https://help.apple.com/developer-a
 >Wenn Sie nicht sehen `AJO Push Tracking Experience Event Dataset` als Option kontaktieren Sie den Kundendienst.
 >
 
-## Implementieren von Adobe Journey Optimizer in die App
+## Implementieren von Journey Optimizer in die App
 
 Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobilen Tag-Erweiterung nur die Konfiguration. Als Nächstes müssen Sie das Messaging SDK installieren und registrieren. Wenn diese Schritte nicht klar sind, überprüfen Sie die [SDKs installieren](install-sdks.md) Abschnitt.
 
@@ -175,6 +175,20 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 
 Um eine eigene Push-Benachrichtigung zu erstellen, müssen Sie in Journey Optimizer ein Ereignis definieren, das einen Journey Trigger, der die Push-Benachrichtigung sendet.
 
+### Schema aktualisieren
+
+Sie werden einen neuen Ereignistyp definieren, der noch nicht als Teil der Ereignisliste verfügbar ist, wie in Ihrem Schema definiert.
+
+1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche die Option **[!UICONTROL Schemas]** über die linke Leiste.
+1. Auswählen **[!UICONTROL Durchsuchen]** in der Symbolleiste.
+1. Wählen Sie beispielsweise Ihr Schema aus. **[!UICONTROL Luma Mobile App-Ereignisschema]** , um es zu öffnen.
+1. Im Schema-Editor:
+   1. Wählen Sie die **[!UICONTROL eventType]** -Feld.
+   1. Im **[!UICONTROL Feldeigenschaften]** nach unten scrollen, um die Liste der möglichen Werte für den Ereignistyp anzuzeigen. Auswählen **[!UICONTROL Zeile hinzufügen]** und fügen Sie `application.test` als **[!UICONTROL WERT]** und **[!UICONTROL Testereignis für Push-Benachrichtigung]** als `DISPLAY NAME`.
+   1. Wählen Sie **[!UICONTROL Anwenden]** aus.
+   1. Wählen Sie **[!UICONTROL Speichern]** aus.
+      ![Wert zu Ereignistypen hinzufügen](assets/ajo-update-schema-eventtype-enum.png)
+
 ### Ereignis definieren
 
 1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche die Option **[!UICONTROL Konfigurationen]** über die linke Leiste.
@@ -193,7 +207,7 @@ Um eine eigene Push-Benachrichtigung zu erstellen, müssen Sie in Journey Optimi
 
       ![Ereignis bearbeiten Schritt 1](assets/ajo-edit-event1.png)
 
-      Im **[!UICONTROL Felder]** müssen Sie sicherstellen, dass die folgenden Felder ausgewählt sind (über den immer ausgewählten Standardfeldern (_id, id und timestamp)). Mithilfe der Dropdown-Liste können Sie zwischen **[!UICONTROL Ausgewählt]**, **[!UICONTROL Alle]** und **[!UICONTROL Primär]** oder verwenden Sie ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) -Feld.
+      Im **[!UICONTROL Felder]** müssen Sie sicherstellen, dass die folgenden Felder ausgewählt sind (über den Standardfeldern, die immer ausgewählt sind (**[!UICONTROL _id]**, **[!UICONTROL id]**, und **[!UICONTROL timestamp]**). Mithilfe der Dropdown-Liste können Sie zwischen **[!UICONTROL Ausgewählt]**, **[!UICONTROL Alle]** und **[!UICONTROL Primär]** oder verwenden Sie ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) -Feld.
 
       * **[!UICONTROL App identifiziert (id)]**,
       * **[!UICONTROL Ereignistyp (eventType)]**,
@@ -205,9 +219,8 @@ Um eine eigene Push-Benachrichtigung zu erstellen, müssen Sie in Journey Optimi
 
    1. Auswählen ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) neben dem **[!UICONTROL Ereignis-ID-Bedingung]** -Feld.
 
-      1. Im **[!UICONTROL Ereignis-ID-Bedingung hinzufügen]** Dialogfeld, ziehen und ablegen **[!UICONTROL Anwendungs-ID (id)]** darunter **[!UICONTROL Antrag (Antrag)]** auf **[!UICONTROL Element hierher ziehen und ablegen]**.
-      1. Geben Sie im Popover Ihre Bundle-ID aus Xcode ein, z. B. `com.adobe.luma.tutorial.swiftui` im Feld neben **[!UICONTROL gleich]**.
-      1. Klicken Sie auf **[!UICONTROL OK]**.
+      1. Im **[!UICONTROL Ereignis-ID-Bedingung hinzufügen]** Dialogfeld, ziehen und ablegen **[!UICONTROL Ereignistyp (eventType)]** auf **[!UICONTROL Element hierher ziehen und ablegen]**.
+      1. Scrollen Sie im Popover-Fenster zum unteren Rand und wählen Sie **[!UICONTROL application.test]**. Scrollen Sie dann nach oben und wählen Sie **[!UICONTROL Ok]**.
       1. Klicken Sie auf **[!UICONTROL OK]**.
          ![Ereignisbedingung bearbeiten](assets/ajo-edit-condition.png)
 
