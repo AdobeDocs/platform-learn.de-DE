@@ -3,7 +3,7 @@ title: Tutorial zur Implementierung von Adobe Experience Cloud in Apps - Überbl
 description: Erfahren Sie, wie Sie die mobilen Adobe Experience Cloud-Anwendungen implementieren. Dieses Tutorial führt Sie durch eine Implementierung von Experience Cloud-Anwendungen in einer Swift-Beispielanwendung.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 11%
@@ -74,8 +74,8 @@ Außerdem wird davon ausgegangen, dass Sie mit [!DNL Swift]. Sie müssen kein Ex
 
 Zwei Versionen der Beispiel-App können heruntergeladen werden.
 
-1. [Empty](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}): eine Version ohne Experience Cloud-Code, um die Übungen in diesem Tutorial abzuschließen.
-1. [Vollständig implementiert](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}): eine Version mit vollständiger Experience Cloud-Implementierung als Referenz.
+1. [Empty](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: eine Version ohne Experience Cloud-Code, um die Übungen in diesem Tutorial abzuschließen.
+1. [Vollständig implementiert](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: eine Version mit vollständiger Experience Cloud-Implementierung als Referenz.
 
 Los geht‘s!
 
