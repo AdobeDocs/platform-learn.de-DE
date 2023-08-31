@@ -5,28 +5,28 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2175'
 ht-degree: 4%
 
 ---
 
-# Push-Nachrichten in Adobe Journey Optimizer
+# Push-Nachrichten in Journey Optimizer
 
-Erfahren Sie, wie Sie mit dem Platform Mobile SDK und Adobe Journey Optimizer Push-Nachrichten für mobile Apps erstellen.
+Erfahren Sie, wie Sie mit dem Platform Mobile SDK und Journey Optimizer Push-Nachrichten für mobile Apps erstellen.
 
-Mit Journey Optimizer können Sie Ihre Journey erstellen und Nachrichten an Zielgruppen senden. Bevor Sie Push-Benachrichtigungen mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von Push-Benachrichtigungen in Adobe Journey Optimizer finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+Mit Journey Optimizer können Sie Ihre Journey erstellen und Nachrichten an Zielgruppen senden. Bevor Sie Push-Benachrichtigungen mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von Push-Benachrichtigungen in Journey Optimizer finden Sie im Abschnitt [Dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
 >[!NOTE]
 >
->Diese Lektion ist optional und gilt nur für Adobe Journey Optimizer-Benutzer, die Push-Nachrichten senden möchten.
+>Diese Lektion ist optional und gilt nur für Journey Optimizer-Benutzer, die Push-Nachrichten senden möchten.
 
 
 ## Voraussetzungen
 
-* App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
-* Zugriff auf Adobe Journey Optimizer und ausreichende Berechtigungen wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Adobe Journey Optimizer-Funktionen.
+* Die App wurde erfolgreich erstellt und mit installierten und konfigurierten SDKs ausgeführt.
+* Zugriff auf Journey Optimizer und ausreichende Berechtigungen wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
    * Erstellen Sie eine App-Oberfläche.
    * Erstellen einer Journey
    * Erstellen einer Nachricht.
@@ -38,20 +38,26 @@ Mit Journey Optimizer können Sie Ihre Journey erstellen und Nachrichten an Ziel
 
 In dieser Lektion werden Sie
 
-* Registrieren Sie die App-ID beim Apple Push Notification Service (APN).
-* Erstellen Sie eine **[!UICONTROL App-Oberfläche]** in AJO.
-* Aktualisieren Sie Ihre **[!UICONTROL schema]** , um Push-Nachrichten einzuschließen.
-* Installieren und konfigurieren Sie die **[!UICONTROL Adobe Journey Optimizer]** Tag-Erweiterung.
-* Aktualisieren Sie Ihre App, um die AJO-Tag-Erweiterung einzuschließen.
+* Registrieren Sie die App-ID beim Apple Push Notification Service (APNS).
+* Erstellen Sie eine App-Oberfläche in AJO.
+* Aktualisieren Sie Ihr Schema, um Push-Nachrichtenfelder einzuschließen.
+* Installieren und konfigurieren Sie die Journey Optimizer-Tag-Erweiterung.
+* Aktualisieren Sie Ihre App, um die Journey Optimizer-Tag-Erweiterung einzuschließen.
 * Validieren Sie die Einrichtung in &quot;Assurance&quot;.
-* Senden Sie eine Testnachricht.
+* Testnachricht aus Assurance senden
 * Definieren Sie Ihr eigenes Push-Benachrichtigungsereignis, Ihre eigene Journey und Ihr eigenes Erlebnis in Journey Optimizer.
 * Senden Sie Ihre eigene Push-Benachrichtigung aus der App heraus.
 
 
-## App-ID mit APN registrieren
+## App einrichten
 
-Die folgenden Schritte sind nicht Adobe Experience Cloud-spezifisch und sollen Sie durch die APN-Konfiguration führen.
+>[!TIP]
+>
+>Wenn Sie Ihre App bereits als Teil der [In-App-Nachrichten in Journey Optimizer](journey-optimizer-inapp.md) -Tutorial können Sie diesen Abschnitt überspringen.
+
+### App-ID mit APNS registrieren
+
+Die folgenden Schritte sind nicht Adobe Experience Cloud-spezifisch und sollen Sie durch die APNS-Konfiguration führen.
 
 ### Privaten Schlüssel erstellen
 
@@ -60,34 +66,36 @@ Die folgenden Schritte sind nicht Adobe Experience Cloud-spezifisch und sollen S
    ![neuen Schlüssel erstellen](assets/mobile-push-apple-dev-new-key.png)
 
 1. Stellen Sie eine **[!UICONTROL Schlüsselname]**.
-1. Wählen Sie die **[!UICONTROL APN]** aktivieren.
+1. Wählen Sie die **[!UICONTROL Apple Push Notification Service] (APNs)** aktivieren.
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
    ![Neuen Schlüssel konfigurieren](assets/mobile-push-apple-dev-config-key.png)
 1. Überprüfen Sie die Konfiguration und wählen Sie **[!UICONTROL registrieren]**.
 1. Laden Sie die `.p8` privater Schlüssel. Sie wird in der App Surface-Konfiguration verwendet.
-1. Beachten Sie die [!UICONTROL Schlüssel-ID]. Sie wird in der App Surface-Konfiguration verwendet.
-1. Beachten Sie die [!UICONTROL Team-ID]. Sie wird in der App Surface-Konfiguration verwendet.
+1. Beachten Sie die **[!UICONTROL Schlüssel-ID]**. Sie wird in der App Surface-Konfiguration verwendet.
+1. Beachten Sie die **[!UICONTROL Team-ID]**. Sie wird in der App Surface-Konfiguration verwendet.
    ![Wichtigste Details](assets/push-apple-dev-key-details.png)
 
 Weitere Dokumentationen können [hier finden](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
-## App-Push-Anmeldedaten zur Datenerfassung hinzufügen
+### App-Push-Anmeldedaten zur Datenerfassung hinzufügen
 
 1. Aus dem [Datenerfassungsoberfläche](https://experience.adobe.com/data-collection/)auswählen **[!UICONTROL App-Oberflächen]** im linken Bereich.
-1. Um eine Konfiguration zu erstellen, wählen Sie **[!UICONTROL Erstellen von App-Oberflächen]**.
+1. Um eine Konfiguration zu erstellen, wählen Sie **[!UICONTROL App-Oberfläche erstellen]**.
    ![App-Oberfläche - Startseite](assets/push-app-surface.png)
 1. Geben Sie einen **[!UICONTROL Name]** für die Konfiguration, beispielsweise `Luma App Tutorial`  .
-1. Wählen Sie in der Konfiguration der Mobile App die Option **[!UICONTROL Apple iOS]**.
-1. Geben Sie die Bundle ID der Mobile App im Feld App-ID (iOS Bundle ID) ein. Wenn Sie zusammen mit der Luma-App folgen, lautet der Wert `com.adobe.luma.tutorial.swiftui`.
-1. Schalten Sie die **[!UICONTROL Push-Anmeldedaten]** -Schaltfläche, um Ihre Anmeldedaten hinzuzufügen.
+1. Von **[!UICONTROL Konfiguration von Mobile Apps]** auswählen **[!UICONTROL Apple iOS]**.
+1. Geben Sie die Bundle ID der Mobile App im Feld **[!UICONTROL App-ID (iOS Bundle ID)]** ein. Beispiel,  `com.adobe.luma.tutorial.swiftui`.
+1. Schalten Sie die **[!UICONTROL Push-Anmeldedaten]** Schalten Sie um, um Ihre Anmeldedaten hinzuzufügen.
 1. Ziehen und ablegen `.p8` **Authentifizierungsschlüssel für Apple-Push-Benachrichtigungen** -Datei.
-1. Stellen Sie die **[!UICONTROL Schlüssel-ID]**, eine 10-stellige Zeichenfolge, die bei der Erstellung von `p8` Authentifizierungsschlüssel. Sie finden sie unter der **[!UICONTROL Schlüssel]** im **Zertifikate, Kennungen und Profile** auf den Apple Developer Portal-Seiten.
-1. Geben Sie die **[!UICONTROL Team ID]** an. Die Team-ID ist ein Wert, der unter der **Mitgliedschaft** oder oben auf der Apple Developer Portal-Seite.
+1. Stellen Sie die **[!UICONTROL Schlüssel-ID]**, eine 10-stellige Zeichenfolge, die bei der Erstellung von `p8` Authentifizierungsschlüssel. Sie finden sie unter der **[!UICONTROL Schlüssel]** im **Zertifikate, Kennungen und Profile** auf den Apple Developer Portal-Seiten. Siehe auch [Privaten Schlüssel erstellen](#create-a-private-key).
+1. Geben Sie die **[!UICONTROL Team ID]** an. Die Team-ID ist ein Wert, der unter der **Mitgliedschaft** oder oben auf der Apple Developer Portal-Seite. Siehe auch [Privaten Schlüssel erstellen](#create-a-private-key).
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![App-Oberflächenkonfiguration](assets/push-app-surface-config.png)
 
-## Adobe Journey Optimizer-Tag-Erweiterung installieren
+### Journey Optimizer-Tag-Erweiterung installieren
+
+Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag-Eigenschaft aktualisieren.
 
 1. Navigieren Sie zu **[!UICONTROL Tags]** > **[!UICONTROL Erweiterungen]** > **[!UICONTROL Katalog]**,
 1. Öffnen Sie Ihre Eigenschaft, beispielsweise **[!UICONTROL Luma Mobile App-Tutorial]**.
@@ -96,7 +104,7 @@ Weitere Dokumentationen können [hier finden](https://help.apple.com/developer-a
 1. Installieren der Erweiterung.
 1. Im **[!UICONTROL Installieren der Erweiterung]** dialog
    1. Wählen Sie beispielsweise eine Umgebung aus. **[!UICONTROL Entwicklung]**.
-   1. Wählen Sie die **[!UICONTROL AJO Push Tracking Erlebnis-Datensatz]** Datensatz aus der **[!UICONTROL Ereignis-Datensatz]** Dropdown-Liste.
+   1. Wählen Sie die **[!UICONTROL AJO Push Tracking Erlebnis-Datensatz]** Datensatz aus der **[!UICONTROL Ereignis-Datensatz]** Liste.
    1. Auswählen **[!UICONTROL In Bibliothek speichern und erstellen]**.
       ![Einstellungen der AJO-Erweiterung](assets/push-tags-ajo.png)
 
@@ -105,17 +113,17 @@ Weitere Dokumentationen können [hier finden](https://help.apple.com/developer-a
 >Wenn Sie nicht sehen `AJO Push Tracking Experience Event Dataset` als Option kontaktieren Sie den Kundendienst.
 >
 
-## Implementieren von Journey Optimizer in die App
+### Implementieren von Journey Optimizer in die App
 
 Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobilen Tag-Erweiterung nur die Konfiguration. Als Nächstes müssen Sie das Messaging SDK installieren und registrieren. Wenn diese Schritte nicht klar sind, überprüfen Sie die [SDKs installieren](install-sdks.md) Abschnitt.
 
 >[!NOTE]
 >
->Wenn Sie die [SDKs installieren](install-sdks.md) -Abschnitt, ist das SDK bereits installiert und Sie können zu Schritt 7 überspringen.
+>Wenn Sie die [SDKs installieren](install-sdks.md) -Abschnitt, ist das SDK bereits installiert und Sie können diesen Schritt überspringen.
 >
 
 1. Stellen Sie in Xcode sicher, dass [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios.git) wird zur Liste der Pakete in Package-Abhängigkeiten hinzugefügt. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]**.
+1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** im Xcode-Projektnavigator.
 1. Sichern `AEPMessaging` ist Teil Ihrer Importliste.
 
    `import AEPMessaging`
@@ -145,16 +153,16 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    MobileCore.setPushIdentifier(deviceToken)
    ```
 
-   Diese Funktion ruft das Geräte-Token ab, das für das Gerät eindeutig ist, auf dem die App installiert ist. Legt dann das Token für die Push-Benachrichtigungsversand mithilfe der von Ihnen eingerichteten Konfiguration fest, die auf dem Push Notification Service (APNS) von Apple basiert.
+   Diese Funktion ruft das Geräte-Token ab, das für das Gerät eindeutig ist, auf dem die App installiert ist. Legt dann das Token für den Push-Benachrichtigungsversand mithilfe der von Ihnen eingerichteten Konfiguration fest, die sich auf den Push-Benachrichtigungsdienst (APNs) von Apple stützt.
 
-## Validierung mit Versicherung
+## Validieren der Einrichtungssicherheit
 
 1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md) Abschnitt.
 1. Installieren Sie die App auf Ihrem physischen Gerät oder auf dem Simulator.
 1. Starten Sie die App mithilfe der durch die Versicherung generierten URL.
 1. Wählen Sie in der Assurance-Benutzeroberfläche die Option **[!UICONTROL Konfigurieren]**.
    ![configure click](assets/push-validate-config.png)
-1. Wählen Sie die ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Schaltfläche neben **[!UICONTROL Push Debug]**.
+1. Auswählen ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben **[!UICONTROL Push Debug]**.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
    ![Speichern](assets/push-validate-save.png)
 1. Auswählen **[!UICONTROL Push Debug]** über die linke Navigation.
@@ -166,7 +174,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 1. (optional) Ändern Sie die Standarddetails für **[!UICONTROL Titel]** und **[!UICONTROL body]**
 1. Auswählen ![Fehler](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL Push-Benachrichtigung zum Testversand senden]**.
 1. Überprüfen Sie die **[!UICONTROL Testergebnisse]**.
-1. Sie sollten die Push-Benachrichtigung in Ihrer App sehen.
+1. Die Test-Push-Benachrichtigung sollte in Ihrer App angezeigt werden.
 
    <img src="assets/luma-app-push.png" width="300" />
 
@@ -177,7 +185,7 @@ Um eine eigene Push-Benachrichtigung zu erstellen, müssen Sie in Journey Optimi
 
 ### Schema aktualisieren
 
-Sie werden einen neuen Ereignistyp definieren, der noch nicht als Teil der Ereignisliste verfügbar ist, wie in Ihrem Schema definiert.
+Sie werden einen neuen Ereignistyp definieren, der noch nicht als Teil der Liste der in Ihrem Schema definierten Ereignisse verfügbar ist. Sie verwenden diesen Ereignistyp später beim Auslösen von Push-Benachrichtigungen.
 
 1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche die Option **[!UICONTROL Schemas]** über die linke Leiste.
 1. Auswählen **[!UICONTROL Durchsuchen]** in der Symbolleiste.
@@ -190,6 +198,8 @@ Sie werden einen neuen Ereignistyp definieren, der noch nicht als Teil der Ereig
       ![Wert zu Ereignistypen hinzufügen](assets/ajo-update-schema-eventtype-enum.png)
 
 ### Ereignis definieren
+
+Ereignisse in Journey Optimizer ermöglichen den einheitlichen Trigger Ihrer Journey, Nachrichten wie z. B. Push-Benachrichtigungen zu senden. Siehe [Über Ereignisse](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en) für weitere Informationen.
 
 1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche die Option **[!UICONTROL Konfigurationen]** über die linke Leiste.
 
@@ -220,15 +230,15 @@ Sie werden einen neuen Ereignistyp definieren, der noch nicht als Teil der Ereig
    1. Auswählen ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) neben dem **[!UICONTROL Ereignis-ID-Bedingung]** -Feld.
 
       1. Im **[!UICONTROL Ereignis-ID-Bedingung hinzufügen]** Dialogfeld, ziehen und ablegen **[!UICONTROL Ereignistyp (eventType)]** auf **[!UICONTROL Element hierher ziehen und ablegen]**.
-      1. Scrollen Sie im Popover-Fenster zum unteren Rand und wählen Sie **[!UICONTROL application.test]**. Scrollen Sie dann nach oben und wählen Sie **[!UICONTROL Ok]**.
-      1. Klicken Sie auf **[!UICONTROL OK]**.
+      1. Scrollen Sie im Popover-Fenster zum unteren Rand und wählen Sie **[!UICONTROL application.test]** (Dies ist der Ereignistyp, den Sie zuvor zur Liste der Ereignistypen im Rahmen von [Schema aktualisieren](#update-your-schema)). Scrollen Sie dann nach oben und wählen Sie **[!UICONTROL Ok]**.
+      1. Auswählen **[!UICONTROL Ok]** , um die Bedingung zu speichern.
          ![Ereignisbedingung bearbeiten](assets/ajo-edit-condition.png)
 
    1. Auswählen **[!UICONTROL ECID (ECID)]** aus dem **[!UICONTROL Namespace]** Liste. Automatisch die **[!UICONTROL Profilkennung]** -Feld mit **[!UICONTROL Die ID des ersten Elements des ECID-Schlüssels für die Map identityMap]**.
    1. Wählen Sie **[!UICONTROL Speichern]** aus.
       ![Ereignis bearbeiten Schritt 2](assets/ajo-edit-event2.png)
 
-Sie haben soeben eine Ereigniskonfiguration erstellt, die auf dem Erlebnisereignisschema der Mobile App basiert, das Sie im Rahmen dieses Tutorials zuvor erstellt haben. Diese Ereigniskonfiguration filtert eingehende Erlebnisereignisse anhand Ihrer App-Kennung, sodass Sie sicherstellen, dass nur von Ihrer App initiierte Ereignisse die Journey Trigger werden, die Sie im nächsten Schritt erstellen werden.
+Sie haben soeben eine Ereigniskonfiguration erstellt, die auf dem Erlebnisereignisschema der Mobile App basiert, das Sie im Rahmen dieses Tutorials zuvor erstellt haben. Diese Ereigniskonfiguration filtert eingehende Erlebnisereignisse anhand Ihrer App-Kennung, sodass Sie sicherstellen, dass nur von Ihrer App initiierte Ereignisse die Journey Trigger werden, die Sie im nächsten Schritt erstellen werden. In einem realen Szenario möchten Sie möglicherweise Push-Benachrichtigungen von einem externen Dienst senden. Es gelten jedoch die gleichen Konzepte: Von der externen Anwendung senden Sie ein Erlebnisereignis an Experience Platform, das spezifische Felder aufweist, auf die Sie Bedingungen anwenden können, bevor diese Ereignisse auf eine Journey Trigger werden.
 
 ### Journey erstellen
 
@@ -244,11 +254,11 @@ Als Nächstes erstellen Sie die Journey, die beim Empfang des entsprechenden Ere
    1. Klicken Sie auf **[!UICONTROL OK]**.
       ![Journey-Eigenschaften](assets/ajo-journey-properties.png)
 
-1. Zurück auf der Journey-Arbeitsfläche, aus dem **[!UICONTROL EREIGNISSE]**, ziehen Sie Ihre ![Ereignis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!UICONTROL LumaTestEvent]** auf der Arbeitsfläche, wo sie liest **[!UICONTROL Wählen Sie ein Eintrittsereignis oder die Aktivität Audience lesen aus]**.
+1. Zurück auf der Journey-Arbeitsfläche, aus dem **[!UICONTROL EREIGNISSE]**, ziehen Sie Ihre ![Ereignis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!UICONTROL LumaTestEvent]** auf der Arbeitsfläche, auf der sie angezeigt wird **[!UICONTROL Wählen Sie ein Eintrittsereignis oder die Aktivität Audience lesen aus]**.
 
-   * In den Ereignissen: **[!UICONTROL LumaTestEvent]** Bereich, geben Sie eine **[!UICONTROL Titel]**, beispielsweise `Luma Test Event`.
+   * Im **[!UICONTROL Ereignisse: LumaTestEvent]** Bereich, geben Sie eine **[!UICONTROL Titel]**, beispielsweise `Luma Test Event`.
 
-1. Aus dem **[!UICONTROL AKTIONEN]** Dropdown, per Drag &amp; Drop ![Push](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL Push]** auf ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) direkt auf Ihre **[!UICONTROL LumaTestEvent]** -Aktivität. Im **[!UICONTROL Aktionen: Push]** -Bereich:
+1. Aus dem **[!UICONTROL AKTIONEN]** Dropdown, per Drag &amp; Drop ![Push](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL Push]** auf ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) im rechten **[!UICONTROL LumaTestEvent]** -Aktivität. Im **[!UICONTROL Aktionen: Push]** -Bereich:
 
    1. Stellen Sie eine **[!UICONTROL Titel]**, beispielsweise `Luma Test Push Notification`, stellen Sie eine **[!UICONTROL Beschreibung]**, beispielsweise `Test push notification for Luma mobile app`auswählen **[!UICONTROL Transactional]** aus dem **[!UICONTROL Kategorie]** Liste und Auswahl **[!UICONTROL Luma]** aus dem **[!UICONTROL Push-Oberfläche]**.
    1. Auswählen ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Inhalt bearbeiten]** , um die eigentliche Push-Benachrichtigung zu bearbeiten.
@@ -268,11 +278,11 @@ Als Nächstes erstellen Sie die Journey, die beim Empfang des entsprechenden Ere
 
 ## Push-Benachrichtigung auslösen
 
-Sie verfügen über alle nötigen Bestandteile, um eine Push-Benachrichtigung zu versenden. Was bleibt, ist, wie diese Push-Benachrichtigung Trigger wird. Im Wesentlichen ist dies dasselbe wie zuvor: Senden Sie einfach ein Erlebnisereignis mit der richtigen Payload.
+Sie verfügen über alle nötigen Bestandteile, um eine Push-Benachrichtigung zu versenden. Was bleibt, ist, wie diese Push-Benachrichtigung Trigger wird. Im Wesentlichen ist dies dasselbe wie zuvor: Senden Sie einfach ein Erlebnisereignis mit der richtigen Payload (wie in ![Veranstaltungen](events.md)).
 
 Diesmal wird das Erlebnisereignis, das Sie senden möchten, nicht zum Erstellen eines einfachen XDM-Wörterbuchs erstellt. Sie verwenden eine Struktur, die eine Push-Benachrichtigungs-Payload darstellt. Die Definition eines dedizierten Datentyps ist eine alternative Methode zur Implementierung der Erstellung von Erlebnisereignis-Payloads in Ihrer Anwendung.
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Modell]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** und überprüfen Sie den Code.
+1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Modell]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** im Xcode-Projektnavigator und überprüfen Sie den Code.
 
    ```swift
    import Foundation
@@ -300,7 +310,7 @@ Diesmal wird das Erlebnisereignis, das Sie senden möchten, nicht zum Erstellen 
    }
    ```
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator und fügen Sie den folgenden Code hinzu `func sendTestPushEvent(applicationId: String, eventType: String)`:
+1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode Project-Navigator und fügen Sie den folgenden Code zu `func sendTestPushEvent(applicationId: String, eventType: String)`:
 
    ```swift
    Task {
@@ -339,13 +349,13 @@ Diesmal wird das Erlebnisereignis, das Sie senden möchten, nicht zum Erstellen 
    <img src="assets/ajo-test-push.png" width="300" />
 
 
-## Implementieren in Ihre App
+## Nächste Schritte
 
-Sie sollten jetzt über alle Tools verfügen, um gegebenenfalls Push-Benachrichtigungen zur Luma-App hinzuzufügen. Beispielsweise beim Einladen des Benutzers bei der Anmeldung bei der App oder beim Annähern an eine bestimmte Geolocation.
+Sie sollten jetzt über alle Tools verfügen, um Journey zum Senden von Push-Benachrichtigungen und zum Umgang mit Push-Benachrichtigungen von Journey Optimizer zu erstellen. Beispielsweise beim Einladen des Benutzers bei der Anmeldung bei der App.
 
 >[!SUCCESS]
 >
->Sie haben die App jetzt für Push-Benachrichtigungen mit Adobe Journey Optimizer und der Adobe Journey Optimizer-Erweiterung für das Adobe Experience Platform Mobile SDK aktiviert.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Sie haben die App jetzt für Push-Benachrichtigungen mit Journey Optimizer und der Journey Optimizer-Erweiterung für das Experience Platform Mobile SDK aktiviert.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[In-App-Nachrichten mit Journey Optimizer](journey-optimizer-inapp.md)**
 
