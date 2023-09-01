@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1605'
 ht-degree: 3%
 
 ---
@@ -48,11 +48,11 @@ In dieser Lektion werden Sie
 * Definieren Sie Ihr eigenes Kampagnen- und In-App-Nachrichtenerlebnis in Journey Optimizer.
 * Senden Sie Ihre eigene In-App-Nachricht aus der App heraus.
 
-## App einrichten
+## Einrichten
 
 >[!TIP]
 >
->Wenn Sie Ihre App bereits als Teil der [Push-Nachrichten in Journey Optimizer](journey-optimizer-push.md) -Tutorial können Sie diesen Abschnitt überspringen.
+>Wenn Sie Ihre Umgebung bereits als Teil der [Push-Nachrichten in Journey Optimizer](journey-optimizer-push.md) -Tutorial können Sie diesen Abschnitt überspringen.
 
 ### App-ID mit APNS registrieren
 

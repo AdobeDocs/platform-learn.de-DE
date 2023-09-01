@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2342'
 ht-degree: 3%
 
 ---
@@ -45,11 +45,11 @@ In dieser Lektion werden Sie
 * Implementieren Sie Angebote aus der Entscheidungsverwaltung in Ihre App.
 
 
-## App einrichten
+## Einrichten
 
 >[!TIP]
 >
->Wenn Sie Ihre App bereits als Teil der [Einrichten von A/B-Tests mit Target](target.md) Tutorial: Sie können [Installieren von Adobe Journey Optimizer - Decisioning Tags-Erweiterung](#install-adobe-journey-optimizer---decisioning-tags-extension) und [Schema aktualisieren](#update-your-schema).
+>Wenn Sie Ihre Umgebung bereits als Teil der [Einrichten von A/B-Tests mit Target](target.md) Tutorial: Sie können [Installieren von Adobe Journey Optimizer - Decisioning Tags-Erweiterung](#install-adobe-journey-optimizer---decisioning-tags-extension) und [Schema aktualisieren](#update-your-schema).
 
 ### Edge-Konfiguration aktualisieren
 
@@ -368,7 +368,7 @@ Sie sollten jetzt über alle Tools verfügen, um Ihrer Journey Optimizer - Imple
 
 * Anwenden verschiedener Parameter auf Ihre Angebote (z. B. Priorität, Begrenzung)
 * Erfassen von Profilattributen in der App (siehe [Profil](profile.md)) und verwenden Sie diese Profilattribute, um Zielgruppen zu erstellen. Verwenden Sie diese Zielgruppen dann als Teil der Eignungsregeln Ihrer Entscheidung.
-* mehrere Entscheidungsbereiche kombinieren
+* mehrere Entscheidungsbereiche kombinieren.
 
 >[!SUCCESS]
 >
