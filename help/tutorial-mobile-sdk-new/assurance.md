@@ -3,9 +3,9 @@ title: Einrichten der Sicherheit
 description: Erfahren Sie, wie Sie die Assurance-Erweiterung in eine mobile App implementieren.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '765'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ In dieser Lektion werden Sie:
 Vergewissern Sie sich, dass Ihr Unternehmen Zugriff auf die Zertifizierung hat, indem Sie die folgenden Schritte ausführen:
 
 1. Besuch [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen für die Experience Cloud an.
+1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten für Experience Cloud an.
 1. Wenn die Variable **[!UICONTROL Sitzungen]** angezeigt, haben Sie Zugriff. Wenn die Zugriffsseite (Beta) angezeigt wird, wählen Sie **[!UICONTROL registrieren]** registrieren.
 
 ## Implementierung
@@ -56,6 +56,8 @@ Neben der allgemeinen [SDK-Installation](install-sdks.md)Wenn Sie in der vorheri
    }
    ```
 
+   Dieser Code startet eine Sicherheitssitzung, wenn sich die App im Hintergrund befindet und über einen Deep-Link geöffnet wird.
+
 Weitere Informationen finden Sie [hier](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## Signing
@@ -63,21 +65,21 @@ Weitere Informationen finden Sie [hier](https://developer.adobe.com/client-sdks/
 Bevor Sie die Anwendung zum ersten Mal in Xcode ausführen, müssen Sie die Signatur aktualisieren.
 
 1. Öffnen Sie das Projekt  in Xcode.
-1. Auswählen **[!UICONTROL Luma]** im Navigator angezeigt.
+1. Auswählen **[!UICONTROL Luma]** im Projekt-Navigator.
 1. Wählen Sie die **[!UICONTROL Luma]** Zielgruppe.
 1. Wählen Sie die **Signieren und Funktionen** Registerkarte.
-1. Konfigurieren **[!UICONTROL Automatische Verwaltungssignatur]**, **[!UICONTROL Team]**, und **[!UICONTROL Bundle-Kennung]**.
+1. Konfigurieren **[!UICONTROL Automatische Verwaltungssignatur]**, **[!UICONTROL Team]**, und **[!UICONTROL Bundle-Kennung]** oder verwenden Sie Ihre spezifischen Apple-Entwicklungsbereitstellungsdetails.
 
    ![Xcode-Signaturfunktionen](assets/xcode-signing-capabilities.png)
 
 ## Einrichten einer Basis-URL
 
 1. Wechseln Sie zu Ihrem Projekt in Xcode.
-1. Auswählen **[!UICONTROL Luma]** im Navigator angezeigt.
+1. Auswählen **[!UICONTROL Luma]** im Projekt-Navigator.
 1. Wählen Sie die **[!UICONTROL Luma]** Zielgruppe.
 1. Wählen Sie die **Info** Registerkarte.
 1. Um eine Basis-URL hinzuzufügen, scrollen Sie nach unten zu **URL-Typen** und wählen Sie die **+** Schaltfläche.
-1. Satz **Kennung** zur Bundle-ID, die Sie in der [Signing](#signing) (Beispiel `com.adobe.luma.tutorial.swiftui`) und **URL-Schemata** nach `lumatutorialswiftui`.
+1. Satz **Kennung** zur Bundle-ID, die Sie in der [Signing](#signing) (Beispiel `com.adobe.luma.tutorial.swiftui`) und legen Sie eine **URL-Schemata**, beispielsweise `lumatutorialswiftui`.
 
    ![Sicherungs-URL](assets/assurance-url-type.png)
 
@@ -106,7 +108,7 @@ Assurance funktioniert durch Öffnen einer URL, entweder über einen Browser ode
    Wenn Sie einen Simulator verwenden:
 
    1. Auswählen **[!UICONTROL Link kopieren]**.
-   1. Kopieren Sie den Deep-Link mithilfe der Kopie . ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) und verwenden Sie den Deep-Link, um die App mit Safari im Simulator zu öffnen.
+   1. Kopieren Sie den Deep-Link mit ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  und verwenden Sie den Deep-Link, um die App mit Safari im Simulator zu öffnen.
       ![Link zum Kopieren der Assets](assets/assurance-copy-link.png)
 
 1. Wenn die App geladen wird, wird Ihnen ein modales Dialogfeld angezeigt, in dem Sie aufgefordert werden, die in Schritt 7 dargestellte PIN einzugeben.
@@ -119,15 +121,15 @@ Assurance funktioniert durch Öffnen einer URL, entweder über einen Browser ode
 1. Wenn die Verbindung erfolgreich hergestellt wurde, sehen Sie Folgendes:
    * Ein Zuverlässigkeitssymbol, das über der App angezeigt wird.
 
-   <img src="assets/assurance-modal.png" width="300">
+     <img src="assets/assurance-modal.png" width="300">
 
-   * Experience Cloud-Updates, die in der Web-basierten Assurance-Benutzeroberfläche durchgeführt werden und Folgendes zeigen:
+   * Experience Cloud-Updates in der Assurance-Benutzeroberfläche, die Folgendes zeigen:
 
       1. Erlebnisereignisse aus der App.
       1. Details eines ausgewählten Ereignisses.
       1. Gerät und Timeline.
 
-     ![Zuverlässigkeitsereignisse](assets/assurance-events.png)
+         ![Zuverlässigkeitsereignisse](assets/assurance-events.png)
 
 Wenn Sie auf Herausforderungen stoßen, lesen Sie bitte die [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de){target="_blank"}.
 

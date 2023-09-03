@@ -3,10 +3,10 @@ title: Erstellen eines XDM-Schemas
 description: Erfahren Sie, wie Sie ein XDM-Schema für App-Ereignisse erstellen.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 17%
+source-wordcount: '1416'
+ht-degree: 18%
 
 ---
 
@@ -100,7 +100,7 @@ Zu Lernzwecken verwenden Sie vordefinierte und benutzerdefinierte Feldergruppen.
 
    ![Auswählen von ExperienceEvent aus der Dropdown-Liste](assets/schema-create.png)
 
-1. Auswählen ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Hinzufügen** neben [!UICONTROL Feldergruppen].
+1. Auswählen ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Hinzufügen** neben **[!UICONTROL Feldergruppen]**.
 
    ![Hinzufügen einer Feldergruppe](assets/add-field-group.png)
 
@@ -116,7 +116,7 @@ Zu Lernzwecken verwenden Sie vordefinierte und benutzerdefinierte Feldergruppen.
 
    Sie gelangen zurück zum Bildschirm zur Hauptschemakomposition, wo Sie alle verfügbaren Felder sehen können.
 
-1. Geben Sie Ihrem Schema einen Namen, indem Sie **[!UICONTROL Unbenanntes Schema]** von oben links aus und geben Sie dann eine **[!UICONTROL Anzeigename]** &amp; **[!UICONTROL Beschreibung]**, beispielsweise `Luma Mobile App Event Schema` und `Schema for Luma mobile app experience events.`
+1. Geben Sie Ihrem Schema einen Namen, indem Sie **[!UICONTROL Unbenanntes Schema]** aus dem **[!UICONTROL Komposition]** Bereich (unter **[!UICONTROL Schema]**) und die Bereitstellung einer **[!UICONTROL Anzeigename]** &amp; **[!UICONTROL Beschreibung]**, beispielsweise `Luma Mobile App Event Schema` und `Schema for Luma mobile app experience events.`
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -125,8 +125,8 @@ Zu Lernzwecken verwenden Sie vordefinierte und benutzerdefinierte Feldergruppen.
 >[!NOTE]
 >
 >Beachten Sie, dass nicht alle Felder einer Gruppe verwendet werden müssen. Wenn es hilfreich ist, können Sie sich ein Schema als leere Datenschicht vorstellen. In Ihrer App füllen Sie die entsprechenden Werte zum richtigen Zeitpunkt aus.
->
->Die `Consumer Experience Event` hat einen Datentyp namens `Web information`, der Ereignisse wie Seitenansichten und Link-Klicks beschreibt. Zum Zeitpunkt des Schreibens gibt es keine App-Parität für diese Funktion. Daher erstellen Sie Ihre eigene.
+
+Die [!UICONTROL Ereignis für Kundenerlebnisse] Feldergruppe hat einen Datentyp namens [!UICONTROL Webinformationen], der Ereignisse wie Seitenansichten und Link-Klicks beschreibt. Zum Zeitpunkt des Schreibens gibt es keine App-Parität für diese Funktion. Daher erstellen Sie Ihre eigene.
 
 ## Erstellen eines benutzerdefinierten Datentyps
 
@@ -152,9 +152,8 @@ Erstellen Sie zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 
 1. Um ein Feld hinzuzufügen, wählen Sie die ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Schaltfläche.
 
-   Dieses Feld ist ein Container-Objekt für die App-Interaktion.
 
-1. Kamelgehäuse bereitstellen **[!UICONTROL Feldname]** `appInteraction`, **[!UICONTROL Anzeigename]** `App Interaction`und wählen Sie `Object` aus dem **[!UICONTROL Typ]** Liste.
+1. Dieses Feld ist ein Container-Objekt für App-Interaktionen. Geben Sie daher eine Binnenmajuskel-Schreibweise an. **[!UICONTROL Feldname]** `appInteraction`, **[!UICONTROL Anzeigename]** `App Interaction`und wählen Sie `Object` aus dem **[!UICONTROL Typ]** Liste.
 
 1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
@@ -180,7 +179,7 @@ Erstellen Sie zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 
 1. Scrollen Sie nach unten in der rechten Leiste und wählen Sie **[!UICONTROL Anwenden]**.
 
-1. So erstellen Sie eine `appStateDetails` -Objekt, das **[!UICONTROL Maßnahme]** Feld namens `screenView` und zwei **[!UICONTROL Zeichenfolge]** Felder namens `screenName` und `screenType` Führen Sie dieselben Schritte wie beim Erstellen der **[!UICONTROL appInteraction]** -Objekt.
+1. So erstellen Sie eine `appStateDetails` -Objekt, das **[!UICONTROL Maßnahme]** Feld namens `screenView` und zwei **[!UICONTROL Zeichenfolge]** Felder namens `screenName` und `screenType`führen Sie dieselben Schritte wie beim Erstellen der **[!UICONTROL appInteraction]** -Objekt.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -196,7 +195,7 @@ Fügen Sie nun mithilfe Ihres benutzerdefinierten Datentyps eine benutzerdefinie
 
    ![Neue Feldergruppe hinzufügen](assets/schema-fieldgroup-add.png)
 
-1. Erstellen Sie eine benutzerdefinierte Feldergruppe, indem Sie die **[!UICONTROL Neue Feldergruppe erstellen]** Optionsfeld oben.
+1. Wählen Sie **[!UICONTROL Neue Feldergruppe erstellen]** aus.
 
 1. Stellen Sie eine **[!UICONTROL Anzeigename]** und **[!UICONTROL Beschreibung]**, beispielsweise `App Interactions` und `Fields for app interactions`.
 
@@ -210,7 +209,7 @@ Fügen Sie nun mithilfe Ihres benutzerdefinierten Datentyps eine benutzerdefinie
 
 1. Geben Sie in der rechten Leiste einen **[!UICONTROL Feldname]** von `appInformation`, a **[!UICONTROL Anzeigename]** von `App Information`und ein **[!UICONTROL Typ]** von `App Information`.
 
-1. Auswählen **[!UICONTROL App-Interaktionen]** aus dem **[!UICONTROL Typ]** Dropdown-Liste, der Datentyp, den Sie in der vorherigen Übung erstellt haben.
+1. Auswählen **[!UICONTROL App-Interaktionen]** aus dem **[!UICONTROL Typ]** Dropdown-Liste, der benutzerdefinierte Datentyp, den Sie in der vorherigen Übung erstellt haben.
 
 1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
@@ -220,7 +219,7 @@ Fügen Sie nun mithilfe Ihres benutzerdefinierten Datentyps eine benutzerdefinie
 
 >[!NOTE]
 >
->Benutzerdefinierte Feldergruppen werden immer unter Ihrer Experience Cloud-Organisationskennung platziert. Also `_techmarketingdemos` durch den eindeutigen Wert Ihrer Organisation ersetzt.
+>Benutzerdefinierte Feldergruppen werden immer unter Ihrer Experience Cloud-Organisationskennung platziert. Also `_techmarketingdemos`wird in den Screenshots verwendet und durch den eindeutigen Wert Ihres Unternehmens ersetzt.
 
 
 >[!SUCCESS]

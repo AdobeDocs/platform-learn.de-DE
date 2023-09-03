@@ -3,9 +3,9 @@ title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream in Experience Platform erstellen.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '546'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ Ein Datenspeicher ist eine serverseitige Konfiguration im Platform Edge Network.
 
 ## Voraussetzungen
 
-Um einen Datastream zu erstellen, muss Ihre Organisation für diese Funktion in der Datenerfassungsoberfläche (zuvor [!UICONTROL Launch]) und Sie müssen über Benutzerberechtigungen für [!UICONTROL Experience Platform] > [!UICONTROL Datenerfassung] > **[!UICONTROL Verwalten von Datenspeichern]** und **[!UICONTROL Anzeigen von Datenspeichern]**.
+Um einen Datastream zu erstellen, muss Ihre Organisation für diese Funktion in der Datenerfassungsoberfläche (zuvor [!UICONTROL Launch]) und Sie müssen über Benutzerberechtigungen verfügen, um Datenspeicher zu verwalten und anzuzeigen.
 
 ## Lernziele
 
@@ -74,7 +74,7 @@ Möglicherweise möchten Sie auch den Adobe Experience Platform-Dienst aktiviere
 
 1. Aktivieren Sie den Dienst, indem Sie **[!UICONTROL Aktiviert]** auf.
 
-1. Wählen Sie die **[!UICONTROL Ereignis-Datensatz]** die Sie im Rahmen der [Datensatz erstellen](platform.md#create-a-dataset) -Anweisung, beispielsweise **Ereignis-Datensatz für Luma Mobile App**
+1. Wählen Sie die **[!UICONTROL Ereignis-Datensatz]** die Sie im Rahmen der [Datensatz erstellen](platform.md#create-a-dataset) Anweisungen, beispielsweise **Ereignis-Datensatz für Luma Mobile App**
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -88,7 +88,7 @@ Möglicherweise möchten Sie auch den Adobe Experience Platform-Dienst aktiviere
 >
 >Durch die Aktivierung der einzelnen Dienste, die Ihr Unternehmen verwendet, stellen Sie sicher, dass in der App erfasste Daten überall verwendet werden können. Weitere Informationen zu den Datastream-Einstellungen finden Sie in der Dokumentation . [here](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-Bei der Implementierung des Platform Mobile SDK in Ihrer eigenen App sollten Sie drei Datenspeicher erstellen, die Ihren drei Tag-Umgebungen (Entwicklung, Staging und Produktion) zugeordnet werden. Wenn Sie Platform Mobile SDK mit Platform-basierten Anwendungen wie Adobe Real-time Customer Data Platform oder Adobe Journey Optimizer verwenden, sollten Sie sicherstellen, dass Sie diese Datenspeicher in den entsprechenden Platform-Sandboxes erstellen.
+Bei der Implementierung des Platform Mobile SDK in Ihrer eigenen App sollten Sie letztendlich drei Datenspeicher erstellen, die Ihren drei Tag-Umgebungen (Entwicklung, Staging und Produktion) zugeordnet werden. Wenn Sie Platform Mobile SDK mit Platform-basierten Anwendungen wie Adobe Real-time Customer Data Platform oder Adobe Journey Optimizer verwenden, sollten Sie diese Datenspeicher in den entsprechenden Sandboxes erstellen.
 
 >[!SUCCESS]
 >

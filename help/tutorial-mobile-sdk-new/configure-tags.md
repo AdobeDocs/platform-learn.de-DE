@@ -3,7 +3,7 @@ title: Konfigurieren einer Tag-Eigenschaft
 description: Erfahren Sie, wie Sie eine Tag-Eigenschaft im [!UICONTROL Datenerfassung] -Schnittstelle.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 9%
@@ -129,7 +129,7 @@ Ihre Bibliothek wird für die neuen Erweiterungen und Konfigurationen erstellt. 
 
    ![Umgebungs-Startbildschirm](assets/tags-environments.png)
 
-1. Im [!UICONTROL Installationsanweisungen für Mobilgeräte] wählen Sie das **[!UICONTROL iOS]** Registerkarte.
+1. Im **[!UICONTROL Installationsanweisungen für Mobilgeräte]** wählen Sie das **[!UICONTROL iOS]** Registerkarte.
 
 1. Sie können ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) Anweisungen zum Einrichten Ihres Projekts mit CocoaPods. CocoaPods werden zur Verwaltung von SDK-Versionen und -Downloads verwendet. Weitere Informationen finden Sie unter [Dokumentation](https://cocoapods.org/).
 

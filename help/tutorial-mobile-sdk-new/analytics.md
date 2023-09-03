@@ -3,9 +3,9 @@ title: Analytics-Zuordnung
 description: Erfahren Sie, wie Sie Daten für Adobe Analytics in einer App erfassen.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '641'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Viele der Standard-XDM-Felder werden automatisch Analytics-Variablen zugeordnet.
 
 ### Beispiel 1: s.products
 
-Ein gutes Beispiel dafür ist die [Produktvariable](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) die nicht mit Verarbeitungsregeln aufgefüllt werden können. Bei einer XDM-Implementierung werden alle erforderlichen Daten in productListItems und s.products automatisch über die Analytics-Zuordnung ausgefüllt.
+Ein gutes Beispiel dafür ist die [Produktvariable](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) die nicht mit Verarbeitungsregeln aufgefüllt werden können. Mit einer XDM-Implementierung übergeben Sie alle erforderlichen Daten in `productListItems` und `s.products` werden automatisch über die Analytics-Zuordnung ausgefüllt.
 
 Dieses Objekt:
 
@@ -56,7 +56,7 @@ Dieses Objekt:
 ]
 ```
 
-Dies würde Folgendes zur Folge haben:
+führt zu:
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,6 +65,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >Aktuell `productListItems[N].SKU` wird von der automatischen Zuordnung ignoriert.
+
 
 ### Beispiel 2 - scAdd
 
@@ -80,7 +81,7 @@ Dieses Objekt:
 }
 ```
 
-Dies würde Folgendes zur Folge haben:
+führt zu:
 
 ```
 s.events = "scAdd"
@@ -97,7 +98,7 @@ Dieses Objekt:
 }
 ```
 
-Dies würde Folgendes zur Folge haben:
+führt zu:
 
 ```
 s.events = "scAdd:321435"
@@ -105,7 +106,7 @@ s.events = "scAdd:321435"
 
 ## Validierung mit Versicherung
 
-Verwenden der [Tool zur Qualitätssicherung](assurance.md) Sie können bestätigen, dass Sie ein ExperienceEvent senden, dass die XDM-Daten korrekt sind und die Analytics-Zuordnung erwartungsgemäß erfolgt. Beispiel:
+Verwenden der [Assurance](assurance.md) Sie können bestätigen, dass Sie ein Erlebnisereignis senden, dass die XDM-Daten korrekt sind und die Analytics-Zuordnung erwartungsgemäß erfolgt. Beispiel:
 
 1. Senden Sie ein productListAdds-Ereignis.
 
@@ -157,10 +158,10 @@ a.x.[xdm path]
 Beispiel:
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 

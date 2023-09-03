@@ -2,9 +2,9 @@
 title: Events
 description: Erfahren Sie, wie Sie Ereignisdaten in einer Mobile App erfassen.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
@@ -17,15 +17,15 @@ Die Edge Network-Erweiterung stellt eine API zum Senden von Erlebnisereignissen 
 
 ## Voraussetzungen
 
-* Alle Paketabhängigkeiten sind im Xcode-Projekt vorhanden.
-* Registrierte Erweiterungen in AppDelegate.
-* MobileCore für die Verwendung Ihrer Entwicklungs-AppId konfiguriert.
+* Alle Paketabhängigkeiten sind in Ihrem Xcode-Projekt vorhanden.
+* Registrierte Erweiterungen in **[!UICONTROL AppDelegate]**.
+* Konfigurierte MobileCore-Erweiterung zur Verwendung Ihrer Entwicklung `appId`.
 * Importierte SDKs
-* App wurde erfolgreich erstellt und mit den oben genannten Änderungen ausgeführt.
+* Die App wurde erfolgreich erstellt und mit den oben genannten Änderungen ausgeführt.
 
 ## Lernziele
 
-In dieser Lektion werden Sie:
+In dieser Lektion werden Sie
 
 * Erfahren Sie, wie Sie XDM-Daten basierend auf einem Schema strukturieren.
 * Senden Sie ein XDM-Ereignis basierend auf einer Standardfeldgruppe.
@@ -76,7 +76,7 @@ Für die Standardfeldgruppen sieht der Prozess wie folgt aus:
 
    * `eventType`: Beschreibt das aufgetretene Ereignis und verwendet eine [bekannter Wert](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) nach Möglichkeit.
    * `commerce.productViews.id`: ein string -Wert, der die SKU des Produkts darstellt.
-   * `commerce.productViews.value`: Geben Sie den numerischen Wert des Ereignisses an. Wenn es sich um einen booleschen Wert (oder &quot;Zähler&quot;in Adobe Analytics) handelt, wird der Wert immer auf 1 gesetzt. Bei numerischen Ereignissen oder Währungsereignissen kann der Wert > 1 betragen.
+   * `commerce.productViews.value`: der numerische oder boolesche Wert des Ereignisses. Wenn es sich um einen booleschen Wert (oder &quot;Zähler&quot;in Adobe Analytics) handelt, wird der Wert immer auf 1 gesetzt. Bei numerischen Ereignissen oder Währungsereignissen kann der Wert > 1 betragen.
 
 * Identifizieren Sie in Ihrem Schema alle zusätzlichen Daten, die mit dem Ereignis zur Produktansicht für Commerce-Produkte verknüpft sind. Fügen Sie in diesem Beispiel **[!UICONTROL productListItem]** Hierbei handelt es sich um einen Standardsatz von Feldern, die mit Commerce-bezogenen Ereignissen verwendet werden:
 
@@ -118,18 +118,19 @@ var xdmData: [String: Any] = [
   ```
 
 Sie werden diesen Code jetzt tatsächlich in Ihr Xcode-Projekt implementieren.
-Sie haben unterschiedliche Aktionen im Zusammenhang mit Commerce-Produkten in Ihrer App und möchten Ereignisse basierend auf diesen Aktionen senden, die vom Benutzer ausgeführt werden:
+Sie haben verschiedene Commerce-produktbezogene Aktionen in Ihrer App und möchten Ereignisse basierend auf den vom Benutzer durchgeführten Aktionen senden:
 
-* Ansicht: Tritt auf, wenn Benutzer ein bestimmtes Produkt anzeigen;
-* Zum Warenkorb hinzufügen: wenn Benutzer tippt <img src="assets/addtocart.png" width="20" /> in einem Produktdetailbildschirm,
-* für später speichern: Benutzer tippt auf <img src="assets/saveforlater.png" width="15" /> im Produktdetailbildschirm,
-* Käufer: Benutzer tippt auf die <img src="assets/purchase.png" width="20" /> im Produktdetailbildschirm.
+* Ansicht: Tritt auf, wenn ein Benutzer ein bestimmtes Produkt anzeigt,
+* Hinzufügen zum Warenkorb: wenn ein Benutzer auf <img src="assets/addtocart.png" width="20" /> in einem Produktdetailbildschirm,
+* für später speichern: wenn ein Benutzer auf <img src="assets/saveforlater.png" width="15" /> in einem Produktdetailbildschirm,
+* Käufer: wenn ein Benutzer auf <img src="assets/purchase.png" width="20" /> in einem Produktdetailbildschirm.
 
-So strukturieren Sie das Senden von Erlebnisereignissen:
+Um das Senden von Commerce-bezogenen Erlebnisereignissen wiederverwendbar zu machen, verwenden Sie eine dedizierte Funktion:
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projekt-Navigator und fügen Sie Folgendes zum `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` -Funktion. Diese Funktion akzeptiert das Commerce-Erlebnis-Ereignis und das Produkt als Parameter:
+1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projekt-Navigator und fügen Sie Folgendes zum `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` -Funktion.
 
    ```swift
+   // Set up a data dictionary, create an experience event and send the event.
    let xdmData: [String: Any] = [
        "eventType": "commerce." + commerceEventType,
        "commerce": [
@@ -147,18 +148,23 @@ So strukturieren Sie das Senden von Erlebnisereignissen:
        ]
    ]
    
-   Logger.viewCycle.info("About to send commerce experience event of type  \(commerceEventType)..."
    let commerceExperienceEvent = ExperienceEvent(xdm: xdmData)
    Edge.sendEvent(experienceEvent: commerceExperienceEvent)
    ```
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Produkte]** > **[!UICONTROL ProductView]** und fügen Sie verschiedene Aufrufe zu `sendCommerceExperienceEvent` Funktion:
+   Diese Funktion akzeptiert den Ereignistyp und das Produkt des Commerce-Erlebnisses als Parameter und
+
+   * richtet die XDM-Payload mithilfe der Parameter aus der Funktion als Wörterbuch ein,
+   * richtet mithilfe des Wörterbuchs ein Erlebnisereignis ein,
+   * sendet das Erlebnisereignis mit der [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+
+1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Produkte]** > **[!UICONTROL ProductView]** im Xcode-Projektnavigator und fügen Sie verschiedene Aufrufe zum `sendCommerceExperienceEvent` Funktion:
 
    1. Im `.task` -Modifikator innerhalb der `ATTrackingManager.trackingAuthorizationStatus` Schließung. Diese `.task` -Modifikator wird aufgerufen, wenn die Produktansicht initialisiert und angezeigt wird. Daher möchten Sie zu diesem bestimmten Zeitpunkt ein Produktansichtsereignis senden.
 
       ```swift
-      // Send commerce experience event
-      MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productView", product: product)
+      // Send productViews commerce experience event
+      MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
    1. Für jede der Schaltflächen (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> und <img src="assets/purchase.png" width="20" />) in der Symbolleiste den entsprechenden Aufruf innerhalb der `ATTrackingManager.trackingAuthorizationStatus == .authorized` Stilllegung:
@@ -166,7 +172,7 @@ So strukturieren Sie das Senden von Erlebnisereignissen:
       1. Für <img src="assets/saveforlater.png" width="15" />
 
          ```swift
-         // Send saveForLater commerce experience event
+         // Send saveForLaters commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
@@ -180,7 +186,7 @@ So strukturieren Sie das Senden von Erlebnisereignissen:
       1. Für <img src="assets/purchase.png" width="20" />
 
          ```swift
-         // Send purchase commerce experience event
+         // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
 
@@ -257,6 +263,7 @@ Erneut lassen Sie diesen Code in Ihr Xcode-Projekt implementieren.
    1. Eine für App-Interaktionen. Fügen Sie diesen Code zum `func sendAppInteractionEvent(actionName: String)` Funktion:
 
       ```swift
+      // Set up a data dictionary, create an experience event and send the event.
       let xdmData: [String: Any] = [
           "eventType": "application.interaction",
           tenant : [
@@ -274,9 +281,17 @@ Erneut lassen Sie diesen Code in Ihr Xcode-Projekt implementieren.
       Edge.sendEvent(experienceEvent: appInteractionEvent)
       ```
 
+      Diese Funktion verwendet den Aktionsnamen als Parameter und
+
+      * richtet die XDM-Nutzlast als Wörterbuch ein, indem der Parameter aus der Funktion verwendet wird,
+      * richtet mithilfe des Wörterbuchs ein Erlebnisereignis ein,
+      * sendet das Erlebnisereignis mit der [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+
+
    1. Und eine für die Bildschirmverfolgung. Fügen Sie diesen Code zum `func sendTrackScreenEvent(stateName: String) ` Funktion:
 
       ```swift
+      // Set up a data dictionary, create an experience event and send the event.
       let xdmData: [String: Any] = [
           "eventType": "application.scene",
           tenant : [
@@ -295,6 +310,12 @@ Erneut lassen Sie diesen Code in Ihr Xcode-Projekt implementieren.
       Edge.sendEvent(experienceEvent: trackScreenEvent)
       ```
 
+      Diese Funktion verwendet den Statusnamen als Parameter und
+
+      * richtet die XDM-Nutzlast als Wörterbuch ein, indem der Parameter aus der Funktion verwendet wird,
+      * richtet mithilfe des Wörterbuchs ein Erlebnisereignis ein,
+      * sendet das Erlebnisereignis mit der [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+
 1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Allgemein]** > **[!UICONTROL LoginSheet]**.
 
    1. Fügen Sie den folgenden hervorgehobenen Code zum Schließen der Anmelde-Schaltfläche hinzu:
@@ -312,23 +333,28 @@ Erneut lassen Sie diesen Code in Ihr Xcode-Projekt implementieren.
       MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: login")
       ```
 
-### Validierung
+## Validierung
 
 1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md) und verbinden Sie Ihren Simulator oder Ihr Gerät mit Assurance.
-1. Führen Sie die App aus, um sich anzumelden und mit einem Produkt zu interagieren.
+1. Führen Sie das Programm aus, melden Sie sich an und interagieren Sie mit einem Produkt.
 
    1. Verschieben Sie das Symbol &quot;Versicherung&quot;nach links.
    1. Auswählen **[!UICONTROL Startseite]** in der Symbolleiste.
    1. Wählen Sie die <img src="assets/login.png" width="15" /> -Schaltfläche, um das Login-Blatt zu öffnen.
+
+      <img src="./assets/mobile-app-events-1.png" width="300">
+
    1. Wählen Sie die <img src="assets/insert.png" width="15" /> -Schaltfläche, um eine zufällige E-Mail- und Kunden-ID einzufügen.
    1. Auswählen **[!UICONTROL Anmelden]**.
+
+      <img src="./assets/mobile-app-events-2.png" width="300">
    1. Auswählen **[!UICONTROL Produkte]** in der Symbolleiste.
    1. Wählen Sie ein Produkt.
    1. Auswählen <img src="assets/saveforlater.png" width="15" />.
    1. Auswählen <img src="assets/addtocart.png" width="20" />.
    1. Auswählen <img src="assets/purchase.png" width="15" />.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+      <img src="./assets/mobile-app-events-3.png" width="300">
 
 
 1. Suchen Sie in der Assurance-Benutzeroberfläche nach der **[!UICONTROL hitReceived]** -Ereignisse aus **[!UICONTROL com.adobe.edge.konductor]** -Anbieter.
@@ -336,17 +362,17 @@ Erneut lassen Sie diesen Code in Ihr Xcode-Projekt implementieren.
    ![Datenerfassungsprüfung](assets/datacollection-validation.png)
 
 
-### Implementieren in die Luma-App
+## Nächste Schritte
 
-Sie sollten jetzt über alle Tools verfügen, um die Datenerfassung zur Luma-App hinzuzufügen. Sie können mehr Informationen dazu hinzufügen, wie Ihr Benutzer mit Ihren Produkten interagiert, und Sie können Ihrer App weitere App-Interaktionen und Screentracking-Aufrufe hinzufügen:
+Sie sollten jetzt über alle Tools verfügen, um die Datenerfassung zur Luma-App hinzuzufügen. Sie können mehr Informationen darüber hinzufügen, wie der Benutzer mit Ihren Produkten in der App interagiert, und Sie können der App weitere App-Interaktionen und Screentracking-Aufrufe hinzufügen:
 
-* Implementieren Sie die App, indem Sie Bestellungen, Checkout, leeren Warenkorb und andere Funktionen hinzufügen und dieser Funktion relevante Commerce-Erlebnisereignisse hinzufügen.
+* Implementieren Sie die App, indem Sie Bestellungen, Checkout, leeren Warenkorb und andere Funktionen hinzufügen und relevante Commerce-Erlebnisereignisse zu dieser Funktion hinzufügen.
 * Wiederholen Sie den Aufruf von `sendAppInteractionEvent` mit dem entsprechenden Parameter, um andere App-Interaktionen des Benutzers zu verfolgen.
 * Wiederholen Sie den Aufruf von `sendTrackScreenEvent` mit dem entsprechenden Parameter zur Verfolgung der Bildschirme, die vom Benutzer in der App angezeigt wurden.
 
 >[!TIP]
 >
->Überprüfen Sie die [voll implementierte App](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) für weitere Beispiele.
+>Überprüfen Sie die [fertige App](https://git.corp.adobe.com/rmaur/Luma) für weitere Beispiele.
 
 
 ## Senden von Ereignissen an Analytics und Platform

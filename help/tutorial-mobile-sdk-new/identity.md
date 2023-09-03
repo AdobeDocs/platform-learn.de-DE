@@ -3,9 +3,9 @@ title: Identität
 description: Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '666'
 ht-degree: 8%
 
 ---
@@ -54,16 +54,14 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator und suchen Sie die `func updateIdentities(emailAddress: String, crmId: String)` -Funktionsimplementierung. Fügen Sie der Funktion den folgenden Code hinzu.
 
    ```swift
-   // Set up identity map
+   // Set up identity map, add identities to map and update identities
    let identityMap: IdentityMap = IdentityMap()
    
-   // Add identity items to identity map
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
    let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
-   // Update identities
    Identity.updateIdentities(with: identityMap)
    ```
 
@@ -98,7 +96,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 1. Navigieren Sie zu **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Allgemein]** > **[!UICONTROL LoginSheet]** im Xcode Project-Navigator und suchen Sie den Code, der beim Auswählen der **[!UICONTROL Anmelden]** Schaltfläche. Fügen Sie den folgenden Code hinzu:
 
    ```swift
-   // call updaeIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -110,14 +108,14 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 
 ## Identität entfernen
 
-Sie können `removeIdentity` , um die Identität aus der gespeicherten clientseitigen IdentityMap zu entfernen. Die ID-Erweiterung sendet die Kennung nicht mehr an das Edge-Netzwerk. Die Verwendung dieser API entfernt die Kennung nicht aus dem serverseitigen Benutzerprofildiagramm oder Identitätsdiagramm.
+Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API zum Entfernen der Identität aus der gespeicherten clientseitigen Identitätszuordnung. Die ID-Erweiterung sendet die Kennung nicht mehr an das Edge-Netzwerk. Die Verwendung dieser API entfernt die Kennung nicht aus dem serverseitigen Benutzerprofildiagramm oder Identitätsdiagramm.
 
 1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Allgemein]** > **[!UICONTROL MobileSDK]** im Xcode Project-Navigator und fügen Sie den folgenden Code zum `func removeIdentities(emailAddress: String, crmId: String)` Funktion:
 
    ```swift
+   // Remove identities and reset email and CRM Id to their defaults
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
-   // reset email and CRM Id to their defaults
    currentEmailId = "testUser@gmail.com"
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
@@ -125,9 +123,8 @@ Sie können `removeIdentity` , um die Identität aus der gespeicherten clientsei
 1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Allgemein]** > **[!UICONTROL LoginSheet]** im Xcode Project-Navigator und suchen Sie den Code, der beim Auswählen der **[!UICONTROL Abmelden]** Schaltfläche. Fügen Sie den folgenden Code hinzu:
 
    ```swift
-   // call removeIdentities
-   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
-   dismiss()                   
+   // Remove identities
+   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                  
    ```
 
 
@@ -137,11 +134,14 @@ Sie können `removeIdentity` , um die Identität aus der gespeicherten clientsei
 1. In der Luma-App
    1. Wählen Sie die **[!UICONTROL Startseite]** Registerkarte.
    1. Wählen Sie die <img src="assets/login.png" width="15" /> rechts oben.
+
+      <img src="./assets/identity1.png" width="300">
+
    1. Geben Sie eine E-Mail-Adresse und eine CRM-ID an oder
    1. Auswählen <img src="assets/insert.png" width="15" /> zufällig generieren Sie eine **[!UICONTROL Email]** und **[!UICONTROL CRM-ID]**.
    1. Auswählen **[!UICONTROL Anmelden]**.
 
-      <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
+      <img src="./assets/identity2.png" width="300">
 
 
 1. Suchen Sie in der Web-Benutzeroberfläche &quot;Assurance&quot;nach dem **[!UICONTROL Identitäten für Edge-Identitätsaktualisierungen]** -Ereignis aus **[!UICONTROL com.adobe.griffon.mobile]** -Anbieter.
