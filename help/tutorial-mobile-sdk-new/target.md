@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1433'
 ht-degree: 3%
 
 ---
@@ -218,7 +218,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    * ruft die Vorschläge für das aktuelle Profil basierend auf dem Entscheidungsbereich ab (dem Ort, den Sie im A/B-Test definiert haben) und
    * entpackt das Ergebnis in Inhalt, der ordnungsgemäß in der App angezeigt werden kann.
 
-1. Noch in **[!UICONTROL TargetOffersView]**, suchen Sie die`unc updatePropositions(location: String) async` und fügen Sie den folgenden Code hinzu:
+1. Noch in **[!UICONTROL TargetOffersView]**, suchen Sie die `func updatePropositions(location: String) async` und fügen Sie den folgenden Code hinzu:
 
    ```swift
        Task {
