@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Daten an Adobe Experience Platform senden.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 8%
+source-wordcount: '963'
+ht-degree: 7%
 
 ---
 
@@ -51,21 +51,20 @@ Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, wer
 1. Wählen Sie **[!UICONTROL Datensatz aus Schema erstellen]** aus.
    ![Datensatz-Homepage](assets/dataset-create.png)
 
-1. Suchen nach Ihrem Schema
-
-1. Wählen Sie Ihr Schema aus.
+1. Suchen Sie nach Ihrem Schema. zum Beispiel mit `Luma Mobile` im Suchfeld.
+1. Wählen Sie beispielsweise Ihr Schema aus. **[!UICONTROL Luma Mobile App-Ereignisschema]**.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
    ![Datensatzkonfiguration](assets/dataset-configure.png)
 
-1. Stellen Sie eine **[!UICONTROL Name]** und **[!UICONTROL Beschreibung]**.
+1. Stellen Sie eine **[!UICONTROL Name]**, beispielsweise `Luma Mobile App Events Dataset` und **[!UICONTROL Beschreibung]**.
 
 1. Wählen Sie **[!UICONTROL Beenden]** aus.
    ![Datensatzfertigstellung](assets/dataset-finish.png)
 
 ## Aktualisieren des Datastreams
 
-Nachdem Sie Ihren Datensatz erstellt haben, stellen Sie sicher, dass [Datenspeicher aktualisieren](create-datastream.md) , um Adobe Experience Platform hinzuzufügen. Diese Aktualisierung stellt sicher, dass Daten in Platform übertragen werden.
+Nachdem Sie Ihren Datensatz erstellt haben, stellen Sie sicher, dass [Datenspeicher aktualisieren](create-datastream.md#adobe-experience-platform) , um Adobe Experience Platform hinzuzufügen. Diese Aktualisierung stellt sicher, dass Daten in Platform übertragen werden.
 
 ## Daten im Datensatz validieren
 
@@ -88,23 +87,23 @@ Mit Experience Platform Echtzeit-Kundenprofil können Sie eine ganzheitliche Ans
 
 ### Aktivieren des Schemas
 
-1. Schema öffnen
-1. Aktivieren **[!UICONTROL Profil]**
-1. Auswählen **[!UICONTROL Daten für dieses Schema enthalten eine primäre Identität im Feld identityMap .]** im modalen Dialog
-1. **** Schema speichern
+1. Öffnen Sie beispielsweise Ihr Schema. **[!UICONTROL Luma Mobile App-Ereignisschema]**.
+1. Aktivieren **[!UICONTROL Profil]**.
+1. Auswählen **[!UICONTROL Daten für dieses Schema enthalten eine primäre Identität im Feld identityMap .]** im Dialogfeld.
+1. **** Schema speichern.
 
    ![Aktivieren des Schemas für das Profil](assets/platform-profile-schema.png)
 
 ### Aktivieren des Datensatzes
 
-1. Datensatz öffnen
-1. Aktivieren **[!UICONTROL Profil]**
+1. Öffnen Sie beispielsweise Ihren Datensatz. **[!UICONTROL Ereignis-Datensatz für Luma Mobile App]**.
+1. Aktivieren **[!UICONTROL Profil]**.
 
    ![Datensatz für Profil aktivieren](assets/platform-profile-dataset.png)
 
 ### Daten im Profil überprüfen
 
-Öffnen Sie die App und navigieren Sie zu Bildschirmen, auf denen Sie Ereignisse verfolgen. Melden Sie sich bei der Luma-App an und tätigen Sie einen Kauf.
+Öffnen Sie die App und navigieren Sie zu Bildschirmen, auf denen Sie Ereignisse verfolgen, z. B.: Melden Sie sich bei der Luma-App an und tätigen Sie einen Kauf.
 
 Verwenden Sie Assurance, um eine der Identitäten zu finden, die in der identityMap (E-Mail, lumaCrmId oder ECID) übergeben werden, z. B. die CRM-ID.
 
@@ -112,7 +111,7 @@ Verwenden Sie Assurance, um eine der Identitäten zu finden, die in der identity
 
 In der Platform-Benutzeroberfläche
 
-1. Navigieren Sie zu **[!UICONTROL Profile]** > **[!UICONTROL Durchsuchen]**,
+1. Navigieren Sie zu **[!UICONTROL Profile]** und wählen Sie **[!UICONTROL Durchsuchen]** aus der oberen Leiste.
 1. Geben Sie die Identitätsdetails an, die Sie gerade erfasst haben, beispielsweise `Luma CRM ID` für **[!UICONTROL Identitäts-Namespace]** und dem Wert, für den Sie kopiert haben **[!UICONTROL Identitätswert]**. Wählen Sie anschließend **[!UICONTROL Ansicht]**.
 1. Um Details anzuzeigen, wählen Sie das Profil aus.
 
@@ -128,7 +127,7 @@ Im **[!UICONTROL Veranstaltungen]** können Sie die Ereignisse sehen, die von Ih
 
 Auf dem Bildschirm mit den Profildetails:
 
-1. Klicken Sie auf den Link oder navigieren Sie zu **[!UICONTROL Identitäten]** > **[!UICONTROL Identitätsdiagramm]**
+1. Klicken Sie auf den Link oder navigieren Sie zu **[!UICONTROL Identitäten]**, wählen Sie **[!UICONTROL Identitätsdiagramm]** aus der oberen Leiste.
 1. Um den Identitätswert nachzuschlagen, geben Sie `Luma CRM ID` als **[!UICONTROL Identitäts-Namespace]** und der kopierte Wert als **[!UICONTROL Identitätswert]**. Wählen Sie anschließend **[!UICONTROL Ansicht]**.
 
    Diese Visualisierung zeigt Ihnen alle Identitäten, die in einem Profil verknüpft sind, und deren Ursprung. Im Folgenden finden Sie ein Beispiel für ein Identitätsdiagramm, das aus Daten erstellt wurde, die aus dem Abschluss dieses Mobile SDK-Tutorials (Datenquelle 2) und der [Web SDK-Tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de) (Datenquelle 1):

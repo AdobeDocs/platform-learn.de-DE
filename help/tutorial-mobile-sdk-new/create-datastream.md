@@ -3,10 +3,10 @@ title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream in Experience Platform erstellen.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 9%
+source-wordcount: '551'
+ht-degree: 10%
 
 ---
 
@@ -50,6 +50,8 @@ Datenspeicher können im [!UICONTROL Datenerfassung] -Schnittstelle mithilfe der
 
 Als Nächstes verbinden Sie Ihre Experience Cloud-Dienste mit Ihrem Datastream. Wenn das Platform Mobile SDK Daten an Edge Network sendet, sendet der Datastream die Daten an diese Dienste:
 
+### Adobe Analytics
+
 1. Wählen Sie **[!UICONTROL Service hinzufügen]** aus.
 
 1. Hinzufügen **[!UICONTROL Adobe Analytics]** aus dem [!UICONTROL Dienst] Liste,
@@ -61,6 +63,9 @@ Als Nächstes verbinden Sie Ihre Experience Cloud-Dienste mit Ihrem Datastream. 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![Hinzufügen von Adobe Analytics als Datastream-Dienst](assets/datastream-service-aa.png)
+
+
+### Adobe Experience Platform
 
 Möglicherweise möchten Sie auch den Adobe Experience Platform-Dienst aktivieren.
 

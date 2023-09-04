@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1434'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ In dieser Lektion werden Sie
 
 >[!TIP]
 >
->Wenn Sie Ihre App bereits als Teil der [Journey Optimizer-Angebote](journey-optimizer-offers.md) Tutorial,
+>Wenn Sie Ihre App bereits als Teil der [Journey Optimizer-Angebote](journey-optimizer-offers.md) Tutorial: Sie können [Installieren von Adobe Journey Optimizer - Decisioning Tags-Erweiterung](#install-adobe-journey-optimizer---decisioning-tags-extension) und [Schema aktualisieren](#update-your-schema).
 
 ### Edge-Konfiguration aktualisieren
 
@@ -61,7 +61,7 @@ Um sicherzustellen, dass Daten, die von Ihrer mobilen App an das Edge-Netzwerk g
 1. Auswählen **[!UICONTROL Dienst hinzufügen]** und wählen **[!UICONTROL Adobe Target]** aus dem **[!UICONTROL Dienst]** Liste.
 1. Target eingeben **[!UICONTROL Eigenschafts-Token]** -Wert, den Sie für diese Integration verwenden möchten.
 
-   Sie finden Ihre Eigenschaften in der Target-Benutzeroberfläche in **[!UICONTROL Administration]** > **[!UICONTROL Eigenschaften]**. Auswählen ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) , um das Eigenschafts-Token für die Eigenschaft anzuzeigen, die Sie verwenden möchten. Das Eigenschafts-Token hat ein Format wie `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; Sie müssen nur den Wert eingeben `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
+   Sie finden Ihre Eigenschaften in der Target-Benutzeroberfläche in **[!UICONTROL Administration]** > **[!UICONTROL Eigenschaften]**. Auswählen ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) , um das Eigenschafts-Token für die Eigenschaft anzuzeigen, die Sie verwenden möchten. Das Eigenschafts-Token hat ein Format wie `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; Sie dürfen nur den Wert eingeben `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -104,13 +104,13 @@ So überprüfen Sie Ihre Einrichtung in Assurance:
 
 1. Wählen Sie in der Target-Benutzeroberfläche **[!UICONTROL Tätigkeiten]** aus der oberen Leiste.
 1. Auswählen **[!UICONTROL Aktivität erstellen]** und **[!UICONTROL A/B-Test]** aus dem Kontextmenü aus.
-1. Im **[!UICONTROL A/B-Test-Aktivität erstellen]** modal, wählen Sie **[!UICONTROL Mobilnummer]** als **[!UICONTROL Typ]**, wählen Sie einen Arbeitsbereich aus der **[!UICONTROL Arbeitsbereich auswählen]** und wählen Sie Ihre Eigenschaft aus dem **[!UICONTROL Eigenschaft auswählen]** Liste.
+1. Im **[!UICONTROL A/B-Test-Aktivität erstellen]** Dialogfeld auswählen **[!UICONTROL Mobilnummer]** als **[!UICONTROL Typ]**, wählen Sie einen Arbeitsbereich aus der **[!UICONTROL Arbeitsbereich auswählen]** und wählen Sie Ihre Eigenschaft aus dem **[!UICONTROL Eigenschaft auswählen]** Liste.
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
    ![Target-Aktivität erstellen](assets/target-create-activity1.png)
 
 1. Im **[!UICONTROL Unbenannte Aktivität]** Bildschirm am **[!UICONTROL Erlebnisse]** step:
 
-   1. Eingabe `luma-mobileapp-abtest` in **[!UICONTROL Standort auswählen]** unter L**[!UICONTROL ZIELORT 1]**.
+   1. Eingabe `luma-mobileapp-abtest` in **[!UICONTROL Standort auswählen]** darunter **[!UICONTROL STANDORT 1]**.
    1. Auswählen ![Chrevron nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) neben **[!UICONTROL Standardinhalt]** und wählen **[!UICONTROL JSON-Angebot erstellen]** aus dem Kontextmenü aus.
    1. Kopieren Sie die folgende JSON in **[!UICONTROL Gültiges JSON-Objekt eingeben]**.
 
@@ -194,9 +194,23 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    ]
    ```
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator. Suchen Sie die ` func updatePropositionAT(ecid: String, location: String) async` -Funktion. Inspect den Code, der
-   * ein XDM-Wörterbuch `xdmData`, die die ECID zur Identifizierung des Profils enthält, für das Sie den A/B-Test vorlegen müssen, und
-   * die `decisionScope`, ein Array von Orten, an denen der A/B-Test präsentiert werden soll.
+1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator. Suchen Sie die ` func updatePropositionAT(ecid: String, location: String) async` -Funktion. Fügen Sie den folgenden Code hinzu:
+
+   ```swift
+   Task {
+       let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+       let identityMap = ["identityMap" : ecid]
+       let xdmData = ["xdm" : identityMap]
+       let decisionScope = DecisionScope(name: location)
+       Optimize.clearCachedPropositions()
+       Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   Diese Funktion
+
+   * richtet ein XDM-Wörterbuch ein `xdmData`, die die ECID zur Identifizierung des Profils enthält, für das Sie den A/B-Test vorlegen müssen, und
+   * definiert eine `decisionScope`, ein Array von Orten, an denen der A/B-Test präsentiert werden soll.
 
    Anschließend ruft die Funktion zwei APIs auf: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  und [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Mit diesen Funktionen werden zwischengespeicherte Vorschläge gelöscht und die Vorschläge für dieses Profil aktualisiert.
 

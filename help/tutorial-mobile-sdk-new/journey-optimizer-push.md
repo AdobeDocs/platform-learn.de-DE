@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '2173'
+source-wordcount: '2199'
 ht-degree: 4%
 
 ---
 
 # Push-Nachrichten in Journey Optimizer
 
-Erfahren Sie, wie Sie mit dem Platform Mobile SDK und Journey Optimizer Push-Nachrichten für mobile Apps erstellen.
+Erfahren Sie, wie Sie Push-Nachrichten für mobile Apps mit Experience Platform Mobile SDK und Journey Optimizer erstellen.
 
 Mit Journey Optimizer können Sie Ihre Journey erstellen und Nachrichten an Zielgruppen senden. Bevor Sie Push-Benachrichtigungen mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von Push-Benachrichtigungen in Journey Optimizer finden Sie im Abschnitt [Dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -28,7 +28,7 @@ Mit Journey Optimizer können Sie Ihre Journey erstellen und Nachrichten an Ziel
 * Die App wurde erfolgreich erstellt und mit installierten und konfigurierten SDKs ausgeführt.
 * Zugriff auf Journey Optimizer und ausreichende Berechtigungen wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
    * Erstellen Sie eine App-Oberfläche.
-   * Erstellen einer Journey
+   * Erstellen Sie eine Journey.
    * Erstellen einer Nachricht.
    * Erstellen von Nachrichtenvoreinstellungen.
 * Bezahltes Apple-Entwicklerkonto mit ausreichendem Zugriff zum Erstellen von Zertifikaten, Kennungen und Schlüsseln.
@@ -38,8 +38,8 @@ Mit Journey Optimizer können Sie Ihre Journey erstellen und Nachrichten an Ziel
 
 In dieser Lektion werden Sie
 
-* Registrieren Sie die App-ID beim Apple Push Notification Service (APNS).
-* Erstellen Sie eine App-Oberfläche in AJO.
+* Registrieren Sie die App-ID beim Apple Push Notification Service (APNs).
+* Erstellen Sie eine App-Oberfläche in Journey Optimizer.
 * Aktualisieren Sie Ihr Schema, um Push-Nachrichtenfelder einzuschließen.
 * Installieren und konfigurieren Sie die Journey Optimizer-Tag-Erweiterung.
 * Aktualisieren Sie Ihre App, um die Journey Optimizer-Tag-Erweiterung einzuschließen.
@@ -110,7 +110,7 @@ Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag
 
 >[!NOTE]
 >
->Wenn Sie nicht sehen `AJO Push Tracking Experience Event Dataset` als Option kontaktieren Sie den Kundendienst.
+>Wenn Sie nicht sehen **[!UICONTROL AJO Push Tracking Erlebnis-Datensatz]** als Option kontaktieren Sie den Kundendienst.
 >
 
 ### Implementieren von Journey Optimizer in die App
@@ -146,16 +146,18 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    ]
    ```
 
-1. Fügen Sie die `MobileCore.setPushIdentifier` der `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` -Funktion.
+### Geräte-Token für Push-Benachrichtigungen registrieren
+
+1. Fügen Sie die [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API für die `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` -Funktion.
 
    ```swift
-   // Send push token to Experience Platform
+   // Send push token to Mobile SDK
    MobileCore.setPushIdentifier(deviceToken)
    ```
 
    Diese Funktion ruft das Geräte-Token ab, das für das Gerät eindeutig ist, auf dem die App installiert ist. Legt dann das Token für den Push-Benachrichtigungsversand mithilfe der von Ihnen eingerichteten Konfiguration fest, die sich auf den Push-Benachrichtigungsdienst (APNs) von Apple stützt.
 
-## Validieren der Einrichtungssicherheit
+## Validieren der Einrichtung mit Assurance
 
 1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md) Abschnitt.
 1. Installieren Sie die App auf Ihrem physischen Gerät oder auf dem Simulator.
@@ -238,7 +240,7 @@ Ereignisse in Journey Optimizer ermöglichen den einheitlichen Trigger Ihrer Jou
    1. Wählen Sie **[!UICONTROL Speichern]** aus.
       ![Ereignis bearbeiten Schritt 2](assets/ajo-edit-event2.png)
 
-Sie haben soeben eine Ereigniskonfiguration erstellt, die auf dem Erlebnisereignisschema der Mobile App basiert, das Sie im Rahmen dieses Tutorials zuvor erstellt haben. Diese Ereigniskonfiguration filtert eingehende Erlebnisereignisse anhand Ihrer App-Kennung, sodass Sie sicherstellen, dass nur von Ihrer App initiierte Ereignisse die Journey Trigger werden, die Sie im nächsten Schritt erstellen werden. In einem realen Szenario möchten Sie möglicherweise Push-Benachrichtigungen von einem externen Dienst senden. Es gelten jedoch die gleichen Konzepte: Von der externen Anwendung senden Sie ein Erlebnisereignis an Experience Platform, das spezifische Felder aufweist, auf die Sie Bedingungen anwenden können, bevor diese Ereignisse auf eine Journey Trigger werden.
+Sie haben soeben eine Ereigniskonfiguration erstellt, die auf dem Erlebnisereignisschema der Mobile App basiert, das Sie im Rahmen dieses Tutorials zuvor erstellt haben. Diese Ereigniskonfiguration filtert eingehende Erlebnisereignisse nach Ihrem spezifischen Ereignistyp (`application.test`), sodass Sie sicherstellen, dass nur Ereignisse mit diesem bestimmten Typ, die von Ihrer mobilen App aus initiiert werden, die von Ihnen erstellte Journey im nächsten Schritt Trigger werden. In einem realen Szenario möchten Sie möglicherweise Push-Benachrichtigungen von einem externen Dienst senden. Es gelten jedoch die gleichen Konzepte: Von der externen Anwendung senden Sie ein Erlebnisereignis an Experience Platform, das spezifische Felder aufweist, auf die Sie Bedingungen anwenden können, bevor diese Ereignisse auf eine Journey Trigger werden.
 
 ### Journey erstellen
 
@@ -278,9 +280,9 @@ Als Nächstes erstellen Sie die Journey, die beim Empfang des entsprechenden Ere
 
 ## Push-Benachrichtigung auslösen
 
-Sie verfügen über alle nötigen Bestandteile, um eine Push-Benachrichtigung zu versenden. Was bleibt, ist, wie diese Push-Benachrichtigung Trigger wird. Im Wesentlichen ist dies dasselbe wie zuvor: Senden Sie einfach ein Erlebnisereignis mit der richtigen Payload (wie in ![Veranstaltungen](events.md)).
+Sie verfügen über alle nötigen Bestandteile, um eine Push-Benachrichtigung zu versenden. Was bleibt, ist, wie diese Push-Benachrichtigung Trigger wird. Im Wesentlichen ist dies dasselbe wie zuvor: Senden Sie einfach ein Erlebnisereignis mit der richtigen Payload (wie in [Veranstaltungen](events.md)).
 
-Diesmal wird das Erlebnisereignis, das Sie senden möchten, nicht zum Erstellen eines einfachen XDM-Wörterbuchs erstellt. Sie verwenden eine Struktur, die eine Push-Benachrichtigungs-Payload darstellt. Die Definition eines dedizierten Datentyps ist eine alternative Methode zur Implementierung der Erstellung von Erlebnisereignis-Payloads in Ihrer Anwendung.
+Diesmal wird das Erlebnisereignis, das Sie senden möchten, nicht zum Erstellen eines einfachen XDM-Wörterbuchs erstellt. Sie werden eine `struct` , die eine Push-Benachrichtigungs-Payload darstellen. Die Definition eines dedizierten Datentyps ist eine alternative Methode zur Implementierung der Erstellung von Erlebnisereignis-Payloads in Ihrer Anwendung.
 
 1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Modell]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** im Xcode-Projektnavigator und überprüfen Sie den Code.
 
@@ -313,6 +315,7 @@ Diesmal wird das Erlebnisereignis, das Sie senden möchten, nicht zum Erstellen 
 1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode Project-Navigator und fügen Sie den folgenden Code zu `func sendTestPushEvent(applicationId: String, eventType: String)`:
 
    ```swift
+   // Create payload and send experience event
    Task {
        let testPushPayload = TestPushPayload(
            application: Application(
@@ -333,9 +336,11 @@ Diesmal wird das Erlebnisereignis, das Sie senden möchten, nicht zum Erstellen 
 
    ```swift
    // Setting parameters and calling function to send push notification
-   let eventType = "mobileapp.testpush"
-   let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
-   await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)   
+   Task {
+       let eventType = testPushEventType
+       let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
+       await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)
+   }
    ```
 
 
@@ -346,6 +351,7 @@ Diesmal wird das Erlebnisereignis, das Sie senden möchten, nicht zum Erstellen 
 1. Navigieren Sie zu **[!UICONTROL Einstellungen]** Registerkarte.
 
 1. Tippen **[!UICONTROL Push-Benachrichtigung]**. Die Push-Benachrichtigung wird in Ihrer App angezeigt.
+
    <img src="assets/ajo-test-push.png" width="300" />
 
 
