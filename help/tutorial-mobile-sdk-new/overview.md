@@ -3,7 +3,7 @@ title: Tutorial zur Implementierung von Adobe Experience Cloud in Apps - Überbl
 description: Erfahren Sie, wie Sie die mobilen Adobe Experience Cloud-Anwendungen implementieren. Dieses Tutorial führt Sie durch eine Implementierung von Experience Cloud-Anwendungen in einer Swift-Beispielanwendung.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 4f4bb2fdb1db4d9af8466c4e6d8c61e094bf6a1c
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 10%
@@ -84,8 +84,8 @@ Alle Experience Cloud-Kunden sollten Zugriff auf die erforderlichen Funktionen h
 Zwei Versionen der Beispiel-App können heruntergeladen werden. Beide Versionen können heruntergeladen/geklont von [Github](https://git.corp.adobe.com/rmaur/Luma). Es gibt zwei Ordner:
 
 
-1. [Starten](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): ein Projekt ohne Code oder mit Platzhaltercode für den Großteil des Experience Platform Mobile SDK-Codes, den Sie zum Abschließen der praktischen Übungen in diesem Tutorial benötigen.
-1. [Beenden](https://git.corp.adobe.com/Luma{target="_blank"}): eine Version mit der vollständigen Implementierung als Referenz.
+1. [Starten](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: ein Projekt ohne Code oder mit Platzhaltercode für den Großteil des Experience Platform Mobile SDK-Codes, den Sie zum Abschließen der praktischen Übungen in diesem Tutorial benötigen.
+1. [Beenden](https://git.corp.adobe.com/Luma){target="_blank"}: eine Version mit der vollständigen Implementierung als Referenz.
 
 Los geht‘s!
 
