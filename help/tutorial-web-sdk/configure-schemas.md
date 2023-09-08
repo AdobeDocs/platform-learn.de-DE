@@ -1,11 +1,11 @@
 ---
 title: Erstellen eines XDM-Schemas für Webdaten
-description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webdaten erstellen. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webdaten erstellen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 7%
 
 ---
@@ -20,7 +20,7 @@ Das Platform Web SDK verwendet Ihr Schema zur Standardisierung Ihrer Web-Ereigni
 
 >[!NOTE]
 >
-> Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema, um die angezeigten Inhalte und die von Kunden im Abschnitt gekauften Produkte zu erfassen. [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html). Sie können diese Schritte zwar verwenden, um ein anderes Schema für Ihre eigenen Zwecke zu erstellen, es wird jedoch empfohlen, zunächst das Beispielschema zu erstellen, um mehr über die Funktionen des Schema-Editors zu erfahren.
+> Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema, um angesehene Inhalte und Produkte zu erfassen, die von Kunden im [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html). Sie können diese Schritte zwar verwenden, um ein anderes Schema für Ihre eigenen Zwecke zu erstellen, es wird jedoch empfohlen, zunächst das Beispielschema zu erstellen, um mehr über die Funktionen des Schema-Editors zu erfahren.
 
 Weitere Informationen zu XDM-Schemata finden Sie im Kurs &quot;[Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de)&quot; oder sehen Sie die [XDM-System - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
@@ -38,12 +38,12 @@ Alle erforderlichen Bereitstellungs- und Benutzerberechtigungen für die Datener
 
 ## Erstellen eines XDM-Schemas
 
-XDM-Schemata sind die Standardmethode, um Daten in Experience Platform zu beschreiben, sodass alle Daten, die den Schemas entsprechen, in einer Organisation ohne Konflikte wiederverwendet oder sogar von mehreren Organisationen gemeinsam genutzt werden können. Weitere Informationen finden Sie unter [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de).
+XDM-Schemata sind die Standardmethode zum Beschreiben von Daten auf Experience Platform, sodass alle Daten, die den Schemas entsprechen, in einer Organisation ohne Konflikte wiederverwendet oder sogar von mehreren Organisationen gemeinsam genutzt werden können. Weitere Informationen finden Sie unter [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de).
 
 In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen Grundfeldgruppen für die Erfassung von Webereignisdaten auf der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
 1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target="_blank"}
-1. Vergewissern Sie sich, dass Sie sich in der richtigen Sandbox befinden.
+1. Stellen Sie sicher, dass sich die richtige Sandbox befindet.
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein pro
 
 >[!TIP]
 > 
->In dieser Übung fügen Sie die empfohlenen vordefinierten Feldergruppen für die Web-Datenerfassung hinzu: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ und _**[!UICONTROL Ereignis für Kundenerlebnisse]**_.
+>In dieser Übung fügen Sie die empfohlenen vordefinierten Feldergruppen für die Web-Datenerfassung hinzu: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_, und _**[!UICONTROL Ereignis für Kundenerlebnisse]**_.
 
 1. Im **[!UICONTROL Feldergruppen]** Bereich, wählen Sie **[!UICONTROL Hinzufügen]**
 1. Suchen Sie nach [!UICONTROL `AEP Web SDK ExperienceEvent`].
@@ -101,16 +101,16 @@ Es handelt sich um ein &quot;must-have&quot;-Objekt für jede webbezogene Datene
 
 >[!IMPORTANT]
 >
-> Es ist möglich, **[!UICONTROL Profil]** für ein Schema vor dem Speichern des Schemas. **Nicht** aktivieren. Nachdem ein Schema für Profil aktiviert wurde, kann es nicht mehr deaktiviert oder gelöscht werden. Außerdem können Felder nach diesem Punkt nicht mehr aus dem Schema entfernt werden. Diese Implikationen sollten Sie später bei der Arbeit mit Ihren eigenen Daten in Ihrer Produktionsumgebung berücksichtigen.
+> Es ist möglich **[!UICONTROL Profil]** für ein Schema vor dem Speichern des Schemas. **Nicht** aktivieren. Nachdem ein Schema für Profil aktiviert wurde, kann es nicht mehr deaktiviert oder gelöscht werden. Außerdem können Felder nach diesem Punkt nicht mehr aus dem Schema entfernt werden. Diese Implikationen sollten Sie später bei der Arbeit mit Ihren eigenen Daten in Ihrer Produktionsumgebung berücksichtigen.
 >
->Diese Einstellung wird während der [Setup-Experience Platform](setup-experience-platform.md) Lektion.
+>Diese Einstellung wird während der [Einrichten von Experience Platform](setup-experience-platform.md) Lektion.
 >![Profilschema](assets/schema-profile.png)
 
-Jetzt können Sie dieses Schema referenzieren, wenn Sie die Web SDK-Erweiterung Ihrer Tag-Eigenschaft hinzufügen.
+Jetzt können Sie dieses Schema referenzieren, wenn Sie die Web SDK-Erweiterung zu Ihrer Tag-Eigenschaft hinzufügen.
 
 
 [Weiter: ](configure-identities.md)
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
