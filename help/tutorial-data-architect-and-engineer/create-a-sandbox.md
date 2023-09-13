@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 5%
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 <!--25min-->
 
-In dieser Lektion erstellen Sie eine Sandbox für die Entwicklungsumgebung, die Sie für den Rest des Tutorials verwenden werden.
+In dieser Lektion erstellen Sie eine Sandbox für Entwicklungsumgebungen, die Sie für den Rest des Tutorials verwenden werden.
 
 Sandboxes bieten isolierte Umgebungen, in denen Sie Funktionen ausprobieren können, ohne Ressourcen und Daten mit Ihrer Produktionsumgebung zu mischen. Weitere Informationen finden Sie unter [Sandbox-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de).
 
@@ -43,13 +43,13 @@ Im [Berechtigungen konfigurieren](configure-permissions.md) Lektion erstellen Si
 
 Erstellen wir eine Sandbox:
 
-1. Melden Sie sich bei der [Adobe Experience Platform](https://experience.adobe.com/platform) Benutzeroberfläche
+1. Anmelden bei der [Adobe Experience Platform](https://experience.adobe.com/platform) Benutzeroberfläche
 1. Navigieren Sie zu **[!UICONTROL Sandboxes]** in der linken Navigation
 1. Auswählen **[!UICONTROL Sandbox erstellen]** oben rechts
    ![Sandbox erstellen](assets/sandbox-createSandbox.png)
 
 1. Auswählen **[!UICONTROL Entwicklung]** als **[!UICONTROL Typ]**
-1. Benennen Sie Ihre Sandbox. `luma-tutorial` (erwägen Sie, Ihren Namen am Ende hinzuzufügen)
+1. Benennen Ihrer Sandbox `luma-tutorial` (erwägen Sie, Ihren Namen am Ende hinzuzufügen)
 1. Anleitung benennen `Luma Tutorial` (erwägen Sie, Ihren Namen am Ende hinzuzufügen)
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**
    ![Sandbox erstellen](assets/sandbox-nameSandbox.png)
@@ -62,13 +62,13 @@ Die Erstellung von Sandboxes dauert etwa 30 Sekunden, wobei ein[!UICONTROL Erste
 
 Warten Sie, bis Ihre Sandbox[!UICONTROL Aktiv]&quot;, bevor sie mit der nächsten Übung fortfahren.
 
-## Hinzufügen der neuen Sandbox zum Produktprofil
+## Hinzufügen der neuen Sandbox zu Ihrer Rolle
 
 Sobald die Sandbox aktiv ist, müssen Sie sie in Ihre Rolle aufnehmen, um sie verwenden zu können. So fügen Sie sie Ihrer Rolle hinzu (Systemadministrator- oder Produktadministratorberechtigungen erforderlich):
 
 1. Navigieren Sie zu [!UICONTROL Berechtigungen] Bildschirm
 1. Öffnen Sie die `Luma Tutorial Platform` Rolle
-1. _Entfernen_ die `Prod` Sandbox aus der Rolle
+1. Optional _remove_ die `Prod` Sandbox aus der Rolle
 1. Fügen Sie die `Luma Tutorial` Sandbox
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 1. Im [!UICONTROL Sandboxes] Zeile auswählen **[!UICONTROL Bearbeiten]**
