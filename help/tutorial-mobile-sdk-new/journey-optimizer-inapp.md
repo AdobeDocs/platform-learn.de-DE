@@ -5,10 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 4%
+source-wordcount: '1689'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,11 @@ ht-degree: 4%
 
 Erfahren Sie, wie Sie In-App-Nachrichten für mobile Apps mit Experience Platform Mobile SDK und Journey Optimizer erstellen.
 
-Mit Journey Optimizer können Sie Kampagnen erstellen, um In-App-Nachrichten an Zielgruppen zu senden. Bevor Sie In-App-Nachrichten mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von In-App-Nachrichten in Journey Optimizer finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Mit Journey Optimizer können Sie Kampagnen erstellen, um In-App-Nachrichten an Zielgruppen zu senden. Kampagnen in Journey Optimizer werden verwendet, um einmalige Inhalte mithilfe verschiedener Kanäle an eine bestimmte Zielgruppe zu senden. Bei Kampagnen werden die Aktionen gleichzeitig ausgeführt, entweder sofort oder nach einem bestimmten Zeitplan. Bei der Verwendung von Journey (siehe [Journey Optimizer-Push-Benachrichtigungen](journey-optimizer-push.md) Lektion), werden Aktionen nacheinander ausgeführt.
+
+![Architektur](assets/architecture-ajo.png)
+
+Bevor Sie In-App-Nachrichten mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von In-App-Nachrichten in Journey Optimizer finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
@@ -26,6 +30,7 @@ Mit Journey Optimizer können Sie Kampagnen erstellen, um In-App-Nachrichten an 
 ## Voraussetzungen
 
 * App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
+* Richten Sie die App für Adobe Experience Platform ein.
 * Zugriff auf Journey Optimizer und ausreichende Berechtigungen wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
    * Verwalten von Kampagnen
 * Bezahltes Apple-Entwicklerkonto mit ausreichendem Zugriff zum Erstellen von Zertifikaten, Kennungen und Schlüsseln.
@@ -43,7 +48,7 @@ In dieser Lektion werden Sie
 * Registrieren Sie die App-ID beim Apple Push Notification Service (APN).
 * Erstellen Sie eine App-Oberfläche in AJO.
 * Installieren und konfigurieren Sie die Journey Optimizer-Tag-Erweiterung.
-* Aktualisieren Sie Ihre App, um die Journey Optimizer-Tag-Erweiterung einzuschließen.
+* Aktualisieren Sie Ihre App, um die Journey Optimizer-Tag-Erweiterung zu registrieren.
 * Validieren Sie die Einrichtung in &quot;Assurance&quot;.
 * Definieren Sie Ihr eigenes Kampagnen- und In-App-Nachrichtenerlebnis in Journey Optimizer.
 * Senden Sie Ihre eigene In-App-Nachricht aus der App heraus.
@@ -96,7 +101,7 @@ Weitere Dokumentationen können [hier finden](https://help.apple.com/developer-a
 
 Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag-Eigenschaft aktualisieren.
 
-1. Navigieren Sie zu **[!UICONTROL Tags]** > **[!UICONTROL Erweiterungen]** > **[!UICONTROL Katalog]**,
+1. Navigieren Sie zu **[!UICONTROL Tags]** > **[!UICONTROL Erweiterungen]** > **[!UICONTROL Katalog]**.
 1. Öffnen Sie Ihre Eigenschaft, beispielsweise **[!UICONTROL Luma Mobile App-Tutorial]**.
 1. Auswählen **[!UICONTROL Katalog]**.
 1. Suchen Sie nach **[!UICONTROL Adobe Journey Optimizer]** -Erweiterung.
@@ -171,7 +176,8 @@ Um eine eigene In-App-Nachricht zu erstellen, müssen Sie eine Kampagne in Journ
 * Anwendungslebenszyklusereignisse wie Start, Installation, Aktualisierung, Schließen oder Absturz,
 * Geolocation-Ereignisse, z. B. das Eintreten oder Beenden eines Zielpunkts.
 
-In diesem Tutorial verwenden Sie die generischen und erweiterungsunabhängigen Mobile Core-APIs, um die Ereignisverfolgung für Benutzerbildschirme, Aktionen und PII-Daten zu erleichtern. Von diesen APIs generierte Ereignisse werden in den SDK-Ereignis-Hub veröffentlicht und können von Erweiterungen verwendet werden. Wenn beispielsweise die Analytics-Erweiterung installiert ist, werden alle Benutzeraktionen und App Screens-Ereignisdaten an die entsprechenden Analytics-Reporting-Endpunkte gesendet.
+In diesem Tutorial verwenden Sie die generischen und erweiterungsunabhängigen Mobile Core-APIs (siehe [Generische Mobile Core-APIs](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)), um die Ereignisverfolgung für Benutzerbildschirme, Aktionen und PII-Daten zu erleichtern. Von diesen APIs generierte Ereignisse werden in den SDK-Ereignis-Hub veröffentlicht und können von Erweiterungen verwendet werden. Der SDK-Ereignis-Hub bietet die Kerndatenstruktur, die mit allen Mobile SDK-Erweiterungen von AEP verknüpft ist, und verwaltet eine Liste registrierter Erweiterungen und interner Module, eine Liste registrierter Ereignis-Listener und eine freigegebene Statusdatenbank.
+Der SDK-Ereignis-Hub veröffentlicht und empfängt Ereignisdaten von registrierten Erweiterungen, um die Integration mit Adobe- und Drittanbieterlösungen zu vereinfachen. Wenn beispielsweise die Optimize-Erweiterung installiert ist, werden alle Anforderungen und Interaktionen mit dem Journey Optimizer - Decision Management-Angebotsmodul vom Event Hub verarbeitet.
 
 1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche die Option **[!UICONTROL Kampagnen]** über die linke Leiste.
 1. Auswählen **[!UICONTROL Kampagne erstellen]**.
@@ -252,7 +258,7 @@ Sie können Ihre In-App-Nachrichten in der Assurance-Benutzeroberfläche validie
 
 ## Nächste Schritte
 
-Sie sollten jetzt über alle Tools verfügen, um gegebenenfalls In-App-Nachrichten zur Luma-App hinzuzufügen. Beispielsweise die Promotion von Produkten basierend auf bestimmten Interaktionen, die Sie in der App verfolgt haben.
+Sie sollten jetzt über alle Tools verfügen, um gegebenenfalls In-App-Nachrichten hinzuzufügen.  Beispielsweise die Promotion von Produkten basierend auf bestimmten Interaktionen, die Sie in Ihrer App verfolgen.
 
 >[!SUCCESS]
 >

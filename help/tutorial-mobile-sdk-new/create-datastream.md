@@ -3,9 +3,9 @@ title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream in Experience Platform erstellen.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '598'
 ht-degree: 10%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 10%
 Erfahren Sie, wie Sie einen Datastream in Experience Platform erstellen.
 
 Ein Datenspeicher ist eine serverseitige Konfiguration im Platform Edge Network. Der Datastream stellt sicher, dass eingehende Daten an das Platform Edge Network ordnungsgemäß an Adobe Experience Cloud-Anwendungen und -Dienste weitergeleitet werden. Weitere Informationen finden Sie unter [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de) oder [Video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=de).
+
+![Architektur](assets/architecture.png)
 
 ## Voraussetzungen
 
@@ -33,13 +35,18 @@ In dieser Lektion werden Sie:
 
 Datenspeicher können im [!UICONTROL Datenerfassung] -Schnittstelle mithilfe der [!UICONTROL Datastream] Konfigurationstool. So erstellen Sie einen Datastream:
 
-1. Stellen Sie sicher, dass Sie sich in der richtigen Experience Platform-Sandbox befinden, da Datastreams auf Sandbox-Ebene definiert sind.
+1. Stellen Sie sicher, dass Sie sich in der richtigen Experience Platform-Sandbox befinden, da Datenspeicher auf Sandbox-Ebene definiert sind.
 1. Auswählen **[!UICONTROL Datenspeicher]** in der linken Leiste.
 1. Wählen Sie **[!UICONTROL Neuer Datenstrom]** aus.
 
    ![datastreams home](assets/datastream-new.png)
 
 1. Stellen Sie eine **[!UICONTROL Name]**, beispielsweise `Luma Mobile App` und **[!UICONTROL Beschreibung]**, beispielsweise `Datastream for Luma Mobile App`.
+
+   >[!NOTE]
+   >
+   >Letzte Erinnerung: Wenn Sie dieses Tutorial mit mehreren Personen in einer Sandbox durchlaufen oder ein freigegebenes Konto verwenden, sollten Sie erwägen, im Rahmen Ihrer Benennungskonventionen eine Identität anzuhängen oder vorzustellen. Verwenden Sie beispielsweise `Luma Mobile App Event Dataset - Joe Smith` statt `Luma Mobile App Event Dataset`. Siehe auch den Hinweis unter [Übersicht](overview.md).
+
 1. Wählen Sie das Schema aus, das Sie in der vorherigen Lektion aus dem **Veranstaltungsschema** eine Liste.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -62,7 +69,7 @@ Als Nächstes verbinden Sie Ihre Experience Cloud-Dienste mit Ihrem Datastream. 
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-   ![Hinzufügen von Adobe Analytics als Datastream-Dienst](assets/datastream-service-aa.png)
+   ![Hinzufügen von Adobe Analytics als Datenspeicherdienst](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
@@ -83,7 +90,7 @@ Möglicherweise möchten Sie auch den Adobe Experience Platform-Dienst aktiviere
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-   ![Hinzufügen von Adobe Experience Platform als Datastraam-Dienst](assets/datastream-service-aep.png)
+   ![Hinzufügen von Adobe Experience Platform als Datenspeicherdienst](assets/datastream-service-aep.png)
 1. Die endgültige Konfiguration sollte ungefähr so aussehen:
 
    ![Datenspeichereinstellungen](assets/datastream-settings.png)

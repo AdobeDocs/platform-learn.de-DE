@@ -2,9 +2,9 @@
 title: Lebenszyklusdaten
 description: Erfahren Sie, wie Sie Lebenszyklusdaten in einer mobilen App erfassen.
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ Die Adobe Experience Platform Mobile SDK Lifecycle-Erweiterung ermöglicht die E
 
 ## Voraussetzungen
 
-* App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
+* App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind. Im Rahmen dieser Lektion haben Sie bereits mit der Lebenszyklusüberwachung begonnen. Siehe [Installieren von SDKs - Aktualisieren von AppDelegate](install-sdks.md#update-appdelegate) zu überprüfen.
 * Registriert die Erweiterung &quot;Assurance&quot;, wie im Abschnitt [vorherige Lektion](install-sdks.md).
 
 ## Lernziele

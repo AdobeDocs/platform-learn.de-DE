@@ -3,9 +3,9 @@ title: Konfigurieren einer Tag-Eigenschaft
 description: Erfahren Sie, wie Sie eine Tag-Eigenschaft im [!UICONTROL Datenerfassung] -Schnittstelle.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1095'
 ht-degree: 9%
 
 ---
@@ -45,7 +45,7 @@ In dieser Lektion werden Sie:
 
       >[!NOTE]
       >
-      > Die standardmäßigen Zustimmungseinstellungen für die Edge-basierten mobilen SDK-Implementierungen, wie z. B. die in diesem Tutorial ausgeführten, stammen aus dem [!UICONTROL Zustimmungserweiterung] und nicht [!UICONTROL Datenschutz] in der Konfiguration der Tag-Eigenschaft fest. Sie können die Erweiterung &quot;Einverständnis&quot;später in dieser Lektion hinzufügen und konfigurieren. Weitere Informationen finden Sie unter [die Dokumentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > Die standardmäßigen Zustimmungseinstellungen für die Edge-basierten mobilen SDK-Implementierungen, z. B. die in dieser Lektion ausgeführten, stammen aus dem [!UICONTROL Zustimmungserweiterung] und nicht [!UICONTROL Datenschutz] in der Konfiguration der Tag-Eigenschaft fest. Sie können die Erweiterung &quot;Einverständnis&quot;später in dieser Lektion hinzufügen und konfigurieren. Weitere Informationen finden Sie unter [die Dokumentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Öffnen Sie die neue Eigenschaft.
@@ -112,13 +112,13 @@ In dieser Lektion werden Sie:
 
    1. In **[!UICONTROL Datenspeicher]** wählen Sie **[!UICONTROL Datastream]** , die Sie in der [vorheriger Schritt](create-datastream.md) für jede Umgebung, beispielsweise **[!UICONTROL Luma Mobile App]**.
 
-   1. Geben Sie die **[!UICONTROL Edge Network Domain]** Innerhalb **[!UICONTROL Domänenkonfiguration]**. Die Edge Network-Domäne ist der Name Ihrer Sandbox, gefolgt von `data.adobedc.net`, beispielsweise `techmarketingdemos.data.adobedc.net`.
+   1. Geben Sie die **[!UICONTROL Edge Network Domain]** Innerhalb **[!UICONTROL Domänenkonfiguration]**. Die Edge Network-Domäne ist der Name Ihres Unternehmens, gefolgt von `data.adobedc.net`, beispielsweise `techmarketingdemos.data.adobedc.net`.
 
    1. Aus dem **[!UICONTROL In Bibliothek speichern]** Menü auswählen **[!UICONTROL In Bibliothek speichern und erstellen]**.
 
       ![Edge-Netzwerkeinstellungen](assets/tags-extension-edge.png)
 
-Ihre Bibliothek wird für die neuen Erweiterungen und Konfigurationen erstellt. Ein erfolgreicher Build wird durch eine <span style="color:green">●</span> im **[!UICONTROL Ursprünglicher Build]** Schaltfläche.
+Ihre Bibliothek ist für die neuen Erweiterungen und Konfigurationen erstellt. Ein erfolgreicher Build wird durch eine <span style="color:green">●</span> im **[!UICONTROL Ursprünglicher Build]** Schaltfläche.
 
 
 ## SDK-Installationsanweisungen generieren
@@ -131,7 +131,7 @@ Ihre Bibliothek wird für die neuen Erweiterungen und Konfigurationen erstellt. 
 
 1. Im **[!UICONTROL Installationsanweisungen für Mobilgeräte]** wählen Sie das **[!UICONTROL iOS]** Registerkarte.
 
-1. Sie können ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) Anweisungen zum Einrichten Ihres Projekts mit CocoaPods. CocoaPods werden zur Verwaltung von SDK-Versionen und -Downloads verwendet. Weitere Informationen finden Sie unter [Dokumentation](https://cocoapods.org/).
+1. Sie können ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) Anweisungen zum Einrichten Ihres Projekts mit CocoaPods. CocoaPods werden zur Verwaltung von SDK-Versionen und -Downloads verwendet. Weitere Informationen finden Sie unter [Cocoapods-Dokumentation](https://cocoapods.org/). Wenn Sie Android als Entwicklungsplattform verwenden, ist Gradle das Tool zum Verwalten von SDK-Versionen, Downloads und Abhängigkeiten. Weitere Informationen finden Sie unter [Gradle-Dokumentation](https://gradle.org/)
 
    Die Installationsanweisungen bieten einen guten Ausgangspunkt für die Implementierung. Weitere Informationen finden Sie unter [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -156,7 +156,7 @@ Wenn Sie mit der Webversion von Tags (früher Launch) vertraut sind, müssen Sie
 
 * Im Web wird eine Tag-Eigenschaft in JavaScript gerendert, das dann (normalerweise) in der Cloud gehostet wird. Diese JavaScript-Datei wird direkt auf der Website referenziert.
 
-* In einer mobilen Tag-Eigenschaft werden Regeln und Konfigurationen in JSON-Dateien gerendert, die in der Cloud gehostet werden. Die JSON-Dateien werden von der Mobile Core-Erweiterung in der Mobile App heruntergeladen und gelesen. Erweiterungen sind separate SDKs, die zusammenarbeiten. Wenn Sie Ihrer Tag-Eigenschaft eine Erweiterung hinzufügen, müssen Sie auch die App aktualisieren. Wenn Sie eine Erweiterungseinstellung ändern oder eine Regel erstellen, werden diese Änderungen in der App übernommen, sobald Sie die aktualisierte Tag-Bibliothek veröffentlichen.
+* In einer mobilen Tag-Eigenschaft werden Regeln und Konfigurationen in JSON-Dateien gerendert, die in der Cloud gehostet werden. Die JSON-Dateien werden von der Mobile Core-Erweiterung in der Mobile App heruntergeladen und gelesen. Erweiterungen sind separate SDKs, die zusammenarbeiten. Wenn Sie Ihrer Tag-Eigenschaft eine Erweiterung hinzufügen, müssen Sie auch die App aktualisieren. Wenn Sie eine Erweiterungseinstellung ändern oder eine Regel erstellen, werden diese Änderungen in der App übernommen, sobald Sie die aktualisierte Tag-Bibliothek veröffentlichen. Dank dieser Flexibilität können Sie Einstellungen ändern (z. B. die Report Suite-ID von Adobe Analytics) oder sogar das Verhalten Ihrer App ändern (mithilfe von Datenelementen und Regeln, wie Sie in späteren Lektionen sehen werden), ohne den Code in Ihrer App ändern zu müssen und die App erneut an den Appstore zu senden.
 
 >[!SUCCESS]
 >

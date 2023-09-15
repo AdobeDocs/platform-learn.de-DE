@@ -2,9 +2,9 @@
 title: Events
 description: Erfahren Sie, wie Sie Ereignisdaten in einer Mobile App erfassen.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1321'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Für die Standardfeldgruppen sieht der Prozess wie folgt aus:
    * `commerce.productViews.id`: ein string -Wert, der die SKU des Produkts darstellt.
    * `commerce.productViews.value`: der numerische oder boolesche Wert des Ereignisses. Wenn es sich um einen booleschen Wert (oder &quot;Zähler&quot;in Adobe Analytics) handelt, wird der Wert immer auf 1 gesetzt. Bei numerischen Ereignissen oder Währungsereignissen kann der Wert > 1 betragen.
 
-* Identifizieren Sie in Ihrem Schema alle zusätzlichen Daten, die mit dem Ereignis zur Produktansicht für Commerce-Produkte verknüpft sind. Fügen Sie in diesem Beispiel **[!UICONTROL productListItem]** Hierbei handelt es sich um einen Standardsatz von Feldern, die mit Commerce-bezogenen Ereignissen verwendet werden:
+* Identifizieren Sie in Ihrem Schema alle zusätzlichen Daten, die mit dem Ereignis zur Produktansicht für Commerce-Produkte verknüpft sind. Fügen Sie in diesem Beispiel **[!UICONTROL productListItems]** Dies ist ein Standardsatz von Feldern, die mit jedem Commerce-bezogenen Ereignis verwendet werden:
 
   ![Schema der Produktlistenelemente](assets/datacollection-prodListItems-schema.png)
    * Beachten Sie Folgendes: **[!UICONTROL productListItems]** ist ein Array, sodass mehrere Produkte bereitgestellt werden können.
@@ -123,7 +123,7 @@ Sie haben verschiedene Commerce-produktbezogene Aktionen in Ihrer App und möcht
 * Ansicht: Tritt auf, wenn ein Benutzer ein bestimmtes Produkt anzeigt,
 * Hinzufügen zum Warenkorb: wenn ein Benutzer auf <img src="assets/addtocart.png" width="20" /> in einem Produktdetailbildschirm,
 * für später speichern: wenn ein Benutzer auf <img src="assets/saveforlater.png" width="15" /> in einem Produktdetailbildschirm,
-* Käufer: wenn ein Benutzer auf <img src="assets/purchase.png" width="20" /> in einem Produktdetailbildschirm.
+* purchase: wenn ein Benutzer auf <img src="assets/purchase.png" width="20" /> in einem Produktdetailbildschirm.
 
 Um das Senden von Commerce-bezogenen Erlebnisereignissen wiederverwendbar zu machen, verwenden Sie eine dedizierte Funktion:
 
@@ -189,6 +189,11 @@ Um das Senden von Commerce-bezogenen Erlebnisereignissen wiederverwendbar zu mac
          // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
+
+>[!TIP]
+>
+>Wenn Sie sich für Android entwickeln, verwenden Sie Map (`java.util.Map`) als grundlegende Schnittstelle zum Erstellen Ihrer XDM-Payload.
+
 
 ### Benutzerdefinierte Feldergruppen
 
@@ -339,15 +344,7 @@ Erneut lassen Sie diesen Code in Ihr Xcode-Projekt implementieren.
 1. Führen Sie das Programm aus, melden Sie sich an und interagieren Sie mit einem Produkt.
 
    1. Verschieben Sie das Symbol &quot;Versicherung&quot;nach links.
-   1. Auswählen **[!UICONTROL Startseite]** in der Symbolleiste.
-   1. Wählen Sie die <img src="assets/login.png" width="15" /> -Schaltfläche, um das Login-Blatt zu öffnen.
-
-      <img src="./assets/mobile-app-events-1.png" width="300">
-
-   1. Wählen Sie die <img src="assets/insert.png" width="15" /> -Schaltfläche, um eine zufällige E-Mail- und Kunden-ID einzufügen.
-   1. Auswählen **[!UICONTROL Anmelden]**.
-
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   1. Auswählen **[!UICONTROL Startseite]** in der Registerkartenleiste und überprüfen Sie, ob eine **[!UICONTROL ECID]**, **[!UICONTROL Email]** und **[!UICONTROL CRM-ID]** im Startbildschirm.
    1. Auswählen **[!UICONTROL Produkte]** in der Symbolleiste.
    1. Wählen Sie ein Produkt.
    1. Auswählen <img src="assets/saveforlater.png" width="15" />.

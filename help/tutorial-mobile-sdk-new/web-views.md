@@ -3,9 +3,9 @@ title: WebViews verarbeiten
 description: Erfahren Sie, wie Sie die Datenerfassung mit WebViews in einer mobilen App durchführen.
 jira: KT-6987
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Wenn Sie Daten aus dem nativen Teil der App und aus einer WebView innerhalb der 
 
 Um diese unerwünschte Situation zu beheben, ist es wichtig, die ECID des Benutzers aus dem nativen Teil Ihrer App an eine WebView zu übergeben, die Sie möglicherweise in Ihrer App verwenden möchten.
 
-Die JavaScript-Erweiterung &quot;Experience Cloud ID-Dienst&quot;in WebView extrahiert die ECID aus der URL, anstatt eine Anfrage an Adobe für eine neue ID zu senden. Der ID-Dienst verwendet diese ECID zur Besucherverfolgung.
+Die in WebView verwendete AEP Edge Identity-Erweiterung erfasst die aktuelle ECID und fügt sie zur URL hinzu, anstatt eine Anfrage für eine neue ID an Adobe zu senden. Die Implementierung verwendet diese ECID dann, um die URL anzufordern.
 
 ## Implementierung
 

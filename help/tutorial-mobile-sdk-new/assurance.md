@@ -3,9 +3,9 @@ title: Einrichten der Sicherheit
 description: Erfahren Sie, wie Sie die Assurance-Erweiterung in eine mobile App implementieren.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 5%
 
 ---
@@ -34,11 +34,7 @@ In dieser Lektion werden Sie:
 
 ## Zugriff bestätigen
 
-Vergewissern Sie sich, dass Ihr Unternehmen Zugriff auf die Zertifizierung hat, indem Sie die folgenden Schritte ausführen:
-
-1. Besuch [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten für Experience Cloud an.
-1. Wenn die Variable **[!UICONTROL Sitzungen]** angezeigt, haben Sie Zugriff. Wenn die Zugriffsseite (Beta) angezeigt wird, wählen Sie **[!UICONTROL registrieren]** registrieren.
+Vergewissern Sie sich, dass Ihr Unternehmen Zugriff auf die Zertifizierung hat. Als Benutzer sollten Sie zum Profil für Adobe Experience Platform hinzugefügt werden. Siehe [Benutzerzugriff](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) im Zuverlässigkeitshandbuch für weitere Informationen.
 
 ## Implementierung
 
@@ -70,7 +66,7 @@ Bevor Sie die Anwendung zum ersten Mal in Xcode ausführen, müssen Sie die Sign
 1. Wählen Sie die **Signieren und Funktionen** Registerkarte.
 1. Konfigurieren **[!UICONTROL Automatische Verwaltungssignatur]**, **[!UICONTROL Team]**, und **[!UICONTROL Bundle-Kennung]** oder verwenden Sie Ihre spezifischen Apple-Entwicklungsbereitstellungsdetails.
 
-   ![Xcode-Signaturfunktionen](assets/xcode-signing-capabilities.png)
+   ![Xcode-Signaturfunktionen](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## Einrichten einer Basis-URL
 

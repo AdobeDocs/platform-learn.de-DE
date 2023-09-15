@@ -3,10 +3,10 @@ title: Erstellen eines XDM-Schemas
 description: Erfahren Sie, wie Sie ein XDM-Schema für App-Ereignisse erstellen.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 18%
+source-wordcount: '1473'
+ht-degree: 16%
 
 ---
 
@@ -18,7 +18,7 @@ Standardisierung und Interoperabilität sind Schlüsselkonzepte von Adobe Experi
 
 ## Was sind XDM-Schemata?
 
-XDM ist eine öffentlich dokumentierte Spezifikation, die die Leistungsfähigkeit digitaler Erlebnisse verbessern soll. Es bietet allgemeine Strukturen und Definitionen, die es jeder Anwendung ermöglichen, mit Platform-Diensten zu kommunizieren. Durch die Einhaltung von XDM-Standards können alle Kundenerlebnisdaten in ein gemeinsames System integriert werden, wodurch Erkenntnisse schneller und besser integriert verfügbar werden. Sie können wertvolle Einblicke durch Kundenaktionen gewinnen, Zielgruppen mithilfe von Segmenten definieren und Kundenattribute zur Personalisierung verwenden.
+XDM ist eine öffentlich dokumentierte Spezifikation, die die Leistungsfähigkeit digitaler Erlebnisse verbessern soll. Es bietet allgemeine Strukturen und Definitionen, die es jeder Anwendung ermöglichen, mit Platform-Diensten zu kommunizieren. Durch die Einhaltung von XDM-Standards können alle Kundenerlebnisdaten in ein gemeinsames System integriert werden, wodurch Erkenntnisse schneller und besser integriert verfügbar werden. Sie erhalten wertvolle Einblicke aus Kundenaktionen, definieren Kundenzielgruppen über Segmente und verwenden Kundenattribute für Personalisierungszwecke.
 
 Schemas dienen in Experience Platform zur konsistenten und wiederverwendbaren Beschreibung der Struktur von Daten. Durch die systemübergreifende einheitliche Definition von Daten wird es einfacher, deren Bedeutung beizubehalten und somit Wert aus Daten zu ziehen.
 
@@ -118,13 +118,18 @@ Zu Lernzwecken verwenden Sie vordefinierte und benutzerdefinierte Feldergruppen.
 
 1. Geben Sie Ihrem Schema einen Namen, indem Sie **[!UICONTROL Unbenanntes Schema]** aus dem **[!UICONTROL Komposition]** Bereich (unter **[!UICONTROL Schema]**) und die Bereitstellung einer **[!UICONTROL Anzeigename]** &amp; **[!UICONTROL Beschreibung]**, beispielsweise `Luma Mobile App Event Schema` und `Schema for Luma mobile app experience events.`
 
+   >[!NOTE]
+   >
+   >Wenn Sie dieses Tutorial mit mehreren Personen in einer Sandbox durchlaufen oder ein freigegebenes Konto verwenden, sollten Sie erwägen, im Rahmen Ihrer Benennungskonventionen eine Identität anzuhängen oder vorzustellen. Verwenden Sie beispielsweise `Luma Mobile App Event Schema - Joe Smith` statt `Luma Mobile App Event Schema`. Siehe auch den Hinweis unter [Übersicht](overview.md).
+
+
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![Anwenden auswählen](assets/schema-name-save.png)
 
 >[!NOTE]
 >
->Beachten Sie, dass nicht alle Felder einer Gruppe verwendet werden müssen. Wenn es hilfreich ist, können Sie sich ein Schema als leere Datenschicht vorstellen. In Ihrer App füllen Sie die entsprechenden Werte zum richtigen Zeitpunkt aus.
+>Beachten Sie, dass nicht alle Felder einer Gruppe verwendet werden müssen. Sie können Felder auch entfernen, wenn dies dazu beiträgt, das Schema kurz und verständlich zu halten. Wenn es hilfreich ist, können Sie sich ein Schema als leere Datenschicht vorstellen. In Ihrer App füllen Sie die entsprechenden Werte zum richtigen Zeitpunkt aus.
 
 Die [!UICONTROL Ereignis für Kundenerlebnisse] Feldergruppe hat einen Datentyp namens [!UICONTROL Webinformationen], der Ereignisse wie Seitenansichten und Link-Klicks beschreibt. Zum Zeitpunkt des Schreibens gibt es keine App-Parität für diese Funktion. Daher erstellen Sie Ihre eigene.
 

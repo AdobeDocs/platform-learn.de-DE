@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2467'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,13 @@ ht-degree: 3%
 
 Erfahren Sie, wie Sie mit dem Experience Platform Mobile SDK Angebote aus Journey Optimizer Decision Management in Ihren mobilen Apps anzeigen können.
 
-Mit der Entscheidungsverwaltung von Journey Optimizer können Sie Ihren Kunden das beste Angebot und Erlebnis über alle Kontaktpunkte hinweg zur richtigen Zeit bereitstellen. Danach können Sie Ihre Audience mit personalisierten Angeboten auswählen.
+Mit der Entscheidungsverwaltung von Journey Optimizer können Sie Ihren Kunden das beste Angebot und Erlebnis für alle Touchpoints zur richtigen Zeit bereitstellen. Danach können Sie Ihre Audience mit personalisierten Angeboten auswählen.
+
+![Architektur](assets/architecture-od.png)
 
 Die Entscheidungsverwaltung erleichtert die Personalisierung mit einer zentralen Bibliothek von Marketing-Angeboten und einer Entscheidungs-Engine, die Regeln und Begrenzungen auf von Adobe Experience Platform erstellte umfangreiche Echtzeit-Profile anwendet. Dadurch können Sie Ihren Kunden das richtige Angebot zum richtigen Zeitpunkt senden. Siehe [Über die Entscheidungsverwaltung](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) für weitere Informationen.
+
+
 
 
 >[!NOTE]
@@ -29,6 +33,7 @@ Die Entscheidungsverwaltung erleichtert die Personalisierung mit einer zentralen
 ## Voraussetzungen
 
 * App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
+* Richten Sie die App für Adobe Experience Platform ein.
 * Zugriff auf Journey Optimizer - Entscheidungsverwaltung mit den entsprechenden Berechtigungen zur Verwaltung von Angeboten und Entscheidungen, wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
@@ -41,7 +46,7 @@ In dieser Lektion werden Sie
 * Aktualisieren Sie Ihr Schema, um Vorschlagsereignisse zu erfassen.
 * Validieren Sie die Einrichtung in &quot;Assurance&quot;.
 * Erstellen Sie eine Angebotsentscheidung, die auf Angeboten in Journey Optimizer - Entscheidungsverwaltung basiert.
-* Aktualisieren Sie Ihre App, um die Optimizer-Erweiterung einzuschließen.
+* Aktualisieren Sie Ihre App, um die Optimizer-Erweiterung zu registrieren.
 * Implementieren Sie Angebote aus der Entscheidungsverwaltung in Ihre App.
 
 
@@ -51,7 +56,7 @@ In dieser Lektion werden Sie
 >
 >Wenn Sie Ihre Umgebung bereits als Teil der [Einrichten von A/B-Tests mit Target](target.md) Tutorial: Sie können [Installieren von Adobe Journey Optimizer - Decisioning Tags-Erweiterung](#install-adobe-journey-optimizer---decisioning-tags-extension) und [Schema aktualisieren](#update-your-schema).
 
-### Edge-Konfiguration aktualisieren
+### Aktualisierung der Konfiguration des Datenspeichers
 
 Um sicherzustellen, dass Daten, die von Ihrer mobilen App an das Edge-Netzwerk gesendet werden, an Journey Optimizer weitergeleitet werden - Entscheidungsverwaltung, aktualisieren Sie Ihre Experience Edge-Konfiguration .
 
@@ -76,11 +81,11 @@ Um sicherzustellen, dass Daten, die von Ihrer mobilen App an das Edge-Netzwerk g
 
 ### Schema aktualisieren
 
-1. Navigieren Sie zur Datenerfassungs-Benutzeroberfläche und wählen Sie **[!UICONTROL Schemas]** über die linke Leiste.
+1. Navigieren Sie zur Datenerfassungsoberfläche und wählen Sie **[!UICONTROL Schemas]** über die linke Leiste.
 1. Auswählen **[!UICONTROL Durchsuchen]** aus der oberen Leiste.
 1. Wählen Sie Ihr Schema aus, um es zu öffnen.
 1. Wählen Sie im Schema-Editor ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Hinzufügen]** neben Feldergruppen.
-1. Im **[!UICONTROL Feldergruppen hinzufügen]** Dialogfeld, ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) Suchen nach `proposition`auswählen **[!UICONTROL Erlebnisereignis - Interaktionen bei Vorschlägen]** und wählen **[!UICONTROL Feldergruppen hinzufügen]**.
+1. Im **[!UICONTROL Feldergruppen hinzufügen]** Dialogfeld, ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) Suchen nach `proposition`auswählen **[!UICONTROL Erlebnisereignis - Interaktionen bei Vorschlägen]** und wählen **[!UICONTROL Feldergruppen hinzufügen]**. Diese Feldergruppe erfasst die Erlebnisereignisdaten, die für Angebote relevant sind: welches Angebot wird präsentiert, als Teil von Sammlung, Entscheidung und anderen Parametern (siehe weiter unten in dieser Lektion). Aber auch was mit dem Angebot geschieht: wird es angezeigt, interagiert, verworfen usw.
    ![Vorschlag](assets/schema-fieldgroup-proposition.png)
 1. Auswählen **[!UICONTROL Speichern]** , um die Änderungen an Ihrem Schema zu speichern.
 
@@ -211,7 +216,7 @@ Ein Bewertungskriterium ist die Kombination aus
 * Eignungsregeln: Ist beispielsweise das Angebot nur für eine bestimmte Zielgruppe verfügbar?
 * Ranking-Methode: Wenn mehrere Angebote zur Auswahl verfügbar sind, welche Methode Sie verwenden, um sie zu bewerten (z. B. nach Angebotspriorität, anhand einer Formel oder eines KI-Modells).
 
-Siehe [Wichtige Schritte zum Erstellen und Verwalten von Angeboten](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) Wenn Sie besser verstehen möchten, wie Platzierungen, Regeln, Rankings, Angebote, Darstellungen, Sammlungen, Entscheidungen usw. interagieren und miteinander in Beziehung stehen. Dieses Tutorial konzentriert sich ausschließlich auf die Verwendung der Ausgabe einer Entscheidung und nicht auf die Flexibilität bei der Definition von Entscheidungen in Journey Optimizer - Entscheidungsmanagement.
+Siehe [Wichtige Schritte zum Erstellen und Verwalten von Angeboten](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) Wenn Sie besser verstehen möchten, wie Platzierungen, Regeln, Rankings, Angebote, Darstellungen, Sammlungen, Entscheidungen usw. interagieren und miteinander in Beziehung stehen. Diese Lektion konzentriert sich ausschließlich auf die Verwendung der Ergebnisse einer Entscheidung und nicht auf die Flexibilität bei der Definition von Entscheidungen innerhalb von Journey Optimizer - Entscheidungsmanagement.
 
 1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche die Option **[!UICONTROL Angebote]** über die linke Leiste.
 1. Auswählen **[!UICONTROL Entscheidungen]** aus der oberen Leiste.
@@ -304,7 +309,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    Diese Funktion:
 
    * richtet ein XDM-Wörterbuch ein `xdmData`, die die ECID enthält, um das Profil zu identifizieren, für das Sie die Angebote unterbreiten müssen.
-   * definiert `decisionScope`, ein Objekt, das auf der Entscheidung basiert, die Sie in der Benutzeroberfläche von Journey Optimizer - Entscheidungsverwaltung definiert haben, und das mithilfe des kopierten Entscheidungsbereichs aus [Entscheidung erstellen](#create-a-decision).  Die Luma-App verwendet eine Konfigurationsdatei (`decisions.json`), der die Perimeter basierend auf dem folgenden JSON-Format abruft:
+   * definiert `decisionScope`, ein Objekt, das auf der Entscheidung basiert, die Sie in der Journey Optimizer-Benutzeroberfläche für die Entscheidungsverwaltung definiert haben, und das mithilfe des kopierten Entscheidungsumfangs aus [Entscheidung erstellen](#create-a-decision).  Die Luma-App verwendet eine Konfigurationsdatei (`decisions.json`), der die Perimeter basierend auf dem folgenden JSON-Format abruft:
 
      ```swift
      "scopes": [

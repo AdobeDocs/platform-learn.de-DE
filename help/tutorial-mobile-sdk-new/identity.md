@@ -3,9 +3,9 @@ title: Identität
 description: Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '681'
 ht-degree: 8%
 
 ---
@@ -108,7 +108,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 
 ## Identität entfernen
 
-Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API zum Entfernen der Identität aus der gespeicherten clientseitigen Identitätszuordnung. Die ID-Erweiterung sendet die Kennung nicht mehr an das Edge-Netzwerk. Die Verwendung dieser API entfernt die Kennung nicht aus dem serverseitigen Benutzerprofildiagramm oder Identitätsdiagramm.
+Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API zum Entfernen der Identität aus der gespeicherten clientseitigen Identitätszuordnung. Die ID-Erweiterung sendet die Kennung nicht mehr an das Edge-Netzwerk. Die Verwendung dieser API entfernt die Kennung nicht aus dem serverseitigen Identitätsdiagramm. Siehe [Identitätsdiagramme anzeigen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) für weitere Informationen zu Identitätsdiagrammen.
 
 1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Allgemein]** > **[!UICONTROL MobileSDK]** im Xcode Project-Navigator und fügen Sie den folgenden Code zum `func removeIdentities(emailAddress: String, crmId: String)` Funktion:
 
@@ -144,13 +144,13 @@ Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-s
       <img src="./assets/identity2.png" width="300">
 
 
-1. Suchen Sie in der Web-Benutzeroberfläche &quot;Assurance&quot;nach dem **[!UICONTROL Identitäten für Edge-Identitätsaktualisierungen]** -Ereignis aus **[!UICONTROL com.adobe.griffon.mobile]** -Anbieter.
+1. Suchen Sie in der Assurance-Webschnittstelle nach dem **[!UICONTROL Identitäten für Edge-Identitätsaktualisierungen]** -Ereignis aus **[!UICONTROL com.adobe.griffon.mobile]** -Anbieter.
 1. Wählen Sie das Ereignis aus und überprüfen Sie die Daten im **[!UICONTROL ACPExtensionEventData]** -Objekt. Sie sollten die von Ihnen aktualisierten Identitäten sehen.
    ![Aktualisierung von Identitäten überprüfen](assets/identity-validate-assurance.png)
 
 ## Validieren mit Identitätsdiagramm
 
-Nachdem Sie die Schritte im Abschnitt [Experience Platform-Lektion](platform.md), können Sie die Erfassung des Platzhalters im Identitätsdiagramm-Viewer für Plattformen bestätigen:
+Nachdem Sie die Schritte im Abschnitt [Experience Platform-Lektion](platform.md)können Sie die Identitätserfassung im Platform-Identitätsdiagramm-Viewer bestätigen:
 
 1. Auswählen **[!UICONTROL Identitäten]** in der Datenerfassungs-Benutzeroberfläche.
 1. Auswählen **[!UICONTROL Identitätsdiagramm]** aus der oberen Leiste.

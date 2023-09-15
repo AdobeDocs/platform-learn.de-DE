@@ -2,7 +2,7 @@
 title: Places
 description: Erfahren Sie, wie Sie den Geostandort-Dienst Places in Ihrer mobilen App verwenden.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
 source-wordcount: '1754'
 ht-degree: 4%
@@ -31,7 +31,7 @@ In dieser Lektion werden Sie
 * Aktualisieren Sie Ihre Tag-Eigenschaft mit der Places-Erweiterung.
 * Aktualisieren Sie Ihr Schema, um Geolocation-Ereignisse zu erfassen.
 * Validieren Sie die Einrichtung in &quot;Assurance&quot;.
-* Aktualisieren Sie Ihre App, um die Places-Erweiterung einzuschließen.
+* Aktualisieren Sie Ihre App, um die Places-Erweiterung zu registrieren.
 * Implementieren Sie das Geostandorttracking aus dem Places-Dienst in Ihre App.
 
 
@@ -49,7 +49,7 @@ In dieser Lektion werden Sie
 * Aktualisieren Sie Ihr Schema, um Vorschlagsereignisse zu erfassen.
 * Validieren Sie die Einrichtung in &quot;Assurance&quot;.
 * Erstellen Sie eine Angebotsentscheidung, die auf Angeboten in Journey Optimizer - Entscheidungsverwaltung basiert.
-* Aktualisieren Sie Ihre App, um die Optimizer-Erweiterung einzuschließen.
+* Aktualisieren Sie Ihre App, um die Optimizer-Erweiterung zu registrieren.
 * Implementieren Sie Angebote aus der Entscheidungsverwaltung in Ihre App.
 
 
@@ -106,7 +106,7 @@ Sie definieren einige Zielpunkte im Places-Dienst.
 
 Überprüfen Sie, ob Ihr Schema wie in [Schema erstellen](create-schema.md), enthält die erforderlichen Feldergruppen und Klassen zur Erfassung von POI- und Geolocation-Daten.
 
-1. Navigieren Sie zur Datenerfassungs-Benutzeroberfläche und wählen Sie **[!UICONTROL Schemas]** über die linke Leiste.
+1. Navigieren Sie zur Datenerfassungsoberfläche und wählen Sie **[!UICONTROL Schemas]** über die linke Leiste.
 1. Auswählen **[!UICONTROL Durchsuchen]** aus der oberen Leiste.
 1. Wählen Sie Ihr Schema aus, um es zu öffnen.
 1. Wählen Sie im Schema-Editor **[!UICONTROL Ereignis für Kundenerlebnisse]**.
@@ -258,7 +258,7 @@ So überprüfen Sie Ihre Einrichtung in Assurance:
    ![Validierung von AJO-Entscheidungen](assets/places-events.png)
 
 
-## Implementieren von Orten in Ihrer App
+## Implementieren von Places in Ihrer App
 
 Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobilen Tag-Erweiterung nur die Konfiguration. Als Nächstes müssen Sie das Places SDK installieren und registrieren. Wenn diese Schritte nicht klar sind, überprüfen Sie die [SDKs installieren](install-sdks.md) Abschnitt.
 
@@ -320,7 +320,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    }
    ```
 
-In diesem Tutorial werden Details zur Implementierung des Standortmanagers in iOS erläutert.
+In dieser Lektion werden Details zur Implementierung des Standortmanagers in iOS erläutert.
 
 
 ## Validieren mit Ihrer App
