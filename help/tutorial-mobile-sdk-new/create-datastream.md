@@ -3,9 +3,9 @@ title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream in Experience Platform erstellen.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '615'
 ht-degree: 10%
 
 ---
@@ -47,7 +47,7 @@ Datenspeicher können im [!UICONTROL Datenerfassung] -Schnittstelle mithilfe der
    >
    >Letzte Erinnerung: Wenn Sie dieses Tutorial mit mehreren Personen in einer Sandbox durchlaufen oder ein freigegebenes Konto verwenden, sollten Sie erwägen, im Rahmen Ihrer Benennungskonventionen eine Identität anzuhängen oder vorzustellen. Verwenden Sie beispielsweise `Luma Mobile App Event Dataset - Joe Smith` statt `Luma Mobile App Event Dataset`. Siehe auch den Hinweis unter [Übersicht](overview.md).
 
-1. Wählen Sie das Schema aus, das Sie in der vorherigen Lektion aus dem **Veranstaltungsschema** eine Liste.
+1. Wählen Sie das Schema aus, das Sie in der vorherigen Lektion aus dem **Ereignisschema** Liste.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![neue Datenspeicher](assets/datastream-name.png)
@@ -55,7 +55,7 @@ Datenspeicher können im [!UICONTROL Datenerfassung] -Schnittstelle mithilfe der
 
 ## Dienste hinzufügen
 
-Als Nächstes verbinden Sie Ihre Experience Cloud-Dienste mit Ihrem Datastream. Wenn das Platform Mobile SDK Daten an Edge Network sendet, sendet der Datastream die Daten an diese Dienste:
+Wenn Sie die (optionale) [Analytics](analytics.md) und [Experience Platform](platform.md) Lektionen in diesem Tutorial fügen Sie Dienste zu Ihrem Datastream hinzu, um sicherzustellen, dass der Datenspeicher diese Daten an die konfigurierten Dienste weiterleitet, wenn das Platform Mobile SDK Daten an das Edge-Netzwerk sendet.
 
 ### Adobe Analytics
 

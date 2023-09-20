@@ -5,10 +5,10 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 3%
+source-wordcount: '1771'
+ht-degree: 4%
 
 ---
 
@@ -48,17 +48,19 @@ In dieser Lektion werden Sie
 * Validieren Sie die Implementierung in Assurance.
 
 
-## App einrichten
+## Einrichten
 
 >[!TIP]
 >
->Wenn Sie Ihre App bereits als Teil der [Journey Optimizer-Angebote](journey-optimizer-offers.md) Lektion: Sie können beide [Installieren von Adobe Journey Optimizer - Decisioning Tags-Erweiterung](#install-adobe-journey-optimizer---decisioning-tags-extension) und [Schema aktualisieren](#update-your-schema).
+>Wenn Sie Ihre App bereits als Teil der [Journey Optimizer-Angebote](journey-optimizer-offers.md) -Lektion verwenden, haben Sie möglicherweise bereits einige der Schritte in diesem Einrichtungsabschnitt ausgeführt.
 
 ### Aktualisierung der Konfiguration des Datenspeichers
 
+### Adobe Target
+
 Um sicherzustellen, dass Daten, die von Ihrer mobilen App an das Experience Platform Edge Network gesendet werden, an Adobe Target weitergeleitet werden, müssen Sie Ihre Datenspeicherkonfiguration aktualisieren.
 
-1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche die Option **[!UICONTROL Datenspeicher]** und wählen Sie Ihren Datastream aus, z. B. **[!UICONTROL Luma Mobile App]**.
+1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche die Option **[!UICONTROL Datenspeicher]** und wählen Sie Ihren Datastream aus, z. B. **[!DNL Luma Mobile App]**.
 1. Auswählen **[!UICONTROL Dienst hinzufügen]** und wählen **[!UICONTROL Adobe Target]** aus dem **[!UICONTROL Dienst]** Liste.
 1. Wenn Sie Target Premium-Kunde sind und Eigenschafts-Token verwenden möchten, geben Sie die **[!UICONTROL Eigenschafts-Token]** -Wert, den Sie für diese Integration verwenden möchten. Target Standard-Benutzer können diesen Schritt überspringen.
 
@@ -67,6 +69,18 @@ Um sicherzustellen, dass Daten, die von Ihrer mobilen App an das Experience Plat
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![Target zum Datenspeicher hinzufügen](assets/edge-datastream-target.png)
+
+
+#### Adobe Journey Optimizer
+
+Um sicherzustellen, dass Daten, die von Ihrer mobilen App an das Edge-Netzwerk gesendet werden, an Journey Optimizer weitergeleitet werden - Entscheidungsverwaltung, aktualisieren Sie Ihre Experience Edge-Konfiguration .
+
+1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche die Option **[!UICONTROL Datenspeicher]** und wählen Sie Ihren Datastream aus, z. B. **[!DNL Luma Mobile App]**.
+1. Auswählen ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) für **[!UICONTROL Experience Platform]** und wählen ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus dem Kontextmenü aus.
+1. Im **[!UICONTROL Datenspeicher]** > ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** Bildschirm, stellen Sie sicher **[!UICONTROL Offer decisioning]**, **[!UICONTROL Edge-Segmentierung]**, und **[!UICONTROL Personalisierungsziele]** ausgewählt sind. Wenn Sie auch die Journey Optimizer-Lektionen befolgen, sollten Sie **[!UICONTROL Adobe Journey Optimizer]** sowie. Siehe [Adobe Experience Platform-Einstellungen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) für weitere Informationen.
+1. Wählen Sie zum Speichern Ihrer Datastream-Konfiguration **[!UICONTROL Speichern]** .
+
+   ![AEP-Datenspeicherkonfiguration](assets/datastream-aep-configuration-target.png)
 
 
 ### Installieren von Adobe Journey Optimizer - Decisioning Tags-Erweiterung
@@ -143,7 +157,7 @@ Es gibt viele Aktivitätstypen, die Sie in Adobe Target erstellen und in einer A
 
       ![Erlebnis B](assets/target-create-activity-experienceB.png)
 
-1. Im **[!UICONTROL Targeting]** Schritt, überprüfen Sie die Einrichtung Ihres A/B-Tests. Standardmäßig werden beide Angebote gleichmäßig allen Besuchern zugeordnet. Klicken Sie auf **[!UICONTROL Weiter]**, um fortzufahren.
+1. Im **[!DNL Targeting]** Schritt, überprüfen Sie die Einrichtung Ihres A/B-Tests. Standardmäßig werden beide Angebote gleichmäßig allen Besuchern zugeordnet. Klicken Sie auf **[!UICONTROL Weiter]**, um fortzufahren.
 
    ![Targeting](assets/taget-targeting.png)
 
@@ -151,7 +165,7 @@ Es gibt viele Aktivitätstypen, die Sie in Adobe Target erstellen und in einer A
 
    1. Benennen Sie Ihre unbenannte Aktivität um, beispielsweise in `Luma Mobile SDK Tutorial - A/B Test Example`.
    1. Geben Sie eine **[!UICONTROL Ziel]** für Ihren A/B-Test, beispielsweise `A/B Test for Luma mobile app tutorial`.
-   1. Auswählen **[!UICONTROL Konversion]**, **[!UICONTROL Auf mbox geklickt]** im **[!UICONTROL Zielmetrik]** > **[!UICONTROL MEIN PRIMÄRES ZIEL]** und geben Sie den Namen Ihres Standorts (Mbox) ein, z. B. `luma-mobileapp-abtest`.
+   1. Auswählen **[!UICONTROL Konversion]**, **[!UICONTROL Anzeige einer mbox]** im **[!UICONTROL Zielmetrik]** > **[!UICONTROL MEIN PRIMÄRES ZIEL]** und geben Sie den Namen Ihres Standorts (Mbox) ein, z. B. `luma-mobileapp-abtest`.
    1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
       ![Zieleinstellungen](assets/target-goals.png)
@@ -174,7 +188,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 >
 
 1. Stellen Sie in Xcode sicher, dass [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios.git) wird zur Liste der Pakete in Package-Abhängigkeiten hinzugefügt. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** im Xcode-Projektnavigator.
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** im Xcode-Projektnavigator.
 1. Sichern `AEPOptimize` ist Teil Ihrer Importliste.
 
    `import AEPOptimize`
@@ -197,7 +211,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    ]
    ```
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator. Suchen Sie die ` func updatePropositionAT(ecid: String, location: String) async` -Funktion. Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** im Xcode-Projektnavigator. Suchen Sie die ` func updatePropositionAT(ecid: String, location: String) async` -Funktion. Fügen Sie den folgenden Code hinzu:
 
    ```swift
    Task {
@@ -217,13 +231,13 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 
    Anschließend ruft die Funktion zwei APIs auf: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  und [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Mit diesen Funktionen werden zwischengespeicherte Vorschläge gelöscht und die Vorschläge für dieses Profil aktualisiert.
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Personalisierung]** > **[!UICONTROL TargetOffersView]** im Xcode-Projektnavigator. Suchen Sie die `func onPropositionsUpdateAT(location: String) async {` und überprüfen Sie den Code dieser Funktion. Der wichtigste Teil dieser Funktion ist die  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API-Aufruf, der:
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** im Xcode-Projektnavigator. Suchen Sie die `func onPropositionsUpdateAT(location: String) async {` und überprüfen Sie den Code dieser Funktion. Der wichtigste Teil dieser Funktion ist die  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API-Aufruf, der:
    * ruft die Vorschläge für das aktuelle Profil basierend auf dem Entscheidungsbereich ab (dem Ort, den Sie im A/B-Test definiert haben),
    * ruft das Angebot aus dem Vorschlag ab,
    * entpackt den Inhalt des Angebots, damit er ordnungsgemäß in der App angezeigt werden kann, und
    * Trigger `displayed()` -Aktion für das Angebot, mit der ein Ereignis an das Edge Network zurückgesendet wird, um die Anzeige des Angebots zu informieren.
 
-1. Noch in **[!UICONTROL TargetOffersView]** Fügen Sie den folgenden Code zum `.onFirstAppear` -Modifikator. Dieser Code stellt sicher, dass der Callback zur Aktualisierung der Angebote nur einmal registriert wird.
+1. Noch in **[!DNL TargetOffersView]** Fügen Sie den folgenden Code zum `.onFirstAppear` -Modifikator. Dieser Code stellt sicher, dass der Callback zur Aktualisierung der Angebote nur einmal registriert wird.
 
    ```swift
    // Invoke callback for offer updates
@@ -232,12 +246,15 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    }
    ```
 
-1. Noch in **[!UICONTROL TargetOffersView]** Fügen Sie den folgenden Code zum `.task` -Modifikator. Dieser Code aktualisiert die Angebote, sobald die Ansicht aktualisiert wird.
+1. Noch in **[!DNL TargetOffersView]** Fügen Sie den folgenden Code zum `.task` -Modifikator. Dieser Code aktualisiert die Angebote, sobald die Ansicht aktualisiert wird.
 
    ```swift
    // Clear and update offers
    await self.updatePropositionsAT(ecid: currentEcid, location: location)
    ```
+
+Sie können zusätzliche Target-Parameter (wie Mbox-, Profil-, Produkt- oder Bestellparameter) in einer Personalisierungsabfrageanfrage an das Experience Edge-Netzwerk senden, indem Sie sie beim Aufruf der [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions) API. Weitere Informationen finden Sie unter [Zielparameter](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#target-parameters).
+
 
 ## Validieren mit der App
 
@@ -260,7 +277,7 @@ So validieren Sie den A/B-Test in Assurance:
 1. Auswählen **[!UICONTROL Konfigurieren]** Wählen Sie in der linken Leiste ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben **[!UICONTROL Überprüfen und Simulieren]** darunter **[!UICONTROL ADOBE JOURNEY OPTIMIZER-ENTSCHEIDUNG]**.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Auswählen **[!UICONTROL Überprüfen und Simulieren]** in der linken Leiste. Beide Datastream-Einstellungen werden validiert und das SDK-Setup in Ihrer Anwendung.
-1. Auswählen **[!UICONTROL Anforderungen]** in der oberen Leiste. Sie sehen Ihre **[!UICONTROL Target]** -Anfragen.
+1. Auswählen **[!UICONTROL Anforderungen]** in der oberen Leiste. Sie sehen Ihre **[!DNL Target]** -Anfragen.
    ![Validierung von AJO-Entscheidungen](assets/assurance-decisioning-requests.png)
 
 1. Sie können **[!UICONTROL Simulieren]** und **[!UICONTROL Ereignisliste]** Registerkarten für weitere Funktionen, in denen Sie Ihre Einrichtung für Target-Angebote überprüfen.

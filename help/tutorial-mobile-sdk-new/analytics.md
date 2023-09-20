@@ -1,16 +1,16 @@
 ---
-title: Analytics-Zuordnung
-description: Erfahren Sie, wie Sie Daten für Adobe Analytics in einer App erfassen.
+title: Analytics-Daten erfassen und zuordnen
+description: Erfahren Sie, wie Sie Daten für Adobe Analytics in einer App erfassen und zuordnen können.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '629'
 ht-degree: 2%
 
 ---
 
-# Analytics-Zuordnung
+# Analytics-Daten erfassen und zuordnen
 
 Erfahren Sie, wie Sie mobile Daten Adobe Analytics zuordnen.
 
@@ -28,8 +28,28 @@ Die [event](events.md) Daten, die Sie in früheren Lektionen gesammelt und an Pl
 
 In dieser Lektion werden Sie:
 
+* Konfigurieren Sie Ihren Datenspeicher mit dem Adobe Analytics-Dienst.
 * Verstehen Sie die automatische Zuordnung von Analytics-Variablen.
 * Richten Sie Verarbeitungsregeln ein, um XDM-Daten Analytics-Variablen zuzuordnen.
+
+## Hinzufügen des Adobe Analytics-Datenspeicherdiensts
+
+Um Ihre XDM-Daten vom Edge-Netzwerk an Adobe Analytics zu senden, konfigurieren Sie den Adobe Analytics-Dienst für den Datastraam, den Sie im Rahmen von [Erstellen eines Datenspeichers](create-datastream.md).
+
+1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche die Option **[!UICONTROL Datenspeicher]** und Ihrem Datastream.
+
+1. Wählen Sie anschließend ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Dienst hinzufügen]**.
+
+1. Hinzufügen **[!UICONTROL Adobe Analytics]** aus dem [!UICONTROL Dienst] Liste,
+
+1. Geben Sie den Namen der Report Suite aus Adobe Analytics ein, die Sie in **[!UICONTROL Report Suite-ID]**.
+
+1. Aktivieren Sie den Dienst, indem Sie **[!UICONTROL Aktiviert]** auf.
+
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+   ![Hinzufügen von Adobe Analytics als Datenspeicherdienst](assets/datastream-service-aa.png)
+
 
 ## Automatische Zuordnung
 
@@ -164,7 +184,7 @@ Beispiel:
 a.x.commerce.saveforlaters.value
 
 // Custom Field
-a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
+a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 ```
 
 >[!NOTE]
@@ -173,29 +193,38 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 >
 >`_techmarketingdemos` durch den eindeutigen Wert Ihrer Organisation ersetzt.
 
+Um diese XDM-Kontextdaten Ihren Analytics-Daten in Ihrer Report Suite zuzuordnen, können Sie:
 
-So könnte eine Verarbeitungsregel, die diese Daten verwendet, aussehen:
+* Fügen Sie die **[!UICONTROL Adobe Analytics ExperienceEvent Full Extension]** Feldergruppe in Ihr Schema ein.
 
-* You **[!UICONTROL Wert von überschreiben]** Absatz 1 **[!UICONTROL App-Bildschirmname (eVar2)]** 2) mit dem Wert **[!UICONTROL a.x_techmarketingdemo.appinformation.appstatedetails.screename]** 3. wenn **[!UICONTROL a.x_techmarketingdemo.appinformation.appstatedetails.screename]** Absatz 4 **[!UICONTROL festgelegt ist]** Absatz 5.
+  ![Feldergruppe &quot;Analytics ExperienceEvent FullExtension&quot;](assets/schema-analytics-extension.png)
+* Erstellen Sie Regeln in Ihrer Tags-Eigenschaft, um die Kontextdaten den Feldern in der Feldergruppe Adobe Analytics ExperienceEvent Full Extension zuzuordnen. Zum Beispiel map `_techmarketingdemo.appinformation.appstatedetails.screenname` nach `_experience.analytics.customDimensions.eVars.eVar2`.
 
-* You **[!UICONTROL Ereignis festlegen]** Absatz 6 **[!UICONTROL Zu Wunschliste hinzufügen (Ereignis 3)]** 7 bis **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** 8, wenn **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** 9. **[!UICONTROL festgelegt ist]** 10.
+<!-- Old processing rules section
+Here is what a processing rule using this data might look like:
 
-![Analytics-Verarbeitungsregeln](assets/analytics-processing-rules.png)
+* You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
+
+* You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
+
+![analytics processing rules](assets/analytics-processing-rules.png)
 
 >[!IMPORTANT]
 >
 >
->Einige der automatisch zugeordneten Variablen stehen möglicherweise nicht zur Verwendung in Verarbeitungsregeln zur Verfügung.
+>Some of the automatically mapped variables may not be available for use in processing rules.
 >
 >
->Wenn Sie eine Verarbeitungsregel zum ersten Mal zuordnen, zeigt die Schnittstelle die Kontextdatenvariablen aus dem XDM-Objekt nicht an. Um das Problem zu beheben, bei dem ein beliebiger Wert ausgewählt wurde, speichern Sie und kehren Sie zur Bearbeitung zurück. Alle XDM-Variablen sollten jetzt angezeigt werden.
+>The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
 
 
-Weitere Informationen zu Verarbeitungsregeln und Kontextdaten finden Sie [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+Additional information about processing rules and context data can be found [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->Im Gegensatz zu früheren Implementierungen mobiler Apps gibt es keine Unterscheidung zwischen Seiten-/Bildschirmansichten und anderen Ereignissen. Stattdessen können Sie die **[!UICONTROL Seitenansicht]** Metrik durch Festlegen der **[!UICONTROL Seitenname]** -Dimension in einer Verarbeitungsregel. Da Sie die benutzerdefinierte `screenName` im Tutorial wird dringend empfohlen, den Namen des Bildschirms **[!UICONTROL Seitenname]** in einer Verarbeitungsregel.
+>Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+
+-->
 
 >[!SUCCESS]
 >

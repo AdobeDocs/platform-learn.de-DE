@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Daten an Adobe Experience Platform senden.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1056'
 ht-degree: 8%
 
 ---
@@ -33,6 +33,7 @@ Wenn Sie keinen Zugriff haben, können Sie [Diese Lektion überspringen](install
 In dieser Lektion werden Sie:
 
 * Erstellen Sie einen Experience Platform-Datensatz.
+* Konfigurieren Sie Ihren Datenspeicher, um Daten an Experience Platform weiterzuleiten.
 * Validieren Sie Daten im Datensatz.
 * Aktivieren Sie Ihr Schema und Ihren Datensatz für das Echtzeit-Kundenprofil.
 * Daten im Echtzeit-Kundenprofil validieren
@@ -54,7 +55,7 @@ Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, wer
    ![Datensatz-Homepage](assets/dataset-create.png)
 
 1. Suchen Sie nach Ihrem Schema. zum Beispiel mit `Luma Mobile` im Suchfeld.
-1. Wählen Sie beispielsweise Ihr Schema aus. **[!UICONTROL Luma Mobile App-Ereignisschema]**.
+1. Wählen Sie beispielsweise Ihr Schema aus. **[!DNL Luma Mobile App Event Schema]**.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
    ![Datensatzkonfiguration](assets/dataset-configure.png)
@@ -64,9 +65,32 @@ Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, wer
 1. Wählen Sie **[!UICONTROL Beenden]** aus.
    ![Datensatzfertigstellung](assets/dataset-finish.png)
 
-## Aktualisieren des Datastreams
 
-Nachdem Sie Ihren Datensatz erstellt haben, stellen Sie sicher, dass [Datenspeicher aktualisieren](create-datastream.md#adobe-experience-platform) , um Adobe Experience Platform hinzuzufügen. Diese Aktualisierung stellt sicher, dass Daten in Platform übertragen werden.
+## Hinzufügen des Adobe Experience Platform-Datenspeicherdiensts
+
+Um Ihre XDM-Daten vom Edge-Netzwerk an Adobe Experience Platform zu senden, konfigurieren Sie den Adobe Experience Platform-Dienst für den Datastraam, den Sie im Rahmen von [Erstellen eines Datenspeichers](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>Sie können den Adobe Experience Platform-Dienst nur aktivieren, wenn Sie einen Ereignisdatensatz erstellt haben.
+
+1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche die Option **[!UICONTROL Datenspeicher]** und Ihrem Datastream.
+
+1. Wählen Sie anschließend ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Dienst hinzufügen]**.
+
+1. Wählen Sie **[!UICONTROL Adobe Experience Platform]** in der Liste [!UICONTROL Service] aus.
+
+1. Aktivieren Sie den Dienst, indem Sie **[!UICONTROL Aktiviert]** auf.
+
+1. Wählen Sie die **[!UICONTROL Ereignis-Datensatz]** , die Sie zuvor erstellt haben, z. B. **[!DNL Luma Mobile App Event Dataset]**.
+
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+   ![Hinzufügen von Adobe Experience Platform als Datenspeicherdienst](assets/datastream-service-aep.png)
+1. Die endgültige Konfiguration sollte ungefähr so aussehen:
+
+   ![Datenspeichereinstellungen](assets/datastream-settings.png)
+
 
 ## Daten im Datensatz validieren
 
@@ -89,7 +113,7 @@ Mit Experience Platform Echtzeit-Kundenprofil können Sie eine ganzheitliche Ans
 
 ### Aktivieren des Schemas
 
-1. Öffnen Sie beispielsweise Ihr Schema. **[!UICONTROL Luma Mobile App-Ereignisschema]**.
+1. Öffnen Sie beispielsweise Ihr Schema. **[!DNL Luma Mobile App Event Schema]**.
 1. Aktivieren **[!UICONTROL Profil]**.
 1. Auswählen **[!UICONTROL Daten für dieses Schema enthalten eine primäre Identität im Feld identityMap .]** im Dialogfeld.
 1. **** Schema speichern.
@@ -98,7 +122,7 @@ Mit Experience Platform Echtzeit-Kundenprofil können Sie eine ganzheitliche Ans
 
 ### Aktivieren des Datensatzes
 
-1. Öffnen Sie beispielsweise Ihren Datensatz. **[!UICONTROL Ereignis-Datensatz für Luma Mobile App]**.
+1. Öffnen Sie beispielsweise Ihren Datensatz. **[!DNL Luma Mobile App Event Dataset]**.
 1. Aktivieren **[!UICONTROL Profil]**.
 
    ![Datensatz für Profil aktivieren](assets/platform-profile-dataset.png)

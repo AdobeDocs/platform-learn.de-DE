@@ -3,10 +3,10 @@ title: Erstellen eines XDM-Schemas
 description: Erfahren Sie, wie Sie ein XDM-Schema für App-Ereignisse erstellen.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 16%
+source-wordcount: '1482'
+ht-degree: 17%
 
 ---
 
@@ -28,7 +28,7 @@ Weitere Informationen zum Schema-Kompositionsmodell, einschließlich Designgrund
 
 >[!TIP]
 >
->Wenn Sie mit Analytics Solution Design Reference (SDRs) vertraut sind, können Sie sich ein Schema als robustere SDR vorstellen.
+>Wenn Sie mit Analytics Solution Design Reference (SDRs) vertraut sind, können Sie sich ein Schema als robustere SDR vorstellen. Siehe [Erstellen und Verwalten eines SDR-Dokuments (Solution Design Reference)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=de) für weitere Informationen.
 
 ## Voraussetzungen
 
@@ -214,7 +214,7 @@ Fügen Sie nun mithilfe Ihres benutzerdefinierten Datentyps eine benutzerdefinie
 
 1. Geben Sie in der rechten Leiste einen **[!UICONTROL Feldname]** von `appInformation`, a **[!UICONTROL Anzeigename]** von `App Information`und ein **[!UICONTROL Typ]** von `App Information`.
 
-1. Auswählen **[!UICONTROL App-Interaktionen]** aus dem **[!UICONTROL Typ]** Dropdown-Liste, der benutzerdefinierte Datentyp, den Sie in der vorherigen Übung erstellt haben.
+1. Auswählen **[!UICONTROL App-Interaktionen]** aus dem **[!UICONTROL Feldergruppe]** in der Dropdown-Liste, um die Felder Ihrer neuen Feldergruppe zuzuweisen.
 
 1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
@@ -224,7 +224,7 @@ Fügen Sie nun mithilfe Ihres benutzerdefinierten Datentyps eine benutzerdefinie
 
 >[!NOTE]
 >
->Benutzerdefinierte Feldergruppen werden immer unter Ihrer Experience Cloud-Organisationskennung platziert. Also `_techmarketingdemos`wird in den Screenshots verwendet und durch den eindeutigen Wert Ihres Unternehmens ersetzt.
+>Benutzerdefinierte Feldergruppen werden immer unter Ihrer Experience Cloud-Organisationskennung platziert.
 
 
 >[!SUCCESS]

@@ -1,16 +1,16 @@
 ---
-title: Einverständnis
+title: Implementieren der Zustimmung
 description: Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementieren.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
 
-# Einverständnis
+# Implementieren der Zustimmung
 
 Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementieren.
 
@@ -36,7 +36,7 @@ Um mit der Datenerfassung zu beginnen, müssen Sie die Zustimmung des Benutzers 
 
 1. Sie möchten den Benutzer nur einmal fragen. Daher möchten Sie die Mobile SDK-Zustimmung mit den erforderlichen Berechtigungen zum Tracking mit Apples [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency). In dieser App gehen Sie davon aus, dass der Benutzer bei der Autorisierung des Trackings auch der Erfassung von Ereignissen zustimmt.
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator.
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator.
 
    Fügen Sie diesen Code zum `updateConsent` -Funktion.
 
@@ -48,7 +48,7 @@ Um mit der Datenerfassung zu beginnen, müssen Sie die Zustimmung des Benutzers 
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Allgemein]** > **[!UICONTROL DisclaimerView]** im Projektnavigator von Xcode, der die Ansicht ist, die nach der ersten Installation oder Neuinstallation der Anwendung und dem ersten Starten der App angezeigt wird. Der Benutzer wird aufgefordert, das Tracking pro Apple zu autorisieren. [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency). Wenn der Benutzer autorisiert, aktualisieren Sie auch die Zustimmung.
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** im Projektnavigator von Xcode, der die Ansicht ist, die nach der ersten Installation oder Neuinstallation der Anwendung und dem ersten Starten der App angezeigt wird. Der Benutzer wird aufgefordert, das Tracking pro Apple zu autorisieren. [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency). Wenn der Benutzer autorisiert, aktualisieren Sie auch die Zustimmung.
 
    Fügen Sie den folgenden Code zum `ATTrackingManager.requestTrackingAuthorization { status in` Schließung.
 
@@ -68,7 +68,7 @@ Um mit der Datenerfassung zu beginnen, müssen Sie die Zustimmung des Benutzers 
 
 Die mobile Erweiterung &quot;Einverständnis&quot;unterdrückt/sticht/ermöglicht das Tracking basierend auf dem aktuellen Zustimmungswert automatisch. Sie können auch selbst auf den aktuellen Zustimmungsstatus zugreifen:
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Projektnavigator von Xcode.
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** im Projektnavigator von Xcode.
 
    Fügen Sie den folgenden Code zum `getConsents` Funktion:
 
@@ -82,7 +82,7 @@ Die mobile Erweiterung &quot;Einverständnis&quot;unterdrückt/sticht/ermöglich
    }
    ```
 
-2. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Allgemein]** > **[!UICONTROL HomeView]** im Projektnavigator von Xcode.
+2. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** im Projektnavigator von Xcode.
 
    Fügen Sie den folgenden Code zum `.task` modifier:
 

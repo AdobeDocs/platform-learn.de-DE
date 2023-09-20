@@ -2,9 +2,9 @@
 title: Installieren von Adobe Experience Platform Mobile SDKs
 description: Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK in eine Mobile App implementieren.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -33,11 +33,14 @@ In dieser Lektion werden Sie:
 
 ## Swift Package Manager
 
-Anstatt CocoaPods zu verwenden und eine Pod-Datei zu verwenden (wie in den Installationsanweisungen für Mobilgeräte beschrieben), lesen Sie [SDK-Installationsanweisungen generieren](./configure-tags.md#generate-sdk-install-instructions)), fügen Sie mithilfe des nativen Swift Package Manager von Xcode einzelne Pakete hinzu.
+Anstatt CocoaPods zu verwenden und eine Pod-Datei zu verwenden (wie in den Installationsanweisungen für Mobilgeräte beschrieben), lesen Sie [SDK-Installationsanweisungen generieren](./configure-tags.md#generate-sdk-install-instructions)), fügen Sie mithilfe des nativen Swift Package Manager von Xcode einzelne Pakete hinzu. Für das Xcode-Projekt wurden bereits alle Paketabhängigkeiten hinzugefügt. Der Xcode **[!UICONTROL Paketabhängigkeiten]** Der Bildschirm sollte wie folgt aussehen:
 
-Verwenden Sie in Xcode **[!UICONTROL Datei]** > **[!UICONTROL Pakete hinzufügen...]** und installieren Sie alle Pakete, die in der folgenden Tabelle aufgeführt sind. Wählen Sie den Link des Pakets in der Tabelle aus, um die vollständige URL für das spezifische Paket zu erhalten.
+![Abhängigkeiten von Xcode-Paketen](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
 
-| Package | Beschreibung |
+
+In Xcode können Sie **[!UICONTROL Datei]** > **[!UICONTROL Pakete hinzufügen...]** , um Pakete hinzuzufügen. Die nachstehende Tabelle enthält Links zu den URLs, die Sie zum Hinzufügen von Paketen verwenden würden. Über die Links gelangen Sie zu weiteren Informationen zu den einzelnen Paketen.
+
+| Paket | Beschreibung |
 |---|---|
 | [AEP Core](https://github.com/adobe/aepsdk-core-ios.git) | Die `AEPCore`, `AEPServices`, und `AEPIdentity` Erweiterungen stellen die Grundlage des Adobe Experience Platform SDK dar - jede App, die das SDK verwendet, muss sie enthalten. Diese Module enthalten einen gemeinsamen Satz von Funktionen und Diensten, die für alle SDK-Erweiterungen erforderlich sind.<br/><ul><li>`AEPCore` enthält die Implementierung des Ereignis-Hub. Der Ereignis-Hub ist der Mechanismus zur Bereitstellung von Ereignissen zwischen der App und dem SDK. Der Ereignis-Hub wird auch zum Freigeben von Daten zwischen Erweiterungen verwendet.</li><li>`AEPServices` bietet mehrere wiederverwendbare Implementierungen, die für die Plattformunterstützung erforderlich sind, einschließlich Netzwerk, Festplattenzugriff und Datenbankverwaltung.</li><li>`AEPIdentity` implementiert die Integration mit Adobe Experience Platform Identity-Diensten.</li><li>`AEPSignal` stellt die Signal-Erweiterung der Adobe Experience Platform SDKs dar, die es Marketing-Experten ermöglicht, ein &quot;Signal&quot;an ihre Apps zu senden, um Daten an externe Ziele zu senden oder URLs zu öffnen.</li><li>`AEPLifecycle` stellt die Adobe Experience Platform SDKs Lifecycle-Erweiterung dar, die bei der Erfassung von Lebenszyklusmetriken für Anwendungen wie Informationen zur Anwendungsinstallation oder -aktualisierung, zum Anwendungsstart und zu Sitzungsinformationen, Geräteinformationen und zusätzlichen Kontextdaten, die vom Anwendungsentwickler bereitgestellt werden, hilft.</li></ul> |
 | [AEP Edge](https://github.com/adobe/aepsdk-edge-ios.git) | Die mobile Adobe Experience Platform Edge Network-Erweiterung (`AEPEdge`) ermöglicht den Versand von Daten von einer Mobile App an das Adobe Edge-Netzwerk. Mit dieser Erweiterung können Sie Adobe Experience Cloud-Funktionen robuster implementieren, mehrere Adobe-Lösungen über einen Netzwerkaufruf bereitstellen und diese Informationen gleichzeitig an die Adobe Experience Platform weiterleiten.<br/>Die mobile Edge Network-Erweiterung ist eine Erweiterung für das Adobe Experience Platform SDK und erfordert die `AEPCore` und `AEPServices` Erweiterungen für die Ereignisverarbeitung sowie die `AEPEdgeIdentity` Erweiterung zum Abrufen der Identitäten, z. B. ECID. |
@@ -50,14 +53,9 @@ Verwenden Sie in Xcode **[!UICONTROL Datei]** > **[!UICONTROL Pakete hinzufügen
 | [AEP-Sicherheit](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance (alias Projekt Griffon) ist eine neue, innovative Erweiterung (`AEPAssurance`), damit Sie die Erfassung, den Testversand, die Simulation und die Validierung der Datenerfassung und der Bereitstellung von Erlebnissen in Ihrer App unterstützen können. Diese Erweiterung aktiviert Ihre App für die Qualitätssicherung. |
 
 
-Nachdem Sie alle Pakete installiert haben, Ihr Xcode **[!UICONTROL Paketabhängigkeiten]** Der Bildschirm sollte wie folgt aussehen:
-
-![Abhängigkeiten von Xcode-Paketen](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
-
-
 ## Importieren von Erweiterungen
 
-Navigieren Sie in Xcode zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** und stellen Sie sicher, dass die folgenden Importe Teil dieser Quelldatei sind.
+Navigieren Sie in Xcode zu **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** und stellen Sie sicher, dass die folgenden Importe Teil dieser Quelldatei sind.
 
 ```swift
 // import AEP MobileSDK libraries
@@ -76,16 +74,16 @@ import AEPOptimize
 import AEPAssurance
 ```
 
-Tun Sie dasselbe für **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]**.
+Tun Sie dasselbe für **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**.
 
 ## AppDelegate aktualisieren
 
-Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** im Xcode-Projektnavigator.
+Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** im Xcode-Projektnavigator.
 
-1. Legen Sie die `@AppStorage` Wert für `environmentFileId` zum Wert der Datei-ID der Entwicklungsumgebung hinzufügen, den Sie aus den Tags in Schritt 6 unter [SDK-Installationsanweisungen generieren](configure-tags.md#generate-sdk-install-instructions).
+1. Ersetzen Sie die `@AppStorage` value `YOUR_ENVIRONMENT_ID_GOES_HERE` für `environmentFileId` zum Wert der Datei-ID der Entwicklungsumgebung hinzufügen, den Sie aus den Tags in Schritt 6 unter [SDK-Installationsanweisungen generieren](configure-tags.md#generate-sdk-install-instructions).
 
    ```swift
-   @AppStorage("environmentFileId") private var environmentFileId = "b5cbd1a1220e/1857ef6cacb5/launch-2594f26b23cd-development"
+   @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
    ```
 
 1. Fügen Sie den folgenden Code zum `application(_, didFinishLaunchingWithOptions)` -Funktion.

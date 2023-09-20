@@ -3,9 +3,9 @@ title: Konfigurieren einer Tag-Eigenschaft
 description: Erfahren Sie, wie Sie eine Tag-Eigenschaft im [!UICONTROL Datenerfassung] -Schnittstelle.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1096'
 ht-degree: 9%
 
 ---
@@ -110,9 +110,9 @@ In dieser Lektion werden Sie:
 
 1. Verwenden Sie die ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Suche]** -Feld zum Suchen und Installieren **Adobe Experience Platform Edge Network** -Erweiterung.
 
-   1. In **[!UICONTROL Datenspeicher]** wählen Sie **[!UICONTROL Datastream]** , die Sie in der [vorheriger Schritt](create-datastream.md) für jede Umgebung, beispielsweise **[!UICONTROL Luma Mobile App]**.
+   1. In **[!UICONTROL Datenspeicher]** wählen Sie **[!UICONTROL Datastream]** , die Sie in der [vorheriger Schritt](create-datastream.md) für jede Umgebung, beispielsweise **[!DNL Luma Mobile App]**.
 
-   1. Geben Sie die **[!UICONTROL Edge Network Domain]** Innerhalb **[!UICONTROL Domänenkonfiguration]**. Die Edge Network-Domäne ist der Name Ihres Unternehmens, gefolgt von `data.adobedc.net`, beispielsweise `techmarketingdemos.data.adobedc.net`.
+   1. Wenn sie nicht bereits ausgefüllt sind, geben Sie die **[!UICONTROL Edge Network Domain]** Innerhalb **[!UICONTROL Domänenkonfiguration]**. Die Edge Network-Domäne ist der Name Ihres Unternehmens, gefolgt von `data.adobedc.net`, beispielsweise `techmarketingdemos.data.adobedc.net`.
 
    1. Aus dem **[!UICONTROL In Bibliothek speichern]** Menü auswählen **[!UICONTROL In Bibliothek speichern und erstellen]**.
 

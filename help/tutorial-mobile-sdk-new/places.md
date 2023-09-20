@@ -1,15 +1,15 @@
 ---
-title: Places
+title: Geostandortdienste verwenden
 description: Erfahren Sie, wie Sie den Geostandort-Dienst Places in Ihrer mobilen App verwenden.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1745'
 ht-degree: 4%
 
 ---
 
-# Places
+# Geostandortdienste verwenden
 
 Erfahren Sie, wie Sie den Geolocation-Dienst in Ihrer App verwenden.
 
@@ -72,7 +72,7 @@ Sie definieren einige Zielpunkte im Places-Dienst.
 1. So schließen Sie die **[!UICONTROL Bibliotheken verwalten]** Dialogfeld auswählen **[!UICONTROL Schließen]**.
 1. Zurück in **[!UICONTROL POI-Verwaltung]** auswählen **[!UICONTROL POIs importieren]**.
 1. Auswählen **[!UICONTROL Starten]** in t**[!UICONTROL die Importorte]** Dialogfeld.
-1. Auswählen **[!UICONTROL Luma]** aus der Liste der Bibliotheken,
+1. Auswählen **[!DNL Luma]** aus der Liste der Bibliotheken,
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
    ![Bibliothek auswählen](assets/places-import-select-library.png)
 1. Laden Sie die [Luma POIs-ZIP-Datei](assets/luma_pois.csv.zip) und extrahieren Sie es an eine Stelle auf Ihrem Computer.
@@ -94,7 +94,7 @@ Sie definieren einige Zielpunkte im Places-Dienst.
    ![Entscheidungserweiterung hinzufügen](assets/tag-places-extension.png)
 
 1. Im **[!UICONTROL Installieren der Erweiterung]** dialog:
-   1. Auswählen **[!UICONTROL Luma]** aus dem **[!UICONTROL Bibliothek auswählen]** Liste.
+   1. Auswählen **[!DNL Luma]** aus dem **[!UICONTROL Bibliothek auswählen]** Liste.
    1. Stellen Sie sicher, dass Sie Ihre Arbeitsbibliothek ausgewählt haben, z. B. **[!UICONTROL Ursprünglicher Build]**.
    1. Auswählen **[!UICONTROL In Bibliothek speichern und erstellen]** von **[!UICONTROL In Bibliothek speichern]**.
       ![Installieren der Places-Erweiterung](assets/places-install-extension.png).
@@ -268,7 +268,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 >
 
 1. Stellen Sie in Xcode sicher, dass [AEP Places](https://github.com/adobe/aepsdk-places-ios) wird zur Liste der Pakete in Package-Abhängigkeiten hinzugefügt. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** im Xcode-Projektnavigator.
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** im Xcode-Projektnavigator.
 1. Sichern `AEPPlaces` ist Teil Ihrer Importliste.
 
    `import AEPPlaces`
@@ -291,7 +291,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    ]
    ```
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator und suchen Sie die `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator und suchen Sie die `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Fügen Sie den folgenden Code hinzu:
 
    ```swift
    // Process geolocation event
@@ -300,7 +300,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 
    Diese [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) Die API übermittelt die Geolocation-Informationen an den Places-Dienst.
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ansichten]** > **[!UICONTROL Standort]** > **[!UICONTROL GeofenceSheet]** im Projektnavigator von Xcode.
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** im Projektnavigator von Xcode.
 
    1. Geben Sie für die Schaltfläche &quot;Entry&quot;den folgenden Code ein
 

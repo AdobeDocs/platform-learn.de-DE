@@ -1,15 +1,15 @@
 ---
-title: Lebenszyklusdaten
+title: Lebenszyklusdaten erfassen
 description: Erfahren Sie, wie Sie Lebenszyklusdaten in einer mobilen App erfassen.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
 
 ---
 
-# Lebenszyklusdaten
+# Lebenszyklusdaten erfassen
 
 Erfahren Sie, wie Sie Lebenszyklusdaten in einer mobilen App erfassen.
 
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Jetzt können Sie Ihr Projekt aktualisieren, um die Lebenszyklusereignisse zu registrieren.
 
-1. Navigieren Sie zu **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** im Xcode-Projektnavigator.
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** im Xcode-Projektnavigator.
 
 1. Wenn Ihre App beim Start aus einem Hintergrundstatus fortgesetzt wird, kann iOS Ihre `sceneWillEnterForeground:` -Delegierungsmethode verwenden. Hier möchten Sie ein Lebenszyklusstartereignis Trigger werden. Fügen Sie diesen Code zu `func sceneWillEnterForeground(_ scene: UIScene)`:
 
