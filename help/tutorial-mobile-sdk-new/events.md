@@ -1,15 +1,15 @@
 ---
-title: Erfassen von Ereignisdaten
-description: Erfahren Sie, wie Sie Ereignisdaten in einer Mobile App erfassen.
+title: Tracking von Ereignisdaten
+description: Erfahren Sie, wie Sie Ereignisdaten in einer Mobile App verfolgen.
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 3%
+source-wordcount: '1310'
+ht-degree: 2%
 
 ---
 
-# Erfassen von Ereignisdaten
+# Tracking von Ereignisdaten
 
 Erfahren Sie, wie Sie Ereignisse in einer Mobile App verfolgen.
 
@@ -380,4 +380,4 @@ Nachdem Sie die Ereignisse erfasst und an das Platform Edge Network gesendet hab
 >
 >Sie haben Ihre App jetzt so eingerichtet, dass sie Commerce-, App-Interaktionen- und Bildschirmverfolgungsereignisse im Adobe Experience Platform Edge Network und allen in Ihrem Datastream definierten Diensten verfolgt.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Weiter: **[WebViews](web-views.md)**
+Weiter: **[WebViews verarbeiten](web-views.md)**

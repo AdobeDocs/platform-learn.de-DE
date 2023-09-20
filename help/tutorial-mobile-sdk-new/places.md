@@ -1,15 +1,15 @@
 ---
-title: Geostandortdienste verwenden
-description: Erfahren Sie, wie Sie den Geostandort-Dienst Places in Ihrer mobilen App verwenden.
+title: Geolocation-Dienste verwenden
+description: Erfahren Sie, wie Sie den Geolocation-Dienst Places in Ihrer mobilen App verwenden.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1669'
 ht-degree: 4%
 
 ---
 
-# Geostandortdienste verwenden
+# Geolocation-Dienste verwenden
 
 Erfahren Sie, wie Sie den Geolocation-Dienst in Ihrer App verwenden.
 
@@ -33,24 +33,6 @@ In dieser Lektion werden Sie
 * Validieren Sie die Einrichtung in &quot;Assurance&quot;.
 * Aktualisieren Sie Ihre App, um die Places-Erweiterung zu registrieren.
 * Implementieren Sie das Geostandorttracking aus dem Places-Dienst in Ihre App.
-
-
-## Voraussetzungen
-
-* App wurde erfolgreich erstellt und ausgeführt, wobei die richtigen SDKs installiert und konfiguriert wurden.
-
-
-## Lernziele
-
-In dieser Lektion werden Sie
-
-* Aktualisieren Sie Ihre Edge-Konfiguration für die Entscheidungsverwaltung.
-* Aktualisieren Sie Ihre Tag-Eigenschaft mit der Journey Optimizer - Decisioning-Erweiterung.
-* Aktualisieren Sie Ihr Schema, um Vorschlagsereignisse zu erfassen.
-* Validieren Sie die Einrichtung in &quot;Assurance&quot;.
-* Erstellen Sie eine Angebotsentscheidung, die auf Angeboten in Journey Optimizer - Entscheidungsverwaltung basiert.
-* Aktualisieren Sie Ihre App, um die Optimizer-Erweiterung zu registrieren.
-* Implementieren Sie Angebote aus der Entscheidungsverwaltung in Ihre App.
 
 
 ## Einrichten

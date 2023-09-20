@@ -2,9 +2,9 @@
 title: Lebenszyklusdaten erfassen
 description: Erfahren Sie, wie Sie Lebenszyklusdaten in einer mobilen App erfassen.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
@@ -124,4 +124,4 @@ Sie sollten **[!UICONTROL Anwendungsbeendigung (Hintergrund)]** und **[!UICONTRO
 >
 >Sie haben Ihre App jetzt so eingerichtet, dass sie App-Zustandsereignisse (Vordergrund, Hintergrund) an das Adobe Experience Platform Edge Network und alle Dienste sendet, die Sie in Ihrem Datastream definiert haben.<br>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Weiter: **[Ereignisse verfolgen](events.md)**
+Weiter: **[Tracking von Ereignisdaten](events.md)**
