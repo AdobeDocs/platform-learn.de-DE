@@ -5,9 +5,9 @@ user-guide-description: Anleitungsvideos und Tutorials, die Sie zu einem Power-U
 solution: Data Collection,Experience Platform
 doc-type: video
 role: Developer, Data Engineer
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e3ef25638384554bf21a50dc57db3152805bfac2
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '242'
 ht-degree: 43%
 
 ---
@@ -53,6 +53,7 @@ ht-degree: 43%
    + [Einrichten eines Datenstroms](event-forwarding/set-up-a-datastream.md)
    + [Hinzufügen einer Erweiterung](event-forwarding/add-an-extension.md)
    + [Erstellen einer Regel](event-forwarding/create-a-rule.md)
+   + [Schnellstart-Workflows](event-forwarding/quick-start-workflows.md)
    + [Überwachen der Ereignisweiterleitung](event-forwarding/monitor.md)
    + [Verschieben von clientseitigen Tags](event-forwarding/consider-moving-tags.md)
    + [Einrichten von erweiterten Konvertierungen mit Google Ads](event-forwarding/set-up-google-ads-enhanced-conversions.md)
