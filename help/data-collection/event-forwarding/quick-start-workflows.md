@@ -6,10 +6,10 @@ level: Intermediate
 doc-type: Technical Video
 last-substantial-update: 2023-09-21T00:00:00Z
 jira: KT-13957
-source-git-commit: 3e01d4789c73686dde50ee65a46e705095fcb7fa
+source-git-commit: fd9ef1bfeea139dbb83d00f6ad4538524a7d00bc
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 11%
+source-wordcount: '99'
+ht-degree: 12%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 11%
 
 In diesem Video werden Benutzer durch zwei erweiterte Anwendungsfälle geführt, um die Facebook/Meta-Schnellstartarbeitsabläufe in der Datenerfassung optimal zu nutzen:
 
-1. Erstellen von Referenzkonten mithilfe des Workflows 
-1. Möglichkeit, den neuen Inhalt in eine vorhandene Implementierung zu kopieren.
+1. Erstellen von Referenzobjekten mithilfe des Workflows 
+1. Kopieren der Referenzobjekte in eine vorhandene Implementierung.
 
 Weitere Informationen zum Schnellstartworkflow der Meta Conversions-API finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=de#quick-start).
 
