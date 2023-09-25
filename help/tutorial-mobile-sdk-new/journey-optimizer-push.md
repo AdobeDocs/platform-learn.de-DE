@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 4%
@@ -153,7 +153,7 @@ Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag
    <img src="assets/luma-app-push.png" width="300" />
 
 
-### Hinzufügen von Push-Benachrichtigungsfunktionen zu Ihrer App
+## Hinzufügen von Push-Benachrichtigungsfunktionen zu Ihrer App
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Sie sollten Ihrer App jetzt eine Push-Benachrichtigungs-Erweiterung hinzufügen,
 ![Erweiterung &quot;Pusen nofitications&quot;](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### Implementieren von Journey Optimizer in die App
+## Implementieren von Journey Optimizer in die App
 
 Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobilen Tag-Erweiterung nur die Konfiguration. Als Nächstes müssen Sie das Messaging SDK installieren und registrieren. Wenn diese Schritte nicht klar sind, überprüfen Sie die [SDKs installieren](install-sdks.md) Abschnitt.
 
@@ -205,7 +205,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    ]
    ```
 
-### Geräte-Token für Push-Benachrichtigungen registrieren
+## Geräte-Token für Push-Benachrichtigungen registrieren
 
 1. Fügen Sie die [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API für die `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` -Funktion.
 
@@ -318,7 +318,7 @@ Als Nächstes erstellen Sie die Journey, die beim Empfang des entsprechenden Ere
    ![Abgeschlossene Journey](assets/ajo-journey-finished.png)
 
 
-## Push-Benachrichtigung auslösen
+## Trigger der Push-Benachrichtigung
 
 Sie verfügen über alle nötigen Bestandteile, um eine Push-Benachrichtigung zu versenden. Was bleibt, ist, wie diese Push-Benachrichtigung Trigger wird. Im Wesentlichen ist dies dasselbe wie zuvor: Senden Sie einfach ein Erlebnisereignis mit der richtigen Payload (wie in [Veranstaltungen](events.md)).
 
