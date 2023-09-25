@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-10249
 thumbnail: 342378.jpeg
 exl-id: 0ea3c648-7366-462a-b6ed-dc911186e1f6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 79%
@@ -16,8 +16,6 @@ ht-degree: 79%
 
 # Einblicke vor der Freigabe durch Segment Match
 
-Wenn Sie sich entscheiden, für einen strategischen Partner Daten freizugeben, müssen Sie wissen, wie Ihre Kunden zusammenpassen, damit Sie beurteilen können, wie nützlich diese Datenfreigabe sein wird. Mit Segment Match können Sie Überschneidungen bei potenziellen Datenpartnern sehen, bevor Sie Daten freigeben.
+Wenn Sie sich entscheiden, für einen strategischen Partner Daten freizugeben, müssen Sie wissen, wie Ihre Kunden zusammenpassen, damit Sie beurteilen können, wie nützlich diese Datenfreigabe sein wird. Mit Segment Match können Sie Überschneidungen bei potenziellen Datenpartnern sehen, bevor Sie Daten freigeben. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/342378/?quality=12&learn=on)
-
-Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
+>[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on)

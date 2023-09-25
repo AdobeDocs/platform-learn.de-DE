@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 11%
@@ -26,7 +26,7 @@ Mit Adobe Experience Platform Identity Service erhalten Sie einen besseren Über
 **Datenarchitekten** muss Identitäten außerhalb dieses Tutorials zuordnen.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über die Identität in Adobe Experience Platform zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Im [Berechtigungen konfigurieren](configure-permissions.md) Lektion erstellen Si
 
 ## Identity-Namespace erstellen
 
-In dieser Übung erstellen wir Identitäts-Namespaces für die benutzerdefinierten Identitätsfelder von Luma, `loyaltyId`, `crmId`und `productSku`. Identity-Namespaces spielen eine entscheidende Rolle beim Erstellen von Echtzeit-Kundenprofilen, da zwei übereinstimmende Werte im selben Namespace es zwei Datenquellen ermöglichen, ein Identitätsdiagramm zu erstellen.
+In dieser Übung erstellen wir Identitäts-Namespaces für die benutzerdefinierten Identitätsfelder von Luma, `loyaltyId`, `crmId`, und `productSku`. Identity-Namespaces spielen eine entscheidende Rolle beim Erstellen von Echtzeit-Kundenprofilen, da zwei übereinstimmende Werte im selben Namespace es zwei Datenquellen ermöglichen, ein Identitätsdiagramm zu erstellen.
 
 
 ### Erstellen von Namespaces in der Benutzeroberfläche
@@ -94,10 +94,10 @@ Wir erstellen unseren CRM-Namespace per API.
 
 Erstellen wir den Identity-Namespace `Luma CRM Id`:
 
-1. Download [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) auf `Luma Tutorial Assets` Ordner
+1. Herunterladen [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) auf `Luma Tutorial Assets` Ordner
 1. Importieren Sie die Sammlung in [!DNL Postman]
-1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern.
-1. Anforderung auswählen **[!UICONTROL Identity Service] > [!UICONTROL Identitäts-Namespace] > [!UICONTROL Neuen Identitäts-Namespace erstellen].**
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen **Senden** , um ein neues Zugriffstoken anzufordern.
+1. Anforderung auswählen **[!UICONTROL Identity Service] > [!UICONTROL Identity Namespace] > [!UICONTROL Neuen Identitäts-Namespace erstellen].**
 1. Fügen Sie Folgendes als [!DNL Body] des Antrags:
 
    ```json
@@ -113,7 +113,7 @@ Erstellen wir den Identity-Namespace `Luma CRM Id`:
    ![Identity-Namespace](assets/identity-createUsingApi.png)
 
 Wenn Sie zur Benutzeroberfläche zurückkehren, sollten Ihnen nun die drei neuen benutzerdefinierten Namespaces angezeigt werden:
-![Identitäts-Namespace ](assets/identity-newIdentities.png)
+![Identity Namespace ](assets/identity-newIdentities.png)
 
 
 ## Identitätsfelder in Schemata beschriften
@@ -125,7 +125,7 @@ Nachdem wir nun unsere Namespaces haben, besteht der nächste Schritt darin, uns
 
 Für jedes mit dem Echtzeit-Kundenprofil verwendete Schema muss eine primäre Identität angegeben werden. Und jeder erfasste Datensatz muss einen Wert für dieses Feld haben.
 
-Fügen wir eine primäre Identität zur `Luma Loyalty Schema`:
+Fügen wir der `Luma Loyalty Schema`:
 
 1. Öffnen Sie `Luma Loyalty Schema`
 1. Wählen Sie die `Luma Identity profile field group`
@@ -182,7 +182,7 @@ Nachdem wir nun unsere Identitätsfelder beschriftet haben, können wir die Einr
 
 Wiederholen Sie diesen Vorgang, um eine Beziehung zwischen dem `Luma Web Events Schema` und `Luma Product Catalog Schema`.
 
-Beachten Sie, dass nach der Definition der Beziehung diese in beiden **[!UICONTROL Komposition]** und **[!UICONTROL Struktur]** Abschnitt des Schema-Editors.
+Beachten Sie, dass nach der Definition der Beziehung diese in beiden Variablen **[!UICONTROL Komposition]** und **[!UICONTROL Struktur]** Abschnitt des Schema-Editors.
 
 ![Beziehungsvisualisierung im Schema-Editor](assets/identity-webEvents-relationship.png)
 

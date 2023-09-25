@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 6%
@@ -25,7 +25,7 @@ Adobe Experience Platform Query Service hilft Ihnen, Ihre Daten zu verstehen, in
 **Datenarchitekten** und **Dateningenieure** müssen den Abfragedienst außerhalb dieses Tutorials verwenden.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Query Service zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## Erforderliche Berechtigungen
 
@@ -64,7 +64,7 @@ Beginnen wir mit einigen einfachen Abfragen:
 
    ![Daten aus dem Treuedatensatz auswählen](assets/queries-loyaltySelect.png)
 
-1. Wenn ein Fehler auftritt, werden im Abschnitt **[!UICONTROL Konsole]** Registerkarte, wie unten dargestellt
+1. Wenn ein Fehler auftritt, werden detaillierte Meldungen im **[!UICONTROL Konsole]** Registerkarte, wie unten dargestellt
    ![Fehler in der Abfrage](assets/queries-error.png)
 
 1. Mit Ihrer erfolgreichen Abfrage **[!UICONTROL Name]** it `Luma Gold Level Customers`

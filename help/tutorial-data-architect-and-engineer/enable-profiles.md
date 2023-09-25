@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 3%
@@ -33,7 +33,7 @@ Es gibt wichtige [Limits für Echtzeit-Kundenprofil-Daten](https://experiencelea
 **Datenarchitekten** müssen das Echtzeit-Kundenprofil außerhalb dieses Tutorials aktiviert werden.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über das Echtzeit-Kundenprofil zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## Erforderliche Berechtigungen
 
@@ -78,14 +78,14 @@ Einfach richtig? Wiederholen Sie die obigen Schritte für dieses andere Schema:
 
 ## Aktivieren von Schemata für das Echtzeit-Kundenprofil mithilfe der Platform-API
 
-Jetzt ist es an der Zeit, die `Luma CRM Schema` mit der API. Wenn Sie diese Übung überspringen und sie einfach in der Benutzeroberfläche aktivieren möchten, fahren Sie sofort fort.
+Jetzt ist es an der Zeit, die `Luma CRM Schema` mit der -API. Wenn Sie diese Übung überspringen und sie einfach in der Benutzeroberfläche aktivieren möchten, fahren Sie sofort fort.
 
 ### Abrufen der meta:altId des Schemas
 
-Zunächst wollen wir die `meta:altId` des `Luma CRM Schema`:
+Zuerst wollen wir die `meta:altId` des `Luma CRM Schema`:
 
 1. Öffnen [!DNL Postman]
-1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern, genau wie Sie es in der [!DNL Postman] Lektion.
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen **Senden** , um ein neues Zugriffstoken anzufordern, genau wie Sie es in der [!DNL Postman] Lektion.
 1. Anfrage öffnen **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Wählen Sie die **Senden** button
 1. Sie sollten eine 200-Antwort erhalten
@@ -137,7 +137,7 @@ Wiederholen Sie die obigen Schritte für diese anderen Datensätze:
 >
 >Im Gegensatz zu Schemas können Sie Datensätze aus dem Profil deaktivieren, jedoch bleiben alle zuvor erfassten Daten im Profil.
 
-## Aktivieren von Datensätzen für Echtzeit-Kundenprofil mithilfe der Platform-API
+## Datensätze für Echtzeit-Kundenprofil mithilfe der Platform-API aktivieren
 
 Jetzt aktivieren Sie einen Datensatz für Profil mithilfe der API. Auch wenn Sie es über die Benutzeroberfläche mit der oben genannten Methode aktivieren möchten, ist das in Ordnung.
 
@@ -146,7 +146,7 @@ Jetzt aktivieren Sie einen Datensatz für Profil mithilfe der API. Auch wenn Sie
 Zuerst müssen wir die `id` des `Luma CRM Dataset`:
 
 1. Öffnen [!DNL Postman]
-1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern, genau wie Sie es in der [!DNL Postman] Lektion.
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen **Senden** , um ein neues Zugriffstoken anzufordern, genau wie Sie es in der [!DNL Postman] Lektion.
 1. Anfrage öffnen **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
 1. Wählen Sie die **Senden** button
 1. Sie sollten eine 200-Antwort erhalten
@@ -191,4 +191,4 @@ Sie können auch bestätigen, dass in der Benutzeroberfläche der Datensatz akti
 
 
 **Dateningenieure** sollte die [Abonnieren von Datenerfassungsereignissen](subscribe-to-data-ingestion-events.md) Lektion.
-**Datenarchitekten** _kann vorzeitig überspringen_ und gehen Sie zu [Batch-Erfassung - Lektion](ingest-batch-data.md).
+**Datenarchitekten** _überspringen_ und gehen Sie zu [Batch-Erfassung - Lektion](ingest-batch-data.md).

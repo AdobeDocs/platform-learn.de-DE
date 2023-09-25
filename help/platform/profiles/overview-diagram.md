@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-4943
 thumbnail: 33600.jpg
 exl-id: 1cff5492-82bb-484c-a96a-3417288d4766
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 9%
@@ -16,9 +16,6 @@ ht-degree: 9%
 
 # Übersicht über das Echtzeit-Kundenprofil
 
-Dieses Video führt Sie durch ein Übersichtsdiagramm, das die Echtzeit-Kundenprofilfunktion von Adobe Experience Platform veranschaulicht.
+Dieses Video führt Sie durch ein Übersichtsdiagramm, das die Echtzeit-Kundenprofilfunktion von Adobe Experience Platform veranschaulicht. Weitere Informationen finden Sie unter [Dokumentation zum Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/33600?quality=12&learn=on)
-
-Weitere Informationen finden Sie unter [Dokumentation zum Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de).
-
+>[!VIDEO](https://video.tv.adobe.com/v/33600?learn=on)

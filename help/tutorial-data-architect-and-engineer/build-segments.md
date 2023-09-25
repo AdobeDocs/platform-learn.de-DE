@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 3%
@@ -25,15 +25,15 @@ Sobald Sie über Echtzeit-Kundenprofile verfügen, können Sie Segmente von Einz
 **Datenarchitekten** müssen Segmente außerhalb dieses Tutorials erstellen und ihre Kollegen bei dieser Aufgabe unterstützen.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über das Erstellen von Segmenten zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on)
 
 
 ## Erforderliche Berechtigungen
 
 Im [Berechtigungen konfigurieren](configure-permissions.md) Lektion: Sie richten alle Zugriffskontrollen ein, die zum Abschluss dieser Lektion erforderlich sind, insbesondere:
 
-* Berechtigungselemente **[!UICONTROL Profilverwaltung]** > **[!UICONTROL Segmente verwalten]**, **[!UICONTROL Segmente anzeigen]** und **[!UICONTROL Zielgruppensegment exportieren]**
-* Berechtigungselemente **[!UICONTROL Profilverwaltung]** > **[!UICONTROL Profile anzeigen]** und **[!UICONTROL Profile verwalten]**
+* Berechtigungselemente **[!UICONTROL Profilverwaltung]** > **[!UICONTROL Segmente verwalten]**, **[!UICONTROL Segmente anzeigen]**, und **[!UICONTROL Zielgruppensegment exportieren]**
+* Berechtigungselemente **[!UICONTROL Profilverwaltung]** > **[!UICONTROL Anzeigen von Profilen]**, und **[!UICONTROL Profile verwalten]**
 * Berechtigungselement **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * Benutzerrollenzugriff auf die `Luma Tutorial Platform` Produktprofil
 * Entwicklerrollenzugriff auf die `Luma Tutorial Platform` Produktprofil (für API)
@@ -66,7 +66,7 @@ In dieser Übung erstellen wir ein Segment für Kunden, die dasselbe Produkt inn
 1. Filtern der Liste nach `purchases`
 1. Ziehen Sie die **[!UICONTROL Käufe]** Ereignistyp auf der Arbeitsfläche _zwei separate_
 1. Wählen Sie das Uhrensymbol zwischen den beiden **[!UICONTROL Käufe]** Ereignisse und wählen Sie &quot;innerhalb von 30 Tagen&quot;aus.
-1. Überprüfen Sie, ob Ihre Segmentdefinition an dieser Stelle wie folgt lautet: **&quot;Schließen Sie Zielgruppe ein, die mindestens 1 Kaufereignis hat und dann innerhalb von 30 Tagen mindestens 1 Kaufereignis hat.&quot;**
+1. Bestätigen Sie, dass Ihre Segmentdefinition an dieser Stelle wie folgt lautet: **&quot;Schließen Sie Zielgruppe ein, die mindestens 1 Kaufereignis hat und dann innerhalb von 30 Tagen mindestens 1 Kaufereignis hat.&quot;**
    ![Zwei Käufe innerhalb von 30 Tagen](assets/segment-twoPurchases.png)
 1. Ändern Sie jetzt den Ereignisfilter in `sku`
 1. Ziehen Sie das SKU-Feld zum zweiten Kaufereignis
@@ -75,13 +75,13 @@ In dieser Übung erstellen wir ein Segment für Kunden, die dasselbe Produkt inn
 1. Sie sollten in der **[!UICONTROL Variablen durchsuchen]** -Abschnitt gibt es Ordner für die beiden Kaufereignisse. Klicken Sie auf . **[!UICONTROL Einkäufe 1]**\
    ![Zwei Käufe innerhalb von 30 Tagen mit SKU, durchsuchen Sie den ersten Kauf](assets/segment-twoPurchases-browsePurchaseOne.png)
 1. Drilldown in die **[!UICONTROL Produktlistenelemente]** Ordner, wählen Sie die **[!UICONTROL SKU]** und ziehen Sie es rechts neben **[!UICONTROL gleich]** Operand. Wenn Sie den Mauszeiger über den Bereich bewegen, legen Sie ihn im Abschnitt &quot;Hinzufügen zum Vergleichen von Operanden&quot;ab
-1. Benennen Sie Ihr Segment. `Bought same product within 30 days`
+1. Benennen Sie Ihr Segment `Bought same product within 30 days`
 1. Überprüfen Sie, ob Ihre Zielgruppendefinition **&quot;Schließen Sie Zielgruppe ein, die mindestens 1 Kaufereignis hat und dann innerhalb von 30 Tagen mindestens 1 Kaufereignis hat, bei dem ((SKU = Purchases1 SKU))&quot;**
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**
 
-   ![Gekaufte dasselbe Produkt in den letzten 30 Tagen](assets/segment-boughtSameProduct.png)
+   ![In den letzten 30 Tagen im Segment gekauft](assets/segment-boughtSameProduct.png)
 
-## Erstellen eines Segments mit mehreren Entitäten
+## Mehrere Entitätssegmente erstellen
 
 Denken Sie daran, wie wir die Beziehung zwischen `Luma Offline Purchase Events Schema` und `Luma Product Catalog Schema` in früheren Lektionen? Wir haben dies getan, damit wir die Beziehung in unserem Schema mithilfe der Segmentierung mehrerer Entitäten verwenden konnten.
 
@@ -101,7 +101,7 @@ Sie erstellen das nächste Segment, indem Sie die Beziehung anwenden, die Sie zw
 1. Zielgruppendefinition bestätigen `(Include audience who have at least 1 Purchases event where ((Product Category starts with men)) ) and occurs in last 30 day(s)`
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**
 
-   ![Gekaufte dasselbe Produkt in den letzten 30 Tagen](assets/segment-purchasedMens.png)
+   ![In den letzten 30 Tagen im Segment gekauft](assets/segment-purchasedMens.png)
 
 ## Batch- und Streaming-Segmentierung
 
@@ -111,7 +111,7 @@ Klicken Sie auf **[!UICONTROL Segmente]** im linken Navigationsbereich und lasse
 * Die Plattform nutzt nach Möglichkeit Streaming-Segmentierung, um den Kunden für ein Segment zu qualifizieren, sobald er die Kriterien erfüllt. Wenn Segmentdefinitionen für das Streaming zu komplex sind, werden sie automatisch in Batch konvertiert. In diesem Fall wurde für die beiden Segmente standardmäßig ein Batch-Vorgang verwendet, da das Lookback-Fenster der Kaufereignisse länger als sieben Tage war. Eine vollständige und aktuelle Liste der Streaming-Einschränkungen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html).
 * Die Batch-Aufträge werden nach einem täglichen Zeitplan ausgeführt, der umgeschaltet werden kann.
 
-![Gekaufte dasselbe Produkt in den letzten 30 Tagen](assets/segment-review.png)
+![In den letzten 30 Tagen im Segment gekauft](assets/segment-review.png)
 
 ## Weitere Ressourcen
 
@@ -120,4 +120,4 @@ Klicken Sie auf **[!UICONTROL Segmente]** im linken Navigationsbereich und lasse
 
 Die Segmentierung, insbesondere beim Aktivieren von Segmenten, hat noch einiges zu tun. Diese Themen werden in einem anderen Tutorial behandelt.
 
-Du hast es durch alle Übungen geschafft! Bitte gehen Sie zum [Schlussfolgerung](conclusion.md).
+Du hast es durch alle Übungen geschafft! Fahren Sie mit dem [Schlussfolgerung](conclusion.md).

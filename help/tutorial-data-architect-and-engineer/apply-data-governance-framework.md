@@ -1,32 +1,32 @@
 ---
-title: Anwenden des Data Governance-Frameworks
+title: Data Governance-Framework anwenden
 seo-title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-breadcrumb-title: Anwenden des Data Governance-Frameworks
+breadcrumb-title: Data Governance-Framework anwenden
 description: In dieser Lektion wenden Sie das Data Governance-Framework auf die Daten an, die Sie in Ihre Sandbox aufgenommen haben.
 role: Data Architect
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 8%
 
 ---
 
-# Anwenden des Data Governance-Frameworks
+# Data Governance-Framework anwenden
 
 <!--15min-->
 
 In dieser Lektion wenden Sie das Data Governance-Framework auf die Daten an, die Sie in Ihre Sandbox aufgenommen haben.
 
-Mit Data Governance in Adobe Experience Platform können Sie Kundendaten verwalten und bei der Verwendung von Daten die Einhaltung von Vorschriften, Einschränkungen und Richtlinien sicherstellen. Sie spielt in der Experience Platform auf verschiedenen Ebenen eine Schlüsselrolle, einschließlich der Steuerung der Datennutzung.
+Mit Data Governance in Adobe Experience Platform können Sie Kundendaten verwalten und bei der Verwendung von Daten die Einhaltung von Vorschriften, Einschränkungen und Richtlinien sicherstellen. Es spielt eine Schlüsselrolle beim Experience Platform auf verschiedenen Ebenen, einschließlich der Steuerung der Datennutzung.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich diese kurzen Videos über Data Governance an:
->[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
 
 <!--
 ## Permissions required
@@ -50,7 +50,7 @@ Der erste Schritt im Data Governance-Prozess besteht darin, Governance-Beschrift
 1. Wählen Sie in der Benutzeroberfläche von Platform die Option **[!UICONTROL Richtlinien]** in der linken Navigation
 1. Navigieren Sie zu **[!UICONTROL Bezeichnungen]** um alle Bezeichnungen im Konto anzuzeigen.
 
-Es gibt viele native Beschriftungen. Zusätzlich können Sie Ihre eigenen über die [!UICONTROL Titel erstellen] Schaltfläche. Es gibt drei Haupttypen: [!UICONTROL Vertragsbezeichnungen], [!UICONTROL Identitätsbezeichnungen]und [!UICONTROL Vertrauliche Beschriftungen] die häufig Ursachen für Dateneinschränkungen entsprechen. Jede Bezeichnung verfügt über eine [!UICONTROL Anzeigename] und eine kurze [!UICONTROL Name] ist nur eine Abkürzung des Typs und einer Zahl. Beispiel: die [!DNL C1] Der Titel ist für &quot;Kein Export durch Dritte&quot; bestimmt, was wir für unsere Loyalitätspolitik brauchen.
+Es gibt viele native Beschriftungen. Zusätzlich können Sie Ihre eigenen über die [!UICONTROL Titel erstellen] Schaltfläche. Es gibt drei Haupttypen: [!UICONTROL Vertragsbezeichnungen], [!UICONTROL Identitätsbezeichnungen], und [!UICONTROL Vertrauliche Beschriftungen] die häufig Ursachen für Dateneinschränkungen entsprechen. Jede Beschriftung verfügt über eine [!UICONTROL Anzeigename] und eine kurze [!UICONTROL Name] ist nur eine Abkürzung des Typs und einer Zahl. Beispiel: die [!DNL C1] Der Titel ist für &quot;Kein Export durch Dritte&quot; bestimmt, was wir für unsere Loyalitätspolitik brauchen.
 
 ![Data Governance-Beschriftung](assets/governance-policies.png)
 
@@ -59,7 +59,7 @@ Jetzt ist es an der Zeit, die Daten zu kennzeichnen, deren Nutzung wir beschrän
 1. Wählen Sie in der Benutzeroberfläche von Platform die Option **[!UICONTROL Datensätze]** in der linken Navigation
 1. Öffnen Sie `Luma Loyalty Dataset`
 1. Navigieren Sie zu **[!UICONTROL Data Governance]** tab
-1. Sie können entweder Bezeichnungen auf einzelne Felder anwenden oder sie auf den gesamten Datensatz anwenden. Wir wenden die Bezeichnung auf den gesamten Datensatz an. Klicken Sie auf das Stiftsymbol. Wenn das Symbol nicht angezeigt wird, versuchen Sie, den Browser zu erweitern oder scrollen Sie im mittleren Bereich nach rechts.
+1. Sie können entweder Bezeichnungen auf einzelne Felder anwenden oder sie auf den gesamten Datensatz anwenden. Wir wenden die Bezeichnung auf den gesamten Datensatz an. Klicken Sie auf das Stiftsymbol. Wenn das Symbol nicht angezeigt wird, versuchen Sie, den Browser breiter zu gestalten oder scrollen Sie im mittleren Bereich nach rechts.
    ![Data Governance](assets/governance-dataset.png)
 1. Erweitern Sie im Modal die **[!UICONTROL Vertragsbezeichnungen]** und überprüfen Sie die **[!UICONTROL C2]** label
 1. Wählen Sie die **[!UICONTROL Änderungen speichern]** button
@@ -73,10 +73,10 @@ Jetzt ist es an der Zeit, die Daten zu kennzeichnen, deren Nutzung wir beschrän
 
 ## Data Governance-Richtlinien erstellen
 
-Nachdem unsere Daten jetzt gekennzeichnet sind, können wir eine Richtlinie erstellen.
+Nachdem unsere Daten jetzt beschriftet sind, können wir eine Richtlinie erstellen.
 
 1. Wählen Sie in der Benutzeroberfläche von Platform die Option **[!UICONTROL Richtlinien]** in der linken Navigation
-1. Auf der Registerkarte Durchsuchen gibt es bereits eine vordefinierte Richtlinie namens &quot;Exportbeschränkung von Drittanbietern&quot;, die die Bezeichnung C2 mit der Marketing-Aktion verknüpft [!UICONTROL Export in Dritte]—genau was wir brauchen!
+1. Auf der Registerkarte Durchsuchen gibt es bereits eine vordefinierte Richtlinie namens &quot;Exportbeschränkung von Drittanbietern&quot;, die die Bezeichnung C2 mit der Marketing-Aktion verknüpft [!UICONTROL Exportieren in Dritte]—genau was wir brauchen!
 1. Wählen Sie die Richtlinie aus und aktivieren Sie sie dann über die **[!UICONTROL Richtlinienstatus]** Umschalten
    ![Data Governance](assets/governance-enablePolicy.png)
 
@@ -92,7 +92,7 @@ Die Durchsetzung von Governance-Strategien ist offensichtlich ein Schlüsselelem
 ## Weitere Ressourcen
 
 * [Data Governance-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=de)
-* [Referenz zur DataSet Service-API](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
+* [Referenz zur Datensatz Service-API](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
 * [Referenz zur Governance Policy Service-API](https://www.adobe.io/experience-platform-apis/references/policy-service/)
 
 Gehen wir nun zu [Abfragedienst](run-queries.md).

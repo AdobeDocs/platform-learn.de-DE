@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-4337
 thumbnail: 32806.jpg
 exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Wichtige Anwendungsfälle von Adobe Experience Platform
 
-Verschaffen Sie sich einen Überblick über die vier wichtigsten Anwendungsfälle von Experience Platform: Echtzeit-Kundendatenplattform, Customer Journey Intelligence, Bereitstellung und kanalübergreifendes Erlebnis sowie Anwendungsentwicklung für Kundenerlebnisse.
+Verschaffen Sie sich einen Überblick über die vier wichtigsten Anwendungsfälle von Experience Platform - Echtzeit-Kundendatenplattform, Customer Journey Intelligence, Bereitstellung und kanalübergreifendes Erlebnis sowie Anwendungsentwicklung für Kundenerlebnisse.
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on)
 

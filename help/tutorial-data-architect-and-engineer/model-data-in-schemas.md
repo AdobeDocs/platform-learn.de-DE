@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 10%
@@ -24,7 +24,7 @@ Standardisierung und Interoperabilität sind Schlüsselkonzepte von Adobe Experi
 
 XDM ist eine öffentlich dokumentierte Spezifikation, die die Leistungsfähigkeit digitaler Erlebnisse verbessern soll. Es bietet allgemeine Strukturen und Definitionen für Anwendungen, die zur Kommunikation mit Platform-Diensten verwendet werden. Durch die Einhaltung von XDM-Standards können alle Kundenerlebnisdaten in ein gemeinsames System integriert werden, wodurch Erkenntnisse schneller und besser integriert verfügbar werden. Sie können wertvolle Einblicke durch Kundenaktionen gewinnen, Zielgruppen mithilfe von Segmenten definieren und Kundenattribute zur Personalisierung verwenden.
 
-XDM ist das zugrunde liegende System, auf Basis dessen Adobe Experience Cloud als Teil von Experience Platform die richtige Botschaft der richtigen Person zur richtigen Zeit auf dem passenden Kanal präsentieren kann. die Methode, auf der die Experience Platform beruht, **XDM-System** implementiert Experience-Datenmodell-Schemas für die Verwendung durch Platform-Dienste.
+XDM ist das zugrunde liegende System, auf Basis dessen Adobe Experience Cloud als Teil von Experience Platform die richtige Botschaft der richtigen Person zur richtigen Zeit auf dem passenden Kanal präsentieren kann. die Methode, auf der Experience Platform aufgebaut ist, **XDM-System** implementiert Experience-Datenmodell-Schemas für die Verwendung durch Platform-Dienste.
 
 <!--
 This seems too lengthy. The video should suffice
@@ -43,11 +43,11 @@ Key terms:
 **Datenarchitekten** müssen außerhalb dieses Tutorials Schemas erstellen, jedoch **Dateningenieure** arbeitet eng mit den Schemas zusammen, die vom Data Architect erstellt wurden.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Schemas und das Experience-Datenmodell (XDM) zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
 
 >[!TIP]
 >
-> Für einen tieferen Einblick in die Datenmodellierung in Experience Platform empfehlen wir, diesen Kurs zu absolvieren [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de), kostenlos auf Experience League!
+> Für einen tieferen Einblick in die Datenmodellierung in Experience Platform empfehlen wir, den Kurs zu verfolgen [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de), kostenlos auf Experience League!
 
 ## Erforderliche Berechtigungen
 
@@ -72,12 +72,12 @@ In dieser Übung erstellen wir ein Schema für die Treuedaten von Luma.
 1. Wechseln Sie zur Benutzeroberfläche von Platform und stellen Sie sicher, dass Ihre Sandbox ausgewählt ist.
 1. Navigieren Sie zu **[!UICONTROL Schemas]** in der linken Navigation
 1. Klicken Sie auf **[!UICONTROL Schema erstellen]** oben rechts
-1. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL XDM Individual Profile]**, da wir Attribute eines einzelnen Kunden modellieren werden (Punkte, Status usw.).
+1. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Individuelles XDM-Profil]**, da wir Attribute eines einzelnen Kunden modellieren werden (Punkte, Status usw.).
    ![Schema mit OOTB-Feldergruppe](assets/schemas-loyaltyCreateSchema.png)
 
 ### Standardfeldgruppen hinzufügen
 
-Als Nächstes werden Sie aufgefordert, dem Schema Feldergruppen hinzuzufügen. Alle Felder müssen mithilfe von Gruppen zu Schemas hinzugefügt werden. Sie können aus einem großen Satz von Feldergruppen mit Industriestandard wählen, die von Adobe bereitgestellt werden, oder eine eigene erstellen. Wenn Sie mit der Modellierung Ihrer eigenen Daten in Experience Platform beginnen, sollten Sie sich mit den branchenüblichen Feldergruppen vertraut machen, die von Adobe bereitgestellt werden. Wenn möglich, empfiehlt es sich, sie zu verwenden, da sie manchmal nachgelagerte Dienste wie Customer AI, Attribution AI und Adobe Analytics betreiben.
+Als Nächstes werden Sie aufgefordert, dem Schema Feldergruppen hinzuzufügen. Alle Felder müssen mithilfe von Gruppen zu Schemas hinzugefügt werden. Sie können aus einem großen Satz von branchenüblichen Feldergruppen wählen, die von Adobe bereitgestellt werden, oder Ihre eigenen erstellen. Wenn Sie mit der Modellierung Ihrer eigenen Daten im Experience Platform beginnen, sollten Sie sich mit den branchenüblichen Feldergruppen von Adobe vertraut machen. Wenn möglich, empfiehlt es sich, sie zu verwenden, da sie manchmal nachgelagerte Dienste wie Customer AI, Attribution AI und Adobe Analytics betreiben.
 
 Beim Arbeiten mit Ihren eigenen Daten besteht ein großer Schritt darin, zu bestimmen, welche Ihrer eigenen Daten in Platform erfasst und wie sie modelliert werden sollen. Dieses große Thema wird im Laufe des Kurses eingehender diskutiert [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de). In diesem Tutorial werde ich Sie lediglich durch die Implementierung einiger vorab festgelegter Schemas führen.
 
@@ -151,9 +151,9 @@ Ihre neue Feldergruppe sollte wie folgt aussehen: Wählen Sie die **[!UICONTROL 
 
 ## Erstellen eines Datentyps
 
-Feldergruppen, z. B. Ihre neue `Luma Identity profile field group`kann in anderen Schemas wiederverwendet werden, sodass Sie Standarddatendefinitionen über mehrere Systeme hinweg erzwingen können. Aber sie können nur wiederverwendet werden _in Schemas, die eine Klasse gemeinsam haben_, in diesem Fall die Klasse &quot;XDM Individual Profile&quot;.
+Feldergruppen, z. B. Ihre neue `Luma Identity profile field group`kann in anderen Schemas wiederverwendet werden, sodass Sie Standarddatendefinitionen über mehrere Systeme hinweg erzwingen können. Aber sie können nur wiederverwendet werden _in Schemas, die eine Klasse gemeinsam haben_, in diesem Fall die Klasse XDM Individual Profile .
 
-Der Datentyp ist ein weiteres Konstrukt mit mehreren Feldern, das in Schemas wiederverwendet werden kann _über mehrere Klassen hinweg_. Konvertieren wir unsere neue `systemIdentifier` Objekt in einen Datentyp ein:
+Der Datentyp ist ein weiteres Konstrukt mit mehreren Feldern, das in Schemas wiederverwendet werden kann _mehrere Klassen_. Konvertieren wir unsere neue `systemIdentifier` Objekt in einen Datentyp ein:
 
 Mit dem `Luma Loyalty Schema` weiterhin geöffnet sein, wählen Sie die `systemIdentifier` Objekt und auswählen  **[!UICONTROL In neuen Datentyp konvertieren]**
 
@@ -172,14 +172,14 @@ Jetzt erstellen wir ein Schema mit der API.
 >
 > Wenn Sie die API-Übung lieber überspringen möchten, können Sie das folgende Schema mithilfe der Methode der Benutzeroberfläche erstellen:
 >
-> 1. Verwenden Sie die [!UICONTROL XDM Individual Profile] class
+> 1. Verwenden Sie die [!UICONTROL Individuelles XDM-Profil] class
 > 1. Benennen Sie sie `Luma CRM Schema`
-> 1. Verwenden Sie die folgenden Feldergruppen: Feldergruppe &quot;Demografische Details&quot;, &quot;Persönliche Kontaktdetails&quot;und &quot;Luma-Identitätsprofil&quot;
+> 1. Verwenden Sie die folgenden Feldergruppen: demografische Details, persönliche Kontaktdetails und Profilgruppe &quot;Luma Identity&quot;
 
 Zuerst erstellen wir ein leeres Schema:
 
 1. Öffnen [!DNL Postman]
-1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern.
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen **Senden** , um ein neues Zugriffstoken anzufordern.
 1. Öffnen Sie Ihre Umgebungsvariablen und ändern Sie den Wert von **CONTAINER_ID** von `global` nach `tenant`. Denken Sie daran, dass Sie `tenant` wann immer Sie mit Ihren eigenen benutzerdefinierten Elementen in Platform interagieren möchten, z. B. beim Erstellen eines Schemas.
 1. Wählen Sie **Speichern** aus
    ![CONTAINER_ID in Mandanten ändern](assets/schemas-crm-changeContainerId.png)
@@ -216,9 +216,9 @@ Zuerst erstellen wir ein leeres Schema:
 >
 > Häufige Probleme mit diesem Aufruf und mögliche Fehlerbehebungen:
 >
-> * Kein Authentifizierungstoken: Führen Sie die **OAuth: Zugriffstoken anfordern** Anfrage zum Generieren eines neuen Tokens
+> * No auth token: Führen Sie den **OAuth: Zugriffstoken anfordern** Anfrage zum Generieren eines neuen Tokens
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Aktualisieren Sie die **CONTAINER_ID** Umgebungsvariable aus `global` nach `tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Benutzerberechtigungen in der Admin Console überprüfen
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Überprüfen Sie Ihre Benutzerberechtigungen in der Admin Console.
 
 ### Standardfeldgruppen hinzufügen
 
@@ -260,7 +260,7 @@ Fügen wir nun unsere `Luma Identity profile field group` zum Schema. Zunächst 
 1. Grab die `$id` Wert der `Luma Identity profile field group` (Ihr unterscheidet sich vom Wert in diesem Screenshot)
    ![Liste von Feldergruppen abrufen](assets/schemas-crm-getListOfMixins.png)
 1. Anfrage öffnen **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]** repeat
-1. Die **Parameter** -Registerkarte sollte weiterhin enthalten sein. `$id` Ihres Schemas
+1. Die **Parameter** -Registerkarte sollte weiterhin enthalten sein `$id` Ihres Schemas
 1. Öffnen Sie die **body** und fügen Sie den folgenden Code ein, ersetzen Sie die `$ref` -Wert durch `$id` Ihres eigenen `Luma Identity profile field group`:
 
    ```json
@@ -317,12 +317,12 @@ Jetzt erstellen wir ein weiteres Schema für die Website-Daten von Luma. An dies
 
 Wählen Sie die **[!UICONTROL Ereignis für Kundenerlebnisse]** Feldergruppe. Diese Feldergruppe enthält die Commerce- und productListItems-Objekte, die sich auch in [!UICONTROL Commerce-Details]. Tatsächlich [!UICONTROL Ereignis für Kundenerlebnisse] ist eine Kombination aus mehreren anderen Standardfeldgruppen, die auch separat verfügbar sind. [!UICONTROL ExperienceEvent-Mixin für das AEP Web SDK] Feldergruppe enthält auch andere Feldergruppen, darunter einige der gleichen in [!UICONTROL Ereignis für Kundenerlebnisse]. Glücklicherweise verschmelzen sie sich nahtlos.
 
-Beachten Sie, dass wir die `Luma Identity ExperienceEvent field group` auf dieses Schema verweist. Dies liegt daran, dass das Web SDK eine andere Methode zur Erfassung von Identitäten hat. Wenn Sie die **[!UICONTROL XDM ExperienceEvent]** -Klasse in **[!UICONTROL Komposition]** -Abschnitt des Schema-Editors sehen Sie, dass eines der standardmäßig hinzugefügten Felder **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] wird von verschiedenen Adobe Apps verwendet, um eine Verbindung zu Platform herzustellen. In der Streaming-Erfassung sehen Sie, wie Identitäten über identityMap an Platform gesendet werden.
+Beachten Sie, dass wir die `Luma Identity ExperienceEvent field group` auf dieses Schema verweist. Dies liegt daran, dass das Web SDK eine andere Methode zur Erfassung von Identitäten hat. Wenn Sie die **[!UICONTROL XDM ExperienceEvent]** -Klasse in **[!UICONTROL Komposition]** -Abschnitt des Schema-Editors sehen Sie, dass eines der standardmäßig hinzugefügten Felder **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] wird von verschiedenen Adobe-Applikationen verwendet, um eine Verbindung zu Platform herzustellen. In der Streaming-Erfassung sehen Sie, wie Identitäten über identityMap an Platform gesendet werden.
 
 
 ## Produktkatalog-Schema erstellen
 
-Durch Verwendung der Variablen  [!UICONTROL Commerce-Details] und [!UICONTROL Ereignis für Kundenerlebnisse] -Feldergruppen, meldet Luma einige Details produktbezogener Ereignisse über den standardmäßigen Datentyp productListItems . Sie verfügen jedoch auch über zusätzliche Produktdetailfelder, die sie an Platform senden möchten. Anstatt alle diese Felder in ihren Point-of-Sale- und E-Commerce-Systemen zu erfassen, würde Luma diese Felder lieber direkt aus ihrem Produktkatalogsystem aufnehmen. Mit einer &quot;Schemabeziehung&quot;können Sie eine Beziehung zwischen zwei Schemas zum Zweck der Klassifizierung oder Suche definieren. Luma wird eine Beziehung verwenden, um ihre Produktdetails zu klassifizieren. Wir werden den Prozess jetzt beginnen und am Ende der nächsten Lektion abschließen.
+Durch Verwendung der Variablen  [!UICONTROL Commerce-Details] und [!UICONTROL Ereignis für Kundenerlebnisse] -Feldergruppen, meldet Luma einige Details produktbezogener Ereignisse über den standardmäßigen Datentyp productListItems . Sie verfügen jedoch auch über zusätzliche Produktdetailfelder, die sie an Platform senden möchten. Anstatt alle diese Felder in ihren Point-of-Sale- und E-Commerce-Systemen zu erfassen, würde Luma es vorziehen, diese Felder direkt aus ihrem Produktkatalogsystem zu erfassen. Mit einer &quot;Schemabeziehung&quot;können Sie eine Beziehung zwischen zwei Schemas zum Zweck der Klassifizierung oder Suche definieren. Luma wird eine Beziehung verwenden, um ihre Produktdetails zu klassifizieren. Wir werden den Prozess jetzt beginnen und am Ende der nächsten Lektion abschließen.
 
 >[!NOTE]
 >
@@ -338,12 +338,12 @@ Zunächst müssen wir ein Schema für den Produktkatalog von Luma mithilfe einer
 1. Wählen Sie die **[!UICONTROL Klasse zuweisen]** button
    ![Neue Klasse erstellen](assets/schemas-productClass.png)
 1. Erstellen Sie eine neue [!UICONTROL Feldergruppe] aufgerufen `Luma Product Catalog field group` mit den folgenden Feldern:
-   1. productName: Produktname: Zeichenfolge
-   1. productCategory: Produktkategorie: Zeichenfolge
-   1. productColor: Produktfarbe: Zeichenfolge
-   1. productSku: Produkt-SKU: Zeichenfolge | Erforderlich
+   1. productName: Product Name: String
+   1. productCategory: Product Category: String
+   1. productColor: Product Color: String
+   1. productSku: Product SKU: String | Erforderlich
    1. productSize: Produktgröße: Zeichenfolge
-   1. productPrice: Produktpreis: Double
+   1. productPrice: Product Price: Double
 1. Benennen Sie das Schema. `Luma Product Catalog Schema` (Achten Sie darauf, das richtige Feld zu aktualisieren und den Klassennamen nicht zu aktualisieren)
 1. **** Schema speichern
 

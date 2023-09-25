@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 41%
@@ -20,11 +20,11 @@ ht-degree: 41%
 
 Erfahren Sie, wie Kunden mit dem Adobe Experience Platform Web SDK und Edge Network unter Verwendung einer einzigen JavaScript-Bibliothek und eines einzigen Beacon Daten an Adobe-Anwendungen und Drittanbieter-Ziele senden.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
 
 >[!NOTE]
 >
->Dieses Video ist ein Auszug aus der Adobe Summit-Sitzung 2020 *[Erfüllen Sie Alloy.js und niemals Tags für eine eVar oder Mbox erneut](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Dieses Video ist ein Auszug aus der Adobe Summit 2020-Sitzung *[Erfüllen Sie Alloy.js und niemals Tags für eine eVar oder Mbox erneut.](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
 >
 >Die in diesem Video beschriebene serverseitige Weiterleitungsfunktion ist jetzt für alle lizenzierten Kunden allgemein verfügbar. Siehe [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
 

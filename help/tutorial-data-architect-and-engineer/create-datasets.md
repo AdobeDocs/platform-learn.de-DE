@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 10%
@@ -26,7 +26,7 @@ Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, wer
 **Datenarchitekten** müssen Datensätze außerhalb dieses Tutorials erstellen.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Datensätze zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
 
 ## Erforderliche Berechtigungen
 
@@ -69,14 +69,14 @@ Erstellen Sie nun die `Luma CRM Dataset` die API verwenden.
 
 >[!NOTE]
 >
->Wenn Sie die API-Übung überspringen und die `Luma CRM Dataset` in der Benutzeroberfläche ist das in Ordnung. Benennen Sie ihn `Luma CRM Dataset` und verwenden Sie `Luma CRM Schema`.
+>Wenn Sie die API-Übung überspringen und die `Luma CRM Dataset` in der -Benutzeroberfläche. Benennen Sie ihn `Luma CRM Dataset` und verwenden Sie `Luma CRM Schema`.
 
-### Rufen Sie die ID des Schemas ab, das im Datensatz verwendet werden soll
+### Abrufen der ID des Schemas, das im Datensatz verwendet werden soll
 
 Zuerst müssen wir die `$id` des `Luma CRM Schema`:
 
 1. Öffnen [!DNL Postman]
-1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** , um ein neues Zugriffstoken anzufordern, genau wie Sie es in der [!DNL Postman] Lektion.
+1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage **[!DNL OAuth: Request Access Token]** und wählen **Senden** , um ein neues Zugriffstoken anzufordern, genau wie Sie es in der [!DNL Postman] Lektion.
 1. Anfrage öffnen **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Wählen Sie die **Senden** button
 1. Sie sollten eine 200-Antwort erhalten
@@ -87,7 +87,7 @@ Zuerst müssen wir die `$id` des `Luma CRM Schema`:
 
 Jetzt können Sie den Datensatz erstellen:
 
-1. Download [Catalog Service API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) auf `Luma Tutorial Assets` Ordner.
+1. Herunterladen [Catalog Service API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) auf `Luma Tutorial Assets` Ordner.
 1. Importieren Sie die Sammlung in [!DNL Postman]
 1. Anforderung auswählen **[!DNL Catalog Service API > Datasets > Create a new dataset.]**
 1. Fügen Sie Folgendes als **body** des Antrags, ***Ersetzen des ID-Werts durch Ihren eigenen***:
@@ -117,9 +117,9 @@ Jetzt können Sie den Datensatz erstellen:
 > Häufige Probleme, die diese Anfrage verursachen, und mögliche Fehlerbehebungen:
 >
 > * `400: There was a problem retrieving xdm schema`. Stellen Sie sicher, dass Sie die ID im obigen Beispiel durch die ID Ihrer eigenen ersetzt haben. `Luma CRM Schema`
-> * Kein Authentifizierungstoken: Führen Sie die **OAuth: Zugriffstoken anfordern** Anfrage zum Generieren eines neuen Tokens
+> * No auth token: Führen Sie den **OAuth: Zugriffstoken anfordern** Anfrage zum Generieren eines neuen Tokens
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Aktualisieren Sie die **CONTAINER_ID** Umgebungsvariable aus `global` nach `tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Benutzerberechtigungen in der Admin Console überprüfen
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Überprüfen Sie Ihre Benutzerberechtigungen in der Admin Console.
 
 
 Sie können zum **[!UICONTROL Datensätze]** in der Platform-Benutzeroberfläche können Sie die erfolgreiche Erstellung aller fünf Datensätze überprüfen!

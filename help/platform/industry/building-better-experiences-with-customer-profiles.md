@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 thumbnail: 336939.jpg
 jira: KT-8866
 exl-id: df81b1f4-4d60-4b07-aa4f-4ddc38ed4b6b
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Um ein hervorragendes Kundenerlebnis zu bieten, müssen wir über unsere Kunden Bescheid wissen. Wenn wir alles, was wir über einen Kunden wissen, in einem Echtzeit-Kundenprofil zusammenführen, können wir ihm ein Erlebnis bieten, das ihn für weitere Informationen zurück hält.
 
->[!VIDEO](https://video.tv.adobe.com/v/336939/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336939/?learn=on)

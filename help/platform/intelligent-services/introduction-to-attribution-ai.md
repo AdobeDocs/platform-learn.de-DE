@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-4808
 thumbnail: 32667.jpg
 exl-id: abb4a09d-7cb6-4cb8-a49d-9a6f4a654a52
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%
@@ -16,8 +16,6 @@ ht-degree: 0%
 
 # Einführung in Attribution AI
 
-Eine allgemeine Übersicht darüber, wie Marketingexperten und Analysten Attribution AI verwenden können, um die Auswirkungen ihrer Marketingkanäle und Kampagnen zu verstehen.
+Eine allgemeine Übersicht darüber, wie Marketingexperten und Analysten Attribution AI verwenden können, um die Auswirkungen ihrer Marketingkanäle und Kampagnen zu verstehen. Weitere Informationen finden Sie unter [Dokumentation zu Attribution AIS](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/32667?quality=12&learn=on)
-
-Weitere Informationen finden Sie unter [Dokumentation zu Attribution AIS](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)
+>[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on)

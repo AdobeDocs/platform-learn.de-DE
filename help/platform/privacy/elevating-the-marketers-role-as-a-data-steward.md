@@ -9,7 +9,7 @@ thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 18%
@@ -22,6 +22,6 @@ Die Rolle des &quot;Data Steward&quot;erstreckt sich über verschiedene Diszipli
 
 * Beispiele für die Verwaltung von Kundendaten in einem Marketing-Kontext der Erfassung, Segmentierung und Aktivierung von Zielgruppen
 * So integrieren Sie einwilligungsbasierte Strategien, die zum Vertrauen der Verbraucher führen und nahtlos in die Journey integriert werden können
-* Data Steward-Verantwortlichkeiten innerhalb der Rolle des Marketingexperten mit Effizienz und Konfidenz
+* Data Steward-Verantwortlichkeiten innerhalb der Rolle des Marketingexperten mit Effizienz und Vertrauen
 
->[!VIDEO](https://video.tv.adobe.com/v/338292/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on)

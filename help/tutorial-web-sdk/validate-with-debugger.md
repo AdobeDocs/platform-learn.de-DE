@@ -1,27 +1,27 @@
 ---
-title: Validieren von Web SDK-Implementierungen mit Experience Platform Debugger
-description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+title: WebSDK-Implementierungen mit Experience Platform Debugger validieren
+description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 6%
 
 ---
 
-# Validieren von Web SDK-Implementierungen mit Experience Platform Debugger
+# WebSDK-Implementierungen mit Experience Platform Debugger validieren
 
 Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren.
 
-Der Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die auf Ihren Webseiten implementierte Adobe zu sehen. Laden Sie die Version für Ihren bevorzugten Browser herunter:
+Der Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die auf Ihren Webseiten implementierte Adobe-Technologie zu sehen. Laden Sie die Version für Ihren bevorzugten Browser herunter:
 
 * [Firefox-Erweiterung](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Wenn Sie den Debugger noch nie verwendet haben und dieser sich vom älteren Adobe Experience Cloud Debugger unterscheidet, sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 In dieser Lektion verwenden Sie die [Adobe Experience Cloud Debugger-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) , um die Tag-Eigenschaft zu ersetzen, die auf der fest codiert ist. [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) mit Ihrer eigenen Eigenschaft.
 
@@ -38,7 +38,7 @@ Am Ende dieser Lektion können Sie den Debugger für Folgendes verwenden:
 
 Sie kennen Datenerfassungs-Tags und die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und haben die folgenden vorherigen Lektionen im Tutorial abgeschlossen:
 
-* [Berechtigungen konfigurieren](configure-permissions.md)
+* [Konfigurieren von Berechtigungen](configure-permissions.md)
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
 * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -55,11 +55,11 @@ Dieses Tutorial verwendet eine öffentlich gehostete Version des [Demowebsite f�
 
 Der Experience Platform Debugger verfügt über eine coole Funktion, mit der Sie eine vorhandene Tag-Bibliothek durch eine andere ersetzen können. Diese Technik ist für die Validierung nützlich und ermöglicht es uns, viele Implementierungsschritte in diesem Tutorial zu überspringen.
 
-1. Stellen Sie sicher, dass die Site &quot;Luma&quot;geöffnet ist, und wählen Sie das Symbol für die Erweiterung &quot;Experience Platform Debugger&quot;
+1. Stellen Sie sicher, dass die Site &quot;Luma&quot;geöffnet ist, und wählen Sie das Symbol für die Experience Platform Debugger-Erweiterung aus.
 1. Der Debugger wird geöffnet und zeigt einige Details zur hartcodierten Implementierung an, die nicht mit diesem Tutorial in Zusammenhang steht (Sie müssen die Site &quot;Luma&quot;möglicherweise neu laden, nachdem Sie den Debugger geöffnet haben).
 1. Vergewissern Sie sich, dass der Debugger &quot;**[!UICONTROL Verbunden mit Luma]**&quot;, wie unten dargestellt, und wählen Sie dann &quot;**[!UICONTROL lock]**&quot;, um den Debugger mit der Site &quot;Luma&quot;zu sperren.
 1. Wählen Sie die **[!UICONTROL Anmelden]** und melden Sie sich mit Ihrer Adobe ID bei Adobe Experience Cloud an.
-1. Gehen Sie jetzt zu **[!UICONTROL Experience Platform Tags]** in der linken Navigation
+1. Gehen Sie jetzt zu **[!UICONTROL Experience Platform-Tags]** in der linken Navigation
 
    ![Debugger-Tag-Bildschirm](assets/validate-launch-screen.png)
 
@@ -68,8 +68,8 @@ Der Experience Platform Debugger verfügt über eine coole Funktion, mit der Sie
 
    ![Aktionen auswählen > Ersetzen](assets/validate-switch-environment.png)
 
-1. Da Sie authentifiziert sind, ruft der Debugger Ihre verfügbaren Tag-Eigenschaften und -Umgebungen ab. Wählen Sie Ihre `Web SDK Course` property
-1. Wählen Sie Ihre `Development` Umgebung
+1. Da Sie authentifiziert sind, ruft der Debugger Ihre verfügbaren Tag-Eigenschaften und -Umgebungen ab. Wählen Sie `Web SDK Course` property
+1. Wählen Sie `Development` Umgebung
 1. Wählen Sie die **[!UICONTROL Anwenden]** button
 
    ![Auswählen der alternativen Tag-Eigenschaft](assets/validate-switch-selection.png)
@@ -80,7 +80,7 @@ Der Experience Platform Debugger verfügt über eine coole Funktion, mit der Sie
 
 Während Sie das Tutorial fortsetzen, verwenden Sie diese Methode, um die Site &quot;Luma&quot;Ihrer eigenen Tag-Eigenschaft zuzuordnen und Ihre Platform Web SDK-Implementierung zu validieren. Wenn Sie mit der Verwendung von Tags auf Ihrer Produktions-Website beginnen, können Sie dieselbe Methode verwenden, um Änderungen zu validieren.
 
-## Validieren der Implementierung in Experience Platform Debugger
+## Überprüfen der Implementierung im Experience Platform Debugger
 
 Sie können den Debugger verwenden, um Ihre Platform Web SDK-Implementierung zu validieren und die an Platform Edge Network gesendeten Daten anzuzeigen:
 
@@ -97,7 +97,7 @@ Sie können den Debugger verwenden, um Ihre Platform Web SDK-Implementierung zu 
 
    ![Ereignisdetails](assets/validate-event-pageViews.png)
 
-1. Scrollen Sie nach unten zum `web` -Objekt, wählen Sie aus, um es zu öffnen und die `webPageDetails.name`, `webPageDetails.server`und `webPageDetails.siteSection`. Sie sollten mit den entsprechenden DigitalData-Datenschichtvariablen auf der Homepage übereinstimmen.
+1. Scrollen Sie nach unten zum `web` -Objekt, wählen Sie aus, um es zu öffnen und die `webPageDetails.name`, `webPageDetails.server`, und `webPageDetails.siteSection`. Sie sollten mit den entsprechenden digitalen Datenschichtvariablen auf der Homepage übereinstimmen.
 
    ![Registerkarte „Netzwerk“](assets/validate-xdm-content.png)
 
@@ -115,7 +115,7 @@ Sie können auch die Identitätszuordnungsdetails überprüfen:
 
    ![Web SDK in Debugger](assets/identity-deugger-websdk-event-dark.png)
 
-1. Suchen Sie nach **identityMap** innerhalb des Popup-Fensters. Hier sollten Sie Folgendes sehen: `lumaCrmId` mit drei Schlüsseln von authenticatedState, id und primary:
+1. Suchen Sie nach **identityMap** innerhalb des Popup-Fensters. Hier sollten Sie sehen `lumaCrmId` mit drei Schlüsseln von authenticatedState, id und primary:
    ![Web SDK in Debugger](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
 
 
@@ -135,10 +135,10 @@ Diese Arten von Anforderungsdetails sind auch in den Webentwickler-Tools des Bro
    >
    >    Möglicherweise sehen Sie nicht die gleiche Anzahl von Nutzlastanfragen wie im Screenshot oben. Diese Diskrepanz liegt daran, dass zukünftige Lehren für [Einrichten von Target](setup-target.md) zum Zeitpunkt des Screenshots abgeschlossen wurden. Sie können diesen Unterschied vorerst ignorieren.
 
-Da jetzt ein XDM-Objekt auf einer Seite ausgelöst wird und Sie wissen, wie Sie Ihre Datenerfassung überprüfen können, können Sie die einzelnen Adobe Apps mithilfe des Platform Web SDK einrichten.
+Da jetzt ein XDM-Objekt auf einer Seite ausgelöst wird und Sie wissen, wie Sie Ihre Datenerfassung überprüfen können, können Sie die einzelnen Adobe-Anwendungen mithilfe des Platform Web SDK einrichten.
 
 [Weiter: ](setup-experience-platform.md)
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

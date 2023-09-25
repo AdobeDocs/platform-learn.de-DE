@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 63%
@@ -19,7 +19,7 @@ ht-degree: 63%
 
 Erfahren Sie, wie der Adobe Experience Platform Debugger [Chrome-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) und [Firefox-Add-on](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/) unterstützt Sie beim Debugging Ihrer Web-Implementierungen des Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, Tags und mehr.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ## Weitere Ressourcen
 
