@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 906993f14376f7a1a6344436c7068c747d275fb4
+source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 42%
+source-wordcount: '998'
+ht-degree: 43%
 
 ---
 
@@ -38,8 +38,9 @@ ht-degree: 42%
 + [Importieren von Beispieldaten nach Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
    + [Verwenden von Warnhinweisen](/help/platform/admin/use-alerts.md)
-   + [Verwenden von Sandboxes](/help/platform/admin/use-sandboxes.md)
-   + [Konfigurieren der attributbasierten Zugriffskontrolle](/help/platform/admin/configure-attribute-based-access-control.md)
+   + [Verwenden von Sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Kopieren von Objekten zwischen Sandboxes](/help/platform/admin/use-sandboxes.md)
+   + [Konfigurieren der attributbasierten Zugriffssteuerung](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Verwalten von Produktprofilen](/help/platform/admin/managing-product-profiles.md)
 + Zielgruppen und Segmentierung {#audiences}
@@ -113,7 +114,7 @@ ht-degree: 42%
    + [Verbindung zu Zielen herstellen](/help/platform/destinations/connecting-to-destinations.md)
    + [Ziele erstellen und Daten aktivieren](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Profile und Segmente für ein Ziel aktivieren](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
-   + [Konfigurieren eines Datensatzexport-Ziels](/help/platform/destinations/configure-dataset-export-destination.md)
+   + [Konfigurieren eines Datensatz-Exportziels](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Integration mit Google-Kundenabgleich](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Konfigurieren des Azure Blob-Ziels](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [Konfigurieren des Marketo-Ziels](/help/platform/destinations/configure-the-marketo-destination.md)
