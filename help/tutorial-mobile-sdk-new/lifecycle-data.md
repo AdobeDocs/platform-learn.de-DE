@@ -2,9 +2,10 @@
 title: Lebenszyklusdaten erfassen
 description: Erfahren Sie, wie Sie Lebenszyklusdaten in einer mobilen App erfassen.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
@@ -66,13 +67,11 @@ Jetzt können Sie Ihr Projekt aktualisieren, um die Lebenszyklusereignisse zu re
    ```swift
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
-   }
    ```
 
 ## Validierung mit Versicherung
 
-1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md) und verbinden Sie Ihren Simulator oder Ihr Gerät mit Assurance.
-1. Starten Sie die App.
+1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Senden Sie die App in den Hintergrund. Suchen Sie nach **[!UICONTROL LifecyclePause]** -Ereignisse in der Assurance-Benutzeroberfläche.
 1. App in den Vordergrund rücken Suchen Sie nach **[!UICONTROL LifecycleResume]** -Ereignisse in der Assurance-Benutzeroberfläche.
    ![Lebenszyklus überprüfen](assets/lifecycle-lifecycle-assurance.png)
@@ -82,7 +81,7 @@ Jetzt können Sie Ihr Projekt aktualisieren, um die Lebenszyklusereignisse zu re
 
 Die vorherige Übung sendet die Vordergrund- und Hintergrundereignisse an das Adobe Experience Platform Mobile SDK. So leiten Sie diese Ereignisse an das Platform Edge Network weiter:
 
-1. Auswählen **[!UICONTROL Regeln]** in der Datenerfassungs-Benutzeroberfläche.
+1. Auswählen **[!UICONTROL Regeln]** in der Eigenschaft &quot;Tags&quot;.
    ![Regel erstellen](assets/rule-create.png)
 1. Auswählen **[!UICONTROL Ursprünglicher Build]** als zu verwendende Bibliothek.
 1. Wählen Sie **[!UICONTROL Neue Regel erstellen]** aus.

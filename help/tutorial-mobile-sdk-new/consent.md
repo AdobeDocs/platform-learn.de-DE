@@ -3,10 +3,11 @@ title: Implementieren der Zustimmung
 description: Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementieren.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +33,9 @@ In dieser Lektion werden Sie:
 
 Wenn Sie das Tutorial von Anfang an befolgt haben, erinnern Sie sich möglicherweise daran, dass Sie die standardmäßige Zustimmung in der Erweiterung &quot;Einverständnis&quot;auf **[!UICONTROL Ausstehend - Queue-Ereignisse, die auftreten, bevor der Benutzer Zustimmungseinstellungen bereitstellt.]**
 
-Um mit der Datenerfassung zu beginnen, müssen Sie die Zustimmung des Benutzers einholen. In diesem Tutorial erhalten Sie das Einverständnis des Benutzers, indem Sie ihn einfach mit einem Warnhinweis anfordern. In einer realen App möchten Sie die Best Practices für die Zustimmung für Ihre Region konsultieren.
+Um mit der Datenerfassung zu beginnen, müssen Sie die Zustimmung des Benutzers einholen. In einer realen App möchten Sie die Best Practices für die Zustimmung für Ihre Region konsultieren. In diesem Tutorial erhalten Sie das Einverständnis des Benutzers, indem Sie ihn einfach mit einem Warnhinweis anfordern:
 
-1. Sie möchten den Benutzer nur einmal fragen. Daher möchten Sie die Mobile SDK-Zustimmung mit den erforderlichen Berechtigungen zum Tracking mit Apples [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency). In dieser App gehen Sie davon aus, dass der Benutzer bei der Autorisierung des Trackings auch der Erfassung von Ereignissen zustimmt.
+1. Sie möchten den Benutzer nur einmal um Zustimmung bitten. Daher möchten Sie die Mobile SDK-Zustimmung mit den erforderlichen Berechtigungen zum Tracking mit Apples [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency). In dieser App gehen Sie davon aus, dass der Benutzer bei der Autorisierung des Trackings auch der Erfassung von Ereignissen zustimmt.
 
 1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator.
 
@@ -95,9 +96,7 @@ Im obigen Beispiel protokollieren Sie einfach den Zustimmungsstatus in Xcode in 
 
 ## Validierung mit Versicherung
 
-1. Überprüfen Sie die [Assurance](assurance.md) Lektion.
-1. Installieren Sie das Programm.
-1. Starten Sie die App mithilfe der durch die Versicherung generierten URL.
+1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Wenn Sie den obigen Code korrekt hinzugefügt haben, werden Sie aufgefordert, die Zustimmung zu erteilen.
 
    Auswählen **[!UICONTROL Weiter...]** und wählen Sie **[!UICONTROL Zulassen]**.
@@ -107,6 +106,17 @@ Im obigen Beispiel protokollieren Sie einfach den Zustimmungsstatus in Xcode in 
 
 1. Sie sollten eine **[!UICONTROL Zustimmungsantwort abrufen]** -Ereignis in der Assurance-Benutzeroberfläche.
    ![Validieren der Zustimmung](assets/consent-update.png)
+
+
+## Einverständnis zurücksetzen
+
+Wenn Sie die Zustimmung zurücksetzen möchten:
+
+1. Navigieren Sie zu **[!UICONTROL Einstellungen]** in der App.
+
+1. Auswählen **[!UICONTROL App-Einstellungen...]** Dadurch werden die Luma-App-Einstellungen in der iOS-Einstellungsanwendung geöffnet.
+
+1. Umschalten **[!UICONTROL Tracking zulassen]** deaktiviert.
 
 
 

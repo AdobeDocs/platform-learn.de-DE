@@ -3,10 +3,11 @@ title: Erstellen eines XDM-Schemas
 description: Erfahren Sie, wie Sie ein XDM-Schema für App-Ereignisse erstellen.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 17%
+source-wordcount: '1506'
+ht-degree: 16%
 
 ---
 
@@ -96,9 +97,22 @@ Zu Lernzwecken verwenden Sie vordefinierte und benutzerdefinierte Feldergruppen.
 
 1. Auswählen **[!UICONTROL Schema erstellen]**.
 
-1. Auswählen **[!UICONTROL XDM ExperienceEvent]** aus dem Menü.
+1. Im **[!UICONTROL Auswählen einer Klasse]** Schritt des **[!UICONTROL Schema erstellen]** Assistent, wählen Sie **[!UICONTROL Erlebnisereignis]** darunter **[!UICONTROL Basisklasse für dieses Schema auswählen]**.
 
-   ![Auswählen von ExperienceEvent aus der Dropdown-Liste](assets/schema-create.png)
+1. Klicken Sie auf **[!UICONTROL Weiter]**.
+
+   ![Basisklasse des Schema-Assistenten](assets/schema-wizard-base-class.png)
+
+1. Im **[!UICONTROL Name und Überprüfung]** Schritt des **[!UICONTROL Schema erstellen]** Assistenten, geben Sie eine **[!UICONTROL Anzeigename des Schemas]**, beispielsweise `Luma Mobile Event Schema` und [!UICONTROL Beschreibung], beispielsweise `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >Wenn Sie dieses Tutorial mit mehreren Personen in einer Sandbox durchlaufen oder ein freigegebenes Konto verwenden, sollten Sie erwägen, im Rahmen Ihrer Benennungskonventionen eine Identität anzuhängen oder vorzustellen. Verwenden Sie beispielsweise `Luma Mobile App Event Schema - Joe Smith` statt `Luma Mobile App Event Schema`. Siehe auch den Hinweis unter [Übersicht](overview.md).
+
+1. Auswählen **[!UICONTROL Beenden]** , um den Assistenten abzuschließen.
+
+   ![Name des Schemas und Überprüfung](assets/schema-wizard-name-and-review.png)
+
 
 1. Auswählen ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Hinzufügen** neben **[!UICONTROL Feldergruppen]**.
 
@@ -116,16 +130,7 @@ Zu Lernzwecken verwenden Sie vordefinierte und benutzerdefinierte Feldergruppen.
 
    Sie gelangen zurück zum Bildschirm zur Hauptschemakomposition, wo Sie alle verfügbaren Felder sehen können.
 
-1. Geben Sie Ihrem Schema einen Namen, indem Sie **[!UICONTROL Unbenanntes Schema]** aus dem **[!UICONTROL Komposition]** Bereich (unter **[!UICONTROL Schema]**) und die Bereitstellung einer **[!UICONTROL Anzeigename]** &amp; **[!UICONTROL Beschreibung]**, beispielsweise `Luma Mobile App Event Schema` und `Schema for Luma mobile app experience events.`
-
-   >[!NOTE]
-   >
-   >Wenn Sie dieses Tutorial mit mehreren Personen in einer Sandbox durchlaufen oder ein freigegebenes Konto verwenden, sollten Sie erwägen, im Rahmen Ihrer Benennungskonventionen eine Identität anzuhängen oder vorzustellen. Verwenden Sie beispielsweise `Luma Mobile App Event Schema - Joe Smith` statt `Luma Mobile App Event Schema`. Siehe auch den Hinweis unter [Übersicht](overview.md).
-
-
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
-
-   ![Anwenden auswählen](assets/schema-name-save.png)
 
 >[!NOTE]
 >

@@ -5,14 +5,15 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2441'
-ht-degree: 4%
+source-wordcount: '2618'
+ht-degree: 3%
 
 ---
 
-# Angebote erstellen und anzeigen
+# Erstellen und Anzeigen von Angeboten mit der Entscheidungsverwaltung
 
 Erfahren Sie, wie Sie mit dem Experience Platform Mobile SDK Angebote aus Journey Optimizer Decision Management in Ihren mobilen Apps anzeigen können.
 
@@ -101,6 +102,27 @@ So überprüfen Sie Ihre Einrichtung in Assurance:
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Auswählen **[!UICONTROL Einrichtung überprüfen]** in der linken Leiste. Sowohl die Datastream-Einrichtung als auch das SDK-Setup in Ihrer Anwendung werden validiert.
    ![Validierung von AJO-Entscheidungen](assets/ajo-decisioning-validation.png)
+
+
+## Platzierung erstellen
+
+Bevor Sie Angebote erstellen können, müssen Sie definieren, wie und wo diese Angebote in der App platziert werden können. In der Entscheidungsverwaltung definieren Sie zu diesem Zweck Platzierungen und definieren eine Platzierung für den Mobile-Kanal, die eine JSON-Payload unterstützt:
+
+1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche die Option ![Komponenten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Komponenten]** von **[!UICONTROL ENTSCHEIDUNGSVERWALTUNG]** in der linken Leiste.
+
+1. Auswählen **[!UICONTROL Praktika]** aus der oberen Leiste.
+
+1. Wenn keine Platzierung mit dem Namen **[!UICONTROL Mobile JSON]**,  **[!UICONTROL Mobilnummer]** as **[!UICONTROL Kanaltyp]** und **[!UICONTROL JSON]** as **[!UICONTROL Inhaltstyp]** aufgeführt ist, müssen Sie eine Platzierung erstellen. Andernfalls fahren Sie mit [Angebote erstellen](#create-offers).
+
+So erstellen Sie die mobile JSON-Platzierung:
+
+1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Platzierung erstellen.
+
+   1. im **[!UICONTROL Details]** Abschnitt eingeben `Mobile JSON` als **[!UICONTROL Name]** auswählen **[!UICONTROL Mobilnummer]** von **[!UICONTROL Kanaltyp]** und **[!UICONTROL JSON]** von **[!UICONTROL Inhaltstyp]**.
+   1. Auswählen **[!UICONTROL Speichern]** , um die Platzierung zu speichern.
+
+   ![Platzierung erstellen](assets/ajo-create-placement.png)
+
 
 
 ## Angebote erstellen
@@ -354,7 +376,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 
 ## Validieren mit der App
 
-1. Öffnen Sie Ihre App auf einem Gerät oder im Simulator.
+1. Erstellen Sie die App im Simulator oder auf einem physischen Gerät aus Xcode neu und führen Sie sie mithilfe von ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Navigieren Sie zur Registerkarte **[!DNL Personalisation]**.
 
@@ -371,7 +393,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 
 Validieren der Implementierung von Angeboten in Assurance:
 
-1. Navigieren Sie zur Benutzeroberfläche &quot;Assurance&quot;.
+1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Auswählen **[!UICONTROL Konfigurieren]** Wählen Sie in der linken Leiste ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben **[!UICONTROL Überprüfen und Simulieren]** darunter **[!UICONTROL ADOBE JOURNEY OPTIMIZER-ENTSCHEIDUNG]**.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Auswählen **[!UICONTROL Überprüfen und Simulieren]** in der linken Leiste. Beide Datastream-Einstellungen werden validiert und das SDK-Setup in Ihrer Anwendung.

@@ -3,10 +3,11 @@ title: Einrichten der Sicherheit
 description: Erfahren Sie, wie Sie die Assurance-Erweiterung in eine mobile App implementieren.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 5%
+source-wordcount: '962'
+ht-degree: 4%
 
 ---
 
@@ -68,7 +69,7 @@ Bevor Sie die Anwendung zum ersten Mal in Xcode ausführen, müssen Sie die Sign
 
    >[!IMPORTANT]
    >
-   >Stellen Sie sicher, dass Sie eine eindeutige Bundle-Kennung verwenden, die sich von der Standardeinstellung unterscheidet `com.adobe.luma.tutorial.swiftui`  in das Startprojekt eingegeben wurde, da jede Bundle-ID eindeutig sein muss.
+   >Stellen Sie sicher, dass Sie eine _eindeutig_ Bundle-ID und ersetzen Sie `Luma` Bundle-Kennung, da jede Bundle-ID eindeutig sein muss. In der Regel verwenden Sie ein Reverse-DNS-Format für Bundle-ID-Zeichenfolgen, z. B. `com.organization.brand.uniqueidentifier`. Die abgeschlossene Version dieses Tutorials verwendet beispielsweise `com.adobe.luma.tutorial.swiftui`.
 
 
    ![Xcode-Signaturfunktionen](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -91,7 +92,7 @@ Assurance funktioniert durch Öffnen einer URL, entweder über einen Browser ode
 
 ## Herstellen einer Verbindung zu einer Sitzung
 
-1. Führen Sie die Anwendung im Simulator oder auf einem angeschlossenen physischen Gerät aus.
+1. Erstellen Sie die App im Simulator oder auf einem physischen Gerät aus Xcode neu und führen Sie sie mithilfe von ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 1. Auswählen **[!UICONTROL Assurance]** über die linke Leiste in der Datenerfassungs-Benutzeroberfläche.
 1. Auswählen **[!UICONTROL Sitzung erstellen]**.
 1. Auswählen **[!UICONTROL Starten]**.
@@ -133,6 +134,34 @@ Assurance funktioniert durch Öffnen einer URL, entweder über einen Browser ode
          ![Zuverlässigkeitsereignisse](assets/assurance-events.png)
 
 Wenn Sie auf Herausforderungen stoßen, lesen Sie bitte die [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de){target="_blank"}.
+
+
+## Überprüfen von Erweiterungen
+
+So überprüfen Sie, ob Ihre App die aktuellsten Erweiterungen verwendet:
+
+1. Auswählen **[!UICONTROL Konfigurieren]**.
+
+1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) für ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Erweiterungsversionen]**.
+
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+   ![Erweiterungsversionen konfigurieren](assets/assurance-configure-extension-versions.png)
+
+1. Auswählen ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Erweiterungsversionen]**. Es wird ein Überblick über die neuesten verfügbaren Erweiterungen und die in Ihrer Version des Programms verwendeten Erweiterungen angezeigt.
+
+   ![Erweiterungsversionen](assets/assurance-extension-versions.png)
+
+1. So aktualisieren Sie Ihre Erweiterungsversionen (z. B. **[!UICONTROL Messaging]** und **[!UICONTROL Optimieren]**), wählen Sie in Xcode für die spezifischen Erweiterungen, für die ein Upgrade erforderlich ist, das Paket (Erweiterung) aus **[!UICONTROL Paketabhängigkeiten]** (z. B. **[!UICONTROL AGPessaging]**) und wählen Sie im Kontextmenü die Option **[!UICONTROL Paket aktualisieren]**. Xcode aktualisiert die Paketabhängigkeiten.
+
+
+>[!NOTE]
+>
+>Wenn Sie Ihre Erweiterungen (Pakete) in Xcode aktualisiert haben, müssen Sie Ihre aktuelle Sitzung schließen und löschen und alle Schritte von [Herstellen einer Verbindung zu einer Sitzung](#connecting-to-a-session) und [Überprüfen von Erweiterungen](#verify-extensions) , um sicherzustellen, dass die Zuverlässigkeitserklärung die korrekten Erweiterungen in einer neuen Zuverlässigkeitssitzung ordnungsgemäß meldet.
+
+
+
+
 
 >[!SUCCESS]
 >

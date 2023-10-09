@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1563'
 ht-degree: 6%
 
 ---
@@ -32,7 +33,7 @@ Bevor Sie In-App-Nachrichten mit Journey Optimizer senden, müssen Sie sicherste
 * App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
 * Richten Sie die App für Adobe Experience Platform ein.
 * Zugriff auf Journey Optimizer und ausreichende Berechtigungen wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
-   * Verwalten von Kampagnen
+   * Verwalten von Kampagnen.
 * Bezahltes Apple-Entwicklerkonto mit ausreichendem Zugriff zum Erstellen von Zertifikaten, Kennungen und Schlüsseln.
 * Physisches iOS-Gerät oder Simulator zum Testen.
 
@@ -136,9 +137,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 
 ## Validieren der Einrichtung mit Assurance
 
-1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md) Abschnitt.
-1. Installieren Sie die App auf Ihrem physischen Gerät oder auf dem Simulator.
-1. Starten Sie die App mithilfe der durch die Versicherung generierten URL.
+1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Wählen Sie in der Assurance-Benutzeroberfläche die Option **[!UICONTROL Konfigurieren]**.
    ![configure click](assets/push-validate-config.png)
 1. Wählen Sie die ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Schaltfläche neben **[!UICONTROL In-App-Nachrichten]**.
@@ -159,7 +158,8 @@ Um eine eigene In-App-Nachricht zu erstellen, müssen Sie eine Kampagne in Journ
 * Anwendungslebenszyklusereignisse wie Start, Installation, Aktualisierung, Schließen oder Absturz,
 * Geolocation-Ereignisse, z. B. das Eintreten oder Beenden eines Zielpunkts.
 
-In diesem Tutorial verwenden Sie die generischen und erweiterungsunabhängigen Mobile Core-APIs (siehe [Generische Mobile Core-APIs](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)), um die Ereignisverfolgung für Benutzerbildschirme, Aktionen und PII-Daten zu erleichtern. Von diesen APIs generierte Ereignisse werden in den SDK-Ereignis-Hub veröffentlicht und können von Erweiterungen verwendet werden. Der SDK-Ereignis-Hub bietet die Kerndatenstruktur, die mit allen Mobile SDK-Erweiterungen von AEP verknüpft ist, und verwaltet eine Liste registrierter Erweiterungen und interner Module, eine Liste registrierter Ereignis-Listener und eine freigegebene Statusdatenbank.
+In diesem Tutorial verwenden Sie die generischen und erweiterungsunabhängigen Mobile Core-APIs (siehe [Generische Mobile Core-APIs](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)), um die Ereignisverfolgung für Benutzerbildschirme, Aktionen und PII-Daten zu erleichtern. Von diesen APIs generierte Ereignisse werden in den SDK-Ereignis-Hub veröffentlicht und können von Erweiterungen verwendet werden. Der SDK-Ereignis-Hub bietet die Kerndatenstruktur, die mit allen Mobile Platform SDK-Erweiterungen verknüpft ist, und verwaltet eine Liste registrierter Erweiterungen und interner Module, eine Liste registrierter Ereignis-Listener und eine freigegebene Statusdatenbank.
+
 Der SDK-Ereignis-Hub veröffentlicht und empfängt Ereignisdaten von registrierten Erweiterungen, um die Integration mit Adobe- und Drittanbieterlösungen zu vereinfachen. Wenn beispielsweise die Optimize-Erweiterung installiert ist, werden alle Anforderungen und Interaktionen mit dem Journey Optimizer - Decision Management-Angebotsmodul vom Event Hub verarbeitet.
 
 1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche die Option **[!UICONTROL Kampagnen]** über die linke Leiste.
@@ -219,7 +219,7 @@ Sie verfügen über alle nötigen Ressourcen, um eine In-App-Nachricht zu senden
 
 ## Validieren mit Ihrer App
 
-1. Öffnen Sie Ihre App auf einem Gerät oder im Simulator.
+1. Erstellen Sie die App im Simulator oder auf einem physischen Gerät aus Xcode neu und führen Sie sie mithilfe von ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Navigieren Sie zu **[!UICONTROL Einstellungen]** Registerkarte.
 
@@ -232,6 +232,7 @@ Sie verfügen über alle nötigen Ressourcen, um eine In-App-Nachricht zu senden
 
 Sie können Ihre In-App-Nachrichten in der Assurance-Benutzeroberfläche validieren.
 
+1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Auswählen **[!UICONTROL In-App-Nachrichten]**.
 1. Auswählen **[!UICONTROL Ereignisliste]**.
 1. Wählen Sie eine **[!UICONTROL Nachricht anzeigen]** eingeben.

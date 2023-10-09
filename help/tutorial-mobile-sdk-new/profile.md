@@ -2,9 +2,10 @@
 title: Profildaten erfassen
 description: Erfahren Sie, wie Sie Profildaten in einer Mobile App erfassen.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 5%
 
 ---
@@ -64,7 +65,7 @@ Es wäre hilfreich für Targeting und/oder Personalisierung in der App, schnell 
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -95,9 +96,7 @@ Weitere Dokumentationen finden Sie [here](https://developer.adobe.com/client-sdk
 
 ## Validierung mit Versicherung
 
-1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md) Abschnitt.
-1. Installieren Sie das Programm.
-1. Starten Sie die App mithilfe der durch die Versicherung generierten URL.
+1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Führen Sie die App aus, um sich anzumelden und mit einem Produkt zu interagieren.
 
    1. Verschieben Sie das Symbol &quot;Versicherung&quot;nach links.
@@ -132,4 +131,4 @@ Weitere Dokumentationen finden Sie [here](https://developer.adobe.com/client-sdk
 >
 >Sie haben Ihre App jetzt so eingerichtet, dass Profilattribute im Edge-Netzwerk und (falls eingerichtet) mit Adobe Experience Platform aktualisiert werden.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Weiter: **[Geolocation-Dienste verwenden](places.md)**
+Weiter: **[Orte verwenden](places.md)**

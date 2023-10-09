@@ -3,9 +3,10 @@ title: Identitätsdaten erfassen
 description: Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '860'
 ht-degree: 6%
 
 ---
@@ -103,7 +104,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 1. Navigieren Sie zu **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** im Xcode Project-Navigator und suchen Sie den Code, der beim Auswählen der **[!UICONTROL Anmelden]** Schaltfläche. Fügen Sie den folgenden Code hinzu:
 
    ```swift
-   // Update identities
+   // Call updateIdentities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -117,7 +118,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 
 Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API zum Entfernen der Identität aus der gespeicherten clientseitigen Identitätszuordnung. Die ID-Erweiterung sendet die Kennung nicht mehr an das Edge-Netzwerk. Die Verwendung dieser API entfernt die Kennung nicht aus dem serverseitigen Identitätsdiagramm. Siehe [Identitätsdiagramme anzeigen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) für weitere Informationen zu Identitätsdiagrammen.
 
-1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** im Xcode Project-Navigator und fügen Sie den folgenden Code zum `func removeIdentities(emailAddress: String, crmId: String)` Funktion:
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** im Xcode Project-Navigator und fügen Sie den folgenden Code zum `func removeIdentities(emailAddress: String, crmId: String)` Funktion:
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -137,9 +138,9 @@ Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 
 ## Validierung mit Versicherung
 
-1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md) und verbinden Sie Ihren Simulator oder Ihr Gerät mit Assurance.
+1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. In der Luma-App
-   1. Wählen Sie die **[!UICONTROL Startseite]** Registerkarte.
+   1. Wählen Sie die **[!UICONTROL Startseite]** und verschieben Sie das Symbol Versicherung nach links.
    1. Wählen Sie die <img src="assets/login.png" width="15" /> rechts oben.
 
       <img src="./assets/identity1.png" width="300">
@@ -165,6 +166,10 @@ Nachdem Sie die Schritte im Abschnitt [Experience Platform-Lektion](platform.md)
 1. Sie sehen die **[!UICONTROL Identitäten]** aufgelistet.
 
    ![Identitätsdiagramm überprüfen](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>In der App gibt es keinen Code zum Zurücksetzen der ECID. Das bedeutet, dass Sie die ECID nur zurücksetzen (und effektiv ein neues Profil mit einer neuen ECID auf dem Gerät erstellen) können, indem Sie die Anwendung deinstallieren und neu installieren. Informationen zum Implementieren des Zurücksetzens von Kennungen finden Sie unter [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) und [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API-Aufrufe. Beachten Sie jedoch bei Verwendung einer Push-Benachrichtigungs-ID (siehe [Push-Benachrichtigungen senden](journey-optimizer-push.md)), wird diese Kennung zu einer weiteren &quot;Sticky&quot;-Profilkennung auf dem Gerät.
 
 
 >[!SUCCESS]

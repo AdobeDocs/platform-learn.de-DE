@@ -1,19 +1,20 @@
 ---
-title: Geolocation-Dienste verwenden
+title: Orte verwenden
 description: Erfahren Sie, wie Sie den Geolocation-Dienst Places in Ihrer mobilen App verwenden.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 4%
 
 ---
 
-# Geolocation-Dienste verwenden
+# Orte verwenden
 
-Erfahren Sie, wie Sie den Geolocation-Dienst in Ihrer App verwenden.
+Erfahren Sie, wie Sie den Geolocation-Dienst Places in Ihrer App verwenden.
 
-Der Datenerfassungs-Places-Dienst von Adobe Experience Platform ist ein Standortdienst, mit dem mobile Apps mit Standorterkennung den Standortkontext verstehen können. Der Dienst verwendet umfangreiche und benutzerfreundliche SDK-Schnittstellen, die von einer flexiblen Datenbank mit Zielpunkten (POIs) begleitet werden.
+Der Datenerfassungs-Places-Dienst von Adobe Experience Platform ist ein Geolocation-Dienst, mit dem mobile Apps mit Standorterkennung den Standortkontext verstehen können. Der Dienst verwendet umfangreiche und benutzerfreundliche SDK-Schnittstellen, die von einer flexiblen Datenbank mit Zielpunkten (POIs) begleitet werden.
 
 ## Voraussetzungen
 
@@ -32,7 +33,7 @@ In dieser Lektion werden Sie
 * Aktualisieren Sie Ihr Schema, um Geolocation-Ereignisse zu erfassen.
 * Validieren Sie die Einrichtung in &quot;Assurance&quot;.
 * Aktualisieren Sie Ihre App, um die Places-Erweiterung zu registrieren.
-* Implementieren Sie das Geostandorttracking aus dem Places-Dienst in Ihre App.
+* Implementieren Sie das Geolocation-Tracking aus dem Places-Dienst in Ihre App.
 
 
 ## Einrichten
@@ -81,7 +82,7 @@ Sie definieren einige Zielpunkte im Places-Dienst.
    1. Auswählen **[!UICONTROL In Bibliothek speichern und erstellen]** von **[!UICONTROL In Bibliothek speichern]**.
       ![Installieren der Places-Erweiterung](assets/places-install-extension.png).
 
-1. Ihre Bibliothek wird neu erstellt.
+1. Ihre Bibliothek ist neu aufgebaut.
 
 
 ### Prüfen des Schemas
@@ -96,7 +97,7 @@ Sie definieren einige Zielpunkte im Places-Dienst.
    ![Schema Places](assets/schema-places-context.png).
 
 
-### Tag aktualisieren
+### Tag-Eigenschaft aktualisieren
 
 Die Places-Erweiterung für Tags bietet Funktionen zum Überwachen von Geolocation-Ereignissen und ermöglicht den Trigger von Aktionen, die auf diesen Ereignissen basieren. Mit dieser Funktion können Sie die API-Codierung minimieren, die Sie in der App implementieren müssen.
 
@@ -132,7 +133,7 @@ Erstellen Sie zunächst mehrere Datenelemente.
 
 Als Nächstes definieren Sie Regeln für die Verwendung dieser Datenelemente.
 
-1. In Ihrer Tag-Eigenschaft. select **[!UICONTROL Regeln]** über die linke Leiste.
+1. Wählen Sie in der Tag-Eigenschaft **[!UICONTROL Regeln]** über die linke Leiste.
 1. Auswählen **[!UICONTROL Regel hinzufügen]**.
 1. Im **[!UICONTROL Regel erstellen]** Bildschirm einen Namen für die Regel eingeben, z. B. `POI - Entry`.
 1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) darunter **[!UICONTROL EREIGNISSE]**.
@@ -215,6 +216,10 @@ Erstellen wir eine weitere Regel
 1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben dem **[!UICONTROL Mobile Core - Daten anhängen]** Aktion.
    1. Auswählen **[!UICONTROL Adobe Experience Platform Edge Network]** aus dem **[!UICONTROL Erweiterung]** Liste und Auswahl **[!UICONTROL Weiterleiten von Ereignissen an Edge Network]**.
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+
+1. Um die Regel zu speichern, wählen Sie **[!UICONTROL In Bibliothek speichern]**.
+
+   ![Regel](assets/tags-rule-poi-exit.png)
 
 
 Um sicherzustellen, dass alle Änderungen in Ihrem Tag veröffentlicht werden
@@ -302,18 +307,15 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    }
    ```
 
-In dieser Lektion werden Details zur Implementierung des Standortmanagers in iOS erläutert.
-
-
 ## Validieren mit Ihrer App
 
 1. Öffnen Sie Ihre App auf einem Gerät oder im Simulator.
 
 1. Navigieren Sie zu **[!UICONTROL Standort]** Registerkarte.
 
-1. Bewegen Sie die Karte, um sicherzustellen, dass der blaue Kreis in der Mitte über einem Ihrer POIs liegt, z. B. London.
+1. Verschieben Sie die Karte (ziehen Sie sie), um sicherzustellen, dass der blaue mittlere Kreis über einem der POIs liegt, z. B. London.
 
-1. Tippen <img src="assets/geobutton.png" width="20" /> wiederholt, bis die Kategorie und der Name unten rechts angezeigt werden.
+1. Tippen <img src="assets/geobutton.png" width="20" /> bis die Kategorie und der Name in der Tabelle an der roten Stelle mit dem Pin angezeigt werden.
 
 1. Tippen Sie auf die Bezeichnung des POI, wodurch sich der **[!UICONTROL Nächster POI]** Blatt.
 

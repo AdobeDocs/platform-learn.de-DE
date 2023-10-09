@@ -4,9 +4,10 @@ description: Erfahren Sie, wie Sie Daten an Experience Platform senden.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1069'
 ht-degree: 8%
 
 ---
@@ -94,11 +95,11 @@ Um Ihre XDM-Daten vom Edge-Netzwerk an Adobe Experience Platform zu senden, konf
 
 ## Daten im Datensatz validieren
 
-Nachdem Sie einen Datensatz erstellt und Ihren Datastream aktualisiert haben, um Daten an Experience Platform zu senden, werden alle an Platform Edge Network gesendeten XDM-Daten an Platform weitergeleitet und im Datensatz an Land gesendet.
+Nachdem Sie nun einen Datensatz erstellt und Ihren Datastream aktualisiert haben, um Daten an Experience Platform zu senden, werden alle an Platform Edge Network gesendeten XDM-Daten an Platform weitergeleitet und landen im Datensatz.
 
 Öffnen Sie die App und navigieren Sie zu Bildschirmen, auf denen Sie Ereignisse verfolgen. Sie können auch Trigger-Lebenszyklusmetriken verwenden.
 
-Öffnen Sie Ihren Datensatz in der Platform-Oberfläche. Sie sollten die Daten sehen, die in Batches zum Datensatz eingehen.
+Öffnen Sie Ihren Datensatz in der Platform-Oberfläche. Sie sollten die Daten sehen, die in Batches zum Datensatz eingehen. Die Daten werden in der Regel alle 15 Minuten in Mikrostapeln empfangen, sodass Ihre Daten möglicherweise nicht sofort angezeigt werden.
 
 ![Dateneinstiegs-Datensatz-Batches der Platform validieren](assets/platform-dataset-batches.png)
 
@@ -170,4 +171,4 @@ Marketingexperten und Analytics können viel mehr mit in Experience Platform erf
 >
 >Sie haben Ihre App jetzt so eingerichtet, dass Daten nicht nur an das Edge-Netzwerk, sondern auch an Adobe Experience Platform gesendet werden.<br>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Weiter: **[Erstellen und Push-Benachrichtigungen](journey-optimizer-push.md)**
+Weiter: **[Push-Benachrichtigungen erstellen und senden](journey-optimizer-push.md)**

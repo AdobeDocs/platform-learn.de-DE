@@ -3,13 +3,13 @@ title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream in Experience Platform erstellen.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 10%
+source-wordcount: '459'
+ht-degree: 9%
 
 ---
-
 
 # Erstellen eines Datenspeichers
 
@@ -55,45 +55,49 @@ Datenspeicher können im [!UICONTROL Datenerfassung] -Schnittstelle mithilfe der
 
 ## Dienste hinzufügen
 
-Wenn Sie die (optionale) [Analytics](analytics.md) und [Experience Platform](platform.md) Lektionen in diesem Tutorial fügen Sie Dienste zu Ihrem Datastream hinzu, um sicherzustellen, dass der Datenspeicher diese Daten an die konfigurierten Dienste weiterleitet, wenn das Platform Mobile SDK Daten an das Edge-Netzwerk sendet.
+Wenn Sie die (optionale) [Analytics](analytics.md) und [Experience Platform](platform.md) In diesen Lektionen fügen Sie Ihrem Datastream Dienste hinzu, um sicherzustellen, dass der Datastream diese Daten an die konfigurierten Dienste weiterleitet, wenn das Platform Mobile SDK Daten an das Edge-Netzwerk sendet.
+
+<!--
 
 ### Adobe Analytics
 
-1. Wählen Sie **[!UICONTROL Service hinzufügen]** aus.
+1. Select **[!UICONTROL Add Service]**.
 
-1. Hinzufügen **[!UICONTROL Adobe Analytics]** aus dem [!UICONTROL Dienst] Liste,
+1. Add **[!UICONTROL Adobe Analytics]** from the [!UICONTROL Service] list, 
 
-1. Geben Sie den Namen der Report Suite ein, die Sie in **[!UICONTROL Report Suite-ID]**.
+1. Enter the name of the report site that you want to use in **[!UICONTROL Report Suite ID]**.
 
-1. Aktivieren Sie den Dienst, indem Sie **[!UICONTROL Aktiviert]** auf.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Select **[!UICONTROL Save]**.
 
-   ![Hinzufügen von Adobe Analytics als Datenspeicherdienst](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
 
-Möglicherweise möchten Sie auch den Adobe Experience Platform-Dienst aktivieren.
+You might also want to enable the Adobe Experience Platform service. 
 
 >[!IMPORTANT]
 >
->Sie können den Adobe Experience Platform-Dienst nur aktivieren, wenn Sie einen Ereignisdatensatz erstellt haben. Wenn Sie noch keinen Ereignis-Datensatz erstellt haben, befolgen Sie die Anweisungen . [here](platform.md).
+>You can only enable the Adobe Experience Platform service when having created an event dataset. If you don't already have an event dataset created, follow the instructions [here](platform.md).
 
-1. Klicks ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Dienst hinzufügen]** , um einen weiteren Dienst hinzuzufügen.
+1. Click ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]** to add another service.
 
-1. Wählen Sie **[!UICONTROL Adobe Experience Platform]** in der Liste [!UICONTROL Service] aus.
+1. Select **[!UICONTROL Adobe Experience Platform]** from the [!UICONTROL Service] list.
 
-1. Aktivieren Sie den Dienst, indem Sie **[!UICONTROL Aktiviert]** auf.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. Wählen Sie die **[!UICONTROL Ereignis-Datensatz]** die Sie im Rahmen der [Datensatz erstellen](platform.md#create-a-dataset) Anweisungen, beispielsweise **Ereignis-Datensatz für Luma Mobile App**
+1. Select the **[!UICONTROL Event Dataset]** that you created as part of the [Create a dataset](platform.md#create-a-dataset) instructions, for example **Luma Mobile App Event Dataset**
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Select **[!UICONTROL Save]**.
 
-   ![Hinzufügen von Adobe Experience Platform als Datenspeicherdienst](assets/datastream-service-aep.png)
-1. Die endgültige Konfiguration sollte ungefähr so aussehen:
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+1. The final configuration should look something like this.
+   
+   ![datastream settings](assets/datastream-settings.png)
 
-   ![Datenspeichereinstellungen](assets/datastream-settings.png)
+-->
 
 
 >[!NOTE]
