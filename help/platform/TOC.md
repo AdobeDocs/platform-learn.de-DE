@@ -5,7 +5,7 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
+source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 43%
@@ -38,8 +38,8 @@ ht-degree: 43%
 + [Importieren von Beispieldaten nach Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
    + [Verwenden von Warnhinweisen](/help/platform/admin/use-alerts.md)
-   + [Verwenden von Sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [Kopieren von Objekten zwischen Sandboxes](/help/platform/admin/use-sandboxes.md)
+   + [Verwenden von Sandboxes](/help/platform/admin/use-sandboxes.md)
+   + [Kopieren von Objekten zwischen Sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Konfigurieren der attributbasierten Zugriffssteuerung](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Verwalten von Produktprofilen](/help/platform/admin/managing-product-profiles.md)
