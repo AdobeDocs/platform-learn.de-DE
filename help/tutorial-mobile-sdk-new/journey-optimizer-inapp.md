@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 6%
+source-wordcount: '1690'
+ht-degree: 5%
 
 ---
 
@@ -100,6 +100,27 @@ Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag
 >
 >Wenn Sie nicht sehen `AJO Push Tracking Experience Event Dataset` als Option kontaktieren Sie den Kundendienst.
 >
+
+
+## Signing
+
+Das Signieren der Luma-App ist nur für die [Push-Benachrichtigungen erstellen und senden](journey-optimizer-push.md) und [In-App-Nachrichten erstellen und senden](journey-optimizer-inapp.md) Lektionen in diesem Tutorial. Diese Lektionen erfordern ein Apple-Bereitstellungsprofil, das **erfordert ein gebührenpflichtiges Apple-Entwicklerkonto**.
+
+So aktualisieren Sie die Signatur für Ihre App:
+
+1. Rufen Sie Ihre App in Xcode auf.
+1. Auswählen **[!DNL Luma]** im Projekt-Navigator.
+1. Wählen Sie die **[!DNL Luma]** Zielgruppe.
+1. Wählen Sie die **Signieren und Funktionen** Registerkarte.
+1. Konfigurieren **[!UICONTROL Automatische Verwaltungssignatur]**, **[!UICONTROL Team]**, und **[!UICONTROL Bundle-Kennung]** oder verwenden Sie Ihre spezifischen Apple-Entwicklungsbereitstellungsdetails.
+
+   >[!IMPORTANT]
+   >
+   >Stellen Sie sicher, dass Sie eine _eindeutig_ Bundle-ID und ersetzen Sie `com.adobe.luma.tutorial.swiftui` Bundle-Kennung, da jede Bundle-ID eindeutig sein muss. In der Regel verwenden Sie ein Reverse-DNS-Format für Bundle-ID-Zeichenfolgen, z. B. `com.organization.brand.uniqueidentifier`. Die abgeschlossene Version dieses Tutorials verwendet beispielsweise `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Xcode-Signaturfunktionen](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+
 
 ### Implementieren von Journey Optimizer in die App
 
@@ -213,7 +234,7 @@ Sie verfügen über alle nötigen Ressourcen, um eine In-App-Nachricht zu senden
    ```swift
    // Setting parameters and calling function to send in-app message
    Task {
-       AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
+       MobileSDK.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
    ```
 

@@ -3,13 +3,13 @@ title: WebViews verarbeiten
 description: Erfahren Sie, wie Sie die Datenerfassung mit WebViews in einer mobilen App durchführen.
 jira: KT-6987
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
-
 
 # WebViews verarbeiten
 
@@ -67,6 +67,7 @@ Weitere Informationen zum `Identity.getUrlVariables` API im [Referenzhandbuch zu
 
 So führen Sie den Code aus:
 
+1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Navigieren Sie zu **[!UICONTROL Einstellungen]** in der App
 1. Tippen Sie auf **[!DNL View...]** -Schaltfläche zum Anzeigen **[!DNL Terms of Use]**.
 

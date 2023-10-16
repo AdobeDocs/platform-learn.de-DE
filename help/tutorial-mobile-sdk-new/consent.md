@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementie
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 1%
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -96,28 +96,10 @@ Im obigen Beispiel protokollieren Sie einfach den Zustimmungsstatus in Xcode in 
 
 ## Validierung mit Versicherung
 
+1. Löschen Sie die Anwendung von Ihrem Gerät oder Simulator, da wir das Tracking und die Zustimmung entsprechend zurücksetzen und initialisieren möchten.
 1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
-1. Wenn Sie den obigen Code korrekt hinzugefügt haben, werden Sie aufgefordert, die Zustimmung zu erteilen.
-
-   Auswählen **[!UICONTROL Weiter...]** und wählen Sie **[!UICONTROL Zulassen]**.
-
-   <img src="./assets/consent-update-1.png" width="300" /> 
-   <img src="./assets/consent-update-2.png" width="300" />
-
-1. Sie sollten eine **[!UICONTROL Zustimmungsantwort abrufen]** -Ereignis in der Assurance-Benutzeroberfläche.
+1. Beim Verschieben der App von **[!UICONTROL Startseite]** Bildschirm zu **[!UICONTROL Produkte]** Bildschirm und zurück zu **[!UICONTROL Startseite]** angezeigt wird, sollte ein **[!UICONTROL Zustimmungsantwort abrufen]** -Ereignis in der Assurance-Benutzeroberfläche.
    ![Validieren der Zustimmung](assets/consent-update.png)
-
-
-## Einverständnis zurücksetzen
-
-Wenn Sie die Zustimmung zurücksetzen möchten:
-
-1. Navigieren Sie zu **[!UICONTROL Einstellungen]** in der App.
-
-1. Auswählen **[!UICONTROL App-Einstellungen...]** Dadurch werden die Luma-App-Einstellungen in der iOS-Einstellungsanwendung geöffnet.
-
-1. Umschalten **[!UICONTROL Tracking zulassen]** deaktiviert.
-
 
 
 >[!SUCCESS]

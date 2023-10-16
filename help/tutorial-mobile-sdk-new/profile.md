@@ -3,9 +3,9 @@ title: Profildaten erfassen
 description: Erfahren Sie, wie Sie Profildaten in einer Mobile App erfassen.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '593'
 ht-degree: 5%
 
 ---
@@ -26,11 +26,6 @@ Die Profildaten werden von anderen Erweiterungen verwendet, um profilbezogene Ak
 ## Voraussetzungen
 
 * App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
-* Profil-SDK importiert.
-
-  ```swift
-  import AEPUserProfile
-  ```
 
 ## Lernziele
 
@@ -78,11 +73,13 @@ Nachdem Sie das -Attribut eines Benutzers aktualisiert haben, ist es für andere
    ```swift
    // Get attributes
    UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
-       if attributes?["isPaidUser"] as! String == "yes" {
-           showBadgeForUser = true
-       }
-       else {
-           showBadgeForUser = false
+       if attributes?.count ?? 0 > 0 {
+           if attributes?["isPaidUser"] as? String == "yes" {
+               showBadgeForUser = true
+           }
+           else {
+               showBadgeForUser = false
+           }
        }
    }
    ```

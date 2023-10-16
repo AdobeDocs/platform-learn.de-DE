@@ -3,9 +3,9 @@ title: Orte verwenden
 description: Erfahren Sie, wie Sie den Geolocation-Dienst Places in Ihrer mobilen App verwenden.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1691'
 ht-degree: 4%
 
 ---
@@ -239,7 +239,10 @@ So überprüfen Sie Ihre Einrichtung in Assurance:
 1. Wenn nicht bereits in der linken Leiste verfügbar, wählen Sie **[!UICONTROL Konfigurieren]** Wählen Sie in der linken Leiste ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben **[!UICONTROL Veranstaltungen]** und **[!UICONTROL Karte und Simulieren]** darunter **[!UICONTROL PLACES SERVICE]**.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Auswählen **[!UICONTROL Karte und Simulieren]** in der linken Leiste.
-1. Wählen Sie einen der im Places-Dienst definierten POI aus und wählen Sie im Popup-Fenster die Option ![Fanggerät](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Eintrittsereignis simulieren]**.
+1. Verschieben Sie die Karte an die Position eines Ihrer POIs.
+1. Auswählen ![Fanggerät](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Laden-POIs simulieren.  Ihr POI wird anhand eines Kreises und einer Nadel identifiziert.
+1. Wählen Sie Ihren POI aus.
+1. Wählen Sie im Popup-Fenster ![Fanggerät](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Eintrittsereignis simulieren]**.
    ![Eintrittsereignis simulieren](assets/places-simulate.png)
 1. Auswählen **[!UICONTROL Veranstaltungen]** über die linke Leiste aus, und Sie sollten die simulierten Ereignisse sehen.
    ![Validierung von AJO-Entscheidungen](assets/places-events.png)
@@ -258,7 +261,9 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** im Xcode-Projektnavigator.
 1. Sichern `AEPPlaces` ist Teil Ihrer Importliste.
 
-   `import AEPPlaces`
+   ```swift
+   import AEPPlaces
+   ```
 
 1. Sichern `Places.self` ist Teil des Arrays von Erweiterungen, die Sie registrieren.
 

@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2734'
 ht-degree: 4%
 
 ---
@@ -155,6 +155,26 @@ Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag
 1. Die Test-Push-Benachrichtigung sollte in Ihrer App angezeigt werden.
 
    <img src="assets/luma-app-push.png" width="300" />
+
+
+## Signing
+
+Das Signieren der Luma-App ist nur für die [Push-Benachrichtigungen erstellen und senden](journey-optimizer-push.md) und [In-App-Nachrichten erstellen und senden](journey-optimizer-inapp.md) Lektionen in diesem Tutorial. Diese Lektionen erfordern ein Apple-Bereitstellungsprofil, das **erfordert ein gebührenpflichtiges Apple-Entwicklerkonto**.
+
+So aktualisieren Sie die Signatur für Ihre App:
+
+1. Rufen Sie Ihre App in Xcode auf.
+1. Auswählen **[!DNL Luma]** im Projekt-Navigator.
+1. Wählen Sie die **[!DNL Luma]** Zielgruppe.
+1. Wählen Sie die **Signieren und Funktionen** Registerkarte.
+1. Konfigurieren **[!UICONTROL Automatische Verwaltungssignatur]**, **[!UICONTROL Team]**, und **[!UICONTROL Bundle-Kennung]** oder verwenden Sie Ihre spezifischen Apple-Entwicklungsbereitstellungsdetails.
+
+   >[!IMPORTANT]
+   >
+   >Stellen Sie sicher, dass Sie eine _eindeutig_ Bundle-ID und ersetzen Sie `com.adobe.luma.tutorial.swiftui` Bundle-Kennung, da jede Bundle-ID eindeutig sein muss. In der Regel verwenden Sie ein Reverse-DNS-Format für Bundle-ID-Zeichenfolgen, z. B. `com.organization.brand.uniqueidentifier`. Die abgeschlossene Version dieses Tutorials verwendet beispielsweise `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Xcode-Signaturfunktionen](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 
 ## Hinzufügen von Push-Benachrichtigungsfunktionen zu Ihrer App
