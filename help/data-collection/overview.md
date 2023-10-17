@@ -3,9 +3,9 @@ title: Tutorials zur Datenerfassung
 description: Anleitungen und Tutorials, um Sie zu einem leistungsstarken Benutzer der Datenerfassung zu machen
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '241'
 ht-degree: 40%
 
 ---
@@ -21,7 +21,7 @@ Die Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für We
 * **[Übersicht über die Server-API (Video)](server-api/overview.md)**
   *Senden Sie Daten mit einer sicheren, authentifizierten Server-API.*
 * **[Implementieren von Adobe Experience Cloud in Apps (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de)**
-  *Implementieren von Experience Cloud-Anwendungen mit dem Mobile SDK.*
+  *Implementieren von Experience Cloud-Apps mit dem Mobile SDK.*
 * **[Verschieben von clientseitigen Tags (Tutorial)](event-forwarding/consider-moving-tags.md)**
   *Ziehen Sie das Verschieben clientseitiger Tags zur Ereignisweiterleitung in Erwägung.*
 
@@ -46,7 +46,7 @@ Die Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für We
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de" target="_blank">
-    <strong>Implementieren des Experience Cloud mit dem Web SDK</strong>
+    <strong>Experience Cloud mit Web SDK implementieren</strong>
     </a>
     </div>
     <p>
@@ -62,6 +62,19 @@ Die Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für We
     </div>
     <p>
     <em>Verwenden von Tags zur Implementierung des Platform Mobile SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=de" target="_blank">
+      <img alt="Migrieren von Target zum Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=de" target="_blank">
+    <strong>Migrieren von Adobe Target zum Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>Migration von at.js zum Web SDK</em>
     <p>
   </td>
 </tr>
