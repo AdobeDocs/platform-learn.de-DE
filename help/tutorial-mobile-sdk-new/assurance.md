@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Assurance-Erweiterung in eine mobile App 
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1002'
 ht-degree: 3%
 
 ---
@@ -105,6 +105,11 @@ Assurance funktioniert durch Öffnen einer URL, entweder über einen Browser ode
 In Xcode:
 
 1. Erstellen Sie die App im Simulator oder auf einem physischen Gerät aus Xcode neu und führen Sie sie mithilfe von ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+   >[!TIP]
+   >
+   >Optional können Sie Ihren Build &quot;bereinigen&quot;, insbesondere wenn unerwartete Ergebnisse angezeigt werden. Wählen Sie dazu **[!UICONTROL Bereinigen Sie den Build-Ordner...]** aus dem Xcode **[!UICONTROL Produkt]** Menü.
+
 
 1. Im **[!UICONTROL &quot;Luma App&quot;darf Ihren Standort verwenden]** Dialogfeld auswählen **[!UICONTROL Zulassen bei Verwendung der App]**.
 
