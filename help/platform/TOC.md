@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
+source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 43%
+source-wordcount: '1002'
+ht-degree: 44%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 43%
    + [Streaming-Erfassung – Übersicht](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Streamen von Daten mit der HTTP-API](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=de)
    + [Streamen von Daten mithilfe von Source Connectors](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=de)
-   + [Web SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [Web SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=de){target="_blank"}
    + [Mobile SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=de){target="_blank"}
 + Data Science Workspace {#data-science-workspace}
    + [Übersicht](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
@@ -120,6 +120,7 @@ ht-degree: 43%
    + [Konfigurieren des Marketo-Ziels](/help/platform/destinations/configure-the-marketo-destination.md)
    + [Dateibasierter Cloud-Speicher oder E-Mail-Marketing-Ziele konfigurieren](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Konfigurieren eines sozialen Ziels](/help/platform/destinations/configure-a-social-destination.md)
+   + [Aktivieren über LiveRamp-Ziele](/help/platform/destinations/liveramp-destinations.md)
    + Adobe Target und benutzerdefinierte Personalisierung{#target}
       + [Nächste Hit-Personalisierung mit Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Konfigurieren des Adobe Target-Ziels](/help/platform/destinations/target/configure-the-target-destination.md)
