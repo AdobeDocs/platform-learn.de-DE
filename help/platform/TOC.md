@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
+source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 44%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 44%
    + [Hinter den Kulissen: Ein Kundenerlebnis auf Basis von Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Übersicht zu Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Wichtigste Funktionen](/help/platform/intro-to-platform/key-capabilities.md)
-   + [Anwendungen und intelligente Dienste](/help/platform/intro-to-platform/application-and-intelligent-services.md)
+   + [Plattformbasierte Anwendungen](/help/platform/intro-to-platform/native-applications.md)
    + [Integrationen mit Experience Cloud-Applikationen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Wichtige Anwendungsfälle](/help/platform/intro-to-platform/key-use-cases.md)
    + [Grundlegende Architektur](/help/platform/intro-to-platform/basic-architecture.md)
