@@ -1,18 +1,18 @@
 ---
-title: Implementieren des Experience Cloud in Websites mit Tags
-description: Die Implementierung des Experience Cloud in Websites mit Tags ist der perfekte Ausgangspunkt für Frontend-Entwickler oder technische Marketingexperten, die lernen möchten, wie die Adobe Experience Cloud-Lösungen auf ihrer Website implementiert werden.
+title: Experience Cloud in Websites mit Tags implementieren
+description: Die Implementierung der Experience Cloud in Websites mit Tags ist der perfekte Ausgangspunkt für Frontend-Entwickler oder technische Marketingexperten, die lernen möchten, wie die Adobe Experience Cloud-Lösungen auf ihrer Website implementiert werden.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 45%
+source-wordcount: '897'
+ht-degree: 43%
 
 ---
 
 # Übersicht
 
-_Implementieren des Experience Cloud in Websites mit Tags_ ist der perfekte Ausgangspunkt für Frontend-Entwickler oder technische Marketingexperten, die lernen möchten, wie die Adobe Experience Cloud-Lösungen auf ihrer Website implementiert werden.
+_Experience Cloud in Websites mit Tags implementieren_ ist der perfekte Ausgangspunkt für Frontend-Entwickler oder technische Marketingexperten, die lernen möchten, wie die Adobe Experience Cloud-Lösungen auf ihrer Website implementiert werden.
 
 Jede Lektion enthält Anleitungen und grundlegende Informationen, die Ihnen die Implementierung von Experience Cloud und deren Vorteile näherbringen.  Innerhalb des Tutorials werden Ihnen Demosites bereitgestellt, anhand deren Sie die zugrunde liegenden Techniken in einer sicheren Umgebung erlernen können. Nach Abschluss dieses Tutorials sollten Sie bereit sein, mit der Implementierung all Ihrer Marketing-Lösungen über Tags auf Ihrer eigenen Website zu beginnen.
 
@@ -43,10 +43,9 @@ Nach Abschluss dieses Tutorials können Sie Folgendes:
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt verfügbar **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
-
 
 >[!NOTE]
 >
@@ -64,13 +63,13 @@ Es wird außerdem davon ausgegangen, dass Sie mit Frontend-Entwicklungssprachen 
 
 ## Über Tags
 
-Die Tag-Funktion von Adobe Experience Platform ist die nächste Generation von Website-Tag- und mobilen SDK-Verwaltungsfunktionen von Adobe. Mit Tags erhalten Kunden eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbelösungen bereitzustellen und zu verwalten, die zur Unterstützung entsprechender Kundenerlebnisse erforderlich sind. Für Tags fallen keine zusätzlichen Gebühren an. Launch steht jedem Adobe Experience Cloud-Kunden zur Verfügung.
+Die Tag-Funktion von Adobe Experience Platform ist die nächste Generation der Website-Tag- und mobilen SDK-Verwaltungsfunktionen von Adobe. Mit Tags erhalten Kunden eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbelösungen bereitzustellen und zu verwalten, die zur Unterstützung entsprechender Kundenerlebnisse erforderlich sind. Für Tags fallen keine zusätzlichen Gebühren an. Launch steht jedem Adobe Experience Cloud-Kunden zur Verfügung.
 
-Mit Tags für Websites können Sie alle JavaScript-Elemente im Zusammenhang mit Analyse-, Marketing- und Werbelösungen zentral verwalten, die auf Ihren Desktop- und mobilen Sites verwendet werden. Wenn Sie beispielsweise Adobe Analytics bereitstellen, verwalten Tags die AppMeasurement-JavaScript-Bibliothek, füllen Variablen und lösen Anfragen aus.
+Mit Tags für Websites können Sie alle JavaScript-Elemente im Zusammenhang mit Analyse-, Marketing- und Werbelösungen zentral verwalten, die auf Ihren Desktop- und mobilen Sites verwendet werden. Wenn Sie beispielsweise Adobe Analytics bereitstellen, verwalten Tags die JavaScript-AppMeasurement-Bibliothek, füllen Variablen aus und lösen Anfragen aus.
 
 Der Inhalt Ihres Containers wird minimiert, einschließlich Ihres benutzerspezifischen Codes. Alles ist modular. Wenn Sie ein Element nicht benötigen, ist es nicht in Ihrer Bibliothek enthalten. Das Ergebnis ist eine schnelle und kompakte Implementierung.
 
-Tags sind außerdem eine Plattform, mit der Drittanbieter Erweiterungen erstellen können, um die Bereitstellung ihrer Lösungen über Tags zu vereinfachen. Eine Erweiterung ist ein Paket mit Code (JavaScript, HTML und CSS), das die Tag-Oberfläche und die Client-Funktionalität erweitert. Sie können sich Tags als Betriebssystem vorstellen, und Erweiterungen sind die Apps, mit denen Sie Ihre Aufgaben erledigen.
+Tags sind außerdem eine Plattform, mit der Drittanbieter Erweiterungen erstellen können, um die Bereitstellung ihrer Lösungen über Tags zu vereinfachen. Eine Erweiterung ist ein Paket mit Code (JavaScript, HTML und CSS), das die Tags-Oberfläche und die Client-Funktionalität erweitert. Sie können sich Tags als Betriebssystem vorstellen, und Erweiterungen sind die Apps, mit denen Sie Ihre Aufgaben erledigen.
 
 ## Informationen zu den Lektionen
 
@@ -82,7 +81,57 @@ In diesen Lektionen implementieren Sie Adobe Experience Cloud in eine simulier
 
 1. Da Sie einige browserspezifische Erweiterungen verwenden werden, empfehlen wir, das Tutorial mit dem [Chrome-Webbrowser](https://www.google.com/chrome/) / abzuschließen
 1. Fügen Sie Ihrem Chrome-Browser die Erweiterung [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) hinzu.
-1. Laden Sie die [HTML-Beispielseite](https://www.enablementadobe.com/multi/web/basic-sample.html) herunter (klicken Sie mit der rechten Maustaste auf diesen Link und anschließend auf „Link speichern unter“).
+1. HTML-Beispielseitencode kopieren
+
++++HTML-Seitencode
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Tags: Sample HTML Page</title>
+    <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
+    <link rel="preconnect" href="//dpm.demdex.net">
+    <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//cm.everesttech.net">
+    <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
+    <link rel="dns-prefetch" href="//dpm.demdex.net">
+    <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//cm.everesttech.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
+    <!--/Preconnect and DNS-Prefetch-->
+    <!--Data Layer to enable rich data collection and targeting-->
+    <script>
+    var digitalData = {
+        "page": {
+            "pageInfo" : {
+                "pageName": "Home"
+                }
+            }
+    };
+    </script>
+    <!--/Data Layer-->
+    <!--jQuery or other helper libraries-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--/jQuery-->
+    <!--Tags Header Embed Code: REPLACE THE NEXT LINE WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+    <h1>Tags: Sample HTML Page</h1>
+    <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+</body>
+</html>
+```
+
++++
+
 1. Installieren Sie einen Texteditor, in dem Sie Änderungen an der HTML-Beispielseite vornehmen können. (Wenn Sie keinen haben, sollten Sie [Brackets](https://brackets.io/) ausprobieren.)
 1. Setzen Sie ein Lesezeichen für die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 

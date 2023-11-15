@@ -2,9 +2,9 @@
 title: Fügen Sie den Einbettungs-Code hinzu
 description: Erfahren Sie, wie Sie die Einbettungscodes Ihrer Tag-Eigenschaft abrufen und in Ihre Website implementieren können. Diese Lektion ist Teil des Tutorials zum Implementieren des Experience Cloud in Websites .
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1056'
 ht-degree: 49%
 
 ---
@@ -17,10 +17,9 @@ In dieser Lektion implementieren Sie den asynchronen Einbettungscode der Entwick
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt verfügbar **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
-
 
 ## Lernziele
 
@@ -61,7 +60,56 @@ Kopieren wir nun den Einbettungscode:
 
 Der Einbettungscode sollte im `<head>`-Element aller HTML-Seiten implementiert werden, die die Eigenschaft gemeinsam nutzen werden. Möglicherweise verfügen Sie über eine oder mehrere Vorlagendateien, die die `<head>` global auf der gesamten Site verwendet werden, was das Hinzufügen von Tags zu einem unkomplizierten Prozess macht.
 
-Sofern noch nicht geschehen, laden Sie [HTML-Beispielseite](https://www.enablementadobe.com/multi/web/basic-sample.html) (klicken Sie mit der rechten Maustaste auf diesen Link und klicken Sie auf &quot;Link speichern unter&quot;) und öffnen Sie ihn in einem Code-Editor. [Brackets](https://brackets.io/) ist ein kostenloser Open-Source-Editor, falls Sie einen benötigen.
+Kopieren Sie den HTML-Beispielseitencode und fügen Sie ihn in einen Code-Editor ein. [Brackets](https://brackets.io/) ist ein kostenloser Open-Source-Editor, falls Sie einen benötigen.
+
++++HTML-Seitencode
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Tags: Sample HTML Page</title>
+    <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
+    <link rel="preconnect" href="//dpm.demdex.net">
+    <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//cm.everesttech.net">
+    <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
+    <link rel="dns-prefetch" href="//dpm.demdex.net">
+    <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//cm.everesttech.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
+    <!--/Preconnect and DNS-Prefetch-->
+    <!--Data Layer to enable rich data collection and targeting-->
+    <script>
+    var digitalData = {
+        "page": {
+            "pageInfo" : {
+                "pageName": "Home"
+                }
+            }
+    };
+    </script>
+    <!--/Data Layer-->
+    <!--jQuery or other helper libraries-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--/jQuery-->
+    <!--Tags Header Embed Code: REPLACE THE NEXT LINE WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+    <h1>Tags: Sample HTML Page</h1>
+    <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+</body>
+</html>
+```
+
++++
 
 Ersetzen Sie den vorhandenen Einbettungscode in Zeile 34 (oder den umliegenden Zeilen) durch den Code in der Zwischenablage und speichern Sie die Seite. Öffnen Sie die Seite jetzt in einem Webbrowser. Wenn Sie die Seite mit dem `file://`-Protokoll laden, müssen Sie in Ihrem Code-Editor „https:“ am Anfang der Einbettungscode-URL hinzufügen). Die Zeilen 33 bis 36 Ihrer Beispielseite sollten etwa wie folgt aussehen:
 
@@ -84,9 +132,9 @@ Nehmen wir einen Moment Zeit, um einige der Best Practices für die Implementier
 
    * Wir *stark* Es wird empfohlen, eine Datenschicht auf Ihrer Site zu erstellen, die alle Attribute enthält, die zum Füllen von Variablen in Analytics, Target und anderen Marketing-Lösungen erforderlich sind. Diese Beispielseite enthält nur einen sehr einfachen Daten-Layer. Ein echter Daten-Layer kann viele weitere Details über Seite, Besucher, Warenkorbdetails usw. enthalten. Weitere Informationen zu Daten-Layern finden Sie in [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf).
 
-   * Definieren Sie Ihre Datenschicht vor dem Tag-Einbettungscode, um die Möglichkeiten der Experience Cloud-Lösungen zu maximieren.
+   * Definieren Sie Ihre Datenschicht vor dem Tag-Einbettungscode, um die Möglichkeiten von Experience Cloud-Lösungen zu maximieren.
 
-* **JavaScript-Hilfsbibliotheken**: Wenn Sie bereits eine Bibliothek wie JQuery im `<head>` Laden Sie sie vor Tags Ihrer Seiten, um die zugehörige Syntax in Tags und Target zu nutzen.
+* **JavaScript-Hilfsbibliotheken**: Wenn Sie bereits über eine Bibliothek wie JQuery im `<head>` Laden Sie sie vor Tags Ihrer Seiten, um die zugehörige Syntax in Tags und Target zu nutzen.
 
 * **HTML5-Doctype**: Der HTML5-Doctype ist für Target erforderlich.
 
