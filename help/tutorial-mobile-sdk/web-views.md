@@ -3,9 +3,9 @@ title: WebViews verarbeiten
 description: Erfahren Sie, wie Sie die Datenerfassung mit WebViews in einer mobilen App durchführen.
 jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '415'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,13 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie die Datenerfassung mit WebViews in einer mobilen App durchführen.
 
+>[!INFO]
+>
+> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
+
 ## Voraussetzungen
 
-* Erfolgreiche Erstellung und Ausführung der App mit installierten und konfigurierten SDKs.
+* App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
 
 ## Lernziele
 
@@ -31,7 +35,7 @@ Wenn Sie Daten aus dem nativen Teil der App und einer WebView senden, generiert 
 
 Um diese unerwünschte Situation zu beheben, ist es wichtig, die ECID des Benutzers aus dem nativen Teil an WebView zu übergeben.
 
-Die JavaScript-Erweiterung &quot;Experience Cloud-ID-Dienst&quot;in WebView extrahiert die ECID aus der URL, anstatt eine Anforderung für eine neue ID an Adobe zu senden. Der ID-Dienst verwendet diese ECID zur Besucherverfolgung.
+Die JavaScript-Erweiterung &quot;Experience Cloud ID-Dienst&quot;in WebView extrahiert die ECID aus der URL, anstatt eine Anfrage an Adobe für eine neue ID zu senden. Der ID-Dienst verwendet diese ECID zur Besucherverfolgung.
 
 ## Implementierung
 
@@ -76,11 +80,11 @@ Weitere Informationen zum `Identity.getUrlVariables` API im [Referenzhandbuch zu
 
 ## Validierung
 
-Nach Überprüfung der [Einrichtungsanweisungen](assurance.md) und das Verbinden Ihres Simulators oder Geräts mit Assurance, laden Sie die WebView und suchen Sie nach der `Edge Identity Response URL Variables` -Ereignis aus `com.adobe.griffon.mobile` Anbieter.
+Nach der Überprüfung der [Einrichtungsanweisungen](assurance.md) und das Verbinden Ihres Simulators oder Geräts mit Assurance, laden Sie die WebView und suchen Sie nach der `Edge Identity Response URL Variables` -Ereignis aus `com.adobe.griffon.mobile` -Anbieter.
 
 Um die WebView zu laden, wechseln Sie zur Startseite der Luma-App, wählen Sie das Symbol &quot;Konto&quot;und dann die &quot;Nutzungsbedingungen&quot;in der Fußzeile aus.
 
-Wählen Sie nach dem Laden der WebView das Ereignis aus und überprüfen Sie die `urlvariables` im Feld `ACPExtensionEventData` -Objekt, das bestätigt, dass die folgenden Parameter in der URL vorhanden sind: `adobe_mc`, `mcmid`und `mcorgid`.
+Wählen Sie nach dem Laden der WebView das Ereignis aus und überprüfen Sie die `urlvariables` im Feld `ACPExtensionEventData` -Objekt, das bestätigt, dass die folgenden Parameter in der URL vorhanden sind: `adobe_mc`, `mcmid`, und `mcorgid`.
 
 ![Webseitenvalidierung](assets/mobile-webview-validation.png)
 
@@ -103,4 +107,4 @@ Weiter: **[Identität](identity.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

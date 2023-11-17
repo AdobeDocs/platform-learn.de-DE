@@ -2,9 +2,9 @@
 title: Events
 description: Erfahren Sie, wie Sie Ereignisdaten in einer Mobile App erfassen.
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '955'
 ht-degree: 1%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie Ereignisse in einer Mobile App verfolgen.
 
+>[!INFO]
+>
+> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
+
 Die Edge Network-Erweiterung stellt eine API zum Senden von Erlebnisereignissen an Platform Edge Network bereit. Ein Erlebnisereignis ist ein Objekt, das Daten enthält, die der XDM ExperienceEvent-Schemadefinition entsprechen. Sie erfassen einfach, was Benutzer in Ihrer mobilen App tun. Sobald Daten vom Platform Edge Network empfangen wurden, können sie an Anwendungen und Dienste weitergeleitet werden, die in Ihrem Datenspeicher konfiguriert sind, z. B. Adobe Analytics und Experience Platform. Weitere Informationen zum [Erlebnisereignisse](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in der Produktdokumentation.
 
 ## Voraussetzungen
@@ -20,7 +24,7 @@ Die Edge Network-Erweiterung stellt eine API zum Senden von Erlebnisereignissen 
 * PodFile mit den erforderlichen SDKs aktualisiert.
 * Registrierte Erweiterungen in AppDelegate.
 * MobileCore für die Verwendung Ihrer Entwicklungs-AppId konfiguriert.
-* Importierte SDKs.
+* Importierte SDKs
 * App wurde erfolgreich erstellt und mit den oben genannten Änderungen ausgeführt.
 
 ## Lernziele
@@ -74,10 +78,10 @@ Sehen wir uns ein paar Beispiele an.
    ```
 
    * eventType: Beschreibt das aufgetretene Ereignis und verwendet eine [bekannter Wert](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) nach Möglichkeit.
-   * commerce.productViews.value: Geben Sie den numerischen Wert des Ereignisses an. Wenn es sich um einen booleschen Wert (oder &quot;Zähler&quot;in Adobe Analytics) handelt, ist der Wert immer 1. Wenn es sich um ein numerisches oder Währungsereignis handelt, kann der Wert > 1 betragen.
+   * commerce.productViews.value: Geben Sie den numerischen Wert des Ereignisses an. Wenn es sich um einen booleschen Wert (oder &quot;Zähler&quot;in Adobe Analytics) handelt, ist der Wert immer 1. Bei numerischen Ereignissen oder Währungsereignissen kann der Wert > 1 betragen.
 
 1. Identifizieren Sie in Ihrem Schema alle zusätzlichen Daten, die mit dem Ereignis verknüpft sind. Fügen Sie in diesem Beispiel `productListItems` Dies ist ein Standardsatz von Feldern, die mit Commerce-bezogenen Ereignissen verwendet werden:
-   ![Produktlistenschema](assets/mobile-datacollection-prodListItems-schema.png)
+   ![Schema der Produktlistenelemente](assets/mobile-datacollection-prodListItems-schema.png)
    * Beachten Sie Folgendes: `productListItems` ist ein Array, sodass mehrere Produkte bereitgestellt werden können.
 
 1. Erweitern Sie Ihr xdmData -Objekt, um zusätzliche Daten einzuschließen:
@@ -204,9 +208,9 @@ Die obigen Beispiele haben hoffentlich den Gedankenprozess beim Erstellen eines 
 ### Validierung
 
 1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md) und verbinden Sie Ihren Simulator oder Ihr Gerät mit Assurance.
-1. Führen Sie die Aktion aus und suchen Sie nach der `hitReceived` -Ereignis aus `com.adobe.edge.konductor` Anbieter.
+1. Führen Sie die Aktion aus und suchen Sie nach der `hitReceived` -Ereignis aus `com.adobe.edge.konductor` -Anbieter.
 1. Wählen Sie das Ereignis aus und überprüfen Sie die XDM-Daten im `messages` -Objekt.
-   ![Datenerfassungs-Validierung](assets/mobile-datacollection-validation.png)
+   ![Datenerfassungsprüfung](assets/mobile-datacollection-validation.png)
 
 ### Beispiel 3: Kauf
 
@@ -215,12 +219,12 @@ In diesem Beispiel wird davon ausgegangen, dass der Benutzer den folgenden Kauf 
 * Produkt Nr. 1 - Yoga Mat.
    * $ 49.99 x1
    * SKU: 5829
-* Produkt Nr. 2 - Wasserflasche.
+* Produkt Nr. 2 - Wasserflasche
    * $10.00 x3
    * SKU: 9841
-* Bestellsumme: $ 79.99
+* Bestellsumme: 79,99 USD
 * Eindeutige Bestell-ID: 298234720
-* Zahlungsart: Kreditkarte
+* Zahlungsart: Visa-Kreditkarte
 * Unique Payment Transaction Id: 847361
 
 #### Schema
@@ -313,7 +317,7 @@ Edge.sendEvent(experienceEvent: experienceEvent)
 
 ### Implementieren in die Luma-App
 
-Sie sollten über alle Tools verfügen, um die Datenerfassung zur Beispielanwendung &quot;Luma&quot;hinzuzufügen. Im Folgenden finden Sie eine Liste hypothetischer Tracking-Anforderungen, die Sie erfüllen können.
+Sie sollten über alle Tools verfügen, um mit dem Hinzufügen der Datenerfassung zur Beispielanwendung &quot;Luma&quot;zu beginnen. Im Folgenden finden Sie eine Liste der hypothetischen Tracking-Anforderungen, die Sie erfüllen können.
 
 * Verfolgen Sie die einzelnen Bildschirmansichten.
    * Schemafelder: screenType, screenName, screenView
@@ -336,10 +340,10 @@ Sie sollten über alle Tools verfügen, um die Datenerfassung zur Beispielanwend
 
 1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md) und verbinden Sie Ihren Simulator oder Ihr Gerät mit Assurance.
 
-1. Führen Sie die Aktion aus und suchen Sie nach der `hitReceived` -Ereignis aus `com.adobe.edge.konductor` Anbieter.
+1. Führen Sie die Aktion aus und suchen Sie nach der `hitReceived` -Ereignis aus `com.adobe.edge.konductor` -Anbieter.
 
 1. Wählen Sie das Ereignis aus und überprüfen Sie die XDM-Daten im `messages` -Objekt.
-   ![Datenerfassungs-Validierung](assets/mobile-datacollection-validation.png)
+   ![Datenerfassungsprüfung](assets/mobile-datacollection-validation.png)
 
 ## Senden von Ereignissen an Analytics und Platform
 
@@ -349,4 +353,4 @@ Weiter: **[WebViews](web-views.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

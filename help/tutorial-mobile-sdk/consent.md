@@ -3,10 +3,10 @@ title: Einverständnis
 description: Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementieren.
 feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 7%
+source-wordcount: '391'
+ht-degree: 6%
 
 ---
 
@@ -14,11 +14,15 @@ ht-degree: 7%
 
 Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementieren.
 
+>[!INFO]
+>
+> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
+
 Die mobile Adobe Experience Platform-Erweiterung &quot;Einverständnis&quot;ermöglicht die Erfassung von Zustimmungsvoreinstellungen von Ihrer mobilen App bei Verwendung des Adobe Experience Platform Mobile SDK und der Edge Network-Erweiterung. Weitere Informationen zum [Zustimmungserweiterung](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), in der Dokumentation.
 
 ## Voraussetzungen
 
-* Erfolgreiche Erstellung und Ausführung der App mit installierten und konfigurierten SDKs.
+* App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
 
 ## Lernziele
 
@@ -87,8 +91,8 @@ Im obigen Beispiel drucken Sie einfach den Zustimmungsstatus in die Konsole. In 
 
 ## Validierung mit Versicherung
 
-1. Überprüfen Sie die [Sicherheit](assurance.md) Lektion.
-1. Installieren Sie das Programm.
+1. Überprüfen Sie die [Assurance](assurance.md) Lektion.
+1. Installieren Sie die App.
 1. Starten Sie die App mithilfe der durch die Versicherung generierten URL.
 1. Wenn Sie den obigen Code korrekt hinzugefügt haben, werden Sie aufgefordert, die Zustimmung zu erteilen. Auswählen **Ja**.
    ![Popup für Einwilligung](assets/mobile-consent-validate.png)
@@ -99,4 +103,4 @@ Weiter: **[Lebenszyklusdaten erfassen](lifecycle-data.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

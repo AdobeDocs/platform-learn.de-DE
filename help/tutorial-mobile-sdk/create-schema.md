@@ -3,9 +3,9 @@ title: Erstellen eines XDM-Schemas
 description: Erfahren Sie, wie Sie ein XDM-Schema für App-Ereignisse erstellen.
 feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1315'
 ht-degree: 18%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 18%
 # Erstellen eines XDM-Schemas
 
 Erfahren Sie, wie Sie ein XDM-Schema für App-Ereignisse erstellen.
+
+>[!INFO]
+>
+> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
 
 Standardisierung und Interoperabilität sind Schlüsselkonzepte von Adobe Experience Platform. Das von Adobe unterstützte Experience-Datenmodell (XDM) ermöglicht die Standardisierung von Kundenerlebnisdaten und die Definition von Schemas für das Customer Experience Management.
 
@@ -50,7 +54,7 @@ In dieser Lektion werden Sie:
 
    ![3x3-Dropdown](assets/mobile-schema-navigate1.png)
 
-1. Stellen Sie sicher, dass Sie sich in der Experience Platformen-Sandbox befinden, die Sie für dieses Tutorial verwenden.
+1. Stellen Sie sicher, dass Sie sich in der Experience Platform-Sandbox befinden, die Sie für dieses Tutorial verwenden.
 
    >[!NOTE]
    >
@@ -73,7 +77,7 @@ In diesem Tutorial verwenden Sie die Feldergruppe &quot;Consumer Experience Even
 
 >[!NOTE]
 >
->Adobe fügt weiterhin mehr Standardfeldgruppen hinzu und sollten nach Möglichkeit verwendet werden, da diese Felder implizit von Experience Platform-Diensten verstanden werden und eine größere Konsistenz bei der Verwendung über Plattformkomponenten hinweg bieten. Die Verwendung von Standardfeldgruppen bietet greifbare Vorteile wie die automatische Zuordnung in Analytics- und AI-Funktionen in Platform.
+>Adobe fügt weiterhin mehr Standardfeldgruppen hinzu und sollten nach Möglichkeit verwendet werden, da diese Felder implizit von Experience Platform-Diensten verstanden werden und bei der Verwendung über Plattformkomponenten hinweg eine größere Konsistenz gewährleistet ist. Die Verwendung von Standardfeldgruppen bietet greifbare Vorteile wie die automatische Zuordnung in Analytics- und AI-Funktionen in Platform.
 
 ## Architektur des Luma-App-Schemas
 
@@ -100,13 +104,13 @@ Zu Lernzwecken verwenden Sie vordefinierte und benutzerdefinierte Feldergruppen.
 
 1. Sie können eine Vorschau der Felder anzeigen und/oder die Beschreibung lesen, um weitere Details zu erhalten, bevor Sie sie auswählen.
 
-1. Markieren Sie das Kontrollkästchen und klicken Sie auf **[!UICONTROL Feldergruppen hinzufügen]**.
+1. Aktivieren Sie das Kontrollkästchen und klicken Sie auf **[!UICONTROL Feldergruppen hinzufügen]**.
 
    ![Feldgruppe auswählen](assets/mobile-schema-select-field-groups.png)
 
    Sie gelangen zurück zum Bildschirm zur Hauptschemakomposition, wo Sie alle verfügbaren Felder sehen können.
 
-1. Geben Sie Ihrem Schema einen Namen, indem Sie **[!UICONTROL Unbenanntes Schema]** von oben links aus und geben Sie dann eine **[!UICONTROL Anzeigename]** &amp; **[!UICONTROL Beschreibung]** beispielsweise `Luma Tutorial Mobile` und `"Luma App" schema for Adobe Tutorial`
+1. Geben Sie Ihrem Schema einen Namen, indem Sie **[!UICONTROL Unbenanntes Schema]** von oben links aus und geben Sie dann eine **[!UICONTROL Anzeigename]** &amp; **[!UICONTROL Beschreibung]**, beispielsweise `Luma Tutorial Mobile` und `"Luma App" schema for Adobe Tutorial`
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -129,18 +133,18 @@ Erstellen Sie zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 
    ![Datentypmenü auswählen](assets/mobile-schema-datatype-create.png)
 
-1. Geben Sie einen **[!UICONTROL Anzeigename]** und **[!UICONTROL Beschreibung]** beispielsweise `App Information` und `Custom data type describing "Screen Views" & "App Actions"`
+1. Geben Sie einen **[!UICONTROL Anzeigename]** und **[!UICONTROL Beschreibung]**, beispielsweise `App Information` und `Custom data type describing "Screen Views" & "App Actions"`
 
    ![Name und Beschreibung angeben](assets/mobile-schema-datatype-name.png)
 
    >[!TIP]
    >
-   > Immer lesbar, beschreibend verwenden [!UICONTROL Anzeigenamen] für Ihre benutzerdefinierten Felder verwenden, da diese Vorgehensweise Marketing-Experten den Zugriff darauf erleichtert, wenn die Felder in nachgelagerten Diensten wie Segment Builder angezeigt werden.
+   > Immer lesbar, beschreibend verwenden [!UICONTROL Anzeigenamen] für Ihre benutzerdefinierten Felder verwenden, da diese Vorgehensweise Marketing-Experten den Zugriff darauf erleichtert, wenn die Felder in nachgelagerten Diensten wie dem Segment Builder angezeigt werden.
 
 
 1. Um ein Feld hinzuzufügen, wählen Sie die Schaltfläche (+) aus.
 
-   Dieses Feld ist ein Container-Objekt für die App-Interaktion. Gib ihm ein Kamelgehäuse **[!UICONTROL Feldname]** `appInteraction`, **[!UICONTROL Anzeigename]** `App Interaction`und **[!UICONTROL type]** `Object`.
+   Dieses Feld ist ein Container-Objekt für die App-Interaktion. Gib ihm ein Kamelgehäuse **[!UICONTROL Feldname]** `appInteraction`, **[!UICONTROL Anzeigename]** `App Interaction`, und **[!UICONTROL type]** `Object`.
 
 1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
@@ -192,7 +196,7 @@ Fügen Sie nun mithilfe Ihres benutzerdefinierten Datentyps eine benutzerdefinie
 
 1. Geben Sie in der rechten Leiste einen **[!UICONTROL Feldname]** von `appInformation`, einen Anzeigenamen von `App Information`.
 
-1. Auswählen `App Information` von **[!UICONTROL Typ]** Dropdown-Liste den Datentyp aus, den Sie in der vorherigen Übung erstellt haben.
+1. Auswählen `App Information` aus dem **[!UICONTROL Typ]** Dropdown-Liste den Datentyp aus, den Sie in der vorherigen Übung erstellt haben.
 
 1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
@@ -210,4 +214,4 @@ Weiter: **[Erstellen Sie eine [!UICONTROL datastream]](create-datastream.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

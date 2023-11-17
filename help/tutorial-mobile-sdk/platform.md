@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Daten an Adobe Experience Platform senden.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '862'
 ht-degree: 11%
 
 ---
@@ -15,9 +15,13 @@ ht-degree: 11%
 
 Erfahren Sie, wie Sie Daten an Adobe Experience Platform senden.
 
-Diese optionale Lektion ist für alle Kunden von Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer und Customer Journey Analytics relevant. Experience Platform, die Grundlage von Experience Cloud-Produkten, ist ein offenes System, das all Ihre Daten - Adobe und Nicht-Adobe - in robuste Kundenprofile umwandelt, die in Echtzeit aktualisiert werden und mithilfe von KI-gestützten Einblicken die richtigen Erlebnisse für alle  bereitstellt.
+>[!INFO]
+>
+> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
 
-Die [event](events.md), [Lebenszyklus](lifecycle-data.md)und [identity](identity.md) Daten, die Sie in früheren Lektionen gesammelt und an Platform Edge Network gesendet haben, werden an die in Ihrem Datastream konfigurierten Dienste weitergeleitet, einschließlich Adobe Experience Platform.
+Diese optionale Lektion ist für alle Kunden von Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer und Customer Journey Analytics relevant. Experience Platform, die Grundlage von Experience Cloud-Produkten, ist ein offenes System, das all Ihre Daten - Adobe und Nicht-Adobe - in robuste Kundenprofile umwandelt, die in Echtzeit aktualisiert werden und mithilfe von KI-gestützten Einblicken die richtigen Erlebnisse für alle bereitstellt.
+
+Die [event](events.md), [Lebenszyklus](lifecycle-data.md), und [identity](identity.md) Daten, die Sie in früheren Lektionen gesammelt und an Platform Edge Network gesendet haben, werden an die in Ihrem Datastream konfigurierten Dienste weitergeleitet, einschließlich Adobe Experience Platform.
 
 
 ## Voraussetzungen
@@ -33,7 +37,7 @@ In dieser Lektion werden Sie:
 * Erstellen Sie einen Experience Platform-Datensatz.
 * Validieren Sie Daten im Datensatz.
 * Aktivieren Sie Ihr Schema und Ihren Datensatz für das Echtzeit-Kundenprofil.
-* Validieren Sie Daten im Echtzeit-Kundenprofil.
+* Daten im Echtzeit-Kundenprofil validieren
 * Validieren Sie Daten im Identitätsdiagramm.
 
 
@@ -41,7 +45,7 @@ In dieser Lektion werden Sie:
 
 Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, werden im Data Lake als Datensätze persistiert. Ein Datensatz ist ein Konstrukt zur Datenspeicherung und -verwaltung, in dem Daten (in der Regel) in einer Tabelle erfasst werden, die ein Schema (Spalten) und Felder (Zeilen) beinhaltet. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben. Siehe [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) für Informationen.
 
-1. Navigieren Sie zur Experience Platform-Benutzeroberfläche, indem Sie sie oben rechts im Menü 3x3 auswählen.
+1. Navigieren Sie zur Experience Platform-Oberfläche, indem Sie sie aus dem Menü 3x3 oben rechts auswählen.
    ![Datensatzmenü](assets/mobile-dataset-menu.png)
 
 1. Auswählen **[!UICONTROL Datensätze]** aus dem linken Navigationsmenü.
@@ -57,7 +61,7 @@ Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, wer
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
    ![Datensatzkonfiguration](assets/mobile-dataset-configure.png)
 
-1. Bereitstellung einer **[!UICONTROL Name]**, **[!UICONTROL Beschreibung]** und wählen Sie **[!UICONTROL Beenden]**.
+1. Stellen Sie eine **[!UICONTROL Name]**, **[!UICONTROL Beschreibung]** und wählen Sie **[!UICONTROL Beenden]**.
    ![Datensatzfertigstellung](assets/mobile-dataset-finish.png)
 
 ## Aktualisieren des Datastreams
@@ -74,21 +78,21 @@ Nachdem Sie einen Datensatz erstellt und Ihren Datastream aktualisiert haben, um
 
 ![Dateneinstiegs-Datensatz-Batches der Platform validieren](assets/mobile-platform-dataset-batches.png)
 
-Sie sollten auch Beispieldatensätze und -felder anzeigen können, indem Sie die **[!UICONTROL Vorschau des Datensatzes anzeigen]** Funktion:
+Sie sollten auch Beispieldatensätze und -felder mit der **[!UICONTROL Datensatz-Vorschau]** Funktion:
 ![Lebenszyklus überprüfen, der an Platform-Datensatz gesendet wird](assets/mobile-lifecycle-platform-dataset.png)
 
 Ein robusteres Tool für die Validierung von Daten ist das [Abfragedienst](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=de).
 
 ## Echtzeit-Kundenprofil aktivieren
 
-Das Echtzeit-Kundenprofil von Experience Platform ermöglicht es Ihnen, eine ganzheitliche Sicht auf jeden einzelnen Kunden zu erstellen, in der Daten aus verschiedenen Kanälen kombiniert werden, einschließlich Online-, Offline-, CRM- und Drittanbieter-Daten. Mit dem Profil können Sie Ihre unterschiedlichen Kundendaten in einer zentralen Sicht zusammenführen, die eine aussagekräftige, im Zeitverlauf gezeichnete Darstellung jeder Kundeninteraktion bietet.
+Mit Experience Platform Echtzeit-Kundenprofil können Sie eine ganzheitliche Ansicht jedes einzelnen Kunden erstellen, in der Daten aus mehreren Kanälen kombiniert werden, einschließlich Online-, Offline-, CRM- und Drittanbieter-Daten. Mit dem Profil können Sie Ihre unterschiedlichen Kundendaten in einer zentralen Sicht zusammenführen, die eine aussagekräftige, im Zeitverlauf gezeichnete Darstellung jeder Kundeninteraktion bietet.
 
 ### Aktivieren des Schemas
 
 1. Schema öffnen
 1. Aktivieren **[!UICONTROL Profil]**
 1. Auswählen **[!UICONTROL Daten für dieses Schema enthalten eine primäre Identität im Feld identityMap .]** im Modal
-1. **** Schema speichern
+1. **[!UICONTROL Speichern Sie das Schema]**
 
    ![Aktivieren des Schemas für das Profil](assets/mobile-platform-profile-schema.png)
 
@@ -124,14 +128,14 @@ Im **[!UICONTROL Veranstaltungen]** können Sie die Ereignisse sehen, die von Ih
 ![Profilereignisse](assets/mobile-platform-profile-events.png)
 
 
-Klicken Sie im Bildschirm mit den Profildetails auf den Link, um das Identitätsdiagramm anzuzeigen, oder navigieren Sie zu **[!UICONTROL Identitäten]** > **[!UICONTROL Identitätsdiagramm]** und suchen Sie den Identitätswert. Diese Visualisierung zeigt Ihnen alle Identitäten, die in einem Profil verknüpft sind, und deren Ursprung. Im Folgenden finden Sie ein Beispiel für ein Identitätsdiagramm, das aus Daten erstellt wurde, die aus dem Abschluss dieses Mobile SDK-Tutorials (Datenquelle 2) und der [Web SDK-Tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de) (Datenquelle 1):
+Klicken Sie im Bildschirm mit den Profildetails auf den Link, um das Identitätsdiagramm anzuzeigen oder zu **[!UICONTROL Identitäten]** > **[!UICONTROL Identitätsdiagramm]** und suchen Sie den Identitätswert. Diese Visualisierung zeigt Ihnen alle Identitäten, die in einem Profil verknüpft sind, und deren Ursprung. Im Folgenden finden Sie ein Beispiel für ein Identitätsdiagramm, das aus Daten erstellt wurde, die aus dem Abschluss dieses Mobile SDK-Tutorials (Datenquelle 2) und der [Web SDK-Tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de) (Datenquelle 1):
 
 ![Identitätswert abrufen](assets/mobile-platform-profile-identitygraph.png)
 
-Es gibt noch viel mehr, was Marketingexperten und Analytics mit in Experience Platform erfassten Daten tun können, darunter die Analyse in Customer Journey Analytics und die Erstellung von Segmenten in Real-time Customer Data Platform. Du hast einen guten Anfang gemacht!
+Marketingexperten und Analytics können viel mehr mit in Experience Platform erfassten Daten tun, z. B. mit der Analyse in Customer Journey Analytics und dem Erstellen von Segmenten in Real-time Customer Data Platform. Du hast einen guten Anfang gemacht!
 
 Weiter: **[Push-Nachrichten mit Journey Optimizer](journey-optimizer-push.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

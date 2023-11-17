@@ -3,9 +3,9 @@ title: Identität
 description: Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen.
 feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 4%
 
 ---
@@ -14,19 +14,23 @@ ht-degree: 4%
 
 Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen.
 
+>[!INFO]
+>
+> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
+
 Mit Adobe Experience Platform Identity Service erhalten Sie einen besseren Überblick über Ihre Kunden und deren Verhalten, indem Sie Identitäten zwischen Geräten und Systemen überbrücken und so effektive persönliche digitale Erlebnisse in Echtzeit bereitstellen. Identitätsfelder und Namespaces sind der Kleber, der verschiedene Datenquellen verbindet, um das 360-Grad-Echtzeit-Kundenprofil zu erstellen.
 
 Weitere Informationen zum [Identitätserweiterung](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) und [Identitätsdienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) in der Dokumentation.
 
 ## Voraussetzungen
 
-* Erfolgreiche Erstellung und Ausführung der App mit installierten und konfigurierten SDKs.
+* App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
 
 ## Lernziele
 
 In dieser Lektion werden Sie:
 
-* Aktualisieren einer Standardidentität.
+* Standardidentität aktualisieren
 * Richten Sie eine benutzerdefinierte Identität ein.
 * Aktualisieren Sie eine benutzerdefinierte Identität.
 * Überprüfen Sie das Identitätsdiagramm.
@@ -66,11 +70,11 @@ Aktualisieren Sie zunächst die Identitätszuordnung des Benutzers, wenn er sich
 
 ## Einrichten eines benutzerdefinierten Identitäts-Namespace
 
-Identitäts-Namespaces sind Komponenten von [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) , die als Indikatoren für den Kontext dienen, auf den sich eine Identität bezieht. Sie unterscheiden beispielsweise den Wert &quot;name@email.com&quot;als E-Mail-Adresse oder &quot;443522&quot;als numerische CRM-ID.
+Identity-Namespaces sind Komponenten von [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) , die als Indikatoren für den Kontext dienen, auf den sich eine Identität bezieht. Sie unterscheiden beispielsweise den Wert &quot;name@email.com&quot;als E-Mail-Adresse oder &quot;443522&quot;als numerische CRM-ID.
 
 1. Wählen Sie in der Datenerfassungsoberfläche die Option **[!UICONTROL Identitäten]** über die Navigationsleiste auf der linken Schiene aus.
 1. Wählen Sie **[!UICONTROL Identity-Namespace erstellen]** aus.
-1. Bereitstellung einer **[!UICONTROL Anzeigename]** von `Luma CRM ID` und **[!UICONTROL Identitätssymbol]** Wert von `lumaCrmId`.
+1. Stellen Sie eine **[!UICONTROL Anzeigename]** von `Luma CRM ID` und **[!UICONTROL Identitätssymbol]** Wert von `lumaCrmId`.
 1. Auswählen **[!UICONTROL Geräteübergreifende ID]**.
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
@@ -129,13 +133,13 @@ let logout = UIAlertAction(title: "Logout", style: .destructive, handler: { (act
 1. Sie erhalten die Möglichkeit, einen Benutzernamen und ein Passwort einzugeben. Beide sind optional und Sie können einfach **Anmelden**.
 
    ![Login einer App](assets/mobile-identity-login-final.png)
-1. Suchen Sie in der Web-Benutzeroberfläche &quot;Assurance&quot;nach dem `Edge Identity Update Identities` -Ereignis aus `com.adobe.griffon.mobile` Anbieter.
+1. Suchen Sie in der Web-Benutzeroberfläche &quot;Assurance&quot;nach dem `Edge Identity Update Identities` -Ereignis aus `com.adobe.griffon.mobile` -Anbieter.
 1. Wählen Sie das Ereignis aus und überprüfen Sie die Daten im `ACPExtensionEventData` -Objekt. Sie sollten die von Ihnen aktualisierten Identitäten sehen.
    ![Aktualisierung von Identitäten überprüfen](assets/mobile-identity-validate-assurance.png)
 
 ## Validieren mit Identitätsdiagramm
 
-Nachdem Sie die Schritte im Abschnitt [Experience Platform](platform.md), können Sie auch die Erfassung des Platzhalters im Identitätsdiagramm-Viewer für Plattformen bestätigen:
+Nachdem Sie die Schritte im Abschnitt [Experience Platform-Lektion](platform.md), können Sie auch die Erfassung des Platzhalters im Identitätsdiagramm-Viewer für Plattformen bestätigen:
 
 ![Identitätsdiagramm überprüfen](assets/mobile-identity-validate.png)
 
@@ -144,4 +148,4 @@ Weiter: **[Profil](profile.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

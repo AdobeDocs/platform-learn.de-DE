@@ -1,18 +1,22 @@
 ---
-title: Tag-Eigenschaft konfigurieren
+title: Konfigurieren einer Tag-Eigenschaft
 description: Erfahren Sie, wie Sie eine Tag-Eigenschaft im [!UICONTROL Datenerfassung] -Schnittstelle.
 feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '733'
 ht-degree: 12%
 
 ---
 
-# Tag-Eigenschaft konfigurieren
+# Konfigurieren einer Tag-Eigenschaft
 
 Erfahren Sie, wie Sie eine Tag-Eigenschaft im [!UICONTROL Datenerfassung] -Schnittstelle.
+
+>[!INFO]
+>
+> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
 
 Tags in Adobe Experience Platform sind die nächste Generation von Funktionen für das Tag-Management von Adobe. Tags bieten Kunden eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbe-Tags bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse notwendig sind. Weitere Informationen [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) in der Produktdokumentation.
 
@@ -22,7 +26,7 @@ Um die Lektion abzuschließen, müssen Sie über die Berechtigung zum Erstellen 
 
 >[!NOTE]
 >
-> platform launch (Client-seitig) ist jetzt [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)
+> Platform launch (Client-seitig) ist jetzt [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)
 
 ## Lernziele
 
@@ -38,7 +42,7 @@ In dieser Lektion werden Sie:
    1. Wählen Sie **[!UICONTROL Neue Eigenschaft]** aus
       ![Tag-Eigenschaft erstellen](assets/mobile-tags-new-property.png).
    1. Für **[!UICONTROL Name]**, eingeben `Mobile SDK Course`.
-   1. Für **[!UICONTROL Plattform]** auswählen **[!UICONTROL Mobile]**.
+   1. Für **[!UICONTROL Plattform]** auswählen **[!UICONTROL Mobilnummer]**.
    1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
       ![Konfigurieren der Tag-Eigenschaft](assets/mobile-tags-property-config.png)
@@ -81,7 +85,7 @@ In dieser Lektion werden Sie:
 
 1. Installieren Sie die **Einverständnis** -Erweiterung.
 
-   Wählen Sie für die Zwecke dieses Tutorials **[!UICONTROL Ausstehend]**. Weitere Informationen zur Erweiterung &quot;Einverständnis&quot;finden Sie unter [die Dokumentation](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
+   Wählen Sie für diese Anleitung Folgendes aus: **[!UICONTROL Ausstehend]**. Weitere Informationen zur Erweiterung &quot;Einverständnis&quot;finden Sie unter [die Dokumentation](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
 
    ![Zustimmungseinstellungen](assets/mobile-tags-extension-consent.png)
 
@@ -112,7 +116,7 @@ In dieser Lektion werden Sie:
 
    Weitere Informationen finden Sie unter [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-   * **[!UICONTROL Umgebungsdatei-ID]**: Diese eindeutige ID verweist auf Ihre Entwicklungsumgebung. Beachten Sie diesen Wert. Produktions-/Staging-/Entwicklungswerte weisen alle unterschiedliche ID-Werte auf.
+   * **[!UICONTROL Umgebungsdatei-ID]**: Diese eindeutige ID verweist auf Ihre Entwicklungsumgebung. Notieren Sie diesen Wert. Produktions-/Staging-/Entwicklungswerte weisen alle unterschiedliche ID-Werte auf.
    * **[!UICONTROL Podfile]**: CocoaPods werden zur Verwaltung von SDK-Versionen und -Downloads verwendet. Weitere Informationen finden Sie unter [Dokumentation](https://cocoapods.org/).
    * **[!UICONTROL Initialisierungscode]**: Dieser Codeblock zeigt, wie Sie die erforderlichen SDKs importieren und die Erweiterungen beim Start registrieren.
 
@@ -131,4 +135,4 @@ Weiter: **[SDKs installieren](install-sdks.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

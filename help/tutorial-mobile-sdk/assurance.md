@@ -3,9 +3,9 @@ title: Einrichten der Sicherheit
 description: Erfahren Sie, wie Sie die Assurance-Erweiterung in eine mobile App implementieren.
 feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '603'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,13 @@ ht-degree: 6%
 
 Erfahren Sie, wie Sie Adobe Experience Platform Assurance in einer Mobile App einrichten.
 
+>[!INFO]
+>
+> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
+
 Assurance, formell als Project Griffon bekannt, soll Ihnen dabei helfen, zu untersuchen, zu testen, zu simulieren und zu überprüfen, wie Sie Daten erfassen oder Erlebnisse in Ihrer mobilen App bereitstellen.
 
-Mithilfe von &quot;Assurance&quot;können Sie unformatierte SDK-Ereignisse überprüfen, die vom Adobe Experience Platform Mobile SDK generiert wurden. Alle vom SDK erfassten Ereignisse stehen zur Überprüfung zur Verfügung. SDK-Ereignisse werden in einer Listenansicht geladen, sortiert nach Zeit. Jedes Ereignis verfügt über eine detaillierte Ansicht, die weitere Details enthält. Zusätzliche Ansichten zum Durchsuchen von SDK-Konfigurationen, Datenelementen, freigegebenen Status und SDK-Erweiterungsversionen werden ebenfalls bereitgestellt. Weitere Informationen zum [Sicherheit](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de) in der Produktdokumentation.
+Mithilfe von &quot;Assurance&quot;können Sie unformatierte SDK-Ereignisse überprüfen, die vom Adobe Experience Platform Mobile SDK generiert wurden. Alle vom SDK erfassten Ereignisse stehen zur Überprüfung zur Verfügung. SDK-Ereignisse werden in einer Listenansicht geladen, sortiert nach Zeit. Jedes Ereignis verfügt über eine detaillierte Ansicht, die weitere Details enthält. Zusätzliche Ansichten zum Durchsuchen von SDK-Konfigurationen, Datenelementen, freigegebenen Status und SDK-Erweiterungsversionen werden ebenfalls bereitgestellt. Weitere Informationen zum [Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de) in der Produktdokumentation.
 
 
 ## Voraussetzungen
@@ -37,7 +41,7 @@ In dieser Lektion werden Sie:
 Vergewissern Sie sich, dass Ihr Unternehmen Zugriff auf die Zertifizierung hat, indem Sie die folgenden Schritte ausführen:
 
 1. Besuch [https://experience.adobe.com/#/assurance](https://experience.adobe.com/griffon){target="_blank"}
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten für das Experience Cloud an.
+1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen für die Experience Cloud an.
 1. Wenn Sie zur **[!UICONTROL Sitzungen]** angezeigt, haben Sie Zugriff. Wenn Sie zur Beta-Zugriffsseite gelangen, wählen Sie **[!UICONTROL registrieren]**.
 
 ## Implementierung
@@ -51,7 +55,7 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
 }
 ```
 
-Das für dieses Tutorial bereitgestellte Beispiel-Luma verwendet iOS 12.0. Verwenden Sie die Variable `UISceneDelegate's scene(_:openURLContexts:)` wie folgt:
+Das für dieses Tutorial bereitgestellte Beispiel-Luma verwendet iOS 12.0. Wenn Sie zusammen mit Ihrer eigenen szenenbasierten Anwendung mit iOS 13 und höher folgen, verwenden Sie die `UISceneDelegate's scene(_:openURLContexts:)` -Methode wie folgt:
 
 ```swift
 func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
@@ -68,7 +72,7 @@ Weitere Informationen finden Sie [hier](https://developer.adobe.com/client-sdks/
 
 1. Öffnen Sie XCode und wählen Sie den Projektnamen aus.
 1. Navigieren Sie zum **Info** Registerkarte.
-1. Scrollen Sie nach unten zu **URL-Typen** und wählen Sie die **+** -Schaltfläche, um eine neue hinzuzufügen.
+1. Nach unten scrollen zu **URL-Typen** und wählen Sie die **+** -Schaltfläche, um eine neue hinzuzufügen.
 1. Satz **Kennung** und **URL-Schemata** auf &quot;lumadeeplink&quot;.
 1. Erstellen Sie die App und führen Sie sie aus.
 
@@ -101,4 +105,4 @@ Weiter: **[Einverständnis](consent.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

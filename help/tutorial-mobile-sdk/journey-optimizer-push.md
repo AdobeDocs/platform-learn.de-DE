@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '899'
 ht-degree: 7%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 7%
 # Push-Nachrichten in Adobe Journey Optimizer
 
 Erfahren Sie, wie Sie mit dem Platform Mobile SDK und Adobe Journey Optimizer Push-Nachrichten für mobile Apps erstellen.
+
+>[!INFO]
+>
+> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
 
 Mit Journey Optimizer können Sie Ihre Journey erstellen und Nachrichten an Zielgruppen senden. Bevor Sie Push-Benachrichtigungen mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von Push-Benachrichtigungen in Adobe Journey Optimizer finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -25,7 +29,7 @@ Mit Journey Optimizer können Sie Ihre Journey erstellen und Nachrichten an Ziel
 
 ## Voraussetzungen
 
-* Erfolgreiche Erstellung und Ausführung der App mit installierten und konfigurierten SDKs.
+* App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
 * Zugriff auf Adobe Journey Optimizer und ausreichende Berechtigungen wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Adobe Journey Optimizer-Funktionen.
    * Erstellen Sie eine App-Oberfläche.
    * Erstellen einer Journey
@@ -38,7 +42,7 @@ Mit Journey Optimizer können Sie Ihre Journey erstellen und Nachrichten an Ziel
 
 In dieser Lektion werden Sie:
 
-* Registrieren der App-ID beim Apple Push Notification Service (APN).
+* Registrieren Sie die App-ID beim Apple Push Notification Service (APN).
 * Erstellen Sie eine **[!UICONTROL App-Oberfläche]** in AJO.
 * Aktualisieren Sie Ihre **[!UICONTROL schema]** , um Push-Nachrichten einzuschließen.
 * Installieren und konfigurieren Sie die **[!UICONTROL Adobe Journey Optimizer]** Tag-Erweiterung.
@@ -57,15 +61,15 @@ Die folgenden Schritte sind nicht Adobe Experience Cloud-spezifisch und sollen S
 1. Wählen Sie das Symbol + aus, um einen Schlüssel zu erstellen.
    ![neuen Schlüssel erstellen](assets/mobile-push-apple-dev-new-key.png)
 
-1. Bereitstellung einer **[!UICONTROL Schlüsselname]**.
+1. Stellen Sie eine **[!UICONTROL Schlüsselname]**.
 1. Wählen Sie die **[!UICONTROL APN]** aktivieren.
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
-   ![neuen Schlüssel konfigurieren](assets/mobile-push-apple-dev-config-key.png)
+   ![Neuen Schlüssel konfigurieren](assets/mobile-push-apple-dev-config-key.png)
 1. Überprüfen Sie die Konfiguration und wählen Sie **[!UICONTROL registrieren]**.
 1. Laden Sie die `.p8` privater Schlüssel. Sie wird in der App Surface-Konfiguration verwendet.
 1. Beachten Sie die **[!UICONTROL Schlüssel-ID]**. Sie wird in der App Surface-Konfiguration verwendet.
 
-Zusätzliche Dokumentation kann [hier finden](https://help.apple.com/developer-account/#/devcdfbb56a3).
+Weitere Dokumentationen können [hier finden](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
 ### Abrufen der Apple-Entwicklerteam-ID
 
@@ -74,12 +78,12 @@ Zusätzliche Dokumentation kann [hier finden](https://help.apple.com/developer-a
 
 ## App-Push-Anmeldedaten zur Datenerfassung hinzufügen
 
-1. Aus dem [Datenerfassungsoberfläche](https://experience.adobe.com/data-collection/)wählen Sie im linken Bereich die Registerkarte App-Oberflächen aus.
+1. Aus dem [Datenerfassungsoberfläche](https://experience.adobe.com/data-collection/), wählen Sie im linken Bereich die Registerkarte App-Oberflächen aus.
 1. Auswählen **[!UICONTROL Erstellen von App-Oberflächen]** , um eine Konfiguration zu erstellen.
    ![App-Oberfläche - Startseite](assets/mobile-push-app-surface.png)
 1. Geben Sie einen **[!UICONTROL Name]** für die Konfiguration, beispielsweise `Luma App Tutorial`  .
 1. Wählen Sie in der Konfiguration der Mobile App die Option **[!UICONTROL Apple iOS]**.
-1. Geben Sie die Bundle ID der Mobile App im Feld App-ID (iOS Bundle ID) ein. Wenn Sie der Luma-App folgen, lautet der Wert `com.adobe.luma.tutorial`.
+1. Geben Sie die Bundle ID der Mobile App im Feld App-ID (iOS Bundle ID) ein. Wenn Sie zusammen mit der Luma-App folgen, lautet der Wert `com.adobe.luma.tutorial`.
 1. Schalten Sie die **[!UICONTROL Push-Anmeldedaten]** -Schaltfläche, um Ihre Anmeldedaten hinzuzufügen.
 1. Ziehen und ablegen `.p8` **Authentifizierungsschlüssel für Apple-Push-Benachrichtigungen** -Datei.
 1. Geben Sie die Schlüssel-ID an, eine 10-stellige Zeichenfolge, die bei der Erstellung von `p8` Authentifizierungsschlüssel. Sie finden sie auf der Registerkarte Schlüssel auf der Seite **Zertifikate, Kennungen und Profile**.
@@ -152,4 +156,4 @@ Weiter: **[Schlussfolgerung und nächste Schritte](conclusion.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

@@ -3,7 +3,7 @@ title: Tracking von Ereignisdaten
 description: Erfahren Sie, wie Sie Ereignisdaten in einer Mobile App verfolgen.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 4%
@@ -367,7 +367,7 @@ Sie sollten jetzt über alle Tools verfügen, um Ihrer App die Datenerfassung hi
 
 >[!TIP]
 >
->Überprüfen Sie die [fertige App](https://git.corp.adobe.com/rmaur/Luma) für weitere Beispiele.
+>Überprüfen Sie die [fertige App](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) für weitere Beispiele.
 
 
 ## Senden von Ereignissen an Analytics und Platform

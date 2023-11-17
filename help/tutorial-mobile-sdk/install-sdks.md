@@ -2,9 +2,9 @@
 title: Installieren von Adobe Experience Platform Mobile SDKs
 description: Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK in eine Mobile App implementieren.
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '591'
 ht-degree: 2%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 2%
 # Installieren von Adobe Experience Platform Mobile SDKs
 
 Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK in eine Mobile App implementieren.
+
+>[!INFO]
+>
+> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
 
 ## Voraussetzungen
 
@@ -26,7 +30,7 @@ Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK in eine Mobile Ap
 In dieser Lektion werden Sie:
 
 * Aktualisieren Sie Ihre CocoaPod -Datei.
-* Importieren Sie die erforderlichen SDKs.
+* Importieren Sie die erforderlichen SDK.
 * Registrieren Sie die Erweiterungen.
 
 >[!NOTE]
@@ -136,7 +140,7 @@ MobileCore.registerExtensions(extensions, {
 })
 ```
 
-`Messaging.self` ist nur erforderlich, wenn Sie die Implementierung von Push-Nachrichten über Adobe Journey Optimizer planen, wie beschrieben [here](journey-optimizer-push.md).
+`Messaging.self` ist nur erforderlich, wenn Sie Push-Nachrichten über Adobe Journey Optimizer implementieren möchten, wie beschrieben [here](journey-optimizer-push.md).
 
 Der obige Code führt Folgendes aus:
 
@@ -146,9 +150,10 @@ Der obige Code führt Folgendes aus:
 
 >[!IMPORTANT]
 >In einer Produktions-App müssen Sie AppId basierend auf der aktuellen Umgebung (dev/stage/prod) wechseln.
+>
 
 Weiter: **[Einrichten der Sicherheit](assurance.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
