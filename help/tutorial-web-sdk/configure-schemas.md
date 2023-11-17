@@ -3,10 +3,10 @@ title: Erstellen eines XDM-Schemas für Webdaten
 description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webdaten erstellen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 7%
+source-wordcount: '1121'
+ht-degree: 8%
 
 ---
 
@@ -87,7 +87,7 @@ Beachten Sie bei beiden Feldergruppen, dass Sie Zugriff auf die am häufigsten v
 
 ![Schemafeldgruppen](assets/schema-consumer-experience-event.jpg)
 
-Diese Lektion ist nur ein Ausgangspunkt. Beim Erstellen Ihres eigenen Web-Ereignisschemas müssen Sie Ihre Geschäftsanforderungen untersuchen und dokumentieren. Dieser Vorgang ähnelt dem Erstellen einer [Geschäftsanforderungsdokument](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html?lang=de) und [Lösungsdesign-Referenz](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html) für eine Adobe Analytics-Implementierung, sollte jedoch Anforderungen für _alle nachgelagerten Datenempfänger_ , wie z. B. Ziele für die Plattform-, Target- und Ereignisweiterleitung.
+Diese Lektion ist nur ein Ausgangspunkt. Beim Erstellen Ihres eigenen Web-Ereignisschemas müssen Sie Ihre Geschäftsanforderungen untersuchen und dokumentieren. Dieser Vorgang ähnelt dem Erstellen einer [Geschäftsanforderungsdokument](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html?lang=de) und [Lösungsdesign-Referenz](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=de) für eine Adobe Analytics-Implementierung, sollte jedoch Anforderungen für _alle nachgelagerten Datenempfänger_ , wie z. B. Ziele für die Plattform-, Target- und Ereignisweiterleitung.
 
 
 ### Das identityMap -Objekt
@@ -113,4 +113,4 @@ Jetzt können Sie dieses Schema referenzieren, wenn Sie die Web SDK-Erweiterung 
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

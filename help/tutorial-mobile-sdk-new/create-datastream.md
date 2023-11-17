@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie einen Datastream in Experience Platform erste
 feature: Mobile SDK,Datastreams
 hide: true
 exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 9%
+source-wordcount: '444'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Erfahren Sie, wie Sie einen Datastream in Experience Platform erstellen.
 
-Ein Datenspeicher ist eine serverseitige Konfiguration im Platform Edge Network. Der Datastream stellt sicher, dass eingehende Daten an das Platform Edge Network ordnungsgemäß an Adobe Experience Cloud-Anwendungen und -Dienste weitergeleitet werden. Weitere Informationen finden Sie unter [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de) oder [Video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=de).
+Ein Datenspeicher ist eine serverseitige Konfiguration im Platform Edge Network. Der Datastream stellt sicher, dass eingehende Daten an das Platform Edge Network ordnungsgemäß an Adobe Experience Cloud-Anwendungen und -Dienste weitergeleitet werden. Weitere Informationen finden Sie unter [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=de) oder [Video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=de).
 
 ![Architektur](assets/architecture.png)
 
@@ -55,7 +55,7 @@ Datenspeicher können im [!UICONTROL Datenerfassung] -Schnittstelle mithilfe der
 
 ## Dienste hinzufügen
 
-Wenn Sie die (optionale) [Analytics](analytics.md) und [Experience Platform](platform.md) In diesen Lektionen fügen Sie Ihrem Datastream Dienste hinzu, um sicherzustellen, dass der Datastream diese Daten an die konfigurierten Dienste weiterleitet, wenn das Platform Mobile SDK Daten an das Edge-Netzwerk sendet.
+Wenn Sie durch die (optionale) [Analytics](analytics.md) und [Experience Platform](platform.md) In diesen Lektionen fügen Sie Ihrem Datastream Dienste hinzu, damit an Platform Edge Network gesendete Daten an diese Anwendungen weitergeleitet werden.
 
 <!--
 
@@ -102,12 +102,14 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->Durch die Aktivierung der einzelnen Dienste, die Ihr Unternehmen verwendet, stellen Sie sicher, dass in der App erfasste Daten überall verwendet werden können. Weitere Informationen zu den Datastream-Einstellungen finden Sie in der Dokumentation . [here](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
+>Durch die Aktivierung der einzelnen Dienste, die Ihr Unternehmen verwendet, stellen Sie sicher, dass in der App erfasste Daten überall verwendet werden können. Weitere Informationen zu den Datastream-Einstellungen finden Sie in der Dokumentation . [here](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=de).
 
 Bei der Implementierung des Platform Mobile SDK in Ihrer eigenen App sollten Sie letztendlich drei Datenspeicher erstellen, die Ihren drei Tag-Umgebungen (Entwicklung, Staging und Produktion) zugeordnet werden. Wenn Sie Platform Mobile SDK mit Platform-basierten Anwendungen wie Adobe Real-time Customer Data Platform oder Adobe Journey Optimizer verwenden, sollten Sie diese Datenspeicher in den entsprechenden Sandboxes erstellen.
 
 >[!SUCCESS]
 >
->Sie verfügen jetzt über einen Datastream, der für den Rest des Tutorials verwendet werden kann.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Sie verfügen jetzt über einen Datastream, der für den Rest des Tutorials verwendet werden kann.
+>
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[Konfigurieren einer Tag-Eigenschaft](configure-tags.md)**

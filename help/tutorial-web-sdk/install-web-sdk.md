@@ -1,12 +1,12 @@
 ---
 title: Installieren und Konfigurieren der Adobe Experience Platform Web SDK-Tag-Erweiterung
-description: Erfahren Sie, wie Sie die Platform Web SDK-Tag-Erweiterung in der Datenerfassungsoberfläche installieren und konfigurieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+description: Erfahren Sie, wie Sie die Platform Web SDK-Tag-Erweiterung in der Datenerfassungsoberfläche installieren und konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 15%
+source-wordcount: '618'
+ht-degree: 17%
 
 ---
 
@@ -26,7 +26,7 @@ Am Ende dieser Lektion können Sie:
 
 Sie müssen die vorherigen Lektionen in diesem Tutorial abgeschlossen haben:
 
-* [Berechtigungen konfigurieren](configure-permissions.md)
+* [Konfigurieren von Berechtigungen](configure-permissions.md)
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
 * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -35,11 +35,11 @@ Sie müssen die vorherigen Lektionen in diesem Tutorial abgeschlossen haben:
 
 ### Eigenschaft hinzufügen
 
-Zunächst müssen Sie über eine Tag-Eigenschaft verfügen. Eine Eigenschaft ist ein Container für alle JavaScript-, Regeln- und anderen Funktionen, die zum Erfassen von Details von einer Webseite und zum Senden an verschiedene Speicherorte erforderlich sind.
+Zuerst müssen Sie über eine Tag-Eigenschaft verfügen. Eine Eigenschaft ist ein Container für alle JavaScript-, Regeln- und anderen Funktionen, die zum Erfassen von Details von einer Webseite und zum Senden an verschiedene Speicherorte erforderlich sind.
 
 Erstellen Sie eine neue Tag-Eigenschaft für das Tutorial:
 
-1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target="_blank"}
 1. Auswählen **[!UICONTROL Tags]** in der linken Navigation
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neue Eigenschaft]**
    ![Neue Eigenschaft hinzufügen](assets/websdk-property-addNewProperty.png)
@@ -83,9 +83,9 @@ Nachdem Sie das Platform Web SDK installiert und mit dem Datastream verknüpft h
 
 >[!NOTE]
 >
->Sie haben zwar keinen CNAME im [!UICONTROL Edge-Domäne] in dieser Lektion festzulegen, empfiehlt Adobe die Verwendung eines CNAME bei der Implementierung des Platform Web SDK auf Ihrer eigenen Website. Auch wenn eine CNAME-Implementierung keine Vorteile hinsichtlich der Cookie-Lebensdauer bietet, kann sie andere Vorteile haben. Zu den Vorteilen gehört die Umgehung der Funktionen von Ad-Blockern und selten verwendeten Browser, die keine Daten an Domains senden, die sie als Tracker klassifizieren. In diesen Fällen kann die Verwendung eines CNAME-Eintrags verhindern, dass Ihre Datenerfassung bei Benutzern unterbunden wird, die diese Tools verwenden.
+>Sie haben zwar keinen CNAME im [!UICONTROL Edge-Domäne] -Einstellung in dieser Lektion empfiehlt Adobe die Verwendung eines CNAME, wenn Sie das Platform Web SDK auf Ihrer eigenen Website implementieren. Auch wenn eine CNAME-Implementierung keine Vorteile hinsichtlich der Cookie-Lebensdauer bietet, kann sie andere Vorteile haben. Zu den Vorteilen gehört die Umgehung der Funktionen von Ad-Blockern und selten verwendeten Browser, die keine Daten an Domains senden, die sie als Tracker klassifizieren. In diesen Fällen kann die Verwendung eines CNAME-Eintrags verhindern, dass Ihre Datenerfassung bei Benutzern unterbunden wird, die diese Tools verwenden.
 
-Weitere Informationen zu den einzelnen Abschnitten der Erweiterung finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html)
+Weitere Informationen zu den einzelnen Abschnitten der Erweiterung finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=de)
 
 
 
@@ -93,4 +93,4 @@ Weitere Informationen zu den einzelnen Abschnitten der Erweiterung finden Sie un
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

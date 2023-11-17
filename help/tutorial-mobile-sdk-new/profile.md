@@ -3,9 +3,9 @@ title: Profildaten erfassen
 description: Erfahren Sie, wie Sie Profildaten in einer Mobile App erfassen.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '596'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ In dieser Lektion werden Sie:
 
 Es wäre hilfreich für Targeting und/oder Personalisierung in der App, schnell zu erkennen, ob ein Benutzer in der Vergangenheit oder vor Kurzem einen Kauf getätigt hat. Legen wir das in der Luma-App fest.
 
-1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** im Xcode-Projektnavigator und suchen Sie die `func updateUserAttribute(attributeName: String, attributeValue: String)` -Funktion. Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** im Xcode-Projektnavigator und suchen Sie die `func updateUserAttributes(attributeName: String, attributeValue: String)` -Funktion. Fügen Sie den folgenden Code hinzu:
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ Es wäre hilfreich für Targeting und/oder Personalisierung in der App, schnell 
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -115,7 +115,7 @@ Weitere Dokumentationen finden Sie [here](https://developer.adobe.com/client-sdk
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. Zurück zu **[!UICONTROL Startseite]** angezeigt. Es sollte ein Abzeichen hinzugefügt werden <img src="assets/person-badge-icon.png" width="15" />.
+   1. Zurück zu **[!UICONTROL Startseite]** angezeigt. Sie sollten sehen, dass ein Badge hinzugefügt wurde <img src="assets/person-badge-icon.png" width="15" />.
 
       <img src="./assets/personbadges.png" width="300">
 
@@ -126,6 +126,8 @@ Weitere Dokumentationen finden Sie [here](https://developer.adobe.com/client-sdk
 
 >[!SUCCESS]
 >
->Sie haben Ihre App jetzt so eingerichtet, dass Profilattribute im Edge-Netzwerk und (falls eingerichtet) mit Adobe Experience Platform aktualisiert werden.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Sie haben Ihre App jetzt so eingerichtet, dass Profilattribute im Edge-Netzwerk und (falls eingerichtet) mit Adobe Experience Platform aktualisiert werden.
+>
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Orte verwenden](places.md)**

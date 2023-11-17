@@ -3,10 +3,11 @@ title: Konfigurieren einer Tag-Eigenschaft
 description: Erfahren Sie, wie Sie eine Tag-Eigenschaft im [!UICONTROL Datenerfassung] -Schnittstelle.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 4d67b52e-db72-4ee6-be02-aa11a1d32481
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 9%
+source-wordcount: '1090'
+ht-degree: 8%
 
 ---
 
@@ -45,7 +46,7 @@ In dieser Lektion werden Sie:
 
       >[!NOTE]
       >
-      > Die standardmäßigen Zustimmungseinstellungen für die Edge-basierten mobilen SDK-Implementierungen, z. B. die in dieser Lektion ausgeführten, stammen aus dem [!UICONTROL Zustimmungserweiterung] und nicht [!UICONTROL Datenschutz] in der Konfiguration der Tag-Eigenschaft fest. Sie können die Erweiterung &quot;Einverständnis&quot;später in dieser Lektion hinzufügen und konfigurieren. Weitere Informationen finden Sie unter [die Dokumentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > Die standardmäßigen Zustimmungseinstellungen für die Edge-basierten mobilen SDK-Implementierungen, z. B. die in dieser Lektion ausgeführten, stammen aus dem [!UICONTROL Zustimmungserweiterung] und nicht [!UICONTROL Datenschutz] in der Konfiguration der Tag-Eigenschaft fest. Sie können die Erweiterung &quot;Einverständnis&quot;später in dieser Lektion hinzufügen und konfigurieren. Weitere Informationen finden Sie unter [die Dokumentation](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. Öffnen Sie die neue Eigenschaft.
@@ -131,7 +132,7 @@ Ihre Bibliothek ist für die neuen Erweiterungen und Konfigurationen erstellt. E
 
 1. Im **[!UICONTROL Installationsanweisungen für Mobilgeräte]** wählen Sie das **[!UICONTROL iOS]** Registerkarte.
 
-1. Sie können ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) Anweisungen zum Einrichten Ihres Projekts mit CocoaPods. CocoaPods werden zur Verwaltung von SDK-Versionen und -Downloads verwendet. Weitere Informationen finden Sie unter [Cocoapods-Dokumentation](https://cocoapods.org/). Wenn Sie Android als Entwicklungsplattform verwenden, ist Gradle das Tool zum Verwalten von SDK-Versionen, Downloads und Abhängigkeiten. Weitere Informationen finden Sie unter [Gradle-Dokumentation](https://gradle.org/)
+1. Sie können ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) Anweisungen zum Einrichten Ihres Projekts mit CocoaPods. CocoaPods werden zur Verwaltung von SDK-Versionen und -Downloads verwendet. Weitere Informationen finden Sie unter [Dokumentation zu CocoaPods](https://cocoapods.org/). Wenn Sie Android™ als Entwicklungsplattform verwenden, ist Gradle das Tool zum Verwalten von SDK-Versionen, Downloads und Abhängigkeiten. Weitere Informationen finden Sie unter [Gradle-Dokumentation](https://gradle.org/)
 
    Die Installationsanweisungen bieten einen guten Ausgangspunkt für die Implementierung. Weitere Informationen finden Sie unter [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -140,7 +141,7 @@ Ihre Bibliothek ist für die neuen Erweiterungen und Konfigurationen erstellt. E
    >Für die restliche Anleitung werden Sie **not** Verwenden Sie die CocoaPods-Anweisungen, sondern stattdessen ein natives Swift Package Manager (SPM)-basiertes Setup.
    >
 
-1. Wählen Sie die **[!UICONTROL Swift]** Registerkarte unten **[!UICONTROL Initialisierungscode hinzufügen]**. Dieser Codeblock zeigt, wie Sie die erforderlichen SDKs importieren und die Erweiterungen beim Start registrieren. Weitere Informationen hierzu finden Sie unter [SDKs installieren](install-sdks.md).
+1. Wählen Sie die **[!UICONTROL Swift]** Registerkarte unten **[!UICONTROL Initialisierungscode hinzufügen]**. Dieser Codeblock zeigt, wie Sie die erforderlichen SDKs importieren und die Erweiterungen beim Start registrieren. Weitere Einzelheiten hierzu finden Sie unter [SDKs installieren](install-sdks.md).
 
 1. Kopieren ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) die **[!UICONTROL Umgebungsdatei-ID]** und speichern Sie es an einem Ort, wie Sie es später benötigen. Diese eindeutige ID verweist auf Ihre Entwicklungsumgebung. Jede Umgebung (Produktion, Staging, Entwicklung) verfügt über einen eigenen eindeutigen ID-Wert.
 
@@ -148,7 +149,7 @@ Ihre Bibliothek ist für die neuen Erweiterungen und Konfigurationen erstellt. E
 
 >[!NOTE]
 >
->Die Installationsanweisungen sollten als Ausgangspunkt und nicht als endgültige Dokumentation betrachtet werden. Die neuesten SDK-Versionen und Codebeispiele finden Sie in der offiziellen [Dokumentation](https://developer.adobe.com/client-sdks/documentation/).
+>Die Installationsanweisungen sollten als Ausgangspunkt und nicht als endgültige Dokumentation betrachtet werden. Die neuesten SDK-Versionen und Codebeispiele finden Sie in der offiziellen [Dokumentation](https://developer.adobe.com/client-sdks/home/).
 
 ## Architektur von mobilen Tags
 
@@ -156,10 +157,12 @@ Wenn Sie mit der Webversion von Tags (früher Launch) vertraut sind, müssen Sie
 
 * Im Web wird eine Tag-Eigenschaft in JavaScript gerendert, das dann (normalerweise) in der Cloud gehostet wird. Diese JavaScript-Datei wird direkt auf der Website referenziert.
 
-* In einer mobilen Tag-Eigenschaft werden Regeln und Konfigurationen in JSON-Dateien gerendert, die in der Cloud gehostet werden. Die JSON-Dateien werden von der Mobile Core-Erweiterung in der Mobile App heruntergeladen und gelesen. Erweiterungen sind separate SDKs, die zusammenarbeiten. Wenn Sie Ihrer Tag-Eigenschaft eine Erweiterung hinzufügen, müssen Sie auch die App aktualisieren. Wenn Sie eine Erweiterungseinstellung ändern oder eine Regel erstellen, werden diese Änderungen in der App übernommen, sobald Sie die aktualisierte Tag-Bibliothek veröffentlichen. Dank dieser Flexibilität können Sie Einstellungen ändern (z. B. die Report Suite-ID von Adobe Analytics) oder sogar das Verhalten Ihrer App ändern (mithilfe von Datenelementen und Regeln, wie Sie in späteren Lektionen sehen werden), ohne den Code in Ihrer App ändern zu müssen und die App erneut an den Appstore zu senden.
+* In einer mobilen Tag-Eigenschaft werden Regeln und Konfigurationen in JSON-Dateien gerendert, die in der Cloud gehostet werden. Die JSON-Dateien werden von der Mobile Core-Erweiterung in der Mobile App heruntergeladen und gelesen. Erweiterungen sind separate SDKs, die zusammenarbeiten. Wenn Sie Ihrer Tag-Eigenschaft eine Erweiterung hinzufügen, müssen Sie auch die App aktualisieren. Wenn Sie eine Erweiterungseinstellung ändern oder eine Regel erstellen, werden diese Änderungen in der App übernommen, sobald Sie die aktualisierte Tag-Bibliothek veröffentlichen. Dank dieser Flexibilität können Sie Einstellungen ändern (z. B. die ID der Adobe Analytics-Report Suite) oder sogar das Verhalten Ihrer App ändern (mithilfe von Datenelementen und Regeln, wie Sie in späteren Lektionen sehen werden), ohne den Code in Ihrer App ändern und den Appstore erneut senden zu müssen.
 
 >[!SUCCESS]
 >
->Sie verfügen jetzt über eine mobile Tag-Eigenschaft, die im Rest dieses Tutorials verwendet werden kann.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Sie verfügen jetzt über eine mobile Tag-Eigenschaft, die im Rest dieses Tutorials verwendet werden kann.
+>
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[SDKs installieren](install-sdks.md)**

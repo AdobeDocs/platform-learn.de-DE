@@ -3,9 +3,9 @@ title: Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK
 description: Erfahren Sie, wie Sie Experience Cloud-Programme mit dem Adobe Experience Platform Web SDK implementieren.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '416'
 ht-degree: 26%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 26%
 
 Erfahren Sie, wie Sie Experience Cloud-Programme mit dem Adobe Experience Platform Web SDK implementieren.
 
-Experience Platform Web SDK ist eine Client-seitige JavaScript-Bibliothek, mit der Adobe Experience Cloud-Kunden über das Adobe Experience Platform Edge Network sowohl mit Adobe Apps als auch mit Drittanbieterdiensten interagieren können. Siehe [Übersicht über das Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) für detailliertere Informationen.
+Experience Platform Web SDK ist eine Client-seitige JavaScript-Bibliothek, mit der Adobe Experience Cloud-Kunden über das Adobe Experience Platform Edge Network sowohl mit Adobe-Anwendungen als auch mit Drittanbieterdiensten interagieren können. Siehe [Übersicht über das Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) für detailliertere Informationen.
 
 Dieses Tutorial führt Sie durch die Implementierung des Platform Web SDK auf einer Beispiel-Einzelhandelswebsite mit dem Namen Luma. Die [](https://luma.enablementadobe.com/content/luma/us/en.html)Luma-Website verfügt über eine umfangreiche Datenschicht und Funktionen, mit denen Sie eine realistische Implementierung erstellen können. Nach Abschluss dieses Tutorials sollten Sie bereit sein, mit der Implementierung all Ihrer Marketing-Lösungen über das Platform Web SDK auf Ihrer eigenen Website zu beginnen.
 
@@ -35,9 +35,9 @@ Nach Abschluss des Tutorials können Sie:
    * **[Adobe Audience Manager](setup-audience-manager.md)**
    * **[Adobe Target](setup-target.md)**
 
-* Erstellen von Tag-Regeln und XDM-Objektdatenelementen zum Senden von Daten an Adobe Apps
+* Erstellen von Tag-Regeln und XDM-Objektdatenelementen zum Senden von Daten an Adobe-Anwendungen
 
-* Validieren der Implementierung mit dem Adobe Experience Platform Debugger
+* Validieren der Implementierung mithilfe des Adobe Experience Platform Debuggers
 
 * Erfassen der Benutzerzustimmung
 
@@ -61,4 +61,4 @@ Los geht‘s!
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '2734'
+source-wordcount: '2701'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 Erfahren Sie, wie Sie Push-Benachrichtigungen für mobile Apps mit dem Experience Platform Mobile SDK und Journey Optimizer erstellen.
 
-Mit Journey Optimizer können Sie Journey erstellen und Nachrichten an Zielgruppen senden. Bevor Sie Push-Benachrichtigungen mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von Push-Benachrichtigungen in Journey Optimizer finden Sie im Abschnitt [Dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+Mit Journey Optimizer können Sie Journey erstellen und Nachrichten an Zielgruppen senden. Bevor Sie Push-Benachrichtigungen mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von Push-Benachrichtigungen in Journey Optimizer finden Sie im Abschnitt [Dokumentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html).
 
 ![Architektur](assets/architecture-ajo.png)
 
@@ -30,12 +30,12 @@ Mit Journey Optimizer können Sie Journey erstellen und Nachrichten an Zielgrupp
 
 * Die App wurde erfolgreich erstellt und mit installierten und konfigurierten SDKs ausgeführt.
 * Richten Sie die App für Adobe Experience Platform ein.
-* Zugriff auf Journey Optimizer und ausreichende Berechtigungen wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
+* Zugriff auf Journey Optimizer und ausreichende Berechtigungen wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
    * Erstellen Sie eine App-Oberfläche.
    * Erstellen Sie eine Journey.
    * Erstellen einer Nachricht.
    * Erstellen von Nachrichtenvoreinstellungen.
-* Bezahltes Apple-Entwicklerkonto mit ausreichendem Zugriff zum Erstellen von Zertifikaten, Kennungen und Schlüsseln.
+* **Bezahltes Apple-Entwicklerkonto** mit ausreichend Zugriff zum Erstellen von Zertifikaten, Kennungen und Schlüsseln.
 * Physisches iOS-Gerät oder Simulator zum Testen.
 
 ## Lernziele
@@ -159,7 +159,7 @@ Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag
 
 ## Signing
 
-Das Signieren der Luma-App ist nur für die [Push-Benachrichtigungen erstellen und senden](journey-optimizer-push.md) und [In-App-Nachrichten erstellen und senden](journey-optimizer-inapp.md) Lektionen in diesem Tutorial. Diese Lektionen erfordern ein Apple-Bereitstellungsprofil, das **erfordert ein gebührenpflichtiges Apple-Entwicklerkonto**.
+Zum Senden von Push-Benachrichtigungen und **erfordert ein gebührenpflichtiges Apple-Entwicklerkonto**.
 
 So aktualisieren Sie die Signatur für Ihre App:
 
@@ -205,7 +205,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 >Wenn Sie die [SDKs installieren](install-sdks.md) -Abschnitt, ist das SDK bereits installiert und Sie können diesen Schritt überspringen.
 >
 
-1. Stellen Sie in Xcode sicher, dass [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios.git) wird zur Liste der Pakete in Package-Abhängigkeiten hinzugefügt. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Stellen Sie in Xcode sicher, dass [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) wird zur Liste der Pakete in Package-Abhängigkeiten hinzugefügt. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** im Xcode-Projektnavigator.
 1. Sichern `AEPMessaging` ist Teil Ihrer Importliste.
 
@@ -265,7 +265,7 @@ Sie werden einen neuen Ereignistyp definieren, der noch nicht als Teil der Liste
 
 ### Ereignis definieren
 
-Ereignisse in Journey Optimizer ermöglichen den einheitlichen Trigger Ihrer Journey, Nachrichten wie z. B. Push-Benachrichtigungen zu senden. Siehe [Über Ereignisse](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en) für weitere Informationen.
+Ereignisse in Journey Optimizer ermöglichen den einheitlichen Trigger Ihrer Journey, Nachrichten, z. B. Push-Benachrichtigungen, zu senden. Siehe [Über Ereignisse](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en) für weitere Informationen.
 
 1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche die Option **[!UICONTROL Konfigurationen]** über die linke Leiste.
 
@@ -304,7 +304,7 @@ Ereignisse in Journey Optimizer ermöglichen den einheitlichen Trigger Ihrer Jou
    1. Wählen Sie **[!UICONTROL Speichern]** aus.
       ![Ereignis bearbeiten Schritt 2](assets/ajo-edit-event2.png)
 
-Sie haben soeben eine Ereigniskonfiguration erstellt, die auf dem Erlebnisereignisschema der Mobile App basiert, das Sie im Rahmen dieses Tutorials zuvor erstellt haben. Diese Ereigniskonfiguration filtert eingehende Erlebnisereignisse nach Ihrem spezifischen Ereignistyp (`application.test`), sodass Sie sicherstellen, dass nur Ereignisse mit diesem bestimmten Typ, die von Ihrer mobilen App aus initiiert werden, die von Ihnen erstellte Journey im nächsten Schritt Trigger werden. In einem realen Szenario möchten Sie möglicherweise Push-Benachrichtigungen von einem externen Dienst senden. Es gelten jedoch die gleichen Konzepte: Von der externen Anwendung senden Sie ein Erlebnisereignis an Experience Platform, das spezifische Felder aufweist, auf die Sie Bedingungen anwenden können, bevor diese Ereignisse auf eine Journey Trigger werden.
+Sie haben soeben eine Ereigniskonfiguration erstellt, die auf dem Erlebnisereignisschema der Mobile App basiert, das Sie im Rahmen dieses Tutorials zuvor erstellt haben. Diese Ereigniskonfiguration filtert eingehende Erlebnisereignisse nach Ihrem spezifischen Ereignistyp (`application.test`), sodass nur Ereignisse mit diesem bestimmten Typ, die von Ihrer mobilen App aus initiiert werden, die im nächsten Schritt von Ihnen erstellte Journey Trigger werden. In einem realen Szenario möchten Sie möglicherweise Push-Benachrichtigungen von einem externen Dienst versenden. Dabei gelten jedoch die gleichen Konzepte: Von der externen Anwendung senden Sie ein Erlebnisereignis an Experience Platform, das spezifische Felder aufweist, auf die Sie Bedingungen anwenden können, bevor diese Ereignisse Trigger einer Journey werden.
 
 ### Journey erstellen
 
@@ -425,6 +425,8 @@ Sie sollten jetzt über alle Tools verfügen, um Push-Benachrichtigungen in Ihre
 
 >[!SUCCESS]
 >
->Sie haben die App jetzt für Push-Benachrichtigungen mit Journey Optimizer und der Journey Optimizer-Erweiterung für das Experience Platform Mobile SDK aktiviert.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Sie haben die App jetzt für Push-Benachrichtigungen mit Journey Optimizer und der Journey Optimizer-Erweiterung für das Experience Platform Mobile SDK aktiviert.
+>
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[In-App-Nachrichten erstellen und senden](journey-optimizer-inapp.md)**

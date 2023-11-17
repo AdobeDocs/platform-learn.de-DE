@@ -1,20 +1,20 @@
 ---
 title: Einrichten einer Ereignisweiterleitungs-Eigenschaft
-description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mit Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1886'
 ht-degree: 7%
 
 ---
 
 # Einrichten einer Ereignisweiterleitungs-Eigenschaft
 
-Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mit Experience Platform Web SDK-Daten verwenden.
+Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden.
 
-Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassung verfügbar ist. Mit der Ereignisweiterleitung können Sie Daten direkt vom Adobe Experience Platform Edge Network an Drittanbieter ohne Adobe und nicht an den herkömmlichen Client-seitigen Browser senden. Weitere Informationen zu den Vorteilen der Ereignisweiterleitung finden Sie im Abschnitt [Übersicht über die Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassung verfügbar ist. Mit der Ereignisweiterleitung können Sie Daten direkt vom Adobe Experience Platform Edge Network an Drittanbieter senden, die keine Adobe sind, und nicht an den herkömmlichen Client-seitigen Browser. Erfahren Sie mehr über die Vorteile der Ereignisweiterleitung im [Übersicht über die Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
 
 Um die Ereignisweiterleitung in Adobe Experience Platform zu verwenden, müssen Daten zunächst mit einer oder mehreren der folgenden drei Optionen an Adobe Experience Platform Edge Network gesendet werden:
 
@@ -42,7 +42,7 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-* Eine Softwarelizenz, die die Ereignisweiterleitung enthält. Die Ereignisweiterleitung ist eine gebührenpflichtige Funktion der Datenerfassung. Weitere Informationen erhalten Sie von Ihrem Adobe Account Team.
+* Eine Softwarelizenz, die die Ereignisweiterleitung enthält. Die Ereignisweiterleitung ist eine gebührenpflichtige Funktion der Datenerfassung. Weitere Informationen erhalten Sie von Ihrem Adobe-Account-Team.
 * Die Ereignisweiterleitung wurde in Ihrer Experience Cloud-Organisation aktiviert.
 * Benutzerberechtigung für die Ereignisweiterleitung. (in [Admin Console](https://adminconsole.adobe.com/), unter dem Adobe Experience Platform Launch-Produkt, Berechtigungselemente für[!UICONTROL Plattformen] > [!UICONTROL Edge] und alle [!UICONTROL Eigenschaftsrechte]). Nach der Erteilung sollte [!UICONTROL Ereignisweiterleitung] im linken Navigationsbereich der Datenerfassungsoberfläche:
   ![Eigenschaften für die Ereignisweiterleitung](assets/event-forwarding-menu.png)
@@ -51,7 +51,7 @@ Am Ende dieser Lektion können Sie:
 
    * Erstkonfiguration
 
-      * [Berechtigungen konfigurieren](configure-permissions.md)
+      * [Konfigurieren von Berechtigungen](configure-permissions.md)
       * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
       * [Identitäts-Namespace konfigurieren](configure-identities.md)
       * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -92,7 +92,7 @@ So konfigurieren Sie Target im Datastream:
 
 1. Wählen Sie **[!UICONTROL Service hinzufügen]** aus
    ![Hinzufügen eines Dienstes zum Datastream](assets/event-forwarding-datastream-addService.png)
-1. Auswählen **[!UICONTROL Ereignisweiterleitung]** als **[!UICONTROL Diensleistung]**
+1. Auswählen **[!UICONTROL Ereignisweiterleitung]** als **[!UICONTROL Dienst]**
 
 1. Unter dem **[!UICONTROL Eigenschafts-ID]** Dropdown-Liste den Namen auswählen, den Sie Ihrer Ereignisweiterleitungs-Eigenschaft gegeben haben, in diesem Fall `Server-Side - Web SDK Course`
 
@@ -100,7 +100,7 @@ So konfigurieren Sie Target im Datastream:
 
    >[!TIP]
    >
-   >    Um Daten an eine Ereignisweiterleitungsumgebung außerhalb der Adobe-Organisation zu senden, wählen Sie **[!UICONTROL IDs manuell eingeben]** und fügen Sie eine ID ein. Die ID wird bereitgestellt, wenn Sie eine Ereignisweiterleitungs-Eigenschaft erstellen.
+   >    Um Daten an eine Ereignisweiterleitungsumgebung außerhalb der Adobe-Org zu senden, wählen Sie **[!UICONTROL IDs manuell eingeben]** und fügen Sie eine ID ein. Die ID wird bereitgestellt, wenn Sie eine Ereignisweiterleitungs-Eigenschaft erstellen.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -206,14 +206,14 @@ Es gibt einige Hauptunterschiede zwischen dem Konfigurieren von Regeln in einer 
 
 * **[!UICONTROL Veranstaltungen] &amp; [!UICONTROL Bedingungen]**:
 
-   * **Tags**: Alle Regeln werden durch ein Ereignis ausgelöst, das in der Regel angegeben werden muss, z. B. `Library Loaded - Page Top`. Bedingungen sind optional.
-   * **Ereignisweiterleitung**: Es wird davon ausgegangen, dass jedes Ereignis, das an Platform Edge Network gesendet wird, ein Trigger zur Weiterleitung von Daten ist. Daher gibt es keine [!UICONTROL Veranstaltungen] muss in Ereignisweiterleitungsregeln ausgewählt werden. Um zu verwalten, welche Ereignisse Trigger einer Ereignisweiterleitungsregel sind, müssen Sie Bedingungen konfigurieren.
+   * **Tags**: Alle Regeln werden durch ein Ereignis ausgelöst, das in der Regel angegeben werden muss, beispielsweise `Library Loaded - Page Top`. Bedingungen sind optional.
+   * **Ereignisweiterleitung**: Es wird davon ausgegangen, dass jedes Ereignis, das an Platform Edge Network gesendet wird, ein Trigger zum Weiterleiten von Daten ist. Daher gibt es keine [!UICONTROL Veranstaltungen] muss in Ereignisweiterleitungsregeln ausgewählt werden. Um zu verwalten, welche Ereignisse Trigger einer Ereignisweiterleitungsregel sind, müssen Sie Bedingungen konfigurieren.
 
 * **Tokenisierung von Datenelementen**:
 
    * **Tags**: Datenelementnamen werden mit einem -Token versehen. `%` am Anfang und am Ende des Datenelementnamens, wenn dieser in einer Regel verwendet wird. Beispiel: `%viewportHeight%`.
 
-   * **Ereignisweiterleitung**: Datenelementnamen werden mit einem Token versehen `{{` am Anfang und `}}` am Ende des Datenelementnamens, wenn dieser in einer Regel verwendet wird. Beispiel: `{{viewportHeight}}`.
+   * **Ereignisweiterleitung**: Datenelementnamen werden mit einem -Token versehen. `{{` am Anfang und `}}` am Ende des Datenelementnamens, wenn dieser in einer Regel verwendet wird. Beispiel: `{{viewportHeight}}`.
 
 * **Sequenz von Regelaktionen**:
 
@@ -288,7 +288,7 @@ Jetzt können Sie Ihre Eigenschaft für die Ereignisweiterleitung mit dem Platfo
 
 1. Führen Sie die Schritte aus, um [Tag-Bibliothek wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) auf [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en/men.html) zur Web SDK-Tag-Eigenschaft, der Sie Ihre Eigenschaft für die Ereignisweiterleitung im Datastream zugeordnet haben.
 
-1. Bevor Sie die Seite neu laden, öffnen Sie im Experience Platform Debugger **[!UICONTROL Protokolle]** über die linke Navigation
+1. Bevor Sie die Seite neu laden, öffnen Sie auf dem Experience Platform Debugger **[!UICONTROL Protokolle]** über die linke Navigation
 
 1. Wählen Sie die **[!UICONTROL Edge]** Registerkarte und wählen Sie **[!UICONTROL Verbinden]** Anzeigen der Anforderungen des Platform Edge Network
 
@@ -321,4 +321,4 @@ Herzlichen Glückwunsch! Sie haben die Ereignisweiterleitung konfiguriert!
 
 >[!NOTE]
 >
-Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

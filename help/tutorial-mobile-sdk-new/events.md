@@ -3,7 +3,7 @@ title: Tracking von Ereignisdaten
 description: Erfahren Sie, wie Sie Ereignisdaten in einer Mobile App verfolgen.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 4%
@@ -171,7 +171,7 @@ Um das Senden von Commerce-bezogenen Erlebnisereignissen wiederverwendbar zu mac
       1. Für <img src="assets/saveforlater.png" width="15" />
 
          ```swift
-         // Send saveForLaters commerce experience event
+         // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
@@ -185,13 +185,13 @@ Um das Senden von Commerce-bezogenen Erlebnisereignissen wiederverwendbar zu mac
       1. Für <img src="assets/purchase.png" width="20" />
 
          ```swift
-         // Send purchases commerce experience event
+         // Send purchase commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
 
 >[!TIP]
 >
->Wenn Sie sich für Android entwickeln, verwenden Sie Map (`java.util.Map`) als grundlegende Schnittstelle zum Erstellen Ihrer XDM-Payload.
+>Wenn Sie sich für Android™ entwickeln, verwenden Sie Map (`java.util.Map`) als grundlegende Schnittstelle zum Erstellen Ihrer XDM-Payload.
 
 
 ### Benutzerdefinierte Feldergruppen
@@ -205,9 +205,9 @@ Stellen Sie sich vor, Sie möchten Bildschirmansichten und Interaktionen in der 
 
   >[!NOTE]
   >
-  >* Standardfeldgruppen beginnen immer im Objektstamm.
+  * Standardfeldgruppen beginnen immer im Objektstamm.
   >
-  >* Benutzerdefinierte Feldergruppen beginnen immer unter einem Objekt, das für Ihre Experience Cloud-Organisation eindeutig ist. `_techmarketingdemos` in diesem Beispiel.
+  * Benutzerdefinierte Feldergruppen beginnen immer unter einem Objekt, das für Ihre Experience Cloud-Organisation eindeutig ist. `_techmarketingdemos` in diesem Beispiel.
 
   Für das App-Interaktionsereignis erstellen Sie ein Objekt wie:
 
@@ -341,7 +341,7 @@ Erneut lassen Sie diesen Code in Ihr Xcode-Projekt implementieren.
 1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 
    1. Verschieben Sie das Symbol &quot;Versicherung&quot;nach links.
-   1. Auswählen **[!UICONTROL Startseite]** in der Registerkartenleiste und überprüfen Sie, ob eine **[!UICONTROL ECID]**, **[!UICONTROL Email]** und **[!UICONTROL CRM-ID]** im Startbildschirm.
+   1. Auswählen **[!UICONTROL Startseite]** in der Registerkartenleiste und überprüfen Sie, ob eine **[!UICONTROL ECID]**, **[!UICONTROL Email]**, und **[!UICONTROL CRM-ID]** im Startbildschirm.
    1. Auswählen **[!DNL Products]** in der Symbolleiste.
    1. Wählen Sie ein Produkt.
    1. Auswählen <img src="assets/saveforlater.png" width="15" />.
@@ -367,15 +367,17 @@ Sie sollten jetzt über alle Tools verfügen, um Ihrer App die Datenerfassung hi
 
 >[!TIP]
 >
->Überprüfen Sie die [fertige App](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) für weitere Beispiele.
+Überprüfen Sie die [fertige App](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) für weitere Beispiele.
 
 
 ## Senden von Ereignissen an Analytics und Platform
 
-Nachdem Sie die Ereignisse erfasst und an das Platform Edge Network gesendet haben, werden sie an die in Ihrer [datastream](create-datastream.md). In späteren Lektionen ordnen Sie diese Daten zu [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) und anderen Adobe Experience Cloud-Lösungen wie [Adobe Target](target.md) und Adobe Journey Optimizer.
+Nachdem Sie die Ereignisse erfasst und an das Platform Edge Network gesendet haben, werden sie an die in Ihrer [datastream](create-datastream.md). In späteren Lektionen ordnen Sie diese Daten zu [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md)und anderen Adobe Experience Cloud-Lösungen wie [Adobe Target](target.md) und Adobe Journey Optimizer.
 
 >[!SUCCESS]
 >
->Sie haben Ihre App jetzt so eingerichtet, dass sie Commerce-, App-Interaktionen- und Bildschirmverfolgungsereignisse im Adobe Experience Platform Edge Network und allen in Ihrem Datastream definierten Diensten verfolgt.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+Sie haben Ihre App jetzt so eingerichtet, dass sie Commerce-, App-Interaktionen- und Bildschirmverfolgungsereignisse im Adobe Experience Platform Edge Network und allen in Ihrem Datastream definierten Diensten verfolgt.
+>
+Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[WebViews verarbeiten](web-views.md)**

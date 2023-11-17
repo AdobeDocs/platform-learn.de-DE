@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein XDM-Schema für App-Ereignisse erstellen.
 feature: Mobile SDK,Schemas
 hide: true
 exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1505'
 ht-degree: 16%
 
 ---
@@ -134,7 +134,7 @@ Zu Lernzwecken verwenden Sie vordefinierte und benutzerdefinierte Feldergruppen.
 
 >[!NOTE]
 >
->Beachten Sie, dass nicht alle Felder einer Gruppe verwendet werden müssen. Sie können Felder auch entfernen, wenn dies dazu beiträgt, das Schema kurz und verständlich zu halten. Wenn es hilfreich ist, können Sie sich ein Schema als leere Datenschicht vorstellen. In Ihrer App füllen Sie die entsprechenden Werte zum richtigen Zeitpunkt aus.
+>Beachten Sie, dass nicht alle Felder einer Gruppe verwendet werden müssen. Sie können auch Felder entfernen, um das Schema kurz und verständlich zu halten. Wenn es hilfreich ist, können Sie sich ein Schema als leere Datenschicht vorstellen. In Ihrer App füllen Sie die entsprechenden Werte zum richtigen Zeitpunkt aus.
 
 Die [!UICONTROL Ereignis für Kundenerlebnisse] Feldergruppe hat einen Datentyp namens [!UICONTROL Webinformationen], der Ereignisse wie Seitenansichten und Link-Klicks beschreibt. Zum Zeitpunkt des Schreibens gibt es keine App-Parität für diese Funktion. Daher erstellen Sie Ihre eigene.
 
@@ -163,7 +163,7 @@ Erstellen Sie zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 1. Um ein Feld hinzuzufügen, wählen Sie die ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Schaltfläche.
 
 
-1. Dieses Feld ist ein Container-Objekt für App-Interaktionen. Geben Sie daher eine Binnenmajuskel-Schreibweise an. **[!UICONTROL Feldname]** `appInteraction`, **[!UICONTROL Anzeigename]** `App Interaction`und wählen Sie `Object` aus dem **[!UICONTROL Typ]** Liste.
+1. Dieses Feld ist ein Container-Objekt für die App-Interaktion. Geben Sie daher eine Binnenmajuskel-Schreibweise an **[!UICONTROL Feldname]** `appInteraction`, **[!UICONTROL Anzeigename]** `App Interaction`und wählen Sie `Object` aus dem **[!UICONTROL Typ]** Liste.
 
 1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
@@ -234,6 +234,8 @@ Fügen Sie nun mithilfe Ihres benutzerdefinierten Datentyps eine benutzerdefinie
 
 >[!SUCCESS]
 >
->Sie verfügen jetzt über ein Schema, das für den Rest des Tutorials verwendet werden kann.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Sie verfügen jetzt über ein Schema, das für den Rest des Tutorials verwendet werden kann.
+>
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Erstellen Sie eine [!UICONTROL datastream]](create-datastream.md)**

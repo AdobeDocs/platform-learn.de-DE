@@ -3,9 +3,9 @@ title: Orte verwenden
 description: Erfahren Sie, wie Sie den Geolocation-Dienst Places in Ihrer mobilen App verwenden.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1692'
 ht-degree: 4%
 
 ---
@@ -54,7 +54,7 @@ Sie definieren einige Zielpunkte im Places-Dienst.
    ![Bibliothek erstellen](assets/places-create-library.png)
 1. So schließen Sie die **[!UICONTROL Bibliotheken verwalten]** Dialogfeld auswählen **[!UICONTROL Schließen]**.
 1. Zurück in **[!UICONTROL POI-Verwaltung]** auswählen **[!UICONTROL POIs importieren]**.
-1. Auswählen **[!UICONTROL Starten]** in t**[!UICONTROL die Importorte]** Dialogfeld.
+1. Auswählen **[!UICONTROL Starten]** im **[!UICONTROL Importorte]** angezeigt.
 1. Auswählen **[!DNL Luma]** aus der Liste der Bibliotheken,
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
    ![Bibliothek auswählen](assets/places-import-select-library.png)
@@ -172,7 +172,7 @@ Als Nächstes definieren Sie Regeln für die Verwendung dieser Datenelemente.
       ![Tags-Aktion](assets/tags-action-mobile-core.png)
 
 1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben dem **[!UICONTROL Mobile Core - Daten anhängen]** Aktion.
-   1. Auswählen **[!UICONTROL Adobe Experience Platform Edge Network]** aus dem **[!UICONTROL Erweiterung]** Liste und Auswahl **[!UICONTROL Weiterleiten von Ereignissen an Edge Network]**. Diese Aktion stellt sicher, dass das Ereignis und die zusätzlichen Payload-Daten an das Edge-Netzwerk weitergeleitet werden.
+   1. Auswählen **[!UICONTROL Adobe Experience Platform Edge Network]** aus dem **[!UICONTROL Erweiterung]** Liste und Auswahl **[!UICONTROL Weiterleiten von Ereignissen an Edge Network]**. Diese Aktion stellt sicher, dass das Ereignis und zusätzliche Payload-Daten an das Platform Edge Network weitergeleitet werden.
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
 1. Um die Regel zu speichern, wählen Sie **[!UICONTROL In Bibliothek speichern]**.
@@ -240,7 +240,7 @@ So überprüfen Sie Ihre Einrichtung in Assurance:
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Auswählen **[!UICONTROL Karte und Simulieren]** in der linken Leiste.
 1. Verschieben Sie die Karte an die Position eines Ihrer POIs.
-1. Auswählen ![Fanggerät](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Laden-POIs simulieren.  Ihr POI wird anhand eines Kreises und einer Nadel identifiziert.
+1. Auswählen ![Fanggerät](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Laden-POIs simulieren. Ihr POI wird anhand eines Kreises und einer Nadel identifiziert.
 1. Wählen Sie Ihren POI aus.
 1. Wählen Sie im Popup-Fenster ![Fanggerät](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Eintrittsereignis simulieren]**.
    ![Eintrittsereignis simulieren](assets/places-simulate.png)
@@ -283,7 +283,7 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
    ]
    ```
 
-1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator und suchen Sie die `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator und suchen Sie die `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` -Funktion. Fügen Sie den folgenden Code hinzu:
 
    ```swift
    // Process geolocation event
@@ -318,9 +318,9 @@ Wie in den vorherigen Lektionen erläutert, bietet die Installation einer mobile
 
 1. Navigieren Sie zu **[!UICONTROL Standort]** Registerkarte.
 
-1. Verschieben Sie die Karte (ziehen Sie sie), um sicherzustellen, dass der blaue mittlere Kreis über einem der POIs liegt, z. B. London.
+1. Verschieben Sie die Karte (ziehen Sie sie), um sicherzustellen, dass sich der blaue mittlere Kreis über einem der POIs befindet, z. B. London.
 
-1. Tippen <img src="assets/geobutton.png" width="20" /> bis die Kategorie und der Name in der Tabelle an der roten Stelle mit dem Pin angezeigt werden.
+1. Tippen <img src="assets/geobutton.png" width="20" /> bis die Kategorie und der Name in der Beschriftung an der roten Stelle mit dem Pin erscheinen.
 
 1. Tippen Sie auf die Bezeichnung des POI, wodurch sich der **[!UICONTROL Nächster POI]** Blatt.
 
@@ -344,6 +344,8 @@ Sie haben eine Implementierung der Funktionen für Ihre App gesehen, die haupts�
 
 >[!SUCCESS]
 >
->Sie haben die App jetzt für Geolocation-Dienste unter Verwendung der Places-Erweiterung im Experience Platform Mobile SDK aktiviert.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Sie haben die App jetzt für Geolocation-Dienste unter Verwendung der Places-Erweiterung im Experience Platform Mobile SDK aktiviert.
+>
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Zuordnen von Daten zu Adobe Analytics](analytics.md)**

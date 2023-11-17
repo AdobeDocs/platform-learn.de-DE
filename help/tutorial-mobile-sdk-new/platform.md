@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
 exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 8%
 
 ---
@@ -69,7 +69,7 @@ Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, wer
 
 ## Hinzufügen des Adobe Experience Platform-Datenspeicherdiensts
 
-Um Ihre XDM-Daten vom Edge-Netzwerk an Adobe Experience Platform zu senden, konfigurieren Sie den Adobe Experience Platform-Dienst für den Datastraam, den Sie im Rahmen von [Erstellen eines Datenspeichers](create-datastream.md).
+Um Ihre XDM-Daten aus dem Edge-Netzwerk an Adobe Experience Platform zu senden, fügen Sie den Adobe Experience Platform-Dienst zum -Datastream hinzu, den Sie als Teil von [Erstellen eines Datenspeichers](create-datastream.md).
 
 >[!IMPORTANT]
 >
@@ -117,7 +117,7 @@ Mit Experience Platform Echtzeit-Kundenprofil können Sie eine ganzheitliche Ans
 1. Öffnen Sie beispielsweise Ihr Schema. **[!DNL Luma Mobile App Event Schema]**.
 1. Aktivieren **[!UICONTROL Profil]**.
 1. Auswählen **[!UICONTROL Daten für dieses Schema enthalten eine primäre Identität im Feld identityMap .]** im Dialogfeld.
-1. **** Schema speichern.
+1. **[!UICONTROL Speichern Sie das Schema.]**
 
    ![Aktivieren des Schemas für das Profil](assets/platform-profile-schema.png)
 
@@ -169,6 +169,6 @@ Marketingexperten und Analytics können viel mehr mit in Experience Platform erf
 
 >[!SUCCESS]
 >
->Sie haben Ihre App jetzt so eingerichtet, dass Daten nicht nur an das Edge-Netzwerk, sondern auch an Adobe Experience Platform gesendet werden.<br>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Sie haben Ihre App jetzt so eingerichtet, dass Daten nicht nur an das Edge-Netzwerk, sondern auch an Adobe Experience Platform gesendet werden.<br>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Push-Benachrichtigungen erstellen und senden](journey-optimizer-push.md)**

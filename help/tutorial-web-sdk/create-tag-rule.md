@@ -1,12 +1,12 @@
 ---
 title: Tag-Regel erstellen
-description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform Edge Network senden. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform Edge Network senden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 5%
+source-wordcount: '848'
+ht-degree: 6%
 
 ---
 
@@ -32,7 +32,7 @@ Am Ende dieser Lektion können Sie:
 
 Sie kennen Datenerfassungs-Tags und die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html)und Sie müssen die folgenden vorherigen Lektionen im Tutorial abgeschlossen haben:
 
-* [Berechtigungen konfigurieren](configure-permissions.md)
+* [Konfigurieren von Berechtigungen](configure-permissions.md)
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
 * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -47,7 +47,7 @@ Um Regeln in Tags besser zu verwalten, wird empfohlen, eine standardmäßige Nam
 
 Hier gilt;
 
-1. location ist die Seite oder die Seiten auf der Site, auf der die Regel ausgelöst wird
+1. location ist die Seite oder die Seiten auf der Site, auf der die Regel ausgelöst wird.
 1. -Ereignis ist der Trigger, der das -Beacon auslöst
 1. -Tool ist die spezifische Anwendung bzw. die Anwendungen, die im Aktionsschritt für diese Regel verwendet werden
 
@@ -69,19 +69,17 @@ So erstellen Sie eine Tag-Regel:
    > Diese Regel wird von Adobe Analytics und Target in einer zukünftigen Lektion auf bestimmte Weise verwendet. Dies ist der Grund `AA & AT` wird am Ende des Namens verwendet.
 
 1. Im **[!UICONTROL Veranstaltungen]** Bereich, wählen Sie **[!UICONTROL Hinzufügen]**
-
-   ![Benennen Sie die Regel und fügen Sie ein Ereignis hinzu.](assets/rule-name.png)
-1. Verwenden Sie die **[!UICONTROL Haupterweiterung]** und wählen Sie `Library Loaded (Page Top)` als **[!UICONTROL Ereignistyp]**.
+   ![Benennen Sie die Regel und fügen Sie ein Ereignis hinzu](assets/rule-name.png)
+1. Verwenden Sie die **[!UICONTROL Haupterweiterung]** und wählen `Library Loaded (Page Top)` als **[!UICONTROL Ereignistyp]**.
 
    Diese Einstellung bedeutet, dass die Regel jedes Mal ausgelöst wird, wenn die Tag-Bibliothek auf einer Seite geladen wird.
-1. Auswählen **[!UICONTROL Änderungen beibehalten]** , um zum Hauptregelbildschirm zurückzukehren
-   ![Ereignis &quot;Bibliothek geladen&quot;hinzufügen](assets/rule-event-pagetop.png)
+1. Auswählen **[!UICONTROL Änderungen beibehalten]** zum Hauptregelbildschirm zurückzukehren
+   ![Hinzufügen des Ereignisses &quot;Bibliothek geladen&quot;](assets/rule-event-pagetop.png)
 1. Im **[!UICONTROL Bedingungen]** auswählen, wählen Sie die **[!UICONTROL Hinzufügen]** button
    ![Bedingungen hinzufügen](assets/rules-add-conditions.png)
-1. Auswählen **[!UICONTROL Logiktyp]** `Exception`, **[!UICONTROL Erweiterung]** `Core`und **[!UICONTROL Bedingungstyp]** `Path Without Query String`
+1. Auswählen **[!UICONTROL Logiktyp]** `Exception`, **[!UICONTROL Erweiterung]** `Core`, und **[!UICONTROL Bedingungstyp]** `Path Without Query String`
 1. URL-Pfad eingeben `/content/luma/us/en/user/cart.html` im **[!UICONTROL path equals]** und **[!UICONTROL name]** it `Core - cart page`
 1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus
-
    ![Bedingungen hinzufügen](assets/rule-condition-exception.png)
 1. Fügen Sie drei weitere Ausnahmen für die folgenden URL-Pfade hinzu
 
@@ -101,10 +99,10 @@ So erstellen Sie eine Tag-Regel:
    > Mit diesem Dropdown-Menü wird die **`xdm.eventType`** im XDM-Objekt. Sie können in dieses Feld zwar auch Freiform-Beschriftungen eingeben, es wird jedoch dringend empfohlen, **nicht** da es bei Platform negative Auswirkungen haben wird.
 
 1. Als **[!UICONTROL XDM-Daten]**, wählen Sie die `xdm.content` Datenelement, das in der vorherigen Lektion erstellt wurde
-1. Auswählen **[!UICONTROL Änderungen beibehalten]** , um zum Hauptregelbildschirm zurückzukehren
+1. Auswählen **[!UICONTROL Änderungen beibehalten]** zum Hauptregelbildschirm zurückzukehren
 
    ![Hinzufügen der Aktion &quot;Ereignis senden&quot;](assets/rule-set-action-xdm.png)
-1. Auswählen **[!UICONTROL Speichern]** , um die Regel zu speichern
+1. Auswählen **[!UICONTROL Speichern]** zum Speichern der Regel
 
    ![Speichern der Regel](assets/rule-save.png)
 
@@ -136,10 +134,10 @@ Die Erstellung der Bibliothek kann einige Minuten dauern. Wenn sie abgeschlossen
 
 Wie Sie auf der [!UICONTROL Veröffentlichungsfluss] -Bildschirm gibt es viel mehr im Veröffentlichungsprozess, was über den Rahmen dieses Tutorials hinausgeht. In diesem Tutorial wird nur eine einzige Bibliothek in Ihrer Entwicklungsumgebung verwendet.
 
-Jetzt können Sie die Daten in der Anfrage mit dem Adobe Experience Platform Debugger überprüfen.
+Jetzt können Sie die Daten in der Anfrage mithilfe des Adobe Experience Platform Debuggers überprüfen.
 
 [Nächste ](validate-with-debugger.md)
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren eines Datenstroms
-description: Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Lösungen konfigurieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+description: Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Lösungen konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '447'
 ht-degree: 9%
 
 ---
@@ -28,7 +28,7 @@ Am Ende dieser Lektion können Sie:
 
 Bevor Sie Ihren Datastream konfigurieren, müssen Sie bereits die folgenden Lektionen abgeschlossen haben:
 
-* [Berechtigungen konfigurieren](configure-permissions.md)
+* [Konfigurieren von Berechtigungen](configure-permissions.md)
 * [Schema konfigurieren](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
 
@@ -39,16 +39,16 @@ Jetzt können Sie einen Datastream erstellen, um Platform Edge Network mitzuteil
 **So erstellen Sie einen Datastream:**
 
 1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target="_blank"}
-1. Vergewissern Sie sich, dass Sie sich in der richtigen Sandbox befinden.
+1. Stellen Sie sicher, dass sich die richtige Sandbox befindet.
 
    >[!NOTE]
    >
    >Wenn Sie Platform-basierte Anwendungen wie Real-Time CDP verwenden, empfehlen wir für dieses Tutorial die Verwendung einer Entwicklungs-Sandbox. Wenn nicht, verwenden Sie die **[!UICONTROL Prod]** Sandbox.
 
 1. Navigieren Sie zu **[!UICONTROL Datenspeicher]** in der linken Navigation
-1. Auswählen **[!UICONTROL Neuer Datenspeicher]** auf der rechten Bildschirmseite angezeigt.
+1. Auswählen **[!UICONTROL Neuer Datenspeicher]** auf der rechten Bildschirmseite.
 1. Eingabe `Luma Web SDK` als **[!UICONTROL Name]**. Dieser Name wird später referenziert, wenn Sie die Web SDK-Erweiterung in Ihrer Tag-Eigenschaft konfigurieren.
-1. Wählen Sie Ihre `Luma Web Event Data` als **[!UICONTROL Ereignisschema]**
+1. Wählen Sie `Luma Web Event Data` als **[!UICONTROL Ereignisschema]**
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
    ![Erstellen des Datastreams](assets/datastream-create-datastream.png)
@@ -60,7 +60,7 @@ Jetzt können Sie einen Datastream erstellen, um Platform Edge Network mitzuteil
 
 
 
-Im nächsten Bildschirm können Sie dem Datastream Dienste wie Adobe Apps hinzufügen. Sie werden jedoch zu diesem Zeitpunkt im Tutorial keine Dienste hinzufügen. Sie werden dies später in den Lektionen tun [Einrichten der Experience Platform](setup-experience-platform.md), [Einrichten von Analytics](setup-analytics.md), [Einrichten von Audience Manager](setup-audience-manager.md), [Einrichten von Target](setup-target.md)oder [Ereignisweiterleitung](setup-event-forwarding.md).
+Auf dem nächsten Bildschirm können Sie Dienste wie Adobe-Anwendungen zum Datastream hinzufügen. Sie werden jedoch zu diesem Zeitpunkt im Tutorial keine Dienste hinzufügen. Sie werden dies später im Unterricht tun [Experience Platform einrichten](setup-experience-platform.md), [Einrichten von Analytics](setup-analytics.md), [Einrichten von Audience Manager](setup-audience-manager.md), [Einrichten von Target](setup-target.md)oder [Ereignisweiterleitung](setup-event-forwarding.md).
 
 >[!NOTE]
 >
@@ -72,4 +72,4 @@ Sie können jetzt die Platform Web SDK-Erweiterung in Ihrer Tag-Eigenschaft inst
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

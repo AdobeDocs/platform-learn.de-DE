@@ -2,10 +2,10 @@
 title: Streamen von Daten an Adobe Experience Platform mit dem Web SDK
 description: Erfahren Sie, wie Sie Webdaten mit dem Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1606'
-ht-degree: 10%
+source-wordcount: '1605'
+ht-degree: 11%
 
 ---
 
@@ -58,7 +58,7 @@ In dieser Übung erstellen Sie einen Datensatz, um Inhalte und E-Commerce-Detail
 1. Öffnen **[!UICONTROL Datensätze]** über die linke Navigation
 1. Wählen Sie **[!UICONTROL Erstellen eines Datensatzes]** aus
 
-   ![Schema erstellen](assets/experience-platform-create-dataset.png)
+   ![Erstellen eines Schemas](assets/experience-platform-create-dataset.png)
 
 1. Wählen Sie die **[!UICONTROL Datensatz aus Schema erstellen]** option
 
@@ -240,4 +240,4 @@ Sie haben jetzt das Platform Web SDK für Experience Platform (und Real-Time CDP
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

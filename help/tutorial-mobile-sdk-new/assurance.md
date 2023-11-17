@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Assurance-Erweiterung in eine mobile App 
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '985'
 ht-degree: 3%
 
 ---
@@ -123,7 +123,7 @@ In Xcode:
 
    <img src="assets/tracking-continue.png" width="300">
 
-1. Im **[!UICONTROL &quot;Luma App&quot;erlauben, Ihre Aktivität über die App und Websites anderer Unternehmen hinweg zu verfolgen]** Dialogfeld auswählen **[!UICONTROL Zulassen]**.
+1. Im **[!UICONTROL Mit &quot;Luma App&quot;können Sie Ihre Aktivitäten über die Apps und Websites anderer Unternehmen hinweg verfolgen.]** Dialogfeld auswählen **[!UICONTROL Zulassen]**.
 
    <img src="assets/tracking-allow.png" width="300">
 
@@ -141,7 +141,7 @@ In Ihrem Browser:
 
    Wenn Sie ein physisches Gerät verwenden:
 
-   * Auswählen **[!UICONTROL QR-Code scannen]**. Verwenden Sie Ihre Kamera auf Ihrem physischen Gerät, um den QR-Code zu scannen, und tippen Sie auf den Link, um die App zu öffnen.
+   * Auswählen **[!UICONTROL QR-Code scannen]**. Um die App zu öffnen, verwenden Sie die Kamera auf Ihrem physischen Gerät, um den QR-Code zu scannen, und tippen Sie auf den Link.
 
      ![Zuverlässigkeitsqa-Code](assets/assurance-qr-code.png)
 
@@ -171,7 +171,7 @@ In Ihrem Browser:
 
          ![Zuverlässigkeitsereignisse](assets/assurance-events.png)
 
-Wenn Sie auf Herausforderungen stoßen, lesen Sie bitte die [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de){target="_blank"}.
+Wenn Sie auf Herausforderungen stoßen, überprüfen Sie die [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de){target="_blank"}.
 
 
 ## Überprüfen von Erweiterungen
@@ -186,16 +186,16 @@ So überprüfen Sie, ob Ihre App die aktuellsten Erweiterungen verwendet:
 
    ![Erweiterungsversionen konfigurieren](assets/assurance-configure-extension-versions.png)
 
-1. Auswählen ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Erweiterungsversionen]**. Es wird ein Überblick über die neuesten verfügbaren Erweiterungen und die in Ihrer Version des Programms verwendeten Erweiterungen angezeigt.
+1. Auswählen ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Erweiterungsversionen]** , um einen Überblick über die neuesten verfügbaren Erweiterungen und die in Ihrer Version des Programms verwendeten Erweiterungen zu erhalten.
 
    ![Erweiterungsversionen](assets/assurance-extension-versions.png)
 
-1. So aktualisieren Sie Ihre Erweiterungsversionen (z. B. **[!UICONTROL Messaging]** und **[!UICONTROL Optimieren]**), wählen Sie in Xcode für die spezifischen Erweiterungen, für die ein Upgrade erforderlich ist, das Paket (Erweiterung) aus **[!UICONTROL Paketabhängigkeiten]** (z. B. **[!UICONTROL AGPessaging]**) und wählen Sie im Kontextmenü die Option **[!UICONTROL Paket aktualisieren]**. Xcode aktualisiert die Paketabhängigkeiten.
+1. So aktualisieren Sie Ihre Erweiterungsversionen (z. B. **[!UICONTROL Messaging]** und **[!UICONTROL Optimieren]**) wählen Sie das Paket (Erweiterung) aus **[!UICONTROL Paketabhängigkeiten]** (zum Beispiel: **[!UICONTROL AGPessaging]**) und wählen Sie im Kontextmenü die Option **[!UICONTROL Paket aktualisieren]**. Xcode aktualisiert die Paketabhängigkeiten.
 
 
 >[!NOTE]
 >
->Wenn Sie Ihre Erweiterungen (Pakete) in Xcode aktualisiert haben, müssen Sie Ihre aktuelle Sitzung schließen und löschen und alle Schritte von [Herstellen einer Verbindung zu einer Sitzung](#connecting-to-a-session) und [Überprüfen von Erweiterungen](#verify-extensions) , um sicherzustellen, dass die Zuverlässigkeitserklärung die korrekten Erweiterungen in einer neuen Zuverlässigkeitssitzung ordnungsgemäß meldet.
+>Nachdem Sie Ihre Erweiterungen (Pakete) in Xcode aktualisiert haben, schließen und löschen Sie die aktuelle Sitzung und wiederholen Sie alle Schritte von [Herstellen einer Verbindung zu einer Sitzung](#connecting-to-a-session) und [Überprüfen von Erweiterungen](#verify-extensions) , um sicherzustellen, dass die Zuverlässigkeitserklärung die korrekten Erweiterungen in einer neuen Zuverlässigkeitssitzung ordnungsgemäß meldet.
 
 
 
@@ -203,7 +203,9 @@ So überprüfen Sie, ob Ihre App die aktuellsten Erweiterungen verwendet:
 
 >[!SUCCESS]
 >
->Sie haben Ihre App jetzt so eingerichtet, dass sie für den Rest des Tutorials Assurance verwendet.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Sie haben Ihre App jetzt so eingerichtet, dass sie für den Rest des Tutorials Assurance verwendet.
+>
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Weiter: **[Implementieren der Zustimmung](consent.md)**

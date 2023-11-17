@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementie
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '539'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Erfahren Sie, wie Sie die Zustimmung in eine Mobile App implementieren.
 
-Die mobile Adobe Experience Platform-Erweiterung &quot;Einverständnis&quot;ermöglicht die Erfassung von Zustimmungsvoreinstellungen von Ihrer mobilen App bei Verwendung des Adobe Experience Platform Mobile SDK und der Edge Network-Erweiterung. Weitere Informationen zum [Zustimmungserweiterung](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), in der Dokumentation.
+Die mobile Adobe Experience Platform-Erweiterung &quot;Einverständnis&quot;ermöglicht die Erfassung von Zustimmungsvoreinstellungen von Ihrer mobilen App bei Verwendung des Adobe Experience Platform Mobile SDK und der Edge Network-Erweiterung. Weitere Informationen zum [Zustimmungserweiterung](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) in der Dokumentation.
 
 ## Voraussetzungen
 
@@ -35,7 +35,7 @@ Wenn Sie das Tutorial von Anfang an befolgt haben, erinnern Sie sich möglicherw
 
 Um mit der Datenerfassung zu beginnen, müssen Sie die Zustimmung des Benutzers einholen. In einer realen App möchten Sie die Best Practices für die Zustimmung für Ihre Region konsultieren. In diesem Tutorial erhalten Sie das Einverständnis des Benutzers, indem Sie ihn einfach mit einem Warnhinweis anfordern:
 
-1. Sie möchten den Benutzer nur einmal um Zustimmung bitten. Daher möchten Sie die Mobile SDK-Zustimmung mit den erforderlichen Berechtigungen zum Tracking mit Apples [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency). In dieser App gehen Sie davon aus, dass der Benutzer bei der Autorisierung des Trackings auch der Erfassung von Ereignissen zustimmt.
+1. Sie möchten den Benutzer nur einmal um Zustimmung bitten. Dazu können Sie die Mobile SDK-Zustimmung mit der erforderlichen Autorisierung für das Tracking mit Apple kombinieren [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency). In dieser App gehen Sie davon aus, dass Benutzer, wenn sie die Verfolgung zulassen, der Erfassung von Ereignissen zustimmen.
 
 1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** im Xcode-Projektnavigator.
 
@@ -96,14 +96,16 @@ Im obigen Beispiel protokollieren Sie einfach den Zustimmungsstatus in Xcode in 
 
 ## Validierung mit Versicherung
 
-1. Löschen Sie die Anwendung von Ihrem Gerät oder Simulator, da wir das Tracking und die Zustimmung entsprechend zurücksetzen und initialisieren möchten.
-1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
+1. Löschen Sie die Anwendung von Ihrem Gerät oder Simulator, um das Tracking und die Zustimmung ordnungsgemäß zurückzusetzen und zu initialisieren.
+1. Um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden, lesen Sie die Informationen unter [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) Abschnitt.
 1. Beim Verschieben der App von **[!UICONTROL Startseite]** Bildschirm zu **[!UICONTROL Produkte]** Bildschirm und zurück zu **[!UICONTROL Startseite]** angezeigt wird, sollte ein **[!UICONTROL Zustimmungsantwort abrufen]** -Ereignis in der Assurance-Benutzeroberfläche.
    ![Validieren der Zustimmung](assets/consent-update.png)
 
 
 >[!SUCCESS]
 >
->Sie haben Ihre App jetzt aktiviert, um den Benutzer beim ersten Start nach der Installation (oder Neuinstallation) aufzufordern, die Verwendung des Adobe Experience Platform Mobile SDK zu genehmigen.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Sie haben Ihre App jetzt aktiviert, um den Benutzer beim ersten Start nach der Installation (oder Neuinstallation) aufzufordern, die Verwendung des Adobe Experience Platform Mobile SDK zu genehmigen.
+>
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[Lebenszyklusdaten erfassen](lifecycle-data.md)**

@@ -1,12 +1,12 @@
 ---
 title: Erstellen von Datenelementen
-description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: fe03ee89bfccd0105b45383c84403b6a3d230235
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 6%
+source-wordcount: '1201'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie die wichtigsten Datenelemente erstellen, die zum Erfassen 
 
 >[!IMPORTANT]
 >
->Die Daten für diese Lektion stammen aus dem `[!UICONTROL digitalData]` Datenschicht auf der Site &quot;Luma&quot;. Um die Datenschicht anzuzeigen, öffnen Sie Ihre Entwicklerkonsole und geben Sie in `[!UICONTROL digitalData]` um die vollständige verfügbare Datenschicht anzuzeigen.![digitalData-Datenschicht](assets/data-element-data-layer.png)
+>Die Daten für diese Lektion stammen aus dem `[!UICONTROL digitalData]` Datenschicht auf der Site &quot;Luma&quot;. Um die Datenschicht anzuzeigen, öffnen Sie Ihre Entwicklerkonsole und geben Sie in `[!UICONTROL digitalData]` , um die vollständige verfügbare Datenschicht anzuzeigen.![digitalData-Datenschicht](assets/data-element-data-layer.png)
 
 
 Unabhängig vom Platform Web SDK müssen Sie weiterhin Datenelemente in Ihrer Tag-Eigenschaft erstellen, die Datenerfassungsvariablen Ihrer Website wie einer Datenschicht, einem HTML-Attribut oder anderen zugeordnet sind. Nachdem Sie diese Datenelemente erstellt haben, müssen Sie sie dem XDM-Schema zuordnen, das Sie während der [Schemas konfigurieren](configure-schemas.md) Lektion. Zu diesem Zweck stellt die Platform Web SDK-Erweiterung einen neuen Datenelementtyp namens XDM-Objekt bereit. Daher besteht das Erstellen von Datenelementen aus zwei Aktionen:
@@ -49,7 +49,7 @@ Am Ende dieser Lektion können Sie:
 
 Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die folgenden vorherigen Schritte im Tutorial ausgeführt haben
 
-* [Berechtigungen konfigurieren](configure-permissions.md)
+* [Konfigurieren von Berechtigungen](configure-permissions.md)
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
 * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -63,12 +63,12 @@ Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;
 
 Bevor Sie mit der Erstellung des XDM-Objekts beginnen, erstellen Sie den folgenden Satz von Datenelementen, die dem [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Datenschicht:
 
-1. Navigieren Sie zu **[!UICONTROL Datenelemente]** und wählen Sie **[!UICONTROL Datenelement hinzufügen]** (oder **[!UICONTROL Neues Datenelement erstellen]** wenn in der Tag-Eigenschaft keine Datenelemente vorhanden sind)
+1. Navigieren Sie zu **[!UICONTROL Datenelemente]** und wählen **[!UICONTROL Datenelement hinzufügen]** (oder **[!UICONTROL Neues Datenelement erstellen]** wenn in der Tag-Eigenschaft keine Datenelemente vorhanden sind)
 
    ![Datenelement erstellen](assets/data-element-create.jpg)
 
 1. Benennen Sie das Datenelement `page.pageInfo.pageName`.
-1. Verwenden Sie die **[!UICONTROL JavaScript-Variable]** **[!UICONTROL Datenelementtyp]** , um auf einen Wert in der Datenschicht von Luma zu verweisen: `digitalData.page.pageInfo.pageName`
+1. Verwenden Sie die **[!UICONTROL JavaScript-Variable]** **[!UICONTROL Datenelementtyp]** auf einen Wert in der Datenschicht von Luma verweisen: `digitalData.page.pageInfo.pageName`
 
 1. Markieren Sie die Kästchen für **[!UICONTROL Wert in Kleinbuchstaben erzwingen]** und **[!UICONTROL Text bereinigen]**, um die Groß-/Kleinschreibung zu standardisieren und unnötige Leerzeichen zu entfernen
 
@@ -103,7 +103,7 @@ Führen Sie dieselben Schritte aus, um diese vier zusätzlichen Datenelemente zu
 
 Als Nächstes können Sie das Datenelement &quot;Identity Map&quot;erstellen:
 
-1. Navigieren Sie zu **[!UICONTROL Datenelemente]** und wählen Sie **[!UICONTROL Datenelement hinzufügen]**
+1. Navigieren Sie zu **[!UICONTROL Datenelemente]** und wählen **[!UICONTROL Datenelement hinzufügen]**
 
 1. **[!UICONTROL Name]** das Datenelement `identityMap.loginID`
 
@@ -182,7 +182,7 @@ Erstellen Sie ein XDM-Objekt zum Erfassen von Inhaltsdaten:
 
    >[!NOTE]
    >
-   >Die Sandbox entspricht der Experience Platformen-Sandbox, in der Sie das Schema erstellt haben. In Ihrer Experience Platform-Instanz können mehrere Sandboxes verfügbar sein. Stellen Sie daher sicher, dass Sie die richtige Sandbox auswählen. Arbeiten Sie immer zuerst in der Entwicklung, dann in der Produktion.
+   >Die Sandbox entspricht der Experience Platform-Sandbox, in der Sie das Schema erstellt haben. In Ihrer Experience Platform-Instanz können mehrere Sandboxes verfügbar sein. Wählen Sie daher die richtige Sandbox aus. Arbeiten Sie immer zuerst in der Entwicklung, dann in der Produktion.
 
 1. Scrollen Sie nach unten, bis Sie zum **`web`** Objekt
 1. Auswahl zum Öffnen
@@ -226,4 +226,4 @@ Wenn diese Datenelemente vorhanden sind, können Sie mit dem Senden von Daten an
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,11 +1,11 @@
 ---
 title: Einrichten der Zustimmung mit dem Platform Web SDK
-description: Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+description: Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Am Ende dieser Lektion können Sie:
 
 * Laden einer CMP mithilfe von Tags
 * Datenschutzeinstellungen in der Experience Platform Web SDK-Tag-Erweiterung konfigurieren
-* Festlegen der Zustimmung für das Experience Platform Web SDK auf der Grundlage der Besucheraktion
+* Festlegen der Zustimmung für das Experience Platform Web SDK basierend auf der Aktion des Besuchers
 
 ## Voraussetzungen
 
@@ -45,8 +45,8 @@ Bevor Sie in die Tag-Konfigurationen springen, erfahren Sie mehr über die in di
 1. Besuch [Klaro](https://heyklaro.com/) und ein Konto einrichten.
 1. Navigieren Sie zu **Privacy Manager** und erstellen Sie eine Instanz gemäß den Anweisungen.
 1. Verwenden Sie die **Integrationscode** um Klaro in Ihre Tag-Eigenschaft zu injizieren (Anweisungen finden Sie in der nächsten Übung).
-1. Überspringen Sie die **Scannen** -Abschnitt, da dadurch die Tag-Eigenschaft erkannt wird, die auf der Demowebsite von Luma fest codiert ist und nicht die Eigenschaft, die Sie für dieses Tutorial erstellt haben.
-1. Hinzufügen eines Dienstes namens `aep web sdk` und aktivieren Sie **Dienststandardstatus**. Wenn diese Option aktiviert ist, lautet der standardmäßige Zustimmungswert `true`, andernfalls `false`. Diese Konfiguration ist nützlich, wenn Sie entscheiden möchten, welcher standardmäßige Zustimmungsstatus (vor der Zustimmung des Besuchers) für Ihre Webanwendung gelten soll. Beispiel:
+1. Überspringen **Scannen** -Abschnitt, da dadurch die Tag-Eigenschaft erkannt wird, die auf der Demowebsite von Luma fest codiert ist und nicht die Eigenschaft, die Sie für dieses Tutorial erstellt haben.
+1. Hinzufügen eines Dienstes namens `aep web sdk` und aktivieren Sie die **Dienststandardstatus**. Wenn diese Option aktiviert ist, lautet der Standardwert für die Zustimmung `true`, andernfalls `false`. Diese Konfiguration ist nützlich, wenn Sie entscheiden möchten, welcher standardmäßige Zustimmungsstatus (vor der Zustimmung des Besuchers) für Ihre Webanwendung gelten soll. Beispiel:
    * Bei CCPA wird die Standardzustimmung normalerweise auf `true`. Sie werden dieses Szenario als **Implizites Opt-in** in diesem Tutorial
    * Für die DSGVO wird die standardmäßige Zustimmung normalerweise auf `false`. Sie werden dieses Szenario als **Implizites Opt-out** in diesem Tutorial.
 
@@ -117,7 +117,7 @@ Jetzt konfigurieren und implementieren Sie die Zustimmung für dieses Szenario:
 
 
 
-2. Speichern und erstellen Sie diese Änderung in Ihrer Tag-Bibliothek
+2. Speichern und erstellen Sie diese Änderung in Ihrer Tag-Bibliothek.
 3. Laden der Tag-Bibliothek auf der Demosite &quot;Luma&quot;
 4. Aktivieren Sie das Debugging von Tags auf der Site &quot;Luma&quot;und laden Sie die Seite neu. In der Entwicklerkonsole Ihres Browsers sollte der Wert defaultConsent gleich **[!UICONTROL In]**
 5. Mit dieser Konfiguration sendet die Experience Platform Web SDK-Erweiterung weiterhin Netzwerkanforderungen, es sei denn, ein Besucher entscheidet, die Cookies abzulehnen und abzumelden:
@@ -148,9 +148,9 @@ Wenn ein Besucher sich entscheidet, sich abzumelden (Tracking-Cookies abzulehnen
     ![Data Element consent confirmed](assets/consent-data-element-confirmed.png)
 -->
 
-1. Erstellen Sie eine Regel, die Trigger beim Klicken auf **Ich schrumpfe**.  Benennen Sie diese Regel wie folgt: `all pages - click consent banner - set consent "out"`
+1. Erstellen Sie eine Regel, die Trigger beim Klicken auf **I fall**.  Benennen Sie diese Regel wie folgt: `all pages - click consent banner - set consent "out"`
 
-1. Als **[!UICONTROL Ereignis]**, verwenden **[!UICONTROL Klicken]** on **[!UICONTROL Elemente, die mit dem CSS-Selektor übereinstimmen]** `#klaro .cn-decline`
+1. Als **[!UICONTROL Ereignis]**, verwenden **[!UICONTROL Klicks]** on **[!UICONTROL Elemente, die mit der CSS-Auswahl übereinstimmen]** `#klaro .cn-decline`
 
    ![Regelbedingung Benutzer klickt auf &quot;Ich lehne ab&quot;](assets/consent-optOut-clickEvent.png)
 
@@ -194,7 +194,7 @@ Wenn sich ein Besucher für eine Teilnahme entscheidet (Annahme der Tracking-Coo
 
 1. Erstellen Sie eine Regel, die Trigger beim Klicken auf **Das ist in Ordnung**.  Benennen Sie diese Regel wie folgt: `all pages - click consent banner - set consent "in"`
 
-1. Als **[!UICONTROL Ereignis]**, verwenden **[!UICONTROL Klicken]** on **[!UICONTROL Elemente, die mit dem CSS-Selektor übereinstimmen]** `#klaro .cm-btn-success`
+1. Als **[!UICONTROL Ereignis]**, verwenden **[!UICONTROL Klicks]** on **[!UICONTROL Elemente, die mit der CSS-Auswahl übereinstimmen]** `#klaro .cm-btn-success`
 
    ![Regelbedingung Benutzer klickt auf &quot;Das ist in Ordnung&quot;](assets/consent-optIn-clickEvent.png)
 
@@ -224,4 +224,4 @@ Weitere Informationen über [!UICONTROL Einverständnis festlegen] Aktion, siehe
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

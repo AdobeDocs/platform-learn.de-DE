@@ -3,9 +3,9 @@ title: Installieren von Adobe Experience Platform Mobile SDKs
 description: Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK in eine Mobile App implementieren.
 hide: true
 exl-id: 86348d8b-f428-465d-a79e-ce73d140da79
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: c74053b99729269fa42d18372f84fd7c6c2c2e0c
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '940'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ In dieser Lektion werden Sie:
 
 ## Swift Package Manager
 
-Anstatt CocoaPods zu verwenden und eine Pod-Datei zu verwenden (wie in den Installationsanweisungen für Mobilgeräte beschrieben), lesen Sie [SDK-Installationsanweisungen generieren](./configure-tags.md#generate-sdk-install-instructions)), fügen Sie mithilfe des nativen Swift Package Manager von Xcode einzelne Pakete hinzu. Für das Xcode-Projekt wurden bereits alle Paketabhängigkeiten hinzugefügt. Der Xcode **[!UICONTROL Paketabhängigkeiten]** Der Bildschirm sollte wie folgt aussehen:
+Anstatt CocoaPods und eine Pod-Datei zu verwenden (siehe [SDK-Installationsanweisungen generieren](./configure-tags.md#generate-sdk-install-instructions)), fügen Sie mithilfe des nativen Swift Package Manager von Xcode einzelne Pakete hinzu. Für das Xcode-Projekt wurden bereits alle Paketabhängigkeiten hinzugefügt. Der Xcode **[!UICONTROL Paketabhängigkeiten]** Der Bildschirm sollte wie folgt aussehen:
 
 ![Abhängigkeiten von Xcode-Paketen](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
 
@@ -43,15 +43,15 @@ In Xcode können Sie **[!UICONTROL Datei]** > **[!UICONTROL Pakete hinzufügen..
 
 | Paket | Beschreibung |
 |---|---|
-| [AEP Core](https://github.com/adobe/aepsdk-core-ios.git) | Die `AEPCore`, `AEPServices`, und `AEPIdentity` Erweiterungen stellen die Grundlage des Adobe Experience Platform SDK dar - jede App, die das SDK verwendet, muss sie enthalten. Diese Module enthalten einen gemeinsamen Satz von Funktionen und Diensten, die für alle SDK-Erweiterungen erforderlich sind.<br/><ul><li>`AEPCore` enthält die Implementierung des Ereignis-Hub. Der Ereignis-Hub ist der Mechanismus zur Bereitstellung von Ereignissen zwischen der App und dem SDK. Der Ereignis-Hub wird auch zum Freigeben von Daten zwischen Erweiterungen verwendet.</li><li>`AEPServices` bietet mehrere wiederverwendbare Implementierungen, die für die Plattformunterstützung erforderlich sind, einschließlich Netzwerk, Festplattenzugriff und Datenbankverwaltung.</li><li>`AEPIdentity` implementiert die Integration mit Adobe Experience Platform Identity-Diensten.</li><li>`AEPSignal` stellt die Signal-Erweiterung der Adobe Experience Platform SDKs dar, die es Marketing-Experten ermöglicht, ein &quot;Signal&quot;an ihre Apps zu senden, um Daten an externe Ziele zu senden oder URLs zu öffnen.</li><li>`AEPLifecycle` stellt die Adobe Experience Platform SDKs Lifecycle-Erweiterung dar, die bei der Erfassung von Lebenszyklusmetriken für Anwendungen wie Informationen zur Anwendungsinstallation oder -aktualisierung, zum Anwendungsstart und zu Sitzungsinformationen, Geräteinformationen und zusätzlichen Kontextdaten, die vom Anwendungsentwickler bereitgestellt werden, hilft.</li></ul> |
-| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios.git) | Die mobile Adobe Experience Platform Edge Network-Erweiterung (`AEPEdge`) ermöglicht den Versand von Daten von einer Mobile App an das Adobe Edge-Netzwerk. Mit dieser Erweiterung können Sie Adobe Experience Cloud-Funktionen robuster implementieren, mehrere Adobe-Lösungen über einen Netzwerkaufruf bereitstellen und diese Informationen gleichzeitig an die Adobe Experience Platform weiterleiten.<br/>Die mobile Edge Network-Erweiterung ist eine Erweiterung für das Adobe Experience Platform SDK und erfordert die `AEPCore` und `AEPServices` Erweiterungen für die Ereignisverarbeitung sowie die `AEPEdgeIdentity` Erweiterung zum Abrufen der Identitäten, z. B. ECID. |
-| [AEP Edge Identity](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | Die mobile Erweiterung &quot;AEP Edge Identity&quot;(`AEPEdgeIdentity`) ermöglicht die Verarbeitung von Benutzeridentitätsdaten aus einer Mobile App bei Verwendung des Adobe Experience Platform SDK und der Edge Network-Erweiterung. |
-| [Zustimmung zu AEP Edge](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | Die mobile Erweiterung &quot;AEP Consent Collection&quot;(`AEPConsent`) ermöglicht die Erfassung von Zustimmungsvoreinstellungen von der Mobile App bei Verwendung des Adobe Experience Platform SDK und der Edge Network-Erweiterung. |
-| [AEP-Benutzerprofil](https://github.com/adobe/aepsdk-userprofile-ios.git) | Die Mobile-Erweiterung des Adobe Experience Platform-Benutzerprofils (`AEPUserProfile`) ist eine Erweiterung zur Verwaltung von Benutzerprofilen für das Adobe Experience Platform SDK. |
+| [AEP Core](https://github.com/adobe/aepsdk-core-ios) | Die `AEPCore`, `AEPServices`, und `AEPIdentity` Erweiterungen stellen die Grundlage des Adobe Experience Platform SDK dar - jede App, die das SDK verwendet, muss sie enthalten. Diese Module enthalten einen gemeinsamen Satz von Funktionen und Diensten, die für alle SDK-Erweiterungen erforderlich sind.<br/><ul><li>`AEPCore` enthält die Implementierung des Ereignis-Hub. Der Ereignis-Hub ist der Mechanismus zur Bereitstellung von Ereignissen zwischen der App und dem SDK. Der Ereignis-Hub wird auch zum Freigeben von Daten zwischen Erweiterungen verwendet.</li><li>`AEPServices` bietet mehrere wiederverwendbare Implementierungen, die für die Plattformunterstützung erforderlich sind, einschließlich Netzwerk, Festplattenzugriff und Datenbankverwaltung.</li><li>`AEPIdentity` implementiert die Integration mit Adobe Experience Platform Identity-Diensten.</li><li>`AEPSignal` stellt die Signal-Erweiterung der Adobe Experience Platform SDKs dar, die es Marketing-Experten ermöglicht, ein &quot;Signal&quot;an ihre Apps zu senden, um Daten an externe Ziele zu senden oder URLs zu öffnen.</li><li>`AEPLifecycle` stellt die Adobe Experience Platform SDKs Lifecycle-Erweiterung dar, die bei der Erfassung von Lebenszyklusmetriken für Anwendungen wie Informationen zur Anwendungsinstallation oder -aktualisierung, zum Anwendungsstart und zu Sitzungsinformationen, Geräteinformationen und zusätzlichen Kontextdaten, die vom Anwendungsentwickler bereitgestellt werden, hilft.</li></ul> |
+| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios) | Die mobile Adobe Experience Platform Edge Network-Erweiterung (`AEPEdge`) ermöglicht den Versand von Daten von einer Mobile App an das Adobe Edge-Netzwerk. Mit dieser Erweiterung können Sie Adobe Experience Cloud-Funktionen robuster implementieren, mehrere Adobe-Lösungen über einen Netzwerkaufruf bereitstellen und diese Informationen gleichzeitig an die Adobe Experience Platform weiterleiten.<br/>Die mobile Edge Network-Erweiterung ist eine Erweiterung für das Adobe Experience Platform SDK und erfordert die `AEPCore` und `AEPServices` Erweiterungen für die Ereignisverarbeitung sowie die `AEPEdgeIdentity` Erweiterung zum Abrufen der Identitäten, z. B. ECID. |
+| [AEP Edge Identity](https://github.com/adobe/aepsdk-edgeidentity-ios) | Die mobile Erweiterung &quot;AEP Edge Identity&quot;(`AEPEdgeIdentity`) ermöglicht die Verarbeitung von Benutzeridentitätsdaten aus einer Mobile App bei Verwendung des Adobe Experience Platform SDK und der Edge Network-Erweiterung. |
+| [Zustimmung zu AEP Edge](https://github.com/adobe/aepsdk-edgeconsent-ios) | Die mobile Erweiterung &quot;AEP Consent Collection&quot;(`AEPConsent`) ermöglicht die Erfassung von Zustimmungsvoreinstellungen von der Mobile App bei Verwendung des Adobe Experience Platform SDK und der Edge Network-Erweiterung. |
+| [AEP-Benutzerprofil](https://github.com/adobe/aepsdk-userprofile-ios) | Die Mobile-Erweiterung des Adobe Experience Platform-Benutzerprofils (`AEPUserProfile`) ist eine Erweiterung zur Verwaltung von Benutzerprofilen für das Adobe Experience Platform SDK. |
 | [AEP Places](https://github.com/adobe/aepsdk-places-ios) | Die AEP Places-Erweiterung (`AEPPlaces`) können Sie Geolocation-Ereignisse verfolgen, wie in der Adobe Places-Benutzeroberfläche und in den Adobe-Datenerfassungs-Tag-Regeln definiert. |
-| [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios.git) | Die AEP Messaging-Erweiterung (`AEPMessaging`) ermöglicht das Senden von Push-Benachrichtigungstoken und Push-Benachrichtigungs-Clickthrough-Feedback an die Adobe Experience Platform. |
+| [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) | Die AEP Messaging-Erweiterung (`AEPMessaging`) ermöglicht das Senden von Push-Benachrichtigungstoken und Push-Benachrichtigungs-Clickthrough-Feedback an die Adobe Experience Platform. |
 | [AEP Optimize](https://github.com/adobe/aepsdk-optimize-ios) | Die AEP Optimize-Erweiterung (`AEPOptimize`) bietet APIs zum Aktivieren von Echtzeit-Personalisierungs-Workflows in den Adobe Experience Platform Mobile SDKs mithilfe der Adobe Target- oder Adobe Journey Optimizer-Offer decisioning. Sie erfordert `AEPCore` und `AEPEdge` Erweiterungen zum Senden von Personalisierungsabfrageereignissen an das Experience Edge-Netzwerk. |
-| [AEP-Sicherheit](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance (alias Projekt Griffon) ist eine neue, innovative Erweiterung (`AEPAssurance`), damit Sie die Erfassung, den Testversand, die Simulation und die Validierung der Datenerfassung und der Bereitstellung von Erlebnissen in Ihrer App unterstützen können. Diese Erweiterung aktiviert Ihre App für die Qualitätssicherung. |
+| [AEP-Sicherheit](https://github.com/adobe/aepsdk-assurance-ios) | Assurance (alias Projekt Griffon) ist eine neue, innovative Erweiterung (`AEPAssurance`), damit Sie die Erfassung, den Testversand, die Simulation und die Validierung der Datenerfassung und der Bereitstellung von Erlebnissen in Ihrer App unterstützen können. Diese Erweiterung aktiviert Ihre App für die Qualitätssicherung. |
 
 
 ## Importieren von Erweiterungen
@@ -81,7 +81,7 @@ Tun Sie dasselbe für **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[
 
 Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** im Xcode-Projektnavigator.
 
-1. Ersetzen Sie die `@AppStorage` value `YOUR_ENVIRONMENT_ID_GOES_HERE` für `environmentFileId` zum Wert der Datei-ID der Entwicklungsumgebung hinzufügen, den Sie aus den Tags in Schritt 6 unter [SDK-Installationsanweisungen generieren](configure-tags.md#generate-sdk-install-instructions).
+1. Ersetzen Sie die `@AppStorage` value `YOUR_ENVIRONMENT_ID_GOES_HERE` für `environmentFileId` zum Wert der Datei-ID der Entwicklungsumgebung hinzufügen, den Sie aus den Tags in [SDK-Installationsanweisungen generieren](configure-tags.md#generate-sdk-install-instructions).
 
    ```swift
    @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
@@ -139,6 +139,8 @@ Der obige Code führt Folgendes aus:
 
 >[!SUCCESS]
 >
->Sie haben jetzt die erforderlichen Pakete installiert und Ihr Projekt aktualisiert, um die erforderlichen Adobe Experience Platform Mobile SDK-Erweiterungen, die Sie für den Rest des Tutorials verwenden werden, ordnungsgemäß zu registrieren.<br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Sie haben jetzt die erforderlichen Pakete installiert und Ihr Projekt aktualisiert, um die erforderlichen Adobe Experience Platform Mobile SDK-Erweiterungen, die Sie für den Rest des Tutorials verwenden werden, ordnungsgemäß zu registrieren.
+>
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[Einrichten der Sicherheit](assurance.md)**

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die mobilen Adobe Experience Cloud-Anwendunge
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 9%
+source-wordcount: '821'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Erfahren Sie, wie Sie Adobe Experience Cloud-Programme mit dem Adobe Experience Platform Mobile SDK in Ihrer Mobile App implementieren.
 
-Experience Platform Mobile SDK ist ein Client-seitiges SDK, mit dem Adobe Experience Cloud-Kunden über das Adobe Experience Platform Edge Network sowohl mit Adobe-Anwendungen als auch mit Drittanbieterdiensten interagieren können. Siehe [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) für detailliertere Informationen.
+Experience Platform Mobile SDK ist ein Client-seitiges SDK, mit dem Adobe Experience Cloud-Kunden über das Adobe Experience Platform Edge Network sowohl mit Adobe-Anwendungen als auch mit Drittanbieterdiensten interagieren können. Siehe [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) für detailliertere Informationen.
 
 ![Architektur](assets/architecture.png)
 
@@ -41,11 +41,11 @@ Nach Abschluss dieses Tutorials können Sie:
    * [Profil](profile.md)
    * [Places](places.md)
    * [Analysen](analytics.md)
-   * [Adobe Experience Platform](platform.md)
+   * [Experience Platform](platform.md)
    * [Push-Nachrichten mit Journey Optimizer](journey-optimizer-push.md)
    * [In-App-Messaging mit Journey Optimizer](journey-optimizer-inapp.md)
-   * [Angebote mit Journey Optimizer](journey-optimizer-offers.md)
-   * [A/B-Tests mit Target](target.md)
+   * [Entscheidungsverwaltung mit Journey Optimizer](journey-optimizer-offers.md)
+   * [Target](target.md)
 
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Nach Abschluss dieses Tutorials können Sie:
 
 ## Voraussetzungen
 
-In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe ID und die erforderlichen Berechtigungen zum Ausführen der Übungen verfügen. Wenn nicht, sollten Sie sich an Ihren Adobe-Administrator wenden, um Zugriff anzufordern.
+In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe ID und die erforderlichen Berechtigungen auf Benutzerebene zum Abschließen der Übungen verfügen. Wenn nicht, sollten Sie sich an Ihren Adobe-Administrator wenden, um Zugriff anzufordern.
 
 * In der Datenerfassung müssen Sie über Folgendes verfügen:
    * **[!UICONTROL Plattformen]**—permission item **[!UICONTROL Mobilnummer]**
@@ -67,22 +67,20 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe ID und die
    * **[!UICONTROL Identity Management]**—Berechtigungselemente zum Verwalten und Anzeigen von Identitäts-Namespaces.
    * **[!UICONTROL Datenerfassung]**—Berechtigungselemente zum Verwalten und Anzeigen von Datenspeichern.
 
-   * Wenn Sie Kunde einer Platform-basierten Anwendung wie Real-Time CDP, Journey Optimizer oder Customer Journey Analytics sind, sollten Sie auch über Folgendes verfügen:
-      * **[!UICONTROL Data Management]**—Berechtigungselemente zum Verwalten und Anzeigen von Datensätzen zum Abschließen der _optionale Plattformübungen_ (erfordert eine Lizenz für eine Platform-basierte Anwendung ).
+   * Wenn Sie Kunde einer Platform-basierten Anwendung wie Real-Time CDP, Journey Optimizer oder Customer Journey Analytics sind und die entsprechenden Lektionen ausführen, sollten Sie auch Folgendes haben:
+      * **[!UICONTROL Data Management]**—Berechtigungselemente zum Verwalten und Anzeigen von Datensätzen.
       * Entwicklung **Sandbox** die Sie für dieses Tutorial verwenden können.
+
+   * Für die Journey Optimizer-Lektionen benötigen Sie Berechtigungen zum Konfigurieren der **Push-Benachrichtigungsdienst** und erstellen Sie eine **App-Oberfläche**, a **Journey**, a **message**, und **Nachrichtenvorgaben**. Für die Entscheidungsverwaltung benötigen Sie die entsprechenden Berechtigungen für **Angebote verwalten** und **Entscheidungen** wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 * Für Adobe Analytics müssen Sie wissen, welche **Report Suites** können Sie verwenden, um dieses Tutorial abzuschließen.
 
-* Für Adobe Target müssen Sie über Berechtigungen verfügen, die ordnungsgemäß konfiguriert sind. **Rollen**, **Arbeitsbereiche**, und **properties** wie beschrieben [here](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=de).
-
-* Für Adobe Journey Optimizer müssen Sie über ausreichende Berechtigungen verfügen, um die **Push-Benachrichtigungsdienst** und erstellen Sie eine **App-Oberfläche**, a **Journey**, a **message** und **Nachrichtenvorgaben**. Für die Entscheidungsverwaltung benötigen Sie die entsprechenden Berechtigungen für **Angebote verwalten** und **Entscheidungen** wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
-
-Alle Experience Cloud-Kunden sollten Zugriff auf die erforderlichen Funktionen haben, die für die Bereitstellung des Mobile SDK erforderlich sind.
+* Für Adobe Target müssen Sie über die Berechtigung zum Erstellen und Aktivieren von Aktivitäten verfügen.
 
 
 >[!NOTE]
 >
->Im Rahmen dieses Tutorials erstellen Sie Schemas, Datensätze, Identitäten usw. Wenn Sie dieses Tutorial mit mehreren Personen in einer Sandbox durchlaufen oder ein freigegebenes Konto verwenden, sollten Sie beim Erstellen dieser Objekte erwägen, eine Identifizierung als Teil Ihrer Namenskonventionen anzuhängen oder vorzustellen. Fügen Sie beispielsweise ` - <your name or initials>` zum Namen des Objekts, das Sie erstellen sollen.
+>Im Rahmen dieses Tutorials erstellen Sie Schemas, Datensätze, Identitäten usw. Wenn mehrere Personen dieses Tutorial in einer Sandbox durchlaufen, sollten Sie beim Erstellen dieser Objekte erwägen, eine Identifizierung als Teil Ihrer Benennungskonventionen anzuhängen oder voranzustellen. Fügen Sie beispielsweise ` - <your name or initials>` zum Namen des Objekts, das Sie erstellen sollen.
 
 
 ## Herunterladen der Luma-App
@@ -93,15 +91,16 @@ Zwei Versionen der Beispiel-App können heruntergeladen werden. Beide Versionen 
 1. [Starten](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: ein Projekt ohne Code oder mit Platzhaltercode für den Großteil des Experience Platform Mobile SDK-Codes, den Sie zum Abschließen der praktischen Übungen in diesem Tutorial benötigen.
 1. [Beenden](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: eine Version mit der vollständigen Implementierung als Referenz.
 
+
 >[!NOTE]
 >
->Sie werden iOS als Plattform verwenden. [!DNL Swift] als Programmiersprache, [!DNL SwiftUI] als UI-Framework und [!DNL Xcode] als integrierte Entwicklungsumgebung (IDE). Viele der erläuterten Implementierungskonzepte sind jedoch für andere Entwicklungsplattformen ähnlich. Und viele haben dieses Tutorial bereits erfolgreich abgeschlossen, ohne zuvor über iOS/Swift(UI) zu verfügen. Sie müssen kein Experte sein, um die Lektionen abzuschließen, aber Sie erhalten mehr aus den Lektionen, wenn Sie Code bequem lesen und verstehen können.
+>Sie verwenden iOS als Plattform, [!DNL Swift] als Programmiersprache, [!DNL SwiftUI] als UI-Framework und [!DNL Xcode] als integrierte Entwicklungsumgebung (IDE). Viele der erläuterten Implementierungskonzepte sind jedoch für andere Entwicklungsplattformen ähnlich. Viele haben dieses Tutorial bereits erfolgreich abgeschlossen, ohne dass zuvor ein iOS/Swift(UI)-Erlebnis vorhanden war. Sie müssen kein Experte sein, um die Lektionen abzuschließen, aber Sie erhalten mehr aus den Lektionen, wenn Sie Code bequem lesen und verstehen können.
 
 
 Los geht‘s!
 
 >[!SUCCESS]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Erstellen eines XDM-Schemas](create-schema.md)**

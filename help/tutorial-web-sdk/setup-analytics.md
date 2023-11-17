@@ -1,18 +1,18 @@
 ---
 title: Einrichten von Adobe Analytics mithilfe des Experience Platform Web SDK
-description: Erfahren Sie, wie Sie Adobe Analytics mithilfe des Experience Platform Web SDK einrichten. Diese Lektion ist Teil des Tutorials Adobe Experience Cloud mit Web SDK implementieren .
+description: Erfahren Sie, wie Sie Adobe Analytics mit dem Experience Platform Web SDK einrichten. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 17b87daf399b11fb698d34bd6f1b93fa8cbaa1d4
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '3554'
-ht-degree: 2%
+source-wordcount: '3545'
+ht-degree: 3%
 
 ---
 
 # Einrichten von Adobe Analytics mit dem Platform Web SDK
 
-Erfahren Sie, wie Sie Adobe Analytics mit [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), erstellen Sie Tag-Regeln, um Daten an Adobe Analytics zu senden, und überprüfen Sie, ob Analytics Daten erwartungsgemäß erfasst.
+Erfahren Sie, wie Sie Adobe Analytics mit [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=de)erstellen Tag-Regeln, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics Daten erwartungsgemäß erfasst.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=de) ist eine branchenführende Anwendung, mit der Sie Ihre Kunden besser verstehen und Ihr Geschäft mit Customer Intelligence steuern können.
 
@@ -31,14 +31,14 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Sie kennen Tags, Adobe Analytics und die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} Anmelde- und Einkaufsfunktion.
+Sie kennen Tags, Adobe Analytics und die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Anmelde- und Einkaufsfunktionen.
 
 Sie benötigen mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie nicht über eine Report Suite für Tests/Entwicklung verfügen, die Sie für dieses Tutorial verwenden können, [erstellen Sie bitte eine](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=de).
 
 Sie müssen alle Schritte aus den vorherigen Abschnitten des Tutorials abgeschlossen haben:
 
 * Erstkonfiguration
-   * [Berechtigungen konfigurieren](configure-permissions.md)
+   * [Konfigurieren von Berechtigungen](configure-permissions.md)
    * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
    * [Identitäts-Namespace konfigurieren](configure-identities.md)
    * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -59,7 +59,7 @@ Die Implementierung des Platform Web SDK sollte so produktunabhängig wie mögli
 
 Informationen dazu, welche XDM-Variablen automatisch Adobe Analytics zugeordnet werden, finden Sie unter [Automatisch in Analytics zugeordnete Variablen](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Jede Variable, die nicht automatisch zugeordnet ist, muss manuell zugeordnet werden.
 
-Das im [Schema konfigurieren](configure-schemas.md) Die Lektion enthält einige automatisch zugeordnete Analytics-Variablen, wie in dieser Tabelle beschrieben:
+Das Schema, das im [Schema konfigurieren](configure-schemas.md) Die Lektion enthält einige automatisch zugeordnete Analytics-Variablen, wie in dieser Tabelle beschrieben:
 
 | Automatisch zugeordnete Variablen von XDM zu Analytics | Adobe Analytics-Variable |
 |-------|---------|
@@ -74,7 +74,7 @@ Das im [Schema konfigurieren](configure-schemas.md) Die Lektion enthält einige 
 | `commerce.purchases.value` | Kauf |
 | `commerce.order.currencyCode` | s.currencyCode |
 | `commerce.order.purchaseID` | s.purchaseID |
-| `productListItems[].SKU` | s.products=;product name;;; (primär - siehe Hinweis unten) |
+| `productListItems[].SKU` | s.products=;product name;;; (primary - siehe Hinweis unten) |
 | `productListItems[].name` | s.products=;product name;;; (Fallback - siehe Hinweis unten) |
 | `productListItems[].quantity` | s.products=;;Produktmenge;; |
 | `productListItems[].priceTotal` | s.product=;;;Produktpreis; |
@@ -91,16 +91,15 @@ Das im [Schema konfigurieren](configure-schemas.md) Die Lektion enthält einige 
 
 Das Platform Web SDK sendet Daten von Ihrer Website an das Platform Edge Network. Ihr Datastream teilt dann dem Platform Edge Network mit, wohin diese Daten weitergeleitet werden sollen, in diesem Fall welche Ihrer Adobe Analytics Report Suites.
 
-1. Navigieren Sie zu [Datenerfassung](https://experience.adobe.com/#/data-collection)Benutzeroberfläche von {target=&quot;blank&quot;}
+1. Navigieren Sie zu [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} Benutzeroberfläche
 1. Wählen Sie im linken Navigationsbereich die Option **[!UICONTROL Datenspeicher]**
 1. Wählen Sie die zuvor erstellte `Luma Web SDK` datastream
 
    ![Wählen Sie den Datenspeicher des Luma Web SDK aus.](assets/datastream-luma-web-sdk.png)
 
 1. Wählen Sie **[!UICONTROL Service hinzufügen]** aus
-
    ![Hinzufügen eines Dienstes zum Datastream](assets/analytics-addService.png)
-1. Auswählen **[!UICONTROL Adobe Analytics]** als **[!UICONTROL Diensleistung]**
+1. Auswählen **[!UICONTROL Adobe Analytics]** als **[!UICONTROL Dienst]**
 1. Geben Sie die  **[!UICONTROL Report Suite-ID]** Ihrer Entwicklungs-Report Suite
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
@@ -121,12 +120,12 @@ Erfassen Sie als Nächstes zusätzliche Daten aus der Datenschicht &quot;Luma&qu
 
 ### Erstellen von E-Commerce-Datenelementen
 
-Während der Lektion zum Erstellen von Datenelementen haben Sie folgende Möglichkeiten: [erstellte JavaScript-Datenelemente](create-data-elements.md#create-data-elements-to-capture-the-data-layer) , die Inhalte und Identitätsdetails erfasst haben. Jetzt erstellen Sie zusätzliche Datenelemente, um E-Commerce-Daten zu erfassen. Da die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} verwendet unterschiedliche Datenschichtstrukturen für Produktdetailseiten und Produkte im Warenkorb. Sie müssen Datenelemente für jedes Szenario erstellen. Sie müssen einige Datenelemente mit benutzerdefiniertem Code erstellen, um die benötigten Daten aus der Luma-Datenschicht abzurufen, was bei der Implementierung auf Ihrer eigenen Site erforderlich sein kann oder nicht. In diesem Fall müssen Sie eine Reihe von Warenkorbelementen durchlaufen, um spezifische Details zu den einzelnen Produkten abzurufen. Verwenden Sie die unten angegebenen Code-Snippets:
+Während der Lektion Datenelemente erstellen [erstellte JavaScript-Datenelemente](create-data-elements.md#create-data-elements-to-capture-the-data-layer) , die Inhalte und Identitätsdetails erfasst haben. Jetzt erstellen Sie zusätzliche Datenelemente, um E-Commerce-Daten zu erfassen. Da die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} verwendet verschiedene Datenschichtstrukturen für Produktdetailseiten und Produkte im Warenkorb, müssen Sie Datenelemente für jedes Szenario erstellen. Sie müssen einige Datenelemente mit benutzerdefiniertem Code erstellen, um die benötigten Daten aus der Luma-Datenschicht abzurufen, was bei der Implementierung auf Ihrer eigenen Site erforderlich sein kann oder nicht. In diesem Fall müssen Sie eine Reihe von Warenkorbelementen durchlaufen, um spezifische Details zu den einzelnen Produkten abzurufen. Verwenden Sie die unten angegebenen Code-Snippets:
 
 1. Öffnen Sie die Tag-Eigenschaft, die Sie für das Tutorial verwenden
 1. Navigieren Sie zu **[!UICONTROL Datenelemente]**
 1. Wählen Sie **[!UICONTROL Datenelement hinzufügen]** aus
-1. Benennen Sie ihn **`product.productInfo.sku`**
+1. Benennen Sie sie **`product.productInfo.sku`**
 1. Verwenden Sie die **[!UICONTROL Benutzerspezifischer Code]** **[!UICONTROL Datenelementtyp]**
 1. Lassen Sie Kontrollkästchen für **[!UICONTROL Kleinbuchstaben erzwingen Wert]** und **[!UICONTROL Text bereinigen]** deaktiviert
 1. Urlaub `None` als **[!UICONTROL Speicherdauer]** Einstellung, da dieser Wert auf jeder Seite unterschiedlich ist
@@ -134,7 +133,7 @@ Während der Lektion zum Erstellen von Datenelementen haben Sie folgende Möglic
 
    ![Datenelement &quot;Benutzerspezifischer Code&quot;](assets/data-element-open-editor.jpg)
 
-1. Kopieren Sie den folgenden Code und fügen Sie ihn ein.
+1. Kopieren Sie den folgenden Code und fügen Sie ihn ein
 
    ```javascript
    var cart = digitalData.product;
@@ -155,32 +154,32 @@ Führen Sie dieselben Schritte aus, um diese zusätzlichen Datenelemente zu erst
 
 * **`product.productInfo.title`**
 
-   ```javascript
-   var cart = digitalData.product;
-   var cartItem;
-   cart.forEach(function(item){
-   cartItem = item.productInfo.title;
-   });
-   return cartItem;
-   ```
+  ```javascript
+  var cart = digitalData.product;
+  var cartItem;
+  cart.forEach(function(item){
+  cartItem = item.productInfo.title;
+  });
+  return cartItem;
+  ```
 
 * **`cart.productInfo`**
 
-   ```javascript
-   var cart = digitalData.cart.cartEntries;
-   var cartItem = [];
-   cart.forEach(function(item, index, array){
-   var qty = parseInt(item.qty);
-   var price = parseInt(item.price);
-   cartItem.push({
-   "SKU": item.sku,
-   "name":item.title,
-   "quantity":qty,
-   "priceTotal":price
-   });
-   });
-   return cartItem;
-   ```
+  ```javascript
+  var cart = digitalData.cart.cartEntries;
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  var qty = parseInt(item.qty);
+  var price = parseInt(item.price);
+  cartItem.push({
+  "SKU": item.sku,
+  "name":item.title,
+  "quantity":qty,
+  "priceTotal":price
+  });
+  });
+  return cartItem;
+  ```
 
 Nachdem Sie diese Datenelemente hinzugefügt und die vorherigen Elemente in der [Erstellen von Datenelementen](create-data-elements.md) -Lektion verwenden, sollten Sie über die folgenden Datenelemente verfügen:
 
@@ -205,14 +204,13 @@ Nachdem Sie diese Datenelemente hinzugefügt und die vorherigen Elemente in der 
 >* **[!UICONTROL identityMap]** zum Erfassen der authentifizierten ID gemäß [Identitätszuordnungs-Datenelement erstellen](create-data-elements.md#create-identity-map-data-element) in [Erstellen von Datenelementen](create-data-elements.md) Lektion.
 >* **[!UICONTROL Web]** -Objekt zum Erfassen von Inhalten gemäß [Content XDM-Objekt](create-data-elements.md#map-content-data-elements-to-XDM-Schema-individually) in [Erstellen von Datenelementen](create-data-elements.md) Lektion zu jedem Datenelement oben.
 
-
 ### Erhöhen der Seitenansichten
 
-In der Lektion zum Erstellen von Datenelementen haben Sie folgende Möglichkeiten: [erstellt `xdm.content` Datenelement](create-data-elements.md#map-content-data-elements-to-xdm-schema-individually) , um Inhaltsdimensionen zu erfassen. Da Sie jetzt Daten an Adobe Analytics senden, müssen Sie auch ein zusätzliches XDM-Feld zuordnen, um anzugeben, dass ein Beacon als Seitenansicht von Analytics verarbeitet werden soll.
+In der Lektion zum Erstellen von Datenelementen haben Sie folgende Möglichkeiten: [erstellt wurde `xdm.content` Datenelement](create-data-elements.md#map-content-data-elements-to-xdm-schema-individually) , um Inhaltsdimensionen zu erfassen. Da Sie jetzt Daten an Adobe Analytics senden, müssen Sie auch ein zusätzliches XDM-Feld zuordnen, um anzugeben, dass ein Beacon als Seitenansicht von Analytics verarbeitet werden soll.
 
 1. Öffnen Sie Ihre `xdm.content` Datenelement
 1. Scrollen Sie nach unten und wählen Sie zum Öffnen aus, bis `web.webPageDetails`
-1. Wählen Sie aus, um die **[!UICONTROL pageViews]** Objekt
+1. Zum Öffnen der **[!UICONTROL pageViews]** Objekt
 1. Satz **[!UICONTROL value]** nach `1`
 1. Wählen Sie [!UICONTROL **Speichern**] aus
 
@@ -227,7 +225,7 @@ In der Lektion zum Erstellen von Datenelementen haben Sie folgende Möglichkeite
 
 Bevor Sie der Produktzeichenfolge zuordnen, müssen Sie wissen, dass es im XDM-Schema zwei Hauptobjekte gibt, die zur Erfassung von E-Commerce-Daten verwendet werden, die besondere Beziehungen zu Adobe Analytics haben:
 
-1. Die `commerce` -Objekt legt Analytics-Ereignisse wie `prodView`, `scView`und `purchase`
+1. Die `commerce` -Objekt legt Analytics-Ereignisse wie `prodView`, `scView`, und `purchase`
 1. Die `productListItems` -Objekt legt Analytics-Dimensionen wie `productID`.
 
 Siehe [Erfassen von Commerce- und Produktdaten](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) für weitere Details.
@@ -279,7 +277,7 @@ Sie können einzelnen Variablen zuordnen, um Daten auf der Produktdetailseite de
 
 ### Ordnen Sie das gesamte Array einem XDM-Objekt zu
 
-Wie bereits erwähnt, verwendet die Site &quot;Luma Demo&quot;eine andere Datenschichtstruktur für Produkte im Warenkorb. Das Datenelement des benutzerspezifischen Codes `cart.productInfo` Das zuvor erstellte Datenelement durchläuft die `digitalData.cart.cartEntries` Datenschichtobjekt und übersetzt es in das erforderliche XDM-Objektschema. Das neue Format **muss exakt übereinstimmen** das von der `productListItems` -Objekt des XDM-Schemas.
+Wie bereits erwähnt, verwendet die Site &quot;Luma Demo&quot;eine andere Datenschichtstruktur für Produkte im Warenkorb. Das Datenelement des benutzerspezifischen Codes `cart.productInfo` Datenelement, das Sie zuvor in Schleifen erstellt haben `digitalData.cart.cartEntries` Datenschichtobjekt und übersetzt es in das erforderliche XDM-Objektschema. Das neue Format **muss exakt übereinstimmen** das von der `productListItems` -Objekt des XDM-Schemas.
 
 Sehen Sie sich dazu den unten stehenden Vergleich der Datenschicht der Site &quot;Luma&quot;(links) mit dem übersetzten Datenelement (rechts) an:
 
@@ -323,11 +321,11 @@ Erstellen eines weiteren **[!UICONTROL XDM-Objekt]**  **[!UICONTROL Datenelement
 >Dieser Schritt entspricht der Einstellung `scCheckout` -Ereignis in Analytics
 
 
-Es gibt weitere Schritte zum Erfassen der `purchase` event:
+Es gibt weitere Schritte zum Erfassen der `purchase` -Ereignis:
 
 1. Erstellen eines weiteren  **[!UICONTROL XDM-Objekt]**  **[!UICONTROL Datenelementtyp]** für Käufe aufgerufen `xdm.commerce.purchase`
 1. Öffnen **[!UICONTROL commerce]** Objekt
-1. Öffnen Sie die **[!UICONTROL order]** Objekt
+1. Öffnen Sie die **[!UICONTROL bestellen]** Objekt
 1. Zuordnung **[!UICONTROL purchaseID]** der `cart.orderId` Datenelement
 1. Satz **[!UICONTROL currencyCode]** zum hartcodierten Wert `USD`
 
@@ -337,7 +335,7 @@ Es gibt weitere Schritte zum Erfassen der `purchase` event:
    >
    >Dies entspricht der Einstellung `s.purcahseID` und `s.currencyCode` Variablen in Analytics
 
-1. Wählen Sie aus, um die `purchases` -Objekt und -set `value` nach `1`
+1. Zum Öffnen der `purchases` -Objekt und -set `value` nach `1`
    >[!TIP]
    >
    >Dies entspricht der Einstellung `purchase` -Ereignis in Analytics
@@ -366,7 +364,7 @@ Am Ende dieser Schritte sollten die folgenden fünf XDM-Objektdatenelemente erst
 Nachdem Sie mehrere XDM-Objektdatenelemente erstellt haben, können Sie die Beacons mithilfe von Regeln festlegen. In dieser Übung erstellen Sie individuelle Regeln pro E-Commerce-Ereignis und verwenden Bedingungen, damit die Regeln auf den richtigen Seiten ausgelöst werden. Beginnen wir mit einem Produktansichtsereignis.
 
 1. Wählen Sie in der linken Navigation die Option **[!UICONTROL Regeln]** und wählen Sie **[!UICONTROL Regel hinzufügen]**
-1. Benennen Sie ihn  [!UICONTROL `product view - library load - AA`]
+1. Benennen Sie sie  [!UICONTROL `product view - library load - AA`]
 1. under **[!UICONTROL Veranstaltungen]** auswählen **[!UICONTROL Bibliothek geladen (Seitenanfang)]**
 1. under **[!UICONTROL Bedingungen]**, wählen Sie **[!UICONTROL Hinzufügen]**
 
@@ -409,14 +407,14 @@ Wiederholen Sie dies für alle anderen E-Commerce-Ereignisse mit den folgenden P
 * **Wert unter Web SDK - Aktion senden**: commerce.productListViews
 * **XDM-Daten für Web SDK - Sendeaktion:** `%xdm.commerce.cartView%`
 
-**Regelname**: Checkout - Bibliotheksladung - AA
+**Regelname**: checkout - library load - AA
 
 * **[!UICONTROL Ereignistyp]**: Bibliothek geladen (Seitenanfang)
 * **[!UICONTROL Bedingung]** /content/luma/us/en/user/checkout.html
 * **Typ für Web SDK - Sendeaktion**: commerce.checkouts
 * **XDM-Daten für Web SDK - Sendeaktion:** `%xdm.commerce.checkout%`
 
-**Regelname**: purchase - Bibliotheksladung - AA
+**Regelname**: purchase - Laden der Bibliothek - AA
 
 * **[!UICONTROL Ereignistyp]**: Bibliothek geladen (Seitenanfang)
 * **[!UICONTROL Bedingung]** /content/luma/us/en/user/checkout/order/thank-you.html
@@ -443,9 +441,9 @@ Im [Debugger](validate-with-debugger.md) In der Lektion haben Sie gelernt, wie S
 
 Erfahren Sie, wie Sie mit der Funktion &quot;Edge Trace&quot;des Experience Platform Debuggers überprüfen, ob Adobe Analytics die ECID, Seitenansichten, die Produktzeichenfolge und E-Commerce-Ereignisse erfasst.
 
-### Validierung der Experience Cloud-ID
+### Experience Cloud ID-Überprüfung
 
-1. Navigieren Sie zu [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} und verwenden Sie den Experience Platform Debugger für [Ändern Sie die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Navigieren Sie zu [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und verwenden Sie den Experience Platform Debugger, um [Ändern Sie die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
    >[!WARNING]
    >
@@ -455,7 +453,6 @@ Erfahren Sie, wie Sie mit der Funktion &quot;Edge Trace&quot;des Experience Plat
    >
    > 1. Sie werden automatisch zum [Didi Sport Watch-Produktseite](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) beim nächsten Laden der Seite
 
-
 1. Um den Edge Trace zu aktivieren, gehen Sie zum Experience Platform Debugger und wählen Sie im linken Navigationsmenü die Option **[!UICONTROL Protokolle]** und wählen Sie dann die **[!UICONTROL Edge]** und wählen Sie **[!UICONTROL Verbinden]**
 
    ![Edge Trace verbinden](assets/analytics-debugger-edgeTrace.png)
@@ -464,7 +461,7 @@ Erfahren Sie, wie Sie mit der Funktion &quot;Edge Trace&quot;des Experience Plat
 
    ![Connected Edge Trace](assets/analytics-debugger-edge-connected.png)
 
-1. Aktualisieren Sie die [Didi Sport Watch-Produktseite](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) und erneut Experience Platform Debugger aktivieren, sollten die Daten angezeigt werden. Die Zeile, die mit **[!UICONTROL Automatische Zuordnung von RSIDs in Analytics]** ist das Adobe Analytics-Beacon
+1. Aktualisieren Sie die [Didi Sport Watch-Produktseite](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) und den Experience Platform Debugger erneut aktivieren, sollten Sie sehen, wie die Daten durchlaufen werden. Die Zeile beginnt mit **[!UICONTROL Automatische Zuordnung von RSIDs in Analytics]** ist das Adobe Analytics-Beacon
 1. Wählen Sie aus, um beide `[!UICONTROL mappedQueryParams]` Dropdown und das zweite Dropdown-Menü zur Ansicht von Analytics-Variablen
 
    ![Analytics-Beacon Edge Trace](assets/analytics-debugger-edge-analytics.png)
@@ -494,16 +491,16 @@ Sie verwenden dasselbe Beacon, um zu überprüfen, ob Seitenansichten von Inhalt
 
 ### Produktzeichenfolgen und E-Commerce-Ereignisse
 
-Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weiterhin denselben Edge Trace, um Produktdaten zu überprüfen, die von Analytics erfasst werden. Sowohl die Produktzeichenfolge als auch die E-Commerce-Ereignisse werden Analytics automatisch XDM-Variablen zugeordnet. Solange Sie dem `productListItem` XDM-Variable während [Konfigurieren eines XDM-Schemas für Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), kümmert sich das Platform Edge Network um die Zuordnung der Daten zu den richtigen Analysevariablen.
+Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weiterhin denselben Edge Trace, um Produktdaten zu überprüfen, die von Analytics erfasst werden. Sowohl die Produktzeichenfolge als auch die E-Commerce-Ereignisse werden Analytics automatisch XDM-Variablen zugeordnet. Solange Sie dem entsprechenden `productListItem` XDM-Variable während [Konfigurieren eines XDM-Schemas für Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), kümmert sich das Platform Edge Network um die Zuordnung der Daten zu den richtigen Analysevariablen.
 
 1. Überprüfen Sie zunächst, ob die `Product String` festgelegt ist
 1. Suchen nach `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. Die Variable erfasst den Datenelementwert, den Sie der Variablen `productListItems.item1.sku` früher in dieser Lektion
 1. Scrollen Sie nach unten, um die `[!UICONTROL pl]` -Variable. Dies ist die dynamische Syntax der Analytics-Variablen mit der Produktzeichenfolge .
-1. Beide Werte stimmen mit dem Produktnamen überein, der in der Datenschicht verfügbar ist
+1. Beide Werte entsprechen dem Produktnamen, der in der Datenschicht verfügbar ist
 
    ![Analytics-Produktzeichenfolge](assets/analytics-debugger-prodstring.png)
 
-Die Edge Trace-Behandlung `commerce` Ereignisse geringfügig anders als `productList` Dimensionen. Es wird keine Kontextdatenvariable angezeigt, die auf die gleiche Weise zugeordnet ist wie der Produktname, der `[!UICONTROL c.a.x.productlistitem.[0].name]` höher. Stattdessen zeigt Edge Trace die endgültige automatische Ereigniszuordnung in Analytics an `event` -Variable. Das Platform Edge Network ordnet es entsprechend zu, solange Sie dem entsprechenden XDM-Element zuordnen `commerce` Variable während [Konfiguration des Schemas für Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); in diesem Fall `commerce.productViews.value=1`.
+Die Edge Trace-Behandlung `commerce` Ereignisse geringfügig anders als `productList` Dimensionen. Es wird keine Kontextdatenvariable angezeigt, die auf die gleiche Weise zugeordnet ist wie der Produktname, der `[!UICONTROL c.a.x.productlistitem.[0].name]` höher. Stattdessen zeigt Edge Trace die endgültige automatische Ereigniszuordnung in Analytics an `event` -Variable. Das Platform Edge-Netzwerk ordnet es entsprechend zu, solange Sie dem entsprechenden XDM zuordnen `commerce` Variable während [Konfiguration des Schemas für Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); in diesem Fall die `commerce.productViews.value=1`.
 
 1. Scrollen Sie im Experience Platform Debugger-Fenster nach unten zum `[!UICONTROL event]` festgelegt ist, wird `[!UICONTROL prodView]`
 
@@ -511,7 +508,7 @@ Die Edge Trace-Behandlung `commerce` Ereignisse geringfügig anders als `product
 
 Überprüfen Sie, ob die restlichen E-Commerce-Ereignisse und Produktzeichenfolgen für Analytics festgelegt sind.
 
-1. Hinzufügen [Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) zum Warenkorb
+1. Hinzufügen [Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) in den Warenkorb
 1. Navigieren Sie zu [Einkaufswagenseite](https://luma.enablementadobe.com/content/luma/us/en/user/cart.html), aktivieren Sie Edge Trace für `[!UICONTROL events: "scView"]` und die Produktzeichenfolge
 
    ![Analytics-Warenkorbansicht](assets/analytics-debugger-cartView.png)
@@ -538,7 +535,7 @@ Nachdem Sie die Analytics-Beacons jetzt mit Edge Trace validiert haben, können 
 
 In dieser Übung ordnen Sie eine XDM-Variable einer Prop zu, damit Sie sie in Echtzeitberichten anzeigen können. Führen Sie dieselben Schritte für jede benutzerdefinierte Zuordnung aus, die Sie für jede `eVar`, `prop`, `event`oder Variablen, auf die über Verarbeitungsregeln zugegriffen werden kann.
 
-1. Navigieren Sie in der Analytics-Benutzeroberfläche zu [!UICONTROL Admin] > [!UICONTROL Admin Tools] > [!UICONTROL Report Suites ]
+1. Navigieren Sie in der Analytics-Benutzeroberfläche zu [!UICONTROL Admin] > [!UICONTROL Admin Tools] > [!UICONTROL Report Suites]
 1. Wählen Sie die Entwicklungs-/Test-Report Suite aus, die Sie für das Tutorial verwenden > [!UICONTROL Einstellungen bearbeiten] > [!UICONTROL Allgemein] > [!UICONTROL Verarbeitungsregeln]
 
    ![Analytics-Kauf](assets/analytics-process-rules.png)
@@ -551,13 +548,13 @@ In dieser Übung ordnen Sie eine XDM-Variable einer Prop zu, damit Sie sie in Ec
    >
    >Wenn Sie eine Verarbeitungsregel zum ersten Mal zuordnen, zeigt die Benutzeroberfläche die Kontextdatenvariablen aus dem XDM-Objekt nicht an. Um das Problem zu beheben, bei dem ein beliebiger Wert ausgewählt wurde, speichern Sie und kehren Sie zur Bearbeitung zurück. Alle XDM-Variablen sollten jetzt angezeigt werden.
 
-1. Navigieren Sie zu [!UICONTROL Einstellungen bearbeiten] >  [!UICONTROL Echtzeit]. Konfigurieren Sie alle drei Parameter mit den folgenden Parametern, die unten angezeigt werden, damit Sie Inhaltsseitenansichten, Produktansichten und Käufe überprüfen können
+1. Navigieren Sie zu [!UICONTROL Einstellungen bearbeiten] >  [!UICONTROL Echtzeit]. Konfigurieren Sie alle drei Parameter mit den folgenden Parametern, die unten angezeigt werden, damit Sie Inhaltsseitenansichten, Produktansichten und Käufe überprüfen können.
 
    ![Analytics-Kauf](assets/analytics-debugger-real-time.png)
 
 1. Wiederholen Sie die Validierungsschritte und Sie sollten sehen, dass Echtzeitberichte Daten entsprechend ausfüllen.
 
-   **Page Views**
+   **Seitenansichten**
    ![Echtzeitinhalt](assets/analytics-real-time-content.png)
 
    **Produktansichten**
@@ -566,7 +563,7 @@ In dieser Übung ordnen Sie eine XDM-Variable einer Prop zu, damit Sie sie in Ec
    **Käufe**
    ![Echtzeit-Kauf](assets/analytics-real-time-purchase.png)
 
-1. Erstellen Sie in der Workspace-Benutzeroberfläche eine Tabelle, um den vollständigen E-Commerce-Fluss des von Ihnen gekauften Produkts anzuzeigen
+1. Erstellen Sie in der Workspace-Benutzeroberfläche eine Tabelle, um den vollständigen E-Commerce-Fluss des gekauften Produkts anzuzeigen
 
    ![Vollständiger E-Commerce-Fluss](assets/analytics-workspace-ecommerce.png)
 
@@ -578,4 +575,4 @@ Herzlichen Glückwunsch! Dies ist das Ende der Lektion und jetzt können Sie Ado
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Diskussionsbeitrag der Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
