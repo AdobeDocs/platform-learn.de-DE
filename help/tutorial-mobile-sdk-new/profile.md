@@ -3,7 +3,7 @@ title: Profildaten erfassen
 description: Erfahren Sie, wie Sie Profildaten in einer Mobile App erfassen.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 5%
@@ -39,7 +39,7 @@ In dieser Lektion werden Sie:
 
 Es wäre hilfreich für Targeting und/oder Personalisierung in der App, schnell zu erkennen, ob ein Benutzer in der Vergangenheit oder vor Kurzem einen Kauf getätigt hat. Legen wir das in der Luma-App fest.
 
-1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** im Xcode-Projektnavigator und suchen Sie die `func updateUserAttributes(attributeName: String, attributeValue: String)` -Funktion. Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** im Xcode-Projektnavigator und suchen Sie die `func updateUserAttribute(attributeName: String, attributeValue: String)` -Funktion. Fügen Sie den folgenden Code hinzu:
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ Es wäre hilfreich für Targeting und/oder Personalisierung in der App, schnell 
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -86,7 +86,7 @@ Nachdem Sie das -Attribut eines Benutzers aktualisiert haben, ist es für andere
 
    Dieser Code:
 
-   1. Ruft die [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API mit der `iPaidUser` Attributname als einzelnes Element im `attributeNames` Array.
+   1. Ruft die [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API mit der `isPaidUser` Attributname als einzelnes Element im `attributeNames` Array.
    1. Prüft dann den Wert der `isPaidUser` Attribut und Zeitpunkt `yes`, platziert einen Badge auf der <img src="assets/paiduser.png" width="20" /> in der Symbolleiste oben rechts.
 
 Weitere Dokumentationen finden Sie [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
