@@ -1,17 +1,17 @@
 ---
-title: Tag-Umgebungen mit Adobe Experience Cloud Debugger wechseln
+title: Wechseln von Tag-Umgebungen mit dem Adobe Experience Cloud Debugger
 description: Erfahren Sie, wie Sie mit dem Experience Cloud Debugger verschiedene Tag-Einbettungscodes laden können. Diese Lektion ist Teil des Tutorials zum Implementieren des Experience Cloud in Websites .
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 40%
+source-wordcount: '623'
+ht-degree: 36%
 
 ---
 
 # Tag-Umgebungen mit dem Experience Cloud Debugger wechseln
 
-In dieser Lektion verwenden Sie die [Adobe Experience Cloud Debugger-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) , um die Tag-Eigenschaft zu ersetzen, die auf der fest codiert ist. [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) mit Ihrer eigenen Eigenschaft.
+In dieser Lektion verwenden Sie die [Adobe Experience Platform Debugger-Erweiterung](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) , um die Tag-Eigenschaft zu ersetzen, die auf der fest codiert ist. [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) mit Ihrer eigenen Eigenschaft.
 
 Diese Technik wird als Umgebungswechsel bezeichnet und ist später hilfreich, wenn Sie mit Tags auf Ihrer eigenen Website arbeiten. Sie können Ihre Produktions-Website in Ihren Browser laden, jedoch mit Ihrem *development* Tag-Umgebung. Auf diese Weise können Sie sicher Änderungen an Tags vornehmen und überprüfen - unabhängig von Ihren normalen Codeversionen.  Schließlich ist diese Trennung der Marketing-Tag-Versionen von Ihren normalen Codeversionen einer der Hauptgründe, warum Kunden Tags überhaupt verwenden!
 
@@ -19,16 +19,15 @@ Diese Technik wird als Umgebungswechsel bezeichnet und ist später hilfreich, we
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt verfügbar **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
-
 
 ## Lernziele
 
 Am Ende dieser Lektion können Sie:
 
-* Verwenden Sie den Debugger, um eine alternative Tag-Umgebung zu laden.
+* Debugger verwenden, um eine alternative Tag-Umgebung zu laden
 * Überprüfen Sie mit dem Debugger, ob Sie eine alternative Tag-Umgebung geladen haben.
 
 ## Abrufen der URL Ihrer Entwicklungsumgebung
@@ -47,7 +46,7 @@ Am Ende dieser Lektion können Sie:
 
 1. Öffnen Sie die [Demosite „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser.
 
-1. Öffnen Sie die [Erweiterung Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj), indem Sie auf das Symbol ![Debugger](images/icon-debugger.png) klicken.
+1. Öffnen Sie die [Experience Platform Debugger-Erweiterung](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) durch Klicken auf ![Debugger-Symbol](images/icon-debugger.png) icon
 
    ![Klicken Sie auf das Debugger-Symbol](images/switchEnvironments-openDebugger.png)
 

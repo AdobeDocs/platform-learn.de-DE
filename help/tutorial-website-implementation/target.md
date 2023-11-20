@@ -3,7 +3,7 @@ title: Hinzufügen von Adobe Target mit Tags
 description: Erfahren Sie, wie Sie Adobe Target mithilfe von Tags mit at.js, einer Seitenladeanforderung, Parametern, einer Bestellanforderung und benutzerdefiniertem Kopf-/Fußzeilencode implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren des Experience Cloud in Websites .
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 75%
@@ -20,8 +20,8 @@ In dieser Lektion implementieren wir die [Adobe Target-Erweiterung](https://exp
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * platform launch (Client-seitig) ist jetzt **[!DNL tags]**
-> * platform launch Server Side ist jetzt **[!DNL event forwarding]**
+> * Platform launch (Client-seitig) ist jetzt **[!DNL tags]**
+> * Platform launch Server Side ist jetzt **[!DNL event forwarding]**
 > * Edge-Konfigurationen sind jetzt verfügbar **[!DNL datastreams]**
 
 ## Lernziele
@@ -82,7 +82,7 @@ Dies wurde bereits auf der Site „Luma“ durchgeführt, aber lassen Sie uns fo
 </script>
 ```
 
-Öffnen Sie die Beispielseite und fügen Sie sie direkt vor Ihrem Tag-Einbettungscode ein, wie unten dargestellt (keine Sorge, wenn die Zeilennummern unterschiedlich sind). In diesem Screenshot wurde der vorab ausgeblendete Ausschnitt minimiert:
+Öffnen Sie die Beispielseite und fügen Sie sie direkt vor Ihrem Tag-Einbettungscode ein, wie unten dargestellt (keine Sorge, wenn die Zeilennummern unterschiedlich sind). In diesem Screenshot wurde das vorab ausgeblendete Snippet minimiert:
 
 ![Bewegen des Mauszeigers über die Erweiterung](images/target-prehidingSnippet.png)
 
@@ -95,7 +95,7 @@ Weitere Informationen sowie den nicht minimierten Codeausschnitt zur Vorab-Ausbl
 
 ## Hinzufügen der Target-Erweiterung
 
-Die Adobe Target-Erweiterung unterstützt clientseitige Implementierungen mithilfe des JavaScript SDK von Target für das moderne Web: at.js. Kunden, die weiterhin die ältere Target-Bibliothek mbox.js verwenden, [sollte auf at.js 2.x aktualisieren](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) um Tags zu verwenden.
+Die Adobe Target-Erweiterung unterstützt clientseitige Implementierungen mithilfe des JavaScript SDK von Target für das moderne Web: at.js. Kunden, die weiterhin die ältere Target-Bibliothek mbox.js verwenden, [sollte auf at.js 2.x aktualisieren](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) , um Tags zu verwenden.
 
 Die Target v2-Erweiterung besteht aus zwei Hauptteilen:
 
@@ -381,7 +381,7 @@ Im Folgenden finden Sie eine optionale Übung für Target Premium-Kunden, wenn 
 
    ![Öffnen Sie die Aktion „Parameter zur Seitenladeanforderung hinzufügen“](images/target-addATProperty.png)
 
-1. Überprüfen Sie die **[!UICONTROL Globale Ausführung]** box so `targetPageParams()` im globalen Geltungsbereich deklariert
+1. Überprüfen Sie die **[!UICONTROL Globale Ausführung]** Box so aus `targetPageParams()` im globalen Geltungsbereich deklariert
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
 
    ![Klicken Sie auf Änderungen beibehalten](images/target-addATProperty-keepChanges.png)
@@ -391,7 +391,7 @@ Im Folgenden finden Sie eine optionale Übung für Target Premium-Kunden, wenn 
 
 >[!WARNING]
 >
->Wenn Sie versuchen, die `at_property` Parameter über die **[!UICONTROL Parameter zur Seitenladeanforderung hinzufügen]** -Aktion verwenden, wird der -Parameter in der Netzwerkanforderung aufgefüllt, der Visual Experience Composer (VEC) von Target kann ihn jedoch beim Laden der Seite nicht automatisch erkennen. Immer ausfüllen `at_property` mithilfe der `targetPageParams()` -Funktion in einer Aktion mit benutzerspezifischem Code verwenden.
+>Wenn Sie versuchen, `at_property` -Parameter über die **[!UICONTROL Parameter zur Seitenladeanforderung hinzufügen]** -Aktion verwenden, wird der -Parameter in der Netzwerkanforderung aufgefüllt, der Visual Experience Composer (VEC) von Target kann ihn jedoch beim Laden der Seite nicht automatisch erkennen. Immer ausfüllen `at_property` mithilfe der `targetPageParams()` -Funktion in einer Aktion mit benutzerspezifischem Code verwenden.
 
 #### Überprüfen des Eigenschafts-Tokens
 
@@ -438,7 +438,7 @@ Fügen wir die Datenelemente und die Regel hinzu, die wir benötigen, um eine Au
 
 **Erstellen des Datenelements für die Bestell-ID**
 
-1. Klicken **[!UICONTROL Datenelemente]** in der linken Navigation
+1. Klicks **[!UICONTROL Datenelemente]** in der linken Navigation
 1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**.
 1. Benennen Sie das Datenelement `Order Id`.
 1. Wählen Sie **[!UICONTROL Datenelementtyp > JavaScript-Variable]** aus.
@@ -482,12 +482,12 @@ Nun müssen wir eine Regel erstellen, um die Auftragsbestätigungsanforderung mi
 
 **Erstellen der Regel für die Auftragsbestätigungsseite**
 
-1. Klicken **[!UICONTROL Regeln]** in der linken Navigation
+1. Klicks **[!UICONTROL Regeln]** in der linken Navigation
 1. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**
 1. Geben Sie einen Namen für die Regel ein `Order Confirmation Page - Library Loaded - 60`.
 1. Klicken Sie auf **[!UICONTROL Ereignisse > Hinzufügen]**.
    1. Wählen Sie **[!UICONTROL Ereignistyp > Bibliothek geladen (Seitenanfang)]** aus.
-   1. under **[!UICONTROL Erweiterte Optionen]**, ändern Sie die `Order` nach `60` damit sie nach der `Load Target` -Aktion (die in unserer `All Pages - Library Loaded` Regel, wenn `Order` auf `50`)
+   1. under **[!UICONTROL Erweiterte Optionen]**, ändern Sie die `Order` nach `60` damit sie nach der `Load Target` -Aktion (die in unserer `All Pages - Library Loaded` Regel, `Order` auf `50`)
    1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
 1. Klicken Sie auf **[!UICONTROL Bedingungen > Hinzufügen]**.
    1. Wählen Sie **[!UICONTROL Bedingungstyp > Pfad ohne Abfragezeichenfolge]** aus.
@@ -570,7 +570,7 @@ auszulösen. Dieser Vorgang ähnelt den Schritten sehr, die Sie in der [Bestellb
 ## Bibliothekskopf- und -fußzeile
 
 Der Bildschirm „at.js bearbeiten“ in der Target-Benutzeroberfläche enthält Felder, in denen Sie benutzerspezifischen JavaScript-Code einfügen können, damit er unmittelbar vor oder nach der Datei „at.js“ ausgeführt wird. Die Bibliothekskopfzeile wird manchmal verwendet, um at.js-Einstellungen über die
-[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html)-Funktion zu überschreiben oder Daten von Drittanbietern mithilfe der [Datenanbieter-Funktion](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) weiterzugeben. Die Bibliotheksfußzeile wird manchmal verwendet, um [at.js benutzerdefinierte Ereignis](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html) -Listener hinzuzufügen.
+[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html)-Funktion zu überschreiben oder Daten von Drittanbietern mithilfe der [Datenanbieter-Funktion](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) weiterzugeben. Die Bibliotheksfußzeile wird manchmal verwendet, um [at.js benutzerdefinierte Ereignis](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html) -Listener hinzuzufügen.
 
 Um diese Funktion in Tags zu replizieren, verwenden Sie einfach die Aktion &quot;Benutzerspezifischer Code&quot;in der Haupterweiterung und positionieren Sie sie vor (Bibliothekskopfzeile) oder nach (Bibliotheksfußzeile) der Aktion &quot;Target laden&quot;. Hierfür können Sie dieselbe Regel nutzen wie für die `Load Target`-Aktion (siehe unten) oder separate Regeln mit Ereignissen oder Reihenfolgen verwenden, die zuverlässig vor oder nach der Regel mit `Load Target` ausgelöst werden:
 

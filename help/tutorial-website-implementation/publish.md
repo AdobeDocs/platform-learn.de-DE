@@ -2,10 +2,10 @@
 title: Veröffentlichen der Tag-Eigenschaft
 description: Erfahren Sie, wie Sie Ihre Tag-Eigenschaft aus der Entwicklungsumgebung in den Staging- und Produktionsumgebungen veröffentlichen. Diese Lektion ist Teil des Tutorials zum Implementieren des Experience Cloud in Websites .
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 72%
+source-wordcount: '597'
+ht-degree: 69%
 
 ---
 
@@ -17,10 +17,9 @@ Nachdem Sie nun einige wichtige Adobe Experience Cloud-Lösungen in Ihrer Entw
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt verfügbar **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
-
 
 ## Lernziele
 
@@ -70,20 +69,20 @@ In einem realen Szenario würde nun Ihr QA-Team die Änderungen in der Staging-B
 
 1. Öffnen Sie die [Demosite „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser.
 
-1. Öffnen Sie die [Erweiterung Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj), indem Sie auf das Symbol ![Debugger](images/icon-debugger.png) klicken.
+1. Öffnen Sie die [Experience Platform Debugger-Erweiterung](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) durch Klicken auf ![Debugger-Symbol](images/icon-debugger.png) icon
 
    ![Klicken Sie auf das Debugger-Symbol](images/switchEnvironments-openDebugger.png)
 
 1. Navigieren Sie zur Registerkarte „Tools“.
 
 1. Im **[!UICONTROL Adobe Launch > Launch-Einbettungscode ersetzen]** Einfügen des Einbettungscodes für die Staging-Umgebung in die Zwischenablage
-1. Aktivieren Sie die **[!UICONTROL Anwenden auf luma.enablementadobe.com]** switch
+1. Aktivieren Sie die **[!UICONTROL Übernehmen Sie luma.enablementadobe.com]** switch
 
 1. Klicken Sie auf das Diskettensymbol, um zu speichern.
 
    ![Tag-Umgebung im Debugger angezeigt](images/switchEnvironments-debugger-save.png)
 
-1. Laden Sie die Registerkarte „Zusammenfassung“ des Debuggers neu und überprüfen Sie diese. Im Abschnitt &quot;Launch&quot;sollte nun angezeigt werden, dass Ihre Staging-Eigenschaft implementiert ist und Ihren Eigenschaftsnamen (d. h. &quot;Tags-Tutorial&quot;oder was auch immer Sie Ihre Eigenschaft genannt haben)!
+1. Laden Sie die Registerkarte „Zusammenfassung“ des Debuggers neu und überprüfen Sie diese. Im Abschnitt &quot;Launch&quot;sollte nun angezeigt werden, dass Ihre Staging-Eigenschaft implementiert ist und Ihren Eigenschaftsnamen anzeigt (d. h. &quot;Tags-Tutorial&quot;oder ein anderer Name Ihrer Eigenschaft)!
 
    ![Tag-Umgebung im Debugger angezeigt](images/publishing-debugger-staging.png)
 

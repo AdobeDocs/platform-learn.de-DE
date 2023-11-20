@@ -2,7 +2,8 @@
 title: CSC Bootcamp - Content Supply Chain in 4 Phasen
 description: Obwohl es schwierig sein kann, mit der steigenden Nachfrage nach Inhalten Schritt zu halten, können Sie Inhalte mit einer gut gestalteten Content-Lieferkette schnell und einfach planen, produzieren und bereitstellen.
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 7745e3ae-6e13-4cc2-9017-8bfb9d4ae1b4
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
@@ -27,7 +28,7 @@ Eine Inhaltsversorgungskette ist der Prozess, der Personen, Tools und Workflows 
 
 ![Ein Überblick darüber, welche Phasen und Teams an einer Inhaltsbereitstellungskette beteiligt sind.](./images/csc-overview.png)
 
-Theoretisch ist es ein Prozess, der Unternehmen überall dabei helfen sollte, ihren Inhalt schneller zu bekommen. Aber in der Praxis sind die meisten Lieferketten kaputt, weil die Lebenszyklen von funktionsübergreifenden Inhalten natürlich sind. Leider können diese Ketten, wenn sie zusammenbrechen, interne Fehlausrichtungen verursachen, Budgets reduzieren, Mitarbeiter abziehen und die Geschwindigkeit verringern, mit der wichtige Botschaften auf den Markt gebracht werden.
+Theoretisch ist es ein Prozess, der Unternehmen überall dabei helfen sollte, ihren Inhalt schneller zu bekommen. Aber in der Praxis sind die meisten Lieferketten kaputt, weil die Lebenszyklen von funktionsübergreifenden Inhalten natürlich sind. Leider können diese Ketten, wenn sie zusammenbrechen, interne Fehlausrichtungen verursachen, Budgets reduzieren, Mitarbeiter aussparen und die Geschwindigkeit verringern, mit der wichtige Botschaften auf den Markt gebracht werden.
 
 ### Was bricht Ihre Content-Lieferkette?
 
@@ -51,7 +52,7 @@ Wie bei allem, was an Fehlschritten und Kommunikation leidet, gibt es immer eine
 
 Idealerweise sollte Ihr Marketing-Team eine Lösung für das Arbeitsmanagement verwenden, die eine funktionsübergreifende Zusammenarbeit ermöglicht und Projekte mit geplanten, datengesteuerten Ergebnissen verbindet. Außerdem sollte es das Marketing-Team in die Lage versetzen, Arbeit strategisch zu priorisieren und diese Prioritäten Ihrem Kreativteam bekannt zu geben. Von dort aus sollten die kreative Kurzbeschreibung, Inhaltsversionen und Feedback in jedem Projekt verknüpft werden, damit Ihr Team nicht durch alte E-Mails suchen muss, um herauszufinden, wonach es sucht.
 
-Ihr Kreativteam sollte mit [Ein großartiges Digital Asset Management](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[ System](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) die in Ihre Kreativ- und Arbeitsverwaltungswerkzeuge integriert ist. Auf diese Weise können sie relevante Assets einfach finden, verwenden, aktualisieren oder wiederverwenden. Dadurch können Sie Ihre Markteinführung beschleunigen und interne Vorgänge und Prozesse vereinfachen.
+Ihr Kreativteam sollte mit [Ein großartiges Digital Asset Management](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[System](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) die in Ihre Kreativ- und Arbeitsverwaltungswerkzeuge integriert ist. Auf diese Weise können sie relevante Assets einfach finden, verwenden, aktualisieren oder wiederverwenden. Dadurch können Sie Ihre Markteinführung beschleunigen und interne Vorgänge und Prozesse vereinfachen.
 
 ### Steigerung der Produktionseffizienz mit nahtlosen Workflows
 
@@ -61,17 +62,17 @@ Wenn Sie dann künstliche Intelligenz (KI) zu Ihren Inhalts-Workflows hinzufüge
 
 ### Bereitstellen von Assets und Messen der Inhaltseffizienz
 
-Wenn es Zeit ist, Ihre Inhalte bereitzustellen, ist es wichtig, dass alle beteiligten kritischen Benutzer oder Teams Zugriff auf die benötigten Inhalte haben. Stellen Sie sicher, dass Ihr DAM Ihren Anforderungen gerecht wird und dass Ihre Teams Assets nach Typ oder beliebigen anderen Tags katalogisieren, tracken und suchen können. Kunden bewegen sich schnell, und Ihre Teams müssen noch schneller umziehen, Videos, Infografiken, Fotos, Messaging und mehr in einem Flash-Format finden.
+Wenn es an der Zeit ist, Ihre Inhalte bereitzustellen, ist es wichtig, dass alle beteiligten kritischen Benutzer oder Teams Zugriff auf die benötigten Inhalte haben. Stellen Sie sicher, dass Ihr DAM Ihren Anforderungen gerecht wird und dass Ihre Teams Assets nach Typ oder beliebigen anderen Tags katalogisieren, tracken und suchen können. Kunden bewegen sich schnell, und Ihre Teams müssen noch schneller umziehen, Videos, Infografiken, Fotos, Messaging und mehr in einem Flash-Format finden.
 
 Darüber hinaus verwendet eine wirklich großartige Content-Lieferkette ein DAM, mit dem Bilder automatisch in der Größe angepasst, Versionskontrolle verwaltet und Dopplungen über Geos hinweg vermieden werden können. Es sollte auch in Ihren gesamten technischen Stack integriert werden, einschließlich Ihrer Kreativ-Tools, der Arbeitsverwaltungslösung und des Content-Management-Systems, damit Ihre Teams schnell und einfach neue Inhalte erstellen und für beliebige Kanäle bereitstellen können. Mit AI können Sie automatisch relevante Inhalte generieren, die sich an die Standorte, Interessen und Aktionen von Kunden anpassen.
 
 ![](./images/csc-in-action.png)
 
-## Zur Adobe erstellen wir eine erstklassige Inhaltslieferkette
+## Bei der Adobe erstellen wir eine erstklassige Inhaltslieferkette
 
 Unsere eigenen [Adobe Experience Cloud Business](https://business.adobe.com/) konzentriert sich auf die Umsetzung der zuvor beschriebenen Schritte, um unsere Kampagnen zum Leben zu erwecken und mehrere Segmente zu unterstützen. Unsere Vision war es, weltweit überzeugende Inhalte bereitzustellen, die mit unserem Kampagnen-Framework und Messaging in Einklang stehen.
 
-Der Schlüssel zu unserem End-to-End-Inhaltserstellungsprozess ist die Kopplung von [Adobe Workfront](https://business.adobe.com/products/workfront/main.html/) und [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). Sehen wir uns an, wie wir mit diesen drei übergeordneten Phasen an unseren Prozess herangehen.
+Der Schlüssel zu unserem End-to-End-Inhaltserstellungsprozess ist die Kopplung von [Adobe Workfront](https://business.adobe.com/products/workfront/main.html) und [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). Sehen wir uns an, wie wir mit diesen drei übergeordneten Phasen an unseren Prozess herangehen.
 
 Wir beginnen mit  **Planung** , wo wir Hunderte von Inhaltsanfragen aus dem gesamten Unternehmen aufnehmen und sie dann nach unseren vierteljährlichen Prioritäten priorisieren. Anschließend verwenden wir ein Dashboard mit Inhaltsvorschlägen in Workfront, um Transparenz zu gewährleisten, damit wir uns an unsere Stakeholder anpassen und unsere Marketing-, Kreativ-, Web- und Verkaufsteams schnell abmelden können. Auf diese Weise erstellen wir einen Datensatz über das, was wir für das Quartal engagieren, und geben unseren Kreativ- und Web-Teams außerdem einen Einblick in das Gesamtanfragevolumen, sodass sie Ressourcen planen können. Außerdem können Manager mühelos den Arbeitsaufwand für ihre Teams überwachen.
 
@@ -91,7 +92,7 @@ Die Content Supply Chain ist keine magische Lösung für alle Ihre Probleme. Die
 
 ![Crawl Walk Run](./images/crawl-walk-run.png)
 
-Und sobald Sie fertig sind, können Sie eine weitere Sache aus Ihrer End-to-End-Inhaltsversorgungskette herausfinden: Einblicke. Nach einer Weile können Sie beginnen zu erforschen, wie bestimmte Aktionen beeinflussen Zeit, Budget, ... Wir werden dies auch am Ende des Bootcamps behandeln.
+Und sobald Sie fertig sind, können Sie noch eine weitere Sache aus Ihrer End-to-End-Inhaltsversorgungskette herausfinden: Einblicke. Nach einer Weile können Sie beginnen zu erforschen, wie bestimmte Aktionen beeinflussen Zeit, Budget, ... Wir werden dies auch am Ende des Bootcamps behandeln.
 
 Nächster Schritt: [Creative Briefing](./creative-brief.md)
 
