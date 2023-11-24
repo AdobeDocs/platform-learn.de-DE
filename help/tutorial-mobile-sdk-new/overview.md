@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die mobilen Adobe Experience Cloud-Anwendunge
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: 6726b0d0570311987b7edac4bf0cd2da35e72f30
+source-git-commit: 8810829ec80b38afafbd4384005f5e145c5b5999
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '849'
 ht-degree: 6%
 
 ---
@@ -82,6 +82,10 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe ID und die
 >
 >Im Rahmen dieses Tutorials erstellen Sie Schemas, Datensätze, Identitäten usw. Wenn mehrere Personen dieses Tutorial in einer Sandbox durchlaufen, sollten Sie beim Erstellen dieser Objekte erwägen, eine Identifizierung als Teil Ihrer Benennungskonventionen anzuhängen oder voranzustellen. Fügen Sie beispielsweise ` - <your name or initials>` zum Namen des Objekts, das Sie erstellen sollen.
 
+>[!NOTE]
+>
+>Sie verwenden iOS als Plattform, [!DNL Swift] als Programmiersprache, [!DNL SwiftUI] als UI-Framework und [!DNL Xcode] als integrierte Entwicklungsumgebung (IDE). Viele der erläuterten Implementierungskonzepte sind jedoch für andere Entwicklungsplattformen ähnlich. Viele haben dieses Tutorial bereits erfolgreich abgeschlossen, ohne dass zuvor ein iOS/Swift(UI)-Erlebnis vorhanden war. Sie müssen kein Experte sein, um die Lektionen abzuschließen, aber Sie erhalten mehr aus den Lektionen, wenn Sie Code bequem lesen und verstehen können.
+
 
 ## Herunterladen der Luma-App
 
@@ -91,15 +95,9 @@ Zwei Versionen der Beispiel-App können heruntergeladen werden. Beide Versionen 
 1. [Starten](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: ein Projekt ohne Code oder mit Platzhaltercode für den Großteil des Experience Platform Mobile SDK-Codes, den Sie zum Abschließen der praktischen Übungen in diesem Tutorial benötigen.
 1. [Beenden](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: eine Version mit der vollständigen Implementierung als Referenz.
 
->[!NOTE]
->
->Sie verwenden iOS als Plattform, [!DNL Swift] als Programmiersprache, [!DNL SwiftUI] als UI-Framework und [!DNL Xcode] als integrierte Entwicklungsumgebung (IDE). Viele der erläuterten Implementierungskonzepte sind jedoch für andere Entwicklungsplattformen ähnlich. Viele haben dieses Tutorial bereits erfolgreich abgeschlossen, ohne dass zuvor ein iOS/Swift(UI)-Erlebnis vorhanden war. Sie müssen kein Experte sein, um die Lektionen abzuschließen, aber Sie erhalten mehr aus den Lektionen, wenn Sie Code bequem lesen und verstehen können.
+Wenn Sie nur mit der endgültigen App experimentieren möchten, können Sie die App auch direkt aus der Apple App Store herunterladen.
 
->[!INFO]
->
->Wenn Sie nur mit der endgültigen App experimentieren möchten, können Sie die App auch direkt aus der Apple App Store herunterladen.
->[![Download](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
-
+[<img src="assets/download-app.svg">](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 Los geht‘s!
 
