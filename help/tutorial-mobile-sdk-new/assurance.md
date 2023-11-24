@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Assurance-Erweiterung in eine mobile App 
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 3%
 
 ---
@@ -86,14 +86,14 @@ To update the signing for the lessons that require that you sign the application
 1. Auswählen **[!DNL Luma]** im Projekt-Navigator.
 1. Wählen Sie die **[!DNL Luma]** Zielgruppe.
 1. Wählen Sie die **Info** Registerkarte.
-1. Um eine Basis-URL hinzuzufügen, scrollen Sie nach unten zu **URL-Typen** und wählen Sie die **+** Schaltfläche.
+1. Nach unten scrollen zu **URL-Typen (1)** und öffnen Sie den Abschnitt mit dem Chevron (>), falls er noch nicht geöffnet ist.
 1. Satz **Kennung** auf die Bundle-ID Ihrer Wahl klicken und eine **URL-Schemata** Ihrer Wahl .
 
    ![Sicherungs-URL](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >Stellen Sie sicher, dass Sie eine _eindeutig_ Bundle-ID und ersetzen Sie `com.adobe.luma.tutorial.swiftui` Bundle-Kennung, da jede Bundle-ID eindeutig sein muss. In der Regel verwenden Sie ein Reverse-DNS-Format für Bundle-ID-Zeichenfolgen, z. B. `com.organization.brand.uniqueidentifier`.<br/>Verwenden Sie auf ähnliche Weise ein eindeutiges URL-Schema und ersetzen Sie die bereits bereitgestellten `lumatutorialswiftui` mit Ihrem eindeutigen URL-Schema.
+   >Stellen Sie sicher, dass Sie eine _eindeutig_ Bundle-Kennung, ersetzen Sie also die `com.adobe.luma.tutorial.swiftui` Bundle-Kennung, da jede Bundle-ID eindeutig sein muss. In der Regel verwenden Sie ein Reverse-DNS-Format für Bundle-ID-Zeichenfolgen, z. B. `com.organization.brand.uniqueidentifier`.<br/>Verwenden Sie auf ähnliche Weise ein eindeutiges URL-Schema, ersetzen Sie also die bereits bereitgestellten `lumatutorialswiftui` mit Ihrem eindeutigen URL-Schema.
 
 Weitere Informationen zu URL-Schemata in iOS finden Sie unter [Dokumentation zu Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 

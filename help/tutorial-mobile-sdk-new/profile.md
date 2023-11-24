@@ -3,7 +3,7 @@ title: Profildaten erfassen
 description: Erfahren Sie, wie Sie Profildaten in einer Mobile App erfassen.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 5%
@@ -96,8 +96,8 @@ Weitere Dokumentationen finden Sie [here](https://developer.adobe.com/client-sdk
 1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Führen Sie die App aus, um sich anzumelden und mit einem Produkt zu interagieren.
 
-   1. Verschieben Sie das Symbol &quot;Versicherung&quot;nach links.
    1. Auswählen **[!UICONTROL Startseite]** in der Symbolleiste.
+   1. Verschieben Sie das Symbol &quot;Versicherung&quot;nach links.
    1. Um das Anmeldeblatt zu öffnen, wählen Sie die <img src="assets/login.png" width="15" /> Schaltfläche.
 
       <img src="./assets/mobile-app-events-1.png" width="300">

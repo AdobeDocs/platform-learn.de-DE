@@ -4,9 +4,9 @@ description: Nächste Schritte nach Abschluss des Tutorials
 recommendations: display,noCatalog
 hide: true
 exl-id: be256529-fd4f-428b-b023-409b7a35c204
-source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '490'
 ht-degree: 8%
 
 ---
@@ -48,6 +48,7 @@ Und es gibt immer mehr zu lernen! Um auf Ihrer Implementierung aufzubauen, hier 
 * **Weitere Informationen zum Experience Platform**. Erfahren Sie mehr darüber, wie Sie Daten aus anderen Quellen erfassen und diese mit Ihren Mobile SDK-Daten kombinieren können, in [Erste Schritte mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de)
 
 
->[!NOTE]
+>[!SUCCESS]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>**Herzlichen Glückwunsch!** Sie haben dieses Experience Platform Mobile SDK-Tutorial abgeschlossen. Besuchen Sie das Tutorial regelmäßig, da wir im Laufe der Zeit Aktualisierungen vornehmen und weitere Inhalte hinzufügen werden.<br/><br/>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+

@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1536'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,6 @@ Bevor Sie In-App-Nachrichten mit Journey Optimizer senden, müssen Sie sicherste
 
 In dieser Lektion werden Sie
 
-* Registrieren Sie die App-ID beim Apple Push Notification Service (APN).
 * Erstellen Sie eine App-Oberfläche in AJO.
 * Installieren und konfigurieren Sie die Journey Optimizer-Tag-Erweiterung.
 * Aktualisieren Sie Ihre App, um die Journey Optimizer-Tag-Erweiterung zu registrieren.

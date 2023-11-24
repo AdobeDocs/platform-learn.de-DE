@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 6%
+source-wordcount: '919'
+ht-degree: 5%
 
 ---
 
@@ -66,7 +66,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
    let identityMap: IdentityMap = IdentityMap()
    
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
@@ -81,12 +81,14 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. Einrichten `IdentityItem` Objekte für E-Mail- und CRM-ID.
+   1. Einrichten `IdentityItem` Objekte für E-Mail- und CRM-ID. Adobe empfiehlt das Senden von Identitäten, die eine Person repräsentieren, wie z. B. die Luma CRM-ID als primäre Identität. Wenn die Identitätszuordnung die Personenkennung enthält (z. B. die Luma CRM ID), wird die Personenkennung zur primären Identität. Andernfalls wird die ECID zur primären Identität. Das Festlegen einer Personen-ID als primäre ID erleichtert die effizientere Suche eines Profils in nachfolgenden API-Aufrufen.
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
       ```
+
+
 
    1. Fügt diese hinzu `IdentityItem` -Objekte `IdentityMap` -Objekt.
 
