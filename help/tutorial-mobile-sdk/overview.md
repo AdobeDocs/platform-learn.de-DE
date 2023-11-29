@@ -3,10 +3,10 @@ title: Tutorial zur Implementierung von Adobe Experience Cloud in Apps - Überbl
 description: Erfahren Sie, wie Sie die mobilen Adobe Experience Cloud-Anwendungen implementieren. Dieses Tutorial führt Sie durch eine Implementierung von Experience Cloud-Anwendungen in einer Swift-Beispielanwendung.
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 11%
+source-wordcount: '821'
+ht-degree: 6%
 
 ---
 
@@ -14,18 +14,14 @@ ht-degree: 11%
 
 Erfahren Sie, wie Sie Adobe Experience Cloud-Programme mit dem Adobe Experience Platform Mobile SDK in Ihrer Mobile App implementieren.
 
->[!INFO]
->
-> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
+Experience Platform Mobile SDK ist ein Client-seitiges SDK, mit dem Adobe Experience Cloud-Kunden über das Adobe Experience Platform Edge Network sowohl mit Adobe-Anwendungen als auch mit Drittanbieterdiensten interagieren können. Siehe [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) für detailliertere Informationen.
 
-Experience Platform Mobile SDK ist ein Client-seitiges SDK, mit dem Adobe Experience Cloud-Kunden über das Adobe Experience Platform Edge Network sowohl mit Adobe-Anwendungen als auch mit Drittanbieterdiensten interagieren können. Siehe [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) für detailliertere Informationen.
-
-![Build-Einstellungen](assets/data-collection-mobile-sdk.png)
+![Architektur](assets/architecture.png)
 
 
-Dieses Tutorial führt Sie durch die Implementierung des Platform Mobile SDK in einer Beispiel-Einzelhandelsanwendung namens Luma. Die [Luma-App](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) verfügt über Funktionen, mit denen Sie eine realistische Implementierung erstellen können. Nach Abschluss dieses Tutorials sollten Sie bereit sein, mit der Implementierung all Ihrer Marketing-Lösungen über Platform Mobile SDK in Ihre eigenen mobilen Apps zu beginnen.
+Dieses Tutorial führt Sie durch die Implementierung des Platform Mobile SDK in einer Beispiel-Einzelhandelsanwendung namens Luma. Die [Luma-App](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) verfügt über Funktionen, mit denen Sie eine realistische Implementierung erstellen können. Nach Abschluss dieses Tutorials sollten Sie bereit sein, mit der Implementierung all Ihrer Marketing-Lösungen über das Experience Platform Mobile SDK in Ihre eigenen mobilen Apps zu beginnen.
 
-Die Lektionen sind für iOS konzipiert und in Swift geschrieben, aber viele der Konzepte gelten auch für Android™.
+Die Lektionen sind für iOS konzipiert und in Swift/SwiftUI geschrieben, aber viele der Konzepte gelten auch für Android™.
 
 Nach Abschluss dieses Tutorials können Sie:
 
@@ -34,17 +30,22 @@ Nach Abschluss dieses Tutorials können Sie:
 * Konfigurieren Sie eine mobile Tag-Eigenschaft.
 * Einrichten eines Experience Platform-Datensatzes (optional).
 * Installieren und implementieren Sie Tag-Erweiterungen in einer App.
+* Experience Cloud-Parameter ordnungsgemäß an eine [Webansicht](web-views.md).
+* Validieren der Implementierung mithilfe von [Adobe Experience Platform Assurance](assurance.md).
 * Fügen Sie die folgenden Adobe Experience Cloud-Anwendungen/Erweiterungen hinzu:
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [Erfassung der Lebenszyklusdaten](lifecycle-data.md)
-   * [Adobe Analytics über XDM](analytics.md)
    * [Einverständnis](consent.md)
    * [Identität](identity.md)
    * [Profil](profile.md)
-   * [Adobe Experience Platform](platform.md)
+   * [Places](places.md)
+   * [Analysen](analytics.md)
+   * [Experience Platform](platform.md)
    * [Push-Nachrichten mit Journey Optimizer](journey-optimizer-push.md)
-* Experience Cloud-Parameter ordnungsgemäß an eine [Webansicht](web-views.md).
-* Validieren der Implementierung mithilfe von [Adobe Experience Platform Assurance](assurance.md).
+   * [In-App-Messaging mit Journey Optimizer](journey-optimizer-inapp.md)
+   * [Entscheidungsverwaltung mit Journey Optimizer](journey-optimizer-offers.md)
+   * [Target](target.md)
+
 
 >[!NOTE]
 >
@@ -52,7 +53,7 @@ Nach Abschluss dieses Tutorials können Sie:
 
 ## Voraussetzungen
 
-In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe ID und die erforderlichen Berechtigungen zum Ausführen der Übungen verfügen. Wenn nicht, sollten Sie sich an Ihren Adobe-Administrator wenden, um Zugriff anzufordern.
+In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe ID und die erforderlichen Berechtigungen auf Benutzerebene zum Abschließen der Übungen verfügen. Wenn nicht, sollten Sie sich an Ihren Adobe-Administrator wenden, um Zugriff anzufordern.
 
 * In der Datenerfassung müssen Sie über Folgendes verfügen:
    * **[!UICONTROL Plattformen]**—permission item **[!UICONTROL Mobilnummer]**
@@ -65,27 +66,40 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe ID und die
    * **[!UICONTROL Identity Management]**—Berechtigungselemente zum Verwalten und Anzeigen von Identitäts-Namespaces.
    * **[!UICONTROL Datenerfassung]**—Berechtigungselemente zum Verwalten und Anzeigen von Datenspeichern.
 
-   * Wenn Sie Kunde einer Platform-basierten Anwendung wie Real-Time CDP, Journey Optimizer oder Customer Journey Analytics sind, sollten Sie auch über Folgendes verfügen:
-      * **[!UICONTROL Data Management]**—Berechtigungselemente zum Verwalten und Anzeigen von Datensätzen zum Abschließen der _optionale Plattformübungen_ (erfordert eine Lizenz für eine Platform-basierte Anwendung ).
+   * Wenn Sie Kunde einer Platform-basierten Anwendung wie Real-Time CDP, Journey Optimizer oder Customer Journey Analytics sind und die entsprechenden Lektionen ausführen, sollten Sie auch Folgendes haben:
+      * **[!UICONTROL Data Management]**—Berechtigungselemente zum Verwalten und Anzeigen von Datensätzen.
       * Entwicklung **Sandbox** die Sie für dieses Tutorial verwenden können.
+
+   * Für die Journey Optimizer-Lektionen benötigen Sie Berechtigungen zum Konfigurieren der **Push-Benachrichtigungsdienst** und erstellen Sie eine **App-Oberfläche**, a **Journey**, a **message**, und **Nachrichtenvorgaben**. Für die Entscheidungsverwaltung benötigen Sie die entsprechenden Berechtigungen für **Angebote verwalten** und **Entscheidungen** wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+
 * Für Adobe Analytics müssen Sie wissen, welche **Report Suites** können Sie verwenden, um dieses Tutorial abzuschließen.
 
-Alle Experience Cloud-Kunden sollten Zugriff auf die erforderlichen Funktionen haben, die für die Bereitstellung des Mobile SDK erforderlich sind.
+* Für Adobe Target müssen Sie über die Berechtigung zum Erstellen und Aktivieren von Aktivitäten verfügen.
 
-Außerdem wird davon ausgegangen, dass Sie mit [!DNL Swift]. Sie müssen kein Experte sein, um die Lektionen abzuschließen, aber Sie werden mehr daraus lernen, wenn Sie Code bequem lesen und verstehen können.
-
-## Herunterladen der Luma-App
-
-Zwei Versionen der Beispiel-App können heruntergeladen werden.
-
-1. [Empty](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} - Version ohne Experience Cloud-Code zum Abschließen der Übungen in diesem Tutorial
-1. [Vollständig implementiert](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} - Version mit vollständiger Experience Cloud-Implementierung als Referenz.
-
-Los geht‘s!
-
-
-Weiter: **[Erstellen eines XDM-Schemas](create-schema.md)**
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Im Rahmen dieses Tutorials erstellen Sie Schemas, Datensätze, Identitäten usw. Wenn mehrere Personen dieses Tutorial in einer Sandbox durchlaufen, sollten Sie beim Erstellen dieser Objekte erwägen, eine Identifizierung als Teil Ihrer Benennungskonventionen anzuhängen oder voranzustellen. Fügen Sie beispielsweise ` - <your name or initials>` zum Namen des Objekts, das Sie erstellen sollen.
+
+
+## Herunterladen der Luma-App
+
+Zwei Versionen der Beispiel-App können heruntergeladen werden. Beide Versionen können heruntergeladen/geklont von [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). Es gibt zwei Ordner:
+
+
+1. [Starten](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: ein Projekt ohne Code oder mit Platzhaltercode für den Großteil des Experience Platform Mobile SDK-Codes, den Sie zum Abschließen der praktischen Übungen in diesem Tutorial benötigen.
+1. [Beenden](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: eine Version mit der vollständigen Implementierung als Referenz.
+
+
+>[!NOTE]
+>
+>Sie verwenden iOS als Plattform, [!DNL Swift] als Programmiersprache, [!DNL SwiftUI] als UI-Framework und [!DNL Xcode] als integrierte Entwicklungsumgebung (IDE). Viele der erläuterten Implementierungskonzepte sind jedoch für andere Entwicklungsplattformen ähnlich. Viele haben dieses Tutorial bereits erfolgreich abgeschlossen, ohne dass zuvor ein iOS/Swift(UI)-Erlebnis vorhanden war. Sie müssen kein Experte sein, um die Lektionen abzuschließen, aber Sie erhalten mehr aus den Lektionen, wenn Sie Code bequem lesen und verstehen können.
+
+
+Los geht‘s!
+
+>[!SUCCESS]
+>
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+
+Weiter: **[Erstellen eines XDM-Schemas](create-schema.md)**

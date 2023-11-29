@@ -1,22 +1,18 @@
 ---
-title: Einrichten der Sicherheit
+title: Einrichten von Assurance für Platform Mobile SDK-Implementierungen
 description: Erfahren Sie, wie Sie die Assurance-Erweiterung in eine mobile App implementieren.
 feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 6%
+source-wordcount: '990'
+ht-degree: 3%
 
 ---
 
-# Assurance
+# Einrichten der Sicherheit
 
 Erfahren Sie, wie Sie Adobe Experience Platform Assurance in einer Mobile App einrichten.
-
->[!INFO]
->
-> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
 
 Assurance, formell als Project Griffon bekannt, soll Ihnen dabei helfen, zu untersuchen, zu testen, zu simulieren und zu überprüfen, wie Sie Daten erfassen oder Erlebnisse in Ihrer mobilen App bereitstellen.
 
@@ -25,7 +21,7 @@ Mithilfe von &quot;Assurance&quot;können Sie unformatierte SDK-Ereignisse über
 
 ## Voraussetzungen
 
-* Die Beispielanwendung wurde erfolgreich erstellt und mit installierten und konfigurierten SDKs ausgeführt.
+* Richten Sie die App erfolgreich mit installierten und konfigurierten SDKs ein.
 
 ## Lernziele
 
@@ -38,71 +34,177 @@ In dieser Lektion werden Sie:
 
 ## Zugriff bestätigen
 
-Vergewissern Sie sich, dass Ihr Unternehmen Zugriff auf die Zertifizierung hat, indem Sie die folgenden Schritte ausführen:
-
-1. Besuch [https://experience.adobe.com/#/assurance](https://experience.adobe.com/griffon){target="_blank"}
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen für die Experience Cloud an.
-1. Wenn Sie zur **[!UICONTROL Sitzungen]** angezeigt, haben Sie Zugriff. Wenn Sie zur Beta-Zugriffsseite gelangen, wählen Sie **[!UICONTROL registrieren]**.
+Vergewissern Sie sich, dass Ihr Unternehmen Zugriff auf die Zertifizierung hat. Als Benutzer sollten Sie zum Profil für Adobe Experience Platform hinzugefügt werden. Siehe [Benutzerzugriff](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) im Zuverlässigkeitshandbuch für weitere Informationen.
 
 ## Implementierung
 
-Neben der allgemeinen [SDK-Installation](install-sdks.md) Wenn Sie in der vorherigen Lektion abgeschlossen haben, erfordert iOS auch die folgende Ergänzung. Fügen Sie der Datei `AppDelegate.swift` den folgenden Code hinzu:
+Neben der allgemeinen [SDK-Installation](install-sdks.md)Wenn Sie in der vorherigen Lektion abgeschlossen haben, erfordert iOS auch den folgenden Zusatz, um die Assurance-Sitzung für Ihre App zu starten.
 
-```swift
-func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-    Assurance.startSession(url: url)
-    return true
-}
-```
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** im Projektnavigator Ihres Xcode-Codes ein.
 
-Das für dieses Tutorial bereitgestellte Beispiel-Luma verwendet iOS 12.0. Wenn Sie zusammen mit Ihrer eigenen szenenbasierten Anwendung mit iOS 13 und höher folgen, verwenden Sie die `UISceneDelegate's scene(_:openURLContexts:)` -Methode wie folgt:
+1. Fügen Sie folgenden Code zu `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>` hinzu:
 
-```swift
-func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-    // Called when the app in background is opened with a deep link.
-    if let deepLinkURL = URLContexts.first?.url {
-        Assurance.startSession(url: deepLinkURL)
-    }
-}
-```
+   ```swift
+   // Called when the app in background is opened with a deep link.
+   if let deepLinkURL = URLContexts.first?.url {
+       // Start the Assurance session
+       Assurance.startSession(url: deepLinkURL)
+   }
+   ```
+
+   Dieser Code startet eine Sicherheitssitzung, wenn sich die App im Hintergrund befindet und über einen Deep-Link geöffnet wird.
 
 Weitere Informationen finden Sie [hier](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
+<!-- not initially required
+
+## Signing
+
+Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+
+To update the signing for the lessons that require that you sign the application:
+
+1. Open the project in Xcode.
+1. Select **[!DNL Luma]** in the Project navigator.
+1. Select the **[!DNL Luma]** target.
+1. Select the **Signing & Capabilities** tab.
+1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+ 
+   >[!IMPORTANT]
+   >
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+
+
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+
+-->
+
 ## Einrichten einer Basis-URL
 
-1. Öffnen Sie XCode und wählen Sie den Projektnamen aus.
-1. Navigieren Sie zum **Info** Registerkarte.
-1. Nach unten scrollen zu **URL-Typen** und wählen Sie die **+** -Schaltfläche, um eine neue hinzuzufügen.
-1. Satz **Kennung** und **URL-Schemata** auf &quot;lumadeeplink&quot;.
-1. Erstellen Sie die App und führen Sie sie aus.
+1. Wechseln Sie zu Ihrem Projekt in Xcode.
+1. Auswählen **[!DNL Luma]** im Projekt-Navigator.
+1. Wählen Sie die **[!DNL Luma]** Zielgruppe.
+1. Wählen Sie die **Info** Registerkarte.
+1. Um eine Basis-URL hinzuzufügen, scrollen Sie nach unten zu **URL-Typen** und wählen Sie die **+** Schaltfläche.
+1. Satz **Kennung** auf die Bundle-ID Ihrer Wahl klicken und eine **URL-Schemata** Ihrer Wahl .
 
-![Sicherungs-URL](assets/mobile-assurance-url-type.png)
+   ![Sicherungs-URL](assets/assurance-url-type.png)
+
+   >[!IMPORTANT]
+   >
+   >Stellen Sie sicher, dass Sie eine _eindeutig_ Bundle-ID und ersetzen Sie `com.adobe.luma.tutorial.swiftui` Bundle-Kennung, da jede Bundle-ID eindeutig sein muss. In der Regel verwenden Sie ein Reverse-DNS-Format für Bundle-ID-Zeichenfolgen, z. B. `com.organization.brand.uniqueidentifier`.<br/>Verwenden Sie auf ähnliche Weise ein eindeutiges URL-Schema und ersetzen Sie die bereits bereitgestellten `lumatutorialswiftui` mit Ihrem eindeutigen URL-Schema.
 
 Weitere Informationen zu URL-Schemata in iOS finden Sie unter [Dokumentation zu Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
-Die Sicherung funktioniert durch Öffnen einer URL, entweder über einen Browser oder QR-Code, diese URL beginnt mit der Basis-URL, die die App öffnet und zusätzliche Parameter enthält. Diese eindeutigen Parameter werden verwendet, um die Sitzung zu verbinden.
+Assurance funktioniert durch Öffnen einer URL, entweder über einen Browser oder QR-Code. Diese URL beginnt mit der Basis-URL, die die App öffnet und zusätzliche Parameter enthält. Diese eindeutigen Parameter werden verwendet, um die Sitzung zu verbinden.
+
 
 ## Herstellen einer Verbindung zu einer Sitzung
 
-1. Navigieren Sie zum [Assurance-Benutzeroberfläche](https://experience.adobe.com/griffon){target="_blank"}.
+In Xcode:
+
+1. Erstellen Sie die App im Simulator oder auf einem physischen Gerät aus Xcode neu und führen Sie sie mithilfe von ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+   >[!TIP]
+   >
+   >Optional können Sie Ihren Build &quot;bereinigen&quot;, insbesondere wenn unerwartete Ergebnisse angezeigt werden. Wählen Sie dazu **[!UICONTROL Bereinigen Sie den Build-Ordner...]** aus dem Xcode **[!UICONTROL Produkt]** Menü.
+
+
+1. Im **[!UICONTROL &quot;Luma App&quot;darf Ihren Standort verwenden]** Dialogfeld auswählen **[!UICONTROL Zulassen bei Verwendung der App]**.
+
+   <img src="assets/geolocation-permissions.png" width="300">
+
+1. Im **[!UICONTROL &quot;Luma App&quot;möchte Ihnen Benachrichtigungen senden]** Dialogfeld auswählen **[!UICONTROL Zulassen]**.
+
+   <img src="assets/notification-permissions.png" width="300">
+
+1. Auswählen **[!UICONTROL Weiter...]** , damit die App Ihre Aktivität verfolgen kann.
+
+   <img src="assets/tracking-continue.png" width="300">
+
+1. Im **[!UICONTROL Mit &quot;Luma App&quot;können Sie Ihre Aktivitäten über die Apps und Websites anderer Unternehmen hinweg verfolgen.]** Dialogfeld auswählen **[!UICONTROL Zulassen]**.
+
+   <img src="assets/tracking-allow.png" width="300">
+
+
+In Ihrem Browser:
+
+1. Rufen Sie die Benutzeroberfläche für die Datenerfassung auf.
+1. Auswählen **[!UICONTROL Assurance]** über die linke Leiste.
 1. Auswählen **[!UICONTROL Sitzung erstellen]**.
-1. Bereitstellung **[!UICONTROL Sitzungsname]** wie `Luma App QA` und **[!UICONTROL Basis-URL]** `lumadeeplink://default`
+1. Auswählen **[!UICONTROL Starten]**.
+1. Stellen Sie eine **[!UICONTROL Sitzungsname]** wie `Luma Mobile App Session` und **[!UICONTROL Basis-URL]**; dies sind die URL-Schemas, die Sie in Xcode eingegeben haben, gefolgt von `://` Beispiel: `lumatutorialswiftui://`
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
-   ![Sicherheitssitzung erstellen](assets/mobile-assurance-create-session.png)
-1. **[!UICONTROL QR-Code scannen]** wenn Sie ein physisches Gerät verwenden. Wenn Sie den Simulator verwenden, dann **[!UICONTROL Link kopieren]** und öffnen Sie es mit Safari im Simulator.
-   ![Zuverlässigkeitsqa-Code](assets/mobile-assurance-qr-code.png)
-1. Wenn die App geladen wird, erhalten Sie eine modale Aufforderung, Ihre PIN aus dem vorherigen Schritt einzugeben.
-   ![Sicherungs-Node](assets/mobile-assurance-enter-pin.png)
-1. Wenn die Verbindung erfolgreich hergestellt wurde, werden Ereignisse in der Web-Benutzeroberfläche &quot;Assurance&quot;und ein unverankertes Assurance-Symbol in der App angezeigt.
-   * Symbol &quot;Versicherung&quot;unverankert.
-     ![Zuverlässigkeitsmodal](assets/mobile-assurance-modal.png)
-   * Experience Cloud-Ereignisse, die in der Web-Benutzeroberfläche auftreten.
-     ![Zuverlässigkeitsereignisse](assets/mobile-assurance-events.png)
+   ![Sicherheitssitzung erstellen](assets/assurance-create-session.png)
+1. Im **[!UICONTROL Neue Sitzung erstellen]** modaler Dialog:
 
-Wenn Sie auf Herausforderungen stoßen, lesen Sie bitte die [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de){target="_blank"}.
+   Wenn Sie ein physisches Gerät verwenden:
 
-Weiter: **[Einverständnis](consent.md)**
+   * Auswählen **[!UICONTROL QR-Code scannen]**. Um die App zu öffnen, verwenden Sie die Kamera auf Ihrem physischen Gerät, um den QR-Code zu scannen, und tippen Sie auf den Link.
+
+     ![Zuverlässigkeitsqa-Code](assets/assurance-qr-code.png)
+
+   Wenn Sie einen Simulator verwenden:
+
+   1. Auswählen **[!UICONTROL Link kopieren]**.
+   1. Kopieren Sie den Deep-Link mit ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  und verwenden Sie den Deep-Link, um die App mit Safari im Simulator zu öffnen.
+      ![Link zum Kopieren der Assets](assets/assurance-copy-link.png)
+
+1. Wenn die App geladen wird, wird Ihnen ein modales Dialogfeld angezeigt, in dem Sie aufgefordert werden, die in Schritt 7 dargestellte PIN einzugeben.
+
+   <img src="assets/assurance-enter-pin.png" width="300">
+
+   Geben Sie die PIN ein und wählen Sie **[!UICONTROL Verbinden]**.
+
+
+1. Wenn die Verbindung erfolgreich hergestellt wurde, sehen Sie Folgendes:
+   * Ein Zuverlässigkeitssymbol, das über der App angezeigt wird.
+
+     <img src="assets/assurance-modal.png" width="300">
+
+   * Experience Cloud-Updates in der Assurance-Benutzeroberfläche, die Folgendes zeigen:
+
+      1. Erlebnisereignisse aus der App.
+      1. Details eines ausgewählten Ereignisses.
+      1. Gerät und Timeline.
+
+         ![Zuverlässigkeitsereignisse](assets/assurance-events.png)
+
+Wenn Sie auf Herausforderungen stoßen, überprüfen Sie die [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=de){target="_blank"}.
+
+
+## Überprüfen von Erweiterungen
+
+So überprüfen Sie, ob Ihre App die aktuellsten Erweiterungen verwendet:
+
+1. Auswählen **[!UICONTROL Konfigurieren]**.
+
+1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) für ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Erweiterungsversionen]**.
+
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+   ![Erweiterungsversionen konfigurieren](assets/assurance-configure-extension-versions.png)
+
+1. Auswählen ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Erweiterungsversionen]** , um einen Überblick über die neuesten verfügbaren Erweiterungen und die in Ihrer Version des Programms verwendeten Erweiterungen zu erhalten.
+
+   ![Erweiterungsversionen](assets/assurance-extension-versions.png)
+
+1. So aktualisieren Sie Ihre Erweiterungsversionen (z. B. **[!UICONTROL Messaging]** und **[!UICONTROL Optimieren]**) wählen Sie das Paket (Erweiterung) aus **[!UICONTROL Paketabhängigkeiten]** (zum Beispiel: **[!UICONTROL AGPessaging]**) und wählen Sie im Kontextmenü die Option **[!UICONTROL Paket aktualisieren]**. Xcode aktualisiert die Paketabhängigkeiten.
+
 
 >[!NOTE]
 >
+>Nachdem Sie Ihre Erweiterungen (Pakete) in Xcode aktualisiert haben, schließen und löschen Sie die aktuelle Sitzung und wiederholen Sie alle Schritte von [Herstellen einer Verbindung zu einer Sitzung](#connecting-to-a-session) und [Überprüfen von Erweiterungen](#verify-extensions) , um sicherzustellen, dass die Zuverlässigkeitserklärung die korrekten Erweiterungen in einer neuen Zuverlässigkeitssitzung ordnungsgemäß meldet.
+
+
+
+
+
+>[!SUCCESS]
+>
+>Sie haben Ihre App jetzt so eingerichtet, dass sie für den Rest des Tutorials Assurance verwendet.
+>
 >Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+
+Weiter: **[Implementieren der Zustimmung](consent.md)**

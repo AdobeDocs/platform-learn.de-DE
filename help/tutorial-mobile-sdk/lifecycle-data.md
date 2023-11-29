@@ -1,101 +1,127 @@
 ---
-title: Lebenszyklusdaten
+title: Erfassen von Lebenszyklusdaten mit dem Platform Mobile SDK
 description: Erfahren Sie, wie Sie Lebenszyklusdaten in einer mobilen App erfassen.
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
 
-# Lebenszyklusdaten
+# Lebenszyklusdaten erfassen
 
 Erfahren Sie, wie Sie Lebenszyklusdaten in einer mobilen App erfassen.
-
->[!INFO]
->
-> Dieses Tutorial wird Ende November 2023 mithilfe einer neuen Beispiel-Mobile-App durch ein neues Tutorial ersetzt.
 
 Die Adobe Experience Platform Mobile SDK Lifecycle-Erweiterung ermöglicht die Erfassung von Lebenszyklusdaten aus Ihrer mobilen App. Die Adobe Experience Platform Edge Network-Erweiterung sendet diese Lebenszyklusdaten an das Platform Edge Network, wo sie dann gemäß Ihrer Datenspeicherkonfiguration an andere Anwendungen und Dienste weitergeleitet werden. Weitere Informationen zum [Lebenszykluserweiterung](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) in der Produktdokumentation.
 
 
 ## Voraussetzungen
 
-* App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
-* Das Assurance-SDK wurde importiert.
-
-  ```swift
-  import AEPAssurance
-  ```
-
+* App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind. Im Rahmen dieser Lektion haben Sie bereits mit der Lebenszyklusüberwachung begonnen. Siehe [Installieren von SDKs - Aktualisieren von AppDelegate](install-sdks.md#update-appdelegate) zu überprüfen.
 * Registriert die Erweiterung &quot;Assurance&quot;, wie im Abschnitt [vorherige Lektion](install-sdks.md).
 
 ## Lernziele
 
 In dieser Lektion werden Sie:
 
-* Fügen Sie dem Schema die Feldergruppe Lebenszyklus hinzu.
+<!--
+* Add lifecycle field group to the schema.
+* -->
 * Aktivieren Sie genaue Lebenszyklusmetriken, indem Sie sie beim Wechsel zwischen Vordergrund und Hintergrund korrekt starten/anhalten.
 * Senden Sie Daten aus der App an das Platform Edge Network.
 * Validieren Sie in &quot;Assurance&quot;.
 
-## Lebenszyklusfeldgruppe zum Schema hinzufügen
+<!--
+## Add lifecycle field group to schema
 
-Die Feldergruppe &quot;Consumer Experience Event&quot;, die Sie im [vorherige Lektion](create-schema.md) bereits die Lebenszyklusfelder enthält, sodass Sie diesen Schritt überspringen können. Wenn Sie die Feldergruppe &quot;Consumer Experience Event&quot;nicht in Ihrer eigenen App verwenden, können Sie die Lebenszyklusfelder wie folgt hinzufügen:
+The Consumer Experience Event field group you added in the [previous lesson](create-schema.md) already contains the lifecycle fields, so you can skip this step. If you don't use Consumer Experience Event field group in your own app, you can add the lifecycle fields by doing the following:
 
-1. Navigieren Sie zur Schema-Oberfläche, wie im Abschnitt [vorherige Lektion](create-schema.md).
-1. Öffnen Sie das Schema &quot;Luma App&quot;und wählen Sie **[!UICONTROL Hinzufügen]**.
-   ![Auswählen](assets/mobile-lifecycle-add.png)
-1. Geben Sie in der Suchleiste &quot;Lebenszyklus&quot;ein.
-1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL AEP Mobile-Lebenszyklusdetails]**.
-1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
-   ![Feldergruppe hinzufügen](assets/mobile-lifecycle-lifecycle-field-group.png)
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
-   ![Speichern](assets/mobile-lifecycle-lifecycle-save.png)
-
+1. Navigate to the schema interface as described in the [previous lesson](create-schema.md).
+1. Open the **Luma Mobile App Event Schema** schema and select **[!UICONTROL Add]** next to Field groups.
+    ![select add](assets/lifecycle-add.png)
+1. In the search bar, enter "lifecycle".
+1. Select the checkbox next to **[!UICONTROL AEP Mobile Lifecycle Details]**.
+1. Select **[!UICONTROL Add field groups]**.
+    ![add field group](assets/lifecycle-lifecycle-field-group.png)
+1. Select **[!UICONTROL Save]**.
+    ![save](assets/lifecycle-lifecycle-save.png)
+-->
 
 ## Implementierungsänderungen
 
-Jetzt können Sie aktualisieren `AppDelegate.swift` zum Registrieren der Lebenszyklusereignisse:
+Jetzt können Sie Ihr Projekt aktualisieren, um die Lebenszyklusereignisse zu registrieren.
 
-1. Wenn Ihre App beim Start aus einem Hintergrundstatus fortgesetzt wird, kann iOS Ihre `applicationWillEnterForeground:` delegate-Methode. Hinzufügen `lifecycleStart:`
+1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** im Xcode-Projektnavigator.
+
+1. Wenn Ihre App beim Start aus einem Hintergrundstatus fortgesetzt wird, kann iOS Ihre `sceneWillEnterForeground:` -Delegierungsmethode verwenden. Hier möchten Sie ein Lebenszyklusstartereignis Trigger werden. Fügen Sie diesen Code zu `func sceneWillEnterForeground(_ scene: UIScene)`:
 
    ```swift
+   // When in foreground start lifecycle data collection
    MobileCore.lifecycleStart(additionalContextData: nil)
    ```
 
-1. Wenn die App in den Hintergrund gelangt, unterbrechen Sie die Erfassung der Lebenszyklusdaten aus der App. `applicationDidEnterBackground:` delegate-Methode.
+1. Wenn die App in den Hintergrund gelangt, möchten Sie die Erfassung der Lebenszyklusdaten aus der App anhalten `sceneDidEnterBackground:` delegate-Methode. Fügen Sie diesen Code zu  `func sceneDidEnterBackground(_ scene: UIScene)`:
 
    ```swift
+   // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
 
->[!NOTE]
->
->Informationen zu iOS 13 und höher finden Sie im Abschnitt [Dokumentation](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/#register-lifecycle-with-mobile-core-and-add-appropriate-startpause-calls) für etwas anderen Code.
-
 ## Validierung mit Versicherung
 
-1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md) und verbinden Sie Ihren Simulator oder Ihr Gerät mit Assurance.
-1. Starten Sie die App.
-1. Senden Sie die App in den Hintergrund. Suchen Sie nach `LifecyclePause`.
-1. App in den Vordergrund rücken Suchen Sie nach `LifecycleResume`.
-   ![Lebenszyklus überprüfen](assets/mobile-lifecycle-lifecycle-assurance.png)
+1. Überprüfen Sie die [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) -Abschnitt, um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
+1. Senden Sie die App in den Hintergrund. Suchen Sie nach **[!UICONTROL LifecyclePause]** -Ereignisse in der Assurance-Benutzeroberfläche.
+1. App in den Vordergrund rücken Suchen Sie nach **[!UICONTROL LifecycleResume]** -Ereignisse in der Assurance-Benutzeroberfläche.
+   ![Lebenszyklus überprüfen](assets/lifecycle-lifecycle-assurance.png)
 
 
 ## Weiterleiten von Daten an Platform Edge Network
 
-Die vorherige Übung sendet die Vordergrund- und Hintergrundereignisse an das Mobile SDK. Gehen Sie wie folgt vor, um diese Ereignisse an Platform Edge Network zu senden [here](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/#configure-a-rule-to-forward-lifecycle-metrics-to-platform). Sobald die Ereignisse an Platform Edge Network gesendet werden, werden sie gemäß Ihrer Datastream-Konfiguration an andere Anwendungen und Dienste weitergeleitet.
+Die vorherige Übung sendet die Vordergrund- und Hintergrundereignisse an das Adobe Experience Platform Mobile SDK. So leiten Sie diese Ereignisse an das Platform Edge Network weiter:
 
-Nachdem Sie die Regel zum Senden der Lebenszyklusereignisse an Platform Edge Network hinzugefügt haben, sollte Folgendes angezeigt werden: `Application Close (Background)` und `Application Launch (Foreground)` Ereignisse, die XDM-Daten in Assurance enthalten.
+1. Auswählen **[!UICONTROL Regeln]** in der Eigenschaft &quot;Tags&quot;.
+   ![Regel erstellen](assets/rule-create.png)
+1. Auswählen **[!UICONTROL Ursprünglicher Build]** als zu verwendende Bibliothek.
+1. Wählen Sie **[!UICONTROL Neue Regel erstellen]** aus.
+   ![Neue Regel erstellen](assets/rules-create-new.png)
+1. Im **[!UICONTROL Regel erstellen]** Bildschirm, Eingabe `Application Status` für **[!UICONTROL Name]**.
+1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Hinzufügen]** below **[!UICONTROL EREIGNISSE]**.
+   ![Dialogfeld &quot;Regel erstellen&quot;](assets/rule-create-name.png)
+1. Im **[!UICONTROL Ereigniskonfiguration]** step:
+   1. Auswählen **[!UICONTROL Mobile Core]** als **[!UICONTROL Erweiterung]**.
+   1. Auswählen **[!UICONTROL Vordergrund]** als **[!UICONTROL Ereignistyp]**.
+   1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+      ![Regelereigniskonfiguration](assets/rule-event-configuration.png)
+1. Zurück im **[!UICONTROL Regel erstellen]** Bildschirm, auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Hinzufügen]** neben **[!UICONTROL Mobile Core - Vordergrund]**.
+   ![Nächste Ereigniskonfiguration](assets/rule-event-configuration-next.png)
+1. Im **[!UICONTROL Ereigniskonfiguration]** step:
+   1. Auswählen **[!UICONTROL Mobile Core]** als **[!UICONTROL Erweiterung]**.
+   1. Auswählen **[!UICONTROL Hintergrund]** als **[!UICONTROL Ereignistyp]**.
+   1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+      ![Regelereigniskonfiguration](assets/rule-event-configuration-background.png)
+1. Zurück im **[!UICONTROL Regel erstellen]** Bildschirm, auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Hinzufügen]** darunter **[!UICONTROL AKTIONEN]**.
+   ![Aktion zum Hinzufügen von Regeln](assets/rule-action-button.png)
+1. Im **[!UICONTROL Aktionskonfiguration]** step:
+   1. Auswählen **[!UICONTROL Adobe Experience Edge Network]** als **[!UICONTROL Erweiterung]**.
+   1. Auswählen **[!UICONTROL Weiterleiten von Ereignissen an Edge Network]** als **[!UICONTROL Aktionstyp]**.
+   1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+      ![Regelaktionskonfiguration](assets/rule-action-configuration.png)
+1. Auswählen **[!UICONTROL In Bibliothek speichern]**.
+   ![Regel - In Bibliothek speichern](assets/rule-save-to-library.png)
+1. Auswählen **[!UICONTROL Build]** , um die Bibliothek neu zu erstellen.
+   ![Regel - Build](assets/rule-build.png)
 
-![Lebenszyklus validieren, der an Platform Edge gesendet wird](assets/mobile-lifecycle-edge-assurance.png)
+Nachdem Sie die Eigenschaft erfolgreich erstellt haben, werden die Ereignisse an Platform Edge Network gesendet und die Ereignisse gemäß Ihrer Datastream-Konfiguration an andere Anwendungen und Dienste weitergeleitet.
 
+Sie sollten **[!UICONTROL Anwendungsbeendigung (Hintergrund)]** und **[!UICONTROL Application Launch (Vordergrund)]** Ereignisse, die XDM-Daten in Assurance enthalten.
 
+![Lebenszyklus validieren, der an Platform Edge gesendet wird](assets/lifecycle-edge-assurance.png)
 
-Weiter: **[Ereignisse verfolgen](events.md)**
-
->[!NOTE]
+>[!SUCCESS]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Sie haben Ihre App jetzt so eingerichtet, dass sie App-Zustandsereignisse (Vordergrund, Hintergrund) an das Adobe Experience Platform Edge Network und alle Dienste sendet, die Sie in Ihrem Datastream definiert haben.
+>
+> Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+Weiter: **[Tracking von Ereignisdaten](events.md)**
