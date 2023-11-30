@@ -3,10 +3,10 @@ title: Mit dem Platform Mobile SDK erfasste Daten Adobe Analytics zuordnen
 description: Erfahren Sie, wie Sie Daten für Adobe Analytics in einer App erfassen und zuordnen können.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 29b9771d81395676547b93ab3a1475a6a69c763f
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 1%
+source-wordcount: '931'
+ht-degree: 2%
 
 ---
 
@@ -86,7 +86,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 
 >[!NOTE]
 >
->Aktuell `productListItems[N].SKU` wird von der automatischen Zuordnung ignoriert.
+>Wenn `productListItems[].SKU` und `productListItems[].name` beide Daten enthalten, wird der Wert in `productListItems[].SKU` verwendet. Siehe [Analytics-Variablenzuordnung in Adobe Experience Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) für weitere Informationen.
 
 
 ### Beispiel 2 - scAdd

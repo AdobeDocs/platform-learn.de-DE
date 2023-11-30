@@ -2,7 +2,7 @@
 title: Verwenden von Orten mit Platform Mobile SDK
 description: Erfahren Sie, wie Sie den Geolocation-Dienst Places in Ihrer mobilen App verwenden.
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 4%
@@ -182,7 +182,7 @@ Erstellen wir eine weitere Regel
 
 1. Im **[!UICONTROL Regel erstellen]** Bildschirm einen Namen für die Regel eingeben, z. B. `POI - Exit`.
 1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) darunter **[!UICONTROL EREIGNISSE]**.
-   1. Auswählen **[!UICONTROL Orte]** aus dem **[!UICONTROL Erweiterung]** Liste und Auswahl **[!UICONTROL POI eingeben]** aus dem **[!UICONTROL Ereignistyp]** Liste.
+   1. Auswählen **[!UICONTROL Orte]** aus dem **[!UICONTROL Erweiterung]** Liste und Auswahl **[!UICONTROL Ausstiegspunkt]** aus dem **[!UICONTROL Ereignistyp]** Liste.
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) darunter **[!UICONTROL AKTIONEN]**.
    1. Auswählen **[!UICONTROL Mobile Core]** von **[!UICONTROL Erweiterung]** Liste auswählen **[!UICONTROL Daten anhängen]** von **[!UICONTROL Aktionstyp]** Liste.
