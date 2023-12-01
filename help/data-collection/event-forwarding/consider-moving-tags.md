@@ -6,7 +6,7 @@ role: Admin, Developer, Architect, Data Engineer
 level: Intermediate, Experienced
 jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 6%
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 Es gibt mehrere zwingende Gründe, das Verschieben clientseitiger Anbieter-Tags aus Browsern und Geräten auf einen Server zu erwägen. In diesem Artikel besprechen wir, wie ein clientseitiges Anbieter-Tag dahingehend bewertet werden kann, dass es möglicherweise in eine Ereignisweiterleitungs-Eigenschaft verschoben wird.
 
-Diese Bewertung ist nur erforderlich, wenn Sie erwägen, ein clientseitiges Anbieter-Tag zu entfernen und es durch die serverseitige Datenverteilung in einer Ereignisweiterleitungs-Eigenschaft zu ersetzen. In diesem Artikel wird davon ausgegangen, dass Sie mit den Grundlagen von [Datenerfassung](https://experienceleague.adobe.com/docs/data-collection.html)und [Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Diese Bewertung ist nur erforderlich, wenn Sie erwägen, ein clientseitiges Anbieter-Tag zu entfernen und es durch die serverseitige Datenverteilung in einer Ereignisweiterleitungs-Eigenschaft zu ersetzen. In diesem Artikel wird davon ausgegangen, dass Sie mit den Grundlagen von [Datenerfassung](https://experienceleague.adobe.com/docs/data-collection.html), und [Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Browser-Anbieter ändern die Behandlung von Drittanbieter-Cookies. Anbieter und 
 
 ## Anwendungsbeispiele und Daten {#use-cases-data}
 
-Der erste Schritt besteht darin, die Anwendungsfälle zu definieren, die mit dem clientseitigen Anbieter-Tag implementiert wurden. Betrachten Sie beispielsweise das Facebook-Pixel (Meta). Verschieben Sie ihn von unserer Website in die [Facebook Conversions API](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) mit der Ereignisweiterleitungs-Erweiterung bedeutet, dass die spezifischen Anwendungsfälle zuerst dokumentiert werden.
+Der erste Schritt besteht darin, die Anwendungsfälle zu definieren, die mit dem clientseitigen Anbieter-Tag implementiert wurden. Betrachten Sie beispielsweise das Facebook-Pixel (Meta). Verschieben Sie ihn von unserer Website in die [Meta Conversions-API](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) mit der Ereignisweiterleitungs-Erweiterung bedeutet, dass die spezifischen Anwendungsfälle zuerst dokumentiert werden.
 
 Für den aktuellen clientseitigen Anbietercode:
 
@@ -63,13 +63,13 @@ Jetzt kennen wir die spezifischen Anwendungsfälle, die implementiert werden mü
 
 ### APIs untersuchen {#investigate-apis}
 
-Im Folgenden finden Sie einige Schritte, die wir durchführen können, um API-Endpunkte von Anbietern zu untersuchen.
+Im Folgenden finden Sie einige Schritte, die wir zur Untersuchung von Anbieter-API-Endpunkten durchführen können.
 
 Verfügt der Anbieter über APIs für die Übertragung von Ereignisdaten von Server zu Server? Suchen Sie zunächst die Anforderungen für diese spezifischen API-Endpunkte:
 
 - Existieren die API-Endpunkte, um die erforderlichen Daten zu senden? Die Endpunkte, die Ihre Anwendungsfälle unterstützen, finden Sie in der Entwickler- oder API-Dokumentation des Anbieters.
 - Erlauben sie Streaming-Ereignisdaten oder nur Batch-Daten?
-- Welche Authentifizierungsmethoden werden unterstützt? Token, HTTP, OAuth-Client-Anmeldedaten-Version oder andere? Siehe [here](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) für Methoden, die von der Ereignisweiterleitung unterstützt werden.
+- Welche Authentifizierungsmethoden werden unterstützt? Token, HTTP, OAuth-Client-Anmeldedaten-Version oder andere? Siehe [here](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) für die von der Ereignisweiterleitung unterstützten Methoden.
 - Wie hoch ist der Aktualisierungsversatz ihrer API? Ist diese Einschränkung mit den Mindestwerten für die Ereignisweiterleitung kompatibel? Details [here](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
 - Welche Daten benötigen sie für die relevanten Endpunkte?
 - Benötigen sie eine herstellerspezifische Benutzer-ID bei jedem Aufruf an den -Endpunkt?
@@ -87,7 +87,7 @@ Wenn der Anbieter nicht über die API-Endpunkte verfügt, die unsere Anwendungsf
 
 Was passiert, wenn sie über APIs verfügen, aber bei jedem API-Aufruf auch eine Unique Visitor- oder Benutzer-ID benötigen? Wie können wir auf diese ID zugreifen, wenn der clientseitige Code (Tag) des Anbieters nicht auf der Site ausgeführt wird?
 
-Einige Anbieter ändern ihre Systeme für die neue Welt ohne Drittanbieter-Cookies. Zu diesen Änderungen gehört die Verwendung alternativer eindeutiger Kennungen, z. B. einer [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) oder andere [kundengenerierte ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). Wenn der Anbieter eine kundengenerierte ID zulässt, können wir sie entweder vom Client mit dem Web- oder Mobile-SDK an Platform Edge Network senden oder möglicherweise von einem API-Aufruf in der Ereignisweiterleitung abrufen. Wenn wir Daten an diesen Anbieter in einer Ereignisweiterleitungsregel senden, fügen wir diese Kennung einfach nach Bedarf hinzu.
+Einige Anbieter ändern ihre Systeme für die neue Welt ohne Drittanbieter-Cookies. Zu diesen Änderungen gehört die Verwendung alternativer eindeutiger Kennungen, z. B. einer [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) oder andere [kundengenerierte ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=de). Wenn der Anbieter eine kundengenerierte ID zulässt, können wir sie entweder vom Client mit dem Web- oder Mobile-SDK an Platform Edge Network senden oder möglicherweise von einem API-Aufruf in der Ereignisweiterleitung abrufen. Wenn wir Daten an diesen Anbieter in einer Ereignisweiterleitungsregel senden, fügen wir diese Kennung einfach nach Bedarf hinzu.
 
 Wenn der Anbieter Daten benötigt (z. B. eine herstellerspezifische eindeutige ID), die nur von seinem eigenen clientseitigen Tag generiert oder aufgerufen werden können, ist dieses Anbieter-Tag wahrscheinlich kein guter Kandidat für die Verschiebung. _Es wird davon abgeraten, einen Client-seitigen Tag umzukehren, um die Datenerfassung zur Ereignisweiterleitung ohne die entsprechenden APIs zu verschieben._
 
