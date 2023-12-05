@@ -1,11 +1,12 @@
 ---
 title: Installieren von Adobe Experience Platform Mobile SDKs
 description: Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK in eine Mobile App implementieren.
+jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 1%
+source-wordcount: '898'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +51,7 @@ In Xcode können Sie **[!UICONTROL Datei]** > **[!UICONTROL Pakete hinzufügen..
 | [AEP Places](https://github.com/adobe/aepsdk-places-ios) | Die AEP Places-Erweiterung (`AEPPlaces`) können Sie Geolocation-Ereignisse verfolgen, wie in der Adobe Places-Benutzeroberfläche und in den Adobe-Datenerfassungs-Tag-Regeln definiert. |
 | [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) | Die AEP Messaging-Erweiterung (`AEPMessaging`) ermöglicht das Senden von Push-Benachrichtigungstoken und Push-Benachrichtigungs-Clickthrough-Feedback an die Adobe Experience Platform. |
 | [AEP Optimize](https://github.com/adobe/aepsdk-optimize-ios) | Die AEP Optimize-Erweiterung (`AEPOptimize`) bietet APIs zum Aktivieren von Echtzeit-Personalisierungs-Workflows in den Adobe Experience Platform Mobile SDKs mithilfe der Adobe Target- oder Adobe Journey Optimizer-Offer decisioning. Sie erfordert `AEPCore` und `AEPEdge` Erweiterungen zum Senden von Personalisierungsabfrageereignissen an das Experience Edge-Netzwerk. |
-| [AEP-Sicherheit](https://github.com/adobe/aepsdk-assurance-ios) | Assurance (alias Projekt Griffon) ist eine neue, innovative Erweiterung (`AEPAssurance`), damit Sie die Erfassung, den Testversand, die Simulation und die Validierung der Datenerfassung und der Bereitstellung von Erlebnissen in Ihrer App unterstützen können. Diese Erweiterung aktiviert Ihre App für die Qualitätssicherung. |
+| [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios) | Assurance (alias Projekt Griffon) ist eine neue, innovative Erweiterung (`AEPAssurance`), damit Sie die Erfassung, den Testversand, die Simulation und die Validierung der Datenerfassung und der Bereitstellung von Erlebnissen in Ihrer App unterstützen können. Diese Erweiterung aktiviert Ihre App für die Qualitätssicherung. |
 
 
 ## Importieren von Erweiterungen

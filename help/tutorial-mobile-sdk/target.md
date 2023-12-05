@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie mit dem Platform Mobile SDK und Adobe Target 
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
+jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 3%
+source-wordcount: '1745'
+ht-degree: 2%
 
 ---
 
@@ -92,7 +93,7 @@ Um sicherzustellen, dass Daten, die von Ihrer mobilen App an das Edge-Netzwerk g
 1. Auswählen **[!UICONTROL Erweiterungen]**.
 1. Auswählen **[!UICONTROL Katalog]**.
 1. Suchen Sie nach **[!UICONTROL Adobe Journey Optimizer - Entscheidungsfindung]** -Erweiterung.
-1. Installieren der Erweiterung. Die Erweiterung erfordert keine zusätzliche Konfiguration.
+1. Installieren Sie die -Erweiterung. Die Erweiterung erfordert keine zusätzliche Konfiguration.
 
    ![Entscheidungserweiterung hinzufügen](assets/tag-add-decisioning-extension.png)
 

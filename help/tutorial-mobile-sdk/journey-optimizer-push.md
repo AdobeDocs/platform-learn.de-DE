@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie mit dem Platform Mobile SDK und Adobe Journey
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
+jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 4%
+source-wordcount: '2556'
+ht-degree: 1%
 
 ---
 
@@ -32,8 +33,8 @@ Mit Journey Optimizer können Sie Journey erstellen und Nachrichten an Zielgrupp
 * Zugriff auf Journey Optimizer und ausreichende Berechtigungen wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
    * Erstellen Sie eine App-Oberfläche.
    * Erstellen Sie eine Journey.
-   * Erstellen einer Nachricht.
-   * Erstellen von Nachrichtenvoreinstellungen.
+   * Erstellen Sie eine Nachricht.
+   * Erstellen Sie Nachrichtenvorgaben.
 * **Bezahltes Apple-Entwicklerkonto** mit ausreichend Zugriff zum Erstellen von Zertifikaten, Kennungen und Schlüsseln.
 * Physisches iOS-Gerät oder Simulator zum Testen.
 
@@ -87,7 +88,7 @@ Weitere Dokumentationen können [hier finden](https://help.apple.com/developer-a
    ![App-Oberfläche - Startseite](assets/push-app-surface.png)
 1. Geben Sie einen **[!UICONTROL Name]** für die Konfiguration, beispielsweise `Luma App Tutorial`  .
 1. Von **[!UICONTROL Konfiguration von Mobile Apps]** auswählen **[!UICONTROL Apple iOS]**.
-1. Geben Sie die Bundle ID der Mobile App im Feld **[!UICONTROL App-ID (iOS Bundle ID)]** ein. Beispiel,  `com.adobe.luma.tutorial.swiftui`.
+1. Geben Sie die Paket-ID der mobilen App in die **[!UICONTROL App-ID (iOS Bundle ID)]** -Feld. Beispiel:  `com.adobe.luma.tutorial.swiftui`.
 1. Schalten Sie die **[!UICONTROL Push-Anmeldedaten]** Schalten Sie um, um Ihre Anmeldedaten hinzuzufügen.
 1. Ziehen und ablegen `.p8` **Authentifizierungsschlüssel für Apple-Push-Benachrichtigungen** -Datei.
 1. Stellen Sie die **[!UICONTROL Schlüssel-ID]**, eine 10-stellige Zeichenfolge, die bei der Erstellung von `p8` Authentifizierungsschlüssel. Sie finden sie unter der **[!UICONTROL Schlüssel]** im **Zertifikate, Kennungen und Profile** auf den Apple Developer Portal-Seiten. Siehe auch [Privaten Schlüssel erstellen](#create-a-private-key).
@@ -122,7 +123,7 @@ Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag
 1. Öffnen Sie Ihre Eigenschaft, beispielsweise **[!DNL Luma Mobile App Tutorial]**.
 1. Auswählen **[!UICONTROL Katalog]**.
 1. Suchen Sie nach **[!UICONTROL Adobe Journey Optimizer]** -Erweiterung.
-1. Installieren der Erweiterung.
+1. Installieren Sie die -Erweiterung.
 1. Im **[!UICONTROL Installieren der Erweiterung]** dialog
    1. Wählen Sie beispielsweise eine Umgebung aus. **[!UICONTROL Entwicklung]**.
    1. Wählen Sie die **[!UICONTROL AJO Push Tracking Erlebnis-Datensatz]** Datensatz aus der **[!UICONTROL Ereignis-Datensatz]** Liste.

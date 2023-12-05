@@ -2,11 +2,12 @@
 title: Konfigurieren einer Tag-Eigenschaft für Platform Mobile SDK-Implementierungen
 description: Erfahren Sie, wie Sie eine Tag-Eigenschaft im [!UICONTROL Datenerfassung] -Schnittstelle.
 feature: Mobile SDK,Tags
+jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 8%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -35,11 +36,11 @@ In dieser Lektion werden Sie:
 
 1. Erstellen Sie in der Datenerfassungsoberfläche eine neue mobile Tag-Eigenschaft:
    1. Auswählen **[!UICONTROL Tags]** in der linken Navigation.
-   1. Wählen Sie **[!UICONTROL Neue Eigenschaft]** aus
+   1. Auswählen **[!UICONTROL Neue Eigenschaft]**
       ![Tag-Eigenschaft erstellen](assets/tags-new-property.png).
    1. Für **[!UICONTROL Name]**, eingeben `Luma Mobile App Tutorial`.
    1. Für **[!UICONTROL Plattform]** auswählen **[!UICONTROL Mobilnummer]**.
-   1. Wählen Sie **[!UICONTROL Speichern]** aus.
+   1. Auswählen  **[!UICONTROL Speichern]**.
 
       ![Konfigurieren der Tag-Eigenschaft](assets/tags-property-config.png)
 
@@ -49,7 +50,7 @@ In dieser Lektion werden Sie:
 
 
 1. Öffnen Sie die neue Eigenschaft.
-1. eine Bibliothek erstellen:
+1. Erstellen einer Bibliothek:
 
    1. Navigieren Sie zu **[!UICONTROL Veröffentlichungsfluss]** in der linken Navigation.
    1. Auswählen **[!UICONTROL Bibliothek hinzufügen]**.

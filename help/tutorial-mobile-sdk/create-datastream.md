@@ -2,11 +2,12 @@
 title: Konfigurieren eines Datenspeichers für Platform Mobile SDK-Implementierungen
 description: Erfahren Sie, wie Sie einen Datastream in Experience Platform erstellen.
 feature: Mobile SDK,Datastreams
+jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 10%
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
@@ -27,8 +28,8 @@ Um einen Datastream zu erstellen, muss Ihre Organisation für diese Funktion in 
 In dieser Lektion werden Sie:
 
 * Erfahren Sie, wann ein Datastream verwendet werden soll.
-* Erstellen eines Datenspeichers.
-* Konfigurieren eines Datenstroms.
+* Erstellen Sie einen Datenspeicher.
+* Konfigurieren Sie einen Datenspeicher.
 
 ## Erstellen eines Datenspeichers
 
@@ -44,7 +45,7 @@ Datenspeicher können im [!UICONTROL Datenerfassung] -Schnittstelle mithilfe der
 
    >[!NOTE]
    >
-   >Letzte Erinnerung: Wenn Sie dieses Tutorial mit mehreren Personen in einer Sandbox durchlaufen oder ein freigegebenes Konto verwenden, sollten Sie erwägen, im Rahmen Ihrer Benennungskonventionen eine Identität anzuhängen oder vorzustellen. Verwenden Sie beispielsweise `Luma Mobile App Event Dataset - Joe Smith` statt `Luma Mobile App Event Dataset`. Siehe auch den Hinweis unter [Übersicht](overview.md).
+   >Letzte Erinnerung: Wenn Sie dieses Tutorial mit mehreren Personen in einer Sandbox durchlaufen oder ein freigegebenes Konto verwenden, sollten Sie erwägen, im Rahmen Ihrer Benennungskonventionen eine Identität anzuhängen oder vorzustellen. Beispiel: anstelle von `Luma Mobile App Event Dataset`, verwenden `Luma Mobile App Event Dataset - Joe Smith`. Siehe auch den Hinweis unter [Übersicht](overview.md).
 
 1. Wählen Sie das Schema aus, das Sie in der vorherigen Lektion aus dem **Ereignisschema** Liste.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.

@@ -1,11 +1,12 @@
 ---
 title: Verwenden von Orten mit Platform Mobile SDK
 description: Erfahren Sie, wie Sie den Geolocation-Dienst Places in Ihrer mobilen App verwenden.
+jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 4%
+source-wordcount: '1588'
+ht-degree: 3%
 
 ---
 
@@ -71,7 +72,7 @@ Sie definieren einige Zielpunkte im Places-Dienst.
 1. Auswählen **[!UICONTROL Erweiterungen]**.
 1. Auswählen **[!UICONTROL Katalog]**.
 1. Suchen Sie nach **[!UICONTROL Orte]** -Erweiterung.
-1. Installieren der Erweiterung.
+1. Installieren Sie die -Erweiterung.
 
    ![Entscheidungserweiterung hinzufügen](assets/tag-places-extension.png)
 

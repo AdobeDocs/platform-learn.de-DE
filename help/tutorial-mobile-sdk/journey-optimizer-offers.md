@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie mit dem Platform Mobile SDK und der Adobe Jou
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
+jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 3%
+source-wordcount: '2470'
+ht-degree: 2%
 
 ---
 
@@ -76,7 +77,7 @@ Um sicherzustellen, dass Daten, die von Ihrer Mobile App an Platform Edge Networ
 1. Auswählen **[!UICONTROL Erweiterungen]**.
 1. Auswählen **[!UICONTROL Katalog]**.
 1. Suchen Sie nach **[!UICONTROL Adobe Journey Optimizer - Entscheidungsfindung]** -Erweiterung.
-1. Installieren der Erweiterung. Die Erweiterung erfordert keine zusätzliche Konfiguration.
+1. Installieren Sie die -Erweiterung. Die Erweiterung erfordert keine zusätzliche Konfiguration.
 
    ![Entscheidungserweiterung hinzufügen](assets/tag-add-decisioning-extension.png)
 

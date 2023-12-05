@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie mit dem Platform Mobile SDK und Adobe Journey
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
+jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 6%
+source-wordcount: '1434'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 Erfahren Sie, wie Sie In-App-Nachrichten für mobile Apps mit Experience Platform Mobile SDK und Journey Optimizer erstellen.
 
-Mit Journey Optimizer können Sie Kampagnen erstellen, um In-App-Nachrichten an Zielgruppen zu senden. Kampagnen in Journey Optimizer werden verwendet, um einmalige Inhalte mithilfe verschiedener Kanäle an eine bestimmte Zielgruppe zu senden. Bei Kampagnen werden die Aktionen gleichzeitig ausgeführt, entweder sofort oder nach einem bestimmten Zeitplan. Bei der Verwendung von Journey (siehe [Journey Optimizer-Push-Benachrichtigungen](journey-optimizer-push.md) Lektion), werden Aktionen nacheinander ausgeführt.
+Mit Journey Optimizer können Sie Kampagnen erstellen, um In-App-Nachrichten an Zielgruppen zu senden. Kampagnen in Journey Optimizer werden verwendet, um einmalige Inhalte mithilfe verschiedener Kanäle an eine bestimmte Zielgruppe zu senden. Bei Kampagnen werden Aktionen gleichzeitig, entweder sofort oder basierend auf einem festgelegten Zeitplan ausgeführt. Bei der Verwendung von Journey (siehe [Journey Optimizer-Push-Benachrichtigungen](journey-optimizer-push.md) Lektion), werden Aktionen nacheinander ausgeführt.
 
 ![Architektur](assets/architecture-ajo.png)
 
@@ -32,7 +33,7 @@ Bevor Sie In-App-Nachrichten mit Journey Optimizer senden, müssen Sie sicherste
 * App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
 * Richten Sie die App für Adobe Experience Platform ein.
 * Zugriff auf Journey Optimizer und ausreichende Berechtigungen wie beschrieben [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
-   * Verwalten von Kampagnen.
+   * Verwalten Sie Kampagnen.
 * Physisches iOS-Gerät oder Simulator zum Testen.
 
 
@@ -61,7 +62,7 @@ In dieser Lektion werden Sie
    ![App-Oberfläche - Startseite](assets/push-app-surface.png)
 1. Geben Sie einen **[!UICONTROL Name]** für die Konfiguration, beispielsweise `Luma App Tutorial`  .
 1. Von **[!UICONTROL Konfiguration von Mobile Apps]** auswählen **[!UICONTROL Apple iOS]**.
-1. Geben Sie die Bundle ID der Mobile App im Feld **[!UICONTROL App-ID (iOS Bundle ID)]** ein. Beispiel,  `com.adobe.luma.tutorial.swiftui`.
+1. Geben Sie die Paket-ID der mobilen App in die **[!UICONTROL App-ID (iOS Bundle ID)]** -Feld. Beispiel:  `com.adobe.luma.tutorial.swiftui`.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![App-Oberflächenkonfiguration](assets/push-app-surface-config-inapp.png)
@@ -89,7 +90,7 @@ Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag
 1. Öffnen Sie Ihre Eigenschaft, beispielsweise **[!DNL Luma Mobile App Tutorial]**.
 1. Auswählen **[!UICONTROL Katalog]**.
 1. Suchen Sie nach **[!UICONTROL Adobe Journey Optimizer]** -Erweiterung.
-1. Installieren der Erweiterung.
+1. Installieren Sie die -Erweiterung.
 1. Im **[!UICONTROL Installieren der Erweiterung]** dialog
    1. Wählen Sie beispielsweise eine Umgebung aus. **[!UICONTROL Entwicklung]**.
    1. Wählen Sie die **[!UICONTROL AJO Push Tracking Erlebnis-Datensatz]** Datensatz aus der **[!UICONTROL Ereignis-Datensatz]** Liste.
@@ -166,7 +167,7 @@ Der SDK-Ereignis-Hub veröffentlicht und empfängt Ereignisdaten von registriert
 1. Auswählen **[!UICONTROL Kampagne erstellen]**.
 1. Im **[!UICONTROL Kampagne erstellen]** screen:
    1. Auswählen **[!UICONTROL In-App-Nachricht]** und wählen Sie eine App-Oberfläche aus dem **[!UICONTROL Anwendungsoberfläche]** beispielsweise Liste **[!DNL Luma Mobile App]**.
-   1. Wählen Sie **[!UICONTROL Erstellen]** aus
+   1. Auswählen **[!UICONTROL Erstellen]**
       ![Kampagneneigenschaften](assets/ajo-campaign-properties.png)
 1. Gehen Sie im Bildschirm zur Kampagnendefinition zu **[!UICONTROL Eigenschaften]** eingeben, **[!UICONTROL Name]** beispielsweise für die Kampagne `Luma - In-App Messaging Campaign`und ein **[!UICONTROL Beschreibung]**, beispielsweise `In-app messaging campaign for Luma app`.
    ![Kampagnenname](assets/ajo-campaign-properties-name.png)

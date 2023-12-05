@@ -1,11 +1,12 @@
 ---
 title: Verfolgen von Ereignisdaten in mobilen Apps mit dem Platform Mobile SDK
 description: Erfahren Sie, wie Sie Ereignisdaten in einer Mobile App verfolgen.
+jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 4%
+source-wordcount: '1328'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +50,7 @@ Der Prozess läuft so ab...
 
 1. Ereignis erstellen und senden.
 
-1. Überprüfen.
+1. Validieren Sie.
 
 
 ### Standardfeldgruppen
@@ -167,21 +168,21 @@ Um das Senden von Commerce-bezogenen Erlebnisereignissen wiederverwendbar zu mac
 
    1. Für jede der Schaltflächen (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> und <img src="assets/purchase.png" width="20" />) in der Symbolleiste den entsprechenden Aufruf innerhalb der `ATTrackingManager.trackingAuthorizationStatus == .authorized` Stilllegung:
 
-      1. Für <img src="assets/saveforlater.png" width="15" />
+      1. Für  <img src="assets/saveforlater.png" width="15" />
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. Für <img src="assets/addtocart.png" width="20" />
+      1. Für  <img src="assets/addtocart.png" width="20" />
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. Für <img src="assets/purchase.png" width="20" />
+      1. Für  <img src="assets/purchase.png" width="20" />
 
          ```swift
          // Send purchase commerce experience event

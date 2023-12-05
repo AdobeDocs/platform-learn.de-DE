@@ -2,11 +2,12 @@
 title: Identitätsdaten in einer Mobile App mit Mobile SDK erfassen
 description: Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen.
 feature: Mobile SDK,Identities
+jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 6%
+source-wordcount: '815'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +35,7 @@ In dieser Lektion werden Sie:
 
 ## Einrichten eines benutzerdefinierten Identitäts-Namespace
 
-Identity-Namespaces sind Komponenten von [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) , die als Indikatoren für den Kontext dienen, auf den sich eine Identität bezieht. Sie identifizieren beispielsweise den Wert `name@email.com` als E-Mail-Adresse oder `443522` als numerische CRM-ID.
+Identity-Namespaces sind Komponenten von [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) , die als Indikatoren für den Kontext dienen, auf den sich eine Identität bezieht. Sie unterscheiden beispielsweise den Wert von `name@email.com` als E-Mail-Adresse oder `443522` als numerische CRM-ID.
 
 >[!NOTE]
 >
