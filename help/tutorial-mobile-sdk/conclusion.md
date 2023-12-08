@@ -2,11 +2,12 @@
 title: Schlussfolgerung und nächste Schritte nach Abschluss des Tutorials zum Platform Mobile SDK
 description: Nächste Schritte nach Abschluss des Tutorials
 recommendations: display,noCatalog
+jira: KT-14642
 exl-id: 69db6cf3-0d5d-4864-aac2-e5e1aea4c02e
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 8%
+source-wordcount: '438'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +18,7 @@ Herzlichen Glückwunsch! Sie haben das Tutorial &quot;Adobe Experience Cloud in 
 Schauen wir uns kurz alles an, was Sie erreicht haben. Sie haben:
 
 * Ein Schema wurde mit standardmäßigen und benutzerdefinierten Feldergruppen erstellt.
-* Einrichten eines Datenstroms.
+* Richten Sie einen Datenspeicher ein.
 * Eine mobile Tag-Eigenschaft konfiguriert.
 * Tag-Erweiterungen in einer App installiert und implementiert.
 * Die folgenden Funktionen wurden in eine App implementiert:
@@ -39,7 +40,7 @@ Sie sind bereit, mit der nächsten Phase Ihres Journey - der Implementierung von
 
 Und es gibt immer mehr zu lernen! Um auf Ihrer Implementierung aufzubauen, hier einige Vorschläge für weitere Inhalte, die Sie untersuchen sollten:
 
-* **Aktivieren der Ereignisweiterleitung**. Die Ereignisweiterleitung kann einfach in Ihrem Datastream aktiviert werden. Hier ist [eine praktische Lektion zum Konfigurieren der Ereignisweiterleitung](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) im Web SDK-Tutorial. Verwenden Sie die für Ihre Mobile-Implementierung erstellten Ressourcen und wählen Sie die XDM-Felder aus, die Sie in der App implementiert haben.
+* **Ereignisweiterleitung aktivieren**. Die Ereignisweiterleitung kann einfach in Ihrem Datastream aktiviert werden. Hier ist [eine praktische Lektion zum Konfigurieren der Ereignisweiterleitung](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) im Web SDK-Tutorial. Verwenden Sie die für Ihre Mobile-Implementierung erstellten Ressourcen und wählen Sie die XDM-Felder aus, die Sie in der App implementiert haben.
 * **Customer Journey Analytics verbinden**. Wenn Sie die [Platform-Datensatz](platform.md), können Sie den Datensatz mit Customer Journey Analytics verbinden. Weitere Informationen finden Sie hier . [Video-Tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=de)
 * **Audience Manager in Ihrem Datenspeicher aktivieren**. Senden Sie Ihre XDM-Erlebnisereignisse an Audience Manager und beginnen Sie mit dem Erstellen von Segmenten basierend auf dem Mobile-App-Interaktions-Audience Manager.
 * **Erstellen eines Segments in Platform**. Wenn Sie die [Schema und Datensatz für Echtzeit-Kundenprofil](platform.md)können Sie Segmente basierend auf Ihren App-Ereignissen erstellen, sie mit Daten aus anderen Quellen kombinieren und diese Segmente dann an Ziele in Real-time Customer Data Platform senden. Weitere Informationen zum Segment Builder finden Sie in diesem [Video-Tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/audiences/create-audiences.html).
