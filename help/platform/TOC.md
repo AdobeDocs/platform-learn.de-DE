@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
+source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '849'
 ht-degree: 21%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 21%
    + [Verwenden von Sandboxes](/help/platform/admin/use-sandboxes.md)
    + [Kopieren von Objekten zwischen Sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Benutzer hinzufügen](/help/platform/admin/add-users.md)
+   + [Entwickler hinzufügen](/help/platform/admin/add-developers.md)
    + [Produktadministratoren hinzufügen](/help/platform/admin/add-product-administrators.md)
    + [Konfigurieren der attributbasierten Zugriffssteuerung](/help/platform/admin/configure-attribute-based-access-control.md)
 + Zielgruppen und Segmentierung {#audiences}
