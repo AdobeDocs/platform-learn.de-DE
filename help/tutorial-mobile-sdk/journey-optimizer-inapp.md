@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1447'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Um sicherzustellen, dass Daten, die von Ihrer mobilen App an das Edge-Netzwerk g
 1. Wählen Sie zum Speichern Ihrer Datastream-Konfiguration **[!UICONTROL Speichern]**.
 
 
-   ![AEP-Datenspeicherkonfiguration](assets/datastream-aep-configuration.png)
+   ![AEP-Datenspeicherkonfiguration](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Journey Optimizer-Tag-Erweiterung installieren
@@ -91,16 +91,9 @@ Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag
 1. Auswählen **[!UICONTROL Katalog]**.
 1. Suchen Sie nach **[!UICONTROL Adobe Journey Optimizer]** -Erweiterung.
 1. Installieren Sie die -Erweiterung.
-1. Im **[!UICONTROL Installieren der Erweiterung]** dialog
-   1. Wählen Sie beispielsweise eine Umgebung aus. **[!UICONTROL Entwicklung]**.
-   1. Wählen Sie die **[!UICONTROL AJO Push Tracking Erlebnis-Datensatz]** Datensatz aus der **[!UICONTROL Ereignis-Datensatz]** Liste.
-   1. Auswählen **[!UICONTROL In Bibliothek speichern und erstellen]**.
-      ![Einstellungen der AJO-Erweiterung](assets/push-tags-ajo.png)
 
->[!NOTE]
->
->Wenn Sie nicht sehen `AJO Push Tracking Experience Event Dataset` als Option kontaktieren Sie den Kundendienst.
->
+Wann *only* Verwenden von In-App-Nachrichten in Ihrer App, in **[!UICONTROL Installieren der Erweiterung]** oder **[!UICONTROL Erweiterung konfigurieren]**, müssen Sie nichts konfigurieren. Wenn Sie jedoch bereits die [Push-Benachrichtigungen](journey-optimizer-push.md) Lektion im Tutorial sehen Sie, dass für die **[!UICONTROL Entwicklung]** Umgebung, **[!UICONTROL AJO Push Tracking Erlebnis-Datensatz]** Der Datensatz wird aus der **[!UICONTROL Ereignis-Datensatz]** Liste.
+
 
 ### Implementieren von Journey Optimizer in die App
 

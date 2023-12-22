@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2584'
 ht-degree: 1%
 
 ---
@@ -333,6 +333,7 @@ Als Nächstes erstellen Sie die Journey, die beim Empfang des entsprechenden Ere
       Im **[!UICONTROL Push-Benachrichtigung]** editor:
 
       1. Geben Sie einen **[!UICONTROL Titel]**, beispielsweise `Luma Test Push Notification` und geben Sie einen **[!UICONTROL body]**, beispielsweise `Test push notification for Luma mobile app`.
+      1. Optional können Sie einen Link zu einem Bild (.png oder .jpg) in **[!UICONTROL Medien hinzufügen]**. Wenn Sie dies tun, wird das Bild Teil der Push-Benachrichtigung sein.
       1. Um den Editor zu speichern und zu verlassen, wählen Sie ![Chevron links](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
          ![Push-Editor](assets/ajo-push-editor.png)
 
