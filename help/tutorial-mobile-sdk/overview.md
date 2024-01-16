@@ -4,14 +4,14 @@ description: Erfahren Sie, wie Sie die mobilen Adobe Experience Cloud-Anwendunge
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bd8d0cdcf9c5d29434de4968a048fd46e163b54
+source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 6%
+source-wordcount: '826'
+ht-degree: 4%
 
 ---
 
-# Tutorial zur Implementierung von Adobe Experience Cloud in Mobile Apps
+# Tutorial zur Implementierung von Adobe Experience Cloud in Apps
 
 Erfahren Sie, wie Sie Adobe Experience Cloud-Programme mit dem Adobe Experience Platform Mobile SDK in Ihrer Mobile App implementieren.
 
@@ -27,7 +27,7 @@ Die Lektionen sind für iOS konzipiert und in Swift/SwiftUI geschrieben, aber vi
 Nach Abschluss dieses Tutorials können Sie:
 
 * Erstellen Sie ein Schema mit standardmäßigen und benutzerdefinierten Feldergruppen.
-* Einrichten eines Datenstroms.
+* Richten Sie einen Datenspeicher ein.
 * Konfigurieren Sie eine mobile Tag-Eigenschaft.
 * Einrichten eines Experience Platform-Datensatzes (optional).
 * Installieren und implementieren Sie Tag-Erweiterungen in einer App.
@@ -95,10 +95,14 @@ Zwei Versionen der Beispiel-App können heruntergeladen werden. Beide Versionen 
 1. [Starten](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: ein Projekt ohne Code oder mit Platzhaltercode für den Großteil des Experience Platform Mobile SDK-Codes, den Sie zum Abschließen der praktischen Übungen in diesem Tutorial benötigen.
 1. [Beenden](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: eine Version mit der vollständigen Implementierung als Referenz.
 
-
 >[!NOTE]
 >
 >Sie verwenden iOS als Plattform, [!DNL Swift] als Programmiersprache, [!DNL SwiftUI] als UI-Framework und [!DNL Xcode] als integrierte Entwicklungsumgebung (IDE). Viele der erläuterten Implementierungskonzepte sind jedoch für andere Entwicklungsplattformen ähnlich. Viele haben dieses Tutorial bereits erfolgreich abgeschlossen, ohne dass zuvor ein iOS/Swift(UI)-Erlebnis vorhanden war. Sie müssen kein Experte sein, um die Lektionen abzuschließen, aber Sie erhalten mehr aus den Lektionen, wenn Sie Code bequem lesen und verstehen können.
+
+
+Sie können die fertige, produktionierte Version des Programms von der App Store herunterladen.
+
+[![Download](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 Los geht‘s!
