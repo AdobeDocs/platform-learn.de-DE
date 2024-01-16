@@ -2,9 +2,9 @@
 title: Berechtigungen für das Tutorial konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf das Experience Platform Web SDK anfordern und die zum Abschließen des Tutorials "Implementieren von Adobe Experience Cloud mit Web SDK"erforderliche Berechtigung konfigurieren.
 feature: Web SDK,Tags,Access Control
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '367'
 ht-degree: 4%
 
 ---
@@ -23,9 +23,9 @@ Erfahren Sie, wie Sie den Zugriff auf das Experience Platform Web SDK anfordern 
 Diese Funktionen sollten für alle Experience Cloud-Kunden verfügbar sein, auch wenn Sie keine plattformbasierte Anwendung wie Real-Time CDP verwenden.
 
 * Zugriff auf **Standardproduktion**, **&quot;Prod&quot;** Sandbox.
-* Zugriff auf **[!UICONTROL Verwalten von Schemas]** und **[!UICONTROL Anzeigen von Schemas]** under **[!UICONTROL Datenmodellierung]**
-* Zugriff auf **[!UICONTROL Verwalten von Identitäts-Namespaces]** und **[!UICONTROL Anzeigen von Identitäts-Namespaces]** under **[!UICONTROL Identity Management]**
-* Zugriff auf **[!UICONTROL Verwalten von Datenspeichern]** und **[!UICONTROL Anzeigen von Datenspeichern]** under **[!UICONTROL Datenerfassung]**
+* Zugriff auf **[!UICONTROL Verwalten von Schemas]** und **[!UICONTROL Anzeigen von Schemas]** under **[!UICONTROL Datenmodellierung]**.
+* Zugriff auf **[!UICONTROL Verwalten von Identitäts-Namespaces]** und **[!UICONTROL Anzeigen von Identitäts-Namespaces]** under **[!UICONTROL Identity Management]**.
+* Zugriff auf **[!UICONTROL Verwalten von Datenspeichern]** und **[!UICONTROL Anzeigen von Datenspeichern]** under **[!UICONTROL Datenerfassung]**.
 * Wenn Sie Kunde einer Platform-basierten Anwendung sind und die [Experience Platform einrichten](setup-experience-platform.md) Lektion sollten Sie auch:
    * Zugriff auf einen **development** Sandbox.
    * Alle Berechtigungselemente unter **[!UICONTROL Data Management]**, und **[!UICONTROL Profilverwaltung]**:
@@ -51,4 +51,4 @@ Jetzt können Sie die ersten Konfigurationsschritte starten.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

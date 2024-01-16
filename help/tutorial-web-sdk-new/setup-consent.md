@@ -2,9 +2,9 @@
 title: Einrichten der Zustimmung mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Consent
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -223,4 +223,4 @@ Weitere Informationen über [!UICONTROL Einverständnis festlegen] Aktion, siehe
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

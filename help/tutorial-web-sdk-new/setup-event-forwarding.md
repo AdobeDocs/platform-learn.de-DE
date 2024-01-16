@@ -2,9 +2,9 @@
 title: Einrichten einer Ereignisweiterleitungs-Eigenschaft
 description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1858'
 ht-degree: 4%
 
 ---
@@ -59,6 +59,7 @@ Am Ende dieser Lektion können Sie:
 
       * [Installieren der Web SDK-Erweiterung](install-web-sdk.md)
       * [Erstellen von Datenelementen](create-data-elements.md)
+      * [Erstellen von Identitäten](create-identities.md)
       * [Tag-Regel erstellen](create-tag-rule.md)
       * [Überprüfen mit dem Adobe Experience Platform-Debugger](validate-with-debugger.md)
 
@@ -320,4 +321,4 @@ Herzlichen Glückwunsch! Sie haben die Ereignisweiterleitung konfiguriert!
 
 >[!NOTE]
 >
-Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -9,10 +9,10 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 1b6fa039a255de8cdd1889136039e6f23b183578
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 38%
+source-wordcount: '96'
+ht-degree: 32%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 38%
 + Tag-Konfiguration {#tags-configuration}
    + [Installieren der Web SDK-Erweiterung](install-web-sdk.md)
    + [Erstellen von Datenelementen](create-data-elements.md)
+   + [Erstellen von Identitäten](create-identities.md)
    + [Tag-Regel erstellen](create-tag-rule.md)
    + [Validieren mit Debugger](validate-with-debugger.md)
 
@@ -37,6 +38,9 @@ ht-degree: 38%
    + [Einrichten von Adobe Analytics](setup-analytics.md)
    + [Einrichten von Audience Manager](setup-audience-manager.md)
    + [Einrichten von Target](setup-target.md)
+   + Einrichten von Journey Optimizer-Funktionen {#journey-optimizer}
+      + [Webkanal einrichten](journey-optimizer/setup-web-channel.md)
+      + [Entscheidungsverwaltung einrichten](journey-optimizer/setup-decision-management.md)
 
 + Zustimmungsverwaltung {#consent-management}
    + [Einverständnis einrichten](setup-consent.md)

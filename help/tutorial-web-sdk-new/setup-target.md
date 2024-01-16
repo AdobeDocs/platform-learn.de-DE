@@ -2,10 +2,10 @@
 title: Einrichten von Adobe Target mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Target
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '3582'
-ht-degree: 1%
+source-wordcount: '4183'
+ht-degree: 0%
 
 ---
 
@@ -26,6 +26,7 @@ Am Ende dieser Lektion können Sie:
 * Übergeben von XDM-Daten an Target und Verstehen der Zuordnung zu Target-Parametern
 * Übergeben benutzerdefinierter Daten an Target, z. B. Profil- und Entitätsparameter
 * Validieren einer Target-Implementierung mit dem Platform Web SDK
+* Senden Sie Target-Provision-Anforderungen separat von Adobe Analytics-Anforderungen und lösen Sie ihre Anzeigeereignisse später auf
 
 >[!TIP]
 >
@@ -37,7 +38,7 @@ Am Ende dieser Lektion können Sie:
 Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 
 * Schließen Sie alle Lektionen für die Erstkonfiguration des Platform Web SDK ab, einschließlich der Einrichtung von Datenelementen und Regeln.
-* Vergewissern Sie sich, dass [Editor- oder Genehmigerrolle](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80).
+* Vergewissern Sie sich, dass [Editor- oder Genehmigerrolle](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target.
 * Installieren Sie die [Visual Experience Composer Helper-Erweiterung](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html) wenn Sie den Google Chrome-Browser verwenden.
 * Erfahren Sie, wie Sie Aktivitäten in Target einrichten. Wenn Sie einen Auffrischungskurs benötigen, sind die folgenden Tutorials und Handbücher für diese Lektion hilfreich:
    * [Verwenden der Visual Experience Composer (VEC) Helper-Erweiterung](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)
@@ -167,6 +168,15 @@ Um Umgebungs-IDs einzurichten oder zu finden, navigieren Sie zu **Adobe Target**
 Mit dieser optionalen Einstellung können Sie festlegen, welches Identitätssymbol für die Target-Drittanbieter-ID verwendet werden soll. Target unterstützt nur die Profilsynchronisierung für ein einzelnes Identitätssymbol oder Namespace. Weitere Informationen finden Sie im Abschnitt [Echtzeit-Profilsynchronisierung für mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=de) Abschnitt des Target-Handbuchs.
 
 Die Identitätssymbole befinden sich in der Identitätsliste unter **Datenerfassung** > **[!UICONTROL Kunde]** > **[!UICONTROL Identitäten]**.
+<a id="advanced-pto"></a>
+
+### Überschreibungen des Erweiterten Eigenschafts-Tokens
+
+Der erweiterte Abschnitt enthält ein Feld für Eigenschafts-Token-Überschreibungen, mit dem Sie angeben können, welche Eigenschafts-Token das in der Konfiguration definierte primäre Eigenschafts-Token ersetzen können.
+
+![Identitätsliste](assets/advanced-property-token.png)
+
+Die Identitätssymbole befinden sich in der Identitätsliste unter **Datenerfassung** > **[!UICONTROL Kunde]** > **[!UICONTROL Identitäten]**.
 
 ![Identitätsliste](assets/target-identities.png)
 
@@ -194,6 +204,10 @@ Entscheidungen zur visuellen Personalisierung von Target werden vom Platform Web
 
    ![Aktivieren visueller Personalisierungsentscheidungen](assets/target-rule-enable-visual-decisions.png)
 
+1. Im **[!UICONTROL Überschreibungen der Datastream-Konfiguration**] die **[!UICONTROL Target-Eigenschafts-Token]** kann entweder als statischer Wert oder mit einem Datenelement überschrieben werden. Nur Eigenschafts-Token, die in der [**Überschreibungen des Erweiterten Eigenschafts-Tokens**](#advanced-pto) Abschnitt in **Datenspeicherkonfiguration** gibt Ergebnisse zurück.
+
+   ![Eigenschafts-Token überschreiben](assets/target-property-token-ovrrides.png)
+
 1. Speichern Sie Ihre Änderungen und erstellen Sie sie dann in Ihrer Bibliothek.
 
 Durch die Einstellung der visuellen Personalisierungsentscheidungen beim Rendern wendet das Platform Web SDK automatisch alle Änderungen an, die mit dem Target Visual Experience Composer oder der &quot;globalen Mbox&quot;angegeben wurden.
@@ -203,6 +217,7 @@ Durch die Einstellung der visuellen Personalisierungsentscheidungen beim Rendern
 >In der Regel wird die [!UICONTROL visuelle Personalisierungsentscheidungen rendern] sollte nur für eine einzelne Aktion &quot;Ereignis senden&quot;pro vollständigem Laden der Seite aktiviert werden. Wenn diese Einstellung für mehrere Aktionen vom Typ Ereignis senden aktiviert ist, werden nachfolgende Renderanforderungen ignoriert.
 
 Wenn Sie diese Entscheidungen mithilfe von benutzerdefiniertem Code lieber selbst rendern oder bearbeiten möchten, können Sie die [!UICONTROL visuelle Personalisierungsentscheidungen rendern] Einstellung deaktiviert. Das Platform Web SDK ist flexibel und bietet diese Möglichkeit, Ihnen vollständige Kontrolle zu geben. Weitere Informationen zu [Manuelles Rendern von personalisiertem Inhalt](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html).
+
 
 ### Target-Aktivität mit dem Visual Experience Composer einrichten
 
@@ -217,11 +232,17 @@ Nachdem der grundlegende Implementierungsabschnitt abgeschlossen ist, erstellen 
 
    ![Neue XT-Aktivität erstellen](assets/target-xt-create-activity.png)
 
-1. Ändern Sie die Seite, beispielsweise ändern Sie den Text auf dem Startseitenbanner
+1. Ändern Sie die Seite, z. B. ändern Sie den Text auf dem Hero Banner der Homepage.  Wählen Sie zum Abschluss **[!UICONTROL Speichern]** then **[!UICONTROL Nächste]**.
 
    ![Target VEC-Änderung](assets/target-xt-vec-modification.png)
 
+1. Aktualisieren Sie den Ereignisnamen und wählen Sie **[!UICONTROL Nächste]**.
+
+   ![Target VEC-Aktualisierungsereignis](assets/target-xt-vec-updateevent.png)
+
 1. Wählen Sie Adobe Analytics als Berichtsquelle mit der entsprechenden Report Suite und der Bestellungsmetrik als Ziel aus.
+
+   ![Berichtsquelle für Target VEC](assets/target-xt-vec-reportingsource.png)
 
    >[!NOTE]
    >
@@ -236,7 +257,7 @@ Nachdem der grundlegende Implementierungsabschnitt abgeschlossen ist, erstellen 
 
 ### Validieren mit dem Debugger
 
-Wenn Sie eine Aktivität einrichten, sollte Ihr Inhalt auf der Seite gerendert werden. Selbst wenn keine Aktivitäten live sind, können Sie sich auch den Netzwerkaufruf &quot;Ereignis senden&quot;ansehen, um zu bestätigen, dass Target ordnungsgemäß konfiguriert ist.
+Wenn Sie eine Aktivität einrichten, sollten Ihre Inhalte auf der Seite wiedergegeben werden. Selbst wenn keine Aktivitäten live sind, können Sie sich auch den Netzwerkaufruf &quot;Ereignis senden&quot;ansehen, um zu bestätigen, dass Target ordnungsgemäß konfiguriert ist.
 
 >[!CAUTION]
 >
@@ -253,7 +274,7 @@ Wenn Sie eine Aktivität einrichten, sollte Ihr Inhalt auf der Seite gerendert w
 
 1. Beachten Sie, dass es unter Schlüssel gibt. `query` > `personalization` und  `decisionScopes` hat den Wert von `__view__`. Dieser Umfang entspricht der &quot;globalen Mbox&quot;von Target. Bei diesem Platform Web SDK-Aufruf wurden Entscheidungen von Target angefordert.
 
-   ![__Ansicht__ DecisionScope-Anfrage](assets/target-debugger-view-scope.png)
+   ![`__view__` DecisionScope-Anfrage](assets/target-debugger-view-scope.png)
 
 1. Schließen Sie die Überlagerung und wählen Sie die Ereignisdetails für den zweiten Netzwerkaufruf aus. Dieser Aufruf ist nur vorhanden, wenn Target eine Aktivität zurückgegeben hat.
 1. Beachten Sie, dass es Details zur Aktivität und zum Erlebnis gibt, die von Target zurückgegeben werden. Dieser Platform Web SDK-Aufruf sendet eine Benachrichtigung, dass eine Target-Aktivität an den Benutzer gerendert wurde, und erhöht eine Impression.
@@ -287,7 +308,7 @@ Nachdem Sie das Platform Web SDK konfiguriert haben, um Inhalte für die `homepa
 1. Erstellen Sie eine Regel mit dem Namen `homepage - send event complete - render homepage-hero`.
 1. Fügen Sie der Regel ein Ereignis hinzu. Verwenden Sie die **Adobe Experience Platform Web SDK** und **[!UICONTROL Abschluss des Ereignisses senden]** Ereignistyp.
 1. Fügen Sie eine Bedingung hinzu, um die Regel auf die Startseite von Luma zu beschränken (Pfad ohne Abfragezeichenfolge ist gleich `/content/luma/us/en.html`).
-1. Fügen Sie der Regel eine Aktion hinzu. Verwenden Sie die **Core** Erweiterung und **Benutzerspezifischer Code** Aktionstyp.
+1. Fügen Sie der Regel eine Aktion hinzu. Verwenden Sie die **Adobe Experience Platform Web SDK** Erweiterung und **Vorschläge anwenden** Aktionstyp.
 
    ![Herd-Regel &quot;Render homepage&quot;](assets/target-rule-render-hero.png)
 
@@ -295,63 +316,13 @@ Nachdem Sie das Platform Web SDK konfiguriert haben, um Inhalte für die `homepa
    >
    >Geben Sie Ihren Regelereignissen, Bedingungen und Aktionen beschreibende Namen, anstatt die Standardnamen zu verwenden. Robuste Komponentennamen von Regeln machen die Suchergebnisse viel nützlicher.
 
-1. Geben Sie benutzerdefinierten Code ein, um die von der Platform Web SDK-Antwort zurückgegebenen Vorschläge zu lesen und Aktionen auszuführen. Der benutzerdefinierte Code in diesem Beispiel verwendet den Ansatz, der im Handbuch für [Manuelles Rendern von personalisiertem Inhalt](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=en#manually-rendering-content). Der Code wurde für die `homepage-hero` Beispielsbereich mit einer Tag-Regel-Aktion.
+1. Eingabe `%event.propositions%` in das Feld Vorschläge ein, da wir das Ereignis &quot;Ereignis-Abschluss senden&quot;als Trigger für diese Regel verwenden.
+1. Wählen Sie im Abschnitt &quot;Vorschlagsmetadaten&quot;die **[!UICONTROL Formular verwenden]**
+1. Für die Eingabe des Felds Umfang `homepage-hero`
+1. Für die Eingabe des Selektorfelds `div.heroimage`
+1. Aktionstyp belassen als `Set HTML`
 
-   ```javascript
-   var propositions = event.propositions;
-   
-   var heroProposition;
-   if (propositions) {
-      // Find the hero proposition, if it exists.
-      for (var i = 0; i < propositions.length; i++) {
-         var proposition = propositions[i];
-         if (proposition.scope === "homepage-hero") {
-            heroProposition = proposition;
-            break;
-         }
-      }
-   }
-   
-   var heroHtml;
-   if (heroProposition) {
-      // Find the item from proposition that should be rendered.
-      // Rather than assuming there a single item that has HTML
-      // content, find the first item whose schema indicates
-      // it contains HTML content.
-      for (var j = 0; j < heroProposition.items.length; j++) {
-         var heroPropositionItem = heroProposition.items[j];
-         if (heroPropositionItem.schema === "https://ns.adobe.com/personalization/html-content-item") {
-            heroHtml = heroPropositionItem.data.content;
-            break;
-         }
-      }
-   }
-   
-   if (heroHtml) {
-      // Hero HTML exists. Time to render it.
-      var heroElement = document.querySelector(".heroimage");
-      heroElement.innerHTML = heroHtml;
-      // For this example, we assume there is only a signle place to update in the HTML.
-   }
-   
-   // Send a "display" event 
-   alloy("sendEvent", {
-      xdm: {
-         eventType: "propositionDisplay",
-         _experience: {
-            decisioning: {
-               propositions: [
-                  {
-                     id: heroProposition.id,
-                     scope: heroProposition.scope,
-                     scopeDetails: heroProposition.scopeDetails
-                  }
-               ]
-            }
-         }
-      }
-   });
-   ```
+![Hero-Aktion &quot;Render homepage&quot;](assets/target-action-render-hero.png)
 
 1. Speichern Sie Ihre Änderungen und erstellen Sie in Ihrer Bibliothek.
 1. Laden Sie die Startseite von Luma einige Male, was ausreicht, um die neue Seite zu erstellen. `homepage-hero` Entscheidungsumfang in der Target-Oberfläche registrieren.
@@ -402,7 +373,7 @@ Wenn Sie Ihre Aktivität aktiviert haben, sollte Ihr Inhalt auf der Seite gerend
 1. Öffnen Sie die Adobe Experience Platform Debugger-Browsererweiterung
 1. Navigieren Sie zu [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) und verwenden Sie den Debugger zum [Ändern Sie die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Seite neu laden
-1. Wählen Sie die **[!UICONTROL Netzwerk]** -Tool im Debugger
+1. Wählen Sie die **[!UICONTROL Netzwerk]** im Debugger
 1. Filtern nach **[!UICONTROL Adobe Experience Platform Web SDK]**
 1. Wählen Sie den Wert in der Ereigniszeile für den ersten Aufruf aus
 
@@ -410,7 +381,7 @@ Wenn Sie Ihre Aktivität aktiviert haben, sollte Ihr Inhalt auf der Seite gerend
 
 1. Beachten Sie, dass es unter Schlüssel gibt. `query` > `personalization` und  `decisionScopes` hat den Wert von `__view__` wie zuvor, aber jetzt gibt es auch eine `homepage-hero` umfasst. Durch diesen Platform Web SDK-Aufruf wurden Entscheidungen von Target für Änderungen angefordert, die mithilfe des VEC und der spezifischen `homepage-hero` Standort.
 
-   ![__Ansicht__ DecisionScope-Anfrage](assets/target-debugger-view-scope.png)
+   ![`__view__` DecisionScope-Anfrage](assets/target-debugger-view-scope.png)
 
 1. Schließen Sie die Überlagerung und wählen Sie die Ereignisdetails für den zweiten Netzwerkaufruf aus. Dieser Aufruf ist nur vorhanden, wenn Target eine Aktivität zurückgegeben hat.
 1. Beachten Sie, dass es Details zur Aktivität und zum Erlebnis gibt, die von Target zurückgegeben werden. Dieser Platform Web SDK-Aufruf sendet eine Benachrichtigung, dass eine Target-Aktivität an den Benutzer gerendert wurde, und erhöht eine Impression.
@@ -478,6 +449,29 @@ Das Übergeben zusätzlicher Daten für Target außerhalb des XDM-Objekts erford
 >
 >Im obigen Beispiel wird eine `data` -Objekt, das nicht vollständig mit allen Seitentypen gefüllt ist. Tags handhabt diese Situation ordnungsgemäß und lässt Schlüssel mit einem nicht definierten Wert aus. Beispiel: `entity.id` und `entity.name` auf keinen Seiten außer Produktdetails übergeben werden.
 
+
+## Aufteilen von Personalisierungsentscheidungen und Analytics-Sammlungsereignissen
+
+Sie können eine Entscheidungsvorschlag-Anfrage und Analytics-Datenerfassungsanforderungen separat senden. Wenn Sie die Ereignisregeln auf diese Weise aufschlüsseln, kann das Target Decisioning-Ereignis so früh wie möglich ausgelöst werden. Das Analytics-Ereignis kann warten, bis das Datenschichtobjekt gefüllt ist.
+
+1. Erstellen Sie eine Regel mit dem Namen `all pages - page top - request decisions`.
+2. Fügen Sie der Regel ein Ereignis hinzu. Verwenden Sie die **Core** und **[!UICONTROL Bibliothek geladen (Seitenanfang)]** Ereignistyp.
+3. Fügen Sie der Regel eine Aktion hinzu. Verwenden Sie die **Adobe Experience Platform Web SDK** Erweiterung und **Ereignis senden** Aktionstyp.
+4. Im **Geführter Ereignisstil** auswählen, wählen Sie die **[!UICONTROL Seitenanfang - Entscheidungen zur Personalisierung von Anforderungen]** Optionsfeld
+5. Dadurch wird die **Typ** as **[!UICONTROL Abrufen von Entscheidungsvorschlägen]**
+
+![send_decision_request_alone](assets/target-decision-request.png)
+
+1. Beim Erstellen der `Adobe Analytics Send Event rule` die **Geführter Ereignisstil** -Abschnitt wählen Sie **[!UICONTROL Seitenende - Analytics-Analyse]** Optionsfeld
+1. Dadurch wird die **[!UICONTROL Benachrichtigungen bezüglich ausstehender Anzeige einschließen]** aktivieren, damit die Benachrichtigung zur Anzeige in der Warteschlange aus der Entscheidungsanfrage gesendet wird.
+
+![send_decision_request_alone](assets/target-aa-request-guided.png)
+
+>[!TIP]
+>
+>Wenn das Ereignis, für das Sie einen Entscheidungsvorschlag abrufen, nach dem kein Adobe Analytics-Ereignis aufweist, verwenden Sie die **Geführter Ereignisstil** **[!UICONTROL Nicht geführt - alle Felder anzeigen]**. Sie müssen alle Optionen manuell auswählen. Sie entsperrt jedoch die Option **[!UICONTROL Benachrichtigungs-Versand]** zusammen mit Ihrer Abrufanforderung.
+
+
 ### Validieren mit dem Debugger
 
 Nachdem die Regeln aktualisiert wurden, können Sie überprüfen, ob die Daten mithilfe des Adobe Debuggers korrekt übergeben wurden.
@@ -490,7 +484,7 @@ Nachdem die Regeln aktualisiert wurden, können Sie überprüfen, ob die Daten m
 1. Wählen Sie den Wert in der Ereigniszeile für den ersten Aufruf aus
 1. Beachten Sie, dass es unter Schlüssel gibt. `data` > `__adobe` > `target` und sie werden mit Informationen zum Produkt, zur Kategorie und zum Anmeldestatus gefüllt.
 
-   ![__Ansicht__ DecisionScope-Anfrage](assets/target-debugger-data.png)
+   ![`__view__` DecisionScope-Anfrage](assets/target-debugger-data.png)
 
 ### Validierung in der Target-Oberfläche
 
@@ -501,10 +495,14 @@ Nachdem die Regeln aktualisiert wurden, können Sie überprüfen, ob die Daten m
 1. Erstellen Sie eine Zielgruppe und wählen Sie die **[!UICONTROL Benutzerdefiniert]** Attributtyp
 1. Suchen Sie die **[!UICONTROL Parameter]** -Feld für `web`. Das Dropdown-Menü sollte mit allen XDM-Feldern gefüllt werden, die sich auf die Webseitendetails beziehen.
 
+   ![Validieren des benutzerdefinierten Attributs Target](assets/validate-in-target-customattribute.png)
+
 Überprüfen Sie anschließend, ob das Profilattribut für den Anmeldestatus erfolgreich übergeben wurde.
 
 1. Wählen Sie die **[!UICONTROL Besucherprofil]** Attributtyp
-1. Suchen Sie nach `loggedIn`. Wenn das Attribut im Dropdown-Menü verfügbar ist, wurde das Attribut korrekt an Target übergeben. Es kann mehrere Minuten dauern, bis neue Attribute in der Target-Benutzeroberfläche verfügbar sind.
+2. Suchen Sie nach `loggedIn`. Wenn das Attribut im Dropdown-Menü verfügbar ist, wurde das Attribut korrekt an Target übergeben. Es kann mehrere Minuten dauern, bis neue Attribute in der Target-Benutzeroberfläche verfügbar sind.
+
+   ![Validieren in Target-Profil](assets/validate-in-target-profile.png)
 
 Wenn Sie über Target Premium verfügen, können Sie auch überprüfen, ob die Entitätsdaten korrekt übergeben wurden und die Produktdaten in den Recommendations-Produktkatalog geschrieben wurden.
 
@@ -512,10 +510,41 @@ Wenn Sie über Target Premium verfügen, können Sie auch überprüfen, ob die E
 1. Auswählen **[!UICONTROL Katalogsuche]** in der linken Seitennavigation
 1. Suchen Sie nach der Produkt-SKU oder dem Produktnamen, den Sie zuvor auf der Site &quot;Luma&quot;besucht haben. Das Produkt sollte im Produktkatalog angezeigt werden. Es kann mehrere Minuten dauern, bis neue Produkte im Recommendations-Produktkatalog durchsucht werden können.
 
+   ![In Target-Katalogsuche validieren](assets/validate-in-target-catalogsearch.png)
+
+### Validierung mit Versicherung
+
+Darüber hinaus können Sie bei Bedarf mithilfe von Zusicherung überprüfen, ob Target-Entscheidungsanfragen die richtigen Daten erhalten und ob serverseitige Umwandlungen korrekt durchgeführt werden. Sie können auch überprüfen, ob die Kampagnen- und Erlebnisinformationen in den Adobe Analytics-Aufrufen enthalten sind, selbst wenn die Target-Entscheidungsfindungs- und Adobe Analytics-Aufrufe separat gesendet werden.
+
+1. Öffnen [Assurance](https://experience.adobe.com/assurance)
+1. Starten Sie eine neue Sicherheitssitzung, geben Sie die **[!UICONTROL Sitzungsname]** und geben Sie die **[!UICONTROL base url]** für Ihre Site oder eine andere Seite, die Sie testen
+1. Klicken Sie auf **[!UICONTROL Weiter]**
+
+   ![In neuer Sitzung validieren](assets/validate-in-assurance-newsession.png)
+
+1. Wählen Sie Ihre Verbindungsmethode aus. In diesem Fall werden wir **[!UICONTROL Link kopieren]**
+1. Kopieren Sie den Link und fügen Sie ihn in eine neue Browser-Registerkarte ein
+1. Klicks **[!UICONTROL Fertig]**
+
+   ![Überprüfen der sicheren Verbindung nach dem Link &quot;Kopieren&quot;](assets/validate-in-assurance-copylink.png)
+
+1. Nach dem Start Ihrer Assurance-Sitzung werden Ereignisse auf der Registerkarte &quot;Ereignisse&quot;angezeigt
+1. Filtern nach &quot;tnta&quot;
+1. Wählen Sie den letzten Aufruf aus und erweitern Sie die Nachrichten, um sicherzustellen, dass sie korrekt ausgefüllt sind, und notieren Sie die &quot;tnta&quot;-Werte.
+
+   ![Validierung im Target-Zuverlässigkeitstreffer](assets/validate-in-assurance-targetevent.png)
+
+1. Behalten Sie als Nächstes den Filter &quot;tnta&quot;bei und wählen Sie das Ereignis analytics.mapping aus, das nach dem soeben angezeigten Zielereignis auftritt.
+1. Überprüfen Sie &quot;context.mappedQueryParams&quot;.\&lt;yourschemaname>&quot;-Wert, um zu bestätigen, dass er ein &quot;tnta&quot;-Attribut mit einer verketteten Zeichenfolge enthält, die mit den &quot;tnta&quot;-Werten übereinstimmt, die im vorherigen Zielereignis gefunden wurden.
+
+   ![Validierung in Sicherungs-Analytics-Treffer](assets/validate-in-assurance-analyticsevent.png)
+
+Dadurch wird bestätigt, dass die A4T-Informationen, die bei der späteren Übertragung in die Warteschlange gestellt wurden, als wir den Target Decisioning-Aufruf durchgeführt haben, ordnungsgemäß gesendet wurden, wenn der Analytics-Tracking-Aufruf später auf der Seite ausgelöst wurde.
+
 Nachdem Sie diese Lektion abgeschlossen haben, sollten Sie über eine funktionierende Implementierung von Adobe Target mit dem Platform Web SDK verfügen.
 
 [Weiter: ](setup-consent.md)
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

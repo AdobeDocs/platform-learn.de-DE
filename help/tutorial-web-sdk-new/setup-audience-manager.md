@@ -2,7 +2,7 @@
 title: Einrichten von Audience Manager mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Audience Manager mit dem Platform Web SDK einrichten und die Implementierung mit einem Cookie-Ziel validieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Audience Manager
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 2%
@@ -85,7 +85,7 @@ Nachdem die Datenquelle gespeichert wurde, richten Sie eine [Eigenschaft](https:
 1. Wählen Sie die **[!UICONTROL Datenquelle]** die Sie im vorherigen Abschnitt erstellt haben.
 1. **[!UICONTROL Ordner auswählen]** , in der Sie Ihre Eigenschaft im Bereich auf der rechten Seite speichern möchten. Sie können einen Ordner erstellen, indem Sie **Auswählen des Zeichens +** neben einem vorhandenen übergeordneten Ordner. Sie können diesen neuen Ordner benennen `Platform Web SDK tutorial`.
 1. Erweitern Sie die **[!UICONTROL Eigenschaftsausdruck]** Caret und Auswahl **[!UICONTROL Expression Builder]** Sie müssen ein Schlüssel-Wert-Paar bereitstellen, das einen Homepage-Besuch angibt.
-1. Öffnen Sie die [Startseite von Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (Ihrer Tag-Eigenschaft zugeordnet) und der **Platform Web SDK Debugger** und aktualisieren Sie die Seite.
+1. Öffnen Sie die [Startseite von Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (Ihrer Tag-Eigenschaft zugeordnet) und der **Adobe Experience Platform Debugger** und aktualisieren Sie die Seite.
 1. Sehen Sie sich die Netzwerkanforderungen und Ereignisdetails für das Platform Web SDK an, um den Schlüssel- und Namenswert für die Homepage zu finden.
    ![Adobe Experience Platform Audience Manager-XDM-Daten](assets/xdm-keyvalue.jpg)
 1. Kehren Sie in der Audience Manager-Benutzeroberfläche zum Ausdrucksgenerator zurück und geben Sie den Schlüssel als **`web.webPageDetails.name`** und der Wert von **`content:luma:us:en`**. Dieser Schritt stellt sicher, dass Sie beim Laden der Startseite eine Eigenschaft auslösen.
@@ -100,7 +100,8 @@ Der nächste Schritt besteht darin, eine **Segment** und weisen Sie diesem Segme
 1. Auswählen **[!UICONTROL Neu hinzufügen]** oben links auf der Seite, um den Segment Builder zu öffnen
 1. Geben Sie Ihrem Segment einen Anzeigenamen und eine Beschreibung, z. B. `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL Ordner auswählen]** wo Ihr Segment im Bereich auf der rechten Seite gespeichert wird. Sie können einen Ordner erstellen, indem Sie **Auswählen des Zeichens +** neben einem vorhandenen übergeordneten Ordner. Sie können diesen neuen Ordner benennen `Platform Web SDK tutorial`.
-1. Fügen Sie einen Integrationscode hinzu, bei dem es sich in diesem Fall um einen zufälligen Satz von Zahlen handelt. 1. Im **[!UICONTROL Datenquelle]** Bereich, wählen Sie **[!UICONTROL Audience Manager]** und der zuvor erstellten Datenquelle
+1. Fügen Sie einen Integrationscode hinzu, bei dem es sich in diesem Fall um einen zufälligen Satz von Zahlen handelt.
+1. Im **[!UICONTROL Datenquelle]** Bereich, wählen Sie **[!UICONTROL Audience Manager]** und der zuvor erstellten Datenquelle
 1. Erweitern Sie die **[!UICONTROL Eigenschaften]** und suchen Sie nach der von Ihnen erstellten Eigenschaft
 1. Auswählen **[!UICONTROL Eigenschaft hinzufügen]**.
 1. Auswählen **[!UICONTROL Speichern]** unten auf der Seite
@@ -181,4 +182,4 @@ Nachdem Sie diese Lektion abgeschlossen haben, sollten Sie sehen können, wie da
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
