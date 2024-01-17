@@ -3,10 +3,10 @@ title: Erstellen von Datenelementen
 description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 7%
+source-wordcount: '1174'
+ht-degree: 2%
 
 ---
 
@@ -49,7 +49,7 @@ Am Ende dieser Lektion können Sie:
 
 Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die folgenden vorherigen Schritte im Tutorial ausgeführt haben
 
-* [Konfigurieren von Berechtigungen](configure-permissions.md)
+* [Berechtigungen konfigurieren](configure-permissions.md)
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
 * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -70,7 +70,7 @@ Bevor Sie mit der Erstellung des XDM-Objekts beginnen, erstellen Sie den folgend
 1. Benennen Sie das Datenelement `page.pageInfo.pageName`.
 1. Verwenden Sie die **[!UICONTROL JavaScript-Variable]** **[!UICONTROL Datenelementtyp]** auf einen Wert in der Datenschicht von Luma verweisen: `digitalData.page.pageInfo.pageName`
 
-1. Markieren Sie die Kästchen für **[!UICONTROL Wert in Kleinbuchstaben erzwingen]** und **[!UICONTROL Text bereinigen]**, um die Groß-/Kleinschreibung zu standardisieren und unnötige Leerzeichen zu entfernen
+1. Markieren Sie die Kästchen für **[!UICONTROL Kleinbuchstaben erzwingen Wert]** und **[!UICONTROL Text bereinigen]** zur Standardisierung der Groß-/Kleinschreibung und Entfernung von Fremdbereichen
 
 1. Urlaub `None` als **[!UICONTROL Speicherdauer]** Einstellung, da dieser Wert auf jeder Seite unterschiedlich ist
 
@@ -166,13 +166,13 @@ Als Nächstes können Sie das Datenelement &quot;Identity Map&quot;erstellen:
 
 Alle von Ihnen erstellten Datenelemente müssen einem XDM-Objekt zugeordnet sein. Dieses Objekt sollte mit dem XDM-Schema übereinstimmen, das Sie während der [Schema konfigurieren](configure-schemas.md) Lektion.
 
-Es gibt verschiedene Möglichkeiten, Datenelemente XDM-Objektfeldern zuzuordnen. Sie können einzelne Datenelemente einzelnen XDM-Feldern zuordnen oder Datenelemente ganzen XDM-Objekten zuordnen, sofern Ihr Datenelement mit dem exakten Schlüssel-Wert-Paar-Schema im XDM-Objekt übereinstimmt. In dieser Lektion erfassen Sie Inhaltsdaten, indem Sie sie einzelnen Feldern zuordnen. Sie werden lernen, [Zuordnen eines Datenelements zu einem ganzen XDM-Objekt](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) im [Einrichten von Analytics](setup-analytics.md) Lektion.
+Es gibt verschiedene Möglichkeiten, Datenelemente XDM-Objektfeldern zuzuordnen. Sie können einzelne Datenelemente einzelnen XDM-Feldern zuordnen oder Datenelemente ganzen XDM-Objekten zuordnen, sofern Ihr Datenelement mit dem exakten Schlüssel-Wert-Paar-Schema im XDM-Objekt übereinstimmt. In dieser Lektion erfassen Sie Inhaltsdaten durch Zuordnung zu einzelnen Feldern. Sie werden lernen, [Zuordnen eines Datenelements zu einem ganzen XDM-Objekt](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) im [Einrichten von Analytics](setup-analytics.md) Lektion.
 
 Erstellen Sie ein XDM-Objekt zum Erfassen von Inhaltsdaten:
 
 1. Wählen Sie im linken Navigationsbereich die Option **[!UICONTROL Datenelemente]**
-1. Wählen Sie **[!UICONTROL Datenelement hinzufügen]** aus
-1. **** Benennen Sie das Datenelement . **`xdm.content`**
+1. Auswählen **[!UICONTROL Datenelement hinzufügen]**
+1. **[!UICONTROL Name]** das Datenelement **`xdm.content`**
 1. Als **[!UICONTROL Erweiterung]** select `Adobe Experience Platform Web SDK`
 1. Als **[!UICONTROL Datenelementtyp]** select `XDM object`
 1. Plattform auswählen **[!UICONTROL Sandbox]** in dem Sie das XDM-Schema während der [Konfigurieren eines XDM-Schemas](configure-schemas.md) Lektion in diesem Beispiel `DEVELOPMENT Mobile and Web SDK Courses`
