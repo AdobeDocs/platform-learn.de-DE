@@ -3,9 +3,9 @@ title: Einrichten der Zustimmung mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web S
 
 >[!NOTE]
 > 
->Zu Demonstrationszwecken verwendet dieses Tutorial [Klaro](https://heyklaro.com/) als CMP. Sie können gerne mit Klaro oder dem CMP weitermachen, den Sie mit Ihrer Website verwenden.
+>Zu Demonstrationszwecken verwendet dieses Tutorial [Klaro](https://heyklaro.com/){target="_blank"} als CMP. Sie können gerne mit Klaro oder dem CMP weitermachen, den Sie mit Ihrer Website verwenden.
 
 
 ## Lernziele
