@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 48%
+source-wordcount: '185'
+ht-degree: 34%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 48%
 # Tutorials zur Datenerfassung{#data-collection}
 
 + [Tutorials zur Datenerfassung](overview.md)
++ [Benutzer und Berechtigungen](admin/users-and-permissions.md)
 + Tags{#tags}
    + [Übersicht und Erstellung einer Eigenschaft](tags/create-a-property.md)
    + [Hosting-Option auswählen](tags/choose-a-hosting-option.md)
@@ -25,7 +26,6 @@ ht-degree: 48%
    + [Erstellen von Datenelementen](tags/create-data-elements.md)
    + [Regeln erstellen](tags/build-rules.md)
    + [Erstellen und Veröffentlichen einer Bibliothek](tags/build-and-publish-a-library.md)
-   + [Benutzer und Berechtigungen](tags/users-and-permissions.md)
    + [Implementieren in Websites mit dem Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de){target="_blank"}
    + [Implementieren in Websites mit Lösungs-SDKs](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=de){target="_blank"}
    + [Implementieren in Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de){target="_blank"}

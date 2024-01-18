@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 21%
+source-wordcount: '855'
+ht-degree: 20%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 21%
    + [Verwenden von Sandboxes](/help/platform/admin/use-sandboxes.md)
    + [Kopieren von Objekten zwischen Sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Benutzer hinzufügen](/help/platform/admin/add-users.md)
+   + [Benutzer zur Datenerfassung hinzufügen](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Entwickler hinzufügen](/help/platform/admin/add-developers.md)
    + [Produktadministratoren hinzufügen](/help/platform/admin/add-product-administrators.md)
    + [Konfigurieren der attributbasierten Zugriffssteuerung](/help/platform/admin/configure-attribute-based-access-control.md)
