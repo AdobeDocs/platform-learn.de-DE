@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Daten für Adobe Analytics in einer App erfas
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '923'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Dieses Objekt:
 führt zu:
 
 ```
-s.products = ";5829,1,49.99;9841,3,30.00"
+s.products = ";5829;1;49.99,9841;3;30.00"
 ```
 
 >[!NOTE]
@@ -207,6 +207,79 @@ Um diese XDM-Kontextdaten Ihren Analytics-Daten in Ihrer Report Suite zuzuordnen
 
 * Erstellen Sie XDM-Payloads in Ihrer App entsprechend der Feldergruppe &quot;Adobe Analytics ExperienceEvent Full Extension&quot;, ähnlich wie bei den Schritten im [Tracking von Ereignisdaten](events.md) Lektion oder
 * Erstellen Sie Regeln in Ihrer Tags-Eigenschaft, die Regelaktionen zum Anhängen oder Ändern von Daten an die Feldergruppe &quot;Adobe Analytics ExperienceEvent Full Extension&quot;verwenden. Weitere Informationen finden Sie unter [Daten an SDK-Ereignisse anhängen](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) oder [Daten in SDK-Ereignissen ändern](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
+
+
+### Merchandising-eVars
+
+Wenn Sie [Merchandising-eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) in Ihrem Analytics-Setup, z. B. zum Erfassen der Produktfarbe, wie z. B. `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`müssen Sie Ihre XDM-Payload erweitern, die Sie in [Tracking von Ereignisdaten](events.md) , um diese Merchandising-Informationen zu erfassen.
+
+* In JSON:
+
+  ```json
+  {
+    "productListItems": [
+        {
+            "SKU": "LLWS05.1-XS",
+            "name": "Desiree Fitness Tee",
+            "priceTotal": 24,
+            "_experience": {
+                "analytics": {
+                    "events1to100": {
+                        "event10": {
+                            "value": 50
+                        }
+                    },
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar1": "red",
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "eventType": "commerce.productListAdds",
+    "commerce": {
+        "productListAdds": {
+            "value": 1
+        }
+    }
+  }
+  ```
+
+* Im Code:
+
+  ```swift
+  var xdmData: [String: Any] = [
+    "productListItems": [
+      [
+        "name":  productName,
+        "SKU": sku,
+        "priceTotal": priceString,
+        "_experience" : [
+          "analytics": [
+            "events1to100": [
+              "event10": [
+                "value:": value
+              ]
+            ],
+            "customDimensions": [
+              "eVars": [
+                "eVar1": color
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "eventType": "commerce.productViews",
+    "commerce": [
+      "productViews": [
+        "value": 1
+      ]
+    ]
+  ]
+  ```
 
 
 ### Verarbeitungsregeln verwenden
