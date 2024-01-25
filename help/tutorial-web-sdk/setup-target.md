@@ -3,10 +3,10 @@ title: Einrichten von Adobe Target mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 1eb67da6513106aa0339ddd65a6f86fed2a029f1
 workflow-type: tm+mt
-source-wordcount: '3800'
-ht-degree: 2%
+source-wordcount: '3582'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +67,7 @@ Dieses Snippet ist bereits auf der Site &quot;Luma&quot;vorhanden, aber schauen 
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
 </script>
 ```
 
@@ -151,7 +151,7 @@ Um Eigenschafts-Token einzurichten oder zu finden, navigieren Sie zu **Adobe Tar
 
 ### Target-Umgebungs-ID
 
-[](https://experienceleague.adobe.com/docs/target/using/administer/environments.html)Umgebungen in Target helfen Ihnen in allen Entwicklungsphasen bei der Implementierung. Diese optionale Einstellung gibt an, welche Target-Umgebung Sie für jeden Datastream verwenden werden.
+[Umgebungen](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) in Target können Sie Ihre Implementierung in allen Entwicklungsstadien verwalten. Diese optionale Einstellung gibt an, welche Target-Umgebung Sie für jeden Datastream verwenden werden.
 
 Adobe empfiehlt, die Target-Umgebungs-ID für jeden Ihrer Entwicklungs-, Staging- und Produktionsdatastreams unterschiedlich festzulegen, um die Dinge einfach zu halten.
 
