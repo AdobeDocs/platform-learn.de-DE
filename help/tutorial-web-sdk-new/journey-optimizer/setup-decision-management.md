@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Entscheidungsverwaltung mit dem Platform 
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2464'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Erfahren Sie, wie Sie die Entscheidungsverwaltung mit dem Platform Web SDK implementieren. In diesem Handbuch werden die grundlegenden Entscheidungsverwaltungsvoraussetzungen, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
 
-Durch die Befolgung dieser Dokumentation können Journey Optimizer-Benutzer offer decisioning-Funktionen effektiv anwenden, wodurch die Personalisierung und Relevanz ihrer Kundeninteraktionen verbessert wird.
+In diesem Tutorial können Journey Optimizer-Benutzer offer decisioning-Funktionen effektiv anwenden, um die Personalisierung und Relevanz ihrer Kundeninteraktionen zu verbessern.
 
 ## Lernziele
 
@@ -24,7 +24,7 @@ Am Ende dieser Lektion können Sie:
 
 * Machen Sie sich mit den Kernkonzepten der Entscheidungsverwaltung in der Adobe Journey Optimizer und ihrer Integration in das Adobe Experience Platform Web SDK vertraut.
 
-* Erfahren Sie Schritt für Schritt, wie Sie das Web SDK für Offer decisioning konfigurieren, um eine nahtlose Integration mit AJO sicherzustellen.
+* Erfahren Sie Schritt für Schritt, wie Sie das Web SDK für Offer decisioning konfigurieren und so eine nahtlose Integration mit Journey Optimizer sicherstellen.
 
 * Erfahren Sie mehr über einen detaillierten Anwendungsfall, der sich auf Treuestatus-Angebote konzentriert und Einblicke in die effektive Erstellung und Verwaltung von Angeboten, Entscheidungen und Platzierungen bietet.
 
@@ -38,13 +38,11 @@ Am Ende dieser Lektion können Sie:
 
 Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 
-* Stellen Sie sicher, dass Ihr Unternehmen Zugriff auf Adobe Journey Optimizer Ultimate (AJO und Offer decisioning) oder Adobe Experience Platform und das Add-on für den Offer decisioning-Anwendungsdienst hat.
+* Stellen Sie sicher, dass Ihr Unternehmen Zugriff auf Adobe Journey Optimizer Ultimate (Journey Optimizer und Offer decisioning) oder Adobe Experience Platform und das Offer decisioning Application Service-Add-on hat.
 
 * Schließen Sie alle Lektionen für die Erstkonfiguration des Platform Web SDK ab.
 
 * Aktivieren Sie Ihr Unternehmen für Edge Decisioning.
-
-* Veröffentlichen Sie Ihren Datenspeicher.
 
 * Erfahren Sie, wie Sie eine Platzierung konfigurieren und Platzierungs- und Aktivitäts-IDs in Ihrer JSON-Entscheidungsbereich-JSON instanziieren.
 
@@ -143,7 +141,7 @@ In diesem Anwendungsbeispiel wird erläutert, wie Journey Optimizer mithilfe der
 
 >[!NOTE]
 >
-> Da dieses Tutorial für Implementierer gedacht ist, ist zu beachten, dass diese Lektion umfangreiche Benutzeroberflächen-Arbeit in AJO beinhaltet. Während solche Benutzeroberflächenaufgaben normalerweise von Marketing-Experten verarbeitet werden, können Implementierer Einblicke in den Prozess erhalten, selbst wenn sie langfristig nicht für die Erstellung von Entscheidungsverwaltungskampagnen verantwortlich sind.
+> Da dieses Tutorial auf Implementierer ausgerichtet ist, ist zu beachten, dass diese Lektion umfangreiche Arbeit an der Benutzeroberfläche in Journey Optimizer erfordert. Während solche Aufgaben in der Regel von Marketingexperten verarbeitet werden, können Implementoren Einblicke in den Prozess erhalten, selbst wenn sie langfristig nicht für die Erstellung von Entscheidungskampagnen verantwortlich sind.
 
 ## Komponenten
 
@@ -173,7 +171,7 @@ Gehen Sie wie folgt vor, um die Platzierung zu erstellen:
 
 1. Klicken Sie auf **Speichern**.
 1. Nachdem die Platzierung erstellt wurde, wird sie in der Platzierungsliste angezeigt.
-1. Notieren Sie sich die Platzierungs-ID, da dies für die Konfiguration in Ihrem Entscheidungsbereich erforderlich sein kann.
+1. Wählen Sie die Zeile aus, die Ihre neue Platzierung enthält, und notieren Sie sich die Platzierungs-ID, da dies für die Konfiguration in Ihrem Entscheidungsbereich erforderlich sein kann.
 
    ![Siehe Platzierungs-ID ](../assets/decisioning-placement-id.png)
 
