@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '868'
 ht-degree: 20%
 
 ---
@@ -207,7 +207,7 @@ ht-degree: 20%
    + [Schemata aktualisieren](/help/platform/schemas/update-schemas.md)
    + [Erstellen eines Ad-hoc-Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Quellen {#sources}
-   + [Quellen – Übersicht](/help/platform/sources/overview.md)
+   + [Übersicht](/help/platform/sources/overview.md)
    + [Daten aus Adobe Analytics erfassen](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [Daten aus Audience Manager erfassen](/help/platform/sources/ingest-data-from-aam.md)
    + [Daten aus Marketo erfassen](/help/platform/sources/ingest-data-from-marketo.md)
@@ -217,6 +217,10 @@ ht-degree: 20%
    + [Daten mit HTTP-API streamen](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Streamen von Daten mit Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Fehlerbehebung: SFTP Connector](/help/platform/sources/troubleshoot-sftp-connector.md)
++ Anwendungsfall-Playbooks {#use-case-playbooks}
+   + [Übersicht](/help/platform/use-case-playbooks/overview.md)
+   + [Konfigurieren einer Playbook-Sandbox](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [Erstellen und Veröffentlichen einer Playbook-Instanz](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud-Integrationen {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=de)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
