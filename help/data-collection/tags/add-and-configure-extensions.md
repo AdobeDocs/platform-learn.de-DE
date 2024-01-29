@@ -5,16 +5,16 @@ feature: Tags
 level: Beginner
 jira: KT-3528
 exl-id: c4115da3-d779-4fe8-90e5-32581fb968cb
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 0%
+source-wordcount: '83'
+ht-degree: 1%
 
 ---
 
 # Hinzufügen und Konfigurieren von Tag-Erweiterungen
 
-Erfahren Sie, wie Sie in Ihrer Tag-Eigenschaft Erweiterungen hinzufügen und konfigurieren. Erweiterungen sind vorab verpackte &quot;Apps&quot;, die Sie auf Ihrer Site installieren, um Ihnen die gewünschten Tracking-, Personalisierungs- und anderen Funktionen zu bieten. Der Marketplace für Erweiterungen wächst ständig, da Adobe, Partner und Kunden Erweiterungen zur Unterstützung von Anwendungsfällen erstellen.
+Erfahren Sie, wie Sie in Ihrer Tag-Eigenschaft Erweiterungen hinzufügen und konfigurieren. Erweiterungen sind vorab verpackte &quot;Apps&quot;, die Sie auf Ihrer Site installieren, um Ihnen die gewünschten Tracking-, Personalisierungs- und anderen Funktionen zu bieten. Der Marketplace für Erweiterungen wächst ständig, da Adobe, Partner und Kunden Erweiterungen zur Unterstützung von Anwendungsfällen erstellen. Weitere Informationen finden Sie unter [Erweiterungen](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=de) Dokumentation.
 
 >[!NOTE]
 >
