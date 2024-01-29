@@ -1,6 +1,6 @@
 ---
 title: Playbook-Instanzen erstellen und veröffentlichen
-description: Erfahren Sie, wie Sie eine Instanz eines Nutzungsszenario-Playbooks erstellen und veröffentlichen.
+description: In diesem durchgehenden Demonstrationsvideo erfahren Sie, wie Sie eine Instanz eines Anwendungsbeispiel-Playbooks entdecken, erstellen, veröffentlichen und beheben können.
 feature: Playbooks
 role: Developer, User
 level: Beginner
@@ -8,17 +8,17 @@ doc-type: Feature Video
 duration: 389
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14075
-source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
+source-git-commit: c3f975177fc8cef66110c722d8087e5835c0b51c
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 13%
+source-wordcount: '82'
+ht-degree: 10%
 
 ---
 
 
 # Playbook-Instanzen erstellen und veröffentlichen
 
-Erfahren Sie, wie Sie eine Instanz eines Nutzungsszenario-Playbooks erstellen und veröffentlichen. Weitere Informationen finden Sie unter [Erstellen, Freigeben und Wiederverwenden von Playbook-Instanzen](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
+In diesem durchgehenden Demonstrationsvideo erfahren Sie, wie Sie eine Instanz eines Anwendungsbeispiel-Playbooks entdecken, erstellen, veröffentlichen und beheben können. Weitere Informationen finden Sie unter [Erstellen, Freigeben und Wiederverwenden von Playbook-Instanzen](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on)
 
