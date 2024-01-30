@@ -2,9 +2,9 @@
 title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Lösungen konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Datastreams
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '557'
 ht-degree: 5%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 5%
 Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Anwendungen konfigurieren.
 
 Datastreams teilen dem Adobe Experience Platform Edge Network mit, wohin vom Platform Web SDK erfasste Daten gesendet werden sollen. In der Konfiguration der Datenspeicher aktivieren Sie Ihre Experience Cloud-Anwendungen, Ihr Experience Platform-Konto und die Ereignisweiterleitung. Siehe [Grundlagen zum Konfigurieren eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de) für detailliertere Informationen.
+
+
+![Web SDK, Datenspeicher und Edge-Netzwerkdiagramm](assets/dc-websdk-datastreams.png)
 
 ## Lernziele
 

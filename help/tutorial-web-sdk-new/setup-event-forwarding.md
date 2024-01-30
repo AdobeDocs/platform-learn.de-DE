@@ -2,9 +2,9 @@
 title: Einrichten einer Ereignisweiterleitungs-Eigenschaft
 description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 4%
 Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden.
 
 Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassung verfügbar ist. Mit der Ereignisweiterleitung können Sie Daten direkt vom Adobe Experience Platform Edge Network an Drittanbieter senden, die keine Adobe sind, und nicht an den herkömmlichen Client-seitigen Browser. Erfahren Sie mehr über die Vorteile der Ereignisweiterleitung im [Übersicht über die Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Web SDK und Diagramm für die Ereignisweiterleitung](assets/dc-websdk-eventforwarding.png)
 
 Um die Ereignisweiterleitung in Adobe Experience Platform zu verwenden, müssen Daten zunächst mit einer oder mehreren der folgenden drei Optionen an Adobe Experience Platform Edge Network gesendet werden:
 
@@ -50,7 +53,6 @@ Am Ende dieser Lektion können Sie:
 
    * Erstkonfiguration
 
-      * [Berechtigungen konfigurieren](configure-permissions.md)
       * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
       * [Identitäts-Namespace konfigurieren](configure-identities.md)
       * [Konfigurieren eines Datenstroms](configure-datastream.md)
