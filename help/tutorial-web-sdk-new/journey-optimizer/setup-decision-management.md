@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Entscheidungsverwaltung mit dem Platform 
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2470'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,9 @@ ht-degree: 3%
 Erfahren Sie, wie Sie die Entscheidungsverwaltung mit dem Platform Web SDK implementieren. In diesem Handbuch werden die grundlegenden Entscheidungsverwaltungsvoraussetzungen, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
 
 In diesem Tutorial können Journey Optimizer-Benutzer offer decisioning-Funktionen effektiv anwenden, um die Personalisierung und Relevanz ihrer Kundeninteraktionen zu verbessern.
+
+
+![Web SDK und Adobe Analytics-Diagramm](../assets/dc-websdk-ajo.png)
 
 ## Lernziele
 

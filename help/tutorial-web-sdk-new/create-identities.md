@@ -2,10 +2,10 @@
 title: Erstellen von Identitäten
 description: Erfahren Sie, wie Sie Identitäten in XDM erstellen und das Datenelement "Identity Map"zum Erfassen von Benutzer-IDs verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 2%
+source-wordcount: '858'
+ht-degree: 1%
 
 ---
 
@@ -13,14 +13,7 @@ ht-degree: 2%
 
 Erfahren Sie, wie Sie Identitäten mit dem Experience Platform Web SDK erfassen. Erfassen Sie sowohl nicht authentifizierte als auch authentifizierte Identitätsdaten auf der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html). Erfahren Sie, wie Sie die zuvor erstellten Datenelemente zum Erfassen authentifizierter Daten mit einem Platform Web SDK-Datenelementtyp namens Identity Map verwenden.
 
-Es gibt vier neue Datenelementtypen, die durch die Platform Web SDK-Tag-Erweiterung eingeführt werden:
-
-1. Ereigniszusammenführungs-ID
-1. Identitätszuordnung
-1. Variable
-1. XDM-Objekt
-
-Diese Lektion konzentriert sich auf das Datenelement Identitätszuordnung . Sie ordnen Datenelemente mit einer authentifizierten Benutzer-ID und Authentifizierungsstatus XDM zu.
+Diese Lektion konzentriert sich auf das Datenelement &quot;Identitätszuordnung&quot;, das mit der Adobe Experience Platform Web SDK-Tag-Erweiterung verfügbar ist. Sie ordnen Datenelemente mit einer authentifizierten Benutzer-ID und Authentifizierungsstatus XDM zu.
 
 ## Lernziele
 
@@ -32,7 +25,7 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die folgenden vorherigen Schritte im Tutorial ausgeführt haben:
+Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die folgenden vorherigen Lektionen im Tutorial abgeschlossen haben:
 
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
@@ -40,14 +33,10 @@ Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;
 * [In der Tag-Eigenschaft installierte Web SDK-Erweiterung](install-web-sdk.md)
 * [Erstellen von Datenelementen](create-data-elements.md)
 
->[!IMPORTANT]
->
->Die [Experience Cloud ID-Diensterweiterung](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) ist bei der Implementierung des Adobe Experience Platform Web SDK nicht erforderlich, da die ID-Dienst-Funktion in das Platform Web SDK integriert ist.
 
 ## Experience Cloud ID
 
-Die [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) ist ein freigegebener Identitäts-Namespace, der in Adobe Experience Platform- und Adobe Experience Cloud-Anwendungen verwendet wird. ECID bildet die Grundlage für die Kundenidentität und ist die Standardidentität für digitale Eigenschaften. Dadurch ist ECID die ideale Kennung für die Verfolgung von nicht authentifiziertem Benutzerverhalten, da es immer vorhanden ist.
-
+Die [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) ist ein freigegebener Identitäts-Namespace, der in Adobe Experience Platform- und Adobe Experience Cloud-Anwendungen verwendet wird. ECID bildet die Grundlage für die Kundenidentität und ist die Standardidentität für digitale Eigenschaften. Dadurch ist ECID die ideale Kennung für die Verfolgung von nicht authentifiziertem Benutzerverhalten, da es immer vorhanden ist
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -59,6 +48,10 @@ Die [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experie
 Weitere Informationen zum [ECIDs werden mithilfe des Platform Web SDK verfolgt.](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
 ECIDs werden mithilfe einer Kombination aus Erstanbieter-Cookies und Platform Edge Network festgelegt. Standardmäßig werden die Erstanbieter-Cookies vom Web SDK gesetzt. Um Browserbeschränkungen für Cookie-Lebenszyklen zu berücksichtigen, können Sie stattdessen Ihre eigenen Erstanbieter-Cookies festlegen und verwalten. Diese werden als Erstanbieter-Geräte-IDs (FPIDs) bezeichnet.
+
+>[!IMPORTANT]
+>
+>Die [Experience Cloud ID-Diensterweiterung](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) ist bei der Implementierung des Adobe Experience Platform Web SDK nicht erforderlich, da die ID-Dienst-Funktion in das Platform Web SDK integriert ist.
 
 ## Erstanbieter-Geräte-ID (FPID)
 
