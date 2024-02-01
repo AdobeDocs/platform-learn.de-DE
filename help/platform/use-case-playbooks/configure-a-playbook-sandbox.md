@@ -8,10 +8,10 @@ doc-type: Feature Video
 duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
-source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
+source-git-commit: c0466656d0133055d809a9304aec5cd65c67c49c
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 9%
+source-wordcount: '70'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,3 @@ Erfahren Sie, wie Sie eine Sandbox für Anwendungsfälle-Playbooks konfigurieren
 Weitere Informationen finden Sie unter [Erste Schritte](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
-
->[!AVAILABILITY]
->
->Diese Funktion ist als Betaversion verfügbar und steht nicht allen Benutzern zur Verfügung. Dokumentation und Funktionalitäten können sich ändern.
