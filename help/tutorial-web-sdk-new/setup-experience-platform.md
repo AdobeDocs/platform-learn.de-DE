@@ -1,7 +1,7 @@
 ---
 title: Streamen von Daten an Adobe Experience Platform mit dem Web SDK
 description: Erfahren Sie, wie Sie Webdaten mit dem Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 8%
@@ -84,7 +84,7 @@ Jetzt können Sie Ihre [!UICONTROL datastream] zum Senden von Daten an [!UICONTR
 1. Auswählen **[!UICONTROL Datenspeicher]** über die linke Navigation
 1. Öffnen Sie den von Ihnen im Abschnitt [Konfigurieren eines Datenspeichers](configure-datastream.md) Lektion, `Luma Web SDK`
 
-   ![Wählen Sie den Datenspeicher des Luma Web SDK aus.](assets/datastream-luma-web-sdk.png)
+   ![Wählen Sie den Datenspeicher des Luma Web SDK aus.](assets/datastream-luma-web-sdk-development.png)
 
 1. Wählen Sie **[!UICONTROL Service hinzufügen]** aus
    ![Hinzufügen eines Dienstes zum Datastream](assets/experience-platform-addService.png)

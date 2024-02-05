@@ -2,7 +2,7 @@
 title: Erstellen von Tag-Regeln
 description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform Edge Network senden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 1%
@@ -80,7 +80,7 @@ So erstellen Sie eine Tag-Regel für die globalen XDM-Felder:
 
    ![Regel erstellen](assets/rules-create.png)
 
-1. Geben Sie einen Namen für die Regel ein `all pages global content variables - page bottom - AA (order 1)`.
+1. Geben Sie einen Namen für die Regel ein `all pages global content variables - library loaded - AA (order 1)`.
 
 1. Im **[!UICONTROL Veranstaltungen]** Bereich, wählen Sie **[!UICONTROL Hinzufügen]**
 
@@ -173,12 +173,12 @@ Sie können **[!UICONTROL Variable aktualisieren]**  in mehreren sequenzierten R
 Beginnen Sie mit der Verfolgung der Produktansichten auf der Produktdetailseite von Luma:
 
 1. Auswählen **[!UICONTROL Regel hinzufügen]**
-1. Benennen Sie ihn  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Benennen Sie ihn  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. Wählen Sie die ![+ Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) unter Ereignis zum Hinzufügen eines neuen Triggers
 1. under **[!UICONTROL Erweiterung]** auswählen **[!UICONTROL Core]**
 1. under **[!UICONTROL Ereignistyp]** auswählen **[!UICONTROL Seitenende]**
 1. Benennen Sie ihn `Core - Page Bottom - order 20`
-1. Zum Öffnen auswählen **[!UICONTROL Erweiterte Optionen]**, Typ in `20`. Dadurch wird sichergestellt, dass die Regel nach dem `all pages global content variables - page bottom - AA (order 1)` , das die globalen Inhaltsvariablen festlegt, jedoch vor dem `all pages send event - page bottom - AA (order 50)` sendet das XDM-Ereignis.
+1. Zum Öffnen auswählen **[!UICONTROL Erweiterte Optionen]**, Typ in `20`. Dadurch wird sichergestellt, dass die Regel nach dem `all pages global content variables - library loaded - AA (order 1)` , das die globalen Inhaltsvariablen festlegt, jedoch vor dem `all pages send event - library loaded - AA (order 50)` sendet das XDM-Ereignis.
 
    ![Analytics-XDM-Regeln](assets/set-up-analytics-pdp.png)
 
@@ -247,7 +247,7 @@ Das Datenelement mit dem `productListItems` Struktur (Hinweis, sollte übereinst
 Zuordnen unseres Arrays zum XDM-Objekt
 
 
-1. Eine neue Regel mit dem Namen `ecommerce - cart page bottom - AA (order 20)`
+1. Eine neue Regel mit dem Namen `ecommerce - cart library loaded - AA (order 20)`
 1. Wählen Sie die ![+ Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) unter Ereignis zum Hinzufügen eines neuen Triggers
 1. under **[!UICONTROL Erweiterung]** auswählen **[!UICONTROL Core]**
 1. under **[!UICONTROL Ereignistyp]** auswählen **[!UICONTROL Seitenende]**
@@ -295,7 +295,7 @@ Zuordnen unseres Arrays zum XDM-Objekt
 
 Erstellen Sie zwei weitere Regeln für Checkout und Kauf nach demselben Muster mit den folgenden Unterschieden:
 
-**Regelname**: `ecommerce - checkout page bottom - AA (order 20)`
+**Regelname**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL Bedingung]**: /content/luma/us/en/user/checkout.html
 * Stellen Sie `eventType` auf `commerce.checkouts` ein.
@@ -305,7 +305,7 @@ Erstellen Sie zwei weitere Regeln für Checkout und Kauf nach demselben Muster m
   >
   >Dies entspricht der Einstellung `scCheckout` -Ereignis in Analytics
 
-**Regelname**: `ecommerce - purchase page bottom - AA (order 20)`
+**Regelname**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL Bedingung]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * Stellen Sie `eventType` auf `commerce.purchases` ein.
@@ -345,7 +345,7 @@ Nachdem Sie die Variablen festgelegt haben, können Sie die zweite Regel erstell
 
 1. Wählen Sie rechts Folgendes aus: **[!UICONTROL Regel hinzufügen]** zum Erstellen einer weiteren Regel
 
-1. Geben Sie einen Namen für die Regel ein `all pages send event - page bottom - AA (order 50)`.
+1. Geben Sie einen Namen für die Regel ein `all pages send event - library loaded - AA (order 50)`.
 
 1. Im **[!UICONTROL Veranstaltungen]** Bereich, wählen Sie **[!UICONTROL Hinzufügen]**
 
@@ -390,7 +390,7 @@ So erstellen Sie eine Bibliothek:
 
    >[!NOTE]
    >
-   >    Zusätzlich zur Adobe Experience Platform Web SDK-Erweiterung und der `all pages global content variables - page bottom - AA (order 50)` -Regel sehen Sie die Tag-Komponenten, die in vorherigen Lektionen erstellt wurden. Die Haupterweiterung enthält das grundlegende JavaScript, das für alle Web-Tag-Eigenschaften erforderlich ist.
+   >    Zusätzlich zur Adobe Experience Platform Web SDK-Erweiterung und der `all pages global content variables - library loaded - AA (order 50)` -Regel sehen Sie die Tag-Komponenten, die in vorherigen Lektionen erstellt wurden. Die Haupterweiterung enthält das grundlegende JavaScript, das für alle Web-Tag-Eigenschaften erforderlich ist.
 
 1. Auswählen **[!UICONTROL Speichern und erstellen für Entwicklung]**
 

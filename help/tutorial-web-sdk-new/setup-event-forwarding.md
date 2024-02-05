@@ -2,7 +2,7 @@
 title: Einrichten einer Ereignisweiterleitungs-Eigenschaft
 description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 4%
@@ -88,9 +88,9 @@ So konfigurieren Sie Target im Datastream:
 
 1. Navigieren Sie zu [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} Benutzeroberfläche
 1. Wählen Sie im linken Navigationsbereich die Option **[!UICONTROL Datenspeicher]**
-1. Wählen Sie die zuvor erstellte `Luma Web SDK` datastream
+1. Wählen Sie die zuvor erstellte `Luma Web SDK: Development Environment` datastream
 
-   ![Wählen Sie den Datenspeicher des Luma Web SDK aus.](assets/datastream-luma-web-sdk.png)
+   ![Wählen Sie den Datenspeicher des Luma Web SDK aus.](assets/datastream-luma-web-sdk-development.png)
 
 1. Wählen Sie **[!UICONTROL Service hinzufügen]** aus
    ![Hinzufügen eines Dienstes zum Datastream](assets/event-forwarding-datastream-addService.png)

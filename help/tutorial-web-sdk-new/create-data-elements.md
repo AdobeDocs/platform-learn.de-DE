@@ -2,7 +2,7 @@
 title: Erstellen von Datenelementen
 description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 2%
@@ -154,7 +154,7 @@ Bevor Sie das XDM-Objekt erstellen, erstellen Sie den folgenden Satz von Datenel
 
 1. Navigieren Sie zu **[!UICONTROL Datenelemente]** und wählen **[!UICONTROL Datenelement hinzufügen]** (oder **[!UICONTROL Neues Datenelement erstellen]** wenn in der Tag-Eigenschaft keine Datenelemente vorhanden sind)
 
-   ![Datenelement erstellen](assets/data-element-create.jpg)
+   ![Datenelement erstellen](assets/data-element-create.png)
 
 1. Benennen Sie das Datenelement `page.pageInfo.pageName`.
 1. Verwenden Sie die **[!UICONTROL JavaScript-Variable]** **[!UICONTROL Datenelementtyp]** auf einen Wert in der Datenschicht von Luma verweisen: `digitalData.page.pageInfo.pageName`
@@ -165,7 +165,7 @@ Bevor Sie das XDM-Objekt erstellen, erstellen Sie den folgenden Satz von Datenel
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
-   ![Datenelement &quot;Seitenname&quot;](assets/data-element-pageName.jpg)
+   ![Datenelement &quot;Seitenname&quot;](assets/data-element-pageName.png)
 
 Erstellen Sie diese zusätzlichen Datenelemente wie folgt:
 
