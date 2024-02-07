@@ -2,9 +2,9 @@
 title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Lösungen konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Datastreams
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 5%
 
 ---
@@ -43,7 +43,7 @@ Jetzt können Sie einen Datastream erstellen, um Platform Edge Network mitzuteil
 
    >[!NOTE]
    >
-   >Wenn Sie Platform-basierte Anwendungen wie Real-Time CDP verwenden, empfehlen wir für dieses Tutorial die Verwendung einer Entwicklungs-Sandbox. Wenn nicht, verwenden Sie die **[!UICONTROL Prod]** Sandbox.
+   >Wenn Sie Platform-basierte Anwendungen wie Real-Time CDP oder Journey Optimizer nutzen, empfehlen wir für dieses Tutorial die Verwendung einer Entwicklungs-Sandbox. Wenn nicht, verwenden Sie die **[!UICONTROL Prod]** Sandbox.
 
 1. Navigieren Sie zu **[!UICONTROL Datenspeicher]** in der linken Navigation
 1. Auswählen **[!UICONTROL Neuer Datenspeicher]** auf der rechten Bildschirmseite.
@@ -52,13 +52,6 @@ Jetzt können Sie einen Datastream erstellen, um Platform Edge Network mitzuteil
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
    ![Erstellen des Datastreams](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >Die Zuordnungsfunktion wird in dieses Tutorial zu einem späteren Zeitpunkt einbezogen.
-
-
-
 
 Auf dem nächsten Bildschirm können Sie Dienste wie Adobe-Anwendungen zum Datastream hinzufügen. Sie werden jedoch zu diesem Zeitpunkt im Tutorial keine Dienste hinzufügen. Sie werden dies später im Unterricht tun [Experience Platform einrichten](setup-experience-platform.md), [Einrichten von Analytics](setup-analytics.md), [Einrichten von Audience Manager](setup-audience-manager.md), [Einrichten von Target](setup-target.md)oder [Ereignisweiterleitung](setup-event-forwarding.md).
 
@@ -76,9 +69,9 @@ Die Außerkraftsetzung der Datastream-Konfiguration erfolgt in zwei Schritten:
 1. Zunächst definieren Sie Ihre Datastream-Überschreibungen in der Datastream-Konfiguration. Dies muss pro Adobe-Anwendung erfolgen, die Sie überschreiben möchten.
 1. Anschließend senden Sie die Überschreibungen entweder über eine Web SDK-Sendeereignisaktion oder eine Konfiguration in der Web SDK-Tag-Erweiterung an das Edge-Netzwerk.
 
-Siehe [Dokumentation zur Datastream-Konfiguration wird außer Kraft gesetzt](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) für detaillierte Anweisungen zum Überschreiben von Datenspeicherkonfigurationen.
+Im [Einrichten von Adobe Analytics](setup-analytics.md) Lektion: Sie überschreiben die Report Suite für eine Seite mit der Ereignis-Aktion für das Senden des Platform Web SDK.
 
-In der Lektion zum Einrichten von Adobe Analytics [Überschreibt die Report Suite für eine Seite mithilfe der Ereignis-Aktion des Platform Web SDK senden](setup-analytics.md).
+Siehe [Dokumentation zur Datastream-Konfiguration wird außer Kraft gesetzt](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) für detaillierte Anweisungen zum Überschreiben von Datenspeicherkonfigurationen.
 
 Sie können jetzt die Platform Web SDK-Erweiterung in Ihrer Tag-Eigenschaft installieren!
 

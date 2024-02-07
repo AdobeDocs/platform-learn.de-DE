@@ -2,9 +2,9 @@
 title: Erstellen von Identitäten
 description: Erfahren Sie, wie Sie Identitäten in XDM erstellen und das Datenelement "Identity Map"zum Erfassen von Benutzer-IDs verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ Diese Lektion konzentriert sich auf das Datenelement &quot;Identitätszuordnung&
 
 Am Ende dieser Lektion können Sie:
 
-* den Unterschied zwischen Experience Cloud ID (ECID) und Erstanbieter-Geräte-ID verstehen
+* Grundlegendes zur Beziehung zwischen Experience Cloud ID (ECID) und Erstanbieter Device ID (FPID)
 * den Unterschied zwischen nicht authentifizierten und authentifizierten IDs verstehen
 * Erstellen eines Identitätszuordnungs-Datenelements
 
 ## Voraussetzungen
 
-Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die folgenden vorherigen Lektionen im Tutorial abgeschlossen haben:
+Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die vorherigen Lektionen im Tutorial abgeschlossen haben:
 
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
@@ -55,11 +55,11 @@ ECIDs werden mithilfe einer Kombination aus Erstanbieter-Cookies und Platform Ed
 
 ## Erstanbieter-Geräte-ID (FPID)
 
-FPIDs sind Erstanbieter-Cookies _Sie legen mithilfe Ihrer eigenen Webserver fest._ welche Adobe verwendet, um die ECID festzulegen, anstatt das vom Web SDK festgelegte Erstanbieter-Cookie zu verwenden. Erstanbieter-Cookies sind am effektivsten, wenn sie mit einem Server gesetzt werden, der einen DNS-A-Datensatz (für IPv4) oder einen AAAA-Datensatz (für IPv6) nutzt, im Gegensatz zu einem DNS-CNAME oder JavaScript-Code.
+FPIDs sind Erstanbieter-Cookies _Sie legen mithilfe Ihrer eigenen Webserver fest._ welche Adobe dann verwendet, um die ECID zu erstellen, anstatt das vom Web SDK festgelegte Erstanbieter-Cookie zu verwenden. Auch wenn die Browserunterstützung variieren kann, sind Erstanbieter-Cookies meist haltbarer, wenn sie von einem Server gesetzt werden, der einen DNS-A-Datensatz (für IPv4) oder einen AAAA-Datensatz (für IPv6) nutzt, im Gegensatz zu einem DNS-CNAME oder JavaScript-Code.
 
 Sobald ein FPID-Cookie gesetzt ist, kann der zugehörige Wert abgerufen und an Adobe gesendet werden, während Ereignisdaten erfasst werden. Erfasste FPIDs werden als Samen verwendet, um ECIDs im Platform Edge Network zu generieren, die weiterhin die Standardkennungen in Adobe Experience Cloud-Anwendungen sind.
 
-Mehr dazu [Erstanbieter-Geräte-IDs im Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=de)
+Auch wenn FPIDs in diesem Tutorial nicht verwendet werden, sollten Sie FPIDs in Ihrer eigenen Web SDK-Implementierung verwenden. Mehr dazu [Erstanbieter-Geräte-IDs im Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=de)
 
 >[!CAUTION]
 >
@@ -69,7 +69,7 @@ Mehr dazu [Erstanbieter-Geräte-IDs im Platform Web SDK](https://experienceleagu
 
 Wie oben erwähnt, wird allen Besuchern Ihrer digitalen Eigenschaften bei Verwendung des Platform Web SDK eine ECID von Adobe zugewiesen. Dadurch wird ECID zur Standardidentität für die Verfolgung nicht authentifizierter digitaler Verhaltensweisen.
 
-Sie können auch eine authentifizierte Benutzer-ID senden, damit Platform [Identitätsdiagramme](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=de), kann Target seinen Drittanbieter einstellen. Dies geschieht mithilfe der [!UICONTROL Identity Map] Datenelementtyp.
+Sie können auch eine authentifizierte Benutzer-ID senden, damit Platform [Identitätsdiagramme](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=de) und Target kann [Drittanbieter-ID](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=de). Dies geschieht mithilfe der [!UICONTROL Identity Map] Datenelementtyp.
 
 So erstellen Sie die [!UICONTROL Identity Map] Datenelement:
 
@@ -133,12 +133,17 @@ So erstellen Sie die [!UICONTROL Identity Map] Datenelement:
 
 Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt werden:
 
-| Datenelemente der CORE-Erweiterung | Platform Web SDK-Datenelemente |
+| Datenelemente der Haupterweiterung | Datenelemente der Platform Web SDK-Erweiterung |
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.variable.content` |
+| `cart.productInfo` | `xdm.variable.content` |
+| `cart.productInfo.purchase` | |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 

@@ -2,7 +2,7 @@
 title: Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK
 description: Erfahren Sie, wie Sie Experience Cloud-Anwendungen mit dem Adobe Experience Platform Web SDK implementieren.
 recommendations: catalog, noDisplay
-source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 4%
@@ -76,9 +76,9 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über ein Adobe-Konto und d
 
 ## Laden der Website Luma
 
-Laden Sie die [Luma-Website](https://luma.enablementadobe.com/content/luma/us/en.html) in einem separaten Browser-Tab und mit einem Lesezeichen versehen, damit Sie es bei Bedarf während des Tutorials einfach laden können. Sie benötigen keinen zusätzlichen Zugriff auf Luma, außer dass Sie unsere gehostete Produktions-Site laden können.
+Laden Sie die [Luma-Website](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} in einem separaten Browser-Tab und mit einem Lesezeichen versehen, damit Sie es bei Bedarf während des Tutorials einfach laden können. Sie benötigen keinen zusätzlichen Zugriff auf Luma, außer dass Sie unsere gehostete Produktions-Site laden können.
 
-[![Luma-Website](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![Luma-Website](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"}
 
 Los geht‘s!
 

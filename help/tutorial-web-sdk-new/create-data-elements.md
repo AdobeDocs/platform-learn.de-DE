@@ -2,9 +2,9 @@
 title: Erstellen von Datenelementen
 description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1189'
 ht-degree: 2%
 
 ---
@@ -24,13 +24,13 @@ Erfahren Sie, wie Sie Datenelemente in Tags für Inhalts-, Commerce- und Identit
 Am Ende dieser Lektion können Sie:
 
 * Verstehen verschiedener Ansätze zum Zuordnen einer Datenschicht zu XDM
-* Erstellen von Datenelementen zum Erfassen von Inhaltsdaten
-* Zuordnen von Datenelementen zu einem XDM-Objektdatenelement
+* Erstellen von Datenelementen zur Datenerfassung
+* Zuordnen von Datenelementen zu einem XDM-Objekt
 
 
 ## Voraussetzungen
 
-Sie wissen, was eine Datenschicht ist, und haben die folgenden vorherigen Lektionen im Tutorial abgeschlossen:
+Sie wissen, was eine Datenschicht ist, und haben die vorherigen Lektionen im Tutorial abgeschlossen:
 
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
@@ -41,9 +41,9 @@ Sie wissen, was eine Datenschicht ist, und haben die folgenden vorherigen Lektio
 
 Es gibt mehrere Möglichkeiten, Daten aus Ihrer Datenschicht mithilfe der Tagfunktion von Adobe Experience Platform XDM zuzuordnen. Im Folgenden finden Sie einige Vor- und Nachteile von drei verschiedenen Ansätzen:
 
-* [Implementieren von XDM in der Datenschicht](create-data-elements.md#implement-xdm-in-the-data-layer)
-* [Zuordnung zu XDM im Datastream](create-data-elements.md#map-to-xdm-in-the-datastream)
-* [Zuordnung zu XDM in Tags](create-data-elements.md#map-data-layer-in-tags)
+1. Implementieren von XDM in der Datenschicht
+1. Zuordnung zu XDM in Tags
+1. Zuordnung zu XDM im Datastream
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Es gibt mehrere Möglichkeiten, Daten aus Ihrer Datenschicht mithilfe der Tagfun
 
 ### Implementieren von XDM in der Datenschicht
 
-Bei diesem Ansatz wird das vollständig definierte XDM-Objekt als Struktur für Ihre Datenschicht verwendet. Anschließend ordnen Sie die gesamte Datenschicht einem XDM-Objektdatenelement in Adobe-Tags zu. Wenn Ihre Implementierung keinen Tag-Manager verwendet, ist dieser Ansatz möglicherweise optimal, da Sie Daten von Ihrer Anwendung direkt mit dem [XDM sendEvent, Befehl](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Wenn Sie Adobe-Tags verwenden, können Sie ein benutzerdefiniertes Codedatenelement erstellen, das die gesamte Datenschicht als Pass-Through-JSON-Objekt an das XDM erfasst. Anschließend ordnen Sie die Pass-Through-JSON dem XDM-Objektfeld in der Aktion &quot;Ereignis senden&quot;zu.
+Bei diesem Ansatz wird das vollständig definierte XDM-Objekt als Struktur für Ihre Datenschicht verwendet. Anschließend ordnen Sie die gesamte Datenschicht einem XDM-Objektdatenelement in Tags zu. Wenn Ihre Implementierung keinen Tag-Manager verwendet, ist dieser Ansatz möglicherweise optimal, da Sie Daten von Ihrer Anwendung direkt mit dem [XDM sendEvent, Befehl](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Wenn Sie Tags verwenden, können Sie ein benutzerdefiniertes Code-Datenelement erstellen, das die gesamte Datenschicht als Pass-Through-JSON-Objekt an das XDM erfasst. Anschließend ordnen Sie die Pass-Through-JSON dem XDM-Objektfeld in der Aktion &quot;Ereignis senden&quot;zu.
 
 Im Folgenden finden Sie ein Beispiel dafür, wie die Datenschicht mit dem Adobe Client-Datenschichtformat aussehen würde:
 
@@ -97,7 +97,7 @@ window.adobeDataLayer.push({
 
 Vorteile
 
-* Überspringt Schritte zum Zuordnen einzelner Datenschichtvariablen zu XDM
+* Beseitigt zusätzliche Schritte, die auf Datenschichtvariablen in XDM beschränkt sind
 * Kann schneller bereitgestellt werden, wenn Ihr Entwicklungsteam über das Tagging digitaler Verhaltensweisen verfügt
 
 Nachteile
@@ -108,41 +108,44 @@ Nachteile
 * Die Datenschicht kann nicht für Pixel von Drittanbietern verwendet werden
 * Keine Transformation der Daten zwischen der Datenschicht und XDM
 
-### Zuordnung zu XDM im Datastream
-
-Bei diesem Ansatz werden Funktionen verwendet, die in die Datastream-Konfiguration integriert sind: [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) und überspringt die Zuordnung von Datenschichtvariablen zu XDM in Tags.
-
-Vorteile
-
-* Flexibel, da Sie einzelne Variablen XDM zuordnen können
-* Fähigkeit [Neue Werte berechnen](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=de) oder [Datentypen transformieren](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) aus einer Datenschicht, bevor sie an XDM gesendet wird
-* Nutzen Sie eine [Zuordnungs-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) , um Felder in Ihren Quelldaten mit einer Point-and-Click-Benutzeroberfläche XDM zuzuordnen.
-
-Nachteile
-
-* Datenschichtvariablen können nicht als Datenelemente für clientseitige Drittanbieterpixel verwendet werden, sie können jedoch mit Adobe-Tags-Ereignisweiterleitung verwendet werden
-* Die Scraping-Funktion der Tags-Funktion von Adobe Experience Platform kann nicht verwendet werden
-* Die Wartungskomplexität erhöht sich bei der Zuordnung der Datenschicht sowohl in Tags als auch im Datenspeicher.
-
 ### Zuordnen der Datenschicht in Tags
 
 Dieser Ansatz umfasst die Zuordnung einzelner Datenschichtvariablen ODER Datenschichtobjekte zu Datenelementen in Tags und schließlich zu XDM. Dies ist der traditionelle Ansatz für die Implementierung mithilfe eines Tag-Management-Systems.
 
-Vorteile
+#### Vorteile
 
 * Der flexibelste Ansatz, da Sie einzelne Variablen steuern und Daten transformieren können, bevor sie in XDM gelangen
 * Kann Adobe-Tags-Trigger und Scraping-Funktionen verwenden, um Daten an XDM zu übergeben
 * Kann Datenelemente Client-seitigen Drittanbieterpixel zuordnen
 
-Nachteile
+#### Nachteile
 
-* Die Implementierung kann länger dauern
+* Zeit zum Rekonstruieren der Datenschicht als Datenelemente
+
 
 >[!TIP]
 >
 > Google-Datenschicht
 > 
-> Wenn Ihr Unternehmen bereits Google Analytics verwendet und auf Ihrer Website über das herkömmliche Google dataLayer -Objekt verfügt, können Sie die [Google Data Layer-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in Adobe-Tags. Dadurch können Sie Adobe-Technologie schneller bereitstellen, ohne Unterstützung von Ihrem IT-Team anfordern zu müssen. Die Zuordnung der Google-Datenschicht zu XDM würde dieselben Schritte wie oben ausführen.
+> Wenn Ihr Unternehmen bereits Google Analytics verwendet und auf Ihrer Website über das herkömmliche Google dataLayer -Objekt verfügt, können Sie die [Google Data Layer-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in Tags. Dadurch können Sie Adobe-Technologie schneller bereitstellen, ohne Unterstützung von Ihrem IT-Team anfordern zu müssen. Die Zuordnung der Google-Datenschicht zu XDM würde dieselben Schritte wie oben ausführen.
+
+### Zuordnung zu XDM im Datastream
+
+Bei diesem Ansatz werden Funktionen verwendet, die in die Datastream-Konfiguration integriert sind: [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) und überspringt die Zuordnung von Datenschichtvariablen zu XDM in Tags.
+
+#### Vorteile
+
+* Flexibel, da Sie einzelne Variablen XDM zuordnen können
+* Fähigkeit [Neue Werte berechnen](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=de) oder [Datentypen transformieren](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) aus einer Datenschicht, bevor sie an XDM gesendet wird
+* Nutzen Sie eine [Zuordnungs-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) , um Felder in Ihren Quelldaten mit einer Point-and-Click-Benutzeroberfläche XDM zuzuordnen.
+
+#### Nachteile
+
+* Datenschichtvariablen können nicht als Datenelemente für clientseitige Drittanbieterpixel verwendet werden, können aber mit der Ereignisweiterleitung verwendet werden
+* Die Scraping-Funktion der Tags-Funktion von Adobe Experience Platform kann nicht verwendet werden
+* Die Wartungskomplexität erhöht sich bei der Zuordnung der Datenschicht sowohl in Tags als auch im Datenspeicher.
+
+
 
 >[!IMPORTANT]
 >
@@ -270,7 +273,7 @@ So erstellen Sie das Datenelement Variable :
 
 Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt werden:
 
-| Datenelemente der CORE-Erweiterung | Platform Web SDK-Datenelemente |
+| Datenelemente der Haupterweiterung | Datenelemente der Platform Web SDK-Erweiterung |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
 | `cart.productInfo` | |
@@ -278,6 +281,7 @@ Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt werden:
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
 | `product.productInfo.sku` | |
 | `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
@@ -285,7 +289,7 @@ Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt werden:
 
 >[!TIP]
 >
->In Zukunft [Tag-Regel erstellen](create-tag-rule.md) Lektion: Sie lernen, wie die **[!UICONTROL Variable]** Mit dem Datenelement können Sie mehrere Regeln in Tags stapeln, indem Sie die **[!UICONTROL Aktionstyp der Variablen aktualisieren]**. Anschließend können Sie das XDM-Objekt unabhängig mithilfe eines separaten **[!UICONTROL Aktionstyp &quot;Ereignis senden&quot;]**.
+>In Zukunft [Tag-Regel erstellen](create-tag-rule.md) Lektion: Sie lernen, wie die **[!UICONTROL Variable]** Mit dem Datenelement können Sie mehrere Regeln in Tags stapeln, indem Sie die **[!UICONTROL Aktionstyp der Variablen aktualisieren]**.
 
 Wenn diese Datenelemente vorhanden sind, können Sie mit dem Senden von Daten an Platform Edge Network mit einer Tagregel beginnen. Erfahren Sie zunächst, wie Sie Identitäten mit dem Web SDK erfassen.
 
