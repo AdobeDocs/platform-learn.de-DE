@@ -3,29 +3,16 @@ title: Tutorials zur Datenerfassung
 description: Anleitungen und Tutorials, um Sie zu einem leistungsstarken Benutzer der Datenerfassung zu machen
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
+source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 40%
+source-wordcount: '165'
+ht-degree: 32%
 
 ---
 
 # Tutorials zur Datenerfassung
 
 Die Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Website-Tags und mobile SDKs von Adobe. Die Datenerfassung bietet Kunden eine einfache Möglichkeit, die Analyse-, Marketing- und Werbelösungen bereitzustellen und zu verwalten, die zur Unterstützung entsprechender Kundenerlebnisse erforderlich sind. Verwenden Sie diese Videos und Tutorials, um diese wichtige Technologie kennenzulernen.
-
-<div id="whats-new-section">
-
-## Neue Funktionen
-
-* **[Übersicht über die Server-API (Video)](server-api/overview.md)**
-  *Senden Sie Daten mit einer sicheren, authentifizierten Server-API.*
-* **[Implementieren von Adobe Experience Cloud in Apps (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de)**
-  *Implementieren von Experience Cloud-Apps mit dem Mobile SDK.*
-* **[Verschieben von clientseitigen Tags (Tutorial)](event-forwarding/consider-moving-tags.md)**
-  *Ziehen Sie das Verschieben clientseitiger Tags zur Ereignisweiterleitung in Erwägung.*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -58,7 +45,9 @@ Die Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für We
       <img alt="Implementieren in Apps" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de" target="_blank"><strong> zum Implementieren von Experience Cloud in Mobile Apps</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de" target="_blank">
+    <strong>Experience Cloud in mobile Apps implementieren</strong>
+    </a>
     </div>
     <p>
     <em>Verwenden von Tags zur Implementierung des Platform Mobile SDK</em>
