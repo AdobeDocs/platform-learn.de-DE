@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
+source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '869'
 ht-degree: 20%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 20%
    + [Sequenzielle Zielgruppen erstellen](audiences/create-sequential-audiences.md)
    + [Dynamische Zielgruppen erstellen](audiences/create-dynamic-audiences.md)
    + [Erstellen von Audiences mit mehreren Entitäten](audiences/create-multi-entity-audiences.md)
-   + [Erstellen von Zielgruppen mit B2B-Daten](audiences/create-audiences-with-b2b-data.md)
+   + [Erstellen und Aktivieren von Zielgruppen für Konten (B2B)](audiences/create-audiences-with-b2b-data.md)
    + [Demo der Streaming-Segmentierung](/help/platform/audiences/streaming-segmentation-demo.md)
    + [Bewerten einer Zielgruppenregel](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Erstellen eines Datensatzes zum Exportieren von Daten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
