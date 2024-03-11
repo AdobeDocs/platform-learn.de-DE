@@ -3,14 +3,19 @@ title: Installieren und Konfigurieren der Adobe Experience Platform Web SDK-Tag-
 description: Erfahren Sie, wie Sie die Platform Web SDK-Tag-Erweiterung in der Datenerfassungsoberfläche installieren und konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 17%
+source-wordcount: '644'
+ht-degree: 13%
 
 ---
 
 # Installieren der Adobe Experience Platform Web SDK-Tag-Erweiterung
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie die Platform Web SDK-Tag-Erweiterung in der Datenerfassungsoberfläche installieren und konfigurieren. Diese Tag-Erweiterung ist _nur Tag-Erweiterung_ erforderlich ist, um Daten an _alle Adobe Experience Cloud-Anwendungen_, einschließlich [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform und Journey Optimizer!
 
@@ -26,14 +31,14 @@ Am Ende dieser Lektion können Sie:
 
 Sie müssen die vorherigen Lektionen in diesem Tutorial abgeschlossen haben:
 
-* [Konfigurieren von Berechtigungen](configure-permissions.md)
+* [Berechtigungen konfigurieren](configure-permissions.md)
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
 * [Konfigurieren eines Datenstroms](configure-datastream.md)
 
 ## Installieren der Experience Platform Web SDK-Erweiterung
 
-### Eigenschaft hinzufügen
+### Hinzufügen einer Eigenschaft
 
 Zuerst müssen Sie über eine Tag-Eigenschaft verfügen. Eine Eigenschaft ist ein Container für alle JavaScript-, Regeln- und anderen Funktionen, die zum Erfassen von Details von einer Webseite und zum Senden an verschiedene Speicherorte erforderlich sind.
 
@@ -41,7 +46,7 @@ Erstellen Sie eine neue Tag-Eigenschaft für das Tutorial:
 
 1. Öffnen Sie die [Datenerfassungsoberfläche](https://launch.adobe.com/){target="_blank"}
 1. Auswählen **[!UICONTROL Tags]** in der linken Navigation
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neue Eigenschaft]**
+1. Wählen Sie die **[!UICONTROL Neue Eigenschaft]** button
    ![Neue Eigenschaft hinzufügen](assets/websdk-property-addNewProperty.png)
 1. Als **[!UICONTROL Name]**, eingeben `Web SDK Course` (Fügen Sie am Ende Ihren Namen hinzu, wenn mehrere Personen aus Ihrem Unternehmen dieses Tutorial absolvieren)
 1. Als **[!UICONTROL Domänen]**, eingeben `enablementadobe.com` (später erklärt)

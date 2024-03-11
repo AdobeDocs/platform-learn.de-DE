@@ -1,10 +1,10 @@
 ---
 title: Streamen von Daten an Adobe Experience Platform mit dem Web SDK
 description: Erfahren Sie, wie Sie Webdaten mit dem Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 8%
+source-wordcount: '1587'
+ht-degree: 7%
 
 ---
 
@@ -13,7 +13,6 @@ ht-degree: 8%
 Erfahren Sie, wie Sie Webdaten mit dem Platform Web SDK an Adobe Experience Platform streamen.
 
 Experience Platform ist das Rückgrat aller neuen Experience Cloud-Applikationen wie Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics und Adobe Journey Optimizer. Diese Anwendungen sind so konzipiert, dass sie das Platform Web SDK als optimale Methode zur Webdatenerfassung verwenden.
-
 
 ![Web SDK und Adobe Experience Platform-Diagramm](assets/dc-websdk-aep.png)
 
@@ -30,29 +29,17 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Sie sollten die folgenden Lektionen bereits abgeschlossen haben:
+Um diese Lektion abzuschließen, müssen Sie zunächst:
 
-* Die **Erstkonfiguration** Lektionen:
-   * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
-   * [Konfigurieren eines Datenstroms](configure-datastream.md)
-   * [Identitäts-Namespace konfigurieren](configure-identities.md)
-
-* Die **Tag-Konfiguration** Lektionen:
-   * [Installieren der Web SDK-Erweiterung](install-web-sdk.md)
-   * [Erstellen von Datenelementen](create-data-elements.md)
-   * [Erstellen von Identitäten](create-identities.md)
-   * [Erstellen von Tag-Regeln](create-tag-rule.md)
+* Zugriff auf eine Adobe Experience Platform-Anwendung wie Real-time Customer Data Platform, Journey Optimizer oder Customer Journey Analytics
+* Schließen Sie die früheren Lektionen in den Abschnitten Erstkonfiguration und Tags-Konfiguration dieses Tutorials ab.
 
 
 ## Erstellen eines Datensatzes
 
 Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, werden im Data Lake als Datensätze persistiert. A [Datensatz](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) ist ein Speicher- und Verwaltungskonstrukt für eine Sammlung von Daten, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben.
 
-In dieser Übung erstellen Sie einen Datensatz, um Inhalte und E-Commerce-Details für die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->Sie müssen die `Luma Web Event Data` Schema, wie in der vorherigen Lektion beschrieben, [Konfigurieren eines XDM-Schemas](configure-schemas.md).
+Richten wir einen Datensatz für Ihre Luma-Web-Ereignisdaten ein:
 
 
 1. Navigieren Sie zu [Experience Platform-Oberfläche](https://experience.adobe.com/platform/)
@@ -211,7 +198,7 @@ Jetzt ist das Schema auch für das Profil aktiviert.
 > * Erfassen Sie zunächst einige Daten in Ihren Datensätzen.
 > * Beheben Sie alle Probleme, die während des Datenerfassungsprozesses auftreten (z. B. bei der Datenvalidierung oder bei der Zuordnung).
 > * Datensätze und Schemata für Profile aktivieren
-> * Erneutes Erfassen der Daten
+> * Erfassen Sie die Daten bei Bedarf neu.
 
 
 ### Profil überprüfen

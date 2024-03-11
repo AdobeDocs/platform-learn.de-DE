@@ -3,14 +3,19 @@ title: Einrichten von Adobe Target mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 1eb67da6513106aa0339ddd65a6f86fed2a029f1
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '3582'
+source-wordcount: '3620'
 ht-degree: 1%
 
 ---
 
 # Einrichten von Adobe Target mit dem Platform Web SDK
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Erfahren Sie, wie Sie Erlebnisse bereitstellen und zusätzliche Parameter an Target übergeben.
 

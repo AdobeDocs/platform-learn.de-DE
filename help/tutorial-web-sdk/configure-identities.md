@@ -3,14 +3,19 @@ title: Identitäts-Namespace konfigurieren
 description: Erfahren Sie, wie Sie Identitäts-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 13%
+source-wordcount: '694'
+ht-degree: 8%
 
 ---
 
 # Identitäts-Namespace konfigurieren
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie Identitäts-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren.
 
@@ -41,7 +46,7 @@ Sie müssen die vorherigen Lektionen bereits abgeschlossen haben:
 >
 >Die [Experience Cloud ID-Erweiterung](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) ist bei der Implementierung des Adobe Experience Platform Web SDK nicht erforderlich, da die JavaScript-Bibliothek des Web SDK die Funktion des Besucher-ID-Diensts enthält.
 
-## Erstellen eines Identity-Namespace
+## Erstellen eines Identitäts-Namespace
 
 In dieser Übung erstellen Sie einen Identitäts-Namespace für das benutzerdefinierte Identitätsfeld von Luma, `lumaCrmId`. Identity-Namespaces spielen eine entscheidende Rolle beim Erstellen von Echtzeit-Kundenprofilen, da zwei übereinstimmende Werte im selben Namespace es zwei Datenquellen ermöglichen, ein Identitätsdiagramm zu erstellen.
 
@@ -58,11 +63,11 @@ Erstellen Sie nun einen Namespace für die Luma CRM-ID:
    >Wenn Sie Platform-basierte Anwendungen wie Real-Time CDP verwenden, empfehlen wir für dieses Tutorial die Verwendung einer Entwicklungs-Sandbox. Wenn nicht, verwenden Sie die **[!UICONTROL Prod]** Sandbox.
 
 1. Auswählen **[!UICONTROL Identitäten]** in der linken Navigation
-1. Klicken Sie auf **[!UICONTROL Durchsuchen]**
+1. Auswählen **[!UICONTROL Durchsuchen]**
 
    In der Hauptbenutzeroberfläche der Seite wird eine Liste von Identitäts-Namespaces angezeigt, die ihren Namen, Identitätssymbole, das letzte aktualisierte Datum und die Frage, ob es sich um standardmäßige oder benutzerdefinierte Namespaces handelt, enthalten. Die rechte Leiste enthält Informationen zur Stärke des Identitätsdiagramms.
 
-1. Wählen Sie **[!UICONTROL Identity-Namespace erstellen]** aus
+1. Auswählen **[!UICONTROL Identitäts-Namespace erstellen]**
 
    ![Identitäten anzeigen](assets/configure-identities-screen.png)
 
@@ -93,7 +98,7 @@ Aufgrund einer aktuellen Einschränkung in der Web SDK-Erweiterung müssen auch 
 
 ## Weitere Ressourcen
 
-* [Identitätsdienst-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de)
+* [Dokumentation zu Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de)
 * [Identity Service-API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 Nachdem Identitäten vorhanden sind, kann der Datastream konfiguriert werden.

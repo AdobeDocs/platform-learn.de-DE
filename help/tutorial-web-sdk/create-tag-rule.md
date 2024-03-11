@@ -3,14 +3,19 @@ title: Tag-Regel erstellen
 description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform Edge Network senden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 6%
+source-wordcount: '871'
+ht-degree: 3%
 
 ---
 
 # Tag-Regel erstellen
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform Edge Network senden. Eine Tag-Regel ist eine Kombination aus Ereignissen, Bedingungen und Aktionen, die die Tag-Eigenschaft anweist, etwas zu tun.
 
@@ -32,7 +37,7 @@ Am Ende dieser Lektion können Sie:
 
 Sie kennen Datenerfassungs-Tags und die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html)und Sie müssen die folgenden vorherigen Lektionen im Tutorial abgeschlossen haben:
 
-* [Konfigurieren von Berechtigungen](configure-permissions.md)
+* [Berechtigungen konfigurieren](configure-permissions.md)
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
 * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -45,7 +50,7 @@ Um Regeln in Tags besser zu verwalten, wird empfohlen, eine standardmäßige Nam
 
 * [location] - [event] - [Tool]
 
-Hier gilt;
+wo;
 
 1. location ist die Seite oder die Seiten auf der Site, auf der die Regel ausgelöst wird.
 1. -Ereignis ist der Trigger, der das -Beacon auslöst
@@ -61,7 +66,7 @@ So erstellen Sie eine Tag-Regel:
 1. Öffnen Sie die Tag-Eigenschaft, die Sie für dieses Tutorial verwenden
 1. Navigieren Sie zu **[!UICONTROL Regeln]** in der linken Navigation
 1. Wählen Sie die **[!UICONTROL Neue Regel erstellen]** button
-   ![Erstellen einer Regel](assets/rules-create.png)
+   ![Regel erstellen](assets/rules-create.png)
 1. Geben Sie einen Namen für die Regel ein `all pages - library load - AA & AT`.
 
    >[!NOTE]
@@ -79,7 +84,7 @@ So erstellen Sie eine Tag-Regel:
    ![Bedingungen hinzufügen](assets/rules-add-conditions.png)
 1. Auswählen **[!UICONTROL Logiktyp]** `Exception`, **[!UICONTROL Erweiterung]** `Core`, und **[!UICONTROL Bedingungstyp]** `Path Without Query String`
 1. URL-Pfad eingeben `/content/luma/us/en/user/cart.html` im **[!UICONTROL path equals]** und **[!UICONTROL name]** it `Core - cart page`
-1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus
+1. Auswählen **[!UICONTROL Änderungen beibehalten]**
    ![Bedingungen hinzufügen](assets/rule-condition-exception.png)
 1. Fügen Sie drei weitere Ausnahmen für die folgenden URL-Pfade hinzu
 

@@ -2,14 +2,19 @@
 title: Streamen von Daten an Adobe Experience Platform mit dem Web SDK
 description: Erfahren Sie, wie Sie Webdaten mit dem Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 11%
+source-wordcount: '1600'
+ht-degree: 8%
 
 ---
 
 # Streamen von Daten an Experience Platform mit dem Web SDK
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie Webdaten mit dem Platform Web SDK an Adobe Experience Platform streamen.
 
@@ -31,7 +36,7 @@ Am Ende dieser Lektion können Sie:
 Sie sollten die folgenden Lektionen bereits abgeschlossen haben:
 
 * Die **Erstkonfiguration** Lektionen:
-   * [Konfigurieren von Berechtigungen](configure-permissions.md)
+   * [Berechtigungen konfigurieren](configure-permissions.md)
    * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
    * [Konfigurieren eines Datenstroms](configure-datastream.md)
    * [Identitäts-Namespace konfigurieren](configure-identities.md)
@@ -56,9 +61,9 @@ In dieser Übung erstellen Sie einen Datensatz, um Inhalte und E-Commerce-Detail
 1. Navigieren Sie zu [Experience Platform-Oberfläche](https://experience.adobe.com/platform/)
 1. Bestätigen, dass Sie sich in der Entwicklungs-Sandbox befinden, die Sie für dieses Tutorial verwenden
 1. Öffnen **[!UICONTROL Datensätze]** über die linke Navigation
-1. Wählen Sie **[!UICONTROL Erstellen eines Datensatzes]** aus
+1. Auswählen **[!UICONTROL Datensatz erstellen]**
 
-   ![Erstellen eines Schemas](assets/experience-platform-create-dataset.png)
+   ![Schema erstellen](assets/experience-platform-create-dataset.png)
 
 1. Wählen Sie die **[!UICONTROL Datensatz aus Schema erstellen]** option
 

@@ -3,14 +3,19 @@ title: Erstellen eines XDM-Schemas für Webdaten
 description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webdaten erstellen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 8%
+source-wordcount: '1093'
+ht-degree: 2%
 
 ---
 
 # Erstellen eines XDM-Schemas für Webdaten
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webdaten erstellen.
 
@@ -50,12 +55,12 @@ In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen Grundfeldgrupp
    >Wenn Sie Platform-basierte Anwendungen wie Real-Time CDP verwenden, empfehlen wir für dieses Tutorial die Verwendung einer Entwicklungs-Sandbox. Wenn nicht, verwenden Sie die **[!UICONTROL Prod]** Sandbox.
 
 1. Navigieren Sie zu **[!UICONTROL Schemas]** in der linken Navigation
-1. Klicken Sie auf **[!UICONTROL Schema erstellen]** oben rechts
+1. Wählen Sie die **[!UICONTROL Schema erstellen]** Schaltfläche oben rechts
 1. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL XDM ExperienceEvent]**
 
 ![Schema-Erlebnisereignis](assets/schema-XDM-experience-event.jpg)
 
-## Klicken Sie auf Feldergruppen hinzufügen
+## Feldergruppen hinzufügen
 
 Wie bereits erwähnt, ist XDM das zentrale Framework, das Kundenerlebnisdaten durch Bereitstellung gemeinsamer Strukturen und Definitionen für nachgelagerte Adobe Experience Platform-Dienste standardisiert. Durch Einhaltung von XDM-Standards _alle Kundenerlebnisdaten_ in eine gemeinsame Vertretung aufgenommen werden. Dieser Ansatz ermöglicht es Ihnen, wertvolle Einblicke aus Kundenaktionen zu gewinnen, Kundenzielgruppen über Segmente zu definieren und Kundenattribute für Personalisierungszwecke mithilfe von Daten aus verschiedenen Quellen auszudrücken. Siehe [Best Practices für die Datenmodellierung](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) für weitere Informationen.
 
@@ -70,7 +75,7 @@ Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein pro
 1. Aktivieren Sie das Kontrollkästchen
 1. Suchen Sie nach [!UICONTROL `Consumer Experience Event`].
 1. Aktivieren Sie das Kontrollkästchen
-1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus
+1. Auswählen **[!UICONTROL Feldergruppen hinzufügen]**
 
    ![Feldergruppe hinzufügen](assets/schema-add-field-group.jpg)
 

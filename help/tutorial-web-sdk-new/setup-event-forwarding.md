@@ -2,9 +2,9 @@
 title: Einrichten einer Ereignisweiterleitungs-Eigenschaft
 description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1861'
 ht-degree: 4%
 
 ---
@@ -62,7 +62,7 @@ Am Ende dieser Lektion können Sie:
       * [Installieren der Web SDK-Erweiterung](install-web-sdk.md)
       * [Erstellen von Datenelementen](create-data-elements.md)
       * [Erstellen von Identitäten](create-identities.md)
-      * [Tag-Regel erstellen](create-tag-rule.md)
+      * [Erstellen von Tag-Regeln](create-tag-rule.md)
       * [Überprüfen mit dem Adobe Experience Platform-Debugger](validate-with-debugger.md)
 
 
@@ -185,8 +185,8 @@ In dieser Übung leiten Sie die Höhe des Browser-Viewports und die Experience C
 
    >[!TIP]
    >
-   Wenn Sie mit Ihrer eigenen Website arbeiten, können Sie den XDM-Objektpfad mit Ihren Webbrowser-Netzwerkwerkzeugen finden und nach `/ee` Anforderungen, Beacon öffnen [!UICONTROL **Nutzlast**] und bohren bis zur gesuchten Variablen. Klicken Sie dann mit der rechten Maustaste und wählen Sie &quot;Eigenschaftspfad kopieren&quot;. Im Folgenden finden Sie ein Beispiel für die Höhe des Browser Viewports:
-   ![XDM-Pfad für die Ereignisweiterleitung](assets/event-forwarding-xdm-path.png)
+   >Wenn Sie mit Ihrer eigenen Website arbeiten, können Sie den XDM-Objektpfad mit Ihren Webbrowser-Netzwerkwerkzeugen finden und nach `/ee` Anforderungen, Beacon öffnen [!UICONTROL **Nutzlast**] und bohren bis zur gesuchten Variablen. Klicken Sie dann mit der rechten Maustaste und wählen Sie &quot;Eigenschaftspfad kopieren&quot;. Im Folgenden finden Sie ein Beispiel für die Höhe des Browser Viewports:
+   > ![XDM-Pfad für die Ereignisweiterleitung](assets/event-forwarding-xdm-path.png)
 
 ### Installieren der Adobe Cloud Connector-Erweiterung
 
@@ -280,7 +280,7 @@ Erstellen Sie eine Bibliothek und erstellen Sie alle Änderungen an Ihrer Entwic
 
 >[!NOTE]
 >
-Wenn Sie die Eigenschaften für die Staging- und Produktions-Ereignisweiterleitung nicht mit Ihrem Datastream verknüpft haben, sehen Sie die Entwicklungsumgebung als einzige Option zum Erstellen einer Bibliothek für .
+>Wenn Sie die Eigenschaften für die Staging- und Produktions-Ereignisweiterleitung nicht mit Ihrem Datastream verknüpft haben, sehen Sie die Entwicklungsumgebung als einzige Option zum Erstellen einer Bibliothek für .
 
 ![Speichern der Ereignisweiterleitungsregel](assets/event-forwarding-initial-build.png)
 
@@ -323,4 +323,4 @@ Herzlichen Glückwunsch! Sie haben die Ereignisweiterleitung konfiguriert!
 
 >[!NOTE]
 >
-Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

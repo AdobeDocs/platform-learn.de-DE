@@ -2,9 +2,9 @@
 title: Einrichten der Zustimmung mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Consent
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Bevor Sie in die Tag-Konfigurationen springen, erfahren Sie mehr über die in di
 >Die Best Practice zur Implementierung einer Consent Management Platform besteht normalerweise darin, den CMP zu laden _before_ Laden Sie Ihren Tag-Manager. Um dieses Tutorial zu erleichtern, laden Sie den CMP _mit_ den Tag-Manager. In dieser Lektion erfahren Sie, wie Sie die Zustimmungsfunktionen im Platform Web SDK verwenden. Sie sollte nicht als Anleitung zur korrekten Konfiguration von Klaro oder anderen CMP verwendet werden.
 
 
-Nachdem Sie mit den Konfigurationen von Klaro fertig sind, erstellen Sie eine Tag-Regel mit den folgenden Konfigurationen:
+Nachdem Sie mit den Konfigurationen von Klaro fertig sind, erstellen Sie Tag-Regeln mit den folgenden Konfigurationen:
 
 * [!UICONTROL Name]: `all pages - library load - Klaro`
 * [!UICONTROL Ereignis]: [!UICONTROL Bibliothek geladen (Seitenanfang)] mit [!UICONTROL Erweiterte Optionen] > [!UICONTROL Bestellung] auf 1 gesetzt

@@ -3,14 +3,19 @@ title: Einrichten von Adobe Analytics mithilfe des Experience Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Analytics mit dem Experience Platform Web SDK einrichten. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '3545'
-ht-degree: 3%
+source-wordcount: '3473'
+ht-degree: 1%
 
 ---
 
 # Einrichten von Adobe Analytics mit dem Platform Web SDK
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie Adobe Analytics mit [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=de)erstellen Tag-Regeln, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics Daten erwartungsgemäß erfasst.
 
@@ -38,7 +43,7 @@ Sie benötigen mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie nich
 Sie müssen alle Schritte aus den vorherigen Abschnitten des Tutorials abgeschlossen haben:
 
 * Erstkonfiguration
-   * [Konfigurieren von Berechtigungen](configure-permissions.md)
+   * [Berechtigungen konfigurieren](configure-permissions.md)
    * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
    * [Identitäts-Namespace konfigurieren](configure-identities.md)
    * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -124,12 +129,12 @@ Während der Lektion Datenelemente erstellen [erstellte JavaScript-Datenelemente
 
 1. Öffnen Sie die Tag-Eigenschaft, die Sie für das Tutorial verwenden
 1. Navigieren Sie zu **[!UICONTROL Datenelemente]**
-1. Wählen Sie **[!UICONTROL Datenelement hinzufügen]** aus
-1. Benennen Sie sie **`product.productInfo.sku`**
+1. Auswählen **[!UICONTROL Datenelement hinzufügen]**
+1. Benennen Sie ihn **`product.productInfo.sku`**
 1. Verwenden Sie die **[!UICONTROL Benutzerspezifischer Code]** **[!UICONTROL Datenelementtyp]**
 1. Lassen Sie Kontrollkästchen für **[!UICONTROL Kleinbuchstaben erzwingen Wert]** und **[!UICONTROL Text bereinigen]** deaktiviert
 1. Urlaub `None` als **[!UICONTROL Speicherdauer]** Einstellung, da dieser Wert auf jeder Seite unterschiedlich ist
-1. Wählen Sie **[!UICONTROL Editor öffnen]**
+1. Auswählen **[!UICONTROL Editor öffnen]**
 
    ![Datenelement &quot;Benutzerspezifischer Code&quot;](assets/data-element-open-editor.jpg)
 
@@ -364,7 +369,7 @@ Am Ende dieser Schritte sollten die folgenden fünf XDM-Objektdatenelemente erst
 Nachdem Sie mehrere XDM-Objektdatenelemente erstellt haben, können Sie die Beacons mithilfe von Regeln festlegen. In dieser Übung erstellen Sie individuelle Regeln pro E-Commerce-Ereignis und verwenden Bedingungen, damit die Regeln auf den richtigen Seiten ausgelöst werden. Beginnen wir mit einem Produktansichtsereignis.
 
 1. Wählen Sie in der linken Navigation die Option **[!UICONTROL Regeln]** und wählen Sie **[!UICONTROL Regel hinzufügen]**
-1. Benennen Sie sie  [!UICONTROL `product view - library load - AA`]
+1. Benennen Sie ihn  [!UICONTROL `product view - library load - AA`]
 1. under **[!UICONTROL Veranstaltungen]** auswählen **[!UICONTROL Bibliothek geladen (Seitenanfang)]**
 1. under **[!UICONTROL Bedingungen]**, wählen Sie **[!UICONTROL Hinzufügen]**
 
@@ -375,21 +380,21 @@ Nachdem Sie mehrere XDM-Objektdatenelemente erstellt haben, können Sie die Beac
 1. Auswählen **[!UICONTROL Bedingungstyp]** as **[!UICONTROL Pfad ohne Abfragezeichenfolge]**
 1. Aktivieren Sie rechts die Option **[!UICONTROL Regex]** Umschalten
 1. under **[!UICONTROL path equals]** set `/products/`. Auf der Demosite &quot;Luma&quot;wird sichergestellt, dass die Regel nur Trigger auf Produktseiten enthält.
-1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus
+1. Auswählen **[!UICONTROL Änderungen beibehalten]**
 
    ![Analytics-XDM-Regeln](assets/analytics-tags-prodView.png)
 
 1. under **[!UICONTROL Aktionen]** select **[!UICONTROL Hinzufügen]**
 1. Auswählen **[!UICONTROL Adobe Experience Platform Web SDK]** Erweiterung
 1. Auswählen **[!UICONTROL Aktionstyp]** as **[!UICONTROL Ereignis senden]**
-1. Die **[!UICONTROL Typ]** verfügt über eine Dropdown-Liste mit Werten, aus denen Sie auswählen können. Auswählen `[!UICONTROL commerce.productViews]`
+1. Die **[!UICONTROL Typ]** verfügt über eine Dropdown-Liste mit Werten, aus denen Sie auswählen können. Klicken Sie auf `[!UICONTROL commerce.productViews]`
 
    >[!TIP]
    >
    >Der hier ausgewählte Wert hat keinen Einfluss darauf, wie Daten Analytics zugeordnet werden. Es wird jedoch empfohlen, diese Variable sorgfältig anzuwenden, da sie in der Segment Builder-Oberfläche von Adobe Experience Platform verwendet wird. Der ausgewählte Wert kann im `[!UICONTROL c.a.x.eventtype]` Kontextdatenvariable nachgelagert.
 
 1. under **[!UICONTROL XDM-Daten]**, wählen Sie die `[!UICONTROL xdm.commerce.prodView]` XDM-Objektdatenelement
-1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus
+1. Auswählen **[!UICONTROL Änderungen beibehalten]**
 
    ![Analytics-XDM-Regeln](assets/analytics-rule-commerce-productViews.png)
 

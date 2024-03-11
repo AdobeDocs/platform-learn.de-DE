@@ -1,24 +1,29 @@
 ---
 title: Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK
-description: Erfahren Sie, wie Sie Experience Cloud-Programme mit dem Adobe Experience Platform Web SDK implementieren.
+description: Erfahren Sie, wie Sie Experience Cloud-Anwendungen mit dem Adobe Experience Platform Web SDK implementieren.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 26%
+source-wordcount: '434'
+ht-degree: 11%
 
 ---
 
 # Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK
 
-Erfahren Sie, wie Sie Experience Cloud-Programme mit dem Adobe Experience Platform Web SDK implementieren.
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
+
+
+Erfahren Sie, wie Sie Experience Cloud-Anwendungen mit dem Adobe Experience Platform Web SDK implementieren.
 
 Experience Platform Web SDK ist eine Client-seitige JavaScript-Bibliothek, mit der Adobe Experience Cloud-Kunden über das Adobe Experience Platform Edge Network sowohl mit Adobe-Anwendungen als auch mit Drittanbieterdiensten interagieren können. Siehe [Übersicht über das Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) für detailliertere Informationen.
 
-Dieses Tutorial führt Sie durch die Implementierung des Platform Web SDK auf einer Beispiel-Einzelhandelswebsite mit dem Namen Luma. Die [](https://luma.enablementadobe.com/content/luma/us/en.html)Luma-Website verfügt über eine umfangreiche Datenschicht und Funktionen, mit denen Sie eine realistische Implementierung erstellen können. Nach Abschluss dieses Tutorials sollten Sie bereit sein, mit der Implementierung all Ihrer Marketing-Lösungen über das Platform Web SDK auf Ihrer eigenen Website zu beginnen.
+Dieses Tutorial führt Sie durch die Implementierung des Platform Web SDK auf einer Beispiel-Einzelhandelswebsite mit dem Namen Luma. Die [Site &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) verfügt über eine umfangreiche Datenschicht und Funktionen, mit denen Sie eine realistische Implementierung erstellen können. Nach Abschluss dieses Tutorials sollten Sie bereit sein, mit der Implementierung all Ihrer Marketing-Lösungen über das Platform Web SDK auf Ihrer eigenen Website zu beginnen.
 
-[![Website „Luma“](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![Luma-Website](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 
 ## Lernziele

@@ -3,14 +3,19 @@ title: Berechtigungen für das Tutorial konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf das Experience Platform Web SDK anfordern und die zum Abschließen des Tutorials "Implementieren von Adobe Experience Cloud mit Web SDK"erforderliche Berechtigung konfigurieren.
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 7%
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
 # Berechtigungen für das Tutorial konfigurieren
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie den Zugriff auf das Experience Platform Web SDK anfordern und die zum Abschließen dieses Tutorials erforderlichen Berechtigungen konfigurieren. Um das Platform Web SDK mithilfe von Tags in der Datenerfassungsoberfläche zu implementieren, müssen Sie über die entsprechenden Benutzerberechtigungen in [Admin Console](https://adminconsole.adobe.com).
 

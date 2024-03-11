@@ -2,9 +2,9 @@
 title: WebSDK-Implementierungen mit Experience Platform Debugger validieren
 description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Debugger
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,6 @@ Am Ende dieser Lektion können Sie den Debugger für Folgendes verwenden:
 * Alternative Tag-Bibliothek laden
 * Validieren Sie, ob das clientseitige XDM-Ereignis Daten erfasst und wie erwartet an Platform Edge Network sendet.
 * Aktivieren Sie Edge Trace, um serverseitige Anforderungen anzuzeigen, die vom Platform Edge Network gesendet werden.
-* Starten Sie eine Adobe Experience Platform Assurance-Sitzung, um eine vom Platform Edge Network generierte Experience Cloud-ID anzuzeigen.
 
 ## Voraussetzungen
 
@@ -45,7 +44,7 @@ Sie kennen Datenerfassungs-Tags und die [Demosite &quot;Luma&quot;](https://luma
 * [In der Tag-Eigenschaft installierte Web SDK-Erweiterung](install-web-sdk.md)
 * [Erstellen von Datenelementen](create-data-elements.md)
 * [Erstellen von Identitäten](create-identities.md)
-* [Tag-Regel erstellen](create-tag-rule.md)
+* [Erstellen von Tag-Regeln](create-tag-rule.md)
 
 ## Alternative Tag-Bibliotheken mit Debugger laden
 

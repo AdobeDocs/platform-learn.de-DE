@@ -3,14 +3,19 @@ title: Einrichten einer Ereignisweiterleitungs-Eigenschaft
 description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 7%
+source-wordcount: '1893'
+ht-degree: 4%
 
 ---
 
 # Einrichten einer Ereignisweiterleitungs-Eigenschaft
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden.
 
@@ -51,7 +56,7 @@ Am Ende dieser Lektion können Sie:
 
    * Erstkonfiguration
 
-      * [Konfigurieren von Berechtigungen](configure-permissions.md)
+      * [Berechtigungen konfigurieren](configure-permissions.md)
       * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
       * [Identitäts-Namespace konfigurieren](configure-identities.md)
       * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -149,7 +154,7 @@ In dieser Übung leiten Sie die Höhe des Browser-Viewports und die Experience C
 
    ![Ereignisweiterleitung für neues Datenelement](assets/event-forwarding-new-dataelement.png)
 
-1. **** Benennen Sie das Datenelement . `environment.browserDetails.viewportHeight`
+1. **[!UICONTROL Name]** das Datenelement `environment.browserDetails.viewportHeight`
 
 1. under **[!UICONTROL Erweiterung]**, verlassen `CORE`
 
@@ -164,7 +169,7 @@ In dieser Übung leiten Sie die Höhe des Browser-Viewports und die Experience C
 
 1. Erstellen eines weiteren Datenelements
 
-1. **** Benennen Sie sie `ecid`
+1. **[!UICONTROL Name]** it `ecid`
 
 1. under **[!UICONTROL Erweiterung]**, verlassen `CORE`
 
@@ -183,8 +188,8 @@ In dieser Übung leiten Sie die Höhe des Browser-Viewports und die Experience C
 
    >[!TIP]
    >
-   Wenn Sie mit Ihrer eigenen Website arbeiten, können Sie den XDM-Objektpfad mit Ihren Webbrowser-Netzwerkwerkzeugen finden und nach `/ee` Anforderungen, Beacon öffnen [!UICONTROL **Nutzlast**] und bohren bis zur gesuchten Variablen. Klicken Sie dann mit der rechten Maustaste und wählen Sie &quot;Eigenschaftspfad kopieren&quot;. Im Folgenden finden Sie ein Beispiel für die Höhe des Browser Viewports:
-   ![XDM-Pfad für die Ereignisweiterleitung](assets/event-forwarding-xdm-path.png)
+   >Wenn Sie mit Ihrer eigenen Website arbeiten, können Sie den XDM-Objektpfad mit Ihren Webbrowser-Netzwerkwerkzeugen finden und nach `/ee` Anforderungen, Beacon öffnen [!UICONTROL **Nutzlast**] und bohren bis zur gesuchten Variablen. Klicken Sie dann mit der rechten Maustaste und wählen Sie &quot;Eigenschaftspfad kopieren&quot;. Im Folgenden finden Sie ein Beispiel für die Höhe des Browser Viewports:
+   > ![XDM-Pfad für die Ereignisweiterleitung](assets/event-forwarding-xdm-path.png)
 
 ### Installieren der Adobe Cloud Connector-Erweiterung
 
@@ -217,7 +222,7 @@ Es gibt einige Hauptunterschiede zwischen dem Konfigurieren von Regeln in einer 
 
 * **Sequenz von Regelaktionen**:
 
-   * Der Abschnitt Aktionen einer Ereignisweiterleitungsregel wird immer sequentiell ausgeführt. Stellen Sie also beim Speichern einer Regel sicher, dass die Reihenfolge der Aktionen korrekt ist. Diese Ausführungsreihenfolge kann im Gegensatz zu Tags nicht asynchron ausgeführt werden.
+   * Der Abschnitt Aktionen einer Ereignisweiterleitungsregel wird immer nacheinander ausgeführt. Stellen Sie also beim Speichern einer Regel sicher, dass die Reihenfolge der Aktionen korrekt ist. Diese Ausführungsreihenfolge kann im Gegensatz zu Tags nicht asynchron ausgeführt werden.
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -238,11 +243,11 @@ Um eine Regel zum Weiterleiten von Daten an Ihren Webhook zu konfigurieren, müs
 
 1. Zurück **[!UICONTROL Datenerfassung]** > **[!UICONTROL Ereignisweiterleitung]** > **[!UICONTROL Regeln]** über die linke Navigation
 
-1. Wählen Sie **[!UICONTROL Neue Regel erstellen]** aus
+1. Auswählen **[!UICONTROL Neue Regel erstellen]**
 
    ![Neue Regel zur Ereignisweiterleitung](assets/event-forwarding-new-rules.png)
 
-1. Benennen Sie sie `all events - ad cloud connector - webhook`
+1. Benennen Sie ihn `all events - ad cloud connector - webhook`
 
 1. Hinzufügen einer Aktion
 
@@ -262,7 +267,7 @@ Um eine Regel zum Weiterleiten von Daten an Ihren Webhook zu konfigurieren, müs
 
 1. Im **[!UICONTROL Schlüssel]** Spaltentyp in `ecid`. Geben Sie in der Spalte Wert die `{{ecid}}` Datenelement
 
-1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus
+1. Auswählen **[!UICONTROL Änderungen beibehalten]**
 
    ![Abfrageparameter hinzufügen](assets/event-forwarding-rule-query-parameter.png)
 
@@ -278,7 +283,7 @@ Erstellen Sie eine Bibliothek und erstellen Sie alle Änderungen an Ihrer Entwic
 
 >[!NOTE]
 >
-Wenn Sie die Eigenschaften für die Staging- und Produktions-Ereignisweiterleitung nicht mit Ihrem Datastream verknüpft haben, sehen Sie die Entwicklungsumgebung als einzige Option zum Erstellen einer Bibliothek für .
+>Wenn Sie die Eigenschaften für die Staging- und Produktions-Ereignisweiterleitung nicht mit Ihrem Datastream verknüpft haben, sehen Sie die Entwicklungsumgebung als einzige Option zum Erstellen einer Bibliothek für .
 
 ![Speichern der Ereignisweiterleitungsregel](assets/event-forwarding-initial-build.png)
 
@@ -321,4 +326,4 @@ Herzlichen Glückwunsch! Sie haben die Ereignisweiterleitung konfiguriert!
 
 >[!NOTE]
 >
-Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

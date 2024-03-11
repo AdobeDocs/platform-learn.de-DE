@@ -9,10 +9,10 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 29%
+source-wordcount: '96'
+ht-degree: 30%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 29%
    + [Installieren der Web SDK-Erweiterung](install-web-sdk.md)
    + [Erstellen von Datenelementen](create-data-elements.md)
    + [Erstellen von Identitäten](create-identities.md)
-   + [Tag-Regel erstellen](create-tag-rule.md)
+   + [Erstellen von Tag-Regeln](create-tag-rule.md)
    + [Validieren mit Debugger](validate-with-debugger.md)
    + [Validierung mit Versicherung](validate-with-assurance.md)
 

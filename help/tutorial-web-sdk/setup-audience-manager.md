@@ -3,14 +3,19 @@ title: Einrichten von Audience Manager mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Audience Manager mit dem Platform Web SDK einrichten und die Implementierung mit einem Cookie-Ziel validieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 4%
+source-wordcount: '1368'
+ht-degree: 1%
 
 ---
 
 # Einrichten von Audience Manager mit dem Platform Web SDK
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie Adobe Audience Manager mit dem Platform Web SDK einrichten und die Implementierung mit einem Cookie-Ziel validieren.
 
@@ -116,7 +121,7 @@ Erstellen Sie als Nächstes eine **Cookie-basiertes Ziel** mithilfe der **Zielge
 
 1. Öffnen Sie den Destination Builder durch Auswahl von **[!UICONTROL Ziele]** innerhalb der **Zielgruppendaten** Menü in der oberen Navigation
 1. Auswählen **[!UICONTROL Ziel erstellen]**
-1. Geben Sie einen Namen und eine Beschreibung ein, `Platform Web SDK tutorial`
+1. Namen und Beschreibung eingeben `Platform Web SDK tutorial`
 1. Als **[!UICONTROL Kategorie]** auswählen **[!UICONTROL Benutzerdefiniert]**
 1. Als **[!UICONTROL Typ]** auswählen **[!UICONTROL Cookie]**
 
@@ -146,7 +151,7 @@ Erstellen Sie als Nächstes eine **Cookie-basiertes Ziel** mithilfe der **Zielge
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
-1. Klicken Sie auf **[!UICONTROL Fertig]**
+1. Auswählen **[!UICONTROL Fertig]**
    ![Adobe Experience Platform Audience Manager - Eigenschaft hinzufügen](assets/luma-cookie-segment-dw.png)
 
 Für den Zeitraum der Segmentzuordnung müssen einige Stunden aktiviert werden. Nach Abschluss des Vorgangs können Sie die Benutzeroberfläche des Audience Managers aktualisieren und sehen, dass die **Zugeordnete Segmente** Liste aktualisiert.

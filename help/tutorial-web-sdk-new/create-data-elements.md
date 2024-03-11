@@ -2,22 +2,16 @@
 title: Erstellen von Datenelementen
 description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1199'
 ht-degree: 2%
 
 ---
 
 # Erstellen von Datenelementen
 
-Erfahren Sie, wie Sie Datenelemente in Tags für Inhalts-, Commerce- und Identitätsdaten in der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html). Füllen Sie dann Felder in Ihrem XDM-Schema mit dem Datenelementtyp Variable aus.
-
-
->[!IMPORTANT]
->
->Die Daten für diese Lektion stammen aus dem `[!UICONTROL digitalData]` Datenschicht auf der Site &quot;Luma&quot;. Um die Datenschicht anzuzeigen, öffnen Sie Ihre Entwicklerkonsole und geben Sie in `[!UICONTROL digitalData]` , um die vollständige verfügbare Datenschicht anzuzeigen.![digitalData-Datenschicht](assets/data-element-data-layer.png)
-
+Erfahren Sie, wie Sie Datenelemente in Tags für Inhalts-, Commerce- und Identitätsdaten in der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html). Füllen Sie dann die Felder in Ihrem XDM-Schema mit dem Datenelementtyp der Platform Web SDK-Erweiterung Variable aus.
 
 ## Lernziele
 
@@ -37,9 +31,15 @@ Sie wissen, was eine Datenschicht ist, und haben die vorherigen Lektionen im Tut
 * [Konfigurieren eines Datenstroms](configure-datastream.md)
 * [In der Tag-Eigenschaft installierte Web SDK-Erweiterung](install-web-sdk.md)
 
+
+>[!IMPORTANT]
+>
+>Die Daten für diese Lektion stammen aus dem `[!UICONTROL digitalData]` Datenschicht auf der Site &quot;Luma&quot;. Um die Datenschicht anzuzeigen, öffnen Sie Ihre Entwicklerkonsole und geben Sie in `[!UICONTROL digitalData]` , um die vollständige verfügbare Datenschicht anzuzeigen.![digitalData-Datenschicht](assets/data-element-data-layer.png)
+
+
 ## Datenschichtansätze
 
-Es gibt mehrere Möglichkeiten, Daten aus Ihrer Datenschicht mithilfe der Tagfunktion von Adobe Experience Platform XDM zuzuordnen. Im Folgenden finden Sie einige Vor- und Nachteile von drei verschiedenen Ansätzen:
+Es gibt mehrere Möglichkeiten, Daten aus Ihrer Datenschicht mithilfe der Tagfunktion von Adobe Experience Platform XDM zuzuordnen. Im Folgenden finden Sie einige Vor- und Nachteile von drei verschiedenen Ansätzen. Bei Bedarf können Ansätze kombiniert werden:
 
 1. Implementieren von XDM in der Datenschicht
 1. Zuordnung zu XDM in Tags
@@ -104,7 +104,7 @@ Nachteile
 
 * Vollständige Abhängigkeit vom Entwicklungsteam und vom Entwicklungszyklus für die Aktualisierung der Daten an XDM
 * Eingeschränkte Flexibilität, da XDM die exakte Payload von der Datenschicht erhält
-* Es können keine integrierten Tags wie Scraping, Persistenz und Funktionen für schnelle Bereitstellungen verwendet werden
+* Es können keine integrierten Tags-Funktionen wie Scraping, Persistenz, Funktionen für schnelle Bereitstellungen verwendet werden
 * Die Datenschicht kann nicht für Pixel von Drittanbietern verwendet werden
 * Keine Transformation der Daten zwischen der Datenschicht und XDM
 
@@ -289,7 +289,7 @@ Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt werden:
 
 >[!TIP]
 >
->In Zukunft [Tag-Regel erstellen](create-tag-rule.md) Lektion: Sie lernen, wie die **[!UICONTROL Variable]** Mit dem Datenelement können Sie mehrere Regeln in Tags stapeln, indem Sie die **[!UICONTROL Aktionstyp der Variablen aktualisieren]**.
+>In Zukunft [Erstellen von Tag-Regeln](create-tag-rule.md) Lektion: Sie lernen, wie die **[!UICONTROL Variable]** Mit dem Datenelement können Sie mehrere Regeln in Tags stapeln, indem Sie die **[!UICONTROL Aktionstyp der Variablen aktualisieren]**.
 
 Wenn diese Datenelemente vorhanden sind, können Sie mit dem Senden von Daten an Platform Edge Network mit einer Tagregel beginnen. Erfahren Sie zunächst, wie Sie Identitäten mit dem Web SDK erfassen.
 

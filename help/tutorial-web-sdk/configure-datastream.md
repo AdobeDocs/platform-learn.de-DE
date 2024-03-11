@@ -3,14 +3,19 @@ title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Lösungen konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 9%
+source-wordcount: '471'
+ht-degree: 6%
 
 ---
 
 # Konfigurieren eines Datenstroms
+
+
+>[!CAUTION]
+>
+>Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Lösungen konfigurieren.
 
@@ -28,7 +33,7 @@ Am Ende dieser Lektion können Sie:
 
 Bevor Sie Ihren Datastream konfigurieren, müssen Sie bereits die folgenden Lektionen abgeschlossen haben:
 
-* [Konfigurieren von Berechtigungen](configure-permissions.md)
+* [Berechtigungen konfigurieren](configure-permissions.md)
 * [Schema konfigurieren](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
 
