@@ -2,9 +2,9 @@
 title: Einrichten von Adobe Analytics mithilfe des Experience Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Analytics mit dem Experience Platform Web SDK einrichten. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Analytics
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3024'
 ht-degree: 1%
 
 ---
@@ -21,16 +21,12 @@ Erfahren Sie, wie Sie Adobe Analytics mit [Experience Platform Web SDK](https://
 
 Am Ende dieser Lektion können Sie:
 
-* Konfigurieren eines XDM-Schemas für Adobe Analytics
-* den Unterschied zwischen automatisch zugeordneten und manuell zugeordneten XDM-Variablen für Analytics verstehen
 * Konfigurieren eines Datenspeichers zur Aktivierung von Adobe Analytics
-* Datensatz überschreiben, um Daten an eine andere Adobe Analytics Report Suite zu senden
-* Ordnen Sie einzelne oder komplette Array-Datenelemente dem XDM-Objekt zu.
-* Verwenden Sie den Aktionstyp Variable-Regel aktualisieren , um mehrere Regeln in einem XDM-Ereignis zu stapeln.
-* Erfassen von Seitenansichten in Adobe Analytics mit dem XDM-Objekt
-* Erfassen von E-Commerce-Daten mit dem XDM-Objekt für die Adobe Analytics-Produktzeichenfolge
+* den Unterschied zwischen automatisch zugeordneten und manuell zugeordneten XDM-Variablen für Analytics verstehen
+* Konfigurieren eines XDM-Schemas für Adobe Analytics-spezifische Variablen
 * Festlegen eines Merchandising-eVar mit Produktsyntax mit XDM
-* Überprüfen, ob Adobe Analytics-Variablen mit dem XDM-Objekt mithilfe von Experience Platform Debugger festgelegt werden
+* Datensatz überschreiben, um Daten an eine andere Adobe Analytics Report Suite zu senden
+* Überprüfen von Adobe Analytics-Variablen mit Experience Platform Debugger
 * Verwenden von Adobe Analytics-Verarbeitungsregeln zum Festlegen benutzerdefinierter Variablen
 * Daten überprüfen wird von Adobe Analytics mithilfe von Adobe Experience Platform Assurance erfasst
 * Daten mithilfe von Echtzeitberichten von Adobe Analytics überprüfen

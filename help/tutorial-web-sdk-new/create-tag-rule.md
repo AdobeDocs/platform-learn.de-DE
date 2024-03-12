@@ -2,9 +2,9 @@
 title: Erstellen von Tag-Regeln
 description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform Edge Network senden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2025'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,9 @@ Erfahren Sie, wie Sie mithilfe von Tag-Regeln Ereignisse mit Ihrem XDM-Objekt an
 Am Ende dieser Lektion können Sie:
 
 * Verwenden einer Benennungskonvention zum Verwalten von Regeln innerhalb von Tags
-* Senden eines XDM-Ereignisses mithilfe der Aktionstypen &quot;Variable aktualisieren&quot;und &quot;Ereignis senden&quot;in einer Tag-Regel
+* Ereignis mit XDM-Feldern mit den Aktionen &quot;Variable aktualisieren&quot;und &quot;Ereignis senden&quot;senden
+* Mehrere Sätze von XDM-Feldern über mehrere Regeln hinweg stapeln
+* Ordnen Sie einzelne oder komplette Array-Datenelemente dem XDM-Objekt zu.
 * Veröffentlichen einer Tag-Regel in einer Entwicklungsbibliothek
 
 
