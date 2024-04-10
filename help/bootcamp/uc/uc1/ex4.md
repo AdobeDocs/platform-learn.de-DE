@@ -1,21 +1,21 @@
 ---
-title: Bootcamp - Echtzeit-Kundendatenplattform - Erstellen eines Segments und Handeln - Senden Sie Ihr Segment an Adobe Target
-description: Bootcamp - Echtzeit-Kundendatenplattform - Erstellen eines Segments und Handeln - Senden Sie Ihr Segment an Adobe Target
+title: Bootcamp - Echtzeit-Kundendatenplattform - Erstellen einer Zielgruppe und Handeln - Senden Sie Ihre Zielgruppe an Adobe Target
+description: Bootcamp - Echtzeit-Kundendatenplattform - Erstellen einer Zielgruppe und Handeln - Senden Sie Ihre Zielgruppe an Adobe Target
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 solution: Experience Platform, Target
-feature: Segments, Integrations
+feature: Audiences, Integrations
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 9d12b3e3ad2238cf79aca3d9723e7e60d72e765c
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '867'
 ht-degree: 2%
 
 ---
 
-# 1.4 Maßnahmen ergreifen: Senden Ihres Segments an Adobe Target
+# 1.4 Aktion durchführen: Senden Sie Ihre Audience an Adobe Target
 
 Navigieren Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
 
@@ -25,19 +25,19 @@ Bevor Sie fortfahren, müssen Sie eine **Sandbox**. Die auszuwählende Sandbox h
 
 ![Datenaufnahme](./images/sb1.png)
 
-## 1.4.1 Aktivieren Sie Ihr Segment für Ihr Adobe Target-Ziel
+## 1.4.1 Zielgruppe für Adobe Target aktivieren
 
 Adobe Target ist als Ziel von Real-Time CDP verfügbar. Informationen zum Einrichten der Adobe Target-Integration finden Sie unter **Ziele**, um **Katalog**.
 
-Klicken **Personalisierung** im **Kategorien** Menü. Sie werden dann die **Adobe Target** Zielkarte. Klicken **Segmente aktivieren**.
+Klicks **Personalisierung** im **Kategorien** Menü. Sie werden dann die **Adobe Target** Zielkarte. Klicks **Aktivieren von Zielgruppen**.
 
 ![AT](./images/atdest1.png)
 
-Ziel auswählen ``Bootcamp Target`` und klicken Sie auf **Nächste**.
+Ziel auswählen ``Bootcamp Target`` und klicken **Nächste**.
 
 ![AT](./images/atdest3.png)
 
-Wählen Sie in der Liste der verfügbaren Segmente das Segment aus, das Sie in [1.3 Segment erstellen](./ex3.md), der `yourLastName - Interest in Real-Time CDP`. Klicken Sie dann auf **Weiter**.
+Wählen Sie in der Liste der verfügbaren Zielgruppen die in [1.3 Erstellen einer Zielgruppe](./ex3.md), der `yourLastName - Interest in Real-Time CDP`. Klicken Sie dann auf **Weiter**.
 
 ![AT](./images/atdest8.png)
 
@@ -49,24 +49,24 @@ Klicken Sie auf **Fertigstellen**.
 
 ![AT](./images/atdest10.png)
 
-Ihr Segment ist jetzt für Adobe Target aktiviert.
+Ihre Audience ist jetzt für Adobe Target aktiviert.
 
 ![AT](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Wenn Sie Ihr Adobe Target-Ziel gerade in Real-Time CDP erstellt haben, kann es bis zu einer Stunde dauern, bis das Ziel aktiv ist. Dies ist eine einmalige Wartezeit aufgrund der Einrichtung der Backend-Konfiguration. Sobald die anfängliche Wartezeit von einer Stunde und die Backend-Konfiguration abgeschlossen sind, sind neu hinzugefügte Edge-Segmente, die an das Adobe Target-Ziel gesendet werden, für das Targeting in Echtzeit verfügbar.
+>Wenn Sie Ihr Adobe Target-Ziel gerade in Real-Time CDP erstellt haben, kann es bis zu einer Stunde dauern, bis das Ziel aktiv ist. Dies ist eine einmalige Wartezeit aufgrund der Einrichtung der Backend-Konfiguration. Sobald die anfängliche Wartezeit von einer Stunde und die Backend-Konfiguration abgeschlossen sind, sind neu hinzugefügte Edge-Zielgruppen, die an das Adobe Target-Ziel gesendet werden, für das Targeting in Echtzeit verfügbar.
 
 ## 1.4.2 Konfigurieren der formularbasierten Adobe Target-Aktivität
 
-Nachdem Ihr Real-Time CDP-Segment für den Versand an Adobe Target konfiguriert wurde, können Sie Ihre Erlebnis-Targeting-Aktivität in Adobe Target konfigurieren. In dieser Übung konfigurieren Sie eine Visual Experience Composer-basierte Aktivität.
+Nachdem Ihre Real-Time CDP-Audience für den Versand an Adobe Target konfiguriert wurde, können Sie Ihre Erlebnis-Targeting-Aktivität in Adobe Target konfigurieren. In dieser Übung konfigurieren Sie eine Visual Experience Composer-basierte Aktivität.
 
-Rufen Sie die Adobe Experience Cloud-Homepage auf, indem Sie [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Klicken **Target** um es zu öffnen.
+Rufen Sie die Adobe Experience Cloud-Homepage auf, indem Sie [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Klicks **Target** , um es zu öffnen.
 
 ![RTCDP](./images/excl.png)
 
 Im **Adobe Target** Homepage werden Sie alle vorhandenen Aktivitäten sehen.
-Klicken **+ Aktivität erstellen** , um eine neue Aktivität zu erstellen.
+Klicks **+ Aktivität erstellen** , um eine neue Aktivität zu erstellen.
 
 ![RTCDP](./images/exclatov.png)
 
@@ -74,7 +74,7 @@ Auswählen **Erlebnis-Targeting**.
 
 ![RTCDP](./images/exclatcrxt.png)
 
-Auswählen **Visuell** und legen Sie die **Aktivitäts-URL** nach `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, aber bevor Sie dies tun, ersetzen Sie XX durch eine Zahl zwischen 01 und 30.
+Auswählen **Visuell** und legen Sie die **Aktivitäts URL** nach `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, aber bevor Sie dies tun, ersetzen Sie XX durch eine Zahl zwischen 01 und 30.
 
 >[!IMPORTANT]
 >
@@ -94,15 +94,15 @@ Sie befinden sich jetzt im Visual Experience Composer. Es kann 20-30 Sekunden da
 
 ![RTCDP](./images/atform1.png)
 
-Die Standardzielgruppe ist derzeit **Alle Besucher**. Klicken Sie auf **3 Punkte** neben **Alle Besucher** und klicken Sie auf **Zielgruppe ändern**.
+Die Standardzielgruppe ist derzeit **Alle Besucher**. Klicken Sie auf **3 Punkte** neben **Alle Besucher** und klicken **Zielgruppe ändern**.
 
 ![RTCDP](./images/atform3.png)
 
-Jetzt wird die Liste der verfügbaren Zielgruppen angezeigt. Das Adobe Experience Platform-Segment, das Sie zuvor erstellt und an Adobe Target gesendet haben, ist jetzt Teil dieser Liste. Wählen Sie das Segment aus, das Sie zuvor in Adobe Experience Platform erstellt haben. Klicken **Zielgruppe zuweisen**.
+Jetzt wird die Liste der verfügbaren Zielgruppen angezeigt. Die zuvor erstellte und an Adobe Target gesendete Adobe Experience Platform-Zielgruppe ist jetzt Teil dieser Liste. Wählen Sie die zuvor in Adobe Experience Platform erstellte Audience aus. Klicks **Zielgruppe zuweisen**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Ihr Adobe Experience Platform-Segment ist jetzt Teil dieser Erlebnis-Targeting-Aktivität.
+Ihre Adobe Experience Platform-Zielgruppe ist jetzt Teil dieser Erlebnis-Targeting-Aktivität.
 
 ![RTCDP](./images/atform4.png)
 
@@ -132,7 +132,7 @@ Anschließend sehen Sie das neue Erlebnis mit dem neuen Bild für Ihre ausgewäh
 
 ![RTCDP](./images/atform7.png)
 
-Klicken Sie oben links auf den Titel Ihrer Aktivität, um sie umzubenennen.
+Klicken Sie auf den Titel Ihrer Aktivität in der oberen linken Ecke, um sie umzubenennen.
 
 ![RTCDP](./images/exclatvecname.png)
 
@@ -160,7 +160,7 @@ Du bist jetzt auf der **Aktivitätsübersicht** Seite. Sie müssen Ihre Aktivit�
 
 ![RTCDP](./images/atform10.png)
 
-Klicken Sie auf das Feld **Inaktiv** und wählen Sie **Aktivieren**.
+Klicken Sie auf das Feld **Inaaktiv** und wählen **Aktivieren**.
 
 ![RTCDP](./images/atform11.png)
 
@@ -170,7 +170,7 @@ Sie erhalten dann eine visuelle Bestätigung, dass Ihre Aktivität jetzt live is
 
 Ihre Aktivität ist jetzt live und kann auf der Bootcamp-Website getestet werden.
 
-Wenn Sie jetzt zu Ihrer Demo-Website zurückkehren und die Produktseite für **Real-Time CDP** eingeben, werden Sie sich sofort für das Segment qualifizieren, das Sie erstellt haben, und die Adobe Target-Aktivität wird auf der Startseite in Echtzeit angezeigt.
+Wenn Sie jetzt zu Ihrer Demo-Website zurückkehren und die Produktseite für **Real-Time CDP** eingeben, werden Sie sich sofort für die von Ihnen erstellte Zielgruppe qualifizieren und die Adobe Target-Aktivität wird auf der Startseite in Echtzeit angezeigt.
 
 >[!IMPORTANT]
 >
@@ -182,7 +182,7 @@ Wenn Sie jetzt zu Ihrer Demo-Website zurückkehren und die Produktseite für **R
 
 ![RTCDP](./images/atform12a.png)
 
-Nächster Schritt: [1.5 Maßnahmen ergreifen: Senden Ihres Segments an Facebook](./ex5.md)
+Nächster Schritt: [1.5 Aktion durchführen: Senden Sie Ihre Audience an Facebook](./ex5.md)
 
 [Zurück zum Benutzerfluss 1](./uc1.md)
 
