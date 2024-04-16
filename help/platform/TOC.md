@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
+source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '874'
 ht-degree: 20%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 20%
    + [Integrieren mit IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Datenhygiene {#data-hygiene}
    + [Datensätze löschen](/help/platform/data-hygiene/delete-datasets.md)
+   + [Pseudonyme Profil- und Ereignisablauf](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + Datenaufnahme {#data-ingestion}
    + [Übersicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Batch-Erfassung - Übersicht](/help/platform/data-ingestion/batch-ingestion-overview.md)
@@ -144,7 +145,7 @@ ht-degree: 20%
    + [Customer AI-Wert](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Konfigurieren von Kunden-KI](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Verwenden von Kunden-KI- und Insights-Werten](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Überwachung {#monitoring}
++ Monitoring {#monitoring}
    + [Überwachen der Datenaufnahme](/help/platform/monitoring/monitoring-dashboard.md)
    + [Segmentaktivierung überwachen](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Überwachen von Datenflüssen](/help/platform/monitoring/data-monitoring.md)
@@ -189,7 +190,7 @@ ht-degree: 20%
    + [Daten analysieren und visualisieren](/help/platform/queries/analyze-and-visualize.md)
    + [Erstellen von Dashboards mit BI-Tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [Kundendaten neu berechnen](/help/platform/queries/recharge-your-customer-data.md)
-   + [Clients mit Query Service verbinden](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [Clients mit Query Service verbinden](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=de){target="_blank"}
    + [Validieren von Daten im Datensatz](/help/platform/queries/validate-data-in-the-datalake.md)
 + Schemata {#schemas}
    + [Übersicht](/help/platform/schemas/schemas-and-experience-data-model.md)
