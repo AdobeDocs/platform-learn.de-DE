@@ -2,9 +2,10 @@
 title: WebSDK-Implementierungen mit Experience Platform Assurance validieren
 description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Assurance überprüfen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Assurance
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
+source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 3%
 
 ---
@@ -19,7 +20,7 @@ Adobe Experience Platform Assurance ist ein Produkt aus Adobe Experience Cloud, 
 Am Ende dieser Lektion können Sie:
 
 * Starten einer Assurance-Sitzung
-* Anfragen anzeigen, die an und vom Platform Edge Network gesendet wurden
+* Anzeigen von Anforderungen, die an und von Platform Edge Network gesendet werden
 
 ## Voraussetzungen
 
@@ -31,7 +32,7 @@ Sie kennen Datenerfassungs-Tags und die [Demosite &quot;Luma&quot;](https://luma
 * [In der Tag-Eigenschaft installierte Web SDK-Erweiterung](install-web-sdk.md)
 * [Erstellen von Datenelementen](create-data-elements.md)
 * [Erstellen von Identitäten](create-identities.md)
-* [Erstellen von Tag-Regeln](create-tag-rule.md)
+* [Tag-Regel erstellen](create-tag-rule.md)
 * [Validieren mit Debugger](validate-with-debugger.md)
 
 
@@ -70,7 +71,7 @@ Jedes Mal, wenn Sie Edge Trace in Adobe Experience Platform Debugger aktivieren,
 
 ## Überprüfen des aktuellen Status Ihrer Web SDK-Implementierung
 
-Zu diesem Zeitpunkt Ihrer Implementierung sind nur begrenzte Informationen verfügbar. Ein Wert, den wir sehen können, ist Ihre Experience Cloud-ID (ECID), die im Platform Edge Network generiert wird:
+Zu diesem Zeitpunkt Ihrer Implementierung sind nur begrenzte Informationen verfügbar. Ein Wert, den wir sehen können, ist Ihre Experience Cloud ID (ECID), die auf Platform Edge Network generiert wird:
 
 1. Wählen Sie die Zeile mit dem Ereignis Adobe Response Handle aus.
 1. Rechts wird ein Menü angezeigt. Wählen Sie die `+` neben `[!UICONTROL ACPExtensionEvent]`
