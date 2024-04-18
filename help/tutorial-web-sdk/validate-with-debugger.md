@@ -3,7 +3,7 @@ title: WebSDK-Implementierungen mit Experience Platform Debugger validieren
 description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
+>Wir gehen davon aus, dass am Dienstag, dem 23. April 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren.
 
@@ -37,7 +37,7 @@ Diese Technik wird als Umgebungswechsel bezeichnet und ist später hilfreich, we
 Am Ende dieser Lektion können Sie den Debugger für Folgendes verwenden:
 
 * Alternative Tag-Bibliothek laden
-* Überprüfen Sie, ob das XDM-Objekt Daten wie erwartet erfasst und sendet.
+* Validieren des XDM-Objekts erfasst und sendet Daten wie erwartet Edge Network
 
 ## Voraussetzungen
 

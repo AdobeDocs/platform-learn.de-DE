@@ -3,7 +3,7 @@ title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Lösungen konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 6%
@@ -15,11 +15,11 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
+>Wir gehen davon aus, dass am Dienstag, dem 23. April 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Lösungen konfigurieren.
 
-Datastreams teilen dem Adobe Experience Platform Edge Network mit, wohin vom Platform Web SDK erfasste Daten gesendet werden sollen. In der Konfiguration der Datenspeicher aktivieren Sie Ihre Experience Cloud-Anwendungen, Ihr Experience Platform-Konto und die Ereignisweiterleitung. Siehe [Grundlagen zum Konfigurieren eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de) für detailliertere Informationen.
+Datastreams teilen Adobe Experience Platform Edge Network mit, wohin vom Platform Web SDK erfasste Daten gesendet werden sollen. In der Konfiguration der Datenspeicher aktivieren Sie Ihre Experience Cloud-Anwendungen, Ihr Experience Platform-Konto und die Ereignisweiterleitung. Siehe [Grundlagen zum Konfigurieren eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de) für detailliertere Informationen.
 
 ## Lernziele
 
@@ -39,7 +39,7 @@ Bevor Sie Ihren Datastream konfigurieren, müssen Sie bereits die folgenden Lekt
 
 ## Erstellen eines Datenspeichers
 
-Jetzt können Sie einen Datastream erstellen, um Platform Edge Network mitzuteilen, wohin die vom Web SDK erfassten Daten gesendet werden sollen.
+Jetzt können Sie einen Datastream erstellen, um Platform Edge Network mitzuteilen, wohin vom Web SDK erfasste Daten gesendet werden sollen.
 
 **So erstellen Sie einen Datastream:**
 

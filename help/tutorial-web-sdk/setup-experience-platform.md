@@ -2,7 +2,7 @@
 title: Streamen von Daten an Adobe Experience Platform mit dem Web SDK
 description: Erfahren Sie, wie Sie Webdaten mit dem Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1600'
 ht-degree: 8%
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
+>Wir gehen davon aus, dass am Dienstag, dem 23. April 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie Webdaten mit dem Platform Web SDK an Adobe Experience Platform streamen.
 
@@ -81,7 +81,7 @@ Ein Datensatz ist jetzt so konfiguriert, dass Daten aus Ihrer Platform Web SDK-I
 
 ## Konfigurieren des Datenspeichers
 
-Jetzt können Sie Ihre [!UICONTROL datastream] zum Senden von Daten an [!UICONTROL Adobe Experience Platform]. Der Datastream ist die Verknüpfung zwischen Ihrer Tag-Eigenschaft, dem Platform Edge Network und dem Experience Platform-Datensatz.
+Jetzt können Sie Ihre [!UICONTROL datastream] zum Senden von Daten an [!UICONTROL Adobe Experience Platform]. Der Datastream ist die Verknüpfung zwischen Ihrer Tag-Eigenschaft, dem Platform-Edge Network und dem Experience Platform-Datensatz.
 
 1. Öffnen Sie die [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} Benutzeroberfläche
 1. Auswählen **[!UICONTROL Datenspeicher]** über die linke Navigation

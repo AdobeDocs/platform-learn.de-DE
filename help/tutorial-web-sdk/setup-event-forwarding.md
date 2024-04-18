@@ -3,7 +3,7 @@ title: Einrichten einer Ereignisweiterleitungs-Eigenschaft
 description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1893'
 ht-degree: 4%
@@ -15,13 +15,13 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
+>Wir gehen davon aus, dass am Dienstag, dem 23. April 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden.
 
-Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassung verfügbar ist. Mit der Ereignisweiterleitung können Sie Daten direkt vom Adobe Experience Platform Edge Network an Drittanbieter senden, die keine Adobe sind, und nicht an den herkömmlichen Client-seitigen Browser. Erfahren Sie mehr über die Vorteile der Ereignisweiterleitung im [Übersicht über die Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassung verfügbar ist. Die Ereignisweiterleitung bietet Ihnen die Möglichkeit, Daten direkt vom Adobe Experience Platform-Edge Network an Drittanbieter zu senden, die keine Adobe sind, und nicht an den herkömmlichen Client-seitigen Browser. Erfahren Sie mehr über die Vorteile der Ereignisweiterleitung im [Übersicht über die Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
 
-Um die Ereignisweiterleitung in Adobe Experience Platform zu verwenden, müssen Daten zunächst mit einer oder mehreren der folgenden drei Optionen an Adobe Experience Platform Edge Network gesendet werden:
+Um die Ereignisweiterleitung in Adobe Experience Platform zu verwenden, müssen Daten zunächst mit einer oder mehreren der folgenden drei Optionen an das Adobe Experience Platform-Edge Network gesendet werden:
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
@@ -113,7 +113,7 @@ So konfigurieren Sie Target im Datastream:
 
 Wiederholen Sie diese Schritte für Staging- und Produktionsdatenspeicher, wenn Sie bereit sind, Ihre Änderungen durch den Veröffentlichungsfluss zu fördern.
 
-## Weiterleiten von Daten vom Platform Edge Network an eine Nicht-Adobe-Lösung
+## Weiterleiten von Daten vom Platform-Edge Network an eine Nicht-Adobe-Lösung
 
 In dieser Übung erfahren Sie, wie Sie ein Datenelement für die Ereignisweiterleitung einrichten, eine Ereignisweiterleitungsregel konfigurieren und mit einem Tool des dritten Teils, dem so genannten [webhook.site](https://webhook.site/).
 
@@ -123,7 +123,7 @@ In dieser Übung erfahren Sie, wie Sie ein Datenelement für die Ereignisweiterl
 
 >[!IMPORTANT]
 >
->Sie müssen bereits Datenelemente erstellt und einem XDM-Objekt zugeordnet sowie konfigurierte Tag-Regeln erstellt und diese Änderungen in einer Bibliothek in eine Tag-Umgebung erstellt haben, um fortfahren zu können. Ist dies nicht der Fall, lesen Sie den Abschnitt **Tag-Konfiguration** Schritte in [Voraussetzungen](setup-event-forwarding.md#prerequisites) Abschnitt. Diese Schritte stellen sicher, dass Daten an das Platform Edge Network gesendet werden, und von dort können Sie eine Ereignisweiterleitungs-Eigenschaft konfigurieren, um Daten an eine Nicht-Adobe-Lösung weiterzuleiten.
+>Sie müssen bereits Datenelemente erstellt und einem XDM-Objekt zugeordnet sowie konfigurierte Tag-Regeln erstellt und diese Änderungen in einer Bibliothek in eine Tag-Umgebung erstellt haben, um fortfahren zu können. Ist dies nicht der Fall, lesen Sie den Abschnitt **Tag-Konfiguration** Schritte in [Voraussetzungen](setup-event-forwarding.md#prerequisites) Abschnitt. Diese Schritte stellen sicher, dass Daten an das Platform-Edge Network gesendet werden, und von dort können Sie eine Ereignisweiterleitungs-Eigenschaft konfigurieren, um Daten an eine Nicht-Adobe-Lösung weiterzuleiten.
 
 
 ### Erstellen eines Datenelements für die Ereignisweiterleitung
@@ -212,7 +212,7 @@ Es gibt einige Hauptunterschiede zwischen dem Konfigurieren von Regeln in einer 
 * **[!UICONTROL Veranstaltungen] &amp; [!UICONTROL Bedingungen]**:
 
    * **Tags**: Alle Regeln werden durch ein Ereignis ausgelöst, das in der Regel angegeben werden muss, beispielsweise `Library Loaded - Page Top`. Bedingungen sind optional.
-   * **Ereignisweiterleitung**: Es wird davon ausgegangen, dass jedes Ereignis, das an Platform Edge Network gesendet wird, ein Trigger zum Weiterleiten von Daten ist. Daher gibt es keine [!UICONTROL Veranstaltungen] muss in Ereignisweiterleitungsregeln ausgewählt werden. Um zu verwalten, welche Ereignisse Trigger einer Ereignisweiterleitungsregel sind, müssen Sie Bedingungen konfigurieren.
+   * **Ereignisweiterleitung**: Es wird davon ausgegangen, dass jedes Ereignis, das an Platform Edge Network gesendet wird, ein Trigger zur Weiterleitung von Daten ist. Daher gibt es keine [!UICONTROL Veranstaltungen] muss in Ereignisweiterleitungsregeln ausgewählt werden. Um zu verwalten, welche Ereignisse Trigger einer Ereignisweiterleitungsregel sind, müssen Sie Bedingungen konfigurieren.
 
 * **Tokenisierung von Datenelementen**:
 
@@ -295,13 +295,13 @@ Jetzt können Sie Ihre Eigenschaft für die Ereignisweiterleitung mit dem Platfo
 
 1. Bevor Sie die Seite neu laden, öffnen Sie auf dem Experience Platform Debugger **[!UICONTROL Protokolle]** über die linke Navigation
 
-1. Wählen Sie die **[!UICONTROL Edge]** Registerkarte und wählen Sie **[!UICONTROL Verbinden]** Anzeigen der Anforderungen des Platform Edge Network
+1. Wählen Sie die **[!UICONTROL Edge]** Registerkarte und wählen Sie **[!UICONTROL Verbinden]** Anzeigen von Platform Edge Network-Anforderungen
 
    ![Edge-Netzwerksitzung für die Ereignisweiterleitung](assets/event-forwarding-edge-session.png)
 
 1. Seite neu laden
 
-1. Es werden zusätzliche Anfragen angezeigt, die Ihnen einen Einblick in die serverseitigen Anforderungen geben, die vom Platform Edge Network an WebHook gesendet werden.
+1. Es werden zusätzliche Anfragen angezeigt, die Ihnen einen Einblick in die serverseitigen Anforderungen geben, die vom Platform-Edge Network an WebHook gesendet werden.
 
 1. Die Anfrage, die Validierung auf zu konzentrieren, zeigt die vollständig erstellte URL, die vom Edge-Netzwerk gesendet wird.
 

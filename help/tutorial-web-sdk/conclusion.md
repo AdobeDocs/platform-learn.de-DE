@@ -3,7 +3,7 @@ title: Schlussfolgerung und nächste Schritte
 description: Nächste Schritte nach Abschluss des Tutorials
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Wir gehen davon aus, dass am Freitag, dem 15. März 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
+>Wir gehen davon aus, dass am Dienstag, dem 23. April 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
 
 Herzlichen Glückwunsch! Sie haben das Tutorial &quot;Adobe Experience Cloud mit Web SDK implementieren&quot;abgeschlossen!
 
@@ -31,7 +31,7 @@ Schauen wir uns kurz alles an, was Sie erreicht haben. Sie haben:
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* Verwendete Ereignisweiterleitung zum Senden von Daten vom Platform Edge Network an einen Webhook.
+* Verwendete Ereignisweiterleitung zum Senden von Daten aus Platform Edge Network an einen Web-Hook.
 * Die Implementierung mit Adobe Experience Platform Debugger wurde validiert.
 
 Sie sind bereit, mit der nächsten Phase Ihres Journey - der Implementierung von Adobe Experience Cloud auf Ihrer eigenen Website - zu beginnen!
