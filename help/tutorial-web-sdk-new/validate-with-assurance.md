@@ -3,9 +3,9 @@ title: WebSDK-Implementierungen mit Experience Platform Assurance validieren
 description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Assurance überprüfen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 3%
 
 ---
@@ -61,13 +61,16 @@ Jedes Mal, wenn Sie Edge Trace in Adobe Experience Platform Debugger aktivieren,
 1. Öffnen Sie die [Datenerfassungsoberfläche](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. Wählen Sie im linken Navigationsbereich die Option Versicherung .
 1. Sitzung erstellen
+   ![Erstellen einer Zuverlässigkeitssitzung](assets/assurance-create-session.png)
 1. Starten
 1. Benennen Sie die Sitzung beispielsweise. `Luma Web SDK validation`
 1. Als **[!UICONTROL Basis-URL]** enter `https://luma.enablementadobe.com/`
+   ![Benennen der Assurance-Sitzung](assets/assurance-name-session.png)
 1. Wählen Sie im nächsten Bildschirm **[!UICONTROL Link kopieren]**
 1. Wählen Sie das Symbol aus, um den Link in die Zwischenablage zu kopieren
 1. Fügen Sie die URL in Ihren Browser ein, wodurch die Luma-Website mit einem speziellen URL-Parameter geöffnet wird. `adb_validation_sessionid` und starten Sie die Sitzung
 1. In der Assurance-Oberfläche sollte eine Meldung angezeigt werden, die angibt, dass Sie eine erfolgreiche Verbindung mit der Sitzung hergestellt haben. Außerdem sollten Ereignisse angezeigt werden, die in der Assurance-Oberfläche erfasst wurden.
+   ![Die Bestätigungssitzung ist verbunden](assets/assurance-success.png)
 
 ## Überprüfen des aktuellen Status Ihrer Web SDK-Implementierung
 

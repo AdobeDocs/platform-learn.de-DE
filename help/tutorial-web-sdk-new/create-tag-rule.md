@@ -1,8 +1,9 @@
 ---
 title: Erstellen von Tag-Regeln
-description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform Edge Network senden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform-Edge Network senden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 2%
@@ -11,7 +12,7 @@ ht-degree: 2%
 
 # Erstellen von Tag-Regeln
 
-Erfahren Sie, wie Sie mithilfe von Tag-Regeln Ereignisse mit Ihrem XDM-Objekt an das Platform Edge Network senden. Eine Tag-Regel ist eine Kombination aus Ereignissen, Bedingungen und Aktionen, die die Tag-Eigenschaft anweist, etwas zu tun. Mit dem Platform Web SDK werden Regeln verwendet, um Ereignisse mit den richtigen XDM-Feldern an das Platform Edge Network zu senden.
+Erfahren Sie, wie Sie mithilfe von Tag-Regeln Ereignisse mit Ihrem XDM-Objekt an das Platform-Edge Network senden. Eine Tag-Regel ist eine Kombination aus Ereignissen, Bedingungen und Aktionen, die die Tag-Eigenschaft anweist, etwas zu tun. Mit dem Platform Web SDK werden Regeln verwendet, um Ereignisse mit den richtigen XDM-Feldern an Platform Edge Network zu senden.
 
 >[!NOTE]
 >
@@ -60,7 +61,7 @@ wo;
 In -Tags werden Regeln verwendet, um unter verschiedenen Bedingungen Aktionen (Aufrufe auslösen) auszuführen. Die Platform Web SDK-Tag-Erweiterung umfasst zwei Aktionen, die in dieser Lektion verwendet werden:
 
 * **[!UICONTROL Variable aktualisieren]** ordnet Datenelemente XDM-Feldern zu
-* **[!UICONTROL Ereignis senden]** sendet das XDM-Objekt an das Experience Platform Edge Network
+* **[!UICONTROL Ereignis senden]** sendet das XDM-Objekt an das Experience Platform-Edge Network
 
 Im Rest dieser Lektion werden wir:
 
@@ -68,7 +69,7 @@ Im Rest dieser Lektion werden wir:
 
 1. Erstellen Sie zusätzliche Regeln, die unsere &quot;globale Konfiguration&quot;außer Kraft setzen oder zusätzliche XDM-Felder hinzufügen (mithilfe von [!UICONTROL Variable aktualisieren] erneut), die nur unter bestimmten Bedingungen relevant sind (z. B. Hinzufügen von Produktdetails zu Produktseiten).
 
-1. Erstellen Sie eine weitere Regel mit dem **[!UICONTROL Ereignis senden]** -Aktion, die das vollständige XDM-Objekt an Adobe Experience Platform Edge Network sendet.
+1. Erstellen Sie eine weitere Regel mit dem **[!UICONTROL Ereignis senden]** -Aktion, die das vollständige XDM-Objekt an das Adobe Experience Platform-Edge Network sendet.
 
 Alle diese Regeln werden mithilfe des[!UICONTROL bestellen]&quot;.
 
@@ -105,7 +106,7 @@ So erstellen Sie Tag-Regeln für globale XDM-Felder:
    > Je niedriger die Bestellnummer ist, desto früher wird sie ausgeführt. Deshalb geben wir unserer &quot;globalen Konfiguration&quot; eine niedrige Bestellnummer.
 
 1. Auswählen **[!UICONTROL Änderungen beibehalten]** zum Hauptregelbildschirm zurückzukehren
-   ![Trigger &quot;Bibliothek geladen&quot;auswählen](assets/create-tag-rule-trigger-bottom.png)
+   ![Trigger &quot;Bibliothek geladen&quot;auswählen](assets/create-tag-rule-trigger-loaded.png)
 
 1. Im **[!UICONTROL Aktionen]** Bereich, wählen Sie **[!UICONTROL Hinzufügen]**
 
@@ -167,7 +168,7 @@ Jetzt zuordnen [!UICONTROL Datenelemente] der [!UICONTROL schema] verwendet von 
 
 #### Felder für Produktseiten
 
-Beginnen Sie jetzt mit der Verwendung von **[!UICONTROL Variable aktualisieren]** in zusätzlichen, sequenzierten Regeln, um das XDM-Objekt anzureichern, bevor es an gesendet wird [!UICONTROL Platform Edge Network].
+Beginnen Sie jetzt mit der Verwendung von **[!UICONTROL Variable aktualisieren]** in zusätzlichen, sequenzierten Regeln, um das XDM-Objekt anzureichern, bevor es an gesendet wird [!UICONTROL Platform-Edge Network].
 
 >[!TIP]
 >
@@ -352,7 +353,7 @@ Nachdem Sie die Variablen festgelegt haben, können Sie die Regel erstellen, um 
 1. Auswählen **[!UICONTROL Erweitert]** Dropdown und `50` in **[!UICONTROL Bestellung]**. Dadurch wird sichergestellt, dass die zweite Regel Trigger nach der ersten Regel, die Sie auf Trigger als `1`.
 
 1. Auswählen **[!UICONTROL Änderungen beibehalten]** zum Hauptregelbildschirm zurückzukehren
-   ![Trigger &quot;Bibliothek geladen&quot;auswählen](assets/create-tag-rule-trigger-bottom-send.png)
+   ![Trigger &quot;Bibliothek geladen&quot;auswählen](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. Im **[!UICONTROL Aktionen]** Bereich, wählen Sie **[!UICONTROL Hinzufügen]**
 

@@ -2,7 +2,8 @@
 title: Installieren und Konfigurieren der Adobe Experience Platform Web SDK-Tag-Erweiterung
 description: Erfahren Sie, wie Sie die Platform Web SDK-Tag-Erweiterung in der Datenerfassungsoberfläche installieren und konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 14%
@@ -53,7 +54,7 @@ Nachdem Sie Ihr XDM-Schema, Ihren Datastream und Ihre Tag-Eigenschaft erstellt h
 1. Suchen Sie nach `Adobe Experience Platform Web SDK`.
 1. Auswählen **[!UICONTROL Installieren]**
 
-   ![Installieren der Web SDK-Erweiterung](assets/extension-platform-web-sdk.jpg)
+   ![Installieren der Web SDK-Erweiterung](assets/extension-platform-web-sdk.png)
 
 
 ## Verknüpfen des Platform Web SDK mit Ihrem Datastream

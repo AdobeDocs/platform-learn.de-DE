@@ -2,7 +2,8 @@
 title: Erstellen eines XDM-Schemas für Webdaten
 description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webdaten erstellen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Schemas
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+exl-id: 159f914a-43d4-4808-b6af-01136386e25c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -15,7 +16,7 @@ Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webd
 
 Experience-Datenmodell (XDM)-Schemas sind die Bausteine, Grundsätze und Best Practices für die Datenerfassung in Adobe Experience Platform.
 
-Das Platform Web SDK verwendet Ihr Schema zur Standardisierung Ihrer Web-Ereignisdaten, zum Senden an das Platform Edge Network und schließlich zum Weiterleiten der Daten an alle im Datastream konfigurierten Experience Cloud-Anwendungen. Dieser Schritt ist wichtig, da er ein Standarddatenmodell definiert, das für die Aufnahme von Kundenerlebnisdaten in Experience Platform erforderlich ist, und nachgelagerte Dienste und Anwendungen ermöglicht, die auf diesen Standards basieren.
+Das Platform Web SDK verwendet Ihr Schema zur Standardisierung Ihrer Web-Ereignisdaten, zum Senden an das Platform-Edge Network und schließlich zum Weiterleiten der Daten an alle im Datastream konfigurierten Experience Cloud-Anwendungen. Dieser Schritt ist wichtig, da er ein Standarddatenmodell definiert, das für die Aufnahme von Kundenerlebnisdaten in Experience Platform erforderlich ist, und nachgelagerte Dienste und Anwendungen ermöglicht, die auf diesen Standards basieren.
 
 ## Warum modellieren die Daten?
 
@@ -122,7 +123,7 @@ Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein pro
 1. Aktivieren Sie das Kontrollkästchen
 1. Auswählen **[!UICONTROL Feldergruppen hinzufügen]**
 
-   ![Feldergruppe hinzufügen](assets/schema-add-field-group.jpg)
+   ![Feldergruppe hinzufügen](assets/schema-add-field-group.png)
 
 Beachten Sie bei beiden Feldergruppen, dass Sie Zugriff auf die am häufigsten verwendeten Schlüssel-Wert-Paare haben, die für die Datenerfassung im Internet erforderlich sind. Die [!UICONTROL Anzeigename] für Marketing-Experten in der Segment Builder-Oberfläche von Platform-basierten Anwendungen angezeigt werden und Sie können den Anzeigenamen von Standardfeldern an Ihre Anforderungen anpassen. Sie können auch Felder entfernen, die Sie nicht möchten. Wenn Sie auf einen der Feldgruppennamen klicken, wird in der Benutzeroberfläche hervorgehoben, zu welchen Schlüssel-Wert-Paargruppierungen gehören. Im folgenden Beispiel sehen Sie, zu welchen Gruppen gehören **[!UICONTROL Ereignis für Kundenerlebnisse]**.
 

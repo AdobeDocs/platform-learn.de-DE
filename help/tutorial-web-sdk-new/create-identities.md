@@ -2,7 +2,8 @@
 title: Erstellen von Identitäten
 description: Erfahren Sie, wie Sie Identitäten in XDM erstellen und das Datenelement "Identity Map"zum Erfassen von Benutzer-IDs verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 1%
@@ -47,7 +48,7 @@ Die [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experie
 
 Weitere Informationen zum [ECIDs werden mithilfe des Platform Web SDK verfolgt.](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
-ECIDs werden mithilfe einer Kombination aus Erstanbieter-Cookies und Platform Edge Network festgelegt. Standardmäßig werden die Erstanbieter-Cookies vom Web SDK gesetzt. Um Browserbeschränkungen für Cookie-Lebenszyklen zu berücksichtigen, können Sie stattdessen Ihre eigenen Erstanbieter-Cookies festlegen und verwalten. Diese werden als Erstanbieter-Geräte-IDs (FPIDs) bezeichnet.
+ECIDs werden anhand einer Kombination aus Erstanbieter-Cookies und Platform Edge Network festgelegt. Standardmäßig werden die Erstanbieter-Cookies vom Web SDK Client-seitig gesetzt. Um Browserbeschränkungen für Cookie-Lebenszyklen zu berücksichtigen, können Sie stattdessen Ihre eigenen Erstanbieter-Cookies serverseitig festlegen. Diese werden als Erstanbieter-Geräte-IDs (FPIDs) bezeichnet.
 
 >[!IMPORTANT]
 >
@@ -57,7 +58,7 @@ ECIDs werden mithilfe einer Kombination aus Erstanbieter-Cookies und Platform Ed
 
 FPIDs sind Erstanbieter-Cookies _Sie legen mithilfe Ihrer eigenen Webserver fest._ welche Adobe dann verwendet, um die ECID zu erstellen, anstatt das vom Web SDK festgelegte Erstanbieter-Cookie zu verwenden. Auch wenn die Browserunterstützung variieren kann, sind Erstanbieter-Cookies meist haltbarer, wenn sie von einem Server gesetzt werden, der einen DNS-A-Datensatz (für IPv4) oder einen AAAA-Datensatz (für IPv6) nutzt, im Gegensatz zu einem DNS-CNAME oder JavaScript-Code.
 
-Sobald ein FPID-Cookie gesetzt ist, kann der zugehörige Wert abgerufen und an Adobe gesendet werden, während Ereignisdaten erfasst werden. Erfasste FPIDs werden als Samen verwendet, um ECIDs im Platform Edge Network zu generieren, die weiterhin die Standardkennungen in Adobe Experience Cloud-Anwendungen sind.
+Sobald ein FPID-Cookie gesetzt ist, kann der zugehörige Wert abgerufen und an Adobe gesendet werden, während Ereignisdaten erfasst werden. Erfasste FPIDs werden als Samen verwendet, um ECIDs in Platform Edge Network zu generieren, die weiterhin die Standardkennungen in Adobe Experience Cloud-Anwendungen sind.
 
 Auch wenn FPIDs in diesem Tutorial nicht verwendet werden, sollten Sie FPIDs in Ihrer eigenen Web SDK-Implementierung verwenden. Mehr dazu [Erstanbieter-Geräte-IDs im Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=de)
 
