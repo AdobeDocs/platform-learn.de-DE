@@ -7,10 +7,10 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 0474808b42925bf95529e10a42a0563f0ecc43b8
+source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '511'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ In dieser Übung melden Sie sich bei Adobe Experience Platform an und sehen sich
 
 ## Geschichte
 
-Im Echtzeit-Kundenprofil werden alle Profildaten zusammen mit Ereignisdaten sowie vorhandenen Zielgruppenmitgliedschaften angezeigt. Die angezeigten Daten können von überall kommen, von Adobe-Anwendungen und externen Lösungen. Dies ist die leistungsstärkste Ansicht in Adobe Experience Platform, das wahre Erlebnissystem der Aufzeichnungen.
+Im Echtzeit-Kundenprofil werden alle Profildaten zusammen mit Ereignisdaten sowie vorhandenen Segmentmitgliedschaften angezeigt. Die angezeigten Daten können von überall kommen, von Adobe-Anwendungen und externen Lösungen. Dies ist die leistungsstärkste Ansicht in Adobe Experience Platform, das wahre Erlebnissystem der Aufzeichnungen.
 
 ## 1.2.1 Verwenden der Kundenprofilansicht in Adobe Experience Platform
 
@@ -30,7 +30,7 @@ Navigieren Sie zu [Adobe Experience Platform](https://experience.adobe.com/platf
 
 Bevor Sie fortfahren, müssen Sie eine **Sandbox**. Die auszuwählende Sandbox heißt ``Bootcamp``. Klicken Sie hierzu auf den Text **[!UICONTROL Produktionsprodukt]** in der blauen Zeile auf Ihrem Bildschirm. Nach Auswahl der entsprechenden [!UICONTROL Sandbox], sehen Sie die Änderung des Bildschirms und befinden sich jetzt in Ihrem [!UICONTROL Sandbox].
 
-
+![Datenaufnahme](./images/sb1.png)
 
 Gehen Sie im linken Menü zu **Profile** und **Durchsuchen**.
 
@@ -39,7 +39,6 @@ Gehen Sie im linken Menü zu **Profile** und **Durchsuchen**.
 Im Bedienfeld &quot;Profil-Viewer&quot;auf Ihrer Website finden Sie die Identitätsübersicht. Jede Identität ist mit einem Namespace verknüpft.
 
 ![Kundenprofil](./images/identities.png)
-
 
 Im Bedienfeld &quot;Profil-Viewer&quot;kann derzeit diese Identität angezeigt werden:
 
@@ -63,13 +62,13 @@ Navigieren Sie zu **Veranstaltungen**, wo Sie Einträge für jedes Erlebnisereig
 
 ![Kundenprofil](./images/profileee.png)
 
-Navigieren Sie schließlich zur Menüoption . **Zielgruppenmitgliedschaft**. Jetzt werden alle Zielgruppen angezeigt, die für dieses Profil qualifiziert sind.
+Navigieren Sie schließlich zur Menüoption . **Segmentmitgliedschaft**. Jetzt werden alle Segmente angezeigt, die für dieses Profil qualifiziert sind.
 
 ![Kundenprofil](./images/profileseg.png)
 
-Erstellen wir nun eine neue Zielgruppe, mit der Sie das Kundenerlebnis für einen anonymen oder bekannten Kunden personalisieren können.
+Erstellen wir nun ein neues Segment, mit dem Sie das Kundenerlebnis für einen anonymen oder bekannten Kunden personalisieren können.
 
-Nächster Schritt: [1.3 Erstellen einer Zielgruppe - Benutzeroberfläche](./ex3.md)
+Nächster Schritt: [1.3 Segment erstellen - Benutzeroberfläche](./ex3.md)
 
 [Zurück zum Benutzerfluss 1](./uc1.md)
 

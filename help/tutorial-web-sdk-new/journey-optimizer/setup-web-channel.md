@@ -1,20 +1,21 @@
 ---
-title: Webkanal mit dem Platform Web SDK einrichten
-description: Erfahren Sie, wie Sie den Webkanal mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+title: Einrichten des Journey Optimizer-Webkanals mit dem Platform Web SDK
+description: Erfahren Sie, wie Sie den Journey Optimizer-Webkanal mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
+exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
+source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2587'
 ht-degree: 0%
 
 ---
 
 
-# Webkanal mit dem Platform Web SDK einrichten
+# Journey Optimizer-Webkanal einrichten
 
-Erfahren Sie, wie Sie den Webkanal mit dem Platform Web SDK implementieren. In diesem Handbuch werden die grundlegenden Webkanal-Voraussetzungen, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
+Erfahren Sie, wie Sie den Journey Optimizer-Webkanal mit dem Platform Web SDK implementieren. In diesem Handbuch werden die grundlegenden Webkanal-Voraussetzungen, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
 
 Anhand dieses Handbuchs können Journey Optimizer-Benutzer mithilfe von Journey Optimizer Web Designer effektiv den Webkanal für eine erweiterte Online-Personalisierung anwenden.
 
@@ -124,9 +125,16 @@ In diesem Anwendungsbeispiel wird veranschaulicht, wie Journey Optimizer mithilf
 >
 >Da dieses Tutorial auf Implementierer ausgerichtet ist, ist zu beachten, dass diese Lektion umfangreiche Arbeit an der Benutzeroberfläche in Journey Optimizer erfordert. Während solche Aufgaben in der Regel von Marketing-Experten verarbeitet werden, können Implementierer Einblicke in den Prozess erhalten, selbst wenn sie nicht für die Erstellung von Webkanal-Kampagnen am Ende verantwortlich sind.
 
+### Erstellen eines Loyalitätsschemas und Erfassen von Beispieldaten
+
+Wenn Web SDK-Daten in Adobe Experience Platform erfasst werden, können sie durch alle anderen erfassten Daten angereichert werden. Wenn sich ein Benutzer bei der Site &quot;Luma&quot;authentifiziert und eine authentifizierte Identität an Platform gesendet wird, die eine Identität im CRM-System von Luma darstellt. Ein Identitätsdiagramm wird in Experience Platform erstellt und alle anderen profilaktivierten Datensätze, die auch Identitäten mit der `lumaCrmId` Der Namespace kann zusammengeführt werden, um Echtzeit-Kundenprofile zu erstellen. Wir erstellen in Adobe Experience Platform schnell einen weiteren Datensatz mit Beispielloyalitätsdaten, damit wir zeigen können, wie Echtzeit-Kundenprofile in Journey Optimizer-Webkampagnen verwendet werden können. Da Sie bereits ähnliche Übungen durchgeführt haben, werden die Anweisungen kurz sein.
+
+
+
+
 ### Kampagne &quot;Treuebelohnungen erstellen&quot;
 
-Erstellen wir zunächst die Webkanalkampagne &quot;Loyalitätsbelohnungen&quot;in Adobe Journey Optimizer.
+Nachdem wir nun unsere Beispielloyalitätsdaten erfasst haben, können wir die Webkanalkampagne &quot;Loyalty Rewards&quot;in Adobe Journey Optimizer erstellen.
 
 So erstellen Sie die Beispielkampagne:
 
@@ -297,7 +305,7 @@ So starten Sie die Validierung mit dem Debugger:
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Sie können sich dann mit verschiedenen Treuekonten von Luma bei der Site anmelden und den Debugger verwenden, um die an das Adobe Experience Platform Edge Network gesendeten Anfragen zu validieren.
+1. Anschließend können Sie sich mit verschiedenen Treuekonten von Luma bei der Site anmelden und den Debugger verwenden, um die an das Adobe Experience Platform-Edge Network gesendeten Anforderungen zu validieren.
    <!--
     ![ADD SCREENSHOT](#)
     -->
