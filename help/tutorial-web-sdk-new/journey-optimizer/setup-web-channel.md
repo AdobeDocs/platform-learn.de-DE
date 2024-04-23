@@ -5,10 +5,10 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+source-git-commit: 43eb66edecb9dce59dbb4995230181c9f2cbce5b
 workflow-type: tm+mt
-source-wordcount: '2587'
-ht-degree: 0%
+source-wordcount: '2675'
+ht-degree: 1%
 
 ---
 
@@ -127,10 +127,29 @@ In diesem Anwendungsbeispiel wird veranschaulicht, wie Journey Optimizer mithilf
 
 ### Erstellen eines Loyalitätsschemas und Erfassen von Beispieldaten
 
-Wenn Web SDK-Daten in Adobe Experience Platform erfasst werden, können sie durch alle anderen erfassten Daten angereichert werden. Wenn sich ein Benutzer bei der Site &quot;Luma&quot;authentifiziert und eine authentifizierte Identität an Platform gesendet wird, die eine Identität im CRM-System von Luma darstellt. Ein Identitätsdiagramm wird in Experience Platform erstellt und alle anderen profilaktivierten Datensätze, die auch Identitäten mit der `lumaCrmId` Der Namespace kann zusammengeführt werden, um Echtzeit-Kundenprofile zu erstellen. Wir erstellen in Adobe Experience Platform schnell einen weiteren Datensatz mit Beispielloyalitätsdaten, damit wir zeigen können, wie Echtzeit-Kundenprofile in Journey Optimizer-Webkampagnen verwendet werden können. Da Sie bereits ähnliche Übungen durchgeführt haben, werden die Anweisungen kurz sein.
+Wenn Web SDK-Daten in Adobe Experience Platform erfasst werden, können sie durch andere Datenquellen angereichert werden, die Sie in Platform erfasst haben. Wenn sich ein Benutzer beispielsweise bei der Site &quot;Luma&quot;anmeldet, wird die Variable `lumaCrmId` wird an Platform gesendet, die eine Identität im CRM-System von Luma darstellt. Ein Identitätsdiagramm wird in Experience Platform erstellt und alle anderen profilaktivierten Datensätze können potenziell zusammengeführt werden, um Echtzeit-Kundenprofile zu erstellen. Wir erstellen in Adobe Experience Platform schnell einen weiteren Datensatz mit Beispielloyalitätsdaten, damit wir zeigen können, wie Echtzeit-Kundenprofile in Journey Optimizer-Webkampagnen verwendet werden können. Da Sie bereits ähnliche Übungen durchgeführt haben, werden die Anweisungen kurz sein.
 
+Erstellen des Schemas:
 
+1. Erstellen eines neuen Schemas
+1. Auswählen **[!UICONTROL Individuelles Profil]** als [!UICONTROL Basisklasse]
+1. Benennen Sie das Schema. `Luma Loyalty Schema`
+1. Wählen Sie die `personID` Feld und Markierung ist als [!UICONTROL Identität] und [!UICONTROL Primäre Identität] mithilfe der `Luma CRM Id` [!UICONTROL Identitäts-Namespace].
+1. Fügen Sie die [!UICONTROL Treuedetails] Feldergruppe
+1. Aktivieren des Schemas für [!UICONTROL Profil]
 
+SCREENSHOT DES SCHEMAS
+
+So erstellen Sie den Datensatz und erfassen die Beispieldaten:
+
+1. Erstellen Sie einen neuen Datensatz aus der `Luma Loyalty Schema`
+1. Benennen Sie den Datensatz. `Luma Loyalty Dataset`
+1. Datensatz aktivieren für [!UICONTROL Profil]
+1. Beispieldatei &quot;LoyaltyWebSDK.json&quot;herunterladen
+1. Ziehen Sie die Datei per Drag-and-Drop in Ihren Datensatz
+1. Überprüfen Sie, ob die Daten erfolgreich erfasst wurden.
+
+BILDSCHIRM DES DATENSATZES UND BESTÄTIGUNG
 
 ### Kampagne &quot;Treuebelohnungen erstellen&quot;
 

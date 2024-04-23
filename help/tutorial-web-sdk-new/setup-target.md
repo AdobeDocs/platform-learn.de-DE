@@ -2,9 +2,10 @@
 title: Einrichten von Adobe Target mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Target
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
+source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 0%
 
 ---
@@ -19,16 +20,16 @@ Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Erfa
 
 ## Lernziele
 
-Am Ende dieser Lektion können Sie:
+Am Ende dieser Lektion können Sie Folgendes mit einer Web SDK-Implementierung von Target tun:
 
-* Erfahren Sie, wie Sie den Codeausschnitt zur Vorab-Ausblendung des Platform Web SDK hinzufügen, um ein Flackern bei der Verwendung von Target mit asynchronen Tag-Einbettungscodes zu verhindern.
+* Codeausschnitt zur Vorab-Ausblendung hinzufügen, um Flackern zu verhindern
 * Konfigurieren eines Datenspeichers zur Aktivierung der Target-Funktion
 * Rendern von Visual Experience Composer-Aktivitäten
 * Render Form Composer-Aktivitäten
 * Übergeben von XDM-Daten an Target und Verstehen der Zuordnung zu Target-Parametern
 * Übergeben benutzerdefinierter Daten an Target, z. B. Profil- und Entitätsparameter
-* Validieren einer Target-Implementierung mit dem Platform Web SDK
-* Senden Sie Target-Provision-Anforderungen separat von Adobe Analytics-Anforderungen und lösen Sie ihre Anzeigeereignisse später auf
+* eine Target-Implementierung überprüfen
+* Trennen von Personalisierungsanforderungen von Analyseanforderungen
 
 >[!TIP]
 >
@@ -48,7 +49,7 @@ Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
    * [Verwenden des formularbasierten Experience Composer](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [Erstellen von Erlebnis-Targeting-Aktivitäten](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## Flackerverhinderung hinzufügen
+## Flackernde Behandlung hinzufügen
 
 Stellen Sie vor dem Start fest, ob je nachdem, wie die Tag-Bibliothek geladen wird, eine zusätzliche Lösung zur Flackerverarbeitung erforderlich ist.
 
@@ -59,7 +60,7 @@ Stellen Sie vor dem Start fest, ob je nachdem, wie die Tag-Bibliothek geladen wi
 
 ### Asynchrone Implementierung
 
-Wenn eine Tag-Bibliothek asynchron geladen wird, kann das Rendern der Seite abgeschlossen sein, bevor Target einen Inhaltsaustausch durchgeführt hat. Dieses Verhalten kann zum so genannten &quot;Flackern&quot;führen. Dabei wird kurz der Standardinhalt angezeigt, bevor er durch den von Target angegebenen personalisierten Inhalt ersetzt wird. Wenn Sie dieses Flimmern vermeiden möchten, empfiehlt Adobe, unmittelbar vor dem asynchronen Tag-Einbettungscode einen speziellen Codeausschnitt zur Vorab-Ausblendung hinzuzufügen.
+Wenn eine Tag-Bibliothek asynchron geladen wird, kann das Rendern der Seite abgeschlossen sein, bevor Target Standardinhalte durch personalisierte Inhalte ersetzt hat. Dieses Verhalten kann zum so genannten &quot;Flackern&quot;führen. Dabei wird kurz der Standardinhalt angezeigt, bevor er durch den von Target angegebenen personalisierten Inhalt ersetzt wird. Wenn Sie dieses Flimmern vermeiden möchten, empfiehlt Adobe, unmittelbar vor dem asynchronen Tag-Einbettungscode einen speziellen Codeausschnitt zur Vorab-Ausblendung hinzuzufügen.
 
 Dieses Snippet ist bereits auf der Site &quot;Luma&quot;vorhanden, aber schauen wir uns genauer an, um zu verstehen, was dieser Code bewirkt:
 
@@ -181,7 +182,7 @@ Verwenden Sie für diese Anleitung mit der Site &quot;Luma&quot;das Identitätss
 
 ## visuelle Personalisierungsentscheidungen rendern
 
-Zunächst sollten Sie die in den Target- und Tag-Schnittstellen verwendete Terminologie verstehen.
+Entscheidungen zur visuellen Personalisierung beziehen sich auf Erlebnisse, die im Visual Experience Composer von Adobe Target erstellt wurden. Zunächst sollten Sie die in den Target- und Tag-Schnittstellen verwendete Terminologie verstehen:
 
 * **Aktivität**: Ein Satz von Erlebnissen, die auf eine oder mehrere Zielgruppen ausgerichtet sind. Ein einfacher A/B-Test könnte beispielsweise eine Aktivität mit zwei Erlebnissen sein.
 * **Erlebnis**: Eine Reihe von Aktionen, die auf einen oder mehrere Standorte oder Entscheidungsbereiche ausgerichtet sind.
