@@ -3,25 +3,20 @@ title: Einrichten der Zustimmung mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
 
 # Einrichten der Zustimmung mit dem Platform Web SDK
 
-
->[!CAUTION]
->
->Wir gehen davon aus, dass am Dienstag, dem 23. April 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
-
 Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Legen Sie die Zustimmung basierend auf der Interaktion des Besuchers mit einem Banner von einer Consent Management Platform (CMP) fest.
 
 >[!NOTE]
 > 
->Zu Demonstrationszwecken verwendet dieses Tutorial [Klaro](https://heyklaro.com/){target="_blank"} als CMP. Sie können gerne mit Klaro oder dem CMP weitermachen, den Sie mit Ihrer Website verwenden.
+>Zu Demonstrationszwecken verwendet dieses Tutorial [Klaro](https://heyklaro.com/) als CMP. Sie können gerne mit Klaro oder dem CMP weitermachen, den Sie mit Ihrer Website verwenden.
 
 
 ## Lernziele
@@ -69,7 +64,7 @@ Bevor Sie in die Tag-Konfigurationen springen, erfahren Sie mehr über die in di
 >Die Best Practice zur Implementierung einer Consent Management Platform besteht normalerweise darin, den CMP zu laden _before_ Laden Sie Ihren Tag-Manager. Um dieses Tutorial zu erleichtern, laden Sie den CMP _mit_ den Tag-Manager. In dieser Lektion erfahren Sie, wie Sie die Zustimmungsfunktionen im Platform Web SDK verwenden. Sie sollte nicht als Anleitung zur korrekten Konfiguration von Klaro oder anderen CMP verwendet werden.
 
 
-Nachdem Sie mit den Konfigurationen von Klaro fertig sind, erstellen Sie eine Tag-Regel mit den folgenden Konfigurationen:
+Nachdem Sie mit den Konfigurationen von Klaro fertig sind, erstellen Sie Tag-Regeln mit den folgenden Konfigurationen:
 
 * [!UICONTROL Name]: `all pages - library load - Klaro`
 * [!UICONTROL Ereignis]: [!UICONTROL Bibliothek geladen (Seitenanfang)] mit [!UICONTROL Erweiterte Optionen] > [!UICONTROL Bestellung] auf 1 gesetzt
@@ -229,4 +224,4 @@ Weitere Informationen über [!UICONTROL Einverständnis festlegen] Aktion, siehe
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

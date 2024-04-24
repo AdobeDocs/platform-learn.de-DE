@@ -3,23 +3,21 @@ title: Einrichten einer Ereignisweiterleitungs-Eigenschaft
 description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1861'
 ht-degree: 4%
 
 ---
 
 # Einrichten einer Ereignisweiterleitungs-Eigenschaft
 
-
->[!CAUTION]
->
->Wir gehen davon aus, dass am Dienstag, dem 23. April 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
-
 Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden.
 
 Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassung verfügbar ist. Die Ereignisweiterleitung bietet Ihnen die Möglichkeit, Daten direkt vom Adobe Experience Platform-Edge Network an Drittanbieter zu senden, die keine Adobe sind, und nicht an den herkömmlichen Client-seitigen Browser. Erfahren Sie mehr über die Vorteile der Ereignisweiterleitung im [Übersicht über die Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Web SDK und Diagramm für die Ereignisweiterleitung](assets/dc-websdk-eventforwarding.png)
 
 Um die Ereignisweiterleitung in Adobe Experience Platform zu verwenden, müssen Daten zunächst mit einer oder mehreren der folgenden drei Optionen an das Adobe Experience Platform-Edge Network gesendet werden:
 
@@ -56,7 +54,6 @@ Am Ende dieser Lektion können Sie:
 
    * Erstkonfiguration
 
-      * [Berechtigungen konfigurieren](configure-permissions.md)
       * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
       * [Identitäts-Namespace konfigurieren](configure-identities.md)
       * [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -65,7 +62,8 @@ Am Ende dieser Lektion können Sie:
 
       * [Installieren der Web SDK-Erweiterung](install-web-sdk.md)
       * [Erstellen von Datenelementen](create-data-elements.md)
-      * [Tag-Regel erstellen](create-tag-rule.md)
+      * [Erstellen von Identitäten](create-identities.md)
+      * [Erstellen von Tag-Regeln](create-tag-rule.md)
       * [Überprüfen mit dem Adobe Experience Platform-Debugger](validate-with-debugger.md)
 
 
@@ -91,9 +89,9 @@ So konfigurieren Sie Target im Datastream:
 
 1. Navigieren Sie zu [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} Benutzeroberfläche
 1. Wählen Sie im linken Navigationsbereich die Option **[!UICONTROL Datenspeicher]**
-1. Wählen Sie die zuvor erstellte `Luma Web SDK` datastream
+1. Wählen Sie die zuvor erstellte `Luma Web SDK: Development Environment` datastream
 
-   ![Wählen Sie den Datenspeicher des Luma Web SDK aus.](assets/datastream-luma-web-sdk.png)
+   ![Wählen Sie den Datenspeicher des Luma Web SDK aus.](assets/datastream-luma-web-sdk-development.png)
 
 1. Wählen Sie **[!UICONTROL Service hinzufügen]** aus
    ![Hinzufügen eines Dienstes zum Datastream](assets/event-forwarding-datastream-addService.png)
@@ -326,4 +324,4 @@ Herzlichen Glückwunsch! Sie haben die Ereignisweiterleitung konfiguriert!
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

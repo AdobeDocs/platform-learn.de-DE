@@ -3,74 +3,162 @@ title: Erstellen von Datenelementen
 description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1199'
 ht-degree: 2%
 
 ---
 
 # Erstellen von Datenelementen
 
+Erfahren Sie, wie Sie Datenelemente in Tags für Inhalts-, Commerce- und Identitätsdaten in der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html). Füllen Sie dann die Felder in Ihrem XDM-Schema mit dem Datenelementtyp der Platform Web SDK-Erweiterung Variable aus.
 
->[!CAUTION]
->
->Wir gehen davon aus, dass am Dienstag, dem 23. April 2024, wichtige Änderungen an diesem Tutorial veröffentlicht werden. Danach ändern sich viele Übungen und Sie müssen das Tutorial möglicherweise von Anfang an neu starten, um alle Lektionen abzuschließen.
+## Lernziele
 
-Erfahren Sie, wie Sie die wichtigsten Datenelemente erstellen, die zum Erfassen von Daten mit dem Experience Platform Web SDK erforderlich sind. Erfassen Sie sowohl Inhalts- als auch Identitätsdaten auf der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html). Erfahren Sie, wie Sie das zuvor erstellte XDM-Schema zur Datenerfassung mit dem Platform Web SDK mithilfe eines neuen Datenelementtyps namens XDM Object verwenden.
+Am Ende dieser Lektion können Sie:
 
->[!NOTE]
->
-> Zu Demonstrationszwecken bauen die Übungen in dieser Lektion auf dem Beispiel auf, das während der [Schema konfigurieren](configure-schemas.md) Schritt; Erstellen von Beispiel-XDM-Objekten, die angesehene Inhalte und Identitäten von Benutzern auf der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html).
+* Verstehen verschiedener Ansätze zum Zuordnen einer Datenschicht zu XDM
+* Erstellen von Datenelementen zur Datenerfassung
+* Zuordnen von Datenelementen zu einem XDM-Objekt
+
+
+## Voraussetzungen
+
+Sie wissen, was eine Datenschicht ist, und haben die vorherigen Lektionen im Tutorial abgeschlossen:
+
+* [Konfigurieren eines XDM-Schemas](configure-schemas.md)
+* [Identitäts-Namespace konfigurieren](configure-identities.md)
+* [Konfigurieren eines Datenstroms](configure-datastream.md)
+* [In der Tag-Eigenschaft installierte Web SDK-Erweiterung](install-web-sdk.md)
+
 
 >[!IMPORTANT]
 >
 >Die Daten für diese Lektion stammen aus dem `[!UICONTROL digitalData]` Datenschicht auf der Site &quot;Luma&quot;. Um die Datenschicht anzuzeigen, öffnen Sie Ihre Entwicklerkonsole und geben Sie in `[!UICONTROL digitalData]` , um die vollständige verfügbare Datenschicht anzuzeigen.![digitalData-Datenschicht](assets/data-element-data-layer.png)
 
 
-Unabhängig vom Platform Web SDK müssen Sie weiterhin Datenelemente in Ihrer Tag-Eigenschaft erstellen, die Datenerfassungsvariablen Ihrer Website wie einer Datenschicht, einem HTML-Attribut oder anderen zugeordnet sind. Nachdem Sie diese Datenelemente erstellt haben, müssen Sie sie dem XDM-Schema zuordnen, das Sie während der [Schemas konfigurieren](configure-schemas.md) Lektion. Zu diesem Zweck stellt die Platform Web SDK-Erweiterung einen neuen Datenelementtyp namens XDM-Objekt bereit. Daher besteht das Erstellen von Datenelementen aus zwei Aktionen:
+## Datenschichtansätze
 
-1. Zuordnen von Website-Variablen zu Datenelementen und
-1. Zuordnen dieser Datenelemente zu einem XDM-Objekt
+Es gibt mehrere Möglichkeiten, Daten aus Ihrer Datenschicht mithilfe der Tagfunktion von Adobe Experience Platform XDM zuzuordnen. Im Folgenden finden Sie einige Vor- und Nachteile von drei verschiedenen Ansätzen. Bei Bedarf können Ansätze kombiniert werden:
 
-Bei Schritt 1 ordnen Sie Ihre Datenschicht Datenelementen weiterhin auf die aktuelle Weise zu, indem Sie einen der Datenelementtypen der Core-Tag-Erweiterung verwenden. Für Schritt 2 erstellt die Platform Web SDK-Erweiterung eine Reihe neuer Datenelementtypen, die zuvor nicht verfügbar waren:
+1. Implementieren von XDM in der Datenschicht
+1. Zuordnung zu XDM in Tags
+1. Zuordnung zu XDM im Datastream
 
-* Ereigniszusammenführungs-ID
-* Identitätszuordnung
-* XDM-Objekt
-
-Diese Lektion konzentriert sich auf Datenelementtypen von XDM-Objekten und Identitätszuordnungen. Sie erstellen XDM-Objekte, um die Aktivität und den Authentifizierungsstatus von Luma-Besuchern zu erfassen.
-
-## Lernziele
-
-Am Ende dieser Lektion können Sie:
-
-* Erstellen von Datenelementen zum Erfassen von Inhalten und ID-Daten für die Benutzeranmeldung
-* Erstellen eines Identitätszuordnungs-Datenelements
-* Zuordnen von Datenelementen zu einem XDM-Objektdatenelement
+>[!NOTE]
+>
+>Die Beispiele in diesem Tutorial folgen dem Ansatz Zu XDM in Tags zuordnen .
 
 
-## Voraussetzungen
+### Implementieren von XDM in der Datenschicht
 
-Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die folgenden vorherigen Schritte im Tutorial ausgeführt haben
+Bei diesem Ansatz wird das vollständig definierte XDM-Objekt als Struktur für Ihre Datenschicht verwendet. Anschließend ordnen Sie die gesamte Datenschicht einem XDM-Objektdatenelement in Tags zu. Wenn Ihre Implementierung keinen Tag-Manager verwendet, ist dieser Ansatz möglicherweise optimal, da Sie Daten von Ihrer Anwendung direkt mit dem [XDM sendEvent, Befehl](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Wenn Sie Tags verwenden, können Sie ein benutzerdefiniertes Code-Datenelement erstellen, das die gesamte Datenschicht als Pass-Through-JSON-Objekt an das XDM erfasst. Anschließend ordnen Sie die Pass-Through-JSON dem XDM-Objektfeld in der Aktion &quot;Ereignis senden&quot;zu.
 
-* [Berechtigungen konfigurieren](configure-permissions.md)
-* [Konfigurieren eines XDM-Schemas](configure-schemas.md)
-* [Identitäts-Namespace konfigurieren](configure-identities.md)
-* [Konfigurieren eines Datenstroms](configure-datastream.md)
-* [In der Tag-Eigenschaft installierte Web SDK-Erweiterung](install-web-sdk.md)
+Im Folgenden finden Sie ein Beispiel dafür, wie die Datenschicht mit dem Adobe Client-Datenschichtformat aussehen würde:
+
++++XDM im Beispiel einer Datenschicht
+
+```JSON
+window.adobeDataLayer.push({
+"eventType": "web.webPageDetails.pageViews",
+"web":{
+         "webInteraction":{
+            "linkClicks":{
+               "id":"",
+               "value":""
+            },
+            "URL":"",
+            "name":"",
+            "region":"",
+            "type":""
+         },
+         "webPageDetails":{
+            "pageViews":{
+               "id":"",
+               "value":"1"
+            },
+            "URL":"https://luma.enablementadobe.com/",
+            "isErrorPage":"",
+            "isHomePage":"",
+            "name":"luma:home",
+            "server":"enablementadobe.com",
+            "siteSection":"home",
+            "viewName":""
+         },
+         "webReferrer":{
+            "URL":"",
+            "type":""
+         }
+      }
+});
+```
+
++++
+
+Vorteile
+
+* Beseitigt zusätzliche Schritte, die auf Datenschichtvariablen in XDM beschränkt sind
+* Kann schneller bereitgestellt werden, wenn Ihr Entwicklungsteam über das Tagging digitaler Verhaltensweisen verfügt
+
+Nachteile
+
+* Vollständige Abhängigkeit vom Entwicklungsteam und vom Entwicklungszyklus für die Aktualisierung der Daten an XDM
+* Eingeschränkte Flexibilität, da XDM die exakte Payload von der Datenschicht erhält
+* Es können keine integrierten Tags-Funktionen wie Scraping, Persistenz, Funktionen für schnelle Bereitstellungen verwendet werden
+* Die Datenschicht kann nicht für Pixel von Drittanbietern verwendet werden
+* Keine Transformation der Daten zwischen der Datenschicht und XDM
+
+### Zuordnen der Datenschicht in Tags
+
+Dieser Ansatz umfasst die Zuordnung einzelner Datenschichtvariablen ODER Datenschichtobjekte zu Datenelementen in Tags und schließlich zu XDM. Dies ist der traditionelle Ansatz für die Implementierung mithilfe eines Tag-Management-Systems.
+
+#### Vorteile
+
+* Der flexibelste Ansatz, da Sie einzelne Variablen steuern und Daten transformieren können, bevor sie in XDM gelangen
+* Kann Adobe-Tags-Trigger und Scraping-Funktionen verwenden, um Daten an XDM zu übergeben
+* Kann Datenelemente Client-seitigen Drittanbieterpixel zuordnen
+
+#### Nachteile
+
+* Zeit zum Rekonstruieren der Datenschicht als Datenelemente
+
+
+>[!TIP]
+>
+> Google-Datenschicht
+> 
+> Wenn Ihr Unternehmen bereits Google Analytics verwendet und auf Ihrer Website über das herkömmliche Google dataLayer -Objekt verfügt, können Sie die [Google Data Layer-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in Tags. Dadurch können Sie Adobe-Technologie schneller bereitstellen, ohne Unterstützung von Ihrem IT-Team anfordern zu müssen. Die Zuordnung der Google-Datenschicht zu XDM würde dieselben Schritte wie oben ausführen.
+
+### Zuordnung zu XDM im Datastream
+
+Bei diesem Ansatz werden Funktionen verwendet, die in die Datastream-Konfiguration integriert sind: [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) und überspringt die Zuordnung von Datenschichtvariablen zu XDM in Tags.
+
+#### Vorteile
+
+* Flexibel, da Sie einzelne Variablen XDM zuordnen können
+* Fähigkeit [Neue Werte berechnen](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=de) oder [Datentypen transformieren](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) aus einer Datenschicht, bevor sie an XDM gesendet wird
+* Nutzen Sie eine [Zuordnungs-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) , um Felder in Ihren Quelldaten mit einer Point-and-Click-Benutzeroberfläche XDM zuzuordnen.
+
+#### Nachteile
+
+* Datenschichtvariablen können nicht als Datenelemente für clientseitige Drittanbieterpixel verwendet werden, können aber mit der Ereignisweiterleitung verwendet werden
+* Die Scraping-Funktion der Tags-Funktion von Adobe Experience Platform kann nicht verwendet werden
+* Die Wartungskomplexität erhöht sich bei der Zuordnung der Datenschicht sowohl in Tags als auch im Datenspeicher.
+
+
 
 >[!IMPORTANT]
 >
->Die [Experience Cloud ID-Diensterweiterung](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) ist bei der Implementierung des Adobe Experience Platform Web SDK nicht erforderlich, da die ID-Dienst-Funktion in das Platform Web SDK integriert ist.
+>Wie bereits erwähnt, folgen die Beispiele in diesem Tutorial dem Ansatz Zu XDM in Tags zuordnen .
 
 ## Erstellen von Datenelementen zum Erfassen der Datenschicht
 
-Bevor Sie mit der Erstellung des XDM-Objekts beginnen, erstellen Sie den folgenden Satz von Datenelementen, die dem [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Datenschicht:
+Bevor Sie das XDM-Objekt erstellen, erstellen Sie den folgenden Satz von Datenelementen für die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Datenschicht:
 
 1. Navigieren Sie zu **[!UICONTROL Datenelemente]** und wählen **[!UICONTROL Datenelement hinzufügen]** (oder **[!UICONTROL Neues Datenelement erstellen]** wenn in der Tag-Eigenschaft keine Datenelemente vorhanden sind)
 
-   ![Datenelement erstellen](assets/data-element-create.jpg)
+   ![Datenelement erstellen](assets/data-element-create.png)
 
 1. Benennen Sie das Datenelement `page.pageInfo.pageName`.
 1. Verwenden Sie die **[!UICONTROL JavaScript-Variable]** **[!UICONTROL Datenelementtyp]** auf einen Wert in der Datenschicht von Luma verweisen: `digitalData.page.pageInfo.pageName`
@@ -81,9 +169,9 @@ Bevor Sie mit der Erstellung des XDM-Objekts beginnen, erstellen Sie den folgend
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
-   ![Datenelement &quot;Seitenname&quot;](assets/data-element-pageName.jpg)
+   ![Datenelement &quot;Seitenname&quot;](assets/data-element-pageName.png)
 
-Führen Sie dieselben Schritte aus, um diese vier zusätzlichen Datenelemente zu erstellen:
+Erstellen Sie diese zusätzlichen Datenelemente wie folgt:
 
 * **`page.pageInfo.server`**  zugeordnet zu
   `digitalData.page.pageInfo.server`
@@ -97,138 +185,117 @@ Führen Sie dieselben Schritte aus, um diese vier zusätzlichen Datenelemente zu
 * **`user.profile.attributes.loggedIn`** zugeordnet zu
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`cart.orderId`** zugeordnet zu `digitalData.cart.orderId` (Sie verwenden dies während der [Einrichten von Analytics](setup-analytics.md) Lektion)
+* **`product.productInfo.sku`** zugeordnet zu `digitalData.product.0.productInfo.sku`
+<!--digitalData.product.0.productInfo.sku
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.sku;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.productInfo.title`** zugeordnet zu `digitalData.product.0.productInfo.title`
+* **`cart.orderId`** zugeordnet zu `digitalData.cart.orderId`
+<!--
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.title;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.category`** mithilfe der **[!UICONTROL Benutzerspezifischer Code]** **[!UICONTROL Datenelementtyp]** und den folgenden benutzerspezifischen Code, um die Site-URL für die Kategorie der obersten Ebene zu analysieren:
+
+  ```javascript
+  var cat = location.pathname.split(/[/.]+/);
+  if (cat[5] == 'products') {
+     return (cat[6]);
+  } else if (cat[5] != 'html') { 
+     return (cat[5]);
+  }
+  ```
+
+* **`cart.productInfo`** unter Verwendung des folgenden benutzerspezifischen Codes:
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  cartItem.push({
+  "SKU": item.sku
+  });
+  });
+  return cartItem; 
+  ```
+
+* **`cart.productInfo.purchase`** unter Verwendung des folgenden benutzerspezifischen Codes:
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  var qty = parseInt(item.qty);
+  var price = parseInt(item.price);
+  cartItem.push({
+  "SKU": item.sku,
+  "quantity": qty,
+  "priceTotal": price
+  });
+  });
+  return cartItem; 
+  ```
+
 
 
 >[!CAUTION]
 >
 >Die [!UICONTROL JavaScript-Variable] Datenelementtyp behandelt Array-Referenzen als Punkte anstelle von Klammern. Referenzieren Sie daher das Datenelement &quot;Benutzername&quot;als `digitalData.user[0].profile[0].attributes.username` **funktioniert nicht**.
 
-## Identitätszuordnungs-Datenelement erstellen
+## Datenelement &quot;Variable&quot;erstellen
 
-Als Nächstes können Sie das Datenelement &quot;Identity Map&quot;erstellen:
+Nachdem Sie die Datenelemente erstellt haben, ordnen Sie sie dem XDM mithilfe der **[!UICONTROL Variable]** -Datenelement, das das für das XDM-Objekt verwendete Schema definiert. Dieses Objekt sollte mit dem XDM-Schema übereinstimmen, das Sie während der [Schema konfigurieren](configure-schemas.md) Lektion.
 
-1. Navigieren Sie zu **[!UICONTROL Datenelemente]** und wählen **[!UICONTROL Datenelement hinzufügen]**
+So erstellen Sie das Datenelement Variable :
 
-1. **[!UICONTROL Name]** das Datenelement `identityMap.loginID`
-
-1. Als **[!UICONTROL Erweiterung]** auswählen `Adobe Experience Platform Web SDK`
-
-1. Als **[!UICONTROL Datenelementtyp]** auswählen `Identity map`
-
-1. Dadurch wird ein Bildschirmbereich rechts neben dem **[!UICONTROL Datenerfassungsoberfläche]** für die Konfiguration der Identität:
-
-   ![Datenerfassungsoberfläche](assets/identity-identityMap-setup.png)
-
-1. Als  **[!UICONTROL Namespace]**, wählen Sie die `Luma CRM Id` Namespace, den Sie zuvor in der [Identitäten konfigurieren](configure-identities.md) Lektion.
-
-   >[!NOTE]
-   >
-   >    Wenn Sie Ihre `Luma CRM Id` -Namespace verwenden, überprüfen Sie, ob Sie ihn auch in Ihrer standardmäßigen Produktions-Sandbox erstellt haben. Derzeit werden im Dropdown-Menü Namespace nur Namespaces angezeigt, die in der standardmäßigen Produktions-Sandbox erstellt wurden.
-
-1. Nach dem **[!UICONTROL Namespace]** ausgewählt ist, muss eine ID festgelegt werden. Wählen Sie die `user.profile.attributes.username` -Datenelement, das zuvor in dieser Lektion erstellt wurde und eine ID erfasst, wenn Benutzer bei der Site &quot;Luma&quot;angemeldet sind.
-
-<!--  >[!TIP]
-   >
-   >You can verify the **[!UICONTROL Luma CRM ID]** is collected in a data element on the web property by going to the [Luma Demo site](https://luma.enablementadobe.com/content/luma/us/en.html), logging in, [switching the tag environment](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) to your own, and typing `_satellite.getVar("user.profile.attributes.username")` in the web browser developer console.
-   >
-   >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
--->
-
-1. Als **[!UICONTROL Authentifizierter Status]** auswählen **[!UICONTROL Authentifiziert]**
-1. Auswählen **[!UICONTROL Primär]**
-
-1. Wählen Sie **[!UICONTROL Speichern]** aus
-
-   ![Datenerfassungsoberfläche](assets/identity-id-namespace.png)
-
->[!TIP]
->
-> Adobe empfiehlt, Identitäten zu senden, die eine Person repräsentieren, z. B. `Luma CRM Id`als [!UICONTROL primary] Identität.
->
-> Wenn die Identitätszuordnung die Personenkennung enthält (z. B. `Luma CRM Id`), wird die Personen-ID zur [!UICONTROL primary] Identität. Andernfalls `ECID` wird [!UICONTROL primary] Identität.
-
-
-
-
-
-<!--
-1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
-   
-   
-   ```
-   _satellite.getVar('identityMap.loginID')
-   ```  
-
-   ![Data Collection interface](assets/identity-consoleIdentityDataElement.png)
-   
-   >[!NOTE]
-   >
-   >ECID identifier will NOT populate in the Data Element, as this is configured already with Platform Web SDK.   
--->
-
-## Zuordnen von Datenelementen zu XDM-Objekten
-
-Alle von Ihnen erstellten Datenelemente müssen einem XDM-Objekt zugeordnet sein. Dieses Objekt sollte mit dem XDM-Schema übereinstimmen, das Sie während der [Schema konfigurieren](configure-schemas.md) Lektion.
-
-Es gibt verschiedene Möglichkeiten, Datenelemente XDM-Objektfeldern zuzuordnen. Sie können einzelne Datenelemente einzelnen XDM-Feldern zuordnen oder Datenelemente ganzen XDM-Objekten zuordnen, sofern Ihr Datenelement mit dem exakten Schlüssel-Wert-Paar-Schema im XDM-Objekt übereinstimmt. In dieser Lektion erfassen Sie Inhaltsdaten durch Zuordnung zu einzelnen Feldern. Sie werden lernen, [Zuordnen eines Datenelements zu einem ganzen XDM-Objekt](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) im [Einrichten von Analytics](setup-analytics.md) Lektion.
-
-Erstellen Sie ein XDM-Objekt zum Erfassen von Inhaltsdaten:
-
-1. Wählen Sie im linken Navigationsbereich die Option **[!UICONTROL Datenelemente]**
 1. Auswählen **[!UICONTROL Datenelement hinzufügen]**
-1. **[!UICONTROL Name]** das Datenelement **`xdm.content`**
-1. Als **[!UICONTROL Erweiterung]** select `Adobe Experience Platform Web SDK`
-1. Als **[!UICONTROL Datenelementtyp]** select `XDM object`
-1. Plattform auswählen **[!UICONTROL Sandbox]** in dem Sie das XDM-Schema während der [Konfigurieren eines XDM-Schemas](configure-schemas.md) Lektion in diesem Beispiel `DEVELOPMENT Mobile and Web SDK Courses`
-1. Als **[!UICONTROL Schema]**, wählen Sie `Luma Web Event Data` schema:
-
-   ![XDM-Objekt](assets/data-element-xdm.content-fields.png)
-
-   >[!NOTE]
-   >
-   >Die Sandbox entspricht der Experience Platform-Sandbox, in der Sie das Schema erstellt haben. In Ihrer Experience Platform-Instanz können mehrere Sandboxes verfügbar sein. Wählen Sie daher die richtige Sandbox aus. Arbeiten Sie immer zuerst in der Entwicklung, dann in der Produktion.
-
-1. Scrollen Sie nach unten, bis Sie zum **`web`** Objekt
-1. Auswahl zum Öffnen
-
-   ![Webobjekt](assets/data-element-pageviews-xdm-object.png)
-
-
-1. Ordnen Sie die folgenden Web-XDM-Variablen Datenelementen zu
-
-   * **`web.webPageDetials.name`** in `%page.pageInfo.pageName%`
-   * **`web.webPageDetials.server`** in `%page.pageInfo.server%`
-   * **`web.webPageDetials.siteSection`** in `%page.pageInfo.hierarchie1%`
-
-   ![XDM-Objekt](assets/data-element-xdm.content.png)
-
-1. Suchen Sie als Nächstes die `identityMap` -Objekt im Schema und wählen Sie es aus
-
-1. Zuordnung zu `identityMap.loginID` Datenelement
-
+1. Ihr Datenelement benennen `xdm.variable.content`. Es wird empfohlen, das XDM-spezifische Datenelement mit &quot;xdm&quot;zu versehen, um Ihre Tag-Eigenschaft besser zu organisieren
+1. Wählen Sie die **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Erweiterung]**
+1. Wählen Sie die **[!UICONTROL Variable]** als **[!UICONTROL Datenelementtyp]**
+1. Auswählen der entsprechenden Experience Platform **[!UICONTROL Sandbox]**
+1. Wählen Sie die entsprechende **[!UICONTROL Schema]** in diesem Fall `Luma Web Event Data`
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
-   ![Datenerfassungsoberfläche](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
-
-
+   ![Variablendatenelement](assets/analytics-tags-data-element-xdm-variable.png)
 
 
 Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt werden:
 
-| Datenelemente der CORE-Erweiterung | Platform Web SDK-Datenelemente |
+| Datenelemente der Haupterweiterung | Datenelemente der Platform Web SDK-Erweiterung |
 -----------------------------|-------------------------------
-| `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.content` |
+| `cart.orderId` | `xdm.variable.content` |
+| `cart.productInfo` | |
+| `cart.productInfo.purchase` | |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-Wenn diese Datenelemente vorhanden sind, können Sie mit dem Senden von Daten an Platform Edge Network über das XDM-Objekt beginnen, indem Sie eine Regel in Tags erstellen.
+>[!TIP]
+>
+>In Zukunft [Erstellen von Tag-Regeln](create-tag-rule.md) Lektion: Sie lernen, wie die **[!UICONTROL Variable]** Mit dem Datenelement können Sie mehrere Regeln in Tags stapeln, indem Sie die **[!UICONTROL Aktionstyp der Variablen aktualisieren]**.
 
-[Weiter: ](create-tag-rule.md)
+Wenn diese Datenelemente vorhanden sind, können Sie mit dem Senden von Daten an Platform Edge Network mit einer Tagregel beginnen. Erfahren Sie zunächst, wie Sie Identitäten mit dem Web SDK erfassen.
+
+[Weiter: ](create-identities.md)
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback oder Vorschläge zu künftigen Inhalten teilen möchten, teilen Sie diese hier mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
