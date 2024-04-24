@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: b3c5144d69f6be03ac05921513fd518fe42ca68c
+source-git-commit: 2dd47879db018710ba2883ea49cc483901359907
 workflow-type: tm+mt
-source-wordcount: '2716'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 # Journey Optimizer-Webkanal einrichten
 
-Erfahren Sie, wie Sie den Journey Optimizer-Webkanal mit dem Platform Web SDK implementieren. In diesem Handbuch werden die grundlegenden Webkanal-Voraussetzungen, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
+Erfahren Sie, wie Sie die Journey Optimizer implementieren [Webkanal](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Verwenden des Platform Web SDK. In dieser Lektion werden die grundlegenden Voraussetzungen für Webkanäle, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
 
-Anhand dieses Handbuchs können Journey Optimizer-Benutzer mithilfe von Journey Optimizer Web Designer effektiv den Webkanal für eine erweiterte Online-Personalisierung anwenden.
+In dieser Lektion werden Journey Optimizer-Benutzer so konfiguriert, dass sie den Webkanal für eine erweiterte Online-Personalisierung mit dem Journey Optimizer-Webdesigner effektiv anwenden können.
 
 ![Web SDK und Adobe Analytics-Diagramm](assets/dc-websdk-ajo.png)
 
@@ -29,7 +29,7 @@ Am Ende dieser Lektion können Sie:
 * Machen Sie sich mit dem Erstellen einer Webkanal-Kampagne von Anfang bis Ende vertraut, indem Sie das Anwendungsbeispiel &quot;Prämien für Treue zu Luma&quot;verwenden.
 * Konfigurieren Sie die Kampagneneigenschaften, Aktionen und Zeitpläne auf der Benutzeroberfläche.
 * Machen Sie sich mit der Funktionalität und den Vorteilen der Adobe Experience Cloud Visual Editing Helper-Erweiterung vertraut.
-* Erfahren Sie, wie Sie mit Web Designer Webseiteninhalte bearbeiten, einschließlich Bildern, Kopfzeilen und anderen Elementen.
+* Erfahren Sie, wie Sie mit dem Webdesigner Webseiteninhalte bearbeiten, einschließlich Bildern, Kopfzeilen und anderen Elementen.
 * Erfahren Sie, wie Sie mithilfe der Komponente Angebotsentscheidung Angebote in eine Webseite einfügen.
 * Machen Sie sich mit Best Practices vertraut, um die Qualität und den Erfolg einer Webkanalkampagne sicherzustellen.
 
@@ -37,23 +37,32 @@ Am Ende dieser Lektion können Sie:
 
 Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 
+* Schließen Sie alle Lektionen für die Erstkonfiguration des Platform Web SDK ab, einschließlich der Einrichtung von Datenelementen und Regeln.
 * Stellen Sie sicher, dass die Adobe Experience Platform Web SDK-Tag-Erweiterungsversion 2.16 oder höher ist.
 * Wenn Sie den Journey Optimizer-Webdesigner verwenden, um Ihr Webkanalerlebnis zu erstellen, stellen Sie sicher, dass Sie entweder die Google Chrome- oder Microsoft® Edge-Browser verwenden.
-* Stellen Sie außerdem sicher, dass Sie die Browsererweiterung Adobe Experience Cloud Visual Editing Helper heruntergeladen haben. Aktivieren Sie die Visual Editing Helper-Browsererweiterung in der Browser-Symbolleiste, bevor Sie das Webkanalerlebnis erstellen.
-   * Im Journey Optimizer-Webdesigner können bestimmte Websites aus einem der folgenden Gründe nicht zuverlässig geöffnet werden:
-      1. Die Website hat strenge Sicherheitsrichtlinien.
-      1. Die Website ist in einen iframe eingebettet.
-      1. Die QA- oder Staging-Site des Kunden ist nicht extern zugänglich (es handelt sich um eine interne Site).
+* Vergewissern Sie sich außerdem, dass Sie die [Adobe Experience Cloud Visual Editing Helper-Browsererweiterung](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 * Stellen Sie sicher, dass in Ihrem Browser Drittanbieter-Cookies zulässig sind. Es kann erforderlich sein, auch alle Anzeigensperren in Ihrem Browser zu deaktivieren.
-* Beim Erstellen von Web-Erlebnissen und Einschließen von Inhalten aus der Adobe Experience Manager Assets Essentials-Bibliothek muss die Subdomain für die Veröffentlichung dieses Inhalts konfiguriert werden. [Weitere Informationen](https://experienceleague.adobe.com/docs/journey-optimizer/using/web/web-delegated-subdomains.html?lang=en).
+
+  >[!CAUTION]
+  >
+  > Im Journey Optimizer-Webdesigner können bestimmte Websites aus einem der folgenden Gründe nicht zuverlässig geöffnet werden:
+  > 
+  > 1. Die Website hat strenge Sicherheitsrichtlinien.
+  > 1. Die Website ist in einen iframe eingebettet.
+  > 1. Die QA- oder Staging-Site des Kunden ist nicht extern zugänglich (es handelt sich um eine interne Site).
+
+* Beim Erstellen von Web-Erlebnissen und Einschließen von Inhalten aus der Adobe Experience Manager Assets Essentials-Bibliothek ist es erforderlich, [Subdomain für die Veröffentlichung dieses Inhalts konfigurieren](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
 * Stellen Sie bei Verwendung der Inhaltsexperimentierungsfunktion sicher, dass Ihr Webdatensatz auch in Ihrer Berichtskonfiguration enthalten ist.
 * Derzeit werden zwei Arten von Implementierungen unterstützt, um die Erstellung und Bereitstellung von Webkanalkampagnen in Ihren Webeigenschaften zu ermöglichen:
    * Nur Client-seitig: Um Ihre Website zu ändern, müssen Sie das Adobe Experience Platform Web SDK implementieren.
    * Hybridmodus: Sie können die Platform Edge Network Server-API verwenden, um eine serverseitige Personalisierung anzufordern. Die Antwort von der API wird dann dem Adobe Experience Platform Web SDK zur Client-seitigen Wiedergabe von Änderungen bereitgestellt. Weitere Informationen finden Sie in der Dokumentation zur Adobe Experience Platform Edge Network Server API . Weitere Details und Implementierungsbeispiele für den Hybridmodus finden Sie in diesem Blogpost.
 
->[!NOTE]
->
->Die serverseitige Implementierung wird derzeit nicht unterstützt.
+  >[!NOTE]
+  >
+  >Die serverseitige Implementierung wird derzeit nicht unterstützt.
+
+
+
 
 ## Terminologie
 
@@ -66,16 +75,16 @@ Zunächst sollten Sie die in Webkanalkampagnen verwendete Terminologie verstehen
 * **Datastream**: Eine Konfiguration innerhalb des Adobe Experience Platform-Dienstes, die sicherstellt, dass Webkanalerlebnisse bereitgestellt werden können.
 * **Zusammenführungsrichtlinie**: Eine Konfiguration, die die genaue Aktivierung und Veröffentlichung eingehender Kampagnen sicherstellt.
 * **Zielgruppe**: Ein bestimmtes Segment von Benutzern oder Site-Besuchern, die bestimmte Kriterien erfüllen.
-* **Web Designer**: Eine Benutzeroberfläche oder ein Tool, die bei der visuellen Bearbeitung und Gestaltung von Web-Erlebnissen hilft, ohne tief in den Code einzutauchen.
-* **Ausdruckseditor**: Ein Tool im Web Designer, mit dem Benutzer Web-Inhalten Personalisierungen hinzufügen können, die möglicherweise auf Datenattributen oder anderen Kriterien basieren.
-* **Komponente für Angebotsentscheidungen**: Eine Komponente im Web Designer, die bei der Entscheidung unterstützt, welches Angebot für die Anzeige an einen bestimmten Besucher basierend auf der Entscheidungsverwaltung am besten geeignet ist.
-* **Inhaltstest**: Eine Methode zum Testen verschiedener Inhaltsvarianten, um herauszufinden, welche die beste Leistung im Hinblick auf die gewünschte Metrik erzielt, z. B. eingehende Klicks.
+* **Webdesigner**: Eine Benutzeroberfläche oder ein Tool, die bei der visuellen Bearbeitung und Gestaltung von Web-Erlebnissen hilft, ohne tief in den Code einzutauchen.
+* **Ausdruckseditor**: Ein Tool im Webdesigner, mit dem Benutzer Webinhalten Personalisierungen hinzufügen können, die möglicherweise auf Datenattributen oder anderen Kriterien basieren.
+* **Komponente für Angebotsentscheidungen**: Eine Komponente im Web-Designer, die bei der Entscheidung unterstützt, welches Angebot basierend auf der Entscheidungsverwaltung für einen bestimmten Besucher am besten geeignet ist.
+* **Inhaltsexperiment**: Eine Methode zum Testen verschiedener Inhaltsvarianten, um herauszufinden, welche die beste Leistung im Hinblick auf die gewünschte Metrik erzielt, z. B. eingehende Klicks.
 * **Behandlung**: Im Rahmen von Inhaltsprüfungen bezieht sich eine Behandlung auf eine bestimmte Inhaltsvariante, die mit einer anderen getestet wird.
 * **Simulation**: Ein Vorschaumechanismus zur Visualisierung des Webkanalerlebnisses, bevor es für Live-Zielgruppen aktiviert wird.
 
 ## Konfigurieren des Datenspeichers
 
-Stellen Sie sicher, dass im Adobe Experience Platform-Dienst ein Datastream definiert ist und dass die Option Adobe Journey Optimizer aktiviert ist. Dies muss konfiguriert werden, bevor ein Webkanal-Erlebnis vom Platform Web SDK bereitgestellt werden kann.
+Sie haben den Adobe Experience Platform-Dienst bereits zu Ihrem Datastream hinzugefügt. Jetzt müssen Sie die Adobe Journey Optimizer-Option aktivieren, damit Sie Webkanalerlebnisse bereitstellen können.
 
 So konfigurieren Sie Adobe Journey Optimizer im Datastream:
 
@@ -95,7 +104,7 @@ So konfigurieren Sie Adobe Journey Optimizer im Datastream:
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Dadurch wird sichergestellt, dass eingehende Ereignisse für Journey Optimizer vom Adobe Experience Platform Edge ordnungsgemäß verarbeitet werden.
+Dadurch wird sichergestellt, dass eingehende Ereignisse für Journey Optimizer vom Adobe Experience Platform-Edge Network ordnungsgemäß verarbeitet werden.
 
 ## Zusammenführungsrichtlinie konfigurieren
 
@@ -105,7 +114,7 @@ So konfigurieren Sie die Option in der Zusammenführungsrichtlinie:
 
 1. Navigieren Sie zu **[!UICONTROL Kunde]** > **[!UICONTROL Profile]** -Seite in der Experience Platform- oder Journey Optimizer-Benutzeroberfläche.
 1. Wählen Sie die **[!UICONTROL Zusammenführungsrichtlinien]** Registerkarte.
-1. Wählen Sie Ihre Richtlinie aus und schalten Sie die **[!UICONTROL Richtlinie zur aktiven Zusammenführung auf Edge]** -Option innerhalb der **[!UICONTROL Konfigurieren]** Schritt.
+1. Wählen Sie Ihre Richtlinie aus (in der Regel empfiehlt es sich, die [!UICONTROL Standard-Zeitbasiert] ) und aktivieren Sie die **[!UICONTROL Richtlinie zur aktiven Zusammenführung auf Edge]** -Option innerhalb der **[!UICONTROL Konfigurieren]** Schritt.
 
    ![Zusammenführungsrichtlinie umschalten](assets/web-channel-active-on-edge-merge-policy.png)
 
@@ -113,32 +122,31 @@ So konfigurieren Sie die Option in der Zusammenführungsrichtlinie:
 
 Um Inhaltsexperimente in Webkanalkampagnen zu verwenden, müssen Sie sicherstellen, dass der verwendete Webdatensatz auch in Ihrer Berichtskonfiguration enthalten ist. Das Journey Optimizer-Berichterstattungssystem verwendet den Datensatz schreibgeschützt, um native Inhaltsexperimentierungsberichte auszufüllen.
 
-[Das Hinzufügen von Datensätzen für Inhaltsexperimentberichte wird in diesem Abschnitt beschrieben.](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=en#add-datasets).
+[Das Hinzufügen von Datensätzen für Inhaltsexperimentberichte wird in diesem Abschnitt beschrieben.](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration#add-datasets).
 
 ## Nutzungsszenario - Überblick über Treuebelohnungen
 
 In dieser Lektion wird ein Anwendungsbeispiel für Treuebelohnungen verwendet, um die Implementierung eines Webkanalerlebnisses mit dem Web SDK detailliert zu beschreiben.
 
-In diesem Anwendungsbeispiel wird veranschaulicht, wie Journey Optimizer mithilfe der Journey Optimizer-Kampagnen und des Web-Designers dazu beitragen kann, Ihren Kunden die besten eingehenden Erlebnisse bereitzustellen.
+In diesem Anwendungsbeispiel wird erläutert, wie Journey Optimizer mithilfe von Journey Optimizer-Kampagnen und Webdesigner dazu beitragen kann, die besten eingehenden Erlebnisse für Ihre Kunden bereitzustellen.
 
->[!NOTE]
->
->Da dieses Tutorial auf Implementierer ausgerichtet ist, ist zu beachten, dass diese Lektion umfangreiche Arbeit an der Benutzeroberfläche in Journey Optimizer erfordert. Während solche Aufgaben in der Regel von Marketing-Experten verarbeitet werden, können Implementierer Einblicke in den Prozess erhalten, selbst wenn sie nicht für die Erstellung von Webkanal-Kampagnen am Ende verantwortlich sind.
+Da dieses Tutorial auf Implementierer ausgerichtet ist, ist zu beachten, dass diese Lektion umfangreiche Arbeit an der Benutzeroberfläche in Journey Optimizer erfordert. Während solche Aufgaben normalerweise von Marketing-Experten verarbeitet werden, können Implementierer Einblicke in den Prozess erhalten, selbst wenn sie normalerweise nicht für die Erstellung von Webkanal-Kampagnen verantwortlich sind.
 
 ### Erstellen eines Loyalitätsschemas und Erfassen von Beispieldaten
 
-Wenn Web SDK-Daten in Adobe Experience Platform erfasst werden, können sie durch andere Datenquellen angereichert werden, die Sie in Platform erfasst haben. Wenn sich ein Benutzer beispielsweise bei der Site &quot;Luma&quot;anmeldet, wird die Variable `lumaCrmId` wird an Platform gesendet, die eine Identität im CRM-System von Luma darstellt. Ein Identitätsdiagramm wird in Experience Platform erstellt und alle anderen profilaktivierten Datensätze können potenziell zusammengeführt werden, um Echtzeit-Kundenprofile zu erstellen. Wir erstellen in Adobe Experience Platform schnell einen weiteren Datensatz mit Beispielloyalitätsdaten, damit wir zeigen können, wie Echtzeit-Kundenprofile in Journey Optimizer-Webkampagnen verwendet werden können. Da Sie bereits ähnliche Übungen durchgeführt haben, werden die Anweisungen kurz sein.
+Wenn Web SDK-Daten in Adobe Experience Platform erfasst werden, können sie durch andere Datenquellen angereichert werden, die Sie in Platform erfasst haben. Wenn sich ein Benutzer beispielsweise bei der Site &quot;Luma&quot;anmeldet, wird ein Identitätsdiagramm in Experience Platform erstellt und alle anderen profilaktivierten Datensätze können möglicherweise zusammengeführt werden, um Echtzeit-Kundenprofile zu erstellen. Um dies in Aktion zu sehen, erstellen Sie schnell einen weiteren Datensatz in Adobe Experience Platform mit Beispielloyalitätsdaten, damit Sie Echtzeit-Kundenprofile in Journey Optimizer-Webkampagnen verwenden können. Da Sie bereits ähnliche Übungen durchgeführt haben, werden die Anweisungen kurz sein.
 
-Erstellen des Schemas:
+Erstellen Sie das Treueschema:
 
 1. Erstellen eines neuen Schemas
 1. Auswählen **[!UICONTROL Individuelles Profil]** als [!UICONTROL Basisklasse]
 1. Benennen Sie das Schema. `Luma Loyalty Schema`
-1. Wählen Sie die `personID` Feld und Markierung ist als [!UICONTROL Identität] und [!UICONTROL Primäre Identität] mithilfe der `Luma CRM Id` [!UICONTROL Identitäts-Namespace].
 1. Fügen Sie die [!UICONTROL Treuedetails] Feldergruppe
+1. Fügen Sie die [!UICONTROL Demografische Details] Feldergruppe
+1. Wählen Sie die `Person ID` und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre Identität] mithilfe der `Luma CRM Id` [!UICONTROL Identitäts-Namespace].
 1. Aktivieren des Schemas für [!UICONTROL Profil]
 
-SCREENSHOT DES SCHEMAS
+   ![Treueschema](assets/web-channel-loyalty-schema.png)
 
 So erstellen Sie den Datensatz und erfassen die Beispieldaten:
 
@@ -149,13 +157,41 @@ So erstellen Sie den Datensatz und erfassen die Beispieldaten:
 1. Ziehen Sie die Datei per Drag-and-Drop in Ihren Datensatz
 1. Überprüfen Sie, ob die Daten erfolgreich erfasst wurden.
 
-BILDSCHIRM DES DATENSATZES UND BESTÄTIGUNG
+   ![Treueschema](assets/web-channel-loyalty-dataset.png)
+
+### Erstellen einer Zielgruppe
+
+Zielgruppen gruppieren Profile um allgemeine Eigenschaften. Erstellen Sie eine schnelle Zielgruppe, die Sie in Ihrer Web-Kampagne verwenden können:
+
+1. Navigieren Sie in der Experience Platform-Benutzeroberfläche zu **[!UICONTROL Zielgruppen]** in der linken Navigation
+1. Auswählen **[!UICONTROL Erstellen einer Zielgruppe]**
+1. Auswählen **[!UICONTROL Regel erstellen]**
+1. Wählen Sie **[!UICONTROL Erstellen]** aus
+
+   ![Erstellen einer Zielgruppe](assets/web-campaign-create-audience.png)
+
+1. Auswählen **[!UICONTROL Attribute]**
+1. Suchen Sie die **[!UICONTROL Treue]** > **[!UICONTROL Ebene]** und ziehen Sie es auf das **[!UICONTROL Attribute]** Abschnitt
+1. Definieren Sie die Zielgruppe als Benutzer, deren `tier` is `gold`
+1. Benennen der Zielgruppe `Luma Loyalty Rewards – Gold Status`
+1. Auswählen **[!UICONTROL Edge]** als **[!UICONTROL Auswertungsmethode]**
+1. Wählen Sie **[!UICONTROL Speichern]** aus
+
+   ![Audience festlegen](assets/web-campaign-define-audience.png)
+
+Da es sich um eine sehr einfache Zielgruppe handelt, können wir die Edge-Auswertungsmethode verwenden. Edge-Zielgruppen werden am Edge-Rand ausgewertet. In der gleichen Anfrage des Web SDK an Platform Edge Network können wir die Zielgruppendefinition auswerten und sofort bestätigen, ob sich der Benutzer qualifiziert.
 
 ### Kampagne &quot;Treuebelohnungen erstellen&quot;
 
-Nachdem wir nun unsere Beispielloyalitätsdaten erfasst haben, können wir die Webkanalkampagne &quot;Loyalty Rewards&quot;in Adobe Journey Optimizer erstellen.
+Nachdem Sie nun unsere Beispielloyalitätsdaten erfasst und unser Segment erstellt haben, erstellen Sie die Webkanalkampagne &quot;Treuebelohnungen&quot;in Adobe Journey Optimizer.
 
 So erstellen Sie die Beispielkampagne:
+
+1. Öffnen Sie die [Journey Optimizer](https://experience.adobe.com/journey-optimizer/home){target="_blank"} Benutzeroberfläche
+
+   >[!NOTE]
+   >
+   > Schema, Datensätze und Zielgruppen können auch in der Journey Optimizer-Oberfläche erstellt werden, da es sich um allgemeine Experience Platform-Konstrukte handelt.
 
 1. Navigieren Sie zu **[!UICONTROL Journey-Management]** > **[!UICONTROL Kampagnen]** in der linken Navigation
 1. Klicks **[!UICONTROL Kampagne erstellen]** oben rechts.
@@ -165,17 +201,17 @@ So erstellen Sie die Beispielkampagne:
 
 1. Im **[!UICONTROL Aktionen]** wählen Sie die **[!UICONTROL Webkanal]**. Als  **[!UICONTROL Weboberfläche]** auswählen **[!UICONTROL Seiten-URL]**.
 
->[!NOTE]
->
->Eine Weboberfläche bezieht sich auf eine Webeigenschaft, die durch eine URL identifiziert wird, in der Inhalte bereitgestellt werden. Sie kann einer einzelnen Seiten-URL entsprechen oder mehrere Seiten umfassen, sodass Sie Änderungen auf eine oder mehrere Webseiten anwenden können.
+   >[!NOTE]
+   >
+   >Eine Weboberfläche bezieht sich auf eine Webeigenschaft, die durch eine URL identifiziert wird, in der Inhalte bereitgestellt werden. Sie kann einer einzelnen Seiten-URL entsprechen oder mehrere Seiten umfassen, sodass Sie Änderungen auf eine oder mehrere Webseiten anwenden können.
 
-Wählen Sie die **[!UICONTROL Seiten-URL]** Weboberflächen-Option, um das Erlebnis auf einer Seite für diese Kampagne bereitzustellen. Geben Sie die URL für die Seite &quot;Luma&quot;ein.
+1. Wählen Sie die **[!UICONTROL Seiten-URL]** Weboberflächen-Option, um das Erlebnis auf einer Seite für diese Kampagne bereitzustellen. Geben Sie die URL für die Seite &quot;Luma&quot;ein, `https://luma.enablementadobe.com/content/luma/us/en.html`
 
 1. Nachdem die Weboberfläche definiert wurde, wählen Sie **[!UICONTROL Erstellen]**.
 
    ![Weboberfläche auswählen](assets/web-channel-web-surface.png)
 
-1. Fügen Sie nun einige zusätzliche Details zur neuen Webkanalkampagne hinzu. Benennen Sie zuerst die Kampagne. Aufrufen `Luma Loyalty Rewards – Gold Status – October 2023`. Optional können Sie der Kampagne eine Beschreibung hinzufügen. Auch hinzufügen **[!UICONTROL Tags]** zur Verbesserung der allgemeinen Kampagnentaxonomie.
+1. Fügen Sie nun einige zusätzliche Details zur neuen Webkanalkampagne hinzu. Benennen Sie zuerst die Kampagne. Aufrufen `Luma Loyalty Rewards – Gold Status`. Optional können Sie der Kampagne eine Beschreibung hinzufügen. Auch hinzufügen **[!UICONTROL Tags]** zur Verbesserung der allgemeinen Kampagnentaxonomie.
 
    ![Benennen Sie die Kampagne](assets/web-channel-campaign-name.png)
 
@@ -185,7 +221,7 @@ Wählen Sie die **[!UICONTROL Seiten-URL]** Weboberflächen-Option, um das Erleb
 
    ![Identitätstyp auswählen](assets/web-channel-indentity-type.png)
 
-1. Planen Sie den Beginn der Kampagne am 1. Dezember mithilfe des **[!UICONTROL Kampagnenstart]** und am 31. Dezember unter Verwendung der **[!UICONTROL Kampagnenende]** -Option.
+1. Planen Sie die Kampagne so, dass sie am heutigen Datum beginnt, indem Sie die **[!UICONTROL Kampagnenstart]** und mit der Option **[!UICONTROL Kampagnenende]** -Option.
 
    ![Kampagnenzeitplan](assets/web-channel-campaign-schedule.png)
 
@@ -195,7 +231,7 @@ Wählen Sie die **[!UICONTROL Seiten-URL]** Weboberflächen-Option, um das Erleb
 
 ### Experimentieren mit Treuebelohnungsinhalten
 
-Im **[!UICONTROL Aktion]** -Abschnitt können Sie optional ein Experiment erstellen, um zu testen, welche Inhalte für die `Luma Loyalty Rewards – Gold Status` Zielgruppe. Erstellen und testen wir zwei Behandlungen als Komponente der Kampagnenkonfiguration.
+Wenn Sie nach oben scrollen, finden Sie im **[!UICONTROL Aktion]** -Abschnitt können Sie optional ein Experiment erstellen, um zu testen, welche Inhalte für die `Luma Loyalty Rewards – Gold Status` Zielgruppe. Erstellen und testen wir zwei Behandlungen als Komponente der Kampagnenkonfiguration.
 
 So erstellen Sie das Inhaltsexperiment:
 
@@ -298,11 +334,17 @@ Aktivieren Sie abschließend die Webkanal-Kampagne.
 
 ### Treuebelohnungen QA
 
+Es gibt einige Anmeldungen, mit denen Sie Benutzer mit dem Status &quot;Gold&quot;simulieren und sich für Ihre Kampagne qualifizieren können:
+
+1. `cleavlandeuler@emailsim.io`/`test`
+1. `leftybeagen@emailsim.io`/`test`
+1. `jenimartinho@emailsim.io`/`test`
+
 Als Best Practice wird empfohlen, die **[!UICONTROL Web]** in den Live- und globalen Berichten der Kampagne für die Kampagnen-spezifischen KPIs. Überwachen Sie für diese Kampagne Erlebnisimpressionen und Klickrate.
 
 ![Webbericht anzeigen](assets/web-channel-web-report.png)
 
-### Webkanalüberprüfung mit Adobe Experience Platform Debugger
+### Webkanalvalidierung mithilfe von Adobe Experience Platform Debugger
 
 Die Adobe Experience Platform Debugger-Erweiterung, die sowohl für Chrome als auch für Firefox verfügbar ist, analysiert Ihre Webseiten, um Probleme bei der Implementierung von Adobe Experience Cloud-Lösungen zu identifizieren.
 
