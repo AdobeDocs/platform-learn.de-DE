@@ -7,19 +7,20 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+index: false
+hide: true
+source-git-commit: a56a63c79417fc98f2c3ec4a9613e39c46ac098a
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 41%
+source-wordcount: '95'
+ht-degree: 30%
 
 ---
 
 
-# Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK. {#implement-web-sdk}
+# Tutorial zur Implementierung von Adobe Experience Cloud mit dem Web SDK. {#implement-web-sdk}
 
 + [Tutorial-Überblick](overview.md)
 + Erstkonfiguration {#initial-configuration}
-   + [Berechtigungen konfigurieren](configure-permissions.md)
    + [Konfigurieren eines XDM-Schemas](configure-schemas.md)
    + [Identitäts-Namespace konfigurieren](configure-identities.md)
    + [Konfigurieren eines Datenstroms](configure-datastream.md)
@@ -27,14 +28,18 @@ ht-degree: 41%
 + Tag-Konfiguration {#tags-configuration}
    + [Installieren der Web SDK-Erweiterung](install-web-sdk.md)
    + [Erstellen von Datenelementen](create-data-elements.md)
-   + [Tag-Regel erstellen](create-tag-rule.md)
+   + [Erstellen von Identitäten](create-identities.md)
+   + [Erstellen von Tag-Regeln](create-tag-rule.md)
    + [Validieren mit Debugger](validate-with-debugger.md)
+   + [Validierung mit Versicherung](validate-with-assurance.md)
 
 + Anwendungseinstellungen {#applications-setup}
-   + [Einrichten der Experience Platform](setup-experience-platform.md)
+   + [Experience Platform einrichten](setup-experience-platform.md)
    + [Einrichten von Adobe Analytics](setup-analytics.md)
    + [Einrichten von Audience Manager](setup-audience-manager.md)
    + [Einrichten von Target](setup-target.md)
+   + [Einrichten des Journey Optimizer-Webkanals](setup-web-channel.md)
+   + [Journey Optimizer-Entscheidungsverwaltung einrichten](setup-decision-management.md)
 
 + Zustimmungsverwaltung {#consent-management}
    + [Einverständnis einrichten](setup-consent.md)
