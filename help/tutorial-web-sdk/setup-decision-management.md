@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2511'
 ht-degree: 3%
@@ -57,7 +57,7 @@ Beachten Sie die folgende Einschränkung:
 
 ## Zugriff auf das Entscheidungs-Management gewähren
 
-Um Zugriff auf die Entscheidungsverwaltungsfunktionen zu gewähren, müssen Sie eine **Produktprofil** und weisen Sie Ihren Benutzern die entsprechenden Berechtigungen zu. [Weitere Informationen zum Verwalten von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt .](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+Um Zugriff auf die Entscheidungsverwaltungsfunktionen zu gewähren, müssen Sie eine **Produktprofil** und weisen Sie Ihren Benutzern die entsprechenden Berechtigungen zu. [Weitere Informationen zum Verwalten von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt .](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Konfigurieren des Datenspeichers
 
@@ -340,7 +340,7 @@ Um den Test zu starten, wählen Sie die **Simulationen** Registerkarte aus **Ang
 
 ### Testen von Treueangeboten
 
-1. Wählen Sie ein Testprofil aus, das für die Simulation verwendet werden soll. Klicks **Profil verwalten**. [Um ein neues Testprofil für Angebotstests zu erstellen oder zu bestimmen, befolgen Sie dieses Handbuch](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles.html?lang=en#create-test-profiles-csv).
+1. Wählen Sie ein Testprofil aus, das für die Simulation verwendet werden soll. Klicks **Profil verwalten**. [Um ein neues Testprofil für Angebotstests zu erstellen oder zu bestimmen, befolgen Sie dieses Handbuch](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -372,7 +372,7 @@ Die **Adobe Experience Platform Debugger** -Erweiterung, die sowohl für Chrome 
 
 Sie können den Debugger auf der Site &quot;Luma&quot;verwenden, um die Entscheidungslogik in der Produktion zu überprüfen. Dies ist eine Best Practice, sobald der Anwendungsfall &quot;Loyalitätsbelohnungen&quot;aktiv ist, um sicherzustellen, dass alles korrekt konfiguriert ist.
 
-[Erfahren Sie hier, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[Erfahren Sie hier, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 So starten Sie die Validierung mit dem Debugger:
 

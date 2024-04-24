@@ -3,7 +3,7 @@ title: Einrichten der Zustimmung mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 0%
@@ -215,10 +215,10 @@ Sobald Sie diese Regel eingerichtet haben, sollte die Erfassung von Ereignissen 
 ![Einverständniserklärung für Post-Besucher-Opt-in](assets/consent-post-user-optin.png)
 
 
-Weitere Informationen zur Zustimmung im Web SDK finden Sie unter [Unterstützen von Zustimmungsvoreinstellungen von Kunden](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
+Weitere Informationen zur Zustimmung im Web SDK finden Sie unter [Unterstützen von Zustimmungsvoreinstellungen von Kunden](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Weitere Informationen über [!UICONTROL Einverständnis festlegen] Aktion, siehe [Einverständnis festlegen](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
+Weitere Informationen über [!UICONTROL Einverständnis festlegen] Aktion, siehe [Einverständnis festlegen](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
 
 [Weiter: ](setup-event-forwarding.md)
 

@@ -3,10 +3,10 @@ title: Identitäts-Namespace konfigurieren
 description: Erfahren Sie, wie Sie Identitäts-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 8%
 
 Erfahren Sie, wie Sie Identitäts-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren.
 
-Die [Adobe Experience Cloud Identity-Dienst](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de) legt eine allgemeine Besucher-ID (ECID) für SDK-basierte Adobe-Applikationen fest, um Experience Cloud-Funktionen wie die Zielgruppenfreigabe zwischen Applikationen zu unterstützen. Sie können auch Ihre eigenen Kunden-IDs an den Dienst senden, um geräteübergreifendes Targeting und Integrationen mit anderen Systemen wie z. B. Ihrem CRM-System (Customer Relationship Management) zu ermöglichen.
+Die [Adobe Experience Cloud Identity-Dienst](https://experienceleague.adobe.com/en/docs/id-service/using/home) legt eine allgemeine Besucher-ID (ECID) für SDK-basierte Adobe-Applikationen fest, um Experience Cloud-Funktionen wie die Zielgruppenfreigabe zwischen Applikationen zu unterstützen. Sie können auch Ihre eigenen Kunden-IDs an den Dienst senden, um geräteübergreifendes Targeting und Integrationen mit anderen Systemen wie z. B. Ihrem CRM-System (Customer Relationship Management) zu ermöglichen.
 
-Die [Adobe Experience Platform Identity-Dienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) (Ja, es gibt zwei!) verwendet die ECIDs und Kunden-IDs zum Generieren von Identitätsdiagrammen, sodass Sie Attribute und Verhaltensweisen mit Echtzeit-Kundenprofilen zusammenführen können.
+Die [Adobe Experience Platform Identity-Dienst](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (Ja, es gibt zwei!) verwendet die ECIDs und Kunden-IDs zum Generieren von Identitätsdiagrammen, sodass Sie Attribute und Verhaltensweisen mit Echtzeit-Kundenprofilen zusammenführen können.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Sie müssen die vorherigen Lektionen bereits abgeschlossen haben:
 >
 >Die [Experience Cloud ID-Erweiterung](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) ist bei der Implementierung des Adobe Experience Platform Web SDK nicht erforderlich, da die JavaScript-Bibliothek des Web SDK die Funktion des Besucher-ID-Diensts enthält.
 >
-> Wenn Ihre Website bereits den Experience Cloud ID-Dienst auf Ihrer Website verwendet - entweder über die Besucher-API oder die Tag-Erweiterung des Experience Cloud ID-Diensts - und Sie ihn bei der Migration zum Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Besucher-API oder die Tag-Erweiterung des Experience Cloud ID-Diensts verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) für weitere Informationen.
+> Wenn Ihre Website bereits den Experience Cloud ID-Dienst auf Ihrer Website verwendet - entweder über die Besucher-API oder die Tag-Erweiterung des Experience Cloud ID-Diensts - und Sie ihn bei der Migration zum Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Besucher-API oder die Tag-Erweiterung des Experience Cloud ID-Diensts verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) für weitere Informationen.
 
 ## Erstellen eines Identitäts-Namespace
 

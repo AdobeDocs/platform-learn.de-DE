@@ -2,7 +2,7 @@
 title: Streamen von Daten an Adobe Experience Platform mit dem Web SDK
 description: Erfahren Sie, wie Sie Webdaten mit dem Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 7%
@@ -38,7 +38,7 @@ Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 ## Erstellen eines Datensatzes
 
-Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, werden im Data Lake als Datensätze persistiert. A [Datensatz](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) ist ein Speicher- und Verwaltungskonstrukt für eine Sammlung von Daten, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben.
+Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, werden im Data Lake als Datensätze persistiert. A [Datensatz](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) ist ein Speicher- und Verwaltungskonstrukt für eine Sammlung von Daten, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben.
 
 Richten wir einen Datensatz für Ihre Luma-Web-Ereignisdaten ein:
 
@@ -140,7 +140,7 @@ Um zu bestätigen, dass die Daten im Data Lake von Platform gelandet sind, könn
 
 >[!INFO]
 >
->Der Abfragedienst von Adobe Experience Platform ist eine zuverlässigere Methode zur Überprüfung von Daten im See, überschreitet jedoch den Rahmen dieses Tutorials. Weitere Informationen finden Sie unter [Daten durchsuchen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=de) im Abschnitt Platform-Tutorials .
+>Der Abfragedienst von Adobe Experience Platform ist eine zuverlässigere Methode zur Überprüfung von Daten im See, überschreitet jedoch den Rahmen dieses Tutorials. Weitere Informationen finden Sie unter [Daten durchsuchen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) im Abschnitt Platform-Tutorials .
 
 
 ## Datensatz und Schema für Echtzeit-Kundenprofil aktivieren

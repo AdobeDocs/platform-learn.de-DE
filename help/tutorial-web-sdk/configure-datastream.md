@@ -3,10 +3,10 @@ title: Konfigurieren eines Datenstroms
 description: Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Lösungen konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Datastreams
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Erfahren Sie, wie Sie einen Datastream aktivieren und Experience Cloud-Anwendungen konfigurieren.
 
-Datastreams teilen Adobe Experience Platform Edge Network mit, wohin vom Platform Web SDK erfasste Daten gesendet werden sollen. In der Konfiguration der Datenspeicher aktivieren Sie Ihre Experience Cloud-Anwendungen, Ihr Experience Platform-Konto und die Ereignisweiterleitung. Siehe [Grundlagen zum Konfigurieren eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de) für detailliertere Informationen.
+Datastreams teilen Adobe Experience Platform Edge Network mit, wohin vom Platform Web SDK erfasste Daten gesendet werden sollen. In der Konfiguration der Datenspeicher aktivieren Sie Ihre Experience Cloud-Anwendungen, Ihr Experience Platform-Konto und die Ereignisweiterleitung. Siehe [Grundlagen zum Konfigurieren eines Datenspeichers](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) für detailliertere Informationen.
 
 
 ![Web SDK, Datenspeicher und Edge Network-Diagramm](assets/dc-websdk-datastreams.png)
@@ -72,7 +72,7 @@ Die Außerkraftsetzung der Datastream-Konfiguration erfolgt in zwei Schritten:
 
 Im [Einrichten von Adobe Analytics](setup-analytics.md) Lektion: Sie überschreiben die Report Suite für eine Seite mit der Ereignis-Aktion für das Senden des Platform Web SDK.
 
-Siehe [Dokumentation zur Datastream-Konfiguration wird außer Kraft gesetzt](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) für detaillierte Anweisungen zum Überschreiben von Datenspeicherkonfigurationen.
+Siehe [Dokumentation zur Datastream-Konfiguration wird außer Kraft gesetzt](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) für detaillierte Anweisungen zum Überschreiben von Datenspeicherkonfigurationen.
 
 Sie können jetzt die Platform Web SDK-Erweiterung in Ihrer Tag-Eigenschaft installieren!
 

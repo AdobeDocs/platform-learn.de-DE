@@ -3,7 +3,7 @@ title: Erstellen von Datenelementen
 description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 2%
@@ -53,7 +53,7 @@ Es gibt mehrere Möglichkeiten, Daten aus Ihrer Datenschicht mithilfe der Tagfun
 
 ### Implementieren von XDM in der Datenschicht
 
-Bei diesem Ansatz wird das vollständig definierte XDM-Objekt als Struktur für Ihre Datenschicht verwendet. Anschließend ordnen Sie die gesamte Datenschicht einem XDM-Objektdatenelement in Tags zu. Wenn Ihre Implementierung keinen Tag-Manager verwendet, ist dieser Ansatz möglicherweise optimal, da Sie Daten von Ihrer Anwendung direkt mit dem [XDM sendEvent, Befehl](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Wenn Sie Tags verwenden, können Sie ein benutzerdefiniertes Code-Datenelement erstellen, das die gesamte Datenschicht als Pass-Through-JSON-Objekt an das XDM erfasst. Anschließend ordnen Sie die Pass-Through-JSON dem XDM-Objektfeld in der Aktion &quot;Ereignis senden&quot;zu.
+Bei diesem Ansatz wird das vollständig definierte XDM-Objekt als Struktur für Ihre Datenschicht verwendet. Anschließend ordnen Sie die gesamte Datenschicht einem XDM-Objektdatenelement in Tags zu. Wenn Ihre Implementierung keinen Tag-Manager verwendet, ist dieser Ansatz möglicherweise optimal, da Sie Daten von Ihrer Anwendung direkt mit dem [XDM sendEvent, Befehl](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Wenn Sie Tags verwenden, können Sie ein benutzerdefiniertes Code-Datenelement erstellen, das die gesamte Datenschicht als Pass-Through-JSON-Objekt an das XDM erfasst. Anschließend ordnen Sie die Pass-Through-JSON dem XDM-Objektfeld in der Aktion &quot;Ereignis senden&quot;zu.
 
 Im Folgenden finden Sie ein Beispiel dafür, wie die Datenschicht mit dem Adobe Client-Datenschichtformat aussehen würde:
 
@@ -128,16 +128,16 @@ Dieser Ansatz umfasst die Zuordnung einzelner Datenschichtvariablen ODER Datensc
 >
 > Google-Datenschicht
 > 
-> Wenn Ihr Unternehmen bereits Google Analytics verwendet und auf Ihrer Website über das herkömmliche Google dataLayer -Objekt verfügt, können Sie die [Google Data Layer-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in Tags. Dadurch können Sie Adobe-Technologie schneller bereitstellen, ohne Unterstützung von Ihrem IT-Team anfordern zu müssen. Die Zuordnung der Google-Datenschicht zu XDM würde dieselben Schritte wie oben ausführen.
+> Wenn Ihr Unternehmen bereits Google Analytics verwendet und auf Ihrer Website über das herkömmliche Google dataLayer -Objekt verfügt, können Sie die [Google Data Layer-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in Tags. Dadurch können Sie Adobe-Technologie schneller bereitstellen, ohne Unterstützung von Ihrem IT-Team anfordern zu müssen. Die Zuordnung der Google-Datenschicht zu XDM würde dieselben Schritte wie oben ausführen.
 
 ### Zuordnung zu XDM im Datastream
 
-Bei diesem Ansatz werden Funktionen verwendet, die in die Datastream-Konfiguration integriert sind: [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) und überspringt die Zuordnung von Datenschichtvariablen zu XDM in Tags.
+Bei diesem Ansatz werden Funktionen verwendet, die in die Datastream-Konfiguration integriert sind: [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) und überspringt die Zuordnung von Datenschichtvariablen zu XDM in Tags.
 
 #### Vorteile
 
 * Flexibel, da Sie einzelne Variablen XDM zuordnen können
-* Fähigkeit [Neue Werte berechnen](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=de) oder [Datentypen transformieren](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) aus einer Datenschicht, bevor sie an XDM gesendet wird
+* Fähigkeit [Neue Werte berechnen](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) oder [Datentypen transformieren](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) aus einer Datenschicht, bevor sie an XDM gesendet wird
 * Nutzen Sie eine [Zuordnungs-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) , um Felder in Ihren Quelldaten mit einer Point-and-Click-Benutzeroberfläche XDM zuzuordnen.
 
 #### Nachteile
