@@ -2,21 +2,22 @@
 title: Einrichten der Zustimmung mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Consent
+jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
 
 # Einrichten der Zustimmung mit dem Platform Web SDK
 
-Erfahren Sie, wie Sie die Datenschutzeinstellungen der Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Legen Sie die Zustimmung basierend auf der Interaktion des Besuchers mit einem Banner von einer Consent Management Platform (CMP) fest.
+Erfahren Sie, wie Sie die Datenschutzeinstellungen der Adobe Experience Platform Web SDK-Tag-Erweiterung konfigurieren. Legen Sie die Zustimmung basierend auf der Interaktion des Besuchers mit einem Banner von einer Consent Management Platform (CMP) fest.
 
 >[!NOTE]
 > 
->Zu Demonstrationszwecken verwendet dieses Tutorial [Klaro](https://heyklaro.com/) als CMP. Sie können gerne mit Klaro oder dem CMP weitermachen, den Sie mit Ihrer Website verwenden.
+>Zu Demonstrationszwecken verwendet dieses Tutorial [Klaro](https://klaro.org/) als CMP. Sie können gerne mit Klaro oder dem CMP weitermachen, den Sie mit Ihrer Website verwenden.
 
 
 ## Lernziele
@@ -32,6 +33,7 @@ Am Ende dieser Lektion können Sie:
 Sie sollten mit Tags und den Schritten zum Erstellen von Regeln, Datenelementen, Erstellen von Bibliotheken in Umgebungen und Wechseln von Tag-Bibliotheken mithilfe des Experience Platform Debugger vertraut sein.
 
 Bevor Sie mit der Konfiguration der Datenschutzeinstellungen und der Erstellung der Regeln zum Festlegen der Einwilligung beginnen, stellen Sie sicher, dass Sie Ihr Plattformskript für die Einwilligungsverwaltung auf die Website eingefügt haben und ordnungsgemäß funktionieren. Eine CMP kann entweder direkt mithilfe von Site-Entwicklern in den Quellcode geladen oder über Tags selbst geladen werden. Diese Lektion zeigt den letzteren Ansatz.
+
 >[!NOTE]
 > 
 >1. Eine Consent Management Platform (oder CMP) wird von Organisationen verwendet, um die Einwilligungsoptionen eines Besuchers gesetzlich zu dokumentieren und zu verwalten, bevor Besucherdaten aus Online-Quellen wie Websites und Apps erfasst, weitergegeben oder verkauft werden.
@@ -42,10 +44,10 @@ Bevor Sie mit der Konfiguration der Datenschutzeinstellungen und der Erstellung 
 
 Bevor Sie in die Tag-Konfigurationen springen, erfahren Sie mehr über die in diesem Tutorial Klaro verwendete Zustimmungsverwaltungsplattform.
 
-1. Besuch [Klaro](https://heyklaro.com/) und ein Konto einrichten.
+1. Besuch [Klaro](https://klaro.org/) und ein Konto einrichten.
 1. Navigieren Sie zu **Privacy Manager** und erstellen Sie eine Instanz gemäß den Anweisungen.
 1. Verwenden Sie die **Integrationscode** um Klaro in Ihre Tag-Eigenschaft zu injizieren (Anweisungen finden Sie in der nächsten Übung).
-1. Überspringen **Scannen** -Abschnitt, da dadurch die Tag-Eigenschaft erkannt wird, die auf der Demowebsite von Luma fest codiert ist und nicht die Eigenschaft, die Sie für dieses Tutorial erstellt haben.
+1. Überspringen **Scannen** -Abschnitt, da er die Tag-Eigenschaft erkennt, die auf der Demowebsite von Luma fest codiert ist, und nicht die Eigenschaft, die Sie für dieses Tutorial erstellt haben.
 1. Hinzufügen eines Dienstes namens `aep web sdk` und aktivieren Sie die **Dienststandardstatus**. Wenn diese Option aktiviert ist, lautet der Standardwert für die Zustimmung `true`, andernfalls `false`. Diese Konfiguration ist nützlich, wenn Sie entscheiden möchten, welcher standardmäßige Zustimmungsstatus (vor der Zustimmung des Besuchers) für Ihre Webanwendung gelten soll. Beispiel:
    * Bei CCPA wird die Standardzustimmung normalerweise auf `true`. Sie werden dieses Szenario als **Implizites Opt-in** in diesem Tutorial
    * Für die DSGVO wird die standardmäßige Zustimmung normalerweise auf `false`. Sie werden dieses Szenario als **Implizites Opt-out** in diesem Tutorial.
@@ -218,10 +220,10 @@ Sobald Sie diese Regel eingerichtet haben, sollte die Erfassung von Ereignissen 
 Weitere Informationen zur Zustimmung im Web SDK finden Sie unter [Unterstützen von Zustimmungsvoreinstellungen von Kunden](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Weitere Informationen über [!UICONTROL Einverständnis festlegen] Aktion, siehe [Einverständnis festlegen](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
+Weitere Informationen über [!UICONTROL Einverständnis festlegen] Aktion, siehe [Einverständnis festlegen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [Weiter: ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

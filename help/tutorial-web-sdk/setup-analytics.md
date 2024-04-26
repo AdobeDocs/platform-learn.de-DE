@@ -2,19 +2,20 @@
 title: Einrichten von Adobe Analytics mithilfe des Experience Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Analytics mit dem Experience Platform Web SDK einrichten. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Analytics
+jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2810'
 ht-degree: 1%
 
 ---
 
-# Einrichten von Adobe Analytics mit dem Platform Web SDK
+# Einrichten von Adobe Analytics mit dem Adobe Experience Platform Web SDK
 
-Erfahren Sie, wie Sie Adobe Analytics mit [Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)erstellen Tag-Regeln, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics Daten erwartungsgemäß erfasst.
+Erfahren Sie, wie Sie Adobe Analytics mit [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)erstellen Tag-Regeln, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics Daten erwartungsgemäß erfasst.
 
-[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) ist eine branchenführende Anwendung, mit der Sie Ihre Kunden besser verstehen und Ihr Geschäft mit Customer Intelligence steuern können.
+[Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics) ist eine branchenführende Anwendung, mit der Sie Ihre Kunden besser verstehen und Ihr Geschäft mit Customer Intelligence steuern können.
 
 ![Diagramm Web SDK zu Adobe Analytics](assets/dc-websdk-aa.png)
 
@@ -34,13 +35,13 @@ Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 * Machen Sie sich mit Adobe Analytics vertraut und haben Sie Zugriff auf diese.
 
-* Sie verfügen über mindestens eine Report Suite-ID für Tests/Entwicklung. Wenn Sie nicht über eine Report Suite für Tests/Entwicklung verfügen, die Sie für dieses Tutorial verwenden können, [erstellen Sie bitte eine](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
+* Sie verfügen über mindestens eine Report Suite-ID für Tests/Entwicklung. Wenn Sie nicht über eine Report Suite für Tests/Entwicklung verfügen, die Sie für dieses Tutorial verwenden können, [erstellen Sie bitte eine](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Schließen Sie die früheren Lektionen in den Abschnitten Erstkonfiguration und Tags-Konfiguration dieses Tutorials ab.
 
 ## Konfigurieren des Datenspeichers
 
-Das Platform Web SDK sendet Daten von Ihrer Website an Platform Edge Network. Ihr Datastream teilt dann Platform Edge Network mit, an welche Adobe Analytics Report Suites Ihre Daten weitergeleitet werden sollen.
+Das Platform Web SDK sendet Daten von Ihrer Website an Platform Edge Network. Ihr Datastream teilt dann Platform Edge Network mit, an welche Adobe Analytics Report Suites Ihre Daten gesendet werden sollen.
 
 1. Navigieren Sie zu [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} Benutzeroberfläche
 1. Wählen Sie im linken Navigationsbereich die Option **[!UICONTROL Datenspeicher]**
@@ -51,7 +52,7 @@ Das Platform Web SDK sendet Daten von Ihrer Website an Platform Edge Network. Ih
 1. Wählen Sie **[!UICONTROL Service hinzufügen]** aus
    ![Hinzufügen eines Dienstes zum Datastream](assets/datastream-analytics-addService.png)
 1. Auswählen **[!UICONTROL Adobe Analytics]** als **[!UICONTROL Dienst]**
-1. Geben Sie die  **[!UICONTROL Report Suite-ID]** Ihrer Entwicklungs-Report Suite
+1. Geben Sie die **[!UICONTROL Report Suite-ID]** Ihrer Entwicklungs-Report Suite
 1. Wählen Sie **[!UICONTROL Speichern]** aus
 
    ![Analyse zum Speichern von Datensätzen](assets/datastream-add-analytics.png)
@@ -62,11 +63,11 @@ Das Platform Web SDK sendet Daten von Ihrer Website an Platform Edge Network. Ih
 
 >[!WARNING]
 >
->In diesem Tutorial konfigurieren Sie nur die Adobe Analytics Report Suite für Ihre Entwicklungsumgebung. Wenn Sie Datenspeicher für Ihre eigene Website erstellen, erstellen Sie zusätzliche Datenspeicher und Report Suites für Ihre Staging- und Produktionsumgebungen.
+>In diesem Tutorial konfigurieren Sie nur die Adobe Analytics Report Suite für Ihre Entwicklungsumgebung. Wenn Sie Datenspeicher für Ihre eigene Website erstellen, sollten Sie zusätzliche Datenspeicher und Report Suites für Ihre Staging- und Produktionsumgebungen erstellen.
 
 ## XDM-Schemata und Analytics-Variablen
 
-Herzlichen Glückwunsch! Sie haben bereits ein mit Adobe Analytics kompatibles Schema im [Schema konfigurieren](configure-schemas.md) Lektion!
+Herzlichen Glückwunsch! Sie haben bereits ein mit Adobe Analytics kompatibles Schema im Abschnitt [Schema konfigurieren](configure-schemas.md) Lektion!
 
 Aber Sie fragen sich vielleicht: Wie stelle ich alle meine Props, eVars und Ereignisse ein?
 
@@ -117,7 +118,7 @@ Das Schema, das im [Schema konfigurieren](configure-schemas.md) Die Lektion enth
 Die einzelnen Abschnitte der Analytics-Produktzeichenfolge werden durch verschiedene XDM-Variablen unter der `productListItems` -Objekt.
 >Am 18. August 2022 `productListItems[].SKU` hat Priorität für die Zuordnung zum Produktnamen in der Variablen s.products .
 >Der auf `productListItems[].name` nur dann dem Produktnamen zugeordnet wird, wenn `productListItems[].SKU` existiert nicht. Andernfalls ist sie nicht zugeordnet und in Kontextdaten verfügbar.
->Setzen Sie keine leere Zeichenfolge oder null auf  `productListItems[].SKU`. Dies hat den unerwünschten Effekt, dass die Zuordnung zum Produktnamen in der Variablen s.products vorgenommen wird.
+>Setzen Sie keine leere Zeichenfolge oder null auf `productListItems[].SKU`. Dies hat den unerwünschten Effekt, dass die Zuordnung zum Produktnamen in der Variablen s.products vorgenommen wird.
 
 Die aktuellste Liste der Zuordnungen finden Sie unter [Analytics-Variablenzuordnung in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
@@ -126,7 +127,7 @@ Die aktuellste Liste der Zuordnungen finden Sie unter [Analytics-Variablenzuordn
 
 Alle Felder im XDM-Schema stehen Adobe Analytics als Kontextdatenvariablen mit dem folgenden Präfix zur Verfügung `a.x.`. Beispiel: `a.x.web.webinteraction.region`
 
-In dieser Übung ordnen Sie eine XDM-Variable einer Prop zu. Führen Sie dieselben Schritte für jede benutzerdefinierte Zuordnung aus, die Sie für jede `eVar`, `prop`, `event`oder Variablen, auf die über Verarbeitungsregeln zugegriffen werden kann.
+In dieser Übung ordnen Sie eine XDM-Variable einer Prop zu. Führen Sie dieselben Schritte für jede benutzerdefinierte Zuordnung aus, die Sie für alle `eVar`, `prop`, `event`oder Variablen, auf die über Verarbeitungsregeln zugegriffen werden kann.
 
 1. Navigieren Sie zur Analytics-Benutzeroberfläche
 1. Navigieren Sie zu [!UICONTROL Admin] > [!UICONTROL Admin Tools] > [!UICONTROL Report Suites]
@@ -243,7 +244,7 @@ Erstellen wir eine Regel, um einen zusätzlichen Seitenansichtsaufruf an eine an
 
 1. Als **[!UICONTROL Typ]** auswählen `web.webpagedetails.pageViews`
 
-1. Als **[!UICONTROL XDM-Daten]**, wählen Sie die `xdm.variable.content` die Sie in der [Erstellen von Datenelementen](create-data-elements.md) Lektion
+1. Als **[!UICONTROL XDM-Daten]**, wählen Sie die `xdm.variable.content` Datenelement, das Sie im [Erstellen von Datenelementen](create-data-elements.md) Lektion
 
    ![Überschreiben des Analytics-Datastreams](assets/set-up-analytics-datastream-override-1.png)
 
@@ -406,7 +407,7 @@ In der vorherigen Übung haben Sie überprüft, ob Adobe Analytics die ECID, Sei
 Wie Sie in der [Assurance](validate-with-assurance.md) Lektion, es gibt mehrere Möglichkeiten, eine Zuverlässigkeitssitzung zu initiieren. Da Sie bereits einen Adobe Experience Platform Debugger geöffnet haben, bei dem eine Edge Trace-Sitzung von der letzten Übung aus initiiert wurde, empfehlen wir, über den Debugger auf &quot;Assurance&quot;zuzugreifen:
 ![Assemblierung durch Adobe Experience Platform-Datenerfassung](assets/assurance-open-aep-debugger.png)
 
-Innerhalb der **[!UICONTROL &quot;Web SDK-Tutorial 3&quot;]** Sitzungseintrag **[!UICONTROL &quot;hitdebugger&quot;]** in die Ereignissuchleiste, um die Ergebnisse nach den Adobe Analytics-Nachbearbeitungs-Daten zu filtern.
+Innerhalb der **[!UICONTROL &quot;Web SDK-Tutorial 3&quot;]** Sitzungseintrag **[!UICONTROL &quot;hitdebugger&quot;]** in die Ereignissuchleiste, um die Ergebnisse nach den nach der Verarbeitung in Adobe Analytics verarbeiteten Daten zu filtern.
 ![Assurance Adobe Analytics - Nachbearbeitete Daten](assets/assurance-hitdebugger.png)
 
 ### Experience Cloud ID-Überprüfung
@@ -452,4 +453,4 @@ Herzlichen Glückwunsch! Du hast es getan! Dies ist das Ende der Lektion und jet
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,11 +2,12 @@
 title: Identitäts-Namespace konfigurieren
 description: Erfahren Sie, wie Sie Identitäts-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Identities
+jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 7%
+source-wordcount: '576'
+ht-degree: 8%
 
 ---
 
@@ -38,7 +39,7 @@ Sie müssen die vorherigen Lektionen bereits abgeschlossen haben:
 
 >[!IMPORTANT]
 >
->Die [Experience Cloud ID-Erweiterung](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) ist bei der Implementierung des Adobe Experience Platform Web SDK nicht erforderlich, da die JavaScript-Bibliothek des Web SDK die Funktion des Besucher-ID-Diensts enthält.
+>Die [Experience Cloud ID-Erweiterung](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) ist bei der Implementierung des Adobe Experience Platform Web SDK nicht erforderlich, da die JavaScript-Bibliothek des Web SDK die Funktion des Besucher-ID-Diensts enthält.
 >
 > Wenn Ihre Website bereits den Experience Cloud ID-Dienst auf Ihrer Website verwendet - entweder über die Besucher-API oder die Tag-Erweiterung des Experience Cloud ID-Diensts - und Sie ihn bei der Migration zum Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Besucher-API oder die Tag-Erweiterung des Experience Cloud ID-Diensts verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) für weitere Informationen.
 
@@ -89,14 +90,10 @@ Erstellen Sie nun einen Namespace für die Luma CRM-ID:
 >
 > Im [Identitäten erstellen](create-identities.md) In dieser Lektion erfahren Sie, wie Sie diesen Namespace beim Senden von Identitäten an Platform Edge Network verwenden.
 
-## Erstellen Sie den Identitäts-Namespace in Ihrer Produktions-Sandbox
-
-Aufgrund einer aktuellen Einschränkung in der Web SDK-Erweiterung müssen auch Identitäts-Namespaces in der Produktions-Sandbox erstellt werden, um den Namespace zum Senden von Daten an eine Entwicklungs-Sandbox zu verwenden. Wenn Sie also eine Entwicklungs-Sandbox für dieses Tutorial verwendet haben, erstellen Sie auch die `Luma CRM ID` -Namespace in Ihrer Produktions-Sandbox.
-
 Nachdem Identitäten vorhanden sind, kann der Datastream konfiguriert werden.
 
 [Weiter: ](configure-datastream.md)
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

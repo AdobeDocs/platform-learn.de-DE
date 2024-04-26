@@ -1,12 +1,12 @@
 ---
-title: Schlussfolgerung und nächste Schritte
-description: Nächste Schritte nach Abschluss des Tutorials
+title: Zusammenfassung und nächste Schritte des Web SDK-Tutorials
+description: Nächste Schritte nach Abschluss des Tutorials zum Web SDK
 recommendations: display,noCatalog
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 2%
+source-wordcount: '382'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,8 @@ Schauen wir uns kurz alles an, was Sie erreicht haben. Sie haben:
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* Verwendete Ereignisweiterleitung zum Senden von Daten aus Platform Edge Network an einen Web-Hook.
+   * Adobe Journey Optimizer
+* Daten wurden vom Platform Edge Network an einen Web-Hook mit Ereignisweiterleitung weitergeleitet.
 * Die Implementierung mit Adobe Experience Platform Debugger wurde validiert.
 
 Sie sind bereit, mit der nächsten Phase Ihres Journey - der Implementierung von Adobe Experience Cloud auf Ihrer eigenen Website - zu beginnen!
@@ -35,12 +36,12 @@ Und es gibt immer mehr zu lernen! Im Folgenden finden Sie einige Vorschläge fü
 
 
 * **Trigger einer Journey in Journey Optimizer**. Die Ereignisse, die Sie auf der Luma-Website implementiert haben, können zum Trigger von Journey verwendet werden. Weitere Informationen finden Sie hier . [Video-Tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey).
-* **Customer Journey Analytics verbinden**. Wenn Sie die [Platform-Datensatz](setup-experience-platform.md), können Sie den Datensatz mit Customer Journey Analytics verbinden. Weitere Informationen finden Sie hier . [Video-Tutorial](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform)
-* **Erstellen eines Segments in Platform**. Wenn Sie die [Schema und Datensatz für Echtzeit-Kundenprofil](setup-experience-platform.md)können Sie Segmente basierend auf Ihren Web-Ereignissen erstellen, sie mit Daten aus anderen Quellen kombinieren und diese Segmente dann an Ziele in Real-time Customer Data Platform senden. Weitere Informationen zum Segment Builder finden Sie in diesem [Video-Tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/segments/create-segments).
+* **Customer Journey Analytics verbinden**. Wenn Sie die [Platform-Datensatz](setup-experience-platform.md), können Sie den Datensatz mit Customer Journey Analytics verbinden. Weitere Informationen finden Sie hier . [Video-Tutorial](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform)
+* **Erstellen eines Segments in Platform**. Wenn Sie die [Schema und Datensatz für Echtzeit-Kundenprofil](setup-experience-platform.md)können Sie Segmente basierend auf Ihren Web-Ereignissen erstellen und diese Segmente dann an Ziele in Real-time Customer Data Platform senden. Weitere Informationen zum Segment Builder finden Sie in diesem [Video-Tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/audiences/create-audiences).
 * **Implementieren des Platform Mobile SDK**. Jetzt, da Sie ein SDK beherrscht haben, lernen Sie ein anderes! Das Adobe Experience Platform Mobile SDK wird verwendet, um Experience Cloud- und Drittanbieterdienste in Apps zu aktivieren. Es gibt eine ähnliche [praktisches Tutorial für das Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview). Führen Sie beide aus und sehen Sie, wie Profile geräteübergreifend zusammengeführt werden.
-* **Weitere Informationen zum Experience Platform**. Erfahren Sie mehr darüber, wie Sie Daten aus anderen Quellen erfassen und diese mit Ihren Web SDK-Daten kombinieren können, in [Erste Schritte mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)
+* **Weitere Informationen zum Experience Platform**. Erfahren Sie, wie Sie Daten aus anderen Quellen erfassen können in [Erste Schritte mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)
 
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,17 +2,18 @@
 title: Erstellen eines XDM-Schemas für Webdaten
 description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webdaten erstellen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Schemas
+jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1498'
 ht-degree: 1%
 
 ---
 
 # Erstellen eines XDM-Schemas für Webdaten
 
-Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Schema für Webdaten erstellen.
+Erfahren Sie, wie Sie ein XDM-Schema für Webdaten in der Datenerfassungsoberfläche von Adobe Experience Platform erstellen.
 
 Experience-Datenmodell (XDM)-Schemas sind die Bausteine, Grundsätze und Best Practices für die Datenerfassung in Adobe Experience Platform.
 
@@ -22,7 +23,7 @@ Das Platform Web SDK verwendet Ihr Schema zur Standardisierung Ihrer Web-Ereigni
 
 Unternehmen haben ihre eigene Sprache, um über ihre Domain zu kommunizieren. Autohändler handeln von Marken, Modellen und Zylindern. Die Fluggesellschaften kümmern sich um Flugnummern, Serviceklasse und Sitzzuweisungen. Einige dieser Begriffe beziehen sich ausschließlich auf ein bestimmtes Unternehmen, einige werden von einem vertikalen Markt übernommen, andere werden von fast allen Unternehmen übernommen. Für Begriffe, die von einem vertikalen oder sogar weiter gefassten Sektor gemeinsam verwendet werden, können Sie mit Ihren Daten leistungsstarke Dinge tun, wenn Sie diese Begriffe auf gemeinsame Weise benennen und strukturieren.
 
-Viele Unternehmen bearbeiten beispielsweise Bestellungen. Was wäre, wenn diese Unternehmen gemeinsam beschlossen hätten, eine Bestellung auf ähnliche Weise zu modellieren? Wenn das Datenmodell beispielsweise aus einem Objekt mit einer `priceTotal` Eigenschaft, die den Gesamtpreis der Bestellung darstellt? Was passiert, wenn dieses Objekt auch Eigenschaften namens `currencyCode` und `purchaseOrderNumber`? Vielleicht enthält das Bestellobjekt eine Eigenschaft mit dem Namen `payments` das eine Reihe von Zahlungsobjekten wäre. Jedes Objekt würde eine Zahlung für die Bestellung darstellen. Vielleicht hat ein Kunde zum Beispiel einen Teil der Bestellung mit einer Geschenkkarte bezahlt und den Rest mit einer Kreditkarte bezahlt. Sie können damit beginnen, ein Modell zu erstellen, das ungefähr so aussieht:
+Viele Unternehmen bearbeiten beispielsweise Bestellungen. Was wäre, wenn diese Unternehmen gemeinsam beschlossen hätten, eine Bestellung auf ähnliche Weise zu modellieren? Wenn das Datenmodell beispielsweise aus einem Objekt mit einer `priceTotal` Eigenschaft, die den Gesamtpreis der Bestellung darstellt? Was passiert, wenn dieses Objekt auch Eigenschaften namens `currencyCode` und `purchaseOrderNumber`? Vielleicht enthält das Bestellobjekt eine Eigenschaft mit dem Namen `payments` das eine Reihe von Zahlungsobjekten wäre. Jedes Objekt würde eine Zahlung für die Bestellung darstellen. Vielleicht hat ein Kunde zum Beispiel einen Teil der Bestellung mit einer Geschenkkarte bezahlt und der Rest mit einer Kreditkarte. Sie können damit beginnen, ein Modell zu erstellen, das ungefähr so aussieht:
 
 ```json
 {
@@ -125,7 +126,7 @@ Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein pro
 
    ![Feldergruppe hinzufügen](assets/schema-add-field-group.png)
 
-Beachten Sie bei beiden Feldergruppen, dass Sie Zugriff auf die am häufigsten verwendeten Schlüssel-Wert-Paare haben, die für die Datenerfassung im Internet erforderlich sind. Die [!UICONTROL Anzeigename] für Marketing-Experten in der Segment Builder-Oberfläche von Platform-basierten Anwendungen angezeigt werden und Sie können den Anzeigenamen von Standardfeldern an Ihre Anforderungen anpassen. Sie können auch Felder entfernen, die Sie nicht möchten. Wenn Sie auf einen der Feldgruppennamen klicken, wird in der Benutzeroberfläche hervorgehoben, zu welchen Schlüssel-Wert-Paargruppierungen gehören. Im folgenden Beispiel sehen Sie, zu welchen Gruppen gehören **[!UICONTROL Ereignis für Kundenerlebnisse]**.
+Beachten Sie bei beiden Feldergruppen, dass Sie Zugriff auf die am häufigsten verwendeten Schlüssel-Wert-Paare haben, die für die Datenerfassung im Internet erforderlich sind. Die [!UICONTROL Anzeigename] für Marketing-Experten in der Segment Builder-Oberfläche von Platform-basierten Anwendungen angezeigt werden und Sie können den Anzeigenamen von Standardfeldern an Ihre Anforderungen anpassen. Sie können auch Felder entfernen, die Sie nicht möchten. Wenn Sie auf einen der Feldgruppennamen klicken, wird in der Benutzeroberfläche hervorgehoben, zu welchen Schlüssel-Wert-Paargruppierungen gehören. Im folgenden Beispiel sehen Sie, zu welchen Feldern gehören **[!UICONTROL Ereignis für Kundenerlebnisse]**.
 
 ![Schemafeldgruppen](assets/schema-consumer-experience-event.png)
 
@@ -143,7 +144,7 @@ Es handelt sich um ein &quot;must-have&quot;-Objekt für jede webbezogene Datene
 
 >[!IMPORTANT]
 >
-> Es ist möglich **[!UICONTROL Profil]** für ein Schema vor dem Speichern des Schemas. **Nicht** aktivieren. Nachdem ein Schema für Profil aktiviert wurde, kann es nicht mehr deaktiviert oder gelöscht werden. Auch Felder können zu diesem Zeitpunkt nicht aus Schemata entfernt werden. Sie können jedoch [Veraltete Felder in der Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Implikationen sollten Sie später bei der Arbeit mit Ihren eigenen Daten in Ihrer Produktionsumgebung berücksichtigen.
+> Es ist möglich **[!UICONTROL Profil]** für ein Schema vor dem Speichern des Schemas. **Nicht** aktivieren. Nachdem ein Schema für Profil aktiviert wurde, kann es nicht mehr deaktiviert oder gelöscht werden, ohne die gesamte Sandbox zurückzusetzen. Auch Felder können zu diesem Zeitpunkt nicht aus Schemata entfernt werden. Sie können jedoch [Veraltete Felder in der Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Implikationen sollten Sie später bei der Arbeit mit Ihren eigenen Daten in Ihrer Produktionsumgebung berücksichtigen.
 >
 >
 >Diese Einstellung wird während der [Einrichten von Experience Platform](setup-experience-platform.md) Lektion.
@@ -161,4 +162,4 @@ Jetzt können Sie dieses Schema referenzieren, wenn Sie die Web SDK-Erweiterung 
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

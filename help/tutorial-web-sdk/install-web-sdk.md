@@ -1,18 +1,19 @@
 ---
 title: Installieren und Konfigurieren der Adobe Experience Platform Web SDK-Tag-Erweiterung
 description: Erfahren Sie, wie Sie die Platform Web SDK-Tag-Erweiterung in der Datenerfassungsoberfläche installieren und konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
-feature: Web SDK
+feature: Web SDK, Tags
+jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 14%
+source-wordcount: '594'
+ht-degree: 10%
 
 ---
 
 # Installieren der Adobe Experience Platform Web SDK-Tag-Erweiterung
 
-Erfahren Sie, wie Sie die Platform Web SDK-Tag-Erweiterung installieren und konfigurieren. Die einfachste Methode zur Implementierung des Web SDK besteht darin, den Tag-Manager, Tags (ehemals Launch), zu verwenden. Die Platform Web SDK-Tag-Erweiterung ist die _nur Tag-Erweiterung_ erforderlich ist, um Daten an _alle Adobe Experience Cloud-Anwendungen_, einschließlich [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform und [Journey Optimizer](setup-web-channel.md)!
+Erfahren Sie, wie Sie die Adobe Experience Platform Web SDK-Tag-Erweiterung installieren und konfigurieren. Die einfachste Methode zur Implementierung des Web SDK besteht darin, den Tag-Manager, Tags (ehemals Launch), zu verwenden. Die Platform Web SDK-Tag-Erweiterung ist die _nur Tag-Erweiterung_ erforderlich ist, um Daten an _alle Adobe Experience Cloud-Anwendungen_, einschließlich [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform und [Journey Optimizer](setup-web-channel.md)!
 
 ## Lernziele
 
@@ -69,11 +70,11 @@ Behalten Sie die meisten Standardeinstellungen bei und aktualisieren Sie sie bei
 
    ![Datenspeicherauswahl](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Weitere Informationen zu den einzelnen Abschnitten der Erweiterung finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
+Weitere Informationen zu den einzelnen Abschnitten der Erweiterung finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
->Sie haben zwar keinen CNAME im [!UICONTROL Edge-Domäne] -Einstellung in dieser Lektion empfiehlt Adobe die Verwendung eines CNAME, wenn Sie das Platform Web SDK auf Ihrer eigenen Website implementieren. Auch wenn eine CNAME-Implementierung keine Vorteile hinsichtlich der Cookie-Lebensdauer bietet, kann sie andere Vorteile haben. Zu den Vorteilen gehört die Umgehung der Funktionen von Ad-Blockern und selten verwendeten Browser, die keine Daten an Domains senden, die sie als Tracker klassifizieren. In diesen Fällen kann die Verwendung eines CNAME-Eintrags verhindern, dass Ihre Datenerfassung bei Benutzern unterbunden wird, die diese Tools verwenden.
+>Sie haben zwar keinen CNAME im [!UICONTROL Edge-Domäne] -Einstellung in dieser Lektion empfiehlt Adobe die Verwendung eines CNAME, wenn Sie das Platform Web SDK auf Ihrer eigenen Website implementieren. Auch wenn eine CNAME-Implementierung keine Vorteile hinsichtlich der Cookie-Lebensdauer bietet, kann sie andere Vorteile haben. Zu diesen Vorteilen gehören Anzeigensperren und seltener verwendete Browser, die verhindern, dass Daten an Domänen gesendet werden, die sie als Tracker klassifizieren. In diesen Fällen kann die Verwendung eines CNAME-Eintrags verhindern, dass Ihre Datenerfassung bei Benutzern unterbunden wird, die diese Tools verwenden.
 
 >[!NOTE]
 >
@@ -85,4 +86,4 @@ Nachdem Sie das Platform Web SDK installiert und mit dem Datastream verknüpft h
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,22 +1,23 @@
 ---
-title: Entscheidungsverwaltung mit dem Platform Web SDK einrichten
+title: Einrichten der Journey Optimizer-Entscheidungsverwaltung mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie die Entscheidungsverwaltung mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2515'
 ht-degree: 3%
 
 ---
 
 # Entscheidungsverwaltung mit dem Platform Web SDK einrichten
 
-Erfahren Sie, wie Sie die Entscheidungsverwaltung mit dem Platform Web SDK implementieren. In diesem Handbuch werden die grundlegenden Entscheidungsverwaltungsvoraussetzungen, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
+Erfahren Sie, wie Sie die Entscheidungsverwaltungsfunktion von Adobe Journey Optimizer mithilfe des Platform Web SDK implementieren. In diesem Handbuch werden die grundlegenden Entscheidungsverwaltungsvoraussetzungen, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
 
-In diesem Tutorial können Journey Optimizer-Benutzer offer decisioning-Funktionen effektiv anwenden, um die Personalisierung und Relevanz ihrer Kundeninteraktionen zu verbessern.
+In diesem Tutorial werden Journey Optimizer-Benutzer mit Funktionen zur Entscheidungsverwaltung ausgestattet, um die Personalisierung und Relevanz ihrer Kundeninteraktionen zu verbessern.
 
 
 ![Web SDK und Adobe Analytics-Diagramm](assets/dc-websdk-ajo.png)
@@ -51,9 +52,7 @@ Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 
 ## Einschränkungen
 
-Beachten Sie die folgende Einschränkung:
-
-* Ereignisbasierte Angebote werden in Adobe Journey Optimizer derzeit nicht unterstützt. Wenn Sie eine auf einem Ereignis basierende Entscheidungsregel erstellen, können Sie sie nicht auf ein Angebot anwenden.
+Ereignisbasierte Angebote werden in Adobe Journey Optimizer derzeit nicht unterstützt. Wenn Sie eine auf einem Ereignis basierende Entscheidungsregel erstellen, können Sie sie nicht auf ein Angebot anwenden.
 
 ## Zugriff auf das Entscheidungs-Management gewähren
 
@@ -140,7 +139,7 @@ Zunächst sollten Sie die in der Benutzeroberfläche für die Entscheidungsverwa
 
 In dieser Lektion implementieren Sie ein Anwendungsbeispiel für Treuebelohnungen , um die Entscheidungsverwaltung mithilfe des Web SDK zu verstehen.
 
-In diesem Anwendungsbeispiel wird erläutert, wie Journey Optimizer mithilfe der zentralisierten Angebotsbibliothek und des Entscheidungs-Moduls für Angebote das beste Angebot für Ihre Kunden bereitstellen kann.
+In diesem Anwendungsbeispiel wird erläutert, wie Journey Optimizer mithilfe der zentralisierten Angebotsbibliothek und der Entscheidungs-Engine für die Entscheidungsfindung bei der Bereitstellung des besten Angebots für Ihre Kunden helfen kann.
 
 >[!NOTE]
 >
@@ -307,11 +306,11 @@ Gehen Sie wie folgt vor, um die Entscheidung zu erstellen:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Definieren Sie nun die **Entscheidungsbereiche**. Wählen Sie zuerst eine Platzierung aus. Sie können die zuvor erstellte *Startseiten-Banner*&quot;.
+1. Jetzt müssen Sie die **Entscheidungsbereiche**. Wählen Sie zuerst eine Platzierung aus. Sie können die zuvor erstellte *Startseiten-Banner*&quot;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Als Nächstes müssen Sie **Bewertungskriterien** für den Entscheidungsbereich. Klicks **Hinzufügen** und wählen Sie die zuvor erstellte *Treuebelohnungen*&#39; **collection** enthält alle zu berücksichtigenden Treueangebote.
+1. Als Nächstes müssen Sie **Bewertungskriterien** für den Entscheidungsbereich. Klicks **Hinzufügen** und wählen Sie die zuvor erstellte *Treuebelohnungen*&#39; **Sammlung, die alle zu berücksichtigenden Treueangebote enthält.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -334,7 +333,7 @@ Gehen Sie wie folgt vor, um die Entscheidung zu erstellen:
 
 ## Simulationen
 
-Als Best Practice sollten Sie die Entscheidungslogik für das Treueprogramm von Luma validieren, um sicherzustellen, dass die richtigen Angebote für die richtigen Loyalitätszielgruppen bereitgestellt werden. Verwenden Sie dazu **Testprofile**. Außerdem ist es empfehlenswert, Änderungen an Angeboten über Testprofile zu testen, bevor neue Angebotsversionen in die Produktion gepusht werden.
+Als Best Practice sollten Sie die Entscheidungslogik für das Treueprogramm von Luma validieren, um sicherzustellen, dass die richtigen Angebote an die richtigen Loyalitätszielgruppen gesendet werden. Diese Validierung können Sie mithilfe von **Testprofile**. Außerdem ist es empfehlenswert, Änderungen an Angeboten über Testprofile zu testen, bevor neue Angebotsversionen in die Produktion gepusht werden.
 
 Um den Test zu starten, wählen Sie die **Simulationen** Registerkarte aus **Angebote** Menü.
 
@@ -370,7 +369,7 @@ Um den Test zu starten, wählen Sie die **Simulationen** Registerkarte aus **Ang
 
 Die **Adobe Experience Platform Debugger** -Erweiterung, die sowohl für Chrome als auch für Firefox verfügbar ist, analysiert Ihre Webseiten, um Probleme bei der Implementierung von Adobe Experience Cloud-Lösungen zu identifizieren.
 
-Sie können den Debugger auf der Site &quot;Luma&quot;verwenden, um die Entscheidungslogik in der Produktion zu überprüfen. Dies ist eine Best Practice, sobald der Anwendungsfall &quot;Loyalitätsbelohnungen&quot;aktiv ist, um sicherzustellen, dass alles korrekt konfiguriert ist.
+Sie können den Debugger auf der Site &quot;Luma&quot;verwenden, um die Entscheidungslogik in der Produktion zu überprüfen. Diese Validierung empfiehlt sich, sobald der Anwendungsfall &quot;Treuebelohnungen&quot;aktiv ist, um sicherzustellen, dass alles korrekt konfiguriert ist.
 
 [Erfahren Sie hier, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -405,4 +404,4 @@ So starten Sie die Validierung mit dem Debugger:
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

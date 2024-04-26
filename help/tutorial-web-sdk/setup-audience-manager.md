@@ -2,17 +2,18 @@
 title: Einrichten von Audience Manager mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Audience Manager mit dem Platform Web SDK einrichten und die Implementierung mit einem Cookie-Ziel validieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Audience Manager
+jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
 
 # Einrichten von Audience Manager mit dem Platform Web SDK
 
-Erfahren Sie, wie Sie Adobe Audience Manager mit dem Platform Web SDK einrichten und die Implementierung mit einem Cookie-Ziel validieren.
+Erfahren Sie, wie Sie Adobe Audience Manager mit dem Adobe Experience Platform Web SDK einrichten und die Implementierung mit einem Cookie-Ziel validieren.
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) ist die Adobe Experience Cloud-Lösung, die alles bietet, was erforderlich ist, um geschäftlich relevante Informationen über Site-Besucher zu sammeln, vermarktbare Segmente zu erstellen und zielgruppengerechte Werbung und Inhalte für die richtige Zielgruppe bereitzustellen.
 
@@ -35,7 +36,7 @@ Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 ## Konfigurieren des Datenspeichers
 
-Die Implementierung des Audience Managers mit dem Platform Web SDK unterscheidet sich von der Implementierung mit [Serverseitige Weiterleitung (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). Die serverseitige Weiterleitung übergibt Adobe Analytics-Anfragedaten an Audience Manager. Eine Platform Web SDK-Implementierung übergibt XDM-Daten, die an Platform Edge Network gesendet werden, an Audience Manager. Audience Manager ist im Datastream aktiviert:
+Die Implementierung des Audience Managers mit dem Platform Web SDK unterscheidet sich von der Implementierung mit [Serverseitige Weiterleitung (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). Die serverseitige Weiterleitung übergibt Adobe Analytics-Anfragedaten an Audience Manager. Eine Platform Web SDK-Implementierung übergibt XDM-Daten, die an Platform Edge Network gesendet werden, an Audience Manager. Audience Manager ist im Datastream aktiviert:
 
 1. Navigieren Sie zu [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} Benutzeroberfläche
 1. Wählen Sie im linken Navigationsbereich die Option **[!UICONTROL Datenspeicher]**
@@ -96,12 +97,12 @@ Nachdem die Datenquelle gespeichert wurde, richten Sie eine [Eigenschaft](https:
 
 ## Erstellen eines Segments
 
-Der nächste Schritt besteht darin, eine **Segment** und weisen Sie diesem Segment Ihre neu definierte Eigenschaft zu.
+Die nächsten Schritte sind die Erstellung eines **Segment** und weisen Sie diesem Segment Ihre neu definierte Eigenschaft zu.
 
 1. Auswählen **[!UICONTROL Zielgruppendaten]** in der oberen Navigation und wählen Sie **[!UICONTROL Segmente]**
 1. Auswählen **[!UICONTROL Neu hinzufügen]** oben links auf der Seite, um den Segment Builder zu öffnen
 1. Geben Sie Ihrem Segment einen Anzeigenamen und eine Beschreibung, z. B. `Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL Ordner auswählen]** wo Ihr Segment im Bereich auf der rechten Seite gespeichert wird. Sie können einen Ordner erstellen, indem Sie **Auswählen des Zeichens +** neben einem vorhandenen übergeordneten Ordner. Sie können diesen neuen Ordner benennen `Platform Web SDK tutorial`.
+1. **[!UICONTROL Ordner auswählen]** wo Ihr Segment im Bereich auf der rechten Seite gespeichert ist. Sie können einen Ordner erstellen, indem Sie **Auswählen des Zeichens +** neben einem vorhandenen übergeordneten Ordner. Sie können diesen neuen Ordner benennen `Platform Web SDK tutorial`.
 1. Fügen Sie einen Integrationscode hinzu, bei dem es sich in diesem Fall um einen zufälligen Satz von Zahlen handelt.
 1. Im **[!UICONTROL Datenquelle]** Bereich, wählen Sie **[!UICONTROL Audience Manager]** und der zuvor erstellten Datenquelle
 1. Erweitern Sie die **[!UICONTROL Eigenschaften]** und suchen Sie nach der von Ihnen erstellten Eigenschaft
@@ -184,4 +185,4 @@ Nachdem Sie diese Lektion abgeschlossen haben, sollten Sie sehen können, wie da
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

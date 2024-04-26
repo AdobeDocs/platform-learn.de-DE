@@ -2,17 +2,18 @@
 title: Einrichten von Adobe Target mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 solution: Data Collection, Target
+jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4305'
 ht-degree: 0%
 
 ---
 
 # Einrichten von Adobe Target mit dem Platform Web SDK
 
-Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Erfahren Sie, wie Sie Erlebnisse bereitstellen und zusätzliche Parameter an Target übergeben.
+Erfahren Sie, wie Sie Adobe Target mit dem Adobe Experience Platform Web SDK implementieren. Erfahren Sie, wie Sie Erlebnisse bereitstellen und zusätzliche Parameter an Target übergeben.
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) ist die Adobe Experience Cloud-Anwendung, die Ihnen all das bietet, was Sie benötigen, um die Erlebnisse Ihrer Kunden anzupassen und zu personalisieren, sodass Sie Umsätze auf Ihren Web- und mobilen Sites, in Apps und anderen digitalen Kanälen maximieren können.
 
@@ -41,7 +42,7 @@ Am Ende dieser Lektion können Sie Folgendes mit einer Web SDK-Implementierung v
 Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 
 * Schließen Sie alle Lektionen für die Erstkonfiguration des Platform Web SDK ab, einschließlich der Einrichtung von Datenelementen und Regeln.
-* Vergewissern Sie sich, dass [Editor- oder Genehmigerrolle](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target.
+* Vergewissern Sie sich, dass [Editor- oder Genehmigerrolle](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target.
 * Installieren Sie die [Visual Experience Composer Helper-Erweiterung](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) wenn Sie den Google Chrome-Browser verwenden.
 * Erfahren Sie, wie Sie Aktivitäten in Target einrichten. Wenn Sie einen Auffrischungskurs benötigen, sind die folgenden Tutorials und Handbücher für diese Lektion hilfreich:
    * [Verwenden der Visual Experience Composer (VEC) Helper-Erweiterung](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
@@ -55,12 +56,12 @@ Stellen Sie vor dem Start fest, ob je nachdem, wie die Tag-Bibliothek geladen wi
 
 >[!NOTE]
 >
->In diesem Tutorial wird die [Site &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) , die eine asynchrone Implementierung von Tags und eine Flackerverhinderung aufweist. In diesem Abschnitt erhalten Sie Informationen dazu, wie die Flackerverhinderung mit dem Platform Web SDK funktioniert.
+>In diesem Tutorial wird die [Luma-Website](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, die eine asynchrone Implementierung von Tags und eine Flackerverhinderung aufweist. In diesem Abschnitt erhalten Sie Informationen dazu, wie die Flackerverhinderung mit dem Platform Web SDK funktioniert.
 
 
 ### Asynchrone Implementierung
 
-Wenn eine Tag-Bibliothek asynchron geladen wird, kann das Rendern der Seite abgeschlossen sein, bevor Target Standardinhalte durch personalisierte Inhalte ersetzt hat. Dieses Verhalten kann zum so genannten &quot;Flackern&quot;führen. Dabei wird kurz der Standardinhalt angezeigt, bevor er durch den von Target angegebenen personalisierten Inhalt ersetzt wird. Wenn Sie dieses Flimmern vermeiden möchten, empfiehlt Adobe, unmittelbar vor dem asynchronen Tag-Einbettungscode einen speziellen Codeausschnitt zur Vorab-Ausblendung hinzuzufügen.
+Wenn eine Tag-Bibliothek asynchron geladen wird, kann das Rendern der Seite abgeschlossen sein, bevor Target Standardinhalte durch personalisierte Inhalte ersetzt hat. Dieses Verhalten kann zum so genannten &quot;Flackern&quot;führen, bei dem kurz Standardinhalte angezeigt werden, bevor sie durch den personalisierten Inhalt ersetzt werden. Wenn Sie dieses Flimmern vermeiden möchten, empfiehlt Adobe, unmittelbar vor dem asynchronen Tag-Einbettungscode einen speziellen Codeausschnitt zur Vorab-Ausblendung hinzuzufügen.
 
 Dieses Snippet ist bereits auf der Site &quot;Luma&quot;vorhanden, aber schauen wir uns genauer an, um zu verstehen, was dieser Code bewirkt:
 
@@ -231,7 +232,7 @@ Nachdem der grundlegende Implementierungsabschnitt abgeschlossen ist, erstellen 
 
    ![Neue XT-Aktivität erstellen](assets/target-xt-create-activity.png)
 
-1. Ändern Sie die Seite, z. B. ändern Sie den Text auf dem Hero Banner der Homepage.  Wählen Sie zum Abschluss **[!UICONTROL Speichern]** then **[!UICONTROL Nächste]**.
+1. Ändern Sie die Seite beispielsweise, indem Sie den Text im Hero Banner der Startseite ändern.  Wählen Sie zum Abschluss **[!UICONTROL Speichern]** then **[!UICONTROL Nächste]**.
 
    ![Target VEC-Änderung](assets/target-xt-vec-modification.png)
 
@@ -302,7 +303,7 @@ Benutzerdefinierte Entscheidungsbereiche (ehemals &quot;Mboxes&quot;) können ve
 
 ### Antwort von Target verarbeiten
 
-Nachdem Sie das Platform Web SDK konfiguriert haben, um Inhalte für die `homepage-hero` -Bereich, müssen Sie etwas mit der Antwort tun. Die Tag-Erweiterung des Platform Web SDK bietet eine [!UICONTROL Ereignis-Abschluss senden] -Ereignis, mit dem eine neue Regel sofort Trigger werden kann, wenn eine Antwort von einer [!UICONTROL Ereignis senden] -Aktion empfangen wird.
+Nachdem Sie das Platform Web SDK konfiguriert haben, um Inhalte für die `homepage-hero` -Bereich, müssen Sie etwas mit der Antwort tun. Die Tag-Erweiterung des Platform Web SDK bietet eine [!UICONTROL Ereignis-Abschluss senden] -Ereignis, das verwendet werden kann, um sofort eine neue Regel Trigger, wenn eine Antwort von einer [!UICONTROL Ereignis senden] -Aktion empfangen wird.
 
 1. Erstellen Sie eine Regel mit dem Namen `homepage - send event complete - render homepage-hero`.
 1. Fügen Sie der Regel ein Ereignis hinzu. Verwenden Sie die **Adobe Experience Platform Web SDK** und **[!UICONTROL Abschluss des Ereignisses senden]** Ereignistyp.
@@ -393,7 +394,7 @@ In diesem Abschnitt übergeben Sie Target-spezifische Daten und sehen sich genau
 
 ### Seiten- (Mbox-)Parameter und XDM
 
-Alle XDM-Felder werden automatisch als [Seitenparameter](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) oder Mbox-Parameter.
+Alle XDM-Felder werden automatisch als [Seitenparameter](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) oder Mbox-Parameter.
 
 Einige dieser XDM-Felder werden bestimmten Objekten im Target-Backend zugeordnet. Beispiel: `web.webPageDetails.URL` automatisch verfügbar sind, um URL-basierte Targeting-Bedingungen zu erstellen, oder als `page.url` -Objekt beim Erstellen von Profilskripten.
 
@@ -401,7 +402,7 @@ Einige dieser XDM-Felder werden bestimmten Objekten im Target-Backend zugeordnet
 
 Es gibt einige Datenpunkte, die für Target nützlich sein können und nicht vom XDM-Objekt zugeordnet sind. Zu diesen speziellen Target-Parametern gehören:
 
-* [Profilattribute](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes)
+* [Profilattribute](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
 * [Recommendations-Entitätsattribute](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
 * [Recommendations-reservierte Parameter](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
 * Kategoriewerte für [Kategorieaffinität](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
@@ -551,4 +552,4 @@ Nachdem Sie diese Lektion abgeschlossen haben, sollten Sie über eine funktionie
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

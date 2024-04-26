@@ -1,18 +1,19 @@
 ---
-title: Erstellen von Tag-Regeln
+title: Erstellen von Tag-Regeln für das Platform Web SDK
 description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform-Edge Network senden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
+jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1963'
 ht-degree: 2%
 
 ---
 
 # Erstellen von Tag-Regeln
 
-Erfahren Sie, wie Sie mithilfe von Tag-Regeln Ereignisse mit Ihrem XDM-Objekt an das Platform-Edge Network senden. Eine Tag-Regel ist eine Kombination aus Ereignissen, Bedingungen und Aktionen, die die Tag-Eigenschaft anweist, etwas zu tun. Mit dem Platform Web SDK werden Regeln verwendet, um Ereignisse mit den richtigen Daten an Platform Edge Network zu senden.
+Erfahren Sie, wie Sie mithilfe von Tag-Regeln Ereignisse mit Ihrem XDM-Objekt an das Adobe Experience Platform-Edge Network senden. Eine Tag-Regel ist eine Kombination aus Ereignissen, Bedingungen und Aktionen, die die Tag-Eigenschaft anweist, etwas zu tun. Mit dem Platform Web SDK werden Regeln verwendet, um Ereignisse mit den richtigen Daten an Platform Edge Network zu senden.
 
 ## Lernziele
 
@@ -38,7 +39,7 @@ Sie kennen Datenerfassungs-Tags und die [Demosite &quot;Luma&quot;](https://luma
 
 ## Benennungskonventionen
 
-Um Regeln in Tags besser zu verwalten, wird empfohlen, eine standardmäßige Namenskonvention zu befolgen. In diesem Tutorial wird eine fünfteilige Namenskonvention verwendet:
+Um Regeln in Tags zu verwalten, wird empfohlen, eine standardmäßige Namenskonvention einzuhalten. In diesem Tutorial wird eine fünfteilige Namenskonvention verwendet:
 
 * [**location**] - [**event**] - [**Zweck**] - [**bestellen**]
 
@@ -110,7 +111,7 @@ So erstellen Sie eine Tag-Regel für die globalen XDM-Felder:
 
    ![Variablenschema aktualisieren](assets/create-rule-update-variable.png)
 
-Jetzt zuordnen [!UICONTROL Datenelemente] der [!UICONTROL schema] verwendet von Ihrem XDM-Objekt. Sie können einzelnen Eigenschaften oder ganzen Objekten zuordnen. In diesem Beispiel ordnen Sie die einzelnen Eigenschaften zu:
+Nun ordnen Sie Ihre [!UICONTROL Datenelemente] der [!UICONTROL schema] verwendet von Ihrem XDM-Objekt. Sie können einzelnen Eigenschaften oder ganzen Objekten zuordnen. In diesem Beispiel ordnen Sie die einzelnen Eigenschaften zu:
 
 1. Suchen Sie das Feld eventType und wählen Sie es aus.
 
@@ -171,7 +172,7 @@ Beginnen Sie mit der Verfolgung der Produktansichten auf der Produktdetailseite 
 1. Wählen Sie die ![+ Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) unter Ereignis zum Hinzufügen eines neuen Triggers
 1. under **[!UICONTROL Erweiterung]** auswählen **[!UICONTROL Core]**
 1. under **[!UICONTROL Ereignistyp]** auswählen **[!UICONTROL Bibliothek geladen (Seitenanfang)]**
-1. Zum Öffnen auswählen **[!UICONTROL Erweiterte Optionen]**, Typ in `20`. Dadurch wird sichergestellt, dass die Regel nach dem `all pages - library loaded - set global variables - 1` , der die globale Konfiguration festlegt.
+1. Zum Öffnen auswählen **[!UICONTROL Erweiterte Optionen]**, Typ in `20`. Dieser Bestellwert stellt sicher, dass die Regel nach dem `all pages - library loaded - set global variables - 1` , der die globale Konfiguration festlegt.
 
    ![Analytics-XDM-Regeln](assets/set-up-analytics-pdp.png)
 
@@ -345,9 +346,9 @@ Nachdem Sie die Variablen festgelegt haben, können Sie die Regel erstellen, um 
 
 1. Im **[!UICONTROL Aktionen]** Bereich, wählen Sie **[!UICONTROL Hinzufügen]**
 
-1. Als **[!UICONTROL Erweiterung]** auswählen  **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. Als **[!UICONTROL Erweiterung]** auswählen **[!UICONTROL Adobe Experience Platform Web SDK]**
 
-1. Als  **[!UICONTROL Aktionstyp]** auswählen  **[!UICONTROL Ereignis senden]**
+1. Als  **[!UICONTROL Aktionstyp]** auswählen **[!UICONTROL Ereignis senden]**
 
 1. Als **[!UICONTROL XDM]**, wählen Sie die `xdm.variable.content` Datenelement, das in der vorherigen Lektion erstellt wurde
 
@@ -358,7 +359,7 @@ Nachdem Sie die Variablen festgelegt haben, können Sie die Regel erstellen, um 
 
    ![Speichern der Regel](assets/create-rule-save-rule.png)
 
-## Regel in einer Bibliothek veröffentlichen
+## Regeln in einer Bibliothek veröffentlichen
 
 Veröffentlichen Sie dann die Regel in Ihrer Entwicklungsumgebung, damit Sie überprüfen können, ob sie funktioniert.
 
@@ -393,4 +394,4 @@ Jetzt können Sie die Daten in der Anfrage mithilfe des Adobe Experience Platfor
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

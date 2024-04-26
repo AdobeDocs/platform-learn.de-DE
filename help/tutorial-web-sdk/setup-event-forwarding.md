@@ -1,18 +1,19 @@
 ---
-title: Einrichten einer Ereignisweiterleitungs-Eigenschaft
+title: Einrichten der Ereignisweiterleitung mit Platform Web SDK-Daten
 description: Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1873'
 ht-degree: 4%
 
 ---
 
-# Einrichten einer Ereignisweiterleitungs-Eigenschaft
+# Einrichten der Ereignisweiterleitung mit Platform Web SDK-Daten
 
-Erfahren Sie, wie Sie die Ereignisweiterleitungs-Eigenschaft mithilfe von Experience Platform Web SDK-Daten verwenden.
+Erfahren Sie, wie Sie die Ereignisweiterleitung mit Adobe Experience Platform Web SDK-Daten verwenden.
 
 Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassung verfügbar ist. Die Ereignisweiterleitung bietet Ihnen die Möglichkeit, Daten direkt vom Adobe Experience Platform-Edge Network an Drittanbieter zu senden, die keine Adobe sind, und nicht an den herkömmlichen Client-seitigen Browser. Erfahren Sie mehr über die Vorteile der Ereignisweiterleitung im [Übersicht über die Ereignisweiterleitung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
@@ -22,7 +23,7 @@ Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassu
 Um die Ereignisweiterleitung in Adobe Experience Platform zu verwenden, müssen Daten zunächst mit einer oder mehreren der folgenden drei Optionen an das Adobe Experience Platform-Edge Network gesendet werden:
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
+* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -46,11 +47,11 @@ Am Ende dieser Lektion können Sie:
 ## Voraussetzungen
 
 * Eine Softwarelizenz, die die Ereignisweiterleitung enthält. Die Ereignisweiterleitung ist eine gebührenpflichtige Funktion der Datenerfassung. Weitere Informationen erhalten Sie von Ihrem Adobe-Account-Team.
-* Die Ereignisweiterleitung wurde in Ihrer Experience Cloud-Organisation aktiviert.
+* Die Ereignisweiterleitung ist in Ihrer Experience Cloud-Organisation aktiviert.
 * Benutzerberechtigung für die Ereignisweiterleitung. (in [Admin Console](https://adminconsole.adobe.com/), unter dem Adobe Experience Platform Launch-Produkt, Berechtigungselemente für[!UICONTROL Plattformen] > [!UICONTROL Edge] und alle [!UICONTROL Eigenschaftsrechte]). Nach der Erteilung sollte [!UICONTROL Ereignisweiterleitung] im linken Navigationsbereich der Datenerfassungsoberfläche:
   ![Eigenschaften für die Ereignisweiterleitung](assets/event-forwarding-menu.png)
 
-* Adobe Experience Platform Web oder Mobile SDK konfiguriert, um Daten an Edge Network zu senden. Sie müssen die folgenden Lektionen dieses Tutorials abgeschlossen haben:
+* Adobe Experience Platform Web oder Mobile SDK ist so konfiguriert, dass Daten an Edge Network gesendet werden. Sie müssen die folgenden Lektionen dieses Tutorials abgeschlossen haben:
 
    * Erstkonfiguration
 
@@ -83,7 +84,7 @@ Erstellen Sie zunächst eine Ereignisweiterleitungs-Eigenschaft:
 
 ## Konfigurieren des Datenspeichers
 
-Damit die Ereignisweiterleitung die an das Edge-Netzwerk gesendeten Daten verwenden kann, müssen Sie die neu erstellte Ereignisweiterleitungs-Eigenschaft mit demselben Datastream verknüpfen, der zum Senden von Daten an Adobe-Lösungen verwendet wird.
+Damit die Ereignisweiterleitung die an das Platform-Edge Network gesendeten Daten verwenden kann, müssen Sie die neu erstellte Ereignisweiterleitungs-Eigenschaft mit demselben Datastream verknüpfen, der zum Senden von Daten an Adobe-Lösungen verwendet wird.
 
 So konfigurieren Sie Target im Datastream:
 
@@ -113,7 +114,7 @@ Wiederholen Sie diese Schritte für Staging- und Produktionsdatenspeicher, wenn 
 
 ## Weiterleiten von Daten vom Platform-Edge Network an eine Nicht-Adobe-Lösung
 
-In dieser Übung erfahren Sie, wie Sie ein Datenelement für die Ereignisweiterleitung einrichten, eine Ereignisweiterleitungsregel konfigurieren und mit einem Tool des dritten Teils, dem so genannten [webhook.site](https://webhook.site/).
+In dieser Übung erfahren Sie, wie Sie ein Datenelement für die Ereignisweiterleitung einrichten, eine Ereignisweiterleitungsregel konfigurieren und mit einem Tool eines Drittanbieters mit dem Namen [webhook.site](https://webhook.site/).
 
 >[!NOTE]
 >
@@ -209,7 +210,7 @@ Es gibt einige Hauptunterschiede zwischen dem Konfigurieren von Regeln in einer 
 
 * **[!UICONTROL Veranstaltungen] &amp; [!UICONTROL Bedingungen]**:
 
-   * **Tags**: Alle Regeln werden durch ein Ereignis ausgelöst, das in der Regel angegeben werden muss, beispielsweise `Library Loaded - Page Top`. Bedingungen sind optional.
+   * **Tags**: Alle Regeln werden durch ein Ereignis ausgelöst, das in der Regel angegeben werden muss, beispielsweise: `Library Loaded - Page Top`. Bedingungen sind optional.
    * **Ereignisweiterleitung**: Es wird davon ausgegangen, dass jedes Ereignis, das an Platform Edge Network gesendet wird, ein Trigger zur Weiterleitung von Daten ist. Daher gibt es keine [!UICONTROL Veranstaltungen] muss in Ereignisweiterleitungsregeln ausgewählt werden. Um zu verwalten, welche Ereignisse Trigger einer Ereignisweiterleitungsregel sind, müssen Sie Bedingungen konfigurieren.
 
 * **Tokenisierung von Datenelementen**:
@@ -220,7 +221,7 @@ Es gibt einige Hauptunterschiede zwischen dem Konfigurieren von Regeln in einer 
 
 * **Sequenz von Regelaktionen**:
 
-   * Der Abschnitt Aktionen einer Ereignisweiterleitungsregel wird immer nacheinander ausgeführt. Stellen Sie also beim Speichern einer Regel sicher, dass die Reihenfolge der Aktionen korrekt ist. Diese Ausführungsreihenfolge kann im Gegensatz zu Tags nicht asynchron ausgeführt werden.
+   * Der Abschnitt Aktionen einer Ereignisweiterleitungsregel wird immer nacheinander ausgeführt. Stellen Sie beim Speichern einer Regel sicher, dass die Reihenfolge der Aktionen korrekt ist. Diese Ausführungsreihenfolge kann im Gegensatz zu Tags nicht asynchron ausgeführt werden.
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -231,7 +232,7 @@ Um eine Regel zum Weiterleiten von Daten an Ihren Webhook zu konfigurieren, müs
 
 1. Navigieren Sie zu [webhook.site](https://webhook.site)
 
-1. Suchen **Ihre eindeutige URL** verwenden, werden Sie dies als URL-Anfrage in Ihrer Ereignisweiterleitungsregel verwenden.
+1. Suchen **Ihre eindeutige URL** verwenden, verwenden Sie dies als URL-Anfrage in Ihrer Ereignisweiterleitungsregel.
 
 1. Auswählen **[!UICONTROL In Zwischenablage kopieren]**
 
@@ -324,4 +325,4 @@ Herzlichen Glückwunsch! Sie haben die Ereignisweiterleitung konfiguriert!
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,10 +1,11 @@
 ---
-title: Streamen von Daten an Adobe Experience Platform mit dem Web SDK
+title: Streamen von Daten an Adobe Experience Platform mit dem Platform Web SDK
 description: Erfahren Sie, wie Sie Webdaten mit dem Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1592'
 ht-degree: 7%
 
 ---
@@ -38,7 +39,7 @@ Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 ## Erstellen eines Datensatzes
 
-Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, werden im Data Lake als Datensätze persistiert. A [Datensatz](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) ist ein Speicher- und Verwaltungskonstrukt für eine Sammlung von Daten, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben.
+Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, werden im Data Lake als Datensätze persistiert. A [Datensatz](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) ist ein Speicher- und Verwaltungskonstrukt für eine Datenerfassung, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben.
 
 Richten wir einen Datensatz für Ihre Luma-Web-Ereignisdaten ein:
 
@@ -83,7 +84,7 @@ Jetzt können Sie Ihre [!UICONTROL datastream] zum Senden von Daten an [!UICONTR
 
    ![Datenspeicherkonfiguration](assets/experience-platform-datastream-config.png)
 
-Beim Generieren des Traffics auf [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) Ihrer Tag-Eigenschaft zugeordnet sind, füllen die Daten den Datensatz in Experience Platform!
+Beim Generieren des Traffics auf [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) Ihrer Tag-Eigenschaft zugeordnet sind, füllen die Daten den Datensatz in Experience Platform aus!
 
 ## Datensatz validieren
 
@@ -211,7 +212,7 @@ Zunächst müssen Sie weitere Beispieldaten generieren. Wiederholen Sie die Schr
 1. Im [Experience Platform](https://experience.adobe.com/platform/) Benutzeroberfläche, wählen Sie **[!UICONTROL Profile]** im linken Navigationsbereich
 
 1. Als **[!UICONTROL Identitäts-Namespace]** use `lumaCRMId`
-1. Kopieren und Einfügen des Werts des `lumaCRMId` an den Aufruf weitergegeben, den Sie im Experience Platform Debugger überprüft haben, in diesem Fall `112ca06ed53d3db37e4cea49cc45b71e`.
+1. Kopieren und Einfügen des Werts des `lumaCRMId` den Aufruf übergeben, den Sie im Experience Platform Debugger überprüft haben, in diesem Fall `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![Profil](assets/experience-platform-validate-dataset-profile.png)
 
@@ -237,4 +238,4 @@ Sie haben jetzt das Platform Web SDK für Experience Platform (und Real-Time CDP
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

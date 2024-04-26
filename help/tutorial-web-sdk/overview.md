@@ -3,7 +3,7 @@ title: Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK
 description: Erfahren Sie, wie Sie Experience Cloud-Anwendungen mit dem Adobe Experience Platform Web SDK implementieren.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 4%
@@ -48,7 +48,7 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über ein Adobe-Konto und d
    * **[!UICONTROL Eigenschaftsrechte]**—permission to **[!UICONTROL Genehmigen]**, **[!UICONTROL Entwickeln]**, **[!UICONTROL Eigenschaft bearbeiten]**, **[!UICONTROL Verwalten von Umgebungen]**, **[!UICONTROL Verwalten von Erweiterungen]**, und **[!UICONTROL Veröffentlichen]**,
    * **[!UICONTROL Unternehmensrechte]**—permission to **[!UICONTROL Eigenschaften verwalten]**
 
-     Weitere Informationen zu Berechtigungen für Tags finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
+     Weitere Informationen zu Tag-Berechtigungen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * Für **Experience Platform**, müssen Sie über Folgendes verfügen:
 
@@ -66,7 +66,7 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über ein Adobe-Konto und d
 
 * Für das optionale **Adobe Analytics** Lektion, müssen Sie [Administratorzugriff auf Report Suite-Einstellungen, Verarbeitungsregeln und Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* Für das optionale **Adobe Target** Lektion, müssen Sie [Bearbeiter oder Genehmiger](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) Zugriff.
+* Für das optionale **Adobe Target** Lektion, müssen Sie [Bearbeiter oder Genehmiger](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) Zugriff.
 
 * Für das optionale **Audience Manager** -Lektion erstellen, lesen und schreiben Sie Eigenschaften, Segmente und Ziele. Weitere Informationen finden Sie im Tutorial zu [Rollenbasierte Zugriffssteuerung des Audience Managers](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
@@ -77,7 +77,7 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über ein Adobe-Konto und d
 
 ## Updates
 
-* 24. April 2024: Größere Aktualisierung, einschließlich Hinzufügen der Variablen &quot;Set Variable/Update Variable&quot;, Aufspaltung von Personalisierungs- und Analyseanforderungen, Journey Optimizer-Lektionen
+* 24. April 2024: Wichtige Updates, einschließlich Hinzufügen der Variablen &quot;Set Variable/Update Variable&quot;, Aufspaltung von Personalisierungs- und Analyseanforderungen, Journey Optimizer-Lektionen
 
 ## Laden der Website Luma
 
@@ -91,4 +91,4 @@ Los geht‘s!
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

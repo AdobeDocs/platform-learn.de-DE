@@ -4,20 +4,21 @@ description: Erfahren Sie, wie Sie den Journey Optimizer-Webkanal mit dem Platfo
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
+jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2892'
 ht-degree: 1%
 
 ---
 
 
-# Journey Optimizer-Webkanal einrichten
+# Einrichten des Journey Optimizer-Webkanals mit dem Web SDK
 
-Erfahren Sie, wie Sie die Journey Optimizer implementieren [Webkanal](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Verwenden des Platform Web SDK. In dieser Lektion werden die grundlegenden Voraussetzungen für Webkanäle, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
+Erfahren Sie, wie Sie die Adobe Journey Optimizer implementieren [Webkanal](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Verwenden des Adobe Experience Platform Web SDK. In dieser Lektion werden die grundlegenden Voraussetzungen für Webkanäle, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
 
-In dieser Lektion werden Journey Optimizer-Benutzer so konfiguriert, dass sie den Webkanal für eine erweiterte Online-Personalisierung mit dem Journey Optimizer-Webdesigner effektiv anwenden können.
+In dieser Lektion werden Journey Optimizer-Benutzer für eine erweiterte Online-Personalisierung mit dem Journey Optimizer-Webdesigner mit dem Webkanal ausgestattet.
 
 ![Web SDK und Adobe Analytics-Diagramm](assets/dc-websdk-ajo.png)
 
@@ -51,7 +52,7 @@ Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
   > 1. Die Website ist in einen iframe eingebettet.
   > 1. Die QA- oder Staging-Site des Kunden ist nicht extern zugänglich (es handelt sich um eine interne Site).
 
-* Beim Erstellen von Web-Erlebnissen und Einschließen von Inhalten aus der Adobe Experience Manager Assets Essentials-Bibliothek ist es erforderlich, [Subdomain für die Veröffentlichung dieses Inhalts konfigurieren](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
+* Beim Erstellen von Web-Erlebnissen und Einschließen von Inhalten aus der Adobe Experience Manager Assets Essentials-Bibliothek ist es erforderlich, [Subdomain für die Veröffentlichung dieses Inhalts konfigurieren](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Stellen Sie bei Verwendung der Inhaltsexperimentierungsfunktion sicher, dass Ihr Webdatensatz auch in Ihrer Berichtskonfiguration enthalten ist.
 * Derzeit werden zwei Arten von Implementierungen unterstützt, um die Erstellung und Bereitstellung von Webkanalkampagnen in Ihren Webeigenschaften zu ermöglichen:
    * Nur Client-seitig: Um Ihre Website zu ändern, müssen Sie das Adobe Experience Platform Web SDK implementieren.
@@ -259,7 +260,7 @@ Lassen Sie uns nun das Webkanalerlebnis erstellen. Verwenden Sie dazu die Adobe 
 
    ![Inhalte bearbeiten](assets/web-channel-edit-content.png)
 
-1. Jetzt klicken **[!UICONTROL Webseite bearbeiten]** , um mit dem Authoring zu beginnen.
+1. Klicken Sie jetzt auf **[!UICONTROL Webseite bearbeiten]** , um mit dem Authoring zu beginnen.
 
    ![Webseite bearbeiten](assets/web-channel-edit-web-page.png)
 
@@ -387,4 +388,4 @@ So starten Sie die Validierung mit dem Debugger:
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

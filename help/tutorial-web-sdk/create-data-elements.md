@@ -1,18 +1,19 @@
 ---
-title: Erstellen von Datenelementen
+title: Erstellen von Datenelementen für das Platform Web SDK
 description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
+jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1205'
 ht-degree: 2%
 
 ---
 
 # Erstellen von Datenelementen
 
-Erfahren Sie, wie Sie Datenelemente in Tags für Inhalts-, Commerce- und Identitätsdaten in der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html). Füllen Sie dann die Felder in Ihrem XDM-Schema mit dem Datenelementtyp der Platform Web SDK-Erweiterung Variable aus.
+Erfahren Sie, wie Sie Datenelemente in Tags für Inhalts-, Commerce- und Identitätsdaten in der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html). Füllen Sie dann die Felder in Ihrem XDM-Schema mit dem Datenelementtyp der Adobe Experience Platform Web SDK-Erweiterung Variable aus.
 
 ## Lernziele
 
@@ -99,7 +100,7 @@ window.adobeDataLayer.push({
 Vorteile
 
 * Beseitigt zusätzliche Schritte, die auf Datenschichtvariablen in XDM beschränkt sind
-* Kann schneller bereitgestellt werden, wenn Ihr Entwicklungsteam über das Tagging digitaler Verhaltensweisen verfügt
+* Die Bereitstellung kann schneller erfolgen, wenn Ihr Entwicklungsteam über das Tagging digitaler Verhaltensweisen verfügt
 
 Nachteile
 
@@ -138,7 +139,7 @@ Bei diesem Ansatz werden Funktionen verwendet, die in die Datastream-Konfigurati
 
 * Flexibel, da Sie einzelne Variablen XDM zuordnen können
 * Fähigkeit [Neue Werte berechnen](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) oder [Datentypen transformieren](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) aus einer Datenschicht, bevor sie an XDM gesendet wird
-* Nutzen Sie eine [Zuordnungs-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) , um Felder in Ihren Quelldaten mit einer Point-and-Click-Benutzeroberfläche XDM zuzuordnen.
+* Nutzen Sie eine [Zuordnungs-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) , um Felder in Ihren Quelldaten mit einer Point-and-Click-Benutzeroberfläche XDM zuzuordnen.
 
 #### Nachteile
 
@@ -298,4 +299,4 @@ Wenn diese Datenelemente vorhanden sind, können Sie mit dem Senden von Daten an
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
