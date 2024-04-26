@@ -3,16 +3,16 @@ title: WebSDK-Implementierungen mit Experience Platform Assurance validieren
 description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Assurance überprüfen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '609'
 ht-degree: 3%
 
 ---
 
 # WebSDK-Implementierungen mit Experience Platform Assurance validieren
 
-Adobe Experience Platform Assurance ist ein Produkt aus Adobe Experience Cloud, mit dem Sie die Datenerfassung und Bereitstellung von Erlebnissen überprüfen, testen, simulieren und validieren können. Mehr dazu [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform Assurance ist eine Funktion, mit der Sie die Datenerfassung und Bereitstellung von Erlebnissen überprüfen, testen, simulieren und validieren können. Mehr dazu [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## Lernziele
@@ -51,10 +51,11 @@ Jedes Mal, wenn Sie Edge Trace in Adobe Experience Platform Debugger aktivieren,
 1. Wählen Sie die **[!UICONTROL Edge]** und wählen Sie **[!UICONTROL Verbinden]**
 
    ![Edge Trace verbinden](assets/analytics-debugger-edgeTrace.png)
-1. Wenn Edge Trace aktiviert ist, sehen Sie oben ein Symbol für einen ausgehenden Link. Wählen Sie das Symbol aus, um &quot;Versicherung&quot;zu öffnen. Eine neue Registerkarte in Ihrem Browser wird geöffnet.
+1. Wenn Edge Trace aktiviert ist, sehen Sie oben ein Symbol für einen ausgehenden Link. Wählen Sie das Symbol aus, um &quot;Versicherung&quot;zu öffnen.
 
    ![Starten einer Assurance-Sitzung](assets/validate-debugger-start-assurnance.png)
 
+1. Eine neue Browser-Registerkarte wird mit der Assurance-Benutzeroberfläche geöffnet.
 
 ### Starten einer Zuverlässigkeitssitzung über die Assurance-Oberfläche
 
@@ -88,7 +89,7 @@ Zu diesem Zeitpunkt Ihrer Implementierung sind nur begrenzte Informationen verf�
 
 In zukünftigen Lektionen verwenden Sie Assurance, um vollständig verarbeitete Payloads zu validieren und eine Adobe-Anwendung zu erreichen, die in Ihrem Datastream aktiviert ist.
 
-Da jetzt ein XDM-Objekt auf einer Seite ausgelöst wird und Sie wissen, wie Sie Ihre Datenerfassung überprüfen können, können Sie die einzelnen Adobe-Anwendungen mithilfe des Platform Web SDK einrichten.
+Da jetzt ein XDM-Objekt auf einer Seite ausgelöst wird und Sie wissen, wie Sie Ihre Datenerfassung überprüfen können, können Sie Experience Platform und die einzelnen Adobe-Anwendungen mithilfe des Platform Web SDK einrichten.
 
 [Weiter: ](setup-experience-platform.md)
 

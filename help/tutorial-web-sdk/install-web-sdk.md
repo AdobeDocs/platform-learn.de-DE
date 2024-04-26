@@ -3,10 +3,10 @@ title: Installieren und Konfigurieren der Adobe Experience Platform Web SDK-Tag-
 description: Erfahren Sie, wie Sie die Platform Web SDK-Tag-Erweiterung in der Datenerfassungsoberfläche installieren und konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 13%
+source-wordcount: '589'
+ht-degree: 14%
 
 ---
 
@@ -28,9 +28,7 @@ Sie müssen die vorherigen Lektionen in diesem Tutorial abgeschlossen haben:
 
 * [Konfigurieren eines Datenstroms](configure-datastream.md)
 
-## Installieren der Experience Platform Web SDK-Erweiterung
-
-### Hinzufügen einer Eigenschaft
+### Tag-Eigenschaft hinzufügen
 
 Zuerst müssen Sie über eine Tag-Eigenschaft verfügen. Eine Eigenschaft ist ein Container für alle JavaScript-, Regeln- und anderen Funktionen, die zum Erfassen von Details von einer Webseite und zum Senden an verschiedene Speicherorte erforderlich sind.
 
@@ -57,7 +55,7 @@ Nachdem Sie Ihr XDM-Schema, Ihren Datastream und Ihre Tag-Eigenschaft erstellt h
    ![Installieren der Web SDK-Erweiterung](assets/extension-platform-web-sdk.png)
 
 
-## Verknüpfen des Platform Web SDK mit Ihrem Datastream
+## Verknüpfen der Erweiterung mit Ihrem Datastream
 
 Behalten Sie die meisten Standardeinstellungen bei und aktualisieren Sie sie bei Bedarf später. Sie müssen jetzt nur die Erweiterung mit Ihrem Datastream verknüpfen:
 
@@ -71,19 +69,17 @@ Behalten Sie die meisten Standardeinstellungen bei und aktualisieren Sie sie bei
 
    ![Datenspeicherauswahl](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Nachdem Sie das Platform Web SDK installiert und mit dem Datastream verknüpft haben, können Sie mit der Zuordnung von Datenelementen zu einem XDM-Objekt mit dem erstellten Schema beginnen.
-
->[!NOTE]
->
->In diesem Tutorial konfigurieren Sie nur einen Datastream und verknüpfen ihn mit allen Tag-Umgebungen (Entwicklung, Staging und Produktion). Wenn Sie das Platform Web SDK auf Ihrer eigenen Website implementieren, sollten Sie für jede Umgebung einen separaten Datastraam konfigurieren und ihn Ihren Tag-Umgebungen zuordnen.
+Weitere Informationen zu den einzelnen Abschnitten der Erweiterung finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
 >Sie haben zwar keinen CNAME im [!UICONTROL Edge-Domäne] -Einstellung in dieser Lektion empfiehlt Adobe die Verwendung eines CNAME, wenn Sie das Platform Web SDK auf Ihrer eigenen Website implementieren. Auch wenn eine CNAME-Implementierung keine Vorteile hinsichtlich der Cookie-Lebensdauer bietet, kann sie andere Vorteile haben. Zu den Vorteilen gehört die Umgehung der Funktionen von Ad-Blockern und selten verwendeten Browser, die keine Daten an Domains senden, die sie als Tracker klassifizieren. In diesen Fällen kann die Verwendung eines CNAME-Eintrags verhindern, dass Ihre Datenerfassung bei Benutzern unterbunden wird, die diese Tools verwenden.
 
-Weitere Informationen zu den einzelnen Abschnitten der Erweiterung finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
+>[!NOTE]
+>
+>In diesem Tutorial konfigurieren Sie nur einen Datastream und verknüpfen ihn mit allen Tag-Umgebungen (Entwicklung, Staging und Produktion). Wenn Sie das Platform Web SDK auf Ihrer eigenen Website implementieren, sollten Sie für jede Umgebung einen separaten Datastream konfigurieren und diese entsprechend in der Erweiterungskonfiguration zuordnen.
 
-
+Nachdem Sie das Platform Web SDK installiert und mit dem Datastream verknüpft haben, können Sie mit der Datenerfassung beginnen.
 
 [Weiter: ](create-data-elements.md)
 

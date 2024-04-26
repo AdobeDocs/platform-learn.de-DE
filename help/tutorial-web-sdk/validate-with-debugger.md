@@ -3,9 +3,9 @@ title: WebSDK-Implementierungen mit Experience Platform Debugger validieren
 description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1194'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ Der Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Fire
 * [Firefox-Erweiterung](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-Wenn Sie den Debugger noch nie verwendet haben und dieser sich vom älteren Adobe Experience Cloud Debugger unterscheidet, sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
+Wenn Sie den Debugger noch nie verwendet haben, sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 In dieser Lektion verwenden Sie die [Adobe Experience Cloud Debugger-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) , um die Tag-Eigenschaft zu ersetzen, die auf der fest codiert ist. [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) mit Ihrer eigenen Eigenschaft.
 
-Diese Technik wird als Umgebungswechsel bezeichnet und ist später hilfreich, wenn Sie mit Tags auf Ihrer eigenen Website arbeiten. Sie können Ihre Produktions-Website in Ihren Browser laden, jedoch mit Ihrem *development* Tagumgebung. Mit dieser Funktion können Sie sicher Änderungen an Tags vornehmen und überprüfen - unabhängig von Ihren normalen Codeversionen. Schließlich ist diese Trennung der Marketing-Tag-Versionen von Ihren normalen Codeversionen einer der Hauptgründe, warum Kunden Tags überhaupt verwenden!
+Diese Technik wird als Umgebungswechsel bezeichnet und ist später hilfreich, wenn Sie mit Tags auf Ihrer eigenen Website arbeiten. Dadurch können Sie Ihre Produktions-Website in Ihren Browser laden, jedoch mit Ihrem *development* Tags-Bibliothek. Mit dieser Funktion können Sie sicher Änderungen an Tags vornehmen und überprüfen - unabhängig von Ihren normalen Codeversionen. Schließlich ist diese Trennung der Marketing-Tag-Versionen von Ihren normalen Codeversionen einer der Hauptgründe, warum Kunden Tags überhaupt verwenden!
 
 ## Lernziele
 
@@ -64,7 +64,7 @@ Der Experience Platform Debugger verfügt über eine coole Funktion, mit der Sie
 
    ![Aktionen auswählen > Ersetzen](assets/validate-switch-environment.png)
 
-1. Da Sie authentifiziert sind, ruft der Debugger Ihre verfügbaren Tag-Eigenschaften und -Umgebungen ab. Wählen Sie Ihre Eigenschaft aus. In diesem Fall `Web SDK Course 3`
+1. Da Sie authentifiziert sind, ruft der Debugger Ihre verfügbaren Tag-Eigenschaften und -Umgebungen ab. Auswählen der Eigenschaft
 1. Wählen Sie `Development` Umgebung
 1. Wählen Sie die **[!UICONTROL Anwenden]** button
 

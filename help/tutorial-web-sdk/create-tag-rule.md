@@ -3,21 +3,16 @@ title: Erstellen von Tag-Regeln
 description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform-Edge Network senden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '1957'
 ht-degree: 2%
 
 ---
 
 # Erstellen von Tag-Regeln
 
-Erfahren Sie, wie Sie mithilfe von Tag-Regeln Ereignisse mit Ihrem XDM-Objekt an das Platform-Edge Network senden. Eine Tag-Regel ist eine Kombination aus Ereignissen, Bedingungen und Aktionen, die die Tag-Eigenschaft anweist, etwas zu tun. Mit dem Platform Web SDK werden Regeln verwendet, um Ereignisse mit den richtigen XDM-Feldern an Platform Edge Network zu senden.
-
->[!NOTE]
->
-> Zu Demonstrationszwecken bauen die Übungen in dieser Lektion auf den vorherigen Lektionen zum Senden von Ereignissen von Benutzern auf der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
-
+Erfahren Sie, wie Sie mithilfe von Tag-Regeln Ereignisse mit Ihrem XDM-Objekt an das Platform-Edge Network senden. Eine Tag-Regel ist eine Kombination aus Ereignissen, Bedingungen und Aktionen, die die Tag-Eigenschaft anweist, etwas zu tun. Mit dem Platform Web SDK werden Regeln verwendet, um Ereignisse mit den richtigen Daten an Platform Edge Network zu senden.
 
 ## Lernziele
 
@@ -45,29 +40,28 @@ Sie kennen Datenerfassungs-Tags und die [Demosite &quot;Luma&quot;](https://luma
 
 Um Regeln in Tags besser zu verwalten, wird empfohlen, eine standardmäßige Namenskonvention zu befolgen. In diesem Tutorial wird eine fünfteilige Namenskonvention verwendet:
 
-* [**location**] - [**event**] - [**Zweck**] - [**Tool**] - [**bestellen**]
+* [**location**] - [**event**] - [**Zweck**] - [**bestellen**]
 
 wo;
 
 1. **location** ist die Seite oder die Seiten auf der Site, auf der die Regel ausgelöst wird.
 1. **event** ist der Trigger für die Regel
 1. **Zweck** ist die Hauptaktion, die von der Regel ausgeführt wird
-1. **Tool** ist die spezifische(n) Anwendung(en), die im Aktionsschritt für diese Regel verwendet wird (werden). Dies sollte mit dem Web SDK selten vorkommen.
-1. **Sequenz** ist die Reihenfolge, in der die Regel im Verhältnis zu anderen Regeln ausgelöst werden soll
+1. **bestellen** ist die Reihenfolge, in der die Regel im Verhältnis zu anderen Regeln ausgelöst werden soll
 <!-- minor update -->
 
 ## Erstellen von Tag-Regeln
 
 In -Tags werden Regeln verwendet, um unter verschiedenen Bedingungen Aktionen (Aufrufe auslösen) auszuführen. Die Platform Web SDK-Tag-Erweiterung umfasst zwei Aktionen, die in dieser Lektion verwendet werden:
 
-* **[!UICONTROL Variable aktualisieren]** ordnet Datenelemente XDM-Feldern zu
+* **[!UICONTROL Variable aktualisieren]** ordnet Datenelemente Eigenschaften in einem XDM-Objekt zu
 * **[!UICONTROL Ereignis senden]** sendet das XDM-Objekt an das Experience Platform-Edge Network
 
 Im Rest dieser Lektion werden wir:
 
-1. Erstellen Sie eine Regel zum Definieren einer &quot;globalen Konfiguration&quot;von XDM-Feldern (mithilfe von [!UICONTROL Variable aktualisieren] , die wir auf jeder Seite der Website (z. B. dem Seitennamen) mit der **[!UICONTROL Variable aktualisieren]** Aktion.
+1. Erstellen Sie eine Regel mit der **[!UICONTROL Variable aktualisieren]** Aktion zum Definieren einer &quot;globalen Konfiguration&quot;von XDM-Feldern.
 
-1. Erstellen Sie zusätzliche Regeln, die unsere &quot;globale Konfiguration&quot;außer Kraft setzen oder zusätzliche XDM-Felder hinzufügen (mithilfe von [!UICONTROL Variable aktualisieren] erneut), die nur unter bestimmten Bedingungen relevant sind (z. B. Hinzufügen von Produktdetails zu Produktseiten).
+1. Erstellen Sie zusätzliche Regeln mit der **[!UICONTROL Variable aktualisieren]** Aktion, die unsere &quot;globale Konfiguration&quot;außer Kraft setzt und unter bestimmten Bedingungen zusätzliche XDM-Felder hinzufügt (z. B. Produktdetails zu Produktseiten hinzufügen).
 
 1. Erstellen Sie eine weitere Regel mit dem **[!UICONTROL Ereignis senden]** -Aktion, die das vollständige XDM-Objekt an das Adobe Experience Platform-Edge Network sendet.
 
@@ -77,11 +71,9 @@ In diesem Video erhalten Sie einen Überblick über den Prozess:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
-### Aktualisieren von Variablenregeln
+### Globale Konfigurationsfelder
 
-#### Globale Konfiguration
-
-So erstellen Sie Tag-Regeln für globale XDM-Felder:
+So erstellen Sie eine Tag-Regel für die globalen XDM-Felder:
 
 1. Öffnen Sie die Tag-Eigenschaft, die Sie für dieses Tutorial verwenden
 
@@ -118,11 +110,7 @@ So erstellen Sie Tag-Regeln für globale XDM-Felder:
 
    ![Variablenschema aktualisieren](assets/create-rule-update-variable.png)
 
-Jetzt zuordnen [!UICONTROL Datenelemente] der [!UICONTROL schema] verwendet von Ihrem XDM-Objekt.
-
->[!NOTE]
-> 
-> Sie können einzelnen Eigenschaften oder ganzen Objekten zuordnen. In diesem Beispiel ordnen Sie einzelne Eigenschaften zu.
+Jetzt zuordnen [!UICONTROL Datenelemente] der [!UICONTROL schema] verwendet von Ihrem XDM-Objekt. Sie können einzelnen Eigenschaften oder ganzen Objekten zuordnen. In diesem Beispiel ordnen Sie die einzelnen Eigenschaften zu:
 
 1. Suchen Sie das Feld eventType und wählen Sie es aus.
 
@@ -160,13 +148,13 @@ Jetzt zuordnen [!UICONTROL Datenelemente] der [!UICONTROL schema] verwendet von 
 
    >[!TIP]
    >
-   > Während `eventType` auf `web.webpagedetails.pageViews` nor `web.webPageDetials.pageViews.value` erforderlich sind, damit Adobe Analytics ein Beacon als Seitenansicht verarbeiten kann, ist es nützlich, eine Standardmethode zur Anzeige einer Seitenansicht für andere nachgelagerte Anwendungen zu verwenden.
+   > Während `eventType` auf `web.webpagedetails.pageViews` nor `web.webPageDetails.pageViews.value` erforderlich sind, damit Adobe Analytics ein Beacon als Seitenansicht verarbeiten kann, ist es nützlich, eine Standardmethode zur Anzeige einer Seitenansicht für andere nachgelagerte Anwendungen zu verwenden.
 
 
 1. Auswählen **[!UICONTROL Änderungen beibehalten]** und dann **[!UICONTROL Speichern]** die Regel im nächsten Bildschirm, um die Erstellung der Regel abzuschließen
 
 
-#### Felder für Produktseiten
+### Felder für Produktseiten
 
 Beginnen Sie jetzt mit der Verwendung von **[!UICONTROL Variable aktualisieren]** in zusätzlichen, sequenzierten Regeln, um das XDM-Objekt anzureichern, bevor es an gesendet wird [!UICONTROL Platform-Edge Network].
 
@@ -235,7 +223,7 @@ Beginnen Sie mit der Verfolgung der Produktansichten auf der Produktdetailseite 
 1. Auswählen **[!UICONTROL Speichern]** zum Speichern der Regel
 
 
-#### Felder im Warenkorb
+### Felder im Warenkorb
 
 Sie können das gesamte Array einem XDM-Objekt zuordnen, vorausgesetzt, das Array entspricht dem Format des XDM-Schemas. Das Datenelement des benutzerspezifischen Codes `cart.productInfo` Sie haben frühere Schleifen durch `digitalData.cart.cartEntries` Datenschichtobjekt auf Luma und übersetzt es in das erforderliche Format der `productListItems` -Objekt des XDM-Schemas.
 
