@@ -9,9 +9,9 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Journeys
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '948'
 ht-degree: 5%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 5%
 
 In dieser Übung konfigurieren Sie die Journey, die ausgelöst werden muss, wenn jemand ein Konto auf der Demowebsite erstellt.
 
-Melden Sie sich bei Adobe Journey Optimizer an, indem Sie [Adobe Experience Cloud](https://experience.adobe.com). Klicken **Journey Optimizer**.
+Melden Sie sich über Adobe Journey Optimizer an. [Adobe Experience Cloud](https://experience.adobe.com). Klicks **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Sie werden zum **Startseite**  in Journey Optimizer anzeigen. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `Bootcamp`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **Prod** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **Bootcamp**. Sie sind dann im **Startseite** Ansicht Ihrer Sandbox `Bootcamp`.
+Sie werden zum **Startseite**  in Journey Optimizer anzeigen. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `Bootcamp`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **Prod** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel heißt die Sandbox **Bootcamp**. Sie sind dann im **Startseite** Ansicht Ihrer Sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -50,7 +50,7 @@ Wählen Sie das Ereignis aus, ziehen Sie es auf die Journey-Arbeitsfläche und l
 
 ![ACOP](./images/journeyevent.png)
 
-Als zweiten Schritt im Journey müssen Sie eine kurze **Warten** Schritt. Navigieren Sie zur linken Seite Ihres Bildschirms, um die **Orchestrierung** zu finden. Sie verwenden Profilattribute und müssen sicherstellen, dass sie in das Echtzeit-Kundenprofil eingetragen sind.
+Als zweiten Schritt im Journey müssen Sie eine kurze **Warten** Schritt. Navigieren Sie zur linken Seite Ihres Bildschirms, um die **Orchestrierung** -Abschnitt, um dies zu finden. Sie verwenden Profilattribute und müssen sicherstellen, dass sie in das Echtzeit-Kundenprofil eingetragen sind.
 
 ![ACOP](./images/journeywait.png)
 
@@ -58,9 +58,9 @@ Ihre Journey sieht jetzt so aus. Auf der rechten Bildschirmseite müssen Sie die
 
 ![ACOP](./images/journeywait1.png)
 
-Klicken **Ok** , um Ihre Änderungen zu speichern.
+Klicks **Ok** , um Ihre Änderungen zu speichern.
 
-Als dritten Schritt im Journey müssen Sie eine **Email** Aktion. Navigieren Sie zur linken Seite Ihres Bildschirms, um **Aktionen**, wählen Sie die **Email** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den zweiten Knoten im Journey. Das sehen Sie jetzt.
+Als dritten Schritt im Journey müssen Sie eine **Email** Aktion. Navigieren Sie zur linken Bildschirmseite, um **Aktionen**, wählen Sie die **Email** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den zweiten Knoten in Ihre Journey. Das sehen Sie jetzt.
 
 ![ACOP](./images/journeyactions.png)
 
@@ -106,17 +106,17 @@ Fügen Sie als Nächstes den Text hinzu **, danke für die Registrierung!**. Kli
 
 ![Journey Optimizer](./images/msg10.png)
 
-Du wirst dann wieder hier sein. Klicken **Email Designer** um den Inhalt der E-Mail zu erstellen.
+Du wirst dann wieder hier sein. Klicks **Email Designer** um den Inhalt der E-Mail zu erstellen.
 
 ![Journey Optimizer](./images/msg11.png)
 
 Im nächsten Bildschirm werden Sie mit 3 verschiedenen Methoden aufgefordert, den Inhalt der E-Mail bereitzustellen:
 
-- **Design von Grund auf neu**: Beginnen Sie mit einer leeren Arbeitsfläche und verwenden Sie den WYSIWYG-Editor, um Struktur- und Inhaltskomponenten per Drag-and-Drop zu verschieben, um den Inhalt der E-Mail visuell zu erstellen.
-- **Eigene Code**: Erstellen Sie eine eigene E-Mail-Vorlage durch Codierung mithilfe von HTML
+- **Design von Grund auf**: Beginnen Sie mit einer leeren Arbeitsfläche und verwenden Sie den WYSIWYG-Editor, um Struktur- und Inhaltskomponenten per Drag-and-Drop zu verschieben, um den Inhalt der E-Mail visuell zu erstellen.
+- **Eigene Code**: Erstellen Sie Ihre eigene E-Mail-Vorlage, indem Sie sie mit HTML kodieren
 - **HTML importieren**: Importieren Sie eine vorhandene HTML-Vorlage, die Sie bearbeiten können.
 
-Klicken **HTML importieren**. Alternativ können Sie auf **Gespeicherte Vorlagen** und wählen Sie die Vorlage aus **Bootcamp - E-Mail-Vorlage**.
+Klicks **HTML importieren**. Alternativ können Sie auf **Gespeicherte Vorlagen** und wählen Sie die Vorlage aus **Bootcamp - E-Mail-Vorlage**.
 
 ![Journey Optimizer](./images/msg12.png)
 
@@ -142,7 +142,7 @@ Sie werden jetzt feststellen, wie Ihrem Text das Personalisierungsfeld hinzugef�
 
 ![Journey Optimizer](./images/msg37.png)
 
-Klicken **Speichern** , um Ihre Nachricht zu speichern.
+Klicks **Speichern** , um Ihre Nachricht zu speichern.
 
 ![Journey Optimizer](./images/msg55.png)
 
@@ -150,7 +150,7 @@ Gehen Sie zum Nachrichten-Dashboard zurück, indem Sie auf die Schaltfläche **P
 
 ![Journey Optimizer](./images/msg56.png)
 
-Sie haben jetzt die Erstellung Ihrer Registrierungs-E-Mail abgeschlossen. Klicken Sie auf den Pfeil in der oberen linken Ecke, um zu Ihrer Journey zurückzukehren.
+Sie haben jetzt die Erstellung Ihrer Registrierungs-E-Mail abgeschlossen. Klicken Sie auf den Pfeil oben links, um zu Ihrer Journey zurückzukehren.
 
 ![Journey Optimizer](./images/msg57.png)
 
@@ -160,7 +160,7 @@ Klicken Sie auf **OK**.
 
 ## 2.3.3 Journey veröffentlichen
 
-Sie müssen Ihrer Journey noch einen Namen geben. Klicken Sie hierzu auf die Schaltfläche **Eigenschaften** rechts oben auf dem Bildschirm angezeigt.
+Sie müssen Ihrer Journey noch einen Namen geben. Klicken Sie hierzu auf die Schaltfläche **Bleistift** in der oberen linken Bildschirmseite angezeigt.
 
 ![ACOP](./images/journeyname.png)
 
@@ -172,7 +172,7 @@ Sie können Ihre Journey jetzt veröffentlichen, indem Sie auf **Veröffentliche
 
 ![ACOP](./images/publishjourney.png)
 
-Klicken **Veröffentlichen** erneut.
+Klicks **Veröffentlichen** erneut.
 
 ![ACOP](./images/publish1.png)
 

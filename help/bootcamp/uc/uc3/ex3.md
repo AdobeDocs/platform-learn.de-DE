@@ -9,9 +9,9 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Events
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '839'
 ht-degree: 4%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 4%
 
 In dieser Übung konfigurieren Sie die Journey und Nachricht, die ausgelöst werden müssen, wenn ein Benutzer mithilfe der App ein Beacon betritt.
 
-Melden Sie sich bei Adobe Journey Optimizer an, indem Sie [Adobe Experience Cloud](https://experience.adobe.com). Klicken **Journey Optimizer**.
+Melden Sie sich über Adobe Journey Optimizer an. [Adobe Experience Cloud](https://experience.adobe.com). Klicks **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Sie werden zum **Startseite**  in Journey Optimizer anzeigen. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `Bootcamp`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **Prod** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **Bootcamp**. Sie sind dann im **Startseite** Ansicht Ihrer Sandbox `Bootcamp`.
+Sie werden zum **Startseite**  in Journey Optimizer anzeigen. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `Bootcamp`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **Prod** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel heißt die Sandbox **Bootcamp**. Sie sind dann im **Startseite** Ansicht Ihrer Sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -46,11 +46,11 @@ Jetzt müssen Sie dieses Ereignis als Beginn dieser Journey nehmen. Gehen Sie da
 
 ![ACOP](./images/eventlist.png)
 
-Wählen Sie das Ereignis aus, ziehen Sie es auf die Journey-Arbeitsfläche und legen Sie es ab. Ihre Journey sieht jetzt so aus. Klicken **Ok** , um Ihre Änderungen zu speichern.
+Wählen Sie das Ereignis aus, ziehen Sie es auf die Journey-Arbeitsfläche und legen Sie es ab. Ihre Journey sieht jetzt so aus. Klicks **Ok** , um Ihre Änderungen zu speichern.
 
 ![ACOP](./images/journeyevent.png)
 
-Als zweiten Schritt im Journey müssen Sie eine **Push** Aktion. Navigieren Sie zur linken Seite Ihres Bildschirms, um **Aktionen**, wählen Sie die **Push** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den zweiten Knoten im Journey.
+Als zweiten Schritt im Journey müssen Sie eine **Push** Aktion. Navigieren Sie zur linken Bildschirmseite, um **Aktionen**, wählen Sie die **Push** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den zweiten Knoten in Ihre Journey.
 
 ![ACOP](./images/journeyactions.png)
 
@@ -62,7 +62,7 @@ Legen Sie die **Kategorie** nach **Marketing** und wählen Sie eine Push-Oberfl�
 
 ## 3.3.2 Nachricht erstellen
 
-Klicken **Inhalt bearbeiten**.
+Klicks **Inhalt bearbeiten**.
 
 ![ACOP](./images/emptymsg.png)
 
@@ -92,11 +92,11 @@ Schreiben Sie im Textbereich `Welcome at the `.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Klicken Sie anschließend auf **Kontextuelle Attribute** und dann **Journey Orchestration**.
+Klicken Sie anschließend auf **Kontextattribute** und dann **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
-Klicken **Veranstaltungen**.
+Klicks **Veranstaltungen**.
 
 ![ACOP](./images/jomsg4.png)
 
@@ -104,15 +104,15 @@ Klicken Sie auf den Namen Ihres Ereignisses, der wie folgt aussehen sollte: **yo
 
 ![ACOP](./images/jomsg5.png)
 
-Klicken **Ortskontext**.
+Klicks **Ortskontext**.
 
 ![ACOP](./images/jomsg6.png)
 
-Klicken **POI-Interaktion**.
+Klicks **POI-Interaktion**.
 
 ![ACOP](./images/jomsg7.png)
 
-Klicken **POI-Detail**.
+Klicks **POI-Detail**.
 
 ![ACOP](./images/jomsg8.png)
 
@@ -121,7 +121,7 @@ Dann wirst du das sehen. Klicken Sie auf **Speichern**.
 
 ![ACOP](./images/jomsg9.png)
 
-Ihre Nachricht ist jetzt bereit. Klicken Sie auf den Pfeil in der oberen linken Ecke, um zu Ihrer Journey zurückzukehren.
+Ihre Nachricht ist jetzt bereit. Klicken Sie auf den Pfeil oben links, um zu Ihrer Journey zurückzukehren.
 
 ![ACOP](./images/jomsg11.png)
 
@@ -131,7 +131,7 @@ Klicken Sie auf **OK**.
 
 ## 3.3.2 Nachricht an einen Bildschirm senden
 
-Als dritten Schritt im Journey müssen Sie eine **sendMessageToScreen** Aktion. Navigieren Sie zur linken Seite Ihres Bildschirms, um **Aktionen**, wählen Sie die **sendMessageToScreen** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den dritten Knoten in Ihre Journey. Dann wirst du das sehen.
+Als dritten Schritt im Journey müssen Sie eine **sendMessageToScreen** Aktion. Navigieren Sie zur linken Bildschirmseite, um **Aktionen**, wählen Sie die **sendMessageToScreen** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den dritten Knoten im Journey. Dann wirst du das sehen.
 
 ![ACOP](./images/jomsg15.png)
 
@@ -177,11 +177,11 @@ Das Endergebnis sollte wie folgt aussehen:
 
 ![ACOP](./images/jomsg20.png)
 
-Scrollen Sie nach oben und klicken Sie auf **Ok**.
+Scrollen Sie nach oben und klicken Sie **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
-Sie müssen Ihrer Journey noch einen Namen geben. Klicken Sie hierzu auf die Schaltfläche **Eigenschaften** rechts oben auf dem Bildschirm angezeigt.
+Sie müssen Ihrer Journey noch einen Namen geben. Klicken Sie hierzu auf die Schaltfläche **Bleistift** in der oberen linken Bildschirmseite angezeigt.
 
 ![ACOP](./images/journeyname.png)
 
@@ -193,7 +193,7 @@ Sie können Ihre Journey jetzt veröffentlichen, indem Sie auf **Veröffentliche
 
 ![ACOP](./images/publishjourney.png)
 
-Klicken **Veröffentlichen** erneut.
+Klicks **Veröffentlichen** erneut.
 
 ![ACOP](./images/publish1.png)
 
