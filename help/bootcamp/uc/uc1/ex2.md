@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In dieser Übung melden Sie sich bei Adobe Experience Platform an und sehen sich
 
 ## Geschichte
 
-Im Echtzeit-Kundenprofil werden alle Profildaten zusammen mit Ereignisdaten sowie vorhandenen Segmentmitgliedschaften angezeigt. Die angezeigten Daten können von überall kommen, von Adobe-Anwendungen und externen Lösungen. Dies ist die leistungsstärkste Ansicht in Adobe Experience Platform, das wahre Erlebnissystem der Aufzeichnungen.
+Im Echtzeit-Kundenprofil werden alle Profildaten zusammen mit Ereignisdaten sowie vorhandenen Zielgruppenmitgliedschaften angezeigt. Die angezeigten Daten können von überall kommen, von Adobe-Anwendungen und externen Lösungen. Dies ist die leistungsstärkste Ansicht in Adobe Experience Platform, das wahre Erlebnissystem der Aufzeichnungen.
 
 ## 1.2.1 Verwenden der Kundenprofilansicht in Adobe Experience Platform
 
@@ -30,7 +30,7 @@ Navigieren Sie zu [Adobe Experience Platform](https://experience.adobe.com/platf
 
 Bevor Sie fortfahren, müssen Sie eine **Sandbox**. Die auszuwählende Sandbox heißt ``Bootcamp``. Klicken Sie hierzu auf den Text **[!UICONTROL Produktionsprodukt]** in der blauen Zeile auf Ihrem Bildschirm. Nach Auswahl der entsprechenden [!UICONTROL Sandbox], sehen Sie die Änderung des Bildschirms und befinden sich jetzt in Ihrem [!UICONTROL Sandbox].
 
-![Datenaufnahme](./images/sb1.png)
+
 
 Gehen Sie im linken Menü zu **Profile** und **Durchsuchen**.
 
@@ -39,6 +39,9 @@ Gehen Sie im linken Menü zu **Profile** und **Durchsuchen**.
 Im Bedienfeld &quot;Profil-Viewer&quot;auf Ihrer Website finden Sie die Identitätsübersicht. Jede Identität ist mit einem Namespace verknüpft.
 
 ![Kundenprofil](./images/identities.png)
+
+
+
 
 Bei Adobe Experience Platform sind alle IDs gleichermaßen wichtig. Zuvor war die ECID die wichtigste ID im Adobe-Kontext, und alle anderen IDs waren hierarchisch mit der ECID verknüpft. Bei Adobe Experience Platform ist dies nicht mehr der Fall und jede ID kann als primäre Kennung betrachtet werden.
 
@@ -56,13 +59,13 @@ Navigieren Sie zu **Veranstaltungen**, wo Sie Einträge für jedes Erlebnisereig
 
 ![Kundenprofil](./images/profileee.png)
 
-Navigieren Sie schließlich zur Menüoption . **Segmentmitgliedschaft**. Jetzt werden alle Segmente angezeigt, die für dieses Profil qualifiziert sind.
+Navigieren Sie schließlich zur Menüoption . **Zielgruppenmitgliedschaft**. Jetzt werden alle Zielgruppen angezeigt, die für dieses Profil qualifiziert sind.
 
 ![Kundenprofil](./images/profileseg.png)
 
-Erstellen wir nun ein neues Segment, mit dem Sie das Kundenerlebnis für einen anonymen oder bekannten Kunden personalisieren können.
+Erstellen wir nun eine neue Zielgruppe, mit der Sie das Kundenerlebnis für einen anonymen oder bekannten Kunden personalisieren können.
 
-Nächster Schritt: [1.3 Segment erstellen - Benutzeroberfläche](./ex3.md)
+Nächster Schritt: [1.3 Erstellen einer Zielgruppe - Benutzeroberfläche](./ex3.md)
 
 [Zurück zum Benutzerfluss 1](./uc1.md)
 

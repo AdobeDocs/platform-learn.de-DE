@@ -3,9 +3,9 @@ title: Experience Maker Bootcamp
 description: Startpunkt für Teilnehmer des Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
+source-git-commit: 97591b0e14468c136e60c60580aeab0b7bbbbbb4
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -18,20 +18,56 @@ Viele Unternehmen sind sich der Spannungen im Journey ihrer Kunden nicht bewusst
 
 Treten Sie diesem Bootcamp bei, um zu erfahren, wie ein plattformbasierter Ansatz Ihnen dabei hilft, die Einblicke zu erhalten, die Sie benötigen, um Reibungspunkte zu identifizieren und zu beseitigen, um die Journey Ihres Kunden zu verbessern.
 
-Personalisierung im Maßstab beginnt damit, zu verstehen, was verbessert werden kann, und eine Echtzeitansicht Ihres Kunden ist dabei von entscheidender Bedeutung. Einblicke führen zu Aktionen, was zu mehr Einblicken führt. Der einzigartige plattformorientierte Ansatz von Adobe bietet Ihnen die Werkzeuge, um nicht nur den technologischen Wandel voranzutreiben, sondern auch Ihr Unternehmen, Ihr Team und Ihre Fähigkeit, anstelle eines kanalspezifischen Kundenerlebnisses ein ganzheitliches Kundenerlebnis zu bieten.
-
->[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
+Personalisierung im Maßstab beginnt damit, zu verstehen, was verbessert werden kann, und eine Echtzeitansicht Ihres Kunden ist dabei von entscheidender Bedeutung. Einblicke führen zu Aktionen, was zu mehr Einblicken führt. Mit dem einzigartigen plattformorientierten Ansatz erhalten Sie Tools, die nicht nur den technologischen Wandel vorantreiben, sondern auch Ihr Unternehmen, Ihr Team und Ihre Fähigkeit beeinflussen, anstelle eines kanalspezifischen Kundenerlebnisses ein ganzheitliches Kundenerlebnis zu bieten.
 
 ## Agenda
 
 ### Tag 1
 
+9:30: Anmelden
 
-10:00: Startpunkt 10:30: Journey-Demo für Kunden: Art der möglichen 11:00: 1-1 Personalisierung, Reibungsjagd, Silos, Adobe POV (Whiteboard) 11:45: Pause 12:00: Aufschlüsselung der Lösungsarchitektur (Whiteboard) 13:00: Mittagessen 14:00: Benutzerfluss 1 Registrierung &amp; Onboarding - exemplarische Vorgehensweise (Why-what-how) 15:30: Pause 16:00: Benutzerfluss 2 Füllen von physischem und digitalem Material - Umgehungslösung und praktische Schritte / Tiefgang 18:00: Pause 18:30: Spaziergang zum Restaurant 19:00: Abendessen
+10:00: Startvorgang/Einstieg &amp; Bootcamp Challenge
+
+11:00: 1-1 Personalisierung, Reibungsjagd, Silos, Adobe POV (Whiteboard)
+
+12:00: Break
+
+12:15: Aufschlüsselung der Lösungsarchitektur (Whiteboard)
+
+13:00: Mittagessen
+
+14:00: Benutzerfluss 1 - &quot;Akquise&quot;-Umgehungslösung und Hands-On-Deep-Dive
+
+15:30: Break
+
+16:00: Benutzerfluss 2 Registrierung und Onboarding
+
+17:30: Golfklinik &amp; Borrel
+
+19:30: Abendessen
 
 ### Tag 2
 
-08:00: Frühstück 08:30: Einführung in die benutzerspezifische Journey-basierte Bereitstellung, Teamstruktur, Versandrückstand 09.45: Benutzerfluss 3 Zusammenführen von physischem und digitalem Inhalt - exemplarische Vorgehensweise mit praxisbezogener Übung 11.15: Unterbrechung 11.30: Einschließen von Benutzerflüssen - (Was-wo-wann) 12:00: Gruppe Presentations 12.30: Start 13.30: Benutzerfluss 4: Kundenanalyse - Vertiefung 14.30: Zusammenfassung, Zusammenfassung und nächste Schritte 15.00: Getränke und Customer Journey
+08:30: Frühstückssitzung: Einführung in die benutzerspezifische Journey-basierte Bereitstellung, Teamstruktur, Versandrückstand
+
+09.45: Grundlegendes zu AEP-Daten durch Praxisszenarien
+
+10.15: Datenschutz verbessern: Einblicke in Data Governance mit AEP
+
+10.45: Pause
+
+12:00: Anwenderfluss 3 &quot;Blending Physical &amp; Digital&quot;
+
+12.30 Uhr: Mittagessen
+
+13.30: Customer Journey Analytics - vertiefen
+
+14.15: Neueste Einladungen rund um die GenAI für AEP und darüber hinaus
+
+14.45: Konversion und Aufbruch
+
+15.00 Uhr: Getränke und Ausflüge
+
 
 ## Voraussetzungen
 
@@ -80,3 +116,4 @@ In diesem Benutzerfluss personalisieren Sie mithilfe von Real-Time CDP und Adobe
 [4. Journey-Analyse](./uc/uc4/uc4.md)
 
 In diesem Benutzerfluss lernen Sie Customer Journey Analytics kennen und erhalten Einblicke in die Entwicklung der Kunden von einem Kanal zum anderen, von Online zum Offline zum Callcenter und mehr.
+
