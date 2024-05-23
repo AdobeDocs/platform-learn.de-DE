@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Interaktionen mit Ihrer App mithilfe von 
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 9607ec77a891a85a8bae2a2622e74d59588e1dbf
+source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3410'
 ht-degree: 2%
 
 ---
@@ -85,9 +85,9 @@ Eine Verbindung in Customer Journey Analytics definiert die Datensätze (und die
          | ODE DecisionEvents - *Sandbox-Name* Entscheidungsfindung | identityMap | Zeitstempel | App-Daten | enable | enable |
          | Erlebnisereignisdatensatz beim AJO-Push-Tracking | identityMap | Zeitstempel | App-Daten | enable | enable |
 
-         ![CJA-Verbindungen 3](assets/cja-connections-3.png)
-
       1. Auswählen **[!UICONTROL Hinzufügen von Datensätzen]**.
+
+         ![CJA-Verbindungen 3](assets/cja-connections-3.png)
 
 1. Zurück im **[!UICONTROL Verbindungen]** > **[!UICONTROL Luma App - Tutorial-Verbindung zum AEP Mobile SDK]** auswählen **[!UICONTROL Speichern]** , um Ihre Verbindung zu speichern.
 
@@ -156,8 +156,6 @@ So erstellen Sie Ihre Datenansicht:
       ![Komponenteneinstellungen der CJA-Datenansicht](assets/cja-dataview-component-settings.png)
 
    1. Nachdem Sie nun wissen, wie Sie Ihrer Datenansicht Felder hinzufügen und die resultierende Komponente konfigurieren können, verwenden Sie die unten stehenden Tabellen für eine Liste von Schemafeldern, die als Metrik oder Dimension hinzugefügt werden sollen. Verwenden Sie die **Schema Path** -Spaltenwert aus der unten stehenden Tabelle, um nach dem spezifischen Schemafeld zu suchen oder es zu ihm zu durchsuchen. Überprüfen Sie nach dem Ziehen und Ablegen die **Komponenteneinstellungen** Spaltenwert in der Tabelle, ob bestimmte Einstellungen für eine Komponente erforderlich sind, z. B. die Änderung ihrer **[!UICONTROL Komponentenname]** oder definieren **[!UICONTROL AUSSCHLIESSENDE WERTE EINSCHLIESSEN]**.
-
-      ![Komponenteneinstellungen der CJA-Datenansicht](assets/cja-dataview-component-settings.png)
 
       **METRIKEN**
 
@@ -232,9 +230,9 @@ So erstellen Sie Ihr Projekt:
 
    1. Auswählen **[!UICONTROL Leeres Workspace-Projekt]** aus dem Popup-Dialogfeld.
 
-      ![CJA-Projekte - 1](assets/cja-projects-1.png)
-
    1. Wählen Sie **[!UICONTROL Erstellen]** aus.
+
+      ![CJA-Projekte - 1](assets/cja-projects-1.png)
 
 1. Sie erhalten die **[!UICONTROL Neues Projekt]** -Schnittstelle. Auf dieser Oberfläche erstellen Sie Ihre Berichte und Visualisierungen.
 
@@ -357,8 +355,10 @@ Basierend auf dem vorherigen Bericht möchten Sie den Fallout im Commerce-Tricht
    ![CJA-Projekte 18](assets/cja-projects-18.png)
 Alternativ können Sie die **[!UICONTROL Produktansicht]** Dimension unterhalb der **[!UICONTROL Alle Personen]** Dimension in der **[!UICONTROL Fallout]** Visualisierung.
 
-1. Wiederholen Sie den obigen Schritt für **[!UICONTROL Produkt zu Listen hinzufügen]** und **[!UICONTROL Käufe]** Dimensionen. Ihre **[!UICONTROL Fallout]** Die Visualisierung zeigt jetzt eine visuelle Darstellung des Konversionstrichter für Ihre Produkte.
-   ![CJA-Projekte 19](assets/cja-projects-19.png)
+1. Wiederholen Sie den obigen Schritt für **[!UICONTROL Produkt zu Listen hinzufügen]** und **[!UICONTROL Käufe]** Dimensionen.
+
+Ihre **[!UICONTROL Fallout]** Die Visualisierung zeigt jetzt eine visuelle Darstellung des Konversionstrichter für Ihre Produkte.
+![CJA-Projekte 19](assets/cja-projects-19.png)
 
 Vergessen Sie nicht, Ihr Projekt zu speichern!
 
