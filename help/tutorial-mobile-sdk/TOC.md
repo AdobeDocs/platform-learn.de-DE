@@ -1,24 +1,24 @@
 ---
-user-guide-title: Tutorial zum Implementieren von Experience Cloud in Mobile Apps
-breadcrumb-title: Tutorial für Mobile Apps
-user-guide-description: Erfahren Sie, wie Sie Adobe Experience Cloud-Anwendungen in Mobile Apps mit Experience Platform Mobile SDK implementieren.
+user-guide-title: Tutorial zum Implementieren von Experience Cloud in Apps
+breadcrumb-title: Tutorial für mobile Apps
+user-guide-description: Erfahren Sie, wie Sie Adobe Experience Cloud-Anwendungen mit dem Experience Platform Mobile SDK in Apps implementieren.
 solution: Data Collection
 feature: Mobile SDK
 role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 8c588f7aeefe0d4e4b17cf5f34268dcca943e2a0
+source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 85%
+source-wordcount: '78'
+ht-degree: 34%
 
 ---
 
 
-#  zum Implementieren von Experience Cloud in Mobile Apps {#implement-mobile-sdk}
+# Experience Cloud in mobile Apps implementieren {#implement-mobile-sdk}
 
-+ [Tutorial-Überblick](overview.md)
++ [Tutorial-Übersicht](overview.md)
 + Ausgangskonfiguration {#initial-configuration}
    + [Erstellen eines Schemas](create-schema.md)
    + [Erstellen eines Datenspeichers](create-datastream.md)
@@ -34,12 +34,13 @@ ht-degree: 85%
    + [Profil](profile.md)
    + [Places](places.md)
 + Experience Cloud {#experience-cloud}
-   + [Analysen](analytics.md)
+   + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
    + Journey Optimizer{#journey-optimizer}
       + [Push-Benachrichtigungen ](journey-optimizer-push.md)
       + [In-App-Nachrichten](journey-optimizer-inapp.md)
       + [Entscheidungs-Management](journey-optimizer-offers.md)
    + [Target](target.md)
+   + [Customer Journey Analytics](customer-journey-analytics.md)
 + [Zusammenfassung](conclusion.md)
 
