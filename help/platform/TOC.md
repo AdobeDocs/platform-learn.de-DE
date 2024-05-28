@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
+source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 20%
+source-wordcount: '876'
+ht-degree: 19%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 20%
 
 + [Platform-Tutorials](/help/platform/overview.md)
 + Einführung in Platform {#intro-to-platform}
-   + [Ein Kundenerlebnis auf Basis von Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+   + [Ein durch Experience Platform unterstütztes Kundenerlebnis](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Hinter den Kulissen: Ein Kundenerlebnis auf Basis von Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Übersicht zu Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Wichtigste Funktionen](/help/platform/intro-to-platform/key-capabilities.md)
@@ -66,9 +66,9 @@ ht-degree: 20%
    + [Einblicke vor der Freigabe von Segmentübereinstimmungen](/help/platform/segments/segment-match-pre-share-insights.md)
    + [Segmentübereinstimmung, die Daten erhält](/help/platform/segments/segment-match-receiving-data.md)
 + [Audit-Protokolle](/help/platform/governance/audit-logs.md)
-+ [Datenerfassung](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=de){target="_blank"}
++ [Datenerfassung](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Dashboards {#dashboards}
-   + [Ein Dashboard erstellen](/help/platform/dashboards/create-a-dashboard.md)
+   + [Dashboard erstellen](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
    + [Übersicht](/help/platform/governance/understanding-data-governance.md)
    + [End-to-End-Demo](/help/platform/governance/introduction-to-data-governance.md)
@@ -78,13 +78,12 @@ ht-degree: 20%
    + [Zustimmung erzwingen](/help/platform/governance/enforce-consent.md)
    + [Integrieren mit IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Datenhygiene {#data-hygiene}
-   + [Datensätze löschen](/help/platform/data-hygiene/delete-datasets.md)
    + [Pseudonyme Profil- und Ereignisablauf](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-+ Datenaufnahme {#data-ingestion}
++ Datenerfassung {#data-ingestion}
    + [Übersicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
-   + [Batch-Erfassung - Übersicht](/help/platform/data-ingestion/batch-ingestion-overview.md)
+   + [Übersicht über die Batch-Aufnahme](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Datensatz erstellen und ausfüllen](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Zuordnen einer CSV-Datei zu XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=de){target="_blank"}
+   + [Zuordnen einer CSV-Datei zu XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Quellen – Übersicht](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Daten aus Adobe Analytics erfassen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=de)
    + [Daten aus Audience Manager erfassen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -94,8 +93,10 @@ ht-degree: 20%
    + [Streaming-Erfassung – Übersicht](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Streamen von Daten mit der HTTP-API](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=de)
    + [Streamen von Daten mithilfe von Source Connectors](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=de)
-   + [Web SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=de){target="_blank"}
+   + [Web SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=de){target="_blank"}
++ Lebenszyklus der Daten {#data-lifecycle}
+   + [Gültige Datensätze](/help/platform/data-lifecycle/expire-datasets.md)
 + Data Science Workspace {#data-science-workspace}
    + [Übersicht](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [Architektur](data-science-workspace/architecture-overview.md)
@@ -127,7 +128,7 @@ ht-degree: 20%
    + Adobe Target und benutzerdefinierte Personalisierung{#target}
       + [Nächste Hit-Personalisierung mit Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Konfigurieren des Adobe Target-Ziels](/help/platform/destinations/target/configure-the-target-destination.md)
-      + [Aktivieren von Segmenten und Profilattributen](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+      + [Segmente und Profilattribute aktivieren](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Verwenden von Real-Time CDP-Segmenten in Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Real-Time CDP-Profilattribute in Target verwenden](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [Webinar zur Datenaktivierung für Nicht-Adobe-Anwendungen](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
@@ -145,7 +146,7 @@ ht-degree: 20%
    + [Customer AI-Wert](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Konfigurieren von Kunden-KI](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Verwenden von Kunden-KI- und Insights-Werten](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Monitoring {#monitoring}
++ Überwachung {#monitoring}
    + [Überwachen der Datenaufnahme](/help/platform/monitoring/monitoring-dashboard.md)
    + [Segmentaktivierung überwachen](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Überwachen von Datenflüssen](/help/platform/monitoring/data-monitoring.md)
@@ -157,7 +158,7 @@ ht-degree: 20%
 + Profile {#profiles}
    + [Grundlagen zum Echtzeit-Kundenprofil](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Profil - Übersichtsdiagramm](/help/platform/profiles/overview-diagram.md)
-   + [Daten in Profil integrieren](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
+   + [Daten in Profile aufnehmen](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
    + [Anpassen der Details der Profilansicht](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Kontoprofile anzeigen](/help/platform/profiles/view-account-profiles.md)
    + [Zusammenführungsrichtlinien erstellen](/help/platform/profiles/create-merge-policies.md)
@@ -180,7 +181,7 @@ ht-degree: 20%
    + [Übersicht](/help/platform/queries/understanding-query-service.md)
    + [Benutzeroberfläche von Query Service](/help/platform/queries/query-service-ui.md)
    + [Query Service-API](/help/platform/queries/query-service-api.md)
-   + [Daten durchsuchen](/help/platform/queries/explore-data.md)
+   + [Mehr zu Daten](/help/platform/queries/explore-data.md)
    + [Daten vorbereiten](/help/platform/queries/prepare-data.md)
    + [Adobe definierte Funktionen](/help/platform/queries/adobe-defined-functions.md)
    + [Datennutzungsmuster](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
@@ -190,7 +191,7 @@ ht-degree: 20%
    + [Daten analysieren und visualisieren](/help/platform/queries/analyze-and-visualize.md)
    + [Erstellen von Dashboards mit BI-Tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [Kundendaten neu berechnen](/help/platform/queries/recharge-your-customer-data.md)
-   + [Clients mit Query Service verbinden](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=de){target="_blank"}
+   + [Clients mit Query Service verbinden](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [Validieren von Daten im Datensatz](/help/platform/queries/validate-data-in-the-datalake.md)
 + Schemata {#schemas}
    + [Übersicht](/help/platform/schemas/schemas-and-experience-data-model.md)
