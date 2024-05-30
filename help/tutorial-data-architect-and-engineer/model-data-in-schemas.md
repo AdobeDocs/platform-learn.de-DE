@@ -8,9 +8,9 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: e0289aeaf2d987e4690c08b1695a3356442b15f6
+source-git-commit: 8e470d8a0c9fee7389ac60a743431fe81012fa0f
 workflow-type: tm+mt
-source-wordcount: '2611'
+source-wordcount: '2619'
 ht-degree: 6%
 
 ---
@@ -86,7 +86,7 @@ In dieser Übung erstellen wir ein Schema für die Treuedaten von Luma.
 
 Nach der Erstellung des Schemas werden Sie zum Schema-Editor weitergeleitet, wo Sie dem Schema Felder hinzufügen können. Sie können einzelne Felder direkt zum Schema hinzufügen oder Feldgruppen verwenden. Beachten Sie, dass alle einzelnen Felder weiterhin mit einer Klasse oder Feldergruppe verknüpft sind. Sie können aus einem großen Satz von branchenüblichen Feldergruppen wählen, die von Adobe bereitgestellt werden, oder Ihre eigenen erstellen. Wenn Sie mit der Modellierung Ihrer eigenen Daten im Experience Platform beginnen, sollten Sie sich mit den branchenüblichen Feldergruppen von Adobe vertraut machen. Wenn möglich, empfiehlt es sich, sie zu verwenden, da sie manchmal nachgelagerte Dienste wie Customer AI, Attribution AI und Adobe Analytics betreiben.
 
-Beim Arbeiten mit Ihren eigenen Daten besteht ein großer Schritt darin, zu bestimmen, welche Ihrer eigenen Daten in Platform erfasst und wie sie modelliert werden sollen. Dieses große Thema wird im Laufe des Kurses eingehender diskutiert [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de). In diesem Tutorial werde ich Sie lediglich durch die Implementierung einiger vorab festgelegter Schemas führen.
+Beim Arbeiten mit Ihren eigenen Daten besteht ein wichtiger Schritt darin, zu bestimmen, welche Ihrer eigenen Daten in Platform erfasst und wie sie modelliert werden sollen. Dieses große Thema wird im Laufe des Kurses eingehender diskutiert [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de). In diesem Tutorial werde ich Sie lediglich durch die Implementierung einiger vorab festgelegter Schemas führen.
 
 So fügen Sie Feldergruppen hinzu:
 
@@ -99,8 +99,8 @@ So fügen Sie Feldergruppen hinzu:
    ![Auswahl der Standardfeldergruppen](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
 1. Überprüfen Sie die **[!UICONTROL Branche]** > **[!UICONTROL Einzelhandel]** zum Anzeigen branchenspezifischer Feldergruppen.
-1. Auswählen **[!UICONTROL Treue]** , um die Felder des Treueprogramms hinzuzufügen.
-1. Wählen Sie **[!UICONTROL Feldergruppe hinzufügen]** aus, um alle drei Feldergruppen zum Schema hinzuzufügen.
+1. Auswählen **[!UICONTROL Treuedetails]** , um die Felder des Treueprogramms hinzuzufügen.
+1. Auswählen **[!UICONTROL Feldergruppen hinzufügen]** , um alle drei Feldergruppen zum Schema hinzuzufügen.
    ![Hinzufügen von Standardfeldgruppen zum Treueschema](assets/schemas-loyalty-saveOotbMixins.png)
 
 
@@ -111,7 +111,7 @@ Um das Schema zu speichern, wählen Sie **[!UICONTROL Speichern]**.
 
 >[!NOTE]
 >
->Es ist in Ordnung, wenn eine Feldergruppe ein Feld für einen Datenpunkt hinzufügt, den Sie nicht erfassen. Beispielsweise könnte &quot;faxPhone&quot;ein Feld sein, für das Luma keine Daten erfasst. Das ist in Ordnung. Nur weil ein Feld im Schema definiert ist, bedeutet dies nicht, dass die Daten dafür verwendet werden *must* später erfasst werden.
+>Es ist in Ordnung, wenn eine Feldergruppe ein Feld für einen Datenpunkt hinzufügt, den Sie nicht erfassen. Beispielsweise könnte &quot;faxPhone&quot;ein Feld sein, für das Luma keine Daten erfasst. Das ist in Ordnung. Nur weil ein Feld im Schema definiert ist, bedeutet dies nicht, dass die Daten dafür verwendet werden *must* später erfasst werden. Sie können das Feld auch aus dem Schema entfernen.
 
 ### Benutzerdefinierte Feldergruppe hinzufügen
 
@@ -119,7 +119,12 @@ Erstellen wir nun eine benutzerdefinierte Feldergruppe.
 
 Während die Gruppe &quot;Treuefeld&quot;eine `loyaltyID` -Feld, möchte Luma alle Systemkennungen in einer Gruppe verwalten, um die Konsistenz ihrer Schemas zu gewährleisten.
 
-Feldergruppen müssen im Schema-Workflow erstellt werden. Sie können Ihrem Schema ein neues benutzerdefiniertes Feld hinzufügen und auf diese Weise eine benutzerdefinierte Feldergruppe erstellen. Alternativ können Sie zuerst eine benutzerdefinierte Feldergruppe erstellen und ihr dann Felder hinzufügen. In diesem Tutorial beginnen wir mit der Erstellung einer benutzerdefinierten Feldergruppe.
+Feldergruppen müssen im Schema-Workflow erstellt werden. Sie haben die Möglichkeit zum:
+
+* Fügen Sie Ihrem Schema zuerst ein neues benutzerdefiniertes Feld hinzu und erstellen Sie dann eine benutzerdefinierte Feldergruppe oder
+* Erstellen Sie zuerst eine benutzerdefinierte Feldergruppe und fügen Sie ihr dann Felder hinzu.
+
+In diesem Tutorial beginnen wir mit der Erstellung einer benutzerdefinierten Feldergruppe.
 
 So erstellen Sie die Feldergruppe:
 

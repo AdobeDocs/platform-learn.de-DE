@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
+source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '890'
 ht-degree: 19%
 
 ---
@@ -78,7 +78,10 @@ ht-degree: 19%
    + [Zustimmung erzwingen](/help/platform/governance/enforce-consent.md)
    + [Integrieren mit IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Datenhygiene {#data-hygiene}
-   + [Pseudonyme Profil- und Ereignisablauf](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Pseudonyme Profil- und Ereignisablauf (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Datenvorbereitung für Datenhygiene](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [Gültige Datensätze](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [Profilattribut aktualisieren](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Datenerfassung {#data-ingestion}
    + [Übersicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Übersicht über die Batch-Aufnahme](/help/platform/data-ingestion/batch-ingestion-overview.md)
