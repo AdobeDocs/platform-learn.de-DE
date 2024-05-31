@@ -1,18 +1,18 @@
 ---
 title: Streamen von Daten an Adobe Experience Platform mit dem Platform Web SDK
-description: Erfahren Sie, wie Sie Webdaten mit dem Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie Webdaten mit dem Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1940'
 ht-degree: 7%
 
 ---
 
 # Streamen von Daten an Experience Platform mit dem Web SDK
 
-Erfahren Sie, wie Sie Webdaten mit dem Platform Web SDK an Adobe Experience Platform streamen.
+Erfahren Sie, wie Sie Webdaten mit Platform Web SDK an Adobe Experience Platform streamen.
 
 Experience Platform ist das Rückgrat aller neuen Experience Cloud-Applikationen wie Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics und Adobe Journey Optimizer. Diese Anwendungen sind so konzipiert, dass sie das Platform Web SDK als optimale Methode zur Webdatenerfassung verwenden.
 
@@ -39,7 +39,7 @@ Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 ## Erstellen eines Datensatzes
 
-Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, werden im Data Lake als Datensätze persistiert. A [Datensatz](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) ist ein Speicher- und Verwaltungskonstrukt für eine Datenerfassung, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben.
+Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, werden im Data Lake als Datensätze persistiert. A [Datensatz](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/overview) ist ein Speicher- und Verwaltungskonstrukt für eine Datenerfassung, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben.
 
 Richten wir einen Datensatz für Ihre Luma-Web-Ereignisdaten ein:
 
@@ -75,7 +75,7 @@ Jetzt können Sie Ihre [!UICONTROL datastream] zum Senden von Daten an [!UICONTR
 
    ![Wählen Sie den Datenspeicher des Luma Web SDK aus.](assets/datastream-luma-web-sdk-development.png)
 
-1. Wählen Sie **[!UICONTROL Service hinzufügen]** aus
+1. Auswählen **[!UICONTROL Dienst hinzufügen]**
    ![Hinzufügen eines Dienstes zum Datastream](assets/experience-platform-addService.png)
 1. Auswählen **[!UICONTROL Adobe Experience Platform]** als **[!UICONTROL Dienst]**
 1. Auswählen `Luma Web Event Data` als **[!UICONTROL Ereignis-Datensatz]**
@@ -232,6 +232,57 @@ Zunächst müssen Sie weitere Beispieldaten generieren. Wiederholen Sie die Schr
    ![Kundenprofil](assets/experience-platform-validate-dataset-custProfile.png)
 
 Sie haben jetzt das Platform Web SDK für Experience Platform (und Real-Time CDP) aktiviert! Und Journey Optimizer! Und Customer Journey Analytics!).
+
+### Erstellen eines Loyalitätsschemas und Erfassen von Beispieldaten
+
+Der Abschluss dieser Übung wird für Kunden von Real-time Customer Data Platform und Journey Optimizer erwartet.
+
+Wenn Web SDK-Daten in Adobe Experience Platform erfasst werden, können sie durch andere Datenquellen angereichert werden, die Sie in Platform erfasst haben. Wenn sich ein Benutzer beispielsweise bei der Site &quot;Luma&quot;anmeldet, wird ein Identitätsdiagramm in Experience Platform erstellt und alle anderen profilaktivierten Datensätze können möglicherweise zusammengeführt werden, um Echtzeit-Kundenprofile zu erstellen. Um dies in Aktion zu sehen, erstellen Sie schnell einen weiteren Datensatz in Adobe Experience Platform mit Beispielloyalitätsdaten, damit Sie Echtzeit-Kundenprofile mit Real-time Customer Data Platform und Journey Optimizer verwenden können. Da Sie bereits ähnliche Übungen durchgeführt haben, werden die Anweisungen kurz sein.
+
+Erstellen Sie das Treueschema:
+
+1. Erstellen eines neuen Schemas
+1. Auswählen **[!UICONTROL Individuelles Profil]** als [!UICONTROL Basisklasse]
+1. Benennen Sie das Schema. `Luma Loyalty Schema`
+1. Fügen Sie die [!UICONTROL Treuedetails] Feldergruppe
+1. Fügen Sie die [!UICONTROL Demografische Details] Feldergruppe
+1. Wählen Sie die `Person ID` und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre Identität] mithilfe der `Luma CRM Id` [!UICONTROL Identitäts-Namespace].
+1. Aktivieren des Schemas für [!UICONTROL Profil]
+
+   ![Treueschema](assets/web-channel-loyalty-schema.png)
+
+So erstellen Sie den Datensatz und erfassen die Beispieldaten:
+
+1. Erstellen Sie einen neuen Datensatz aus der `Luma Loyalty Schema`
+1. Benennen Sie den Datensatz. `Luma Loyalty Dataset`
+1. Datensatz aktivieren für [!UICONTROL Profil]
+1. Beispieldatei herunterladen [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
+1. Ziehen Sie die Datei per Drag-and-Drop in Ihren Datensatz
+1. Überprüfen Sie, ob die Daten erfolgreich erfasst wurden.
+
+   ![Treueschema](assets/web-channel-loyalty-dataset.png)
+
+### Erstellen einer Zielgruppe
+
+Zielgruppen gruppieren Profile um allgemeine Eigenschaften. Erstellen Sie eine schnelle Zielgruppe, die Sie in Ihrer Web-Kampagne verwenden können:
+
+1. Navigieren Sie in der Experience Platform-Benutzeroberfläche zu **[!UICONTROL Zielgruppen]** in der linken Navigation
+1. Auswählen **[!UICONTROL Erstellen einer Zielgruppe]**
+1. Auswählen **[!UICONTROL Regel erstellen]**
+1. Auswählen **[!UICONTROL Erstellen]**
+
+   ![Erstellen einer Zielgruppe](assets/web-campaign-create-audience.png)
+
+1. Auswählen **[!UICONTROL Attribute]**
+1. Suchen Sie die **[!UICONTROL Treue]** > **[!UICONTROL Ebene]** und ziehen Sie es auf das **[!UICONTROL Attribute]** Abschnitt
+1. Definieren Sie die Zielgruppe als Benutzer, deren `tier` is `gold`
+1. Benennen der Zielgruppe `Luma Loyalty Rewards – Gold Status`
+1. Auswählen **[!UICONTROL Edge]** als **[!UICONTROL Auswertungsmethode]**
+1. Auswählen **[!UICONTROL Speichern]**
+
+   ![Audience definieren](assets/web-campaign-define-audience.png)
+
+Da es sich um eine sehr einfache Zielgruppe handelt, können wir die Edge-Auswertungsmethode verwenden. Edge-Zielgruppen werden am Edge-Rand ausgewertet. In der gleichen Anfrage des Web SDK an Platform Edge Network können wir die Zielgruppendefinition auswerten und sofort bestätigen, ob sich der Benutzer qualifiziert.
 
 
 [Weiter: ](setup-analytics.md)

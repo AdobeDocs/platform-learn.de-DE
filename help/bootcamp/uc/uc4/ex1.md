@@ -7,10 +7,10 @@ doc-type: tutorial
 activity: develop
 solution: Customer Journey Analytics
 exl-id: 587be8bc-8ebe-4f30-99d8-ba88ce40caf7
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 1%
+source-wordcount: '875'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 ## Ziele
 
-- Grundlegendes zum CJA Application Service
+- Grundlegendes zur CJA-Anwendung
 - Erfahren Sie, wie Sie CJA positionieren
-- Erläuterung des CJA-Workflows: von Datenverbindung zu Einblicken
+- Grundlegendes zum CJA-Workflow: von der Datenverbindung zu Einblicken
 
 ## 4.1.1 Was ist Customer Journey Analytics?
 
-Customer Journey Analytics (CJA) bietet den Teams für Business Intelligence und Datenwissenschaften ein Toolkit für die Zuordnung und Analyse kanalübergreifender Daten (online und offline). Die Funktionen von CJA bieten Kontext und Klarheit für die komplexe Journey von Kunden mit mehreren Kanälen. Der bereitgestellte Kontext bietet praktische Einblicke in das Entfernen von Schmerzpunkten aus dem Kundenkonvertierungsprozess und das Entwerfen und Bereitstellen außergewöhnlicher Erlebnisse für die Momente, die am wichtigsten sind.
+Customer Journey Analytics (CJA) bietet den Business Intelligence- und Datenwissenschaftsteams ein Toolkit für die Zusammenführung und Analyse kanalübergreifender Daten (online und offline). Die Funktionen von CJA bieten Kontext und Klarheit für die komplexe Journey von Kunden mit mehreren Kanälen. Der bereitgestellte Kontext bietet praktische Einblicke in das Entfernen von Schmerzpunkten aus dem Kundenkonvertierungsprozess und das Entwerfen und Bereitstellen außergewöhnlicher Erlebnisse für die Momente, die am wichtigsten sind.
 
 CJA bringt Analysis Workspace auf Adobe Experience Platform. Adobe Experience Platform ist das Gehirn für Kommunikation und Orchestrierung. Mit CJA können Marken jetzt all diese Daten kontextualisieren und visualisieren, sodass Geschäfts- und Insight-Teams daraus lernen können, indem sie die vollständige Online- bis Offline-Journey analysieren.
 
@@ -70,7 +70,7 @@ Bevor Sie mit den oben genannten Schritten beginnen, vergessen Sie Schritt 0, de
 
 **Müll hinein, Müll raus.** Erinnern Sie sich? Sie müssen genau wissen, welche Daten verfügbar sind und wie die Schemas in Adobe Experience Platform konfiguriert sind. Das Verständnis der Daten in Adobe Experience Platform wird die Dinge nicht nur im Bereich der Datenverbindung, sondern auch beim Erstellen von Visualisierungen und beim Analysieren vereinfachen.
 
-## 4.1.5 Schritt 0: Grundlegendes zu Adobe Experience Platform-Schemata und -Datensätzen
+## 4.1.5 Schritt 0: Grundlagen zu Adobe Experience Platform-Schemata und -Datensätzen
 
 Melden Sie sich über diese URL bei Adobe Experience Platform an: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -97,11 +97,11 @@ Sie können die Kennungen finden, indem Sie ein Schema öffnen und sich das Obje
 
 ![Demo](./images/identity.png)
 
-- Commerce-Objekt im Schema durchsuchen [Demosystem - Ereignisschema für Website (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Commerce-Objekt innerhalb des Schemas durchsuchen [Demosystem - Ereignisschema für Website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![Demo](./images/commerce.png)
 
-- Vorschau aller [Datensätze](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) und sehen Sie sich die Daten an
+- Vorschau aller [Datensätze](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) und sehen Sie sich die Daten an.
 
 Sie können jetzt mit der Verwendung der Customer Journey Analytics-Benutzeroberfläche beginnen.
 

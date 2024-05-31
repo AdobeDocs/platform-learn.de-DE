@@ -1,14 +1,14 @@
 ---
 title: Einrichten der Journey Optimizer-Entscheidungsverwaltung mit dem Platform Web SDK
-description: Erfahren Sie, wie Sie die Entscheidungsverwaltung mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie die Entscheidungsverwaltung mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '2515'
+source-wordcount: '2513'
 ht-degree: 3%
 
 ---
@@ -42,7 +42,7 @@ Am Ende dieser Lektion können Sie:
 
 Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 
-* Stellen Sie sicher, dass Ihr Unternehmen Zugriff auf Adobe Journey Optimizer Ultimate (Journey Optimizer und Offer decisioning) oder Adobe Experience Platform und das Offer decisioning Application Service-Add-on hat.
+* Stellen Sie sicher, dass Ihr Unternehmen Zugriff auf Adobe Journey Optimizer Ultimate (Journey Optimizer und Offer decisioning) oder Adobe Experience Platform und das Offer decisioning-Add-on hat.
 
 * Schließen Sie alle Lektionen für die Erstkonfiguration des Platform Web SDK ab.
 

@@ -1,12 +1,12 @@
 ---
 title: Erstellen von Datenelementen für das Platform Web SDK
-description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelemente in Tags zuordnen. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1306'
 ht-degree: 2%
 
 ---
@@ -168,7 +168,7 @@ Bevor Sie das XDM-Objekt erstellen, erstellen Sie den folgenden Satz von Datenel
 
 1. Urlaub `None` als **[!UICONTROL Speicherdauer]** Einstellung, da dieser Wert auf jeder Seite unterschiedlich ist
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus
+1. Auswählen **[!UICONTROL Speichern]**
 
    ![Datenelement &quot;Seitenname&quot;](assets/data-element-pageName.png)
 
@@ -256,29 +256,41 @@ Erstellen Sie diese zusätzlichen Datenelemente wie folgt:
 >
 >Die [!UICONTROL JavaScript-Variable] Datenelementtyp behandelt Array-Referenzen als Punkte anstelle von Klammern. Referenzieren Sie daher das Datenelement &quot;Benutzername&quot;als `digitalData.user[0].profile[0].attributes.username` **funktioniert nicht**.
 
-## Datenelement &quot;Variable&quot;erstellen
+## Erstellen von Variablendatenelementen für XDM- und Datenobjekte
 
-Nachdem Sie die Datenelemente erstellt haben, ordnen Sie sie dem XDM mithilfe der **[!UICONTROL Variable]** -Datenelement, das das für das XDM-Objekt verwendete Schema definiert. Dieses Objekt sollte mit dem XDM-Schema übereinstimmen, das Sie während der [Schema konfigurieren](configure-schemas.md) Lektion.
+Die soeben erstellten Datenelemente werden zum Erstellen eines XDM-Objekts (für Platform-Anwendungen) und eines Datenobjekts (für Analytics, Target und Audience Manager) verwendet. Diese Objekte verfügen über eigene spezielle Datenelemente, die **[!UICONTROL Variable]** Datenelemente, die sehr einfach zu erstellen sind.
 
-So erstellen Sie das Datenelement Variable :
+Um das Datenelement &quot;Variable&quot;für XDM zu erstellen, verknüpfen Sie es mit dem Schema, das Sie im [Schema konfigurieren](configure-schemas.md) Lektion:
 
 1. Auswählen **[!UICONTROL Datenelement hinzufügen]**
 1. Ihr Datenelement benennen `xdm.variable.content`. Es wird empfohlen, das XDM-spezifische Datenelement mit &quot;xdm&quot;zu versehen, um Ihre Tag-Eigenschaft besser zu organisieren
 1. Wählen Sie die **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Erweiterung]**
 1. Wählen Sie die **[!UICONTROL Variable]** als **[!UICONTROL Datenelementtyp]**
+1. Auswählen **[!UICONTROL XDM]** als **[!UICONTROL property]**
 1. Auswählen der entsprechenden Experience Platform **[!UICONTROL Sandbox]**
 1. Wählen Sie die entsprechende **[!UICONTROL Schema]** in diesem Fall `Luma Web Event Data`
-1. Wählen Sie **[!UICONTROL Speichern]** aus
+1. Auswählen **[!UICONTROL Speichern]**
 
-   ![Variablendatenelement](assets/analytics-tags-data-element-xdm-variable.png)
+   ![Variablendatenelement für XDM](assets/analytics-tags-data-element-xdm-variable.png)
+
+Erstellen Sie anschließend das Datenelement Variable für Ihr Datenobjekt:
+
+1. Auswählen **[!UICONTROL Datenelement hinzufügen]**
+1. Ihr Datenelement benennen `data.variable`. Es wird empfohlen, den Datenelementen, die spezifisch für das Datenobjekt sind, das Präfix &quot;data&quot;zu verwenden, um Ihre Tag-Eigenschaft besser zu organisieren.
+1. Wählen Sie die **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Erweiterung]**
+1. Wählen Sie die **[!UICONTROL Variable]** als **[!UICONTROL Datenelementtyp]**
+1. Auswählen **[!UICONTROL data]** als **[!UICONTROL property]**
+1. Auswählen **[!UICONTROL Speichern]**
+
+   ![Variablendatenelement für Datenobjekt](assets/data-element-data-variable.png.png)
 
 
 Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt werden:
 
 | Datenelemente der Haupterweiterung | Datenelemente der Platform Web SDK-Erweiterung |
 -----------------------------|-------------------------------
-| `cart.orderId` | `xdm.variable.content` |
-| `cart.productInfo` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `xdm.variable.content` |
 | `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
@@ -291,7 +303,7 @@ Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt werden:
 
 >[!TIP]
 >
->In Zukunft [Erstellen von Tag-Regeln](create-tag-rule.md) Lektion: Sie lernen, wie die **[!UICONTROL Variable]** Mit dem Datenelement können Sie mehrere Regeln in Tags stapeln, indem Sie die **[!UICONTROL Aktionstyp der Variablen aktualisieren]**.
+>In Zukunft [Erstellen von Tag-Regeln](create-tag-rule.md) Lektion: Sie lernen, wie die **[!UICONTROL Variable]** Datenelemente ermöglichen es Ihnen, mehrere Regeln in Tags mithilfe der **[!UICONTROL Aktionstyp der Variablen aktualisieren]**.
 
 Wenn diese Datenelemente vorhanden sind, können Sie mit dem Senden von Daten an Platform Edge Network mit einer Tagregel beginnen. Erfahren Sie zunächst, wie Sie Identitäten mit dem Web SDK erfassen.
 

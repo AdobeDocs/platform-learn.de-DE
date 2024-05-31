@@ -1,14 +1,14 @@
 ---
 title: Einrichten des Journey Optimizer-Webkanals mit dem Platform Web SDK
-description: Erfahren Sie, wie Sie den Journey Optimizer-Webkanal mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie den Journey Optimizer-Webkanal mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2563'
 ht-degree: 1%
 
 ---
@@ -133,55 +133,6 @@ In diesem Anwendungsbeispiel wird erläutert, wie Journey Optimizer mithilfe von
 
 Da dieses Tutorial auf Implementierer ausgerichtet ist, ist zu beachten, dass diese Lektion umfangreiche Arbeit an der Benutzeroberfläche in Journey Optimizer erfordert. Während solche Aufgaben normalerweise von Marketing-Experten verarbeitet werden, können Implementierer Einblicke in den Prozess erhalten, selbst wenn sie normalerweise nicht für die Erstellung von Webkanal-Kampagnen verantwortlich sind.
 
-### Erstellen eines Loyalitätsschemas und Erfassen von Beispieldaten
-
-Wenn Web SDK-Daten in Adobe Experience Platform erfasst werden, können sie durch andere Datenquellen angereichert werden, die Sie in Platform erfasst haben. Wenn sich ein Benutzer beispielsweise bei der Site &quot;Luma&quot;anmeldet, wird ein Identitätsdiagramm in Experience Platform erstellt und alle anderen profilaktivierten Datensätze können möglicherweise zusammengeführt werden, um Echtzeit-Kundenprofile zu erstellen. Um dies in Aktion zu sehen, erstellen Sie schnell einen weiteren Datensatz in Adobe Experience Platform mit Beispielloyalitätsdaten, damit Sie Echtzeit-Kundenprofile in Journey Optimizer-Webkampagnen verwenden können. Da Sie bereits ähnliche Übungen durchgeführt haben, werden die Anweisungen kurz sein.
-
-Erstellen Sie das Treueschema:
-
-1. Erstellen eines neuen Schemas
-1. Auswählen **[!UICONTROL Individuelles Profil]** als [!UICONTROL Basisklasse]
-1. Benennen Sie das Schema. `Luma Loyalty Schema`
-1. Fügen Sie die [!UICONTROL Treuedetails] Feldergruppe
-1. Fügen Sie die [!UICONTROL Demografische Details] Feldergruppe
-1. Wählen Sie die `Person ID` und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre Identität] mithilfe der `Luma CRM Id` [!UICONTROL Identitäts-Namespace].
-1. Aktivieren des Schemas für [!UICONTROL Profil]
-
-   ![Treueschema](assets/web-channel-loyalty-schema.png)
-
-So erstellen Sie den Datensatz und erfassen die Beispieldaten:
-
-1. Erstellen Sie einen neuen Datensatz aus der `Luma Loyalty Schema`
-1. Benennen Sie den Datensatz. `Luma Loyalty Dataset`
-1. Datensatz aktivieren für [!UICONTROL Profil]
-1. Beispieldatei herunterladen [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
-1. Ziehen Sie die Datei per Drag-and-Drop in Ihren Datensatz
-1. Überprüfen Sie, ob die Daten erfolgreich erfasst wurden.
-
-   ![Treueschema](assets/web-channel-loyalty-dataset.png)
-
-### Erstellen einer Zielgruppe
-
-Zielgruppen gruppieren Profile um allgemeine Eigenschaften. Erstellen Sie eine schnelle Zielgruppe, die Sie in Ihrer Web-Kampagne verwenden können:
-
-1. Navigieren Sie in der Experience Platform-Benutzeroberfläche zu **[!UICONTROL Zielgruppen]** in der linken Navigation
-1. Auswählen **[!UICONTROL Erstellen einer Zielgruppe]**
-1. Auswählen **[!UICONTROL Regel erstellen]**
-1. Wählen Sie **[!UICONTROL Erstellen]** aus
-
-   ![Erstellen einer Zielgruppe](assets/web-campaign-create-audience.png)
-
-1. Auswählen **[!UICONTROL Attribute]**
-1. Suchen Sie die **[!UICONTROL Treue]** > **[!UICONTROL Ebene]** und ziehen Sie es auf das **[!UICONTROL Attribute]** Abschnitt
-1. Definieren Sie die Zielgruppe als Benutzer, deren `tier` is `gold`
-1. Benennen der Zielgruppe `Luma Loyalty Rewards – Gold Status`
-1. Auswählen **[!UICONTROL Edge]** als **[!UICONTROL Auswertungsmethode]**
-1. Wählen Sie **[!UICONTROL Speichern]** aus
-
-   ![Audience festlegen](assets/web-campaign-define-audience.png)
-
-Da es sich um eine sehr einfache Zielgruppe handelt, können wir die Edge-Auswertungsmethode verwenden. Edge-Zielgruppen werden am Edge-Rand ausgewertet. In der gleichen Anfrage des Web SDK an Platform Edge Network können wir die Zielgruppendefinition auswerten und sofort bestätigen, ob sich der Benutzer qualifiziert.
-
 ### Kampagne &quot;Treuebelohnungen erstellen&quot;
 
 Nachdem Sie nun unsere Beispielloyalitätsdaten erfasst und unser Segment erstellt haben, erstellen Sie die Webkanalkampagne &quot;Treuebelohnungen&quot;in Adobe Journey Optimizer.
@@ -258,7 +209,7 @@ Lassen Sie uns nun das Webkanalerlebnis erstellen. Verwenden Sie dazu die Adobe 
 
 1. Innerhalb der **[!UICONTROL Aktion]** im Tab der Kampagne klicken Sie auf **[!UICONTROL Inhalt bearbeiten]**. Da Sie eine einseitige URL als Oberfläche eingegeben haben, sollten Sie bereit sein, mit der Arbeit im Composer zu beginnen.
 
-   ![Inhalte bearbeiten](assets/web-channel-edit-content.png)
+   ![Inhalt bearbeiten](assets/web-channel-edit-content.png)
 
 1. Klicken Sie jetzt auf **[!UICONTROL Webseite bearbeiten]** , um mit dem Authoring zu beginnen.
 
@@ -270,7 +221,7 @@ Lassen Sie uns nun das Webkanalerlebnis erstellen. Verwenden Sie dazu die Adobe 
 
 1. Fügen Sie dem Container außerdem mithilfe der **[!UICONTROL Ausdruckseditor]**.
 
-   ![Hinzufügen von Personalisierung](assets/web-channel-add-basic-personalization.png)
+   ![Personalisierung hinzufügen](assets/web-channel-add-basic-personalization.png)
 
 1. Stellen Sie sicher, dass das Erlebnis ordnungsgemäß nach Klicks verfolgt wird. Auswählen **[!UICONTROL Element verfolgen]** aus dem Kontextmenü aus.
 

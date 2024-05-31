@@ -1,23 +1,27 @@
 ---
 title: Identitäts-Namespace konfigurieren
-description: Erfahren Sie, wie Sie Identitäts-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie Identitäts-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 8%
+source-wordcount: '655'
+ht-degree: 12%
 
 ---
 
 # Identitäts-Namespace konfigurieren
 
-Erfahren Sie, wie Sie Identitäts-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren.
+Erfahren Sie, wie Sie Identity-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren.
 
 Die [Adobe Experience Cloud Identity-Dienst](https://experienceleague.adobe.com/en/docs/id-service/using/home) legt eine allgemeine Besucher-ID (ECID) für SDK-basierte Adobe-Applikationen fest, um Experience Cloud-Funktionen wie die Zielgruppenfreigabe zwischen Applikationen zu unterstützen. Sie können auch Ihre eigenen Kunden-IDs an den Dienst senden, um geräteübergreifendes Targeting und Integrationen mit anderen Systemen wie z. B. Ihrem CRM-System (Customer Relationship Management) zu ermöglichen.
 
 Die [Adobe Experience Platform Identity-Dienst](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (Ja, es gibt zwei!) verwendet die ECIDs und Kunden-IDs zum Generieren von Identitätsdiagrammen, sodass Sie Attribute und Verhaltensweisen mit Echtzeit-Kundenprofilen zusammenführen können.
+
+>[!NOTE]
+>
+>Ein benutzerdefinierter Identitäts-Namespace ist _nicht erforderlich_ , um Adobe Analytics, Adobe Target oder Adobe Audience Manager mit dem Web SDK zu implementieren (authentifizierte Identitäten können im `data` -Objekt anstelle des `xdm` -Objekt, wie Sie später sehen werden). Identitäts-Namespaces sind für plattformnative Anwendungen wie Journey Optimizer, Real-time Customer Data Platform und Customer Journey Analytics erforderlich. Sie können sich zwar entscheiden, keinen Identitäts-Namespace in Ihrer eigenen Implementierung zu verwenden, doch wird dies im Rahmen dieses Tutorials erwartet.
 
 >[!NOTE]
 >
@@ -75,7 +79,7 @@ Erstellen Sie nun einen Namespace für die Luma CRM-ID:
    |---------------|-----------|
    | Anzeigename | Luma CRM ID |
    | Identitätssymbol | lumaCrmId |
-   | Typ | Einzelne geräteübergreifende ID |
+   | Typ | Individuelle geräteübergreifende ID |
 
 
    ![Erstellen von Namespaces](assets/identities-create-namespace.png)
