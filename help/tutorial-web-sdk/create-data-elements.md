@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelement
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1337'
 ht-degree: 2%
 
 ---
@@ -100,14 +100,14 @@ window.adobeDataLayer.push({
 Vorteile
 
 * Beseitigt zusätzliche Schritte, die auf Datenschichtvariablen in XDM beschränkt sind
-* Die Bereitstellung kann schneller erfolgen, wenn Ihr Entwicklungsteam über das Tagging digitaler Verhaltensweisen verfügt
+* Die Bereitstellung kann schneller erfolgen, wenn Ihr Webentwicklungsteam auch Eigentümer des Tagging-digitalen Verhaltens ist
 
 Nachteile
 
 * Vollständige Abhängigkeit vom Entwicklungsteam und vom Entwicklungszyklus für die Aktualisierung der Daten an XDM
 * Eingeschränkte Flexibilität, da XDM die exakte Payload von der Datenschicht erhält
 * Es können keine integrierten Tags-Funktionen wie Scraping, Persistenz, Funktionen für schnelle Bereitstellungen verwendet werden
-* Die Datenschicht kann nicht für Pixel von Drittanbietern verwendet werden
+* Die Verwendung der Datenschicht für Pixel von Drittanbietern ist schwieriger (Sie sollten diese Pixel jedoch verschieben in [Ereignisweiterleitung](setup-event-forwarding.md)!
 * Keine Transformation der Daten zwischen der Datenschicht und XDM
 
 ### Zuordnen der Datenschicht in Tags
@@ -267,7 +267,7 @@ Um das Datenelement &quot;Variable&quot;für XDM zu erstellen, verknüpfen Sie e
 1. Wählen Sie die **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Erweiterung]**
 1. Wählen Sie die **[!UICONTROL Variable]** als **[!UICONTROL Datenelementtyp]**
 1. Auswählen **[!UICONTROL XDM]** als **[!UICONTROL property]**
-1. Auswählen der entsprechenden Experience Platform **[!UICONTROL Sandbox]**
+1. Wählen Sie die **[!UICONTROL Sandbox]** in dem Sie das Schema erstellt haben
 1. Wählen Sie die entsprechende **[!UICONTROL Schema]** in diesem Fall `Luma Web Event Data`
 1. Auswählen **[!UICONTROL Speichern]**
 
@@ -280,6 +280,7 @@ Erstellen Sie anschließend das Datenelement Variable für Ihr Datenobjekt:
 1. Wählen Sie die **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Erweiterung]**
 1. Wählen Sie die **[!UICONTROL Variable]** als **[!UICONTROL Datenelementtyp]**
 1. Auswählen **[!UICONTROL data]** als **[!UICONTROL property]**
+1. Wählen Sie die Experience Cloud-Lösungen aus, die Sie im Rahmen dieses Tutorials implementieren möchten
 1. Auswählen **[!UICONTROL Speichern]**
 
    ![Variablendatenelement für Datenobjekt](assets/data-element-data-variable.png.png)

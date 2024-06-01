@@ -1,13 +1,13 @@
 ---
 title: Installieren und Konfigurieren der Adobe Experience Platform Web SDK-Tag-Erweiterung
-description: Erfahren Sie, wie Sie die Platform Web SDK-Tag-Erweiterung in der Datenerfassungsoberfläche installieren und konfigurieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie die Platform Web SDK-Tag-Erweiterung in der Datenerfassungsoberfläche installieren und konfigurieren. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 10%
+source-wordcount: '607'
+ht-degree: 11%
 
 ---
 
@@ -41,7 +41,7 @@ Erstellen Sie eine neue Tag-Eigenschaft für das Tutorial:
    ![Neue Eigenschaft hinzufügen](assets/websdk-property-addNewProperty.png)
 1. Als **[!UICONTROL Name]**, eingeben `Web SDK Course` (Fügen Sie am Ende Ihren Namen hinzu, wenn mehrere Personen aus Ihrem Unternehmen dieses Tutorial absolvieren)
 1. Als **[!UICONTROL Domänen]**, eingeben `enablementadobe.com` (später erklärt)
-1. Wählen Sie **[!UICONTROL Speichern]** aus
+1. Auswählen **[!UICONTROL Speichern]**
    ![Eigenschaftendetails](assets/websdk-property-propertyDetails.png)
 
 ## Web SDK-Erweiterung hinzufügen
@@ -50,7 +50,7 @@ Nachdem Sie Ihr XDM-Schema, Ihren Datastream und Ihre Tag-Eigenschaft erstellt h
 
 1. Öffnen Sie die neue Tag-Eigenschaft
 1. Navigieren Sie zu **[!UICONTROL Erweiterungen]** > **[!UICONTROL Katalog]**
-1. Suchen Sie nach `Adobe Experience Platform Web SDK`.
+1. Suchen Sie nach `Adobe Experience Platform Web SDK`
 1. Auswählen **[!UICONTROL Installieren]**
 
    ![Installieren der Web SDK-Erweiterung](assets/extension-platform-web-sdk.png)
@@ -61,8 +61,9 @@ Nachdem Sie Ihr XDM-Schema, Ihren Datastream und Ihre Tag-Eigenschaft erstellt h
 Behalten Sie die meisten Standardeinstellungen bei und aktualisieren Sie sie bei Bedarf später. Sie müssen jetzt nur die Erweiterung mit Ihrem Datastream verknüpfen:
 
 1. under **[!UICONTROL Datenspeicher]**, wählen Sie die **[!UICONTROL Aus Liste auswählen]** Eingabemethode
+1. Wählen Sie die Sandbox aus, in der Sie das Schema, den Identitäts-Namespace und den Datenspeicher erstellt haben
 1. Wählen Sie den zuvor erstellten Datastream aus. `Luma Web SDK`
-1. Wählen Sie **[!UICONTROL Speichern]** aus
+1. Auswählen **[!UICONTROL Speichern]**
 
    >[!NOTE]
    >

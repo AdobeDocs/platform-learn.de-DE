@@ -1,13 +1,13 @@
 ---
 title: WebSDK-Implementierungen mit Experience Platform Debugger validieren
-description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 1%
+source-wordcount: '1172'
+ht-degree: 3%
 
 ---
 
@@ -75,7 +75,7 @@ Der Experience Platform Debugger verfügt über eine coole Funktion, mit der Sie
 
    ![Tag-Eigenschaft ersetzt](assets/validate-switch-success.png)
 
-Während Sie das Tutorial fortsetzen, verwenden Sie diese Methode, um die Site &quot;Luma&quot;Ihrer eigenen Tag-Eigenschaft zuzuordnen und Ihre Platform Web SDK-Implementierung zu validieren. Wenn Sie mit der Verwendung von Tags auf Ihrer Produktions-Website beginnen, können Sie diese Methode verwenden, um Änderungen zu validieren, während Sie sie in Ihrer Entwicklungsumgebung von Tags vornehmen.
+Während Sie das Tutorial fortsetzen, verwenden Sie diese Methode, um die Site &quot;Luma&quot;Ihrer eigenen Tag-Eigenschaft zuzuordnen und Ihre Platform Web SDK-Implementierung zu validieren. Wenn Sie Tags auf Ihrer eigenen Website verwenden, können Sie dieselbe Methode verwenden, um Entwicklungs-Tag-Bibliotheken auf Ihrer Produktions-Website zu validieren.
 
 ## Clientseitige Netzwerkanfragen mit Experience Platform Debugger überprüfen
 
@@ -131,7 +131,7 @@ Diese Arten von Anforderungsdetails sind auch in den Webentwickler-Tools des Bro
 
    ![Netzwerkregisterkarte](assets/validate-dev-console.png)
 
-1. Navigieren Sie zu **Reaktion** und beachten Sie, wie der ECID-Wert in der Antwort enthalten ist. Kopieren Sie diesen Wert, da Sie ihn verwenden werden, um die Profilinformationen in der nächsten Übung zu überprüfen.
+1. Navigieren Sie zu **Reaktion** und beachten Sie, wie der ECID-Wert in der Antwort enthalten ist.
 
    ![Netzwerkregisterkarte](assets/validate-dev-console-ecid.png)
 

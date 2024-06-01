@@ -1,12 +1,12 @@
 ---
 title: Erstellen von Tag-Regeln für das Platform Web SDK
-description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform-Edge Network senden. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie mit Ihrem XDM-Objekt mithilfe einer Tag-Regel ein Ereignis an das Platform-Edge Network senden. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '1983'
 ht-degree: 2%
 
 ---
@@ -139,9 +139,9 @@ Nun ordnen Sie Ihre [!UICONTROL Datenelemente] der [!UICONTROL schema] verwendet
 
 1. Ordnen Sie die folgenden Datenelemente den entsprechenden `web` XDM-Variablen
 
-   * **`web.webPageDetials.name`** in `%page.pageInfo.pageName%`
-   * **`web.webPageDetials.server`** in `%page.pageInfo.server%`
-   * **`web.webPageDetials.siteSection`** in `%page.pageInfo.hierarchie1%`
+   * **`web.webPageDetials.name`** nach `%page.pageInfo.pageName%`
+   * **`web.webPageDetials.server`** nach `%page.pageInfo.server%`
+   * **`web.webPageDetials.siteSection`** nach `%page.pageInfo.hierarchie1%`
 
 1. Stellen Sie `web.webPageDetials.pageViews.value` auf `1` ein.
 
@@ -163,7 +163,6 @@ Beginnen Sie jetzt mit der Verwendung von **[!UICONTROL Variable aktualisieren]*
 >
 >Die Regelreihenfolge bestimmt, welche Regel beim Auslösen eines Ereignisses zuerst ausgeführt wird. Wenn zwei Regeln denselben Ereignistyp aufweisen, wird zuerst die Regel mit der niedrigsten Nummer ausgeführt.
 > 
->![rule-order](assets/set-up-analytics-sequencing.png)
 
 Beginnen Sie mit der Verfolgung der Produktansichten auf der Produktdetailseite von Luma:
 
@@ -172,7 +171,8 @@ Beginnen Sie mit der Verfolgung der Produktansichten auf der Produktdetailseite 
 1. Wählen Sie die ![+ Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) unter Ereignis zum Hinzufügen eines neuen Triggers
 1. under **[!UICONTROL Erweiterung]** auswählen **[!UICONTROL Core]**
 1. under **[!UICONTROL Ereignistyp]** auswählen **[!UICONTROL Bibliothek geladen (Seitenanfang)]**
-1. Zum Öffnen auswählen **[!UICONTROL Erweiterte Optionen]**, Typ in `20`. Dieser Bestellwert stellt sicher, dass die Regel nach dem `all pages - library loaded - set global variables - 1` , der die globale Konfiguration festlegt.
+1. Zum Öffnen auswählen **[!UICONTROL Erweiterte Optionen]**, Typ in `20`. Dieser Bestellwert stellt sicher, dass die Regel ausgeführt wird _after_ die `all pages - library loaded - set global variables - 1` die globale Konfiguration festlegen.
+1. Auswählen **[!UICONTROL Änderungen beibehalten]**
 
    ![Analytics-XDM-Regeln](assets/set-up-analytics-pdp.png)
 
@@ -189,6 +189,7 @@ Beginnen Sie mit der Verfolgung der Produktansichten auf der Produktdetailseite 
 1. under **[!UICONTROL Aktionen]** select **[!UICONTROL Hinzufügen]**
 1. Auswählen **[!UICONTROL Adobe Experience Platform Web SDK]** Erweiterung
 1. Auswählen **[!UICONTROL Aktionstyp]** as **[!UICONTROL Variable aktualisieren]**
+1. Auswählen `xdm.variable.content` als **[!UICONTROL Datenelement]**
 1. Scrollen Sie nach unten zum `commerce` Objekt
 1. Öffnen Sie die **[!UICONTROL productViews]** -Objekt und -set **[!UICONTROL value]** nach `1`
 
@@ -202,7 +203,7 @@ Beginnen Sie mit der Verfolgung der Produktansichten auf der Produktdetailseite 
 
    >[!NOTE]
    >
-   >Da diese Regel eine höhere Reihenfolge aufweist, überschreibt sie die `eventType` in der Regel &quot;globale Konfiguration&quot;festgelegt. `eventType` kann nur einen Wert enthalten. Es wird empfohlen, ihn mit dem Ereignis mit dem höchsten Wert festzulegen.
+   >Da diese Regel eine höhere Reihenfolge aufweist, überschreibt sie die `eventType` in der Regel &quot;globale Konfiguration&quot;festgelegt. `eventType` kann nur einen Wert enthalten. Es wird empfohlen, ihn mit dem wertvollsten Ereignis festzulegen.
 
 1. Scrollen Sie nach unten zu und wählen Sie `productListItems` array
 1. Auswählen **[!UICONTROL Bereitstellen einzelner Elemente]**
@@ -215,7 +216,7 @@ Beginnen Sie mit der Verfolgung der Produktansichten auf der Produktdetailseite 
    >Die **`productListItems`** ist `array` -Datentyp, sodass erwartet wird, dass Daten als Sammlung von Elementen eingehen. Aufgrund der Datenschichtstruktur der Demosite &quot;Luma&quot;und da es nur möglich ist, ein Produkt gleichzeitig auf der Site &quot;Luma&quot;anzuzeigen, fügen Sie Elemente einzeln hinzu. Bei der Implementierung auf Ihrer eigenen Website können Sie je nach Datenschichtstruktur möglicherweise ein ganzes Array bereitstellen.
 
 1. Zum Öffnen auswählen **[!UICONTROL Posten 1]**
-1. Zuordnung von **`productListItems.item1.SKU`** nach `%product.productInfo.sku%`
+1. Zuordnung **`productListItems.item1.SKU`** nach `%product.productInfo.sku%`
 
    ![Produkt-SKU XDM-Objektvariable](assets/set-up-analytics-sku.png)
 
@@ -264,6 +265,7 @@ Zuordnen des Arrays zum XDM-Objekt:
 1. under **[!UICONTROL Aktionen]** select **[!UICONTROL Hinzufügen]**
 1. Auswählen **[!UICONTROL Adobe Experience Platform Web SDK]** Erweiterung
 1. Auswählen **[!UICONTROL Aktionstyp]** as **[!UICONTROL Variable aktualisieren]**
+1. Auswählen `xdm.variable.content` als **[!UICONTROL Datenelement]**
 1. Scrollen Sie nach unten zum `commerce` -Objekt ein und wählen Sie aus, um es zu öffnen.
 1. Öffnen Sie die **[!UICONTROL productListViews]** -Objekt und -set **[!UICONTROL value]** nach `1`
 
@@ -320,7 +322,8 @@ Erstellen Sie zwei weitere Regeln für Checkout und Kauf nach demselben Muster m
 1. Scrollen Sie nach unten zu und wählen Sie **[!UICONTROL productListItems]** array
 1. Auswählen **[!UICONTROL Gesamtes Array bereitstellen]**
 1. Zuordnung zu **`cart.productInfo.purchase`** Datenelement
-1. Wählen Sie **[!UICONTROL Speichern]** aus
+1. Auswählen **[!UICONTROL Änderungen beibehalten]**
+1. Auswählen **[!UICONTROL Speichern]**
 
 Wenn Sie fertig sind, sollten die folgenden Regeln erstellt werden.
 
@@ -339,7 +342,7 @@ Nachdem Sie die Variablen festgelegt haben, können Sie die Regel erstellen, um 
 
 1. Verwenden Sie die **[!UICONTROL Haupterweiterung]** und wählen `Library Loaded (Page Top)` als **[!UICONTROL Ereignistyp]**
 
-1. Auswählen **[!UICONTROL Erweitert]** Dropdown und `50` in **[!UICONTROL Bestellung]**. Dadurch wird sichergestellt, dass die zweite Regel Trigger nach der ersten Regel, die Sie auf Trigger als `1`.
+1. Auswählen **[!UICONTROL Erweitert]** Dropdown und `50` in **[!UICONTROL Bestellung]**. Dadurch wird sichergestellt, dass diese Regel ausgelöst wird, nachdem alle anderen Regeln, die Sie konfiguriert haben (die `1` oder `20` als [!UICONTROL Bestellung]).
 
 1. Auswählen **[!UICONTROL Änderungen beibehalten]** zum Hauptregelbildschirm zurückzukehren
    ![Trigger &quot;Bibliothek geladen&quot;auswählen](assets/create-tag-rule-trigger-loaded-send.png)
@@ -390,7 +393,7 @@ Wie Sie auf der [!UICONTROL Veröffentlichungsfluss] -Bildschirm gibt es viel me
 
 Jetzt können Sie die Daten in der Anfrage mithilfe des Adobe Experience Platform Debuggers überprüfen.
 
-[Nächste ](validate-with-debugger.md)
+[Weiter ](validate-with-debugger.md)
 
 >[!NOTE]
 >

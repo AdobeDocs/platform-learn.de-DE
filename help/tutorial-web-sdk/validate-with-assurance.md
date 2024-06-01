@@ -1,13 +1,13 @@
 ---
 title: WebSDK-Implementierungen mit Experience Platform Assurance validieren
-description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Assurance überprüfen. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Adobe Experience Platform Assurance validieren. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 3%
+source-wordcount: '606'
+ht-degree: 7%
 
 ---
 
@@ -78,8 +78,8 @@ Jedes Mal, wenn Sie Edge Trace in Adobe Experience Platform Debugger aktivieren,
 
 Zu diesem Zeitpunkt Ihrer Implementierung sind nur begrenzte Informationen verfügbar. Ein Wert, den wir sehen können, ist Ihre Experience Cloud ID (ECID), die auf Platform Edge Network generiert wird:
 
-1. Wählen Sie die Zeile mit dem Ereignis Adobe Response Handle aus.
-1. Rechts wird ein Menü angezeigt. Wählen Sie die `+` neben `[!UICONTROL ACPExtensionEvent]`
+1. Wählen Sie die Zeile mit dem Ereignis `Alloy Response Handle`.
+1. Rechts wird ein Menü angezeigt. Wählen Sie die `+` neben `[!UICONTROL ACPExtensionEventData]`
 1. Drilldown durch Auswahl von `[!UICONTROL payload > 0 > payload > 0 > namespace]`. Die unter der letzten `0` entspricht `ECID`. Sie wissen dies anhand des Wertes, der unter `namespace` Abgleich `ECID`
 
    ![Zuverlässigkeitsprüfung ECID](assets/validate-assurance-ecid.png)
