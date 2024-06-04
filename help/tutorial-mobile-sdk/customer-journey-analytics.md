@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Interaktionen mit Ihrer App mithilfe von 
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
+source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
 workflow-type: tm+mt
-source-wordcount: '3410'
+source-wordcount: '3291'
 ht-degree: 2%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 Erfahren Sie, wie Sie Ihre Interaktionen mit mobilen Apps mit Customer Journey Analytics melden und analysieren können.
 
-Die Ereignisdaten der Mobile App, die Sie in früheren Lektionen erfasst und an Platform Edge Network gesendet haben, werden an die in Ihrem Datastream konfigurierten Dienste weitergeleitet. Wenn Sie der [Daten an Experience Platform senden](platform.md) -Lektion verwenden, werden diese Daten nun als Datensätze im Data Lake von Experience Platform gespeichert. Und diese Daten stehen dann Customer Journey Analytics zur Verfügung, um sie für Berichte und Analysen zu verwenden.
+Die Ereignisdaten der Mobile App, die Sie in früheren Lektionen erfasst und an Platform Edge Network gesendet haben, werden an die in Ihrem Datastream konfigurierten Dienste weitergeleitet. Wenn Sie der [Daten an Experience Platform senden](platform.md) -Lektion verwenden, werden diese Daten nun als Datensätze im Data Lake von Experience Platform gespeichert. Ab diesem Zeitpunkt sind die Daten für Customer Journey Analytics zur Berichterstellung und Analyse verfügbar.
 
-Im Gegensatz zu Adobe Analytics ist Customer Journey Analytics eine Anwendung, die *uses* Daten aus Datensätzen, die Sie in Experience Platform erstellt haben und an die Ihre App Daten sendet. Mit dem Adobe Experience Platform Mobile SDK senden Sie keine Daten direkt an Customer Journey Analytics. Stattdessen verwendet Customer Journey Analytics die Daten aus den Datensätzen in Experience Platform.
+Im Gegensatz zu Adobe Analytics, Customer Journey Analytics *uses* Daten aus Datensätzen, die in Experience Platform erstellt wurden. Daten werden nicht direkt mit dem Adobe Experience Platform Mobile SDK an Customer Journey Analytics gesendet, sondern an Datensätze. Verbindungen werden dann im Customer Journey Analytics konfiguriert, um die Datensätze auszuwählen, die Sie in Ihren Berichts- und Analyseprojekten verwenden werden.
 
-Diese Lektion im Tutorial konzentriert sich auf die Berichterstellung und Analyse der Daten, die aus der Tutorial-App &quot;Luma&quot;erfasst wurden. Eine der einzigartigen Möglichkeiten von Customer Journey Analytics besteht darin, Daten aus verschiedenen Quellen (CRM, Point-of-Sale, Treueprogramm, Callcenter) und Kanälen (Web, Mobil, Offline) zu kombinieren, um tiefgründige Einblicke in die Journey zu erhalten. Diese Fähigkeit geht über den Rahmen dieser Lektion hinaus. Siehe [Customer Journey Analytics - Übersicht](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) für weitere Informationen.
+Diese Lektion im Tutorial konzentriert sich auf die Berichterstellung und Analyse der Daten, die aus der Tutorial-App &quot;Luma&quot;erfasst wurden. Eine der einzigartigen Möglichkeiten von Customer Journey Analytics besteht darin, Daten aus verschiedenen Quellen (CRM, Point-of-Sale, Treueprogramm, Callcenter) und Kanälen (Web, mobil, offline) zu kombinieren, um tiefgründige Einblicke in die Journey zu erhalten. Diese Fähigkeit geht über den Rahmen dieser Lektion hinaus. Siehe [Customer Journey Analytics - Übersicht](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) für weitere Informationen.
 
 
 ## Voraussetzungen
@@ -35,7 +35,7 @@ In dieser Lektion werden Sie:
 - Erstellen Sie eine Datenansicht, um die Daten aus den Datensätzen für Ihre Berichterstellung und Analyse vorzubereiten.
 - Erstellen Sie ein Projekt, um Berichte und Visualisierungen zu erstellen, damit Sie die Daten aus Ihrer mobilen App analysieren können.
 
-Diese Bestellung ist absichtlich. Unter Customer Journey Analytics hängt ein Bericht in Analysis Workspace von einer Datenansicht ab. Eine Datenansicht hängt von einer Verbindung ab.
+Die Sequenz ist absichtlich. Verbindungen verwenden Datensätze, und Datenansichten verwenden Verbindungen.
 
 
 ## Verbindung erstellen
@@ -66,7 +66,7 @@ Eine Verbindung in Customer Journey Analytics definiert die Datensätze (und die
 
    6. Im **[!UICONTROL Hinzufügen von Datensätzen]** Assistent, **[!UICONTROL Auswählen von Datensätzen]** Schritt,
 
-      1. die folgenden Datensätze auswählen:
+      1. Wählen Sie die folgenden Datensätze aus:
 
          - **[!UICONTROL Ereignis-Datensatz für Luma Mobile App]**, den Datensatz, den Sie als Teil der [Datensatz erstellen](platform.md#create-a-dataset) in der Experience Platform-Lektion.
          - **[!UICONTROL ODE DecisionEvents - *Sandbox-Name*] Entscheidungsfindung**
@@ -131,7 +131,7 @@ So erstellen Sie Ihre Datenansicht:
 
       ![CJA-Datenansicht 1](assets/cja-dataview-1.png)
 
-1. Im **[!UICONTROL Komponenten]** des **[!UICONTROL Datenansicht der Luma App - AEP Mobile SDK-Tutorial-Anleitung für mobile Apps]** können Sie die Metriken und Dimensionen definieren, die Sie für die Berichterstellung über Ihre mobile App verwenden möchten. Standardmäßig sind mehrere Standardmetriken und -dimensionen (gemeinsam auf Komponenten verwiesen) bereits für Ihre Datenansicht konfiguriert. Ihre Datenansicht erfordert jedoch mehr Komponenten. <br/>So fügen Sie ein Schemafeld aus Ihrem zuvor definierten Schema oder aus vordefinierten Schemata hinzu (siehe [Schema erstellen](create-schema.md) Lektion) als Komponente (Dimension oder Metrik):
+1. Im **[!UICONTROL Komponenten]** des **[!UICONTROL Datenansicht der Luma App - AEP Mobile SDK-Tutorial-Anleitung für mobile Apps]** können Sie die Metriken und Dimensionen definieren, die Sie für die Berichterstellung über Ihre mobile App verwenden möchten. Standardmäßig sind mehrere Standardmetriken und -dimensionen (gemeinsam auf Komponenten verwiesen) bereits für Ihre Datenansicht konfiguriert. Ihre Datenansicht erfordert jedoch mehr Komponenten. <br/>So fügen Sie ein Schemafeld aus Ihrem zuvor definierten Schema oder nativen Schemata hinzu (siehe [Schema erstellen](create-schema.md) Lektion) als Komponente (Dimension oder Metrik):
 
    1. Suchen Sie das Schemafeld:
 
@@ -155,7 +155,7 @@ So erstellen Sie Ihre Datenansicht:
 
       ![Komponenteneinstellungen der CJA-Datenansicht](assets/cja-dataview-component-settings.png)
 
-   1. Nachdem Sie nun wissen, wie Sie Ihrer Datenansicht Felder hinzufügen und die resultierende Komponente konfigurieren können, verwenden Sie die unten stehenden Tabellen für eine Liste von Schemafeldern, die als Metrik oder Dimension hinzugefügt werden sollen. Verwenden Sie die **Schema Path** -Spaltenwert aus der unten stehenden Tabelle, um nach dem spezifischen Schemafeld zu suchen oder es zu ihm zu durchsuchen. Überprüfen Sie nach dem Ziehen und Ablegen die **Komponenteneinstellungen** Spaltenwert in der Tabelle, ob bestimmte Einstellungen für eine Komponente erforderlich sind, z. B. die Änderung ihrer **[!UICONTROL Komponentenname]** oder definieren **[!UICONTROL AUSSCHLIESSENDE WERTE EINSCHLIESSEN]**.
+   1. Nachdem Sie nun wissen, wie Sie Ihrer Datenansicht Felder hinzufügen und die resultierende Komponente konfigurieren können, verwenden Sie die Tabellen unten für eine Liste von Schemafeldern, um sie als Metriken oder Dimensionen hinzuzufügen. Verwenden Sie die **Schema Path** -Spaltenwert aus der unten stehenden Tabelle, um nach dem spezifischen Schemafeld zu suchen oder es zu ihm zu durchsuchen. Nachdem Metriken und Dimensionen hinzugefügt wurden, überprüfen Sie die **Komponenteneinstellungen** Spaltenwert in der Tabelle, ob bestimmte Einstellungen für eine Komponente erforderlich sind, wie z. B. **[!UICONTROL Komponentenname]** oder definieren **[!UICONTROL AUSSCHLIESSENDE WERTE EINSCHLIESSEN]**.
 
       **METRIKEN**
 
@@ -177,9 +177,12 @@ So erstellen Sie Ihre Datenansicht:
 
       {style="table-layout:auto"}
 
-      Beachten Sie, wie das Schemafeld für die Metrik &quot;Standortereignisse&quot;verwendet **[!UICONTROL AUSSCHLIESSENDE WERTE EINSCHLIESSEN]** zum Zählen von Ereignistypen, die `location`.
+      >[!NOTE]
+      >
+      >Beachten Sie, wie das Schemafeld für die Metrik &quot;Standortereignisse&quot;verwendet **[!UICONTROL AUSSCHLIESSENDE WERTE EINSCHLIESSEN]** zum Zählen von Ereignistypen, die `location`.
 
-      Nachdem Sie alle Schemafelder aus der obigen Tabelle als Metrikkomponente hinzugefügt haben, konfigurieren Sie Ihre Datenansichtskonfiguration für **[!UICONTROL METRIKEN]** sollte wie folgt aussehen:
+
+      Ihre Datenansichtskonfiguration für **[!UICONTROL METRIKEN]** sollte mit unten übereinstimmen, nachdem Sie alle Schemafelder aus der obigen Tabelle als Metrikkomponente hinzugefügt haben:
 
       ![CJA-Datenansicht 4](assets/cja-dataview-4.png)
 
@@ -197,7 +200,7 @@ So erstellen Sie Ihre Datenansicht:
 
       {style="table-layout:auto"}
 
-      Nachdem Sie alle Schemafelder aus der obigen Tabelle als Dimensionskomponente hinzugefügt haben, konfigurieren Sie Ihre Datenansichtskonfiguration für **[!UICONTROL DIMENSIONEN]** sollte wie folgt aussehen:
+      Ihre Datenansichtskonfiguration für **[!UICONTROL DIMENSIONEN]** sollte mit unten übereinstimmen, nachdem Sie alle Schemafelder aus der obigen Tabelle als Dimensionskomponente hinzugefügt haben:
 
       ![CJA-Datenansicht 4](assets/cja-dataview-5.png)
 
@@ -211,7 +214,7 @@ Sie haben Ihre Datenansicht definiert und alles ist vorhanden, um Ihre Berichte 
 
 ## Projekt erstellen
 
-Sie verwenden Workspace-Projekte im Customer Journey Analytics, um Ihre Berichte und Visualisierungen zu erstellen. Es gibt viele Möglichkeiten, umfassende Berichte und ansprechende Visualisierungen zu erstellen. All diese Möglichkeiten stehen jedoch außerhalb des Rahmens dieses Tutorials. Siehe [Workspace - Überblick](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) und [Neues Projekt erstellen](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) für weitere Informationen.
+Workspace-Projekte werden im Customer Journey Analytics zum Erstellen von Berichten und Visualisierungen verwendet. Es gibt viele Möglichkeiten, umfassende Berichte und ansprechende Visualisierungen zu erstellen. Dies fällt jedoch nicht in den Rahmen dieses Tutorials. Siehe [Workspace - Überblick](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) und [Neues Projekt erstellen](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) für weitere Informationen.
 
 In diesem Abschnitt der Lektion erstellen Sie ein Projekt, das Berichte und Visualisierungen zu folgenden Themen anzeigt:
 
@@ -250,23 +253,22 @@ So erstellen Sie Ihr Projekt:
 >
 >   Vergessen Sie nicht, Ihr Projekt regelmäßig zu speichern, da ansonsten Ihre Änderungen verloren gehen. Sie können Ihr Projekt schnell mit **[!UICONTROL Strg + S]** (Windows) oder **[!UICONTROL η (cmd) + s]** (macOS).
 
-Sie haben jetzt Ihr Projekt eingerichtet. Auf der Hauptarbeitsfläche befindet sich bereits ein Freiform-Bedienfeld, das eine Freiformtabelle enthält. Sie werden dieser Tabelle bald Komponenten hinzufügen. Sie müssen jedoch zunächst sicherstellen, dass Ihr Freiform-Bedienfeld die richtige Datenansicht und den richtigen Zeitraum verwendet.
-
+Sie haben jetzt Ihr Projekt eingerichtet. Standardmäßig wird eine Freiformtabelle bereitgestellt. Bevor Sie Komponenten hinzufügen, stellen Sie sicher, dass Ihr Freiform-Bedienfeld die richtige Datenansicht und den richtigen Zeitraum verwendet.
 
 1. Wählen Sie Ihre Datenansicht aus der Dropdownliste aus. Beispiel: **[!UICONTROL Datenansicht der Luma App - AEP Mobile SDK-Tutorial-Anleitung für mobile Apps]**. Wenn Ihre Datenansicht nicht in der Liste angezeigt wird, wählen Sie **[!UICONTROL Alle anzeigen]** unten in der Dropdown-Liste.
    ![CJA-Projekt 5](assets/cja-projects-5.png)
 
-1. Um den geeigneten Zeitraum für das Bedienfeld zu definieren, wählen Sie die Standardeinstellung **[!UICONTROL Diesen Monat]** und legen Sie im Popup-Fenster das Start- und Enddatum fest. Oder verwenden Sie eine **[!UICONTROL Voreinstellung]**, wie **[!UICONTROL Letzte 6 volle Monate]** und wählen **[!UICONTROL Anwenden]**.
+1. Um den geeigneten Zeitraum für das Bedienfeld zu definieren, wählen Sie die Standardvorgabe aus **[!UICONTROL Diesen Monat]** Geben Sie ein benutzerdefiniertes Start- und Enddatum ein oder verwenden Sie eine **[!UICONTROL Voreinstellung]** (like **[!UICONTROL Letzte 6 volle Monate]**) und wählen Sie **[!UICONTROL Anwenden]**.
    ![CJA-Projekt 6](assets/cja-projects-6.png)
 
 
 ### App-Nutzung
 
-Sie möchten Berichte zur Verwendung der App erstellen. Sie haben den erforderlichen Code in der App hinzugefügt, um App-Interaktionen zu registrieren und herauszufinden, welche Bildschirme in der App verwendet werden (siehe [Ereignisse verfolgen](events.md) Lektion) und Sie möchten jetzt einen Bericht zu diesen Daten erstellen.
+Jetzt können Sie Berichte zur Verwendung der App erstellen. Sie haben den erforderlichen Code in der App hinzugefügt, um App-Interaktionen zu registrieren und herauszufinden, welche Bildschirme in der App verwendet werden (siehe [Ereignisse verfolgen](events.md) Lektion) und Sie möchten jetzt einen Bericht zu diesen Daten erstellen.
 
 #### Bildschirmnamen
 
-Zunächst möchten Sie Berichte dazu erstellen, welche Bildschirme in der App angezeigt wurden.
+So melden Sie die in der App angezeigten Bildschirme:
 
 1. Benennen Sie Ihre **[!UICONTROL Freiform]** Bedienfeld zu `App Usage`.
 
@@ -276,7 +278,7 @@ Zunächst möchten Sie Berichte dazu erstellen, welche Bildschirme in der App an
 
 1. Ziehen Sie die **[!UICONTROL Bildschirmansichten]** Komponente auf [!UICONTROL _Ziehen Sie eine **Metrik**hier (oder einer anderen Komponente)_)].
    ![CJA-Projekte 7](assets/cja-projects-7.png)
-In Ihrer Freiformtabelle werden nun die Bildschirmansichten für die Tage des ausgewählten Zeitraums angezeigt. Sie möchten jedoch die Bildschirmansichten für die verschiedenen in der App verwendeten Bildschirme anzeigen.
+In Ihrer Freiformtabelle werden nun für jeden Tag des ausgewählten Zeitraums Bildschirmansichten angezeigt. Sie möchten jedoch die Anzahl der Bildschirmansichten für jeden der in der App verwendeten Bildschirme anzeigen.
 
 1. So zeigen Sie **[!UICONTROL DIMENSIONEN]** Liste von Komponenten auswählen ![Kreuz](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) , um die ![Ereignis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL Metriken]** aus der Komponentenleiste.
    ![CJA-Projekt 8](assets/cja-projects-8.png)
@@ -286,15 +288,18 @@ In Ihrer Freiformtabelle werden nun die Bildschirmansichten für die Tage des au
 1. Ziehen Sie die **[!UICONTROL Bildschirmname]** -Komponente auf **[!UICONTROL Tag]** -Kopfzeile. Der Vorgang zeigt ![Switch](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL Ersetzen]** um die Ersetzung der Dimension anzugeben.
    ![CJA-Projekte 9](assets/cja-projects-9.png)
 
-Ihr erster Bericht ist fertig. Er zeigt Bildschirmansichten für die verschiedenen Bildschirmnamen an, die Sie in der App definiert haben.
+Ihre erste Freiformtabelle in Ihrem Bericht ist abgeschlossen.
 
 ![CJA-Projekte 10](assets/cja-projects-10.png)
 
-Vergessen Sie nicht, Ihr Projekt zu speichern!
+>[!NOTE]
+>
+>Speichern Sie das Projekt, bevor Sie fortfahren.
+
 
 #### App-Interaktionen
 
-Sie möchten auch Berichte dazu erstellen, wie Benutzer mit der App interagiert haben.
+Als Nächstes erstellen Sie eine Freiformtabelle, in der die Interaktion der Benutzer mit der App beschrieben wird.
 
 1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) und aus dem Popup ![Freiformtabelle](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) , um eine neue Freiformtabelle hinzuzufügen.
    ![CJA-Projekte 11](assets/cja-projects-11.png)
@@ -310,7 +315,9 @@ Ihr zweiter Bericht ist jetzt fertig und zeigt App-Interaktionen an.
 
 Die Informationen sind hauptsächlich deshalb begrenzt, weil Sie `MobileSDK.shared.sendAppInteractionEvent(actionName: "<actionName>")` API-Aufrufe nur auf dem Anmeldebildschirm. Wenn Sie diesen API-Aufruf in mehr Bildschirmen Ihrer App hinzufügen, wird dieser Bericht informativer.
 
-Vergessen Sie nicht, Ihr Projekt zu speichern!
+>[!NOTE]
+>
+>Speichern Sie das Projekt, bevor Sie fortfahren.
 
 
 ### Commerce
@@ -340,14 +347,17 @@ Sie möchten nun in einem separaten Bedienfeld Berichte zu Commerce-Ereignissen 
 
 1. Ziehen Sie die **[!UICONTROL Monat]** Dimension über der **[!UICONTROL Tag]** Dimension , um die Berichterstellung von täglich in monatlich zu ändern.
 
-Ihre **[!UICONTROL Commerce-Ereignisse]** -Bericht ist jetzt fertig und zeigt an, wie Benutzer Produkte angezeigt, Produkte zu ihrer Wunschliste hinzugefügt, Produkte für später gespeicherte Produkte oder sogar Produkte gekauft haben.
+Ihr Commerce-Ereignisbericht ist abgeschlossen.
+
 ![CJA-Projekte 16](assets/cja-projects-16.png)
 
-Vergessen Sie nicht, Ihr Projekt zu speichern!
+>[!NOTE]
+>
+>Speichern Sie das Projekt, bevor Sie fortfahren.
 
 #### Fallout
 
-Basierend auf dem vorherigen Bericht möchten Sie den Fallout im Commerce-Trichter visualisieren: Wie viele Benutzer, die Produkte angezeigt haben, haben auch Produkte zu Warenkörben hinzugefügt. Und wie viele Benutzer, die Produkte zu ihrem Warenkorb hinzugefügt haben, diese Produkte auch zu einem späteren Zeitpunkt gespeichert haben. Und so weiter.
+Als Nächstes erstellen Sie eine Fallout-Visualisierung für den Commerce-Trichter, die anzeigt, wie viele Benutzer, die Produkte angesehen haben, diese Produkte zu ihrem Warenkorb hinzugefügt haben und wie viele Benutzer diese Produkte zu einem späteren Zeitpunkt gespeichert haben.
 
 1. Auswählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) innerhalb der **[!UICONTROL Commerce]** und wählen Sie im Popup-Fenster ![Fallout](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) (Darstellung der Fallout-Visualisierung).
 
@@ -357,10 +367,12 @@ Alternativ können Sie die **[!UICONTROL Produktansicht]** Dimension unterhalb d
 
 1. Wiederholen Sie den obigen Schritt für **[!UICONTROL Produkt zu Listen hinzufügen]** und **[!UICONTROL Käufe]** Dimensionen.
 
-Ihre **[!UICONTROL Fallout]** Die Visualisierung zeigt jetzt eine visuelle Darstellung des Konversionstrichter für Ihre Produkte.
+Ihr Fallout-Visualisierungsbericht ist abgeschlossen.
 ![CJA-Projekte 19](assets/cja-projects-19.png)
 
-Vergessen Sie nicht, Ihr Projekt zu speichern!
+>[!NOTE]
+>
+>Speichern Sie das Projekt, bevor Sie fortfahren.
 
 
 ### Angebote
@@ -383,10 +395,13 @@ Sie möchten Berichte dazu erstellen, wie viele Angebote und welche Angebote den
 
 1. Ziehen Sie die **[!UICONTROL Monat]** Dimension auf der **[!UICONTROL Tag]** -Spalte, um die Dimension zu ersetzen.
 
-Sie verfügen nun über einen Bericht, der die monatlichen Angebote anzeigt, die Ihren Benutzern in der App angezeigt werden.
+Ihre monatliche Angebotsübersicht ist abgeschlossen.
+
 ![CJA-Projekte 20](assets/cja-projects-20.png)
 
-Vergessen Sie nicht, Ihr Projekt zu speichern!
+>[!NOTE]
+>
+>Speichern Sie das Projekt, bevor Sie fortfahren.
 
 
 #### Angebote für Personen
@@ -406,10 +421,13 @@ Sie möchten auch einen Bericht erstellen, der anzeigt, welche Angebote in welch
 1. Wählen Sie im Kontextmenü die Option **[!UICONTROL Verteilung]** > **[!UICONTROL Dimensionen]** > **[!UICONTROL Angebotsname]**. Durch diese Auswahl wird die Dimension &quot;Aktivitätsname&quot;in Angebotsnamen unterteilt.
    ![CJA-Projekte 20b](assets/cja-projects-20b.png)
 
-Sie verfügen nun über einen Bericht, der Benutzern Ihrer App die für diese Angebotsentscheidung während des ausgewählten Zeitraums angezeigten individuellen Angebote anzeigt.
+Der Bericht Angebote für Personen ist abgeschlossen.
+
 ![CJA-Projekte 21](assets/cja-projects-21.png)
 
-Vergessen Sie nicht, Ihr Projekt zu speichern!
+>[!NOTE]
+>
+>Speichern Sie das Projekt, bevor Sie fortfahren.
 
 
 ### Store-Besuche
@@ -438,7 +456,7 @@ Schließlich möchten Sie Berichte zu Store-Besuchen erstellen.
 
 1. Wählen Sie alle Zeilen in der Tabelle aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie im Kontextmenü Aufschlüsselung > Dimension > Ereignistypen aus.
 
-Sie verfügen jetzt über einen Bericht, der zeigt, dass Benutzer sich in und außerhalb der Nähe Ihrer Speicherorte befinden (wie Sie diese Speicherorte in der [Orte](places.md) Lektion).
+Ihre Berichte zu Store-Besuchen sind abgeschlossen. Sie verfügen jetzt über einen Bericht, der zeigt, dass Benutzer sich in und außerhalb der Nähe Ihrer Speicherorte befinden (wie Sie diese Speicherorte in der [Orte](places.md) Lektion).
 
 ![CJA-Projekt 23](assets/cja-projects-23.png)
 
