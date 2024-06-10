@@ -4,9 +4,10 @@ description: Erfahren Sie, wie Sie die Interaktionen mit Ihrer App mithilfe von 
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
+exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
+source-git-commit: 0af0ca0fe85fd1ba53861a1635bc0b54d0939141
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3282'
 ht-degree: 2%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 Erfahren Sie, wie Sie Ihre Interaktionen mit mobilen Apps mit Customer Journey Analytics melden und analysieren können.
 
-Die Ereignisdaten der Mobile App, die Sie in früheren Lektionen erfasst und an Platform Edge Network gesendet haben, werden an die in Ihrem Datastream konfigurierten Dienste weitergeleitet. Wenn Sie der [Daten an Experience Platform senden](platform.md) -Lektion verwenden, werden diese Daten nun als Datensätze im Data Lake von Experience Platform gespeichert. Ab diesem Zeitpunkt sind die Daten für Customer Journey Analytics zur Berichterstellung und Analyse verfügbar.
+Die Ereignisdaten der Mobile App, die Sie in früheren Lektionen erfasst und an Platform Edge Network gesendet haben, werden an die in Ihrem Datastream konfigurierten Dienste weitergeleitet. Wenn Sie der [Daten an Experience Platform senden](platform.md) -Lektion verwenden, werden diese Daten jetzt in einem Experience Platform-Datensatz gespeichert und stehen Customer Journey Analytics zur Berichterstellung und Analyse zur Verfügung.
 
 Im Gegensatz zu Adobe Analytics, Customer Journey Analytics *uses* Daten aus Datensätzen, die in Experience Platform erstellt wurden. Daten werden nicht direkt mit dem Adobe Experience Platform Mobile SDK an Customer Journey Analytics gesendet, sondern an Datensätze. Verbindungen werden dann im Customer Journey Analytics konfiguriert, um die Datensätze auszuwählen, die Sie in Ihren Berichts- und Analyseprojekten verwenden werden.
 
@@ -155,7 +156,7 @@ So erstellen Sie Ihre Datenansicht:
 
       ![Komponenteneinstellungen der CJA-Datenansicht](assets/cja-dataview-component-settings.png)
 
-   1. Nachdem Sie nun wissen, wie Sie Ihrer Datenansicht Felder hinzufügen und die resultierende Komponente konfigurieren können, verwenden Sie die Tabellen unten für eine Liste von Schemafeldern, um sie als Metriken oder Dimensionen hinzuzufügen. Verwenden Sie die **Schema Path** -Spaltenwert aus der unten stehenden Tabelle, um nach dem spezifischen Schemafeld zu suchen oder es zu ihm zu durchsuchen. Nachdem Metriken und Dimensionen hinzugefügt wurden, überprüfen Sie die **Komponenteneinstellungen** Spaltenwert in der Tabelle, ob bestimmte Einstellungen für eine Komponente erforderlich sind, wie z. B. **[!UICONTROL Komponentenname]** oder definieren **[!UICONTROL AUSSCHLIESSENDE WERTE EINSCHLIESSEN]**.
+   1. Nachdem Sie nun wissen, wie Sie Ihrer Datenansicht Felder hinzufügen und die resultierende Komponente konfigurieren können, verwenden Sie die unten stehenden Tabellen für eine Liste von Schemafeldern, um sie als Metriken oder Dimensionen hinzuzufügen. Verwenden Sie die **Schema Path** -Spaltenwert aus der unten stehenden Tabelle, um nach dem spezifischen Schemafeld zu suchen oder es zu ihm zu durchsuchen. Nachdem Metriken und Dimensionen hinzugefügt wurden, überprüfen Sie die **Komponenteneinstellungen** Spaltenwert in der Tabelle, ob bestimmte Einstellungen für eine Komponente erforderlich sind, wie z. B. **[!UICONTROL Komponentenname]** oder definieren **[!UICONTROL AUSSCHLIESSENDE WERTE EINSCHLIESSEN]**.
 
       **METRIKEN**
 
