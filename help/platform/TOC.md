@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
+source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 19%
+source-wordcount: '896'
+ht-degree: 18%
 
 ---
 
@@ -80,6 +80,7 @@ ht-degree: 19%
 + Datenhygiene {#data-hygiene}
    + [Pseudonyme Profil- und Ereignisablauf (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [Datenvorbereitung für Datenhygiene](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [Datensätze und Batches löschen](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Gültige Datensätze](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Profilattribut aktualisieren](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Datenerfassung {#data-ingestion}
@@ -167,6 +168,7 @@ ht-degree: 19%
    + [Zusammenführungsrichtlinien erstellen](/help/platform/profiles/create-merge-policies.md)
    + [Übersicht über Vereinigungsschemata](/help/platform/profiles/union-schemas-overview.md)
    + [Berechnetes Attribut erstellen](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [Profile löschen](/help/platform/profiles/delete-profiles.md)
    + [Aktualisieren eines bestimmten Attributs mithilfe von upsered](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Datenschutz und Sicherheit {#privacy}
    + [Einführung in Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
