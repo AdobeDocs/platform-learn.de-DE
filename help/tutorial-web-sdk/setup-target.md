@@ -1,19 +1,19 @@
 ---
 title: Einrichten von Adobe Target mit dem Platform Web SDK
-description: Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials zum Implementieren von Adobe Experience Cloud mit Web SDK.
+description: Erfahren Sie, wie Sie Adobe Target mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 solution: Data Collection, Target
 jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
+source-git-commit: e7bb1a7856d04c30da63cc013c2d5a5fea3d718e
 workflow-type: tm+mt
-source-wordcount: '4305'
-ht-degree: 0%
+source-wordcount: '4363'
+ht-degree: 1%
 
 ---
 
 # Einrichten von Adobe Target mit dem Platform Web SDK
 
-Erfahren Sie, wie Sie Adobe Target mit dem Adobe Experience Platform Web SDK implementieren. Erfahren Sie, wie Sie Erlebnisse bereitstellen und zusätzliche Parameter an Target übergeben.
+Erfahren Sie, wie Sie Adobe Target mit Adobe Experience Platform Web SDK implementieren. Erfahren Sie, wie Sie Erlebnisse bereitstellen und zusätzliche Parameter an Target übergeben.
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) ist die Adobe Experience Cloud-Anwendung, die Ihnen all das bietet, was Sie benötigen, um die Erlebnisse Ihrer Kunden anzupassen und zu personalisieren, sodass Sie Umsätze auf Ihren Web- und mobilen Sites, in Apps und anderen digitalen Kanälen maximieren können.
 
@@ -132,11 +132,11 @@ So konfigurieren Sie Target im Datastream:
 
    ![Wählen Sie den Datenspeicher des Luma Web SDK aus.](assets/datastream-luma-web-sdk-development.png)
 
-1. Wählen Sie **[!UICONTROL Service hinzufügen]** aus
+1. Auswählen **[!UICONTROL Dienst hinzufügen]**
    ![Hinzufügen eines Dienstes zum Datastream](assets/target-datastream-addService.png)
 1. Auswählen **[!UICONTROL Adobe Target]** als **[!UICONTROL Dienst]**
 1. Geben Sie bei Bedarf die optionalen Details zur Target-Implementierung ein. Befolgen Sie dabei die unten stehenden Anleitungen.
-1. Wählen Sie **[!UICONTROL Speichern]** aus
+1. Auswählen **[!UICONTROL Speichern]**
 
    ![Target-Datenspeicherkonfiguration](assets/target-datastream.png)
 
@@ -188,7 +188,7 @@ Entscheidungen zur visuellen Personalisierung beziehen sich auf Erlebnisse, die 
 * **Aktivität**: Ein Satz von Erlebnissen, die auf eine oder mehrere Zielgruppen ausgerichtet sind. Ein einfacher A/B-Test könnte beispielsweise eine Aktivität mit zwei Erlebnissen sein.
 * **Erlebnis**: Eine Reihe von Aktionen, die auf einen oder mehrere Standorte oder Entscheidungsbereiche ausgerichtet sind.
 * **Entscheidungsbereich**: Ein Ort, an dem ein Target-Erlebnis bereitgestellt wird. Entscheidungsbereiche entsprechen &quot;Mboxes&quot;, wenn Sie mit älteren Target-Versionen vertraut sind.
-* **Personalisierungsentscheidung**: Eine vom Server festgelegte Aktion, die angewendet werden soll. Diese Entscheidungen können auf Zielgruppenkriterien und der Priorisierung der Target-Aktivität basieren.
+* **Personalization-Entscheidung**: Eine vom Server festgelegte Aktion, die angewendet werden soll. Diese Entscheidungen können auf Zielgruppenkriterien und der Priorisierung der Target-Aktivität basieren.
 * **Vorschlag**: Das Ergebnis der vom Server getroffenen Entscheidungen, die in der Platform Web SDK-Antwort bereitgestellt werden. Ein Tausch eines Bannerbilds wäre beispielsweise ein Vorschlag.
 
 ### Aktualisieren Sie die [!UICONTROL Ereignis senden] action
@@ -267,7 +267,7 @@ Wenn Sie eine Aktivität einrichten, sollten Ihre Inhalte auf der Seite wiederge
 1. Navigieren Sie zu [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) und verwenden Sie den Debugger zum [Ändern Sie die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Seite neu laden
 1. Wählen Sie die **[!UICONTROL Netzwerk]** -Tool im Debugger
-1. Filtern nach **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. Filtern nach **[!UICONTROL Experience Platform Web SDK]**
 1. Wählen Sie den Wert in der Ereigniszeile für den ersten Aufruf aus
 
    ![Netzwerkaufruf im Adobe Experience Platform-Debugger](assets/target-debugger-network.png)
@@ -321,11 +321,57 @@ Nachdem Sie das Platform Web SDK konfiguriert haben, um Inhalte für die `homepa
 1. Für **[!UICONTROL Anwendungsbereich]** Feldeingabe `homepage-hero`
 1. Für **[!UICONTROL Selektor]** Feldeingabe `div.heroimage`
 1. Für **[!UICONTROL Aktionstyp]** select **[!UICONTROL HTML festlegen]**
+1. Auswählen **[!UICONTROL Änderungen beibehalten]**
 
    ![Hero-Aktion &quot;Render homepage&quot;](assets/target-action-render-hero.png)
 
+   Zusätzlich zum Rendern der Aktivität müssen Sie einen zusätzlichen Aufruf an Target vornehmen, um anzugeben, dass die formularbasierte Aktivität gerendert wurde:
+
+1. Fügen Sie der Regel eine weitere Aktion hinzu. Verwenden Sie die **Core** und **[!UICONTROL Benutzerspezifischer Code]** Aktionstyp:
+1. Fügen Sie den folgenden JavaScript-Code ein:
+
+   ```javascript
+   var propositions = event.propositions;
+   var heroProposition;
+   if (propositions) {
+      // Find the hero proposition, if it exists.
+      for (var i = 0; i < propositions.length; i++) {
+         var proposition = propositions[i];
+         if (proposition.scope === "homepage-hero") {
+            heroProposition = proposition;
+            break;
+         }xw
+      }
+   }
+   // Send a "display" event
+   if (heroProposition !== undefined){
+      alloy("sendEvent", {
+         xdm: {
+            eventType: "display",
+            _experience: {
+               decisioning: {
+                  propositions: [{
+                     id: heroProposition.id,
+                     scope: heroProposition.scope,
+                     scopeDetails: heroProposition.scopeDetails
+                  }]
+               }
+            }
+         }
+      });
+   }
+   ```
+
+   ![Hero-Aktion &quot;Render homepage&quot;](assets/target-action-fire-display.png)
+
+1. Auswählen **[!UICONTROL Änderungen beibehalten]**
+
 1. Speichern Sie Ihre Änderungen und erstellen Sie in Ihrer Bibliothek.
 1. Laden Sie die Startseite von Luma einige Male, was ausreicht, um die neue Seite zu erstellen. `homepage-hero` Entscheidungsumfang in der Target-Oberfläche registrieren.
+
+
+
+
 
 ### Target-Aktivität mit dem formularbasierten Experience Composer einrichten
 
@@ -381,10 +427,10 @@ Wenn Sie Ihre Aktivität aktiviert haben, sollte Ihr Inhalt auf der Seite gerend
 
 1. Beachten Sie, dass es unter Schlüssel gibt. `query` > `personalization` und  `decisionScopes` hat den Wert von `__view__` wie zuvor, aber jetzt gibt es auch eine `homepage-hero` umfasst. Durch diesen Platform Web SDK-Aufruf wurden Entscheidungen von Target für Änderungen angefordert, die mithilfe des VEC und der spezifischen `homepage-hero` Standort.
 
-   ![`__view__` DecisionScope-Anfrage](assets/target-debugger-view-scope.png)
+   ![`__view__` DecisionScope-Anfrage](assets/target-debugger-view-custom-scope.png)
 
 1. Schließen Sie die Überlagerung und wählen Sie die Ereignisdetails für den zweiten Netzwerkaufruf aus. Dieser Aufruf ist nur vorhanden, wenn Target eine Aktivität zurückgegeben hat.
-1. Beachten Sie, dass es Details zur Aktivität und zum Erlebnis gibt, die von Target zurückgegeben werden. Dieser Platform Web SDK-Aufruf sendet eine Benachrichtigung, dass eine Target-Aktivität an den Benutzer gerendert wurde, und erhöht eine Impression.
+1. Beachten Sie, dass es Details zur Aktivität und zum Erlebnis gibt, die von Target zurückgegeben werden. Dieser Platform Web SDK-Aufruf sendet eine Benachrichtigung, dass eine Target-Aktivität an den Benutzer gerendert wurde, und erhöht eine Impression. Sie wurde durch die Aktion mit benutzerdefiniertem Code ausgelöst, die Sie zuvor hinzugefügt haben.
 
    ![Target Activity Impression](assets/target-debugger-activity-impression.png)
 
@@ -397,6 +443,8 @@ In diesem Abschnitt übergeben Sie Target-spezifische Daten und sehen sich genau
 Alle XDM-Felder werden automatisch als [Seitenparameter](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) oder Mbox-Parameter.
 
 Einige dieser XDM-Felder werden bestimmten Objekten im Target-Backend zugeordnet. Beispiel: `web.webPageDetails.URL` automatisch verfügbar sind, um URL-basierte Targeting-Bedingungen zu erstellen, oder als `page.url` -Objekt beim Erstellen von Profilskripten.
+
+Sie können Seitenparameter auch über das Datenobjekt hinzufügen.
 
 ### Spezielle Parameter und das Datenobjekt
 
@@ -440,14 +488,13 @@ Das Übergeben zusätzlicher Daten für Target außerhalb des XDM-Objekts erford
    ![Hinzufügen von Target-Daten zur Regel](assets/target-rule-data.png)
 
 1. Speichern Sie Ihre Änderungen und erstellen Sie in Ihrer Bibliothek.
-1. Wiederholen Sie die Schritte 1 bis 4 für die **eCommerce - Bibliothek geladen - Festlegen von Produktdetailvariablen - 20** Regel
 
 >[!NOTE]
 >
 >Im obigen Beispiel wird eine `data` -Objekt, das nicht vollständig mit allen Seitentypen gefüllt ist. Tags handhabt diese Situation ordnungsgemäß und lässt Schlüssel mit einem nicht definierten Wert aus. Beispiel: `entity.id` und `entity.name` auf keinen Seiten außer Produktdetails übergeben werden.
 
 
-## Aufteilen von Personalisierungs- und Analytics-Anforderungen
+## Aufteilen von Personalization- und Analytics-Anforderungen
 
 Die Datenschicht auf der Site &quot;Luma&quot;ist vor dem Einbettungscode der Tags vollständig definiert. Auf diese Weise können wir einen einzigen Aufruf verwenden, um sowohl personalisierte Inhalte (z. B. aus Adobe Target) abzurufen als auch Analysedaten (z. B. an Adobe Analytics) zu senden.
 
@@ -517,7 +564,7 @@ Wenn Sie über Target Premium verfügen, können Sie auch überprüfen, ob die E
 
    ![In Target-Katalogsuche validieren](assets/validate-in-target-catalogsearch.png)
 
-### Validierung mit Versicherung
+### Mit Assurance validieren
 
 Darüber hinaus können Sie gegebenenfalls mithilfe von Assurance überprüfen, ob Target-Entscheidungsanfragen die richtigen Daten erhalten und ob serverseitige Umwandlungen korrekt durchgeführt werden. Sie können auch überprüfen, ob die Kampagnen- und Erlebnisinformationen in den Adobe Analytics-Aufrufen enthalten sind, selbst wenn die Target-Entscheidungsfindungs- und Adobe Analytics-Aufrufe separat gesendet werden.
 
@@ -529,7 +576,7 @@ Darüber hinaus können Sie gegebenenfalls mithilfe von Assurance überprüfen, 
 
 1. Wählen Sie Ihre Verbindungsmethode aus. In diesem Fall werden wir **[!UICONTROL Link kopieren]**
 1. Kopieren Sie den Link und fügen Sie ihn in eine neue Browser-Registerkarte ein
-1. Klicken Sie auf **[!UICONTROL Fertig]**.
+1. Klicks **[!UICONTROL Fertig]**
 
    ![Überprüfen der sicheren Verbindung nach dem Link &quot;Kopieren&quot;](assets/validate-in-assurance-copylink.png)
 
