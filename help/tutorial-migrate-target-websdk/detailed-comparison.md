@@ -2,10 +2,10 @@
 title: Vergleich von at.js 2.x mit Web SDK | Migrieren von Target von at.js 2.x zum Web SDK
 description: Lernen Sie die Unterschiede zwischen at.js 2.x und dem Platform Web SDK kennen, einschließlich Funktionen, Einstellungen und Datenfluss.
 exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
-source-git-commit: 78f0dcc0aa4674eb071c5fd091b5df04eb971326
+source-git-commit: 299b9586fb5c8e9c9ef3427e08035806af1d9a6b
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 8%
+source-wordcount: '2007'
+ht-degree: 4%
 
 ---
 
@@ -40,14 +40,14 @@ Wenn Sie mit dem Platform Web SDK noch nicht vertraut sind, machen Sie sich kein
 | Hybride Anwendungen | Unterstützt | Unterstützt |
 | QA-URLs | Unterstützt | Unterstützt |
 | Mbox-Drittanbieter-IDs | Unterstützt | Unterstützt |
-| Kundenattribute | Unterstützt | Unterstützt  |
+| Kundenattribute | Unterstützt | Unterstützt |
 | Remote-Angebote | Unterstützt | Unterstützt |
-| Weiterleitungsangebote | Unterstützt | Unterstützt. Eine Umleitung von einer Seite mit Platform Web SDK zu einer Seite mit at.js (und umgekehrt) wird jedoch nicht unterstützt. |
+| Umleitungsangebote | Unterstützt | Unterstützt. Eine Umleitung von einer Seite mit Platform Web SDK zu einer Seite mit at.js (und umgekehrt) wird jedoch nicht unterstützt. |
 | On-Device Decisioning | Unterstützt | Derzeit nicht unterstützt |
-| Vorabruf-mboxes | Unterstützt für benutzerdefinierte Bereiche und SPA VEC | Derzeit nicht unterstützt für regulären VEC |
+| Vorabruf-mboxes | Unterstützt für benutzerdefinierte Bereiche und SPA VEC | Der Vorabruf ist der Standardmodus für das Web SDK. |
 | Benutzerspezifische Ereignisse | Unterstützt | Nicht unterstützt. Siehe [öffentliche Roadmap](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) für den aktuellen Status. |
 | Antwort-Token | Unterstützt | Unterstützt. Siehe Abschnitt [Dokumentation zu dedizierten Antwort-Token](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) für Codebeispiele und Unterschiede zwischen at.js und Platform Web SDK |
-| Datenanbieter   | Unterstützt | Nicht unterstützt. Benutzerdefinierter Code kann zum Trigger eines Platform Web SDK verwendet werden `sendEvent` -Befehl aus, nachdem Daten von einem anderen Anbieter abgerufen wurden. |
+| Datenanbieter | Unterstützt | Nicht unterstützt. Benutzerdefinierter Code kann zum Trigger eines Platform Web SDK verwendet werden `sendEvent` -Befehl aus, nachdem Daten von einem anderen Anbieter abgerufen wurden. |
 
 
 ## Wichtige Hinweise
@@ -119,7 +119,7 @@ Die folgenden Diagramme sollen Ihnen dabei helfen, die Unterschiede zwischen ein
 
 ### at.js 2.x-Systemdiagramm
 
-![at.js 2.0-Verhalten beim Laden der Seite](assets/target-at-js-2x-diagram.png){zoomable=&quot;yes&quot;}
+![at.js 2.0-Verhalten beim Laden der Seite](assets/target-at-js-2x-diagram.png){zoomable="yes"}
 
 | Aufruf | Details |
 | --- | --- |
@@ -128,9 +128,9 @@ Die folgenden Diagramme sollen Ihnen dabei helfen, die Unterschiede zwischen ein
 | 3 | Die Seitenladeanforderung umfasst alle konfigurierten Parameter, ECID, SDID und Kunden-ID. |
 | 4 | Profilskripte werden ausgeführt und in den Profilspeicher eingespeist. Der Store ruft geeignete Zielgruppen aus der Zielgruppenbibliothek ab (z. B. über Analytics, Audience Manager usw. freigegebene Zielgruppen). Kundenattribute werden in einem Batch-Prozess an den Profilspeicher gesendet. |
 | 5 | Basierend auf URL, Anforderungsparametern und Profildaten entscheidet Target, welche Aktivitäten und Erlebnisse für die aktuelle Seite und zukünftige Ansichten an den Besucher zurückgegeben werden sollen. |
-| 6 | Zielgerichteter Inhalt, der zurück an die Seite gesendet wird, optional einschließlich Profilwerten für eine zusätzliche Personalisierung.<br><br>Die zielgerichteten Inhalte auf der aktuellen Seite werden so schnell wie möglich bereitgestellt, ohne dass Standardinhalte aufflackern.<br><br>Zielgerichtete Inhalte für zukünftige Ansichten einer Einzelseitenanwendung werden im Browser zwischengespeichert, sodass sie sofort ohne zusätzlichen Server-Aufruf angewendet werden können, wenn die Ansichten ausgelöst werden. |
+| 6 | Zielgerichteter Inhalt, der zurück an die Seite gesendet wird, optional einschließlich Profilwerten für eine zusätzliche Personalisierung.<br><br>Zielgerichteter Inhalt auf der aktuellen Seite wird so schnell wie möglich bereitgestellt, ohne dass Standardinhalte aufflackern.<br><br>Zielgerichtete Inhalte für zukünftige Ansichten einer Einzelseitenanwendung werden im Browser zwischengespeichert, sodass sie sofort ohne zusätzlichen Server-Aufruf angewendet werden können, wenn die Ansichten ausgelöst werden. |
 | 7 | Analytics-Daten, die von der Seite an die Datenerfassungsserver gesendet werden. |
-| 8 | Target-Daten werden über die SDID mit Analytics-Daten abgeglichen und im Analytics-Berichtspeicher abgelegt. Analysedaten können dann über A4T-Berichte sowohl in Analytics als auch in Target angezeigt werden. |
+| 8 | Target-Daten werden über die SDID mit Analytics-Daten abgeglichen und im Analytics-Berichtspeicher verarbeitet. Analytics-Daten können dann sowohl in Analytics als auch in Target über A4T-Berichte angezeigt werden. |
 
 Weitere Informationen finden Sie im Entwicklerhandbuch . [Target mit at.js für Einzelseitenanwendungen implementieren](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application/).
 
