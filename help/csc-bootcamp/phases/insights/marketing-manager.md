@@ -2,9 +2,10 @@
 title: CSC Bootcamp - Einblicke für einen Marketing Manager
 description: CSC Bootcamp - Einblicke für einen Marketing Manager
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 8a979899-7b56-427e-aede-6d4e045c89c1
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -21,47 +22,47 @@ Dies umfasst eine Vielzahl von Berichten, die immer angeklickt/verarbeitet werde
 
 - Die **Aufgaben, die diese Woche nach Projekt fällig werden**
 
-![Diese Woche](./images/tasks-due.png)
+![Diese Woche fällig](./images/tasks-due.png)
 
-- Die **Termine des Projektmanagements** :
+- Die bevorstehenden Meilensteine des **Projektmanagements** :
 
-![Bevorstehende Meilensteine](./images/upcoming-milestones.png)
+![ Bevorstehende Meilensteine](./images/upcoming-milestones.png)
 
-- Die **Offene Probleme nach Priorität**
+- Die **offenen Probleme nach Priorität**
 
-![prioritäre Themen](./images/open-issues.png)
+![Probleme nach Priorität](./images/open-issues.png)
 
-- Die **Verspätete Aufgaben nach Abteilung**
+- Die **verspäteten Aufgaben nach Abteilung**
 
 ![verspätete Aufgaben](./images/late-tasks.png)
 
-- Die **Verspätete Aufgaben nach Einzelpersonen**
+- Die **verspäteten Aufgaben von Einzelpersonen**
 
 ![einzelne verspätete Aufgaben](./images/individual-late-tasks.png)
 
-## SCRUM-bezogene Einblicke
+## SCRUM-bezogene Erkenntnisse
 
-Klicken Sie in der linken Spalte auf &quot;Iterationsstatus&quot;
+Klicken Sie in der linken Spalte auf &quot;Iterationsstatus&quot;.
 
-![Klickitenstatus](./images/iteration-status.png)
+![Klickitationsstatus](./images/iteration-status.png)
 
 Wenn Ihre Teams mit der SCRUM-Methodik zusammenarbeiten, ist dies ein interessanter Managementbericht:
 
 - **Geschwindigkeit nach Iteration**
 
-![Geschwindigkeit](./images/velocity.png)
+![Velocity](./images/velocity.png)
 
 - **Durchschnittliche Geschwindigkeit nach Team**
 
-![durchschnittliche Geschwindigkeit](./images/average-velocity.png)
+![Durchschnittliche Geschwindigkeit](./images/average-velocity.png)
 
-- **Aktuelle Iterationen abgeschlossene Stundensummen nach Zuweisung**
+- **Aktuelle Iterationen, abgeschlossene Stundensummen nach Zuweisung**
 
-![Gesamtstundensummen](./images/iteration-status.png)
+![Gesamtstundensummen abgeschlossen](./images/iteration-status.png)
 
-- **Iterationen nach Team**
+- **Iterationen durch Team**
 
-![Ausführungen nach Teams](./images/iterations-by-team.png)
+![Iterationen nach Teams](./images/iterations-by-team.png)
 
 ## Effizienzberichte
 
@@ -75,21 +76,21 @@ Klicken Sie in der linken Spalte auf &quot;Effizienz&quot;.
 
 - **Abgeschlossene Anfragen nach Woche**
 
-![abgeschlossene Anfragen](./images/completed-requests.png)
+![abgeschlossene Anforderungen](./images/completed-requests.png)
 
 ## Einblicke in Projekte während des Fluges
 
 Klicken Sie in der linken Spalte auf &quot;Marketing - Projekte im Flug&quot;.
 
-- **Status von Flugbetriebsprojekten**
+- **Status von In-Flight-Projekten**
 
-![Flugbegleitprojekte](./images/inflight-projects.png)
+![Projekte während des Fluges](./images/inflight-projects.png)
 
 - **Projekte nach Bedingung nach Monat**
 
 ![Projekte nach Bedingung](./images/project-by-condition.png)
 
-- Liste, Fortschritt und finanzielle Einzelheiten der **Flugbetriebsprojekte**
+- Liste, Fortschritt und finanzielle Details der **In-Flight-Projekte**
 
 ![Finanzdetails](./images/inflights-projects.png)
 
@@ -97,17 +98,17 @@ Klicken Sie in der linken Spalte auf &quot;Marketing - Projekte im Flug&quot;.
 
 Klicken Sie zurück zur Zeile &quot;PIN&quot;auf &quot;Portfolio Gant View&quot;:
 
-![Klickportfolio-Grant-Ansicht](./images/gant-view.png)
+![Klicken Sie auf Portfolio-Grant-Ansicht](./images/gant-view.png)
 
-Hier haben Sie eine **Gant Chart-Ansicht einer Projektgruppe** mit möglichen Abhängigkeiten (Vorgänger) zwischen Projekten
+Hier haben Sie eine **Gant Chart-Ansicht einer Gruppe von Projekten** mit möglichen Abhängigkeiten (Vorgänger) zwischen Projekten
 
 ![Abhängigkeiten zwischen Projekten](./images/gant-chart.png)
 
-## Integrationseinblicke von Drittanbietern
+## Integrationseinblicke von Dritten
 
 >[!NOTE]
 >
-> Dies ist ein Beispiel für eine Integration mit einer Software von Drittanbietern. Dies ist eine Integration mit Adobe Campaign zur Veranschaulichung. Importiert die Ergebnisse der abgeschlossenen Kampagnen in Adobe Campaign.
+> Dies ist ein Beispiel für eine Integration mit einer Software von Drittanbietern. Dies ist eine Integration mit Adobe Campaign als Abbildung. Importiert die Ergebnisse der abgeschlossenen Kampagnen in Adobe Campaign.
 
 Klicken Sie in der Zeile &quot;PIN&quot;auf &quot;Kampagnenzusammenfassung&quot;:
 
@@ -115,15 +116,15 @@ Klicken Sie in der Zeile &quot;PIN&quot;auf &quot;Kampagnenzusammenfassung&quot;
 
 ![Zusammenfassung](./images/campaign-summary.png)
 
-- **Adobe Campaign an Öffnungen gesendet**
+- **an Öffnungen gesendeter Adobe Campaign**
 
 ![zum Öffnen gesendet](./images/sent-to-open.png)
 
 - **Adobe Campaign wird für Klicks geöffnet**
 
-![Öffnen zum Klicken](./images/open-to-click.png)
+![open to click](./images/open-to-click.png)
 
-Nächster Schritt: [Schlussfolgerung](../../conclusion.md)
+Nächster Schritt: [Zusammenfassung](../../conclusion.md)
 
 [Zurück zu Phase 4 - Einblicke für einen Projektmanager](./project-manager.md)
 

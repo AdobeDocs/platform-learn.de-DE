@@ -7,10 +7,11 @@ level: Beginner
 jira: KT-15319
 thumbnail: 3428361.jpeg
 last-substantial-update: 2024-04-15T00:00:00Z
-source-git-commit: e27d72948bb92ae004209d9f43850fba33dd1603
+exl-id: 16ecab9e-32e2-464f-a421-6575abe05fac
+source-git-commit: b6e09a211b7de72879dba27af67c8b9a90e6aaf2
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 0%
+ht-degree: 37%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie die Ablaufeinstellungen für pseudonyme Profile und Ereignisse in Experience Platform konfigurieren und welche Vorteile sich daraus ergeben.
 
-Diese Einstellungen ermöglichen es Data Stewards, Ablaufdaten für nicht authentifizierte Profile und die zugehörigen Ereignisse festzulegen. Dies hilft, die [!DNL Profile Service] für Ihre Marketing- und Werbe-Anwendungsfälle relevant sind. Weitere Informationen finden Sie unter [Ablauf des Erlebnisereignisses](https://experienceleague.adobe.com/en/docs/experience-platform/profile/event-expirations) und [Datenablauf bei Pseudonymen Profilen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/event-expirations) Dokumentation.
+Diese Einstellungen ermöglichen es Data Stewards, Ablaufdaten für nicht authentifizierte Profile und die zugehörigen Ereignisse festzulegen. So behalten Sie die [!DNL Profile Service] für Ihre Marketing- und Werbe-Anwendungsfälle bei. Weitere Informationen finden Sie in der Dokumentation zum Ablauf von [Erlebnisereignissen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/event-expirations) und zum Ablauf von [Pseudonymen Profildaten](https://experienceleague.adobe.com/en/docs/experience-platform/profile/event-expirations) .
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on)

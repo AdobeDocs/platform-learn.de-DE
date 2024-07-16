@@ -20,11 +20,11 @@ ht-degree: 4%
 
 In dieser Übung konfigurieren Sie die Journey und Nachricht, die ausgelöst werden müssen, wenn ein Benutzer mithilfe der App ein Beacon betritt.
 
-Melden Sie sich über Adobe Journey Optimizer an. [Adobe Experience Cloud](https://experience.adobe.com). Klicks **Journey Optimizer**.
+Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud](https://experience.adobe.com) wechseln. Klicken Sie auf **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Sie werden zum **Startseite**  in Journey Optimizer anzeigen. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `Bootcamp`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **Prod** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel heißt die Sandbox **Bootcamp**. Sie sind dann im **Startseite** Ansicht Ihrer Sandbox `Bootcamp`.
+Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `Bootcamp`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **Prod** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel trägt die Sandbox den Namen **Bootcamp**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -38,7 +38,7 @@ Dann sehen Sie einen leeren Journey-Bildschirm.
 
 ![ACOP](./images/journeyempty.png)
 
-In der vorherigen Übung haben Sie eine neue **Ereignis**. Sie haben es wie folgt benannt: `yourLastNameBeaconEntryEvent` und ersetzt `yourLastName` mit Ihrem Nachnamen. Dies war das Ergebnis der Ereigniserstellung:
+In der vorherigen Übung haben Sie ein neues **Ereignis** erstellt. Sie haben ihn wie folgt benannt: `yourLastNameBeaconEntryEvent` und haben `yourLastName` durch Ihren Nachnamen ersetzt. Dies war das Ergebnis der Ereigniserstellung:
 
 ![ACOP](./images/eventdone.png)
 
@@ -46,23 +46,23 @@ Jetzt müssen Sie dieses Ereignis als Beginn dieser Journey nehmen. Gehen Sie da
 
 ![ACOP](./images/eventlist.png)
 
-Wählen Sie das Ereignis aus, ziehen Sie es auf die Journey-Arbeitsfläche und legen Sie es ab. Ihre Journey sieht jetzt so aus. Klicks **Ok** , um Ihre Änderungen zu speichern.
+Wählen Sie das Ereignis aus, ziehen Sie es auf die Journey-Arbeitsfläche und legen Sie es ab. Ihre Journey sieht jetzt so aus. Klicken Sie auf **OK** , um Ihre Änderungen zu speichern.
 
 ![ACOP](./images/journeyevent.png)
 
-Als zweiten Schritt im Journey müssen Sie eine **Push** Aktion. Navigieren Sie zur linken Bildschirmseite, um **Aktionen**, wählen Sie die **Push** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den zweiten Knoten in Ihre Journey.
+Als zweiten Schritt im Journey müssen Sie eine **Push** -Aktion hinzufügen. Navigieren Sie auf der linken Bildschirmseite zu **Aktionen**, wählen Sie die Aktion **Push** aus und ziehen Sie sie per Drag-and-Drop auf den zweiten Knoten im Journey.
 
 ![ACOP](./images/journeyactions.png)
 
 Erstellen Sie nun auf der rechten Bildschirmseite Ihre Push-Benachrichtigung.
 
-Legen Sie die **Kategorie** nach **Marketing** und wählen Sie eine Push-Oberfläche aus, über die Sie Push-Benachrichtigungen versenden können. In diesem Fall ist die auszuwählende Push-Oberfläche **mmeeewis-app-mobile-bootcamp**.
+Setzen Sie die **Kategorie** auf **Marketing** und wählen Sie eine Push-Oberfläche aus, über die Sie Push-Benachrichtigungen senden können. In diesem Fall ist die auszuwählende Push-Oberfläche **mmeeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
 ## 3.3.2 Nachricht erstellen
 
-Klicks **Inhalt bearbeiten**.
+Klicken Sie auf **Inhalt bearbeiten**.
 
 ![ACOP](./images/emptymsg.png)
 
@@ -72,31 +72,31 @@ Daraufhin sehen Sie Folgendes:
 
 Definieren wir den Inhalt der Push-Benachrichtigung.
 
-Klicken Sie auf **Titel** Textfeld.
+Klicken Sie auf das Textfeld **Titel** .
 
 ![Journey Optimizer](./images/msg5.png)
 
-Beginnen Sie im Textbereich mit dem Schreiben **Hi**. Wählen Sie das Personalisierungssymbol aus.
+Beginnen Sie im Textbereich mit dem Schreiben von **Hi**. Wählen Sie das Personalisierungssymbol aus.
 
 ![Journey Optimizer](./images/msg6.png)
 
-Jetzt müssen Sie das Personalisierungstoken für das Feld einfügen **Vorname** die unter `profile.person.name.firstName`. Wählen Sie im linken Menü die Option **Profilattribute**, scrollen Sie nach unten/navigieren Sie zu der **Person** und auf den Pfeil klicken, um eine Ebene tiefer zu gehen, bis Sie das Feld erreichen `profile.person.name.firstName`. Klicken Sie auf **+** -Symbol, um das Feld zur Arbeitsfläche hinzuzufügen. Klicken Sie auf **Speichern**.
+Jetzt müssen Sie das Personalisierungstoken für das Feld **Vorname** einfügen, das unter `profile.person.name.firstName` gespeichert ist. Wählen Sie im linken Menü **Profilattribute** aus, blättern Sie nach unten/navigieren Sie zu dem Element **Person** und klicken Sie auf den Pfeil, um eine Ebene tiefer zu gehen, bis Sie das Feld `profile.person.name.firstName` erreichen. Klicken Sie auf das Symbol **+** , um das Feld der Arbeitsfläche hinzuzufügen. Klicken Sie auf **Speichern**.
 
 ![Journey Optimizer](./images/msg7.png)
 
-Du wirst dann wieder hier sein. Klicken Sie auf das Personalisierungssymbol neben dem Feld. **body**.
+Du wirst dann wieder hier sein. Klicken Sie auf das Personalisierungssymbol neben dem Feld **Hauptteil**.
 
 ![Journey Optimizer](./images/msg11.png)
 
-Schreiben Sie im Textbereich `Welcome at the `.
+Schreiben Sie im Textbereich &quot;`Welcome at the `&quot;.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Klicken Sie anschließend auf **Kontextattribute** und dann **Journey Orchestration**.
+Klicken Sie als Nächstes auf **Kontextuelle Attribute** und dann auf **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
-Klicks **Veranstaltungen**.
+Klicken Sie auf **Ereignisse**.
 
 ![ACOP](./images/jomsg4.png)
 
@@ -104,19 +104,19 @@ Klicken Sie auf den Namen Ihres Ereignisses, der wie folgt aussehen sollte: **yo
 
 ![ACOP](./images/jomsg5.png)
 
-Klicks **Ortskontext**.
+Klicken Sie auf **Kontext platzieren**.
 
 ![ACOP](./images/jomsg6.png)
 
-Klicks **POI-Interaktion**.
+Klicken Sie auf **POI-Interaktion**.
 
 ![ACOP](./images/jomsg7.png)
 
-Klicks **POI-Detail**.
+Klicken Sie auf **POI-Detail**.
 
 ![ACOP](./images/jomsg8.png)
 
-Klicken Sie auf **+** Symbol auf **POI-Name**.
+Klicken Sie auf das Symbol **+** auf **POI-Name**.
 Dann wirst du das sehen. Klicken Sie auf **Speichern**.
 
 ![ACOP](./images/jomsg9.png)
@@ -131,17 +131,17 @@ Klicken Sie auf **OK**.
 
 ## 3.3.2 Nachricht an einen Bildschirm senden
 
-Als dritten Schritt im Journey müssen Sie eine **sendMessageToScreen** Aktion. Navigieren Sie zur linken Bildschirmseite, um **Aktionen**, wählen Sie die **sendMessageToScreen** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den dritten Knoten im Journey. Dann wirst du das sehen.
+Als dritten Schritt im Journey müssen Sie eine **sendMessageToScreen** -Aktion hinzufügen. Navigieren Sie auf der linken Bildschirmseite zu **Aktionen**, wählen Sie die Aktion **sendMessageToScreen** aus und ziehen Sie sie per Drag-and-Drop auf den dritten Knoten in Ihre Journey. Dann wirst du das sehen.
 
 ![ACOP](./images/jomsg15.png)
 
-Die **sendMessageToScreen** action ist eine benutzerdefinierte Aktion, mit der eine Nachricht an dem Endpunkt veröffentlicht wird, der von der In-Store-Anzeige verwendet wird. Die **sendMessageToScreen** -Aktion erwartet die Definition einer Reihe von Variablen. Sie können diese Variablen anzeigen, indem Sie nach unten scrollen, bis Sie **Aktionsparameter**.
+Die Aktion **sendMessageToScreen** ist eine benutzerdefinierte Aktion, mit der eine Nachricht an dem Endpunkt veröffentlicht wird, der von der In-Store-Anzeige verwendet wird. Die Aktion **sendMessageToScreen** erwartet, dass eine Reihe von Variablen definiert wird. Sie können diese Variablen anzeigen, indem Sie nach unten scrollen, bis **Aktionsparameter** angezeigt wird.
 
 ![ACOP](./images/jomsg16.png)
 
 Sie müssen jetzt die Werte für jeden Aktionsparameter festlegen. In dieser Tabelle erfahren Sie, welche Werte wohin benötigt werden.
 
-| Parameter | value |
+| Parameter | Wert |
 |:-------------:| :---------------:|
 | VERSAND | `'image'` |
 | ECID | `@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}` |
@@ -155,11 +155,11 @@ Sie müssen jetzt die Werte für jeden Aktionsparameter festlegen. In dieser Tab
 
 {style="table-layout:auto"}
 
-Um diese Werte festzulegen, klicken Sie auf das **Bearbeiten** Symbol.
+Um diese Werte festzulegen, klicken Sie auf das Symbol **Bearbeiten** .
 
 ![ACOP](./images/jomsg17.png)
 
-Wählen Sie als Nächstes **Erweiterter Modus**.
+Wählen Sie dann **Erweiterter Modus** aus.
 
 ![ACOP](./images/jomsg18.png)
 
@@ -171,29 +171,29 @@ Wiederholen Sie diesen Vorgang, um Werte für jedes Feld hinzuzufügen.
 
 >[!IMPORTANT]
 >
->Für das Feld ECID gibt es einen Verweis auf das Ereignis `yourLastNameBeaconEntryEvent`. Bitte stellen Sie sicher, dass Sie `yourLastName` durch Ihren Nachnamen.
+>Für das Feld ECID gibt es einen Verweis auf das Ereignis `yourLastNameBeaconEntryEvent`. Stellen Sie sicher, dass Sie &quot;`yourLastName`&quot; durch Ihren Nachnamen ersetzen.
 
 Das Endergebnis sollte wie folgt aussehen:
 
 ![ACOP](./images/jomsg20.png)
 
-Scrollen Sie nach oben und klicken Sie **Ok**.
+Scrollen Sie nach oben und klicken Sie auf **OK**.
 
 ![ACOP](./images/jomsg21.png)
 
-Sie müssen Ihrer Journey noch einen Namen geben. Klicken Sie hierzu auf die Schaltfläche **Bleistift** in der oberen linken Bildschirmseite angezeigt.
+Sie müssen Ihrer Journey noch einen Namen geben. Klicken Sie dazu auf das Symbol **Stift** oben links auf Ihrem Bildschirm.
 
 ![ACOP](./images/journeyname.png)
 
-Dann können Sie hier den Namen des Journey eingeben. Verwenden Sie `yourLastName - Beacon Entry Journey`. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+Dann können Sie hier den Namen des Journey eingeben. Verwenden Sie bitte `yourLastName - Beacon Entry Journey`. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ![ACOP](./images/journeyname1.png)
 
-Sie können Ihre Journey jetzt veröffentlichen, indem Sie auf **Veröffentlichen**.
+Sie können Ihre Journey jetzt veröffentlichen, indem Sie auf **Publish** klicken.
 
 ![ACOP](./images/publishjourney.png)
 
-Klicks **Veröffentlichen** erneut.
+Klicken Sie erneut auf **Publish**.
 
 ![ACOP](./images/publish1.png)
 
@@ -205,7 +205,7 @@ Ihre Journey ist jetzt live und kann ausgelöst werden.
 
 Du bist jetzt mit dieser Übung fertig.
 
-Nächster Schritt: [3.4 Journey testen](./ex4.md)
+Nächster Schritt: [3.4 Testen Sie Ihre Journey](./ex4.md)
 
 [Zurück zum Benutzerfluss 3](./uc3.md)
 

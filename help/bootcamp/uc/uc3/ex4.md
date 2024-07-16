@@ -11,8 +11,8 @@ feature: Events
 exl-id: 45c77177-9ea9-4c3d-a40e-c04a747938eb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '193'
+ht-degree: 0%
 
 ---
 
@@ -29,21 +29,21 @@ Die Ereignis-ID muss an Adobe Experience Platform gesendet werden, damit der Jou
 
 ![DSN](./images/appsett.png)
 
-Fügen Sie Ihre eventID in das Feld ein. **Beacon EventID** und klicken Sie auf **Speichern**.
+Fügen Sie Ihre eventID in das Feld **Beacon EventID** ein und klicken Sie auf **Speichern**.
 
 ![DSN](./images/beacon1.png)
 
-Bevor Sie fortfahren, öffnen Sie bitte diese Webseite auf Ihrem Computer: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Bevor Sie fortfahren, öffnen Sie diese Webseite auf Ihrem Computer: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
 Daraufhin sehen Sie Folgendes:
 
 ![DSN](./images/screen1.png)
 
-Gehen Sie dann zurück zur Homepage. Klicken Sie auf **Beacon** Symbol.
+Gehen Sie dann zurück zur Homepage. Klicken Sie auf das Symbol **Beacon** .
 
 ![DSN](./images/app23.png)
 
-Dann wirst du das sehen. Wählen Sie zuerst **Bootcamp Screen Beacon** und klicken Sie dann auf **Einstieg** Schaltfläche. Auf diese Weise können Sie einen Beacon-Eintrag simulieren.
+Dann wirst du das sehen. Wählen Sie zunächst **Bootcamp Screen Beacon** und klicken Sie dann auf die Schaltfläche **entry** . Auf diese Weise können Sie einen Beacon-Eintrag simulieren.
 
 ![DSN](./images/app21.png)
 

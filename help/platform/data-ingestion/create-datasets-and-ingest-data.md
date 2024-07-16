@@ -16,7 +16,7 @@ ht-degree: 9%
 
 # Erstellen von Datensätzen und Aufnehmen von Daten
 
-In diesem Video wird gezeigt, wie man Datensätze erstellt und Daten in der Adobe Experience Platform-Oberfläche erfasst. Weitere Informationen finden Sie in der Produktdokumentation unter [Erfassen von Batch-Daten über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=de) und [Datensatz mit APIs erstellen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html). Weitere Informationen finden Sie unter [Dokumentation zur Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de).
+In diesem Video wird gezeigt, wie man Datensätze erstellt und Daten in der Adobe Experience Platform-Oberfläche erfasst. Weitere Informationen finden Sie in der Produktdokumentation unter [Erfassen von Batch-Daten über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=de) und [Erstellen eines Datensatzes mithilfe von APIs](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html). Weitere Informationen finden Sie in der [Dokumentation zur Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
 

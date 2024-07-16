@@ -17,10 +17,10 @@ ht-degree: 0%
 
 # Produktadministratoren hinzufügen
 
-Erfahren Sie, wie Sie Produktadministratoren für Adobe Experience Platform hinzufügen. Produktadministratoren verwalten die Zugriffskontrolle für plattformbasierte Anwendungen wie Real-time Customer Data Platform und Journey Optimizer. Sie können Benutzer, Entwickler und zusätzliche Administratoren in Admin Console erstellen und ihnen dann (und API-Anmeldeinformationen) in der Benutzeroberfläche von Platform oder Journey Optimizer Berechtigungen erteilen. Weitere Informationen finden Sie unter [Dokumentation zur Zugriffskontrolle](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
+Erfahren Sie, wie Sie Produktadministratoren für Adobe Experience Platform hinzufügen. Produktadministratoren verwalten die Zugriffskontrolle für plattformbasierte Anwendungen wie Real-time Customer Data Platform und Journey Optimizer. Sie können Benutzer, Entwickler und zusätzliche Administratoren in Admin Console erstellen und ihnen dann (und API-Anmeldeinformationen) in der Benutzeroberfläche von Platform oder Journey Optimizer Berechtigungen erteilen. Weitere Informationen finden Sie in der Dokumentation zur Zugriffskontrolle [1}.](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de)
 
 >[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on)
 
 >[!TIP]
 >
->Es wird empfohlen, auch den Produkt-Administrator als **Benutzer** der `AEP-Default-All-Users` Produktprofil in Admin Console erstellen und diese dann auf dem Bildschirm &quot;Berechtigungen&quot;in der Platform-Oberfläche einer Rolle hinzufügen. Siehe [Benutzer hinzufügen](add-users.md) für weitere Details.
+>Es wird empfohlen, den Produktadministrator auch als **Benutzer** zum Produktprofil `AEP-Default-All-Users` in Admin Console hinzuzufügen und ihn dann auf dem Bildschirm &quot;Berechtigungen&quot;der Platform-Oberfläche einer Rolle hinzuzufügen. Weitere Informationen finden Sie unter [Benutzer hinzufügen](add-users.md) .

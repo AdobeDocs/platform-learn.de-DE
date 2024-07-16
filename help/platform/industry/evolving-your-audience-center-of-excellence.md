@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Entwicklung Ihres Audience Center of Excellence
 
-Als Plattformen, die die Verwaltung von Kundendaten erleichtern, müssen sich auch Zielgruppen und Aktivierungsprogramme entwickeln. Auch die Personen und Prozesse, die diese Plattformen unterstützen. Ein Audience Center of Excellence (COE)-Modell wurde seit langem als optimale Methode zur Unterstützung von Data Management Platform (DMPs) entwickelt. Als Ergänzung zu diesem Video können Sie auch [Whitepaper herunterladen](assets/whitepaper-evolving-the-audience-center-of-excellence.pdf).
+Als Plattformen, die die Verwaltung von Kundendaten erleichtern, müssen sich auch Zielgruppen und Aktivierungsprogramme entwickeln. Auch die Personen und Prozesse, die diese Plattformen unterstützen. Ein Audience Center of Excellence (COE)-Modell wurde seit langem als optimale Methode zur Unterstützung von Data Management Platform (DMPs) entwickelt. Um dieses Video zu ergänzen, können Sie auch ein Whitepaper herunterladen](assets/whitepaper-evolving-the-audience-center-of-excellence.pdf).[
 
 >[!VIDEO](https://video.tv.adobe.com/v/336938/?learn=on)
 

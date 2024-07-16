@@ -1,6 +1,6 @@
 ---
 title: Wichtige Anwendungsfälle
-description: Verschaffen Sie sich einen Überblick über die fünf wichtigsten Anwendungsfälle von Experience Platform&mdash; intelligente Wiederaufnahme, keine Kampagnen verlieren, Kundenkonversionsoptimierung, kontextbezogene Erkennung und einmalige Wertschöpfung für die Lebensdauer.
+description: Verschaffen Sie sich einen Überblick über die fünf wichtigsten Anwendungsfälle von Experience Platform&mdash;Intelligente Wiederaufnahme, Keine Kampagnen verlieren, Kundenkonversionsoptimierung, kontextbezogene Erkennung und einmalige Wertsteigerung auf Lebenszeitwert.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z

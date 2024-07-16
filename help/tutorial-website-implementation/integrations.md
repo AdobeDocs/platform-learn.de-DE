@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie die Integrationen von Zielgruppen, A4T und Ku
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 91%
+source-wordcount: '1213'
+ht-degree: 86%
 
 ---
 
@@ -26,16 +26,15 @@ Bevor Sie die Anleitungen in dieser Lektion befolgen, sollten Sie alle vorherige
 
 >[!NOTE]
 >
->Es gibt viele Benutzerberechtigungen, Kontokonfigurationen und Bereitstellungsschritte, die zum vollständigen Einsatz dieser Integrationen erforderlich sind und die über den Rahmen dieses Tutorials hinausgehen. Wenn Sie diese Integrationen noch nicht in Ihrer aktuellen Experience Cloud-Implementierung verwenden, sollten Sie Folgendes berücksichtigen:
+>Es gibt viele Anforderungen an Benutzerberechtigungen, Kontokonfigurationen und Bereitstellungsschritte, die für die vollständige Verwendung dieser Integrationen erforderlich sind und die über den Rahmen dieses Tutorials hinausgehen. Wenn Sie diese Integrationen noch nicht in Ihrer aktuellen Experience Cloud-Implementierung verwenden, sollten Sie Folgendes berücksichtigen:
 >
 >* Überprüfen Sie die vollständigen Anforderungen der [Core Services-Integrationen.](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=de)
 >* Überprüfen Sie die vollständigen Anforderungen für die [Integration von Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
 >* Bitten Sie einen Administrator Ihrer Experience Cloud-Organisation, die [Bereitstellung dieser Integrationen anzufordern](https://www.adobe.com/go/audiences)
 
-
 ## Zielgruppen
 
-[Zielgruppen](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=de) sind Teil des zentralen Dienstes „Personen“ und ermöglichen es Ihnen, Zielgruppen zwischen verschiedenen Lösungen zu teilen. Sie können beispielsweise eine Zielgruppe in Audience Manager erstellen und sie verwenden, um mit Target personalisierte Inhalte bereitzustellen.
+[Zielgruppen](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) sind Teil des zentralen Dienstes „Personen“ und ermöglichen es Ihnen, Zielgruppen zwischen verschiedenen Lösungen zu teilen. Sie können beispielsweise eine Zielgruppe in Audience Manager erstellen und sie verwenden, um mit Target personalisierte Inhalte bereitzustellen.
 
 Die wichtigsten Voraussetzungen für die Implementierung von A4T – die Sie bereits erfüllt haben – sind:
 
@@ -51,13 +50,13 @@ Diese Überprüfungsschritte konzentrieren sich auf den wichtigsten Teil, der in
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft zu *Ihre* Entwicklungsumgebung, wie im Abschnitt [frühere Lektion](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
 
    ![Ihre Tags-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Navigieren Sie zur Registerkarte „Netzwerk“ des Debuggers.
 
-1. Klicken Sie auf **[!UICONTROL Alle Anforderungen löschen]**, um alles zu bereinigen.
+1. Klicken Sie auf **[!UICONTROL Alle Anforderungen löschen]** , nur um die Elemente zu bereinigen.
 
 1. Laden Sie die Seite „Luma“ erneut und stellen Sie dabei sicher, dass die Anforderungen von Target und Analytics im Debugger angezeigt werden.
 
@@ -73,7 +72,7 @@ Diese Überprüfungsschritte konzentrieren sich auf den wichtigsten Teil, der in
 
 ## Analytics for Target (A4T)
 
-Mit der Integration von [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de) können Sie Ihre Analytics-Daten als Quelle für die Berichterstellungsmetriken in Target nutzen.
+Mit der Integration von [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) können Sie Ihre Analytics-Daten als Quelle für die Berichterstellungsmetriken in Target nutzen.
 
 Die wichtigsten Voraussetzungen für die Implementierung von A4T – die Sie bereits erfüllt haben – sind:
 
@@ -90,13 +89,13 @@ Der beste Weg, die A4T-Integration zu validieren, besteht darin, eine Target-Akt
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft zu *Ihre* Entwicklungsumgebung, wie im Abschnitt [frühere Lektion](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
 
    ![Ihre Tags-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Navigieren Sie zur Registerkarte „Netzwerk“ des Debuggers.
 
-1. Klicken Sie auf **[!UICONTROL Alle Anforderungen löschen]**, um alles zu bereinigen.
+1. Klicken Sie auf **[!UICONTROL Alle Anforderungen löschen]** , nur um die Elemente zu bereinigen.
 
 1. Laden Sie die Seite „Luma“ erneut und stellen Sie dabei sicher, dass die Anforderungen von Target und Analytics im Debugger angezeigt werden.
 
@@ -117,11 +116,11 @@ Wenn Sie innerhalb eines Seitenladevorgangs (ausgenommen Einzelseitenanwendungen
 Die wichtigsten Voraussetzungen für die Implementierung von Kundenattributen – die Sie bereits erfüllt haben – sind:
 
 1. Implementieren von Adobe Experience Platform Identity Service
-1. Festlegen von Kunden-IDs über den ID-Dienst *before* Target und Analytics lösen ihre Anforderungen aus (dies erreichen Sie mithilfe der Regelsortierungsfunktion in -Tags).
+1. Festlegen von Kunden-IDs über den ID-Dienst *bevor* Target und Analytics ihre Anforderungen auslösen (dies erreichen Sie mithilfe der Regelsortierungsfunktion in -Tags)
 
 ### Überprüfen der Implementierung von Kundenattributen
 
-Sie haben bereits in früheren Lektionen überprüft, dass die Kunden-IDs sowohl an den ID-Dienst als auch an Target übergeben werden. Sie können auch die Kunden-ID im Analytics-Treffer überprüfen.
+Sie haben bereits in früheren Lektionen überprüft, dass die Kunden-IDs sowohl an den Identity Service als auch an Target übergeben werden. Sie können auch die Kunden-ID im Analytics-Treffer überprüfen.
 Derzeit ist die Kunden-ID einer der wenigen Parameter, die nicht in Experience Cloud Debugger angezeigt werden. Verwenden Sie daher die JavaScript-Konsole des Browsers, um sie anzuzeigen.
 
 1. Öffnen Sie die Site „Luma“.
@@ -131,13 +130,13 @@ Derzeit ist die Kunden-ID einer der wenigen Parameter, die nicht in Experience 
 
    ![Öffnen Sie die Entwicklertools und filtern Sie die Registerkarte „Netzwerk“, um nur die Analytics-Anforderungen anzuzeigen](images/aam-openTheJSConsole.png)
 
-1. Klicken Sie oben rechts auf der Site auf den Link **[!UICONTROL ANMELDEN]**.
+1. Klicken Sie oben rechts auf der Site auf den Link **[!UICONTROL ANMELDEN]** .
 
-   ![Klicken Sie oben rechts auf Anmelden .](images/idservice-loginNav.png)
+   ![Klicken Sie oben rechts auf Anmelden](images/idservice-loginNav.png)
 
 1. Geben Sie `test@adobe.com` als Benutzernamen ein.
 1. Geben Sie `test` als Passwort ein.
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL ANMELDEN]**.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL ANMELDEN]**
 
    ![Anmeldedaten eingeben und auf „Anmelden“ klicken](images/idservice-login.png)
 
@@ -145,10 +144,10 @@ Derzeit ist die Kunden-ID einer der wenigen Parameter, die nicht in Experience 
 1. Klicken Sie auf die Anforderung und wählen Sie die Registerkarte „Kopfzeilen“ aus.
 1. Scrollen Sie nach unten, bis einige verschachtelte Parameter angezeigt werden.
    1. cid – das Standardtrennzeichen für den Kunden-ID-Teil der Anforderung
-   1. crm_id – das ist der benutzerdefinierte Integrationscode, den Sie in der Lektion zum ID-Dienst angegeben haben
+   1. crm_id – das ist der benutzerdefinierte Integrationscode, den Sie in der Lektion zum Identity Service angegeben haben
    1. id - der Kunden-ID-Wert, der von Ihrem `Email (Hashed)`-Datenelement stammt
    1. as – der Authentifizierungsstatus, wobei „1“ angemeldet bedeutet
 
    ![Überprüfung der Analytics-Kunden-ID](images/integrations-analyticsCustomerIDValidation.png)
 
-[Weiter mit „Veröffentlichen Ihrer Eigenschaft“ >](publish.md)
+[Weiter mit &quot;Publish your Property&quot;>](publish.md)

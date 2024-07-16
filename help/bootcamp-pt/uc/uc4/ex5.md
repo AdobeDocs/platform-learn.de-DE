@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Customer Journey Analytics - Visualisierung mit Customer Journey Analytics - Brasilien
-description: Bootcamp - Customer Journey Analytics - Visualisierung mit Customer Journey Analytics - Brasilien
+title: Bootcamp - Customer Journey Analytics - Visualisierung mithilfe von Customer Journey Analytics - Brasilien
+description: Bootcamp - Customer Journey Analytics - Visualisierung mithilfe von Customer Journey Analytics - Brasilien
 jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
@@ -11,8 +11,8 @@ feature: Visualizations
 exl-id: eb5eac54-22d8-428b-acac-16570f75085e
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 1%
+source-wordcount: '1569'
+ht-degree: 0%
 
 ---
 
@@ -28,15 +28,15 @@ ht-degree: 1%
 
 Neste übício, você usará o Analysis Workspace no CJA para analisar visualizações de produtos, funis de produtos, rotatividade usw.
 
-Vamos usar o projeto que você criou em  [4.4 Vorbereitende Maßnahmen für dados in der Analysis Workspace](./ex4.md)então acesse [https://analytics.adobe.com](https://analytics.adobe.com).
+Vamos usar o projeto que você criou em [4.4 Preparation ação de dados no Analysis Workspace](./ex4.md), então acesse [https://analytics.adobe.com](https://analytics.adobe.com).
 
-![Demo](./images/prohome.png)
+![demo](./images/prohome.png)
 
-Abra seu Project `yourLastName - Omnichannel Analysis`.
+Abra seu Projekt `yourLastName - Omnichannel Analysis`.
 
-Com seu projeto aberto e Visualização de dados `yourLastName - Omnichannel Analysis` selecionado, você está pronto para começar a construir suas primeiras visualizações.
+Com seu projeto aberto e Visualização de dados `yourLastName - Omnichannel Analysis` selecionado, você está pronto para começar a construir suas primeiras visualizações.
 
-![Demo](./images/prodataView1.png)
+![demo](./images/prodataView1.png)
 
 ## Quantas visualizações de produtos temos diariamente?
 
@@ -44,40 +44,40 @@ Em primeiro lugar, preisamos selecionar als datas certas para analisar os dados.
 
 >[!IMPORTANT]
 >
->Selecione um intervalo de datas como **Diese Woche** ou **Diesen Monat**. Os dados disponíveis mais recentes foram absorvidos em 19 de setembro de 2022.
+>Selecione um intervalo de datas como **Diese Woche** ou **diesen Monat**. Os dados disponíveis mais recentes foram absorvidos em 19 de setembro de 2022.
 
-![Demo](./images/pro1.png)
-Kein Menü do lado esquerdo (área de componentes), stellen Sie wie métricas kalkadas **Produktansichten**. Selecione-as e arraste e solte na tela, no canto überlegen direito da tabela de forma livre.
+![demo](./images/pro1.png)
+Kein Menü do lado esquerdo (área de components), stellen Sie als métricas kalkadas **Produktansichten**. Selecione-as e arraste e solte na tela, no canto überlegen direito da tabela de forma livre.
 
-![Demo](./images/pro2.png)
+![demo](./images/pro2.png)
 
-Automaticamente a dimensão **Tag** será adicionada para criar sua primeira tabela. Agora você pode ver sua pergunta respondida imediatamente.
+Automaticamente a dimensão **Day** será adicionada para criar sua primeira tabela. Agora você pode ver sua pergunta respondida imediatamente
 
-![Demo](./images/pro3.png)
+![demo](./images/pro3.png)
 
 Em seguida, clique com o botão direito do mouse no resumo da métrica.
 
-![Demo](./images/pro4.png)
+![demo](./images/pro4.png)
 
-Clique em **Visualisieren** e selecione **Linie** como visualização.
+Klicken Sie auf em **Visualize** e selecione **Line** como visualização.
 
-![Demo](./images/pro5.png)
+![demo](./images/pro5.png)
 
 Você verá as suas visualizações de produto por dia.
 
-![Demo](./images/pro6.png)
+![demo](./images/pro6.png)
 
-Você pode alterar o escopo de tempo para o dia clicando em **Einstellungen** Visualização.
+Você pode alterar o escopo de tempo para o dia clicando em **Einstellungen** na visualização.
 
-![Demo](./images/pro7.png)
+![demo](./images/pro7.png)
 
-Clique no ponto ao lado de **Linie** e **Datenquelle verwalten**.
+Klicken Sie auf kein ponto ao lado de **Line** e **Verwalten der Daten-Source**.
 
-![Demo](./images/pro7a.png)
+![demo](./images/pro7a.png)
 
-Em seguida, clique em **Auswahl sperren** e selecione **Ausgewählte Elemente** para bloquear esta visualização para que ela sempre exiba uma linha do tempo de Visualizações de produtos.
+Em seguida, clique em **Lock Selection** e selecione **Ausgewählte Elemente** para bloquear esta visualização para que ela sempre exiba uma linha do tempo de Visualizações de produtos.
 
-![Demo](./images/pro7b.png)
+![demo](./images/pro7b.png)
 
 ## 5 produtos mais vistos
 
@@ -85,58 +85,58 @@ Quais são os 5 produtos mais vistos?
 
 Lembre-se de salvar o projeto de tempos em tempos.
 
-| BS | Kurzschnitt |
+| Betriebssystem | Kurzschnitt |
 | ----------------- |-------------| 
 | Windows | Kontrolle + S |
 | Mac | Befehl + S |
 
 Vamos começar a encounter os 5 produtos mais vistos. Kein Menü do lado esquerdo, Encontre zu Nome do produto - Dimensão.
 
-![Demo](./images/pro8.png)
+![demo](./images/pro8.png)
 
 Agora arraste e solte **Produktname** para replace a dimensão **Tag**:
 
 Este será o result tado.
 
-![Demo](./images/pro10a.png)
+![demo](./images/pro10a.png)
 
 Em seguida, tente dividir um dos produtos por Nome da marca. Pesquise **brandName** e arraste para baixo do primeiro nome do produto.
 
-![Demo](./images/pro13.png)
+![demo](./images/pro13.png)
 
-Em seguida, faça um detalhamento usando Agente de usuário. Pesquise **Benutzeragent** e arraste-o para baixo do nome da marca.
+Em seguida, faça um detalhamento usando Agente de usuário. Pesquise **User Agent** e arraste-o para baixo do nome da marca.
 
-![Demo](./images/pro15.png)
+![demo](./images/pro15.png)
 
 Em seguida, será exibida a tela abaixo:
 
-![Demo](./images/pro15a.png)
+![demo](./images/pro15a.png)
 
-Por fim, você pode adicionar mais visualizações. No lado esquerdo, em visualizações, pesquise `Donut`. Pegue `Donut`, arraste e solte na tela sob a visualização **Linie** 
+Por fim, você pode adicionar mais visualizações. Kein lado esquerdo, em visualizações, pesquise `Donut`. Pegue `Donut`, arraste e solte na tela sob a visualização **Line** 
 
-![Demo](./images/pro18.png)
+![demo](./images/pro18.png)
 
-Wählen Sie als Nächstes in der Tabelle die ersten 5 **Benutzeragent**  Zeilen aus der Aufschlüsselung, die wir unter **Google Pixel XL 32 GB Black Smartphone** > **Citi Signal**. Halten Sie bei Auswahl der fünf Zeilen die **STRG** (unter Windows) oder **Befehl** Schaltfläche (in Mac).
+Wählen Sie anschließend in der Tabelle die ersten 5 Zeilen für den Benutzeragenten **1} aus der Aufschlüsselung aus, die wir unter** Google Pixel XL 32 GB Black Smartphone **>** Citi Signal **durchgeführt haben.** Halten Sie bei der Auswahl der fünf Zeilen die Schaltfläche **STRG** (unter Windows) oder die Schaltfläche **Befehl** (unter Mac) gedrückt.
 
-Em seguida, na Tabela, selecione as primeiras 5 linhas de **Benutzeragent** do detalhamento que fiemos em **Google Pixel XL 32 GB Black Smartphone** > **Citi Signal**. Ao selecionar as 5 linhas, sego botão **STRG** (kein Windows) ou o botão **Befehl** (kein Mac).
+Em seguida, na Tabela, selecione as primeiras 5 linhas de **User Agent** do detalhamento que pezemos em **Google Pixel XL 32GB Black Smartphone** > **Citi Signal**. Ao selecionar als 5 linhas, segure o botão **CTRL** (no Windows) ou o botão **Command** (no Mac).
 
-![Demo](./images/pro20.png)
+![demo](./images/pro20.png)
 
 Você verá o gráfico de donut alterado:
 
-![Demo](./images/pro21.png)
+![demo](./images/pro21.png)
 
-Você pode até adaptar o design para ser mais legível, tornando o gráfico de **Linie** e o gráfico de **Ringdiagramm** um pouco menor para que sejam exibidos lado a lado:
+Você pode até adaptar o design para ser mais legível, tornando o gráfico de **Line** e o gráfico de **Donut** um pouco menor para que sejam exibidos lado a lado:
 
-![Demo](./images/pro22.png)
+![demo](./images/pro22.png)
 
-Clique no ponto ao lado de *Ringdiagramm** para **Datenquelle verwalten**. Em seguida, clique em **Auswahl sperren** para bloquear essa visualização para que ela sempre exiba uma linha do tempo de Visualizações de produto.
+Klicken Sie auf kein ponto ao lado de *Donut** para **Verwalten der Daten-Source**. Em seguida, clique em **Lock Selection** para bloquear essa visualização para que ela sempre exiba uma linha do tempo de Visualizações de produto.
 
-![Demo](./images/pro22b.png)
+![demo](./images/pro22b.png)
 
 Saiba mais sobre visualizações usando o Analysis Workspace em:
 
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=de](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=de)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
 ## Funil de interação do produto, da visualização à compra
@@ -145,57 +145,57 @@ Existem muitas formas de resolver esta questão. Uma delas é usar o Tipo de Int
 
 Fieber oder Painel atual clicando aqui:
 
-![Demo](./images/pro23.png)
+![demo](./images/pro23.png)
 
 Agora adicione um novo schmerel em branco clicando em **+ Leeres Bedienfeld hinzufügen**.
 
-![Demo](./images/pro24.png)
+![demo](./images/pro24.png)
 
 Clique na visualização de **Fallout**.
 
-![Demo](./images/pro25.png)
+![demo](./images/pro25.png)
 
 Selecione o mesmo intervalo de datas do übício anteriore.
 
-![Demo](./images/prodatef.png)
+![demo](./images/prodatef.png)
 
 Em seguida, você verá:
 
-![Demo](./images/prodatefa.png)
+![demo](./images/prodatefa.png)
 
-Eingeben einer Dimension **Ereignistyp** nos components no lado esquerdo:
+Geben Sie eine Dimension **Ereignistyp** nos components no lado esquerdo ein:
 
-![Demo](./images/pro26.png)
+![demo](./images/pro26.png)
 
 Clique na seta para abrir a dimensão:
 
-![Demo](./images/pro27.png)
+![demo](./images/pro27.png)
 
 Você verá todos os Tipos de eventos disponíveis.
 
-![Demo](./images/pro28.png)
+![demo](./images/pro28.png)
 
-Auswahl eines Elements **commerce.productViews** e arraste e solte-o no campo **Touchpoint hinzufügen** dentro da **Fallout-Visualisierung**.
+Wählen Sie den Eintrag **commerce.productViews** e arraste e solte-o no campo **Touchpoint hinzufügen** dentro da **Fallout-Visualisierung** aus.
 
-![Demo](./images/pro29.png)
+![demo](./images/pro29.png)
 
-Faça o mesmo com **commerce.productListAdds** und **commerce.purchases** e solte-os no campo **Touchpoint hinzufügen** dentro da  **Fallout-Visualisierung**. Sua visualização agora deve ser semelhante ao seguinte:
+Faça o mesmo com **commerce.productListAdds** und **commerce.purchases** e solte-os no campo **Touchpoint hinzufügen** dentro da **Fallout-Visualisierung**. Sua visualização agora deve ser semelhante ao seguinte:
 
-![Demo](./images/props1.png)
+![demo](./images/props1.png)
 
-Você pode fazer muitas coisas aqui. Algen sind Beispiele: Comparar ao longo do tempo, vergleichen cada passo por dispositivo ou Comparar por fidelidade. Keine entanto, se quisermos analisar coisas interessantes como porque os clientes não compram depois de adicionar um item ao carrinho, podemos usar a melhor ferramenta do CJA: clicar com o botão direito.
+Você pode fazer muitas coisas aqui. Alguns beispiellos: Comparar ao longo do tempo, vergleichen cada passo por dispositivo ou Comparar por fidelidade. Keine entanto, se quisermos analisar coisas interessantes como porque os clientes não compram depois de adicionar um item ao carrinho, podemos usar a melhor ferramenta do CJA: clicar com o botão direito.
 
-Clique com o botão direito do mouse no touchpoint **commerce.productListAdds**. Em seguida, clique em **Aufschlüsselungs-Fallout an diesem Touchpoint**.
+Clique com o botão direito do mouse no touchpoint **commerce.productListAdds**. Klicken Sie in Em-Segment auf em **Aufschlüsselungsabbruch an diesem Touchpoint**.
 
-![Demo](./images/pro32.png)
+![demo](./images/pro32.png)
 
 Uma nova tabela de formato livre será criada para analisar o que as pessoas fizeram se não compraram.
 
-![Demo](./images/pro33.png)
+![demo](./images/pro33.png)
 
 Altere o **Ereignistyp** von **Seitenname**, na nova tabela de formato livre, para ver em quais páginas eles estão indo, em vez da Página de bestätigmação de compra.
 
-![Demo](./images/pro34.png)
+![demo](./images/pro34.png)
 
 ## O que as pessoas fazem no site antes de acessar a página Cancelar serviço?
 
@@ -203,66 +203,66 @@ Novamente, há muitas formas de realizar essa análise. Vamos usar a análise de
 
 Fieber oder Painel atual clicando aqui:
 
-![Demo](./images/pro0.png)
+![demo](./images/pro0.png)
 
 Agora adicione um novo schmerel em branco clicando em **+ Leeres Bedienfeld hinzufügen**.
 
-![Demo](./images/pro0a.png)
+![demo](./images/pro0a.png)
 
-Clique na visualização **Fluss**.
+Klicken Sie auf einen visualização **Fluss**.
 
-![Demo](./images/pro35.png)
+![demo](./images/pro35.png)
 
 Em seguida, será exibido:
 
-![Demo](./images/pro351.png)
+![demo](./images/pro351.png)
 
 Selecione o mesmo intervalo de datas do übício anteriore.
 
-![Demo](./images/pro0b.png)
+![demo](./images/pro0b.png)
 
-Eingeben einer Dimension **Seitenname** nos components no lado esquerdo:
+Geben Sie eine Dimension **Seitenname** nos components no lado esquerdo ein:
 
-![Demo](./images/pro36.png)
+![demo](./images/pro36.png)
 
 Clique na seta para abrir a dimensão:
 
-![Demo](./images/pro37.png)
+![demo](./images/pro37.png)
 
-Você encontará todas as páginas vistas. Encontre o nome da página: **Dienst abbrechen**.
-Array e solte **Dienst abbrechen** na Visualização de fluxo no campo do meio:
+Você encontará todas as páginas vistas. Encontre o nome da página: **Cancel service**.
+Array e solte **Abbrechen Dienst** na Visualização de fluxo no campo do meio:
 
-![Demo](./images/pro38.png)
-
-Em seguida, será exibido:
-
-![Demo](./images/pro40.png)
-
-Vamos agora analisar se os clientes que visitaram a página C **Dienst abbrechen** keine Website também ligaram para o call center e qual foi o result tado.
-
-Nas dimensões, retorne e encontre Tipo de interação de chamada. Array e solte **Interaktionstyp aufrufen** para replace a primeira interação à direita em **Flussvisualisierung**.
-
-![Demo](./images/pro43.png)
-
-Agora você visualiza o ticket de suporte dos clientes que ligaram para a central de atendimension depois de visitar a página **Dienst abbrechen**.
-
-![Demo](./images/pro44.png)
-
-Em seguida, nas dimensões, procure **Rufempfindlichkeit**. Array e solte para replace a primeira interação à direita na visualização de fluxo.
-
-![Demo](./images/pro46.png)
+![demo](./images/pro38.png)
 
 Em seguida, será exibido:
 
-![Demo](./images/flow.png)
+![demo](./images/pro40.png)
+
+Vamos agora analisar se os clientes que visitaram a página C **Cancel Service** no site também ligaram para o call center e qual foi o result tado.
+
+Nas dimensões, retorne e encontre Tipo de interação de chamada. Array e solte **Interaktionstyp aufrufen** para replace a primeira interação à direita em **Flussvisualisierung**.
+
+![demo](./images/pro43.png)
+
+Agora você visualiza o ticket de suporte dos clientes que ligaram para a central de atendimension depois de visitar a página **Cancel service**.
+
+![demo](./images/pro44.png)
+
+Em seguida, nas dimensões, procure **Call Feeling**. Array e solte para replace a primeira interação à direita na visualização de fluxo.
+
+![demo](./images/pro46.png)
+
+Em seguida, será exibido:
+
+![demo](./images/flow.png)
 
 Como pode ver, executamos uma análise omnichannel usando a visualização de fluxo. Graças a isso, descobrimos que alguns clientes que estavam pensando em cancelar o serviço tiveram uma avaliação positiva depois de ligar para o call center. Talvez tenhamos mudado de ideia com uma promoção?
 
 ## Qual é o desempenho dos clientes com um contato de Call center Positivo em relação aos principais KPIs?
 
-Primeiramente, vamos segmentar os dados para obter apenas usuários com chamadas **positive**. No CJA, os Segmentos são chamados de Filtros. Acesse para filtros na área de components (no lado esquerdo) e clique em **+**.
+Primeiramente, vamos segmentar os dados para obter apenas usuários com chamadas **positive**. No CJA, os Segmentos são chamados de Filtros. Acesse para filtros na área de components (no lado esquerdo) e clique em **+**.
 
-![Demo](./images/pro58.png)
+![demo](./images/pro58.png)
 
 Dentro do Construtor de filo, dê um nome ao filtro
 
@@ -270,59 +270,59 @@ Dentro do Construtor de filo, dê um nome ao filtro
 | ----------------- |-------------| 
 | Rufempfindlichkeit - positiv | Rufempfindlichkeit - positiv |
 
-![Demo](./images/pro47.png)
+![demo](./images/pro47.png)
 
-No componentes (dentro do Construtor de filtro), encontre **Rufempfindlichkeit** e arraste e solte na Definição do construtor de filtro.
+No components (dentro do Construtor de filo), encontre **Call Feeling** e arraste e solte na Definição do construtor de filtro.
 
-![Demo](./images/pro48.png)
+![demo](./images/pro48.png)
 
-Agora selecione **positive** como valor para o filtro.
+Agora selecione **positive** como valor para o filtro.
 
-![Demo](./images/pro49.png)
+![demo](./images/pro49.png)
 
-Altere o escopo para o nível **Person**.
+Altere o escopo para o nível **Person**.
 
-![Demo](./images/pro50.png)
+![demo](./images/pro50.png)
 
-Para finalizar, Basta clicar em **Speichern**.
+Para finalizar, basta clicar em **Save**.
 
-![Demo](./images/pro51.png)
+![demo](./images/pro51.png)
 
 Então, você irá retornar para esta tela. Se ainda não retornou, feche o schmerel anteriore.
 
-![Demo](./images/pro0c.png)
+![demo](./images/pro0c.png)
 
-Agora adicione um novo schmerel em branco clicando em **+ Leeres Bedienfeld hinzufügen**.
+Agora adicione um novo schmerel em branco clicando em **+ Leeres Bedienfeld hinzufügen**.
 
-![Demo](./images/pro24c.png)
+![demo](./images/pro24c.png)
 
 Selecione o mesmo intervalo de datas do übício anteriore.
 
-![Demo](./images/pro24d.png)
+![demo](./images/pro24d.png)
 
-Clique em **Freiformtabelle**.
+Klicken Sie auf em **Freiformtabelle**.
 
-![Demo](./images/pro52.png)
+![demo](./images/pro52.png)
 
 Agora arraste e solte o filo que você acabou de criar.
 
-![Demo](./images/pro53.png)
+![demo](./images/pro53.png)
 
-Hora de adicionar algumas métricas. Comece com **Produktansichten**. Array e solte na tabela de forma livre. Você também pode excluir a métrica **Veranstaltungen**.
+Hora de adicionar algumas métricas. com **Produktansichten**. Array e solte na tabela de forma livre. Você também pode excluir a métrica **Events**.
 
-![Demo](./images/pro54.png)
+![demo](./images/pro54.png)
 
-Faça o mesmo com **Personen**, **Zum Warenkorb hinzufügen** e **Käufe**. Você vai acabar com uma tabela como a seguinte.
+Faça o mesmo com **Personen**, **Zum Warenkorb hinzufügen** und **Käufe**. Você vai acabar com uma tabela como a seguinte
 
-![Demo](./images/pro55.png)
+![demo](./images/pro55.png)
 
 Graças à primeira análise de fluxo, uma nova pergunta surgiu. Então decidimos criar esta tabela e verificar alguns KPIs em um segmento para responder a essa pergunta. Como você pode ver, o tempo de insight é muito mais rápido do que usar SQL ou usar outras soluções de BI.
 
 ## Recapitulação do Analysis Workspace e do Customer Journey Analytics
 
-O Analysis Workspace entfernen todas als limitações típicas de um relatório do Analytics. Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados. Array e solte qualquer número de tabelas de dados, visualizações e components (dimensões, métricas, segmentos e granularidades de tempo) para um projeto. Você pode criar de forma instantânea filtros e analises, gráficos de coorte, alertas, segmentos, análises de fluxo e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
+O Analysis Workspace entfernen todas als limitações típicas de um relatório do Analytics. Ele fornece uma tela robusta e flexível para criar projects de analytics personalizados. Array e solte qualquer número de tabelas de dados, visualizações e components (dimensões, métricas, segmentos e granularidades de tempo) para um projeto. Você pode criar de forma instantânea filtros e analises, gráficos de coorte, alertas, segmentos, análises de fluxo e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
-Próxima etapa: [4.6 De Insights a ação](./ex6.md)
+Próxima etapa: [4,6 De insights a ação](./ex6.md)
 
 [Retornar para Fluxo de Usuário 4](./uc4.md)
 

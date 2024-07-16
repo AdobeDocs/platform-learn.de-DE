@@ -27,7 +27,7 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Sie wissen, was eine Datenschicht ist, und kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die vorherigen Lektionen im Tutorial abgeschlossen haben:
+Sie wissen, was eine Datenschicht ist, kennen die [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}-Datenschicht und wissen, wie Datenelemente in Tags referenziert werden. Sie müssen die vorherigen Lektionen im Tutorial abgeschlossen haben:
 
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Identitäts-Namespace konfigurieren](configure-identities.md)
@@ -47,21 +47,21 @@ Die [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/en/docs/expe
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Weitere Informationen zum [ECIDs werden mithilfe des Platform Web SDK verfolgt.](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
+Erfahren Sie mehr darüber, wie [ECIDs mit dem Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) verfolgt werden.
 
 ECIDs werden anhand einer Kombination aus Erstanbieter-Cookies und Platform Edge Network festgelegt. Standardmäßig werden die Erstanbieter-Identitäts-Cookies vom Web SDK Client-seitig gesetzt. Um Browserbeschränkungen für Cookie-Lebenszyklen zu berücksichtigen, können Sie stattdessen Ihre eigenen Erstanbieter-Identitäts-Cookies serverseitig festlegen. Diese Identitäts-Cookies werden als Erstanbieter-Geräte-IDs (FPIDs) bezeichnet.
 
 >[!IMPORTANT]
 >
->Die [Experience Cloud ID-Diensterweiterung](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) ist bei der Implementierung des Adobe Experience Platform Web SDK nicht erforderlich, da die ID-Dienst-Funktion in das Platform Web SDK integriert ist.
+>Die Erweiterung [Experience Cloud ID-Dienst](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) ist bei der Implementierung des Adobe Experience Platform Web SDK nicht erforderlich, da die Funktionalität des ID-Diensts in das Platform Web SDK integriert ist.
 
 ## Erstanbieter-Geräte-ID (FPID)
 
-FPIDs sind Erstanbieter-Cookies _Sie legen mithilfe Ihrer eigenen Webserver fest._ welche Adobe dann verwendet, um die ECID zu erstellen, anstatt das vom Web SDK festgelegte Erstanbieter-Cookie zu verwenden. Auch wenn die Browserunterstützung variieren kann, sind Erstanbieter-Cookies meist haltbarer, wenn sie von einem Server gesetzt werden, der einen DNS-A-Datensatz (für IPv4) oder einen AAAA-Datensatz (für IPv6) nutzt, im Gegensatz zu einem DNS-CNAME oder JavaScript-Code.
+FPIDs sind Erstanbieter-Cookies _, die Sie mithilfe Ihrer eigenen Webserver_ festlegen und die Adobe dann zur Erstellung der ECID verwendet, anstatt das vom Web SDK festgelegte Erstanbieter-Cookie zu verwenden. Auch wenn die Browserunterstützung variieren kann, sind Erstanbieter-Cookies meist haltbarer, wenn sie von einem Server gesetzt werden, der einen DNS-A-Datensatz (für IPv4) oder einen AAAA-Datensatz (für IPv6) nutzt, im Gegensatz zu einem DNS-CNAME oder JavaScript-Code.
 
 Sobald ein FPID-Cookie gesetzt ist, kann der zugehörige Wert abgerufen und an Adobe gesendet werden, während Ereignisdaten erfasst werden. Erfasste FPIDs werden als Samen verwendet, um ECIDs in Platform Edge Network zu generieren, die weiterhin die Standardkennungen in Adobe Experience Cloud-Anwendungen sind.
 
-Auch wenn FPIDs in diesem Tutorial nicht verwendet werden, sollten Sie FPIDs in Ihrer eigenen Web SDK-Implementierung verwenden. Mehr dazu [Erstanbieter-Geräte-IDs im Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
+Auch wenn FPIDs in diesem Tutorial nicht verwendet werden, sollten Sie FPIDs in Ihrer eigenen Web SDK-Implementierung verwenden. Weitere Informationen zu [Erstanbieter-Geräte-IDs im Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -71,25 +71,25 @@ Auch wenn FPIDs in diesem Tutorial nicht verwendet werden, sollten Sie FPIDs in 
 
 Wie oben erwähnt, wird allen Besuchern Ihrer digitalen Eigenschaften bei Verwendung des Platform Web SDK eine ECID von Adobe zugewiesen. ECID ist die Standardidentität zum Verfolgen nicht authentifizierter digitaler Verhaltensweisen.
 
-Sie können auch eine authentifizierte Benutzer-ID senden, damit Platform [Identitätsdiagramme](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) und Target kann [Drittanbieter-ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). Das Festlegen der authentifizierten ID erfolgt mithilfe des [!UICONTROL Identity Map] Datenelementtyp.
+Sie können auch eine authentifizierte Benutzer-ID senden, damit Platform [Identitätsdiagramme](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) erstellen kann und Target seine [Drittanbieter-ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) festlegen kann. Das Festlegen der authentifizierten ID erfolgt mithilfe des Datenelementtyps [!UICONTROL Identitätszuordnung] .
 
-So erstellen Sie die [!UICONTROL Identity Map] Datenelement:
+Erstellen des Datenelements [!UICONTROL Identity Map] :
 
-1. Navigieren Sie zu **[!UICONTROL Datenelemente]** und wählen **[!UICONTROL Datenelement hinzufügen]**
+1. Navigieren Sie zu **[!UICONTROL Datenelemente]** und wählen Sie **[!UICONTROL Datenelement hinzufügen]** aus.
 
 1. **[!UICONTROL Name]** das Datenelement `identityMap.loginID`
 
-1. Als **[!UICONTROL Erweiterung]** auswählen `Adobe Experience Platform Web SDK`
+1. Wählen Sie als **[!UICONTROL Erweiterung]** `Adobe Experience Platform Web SDK` aus.
 
-1. Als **[!UICONTROL Datenelementtyp]** auswählen `Identity map`
+1. Wählen Sie als **[!UICONTROL Datenelementtyp]** `Identity map` aus.
 
-1. Dadurch wird ein Bildschirmbereich rechts neben dem **[!UICONTROL Datenerfassungsoberfläche]** für die Konfiguration der Identität:
+1. Dadurch wird ein Bildschirmbereich rechts neben der **[!UICONTROL Datenerfassungsoberfläche]** angezeigt, in dem Sie die Identität konfigurieren können:
 
-   ![Datenerfassungsoberfläche](assets/identity-identityMap-setup.png)
+   ![Datenerfassungsschnittstelle](assets/identity-identityMap-setup.png)
 
-1. Als  **[!UICONTROL Namespace]**, wählen Sie die `lumaCrmId` Namespace, den Sie zuvor in der [Identitäten konfigurieren](configure-identities.md) Lektion. Wenn es nicht in der Dropdown-Liste angezeigt wird, geben Sie es in ein.
+1. Wählen Sie als **[!UICONTROL Namespace]** den Namespace `lumaCrmId` aus, den Sie zuvor in der Lektion [Identitäten konfigurieren](configure-identities.md) erstellt haben. Wenn es nicht in der Dropdown-Liste angezeigt wird, geben Sie es in ein.
 
-1. Nach dem **[!UICONTROL Namespace]** ausgewählt ist, muss eine ID festgelegt werden. Wählen Sie die `user.profile.attributes.username` Datenelement, das zuvor im [Erstellen von Datenelementen](create-data-elements.md#create-data-elements-to-capture-the-data-layer) -Lektion, die eine ID erfasst, wenn Benutzer bei der Site &quot;Luma&quot;angemeldet sind.
+1. Nachdem der **[!UICONTROL Namespace]** ausgewählt wurde, muss eine ID festgelegt werden. Wählen Sie das zuvor in der Lektion [Datenelemente erstellen](create-data-elements.md#create-data-elements-to-capture-the-data-layer) erstellte Datenelement `user.profile.attributes.username` aus, das eine ID erfasst, wenn Benutzer bei der Site &quot;Luma&quot;angemeldet sind.
 
    <!--  >[!TIP]
     >
@@ -98,18 +98,18 @@ So erstellen Sie die [!UICONTROL Identity Map] Datenelement:
     >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
     -->
 
-1. Als **[!UICONTROL Authentifizierter Status]** auswählen **[!UICONTROL Authentifiziert]**
-1. Auswählen **[!UICONTROL Primär]**
+1. Wählen Sie als **[!UICONTROL Authentifizierungsstatus]** **[!UICONTROL Authentifiziert]** aus.
+1. Wählen Sie **[!UICONTROL Primär]**
 
-1. Auswählen **[!UICONTROL Speichern]**
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-   ![Datenerfassungsoberfläche](assets/identity-id-namespace.png)
+   ![Datenerfassungsschnittstelle](assets/identity-id-namespace.png)
 
 >[!TIP]
 >
-> Adobe empfiehlt das Senden von Identitäten, die eine Person repräsentieren, wie z. B. `Luma CRM Id`als [!UICONTROL primary] Identität.
+> Adobe empfiehlt das Senden von Identitäten, die eine Person repräsentieren, z. B. `Luma CRM Id`, als die [!UICONTROL primäre] Identität.
 >
-> Wenn die Identitätszuordnung die Personenkennung enthält (z. B. `Luma CRM Id`), wird die Personen-ID zur [!UICONTROL primary] Identität. Andernfalls `ECID` wird [!UICONTROL primary] Identität.
+> Wenn die Identitätszuordnung die Personenkennung enthält (z. B. `Luma CRM Id`), wird die Personenkennung zur [!UICONTROL primären] Identität. Andernfalls wird `ECID` zur Identität [!UICONTROL primary].
 
 
 
@@ -151,4 +151,4 @@ Wenn diese Datenelemente vorhanden sind, können Sie mit dem Senden von Daten an
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen möchten oder Vorschläge zu künftigen Inhalten haben, teilen Sie diese bitte mit. [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen oder Anregungen zu künftigen Inhalten haben möchten, teilen Sie diese bitte in diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996) mit.

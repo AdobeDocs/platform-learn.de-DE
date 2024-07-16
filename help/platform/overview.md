@@ -6,14 +6,14 @@ mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 48%
+source-wordcount: '154'
+ht-degree: 23%
 
 ---
 
 # Adobe Experience Platform-Tutorials
 
-Adobe Experience Platform ist eines der leistungsfähigsten, flexibelsten und offensten auf dem Markt verfügbaren Systeme für die Einrichtung und Verwaltung umfassender Lösungen zur Umsetzung starker Kundenerlebnisse. Mit Adobe Experience Platform können Unternehmen Kundendaten und Content aus beliebigen Systemen zentral zusammenführen und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung umfassender, personalisierter Erlebnisse erheblich verbessern. In diesen Videos und Tutorials erfahren Sie mehr über die vielen Komponenten von Experience Platform.
+Adobe Experience Platform ist eines der leistungsfähigsten, flexibelsten und offensten auf dem Markt verfügbaren Systeme für die Einrichtung und Verwaltung umfassender Lösungen zur Umsetzung starker Kundenerlebnisse. Experience Platform ermöglicht Unternehmen die Zentralisierung und Standardisierung von Kundendaten und -inhalten aus beliebigen Systemen sowie die Anwendung von Datenwissenschaft und maschinellem Lernen, um die Gestaltung und Bereitstellung umfassender, personalisierter Erlebnisse erheblich zu verbessern. In diesen Videos und Tutorials erfahren Sie mehr über die vielen Komponenten von Experience Platform.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -51,7 +51,7 @@ Adobe Experience Platform ist eines der leistungsfähigsten, flexibelsten und of
     </a>
     </div>
     <p>
-    <em>Handübungen für die ersten Schritte</em>
+    <em> Hands-On-Übungen für die ersten Schritte</em>
     <p>
   </td>
   <td>
@@ -60,11 +60,11 @@ Adobe Experience Platform ist eines der leistungsfähigsten, flexibelsten und of
     </a>
     <div>
       <a href="sources/overview.md">
-    <strong>Grundlagen zu Quell-Connectoren</strong>
+    <strong>Grundlegendes zu Quell-Connectoren</strong>
     </a>
     </div>
     <p>
-    <em>Einfaches Erfassen Ihrer Daten</em>
+    <em> Einfache Erfassung Ihrer Daten</em>
     <p>
   </td>
    <!--

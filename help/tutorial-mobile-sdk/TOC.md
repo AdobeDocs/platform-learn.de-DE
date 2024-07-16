@@ -1,7 +1,7 @@
 ---
-user-guide-title: Tutorial zum Implementieren von Experience Cloud in Apps
-breadcrumb-title: Tutorial für mobile Apps
-user-guide-description: Erfahren Sie, wie Sie Adobe Experience Cloud-Anwendungen mit dem Experience Platform Mobile SDK in Apps implementieren.
+user-guide-title: Tutorial zum Implementieren von Experience Cloud in Mobile Apps
+breadcrumb-title: Tutorial für Mobile Apps
+user-guide-description: Erfahren Sie, wie Sie Adobe Experience Cloud-Anwendungen in Mobile Apps mit Experience Platform Mobile SDK implementieren.
 solution: Data Collection
 feature: Mobile SDK
 role: Developer
@@ -11,14 +11,14 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
 workflow-type: tm+mt
 source-wordcount: '78'
-ht-degree: 34%
+ht-degree: 71%
 
 ---
 
 
 # Experience Cloud in mobile Apps implementieren {#implement-mobile-sdk}
 
-+ [Tutorial-Übersicht](overview.md)
++ [Tutorial-Überblick](overview.md)
 + Ausgangskonfiguration {#initial-configuration}
    + [Erstellen eines Schemas](create-schema.md)
    + [Erstellen eines Datenspeichers](create-datastream.md)

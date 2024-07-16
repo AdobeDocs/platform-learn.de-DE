@@ -24,15 +24,15 @@ Im Echtzeit-Kundenprofil werden alle Profildaten zusammen mit Ereignisdaten sowi
 
 ## 1.2.1 Verwenden der Kundenprofilansicht in Adobe Experience Platform
 
-Navigieren Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
+Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
 
 ![Datenaufnahme](./images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox**. Die auszuwählende Sandbox heißt ``Bootcamp``. Klicken Sie hierzu auf den Text **[!UICONTROL Produktionsprodukt]** in der blauen Zeile auf Ihrem Bildschirm. Nach Auswahl der entsprechenden [!UICONTROL Sandbox], sehen Sie die Änderung des Bildschirms und befinden sich jetzt in Ihrem [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``Bootcamp``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 
 
-Gehen Sie im linken Menü zu **Profile** und **Durchsuchen**.
+Gehen Sie im linken Menü zu **Profile** und zu **Durchsuchen**.
 
 ![Kundenprofil](./images/homemenu.png)
 
@@ -45,9 +45,9 @@ Im Bedienfeld &quot;Profil-Viewer&quot;auf Ihrer Website finden Sie die Identit�
 
 Bei Adobe Experience Platform sind alle IDs gleichermaßen wichtig. Zuvor war die ECID die wichtigste ID im Adobe-Kontext, und alle anderen IDs waren hierarchisch mit der ECID verknüpft. Bei Adobe Experience Platform ist dies nicht mehr der Fall und jede ID kann als primäre Kennung betrachtet werden.
 
-In der Regel hängt die primäre Kennung vom Kontext ab. Wenn Sie Ihr Callcenter fragen, **Was ist die wichtigste ID?** sie werden wahrscheinlich antworten, **die Telefonnummer!** Wenn Sie jedoch Ihr CRM-Team fragen, antworten diese, **Die E-Mail-Adresse!**  Adobe Experience Platform versteht diese Komplexität und verwaltet sie für Sie. Jede Anwendung, ob Adobe-Anwendung oder Nicht-Adobe-Anwendung, spricht mit Adobe Experience Platform, indem sie auf die ID verweist, die sie als primär betrachten. Und es funktioniert einfach.
+In der Regel hängt die primäre Kennung vom Kontext ab. Wenn Sie Ihr Callcenter fragen, **Was ist die wichtigste ID?** werden sie wahrscheinlich antworten, **die Telefonnummer!** Wenn Sie jedoch Ihr CRM-Team fragen, antworten diese, **Die E-Mail-Adresse!** Adobe Experience Platform versteht diese Komplexität und verwaltet sie für Sie. Jede Anwendung, ob Adobe-Anwendung oder Nicht-Adobe-Anwendung, spricht mit Adobe Experience Platform, indem sie auf die ID verweist, die sie als primär betrachten. Und es funktioniert einfach.
 
-Für das Feld **Identitäts-Namespace** auswählen **ECID** und für das Feld **Identitätswert** Geben Sie die ECID ein, die Sie im Bereich Profil-Viewer der Bootcamp-Website finden können. Klicks **Ansicht**. Ihr Profil wird dann in der Liste angezeigt. Klicken Sie auf **Profil-ID** , um Ihr Profil zu öffnen.
+Wählen Sie für das Feld **Identitäts-Namespace** die Option **ECID** aus und geben Sie für das Feld **Identitätswert** die ECID ein, die Sie im Profilanzeige-Bedienfeld der Bootcamp-Website finden können. Klicken Sie auf **Ansicht**. Ihr Profil wird dann in der Liste angezeigt. Klicken Sie auf die **Profil-ID** , um Ihr Profil zu öffnen.
 
 ![Kundenprofil](./images/popupecid.png)
 
@@ -55,11 +55,11 @@ Sie sehen jetzt eine Übersicht über einige wichtige **Profilattribute** Ihres 
 
 ![Kundenprofil](./images/profile.png)
 
-Navigieren Sie zu **Veranstaltungen**, wo Sie Einträge für jedes Erlebnisereignis sehen können, das mit Ihrem Profil verknüpft ist.
+Navigieren Sie zu **Ereignisse** , wo Sie Einträge für jedes Erlebnisereignis sehen können, das mit Ihrem Profil verknüpft ist.
 
 ![Kundenprofil](./images/profileee.png)
 
-Navigieren Sie schließlich zur Menüoption . **Zielgruppenmitgliedschaft**. Jetzt werden alle Zielgruppen angezeigt, die für dieses Profil qualifiziert sind.
+Navigieren Sie schließlich zur Menüoption **Zielgruppenmitgliedschaft**. Jetzt werden alle Zielgruppen angezeigt, die für dieses Profil qualifiziert sind.
 
 ![Kundenprofil](./images/profileseg.png)
 

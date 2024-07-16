@@ -20,11 +20,11 @@ ht-degree: 5%
 
 In dieser Übung konfigurieren Sie die Journey, die ausgelöst werden muss, wenn jemand ein Konto auf der Demowebsite erstellt.
 
-Melden Sie sich über Adobe Journey Optimizer an. [Adobe Experience Cloud](https://experience.adobe.com). Klicks **Journey Optimizer**.
+Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud](https://experience.adobe.com) wechseln. Klicken Sie auf **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Sie werden zum **Startseite**  in Journey Optimizer anzeigen. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `Bootcamp`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **Prod** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel heißt die Sandbox **Bootcamp**. Sie sind dann im **Startseite** Ansicht Ihrer Sandbox `Bootcamp`.
+Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `Bootcamp`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **Prod** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel trägt die Sandbox den Namen **Bootcamp**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -38,7 +38,7 @@ Dann sehen Sie einen leeren Journey-Bildschirm.
 
 ![ACOP](./images/journeyempty.png)
 
-In der vorherigen Übung haben Sie eine neue **Ereignis**. Sie haben es wie folgt benannt: `yourLastNameAccountCreationEvent` und ersetzt `yourLastName` mit Ihrem Nachnamen. Dies war das Ergebnis der Ereigniserstellung:
+In der vorherigen Übung haben Sie ein neues **Ereignis** erstellt. Sie haben ihn wie folgt benannt: `yourLastNameAccountCreationEvent` und haben `yourLastName` durch Ihren Nachnamen ersetzt. Dies war das Ergebnis der Ereigniserstellung:
 
 ![ACOP](./images/eventdone.png)
 
@@ -50,7 +50,7 @@ Wählen Sie das Ereignis aus, ziehen Sie es auf die Journey-Arbeitsfläche und l
 
 ![ACOP](./images/journeyevent.png)
 
-Als zweiten Schritt im Journey müssen Sie eine kurze **Warten** Schritt. Navigieren Sie zur linken Seite Ihres Bildschirms, um die **Orchestrierung** -Abschnitt, um dies zu finden. Sie verwenden Profilattribute und müssen sicherstellen, dass sie in das Echtzeit-Kundenprofil eingetragen sind.
+Als zweiten Schritt im Journey müssen Sie einen kurzen **Warten** -Schritt hinzufügen. Navigieren Sie zur linken Seite Ihres Bildschirms zum Abschnitt **Orchestrierung** , um dies zu finden. Sie verwenden Profilattribute und müssen sicherstellen, dass sie in das Echtzeit-Kundenprofil eingetragen sind.
 
 ![ACOP](./images/journeywait.png)
 
@@ -58,13 +58,13 @@ Ihre Journey sieht jetzt so aus. Auf der rechten Bildschirmseite müssen Sie die
 
 ![ACOP](./images/journeywait1.png)
 
-Klicks **Ok** , um Ihre Änderungen zu speichern.
+Klicken Sie auf **OK** , um Ihre Änderungen zu speichern.
 
-Als dritten Schritt im Journey müssen Sie eine **Email** Aktion. Navigieren Sie zur linken Bildschirmseite, um **Aktionen**, wählen Sie die **Email** -Aktion und ziehen Sie sie dann per Drag-and-Drop auf den zweiten Knoten in Ihre Journey. Das sehen Sie jetzt.
+Als dritten Schritt im Journey müssen Sie eine **E-Mail** -Aktion hinzufügen. Navigieren Sie auf der linken Bildschirmseite zu **Aktionen**, wählen Sie die Aktion **E-Mail** aus und ziehen Sie sie per Drag-and-Drop auf den zweiten Knoten im Journey. Das sehen Sie jetzt.
 
 ![ACOP](./images/journeyactions.png)
 
-Legen Sie die **Kategorie** nach **Marketing** und wählen Sie eine E-Mail-Oberfläche aus, über die Sie E-Mails versenden können. In diesem Fall ist die auszuwählende E-Mail-Oberfläche **Email**. Stellen Sie sicher, dass die Kontrollkästchen für **Klicks auf E-Mail** und **E-Mail-Öffnungen** beide aktiviert sind.
+Setzen Sie die **Kategorie** auf **Marketing** und wählen Sie eine E-Mail-Oberfläche aus, über die Sie E-Mails senden können. In diesem Fall ist die auszuwählende E-Mail-Oberfläche **E-Mail**. Stellen Sie sicher, dass die Kontrollkästchen für **Klicks auf E-Mail** und **E-Mail-Öffnungen** aktiviert sind.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -82,45 +82,45 @@ Das sehen Sie jetzt.
 
 ![ACOP](./images/journeyactions3.png)
 
-Klicken Sie auf **Betreff** Textfeld.
+Klicken Sie auf das Textfeld **Betreff**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-Beginnen Sie im Textbereich mit dem Schreiben **Hi**
+Beginnen Sie im Textbereich mit dem Schreiben von **Hi**
 
 ![Journey Optimizer](./images/msg6.png)
 
-Die Betreffzeile ist noch nicht fertig. Als Nächstes müssen Sie das Personalisierungstoken für das Feld einfügen **Vorname** die unter `profile.person.name.firstName`. Scrollen Sie im linken Menü nach unten, um die **Person** und klicken Sie auf den Pfeil, um eine Ebene tiefer zu gehen.
+Die Betreffzeile ist noch nicht fertig. Als Nächstes müssen Sie das Personalisierungstoken für das Feld **Vorname** einfügen, das unter `profile.person.name.firstName` gespeichert ist. Scrollen Sie im linken Menü nach unten, um das Element **Person** zu suchen, und klicken Sie auf den Pfeil, um eine Ebene tiefer zu gehen.
 
 ![Journey Optimizer](./images/msg7.png)
 
-Suchen Sie nun die **Vollständiger Name** und klicken Sie auf den Pfeil, um eine Ebene tiefer zu gehen.
+Suchen Sie nun das Element **Vollständiger Name** und klicken Sie auf den Pfeil, um eine Ebene tiefer zu gehen.
 
 ![Journey Optimizer](./images/msg8.png)
 
-Suchen Sie abschließend die **Vorname** und klicken Sie auf **+** daneben unterschreiben. Daraufhin wird das Personalisierungstoken im Textfeld angezeigt.
+Suchen Sie abschließend das Feld **Vorname** und klicken Sie auf das Symbol **+** daneben. Daraufhin wird das Personalisierungstoken im Textfeld angezeigt.
 
 ![Journey Optimizer](./images/msg9.png)
 
-Fügen Sie als Nächstes den Text hinzu **, danke für die Registrierung!**. Klicken Sie auf **Speichern**.
+Fügen Sie als Nächstes den Text **hinzu, vielen Dank für die Anmeldung!**. Klicken Sie auf **Speichern**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-Du wirst dann wieder hier sein. Klicks **Email Designer** um den Inhalt der E-Mail zu erstellen.
+Du wirst dann wieder hier sein. Klicken Sie auf **E-Mail-Designer** , um den E-Mail-Inhalt zu erstellen.
 
 ![Journey Optimizer](./images/msg11.png)
 
 Im nächsten Bildschirm werden Sie mit 3 verschiedenen Methoden aufgefordert, den Inhalt der E-Mail bereitzustellen:
 
-- **Design von Grund auf**: Beginnen Sie mit einer leeren Arbeitsfläche und verwenden Sie den WYSIWYG-Editor, um Struktur- und Inhaltskomponenten per Drag-and-Drop zu verschieben, um den Inhalt der E-Mail visuell zu erstellen.
-- **Eigene Code**: Erstellen Sie Ihre eigene E-Mail-Vorlage, indem Sie sie mit HTML kodieren
+- **Neuen Entwurf erstellen**: Beginnen Sie mit einer leeren Arbeitsfläche und verwenden Sie den WYSIWYG-Editor, um Struktur- und Inhaltskomponenten per Drag-and-Drop zu verschieben, um den Inhalt der E-Mail visuell zu erstellen.
+- **Eigenen Code kodieren**: Erstellen Sie Ihre eigene E-Mail-Vorlage, indem Sie sie mit HTML kodieren.
 - **HTML importieren**: Importieren Sie eine vorhandene HTML-Vorlage, die Sie bearbeiten können.
 
-Klicks **HTML importieren**. Alternativ können Sie auf **Gespeicherte Vorlagen** und wählen Sie die Vorlage aus **Bootcamp - E-Mail-Vorlage**.
+Klicken Sie auf **HTML importieren**. Alternativ können Sie auf **Gespeicherte Vorlagen** klicken und die Vorlage **Bootcamp - E-Mail-Vorlage** auswählen.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Wenn Sie **HTML importieren** können Sie jetzt die Datei per Drag-and-Drop verschieben **mailtemplatebootcamp.html** herunterladen [here](../../assets/html/mailtemplatebootcamp.html.zip). Wählen Sie Importieren.
+Wenn Sie **HTML importieren** ausgewählt haben, können Sie jetzt die Datei **mailtemplatebootcamp.html** ziehen und ablegen, die Sie [hier ](../../assets/html/mailtemplatebootcamp.html.zip) herunterladen können. Klicken Sie auf Importieren.
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -128,11 +128,11 @@ Anschließend wird Ihnen diese Standard-E-Mail-Vorlage angezeigt:
 
 ![Journey Optimizer](./images/msg14.png)
 
-Personalisieren wir die E-Mail. Klicken Sie neben dem Text auf **Hi** und klicken Sie dann auf **Personalisierung hinzufügen** Symbol.
+Personalisieren wir die E-Mail. Klicken Sie neben dem Text **Hi** auf und klicken Sie dann auf das Symbol **Personalization hinzufügen** .
 
 ![Journey Optimizer](./images/msg35.png)
 
-Als Nächstes müssen Sie die **Vorname** Personalisierungstoken, das unter `profile.person.name.firstName`. Suchen Sie im Menü die **Person** -Element, Drilldown zum **Vollständiger Name** -Element und klicken Sie dann auf das **+** -Symbol, um das Feld Vorname zum Ausdruckseditor hinzuzufügen.
+Als Nächstes müssen Sie das Personalisierungstoken **Vorname** mitbringen, das unter `profile.person.name.firstName` gespeichert ist. Suchen Sie im Menü das Element **Person** , führen Sie einen Drilldown zum Element **Vollständiger Name** durch und klicken Sie dann auf das Symbol **+** , um das Feld &quot;Vorname&quot;zum Ausdruckseditor hinzuzufügen.
 
 Klicken Sie auf **Speichern**.
 
@@ -142,11 +142,11 @@ Sie werden jetzt feststellen, wie Ihrem Text das Personalisierungsfeld hinzugef�
 
 ![Journey Optimizer](./images/msg37.png)
 
-Klicks **Speichern** , um Ihre Nachricht zu speichern.
+Klicken Sie auf **Speichern** , um Ihre Nachricht zu speichern.
 
 ![Journey Optimizer](./images/msg55.png)
 
-Gehen Sie zum Nachrichten-Dashboard zurück, indem Sie auf die Schaltfläche **Pfeil** neben dem Betreffzeilentext in der oberen linken Ecke.
+Gehen Sie zurück zum Nachrichten-Dashboard, indem Sie in der oberen linken Ecke auf den Pfeil **11} neben dem Betreffzeilentext klicken.**
 
 ![Journey Optimizer](./images/msg56.png)
 
@@ -158,21 +158,21 @@ Klicken Sie auf **OK**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3 Journey veröffentlichen
+## 2.3.3 Publish Ihre Journey
 
-Sie müssen Ihrer Journey noch einen Namen geben. Klicken Sie hierzu auf die Schaltfläche **Bleistift** in der oberen linken Bildschirmseite angezeigt.
+Sie müssen Ihrer Journey noch einen Namen geben. Klicken Sie dazu auf das Symbol **Stift** oben links auf Ihrem Bildschirm.
 
 ![ACOP](./images/journeyname.png)
 
-Dann können Sie hier den Namen des Journey eingeben. Verwenden Sie `yourLastName - Account Creation Journey`. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+Dann können Sie hier den Namen des Journey eingeben. Verwenden Sie bitte `yourLastName - Account Creation Journey`. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ![ACOP](./images/journeyname1.png)
 
-Sie können Ihre Journey jetzt veröffentlichen, indem Sie auf **Veröffentlichen**.
+Sie können Ihre Journey jetzt veröffentlichen, indem Sie auf **Publish** klicken.
 
 ![ACOP](./images/publishjourney.png)
 
-Klicks **Veröffentlichen** erneut.
+Klicken Sie erneut auf **Publish**.
 
 ![ACOP](./images/publish1.png)
 
@@ -182,7 +182,7 @@ Sie sehen dann eine grüne Bestätigungsleiste, dass Ihre Journey jetzt veröffe
 
 Du bist jetzt mit dieser Übung fertig.
 
-Nächster Schritt: [2.4 Journey testen](./ex4.md)
+Nächster Schritt: [2.4 Testen Sie Ihre Journey](./ex4.md)
 
 [Zurück zum Benutzerfluss 2](./uc2.md)
 

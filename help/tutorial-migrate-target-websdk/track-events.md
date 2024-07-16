@@ -1,13 +1,13 @@
 ---
 title: Ereignisse verfolgen | Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie Adobe Target-Konversionsereignisse mithilfe des Experience Platform Web SDK verfolgen.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+exl-id: 5da772bc-de05-4ea9-afbd-3ef58bc7f025
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '635'
 ht-degree: 1%
 
 ---
-
 
 # Verfolgen von Target-Konversionsereignissen mit dem Platform Web SDK
 
@@ -23,9 +23,9 @@ In der folgenden Tabelle wird verglichen, wie at.js und Platform Web SDK Konvers
 
 | Aktivitätsziel | Target at.js 2.x | Platform Web-SDK |
 |---|---|---|
-| Konversion > Seite angezeigt | Wird automatisch verfolgt. Basierend auf dem Wert von `context.address.url` in der at.js-Anfrage-Payload. | Wird automatisch verfolgt. Basierend auf dem Wert von `xdm.web.webPageDetails.URL` im `sendEvent` Nutzlast |
-| Konversion > Mbox angezeigt | Verfolgung mit der Anforderung einer Anzeige-Mbox-Position oder einer Benachrichtigung mithilfe von `trackEvent()` oder `sendNotifications()` mit `type` Wert von `display`. | Mit einem Platform Web SDK verfolgt `sendEvent` mit dem Aufruf `eventType` von `decisioning.propositionDisplay`. |
-| Konversion > Auf ein Element geklickt | Wird automatisch für VEC-basierte Aktivitäten verfolgt. Erscheint als at.js-Netzwerkaufruf mit einer `notifications` -Objekt in der Anfrage-Payload und ein `type` Wert von `click`. | Wird automatisch für VEC-basierte Aktivitäten verfolgt. Erscheint als Platform Web SDK `sendEvent` mit dem Aufruf `eventType` von `decisioning.propositionInteract`. |
+| Konversion > Seite angezeigt | Wird automatisch verfolgt. Basiert auf dem Wert von `context.address.url` in der at.js-Anfrage-Payload. | Wird automatisch verfolgt. Basiert auf dem Wert von `xdm.web.webPageDetails.URL` in der `sendEvent`-Payload |
+| Konversion > Mbox angezeigt | Wird mit der Anfrage nach einer Anzeige-Mbox-Position oder einer Benachrichtigung mit `trackEvent()` oder `sendNotifications()` mit dem `type` -Wert `display` verfolgt. | Mit einem Platform Web SDK `sendEvent` -Aufruf mit dem `eventType` von `decisioning.propositionDisplay` verfolgt. |
+| Konversion > Auf ein Element geklickt | Wird automatisch für VEC-basierte Aktivitäten verfolgt. Erscheint als at.js-Netzwerkaufruf mit einem `notifications` -Objekt in der Anfrage-Payload und einem `type` -Wert von `click`. | Wird automatisch für VEC-basierte Aktivitäten verfolgt. Erscheint als Platform Web SDK `sendEvent` -Aufruf mit dem `eventType` von `decisioning.propositionInteract`. |
 | Interaktion > Seitenansichten | Wird automatisch verfolgt | Wird automatisch verfolgt |
 | Interaktion > Besuchszeit pro Site | Wird automatisch verfolgt | Wird automatisch verfolgt |
 
@@ -46,7 +46,7 @@ Die folgenden Konversionsziele erfordern keine spezifischen Anpassungen Ihrer Im
 
 >[!NOTE]
 >
->Das Platform Web SDK ermöglicht eine bessere Kontrolle über die Werte, die in der Anfrage-Payload übergeben werden. Um sicherzustellen, dass Target-Funktionen wie QA-URLs und die Konvertierungsziele &quot;Angezeigte Seite&quot;ordnungsgemäß funktionieren, überprüfen Sie, ob die `xdm.web.webPageDetails.URL` -Wert enthält die vollständige Seiten-URL mit der Groß-/Kleinschreibung.
+>Das Platform Web SDK ermöglicht eine bessere Kontrolle über die Werte, die in der Anfrage-Payload übergeben werden. Um sicherzustellen, dass Target-Funktionen wie QA-URLs und die Konvertierungsziele &quot;Angezeigte Seite&quot;ordnungsgemäß funktionieren, überprüfen Sie, ob der Wert &quot;`xdm.web.webPageDetails.URL`&quot;die vollständige Seiten-URL mit der richtigen Groß-/Kleinschreibung enthält.
 
 <!--
 ## Purchase conversion events
@@ -73,16 +73,16 @@ In der folgenden Tabelle werden der at.js-Ansatz und das Platform Web SDK-Äquiv
 
 | Anwendungsfall | Target at.js 2.x | Platform Web-SDK |
 |---|---|---|
-| Tracking eines Klickkonversionsereignisses für eine Mbox-Position (Umfang) | Ausführen `trackEvent()` oder `sendNotifications()` mit `type` Wert von `click` für eine bestimmte Mbox-Position | Führen Sie einen `sendEvent` -Befehl mit dem Ereignistyp `decisioning.propositionInteract` |
-| Tracking eines benutzerspezifischen Konversionsereignisses, das auch zusätzliche Daten enthalten kann, z. B. Target-Profilparameter | Ausführen `trackEvent()` oder `sendNotifications()` mit `type` Wert von `display` für eine bestimmte Mbox-Position | Führen Sie einen `sendEvent` -Befehl mit dem Ereignistyp `decisioning.propositionDisplay` |
+| Tracking eines Klickkonversionsereignisses für eine Mbox-Position (Umfang) | Führen Sie `trackEvent()` oder `sendNotifications()` mit dem `type` -Wert `click` für eine bestimmte Mbox-Position aus. | Führen Sie einen `sendEvent` -Befehl mit dem Ereignistyp `decisioning.propositionInteract` aus. |
+| Tracking eines benutzerspezifischen Konversionsereignisses, das auch zusätzliche Daten enthalten kann, z. B. Target-Profilparameter | Führen Sie `trackEvent()` oder `sendNotifications()` mit dem `type` -Wert `display` für eine bestimmte Mbox-Position aus. | Führen Sie einen `sendEvent` -Befehl mit dem Ereignistyp `decisioning.propositionDisplay` aus. |
 
 >[!NOTE]
 >
->Obwohl `decisioning.propositionDisplay` wird am häufigsten zur Erhöhung von Impressionen für bestimmte Bereiche verwendet und sollte auch als direkter Ersatz für at.js verwendet werden `trackEvent()` gewöhnlich. Die `trackEvent()` -Funktion standardmäßig auf einen Typ von `display` falls nicht angegeben. Überprüfen Sie Ihre Implementierung, um sicherzustellen, dass Sie den richtigen Ereignistyp für alle benutzerdefinierten Konvertierungen verwenden, die Sie definiert haben.
+>Obwohl `decisioning.propositionDisplay` am häufigsten zum Erhöhen von Impressionen für bestimmte Bereiche verwendet wird, sollte es normalerweise auch als direkter Ersatz für at.js `trackEvent()` verwendet werden. Die Funktion `trackEvent()` verwendet standardmäßig den Typ `display`, falls nicht anders angegeben. Überprüfen Sie Ihre Implementierung, um sicherzustellen, dass Sie den richtigen Ereignistyp für alle benutzerdefinierten Konvertierungen verwenden, die Sie definiert haben.
 
-Weitere Informationen zur Verwendung von [`trackEvent()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) und [`sendNotifications()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) zur Verfolgung von Target-Ereignissen.
+Weitere Informationen zur Verwendung von [`trackEvent()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) und [`sendNotifications()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) zum Verfolgen von Target-Ereignissen finden Sie in der entsprechenden at.js-Dokumentation .
 
-at.js-Beispiel mit `trackEvent()` , um einen Klick auf eine mbox-Position zu verfolgen:
+at.js-Beispiel mit `trackEvent()` zur Verfolgung eines Klicks auf eine mbox-Position:
 
 ```JavaScript
 adobe.target.trackEvent({
@@ -91,12 +91,12 @@ adobe.target.trackEvent({
 });
 ```
 
-Mit einer Platform Web SDK-Implementierung können Sie Ereignisse und Benutzeraktionen verfolgen, indem Sie die `sendEvent` -Befehl eingeben und die `_experience.decisioning.propositions` XDM-Feldergruppe und legen Sie die `eventType` auf einen von zwei Werten:
+Mit einer Platform Web SDK-Implementierung können Sie Ereignisse und Benutzeraktionen verfolgen, indem Sie den Befehl `sendEvent` aufrufen, die XDM-Feldergruppe `_experience.decisioning.propositions` ausfüllen und die `eventType` auf einen von zwei Werten festlegen:
 
 * `decisioning.propositionDisplay`: Signalisiert das Rendering der Target-Aktivität.
 * `decisioning.propositionInteract`: Signalisiert eine Benutzerinteraktion mit der Aktivität, z. B. einen Mausklick.
 
-Die `_experience.decisioning.propositions` Die XDM-Feldergruppe ist ein Array von Objekten. Die Eigenschaften der einzelnen Objekte werden aus dem `result.propositions` , die in der `sendEvent` command: `{ id, scope, scopeDetails }`
+Die XDM-Feldergruppe `_experience.decisioning.propositions` ist ein Array von Objekten. Die Eigenschaften der einzelnen Objekte werden aus dem `result.propositions` abgeleitet, der im `sendEvent`-Befehl zurückgegeben wird: `{ id, scope, scopeDetails }`
 
 ```JavaScript
 alloy("sendEvent", {
@@ -143,8 +143,8 @@ alloy("sendEvent", {
 });
 ```
 
-Als Nächstes erfahren Sie, wie Sie [domänenübergreifende ID-Freigabe aktivieren](cross-domain.md) für konsistente Besucherprofile.
+Als Nächstes erfahren Sie, wie Sie [die domänenübergreifende ID-Freigabe aktivieren](cross-domain.md) für konsistente Besucherprofile.
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Target-Migration von at.js zum Web SDK. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies bitte mit, indem Sie [diese Gemeinschaftsdiskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Wir unterstützen Sie bei der erfolgreichen Target-Migration von at.js zum Web SDK. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.

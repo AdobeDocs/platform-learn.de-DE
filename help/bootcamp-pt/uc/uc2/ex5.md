@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: e3b920b1-e5e6-4fcc-b707-29c5943acec8
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -23,32 +23,32 @@ Antes de instalar o aplicativo, é notwendigen ário abilitar Rastreamento no se
 
 ![DSN](./../uc3/images/app4.png)
 
-Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`.\
-Clique em **Instalar** ou **Download**.
+Auf eine App Store da Apple e pesquise `aepmobile-bootcamp` zugreifen.\
+Klicken Sie auf em **Instalar** ou **Download**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Abrir**.
+Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Clique em **OK**.
+Klicken Sie auf em **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Clique em **Permitir**.
+Klicken Sie auf em **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Clique em **Concordo**.
+Klicken Sie auf em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Permitir enquanto uso app**.
+Klicken Sie auf em **Permitir enquanto uso app**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Clique em **Permitir**.
+Klicken Sie auf em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
@@ -58,7 +58,7 @@ Agora você está no aplicativo, na página inicial, pronto(a) para verificar to
 
 ## Fluxo da jornada do cliente
 
-Primeiramente, é notwendiário fazer o login. Clique em **Anmelden**.
+Primeiramente, é notwendiário fazer o login. Klicken Sie auf em **Login**.
 
 ![DSN](./../uc3/images/app13.png)
 
@@ -66,7 +66,7 @@ Depois de criar sua conta nos übícios anteriores, isso é exibido no site. Ago
 
 ![Demo](./../uc3/images/pv1.png)
 
-Digite o endereço de e-mail que você usou no site e clique em **Anmelden**.
+Digite o endereço de e-mail que você usou no site e clique em **Login**.
 
 ![DSN](./../uc3/images/app14.png)
 
@@ -78,17 +78,17 @@ Retorne para a página inicial do aplicativo e os recursos adicionais irão apar
 
 ![DSN](./../uc3/images/app17.png)
 
-Acesse **Produkte**. Clique em qualquer product, neste exemplo: **Kaffee zum Mitnehmen**.
+Zugriff auf **Produkte**. Clique em qualquer produto, neste exemplo: **Kaffee zu gehen**.
 
 ![DSN](./images/app19.png)
 
-Você verá a página do produto **Kaffee zum Mitnehmen** keine Anwendung. Clique em **Kaufen**.
+Você verá a página do produto **Kaffee zu gehen** no aplicativo. Klicken Sie auf em **Buy**.
 
 ![DSN](./images/app20.png)
 
 Agora você terminou este übício e está pronto para as próximas atividades.
 
-Próxima etapa: [ 2.6 Personalização kein Callcenter](./ex6.md)
+Próxima etapa: [ 2,6 Personalização kein Callcenter](./ex6.md)
 
 [Retornar para Fluxo de Usuário 2](./uc2.md)
 

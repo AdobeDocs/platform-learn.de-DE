@@ -9,13 +9,13 @@ thumbnail: 32669.jpg
 exl-id: 3e3ede4b-baf4-4118-921a-6661d37f1a33
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 75%
+source-wordcount: '58'
+ht-degree: 51%
 
 ---
 
 # Verwenden von Attribution AI-Bewertungen und -Insights
 
-Erfahren Sie, wie Sie mithilfe der Insights-Seite „Attribution AI“ den ROI von Marketing-Kanälen und -Kampagnen verstehen können. Weitere Informationen finden Sie unter [Dokumentation zu Attribution AIS](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Erfahren Sie, wie Sie mit der Attribution AI Insights-Seite den ROI von Marketingkanälen und Kampagnen verstehen können. Weitere Informationen finden Sie in der Dokumentation zu [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on)

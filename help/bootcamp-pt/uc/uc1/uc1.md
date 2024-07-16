@@ -10,7 +10,7 @@ exl-id: 4392bdc2-ec43-4f2d-99af-719e9979f0c5
 source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -42,11 +42,11 @@ Neste übício, você irá fazer login na Adobe Experience Platform e visualizar
 
 Neste übício, você irá criar um segmento usando o Construtor de Segmentos da Adobe Experience Platform.
 
-[1.4 Ação: Bereitstellen von Segmento-Para für Adobe Target](./ex4.md)
+[1.4 Ação: envie seu segmento para o Adobe Target](./ex4.md)
 
 Verwenden Sie o segmento construído no übício 1.1 para konfigurar uma Atividade de segmentação por experiência no Adobe Target.
 
-[1.5 Ação: Bereitstellen von Segmento-Para für Facebook](./ex5.md)
+[1.5 Ação: envie seu segmento para o Facebook](./ex5.md)
 
 Conecte o segmento que você criou no übício 1.1 ao destino Facebook.
 

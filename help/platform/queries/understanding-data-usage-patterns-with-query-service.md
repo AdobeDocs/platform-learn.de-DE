@@ -9,13 +9,13 @@ thumbnail: 29811.jpg
 exl-id: 8d99063a-5107-4bee-a0a4-6778b56aeac0
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '79'
-ht-degree: 7%
+source-wordcount: '74'
+ht-degree: 1%
 
 ---
 
 # Datennutzungsmuster mit Query Service verstehen
 
-In diesem Video werden Tipps und Best Practices für die Ausführung von Abfragen in der Benutzeroberfläche des Abfrageeditors, PSQL-Clients, Business Intelligence-Lösungen (BI) und der HTTP-API vorgestellt. Weitere Informationen finden Sie unter [Dokumentation zu Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
+In diesem Video werden Tipps und Best Practices für die Ausführung von Abfragen in der Benutzeroberfläche des Abfrageeditors, PSQL-Clients, Business Intelligence-Lösungen (BI) und der HTTP-API vorgestellt. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on)

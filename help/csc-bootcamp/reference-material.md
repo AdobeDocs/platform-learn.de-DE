@@ -1,14 +1,14 @@
 ---
 title: CSC Bootcamp - Referenzmaterial
-description: Interessante Ausgangspunkte, die Ihnen helfen, die Themen, die in diesem Bootcamp behandelt werden, besser zu verstehen.
+description: Interessante Ausgangspunkte, die Ihnen helfen, die Themen dieses Bootcamps besser zu verstehen.
 jira: KT-5342
 doc-type: tutorial
 activity: develop
-exl-id: 8dda3ba5-ad68-41b7-b247-aedb217256a4
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+exl-id: 6a37ce5c-5daa-45dd-a968-eae9c3a63ad3
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 7%
+source-wordcount: '370'
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 ## Schiebedeck
 
-Diese Dokumentation hilft Ihnen, sich mit dem Konzept dieses Bootcamps sowie mit einer Inhaltsversorgungskette vertraut zu machen. Es gibt jedoch immer einige Dinge, die wir zeigen wollten, aber nicht mehr einschließen konnten. Diese Informationen finden Sie im Abschnitt [Folgedecke](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) und [Art der möglichen Demo](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
+Diese Dokumentation hilft Ihnen, sich mit dem Konzept dieses Bootcamps sowie mit einer Inhaltsversorgungskette vertraut zu machen. Es gibt jedoch immer einige Dinge, die wir zeigen wollten, aber nicht mehr einschließen konnten. Diese Informationen finden Sie im [folgenden Foliensatz](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) und in unserer [Art of the Possible demo](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
 
 ## Erfüllen Sie AdobeBike
 
@@ -35,13 +35,13 @@ AdobeBike möchte auch, dass es für Kunden einfach ist, das Fahrrad online zu b
 
 ### Inhaltsversorgungskette
 
-- [Erstellen einer skalierbaren Content-Lieferkette](https://business.adobe.com/resources/webinars/building-a-content-supply-chain-that-scales.html)
+- [ Erstellen einer Content-Supply-Kette, die skaliert wird](https://business.adobe.com/resources/webinars/building-a-content-supply-chain-that-scales.html)
 
 ### Adobe Experience Manager
 
-- [Übersicht über die Inhaltsautomatisierung mit Creative Cloud-Services](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
+- [Überblick über die Inhaltsautomatisierung mit Creative Cloud-Diensten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
 - [Erste Schritte mit AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)
-- [Einführung in Adobe Experience Manager als Headless-CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=en)
+- [Einführung in Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=en)
 
 ### Adobe Express
 

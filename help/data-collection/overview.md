@@ -6,7 +6,7 @@ exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 32%
+ht-degree: 30%
 
 ---
 
@@ -33,7 +33,7 @@ Die Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für We
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de" target="_blank">
-    <strong>Experience Cloud mit Web SDK implementieren</strong>
+    <strong>Implementieren der Experience Cloud mit dem Web SDK</strong>
     </a>
     </div>
     <p>
@@ -54,11 +54,11 @@ Die Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für We
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=de" target="_blank">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
       <img alt="Migrieren von Target zum Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=de" target="_blank">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
     <strong>Migrieren von Adobe Target zum Web SDK</strong>
     </a>
     </div>

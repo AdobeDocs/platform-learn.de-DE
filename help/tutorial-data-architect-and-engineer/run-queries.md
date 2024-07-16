@@ -10,8 +10,8 @@ thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 6%
+source-wordcount: '314'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um me
 
 ## Erforderliche Berechtigungen
 
-Im [Berechtigungen konfigurieren](configure-permissions.md) Lektion erstellen Sie alle Zugriffssteuerungen, die zum Abschluss dieser Lektion erforderlich sind.
+In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten Sie alle Zugriffssteuerungen ein, die zum Abschluss dieser Lektion erforderlich sind.
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -41,8 +41,8 @@ Im [Berechtigungen konfigurieren](configure-permissions.md) Lektion erstellen Si
 
 Beginnen wir mit einigen einfachen Abfragen:
 
-1. Navigieren Sie in der Benutzeroberfläche von Platform zu **Abfragen** in der linken Navigation
-1. Wählen Sie die **Abfrage erstellen** Schaltfläche oben rechts, um ein Textfeld zum Ausführen und Ausführen von Abfragen zu öffnen
+1. Navigieren Sie in der Benutzeroberfläche von Platform im linken Navigationsbereich zu **Abfragen** .
+1. Wählen Sie oben rechts die Schaltfläche **Abfrage erstellen** aus, um ein Textfeld zum Ausführen und Ausführen von Abfragen zu öffnen.
 1. Geben Sie die folgende Abfrage in den Editor ein und drücken Sie Umschalt+Eingabetaste oder Umschalt+Zurück, um die Abfrage auszuführen.
 
    ```
@@ -54,7 +54,7 @@ Beginnen wir mit einigen einfachen Abfragen:
    ![TABELLENabfrage ANZEIGEN](assets/queries-showTables.png)
 
 
-1. Versuchen Sie jetzt diese Abfrage, indem Sie `_techmarketingdemos` mit Ihrem eigenen Mandanten-Namespace, der, wenn Sie sich daran erinnern, in Ihren Schemas sichtbar ist.
+1. Versuchen Sie jetzt diese Abfrage und ersetzen Sie `_techmarketingdemos` durch Ihren eigenen Mandanten-Namespace, der, wenn Sie sich daran erinnern, in Ihren Schemas sichtbar ist.
 
    ```
    SELECT person.name.lastName,loyalty.tier
@@ -62,14 +62,14 @@ Beginnen wir mit einigen einfachen Abfragen:
    WHERE loyalty.tier ='gold'
    ```
 
-   ![Daten aus dem Treuedatensatz auswählen](assets/queries-loyaltySelect.png)
+   ![WÄHLEN SIE Daten aus dem Treuedatensatz aus](assets/queries-loyaltySelect.png)
 
-1. Wenn ein Fehler auftritt, werden detaillierte Meldungen im **[!UICONTROL Konsole]** Registerkarte, wie unten dargestellt
+1. Wenn ein Fehler auftritt, werden detaillierte Meldungen auf der Registerkarte **[!UICONTROL Konsole]** angezeigt, wie unten dargestellt
    ![Fehler in der Abfrage](assets/queries-error.png)
 
 1. Mit Ihrer erfolgreichen Abfrage **[!UICONTROL Name]** it `Luma Gold Level Customers`
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**
-   ![Abfrage speichern](assets/queries-loyaltySelect-save.png)
+1. Wählen Sie die Schaltfläche **[!UICONTROL Speichern]** aus
+   ![Speichern der Abfrage](assets/queries-loyaltySelect-save.png)
 
 
 <!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
@@ -119,7 +119,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## Weitere Ressourcen
 
-* [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de)
+* [Dokumentation zum Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de)
 * [Query Service-API-Referenz](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-Und nun zur abschließenden praktischen Lektion: [Segmente erstellen](build-segments.md)!
+Und nun zur letzten praktischen Lektion [Erstellen von Segmenten](build-segments.md)!

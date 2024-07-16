@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # Verwenden von Sandboxes
 
-Erfahren Sie, wie Experience Platform-Sandboxes isolierte Umgebungen bereitstellen, um neue oder vorhandene Funktionen auszuprobieren und mit einem &quot;Fail Fast&quot;-Ansatz zu arbeiten. Erfahren Sie, wie Sie die Entwicklungsumgebungen zurücksetzen und neu starten und Sandboxes mit API-Aufrufen verwenden. Weitere Informationen finden Sie unter [Sandboxes-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de).
+Erfahren Sie, wie Experience Platform-Sandboxes isolierte Umgebungen bereitstellen, um neue oder vorhandene Funktionen auszuprobieren und mit einem &quot;Fail Fast&quot;-Ansatz zu arbeiten. Erfahren Sie, wie Sie die Entwicklungsumgebungen zurücksetzen und neu starten und Sandboxes mit API-Aufrufen verwenden. Weitere Informationen finden Sie im [Sandboxes-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on)
 

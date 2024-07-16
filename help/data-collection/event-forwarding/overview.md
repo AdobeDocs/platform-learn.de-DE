@@ -8,14 +8,14 @@ thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 62%
+source-wordcount: '131'
+ht-degree: 41%
 
 ---
 
 # Übersicht über die Ereignisweiterleitung
 
-Erfahren Sie, wie durch die Ereignisweiterleitung die Datenerfassung zentralisiert wird, die in Ihren Web-Programmen und Mobile Apps erforderliche Code-Menge reduziert wird und Daten über Adobe Experience Platform Edge Network an Nicht-Adobe-Lösungen gestreamt werden. Weitere Informationen finden Sie unter [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Erfahren Sie, wie die Ereignisweiterleitung die Datenerfassung zentralisiert, die in Ihren Web- und mobilen Apps erforderliche Codemenge reduziert und Daten über Adobe Experience Platform Edge Network an Nicht-Adobe-Lösungen streamt. Weitere Informationen finden Sie in der Dokumentation zur [Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) .
 
 >[!NOTE]
 >
@@ -23,6 +23,6 @@ Erfahren Sie, wie durch die Ereignisweiterleitung die Datenerfassung zentralisie
 >
 > * Platform launch (Client-seitig) ist jetzt **[!DNL tags]**
 > * Platform launch Server Side ist jetzt **[!DNL event forwarding]**
-> * Edge-Konfigurationen sind jetzt verfügbar **[!DNL datastreams]**
+> * Edge-Konfigurationen sind jetzt **[!DNL datastreams]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/331937?learn=on)

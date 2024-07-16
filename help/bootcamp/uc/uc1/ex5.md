@@ -16,19 +16,19 @@ ht-degree: 3%
 
 # 1.5 Aktion durchführen: Senden Sie Ihre Audience an Facebook
 
-Navigieren Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
+Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
 
 ![Datenaufnahme](./images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox**. Die auszuwählende Sandbox heißt ``Bootcamp``. Klicken Sie hierzu auf den Text **[!UICONTROL Produktionsprodukt]** in der blauen Zeile auf Ihrem Bildschirm. Nach Auswahl der entsprechenden [!UICONTROL Sandbox], sehen Sie die Änderung des Bildschirms und befinden sich jetzt in Ihrem [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``Bootcamp``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 ![Datenaufnahme](./images/sb1.png)
 
-Gehen Sie im linken Menü zu **Ziele**, gehen Sie dann zu **Katalog**. Sie werden dann die **Zielkatalog**. In **Ziele** klicken **Aktivieren von Zielgruppen** auf **Benutzerdefinierte facebook-Zielgruppe** Karte.
+Wechseln Sie im linken Menü zu **Ziele** und gehen Sie dann zu **Katalog**. Daraufhin wird der **Zielkatalog** angezeigt. Klicken Sie in **Ziele** auf der Karte **Benutzerdefinierte Facebook-Zielgruppe** auf **Zielgruppen aktivieren** .
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Ziel auswählen **bootcamp-facebook** und klicken **Nächste**.
+Wählen Sie das Ziel **bootcamp-facebook** aus und klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
@@ -36,15 +36,15 @@ Wählen Sie in der Liste der verfügbaren Zielgruppen die Zielgruppe aus, die Si
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Im **Zuordnung** -Seite, stellen Sie sicher, dass die **Anwenden von Umwandlungen** aktiviert ist. Klicken Sie auf **Weiter**.
+Stellen Sie auf der Seite **Mapping** sicher, dass das Kontrollkästchen **Transformation anwenden** aktiviert ist. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Im **Zielgruppenplanung** Seite, wählen Sie die **Herkunft der Audience** und legen Sie **Direkt von Kunden**. Klicken Sie auf **Weiter**.
+Wählen Sie auf der Seite **Zielgruppenplan** den **Ursprung Ihrer Zielgruppe** aus und setzen Sie ihn auf **Direkt von Kunden**. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Abschließend zur **Überprüfen** Seite, klicken **Beenden**.
+Klicken Sie abschließend auf der Seite **Überprüfen** auf **Beenden**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 

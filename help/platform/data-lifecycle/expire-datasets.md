@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie mit der Adobe Experience Platform-Funktion zur Datenhygiene das Löschen von Datensätzen planen.
 
-Durch das Löschen von Datensätzen können Data Stewards und Data Engineers ein Ablaufdatum für einen Datensatz festlegen. Weitere Informationen finden Sie unter [Dokumentation zur Datenhygiene](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=de).
+Durch das Löschen von Datensätzen können Data Stewards und Data Engineers ein Ablaufdatum für einen Datensatz festlegen. Weitere Informationen finden Sie in der [Dokumentation zur Datenhygiene](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=de).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on)

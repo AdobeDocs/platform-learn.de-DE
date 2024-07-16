@@ -18,31 +18,31 @@ Viele Unternehmen sind sich der Spannungen im Journey ihrer Kunden nicht bewusst
 
 Treten Sie diesem Bootcamp bei, um zu erfahren, wie ein plattformbasierter Ansatz Ihnen dabei hilft, die Einblicke zu erhalten, die Sie benötigen, um Reibungspunkte zu identifizieren und zu beseitigen, um die Journey Ihres Kunden zu verbessern.
 
-Personalisierung im Maßstab beginnt damit, zu verstehen, was verbessert werden kann, und eine Echtzeitansicht Ihres Kunden ist dabei von entscheidender Bedeutung. Einblicke führen zu Aktionen, was zu mehr Einblicken führt. Mit dem einzigartigen plattformorientierten Ansatz erhalten Sie Tools, die nicht nur den technologischen Wandel vorantreiben, sondern auch Ihr Unternehmen, Ihr Team und Ihre Fähigkeit beeinflussen, anstelle eines kanalspezifischen Kundenerlebnisses ein ganzheitliches Kundenerlebnis zu bieten.
+Personalization im Maßstab beginnt damit, zu verstehen, was verbessert werden kann, und eine Echtzeitansicht Ihres Kunden ist dabei von entscheidender Bedeutung. Einblicke führen zu Aktionen, was zu mehr Einblicken führt. Mit dem einzigartigen plattformorientierten Ansatz erhalten Sie Tools, die nicht nur den technologischen Wandel vorantreiben, sondern auch Ihr Unternehmen, Ihr Team und Ihre Fähigkeit beeinflussen, anstelle eines kanalspezifischen Kundenerlebnisses ein ganzheitliches Kundenerlebnis zu bieten.
 
 ## Agenda
 
 ### Tag 1
 
-9:30: Anmelden
+9:30: Walk-in
 
-10:00: Startvorgang/Einstieg &amp; Bootcamp Challenge
+10:00: Kick-Off/Intro &amp; Bootcamp Challenge
 
 11:00: 1-1 Personalisierung, Reibungsjagd, Silos, Adobe POV (Whiteboard)
 
-12:00: Break
+12:00: Pause
 
 12:15: Aufschlüsselung der Lösungsarchitektur (Whiteboard)
 
 13:00: Mittagessen
 
-14:00: Benutzerfluss 1 - &quot;Akquise&quot;-Umgehungslösung und Hands-On-Deep-Dive
+14:00: Benutzerfluss 1 - &quot;Akquise&quot; - Umgehungslösung und Hands-On-Deep-Dive
 
-15:30: Break
+15:30: Pause
 
 16:00: Benutzerfluss 2 Registrierung und Onboarding
 
-17:30: Golfklinik &amp; Borrel
+17:30: Golfklinik und Borrel
 
 19:30: Abendessen
 
@@ -56,7 +56,7 @@ Personalisierung im Maßstab beginnt damit, zu verstehen, was verbessert werden 
 
 10.45: Pause
 
-12:00: Anwenderfluss 3 &quot;Blending Physical &amp; Digital&quot;
+12:00: Benutzerfluss 3 &quot;Zusammenfügen von &quot;Physikalisch und digital&quot;
 
 12.30 Uhr: Mittagessen
 
@@ -83,7 +83,7 @@ Personalisierung im Maßstab beginnt damit, zu verstehen, was verbessert werden 
 
 Bevor Sie mit den praktischen Übungen beginnen, sollten Sie sich die Architektur hinter diesem Tutorial ansehen. Dieses Bootcamp wird eine Reihe von Funktionen und Funktionen rund um Adobe Experience Platform genauer untersuchen und außerdem über mehrere Integrationen für eine Vielzahl von Quellen und Zielen diskutieren. Damit Sie die Architektur dieses Tutorials und die Gesamtpositionierung von Adobe Experience Platform in Ihrem Unternehmensumfeld richtig verstehen können, sollten Sie zunächst das Video und das Diagramm zur Architektur lesen.
 
-Navigieren Sie zu [Architektur](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+Gehen Sie zu [Architektur](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
 
 ## Videos
 
@@ -97,7 +97,7 @@ Navigieren Sie zu [Videos](https://experienceleague.adobe.com/docs/platform-lear
 
 ## YouTube
 
-Weitere interessante Videos finden Sie [über unseren YouTube-Kanal](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+Weitere interessante Videos [finden Sie in unserem YouTube-Kanal](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Benutzerfluss
 
@@ -109,11 +109,11 @@ In diesem Benutzerfluss werden Sie alle Elemente verstehen, die Sie benötigen, 
 
 In diesem Benutzerfluss werden Sie alle Elemente kennen, die Sie zur Implementierung von Registrierungs- und Onboarding-Anwendungsfällen mithilfe von Real-Time CDP und Adobe Journey Optimizer benötigen.
 
-[3. Kombinieren von physischem und digitalem](./uc/uc3/uc3.md)
+[3. Verbinden von physischem und digitalem](./uc/uc3/uc3.md)
 
 In diesem Benutzerfluss personalisieren Sie mithilfe von Real-Time CDP und Adobe Journey Optimizer das Kundenerlebnis über Online- und Offline-Kanäle hinweg einheitlich.
 
-[4. Journey-Analyse](./uc/uc4/uc4.md)
+[4. Customer Journey Analysis](./uc/uc4/uc4.md)
 
 In diesem Benutzerfluss lernen Sie Customer Journey Analytics kennen und erhalten Einblicke in die Entwicklung der Kunden von einem Kanal zum anderen, von Online zum Offline zum Callcenter und mehr.
 

@@ -1,7 +1,7 @@
 ---
 user-guide-title: Experience Maker Content Supply Chain Bootcamp
 breadcrumb-title: Experience Maker Content Supply Chain Bootcamp
-user-guide-description: Ein praktisches Tutorial, das zeigt, wie die Adobe-Produkte Ihnen bei der Optimierung Ihrer Inhaltsversorgungskette helfen können.
+user-guide-description: Ein praxisorientiertes Tutorial, das zeigt, wie die Adobe-Produkte Ihnen bei der Optimierung Ihrer Inhaltsversorgungskette helfen können.
 audience: all
 role: User,Developer
 level: Beginner,Intermediate
@@ -10,8 +10,8 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 3%
+source-wordcount: '97'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 3%
    + [Planung](/help/csc-bootcamp/phases/planning/planning.md)
    + [Sonstige Vorarbeiten](/help/csc-bootcamp/phases/planning/prework.md)
 + Phase 2 - Produktion {#production}
-   + [Produkt-Homepage-Banner erstellen](/help/csc-bootcamp/phases/production/banner.md)
+   + [Produkt-Startseitenbanner erstellen](/help/csc-bootcamp/phases/production/banner.md)
    + [Social Media-Anzeige erstellen](/help/csc-bootcamp/phases/production/social.md)
    + [Erstellen von mobilen App-Inhalten](/help/csc-bootcamp/phases/production/app.md)
 + Phase 3 - Versand {#delivery}

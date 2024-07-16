@@ -9,13 +9,13 @@ thumbnail: 342115.jpeg
 exl-id: d39d4bc5-550f-4cb2-875d-2e81a6f4c2b8
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 88%
+source-wordcount: '70'
+ht-degree: 30%
 
 ---
 
 # Analyse und Visualisierung von Omni-Channel-Einblicken in Tableau mithilfe von Query Service
 
-Erfahren Sie anhand eines Beispiels zur Abwanderungsanalyse, wie Sie den Abfrage-Service von Adobe Experience Platform mit externen Datenvisualisierungs-Tools nutzen können. Weitere Informationen finden Sie unter [Dokumentation zu Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
+Erfahren Sie, wie Sie mithilfe eines Abwanderungsanalysebeispiels Adobe Experience Platforms Query Service mit externen Datenvisualisierungs-Tools verwenden können. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on)

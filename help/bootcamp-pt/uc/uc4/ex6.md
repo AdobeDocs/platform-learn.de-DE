@@ -11,7 +11,7 @@ feature: Audiences
 exl-id: 28b87e21-3168-447e-9a93-a6ae7e969657
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -20,87 +20,87 @@ ht-degree: 0%
 
 ## Objetivos
 
-- Entenda como criar um público com base em uma visão coletada nein Customer Journey Analytics
+- Entenda como crium público com base em uma visão coletada no Customer Journey Analytics
 - Verwenden Sie esse público no CDP em tempo real e no Adobe Journey Optimizer
 
 ## 4.6.1 Crie uma audiência e publique-a
 
-Em seu projeto, você criou um filtrado **Aufruffunktionen** e conseguiu visualizar a quantidade de usuários que tiver am suas ligações ao call center classificadas como **positivas**. Agora, você poderá criar um segmento com esses usuários e ativação-los em jornadas ou em canais de comunicação.
+Em seu projeto, você criou um filo chamado **Call Feelings** e conseguiu visualizar a quantidade usuários que tiveram suas ligações ao call center classificadas como **positivas**. Agora, você poderá criar um segmento com esses usuários e ativação-los em jornadas ou em canais de comunicação.
 
-O primeiro passo é: Kein males Criado no último übício, selecione a linha **1. Rufempfindlichkeit - positiv**, clique com o botão direito de seu mouse e selecione a opção **Erstellen einer Zielgruppe aus Auswahl**:
+O primeiro passo é: Kein schmerel criado no último übício, selecione a linha **1. Rufen Sie Feeling - Positiv**, klicken Sie auf com o botão direito de seu mouse e selecione a opção **Erstellen Sie eine Zielgruppe aus Auswahl**:
 
-![Demo](./images/aud1.png)
+![demo](./images/aud1.png)
 
-Em seguida, dê um nome para a sua audiência seguindo o modelo **yourLastName - cia-Zielgruppenaufruf mit positivem**:
+Em seguida, dê um nome para a sua audiência seguindo modelo **yourLastName - cia audience call having**:
 
-![Demo](./images/aud2.png)
+![demo](./images/aud2.png)
 
 Beachten Sie, dass es möglich ist, eine Vorschau der audiência que está sendo criada anzuzeigen:
 
-![Demo](./images/aud3.png)
+![demo](./images/aud3.png)
 
-Para finalizar, clique em **Publikum**:
+Para finalizar, klicken Sie auf em **Publicar**:
 
-![Demo](./images/aud4.png)
+![demo](./images/aud4.png)
 
 ## 4.6.2 Verwenden Sie sua audiência como parte de um segmento
 
-Voltando para a Adobe Experience Platform, vá em **Segmente > Durchsuchen** e você conseguirá visualizar o seu segmento criado no CJA pronto e disponível para ser usado nas suas ativações e jornadas!
+Voltando para a Adobe Experience Platform, vá em **Segmente > Browse** e você conseguirá visualizar o seu segmento criado no CJA pronto e disponível para ser usado nas suas ativações e jornadas!
 
-![Demo](./images/aud5.png)
+![demo](./images/aud5.png)
 
 Vamos agora usar esse segmento em uma ativação no Facebook e em uma jornada do cliente!
 
 ## 4.6.3 Verwenden Sie &quot;seu segmento an Real-Time CDP em tempo real&quot;
 
-Na Adobe Experience Platform, vá em **Segmente > Durchsuchen** e stellen ein audiência que você criou no CJA:
+Na Adobe Experience Platform, vá em **Segmente > Durchsuchen** e encontre a audiência que você criou no CJA:
 
-![Demo](./images/aud6.png)
+![demo](./images/aud6.png)
 
-Klicken Sie auf kein seu segmento e, em seguida, clique em **Für Ziel aktivieren**:
+Klicken Sie auf kein seu segmento e, em seguida, klicken Sie auf em **Activate to Destination**:
 
-![Demo](./images/aud7.png)
+![demo](./images/aud7.png)
 
 Wählen Sie ein Ziel chamada bootcamp-facebook e, em seguida, klicken Sie auf em Next:
 
-![Demo](./images/aud8.png)
+![demo](./images/aud8.png)
 
 Em seguida, clique em Next novamente:
 
-![Demo](./images/aud9.png)
+![demo](./images/aud9.png)
 
-Selecione a opção **Herkunft der Audience** e defina como **Direkt von Kunden** Klicken Sie auf Weiter :
+Wählen Sie einen opção **Ursprung Ihrer Audience** e defina como **Direkt aus Kunden** und klicken Sie auf em Weiter:
 
-![Demo](./images/aud10.png)
+![demo](./images/aud10.png)
 
-Por fim, na página **Überprüfen** clique em Finish!
+Por fim, na página **Review** clique em Finish!
 
-![Demo](./images/aud11.png)
+![demo](./images/aud11.png)
 
 Pronto! Agora o seu segmento está vinculado aos públicos personalizados do Facebook.
 Agora, vamos utilizar esse segmento no AJO!
 
 ## 4.6.4 Verwenden Sie &quot;Segment segmentieren&quot;zu Adobe Journey Optimizer
 
-Na interface da Adobe Experience Platform clique em Journey Optimizer e, em seguida, no menu lateral esquerdo, clique em **Journey** e come a criar uma jornada clicando em **Journey erstellen**:
+Na interface da Adobe Experience Platform clique em Journey Optimizer e, em seguida, no menu lateral esquerdo, clique em **Journey** e comece a criar uma jornada clicando em **Journey erstellen**:
 
-![Demo](./images/aud20.png)
+![demo](./images/aud20.png)
 
-![Demo](./images/aud21.png)
+![demo](./images/aud21.png)
 
-![Demo](./images/aud22.png)
+![demo](./images/aud22.png)
 
 Em seguida, no menu lateral esquerdo, em Eventos, selecione **Segmentqualifikation** e arraste-o até a jornada:
 
-![Demo](./images/aud23.png)
+![demo](./images/aud23.png)
 
-Em seguida, em **Segment** clique em **Bearbeiten** para selecionar um segmento:
+Em seguida, em **Segment** clique em **Edit** para selecionar um segmento:
 
-![Demo](./images/aud24.png)
+![demo](./images/aud24.png)
 
-Selecione a audiência que você criou no CJA e clique em **Speichern**:
+Selecione a audiência que você criou no CJA e clique em **Save**:
 
-![Demo](./images/aud25.png)
+![demo](./images/aud25.png)
 
 Pronto! Ein partir daí você pode criar uma jornada para clientes que se qualificam para esse segmento!
 

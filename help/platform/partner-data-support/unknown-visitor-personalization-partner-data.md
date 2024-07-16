@@ -1,6 +1,6 @@
 ---
 title: Personalisieren von Onsite-Erlebnissen für unbekannte Besucher mithilfe der von Partnern unterstützten Besuchererkennung
-description: Erfahren Sie, wie Sie Attribute von Drittanbietern aus der [!DNL Adobe Experience Platform Web SDK] und personalisieren Sie Ihr Onsite-Erlebnis für unbekannte Besucher mithilfe der von Partnern unterstützten Besuchererkennung.
+description: Erfahren Sie, wie Sie Attribute von Drittanbietern aus dem [!DNL Adobe Experience Platform Web SDK] erfassen und Ihr Onsite-Erlebnis für unbekannte Besucher mit der von Partnern unterstützten Besuchererkennung personalisieren können.
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Personalisieren von Onsite-Erlebnissen für unbekannte Besucher mithilfe der von Partnern unterstützten Besuchererkennung
 
-Erfahren Sie, wie Sie Attribute von Drittanbietern aus der [!DNL Adobe Experience Platform Web SDK] und personalisieren Sie Ihr Onsite-Erlebnis für unbekannte Besucher mithilfe der von Partnern unterstützten Besuchererkennung. Weitere Informationen finden Sie unter [Verwenden der von Partnern unterstützten Besuchererkennung zur Personalisierung von Onsite-Erlebnissen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) Dokumentation.
+Erfahren Sie, wie Sie Attribute von Drittanbietern aus dem [!DNL Adobe Experience Platform Web SDK] erfassen und Ihr Onsite-Erlebnis für unbekannte Besucher mithilfe der von Partnern unterstützten Besuchererkennung personalisieren können. Weitere Informationen finden Sie in der Dokumentation [Verwenden der von Partnern unterstützten Besuchererkennung zur Personalisierung von Onsite-Erlebnissen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on)

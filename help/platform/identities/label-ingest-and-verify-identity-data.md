@@ -9,13 +9,13 @@ thumbnail: 28167.jpg
 exl-id: 9a4fbd95-74e3-4e10-8663-8fafefe324a8
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 72%
+source-wordcount: '70'
+ht-degree: 35%
 
 ---
 
 # Identitätsdaten beschriften, erfassen und überprüfen
 
-Erfahren Sie, wie Sie Datenfelder als Identitäten kennzeichnen, Identitätsdaten aufnehmen und die Daten im privaten Diagramm von Adobe Experience Platform Identity Service überprüfen. Weitere Informationen finden Sie unter [Identitätsdienst-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de)
+Erfahren Sie, wie Sie Datenfelder als Identitäten kennzeichnen, Identitätsdaten erfassen und die Daten im privaten Diagramm des Adobe Experience Platform Identity Service überprüfen. Weitere Informationen finden Sie in der Dokumentation zum [Identitätsdienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on)

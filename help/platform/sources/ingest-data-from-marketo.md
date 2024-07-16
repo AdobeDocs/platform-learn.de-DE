@@ -13,8 +13,8 @@ thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 6%
+source-wordcount: '148'
+ht-degree: 18%
 
 ---
 
@@ -35,5 +35,5 @@ Erfahren Sie, wie Sie den Quell-Connector für Marketo mithilfe des Standard-Wor
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 Weitere Informationen finden Sie in der folgenden Dokumentation:
-* [Dokumentation zum Marketo Engage-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [Erstellen eines Quellen-Datenflusses mithilfe von Vorlagen in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Marketo Engage-Quell-Connector-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
+* [Erstellen eines Datenflusses für Quellen mithilfe von Vorlagen in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

@@ -9,13 +9,13 @@ thumbnail: 27012.jpg
 exl-id: 65c83db2-d81f-4422-81e5-cd9c15cdacbf
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 49%
+source-wordcount: '69'
+ht-degree: 8%
 
 ---
 
 # Erstellen von Schemata
 
-In diesem Video erfahren Sie, wie Sie in Adobe Experience Platform Schemas mithilfe der Klasse „XDM Individual Profile“ und verschiedener Feldergruppen erstellen. Eine ausführliche Produktdokumentation finden Sie unter [Erstellen eines Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) und [Erstellen eines Schemas mit der API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html?lang=de).
+In diesem Video erfahren Sie, wie Sie Schemas in Adobe Experience Platform mithilfe der Klasse &quot;XDM Individual Profile&quot;und verschiedener Feldergruppen erstellen. Eine ausführliche Produktdokumentation finden Sie unter [Erstellen eines Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) und [Erstellen eines Schemas mit der API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27012?learn=on)

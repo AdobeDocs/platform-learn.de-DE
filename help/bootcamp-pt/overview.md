@@ -2,9 +2,10 @@
 title: Experience Maker Bootcamp - Brasilien
 description: Startpunkt für Teilnehmer des Experience Makers Bootcamp
 doc-type: multipage-overview
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 64effc7f-6581-49a5-a3ab-4da17bc9bd08
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -15,9 +16,9 @@ ht-degree: 0%
 
 Muitas empresas não estão cientes do atrito que existe na jornada dos seus clientes, folgenência de uma abordagem fragmentada e não integrada ao orquestrar a comunicação com o cliente. Dados, perfil e conteúdo recisam estar perfeitamente alinhados para projetar e oferecer experiências exccionais ao consumidor.
 
-Teilnehmer deste Bootcamp para aprender como uma abordagem baseada em Experience Platform pode ajudar na obtenção dos insights need ários para identificar e remover pontos de atrito para jornada do seu cliente.
+Nehmen Sie an der Deste Bootcamp para aprender como uma abordagem baseada em Experience Platform pode ajudar na obtenção dos insights need ários para identificar e remover pontos de atrito para aprimorar a jornada do seu cliente teil.
 
-Ein personalização em escala começa com a compreensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente é essencial. Insights levam à ação, o que leva a mais insights. a abordagem exclusiva da Adobe focada na Experience Platform fornecas ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua equipe e sua kapidade de oferecer uma experiência holística ao cliente em vez de uma experiência clido ente específica por channel.
+Ein personalização em escala começa com a compreensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente é essencial. Insights levam à ação, o que leva a mais insights. Ein abordagem exclusiva da Adobe focada na Experience Platform fornecas as ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua equipe e sua kapidade de oferecer uma experiência holística ao cliente em vez de uma experiência clido ente específica por canal.
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 
@@ -25,40 +26,40 @@ Ein personalização em escala começa com a compreensão do que pode ser aprimo
 
 ### Dia 1
 
-9.00 - 10.00 Uhr: Café da Manhã &amp; Networking
+9.00 - 10.00: Café da Manhã &amp; Networking
 
 10.00 - 10.30 Uhr: &#x200B;
 
-10.30 - 11.00 Uhr: Jornada do cliente: &quot;Art des Möglichen&quot; (sessão em inglês) &#x200B;
+10.30 - 11.00: Jornada do cliente: &quot;Art des Möglichen&quot; (sessão em inglês) &#x200B;
 
-11.00 - 12.00 Uhr: Personalização exponencial vs. Ecossistemas em silos (sessão em inglês) &#x200B;
+11.00 - 12.00: Personalização exponencial vs. Ecossistemas em silos (sessão em inglês) &#x200B;
 
-12.00 - 13.30 Uhr: &#x200B;
+12.00 - 13.30 Uhr: Almoço e network &#x200B;
 
-13.30 - 14.30 Uhr: Arquitetura de solução (sessão em inglês)&#x200B;
+13.30 - 14.30 Uhr: Arquitetura de solução (sessão em inglês) &#x200B;
 
-14.30 - 16.00 Uhr: Tun Sie es selbst: Aquisição &#x200B;
+14.30 - 16.00: Machen Sie es selbst: Aquisição &#x200B;
 
-16.00 - 16.15 Uhr: Break Time
+16.00 - 16.15: Unterbrechungszeit
 
-16.15 - 18.00 Uhr: Tun Sie es selbst: &#x200B;
+16.15 - 18.00: Machen Sie es selbst: Cadastro &amp; Onboarding &#x200B;
 
 
 ### Dia 2
 
-09.00 - 10.00 Uhr: Café da Manhã &amp; Networking
+09.00 - 10.00: Café da Manhã &amp; Networking
 
-10.00 - 10.45: introdução: jornada do cliente, estrutura de times e backlog
+10.00 - 10.45: Introducdução: jornada do cliente, estrutura de times e backlog
 
-10.45 - 12.00 Uhr: Tun Sie es selbst: Konsolidieren oder Online e o offline
+10.45 - 12.00: Machen Sie es selbst: Konsolidieren Sie online e oder offline.
 
-12.00 - 13.40 Uhr: &#x200B;
+12.00 - 13.40: Almoço e network &#x200B;
 
-13.45 - 14.45 Uhr: Tun Sie es selbst: Análise de jornadas - fidelizando e retendo clientes
+13.45 - 14.45: Machen Sie es selbst: Análise de jornadas - fidelizando e retendo clientes
 
-14.45 - 16.00 Uhr: Conclusões e próximos passos
+14.45 - 16.00: Conclusões e próximos passos
 
-16.00 - 19.00 Uhr: Benutzerfluss 4: Networking &amp; Happy Hour
+16.00 - 19.00: Benutzerfluss 4: Netzwerke und Happy Hour
 
 
 ## Pré-equisitos
@@ -85,11 +86,11 @@ O objetivo Prinzipal do nosso bootcamp para Experience Makers é ajudar als empr
 
 Vários outros vídeos foram criados para demonstrar elementos do Bootcamp e integrações poderosas entre a Adobe Experience Platform e aplicativos que não são da Adobe. Clique no link abaixo para enkontrr uma visão geral desses vídeos.
 
-Acesse: [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=pt-BR).
+Zugriff: [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=pt-BR).
 
 ## YouTube
 
-É besitzível entrr vídeos interessantes adicionais [em nosso channel do YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+É besitzível entrr vídeos interessantes adicionais [em nosso canal do YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Benutzerfluss
 
@@ -101,7 +102,7 @@ Neste User Flow, você irá compreender todos os elementos notwendigen ários pa
 
 Neste User Flow, você irá compreender todos os elementos notwendigen ários para implementar casos de uso de cadastro e onboarding usando a Real-Time CDP e o Adobe Journey Optimizer.
 
-[3. Kombinação do físico e do digital ](./uc/uc3/uc3.md)
+[3. Kombinação do físico e do digital](./uc/uc3/uc3.md)
 
 Nesse User Flow, você irá personalizar a experiência do cliente nos canais online e offline de maneira konsistente, usando a Real-Time CDP e o Adobe Journey Optimizer.
 

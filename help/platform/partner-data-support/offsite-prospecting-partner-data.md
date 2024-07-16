@@ -1,5 +1,5 @@
 ---
-title: Unterstützen von Anwendungsfällen für die Offsite-Prospektion mithilfe von Partnerdaten in [!DNL Real-Time CDP]
+title: Unterstützung von Anwendungsfällen zur Offsite-Prospektion mithilfe von Partnerdaten in [!DNL Real-Time CDP]
 description: Erfahren Sie mehr über den Workflow zur Aufnahme neuer Interessenten von Partnern in [!DNL Real-Time CDP] für das Targeting vor Besuchen. 
 feature: Integrations
 topic: Integrations
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Unterstützen von Anwendungsfällen für die Offsite-Prospektion mithilfe von Partnerdaten in [!DNL Real-Time CDP]
+# Unterstützung von Anwendungsfällen für die Offsite-Prospektion mithilfe von Partnerdaten in [!DNL Real-Time CDP]
 
-Erfahren Sie mehr über den Workflow zur Aufnahme neuer Interessenten von Partnern in [!DNL Real-Time CDP] für das Targeting vor Besuchen. Weitere Informationen finden Sie unter [Engagieren und Akquirieren neuer Kunden durch Nutzungsszenarien für die Prospektion](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html) Dokumentation.
+Erfahren Sie mehr über den Workflow zur Aufnahme neuer Interessenten von Partnern in [!DNL Real-Time CDP] für die Zielgruppenbestimmung vor Besuchen. Weitere Informationen finden Sie in der Dokumentation [Interagieren und neue Kunden durch die Prospektion von Anwendungsfällen gewinnen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on)

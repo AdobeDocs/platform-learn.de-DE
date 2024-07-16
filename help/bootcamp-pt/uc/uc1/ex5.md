@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Echtzeit-Kundendatenplattform - Erstellen Sie ein Segment und ergreifen Sie Maßnahmen - Senden Sie Ihr Segment an DV360 - Brasilien
-description: Bootcamp - Echtzeit-Kundendatenplattform - Erstellen Sie ein Segment und ergreifen Sie Maßnahmen - Senden Sie Ihr Segment an DV360 - Brasilien
+title: Bootcamp - Echtzeit-Kundendatenplattform - Erstellen eines Segments und Handeln - Senden Sie Ihr Segment an DV360 - Brasilien
+description: Bootcamp - Echtzeit-Kundendatenplattform - Erstellen eines Segments und Handeln - Senden Sie Ihr Segment an DV360 - Brasilien
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
@@ -10,41 +10,41 @@ exl-id: acb32859-6f82-44e0-8948-a045a9fe2afe
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# 1.5 Ação: Bereitstellen von Segmento-Para für Facebook
+# 1.5 Ação: envie seu segmento para o Facebook
 
-Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
+Zugriff auf [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
 ![Datenaufnahme](./images/home.png)
 
-Antes de Continuar, você recisa selecionar um **Sandbox**. O nome do sandbox ein ser selecionado é Bootcamp. É besitzível fazer isso clicando no texto **[!UICONTROL Produktionsprodukt]** na linha azul na parte überlegen da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL Sandbox] widado.
+Antes de Continuar, você recisa selecionar um **sandbox**. O nome do sandbox ein ser selecionado é Bootcamp. É besitzível fazer isso clicando no texto **[!UICONTROL Production Prod]** na linha azul na parte überlegen da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] widado.
 
 ![Datenaufnahme](./images/sb1.png)
 
-No menu à esquerda, vá para **Ziele** e, em seguida, vá para **Katalog**. Você verá o **Zielkatalog**. Em **Ziele**, klicken Sie auf em **Segmente aktivieren** no cartão **Benutzerdefinierte facebook-Zielgruppe**.
+Kein Menü à esquerda, vá para **Ziele** e, em seguida, vá para **Katalog**. Você verá o **Zielkatalog**. EM **Ziele**, klicken Sie auf em **Segmente aktivieren** no cartão **Benutzerdefinierte Facebook-Zielgruppe**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Selecione **bootcamp-facebook** e clique em **Nächste**.
+Wählen Sie &quot;**bootcamp-facebook**&quot;und klicken Sie auf em &quot;**Next**&quot;.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Na lista de segmentos disponíveis, selecione o segmento que você criou no übício anteriore. Clique em **Nächste**.
+Na lista de segmentos disponíveis, selecione o segmento que você criou no übício anteriore. Klicken Sie auf em **Weiter**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Na página **Zuordnung** verifique se a caixa de seleção **Umwandlungen anwenden** está marcada. Clique em **Nächste**.
+Na página **Mapping**, verifique se a caixa de selção **Apply Transformation** está marcada. Klicken Sie auf em **Weiter**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Na página **Segmentplan**, wählen Sie a **Herkunft der Audience** e defina como **Direkt von Kunden**. Clique em **Nächste**.
+Na página **Segmentplan**, wählen Sie einen **Ursprung Ihrer Audience** e defina como **Direkt von Kunden**. Klicken Sie auf em **Weiter**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Por fim, na página **Überprüfen**, klicken Sie auf em **Beenden**.
+Por fim, na página **Review**, clique em **Finish**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 

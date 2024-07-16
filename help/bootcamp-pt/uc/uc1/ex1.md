@@ -9,7 +9,7 @@ feature: Profiles
 exl-id: 853a69d2-5dac-413d-bb40-ef29604a26ae
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 1%
 
 ## ContextTo
 
-Ein Adobe Experience Platform desempenha um papel importante wird zu einer jornada. A plataforma é o cérebro da comunicação, o **Erlebnissystem**.
+Ein Adobe Experience Platform desempenha um papel importante wird zu einer jornada. Ein plataforma é o cérebro da comunicação, o **Erlebnissystem des Datensatzes**.
 
 Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecidos. Um visitante desconhecido no site também é um cliente do ponto de vista da Plataforma e, como tal, todo o comportamento de um visitante desconhecido também é enviado à Plataforma. Graças a essa abordagem, quando esse visitante eventalmente se torna um cliente conhecido, uma marca também pode visualizar o que aconteceu antes daquele momento. Isso ajuda a partir de uma perspectiva de otimização de atribuição e experiência.
 
 ## Fluxo da jornada do cliente
 
-Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Alle zulassen**.
+Zugriff auf [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Klicken Sie auf em **Allow All**.
 
 ![DSN](./images/web8.png)
 
-Clique no ícone do logotipo da Adobe kein Canto Superior esquerdo da tela para abrir o Visualizador de perfil.
+Clique no ícone do logotipo da Adobe no canto Superior esquerdo da tela para abrir o Visualizador de perfil.
 
 ![Demo](./images/pv1.png)
 
-Verifique o ainel do Visualizador de perfil e no Perfil do cliente em tempo real com o **Experience Cloud-ID** como identificador primário para este cliente que ainda é desconhecido.
+Verifique o schmerel do Visualizador de perfil e no Perfil do cliente em tempo real com o **Experience Cloud ID** como identificador primário para este cliente que ainda é desconhecido.
 
 ![Demo](./images/pv2.png)
 
@@ -40,19 +40,19 @@ Você também pode ver todos os Eventos de Experiência coletados com base no co
 
 ![Demo](./images/pv3.png)
 
-Acesse a opção de menu **Anwendungsdienste** e clique no produto **Real-Time CDP**.
+Greifen Sie auf ein opção de menu **Application Services** und klicken Sie auf ein Produkt **Real-Time CDP**.
 
 ![Demo](./images/pv4.png)
 
-Você verá a página de detalhes do produto. Um Evento de experiência do tipo **Produktansicht** agora foi enviado para a Adobe Experience Platform usando a implementação do Web SDK que você revisou no Módulo 1. Abra o ainel Visualizador de perfil e verifique seque **Erlebnisereignisse**.
+Você verá a página de detalhes do produto Um Evento de experiência do tipo **Produktansicht** agora foi enviado para a Adobe Experience Platform usando a implementação do Web SDK que você revisou no Módulo 1. Abra o malel Visualizador de perfil e verifique seus **Erlebnisereignisse**.
 
 ![Demo](./images/pv5.png)
 
-Acesse a opção de menu **Anwendungsdienste** e clique no produto **Adobe Journey Optimizer**. Mais um Evento de experiência foi enviado para a Adobe Experience Platform.
+Greifen Sie auf ein opção de menu **Application Services** und klicken Sie auf ein Produkt **Adobe Journey Optimizer**. Mais um Evento de experiência foi enviado para a Adobe Experience Platform.
 
 ![Demo](./images/pv7.png)
 
-Abra o schmerel Visualizador de perfil. Agora você verá 2 Eventos de experiência do tipo **Produktansicht**. Embora o comportamento seja anônimo, cada clique é rastreado e rüzenado na Adobe Experience Platform. Depois que o cliente anônimo se tornar conhecido, poderemos mesclar todo o comportamento anônimo automaticamente ao perfil conhecido.
+Abra o schmerel Visualizador de perfil. Agora você verá 2 Eventos de experiência do tipo **Produktansicht**. Embora o comportamento seja anônimo, cada clique é rastreado e rüzenado na Adobe Experience Platform. Depois que o cliente anônimo se tornar conhecido, poderemos mesclar todo o comportamento anônimo automaticamente ao perfil conhecido.
 
 ![Demo](./images/pv8.png)
 

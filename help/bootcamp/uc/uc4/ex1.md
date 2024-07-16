@@ -30,7 +30,7 @@ CJA bringt Analysis Workspace auf Adobe Experience Platform. Adobe Experience Pl
 
 Mit der Drag-and-Drop-, Point-and-Click- und benutzerfreundlichen Benutzeroberfläche von Analysis Workspace können Geschäfts- und Insight-Teams direkt mit CJA sprechen, Fragen stellen und Antworten direkt erhalten.
 
-![Demo](./images/cja-adv-analysis1.png)
+![demo](./images/cja-adv-analysis1.png)
 
 ## 4.1.2 Hauptvorteile
 
@@ -58,27 +58,27 @@ Aus den oben genannten Gründen treffen Geschäftsbenutzer und Analysten fast so
 
 Mit CJA können Sie eine 360-Grad-Sicht auf die Journey der Kunden haben, indem Sie Offline- und Online-Daten nutzen, mit den richtigen Tools, um die Zeit für Einblicke zu verkürzen, Geschäftsbenutzer unabhängig davon zu machen, warum etwas passiert ist und wie sie darauf reagieren.
 
-![Demo](./images/cja-use-case.png)
+![demo](./images/cja-use-case.png)
 
 ## 4.1.4 Customer Journey Analytics-Workflow verstehen
 
 Bevor Sie mit den nächsten Übungen beginnen, müssen Sie wissen, welche Schritte unternommen werden müssen, um Daten aus Adobe Experience Platform in Customer Journey Analytics zu übertragen, um sie zu visualisieren und einige tiefe Einblicke zu erhalten. Das nennen wir CJA-Workflow. Sehen wir uns das einmal an:
 
-![Demo](./images/cja-work-flow.jpg)
+![demo](./images/cja-work-flow.jpg)
 
 Bevor Sie mit den oben genannten Schritten beginnen, vergessen Sie Schritt 0, der darin besteht, die in Adobe Experience Platform verfügbaren Daten zu verstehen.
 
-**Müll hinein, Müll raus.** Erinnern Sie sich? Sie müssen genau wissen, welche Daten verfügbar sind und wie die Schemas in Adobe Experience Platform konfiguriert sind. Das Verständnis der Daten in Adobe Experience Platform wird die Dinge nicht nur im Bereich der Datenverbindung, sondern auch beim Erstellen von Visualisierungen und beim Analysieren vereinfachen.
+**Müll hinein, Müll raus.** Denken Sie daran? Sie müssen genau wissen, welche Daten verfügbar sind und wie die Schemas in Adobe Experience Platform konfiguriert sind. Das Verständnis der Daten in Adobe Experience Platform wird die Dinge nicht nur im Bereich der Datenverbindung, sondern auch beim Erstellen von Visualisierungen und beim Analysieren vereinfachen.
 
 ## 4.1.5 Schritt 0: Grundlagen zu Adobe Experience Platform-Schemata und -Datensätzen
 
-Melden Sie sich über diese URL bei Adobe Experience Platform an: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Melden Sie sich bei Adobe Experience Platform an, indem Sie diese URL verwenden: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
 
 ![Datenaufnahme](../uc1/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox**. Die auszuwählende Sandbox heißt ``Bootcamp``. Klicken Sie hierzu auf den Text **[!UICONTROL Prod]** in der oberen rechten Ecke des Bildschirms. Nachdem Sie die entsprechende Sandbox ausgewählt haben, wird die Bildschirmänderung angezeigt und Sie befinden sich jetzt in Ihrer dedizierten Sandbox.
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``Bootcamp``. Klicken Sie dazu auf den Text **[!UICONTROL Prod]** in der oberen rechten Ecke des Bildschirms. Nachdem Sie die entsprechende Sandbox ausgewählt haben, wird die Bildschirmänderung angezeigt und Sie befinden sich jetzt in Ihrer dedizierten Sandbox.
 
 ![Datenaufnahme](../uc1/images/sb1.png)
 
@@ -93,19 +93,19 @@ Sehen Sie sich diese Schemata und Datensätze in Adobe Experience Platform an.
 Stellen Sie sicher, dass zumindest Folgendes überprüft wurde:
 
 - Identitäten: CRMID, phoneNumber, ECID, email. Welche Identitäten sind die primären Identifikatoren, welche sind die sekundären Identifikatoren?
-Sie können die Kennungen finden, indem Sie ein Schema öffnen und sich das Objekt ansehen `_experienceplatform.identification.core`. Sehen Sie sich das Schema an [Demosystem - Ereignisschema für Website (Global v1.1)](https://experience.adobe.com/platform/schema).
+Sie können die Kennungen finden, indem Sie ein Schema öffnen und sich das Objekt `_experienceplatform.identification.core` ansehen. Sehen Sie sich das Schema [Demo System - Event Schema for Website (Global v1.1)](https://experience.adobe.com/platform/schema) an.
 
-![Demo](./images/identity.png)
+![demo](./images/identity.png)
 
-- Commerce-Objekt innerhalb des Schemas durchsuchen [Demosystem - Ereignisschema für Website (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Durchsuchen Sie das Commerce-Objekt im Schema [Demo System - Event Schema for Website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
-![Demo](./images/commerce.png)
+![demo](./images/commerce.png)
 
-- Vorschau aller [Datensätze](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) und sehen Sie sich die Daten an.
+- Vorschau aller [Datensätze](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) anzeigen und Daten anzeigen
 
 Sie können jetzt mit der Verwendung der Customer Journey Analytics-Benutzeroberfläche beginnen.
 
-Nächster Schritt: [4.2 Adobe Experience Platform-Datensätze in Customer Journey Analytics verbinden](./ex2.md)
+Nächster Schritt: [4.2 Verbinden von Adobe Experience Platform-Datensätzen in Customer Journey Analytics](./ex2.md)
 
 [Zurück zum Benutzerfluss 4](./uc4.md)
 

@@ -11,8 +11,8 @@ feature: Connections
 exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 3%
+source-wordcount: '677'
+ht-degree: 1%
 
 ---
 
@@ -23,91 +23,91 @@ ht-degree: 3%
 - Grundlegendes zur Benutzeroberfläche der Datenverbindung
 - Einbinden von Adobe Experience Platform-Daten in CJA
 - Personen-ID und Datenzuordnung verstehen
-- Erfahren Sie mehr über das Konzept des Daten-Streaming in Customer Journey Analytics
+- Erfahren Sie mehr über das Konzept des Daten-Streaming unter Customer Journey Analytics
 
 ## 4.2.1 Verbindung
 
-Navigieren Sie zu [analytics.adobe.com](https://analytics.adobe.com) , um auf Customer Journey Analytics zuzugreifen.
+Wechseln Sie zu [analytics.adobe.com](https://analytics.adobe.com) , um auf Customer Journey Analytics zuzugreifen.
 
-Gehen Sie auf der Customer Journey Analytics-Homepage zu **Verbindungen**.
+Wechseln Sie auf der Customer Journey Analytics-Homepage zu **Verbindungen**.
 
-![Demo](./images/cja2.png)
+![demo](./images/cja2.png)
 
 Hier sehen Sie alle Verbindungen, die zwischen CJA und Platform hergestellt wurden. Diese Verbindungen haben dasselbe Ziel wie Report Suites in Adobe Analytics. Die Erfassung der Daten ist jedoch völlig anders. Alle Daten stammen aus Adobe Experience Platform-Datensätzen.
 
 Erstellen wir Ihre erste Verbindung. Klicken Sie auf **Neue Verbindung erstellen**.
 
-![Demo](./images/cja4.png)
+![demo](./images/cja4.png)
 
-Sie werden dann die **Verbindung erstellen** Benutzeroberfläche.
+Daraufhin wird die Benutzeroberfläche **Verbindung erstellen** angezeigt.
 
-![Demo](./images/cja5.png)
+![demo](./images/cja5.png)
 
 Jetzt können Sie Ihrer Verbindung einen Namen geben.
 
-Bitte verwenden Sie diese Namenskonvention: `yourLastName – Omnichannel Data Connection`.
+Verwenden Sie diese Namenskonvention: `yourLastName – Omnichannel Data Connection`.
 
 Beispiel: `vangeluw - Omnichannel Data Connection`
 
-Sie müssen auch die richtige Sandbox auswählen, die verwendet werden soll. Wählen Sie im Sandbox-Menü Ihre Sandbox aus, die `Bootcamp`. In diesem Beispiel lautet die zu verwendende Sandbox **Bootcamp**. Außerdem müssen Sie die **Durchschnittliche Anzahl der täglichen Ereignisse** nach **weniger als 1 Million**.
+Sie müssen auch die richtige Sandbox auswählen, die verwendet werden soll. Wählen Sie im Sandbox-Menü Ihre Sandbox aus, die `Bootcamp` sein soll. In diesem Beispiel lautet die zu verwendende Sandbox **Bootcamp**. Außerdem müssen Sie die **durchschnittliche Anzahl der täglichen Ereignisse** auf **weniger als 1 Million** festlegen.
 
-![Demo](./images/cjasb.png)
+![demo](./images/cjasb.png)
 
-Nachdem Sie Ihre Sandbox ausgewählt haben, können Sie damit beginnen, dieser Verbindung Datensätze hinzuzufügen. Klicken **Hinzufügen von Datensätzen**.
+Nachdem Sie Ihre Sandbox ausgewählt haben, können Sie Datensätze zu dieser Verbindung hinzufügen. Klicken Sie auf **Datensätze hinzufügen**.
 
-![Demo](./images/cjasb1.png)
+![demo](./images/cjasb1.png)
 
 ## 4.2.2 Adobe Experience Platform-Datensätze auswählen
 
-Suche nach dem Datensatz `Demo System - Event Dataset for Website (Global v1.1)`. Klicken **+** , um den Datensatz zu dieser Verbindung hinzuzufügen.
+Suchen Sie nach dem Datensatz &quot;`Demo System - Event Dataset for Website (Global v1.1)`&quot;. Klicken Sie auf **+** , um den Datensatz zu dieser Verbindung hinzuzufügen.
 
-![Demo](./images/cja7.png)
+![demo](./images/cja7.png)
 
-Suchen Sie jetzt und aktivieren Sie die Kontrollkästchen für `Demo System - Profile Dataset for Loyalty (Global v1.1)` und `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Suchen Sie jetzt nach den Kontrollkästchen für `Demo System - Profile Dataset for Loyalty (Global v1.1)` und `Demo System - Event Dataset for Call Center (Global v1.1)` und aktivieren Sie sie.
 
 Dann wirst du das haben. Klicken Sie auf **Weiter**.
 
-![Demo](./images/cja9.png)
+![demo](./images/cja9.png)
 
 ## 4.2.3 Personen-ID und Datenzuordnung
 
 ### Personen-ID
 
-Das Ziel besteht nun darin, sich diesen Datensätzen anzuschließen. Für jeden ausgewählten Datensatz wird ein Feld namens **Personen-ID**. Jeder Datensatz verfügt über ein eigenes Personen-ID-Feld.
+Das Ziel besteht nun darin, sich diesen Datensätzen anzuschließen. Für jeden ausgewählten Datensatz wird ein Feld namens **Personen-ID** angezeigt. Jeder Datensatz verfügt über ein eigenes Personen-ID-Feld.
 
-![Demo](./images/cja11.png)
+![demo](./images/cja11.png)
 
-Wie Sie sehen können, ist bei den meisten Benutzern automatisch die Personen-ID ausgewählt. Dies liegt daran, dass in jedem Schema in Adobe Experience Platform eine Primäre Kennung ausgewählt ist. Hier finden Sie beispielsweise das Schema für `Demo System - Event Schema for Call Center (Global v1.1)`, wo Sie sehen können, dass die Primäre Kennung auf `phoneNumber`.
+Wie Sie sehen können, ist bei den meisten Benutzern automatisch die Personen-ID ausgewählt. Dies liegt daran, dass in jedem Schema in Adobe Experience Platform eine Primäre Kennung ausgewählt ist. Hier ist beispielsweise das Schema für `Demo System - Event Schema for Call Center (Global v1.1)`, in dem die Primäre Kennung auf `phoneNumber` festgelegt ist.
 
-![Demo](./images/cja13.png)
+![demo](./images/cja13.png)
 
 Sie können jedoch weiterhin beeinflussen, welche Kennung zum Zuordnen von Datensätzen für Ihre Verbindung verwendet wird. Sie können jede beliebige Kennung verwenden, die im mit Ihrem Datensatz verknüpften Schema konfiguriert ist. Klicken Sie auf das Dropdown-Menü, um die für jeden Datensatz verfügbaren IDs zu untersuchen.
 
-![Demo](./images/cja14.png)
+![demo](./images/cja14.png)
 
 Wie bereits erwähnt, können Sie für jeden Datensatz verschiedene Personen-IDs festlegen. Auf diese Weise können Sie verschiedene Datensätze aus mehreren Quellen in CJA zusammenführen. Stellen Sie sich vor, Sie würden NPS- oder Umfragedaten einbringen, die sehr interessant und hilfreich wären, um den Kontext und die Gründe zu verstehen, warum etwas passiert ist.
 
-Der Name des Felds Personen-ID ist nicht wichtig, solange der Wert in den Feldern Personen-ID übereinstimmt. Wenn die Personen-ID beispielsweise `email` in einem Datensatz und `emailAddress` in einem anderen und `dnb-bootcamp@adobe.com` denselben Wert für das Personen-ID-Feld in beiden Datensätzen hat, kann CJA die Daten zuordnen.
+Der Name des Felds Personen-ID ist nicht wichtig, solange der Wert in den Feldern Personen-ID übereinstimmt. Wenn beispielsweise die Personen-ID in einem Datensatz `email` und in einem anderen Datensatz `emailAddress` und `dnb-bootcamp@adobe.com` für das Personen-ID-Feld in beiden Datensätzen identisch ist, kann CJA die Daten zuordnen.
 
-Derzeit gibt es einige andere Einschränkungen, wie die Zuordnung des anonymen Verhaltens zu bekannt. Lesen Sie die häufig gestellten Fragen hier: [FAQs](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de).
+Derzeit gibt es einige andere Einschränkungen, wie die Zuordnung des anonymen Verhaltens zu bekannt. Lesen Sie die FAQs hier: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Daten mithilfe der Personen-ID zuordnen
 
-Nachdem Sie nun das Konzept der Zuordnung von Datensätzen mit der Personen-ID kennen, wählen Sie `email` als Personen-ID für jeden Datensatz.
+Nachdem Sie nun das Konzept der Zuordnung von Datensätzen mit der Personen-ID kennen, wählen wir für jeden Datensatz `email` als Personen-ID aus.
 
-![Demo](./images/cja15.png)
+![demo](./images/cja15.png)
 
 Gehen Sie zu jedem Datensatz, um die Personen-ID zu aktualisieren.
 
-![Demo](./images/cja12a.png)
+![demo](./images/cja12a.png)
 
-Füllen Sie nun das Feld Personen-ID aus, das die `email` in der Dropdown-Liste.
+Füllen Sie nun das Feld Personen-ID aus, das die `email` in der Dropdown-Liste auswählt.
 
-![Demo](./images/cja17.png)
+![demo](./images/cja17.png)
 
 Sobald Sie die drei Datensätze zugeordnet haben, können wir fortfahren.
 
-| Datensatz | Personen-ID |
+| datensatz | Personen-ID |
 | ----------------- |-------------| 
 | Demosystem - Ereignis-Datensatz für Website (Global v1.1) | E-Mail |
 | Demosystem - Profildatensatz für Treueprogramm (Global v1.1) | E-Mail |
@@ -118,16 +118,16 @@ Sie müssen außerdem sicherstellen, dass diese Optionen für jeden Datensatz ak
 - Alle neuen Daten importieren
 - Alle vorhandenen Daten aufstocken
 
-Klicken **Hinzufügen von Datensätzen**.
+Klicken Sie auf **Datensätze hinzufügen**.
 
-![Demo](./images/cja16.png)
+![demo](./images/cja16.png)
 
-Klicken **Speichern** und gehen Sie zur nächsten Übung.
-Nachdem Sie die **Verbindung** Es kann einige Stunden dauern, bis Ihre Daten in Customer Journey Analytics verfügbar sind.
+Klicken Sie auf **Speichern** und gehen Sie zur nächsten Übung.
+Nachdem Sie Ihre **Verbindung** erstellt haben, kann es einige Stunden dauern, bis Ihre Daten in Customer Journey Analytics verfügbar sind.
 
-![Demo](./images/cja20.png)
+![demo](./images/cja20.png)
 
-Nächster Schritt: [4.3 Datenansicht erstellen](./ex3.md)
+Nächster Schritt: [4.3 Eine Datenansicht erstellen](./ex3.md)
 
 [Zurück zum Benutzerfluss 4](./uc4.md)
 

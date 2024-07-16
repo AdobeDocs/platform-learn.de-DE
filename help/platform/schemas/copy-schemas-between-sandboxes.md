@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Kopieren von Schemata zwischen Sandboxes
 
-In diesem Video erfahren Sie, wie Sie mit der Export/Import-Schema-API ein Schema aus einer Sandbox in Adobe Experience Platform kopieren. Erstellen und testen Sie Ihre Schemas in Entwicklungs-Sandboxes und kopieren Sie sie dann in die Produktion. Weitere Informationen finden Sie unter [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
+In diesem Video erfahren Sie, wie Sie mit der Export/Import-Schema-API ein Schema aus einer Sandbox in Adobe Experience Platform kopieren. Erstellen und testen Sie Ihre Schemas in Entwicklungs-Sandboxes und kopieren Sie sie dann in die Produktion. Weitere Informationen finden Sie in der Dokumentation zu [Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) .
 
 >[!TIP]
 >

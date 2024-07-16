@@ -16,6 +16,6 @@ ht-degree: 34%
 
 # Tag-Eigenschaft erstellen
 
-Erfahren Sie, wie Sie Tag-Eigenschaften erstellen, um die Marketing-Tags auf Ihrer Website zu verwalten. Weitere Informationen finden Sie unter [properties](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=de) Dokumentation.
+Erfahren Sie, wie Sie Tag-Eigenschaften erstellen, um die Marketing-Tags auf Ihrer Website zu verwalten. Weitere Informationen finden Sie in der Dokumentation zu [properties](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=de) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)

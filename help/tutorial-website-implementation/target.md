@@ -5,14 +5,14 @@ solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
 source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '4445'
-ht-degree: 75%
+source-wordcount: '4252'
+ht-degree: 68%
 
 ---
 
 # Hinzufügen von Adobe Target
 
-In dieser Lektion implementieren wir die [Adobe Target-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=de) mit einer Seitenladeanforderung und benutzerdefinierten Parametern.
+In dieser Lektion implementieren wir die [Adobe Target-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html) mit einer Seitenladeanforderung und benutzerdefinierten Parametern.
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=de) ist die Adobe Experience Cloud-Lösung, die Ihnen all das bietet, was Sie benötigen, um die Erlebnisse Ihrer Kunden anzupassen und zu personalisieren, sodass Sie Umsätze auf Ihren Web- und mobilen Sites, in Apps, sozialen Medien und anderen digitalen Kanälen maximieren können.
 
@@ -22,7 +22,7 @@ In dieser Lektion implementieren wir die [Adobe Target-Erweiterung](https://exp
 >
 > * Platform launch (Client-seitig) ist jetzt **[!DNL tags]**
 > * Platform launch Server Side ist jetzt **[!DNL event forwarding]**
-> * Edge-Konfigurationen sind jetzt verfügbar **[!DNL datastreams]**
+> * Edge-Konfigurationen sind jetzt **[!DNL datastreams]**
 
 ## Lernziele
 
@@ -39,7 +39,7 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst die Lektionen in [Tags konfigurieren](create-a-property.md) und [Hinzufügen des ID-Dienstes](id-service.md).
+Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst die Lektionen in [Konfigurieren von Tags](create-a-property.md) und [Hinzufügen des ID-Dienstes](id-service.md) abschließen.
 
 ## Hinzufügen des Codeausschnitts zur Vorab-Ausblendung in Target
 
@@ -84,7 +84,7 @@ Dies wurde bereits auf der Site „Luma“ durchgeführt, aber lassen Sie uns fo
 
 Öffnen Sie die Beispielseite und fügen Sie sie direkt vor Ihrem Tag-Einbettungscode ein, wie unten dargestellt (keine Sorge, wenn die Zeilennummern unterschiedlich sind). In diesem Screenshot wurde das vorab ausgeblendete Snippet minimiert:
 
-![Bewegen des Mauszeigers über die Erweiterung](images/target-prehidingSnippet.png)
+![Bewegen Sie den Mauszeiger über die Erweiterung](images/target-prehidingSnippet.png)
 
 Laden Sie Ihre Musterseite erneut. Sie werden feststellen, dass die Seite drei Sekunden lang ausgeblendet wird, bevor sie angezeigt wird. Dieses Verhalten ist temporär und verschwindet, nachdem Sie Target bereitgestellt haben. Das Verhalten der Vorab-Ausblendung wird durch zwei Konfigurationen am Ende des Codeausschnitts zur Vorab-Ausblendung gesteuert. Diese können angepasst werden, jedoch empfiehlt es sich in der Regel, die Standardeinstellungen beizubehalten:
 
@@ -95,7 +95,7 @@ Weitere Informationen sowie den nicht minimierten Codeausschnitt zur Vorab-Ausbl
 
 ## Hinzufügen der Target-Erweiterung
 
-Die Adobe Target-Erweiterung unterstützt clientseitige Implementierungen mithilfe des JavaScript SDK von Target für das moderne Web: at.js. Kunden, die weiterhin die ältere Target-Bibliothek mbox.js verwenden, [sollte auf at.js 2.x aktualisieren](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) , um Tags zu verwenden.
+Die Adobe Target-Erweiterung unterstützt clientseitige Implementierungen mithilfe des JavaScript SDK von Target für das moderne Web: at.js. Kunden, die weiterhin die ältere Target-Bibliothek mbox.js, [verwenden, sollten ein Upgrade auf at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) vornehmen, um Tags verwenden zu können.
 
 Die Target v2-Erweiterung besteht aus zwei Hauptteilen:
 
@@ -110,15 +110,15 @@ In dieser ersten Übung werden wir die Erweiterung hinzufügen und die Konfigura
 
 **Hinzufügen der Erweiterung**
 
-1. Navigieren Sie zu **[!UICONTROL Erweiterungen > Katalog]**.
+1. Navigieren Sie zu **[!UICONTROL Erweiterungen > Katalog]** .
 1. Geben Sie `target` in den Filter ein, um die Adobe Target-Erweiterungen schnell zu finden. Es gibt zwei Erweiterungen: Adobe Target und Adobe Target v2. In diesem Tutorial wird die Version v2 der Erweiterung verwendet, die die neueste Version von at.js (derzeit 2.x) verwendet, die sowohl für traditionelle Websites als auch für Einzelseitenanwendungen (SPA) ideal ist.
-1. Klicken Sie auf **[!UICONTROL Installieren]**.
+1. Klicken Sie auf **[!UICONTROL Installieren]** .
 
    ![Installieren der Target v2-Erweiterung](images/target-installExtension.png)
 
 1. Wenn Sie die Erweiterung hinzufügen, werden viele, aber nicht alle at.js-Einstellungen aus der Target-Oberfläche importiert, wie unten dargestellt. Eine Einstellung, die nicht importiert wird, ist die Zeitüberschreitung, die nach dem Hinzufügen der Erweiterung stets 3000 ms beträgt. Behalten Sie für das Tutorial die Standardeinstellungen bei. Beachten Sie, dass auf der linken Seite die at.js-Version angezeigt wird, die mit der aktuellen Version der Erweiterung geliefert wird.
 
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**
 
    ![Speichern der Erweiterung](images/target-saveExtension.png)
 
@@ -136,7 +136,7 @@ Sie können die `All Pages - Library Loaded`-Regel, die Sie in der Lektion [Hinz
 
 **Laden von Target**
 
-1. Navigieren Sie zu **[!UICONTROL Regeln]** in der linken Navigation und klicken Sie dann auf `All Pages - Library Loaded` zum Öffnen des Regeleditors
+1. Navigieren Sie zu **[!UICONTROL Regeln]** im linken Navigationsbereich und klicken Sie auf `All Pages - Library Loaded` , um den Regeleditor zu öffnen.
 
    ![Regel „Alle Seiten öffnen - Bibliothek geladen“](images/target-editRule.png)
 
@@ -144,7 +144,7 @@ Sie können die `All Pages - Library Loaded`-Regel, die Sie in der Lektion [Hinz
 
    ![Auf das Plussymbol klicken, um eine neue Aktion hinzuzufügen](images/target-addLoadTargetAction.png)
 
-1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Target v2]** aus.
+1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Target v2]** aus
 
 1. Wählen Sie **[!UICONTROL Aktionstyp > Target laden]** aus.
 
@@ -160,7 +160,7 @@ Mit der hinzugefügten `Load Target`-Aktion wird at.js auf der Seite geladen. Es
 
    ![Auf das Plussymbol klicken, um eine weitere Aktion hinzuzufügen](images/target-addGlobalMboxAction.png)
 
-1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Target v2]** aus.
+1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Target v2]** aus
 
 1. Wählen Sie **[!UICONTROL Aktionstyp > Seitenladeanforderung auslösen]** aus.
 
@@ -172,13 +172,13 @@ Mit der hinzugefügten `Load Target`-Aktion wird at.js auf der Seite geladen. Es
 
 1. Die neue Aktion wird in der Reihenfolge nach der `Load Target`-Aktion hinzugefügt und die Aktionen werden in dieser Reihenfolge ausgeführt. Sie können die Aktionen per Drag&amp;Drop verschieben, um die Reihenfolge neu anzuordnen. In diesem Szenario muss `Load Target` allerdings vor `Fire Page Load Request` stehen.
 
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**
 
    ![Speichern und erstellen](images/target-fireGlobalMbox-saveAndBuild.png)
 
 ### Überprüfen der Seitenladeanforderung
 
-Jetzt haben Sie die Target v2-Erweiterung hinzugefügt und den `Load Target` und `Fire Page Load Request` -Aktionen verwenden, sollte auf allen Seiten, auf denen Ihre Tag-Eigenschaft verwendet wird, eine Seitenladeanforderung durchgeführt werden.
+Nachdem Sie die Target v2-Erweiterung hinzugefügt und die Aktionen `Load Target` und `Fire Page Load Request` ausgelöst haben, sollte eine Seitenladeanforderung für alle Seiten vorhanden sein, auf denen Ihre Tag-Eigenschaft verwendet wird.
 
 **Überprüfen der Aktionen „Target Laden“ und „Seitenladeanforderung auslösen“**
 
@@ -186,7 +186,7 @@ Jetzt haben Sie die Target v2-Erweiterung hinzugefügt und den `Load Target` und
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft zu *Ihre* Entwicklungsumgebung, wie im Abschnitt [frühere Lektion](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
 
    ![Ihre Tags-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -212,10 +212,10 @@ Die Übergabe von Parametern in der Target-Anforderung ermöglicht leistungsstar
 
 1. `Add Params to All Requests` fügt Parameter in allen Target-Anforderungen hinzufügt, z. B. in der Seitenladeanforderung und zusätzlichen Anforderungen, die von Aktionen mit benutzerdefiniertem Code ausgeführt oder auf Ihrer Site fest codiert wurden (entspricht der [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html)-Methode)
 
-Diese Aktionen können *vor* der `Load Target`-Aktion verwendet werden und basierend auf Ihren Regelkonfigurationen auf verschiedenen Seiten unterschiedliche Parameter festlegen. Verwenden Sie die Funktion zur Regelsortierung, die Sie beim Festlegen von Kunden-IDs mit dem ID-Dienst verwendet haben, um zusätzliche Parameter für das `Library Loaded`-Ereignis festzulegen, bevor die Regel die Seitenladeanforderung auslöst.
+Diese Aktionen können *vor* der `Load Target`-Aktion verwendet werden und basierend auf Ihren Regelkonfigurationen auf verschiedenen Seiten unterschiedliche Parameter festlegen. Verwenden Sie die Funktion zur Regelsortierung, die Sie beim Festlegen von Kunden-IDs mit dem Identity Service verwendet haben, um zusätzliche Parameter für das `Library Loaded`-Ereignis festzulegen, bevor die Regel die Seitenladeanforderung auslöst.
 >[!TIP]
 >
->Da die meisten Implementierungen die Seitenladeanforderung für die Aktivitätsbereitstellung verwenden, reicht es in der Regel aus, nur die `Add Params to Page Load Requests`-Aktion zu verwenden.
+>Da die meisten Implementierungen die Seitenladeanforderung für die Aktivitätsbereitstellung verwenden, reicht es in der Regel aus, nur die Aktion `Add Params to Page Load Requests` zu verwenden.
 
 ### Anforderungsparameter (mbox)
 
@@ -225,7 +225,7 @@ Fügen wir das `Page Name`-Datenelement, das wir zuvor in der Lektion [Hinzufüg
 
 **Hinzufügen von Anforderungsparametern**
 
-1. Navigieren Sie zu **[!UICONTROL Regeln]** in der linken Navigation und klicken Sie dann auf `All Pages - Library Loaded` , um den Regeleditor zu öffnen.
+1. Navigieren Sie im linken Navigationsbereich zu **[!UICONTROL Regeln]** und klicken Sie dann auf `All Pages - Library Loaded` , um den Regeleditor zu öffnen.
 
    ![Regel „Alle Seiten öffnen - Bibliothek geladen“](images/target-editRule.png)
 
@@ -233,17 +233,17 @@ Fügen wir das `Page Name`-Datenelement, das wir zuvor in der Lektion [Hinzufüg
 
    ![Auf das Plussymbol klicken, um eine neue Aktion hinzuzufügen](images/target-addParamsAction.png)
 
-1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Target v2]** aus.
+1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Target v2]** aus
 
 1. Wählen Sie **[!UICONTROL Aktionstyp > Parameter zur Seitenladeanforderung hinzufügen]** aus.
 
-1. Geben Sie `pageName` als den **[!UICONTROL Namen]** ein.
+1. Geben Sie `pageName` als **[!UICONTROL Name]** ein.
 
 1. Klicken Sie auf ![Datenelementsymbol](images/icon-dataElement.png), um das Datenelement-Modal zu öffnen.
 
 1. Klicken Sie auf das `Page Name`- Datenelement.
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Auswählen]**.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Auswählen]** .
 
    ![Klicken Sie auf die Schaltfläche „Auswählen“](images/target-mboxParam-pageName.png)
 
@@ -253,7 +253,7 @@ Fügen wir das `Page Name`-Datenelement, das wir zuvor in der Lektion [Hinzufüg
 
 1. Klicken Sie auf den linken Rand der `Add Params to Page Load Request`-Aktion und ziehen Sie sie, um die Aktionen vor der `Fire Page Load Request`-Aktion neu anzuordnen (sie können vor oder nach `Load Target` sein).
 
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**
 
    ![Auf „In Bibliothek speichern und erstellen“ klicken](images/target-rearrangeActions.png)
 
@@ -291,15 +291,15 @@ Entitätsparameter sind spezielle Parameter, die aus drei Hauptgründen in [Reco
 1. Zur Erfassung des Besucherverhaltens für Empfehlungsalgorithmen, wie z. B. „Zuletzt angezeigte Produkte“ oder „Am häufigsten angezeigte Produkte“
 1. Zur Füllung des Recommendations-Katalogs. Recommendations enthält eine Datenbank aller Produkte oder Artikel auf Ihrer Website, damit sie im Empfehlungsangebot bereitgestellt werden können. Wenn Sie beispielsweise Produkte empfehlen, möchten Sie normalerweise Attribute wie den Produktnamen (`entity.name`) und ein Produktbild (`entity.thumbnailUrl`) anzeigen. Einige Kunden füllen ihren Katalog mithilfe von Backend-Feeds. Sie können jedoch auch mittels Entitätsparametern in Target-Anforderungen gefüllt werden.
 
-Sie müssen in diesem Tutorial keine Entitätsparameter übergeben, aber der Workflow ist mit dem identisch, was Sie zuvor bei der Übergabe des `pageName` Anforderungsparameter: Geben Sie dem Parameter einfach einen Namen mit dem Präfix &quot;entity.&quot; und ordnen Sie ihn dem relevanten Datenelement zu. Beachten Sie, dass einige häufig verwendete Entitäten über reservierte Namen verfügen, die verwendet werden müssen (z. B. entity.id für die Produkt-SKU). So würde es aussehen, wenn Entitätsparameter in der `Add Params to Page Load Request`-Aktion festgelegt werden:
+Sie müssen in diesem Tutorial keine Entitätsparameter übergeben, aber der Workflow ist identisch mit den Schritten zur Übergabe des Anforderungsparameters `pageName` - geben Sie dem Parameter einfach einen Namen mit dem Präfix &quot;entity.&quot; und ordnen Sie ihn dem relevanten Datenelement zu. Beachten Sie, dass einige häufig verwendete Entitäten über reservierte Namen verfügen, die verwendet werden müssen (z. B. entity.id für die Produkt-SKU). So würde es aussehen, wenn Entitätsparameter in der `Add Params to Page Load Request`-Aktion festgelegt werden:
 
 ![Hinzufügen von Entitätsparametern](images/target-entityParameters.png)
 
 ### Hinzufügen von Kunden-ID-Parametern
 
-Die Erfassung von Kunden-IDs mit Adobe Experience Platform Identity Service erleichtert den Import von CRM-Daten in Target mithilfe der Funktion [Kundenattribute](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=de) in Adobe Experience Cloud. Sie ermöglicht auch die [geräteübergreifende Besucherzuordnung](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), sodass Sie eine einheitliche Benutzererfahrung gewährleisten können, wenn Ihre Kunden zwischen ihren Laptops und ihren Mobilgeräten wechseln.
+Die Erfassung von Kunden-IDs mit Adobe Experience Platform Identity Service erleichtert den Import von CRM-Daten in Target mithilfe der Funktion [Kundenattribute](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) in Adobe Experience Cloud. Sie ermöglicht auch die [geräteübergreifende Besucherzuordnung](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), sodass Sie eine einheitliche Benutzererfahrung gewährleisten können, wenn Ihre Kunden zwischen ihren Laptops und ihren Mobilgeräten wechseln.
 
-Es ist unbedingt erforderlich, die Kunden-ID in der `Set Customer IDs`-Aktion des ID-Dienstes festzulegen, bevor die Seitenladeanforderung ausgelöst wird. Zu diesem Zweck müssen Sie die folgenden Funktionen auf Ihrer Site bereitstellen:
+Es ist unbedingt erforderlich, die Kunden-ID in der `Set Customer IDs`-Aktion des Identity Service festzulegen, bevor die Seitenladeanforderung ausgelöst wird. Zu diesem Zweck müssen Sie die folgenden Funktionen auf Ihrer Site bereitstellen:
 
 * Die Kunden-ID muss auf der Seite vor den Tags Einbettungscode verfügbar sein.
 * Die Adobe Experience Platform Identity Service-Erweiterung muss installiert werden.
@@ -316,7 +316,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft zu *Ihre* Entwicklungsumgebung, wie im Abschnitt [frühere Lektion](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
 
    ![Ihre Tags-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -341,34 +341,34 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 >[!WARNING]
 >
->Mit Adobe Experience Platform Identity Service können Sie mehrere IDs an den Service senden. Es wird jedoch nur die erste ID an Target gesendet.
+>Mit dem Adobe Experience Platform Identity-Dienst können Sie mehrere IDs an den Dienst senden. Es wird jedoch nur die erste ID an Target gesendet.
 
 ### Hinzufügen des Parameters „Eigenschafts-Token“
 
 >[!NOTE]
 >
->Dies ist eine optionale Übung für Target Premium-Kunden.
+>Dies ist eine optionale Übung für Target Premium-Kunden.
 
-Das Eigenschafts-Token ist ein reservierter Parameter, der mit der Target Premium-Funktion für [Enterprise-Benutzerberechtigungen](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=de) verwendet wird. Er wird zur Definition verschiedener digitaler Eigenschaften verwendet, damit unterschiedlichen Mitgliedern einer Experience Cloud-Organisation verschiedene Berechtigungen für die einzelnen Eigenschaften zugewiesen werden können. Sie möchten z. B., dass eine Gruppe von Benutzern Target-Aktivitäten auf Ihrer Website, aber nicht in Ihrer mobilen Anwendung einrichten kann.
+Das Eigenschafts-Token ist ein reservierter Parameter, der mit der Target Premium-Funktion für [Enterprise-Benutzerberechtigungen](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) verwendet wird. Er wird zur Definition verschiedener digitaler Eigenschaften verwendet, damit unterschiedlichen Mitgliedern einer Experience Cloud-Organisation verschiedene Berechtigungen für die einzelnen Eigenschaften zugewiesen werden können. Sie möchten z. B., dass eine Gruppe von Benutzern Target-Aktivitäten auf Ihrer Website, aber nicht in Ihrer mobilen Anwendung einrichten kann.
 
 Target-Eigenschaften entsprechen Tag-Eigenschaften und Analytics-Report Suites. Ein Unternehmen mit mehreren Marken, Websites und Marketingteams kann für jede Website oder mobile App eine andere Target-Eigenschaft, Tag-Eigenschaft und Analytics-Report Suite verwenden. Die Eigenschaften von Tags werden durch ihre Einbettungscodes unterschieden, Analytics-Report Suites durch ihre Report Suite-ID und Target-Eigenschaften durch ihren Eigenschafts-Token-Parameter.
 
 
-Das Eigenschafts-Token muss mithilfe einer benutzerdefinierten Code-Aktion in -Tags mit der `targetPageParams()` -Funktion. Wenn Sie mehrere Sites mit unterschiedlichen at_property -Werten mit einer einzelnen Tag-Eigenschaft implementieren, können Sie den at_property -Wert über ein Datenelement verwalten.
+Das Eigenschafts-Token muss mithilfe einer benutzerdefinierten Code-Aktion in Tags mit der Funktion `targetPageParams()` implementiert werden. Wenn Sie mehrere Sites mit unterschiedlichen at_property -Werten mit einer einzelnen Tag-Eigenschaft implementieren, können Sie den at_property -Wert über ein Datenelement verwalten.
 
 Im Folgenden finden Sie eine optionale Übung für Target Premium-Kunden, wenn Sie ein Eigenschafts-Token in Ihrer Tutorial-Eigenschaft implementieren möchten:
 
 1. Öffnen Sie auf einer separaten Registerkarte die Target-Benutzeroberfläche.
 
-1. Navigieren Sie zu **[!UICONTROL Administration > Eigenschaften]**
+1. Navigieren Sie zu **[!UICONTROL Administration > Eigenschaften]** .
 
-1. Identifizieren Sie die Eigenschaft, die Sie verwenden möchten, und klicken Sie auf **[!UICONTROL &lt;/>]** (oder erstellen Sie eine neue Eigenschaft)
+1. Identifizieren Sie die Eigenschaft, die Sie verwenden möchten, und klicken Sie auf &quot;**[!UICONTROL &lt;/>]**&quot;(oder erstellen Sie eine neue Eigenschaft)
 
-1. Kopieren Sie das Codefragment im `<script></script>` in die Zwischenablage
+1. Kopieren Sie das Codefragment innerhalb der `<script></script>` in die Zwischenablage.
 
    ![Abrufen des Eigenschafts-Tokens über die Adobe Target-Oberfläche](images/target-addATProperty-targetProperties.png)
 
-1. Navigieren Sie auf der Registerkarte Tags zur **[!UICONTROL Regeln]** in der linken Navigation und klicken Sie dann auf `All Pages - Library Loaded` , um den Regeleditor zu öffnen.
+1. Navigieren Sie auf der Registerkarte &quot;Tags&quot;zu **[!UICONTROL Regeln]** im linken Navigationsbereich und klicken Sie dann auf `All Pages - Library Loaded` , um den Regeleditor zu öffnen.
 
    ![Regel „Alle Seiten öffnen - Bibliothek geladen“](images/target-editRule.png)
 
@@ -376,22 +376,22 @@ Im Folgenden finden Sie eine optionale Übung für Target Premium-Kunden, wenn 
 
    ![Öffnen Sie die Aktion „Parameter zur Seitenladeanforderung hinzufügen“](images/target-openCustomCodeAction.png)
 
-1. Öffnen Sie den Code-Editor und fügen Sie den Code aus der Target-Oberfläche ein, die die `targetPageParams()` function
-1. Klicken Sie auf die **[!UICONTROL Speichern]** button
+1. Öffnen Sie den Code-Editor und fügen Sie den Code aus der Target-Oberfläche ein, die die Funktion `targetPageParams()` enthält.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]** .
 
    ![Öffnen Sie die Aktion „Parameter zur Seitenladeanforderung hinzufügen“](images/target-addATProperty.png)
 
-1. Überprüfen Sie die **[!UICONTROL Globale Ausführung]** Box so aus `targetPageParams()` im globalen Geltungsbereich deklariert
+1. Aktivieren Sie die Option **[!UICONTROL Global ausführen]** , damit `targetPageParams()` im globalen Gültigkeitsbereich deklariert wird.
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
 
    ![Klicken Sie auf Änderungen beibehalten](images/target-addATProperty-keepChanges.png)
 
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**
    ![Klicken Sie auf „Speichern und in Bibliothek erstellen“](images/target-addATProperty-save.png)
 
 >[!WARNING]
 >
->Wenn Sie versuchen, `at_property` -Parameter über die **[!UICONTROL Parameter zur Seitenladeanforderung hinzufügen]** -Aktion verwenden, wird der -Parameter in der Netzwerkanforderung aufgefüllt, der Visual Experience Composer (VEC) von Target kann ihn jedoch beim Laden der Seite nicht automatisch erkennen. Immer ausfüllen `at_property` mithilfe der `targetPageParams()` -Funktion in einer Aktion mit benutzerspezifischem Code verwenden.
+>Wenn Sie versuchen, den Parameter `at_property` über die Aktion **[!UICONTROL Parameter zur Seitenladeanforderung hinzufügen]** hinzuzufügen, wird der Parameter in der Netzwerkanforderung aufgefüllt, aber der Visual Experience Composer (VEC) von Target kann ihn beim Laden der Seite nicht automatisch erkennen. Füllen Sie immer `at_property` mit der Funktion `targetPageParams()` in einer Aktion mit benutzerspezifischem Code aus.
 
 #### Überprüfen des Eigenschafts-Tokens
 
@@ -400,7 +400,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 **Überprüfen des Eigenschafts-Token-Parameters**
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft zu *Ihre* Entwicklungsumgebung, wie im Abschnitt [frühere Lektion](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
 
    ![Ihre Tags-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -430,7 +430,7 @@ Die Bestellbestätigungsanforderung ist ein spezieller Anforderungstyp, mit dem 
 
 Die Best Practice ist, eine Bestellbestätigungsanforderung in allen Bestelltrichtern zu verwenden, auch auf Nicht-Einzelhandels-Sites. Sites zur Lead-Generierung verfügen beispielsweise in der Regel über Lead-Trichter, bei denen am Ende eine eindeutige „Lead-ID“ generiert wird. Auf diesen Sites sollte eine Bestellanforderung mit einem statischen Wert (z. B. „1“) für orderTotal implementiert werden.
 
-Kunden, die die Integration von Analytics for Target (A4T) für den Großteil ihrer Berichterstellung verwenden, können auch die Bestellanforderung bei Verwendung von Automated Personalization-Aktivitäten implementieren, die A4T nicht unterstützen. Darüber hinaus ist die Bestellanforderung ein wichtiges Element bei der Implementierung von Recommendations, die Algorithmen auf Basis des Kaufverhaltens aktivieren. Aktuelle Informationen zur A4T-Unterstützung finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
+Kunden, die die Integration von Analytics for Target (A4T) für den Großteil ihrer Berichterstellung verwenden, können auch die Bestellanforderung bei Verwendung von Automated Personalization-Aktivitäten implementieren, die A4T nicht unterstützen. Darüber hinaus ist die Bestellanforderung ein wichtiges Element in Recommendations-Implementierungen, das Algorithmen ermöglicht, die auf dem Kaufverhalten basieren. Aktuelle Informationen zur A4T-Unterstützung finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
 Die Bestellbestätigungsanforderung sollte über eine Regel ausgelöst werden, die nur auf Ihrer Bestellbestätigungsseite oder im entsprechenden Bestellbestätigungsereignis ausgelöst wird. Häufig kann sie mit einer Regel kombiniert werden, die das Kaufereignis von Adobe Analytics festlegt. Sie muss mithilfe einer Aktion vom Typ „Benutzerdefinierter Code:“ der Core-Erweiterung konfiguriert werden, indem Sie über die entsprechenden Datenelemente orderId, orderTotal und productPurchasedId festlegen.
 
@@ -438,27 +438,27 @@ Fügen wir die Datenelemente und die Regel hinzu, die wir benötigen, um eine Au
 
 **Erstellen des Datenelements für die Bestell-ID**
 
-1. Klicks **[!UICONTROL Datenelemente]** in der linken Navigation
-1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**.
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Datenelemente]** .
+1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**
 1. Benennen Sie das Datenelement `Order Id`.
 1. Wählen Sie **[!UICONTROL Datenelementtyp > JavaScript-Variable]** aus.
 1. Verwenden Sie `digitalData.cart.orderId` als `JavaScript variable name`.
 1. Aktivieren Sie die Option `Clean text`.
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**.
-(Wir werden die Bibliothek erst dann erstellen, wenn wir alle Änderungen für die Auftragsbestätigungsanforderung vorgenommen haben.)
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**
+(Wir werden die Bibliothek erst erstellen, wenn wir alle Änderungen für die Bestellbestätigungsanforderung vorgenommen haben.)
 
 **Erstellen des Datenelements für den Warenkorbbetrag**
 
-1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**.
+1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**
 1. Benennen Sie das Datenelement `Cart Amount`.
 1. Wählen Sie **[!UICONTROL Datenelementtyp > JavaScript-Variable]** aus.
 1. Verwenden Sie `digitalData.cart.cartAmount` als `JavaScript variable name`.
 1. Aktivieren Sie die Option `Clean text`.
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**
 
 **Erstellen des Datenelements für Warenkorb-SKUs (Target)**
 
-1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**.
+1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**
 1. Benennen Sie das Datenelement `Cart SKUs (Target)`.
 1. Wählen Sie **[!UICONTROL Datenelementtyp > Benutzerdefinierter Code]** aus.
 1. Für Target müssen die SKUs in Form einer kommagetrennten Liste vorliegen. Dieser benutzerdefinierte Code formatiert das Daten-Layer-Array im richtigen Format. Fügen Sie im Editor für benutzerdefinierten Code Folgendes ein:
@@ -476,20 +476,20 @@ Fügen wir die Datenelemente und die Regel hinzu, die wir benötigen, um eine Au
 
 1. Aktivieren Sie die Option `Force lowercase value`.
 1. Aktivieren Sie die Option `Clean text`.
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**
 
 Nun müssen wir eine Regel erstellen, um die Auftragsbestätigungsanforderung mit diesen Datenelementen als Parameter auf der Bestellbestätigungsseite auszulösen.
 
 **Erstellen der Regel für die Auftragsbestätigungsseite**
 
-1. Klicks **[!UICONTROL Regeln]** in der linken Navigation
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Regeln]** .
 1. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**
 1. Geben Sie einen Namen für die Regel ein `Order Confirmation Page - Library Loaded - 60`.
-1. Klicken Sie auf **[!UICONTROL Ereignisse > Hinzufügen]**.
+1. Klicken Sie auf **[!UICONTROL Ereignisse > Hinzufügen]** .
    1. Wählen Sie **[!UICONTROL Ereignistyp > Bibliothek geladen (Seitenanfang)]** aus.
-   1. under **[!UICONTROL Erweiterte Optionen]**, ändern Sie die `Order` nach `60` damit sie nach der `Load Target` -Aktion (die in unserer `All Pages - Library Loaded` Regel, `Order` auf `50`)
+   1. Ändern Sie unter **[!UICONTROL Erweiterte Optionen]** die `Order` in `60`, sodass sie nach der Aktion `Load Target` ausgelöst wird (in unserer Regel `All Pages - Library Loaded`, in der `Order` auf `50` festgelegt ist).
    1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
-1. Klicken Sie auf **[!UICONTROL Bedingungen > Hinzufügen]**.
+1. Klicken Sie auf **[!UICONTROL Bedingungen > Hinzufügen]** .
    1. Wählen Sie **[!UICONTROL Bedingungstyp > Pfad ohne Abfragezeichenfolge]** aus.
    1. Geben Sie für `Path equals` `thank-you.html` ein.
    1. Schalten Sie die Regex-Option ein, um die Logik von `equals` in `contains` zu ändern. Sie können die `Test`-Funktion verwenden, um zu bestätigen, dass der Test mit dieser URL absolviert wird: `https://luma.enablementadobe.com/content/luma/us/en/user/checkout/order/thank-you.html`
@@ -497,9 +497,9 @@ Nun müssen wir eine Regel erstellen, um die Auftragsbestätigungsanforderung mi
       ![Platzhalterwerte für Vor- und Nachnamen eingeben](images/target-orderConfirm-test.png)
 
    1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
-1. Klicken Sie auf **[!UICONTROL Aktionen > Hinzufügen]**.
-   1. Wählen Sie **[!UICONTROL Aktionstyp > Benutzerdefinierter Code]**.
-   1. Klicken Sie auf **[!UICONTROL Editor öffnen]**.
+1. Klicken Sie auf **[!UICONTROL Aktionen > Hinzufügen]** .
+   1. Wählen Sie **[!UICONTROL Aktionstyp > Benutzerdefinierter Code]** aus.
+   1. Klicken Sie auf **[!UICONTROL Editor öffnen]**
    1. Fügen Sie den folgenden Code in das `Edit Code`-Modal ein.
 
       ```javascript
@@ -522,9 +522,9 @@ Nun müssen wir eine Regel erstellen, um die Auftragsbestätigungsanforderung mi
       });
       ```
 
-   1. Klicken Sie auf **[!UICONTROL Speichern]**, um den benutzerdefinierten Code zu speichern.
-   1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**, um die Aktion beizubehalten.
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**.
+   1. Klicken Sie auf **[!UICONTROL Speichern]** , um den benutzerspezifischen Code zu speichern.
+   1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]** , um die Aktion beizubehalten.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**
 
 #### Überprüfen der Bestellbestätigungsanforderung
 
@@ -532,7 +532,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft zu *Ihre* Entwicklungsumgebung, wie im Abschnitt [frühere Lektion](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
 
    ![Ihre Tags-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -564,8 +564,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 Es gibt nur wenige Fälle, in denen Sie andere Target-Anforderungen als die Seitenladeanforderung und die Bestellbestätigungsanforderung stellen müssen. Manchmal werden wichtige Daten, die Sie für die Personalisierung verwenden möchten, nicht vor den Tag-Einbettungscodes auf der Seite definiert. Sie können am Ende der Seite fest codiert sein oder von einer asynchronen API-Anfrage zurückgegeben werden. Diese Daten können mit einer zusätzlichen Anfrage an Target gesendet werden. Es ist jedoch nicht optimal, diese Anfrage für die Inhaltsbereitstellung zu verwenden, da die Seite bereits sichtbar ist. Diese Daten können verwendet werden, um das Besucherprofil zur späteren Verwendung anzureichern (mithilfe von Profilparametern) oder um den Recommendations-Katalog zu füllen.
 
-Unter diesen Umständen verwenden Sie die Aktion mit benutzerdefiniertem Code in der Core-Erweiterung, um eine Anforderung mit den Methoden [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) und [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html)
-auszulösen. Dieser Vorgang ähnelt den Schritten sehr, die Sie in der [Bestellbestätigungsanforderung](#order-confirmation-request) durchgeführt haben. Sie verwenden einfach einen anderen Anforderungsnamen und nicht die speziellen Bestellparameter. Denken Sie daran, die **[!UICONTROL Target laden]**-Aktion zu verwenden, bevor Sie Target-Anforderungen aus benutzerdefiniertem Code durchführen.
+Unter diesen Umständen verwenden Sie die Aktion &quot;Benutzerspezifischer Code&quot;in der Haupterweiterung, um eine Anfrage mit den Methoden [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) und [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) auszulösen. Dies ähnelt sehr den Schritten, die Sie gerade in der [Bestellbestätigungsanforderung](#order-confirmation-request) durchgeführt haben. Sie verwenden lediglich einen anderen Anforderungsnamen und nicht die speziellen Bestellparameter. Stellen Sie sicher, dass Sie die Aktion **[!UICONTROL Target laden]** verwenden, bevor Sie Target-Anforderungen aus benutzerdefiniertem Code durchführen.
 
 ## Bibliothekskopf- und -fußzeile
 
@@ -582,4 +581,4 @@ Weitere Informationen zu Anwendungsfällen für benutzerdefinierte Kopf- und Fu�
 * [Implementierung von dataProviders zur Integration von Drittanbieterdaten in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
 * [Verwenden von Antwort-Token und benutzerspezifischen at.js-Ereignissen mit Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
 
-[Weiter mit „Hinzufügen von Adobe Analytics“ >](analytics.md)
+[Weiter mit &quot;Adobe Analytics hinzufügen&quot;>](analytics.md)

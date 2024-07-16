@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Einrichten von kundenverwalteten Schlüsseln (CMK)
 
-Verwalten Sie die Verschlüsselung der Ruhezeit mit Ihren eigenen Verschlüsselungsschlüsseln. Weitere Informationen finden Sie unter [Dokumentation zu kundenverwalteten Schlüsseln](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
+Verwalten Sie die Verschlüsselung der Ruhezeit mit Ihren eigenen Verschlüsselungsschlüsseln. Weitere Informationen finden Sie in der Dokumentation zu von Kunden verwalteten Schlüsseln ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).[
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on)
 

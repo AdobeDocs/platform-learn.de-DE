@@ -11,8 +11,8 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 46861546-6483-4997-98b7-1d3addef65dd
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 4%
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Dieses Tutorial wurde erstellt, um ein bestimmtes Bootcamp-Format zu vereinfachen. Es verwendet bestimmte Systeme und Konten, auf die Sie möglicherweise keinen Zugriff haben. Auch ohne Zugriff können Sie noch viel lernen, indem Sie diesen sehr detaillierten Inhalt durchlesen. Wenn Sie an einem Bootcamp teilnehmen und Ihre Zugangsdaten benötigen, wenden Sie sich an Ihren Kundenbetreuer, der Ihnen die erforderlichen Informationen zur Verfügung stellt.
+>Dieses Tutorial wurde erstellt, um ein bestimmtes Bootcamp-Format zu vereinfachen. Es verwendet bestimmte Systeme und Konten, auf die Sie möglicherweise keinen Zugriff haben. Auch ohne Zugriff können Sie noch viel lernen, indem Sie diesen sehr detaillierten Inhalt durchlesen. Wenn Sie an einem Bootcamp teilnehmen und Ihre Zugangsdaten benötigen, wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, der Ihnen die erforderlichen Informationen zur Verfügung stellt.
 
 ## Übungen
 
-[3.1 Verwenden der App und Trigger eines Beacon-Eintrags](./ex1.md)
+[3.1 Verwenden der mobilen App und Trigger eines Beacon-Eintrags](./ex1.md)
 
 In dieser Übung erfahren Sie, wie Sie ein Ereignis konfigurieren.
 

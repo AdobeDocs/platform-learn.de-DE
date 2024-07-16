@@ -5,14 +5,14 @@ solution: Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '3891'
-ht-degree: 83%
+source-wordcount: '3827'
+ht-degree: 69%
 
 ---
 
 # Hinzufügen von Adobe Analytics
 
-In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de) und erstellen Regeln, um Daten an Adobe Analytics zu senden.
+In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) und erstellen Regeln, um Daten an Adobe Analytics zu senden.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=de) ist eine branchenführende Lösung, mit der Sie Ihre Kunden besser verstehen und Ihr Geschäft mit Customer Intelligence steuern können.
 
@@ -20,10 +20,9 @@ In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge-Konfigurationen sind jetzt verfügbar **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
-
+> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
 
@@ -40,7 +39,7 @@ Es gibt viele Elemente, die für Analytics in -Tags implementiert werden können
 
 ## Voraussetzungen
 
-Sie hätten die Lektionen in [Tags konfigurieren](create-a-property.md) und [Hinzufügen des ID-Dienstes](id-service.md).
+Sie sollten die Lektionen in [Konfigurieren von Tags](create-a-property.md) und [Hinzufügen des ID-Dienstes](id-service.md) bereits abgeschlossen haben.
 
 Darüber hinaus benötigen Sie mindestens eine Report Suite-ID sowie Ihren Trackingserver. Wenn Sie nicht über eine Report Suite für Tests/Entwicklung verfügen, die Sie für dieses Tutorial verwenden können, erstellen Sie eine. Weitere Hilfestellung und Anweisungen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html?lang=de). Sie können Ihren Trackingserver aus Ihrer aktuellen Implementierung abrufen oder bei Ihrem Adobe-Berater oder Kundenbetreuer erfragen.
 
@@ -56,52 +55,52 @@ Die Analytics-Erweiterung besteht aus zwei Hauptteilen:
 
 **Hinzufügen der Analytics-Erweiterung**
 
-1. Navigieren Sie zu **[!UICONTROL Erweiterungen > Katalog]**.
+1. Navigieren Sie zu **[!UICONTROL Erweiterungen > Katalog]** .
 1. Suchen Sie nach der Adobe Analytics-Erweiterung.
-1. Klicken Sie auf **[!UICONTROL Installieren]**.
+1. Klicken Sie auf **[!UICONTROL Installieren]** .
 
    ![Installieren der Analytics-Erweiterung](images/analytics-catalog-install.png)
 
-1. under [!UICONTROL Bibliotheksverwaltung > Report Suites]Geben Sie die Report Suite-IDs ein, die Sie für jede Tag-Umgebung verwenden möchten. Wenn Ihre Benutzer Zugriff auf Adobe Analytics haben, beachten Sie, dass beim Eingeben des Felds eine vorab ausgefüllte Liste aller Report Suites angezeigt wird. (In diesem Tutorial können Sie eine Report Suite für alle Umgebungen verwenden. Doch in der Praxis sollten Sie verschiedene Report Suites verwenden, wie in der Abbildung unten gezeigt.)
+1. Geben Sie unter [!UICONTROL Bibliotheksverwaltung > Report Suites] die Report Suite-IDs ein, die Sie für jede Tag-Umgebung verwenden möchten. Wenn Ihre Benutzer Zugriff auf Adobe Analytics haben, beachten Sie, dass beim Eingeben des Felds eine vorab ausgefüllte Liste aller Report Suites angezeigt wird. (In diesem Tutorial können Sie eine Report Suite für alle Umgebungen verwenden. Doch in der Praxis sollten Sie verschiedene Report Suites verwenden, wie in der Abbildung unten gezeigt.)
 
    ![Report Suite-IDs eingeben](images/analytics-config-reportSuite.png)
 
    >[!TIP]
    >
-   >Es wird empfohlen, die Option [!UICONTROL Bibliothek für mich verwalten] als die Einstellung für die [!UICONTROL Bibliotheksverwaltung] zu verwenden, da die `AppMeasurement.js`-Bibliothek dadurch viel einfacher auf dem neuesten Stand gehalten werden kann.
+   >Es wird empfohlen, die Option &quot;[!UICONTROL Bibliothek für mich verwalten]&quot;als Einstellung &quot;[!UICONTROL Bibliotheksverwaltung]&quot;zu verwenden, da es wesentlich einfacher ist, die `AppMeasurement.js` -Bibliothek auf dem neuesten Stand zu halten.
 
-1. under [!UICONTROL Allgemein > Tracking-Server], geben Sie Ihren Trackingserver ein, z. B. `tmd.sc.omtrdc.net`. Geben Sie Ihren SSL-Trackingserver ein, wenn Ihre Site `https://` unterstützt.
+1. Geben Sie unter [!UICONTROL Allgemein > Tracking-Server] Ihren Tracking-Server ein, z. B. `tmd.sc.omtrdc.net`. Geben Sie Ihren SSL-Trackingserver ein, wenn Ihre Site `https://` unterstützt.
 
    ![Trackingserver eingeben](images/analytics-config-trackingServer.png)
 
-1. Im [!UICONTROL Abschnitt &quot;Globale Variablen&quot;], unter [!UICONTROL Zusätzliche Einstellungen], legen Sie die [!UICONTROL Seitenname] -Variablen mithilfe der `Page Name` Datenelement. Klicken Sie auf das Symbol ![Datenelementsymbol](images/icon-dataElement.png), um das Modal zu öffnen und das `Page Name`-Seitendatenelement auszuwählen.
+1. Legen Sie im Abschnitt [!UICONTROL Globale Variablen] unter [!UICONTROL Zusätzliche Einstellungen] die Variable [!UICONTROL Seitenname] mithilfe Ihres `Page Name` -Datenelements fest. Klicken Sie auf das Symbol ![Datenelementsymbol](images/icon-dataElement.png), um das Modal zu öffnen und das `Page Name`-Seitendatenelement auszuwählen.
 
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**
 
    ![Seitennamenvariable festlegen und speichern](images/analytics-extension-pageName.png)
 
 >[!NOTE]
 >
->Globale Variablen können in der Erweiterungskonfiguration oder in Regelaktionen festgelegt werden. Beachten Sie, dass beim Festlegen von Variablen in der Erweiterungskonfiguration die Datenschicht definiert werden muss *before* die Tag-Einbettungscodes.
+>Globale Variablen können in der Erweiterungskonfiguration oder in Regelaktionen festgelegt werden. Beachten Sie, dass beim Festlegen von Variablen in der Erweiterungskonfiguration die Datenschicht *vor* den Tag-Einbettungscodes definiert werden muss.
 
 ## Senden des Seitenansichts-Beacons
 
 Nun erstellen Sie eine Regel, die das Analytics-Beacon auslöst, das die in der Erweiterungskonfiguration festgelegte Variable [!UICONTROL Seitenname] sendet.
 
-Sie haben bereits die Regel &quot;Alle Seiten - Bibliothek geladen&quot;im [Hinzufügen von Datenelementen, Regeln und Bibliotheken](add-data-elements-rules.md) Lektion dieses Tutorials, das auf jeder Seite ausgelöst wird, wenn die Tag-Bibliothek geladen wird. You *can* Verwenden Sie diese Regel auch für Analytics. Bei dieser Einrichtung müssen jedoch alle im Analytics-Beacon verwendeten Datenschichtattribute vor den Tag-Einbettungscodes definiert werden. Um Daten flexibler erfassen zu können, erstellen Sie die neue Regel „Alle Seiten“, die bei „DOM bereit“ ausgelöst wird und wiederum das Analytics-Beacon aktiviert.
+Sie haben die Regel &quot;Alle Seiten - Bibliothek geladen&quot;bereits in der Lektion [Hinzufügen eines Datenelements, einer Regel und einer Bibliothek](add-data-elements-rules.md) dieses Tutorials erstellt, die auf jeder Seite ausgelöst wird, wenn die Tag-Bibliothek geladen wird. Sie *könnten* diese Regel auch für Analytics verwenden. Bei diesem Setup müssen jedoch alle im Analytics-Beacon verwendeten Datenschichtattribute vor den Tag-Einbettungscodes definiert werden. Um Daten flexibler erfassen zu können, erstellen Sie die neue Regel „Alle Seiten“, die bei „DOM bereit“ ausgelöst wird und wiederum das Analytics-Beacon aktiviert.
 
 **Senden des Seitenansichts-Beacons**
 
-1. Navigieren Sie zu **[!UICONTROL Regeln]** in der linken Navigation und klicken Sie dann auf **[!UICONTROL Regel hinzufügen]**
+1. Wechseln Sie zum Abschnitt **[!UICONTROL Regeln]** im linken Navigationsbereich und klicken Sie dann auf **[!UICONTROL Regel hinzufügen]** .
 
    ![Regel hinzufügen](images/analytics-addRule.png)
 
 1. Geben Sie einen Namen für die Regel ein `All Pages - DOM Ready`.
-1. Klicken Sie auf **[!UICONTROL Ereignisse > Hinzufügen]**, um den Bildschirm `Event Configuration` zu öffnen.
+1. Klicken Sie auf **[!UICONTROL Ereignisse > Hinzufügen]** , um den Bildschirm `Event Configuration` zu öffnen.
 
    ![Benennen der Regel und Hinzufügen des Ereignisses](images/analytics-domReady-nameAddAnalyticsEvent.png)
 
-1. Wählen Sie **[!UICONTROL Ereignistyp > DOM bereit]** aus. (Beachten Sie, dass der Rang der Regel „50“ ist.)
+1. Wählen Sie **[!UICONTROL Ereignistyp > DOM bereit]** aus (Beachten Sie, dass die Reihenfolge der Regel &quot;50&quot;lautet).
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
    ![Konfigurieren des Ereignisses](images/analytics-configureEventDomReady.png)
 
@@ -109,17 +108,17 @@ Sie haben bereits die Regel &quot;Alle Seiten - Bibliothek geladen&quot;im [Hinz
 
    ![Auf das Plussymbol klicken, um eine neue Aktion hinzuzufügen](images/analytics-ruleAddAction.png)
 
-1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Analytics]** aus.
+1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Analytics]** aus
 
 1. Wählen Sie **[!UICONTROL Aktionstyp > Beacon senden]** aus.
 
 1. Behalten Sie bei „Tracking“ `s.t()` bei. Beachten Sie: Wenn Sie einen `s.tl()`-Aufruf in einer Klickereignis-Regel vornehmen möchten, können Sie auch die Aktion „Beacon senden“ verwenden.
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Änderungen beibehalten]**.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Änderungen beibehalten]**
 
    ![Auf das Plussymbol klicken, um eine neue Aktion hinzuzufügen](images/analytics-sendBeacon.png)
 
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**
 
    ![Auf „In Bibliothek speichern und erstellen“ klicken](images/analytics-saveToLibraryAndBuild.png)
 
@@ -128,8 +127,8 @@ Sie haben bereits die Regel &quot;Alle Seiten - Bibliothek geladen&quot;im [Hinz
 Nachdem Sie eine Regel zum Senden eines Analytics-Beacons erstellt haben, sollte die Anfrage in Experience Cloud Debugger angezeigt werden.
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser.
-1. Klicken Sie auf das Debugger-Symbol ![Experience Cloud Debugger öffnen](images/analytics-debuggerIcon.png), um den **[!UICONTROL Adobe Experience Cloud Debugger]** zu öffnen.
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft zu *Ihre* Entwicklungsumgebung, wie im Abschnitt [frühere Lektion](switch-environments.md)
+1. Klicken Sie auf das Debugger-Symbol ![Öffnen Sie den Experience Cloud Debugger](images/analytics-debuggerIcon.png) , um den **[!UICONTROL Adobe Experience Cloud Debugger]** zu öffnen.
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
 
    ![Ihre Tags-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -141,7 +140,7 @@ Nachdem Sie eine Regel zum Senden eines Analytics-Beacons erstellt haben, sollte
 
 >[!NOTE]
 >
->Wenn Ihnen der Seitenname nicht angezeigt wird, gehen Sie die Schritte auf dieser Seite durch, um sicherzustellen, dass Sie nichts übersehen haben.
+>Wenn der Seitenname für Sie nicht angezeigt wird, gehen Sie die Schritte auf dieser Seite durch, um sicherzustellen, dass Sie nichts übersehen haben.
 
 ## Hinzufügen von Variablen mit Regeln
 
@@ -163,16 +162,16 @@ Zunächst muss erkennbar sein, welche Seiten Produktdetailseiten sind. Dies erfo
 
 **Erstellen des Datenelements für den Seitentyp**
 
-1. Klicken **[!UICONTROL Datenelemente]** in der linken Navigation
-1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**.
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Datenelemente]** .
+1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**
 
    ![Neues Datenelement hinzufügen](images/analytics-addDataElement.png)
 
 1. Nennen Sie das Datenelement `Page Type`.
 1. Wählen Sie **[!UICONTROL Datenelementtyp > JavaScript-Variable]** aus.
-1. Verwendung `digitalData.page.category.type` als **[!UICONTROL JavaScript-Variablenname]**
-1. Überprüfen Sie die **[!UICONTROL Text bereinigen]** und **[!UICONTROL Kleinere Groß-/Kleinschreibung erzwingen]** options
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**.
+1. Verwenden Sie `digitalData.page.category.type` als **[!UICONTROL JavaScript-Variablennamen]**
+1. Aktivieren Sie die Optionen **[!UICONTROL Text bereinigen]** und **[!UICONTROL Kleinbuchstaben erzwingen]** .
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**
 
    ![Neues Datenelement für Seitentyp hinzufügen](images/analytics-PageTypeDataElement.png)
 
@@ -182,16 +181,16 @@ Erfassen Sie als Nächstes die Produkt-ID der aktuellen Produktdetailseite mit e
 
 **Erstellen des Datenelements für die Produkt-ID**
 
-1. Klicken **[!UICONTROL Datenelemente]** in der linken Navigation
-1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**.
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Datenelemente]** .
+1. Klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**
 
    ![Neues Datenelement hinzufügen](images/analytics-addDataElement.png)
 
 1. Nennen Sie das Datenelement `Product Id`.
 1. Wählen Sie **[!UICONTROL Datenelementtyp > JavaScript-Variable]** aus.
-1. Verwendung `digitalData.product.0.productInfo.sku` als **[!UICONTROL JavaScript-Variablenname]**
-1. Überprüfen Sie die **[!UICONTROL Text bereinigen]** und **[!UICONTROL Kleinere Groß-/Kleinschreibung erzwingen]** options
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**.
+1. Verwenden Sie `digitalData.product.0.productInfo.sku` als **[!UICONTROL JavaScript-Variablennamen]**
+1. Aktivieren Sie die Optionen **[!UICONTROL Text bereinigen]** und **[!UICONTROL Kleinbuchstaben erzwingen]** .
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**
 
    ![Neues Datenelement für Seitentyp hinzufügen](images/analytics-ProductIdDataElement.png)
 
@@ -202,10 +201,10 @@ Wenn Sie bereits mit Adobe Analytics-Implementierungen vertraut sind, ist Ihnen
 **Hinzufügen der `Adobe Analytics Product String`-Erweiterung**
 
 1. Navigieren Sie zur Seite [!UICONTROL Erweiterungen > Katalog].
-1. Suchen Sie nach der `Adobe Analytics Product String`-Erweiterung von Adobe Consulting Services und klicken Sie auf **[!UICONTROL Installieren]**.
+1. Suchen Sie die Erweiterung `Adobe Analytics Product String` von Adobe Consulting Services und klicken Sie auf **[!UICONTROL Installieren]** .
    ![Adobe Analytics Product String-Erweiterung von Adobe Consulting hinzufügen](images/analytics-addProductStringExtension.png)
 1. Nehmen Sie sich einen Moment Zeit, um die Anweisungen zu lesen.
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**
 
    ![Erweiterung speichern und für Ihre Bibliothek erstellen](images/analytics-addProductStringExtensionSave.png)
 
@@ -215,27 +214,26 @@ Verwenden Sie jetzt Ihre neuen Datenelemente und Erweiterungen, um die Regel fü
 
 **Erstellen der Seitenregel für Produktdetails**
 
-1. Navigieren Sie zu **[!UICONTROL Regeln]** in der linken Navigation und klicken Sie dann auf **[!UICONTROL Regel hinzufügen]**
+1. Wechseln Sie zum Abschnitt **[!UICONTROL Regeln]** im linken Navigationsbereich und klicken Sie dann auf **[!UICONTROL Regel hinzufügen]** .
 
    ![Regel hinzufügen](images/analytics-addRule2.png)
 
 1. Geben Sie einen Namen für die Regel ein `Product Details - DOM Ready - 40`.
-1. Klicken Sie auf **[!UICONTROL Ereignisse > Hinzufügen]**, um den Bildschirm `Event Configuration` zu öffnen.
+1. Klicken Sie auf **[!UICONTROL Ereignisse > Hinzufügen]** , um den Bildschirm `Event Configuration` zu öffnen.
 
    ![Benennen der Regel und Hinzufügen des Ereignisses](images/analytics-domReadyAddEvent.png)
 
 1. Wählen Sie **[!UICONTROL Ereignistyp > DOM bereit]** aus.
-1. Legen Sie für die **[!UICONTROL Reihenfolge]** den Wert „40“ fest, damit die Regel *vor* der Regel mit der Aktion „Analytics > Beacon senden“ ausgeführt wird.
+1. Setzen Sie die **[!UICONTROL Reihenfolge]** auf 40, damit die Regel *vor* für die Regel mit der Aktion &quot;Analytics&quot;> &quot;Beacon senden&quot;ausgeführt wird.
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
-
    ![Konfigurieren des Ereignisses](images/analytics-configDOMReadyEvent.png)
 
-1. Klicken Sie unter **[!UICONTROL Bedingungen]** auf ![Plussymbol](images/icon-plus.png), um den Bildschirm `Condition Configuration` zu öffnen.
+1. Klicken Sie unter &quot;**[!UICONTROL Bedingungen]**&quot;auf das Symbol &quot;![Klicken Sie auf das Plussymbol](images/icon-plus.png)&quot;, um den Bildschirm `Condition Configuration` zu öffnen.
    ![Auf das Plussymbol klicken, um eine neue Bedingung hinzuzufügen](images/analytics-PDPRuleAddCondition.png)
 
-   1. Wählen Sie **[!UICONTROL Bedingungstyp > Wertevergleich]** aus.
+   1. Wählen Sie **[!UICONTROL Bedingungstyp > Wertvergleich]** aus.
    1. Verwenden Sie die Datenelementauswahl und wählen Sie im ersten Feld `Page Type` aus.
-   1. Wählen Sie **[!UICONTROL Enthält]** aus dem Dropdown-Menü der Vergleichsoperatoren aus.
+   1. Wählen Sie **[!UICONTROL Enthält]** aus dem Dropdown-Menü für den Vergleichsoperator aus.
    1. Geben Sie in das nächsten Feld `product-page` ein (dies ist der eindeutige Teil des Seitentypwerts, der aus der Datenschicht der Produktdetailseiten abgerufen wird).
    1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
 
@@ -245,12 +243,12 @@ Verwenden Sie jetzt Ihre neuen Datenelemente und Erweiterungen, um die Regel fü
 
    ![Auf das Plussymbol klicken, um eine neue Aktion hinzuzufügen](images/analytics-PDPAddAction.png)
 
-1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Analytics Product String]** aus.
+1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Analytics Product String]** aus
 1. Wählen Sie **[!UICONTROL Aktionstyp > s.products festlegen]** aus.
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Analytics E-Commerce-Ereignis]** die Option **[!UICONTROL prodView]** aus.
+1. Wählen Sie im Abschnitt **[!UICONTROL Analytics E-Commerce-Ereignis]** die Option **[!UICONTROL prodView]** aus.
 
-1. Verwenden Sie im Abschnitt **[!UICONTROL Daten-Layer-Variablen für Produktdaten]** die Datenelementauswahl, um das `Product Id`-Datenelement auszuwählen.
+1. Verwenden Sie im Abschnitt **[!UICONTROL Datenschichtvariablen für Produktdaten]** die Datenelementauswahl, um das Datenelement `Product Id` auszuwählen.
 
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
 
@@ -261,17 +259,17 @@ Verwenden Sie jetzt Ihre neuen Datenelemente und Erweiterungen, um die Regel fü
 
    ![Eine weitere Aktion für die Produktzeichenfolge hinzufügen](images/analytics-PDPaddAnotherAction.png)
 
-1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Analytics]** aus.
+1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Analytics]** aus
 1. Wählen Sie **[!UICONTROL Aktionstyp > Variablen festlegen]** aus.
-1. Wählen Sie **[!UICONTROL eVar1 > Festlegen als]** aus und geben Sie `product detail page` ein.
+1. Wählen Sie **[!UICONTROL eVar1 > Als]** festlegen und geben Sie `product detail page` ein.
 1. Legen Sie **[!UICONTROL event1]** fest, wobei die optionalen Werte leer bleiben.
-1. Klicken Sie unter „Ereignisse“ auf die Schaltfläche **[!UICONTROL Weitere hinzufügen]**.
-1. Legen Sie das Ereignis **[!UICONTROL prodView]** fest, wobei die optionalen Werte leer bleiben.
+1. Klicken Sie unter &quot;Ereignisse&quot;auf die Schaltfläche **[!UICONTROL Weitere hinzufügen]** .
+1. Setzen Sie das Ereignis **[!UICONTROL prodView]**, wobei die optionalen Werte leer bleiben
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
 
    ![Festlegen von Analytics-Variablen in der Produktdetailseiten-Regel](images/analytics-PDPsetVariables.png)
 
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**
 
    ![Speichern Sie die Regel](images/analytics-PDP-saveRule.png)
 
@@ -283,7 +281,7 @@ Sie haben gerade eine Regel erstellt, die Variablen festlegt, bevor das Beacon g
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser.
 1. Navigieren Sie zu einer beliebigen Produktdetailseite.
-1. Klicken Sie auf das Debugger-Symbol ![Experience Cloud Debugger öffnen](images/analytics-debuggerIcon.png), um den **[!UICONTROL Adobe Experience Cloud Debugger]** zu öffnen.
+1. Klicken Sie auf das Debugger-Symbol ![Öffnen Sie den Experience Cloud Debugger](images/analytics-debuggerIcon.png) , um den **[!UICONTROL Adobe Experience Cloud Debugger]** zu öffnen.
 1. Klicken Sie auf die Registerkarte „Analytics“.
 1. Erweitern Sie Ihre Report Suite.
 1. Beachten Sie die Produktdetailvariablen, die sich jetzt im Debugger befinden: `eVar1` wurde auf „product detail page“ festgelegt, die `Events`-Variable auf „event1“ und „prodView“, die Produktvariable auf die Produkt-ID des anzuzeigenden Produkts und der Seitenname weiterhin auf die Analytics-Erweiterung.
@@ -294,49 +292,47 @@ Sie haben gerade eine Regel erstellt, die Variablen festlegt, bevor das Beacon g
 
 Wenn eine Seite geladen wird, löst sie normalerweise über die Funktion `s.t()` ein Seitenlade-Beacon aus. Dadurch wird automatisch die `page view`-Metrik für die jeweilige Seite erhöht, die in der `pageName`-Variablen aufgeführt ist.
 
-Manchmal möchten Sie jedoch nicht die Seitenansichten Ihrer Site erhöhen, da die Aktion, die stattfindet, „kleiner“ (oder eventuell nur anders) ist als ein Seitenaufruf. Verwenden Sie in diesem Fall die Funktion `s.tl()`, die häufig als „Link verfolgen“-Anfrage bezeichnet wird. Die „Link verfolgen“-Anfrage muss jedoch trotz ihres Namens nicht beim Aufrufen eines Links ausgelöst werden. Sie kann durch *any* der Ereignisse, die Ihnen im Tag Rule Builder zur Verfügung stehen, einschließlich Ihres eigenen benutzerdefinierten JavaScript.
+Manchmal möchten Sie jedoch nicht die Seitenansichten Ihrer Site erhöhen, da die Aktion, die stattfindet, „kleiner“ (oder eventuell nur anders) ist als ein Seitenaufruf. Verwenden Sie in diesem Fall die Funktion `s.tl()`, die häufig als „Link verfolgen“-Anfrage bezeichnet wird. Die „Link verfolgen“-Anfrage muss jedoch trotz ihres Namens nicht beim Aufrufen eines Links ausgelöst werden. Sie kann durch *beliebige* der Ereignisse ausgelöst werden, die Ihnen im Tag Rule Builder zur Verfügung stehen, einschließlich Ihres eigenen benutzerdefinierten JavaScript.
 
 In diesem Tutorial lösen Sie einen `s.tl()`-Aufruf mithilfe eines der coolsten JavaScript-Ereignisse aus, einem `Enters Viewport`-Ereignis.
 
 ### Anwendungsfall
 
-Für diesen Anwendungsfall möchten Sie wissen, ob Benutzer auf unserer Luma-Startseite nach unten scrollen, um die *Vorgestellte Produkte* auf unserer Seite. Im Unternehmen herrscht Uneinigkeit darüber, ob Benutzer diesen Abschnitt überhaupt sehen oder nicht. Daher sollten Sie Analytics verwenden, um die Wahrheit zu ermitteln.
+Für diesen Anwendungsfall möchten Sie wissen, ob Benutzer auf unserer Luma-Startseite nach unten scrollen, um den Abschnitt &quot;*Empfohlene Produkte*&quot;auf unserer Seite zu sehen. Im Unternehmen herrscht Uneinigkeit darüber, ob Benutzer diesen Abschnitt überhaupt sehen oder nicht. Daher sollten Sie Analytics verwenden, um die Wahrheit zu ermitteln.
 
 ### Erstellen der Regel in Tags
 
-1. Navigieren Sie zu **[!UICONTROL Regeln]** in der linken Navigation und klicken Sie dann auf **[!UICONTROL Regel hinzufügen]**
-
+1. Wechseln Sie zum Abschnitt **[!UICONTROL Regeln]** im linken Navigationsbereich und klicken Sie dann auf **[!UICONTROL Regel hinzufügen]** .
    ![Regel hinzufügen](images/analytics-addRule3.png)
 1. Geben Sie einen Namen für die Regel ein `Homepage - Featured Products enters Viewport`.
-1. Klicken Sie auf **[!UICONTROL Ereignisse > Hinzufügen]**, um den Bildschirm `Event Configuration` zu öffnen.
+1. Klicken Sie auf **[!UICONTROL Ereignisse > Hinzufügen]** , um den Bildschirm `Event Configuration` zu öffnen.
 
    ![Regel für vorgestellte Produkte hinzufügen](images/analytics-newArrivalsRuleAdd2.png)
 
 1. Wählen Sie **[!UICONTROL Ereignistyp > Enters Viewport]** aus. Dadurch wird ein Feld eingeblendet, in das Sie den CSS-Selektor eingeben müssen. Damit wird das Element auf Ihrer Seite identifiziert, das die Regel auslöst, wenn es in die Ansicht des Browsers gelangt.
 1. Gehen Sie zurück zur Startseite von Luma und scrollen Sie nach unten zum Abschnitt &quot;Vorgestellte Produkte&quot;.
-1. Klicken Sie mit der rechten Maustaste auf den Abstand zwischen dem Titel &quot;FEATURED PRODUCTS&quot;und den Elementen in diesem Abschnitt und wählen Sie `Inspect` über das Kontextmenü. Dies ermöglicht die Suche nach dem Element.
+1. Klicken Sie mit der rechten Maustaste auf den Abstand zwischen dem Titel &quot;FEATURED PRODUCTS&quot;und den Elementen in diesem Abschnitt und wählen Sie `Inspect` aus dem Kontextmenü. Dies ermöglicht die Suche nach dem Element.
 1. Suchen Sie direkt dort oder möglicherweise direkt unter dem ausgewählten Bereich nach einem „div“ mit `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`. Suchen Sie nach diesem Element.
-1. Klicken Sie mit der rechten Maustaste auf dieses Element und wählen Sie **[!UICONTROL Kopieren > Selector kopieren]** aus.
+1. Klicken Sie mit der rechten Maustaste auf dieses Element und wählen Sie **[!UICONTROL Kopieren > Selektor kopieren]**
 
    ![Konfigurieren des Ereignisses „Enters Viewpoint“](images/analytics-copyElementSelector.png)
 
-1. Kehren Sie zu den Tags zurück und fügen Sie diesen Wert aus der Zwischenablage in das Feld mit der Bezeichnung ein. `Elements matching the CSS selector`.
-   1. Nebenbei bemerkt, entscheiden Sie, wie Sie CSS-Selektoren identifizieren können. Diese Methode ist ein wenig fehleranfällig, da durch bestimmte Änderungen auf der Seite der Selektor unbrauchbar werden kann. Beachten Sie dies bei der Verwendung von CSS-Selektoren in Tags.
+1. Gehen Sie zurück zu den Tags und fügen Sie diesen Wert aus der Zwischenablage in das Feld `Elements matching the CSS selector` ein.
+   1. Nebenbei bemerkt, entscheiden Sie, wie Sie CSS-Selektoren identifizieren können. Diese Methode ist ein wenig fehleranfällig, da durch bestimmte Änderungen auf der Seite der Selektor unbrauchbar werden kann. Beachten Sie dies bei der Verwendung von CSS-Selektoren in -Tags.
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
-
    ![Konfigurieren des Ereignisses „Enters Viewpoint“](images/analytics-configEntersViewportEvent.png)
 
 1. Klicken Sie unter „Bedingungen“ auf ![Auf das Plussymbol klicken](images/icon-plus.png), um eine neue Bedingung hinzuzufügen.
-1. Wählen Sie **[!UICONTROL Bedingungstyp > Wertevergleich]** aus.
+1. Wählen Sie **[!UICONTROL Bedingungstyp > Wertvergleich]** aus.
 1. Verwenden Sie die Datenelementauswahl und wählen Sie im ersten Feld `Page Name` aus.
-1. Wählen Sie **[!UICONTROL Gleich]** aus dem Dropdown-Menü der Vergleichsoperatoren aus.
+1. Wählen Sie **[!UICONTROL Gleich]** aus dem Dropdown-Menü für den Vergleichsoperator aus
 1. Geben Sie in das nächste Feld `content:luma:us:en` ein (dies ist der Seitenname der Startseite, der aus der Datenschicht abgerufen wurde – diese Regel soll in unserem Beispiel nur auf der Startseite ausgeführt werden).
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
 
    ![Konfigurieren der Startseiten-Bedingung](images/analytics-configHomepageCondition.png)
 
 1. Klicken Sie unter „Aktionen“ auf ![Auf das Plussymbol klicken](images/icon-plus.png), um eine neue Aktion hinzuzufügen.
-1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Analytics]** aus.
+1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Analytics]** aus
 1. Wählen Sie **[!UICONTROL Aktionstyp > Variablen festlegen]** aus.
 1. Stellen Sie `eVar3` auf `Home Page - Featured Products` ein.
 1. Stellen Sie `prop3` auf `Home Page - Featured Products` ein.
@@ -347,15 +343,15 @@ Für diesen Anwendungsfall möchten Sie wissen, ob Benutzer auf unserer Luma-Sta
 
 1. Klicken Sie unter „Aktionen“ auf ![Auf das Plussymbol klicken](images/icon-plus.png), um eine weitere neue Aktion hinzuzufügen.
 
-1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Analytics]** aus.
+1. Wählen Sie **[!UICONTROL Erweiterung > Adobe Analytics]** aus
 1. Wählen Sie **[!UICONTROL Aktionstyp > Beacon senden]** aus.
-1. Wählen Sie die **[!UICONTROL `s.tl()`]** Tracking-Option
-1. Geben Sie in das Feld **[!UICONTROL Linkname]** die Bezeichnung `Scrolled down to Featured Products` ein. Dieser Wert wird in den Bericht „Benutzerspezifische Links“ in Analytics eingefügt.
+1. Wählen Sie die Tracking-Option **[!UICONTROL `s.tl()`]** aus
+1. Geben Sie im Feld **[!UICONTROL Linkname]** den Wert `Scrolled down to Featured Products` ein. Dieser Wert wird in den Bericht „Benutzerspezifische Links“ in Analytics eingefügt.
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
 
-   ![Konfiguration des Beacons für vorgestellte Produkte](images/analytics-configEntersViewportBeacon.png)
+   ![Beacon &quot;Konfiguration vorgestellter Produkte&quot;](images/analytics-configEntersViewportBeacon.png)
 
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**
 
    ![Regel speichern und erstellen](images/analytics-saveCustomLinkRule.png)
 
@@ -364,14 +360,14 @@ Für diesen Anwendungsfall möchten Sie wissen, ob Benutzer auf unserer Luma-Sta
 Nun sollten Sie sicherstellen, dass dieser Treffer eingeht, wenn Sie auf der Startseite nach unten zum Abschnitt &quot;Vorgestellte Produkte&quot;scrollen. Wenn Sie die Startseite zum ersten Mal laden, sollte die Anfrage nicht durchgeführt werden. Wenn Sie aber nach unten scrollen, sollte der Treffer mit den neuen Werten ausgelöst werden.
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser und stellen Sie sicher, dass Sie sich oben auf der Startseite befinden.
-1. Klicken Sie auf **[!UICONTROL Debugger-Symbol]**![ Experience Cloud Debugger öffnen](images/analytics-debuggerIcon.png), um den [!UICONTROL Adobe Experience Cloud Debugger] zu öffnen.
+1. Klicken Sie auf das Symbol **[!UICONTROL Debugger]** ![Öffnen Sie den Experience Cloud Debugger](images/analytics-debuggerIcon.png) , um den [!UICONTROL Adobe Experience Cloud Debugger] zu öffnen.
 1. Klicken Sie auf die Registerkarte „Analytics“.
 1. Erweitern Sie den Treffer Ihrer Report Suite.
 1. Beachten Sie den normalen Seitenansichtstreffer für die Startseite mit u. a. dem Seitennamen (für eVar3 oder prop3 sind aber keine Einträge vorhanden).
 
    ![Debugger mit einer Seitenansicht](images/analytics-debuggerPageView.png)
 
-1. Lassen Sie den Debugger geöffnet, scrollen Sie auf Ihrer Site nach unten, bis Sie den Abschnitt &quot;Spezifische Produkte&quot;sehen.
+1. Lassen Sie den Debugger geöffnet, scrollen Sie auf Ihrer Site nach unten, bis Sie den Abschnitt &quot;Vorgestellte Produkte&quot;sehen.
 1. Rufen Sie den Debugger erneut auf. Jetzt sollte ein weiterer Analytics-Treffer angezeigt werden. Dieser Treffer sollte die Parameter des den von Ihnen eingerichteten s.tl()-Treffers enthalten:
    1. `LinkType = "link_o"` (das bedeutet, dass es sich bei dem Treffer um einen benutzerspezifischen Link handelt, nicht um einen Seitenansichtstreffer)
    1. `LinkName = "Scrolled down to Featured Products"`
@@ -395,21 +391,21 @@ Zur Implementierung von Plugins sind drei Schritte erforderlich:
 
 Wenn Sie die Funktion „doPlugins“ hinzufügen (siehe unten) und Plugins verwenden möchten, müssen Sie ein Kontrollkästchen aktivieren, um das s-Objekt von Analytics in der Analytics-Implementierung global verfügbar zu machen.
 
-1. Navigieren Sie zu **[!UICONTROL Erweiterungen > Installiert]**.
+1. Navigieren Sie zu **[!UICONTROL Erweiterungen > Installiert]** .
 
-1. Klicken Sie in der Adobe Analytics-Erweiterung auf **[!UICONTROL Konfigurieren]**.
+1. Klicken Sie in der Adobe Analytics-Erweiterung auf **[!UICONTROL Konfigurieren]** .
 
    ![Konfigurieren von Analytics](images/analytics-configureExtension.png)
 
 1. Wählen Sie unter **[!UICONTROL Bibliotheksverwaltung]** das Feld mit der Bezeichnung `Make tracker globally accessible` aus. Wie Sie der Hilfemeldung entnehmen können, wird der Tracker hierdurch global unter „window.s“ geladen. Das ist wichtig, da Sie in Ihrem Kunden-JavaScript-Code darauf verweisen.
-   ![Globale Zugänglichkeit von Tracker](images/analytics-makeTrackerGlobal.png)
+   ![Tracker global zugänglich machen](images/analytics-makeTrackerGlobal.png)
 
 ### Hinzufügen der Funktion „doPlugins“
 
 Um Plugins hinzuzufügen, müssen Sie eine Funktion namens „doPlugins“ einfügen. Diese Funktion wird nicht standardmäßig hinzugefügt. Wird sie aber hinzugefügt, wird sie von der AppMeasurement-Bibliothek verarbeitet und zuletzt aufgerufen, wenn ein Treffer an Adobe Analytics gesendet wird. Daher können Sie diese Funktion verwenden, um JavaScript-Code auszuführen und so auf einfachere Weise Variablen festzulegen.
 
 1. Scrollen Sie, während Sie sich noch in der Analytics-Erweiterung befinden, nach unten und erweitern Sie den Abschnitt mit dem Titel `Configure Tracker Using Custom Code.`
-1. Klicken Sie auf **[!UICONTROL Editor öffnen]**.
+1. Klicken Sie auf **[!UICONTROL Editor öffnen]**
 1. Fügen Sie den folgenden Code in den Code-Editor ein:
 
    ```javascript
@@ -469,7 +465,7 @@ Rufen Sie zunächst ein Plugin auf, das in die AppMeasurement-Bibliothek integri
    ![Plugins in doPlugins aufrufen](images/analytics-doPluginsWithPlugins2.png)
 
 1. Speichern Sie das Codefenster.
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**
 
    ![Plugins in doPlugins aufrufen](images/analytics-saveExtensionAndBuild2.png)
 
@@ -480,7 +476,7 @@ Jetzt können Sie sicherstellen, dass die Plugins funktionieren.
 **Überprüfen der Plugins**
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser.
-1. Klicken Sie auf das Debugger-Symbol ![Experience Cloud Debugger öffnen](images/analytics-debuggerIcon.png), um den **[!UICONTROL Adobe Experience Cloud Debugger]** zu öffnen.
+1. Klicken Sie auf das Debugger-Symbol ![Öffnen Sie den Experience Cloud Debugger](images/analytics-debuggerIcon.png) , um den **[!UICONTROL Adobe Experience Cloud Debugger]** zu öffnen.
 1. Klicken Sie auf die Registerkarte „Analytics“.
 1. Erweitern Sie Ihre Report Suite.
 1. Beachten Sie, dass im Analytics-Treffer keine Kampagnenvariable vorhanden ist.
@@ -505,4 +501,4 @@ Jetzt können Sie sicherstellen, dass die Plugins funktionieren.
 
 Gut gemacht! Sie haben die Analytics-Lektion abgeschlossen. Natürlich gibt es noch viele andere Möglichkeiten, unsere Analytics-Implementierung zu verbessern. Hoffentlich haben Sie aber auch so einige der Kernkompetenzen erworben, um Ihren weiteren Bedarf zu decken.
 
-[Weiter mit „Hinzufügen von Adobe Audience Manager“ >](audience-manager.md)
+[Weiter mit &quot;Adobe Audience Manager hinzufügen&quot;>](audience-manager.md)

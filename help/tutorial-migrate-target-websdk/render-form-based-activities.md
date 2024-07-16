@@ -1,10 +1,11 @@
 ---
 title: Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung von at.js 2.x auf das Adobe Experience Platform Web SDK migrieren. Zu den Themen gehören die Bibliotheksübersicht, Implementierungsunterschiede und andere bemerkenswerte Hinweise.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 2%
+source-wordcount: '400'
+ht-degree: 1%
 
 ---
 
@@ -12,8 +13,8 @@ ht-degree: 2%
 
 Einige Target-Implementierungen können regionale Mboxes (jetzt als &quot;Bereiche&quot;bezeichnet) verwenden, um Inhalte aus Aktivitäten bereitzustellen, die den formularbasierten Experience Composer verwenden. Wenn Ihre at.js-Target-Implementierung Mboxes verwendet, müssen Sie Folgendes tun:
 
-* Aktualisieren Sie alle Verweise Ihrer at.js-Implementierung, die `getOffer()` oder `getOffers()` den entsprechenden Platform Web SDK-Methoden.
-* Hinzufügen von Code zum Trigger a `propositionDisplay` -Ereignis, damit eine Impression gezählt wird.
+* Aktualisieren Sie alle Verweise Ihrer at.js-Implementierung, die `getOffer()` oder `getOffers()` verwenden, auf die entsprechenden Platform Web SDK-Methoden.
+* Fügen Sie dem Trigger ein `propositionDisplay` -Ereignis Code hinzu, damit eine Impression gezählt wird.
 
 ## Anfordern und Anwenden von Inhalten auf Anforderung
 
@@ -22,9 +23,9 @@ Aktivitäten, die mit dem formularbasierten Composer von Target erstellt und an 
 
 +++at.js-Beispiel mit `getOffer()` und `applyOffer()`:
 
-1. Ausführen `getOffer()` , um ein Angebot für einen Standort anzufordern
-1. Ausführen `applyOffer()` , um das Angebot an einen bestimmten Selektor zu rendern
-1. Eine Aktivitätsimpression wird zum Zeitpunkt der `getOffer()` Anfrage
+1. Führen Sie `getOffer()` aus, um ein Angebot für einen Ort anzufordern.
+1. Führen Sie `applyOffer()` aus, um das Angebot an einen angegebenen Selektor zu rendern.
+1. Eine Aktivitätsimpression wird zum Zeitpunkt der `getOffer()` -Anfrage automatisch erhöht
 
 ```JavaScript
 // Retrieve an offer for the homepage-hero location
@@ -48,11 +49,11 @@ adobe.target.getOffer({
 
 +++
 
-+++Platform Web SDK-Entsprechung mithilfe der `applyPropositions` command:
+++ + Platform Web SDK-Entsprechung mit dem Befehl `applyPropositions` :
 
-1. Ausführen `sendEvent` -Befehl zum Anfordern von Angeboten (Vorschlägen) für einen oder mehrere Orte (Bereiche)
-1. Ausführen `applyPropositions` -Befehl mit dem Metadatenobjekt, das Anweisungen zum Anwenden von Inhalten auf die Seite für jeden Bereich enthält
-1. Ausführen `sendEvent` -Befehl mit eventType von `decisioning.propositionDisplay` zur Verfolgung einer Impression
+1. Führen Sie den Befehl `sendEvent` aus, um Angebote (Vorschläge) für einen oder mehrere Orte (Bereiche) anzufordern.
+1. Führen Sie den Befehl `applyPropositions` mit dem Metadatenobjekt aus, das Anweisungen zum Anwenden von Inhalten auf die Seite für jeden Bereich enthält.
+1. Führen Sie den Befehl `sendEvent` mit dem Ereignistyp `decisioning.propositionDisplay` aus, um eine Impression zu verfolgen.
 
 ```JavaScript
 // Retrieve propositions for homepage_hero location (scope)
@@ -91,19 +92,19 @@ alloy("sendEvent", {
 
 +++
 
-Das Platform Web SDK bietet mehr Kontrolle über das Anwenden formularbasierter Aktivitäten auf die Seite mithilfe der `applyPropositions` -Befehl mit `actionType` spezifiziert:
+Das Platform Web SDK bietet eine bessere Kontrolle beim Anwenden formularbasierter Aktivitäten auf die Seite mithilfe des Befehls `applyPropositions` mit dem angegebenen Wert `actionType`:
 
-| `actionType` | Beschreibung | at.js `applyOffer()` | Platform Web-SDK `applyPropositions` |
+| `actionType` | Beschreibung | at.js `applyOffer()` | Platform Web SDK `applyPropositions` |
 | --- | --- | --- | --- |
 | `setHtml` | Löschen Sie den Inhalt des Containers und fügen Sie dann das Angebot zum Container hinzu. | Ja (immer verwendet) | Ja |
 | `replaceHtml` | Entfernen Sie den Container und ersetzen Sie ihn durch das Angebot. | Nein | Ja |
-| `appendHtml` | Hängt das Angebot nach dem angegebenen Selektor an | Nein | Ja |
+| `appendHtml` | Hängt das Angebot nach der angegebenen Auswahl an | Nein | Ja |
 
-Siehe Abschnitt [dedizierte Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) Informationen zum Rendern von Inhalten mit dem Platform Web SDK für zusätzliche Rendering-Optionen und -Beispiele.
+Weitere Darstellungsoptionen und Beispiele finden Sie in der [dedizierten Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) zum Rendern von Inhalten mit dem Platform Web SDK .
 
 ## Implementierungsbeispiel
 
-Die folgende Beispielseite baut auf der Implementierung auf, die im vorherigen Abschnitt beschrieben wurde, fügt nur zusätzliche Bereiche zum `sendEvent` Befehl.
+Die folgende Beispielseite baut auf der im vorherigen Abschnitt beschriebenen Implementierung auf und fügt nur zusätzliche Bereiche zum Befehl `sendEvent` hinzu.
 
 +++Platform Web SDK-Beispiel mit mehreren Scopes
 
@@ -200,4 +201,4 @@ Als Nächstes erfahren Sie, wie Sie [Target-Parameter mithilfe des Platform Web 
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Target-Migration von at.js zum Web SDK. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies bitte mit, indem Sie [diese Gemeinschaftsdiskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Wir unterstützen Sie bei der erfolgreichen Target-Migration von at.js zum Web SDK. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.

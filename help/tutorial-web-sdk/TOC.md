@@ -10,7 +10,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 4ed0c204613e283bbd9f51f4225215068284ac69
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 30%
+ht-degree: 25%
 
 ---
 
@@ -29,17 +29,17 @@ ht-degree: 30%
    + [Erstellen von Identitäten](create-identities.md)
    + [Erstellen von Tag-Regeln](create-tag-rule.md)
    + [Validieren mit Debugger](validate-with-debugger.md)
-   + [Validierung mit Versicherung](validate-with-assurance.md)
+   + [Mit Assurance validieren](validate-with-assurance.md)
 
 + Anwendungseinstellungen {#applications-setup}
    + [Experience Platform einrichten](setup-experience-platform.md)
    + [Einrichten von Adobe Analytics](setup-analytics.md)
    + [Einrichten von Audience Manager](setup-audience-manager.md)
-   + [Einrichten von Target](setup-target.md)
+   + [Target einrichten](setup-target.md)
    + [Einrichten des Journey Optimizer-Webkanals](setup-web-channel.md)
    + [Journey Optimizer-Entscheidungsverwaltung einrichten](setup-decision-management.md)
 
-+ Zustimmungsverwaltung {#consent-management}
++ Einverständnisverwaltung {#consent-management}
    + [Einverständnis einrichten](setup-consent.md)
 
 + Ereignisweiterleitung {#event-forwarding}

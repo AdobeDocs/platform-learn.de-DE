@@ -26,7 +26,7 @@ Sehen Sie sich dieses Video an, um den Wert, die Journey und den Konfigurationsp
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-Weitere Informationen zum Customer Journey Analytics finden Sie [here](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Weitere Informationen zum Customer Journey Analytics finden Sie [hier](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Lernziele
 

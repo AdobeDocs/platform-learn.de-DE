@@ -1,5 +1,5 @@
 ---
-user-guide-title: Implementieren des Experience Cloud in Websites mit Tags
+user-guide-title: Experience Cloud in Websites mit Tags implementieren
 breadcrumb-title: Web-Tutorial
 user-guide-description: Erfahren Sie, wie Sie Adobe Experience Cloud-Lösungen auf einer Website mit Tags implementieren.
 solution: Data Collection
@@ -11,17 +11,17 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 37%
+ht-degree: 17%
 
 ---
 
 
-# Implementieren des Experience Cloud in Websites mit Tags {#implement-in-websites}
+# Experience Cloud in Websites mit Tags implementieren {#implement-in-websites}
 
 + [Tutorial zur Implementierung in Websites mit Tags](overview.md)
-+ Tags konfigurieren{#configure-tags}
-   + [Erstellen Sie eine Tag-Eigenschaft](create-a-property.md)
-   + [Fügen Sie den Einbettungs-Code hinzu](add-embed-code.md)
++ Konfigurieren von Tags{#configure-tags}
+   + [Tag-Eigenschaft erstellen](create-a-property.md)
+   + [Hinzufügen des Einbettungscodes](add-embed-code.md)
    + [Hinzufügen von Datenelementen, Regeln und Bibliotheken](add-data-elements-rules.md)
    + [Wechseln von Umgebungen mit dem Debugger](switch-environments.md)
 + Implementieren von Lösungen{#implement-solutions}
@@ -30,5 +30,5 @@ ht-degree: 37%
    + [Hinzufügen von Adobe Analytics](analytics.md)
    + [Hinzufügen von Adobe Audience Manager](audience-manager.md)
    + [Experience Cloud-Integrationen](integrations.md)
-+ Veröffentlichen der Eigenschaft{#publish}
-   + [Veröffentlichen Ihrer Eigenschaft](publish.md)
++ Publish - Ihre Eigenschaft{#publish}
+   + [Publish - Ihre Eigenschaft](publish.md)

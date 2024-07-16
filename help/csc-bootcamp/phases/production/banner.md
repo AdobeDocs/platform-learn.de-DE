@@ -2,22 +2,23 @@
 title: CSC Bootcamp - Erstellen eines Produkt-Homepage-Banners
 description: CSC Bootcamp - Erstellen eines Produkt-Homepage-Banners
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: c78b6ba2-1a1a-4e95-a8ab-1b572fa2d8b1
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1148'
 ht-degree: 0%
 
 ---
 
-# Produkt-Homepage-Banner erstellen
+# Produkt-Startseitenbanner erstellen
 
 ## Erstellung des Banners
 
 Durch die Automatisierung von Inhalten wird die Leistung von Adobe Creative Cloud auf Experience Manager Assets übertragen, sodass Marketing-Experten die Asset-Produktion skaliert automatisieren und so die Erstellung von Varianten erheblich beschleunigen können. Verwenden wir diese Funktionen, um ein Banner zu generieren, das auf der Homepage verwendet werden soll!
 
-- Navigieren Sie zum AEM Autor auf [https://author-p105462-e991028.adobeaemcloud.com/](https://author-p105462-e991028.adobeaemcloud.com/) und melden Sie sich mit den angegebenen Anmeldedaten an.
+- Wechseln Sie zum AEM-Autor auf [https://author-p105462-e991028.adobeaemcloud.com/](https://author-p105462-e991028.adobeaemcloud.com/) und melden Sie sich mit den von uns angegebenen Anmeldedaten an.
 
-- Navigieren Sie auf der Startseite zu Tools > Assets > Verarbeitungsprofile .
+- Navigieren Sie auf der Startseite zu Tools > Assets \> Verarbeitungsprofile .
 
 ![Tools > Assets > Verarbeitungsprofile](./images/prod-processing-profiles.png)
 
@@ -27,12 +28,12 @@ Durch die Automatisierung von Inhalten wird die Leistung von Adobe Creative Clou
 
 
 - Die folgenden sind für Sie von Interesse:
-   - Adobe Banner Dark: erstellt ein AdobeBike-Banner mit einer dunklen Überlagerung basierend auf dem ausgewählten Asset.
-      ![dunkles Banner](./images/prod-banner-dark.jpg)
-   - Adobe Banner Light: erstellt ein AdobeBike-Banner mit einer Lichtüberlagerung, basierend auf dem ausgewählten Asset
-      ![Leuchtbanner](./images/prod-banner-light.jpg)
-   - Adobe Banner Green: erstellt ein AdobeBike-Banner mit einer grünen Überlagerung basierend auf dem ausgewählten Asset.
-      ![grünes Banner](./images/prod-banner-green.jpg)
+   - Adobe Banner Dark: erstellt ein AdobeBike-Banner mit einer dunklen Überlagerung basierend auf dem ausgewählten Asset
+     ![dunkles Banner](./images/prod-banner-dark.jpg)
+   - Adobe Banner Light: erstellt ein AdobeBike-Banner mit einer Lichtüberlagerung basierend auf dem ausgewählten Asset
+     ![Lichtbanner](./images/prod-banner-light.jpg)
+   - Adobe Banner Green: erstellt ein AdobeBike-Banner mit einer grünen Überlagerung basierend auf dem ausgewählten Asset
+     ![grünes Banner](./images/prod-banner-green.jpg)
 
 - Nachdem Sie den Bannertyp ausgewählt haben, den Sie erstellen möchten, wählen Sie dieses Verarbeitungsprofil und dann &quot;Profil auf Ordner anwenden&quot;.
 
@@ -46,16 +47,16 @@ Durch die Automatisierung von Inhalten wird die Leistung von Adobe Creative Clou
 
 - Markieren Sie nach der Erstellung des Ordners das Kästchen neben seinem Namen und klicken Sie dann oben rechts auf die Schaltfläche &quot;Anwenden&quot;.
 
-![Auf erstellten Ordner anwenden](./images/prod-select-profile-folder.png)
+![auf den erstellten Ordner anwenden](./images/prod-select-profile-folder.png)
 
 Nachdem wir die erforderliche Konfiguration vorgenommen haben, erstellen wir unser Banner.
 
 - Klicken Sie auf das AEM Logo oben links, um die Navigation zu öffnen, und navigieren Sie dann zu Navigation \> Assets \> Dateien .
 
 ![AEM-Startbildschirm](./images/prod-select-assets.png)
-![Bildschirm für AEM Assets](./images/prod-select-assets-2.png)
+![Bildschirm &quot;aem assets&quot;](./images/prod-select-assets-2.png)
 
-- Suchen Sie den Ordner &quot;Generierte Adobe-Assets&quot;und öffnen Sie ihn durch Klicken auf die Karte. Hier werden die generierten Banner angezeigt.
+- Suchen Sie den Ordner &quot;Generated Adobe Assets&quot;und öffnen Sie ihn durch Klicken auf die Karte. Hier werden die generierten Banner angezeigt.
 
 ![generierte Adobike-Assets](./images/prod-generated-banners.png)
 
@@ -65,7 +66,7 @@ Nachdem wir die erforderliche Konfiguration vorgenommen haben, erstellen wir uns
 
 ![Upload durch Drag-and-Drop](./images/prod-drag-drop-banner.png)
 
-![Upload mithilfe der Erstellungsdatei](./images/prod-create-file.png)
+![Upload mit der Erstellungsdatei](./images/prod-create-file.png)
 
 
 - Warten Sie eine Minute, bis Ihr Asset verarbeitet wurde, und laden Sie dann den Bildschirm neu. Wenn Ihr Asset den Status &quot;Neu&quot;aufweist, wissen Sie, dass die Verarbeitung abgeschlossen ist.
@@ -103,7 +104,7 @@ Wenn Sie einen formellen und prüfbaren Review- und Genehmigungsprozess für Ihr
 
 - Wählen Sie &quot;Erweiterter Testversand&quot;, da Sie einen detaillierten Validierungsprozess benötigen.
 
-![Advanced proof](./images/wf-advanced-proof.png)
+![erweiterter Testversand](./images/wf-advanced-proof.png)
 
 >[!NOTE]
 >
@@ -111,55 +112,55 @@ Wenn Sie einen formellen und prüfbaren Review- und Genehmigungsprozess für Ihr
 
 - Standardmäßig befinden wir uns in einem Workflow-Typ &quot;Standard&quot; und wählen Ihren Workfront Bootcamp-Spezialisten als Reviewer &amp; Genehmiger aus. Geben Sie den Namen Ihres Bootcamp Workfront Specialist ein, in dem steht: Kontaktname oder E-Mail-Adresse, um einen Empfänger hinzuzufügen:
 
-![Zuweisen eines Testversands](./images/wf-proof-assign.png)
+![Testversand zuweisen](./images/wf-proof-assign.png)
 
-![Zuweisen eines Testversands](./images/wf-assign-proof-2.png)
+![Testversand zuweisen](./images/wf-assign-proof-2.png)
 
 - Legen Sie sie als &quot;Reviewer &amp; Genehmiger&quot;fest:
 
-![validierer und validierer](./images/wf-review-approve.png)
+![validierer und valiver](./images/wf-review-approve.png)
 
 - Klicken Sie auf &quot;Testversand erstellen&quot;. Workfront benötigt einen Moment, um den Testversand zu erzeugen:
 
-![Nachweis](./images/wf-generating-proof.png)
+![ Testversand erzeugen](./images/wf-generating-proof.png)
 
 - Ihr Workfront-Spezialist wird jetzt über eine neue Benachrichtigung informiert, dass er über einen Nachweis zur Überprüfung und/oder Genehmigung verfügt:
 
-![Aufgabe &quot;workfront&quot;](./images/wf-proof-task.png)
+![workfront task](./images/wf-proof-task.png)
 
 - Nachdem Sie auf die Benachrichtigung geklickt haben, wird Ihr Testversand angezeigt und kann einige Kommentare abgeben und/oder diesen Testversand validieren.
 
    - Wenn Anmerkungen vorhanden sind, können sie oben im Bildschirm auf &quot;Kommentar hinzufügen&quot;klicken:
 
-   ![Kommentar hinzufügen](./images/wf-proof-add-comment.png)
+  ![Kommentar hinzufügen](./images/wf-proof-add-comment.png)
 
    - Sie können dann nicht nur Kommentare hinzufügen, sondern auch die kleine Zeiger-Symbolleiste verwenden, um klar zu definieren, welcher Bereich geändert werden muss.
 
-   ![Punkt-Kommentar einfügen](./images/wf-proof-comment.png)
+  ![Pin-Punkt-Kommentar](./images/wf-proof-comment.png)
 
    - Durch Hinzufügen des Kommentars können Sie wissen, dass Sie zusätzliche Arbeit an einer neuen Version des Testversands benötigen. Aktualisieren Sie Ihren Workfront-Tab. Sie erhalten eine neue Benachrichtigung, die Sie darüber informiert. Sobald Sie wissen, welche Änderungen Sie vornehmen müssen, nehmen Sie Ihre Änderungen in AEM vor und laden Sie Ihre neue Version hier hoch:
 
-   ![neue Version hochladen](./images/wf-upload-version.png)
+  ![neue Version hochladen](./images/wf-upload-version.png)
 
    - Wählen Sie Ihr aktualisiertes Asset aus (wenn im Bootcamp-Szenario keine Änderungen erforderlich sind, laden Sie einfach dasselbe Asset erneut hoch) und klicken Sie auf &quot;Link&quot;:
 
-   ![Link-Asset](./images/wf-link-new-asset.png)
+  ![Asset verknüpfen](./images/wf-link-new-asset.png)
 
    - Klicken Sie dann auf der rechten Seite auf &#39;Testversand erstellen&#39;.
 
-   ![Testversand erstellen](./images/create-new-proof.png)
+  ![Testversand erstellen](./images/create-new-proof.png)
 
    - Sobald der Testversand erstellt wurde (dies kann einige Augenblicke dauern), erhält Ihr Workfront-Spezialist eine Benachrichtigung und kann diese neue Version überprüfen und hoffentlich genehmigen.  Mithilfe der Schaltfläche zum Testversand-Vergleich können sie beispielsweise einen parallelen Vergleich von V1 und V2 mit allen Kommentaren sehen.
 
-   ![Testversand](./images/wf-proof-compare.png)
+  ![Testversand-Vergleich](./images/wf-proof-compare.png)
 
-   ![Entscheidungsfindung](./images/make-decision-proof.png)
+  ![Entscheidungsfindung](./images/make-decision-proof.png)
 
-   ![genehmigt](./images/approved.png)
+  ![authorised](./images/approved.png)
 
 Wir haben jetzt eine formelle Genehmigung für die Verwendung unseres Banners. Es ist einfach zu folgen, wo wir uns im Prozess befinden, und die Updates, die Sie automatisch Trigger-Benachrichtigungen durchführen, damit Sie so effizient wie möglich arbeiten können.
 
-Nächster Schritt: [Phase 2 - Produktion: Social Media-Anzeige erstellen](./social.md)
+Nächster Schritt: [Phase 2 - Produktion: Social-Media-Anzeige erstellen](./social.md)
 
 [Gehen Sie zurück zu Phase 1 - Planung: Sonstige Vorarbeiten](../planning/prework.md)
 

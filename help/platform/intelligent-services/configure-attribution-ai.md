@@ -16,6 +16,6 @@ ht-degree: 46%
 
 # Konfigurieren von Attribution AI
 
-Erfahren Sie, wie Sie eine Instanz von Attribution AI erstellen, um die Auswirkungen Ihrer Marketingkanäle und Kampagnen zu verstehen. Weitere Informationen finden Sie unter [Dokumentation zu Attribution AIS](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Erfahren Sie, wie Sie eine Instanz von Attribution AI erstellen, um die Auswirkungen Ihrer Marketingkanäle und Kampagnen zu verstehen. Weitere Informationen finden Sie in der Dokumentation zu [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on)

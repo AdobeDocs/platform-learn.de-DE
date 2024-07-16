@@ -9,15 +9,15 @@ thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 3%
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
 # Erneutes Laden Ihrer Kundendaten für die Bereitstellung elektrisierter Erlebnisse
 
 Omnichannel-Daten sind ein wichtiger Bestandteil zur Unterstützung umsetzbarer Kundenprofile, die von Marketing-Experten verwendet werden, um die Aktivierung zu orchestrieren und die resultierenden Journey zu messen. Unternehmen stehen jedoch vor Herausforderungen bei der Verwaltung der Qualität, des Umfangs und der Vielfalt dieser Daten. Sie erfordern optimierte Lösungen, um die Auswirkungen minderwertiger Daten zu verringern, die Zeit bis zur Wertschöpfung zu reduzieren und den ROI zu multiplizieren, indem dieselben Daten für eine Vielzahl von Anwendungsfällen verwendet werden.
-Weitere Informationen finden Sie unter [Dokumentation zu Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
+Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
 
 In diesem Video wird Folgendes untersucht:
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Dieses Video ist ein Auszug aus der Adobe Summit 2020-Sitzung *[Neuladen von Omnichannel-Daten für die Elektrifizierung von Erlebnissen](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
+>Dieses Video ist ein Auszug aus der Adobe Summit 2020-Sitzung *[Erneutes Laden von Omnichannel-Daten für die Elektrifizierung von Erlebnissen](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.

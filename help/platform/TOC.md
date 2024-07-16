@@ -8,7 +8,7 @@ auto-video-transcripts: true
 source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 18%
 + Datenhygiene {#data-hygiene}
    + [Datenvorbereitung für Datenhygiene](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Datensätze und Batches löschen](/help/platform/data-hygiene/delete-datasets-and-batches.md)
-   + [Gültige Datensätze](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [Läuft ab Datensätze](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Pseudonyme Profil- und Ereignisablauf (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [Profile löschen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [Profilattribut aktualisieren](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
@@ -92,9 +92,9 @@ ht-degree: 18%
    + [Datensätze und Batches löschen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [Zuordnen einer CSV-Datei zu XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Quellen – Übersicht](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [Daten aus Adobe Analytics erfassen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=de)
-   + [Daten aus Audience Manager erfassen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-   + [Daten aus Cloud-Speicher erfassen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=de)
+   + [Aufnehmen von Daten aus Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=de)
+   + [Aufnehmen von Daten aus Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Aufnehmen von Daten aus Cloud-Speicher](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=de)
    + [Daten aus CRM erfassen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=de)
    + [Daten aus Datenbanken aufnehmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [Streaming-Erfassung – Übersicht](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
@@ -102,7 +102,7 @@ ht-degree: 18%
    + [Streamen von Daten mithilfe von Source Connectors](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=de)
    + [Web SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=de){target="_blank"}
-+ Lebenszyklus der Daten {#data-lifecycle}
++ Datenlebenszyklus {#data-lifecycle}
    + [Gültige Datensätze](/help/platform/data-lifecycle/expire-datasets.md)
 + Data Science Workspace {#data-science-workspace}
    + [Übersicht](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
@@ -117,7 +117,7 @@ ht-degree: 18%
    + [Erstellen und Veröffentlichen eines trainierten Modells (Benutzeroberfläche)](data-science-workspace/create-model-ui.md)
    + [Planen automatisierter Schulungen und Auswertungen für einen Dienst](data-science-workspace/schedule-training-scoring.md)
    + [Anreicherung von Echtzeit-Kundenprofilen mit Einblicken aus maschinellem Lernen](data-science-workspace/dsw-profile-segmentation.md)
-   + [Quelldateien in einem Rezept verpacken](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
+   + [Quelldateien in ein Rezept verpacken](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
    + [Importieren eines gepackten Rezepts (Benutzeroberfläche)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
    + [Importieren eines gepackten Rezepts (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Ziele {#destinations}
@@ -132,7 +132,7 @@ ht-degree: 18%
    + [Dateibasierter Cloud-Speicher oder E-Mail-Marketing-Ziele konfigurieren](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Konfigurieren eines sozialen Ziels](/help/platform/destinations/configure-a-social-destination.md)
    + [Aktivieren über LiveRamp-Ziele](/help/platform/destinations/liveramp-destinations.md)
-   + Adobe Target und benutzerdefinierte Personalisierung{#target}
+   + Adobe Target und benutzerdefinierte Personalization{#target}
       + [Nächste Hit-Personalisierung mit Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Konfigurieren des Adobe Target-Ziels](/help/platform/destinations/target/configure-the-target-destination.md)
       + [Segmente und Profilattribute aktivieren](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
@@ -153,7 +153,7 @@ ht-degree: 18%
    + [Customer AI-Wert](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Konfigurieren von Kunden-KI](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Verwenden von Kunden-KI- und Insights-Werten](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Überwachung {#monitoring}
++ Monitoring {#monitoring}
    + [Überwachen der Datenaufnahme](/help/platform/monitoring/monitoring-dashboard.md)
    + [Segmentaktivierung überwachen](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Überwachen von Datenflüssen](/help/platform/monitoring/data-monitoring.md)
@@ -171,13 +171,13 @@ ht-degree: 18%
    + [Zusammenführungsrichtlinien erstellen](/help/platform/profiles/create-merge-policies.md)
    + [Übersicht über Vereinigungsschemata](/help/platform/profiles/union-schemas-overview.md)
    + [Berechnetes Attribut erstellen](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
-   + [Pseudonyme Profilabläufe (TTL)](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
+   + [Ablauf des Pseudonymen Profils (TTL)](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [Profile löschen](/help/platform/profiles/delete-profiles.md)
    + [Aktualisieren eines bestimmten Attributs mithilfe von upsered](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Datenschutz und Sicherheit {#privacy}
    + [Einführung in Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Identitätsdaten in Datenschutzanfragen](/help/platform/privacy/identity-data-in-privacy-requests.md)
-   + [Datenschutz-JavaScript-Bibliothek](/help/platform/privacy/using-privacy-javascript-library.md)
+   + [Privacy JavaScript Library](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Datenschutzbezeichnungen in Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Erste Schritte mit der Privacy Service-API](/help/platform/privacy/getting-started-with-privacy-services-api.md)
    + [Privacy Service-Benutzeroberfläche](/help/platform/privacy/using-privacy-services-ui.md)
@@ -195,7 +195,7 @@ ht-degree: 18%
    + [Adobe definierte Funktionen](/help/platform/queries/adobe-defined-functions.md)
    + [Datennutzungsmuster](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [Abfragen ausführen](/help/platform/queries/run-queries.md)
-   + [Datensätze aus Abfrageergebnissen generieren](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
+   + [Generieren von Datensätzen aus Abfrageergebnissen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [Daten analysieren und visualisieren](/help/platform/queries/analyze-and-visualize.md)
    + [Erstellen von Dashboards mit BI-Tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
@@ -238,9 +238,9 @@ ht-degree: 18%
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
    + [Zielgruppe](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
-+ Trends in der Branche {#industry}
++ Branchentrends {#industry}
    + [Die Zukunft des Data Managements und der sich wandelnden Umgebung](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Eine Tabelle mit zwei Wahrnehmungen - Marken im Vergleich zu Verbrauchern](/help/platform/industry/brands-vs-consumers.md)
    + [Entwicklung Ihres Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [Erstellen besserer Erlebnisse mit Kundenprofilen](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
-   + [Datenerfassung im Erstanbieter-Datenkontext](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
+   + [Data Collaboration im Erstanbieter-Datenkontext](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)

@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Customer Journey Analytics - Adobe Experience Platform-Datensätze in Customer Journey Analytics verbinden - Brasilien
-description: Bootcamp - Customer Journey Analytics - Adobe Experience Platform-Datensätze in Customer Journey Analytics verbinden - Brasilien
+title: Bootcamp - Customer Journey Analytics - Verbinden von Adobe Experience Platform-Datensätzen in Customer Journey Analytics - Brasilien
+description: Bootcamp - Customer Journey Analytics - Verbinden von Adobe Experience Platform-Datensätzen in Customer Journey Analytics - Brasilien
 jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
@@ -11,12 +11,12 @@ feature: Connections
 exl-id: 51078fca-f234-4e50-96ba-ee7f5e286869
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 2%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
-# 4.2 Konkrete Datensätze da Adobe Experience Platform kein Customer Journey Analytics
+# 4.2 Konkrete Datensätze da Adobe Experience Platform Customer Journey Analytics
 
 ## Objetivos
 
@@ -27,88 +27,88 @@ ht-degree: 2%
 
 ## 4.2.1 Conexão
 
-Acesse [analytics.adobe.com](https://analytics.adobe.com) para acessar oder Customer Journey Analytics.
+Zugriff auf [analytics.adobe.com](https://analytics.adobe.com) para acessar o Customer Journey Analytics.
 
-Na página inicial do Customer Journey Analytics, acesse **Verbindungen**.
+Na página inicial do Customer Journey Analytics, auf **Verbindungen** zugreifen.
 
-![Demo](./images/cja2.png)
+![demo](./images/cja2.png)
 
 Aqui você pode ver todas as diferentes conexões feitas entre o CJA e a Plataforma. Essas conexões têm o mesmo objetivo dos konuntos de relatórios no Adobe Analytics. Keine entanto, ein coleta dos dados é completamente diferente. Todos os dados vêm de datasets da Adobe Experience Platform.
 
-Vamos criar sua primeira conexão. Clique em **Neue Verbindung erstellen**.
+Vamos criar sua primeira conexão. Klicken Sie auf em **Neue Verbindung erstellen**.
 
-![Demo](./images/cja4.png)
+![demo](./images/cja4.png)
 
-Você verá a UI **Verbindung erstellen** Benutzeroberfläche.
+Você verá a UI **Erstellen einer Verbindung** -Benutzeroberfläche.
 
-![Demo](./images/cja5.png)
+![demo](./images/cja5.png)
 
-Agora você pode dar um nome à sua conexão.
+Agora você pode dar um nome à conexão.
 
-Verwenden Sie das este Modell de nomenclatura: `yourLastName – Omnichannel Data Connection`.
+Verwenden Sie das este Modell von nomenclatura: `yourLastName – Omnichannel Data Connection`.
 
-Exemplar: `vangeluw - Omnichannel Data Connection`
+Beispiel: `vangeluw - Omnichannel Data Connection`
 
-Você também deve selecionar o sandbox correto para usar. No menu sandbox, selecione seu sandbox, que deve ser `Bootcamp`. Neste Exemplo, o sandbox a ser usado é o **Bootcamp**. E você também deve definir **Durchschnittliche Anzahl der täglichen Ereignisse** nach **weniger als 1 Million**.
+Você também deve selecionar o sandbox correto para usar. Keine Menü-Sandbox, Selektions-Sandbox, que-deve-Benutzer `Bootcamp`. Neste Exemplo, o sandbox a ser usado é o **Bootcamp**. E você também deve definir **Durchschnittliche Anzahl der täglichen Ereignisse** bis **weniger als 1 Million**.
 
-![Demo](./images/cjasb.png)
+![demo](./images/cjasb.png)
 
-Após selecionar seu sandbox, você pode começar a adicionar datensets a esta conexão. Clique em **Hinzufügen von Datensätzen**.
+Após selecionar seu sandbox, você pode começar a adicionar datensets a esta conexão. Klicken Sie auf em **Hinzufügen von Datensätzen**.
 
-![Demo](./images/cjasb1.png)
+![demo](./images/cjasb1.png)
 
 ## 4.2.2 Selecione-Datensätze da Adobe Experience Platform
 
-Pesquise oder Datensatz `Demo System - Event Dataset for Website (Global v1.1)`. Clique em **+** para adicionar o dataset a esta conexão.
+Pesquise auf Datensatz `Demo System - Event Dataset for Website (Global v1.1)`. Klicken Sie em **+** para adicionar oder Datensatz a esta conexão.
 
-![Demo](./images/cja7.png)
+![demo](./images/cja7.png)
 
-Agora pesquise e marque as caixas de selekção `Demo System - Event Dataset for Voice Assistants (Global v1.1)` und `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Agora pesquise e marque as caixas de selekção `Demo System - Event Dataset for Voice Assistants (Global v1.1)` and `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
-Em seguida, você verá a tela abaixo. Clique em **Nächste**.
+Em seguida, você verá a tela abaixo. Klicken Sie auf em **Weiter**.
 
-![Demo](./images/cja9.png)
+![demo](./images/cja9.png)
 
 ## 4.2.3 ID da pessoa e compilação de dados
 
 ### ID da pessoa
 
-O objetivo agora é juntar verwendet Datensätze. Para cada dataset selecionado, você verá um campado **Personen-ID**. Cada dataset tem seu próprio campo de ID de pessoa.
+O objetivo agora é juntar verwendet Datensätze. Para cada dataset selecionado, você verá um campo chamado **Personen-ID**. Cada dataset tem seu próprio campo de ID de pessoa.
 
-![Demo](./images/cja11.png)
+![demo](./images/cja11.png)
 
 Como você pode ver, a maioria deles tem o ID da pessoa selecionado automaticamente. Isso ocorre porque um identificador principal é selecionado em cada esquema na Adobe Experience Platform. Como exemplo, aqui está o esquema para `Demo System - Event Schema for Call Center (Global v1.1)`, onde você pode ver que o Identificador Primário está definido como `phoneNumber`.
 
-![Demo](./images/cja13.png)
+![demo](./images/cja13.png)
 
 Keine entanto, você ainda pode influenciar qual identificador será usado para compilar datasets para sua conexão. Você pode usar qualquer identificador konfigurado no esquema vinculado ao seu dataset. Klicken Sie auf kein Menü Suspenso para explorar os IDs disponíveis em cada dataset.
 
-![Demo](./images/cja14.png)
+![demo](./images/cja14.png)
 
 Conforme mencionado, você pode definir diferentes IDs de pessoa para cada dataset. Isso permite reunir diferentes datasets de múltiplas origens no CJA. Stellen Sie sich vor, der NPS ou dados de pesquisa que seriam muito interessantes e úteis para compreender o contexto e o motivo de um acontecimento.
 
-O nome do campo ID da pessoa não é importante, desde que o valor nos campos ID da pessoa corresponda. Digamos que temos `email` em um dataset e `emailAddress` em outro dataset definido como ID da pessoa. Siehe `delaigle@adobe.com` Veretiver o mesmo valor para o campo ID da pessoa em ambos os datasets, o CJA poderá compilar os dados.
+O nome do campo ID da pessoa não é importante, desde que o valor nos campos ID da pessoa corresponda. Digamos que temos `email` em um dataset e `emailAddress` em outro dataset definido como ID da pessoa. Siehe `delaigle@adobe.com` verver o mesmo valor para o campo ID da pessoa em ambos os datasets, o CJA poderá compilar os dados.
 
-Atualmente, existem algumas outras limitações, como compilar o comportamento anônimo para conhecido. Consulte as perguntas frequentes aqui: [FAQs](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de).
+Atualmente, existem algumas outras limitações, como compilar o comportamento anônimo para conhecido. Consulte as perguntas frequentes aqui: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 
 ### Compilando os dados usando o o ID da pessoa
 
-Agora que você compreende o concept de compilar datensets usando o ID da pessoa, vamos escolher `email` como ID da pessoa para cada dataset.
+Agora que você compreende o konzepto de compilar datensets usando o ID da pessoa, vamos escolher `email` como ID da pessoa para cada dataset.
 
-![Demo](./images/cja15.png)
+![demo](./images/cja15.png)
 
 Acesse cada dataset para atualizar o ID da pessoa.
 
-![Demo](./images/cja12a.png)
+![demo](./images/cja12a.png)
 
-Agora preencha o campo ID da pessoa escolhendo `email` las lista Susensa.
+Agora preencha o campo ID da pessoa escolhendo `email` na lista Susensa.
 
-![Demo](./images/cja17.png)
+![demo](./images/cja17.png)
 
 Depois de compilar os três -Datensätze, estamos prontos para Continuar.
 
-| Datensatz | Personen-ID |
+| datensatz | Personen-ID |
 | ----------------- |-------------| 
 | Demosystem - Ereignis-Datensatz für Website (Global v1.1) | E-Mail |
 | Demosystem - Ereignis-Datensatz für Sprachassistenten (Global v1.1) | E-Mail |
@@ -116,18 +116,18 @@ Depois de compilar os três -Datensätze, estamos prontos para Continuar.
 
 Você também preisa garantir que, para cada dataset, essas opções estejam abilitadas:
 
-- Wichtige Tools os novos dados
+- Wichtige Todos os novos dados
 - Preencher todos os dados existentes
 - Preencher tipo de fonte de dados com &quot;Others&quot;
 - Preencher a descrição com o mesmo nome do Dataset
 
-Clique em **Hinzufügen von Datensätzen**.
+Klicken Sie auf em **Hinzufügen von Datensätzen**.
 
-![Demo](./images/cja16.png)
+![demo](./images/cja16.png)
 
-Clique em **Speichern** e vá para o próximo übício. Depois de criar sua **Verbindung**, pode levar algumas horas até que seus dados estejam disponíveis no CJA.
+Klicken Sie em **Save** e vá para o próximo übício. Depois de criar sua **Connection**, pode levar algumas horas até que seus dados estejam disponíveis no CJA.
 
-![Demo](./images/cja20.png)
+![demo](./images/cja20.png)
 
 Próxima etapa: [4.3 Crie uma Visualização de Dados](./ex3.md)
 

@@ -11,8 +11,8 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 31f2bbcc-3fd5-4448-a9aa-b79a82e13809
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 4%
+source-wordcount: '215'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Dieses Tutorial wurde erstellt, um ein bestimmtes Bootcamp-Format zu vereinfachen. Es verwendet bestimmte Systeme und Konten, auf die Sie möglicherweise keinen Zugriff haben. Auch ohne Zugriff können Sie noch viel lernen, indem Sie diesen sehr detaillierten Inhalt durchlesen. Wenn Sie an einem Bootcamp teilnehmen und Ihre Zugangsdaten benötigen, wenden Sie sich an Ihren Kundenbetreuer, der Ihnen die erforderlichen Informationen zur Verfügung stellt.
+>Dieses Tutorial wurde erstellt, um ein bestimmtes Bootcamp-Format zu vereinfachen. Es verwendet bestimmte Systeme und Konten, auf die Sie möglicherweise keinen Zugriff haben. Auch ohne Zugriff können Sie noch viel lernen, indem Sie diesen sehr detaillierten Inhalt durchlesen. Wenn Sie an einem Bootcamp teilnehmen und Ihre Zugangsdaten benötigen, wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, der Ihnen die erforderlichen Informationen zur Verfügung stellt.
 
 ## Übungen
 
@@ -50,9 +50,9 @@ In dieser Übung testen Sie die soeben erstellte Journey.
 
 [2.5 Mobile App installieren und verwenden](./ex5.md)
 
-In dieser Übung installieren Sie die App.
+In dieser Übung installieren Sie die mobile App.
 
-[2.6 Personalisierung im Callcenter](./ex6.md)
+[2.6 Personalization im Callcenter](./ex6.md)
 
 In dieser Übung werden Sie sehen, wie ein Callcenter-Erlebnis basierend auf der Intelligenz von Adobe Experience Platform optimiert werden kann.
 
