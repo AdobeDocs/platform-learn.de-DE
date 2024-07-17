@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: 9cb56b739efde38d8e85358f45ee6a35a0394e27
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 1%
@@ -123,7 +123,7 @@ So konfigurieren Sie die Option in der Zusammenführungsrichtlinie:
 
 Um Inhaltsexperimente in Webkanalkampagnen zu verwenden, müssen Sie sicherstellen, dass der verwendete Webdatensatz auch in Ihrer Berichtskonfiguration enthalten ist. Das Journey Optimizer-Berichterstattungssystem verwendet den Datensatz schreibgeschützt, um native Inhaltsexperimentierungsberichte auszufüllen.
 
-[Das Hinzufügen von Datensätzen für die Berichterstellung zu Inhaltsexperimenten wird in diesem Abschnitt beschrieben.](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration#add-datasets)
+[Das Hinzufügen von Datensätzen für die Berichterstellung zu Inhaltsexperimenten wird in diesem Abschnitt beschrieben.](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration#add-datasets)
 
 ## Nutzungsszenario - Überblick über Treuebelohnungen
 
