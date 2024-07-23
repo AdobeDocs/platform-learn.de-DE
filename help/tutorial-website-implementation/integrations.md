@@ -2,10 +2,10 @@
 title: Implementieren von Experience Cloud-Integrationen mit Tags
 description: Erfahren Sie, wie Sie die Integrationen von Zielgruppen, A4T und Kundenattributen in Ihrer Adobe Experience Cloud-Implementierung überprüfen. Diese Lektion ist Teil des Tutorials zum Implementieren des Experience Cloud in Websites .
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 86%
+source-wordcount: '1199'
+ht-degree: 85%
 
 ---
 
@@ -28,13 +28,12 @@ Bevor Sie die Anleitungen in dieser Lektion befolgen, sollten Sie alle vorherige
 >
 >Es gibt viele Anforderungen an Benutzerberechtigungen, Kontokonfigurationen und Bereitstellungsschritte, die für die vollständige Verwendung dieser Integrationen erforderlich sind und die über den Rahmen dieses Tutorials hinausgehen. Wenn Sie diese Integrationen noch nicht in Ihrer aktuellen Experience Cloud-Implementierung verwenden, sollten Sie Folgendes berücksichtigen:
 >
->* Überprüfen Sie die vollständigen Anforderungen der [Core Services-Integrationen.](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=de)
->* Überprüfen Sie die vollständigen Anforderungen für die [Integration von Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
->* Bitten Sie einen Administrator Ihrer Experience Cloud-Organisation, die [Bereitstellung dieser Integrationen anzufordern](https://www.adobe.com/go/audiences)
+>* Überprüfen Sie die vollständigen Anforderungen der [Core Services-Integrationen.](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
+>* Überprüfen Sie die vollständigen Anforderungen für die [Integration von Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
 
 ## Zielgruppen
 
-[Zielgruppen](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) sind Teil des zentralen Dienstes „Personen“ und ermöglichen es Ihnen, Zielgruppen zwischen verschiedenen Lösungen zu teilen. Sie können beispielsweise eine Zielgruppe in Audience Manager erstellen und sie verwenden, um mit Target personalisierte Inhalte bereitzustellen.
+[Zielgruppen](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/overview) sind Teil des zentralen Dienstes „Personen“ und ermöglichen es Ihnen, Zielgruppen zwischen verschiedenen Lösungen zu teilen. Sie können beispielsweise eine Zielgruppe in Audience Manager erstellen und sie verwenden, um mit Target personalisierte Inhalte bereitzustellen.
 
 Die wichtigsten Voraussetzungen für die Implementierung von A4T – die Sie bereits erfüllt haben – sind:
 
