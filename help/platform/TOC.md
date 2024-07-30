@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
+source-git-commit: cd1f166eac926688313812a67c1b5664608cb9cf
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 19%
+source-wordcount: '917'
+ht-degree: 20%
 
 ---
 
@@ -49,6 +49,7 @@ ht-degree: 19%
 + Zielgruppen und Segmentierung {#audiences}
    + [Einführung in Audience Portal und Komposition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Hochladen von Zielgruppen](audiences/upload-audiences.md)
+   + [Übersicht über die Zusammenstellung von Federated Audience](audiences/overview-of-federated-audience-composition.md)
    + [Übersicht über Audience Rule Builder](audiences/audience-rule-builder-overview.md)
    + [Erstellen von Zielgruppen](audiences/create-audiences.md)
    + [Inhaltsbasierte Zielgruppen erstellen](audiences/create-content-based-audiences.md)
@@ -83,13 +84,13 @@ ht-degree: 19%
    + [Datensätze und Batches löschen](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Läuft ab Datensätze](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Pseudonyme Profil- und Ereignisablauf (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-   + [Profile löschen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
+   + [Löschen von Profilen](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [Profilattribut aktualisieren](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Datenerfassung {#data-ingestion}
    + [Übersicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Übersicht über die Batch-Aufnahme](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Datensatz erstellen und ausfüllen](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Datensätze und Batches löschen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
+   + [Löschen von Datensätzen und Batches](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [Zuordnen einer CSV-Datei zu XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Quellen – Übersicht](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Aufnehmen von Daten aus Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=de)
