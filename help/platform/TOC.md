@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: cd1f166eac926688313812a67c1b5664608cb9cf
+source-git-commit: 1a3b89f7be838aeff389e7f404114ed3fef370d7
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 20%
 
 ---
@@ -52,6 +52,7 @@ ht-degree: 20%
    + [Übersicht über die Zusammenstellung von Federated Audience](audiences/overview-of-federated-audience-composition.md)
    + [Übersicht über Audience Rule Builder](audiences/audience-rule-builder-overview.md)
    + [Erstellen von Zielgruppen](audiences/create-audiences.md)
+   + [Verwenden von Zeitbeschränkungen](audiences/time-constraints.md)
    + [Inhaltsbasierte Zielgruppen erstellen](audiences/create-content-based-audiences.md)
    + [Erstellen von Konversionszielgruppen](audiences/create-conversion-audiences.md)
    + [Erstellen von Zielgruppen aus vorhandenen Zielgruppen](audiences/create-audiences-from-existing-audiences.md)
