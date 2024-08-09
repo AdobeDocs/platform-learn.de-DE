@@ -2,7 +2,7 @@
 title: Bibliothek ersetzen | Migrieren von Target von at.js 2.x zum Web SDK
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung von at.js 2.x auf das Adobe Experience Platform Web SDK migrieren. Zu den Themen gehören die Bibliotheksübersicht, Implementierungsunterschiede und andere bemerkenswerte Hinweise.
 exl-id: dfafa132-376a-475d-a467-9bc2f0a414cf
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: 07c3c5b3f45eeb02e94a25dbd164b7397cb7869d
 workflow-type: tm+mt
 source-wordcount: '1594'
 ht-degree: 3%
@@ -193,7 +193,7 @@ Wenn Ihre Implementierung asynchron wie die obigen Beispiele ist, ersetzen Sie d
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("mboxEdit") !== -1, "body { opacity: 0 !important }", 3000);
 </script>
 ```
 
