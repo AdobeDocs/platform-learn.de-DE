@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Sch
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 3%
@@ -58,7 +58,7 @@ Dies ist das Ziel von Adobe [Erlebnisdatenmodell](https://business.adobe.com/pro
 >
 > Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema, um die angezeigten Inhalte und die von Kunden auf der [Demosite &quot;Luma&quot;](https://luma.enablementadobe.com/content/luma/us/en.html) gekauften Produkte zu erfassen. Sie können diese Schritte zwar verwenden, um ein anderes Schema für Ihre eigenen Zwecke zu erstellen, es wird jedoch empfohlen, zunächst das Beispielschema zu erstellen, um mehr über die Funktionen des Schema-Editors zu erfahren.
 
-Weiterführende Informationen zu XDM-Schemata finden Sie im Kurs [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=de) oder in der [XDM-Systemübersicht](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
+Weitere Informationen zu XDM-Schemas finden Sie in der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oder in der [XDM-Systemübersicht](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
 ## Lernziele
 
