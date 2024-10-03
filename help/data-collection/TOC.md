@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
+source-git-commit: 38696ad5f8e151d1b7a42055d844fb98e8dccb86
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 28%
+source-wordcount: '191'
+ht-degree: 29%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 28%
    + [Regeln erstellen](tags/build-rules.md)
    + [Regeln stapeln](tags/stack-rules.md)
    + [Erstellen und Veröffentlichen einer Bibliothek](tags/build-and-publish-a-library.md)
-   + [Implementieren in Websites mit Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de){target="_blank"}
+   + [Implementieren in Websites mit Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
    + [Implementieren in Websites mit Lösungs-SDKs](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=de){target="_blank"}
    + [Implementieren in mobile Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de){target="_blank"}
 + Web SDK{#web-sdk}
    + [Übersicht](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
-   + [Tutorial zur Implementierung (mit Tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de){target="_blank"}
+   + [Tutorial zur Implementierung (mit Tags)](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
    + [Tutorial Target migrieren](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
    + Einverständnis{#consent}
       + [Übersicht](web-sdk/consent/overview.md)
@@ -50,6 +50,7 @@ ht-degree: 28%
    + [Übersicht](server-api/overview.md)
    + [Grundlagen von APIs](server-api/introduction.md)
 + Ereignisweiterleitung{#event-forwarding}
+   + [Webinar](event-forwarding/webinar.md)
    + [Übersicht](event-forwarding/overview.md)
    + [Erstellen einer Eigenschaft](event-forwarding/create-a-property.md)
    + [Einrichten eines Datastreams](event-forwarding/set-up-a-datastream.md)

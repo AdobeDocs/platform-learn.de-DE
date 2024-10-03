@@ -1,8 +1,8 @@
 ---
-title: Validieren von Target-Implementierungen mit dem Web SDK | Migrieren von Target von at.js 2.x zum Web SDK
+title: Target-Implementierungen mit Web SDK überprüfen - Target von at.js 2.x auf Web SDK migrieren
 description: Erfahren Sie, wie Sie Aktivitäten validieren und eine Adobe Target-Implementierung mit dem Adobe Experience Platform Web SDK debuggen.
 exl-id: 09b4ebeb-fae9-470d-8ea9-f6e3c7d7da5e
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%
