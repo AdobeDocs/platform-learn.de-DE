@@ -9,9 +9,9 @@ duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
 exl-id: 4b231a49-5df8-4bad-800f-e58807b69aaa
-source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
+source-git-commit: 050bfd05f39ee0736d188d7bcb5cc6ed6c5e320e
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '74'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,6 @@ Erfahren Sie, wie Sie eine Sandbox für Anwendungsfälle-Playbooks konfigurieren
 1. Berechtigungen und Benutzer zur Sandbox hinzufügen
 1. Konfigurieren von Kanaloberflächen für E-Mail, Push und SMS
 
-Weitere Informationen finden Sie unter [Erste Schritte](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=de).
+Weitere Informationen finden Sie unter [Erste Schritte mit den Nutzungsszenarios-Playbooks](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
