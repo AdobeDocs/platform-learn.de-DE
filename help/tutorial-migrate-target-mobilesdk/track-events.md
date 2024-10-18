@@ -1,14 +1,14 @@
 ---
-title: Ereignisse verfolgen - Migration von Target von at.js 2.x zum Web SDK
-description: Erfahren Sie, wie Sie Adobe Target-Konversionsereignisse mithilfe des Experience Platform Web SDK verfolgen.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: Ereignisse verfolgen - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
+description: Erfahren Sie, wie Sie Adobe Target-Konversionsereignisse mithilfe der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung verfolgen.
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
 
-# Verfolgen von Target-Konversionsereignissen mit dem Platform Web SDK
+# Tracking von Target-Konversionsereignissen mit der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
 
 Konversionsereignisse für Target können mit verfolgt werden... Konversionsereignisse fallen normalerweise in die folgenden Kategorien:
 
@@ -35,4 +35,4 @@ Als Nächstes erfahren Sie, wie Sie [die domänenübergreifende ID-Freigabe akti
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Migration Ihrer mobilen Target-Erweiterung von der Target-Erweiterung zur Optimierungserweiterung. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir unterstützen Sie bei der erfolgreichen Migration Ihrer mobilen Target-Erweiterung von der Target-Erweiterung zur Decisioning-Erweiterung. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.

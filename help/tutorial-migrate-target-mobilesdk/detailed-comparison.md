@@ -1,14 +1,14 @@
 ---
-title: Vergleich der Target-Erweiterung mit der Optimize-Erweiterung
+title: Vergleich der Target-Erweiterung mit der Decisioning-Erweiterung
 description: Lernen Sie die Unterschiede zwischen at.js 2.x und dem Platform Web SDK kennen, einschließlich Funktionen, Einstellungen und Datenfluss.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 5%
 
 ---
 
-# Vergleich der Target-Erweiterung mit der Optimize-Erweiterung
+# Vergleich der Target-Erweiterung mit der Decisioning-Erweiterung
 
 Die eigenständige Adobe Target at.js-Bibliothek unterscheidet sich erheblich vom Platform Web SDK. Die folgenden Tabellen sind eine Referenz, die Sie bei der Bewertung von Bereichen Ihrer Implementierung unterstützen soll, auf die Sie sich während des Migrationsprozesses konzentrieren müssen.
 
@@ -23,7 +23,7 @@ Wenn Sie mit dem Platform Web SDK noch nicht vertraut sind, machen Sie sich kein
 
 ## Funktionsvergleich
 
-| | Target-Erweiterung | Erweiterung optimieren (Target über Edge) | AJO Code-basierte Erlebnisse (Messaging SDK) |
+| | Target-Erweiterung | Decisioning-Erweiterung (Target über Edge) | AJO Code-basierte Erlebnisse (Messaging SDK) |
 |---|---|---|---|
 | Vorabruf-Modus | Unterstützt | Unterstützt | Unterstützt |
 | Ausführungsmodus | Unterstützt | Nicht unterstützt | Nicht unterstützt |
@@ -47,19 +47,19 @@ Wenn Sie mit dem Platform Web SDK noch nicht vertraut sind, machen Sie sich kein
 >
 > Es ist möglich, Ihre at.js- (und AppMeasurement.js-) Implementierung auf Platform Web SDK einzeln zu migrieren. Wenn Sie diesen Ansatz wählen, ist es am besten, die Optionen [`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) und [`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled) mit dem Befehl `configure` auf `true` festzulegen.
 
-## Funktionen der Target-Erweiterung und Äquivalente der Optimize-Erweiterung
+## Funktionen der Target-Erweiterung und Entsprechungen der Decisioning-Erweiterung
 
-Viele Target-Erweiterungsfunktionen verfügen über einen gleichwertigen Ansatz mit der in der folgenden Tabelle beschriebenen Optimierungserweiterung. Weitere Informationen zu den [Funktionen](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/) finden Sie im Adobe Target-Entwicklerhandbuch.
+Viele Target-Erweiterungsfunktionen verfügen über einen gleichwertigen Ansatz unter Verwendung der in der folgenden Tabelle beschriebenen Decisioning-Erweiterung. Weitere Informationen zu den [Funktionen](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/) finden Sie im Adobe Target-Entwicklerhandbuch.
 
-| Target-Erweiterung | Erweiterung optimieren |
+| Target-Erweiterung | Entscheidungserweiterung |
 | --- | --- | 
 | |  |
 
-## Target-Erweiterungseinstellungen und Erweiterungsäquivalente optimieren
+## Target-Erweiterungseinstellungen und Entsprechungen von Decisioning-Erweiterungen
 
 Die Target-Erweiterung kann mit verschiedenen Einstellungen in der ...
 
-| Target-Erweiterung | Erweiterung optimieren |
+| Target-Erweiterung | Entscheidungserweiterung |
 | --- | --- | 
 | |  |
 
@@ -72,11 +72,11 @@ Die folgenden Diagramme sollen Ihnen dabei helfen, die Unterschiede zwischen ein
 
 
 
-### Erweiterungssystemdiagramm optimieren
+### Decisioning Extensionsystem-Diagramm
 
 
 
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Migration Ihrer mobilen Target-Erweiterung von der Target-Erweiterung zur Optimierungserweiterung. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir unterstützen Sie bei der erfolgreichen Migration Ihrer mobilen Target-Erweiterung von der Target-Erweiterung zur Decisioning-Erweiterung. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
