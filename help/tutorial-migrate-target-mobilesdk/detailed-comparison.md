@@ -1,9 +1,9 @@
 ---
 title: Vergleich der Target-Erweiterung mit der Decisioning-Erweiterung
 description: Erfahren Sie mehr über die Unterschiede zwischen der Target-Erweiterung und der Decisioning-Erweiterung, einschließlich Funktionen, Einstellungen und Datenfluss.
-source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
+source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 4%
 
 ---
@@ -23,8 +23,8 @@ Wenn Sie mit dem Platform Web SDK noch nicht vertraut sind, machen Sie sich kein
 
 ## Funktionsvergleich
 
-| | Target-Erweiterung | Decisioning-Erweiterung (Target über Edge) |
-|---|---|---|---|
+| Funktion | Target-Erweiterung | Decisioning-Erweiterung (Target über Edge) |
+|---|---|---|
 | Vorabruf-Modus | Unterstützt | Unterstützt |
 | Ausführungsmodus | Unterstützt | Nicht unterstützt |
 | Benutzerdefinierte Parameter | Unterstützt | Pro Mbox-Parameter werden nicht unterstützt |
