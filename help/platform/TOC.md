@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
+source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 20%
+source-wordcount: '934'
+ht-degree: 21%
 
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 20%
 + [Bei Experience Platform-APIs authentifizieren](/help/platform/authentication/platform-api-authentication.md)
 + [Importieren von Beispieldaten auf Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
-   + [Verwenden des KI-Assistenten](/help/platform/admin/ai-assistant.md)
    + [Verwenden von Warnhinweisen](/help/platform/admin/use-alerts.md)
    + [Verwenden von Sandboxes](/help/platform/admin/use-sandboxes.md)
    + [Kopieren von Objekten zwischen Sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -46,6 +45,9 @@ ht-degree: 20%
    + [Entwickler hinzufügen](/help/platform/admin/add-developers.md)
    + [Produktadministratoren hinzufügen](/help/platform/admin/add-product-administrators.md)
    + [Konfigurieren der attributbasierten Zugriffssteuerung](/help/platform/admin/configure-attribute-based-access-control.md)
++ KI-Assistent {#ai-assistant}
+   + [Übersicht](/help/platform/ai-assistant/overview.md)
+   + [Zielgruppen bereinigen](/help/platform/ai-assistant/find-unused-audiences.md)
 + Zielgruppen und Segmentierung {#audiences}
    + [Einführung in Audience Portal und Komposition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Hochladen von Zielgruppen](audiences/upload-audiences.md)
@@ -77,7 +79,7 @@ ht-degree: 20%
 + Data Governance {#data-governance}
    + [Übersicht](/help/platform/governance/understanding-data-governance.md)
    + [End-to-End-Demo](/help/platform/governance/introduction-to-data-governance.md)
-   + [Daten mithilfe von Bezeichnungen klassifizieren](/help/platform/governance/classify-data-using-labels.md)
+   + [Klassifizieren von Daten mithilfe von Labels](/help/platform/governance/classify-data-using-labels.md)
    + [Erstellen von Richtlinien zur Datennutzung](/help/platform/governance/create-data-usage-policies.md)
    + [Durchsetzen von Richtlinien zur Datennutzung](/help/platform/governance/enforce-data-usage-policies.md)
    + [Zustimmung erzwingen](/help/platform/governance/enforce-consent.md)

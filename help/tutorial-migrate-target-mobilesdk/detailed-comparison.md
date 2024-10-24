@@ -1,9 +1,9 @@
 ---
 title: Vergleich der Target-Erweiterung mit der Decisioning-Erweiterung
 description: Erfahren Sie mehr über die Unterschiede zwischen der Target-Erweiterung und der Decisioning-Erweiterung, einschließlich Funktionen, Einstellungen und Datenfluss.
-source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
+source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ Wenn Sie mit dem Platform Web SDK noch nicht vertraut sind, machen Sie sich kein
 | Benutzerdefinierte Parameter | Unterstützt | Pro Mbox-Parameter werden nicht unterstützt |
 | Einstiegszielgruppen | Unterstützt | Unterstützt |
 | Zielgruppensegmentierung mithilfe mobiler Lebenszyklusmetriken | Unterstützt | Unterstützt über Datenerfassungsregeln |
-| thirdPartyId (mbox3rdPartyId) | Wird über Identity Map und die Namespace-Konfiguration im Datastream unterstützt |
+| thirdPartyId (mbox3rdPartyId) | Unterstützt | Wird über Identity Map und die Namespace-Konfiguration im Datastream unterstützt |
 | Benachrichtigungen (anzeigen, klicken) | Unterstützt | Unterstützt |
 | Antwort-Token | Unterstützt | Unterstützt |
 | Dynamische Angebote | Unterstützt | Unterstützt |
