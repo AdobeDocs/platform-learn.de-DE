@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
+source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 21%
+source-wordcount: '939'
+ht-degree: 20%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 21%
    + [Übersicht](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [End-to-End-Demo](/help/platform/rtcdp/demo.md)
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-   + [Übersicht über B2B Edition](/help/platform/rtcdp/b2b-overview.md)
+   + [Überblick über B2B edition](/help/platform/rtcdp/b2b-overview.md)
    + [Kampagnen mit Marketo Engage koordinieren](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Erste Schritte: Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de){target="_blank"}
 + [Bei Experience Platform-APIs authentifizieren](/help/platform/authentication/platform-api-authentication.md)
@@ -39,7 +39,8 @@ ht-degree: 21%
 + Administration {#admin}
    + [Verwenden von Warnhinweisen](/help/platform/admin/use-alerts.md)
    + [Verwenden von Sandboxes](/help/platform/admin/use-sandboxes.md)
-   + [Kopieren von Objekten zwischen Sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Pakete zwischen Sandboxes kopieren](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Pakete über IMS-Organisationen freigeben](/help/platform/admin/share-packages-across-orgs.md)
    + [Benutzer hinzufügen](/help/platform/admin/add-users.md)
    + [Benutzer zur Datenerfassung hinzufügen](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Entwickler hinzufügen](/help/platform/admin/add-developers.md)
