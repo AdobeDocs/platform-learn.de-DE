@@ -3,7 +3,7 @@ title: Daten aus Google Analytics in Adobe Experience Platform mit BigQuery Sour
 description: Daten aus Google Analytics in Adobe Experience Platform mit BigQuery Source Connector erfassen und analysieren - Erstellen Sie Ihre erste Abfrage in BigQuery
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Verwenden Sie für die **Datensatz-ID** die folgende Namenskonvention. Für die 
 
 | Benennung | Beispiel |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
 
 ![demo](./images/ex3/6.png)
 
@@ -254,19 +254,19 @@ Anschließend wird ein neues Popup angezeigt, in dem Ihr **Projektname** und Ihr
 
 | Benennung | Beispiel |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
 
 Jetzt müssen Sie einen Tabellennamen eingeben. Bitte verwenden Sie diese Namenskonvention:
 
 | Benennung | Beispiel |
 | ----------------- |------------- | 
-| `--demoProfileLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
+| `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 ![demo](./images/ex3/16.png)
 
 Klicken Sie auf **SPEICHERN**.
 
-Es kann einige Zeit dauern, bis die Daten in der von Ihnen erstellten Tabelle bereit sind. Aktualisieren Sie den Browser nach einigen Minuten. Anschließend sollte die Tabelle `--demoProfileLdap--_GAdataTableBigquery` in Ihrem Datensatz unter **Explorer** in Ihrem BigQuery-Projekt angezeigt werden.
+Es kann einige Zeit dauern, bis die Daten in der von Ihnen erstellten Tabelle bereit sind. Aktualisieren Sie den Browser nach einigen Minuten. Anschließend sollte die Tabelle `--aepUserLdap--_GAdataTableBigquery` in Ihrem Datensatz unter **Explorer** in Ihrem BigQuery-Projekt angezeigt werden.
 
 ![demo](./images/ex3/19.png)
 

@@ -3,7 +3,7 @@ title: Customer AI - Scoring-Dashboard und Segmentierung (Vorhersage und Aktion)
 description: Customer AI - Scoring-Dashboard und Segmentierung (Vorhersage und Aktion)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Sie werden sehen, dass eine Segmentdefinition automatisch erstellt wird.
 
 ![Segmentregel](./images/caicreatesegment.png)
 
-Geben Sie Ihrem Segment einen Namen gemäß dieser Benennungsregel: `--demoProfileLdap-- - Customer AI High Propensity`. Klicken Sie auf **Speichern**.
+Geben Sie Ihrem Segment einen Namen gemäß dieser Benennungsregel: `--aepUserLdap-- - Customer AI High Propensity`. Klicken Sie auf **Speichern**.
 
 ![Segmentregel](./images/caicreatesegment1.png)
 

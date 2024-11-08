@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Einrichten und Verwenden von Push-Benachrichtig
 description: Push-Benachrichtigungen für iOS einrichten und verwenden
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 6%
@@ -28,7 +28,7 @@ Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience C
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxId--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxId--`.
+Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -48,7 +48,7 @@ Aktivieren Sie die Option **Systemdatensätze anzeigen** und suchen Sie nach **A
 
 Wechseln Sie zu [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
-Navigieren Sie im linken Menü zu **[!UICONTROL Datastream]** und suchen Sie nach Ihrem Datastream, den Sie in [Übung 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) erstellt haben, der den Namen `--demoProfileLdap-- - Demo System Datastream (Mobile)` trägt. Klicken Sie auf , um es zu öffnen.
+Navigieren Sie im linken Menü zu **[!UICONTROL Datastream]** und suchen Sie nach Ihrem Datastream, den Sie in [Übung 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) erstellt haben, der den Namen `--aepUserLdap-- - Demo System Datastream (Mobile)` trägt. Klicken Sie auf , um es zu öffnen.
 
 ![Klicken Sie auf das Datastraam-Symbol in der linken Navigation](./images/edgeconfig1a.png)
 
@@ -169,7 +169,7 @@ Klicken Sie auf **Starten**.
 
 Füllen Sie die Werte aus:
 
-- Sitzungsname: Verwenden Sie `--demoProfileLdap-- - push debugging` und ersetzen Sie ldap durch Ihren ldap
+- Sitzungsname: Verwenden Sie `--aepUserLdap-- - push debugging` und ersetzen Sie ldap durch Ihren ldap
 - Basis-URL: Verwenden Sie **dxdemo://default**
 
 Klicken Sie auf **Weiter**.
@@ -232,7 +232,7 @@ Anschließend wird eine leere Ereigniskonfiguration angezeigt.
 
 ![ACOP](./images/emptyevent.png)
 
-Geben Sie zunächst Ihrem Ereignis einen Namen wie folgt: `--demoProfileLdap--StoreEntryEvent` und legen Sie die Beschreibung auf `Store Entry Event` fest.
+Geben Sie zunächst Ihrem Ereignis einen Namen wie folgt: `--aepUserLdap--StoreEntryEvent` und legen Sie die Beschreibung auf `Store Entry Event` fest.
 
 ![ACOP](./images/eventname.png)
 
@@ -283,11 +283,11 @@ Wechseln Sie im Menü zu **Journey** und klicken Sie auf **Journey erstellen**.
 
 ![DSN](./images/sjourney1.png)
 
-Dann wirst du das sehen. Benennen Sie Ihre Journey. Verwenden Sie `--demoProfileLdap-- - Store Entry journey`. Klicken Sie auf **OK**.
+Dann wirst du das sehen. Benennen Sie Ihre Journey. Verwenden Sie `--aepUserLdap-- - Store Entry journey`. Klicken Sie auf **OK**.
 
 ![DSN](./images/sjourney3.png)
 
-Zunächst müssen Sie Ihr Ereignis als Ausgangspunkt Ihrer Journey hinzufügen. Suchen Sie nach Ihrem Ereignis `--demoProfileLdap--StoreEntryEvent` und ziehen Sie es auf die Arbeitsfläche. Klicken Sie auf **OK**.
+Zunächst müssen Sie Ihr Ereignis als Ausgangspunkt Ihrer Journey hinzufügen. Suchen Sie nach Ihrem Ereignis `--aepUserLdap--StoreEntryEvent` und ziehen Sie es auf die Arbeitsfläche. Klicken Sie auf **OK**.
 
 ![DSN](./images/sjourney4.png)
 

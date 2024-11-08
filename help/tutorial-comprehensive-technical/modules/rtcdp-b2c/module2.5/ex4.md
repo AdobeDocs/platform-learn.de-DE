@@ -3,7 +3,7 @@ title: Datenerfassung und serverseitige Weiterleitung in Echtzeit - Erstellen un
 description: Erstellen und Konfigurieren einer Google Cloud-Funktion
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Dann wirst du das sehen.
 
 Nehmen Sie die folgenden Optionen vor:
 
-- **Funktionsname**: `--demoProfileLdap---event-forwarding`
+- **Funktionsname**: `--aepUserLdap---event-forwarding`
 - **Region**: Wählen Sie eine beliebige Region aus.
 - **Trigger Type**: select **HTTP**
 - **Authentifizierung**: Wählen Sie **Nicht authentifizierte Aufrufe zulassen** aus.

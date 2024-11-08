@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Ereig
 description: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -16,7 +16,7 @@ Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience C
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxId--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxId--`.
+Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -32,7 +32,7 @@ Daraufhin wird ein neues, leeres Ereignisfenster angezeigt.
 
 ![ACOP](./images/emptyevent1.png)
 
-Verwenden Sie als Namen für das Ereignis `--demoProfileLdap--GeofenceEntry`. In diesem Beispiel ist der Ereignisname `vangeluwGeofenceEntry`.
+Verwenden Sie als Namen für das Ereignis `--aepUserLdap--GeofenceEntry`. In diesem Beispiel ist der Ereignisname `vangeluwGeofenceEntry`.
 
 Legen Sie für Beschreibung den Wert `Geofence Entry Event` fest.
 

@@ -3,7 +3,7 @@ title: Datenerfassung und Ereignisweiterleitung - Weiterleiten von Ereignissen a
 description: Weiterleiten von Ereignissen an das AWS-Ökosystem
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd603fdcbac6cc77b00d50be888805329f014443
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Dann sehen Sie die Homepage von **Amazon S3**. Klicken Sie auf **Behälter erste
 
 Im Bildschirm **Behälter erstellen** müssen Sie zwei Elemente konfigurieren:
 
-- Name: Verwenden Sie den Namen `eventforwarding---demoProfileLdap--`. Beispiel: In dieser Übung lautet der Behältername **aepmodulertcdpvangeluw**
+- Name: Verwenden Sie den Namen `eventforwarding---aepUserLdap--`. Beispiel: In dieser Übung lautet der Behältername **aepmodulertcdpvangeluw**
 - Region: Region **EU (Frankfurt) eu-central-1**
 
 ![ETL](./images/bucketname.png)
@@ -78,7 +78,7 @@ Wählen Sie **Kinesis Data Streams** aus. Klicken Sie auf **Datenstrom erstellen
 
 ![ETL](./images/kinesis2.png)
 
-Verwenden Sie für den **Datenstrom-Namen** `--demoProfileLdap---datastream`.
+Verwenden Sie für den **Datenstrom-Namen** `--aepUserLdap---datastream`.
 
 ![ETL](./images/kinesis3.png)
 
@@ -246,7 +246,7 @@ Dann wirst du das sehen. Füllen Sie die Einstellungen wie folgt aus:
 - Wählen Sie das Protokoll aus: Wählen Sie **REST** aus.
 - Neue API erstellen: Wählen Sie **Neue API** aus.
 - Einstellungen:
-   - API-Name: use `--demoProfileLdap---eventforwarding`
+   - API-Name: use `--aepUserLdap---eventforwarding`
    - Endpunkttyp: Wählen Sie **regional** aus.
 
 Klicken Sie auf **API erstellen**.
@@ -341,7 +341,7 @@ Scrollen Sie nach unten und fügen Sie diesen Code unter **Anforderungstext** ei
     "dynamicPartitioningKey": "v2"
   },
   "PartitionKey": "1",
-  "StreamName": "--demoProfileLdap---datastream"
+  "StreamName": "--aepUserLdap---datastream"
 }
 ```
 
@@ -370,14 +370,14 @@ curl --location --request POST 'https://vv1i5vwg2k.execute-api.us-west-2.amazona
 --header 'Content-Type: application/json' \
 --data-raw '{
     "Data": {
-        "userid": "--demoProfileLdap--@adobe.com",
-        "firstName":"--demoProfileLdap--",
+        "userid": "--aepUserLdap--@adobe.com",
+        "firstName":"--aepUserLdap--",
         "offerName":"10% off on outdoor gears",
         "offerCode": "10OFF-SPRING",
         "dynamicPartitioningKey": "campaign"
     },
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }'
 ```
 
@@ -470,7 +470,7 @@ Dann wirst du das sehen. Fügen Sie den folgenden Code in das Feld **Hauptteil (
 {
     "Data":{{awsDataObject}},
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }
 ```
 

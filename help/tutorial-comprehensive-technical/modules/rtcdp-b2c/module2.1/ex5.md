@@ -3,7 +3,7 @@ title: Foundation - Echtzeit-Kundenprofil - Erstellen eines Segments - API
 description: Foundation - Echtzeit-Kundenprofil - Erstellen eines Segments - API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 3%
@@ -77,11 +77,11 @@ Sie sollten auch die Felder **Kopfzeile** - Ihrer Anforderung überprüfen. Wech
 
 | Schlüssel | Wert |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->Sie müssen den Namen der verwendeten Adobe Experience Platform-Sandbox angeben. Ihr x-sandbox-name sollte `--aepSandboxId--` sein.
+>Sie müssen den Namen der verwendeten Adobe Experience Platform-Sandbox angeben. Ihr x-sandbox-name sollte `--aepSandboxName--` sein.
 
 Klicken Sie nun auf die blaue Schaltfläche **Senden** , um das Segment zu erstellen und die Ergebnisse anzuzeigen.
 
@@ -111,11 +111,11 @@ Sie sollten auch die Felder **Kopfzeile** - Ihrer Anforderung überprüfen. Wech
 
 | Schlüssel | Wert |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->Sie müssen den Namen der verwendeten Adobe Experience Platform-Sandbox angeben. Ihr x-sandbox-name sollte `--aepSandboxId--` sein.
+>Sie müssen den Namen der verwendeten Adobe Experience Platform-Sandbox angeben. Ihr x-sandbox-name sollte `--aepSandboxName--` sein.
 
 Klicken Sie auf die blaue Schaltfläche **Senden**.
 
@@ -142,11 +142,11 @@ Sie sollten auch die Felder **Kopfzeile** - Ihrer Anforderung überprüfen. Wech
 
 | Schlüssel | Wert |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->Sie müssen den Namen der verwendeten Adobe Experience Platform-Sandbox angeben. Ihr x-sandbox-name sollte `--aepSandboxId--` sein.
+>Sie müssen den Namen der verwendeten Adobe Experience Platform-Sandbox angeben. Ihr x-sandbox-name sollte `--aepSandboxName--` sein.
 
 Klicken Sie auf die blaue Schaltfläche **Senden**.
 

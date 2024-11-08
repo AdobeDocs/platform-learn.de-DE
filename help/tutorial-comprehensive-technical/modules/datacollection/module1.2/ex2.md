@@ -3,7 +3,7 @@ title: Foundation - Datenerfassung - Konfigurieren von Schemata und Festlegen vo
 description: Foundation - Datenerfassung - Konfigurieren von Schemata und Festlegen von Kennungen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3645'
 ht-degree: 5%
@@ -114,7 +114,7 @@ Statt eine vorhandene [!UICONTROL Feldergruppe] wiederzuverwenden, erstellen Sie
 Sie müssen jetzt einen **[!UICONTROL Anzeigenamen]** und eine **[!UICONTROL Beschreibung]** für Ihre neue [!UICONTROL Feldergruppe] angeben.
 
 Als Name für unser Schema verwenden wir Folgendes:
-`--demoProfileLdap-- - Profile Identification Field Group`
+`--aepUserLdap-- - Profile Identification Field Group`
 
 Beispiel: Für ldap **[!UICONTROL vangeluw]** sollte dies der Name des Schemas sein:
 
@@ -287,7 +287,7 @@ Geben wir nun Ihrem Schema einen Namen. Wählen Sie das Feld **Unbenanntes Schem
 
 Als Name für unser Schema verwenden Sie Folgendes:
 
-`--demoProfileLdap-- - Demo System - Profile Schema for Website`
+`--aepUserLdap-- - Demo System - Profile Schema for Website`
 
 Ersetzen Sie **[!UICONTROL ldap]** durch Ihren spezifischen ldap. Beispiel: Für ldap **[!UICONTROL vangeluw]** sollte dies der Name des Schemas sein:
 
@@ -419,7 +419,7 @@ Sie müssen nun einen **[!UICONTROL Anzeigenamen]** und eine **[!UICONTROL Besch
 
 Verwenden Sie als Namen für Ihre Feldergruppe Folgendes:
 
-`--demoProfileLdap-- - ExperienceEvent Identification Field Group`
+`--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
 Beispiel: Für ldap **[!UICONTROL vangeluw]** sollte dies der Name des Schemas sein:
 
@@ -528,7 +528,7 @@ Geben wir nun Ihrem Schema einen Namen. Wählen Sie das Feld **Unbenanntes Schem
 ![Datenaufnahme](./images/schemaname1ee.png)
 
 Als Name für unser Schema verwenden wir Folgendes:
-`--demoProfileLdap-- - Demo System - Event Schema for Website`
+`--aepUserLdap-- - Demo System - Event Schema for Website`
 
 Beispiel: Für ldap **[!UICONTROL vangeluw]** sollte dies der Name des Schemas sein:
 

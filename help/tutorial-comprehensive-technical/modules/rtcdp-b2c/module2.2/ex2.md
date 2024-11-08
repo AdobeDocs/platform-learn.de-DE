@@ -3,7 +3,7 @@ title: Intelligent Services - Customer AI Erstellen einer neuen Instanz (Konfigu
 description: Customer AI - Erstellen einer neuen Instanz (Konfigurieren)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 12%
@@ -30,7 +30,7 @@ Dann wirst du das sehen.
 
 Geben Sie die erforderlichen Details für die Customer AI-Instanz ein:
 
-- Name: use `--demoProfileLdap-- Product Purchase Propensity`
+- Name: use `--aepUserLdap-- Product Purchase Propensity`
 - Beschreibung: use: **Prognostizieren Sie die Wahrscheinlichkeit, dass Kunden ein Produkt kaufen**
 - Propensity type: select **Conversion**
 

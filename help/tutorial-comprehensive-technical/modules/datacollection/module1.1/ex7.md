@@ -3,7 +3,7 @@ title: Foundation - Einrichten der Adobe Experience Platform-Datenerfassung und 
 description: Foundation - Einrichten der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - XDM-Schema-Anforderungen in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Gehen Sie zu [https://experience.adobe.com/platform](https://experience.adobe.co
 
 ![AEP-Debugger](./images/exp1.png)
 
-Wählen Sie nach der Anmeldung die entsprechende Sandbox aus, indem Sie in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **Produktions-Prod** klicken. Wählen Sie die Sandbox `--aepSandboxId--` aus.
+Wählen Sie nach der Anmeldung die entsprechende Sandbox aus, indem Sie in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **Produktions-Prod** klicken. Wählen Sie die Sandbox `--aepSandboxName--` aus.
 
 Nachdem Sie Ihre Sandbox ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich jetzt in Ihrer Sandbox.
 

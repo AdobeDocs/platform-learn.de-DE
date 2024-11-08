@@ -3,7 +3,7 @@ title: Erste Schritte - Erstellen Ihres Datastreams
 description: Erste Schritte - Erstellen Ihres Datastreams
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Klicken Sie auf **[!UICONTROL Datastreams]** oder **[!UICONTROL Datastreams (Bet
 
 ![Klicken Sie auf das Symbol Edge-Konfiguration im linken Navigationsbereich](./images/edgeconfig1a.png)
 
-Wählen Sie oben rechts auf Ihrem Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxId--` lauten soll.
+Wählen Sie oben rechts auf Ihrem Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` lauten soll.
 
 ![Klicken Sie auf das Symbol Edge-Konfiguration im linken Navigationsbereich](./images/edgeconfig1b.png)
 
@@ -34,7 +34,7 @@ Klicken Sie auf **[!UICONTROL New Datastream]**.
 
 ![Klicken Sie auf das Symbol Edge-Konfiguration im linken Navigationsbereich](./images/edgeconfig1.png)
 
-Geben Sie für den **[!UICONTROL Anzeigenamen]** und für die optionale Beschreibung `--demoProfileLdap-- - Demo System Datastream` ein. Wählen Sie für das Ereignisschema **Demo-System - Ereignisschema für Website (Global v1.1)** aus. Klicken Sie auf **Speichern**.
+Geben Sie für den **[!UICONTROL Anzeigenamen]** und für die optionale Beschreibung `--aepUserLdap-- - Demo System Datastream` ein. Wählen Sie für das Ereignisschema **Demo-System - Ereignisschema für Website (Global v1.1)** aus. Klicken Sie auf **Speichern**.
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig2.png)
 
@@ -72,7 +72,7 @@ Dann wirst du das sehen. Für **Datastreams** sehen Sie derzeit einen Platzhalte
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig13.png)
 
-Stellen Sie sicher, dass Sie Ihren **Datastream** ausgewählt haben. TIPP: Sie können die Ergebnisse im Dropdown-Menü einfach filtern, indem Sie Ihren `--demoProfileLdap--` eingeben.
+Stellen Sie sicher, dass Sie Ihren **Datastream** ausgewählt haben. TIPP: Sie können die Ergebnisse im Dropdown-Menü einfach filtern, indem Sie Ihren `--aepUserLdap--` eingeben.
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig14.png)
 
@@ -102,7 +102,7 @@ Klicken Sie auf **[!UICONTROL Datastreams]** oder **[!UICONTROL Datastreams (Bet
 
 ![Klicken Sie auf das Datastraam-Symbol in der linken Navigation](./images/edgeconfig1a.png)
 
-Wählen Sie oben rechts auf Ihrem Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxId--` lauten soll.
+Wählen Sie oben rechts auf Ihrem Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` lauten soll.
 
 ![Klicken Sie auf das Symbol Edge-Konfiguration im linken Navigationsbereich](./images/edgeconfig1b.png)
 
@@ -110,7 +110,7 @@ Klicken Sie auf **[!UICONTROL New Datastream]**.
 
 ![Klicken Sie auf das Datastraam-Symbol in der linken Navigation](./images/edgeconfig1.png)
 
-Geben Sie für den **[!UICONTROL Anzeigenamen]** und für die optionale Beschreibung `--demoProfileLdap-- - Demo System Datastream (Mobile)` ein. Wählen Sie für das Ereignisschema **Demo-System - Ereignisschema für mobile App (globale Version 1.1)** aus. Klicken Sie auf **Speichern**.
+Geben Sie für den **[!UICONTROL Anzeigenamen]** und für die optionale Beschreibung `--aepUserLdap-- - Demo System Datastream (Mobile)` ein. Wählen Sie für das Ereignisschema **Demo-System - Ereignisschema für mobile App (globale Version 1.1)** aus. Klicken Sie auf **Speichern**.
 
 Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -144,7 +144,7 @@ Klicken Sie in der Erweiterung **Adobe Experience Platform Edge Network** auf **
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig12m.png)
 
-Dann wirst du das sehen. Jetzt müssen Sie die richtige Sandbox und den korrekt konfigurierten Datastream auswählen. Die zu verwendende Sandbox ist `--aepSandboxId--` und der Datastream heißt `--demoProfileLdap-- - Demo System Datastream (Mobile)`.
+Dann wirst du das sehen. Jetzt müssen Sie die richtige Sandbox und den korrekt konfigurierten Datastream auswählen. Die zu verwendende Sandbox ist `--aepSandboxName--` und der Datastream heißt `--aepUserLdap-- - Demo System Datastream (Mobile)`.
 
 Verwenden Sie für die **Edge Network-Domäne** die Standarddomäne **edge.adobedc.net**.
 

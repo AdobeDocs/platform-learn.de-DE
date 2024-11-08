@@ -3,7 +3,7 @@ title: Customer Journey Analytics - Erstellen einer Datenansicht
 description: Customer Journey Analytics - Erstellen einer Datenansicht
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 3%
@@ -45,17 +45,17 @@ Sie können jetzt die grundlegenden Definitionen für Ihre Datenansicht konfigur
 
 ![demo](./images/0-v2.png)
 
-Die **Verbindung**, die Sie in der vorherigen Übung erstellt haben, ist bereits ausgewählt. Ihre Verbindung heißt `--demoProfileLdap-- – Omnichannel Data Connection`.
+Die **Verbindung**, die Sie in der vorherigen Übung erstellt haben, ist bereits ausgewählt. Ihre Verbindung heißt `--aepUserLdap-- – Omnichannel Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Geben Sie anschließend Ihrer Datenansicht einen Namen gemäß dieser Namenskonvention: `--demoProfileLdap-- – Omnichannel Data View`.
+Geben Sie anschließend Ihrer Datenansicht einen Namen gemäß dieser Namenskonvention: `--aepUserLdap-- – Omnichannel Data View`.
 
-Geben Sie für die Beschreibung denselben Wert ein: `--demoProfileLdap-- – Omnichannel Data View`.
+Geben Sie für die Beschreibung denselben Wert ein: `--aepUserLdap-- – Omnichannel Data View`.
 
 | Name | Beschreibung |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- – Omnichannel Data View` | `--demoProfileLdap-- – Omnichannel Data View` |
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` |
 
 ![demo](./images/1-v2.png)
 

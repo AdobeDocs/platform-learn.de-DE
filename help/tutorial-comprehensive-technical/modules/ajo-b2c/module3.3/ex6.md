@@ -3,7 +3,7 @@ title: Offer decisioning - Testen Sie Ihre Entscheidung mithilfe der API.
 description: Testen Ihrer Entscheidung mithilfe der API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Unter **[!UICONTROL Parameter]** sehen Sie Folgendes:
 
 - property: `_instance.parentName==aepenablementfy22`
 
-In diesem Parameter ist **[!UICONTROL aepenablementfy22]** der Name der Sandbox, die in Adobe Experience Platform verwendet wird. Die Sandbox, die Sie verwenden sollten, ist `--aepSandboxId--`. Ersetzen Sie den Text **[!UICONTROL aepenablementfy22]** durch `--aepSandboxId--`.
+In diesem Parameter ist **[!UICONTROL aepenablementfy22]** der Name der Sandbox, die in Adobe Experience Platform verwendet wird. Die Sandbox, die Sie verwenden sollten, ist `--aepSandboxName--`. Ersetzen Sie den Text **[!UICONTROL aepenablementfy22]** durch `--aepSandboxName--`.
 
 Klicken Sie nach dem Ersetzen des Sandbox-Namens auf **[!UICONTROL Senden]**.
 

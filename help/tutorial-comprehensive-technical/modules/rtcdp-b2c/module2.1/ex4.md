@@ -3,7 +3,7 @@ title: Foundation - Echtzeit-Kundenprofil - Erstellen eines Segments - Benutzero
 description: Foundation - Echtzeit-Kundenprofil - Erstellen eines Segments - Benutzeroberfläche
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platfor
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxId--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -108,7 +108,7 @@ Geben wir schließlich Ihrem Segment einen Namen und speichern es.
 
 Verwenden Sie als Namenskonvention:
 
-- `--demoProfileLdap-- - Male customers with interest in Montana Wind Jacket`
+- `--aepUserLdap-- - Male customers with interest in Montana Wind Jacket`
 
 ![Segmentierung](./images/segmentname.png)
 

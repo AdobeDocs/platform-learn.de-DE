@@ -4,9 +4,9 @@ description: Foundation - Echtzeit-Kundenprofil
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ In diesem Modul werden wir einen tiefen Einblick in die Echtzeit-Kundenprofil- u
 - Zugriff auf [https://public.aepdemo.net](https://public.aepdemo.net)
 - **Laden Sie diese Assets herunter**:
    - [Postman-Sammlungen](./../../../assets/postman/postman_profile.zip)
-
->[!IMPORTANT]
->
->Dieses Tutorial wurde erstellt, um ein bestimmtes Workshop-Format zu vereinfachen. Es verwendet bestimmte Systeme und Konten, auf die Sie möglicherweise keinen Zugriff haben. Auch ohne Zugriff können Sie noch viel lernen, indem Sie diesen sehr detaillierten Inhalt durchlesen. Wenn Sie an einem der Workshops teilnehmen und Ihre Zugangsdaten benötigen, wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, der Ihnen die erforderlichen Informationen zur Verfügung stellt.
 
 >[!NOTE]
 >

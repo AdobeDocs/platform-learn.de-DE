@@ -3,7 +3,7 @@ title: Offer decisioning - Verwenden Sie Ihre Entscheidung in einer E-Mail
 description: Verwenden Sie Ihre Entscheidung in einer E-Mail
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 11%
@@ -14,7 +14,7 @@ ht-degree: 11%
 
 In dieser Übung verwenden Sie Ihre Entscheidung, um den Versand einer E-Mail und einer SMS zu personalisieren.
 
-Wechseln Sie zu **Journey**. Suchen Sie die Journey, die Sie in Übung 7.2 erstellt haben und die den Namen `--demoProfileLdap-- - Account Creation Journey` trägt. Klicken Sie auf Ihre Journey, um sie zu öffnen.
+Wechseln Sie zu **Journey**. Suchen Sie die Journey, die Sie in Übung 7.2 erstellt haben und die den Namen `--aepUserLdap-- - Account Creation Journey` trägt. Klicken Sie auf Ihre Journey, um sie zu öffnen.
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
@@ -46,7 +46,7 @@ Wechseln Sie im Menü zu **Inhaltskomponenten**. Wählen Sie die Komponente **An
 
 ![Journey Optimizer](./images/emailoffer7.png)
 
-Wählen Sie den Platzierungstyp aus, den Sie in die E-Mail aufnehmen möchten. Wählen Sie im Dropdown-Menü **Platzierungen** die Option **E-Mail - Bild** aus und wählen Sie dann Ihre Entscheidung `--demoProfileLdap-- - Luma Decision` aus. Klicken Sie auf **Hinzufügen**.
+Wählen Sie den Platzierungstyp aus, den Sie in die E-Mail aufnehmen möchten. Wählen Sie im Dropdown-Menü **Platzierungen** die Option **E-Mail - Bild** aus und wählen Sie dann Ihre Entscheidung `--aepUserLdap-- - Luma Decision` aus. Klicken Sie auf **Hinzufügen**.
 
 ![Journey Optimizer](./images/emailoffer8.png)
 

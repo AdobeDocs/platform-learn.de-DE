@@ -3,7 +3,7 @@ title: Erfassen und Analysieren von Google Analytics-Daten in Adobe Experience P
 description: Erfassen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector - Erstellen eines Google Cloud Platform-Kontos
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Benennen Sie Ihr Projekt nach dieser Benennungsregel:
 
 | Übereinkommen | Beispiel |
 | ----------------- |-------------| 
-| `--demoProfileLdap---googlecloud` | delaigle-googlecloud |
+| `--aepUserLdap---googlecloud` | delaigle-googlecloud |
 
 ![demo](./images/ex1/3.png)
 
@@ -113,7 +113,7 @@ Bevor Sie mit der nächsten Übung fortfahren, schreiben Sie bitte die folgenden
 
 | Anmeldedaten | Benennung | Beispiel |
 | ----------------- |-------------| -------------|
-| Projektname | `--demoProfileLdap---googlecloud` | vangeluw-googlecloud |
+| Projektname | `--aepUserLdap---googlecloud` | vangeluw-googlecloud |
 | Projekt-ID | random | created-task-306413 |
 
 Sie finden Ihren Projektnamen und Ihre Projekt-ID, indem Sie in der oberen Menüleiste auf Ihren **Projektnamen** klicken:

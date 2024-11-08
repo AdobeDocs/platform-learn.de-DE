@@ -3,7 +3,7 @@ title: Echtzeit-Kundendatenplattform - Erstellen eines Segments und Handeln - Se
 description: Echtzeit-Kundendatenplattform - Erstellen eines Segments und Handeln - Senden Sie Ihr Segment an ein S3-Ziel
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 5%
@@ -38,7 +38,7 @@ Dann sehen Sie die Homepage von **Amazon S3**. Klicken Sie auf **Behälter erste
 
 Im Bildschirm **Behälter erstellen** müssen Sie zwei Elemente konfigurieren:
 
-- Name: Verwenden Sie den Namen `aepmodulertcdp--demoProfileLdap--`. Beispiel: In dieser Übung lautet der Behältername **aepmodulertcdpvangeluw**
+- Name: Verwenden Sie den Namen `aepmodulertcdp--aepUserLdap--`. Beispiel: In dieser Übung lautet der Behältername **aepmodulertcdpvangeluw**
 - Region: Region **EU (Frankfurt) eu-central-1**
 
 ![ETL](./images/bucketname.png)
@@ -69,7 +69,7 @@ Klicken Sie im linken Menü auf **Benutzer**. Daraufhin wird der Bildschirm **Be
 
 Konfigurieren Sie dann Ihren Benutzer:
 
-- Benutzername: Verwenden Sie `s3_--demoProfileLdap--_rtcdp` als Namen, in diesem Beispiel also den Namen `s3_vangeluw_rtcdp`.
+- Benutzername: Verwenden Sie `s3_--aepUserLdap--_rtcdp` als Namen, in diesem Beispiel also den Namen `s3_vangeluw_rtcdp`.
 - AWS-Zugriffstyp: Wählen Sie **Zugriffsschlüssel - Programmatischer Zugriff** aus.
 
 Klicken Sie auf **Weiter: Berechtigungen**.
@@ -121,7 +121,7 @@ Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platfor
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxId--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -157,9 +157,9 @@ Verwenden Sie als Namenskonvention Folgendes:
 
 | Zugriffsschlüssel-ID | Geheimer Zugriffsschlüssel |
 |:-----------------------:| :-----------------------:|
-| Name | `AWS - S3 - --demoProfileLdap--` |
-| Beschreibung | `AWS - S3 - --demoProfileLdap--` |
-| Behältername | `aepmodulertcdp--demoProfileLdap--` |
+| Name | `AWS - S3 - --aepUserLdap--` |
+| Beschreibung | `AWS - S3 - --aepUserLdap--` |
+| Behältername | `aepmodulertcdp--aepUserLdap--` |
 | Ordnerpfad | / |
 
 Klicken Sie auf **Weiter**.

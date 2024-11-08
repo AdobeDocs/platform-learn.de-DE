@@ -3,7 +3,7 @@ title: Segmentaktivierung zum Microsoft Azure Event Hub - Definieren einer Azure
 description: Segmentaktivierung zum Microsoft Azure Event Hub - Definieren einer Azure-Funktion
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Wählen Sie **Azure Event Hub Trigger** als erste Funktionsvorlage Ihres Projekt
 
 ![3-08-vsc-function-template.png](./images/vsc5.png)
 
-Geben Sie einen Namen für Ihre Funktion ein, verwenden Sie das folgende Format: `--demoProfileLdap---aep-event-hub-trigger` und drücken Sie die Eingabetaste:
+Geben Sie einen Namen für Ihre Funktion ein, verwenden Sie das folgende Format: `--aepUserLdap---aep-event-hub-trigger` und drücken Sie die Eingabetaste:
 
 ![3-09-vsc-function-name.png](./images/vsc6.png)
 
@@ -180,7 +180,7 @@ Wenn Sie Ihr Projekt zum ersten Mal im Debug-Modus ausführen, müssen Sie ein A
 
 ![3-17-vsc-run-project.png](./images/vsc15.png)
 
-Wählen Sie aus der Liste der Speicherkonten das Konto aus, das Sie im Rahmen von [13.1.4 Einrichten Ihres Azure Storage-Kontos](./ex1.md) erstellt haben. Ihr Speicherkonto trägt den Namen &quot;`--demoProfileLdap--aepstorage`&quot;, z. B. &quot;**mmeewisaepstorage**&quot;.
+Wählen Sie aus der Liste der Speicherkonten das Konto aus, das Sie im Rahmen von [13.1.4 Einrichten Ihres Azure Storage-Kontos](./ex1.md) erstellt haben. Ihr Speicherkonto trägt den Namen &quot;`--aepUserLdap--aepstorage`&quot;, z. B. &quot;**mmeewisaepstorage**&quot;.
 
 ![3-22-vsc-select-storage-account.png](./images/vsc16.png)
 

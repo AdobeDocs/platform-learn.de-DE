@@ -3,7 +3,7 @@ title: Echtzeit-Kundendatenplattform - Erstellen eines Segments und Ausführen v
 description: Echtzeit-Kundendatenplattform - Erstellen eines Segments und Ausführen von Aktionen - Erstellen eines Segments
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 2%
@@ -67,7 +67,7 @@ Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platfor
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxId--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -105,7 +105,7 @@ Geben wir schließlich Ihrem Segment einen Namen und speichern es.
 
 Verwenden Sie als Namenskonvention:
 
-- `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`
+- `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`
 
 Ihr Segmentname sollte wie folgt aussehen:
 `vangeluw - Interest in PROTEUS FITNESS JACKSHIRT`

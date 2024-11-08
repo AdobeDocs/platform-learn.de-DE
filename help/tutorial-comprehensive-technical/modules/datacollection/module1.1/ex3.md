@@ -3,7 +3,7 @@ title: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und
 description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Einführung in die Adobe Experience Platform-Datenerfassung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 9%
@@ -26,7 +26,7 @@ Dies ist die Seite mit den Eigenschaften der Adobe Experience Platform-Datenerfa
 
 ![Eigenschaftsseite](./images/launch1.png)
 
-In Modul 0 hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die mobile App. Suchen Sie sie, indem Sie im Feld **[!UICONTROL Suche]** nach `--demoProfileLdap--` suchen.
+In Modul 0 hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die mobile App. Suchen Sie sie, indem Sie im Feld **[!UICONTROL Suche]** nach `--aepUserLdap--` suchen.
 
 ![Suchfeld](./images/property6.png)
 
@@ -44,7 +44,7 @@ Wenn sich die Edge-Domäne Ihrer Instanz von der Standarddomäne unterscheidet, 
 
 ![Startseite der Erweiterungen](./images/property9edgedomain.png)
 
-Stellen Sie nun sicher, dass die Optionsschaltfläche **[!UICONTROL Aus Liste auswählen]** unter der Überschrift **[!UICONTROL Datastreams]** ausgewählt ist, und wählen Sie Ihren Datenspeicher mit dem Namen `--demoProfileLdap-- - Demo System Datastream` aus der Liste im Feld **[!UICONTROL Datastream]** aus.
+Stellen Sie nun sicher, dass die Optionsschaltfläche **[!UICONTROL Aus Liste auswählen]** unter der Überschrift **[!UICONTROL Datastreams]** ausgewählt ist, und wählen Sie Ihren Datenspeicher mit dem Namen `--aepUserLdap-- - Demo System Datastream` aus der Liste im Feld **[!UICONTROL Datastream]** aus.
 
 ![Startseite der Erweiterungen](./images/property9edge.png)
 

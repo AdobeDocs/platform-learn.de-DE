@@ -3,7 +3,7 @@ title: Segmentaktivierung für Microsoft Azure Event Hub - Einrichten des Ereign
 description: Segmentaktivierung für Microsoft Azure Event Hub - Einrichten des Ereignis-Hub-RTCDP-Ziels in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Wählen Sie **Alle Ressourcen** in Azure Portal aus:
 
 ### Ereignis-Hub
 
-Suchen Sie nach einer Ressource mit dem Ressourcentyp **Ereignis-Hubs-Namespace**. Wenn Sie die in der vorherigen Übung verwendeten Namenskonventionen befolgt haben, lautet Ihr Ereignis-Hubs-Namespace `--demoProfileLdap---aep-enablement`. Notieren Sie sich das, Sie werden es in der nächsten Übung brauchen.
+Suchen Sie nach einer Ressource mit dem Ressourcentyp **Ereignis-Hubs-Namespace**. Wenn Sie die in der vorherigen Übung verwendeten Namenskonventionen befolgt haben, lautet Ihr Ereignis-Hubs-Namespace `--aepUserLdap---aep-enablement`. Notieren Sie sich das, Sie werden es in der nächsten Übung brauchen.
 
 ![2-02-select-event-hubs-namespace.png](./images/2-02-select-event-hubs-namespace.png)
 
@@ -41,7 +41,7 @@ Klicken Sie auf den Namen des Ereignis-Hubs-Namespace , um die Details abzurufen
 
 ![2-03-select-event-hub.png](./images/2-03-select-event-hub.png)
 
-Wählen Sie **Ereignis-Hub** aus, um eine Liste der Ereignis-Hub zu erhalten, die in Ihrem Ereignis-Hub-Namespace definiert sind. Wenn Sie die in der vorherigen Übung verwendeten Namenskonventionen befolgt haben, finden Sie einen Ereignis-Hub mit dem Namen `--demoProfileLdap---aep-enablement-event-hub`. Notieren Sie sich das, Sie werden es in der nächsten Übung brauchen.
+Wählen Sie **Ereignis-Hub** aus, um eine Liste der Ereignis-Hub zu erhalten, die in Ihrem Ereignis-Hub-Namespace definiert sind. Wenn Sie die in der vorherigen Übung verwendeten Namenskonventionen befolgt haben, finden Sie einen Ereignis-Hub mit dem Namen `--aepUserLdap---aep-enablement-event-hub`. Notieren Sie sich das, Sie werden es in der nächsten Übung brauchen.
 
 ![2-04-event-hub-selected.png](./images/2-04-event-hub-selected.png)
 
@@ -69,8 +69,8 @@ An dieser Stelle sollten Sie alle Werte identifiziert haben, die zum Definieren 
 |---|---|---|
 | sasKeyName | SAS-Schlüsselname | RootManageSharedAccessKey |
 | sasKey | SAS-Schlüsselwert | srREx9ShJG1Rv7f/.. |
-| Namespace | Ereignis-Hubs-Namespace | `--demoProfileLdap---aep-enablement` |
-| eventHubName | Ereignis-Hub | `--demoProfileLdap---aep-enablement-event-hub` |
+| Namespace | Ereignis-Hubs-Namespace | `--aepUserLdap---aep-enablement` |
+| eventHubName | Ereignis-Hub | `--aepUserLdap---aep-enablement-event-hub` |
 
 ## 2.4.2.2 Azure Event Hub-Ziel in Adobe Experience Platform erstellen
 
@@ -80,7 +80,7 @@ Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxId--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende Sandbox ausgewählt haben, wird die Bildschirmänderung angezeigt und Sie befinden sich jetzt in Ihrer dedizierten Sandbox.
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende Sandbox ausgewählt haben, wird die Bildschirmänderung angezeigt und Sie befinden sich jetzt in Ihrer dedizierten Sandbox.
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -100,7 +100,7 @@ Wenn Ihre Anmeldedaten korrekt waren, sehen Sie eine Bestätigung: **Verbunden**
 
 ![2-09-destination-values.png](./images/2-09-destination-valuesa.png)
 
-Geben Sie nun den Namen und die Beschreibung im Format `--demoProfileLdap---aep-enablement` ein. Geben Sie den **eventHubName** ein (siehe vorherige Übung, sieht wie folgt aus: `--demoProfileLdap---aep-enablement-event-hub`) und klicken Sie auf **Weiter**.
+Geben Sie nun den Namen und die Beschreibung im Format `--aepUserLdap---aep-enablement` ein. Geben Sie den **eventHubName** ein (siehe vorherige Übung, sieht wie folgt aus: `--aepUserLdap---aep-enablement-event-hub`) und klicken Sie auf **Weiter**.
 
 ![2-10-create-destination.png](./images/2-10-create-destination.png)
 

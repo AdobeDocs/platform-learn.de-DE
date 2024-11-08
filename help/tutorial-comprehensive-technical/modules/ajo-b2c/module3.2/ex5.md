@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Trigg
 description: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Trigger Ihrer koordinierten Kunden-Journey
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Dies ist die Seite mit den Eigenschaften der Adobe Experience Platform-Datenerfa
 
 ![Eigenschaftsseite](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-In Modul 0 hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die mobile App. Suchen Sie sie, indem Sie im Feld **[!UICONTROL Suche]** nach `--demoProfileLdap--` suchen. Klicken Sie auf , um die Eigenschaft **Web** zu öffnen.
+In Modul 0 hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die mobile App. Suchen Sie sie, indem Sie im Feld **[!UICONTROL Suche]** nach `--aepUserLdap--` suchen. Klicken Sie auf , um die Eigenschaft **Web** zu öffnen.
 
 ![Suchfeld](./../../../modules/datacollection/module1.1/images/property6.png)
 

@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer - Konfigurieren und Verwenden des SMS-Kanal
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2300'
 ht-degree: 6%
@@ -29,7 +29,7 @@ Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience C
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxId--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxId--`.
+Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -40,7 +40,7 @@ Gehen Sie im linken Menü zu **Journey** und klicken Sie auf **Journey erstellen
 
 Du solltest zuerst deine Journey benennen.
 
-Verwenden Sie als Namen für die Journey `--demoProfileLdap-- - Geofence Entry Journey`. In diesem Beispiel lautet der Journey-Name `vangeluw - Geofence Entry Journey`. Derzeit dürfen keine anderen Werte festgelegt werden. Klicken Sie auf **OK**.
+Verwenden Sie als Namen für die Journey `--aepUserLdap-- - Geofence Entry Journey`. In diesem Beispiel lautet der Journey-Name `vangeluw - Geofence Entry Journey`. Derzeit dürfen keine anderen Werte festgelegt werden. Klicken Sie auf **OK**.
 
 ![Demo](./images/joname.png)
 
@@ -76,7 +76,7 @@ Dann sehen Sie den **erweiterten Editor**, der die Codeeingabe zulässt.
 
 Wählen Sie den folgenden Code aus und fügen Sie ihn in den **erweiterten Editor** ein.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 10`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 10`
 
 Dann wirst du das sehen.
 
@@ -93,7 +93,7 @@ Dann müssen Sie das Feld, das die aktuelle Stadt des Kunden enthält, in einer 
 
 ![Demo](./images/jo12.png)
 
-Sie können das Feld finden, indem Sie zu `--demoProfileLdap--GeofenceEntry.placeContext.geo.city` navigieren.
+Sie können das Feld finden, indem Sie zu `--aepUserLdap--GeofenceEntry.placeContext.geo.city` navigieren.
 
 Durch Klicken auf dieses Feld wird es als dynamischer Wert für den Parameter `q` hinzugefügt. Dieses Feld wird beispielsweise durch den Geolocation-Service ausgefüllt, den Sie in Ihrer Mobile App implementiert haben. In unserem Fall simulieren wir dies mit der Admin Console der Demo-Website. Klicken Sie auf **OK**.
 
@@ -119,7 +119,7 @@ Dann sehen Sie den **erweiterten Editor**, der die Codeeingabe zulässt.
 
 Wählen Sie den folgenden Code aus und fügen Sie ihn in den **erweiterten Editor** ein.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 10 and #{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 10 and #{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 25`
 
 Dann wirst du das sehen.
 
@@ -136,7 +136,7 @@ Dann müssen Sie das Feld, das die aktuelle Stadt des Kunden enthält, in einer 
 
 ![Demo](./images/jo12.png)
 
-Sie können das Feld finden, indem Sie zu `--demoProfileLdap--GeofenceEntry.placeContext.geo.city` navigieren. Durch Klicken auf dieses Feld wird es als dynamischer Wert für den Parameter **q** hinzugefügt. Dieses Feld wird beispielsweise durch den Geolocation-Service ausgefüllt, den Sie in Ihrer Mobile App implementiert haben. In unserem Fall simulieren wir dies mit der Admin Console der Demo-Website. Klicken Sie auf **OK**.
+Sie können das Feld finden, indem Sie zu `--aepUserLdap--GeofenceEntry.placeContext.geo.city` navigieren. Durch Klicken auf dieses Feld wird es als dynamischer Wert für den Parameter **q** hinzugefügt. Dieses Feld wird beispielsweise durch den Geolocation-Service ausgefüllt, den Sie in Ihrer Mobile App implementiert haben. In unserem Fall simulieren wir dies mit der Admin Console der Demo-Website. Klicken Sie auf **OK**.
 
 ![Demo](./images/jo13.png)
 
@@ -163,7 +163,7 @@ Dann sehen Sie den **erweiterten Editor**, der die Codeeingabe zulässt.
 
 Wählen Sie den folgenden Code aus und fügen Sie ihn in den **erweiterten Editor** ein.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 25`
 
 Dann wirst du das sehen.
 
@@ -180,7 +180,7 @@ Dann müssen Sie das Feld, das die aktuelle Stadt des Kunden enthält, in einer 
 
 ![Demo](./images/jo12.png)
 
-Sie können das Feld finden, indem Sie zu ```--demoProfileLdap--GeofenceEntry.placeContext.geo.city``` navigieren. Durch Klicken auf dieses Feld wird es als dynamischer Wert für den Parameter **q** hinzugefügt. Dieses Feld wird beispielsweise durch den Geolocation-Service ausgefüllt, den Sie in Ihrer Mobile App implementiert haben. In unserem Fall simulieren wir dies mit der Admin Console der Demo-Website. Klicken Sie auf **OK**.
+Sie können das Feld finden, indem Sie zu ```--aepUserLdap--GeofenceEntry.placeContext.geo.city``` navigieren. Durch Klicken auf dieses Feld wird es als dynamischer Wert für den Parameter **q** hinzugefügt. Dieses Feld wird beispielsweise durch den Geolocation-Service ausgefüllt, den Sie in Ihrer Mobile App implementiert haben. In unserem Fall simulieren wir dies mit der Admin Console der Demo-Website. Klicken Sie auf **OK**.
 
 ![Demo](./images/jo13.png)
 
@@ -254,7 +254,7 @@ Du wirst dann wieder hier sein. Klicken Sie auf **OK**.
 
 ![Journey Optimizer](./images/sms4b.png)
 
-Gehen Sie im linken Menü zurück zu **Aktionen**, wählen Sie die Aktion `--demoProfileLdap--TextSlack` aus und ziehen Sie sie dann nach der Aktion **Nachricht** .
+Gehen Sie im linken Menü zurück zu **Aktionen**, wählen Sie die Aktion `--aepUserLdap--TextSlack` aus und ziehen Sie sie dann nach der Aktion **Nachricht** .
 
 ![Demo](./images/joa18.png)
 
@@ -342,7 +342,7 @@ Jetzt sehen Sie Ihre abgeschlossene Aktion. Klicken Sie auf **OK**.
 
 ![Demo](./images/jop17.png)
 
-Gehen Sie im linken Menü zurück zu **Aktionen**, wählen Sie die Aktion `--demoProfileLdap--TextSlack` aus und ziehen Sie sie dann nach der Aktion **Nachricht** .
+Gehen Sie im linken Menü zurück zu **Aktionen**, wählen Sie die Aktion `--aepUserLdap--TextSlack` aus und ziehen Sie sie dann nach der Aktion **Nachricht** .
 
 ![Demo](./images/jop18.png)
 
@@ -430,7 +430,7 @@ Jetzt sehen Sie Ihre abgeschlossene Aktion. Klicken Sie auf **OK**.
 
 ![Demo](./images/jod17.png)
 
-Gehen Sie im linken Menü zurück zu **Aktionen**, wählen Sie die Aktion `--demoProfileLdap--TextSlack` aus und ziehen Sie sie dann nach der Aktion **Nachrichten** .
+Gehen Sie im linken Menü zurück zu **Aktionen**, wählen Sie die Aktion `--aepUserLdap--TextSlack` aus und ziehen Sie sie dann nach der Aktion **Nachrichten** .
 
 ![Demo](./images/jod18.png)
 

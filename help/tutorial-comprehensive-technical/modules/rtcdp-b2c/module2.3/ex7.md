@@ -3,7 +3,7 @@ title: Echtzeit-Kundendatenplattform - Ziel-SDK
 description: Echtzeit-Kundendatenplattform - Ziel-SDK
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2386'
 ht-degree: 3%
@@ -122,10 +122,10 @@ Klicken Sie auf **Projekt bearbeiten**.
 
 ![Adobe I/O Neue Integration](../module2.1/images/api14.png)
 
-Geben Sie einen Namen und eine Beschreibung für Ihre Integration ein. Als Namenskonvention verwenden wir `AEP API --demoProfileLdap--`. Ersetzen Sie ldap durch Ihren ldap.
+Geben Sie einen Namen und eine Beschreibung für Ihre Integration ein. Als Namenskonvention verwenden wir `AEP API --aepUserLdap--`. Ersetzen Sie ldap durch Ihren ldap.
 Wenn Ihr ldap beispielsweise Vangeluw ist, lautet der Name und die Beschreibung Ihrer Integration AEP API Vangeluw.
 
-Geben Sie `AEP API --demoProfileLdap--` als **Projekttitel** ein. Klicken Sie auf **Speichern**.
+Geben Sie `AEP API --aepUserLdap--` als **Projekttitel** ein. Klicken Sie auf **Speichern**.
 
 ![Adobe I/O Neue Integration](../module2.1/images/api15.png)
 
@@ -285,11 +285,11 @@ Was das Format anbelangt, so verwenden wir eine Standardvorlage, die Segmentqual
 
 Der erste Schritt zum Erstellen Ihres eigenen Ziels in Adobe Experience Platform besteht darin, einen Server und eine Vorlagenkonfiguration zu erstellen.
 
-Wechseln Sie dazu zu **Ziel-Authoring-API**, zu **Ziel-Server und Vorlagen** und klicken Sie auf , um die Anfrage **POST - Erstellen einer Zielserverkonfiguration** zu öffnen. Dann wirst du das sehen. Unter **Kopfzeilen** müssen Sie den Wert für den Schlüssel **x-sandbox-name** manuell aktualisieren und auf `--aepSandboxId--` festlegen. Wählen Sie den Wert **{{SANDBOX_NAME}}** aus.
+Wechseln Sie dazu zu **Ziel-Authoring-API**, zu **Ziel-Server und Vorlagen** und klicken Sie auf , um die Anfrage **POST - Erstellen einer Zielserverkonfiguration** zu öffnen. Dann wirst du das sehen. Unter **Kopfzeilen** müssen Sie den Wert für den Schlüssel **x-sandbox-name** manuell aktualisieren und auf `--aepSandboxName--` festlegen. Wählen Sie den Wert **{{SANDBOX_NAME}}** aus.
 
 ![Datenaufnahme](./images/sdkpm1.png)
 
-Ersetzen Sie sie durch `--aepSandboxId--`.
+Ersetzen Sie sie durch `--aepSandboxName--`.
 
 ![Datenaufnahme](./images/sdkpm2.png)
 
@@ -335,11 +335,11 @@ Nachdem Sie auf **Senden** geklickt haben, wird Ihre Servervorlage erstellt und 
 
 ## 2.3.7.5 Zielkonfiguration erstellen
 
-Wechseln Sie in Postman unter **Ziel-Authoring-API** zu **Zielkonfigurationen** und klicken Sie auf , um die Anfrage **POST - Zielkonfiguration erstellen** zu öffnen. Dann wirst du das sehen. Unter **Kopfzeilen** müssen Sie den Wert für den Schlüssel **x-sandbox-name** manuell aktualisieren und auf `--aepSandboxId--` festlegen. Wählen Sie den Wert **{{SANDBOX_NAME}}** aus.
+Wechseln Sie in Postman unter **Ziel-Authoring-API** zu **Zielkonfigurationen** und klicken Sie auf , um die Anfrage **POST - Zielkonfiguration erstellen** zu öffnen. Dann wirst du das sehen. Unter **Kopfzeilen** müssen Sie den Wert für den Schlüssel **x-sandbox-name** manuell aktualisieren und auf `--aepSandboxName--` festlegen. Wählen Sie den Wert **{{SANDBOX_NAME}}** aus.
 
 ![Datenaufnahme](./images/sdkpm7.png)
 
-Ersetzen Sie sie durch `--aepSandboxId--`.
+Ersetzen Sie sie durch `--aepSandboxName--`.
 
 ![Datenaufnahme](./images/sdkpm8.png)
 
@@ -351,7 +351,7 @@ Sie müssen jetzt den Platzhalter **{{body}}** durch den folgenden Code ersetzen
 
 ```json
 {
-    "name": "--demoProfileLdap-- - Webhook",
+    "name": "--aepUserLdap-- - Webhook",
     "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
     "status": "TEST",
     "customerAuthenticationConfigurations": [
@@ -428,7 +428,7 @@ Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platfor
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxId--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -446,7 +446,7 @@ Geben Sie ein Platzhalter-Träger-Token ein, z. B. **1234**. Klicken Sie auf **M
 
 ![Datenaufnahme](./images/destsdk3.png)
 
-Dann wirst du das sehen. Verwenden Sie als Namen für Ihr Ziel `--demoProfileLdap-- - Webhook`. Wählen Sie einen Endpunkt der Wahl aus, in diesem Beispiel **EU**. Klicken Sie auf **Weiter**.
+Dann wirst du das sehen. Verwenden Sie als Namen für Ihr Ziel `--aepUserLdap-- - Webhook`. Wählen Sie einen Endpunkt der Wahl aus, in diesem Beispiel **EU**. Klicken Sie auf **Weiter**.
 
 ![Datenaufnahme](./images/destsdk4.png)
 
@@ -454,7 +454,7 @@ Sie können optional eine Data Governance-Richtlinie auswählen. Klicken Sie auf
 
 ![Datenaufnahme](./images/destsdk5.png)
 
-Wählen Sie das zuvor erstellte Segment mit dem Namen `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` aus. Klicken Sie auf **Weiter**.
+Wählen Sie das zuvor erstellte Segment mit dem Namen `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` aus. Klicken Sie auf **Weiter**.
 
 ![Datenaufnahme](./images/destsdk6.png)
 

@@ -3,7 +3,7 @@ title: Foundation - Datenerfassung - Konfigurieren von Datensätzen
 description: Foundation - Datenerfassung - Konfigurieren von Datensätzen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 7%
@@ -53,7 +53,7 @@ Sie müssen einen Datensatz aus dem Schema definieren, das Sie im vorherigen Sch
 
 ![Datenaufnahme](./images/datasetfromschema.png)
 
-Wählen Sie im nächsten Bildschirm das Schema aus, das Sie in 1, 0 erstellt haben.`--demoProfileLdap-- - Demo System - Profile Schema for Website`
+Wählen Sie im nächsten Bildschirm das Schema aus, das Sie in 1, 0 erstellt haben.`--aepUserLdap-- - Demo System - Profile Schema for Website`
 
 ![Datenaufnahme](./images/schemaselection.png)
 
@@ -65,7 +65,7 @@ Geben wir einen Namen für Ihren Datensatz ein.
 
 Verwenden Sie als Namen für unseren Datensatz Folgendes:
 
-`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
+`--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
 Beispiel: Für ldap **[!UICONTROL vangeluw]** sollte dies der Name des Schemas sein:
 
@@ -101,7 +101,7 @@ Sie müssen einen Datensatz aus dem Schema definieren, das Sie im vorherigen Sch
 
 ![Datenaufnahme](./images/datasetfromschema.png)
 
-Wählen Sie im nächsten Bildschirm das Schema aus, das Sie in 2.2, `--demoProfileLdap-- - Demo System - Event Schema for Website` erstellt haben.
+Wählen Sie im nächsten Bildschirm das Schema aus, das Sie in 2.2, `--aepUserLdap-- - Demo System - Event Schema for Website` erstellt haben.
 
 ![Datenaufnahme](./images/schemaselectionee.png)
 
@@ -113,7 +113,7 @@ Geben wir einen Namen für Ihren Datensatz ein.
 
 Als Name für unseren Datensatz verwenden wir Folgendes:
 
-`--demoProfileLdap-- - Demo System - Event Dataset for Website`
+`--aepUserLdap-- - Demo System - Event Dataset for Website`
 
 Beispiel: Für ldap **[!UICONTROL vangeluw]** sollte dies der Name des Schemas sein:
 
@@ -137,7 +137,7 @@ Gehen Sie zurück zum Übersichtsbildschirm [!UICONTROL Datensätze] .
 
 Jetzt müssen Sie Ihre Datensätze aktivieren, damit sie Teil des Echtzeit-Kundenprofils von Adobe Experience Platform sind.
 
-Öffnen Sie Ihren Datensatz &quot;`--demoProfileLdap--` - Demo System - Profil DataSet&quot;für Website, indem Sie darauf klicken.
+Öffnen Sie Ihren Datensatz &quot;`--aepUserLdap--` - Demo System - Profil DataSet&quot;für Website, indem Sie darauf klicken.
 
 Suchen Sie das Umschalter [!UICONTROL Profil] auf der rechten Seite des Bildschirms.
 
@@ -153,7 +153,7 @@ Klicken Sie auf **[!UICONTROL Aktivieren]**.
 
 Ihr Datensatz ist jetzt für [!UICONTROL Profil] aktiviert.
 
-Gehen Sie zurück zur Datensatzübersicht und öffnen Sie den Datensatz `--demoProfileLdap-- - Demo System - Event Dataset` für die Website, indem Sie darauf klicken.
+Gehen Sie zurück zur Datensatzübersicht und öffnen Sie den Datensatz `--aepUserLdap-- - Demo System - Event Dataset` für die Website, indem Sie darauf klicken.
 
 Suchen Sie das Umschalter [!UICONTROL Profil] auf der rechten Seite des Bildschirms.
 

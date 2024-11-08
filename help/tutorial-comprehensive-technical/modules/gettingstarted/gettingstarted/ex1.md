@@ -3,7 +3,7 @@ title: Erste Schritte - Installieren der Chrome-Erweiterung für die Experience 
 description: Erste Schritte - Installieren der Chrome-Erweiterung für die Experience League-Dokumentation
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 8d595675c09a4347c04e900414d94b6c674e20f7
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -23,8 +23,8 @@ Ein Beispiel für solche Werte finden Sie unten. Derzeit können diese Werte noc
 |:-------------:| :---------------:|
 | Kennung der IMS-Organisation von AEP | `--aepImsOrgId--` |
 | AEP-Mandanten-ID | `--aepTenantId--` |
-| DCS Inlet ID | `--dcsInletId--` |
-| Demoprofil-LDAP | `--demoProfileLdap--` |
+| AEP-Sandbox-Name | `--aepSandboxName--` |
+| LDAP des Lernprofils | `--aepUserLdap--` |
 
 Im folgenden Screenshot sehen Sie beispielsweise einen Verweis auf `--aepTenantId--`.
 

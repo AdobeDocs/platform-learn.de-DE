@@ -3,7 +3,7 @@ title: Foundation - Einrichten der Adobe Experience Platform-Datenerfassung und 
 description: Foundation - Einrichten der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Implementieren von Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Wenn Sie vom Web SDK erfasste Daten an Adobe Target senden und eine Antwort von 
 
 Wechseln Sie zu [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) und gehen Sie zu **Datastreams**.
 
-Wählen Sie oben rechts auf Ihrem Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxId--` lauten soll. Öffnen Sie Ihren spezifischen Datastream mit dem Namen `--demoProfileLdap-- - Demo System Datastream`.
+Wählen Sie oben rechts auf Ihrem Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` lauten soll. Öffnen Sie Ihren spezifischen Datastream mit dem Namen `--aepUserLdap-- - Demo System Datastream`.
 
 ![Klicken Sie auf das Symbol Edge-Konfiguration im linken Navigationsbereich](./images/edgeconfig1b.png)
 

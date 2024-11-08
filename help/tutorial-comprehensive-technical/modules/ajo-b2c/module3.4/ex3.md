@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Anwenden der Personalisierung in einer E-Mail-N
 description: In dieser Übung wird erläutert, wie die Segmentpersonalisierung in einem E-Mail-Inhalt verwendet wird
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 10%
@@ -24,7 +24,7 @@ Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Bevor Sie f
 
 In dieser Übung verbessern Sie Ihre Newsletter-E-Mail-Nachricht mit einem personalisierten Text, der auf der Segmentmitgliedschaft basiert.
 
-Wechseln Sie zu **Journey**. Suchen Sie die Newsletter-Journey, die Sie in der vorherigen Übung erstellt haben. Suchen Sie nach `--demoProfileLdap-- - Newsletter`. Klicken Sie auf Ihre Journey, um sie zu öffnen.
+Wechseln Sie zu **Journey**. Suchen Sie die Newsletter-Journey, die Sie in der vorherigen Übung erstellt haben. Suchen Sie nach `--aepUserLdap-- - Newsletter`. Klicken Sie auf Ihre Journey, um sie zu öffnen.
 
 ![Journey Optimizer](./images/sbp1.png)
 

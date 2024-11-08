@@ -3,7 +3,7 @@ title: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und
 description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Edge Network, Datastreams und serverseitige Datenerfassung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Klicken Sie im linken Menü auf **[!UICONTROL Datastreams]** oder **[!UICONTROL 
 
 ![Klicken Sie auf das Datastraam-Symbol in der linken Navigation](./images/edgeconfig1.png)
 
-Suchen Sie nach Ihrem Datastream mit dem Namen `--demoProfileLdap-- - Demo System Datastream`.
+Suchen Sie nach Ihrem Datastream mit dem Namen `--aepUserLdap-- - Demo System Datastream`.
 
 ![Benennen Sie den Datastream und speichern Sie](./images/edgeconfig2.png)
 
@@ -54,7 +54,7 @@ Sie sollten die folgenden Felder wie folgt interpretieren:
 
 Für diesen Datastream ...
 
-- Alle erfassten Daten werden in der Sandbox `--aepSandboxId--` in Adobe Experience Platform gespeichert
+- Alle erfassten Daten werden in der Sandbox `--aepSandboxName--` in Adobe Experience Platform gespeichert
 - Alle Erlebnisereignisdaten werden standardmäßig im Datensatz **Demo System - Ereignisdatensatz für Website (Global v1.1)** erfasst.
 - Alle Profildaten werden standardmäßig im Datensatz &quot;**Demo System - Profildatensatz für Website&quot;(Global v1.1)**&quot;erfasst (die native Aufnahme von Profildaten mit dem Web SDK wird derzeit noch nicht vom Web SDK unterstützt und zu einem späteren Zeitpunkt bereitgestellt)
 - Wenn Sie den Anwendungsdienst **Offer decisioning** für diesen Datastream verwenden möchten, müssen Sie das Kontrollkästchen zum Offer decisioning aktivieren. (Dies ist Teil von [Modul 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))

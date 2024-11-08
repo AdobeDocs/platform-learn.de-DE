@@ -3,7 +3,7 @@ title: Intelligente Dienste - Vorbereitung der Customer AI-Daten (Erfassung)
 description: Customer AI - Datenvorbereitung (Erfassung)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 4%
@@ -75,7 +75,7 @@ Geben Sie Ihrem Schema jetzt einen Namen.
 
 Als Name für unser Schema verwenden Sie Folgendes:
 
-- `--demoProfileLdap-- - Demo System - Customer Experience Event`
+- `--aepUserLdap-- - Demo System - Customer Experience Event`
 
 Beispiel: Für ldap **vangeluw** sollte dies der Name des Schemas sein:
 
@@ -111,7 +111,7 @@ Wählen Sie im nächsten Bildschirm den Datensatz aus, den Sie in der vorherigen
 
 ![Datensatz](./images/createds1.png)
 
-Verwenden Sie als Namen für Ihren Datensatz `--demoProfileLdap-- - Demo System - Customer Experience Event Dataset`. Klicken Sie auf **Fertigstellen**.
+Verwenden Sie als Namen für Ihren Datensatz `--aepUserLdap-- - Demo System - Customer Experience Event Dataset`. Klicken Sie auf **Fertigstellen**.
 
 ![Datensatz](./images/createds2.png)
 

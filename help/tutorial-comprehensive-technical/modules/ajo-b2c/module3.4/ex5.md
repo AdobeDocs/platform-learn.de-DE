@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Geschäftsereignisse
 description: In diesem Abschnitt wird erläutert, wie Sie die Funktion für Geschäftsereignisse verwenden können, um einen "Artikel wieder auf Lager"Anwendungsfall auszuführen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 8%
@@ -16,7 +16,7 @@ Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience C
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxId--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxId--`.
+Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ Klicken Sie auf **Ereignis erstellen**.
 
 Geben Sie die folgenden Werte in das Formular Ereigniserstellung ein:
 
-- **Name**: `--demoProfileLdap--ItemBackInStock`. Beispiel: **vangeluwItemBackInStock**
+- **Name**: `--aepUserLdap--ItemBackInStock`. Beispiel: **vangeluwItemBackInStock**
 - **Beschreibung**: Dieses Ereignis wird ausgelöst, wenn ein Produkt wieder auf Lager ist
 - **Typ**: Wählen Sie **Unternehmen** in der Dropdown-Liste aus.
 
@@ -66,7 +66,7 @@ Erweitern Sie auf der linken Seite das Objekt `--aepTenantId--` , erweitern Sie 
 
 ![Journey Optimizer](./images/23.8-7.png)
 
-Geben Sie für das Feld **eventName** den folgenden Wert ein: `--demoProfileLdap--ItemBackInStock`. Beispiel: vangeluwItemBackInStock.
+Geben Sie für das Feld **eventName** den folgenden Wert ein: `--aepUserLdap--ItemBackInStock`. Beispiel: vangeluwItemBackInStock.
 Klicken Sie auf **OK**.
 
 ![Journey Optimizer](./images/23.8-8.png)
@@ -87,14 +87,14 @@ Sie können dieses Geschäftsereignis und die Nachricht jetzt in einer Journey n
 
 Auf der rechten Seite sehen Sie ein Formular, in dem Sie den Journey-Namen und die Beschreibung angeben müssen. Geben Sie die folgenden Werte ein:
 
-- **Name**: `--demoProfileLdap-- - Item back in stock journey`. Beispiel: vangeluw - Artikel wieder in Journey
+- **Name**: `--aepUserLdap-- - Item back in stock journey`. Beispiel: vangeluw - Artikel wieder in Journey
 - **Beschreibung**: Diese Journey sendet eine SMS, wenn ein Artikel wieder auf Lager ist, an Besucher, die Interesse gezeigt haben.
 
 Klicken Sie auf **OK**.
 
 ![Journey Optimizer](./images/bej11.png)
 
-Suchen Sie im linken Menü unter **Ereignisse** nach Ihrem ldap. Sie finden das zuvor erstellte Geschäftsereignis `--demoProfileLdap--ItemBackInStock`. Ziehen Sie dieses Ereignis auf die Arbeitsfläche, da dies der Ausgangspunkt der Journey sein wird.
+Suchen Sie im linken Menü unter **Ereignisse** nach Ihrem ldap. Sie finden das zuvor erstellte Geschäftsereignis `--aepUserLdap--ItemBackInStock`. Ziehen Sie dieses Ereignis auf die Arbeitsfläche, da dies der Ausgangspunkt der Journey sein wird.
 
 ![Journey Optimizer](./images/bej12.png)
 
@@ -105,7 +105,7 @@ Die Konfiguration **Segment lesen** erwartet, dass Sie das Segment auswählen, d
 
 ![Journey Optimizer](./images/bej13.png)
 
-Suchen Sie im Popup **Segment auswählen** nach Ihrem ldap und wählen Sie das Segment aus, das Sie in [Modul 2.3 - Echtzeit-Kundendatenplattform - Erstellen eines Segments erstellt haben. Nehmen Sie die Aktion](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) mit dem Namen `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` vor. Beispiel: vangeluw - Interesse an PROTEUS FITNESS JACKSHIRT. Klicken Sie auf **Speichern**.
+Suchen Sie im Popup **Segment auswählen** nach Ihrem ldap und wählen Sie das Segment aus, das Sie in [Modul 2.3 - Echtzeit-Kundendatenplattform - Erstellen eines Segments erstellt haben. Nehmen Sie die Aktion](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) mit dem Namen `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` vor. Beispiel: vangeluw - Interesse an PROTEUS FITNESS JACKSHIRT. Klicken Sie auf **Speichern**.
 
 ![Journey Optimizer](./images/bej14.png)
 
@@ -200,14 +200,14 @@ Sie müssen nun die folgende `xdmEntity` -Zeile ersetzen..
 }
 ```
 
-... überprüfen Sie in dieser Zeile das Feld eventName wie `--demoProfileLdap--ItemBackInStock`, das die Bedingung darstellt, die Sie in Ihrem Geschäftsereignis für den Trigger Ihrer Journey angegeben haben.
+... überprüfen Sie in dieser Zeile das Feld eventName wie `--aepUserLdap--ItemBackInStock`, das die Bedingung darstellt, die Sie in Ihrem Geschäftsereignis für den Trigger Ihrer Journey angegeben haben.
 
 ```json
 "xdmEntity": {
   "_experienceplatform": {
     "joBusinessEvents": {
       "eventDescription": "Product Proteus Fitness Jackshirt is back in stock",
-      "eventName": "--demoProfileLdap--ItemBackInStock",
+      "eventName": "--aepUserLdap--ItemBackInStock",
       "stockEventId": "1"
     }
   },

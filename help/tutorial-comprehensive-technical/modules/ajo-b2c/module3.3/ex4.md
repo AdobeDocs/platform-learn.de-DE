@@ -3,7 +3,7 @@ title: Offer decisioning - Testen Sie Ihre Entscheidung mithilfe der Demowebsite
 description: Testen Sie Ihre Entscheidung mithilfe der Demo-Website.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 3%
@@ -66,11 +66,11 @@ Klicken Sie auf den Bereich, der den Text **Vorgestellte Kategorien** enthält. 
 
 ![RTCDP](./images/vec3.png)
 
-Dann sehen Sie dieses Popup. Wählen Sie Ihre Sandbox `--aepSandboxId--` und dann die Platzierung **Web - Bild** aus.
+Dann sehen Sie dieses Popup. Wählen Sie Ihre Sandbox `--aepSandboxName--` und dann die Platzierung **Web - Bild** aus.
 
 ![RTCDP](./images/vec4.png)
 
-Wählen Sie anschließend Ihre Entscheidung `--demoProfileLdap-- - Luma Decision` aus. Klicken Sie auf **Speichern**.
+Wählen Sie anschließend Ihre Entscheidung `--aepUserLdap-- - Luma Decision` aus. Klicken Sie auf **Speichern**.
 
 ![RTCDP](./images/vec5.png)
 
@@ -82,7 +82,7 @@ Dann wirst du das sehen. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/vec7.png)
 
-Geben Sie einen Namen für Ihr Angebot ein und verwenden Sie folgenden Namen: `--demoProfileLdap-- - XT with Offers (VEC)`. Klicken Sie auf **Weiter**.
+Geben Sie einen Namen für Ihr Angebot ein und verwenden Sie folgenden Namen: `--aepUserLdap-- - XT with Offers (VEC)`. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/vec8.png)
 

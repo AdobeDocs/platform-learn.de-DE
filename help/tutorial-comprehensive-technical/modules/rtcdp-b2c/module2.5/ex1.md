@@ -3,7 +3,7 @@ title: Adobe Experience Platform-Datenerfassung und Echtzeit-Ereignisweiterleitu
 description: Erstellen einer Adobe Experience Platform-Eigenschaft zur Ereignisweiterleitung für die Datenerfassung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Wechseln Sie zu [https://experience.adobe.com/#/data-collection/](https://experi
 
 ![Adobe Experience Platform-Datenerfassung SSF](./images/launchhome.png)
 
-Sie müssen nun einen Namen für Ihre Adobe Experience Platform-Eigenschaft zur Ereignisweiterleitung für die Datenerfassung eingeben. Verwenden Sie als Namenskonvention `--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)`. In diesem Beispiel lautet der Name beispielsweise &quot;**vangeluw - Demo System (22/02/2022) (Edge)**&quot;. Klicken Sie auf **Speichern**.
+Sie müssen nun einen Namen für Ihre Adobe Experience Platform-Eigenschaft zur Ereignisweiterleitung für die Datenerfassung eingeben. Verwenden Sie als Namenskonvention `--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`. In diesem Beispiel lautet der Name beispielsweise &quot;**vangeluw - Demo System (22/02/2022) (Edge)**&quot;. Klicken Sie auf **Speichern**.
 
 ![Adobe Experience Platform-Datenerfassung SSF](./images/ssf1.png)
 

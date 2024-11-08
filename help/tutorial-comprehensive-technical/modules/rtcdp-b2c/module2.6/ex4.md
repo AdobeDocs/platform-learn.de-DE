@@ -3,7 +3,7 @@ title: Installieren und Konfigurieren von Kafka Connect und Adobe Experience Pla
 description: Installieren und Konfigurieren von Kafka Connect und Adobe Experience Platform Sink Connector
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
@@ -231,7 +231,7 @@ Nehmen Sie die folgende Beispielnutzlast für Erlebnisereignisse und kopieren Si
 
 Dann wirst du das sehen. Sie müssen zwei Felder manuell aktualisieren:
 
-- **_id**: Setzen Sie es auf eine zufällige ID, etwa `--demoProfileLdap--1234`
+- **_id**: Setzen Sie es auf eine zufällige ID, etwa `--aepUserLdap--1234`
 - **timestamp**: Aktualisieren Sie den Zeitstempel auf das aktuelle Datum und die aktuelle Uhrzeit
 - **phoneNumber**: Geben Sie die phoneNumber des Kontos ein, das gerade auf der Demowebsite erstellt wurde. Sie finden sie im Bedienfeld &quot;Profil-Viewer&quot;unter **Identitäten**.
 

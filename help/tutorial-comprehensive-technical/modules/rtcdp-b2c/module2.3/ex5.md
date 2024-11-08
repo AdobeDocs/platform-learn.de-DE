@@ -3,7 +3,7 @@ title: Echtzeit-Kundendatenplattform - Erstellen eines Segments und Handeln - Se
 description: Echtzeit-Kundendatenplattform - Erstellen eines Segments und Handeln - Senden Sie Ihr Segment an Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 3%
@@ -16,23 +16,23 @@ Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platfor
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxId--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 ## 2.3.5.1 Datensatz überprüfen
 
-Das Adobe Target-Ziel in Real-Time CDP ist mit dem Datastream verbunden, der zur Aufnahme von Daten in das Adobe-Edge-Netzwerk verwendet wird. Wenn Sie Ihr Adobe Target-Ziel einrichten möchten, müssen Sie zunächst überprüfen, ob Ihr Datenspeicher bereits für Adobe Target aktiviert ist. Ihr Datastram wurde in [Übung 0.2 Erstellen Sie Ihren Datenspeicher](./../../../modules/gettingstarted/gettingstarted/ex2.md) konfiguriert und erhielt den Namen `--demoProfileLdap-- - Demo System Datastream`.
+Das Adobe Target-Ziel in Real-Time CDP ist mit dem Datastream verbunden, der zur Aufnahme von Daten in das Adobe-Edge-Netzwerk verwendet wird. Wenn Sie Ihr Adobe Target-Ziel einrichten möchten, müssen Sie zunächst überprüfen, ob Ihr Datenspeicher bereits für Adobe Target aktiviert ist. Ihr Datastram wurde in [Übung 0.2 Erstellen Sie Ihren Datenspeicher](./../../../modules/gettingstarted/gettingstarted/ex2.md) konfiguriert und erhielt den Namen `--aepUserLdap-- - Demo System Datastream`.
 
 Wechseln Sie zu [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) und klicken Sie dann auf **Datastreams** oder **Datastreams (Beta)**.
 
 ![Datenaufnahme](./images/atdestds1.png)
 
-Wählen Sie oben rechts auf Ihrem Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxId--` lauten soll.
+Wählen Sie oben rechts auf Ihrem Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` lauten soll.
 
 ![Klicken Sie auf das Symbol Edge-Konfiguration im linken Navigationsbereich](./images/edgeconfig1b.png)
 
-Suchen Sie in Datastreams nach Ihrem Datastream mit dem Namen `--demoProfileLdap-- - Demo System Datastream`. Klicken Sie auf Ihren Datenspeicher, um ihn zu öffnen.
+Suchen Sie in Datastreams nach Ihrem Datastream mit dem Namen `--aepUserLdap-- - Demo System Datastream`. Klicken Sie auf Ihren Datenspeicher, um ihn zu öffnen.
 
 ![Datenaufnahme](./images/atdestds3.png)
 
@@ -76,8 +76,8 @@ Dann wirst du das sehen.
 
 Im Bildschirm **Neues Ziel konfigurieren** müssen Sie zwei Dinge konfigurieren:
 
-- Name: Verwenden Sie den Namen &quot;`--demoProfileLdap-- - Adobe Target (Web)`&quot;, der wie folgt aussehen sollte: **vangeluw - Adobe Target (Web)**.
-- Datastream-ID: Sie müssen den Datastream auswählen, den Sie in [Übung 0.2 Erstellen Sie Ihren Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) konfiguriert haben. Der Name Ihres Datastreams sollte: `--demoProfileLdap-- - Demo System Datastream` lauten.
+- Name: Verwenden Sie den Namen &quot;`--aepUserLdap-- - Adobe Target (Web)`&quot;, der wie folgt aussehen sollte: **vangeluw - Adobe Target (Web)**.
+- Datastream-ID: Sie müssen den Datastream auswählen, den Sie in [Übung 0.2 Erstellen Sie Ihren Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) konfiguriert haben. Der Name Ihres Datastreams sollte: `--aepUserLdap-- - Demo System Datastream` lauten.
 
 Klicken Sie auf **Weiter**.
 
@@ -91,7 +91,7 @@ Ihr Ziel wird jetzt erstellt und in der Liste angezeigt. Wählen Sie Ihr Ziel au
 
 ![AT](./images/atdest7.png)
 
-Wählen Sie in der Liste der verfügbaren Segmente das Segment aus, das Sie in [Übung 6.1 Erstellen eines Segments](./ex1.md) erstellt haben, das den Namen `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` trägt. Klicken Sie dann auf **Weiter**.
+Wählen Sie in der Liste der verfügbaren Segmente das Segment aus, das Sie in [Übung 6.1 Erstellen eines Segments](./ex1.md) erstellt haben, das den Namen `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` trägt. Klicken Sie dann auf **Weiter**.
 
 ![AT](./images/atdest8.png)
 
@@ -177,7 +177,7 @@ Klicken Sie auf den Titel Ihrer Aktivität in der oberen linken Ecke, um sie umz
 
 Für den Namen verwenden Sie bitte:
 
-- `--demoProfileLdap-- - RTCDP - XT (Form)`
+- `--aepUserLdap-- - RTCDP - XT (Form)`
 
 ![RTCDP](./images/atform8.png)
 

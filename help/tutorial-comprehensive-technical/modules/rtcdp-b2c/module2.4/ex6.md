@@ -3,7 +3,7 @@ title: Segmentaktivierung für Microsoft Azure Event Hub - Aktion
 description: Segmentaktivierung für Microsoft Azure Event Hub - Aktion
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -71,17 +71,17 @@ Sie sehen dann Ihre Website in einem Inkognito-Browser-Fenster geladen. Für jed
 
 ## 2.4.6.3 Für Ihr Interesse am Segment Ausrüstung qualifizieren
 
-Navigieren Sie einmal zur Seite **Ausrüstung** und **laden Sie sie nicht neu oder aktualisieren Sie sie nicht**. Diese Aktion sollte Sie für Ihr `--demoProfileLdap-- - Interest in Equipment` -Segment qualifizieren.
+Navigieren Sie einmal zur Seite **Ausrüstung** und **laden Sie sie nicht neu oder aktualisieren Sie sie nicht**. Diese Aktion sollte Sie für Ihr `--aepUserLdap-- - Interest in Equipment` -Segment qualifizieren.
 
 ![6-04-luma-telco-nav-sports.png](./images/luma1.png)
 
-Öffnen Sie dazu das Bedienfeld Profil-Viewer . Sie sollten jetzt Mitglied der `--demoProfileLdap-- - Interest in Equipment` sein. Wenn Ihre Segmentmitgliedschaften noch nicht in Ihrem Profil-Viewer-Bedienfeld aktualisiert wurden, klicken Sie auf die Schaltfläche &quot;Neu laden&quot;.
+Öffnen Sie dazu das Bedienfeld Profil-Viewer . Sie sollten jetzt Mitglied der `--aepUserLdap-- - Interest in Equipment` sein. Wenn Ihre Segmentmitgliedschaften noch nicht in Ihrem Profil-Viewer-Bedienfeld aktualisiert wurden, klicken Sie auf die Schaltfläche &quot;Neu laden&quot;.
 
 ![6-05-luma-telco-nav-broad.png](./images/luma2.png)
 
-Wechseln Sie zurück zu Visual Studio Code und sehen Sie sich die Registerkarte **TERMINAL** an. Sie sollten eine Liste der Segmente für Ihre spezifische **ECID** sehen. Diese Aktivierungs-Payload wird an Ihren Ereignis-Hub bereitgestellt, sobald Sie sich für das `--demoProfileLdap-- - Interest in Equipment` -Segment qualifizieren.
+Wechseln Sie zurück zu Visual Studio Code und sehen Sie sich die Registerkarte **TERMINAL** an. Sie sollten eine Liste der Segmente für Ihre spezifische **ECID** sehen. Diese Aktivierungs-Payload wird an Ihren Ereignis-Hub bereitgestellt, sobald Sie sich für das `--aepUserLdap-- - Interest in Equipment` -Segment qualifizieren.
 
-Wenn Sie sich die Segment-Payload genauer ansehen, können Sie sehen, dass `--demoProfileLdap-- - Interest in Equipment` den Status **realisiert** aufweist.
+Wenn Sie sich die Segment-Payload genauer ansehen, können Sie sehen, dass `--aepUserLdap-- - Interest in Equipment` den Status **realisiert** aufweist.
 
 Der Segmentstatus **realisiert** bedeutet, dass unser Profil gerade in das Segment eingetreten ist. Der Status **vorhandene** bedeutet, dass sich unser Profil weiterhin im Segment befindet.
 

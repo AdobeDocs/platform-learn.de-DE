@@ -3,7 +3,7 @@ title: Daten aus Google Analytics in Adobe Experience Platform mit dem BigQuery 
 description: Daten aus Google Analytics in Adobe Experience Platform mit dem BigQuery Source Connector erfassen und analysieren - Google Analytics-Daten mithilfe von Customer Journey Analytics analysieren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Daraufhin wird die Benutzeroberfläche **Verbindung erstellen** angezeigt.
 
 ![demo](./images/5.png)
 
-Zunächst müssen Sie die richtige Sandbox auswählen, die verwendet werden soll. Wählen Sie im Sandbox-Menü Ihre Sandbox aus, die `--aepSandboxId--` sein soll. In diesem Beispiel lautet die zu verwendende Sandbox **AEP-Aktivierung FY21**.
+Zunächst müssen Sie die richtige Sandbox auswählen, die verwendet werden soll. Wählen Sie im Sandbox-Menü Ihre Sandbox aus, die `--aepSandboxName--` sein soll. In diesem Beispiel lautet die zu verwendende Sandbox **AEP-Aktivierung FY21**.
 
 ![demo](./images/cjasb.png)
 
