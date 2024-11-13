@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
+source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '942'
 ht-degree: 20%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 20%
    + [Konfigurieren der attributbasierten Zugriffssteuerung](/help/platform/admin/configure-attribute-based-access-control.md)
 + KI-Assistent {#ai-assistant}
    + [Übersicht](/help/platform/ai-assistant/overview.md)
+   + [Zugriff einrichten](/help/platform/ai-assistant/access.md)
    + [Zielgruppen bereinigen](/help/platform/ai-assistant/find-unused-audiences.md)
 + Zielgruppen und Segmentierung {#audiences}
    + [Einführung in Audience Portal und Komposition](audiences/introduction-to-audience-portal-and-composition.md)
