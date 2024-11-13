@@ -5,7 +5,7 @@ user-guide-description: Ein praxisorientiertes Tutorial, das viele Aspekte von A
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 4df0fdc30d5027c85c9ceebafa9abf771fae1507
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 3%
@@ -20,11 +20,11 @@ ht-degree: 3%
 + 0 Erste Schritte {#gettingstarted}
    + 0.1 Erste Schritte {#gettingstarted}
       + [Übersicht](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [0.0.1 Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-      + [0.0.2 Demo-System verwenden Weiter zum Einrichten der Adobe Experience Platform-Datenerfassungs-Client-Eigenschaft](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-      + [0.0.3 Datenspeicher erstellen](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-      + [0.0.4 Website verwenden](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-      + [0.0.5 Mobile App verwenden](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+      + [0.1.1 Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [0.1.2 Demosystem verwenden Weiter zum Einrichten der Adobe Experience Platform-Datenerfassungs-Client-Eigenschaft](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+      + [0.1.3 Datenspeicher erstellen](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+      + [0.1.4 Website verwenden](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+      + [0.1.5 Mobile App verwenden](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Datenerfassung {#datacollection}
    + 1.1 Adobe Experience Platform-Datenerfassung und Web SDK-Erweiterung {#module11}
