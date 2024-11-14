@@ -5,10 +5,10 @@ user-guide-description: Ein praxisorientiertes Tutorial, das viele Aspekte von A
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4df0fdc30d5027c85c9ceebafa9abf771fae1507
+source-git-commit: f79a989f01fa1c005a0c06cea81268118b2467be
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 3%
+source-wordcount: '914'
+ht-degree: 4%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 3%
 
 + [Tutorial-Überblick](/help/tutorial-comprehensive-technical/overview.md)
 
-+ 0 Erste Schritte {#gettingstarted}
-   + 0.1 Erste Schritte {#gettingstarted}
++ Erste Schritte {#gettingstarted}
+   + Erste Schritte {#gettingstarted}
       + [Übersicht](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [0.1.1 Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-      + [0.1.2 Demosystem verwenden Weiter zum Einrichten der Adobe Experience Platform-Datenerfassungs-Client-Eigenschaft](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-      + [0.1.3 Datenspeicher erstellen](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-      + [0.1.4 Website verwenden](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-      + [0.1.5 Mobile App verwenden](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+      + [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [Demosystem Weiter verwenden, um Ihre Adobe Experience Platform-Datenerfassungs-Client-Eigenschaft einzurichten](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+      + [Erstellen Ihres Datenspeichers](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+      + [Website verwenden](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+      + [Verwenden der App](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Datenerfassung {#datacollection}
    + 1.1 Adobe Experience Platform-Datenerfassung und Web SDK-Erweiterung {#module11}

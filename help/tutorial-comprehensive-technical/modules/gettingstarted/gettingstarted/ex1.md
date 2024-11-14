@@ -4,14 +4,14 @@ description: Erste Schritte - Installieren der Chrome-Erweiterung für die Exper
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
 
-# 0.1.1 Installieren der Chrome-Erweiterung für die Experience League-Dokumentation
+# Installieren der Chrome-Erweiterung für die Experience League-Dokumentation
 
 ## Über die Chrome-Erweiterung
 
@@ -35,7 +35,7 @@ Sobald die Erweiterung installiert ist, wird derselbe Text automatisch geändert
 
 ![DSN](./images/mod7.png)
 
-## 0.1.1.1 Chrome-Erweiterung installieren
+## Installieren der Chrome-Erweiterung
 
 Um diese Chrome-Erweiterung zu installieren, öffnen Sie den Chrome-Browser und navigieren Sie zu: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Dann wirst du das sehen.
 
@@ -55,7 +55,7 @@ Klicken Sie im Menü **Erweiterungen** auf das Symbol **Puzzleteil** und veröff
 
 ![DSN](./images/c6.png)
 
-## 0.1.1.2 Chrome-Erweiterung konfigurieren
+## Konfigurieren der Chrome-Erweiterung
 
 Wechseln Sie zu [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) und klicken Sie auf das Symbol für die Erweiterung, um es zu öffnen.
 
@@ -133,7 +133,7 @@ Nach der Aktivierung Ihrer Konfiguration wird neben den Initialen Ihrer Umgebung
 
 ![DSN](./images/c10.png)
 
-## 0.1.1.3 Inhalt des Tutorials überprüfen
+## Überprüfen des Tutorial-Inhalts
 
 Gehen Sie als Test zu [dieser Seite](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
 
@@ -141,10 +141,10 @@ Sie sollten nun sehen, dass alle **Umgebungsvariablen** anhand der aktivierten U
 
 Sie sollten nun eine ähnliche Ansicht wie die unten stehende haben, in der die Umgebungsvariable `aepTenantId` durch Ihre echte AEP-Mandanten-ID ersetzt wurde, die in diesem Fall **_experienceplatform** lautet.
 
-![DSN](./images/c12.png)
+![DSN](./images/mod7.png)
 
-Nächster Schritt: [0.2 Demo-System verwenden Weiter zum Einrichten der Adobe Experience Platform-Datenerfassungs-Client-Eigenschaft](./ex2.md)
+Nächster Schritt: [Verwenden Sie das Demosystem Weiter , um Ihre Adobe Experience Platform-Datenerfassungs-Client-Eigenschaft einzurichten](./ex2.md)
 
-[Zurück zu Modul 0](./getting-started.md)
+[Zurück zu den ersten Schritten](./getting-started.md)
 
 [Zu allen Modulen zurückkehren](./../../../overview.md)

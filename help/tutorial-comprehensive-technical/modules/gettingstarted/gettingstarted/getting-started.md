@@ -4,14 +4,14 @@ description: Erste Schritte - Zusammenfassung
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
-# 0.1 Erste Schritte
+# Erste Schritte
 
 In diesem Modul richten Sie alles ein, damit Sie Daten erfassen, auf die Demoumgebung zugreifen und die dynamischen Variablen in diesem Tutorial personalisieren können.
 
@@ -28,23 +28,23 @@ In diesem Modul richten Sie alles ein, damit Sie Daten erfassen, auf die Demoumg
 
 ## Übungen
 
-[0.1.1 Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](./ex1.md)
+[Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](./ex1.md)
 
 In dieser Übung installieren und konfigurieren Sie die Chrome-Erweiterung, damit Sie damit den Tutorial-Inhalt personalisieren können.
 
-[0.1.2 Demosystem verwenden Weiter zum Einrichten der Adobe Experience Platform-Datenerfassungs-Client-Eigenschaft](./ex2.md)
+[Demosystem Weiter verwenden, um Ihre Adobe Experience Platform-Datenerfassungs-Client-Eigenschaft einzurichten](./ex2.md)
 
 In dieser Übung verwenden Sie Demo System Next , um Ihre Launch-Eigenschaften für Web und Mobile einzurichten.
 
-[0.1.3 Datenspeicher erstellen](./ex3.md)
+[Erstellen Ihres Datenspeichers](./ex3.md)
 
 In dieser Übung verwenden Sie Demo System Next , um Ihre Launch-Eigenschaften für Web und Mobile einzurichten.
 
-[0.1.4 Website verwenden](./ex4.md)
+[Website verwenden](./ex4.md)
 
 In dieser Übung richten Sie die Website ein, damit Sie sie für Demonstrationen und Aktivierungen verwenden können.
 
-[0.1.5 Mobile App verwenden](./ex5.md)
+[Verwenden der App](./ex5.md)
 
 In dieser Übung richten Sie die Mobile App so ein, dass Sie sie für Demonstrationen und Aktivierungen verwenden können.
 
