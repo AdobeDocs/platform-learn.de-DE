@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Daten für Adobe Analytics in einer App erfas
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
+source-git-commit: 7dfa14081e87489f908084e93722f67643fd5984
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -129,9 +129,9 @@ s.events = "scAdd:321435"
 
 ## Mit Assurance validieren
 
-Mit der [Garantie](assurance.md) können Sie bestätigen, dass Sie ein Erlebnisereignis senden, die XDM-Daten korrekt sind und die Analytics-Zuordnung erwartungsgemäß erfolgt.
+Mit dem [Assurance](assurance.md) können Sie bestätigen, dass Sie ein Erlebnisereignis senden, die XDM-Daten korrekt sind und die Analytics-Zuordnung erwartungsgemäß erfolgt.
 
-1. Lesen Sie den Abschnitt [Setup instructions](assurance.md#connecting-to-a-session) , um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
+1. Lesen Sie den Abschnitt [Einrichtungsanweisungen](assurance.md#connecting-to-a-session) , um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 
 1. Senden Sie ein **[!UICONTROL productListAdds]** -Ereignis (fügen Sie Ihrem Warenkorb ein Produkt hinzu).
 
@@ -179,7 +179,7 @@ Der Kontextdatenschlüssel wird nach dieser Syntax konstruiert:
 a.x.[xdm path]
 ```
 
-Beispiel:
+z. B.:
 
 ```
 // Standard Field
@@ -306,6 +306,17 @@ Weitere Informationen zu Verarbeitungsregeln und Kontextdaten finden Sie [hier](
 >[!TIP]
 >
 >Im Gegensatz zu früheren Implementierungen mobiler Apps gibt es keine Unterscheidung zwischen Seiten-/Bildschirmansichten und anderen Ereignissen. Stattdessen können Sie die Metrik **[!UICONTROL Seitenansicht]** erhöhen, indem Sie in einer Verarbeitungsregel die Dimension **[!UICONTROL Seitenname]** festlegen. Da Sie das benutzerdefinierte Feld `screenName` im Tutorial erfassen, wird dringend empfohlen, den Bildschirmnamen in einer Verarbeitungsregel **[!UICONTROL Seitennamen]** zuzuordnen.
+
+## Migration von der mobilen Analytics-Erweiterung
+
+Wenn Sie Ihre Mobile App mit der mobilen Erweiterung [Adobe Analytics ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application) entwickelt haben, haben Sie höchstwahrscheinlich [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) und [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API-Aufrufe verwendet.
+
+Wenn Sie sich für eine Migration zur Verwendung des empfohlenen Edge Networks entscheiden, haben Sie folgende Optionen:
+
+* Implementieren Sie die [Edge Network-Erweiterung](configure-tags.md#extension-configuration) und verwenden Sie die [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent)-APIs, wie in der Lektion zum [Tracking von Ereignisdaten](events.md) dargestellt. Dieses Tutorial konzentriert sich auf diese Implementierung.
+* Implementieren Sie die Erweiterung [Edge Bridge](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) und verwenden Sie weiterhin Ihre API-Aufrufe [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) und [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate). Weitere Informationen und ein separates Tutorial finden Sie unter [Implementieren der Edge Bridge-Erweiterung](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) .
+
+
 
 
 >[!SUCCESS]
