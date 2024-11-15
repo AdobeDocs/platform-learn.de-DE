@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Trigger-basierte Journey konfigurieren - Bestel
 description: In diesem Abschnitt konfigurieren Sie eine Trigger-basierte Journey - Bestellbestätigung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '1991'
 ht-degree: 9%
 
 ---
@@ -404,10 +405,6 @@ Testen wir die aktualisierte Journey, indem wir ein Produkt auf der Demowebsite 
 Wechseln Sie zu [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf Ihr Website-Projekt, um es zu öffnen.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Klicken Sie auf der Seite **Screens** auf **Ausführen**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
 

@@ -3,9 +3,10 @@ title: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und
 description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Erläuterung der Adobe Experience Platform-Datenerfassung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '504'
 ht-degree: 3%
 
 ---
@@ -42,7 +43,12 @@ Sehen Sie sich nun die linke Leiste an.
 - **[!UICONTROL Tags]** bietet einen Überblick über alle clientseitigen Eigenschaften
 - **[!UICONTROL App-Oberflächen]** bietet einen Überblick über alle App-Konfigurationen zur Aktivierung von Push-Benachrichtigungen (wird in Kombination mit Projekt-Sierra verwendet/aktiviert)
 - **[!UICONTROL Datastreams]** werden in der [nächsten Übung](./ex2.md) untersucht.
-- **[!UICONTROL Ereignisweiterleitung]** gibt einen Überblick über alle serverseitigen Eigenschaften, die im [Modul 14 - Real-Time CDP-Verbindungen: Ereignisweiterleitung](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md) untersucht werden.
+- **[!UICONTROL Ereignisweiterleitung]** gibt einen Überblick über alle serverseitigen Eigenschaften, die im [Modul 2.5 - Real-Time CDP-Verbindungen: Ereignisweiterleitung](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md) untersucht werden.
+- **[!UICONTROL Überwachung]** bietet einen Überblick über den eingehenden und ausgehenden Ereignis-Traffic durch die Ereignisweiterleitung.
+- **[!UICONTROL Assurance]** bietet Zugriff zum Debugging einer Implementierung mithilfe des Adobe Debuggers
+- **[!UICONTROL Places]** bietet Zugriff auf die Verwaltung von POIs, die für standortbasierte Personalisierung in Mobile Apps verfügbar sind
+- **[!UICONTROL Schemas]** bietet Zugriff auf den Schema-Editor von Adobe Experience Platform
+- **[!UICONTROL Identitäten]** bietet Zugriff auf die Einrichtung des Identitätsdiagramms von Adobe Experience Platform
 
 ## Weitere Informationen
 

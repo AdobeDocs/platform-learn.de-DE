@@ -3,10 +3,11 @@ title: Foundation - Einrichten der Adobe Experience Platform-Datenerfassung und 
 description: Foundation - Einrichten der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Implementieren von Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ Dann wirst du das sehen. Um Adobe Target zu aktivieren, klicken Sie auf **+Diens
 
 ![AEP-Debugger](./images/aa2.png)
 
-Dann wirst du das sehen. Wählen Sie den Dienst **Adobe Target** aus, nach dem Sie optional zusätzliche Informationen angeben können. Zum jetzigen Zeitpunkt muss dies nicht gespeichert werden. Klicken Sie daher auf **Abbrechen**.
+Dann wirst du das sehen. Wählen Sie den Dienst **Adobe Target** aus, nach dem Sie optional zusätzliche Informationen angeben können. Klicken Sie auf **Speichern**.
 
 ![AEP-Debugger](./images/at1.png)
 

@@ -3,16 +3,15 @@ title: 1.1 Einrichtung der Adobe Experience Platform-Datenerfassung und der Web 
 description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b69ebe41-ff28-4dde-b639-198201120742
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 1.1 Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung
-
-**Autor: [Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/), [Wouter van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Dieses grundlegende Modul führt Sie in die Vision der Datenerfassung von Adobe ein und erläutert, wie Sie Daten von einer Website und Mobile App über die Datenerfassung von Adobe Experience Platform, die Adobe Experience Platform-SDKs und das Adobe Experience Platform-Edge Network in Adobe Experience Platform und andere Anwendungen übertragen können. In diesem Modul werden einige Konzepte und Technologien vorgestellt, die sich über das technische Tutorial von Adobe Experience Platform hinaus auswirken. Es sollte klar sein, welche Teile dieser Übungen für den Rest des umfassenden Tutorials von grundlegender Bedeutung sind, das Ihnen mehr über Experience Edge und seine Funktionen beibringt und wo Sie weitere Informationen und Tutorials erhalten können.
 
@@ -35,7 +34,7 @@ Dieses grundlegende Modul führt Sie in die Vision der Datenerfassung von Adobe 
 
 >[!NOTE]
 >
->Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie in [0.1 - Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben.
+>Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie unter [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben.
 
 ## Übungen
 

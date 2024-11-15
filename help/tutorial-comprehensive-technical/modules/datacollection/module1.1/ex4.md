@@ -3,9 +3,10 @@ title: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und
 description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Clientseitige Web-Datenerfassung
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ### Installieren des Adobe Experience Platform Debuggers
 
-Der Experience Platform Debugger ist eine Erweiterung für Chrome- und Firefox-Browser, die Ihnen dabei hilft, die auf Ihren Webseiten implementierte Adobe-Technologie zu sehen. Laden Sie die Version für Ihren bevorzugten Browser herunter:
+Der Experience Platform Debugger ist eine Erweiterung für Chrome- und Firefox-Browser, die Ihnen dabei hilft, die auf Ihren Webseiten implementierte Adobe-Technologie zu sehen. Installieren Sie die Version für Ihren bevorzugten Browser:
 
 - [Firefox-Erweiterung](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -37,13 +38,9 @@ Stellen Sie sicher, dass diese beiden Einstellungen aktiviert sind:
 
 ### Öffnen Sie die Demowebsite
 
-Wechseln Sie zu [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf Ihr Website-Projekt, um es zu öffnen.
+Wechseln Sie zu [https://dsn.adobe.com](https://dsn.adobe.com). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf die drei Punkte **..** im Website-Projekt und dann auf **Ausführen** , um es zu öffnen.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-Klicken Sie auf der Seite **Screens** auf **Ausführen**.
-
-![DSN](./images/web2.png)
+![DSN](.//images/web8.png)
 
 Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
 
@@ -77,15 +74,19 @@ Klicken Sie oben rechts auf die Schaltfläche **[!UICONTROL Anmelden]** , um sic
 
 ![AEP-Debugger](./images/validate2.png)
 
+Sie werden dann im Debugger angemeldet sein.
+
+![AEP-Debugger](./images/validate2ab.png)
+
 Drücken Sie die Schaltfläche Neu laden auf Ihrer Demo-Website, um den Debugger mit dieser Registerkarte zu verbinden.
 
 ![AEP-Debugger](./images/validate2a.png)
 
-Vergewissern Sie sich, dass der Debugger, wie oben dargestellt, &quot;**[!UICONTROL Verbindung zur Startseite&quot;]**&quot;ist, und klicken Sie dann auf das Symbol &quot;**[!UICONTROL Sperren]**&quot;, um den Debugger mit der Demowebsite zu sperren. Wenn Sie dies nicht tun, schaltet der Debugger weiter, um die Implementierungsdetails der Browser-Registerkarte anzuzeigen, die im Fokus ist, was verwirrend sein kann.
+Vergewissern Sie sich, dass der Debugger, wie oben dargestellt, &quot;**[!UICONTROL Verbindung zur Startseite&quot;]**&quot;ist, und klicken Sie dann auf das Symbol &quot;**[!UICONTROL Sperren]**&quot;, um den Debugger mit der Demowebsite zu sperren. Wenn Sie dies nicht tun, schaltet der Debugger weiter, um die Implementierungsdetails der Browser-Registerkarte anzuzeigen, die im Fokus ist, was verwirrend sein kann. Sobald der Debugger gesperrt ist, wird das Symbol in **Entsperren** geändert.
 
 ![AEP-Debugger](./images/validate3.png)
 
-Navigieren Sie dann zu einer beliebigen Seite auf der Demowebsite, z. B. zur Kategorieseite **Männer** .
+Navigieren Sie anschließend zu einer beliebigen Seite auf der Demowebsite, z. B. der Kategorieseite **Pläne** .
 
 ![AEP Debugger AEP Web SDK-Erweiterung](./images/validate4.png)
 
@@ -95,11 +96,11 @@ Jede Anforderung enthält eine Zeile **[!UICONTROL events]** .
 
 ![AEP Debugger AEP Web SDK-Erweiterung](./images/validate5.png)
 
-Klicken Sie auf , um die Zeile **[!UICONTROL events]** zu öffnen. Beachten Sie, wie Sie das Ereignis **web.webpageDetails.pageViews** sowie weitere native Variablen sehen können, die dem Format **Web SDK ExperienceEvent XDM** entsprechen.
+Klicken Sie auf , um eine Zeile **[!UICONTROL events]** zu öffnen. Beachten Sie, wie Sie das Ereignis **web.webpageDetails.pageViews** sowie weitere native Variablen sehen können, die dem Format **Web SDK ExperienceEvent XDM** entsprechen.
 
 ![Ereigniswert](./images/validate8.png)
 
-Diese Arten von Anforderungsdetails sind auch auf der Registerkarte &quot;Netzwerk&quot;sichtbar. Filtern Sie nach Anforderungen mit **interact** , um die vom Web SDK gesendeten Anforderungen zu finden. Alle Details der XDM-Payload finden Sie in den Headern der Anfrage-Payload:
+Diese Arten von Anforderungsdetails sind auch auf der Registerkarte &quot;Netzwerk&quot;sichtbar. Filtern Sie nach Anforderungen mit **interact** , um die vom Web SDK gesendeten Anforderungen zu finden. Alle Details der XDM-Payload finden Sie im Abschnitt Payload :
 
 ![Registerkarte &quot;Netzwerk&quot;](./images/validate9.png)
 

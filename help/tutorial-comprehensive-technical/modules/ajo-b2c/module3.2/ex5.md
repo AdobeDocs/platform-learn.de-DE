@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Trigg
 description: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Trigger Ihrer koordinierten Kunden-Journey
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -73,10 +74,6 @@ Klicken Sie auf **Alle geänderten Ressourcen hinzufügen** und dann auf **Speic
 Wechseln Sie zu [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf Ihr Website-Projekt, um es zu öffnen.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Klicken Sie auf der Seite **Screens** auf **Ausführen**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
 

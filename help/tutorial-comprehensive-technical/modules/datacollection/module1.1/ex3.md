@@ -3,9 +3,10 @@ title: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und
 description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Einführung in die Adobe Experience Platform-Datenerfassung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1273'
 ht-degree: 9%
 
 ---
@@ -26,31 +27,30 @@ Dies ist die Seite mit den Eigenschaften der Adobe Experience Platform-Datenerfa
 
 ![Eigenschaftsseite](./images/launch1.png)
 
-In Modul 0 hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die mobile App. Suchen Sie sie, indem Sie im Feld **[!UICONTROL Suche]** nach `--aepUserLdap--` suchen.
+In **Erste Schritte** hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die mobile App. Suchen Sie sie, indem Sie im Feld **[!UICONTROL Suche]** nach `--aepUserLdap--` suchen.
+Klicken Sie auf , um die Eigenschaft **Web** zu öffnen.
 
 ![Suchfeld](./images/property6.png)
 
-Öffnen Sie die Eigenschaft **Web** .
 
-Daraufhin wird die Seite Eigenschaftsübersicht angezeigt. Klicken Sie in der linken Leiste auf **[!UICONTROL Erweiterungen]** . Klicken Sie unter der Adobe Experience Platform Web SDK-Erweiterung auf die Schaltfläche **[!UICONTROL Konfigurieren]** .
+
+Daraufhin wird die Seite Eigenschaftsübersicht angezeigt. Klicken Sie in der linken Leiste auf **[!UICONTROL Erweiterungen]**, klicken Sie dann auf **Adobe Experience Platform Web SDK** und dann auf **[!UICONTROL Konfigurieren]**.
 
 ![Eigenschaftenübersichtsseite](./images/property7.png)
 
-Willkommen beim Adobe Experience Platform Web SDK! Hier können Sie die Erweiterung mit dem Datastream konfigurieren, den Sie in [Übung 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) erstellt haben, sowie mit einer erweiterten Konfiguration. Sie werden nur zwei Einstellungen für diese Übung konfigurieren.
+Willkommen beim Adobe Experience Platform Web SDK! Hier können Sie die Erweiterung mit dem Datastream konfigurieren, den Sie in [Erste Schritte](./../../../modules/gettingstarted/gettingstarted/ex2.md) erstellt haben, sowie mit einer erweiterten Konfiguration.
 
-Die standardmäßige Edge-Domäne ist immer **edge.adobedc.net**. Wenn Sie eine CNAME-Konfiguration in Ihrer Adobe Experience Cloud- oder Adobe Experience Platform-Umgebung implementiert haben, müssen Sie die **[!UICONTROL Edge-Domäne]** aktualisieren. Ihre Adobe Experience Platform-Instanz verwendet diese Edge-Domäne: `--webSdkEdgeDomain--`.
+Die standardmäßige Edge-Domäne ist immer **edge.adobedc.net**. Wenn Sie eine CNAME-Konfiguration in Ihrer Adobe Experience Cloud- oder Adobe Experience Platform-Umgebung implementiert haben, müssen Sie die **[!UICONTROL Edge-Domäne]** aktualisieren.
 
-Wenn sich die Edge-Domäne Ihrer Instanz von der Standarddomäne unterscheidet, aktualisieren Sie die Edge-Domäne. Eine Edge-Domäne ermöglicht die Konfiguration eines Erstanbieter-Tracking-Servers, der dann eine CNAME-Konfiguration im Backend verwendet, um sicherzustellen, dass Daten im Adobe erfasst werden.
+Wenn sich die Edge-Domäne Ihrer Instanz von der Standarddomäne unterscheidet, aktualisieren Sie hier die Edge-Domäne. Wenn Sie sich nicht sicher sind, verwenden Sie die Standarddomäne. Eine Edge-Domäne ermöglicht die Konfiguration eines Trackingservers eines Erstanbieters, der dann eine CNAME-Konfiguration im Backend verwendet, um sicherzustellen, dass Daten im Adobe erfasst werden.
 
 ![Startseite der Erweiterungen](./images/property9edgedomain.png)
 
-Stellen Sie nun sicher, dass die Optionsschaltfläche **[!UICONTROL Aus Liste auswählen]** unter der Überschrift **[!UICONTROL Datastreams]** ausgewählt ist, und wählen Sie Ihren Datenspeicher mit dem Namen `--aepUserLdap-- - Demo System Datastream` aus der Liste im Feld **[!UICONTROL Datastream]** aus.
-
-![Startseite der Erweiterungen](./images/property9edge.png)
+Unter **[!UICONTROL Datastreams]** haben Sie Ihren Datastream bereits im Abschnitt **Erste Schritte** ausgewählt. Sie haben diesen Datastream ausgewählt: `--aepUserLdap-- - Demo System Datastream` aus der Liste im Feld **[!UICONTROL Datastream]** für jede Umgebung.
 
 Klicken Sie auf **[!UICONTROL Speichern]** , um zur Ansicht &quot;Erweiterungen&quot;zurückzukehren.
 
-![Adobe Experience Platform Web SDK-Homepage](./images/save.png)
+![Startseite der Erweiterungen](./images/property9edge.png)
 
 ## 1.1.3.2 Datenelemente
 
@@ -104,11 +104,13 @@ Klicken Sie auf die zurückgegebene Regel.
 
 ![Medien - Regelsuche für Artikelseiten](./images/rule1.png)
 
-Werfen wir einen Blick auf die einzelnen Elemente, aus denen diese Regel besteht. Für alle Regeln Wenn ein angegebenes **[!UICONTROL Ereignis]** auftritt, werden die **[!UICONTROL Bedingungen]** ausgewertet, dann finden bei Bedarf die angegebenen **[!UICONTROL Aktionen]** statt.
+Werfen wir einen Blick auf die einzelnen Elemente, aus denen diese Regel besteht.
+
+Für alle Regeln: Wenn ein angegebenes **[!UICONTROL Ereignis]** auftritt, werden die **[!UICONTROL Bedingungen]** ausgewertet, dann finden bei Bedarf die angegebenen **[!UICONTROL Aktionen]** statt.
 
 ![Medien - Regel für Artikelseiten](./images/rule2.png)
 
-Klicken Sie auf das Ereignis **Benutzerspezifisches Ereignis - Produktansicht**. Dies ist die Ansicht, die geladen wird.
+Klicken Sie auf das Ereignis **Core - Benutzerspezifisches Ereignis**. Dies ist die Ansicht, die geladen wird.
 
 Klicken Sie auf die Dropdown-Liste **Ereignistyp** .
 
@@ -118,9 +120,11 @@ Hier werden einige der Standardinteraktionen aufgelistet, mit denen Sie signalis
 
 Klicken Sie auf **[!UICONTROL Abbrechen]** , um zur Regel zurückzukehren.
 
-Klicken Sie auf die Aktion **&quot;Produktansicht&quot;an AEP senden**.
+Klicken Sie auf die Aktion **Erlebnisereignis &quot;Produktansicht&quot;senden**.
 
-Hier sehen Sie die Daten, die vom Adobe Experience Platform Web SDK an die Adobe Edge gesendet werden. Genauer gesagt wird dabei die **Legierung** **[!UICONTROL Instanz]** des Web SDK verwendet. Durch das Einrichten einer weiteren **[!UICONTROL Instanz]** können u. a. verschiedene Datastreams verwendet werden. Sie haben das Ereignis **[!UICONTROL Typ]** als **commerce.productViews** angegeben und die XDM-Daten, die Sie senden, sind das Datenelement **XDM - Produktansicht** , das Sie zuvor geändert haben.
+![Ereignisaktion senden](./images/rule5a.png)
+
+Hier sehen Sie die Daten, die vom Adobe Experience Platform Web SDK an den Edge gesendet werden. Genauer gesagt wird dabei die **Legierung** **[!UICONTROL Instanz]** des Web SDK verwendet. Das Ereignis **[!UICONTROL Typ]** ist auf **Commerce-Produktansichten (Warenkorb)** und die XDM-Daten, die Sie senden, sind das Datenelement **XDM - Produktansicht** , das Sie zuvor geändert haben.
 
 ![Ereignisaktion senden](./images/rule5.png)
 
@@ -136,17 +140,14 @@ Klicken Sie auf die vorhandene Bibliothek mit dem Namen **Main**.
 
 ![Bibliothekszugriff](./images/publish1.png)
 
-Klicken Sie auf die Schaltfläche **Alle geänderten Ressourcen hinzufügen** .
+Klicken Sie auf die Schaltfläche **Alle geänderten Ressourcen hinzufügen** . Als Nächstes
+Klicken Sie auf die Schaltfläche **Speichern und für Entwicklung erstellen** .
 
 ![Bibliothekszugriff](./images/publish1a.png)
 
-Scrollen Sie nach unten, um die meisten Ressourcen als **Revision 1 (Neueste Version)** zu sehen, aber die beiden geänderten Elemente - **Datenelement: ruleArticlePages** und **Extension: Adobe Experience Platform Web SDK** werden nur mit **Neueste** markiert.
-
-Klicken Sie auf die Schaltfläche **Speichern und für Entwicklung erstellen** .
+Die Erstellung der Bibliothek kann einige Minuten dauern. Wenn sie abgeschlossen ist, wird links neben dem Bibliotheksnamen ein grüner Punkt angezeigt.
 
 ![Inhaltsbibliothek](./images/publish2.png)
-
-Die Erstellung der Bibliothek kann einige Minuten dauern. Wenn sie abgeschlossen ist, wird links neben dem Bibliotheksnamen ein grüner Punkt angezeigt.
 
 Wie Sie auf dem Bildschirm &quot;Veröffentlichungsfluss&quot;sehen können, gibt es viel mehr im Veröffentlichungsprozess in der Adobe Experience Platform-Datenerfassung, was über den Rahmen dieses Tutorials hinausgeht. Wir werden nur eine einzige Bibliothek in unserer Entwicklungsumgebung verwenden.
 

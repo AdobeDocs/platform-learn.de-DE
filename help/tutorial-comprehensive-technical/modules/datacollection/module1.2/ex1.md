@@ -3,9 +3,10 @@ title: Foundation - Datenerfassung - Von unbekannt zu bekannt auf der Website
 description: Foundation - Datenerfassung - Von unbekannt zu bekannt auf der Website
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -29,10 +30,6 @@ Sie erfassen jetzt Daten in Adobe Experience Platform und diese Daten werden mit
 Wechseln Sie zu [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf Ihr Website-Projekt, um es zu öffnen.
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-Klicken Sie auf der Seite **Screens** auf **Ausführen**.
-
-![DSN](../module1.1/images/web2.png)
 
 Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
 
