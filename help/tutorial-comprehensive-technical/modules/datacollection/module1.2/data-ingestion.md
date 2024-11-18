@@ -3,16 +3,15 @@ title: Foundation - Datenerfassung
 description: Foundation - Datenerfassung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 976d801a-3dcb-4cd9-8b9f-b1c964fe7c25
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
 
 # 1.2 Foundation - Datenerfassung
-
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In diesem Modul besteht das Ziel darin, alles über die Datenerfassung zu erfahren. Sie erfahren mehr über die Datenerfassung in Streaming und Batch. Sie implementieren die Streaming-Datenerfassung mithilfe von Launch, sodass das Kundenverhalten auf der Hands-On-Lab-Website in Echtzeit an Adobe Experience Platform gestreamt wird. Sie erfahren mehr über die Batch-Datenerfassung, indem Sie einen Adobe Experience Platform-Workflow verwenden, um eine CSV-Datei zu erstellen, sie einem XDM-Schema zuzuordnen und sie dann in Adobe Experience Platform aufzunehmen.
 

@@ -3,22 +3,23 @@ title: Foundation - Datenerfassung - Konfigurieren von Datensätzen
 description: Foundation - Datenerfassung - Konfigurieren von Datensätzen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 94ef3e17-af28-4549-8a08-91b129ff4c93
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 7%
+source-wordcount: '571'
+ht-degree: 8%
 
 ---
 
 # 1.2.3 Datensätze konfigurieren
 
-In dieser Übung konfigurieren Sie die erforderlichen Datensätze, um Profilinformationen und Kundenverhalten zu erfassen und zu speichern. Jeder Datensatz, den Sie in diesem erstellen, verwendet eines der Schemas, die Sie im vorherigen Schritt erstellt haben.
+In dieser Übung konfigurieren Sie Datensätze, um Profilinformationen und Kundenverhalten zu erfassen und zu speichern. Jeder Datensatz, den Sie in diesem erstellen, verwendet eines der Schemas, die Sie im vorherigen Schritt erstellt haben.
 
-## Geschichte
+## Kontext
 
 Nach der Definition der Antwort auf die Fragen **Wer ist dieser Kunde?** und **Was macht dieser Kunde?** sollte so aussehen, müssen Sie jetzt einen Behälter erstellen, der diese Informationen verwendet, um an Adobe Experience Platform gesendete Daten zu empfangen und zu validieren.
 
-## 1.2.3.1 - Datensätze erstellen
+## Erstellen von Datensätzen
 
 Erstellen Sie nun zwei Datensätze:
 
@@ -45,39 +46,25 @@ Sie sollten einen neuen Datensatz erstellen. Um einen neuen Datensatz zu erstell
 
 ![Datenaufnahme](./images/createdataset.png)
 
-Nachdem Sie auf die Schaltfläche **[!UICONTROL + Datensatz erstellen]** geklickt haben, wird der folgende Bildschirm angezeigt.
-
-![Datenaufnahme](./images/datasetsetup.png)
-
 Sie müssen einen Datensatz aus dem Schema definieren, das Sie im vorherigen Schritt definiert haben. Klicken Sie auf die Option **[!UICONTROL Datensatz aus Schema erstellen]** - .
 
 ![Datenaufnahme](./images/datasetfromschema.png)
 
 Wählen Sie im nächsten Bildschirm das Schema aus, das Sie in 1, 0 erstellt haben.`--aepUserLdap-- - Demo System - Profile Schema for Website`
 
+Klicken Sie auf **Weiter**.
+
 ![Datenaufnahme](./images/schemaselection.png)
-
-Klicken Sie nach Auswahl des Schemas auf **[!UICONTROL Weiter]** , um fortzufahren.
-
-![Datenaufnahme](./images/next.png)
 
 Geben wir einen Namen für Ihren Datensatz ein.
 
-Verwenden Sie als Namen für unseren Datensatz Folgendes:
+Verwenden Sie als Namen für Ihren Datensatz Folgendes:
 
 `--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
-Beispiel: Für ldap **[!UICONTROL vangeluw]** sollte dies der Name des Schemas sein:
-
-**[!UICONTROL vangeluw - Demosystem - Profildatensatz für Website]**
-
-Das sollte Ihnen etwas wie Folgendes geben:
+Klicken Sie auf **Fertigstellen**.
 
 ![Datenaufnahme](./images/datasetname.png)
-
-Klicken Sie auf **[!UICONTROL Beenden]** , um die Datensatzkonfiguration abzuschließen.
-
-![Datenaufnahme](./images/finish.png)
 
 Jetzt sehen Sie Folgendes:
 
@@ -89,47 +76,34 @@ Gehen Sie zurück zur Übersicht über [!UICONTROL Datensätze] . Der erstellte 
 
 Als Nächstes konfigurieren Sie einen zweiten Datensatz, um Interaktionen mit Websites zu erfassen.
 
-Sie sollten einen neuen Datensatz erstellen. Um einen neuen Datensatz zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL + Datensatz erstellen]**.
+Klicken Sie auf **[!UICONTROL + Datensatz erstellen]**.
 
 ![Datenaufnahme](./images/createdataset.png)
 
-Nachdem Sie auf die Schaltfläche **[!UICONTROL + Datensatz erstellen]** geklickt haben, wird der folgende Bildschirm angezeigt.
-
-![Datenaufnahme](./images/datasetsetup.png)
 
 Sie müssen einen Datensatz aus dem Schema definieren, das Sie im vorherigen Schritt definiert haben. Klicken Sie auf die Option **[!UICONTROL Datensatz aus Schema erstellen]** - .
 
 ![Datenaufnahme](./images/datasetfromschema.png)
 
-Wählen Sie im nächsten Bildschirm das Schema aus, das Sie in 2.2, `--aepUserLdap-- - Demo System - Event Schema for Website` erstellt haben.
+Wählen Sie im nächsten Bildschirm das zuvor erstellte Schema `--aepUserLdap-- - Demo System - Event Schema for Website` aus.
+
+Klicken Sie auf **Weiter**.
 
 ![Datenaufnahme](./images/schemaselectionee.png)
 
-Klicken Sie nach Auswahl des Schemas auf **[!UICONTROL Weiter]** , um fortzufahren.
-
-![Datenaufnahme](./images/next.png)
-
 Geben wir einen Namen für Ihren Datensatz ein.
 
-Als Name für unseren Datensatz verwenden wir Folgendes:
+Verwenden Sie als Namen für unseren Datensatz Folgendes:
 
 `--aepUserLdap-- - Demo System - Event Dataset for Website`
 
-Beispiel: Für ldap **[!UICONTROL vangeluw]** sollte dies der Name des Schemas sein:
-
-**[!UICONTROL vangeluw - Demosystem - Ereignis-Datensatz für Website]**
-
-Das sollte Ihnen etwas wie Folgendes geben:
+Klicken Sie auf **Fertigstellen**.
 
 ![Datenaufnahme](./images/datasetnameee.png)
 
-Klicken Sie auf **[!UICONTROL Beenden]** , um die Datensatzkonfiguration abzuschließen.
-
-![Datenaufnahme](./images/finish.png)
-
 Daraufhin sehen Sie Folgendes:
 
-![Datenaufnahme](./images/finish1.png)
+![Datenaufnahme](./images/finish1ee.png)
 
 Gehen Sie zurück zum Übersichtsbildschirm [!UICONTROL Datensätze] .
 
@@ -137,15 +111,12 @@ Gehen Sie zurück zum Übersichtsbildschirm [!UICONTROL Datensätze] .
 
 Jetzt müssen Sie Ihre Datensätze aktivieren, damit sie Teil des Echtzeit-Kundenprofils von Adobe Experience Platform sind.
 
-Öffnen Sie Ihren Datensatz &quot;`--aepUserLdap--` - Demo System - Profil DataSet&quot;für Website, indem Sie darauf klicken.
+Öffnen Sie den Datensatz `--aepUserLdap-- - Demo System - Profile Dataset for Website`, indem Sie darauf klicken.
 
 Suchen Sie das Umschalter [!UICONTROL Profil] auf der rechten Seite des Bildschirms.
-
-![Datenaufnahme](./images/ds1.png)
-
 Klicken Sie auf den Umschalter [!UICONTROL Profil] , um diesen Datensatz für [!UICONTROL Profil] zu aktivieren.
 
-![Datenaufnahme](./images/ds2.png)
+![Datenaufnahme](./images/ds1.png)
 
 Klicken Sie auf **[!UICONTROL Aktivieren]**.
 
@@ -155,13 +126,9 @@ Ihr Datensatz ist jetzt für [!UICONTROL Profil] aktiviert.
 
 Gehen Sie zurück zur Datensatzübersicht und öffnen Sie den Datensatz `--aepUserLdap-- - Demo System - Event Dataset` für die Website, indem Sie darauf klicken.
 
-Suchen Sie das Umschalter [!UICONTROL Profil] auf der rechten Seite des Bildschirms.
+Suchen Sie das Umschalter [!UICONTROL Profil] auf der rechten Seite des Bildschirms. Klicken Sie auf den Umschalter [!UICONTROL Profil] , um [!UICONTROL Profil] zu aktivieren.
 
 ![Datenaufnahme](./images/ds4.png)
-
-Klicken Sie auf den Umschalter [!UICONTROL Profil] , um [!UICONTROL Profil] zu aktivieren.
-
-![Datenaufnahme](./images/ds2.png)
 
 Klicken Sie auf **[!UICONTROL Aktivieren]**.
 

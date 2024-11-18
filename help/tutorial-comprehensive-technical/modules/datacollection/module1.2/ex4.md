@@ -3,9 +3,10 @@ title: Foundation - Datenerfassung - Datenerfassung aus Offline-Quellen
 description: Foundation - Datenerfassung - Datenerfassung aus Offline-Quellen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1472'
 ht-degree: 6%
 
 ---
@@ -23,17 +24,17 @@ In dieser Übung besteht das Ziel darin, externe Daten wie CRM-Daten in Platform
 
 ## Ressourcen
 
-- Mockaroo-Benutzeroberfläche: [https://www.mockaroo.com/](https://www.mockaroo.com/)
-- Experience Platform UI: [https://experience.adobe.com/platform/](https://experience.adobe.com/platform/)
+- Mockaroo: [https://www.mockaroo.com/](https://www.mockaroo.com/)
+- Adobe Experience Platform: [https://experience.adobe.com/platform/](https://experience.adobe.com/platform/)
 
 ## Aufgaben
 
-- Erstellen Sie eine CSV-Datei mit dem Demodatum. Erfassen Sie die CSV-Datei in Adobe Experience Platform, indem Sie die verfügbaren Workflows verwenden.
+- Erstellen Sie eine CSV-Datei mit Demodaten. Erfassen Sie die CSV-Datei in Adobe Experience Platform, indem Sie die verfügbaren Workflows verwenden.
 - Data Governance-Optionen in Adobe Experience Platform
 
-## 1.2.4.1 Erstellen Sie Ihren CRM-Datensatz mit einem Tool zum Generieren von Daten
+## Erstellen eines CRM-Datensatzes mit einem Tool zum Generieren von Daten
 
-Dazu benötigen Sie 1000 Beispielzeilen von CRM-Daten.
+Für diese Übung benötigen Sie 1000 Beispielzeilen von CRM-Daten.
 
 Öffnen Sie die Mockaroo-Vorlage, indem Sie zu [https://www.mockaroo.com/12674210](https://www.mockaroo.com/12674210) navigieren.
 
@@ -55,21 +56,21 @@ Auf der Vorlage werden die folgenden Felder angezeigt:
 
 Alle diese Felder wurden definiert, um Daten zu erzeugen, die mit Platform kompatibel sind.
 
-Um Ihre CSV-Datei zu generieren, klicken Sie auf die Schaltfläche **[!UICONTROL Daten herunterladen]** , über die Sie eine CSV-Datei mit 1000 Zeilen Demodaten erhalten.
+Um Ihre CSV-Datei zu generieren, klicken Sie auf die Schaltfläche **[!UICONTROL Daten generieren]** , um eine CSV-Datei mit 1000 Zeilen Demodaten zu erstellen und herunterzuladen.
 
 ![Datenaufnahme](./images/dd.png)
 
-Öffnen Sie Ihre CSV-Datei in Microsoft Excel, um den Inhalt zu visualisieren.
+Öffnen Sie Ihre CSV-Datei, um deren Inhalt zu visualisieren.
 
 ![Datenaufnahme](./images/excel.png)
 
-Wenn Ihre CSV-Datei fertig ist, können Sie mit der Zuordnung zu XDM fortfahren.
+Wenn Ihre CSV-Datei fertig ist, können Sie mit der Aufnahme in AEP fortfahren.
 
-### 1.2.4.2 CRM-Onboarding-Datensatz in Adobe Experience Platform überprüfen
+### Datensatz überprüfen
 
 Öffnen Sie [Adobe Experience Platform](https://experience.adobe.com/platform) und gehen Sie zu **[!UICONTROL Datensätze]**.
 
-Bevor Sie fortfahren, müssen Sie eine **[!UICONTROL Sandbox]** auswählen. Die auszuwählende Sandbox heißt ``--module2sandbox--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **[!UICONTROL Sandbox]** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``.
 
 ![Datenaufnahme](./images/sb1.png)
 
@@ -77,13 +78,10 @@ Klicken Sie in Adobe Experience Platform im Menü auf der linken Bildschirmseite
 
 ![Datenaufnahme](./images/menudatasetssb.png)
 
-Sie verwenden einen freigegebenen Datensatz, der auf dieser Aktivierung basiert. Der freigegebene Datensatz wurde bereits erstellt und heißt **[!UICONTROL Demo-System - Profildatensatz für CRM (Global v1.1)]**.
-
-![Datenaufnahme](./images/emeacrm.png)
-
-Öffnen Sie den Datensatz **[!UICONTROL Demo System - Profildatensatz für CRM (Global v1.1)]**.
+Sie verwenden einen freigegebenen Datensatz. Der freigegebene Datensatz wurde bereits erstellt und heißt **[!UICONTROL Demo-System - Profildatensatz für CRM (Global v1.1)]**. Klicken Sie darauf, um es zu öffnen.
 
 ![Datenaufnahme](./images/emeacrmoverview.png)
+
 
 Auf dem Übersichtsbildschirm können Sie drei Hauptinformationen sehen.
 
@@ -95,11 +93,9 @@ Zunächst zeigt das Dashboard [!UICONTROL Datensatzaktivität] die Gesamtzahl de
 
 Außerdem können Sie durch Scrollen auf der Seite überprüfen, wann Datenstapel erfasst wurden, wie viele Datensätze integriert wurden und ob der Batch erfolgreich integriert wurde oder nicht. Die **[!UICONTROL Batch-Kennung]** ist die Kennung für einen bestimmten Batch-Auftrag und die **[!UICONTROL Batch-Kennung]** ist wichtig, da sie zur Fehlerbehebung verwendet werden kann, warum ein bestimmter Batch nicht erfolgreich integriert wurde.
 
+Schließlich enthält die Registerkarte [!UICONTROL Datensatz]-Info wichtige Informationen wie die [!UICONTROL Datensatz-ID] (ebenfalls wichtig aus der Sicht der Fehlerbehebung), den Namen des Datensatzes und ob der Datensatz für Profil aktiviert wurde.
+
 ![Datenaufnahme](./images/datasetsettings.png)
-
-Schließlich enthält die Registerkarte [!UICONTROL Datensatzinformationen] wichtige Informationen wie die [!UICONTROL Datensatz-ID] (ebenfalls wichtig aus Sicht der Fehlerbehebung), den Namen des Datensatzes und die Frage, ob der Datensatz für das Profil aktiviert wurde.
-
-![Datenaufnahme](./images/ds_ups_link.png)
 
 Die wichtigste Einstellung hier ist die Verknüpfung zwischen dem Datensatz und dem Schema. Das Schema definiert, wie Daten erfasst werden können und wie diese aussehen sollen.
 
@@ -113,53 +109,47 @@ Durch Klicken auf den Namen des Schemas gelangen Sie zur Übersicht [!UICONTROL 
 
 Für jedes Schema muss ein benutzerdefinierter, primärer Deskriptor definiert sein. Im Fall unseres CRM-Datensatzes hat das Schema definiert, dass das Feld **[!UICONTROL crmId]** die primäre Kennung sein sollte. Wenn Sie ein Schema erstellen und mit dem [!UICONTROL Echtzeit-Kundenprofil] verknüpfen möchten, müssen Sie eine benutzerdefinierte [!UICONTROL Feldergruppe] definieren, die auf Ihren primären Deskriptor verweist.
 
+Sie können auch sehen, dass sich unsere primäre Identität in `--aepTenantId--.identification.core.crmId` befindet, verknüpft mit dem [!UICONTROL Namespace] von **[!UICONTROL Demo System - CRMID]**.
+
 ![Datenaufnahme](./images/schema_descriptor.png)
 
-Im obigen Screenshot können Sie sehen, dass sich unser Deskriptor in &quot;`--aepTenantId--.identification.core.crmId`&quot;befindet, der als [!UICONTROL Primäre Kennung] festgelegt ist und mit dem [!UICONTROL Namespace] des **[!UICONTROL Demosystems - CRMID]** verknüpft ist.
+
 
 Jedes Schema und als solches sollte jeder Datensatz, der im [!UICONTROL Echtzeit-Kundenprofil] verwendet werden soll, einen [!UICONTROL Primären Bezeichner] haben. Diese [!UICONTROL Primäre Kennung] ist der Kennungsbenutzer, den die Marke für einen Kunden in diesem Datensatz verwendet. Bei einem CRM-Datensatz kann es sich um die E-Mail-Adresse oder die CRM-ID handeln. Bei einem Call-Center-Datensatz kann es sich um die Mobiltelefonnummer eines Kunden handeln.
 
 Es empfiehlt sich, für jeden Datensatz ein separates, spezifisches Schema zu erstellen und den Deskriptor für jeden Datensatz so festzulegen, dass er mit der aktuellen Funktionsweise der von der Marke verwendeten Lösungen übereinstimmt.
 
-### 1.2.4.3 Verwenden eines Workflows zum Zuordnen einer CSV-Datei zu einem XDM-Schema
+### Verwenden eines Workflows zum Zuordnen einer CSV-Datei zu einem XDM-Schema
 
-Ziel ist es, CRM-Daten in Platform zu integrieren. Alle Daten, die in Platform erfasst werden, sollten dem jeweiligen XDM-Schema zugeordnet werden. Derzeit verfügen Sie über einen CSV-Datensatz mit 1000 Zeilen auf der einen Seite und einen Datensatz, der mit einem Schema auf der anderen Seite verknüpft ist. Um diese CSV-Datei in diesen Datensatz zu laden, muss eine Zuordnung vorgenommen werden. Um diese Zuordnungsübung zu erleichtern, steht in Adobe Experience Platform **[!UICONTROL Workflows]** zur Verfügung.
+Ziel dieser Übung ist es, CRM-Daten in AEP zu integrieren. Alle Daten, die in Platform erfasst werden, sollten dem jeweiligen XDM-Schema zugeordnet werden. Derzeit verfügen Sie über einen CSV-Datensatz mit 1000 Zeilen auf der einen Seite und einen Datensatz, der mit einem Schema auf der anderen Seite verknüpft ist. Um diese CSV-Datei in diesen Datensatz zu laden, muss eine Zuordnung vorgenommen werden. Um diese Zuordnungsübung zu erleichtern, steht in Adobe Experience Platform **[!UICONTROL Workflows]** zur Verfügung.
+
+Klicken Sie auf **[!UICONTROL CSV dem XDM-Schema zuordnen]** und dann auf **[!UICONTROL Starten]** , um den Prozess zu starten.
 
 ![Datenaufnahme](./images/workflows.png)
 
-Der hier verwendete [!UICONTROL Workflow] ist der [!UICONTROL Workflow] mit dem Namen **[!UICONTROL CSV dem XDM-Schema zuordnen]** im Menü [!UICONTROL Datenerfassung].
-
-Klicken Sie auf die Schaltfläche **[!UICONTROL CSV dem XDM-Schema zuordnen]** . Klicken Sie auf **[!UICONTROL Starten]** , um den Prozess zu starten.
-
-![Datenaufnahme](./images/mapcsvxdm.png)
-
 Im nächsten Bildschirm müssen Sie einen Datensatz auswählen, in dem Ihre Datei aufgenommen werden soll. Sie haben die Wahl zwischen der Auswahl eines bereits vorhandenen Datensatzes oder der Erstellung eines neuen Datensatzes. Für diese Übung verwenden wir einen vorhandenen Datensatz erneut: Wählen Sie bitte &quot;**[!UICONTROL Demo-System - Profildatensatz für CRM (Global v1.1)]**&quot;, wie unten angegeben, und lassen Sie die anderen Einstellungen standardmäßig aktiviert.
+
+Klicken Sie auf **Weiter**.
 
 ![Datenaufnahme](./images/datasetselection.png)
 
-Klicken Sie auf **[!UICONTROL Weiter]** , um zum nächsten Schritt zu gelangen.
-
-![Datenaufnahme](./images/next.png)
-
-Ziehen Sie Ihre CSV-Datei per Drag-and-Drop oder klicken Sie auf **[!UICONTROL Durchsuchen]** und navigieren Sie auf Ihrem Computer zu Ihrem Desktop und wählen Sie Ihre CSV-Datei aus.
+Ziehen Sie Ihre CSV-Datei per Drag-and-Drop oder klicken Sie auf **[!UICONTROL Dateien auswählen]** und navigieren Sie auf Ihrem Computer zu Ihrem Desktop und wählen Sie Ihre CSV-Datei aus.
 
 ![Datenaufnahme](./images/dragdrop.png)
 
 Nachdem Sie Ihre CSV-Datei ausgewählt haben, wird sie sofort hochgeladen und Sie erhalten innerhalb von Sekunden eine Vorschau Ihrer Datei.
 
+Klicken Sie auf **Weiter**.
+
 ![Datenaufnahme](./images/previewcsv.png)
 
-Klicken Sie auf **[!UICONTROL Weiter]** , um zum nächsten Schritt zu gelangen. Es kann einige Sekunden dauern, bis die Datei vollständig verarbeitet ist.
-
-![Datenaufnahme](./images/next.png)
-
-Jetzt müssen Sie Ihre CSV-Spaltenüberschriften einer XDM-Eigenschaft in Ihrem **[!UICONTROL Demo-System - Profildatensatz für CRM]** zuordnen.
+Jetzt müssen Sie die Spaltenüberschriften aus Ihrer CSV-Datei einer XDM-Eigenschaft in Ihrem **[!UICONTROL Demo-System - Profildatensatz für CRM]** zuordnen.
 
 Adobe Experience Platform hat bereits einige Vorschläge für Sie gemacht, indem es versucht hat, die [!UICONTROL Source-Attribute] mit den [!UICONTROL Target-Schemafeldern] zu verknüpfen.
 
 ![Datenaufnahme](./images/mapschema.png)
 
-Für die [!UICONTROL Schemazuordnungen] hat Adobe Experience Platform bereits versucht, Felder miteinander zu verknüpfen. Allerdings sind nicht alle Vorschläge zur Kartierung korrekt. Jetzt müssen Sie **Zielfelder einzeln akzeptieren**.
+Für die [!UICONTROL Schemazuordnungen] hat Adobe Experience Platform bereits versucht, Felder miteinander zu verknüpfen. Allerdings sind nicht alle Vorschläge zur Kartierung korrekt. Sie müssen die **Zielfelder** jetzt einzeln aktualisieren.
 
 #### birthDate
 
@@ -193,7 +183,7 @@ Das Source-Schemafeld **email** sollte mit dem Zielfeld **personalEmail.address*
 
 #### crmid
 
-Das Source-Schemafeld ** crmid* sollte mit dem Zielfeld **`--aepTenantId--`.identification.core.crmId** verknüpft werden.
+Das Source-Schemafeld **crmid** sollte mit dem Zielfeld **`--aepTenantId--`.identification.core.crmId** verknüpft werden.
 
 ![Datenaufnahme](./images/tfemail1.png)
 
@@ -233,39 +223,27 @@ Das Source-Schemafeld **last_name** sollte mit dem Zielfeld **person.name.lastNa
 
 ![Datenaufnahme](./images/tflname.png)
 
-Sie sollten jetzt Folgendes haben:
+Du solltest das jetzt haben. Klicken Sie auf **Fertigstellen**.
 
 ![Datenaufnahme](./images/overview.png)
-
-Klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]** , um den Workflow abzuschließen.
-
-![Datenaufnahme](./images/finish.png)
 
 Nachdem Sie auf **[!UICONTROL Beenden]** geklickt haben, sehen Sie die Übersicht über den **Datenfluss** und nach einigen Minuten können Sie Ihren Bildschirm aktualisieren, um festzustellen, ob Ihr Workflow erfolgreich abgeschlossen wurde. Klicken Sie auf Ihren **Target-Datensatznamen**.
 
 ![Datenaufnahme](./images/dfsuccess.png)
 
-Anschließend sehen Sie den Datensatz, in dem Ihre Aufnahme verarbeitet wurde.
+Dann sehen Sie den Datensatz, in dem Ihre Aufnahme verarbeitet wurde, und eine [!UICONTROL Batch-Kennung], die gerade erfasst wurde, mit 100 aufgenommenen Datensätzen und dem Status **[!UICONTROL Erfolg]**. Klicken Sie auf **[!UICONTROL Vorschau des Datensatzes anzeigen]**.
 
 ![Datenaufnahme](./images/ingestdataset.png)
 
-Im Datensatz wird eine [!UICONTROL Batch-ID] angezeigt, die gerade erfasst wurde, mit 1000 aufgenommenen Datensätzen und dem Status **[!UICONTROL Erfolg]**.
-
-![Datenaufnahme](./images/batchsuccess1.png)
-
-Klicken Sie auf die Schaltfläche **[!UICONTROL Datensatz-Vorschau]** - , um einen schnellen Überblick über eine kleine Stichprobe des Datensatzes zu erhalten und sicherzustellen, dass die geladenen Daten korrekt sind.
-
-![Datenaufnahme](./images/preview.png)
+Es wird nun eine kleine Stichprobe des Datensatzes angezeigt, um sicherzustellen, dass die geladenen Daten korrekt sind.
 
 ![Datenaufnahme](./images/previewdata.png)
 
 Nachdem die Daten geladen wurden, können Sie den richtigen Data Governance-Ansatz für unseren Datensatz definieren.
 
-### 1.2.5.4 Hinzufügen von Data Governance zu Ihrem Datensatz
+### Hinzufügen von Data Governance zu Ihrem Datensatz
 
-Nachdem Ihre Kundendaten erfasst wurden, müssen Sie sicherstellen, dass dieser Datensatz ordnungsgemäß für die Verwendung und Exportsteuerung verwaltet wird. Klicken Sie auf die Registerkarte **[!UICONTROL Data Governance]** und beachten Sie, dass Sie drei Arten von Einschränkungen festlegen können: Vertragliche, Identitäts- und vertrauliche Daten.
-
-Weitere Informationen zu den verschiedenen Bezeichnungen und dazu, wie sie in Zukunft durchgesetzt werden, finden Sie über das Richtlinien-Framework für diesen Link: [https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html)
+Nachdem Ihre Kundendaten erfasst wurden, müssen Sie sicherstellen, dass dieser Datensatz ordnungsgemäß für die Verwendung und Exportsteuerung verwaltet wird. Klicken Sie auf die Registerkarte **[!UICONTROL Data Governance]** und beachten Sie, dass Sie mehrere Arten von Einschränkungen festlegen können: Vertrag, Identität und vertraulich, Partner-Ökosystem und Benutzerdefiniert.
 
 ![Datenaufnahme](./images/dsgovernance.png)
 
@@ -275,19 +253,11 @@ Schränken wir Identitätsdaten für den gesamten Datensatz ein. Bewegen Sie den
 
 Wechseln Sie zu **[!UICONTROL Identitätsdaten]** und Sie werden sehen, dass die Option **[!UICONTROL I2]** aktiviert ist. Dies setzt voraus, dass alle Informationen in diesem Datensatz zumindest indirekt für die Person identifizierbar sind.
 
+Klicken Sie auf **[!UICONTROL Änderungen speichern]**.
+
 ![Datenaufnahme](./images/identity.png)
 
-Klicken Sie auf **[!UICONTROL Änderungen speichern]** und beachten Sie, dass **[!UICONTROL I2]** jetzt für alle Datenfelder im Datensatz festgelegt ist.
-
-Sie können diese Flags auch für einzelne Datenfelder festlegen. So wird beispielsweise das Feld **[!UICONTROL firstName]** für direkt identifizierbare Informationen wahrscheinlich als **[!UICONTROL I1]**-Ebene klassifiziert.
-
-Wählen Sie das Feld **[!UICONTROL firstName]** aus, indem Sie das Kontrollkästchen aktivieren und in der oberen rechten Ecke des Bildschirms auf **[!UICONTROL Governance-Beschriftungen bearbeiten]** klicken.
-
-![Datenaufnahme](./images/editfirstname.png)
-
-Wechseln Sie zu **[!UICONTROL Identitätsdaten]** und Sie werden sehen, dass die Option **[!UICONTROL I2]** bereits aktiviert ist (aus dem Datensatz übernommen). Das Feld firstName verfügt auch über eine feldspezifische Konfiguration und wird als **[!UICONTROL I1 - Direkt identifizierbare Daten]** festgelegt.
-
-![Datenaufnahme](./images/fndii.png)
+In einem anderen Modul werden wir einen tiefen Einblick in das Wem-Framework von Data Governance und Beschriftungen geben.
 
 Damit haben Sie jetzt erfolgreich CRM-Daten in Adobe Experience Platform erfasst und klassifiziert.
 
