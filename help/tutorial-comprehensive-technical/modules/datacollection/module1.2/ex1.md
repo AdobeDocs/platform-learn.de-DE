@@ -4,9 +4,9 @@ description: Foundation - Datenerfassung - Von unbekannt zu bekannt auf der Webs
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Sie erfassen jetzt Daten in Adobe Experience Platform und diese Daten werden mit
 
 ### Journey-Fluss des Kunden
 
-Wechseln Sie zu [https://dsn.adobe.com](https://dsn.adobe.com). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf die drei Punkte **..** im Website-Projekt und klicken Sie dann auf **Bearbeiten**.
+Wechseln Sie zu [https://dsn.adobe.com](https://dsn.adobe.com). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf die drei Punkte **..** im Website-Projekt und dann auf **Ausführen** , um es zu öffnen.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
 
@@ -79,7 +79,7 @@ Klicken Sie auf **Anmelden** , um zur Seite &quot;Registrieren/Anmelden&quot;zu 
 
 ![Demo](./images/pv8.png)
 
-Klicken Sie auf **KONTO ERSTELLEN**.
+Klicken Sie auf **Konto erstellen**.
 
 ![Demo](./images/pv9.png)
 

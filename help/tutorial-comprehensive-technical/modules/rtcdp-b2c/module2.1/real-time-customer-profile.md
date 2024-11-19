@@ -5,24 +5,21 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 # 2.1 Foundation - Echtzeit-Kundenprofil
 
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-In diesem Modul werden wir einen tiefen Einblick in die Echtzeit-Kundenprofil- und Identitätsfunktionen von Adobe Experience Platform erhalten. Sie erfahren, wie Zielgruppen definiert werden können, wie die Rolle von Identity Service und Experience Cloud ID genutzt werden kann und wie Sie Segmentaufbauabfragen definieren, um eigene Segmente zu definieren.
+In diesem Modul machen Sie einen tiefen Einblick in die Echtzeit-Kundenprofil- und Identitätsfunktionen von Adobe Experience Platform. Sie erfahren, wie Zielgruppen definiert werden können, wie die Rolle von Identity Service und Experience Cloud ID genutzt werden kann und wie Sie Segmentaufbauabfragen definieren, um eigene Segmente zu definieren.
 
 ## Lernziele
 
 - Erfahren Sie, wie Sie das Echtzeit-Kundenprofil eines Kunden über die Benutzeroberfläche von Adobe Experience Platform visualisieren können.
 - Erfahren Sie, wie Sie mit dem Segmentaufbau von Adobe Experience Platform ein Segment erstellen.
-- Erfahren Sie, wie Sie mithilfe von Adobe Experience Platform-APIs ein Segment erstellen und die Segmentergebnisse in einem Datensatz speichern
 - Erfahren Sie mehr über die Auswirkungen des Zugriffs auf ein vollständiges Kundenprofil, einschließlich Echtzeit-Verhalten, in Offline-Umgebungen
 
 ## Voraussetzungen
@@ -54,11 +51,7 @@ In dieser Übung verwenden Sie Postman und Adobe I/O, um Ihr eigenes Echtzeit-Ku
 
 In dieser Übung erstellen Sie ein Segment, indem Sie den Segmentaufbau von Adobe Experience Platform verwenden.
 
-[2.1.5 Segment erstellen - API](./ex5.md)
-
-In dieser Übung verwenden Sie Postman und Adobe I/O, um ein Segment zu erstellen und die Ergebnisse dieses Segments als Datensatz zu speichern, indem Sie Adobe Experience Platform-APIs verwenden.
-
-[2.1.6 Echtzeit-Kundenprofil in Aktion im Callcenter anzeigen](./ex6.md)
+[2.1.5 Echtzeit-Kundenprofil in Aktion im Callcenter anzeigen](./ex5.md)
 
 In dieser Übung stellen Sie sich als Mitarbeiter eines Callcenters vor, der einen Anruf von einem Kunden erhält. Um wirklich Einfluss auf das Kundenerlebnis zu nehmen, benötigen Sie Zugriff auf alle verfügbaren Informationen in Echtzeit.
 

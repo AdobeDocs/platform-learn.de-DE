@@ -4,16 +4,16 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 Clientseitige Web-Datenerfassung
 
-## 1.1.4.1 Daten in der Anforderung überprüfen
+## Überprüfen der Daten in der Anforderung
 
 ### Installieren des Adobe Experience Platform Debuggers
 
@@ -40,7 +40,7 @@ Stellen Sie sicher, dass diese beiden Einstellungen aktiviert sind:
 
 Wechseln Sie zu [https://dsn.adobe.com](https://dsn.adobe.com). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf die drei Punkte **..** im Website-Projekt und dann auf **Ausführen** , um es zu öffnen.
 
-![DSN](.//images/web8.png)
+![DSN](./images/web8.png)
 
 Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
 

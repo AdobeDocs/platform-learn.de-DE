@@ -3,9 +3,10 @@ title: Foundation - Echtzeit-Kundenprofil - Zusammenfassung
 description: Foundation - Echtzeit-Kundenprofil - Zusammenfassung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6d5519b0-494d-4cfd-aebe-078317d753ac
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,6 @@ Lassen Sie uns die Vorteile des Echtzeit-Kundenprofils hervorheben:
 - Das Echtzeit-Kundenprofil basiert auf einem flexiblen und Echtzeit-Identitätsdiagramm, das es ermöglicht, Profilfragmente dynamisch über mehrere Datensätze hinweg basierend auf den Kennungen zusammenzuführen.
 - Sobald Profilfragmente über das Identitätsdiagramm zusammengeführt werden, können alle verfügbaren IDs zum Abrufen des Profils eines Kunden verwendet werden
 - Die Segmentierung erfolgt nun mithilfe von XDM als Sprache hinter dem Segment, wodurch das Segment einfach wiederverwendbar und verständlich wird.
-- Segmente können jetzt auch über die API erstellt werden. Dadurch kann ein Segment extern programmgesteuert definiert und dann über die API die Segmentdefinition eingefügt werden.
 
 ## Sehen Sie sich das an
 

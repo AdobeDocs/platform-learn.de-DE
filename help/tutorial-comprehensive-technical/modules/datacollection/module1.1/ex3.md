@@ -4,20 +4,20 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 9%
+source-wordcount: '1269'
+ht-degree: 10%
 
 ---
 
-# 1.1.3 - Einführung in die Adobe Experience Platform-Datenerfassung
+# 1.1.3 Einführung in die Adobe Experience Platform-Datenerfassung
 
 ## Kontext
 
 Sehen wir uns nun die Bausteine der Adobe Experience Platform-Datenerfassung genauer an, um zu verstehen, was auf Ihrer Demowebsite installiert ist. Sehen Sie sich die Adobe Experience Platform Web SDK-Erweiterung genauer an, konfigurieren Sie ein Datenelement und eine Regel und lernen Sie, wie Sie eine Bibliothek veröffentlichen.
 
-## 1.1.3.1 - Adobe Experience Platform Web SDK-Erweiterung
+## Adobe Experience Platform Web SDK-Erweiterung
 
 Eine Erweiterung ist ein gepackter Code-Satz, der die Adobe Experience Platform-Datenerfassungsschnittstelle und die Bibliotheksfunktionalität erweitert. Die Adobe Experience Platform-Datenerfassung ist die Plattform. Erweiterungen sind wie Apps, die auf der Plattform ausgeführt werden. Alle im Tutorial verwendeten Erweiterungen werden von Adobe erstellt und verwaltet. Drittanbieter können jedoch eigene Erweiterungen erstellen, um die Anzahl der benutzerdefinierten Codes zu begrenzen, die Adobe Experience Platform Data Collection-Benutzer verwalten müssen.
 
@@ -52,7 +52,7 @@ Klicken Sie auf **[!UICONTROL Speichern]** , um zur Ansicht &quot;Erweiterungen&
 
 ![Startseite der Erweiterungen](./images/property9edge.png)
 
-## 1.1.3.2 Datenelemente
+## Datenelemente
 
 Datenelemente sind Bausteine für Ihr Datenwörterbuch (oder Ihre Datenkarte). Verwenden Sie Datenelemente zum Sammeln, Organisieren und Bereitstellen von Daten in Marketing- und Werbetechnologie.
 
@@ -88,7 +88,7 @@ Scrollen Sie nach oben und geben Sie den Text `%Product Category%` ein. Klicken 
 
 An dieser Stelle wird die Adobe Experience Platform Web SDK-Erweiterung installiert und Sie haben ein Datenelement aktualisiert, um Daten anhand einer XDM-Struktur zu erfassen. Als Nächstes überprüfen wir die Regeln, die Daten zum richtigen Zeitpunkt senden.
 
-## 1.1.3.3 Regeln
+## Regeln
 
 Die Adobe Experience Platform-Datenerfassung ist ein regelbasiertes System. Es wird nach Benutzerinteraktionen und verknüpften Daten gesucht. Wenn die in Ihren Regeln formulierten Kriterien erfüllt sind, löst die Regel die jeweils definierte Erweiterung, das Skript oder den clientseitigen Code aus.
 
@@ -130,7 +130,7 @@ Hier sehen Sie die Daten, die vom Adobe Experience Platform Web SDK an den Edge 
 
 Nachdem Sie sich die Regel angesehen haben, können Sie alle Ihre Änderungen in der Adobe Experience Platform-Datenerfassung veröffentlichen.
 
-## 1.1.3.4 Publish in einer Bibliothek
+## Publish in einer Bibliothek
 
 Um die gerade aktualisierte Regel und das Datenelement zu validieren, müssen Sie schließlich eine Bibliothek veröffentlichen, die die bearbeiteten Elemente in unserer Eigenschaft enthält. Im Abschnitt **[!UICONTROL Veröffentlichen]** der Adobe Experience Platform-Datenerfassung müssen Sie einige schnelle Schritte ausführen.
 

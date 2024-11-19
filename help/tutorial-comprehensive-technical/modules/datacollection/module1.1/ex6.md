@@ -4,16 +4,16 @@ description: Foundation - Einrichten der Adobe Experience Platform-Datenerfassun
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 1%
 
 ---
 
 # 1.1.6 Adobe Target implementieren
 
-## 1.1.6.1 Datenspeicher für die Verwendung von Adobe Target aktualisieren
+## Datenspeicher für die Verwendung von Adobe Target aktualisieren
 
 Wenn Sie vom Web SDK erfasste Daten an Adobe Target senden und eine Antwort von Adobe Target mit einem personalisierten Erlebnis für jeden Kunden erhalten möchten, führen Sie die folgenden Schritte aus.
 
