@@ -4,7 +4,7 @@ description: Ausgangspunkt für Dateningenieure, Datenanalysten, Datenarchitekte
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
 source-wordcount: '1524'
 ht-degree: 2%
@@ -84,7 +84,7 @@ Sie finden viele interessante Videos von unseren Tech Academy-Veranstaltungen, v
 - **Beschreibung:** In diesem grundlegenden Modul erfassen Sie Daten von der Website in Platform.
 - **Zeitinvestition:** 120 Minuten
 
-[1.3 Zusammengestellte Zielgruppen](./modules/datacollection/module1.3/fac.md)
+[1.3 Zusammengestellte Zielgruppenkomposition](./modules/datacollection/module1.3/fac.md)
 
 - **Zielgruppe:** Data Analyst, Data Engineer, Data Architect
 - **Voraussetzungen:** Zugriff auf Adobe Experience Platform

@@ -4,7 +4,7 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Für diesen Datastream ...
 - Alle Erlebnisereignisdaten werden standardmäßig im Datensatz **Demo System - Ereignisdatensatz für Website (Global v1.1)** erfasst.
 - Alle Profildaten werden standardmäßig im Datensatz **Demo System - Profildatensatz für Website (Global v1.1)** erfasst (die systemeigene Erfassung von Profildaten mit Web SDK wird derzeit noch nicht vom Web SDK unterstützt)
 - Wenn Sie den Anwendungsdienst **Offer decisioning** für diesen Datastream verwenden möchten, müssen Sie das Kontrollkästchen zum Offer decisioning aktivieren. (Dies ist Teil von [Modul 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
-- **Edge-Segmentierung** ist standardmäßig aktiviert. Das bedeutet, dass qualifizierende Segmente bei der Erfassung des eingehenden Traffics am Edge ausgewertet werden.
+- **Edge-Segmentierung** ist standardmäßig aktiviert. Das bedeutet, dass qualifizierte Zielgruppen bei der Erfassung des eingehenden Traffics am Rande ausgewertet werden.
 - Wenn Sie die **Personalization-Ziele** verwenden möchten, müssen Sie das Kontrollkästchen für Personalization-Ziele aktivieren.
 - 
    - Wenn Sie die Funktionen von **Adobe Journey Optimizer** in diesem Datastream verwenden möchten, müssen Sie das Kontrollkästchen für Adobe Journey Optimizer aktivieren.

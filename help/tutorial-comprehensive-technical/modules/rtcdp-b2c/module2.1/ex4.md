@@ -1,19 +1,19 @@
 ---
-title: Foundation - Echtzeit-Kundenprofil - Erstellen eines Segments - Benutzeroberfläche
-description: Foundation - Echtzeit-Kundenprofil - Erstellen eines Segments - Benutzeroberfläche
+title: Foundation - Echtzeit-Kundenprofil - Erstellen einer Zielgruppe - Benutzeroberfläche
+description: Foundation - Echtzeit-Kundenprofil - Erstellen einer Zielgruppe - Benutzeroberfläche
 kt: 5342
 doc-type: tutorial
 exl-id: db1d744d-c4ff-4131-b104-98bb70269140
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 3%
 
 ---
 
-# 2.1.4 Segment erstellen - Benutzeroberfläche
+# 2.1.4 Erstellen einer Zielgruppe - Benutzeroberfläche
 
-In dieser Übung erstellen Sie ein Segment, indem Sie den Segmentaufbau von Adobe Experience Platform verwenden.
+In dieser Übung erstellen Sie eine Zielgruppe, indem Sie Adobe Experience Platforms Audience Builder verwenden.
 
 Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
 
@@ -23,7 +23,7 @@ Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählend
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Navigieren Sie im Menü auf der linken Seite zu **Zielgruppen**. Auf dieser Seite sehen Sie eine Übersicht über alle vorhandenen Segmente. Klicken Sie auf die Schaltfläche **+ Zielgruppe erstellen** , um mit der Erstellung eines neuen Segments zu beginnen.
+Navigieren Sie im Menü auf der linken Seite zu **Zielgruppen**. Auf dieser Seite können Sie eine Übersicht über alle vorhandenen Zielgruppen anzeigen. Klicken Sie auf die Schaltfläche **+ Audience erstellen** , um mit der Erstellung einer neuen Audience zu beginnen.
 
 ![Segmentierung](./images/menuseg.png)
 
@@ -31,7 +31,7 @@ Wählen Sie **Regel erstellen** und klicken Sie auf **Erstellen**.
 
 ![Segmentierung](./images/menusegbr.png)
 
-Sobald Sie sich im neuen Segment Builder befinden, sehen Sie sofort die Menüoption **Attribute** und den Verweis auf **XDM Individual Profile** .
+Sobald Sie sich im neuen Audience Builder befinden, sehen Sie sofort die Menüoption **Attribute** und den Verweis auf **XDM Individual Profile** .
 
 ![Segmentierung](./images/segmentationui.png)
 

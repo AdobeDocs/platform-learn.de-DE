@@ -3,9 +3,10 @@ title: Segmentaktivierung zum Microsoft Azure Event Hub - Erstellen eines Stream
 description: Segmentaktivierung zum Microsoft Azure Event Hub - Erstellen eines Streaming-Segments
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '344'
 ht-degree: 2%
 
 ---
@@ -44,7 +45,7 @@ Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende Sandbox ausgewählt haben, wird die Bildschirmänderung angezeigt und Sie befinden sich jetzt in Ihrer dedizierten Sandbox.
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Nachdem Sie die entsprechende Sandbox ausgewählt haben, wird die Bildschirmänderung angezeigt und Sie befinden sich jetzt in Ihrer dedizierten Sandbox.
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 

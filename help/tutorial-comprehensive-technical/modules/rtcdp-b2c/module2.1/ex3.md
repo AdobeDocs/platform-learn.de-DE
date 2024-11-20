@@ -4,9 +4,9 @@ description: Foundation - Echtzeit-Kundenprofil - Erstellen Sie ein eigenes Echt
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2287'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ In dieser Übung verwenden Sie Postman und Adobe I/O, um Adobe Experience Platfo
 
 ## Kontext
 
-Im Echtzeit-Kundenprofil werden alle Profildaten zusammen mit Ereignisdaten sowie vorhandenen Segmentmitgliedschaften angezeigt. Die angezeigten Daten können von überall kommen, von Adobe-Anwendungen und externen Lösungen. Dies ist die leistungsstärkste Ansicht in Adobe Experience Platform, dem Erlebnissystem der Aufzeichnungen.
+Im Echtzeit-Kundenprofil werden alle Profildaten zusammen mit Ereignisdaten sowie vorhandenen Zielgruppenmitgliedschaften angezeigt. Die angezeigten Daten können von überall kommen, von Adobe-Anwendungen und externen Lösungen. Dies ist die leistungsstärkste Ansicht in Adobe Experience Platform, dem Erlebnissystem der Aufzeichnungen.
 
 Das Echtzeit-Kundenprofil kann von allen Adobe-Applikationen, aber auch von externen Lösungen wie Call Center oder In-store-Clienteling-Apps genutzt werden. Dazu müssen diese externen Lösungen mit den Adobe Experience Platform-APIs verbunden werden.
 
@@ -58,9 +58,6 @@ Daraufhin sehen Sie Folgendes:
 
 ![Adobe I/O Neue Integration](./images/api1.png)
 
-Klicken Sie auf das Symbol **Adobe Experience Platform** .
-/images/api2.png)
-
 Wählen Sie **Experience Platform-API** und klicken Sie auf **Weiter**.
 
 ![Adobe I/O Neue Integration](./images/api3.png)
@@ -75,7 +72,7 @@ Wählen Sie die erforderlichen Produktprofile aus.
 
 >[!NOTE]
 >
-> Produktprofilnamen variieren in Ihrer Adobe Experience Platform-Instanz, da sie Instanzspezifikationen sind. Sie müssen mindestens ein Produktprofil mit den entsprechenden Zugriffsrechten auswählen, die in der Benutzeroberfläche für Adobe Admin Console und AEP-Berechtigungen eingerichtet sind.
+> Produktprofilnamen variieren in Ihrer Adobe Experience Platform-Instanz, da sie instanzspezifisch sind. Sie müssen mindestens ein Produktprofil mit den entsprechenden Zugriffsrechten auswählen, die in der Benutzeroberfläche für Adobe Admin Console und AEP-Berechtigungen eingerichtet sind.
 
 Klicken Sie auf **Konfigurierte API speichern**.
 
@@ -119,7 +116,7 @@ Wechseln Sie zu **Berechtigungen**, zu **Rollen** und klicken Sie auf das releva
 
 >[!NOTE]
 >
-> Produktprofilnamen variieren in Ihrer Adobe Experience Platform-Instanz, da sie Instanzspezifikationen sind. Sie müssen mindestens ein Produktprofil mit den entsprechenden Zugriffsrechten auswählen, die in der Benutzeroberfläche für Adobe Admin Console und AEP-Berechtigungen eingerichtet sind.
+> Produktprofilnamen variieren in Ihrer Adobe Experience Platform-Instanz, da sie instanzspezifisch sind. Sie müssen mindestens ein Produktprofil mit den entsprechenden Zugriffsrechten auswählen, die in der Benutzeroberfläche für Adobe Admin Console und AEP-Berechtigungen eingerichtet sind.
 
 ![Berechtigungen](./images/perm1.png)
 
@@ -150,7 +147,7 @@ In Postman gibt es zwei Konzepte: Umgebungen und Sammlungen.
 - Die Umgebung enthält all Ihre Umgebungsvariablen, die mehr oder weniger konsistent sind. In der Umgebung finden Sie Dinge wie IMSOrg unserer Platform-Umgebung, neben Sicherheitsberechtigungen wie Ihren privaten Schlüssel und andere. Die Umgebungsdatei ist diejenige, die Sie während des Adobe I/O-Setups in der vorherigen Übung heruntergeladen haben. Sie hat den folgenden Namen: **`oauth_server_to_server.postman_environment.json`**.
 
 - Die Sammlung enthält eine Reihe von API-Anfragen, die Sie verwenden können. Wir werden zwei Sammlungen verwenden
-   - 1 Sammlung für Authentifizierung an Adobe I/0
+   - 1 Sammlung für Authentifizierung bei Adobe I/O
    - 1 Sammlung für die Übungen in diesem Modul
    - 1 Sammlung für die Übungen im Real-Time CDP-Modul, für Destination Authoring
 
@@ -632,7 +629,7 @@ Dies sind derzeit alle verfügbaren ExperienceEvent-Daten in Platform für diese
 
 Sie müssen die ECID nicht verwenden, um ExperienceEvent-Daten vom Echtzeit-Profil von Adobe Experience Platform anzufordern. Sie können zur Anforderung dieser Daten eine beliebige ID in einem Namespace verwenden.
 
-Nächster Schritt: [2.1.4 Segment erstellen - UI](./ex4.md)
+Nächster Schritt: [2.1.4 Erstellen einer Zielgruppe - Benutzeroberfläche](./ex4.md)
 
 [Zurück zu Modul 2.1](./real-time-customer-profile.md)
 

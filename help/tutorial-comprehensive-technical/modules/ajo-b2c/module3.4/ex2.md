@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Konfigurieren einer Batch-basierten Journey
 description: In diesem Abschnitt konfigurieren Sie eine Batch-E-Mail-Journey, um einen Newsletter zu versenden
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '786'
 ht-degree: 8%
 
 ---
@@ -22,7 +23,7 @@ Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewisser
 
 ## 3.4.2.1 Newsletter-Journey erstellen
 
-Jetzt erstellen Sie eine Batch-basierte Journey. Im Gegensatz zur ereignisbasierten Journey der vorherigen Übung, bei der eingehende Erlebnisereignisse oder Segmenteinträge oder -ausstiege zum Trigger einer Journey für einen bestimmten Kunden verwendet werden, richten sich Batch-basierte Journey ein ganzes Segment einmal mit eindeutigen Inhalten wie Newslettern, einmaligen Promotions oder allgemeinen Informationen oder regelmäßig mit ähnlichen Inhalten, die regelmäßig gesendet werden, z. B. Geburtstagskampagnen und Erinnerungen.
+Jetzt erstellen Sie eine Batch-basierte Journey. Im Gegensatz zur ereignisbasierten Journey der vorherigen Übung, bei der eingehende Erlebnisereignisse oder Zielgruppeneinträge oder -ausstiege zum Trigger einer Journey für einen bestimmten Kunden verwendet werden, richten sich Batch-basierte Journey einmal an eine ganze Zielgruppe mit eindeutigen Inhalten wie Newslettern, einmaligen Promotions oder generischen Informationen oder regelmäßig mit ähnlichen Inhalten, wie z. B. Geburtstagskampagnen und Erinnerungen.
 
 Wechseln Sie im Menü zu **Journey** und klicken Sie auf **Journey erstellen**.
 
@@ -37,11 +38,11 @@ Klicken Sie auf **OK**.
 
 ![Journey Optimizer](./images/batchj2.png)
 
-Ziehen Sie unter **Orchestrierung** **Segment lesen** auf die Arbeitsfläche. Das bedeutet, dass die Journey nach der Veröffentlichung mit dem Abrufen der gesamten Segmentzielgruppe beginnt, die dann zur Zielgruppe der Journey und Nachricht wird. Klicken Sie auf **Segment auswählen**.
+Ziehen Sie unter **Orchestration** **Audience lesen** auf die Arbeitsfläche. Das bedeutet, dass die Journey nach der Veröffentlichung mit dem Abrufen der gesamten Audience beginnt, die dann zur Zielgruppe der Journey und Nachricht wird. Klicken Sie auf **Auswählen einer Zielgruppe**.
 
 ![Journey Optimizer](./images/batchj3.png)
 
-Suchen Sie im Popup **Segment auswählen** nach Ihrem ldap und wählen Sie das Segment aus, das Sie in [Modul 2.3 - Echtzeit-Kundendatenplattform - Erstellen eines Segments erstellt haben. Nehmen Sie die Aktion](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) mit dem Namen `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` vor. Beispiel: vangeluw - Interesse an PROTEUS FITNESS JACKSHIRT. Klicken Sie auf **Speichern**.
+Suchen Sie im Popup **Zielgruppe auswählen** nach Ihrem ldap und wählen Sie die Zielgruppe aus, die Sie in [Modul 2.3 - Echtzeit-Kundendatenplattform - Erstellen einer Zielgruppe und Ausführen der Aktion](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) mit dem Namen `--aepUserLdap-- - Interest in Galaxy S24` erstellt haben. Klicken Sie auf **Speichern**.
 
 ![Journey Optimizer](./images/batchj5.png)
 

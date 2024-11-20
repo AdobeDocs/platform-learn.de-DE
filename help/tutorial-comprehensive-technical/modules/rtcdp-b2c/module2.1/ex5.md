@@ -4,10 +4,10 @@ description: Anzeigen Ihres Echtzeit-Kundenprofils in Aktion im Callcenter
 kt: 5342
 doc-type: tutorial
 exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 2%
+source-wordcount: '317'
+ht-degree: 3%
 
 ---
 
@@ -50,11 +50,9 @@ Als Nächstes müssen Sie eine Ihrer Identitäten und den entsprechenden Namespa
 | Email ID | woutervangeluwe+18112024-01@gmail.com |
 | Mobiltelefonnummer | +32473622044+18112024-01 |
 
-Wenn der Kunde Ihr Callcenter anruft, kann die Telefonnummer zur Identifizierung des Kunden verwendet werden. In dieser Übung verwenden Sie also die Telefonnummer, um das Kundenprofil in der CX-App abzurufen.
-
 ![Demo](./images/19.png)
 
-Sie sehen nun die Informationen, die idealerweise im Callcenter angezeigt werden würden, sodass die Angestellten des Call-Centers alle relevanten Informationen sofort beim Kontakt mit einem Kunden zur Verfügung haben.
+Jetzt werden die Informationen angezeigt, die idealerweise im Callcenter angezeigt werden, sodass die Callcenter-Agenten alle relevanten Informationen sofort beim Kontakt mit einem Kunden zur Verfügung haben.
 
 ![Demo](./images/20.png)
 

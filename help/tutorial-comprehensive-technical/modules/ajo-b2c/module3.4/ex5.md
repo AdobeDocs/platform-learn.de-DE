@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Geschäftsereignisse
 description: In diesem Abschnitt wird erläutert, wie Sie die Funktion für Geschäftsereignisse verwenden können, um einen "Artikel wieder auf Lager"Anwendungsfall auszuführen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1187'
 ht-degree: 8%
 
 ---
@@ -98,14 +99,14 @@ Suchen Sie im linken Menü unter **Ereignisse** nach Ihrem ldap. Sie finden das 
 
 ![Journey Optimizer](./images/bej12.png)
 
-Wie Sie sehen können, wurde der Arbeitsfläche automatisch die Aktivität **Segment lesen** hinzugefügt. Dies liegt daran, dass die Geschäftsereignisse nur einen Trigger senden, damit der Journey ein bestimmtes Segment liest, wodurch die Profilliste für diese Journey abgerufen wird.
+Wie Sie sehen können, wurde der Arbeitsfläche automatisch die Aktivität **Audience lesen** hinzugefügt. Dies liegt daran, dass die Geschäftsereignisse nur einen Trigger an die Journey senden, um eine bestimmte Zielgruppe zu lesen, die dann die Profilliste für diese Journey abruft.
 
-Klicken Sie auf die Aktivität **Segment lesen** .
-Die Konfiguration **Segment lesen** erwartet, dass Sie das Segment auswählen, das Sie über das gerade eingetretene Geschäftsereignis benachrichtigen möchten. Klicken Sie auf das Feld **Segment auswählen** .
+Klicken Sie auf die Aktivität **Audience lesen** .
+Die Konfiguration **Audience lesen** erwartet, dass Sie die Audience auswählen, die Sie über das gerade eingetretene Geschäftsereignis benachrichtigen möchten. Klicken Sie auf das Feld **Zielgruppe auswählen** .
 
 ![Journey Optimizer](./images/bej13.png)
 
-Suchen Sie im Popup **Segment auswählen** nach Ihrem ldap und wählen Sie das Segment aus, das Sie in [Modul 2.3 - Echtzeit-Kundendatenplattform - Erstellen eines Segments erstellt haben. Nehmen Sie die Aktion](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) mit dem Namen `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` vor. Beispiel: vangeluw - Interesse an PROTEUS FITNESS JACKSHIRT. Klicken Sie auf **Speichern**.
+Suchen Sie im Popup **Zielgruppe auswählen** nach Ihrem ldap und wählen Sie die Zielgruppe aus, die Sie in [Modul 2.3 - Echtzeit-Kundendatenplattform - Erstellen einer Zielgruppe und Ausführen der Aktion](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) mit dem Namen `--aepUserLdap-- - Interest in Galaxy S24` erstellt haben. Klicken Sie auf **Speichern**.
 
 ![Journey Optimizer](./images/bej14.png)
 

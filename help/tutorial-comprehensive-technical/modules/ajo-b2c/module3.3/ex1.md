@@ -4,7 +4,8 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 4%
@@ -92,9 +93,9 @@ Jetzt werden alle Felder der Platzierung angezeigt:
 
 ## 3.3.1.4 Entscheidungsregeln
 
-Eine Regel (auch als Eignungsregel bezeichnet) entspricht einem **Segment** . Eine Regel ist in der Tat ein Segment selbst mit dem einzigen Unterschied, dass eine Regel mit einem Angebot verwendet werden kann, um einem Profil in Adobe Experience Platform das beste Angebot zu unterbreiten.
+Eine Regel (auch als Eignungsregel bezeichnet) entspricht einer **Zielgruppe**. Eine Regel ist in der Tat eine Zielgruppe selbst mit dem einzigen Unterschied, dass eine Regel mit einem Angebot verwendet werden kann, um einem Profil in Adobe Experience Platform das beste Angebot bereitzustellen.
 
-Da Sie bereits wissen, wie Sie Segmente basierend auf den vorherigen Aktivierungsmodulen definieren, sollten Sie einfach die Segmentierungsumgebung schnell erneut aufrufen:
+Da Sie bereits wissen, wie Sie Zielgruppen basierend auf den vorherigen Aktivierungsmodulen definieren, sollten Sie einfach die Segmentierungsumgebung schnell erneut aufrufen:
 
 Navigieren Sie zu **Regeln**. Klicken Sie auf **+ Regel erstellen**.
 
@@ -106,7 +107,7 @@ Anschließend sehen Sie die Segmentierungsumgebung von Adobe Experience Platform
 
 Sie können jetzt auf alle Felder zugreifen, die Teil des Vereinigungsschemas für das Echtzeit-Kundenprofil sind, und eine beliebige Regel erstellen.
 
-Interessant ist auch, dass Sie bereits definierte Segmente einfach in Adobe Experience Platform wiederverwenden können, indem Sie zu **Zielgruppen** > ``--aepTenantId--`` navigieren.
+Interessant ist auch, dass Sie bereits definierte Zielgruppen in Adobe Experience Platform einfach wiederverwenden können, indem Sie zu **Zielgruppen** > ``--aepTenantId--`` navigieren.
 
 ![Entscheidungsregel](./images/decisionruleaud.png)
 

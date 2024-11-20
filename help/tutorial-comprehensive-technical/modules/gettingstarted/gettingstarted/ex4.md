@@ -4,7 +4,7 @@ description: Erste Schritte - Verwenden der Website
 kt: 5342
 doc-type: tutorial
 exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Wählen Sie auf der Seite **Integrationen** die Eigenschaft &quot;Datenerfassung
 
 ![DSN](./images/web2.png)
 
-Klicken Sie auf **Auswählen** in der Eigenschaft &quot;Datenerfassung&quot;, die im vorherigen Schritt erstellt wurde und den Namen `--aepUserLdap - Demo System (DD/MM/YYYY) (web)` trägt.
+Klicken Sie auf **Auswählen** in der Eigenschaft &quot;Datenerfassung&quot;, die im vorherigen Schritt erstellt wurde und den Namen `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)` trägt.
 
 ![DSN](./images/web2a.png)
 

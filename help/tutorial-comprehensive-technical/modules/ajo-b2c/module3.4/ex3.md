@@ -3,10 +3,11 @@ title: Adobe Journey Optimizer - Anwenden der Personalisierung in einer E-Mail-N
 description: In dieser Übung wird erläutert, wie die Segmentpersonalisierung in einem E-Mail-Inhalt verwendet wird
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 10%
+source-wordcount: '483'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +17,7 @@ Melden Sie sich bei Adobe Experience Cloud an, indem Sie zu [Adobe Experience Cl
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepTenantId--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** .
+Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepTenantId--``.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 

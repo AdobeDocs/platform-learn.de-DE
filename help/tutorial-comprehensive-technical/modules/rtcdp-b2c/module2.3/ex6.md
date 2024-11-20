@@ -3,27 +3,28 @@ title: Echtzeit-Kundendatenplattform - Externe Zielgruppen
 description: Echtzeit-Kundendatenplattform - Externe Zielgruppen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
 
 # 2.3.6 Externe Zielgruppen
 
-In vielen Fällen möchte Ihr Unternehmen vorhandene Segmente aus anderen Anwendungen verwenden, um das Kundenprofil in Adobe Experience Platform anzureichern.
+In vielen Fällen kann Ihr Unternehmen vorhandene Zielgruppen aus anderen Anwendungen verwenden wollen, um das Kundenprofil in Adobe Experience Platform anzureichern.
 Diese externen Zielgruppen wurden möglicherweise auf der Grundlage eines Datenwissenschaftsmodells oder mithilfe externer Datenplattformen definiert.
 
-Mit der Funktion für externe Zielgruppen in Adobe Experience Platform können Sie sich auf die Erfassung externer Zielgruppen und deren Aktivierung konzentrieren, ohne die entsprechende Segmentdefinition in Adobe Experience Platform detailliert neu definieren zu müssen.
+Mit der Funktion für externe Zielgruppen in Adobe Experience Platform können Sie sich auf die Erfassung externer Zielgruppen und deren Aktivierung konzentrieren, ohne die entsprechende Zielgruppendefinition in Adobe Experience Platform detailliert neu definieren zu müssen.
 
 Der Gesamtprozess gliedert sich in drei Hauptschritte:
 
 - Importieren Sie die Metadaten der externen Zielgruppe: Mit diesem Schritt werden die Metadaten der externen Zielgruppe, z. B. der Zielgruppenname, in Adobe Experience Platform aufgenommen.
-- Weisen Sie dem Kundenprofil die Mitgliedschaft in einer externen Zielgruppe zu: Dieser Schritt soll das Kundenprofil mit dem Attribut für die Mitgliedschaft in einem externen Segment anreichern.
-- Erstellen Sie die Segmente in Adobe Experience Platform: Dieser Schritt dient der Erstellung umsetzbarer Segmente basierend auf der Mitgliedschaft in externen Zielgruppen.
+- Weisen Sie dem Kundenprofil die Mitgliedschaft in einer externen Zielgruppe zu: Dieser Schritt soll das Kundenprofil mit dem Attribut für die Mitgliedschaft in externen Zielgruppen anreichern.
+- Erstellen Sie die Zielgruppen in Adobe Experience Platform: Dieser Schritt dient der Erstellung umsetzbarer Zielgruppen auf der Basis der Mitgliedschaft in externen Zielgruppen.
 
-## 2.3.6.1 Metadaten
+## Metadaten
 
 Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
 
@@ -31,13 +32,13 @@ Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platfor
 
 >[!IMPORTANT]
 >
->Die Sandbox, die für diese Übung verwendet werden soll, ist ``--module2sandbox--``!
+>Die Sandbox, die für diese Übung verwendet werden soll, ist ``--aepSandboxName--``!
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--module2sandbox--``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 ![Datenaufnahme](./images/sb1.png)
 
-Während die Segmentdaten die Bedingung definieren, dass ein Profil Teil eines Segments sein soll, sind die Segmentmetadaten Informationen zum Segment, wie z. B. Name, Beschreibung und Status des Segments. Da die Metadaten externer Zielgruppen in Adobe Experience Platform gespeichert werden, müssen Sie einen Identitäts-Namespace verwenden, um die Metadaten in Adobe Experience Platform zu erfassen.
+Während die Zielgruppendaten die Bedingung definieren, dass ein Profil Teil einer Zielgruppe sein soll, sind die Zielgruppen-Metadaten Informationen über die Zielgruppe, wie z. B. Name, Beschreibung und Status der Zielgruppe. Da die Metadaten externer Zielgruppen in Adobe Experience Platform gespeichert werden, müssen Sie einen Identitäts-Namespace verwenden, um die Metadaten in Adobe Experience Platform zu erfassen.
 
 ## 2.3.6.1.1 Identity-Namespace für externe Zielgruppen
 
@@ -47,19 +48,19 @@ Um die bereits erstellte Identität anzuzeigen, gehen Sie zu **Identitäten** un
 Bitte beachten Sie:
 
 - Das Identitätssymbol **externalaudiences** wird in den nächsten Schritten verwendet, um auf die Identität externer Zielgruppen zu verweisen.
-- Der Typ **Personenfremde Kennung** wird für diesen Identitäts-Namespace verwendet, da dieser Namespace nicht zur Identifizierung von Kundenprofilen, sondern von Segmenten dient.
+- Der Typ **Personenfremde Kennung** wird für diesen Identitäts-Namespace verwendet, da dieser Namespace nicht zur Identifizierung von Kundenprofilen, sondern Zielgruppen dient.
 
 ![Identität externer Zielgruppen](images/extAudIdNS.png)
 
 ## 2.3.6.1.2 Schema für externe Zielgruppen-Metadaten erstellen
 
-Die Metadaten der externen Zielgruppen basieren auf dem **Segmentdefinitionsschema**. Weitere Informationen finden Sie im [XDM Github-Repository](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
+Die Metadaten der externen Zielgruppen basieren auf dem **Zielgruppendefinitionsschema**. Weitere Informationen finden Sie im [XDM Github-Repository](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
 
 Gehen Sie im linken Menü zu Schemas. Klicken Sie auf **+ Schema erstellen** und dann auf **Durchsuchen**.
 
 ![Metadatenschema für externe Zielgruppen 1](images/extAudMDXDM1.png)
 
-Um eine Klasse zuzuweisen, suchen Sie nach **Segmentdefinition**. Wählen Sie die Klasse **Segmentdefinition** aus und klicken Sie auf **Klasse zuweisen**.
+Um eine Klasse zuzuweisen, suchen Sie nach **Zielgruppendefinition**. Wählen Sie die Klasse **Zielgruppendefinition** aus und klicken Sie auf **Klasse zuweisen**.
 
 ![Metadatenschema für externe Zielgruppen 2](images/extAudMDXDM2.png)
 
@@ -203,13 +204,13 @@ In den Abfrageergebnissen sehen Sie die Metadaten der externen Audience, die Sie
 
 ![Externe Zielgruppen-Metadaten str 5](images/extAudMDstr5.png)
 
-## 2.3.6.2 Segmentzugehörigkeit
+## Zielgruppenzugehörigkeit
 
-Mit den verfügbaren externen Zielgruppen-Metadaten können Sie jetzt die Segmentzugehörigkeit für ein bestimmtes Kundenprofil erfassen.
+Mit den verfügbaren externen Zielgruppen-Metadaten können Sie jetzt die Zielgruppenmitgliedschaft für ein bestimmtes Kundenprofil erfassen.
 
-Sie müssen jetzt einen Profildatensatz vorbereiten, der mit dem Schema der Segmentmitgliedschaft angereichert wird. Weitere Informationen finden Sie im [XDM Github-Repository](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
+Sie müssen jetzt einen Profildatensatz vorbereiten, der mit dem Zielgruppenmitgliedsschema angereichert wird. Weitere Informationen finden Sie im [XDM Github-Repository](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
 
-## 2.3.6.2.1 Schema für die Mitgliedschaft in externen Zielgruppen erstellen
+### Erstellen des Schemas für die Mitgliedschaft in externen Zielgruppen
 
 Gehen Sie im rechten Menü zu **Schemas**. Klicken Sie auf **Schema erstellen** und dann auf **XDM Individual Profile**.
 
@@ -237,7 +238,7 @@ Aktivieren Sie als Nächstes den Umschalter **Profil** und bestätigen Sie. Klic
 
 ![Profil-Schema für externe Zielgruppen 5](images/extAudPrXDM5.png)
 
-## 2.3.6.2.2 Datensatz zur Mitgliedschaft in externen Zielgruppen erstellen
+### Erstellen des Datensatzes zur Mitgliedschaft externer Zielgruppen
 
 Wechseln Sie in **Schemas** zu **Durchsuchen**. Suchen Sie nach dem Schema `--aepUserLdap-- - External Audiences Membership` , das Sie im vorherigen Schritt erstellt haben, und klicken Sie darauf. Klicken Sie anschließend auf **Datensatz aus Schema erstellen**.
 
@@ -251,7 +252,7 @@ Dann wirst du das sehen. Vergessen Sie nicht, den Umschalter **Profil** zu aktiv
 
 ![Externe Zielgruppen - Metadaten DS 3](images/extAudPrDS3.png)
 
-## 2.3.6.2.3 HTTP-API-Source-Verbindung erstellen
+### Erstellen einer HTTP-API-Source-Verbindung
 
 
 Als Nächstes müssen Sie den HTTP API Source Connector konfigurieren, mit dem Sie die Metadaten in den Datensatz aufnehmen.
@@ -294,7 +295,7 @@ Dann wirst du das sehen.
 
 ![Metadaten externer Zielgruppen http 4](images/extAudPrhttp4a.png)
 
-## 2.3.6.2.4 Aufnahme von Daten zur Mitgliedschaft in externen Zielgruppen
+### Aufnahme von Daten zur Mitgliedschaft in externen Zielgruppen
 
 Klicken Sie auf der Registerkarte &quot;Übersicht über Source Connector&quot;auf **...** und klicken Sie dann auf **Schema-Payload kopieren**.
 
@@ -346,7 +347,7 @@ Aktualisieren Sie den Bildschirm Ihres HTTP-API-Source-Connectors, auf dem nach 
 
 ![Externe Zielgruppen - Metadaten str 2](images/extAudPrstr2.png)
 
-## 2.3.6.2.5 Aufnahme externer Zielgruppen validieren
+### Validieren der Erfassung der Mitgliedschaft in externen Zielgruppen
 
 Nach Abschluss der Verarbeitung können Sie mithilfe von Query Service die Datenverfügbarkeit im Datensatz überprüfen.
 
@@ -368,7 +369,7 @@ In den Abfrageergebnissen sehen Sie die Metadaten der externen Audience, die Sie
 
 ![Externe Zielgruppen-Metadaten str 5](images/extAudPrstr5.png)
 
-## 2.3.6.3 Segment erstellen
+## Erstellen eines Segments
 
 Jetzt sind Sie bereit, Maßnahmen für die externen Zielgruppen zu ergreifen.
 In Adobe Experience Platform erfolgt die Aktion durch das Erstellen von Segmenten, das Füllen der jeweiligen Zielgruppen und das Teilen dieser Zielgruppen mit den Zielen.
@@ -396,7 +397,7 @@ Dann wirst du das sehen. Sie werden auch feststellen, dass das Profil, für das 
 
 Ihr Segment ist jetzt bereit und kann zur Aktivierung an ein Ziel gesendet werden.
 
-## 2.3.6.4 Kundenprofil visualisieren
+## Kundenprofil visualisieren
 
 Sie können jetzt auch die Segmentqualifizierung in Ihrem Kundenprofil visualisieren. Wechseln Sie zu **Profile**, verwenden Sie den Identitäts-Namespace **Demo System - CRMID**, geben Sie die Identität `--aepUserLdap---profile-test-01` an, die Sie im Rahmen von Übung 6.6.2.4 verwendet haben, und klicken Sie auf **Anzeigen**. Klicken Sie anschließend auf die **Profil-ID** , um das Profil zu öffnen.
 

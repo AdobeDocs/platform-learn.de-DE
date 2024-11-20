@@ -6,16 +6,14 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
 
 # 2.3 Echtzeit-Kundendatenplattform - Erstellen Sie ein Segment und ergreifen Sie Maßnahmen
-
-**Autor: [Wouter van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Alberto De Caro](https://www.linkedin.com/in/albertodecaro/), [Benedikt Wedenik](https://www.linkedin.com/in/benedikt-wedenik/)**
 
 In diesem Modul konfigurieren Sie ein Streaming-Segment und aktivieren das Segment für mehrere Ziele.
 
@@ -38,25 +36,25 @@ In diesem Modul konfigurieren Sie ein Streaming-Segment und aktivieren das Segme
 
 ## Übungen
 
-[2.3.1 Segment erstellen](./ex1.md)
+[2.3.1 Erstellen einer Zielgruppe](./ex1.md)
 
-Erfahren Sie, wie Sie ein Segment erstellen.
+Erfahren Sie, wie Sie eine Zielgruppe erstellen.
 
 [2.3.2 Überprüfen der Konfiguration des DV360-Ziels mithilfe von Zielen](./ex2.md)
 
 Erfahren Sie, wie Sie ein Werbeziel mithilfe der Real-Time CDP-Benutzeroberfläche konfigurieren.
 
-[2.3.3 Aktion durchführen: Senden Sie Ihr Segment an DV360](./ex3.md)
+[2.3.3 Aktion durchführen: Senden Sie Ihre Audience an DV360](./ex3.md)
 
-Verbinden Sie das in Übung 6.1 erstellte Segment mit dem Ziel DV360.
+Verbinden Sie die erstellte Zielgruppe mit dem Ziel DV360.
 
-[2.3.4 Aktion ausführen: Senden Sie Ihr Segment an ein S3-Ziel](./ex4.md)
+[2.3.4 Aktion durchführen: Senden Sie Ihre Audience an ein S3-Ziel](./ex4.md)
 
-Verwenden Sie das in Übung 6.1 erstellte Segment und senden Sie es an ein S3-Ziel, das normalerweise für E-Mail-Marketing-Ziele verwendet wird.
+Verwenden Sie die erstellte Zielgruppe und senden Sie sie an ein S3-Ziel, das normalerweise für E-Mail-Marketing-Ziele verwendet wird.
 
-[2.3.5 Aktion durchführen: Segment an Adobe Target senden](./ex5.md)
+[2.3.5 Aktion durchführen: Senden Sie Ihre Audience an Adobe Target](./ex5.md)
 
-Verwenden Sie das in Übung 6.1 erstellte Segment, um eine Erlebnis-Targeting-Aktivität in Adobe Target zu konfigurieren.
+Verwenden Sie die erstellte Zielgruppe, um eine Erlebnis-Targeting-Aktivität in Adobe Target zu konfigurieren.
 
 [2.3.6 Externe Zielgruppen](./ex6.md)
 
