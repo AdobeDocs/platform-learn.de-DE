@@ -4,16 +4,14 @@ description: In diesem Modul verwenden Sie die zuvor konfigurierten Datensätze,
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # 2.5 Real-Time CDP-Verbindungen: Ereignisweiterleitung
-
-**Autor: [Wouter van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Clement Delalande](https://www.linkedin.com/in/clement-delalande/)**
 
 In diesem Modul verwenden Sie die zuvor konfigurierten Datensätze, Schemas und die Adobe Experience Platform-Datenerfassungs-Client-Eigenschaft, um Daten zu erfassen und diese Daten dann Server-seitig an einen gewünschten Endpunkt weiterzuleiten.
 
@@ -23,10 +21,6 @@ In diesem Modul werden Sie:
 - Installieren und Verwenden der Adobe Cloud Connector-Erweiterung in der Adobe Experience Platform-Datenerfassung
 - Google-Funktionsendpunkt erstellen und Daten streamen
 - AWS-Endpunkt erstellen und Daten streamen
-
-Sehen Sie sich dieses Video an, um den Wert, die Journey und den Konfigurationsprozess für Kunden zu verstehen:
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## Lernziele
 

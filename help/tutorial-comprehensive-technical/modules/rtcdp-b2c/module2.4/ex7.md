@@ -3,7 +3,8 @@ title: Audience Activation zu Microsoft Azure Event Hub - Aktion
 description: Audience Activation zu Microsoft Azure Event Hub - Aktion
 kt: 5342
 doc-type: tutorial
-source-git-commit: cefebfe0336952f0e3099fd2dd9f4395d453f713
+exl-id: f5b224bf-60b9-46e0-abdb-9d96a7e8c59f
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -76,11 +77,36 @@ Navigieren Sie zur Seite **Pläne** . Diese Aktion qualifiziert Sie für die Zie
 
 Wechseln Sie zurück zu Visual Studio Code und sehen Sie sich die Registerkarte **TERMINAL** an. Es sollte eine Liste der Zielgruppen für Ihre spezifische **ECID** angezeigt werden. Diese Aktivierungs-Payload wird an Ihren Ereignis-Hub bereitgestellt, sobald Sie sich für die `--aepUserLdap-- - Interest in Plans` -Zielgruppe qualifizieren.
 
+![6-06-vsc-activation-alized.png](./images/cs3.png)
+
 Wenn Sie sich die Nutzlast der Zielgruppe genauer ansehen, können Sie sehen, dass `--aepUserLdap-- - Interest in Plans` den Status **realisiert** aufweist.
 
-Der Zielgruppenstatus **realisiert** bedeutet, dass Ihr Profil Teil der Zielgruppe ist, während der Status **Ausstieg** bedeutet, dass unser Profil aus der Zielgruppe entfernt wurde.
+```json
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
+}
+```
 
-![6-06-vsc-activation-alized.png](./images/cs3.png)
+Der Zielgruppenstatus **realisiert** bedeutet, dass Ihr Profil Teil der Zielgruppe ist, während der Status **Ausstieg** bedeutet, dass unser Profil aus der Zielgruppe entfernt wurde.
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 

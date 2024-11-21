@@ -3,26 +3,29 @@ title: Adobe Experience Platform-Datenerfassung und serverseitige Weiterleitung 
 description: Benutzerdefinierten Webhook erstellen und konfigurieren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 2%
+source-wordcount: '1107'
+ht-degree: 1%
 
 ---
 
 # 2.5.3 Benutzerdefinierten Webhook erstellen und konfigurieren
 
-## 2.5.3.1 Benutzerdefinierten Webhook erstellen
+## Benutzerdefinierten Webhook erstellen
 
-Wechseln Sie zu [https://webhook.site/](https://webhook.site/). Sie sehen etwas wie das:
+Wechseln Sie zu [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Sie haben diese Anwendung bereits im [Übung 2.3.7 Destinations SDK](./../../../modules/rtcdp-b2c/module2.3/ex7.md) verwendet
+
+Wenn Sie diesen Dienst noch nicht verwendet haben, erstellen Sie ein Konto und dann einen Arbeitsbereich. Nachdem der Arbeitsbereich erstellt wurde, wird etwas Ähnliches angezeigt.
+
+Klicken Sie auf **copy** , um die URL zu kopieren. Sie müssen diese URL in der nächsten Übung angeben. Die URL in diesem Beispiel lautet `https://eodts05snjmjz67.m.pipedream.net`.
 
 ![demo](./images/webhook1.png)
 
-Sie sehen Ihre eindeutige URL, die wie folgt aussieht: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`.
-
 Diese Website hat jetzt diesen Webhook für Sie erstellt und Sie können diesen Webhook in Ihrem **[!DNL Event Forwarding property]** konfigurieren, um die Ereignisweiterleitung zu testen.
 
-## 2.5.3.2 Eigenschaft für die Ereignisweiterleitung aktualisieren: Datenelement erstellen
+## Eigenschaft für die Ereignisweiterleitung aktualisieren: Erstellen Sie ein Datenelement
 
 Wechseln Sie zu [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) und gehen Sie zu **Ereignisweiterleitung**. Suchen Sie die Eigenschaft &quot;Ereignisweiterleitung&quot;und klicken Sie darauf, um sie zu öffnen.
 
@@ -41,11 +44,13 @@ Wählen Sie Folgendes aus:
 - Geben Sie als **Name** **XDM-Ereignis** ein.
 - Wählen Sie als **Erweiterung** **Core** aus.
 - Wählen Sie als **Datenelementtyp** **Pfad** aus.
-- Geben Sie als **Pfad** **arc.event.xdm** ein. Durch Eingabe dieses Pfads filtern Sie den Abschnitt **XDM** aus der Ereignis-Payload heraus, die von der Website oder App an die Adobe Edge gesendet wird.
+- Wählen Sie als **Pfad** **Daten aus XDM lesen (arc.event.xdm)**. Durch Auswahl dieses Pfads filtern Sie den Abschnitt **XDM** aus der Ereignis-Payload heraus, die von der Website oder App an die Adobe Edge gesendet wird.
+
+![Adobe Experience Platform-Datenerfassung SSF](./images/de3.png)
 
 Das wirst du jetzt haben. Klicken Sie auf **Speichern**.
 
-![Adobe Experience Platform-Datenerfassung SSF](./images/de3.png)
+![Adobe Experience Platform-Datenerfassung SSF](./images/de3a.png)
 
 >[!NOTE]
 >
@@ -53,7 +58,7 @@ Das wirst du jetzt haben. Klicken Sie auf **Speichern**.
 >
 >Im obigen Pfad wird ein Verweis auf **event** erstellt. **event** steht für ein eindeutiges Ereignis, und der Adobe Experience Platform-Datenerfassungsserver wertet jedes Ereignis immer einzeln aus. Manchmal wird in der vom Web SDK Client Side gesendeten Payload ein Verweis auf **events** angezeigt, aber in Adobe Experience Platform Data Collection Server wird jedes Ereignis einzeln ausgewertet.
 
-## 2.5.3.3 Eigenschaft des Adobe Experience Platform-Datenerfassungsservers aktualisieren: Regel erstellen
+## Adobe Experience Platform-Datenerfassungsservereigenschaft aktualisieren: Erstellen Sie eine Regel
 
 Gehen Sie im linken Menü zu **Regeln**. Klicken Sie auf **Neue Regel erstellen**.
 
@@ -75,7 +80,7 @@ Dadurch erhalten Sie den folgenden **Namen**: **Adobe Cloud-Connector - Abrufen 
 Konfigurieren Sie als Nächstes Folgendes:
 
 - Ändern Sie die Anfragemethode von GET in **POST** .
-- Geben Sie die URL des benutzerdefinierten Webhooks ein, den Sie in einem der vorherigen Schritte auf der Website [https://webhook.site/](https://webhook.site/) erstellt haben, die wie folgt aussieht: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`
+- Geben Sie die URL des benutzerdefinierten Webhooks ein, den Sie in einem der vorherigen Schritte erstellt haben. Sie sieht wie folgt aus: `https://eodts05snjmjz67.m.pipedream.net`
 
 Du solltest das jetzt haben. Navigieren Sie als Nächstes zu **Hauptteil**.
 
@@ -110,19 +115,11 @@ Nach einigen Minuten werden Sie feststellen, dass die Implementierung abgeschlos
 
 ![Adobe Experience Platform-Datenerfassung SSF](./images/rl14.png)
 
-## 2.5.3.4 Konfiguration testen
+## Testen der Konfiguration
 
-Wechseln Sie zu [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf Ihr Website-Projekt, um es zu öffnen.
+Wechseln Sie zu [https://dsn.adobe.com](https://dsn.adobe.com). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf die drei Punkte **..** im Website-Projekt und dann auf **Ausführen** , um es zu öffnen.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-Sie können nun den unten stehenden Fluss zum Zugriff auf die Website ausführen. Klicken Sie auf **Integrationen**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-Wählen Sie auf der Seite **Integrationen** die Datenerfassungseigenschaft aus, die in Übung 0.1 erstellt wurde.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
 
@@ -140,7 +137,7 @@ Wählen Sie Ihren Kontotyp aus und schließen Sie den Anmeldevorgang ab.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Sie sehen dann Ihre Website in einem Inkognito-Browser-Fenster geladen. Für jede Demonstration müssen Sie ein neues Inkognito-Browser-Fenster verwenden, um Ihre Demo-Website-URL zu laden.
+Sie sehen dann Ihre Website in einem Inkognito-Browser-Fenster geladen. Für jede Übung müssen Sie ein neues Inkognito-Browser-Fenster verwenden, um Ihre Demo-Website-URL zu laden.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
@@ -148,15 +145,15 @@ Wenn Sie die Entwickleransicht des Browsers öffnen, können Sie Netzwerkanforde
 
 ![Einrichten der Adobe Experience Platform-Datenerfassung](./images/hook1.png)
 
-Wenn Sie die Rohdaten-Payload auswählen, gehen Sie zu &quot;[https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print)&quot;und fügen Sie die Payload ein. Klicken Sie auf **Make Pretty**. Anschließend werden die JSON-Payload, das Objekt **events** und das Objekt **xdm** angezeigt. In einem der vorherigen Schritte haben Sie bei der Definition des Datenelements die Referenz **arc.event.xdm** verwendet, was dazu führt, dass Sie das Objekt **xdm** dieser Payload analysieren.
+Wenn Sie die Rohdaten-Payload auswählen, gehen Sie zu &quot;[https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print)&quot;und fügen Sie die Payload ein. Klicken Sie auf **Minify / Beautify**. Anschließend werden die JSON-Payload, das Objekt **events** und das Objekt **xdm** angezeigt. In einem der vorherigen Schritte haben Sie bei der Definition des Datenelements die Referenz **arc.event.xdm** verwendet, was dazu führt, dass Sie das Objekt **xdm** dieser Payload analysieren.
 
 ![Einrichten der Adobe Experience Platform-Datenerfassung](./images/hook2.png)
 
-Wechseln Sie Ihre Ansicht zur Website [https://webhook.site/](https://webhook.site/) , die Sie in einem der vorherigen Schritte verwendet haben. Sie sollten jetzt eine ähnliche Ansicht wie diese haben, wobei Netzwerkanforderungen im linken Menü angezeigt werden. Sie sehen die **xdm**-Payload, die aus der oben gezeigten Netzwerkanforderung herausgefiltert wurde.
+Wechseln Sie Ihre Ansicht zu Ihrem benutzerdefinierten Webhook [https://webhook.site/](https://webhook.site/) , den Sie in einem der vorherigen Schritte verwendet haben. Sie sollten jetzt eine ähnliche Ansicht wie diese haben, wobei Netzwerkanforderungen im linken Menü angezeigt werden. Sie sehen die **xdm**-Payload, die aus der oben gezeigten Netzwerkanforderung herausgefiltert wurde.
 
 ![Einrichten der Adobe Experience Platform-Datenerfassung](./images/hook3.png)
 
-Scrollen Sie in der Payload nach unten, um den Seitennamen zu finden, der in diesem Fall **vangeluw-OCUC** ist (der Projektname Ihrer Demowebsite).
+Scrollen Sie in der Payload ein wenig nach unten, um den Seitennamen zu finden, der in diesem Fall **home** ist.
 
 ![Einrichten der Adobe Experience Platform-Datenerfassung](./images/hook4.png)
 
@@ -164,7 +161,7 @@ Wenn Sie jetzt über die Website navigieren, werden in Echtzeit zusätzliche Net
 
 ![Einrichten der Adobe Experience Platform-Datenerfassung](./images/hook5.png)
 
-Sie haben jetzt die serverseitige Weiterleitung von Web SDK-/XDM-Payloads an einen externen benutzerdefinierten Webhook konfiguriert. In den nächsten Übungen konfigurieren Sie einen ähnlichen Ansatz und senden dieselben Daten an Google- und AWS-Umgebungen.
+Sie haben jetzt die serverseitige Ereignisweiterleitung von Web SDK-/XDM-Payloads an einen externen benutzerdefinierten Webhook konfiguriert. In den nächsten Übungen konfigurieren Sie einen ähnlichen Ansatz und senden dieselben Daten an Google- und AWS-Umgebungen.
 
 Nächster Schritt: [2.5.4 Erstellen und Konfigurieren einer Google Cloud-Funktion](./ex4.md)
 

@@ -4,9 +4,9 @@ description: Audience Activation zu Microsoft Azure Event Hub - Definieren einer
 kt: 5342
 doc-type: tutorial
 exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Klicken Sie auf **Funktionsprojekt erstellen..**:
 
 ![3-05-vsc-create-project.png](./images/vsc2.png)
 
-Wählen Sie einen lokalen Ordner Ihrer Wahl aus, um das Projekt zu speichern, und klicken Sie auf **Auswählen**:
+Wählen Sie einen lokalen Ordner Ihrer Wahl aus oder erstellen Sie ihn, um das Projekt zu speichern, und klicken Sie auf **Auswählen**:
 
 ![3-06-vsc-select-folder.png](./images/vsc3.png)
 
@@ -104,66 +104,73 @@ Sie können dann eine Nachricht wie diese bekommen. Klicken Sie in diesem Fall a
 
 ![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
 
-Nachdem Sie das Projekt erstellt haben, klicken Sie auf **index.js** , damit die Datei im Editor geöffnet wird:
+Nachdem Sie das Projekt erstellt haben, öffnen Sie die Datei &quot;`--aepUserLdap---aep-event-hub-trigger.js`&quot; im Editor:
 
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 
-Die von Adobe Experience Platform an Ihren Event Hub gesendete Payload enthält Zielgruppen-IDs:
+Die von Adobe Experience Platform an Ihren Event Hub gesendete Payload sieht wie folgt aus:
 
 ```json
-[{
-"segmentMembership": {
-"ups": {
-"ca114007-4122-4ef6-a730-4d98e56dce45": {
-"lastQualificationTime": "2020-08-31T10:59:43Z",
-"status": "realized"
-},
-"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
-},
-"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
 }
-}
-},
-"identityMap": {
-"ecid": [{
-"id": "08130494355355215032117568021714632048"
-}]
-}
-}]
 ```
 
-Ersetzen Sie den Code in der index.js-Datei Ihres Visual Studio-Codes durch den unten stehenden Code. Dieser Code wird jedes Mal ausgeführt, wenn die Echtzeit-Kundendatenplattform Zielgruppenqualifikationen an Ihr Event Hub-Ziel sendet. In unserem Beispiel geht es im Code nur darum, die empfangene Payload anzuzeigen und zu verbessern. Sie können sich aber jede Art von Funktion vorstellen, um Zielgruppenqualifikationen in Echtzeit zu verarbeiten.
+Aktualisieren Sie den Code in der `--aepUserLdap---aep-event-hub-trigger.js` Ihres Visual Studio-Codes mit dem unten stehenden Code. Dieser Code wird jedes Mal ausgeführt, wenn die Echtzeit-Kundendatenplattform Zielgruppenqualifikationen an Ihr Event Hub-Ziel sendet. In diesem Beispiel geht es im Code lediglich um die Anzeige der eingehenden Payload. Sie können sich jedoch eine beliebige zusätzliche Funktion vorstellen, um Zielgruppenqualifikationen in Echtzeit zu verarbeiten und sie weiter unten in Ihrem Datenpipeline-Ökosystem zu verwenden.
+
+Zeile 11 in Ihrer Datei `--aepUserLdap---aep-event-hub-trigger.js` zeigt derzeit Folgendes:
 
 ```javascript
-// Marc Meewis - Solution Consultant Adobe - 2020
-// Adobe Experience Platform Enablement - Module 2.4
-
-// Main function
-// -------------
-// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
-// Eventhub destination
-// This function enriched the received audience payload with the name of the audience. 
-// You can replace this function with any logic that is require to process and deliver
-// Adobe Experience Platform audiences in real-time to any application or platform that 
-// would need to act upon an AEP audience qualification.
-// 
-
-module.exports = async function (context, eventHubMessages) {
-
-    return new Promise (function (resolve, reject) {
-
-        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
-
-        resolve();
-
-    });    
-
-};
+context.log('Event hub message:', message);
 ```
+
+Ändern Sie Zeile 11 in `--aepUserLdap---aep-event-hub-trigger.js` so, dass sie wie folgt aussieht:
+
+```javascript
+context.log('Event hub message:', JSON.stringify(message));
+```
+
+Die Payload insgesamt sollte dann wie folgt aussehen:
+
+```javascript
+const { app } = require('@azure/functions');
+
+app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
+    connection: '--aepUserLdap--aepenablement_RootManageSharedAccessKey_EVENTHUB',
+    eventHubName: '--aepUserLdap---aep-enablement-event-hub',
+    cardinality: 'many',
+    handler: (messages, context) => {
+        if (Array.isArray(messages)) {
+            context.log(`Event hub function processed ${messages.length} messages`);
+            for (const message of messages) {
+                context.log('Event hub message:', message);
+            }
+        } else {
+            context.log('Event hub function processed message:', messages);
+        }
+    }
+});
+```
+
 
 Das Ergebnis sollte wie folgt aussehen:
 
@@ -175,7 +182,13 @@ Jetzt ist es an der Zeit, Ihr Projekt auszuführen. In dieser Phase werden wir d
 
 ![3-17-vsc-run-project.png](./images/vsc14.png)
 
-Wenn Sie Ihr Projekt zum ersten Mal im Debug-Modus ausführen, müssen Sie ein Azure-Speicherkonto anhängen, auf **Speicherkonto auswählen** klicken und dann das zuvor erstellte Speicherkonto mit dem Namen `--aepUserLdap--aepstorage` auswählen.
+Wenn Sie Ihr Projekt zum ersten Mal im Debug-Modus ausführen, müssen Sie ein Azure-Speicherkonto anhängen. Klicken Sie auf **Speicherkonto auswählen**.
+
+![3-17-vsc-run-project.png](./images/vsc14a.png)
+
+und wählen Sie dann das zuvor erstellte Speicherkonto mit dem Namen `--aepUserLdap--aepstorage` aus.
+
+![3-17-vsc-run-project.png](./images/vsc14b.png)
 
 Ihr Projekt läuft jetzt und listet Ereignisse auf dem Ereignis-Hub auf. In der nächsten Übung werden Sie das Verhalten auf der Demowebsite von CitiSignal demonstrieren, das Sie für Zielgruppen qualifiziert. Daher erhalten Sie eine Payload für die Zielgruppenqualifizierung im Terminal Ihrer Event Hub-Trigger-Funktion.
 
