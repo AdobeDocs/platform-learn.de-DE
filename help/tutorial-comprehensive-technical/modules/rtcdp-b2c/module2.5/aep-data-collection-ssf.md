@@ -4,9 +4,9 @@ description: In diesem Modul verwenden Sie die zuvor konfigurierten Datensätze,
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ In dieser Übung aktualisieren Sie Ihr vorhandenes Datastream, um die von Ihrer 
 
 In dieser Übung erstellen und konfigurieren Sie einen benutzerdefinierten Webhook, und Sie beginnen mit der Weiterleitung von Daten, die vom Web SDK erfasst werden, an diesen benutzerdefinierten Webhook.
 
-[2.5.4 Google Cloud-Funktion erstellen und konfigurieren](./ex4.md)
+[2.5.4 Ereignisse an GCP-Pub/Sub weiterleiten](./ex4.md)
 
 In dieser Übung erstellen und konfigurieren Sie eine Google Cloud-Funktion und beginnen mit der Weiterleitung von Daten, die vom Web SDK erfasst werden, an Google.
 
-[2.5.5 Weiterleiten von Ereignissen an das AWS-Ökosystem](./ex5.md)
+[2.5.5 Weiterleiten von Ereignissen an AWS Kinesis und AWS S3](./ex5.md)
 
-In dieser Übung konfigurieren Sie Ihre AWS-Umgebung mithilfe von AWS API Gateway, AWS Kinesis, AWS Firewalls und AWS S3. Danach beginnen Sie mit der Weiterleitung von Ereignisdaten, die vom Web SDK erfasst werden.
+In dieser Übung konfigurieren Sie Ihre AWS-Umgebung mit AWS IAM, AWS Kinesis, AWS Firewalls und AWS S3. Danach beginnen Sie mit der Weiterleitung von Ereignisdaten, die vom Web SDK erfasst werden.
 
 [Zusammenfassung und Vorteile](./summary.md)
 

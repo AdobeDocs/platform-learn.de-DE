@@ -5,7 +5,7 @@ user-guide-description: Ein praxisorientiertes Tutorial, das viele Aspekte von A
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
+source-git-commit: f40ed48cdf9f6f05d5a5cc28d152a67448ed8a16
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 4%
@@ -92,8 +92,8 @@ ht-degree: 4%
       + [2.5.1 Erstellen einer Adobe Experience Platform-Eigenschaft zur Ereignisweiterleitung für die Datenerfassung](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex1.md)
       + [2.5.2 Aktualisieren Sie Ihren Datenspeicher, um Daten für Ihre Adobe Experience Platform-Datenerfassungsservereigenschaft verfügbar zu machen.](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex2.md)
       + [2.5.3 Benutzerdefinierten Webhook erstellen und konfigurieren](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex3.md)
-      + [2.5.4 Google Cloud-Funktion erstellen und konfigurieren](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
-      + [2.5.5 Weiterleiten von Ereignissen an das AWS-Ökosystem](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
+      + [2.5.4 Ereignisse an GCP-Pub/Sub weiterleiten](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
+      + [2.5.5 Weiterleiten von Ereignissen an AWS Kinesis und AWS S3](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/summary.md)
    + 2.6 Daten von Apache Kafka an Real-Time CDP streamen {#module26}
       + [Übersicht](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/aep-apache-kafka.md)

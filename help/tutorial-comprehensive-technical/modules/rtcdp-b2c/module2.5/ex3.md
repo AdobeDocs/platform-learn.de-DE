@@ -4,7 +4,7 @@ description: Benutzerdefinierten Webhook erstellen und konfigurieren
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -149,7 +149,7 @@ Wenn Sie die Rohdaten-Payload auswählen, gehen Sie zu &quot;[https://jsonformat
 
 ![Einrichten der Adobe Experience Platform-Datenerfassung](./images/hook2.png)
 
-Wechseln Sie Ihre Ansicht zu Ihrem benutzerdefinierten Webhook [https://webhook.site/](https://webhook.site/) , den Sie in einem der vorherigen Schritte verwendet haben. Sie sollten jetzt eine ähnliche Ansicht wie diese haben, wobei Netzwerkanforderungen im linken Menü angezeigt werden. Sie sehen die **xdm**-Payload, die aus der oben gezeigten Netzwerkanforderung herausgefiltert wurde.
+Wechseln Sie Ihre Ansicht zu Ihrem benutzerdefinierten Webhook [https://pipedream.com/requestbin](https://pipedream.com/requestbin) , den Sie in einem der vorherigen Schritte verwendet haben. Sie sollten jetzt eine ähnliche Ansicht wie diese haben, wobei Netzwerkanforderungen im linken Menü angezeigt werden. Sie sehen die **xdm**-Payload, die aus der oben gezeigten Netzwerkanforderung herausgefiltert wurde.
 
 ![Einrichten der Adobe Experience Platform-Datenerfassung](./images/hook3.png)
 
@@ -161,9 +161,9 @@ Wenn Sie jetzt über die Website navigieren, werden in Echtzeit zusätzliche Net
 
 ![Einrichten der Adobe Experience Platform-Datenerfassung](./images/hook5.png)
 
-Sie haben jetzt die serverseitige Ereignisweiterleitung von Web SDK-/XDM-Payloads an einen externen benutzerdefinierten Webhook konfiguriert. In den nächsten Übungen konfigurieren Sie einen ähnlichen Ansatz und senden dieselben Daten an Google- und AWS-Umgebungen.
+Sie haben jetzt die serverseitige Ereignisweiterleitung von Web SDK-/XDM-Payloads an einen externen benutzerdefinierten Webhook konfiguriert. In den nächsten Übungen konfigurieren Sie einen ähnlichen Ansatz und senden dieselben Daten an Google Cloud Platform und AWS.
 
-Nächster Schritt: [2.5.4 Erstellen und Konfigurieren einer Google Cloud-Funktion](./ex4.md)
+Nächster Schritt: [2.5.4 Ereignisse an GCP Pub/Sub](./ex4.md) weiterleiten
 
 [Zurück zu Modul 2.5](./aep-data-collection-ssf.md)
 
