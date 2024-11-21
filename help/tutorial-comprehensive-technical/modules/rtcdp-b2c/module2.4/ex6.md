@@ -1,111 +1,193 @@
 ---
-title: Segmentaktivierung für Microsoft Azure Event Hub - Aktion
-description: Segmentaktivierung für Microsoft Azure Event Hub - Aktion
+title: Audience Activation zu Microsoft Azure Event Hub - Definieren einer Azure-Funktion
+description: Audience Activation zu Microsoft Azure Event Hub - Definieren einer Azure-Funktion
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
-# 2.4.6 End-to-End-Szenario
+# 2.4.6 Microsoft Azure-Projekt erstellen
 
-## 2.4.6.1 Azure Event Hub-Trigger starten
+## Kennenlernen der Azure Event Hub-Funktionen
 
-Um die Payload anzuzeigen, die von der Echtzeit-Kundendatenplattform von Adobe Experience Platform bei Segmentqualifizierung an unseren Azure Event Hub gesendet wird, müssen wir unsere einfache Azure Event Hub-Trigger-Funktion starten. Diese Funktion vereinfacht die Nutzlast in der Konsole in Visual Studio Code. Beachten Sie jedoch, dass diese Funktion auf jede Weise erweitert werden kann, um mit allen möglichen Umgebungen mit dedizierten APIs und Protokollen zu arbeiten.
+Mit Azure-Funktionen können Sie kleine Code-Abschnitte (namens **Funktionen**) ausführen, ohne sich um die Anwendungs-Infrastruktur zu sorgen. Mit Azure Functions stellt die Cloud-Infrastruktur alle aktuellen Server bereit, die Sie benötigen, um Ihre Anwendung im Maßstab ausführen zu können.
 
-### Visual Studio-Code starten und Projekt starten
+Eine Funktion wird **durch einen bestimmten Ereignistyp ausgelöst**. Zu den unterstützten Triggern gehören die Reaktion auf Datenänderungen, die Reaktion auf Nachrichten (z. B. Ereignis-Hubs), die planmäßige Ausführung oder die Ausführung einer HTTP-Anfrage.
 
-Stellen Sie sicher, dass Ihr Visual Studio Code-Projekt geöffnet und ausgeführt wird.
+Azure Functions ist ein Server-loser Compute-Dienst, mit dem Sie ereignisbasierten Code ausführen können, ohne Infrastruktur explizit bereitstellen oder verwalten zu müssen.
 
-Informationen zum Starten/Stoppen/Neustart Ihrer Azure-Funktion in Visual Studio Code finden Sie in den folgenden Übungen:
+Azure Event Hub ist mit Azure Functions für eine Server-lose Architektur integriert.
 
-- [Übung 13.5.4 - Azure-Projekt starten](./ex5.md)
-- [Übung 13.5.5 - Azure-Projekt beenden](./ex5.md)
+## Öffnen Sie Visual Studio Code und melden Sie sich bei Azure an.
 
-Das **Terminal** Ihres Visual Studio-Codes sollte in etwa so aussehen:
+Visual Studio Code macht es einfach...
 
-```code
-[2022-02-23T05:03:41.429Z] Worker process started and initialized.
-[2022-02-23T05:03:41.484Z] Debugger attached.
-[2022-02-23T05:03:46.401Z] Host lock lease acquired by instance ID '000000000000000000000000D90C881B'.
+- Definieren und Binden von Azure-Funktionen an Event-Hubs
+- lokal testen
+- Bereitstellung auf Azure
+- Ausführung der Remote-Protokollfunktion
+
+### Öffnen von Visual Studio Code
+
+### Anmelden bei Azure
+
+Wenn Sie sich mit Ihrem Azure-Konto anmelden, das Sie in der vorherigen Übung registriert haben, können Sie mit Visual Studio Code alle Event Hub-Ressourcen finden und binden.
+
+Öffnen Sie Visual Studio Code und klicken Sie auf das Symbol **Azure** .
+
+Wählen Sie dann **Anmelden bei Azure** aus:
+
+![3-01-vsc-open.png](./images/301vscopen.png)
+
+Sie werden zu Ihrem Browser weitergeleitet, um sich anzumelden. Denken Sie daran, das Azure-Konto auszuwählen, das Sie zur Registrierung verwendet haben.
+
+Wenn der folgende Bildschirm in Ihrem Browser angezeigt wird, sind Sie bei Visual Code Studio angemeldet:
+
+![3-03-vsc-login-ok.png](./images/303vscloginok.png)
+
+Kehren Sie zu Visual Code Studio zurück (Sie sehen den Namen Ihres Azure-Abonnements, z. B. **Azure subscription 1**):
+
+![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
+## Erstellen eines Azure-Projekts
+
+Klicken Sie auf **Funktionsprojekt erstellen..**:
+
+![3-05-vsc-create-project.png](./images/vsc2.png)
+
+Wählen Sie einen lokalen Ordner Ihrer Wahl aus, um das Projekt zu speichern, und klicken Sie auf **Auswählen**:
+
+![3-06-vsc-select-folder.png](./images/vsc3.png)
+
+Geben Sie nun den Assistenten zur Projekterstellung ein. Klicken Sie auf **Javascript** als Sprache für Ihr Projekt:
+
+![3-07-vsc-select-language.png](./images/vsc4.png)
+
+Wählen Sie dann **Modell v4** aus.
+
+![3-07-vsc-select-language.png](./images/vsc4a.png)
+
+Wählen Sie **Azure Event Hub Trigger** als erste Funktionsvorlage Ihres Projekts aus:
+
+![3-08-vsc-function-template.png](./images/vsc5.png)
+
+Geben Sie einen Namen für Ihre Funktion ein, verwenden Sie das folgende Format: `--aepUserLdap---aep-event-hub-trigger` und drücken Sie die Eingabetaste:
+
+![3-09-vsc-function-name.png](./images/vsc6.png)
+
+Wählen Sie **Neue lokale App-Einstellung erstellen**:
+
+![3-10-vsc-function-local-app-setting.png](./images/vsc7.png)
+
+Klicken Sie auf , um den zuvor erstellten Event Hub-Namespace mit dem Namen `--aepUserLdap---aep-enablement` auszuwählen.
+
+![3-11-vsc-function-select-namespace.png](./images/vsc8.png)
+
+Klicken Sie anschließend auf , um den zuvor erstellten Event Hub mit dem Namen `--aepUserLdap---aep-enablement-event-hub` auszuwählen.
+
+![3-12-vsc-function-select-eventhub.png](./images/vsc9.png)
+
+Klicken Sie auf , um **RootManageSharedAccessKey** als Hub-Richtlinie für Ereignisse auszuwählen:
+
+![3-13-vsc-function-select-eventhub-policy.png](./images/vsc10.png)
+
+Wählen Sie **Zum Arbeitsbereich hinzufügen** aus, um das Projekt zu öffnen:
+
+![3-15-vsc-project-add-to-workspace.png](./images/vsc12.png)
+
+Sie können dann eine Nachricht wie diese bekommen. Klicken Sie in diesem Fall auf **Ja, ich vertraue den Autoren**.
+
+![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
+
+Nachdem Sie das Projekt erstellt haben, klicken Sie auf **index.js** , damit die Datei im Editor geöffnet wird:
+
+![3-16-vsc-open-index-js.png](./images/vsc13.png)
+
+Die von Adobe Experience Platform an Ihren Event Hub gesendete Payload enthält Zielgruppen-IDs:
+
+```json
+[{
+"segmentMembership": {
+"ups": {
+"ca114007-4122-4ef6-a730-4d98e56dce45": {
+"lastQualificationTime": "2020-08-31T10:59:43Z",
+"status": "realized"
+},
+"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+},
+"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+}
+}
+},
+"identityMap": {
+"ecid": [{
+"id": "08130494355355215032117568021714632048"
+}]
+}
+}]
 ```
 
-![6-01-vsc-ready.png](./images/vsc31.png)
+Ersetzen Sie den Code in der index.js-Datei Ihres Visual Studio-Codes durch den unten stehenden Code. Dieser Code wird jedes Mal ausgeführt, wenn die Echtzeit-Kundendatenplattform Zielgruppenqualifikationen an Ihr Event Hub-Ziel sendet. In unserem Beispiel geht es im Code nur darum, die empfangene Payload anzuzeigen und zu verbessern. Sie können sich aber jede Art von Funktion vorstellen, um Zielgruppenqualifikationen in Echtzeit zu verarbeiten.
 
-## 2.4.6.2 Luma-Website laden
+```javascript
+// Marc Meewis - Solution Consultant Adobe - 2020
+// Adobe Experience Platform Enablement - Module 2.4
 
-Wechseln Sie zu [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf Ihr Website-Projekt, um es zu öffnen.
+// Main function
+// -------------
+// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
+// Eventhub destination
+// This function enriched the received audience payload with the name of the audience. 
+// You can replace this function with any logic that is require to process and deliver
+// Adobe Experience Platform audiences in real-time to any application or platform that 
+// would need to act upon an AEP audience qualification.
+// 
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+module.exports = async function (context, eventHubMessages) {
 
-Sie können nun den unten stehenden Fluss zum Zugriff auf die Website ausführen. Klicken Sie auf **Integrationen**.
+    return new Promise (function (resolve, reject) {
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web1.png)
+        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
 
-Wählen Sie auf der Seite **Integrationen** die Datenerfassungseigenschaft aus, die in Übung 0.1 erstellt wurde.
+        resolve();
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web2.png)
+    });    
 
-Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
+};
+```
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+Das Ergebnis sollte wie folgt aussehen:
 
-Öffnen Sie ein neues Inkognito-Browserfenster.
+![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+## Azure-Projekt ausführen
 
-Fügen Sie die URL Ihrer Demo-Website ein, die Sie im vorherigen Schritt kopiert haben. Sie werden dann aufgefordert, sich mit Ihrer Adobe ID anzumelden.
+Jetzt ist es an der Zeit, Ihr Projekt auszuführen. In dieser Phase werden wir das Projekt nicht auf Azure bereitstellen. Sie wird lokal im Debug-Modus ausgeführt. Wählen Sie das Symbol Ausführen und danach den grünen Pfeil aus.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![3-17-vsc-run-project.png](./images/vsc14.png)
 
-Wählen Sie Ihren Kontotyp aus und schließen Sie den Anmeldevorgang ab.
+Wenn Sie Ihr Projekt zum ersten Mal im Debug-Modus ausführen, müssen Sie ein Azure-Speicherkonto anhängen, auf **Speicherkonto auswählen** klicken und dann das zuvor erstellte Speicherkonto mit dem Namen `--aepUserLdap--aepstorage` auswählen.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+Ihr Projekt läuft jetzt und listet Ereignisse auf dem Ereignis-Hub auf. In der nächsten Übung werden Sie das Verhalten auf der Demowebsite von CitiSignal demonstrieren, das Sie für Zielgruppen qualifiziert. Daher erhalten Sie eine Payload für die Zielgruppenqualifizierung im Terminal Ihrer Event Hub-Trigger-Funktion.
 
-Sie sehen dann Ihre Website in einem Inkognito-Browser-Fenster geladen. Für jede Demonstration müssen Sie ein neues Inkognito-Browser-Fenster verwenden, um Ihre Demo-Website-URL zu laden.
+![3-24-vsc-application-stop.png](./images/vsc18.png)
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+## Azure-Projekt beenden
 
-## 2.4.6.3 Für Ihr Interesse am Segment Ausrüstung qualifizieren
+Um Ihr Projekt zu stoppen, navigieren Sie zur Lenu **AUFRUF STACK** in VSC, klicken Sie auf den Pfeil in Ihrem laufenden Projekt und klicken Sie dann auf **Stoppen**.
 
-Navigieren Sie einmal zur Seite **Ausrüstung** und **laden Sie sie nicht neu oder aktualisieren Sie sie nicht**. Diese Aktion sollte Sie für Ihr `--aepUserLdap-- - Interest in Equipment` -Segment qualifizieren.
+![3-24-vsc-application-stop.png](./images/vsc17.png)
 
-![6-04-luma-telco-nav-sports.png](./images/luma1.png)
-
-Öffnen Sie dazu das Bedienfeld Profil-Viewer . Sie sollten jetzt Mitglied der `--aepUserLdap-- - Interest in Equipment` sein. Wenn Ihre Segmentmitgliedschaften noch nicht in Ihrem Profil-Viewer-Bedienfeld aktualisiert wurden, klicken Sie auf die Schaltfläche &quot;Neu laden&quot;.
-
-![6-05-luma-telco-nav-broad.png](./images/luma2.png)
-
-Wechseln Sie zurück zu Visual Studio Code und sehen Sie sich die Registerkarte **TERMINAL** an. Sie sollten eine Liste der Segmente für Ihre spezifische **ECID** sehen. Diese Aktivierungs-Payload wird an Ihren Ereignis-Hub bereitgestellt, sobald Sie sich für das `--aepUserLdap-- - Interest in Equipment` -Segment qualifizieren.
-
-Wenn Sie sich die Segment-Payload genauer ansehen, können Sie sehen, dass `--aepUserLdap-- - Interest in Equipment` den Status **realisiert** aufweist.
-
-Der Segmentstatus **realisiert** bedeutet, dass unser Profil gerade in das Segment eingetreten ist. Der Status **vorhandene** bedeutet, dass sich unser Profil weiterhin im Segment befindet.
-
-![6-06-vsc-activation-alized.png](./images/luma3.png)
-
-## 2.4.6.4 Zum zweiten Mal die Seite &quot;Ausrüstung&quot;besuchen
-
-Führen Sie eine feste Aktualisierung der Seite **Ausrüstung** durch.
-
-![6-07-back-to-sports.png](./images/luma1.png)
-
-Wechseln Sie jetzt zurück zu Visual Studio Code und überprüfen Sie Ihre Registerkarte **TERMINAL**. Sie werden sehen, dass Ihr Segment noch vorhanden ist, aber jetzt den Status **existiert** aufweist, was bedeutet, dass unser Profil weiterhin im Segment enthalten ist.
-
-![6-08-vsc-activation-existing.png](./images/luma4.png)
-
-## 2.4.6.5 Zum dritten Mal die Seite &quot;Sport&quot;besuchen
-
-Wenn Sie die Seite **Sport** zum dritten Mal erneut aufrufen, findet keine Aktivierung statt, da keine Statusänderung aus Segmentsicht erfolgt.
-
-Segmentaktivierungen treten nur dann auf, wenn sich der Status des Segments ändert:
-
-![6-09-segment-state-change.png](./images/6-09-segment-state-change.png)
-
-Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
+Nächster Schritt: [2.4.7 End-to-End-Szenario](./ex7.md)
 
 [Zurück zu Modul 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

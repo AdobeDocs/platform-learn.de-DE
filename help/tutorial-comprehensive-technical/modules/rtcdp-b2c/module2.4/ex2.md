@@ -1,119 +1,126 @@
 ---
-title: Segmentaktivierung für Microsoft Azure Event Hub - Einrichten des Ereignis-Hub-RTCDP-Ziels in Adobe Experience Platform
-description: Segmentaktivierung für Microsoft Azure Event Hub - Einrichten des Ereignis-Hub-RTCDP-Ziels in Adobe Experience Platform
+title: Segmentaktivierung für Microsoft Azure Event Hub - Einrichten von Event Hub in Azure
+description: Segmentaktivierung für Microsoft Azure Event Hub - Einrichten von Event Hub in Azure
 kt: 5342
 doc-type: tutorial
 exl-id: 0c2e94ec-00e8-4f47-add7-ca3a08151225
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '579'
 ht-degree: 1%
 
 ---
 
-# 2.4.2 Konfigurieren des Azure Event Hub-Ziels in Adobe Experience Platform
+# 2.4.2 Konfigurieren der Microsoft Azure EventHub-Umgebung
 
-## 2.4.2.1 Erforderliche Azure-Verbindungsparameter identifizieren
+Azure Event Hubs ist ein hochskalierbarer Publish-Subscribe-Service, der Millionen von Ereignissen pro Sekunde aufnehmen und in mehrere Anwendungen streamen kann. Auf diese Weise können Sie die enormen Datenmengen, die von Ihren verbundenen Geräten und Anwendungen erzeugt werden, verarbeiten und analysieren.
 
-Um ein Event Hub-Ziel in Adobe Experience Platform zu definieren, benötigen Sie Folgendes:
+## Was sind Azure Event Hubs?
 
-- Ereignis-Hubs-Namespace
-- Ereignis-Hub
-- Azure SAS-Schlüsselname
-- Azure-SAS-Schlüssel
+Azure Event Hubs ist eine Big Data-Streaming-Plattform und ein Dienst zur Erfassung von Ereignissen. Es kann Millionen von Ereignissen pro Sekunde empfangen und verarbeiten. An einen Ereignis-Hub gesendete Daten können mithilfe eines beliebigen Echtzeit-Analytics-Anbieters oder von Batch-/Speicheradaptern umgewandelt und gespeichert werden.
 
-Event Hub- und EventHub-Namespace wurden in der vorherigen Übung definiert: [Übung 1 - Einrichten von Event Hub in Azure](./ex1.md)
+Ereignis-Hubs stellen die **Haustür** für eine Ereignis-Pipeline dar, die in Lösungsarchitekturen häufig als Ereignisaufnahme bezeichnet wird. Ein Ereignisaufruf ist eine Komponente oder ein Dienst, die bzw. der zwischen Ereignis-Herausgebern (wie Adobe Experience Platform RTCDP) und Ereigniskonsumenten sitzt, um die Produktion eines Ereignisstreams von der Nutzung dieser Ereignisse zu trennen. Event Hubs bietet eine einheitliche Streaming-Plattform mit Zeitaufbewahrungspuffer, wodurch Ereignisproduzenten von Ereigniskonsumenten abgekoppelt werden.
 
-### Ereignis-Hubs-Namespace
+## Erstellen eines Ereignis-Hubs-Namespace
 
-Um die oben genannten Informationen in Azure Portal zu suchen, navigieren Sie zu [https://portal.azure.com/#home](https://portal.azure.com/#home). Stellen Sie sicher, dass Sie das richtige Azure-Konto verwenden.
+Wechseln Sie zu [https://portal.azure.com/#home](https://portal.azure.com/#home) und wählen Sie **Ressource erstellen** aus.
 
-Wählen Sie **Alle Ressourcen** in Azure Portal aus:
+![1-01-open-azure-portal.png](./images/101openazureportal.png)
 
-![2-01-azure-all-resources.png](./images/2-01-azure-all-resources.png)
+Geben Sie im Ressourcenbildschirm **Ereignis** in die Suchleiste ein. Suchen Sie die Karte **Ereignis-Hubs** , klicken Sie auf **Erstellen** und klicken Sie dann auf **Ereignis-Hubs**.
 
-### Ereignis-Hub
+![1-02-search-event-hubs.png](./images/102searcheventhubs.png)
 
-Suchen Sie nach einer Ressource mit dem Ressourcentyp **Ereignis-Hubs-Namespace**. Wenn Sie die in der vorherigen Übung verwendeten Namenskonventionen befolgt haben, lautet Ihr Ereignis-Hubs-Namespace `--aepUserLdap---aep-enablement`. Notieren Sie sich das, Sie werden es in der nächsten Übung brauchen.
+Wenn Sie in Azure zum ersten Mal eine Ressource erstellen, müssen Sie eine neue **Ressourcengruppe** erstellen. Wenn Sie bereits über eine Ressourcengruppe verfügen, können Sie diese auswählen (oder eine neue erstellen).
 
-![2-02-select-event-hubs-namespace.png](./images/2-02-select-event-hubs-namespace.png)
+Klicken Sie auf **Neu erstellen** und benennen Sie Ihre Gruppe `--aepUserLdap---aep-enablement`. Klicken Sie auf **OK**.
 
-Klicken Sie auf den Namen des Ereignis-Hubs-Namespace , um die Details abzurufen:
+![1-04-create-resource-group.png](./images/104createresourcegroup.png)
 
-![2-03-select-event-hub.png](./images/2-03-select-event-hub.png)
+Füllen Sie die übrigen Felder wie angegeben aus:
 
-Wählen Sie **Ereignis-Hub** aus, um eine Liste der Ereignis-Hub zu erhalten, die in Ihrem Ereignis-Hub-Namespace definiert sind. Wenn Sie die in der vorherigen Übung verwendeten Namenskonventionen befolgt haben, finden Sie einen Ereignis-Hub mit dem Namen `--aepUserLdap---aep-enablement-event-hub`. Notieren Sie sich das, Sie werden es in der nächsten Übung brauchen.
+- Namespace : Definieren Sie Ihren Namespace. Er muss eindeutig sein. Verwenden Sie das folgende Muster `--aepUserLdap---aep-enablement`
+- Standort: Wählen Sie einen beliebigen Standort aus.
+- Preisklasse: **Einfach**
+- Durchsatzeinheiten: **1**
 
-![2-04-event-hub-selected.png](./images/2-04-event-hub-selected.png)
+Klicken Sie auf **Überprüfen und erstellen**.
 
-### SAS-Schlüsselname
+![1-05-create-namespace.png](./images/105createnamespace.png)
 
-Wählen Sie **Freigegebene Zugriffsrichtlinien** für Ihren **Ereignis-Hubs-Namespace** aus.
+Klicken Sie auf **Erstellen**.
 
-![2-05-select-sas.png](./images/2-05-select-sas.png)
+![1-07-namespace-create.png](./images/107namespacecreate.png)
 
-Daraufhin wird eine Liste der Richtlinien für den freigegebenen Zugriff angezeigt. Der SAS-Schlüssel, nach dem wir suchen, ist **RootManageSharedAccessKey**. Dies ist der Name des SAS-Schlüssels. Schreib es auf.
+Die Bereitstellung Ihrer Ressourcengruppe kann 1-2 Minuten dauern. Nach erfolgreichem Abschluss wird der folgende Bildschirm angezeigt:
 
-![2-06-sas-overview.png](./images/2-06-sas-overview.png)
+![1-08-namespace-deploy.png](./images/108namespacedeploy.png)
 
-### SAS-Schlüsselwert
+## Einrichten des Ereignis-Hub in Azure
 
-Klicken Sie auf **RootManageSharedAccessKey** , um den SAS-Schlüsselwert abzurufen. Drücken Sie dann das Symbol **In die Zwischenablage kopieren** , um die **Primäre Taste** zu kopieren:
+Wechseln Sie zu [https://portal.azure.com/#home](https://portal.azure.com/#home) und wählen Sie **Alle Ressourcen** aus.
 
-![2-07-sas-key-value.png](./images/2-07-sas-key-value.png)
+![1-09-all-resources.png](./images/109allresources.png)
 
-### Zielwertzusammenfassung
+Klicken Sie in der Liste der Ressourcen auf Ihren `--aepUserLdap---aep-enablement` Ereignis-Hubs-Namespace:
 
-An dieser Stelle sollten Sie alle Werte identifiziert haben, die zum Definieren des Azure Event Hub-Ziels in der Echtzeit-Kundendatenplattform von Adobe Experience Platform erforderlich sind.
+![1-10-list-resources.png](./images/110listresources.png)
 
-| Zielattribut-Name | Zielattributwert | Beispielwert |
-|---|---|---|
-| sasKeyName | SAS-Schlüsselname | RootManageSharedAccessKey |
-| sasKey | SAS-Schlüsselwert | srREx9ShJG1Rv7f/.. |
-| Namespace | Ereignis-Hubs-Namespace | `--aepUserLdap---aep-enablement` |
-| eventHubName | Ereignis-Hub | `--aepUserLdap---aep-enablement-event-hub` |
+Wechseln Sie im Detailbildschirm von `--aepUserLdap---aep-enablement` zu **Entitäten** und klicken Sie auf **Ereignis-Hubs**:
 
-## 2.4.2.2 Azure Event Hub-Ziel in Adobe Experience Platform erstellen
+![1-11-eventhub-namespace.png](./images/111eventhubnamespace.png)
 
-Melden Sie sich bei Adobe Experience Platform an, indem Sie diese URL verwenden: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Klicken Sie auf **+ Event Hub**.
 
-Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
+![1-12-add-event-hub.png](./images/112addeventhub.png)
 
-![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
+Verwenden Sie `--aepUserLdap---aep-enablement-event-hub` als Namen und klicken Sie auf **Überprüfen und Erstellen**.
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Nachdem Sie die entsprechende Sandbox ausgewählt haben, wird die Bildschirmänderung angezeigt und Sie befinden sich jetzt in Ihrer dedizierten Sandbox.
+![1-13-create-event-hub.png](./images/113createeventhub.png)
 
-![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
+Klicken Sie auf **Erstellen**.
 
-Wechseln Sie zu **Ziele** und gehen Sie dann zu **Katalog**.
+![1-13-create-event-hub.png](./images/113createeventhub1.png)
 
-![Datenaufnahme](./images/sb2a.png)
+In **Ereignis-Hub** unter Ihrem Ereignis-Hub-Namespace wird nun Ihr **Ereignis-Hub** aufgelistet.
 
-Wählen Sie **Cloud-Speicher** und gehen Sie zu **Azure Event Hub** und klicken Sie auf **Einrichten** oder **Konfigurieren**:
+![1-14-event-hub-list.png](./images/114eventhublist.png)
 
-![2-08-list-destinations.png](./images/2-08-list-destinations.png)
+## Einrichten Ihres Azure Storage-Kontos
 
-Füllen Sie die Zielwerte aus, die Sie in der vorherigen Übung erfasst haben. Klicken Sie anschließend auf **Mit Ziel verbinden**.
+Um Ihre Azure Event Hub-Funktion in späteren Übungen zu debuggen, müssen Sie im Rahmen der Einrichtung Ihres Visual Studio Code-Projekts ein Azure Storage-Konto bereitstellen. Sie erstellen jetzt dieses Azure Storage-Konto.
 
-![2-09-destination-values.png](./images/2-09-destination-values.png)
+Wechseln Sie zu &quot;[https://portal.azure.com/#home](https://portal.azure.com/#home)&quot;und wählen Sie &quot;**Erstellen einer Ressource**&quot;.
 
-Wenn Ihre Anmeldedaten korrekt waren, sehen Sie eine Bestätigung: **Verbunden**.
+![1-15-event-hub-storage.png](./images/115eventhubstorage.png)
 
-![2-09-destination-values.png](./images/2-09-destination-valuesa.png)
+Geben Sie **Speicherkonto** in die Suche ein, suchen Sie die Karte für **Speicherkonto** und klicken Sie auf **Speicherkonto**.
 
-Geben Sie nun den Namen und die Beschreibung im Format `--aepUserLdap---aep-enablement` ein. Geben Sie den **eventHubName** ein (siehe vorherige Übung, sieht wie folgt aus: `--aepUserLdap---aep-enablement-event-hub`) und klicken Sie auf **Weiter**.
+![1-16-event-hub-search-storage.png](./images/116eventhubsearchstorage.png)
 
-![2-10-create-destination.png](./images/2-10-create-destination.png)
+Geben Sie Ihre **Ressourcengruppe** (erstellt zu Beginn dieser Übung), verwenden Sie `--aepUserLdap--aepstorage` als Namen Ihres Speicherkontos und wählen Sie **Lokal redundanter Speicher (LRS)** aus, und klicken Sie dann auf **Überprüfen und erstellen**.
 
-Klicken Sie auf **Speichern und beenden**.
+![1-18-event-hub-create-review-storage.png](./images/118eventhubcreatereviewstorage.png)
 
-![2-11-save-exit-activation.png](./images/2-11-save-exit-activation.png)
+Klicken Sie auf **Erstellen**.
 
-Ihr Ziel wurde jetzt in Adobe Experience Platform erstellt und verfügbar gemacht.
+![1-19-event-hub-submit-storage.png](./images/119eventhubsubmitstorage.png)
 
-![2-12-destination-created.png](./images/2-12-destination-created.png)
+Die Erstellung unseres Speicherkontos dauert einige Sekunden:
 
-Nächster Schritt: [2.4.3 Segment erstellen](./ex3.md)
+![1-20-event-hub-deploy-storage.png](./images/120eventhubdeploystorage.png)
+
+Wenn Sie fertig sind, wird auf Ihrem Bildschirm die Schaltfläche **Gehe zu Ressource** angezeigt.
+
+Klicken Sie auf **Home**.
+
+![1-21-event-hub-deploy-ready-storage.png](./images/121eventhubdeployreadystorage.png)
+
+Ihr Speicherkonto ist jetzt unter **Letzte Ressourcen** sichtbar.
+
+![1-22-event-hub-deploy-resources-list.png](./images/122eventhubdeployresourceslist.png)
+
+Nächster Schritt: [2.4.3 Konfigurieren Sie Ihr Azure Event Hub-Ziel in Adobe Experience Platform](./ex3.md)
 
 [Zurück zu Modul 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

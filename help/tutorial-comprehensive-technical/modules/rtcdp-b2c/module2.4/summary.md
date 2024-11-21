@@ -1,9 +1,10 @@
 ---
-title: Segmentaktivierung für Microsoft Azure Event Hub - Zusammenfassung und Vorteile
-description: Segmentaktivierung für Microsoft Azure Event Hub - Zusammenfassung und Vorteile
+title: Audience Activation zu Microsoft Azure Event Hub - Übersicht und Vorteile
+description: Audience Activation zu Microsoft Azure Event Hub - Übersicht und Vorteile
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 3b598ffc-875e-468d-b91c-882062e8203f
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%
@@ -19,13 +20,13 @@ In diesem Modul haben Sie erfahren, wie Sie eine Azure Event Hub-Instanz einrich
 
 Lassen Sie uns die Vorteile der Integration von Adobe Experience Platform mit Microsoft Azure Event Hub hervorheben:
 
-- Mit Microsoft Azure Event Hub as a Adobe Experience Platform Destination können Sie die Segmentqualifizierung in Echtzeit erfassen und mithilfe einer Azure Event Hub-Funktion verarbeiten. Mit einer solchen Azure Event Hub-Funktion können Sie eine beliebige Art von benutzerdefinierten Segmentaktivierungs-Handler erstellen und daher jede Art von Ziel eines Drittanbieters integrieren.
+- Mit Microsoft Azure Event Hub as a Adobe Experience Platform Destination können Sie die Zielgruppenqualifizierung in Echtzeit erfassen und mithilfe einer Azure Event Hub-Funktion verarbeiten. Mit einer solchen Azure Event Hub-Funktion können Sie eine beliebige Art von benutzerdefinierten Zielgruppen-Aktivierungs-Handler erstellen und als solche jede Art von Ziel von Drittanbietern integrieren.
 
-- Ziele werden zwar nur durch bestimmte Segmente ausgelöst, die Aktivierungs-Payload enthält jedoch alle Segmente, für die ein bestimmtes Profil qualifiziert ist.
+- Ziele werden zwar nur durch bestimmte Zielgruppen ausgelöst, doch enthält die Aktivierungs-Payload alle Zielgruppen, für die sich das jeweilige Profil qualifiziert.
 
-- Ein Segment wird nur dann aktiviert, wenn sich sein Status ändert. Wenn beispielsweise ein Profil in einem Zeitraum von drei Monaten viermal für ein Segment qualifiziert ist, werden nur die ersten beiden aktiviert. Die erste ist eine Statusänderung von zu **realisiert**, die zweite wird durch eine Statusänderung von **realisiert** zu **existierend** ausgelöst.
+- Eine Zielgruppe Trigger nur dann eine Aktivierung, wenn sich ihr Status ändert. Wenn beispielsweise ein Profil in einem Zeitraum von drei Monaten viermal für eine Zielgruppe qualifiziert ist, werden nur die ersten beiden aktiviert. Die erste ist eine Statusänderung von zu **realisiert**, die zweite wird durch eine Statusänderung von **realisiert** zu **existierend** ausgelöst.
 
-- Beim Aktivieren von Segmenten für bekannte Profile wird eine vollständige Identitätszuordnung in die Aktivierungs-Payload eingefügt. Ihre Azure-Funktion kann eine der verfügbaren Identitäten verwenden, um die Segmente einem in einer Drittanbieteranwendung verwalteten Profil zuzuordnen, während die Kunden-ID der Anwendung verwendet wird.
+- Beim Aktivieren von Zielgruppen für bekannte Profile wird eine vollständige Identitätszuordnung in die Aktivierungs-Payload eingefügt. Ihre Azure-Funktion kann eine der verfügbaren Identitäten verwenden, um die Zielgruppen einem in einer Drittanbieteranwendung verwalteten Profil zuzuordnen, während die Kunden-ID der Anwendung verwendet wird.
 
 - In diesem Modul wurde die Ereignis-Hub-Funktion lokal bereitgestellt (Debug-Modus in Visual Studio Code) und bietet Ihnen zahlreiche Fehlerbehebungs- und Debugoptionen.
 
