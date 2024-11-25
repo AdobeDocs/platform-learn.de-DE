@@ -3,28 +3,33 @@ title: Installieren und Konfigurieren von Kafka Connect und Adobe Experience Pla
 description: Installieren und Konfigurieren von Kafka Connect und Adobe Experience Platform Sink Connector
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 93ded4f9-0179-4186-9601-52f479350075
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
 
 # 2.6.4 Installieren und Konfigurieren von Kafka Connect und Adobe Experience Platform Sink Connector
 
-## 2.6.4.1 Adobe Experience Platform Sink Connector herunterladen
+## Adobe Experience Platform Sink Connector herunterladen
 
 Rufen Sie [https://github.com/adobe/experience-platform-streaming-connect/releases](https://github.com/adobe/experience-platform-streaming-connect/releases) auf und laden Sie die neueste offizielle Version des Adobe Experience Platform Sink Connectors herunter.
 
 ![Kafka](./images/kc1.png)
 
-Platzieren Sie die Download-Datei **streaming-connect-sink-0.0.14-java-11.jar** auf Ihren Desktop.
+Laden Sie die Datei **streaming-connect-sink-0.0.27-java-11.jar** herunter.
+
+![Kafka](./images/kc1a.png)
+
+Platzieren Sie die Download-Datei **streaming-connect-sink-0.0.27-java-11.jar** auf Ihren Desktop.
 
 ![Kafka](./images/kc2.png)
 
-## 2.6.4.2 Kafka Connect konfigurieren
+## Konfigurieren von Kafka Connect
 
-Wechseln Sie zum Ordner auf Ihrem Desktop mit dem Namen **Kafka_AEP** und navigieren Sie zum Ordner `kafka_2.13-3.1.0/config`.
+Wechseln Sie zum Ordner auf Ihrem Desktop mit dem Namen **Kafka_AEP** und navigieren Sie zum Ordner `kafka_2.13-3.9.0/config`.
 Öffnen Sie in diesem Ordner die Datei **connect-distributed.properties** mit einem beliebigen Texteditor.
 
 ![Kafka](./images/kc3a.png)
@@ -44,7 +49,7 @@ Gehen Sie anschließend zurück zum Ordner &quot;`kafka_2.13-3.1.0`&quot;, erste
 
 ![Kafka](./images/kc4.png)
 
-Klicken Sie mit der rechten Maustaste auf den Ordner und klicken Sie auf **Neues Terminal im Ordner**.
+Klicken Sie mit der rechten Maustaste auf den neuen Ordner und klicken Sie auf **Neues Terminal im Ordner**.
 
 ![Kafka](./images/kc5.png)
 
@@ -52,19 +57,19 @@ Dann wirst du das sehen. Geben Sie den Befehl `pwd` ein, um den vollständigen P
 
 ![Kafka](./images/kc6.png)
 
-Gehen Sie zurück zum Texteditor, wechseln Sie zur Datei **connect-distributed.properties** und scrollen Sie zur letzten Zeile herunter (Zeile 86 im Screenshot). Sie sollten den Kommentar für die mit `# plugin.path=` beginnende Zeile aufheben und den vollständigen Pfad zum Ordner `connectors` einfügen. Das Ergebnis sollte in etwa wie folgt aussehen:
+Gehen Sie zurück zum Texteditor, wechseln Sie zur Datei **connect-distributed.properties** und scrollen Sie zur letzten Zeile herunter (Zeile 89 im Screenshot). Sie sollten den Kommentar für die mit `# plugin.path=` beginnende Zeile aufheben (entfernen Sie `#`) und den vollständigen Pfad zum Ordner `connectors` einfügen. Das Ergebnis sollte in etwa wie folgt aussehen:
 
-`plugin.path=/Users/woutervangeluwe/Desktop/Kafka_AEP/kafka_2.13-3.1.0/connectors`
+`plugin.path=/Users/woutervangeluwe/Desktop/Kafka_AEP/kafka_2.13-3.9.0/connectors`
 
 Speichern Sie Ihre Änderungen in der Datei **connect-distribution.properties** und schließen Sie den Texteditor.
 
 ![Kafka](./images/kc7.png)
 
-Kopieren Sie als Nächstes die neueste offizielle Version des Adobe Experience Platform Sink Connectors, die Sie in den Ordner `connectors` heruntergeladen haben. Die zuvor heruntergeladene Datei heißt **streaming-connect-sink-0.0.14-java-11.jar**, Sie können sie einfach in den Ordner `connectors` verschieben.
+Kopieren Sie als Nächstes die neueste offizielle Version des Adobe Experience Platform Sink Connectors, die Sie in den Ordner `connectors` heruntergeladen haben. Die zuvor heruntergeladene Datei heißt **streaming-connect-sink-0.0.27-java-11.jar**, Sie können sie einfach in den Ordner `connectors` verschieben.
 
 ![Kafka](./images/kc8.png)
 
-Als Nächstes öffnen Sie ein neues Terminal-Fenster auf der Ebene des Ordners **kafka_2.13-3.1.0** . Klicken Sie mit der rechten Maustaste auf diesen Ordner und klicken Sie auf **Neues Terminal im Ordner**.
+Als Nächstes öffnen Sie ein neues Terminal-Fenster auf der Ebene des Ordners **kafka_2.13-3.9.0** . Klicken Sie mit der rechten Maustaste auf diesen Ordner und klicken Sie auf **Neues Terminal im Ordner**.
 
 Fügen Sie im Terminal-Fenster den folgenden Befehl ein: `bin/connect-distributed.sh config/connect-distributed.properties` und klicken Sie auf **Enter**. Mit diesem Befehl wird Kafka Connect gestartet und die Bibliothek des Adobe Experience Platform Sink Connectors geladen.
 
@@ -74,7 +79,7 @@ Nach ein paar Sekunden sehen Sie etwas wie Folgendes:
 
 ![Kafka](./images/kc10.png)
 
-## 2.6.4.3 Adobe Experience Platform Sink-Connector mit Postman erstellen
+## Erstellen Ihres Adobe Experience Platform Sink-Connectors mit Postman
 
 Sie können jetzt mit Kafka Connect über Postman interagieren. Laden Sie dazu [diese Postman-Sammlung](./../../../assets/postman/postman_kafka.zip) herunter und entpacken Sie sie auf Ihren lokalen Computer auf dem Desktop. Sie verfügen dann über eine Datei mit dem Namen `Kafka_AEP.postman_collection.json`.
 
@@ -92,7 +97,7 @@ Dann wirst du das sehen. Klicken Sie auf die blaue Schaltfläche **Senden**, nac
 
 ![Kafka](./images/kc11.png)
 
-Um einen Connector zu erstellen, klicken Sie auf , um die zweite Anforderung in der Kafka-Sammlung zu öffnen: **POST AEP Sink Connector erstellen**. Dann wirst du das sehen. In Zeile 11, wo es &quot;**&quot;aep.endpoint&quot;: &quot;&quot;**&quot;heißt, müssen Sie die HTTP-API-Streaming-Endpunkt-URL einfügen, die Sie am Ende der Übung erhalten haben [15.3](./ex3.md). Die URL des HTTP-API-Streaming-Endpunkts sieht wie folgt aus: `https://dcs.adobedc.net/collection/d282bbfc8a540321341576275a8d052e9dc4ea80625dd9a5fe5b02397cfd80dc`.
+Um einen Connector zu erstellen, klicken Sie auf die zweite Anforderung in der Kafka-Sammlung, **POST AEP Sink Connector erstellen** und gehen Sie zu **Hauptteil**. Dann wirst du das sehen. In Zeile 11, wo es &quot;**&quot;aep.endpoint&quot;: &quot;&quot;**&quot;heißt, müssen Sie die URL des HTTP-API-Streaming-Endpunkts einfügen, die Sie am Ende einer der vorherigen Übungen erhalten haben. Die URL des HTTP-API-Streaming-Endpunkts sieht wie folgt aus: `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`.
 
 ![Kafka](./images/kc12a.png)
 
@@ -100,7 +105,7 @@ Nach dem Einfügen sollte der Hauptteil Ihrer Anforderung wie folgt aussehen: Kl
 
 ![Kafka](./images/kc12.png)
 
-Klicken Sie auf die erste Anforderung, **GET Verfügbare Kafka Connect-Connectoren** , um sie erneut zu öffnen, und klicken Sie erneut auf die blaue Schaltfläche **Senden** . Sie werden sehen, dass ein Kafka Connect-Connector erstellt wurde.
+Klicken Sie auf die erste Anforderung, **GET Verfügbare Kafka Connect-Connectoren** , um sie erneut zu öffnen, und klicken Sie erneut auf die blaue Schaltfläche **Senden** . Sie werden sehen, dass ein Kafka Connect-Connector vorhanden ist.
 
 ![Kafka](./images/kc13.png)
 
@@ -108,9 +113,9 @@ Klicken Sie auf die erste Anforderung, **GET Verfügbare Kafka Connect-Connector
 
 ![Kafka](./images/kc14.png)
 
-## 2.6.4.4 Ereignis erstellen
+## Erstellen eines Erlebnisereignisses
 
-Öffnen Sie ein neues Fenster **Terminal** , indem Sie mit der rechten Maustaste auf den Ordner **kafka_2.13-3.1.0** klicken und auf **Neues Terminal im Ordner** klicken.
+Öffnen Sie ein neues Fenster **Terminal** , indem Sie mit der rechten Maustaste auf den Ordner **kafka_2.13-3.9.0** klicken und auf **Neues Terminal im Ordner** klicken.
 
 ![Kafka](./images/kafka11.png)
 
@@ -118,69 +123,11 @@ Geben Sie den folgenden Befehl ein:
 
 `bin/kafka-console-producer.sh --broker-list 127.0.0.1:9092 --topic aep`
 
-![Kafka](./images/kc15.png)
-
 Dann wirst du das sehen. Jede neue Zeile, gefolgt von der Schaltfläche &quot;Enter&quot;, führt dazu, dass eine neue Nachricht an das Thema **aep** gesendet wird.
 
 ![Kafka](./images/kc16.png)
 
 Jetzt können Sie eine Nachricht senden, die vom Adobe Experience Platform Sink Connector genutzt wird und in Echtzeit in Adobe Experience Platform aufgenommen wird.
-
-Lass uns ein kleines Demo machen, um das zu testen.
-
-Wechseln Sie zu [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf Ihr Website-Projekt, um es zu öffnen.
-
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-Klicken Sie auf der Seite **Screens** auf **Ausführen**.
-
-![DSN](./../../gettingstarted/gettingstarted/images/web2.png)
-
-Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
-
-![DSN](./../../gettingstarted/gettingstarted/images/web3.png)
-
-Öffnen Sie ein neues Inkognito-Browserfenster.
-
-![DSN](./../../gettingstarted/gettingstarted/images/web4.png)
-
-Fügen Sie die URL Ihrer Demo-Website ein, die Sie im vorherigen Schritt kopiert haben. Sie werden dann aufgefordert, sich mit Ihrer Adobe ID anzumelden.
-
-![DSN](./../../gettingstarted/gettingstarted/images/web5.png)
-
-Wählen Sie Ihren Kontotyp aus und schließen Sie den Anmeldevorgang ab.
-
-![DSN](./../../gettingstarted/gettingstarted/images/web6.png)
-
-Sie sehen dann Ihre Website in einem Inkognito-Browser-Fenster geladen. Für jede Demonstration müssen Sie ein neues Inkognito-Browser-Fenster verwenden, um Ihre Demo-Website-URL zu laden.
-
-![DSN](./../../gettingstarted/gettingstarted/images/web7.png)
-
-Klicken Sie auf das Adobe-Logo-Symbol oben links im Bildschirm, um den Profilanzeige zu öffnen.
-
-![Demo](./../../../modules/datacollection/module1.2/images/pv1.png)
-
-Sehen Sie sich das Bedienfeld &quot;Profil-Viewer&quot;und das Echtzeit-Kundenprofil mit der **Experience Cloud-ID** als primäre ID für diesen derzeit unbekannten Kunden an.
-
-![Demo](./../../../modules/datacollection/module1.2/images/pv2.png)
-
-Gehen Sie zur Seite Registrieren/Anmelden . Klicken Sie auf **KONTO ERSTELLEN**.
-
-![Demo](./../../../modules/datacollection/module1.2/images/pv9.png)
-
-Füllen Sie Ihre Details aus und klicken Sie auf **Registrieren** . Danach werden Sie zur vorherigen Seite weitergeleitet.
-
-![Demo](./../../../modules/datacollection/module1.2/images/pv10.png)
-
-Öffnen Sie das Bedienfeld Profil-Viewer und wechseln Sie zum Echtzeit-Kundenprofil. Im Bedienfeld &quot;Profil-Viewer&quot;sollten alle Ihre personenbezogenen Daten angezeigt werden, z. B. Ihre neu hinzugefügten E-Mail- und Telefonkennungen.
-
-![Demo](./../../../modules/datacollection/module1.2/images/pv11.png)
-
-Möglicherweise werden einige Erlebnisereignisse auf der Grundlage vergangener Aktivitäten angezeigt.
-
-![Kafka](./images/kc19.png)
-
-Ändern wir das und senden ein Callcenter-Erlebnisereignis von Kafka nach Adobe Experience Platform.
 
 Nehmen Sie die folgende Beispielnutzlast für Erlebnisereignisse und kopieren Sie sie in einen Texteditor.
 
@@ -207,7 +154,7 @@ Nehmen Sie die folgende Beispielnutzlast für Erlebnisereignisse und kopieren Si
     "xdmEntity": {
       "eventType": "callCenterInteractionKafka",
       "_id": "",
-      "timestamp": "2022-02-23T09:54:12.232Z",
+      "timestamp": "2024-11-25T09:54:12.232Z",
       "_experienceplatform": {
         "identification": {
           "core": {
@@ -233,25 +180,25 @@ Dann wirst du das sehen. Sie müssen zwei Felder manuell aktualisieren:
 
 - **_id**: Setzen Sie es auf eine zufällige ID, etwa `--aepUserLdap--1234`
 - **timestamp**: Aktualisieren Sie den Zeitstempel auf das aktuelle Datum und die aktuelle Uhrzeit
-- **phoneNumber**: Geben Sie die phoneNumber des Kontos ein, das gerade auf der Demowebsite erstellt wurde. Sie finden sie im Bedienfeld &quot;Profil-Viewer&quot;unter **Identitäten**.
+- **phoneNumber**: Geben Sie die phoneNumber des Kontos ein, das zuvor auf der Demowebsite erstellt wurde. Sie finden sie im Bedienfeld &quot;Profil-Viewer&quot;unter **Identitäten**.
 
 Sie müssen auch diese Felder überprüfen und gegebenenfalls aktualisieren:
+
 - **datasetId**: Sie müssen die Datensatz-ID für das Datensatz-Demo-System - Ereignis-Datensatz für Callcenter (Global v1.1) kopieren.
+
+![Kafka](./images/kc20ds.png)
+
 - **imsOrgID**: Ihre IMS-Organisations-ID ist `--aepImsOrgId--`
 
 >[!NOTE]
 >
 >Das Feld **_id** muss für jede Datenerfassung eindeutig sein. Wenn Sie mehrere Ereignisse erzeugen, stellen Sie sicher, dass Sie das Feld **_id** jedes Mal auf einen neuen eindeutigen Wert aktualisieren.
 
-![Kafka](./images/kc20.png)
-
 Sie sollten dann etwas wie Folgendes haben:
 
 ![Kafka](./images/kc21.png)
 
 Kopieren Sie dann Ihr gesamtes Erlebnisereignis in die Zwischenablage. Der Leerraum Ihrer JSON-Payload muss entfernt werden. Dazu verwenden wir ein Online-Tool. Wechseln Sie dazu zu [http://jsonviewer.stack.hu/](http://jsonviewer.stack.hu/) .
-
-![Kafka](./images/kc22.png)
 
 Fügen Sie Ihr Erlebnisereignis in den Editor ein und klicken Sie auf **Leerraum entfernen**.
 
@@ -269,13 +216,16 @@ Fügen Sie die neue Payload ohne Leerzeichen in das Terminal-Fenster ein und kli
 
 ![Kafka](./images/kc23a.png)
 
-Gehen Sie anschließend zurück zu Ihrer Demo-Website und aktualisieren Sie die Seite. Es sollte nun in Ihrem Profil ein Erlebnisereignis unter **Andere Ereignisse** wie unten angezeigt werden:
+Gehen Sie anschließend zurück zu Ihrer Demo-Website und aktualisieren Sie die Seite. Sie sollten jetzt ein Erlebnisereignis in Ihrem Profil unter **Erlebnisereignisse** sehen, genau wie im Folgenden:
 
 ![Kafka](./images/kc24.png)
 
 >[!NOTE]
 >
->Wenn Ihre Callcenter-Interaktionen im Profil-Viewer-Bedienfeld angezeigt werden sollen, müssen Sie die folgende Beschriftung hinzufügen und in Ihrem Projekt unter [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) filtern, indem Sie zur Registerkarte **Profil-Viewer** navigieren.
+>Wenn Ihre Callcenter-Interaktionen im Profil-Viewer-Bedienfeld angezeigt werden sollen, müssen Sie die folgende Beschriftung hinzufügen und in Ihrem Projekt unter [https://dsn.adobe.com](https://dsn.adobe.com) filtern, indem Sie zur Registerkarte **Profil-Viewer** navigieren und unter **Ereignisse** eine neue Zeile mit den folgenden Variablen hinzufügen:
+>- **Bezeichnung des Ereignistyps**: Interaktionen im Callcenter
+>- **Ereignistyp-Filter**: callCenterInteractionKafka
+>- **Titel**: `--aepTenantId--.interactionDetails.core.callCenterAgent.callID`
 
 ![Kafka](./images/kc25.png)
 

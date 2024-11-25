@@ -4,16 +4,14 @@ description: In diesem Modul erfahren Sie, wie Sie einen eigenen Apache Kafka-Cl
 kt: 5342
 doc-type: tutorial
 exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 # 2.6 Streamen von Daten von Apache Kafka nach Adobe Experience Platform
-
-**Autoren: [Vivek Tiwari](https://www.linkedin.com/in/vivek-tiwari-25092656/), [Nipun nair](https://www.linkedin.com/in/nipunnair/), [Wouter van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In diesem Modul erfahren Sie, wie Sie einen eigenen Apache Kafka-Cluster einrichten, Themen, Hersteller und Verbraucher definieren und Daten über Kafka Connect über den Adobe Experience Platform Sink Connector an Adobe Experience Platform streamen.
 
@@ -27,7 +25,7 @@ In diesem Modul erfahren Sie, wie Sie einen eigenen Apache Kafka-Cluster einrich
 
 ## Voraussetzungen
 
-- Java JDK11 oder höher muss auf Ihrem Computer installiert sein. Sie können dieses JDK hier herunterladen: [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- Java JDK23 oder höher muss auf Ihrem Computer installiert sein. Sie können dieses JDK hier herunterladen: [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Zugriff auf Adobe Experience Platform
 
 >[!NOTE]

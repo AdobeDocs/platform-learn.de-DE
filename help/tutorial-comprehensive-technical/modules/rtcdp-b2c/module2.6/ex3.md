@@ -4,10 +4,10 @@ description: Konfigurieren des HTTP-API-Endpunkts in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 8%
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählend
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Navigieren Sie im linken Menü zu **Quellen** und scrollen Sie im **Quellen-Katalog** nach unten, bis Sie die **HTTP-API** sehen. Klicken Sie auf **Daten hinzufügen**.
+Navigieren Sie im linken Menü zu **Quellen** und scrollen Sie im **Quellen-Katalog** nach unten, bis Sie die **HTTP-API** sehen. Klicken Sie auf **Einrichten**.
 
 ![Datenaufnahme](./images/kaep1.png)
 
@@ -39,15 +39,9 @@ Klicken Sie dann auf **Weiter**.
 
 Wählen Sie **Vorhandenen Datensatz** aus und öffnen Sie das Dropdown-Menü. Suchen Sie den Datensatz &quot;**Demo System - Event DataSet for Call Center&quot;(Global v1.1)** und wählen Sie ihn aus.
 
+Klicken Sie auf **Weiter**.
+
 ![Datenaufnahme](./images/kaep4.png)
-
-Klicken Sie auf **Weiter**.
-
-![Datenaufnahme](./images/kaep6.png)
-
-Klicken Sie auf **Weiter**.
-
-![Datenaufnahme](./images/kaep7.png)
 
 Klicken Sie auf **Fertigstellen**.
 
@@ -55,11 +49,11 @@ Klicken Sie auf **Fertigstellen**.
 
 Daraufhin wird eine Übersicht über den soeben erstellten HTTP API Source Connector angezeigt.
 
-![Datenaufnahme](./images/kaep9.png)
-
 Sie müssen die URL **Streaming-Endpunkt** kopieren, die wie die unten stehende aussieht, da Sie sie in der nächsten Übung benötigen werden.
 
-`https://dcs.adobedc.net/collection/d282bbfc8a540321341576275a8d052e9dc4ea80625dd9a5fe5b02397cfd80dc`
+`https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`
+
+![Datenaufnahme](./images/kaep9.png)
 
 Du hast diese Übung beendet.
 
