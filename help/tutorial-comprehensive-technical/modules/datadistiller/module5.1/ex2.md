@@ -1,177 +1,112 @@
 ---
-title: Query Service - Verwendung des Query Service
-description: Query Service - Verwendung des Query Service
+title: Query Service - Erste Schritte
+description: Query Service - Erste Schritte
 kt: 5342
-audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 5c4615c6-41c0-465a-b9b6-f59eef388c73
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
-# 5.1.2 Query Service verwenden
+# 5.1.2 Erste Schritte
 
-## Ziel
+## Kennenlernen der Benutzeroberfläche von Adobe Experience Platform
 
-- Suchen und Erkunden von Datensätzen
-- Erfahren Sie, wie Sie in Ihren Abfragen Experience-Datenmodellobjekte und -attribute bearbeiten.
+Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
 
-## Kontext
+![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-In diesem Abschnitt erfahren Sie, wie Sie mit PSQL Informationen zu den verfügbaren Datensätzen abrufen, wie Sie Abfragen für das Experience-Datenmodell (XDM) schreiben und Ihre ersten einfachen Berichtsabfragen mit den Datensätzen Query Service und Citi Signal schreiben können.
+Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
-## 5.1.2.1 Grundlegende Abfragen
+![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-In diesem Abschnitt erfahren Sie mehr über die Methoden zum Abrufen von Informationen zu den verfügbaren Datensätzen und dazu, wie Daten mit einer Abfrage aus einem XDM-Datensatz ordnungsgemäß abgerufen werden.
 
-Alle Datensätze, die wir Anfang 1 über Adobe Experience Platform erforscht haben, stehen auch als Tabellen über eine SQL-Schnittstelle zur Verfügung. Um diese Tabellen aufzulisten, können Sie den Befehl **Tabellen anzeigen;** verwenden.
+## Daten auf der Plattform durchsuchen
 
-Führen Sie **Tabellen anzeigen;** in Ihrer **PSQL-Befehlszeilenschnittstelle** aus. (Vergessen Sie nicht, Ihren Befehl mit einem Semikolon zu beenden).
+Daten aus verschiedenen Kanälen zu beziehen, ist für jede Marke eine schwierige Aufgabe. In dieser Übung interagieren Kunden von Citi Signal mit Citi Signal auf ihrer Website, über ihre mobile App werden Kaufdaten vom Point of Sale-System von Citi Signal erfasst und sie verfügen über CRM- und Treuedaten. Citi Signal verwendet Adobe Analytics und Adobe Launch, um Daten über seine Website, mobile Anwendung und POS-System zu erfassen. Daher fließen diese Daten bereits in Adobe Experience Platform. Beginnen wir mit der Erforschung aller Daten für Citi Signal, die bereits in Adobe Experience Platform vorhanden sind.
 
-Kopieren Sie den Befehl **show tables;** und fügen Sie ihn an der Eingabeaufforderung ein:
+Gehen Sie im linken Menü zu **Datensätze**.
 
-![command-quick-show-show-tables.png](./images/command-prompt-show-tables.png)
+![emea-website-interaction-dataset.png](./images/emea-website-interaction-dataset.png)
 
-Das folgende Ergebnis wird angezeigt:
+Citi Signal streamt Daten an Adobe Experience Platform und diese Daten sind im Datensatz `Demo System - Event Dataset for Website (Global v1.1)` verfügbar. Suchen Sie nach `Demo System - Event Dataset for Website`.
 
-```text
-aepenablementfy21:all=> show tables;
-                            name                            |        dataSetId         |                            dataSet                             | description | resolved 
-------------------------------------------------------------+--------------------------+----------------------------------------------------------------+-------------+----------
- demo_system_event_dataset_for_call_center_global_v1_1      | 5fd1a9dea30603194baeea43 | Demo System - Event Dataset for Call Center (Global v1.1)      |             | false
- demo_system_event_dataset_for_mobile_app_global_v1_1       | 5fd1a9de250e4f194bec84cd | Demo System - Event Dataset for Mobile App (Global v1.1)       |             | false
- demo_system_event_dataset_for_voice_assistants_global_v1_1 | 5fd1a9de49ee76194b85f73c | Demo System - Event Dataset for Voice Assistants (Global v1.1) |             | false
- demo_system_event_dataset_for_website_global_v1_1          | 5fd1a9dee3224d194cdfe786 | Demo System - Event Dataset for Website (Global v1.1)          |             | false
- demo_system_profile_dataset_for_loyalty_global_v1_1        | 5fd1a9de250e4f194bec84cc | Demo System - Profile Dataset for Loyalty (Global v1.1)        |             | false
- demo_system_profile_dataset_for_ml_predictions_global_v1_1 | 5fd1a9de241f58194b0cb117 | Demo System - Profile Dataset for ML Predictions (Global v1.1) |             | false
- demo_system_profile_dataset_for_mobile_app_global_v1_1     | 5fd1a9deddf353194a2e00b7 | Demo System - Profile Dataset for Mobile App (Global v1.1)     |             | false
- demo_system_profile_dataset_for_website_global_v1_1        | 5fd1a9de42a61c194dd7b810 | Demo System - Profile Dataset for Website (Global v1.1)        |             | false
- journey_step_events                                        | 5fd1a7f30268c5194bbb7e5e | Journey Step Events                                            |             | false
-```
+![emea-callcenter-interaction-dataset.png](./images/emea-website-interaction-dataset1.png)
 
-Drücken Sie am Doppelpunkt die Leertaste, um die nächste Seite des Ergebnissatzes anzuzeigen, oder geben Sie `q` ein, um zur Eingabeaufforderung zurückzukehren.
+Die Callcenter-Interaktionsdaten von Citi Signal werden im Datensatz `Demo System - Event Dataset for Call Center (Global v1.1)` erfasst. Suchen Sie im Suchfeld nach `Demo System - Event Dataset for Call Center` Daten. Klicken Sie auf den Namen des Datensatzes, um ihn zu öffnen.
 
-Jeder Datensatz in Platform verfügt über die zugehörige Tabelle Query Service . Die Tabelle eines Datensatzes finden Sie über die Datensatzschnittstelle:
+![emea-callcenter-interaction-dataset.png](./images/emea-callcenter-interaction-dataset.png)
 
-![ui-dataset-tablename.png](./images/ui-dataset-tablename.png)
+Nachdem Sie auf den Datensatz geklickt haben, erhalten Sie einen Überblick über die Datensatzaktivität, z. B. aufgenommene und fehlgeschlagene Batches.
 
-Die Tabelle `demo_system_event_dataset_for_website_global_v1_1` ist die Tabelle Query Service , die dem Datensatz `Demo System - Event Schema for Website (Global v1.1)` entspricht.
+![preview-interaction-dataset.png](./images/preview-interaction-dataset.png)
 
-Um einige Informationen darüber abzufragen, wo ein Produkt angezeigt wurde, wählen wir die **geo** -Informationen aus.
+Klicken Sie auf **Datensatz-Vorschau anzeigen** , um ein Beispiel der im `Demo System - Event Dataset for Call Center (Global v1.1)` -Datensatz gespeicherten Daten anzuzeigen. Das linke Bedienfeld zeigt die Schemastruktur für diesen Datensatz an.
 
-Kopieren Sie die folgende Anweisung, fügen Sie sie an der Eingabeaufforderung in der Befehlszeilenschnittstelle **von** PSQL ein und drücken Sie die Eingabetaste:
+![exploration-interaction-dataset.png](./images/explore-interaction-dataset.png)
 
-```sql
-select placecontext.geo
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Klicken Sie auf die Schaltfläche **Schließen** , um das Fenster **Vorschau des Datensatzes anzeigen** zu schließen.
 
-In Ihrem Abfrageergebnis werden Sie feststellen, dass Spalten im Experience-Datenmodell (XDM) komplexe Typen und nicht nur skalare Typen sein können. In der obigen Abfrage möchten wir geografische Standorte identifizieren, an denen **commerce.productViews** aufgetreten ist. Um eine **commerce.productViews** zu identifizieren, müssen wir mithilfe von **durch das XDM-Modell navigieren.** (Punkt).
+## Einführung in Query Service
 
-```text
-aepenablementfy21:all=> select placecontext.geo
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
-                  geo                   
-----------------------------------------
- ("(57.4694803,-3.1269422)",Tullich,GB)
-(1 row)
-```
+Der Zugriff auf den Adobe Experience Platform-Abfragedienst erfolgt über **Abfragen** im linken Menü.
 
-Beachten Sie, dass das Ergebnis eher ein flaches Objekt als ein einzelner Wert ist. Das Objekt **placecontext.geo** enthält vier Attribute: Schema, Land und Stadt. Wenn ein Objekt als Spalte deklariert wird, gibt es das gesamte Objekt als Zeichenfolge zurück. Das XDM-Schema ist möglicherweise komplexer als das, was Sie kennen, aber es ist sehr leistungsstark und wurde so konzipiert, dass es viele Lösungen, Kanäle und Anwendungsfälle unterstützt.
+![select-queries.png](./images/select-queries.png)
 
-Um die einzelnen Eigenschaften eines Objekts auszuwählen, verwenden Sie den **.** (Punkt).
+Durch Wechseln zu **Protokoll** wird die Seite &quot;Abfrageliste&quot;angezeigt, auf der Sie eine Liste aller Abfragen erhalten, die in dieser Organisation ausgeführt wurden, wobei sich die neueste Seite oben befindet.
 
-Kopieren Sie die unten stehende Anweisung und fügen Sie sie an der Eingabeaufforderung in Ihrer **PSQL-Befehlszeilenschnittstelle** ein:
+![query-list.png](./images/query-list.png)
 
-```sql
-select placecontext.geo._schema.longitude
-      ,placecontext.geo._schema.latitude
-      ,placecontext.geo.city
-      ,placecontext.geo.countryCode
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Klicken Sie in der Liste auf eine SQL-Abfrage und beachten Sie die Details in der rechten Leiste.
 
-Das Ergebnis der obigen Abfrage sollte wie folgt aussehen:
-Das Ergebnis ist jetzt ein Satz einfacher Werte:
+![click-sql-query.png](./images/click-sql-query.png)
 
-```text
-aepenablementfy21:all=> select placecontext.geo._schema.longitude
-aepenablementfy21:all->       ,placecontext.geo._schema.latitude
-aepenablementfy21:all->       ,placecontext.geo.city
-aepenablementfy21:all->       ,placecontext.geo.countryCode
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  |  latitude  |  city   | countrycode 
-------------+------------+---------+-------------
- -3.1269422 | 57.4694803 | Tullich | GB
-(1 row)
-```
+Sie können im Fenster einen Bildlauf durchführen, um die gesamte Abfrage anzuzeigen, oder auf das unten hervorgehobene Symbol klicken, um die gesamte Abfrage in Ihr Notebook zu kopieren. Sie müssen die Abfrage derzeit nicht kopieren.
 
-Machen Sie sich keine Gedanken, es gibt eine einfache Möglichkeit, den Pfad zu einer bestimmten Eigenschaft zu erhalten. Im folgenden Teil erfahren Sie, wie Sie das machen.
+![click-copy-query.png](./images/click-copy-query.png)
 
-Sie müssen eine Abfrage bearbeiten. Öffnen wir also zunächst einen Editor.
+Sie können nicht nur die ausgeführten Abfragen sehen, sondern über diese Benutzeroberfläche neue Datensätze aus Abfragen erstellen. Diese Datensätze können mit dem Echtzeit-Kundenprofil von Adobe Experience Platform verknüpft oder als Eingabe für Adobe Experience Platform Data Science Workspace verwendet werden.
 
-Unter Windows
+## PSQL-Client mit Query Service verbinden
 
-Klicken Sie auf das Symbol **search** in der Windows-Symbolleiste, geben Sie **notepad** in das Feld **search** ein und klicken Sie auf das Ergebnis **notepad** :
+Query Service unterstützt Clients mit einem Treiber für PostgreSQL. Dabei werden wir PSQL, eine Befehlszeilenschnittstelle, und Power BI oder Tableau verwenden. Stellen wir eine Verbindung zu PSQL her.
 
-![windows-start-notepad.png](./images/windows-start-notepad.png)
+Klicken Sie auf **Anmeldedaten**.
 
-In Mac
+![queries-select-configuration.png](./images/queries-select-configuration.png)
 
-Installieren Sie [Brackets](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg) oder verwenden Sie einen anderen Texteditor Ihrer Wahl, falls Sie ihn nicht installiert haben, und befolgen Sie die Anweisungen. Suchen Sie nach der Installation über die Spotlight-Suche von Mac nach **Brackets** und öffnen Sie sie.
+Daraufhin wird der Bildschirm unten angezeigt. Der Bildschirm &quot;Konfiguration&quot;enthält Serverinformationen und Anmeldedaten für die Authentifizierung bei Query Service. Zunächst konzentrieren wir uns auf die rechte Seite des Bildschirms, der einen Verbindungsbefehl für PSQL enthält. Klicken Sie auf die Schaltfläche Kopieren , um den Befehl in die Zwischenablage zu kopieren.
 
-Kopieren Sie die folgende Anweisung in Notizblock oder Klammern:
+![copy-psql-connection.png](./images/copy-psql-connection.png)
 
-```sql
-select your_attribute_path_here
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Für Windows: Öffnen Sie die Befehlszeile, indem Sie die Windows-Taste drücken, Befehl eingeben und dann auf das Ergebnis Eingabeaufforderung klicken.
 
-Gehen Sie zurück zu Ihrer Adobe Experience Platform-Benutzeroberfläche (sollte in Ihrem Browser geöffnet sein) oder navigieren Sie zu [https://platform.adobe.com](https://platform.adobe.com).
+![open-command-quick.png](./images/open-command-prompt.png)
 
-Wählen Sie **Schemas** aus, geben Sie `Demo System - Event Schema for Website (Global v1.1)` in das Feld **Suche** ein und wählen Sie `Demo System - Event Schema for Website (Global v1.1) Schema` aus der Liste aus.
+Für macOS: Öffnen Sie &quot;terminal.app&quot;über die Spotlight-Suche:
 
-![browse-schema.png](./images/browse-schema.png)
+![open-terminal-osx.png](./images/open-terminal-osx.png)
 
-Durchsuchen Sie das XDM-Modell für **Demo System - Event Schema for Website (Global v1.1)**, indem Sie auf ein Objekt klicken. Erweitern Sie die Struktur für **placecontext**, **geo** und **schema**. Wenn Sie das tatsächliche Attribut **longitude** auswählen, wird der vollständige Pfad im markierten roten Feld angezeigt. Um den Pfad des Attributs zu kopieren, klicken Sie auf das Symbol Pfad kopieren .
+Fügen Sie den Verbindungsbefehl ein, den Sie aus der Query Service-Benutzeroberfläche kopiert haben, und drücken Sie die Eingabetaste im Eingabeaufforderungsfenster:
 
-![explore-schema-for-path.png](./images/explore-schema-for-path.png)
+Windows:
 
-Wechseln Sie zu Ihrem Notebook/Ihren Klammern und entfernen Sie **Ihr_Attribut_Pfad_hier** aus der ersten Zeile. Positionieren Sie den Cursor hinter **select** in der ersten Zeile und fügen Sie (STRG-V) ein.
+![command-quick-linked.png](./images/command-prompt-connected.png)
 
-Kopieren Sie die geänderte Anweisung aus Notizblock/Klammern, fügen Sie sie an der Eingabeaufforderung in Ihre **PSQL-Befehlszeilenschnittstelle** ein und drücken Sie die Eingabetaste.
+MacOS:
 
-Das Ergebnis sollte wie folgt aussehen:
+![command-quick-paste-osx.png](./images/command-prompt-paste-osx.png)
 
-```text
-aepenablementfy21:all=> select placeContext.geo._schema.longitude
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  
-------------
- -3.1269422
-```
+Sie sind jetzt mit Query Service über PSQL verbunden.
 
-Nächster Schritt: [5.1.3 Abfragen, Abfragen, Abfragen.. und Abwanderungsanalyse](./ex3.md)
+In den nächsten Übungen wird es eine gewisse Interaktion mit diesem Fenster geben. Dies wird als Ihre **PSQL-Befehlszeilenschnittstelle** bezeichnet.
+
+Jetzt können Sie mit dem Senden von Abfragen beginnen.
+
+Nächster Schritt: [5.1.3 Verwenden des Abfragediensts](./ex3.md)
 
 [Zurück zu Modul 5.1](./query-service.md)
 

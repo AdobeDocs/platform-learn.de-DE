@@ -4,10 +4,10 @@ description: Customer AI - Datenvorbereitung (Erfassung)
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 5%
+source-wordcount: '698'
+ht-degree: 4%
 
 ---
 
@@ -53,33 +53,20 @@ Dann wirst du das sehen. Klicken Sie unter Feldergruppen auf **+ Hinzufügen** .
 Suchen Sie nach den folgenden **Feldgruppen**, die Sie diesem Schema hinzufügen möchten, und wählen Sie sie aus:
 
 - Erlebnisereignis für Verbraucher
-- Details zur Endbenutzer-ID
+
+![Neues CEE-Schema](./images/cee1.png)
+
+- IdentityMap
 
 Klicken Sie auf **Feldgruppen hinzufügen**.
 
-![Neues CEE-Schema](./images/cee.png)
+![Neues CEE-Schema](./images/cee2.png)
 
-Dann wirst du das sehen. Klicken Sie auf die Feldergruppe **Endbenutzer-ID-Details**.
-
-![Neues Schema erstellen](./images/eui1.png)
-
-Navigieren Sie zum Feld **endUserIDs ._experience.emailid.id**.
-
-![Neues Schema erstellen](./images/eui2.png)
-
-Im rechten Menü für das Feld **endUserIDs._experience.emailid.id**, scrollen Sie nach unten und aktivieren Sie das Kontrollkästchen für **Identität**, aktivieren Sie das Kontrollkästchen für **Primäre Identität** und wählen Sie den **Identitäts-Namespace** von **E-Mail** aus. Klicken Sie auf **Übernehmen**.
-
-![Neues Schema erstellen](./images/eui3.png)
-
-Navigieren Sie zum Feld **endUserIDs ._experience.mcid.id**. Aktivieren Sie das Kontrollkästchen für **Identität** und wählen Sie den **Identitäts-Namespace** von **ECID** aus. Klicken Sie auf **Übernehmen**.
-
-![Neues Schema erstellen](./images/eui4.png)
-
-Dann wirst du das haben. Wählen Sie anschließend den Namen Ihres Schemas aus. Sie sollten Ihr Schema nun für **Profil** aktivieren, indem Sie auf den Umschalter **Profil** klicken.
+Dann wirst du das sehen. Wählen Sie anschließend den Namen Ihres Schemas aus. Sie sollten Ihr Schema nun für **Profil** aktivieren, indem Sie auf den Umschalter **Profil** klicken.
 
 ![Neues Schema erstellen](./images/xdmee3.png)
 
-Dann wirst du das sehen. Klicken Sie auf **Aktivieren**.
+Dann wirst du das sehen. Aktivieren Sie das Kontrollkästchen für **Daten für dieses Schema enthält eine primäre Identität im Feld identityMap .**. Klicken Sie auf **Aktivieren**.
 
 ![Neues Schema erstellen](./images/xdmee4.png)
 
@@ -121,19 +108,19 @@ Sie können jetzt mit der Erfassung von Kundenerlebnis-Ereignisdaten beginnen un
 
 ## Herunterladen von Erlebnisereignistestdaten
 
-Sobald das **Schema** und **Datensatz** konfiguriert sind, können Sie jetzt Erlebnisereignisdaten erfassen. Da Customer AI Daten über **2 Quartale mindestens** benötigt, müssen Sie extern vorbereitete Daten erfassen.
+Sobald das **Schema** und **Datensatz** konfiguriert sind, können Sie jetzt Erlebnisereignisdaten erfassen. Da Customer AI spezifische Datenanforderungen erfordert, müssen Sie extern vorbereitete Daten erfassen.
 
-Die für die Erlebnisereignisse vorbereiteten Daten müssen den Anforderungen und dem Schema des [XDM-Mixins für Erlebnisereignisse für Verbraucher](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md) entsprechen.
+Die für die Erlebnisereignisse in dieser Übung vorbereiteten Daten müssen den Anforderungen und dem Schema der [XDM-Feldergruppe für Erlebnisereignisse für Verbraucher](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md) entsprechen.
 
-Laden Sie die Datei mit Beispieldaten von diesem Speicherort herunter: [https://dashboard.adobedemo.com/data](https://dashboard.adobedemo.com/data). Klicken Sie auf die Schaltfläche **Herunterladen** .
+Laden Sie die ZIP-Datei mit Demodaten von diesem Speicherort herunter: [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
-![Datensatz](./images/dsn1.png)
-
-Wenn Sie nicht auf den obigen Link zugreifen können, können Sie die Datei auch von diesem Speicherort herunterladen: [https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip](https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip).
-
-Sie haben jetzt eine Datei mit dem Namen **retail-v1-dec2020-xl.json.zip** heruntergeladen. Platzieren Sie die Datei auf dem Desktop des Computers und dekomprimieren Sie sie. Danach wird eine Datei mit dem Namen **retail-v1.json** angezeigt. Sie werden diese Datei in der nächsten Übung benötigen.
+Sie haben jetzt eine Datei mit dem Namen **CUSTOM-CAI-EVENTS-WEB.zip** heruntergeladen. Platzieren Sie die Datei auf dem Desktop des Computers und dekomprimieren Sie sie. Danach wird ein Ordner mit dem Namen **CUSTOM-CAI-EVENTS-WEB** angezeigt.
 
 ![Datensatz](./images/ingest.png)
+
+In diesem Ordner finden Sie mehrere sequenzierte JSON-Dateien, die alle in der nächsten Übung erfasst werden müssen.
+
+![Datensatz](./images/ingest1a.png)
 
 ## Erlebnisereignis-Testdaten erfassen
 
@@ -145,9 +132,11 @@ Klicken Sie in Ihrem Datensatz auf **Dateien auswählen** , um Daten hinzuzufüg
 
 ![Datensatz](./images/ingest2.png)
 
-Wählen Sie im Popup die Datei &quot;**retail-v1.json**&quot;aus und klicken Sie auf &quot;**Open**&quot;.
+Wählen Sie im Popup die Dateien **WEBSITE-EE-1.json** bis **WEBSITE-EE-5.json** aus und klicken Sie auf **Open**.
 
 ![Datensatz](./images/ingest3.png)
+
+Wiederholen Sie diesen Aufnahmevorgang für die Dateien **WEBSITE-EE-6.json** und **WEBSITE-EE-7.json**.
 
 Anschließend werden die importierten Daten angezeigt und ein neuer Batch wird im Status **Laden** erstellt. Navigieren Sie nicht von dieser Seite weg, bis die Datei hochgeladen wurde.
 
@@ -159,11 +148,9 @@ Nach dem Hochladen der Datei wird der Batch-Status von **Laden** in **Verarbeitu
 
 Die Aufnahme und Verarbeitung der Daten kann 10-20 Minuten dauern.
 
-Sobald die Datenerfassung erfolgreich war, ändert sich der Batch-Status in **Erfolg**.
+Sobald die Datenerfassung erfolgreich war, ändert sich der Batch-Status der verschiedenen Uploads in **Erfolg**.
 
 ![Datensatz](./images/ingest7.png)
-
-![Datensatz](./images/ingest8.png)
 
 Nächster Schritt: [2.2.2 Customer AI - Erstellen einer neuen Instanz (Konfigurieren)](./ex2.md)
 

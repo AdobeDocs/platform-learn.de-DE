@@ -1,76 +1,85 @@
 ---
-title: Query Service - Datensatz mit Power BI durchsuchen
-description: Query Service - Datensatz mit Power BI durchsuchen
+title: Query Service - Power BI/Tableau
+description: Query Service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-# 5.1.5 Query Service und Power BI
+# 5.1.5 Datensatz aus einer Abfrage generieren
 
-Öffnen Sie Microsoft Power BI Desktop.
+## Ziel
 
-![start-power-bi.png](./images/start-power-bi.png)
+Erfahren Sie, wie Sie Datensätze aus Abfrageergebnissen generieren.
+Microsoft Power BI Desktop/Tableau direkt mit Query Service verbinden
+Erstellen eines Berichts in Microsoft Power BI Desktop/Tableau Desktop
 
-Klicken Sie auf **Daten abrufen**.
+## Lektionskontext
 
-![power-bi-get-data.png](./images/power-bi-get-data.png)
+Eine Befehlszeilenschnittstelle zur Abfrage von Daten ist aufregend, aber nicht gut vorhanden. In dieser Lektion führen wir Sie durch einen empfohlenen Arbeitsablauf für die Verwendung von Microsoft Power BI Desktop/Tableau direkt im Query Service, um visuelle Berichte für Ihre Stakeholder zu erstellen.
 
-Suchen Sie nach **postgres** (1), wählen Sie **Postgres** (2) aus der Liste und **Connect** (3).
+## Datensatz aus einer SQL-Abfrage erstellen
 
-![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
+Die Komplexität Ihrer Abfrage wirkt sich darauf aus, wie lange es dauert, bis der Query Service Ergebnisse zurückgibt. Bei Abfragen direkt über die Befehlszeile oder andere Lösungen wie Microsoft Power BI/Tableau wird der Abfragedienst mit einem 5-minütigen Timeout (600 Sekunden) konfiguriert. In bestimmten Fällen werden diese Lösungen mit kürzeren Timeouts konfiguriert. Um größere Abfragen auszuführen und die Zeit, die zum Zurückgeben von Ergebnissen benötigt wird, vorab zu laden, bieten wir eine Funktion zum Generieren eines Datensatzes aus den Abfrageergebnissen an. Diese Funktion nutzt die SQL-Standardfunktion, die als Tabelle als Auswahl erstellen (CTAS) bezeichnet wird. Sie ist in der Platform-Benutzeroberfläche in der Abfrageliste verfügbar und kann auch direkt über die Befehlszeile mit PSQL ausgeführt werden.
 
-Wechseln Sie zu Adobe Experience Platform, zu **Abfragen** und zu **Anmeldeinformationen**.
+Im vorherigen Schritt haben Sie **Ihren Namen** durch Ihren eigenen ldap ersetzt, bevor Sie ihn in PSQL ausführen.
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+```sql
+select /* enter your name */
+       e.--aepTenantId--.identification.core.ecid as ecid,
+       e.placeContext.geo.city as city,
+       e.placeContext.geo._schema.latitude latitude,
+       e.placeContext.geo._schema.longitude longitude,
+       e.placeContext.geo.countryCode as countrycode,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling as callFeeling,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic as callTopic,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
+       l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
+       l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
+       l.--aepTenantId--.identification.core.loyaltyId as crmid
+from   demo_system_event_dataset_for_website_global_v1_1 e
+      ,demo_system_event_dataset_for_call_center_global_v1_1 c
+      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
+and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
+and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
+```
 
-Kopieren Sie auf der Seite **Anmeldedaten** in Adobe Experience Platform den **Host** und fügen Sie ihn in das Feld **Server** ein. Kopieren Sie dann die **Datenbank**, fügen Sie sie in das Feld **Datenbank** in Power BI ein und klicken Sie dann auf OK (2).
+Navigieren Sie zur Adobe Experience Platform-Benutzeroberfläche - [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
->[!IMPORTANT]
->
->Stellen Sie sicher, dass Sie Port **:80** am Ende des Serverwerts einschließen, da der Query Service derzeit nicht den standardmäßigen PostgreSQL-Port 5432 verwendet.
+Sie suchen in der Adobe Experience Platform-Abfrage-Benutzeroberfläche nach Ihrer ausgeführten Anweisung, indem Sie Ihren ldap in das Suchfeld eingeben:
 
-![power-bi-connect-server.png](./images/power-bi-connect-server.png)
+Wählen Sie **Abfragen**, gehen Sie zu **Protokoll** und geben Sie Ihren ldap in das Suchfeld ein.
 
-Füllen Sie im nächsten Dialogfeld den Benutzernamen und das Kennwort mit Ihrem Benutzernamen und Kennwort aus, die in den **Anmeldedaten** der Abfragen in Adobe Experience Platform zu finden sind.
+![search-query-for-ctas.png](./images/search-query-for-ctas.png)
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+Wählen Sie Ihre Abfrage aus und klicken Sie auf **Ausgabedatensatz**.
 
-Setzen Sie im Dialogfeld Navigator Ihren **LDAP** in das Suchfeld (1), um Ihre CTAS-Datensätze zu finden, und aktivieren Sie das Kontrollkästchen neben jedem (2). Klicken Sie dann auf Laden (3).
+![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
+Geben Sie `--aepUserLdap-- Callcenter Interaction Analysis` als Namen und Beschreibung für den Datensatz ein und drücken Sie die Schaltfläche **Abfrage ausführen** .
 
-Stellen Sie sicher, dass die Registerkarte &quot;**Bericht**&quot;(1) ausgewählt ist.
+![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 
-![power-bi-report-tab.png](./images/power-bi-report-tab.png)
+Daher wird eine neue Abfrage mit dem Status **Gesendet** angezeigt.
 
-Wählen Sie die Karte (1) aus und vergrößern Sie die Karte (2), nachdem sie der Berichtsarbeitsfläche hinzugefügt wurde.
+![ctas-query-sent.png](./images/ctas-query-submitted.png)
 
-![power-bi-select-map.png](./images/power-bi-select-map.png)
+Nach Abschluss wird ein neuer Eintrag für **Datensatz erstellt** angezeigt (Sie müssen die Seite möglicherweise aktualisieren).
 
-Als Nächstes müssen wir die Kennzahlen und Dimensionen definieren. Ziehen Sie dazu Felder aus dem Abschnitt **Felder** auf die entsprechenden Platzhalter (unter **Visualisierungen**), wie unten angegeben:
+![ctas-dataset-created.png](./images/ctas-dataset-created.png)
 
-![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
+Sobald Ihr Datensatz erstellt wurde (was 5-10 Minuten dauern kann), können Sie die Übung fortsetzen.
 
-Als Maßstab verwenden wir eine Anzahl von **customerId**. Ziehen Sie das Feld **crmid** aus dem Abschnitt **fields** in den Platzhalter **size** :
+Nächster Schritt - Option A: [5.1.6 Query Service und Power BI](./ex6.md)
 
-![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
-
-Um schließlich einige Analysen von **callTopic** durchzuführen, ziehen wir das Feld **callTopic** auf den Platzhalter **Filter auf Seitenebene** (möglicherweise müssen Sie im Abschnitt **Visualisierungen** einen Bildlauf durchführen).
-
-![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
-
-Auswählen/Aufheben der Auswahl von **callTopics** zur Untersuchung:
-
-![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
-
-Du bist jetzt mit dieser Übung fertig.
-
-Nächster Schritt: [5.1.7 Query Service API](./ex7.md)
+Nächster Schritt - Option B: [5.1.7 Query Service and Tableau](./ex7.md)
 
 [Zurück zu Modul 5.1](./query-service.md)
 

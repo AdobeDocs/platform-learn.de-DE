@@ -3,9 +3,10 @@ title: Customer AI - Scoring-Dashboard und Segmentierung (Vorhersage und Aktion)
 description: Customer AI - Scoring-Dashboard und Segmentierung (Vorhersage und Aktion)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 4dd8489a-65e4-489a-9228-3c642b10e761
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '272'
 ht-degree: 2%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 2%
 
 Sobald Ihre Customer AI-Instanz einen Modelllauf abgeschlossen hat, können Sie den Tendenzwert visualisieren, der ausgewertet wird, um einen Kunden vorherzusagen, der in den nächsten 30 Tagen einen Kauf tätigt.
 
-![KI](./images/caimodels.png)
+![KI](./images/caiinstancesummary1.png)
 
 >[!NOTE]
 >
 >Nur eine Customer AI-Instanz mit dem Status **Erfolg** ermöglicht die Vorschau der Einblicke des Dienstes.
 
-## 2.2.3.1 Propensity Prediction
+## Propensity Predication
 
 Sehen wir uns nun die prognostizierte Tendenz an, die vom Customer AI-Instanzmodell generiert wurde. Klicken Sie auf den Instanznamen, um das Dashboard anzuzeigen.
 
@@ -30,15 +31,13 @@ Das Dashboard Customer AI zeigt die Zusammenfassung zu Bewertung, Verteilung der
 
 ![KI-Beschreibung](./images/caidescription.png)
 
-![Dashboard-Zusammenfassung](./images/caidashboard.png)
-
 Bewegen Sie den Mauszeiger über die Einflussfaktoren, um die weitere Aufschlüsselung der Datenverteilung anzuzeigen.
 
 ![Einflussfaktoren](./images/caiinfluencefactors.png)
 
-## 2.2.3.2 Geschäftsaktionen
+## Geschäftsaktionen
 
-### 2.2.3.2.1 Kunden segmentieren
+### Segmentieren von Kunden
 
 Das Dashboard Customer AI ermöglicht die Definition von Segmenten mit einem Klick. Klicken Sie auf die Schaltfläche **Segment erstellen** auf den Tendenzkarten.
 
@@ -48,33 +47,17 @@ Sie werden sehen, dass eine Segmentdefinition automatisch erstellt wird.
 
 ![Segmentregel](./images/caicreatesegment.png)
 
-Geben Sie Ihrem Segment einen Namen gemäß dieser Benennungsregel: `--aepUserLdap-- - Customer AI High Propensity`. Klicken Sie auf **Speichern**.
+Geben Sie Ihrem Segment einen Namen gemäß dieser Benennungsregel: `--aepUserLdap-- - Customer AI High Propensity`. Klicken Sie auf **Veröffentlichen**.
 
 ![Segmentregel](./images/caicreatesegment1.png)
 
-Sie können dieses Segment jetzt für das Targeting mit z. B. Echtzeit-Kundendatenplattform, Journey Orchestration und Adobe Target verwenden.
+Sie können dieses Segment jetzt für das Targeting mit z. B. Echtzeit-Kundendatenplattform, Journey Optimizer und Adobe Target verwenden.
 
-### 2.2.3.2.2 Profilübersicht
+## Bereinigen
 
-Da die Tendenzbewertung der Customer AI Teil des Echtzeit-Kundenprofils wird, können Sie die Bewertung einzelner Kunden anzeigen.
+Um sicherzustellen, dass keine unnötigen Demodaten in Ihrer Umgebung aufbewahrt werden, löschen Sie den Datensatz `--aepUserLdap-- - Demo System - Customer Experience Event Dataset`, sobald Sie diese Übung erfolgreich abgeschlossen haben. Wenn Sie die Demodaten nicht löschen, wirkt sich dies auf Ihre AEP-Instanz aus.
 
-Navigieren Sie in Adobe Experience Platform im linken Menü zu **Profile** und wählen Sie **Durchsuchen**.
-
-Suchen Sie mithilfe einer der IDs nach einem Profil, z. B. **E-MAIL hbirkenshawa@businessweek.com**, die in der von Ihnen erfassten JSON-Datei verfügbar sind. Klicken Sie auf die **Profil-ID** , um das Profil zu öffnen.
-
-![Profil](./images/profile1.png)
-
-Daraufhin sehen Sie Folgendes:
-
-![Profil](./images/profile2.png)
-
-Wechseln Sie zu **Attribute** , das die Ausgabe aus Ihrem Customer AI-Modell enthält.
-
-![Profil](./images/profile3.png)
-
-Scrollen Sie nach unten, um die von Ihrem Customer AI-Modell berechnete Tendenzbewertung anzuzeigen.
-
-![Profil](./images/profile4.png)
+![Profil](./images/cleanup.png)
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 
