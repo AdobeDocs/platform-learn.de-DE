@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
+source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '947'
 ht-degree: 20%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 20%
    + [Übersicht](/help/platform/ai-assistant/overview.md)
    + [Zugriff einrichten](/help/platform/ai-assistant/access.md)
    + [Zielgruppen bereinigen](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Mit einem neuen Produkt integriert](/help/platform/ai-assistant/onboard.md)
 + Zielgruppen und Segmentierung {#audiences}
    + [Einführung in Audience Portal und Komposition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Hochladen von Zielgruppen](audiences/upload-audiences.md)
@@ -82,7 +83,7 @@ ht-degree: 20%
    + [Übersicht](/help/platform/governance/understanding-data-governance.md)
    + [End-to-End-Demo](/help/platform/governance/introduction-to-data-governance.md)
    + [Klassifizieren von Daten mithilfe von Labels](/help/platform/governance/classify-data-using-labels.md)
-   + [Erstellen von Richtlinien zur Datennutzung](/help/platform/governance/create-data-usage-policies.md)
+   + [Erstellen von Datennutzungsrichtlinien](/help/platform/governance/create-data-usage-policies.md)
    + [Durchsetzen von Richtlinien zur Datennutzung](/help/platform/governance/enforce-data-usage-policies.md)
    + [Zustimmung erzwingen](/help/platform/governance/enforce-consent.md)
    + [Integrieren mit IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
