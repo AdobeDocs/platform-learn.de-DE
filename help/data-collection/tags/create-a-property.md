@@ -1,5 +1,5 @@
 ---
-title: Tag-Eigenschaft erstellen
+title: Erstellen einer Tag-Eigenschaft
 description: Erfahren Sie, wie Sie Tag-Eigenschaften erstellen, um die Marketing-Tags auf Ihrer Website zu verwalten.
 feature: Tags
 level: Beginner
@@ -7,15 +7,16 @@ duration: 321
 last-substantial-update: 2023-12-15T00:00:00Z
 jira: KT-3524
 exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
-source-git-commit: f1e71afb159af1a99ce574e3e9de451e0d703800
+source-git-commit: 1c62792460795ff992a8ab3e7d23a4b1dfa8824d
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 34%
 
 ---
 
-# Tag-Eigenschaft erstellen
+# Erstellen einer Tag-Eigenschaft
 
-Erfahren Sie, wie Sie Tag-Eigenschaften erstellen, um die Marketing-Tags auf Ihrer Website zu verwalten. Weitere Informationen finden Sie in der Dokumentation zu [properties](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=de) .
+Erfahren Sie, wie Sie Tag-Eigenschaften erstellen, um die Marketing-Tags auf Ihrer Website zu verwalten. Weitere Informationen finden Sie in der Dokumentation [Eigenschaften](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)
+
