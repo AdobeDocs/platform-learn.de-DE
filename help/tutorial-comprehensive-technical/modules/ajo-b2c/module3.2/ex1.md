@@ -3,56 +3,52 @@ title: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Ereig
 description: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: d4e37338-bde2-41b9-948c-11d9216b8cf3
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '756'
 ht-degree: 2%
 
 ---
 
 # 3.2.1 Ereignis definieren
 
-Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud](https://experience.adobe.com) wechseln. Klicken Sie auf **Journey Optimizer**.
+Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud wechseln](https://experience.adobe.com). Auf **Journey Optimizer**.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxName--`.
+Sie werden zur Ansicht **Startseite** in Journey Optimizer weitergeleitet. Stellen Sie zunächst sicher, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Sie befinden sich dann in der **Startseite**-Ansicht Ihres Sandbox-`--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-Scrollen Sie im linken Menü nach unten und klicken Sie auf **Konfigurationen**. Klicken Sie anschließend unter **Ereignisse** auf die Schaltfläche **Verwalten** .
+Scrollen Sie im linken Menü nach unten und klicken Sie auf **Konfigurationen**. Klicken Sie anschließend auf die Schaltfläche **Verwalten** unter **Ereignisse**.
 
 ![ACOP](./images/acopmenu.png)
 
-Daraufhin wird eine Übersicht über alle verfügbaren Ereignisse angezeigt. Klicken Sie auf **Ereignis erstellen** , um mit der Erstellung Ihres eigenen Ereignisses zu beginnen.
+Anschließend sehen Sie eine Übersicht über alle verfügbaren Ereignisse. Klicken Sie auf **Ereignis erstellen**, um mit der Erstellung Ihres eigenen Ereignisses zu beginnen.
 
 ![ACOP](./images/emptyevent.png)
 
 Daraufhin wird ein neues, leeres Ereignisfenster angezeigt.
+Verwenden Sie `--aepUserLdap--GeofenceEntry` als Namen für das Ereignis.
 
-![ACOP](./images/emptyevent1.png)
+Beschreibung festlegen auf: `Geofence Entry Event`.
 
-Verwenden Sie als Namen für das Ereignis `--aepUserLdap--GeofenceEntry`. In diesem Beispiel ist der Ereignisname `vangeluwGeofenceEntry`.
-
-Legen Sie für Beschreibung den Wert `Geofence Entry Event` fest.
+Stellen Sie sicher **dass** Typ“ auf **Unitär** und wählen Sie für die Auswahl **Ereignis-ID-Typ** die Option **Systemgeneriert**
 
 ![Demo](./images/evname.png)
 
-Stellen Sie als Nächstes sicher, dass der **Typ** auf **Einzel** gesetzt ist, und wählen Sie für die Auswahl des **Ereignis-ID-Typs** die Option **Systemgeneriert** aus.
-
-![ACOP](./images/eventidtype.png)
-
-Als Nächstes müssen Sie ein Schema auswählen. Alle hier gezeigten Schemas sind Adobe Experience Platform-Schemas.
+Als Nächstes müssen Sie ein Schema auswählen. Alle hier gezeigten Schemata sind Adobe Experience Platform-Schemata.
 
 ![Demo](./images/evschema.png)
 
-Sie werden feststellen, dass nicht alle Schemas angezeigt werden. In Adobe Experience Platform stehen noch viele weitere Schemata zur Verfügung.
-Um in dieser Liste angezeigt zu werden, muss ein Schema eine sehr spezifische Feldergruppe enthalten. Die Feldergruppe, die hier angezeigt werden muss, heißt `Orchestration eventID`.
+Sie werden feststellen, dass nicht alle Schemata angezeigt werden. In Adobe Experience Platform sind noch viele weitere Schemata verfügbar.
+Um in dieser Liste angezeigt zu werden, muss einem Schema eine sehr spezifische Feldergruppe zugeordnet sein. Die Feldergruppe, die hier angezeigt werden soll, heißt `Orchestration eventID`.
 
-Sehen wir uns kurz an, wie diese Schemas in Adobe Experience Platform definiert sind.
+Sehen wir uns kurz an, wie diese Schemata in Adobe Experience Platform definiert werden.
 
-Navigieren Sie im linken Menü zu **Schemas** und öffnen Sie es in einer neuen Browser-Registerkarte. Navigieren Sie in **Schemas** zu **Durchsuchen** , um die Liste der verfügbaren Schemas anzuzeigen.
-Öffnen Sie das Schema `Demo System - Event Schema for Website (Global v1.1)`.
+Wechseln Sie im linken Menü zu **Schemata** und öffnen Sie diese in einer neuen Browser-Registerkarte. Gehen Sie **Schemata** zu **Durchsuchen**, um die Liste der verfügbaren Schemata anzuzeigen.
+Öffnen Sie die `Demo System - Event Schema for Website (Global v1.1)` Schema .
 
 ![Datenaufnahme](./images/schemas.png)
 
@@ -61,74 +57,66 @@ Diese Feldergruppe hat nur zwei Felder: `_experience.campaign.orchestration.even
 
 ![Datenaufnahme](./images/schemageo.png)
 
-Sobald diese Feldergruppe und dieses spezifische eventID-Feld Teil eines Schemas sind, kann dieses Schema von Adobe Journey Optimizer verwendet werden.
+Sobald diese Feldergruppe und dieses spezifische eventID-Feld Teil eines Schemas sind, steht dieses Schema zur Verwendung durch Adobe Journey Optimizer zur Verfügung.
 
-Gehen Sie zurück zur Ereigniskonfiguration in Adobe Journey Optimizer.
+Kehren Sie zu Ihrer Ereigniskonfiguration in Adobe Journey Optimizer zurück.
 
 ![Demo](./images/evschema.png)
 
-In diesem Anwendungsfall möchten Sie ein Geofence-Ereignis überwachen, um zu verstehen, ob sich ein Kunde an einem bestimmten Ort befindet. Wählen Sie daher jetzt das Schema `Demo System - Event Schema for Website (Global v1.1)` als Schema für Ihr Ereignis aus.
+In diesem Anwendungsbeispiel möchten Sie ein Geofence-Ereignis überwachen, um zu verstehen, ob sich ein Kunde an einem bestimmten Ort befindet. Wählen Sie daher jetzt die `Demo System - Event Schema for Website (Global v1.1)` Schema als Schema für Ihr Ereignis aus.
 
 ![Demo](./images/evschema1.png)
 
 Adobe Journey Optimizer wählt dann automatisch einige erforderliche Felder aus, Sie können jedoch die Felder bearbeiten, die Adobe Journey Optimizer zur Verfügung gestellt werden.
 
-Klicken Sie auf das Symbol **Stift** , um die Felder zu bearbeiten.
+Klicken Sie auf **Stiftsymbol**, um die Felder zu bearbeiten.
 
 ![Demo](./images/editfields.png)
 
-Daraufhin wird ein Popup-Fenster mit einer Schemahierarchie angezeigt, in dem Sie Felder auswählen können.
+Anschließend wird ein Popup-Fenster mit einer Schemahierarchie angezeigt, in der Sie Felder auswählen können.
 
 ![Demo](./images/popup.png)
 
-Felder wie die ECID und die Orchestration eventID sind erforderlich und als solche vorausgewählt.
+Felder wie die ECID und die Orchestrierungs-eventID sind erforderlich und als solche vorausgewählt.
 
-Ein Marketing-Experte muss jedoch flexibel auf alle Datenpunkte zugreifen können, die Kontext zu einer Journey bieten. Stellen Sie also sicher, dass Sie auch die folgenden Felder als Minimum auswählen (zu finden im Kontextknoten Ort ):
+Marketing-Experten benötigen jedoch flexiblen Zugriff auf alle Datenpunkte, die Kontext für eine Journey bieten. Wählen wir daher mindestens die folgenden Felder aus (im Kontext-Platzierungsknoten):
 
 - Stadt
 
-Klicken Sie danach auf **OK**.
+Wenn Sie damit fertig sind, klicken Sie auf **OK**.
 
 ![Demo](./images/popupok.png)
 
-Adobe Journey Optimizer benötigt auch eine Kennung, um den Kunden zu identifizieren. Da Adobe Journey Optimizer mit Adobe Experience Platform verknüpft ist, wird die Primäre Kennung eines Schemas automatisch als Kennung für die Journey verwendet.
-Der Primäre Bezeichner berücksichtigt auch automatisch das vollständige Identitätsdiagramm von Adobe Experience Platform und verknüpft das gesamte Verhalten aller verfügbaren Identitäten, Geräte und Kanäle mit demselben Profil, sodass Adobe Journey Optimizer kontextbezogen, relevant und konsistent ist.
+Adobe Journey Optimizer benötigt außerdem eine Kennung zur Identifizierung des Kunden. Da Adobe Journey Optimizer mit Adobe Experience Platform verknüpft ist, wird die Primäre Kennung eines Schemas automatisch als Kennung für die Journey übernommen.
+Die Primäre Kennung berücksichtigt auch automatisch das vollständige Identitätsdiagramm von Adobe Experience Platform und verknüpft das gesamte Verhalten aller verfügbaren Identitäten, Geräte und Kanäle mit demselben Profil, sodass Adobe Journey Optimizer kontextbezogen, relevant und konsistent ist. Klicken Sie auf **Speichern**.
 
 ![Demo](./images/eventidentifier.png)
 
-Klicken Sie auf **Speichern** , um Ihr benutzerdefiniertes Ereignis zu speichern.
-
-![Demo](./images/save.png)
-
-Ihr Ereignis wird dann Teil der Liste der verfügbaren Ereignisse sein.
+Ihre Veranstaltung wird dann Teil der Liste der verfügbaren Veranstaltungen.
 
 ![Demo](./images/eventlist.png)
 
-Schließlich müssen Sie die `Orchestration eventID` für Ihr benutzerspezifisches Ereignis wiederherstellen.
+Schließlich müssen Sie die `Orchestration eventID` für Ihr benutzerdefiniertes Ereignis wiederherstellen.
 
-Öffnen Sie das Ereignis erneut, indem Sie es in der Ereignisliste anklicken.
-Klicken Sie in Ihrem Ereignis auf das Symbol **Payload anzeigen** neben **Felder**.
-
-![Demo](./images/eventlist1.png)
-
-Wenn Sie auf das Symbol **Payload anzeigen** klicken, wird eine Beispiel-XDM-Payload für dieses Ereignis geöffnet.
+Öffnen Sie die Veranstaltung erneut, indem Sie in der Ereignisliste darauf klicken.
+Klicken Sie bei Ihrem Ereignis auf das Symbol **Payload anzeigen** neben **Felder**.
 
 ![Demo](./images/fieldseyepayload.png)
 
-Scrollen Sie nach unten in die **Payload**, bis Sie die Zeile `eventID` sehen.
+Durch Klicken auf das **Payload anzeigen** wird eine Beispiel-XDM-Payload für dieses Ereignis geöffnet. Scrollen Sie in der **Payload** nach unten, bis Sie die Zeile `eventID` sehen.
 
 ![Demo](./images/fieldseyepayloadev.png)
 
-Notieren Sie sich die `eventID` , da Sie sie im letzten benötigen werden, um Ihre Konfiguration zu testen.
+Notieren Sie sich die `eventID`, da Sie sie zum Testen Ihrer Konfiguration benötigen werden.
 
-In diesem Beispiel ist `eventID` `fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934`.
+In diesem Beispiel ist der `eventID` `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`.
 
-Sie haben nun das Ereignis definiert, das den Trigger der Journey, die wir erstellen, darstellt. Sobald die Journey ausgelöst wird, werden die Geofence-Felder wie City und alle anderen, von Ihnen ausgewählten Felder (z. B. Land, Breitengrad und Längengrad) der Journey zur Verfügung gestellt.
+Sie haben jetzt das Ereignis definiert, durch das die von uns erstellte Journey Trigger wird. Sobald die Journey ausgelöst wird, werden die Geofencing-Felder wie Stadt und alle anderen, die Sie ausgewählt haben (wie Land, Breitengrad und Längengrad) der Journey zur Verfügung gestellt.
 
-Wie in der Anwendungsfallbeschreibung erläutert, müssen wir dann kontextbezogene Promotions bereitstellen, die vom Wetter abhängen. Um Wetterinformationen zu erhalten, müssen wir externe Datenquellen definieren, die uns die Wetterinformationen für diesen Ort liefern. Sie verwenden den Dienst **OpenWeather** , um uns mitzuteilen, welche Informationen diese als Teil von 2 liefern.
+Wie in der Beschreibung des Anwendungsfalls erläutert, müssen wir dann kontextuelle Promotions bereitstellen, die vom Wetter abhängen. Um Wetterinformationen zu erhalten, müssen wir eine externe Datenquelle definieren, die uns die Wetterinformationen für diesen Standort liefert. Sie verwenden den **OpenWeather API**-Service, um uns diese Informationen bereitzustellen.
 
-Nächster Schritt: [3.2.2 Externe Datenquelle definieren](./ex2.md)
+Nächster Schritt: [3.2.2 Definieren einer externen Datenquelle](./ex2.md)
 
-[Zurück zu Modul 3.2](journey-orchestration-external-weather-api-sms.md)
+[Zurück zum Modul 3.2](journey-orchestration-external-weather-api-sms.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

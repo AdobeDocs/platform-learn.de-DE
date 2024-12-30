@@ -1,33 +1,34 @@
 ---
-title: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Externe Datenquelle definieren
-description: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Externe Datenquelle definieren
+title: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Definieren einer externen Datenquelle
+description: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Definieren einer externen Datenquelle
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aeafa053-16f1-4fd3-944e-91401daeeced
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 3%
+source-wordcount: '568'
+ht-degree: 4%
 
 ---
 
-# 3.2.2 Externe Datenquelle definieren
+# 3.2.2 Definieren einer externen Datenquelle
 
 In dieser Übung erstellen Sie eine benutzerdefinierte externe Datenquelle, indem Sie Adobe Journey Optimizer verwenden.
 
-Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud](https://experience.adobe.com) wechseln. Klicken Sie auf **Journey Optimizer**.
+Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud wechseln](https://experience.adobe.com). Auf **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxName--`.
+Sie werden zur Ansicht **Startseite** in Journey Optimizer weitergeleitet. Stellen Sie zunächst sicher, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Sie befinden sich dann in der **Startseite**-Ansicht Ihres Sandbox-`--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-Scrollen Sie im linken Menü nach unten und klicken Sie auf **Konfigurationen**. Klicken Sie anschließend unter **Datenquellen** auf die Schaltfläche **Verwalten** .
+Scrollen Sie im linken Menü nach unten und klicken Sie auf **Konfigurationen**. Klicken Sie anschließend auf die Schaltfläche **Verwalten** unter **Datenquellen**.
 
 ![Demo](./images/menudatasources.png)
 
-Daraufhin wird die Liste **Data Sources** angezeigt.
-Klicken Sie auf **Data Source erstellen** , um Ihre Datenquelle hinzuzufügen.
+Anschließend wird die Liste **Datenquellen** angezeigt.
+Klicken Sie auf **Daten-Source erstellen**, um Ihre Datenquelle hinzuzufügen.
 
 ![Demo](./images/dshome.png)
 
@@ -35,47 +36,43 @@ Es wird ein leeres Datenquellen-Popup angezeigt.
 
 ![Demo](./images/emptyds.png)
 
-Bevor Sie mit der Konfiguration beginnen können, benötigen Sie ein Konto mit dem Dienst **Wetterkarte öffnen** . Führen Sie diese Schritte aus, um Ihr Konto zu erstellen und Ihren API-Schlüssel zu erhalten.
+Bevor Sie mit der Konfiguration beginnen können, benötigen Sie ein Konto mit dem Service **Open Weather Map**. Führen Sie diese Schritte aus, um Ihr Konto zu erstellen und Ihren API-Schlüssel abzurufen.
 
-Wechseln Sie zu [https://openweathermap.org/](https://openweathermap.org/). Klicken Sie auf der Startseite auf **Anmelden**.
+Navigieren Sie zu [https://openweathermap.org/](https://openweathermap.org/). Klicken Sie auf der Homepage auf **Anmelden**.
 
 ![WeatherMap](./images/owm.png)
 
-Klicken Sie auf **Konto erstellen**.
+Klicken Sie **Konto erstellen**.
 
 ![WeatherMap](./images/owm1.png)
 
-Füllen Sie die Details aus.
+Füllen Sie die Details aus. Klicken Sie **Konto erstellen**.
 
 ![WeatherMap](./images/owm2.png)
-
-Klicken Sie auf **Konto erstellen**.
-
-![WeatherMap](./images/owm3.png)
 
 Sie werden dann zu Ihrer Kontoseite weitergeleitet.
 
 ![WeatherMap](./images/owm4.png)
 
-Klicken Sie im Menü auf **API-Schlüssel** , um Ihren API-Schlüssel abzurufen, den Sie zum Einrichten Ihrer benutzerdefinierten externen Datenquelle benötigen.
+Klicken Sie im Menü auf **API-Schlüssel**, um Ihren API-Schlüssel abzurufen, den Sie zum Einrichten Ihrer benutzerdefinierten externen Datenquelle benötigen.
 
 ![WeatherMap](./images/owm5.png)
 
 Ein **API-Schlüssel** sieht wie folgt aus: `b2c4c36b6bb59c3458d6686b05311dc3`.
 
-Die **API-Dokumentation** für das **aktuelle Wetter** [finden Sie hier](https://openweathermap.org/current).
+Die **API-Dokumentation** für **Aktuelles Wetter** finden Sie [hier](https://openweathermap.org/current).
 
-In unserem Anwendungsfall implementieren wir die Verbindung mit Open Weather Map basierend auf der Stadt, in der sich der Kunde befindet.
+Für diesen Anwendungsfall implementieren Sie die Verbindung mit Open Weather Map basierend auf der Stadt, in der sich der Kunde befindet, mithilfe der **integrierten API-Anfrage nach Stadtname**.
 
 ![WeatherMap](./images/owm6.png)
 
-Gehen Sie zurück zu **Adobe Journey Optimizer**, zu Ihrem leeren Popup für die **Externe Daten - Source** .
+Kehren Sie zurück zu **Adobe Journey Optimizer**, um Ihr leeres Popup **Externe Daten-Source** zu öffnen.
 
 ![Demo](./images/emptyds.png)
 
-Verwenden Sie als Namen für die Datenquelle `--aepUserLdap--WeatherApi`. In diesem Beispiel ist der Datenquellenname `vangeluwWeatherApi `.
+Verwenden Sie `--aepUserLdap--WeatherApi` als Namen für die Datenquelle.
 
-Legen Sie für Beschreibung den Wert `Access to the Open Weather Map` fest.
+Beschreibung festlegen auf: `Access to the Open Weather Map`.
 
 Die URL für die Open Weather Map-API lautet: **http://api.openweathermap.org/data/2.5/weather?units=metric**
 
@@ -94,96 +91,106 @@ Verwenden Sie diese Variablen:
 
 ![Demo](./images/dsauth.png)
 
-Schließlich müssen Sie eine **FieldGroup** definieren, die im Wesentlichen die Anfrage ist, die Sie an die Wetter-API senden. In unserem Fall möchten wir den Namen der Stadt verwenden, um das aktuelle Wetter für diese Stadt anzufordern.
+Schließlich müssen Sie eine &quot;**&quot; definieren** was im Wesentlichen die Anfrage ist, die Sie an die Wetter-API senden. In unserem Fall möchten wir den Namen der Stadt verwenden, um das aktuelle Wetter für diese Stadt anzufordern.
 
 ![Demo](./images/fg.png)
 
-Gemäß der Dokumentation zur Wetter-API müssen wir den Parameter `q=City` senden.
+Gemäß der Dokumentation zur Wetter-API müssen Sie einen `q=City` senden.
 
 ![Demo](./images/owmapi.png)
 
-Um die erwartete API-Anfrage zu erfüllen, konfigurieren Sie Ihre FieldGroup wie folgt:
+Um der erwarteten API-Anfrage zu entsprechen, konfigurieren Sie Ihre Feldergruppe wie folgt:
 
 >[!IMPORTANT]
 >
->Der Name der Feldergruppe muss eindeutig sein. Verwenden Sie diese Namenskonvention: `--aepUserLdap--WeatherByCity` . In diesem Fall sollte der Name `vangeluwWeatherByCity` sein.
+>Der Name der Feldergruppe muss eindeutig sein. Bitte verwenden Sie diese Namenskonvention: `--aepUserLdap--WeatherByCity`
 
 ![Demo](./images/fg1.png)
 
 Für die Antwort-Payload müssen Sie ein Beispiel der Antwort einfügen, die von der Wetter-API gesendet wird.
 
-Die erwartete API-JSON-Antwort finden Sie auf der API-Dokumentationsseite [hier](https://openweathermap.org/current).
+Die erwartete API-JSON-Antwort finden Sie auf der Seite zur API-Dokumentation [hier](https://openweathermap.org/current) unter dem **JSON**-Betreff.
 
 ![Demo](./images/owmapi1.png)
 
-Alternativ können Sie die JSON-Antwort hier kopieren:
+Oder Sie können die JSON-Antwort von hier kopieren:
 
 ```json
-{"coord": { "lon": 139,"lat": 35},
-  "weather": [
-    {
-      "id": 800,
-      "main": "Clear",
-      "description": "clear sky",
-      "icon": "01n"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 281.52,
-    "feels_like": 278.99,
-    "temp_min": 280.15,
-    "temp_max": 283.71,
-    "pressure": 1016,
-    "humidity": 93
-  },
-  "wind": {
-    "speed": 0.47,
-    "deg": 107.538
-  },
-  "clouds": {
-    "all": 2
-  },
-  "dt": 1560350192,
-  "sys": {
-    "type": 3,
-    "id": 2019346,
-    "message": 0.0065,
-    "country": "JP",
-    "sunrise": 1560281377,
-    "sunset": 1560333478
-  },
-  "timezone": 32400,
-  "id": 1851632,
-  "name": "Shuzenji",
-  "cod": 200
-}
+{
+   "coord": {
+      "lon": 7.367,
+      "lat": 45.133
+   },
+   "weather": [
+      {
+         "id": 501,
+         "main": "Rain",
+         "description": "moderate rain",
+         "icon": "10d"
+      }
+   ],
+   "base": "stations",
+   "main": {
+      "temp": 284.2,
+      "feels_like": 282.93,
+      "temp_min": 283.06,
+      "temp_max": 286.82,
+      "pressure": 1021,
+      "humidity": 60,
+      "sea_level": 1021,
+      "grnd_level": 910
+   },
+   "visibility": 10000,
+   "wind": {
+      "speed": 4.09,
+      "deg": 121,
+      "gust": 3.47
+   },
+   "rain": {
+      "1h": 2.73
+   },
+   "clouds": {
+      "all": 83
+   },
+   "dt": 1726660758,
+   "sys": {
+      "type": 1,
+      "id": 6736,
+      "country": "IT",
+      "sunrise": 1726636384,
+      "sunset": 1726680975
+   },
+   "timezone": 7200,
+   "id": 3165523,
+   "name": "Province of Turin",
+   "cod": 200
+}    
 ```
 
-Kopieren Sie die obige JSON-Antwort in die Zwischenablage und rufen Sie dann den Konfigurationsbildschirm für benutzerdefinierte Datenquellen auf.
+Kopieren Sie die obige JSON-Antwort in die Zwischenablage und navigieren Sie dann zu Ihrem Bildschirm für die Konfiguration der benutzerdefinierten Datenquelle.
 
-Klicken Sie auf das Symbol **Payload bearbeiten** .
+Klicken Sie auf das **Payload bearbeiten**.
 
 ![Demo](./images/owmapi2.png)
 
-Es wird ein Popup angezeigt, in das Sie jetzt die oben genannte JSON-Antwort einfügen müssen.
+Es wird ein Popup angezeigt, in dem Sie die obige JSON-Antwort einfügen müssen.
 
 ![Demo](./images/owmapi3.png)
 
-Fügen Sie Ihre JSON-Antwort ein, danach wird dies angezeigt. Klicken Sie auf **Speichern**.
+Fügen Sie Ihre JSON-Antwort ein. Danach sehen Sie dies. Klicken Sie auf **Speichern**.
 
 ![Demo](./images/owmapi4.png)
 
-Ihre benutzerdefinierte Datenquellenkonfiguration ist jetzt abgeschlossen. Scrollen Sie nach oben und klicken Sie auf **Speichern**.
+Die Konfiguration Ihrer benutzerdefinierten Datenquelle ist jetzt abgeschlossen. Scrollen Sie nach oben und klicken Sie auf **Speichern**.
 
 ![Demo](./images/dssave.png)
 
-Ihre Datenquelle wurde jetzt erfolgreich erstellt und ist Teil der Liste **Data Sources** .
+Ihre Datenquelle wurde erfolgreich erstellt und ist Teil der Liste **Datenquellen**.
 
 ![Demo](./images/dslist.png)
 
-Nächster Schritt: [3.2.3 Benutzerdefinierte Aktion definieren](./ex3.md)
+Nächster Schritt: [3.2.3 Definieren einer benutzerdefinierten Aktion](./ex3.md)
 
-[Zurück zu Modul 3.2](journey-orchestration-external-weather-api-sms.md)
+[Zurück zum Modul 3.2](journey-orchestration-external-weather-api-sms.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

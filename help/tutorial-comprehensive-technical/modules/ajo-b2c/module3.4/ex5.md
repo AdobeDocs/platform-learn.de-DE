@@ -1,39 +1,39 @@
 ---
 title: Adobe Journey Optimizer - Geschäftsereignisse
-description: In diesem Abschnitt wird erläutert, wie Sie die Funktion für Geschäftsereignisse verwenden können, um einen "Artikel wieder auf Lager"Anwendungsfall auszuführen
+description: In diesem Abschnitt wird erläutert, wie Sie die Funktion „Geschäftsereignisse“ verwenden können, um einen Anwendungsfall „Artikel wieder auf Lager“ durchzuführen
 kt: 5342
 doc-type: tutorial
 exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1158'
 ht-degree: 8%
 
 ---
 
-# 3.4.5 Geschäftsereignis-Journey erstellen
+# 3.4.5 Erstellen einer Geschäftsereignis-Journey
 
-Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud](https://experience.adobe.com) wechseln. Klicken Sie auf **Journey Optimizer**.
+Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud wechseln](https://experience.adobe.com). Auf **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxName--`.
+Sie werden zur Ansicht **Startseite** in Journey Optimizer weitergeleitet. Stellen Sie zunächst sicher, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Sie befinden sich dann in der **Startseite**-Ansicht Ihres Sandbox-`--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-## 3.4.5.1 Geschäftsereignis erstellen
+## 3.4.5.1 Erstellen eines Geschäftsereignisses
 
-Klicken Sie im linken Menü auf **Konfigurationen**. Klicken Sie auf die Schaltfläche **Verwalten** in der Karte **Ereignisse** .
+Klicken Sie im linken Menü auf &quot;**&quot;**. Klicken Sie auf die **Verwalten** in der Karte **Ereignisse**.
 
 ![Journey Optimizer](./images/be1.png)
 
-Geschäftsereignisse sind ein neuer Ereignistyp, den Sie in Journey Optimizer erstellen können. Im Gegensatz zu den **Einzelereignissen** , die Sie in vorherigen Modulen erstellt haben, werden die Geschäftsereignisse nicht vom Kunden, sondern vom Unternehmen ausgelöst. Jetzt erstellen Sie Ihr Geschäftsereignis.
+Geschäftsereignisse sind eine neue Art von Ereignissen, die Sie in Journey Optimizer erstellen können. Im Gegensatz **„Unitär**-Ereignisse, die Sie in vorherigen Modulen erstellt haben, werden die Geschäftsereignisse nicht vom Kunden, sondern von der Organisation ausgelöst. Jetzt erstellen Sie Ihr Geschäftsereignis.
 
-Klicken Sie auf **Ereignis erstellen**.
+Klicken Sie **Ereignis erstellen**.
 
 ![Journey Optimizer](./images/be2.png)
 
-Geben Sie die folgenden Werte in das Formular Ereigniserstellung ein:
+Geben Sie die folgenden Werte in das Formular für die Ereigniserstellung ein:
 
 - **Name**: `--aepUserLdap--ItemBackInStock`. Beispiel: **vangeluwItemBackInStock**
 - **Beschreibung**: Dieses Ereignis wird ausgelöst, wenn ein Produkt wieder auf Lager ist
@@ -41,13 +41,13 @@ Geben Sie die folgenden Werte in das Formular Ereigniserstellung ein:
 
 ![Journey Optimizer](./images/evde.png)
 
-Wählen Sie für das Schema **Demo-System - Ereignisschema für JO Business Events (Global v1.1) v.1**. Jetzt müssen Sie die Felder im Schema auswählen, die Sie für unseren Anwendungsfall benötigen.
+Wählen Sie für das Schema **Demosystem - Ereignisschema für JO-Geschäftsereignisse (Global v1.1) v.1** aus. Nun müssen Sie die Felder im Schema auswählen, die Sie für Ihren Anwendungsfall benötigen.
 
 ![Journey Optimizer](./images/evdes.png)
 
 Führen Sie folgende Schritte aus:
 
-Klicken Sie auf das Symbol **Stift** im Feld, in dem das Feld **1 Feld ausgewählt ist**.
+Klicken Sie auf das **Bleistift**-Symbol in dem Feld, in dem sich **1 Feld ausgewählt** befindet.
 
 ![Journey Optimizer](./images/23.8-4.png)
 
@@ -55,15 +55,15 @@ Wählen Sie alle verfügbaren Felder im Schema aus und klicken Sie dann auf **OK
 
 ![Journey Optimizer](./images/23.8-5.png)
 
-Für die Bedingung: Sie müssen angeben, welche Datensätze in diesem Schema das Geschäftsereignis auslösen sollen.
+Für die Bedingung: Sie müssen angeben, welche Datensätze in diesem Schema das Geschäftsereignis auslösen.
 
 Führen Sie folgende Schritte aus:
 
-Klicken Sie auf das Symbol **Stift** im Feld, in dem die Meldung **Bedingung hinzufügen** angezeigt wird.
+Klicken Sie auf **Stiftsymbol** dem Feld, in dem sich &quot;**hinzufügen“**.
 
 ![Journey Optimizer](./images/23.8-6.png)
 
-Erweitern Sie auf der linken Seite das Objekt `--aepTenantId--` , erweitern Sie das Objekt **joBusinessEvents** und ziehen Sie das Feld **eventName** auf die Arbeitsfläche.
+Erweitern Sie auf der linken Seite das `--aepTenantId--`, erweitern Sie das Objekt **joBusinessEvents** und ziehen Sie das Feld **eventName** per Drag-and-Drop auf die Arbeitsfläche.
 
 ![Journey Optimizer](./images/23.8-7.png)
 
@@ -76,37 +76,37 @@ Klicken Sie auf **OK**.
 
 ![Journey Optimizer](./images/23.8-9.png)
 
-Schließlich sollte Ihr Formular zur Ereigniserstellung wie folgt aussehen: Klicken Sie auf **Speichern** , um Ihr Geschäftsereignis zu speichern.
+Schließlich sollte Ihr Formular für die Ereigniserstellung wie folgt aussehen. Klicken Sie **Speichern**, um Ihr Geschäftsereignis zu speichern.
 
 ![Journey Optimizer](./images/23.8-10.png)
 
-## 3.4.5.2 Geschäftsereignis-Journey erstellen
+## 3.4.5.2 Erstellen einer Geschäftsereignis-Journey
 
-Sie können dieses Geschäftsereignis und die Nachricht jetzt in einer Journey nutzen. Wechseln Sie zu **Journey**. Klicken Sie auf **Journey erstellen**.
+Sie können jetzt dieses Geschäftsereignis und die Nachricht in einer Journey nutzen. Wechseln Sie zu **Journey**. Klicken Sie **Journey erstellen**.
 
 ![Journey Optimizer](./images/bej10.png)
 
 Auf der rechten Seite sehen Sie ein Formular, in dem Sie den Journey-Namen und die Beschreibung angeben müssen. Geben Sie die folgenden Werte ein:
 
-- **Name**: `--aepUserLdap-- - Item back in stock journey`. Beispiel: vangeluw - Artikel wieder in Journey
-- **Beschreibung**: Diese Journey sendet eine SMS, wenn ein Artikel wieder auf Lager ist, an Besucher, die Interesse gezeigt haben.
+- **Name**: `--aepUserLdap-- - Item back in stock journey`. Zum Beispiel: vangeluw - Artikel zurück auf Lager Journey
+- **Beschreibung**: Diese Journey sendet eine SMS, wenn ein Artikel wieder auf Lager ist, an einen Besucher, der Interesse gezeigt hat.
 
 Klicken Sie auf **OK**.
 
 ![Journey Optimizer](./images/bej11.png)
 
-Suchen Sie im linken Menü unter **Ereignisse** nach Ihrem ldap. Sie finden das zuvor erstellte Geschäftsereignis `--aepUserLdap--ItemBackInStock`. Ziehen Sie dieses Ereignis auf die Arbeitsfläche, da dies der Ausgangspunkt der Journey sein wird.
+Suchen Sie im linken Menü unter **Ereignisse** nach Ihrem LDAP. Sie finden die zuvor erstellte `--aepUserLdap--ItemBackInStock` für Geschäftsereignisse. Ziehen Sie dieses Ereignis per Drag-and-Drop auf die Arbeitsfläche, da dies der Ausgangspunkt der Journey ist.
 
 ![Journey Optimizer](./images/bej12.png)
 
-Wie Sie sehen können, wurde der Arbeitsfläche automatisch die Aktivität **Audience lesen** hinzugefügt. Dies liegt daran, dass die Geschäftsereignisse nur einen Trigger an die Journey senden, um eine bestimmte Zielgruppe zu lesen, die dann die Profilliste für diese Journey abruft.
+Wie Sie sehen können, wurde **Aktivität „Zielgruppe lesen** automatisch zur Arbeitsfläche hinzugefügt. Dies liegt daran, dass die Geschäftsereignisse nur einen Trigger für die Journey senden, um eine bestimmte Zielgruppe zu lesen, die dann die Profilliste für diese Journey abruft.
 
-Klicken Sie auf die Aktivität **Audience lesen** .
-Die Konfiguration **Audience lesen** erwartet, dass Sie die Audience auswählen, die Sie über das gerade eingetretene Geschäftsereignis benachrichtigen möchten. Klicken Sie auf das Feld **Zielgruppe auswählen** .
+Klicken Sie auf die **Zielgruppe lesen** Aktivität.
+Bei der Konfiguration **Zielgruppe lesen** müssen Sie die Zielgruppe auswählen, die Sie über das gerade eingetretene Geschäftsereignis benachrichtigen möchten. Klicken Sie auf **Feld** Zielgruppe auswählen“.
 
 ![Journey Optimizer](./images/bej13.png)
 
-Suchen Sie im Popup **Zielgruppe auswählen** nach Ihrem ldap und wählen Sie die Zielgruppe aus, die Sie in [Modul 2.3 - Echtzeit-Kundendatenplattform - Erstellen einer Zielgruppe und Ausführen der Aktion](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) mit dem Namen `--aepUserLdap-- - Interest in Galaxy S24` erstellt haben. Klicken Sie auf **Speichern**.
+Suchen Sie im Popup **Zielgruppe wählen** nach Ihrem LDAP und wählen Sie die Zielgruppe aus, die Sie in [Modul 2.3 - Real-Time CDP - Eine Zielgruppe erstellen und ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md). `--aepUserLdap-- - Interest in Galaxy S24` erstellt haben. Klicken Sie auf **Speichern**.
 
 ![Journey Optimizer](./images/bej14.png)
 
@@ -114,11 +114,11 @@ Klicken Sie anschließend auf **OK**.
 
 ![Journey Optimizer](./images/bej15.png)
 
-Der nächste Schritt besteht darin, die gewünschte Aktion per Drag-and-Drop in diese Journey zu ziehen. Wählen Sie die Aktion **SMS** aus und ziehen Sie sie nach der soeben hinzugefügten Bedingung per Drag-and-Drop.
+Der nächste Schritt besteht darin, die Aktion, die wir auf dieser Journey ausführen möchten, per Drag-and-Drop abzulegen. Wählen Sie die Aktion **SMS** aus und ziehen Sie sie dann nach der soeben hinzugefügten Bedingung per Drag-and-Drop hinüber.
 
 ![Demo](./images/jop9.png)
 
-Setzen Sie die **Kategorie** auf **Marketing** und wählen Sie eine SMS-Oberfläche aus, über die Sie SMS senden können. In diesem Fall ist die auszuwählende E-Mail-Oberfläche **SMS**.
+Legen Sie die **Kategorie** auf **Marketing** fest und wählen Sie eine SMS-Oberfläche aus, mit der Sie SMS senden können. In diesem Fall ist die auszuwählende E-Mail-Oberfläche **SMS**.
 
 ![ACOP](./images/journeyactions1x.png)
 
@@ -126,65 +126,65 @@ Der nächste Schritt besteht darin, Ihre Nachricht zu erstellen. Klicken Sie daz
 
 ![ACOP](./images/journeyactions2x.png)
 
-Jetzt wird das Nachrichten-Dashboard angezeigt, in dem Sie den Text Ihrer SMS konfigurieren können. Klicken Sie auf den Bereich **Nachricht erstellen** , um Ihre Nachricht zu erstellen.
+Jetzt sehen Sie das Nachrichten-Dashboard, in dem Sie den Text Ihrer SMS konfigurieren können. Klicken Sie auf **Nachricht erstellen**, um Ihre Nachricht zu erstellen.
 
 ![Journey Optimizer](./images/sms3.png)
 
-Geben Sie den folgenden Text ein: `Hi {{profile.person.name.firstName}}, the Proteus Fitness Jackshirt is back in stock at Luma.`. Klicken Sie auf **Speichern**.
+Geben Sie folgenden Text ein: `Hi {{profile.person.name.firstName}}, the Proteus Fitness Jackshirt is back in stock at Luma.`. Klicken Sie auf **Speichern**.
 
 ![Journey Optimizer](./images/sms4.png)
 
-Gehen Sie zurück zum Nachrichten-Dashboard, indem Sie in der oberen linken Ecke auf den Pfeil **11} neben dem Betreffzeilentext klicken.**
+Kehren Sie zum Nachrichten-Dashboard zurück, indem Sie auf den **Pfeil** neben dem Betreffzeilentext in der oberen linken Ecke klicken.
 
 ![Journey Optimizer](./images/oc79xx.png)
 
-Jetzt sehen Sie Ihre abgeschlossene SMS-Aktion. Klicken Sie auf **OK**.
+Jetzt wird Ihre abgeschlossene SMS-Aktion angezeigt. Klicken Sie auf **OK**.
 
 ![Journey Optimizer](./images/oc79xxy.png)
 
-Ihre Journey kann jetzt veröffentlicht werden. Klicken Sie auf **Veröffentlichen**.
+Ihr Journey ist jetzt zur Veröffentlichung bereit. Klicken Sie auf **Veröffentlichen**.
 
 ![Journey Optimizer](./images/jop13.png)
 
-Klicken Sie erneut auf **Publish**.
+Klicken Sie erneut auf **** Publish.
 
 ![Journey Optimizer](./images/jop14.png)
 
-Ihre Journey ist jetzt veröffentlicht, können Sie sie jetzt testen!
+Ihr Journey ist jetzt veröffentlicht, Sie können ihn jetzt testen!
 
 ![Journey Optimizer](./images/jop15.png)
 
-## 3.4.5.3 Geschäftsereignis testen Journey
+## 3.4.5.3 Testen der Geschäftsereignis-Journey
 
-Sie simulieren jetzt die Neuvorgabe eines Produkts, indem Sie ein neues Ereignis mit Postman im Format **Demo-System - Ereignisschema für JO-Geschäftsereignisse (Global v1.1) v.1** aufrufen.
+Sie simulieren jetzt die erneute Lagerung eines Produkts, indem Sie mithilfe von Postman ein neues Ereignis für das **Demosystem - Ereignisschema für JO-Geschäftsereignisse (Global v1.1) v.1** aufnehmen.
 
 Klicken Sie im linken Menü auf **Quellen** und dann auf die Registerkarte **Konten**.
 
 ![Journey Optimizer](./images/s1.png)
 
-Auf der Registerkarte **Konten** finden Sie das Konto mit dem Namen **Journey Optimizer Business Events**. Klicken Sie darauf, um es zu öffnen.
+Auf der Registerkarte **Konten** finden Sie das Konto mit dem Namen **Journey Optimizer Business Events**. Klicken Sie darauf, um sie zu öffnen.
 
 ![Journey Optimizer](./images/s2.png)
 
-Dieses Konto hat nur einen Datenfluss, klicken Sie auf den Namen des Datenflusses, um ihn auszuwählen.
+Dieses Konto hat nur einen Datenfluss. Klicken Sie auf den Namen des Datenflusses, um ihn auszuwählen.
 
 ![Journey Optimizer](./images/s3.png)
 
-Klicken Sie im rechten Menü auf **Schema-Payload kopieren** . Mit dieser Option wird der gesamte Befehl **curl** kopiert, um einen Datensatz mit dem Befehl **Demo System - Event Schema for JO Business Events (Global v1.1) v.1** in die Zwischenablage einzufügen.
+Klicken **im rechten Menü auf** Schema-Payload kopieren“. Diese Option kopiert den gesamten **curl**-Befehl, um einen Datensatz für **Demosystem - Ereignisschema für JO-Geschäftsereignisse (Global v1.1) v.1) in** Zwischenablage einzufügen.
 
 ![Journey Optimizer](./images/s4.png)
 
-Fügen Sie den Befehl &quot;Curl&quot;in einen Texteditor ein.
+Fügen Sie den cURL-Befehl in einen Texteditor ein
 
 ![Journey Optimizer](./images/s5.png)
 
-Sehen wir uns diese Anfrage genauer an,
+Schauen wir uns diese Anfrage näher an.
 
-- Die POST-Anfrage wird an die DCS-Inlet-ID gesendet
+- Die Anfrage zur POST wird an die DCS Inlet ID gesendet
 - Die Anfrage verweist auf das Schema, den Datensatz und die Organisations-ID.
-- Schließlich enthält es den Knoten xdmEntity , der die Daten darstellt, die wir im Datensatz erstellen möchten.
+- Schließlich enthält sie den Knoten xdmEntity , der die Daten darstellt, die wir im Datensatz erstellen möchten.
 
-Sie müssen nun die folgende `xdmEntity` -Zeile ersetzen..
+Jetzt müssen Sie die folgende `xdmEntity` ersetzen…
 
 ```json
 "xdmEntity": {
@@ -201,7 +201,7 @@ Sie müssen nun die folgende `xdmEntity` -Zeile ersetzen..
 }
 ```
 
-... überprüfen Sie in dieser Zeile das Feld eventName wie `--aepUserLdap--ItemBackInStock`, das die Bedingung darstellt, die Sie in Ihrem Geschäftsereignis für den Trigger Ihrer Journey angegeben haben.
+…überprüfen Sie anhand dieser Zeile das Feld eventName, wie es lauten sollte: `--aepUserLdap--ItemBackInStock`. Dies stellt die Bedingung dar, die Sie im Geschäftsereignis angegeben haben, um Ihren Journey zum Trigger zu bringen.
 
 ```json
 "xdmEntity": {
@@ -218,7 +218,7 @@ Sie müssen nun die folgende `xdmEntity` -Zeile ersetzen..
 }
 ```
 
-Der aktualisierte Befehl **curl** sollte wie folgt aussehen:
+Der aktualisierte **curl**-Befehl sollte wie folgt aussehen:
 
 ![Journey Optimizer](./images/s6.png)
 
@@ -228,30 +228,30 @@ Wählen Sie alles aus und kopieren Sie es in die Zwischenablage.
 
 ![Journey Optimizer](./images/23.8-46.png)
 
-Wählen Sie die Registerkarte **Rohtext** aus und fügen Sie den zuvor kopierten Befehl ein. Klicken Sie auf **Weiter**.
+Wählen Sie die Registerkarte **Rohtext** und fügen Sie den zuvor kopierten Befehl ein. Klicken Sie auf **Weiter**.
 
 ![Journey Optimizer](./images/s7.png)
 
-Klicken Sie auf **Importieren**.
+Klicken Sie **Importieren**.
 
 ![Journey Optimizer](./images/23.8-50.png)
 
-Postman hat den Befehl **curl** automatisch in einen REST-Befehl konvertiert, der ausgelöst werden kann. Drücken Sie einfach die Schaltfläche **Senden** , um die Erstellung dieses Datensatzes im Datensatz anzufordern.
+Postman hat den **curl**-Befehl automatisch in einen REST-Befehl konvertiert, der ausgelöst werden kann. Klicken Sie einfach auf die Schaltfläche **Senden**, um die Erstellung dieses Datensatzes im Datensatz anzufordern.
 
 ![Journey Optimizer](./images/23.8-51.png)
 
-Überprüfen Sie, ob Ihre Anfrage erfolgreich empfangen wurde. Suchen Sie in Postman nach dem Status &quot;**200 OK**&quot;.
+Überprüfen Sie, ob Ihre Anfrage erfolgreich empfangen wurde. Suchen Sie nach einem **200 OK**-Status in Postman.
 
 ![Journey Optimizer](./images/s8.png)
 
-Es kann einige Minuten dauern, bis die SMS auf Ihrem Mobiltelefon ankommt. Ist dies nicht der Fall, enthält Ihr Segment **Interesse an Proteus Fitness Jackshirt** möglicherweise kein Profil mit einem korrekten Mobiltelefon. Wenn ja, besuchen Sie die Luma-Website, besuchen Sie das Produkt **Proteus Fitness Jackshirt** und registrieren Sie sich, während Sie sicherstellen, dass Sie die richtige Mobiltelefonnummer angeben.
+Es kann einige Minuten dauern, bis die SMS auf Ihrem Mobiltelefon ankommt. Ist dies nicht der Fall, enthält **Segment „Interesse an Proteus Fitness**&quot; möglicherweise kein Profil mit einem richtigen Mobiltelefon. Wenn ja, gehen Sie auf die Luma Website, besuchen Sie das **Proteus Fitness Jackshirt** Produkt und registrieren Sie sich, während Sie sicherstellen, dass Sie die richtige Mobiltelefonnummer angeben.
 
 ![Journey Optimizer](./images/s9.png)
 
-Du bist jetzt mit dieser Übung fertig.
+Sie haben diese Übung jetzt abgeschlossen.
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 
-[Zurück zu Modul 3.4](./journeyoptimizer.md)
+[Zurück zum Modul 3.4](./journeyoptimizer.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

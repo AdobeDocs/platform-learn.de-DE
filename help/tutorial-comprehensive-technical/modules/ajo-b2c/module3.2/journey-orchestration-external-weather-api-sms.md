@@ -6,24 +6,22 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 7f3d6dcb-845d-4ff1-97c3-8e93b8d2c624
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 07153124eb3cd4c07bbabb6f7b137f525fa1a27f
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # 3.2 Adobe Journey Optimizer: Externe Datenquellen und benutzerdefinierte Aktionen
 
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-In diesem Modul verwenden Sie Adobe Journey Optimizer, um das Kundenverhalten zu überwachen, sowohl online als auch offline, und darauf intelligent, kontextbezogen und in Echtzeit zu reagieren. Sie haben bereits eine erste praktische Erfahrung mit Adobe Journey Optimizer in Modul 6 gemacht. In dieser Übung werden Sie ein wenig tiefer gehen und einen erweiterten Anwendungsfall untersuchen, bei dem externe Datenquellen als Teil einer Journey verwendet werden.
+In diesem Modul verwenden Sie Adobe Journey Optimizer, um das Kundenverhalten sowohl online als auch offline zu überwachen und intelligent, kontextbezogen und in Echtzeit darauf zu reagieren. Sie haben bereits erste praktische Erfahrungen mit Adobe Journey Optimizer in Modul 6 gesammelt. In dieser Übung gehen Sie etwas tiefer und untersuchen einen fortgeschritteneren Anwendungsfall, bei dem externe Datenquellen als Teil eines Journey verwendet werden.
 
 ## Lernziele
 
-- Erfahren Sie, wie Sie in Adobe Journey Optimizer Ereignisse, externe Datenquellen und Journey erstellen.
-- Erfahren Sie, wie Sie Wetterinformationen aus der Open Weather API nutzen können.
-- Erfahren Sie, wie Sie benutzerdefinierte Aktionsziele wie Twilio und Slack aus Adobe Journey Optimizer verwenden.
+- Erfahren Sie, wie Sie Ereignisse, externe Datenquellen und Journey in Adobe Journey Optimizer erstellen
+- Erfahren Sie, wie Sie Wetterinformationen über die Open Weather-API nutzen können.
+- Erfahren Sie, wie Sie benutzerdefinierte Aktionsziele wie Twilio und Slack von Adobe Journey Optimizer verwenden.
 
 ## Voraussetzungen
 
@@ -33,13 +31,13 @@ In diesem Modul verwenden Sie Adobe Journey Optimizer, um das Kundenverhalten zu
 
 ## Geschäftskontext
 
-Als Marke haben Sie stark in die Personalisierung von Online-Erlebnissen investiert. Jetzt möchten Sie so kontextuell und relevant für Offline-Erlebnisse sein.
-In diesem Modul verwenden Sie die Präsenz eines Kunden in einem Offline-Store, um dann innerhalb des Stores ein personalisiertes Erlebnis bereitzustellen, indem Sie diesem Kunden relevante Inhalte auf unseren In-Store-Bildschirmen präsentieren. Gleichzeitig möchten wir diesem Kunden eine personalisierte Push- oder SMS-Nachricht in Echtzeit senden.
-Als Marke verstehen Sie auch, dass der Kontext das Interesse eines Kunden stark beeinflusst. Daher möchten Sie die aktuellen Wetterinformationen des Standorts dieses Kunden einbringen, um zu entscheiden, welche Inhalte oder Werbeaktionen angezeigt werden sollen.
+Als Marke haben Sie viel in die Personalisierung von Online-Erlebnissen investiert. Jetzt möchten Sie für Offline-Erlebnisse so kontextuell und relevant sein.
+In diesem Modul verwenden Sie die Präsenz eines Kunden in einem Offline-Store, um dann ein personalisiertes Erlebnis innerhalb des Stores zu bieten, indem Sie diesem Kunden relevante Inhalte auf unseren Bildschirmen im Store präsentieren. Gleichzeitig möchten wir demselben Kunden eine personalisierte Push- oder SMS-Nachricht bereitstellen, und zwar in Echtzeit.
+Als Marke wissen Sie auch, dass der Kontext sich stark auf das Interesse eines Kunden auswirkt. Daher sollten Sie die aktuellen Wetterinformationen des Standorts dieses Kunden einbringen, um zu entscheiden, welche Inhalte oder Werbeaktionen angezeigt werden sollen.
 
 >[!NOTE]
 >
->Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie unter [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben.
+>Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie in [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben
 
 ## Übungen
 
@@ -47,28 +45,28 @@ Als Marke verstehen Sie auch, dass der Kontext das Interesse eines Kunden stark 
 
 Erfahren Sie, wie Sie mit Adobe Journey Optimizer ein benutzerspezifisches Ereignis definieren.
 
-[3.2.2 Externe Datenquelle definieren](./ex2.md)
+[3.2.2 Definieren einer externen Datenquelle](./ex2.md)
 
-Erfahren Sie, wie Sie eine externe Datenquelle mit Adobe Journey Optimizer konfigurieren.
+Erfahren Sie, wie Sie eine externe Datenquelle mithilfe von Adobe Journey Optimizer konfigurieren.
 
-[3.2.3 Benutzerdefinierte Aktion definieren](./ex3.md)
+[3.2.3 Definieren einer benutzerdefinierten Aktion](./ex3.md)
 
 Erfahren Sie, wie Sie mit Adobe Journey Optimizer eine externe Aktion definieren.
 
-[3.2.4 Journey und Nachrichten erstellen](./ex4.md)
+[3.2.4 Erstellen von Journey und Nachrichten](./ex4.md)
 
-Kombinieren Sie Ereignisse, Datenquellen und Aktionen zu einer intelligenten und kontextbezogenen Journey.
+Kombinieren Sie Ereignisse, Datenquellen und Aktionen zu einer intelligenten und kontextuellen Journey.
 
-[3.2.5 Trigger Ihrer Journey](./ex5.md)
+[3.2.5 Trigger des Journey](./ex5.md)
 
 Trigger der spezifischen Journey.
 
 [Zusammenfassung und Vorteile](./summary.md)
 
-Zusammenfassung dieses Moduls und Übersicht über die Vorteile.
+Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investieren, um alles über Adobe Experience Platform und seine Anwendungen zu erfahren. Wenn Sie Fragen haben, möchten Sie allgemeine Rückmeldungen von Vorschlägen zu künftigen Inhalten teilen, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com** senden.
+>Vielen Dank, dass Sie sich Zeit genommen haben, um alles über Adobe Experience Platform und seine Programme zu erfahren. Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

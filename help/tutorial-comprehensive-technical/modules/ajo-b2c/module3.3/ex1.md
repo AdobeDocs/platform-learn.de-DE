@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
@@ -16,44 +16,44 @@ ht-degree: 4%
 
 ## 3.3.1.1 Terminologie
 
-Um ein besseres Verständnis von Offer decisioning zu erhalten, empfehlen wir dringend, die [Übersicht](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=en) darüber zu lesen, wie der Offer decisioning Application Service mit Adobe Experience Platform funktioniert.
+Um Offer decisioning besser zu verstehen, empfehlen wir Ihnen dringend, die [Übersicht](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=en) über die Funktionsweise des Offer decisioning-Programm-Services mit Adobe Experience Platform zu lesen.
 
 Beim Arbeiten mit Offer decisioning müssen Sie die folgenden Konzepte verstehen:
 
 | Begriff | Erklärung |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Angebot** | Ein Angebot ist eine Marketing-Botschaft, der ggf. Regeln zugeordnet sind, die angeben, wer zum Anzeigen des Angebots berechtigt ist. Ein Angebot hat den Status Entwurf, Validierung oder Archivierung. |
-| **Platzierung** | Die Kombination aus Position (oder Kanaltyp) und Kontext (oder Content-Typ), in dem ein Angebot für einen Endbenutzer angezeigt wird. Es handelt sich dabei um eine Kombination aus Text-, HTML-, Bild-, JSON-Dateien in mobilen, Web-, Social-, Instant Messaging- und nicht digitalen Kanälen. |
-| **Regel** | Die Logik, die die Eignung von Endbenutzern für ein Angebot definiert und steuert. |
-| **Personalisiertes Angebot** | Eine anpassbare Marketing-Botschaft, die auf Eignungsregeln und Einschränkungen basiert. |
-| **Fallback-Angebot** | Das Standardangebot, das angezeigt wird, wenn ein Endbenutzer für keines der Angebote in der verwendeten Kollektion geeignet ist. |
-| **Capping** | Wird in einer Angebotsdefinition verwendet, um festzulegen, wie oft ein Angebot insgesamt und für einen bestimmten Benutzer unterbreitet werden kann. |
-| **Priorität** | Ebene zur Bestimmung der Prioritätsstufe aus einem Ergebnissatz von Angeboten. |
-| **Sammlung** | Wird verwendet, um eine Untergruppe von Angeboten aus der personalisierten Angebotsliste herauszufiltern und so den offer decisioning-Prozess zu beschleunigen. |
-| **Entscheidung** | Eine Kombination aus Angeboten, Platzierungen und Profilen, für die das Entscheidungsmodul das beste Angebot bereitstellen soll. |
-| **AEM Assets Essentials** | Ein universelles und zentralisiertes Erlebnis zum Speichern, Suchen und Auswählen von Assets in Adobe Experience Cloud Solutions und Adobe Experience Platform. |
+| **Angebot** | Ein Angebot ist eine Marketing-Nachricht, der ggf. Regeln zugeordnet sind, die angeben, wer sich zum Anzeigen des Angebots eignet. Ein Angebot hat den Status Entwurf, Genehmigt oder Archiviert. |
+| **Platzierung** | Die Kombination aus Standort (oder Kanaltyp) und Kontext (oder Inhaltstyp), in dem ein Angebot für einen Endbenutzer angezeigt wird. Im Grunde handelt es sich um eine Kombination aus Text, HTML, Bild, JSON in mobilen, Web-, Social-, Instant Messaging- und nicht digitalen Kanälen. |
+| **Regel** | Die Logik, die die Eignung von Endbenutzenden für ein Angebot definiert und steuert. |
+| **Personalisiertes Angebot** | Eine anpassbare Marketing-Nachricht, die auf Eignungsregeln und Einschränkungen basiert. |
+| **Fallback-Angebot** | Das Standardangebot, das angezeigt wird, wenn ein Endbenutzer für keines der Angebote in der verwendeten Sammlung geeignet ist. |
+| **Begrenzung** | Wird in einer Angebotsdefinition verwendet, um festzulegen, wie oft ein Angebot insgesamt und für eine bestimmte Benutzerin oder einen bestimmten Benutzer unterbreitet werden kann. |
+| **Priorität** | Ebene, um den Prioritätsrang aus einem Ergebnissatz von Angeboten zu bestimmen. |
+| **Sammlung** | Wird zum Filtern einer Untergruppe von Angeboten aus der personalisierten Angebotsliste verwendet, um den offer decisioning-Prozess zu beschleunigen. |
+| **Entscheidung** | Eine Kombination aus einer Reihe von Angeboten, Platzierungen und Profilen, für die der Marketer möchte, dass die Entscheidungs-Engine das beste Angebot bereitstellt. |
+| **AEM Assets Essentials** | Ein universelles und zentralisiertes Erlebnis zum Speichern, Suchen und Auswählen von Assets in Adobe Experience Cloud-Lösungen und Adobe Experience Platform. |
 
 {style="table-layout:auto"}
 
 ## 3.3.1.2 Offer decisioning
 
-Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud](https://experience.adobe.com) wechseln. Klicken Sie auf **Journey Optimizer**.
+Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud wechseln](https://experience.adobe.com). Auf **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Sie werden zur Ansicht **Home** in Journey Optimizer weitergeleitet. Vergewissern Sie sich zunächst, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Um von einer Sandbox zu einer anderen zu wechseln, klicken Sie auf **PRODUKTIONSPROD (VA7)** und wählen Sie die Sandbox aus der Liste aus. In diesem Beispiel erhält die Sandbox den Namen **AEP-Aktivierung FY22**. Sie befinden sich dann in der Ansicht **Home** Ihrer Sandbox `--aepSandboxName--`.
+Sie werden zur Ansicht **Startseite** in Journey Optimizer weitergeleitet. Stellen Sie zunächst sicher, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Sie befinden sich dann in der **Startseite**-Ansicht Ihres Sandbox-`--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-Klicken Sie im linken Menü auf **Angebote**. Sie sehen nun das Menü Angebote , das Angebote, Sammlungen und Entscheidungen enthält.
+Klicken Sie im linken Menü auf **Angebote**. Jetzt sehen Sie das Menü Angebote , das Elemente wie Angebote, Sammlungen und Entscheidungen enthält.
 
 ![Platzierungen](./images/homedec.png)
 
-Klicken Sie auf **Komponenten**. Jetzt wird das Menü Angebote angezeigt, das Elemente wie Platzierungen, Tags, Regeln und Bewertungen enthält.
+Klicken Sie **Komponenten**. Jetzt sehen Sie das Menü Angebote , das Elemente wie Platzierungen, Tags, Regeln und Rankings enthält.
 
 ![Platzierungen](./images/components.png)
 
-## 3.3.1.3 Praktika
+## Platzierungen 3.3.1.3
 
 Navigieren Sie zu **Platzierungen**.
 
@@ -79,23 +79,23 @@ Wenn keine Platzierungen in Ihrer Adobe Experience Platform-Instanz angezeigt we
 
 **Hinweis**: Bitte ändern Sie nichts an den bereits verfügbaren Platzierungen.
 
-Klicken Sie auf eine beliebige Platzierung, um deren Einstellungen zu visualisieren.
+Klicken Sie auf eine Platzierung, um deren Einstellungen zu visualisieren.
 
 ![Platzierungen](./images/placement1.png)
 
-Jetzt werden alle Felder der Platzierung angezeigt:
+Sie sehen jetzt alle Felder der Platzierung:
 
 - **Name** der Platzierung
 - **Platzierungs-ID**
 - **Kanaltyp** für die Platzierung
-- **Content-Typ** der Platzierung, der **Text**, **HTML**, **Bild** oder **JSON** sein kann
-- **Beschreibung** -Feld zum Hinzufügen einer zusätzlichen Beschreibung für die Platzierung
+- **Inhaltstyp** der Platzierung, bei der es sich um **Text**, **HTML**, **Image** oder **JSON** handeln kann
+- **Beschreibung** Feld, in dem zusätzliche Beschreibungen für die Platzierung hinzugefügt werden können
 
-## 3.3.1.4 Entscheidungsregeln
+## Entscheidungsregeln 3.3.1.4
 
-Eine Regel (auch als Eignungsregel bezeichnet) entspricht einer **Zielgruppe**. Eine Regel ist in der Tat eine Zielgruppe selbst mit dem einzigen Unterschied, dass eine Regel mit einem Angebot verwendet werden kann, um einem Profil in Adobe Experience Platform das beste Angebot bereitzustellen.
+Eine Regel (auch als Eignungsregel bezeichnet) entspricht einer **Zielgruppe**. Eine Regel ist eigentlich eine Zielgruppe selbst, mit dem einzigen Unterschied, dass eine Regel mit einem Angebot verwendet werden kann, um einem Profil in Adobe Experience Platform das beste Angebot zu unterbreiten.
 
-Da Sie bereits wissen, wie Sie Zielgruppen basierend auf den vorherigen Aktivierungsmodulen definieren, sollten Sie einfach die Segmentierungsumgebung schnell erneut aufrufen:
+Da Sie bereits wissen, wie Sie Zielgruppen basierend auf den vorherigen Aktivierungsmodulen definieren, sollten wir uns die Segmentierungsumgebung noch einmal schnell ansehen:
 
 Navigieren Sie zu **Regeln**. Klicken Sie auf **+ Regel erstellen**.
 
@@ -107,34 +107,34 @@ Anschließend sehen Sie die Segmentierungsumgebung von Adobe Experience Platform
 
 Sie können jetzt auf alle Felder zugreifen, die Teil des Vereinigungsschemas für das Echtzeit-Kundenprofil sind, und eine beliebige Regel erstellen.
 
-Interessant ist auch, dass Sie bereits definierte Zielgruppen in Adobe Experience Platform einfach wiederverwenden können, indem Sie zu **Zielgruppen** > ``--aepTenantId--`` navigieren.
+Interessant ist auch, dass Sie bereits definierte Zielgruppen in Adobe Experience Platform einfach wiederverwenden können, indem Sie zu **Zielgruppen** > ``--aepTenantId--`` wechseln.
 
 ![Entscheidungsregel](./images/decisionruleaud.png)
 
-Daraufhin sehen Sie Folgendes:
+Sie sehen dann Folgendes:
 
 ![Entscheidungsregel](./images/decisionruleaud1.png)
 
-Bei Bedarf können Sie nun Ihre eigenen Regeln konfigurieren. Für diese Übung benötigen Sie zwei Regeln:
+Wenn Sie möchten, können Sie jetzt Ihre eigenen Regeln konfigurieren. Für diese Übung benötigen Sie zwei Regeln:
 
-- all - Männliche Kunden
-- all - Weibliche Kunden
+- Alle - Männliche Kunden
+- Alle - Weibliche Kunden
 
-Wenn diese Regeln noch nicht existieren, erstellen Sie sie bitte. Wenn sie bereits existieren, verwenden Sie bitte diese Regeln und erstellen Sie keine neuen Regeln.
+Wenn diese Regeln noch nicht vorhanden sind, bitte erstellen Sie sie. Wenn sie bereits vorhanden sind, verwenden Sie diese Regeln und erstellen Sie keine neuen Regeln.
 
-Das Attribut, das zum Erstellen der Regel verwendet wird, lautet **XDM Individual Profile** > **Person** > **Geschlecht**.
+Das Attribut, das zum Erstellen der Regel verwendet werden soll, lautet **Individuelles XDM-Profil** > **Person** > **Gender**.
 
-Hier finden Sie beispielsweise die Regeldefinition für die Regel &quot;**all - Männliche Kunden**&quot;:
+Im Folgenden finden Sie ein Beispiel für die Regeldefinition für die Regel **alle - Männliche Kunden**:
 
 ![Entscheidungsregel](./images/allmale.png)
 
-Hier finden Sie beispielsweise die Regeldefinition für die Regel **all - Weibliche Kunden**:
+Hier finden Sie beispielsweise die Regeldefinition für die Regel **alle - Weibliche Kunden**:
 
 ![Entscheidungsregel](./images/allfemale.png)
 
-## 3.3.1.5 Angebote
+## Angebote 3.3.1.5
 
-Wechseln Sie zu **Angebote** und wählen Sie **Angebote** aus. Klicken Sie auf **+ Angebot erstellen**.
+Gehen Sie zu **Angebote** und wählen Sie **Angebote** aus. Klicken Sie auf **+ Angebot erstellen**.
 
 ![Entscheidungsregel](./images/offers1.png)
 
@@ -142,20 +142,20 @@ Dann sehen Sie dieses Popup.
 
 ![Entscheidungsregel](./images/offers2.png)
 
-Erstellen Sie jetzt keine Angebote - das machen Sie in der nächsten Übung.
+Erstellen Sie jetzt keine Angebote - Sie werden dies in der nächsten Übung tun.
 
-Sie sehen nun, dass es zwei Angebotstypen gibt:
+Sie sehen, dass es zwei Arten von Angeboten gibt:
 
 - Personalisierte Angebote
 - Fallback-Angebote
 
-Ein personalisiertes Angebot ist ein spezifischer Inhalt, der in einer bestimmten Situation angezeigt werden soll. Ein personalisiertes Angebot wurde speziell entwickelt, um ein persönliches und kontextbezogenes Erlebnis bereitzustellen, wenn bestimmte Kriterien erfüllt sind.
+Ein personalisiertes Angebot ist ein bestimmter Inhalt, der in einer bestimmten Situation angezeigt werden soll. Ein personalisiertes Angebot wurde speziell entwickelt, um ein persönliches und kontextuelles Erlebnis zu bieten, wenn bestimmte Kriterien erfüllt sind.
 
 Ein Fallback-Angebot ist ein Angebot, das angezeigt wird, wenn die Kriterien für personalisierte Angebote nicht erfüllt sind.
 
-## 3.3.1.6 Beschlüsse
+## Entscheidungen 3.3.1.6
 
-Eine Entscheidung kombiniert Platzierungen, eine Kollektion personalisierter Angebote und ein Fallback-Angebot, die letztendlich vom Offer decisioning-Modul verwendet werden, um das beste Angebot für ein bestimmtes Profil zu finden, basierend auf den individuellen personalisierten Angebotsmerkmalen wie Priorität, Eignungsbegrenzung und Gesamtanzahl/Benutzerobergrenze.
+Eine Entscheidung kombiniert Platzierungen, eine Sammlung personalisierter Angebote und ein Fallback-Angebot, das letztendlich von der Offer decisioning-Engine verwendet wird, um das beste Angebot für ein bestimmtes Profil zu finden, basierend auf den individuellen personalisierten Angebotsmerkmalen wie Priorität, Eignungsbegrenzung und Gesamtbegrenzung / Benutzerobergrenze.
 
 Um Ihre **Entscheidung** zu konfigurieren, klicken Sie auf **Entscheidungen**.
 
@@ -163,8 +163,8 @@ Um Ihre **Entscheidung** zu konfigurieren, klicken Sie auf **Entscheidungen**.
 
 In der nächsten Übung konfigurieren Sie Ihre eigenen Angebote und Entscheidungen.
 
-Nächster Schritt: [3.3.2 Konfigurieren Ihrer Angebote und Entscheidungen](./ex2.md)
+Nächster Schritt: [3.3.2 Konfigurieren Sie Ihre Angebote und Entscheidungen](./ex2.md)
 
-[Zurück zu Modul 3.3](./offer-decisioning.md)
+[Zurück zum Modul 3.3](./offer-decisioning.md)
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)
