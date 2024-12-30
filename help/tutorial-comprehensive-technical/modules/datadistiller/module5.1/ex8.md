@@ -1,40 +1,40 @@
 ---
-title: Query Service - Query Service-API
-description: Query Service - Query Service-API
+title: Abfrage-Service - Abfrage-Service-API
+description: Abfrage-Service - Abfrage-Service-API
 kt: 5342
 doc-type: tutorial
 exl-id: d356f7e2-523b-41a2-9cc6-1ea2a028c3a7
-source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 3%
 
 ---
 
-# 5.1.8 Query Service-API
+# 5.1.8 Abfrage-Service-API
 
 ## Ziel
 
-- Verwenden Sie die Query Service-API zum Verwalten von Abfragevorlagen und Abfragezeitplänen.
+- Verwenden Sie die Abfrage-Service-API, um Abfragevorlagen und Abfragezeitpläne zu verwalten
 
 ## Kontext
 
-In dieser Übung führen Sie API-Aufrufe aus, um Abfragevorlagen und Abfragezeitpläne mithilfe einer Postman-Kollektion zu verwalten. Sie definieren Abfragevorlagen, führen reguläre Abfragen und CTAS-Abfragen aus. Eine **CTAS** -Abfrage (Tabelle als ausgewählte Abfrage erstellen) speichert den Ergebnissatz in einem expliziten Datensatz. Während reguläre Abfragen in einem impliziten (oder systemgenerierten) Datensatz gespeichert werden, wird dieser normalerweise im Parquet-Dateiformat exportiert.
+In dieser Übung führen Sie API-Aufrufe aus, um Abfragevorlagen und Abfragezeitpläne mithilfe einer Postman-Sammlung zu verwalten. Sie definieren Abfragevorlagen, führen reguläre Abfragen und CTAS-Abfragen aus. Eine **CTAS**-Abfrage (Tabelle als Auswahlabfrage erstellen) speichert ihren Ergebnissatz in einem expliziten Datensatz. Während reguläre Abfragen in einem impliziten (oder systemgenerierten) Datensatz gespeichert werden, der normalerweise im Parquet-Dateiformat exportiert wird.
 
 ## Dokumentation
 
-- [Hilfe zum Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=de)
+- [Hilfe zum Adobe Experience Platform-Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=de)
 - [Query Service-API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
-## Query Service-API
+## Abfrage-Service-API
 
-Mit der Query Service-API können Sie nicht interaktive Abfragen für den Adobe Experience Platform Data-Lake verwalten.
+Mit der Abfrage-Service-API können Sie nicht interaktive Abfragen für den Data Lake von Adobe Experience Platform verwalten.
 
-&quot;Nicht interaktiv&quot;bedeutet, dass eine Anfrage zum Ausführen einer Abfrage keine sofortige Antwort zur Folge hat. Die Abfrage wird verarbeitet und der Ergebnissatz wird in einem impliziten oder expliziten Datensatz (CTAS: Tabelle als ausgewählte Tabelle erstellen) gespeichert.
+Nicht interaktiv bedeutet, dass eine Anfrage zum Ausführen einer Abfrage nicht zu einer sofortigen Antwort führt. Die Abfrage wird verarbeitet und ihr Ergebnissatz wird in einem impliziten oder expliziten Datensatz (CTAS: Tabelle als Auswahl erstellen) gespeichert.
 
 ## Beispielabfrage
 
-Als Beispielabfrage verwenden Sie die erste in [4.3 - Abfragen, Abfragen, Abfragen.. und Abwanderungsanalyse](./ex3.md) aufgelistete Abfrage:
+Als Beispielabfrage verwenden Sie die erste in [4.3 - Abfragen, Abfragen, Abfragen… und Abwanderungsanalyse aufgeführte Abfrage](./ex3.md):
 
 Wie viele Produktansichten haben wir täglich?
 
@@ -52,27 +52,27 @@ limit 10;
 
 ## Abfragen
 
-Öffnen Sie Postman auf Ihrem Computer. Im Rahmen von Modul 2.1 haben Sie eine Postman-Umgebung erstellt und eine Postman-Sammlung importiert. Befolgen Sie die Anweisungen unter [Übung 2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md) , falls Sie dies noch nicht getan haben.
+Öffnen Sie Postman auf Ihrem Computer. Im Rahmen von Modul 2.1 haben Sie eine Postman-Umgebung erstellt und eine Postman-Sammlung importiert. Befolgen Sie die Anweisungen [Übung 2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md) falls Sie dies noch nicht getan haben.
 
-Im Rahmen der von Ihnen importierten Postman-Sammlung wird der Ordner &quot;**3&quot;angezeigt. Query Service**. Wenn dieser Ordner nicht angezeigt wird, laden Sie die [Postman-Sammlung](./../../../assets/postman/postman_profile.zip) erneut herunter und importieren Sie diese Sammlung erneut in Postman, wie in [Übung 2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md) beschrieben.
+Als Teil der von Ihnen importierten Postman-Sammlung wird der Ordner **3 angezeigt. Abfrage-**. Wenn dieser Ordner nicht angezeigt wird, laden Sie die [Postman-Sammlung erneut ](./../../../assets/postman/postman_profile.zip) und importieren Sie diese Sammlung erneut in Postman, wie in [Übung 2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md) beschrieben.
 
 ![QS](./images/pm3.png)
 
 >[!NOTE]
 >
->Derzeit ist nur der Ordner **1. Abfragen** enthält Anforderungen. Andere Anforderungen werden in einem Ebenenstadium hinzugefügt.
+>Derzeit wird nur der Ordner **1. Abfragen** enthält Anfragen. Andere Anfragen werden zu einem späteren Zeitpunkt hinzugefügt.
 
-Öffnen Sie diesen Ordner und lernen Sie die Query Service-API-Aufrufe kennen, mit denen die Abfrage ausgeführt, überwacht und heruntergeladen werden kann.
+Öffnen Sie diesen Ordner und lernen Sie die Abfrage-Service-API-Aufrufe kennen, um den Abfrageergebnissatz auszuführen, zu überwachen und herunterzuladen.
 
-Ein POST-Aufruf an [/query/queries] mit der folgenden Payload Trigger die Ausführung unserer Abfrage.
+Ein POST-Aufruf an [/query] mit der folgenden Payload führt zu einem Trigger bei der Ausführung unserer Abfrage.
 
 ### Abfrage erstellen
 
-Klicken Sie auf die Anforderung **1.1 QS - Abfrage erstellen** und gehen Sie zu **Kopfzeilen**. Daraufhin sehen Sie Folgendes:
+Klicken Sie auf die Anfrage mit dem Namen **1.1 QS - Abfrage erstellen** und navigieren Sie zu **Headers**. Sie sehen dann Folgendes:
 
 ![Segmentierung](./images/s1_call.png)
 
-Fokussieren wir uns auf dieses Kopfzeilenfeld:
+Konzentrieren wir uns auf dieses Kopfzeilenfeld:
 
 | Schlüssel | Wert |
 | ----------- | ----------- |
@@ -80,9 +80,9 @@ Fokussieren wir uns auf dieses Kopfzeilenfeld:
 
 >[!NOTE]
 >
->Sie müssen den Namen der verwendeten Adobe Experience Platform-Sandbox angeben. Das Kopfzeilenfeld **x-sandbox-name** sollte `--aepSandboxName--` sein.
+>Sie müssen den Namen der von Ihnen verwendeten Adobe Experience Platform-Sandbox angeben. Das Kopfzeilenfeld **x-sandbox-name** sollte `--aepSandboxName--` werden.
 
-Wechseln Sie zum Abschnitt **Hauptteil** dieser Anfrage. Im **Hauptteil** dieser Anfrage sehen Sie Folgendes:
+Rufen Sie den **Hauptteil** dieser Anfrage auf. Im **Hauptteil** dieser Anfrage wird Folgendes angezeigt:
 
 ![Segmentierung](./images/s1_bodydtl.png)
 
@@ -91,13 +91,13 @@ Wechseln Sie zum Abschnitt **Hauptteil** dieser Anfrage. Im **Hauptteil** dieser
     "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
 	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
 	"dbName": "--aepSandboxName--:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
-Achtung: Aktualisieren Sie die Variable **name** in der folgenden Anfrage, indem Sie **ldap** durch Ihre spezifische **—aepUserLdap—** ersetzen.
+Achtung: Aktualisieren Sie die Variable **name** in der folgenden Anfrage, indem Sie **ldap** durch Ihre spezifische **- aepUserLdap -**.
 
-Nach dem Hinzufügen Ihres spezifischen **ldap** sollte der Hauptteil in etwa wie folgt aussehen:
+Nach dem Hinzufügen Ihrer spezifischen **ldap** sollte der Textkörper in etwa wie folgt aussehen:
 
 ```json
 {
@@ -110,13 +110,13 @@ Nach dem Hinzufügen Ihres spezifischen **ldap** sollte der Hauptteil in etwa wi
 
 >[!NOTE]
 >
->Der Schlüssel **dbName** im obigen JSON-Hauptteil bezieht sich auf die Sandbox, die in Ihrer Adobe Experience Platform-Instanz verwendet wird. Wenn Sie die PROD-Sandbox verwenden, sollte der dbName **prod:all** sein. Wenn Sie eine andere Sandbox verwenden, z. B. **tech-insiders**, sollte dbName gleich **tech-insiders:all** sein.
+>Der Schlüssel **dbName** im obigen JSON-Hauptteil bezieht sich auf die Sandbox, die in Ihrer Adobe Experience Platform-Instanz verwendet wird. Wenn Sie die PROD Sandbox verwenden, sollte der dbName **prod:all** lauten. Wenn Sie eine andere Sandbox verwenden, wie z. B. **tech-insiders**, sollte der dbName gleich **tech-insiders:all** sein.
 
-Klicken Sie anschließend auf die blaue Schaltfläche **Senden** , um das Segment zu erstellen und die Ergebnisse anzuzeigen.
+Klicken Sie anschließend auf die blaue **Senden**-Schaltfläche, um das Segment zu erstellen und die Ergebnisse anzuzeigen.
 
 ![Segmentierung](./images/s1_bodydtl_results.png)
 
-Nach erfolgreichem Abschluss gibt die POST-Anfrage die folgende Antwort zurück:
+Nach erfolgreicher Ausführung gibt die POST-Anfrage die folgende Antwort zurück:
 
 ```json
 {
@@ -158,19 +158,19 @@ Nach erfolgreichem Abschluss gibt die POST-Anfrage die folgende Antwort zurück:
 }
 ```
 
-Der aktuelle **Status** der Abfrage lautet **GESENDET**, der Status wird nach der Ausführung zu **ERFOLG**.
+Der aktuelle **(Status** der Abfrage lautet **GESENDET**, nach der Ausführung wird ihr Status zu **SUCCESS**.
 
-Sie können auch gesendete Abfragen über die Adobe Experience Platform-Benutzeroberfläche nachschlagen, [Adobe Experience Platform](https://experience.adobe.com/#/@experienceplatform/platform/home) öffnen, zu **Abfragen**, zu **Protokoll** navigieren und Ihre Abfrage auswählen:
+Sie können auch über die Adobe Experience Platform-Benutzeroberfläche gesendete Abfragen nachschlagen, [Adobe Experience Platform](https://experience.adobe.com/#/@experienceplatform/platform/home) öffnen, zu **Abfragen** navigieren, zu **Log** und Ihre Abfrage auswählen:
 
 ![Segmentierung](./images/s1_bodydtl_results_qs.png)
 
 ### Abfragen abrufen
 
-Klicken Sie auf die Anfrage mit dem Namen **1.2 QS - Abfragen abrufen** und gehen Sie zu **Kopfzeilen**. Daraufhin sehen Sie Folgendes:
+Klicken Sie auf die Anfrage mit dem Namen **1.2 QS - Abfragen abrufen** und navigieren Sie zu **Headers**. Sie sehen dann Folgendes:
 
 ![Segmentierung](./images/s2_call.png)
 
-Fokussieren wir uns auf dieses Kopfzeilenfeld:
+Konzentrieren wir uns auf dieses Kopfzeilenfeld:
 
 | Schlüssel | Wert |
 | ----------- | ----------- |
@@ -178,19 +178,19 @@ Fokussieren wir uns auf dieses Kopfzeilenfeld:
 
 >[!NOTE]
 >
->Sie müssen den Namen der verwendeten Adobe Experience Platform-Sandbox angeben. Das Kopfzeilenfeld **x-sandbox-name** sollte `--aepSandboxName--` sein.
+>Sie müssen den Namen der von Ihnen verwendeten Adobe Experience Platform-Sandbox angeben. Das Kopfzeilenfeld **x-sandbox-name** sollte `--aepSandboxName--` werden.
 
-Wechseln Sie zu **Parameter**. Daraufhin sehen Sie Folgendes:
+Navigieren Sie zu **Parameter**. Sie sehen dann Folgendes:
 
 ![Segmentierung](./images/s2_call_p.png)
 
-Mit dem Parameter **orderby** können Sie eine Sortierreihenfolge festlegen, die auf der Eigenschaft **created** basiert. Beachten Sie, dass das Vorzeichen **&#39;-&#39;** vor der Erstellung steht. Das bedeutet, dass die Reihenfolge, in der die Liste der Abfragen zurückgegeben wird, ihr erstelltes Datum in der Reihenfolge **Absteigend** verwendet. Ihre Abfrage sollte oben in der Liste stehen.
+Mit dem **orderby**-Parameter können Sie eine Sortierreihenfolge auf der Grundlage der **created**-Eigenschaft angeben. Beachten Sie das **-&#39;**-Zeichen vor „Erstellt“, was bedeutet, dass die Reihenfolge, in der die Liste der Abfragen zurückgegeben wird, das Erstellungsdatum in **absteigender** Reihenfolge verwendet. Ihre Abfrage sollte an oberster Stelle der Liste stehen.
 
-Klicken Sie anschließend auf die blaue Schaltfläche **Senden** , um das Segment zu erstellen und die Ergebnisse anzuzeigen.
+Klicken Sie anschließend auf die blaue **Senden**-Schaltfläche, um das Segment zu erstellen und die Ergebnisse anzuzeigen.
 
 ![Segmentierung](./images/s2_bodydtl_results.png)
 
-Bei Erfolg gibt die Anfrage eine Antwort zurück, die der folgenden ähnelt. Der **state** der Antwort kann **SUBMITTED**, **IN_PROGRESS** oder **SUCCESS** lauten. Es kann mehrere Minuten dauern, bis die Abfrage den Status **SUCCESS** aufweist. Sie können den Versand dieser Anfrage mehrmals wiederholen, bis der Status **SUCCESS** angezeigt wird.
+Bei Erfolg gibt die Anfrage eine ähnliche Antwort wie die folgende zurück. Der **Status** der Antwort kann **EINGEREICHT**, **IN_PROGRESS** oder **SUCCESS**. Es kann einige Minuten dauern, bevor die Abfrage den Status **ERFOLGREICH** annimmt. Sie können den Versand dieser Anfrage mehrmals wiederholen, bis Sie den Status **ERFOLG** sehen.
 
 ```json
 {
@@ -232,15 +232,15 @@ Bei Erfolg gibt die Anfrage eine Antwort zurück, die der folgenden ähnelt. Der
 }
 ```
 
-Wenn der Status **SUCCESS** lautet, fahren Sie mit der nächsten Anfrage fort.
+Wenn der Status &quot;**&quot;**, fahren Sie mit der nächsten Anfrage fort.
 
-### Abrufen des Abfragestatus
+### Abfragestatus abrufen
 
-Klicken Sie auf die Anfrage mit dem Namen **1.3 QS - Get Query Status** und gehen Sie zu **Headers**. Daraufhin sehen Sie Folgendes:
+Klicken Sie auf die Anfrage mit dem Namen **1.3 QS - Abfragestatus abrufen** und navigieren Sie zu **Headers**. Sie sehen dann Folgendes:
 
 ![Segmentierung](./images/s3_call.png)
 
-Fokussieren wir uns auf dieses Kopfzeilenfeld:
+Konzentrieren wir uns auf dieses Kopfzeilenfeld:
 
 | Schlüssel | Wert |
 | ----------- | ----------- |
@@ -248,13 +248,13 @@ Fokussieren wir uns auf dieses Kopfzeilenfeld:
 
 >[!NOTE]
 >
->Sie müssen den Namen der verwendeten Adobe Experience Platform-Sandbox angeben. Das Kopfzeilenfeld **x-sandbox-name** sollte `--aepSandboxName--` sein.
+>Sie müssen den Namen der von Ihnen verwendeten Adobe Experience Platform-Sandbox angeben. Das Kopfzeilenfeld **x-sandbox-name** sollte `--aepSandboxName--` werden.
 
-Klicken Sie anschließend auf die blaue Schaltfläche **Senden** , um das Segment zu erstellen und die Ergebnisse anzuzeigen.
+Klicken Sie anschließend auf die blaue **Senden**-Schaltfläche, um das Segment zu erstellen und die Ergebnisse anzuzeigen.
 
 ![Segmentierung](./images/s3_bodydtl_results.png)
 
-Bei Erfolg gibt die Anfrage eine Antwort zurück, die der folgenden ähnelt.
+Bei Erfolg gibt die Anfrage eine ähnliche Antwort wie die folgende zurück.
 
 ```json
 {
@@ -308,17 +308,17 @@ Bei Erfolg gibt die Anfrage eine Antwort zurück, die der folgenden ähnelt.
 }
 ```
 
-Wenn eine Abfrage den Status **SUCCESS** erreicht, gibt die Antwort auch die Anzahl der Zeilen an, die von der Abfrage über die Eigenschaft **rowCount** abgerufen wurden. In unserem Beispiel werden 10 Zeilen von der Abfrage zurückgegeben. Im nächsten Abschnitt sehen wir, wie wir die zehn Zeilen abrufen können.
+Wenn eine Abfrage den Status **SUCCESS** erreicht, gibt die Antwort auch die Anzahl der Zeilen an, die von der Abfrage über die Eigenschaft **rowCount** abgerufen wurden. In unserem Beispiel werden von der Abfrage 10 Zeilen zurückgegeben. Im nächsten Abschnitt sehen wir, wie wir die 10 Zeilen abrufen können.
 
-### Abrufen des Abfrageergebnisses
+### Abfrageergebnis abrufen
 
-Die obige Antwort **SUCCESS** enthält die Eigenschaft **referenced_datasets** , die auf den impliziten Datensatz verweist, in dem das Abfrageergebnis gespeichert wird. Um Zugriff auf das Ergebnis zu erhalten, verwenden wir die zugehörige Eigenschaft **href** oder **id** .
+Die **SUCCESS**-Antwort oben enthält eine **references_datasets**-Eigenschaft, die auf den impliziten Datensatz verweist, in dem das Abfrageergebnis gespeichert wird. Um Zugriff auf das Ergebnis zu erhalten, verwenden wir seine **href** oder **id**-Eigenschaft.
 
-Klicken Sie auf die Anfrage mit dem Namen **1.4 QS - Get Query Result** und gehen Sie zu **Headers**. Daraufhin sehen Sie Folgendes:
+Klicken Sie auf die Anfrage mit dem Namen **1.4 QS - Get Query Result** und gehen Sie zu **Headers**. Sie sehen dann Folgendes:
 
 ![Segmentierung](./images/s4_call.png)
 
-Fokussieren wir uns auf dieses Kopfzeilenfeld:
+Konzentrieren wir uns auf dieses Kopfzeilenfeld:
 
 | Schlüssel | Wert |
 | ----------- | ----------- |
@@ -326,9 +326,9 @@ Fokussieren wir uns auf dieses Kopfzeilenfeld:
 
 >[!NOTE]
 >
->Sie müssen den Namen der verwendeten Adobe Experience Platform-Sandbox angeben. Das Kopfzeilenfeld **x-sandbox-name** sollte `--aepSandboxName--` sein.
+>Sie müssen den Namen der von Ihnen verwendeten Adobe Experience Platform-Sandbox angeben. Das Kopfzeilenfeld **x-sandbox-name** sollte `--aepSandboxName--` werden.
 
-Klicken Sie anschließend auf die blaue Schaltfläche **Senden** , um das Segment zu erstellen und die Ergebnisse anzuzeigen.
+Klicken Sie anschließend auf die blaue **Senden**-Schaltfläche, um das Segment zu erstellen und die Ergebnisse anzuzeigen.
 
 ![Segmentierung](./images/s4_bodydtl_results.png)
 
@@ -422,4 +422,4 @@ Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 
 [Zurück zu Modul 5.1](./query-service.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)
