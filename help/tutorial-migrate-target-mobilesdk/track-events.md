@@ -1,7 +1,8 @@
 ---
 title: Ereignisse verfolgen - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
 description: Erfahren Sie, wie Sie Adobe Target-Konversionsereignisse mithilfe der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung verfolgen.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 1%
@@ -10,11 +11,11 @@ ht-degree: 1%
 
 # Tracking von Target-Konversionsereignissen mit der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
 
-Konversionsereignisse für Target können mit verfolgt werden... Konversionsereignisse fallen normalerweise in die folgenden Kategorien:
+Konversionsereignisse für Target können verfolgt werden mit… Konversionsereignisse fallen normalerweise in die folgenden Kategorien:
 
-* Automatisch getrackte Ereignisse ohne Konfiguration
-* Kaufkonversionsereignisse, die für eine Best Practice-Implementierung des Platform Web SDK angepasst werden sollten
-* Konversionsereignisse ohne Kauf, für die Codeaktualisierungen erforderlich sind
+* Automatisch verfolgte Ereignisse, für die keine Konfiguration erforderlich ist
+* Kaufkonversionsereignisse, die für eine Best-Practice-Implementierung von Platform Web SDK angepasst werden sollten
+* Nicht-Kauf-Konversionsereignisse, die Code-Aktualisierungen erfordern
 
 ## Vergleich der Zielverfolgung
 
@@ -27,12 +28,12 @@ In der folgenden Tabelle wird verglichen, wie at.js und Platform Web SDK Konvers
 
 ## Automatisch getrackte Ereignisse
 
-Die folgenden Konversionsziele erfordern keine spezifischen Anpassungen Ihrer Implementierung:
+Die folgenden Konversionsziele erfordern keine spezifischen Anpassungen an Ihrer Implementierung:
 
 
 
-Als Nächstes erfahren Sie, wie Sie [die domänenübergreifende ID-Freigabe aktivieren](cross-domain.md) für konsistente Besucherprofile.
+Erfahren Sie als Nächstes, wie Sie [Domain-übergreifende ID-Freigabe aktivieren](cross-domain.md) für konsistente Besucherprofile aktivieren.
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Migration Ihrer mobilen Target-Erweiterung von der Target-Erweiterung zur Decisioning-Erweiterung. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.

@@ -2,7 +2,7 @@
 title: Abonnieren von Datenerfassungsereignissen
 seo-title: Subscribe to data ingestion events | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Abonnieren von Datenerfassungsereignissen
-description: In dieser Lektion abonnieren Sie Datenerfassungsereignisse, indem Sie einen Webhook mit der Adobe Developer Console und ein Online-Webhook-Entwicklungstool einrichten. Sie werden diese Ereignisse verwenden, um den Status Ihrer Datenerfassungsaufträge in den nachfolgenden Lektionen zu überwachen.
+description: In dieser Lektion abonnieren Sie Datenerfassungsereignisse, indem Sie einen Webhook mit dem Adobe Developer Console und ein Online-Webhook-Entwicklungs-Tool einrichten. Sie verwenden diese Ereignisse, um den Status Ihrer Datenaufnahmevorgänge in den nachfolgenden Lektionen zu überwachen.
 role: Data Engineer
 feature: Data Management
 jira: KT-4348
@@ -19,14 +19,14 @@ ht-degree: 4%
 
 <!--25min-->
 
-In dieser Lektion abonnieren Sie Datenerfassungsereignisse, indem Sie einen Webhook mit der Adobe Developer Console und ein Online-Webhook-Entwicklungstool einrichten. Sie werden diese Ereignisse verwenden, um den Status Ihrer Datenerfassungsaufträge in den nachfolgenden Lektionen zu überwachen.
+In dieser Lektion abonnieren Sie Datenerfassungsereignisse, indem Sie einen Webhook mit dem Adobe Developer Console und ein Online-Webhook-Entwicklungs-Tool einrichten. Sie verwenden diese Ereignisse, um den Status Ihrer Datenaufnahmevorgänge in den nachfolgenden Lektionen zu überwachen.
 
-**Dateningenieure** möchten außerhalb dieses Tutorials Datenerfassungsereignisse abonnieren.
-**Datenarchitekten** _können diese Lektion_ überspringen und zur Lektion [Batch-Erfassung](ingest-batch-data.md) navigieren.
+**Dateningenieure** können Datenaufnahmeereignisse außerhalb dieses Tutorials abonnieren.
+**Datenarchitekten** _können diese Lektion_ überspringen und zur Lektion [Batch-Aufnahme“ ](ingest-batch-data.md).
 
 ## Erforderliche Berechtigungen
 
-In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten Sie alle Zugriffssteuerungen ein, die zum Abschluss dieser Lektion erforderlich sind, insbesondere:
+In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten Sie alle Zugriffssteuerungen ein, die zum Durchführen dieser Lektion erforderlich sind, insbesondere:
 
 <!--* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->
@@ -38,50 +38,50 @@ In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten 
 
 ## Webhook einrichten
 
-In dieser Übung erstellen wir einen Webhook mit einem Online-Tool namens webhook.site (Sie können gerne jedes andere Webhook-Entwicklungstool, das Sie bevorzugen, ersetzen):
+In dieser Übung erstellen wir einen Webhook mit einem Online-Tool namens webhook.site (Sie können auch ein anderes Webhook-Entwicklungs-Tool verwenden, das Sie bevorzugen):
 
-1. Öffnen Sie auf einer anderen Browser-Registerkarte die Website [https://webhook.site/](https://webhook.site/).
-1. Ihnen wird eine eindeutige URL zugewiesen, die Sie mit einem Lesezeichen versehen sollten, wenn Sie später in den Datenerfassungsstunden darauf zurückkehren:
+1. Öffnen Sie in einer anderen Browser-Registerkarte die Website [https://webhook.site/](https://webhook.site/)
+1. Ihnen wird eine eindeutige URL zugewiesen, die Sie mit einem Lesezeichen versehen sollten, wenn Sie später in den Lektionen zur Datenaufnahme zu ihr zurückkehren:
 
-   ![webhook.site](assets/ioevents-webhook-home.png)
-1. Wählen Sie die Schaltfläche **Bearbeiten** in der oberen Navigation aus.
-1. Geben Sie als Antworttext `$request.query.challenge$` ein. Die Adobe I/O-Ereignisbenachrichtigungen, die wir später in dieser Lektion eingerichtet haben, senden eine Herausforderung an den Webhook und erfordern, dass er im Antworttext enthalten ist.
-1. Wählen Sie die Schaltfläche **Speichern** aus
+   ![Webhook.site](assets/ioevents-webhook-home.png)
+1. Wählen Sie die **Bearbeiten** in der oberen Navigationsleiste aus
+1. Geben Sie als Antworttext `$request.query.challenge$` ein. Die Adobe I/O-Ereignis-Benachrichtigungen, die wir später in dieser Lektion einrichten, senden eine Abfrage an den Webhook und erfordern, dass er im Antworttext enthalten ist.
+1. Klicken Sie auf **Speichern**.
 
    ![Bearbeiten der Antwort](assets/ioevents-webhook-editResponse.png)
 
 ## Einrichten
 
-1. Öffnen Sie auf einer anderen Browser-Registerkarte den [Adobe Developer Console](https://console.adobe.io/)
-1. Öffnen Sie Ihre `Luma Tutorial API Project`
-1. Wählen Sie die Schaltfläche **[!UICONTROL Zum Projekt hinzufügen]** und dann **[!UICONTROL Ereignis]** aus.
+1. Öffnen Sie in einer anderen Browser-Registerkarte die [Adobe Developer Console](https://console.adobe.io/)
+1. `Luma Tutorial API Project` öffnen
+1. Klicken Sie auf **[!UICONTROL Schaltfläche „Zum Projekt hinzufügen]** und wählen Sie dann **[!UICONTROL Ereignis]**
 
    ![Ereignis hinzufügen](assets/ioevents-addEvents.png)
 1. Filtern Sie die Liste durch Auswahl von **[!UICONTROL Experience Platform]**
-1. Wählen Sie **[!UICONTROL Plattformbenachrichtigungen]** aus
-1. Wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus
-   ![Benachrichtigungen hinzufügen](assets/ioevents-addNotifications.png)
+1. Wählen Sie **[!UICONTROL Platform-Benachrichtigungen]**
+1. Klicken Sie auf **[!UICONTROL Weiter]**-Schaltfläche
+   ![Hinzufügen der Benachrichtigungen](assets/ioevents-addNotifications.png)
 1. Alle Ereignisse auswählen
-1. Wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus
-   ![Wählen Sie die Abonnements aus](assets/ioevents-addSubscriptions.png)
-1. Wählen Sie im nächsten Bildschirm zum Konfigurieren der Anmeldedaten erneut die Schaltfläche **[!UICONTROL Weiter]** aus.
-   ![Überspringen des Anmeldebildschirms](assets/ioevents-clickNext.png)
-1. Geben Sie als **[!UICONTROL Registrierungsname für das Ereignis]** `Platform notifications` ein.
-1. Scrollen Sie nach unten und wählen Sie aus, um den Abschnitt **[!UICONTROL Webhook]** zu öffnen.
-1. Fügen Sie als **[!UICONTROL Webhook-URL]** den Wert aus dem Feld **Ihre eindeutige URL** aus webhook.site ein.
-1. Wählen Sie die Schaltfläche **[!UICONTROL Konfigurierte Ereignisse speichern]** aus
-   ![Speichern Sie die Ereignisse](assets/ioevents-addWebhook.png)
-1. Warten Sie, bis Ihre Konfiguration gespeichert ist, und Sie sollten sehen, dass Ihr `Platform notifications`-Ereignis mit Ihren Webhook-Details aktiv ist und keine Fehlermeldungen angezeigt werden
+1. Klicken Sie auf **[!UICONTROL Weiter]**-Schaltfläche
+   ![Abonnements auswählen](assets/ioevents-addSubscriptions.png)
+1. Klicken Sie im nächsten Bildschirm zum Konfigurieren der Anmeldeinformationen erneut auf **[!UICONTROL Weiter]**.
+   ![Überspringen des Berechtigungsbildschirms](assets/ioevents-clickNext.png)
+1. Geben Sie als **[!UICONTROL Name der Ereignisregistrierung]** `Platform notifications` ein
+1. Scrollen Sie nach unten und wählen Sie aus, um den Abschnitt **[!UICONTROL Webhook]** zu öffnen
+1. Fügen Sie als **[!UICONTROL Webhook-URL]** den Wert aus dem Feld **Ihre eindeutige URL** von webhook.site ein
+1. Klicken Sie auf **[!UICONTROL Schaltfläche „Konfigurierte Ereignisse speichern]**
+   ![Ereignisse speichern](assets/ioevents-addWebhook.png)
+1. Warten Sie, bis die Konfiguration gespeichert wurde. Ihr `Platform notifications`-Ereignis ist aktiv mit Ihren Webhook-Details und keinen Fehlermeldungen
    ![Konfiguration gespeichert](assets/ioevents-webhookConfigured.png)
-1. Wechseln Sie zurück zu Ihrer Registerkarte webhook.site . Daraufhin sollte die erste Anforderung an den Webhook angezeigt werden, die sich aus der Überprüfung Ihrer Developer Console-Konfiguration ergibt:
+1. Wechseln Sie zurück zur Registerkarte Webhook.site , und Sie sollten die erste Anforderung für den Webhook sehen, die aus der Validierung Ihrer Developer Console-Konfiguration resultiert:
    ![Erste Anfrage in webhook.site](assets/ioevents-webhook-firstRequest.png)
 
-Jetzt erfahren Sie mehr über diese Benachrichtigungen in den nächsten Lektionen, wenn Sie Daten erfassen.
+So ist es vorerst. In den nächsten Lektionen erfahren Sie mehr über diese Benachrichtigungen, wenn Sie Daten aufnehmen.
 
 ## Weitere Ressourcen
 
-* [webhook.site](https://webhook.site/)
+* [Webhook.site](https://webhook.site/)
 * [Dokumentation zu Datenerfassungsbenachrichtigungen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
-* [Erste Schritte mit der Dokumentation zu Adobe I/O-Ereignissen](https://www.adobe.io/apis/experienceplatform/events/docs.html)
+* [Erste Schritte mit der Dokumentation zu Adobe I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
-Ok, lasst uns endlich [Daten aufnehmen](ingest-batch-data.md)!
+Ok, fangen wir endlich an [Daten aufzunehmen](ingest-batch-data.md)!

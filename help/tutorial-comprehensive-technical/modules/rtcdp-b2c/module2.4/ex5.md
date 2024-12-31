@@ -1,6 +1,6 @@
 ---
-title: Audience Activation zu Microsoft Azure Event Hub - Zielgruppe aktivieren
-description: Audience Activation zu Microsoft Azure Event Hub - Zielgruppe aktivieren
+title: Audience Activation zum Microsoft Azure Event Hub - Zielgruppe aktivieren
+description: Audience Activation zum Microsoft Azure Event Hub - Zielgruppe aktivieren
 kt: 5342
 doc-type: tutorial
 exl-id: 89cfda0e-6c5e-45ab-9506-f0f0f6211e7f
@@ -13,31 +13,31 @@ ht-degree: 4%
 
 # 2.4.5 Zielgruppe aktivieren
 
-## Hinzufügen von Zielgruppen zum Azure Event Hub-Ziel
+## Zielgruppe zum Azure Event Hub-Ziel hinzufügen
 
-In dieser Übung fügen Sie Ihre Audience `--aepUserLdap-- - Interest in Plans` zu Ihrem `--aepUserLdap---aep-enablement` Azure Event Hub-Ziel hinzu.
+In dieser Übung fügen Sie Ihre `--aepUserLdap-- - Interest in Plans` zu Ihrem `--aepUserLdap---aep-enablement` Azure Event Hub -Ziel hinzu.
 
-Melden Sie sich bei Adobe Experience Platform an, indem Sie diese URL verwenden: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Melden Sie sich über die folgende URL bei Adobe Experience Platform an: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
-Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
+Nach dem Login landen Sie auf der Homepage von Adobe Experience Platform.
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Nachdem Sie die entsprechende Sandbox ausgewählt haben, wird die Bildschirmänderung angezeigt und Sie befinden sich jetzt in Ihrer dedizierten Sandbox.
+Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbox hat den Namen ``--aepSandboxName--``. Nach Auswahl der entsprechenden Sandbox wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten Sandbox.
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Wechseln Sie zu **Ziele** und klicken Sie dann auf **Durchsuchen**. Daraufhin werden alle verfügbaren Ziele angezeigt. Suchen Sie Ihr Ziel, klicken Sie auf die drei Punkte**...** wie unten angegeben und klicken Sie dann auf **Zielgruppen aktivieren**.
+Gehen Sie zu **Ziele** und klicken Sie dann auf **Durchsuchen**. Anschließend werden alle verfügbaren Ziele angezeigt. Suchen Sie Ihr Ziel und klicken Sie auf die drei Punkte**…** wie unten angegeben und klicken Sie dann auf **Zielgruppen aktivieren**.
 
 ![5-01-select-destination.png](./images/501selectdestination.png)
 
-Dann wirst du das sehen. Suchen Sie mithilfe Ihrer LDAP-Datei nach Ihrer Zielgruppe und wählen Sie `--aepUserLdap-- - Interest in Plans` aus der Zielgruppenliste aus.
+Sie werden es dann sehen. Suchen Sie mithilfe Ihres LDAP nach Ihrer Audience und wählen Sie `--aepUserLdap-- - Interest in Plans` aus der Liste der Audiences aus.
 
 Klicken Sie auf **Weiter**.
 
 ![5-04-select-segment.png](./images/504selectsegment.png)
 
-Klicken Sie auf **Neues Feld hinzufügen**, klicken Sie auf Schema durchsuchen und wählen Sie das Feld `--aepTenantId--identification.core.ecid` aus (löschen Sie alle anderen Felder, die automatisch angezeigt werden).
+Klicken Sie **Neues Feld hinzufügen**, klicken Sie auf Schema durchsuchen und wählen Sie die `--aepTenantId--identification.core.ecid` aus (löschen Sie alle anderen Felder, die automatisch angezeigt werden sollen).
 
 Klicken Sie auf **Weiter**.
 
@@ -51,8 +51,8 @@ Ihre Zielgruppe ist jetzt für Ihr Microsoft Event Hub-Ziel aktiviert.
 
 ![5-07-destination-segment-added.png](./images/507destinationsegmentadded.png)
 
-Nächster Schritt: [2.4.6 Microsoft Azure Project erstellen](./ex6.md)
+Nächster Schritt: [2.4.6 Erstellen Sie Ihr Microsoft Azure-Projekt](./ex6.md)
 
-[Zurück zu Modul 2.4](./segment-activation-microsoft-azure-eventhub.md)
+[Zurück zum Modul 2.4](./segment-activation-microsoft-azure-eventhub.md)
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)

@@ -1,6 +1,6 @@
 ---
-title: Echtzeit-Kundendatenplattform - Erstellen einer Zielgruppe und Handeln - Senden Sie Ihre Zielgruppe an ein S3-Ziel
-description: Echtzeit-Kundendatenplattform - Erstellen einer Zielgruppe und Handeln - Senden Sie Ihre Zielgruppe an ein S3-Ziel
+title: Real-Time CDP - Zielgruppe aufbauen und Maßnahmen ergreifen - Zielgruppe an ein S3-Ziel senden
+description: Real-Time CDP - Zielgruppe aufbauen und Maßnahmen ergreifen - Zielgruppe an ein S3-Ziel senden
 kt: 5342
 doc-type: tutorial
 exl-id: 656fc93c-74ff-4d8f-8674-6520d2a70b86
@@ -11,15 +11,15 @@ ht-degree: 5%
 
 ---
 
-# 2.3.4 Aktion durchführen: Senden Sie Ihre Audience an ein S3-Ziel
+# 2.3.4 Aktion durchführen: Ihre Zielgruppe an ein S3-Ziel senden
 
-Adobe Experience Platform kann auch Audiences für E-Mail-Marketing-Ziele wie Salesforce Marketing Cloud, Oracle Eloqua, Oracle Responsys und Adobe Campaign freigeben.
+Adobe Experience Platform hat auch die Möglichkeit, Zielgruppen für E-Mail-Marketing-Ziele wie Salesforce Marketing Cloud, Oracle Eloqua, Oracle Responsys und Adobe Campaign freizugeben.
 
-Sie können FTP oder SFTP als Teil der dedizierten Ziele für jedes dieser E-Mail-Marketing-Ziele verwenden oder AWS S3 verwenden, um Kundenlisten zwischen Adobe Experience Platform und diesen E-Mail-Marketing-Zielen auszutauschen.
+Sie können FTP oder SFTP als Teil der dedizierten Ziele für jedes dieser E-Mail-Marketing-Ziele verwenden oder Sie können AWS S3 verwenden, um Kundenlisten zwischen Adobe Experience Platform und diesen E-Mail-Marketing-Zielen auszutauschen.
 
 In diesem Modul konfigurieren Sie ein solches Ziel, indem Sie einen AWS S3-Bucket verwenden.
 
-## S3-Behälter erstellen
+## Erstellen eines S3-Buckets
 
 Wechseln Sie zu [https://console.aws.amazon.com](https://console.aws.amazon.com) und melden Sie sich an.
 
@@ -33,63 +33,63 @@ Nach der Anmeldung werden Sie zur **AWS Management Console** weitergeleitet.
 
 ![ETL](./images/awsconsole.png)
 
-Suchen Sie in der Suchleiste nach **s3**. Klicken Sie auf das erste Suchergebnis: **S3 - Skalierbarer Speicher in der Cloud**.
+Suchen Sie in der Suchleiste nach **s3**. Klicken Sie auf das erste Suchergebnis: **S3 - Scalable Storage in the Cloud**.
 
 ![ETL](./images/awsconsoles3.png)
 
-Dann sehen Sie die Homepage von **Amazon S3**. Klicken Sie auf **Behälter erstellen**.
+Anschließend wird die Startseite von **Amazon S3** angezeigt. Klicken Sie **Bucket erstellen**.
 
 ![ETL](./images/s3home.png)
 
-Verwenden Sie im Bildschirm **Behälter erstellen** den Namen `aepmodulertcdp--aepUserLdap--`
+Verwenden **im Bildschirm „Bucket erstellen** den Namen `aepmodulertcdp--aepUserLdap--`
 
 ![ETL](./images/bucketname.png)
 
-Behalten Sie alle anderen Standardeinstellungen bei. Scrollen Sie nach unten und klicken Sie auf **Bucket erstellen**.
+Belassen Sie alle anderen Standardeinstellungen. Scrollen Sie nach unten und klicken Sie auf **Bucket erstellen**.
 
 ![ETL](./images/createbucket.png)
 
-Sie werden sehen, wie Ihr Bucket erstellt wird und zur Amazon S3-Homepage weitergeleitet wird.
+Anschließend wird Ihr Bucket erstellt und zur Amazon S3-Homepage weitergeleitet.
 
 ![ETL](./images/S3homeb.png)
 
-## Festlegen von Berechtigungen für den Zugriff auf Ihren S3-Behälter
+## Berechtigungen für den Zugriff auf Ihren S3-Bucket festlegen
 
 Der nächste Schritt besteht darin, den Zugriff auf Ihren S3-Bucket einzurichten.
 
-Gehen Sie dazu zu [https://console.aws.amazon.com/iam/home](https://console.aws.amazon.com/iam/home).
+Navigieren Sie dazu zu [https://console.aws.amazon.com/iam/home](https://console.aws.amazon.com/iam/home).
 
-Der Zugriff auf AWS-Ressourcen wird über die Amazon Identity and Access Management (IAM) gesteuert.
+Der Zugriff auf AWS-Ressourcen wird über Amazon Identity and Access Management (IAM) gesteuert.
 
-Sie werden jetzt diese Seite sehen.
+Jetzt sehen Sie diese Seite.
 
 ![ETL](./images/iam.png)
 
-Klicken Sie im linken Menü auf **Benutzer**. Daraufhin wird der Bildschirm **Benutzer** angezeigt. Klicken Sie auf **Benutzer erstellen**.
+Klicken Sie im linken Menü auf **Benutzer**. Anschließend wird der Bildschirm **Benutzer** angezeigt. Klicken Sie **Benutzer erstellen**.
 
 ![ETL](./images/iammenu.png)
 
-Konfigurieren Sie dann Ihren Benutzer:
+Konfigurieren Sie anschließend Ihren Benutzer:
 
-- Benutzername: use `s3_--aepUserLdap--_rtcdp`
+- Benutzername: `s3_--aepUserLdap--_rtcdp` verwenden
 
 Klicken Sie auf **Weiter**.
 
 ![ETL](./images/configuser.png)
 
-Dann sehen Sie diesen Berechtigungsbildschirm. Klicken Sie auf **Richtlinien direkt anhängen**.
+Anschließend wird dieser Bildschirm mit den Berechtigungen angezeigt. Klicken Sie **Richtlinien direkt anhängen**.
 
 ![ETL](./images/perm1.png)
 
-Geben Sie den Suchbegriff **s3** ein, um alle zugehörigen S3-Richtlinien anzuzeigen. Wählen Sie die Richtlinie **AmazonS3FullAccess** aus. Scrollen Sie nach unten und klicken Sie auf **Weiter**.
+Geben Sie den Suchbegriff **s3** ein, um alle zugehörigen S3-Richtlinien anzuzeigen. Wählen Sie die Richtlinie **AmazonS3FullAccess**. Scrollen Sie nach unten und klicken Sie auf **Weiter**.
 
 ![ETL](./images/perm2.png)
 
-Überprüfen Sie Ihre Konfiguration. Klicken Sie auf **Benutzer erstellen**.
+Überprüfen Sie Ihre Konfiguration. Klicken Sie **Benutzer erstellen**.
 
 ![ETL](./images/review.png)
 
-Dann wirst du das sehen. Klicken Sie auf **Benutzer anzeigen**.
+Sie werden es dann sehen. Klicken Sie **Benutzer anzeigen**.
 
 ![ETL](./images/review1.png)
 
@@ -101,11 +101,11 @@ Wählen Sie **Anwendung, die außerhalb von AWS ausgeführt wird**. Scrollen Sie
 
 ![ETL](./images/creda.png)
 
-Klicken Sie auf **Zugriffsschlüssel erstellen**
+Klicken Sie **Zugriffsschlüssel erstellen**
 
 ![ETL](./images/credb.png)
 
-Dann wirst du das sehen. Klicken Sie auf **Anzeigen** , um Ihren geheimen Zugriffsschlüssel anzuzeigen:
+Sie werden es dann sehen. Klicken Sie **Anzeigen**, um Ihren geheimen Zugriffsschlüssel anzuzeigen:
 
 ![ETL](./images/cred1.png)
 
@@ -115,50 +115,50 @@ Ihr **geheimer Zugriffsschlüssel** wird jetzt angezeigt.
 >
 >Speichern Sie Ihre Anmeldedaten in einer Textdatei auf Ihrem Computer.
 >
-> - Zugriffsschlüssel-ID: ...
-> - Geheimer Zugriffsschlüssel: ...
+> - Zugriffsschlüssel-ID: …
+> - Geheimer Zugriffsschlüssel: …
 >
-> Wenn Sie auf **Fertig** klicken, werden Sie Ihre Anmeldedaten nie mehr sehen!
+> Wenn Sie auf **Fertig** klicken, werden Ihre Anmeldeinformationen nie mehr angezeigt!
 
 Klicken Sie auf **Fertig**.
 
 ![ETL](./images/cred2.png)
 
-Sie haben jetzt erfolgreich einen AWS S3-Bucket erstellt und einen Benutzer mit Zugriffsberechtigungen für diesen Bucket erstellt.
+Sie haben jetzt erfolgreich einen AWS S3-Bucket erstellt und eine Benutzerin bzw. einen Benutzer mit der Berechtigung zum Zugriff auf diesen Bucket erstellt.
 
-## Konfigurieren des Ziels in Adobe Experience Platform
+## Konfigurieren des -Ziels in Adobe Experience Platform
 
-Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
+Zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach dem Login landen Sie auf der Homepage von Adobe Experience Platform.
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbox hat den Namen ``--aepSandboxName--``. Nach Auswahl der entsprechenden [!UICONTROL Sandbox] wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Wechseln Sie im linken Menü zu **Ziele** und gehen Sie dann zu **Katalog**. Daraufhin wird der **Zielkatalog** angezeigt.
+Gehen Sie im linken Menü zu **Ziele** und dann zu **Katalog**. Anschließend sehen Sie den **Zielkatalog**.
 
 ![RTCDP](./images/rtcdpmenudest1.png)
 
-Klicken Sie auf **Cloud-Speicher** und dann auf der Karte **Amazon S3** auf die Schaltfläche **Einrichten** (oder je nach Umgebung auf **Zielgruppen aktivieren** ).
+Klicken Sie auf **Cloud-Speicher** und dann auf der Karte {6 **Amazon S3** auf die Schaltfläche Einrichten **(oder** Zielgruppen aktivieren **, je nach Ihrer Umgebung).**
 
 ![RTCDP](./images/rtcdp2.png)
 
-Wählen Sie als Kontotyp **Zugriffsschlüssel** aus. Bitte verwenden Sie die S3-Anmeldeinformationen, die Ihnen im vorherigen Schritt zugewiesen wurden:
+Wählen Sie **Zugriffsschlüssel** als Kontotyp aus. Verwenden Sie die S3-Anmeldeinformationen, die Ihnen im vorherigen Schritt erteilt wurden:
 
 | Zugriffsschlüssel-ID | Geheimer Zugriffsschlüssel |
 |:-----------------------:| :-----------------------:|
-| AKIA... | 7Icm... |
+| AKIA….. | 7icm….. |
 
-Klicken Sie auf **Mit Ziel verbinden**.
+Klicken Sie **Mit Ziel verbinden**.
 
 ![RTCDP](./images/rtcdpsfs3.png)
 
-Daraufhin wird eine visuelle Bestätigung angezeigt, dass dieses Ziel jetzt verbunden ist.
+Anschließend wird eine visuelle Bestätigung angezeigt, dass dieses Ziel jetzt verbunden ist.
 
 ![RTCDP](./images/rtcdpsfs3connected.png)
 
-Sie müssen Details zum S3-Bucket angeben, damit Adobe Experience Platform eine Verbindung zum S3-Bucket herstellen kann.
+Sie müssen S3-Bucket-Details angeben, damit Adobe Experience Platform eine Verbindung zum S3-Bucket herstellen kann.
 
 Verwenden Sie als Namenskonvention Folgendes:
 
@@ -166,16 +166,16 @@ Verwenden Sie als Namenskonvention Folgendes:
 |:-----------------------:| :-----------------------:|
 | Name | `AWS - S3 - --aepUserLdap--` |
 | Beschreibung | `AWS - S3 - --aepUserLdap--` |
-| Behältername | `aepmodulertcdp--aepUserLdap--` |
+| Bucket-Name | `aepmodulertcdp--aepUserLdap--` |
 | Ordnerpfad | /now |
 
 Wählen Sie **Zielgruppen** aus.
 
-Wählen Sie für **Dateityp** **CSV** aus und lassen Sie die Standardeinstellungen unverändert.
+Wählen Sie **Dateityp** die Option **CSV** und lassen Sie die Standardeinstellungen unverändert.
 
 ![RTCDP](./images/rtcdpsfs3connect2.png)
 
-Scrollen Sie nach unten. Wählen Sie für **Komprimierungsformat** die Option **Ohne**. Klicken Sie auf **Weiter**.
+Scroll down. Wählen Sie **Komprimierungsformat** die Option **Keine** aus. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/rtcdpsfs3connect3.png)
 
@@ -183,34 +183,34 @@ Sie können jetzt optional eine Data Governance-Richtlinie an Ihr neues Ziel anh
 
 ![RTCDP](./images/rtcdpsfs3connect2gov.png)
 
-Suchen Sie in der Zielgruppenliste nach der Zielgruppe, die Sie in der vorherigen Übung erstellt haben, `--aepUserLdap-- - Interest in Galaxy S24` und wählen Sie sie aus. Klicken Sie auf **Weiter**.
+Suchen Sie in der Liste der Zielgruppen nach der Zielgruppe, die Sie in der vorherigen Übung erstellt haben, `--aepUserLdap-- - Interest in Galaxy S24` Sie sie aus. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/s3a.png)
 
-Dann wirst du das sehen. Bei Bedarf können Sie den Zeitplan und den Dateinamen bearbeiten, indem Sie auf das Symbol **Bleistift** klicken. Klicken Sie auf **Weiter**.
+Sie werden es dann sehen. Wenn Sie möchten, können Sie den Zeitplan und den Dateinamen bearbeiten, indem Sie auf das **Bleistiftsymbol** klicken. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/s3bb.png)
 
-Sie können jetzt Profilattribute für den Export in AWS S3 auswählen. Klicken Sie auf **Neues Feld hinzufügen** und stellen Sie sicher, dass das Feld `--aepTenantId--.identification.core.ecid` hinzugefügt und als **Deduplizierungsschlüssel** markiert ist.
+Sie können jetzt Profilattribute für den Export in AWS S3 auswählen. Klicken Sie **Neues Feld hinzufügen** und stellen Sie sicher, dass das Feld `--aepTenantId--.identification.core.ecid` hinzugefügt und als **Deduplizierungsschlüssel)**.
 
-Optional können Sie beliebig viele weitere Profilattribute hinzufügen.
+Optional können Sie so viele andere Profilattribute wie erforderlich hinzufügen.
 
 Nachdem Sie alle Felder hinzugefügt haben, klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/s3c.png)
 
-Überprüfen Sie Ihre Konfiguration. Klicken Sie auf **Beenden** , um die Konfiguration abzuschließen.
+Überprüfen Sie Ihre Konfiguration. Klicken Sie **Beenden**, um Ihre Konfiguration abzuschließen.
 
 ![RTCDP](./images/s3g.png)
 
-Sie sind dann wieder auf dem Bildschirm Zielaktivierung und sehen, wie Ihre Zielgruppe zu diesem Ziel hinzugefügt wurde.
+Anschließend kehren Sie zum Bildschirm für die Zielaktivierung zurück und sehen, wie Ihre Zielgruppe zu diesem Ziel hinzugefügt wird.
 
 Wenn Sie weitere Zielgruppenexporte hinzufügen möchten, können Sie auf **Zielgruppen aktivieren** klicken, um den Prozess neu zu starten und weitere Zielgruppen hinzuzufügen.
 
 ![RTCDP](./images/s3j.png)
 
-Nächster Schritt: [2.3.5 Aktion ausführen: Senden Sie Ihre Audience an Adobe Target](./ex5.md)
+Nächster Schritt: [2.3.5 Aktion ausführen: Zielgruppe an Adobe Target senden](./ex5.md)
 
-[Zurück zu Modul 2.3](./real-time-cdp-build-a-segment-take-action.md)
+[Zurück zum Modul 2.3](./real-time-cdp-build-a-segment-take-action.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

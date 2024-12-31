@@ -1,7 +1,8 @@
 ---
-title: Domänenübergreifende Unterstützung aktivieren - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
-description: Erfahren Sie, wie Sie Adobe Target für domänenübergreifende und mobile Apps mithilfe des Experience Platform Web SDK für Webbrowser-Szenarien konfigurieren.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: Domain-übergreifende Unterstützung aktivieren - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
+description: Erfahren Sie, wie Sie Adobe Target für domänenübergreifende und mobile App-zu-Webbrowser-Szenarien mit Experience Platform Web SDK konfigurieren.
+exl-id: 1dc78771-b85c-4127-8d1b-6558509f9db8
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
@@ -10,37 +11,37 @@ ht-degree: 0%
 
 # Domänenübergreifende Besucherprofile aktivieren
 
-Das Platform Web SDK unterstützt Funktionen zur Freigabe von Besucher-IDs, mit denen Kunden personalisierte Erlebnisse über Ihre Domänen hinweg genauer bereitstellen können. Mit dieser Funktion können Sie domänenübergreifend eine konsistente Personalisierung bereitstellen und die Genauigkeit der Berichte zu Besucheraktivitäten verbessern, ohne auf Drittanbieter-Cookies angewiesen zu sein.
+Die Platform Web SDK unterstützt Funktionen zum Freigeben von Besucher-IDs, mit denen Kunden personalisierte Erlebnisse präziser über Ihre Domains hinweg bereitstellen können. Mit dieser Funktion können Sie eine konsistente Personalisierung über Domains hinweg bereitstellen und die Genauigkeit der Berichte zu Besucheraktivitäten verbessern, ohne auf Drittanbieter-Cookies angewiesen zu sein.
 
 ## Voraussetzungen
 
-Um die domänenübergreifende ID-Freigabe zu verwenden, müssen Sie die Platform Web SDK-Version 2.11.0 oder höher verwenden. Diese Funktion ist auch mit VisitorAPI.js Version 1.7.0 oder neuer kompatibel.
+Um die Domain-übergreifende ID-Freigabe zu verwenden, müssen Sie Platform Web SDK Version 2.11.0 oder höher verwenden. Diese Funktion ist auch mit VisitorAPI.js Version 1.7.0 oder höher kompatibel.
 
-Die domänenübergreifende ID-Freigabe funktioniert durch Anhängen eines speziellen Abfragezeichenfolgenparameters `adobe_mc` an die URL der Zieldomäne. Dieser Parameter wird zum Angeben der Besucher-ID verwendet, anstatt eine neue ID zu generieren oder eine vorhandene ID zu verwenden.
+Die Domain-übergreifende ID-Freigabe funktioniert durch Anhängen eines speziellen `adobe_mc` Abfragezeichenfolgenparameters an die URL der Ziel-Domain. Dieser Parameter wird verwendet, um die Besucher-ID anzugeben, anstatt eine neue ID zu generieren oder eine vorhandene ID zu verwenden.
 
-Die Zieldomäne muss eine dieser Bibliotheken für die domänenübergreifende ID-Freigabe verwenden, um den Parameter `adobe_mc` zu verarbeiten und die Besucher-ID ordnungsgemäß zu teilen.
+Die Ziel-Domain muss eine dieser Bibliotheken für die Domain-übergreifende ID-Freigabe verwenden, um den `adobe_mc` Parameter zu verarbeiten und die Besucher-ID ordnungsgemäß freizugeben.
 
-## Vergleich der Ansätze
+## Anflugvergleich
 
-Bestimmen Sie vor der Implementierung zunächst, ob Ihre vorhandene Implementierung die Funktion `visitor.appendVisitorIDsTo()` verwendet. Jeder benutzerspezifische Code, der diese Funktion verwendet, sollte aktualisiert werden, um den neuen Web SDK-Befehl `appendIdentityToUrl` zu verwenden.
+Stellen Sie vor der Implementierung zunächst fest, ob Ihre vorhandene Implementierung die `visitor.appendVisitorIDsTo()` verwendet. Jeder benutzerdefinierte Code, der diese Funktion verwendet, sollte aktualisiert werden, um den neuen `appendIdentityToUrl` Web SDK-Befehl zu verwenden.
 
 | VisitorAPI.js | Platform Web-SDK |
 | --- | --- |
 | `visitor.appendVisitorIDsTo(*url*)` | `alloy("appendIdentityToUrl", { url: *url* })` |
 
-## Verwenden des Befehls `appendIdentityToURL`
+## Verwenden des `appendIdentityToURL` Befehls
 
-Für die domänenübergreifende ID-Freigabe bietet das Web SDK Version 2.11.0 Unterstützung für den Befehl `appendIdentityToUrl`. Wenn dieser Befehl verwendet wird, generiert er den Abfragezeichenfolgenparameter `adobe_mc` .
+Bei der Domain-übergreifenden ID-Freigabe unterstützt Web SDK Version 2.11.0 den Befehl `appendIdentityToUrl`. Bei Verwendung dieses Befehls wird der `adobe_mc` Abfragezeichenfolgenparameter generiert.
 
-Der Befehl akzeptiert ein Objekt mit der Eigenschaft &quot;`url`&quot;und gibt ein Objekt mit der Eigenschaft &quot;url&quot;zurück.
+Der Befehl akzeptiert ein -Objekt mit der Eigenschaft `url` und gibt ein -Objekt mit der Eigenschaft URL zurück.
 
-Dieser Befehl wartet nicht auf eine Aktualisierung der Zustimmung. Wenn keine Zustimmung erteilt wurde, wird die URL unverändert zurückgegeben.
+Dieser Befehl wartet nicht auf eine Aktualisierung des Einverständnisses. Wenn kein Einverständnis erteilt wurde, wird die URL unverändert zurückgegeben.
 
-Wenn keine ECID angegeben wird, wird der `/acquire` -Endpunkt aufgerufen, um eine ECID zu generieren.
+Wenn keine ECID bereitgestellt wird, wird der `/acquire`-Endpunkt aufgerufen, um eine ECID zu generieren.
 
-Im Folgenden finden Sie ein Beispiel für die Implementierung der domänenübergreifenden ID-Freigabe.
+Im Folgenden finden Sie ein Beispiel dafür, wie Sie die Domain-übergreifende ID-Freigabe implementieren können.
 
-Dieser Code fügt einen Ereignis-Listener für alle Klicks auf der Seite hinzu. Wenn sich der Klick auf einen Link zu einer übereinstimmenden Domäne befand, in diesem Fall adobe.com oder behance.com, wird die Identität zur URL hinzugefügt und der Benutzer dorthin weitergeleitet.
+Dieser Code fügt einen Ereignis-Listener für alle Klicks auf der Seite hinzu. Wenn der Klick auf einen Link zu einer entsprechenden Domain erfolgte, in diesem Fall adobe.com oder behance.com, wird die Identität zur URL hinzugefügt und der Benutzer wird dorthin weitergeleitet.
 
 ```Javascript
 document.addEventListener("click", event => {
@@ -61,14 +62,14 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->Bei Verwendung der Tags-Funktion (früher Launch) zur Implementierung des Web SDK kann die domänenübergreifende ID-Freigabe ohne benutzerdefinierten Code durchgeführt werden. Weitere Informationen finden Sie in der [dedizierten Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension) .
+>Bei Verwendung der Tags-Funktion (früher Launch) zur Implementierung von Web SDK kann die Domain-übergreifende ID-Freigabe ohne benutzerdefinierten Code durchgeführt werden. Weitere Informationen finden Sie in [dedizierten ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension)).
 
 >[!NOTE]
 >
->Das Platform Web SDK unterstützt auch die Freigabe von mobilen IDs für native Anwendungsfälle mobiler Apps. Weitere Informationen finden Sie in der entsprechenden Dokumentation zum Thema [Freigeben von IDs zwischen Mobilgeräten und Domänen sowie zum domänenübergreifenden Freigeben](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html).
+>Die Platform Web SDK unterstützt auch die Freigabe von IDs von Mobilgeräten an das Web für native Anwendungsfälle von Mobile Apps. Weitere Informationen finden Sie in der entsprechenden Dokumentation [Mobile-zu-Web und Domain-übergreifender ID-Austausch](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html).
 
-Anschließend erfahren Sie, wie Sie [Zielgruppen und Profilskripte aktualisieren](update-audiences.md), um die Kompatibilität mit dem Platform Web SDK sicherzustellen.
+Erfahren Sie als Nächstes, wie Sie [Zielgruppen und Profilskripte aktualisieren](update-audiences.md) um die Kompatibilität mit Platform Web SDK sicherzustellen.
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Migration Ihrer mobilen Target-Erweiterung von der Target-Erweiterung zur Decisioning-Erweiterung. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.

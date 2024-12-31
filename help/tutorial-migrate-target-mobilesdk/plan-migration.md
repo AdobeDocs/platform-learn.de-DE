@@ -1,7 +1,8 @@
 ---
 title: Planung - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
-description: Erfahren Sie, wie Sie für Ihre Adobe Target-Implementierung von at.js 2.x auf das Adobe Experience Platform Web SDK planen.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: Erfahren Sie, wie Sie Ihre Adobe Target-Implementierung von at.js 2.x auf Adobe Experience Platform Web SDK planen.
+exl-id: 50eefe2d-ba20-45d5-8674-c4f5d035a9eb
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
@@ -10,17 +11,17 @@ ht-degree: 0%
 
 # Planen der Target-Migration zur Decisioning-Erweiterung
 
-Bevor Sie Target von der Target-Erweiterung auf die Decisioning-Erweiterung in Ihrer mobilen App aktualisieren, sollten Sie Ihre aktuelle Implementierung bewerten.
+Bevor Sie in Ihrer Mobile App ein Upgrade von Target von der Target-Erweiterung auf die Decisioning-Erweiterung durchführen, sollten Sie Ihre aktuelle Implementierung bewerten.
 
-## Bewertung der aktuellen Target-Erweiterungsimplementierung
+## Bewertung der aktuellen Implementierung der Target-Erweiterung
 
-Der erste Schritt zu einer erfolgreichen Migration besteht darin, ein solides Verständnis Ihrer aktuellen Target-Erweiterungsimplementierung zu haben. Es gibt Funktionen, Funktionen und benutzerdefinierten Code, die Sie verwenden können und die aktualisiert werden müssen. Beachten Sie Folgendes bei der Beurteilung:
+Der erste Schritt für eine erfolgreiche Migration besteht darin, ein solides Verständnis Ihrer aktuellen Target-Erweiterungsimplementierung zu haben. Es gibt Funktionen und benutzerdefinierten Code, den Sie verwenden können und der aktualisiert werden muss. Berücksichtigen Sie bei der Bewertung Folgendes:
 
 ### Welche Funktionen werden unterstützt?
 
 <!--Platform Web SDK is under continuous active development and features and enhancements are added regularly. As you evaluate your current at.js implementation, refer to the [supported use cases](https://github.com/orgs/adobe/projects/18/views/1) page for the latest information.-->
 
-### Welche Funktionen verwenden Sie heute?
+### Welche Funktionen nutzt ihr heute?
 
 <!--Platform Web SDK is a new library that consolidates all Adobe solutions for the websites into a single SDK. This enables tighter integration and enables new capabilities unique to Adobe Experience Platform. However, this also means at.js functions are not backwards compatible with Platform Web SDK. As you evaluate your current implementation, make note of the following:
 
@@ -50,8 +51,8 @@ As you migrate, you should plan on following your company's process for testing 
 -->
 
 
-Überprüfen Sie als Nächstes den detaillierten [Vergleich der Target-Erweiterung und der Decisioning-Erweiterung](detailed-comparison.md), um ein besseres Verständnis der technischen Unterschiede zu erhalten und Bereiche zu identifizieren, die zusätzlichen Fokus erfordern.
+Überprüfen Sie anschließend den detaillierten [Vergleich der Target- und der Decisioning-Erweiterung](detailed-comparison.md), um die technischen Unterschiede besser zu verstehen und Bereiche zu identifizieren, die einen zusätzlichen Fokus erfordern.
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Migration Ihrer mobilen Target-Erweiterung von der Target-Erweiterung zur Decisioning-Erweiterung. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.

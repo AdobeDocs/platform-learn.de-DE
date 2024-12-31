@@ -1,6 +1,6 @@
 ---
-title: Echtzeit-Kundendatenplattform - Erstellen einer Zielgruppe und Handeln - Senden Ihrer Zielgruppe an Adobe Target
-description: Echtzeit-Kundendatenplattform - Erstellen einer Zielgruppe und Handeln - Senden Ihrer Zielgruppe an Adobe Target
+title: Real-Time CDP - Zielgruppe aufbauen und Maßnahmen ergreifen - Zielgruppe an Adobe Target senden
+description: Real-Time CDP - Zielgruppe aufbauen und Maßnahmen ergreifen - Zielgruppe an Adobe Target senden
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
@@ -11,29 +11,29 @@ ht-degree: 3%
 
 ---
 
-# 2.3.5 Aktion durchführen: Senden Sie Ihre Audience an Adobe Target
+# 2.3.5 Aktion durchführen: Zielgruppe an Adobe Target senden
 
-Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
+Zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach dem Login landen Sie auf der Homepage von Adobe Experience Platform.
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbox hat den Namen ``--aepSandboxName--``. Nach Auswahl der entsprechenden [!UICONTROL Sandbox] wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-## Überprüfen des Datenspeichers
+## Überprüfen des Datenstroms
 
-Das Adobe Target-Ziel in Real-Time CDP ist mit dem Datastream verbunden, der zur Aufnahme von Daten in das Adobe-Edge-Netzwerk verwendet wird. Wenn Sie Ihr Adobe Target-Ziel einrichten möchten, müssen Sie zunächst überprüfen, ob Ihr Datenspeicher bereits für Adobe Target aktiviert ist. Ihr Datastram wurde in [Übung 0.2 Erstellen Sie Ihren Datenspeicher](./../../../modules/gettingstarted/gettingstarted/ex2.md) konfiguriert und erhielt den Namen `--aepUserLdap-- - Demo System Datastream`.
+Das Adobe Target-Ziel in Real-Time CDP ist mit dem Datenstrom verbunden, der zum Aufnehmen von Daten in das Adobe Edge Network verwendet wird. Wenn Sie Ihr Adobe Target-Ziel einrichten möchten, müssen Sie zunächst überprüfen, ob Ihr Datenstrom bereits für Adobe Target aktiviert ist. Ihr Datenstrom wurde in [Übung 0.2 - Erstellen Ihres Datenstroms](./../../../modules/gettingstarted/gettingstarted/ex2.md) konfiguriert und erhielt den Namen `--aepUserLdap-- - Demo System Datastream`.
 
-Scrollen Sie im linken Menü nach unten und klicken Sie auf **Datastreams**. Suchen Sie in Datastreams nach Ihrem Datastream mit dem Namen `--aepUserLdap-- - Demo System Datastream`. Klicken Sie auf Ihren Datenspeicher, um ihn zu öffnen.
+Scrollen Sie im linken Menü nach unten und klicken Sie auf **Datenströme**. Suchen Sie in Datenströme nach Ihrem Datenstrom mit dem Namen `--aepUserLdap-- - Demo System Datastream`. Klicken Sie auf Ihren Datenstrom, um ihn zu öffnen.
 
 ![Datenaufnahme](./images/atdestds1.png)
 
-Klicken Sie dann neben **Adobe Experience Platform** auf **...** und dann auf **Bearbeiten**.
+Klicken Sie dann auf **…** neben **Adobe Experience Platform** und anschließend auf **Bearbeiten**.
 
 ![Datenaufnahme](./images/atdestds4.png)
 
-Aktivieren Sie die Kontrollkästchen für sowohl **Edge-Segmentierung** als auch **Personalization-Ziele**. Klicken Sie auf **Speichern**.
+Aktivieren Sie die Kontrollkästchen sowohl für **Edge-** als auch für **Personalization-Ziele**. Klicken Sie auf **Speichern**.
 
 ![Datenaufnahme](./images/atdestds4a.png)
 
@@ -41,31 +41,31 @@ Klicken Sie anschließend auf **+ Service hinzufügen**.
 
 ![Datenaufnahme](./images/atdestds4b.png)
 
-Wählen Sie den Dienst **Adobe Target** aus. Klicken Sie auf **Speichern**.
+Wählen Sie den Dienst **Adobe Target**. Klicken Sie auf **Speichern**.
 
 ![Datenaufnahme](./images/atdestds5.png)
 
-Ihr Datastream ist jetzt für Adobe Target konfiguriert.
+Ihr Datenstrom ist jetzt für Adobe Target konfiguriert.
 
 ![Datenaufnahme](./images/atdestds5a.png)
 
 ## Einrichten des Adobe Target-Ziels
 
-Adobe Target ist als Ziel von Real-Time CDP verfügbar. Um Ihre Adobe Target-Integration einzurichten, gehen Sie zu **Ziele**, zu **Katalog**.
+Adobe Target ist als Ziel über Real-Time CDP verfügbar. Um Ihre Adobe Target-Integration einzurichten, gehen Sie zu **Ziele**, zu **Katalog**.
 
-Klicken Sie im Menü **Kategorien** auf **Personalization** . Dann sehen Sie die Zielkarte **(v2) Adobe Target** .
+Klicken Sie im Menü **Kategorien** auf **Personalization&quot;.** Anschließend wird die Zielkarte **(v2) Adobe Target** angezeigt.
 
 ![AT](./images/atdest1.png)
 
-Klicken Sie auf **Mit Ziel verbinden**.
+Klicken Sie **Mit Ziel verbinden**.
 
 ![AT](./images/atdest1a.png)
 
-Dann wirst du das sehen. Sie müssen Ihr eigenes Adobe Target-Ziel erstellen. Befolgen Sie diese Richtlinien:
+Sie werden es dann sehen. Sie müssen Ihr eigenes Adobe Target-Ziel erstellen, befolgen Sie die folgenden Richtlinien:
 
 - Name: Verwenden Sie den Namen `--aepUserLdap-- - Adobe Target v2  (Web)`.
-- Datastream-ID: Sie müssen den Datastream auswählen, den Sie in [Übung 0.2 Erstellen Sie Ihren Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) konfiguriert haben. Der Name Ihres Datastreams sollte: `--aepUserLdap-- - Demo System Datastream` lauten.
-- Workspace: Dies bezieht sich auf Adobe Target-Arbeitsbereiche. Wenn Sie keinen bestimmten Arbeitsbereich verwenden müssen, wählen Sie **Standard-Workspace** aus.
+- Datenstrom-ID: Sie müssen den Datenstrom auswählen, den Sie in [Übung 0.2 - Erstellen Ihres Datenstroms](./../../../modules/gettingstarted/gettingstarted/ex2.md) konfiguriert haben. Der Name Ihres Datenstroms sollte sein: `--aepUserLdap-- - Demo System Datastream`.
+- Workspace: Dies bezieht sich auf Adobe Target-Arbeitsbereiche. Wenn es keinen spezifischen Arbeitsbereich gibt, den Sie verwenden müssen, wählen Sie **Standard-Workspace**.
 
 Klicken Sie auf **Weiter**.
 
@@ -75,11 +75,11 @@ Sie können jetzt optional eine Data Governance-Richtlinie auswählen. Klicken S
 
 ![AT](./images/atdest2.png)
 
-Wählen Sie in der Liste der verfügbaren Zielgruppen die Zielgruppe aus, die Sie in der vorherigen Übung erstellt haben [Erstellen einer Zielgruppe](./ex1.md), die den Namen `--aepUserLdap-- - Interest in Galaxy S24` trägt. Klicken Sie dann auf **Weiter**.
+Wählen Sie in der Liste der verfügbaren Zielgruppen die Zielgruppe aus, die Sie in der vorherigen Übung [Zielgruppe erstellen](./ex1.md) erstellt haben. Diese heißt `--aepUserLdap-- - Interest in Galaxy S24`. Klicken Sie dann auf **Weiter**.
 
 ![AT](./images/atdest8.png)
 
-Auf dem Bildschirm **Zuordnung** können Sie Profilattribute zuordnen, um sie in Adobe Target verfügbar zu machen. Auf diese Weise können Sie eine zusätzliche Ebene der Personalisierung auf Ihrer Website hinzufügen. Klicken Sie auf **Neues Feld hinzufügen**.
+Auf dem Bildschirm **Zuordnung** können Sie Profilattribute zuordnen, damit sie in Adobe Target verfügbar werden. Auf diese Weise können Sie Ihrer Website eine zusätzliche Personalisierungsebene hinzufügen. Klicken Sie **Neues Feld hinzufügen**.
 
 ![AT](./images/atdest9.png)
 
@@ -87,7 +87,7 @@ Wählen Sie für das neue Feld das Feld **person.name.firstName** aus. Klicken S
 
 ![AT](./images/atdest9a.png)
 
-Dann wirst du das haben. Klicken Sie auf **Weiter**.
+Dann hast du das hier. Klicken Sie auf **Weiter**.
 
 ![AT](./images/atdest9b.png)
 
@@ -95,51 +95,51 @@ Klicken Sie auf **Fertigstellen**.
 
 ![AT](./images/atdest10.png)
 
-Ihre Audience ist jetzt für Adobe Target aktiviert.
+Ihre Zielgruppe ist jetzt für Adobe Target aktiviert.
 
 ![AT](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Wenn Sie Ihr Adobe Target-Ziel gerade in Real-Time CDP erstellt haben, kann es bis zu einer Stunde dauern, bis das Ziel aktiv ist. Dies ist eine einmalige Wartezeit aufgrund der Einrichtung der Backend-Konfiguration. Sobald die anfängliche Wartezeit von einer Stunde und die Backend-Konfiguration abgeschlossen sind, stehen neu hinzugefügte Zielgruppen, die an das Adobe Target-Ziel gesendet werden, für das Targeting in Echtzeit zur Verfügung.
+>Wenn Sie soeben Ihr Adobe Target-Ziel in Real-Time CDP erstellt haben, kann es bis zu einer Stunde dauern, bis das Ziel live ist. Dies ist eine einmalige Wartezeit aufgrund der Einrichtung der Backend-Konfiguration. Sobald die anfängliche Wartezeit von einer Stunde und die Backend-Konfiguration abgeschlossen sind, stehen neu hinzugefügte Zielgruppen, die an das Adobe Target-Ziel gesendet werden, für die Zielgruppenbestimmung in Echtzeit zur Verfügung.
 
-## Konfigurieren der formularbasierten Adobe Target-Aktivität
+## Konfigurieren der formularbasierten Aktivität in Adobe Target
 
-Nachdem Ihre Real-Time CDP-Audience für den Versand an Adobe Target konfiguriert wurde, können Sie Ihre Erlebnis-Targeting-Aktivität in Adobe Target konfigurieren. In dieser Übung konfigurieren Sie eine formularbasierte Aktivität.
+Nachdem Sie nun Ihre Real-Time CDP-Zielgruppe für den Versand an Adobe Target konfiguriert haben, können Sie Ihre Experience Targeting-Aktivität in Adobe Target konfigurieren. In dieser Übung konfigurieren Sie eine formularbasierte Aktivität.
 
-Rufen Sie die Adobe Experience Cloud-Homepage auf, indem Sie zu [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/) navigieren. Klicken Sie auf **Ziel** , um es zu öffnen.
+Gehen Sie zur Adobe Experience Cloud-Homepage unter [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Klicken Sie auf **Target**, um es zu öffnen.
 
 ![RTCDP](./images/excl.png)
 
-Auf der Startseite von **Adobe Target** werden alle vorhandenen Aktivitäten angezeigt. Klicken Sie auf **Aktivität erstellen** und dann auf **Erlebnis-Targeting**.
+Auf der Startseite von {**}Adobe Target werden alle vorhandenen Aktivitäten angezeigt.** Klicken Sie **Aktivität erstellen** und dann auf **Erlebnis-Targeting**.
 
 ![RTCDP](./images/exclatov.png)
 
-Wählen Sie **Web**, **Form** und **Keine Eigenschaftenbeschränkungen** aus. Klicken Sie auf **Erstellen**.
+Wählen Sie **Web**, **Form** und **Keine Eigenschaftsbeschränkungen**. Klicken Sie auf **Erstellen**.
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
-Sie befinden sich jetzt im formularbasierten Aktivitäts-Composer.
+Sie befinden sich jetzt im Form-Based Activity Composer.
 
 ![RTCDP](./images/atform1.png)
 
-Wählen Sie für das Feld **POSITION 1** **target-global-mbox** aus.
+Wählen Sie für das Feld **STANDORT 1** die Option **target-global-mbox**.
 
 ![RTCDP](./images/atform2.png)
 
-Die Standardzielgruppe ist derzeit **Alle Besucher**. Klicken Sie auf die Punkte **3 Punkt** neben **Alle Besucher** und klicken Sie auf **Zielgruppe ändern**.
+Die Standardzielgruppe ist derzeit **Alle Besucher**. Klicken Sie auf die **3** neben **Alle Besucher** und klicken Sie auf **Zielgruppe ändern**.
 
 ![RTCDP](./images/atform3.png)
 
-Jetzt wird die Liste der verfügbaren Zielgruppen angezeigt. Die zuvor erstellte und an Adobe Target gesendete Adobe Experience Platform-Zielgruppe ist jetzt Teil dieser Liste. Wählen Sie die zuvor in Adobe Experience Platform erstellte Audience aus. Klicken Sie auf **Zielgruppe zuweisen**.
+Jetzt sehen Sie die Liste der verfügbaren Zielgruppen, und die Adobe Experience Platform-Zielgruppe, die Sie zuvor erstellt und an Adobe Target gesendet haben, ist jetzt Teil dieser Liste. Wählen Sie die zuvor in Adobe Experience Platform erstellte Zielgruppe aus. Klicken Sie **Zielgruppe zuweisen**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Ihre Adobe Experience Platform-Zielgruppe ist jetzt Teil dieser Erlebnis-Targeting-Aktivität.
+Ihre Adobe Experience Platform-Zielgruppe ist jetzt Teil dieser Experience Targeting-Aktivität.
 
 ![RTCDP](./images/atform4.png)
 
-Ändern wir nun das Hero Image auf der Startseite der Website. Klicken Sie auf , um die Dropdown-Liste neben **Standardinhalt** zu öffnen, und klicken Sie auf **HTML-Angebot erstellen**.
+Ändern wir nun das Hero-Bild auf der Homepage der Website. Klicken Sie, um die Dropdown-Liste neben **Standardinhalt** zu öffnen, und klicken Sie auf **HTML-Angebot erstellen**.
 
 ![RTCDP](./images/atform5.png)
 
@@ -153,15 +153,15 @@ document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main
 
 ![RTCDP](./images/atform6.png)
 
-Als Nächstes müssen Sie ein Personalisierungstoken aus den Profilattributen von Adobe Experience Platform hinzufügen. Denken Sie daran, dass Sie bei der Aktivierung der Zielgruppe für Adobe Target auch das Feld **person.name.firstName** auswählen, das für Adobe Target freigegeben werden soll. Um das Feld abzurufen, wählen Sie die Quelle **Adobe Experience Platform** aus, wählen Sie Ihre Sandbox (die den Wert `--aepSandboxName--` haben soll) und dann das Attribut **person.name.firstName** aus.
+Als Nächstes müssen Sie ein Personalisierungs-Token aus den Profilattributen von Adobe Experience Platform hinzufügen. Denken Sie daran, dass Sie beim Aktivieren der Zielgruppe für Adobe Target auch das Feld **person.name.firstName** auswählen, das für Adobe Target freigegeben werden soll. Um das Feld abzurufen, wählen Sie die Quelle **Adobe Experience Platform**, wählen Sie Ihre Sandbox (die `--aepSandboxName--` werden soll) und dann das Attribut **person.name.firstName** aus.
 
 ![RTCDP](./images/atform6a.png)
 
-Bevor Sie auf die Schaltfläche **Hinzufügen** klicken, gehen Sie zu der Zeile, in der Sie `... > h1").innerHTML="Hi there ";` sehen, und setzen Sie den Cursor in die Klammern nach dem Wort `there`, wie in diesem Beispiel:
+Bevor Sie auf die Schaltfläche **Hinzufügen** klicken, gehen Sie zur Zeile, in der Sie `... > h1").innerHTML="Hi there ";` sehen, und setzen Sie den Cursor in die Klammern hinter dem Wort `there` wie folgt:
 
 `... > h1").innerHTML="Hi there ";`
 
-Klicken Sie dann auf die Schaltfläche **Hinzufügen** , um das Token hinzuzufügen, wodurch der Code wie folgt aktualisiert wird:
+Klicken Sie dann auf **Hinzufügen**-Schaltfläche, die anschließend das Token hinzufügen sollte. Dadurch wird der Code wie folgt aktualisiert:
 
 `... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
 
@@ -169,19 +169,19 @@ Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/atform6b.png)
 
-Anschließend sehen Sie die Übersicht Ihres Erlebnisses mit dem neuen Bild für Ihre ausgewählte Zielgruppe. Klicken Sie auf **Weiter**.
+Anschließend sehen Sie einen Überblick über Ihr Erlebnis mit dem neuen Bild für Ihre ausgewählte Zielgruppe. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/atform7.png)
 
-Klicken Sie oben links auf den Titel Ihrer Aktivität, um sie wie folgt umzubenennen: `--aepUserLdap-- - RTCDP - XT (Form)`
+Klicken Sie auf den Titel Ihrer Aktivität in der oberen linken Ecke, um sie wie folgt umzubenennen: `--aepUserLdap-- - RTCDP - XT (Form)`
 
 ![RTCDP](./images/atform8.png)
 
-Wechseln Sie auf der Seite **Ziele und Einstellungen** - zu **Zielmetriken**. Setzen Sie das Primäre Ziel auf **Interaktion** - **Besuchszeit pro Site**. Klicken Sie auf **Speichern und schließen**.
+Gehen Sie auf der **Ziele und Einstellungen** zu **Zielmetriken**. Setzen Sie das Primäre Ziel auf **Interaktion** - **Zeit vor Ort**. Klicken Sie **Speichern und schließen**.
 
 ![RTCDP](./images/vec3.png)
 
-Sie befinden sich nun auf der Seite **Aktivitätsübersicht** . Sie müssen Ihre Aktivität weiterhin aktivieren. Klicken Sie auf das Feld **Inaktiv** und wählen Sie **Aktivieren** aus.
+Sie befinden sich jetzt auf der Seite **Aktivitätsübersicht**. Sie müssen Ihre Aktivität noch aktivieren. Klicken Sie auf das Feld **Inaktiv** und wählen Sie **Aktivieren** aus.
 
 ![RTCDP](./images/atform10.png)
 
@@ -193,14 +193,14 @@ Ihre Aktivität ist jetzt live und kann auf der Demo-Website getestet werden.
 
 >[!IMPORTANT]
 >
->Wenn Sie Ihr Adobe Target-Ziel gerade in Real-Time CDP erstellt haben, kann es bis zu einer Stunde dauern, bis das Ziel aktiv ist. Dies ist eine einmalige Wartezeit aufgrund der Einrichtung der Backend-Konfiguration. Sobald die anfängliche Wartezeit von einer Stunde und die Backend-Konfiguration abgeschlossen sind, sind neu hinzugefügte Edge-Zielgruppen, die an das Adobe Target-Ziel gesendet werden, für das Targeting in Echtzeit verfügbar.
+>Wenn Sie soeben Ihr Adobe Target-Ziel in Real-Time CDP erstellt haben, kann es bis zu einer Stunde dauern, bis das Ziel live ist. Dies ist eine einmalige Wartezeit aufgrund der Einrichtung der Backend-Konfiguration. Sobald die anfängliche Wartezeit von einer Stunde und die Backend-Konfiguration abgeschlossen sind, stehen neu hinzugefügte Edge-Zielgruppen, die an das Adobe Target-Ziel gesendet werden, für das Targeting in Echtzeit zur Verfügung.
 
-Wenn Sie nun zu Ihrer Demo-Website zurückkehren und die Produktseite für Galaxy S24 besuchen, qualifizieren Sie sich dann für die von Ihnen erstellte Zielgruppe und die Adobe Target-Aktivität wird auf der Startseite in Echtzeit angezeigt.
+Wenn Sie jetzt zu Ihrer Demo-Website zurückkehren und die Produktseite für Galaxy S24 besuchen, qualifizieren Sie sich für die von Ihnen erstellte Zielgruppe und Sie sehen, dass die Adobe Target-Aktivität in Echtzeit auf der Startseite angezeigt wird.
 
 ![RTCDP](./images/atform13.png)
 
 Nächster Schritt: [2.3.6 Externe Zielgruppen](./ex6.md)
 
-[Zurück zu Modul 2.3](./real-time-cdp-build-a-segment-take-action.md)
+[Zurück zum Modul 2.3](./real-time-cdp-build-a-segment-take-action.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

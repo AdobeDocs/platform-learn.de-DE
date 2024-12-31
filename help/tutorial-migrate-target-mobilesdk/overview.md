@@ -1,6 +1,6 @@
 ---
 title: Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
-description: Erfahren Sie, wie Sie Ihre Mobile-App-Implementierung von der Adobe Target in die Adobe Journey Optimizer - Decisioning-Erweiterung migrieren.
+description: Erfahren Sie, wie Sie Ihre Mobile-App-Implementierung von der Adobe Target zur Adobe Journey Optimizer - Decisioning-Erweiterung migrieren.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
 source-git-commit: 485e79e3569052184475fbc49ab5f43cebcac9a6
@@ -12,20 +12,20 @@ ht-degree: 3%
 
 # Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
 
-In diesem Handbuch erfahren erfahrene Adobe Target-Implementierer, wie Sie vorhandene Adobe Experience Platform Mobile SDK-Implementierungen von der Adobe Target-Erweiterung in die Adobe Journey Optimizer - Decisioning-Erweiterung migrieren.
+Dieses Handbuch richtet sich an erfahrene Adobe Target-Implementierer, um zu erfahren, wie Sie bestehende Adobe Experience Platform Mobile SDK-Implementierungen von der Adobe Target-Erweiterung zur Adobe Journey Optimizer-Entscheidungserweiterung migrieren.
 
-Adobe Experience Platform Mobile SDK ermöglicht die durchgängige Interaktion mit Ihren mobilen Anwendungen. Die Target-Erweiterung baut auf dem Mobile SDK auf, um Sie bei der Personalisierung von App-Erlebnissen mit Adobe Target zu unterstützen. Die Decisioning-Erweiterung ist ein neuerer Ansatz zur Implementierung von Adobe Target in Apps, die Adobe Experience Platform Edge Network-Funktionen verwenden, die die Integration von Target in plattformbasierte Apps wie Real-Time CDP und Journey Optimizer unterstützen.
+Adobe Experience Platform Mobile SDK ermöglicht die durchgängige Interaktion mit Ihren Mobile Apps. Die Target-Erweiterung baut auf der mobilen SDK auf, um Ihnen bei der Personalisierung von App-Erlebnissen mit Adobe Target zu helfen. Die Decisioning-Erweiterung ist ein neuerer Ansatz zur Implementierung von Adobe Target in Mobile Apps, der Adobe Experience Platform-Edge Network-Funktionen verwendet, die die Integration von Target in Platform-basierte Apps wie Real-Time CDP und Journey Optimizer erleichtern.
 
 ## Wesentliche Vorteile
 
-Zu den Vorteilen der Decisioning-Erweiterung zählen:
+Zu den Vorteilen der Decisioning-Erweiterung gehören unter anderem:
 
 * Schnellere Freigabe von Zielgruppen aus [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=de)
-* Integration von Target in Journey Optimizer zur Unterstützung der [Offer decisioning-Bereitstellung](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
-* Eine engere Integration mit Adobe Analytics, bei der keine Informationen aus separaten Netzwerkaufrufen zugeordnet werden müssen
+* Integration von Target mit Journey Optimizer zur Unterstützung der [Offer decisioning-Bereitstellung](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
+* Eine engere Integration mit Adobe Analytics, die nicht auf der Zuordnung von Informationen aus separaten Netzwerkaufrufen beruht
 * Zusätzliche Implementierungsflexibilität für Entwickler
 
-Der größte Vorteil für Target-Kunden bei der Migration liegt wahrscheinlich in der Integration mit Real-time Customer Data Platform. Real-Time CDP bietet umfangreiche Funktionen zum Erstellen von Zielgruppen, die auf der vollständigen Datenmenge von Experience Platform und der Echtzeit-Kundenprofilfunktion basieren. Ein integriertes Data Governance-Framework automatisiert die verantwortungsvolle Nutzung dieser Daten. Mit Customer AI können Sie mühelos Modelle für maschinelles Lernen verwenden, um Tendenzmodelle und Abwanderungsmodelle zu erstellen, deren Ausgabe an Adobe Target zurückgegeben werden kann. Und schließlich können Kunden der optionalen Zusatzinformationen zu Gesundheitsfürsorge und Datenschutz- und Sicherheitsschild die Funktion zur Einwilligungsdurchsetzung nutzen, um die Zustimmungsvoreinstellungen einzelner Kunden einfach durchzusetzen. Das Platform Web SDK ist eine Voraussetzung für die Verwendung dieser Real-Time CDP-Funktionen in Ihrem Webkanal.
+Der wohl größte Vorteil der Migration für Target-Kunden liegt in der Integration mit Real-time Customer Data Platform. Real-Time CDP bietet umfangreiche Funktionen zur Zielgruppenbildung, die auf dem gesamten Spektrum der in Experience Platform aufgenommenen Daten und dessen Echtzeit-Kundenprofilfunktionen basieren. Ein integriertes Data Governance-Framework automatisiert die verantwortungsvolle Nutzung dieser Daten. Mit Kunden-KI können Sie mühelos maschinelle Lernmodelle verwenden, um Tendenz- und Abwanderungsmodelle zu erstellen, deren Ergebnisse an Adobe Target zurückgegeben werden können. Und schließlich können Kundinnen und Kunden der optionalen Add-ons für Healthcare und Privacy &amp; Security Shield die Funktion zur Durchsetzung von Einverständnissen verwenden, um die Einverständnisvoreinstellungen einzelner Kundinnen und Kunden einfach durchzusetzen. Platform Web SDK ist eine Voraussetzung für die Verwendung dieser Real-Time CDP-Funktionen in Ihrem Web-Kanal.
 
 ## Lernziele
 
@@ -45,4 +45,4 @@ Um dieses Tutorial abzuschließen, sollten Sie zunächst:
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Migration Ihrer mobilen Target-Erweiterung von der Target-Erweiterung zur Decisioning-Erweiterung. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.

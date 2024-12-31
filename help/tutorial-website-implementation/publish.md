@@ -1,6 +1,6 @@
 ---
 title: Publish - Ihre Tag-Eigenschaft
-description: Erfahren Sie, wie Sie Ihre Tag-Eigenschaft aus der Entwicklungsumgebung in den Staging- und Produktionsumgebungen veröffentlichen. Diese Lektion ist Teil des Tutorials zum Implementieren des Experience Cloud in Websites .
+description: Erfahren Sie, wie Sie Ihre Tag-Eigenschaft aus der Entwicklungsumgebung in der Staging- und Produktionsumgebung veröffentlichen. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
 source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ Nachdem Sie nun einige wichtige Adobe Experience Cloud-Lösungen in Ihrer Entw
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
+>Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
 > * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
@@ -33,13 +33,13 @@ Am Ende dieser Lektion können Sie:
 
 Nachdem Sie Ihre Bibliothek in der Entwicklungsumgebung erstellt und überprüft haben, ist es Zeit, sie in der Staging-Umgebung zu veröffentlichen.
 
-1. Navigieren Sie zur Seite **[!UICONTROL Veröffentlichungsfluss]** .
+1. Navigieren Sie zur Seite **[!UICONTROL Publishing-Ablauf]**.
 
-1. Öffnen Sie das Dropdown-Menü neben Ihrer Bibliothek und wählen Sie **[!UICONTROL Zur Genehmigung übermitteln]** aus.
+1. Öffnen Sie das Dropdown-Menü neben Ihrer Bibliothek und wählen Sie **[!UICONTROL Zur Genehmigung einreichen]**
 
    ![Einreichen zur Genehmigung](images/publishing-submitForApproval.png)
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]** im Dialogfeld:
+1. Klicken Sie im **[!UICONTROL auf]** Senden“:
 
    ![Klicken Sie im Modal auf „Absenden“](images/publishing-submit.png)
 
@@ -55,7 +55,7 @@ In einem realen Szenario würde nun Ihr QA-Team die Änderungen in der Staging-B
 
 **Überprüfen der Änderungen in der Staging-Bibliothek**
 
-1. Öffnen Sie in der Tag-Eigenschaft die Seite [!UICONTROL Umgebungen] .
+1. Öffnen Sie in Ihrer Tag-Eigenschaft die Seite [!UICONTROL Umgebungen]
 
 1. Klicken Sie in der Zeile [!UICONTROL Staging] auf das Installationssymbol ![Installationssymbol](images/launch-installIcon.png), um das Modal zu öffnen.
 
@@ -63,28 +63,28 @@ In einem realen Szenario würde nun Ihr QA-Team die Änderungen in der Staging-B
 
 1. Klicken Sie auf das Kopiersymbol ![Kopiersymbol](images/launch-copyIcon.png), um den Einbettungscode in die Zwischenablage zu kopieren.
 
-1. Klicken Sie auf **[!UICONTROL Schließen]** , um das Modal zu schließen.
+1. Klicken Sie auf **[!UICONTROL Schließen]**, um das Modal zu schließen
 
    ![Installationssymbol](images/publishing-copyStagingCode.png)
 
 1. Öffnen Sie die [Demosite „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser.
 
-1. Öffnen Sie die Erweiterung [Experience Platform Debugger ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob), indem Sie auf das Symbol ![Debugger-Symbol](images/icon-debugger.png) klicken.
+1. Öffnen Sie die Erweiterung [Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) indem Sie auf das Symbol ![Debugger-Symbol](images/icon-debugger.png) klicken
 
    ![Klicken Sie auf das Debugger-Symbol](images/switchEnvironments-openDebugger.png)
 
 1. Navigieren Sie zur Registerkarte „Tools“.
 
-1. Fügen Sie im Abschnitt **[!UICONTROL Adobe Launch > Launch-Einbettungscode ersetzen]** den Einbettungscode für das Staging ein, der sich in der Zwischenablage befindet
-1. Aktivieren Sie den Schalter **[!UICONTROL Übernehmen über den Schalter luma.enablementadobe.com]** .
+1. Fügen Sie im Abschnitt **[!UICONTROL Adobe-Launch > Launch-Einbettungs-Code ersetzen]** den Einbettungs-Code für das Staging in die Zwischenablage ein
+1. Schalten Sie den **[!UICONTROL Apply across luma.enablementadobe.com]** ein
 
 1. Klicken Sie auf das Diskettensymbol, um zu speichern.
 
-   ![Tag-Umgebung, die im Debugger angezeigt wird](images/switchEnvironments-debugger-save.png)
+   ![Die Tag-Umgebung wird im Debugger angezeigt](images/switchEnvironments-debugger-save.png)
 
-1. Laden Sie die Registerkarte „Zusammenfassung“ des Debuggers neu und überprüfen Sie diese. Im Abschnitt &quot;Launch&quot;sollte nun angezeigt werden, dass Ihre Staging-Eigenschaft implementiert ist und Ihren Eigenschaftsnamen anzeigt (d. h. &quot;Tags-Tutorial&quot;oder ein anderer Name Ihrer Eigenschaft)!
+1. Laden Sie die Registerkarte „Zusammenfassung“ des Debuggers neu und überprüfen Sie diese. Im Abschnitt Launch sollte nun Ihre Staging-Eigenschaft implementiert sein und Ihren Eigenschaftsnamen anzeigen (d. h. „Tags-Tutorial“ oder den Namen Ihrer Eigenschaft)!
 
-   ![Tag-Umgebung, die im Debugger angezeigt wird](images/publishing-debugger-staging.png)
+   ![Die Tag-Umgebung wird im Debugger angezeigt](images/publishing-debugger-staging.png)
 
 Sobald Ihr QA-Team die Änderungen in der Staging-Umgebung überprüft und bestätigt hat, können Sie sie in der Produktion veröffentlichen.
 
@@ -92,21 +92,21 @@ Sobald Ihr QA-Team die Änderungen in der Staging-Umgebung überprüft und best�
 
 1. Navigieren Sie zur Seite [!UICONTROL Veröffentlichung].
 
-1. Klicken Sie im Dropdown-Menü auf **[!UICONTROL Zur Veröffentlichung genehmigen]**:
+1. Klicken Sie im Dropdown-Menü auf **[!UICONTROL Für Veröffentlichung genehmigen]**:
 
    ![Zur Veröffentlichung genehmigen](images/publishing-approveForPublishing.png)
 
-1. Klicken Sie im Dialogfeld auf die Schaltfläche **[!UICONTROL Genehmigen]** :
+1. Klicken Sie **[!UICONTROL Dialogfeld auf]** Genehmigen“:
 
    ![Klicken Sie auf „Genehmigen“](images/publishing-approve.png)
 
 1. Die Bibliothek wird jetzt in der Spalte [!UICONTROL Genehmigt] im nicht erstellten Status (gelber Punkt) angezeigt:
 
-1. Öffnen Sie das Dropdown-Menü und wählen Sie **[!UICONTROL Erstellen und Publish für Produktion]** aus:
+1. Öffnen Sie das Dropdown-Menü und wählen Sie **[!UICONTROL Erstellen und Publish in Produktion]**:
 
    ![Klicken Sie auf „Erstellen und in Produktion veröffentlichen“](images/publishing-buildAndPublishToProduction.png)
 
-1. Klicken Sie im Dialogfeld auf den Eintrag **[!UICONTROL Publish]** :
+1. Klicken Sie im Dialogfeld auf ]****[!UICONTROL  Publish:
 
    ![Klicken Sie auf Veröffentlichen](images/publishing-publish.png)
 

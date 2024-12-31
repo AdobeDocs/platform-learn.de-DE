@@ -1,6 +1,6 @@
 ---
-title: Audience Activation zu Microsoft Azure Event Hub
-description: Audience Activation zu Microsoft Azure Event Hub
+title: Audience Activation zum Microsoft Azure Event Hub
+description: Audience Activation zum Microsoft Azure Event Hub
 kt: 5342
 doc-type: tutorial
 exl-id: 23713cb4-2055-43e8-9380-0ca8845a75e8
@@ -11,36 +11,36 @@ ht-degree: 0%
 
 ---
 
-# 2.4 Real-Time CDP: Audience Activation zu Microsoft Azure Event Hub
+# 2.4 Real-Time CDP: Audience Activation zum Microsoft Azure Event Hub
 
-In diesem Modul richten Sie ein Microsoft Azure EventHub-Ziel als Echtzeit-Ziel für die Echtzeit-Kundendatenplattform von Adobe Experience Platform ein. Sie richten außerdem eine Azure-Funktion ein und stellen sie bereit, die in Echtzeit ausgelöst wird, sobald Adobe Experience Platform eine Zielgruppen-Payload für Ihr Azure EventHub-Ziel bereitstellt. Die Azure-Funktion, die Sie in Trigger nehmen, zeigt den Mechanismus der Aktivierungsfunktionen der Adobe Experience Platform-Echtzeit-Kundendatenplattform an.
+In diesem Modul richten Sie ein Microsoft Azure EventHub-Ziel als Echtzeit-Ziel für Adobe Experience Platform Real-Time CDP ein. Sie werden auch eine Azure-Funktion einrichten und bereitstellen, die in Echtzeit ausgelöst wird, wenn Adobe Experience Platform eine Zielgruppen-Payload an Ihr Azure EventHub-Ziel sendet. Die Azure-Funktion, die Sie in den Trigger nehmen, zeigt den Mechanismus der Aktivierungsfunktionen von Adobe Experience Platform Real-time CDP.
 
-Im Rahmen dieses Moduls erhalten Sie außerdem Informationen dazu, welche Echtzeit-Kundendatenplattform von Trigger tatsächlich eine Payload an ein bestimmtes Ziel bereitstellt. Wir besprechen auch den Status einer Audience-Qualifizierung und deren Zusammenhang mit der Aktivierung.
+In diesem Modul erfahren Sie auch, welche Trigger Real-Time CDP-Programme tatsächlich eine Payload an ein bestimmtes Ziel senden. Wir besprechen auch den Status einer Zielgruppen-Qualifizierung und wie sie mit der Aktivierung zusammenhängt.
 
-Die Echtzeit-Kundendatenplattform von Adobe Experience Platform unterstützt die Datenaktivierung für Streaming-Cloud-Speicher-Ziele, sodass Sie Zielgruppendaten und -Ereignisse in Echtzeit im JSON-Format an diese Ziele exportieren können. Anschließend können Sie die Geschäftslogik über diese Ereignisse in Ihren Zielen beschreiben
+Adobe Experience Platform Real-Time CDP unterstützt die Datenaktivierung für Streaming-Cloud-Speicher-Ziele, sodass Sie Zielgruppendaten und -ereignisse in Echtzeit im JSON-Format an diese Ziele exportieren können. Anschließend können Sie die Geschäftslogik zusätzlich zu diesen Ereignissen in Ihren Zielen beschreiben
 
-Microsoft Azure Event Hubs ist ein vollständig verwalteter Echtzeit-Datenerfassungsdienst, der einfach, vertrauenswürdig und skalierbar ist. Streamen Sie Millionen von Ereignissen pro Sekunde von einer beliebigen Quelle, um dynamische Datenpipelines zu erstellen und sofort auf geschäftliche Herausforderungen zu reagieren.
+Microsoft Azure Event Hubs ist ein vollständig verwalteter Service zur Datenaufnahme in Echtzeit, der einfach, vertrauenswürdig und skalierbar ist. Streamen Sie Millionen von Ereignissen pro Sekunde aus jeder Quelle, um dynamische Daten-Pipelines zu erstellen und sofort auf geschäftliche Herausforderungen zu reagieren.
 
 ## Lernziele
 
-- Kennenlernen der Microsoft Azure Event Hubs
-- Richten Sie ein RTCDP-Ziel für Ihren Microsoft Azure Event Hub ein.
-- Erfahren Sie, wann die Echtzeit-Kundendatenplattform aktiviert wird und wie die Aktivierungs-Payload aussieht.
-- Einrichten von Visual Studio Code zum Entwickeln, Testen und Bereitstellen Ihres Azure-Projekts
-- Erstellen und Bereitstellen einer Azure-Funktion, die von RTCDP bereitgestellte Zielgruppenqualifikationen in Echtzeit nutzt
+- Machen Sie sich mit den Microsoft Azure Event Hubs vertraut
+- Einrichten eines RTCDP-Ziels für Ihren Microsoft Azure Event Hub
+- Erfahren Sie, wann die Real-Time CDP aktiviert wird und wie die Aktivierungs-Payload aussieht
+- Einrichten von Visual Studio Code zum Entwickeln, Testen und Bereitstellen des Azure-Projekts
+- Erstellen und Bereitstellen einer Azure-Funktion, die Zielgruppenqualifikationen nutzt, die in Echtzeit von RTCDP bereitgestellt werden
 
 ## Voraussetzungen
 
 - Zugriff auf [Adobe Experience Platform](https://experience.adobe.com/platform)
-- So definieren, verwenden und aktivieren Sie Zielgruppen in Adobe Experience Platform
+- Erfahren Sie, wie Sie Zielgruppen in Adobe Experience Platform definieren, verwenden und aktivieren
 
 >[!NOTE]
 >
->Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie unter [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben.
+>Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie in [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben
 
 ## Übungen
 
-[2.4.1 Umgebung konfigurieren](./ex1.md)
+[2.4.1 Konfigurieren der Umgebung](./ex1.md)
 
 In dieser Übung richten Sie Ihre Microsoft Azure-Umgebung ein.
 
@@ -50,7 +50,7 @@ In dieser Übung richten Sie Ihre Microsoft Azure EventHub-Umgebung ein.
 
 [2.4.3 Konfigurieren des Azure Event Hub-Ziels in Adobe Experience Platform](./ex3.md)
 
-In dieser Übung richten Sie Ihre Zielverbindung der Echtzeit-Kundendatenplattform ein, die Zielgruppen in Echtzeit an die Event Hub-Instanz sendet, die Sie in der vorherigen Übung konfiguriert haben.
+In dieser Übung richten Sie Ihre Real-Time CDP-Zielverbindung ein, die Zielgruppen in Echtzeit an die Event Hub-Instanz bereitstellt, die Sie in der vorherigen Übung konfiguriert haben.
 
 [2.4.4 Erstellen einer Zielgruppe](./ex4.md)
 
@@ -62,18 +62,18 @@ In dieser Übung aktivieren Sie Ihre Zielgruppe für Ihr EventHub-Ziel.
 
 [2.4.6 Microsoft Azure-Projekt erstellen](./ex6.md)
 
-In dieser Übung erstellen Sie eine Azure-Funktion, die in Echtzeit ausgelöst wird, wenn die Adobe Experience Platform Zielgruppenqualifikationen für das entsprechende Azure Event Hub-Ziel bereitstellt.
+In dieser Übung erstellen Sie eine Azure-Funktion, die in Echtzeit ausgelöst wird, wenn Adobe Experience Platform Zielgruppenqualifikationen für das entsprechende Azure Event Hub-Ziel bereitstellt.
 
 [2.4.7 End-to-End-Szenario](./ex7.md)
 
-An diesem Punkt ist alles eingerichtet. Sie können jetzt auf Ihrer Demo-Website surfen und Zielgruppenqualifikationen für Ihre Microsoft Azure Event Hub-Trigger-Funktion bereitstellen.
+An dieser Stelle ist alles eingerichtet. Sie können jetzt auf Ihrer Demo-Website surfen und Zielgruppenqualifikationen für Ihre Microsoft Azure Event Hub-Trigger-Funktion erhalten.
 
 [Zusammenfassung und Vorteile](./summary.md)
 
-Zusammenfassung dieses Moduls und Übersicht über die Vorteile.
+Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investieren, um alles über Adobe Experience Platform und seine Anwendungen zu erfahren. Wenn Sie Fragen haben, möchten Sie allgemeine Rückmeldungen von Vorschlägen zu künftigen Inhalten teilen, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com** senden.
+>Vielen Dank, dass Sie sich Zeit genommen haben, um alles über Adobe Experience Platform und seine Programme zu erfahren. Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

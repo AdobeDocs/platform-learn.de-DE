@@ -1,5 +1,5 @@
 ---
-title: Erfassen von Profildaten mit dem Platform Mobile SDK
+title: Erfassen von Profildaten mit Platform Mobile SDK
 description: Erfahren Sie, wie Sie Profildaten in einer Mobile App erfassen.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
@@ -10,36 +10,36 @@ ht-degree: 1%
 
 ---
 
-# Profildaten erfassen
+# Erfassen von Profildaten
 
 Erfahren Sie, wie Sie Profildaten in einer Mobile App erfassen.
 
-Sie können die Profil-Erweiterung verwenden, um Attribute über Ihren Benutzer auf dem Client zu speichern. Diese Informationen können später verwendet werden, um Nachrichten in Online- oder Offline-Szenarien auszuwählen und zu personalisieren, ohne dass für eine optimale Leistung eine Verbindung zu einem Server hergestellt werden muss. Die Profil-Erweiterung verwaltet das clientseitige Aktionsprofil (CSOP), bietet eine Möglichkeit, auf APIs zu reagieren, aktualisiert Benutzerprofilattribute und gibt die Benutzerprofilattribute für den Rest des Systems als generiertes Ereignis frei.
+Sie können die Profilerweiterung verwenden, um Attribute über Ihre Benutzerin oder Ihren Benutzer auf dem Client zu speichern. Diese Informationen können später zum Targeting und zur Personalisierung von Nachrichten in Online- oder Offline-Szenarien verwendet werden, ohne dass eine Verbindung zu einem Server hergestellt werden muss, um eine optimale Leistung zu erzielen. Die Profilerweiterung verwaltet das Client-seitige Vorgangsprofil (CSOP), bietet eine Möglichkeit, auf APIs zu reagieren, aktualisiert Benutzerprofilattribute und gibt die Benutzerprofilattribute als generiertes Ereignis für den Rest des Systems frei.
 
-Die Profildaten werden von anderen Erweiterungen verwendet, um profilbezogene Aktionen durchzuführen. Ein Beispiel ist die Regel-Engine-Erweiterung, die die Profildaten nutzt und Regeln basierend auf den Profildaten ausführt. Weitere Informationen zur [Profil-Erweiterung](https://developer.adobe.com/client-sdks/documentation/profile/) finden Sie in der Dokumentation .
+Die Profildaten werden von anderen Erweiterungen verwendet, um profilbezogene Aktionen durchzuführen. Ein Beispiel hierfür ist die Erweiterung Regel-Engine , die die Profildaten verwendet und Regeln auf der Grundlage der Profildaten ausführt. Weitere Informationen zur [Profilerweiterung](https://developer.adobe.com/client-sdks/documentation/profile/) finden Sie in der Dokumentation
 
 >[!IMPORTANT]
 >
->Die in dieser Lektion beschriebene Profilfunktion unterscheidet sich von der Funktionalität des Echtzeit-Kundenprofils in Adobe Experience Platform und Platform-basierten Anwendungen.
+>Die in dieser Lektion beschriebene Profilfunktion ist getrennt von der Echtzeit-Kundenprofilfunktion in Adobe Experience Platform und plattformbasierten Anwendungen.
 
 
 ## Voraussetzungen
 
-* App erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert sind.
+* App mit installierten und konfigurierten SDKs erfolgreich erstellt und ausgeführt.
 
 ## Lernziele
 
-In dieser Lektion werden Sie:
+In dieser Lektion erfahren Sie Folgendes:
 
-* Festlegen oder Aktualisieren von Benutzerattributen.
+* Benutzerattribute festlegen oder aktualisieren.
 * Abrufen von Benutzerattributen.
 
 
 ## Benutzerattribute festlegen und aktualisieren
 
-Es wäre hilfreich für Targeting und/oder Personalisierung in der App, schnell zu erkennen, ob ein Benutzer in der Vergangenheit oder vor Kurzem einen Kauf getätigt hat. Legen wir das in der Luma-App fest.
+Es wäre hilfreich, wenn Sie beim Targeting und/oder der Personalisierung in der App schnell feststellen würden, ob ein Benutzer in der Vergangenheit oder kürzlich einen Kauf getätigt hat. Richten wir das in der Luma-App ein.
 
-1. Navigieren Sie im Xcode Project-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** und suchen Sie die Funktion `func updateUserAttribute(attributeName: String, attributeValue: String)` . Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie im Xcode-Projekt-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** und suchen Sie nach der `func updateUserAttribute(attributeName: String, attributeValue: String)`. Fügen Sie den folgenden Code hinzu:
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -50,13 +50,13 @@ Es wäre hilfreich für Targeting und/oder Personalisierung in der App, schnell 
 
    Dieser Code:
 
-   1. Richtet ein leeres Wörterbuch mit dem Namen `profileMap` ein.
+   1. Ein leeres Wörterbuch mit dem Namen `profileMap` wird eingerichtet.
 
-   1. Fügt ein Element zum Wörterbuch mit `attributeName` (z. B. `isPaidUser`) und `attributeValue` (z. B. `yes`) hinzu.
+   1. Fügt dem Wörterbuch ein Element mithilfe von `attributeName` (z. B. `isPaidUser`) und `attributeValue` (z. B. `yes`) hinzu.
 
-   1. Verwendet das Wörterbuch `profileMap` als Wert für den Parameter `attributeDict` des API-Aufrufs [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes).
+   1. Verwendet das `profileMap` als Wert für den `attributeDict` des [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes)-API-Aufrufs.
 
-1. Navigieren Sie im Xcode Project-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** und suchen Sie den Aufruf zu `updateUserAttributes` (innerhalb des Codes für die Käufe). Schaltfläche <img src="assets/purchase.png" width="15" /> ). Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie im Xcode-Projekt-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** und suchen Sie den Aufruf an `updateUserAttributes` (im Code für die Bestellungen) <img src="assets/purchase.png" width="15" />). Fügen Sie den folgenden Code hinzu:
 
    ```swift
    // Update attributes
@@ -64,11 +64,11 @@ Es wäre hilfreich für Targeting und/oder Personalisierung in der App, schnell 
    ```
 
 
-## Abrufen von Benutzerattributen
+## Benutzerattribute abrufen
 
-Nachdem Sie das -Attribut eines Benutzers aktualisiert haben, ist es für andere Adobe-SDKs verfügbar, Sie können aber auch Attribute explizit abrufen, damit sich Ihre App wie gewünscht verhält.
+Nachdem Sie das Attribut eines Benutzers aktualisiert haben, ist es für andere Adobe-SDKs verfügbar, Sie können aber auch Attribute explizit abrufen, damit sich Ihre App wie gewünscht verhält.
 
-1. Navigieren Sie im Xcode Project-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** und suchen Sie den Modifikator `.onAppear` . Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie im Xcode-Projekt-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** und suchen Sie den `.onAppear`. Fügen Sie den folgenden Code hinzu:
 
    ```swift
    // Get attributes
@@ -86,48 +86,48 @@ Nachdem Sie das -Attribut eines Benutzers aktualisiert haben, ist es für andere
 
    Dieser Code:
 
-   1. Ruft die [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) -API mit dem Attributnamen `isPaidUser` als einzelnes Element im Array `attributeNames` auf.
-   1. Prüft dann den Wert des `isPaidUser` -Attributs und platziert beim `yes` ein Zeichen auf der <img src="assets/paiduser.png" width="20" /> in der Symbolleiste oben rechts.
+   1. Ruft die [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)-API mit dem `isPaidUser` Attributnamen als einzelnes Element im `attributeNames`-Array auf.
+   1. Prüft dann auf den Wert des `isPaidUser` Attributs und platziert `yes` ein Badge auf dem <img src="assets/paiduser.png" width="20" /> oben rechts in der Symbolleiste.
 
-Zusätzliche Dokumentation finden Sie [hier](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
+Weitere Dokumentationen finden Sie [hier](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Mit Assurance validieren
 
-1. Lesen Sie den Abschnitt [Setup instructions](assurance.md#connecting-to-a-session) , um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
+1. Lesen Sie den Abschnitt [Setup-Anweisungen](assurance.md#connecting-to-a-session), um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Führen Sie die App aus, um sich anzumelden und mit einem Produkt zu interagieren.
 
-   1. Verschieben Sie das Symbol &quot;Versicherung&quot;nach links.
-   1. Wählen Sie in der Registerkartenleiste **[!UICONTROL Home]** aus.
-   1. Um das Anmeldeblatt zu öffnen, wählen Sie die Schaltfläche <img src="assets/login.png" width="15" />.
+   1. Verschieben Sie das Assurance-Symbol nach links.
+   1. Wählen Sie **[!UICONTROL Startseite]** in der Registerkartenleiste aus.
+   1. Um die Anmeldeseite zu öffnen, wählen Sie die <img src="assets/login.png" width="15" />.
 
       <img src="./assets/mobile-app-events-1.png" width="300">
 
-   1. Um eine zufällige E-Mail- und Kunden-ID einzufügen, wählen Sie die Schaltfläche <img src="assets/insert.png" width="15" /> .
+   1. Um eine zufällige E-Mail und Kunden-ID einzufügen, wählen Sie die Schaltfläche <img src="assets/insert.png" width="15" /> .
    1. Wählen Sie **[!UICONTROL Anmelden]** aus.
 
       <img src="./assets/mobile-app-events-2.png" width="300">
 
-   1. Wählen Sie in der Registerkartenleiste **[!DNL Products]** aus.
-   1. Wählen Sie ein Produkt aus.
+   1. Wählen Sie **[!DNL Products]** in der Registerkartenleiste aus.
+   1. Ein Produkt auswählen.
    1. Auswählen <img src="assets/saveforlater.png" width="15" />.
    1. Auswählen <img src="assets/addtocart.png" width="20" />.
    1. Auswählen <img src="assets/purchase.png" width="15" />.
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. Kehren Sie zurück zum Bildschirm **[!UICONTROL Home]** zurück. Sie sollten sehen, dass ein Badge hinzugefügt wurde <img src="assets/person-badge-icon.png" width="15" />.
+   1. Kehren Sie zum Bildschirm **[!UICONTROL Startseite]** zurück. Sie sollten sehen, dass ein Abzeichen hinzugefügt wurde <img src="assets/person-badge-icon.png" width="15" />.
 
       <img src="./assets/personbadges.png" width="300">
 
 
 
-1. In der Assurance-Benutzeroberfläche sollten die Ereignisse **[!UICONTROL UserProfileUpdate]** und **[!UICONTROL getUserAttributes]** mit dem aktualisierten Wert `profileMap` angezeigt werden.
-   ![validate profile](assets/profile-validate.png)
+1. In der Assurance-Benutzeroberfläche sollten die Ereignisse **[!UICONTROL UserProfileUpdate]** und **[!UICONTROL getUserAttributes]** mit dem aktualisierten `profileMap` angezeigt werden.
+   ![Profil validieren](assets/profile-validate.png)
 
 >[!SUCCESS]
 >
->Sie haben Ihre App jetzt so eingerichtet, dass Profilattribute im Edge Network und (falls eingerichtet) mit Adobe Experience Platform aktualisiert werden.
+>Sie haben jetzt Ihre App so eingerichtet, dass Attribute von Profilen im Edge Network und (wenn eingerichtet) mit Adobe Experience Platform aktualisiert werden.
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeine Rückmeldungen oder Anregungen zu zukünftigen Inhalten haben möchten, teilen Sie diese in diesem [Experience League Community-Diskussionbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) mit.
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Weiter: **[Orte verwenden](places.md)**
+Weiter: **[Verwenden Sie Orte](places.md)**

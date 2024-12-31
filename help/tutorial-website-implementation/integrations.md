@@ -1,6 +1,6 @@
 ---
 title: Implementieren von Experience Cloud-Integrationen mit Tags
-description: Erfahren Sie, wie Sie die Integrationen von Zielgruppen, A4T und Kundenattributen in Ihrer Adobe Experience Cloud-Implementierung überprüfen. Diese Lektion ist Teil des Tutorials zum Implementieren des Experience Cloud in Websites .
+description: Erfahren Sie, wie Sie die Integrationen von Zielgruppen, A4T und Kundenattributen in Ihrer Adobe Experience Cloud-Implementierung überprüfen. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
 source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
@@ -26,7 +26,7 @@ Bevor Sie die Anleitungen in dieser Lektion befolgen, sollten Sie alle vorherige
 
 >[!NOTE]
 >
->Es gibt viele Anforderungen an Benutzerberechtigungen, Kontokonfigurationen und Bereitstellungsschritte, die für die vollständige Verwendung dieser Integrationen erforderlich sind und die über den Rahmen dieses Tutorials hinausgehen. Wenn Sie diese Integrationen noch nicht in Ihrer aktuellen Experience Cloud-Implementierung verwenden, sollten Sie Folgendes berücksichtigen:
+>Es gibt viele Anforderungen an Benutzerberechtigungen, Kontokonfigurationen und Bereitstellungsschritte, die erforderlich sind, um diese Integrationen vollständig zu nutzen, und die den Rahmen dieses Tutorials sprengen. Wenn Sie diese Integrationen noch nicht in Ihrer aktuellen Experience Cloud-Implementierung verwenden, sollten Sie Folgendes berücksichtigen:
 >
 >* Überprüfen Sie die vollständigen Anforderungen der [Core Services-Integrationen.](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
 >* Überprüfen Sie die vollständigen Anforderungen für die [Integration von Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
@@ -49,13 +49,13 @@ Diese Überprüfungsschritte konzentrieren sich auf den wichtigsten Teil, der in
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
-   ![Ihre Tags-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Navigieren Sie zur Registerkarte „Netzwerk“ des Debuggers.
 
-1. Klicken Sie auf **[!UICONTROL Alle Anforderungen löschen]** , nur um die Elemente zu bereinigen.
+1. Klicken Sie **[!UICONTROL Alle Anfragen löschen]** nur um die Dinge zu bereinigen
 
 1. Laden Sie die Seite „Luma“ erneut und stellen Sie dabei sicher, dass die Anforderungen von Target und Analytics im Debugger angezeigt werden.
 
@@ -88,13 +88,13 @@ Der beste Weg, die A4T-Integration zu validieren, besteht darin, eine Target-Akt
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
-   ![Ihre Tags-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Navigieren Sie zur Registerkarte „Netzwerk“ des Debuggers.
 
-1. Klicken Sie auf **[!UICONTROL Alle Anforderungen löschen]** , nur um die Elemente zu bereinigen.
+1. Klicken Sie **[!UICONTROL Alle Anfragen löschen]** nur um die Dinge zu bereinigen
 
 1. Laden Sie die Seite „Luma“ erneut und stellen Sie dabei sicher, dass die Anforderungen von Target und Analytics im Debugger angezeigt werden.
 
@@ -115,7 +115,7 @@ Wenn Sie innerhalb eines Seitenladevorgangs (ausgenommen Einzelseitenanwendungen
 Die wichtigsten Voraussetzungen für die Implementierung von Kundenattributen – die Sie bereits erfüllt haben – sind:
 
 1. Implementieren von Adobe Experience Platform Identity Service
-1. Festlegen von Kunden-IDs über den ID-Dienst *bevor* Target und Analytics ihre Anforderungen auslösen (dies erreichen Sie mithilfe der Regelsortierungsfunktion in -Tags)
+1. Festlegen von Kunden-IDs über den ID-Service *vorher* Target und Analytics lösen ihre Anfragen aus (was Sie mit der Funktion zur Regelreihenfolge in Tags erreicht haben)
 
 ### Überprüfen der Implementierung von Kundenattributen
 
@@ -129,13 +129,13 @@ Derzeit ist die Kunden-ID einer der wenigen Parameter, die nicht in Experience 
 
    ![Öffnen Sie die Entwicklertools und filtern Sie die Registerkarte „Netzwerk“, um nur die Analytics-Anforderungen anzuzeigen](images/aam-openTheJSConsole.png)
 
-1. Klicken Sie oben rechts auf der Site auf den Link **[!UICONTROL ANMELDEN]** .
+1. Klicken Sie auf **[!UICONTROL Link]** ANMELDEN“ in der oberen rechten Ecke der Site
 
    ![Klicken Sie oben rechts auf Anmelden](images/idservice-loginNav.png)
 
 1. Geben Sie `test@adobe.com` als Benutzernamen ein.
 1. Geben Sie `test` als Passwort ein.
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL ANMELDEN]**
+1. Klicken Sie auf die **[!UICONTROL ANMELDEN]**-Schaltfläche
 
    ![Anmeldedaten eingeben und auf „Anmelden“ klicken](images/idservice-login.png)
 
@@ -149,4 +149,4 @@ Derzeit ist die Kunden-ID einer der wenigen Parameter, die nicht in Experience 
 
    ![Überprüfung der Analytics-Kunden-ID](images/integrations-analyticsCustomerIDValidation.png)
 
-[Weiter mit &quot;Publish your Property&quot;>](publish.md)
+[Weiter &quot;Publish - Ihre Eigenschaft“ >](publish.md)

@@ -1,6 +1,6 @@
 ---
-title: Installieren und Konfigurieren von Kafka Connect und Adobe Experience Platform Sink Connector
-description: Installieren und Konfigurieren von Kafka Connect und Adobe Experience Platform Sink Connector
+title: Installieren und konfigurieren Sie Kafka Connect und den Adobe Experience Platform Sink Connector
+description: Installieren und konfigurieren Sie Kafka Connect und den Adobe Experience Platform Sink Connector
 kt: 5342
 doc-type: tutorial
 exl-id: 93ded4f9-0179-4186-9601-52f479350075
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# 2.6.4 Installieren und Konfigurieren von Kafka Connect und Adobe Experience Platform Sink Connector
+# 2.6.4 Installieren und konfigurieren Sie Kafka Connect und den Adobe Experience Platform Sink Connector
 
-## Adobe Experience Platform Sink Connector herunterladen
+## Herunterladen des Adobe Experience Platform Sink Connectors
 
-Rufen Sie [https://github.com/adobe/experience-platform-streaming-connect/releases](https://github.com/adobe/experience-platform-streaming-connect/releases) auf und laden Sie die neueste offizielle Version des Adobe Experience Platform Sink Connectors herunter.
+Navigieren Sie zu [https://github.com/adobe/experience-platform-streaming-connect/releases](https://github.com/adobe/experience-platform-streaming-connect/releases) und laden Sie die neueste offizielle Version des Adobe Experience Platform Sink Connectors herunter.
 
 ![Kafka](./images/kc1.png)
 
@@ -23,18 +23,18 @@ Laden Sie die Datei **streaming-connect-sink-0.0.27-java-11.jar** herunter.
 
 ![Kafka](./images/kc1a.png)
 
-Platzieren Sie die Download-Datei **streaming-connect-sink-0.0.27-java-11.jar** auf Ihren Desktop.
+Platzieren Sie die Download-Datei **streaming-connect-sink-0.0.27-java-11.jar** auf Ihrem Desktop.
 
 ![Kafka](./images/kc2.png)
 
-## Konfigurieren von Kafka Connect
+## Kafka Connect konfigurieren
 
-Wechseln Sie zum Ordner auf Ihrem Desktop mit dem Namen **Kafka_AEP** und navigieren Sie zum Ordner `kafka_2.13-3.9.0/config`.
-Öffnen Sie in diesem Ordner die Datei **connect-distributed.properties** mit einem beliebigen Texteditor.
+Gehen Sie zum Ordner auf Ihrem Desktop mit dem Namen **Kafka_AEP** und navigieren Sie zum `kafka_2.13-3.9.0/config`.
+Öffnen Sie in diesem Ordner die Datei **connect-distributed.properties** mit einem Texteditor.
 
 ![Kafka](./images/kc3a.png)
 
-Navigieren Sie in Ihrem Texteditor zu den Zeilen 34 und 35 und stellen Sie sicher, dass Sie die Felder `key.converter.schemas.enable` und `value.converter.schemas.enable` auf `false` setzen.
+Wechseln Sie in Ihrem Texteditor zu Zeile 34 und 35 und stellen Sie sicher, dass Sie die Felder `key.converter.schemas.enable` und `value.converter.schemas.enable` auf `false` festlegen
 
 ```json
 key.converter.schemas.enable=false
@@ -45,77 +45,77 @@ Speichern Sie Ihre Änderungen in dieser Datei.
 
 ![Kafka](./images/kc3.png)
 
-Gehen Sie anschließend zurück zum Ordner &quot;`kafka_2.13-3.1.0`&quot;, erstellen Sie manuell einen neuen Ordner und nennen Sie ihn &quot;`connectors`&quot;.
+Gehen Sie dann zurück zum Ordner `kafka_2.13-3.1.0` und erstellen Sie manuell einen neuen Ordner und benennen Sie ihn `connectors`.
 
 ![Kafka](./images/kc4.png)
 
-Klicken Sie mit der rechten Maustaste auf den neuen Ordner und klicken Sie auf **Neues Terminal im Ordner**.
+Klicken Sie mit der rechten Maustaste auf den neuen Ordner und klicken Sie auf **Neues Terminal unter Ordner**.
 
 ![Kafka](./images/kc5.png)
 
-Dann wirst du das sehen. Geben Sie den Befehl `pwd` ein, um den vollständigen Pfad für diesen Ordner abzurufen. Wählen Sie den vollständigen Pfad aus und kopieren Sie ihn in die Zwischenablage.
+Sie werden es dann sehen. Geben Sie den `pwd` ein, um den vollständigen Pfad für diesen Ordner abzurufen. Wählen Sie den vollständigen Pfad aus und kopieren Sie ihn in die Zwischenablage.
 
 ![Kafka](./images/kc6.png)
 
-Gehen Sie zurück zum Texteditor, wechseln Sie zur Datei **connect-distributed.properties** und scrollen Sie zur letzten Zeile herunter (Zeile 89 im Screenshot). Sie sollten den Kommentar für die mit `# plugin.path=` beginnende Zeile aufheben (entfernen Sie `#`) und den vollständigen Pfad zum Ordner `connectors` einfügen. Das Ergebnis sollte in etwa wie folgt aussehen:
+Gehen Sie zurück zu Ihrem Texteditor, zur Datei **connect-distributed.properties** und scrollen Sie bis zur letzten Zeile (Zeile 89 im Screenshot). Sie sollten die Auskommentierung der Zeile, die mit `# plugin.path=` beginnt (`#` entfernen), aufheben und den vollständigen Pfad in den Ordner mit dem Namen `connectors` einfügen. Das Ergebnis sollte in etwa wie folgt aussehen:
 
 `plugin.path=/Users/woutervangeluwe/Desktop/Kafka_AEP/kafka_2.13-3.9.0/connectors`
 
-Speichern Sie Ihre Änderungen in der Datei **connect-distribution.properties** und schließen Sie den Texteditor.
+Speichern Sie Ihre Änderungen in der Datei **connect-distributed.properties** und schließen Sie den Texteditor.
 
 ![Kafka](./images/kc7.png)
 
-Kopieren Sie als Nächstes die neueste offizielle Version des Adobe Experience Platform Sink Connectors, die Sie in den Ordner `connectors` heruntergeladen haben. Die zuvor heruntergeladene Datei heißt **streaming-connect-sink-0.0.27-java-11.jar**, Sie können sie einfach in den Ordner `connectors` verschieben.
+Kopieren Sie als Nächstes die neueste offizielle Version des Adobe Experience Platform Sink Connectors, die Sie heruntergeladen haben, in den Ordner mit dem Namen `connectors`. Die Datei, die Sie zuvor heruntergeladen haben, heißt **streaming-connect-sink-0.0.27-java-11.jar**. Sie können sie einfach in den `connectors` Ordner verschieben.
 
 ![Kafka](./images/kc8.png)
 
-Als Nächstes öffnen Sie ein neues Terminal-Fenster auf der Ebene des Ordners **kafka_2.13-3.9.0** . Klicken Sie mit der rechten Maustaste auf diesen Ordner und klicken Sie auf **Neues Terminal im Ordner**.
+Öffnen Sie als Nächstes ein neues Terminal-Fenster auf der Ebene des Ordners **kafka_2.13-3.9.0**. Klicken Sie mit der rechten Maustaste auf diesen Ordner und klicken Sie auf **Neues Terminal unter Ordner**.
 
-Fügen Sie im Terminal-Fenster den folgenden Befehl ein: `bin/connect-distributed.sh config/connect-distributed.properties` und klicken Sie auf **Enter**. Mit diesem Befehl wird Kafka Connect gestartet und die Bibliothek des Adobe Experience Platform Sink Connectors geladen.
+Fügen Sie im Terminal-Fenster folgenden Befehl ein: `bin/connect-distributed.sh config/connect-distributed.properties` und klicken Sie auf **Enter**. Dieser Befehl startet Kafka Connect und lädt die Bibliothek des Adobe Experience Platform Sink Connectors.
 
 ![Kafka](./images/kc9.png)
 
-Nach ein paar Sekunden sehen Sie etwas wie Folgendes:
+Nach ein paar Sekunden sehen Sie so etwas:
 
 ![Kafka](./images/kc10.png)
 
-## Erstellen Ihres Adobe Experience Platform Sink-Connectors mit Postman
+## Erstellen des Adobe Experience Platform Sink Connectors mit Postman
 
-Sie können jetzt mit Kafka Connect über Postman interagieren. Laden Sie dazu [diese Postman-Sammlung](./../../../assets/postman/postman_kafka.zip) herunter und entpacken Sie sie auf Ihren lokalen Computer auf dem Desktop. Sie verfügen dann über eine Datei mit dem Namen `Kafka_AEP.postman_collection.json`.
+Sie können jetzt mit Kafka Connect über Postman interagieren. Laden Sie dazu [diese Postman-Sammlung](./../../../assets/postman/postman_kafka.zip) herunter und entpacken Sie sie auf Ihrem lokalen Computer auf dem Desktop. Sie erhalten dann eine Datei mit dem Namen `Kafka_AEP.postman_collection.json`.
 
 ![Kafka](./images/kc11a.png)
 
-Sie müssen diese Datei in Postman importieren. Öffnen Sie dazu Postman, klicken Sie auf **Importieren**, ziehen Sie die Datei `Kafka_AEP.postman_collection.json` per Drag-and-Drop in das Popup-Fenster und klicken Sie auf **Importieren**.
+Sie müssen diese Datei in Postman importieren. Öffnen Sie dazu Postman, klicken Sie auf **Importieren** ziehen Sie die `Kafka_AEP.postman_collection.json` in das Popup und klicken Sie auf **Importieren**.
 
 ![Kafka](./images/kc11b.png)
 
-Diese Kollektion finden Sie dann im linken Menü von Postman. Klicken Sie auf die erste Anforderung, **GET Verfügbare Kafka Connect-Connectoren** , um sie zu öffnen.
+Diese Kollektion finden Sie dann im linken Menü von Postman. Klicken Sie auf die erste Anforderung **GET Verfügbare Kafka Connect-**, um sie zu öffnen.
 
 ![Kafka](./images/kc11c.png)
 
-Dann wirst du das sehen. Klicken Sie auf die blaue Schaltfläche **Senden**, nach der eine leere Antwort `[]` angezeigt werden soll. Die leere Antwort ist darauf zurückzuführen, dass derzeit keine Kafka Connect-Connectoren definiert sind.
+Sie werden es dann sehen. Klicken Sie auf die blaue **Senden**-Schaltfläche, nach der Sie eine leere Antwort-`[]` sehen sollten. Die leere Antwort ist darauf zurückzuführen, dass derzeit keine Kafka Connect-Connectoren definiert sind.
 
 ![Kafka](./images/kc11.png)
 
-Um einen Connector zu erstellen, klicken Sie auf die zweite Anforderung in der Kafka-Sammlung, **POST AEP Sink Connector erstellen** und gehen Sie zu **Hauptteil**. Dann wirst du das sehen. In Zeile 11, wo es &quot;**&quot;aep.endpoint&quot;: &quot;&quot;**&quot;heißt, müssen Sie die URL des HTTP-API-Streaming-Endpunkts einfügen, die Sie am Ende einer der vorherigen Übungen erhalten haben. Die URL des HTTP-API-Streaming-Endpunkts sieht wie folgt aus: `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`.
+Um einen Connector zu erstellen, klicken Sie auf , um die zweite Anforderung in der Kafka-Sammlung **POST „AEP-Senken-Connector erstellen“** öffnen, und gehen Sie zu **Body**. Sie werden es dann sehen. In Zeile 11, in der es **„aep.endpoint“ lautet: &quot;**, müssen Sie die HTTP-API-Streaming-Endpunkt-URL einfügen, die Sie am Ende einer der vorherigen Übungen erhalten haben. Die HTTP-API-Streaming-Endpunkt-URL sieht wie folgt aus: `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`.
 
 ![Kafka](./images/kc12a.png)
 
-Nach dem Einfügen sollte der Hauptteil Ihrer Anforderung wie folgt aussehen: Klicken Sie auf die blaue Schaltfläche **Senden** , um Ihren Connector zu erstellen. Sie erhalten eine sofortige Antwort von der Erstellung Ihres Connectors.
+Nach dem Einfügen sollte der Textkörper Ihrer Anfrage wie folgt aussehen. Klicken Sie auf die blaue **Senden**-Schaltfläche, um Ihren Connector zu erstellen. Sie erhalten eine sofortige Antwort auf die Erstellung Ihres Connectors.
 
 ![Kafka](./images/kc12.png)
 
-Klicken Sie auf die erste Anforderung, **GET Verfügbare Kafka Connect-Connectoren** , um sie erneut zu öffnen, und klicken Sie erneut auf die blaue Schaltfläche **Senden** . Sie werden sehen, dass ein Kafka Connect-Connector vorhanden ist.
+Klicken Sie auf die erste Anforderung **GET Verfügbare Kafka Connect-**, um sie erneut zu öffnen, und klicken Sie erneut auf die blaue Schaltfläche **Senden**. Sie sehen jetzt, dass ein Kafka Connect-Connector vorhanden ist.
 
 ![Kafka](./images/kc13.png)
 
-Öffnen Sie als Nächstes die dritte Anforderung in der Kafka-Sammlung, **GET Überprüfen Sie den Kafka Connect-Connector-Status**. Klicken Sie auf die blaue Schaltfläche **Senden** . Daraufhin erhalten Sie eine Antwort wie die unten stehende, in der erklärt wird, dass der Connector ausgeführt wird.
+Öffnen Sie als Nächstes die dritte Anfrage in der Kafka-Sammlung, **GET Überprüfen Sie den Status des Kafka Connect-Connectors**. Klicken Sie auf die blaue **Senden**-Schaltfläche. Sie erhalten dann eine Antwort wie die unten stehende, die besagt, dass der Connector ausgeführt wird.
 
 ![Kafka](./images/kc14.png)
 
-## Erstellen eines Erlebnisereignisses
+## Erzeugen eines Erlebnisereignisses
 
-Öffnen Sie ein neues Fenster **Terminal** , indem Sie mit der rechten Maustaste auf den Ordner **kafka_2.13-3.9.0** klicken und auf **Neues Terminal im Ordner** klicken.
+Öffnen Sie ein neues **Terminal**-Fenster, indem Sie mit der rechten Maustaste auf den Ordner **kafka_2.13-3.9.0** und dann auf **Neues Terminal im Ordner** klicken.
 
 ![Kafka](./images/kafka11.png)
 
@@ -123,13 +123,13 @@ Geben Sie den folgenden Befehl ein:
 
 `bin/kafka-console-producer.sh --broker-list 127.0.0.1:9092 --topic aep`
 
-Dann wirst du das sehen. Jede neue Zeile, gefolgt von der Schaltfläche &quot;Enter&quot;, führt dazu, dass eine neue Nachricht an das Thema **aep** gesendet wird.
+Sie werden es dann sehen. Jede neue Zeile, gefolgt vom Drücken der Eingabetaste, führt dazu, dass eine neue Nachricht an das Thema gesendet wird **aep**.
 
 ![Kafka](./images/kc16.png)
 
-Jetzt können Sie eine Nachricht senden, die vom Adobe Experience Platform Sink Connector genutzt wird und in Echtzeit in Adobe Experience Platform aufgenommen wird.
+Sie können jetzt eine Nachricht senden, die dazu führt, dass sie vom Adobe Experience Platform Sink Connector genutzt wird und die in Echtzeit in Adobe Experience Platform aufgenommen wird.
 
-Nehmen Sie die folgende Beispielnutzlast für Erlebnisereignisse und kopieren Sie sie in einen Texteditor.
+Nehmen Sie die folgende Beispiel-Payload für Erlebnisereignisse und kopieren Sie sie in einen Texteditor.
 
 ```json
 {
@@ -176,55 +176,55 @@ Nehmen Sie die folgende Beispielnutzlast für Erlebnisereignisse und kopieren Si
 }
 ```
 
-Dann wirst du das sehen. Sie müssen zwei Felder manuell aktualisieren:
+Sie werden es dann sehen. Sie müssen zwei Felder manuell aktualisieren:
 
-- **_id**: Setzen Sie es auf eine zufällige ID, etwa `--aepUserLdap--1234`
-- **timestamp**: Aktualisieren Sie den Zeitstempel auf das aktuelle Datum und die aktuelle Uhrzeit
-- **phoneNumber**: Geben Sie die phoneNumber des Kontos ein, das zuvor auf der Demowebsite erstellt wurde. Sie finden sie im Bedienfeld &quot;Profil-Viewer&quot;unter **Identitäten**.
+- **_id**: Bitte setzen Sie eine zufällige ID wie `--aepUserLdap--1234`
+- **Zeitstempel**: Aktualisieren Sie den Zeitstempel auf das aktuelle Datum und die aktuelle Uhrzeit
+- **phoneNumber**: Geben Sie die Telefonnummer des Kontos ein, das zuvor auf der Demo-Website erstellt wurde. Sie finden ihn im Bedienfeld Profil-Viewer unter **Identitäten**.
 
-Sie müssen auch diese Felder überprüfen und gegebenenfalls aktualisieren:
+Sie müssen auch diese Felder überprüfen und möglicherweise aktualisieren:
 
-- **datasetId**: Sie müssen die Datensatz-ID für das Datensatz-Demo-System - Ereignis-Datensatz für Callcenter (Global v1.1) kopieren.
+- **datasetId**: Sie müssen die Datensatz-ID für das Datensatz-Demosystem - Ereignisdatensatz für Callcenter (Global v1.1) kopieren
 
 ![Kafka](./images/kc20ds.png)
 
-- **imsOrgID**: Ihre IMS-Organisations-ID ist `--aepImsOrgId--`
+- **imsOrgID**: Ihre IMS-Org-ID ist `--aepImsOrgId--`
 
 >[!NOTE]
 >
->Das Feld **_id** muss für jede Datenerfassung eindeutig sein. Wenn Sie mehrere Ereignisse erzeugen, stellen Sie sicher, dass Sie das Feld **_id** jedes Mal auf einen neuen eindeutigen Wert aktualisieren.
+>Das Feld **_id** muss für jede Datenaufnahme eindeutig sein. Wenn Sie mehrere Ereignisse generieren, stellen Sie sicher, dass Sie das Feld **_id** jedes Mal auf einen neuen, eindeutigen Wert aktualisieren.
 
-Sie sollten dann etwas wie Folgendes haben:
+Sie sollten dann etwas wie das folgende haben:
 
 ![Kafka](./images/kc21.png)
 
-Kopieren Sie dann Ihr gesamtes Erlebnisereignis in die Zwischenablage. Der Leerraum Ihrer JSON-Payload muss entfernt werden. Dazu verwenden wir ein Online-Tool. Wechseln Sie dazu zu [http://jsonviewer.stack.hu/](http://jsonviewer.stack.hu/) .
+Kopieren Sie als Nächstes Ihr vollständiges Erlebnisereignis in die Zwischenablage. Der Leerraum Ihrer JSON-Payload muss entfernt werden, und wir werden ein Online-Tool verwenden, um dies zu tun. Gehen Sie dazu zu [](http://jsonviewer.stack.hu/)http://jsonviewer.stack.hu/.
 
-Fügen Sie Ihr Erlebnisereignis in den Editor ein und klicken Sie auf **Leerraum entfernen**.
+Fügen Sie Ihr Erlebnisereignis in den Editor ein und klicken Sie auf **Leerzeichen entfernen**.
 
 ![Kafka](./images/kc22a.png)
 
-Wählen Sie anschließend den gesamten Ausgabetext aus und kopieren Sie ihn in die Zwischenablage.
+Wählen Sie als Nächstes den gesamten Ausgabetext aus und kopieren Sie ihn in die Zwischenablage.
 
 ![Kafka](./images/kc23.png)
 
-Kehren Sie zu Ihrem Terminal-Fenster zurück.
+Zurück zum Terminal-Fenster.
 
 ![Kafka](./images/kc16.png)
 
-Fügen Sie die neue Payload ohne Leerzeichen in das Terminal-Fenster ein und klicken Sie auf **Enter**.
+Fügen Sie die neue Payload ohne Leerzeichen in das Terminal-Fenster ein und klicken Sie auf **Eingabe**.
 
 ![Kafka](./images/kc23a.png)
 
-Gehen Sie anschließend zurück zu Ihrer Demo-Website und aktualisieren Sie die Seite. Sie sollten jetzt ein Erlebnisereignis in Ihrem Profil unter **Erlebnisereignisse** sehen, genau wie im Folgenden:
+Gehen Sie dann zurück zu Ihrer Demo-Website und aktualisieren Sie die Seite. Jetzt sollte in Ihrem Profil unter „Erlebnisereignisse“ ein Erlebnisereignis **werden** genau wie im folgenden:
 
 ![Kafka](./images/kc24.png)
 
 >[!NOTE]
 >
->Wenn Ihre Callcenter-Interaktionen im Profil-Viewer-Bedienfeld angezeigt werden sollen, müssen Sie die folgende Beschriftung hinzufügen und in Ihrem Projekt unter [https://dsn.adobe.com](https://dsn.adobe.com) filtern, indem Sie zur Registerkarte **Profil-Viewer** navigieren und unter **Ereignisse** eine neue Zeile mit den folgenden Variablen hinzufügen:
->- **Bezeichnung des Ereignistyps**: Interaktionen im Callcenter
->- **Ereignistyp-Filter**: callCenterInteractionKafka
+>Wenn Ihre Callcenter-Interaktionen im Bereich Profil-Viewer angezeigt werden sollen, müssen Sie die folgende Beschriftung und den folgenden Filter in Ihrem Projekt auf [https://dsn.adobe.com](https://dsn.adobe.com) hinzufügen, indem Sie zur Registerkarte **Profil-Viewer** wechseln und eine neue Zeile unter **Ereignisse** mit den folgenden Variablen hinzufügen:
+>- **Titel Ereignistyp**: Interaktionen mit dem Callcenter
+>- **Filter Ereignistyp**: callCenterInteractionKafka
 >- **Titel**: `--aepTenantId--.interactionDetails.core.callCenterAgent.callID`
 
 ![Kafka](./images/kc25.png)
@@ -233,6 +233,6 @@ Du hast diese Übung beendet.
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 
-[Zurück zu Modul 2.6](./aep-apache-kafka.md)
+[Zurück zum Modul 2.6](./aep-apache-kafka.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

@@ -1,7 +1,8 @@
 ---
-title: Parameter senden - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
-description: Erfahren Sie, wie Sie mit dem Experience Platform Web SDK Mbox-, Profil- und Entitätsparameter an Adobe Target senden.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: Versandparameter - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
+description: Erfahren Sie, wie Sie Mbox-, Profil- und Entitätsparameter mithilfe von Experience Platform Web SDK an Adobe Target senden.
+exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
@@ -10,63 +11,63 @@ ht-degree: 0%
 
 # Senden von Parametern an Target mithilfe der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
 
-Target-Implementierungen unterscheiden sich je nach Website-Architektur, Geschäftsanforderungen und verwendeten Funktionen. Die meisten Target-Implementierungen umfassen die Übergabe verschiedener Parameter für Kontextinformationen, Zielgruppen und Inhaltsempfehlungen.
+Target-Implementierungen unterscheiden sich je nach Website-Architektur, Geschäftsanforderungen und verwendeten Funktionen je nach Website. Bei den meisten Target-Implementierungen werden verschiedene Parameter für Kontextinformationen, Zielgruppen und Inhaltsempfehlungen übergeben.
 
-Verwenden wir eine einfache Produktdetailseite und eine Bestellbestätigungsseite, um die Unterschiede zwischen den Erweiterungen bei der Übergabe von Parametern an Target zu demonstrieren.
+Anhand einer einfachen Produktdetailseite und einer Bestellbestätigungsseite möchten wir die Unterschiede zwischen den Erweiterungen beim Übergeben von Parametern an Target demonstrieren.
 
 
-| Beispiel für einen at.js-Parameter | Platform Web SDK-Option | Anmerkungen |
+| Beispiel für den Parameter „at.js“ | Platform Web SDK-Option | Anmerkungen |
 | --- | --- | --- |
-| `at_property` | K. A. | Eigenschafts-Token werden im [Datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) konfiguriert und können nicht im `sendEvent` -Aufruf festgelegt werden. |
-| `pageName` | `xdm.web.webPageDetails.name` | Alle Target-Mbox-Parameter müssen als Teil des `xdm` -Objekts übergeben und mit der XDM ExperienceEvent-Klasse einem Schema entsprechen. Mbox-Parameter können nicht als Teil des `data` -Objekts übergeben werden. |
-| `profile.gender` | `data.__adobe.target.profile.gender` | Alle Target-Profilparameter müssen als Teil des `data` -Objekts übergeben und mit dem Präfix `profile.` versehen werden, damit sie korrekt zugeordnet werden können. |
-| `user.categoryId` | `data.__adobe.target.user.categoryId` | Reservierter Parameter, der für die Kategorieaffinitätsfunktion von Target verwendet wird und als Teil des Objekts `data` übergeben werden muss. |
-| `entity.id` | `data.__adobe.target.entity.id` <br>ODER<br> `xdm.productListItems[0].SKU` | Entitäts-IDs werden für Target Recommendations-Verhaltenszähler verwendet. Diese Entitäts-IDs können entweder als Teil des `data` -Objekts übergeben oder automatisch vom ersten Element im `xdm.productListItems` -Array zugeordnet werden, wenn Ihre Implementierung diese Feldergruppe verwendet. |
-| `entity.categoryId` | `data.__adobe.target.entity.categoryId` | Entitätskategorie-IDs können als Teil des `data` -Objekts übergeben werden. |
-| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Benutzerdefinierte Entitätsparameter werden zum Aktualisieren des Recommendations-Produktkatalogs verwendet. Diese benutzerdefinierten Parameter müssen als Teil des `data` -Objekts übergeben werden. |
-| `cartIds` | `data.__adobe.target.cartIds` | Wird für die auf dem Warenkorb basierenden Empfehlungsalgorithmen von Target verwendet. |
-| `excludedIds` | `data.__adobe.target.excludedIds` | Wird verwendet, um zu verhindern, dass bestimmte Entitäts-IDs in einem Empfehlungsentwurf zurückgegeben werden. |
-| `mbox3rdPartyId` | Im `xdm.identityMap` -Objekt festlegen | Wird zum Synchronisieren von Target-Profilen über Geräte und Kundenattribute hinweg verwendet. Der Namespace, der für die Kunden-ID verwendet werden soll, muss in der [Target-Konfiguration des Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html) angegeben werden. |
-| `orderId` | `xdm.commerce.order.purchaseID` | Wird zur Identifizierung einer eindeutigen Bestellung für das Target-Konversions-Tracking verwendet. |
-| `orderTotal` | `xdm.commerce.order.priceTotal` | Wird zur Verfolgung von Bestellsummen für Target-Konversions- und Optimierungsziele verwendet. |
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>ODER<br> `xdm.productListItems[0-n].SKU` | Wird für Target-Konversions-Tracking und Empfehlungsalgorithmen verwendet. Weitere Informationen finden Sie im Abschnitt [Entitätsparameter](#entity-parameters) unten. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Wird für das Aktivitätsziel [benutzerdefiniertes Scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) verwendet. |
+| `at_property` | K. A. | Eigenschafts-Token sind im [Datenstrom](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) konfiguriert und können im `sendEvent` nicht festgelegt werden. |
+| `pageName` | `xdm.web.webPageDetails.name` | Alle Ziel-Mbox-Parameter müssen als Teil des `xdm` übergeben werden und einem Schema mit der XDM ExperienceEvent-Klasse entsprechen. Mbox-Parameter können nicht als Teil des `data` übergeben werden. |
+| `profile.gender` | `data.__adobe.target.profile.gender` | Alle Zielprofilparameter müssen als Teil des `data` übergeben werden und das Präfix `profile.` aufweisen, damit sie entsprechend zugeordnet werden können. |
+| `user.categoryId` | `data.__adobe.target.user.categoryId` | Reservierter Parameter, der für die Zielkategorie-Affinitätsfunktion verwendet wird und als Teil des `data` übergeben werden muss. |
+| `entity.id` | `data.__adobe.target.entity.id` <br>ODER<br> `xdm.productListItems[0].SKU` | Entitäts-IDs werden für Target Recommendations-Verhaltenszähler verwendet. Diese Entitäts-IDs können entweder als Teil des `data`-Objekts übergeben oder automatisch vom ersten Element im `xdm.productListItems`-Array zugeordnet werden, wenn Ihre Implementierung diese Feldergruppe verwendet. |
+| `entity.categoryId` | `data.__adobe.target.entity.categoryId` | Entitätskategorie-IDs können als Teil des `data` übergeben werden. |
+| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Benutzerdefinierte Entitätsparameter werden zum Aktualisieren des Recommendations-Produktkatalogs verwendet. Diese benutzerdefinierten Parameter müssen als Teil des `data` übergeben werden. |
+| `cartIds` | `data.__adobe.target.cartIds` | Wird für die Warenkorb-basierten Empfehlungsalgorithmen von Target verwendet. |
+| `excludedIds` | `data.__adobe.target.excludedIds` | Wird verwendet, um zu verhindern, dass bestimmte Entitäts-IDs in einem Recommendations-Design zurückgegeben werden. |
+| `mbox3rdPartyId` | Wird im `xdm.identityMap` festgelegt | Wird zum Synchronisieren von Target-Profilen über Geräte und Kundenattribute hinweg verwendet. Der für die Kunden-ID zu verwendende Namespace muss in der [Target-Konfiguration des Datenstroms“ angegeben ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `orderId` | `xdm.commerce.order.purchaseID` | Wird zur Identifizierung einer eindeutigen Reihenfolge für das Target-Konversions-Tracking verwendet. |
+| `orderTotal` | `xdm.commerce.order.priceTotal` | Wird zum Tracking der Bestellsummen für Konversions- und Optimierungsziele von Target verwendet. |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>ODER<br> `xdm.productListItems[0-n].SKU` | Wird für Target-Konversionsverfolgungs- und Recommendations-Algorithmen verwendet. Weitere Informationen finden Sie [ Abschnitt ](#entity-parameters)Entitätsparameter“. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Wird für das Aktivitätsziel [benutzerdefinierte Bewertung](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) verwendet. |
 
 {style="table-layout:auto"}
 
 ## Benutzerdefinierte Parameter
 
-Benutzerdefinierte Mbox-Parameter müssen als XDM oder mithilfe des Datenobjekts mit dem Befehl `sendEvent` übergeben werden. Es ist wichtig sicherzustellen, dass das XDM-Schema alle Felder enthält, die für Ihre Target-Implementierung erforderlich sind.
+Benutzerdefinierte Mbox-Parameter müssen als XDM oder mithilfe des Datenobjekts mit dem `sendEvent`-Befehl übergeben werden. Es ist wichtig sicherzustellen, dass das XDM-Schema alle Felder enthält, die für Ihre Target-Implementierung erforderlich sind.
 
 
 ## Profilparameter
 
-Target-Profilparameter müssen übergeben werden...
+Zielprofilparameter müssen übergeben werden…
 
 ## Entitätsparameter
 
-Entitätsparameter werden verwendet, um Verhaltensdaten und zusätzliche Kataloginformationen für Target Recommendations zu übergeben. Alle von at.js unterstützten [Entitätsparameter](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) werden ebenfalls vom Platform Web SDK unterstützt. Ähnlich wie Profilparameter sollten alle Entitätsparameter unter dem Objekt `data.__adobe.target` in der Befehlsnutzlast des Platform Web SDK `sendEvent` übergeben werden.
+Entitätsparameter werden verwendet, um Verhaltensdaten und zusätzliche Kataloginformationen für Target Recommendations zu übergeben. Alle [Entitätsparameter](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) die von at.js unterstützt werden, werden auch von Platform Web SDK unterstützt. Ähnlich wie Profilparameter sollten alle Entitätsparameter unter dem `data.__adobe.target`-Objekt in der Payload des Platform Web SDK `sendEvent`-Befehls übergeben werden.
 
-Entitätsparameter für ein bestimmtes Element müssen mit dem Präfix &quot;`entity.`&quot;versehen werden, um eine korrekte Datenerfassung zu ermöglichen. Die reservierten Parameter `cartIds` und `excludedIds` für Empfehlungsalgorithmen dürfen nicht mit dem Präfix versehen werden und der Wert für jede Variable muss eine kommagetrennte Liste von Entitäts-IDs enthalten.
+Entitätsparameter für ein bestimmtes Element müssen mit dem Präfix `entity.` versehen werden, um eine ordnungsgemäße Datenerfassung zu gewährleisten. Die reservierten `cartIds`- und `excludedIds`-Parameter für Recommendations-Algorithmen sollten nicht mit einem Präfix versehen werden und der Wert für jedes muss eine kommagetrennte Liste von Entitäts-IDs enthalten.
 
 
 
 ## Kaufparameter
 
-Kaufparameter werden nach einer erfolgreichen Bestellung auf einer Bestellbestätigungsseite übergeben und für Target-Konversions- und Optimierungsziele verwendet. Bei einer Platform Mobile SDK-Implementierung mit der Decisioning-Erweiterung werden diese Parameter und automatisch aus XDM-Daten zugeordnet, die als Teil der `commerce` -Feldergruppe übergeben werden.
+Kaufparameter werden nach erfolgreicher Bestellung auf einer Auftragsbestätigungsseite weitergeleitet und für Konversions- und Optimierungsziele von Target verwendet. Bei einer Implementierung von Platform Mobile SDK unter Verwendung der Decisioning-Erweiterung werden diese Parameter und automatisch aus XDM-Daten zugeordnet, die als Teil der `commerce` Feldergruppe übergeben werden.
 
 
-Kaufinformationen werden an Target übergeben, wenn für die Feldergruppe `commerce` der Wert `purchases.value` auf `1` festgelegt ist. Die Bestell-ID und die Bestellsumme werden automatisch vom `order` -Objekt zugeordnet. Wenn das Array `productListItems` vorhanden ist, werden die Werte `SKU` für `productPurchasedId` verwendet.
+Kaufinformationen werden an Target übergeben, wenn die `commerce` Feldergruppe auf `1` gesetzt `purchases.value`. Die Auftrags-ID und die Bestellsumme werden automatisch aus dem `order` Objekt zugeordnet. Wenn das `productListItems`-Array vorhanden ist, werden die `SKU` Werte für die `productPurchasedId` verwendet.
 
 
 ## Kunden-ID (mbox3rdPartyId)
 
-Target ermöglicht die Profilsynchronisierung über Geräte und Systeme hinweg mithilfe einer einzelnen Kunden-ID.
+Target ermöglicht die Synchronisierung von Profilen über Geräte und Systeme hinweg mithilfe einer einzigen Kunden-ID.
 
 
 
-Als Nächstes erfahren Sie, wie Sie mit dem Platform Web SDK [Target-Konversionsereignisse verfolgen](track-events.md).
+Erfahren Sie als Nächstes, wie Sie [Target-Konversionsereignisse ](track-events.md) Platform Web SDK verfolgen.
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Migration Ihrer mobilen Target-Erweiterung von der Target-Erweiterung zur Decisioning-Erweiterung. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.

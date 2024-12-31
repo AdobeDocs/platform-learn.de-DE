@@ -11,21 +11,21 @@ ht-degree: 6%
 
 ---
 
-# 2.6.3 HTTP-API-Streaming-Endpunkt in Adobe Experience Platform konfigurieren
+# 2.6.3 Konfigurieren des HTTP-API-Streaming-Endpunkts in Adobe Experience Platform
 
-Bevor Sie den Adobe Experience Platform Sink Connector in Kafka einrichten können, müssen Sie einen HTTP API Source Connector in Adobe Experience Platform erstellen. Die HTTP-API-Streaming-Endpunkt-URL ist erforderlich, um den Adobe Experience Platform Sink Connector einzurichten.
+Bevor Sie den Adobe Experience Platform Sink Connector in Kafka einrichten können, müssen Sie einen HTTP-API-Source-Connector in Adobe Experience Platform erstellen. Die HTTP-API-Streaming-Endpunkt-URL ist erforderlich, um den Adobe Experience Platform Sink Connector einzurichten.
 
-Um einen HTTP API Source Connector zu erstellen, melden Sie sich unter folgender URL bei Adobe Experience Platform an: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Um einen Source-Connector für die HTTP-API zu erstellen, melden Sie sich unter dieser URL bei Adobe Experience Platform an: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
-Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
+Nach dem Login landen Sie auf der Homepage von Adobe Experience Platform.
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``. Nachdem Sie die entsprechende Sandbox ausgewählt haben, wird die Bildschirmänderung angezeigt und Sie befinden sich jetzt in Ihrer dedizierten Sandbox.
+Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbox hat den Namen ``--aepSandboxName--``. Nach Auswahl der entsprechenden Sandbox wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten Sandbox.
 
 ![Datenaufnahme](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Navigieren Sie im linken Menü zu **Quellen** und scrollen Sie im **Quellen-Katalog** nach unten, bis Sie die **HTTP-API** sehen. Klicken Sie auf **Einrichten**.
+Navigieren Sie im linken Menü zu **Quellen** und scrollen Sie im **Quellkatalog** nach unten, bis Sie **HTTP-API** sehen. Klicken Sie **Setup**.
 
 ![Datenaufnahme](./images/kaep1.png)
 
@@ -33,11 +33,11 @@ Klicken Sie auf **Neues Konto**. Verwenden Sie `--aepUserLdap-- - Kafka` als Nam
 
 ![Datenaufnahme](./images/kaep2.png)
 
-Klicken Sie dann auf **Weiter**.
+Sie sehen dies. Klicken Sie auf **Weiter**.
 
 ![Datenaufnahme](./images/kaep3.png)
 
-Wählen Sie **Vorhandenen Datensatz** aus und öffnen Sie das Dropdown-Menü. Suchen Sie den Datensatz &quot;**Demo System - Event DataSet for Call Center&quot;(Global v1.1)** und wählen Sie ihn aus.
+Wählen Sie **Vorhandener Datensatz** aus und öffnen Sie das Dropdown-Menü. Suchen Sie den Datensatz **Demosystem - Ereignisdatensatz für Callcenter (Global v1.1)** und wählen Sie ihn aus.
 
 Klicken Sie auf **Weiter**.
 
@@ -47,9 +47,9 @@ Klicken Sie auf **Fertigstellen**.
 
 ![Datenaufnahme](./images/kaep8.png)
 
-Daraufhin wird eine Übersicht über den soeben erstellten HTTP API Source Connector angezeigt.
+Anschließend sehen Sie einen Überblick über den soeben erstellten HTTP-API-Source-Connector.
 
-Sie müssen die URL **Streaming-Endpunkt** kopieren, die wie die unten stehende aussieht, da Sie sie in der nächsten Übung benötigen werden.
+Sie müssen die URL **Streaming-Endpunkt** kopieren, die wie die folgende aussieht, da Sie sie in der nächsten Übung benötigen werden.
 
 `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`
 
@@ -59,6 +59,6 @@ Du hast diese Übung beendet.
 
 Nächster Schritt: [2.6.4 Installieren und konfigurieren Sie Kafka Connect und den Adobe Experience Platform Sink Connector](./ex4.md)
 
-[Zurück zu Modul 2.6](./aep-apache-kafka.md)
+[Zurück zum Modul 2.6](./aep-apache-kafka.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

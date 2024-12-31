@@ -1,6 +1,6 @@
 ---
 user-guide-title: Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
-user-guide-description: Ein praktisches Tutorial für Target-Kunden, in dem beschrieben wird, wie Mobile SDK-Implementierungen erfolgreich von der Target-Erweiterung zur Optimime-Erweiterung migriert werden.
+user-guide-description: Ein praxisorientiertes Tutorial für Target-Kunden, in dem beschrieben wird, wie Mobile SDK-Implementierungen erfolgreich von der Target-Erweiterung zur Optimizer-Erweiterung migriert werden
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
 feature: Implement Client-side,Implement Mobile,APIs/SDKs, Mobile SDK
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung{#migrate-target-to-mobile-sdk-decisioning}
 
-+ [Einführung in Anleitungen](overview.md)
++ [Tutorial-Einführung](overview.md)
 
 + [Übersicht über die Migration](migration-overview.md)
 
@@ -30,18 +30,18 @@ ht-degree: 5%
 
 + [Ersteinrichtung durchführen](initial-setup.md)
 
-+ [Ersetzen der Bibliothek und Vorabausblendung](replace-library.md)
++ [Bibliothek ersetzen und Ansatz zum Vorab-Ausblenden](replace-library.md)
 
-+ [Render-Aktivitäten](render-activities.md)
++ [Rendering-Aktivitäten](render-activities.md)
 
 + [Versandparameter](send-parameters.md)
 
 + [Konversionsereignisse verfolgen](track-events.md)
 
-+ [Domänenübergreifende Unterstützung aktivieren](cross-domain.md)
++ [Domain-übergreifende Unterstützung aktivieren](cross-domain.md)
 
-+ [Zielgruppen und Profilskripte aktualisieren](update-audiences.md)
++ [Aktualisieren von Audiences und Profilskripten](update-audiences.md)
 
 + [Validieren der -Implementierung](validate.md)
 
-+ [Debug Target](debugging.md)
++ [Target debuggen](debugging.md)

@@ -2,7 +2,7 @@
 title: Batch-Daten erfassen
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Batch-Daten erfassen
-description: In dieser Lektion erfassen Sie Batch-Daten mit verschiedenen Methoden in Experience Platform.
+description: In dieser Lektion nehmen Sie mit verschiedenen Methoden Batch-Daten in Experience Platform auf.
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
@@ -18,20 +18,20 @@ ht-degree: 0%
 # Batch-Daten erfassen
 
 <!-- 1hr-->
-In dieser Lektion erfassen Sie Batch-Daten mit verschiedenen Methoden in Experience Platform.
+In dieser Lektion nehmen Sie mit verschiedenen Methoden Batch-Daten in Experience Platform auf.
 
-Mit der Batch-Datenerfassung können Sie eine große Datenmenge gleichzeitig in Adobe Experience Platform erfassen. Sie können Batch-Daten in einem einmaligen Upload innerhalb der Benutzeroberfläche von Platform oder mithilfe der API erfassen. Sie können auch regelmäßig geplante Batch-Uploads von Drittanbieterdiensten wie Cloud-Speicher-Services mithilfe von Source-Connectoren konfigurieren.
+Die Batch-Datenaufnahme ermöglicht es Ihnen, eine große Datenmenge gleichzeitig in Adobe Experience Platform aufzunehmen. Sie können Batch-Daten in einem einmaligen Upload in die Benutzeroberfläche von Platform aufnehmen oder die API verwenden. Sie können auch regelmäßig geplante Batch-Uploads von Drittanbieterdiensten wie Cloud-Speicher-Services mithilfe von Source-Connectoren konfigurieren.
 
-**Dateningenieure** müssen Batch-Daten außerhalb dieses Tutorials erfassen.
+**Dateningenieure** müssen Batch-Daten außerhalb dieses Tutorials aufnehmen.
 
-Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über die Datenerfassung zu erfahren:
+Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über die Datenaufnahme zu erfahren:
 
 >[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
 
 
 ## Erforderliche Berechtigungen
 
-In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten Sie alle Zugriffssteuerungen ein, die zum Abschluss dieser Lektion erforderlich sind.
+In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten Sie alle Zugriffssteuerungen ein, die zum Abschließen dieser Lektion erforderlich sind.
 
 <!--
 * Permission item **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]**, **[!UICONTROL Manage Datasets]** and **[!UICONTROL Data Monitoring]**
@@ -42,13 +42,13 @@ In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten 
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->
 
-Sie benötigen Zugriff auf einen (S)FTP-Server oder eine Cloud-Speicherlösung für die Quellübung. Es gibt eine Problemumgehung, wenn Sie keine haben.
+Sie benötigen Zugriff auf einen (S)FTP-Server oder eine Cloud-Speicherlösung für die Quellübung. Wenn noch keine Problemumgehung vorhanden ist, gibt es eine Problemumgehung.
 
-## Daten in Batches mit der Platform-Benutzeroberfläche erfassen
+## Aufnehmen von Daten in Batches mit der Platform-Benutzeroberfläche
 
-Daten können direkt in einen Datensatz auf dem Datensatzbildschirm in den Formaten JSON und Parquet hochgeladen werden. Auf diese Weise können Sie die Erfassung einiger Ihrer Daten testen, nachdem Sie eine
+Daten können direkt in einen Datensatz auf dem Datensatzbildschirm in den Formaten JSON und Parquet hochgeladen werden. Dies ist eine hervorragende Möglichkeit, die Aufnahme einiger Ihrer Daten zu testen, nachdem Sie ein
 
-### Herunterladen und Vorbereiten der Daten
+### Daten herunterladen und vorbereiten
 
 Rufen Sie zunächst die Beispieldaten ab und passen Sie sie für Ihren Mandanten an:
 
@@ -56,101 +56,101 @@ Rufen Sie zunächst die Beispieldaten ab und passen Sie sie für Ihren Mandanten
 >
 >Die in der Datei [luma-data.zip](assets/luma-data.zip) enthaltenen Daten sind fiktiv und dürfen nur zu Demonstrationszwecken verwendet werden.
 
-1. Laden Sie [luma-data.zip](assets/luma-data.zip) in den Ordner **Luma-Tutorial-Assets** herunter.
-1. Dekomprimieren Sie die Datei und erstellen Sie einen Ordner mit dem Namen `luma-data` , der die vier Datendateien enthält, die wir in dieser Lektion verwenden werden
-1. Öffnen Sie `luma-loyalty.json` in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` durch Ihre eigene Unterstrich-Mandanten-ID, wie in Ihren eigenen Schemas dargestellt:
-   ![Unterstrich der Mandantenkennung](assets/ingestion-underscoreTenant.png)
+1. Laden Sie [luma-data.zip](assets/luma-data.zip) in den Ordner **Luma Tutorial Assets** herunter.
+1. Entpacken Sie die Datei und erstellen Sie einen Ordner namens `luma-data`, der die vier Datendateien enthält, die wir in dieser Lektion verwenden werden
+1. Öffnen Sie `luma-loyalty.json` in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` durch Ihre eigene Unterstrich-Mandanten-ID, wie in Ihren eigenen Schemata dargestellt:
+   ![Mandanten-ID unterstreichen](assets/ingestion-underscoreTenant.png)
 
-1. Die aktualisierte Datei speichern
+1. Speichern Sie die aktualisierte Datei
 
-### Daten erfassen
+### Aufnehmen der Daten
 
-1. Wählen Sie in der Benutzeroberfläche von Platform im linken Navigationsbereich **[!UICONTROL Datensätze]** aus.
-1. Öffnen Sie Ihre `Luma Loyalty Dataset`
-1. Scrollen Sie nach unten, bis der Abschnitt **[!UICONTROL Daten hinzufügen]** in der rechten Spalte angezeigt wird.
-1. Laden Sie die Datei `luma-loyalty.json` hoch.
-1. Sobald die Datei hochgeladen wurde, wird eine Zeile für den Batch angezeigt
-1. Wenn Sie die Seite nach einigen Minuten neu laden, sollten Sie sehen, dass der Batch mit 1000 Datensätzen und 1000 Profilfragmenten erfolgreich hochgeladen wurde.
+1. Wählen Sie in der Platform-Benutzeroberfläche **[!UICONTROL Datensätze]** im linken Navigationsbereich aus
+1. `Luma Loyalty Dataset` öffnen
+1. Scrollen Sie nach unten, bis Sie den Abschnitt **[!UICONTROL Daten hinzufügen]** in der rechten Spalte sehen
+1. Laden Sie die `luma-loyalty.json` Datei hoch.
+1. Nach dem Hochladen der Datei wird eine Zeile für den Batch angezeigt
+1. Wenn Sie die Seite nach einigen Minuten erneut laden, sollten Sie sehen, dass der Batch mit 1.000 Datensätzen und 1.000 Profilfragmenten erfolgreich hochgeladen wurde.
 
    ![Aufnahme](assets/ingestion-loyalty-uploadJson.png)
    <!--do i need to explain error diagnostics and partial ingestion-->
 
 >[!NOTE]
 >
->Es gibt einige Optionen, **[!UICONTROL Fehlerdiagnose]** und **[!UICONTROL Partielle Erfassung]**, die auf verschiedenen Bildschirmen in dieser Lektion angezeigt werden. Diese Optionen werden im Tutorial nicht behandelt. Kurzinformationen:
+>Es gibt einige Optionen, **[!UICONTROL Fehlerdiagnose]** und **[!UICONTROL Partielle Aufnahme]**, die Sie in dieser Lektion auf verschiedenen Bildschirmen sehen werden. Diese Optionen werden im Tutorial nicht behandelt. Einige kurze Informationen:
 >
->* Durch die Aktivierung der Fehlerdiagnose werden Daten über die Erfassung Ihrer Daten generiert, die Sie dann mithilfe der Data Access API überprüfen können. Weitere Informationen dazu finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
->* Partielle Erfassung ermöglicht die Aufnahme von fehlerhaften Daten bis zu einem bestimmten Schwellenwert, den Sie angeben können. Weitere Informationen dazu finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html) .
+>* Durch Aktivierung der Fehlerdiagnose werden Daten über die Aufnahme Ihrer Daten generiert, die Sie dann mithilfe der Datenzugriffs-API überprüfen können. Weitere Informationen hierzu finden Sie in [der Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
+>* Die partielle Aufnahme erlaubt Ihnen, fehlerhafte Daten bis zu einem gewissen Schwellenwert, den Sie angeben können, aufzunehmen. Weitere Informationen hierzu finden Sie in [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
-### Daten validieren
+### Validieren der Daten
 
-Es gibt einige Möglichkeiten, um zu bestätigen, dass die Daten erfolgreich erfasst wurden.
+Es gibt einige Möglichkeiten, um zu bestätigen, dass die Daten erfolgreich aufgenommen wurden.
 
-#### Validieren in der Benutzeroberfläche von Platform
+#### Validieren in der Platform-Benutzeroberfläche
 
 So bestätigen Sie, dass die Daten in den Datensatz aufgenommen wurden:
 
-1. Wählen Sie auf derselben Seite, auf der Sie die Daten aufgenommen haben, oben rechts die Schaltfläche **[!UICONTROL Datensatz-Vorschau anzeigen]** aus
-1. Wählen Sie die Schaltfläche **Vorschau** aus, um einige der erfassten Daten sehen zu können.
+1. Klicken Sie auf der Seite, auf der Sie die Daten aufgenommen haben **[!UICONTROL oben rechts auf]** Schaltfläche „Datensatz in Vorschau anzeigen“
+1. Klicken Sie auf **Vorschau** und Sie sollten einige der aufgenommenen Daten sehen können.
 
-   ![Vorschau des erfolgreichen Datensatzes anzeigen](assets/ingestion-loyalty-preview.png)
+   ![Vorschau des erfolgreichen Datensatzes](assets/ingestion-loyalty-preview.png)
 
 
-So bestätigen Sie, dass die in Profil gelandeten Daten (es kann einige Minuten dauern, bis die Daten landen):
+So bestätigen Sie, dass die Daten im Profil landen (es kann einige Minuten dauern, bis die Daten landen):
 
-1. Navigieren Sie im linken Navigationsbereich zu **[!UICONTROL Profile]** .
-1. Wählen Sie das Symbol neben dem Feld **[!UICONTROL Identitäts-Namespace auswählen]** aus, um das Modal zu öffnen
-1. Wählen Sie Ihren `Luma Loyalty Id`-Namespace aus
-1. Geben Sie dann einen der `loyaltyId` -Werte aus Ihrem Datensatz ein, `5625458`
+1. Navigieren Sie **[!UICONTROL linken Navigationsbereich]** Profile“.
+1. Klicken Sie auf das Symbol neben dem Feld **[!UICONTROL Identity-Namespace auswählen]**, um das Modal zu öffnen
+1. `Luma Loyalty Id` Namespace auswählen
+1. Geben Sie dann einen der `loyaltyId` Werte aus Ihrem Datensatz ein, `5625458`
 1. Wählen Sie **[!UICONTROL Ansicht]**
-   ![Profil aus dem Datensatz bestätigen](assets/ingestion-loyalty-profile.png)
+   ![Bestätigen eines Profils aus dem Datensatz](assets/ingestion-loyalty-profile.png)
 
 #### Validieren mit Datenerfassungsereignissen
 
-Wenn Sie in der vorherigen Lektion Datenerfassungsereignisse abonniert haben, überprüfen Sie Ihre eindeutige webhook.site-URL. Es sollten drei Anfragen in der folgenden Reihenfolge angezeigt werden, wobei einige Zeit dazwischen liegen und die folgenden `eventCode` -Werte vorliegen:
+Wenn Sie in der vorherigen Lektion Datenerfassungsereignisse abonniert haben, überprüfen Sie Ihre eindeutige Webhook.site-URL. Es sollten drei Anfragen in der folgenden Reihenfolge und mit etwas Zeit dazwischen mit den folgenden `eventCode` angezeigt werden:
 
-1. `ing_load_success` - der Batch wie erfasst
+1. `ing_load_success` - Der Batch wird aufgenommen
 1. `ig_load_success` - Der Batch wurde in das Identitätsdiagramm aufgenommen
-1. `ps_load_success` - Der Batch wurde in den Profildienst aufgenommen
+1. `ps_load_success` - Der Batch wurde in den Profil-Service aufgenommen
 
-![Datenerfassungs-Webhook](assets/ingestion-loyalty-webhook.png)
+![Webhook zur Datenaufnahme](assets/ingestion-loyalty-webhook.png)
 
-Weitere Informationen zu den Benachrichtigungen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) .
+Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) in der (Dokumentation).
 
-## Daten in Batches mit der Platform-API erfassen
+## Daten mit der Platform-API in Batches aufnehmen
 
-Laden wir nun Daten mithilfe der API hoch.
+Laden wir jetzt Daten mit der API hoch.
 
 >[!NOTE]
 >
->Datenarchitekten können die CRM-Daten gerne über die Benutzeroberflächenmethode hochladen.
+>Datenarchitekten können die CRM-Daten über die Methode der Benutzeroberfläche hochladen.
 
-### Herunterladen und Vorbereiten der Daten
+### Daten herunterladen und vorbereiten
 
-1. Sie sollten [luma-data.zip](assets/luma-data.zip) bereits heruntergeladen und in Ihren Ordner `Luma Tutorial Assets` entpackt haben.
-2. Öffnen Sie `luma-crm.json` in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` durch Ihre eigene Unterstrich-Mandanten-ID, wie in Ihren Schemas dargestellt.
-3. Die aktualisierte Datei speichern
+1. Sie sollten „luma-data.zip[ bereits heruntergeladen und in ](assets/luma-data.zip) Ordner &quot;`Luma Tutorial Assets`&quot; entpackt haben.
+2. Öffnen Sie `luma-crm.json` in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` durch Ihre eigene Unterstrich-Mandanten-ID, wie in Ihren Schemata dargestellt
+3. Speichern Sie die aktualisierte Datei
 
-### Abrufen der Datensatz-ID
+### Datensatz-ID abrufen
 
-Zunächst rufen wir die ID der Datensatz-ID des Datensatzes ab, in den wir Daten aufnehmen möchten:
+Als Erstes rufen wir die ID der Datensatz-ID des Datensatzes ab, in den wir Daten aufnehmen möchten:
 
-1. Öffnen Sie [!DNL Postman]
-1. Wenn Sie kein Zugriffstoken haben, öffnen Sie die Anfrage &quot;**[!DNL OAuth: Request Access Token]**&quot; und wählen Sie &quot;**Senden**&quot;, um ein neues Zugriffstoken anzufordern, wie Sie es in der [!DNL Postman]-Lektion getan haben.
-1. Öffnen Sie Ihre Umgebungsvariablen und stellen Sie sicher, dass der Wert von **CONTAINER_ID** immer noch `tenant` ist.
-1. Öffnen Sie die Anforderung **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** und wählen Sie **Senden** aus.
-1. Sie sollten eine `200 OK` -Antwort erhalten
-1. Kopieren Sie die ID von `Luma CRM Dataset` aus dem Antworttext
-   ![Abrufen der Datensatz-ID](assets/ingestion-crm-getDatasetId.png)
+1. [!DNL Postman] öffnen
+1. Wenn Sie kein Zugriffs-Token haben, öffnen Sie die **[!DNL OAuth: Request Access Token]** und wählen Sie **Senden** aus, um ein neues Zugriffs-Token anzufordern, genau wie Sie es in der [!DNL Postman] Lektion getan haben.
+1. Öffnen Sie die Umgebungsvariablen und stellen Sie sicher, dass der Wert **CONTAINER_ID** weiterhin `tenant` ist
+1. Öffnen Sie die **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** und wählen Sie **Senden**
+1. Sie sollten eine `200 OK` Antwort erhalten
+1. Kopieren Sie die ID der `Luma CRM Dataset` aus dem Antworttext
+   ![Datensatz-ID abrufen](assets/ingestion-crm-getDatasetId.png)
 
-### Erstellen des Batches
+### Erstellen eines Batches
 
 Jetzt können wir einen Batch im Datensatz erstellen:
 
-1. Laden Sie [Data Ingestion-API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json) in Ihren `Luma Tutorial Assets` -Ordner herunter
+1. Laden Sie [Datenaufnahme-API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json) in Ihren `Luma Tutorial Assets` Ordner herunter
 1. Importieren der Sammlung in [!DNL Postman]
-1. Wählen Sie die Anforderung **[!DNL Data Ingestion API > Batch Ingestion > Create a new batch in Catalog Service.]** aus
-1. Fügen Sie Folgendes als **Hauptteil** der Anfrage ein, ***ersetzt den Wert datasetId durch Ihren eigenen***:
+1. **[!DNL Data Ingestion API > Batch Ingestion > Create a new batch in Catalog Service.]** auswählen
+1. Fügen Sie Folgendes als **Hauptteil** der Anfrage ein ***ersetzen Sie den Wert datasetId durch Ihren eigenen***:
 
    ```json
    {
@@ -161,187 +161,187 @@ Jetzt können wir einen Batch im Datensatz erstellen:
    }
    ```
 
-1. Wählen Sie die Schaltfläche **Senden** aus
-1. Sie sollten eine 201 Erstellte Antwort mit der ID Ihres neuen Batches erhalten!
-1. Kopieren Sie den `id` des neuen Batches
-   ![Erstellter Batch](assets/ingestion-crm-createBatch.png)
+1. Klicken Sie auf die **Senden**-Schaltfläche
+1. Sie sollten eine 201-Antwort erhalten, die die ID Ihres neuen Batches enthält!
+1. `id` des neuen Stapels kopieren
+   ![Batch erstellt](assets/ingestion-crm-createBatch.png)
 
-### Daten erfassen
+### Aufnehmen der Daten
 
 Jetzt können wir die Daten in den Batch hochladen:
 
-1. Wählen Sie die Anforderung **[!DNL Data Ingestion API > Batch Ingestion > Upload a file to a dataset in a batch.]** aus
-1. Geben Sie auf der Registerkarte **Parameter** Ihre Datensatz-ID und Batch-Kennung in die entsprechenden Felder ein.
-1. Geben Sie auf der Registerkarte **Params** `luma-crm.json` als **filePath** ein.
-1. Wählen Sie auf der Registerkarte **Textkörper** die Option **binary** aus
-1. Wählen Sie die heruntergeladene `luma-crm.json` aus Ihrem lokalen `Luma Tutorial Assets`-Ordner aus
-1. Wählen Sie **Senden** aus und Sie sollten eine 200 OK-Antwort mit &quot;1&quot;im Antworttext erhalten
+1. **[!DNL Data Ingestion API > Batch Ingestion > Upload a file to a dataset in a batch.]** auswählen
+1. Geben Sie auf **Registerkarte** Ihre Datensatz-ID und Batch-ID in die entsprechenden Felder ein
+1. Geben **auf der** „Parameter“ `luma-crm.json` als **filePath**
+1. Wählen Sie auf **Registerkarte** die Option **binär** aus
+1. Wählen Sie die heruntergeladene `luma-crm.json` aus Ihrem lokalen `Luma Tutorial Assets` aus
+1. Wählen Sie **Senden** und Sie sollten eine Antwort von 200 OK mit „1“ im Antworttext erhalten
 
-   ![Hochgeladene Daten](assets/ingestion-crm-uploadFile.png)
+   ![Daten hochgeladen](assets/ingestion-crm-uploadFile.png)
 
-Wenn Sie sich an dieser Stelle Ihren Batch in der Benutzeroberfläche von Platform ansehen, sehen Sie, dass er sich in einem &quot;[!UICONTROL Laden]&quot;-Status befindet:
-![Laden des Batches](assets/ingestion-crm-loading.png)
+Wenn Sie sich jetzt den Batch in der Platform-Benutzeroberfläche ansehen, sehen Sie, dass er den Status &quot;[!UICONTROL &quot; ]:
+![Batch-](assets/ingestion-crm-loading.png)
 
 Da die Batch-API häufig zum Hochladen mehrerer Dateien verwendet wird, müssen Sie Platform mitteilen, wann ein Batch abgeschlossen ist, was wir im nächsten Schritt tun werden.
 
-### Stapelverarbeitung durchführen
+### Vervollständigen des Batches
 
-So schließen Sie den Batch ab:
+Abschließen des Batches:
 
-1. Wählen Sie die Anforderung **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]** aus
-1. Geben Sie auf der Registerkarte **Parameter** `COMPLETE` als **Aktion** ein.
-1. Geben Sie auf der Registerkarte **Parameter** Ihre Batch-ID ein. Machen Sie sich keine Gedanken über die Datensatz-ID oder den Dateipfad, sofern diese vorhanden sind.
-1. Stellen Sie sicher, dass die URL der POST `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` lautet und dass keine unnötigen Verweise auf die `datasetId` oder `filePath` vorhanden sind.
-1. Wählen Sie **Senden** aus und Sie sollten eine 200 OK-Antwort mit &quot;1&quot;im Antworttext erhalten
+1. **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]** auswählen
+1. Geben Sie auf **Registerkarte** Parameter`COMPLETE` als **Aktion**
+1. Geben **auf der Registerkarte** Parameter“ Ihre Batch-ID ein. Machen Sie sich keine Gedanken über die Datensatz-ID oder den Dateipfad, falls vorhanden.
+1. Vergewissern Sie sich, dass die URL der POST `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` ist und dass es keine unnötigen Verweise auf die `datasetId` oder `filePath` gibt
+1. Wählen Sie **Senden** und Sie sollten eine Antwort von 200 OK mit „1“ im Antworttext erhalten
 
-   ![Batch-Abschluss](assets/ingestion-crm-complete.png)
+   ![Batch abgeschlossen](assets/ingestion-crm-complete.png)
 
-### Daten validieren
+### Validieren der Daten
 
-#### Validieren in der Benutzeroberfläche von Platform
+#### Validieren in der Platform-Benutzeroberfläche
 
-Überprüfen Sie, ob die Daten in der Benutzeroberfläche von Platform gelandet sind, genau wie beim Loyalitätsdatensatz.
+Überprüfen Sie, ob die Daten in der Platform-Benutzeroberfläche gelandet sind, genau wie Sie es für den Treueprogramm-Datensatz getan haben.
 
-Bestätigen Sie zunächst, dass der Batch zeigt, dass 1000 Datensätze erfasst wurden:
+Bestätigen Sie zunächst, dass der Batch anzeigt, dass 1000 Datensätze aufgenommen wurden:
 
-![Batch success](assets/ingestion-crm-success.png)
+![Batch-Erfolg](assets/ingestion-crm-success.png)
 
-Bestätigen Sie dann den Batch mit Vorschau des Datensatzes:
+Bestätigen Sie als Nächstes den Batch mithilfe des Vorschau-Datensatzes:
 
-![Stapelvorschau](assets/ingestion-crm-preview.png)
+![Batch-Vorschau](assets/ingestion-crm-preview.png)
 
-Bestätigen Sie abschließend, dass eines Ihrer Profile erstellt wurde, indem Sie eines der Profile durch den Namespace `Luma CRM Id` nachschlagen, z. B. `112ca06ed53d3db37e4cea49cc45b71e`
+Bestätigen Sie abschließend, dass eines Ihrer Profile erstellt wurde, indem Sie eines der Profile anhand des `Luma CRM Id` Namespace nachschlagen, z. B. `112ca06ed53d3db37e4cea49cc45b71e`
 
-![Erfasstes Profil](assets/ingestion-crm-profile.png)
+![Profil aufgenommen](assets/ingestion-crm-profile.png)
 
-Es gibt eine interessante Sache, die gerade passiert ist, auf die ich hinweisen möchte. Öffnen Sie dieses `Danny Wright` -Profil. Das Profil hat sowohl einen `Lumacrmid` als auch einen `Lumaloyaltyid`. Beachten Sie, dass der `Luma Loyalty Schema` zwei Identitätsfelder enthielt: &quot;Luma Loyalty Id&quot;und &quot;CRM Id&quot;. Nachdem wir nun beide Datensätze hochgeladen haben, wurden sie zu einem einzigen Profil zusammengeführt. Die Treuedaten enthielten `Daniel` als Vornamen und &quot;New York City&quot;als Hausadresse, während die CRM-Daten `Danny` als Vorname und `Portland` als Hausadresse für den Kunden mit derselben Loyalitäts-ID enthielten. Wir kommen zurück, warum der Vorname in der Lektion zu Zusammenführungsrichtlinien `Danny` anzeigt.
+Es gibt eine interessante Sache, die gerade passiert ist, auf die ich hinweisen möchte. Öffnen Sie dieses `Danny Wright`. Das Profil hat sowohl eine `Lumacrmid` als auch eine `Lumaloyaltyid`. Denken Sie daran, dass die `Luma Loyalty Schema` zwei Identitätsfelder enthielt, Luma-Treue-ID und CRM-ID. Nachdem wir nun beide Datensätze hochgeladen haben, wurden sie zu einem einzigen Profil zusammengeführt. Die Treuedaten hatten als Vornamen und „New York City“ als Wohnadresse `Daniel`, während die CRM-Daten als Vorname und `Portland` als Wohnadresse für den Kunden mit derselben Treueprogramm-ID `Danny` hatten. Wir werden in der Lektion über Zusammenführungsrichtlinien darauf zurückkommen, warum der Vorname `Danny` angezeigt wird.
 
-Herzlichen Glückwunsch! Sie haben gerade Profile zusammengeführt!
+Herzlichen Glückwunsch, Sie haben soeben Profile zusammengeführt!
 
-![Profil zusammengeführt ](assets/ingestion-crm-profileLinkedIdentities.png)
+![Zusammengeführtes Profil ](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### Validieren mit Datenerfassungsereignissen
 
-Wenn Sie in der vorherigen Lektion Datenerfassungsereignisse abonniert haben, überprüfen Sie Ihre eindeutige webhook.site-URL. Es sollten drei Anfragen eingehen, genau wie bei den Treuedaten:
+Wenn Sie in der vorherigen Lektion Datenerfassungsereignisse abonniert haben, überprüfen Sie Ihre eindeutige Webhook.site-URL. Es sollten drei Anfragen eingehen, genau wie bei den Treueprogramm-Daten:
 
-![Datenerfassungs-Webhook](assets/ingestion-crm-webhook.png)
+![Webhook zur Datenaufnahme](assets/ingestion-crm-webhook.png)
 
-Weitere Informationen zu den Benachrichtigungen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) .
+Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) in der (Dokumentation).
 
-## Daten mit Workflows erfassen
+## Aufnehmen von Daten mit Workflows
 
-Sehen wir uns eine andere Möglichkeit an, Daten hochzuladen. Mit der Workflow-Funktion können Sie CSV-Daten erfassen, die noch nicht in XDM modelliert wurden.
+Sehen wir uns eine andere Möglichkeit zum Hochladen von Daten an. Mit der Workflow-Funktion können Sie CSV-Daten aufnehmen, die nicht bereits in XDM modelliert sind.
 
-### Herunterladen und Vorbereiten der Daten
+### Daten herunterladen und vorbereiten
 
-1. Sie sollten [luma-data.zip](assets/luma-data.zip) bereits heruntergeladen und in Ihren Ordner `Luma Tutorial Assets` entpackt haben.
-1. Vergewissern Sie sich, dass Sie `luma-products.csv` haben.
+1. Sie sollten „luma-data.zip[ bereits heruntergeladen und in ](assets/luma-data.zip) Ordner &quot;`Luma Tutorial Assets`&quot; entpackt haben.
+1. Vergewissern Sie sich, dass Sie Folgendes haben`luma-products.csv`
 
 ### Erstellen eines Workflows
 
-Richten wir nun den Workflow ein:
+Richten wir nun einen Workflow ein:
 
-1. Navigieren Sie in der linken Navigation zu **[!UICONTROL Workflows]** .
-1. Wählen Sie **[!UICONTROL CSV dem XDM-Schema zuordnen]** und wählen Sie die Schaltfläche **[!UICONTROL Starten]** aus
-   ![Starten Sie den Workflow](assets/ingestion-products-launchWorkflow.png)
-1. Wählen Sie Ihren `Luma Product Catalog Dataset` aus und wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus.
-   ![Wählen Sie Ihren Datensatz aus](assets/ingestion-products-selectDataset.png)
-1. Fügen Sie die heruntergeladene Datei `luma-products.csv` hinzu und wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus
-   ![Wählen Sie Ihren Datensatz aus](assets/ingestion-products-selectData.png)
-1. Jetzt befinden Sie sich in der Zuordnungsschnittstelle, in der Sie ein Feld aus den Quelldaten (einen der Spaltennamen in der `luma-products.csv` -Datei) XDM-Feldern im Zielschema zuordnen können. In unserem Beispiel sind die Spaltennamen so nah wie möglich an den Schemafeldnamen, dass der Mapper die richtige Zuordnung automatisch erkennen kann! Wenn das Mapper das richtige Feld nicht automatisch erkennen konnte, wählen Sie das Symbol rechts neben dem Zielfeld aus, um das richtige XDM-Feld auszuwählen. Wenn Sie eine der Spalten nicht aus der CSV aufnehmen möchten, können Sie die Zeile aus der Zuordnung löschen. Sie können frei spielen und Spaltenüberschriften in der `luma-products.csv` ändern, um sich mit der Funktionsweise des Mappers vertraut zu machen.
-1. Wählen Sie die Schaltfläche **[!UICONTROL Beenden]** aus.
-   ![Wählen Sie Ihren Datensatz aus](assets/ingestion-products-mapper.png)
+1. Navigieren Sie **[!UICONTROL linken Navigationsbereich]** Workflows“.
+1. Wählen Sie **[!UICONTROL CSV zu XDM-Schema zuordnen]** und klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**.
+   ![Workflow starten](assets/ingestion-products-launchWorkflow.png)
+1. Wählen Sie Ihre `Luma Product Catalog Dataset` aus und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**
+   ![Datensatz auswählen](assets/ingestion-products-selectDataset.png)
+1. Fügen Sie die heruntergeladene `luma-products.csv` hinzu und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
+   ![Datensatz auswählen](assets/ingestion-products-selectData.png)
+1. Jetzt befinden Sie sich in der Mapper-Oberfläche, in der Sie ein Feld aus den Quelldaten (einen der Spaltennamen in der `luma-products.csv`-Datei) XDM-Feldern im Zielschema zuordnen können. In unserem Beispiel liegen die Spaltennamen nahe genug an den Schemafeldnamen, dass der Mapper die richtige Zuordnung automatisch erkennen kann! Wenn der Mapper das rechte Feld nicht automatisch erkennen konnte, würden Sie auf das Symbol rechts neben dem Zielfeld klicken, um das richtige XDM-Feld auszuwählen. Wenn Sie keine der Spalten aus der CSV-Datei aufnehmen möchten, können Sie die Zeile aus dem Mapper löschen. Sie können gerne herumspielen und Spaltenüberschriften im `luma-products.csv` ändern, um sich mit der Funktionsweise des Mappers vertraut zu machen.
+1. Klicken Sie auf die **[!UICONTROL Beenden]**.
+   ![Datensatz auswählen](assets/ingestion-products-mapper.png)
 
-### Daten validieren
+### Validieren der Daten
 
-Überprüfen Sie nach dem Hochladen des Batches den Upload durch Vorschau des Datensatzes.
+Wenn der Batch hochgeladen wurde, überprüfen Sie den Upload, indem Sie eine Vorschau des Datensatzes anzeigen.
 
-Da der `Luma Product SKU` ein Namespace ohne Personen ist, werden für die Produkt-SKU keine Profile angezeigt.
+Da es sich bei dem `Luma Product SKU` um einen Namespace handelt, der nicht für Personen bestimmt ist, werden für die Produkt-SKUs keine Profile angezeigt.
 
-Sie sollten die drei Treffer in Ihrem Webhook sehen.
+Sie sollten die drei Treffer für Ihren Webhook sehen.
 
-## Daten mit Quellen erfassen
+## Aufnehmen von Daten mit Quellen
 
-Okay, Sie haben Dinge auf die harte Art gemacht. Lassen Sie uns nun in das versprochene Land der Batch-Erfassung von _automated_ wechseln! Wenn ich sage: &quot;SETZEN SIE ES!&quot; Sie sagen: &quot;VERGESSEN SIE ES!&quot; &quot;LEGEN SIE ES FEST!&quot; &quot;VERGESSEN SIE ES!&quot; &quot;LEGEN SIE ES FEST!&quot; &quot;VERGESSEN SIE ES!&quot; Nur ein Scherz! So etwas tätest du nie! OK, zurück zur Arbeit. Du bist fast fertig.
+Okay, du hast es auf die harte Tour geschafft. Lassen Sie uns nun in das gelobte Land der _automatisierten_ Batch-Aufnahme eintauchen! Wenn ich sage: „SETZ ES!“ Sie sagen: „VERGISS ES!“ „LEGEN SIE ES FEST!“ „VERGISS ES!“ „LEGEN SIE ES FEST!“ „VERGISS ES!“ Nur ein Scherz! So etwas würdest du nie machen! Ok, zurück an die Arbeit. Du bist fast fertig.
 
-Wechseln Sie im linken Navigationsbereich zu **[!UICONTROL Quellen]** , um den Quellkatalog zu öffnen. Hier finden Sie verschiedene vordefinierte Integrationen mit branchenführenden Daten- und Speicheranbietern.
+Navigieren Sie **[!UICONTROL linken]** zu „Quellen“, um den Quellkatalog zu öffnen. Hier sehen Sie verschiedene vorkonfigurierte Integrationen mit branchenführenden Daten- und Speicheranbietern.
 
 ![Source-Katalog](assets/ingestion-offline-sourceCatalog.png)
 
-Okay, lassen Sie uns Daten über einen Quell-Connector erfassen.
+Okay, nehmen wir Daten über einen Quell-Connector auf.
 
-Diese Übung wird Ihr eigenes Abenteuer-Stil sein. Ich zeige den Workflow über den FTP-Quell-Connector. Sie können entweder einen anderen Quell-Connector für Cloud-Speicher verwenden, den Sie in Ihrem Unternehmen verwenden, oder die JSON-Datei mit der Datensatz-Benutzeroberfläche hochladen, wie wir es mit den Treuedaten getan haben.
+Diese Übung wird im Stil „Wählen Sie Ihr eigenes Abenteuer“ durchgeführt. Ich werde den Workflow mithilfe des FTP-Quell-Connectors anzeigen. Sie können entweder einen anderen Cloud-Speicher-Quell-Connector verwenden, den Sie in Ihrem Unternehmen verwenden, oder die JSON-Datei mithilfe der Datensatz-Benutzeroberfläche hochladen, wie wir es bei den Treuedaten getan haben.
 
-Viele der Quellen verfügen über einen ähnlichen Konfigurations-Workflow, in dem Sie:
+Viele Quellen verfügen über einen ähnlichen Konfigurations-Workflow, in dem Sie:
 
 1. Authentifizierungsdetails eingeben
-1. Wählen Sie die zu erfassenden Daten aus
+1. Wählen Sie die Daten aus, die Sie aufnehmen möchten
 1. Wählen Sie den Platform-Datensatz aus, in den Sie ihn aufnehmen möchten
-1. Ordnen Sie die Felder Ihrem XDM-Schema zu.
-1. Wählen Sie die Häufigkeit aus, mit der Sie Daten von diesem Speicherort abrufen möchten
+1. Zuordnen der Felder zu Ihrem XDM-Schema
+1. Wählen Sie die Häufigkeit, mit der Sie Daten von diesem Speicherort erneut aufnehmen möchten
 
 >[!NOTE]
 >
->Die Offline-Kaufdaten, die wir in dieser Übung verwenden werden, enthalten Zeitdaten. Die Datetime-Daten sollten entweder mit [ISO 8061 formatierte Zeichenfolgen](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;) oder mit der Unix-Zeit formatiert in Millisekunden (153126395999999999999999990 sein. 00) und werden bei der Aufnahme in den Ziel-XDM-Typ konvertiert. Weitere Informationen zur Datenkonvertierung und anderen Einschränkungen finden Sie in der [Dokumentation zur Batch Ingestion-API](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types) .
+>Die Offline-Kaufdaten, die wir in dieser Übung verwenden werden, enthalten Datums-/Uhrzeitdaten. Datetime-Daten sollten entweder in [ISO 8061-formatierten Zeichenfolgen](https://www.iso.org/iso-8601-date-and-time-format.html) („2018-07-10T15:05:59.000-08:00„) oder in Unix-Zeit in Millisekunden (1531263959000) formatiert sein und zur Aufnahmezeit in den Ziel-XDM-Typ konvertiert werden. Weitere Informationen zur Datenkonvertierung und zu anderen Einschränkungen finden Sie unter [Dokumentation zur Batch-Aufnahme-API](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
 
-### Laden Sie die Daten herunter, bereiten Sie sie vor und laden Sie sie in Ihren bevorzugten Cloud-Speicher-Anbieter hoch.
+### Herunterladen, Vorbereiten und Hochladen der Daten an Ihren bevorzugten Cloud-Speicheranbieter
 
-1. Sie sollten [luma-data.zip](assets/luma-data.zip) bereits heruntergeladen und in Ihren Ordner `Luma Tutorial Assets` entpackt haben.
-1. Öffnen Sie `luma-offline-purchases.json` in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` durch Ihre eigene Unterstrich-Mandanten-ID, wie in Ihren Schemas dargestellt.
-1. Aktualisieren Sie alle Zeitstempel so, dass die Ereignisse im letzten Monat auftreten (suchen Sie beispielsweise nach `"timestamp":"2022-06` und ersetzen Sie Jahr und Monat).
-1. Wählen Sie Ihren bevorzugten Cloud-Speicher-Provider aus, um sicherzustellen, dass er im Katalog [!UICONTROL Quellen] verfügbar ist.
-1. Laden Sie `luma-offline-purchases.json` an einen Speicherort in Ihrem bevorzugten Cloud-Speicher-Provider hoch.
+1. Sie sollten „luma-data.zip[ bereits heruntergeladen und in ](assets/luma-data.zip) Ordner &quot;`Luma Tutorial Assets`&quot; entpackt haben.
+1. Öffnen Sie `luma-offline-purchases.json` in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` durch Ihre eigene Unterstrich-Mandanten-ID, wie in Ihren Schemata dargestellt
+1. Aktualisieren Sie alle Zeitstempel, sodass die Ereignisse im letzten Monat auftreten (suchen Sie beispielsweise nach `"timestamp":"2022-06` und ersetzen Sie Jahr und Monat)
+1. Wählen Sie Ihren bevorzugten Cloud-Speicheranbieter aus und stellen Sie sicher, dass er im [!UICONTROL Quellen“ ] ist
+1. Laden Sie `luma-offline-purchases.json` an einen Speicherort in Ihrem bevorzugten Cloud-Speicheranbieter hoch
 
-### Daten an den gewünschten Cloud-Speicherort aufnehmen
+### Aufnehmen der Daten an Ihrem bevorzugten Cloud-Speicherort
 
-1. Filtern Sie in der Benutzeroberfläche von Platform den Katalog [!UICONTROL Quellen] nach **[!UICONTROL Cloud-Speicher]** .
-1. Beachten Sie, dass es unter dem `...` bequeme Links zur Dokumentation gibt.
-1. Wählen Sie im Feld Ihres bevorzugten Cloud-Speicher-Anbieters die Schaltfläche **[!UICONTROL Konfigurieren]**
-   ![Select configure](assets/ingestion-offline-selectFTP.png)
-1. **[!UICONTROL Authentifizierung]** ist der erste Schritt. Geben Sie den Namen für Ihr Konto ein, z. B. `Luma's FTP Account` und Ihre Authentifizierungsdetails. Dieser Schritt sollte für alle Cloud-Speicher-Quellen relativ ähnlich sein, auch wenn die Felder geringfügig variieren können. Nachdem Sie die Authentifizierungsdetails für ein Konto eingegeben haben, können Sie sie für andere Quellverbindungen wiederverwenden, die möglicherweise verschiedene Daten für verschiedene Zeitpläne von anderen Dateien im selben Konto senden
-1. Wählen Sie die Schaltfläche **[!UICONTROL Mit Quelle verbinden]** aus.
-1. Wenn Platform erfolgreich eine Verbindung zur Source hergestellt hat, wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus.
+1. Filtern Sie in der Platform-Benutzeroberfläche den [!UICONTROL Quellen]-Katalog nach **[!UICONTROL Cloud-Speicher]**
+1. Beachten Sie, dass unter der `...` praktische Links zur -Dokumentation vorhanden sind
+1. Klicken Sie im Feld Ihres bevorzugten Cloud-Speicheranbieters auf die Schaltfläche **[!UICONTROL Konfigurieren]**.
+   ![Konfigurieren auswählen](assets/ingestion-offline-selectFTP.png)
+1. **[!UICONTROL Authentifizierung]** ist der erste Schritt. Geben Sie den Namen für Ihr Konto ein, z. B. `Luma's FTP Account` und Ihre Authentifizierungsdetails. Dieser Schritt sollte für alle Cloud-Speicherquellen ziemlich ähnlich sein, obwohl die Felder leicht variieren können. Nachdem Sie die Authentifizierungsdetails für ein Konto eingegeben haben, können Sie sie für andere Quellverbindungen wiederverwenden, die möglicherweise andere Daten in unterschiedlichen Zeitplänen als andere Dateien im selben Konto senden
+1. Klicken Sie auf die **[!UICONTROL Mit Quelle verbinden]**
+1. Wenn Platform erfolgreich eine Verbindung zur Source hergestellt hat, klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
    ![Authentifizierung bei der Quelle](assets/ingestion-offline-authentication.png)
 
 1. Im Schritt **[!UICONTROL Daten auswählen]** verwendet die Benutzeroberfläche Ihre Anmeldeinformationen, um den Ordner in Ihrer Cloud-Speicherlösung zu öffnen
 1. Wählen Sie die Dateien aus, die Sie aufnehmen möchten, z. B. `luma-offline-purchases.json`
-1. Wählen Sie als **[!UICONTROL Datenformat]** `XDM JSON` aus.
-1. Anschließend können Sie eine Vorschau der JSON-Struktur und der Beispieldaten in Ihrer Datei anzeigen
-1. Wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus
-   ![Wählen Sie Ihre Datendatei(en) aus](assets/ingestion-offline-selectData.png)
+1. Wählen Sie als **[!UICONTROL Datenformat]** die Option `XDM JSON`
+1. Sie können dann eine Vorschau der JSON-Struktur und der Beispieldaten in Ihrer Datei anzeigen
+1. Klicken Sie auf **[!UICONTROL Weiter]**-Schaltfläche
+   ![Datendatei(en) auswählen](assets/ingestion-offline-selectData.png)
 
-1. Wählen Sie im Schritt **[!UICONTROL Zuordnung]** Ihren `Luma Offline Purchase Events Dataset` aus und wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus. Beachten Sie in der Nachricht, dass es keinen Zuordnungsschritt gibt, durch den das Quellfeld dem Zielfeld zugeordnet wird, da es sich bei den erfassten Daten um eine JSON-Datei handelt. JSON-Daten müssen sich bereits in XDM befinden. Wenn Sie eine CSV-Datei erfassen, sehen Sie in diesem Schritt die vollständige Zuordnungs-Benutzeroberfläche:
-   ![Wählen Sie Ihren Datensatz aus](assets/ingestion-offline-mapping.png)
-1. Wählen Sie im Schritt **[!UICONTROL Planung]** die Häufigkeit aus, mit der Sie Daten aus der Source erfassen möchten. Nehmen Sie sich einen Moment Zeit, um sich die Optionen anzusehen. Wir werden nur eine einmalige Erfassung durchführen. Lassen Sie also die **[!UICONTROL Häufigkeit]** auf **[!UICONTROL Einmal]** stehen und wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus:
-   ![Planen Sie Ihren Datenfluss](assets/ingestion-offline-scheduling.png)
-1. Im Schritt **[!UICONTROL Datenfluss-Detail]** können Sie einen Namen für Ihren Datenfluss auswählen, eine optionale Beschreibung eingeben, die Fehlerdiagnose einschalten und die partielle Erfassung aktivieren. Behalten Sie die Einstellungen bei und wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus:
-   ![Details Ihres Datenflusses bearbeiten](assets/ingestion-offline-detail.png)
-1. Im Schritt **[!UICONTROL Überprüfen]** können Sie alle Einstellungen zusammen überprüfen und sie entweder bearbeiten oder die Schaltfläche **[!UICONTROL Beenden]** auswählen
+1. Wählen **[!UICONTROL im Schritt]** Zuordnung“ Ihre `Luma Offline Purchase Events Dataset` aus und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**. Beachten Sie in der Nachricht, dass es keinen Zuordnungsschritt gibt, bei dem wir das Quellfeld einem Zielfeld zuordnen, da die Daten, die wir aufnehmen, eine JSON-Datei sind. JSON-Daten müssen bereits in XDM vorhanden sein. Wenn Sie eine CSV-Datei erfassen, wird in diesem Schritt die vollständige Benutzeroberfläche der Zuordnung angezeigt:
+   ![Datensatz auswählen](assets/ingestion-offline-mapping.png)
+1. Im Schritt **[!UICONTROL Planung]** wählen Sie die Häufigkeit, mit der Sie Daten aus der Source erneut aufnehmen möchten. Nehmen Sie sich einen Moment Zeit, um sich die Optionen anzusehen. Wir führen nur eine einmalige Aufnahme durch. Lassen Sie also die **[!UICONTROL Häufigkeit]** auf **[!UICONTROL Einmal]** und wählen Sie die Schaltfläche **[!UICONTROL Weiter]**:
+   ![Planen des Datenflusses](assets/ingestion-offline-scheduling.png)
+1. Im Schritt **[!UICONTROL Datenflussdetails]** können Sie einen Namen für Ihren Datenfluss auswählen, eine optionale Beschreibung eingeben, die Fehlerdiagnose aktivieren und eine partielle Aufnahme durchführen. Behalten Sie die Einstellungen bei und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**:
+   ![Bearbeiten der Details Ihres Datenflusses](assets/ingestion-offline-detail.png)
+1. Im Schritt **[!UICONTROL Überprüfen]** können Sie alle Ihre Einstellungen zusammen überprüfen und entweder bearbeiten oder auf die Schaltfläche **[!UICONTROL Beenden]** klicken
 1. Nach dem Speichern landen Sie auf einem Bildschirm wie diesem:
-   ![Complete](assets/ingestion-offline-complete.png)
+   ![Abschließen](assets/ingestion-offline-complete.png)
 
-### Daten validieren
+### Validieren der Daten
 
-Überprüfen Sie nach dem Hochladen des Batches den Upload durch Vorschau des Datensatzes.
+Wenn der Batch hochgeladen wurde, überprüfen Sie den Upload, indem Sie eine Vorschau des Datensatzes anzeigen.
 
-Sie sollten die drei Treffer in Ihrem Webhook sehen.
+Sie sollten die drei Treffer für Ihren Webhook sehen.
 
-Suchen Sie das Profil mit dem Wert `5625458` erneut im Namespace `loyaltyId` , um zu sehen, ob in ihrem Profil Kaufereignisse vorhanden sind. Sie sollten einen Kauf sehen. Sie können die Details des Kaufs untersuchen, indem Sie **[!UICONTROL JSON anzeigen]** auswählen:
+Suchen Sie erneut das Profil mit dem Wert `5625458` im `loyaltyId`-Namespace, um festzustellen, ob es Kaufereignisse in seinem Profil gibt. Es sollte nur ein Kauf angezeigt werden. Sie können die Details des Kaufs einsehen, indem Sie auf **[!UICONTROL JSON anzeigen]** klicken:
 
 ![Kaufereignis im Profil](assets/ingestion-offline-eventInProfile.png)
 
 ## ETL-Tools
 
-Adobe arbeitet mit mehreren ETL-Anbietern zusammen, um die Datenerfassung in Experience Platform zu unterstützen. Aufgrund der Vielzahl von Drittanbietern wird ETL in diesem Tutorial nicht behandelt. Sie können jedoch einige dieser Ressourcen lesen:
+Adobe arbeitet mit mehreren ETL-Anbietern zusammen, um die Datenaufnahme in Experience Platform zu unterstützen. Aufgrund der Vielzahl von Drittanbietern wird ETL in diesem Tutorial nicht behandelt. Sie können jedoch gerne einige dieser Ressourcen lesen:
 
 * [Entwickeln von ETL-Integrationen für Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* [Informatica Adobe Experience Platform Connector-Seite auf Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Informatica-Dokumentation des Adobe Experience Platform Connectors](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
+* [Informatica Adobe Experience Platform Connector-Seite auf Adobe Exchange ](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
+* [Informatica-Dokumentation zum Adobe Experience Platform-Connector](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Weitere Ressourcen
 
-* [Dokumentation zur Batch-Erfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
+* [Dokumentation zur Batch-Aufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [Referenz zur Batch-Aufnahme-API](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
-Jetzt sollen [Stream-Daten mit dem Web SDK](ingest-streaming-data.md)
+Jetzt lassen Sie uns [Daten mit der Web-SDK streamen](ingest-streaming-data.md)

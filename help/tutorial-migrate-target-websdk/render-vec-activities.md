@@ -1,5 +1,5 @@
 ---
-title: Rendern von VEC-Aktivitäten - Migrieren von Target von at.js 2.x zum Web SDK
+title: Rendering VEC-Aktivitäten - Migrieren von Target aus at.js 2.x nach Web SDK
 description: Erfahren Sie, wie Sie Visual Experience Composer-Aktivitäten mit einer Web SDK-Implementierung von Adobe Target abrufen und anwenden.
 exl-id: bbbbfada-e236-44de-a7bf-5c63ff840db4
 source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
@@ -9,40 +9,40 @@ ht-degree: 0%
 
 ---
 
-# Render Adobe Target Visual Experience Composer (VEC)-Aktivitäten
+# Rendern von Adobe Target Visual Experience Composer (VEC)-Aktivitäten
 
-Target-Aktivitäten werden entweder mit dem Visual Experience Composer (VEC) oder dem formularbasierten Composer eingerichtet. Das Platform Web SDK kann VEC-basierte Aktivitäten wie at.js abrufen und auf die Seite anwenden. Für diesen Teil der Migration werden Sie:
+Target-Aktivitäten werden entweder mit dem Visual Experience Composer (VEC) oder dem formularbasierten Composer eingerichtet. Die Platform Web SDK kann VEC-basierte Aktivitäten wie at.js abrufen und auf die Seite anwenden. Für diesen Teil der Migration werden Sie:
 
-* Installieren der Visual Editing Helper-Browsererweiterung
-* Führen Sie einen `sendEvent` -Aufruf mit dem Platform Web SDK aus, um Aktivitäten anzufordern.
-* Aktualisieren Sie alle Verweise Ihrer at.js-Implementierung, die `getOffers()` zur Ausführung einer Target `pageLoad` -Anfrage verwenden.
+* Installieren der Browser-Erweiterung Visual Editing Helper
+* Führen Sie einen `sendEvent`-Aufruf mit der Platform Web SDK aus, um Aktivitäten anzufordern.
+* Aktualisieren Sie alle Verweise aus Ihrer at.js-Implementierung, die `getOffers()` zum Ausführen einer Target `pageLoad`-Anfrage verwenden.
 
-## Visual Editing Helper-Browsererweiterung
+## Browser-Erweiterung Visual Editing Helper
 
-Mit der Adobe Experience Cloud Visual Editing Helper-Browsererweiterung für Google Chrome können Sie Websites zuverlässig im Adobe Target Visual Experience Composer (VEC) laden, um schnell und einfach Web-Erlebnisse zu erstellen und zu überprüfen.
+Mit der Browser-Erweiterung Visual Editing Helper von Adobe Experience Cloud für Google Chrome können Sie Websites zuverlässig innerhalb des Adobe Target Visual Experience Composer (VEC) laden, um Web-Erlebnisse schnell zu erstellen und zu prüfen.
 
-Die Browsererweiterung &quot;Visual Editing Helper&quot;funktioniert mit Websites, die at.js oder das Platform Web SDK verwenden.
+Die Browser-Erweiterung Visual Editing Helper kann für Websites verwendet werden, die at.js oder Platform Web SDK verwenden.
 
-### Visual Editing Helper abrufen und installieren
+### Abrufen und Installieren des Visual Editing Helper
 
-1. Navigieren Sie zur Browsererweiterung [Adobe Experience Cloud Visual Editing Helper im Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
-1. Klicken Sie auf Hinzufügen zu **Chrome** > **Erweiterung hinzufügen**.
+1. Navigieren Sie zur Browser-Erweiterung [Adobe Experience Cloud Visual Editing Helper im Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
+1. Klicken Sie auf Zu **Chrome hinzufügen** > **Erweiterung hinzufügen**.
 1. Öffnen Sie den VEC in Target.
-1. Um die Erweiterung zu verwenden, klicken Sie in der Symbolleiste des Chrome-Browsers im VEC- oder QA-Modus auf das Symbol für die Visual Editing Helper-Browsererweiterung ![Symbol für die visuelle Bearbeitungserweiterung](assets/VEC-Helper.png){zoomable="yes"}.
+1. Um die Erweiterung zu verwenden, klicken Sie auf das Symbol der Browser-Erweiterung Visual Editing Helper ![Visual Editing-Erweiterungssymbol](assets/VEC-Helper.png){zoomable="yes"} in der Symbolleiste Ihres Chrome-Browsers, während Sie sich im VEC- oder QA-Modus befinden.
 
-Der Visual Editing Helper wird automatisch aktiviert, wenn eine Website in Target VEC geöffnet wird, um die Bearbeitung zu unterstützen. Die Erweiterung verfügt über keine bedingten Einstellungen. Die Erweiterung verarbeitet alle Einstellungen automatisch, einschließlich der SameSite-Cookie-Einstellungen.
+Die Visual Editing Helper wird automatisch aktiviert, wenn eine Website im VEC von Target geöffnet wird, um die Inhaltserstellung zu unterstützen. Die Erweiterung verfügt über keine bedingten Einstellungen. Die Erweiterung verarbeitet alle Einstellungen automatisch, einschließlich der SameSite-Cookie-Einstellungen.
 
-Weitere Informationen zur Erweiterung [Visual Editing Helper Extension](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) und zur Fehlerbehebung beim Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html) finden Sie in der entsprechenden Dokumentation.[
+Weitere Informationen zur Erweiterung „Visual Editing Helper[ und zur Fehlerbehebung Visual Experience ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) finden Sie in [ entsprechenden Dokumentation ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
 
 >[!IMPORTANT]
 >
->Die neue Erweiterung [Visual Editing Helper Extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) ersetzt die vorherige Browsererweiterung [Target VEC Helper Browser ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Wenn die ältere VEC Helper-Erweiterung installiert ist, sollte sie vor Verwendung der Visual Editing Helper-Erweiterung entfernt oder deaktiviert werden.
+>Die neue [Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)-Erweiterung ersetzt die vorherige [Target VEC Helper-Browser-Erweiterung](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Wenn die ältere VEC Helper-Erweiterung installiert ist, sollte sie entfernt oder deaktiviert werden, bevor die Visual Editing Helper-Erweiterung verwendet wird.
 
 ## Inhalt automatisch anfordern und anwenden
 
-Nachdem das Platform Web SDK auf der Seite konfiguriert wurde, können Sie Inhalte von Target anfordern. Im Gegensatz zu at.js, das so konfiguriert werden kann, dass beim Laden der Bibliothek automatisch Inhalte angefordert werden, erfordert das Platform Web SDK die explizite Ausführung eines Befehls.
+Nachdem Platform Web SDK auf der Seite konfiguriert wurde, können Sie Inhalte von Target anfordern. Im Gegensatz zu at.js, das so konfiguriert werden kann, dass beim Laden der Bibliothek automatisch Inhalte angefordert werden, erfordert die Platform Web SDK, dass Sie explizit einen Befehl ausführen.
 
-Wenn für Ihre at.js-Implementierung die Einstellung `pageLoadEnabled` auf `true` gesetzt ist, die die automatische Wiedergabe von VEC-basierten Aktivitäten ermöglicht, führen Sie mit dem Platform Web SDK den folgenden `sendEvent`-Befehl aus:
+Wenn bei Ihrer at.js-Implementierung die `pageLoadEnabled` auf `true` festgelegt ist, was das automatische Rendern von VEC-basierten Aktivitäten ermöglicht, führen Sie den folgenden `sendEvent`-Befehl mit Platform Web SDK aus:
 
 >[!BEGINTABS]
 
@@ -56,9 +56,9 @@ alloy("sendEvent", {
 
 >[!TAB Tags]
 
-Verwenden Sie in Tags den Aktionstyp [!UICONTROL Ereignis senden] , wobei die Option [!UICONTROL visuelle Personalisierungsentscheidungen rendern] ausgewählt ist:
+Verwenden Sie in Tags den Aktionstyp [!UICONTROL Ereignis senden] mit aktivierter Option [!UICONTROL Visuelle Personalisierungsentscheidungen rendern]:
 
-![Senden eines Ereignisses mit in Tags ausgewählten visuellen Personalisierungsentscheidungen &quot;Rendern&quot;](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
+![Senden eines Ereignisses mit in Tags ausgewählten visuellen Personalisierungsentscheidungen rendern](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -68,9 +68,9 @@ When the Platform Web SDK renders an activity to the page with `renderDecisions`
 ![Platform Web SDK call incrementing a Target impression](assets/target-impression-call.png){zoomable="yes"}
 -->
 
-## Anfordern und Anwenden von Inhalten auf Anforderung
+## Anfordern und Anwenden von Inhalten bei Bedarf
 
-Einige Target-Implementierungen erfordern eine benutzerdefinierte Verarbeitung von VEC-Angeboten, bevor sie auf die Seite angewendet werden. Oder sie fordern mehrere Orte in einem einzelnen Aufruf an. In einer at.js-Implementierung kann dies durch Festlegen von `pageLoadEnabled` auf `false` und Ausführen einer `pageLoad` -Anfrage mithilfe der `getOffers()` -Funktion erfolgen.
+Einige Target-Implementierungen erfordern eine benutzerdefinierte Verarbeitung von VEC-Angeboten, bevor sie auf die Seite angewendet werden. Oder sie fordern mehrere Standorte in einem einzigen Aufruf an. In einer at.js-Implementierung kann dies geschehen, indem `pageLoadEnabled` auf `false` gesetzt und die `getOffers()`-Funktion verwendet wird, um eine `pageLoad`-Anfrage auszuführen.
 
 +++ at.js-Beispiel mit `getOffers()` und `applyOffers()` zum manuellen Rendern von VEC-basierten Aktivitäten
 
@@ -87,13 +87,13 @@ then(response => adobe.target.applyOffers({ response: response }));
 
 +++
 
-Das Platform Web SDK weist kein bestimmtes `pageLoad` -Ereignis auf. Alle Anforderungen für Target-Inhalt werden mit der Option `decisionScopes` mit dem Befehl `sendEvent` gesteuert. Der Gültigkeitsbereich `__view__` dient dem Zweck der `pageLoad` -Anfrage.
+Die Platform Web-SDK verfügt über kein spezifisches `pageLoad`. Alle Anforderungen für Target-Inhalte werden mit der Option `decisionScopes` mit dem Befehl `sendEvent` gesteuert. Der `__view__` erfüllt den Zweck der `pageLoad`.
 
-+++ Ein entsprechender Platform Web SDK `sendEvent` -Ansatz:
++++ Ein gleichwertiger Ansatz für Platform Web SDK `sendEvent`:
 
-1. Führen Sie einen `sendEvent` -Befehl aus, der den Entscheidungsbereich `__view__` enthält.
-1. Anwenden des zurückgegebenen Inhalts auf die Seite mit dem Befehl `applyPropositions`
-1. Führen Sie einen `sendEvent` -Befehl mit dem Ereignistyp `decisioning.propositionDisplay` und Vorschlagsdetails aus, um eine Impression zu erhöhen.
+1. Führen Sie einen `sendEvent` Befehl aus, der den `__view__` Entscheidungsumfang enthält.
+1. Wenden Sie den zurückgegebenen Inhalt mit dem Befehl `applyPropositions` auf die Seite an
+1. Führen Sie einen `sendEvent` Befehl mit dem `decisioning.propositionDisplay` Ereignistyp und den Vorschlagsdetails aus, um eine Impression zu erhöhen
 
 ```Javascript
 alloy("sendEvent", {
@@ -128,19 +128,19 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->Es ist möglich, Änderungen, die im Visual Experience Composer vorgenommen wurden, durch [manuell zu rendern. ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) Die manuelle Wiedergabe von VEC-basierten Änderungen ist nicht üblich. Überprüfen Sie, ob Ihre at.js-Implementierung die Funktion `getOffers()` verwendet, um eine Target `pageLoad`-Anfrage manuell auszuführen, ohne den Inhalt mit `applyOffers()` auf die Seite anzuwenden.
+>Es ist möglich, [ in Visual Experience Composer ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) Änderungen manuell zu rendern. Das manuelle Rendern von VEC-basierten Änderungen ist nicht üblich. Überprüfen Sie, ob Ihre at.js-Implementierung die `getOffers()`-Funktion verwendet, um eine Target-`pageLoad`-Anfrage manuell auszuführen, ohne `applyOffers()` zum Anwenden des Inhalts auf die Seite zu verwenden.
 
-Das Platform Web SDK bietet Entwicklern eine große Flexibilität beim Anfordern und Rendern von Inhalten. Weitere Optionen und Details finden Sie in der [dedizierten Dokumentation zum Rendern personalisierter Inhalte](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) .
+Die Platform Web SDK bietet Entwicklern eine große Flexibilität beim Anfordern und Rendern von Inhalten. Weitere Informationen zu Optionen [ Details finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) Dokumentation zum Rendern personalisierter Inhalte .
 
 ## Implementierungsbeispiel
 
-Die grundlegende Platform Web SDK-Implementierung ist jetzt abgeschlossen.
+Die Implementierung von Platform Web SDK ist jetzt abgeschlossen.
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-JavaScript-Beispiel mit automatischem Target-Inhaltsrendering:
+JavaScript-Beispiel mit automatischem Rendering von Target-Inhalten:
 
 ```HTML
 <!doctype html>
@@ -205,7 +205,7 @@ JavaScript-Beispiel mit automatischem Target-Inhaltsrendering:
 
 >[!TAB Tags]
 
-Tags-Beispielseite mit automatischem Target-Inhaltsrendering:
+Beispielseite für Tags mit automatischem Rendering von Target-Inhalten:
 
 
 ```HTML
@@ -254,13 +254,13 @@ Fügen Sie in Tags die Adobe Experience Platform Web SDK-Erweiterung hinzu:
 Fügen Sie die gewünschten Konfigurationen hinzu:
 ![Konfigurieren der Migrationsoptionen für die Web SDK-Tag-Erweiterung](assets/tags-config-migration.png){zoomable="yes"}
 
-Erstellen Sie eine Regel mit der ausgewählten Aktion [!UICONTROL Ereignis senden] und [!UICONTROL visuelle Personalisierungsentscheidungen rendern] :
-![Ereignis mit in Tags ausgewählten Render-Personalisierungen senden](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
+Erstellen Sie eine Regel mit der Aktion [!UICONTROL Ereignis senden] und [!UICONTROL Visuelle Personalisierungsentscheidungen rendern] ausgewählt:
+![Senden eines Ereignisses mit in Tags ausgewählten Render-Personalisierungen](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 
 >[!ENDTABS]
 
-Erfahren Sie als Nächstes, wie Sie formularbasierte Target-Aktivitäten anfordern und rendern [.](render-form-based-activities.md)
+Erfahren Sie als Nächstes, wie Sie formularbasierte Target[Aktivitäten anfordern und rendern](render-form-based-activities.md).
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Target-Migration von at.js zum Web SDK. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.

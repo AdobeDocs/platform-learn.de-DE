@@ -1,24 +1,25 @@
 ---
-title: Validieren von Target-Implementierungen der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
-description: Erfahren Sie, wie Sie Aktivitäten validieren und eine Adobe Target-Implementierung mit der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung debuggen.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: Validieren von Target-Implementierungen mit der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
+description: Erfahren Sie, wie Sie Aktivitäten validieren und eine Adobe Target-Implementierung mithilfe der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung debuggen.
+exl-id: edc6e25a-58d7-4145-97c3-bf48e980914f
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
 
 ---
 
-# Validieren der Implementierung der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
+# Validieren der Implementierung der Adobe Journey Optimizer Decisioning Mobile-Erweiterung
 
-Nachdem Sie Ihre Target-Implementierung von der Target-Erweiterung in die Decisioning-Erweiterung migriert haben, ist es wichtig, alles ordnungsgemäß zu validieren, bevor Sie Änderungen in Ihrer Produktions-App veröffentlichen. Adobe empfiehlt Folgendes, das auf dieser Seite ausführlich beschrieben wird:
+Nachdem Sie Ihre Target-Implementierung von der Target-Erweiterung zur Decisioning-Erweiterung migriert haben, müssen Sie überprüfen, ob alles ordnungsgemäß funktioniert, bevor Sie Änderungen an Ihrer Produktions-App veröffentlichen. Adobe empfiehlt Folgendes. Ausführliche Informationen finden Sie auf dieser Seite:
 
-* Führen Sie eine technische Validierung durch, um sicherzustellen, dass die grundlegenden Implementierungs- und Platform Mobile SDK-Anforderungen und -Antworten korrekt aussehen.
+* Führen Sie eine technische Validierung durch, um sicherzustellen, dass die Basisimplementierung und die SDK-Anfragen und -Antworten von Platform Mobile korrekt aussehen
 * Sicherstellen, dass Target-Aktivitäten ordnungsgemäß bereitgestellt und gerendert werden
-* Überprüfen, ob die Berichterstellung ordnungsgemäß funktioniert
-* Besuchen Sie Zielgruppen und Profilskripte erneut, um sicherzustellen, dass sie mit dem Platform Mobile SDK und der Optimie-Erweiterung kompatibel sind.
-* Sicherstellen, dass Integrationen mit Adobe- oder Drittanbieteranwendungen ordnungsgemäß funktionieren
+* Überprüfen, ob das Reporting ordnungsgemäß funktioniert
+* Gehen Sie zu Zielgruppen und Profilskripten zurück, um sicherzustellen, dass sie mit Platform Mobile SDK und der Erweiterung Optimime kompatibel sind
+* Sicherstellen, dass Integrationen mit Adobe- oder Drittanbieterprogrammen ordnungsgemäß funktionieren
 
-Jede Target-Implementierung unterscheidet sich je nach verwendeter Site-Architektur und -Funktionen. Sie können die folgenden Tabellen als Ausgangspunkt verwenden und Elemente hinzufügen, die für Ihre Implementierung spezifisch sind. Auf der [Debugging-Seite](debugging.md) dieses Tutorials finden Sie Tools, die Sie zur Unterstützung dieser Validierung verwenden können.
+Jede Target-Implementierung unterscheidet sich je nach Site-Architektur und verwendeten Funktionen. Sie können die folgenden Tabellen als Ausgangspunkt verwenden und alle Elemente hinzufügen, die für Ihre Implementierung eindeutig sind. Auf [ Seite „Debugging](debugging.md) dieses Tutorials werden Tools angezeigt, die Sie bei dieser Validierung verwenden können.
 
 ## Technische Validierung
 
@@ -29,12 +30,12 @@ Jede Target-Implementierung unterscheidet sich je nach verwendeter Site-Architek
 
 ## Aktivitätsbereitstellung und -rendering
 
-| Validierungselement | Hinweise |
+| Validierungselement | Notizen |
 | | |
 
 ## Reporting
 
-| Validierungselement | Hinweise |
+| Validierungselement | Notizen |
 | | |
 
 ## Zielgruppen und Profilskripte
@@ -43,21 +44,21 @@ Jede Target-Implementierung unterscheidet sich je nach verwendeter Site-Architek
 |---|---|
 | | |
 
-## Integrationen mit Adobe-Applikationen
+## Integrationen mit Adobe-Anwendungen
 
-| Validierungselement | Hinweise |
+| Validierungselement | Notizen |
 | | |
 
-## Integrationen mit Drittanbieteranwendungen
+## Integrationen mit Anwendungen von Drittanbietern
 
 | Validierungselement | Anmerkungen |
 |---|---|
 | | |
 
-Nachdem Sie die obigen Validierungsschritte ausgeführt haben, können Sie sicher sein, dass die Platform Mobile SDK-Implementierung mit der Decisioning-Erweiterung für den Produktionsfortschritt bereit ist.
+Nachdem Sie die oben genannten Validierungsschritte ausgeführt haben, können Sie sich darauf verlassen, dass die SDK-Implementierung von Platform Mobile mit der Decisioning-Erweiterung bereit für den Wechsel zur Produktionsumgebung ist.
 
-Als Nächstes erfahren Sie, wie Sie mit dem Platform Web SDK](debugging.md) eine Fehlerbehebung bei einer Target-Implementierung durchführen.[
+Erfahren Sie als Nächstes, wie [ eine Target-Implementierung mithilfe von Platform Web SDK ](debugging.md).
 
 >[!NOTE]
 >
->Wir unterstützen Sie bei der erfolgreichen Migration Ihrer mobilen Target-Erweiterung von der Target-Erweiterung zur Decisioning-Erweiterung. Wenn Sie bei Ihrer Migration auf Probleme stoßen oder der Eindruck haben, dass wichtige Informationen in diesem Handbuch fehlen, teilen Sie uns dies mit, indem Sie in [dieser Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.

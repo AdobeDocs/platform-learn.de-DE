@@ -3,7 +3,8 @@ title: Einrichten
 description: Einrichten der AEP-Instanz
 doc-type: multipage-overview
 hide: false
-source-git-commit: c0649aeacdce00e09c993f2130de3423efc352fa
+exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
+source-git-commit: 73c7e24e7c66053f6babd64cea1856309be377a0
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 5%
@@ -14,243 +15,243 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->Diese Seite ist nur für Systemadministratorrollen vorgesehen. Sie benötigen Systemadministratorzugriffsrechte für Ihre spezifische Instanz, um die folgenden Schritte ausführen zu können. Wenn Sie kein Systemadministrator in Ihrer Adobe Experience Cloud-Organisation sind, wenden Sie sich an Ihren Systemadministrator und bitten Sie ihn um Genehmigung und Hilfe, bevor Sie mit einem der folgenden Schritte fortfahren.
+>Diese Seite ist nur für Systemadministratorrollen vorgesehen. Sie benötigen Systemadministrator-Zugriffsrechte für Ihre spezifische Instanz, um die folgenden Schritte ausführen zu können. Wenn Sie kein Systemadministrator in Ihrer Adobe Experience Cloud-Organisation sind, wenden Sie sich an Ihren Systemadministrator und bitten Sie ihn um seine Genehmigung und Hilfe, bevor Sie mit einem der folgenden Schritte fortfahren.
 
 ## Übersicht
 
-Um alle diese Tutorials praxisnah zu nutzen, müssen die folgenden Adobe Experience Cloud-Anwendungen in Ihrer IMS-Organisation bereitgestellt werden:
+Um alle diese Tutorials praktisch nutzen zu können, müssen die folgenden Adobe Experience Cloud-Programme in Ihrer IMS-Organisation bereitgestellt werden:
 
-- Adobe Echtzeit-Kundendatenplattform
+- Adobe Real-Time CDP
 - Adobe Experience Platform – Datenerfassung
 - Adobe Journey Optimizer
 - Customer Journey Analytics
 - Data Distiller
 - Komposition föderierter Zielgruppen
 
-Wenn für Ihre IMS-Organisation kein bestimmter Anwendungsdienst bereitgestellt wurde, können Sie diese spezifische Übung nicht direkt durchführen.
+Wenn für Ihre IMS-Organisation kein bestimmter Programm-Service bereitgestellt wurde, können Sie diese spezifische Übung nicht praktisch durchführen.
 
 ## Sandbox erstellen
 
-Um das Tutorial in Ihrer eigenen AEP-Instanz durchzugehen, ist es ratsam, zunächst eine neue Entwicklungs-Sandbox einzurichten. Um eine neue Sandbox zu erstellen, gehen Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform), gehen Sie zu Sandboxes und gehen Sie dann zu **Durchsuchen**. Klicken Sie auf **Sandbox erstellen**.
+Um das Tutorial in Ihrer eigenen AEP-Instanz zu durchlaufen, empfiehlt es sich, zunächst eine neue Entwicklungs-Sandbox einzurichten. Um eine neue Sandbox zu erstellen, gehen Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform), gehen Sie zu Sandboxes und dann zu **Durchsuchen**. Klicken Sie **Sandbox erstellen**.
 
-![Sandbox erstellen](./assets/images/sandbox1.png)
+![Erstellen einer Sandbox](./assets/images/sandbox1.png)
 
 Erstellen Sie Ihre Sandbox wie folgt:
 
-- Typ: **Entwicklung**
+- Typ: **development**
 - Name: **aep-tutorial**
 - Titel: **AEP-Tutorial**
 
 Klicken Sie auf **Erstellen**.
 
-![Sandbox erstellen](./assets/images/sandbox2.png)
+![Erstellen einer Sandbox](./assets/images/sandbox2.png)
 
 Ihre Sandbox wird jetzt erstellt. Nach ein paar Minuten wirst du das sehen.
 
-![Sandbox erstellen](./assets/images/sandbox3.png)
+![Erstellen einer Sandbox](./assets/images/sandbox3.png)
 
 ## Berechtigungen einrichten
 
-Wechseln Sie zu **Berechtigungen** und gehen Sie dann zu **Rollen**.
+Gehen Sie zu **Berechtigungen** und dann zu **Rollen**.
 
-Klicken Sie auf , um die spezifische **Rolle** zu öffnen, die von den Lernenden verwendet wird, die dieses Tutorial durchlaufen werden. Klicken Sie auf **Rolle erstellen**.
+Klicken Sie hier, um die spezifische **Rolle** zu öffnen, die von den Lernenden verwendet wird, die dieses Tutorial durchlaufen. Klicken Sie **Rolle erstellen**.
 
-![Sandbox erstellen](./assets/images/perm1.png)
+![Erstellen einer Sandbox](./assets/images/perm1.png)
 
 Geben Sie Ihrer Rolle einen Namen wie **AEP-Tutorial** und klicken Sie auf **Bestätigen**.
 
-![Sandbox erstellen](./assets/images/perm2.png)
+![Erstellen einer Sandbox](./assets/images/perm2.png)
 
-Wählen Sie im Dropdown-Menü **Sandboxes** die soeben erstellte Sandbox aus und stellen Sie sicher, dass alle anderen Sandboxes entfernt werden (entfernen Sie auch **Prod**).
+Wählen Sie im Dropdown **Menü** Sandboxes“ die soeben erstellte Sandbox aus und entfernen Sie alle anderen Sandboxes (auch &quot;**&quot;**).
 
-![Sandbox erstellen](./assets/images/perm3.png)
+![Erstellen einer Sandbox](./assets/images/perm3.png)
 
-Fügen Sie die verschiedenen Ressourcen hinzu und legen Sie Berechtigungen fest. Stellen Sie sicher, dass keine Berechtigungen für **Sandbox-Administration** hinzugefügt werden.
+Fügen Sie die verschiedenen Ressourcen hinzu und legen Sie Berechtigungen fest. Bitte stellen Sie sicher, dass Sie keine Berechtigungen für **Sandbox-Administration** hinzufügen.
 
-![Sandbox erstellen](./assets/images/perm4.png)
+![Erstellen einer Sandbox](./assets/images/perm4.png)
 
 Fügen Sie wie angegeben weitere Ressourcen hinzu und legen Sie Berechtigungen fest.
 
-![Sandbox erstellen](./assets/images/perm5.png)
+![Erstellen einer Sandbox](./assets/images/perm5.png)
 
-Fügen Sie wie angegeben weitere Ressourcen hinzu und legen Sie Berechtigungen fest. Klicken Sie auf **Speichern**. Klicken Sie dann auf **Close**.
+Fügen Sie wie angegeben weitere Ressourcen hinzu und legen Sie Berechtigungen fest. Klicken Sie auf **Speichern**. Klicken Sie dann auf **Schließen**.
 
-![Sandbox erstellen](./assets/images/perm6.png)
+![Erstellen einer Sandbox](./assets/images/perm6.png)
 
-## Einrichten von Adobe I/O
+## Setup-Adobe I/O
 
-Navigieren Sie zu
-[https://developer.adobe.com/console/integrations](https://developer.adobe.com/console/integrations). Stellen Sie sicher, dass Sie sich in der richtigen Instanz befinden. Klicken Sie auf **Neues Projekt erstellen**.
+Gehe zu
+[https://developer.adobe.com/console/integrations](https://developer.adobe.com/console/integrations). Stellen Sie sicher, dass Sie sich in der richtigen Instanz befinden. Klicken Sie **Neues Projekt erstellen**.
 
-![Sandbox erstellen](./assets/images/io1.png)
+![Erstellen einer Sandbox](./assets/images/io1.png)
 
-Klicken Sie auf **+ Zum Projekt hinzufügen** und dann auf **API**.
+Klicken Sie auf **+ Zum Projekt hinzufügen** dann auf **API**.
 
-![Sandbox erstellen](./assets/images/io2.png)
+![Erstellen einer Sandbox](./assets/images/io2.png)
 
-Klicken Sie auf **Adobe Experience Platform** und aktivieren Sie dann **Experience Platform-API**. Klicken Sie auf **Weiter**.
+Klicken Sie auf **Adobe Experience Platform** und aktivieren Sie dann die **Experience Platform-API**. Klicken Sie auf **Weiter**.
 
-![Sandbox erstellen](./assets/images/io3.png)
+![Erstellen einer Sandbox](./assets/images/io3.png)
 
-Verwenden Sie für den **Berechtigungsnamen** das **DSN AEP-Tutorial**. Klicken Sie auf **Weiter**.
+Für den **Berechtigungsnamen** verwenden Sie das **DSN AEP-Tutorial**. Klicken Sie auf **Weiter**.
 
-![Sandbox erstellen](./assets/images/io4.png)
+![Erstellen einer Sandbox](./assets/images/io4.png)
 
-Wählen Sie eines der verfügbaren Produktprofile aus. Dieses Produktprofil legt keine Berechtigungen für dieses Adobe I/O-Projekt fest. Dies wird in einem nächsten Schritt durchgeführt. Klicken Sie auf **Konfigurierte API speichern**.
+Wählen Sie eines der verfügbaren Produktprofile aus. Dieses Produktprofil bestimmt keine Berechtigungen für dieses Adobe I/O-Projekt. Dies wird in einem nächsten Schritt erfolgen. Klicken Sie auf **Konfigurierte API speichern**.
 
-![Sandbox erstellen](./assets/images/io5.png)
+![Erstellen einer Sandbox](./assets/images/io5.png)
 
-Klicken Sie auf **+ Zum Projekt hinzufügen** und dann erneut auf **API**.
+Klicken Sie auf **+ Zum Projekt hinzufügen** dann erneut auf **API**.
 
-![Sandbox erstellen](./assets/images/io6.png)
+![Erstellen einer Sandbox](./assets/images/io6.png)
 
-Klicken Sie auf **Adobe Experience Platform** und aktivieren Sie dann **Experience Platform Launch-API**. Klicken Sie auf **Weiter**.
+Klicken Sie auf **Adobe Experience Platform** und aktivieren Sie dann die **Experience Platform Launch-API**. Klicken Sie auf **Weiter**.
 
-![Sandbox erstellen](./assets/images/io7.png)
+![Erstellen einer Sandbox](./assets/images/io7.png)
 
 Klicken Sie auf **Weiter**.
 
-![Sandbox erstellen](./assets/images/io8.png)
+![Erstellen einer Sandbox](./assets/images/io8.png)
 
-Wählen Sie ein Produktprofil aus, das die Erstellung und Verwaltung von Datenerfassungseigenschaften ermöglicht. Klicken Sie auf **Konfigurierte API speichern**.
+Wählen Sie ein Produktprofil aus, das das Erstellen und Verwalten von Datenerfassungseigenschaften ermöglicht. Klicken Sie auf **Konfigurierte API speichern**.
 
-![Sandbox erstellen](./assets/images/io9.png)
+![Erstellen einer Sandbox](./assets/images/io9.png)
 
-Dann wirst du das sehen. Klicken Sie auf den aktuellen **Projekt XXX**-Namen.
+Sie werden es dann sehen. Klicken Sie auf den Namen des **Projekt XXX**.
 
-![Sandbox erstellen](./assets/images/io10.png)
+![Erstellen einer Sandbox](./assets/images/io10.png)
 
-Klicken Sie auf **Projekt bearbeiten**.
+Klicken Sie **Projekt bearbeiten**.
 
-![Sandbox erstellen](./assets/images/io11.png)
+![Erstellen einer Sandbox](./assets/images/io11.png)
 
 Geben Sie einen neuen **Projekttitel** ein, z. B. **DSN AEP-Tutorial**. Klicken Sie auf **Speichern**.
 
-![Sandbox erstellen](./assets/images/io12.png)
+![Erstellen einer Sandbox](./assets/images/io12.png)
 
-Ihr Adobe I/O-Projekt ist jetzt fertig.
+Ihr Adobe I/O-Projekt ist jetzt bereit.
 
 ## Adobe I/O-Projekt mit Rolle verknüpfen
 
-Wechseln Sie zu **Berechtigungen**, zu **Rollen** und klicken Sie dann auf die zuvor erstellte neue Rolle.
+Wechseln Sie zu **Berechtigungen**, zu **Rollen** und klicken Sie dann auf die neue Rolle, die Sie zuvor erstellt haben.
 
-![Sandbox erstellen](./assets/images/role1.png)
+![Erstellen einer Sandbox](./assets/images/role1.png)
 
-Wechseln Sie zu **API-Anmeldeinformationen**. Klicken Sie auf **+ API-Anmeldeinformationen hinzufügen**.
+Navigieren Sie zu **API-Anmeldeinformationen**. Klicken Sie auf **+ API-Anmeldeinformationen hinzufügen**.
 
-![Sandbox erstellen](./assets/images/role2.png)
+![Erstellen einer Sandbox](./assets/images/role2.png)
 
-Sie sehen dann die Adobe I/O-Berechtigung, die Sie im vorherigen Schritt erstellt haben. Wählen Sie es aus und klicken Sie auf **Speichern**.
+Anschließend werden die Adobe I/O-Anmeldedaten angezeigt, die Sie im vorherigen Schritt erstellt haben. Wählen Sie es aus und klicken Sie auf **Speichern**.
 
-![Sandbox erstellen](./assets/images/role3.png)
+![Erstellen einer Sandbox](./assets/images/role3.png)
 
-Ihr Adobe I/O-Projekt ist jetzt mit den erforderlichen Berechtigungen für den Zugriff auf Adobe Experience Platform-APIs eingerichtet.
+Ihr Adobe I/O-Projekt verfügt jetzt über die erforderlichen Berechtigungen, um auf Adobe Experience Platform-APIs zuzugreifen.
 
-![Sandbox erstellen](./assets/images/role4.png)
+![Erstellen einer Sandbox](./assets/images/role4.png)
 
 >[!IMPORTANT]
 >
->Sie müssen mindestens 10 Minuten warten, bevor Sie mit den nächsten Schritten in Demo System Next fortfahren.
+>Sie müssen mindestens 10 Minuten warten, bevor Sie mit den nächsten Schritten im Demo-System fortfahren.
 
-## Einrichten Ihrer Umgebung im Demo-System als Nächstes
+## Einrichten der Umgebung im Demosystem Weiter
 
-Wechseln Sie zu [https://dsn.adobe.com/tools/org-admin](https://dsn.adobe.com/tools/org-admin). Klicken Sie auf **+ Organisation hinzufügen**.
+Navigieren Sie zu [https://dsn.adobe.com/tools/org-admin](https://dsn.adobe.com/tools/org-admin). Klicken Sie auf **+ Organisation**.
 
-![Sandbox erstellen](./assets/images/dsnorg1.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg1.png)
 
 Füllen Sie die erforderlichen Felder aus:
 
 - Kennung der IMS-Organisation
 - Name
-- Mandantenkennung (keine **Unterstriche**)
+- Mandanten-ID (enthält keine **Unterstrich**)
 - Region
 
-Ihr Systemadministrator sollte Ihnen bei den Werten für diese Felder helfen können.
+Ihr Systemadministrator sollte Ihnen bei der Eingabe der Werte für diese Felder behilflich sein können.
 
 Klicken Sie auf **Speichern**.
 
-![Sandbox erstellen](./assets/images/dsnorg2.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg2.png)
 
-Ihre Umgebung wird jetzt Teil der Liste sein. Suchen Sie sie in der Liste und klicken Sie auf das Symbol **link** .
+Ihre Umgebung wird jetzt in der Liste aufgeführt. Suchen Sie ihn in der Liste und klicken Sie auf das Symbol **Link**.
 
-![Sandbox erstellen](./assets/images/dsnorg3.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg3.png)
 
-Jetzt müssen Sie die Werte eingeben, die Sie als Teil der Anmeldedaten Ihres Adobe I/O-Projekts erstellt haben. Sie finden hier **Client-ID**, **Client-Geheimnis** und **Perimeter**:
+Nun müssen Sie die Werte eingeben, die Sie im Rahmen der Anmeldedaten für Ihr Adobe I/O-Projekt erstellt haben. Sie finden **Client-ID**, **Client-Geheimnis** und **Bereiche** hier:
 
-![Sandbox erstellen](./assets/images/dsnorg4.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg4.png)
 
-**Technische Konto-ID**:
+**ID des technischen Kontos**:
 
-![Sandbox erstellen](./assets/images/dsnorg5.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg5.png)
 
-Kopieren Sie diese und fügen Sie sie hier ein. Klicken Sie auf **Speichern**.
+Kopieren Sie diese hier und fügen Sie sie ein. Klicken Sie auf **Speichern**.
 
-![Sandbox erstellen](./assets/images/dsnorg6.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg6.png)
 
 Ihre DSN-Umgebung ist jetzt korrekt eingerichtet.
 
-## Zugriff auf die DSN-Umgebung einrichten
+## Einrichten des Zugriffs auf die DSN-Umgebung
 
-Wechseln Sie zu [https://dsn.adobe.com/tools/environment-admin](https://dsn.adobe.com/tools/environment-admin). Wählen Sie die soeben erstellte IMS-Organisation aus, wählen Sie den Benutzer aus und klicken Sie auf **+ Zuweisen** unter **Sandboxes**.
+Navigieren Sie zu [https://dsn.adobe.com/tools/environment-admin](https://dsn.adobe.com/tools/environment-admin). Wählen Sie die soeben erstellte IMS-Organisation aus, wählen Sie Ihre Benutzerin bzw. Ihren Benutzer aus und klicken Sie dann unter **Sandboxes** auf **+**.
 
-![Sandbox erstellen](./assets/images/dsnorg7.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg7.png)
 
-Geben Sie den **Sandbox-Namen** ein, den Sie im ersten Schritt oben definiert haben. Sie sollte wie folgt aussehen:
+Geben Sie den **Sandbox-Namen** ein, den Sie im ersten Schritt oben definiert haben. Er sollte wie folgt aussehen:
 
 - Name: **aep-tutorial**
 
 Klicken Sie auf **Bestätigen**.
 
-![Sandbox erstellen](./assets/images/dsnorg8.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg8.png)
 
 Ihre Sandbox ist jetzt für den ausgewählten Benutzer verfügbar.
 
-![Sandbox erstellen](./assets/images/dsnorg9.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg9.png)
 
 ## DSN-Schnelleinrichtung
 
-Wechseln Sie zu [https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup). Öffnen Sie das Dropdown-Menü **Umgebung** und wählen Sie Ihre IMS-Organisation/Sandbox aus.
+Navigieren Sie zu [https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup). Öffnen Sie das **Umgebung** Dropdown-Menü und wählen Sie Ihre IMS-Organisation/Sandbox aus.
 
-![Sandbox erstellen](./assets/images/dsnorg10.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg10.png)
 
-Wählen Sie für **Konfiguration** die Option **Global v2.0**.
+Wählen **für** die Option **Global v2.0** aus.
 
-![Sandbox erstellen](./assets/images/dsnorg11.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg11.png)
 
-Scrollen Sie nach unten zu **Branche - Telco** und wählen Sie **Citi Signal - Advanced** aus.
+Scrollen Sie nach unten zu **Branche - Telco** und wählen Sie **Citi Signal - Erweitert** aus.
 
-![Sandbox erstellen](./assets/images/dsnorg12.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg12.png)
 
-Scrollen Sie nach oben und klicken Sie auf **Start**.
+Scrollen Sie nach oben und klicken Sie auf **Starten**.
 
-![Sandbox erstellen](./assets/images/dsnorg13.png)
+![Erstellen einer Sandbox](./assets/images/dsnorg13.png)
 
-Geben Sie einen **Titel** ein und klicken Sie auf **Start**.
+Geben Sie einen **Titel** ein und klicken Sie auf **Starten**.
 
-![Sandbox erstellen](./assets/images/dsnorg14.png)
-
->[!NOTE]
->
->Wenn keine standardmäßige Zusammenführungsrichtlinie in der Sandbox erstellt wurde, kann es zu Fehlern kommen. Warten Sie in diesem Fall entweder etwas länger, bis die Zusammenführungsrichtlinie automatisch erstellt wird, oder wechseln Sie manuell zu Adobe Experience Platform, zu Profile > Zusammenführungsrichtlinien und erstellen Sie eine neue standardmäßige Zusammenführungsrichtlinie.
-
-Dann sehen Sie den Fortschritt der laufenden Installation, die einige Minuten dauern wird.
-
-![Sandbox erstellen](./assets/images/dsnorg15.png)
-
-Sobald alles erfolgreich abgeschlossen ist, ist Ihre AEP-Instanz erfolgreich konfiguriert und kann von den Lernenden das Tutorial absolvieren.
+![Erstellen einer Sandbox](./assets/images/dsnorg14.png)
 
 >[!NOTE]
 >
->Der Schritt Datenimport wird vom Tutorial nicht verwendet. Wenn dieser Schritt also fehlschlägt, sollten Sie sich keine Gedanken machen und fortfahren.
+>Es können Fehler auftreten, wenn keine standardmäßige Zusammenführungsrichtlinie in der Sandbox erstellt wurde. Warten Sie in diesem Fall entweder etwas länger, bis die Zusammenführungsrichtlinie automatisch erstellt wird, oder gehen Sie manuell zu Adobe Experience Platform, zu Profile > Zusammenführungsrichtlinien und erstellen Sie eine neue standardmäßige Zusammenführungsrichtlinie.
 
-![Sandbox erstellen](./assets/images/dsnorg16.png)
+Sie sehen dann den Fortschritt der laufenden Installation, die einige Minuten dauern wird.
 
-Wechseln Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform), zu **Datensätze**. Sie sollten jetzt eine ähnliche Liste von Datensätzen sehen, die alle vom DSN-Schnellsetup erstellt wurden.
+![Erstellen einer Sandbox](./assets/images/dsnorg15.png)
 
-![Sandbox erstellen](./assets/images/dsnorg17.png)
+Sobald alles erfolgreich abgeschlossen ist, ist Ihre AEP-Instanz erfolgreich konfiguriert und bereit für Lernende, das Tutorial zu absolvieren.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investieren, um alles über Adobe Experience Platform und seine Anwendungen zu erfahren. Wenn Sie Fragen haben, möchten Sie allgemeine Rückmeldungen von Vorschlägen zu künftigen Inhalten teilen, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com** senden.
+>Der Schritt „Datenimport“ wird vom Tutorial nicht verwendet. Wenn dieser Schritt fehlschlägt, machen Sie sich keine Sorgen und setzen Sie den Vorgang fort.
 
-[Zu allen Modulen zurückkehren](./overview.md)
+![Erstellen einer Sandbox](./assets/images/dsnorg16.png)
+
+Wechseln Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform), zu **Datensätze**. Es sollte nun eine ähnliche Liste von Datensätzen angezeigt werden, die alle durch die DSN-Schnelleinrichtung erstellt wurden.
+
+![Erstellen einer Sandbox](./assets/images/dsnorg17.png)
+
+>[!NOTE]
+>
+>Vielen Dank, dass Sie sich Zeit genommen haben, um alles über Adobe Experience Platform und seine Programme zu erfahren. Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
+
+[Zurück zu „Alle Module“](./overview.md)

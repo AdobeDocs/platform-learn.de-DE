@@ -1,6 +1,6 @@
 ---
-title: Tag-Eigenschaft erstellen
-description: Erfahren Sie, wie Sie sich bei der Datenerfassungsoberfläche anmelden und eine Tag-Eigenschaft erstellen. Diese Lektion ist Teil des Tutorials zum Implementieren des Experience Cloud in Websites .
+title: Erstellen einer Tag-Eigenschaft
+description: Erfahren Sie, wie Sie sich bei der Datenerfassungsoberfläche anmelden und eine Tag-Eigenschaft erstellen. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 exl-id: f83d374a-a831-4598-b9d3-6f183224b589
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 54%
 
 ---
 
-# Tag-Eigenschaft erstellen
+# Erstellen einer Tag-Eigenschaft
 
 In dieser Lektion erstellen Sie Ihre erste Tag-Eigenschaft.
 
@@ -17,11 +17,11 @@ Eine Eigenschaft ist im Wesentlichen ein Container, den Sie bei der Bereitstellu
 
 ## Voraussetzungen
 
-Um die nächsten Lektionen abzuschließen, müssen Sie über die Berechtigung zum Entwickeln, Genehmigen, Publish, Verwalten von Erweiterungen und Verwalten von Umgebungen in Tags verfügen. Wenn Sie einen dieser Schritte nicht ausführen können, weil die Optionen in der Benutzeroberfläche nicht verfügbar sind, wenden Sie sich an Ihren Experience Cloud-Administrator, um den Zugriff anzufordern. Weitere Informationen zu Tag-Benutzerberechtigungen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de).
+Um die nächsten Lektionen abzuschließen, benötigen Sie die Berechtigung zum Entwickeln, Genehmigen, Publish, Verwalten von Erweiterungen und Verwalten von Umgebungen in Tags. Wenn Sie einen dieser Schritte nicht ausführen können, weil die Optionen in der Benutzeroberfläche nicht verfügbar sind, wenden Sie sich an Ihren Experience Cloud-Administrator, um den Zugriff anzufordern. Weitere Informationen zu Tag-Benutzerberechtigungen finden Sie unter [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de).
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
+>Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
 > * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
@@ -31,19 +31,19 @@ Um die nächsten Lektionen abzuschließen, müssen Sie über die Berechtigung zu
 
 Am Ende dieser Lektion können Sie:
 
-* Melden Sie sich bei der Benutzeroberfläche der Datenerfassung an
-* Neue Tag-Eigenschaft erstellen
+* Melden Sie sich bei der Datenerfassungs-Benutzeroberfläche an
+* Erstellen einer neuen Tag-Eigenschaft
 * Konfigurieren einer Tag-Eigenschaft
 
-## Navigieren Sie zur Datenerfassungsoberfläche
+## Wechseln zur Datenerfassungs-Oberfläche
 
 **So gelangen Sie zur Datenerfassung**
 
 1. Melden Sie sich bei [Adobe Experience Cloud](https://experiencecloud.adobe.com) an.
 
-1. Klicken Sie auf das Symbol ![Lösungsschalter](images/launch-solutionSwitcher.png) , um den App-Umschalter zu öffnen.
+1. Klicken Sie auf das ![Solution Switcher Icon](images/launch-solutionSwitcher.png), um den App Switcher zu öffnen
 
-1. Wählen Sie **[!UICONTROL Launch/Data Collection]** aus dem Menü ![Öffnen Sie den Lösungsschalter mithilfe des Symbols und klicken Sie auf &quot;Launch/Data Collection&quot;](images/launch-solutionSwitcherActivation.png)
+1. Wählen Sie **[!UICONTROL Launch/Datenerfassung]** aus dem Menü ![Öffnen Sie den Lösungsschalter mithilfe des Symbols und klicken Sie auf Launch/Datenerfassung](images/launch-solutionSwitcherActivation.png)
 
 Hierdurch sollte der Bildschirm `Tags Properties` angezeigt werden (wenn keine Eigenschaften im Konto erstellt wurden, ist dieser Bildschirm möglicherweise leer):
 
@@ -55,18 +55,18 @@ Eine Eigenschaft ist im Wesentlichen ein Container, den Sie bei der Bereitstellu
 
 **Erstellen einer Eigenschaft**
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neue Eigenschaft]**:
+1. Klicken Sie auf **[!UICONTROL Schaltfläche „Neue Eigenschaft]**:
 
    ![Klicken Sie auf „Neue Eigenschaft“](images/launch-addNewProperty.png)
 
 1. Benennen Sie Ihre Eigenschaft (z. B. `Luma Tutorial` oder `Luma Tutorial - Daniel`).
-1. Geben Sie `enablementadobe.com` als Domain ein, da dies die Domain ist, in der die Demosite „Luma“ gehostet wird. Obwohl das Feld &quot;Domäne&quot;erforderlich ist, funktioniert die Tag-Eigenschaft in jeder Domäne, in der sie implementiert ist. Der Hauptzweck dieses Felds ist die Vorbelegung von Menüpunkten im Regel-Builder.
-1. Erweitern Sie den Abschnitt **[!UICONTROL Erweiterte Optionen]** und aktivieren Sie das Kontrollkästchen auf **[!UICONTROL Regelkomponenten in Folge ausführen]** .
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]** .
+1. Geben Sie `enablementadobe.com` als Domain ein, da dies die Domain ist, in der die Demosite „Luma“ gehostet wird. Obwohl das Feld „Domain“ erforderlich ist, funktioniert die Tag-Eigenschaft in jeder Domain, in der sie implementiert ist. Der Hauptzweck dieses Felds ist die Vorbelegung von Menüpunkten im Regel-Builder.
+1. Erweitern Sie den **[!UICONTROL Erweiterte Optionen]** und aktivieren Sie das Kontrollkästchen **[!UICONTROL Regelkomponenten nacheinander ausführen]**
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**
 
    ![Eine neue Eigenschaft erstellen](images/launch-newProperty.png)
 
-Ihre neue Eigenschaft sollte auf der Eigenschaftsseite angezeigt werden. Beachten Sie, dass bei Aktivierung des Kontrollkästchens neben dem Eigenschaftsnamen die Optionen &quot;**[!UICONTROL Configure]**&quot;oder &quot;**[!UICONTROL Delete]**&quot;oberhalb der Eigenschaftsliste angezeigt werden. Klicken Sie auf den Namen Ihrer Eigenschaft (z. B. `Luma Tutorial`), um den `Overview` Bildschirm zu öffnen.
+Ihre neue Eigenschaft sollte auf der Eigenschaftsseite angezeigt werden. Beachten Sie, dass, wenn Sie das Kontrollkästchen neben dem Eigenschaftsnamen aktivieren, die Optionen für **[!UICONTROL Konfigurieren]** oder **[!UICONTROL Löschen]** oberhalb der Eigenschaftenliste angezeigt werden. Klicken Sie auf den Namen Ihrer Eigenschaft (z. B. `Luma Tutorial`), um den `Overview` Bildschirm zu öffnen.
 ![Klicken Sie auf den Namen der Eigenschaft, um sie zu öffnen](images/launch-openProperty.png)
 
-[Weiter mit &quot;Hinzufügen des Einbettungscodes&quot;>](add-embed-code.md)
+[Weiter „Fügen Sie den Einbettungs-Code hinzu“ >](add-embed-code.md)

@@ -19,64 +19,64 @@ ht-degree: 0%
 
 <!--5min-->
 
-_Erste Schritte mit Adobe Experience Platform für Datenarchitekten und Dateningenieure_ sind der perfekte Ausgangspunkt für die praktische Umsetzung von Experience Platform.
+_Erste Schritte mit Adobe Experience Platform für Datenarchitekten und Dateningenieure_ ist der perfekte Ausgangspunkt, um sich mit Experience Platform vertraut zu machen.
 
 
 <!--How do we address ETL-->
 
 ## Lernziele
 
-Für eine erfolgreiche Experience Platform-Implementierung müssen Datenarchitekten und Dateningenieure eng zusammenarbeiten. In diesem Tutorial lernen Sie die wichtigsten Aufgaben kennen, die von _beiden Rollen_ ausgeführt werden, damit Sie wissen, wie Sie mit der Implementierung von Platform für Ihr eigenes Unternehmen beginnen können. Sie werden durch Übungen geführt, die Ihnen die wichtigsten Begriffe, Funktionen, Oberflächen und APIs von Experience Platform vorstellen. Kunden von Adobe Experience Cloud-Anwendungen wie Real-time Customer Data Platform, Customer Journey Analytics und Journey Optimizer werden diesen Inhalt ebenfalls für nützlich halten, da Plattformdienste eine wichtige Grundlage für diese Anwendungen darstellen.
+Datenarchitekten und Dateningenieure müssen eng zusammenarbeiten, um eine erfolgreiche Experience Platform-Bereitstellung zu ermöglichen. In diesem praxisorientierten Tutorial lernen Sie die wichtigsten Aufgaben kennen, die von _beiden Rollen_ ausgeführt werden, damit Sie wissen, wie Sie Platform für Ihr eigenes Unternehmen implementieren können. Sie werden durch Übungen geführt, in denen Sie die wichtigsten Begriffe, Funktionen, Benutzeroberflächen und APIs von Experience Platform kennenlernen. Kunden von Adobe Experience Cloud-Programmen wie Real-time Customer Data Platform, Customer Journey Analytics und Journey Optimizer werden diese Inhalte ebenfalls nützlich finden, da Platform-Services eine wichtige Grundlage dieser Programme darstellen.
 
-![Adobe Experience Cloud-Marketing, die die in diesem Tutorial behandelten Platform-Dienste hervorhebt: Identität, Profil, Segmentierung, Aufnahme, Abfrage und Governance](assets/marketecture.png)
+![Adobe Experience Cloud-Marketing-Architektur mit Hervorhebung der in diesem Tutorial behandelten Platform-Services: Identität, Profil, Segmentierung, Aufnahme, Abfrage und Governance](assets/marketecture.png)
 
 Zu den Themen gehören:
 
 * Konfigurieren von Benutzerberechtigungen
 * Erstellen von Sandboxes
 * Einrichten eines Developer Console-Projekts und Verwenden der Platform-API
-* Datenmanagement, einschließlich Erstellen von Schemas, Datensätzen, Identitäten, Zusammenführungsrichtlinien und Data Governance
-* Datenerfassung mit Batch- und Streaming-Modus
-* Erfassen von Webdaten mit dem Adobe Experience Platform Web SDK
-* Echtzeit-Kundenprofile erstellen
-* Verwenden von Query Service zum Überprüfen von Daten und Extrahieren von Daten
-* Segmente erstellen
+* Daten-Management - einschließlich der Erstellung von Schemata, Datensätzen, Identitäten, Zusammenführungsrichtlinien und Data Governance
+* Datenaufnahme im Batch- und Streaming-Modus
+* Erfassen von Web-Daten mit Adobe Experience Platform Web SDK
+* Erstellen von Echtzeit-Kundenprofilen
+* Verwendung des Abfrage-Service zur Datenvalidierung und -extraktion
+* Erstellen von Segmenten
 
 ## Geschäftsszenario
 
-Adobe Experience Platform ist eine technische Plattform, mit der Sie Marketingziele erreichen können. Die geschäftlichen Anwendungsfälle sollten die Entwicklung und Implementierung der Technologie vorantreiben. Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Luma. Luma betreibt Ziegelsteine und Mörser in mehreren Ländern und verfügt über eine Online-Präsenz mit einer Website und mobilen Apps. Sie investieren in Adobe Experience Platform, um Loyalitäts-, CRM-, Web- und Offline-Kaufdaten in Echtzeit-Kundenprofile zu kombinieren und diese Profile zu aktivieren, um ihr Marketing auf die nächste Stufe zu bringen. Die Geschäftsziele von Luma stimmen möglicherweise nicht mit den Zielen Ihres Unternehmens überein, aber Sie sollten die praktischen Schritte in diesem Tutorial mit Ihren eigenen Geschäftszielen verknüpfen können.
+Adobe Experience Platform ist eine technische Plattform, mit der Sie Marketing-Ziele erreichen können. Die geschäftlichen Anwendungsfälle sollten bestimmen, wie Sie die Technologie entwerfen und implementieren. Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Luma. Luma betreibt stationäre Geschäfte in mehreren Ländern und unterhält zudem eine Online-Präsenz mit einer Website und mobilen Apps. Sie investieren in Adobe Experience Platform, um Treue-, CRM-, Web- und Offline-Kaufdaten in Echtzeit-Kundenprofilen zu kombinieren und diese Profile zu aktivieren, damit sie ihr Marketing auf die nächste Stufe bringen können. Die Geschäftsziele von Luma können mit den Zielen Ihres Unternehmens übereinstimmen oder nicht, aber Sie sollten in der Lage sein, die praktischen Schritte in diesem Tutorial mit Ihren eigenen Geschäftszielen zu verknüpfen.
 
 ## Voraussetzungen
 
-* Sie haben sich die [Einführung in die Adobe Experience Platform-Wiedergabeliste](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) auf dem Experience League angesehen und sind mit den Platform-Funktionen vertraut.
-* Sie haben Zugriff auf ein mit Adobe Experience Platform bereitgestelltes Konto (oder eine plattformbasierte Anwendung wie Real-Time CDP oder Journey Optimizer) und auf die Datenerfassung (früher Launch).
-* Sie sind Systemadministrator dieses Kontos oder können über eine [Berechtigung zum Konfigurieren von Benutzern](configure-permissions.md) für Sie verfügen.
+* Sie haben die [Einführung in die Adobe Experience Platform-Playlist](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) auf Experience League gesehen und sind mit den Funktionen von Platform vertraut
+* Sie haben Zugriff auf ein Konto, das mit Adobe Experience Platform (oder einem plattformbasierten Programm wie Real-Time CDP oder Journey Optimizer) und der Datenerfassung (früher Launch) bereitgestellt wurde.
+* Sie sind Systemadministrator dieses Kontos oder können über eine ([ Benutzerberechtigungen) ](configure-permissions.md).
 
 ## Verwenden dieses Tutorials
 
-In diesem Tutorial werden Aufgaben für Dateningenieure und Datenarchitekten kombiniert. Da es sich um ein Tutorial auf Einführungsebene handelt, sollten Sie die Aufgaben für beide Rollen ausführen können. Da viele der Lektionen auf dem aufbauen, was in früheren Lektionen implementiert wurde, sollten Sie die Lektionen in der richtigen Reihenfolge durchlaufen. Ich werde herausfinden, welche Lektionen übersprungen werden können.
+In diesem Tutorial werden Aufgaben für Dateningenieure und Datenarchitekten kombiniert. Da es sich um ein Tutorial auf Einführungsebene handelt, sollten Sie die Aufgaben für beide Rollen abschließen können. Da viele der Lektionen auf dem aufbauen, was in früheren Lektionen implementiert wurde, sollten Sie die Lektionen in der richtigen Reihenfolge durchgehen. Ich werde darauf hinweisen, welche Lektionen übersprungen werden können.
 
-Wenn Sie während dieses Tutorials verschiedene Platform-Elemente erstellen, sollten Sie möglichst an die von mir empfohlenen Namen festhalten. Es gibt jedoch einige allgemeine Elementnamen, die Sie anpassen können, falls in Ihrem Unternehmen mehrere Personen dieses Tutorial gleichzeitig absolvieren. Sie können beispielsweise die Platform-Sandbox &quot;Luma Tutorial Platform - Ignatius J Reilly&quot;anstelle von &quot;Luma Tutorial Platform&quot;nennen.
+Wenn Sie während dieses Tutorials verschiedene Platform-Elemente erstellen, versuchen Sie, die von mir empfohlenen Namen so gut wie möglich einzuhalten. Es gibt jedoch einige allgemeine Elementnamen, die Sie anpassen können, falls mehrere Personen in Ihrem Unternehmen an diesem Tutorial gleichzeitig teilnehmen. Beispielsweise können Sie der Platform-Sandbox den Namen „Luma-Tutorial-Plattform - Ignatius J. Reilly“ anstelle von „Luma-Tutorial-Plattform“ geben.
 
-Wenn Sie feststecken, versuchen Sie zunächst, die Anweisungen erneut zu lesen, und verwenden Sie dann den Link ![Problem protokollieren](https://experienceleague.adobe.com/assets/img/feedback.svg) in der Seitenleiste jeder Seite, um mich zu kontaktieren.
+Wenn Sie hängen bleiben, lesen Sie zuerst die Anweisungen erneut und verwenden Sie dann den Link ![Problem protokollieren](https://experienceleague.adobe.com/assets/img/feedback.svg) in der Seitenleiste jeder Seite, um mich zu kontaktieren.
 
 ## Technische Hinweise
 
 ### Sandbox-Umgebungen
 
-Im Tutorial erstellen Sie eine Sandbox-Umgebung und verwenden sie zum Abschließen der Übungen. Die Sandbox-Umgebung ermöglicht es Ihnen, die Übungen und Experimente durchzuführen, ohne sich Gedanken über die Beeinträchtigung Ihrer Produktionsdaten machen zu müssen.
+Im Tutorial erstellen Sie eine Sandbox-Umgebung und verwenden sie, um die Übungen abzuschließen. Die Sandbox-Umgebung macht es sicher für Sie, die Übungen und Experimente abzuschließen, ohne sich Gedanken über die Beeinträchtigung Ihrer Produktionsdaten zu machen.
 
 ### API
 
-Platform ist als API-Erste konzipiert. Während es für alle wichtigen Platform-Workflows Workflows Schnittstellen-Workflows gibt und primär verwendet wird, enthält das Tutorial einige API-orientierte Übungen. Ich werde Sie durch die grundlegende Projekteinrichtung in Adobe Developer Console führen und Ihnen [!DNL Postman]-Umgebungen und -Sammlungen zur Verfügung stellen, um mit der Platform-API zu beginnen. Nach Abschluss des Tutorials können Sie sich mit der Platform-API vertraut machen und sie in Ihrer eigenen Implementierung verwenden.
+Platform wird API-First erstellt. Während für alle gängigen Platform-Workflows Schnittstellen-Workflows vorhanden sind und hauptsächlich verwendet werden, enthält das Tutorial einige API-orientierte Übungen. Ich führe Sie durch die grundlegende Projekteinrichtung in der Adobe Developer Console und stelle Ihnen [!DNL Postman] Umgebungen und Sammlungen zur Verfügung, um mit der Platform-API zu beginnen. Nach Abschluss des Tutorials ist es möglicherweise nützlich, mit der Platform-API vertraut zu sein und sie in Ihrer eigenen Bereitstellung zu verwenden.
 
-### Drittanbietertechnologien
+### Technologien von Drittanbietern
 
-Obwohl Sie in diesem Tutorial mehrere Technologien verwenden werden, bleiben Sie fast vollständig im Adobe-Ökosystem. In Ihrer eigenen Platform-Implementierung integrieren Sie Platform wahrscheinlich mit bestimmten Drittanbietertechnologien. Um dieses Tutorial für alle Kunden relevant zu halten, verwenden wir eine allgemeinere Implementierung.
+Obwohl Sie in diesem Tutorial mehrere Technologien verwenden werden, bleiben Sie fast vollständig im Adobe-Ökosystem. In Ihrer eigenen Platform-Implementierung integrieren Sie Platform wahrscheinlich mit bestimmten Technologien von Drittanbietern. Damit dieses Tutorial für alle Kunden relevant bleibt, verwenden wir eine allgemeinere Implementierung.
 
-## Tutorial-Aktualisierungen
+## Tutorial-Updates
 
-* Juni 2023: Es wurde aktualisiert, um neuen Berechtigungs-Workflow und die Verwendung von OAuth-Server-zu-Server-API-Anmeldedaten einzuschließen.
+* Juni 2023: Aktualisiert, um einen neuen Berechtigungs-Workflow und die Verwendung von OAuth-Server-zu-Server-API-Anmeldeinformationen einzuschließen
 
 
-Gehen wir nun zur ersten Lektion über die Konfiguration der Berechtigungen](configure-permissions.md).[
+Fahren wir nun mit der ersten Lektion fort: [Konfigurieren von Berechtigungen](configure-permissions.md).

@@ -16,15 +16,15 @@ ht-degree: 71%
 ---
 
 
-# Experience Cloud in mobile Apps implementieren {#implement-mobile-sdk}
+# Implementieren des Experience Cloud in Mobile Apps {#implement-mobile-sdk}
 
 + [Tutorial-Überblick](overview.md)
 + Ausgangskonfiguration {#initial-configuration}
    + [Erstellen eines Schemas](create-schema.md)
    + [Erstellen eines Datenspeichers](create-datastream.md)
-   + [Tags konfigurieren](configure-tags.md)
+   + [Konfigurieren von Tags](configure-tags.md)
 + App-Implementierung{#app-implementation}
-   + [SDKs installieren](install-sdks.md)
+   + [Installieren von SDKs](install-sdks.md)
    + [Assurance](assurance.md)
    + [Einverständnis](consent.md)
    + [Lebenszyklusdaten](lifecycle-data.md)

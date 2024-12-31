@@ -1,8 +1,8 @@
 ---
-title: Zusammenführungsrichtlinien erstellen
+title: Erstellen von Zusammenführungsrichtlinien
 seo-title: Create merge policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-breadcrumb-title: Zusammenführungsrichtlinien erstellen
-description: In dieser Lektion erstellen Sie Zusammenführungsrichtlinien, um zu bestimmen, wie Daten zu Profilen zusammengeführt werden.
+breadcrumb-title: Erstellen von Zusammenführungsrichtlinien
+description: In dieser Lektion erstellen Sie Zusammenführungsrichtlinien, um zu bestimmen, wie Daten in Profile zusammengeführt werden.
 role: Data Architect, Data Engineer
 feature: Profiles
 jira: KT-4348
@@ -18,24 +18,24 @@ ht-degree: 0%
 
 ---
 
-# Zusammenführungsrichtlinien erstellen
+# Erstellen von Zusammenführungsrichtlinien
 
 <!--20 min-->
 
-In dieser Lektion erstellen Sie Zusammenführungsrichtlinien, um die Zusammenführung mehrerer Datenquellen zu Profilen zu priorisieren.
+In dieser Lektion erstellen Sie Zusammenführungsrichtlinien, um zu priorisieren, wie mehrere Datenquellen in Profilen zusammengeführt werden.
 
-Mit Adobe Experience Platform können Sie Daten aus verschiedenen Quellen zusammenführen und kombinieren, um eine vollständige Ansicht der einzelnen Kunden zu erhalten. Beim Zusammenführen dieser Daten bestimmen Zusammenführungsrichtlinien, wie Daten priorisiert werden und welche Daten kombiniert werden, um eine einheitliche Ansicht zu schaffen.
+Mit Adobe Experience Platform können Sie Daten aus verschiedenen Quellen zusammenführen und kombinieren, damit Sie sich einen kompletten Überblick über jeden einzelnen Kunden verschaffen können. Beim Zusammenführen dieser Daten bestimmen Zusammenführungsrichtlinien, wie Daten priorisiert werden und welche Daten kombiniert werden, um diese einheitliche Ansicht zu schaffen.
 
-In dieser Lektion werden wir an der Benutzeroberfläche festgehalten, aber API-Optionen sind auch zum Erstellen von Zusammenführungsrichtlinien vorhanden.
+In dieser Lektion halten wir uns an die Benutzeroberfläche. Es gibt jedoch auch API-Optionen zum Erstellen von Zusammenführungsrichtlinien.
 
-**Datenarchitekten** müssen außerhalb dieses Tutorials Zusammenführungsrichtlinien erstellen.
+**Datenarchitekten** müssen Zusammenführungsrichtlinien außerhalb dieses Tutorials erstellen.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Zusammenführungsrichtlinien zu erfahren:
 >[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
 
 ## Erforderliche Berechtigungen
 
-In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten Sie alle Zugriffssteuerungen ein, die zum Abschluss dieser Lektion erforderlich sind.
+In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten Sie alle Zugriffssteuerungen ein, die zum Abschließen dieser Lektion erforderlich sind.
 
 <!--* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
 * Permission item **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**
@@ -45,102 +45,102 @@ In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten 
 
 ## Über Zusammenführungsrichtlinien und Vereinigungsschema
 
-In der Lektion zur Batch-Erfassung haben wir möglicherweise zwei Datensätze mit etwas anderen Informationen für denselben Kunden hochgeladen. In den [!DNL Loyalty] -Daten war der Vorname des Kunden `Daniel` und er lebte in `New York City`, aber in den CRM-Daten war der Vorname des Kunden `Danny` und er lebte in `Portland`. Die Kundendaten ändern sich im Laufe der Zeit. Vielleicht wechselte er von `Portland` zu `New York City`. Auch andere Dinge ändern sich, wie Telefonnummern und E-Mail-Adressen. Zusammenführungsrichtlinien helfen Ihnen bei der Entscheidung, wie Sie diese Arten von Konflikten handhaben, wenn zwei Datenquellen unterschiedliche Informationen für denselben Benutzer bereitstellen.
+Vielleicht erinnern Sie sich daran, dass wir in der Lektion zur Batch-Aufnahme zwei Datensätze mit leicht unterschiedlichen Informationen für denselben Kunden hochgeladen haben. In den [!DNL Loyalty] Daten war der Vorname des Kunden `Daniel` und er lebte in `New York City`, aber in den CRM-Daten war der Vorname des Kunden `Danny` und er lebte in `Portland`. Kundendaten ändern sich im Laufe der Zeit. Vielleicht ist er von `Portland` nach `New York City` gezogen. Auch andere Dinge ändern sich, z. B. Telefonnummern und E-Mail-Adressen. Mithilfe von Zusammenführungsrichtlinien können Sie entscheiden, wie diese Arten von Konflikten gehandhabt werden sollen, wenn zwei Datenquellen unterschiedliche Informationen für denselben Benutzer bereitstellen.
 
-Also, warum hat `Danny` als Vorname gewonnen? Sehen wir uns Folgendes an:
+Warum also hat `Danny` als Vorname gewonnen? Sehen wir uns das einmal an:
 
-1. Wählen Sie in der Benutzeroberfläche von Platform im linken Navigationsbereich **[!UICONTROL Profile]** aus.
-1. Navigieren Sie zur Registerkarte **[!UICONTROL Zusammenführungsrichtlinien]** .
-1. Die standardmäßige Zusammenführungsrichtlinie ist ein bestellter Zeitstempel. Da Sie die CRM-Daten nach den Loyalitätsdaten hochgeladen haben, hat `Danny` den Vornamen im Profil erhalten:
+1. Wählen Sie in der Platform-Benutzeroberfläche **[!UICONTROL Profile]** im linken Navigationsbereich aus
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Zusammenführungsrichtlinien]**
+1. Die standardmäßige Zusammenführungsrichtlinie ist nach Zeitstempel geordnet. Da Sie die CRM-Daten nach den Treueprogramm-Daten hochgeladen haben, hat sich `Danny` als Vorname im Profil durchgesetzt:
 
-![Bildschirm &quot;Zusammenführungsrichtlinie&quot;](assets/mergepolicies-default.png)
+![Bildschirm „Zusammenführungsrichtlinie“](assets/mergepolicies-default.png)
 
-Wenn mehrere Schemas für ein Profil aktiviert sind, wird automatisch ein [!UICONTROL Vereinigungsschema] für alle profilaktivierten Schemas erstellt, die eine Basisklasse gemeinsam nutzen. Sie können die [!UICONTROL Vereinigungsschemas] anzeigen, indem Sie zur Registerkarte **[!UICONTROL Vereinigungsschema]** navigieren.
+Wenn mehrere Schemata für ein Profil aktiviert sind, wird [!UICONTROL Vereinigungsschema] automatisch für alle profilaktivierten Datensatzschemata erstellt, die eine Basisklasse gemeinsam nutzen. Sie können die [!UICONTROL Vereinigungsschemata] anzeigen, indem Sie zur Registerkarte **[!UICONTROL Vereinigungsschema]** wechseln.
 
-![Bildschirm &quot;Zusammenführungsrichtlinie&quot;](assets/mergepolicies-unionSchema.png)
+![Bildschirm „Zusammenführungsrichtlinie“](assets/mergepolicies-unionSchema.png)
 
-Beachten Sie, dass es kein Vereinigungsschema für die ExperienceEvent-Klasse gibt. Während ExperienceEvent-Daten weiterhin im Profil landen, da sie zeitreihenbasiert sind, enthält jedes Ereignis einen Zeitstempel und eine ID und Kollisionen sind kein Problem.
+Beachten Sie, dass es kein Vereinigungsschema für die ExperienceEvent-Klasse gibt. ExperienceEvent-Daten landen zwar weiterhin im Profil, da sie zeitreihenbasiert sind, jedes Ereignis jedoch einen Zeitstempel und eine ID enthält und Kollisionen kein Problem darstellen.
 
-Was passiert, wenn Ihnen diese standardmäßige Zusammenführungsrichtlinie nicht gefällt? Was, wenn Luma beschließt, dass ihr Treuesystem die Quelle der Wahrheit sein sollte, wenn es einen Konflikt gibt? Dazu erstellen wir eine Zusammenführungsrichtlinie.
+Was nun, wenn Ihnen diese standardmäßige Zusammenführungsrichtlinie nicht gefällt? Was, wenn Luma entscheidet, dass ihr Treuesystem im Konfliktfall die Quelle der Wahrheit sein sollte? Dazu werden wir eine Zusammenführungsrichtlinie erstellen.
 
 ## Erstellen einer Zusammenführungsrichtlinie in der Benutzeroberfläche
 
-1. Wählen Sie im Bildschirm &quot;Zusammenführungsrichtlinien&quot;die Schaltfläche **[!UICONTROL Zusammenführungsrichtlinie erstellen]** oben rechts
-1. Geben Sie als **[!UICONTROL Name]** `Loyalty Prioritized` ein.
-1. Wählen Sie als **[!UICONTROL Schema]** **[!UICONTROL XDM Profile]** aus (beachten Sie, dass Ihre benutzerdefinierte Klasse - da es sich um Datensatzdaten handelt - auch für Zusammenführungsrichtlinien verfügbar ist).
-1. Wählen Sie für **[!UICONTROL ID-Zuordnung]** **[!UICONTROL Privates Diagramm]** aus.
-1. Wählen Sie für **[!UICONTROL Attributzusammenführung]** die Option **[!UICONTROL Datensatzpriorität]**
-1. Ziehen Sie `Luma Loyalty Dataset` und `Luma CRM Dataset` per Drag-and-Drop in den Bereich **[!UICONTROL Datensatz]** .
-1. Stellen Sie sicher, dass `Luma Loyalty Dataset` oben ist, indem Sie ihn per Drag-and-Drop über den `Luma CRM Dataset` ziehen
-1. Wählen Sie die Schaltfläche **[!UICONTROL Speichern]** aus
+1. Klicken Sie im Bildschirm „Zusammenführungsrichtlinien **[!UICONTROL oben rechts auf die Schaltfläche]** Zusammenführungsrichtlinie erstellen“
+1. Geben Sie als **[!UICONTROL Name]** `Loyalty Prioritized`
+1. Wählen Sie als **[!UICONTROL Schema]** die Option **[!UICONTROL XDM-Profil]** aus (beachten Sie, dass Ihre benutzerdefinierte Klasse, da es sich um Datensatzdaten handelt, auch für Zusammenführungsrichtlinien verfügbar ist)
+1. Wählen **[!UICONTROL für „ID]** Zuordnung“ die Option **[!UICONTROL Privates Diagramm]**
+1. Wählen **[!UICONTROL für]** Attributzusammenführung“ die Option **[!UICONTROL Datensatzpriorität]**
+1. Ziehen Sie `Luma Loyalty Dataset` und `Luma CRM Dataset` per Drag-and-Drop in das **[!UICONTROL Datensatz]**-Bedienfeld.
+1. Stellen Sie sicher, dass `Luma Loyalty Dataset` oben ist, indem Sie es per Drag-and-Drop über die `Luma CRM Dataset` ziehen.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
    <!--do i need to explain Private Graph? Is that GA?-->
    ![Zusammenführungsrichtlinie](assets/mergepolicies-newPolicy.png)
 
 ## Validieren der Zusammenführungsrichtlinie
 
-Lassen Sie uns sehen, ob die Zusammenführungsrichtlinie das tut, was wir erwarten würden:
+Mal sehen, ob die Zusammenführungsrichtlinie das tut, was wir erwarten würden:
 
-1. Navigieren Sie zur Registerkarte **[!UICONTROL Durchsuchen]** .
-1. Ändern Sie die **[!UICONTROL Zusammenführungsrichtlinie]** in Ihre neue `Loyalty Prioritized`-Richtlinie
-1. Verwenden Sie als **[!UICONTROL Identitäts-Namespace]** Ihren `Luma CRM Id`
-1. Verwenden Sie als **[!UICONTROL Identitätswert]** `112ca06ed53d3db37e4cea49cc45b71e`
-1. Wählen Sie die Schaltfläche **[!UICONTROL Profil anzeigen]** aus
-1. `Daniel` ist wieder da!
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Durchsuchen]**.
+1. Ändern Sie die **[!UICONTROL Zusammenführungsrichtlinie]** in Ihre neue `Loyalty Prioritized`
+1. Verwenden Sie als **[!UICONTROL Identity-Namespace]** Ihren `Luma CRM Id`
+1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `112ca06ed53d3db37e4cea49cc45b71e`
+1. Klicken Sie auf **[!UICONTROL Schaltfläche Profil anzeigen]**
+1. `Daniel` ist zurück!
 
 ![Anzeigen eines Profils mit einer anderen Zusammenführungsrichtlinie](assets/mergepolicies-lookupProfileWithMergePolicy.png)
 
 ## Erstellen einer Zusammenführungsrichtlinie mit eingeschränkten Datensätzen
 
-Beim Erstellen von Zusammenführungsrichtlinien mit Datensatzpriorität werden nur die Datensätze derselben Basisklasse, die Sie rechts einbeziehen, in das Profil aufgenommen. Erstellen wir eine weitere Zusammenführungsrichtlinie
+Beim Erstellen von Zusammenführungsrichtlinien mit Datensatzpriorität werden nur die Datensätze derselben Basisklasse, die Sie im rechten Bereich einbeziehen, in das Profil aufgenommen. Richten wir eine andere Zusammenführungsrichtlinie ein
 
-1. Wählen Sie im Bildschirm &quot;Zusammenführungsrichtlinien&quot;die Schaltfläche **[!UICONTROL Zusammenführungsrichtlinie erstellen]** oben rechts
-1. Geben Sie als **[!UICONTROL Name]** `Loyalty Only` ein.
-1. Wählen Sie als **[!UICONTROL Schema]** **[!UICONTROL XDM Profile]** aus.
-1. Wählen Sie für **[!UICONTROL ID-Zuordnung]** **[!UICONTROL Keine]** aus.
-1. Wählen Sie für **[!UICONTROL Attributzusammenführung]** die Option **[!UICONTROL Datensatzpriorität]**
-1. Ziehen Sie nur den Punkt `Luma Loyalty Dataset` in den Bereich **[!UICONTROL Ausgewählter Datensatz]**.
-1. Wählen Sie die Schaltfläche **[!UICONTROL Speichern]** aus
+1. Klicken Sie im Bildschirm „Zusammenführungsrichtlinien **[!UICONTROL oben rechts auf die Schaltfläche]** Zusammenführungsrichtlinie erstellen“
+1. Geben Sie als **[!UICONTROL Name]** `Loyalty Only`
+1. Wählen Sie als **[!UICONTROL Schema]** die Option **[!UICONTROL XDM-Profil]**
+1. Wählen **[!UICONTROL für „ID]** Zuordnung“ **[!UICONTROL Keine]**
+1. Wählen **[!UICONTROL für]** Attributzusammenführung“ die Option **[!UICONTROL Datensatzpriorität]**
+1. Ziehen Sie das `Luma Loyalty Dataset` per Drag-and-Drop in das Bedienfeld **[!UICONTROL Ausgewählter]**&quot;.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-![Zusammenführungsrichtlinie &quot;Nur Treueprogramm&quot;](assets/mergepolicies-loyaltyOnly.png)
+![Zusammenführungsrichtlinie nur für Treue](assets/mergepolicies-loyaltyOnly.png)
 
 ## Validieren der Zusammenführungsrichtlinie
 
-Schauen wir uns nun an, was diese Zusammenführungsrichtlinie bewirkt:
+Sehen wir uns nun an, was diese Zusammenführungsrichtlinie bewirkt:
 
-1. Navigieren Sie zur Registerkarte **[!UICONTROL Durchsuchen]** .
-1. Ändern Sie die **[!UICONTROL Zusammenführungsrichtlinie]** in Ihre neue `Loyalty Only`-Richtlinie
-1. Verwenden Sie als **[!UICONTROL Identitäts-Namespace]** Ihren `Luma CRM Id`
-1. Verwenden Sie als **[!UICONTROL Identitätswert]** `112ca06ed53d3db37e4cea49cc45b71e`
-1. Wählen Sie die Schaltfläche **[!UICONTROL Profil anzeigen]** aus
-1. Vergewissern Sie sich, dass keine Profile gefunden wurden:
-   ![Treue Nur keine CRM-ID-Suche.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Durchsuchen]**.
+1. Ändern Sie die **[!UICONTROL Zusammenführungsrichtlinie]** in Ihre neue `Loyalty Only`
+1. Verwenden Sie als **[!UICONTROL Identity-Namespace]** Ihren `Luma CRM Id`
+1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `112ca06ed53d3db37e4cea49cc45b71e`
+1. Klicken Sie auf **[!UICONTROL Schaltfläche Profil anzeigen]**
+1. Bestätigen Sie, dass keine Profile gefunden wurden:
+   ![Nur Treue - keine CRM-ID-Suche.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
 
-Die CRM-ID ist ein Identitätsfeld in der `Luma Loyalty Dataset`, es können jedoch nur primäre Identitäten zum Nachschlagen von Profilen verwendet werden. Schauen wir uns also das Profil mit der primären Identität an, `Luma Loyalty Id`&quot;
+Die CRM-ID ist ein Identitätsfeld in der `Luma Loyalty Dataset`, zum Nachschlagen von Profilen können jedoch nur primäre Identitäten verwendet werden. Schauen wir uns also das Profil unter Verwendung der primären Identität an, `Luma Loyalty Id`&quot;
 
 1. Ändern Sie den **[!UICONTROL Identity-Namespace]** in `Luma Loyalty Id`
-1. Verwenden Sie als **[!UICONTROL Identitätswert]** `5625458`
-1. Wählen Sie die Schaltfläche **[!UICONTROL Profil anzeigen]** aus
-1. Wählen Sie die Profil-ID aus, um das Profil zu öffnen
-1. Navigieren Sie zur Registerkarte **[!UICONTROL Attribute]** .
-1. Beachten Sie, dass andere Profildetails aus dem CRM-Datensatz wie die Mobiltelefonnummer und die E-Mail-Adresse nicht verfügbar sind, da wir nur
-   ![CRM-Daten können nicht in der Richtlinie &quot;Nur Treue&quot;angezeigt werden](assets/mergepolicies-loyaltyOnly-attributes.png)
-1. Navigieren Sie zur Registerkarte **[!UICONTROL Ereignisse]** .
-1. ExperienceEvent-Daten sind verfügbar, obwohl sie nicht explizit in den Datensätzen der Zusammenführungsrichtlinie enthalten sind:
-   ![Ereignisse sind in der Richtlinie &quot;Nur Treue&quot;sichtbar](assets/mergepolicies-loyaltyOnly-events.png)
+1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `5625458`
+1. Klicken Sie auf **[!UICONTROL Schaltfläche Profil anzeigen]**
+1. Profil-ID auswählen, um das Profil zu öffnen
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Attribute]**
+1. Beachten Sie, dass andere Profildetails aus dem CRM-Datensatz, wie z. B. die Mobiltelefonnummer und die E-Mail-Adresse, nicht verfügbar sind, da wir nur
+   ![CRM-Daten können nicht in der Richtlinie „Nur Treue“ angezeigt werden](assets/mergepolicies-loyaltyOnly-attributes.png)
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Ereignisse]**
+1. ExperienceEvent-Daten sind verfügbar, auch wenn sie nicht explizit in die Datensätze der Zusammenführungsrichtlinie aufgenommen wurden:
+   ![Ereignisse können in der Richtlinie „Nur Treue“ angezeigt werden](assets/mergepolicies-loyaltyOnly-events.png)
 
 ## Weitere Informationen zu Zusammenführungsrichtlinien
 
-Ändern Sie in der Profilsuche die verwendete Zusammenführungsrichtlinie zurück in `Default Timebased` und wählen Sie die Schaltfläche **[!UICONTROL Profil anzeigen]** aus. Danny ist wieder da!
+Ändern Sie bei der Profilsuche die verwendete Zusammenführungsrichtlinie wieder in `Default Timebased` und klicken Sie auf die Schaltfläche **[!UICONTROL Profil anzeigen]**. Danny ist zurück!
 
 ![Anzeigen eines Profils mit einer anderen Zusammenführungsrichtlinie](assets/mergepolicies-backToDanny.png)
 
-Was ist hier los? Die Profilzusammenführung ist keine einmalige Sache. Echtzeit-Kundenprofile werden spontan zusammengestellt und basieren auf verschiedenen Faktoren, einschließlich der verwendeten Zusammenführungsrichtlinie. Sie können mehrere Zusammenführungsrichtlinien erstellen, die je nach gewünschter Ansicht des Kunden in verschiedenen Kontexten verwendet werden.
+Was ist hier los? Nun, Profilzusammenführungen sind keine einmalige Sache. Echtzeit-Kundenprofile werden im Handumdrehen zusammengestellt. Sie basieren auf verschiedenen Faktoren, darunter auch der Frage, welche Zusammenführungsrichtlinie verwendet wird. Je nach gewünschter Ansicht des Kunden können Sie mehrere Zusammenführungsrichtlinien erstellen, die in verschiedenen Kontexten verwendet werden.
 
-Ein wichtiges Anwendungsbeispiel für Zusammenführungsrichtlinien ist die Data Governance. Angenommen, Sie erfassen Daten von Drittanbietern in Platform, die nicht für Personalisierungsfälle verwendet werden können, aber _kann_ für Werbezwecke verwendet werden. Sie können eine Zusammenführungsrichtlinie erstellen, die diesen Datensatz von Drittanbietern ausschließt, und diese Zusammenführungsrichtlinie verwenden, um Segmente für Ihre Anwendungsfälle für Werbung zu erstellen.
+Ein wichtiger Anwendungsfall für Zusammenführungsrichtlinien ist Data Governance. Angenommen, Sie nehmen Daten von Drittanbietern in Platform auf, die nicht für Personalisierungs-Anwendungsfälle verwendet werden können _aber_ für Werbe-Anwendungsfälle verwendet werden können. Sie können eine Zusammenführungsrichtlinie erstellen, die diesen Drittanbieterdatensatz ausschließt, und diese Zusammenführungsrichtlinie zum Erstellen von Segmenten für Ihre Werbeanwendungsfälle verwenden.
 
 ## Weitere Ressourcen
 
 * [Dokumentation zu Zusammenführungsrichtlinien](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
-* Referenz zur API für Zusammenführungsrichtlinien (Teil der Echtzeit-Kundenprofil-API) ](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)[
+* [Zusammenführungsrichtlinien-API (Teil der Echtzeit-Kundenprofil-API)-Referenz](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
-Gehen wir nun zum [Data Governance-Framework](apply-data-governance-framework.md).
+Fahren wir nun mit dem [Data Governance-Framework](apply-data-governance-framework.md) fort.

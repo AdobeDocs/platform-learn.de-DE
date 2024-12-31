@@ -1,6 +1,6 @@
 ---
-title: Einrichten der Journey Optimizer-Entscheidungsverwaltung mit dem Platform Web SDK
-description: Erfahren Sie, wie Sie die Entscheidungsverwaltung mit dem Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
+title: Einrichten des Journey Optimizer-Entscheidungs-Managements mit Platform Web SDK
+description: Erfahren Sie, wie Sie Entscheidungs-Management mit Platform Web SDK implementieren. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
@@ -13,30 +13,30 @@ ht-degree: 3%
 
 ---
 
-# Entscheidungsverwaltung mit dem Platform Web SDK einrichten
+# Einrichten des Entscheidungs-Managements mit Platform Web SDK
 
-Erfahren Sie, wie Sie die Entscheidungsverwaltungsfunktion von Adobe Journey Optimizer mithilfe des Platform Web SDK implementieren. In diesem Handbuch werden die grundlegenden Entscheidungsverwaltungsvoraussetzungen, detaillierte Konfigurationsschritte und ein tiefer Einblick in einen Anwendungsfall zum Treuestatus gegeben.
+Erfahren Sie, wie Sie die Entscheidungs-Management-Funktionen von Adobe Journey Optimizer mithilfe von Platform Web SDK implementieren. In diesem Handbuch werden die grundlegenden Voraussetzungen für das Entscheidungs-Management, detaillierte Schritte für die Konfiguration und ein detaillierter Einblick in einen Anwendungsfall mit Schwerpunkt auf dem Treuestatus behandelt.
 
-In diesem Tutorial werden Journey Optimizer-Benutzer mit Funktionen zur Entscheidungsverwaltung ausgestattet, um die Personalisierung und Relevanz ihrer Kundeninteraktionen zu verbessern.
+In diesem Tutorial können Journey Optimizer-Benutzende Entscheidungs-Management-Funktionen verwenden, die die Personalisierung und Relevanz ihrer Kundeninteraktionen verbessern.
 
 
-![Web SDK- und Adobe Analytics-Diagramm](assets/dc-websdk-ajo.png)
+![Web-SDK und Adobe Analytics-Diagramm](assets/dc-websdk-ajo.png)
 
 ## Lernziele
 
 Am Ende dieser Lektion können Sie:
 
-* Machen Sie sich mit den Kernkonzepten der Entscheidungsverwaltung in der Adobe Journey Optimizer und ihrer Integration in das Adobe Experience Platform Web SDK vertraut.
+* Machen Sie sich mit den Kernkonzepten des Entscheidungs-Managements in Adobe Journey Optimizer und seiner Integration mit Adobe Experience Platform Web SDK vertraut.
 
-* Erfahren Sie Schritt für Schritt, wie Sie das Web SDK für Offer decisioning konfigurieren und so eine nahtlose Integration mit Journey Optimizer sicherstellen.
+* Lernen Sie den schrittweisen Prozess zum Konfigurieren von Web SDK für Offer decisioning kennen, um eine nahtlose Integration in Journey Optimizer sicherzustellen.
 
-* Erfahren Sie mehr über einen detaillierten Anwendungsfall, der sich auf Treuestatus-Angebote konzentriert und Einblicke in die effektive Erstellung und Verwaltung von Angeboten, Entscheidungen und Platzierungen bietet.
+* Erkunden Sie ein detailliertes Anwendungsbeispiel, in dem es um Treuestatus-Angebote geht und erhalten Sie Einblicke in die Erstellung und Verwaltung von Angeboten, Entscheidungen und Platzierungen effektiv.
 
-* Machen Sie sich mit wesentlichen Begriffen und deren Auswirkungen im Rahmen der Entscheidungsverwaltung vertraut.
+* Machen Sie sich mit den wichtigsten Begriffen und ihren Auswirkungen im Rahmen des Entscheidungs-Managements vertraut.
 
 * Machen Sie sich mit der Bedeutung von Entscheidungsregeln, Sammlungsqualifizierern und Fallback-Angeboten für die Bereitstellung des richtigen Angebots für den richtigen Benutzer vertraut.
 
-* Erfahren Sie mehr über erweiterte Themen wie Simulationen und die Datenerfassung für benutzerdefinierte Ereignisse, mit denen Sie Ihre Mechanismen zur Angebotsbereitstellung testen, validieren und erweitern können.
+* Erfahren Sie mehr über erweiterte Themen wie Simulationen und die Erfassung benutzerdefinierter Ereignisdaten, die es Ihnen ermöglichen, Ihre Mechanismen zur Angebotsbereitstellung zu testen, zu validieren und zu verbessern.
 
 ## Voraussetzungen
 
@@ -44,52 +44,52 @@ Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 
 * Stellen Sie sicher, dass Ihr Unternehmen Zugriff auf Adobe Journey Optimizer Ultimate (Journey Optimizer und Offer decisioning) oder Adobe Experience Platform und das Offer decisioning-Add-on hat.
 
-* Schließen Sie alle Lektionen für die Erstkonfiguration des Platform Web SDK ab.
+* Schließen Sie alle Lektionen für die Erstkonfiguration von Platform Web SDK ab.
 
 * Aktivieren Sie Ihr Unternehmen für Edge Decisioning.
 
-* Erfahren Sie, wie Sie eine Platzierung konfigurieren und Platzierungs- und Aktivitäts-IDs in Ihrer JSON-Entscheidungsbereich-JSON instanziieren.
+* Erfahren Sie, wie Sie eine Platzierung konfigurieren und Platzierungs- und Aktivitäts-IDs innerhalb Ihrer Entscheidungsumfang-JSON instanziieren.
 
 ## Einschränkungen
 
-Ereignisbasierte Angebote werden in Adobe Journey Optimizer derzeit nicht unterstützt. Wenn Sie eine auf einem Ereignis basierende Entscheidungsregel erstellen, können Sie sie nicht auf ein Angebot anwenden.
+Ereignisbasierte Angebote werden derzeit in Adobe Journey Optimizer nicht unterstützt. Wenn Sie eine Entscheidungsregel basierend auf einem Ereignis erstellen, können Sie sie nicht in einem Angebot anwenden.
 
 ## Zugriff auf das Entscheidungs-Management gewähren
 
-Um Zugriff auf die Entscheidungsverwaltungsfunktion zu gewähren, müssen Sie ein **Produktprofil** erstellen und den Benutzern die entsprechenden Berechtigungen zuweisen. [Weitere Informationen zum Verwalten von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Um Zugriff auf die Funktionen des Entscheidungs-Managements zu gewähren, müssen Sie ein **Produktprofil** erstellen und den Benutzern die entsprechenden Berechtigungen zuweisen. [ Weitere Informationen zur Verwaltung von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
-## Konfigurieren des Datenspeichers
+## Konfigurieren des Datenstroms
 
-Offer decisioning muss in der Konfiguration **datastream** aktiviert sein, bevor Entscheidungsverwaltungsaktivitäten vom Platform Web SDK bereitgestellt werden können.
+Offer decisioning muss in der Konfiguration **Datenstrom** aktiviert werden, bevor Entscheidungs-Management-Aktivitäten von Platform Web SDK bereitgestellt werden können.
 
-So konfigurieren Sie Offer decisioning im Datastream:
+So konfigurieren Sie Offer decisioning im Datenstrom:
 
-1. Wechseln Sie zur Oberfläche [Datenerfassung](https://experience.adobe.com/#/data-collection) .
+1. Navigieren Sie zur [Datenerfassung](https://experience.adobe.com/#/data-collection).
 
-1. Wählen Sie im linken Navigationsbereich **Datenspeicher** aus.
+1. Wählen Sie in der linken Navigation **Datenströme** aus.
 
-1. Wählen Sie den zuvor erstellten Datenspeicher des Luma Web SDK aus.
+1. Wählen Sie den zuvor erstellten Luma Web SDK-Datenstrom aus.
 
-   ![Wählen Sie datastream](assets/decisioning-datastream-select.png)
+   ![Datenstrom auswählen](assets/decisioning-datastream-select.png)
 
-1. Wählen Sie **Bearbeiten** innerhalb des **Adobe Experience Platform-Dienstes** aus.
+1. Wählen Sie **Bearbeiten** im **Adobe Experience Platform-Service**.
 
-   ![Dienst bearbeiten](assets/decisioning-edit-datastream.png)
+   ![Service bearbeiten](assets/decisioning-edit-datastream.png)
 
-1. Aktivieren Sie das Kontrollkästchen **Offer decisioning** .
+1. Markieren Sie das Kästchen **Offer decisioning**.
 
    ![SCREENSHOT HINZUFÜGEN](assets/decisioning-check-offer-box.png)
 
 1. Wählen Sie **Speichern** aus.
 
-Dadurch wird sichergestellt, dass eingehende Ereignisse für Journey Optimizer vom **Adobe Experience Platform Edge** ordnungsgemäß verarbeitet werden.
+Dadurch wird sichergestellt, dass eingehende Ereignisse für Journey Optimizer korrekt von der **Adobe Experience Platform Edge verarbeitet**.
 
-## SDK für die Entscheidungsverwaltung konfigurieren
+## Konfigurieren der SDK für das Entscheidungs-Management
 
-Die Entscheidungsverwaltung erfordert je nach Ihrem Web SDK-Implementierungstyp zusätzliche SDK-Schritte. Es gibt zwei verfügbare Optionen zum Konfigurieren des SDK für die Entscheidungsverwaltung.
+Das Entscheidungs-Management erfordert je nach Implementierungstyp von Web SDK zusätzliche SDK-Schritte. Es gibt zwei verfügbare Optionen zum Konfigurieren der SDK für das Entscheidungs-Management.
 
 * Eigenständige SDK-Installation
-   1. Konfigurieren Sie die `sendEvent` -Aktion mit Ihrem `decisionScopes`.
+   1. Konfigurieren Sie die `sendEvent` mit Ihren `decisionScopes`.
 
       ```javascript
       alloy("sendEvent", {
@@ -101,61 +101,61 @@ Die Entscheidungsverwaltung erfordert je nach Ihrem Web SDK-Implementierungstyp 
       })
       ```
 
-* Installation von SDK-Tags
-   1. Wechseln Sie zur Datenerfassungsoberfläche.
+* SDK Tags-Installation
+   1. Wechseln Sie zur Datenerfassungs-Oberfläche.
 
-   1. Wählen Sie im linken Navigationsbereich **Tags** aus.
+   1. Wählen Sie in der linken Navigation **Tags** aus.
 
       ![Tags auswählen](assets/decisioning-data-collection-tags.png)
 
    1. Wählen Sie die **Tag-Eigenschaft** aus.
 
    1. Erstellen Sie Ihre **Regeln**.
-      * Fügen Sie eine Platform Web SDK **Aktion &quot;Ereignis senden&quot;** hinzu und fügen Sie die relevante `decisionScopes` zur Konfiguration dieser Aktion hinzu.
+      * Fügen Sie eine Platform Web SDK **Aktion „Ereignis senden** hinzu und fügen Sie der Konfiguration dieser Aktion die entsprechenden `decisionScopes` hinzu.
 
-   1. Erstellen und veröffentlichen Sie eine **Bibliothek** mit allen relevanten **Regeln**, **Datenelemente** und **Erweiterungen**, die Sie konfiguriert haben.
+   1. Erstellen und veröffentlichen Sie eine **Bibliothek** mit allen relevanten **Regeln**, **Datenelementen** und **Erweiterungen** die Sie konfiguriert haben.
 
 ## Terminologie
 
-Zunächst sollten Sie die in der Benutzeroberfläche für die Entscheidungsverwaltung verwendete Terminologie verstehen.
+Zunächst sollten Sie die in der Benutzeroberfläche des Entscheidungs-Managements verwendete Terminologie verstehen.
 
 * **Begrenzung**: Eine Begrenzung, die bestimmt, wie oft ein Angebot angezeigt wird. Zwei Typen:
-   * Höchstwerte für die Gesamtanzahl: Maximale Anzahl der Wiedergaben eines Angebots in der gesamten Zielgruppe.
-   * Profilbegrenzung: Die Zeiten, in denen ein Angebot einem bestimmten Benutzer angezeigt werden kann.
-* **Sammlungen**: Untergruppen von Angeboten, die nach bestimmten, von einem Marketing-Experten festgelegten Bedingungen gruppiert sind, z. B. Angebotskategorien.
-* **Entscheidung**: Logik, die die Auswahl eines Angebots vorschreibt.
-* **Entscheidungsregel**: Begrenzungen für Angebote, um die Eignung eines Benutzers zu ermitteln.
-* **Geeignetes Angebot**: Ein Angebot, das den voreingestellten Begrenzungen entspricht und einem Benutzer angezeigt werden kann.
-* **Entscheidungsverwaltung**: Das System zum Erstellen und Verteilen personalisierter Angebote mithilfe von Geschäftslogik und Entscheidungsregeln.
+   * Obergrenzen insgesamt: Maximale Anzahl der Fälle, in denen ein Angebot für die gesamte Zielgruppe angezeigt werden kann.
+   * Profilbegrenzung: Gibt an, wie oft ein Angebot einem bestimmten Benutzer angezeigt werden kann.
+* **Sammlungen**: Untergruppen von Angeboten, gruppiert nach bestimmten Bedingungen, die von einem Marketing-Experten festgelegt wurden, z. B. Angebotskategorie.
+* **Entscheidung**: Logik, die die Auswahl eines Angebots bestimmt.
+* **Entscheidungsregel**: Einschränkungen bei Angeboten, um die Eignung eines Benutzers herauszufinden.
+* **Geeignetes Angebot**: Ein Angebot, das den vordefinierten Einschränkungen entspricht und einem Benutzer angezeigt werden kann.
+* **Entscheidungs-Management**: Das System zur Erstellung und Verteilung personalisierter Angebote mithilfe von Business-Logik und Entscheidungsregeln.
 * **Fallback-Angebote**: Das Standardangebot, das angezeigt wird, wenn ein Benutzer für keine Angebote in einer Sammlung qualifiziert ist.
 * **Angebot**: Eine Marketing-Nachricht mit potenziellen Eignungsregeln, die die Viewer bestimmen.
-* **Angebotsbibliothek**: Ein zentrales Repository, das Angebote, Entscheidungen und zugehörige Regeln verwaltet.
-* **Personalisierte Angebote**: Benutzerdefinierte Marketing-Nachrichten, die auf Eignungsbegrenzungen basieren.
-* **Platzierungen**: Die Einstellung oder das Szenario, in der einem Benutzer ein Angebot angezeigt wird.
-* **Priorität**: Rangmetrik für Angebote unter Berücksichtigung verschiedener Einschränkungen wie Eignung und Begrenzung.
+* **Angebotsbibliothek**: Ein zentrales Repository zum Verwalten von Angeboten, Entscheidungen und zugehörigen Regeln.
+* **Personalisierte Angebote**: Benutzerdefinierte Marketing-Nachrichten, die auf der Grundlage von Eignungsbegrenzungen zugeschnitten sind.
+* **Platzierungen**: Die Einstellung oder das Szenario, in dem einem Benutzer ein Angebot angezeigt wird.
+* **Priorität**: Rangfolgenmetrik für Angebote unter Berücksichtigung verschiedener Einschränkungen wie Eignung und Begrenzung.
 * **Darstellungen**: Kanalspezifische Informationen, z. B. Ort oder Sprache, die die Anzeige eines Angebots lenken.
 
-## Nutzungsszenario - Überblick über Treuebelohnungen
+## Anwendungsfall - Übersicht - Treueprämien
 
-In dieser Lektion implementieren Sie ein Anwendungsbeispiel für Treuebelohnungen , um die Entscheidungsverwaltung mithilfe des Web SDK zu verstehen.
+In dieser Lektion implementieren Sie ein Beispiel für einen Anwendungsfall mit Treueprämien, um das Entscheidungs-Management mit der Web-SDK zu verstehen.
 
-In diesem Anwendungsbeispiel wird erläutert, wie Journey Optimizer mithilfe der zentralisierten Angebotsbibliothek und der Entscheidungs-Engine für die Entscheidungsfindung bei der Bereitstellung des besten Angebots für Ihre Kunden helfen kann.
+In diesem Anwendungsbeispiel erfahren Sie, wie Journey Optimizer Ihren Kunden mithilfe der zentralen Angebotsbibliothek und der Entscheidungs-Management-Engine das beste Angebot unterbreiten kann.
 
 >[!NOTE]
 >
-> Da dieses Tutorial auf Implementierer ausgerichtet ist, ist zu beachten, dass diese Lektion umfangreiche Arbeit an der Benutzeroberfläche in Journey Optimizer erfordert. Während solche Aufgaben in der Regel von Marketingexperten verarbeitet werden, können Implementoren Einblicke in den Prozess erhalten, selbst wenn sie langfristig nicht für die Erstellung von Entscheidungskampagnen verantwortlich sind.
+> Da sich dieses Tutorial an Implementierer richtet, sollten Sie beachten, dass diese Lektion umfangreiche Schnittstellenarbeiten in Journey Optimizer umfasst. Obwohl diese Schnittstellenaufgaben normalerweise von Marketing-Experten durchgeführt werden, kann es für Implementierer von Vorteil sein, Einblicke in den Prozess zu erhalten, auch wenn sie langfristig nicht für die Erstellung von Entscheidungs-Management-Kampagnen verantwortlich sind.
 
 ## Komponenten
 
-Bevor Sie mit der Erstellung der Angebote beginnen, müssen Sie mehrere Voraussetzungen definieren.
+Bevor Sie mit der Erstellung der Angebote beginnen, müssen Sie mehrere vorausgesetzte Komponenten definieren.
 
 ### Erstellen einer Platzierung für Treueangebote
 
-**Platzierungen** sind Container, mit denen die Angebote präsentiert werden. In diesem Beispiel erstellen Sie eine Platzierung am Anfang der Site &quot;Luma&quot;.
+**Platzierungen** sind Container, mit denen die Angebote präsentiert werden. In diesem Beispiel erstellen Sie eine Platzierung oben auf der Luma-Site.
 
 Die Liste der Platzierungen ist im Menü **Komponenten** verfügbar. Es gibt Filter, mit denen Sie Platzierungen nach einem bestimmten Kanal oder Inhalt abrufen können.
 
-![Anzeigen von Platzierungen](assets/decisioning-placements-list.png)
+![Platzierungen anzeigen](assets/decisioning-placements-list.png)
 
 Gehen Sie wie folgt vor, um die Platzierung zu erstellen:
 
@@ -164,22 +164,22 @@ Gehen Sie wie folgt vor, um die Platzierung zu erstellen:
    ![Platzierung erstellen](assets/decisioning-create-placement.png)
 
 1. Definieren Sie die Eigenschaften der Platzierung:
-   * **Name**: der Name der Platzierung. Rufen wir die Beispielplatzierung *&#39;Homepage Banner&#39;* auf.
-   * **Kanaltyp**: Der Kanal, für den die Platzierung verwendet wird. Verwenden wir *&#39;Web&#39;* , da die Angebote auf der Luma-Website angezeigt werden.
-   * **Inhaltstyp**: Der Inhaltstyp, den die Platzierung anzeigen darf: Text, HTML, Bild-Link oder JSON. Sie können *&#39;HTML&#39;* für das Angebot verwenden.
+   * **Name**: der Name der Platzierung. Rufen wir die Beispielplatzierung *&#39;Homepage Banner&#39;*.
+   * **Kanaltyp** Der Kanal, für den die Platzierung verwendet wird. Verwenden wir *&#39;Web&#39;*, da die Angebote auf der Luma-Website angezeigt werden.
+   * **Content-**: Der Inhaltstyp, den die Platzierung anzeigen darf: Text, HTML, Bild-Link oder JSON. Sie können *&#39;HTML&#39;* für das Angebot verwenden.
    * **Beschreibung**: eine Beschreibung der Platzierung (optional).
 
    ![Details hinzufügen](assets/decisioning-placement-details.png)
 
 1. Klicken Sie auf **Speichern**.
-1. Nachdem die Platzierung erstellt wurde, wird sie in der Platzierungsliste angezeigt.
-1. Wählen Sie die Zeile aus, die Ihre neue Platzierung enthält, und notieren Sie sich die Platzierungs-ID, da dies für die Konfiguration in Ihrem Entscheidungsbereich erforderlich sein kann.
+1. Nachdem die Platzierung erstellt wurde, wird sie in der Liste der Platzierungen angezeigt.
+1. Wählen Sie die Zeile aus, die Ihre neue Platzierungs-ID enthält, und notieren Sie sich die Platzierungs-ID, da dies für die Konfiguration in Ihrem Entscheidungsumfang erforderlich sein kann.
 
    ![Siehe Platzierungs-ID ](assets/decisioning-placement-id.png)
 
 ### Entscheidungsregeln für den Treuestatus
 
-**Entscheidungsregeln** geben die Bedingungen an, unter denen die Angebote unterbreitet werden. In diesem Beispiel erstellen Sie Entscheidungsregeln, die abhängig vom Treuestatus eines Benutzers für verschiedene Angebote gelten.
+**Entscheidungsregeln** geben die Bedingungen an, unter denen die Angebote unterbreitet werden. In diesem Beispiel erstellen Sie Entscheidungsregeln, die je nach Treuestatus eines Benutzers verschiedene Angebote bereitstellen.
 
 Die Liste der Entscheidungsregeln ist im Menü **Komponenten** verfügbar.
 
@@ -187,82 +187,82 @@ Gehen Sie wie folgt vor, um die Entscheidungsregeln zu erstellen:
 
 1. Navigieren Sie zur Registerkarte **Regeln** und klicken Sie auf **Regel erstellen**.
 
-   ![ Regel erstellen](assets/decisioning-create-rule.png)
+   ![Regel erstellen](assets/decisioning-create-rule.png)
 
-1. Nennen wir die erste Regel &quot;*Gold Loyalty Status Rule*&quot;. Sie können XDM-Felder verwenden, um die Regel zu definieren. Der Adobe Experience Platform **Segmentaufbau** ist eine intuitive Benutzeroberfläche, mit der Sie Regelbedingungen erstellen können.
+1. Nennen wir die erste Regel &quot;*Gold-Treuestatus-Regel*. Sie können XDM-Felder verwenden, um die Regel zu definieren. Adobe Experience Platform **Segment Builder** ist eine intuitive Benutzeroberfläche zum Erstellen der Regelbedingungen.
 
-   ![Regel definieren](assets/decisioning-define-rule.png)
+   ![Definieren der Regel](assets/decisioning-define-rule.png)
 
-1. Klicken Sie auf **Speichern** , um die Regelbedingung zu bestätigen.
-1. Die neu gespeicherte Regel &quot;*Gold Loyalty Status Rule*&quot;wird in der Liste **Regeln** angezeigt. Wählen Sie es aus, um seine Eigenschaften anzuzeigen.
+1. Klicken Sie **Speichern**, um die Regelbedingung zu bestätigen.
+1. Die neu gespeicherte *Gold-Treuestatus-Regel* wird in der **Regelliste** angezeigt. Wählen Sie diese aus, um ihre Eigenschaften anzuzeigen.
 
    ![Erstellte Regel anzeigen](assets/decisioning-view-rules.png)
 
-1. Erstellen Sie nun die verbleibenden Bedingungen für die Treueangebotsregel für den Anwendungsfall.
+1. Erstellen Sie jetzt die verbleibenden Bedingungen für die Treueangebotsregel für den Anwendungsfall.
 
 
-### Sammlungskennungen
+### Sammlungskennzeichner
 
-**Sammlungsbezeichner** ermöglichen es Ihnen, Angebote in der Angebotsbibliothek einfach zu organisieren und zu suchen. In diesem Beispiel fügen Sie den Angeboten &quot;Treuebelohnungen&quot;Sammlungsbezeichner hinzu, um die Organisation des Angebots zu verbessern.
+**Sammlungsqualifizierer** ermöglichen es Ihnen, Angebote in der Angebotsbibliothek einfach zu organisieren und zu suchen. In diesem Beispiel fügen Sie den Treueprämien-Angeboten Sammlungsqualifizierer hinzu, um die Angebotsorganisation zu verbessern.
 
-Die Liste der Sammlungsbezeichner ist im Menü **Komponenten** verfügbar.
+Die Liste der Sammlungsqualifizierer ist im Menü **Komponenten** verfügbar.
 
-Gehen Sie wie folgt vor, um den Sammlungsbezeichner &quot;Treuebelohnungen&quot;zu erstellen:
+Gehen Sie wie folgt vor, um den Sammlungsqualifizierer für Treueprämien zu erstellen:
 
-1. Navigieren Sie zur Registerkarte **Sammlungsbezeichner** und klicken Sie auf **Sammlungsbezeichner erstellen**.
+1. Navigieren Sie zur Registerkarte **Sammlungsqualifizierer** und klicken Sie auf **Sammlungsqualifizierer erstellen**.
 
-   ![Sammlungsbezeichner erstellen](assets/decisioning-create-collection-qualifier.png)
+   ![Sammlungskennzeichner erstellen](assets/decisioning-create-collection-qualifier.png)
 
-1. Benennen wir den Sammlungsbezeichner &quot;*Treuebelohnungen*&quot;.
+1. Geben wir dem Sammlungsqualifizierer den Namen *Treueprämien*.
 
-   ![Benennen der Sammlung](assets/decisioning-name-collection.png)
+   ![Benennen Sie die Sammlung](assets/decisioning-name-collection.png)
 
-1. Der neue Sammlungsbezeichner sollte jetzt auf der Registerkarte **Sammlungsqualifikator** angezeigt werden.
+1. Der neue Sammlungskennzeichner sollte jetzt auf der Registerkarte **Sammlungskennzeichner“ angezeigt**.
 
 ## Angebote
 
-Jetzt ist es an der Zeit, die Angebote für Treuebelohnungen zu erstellen.
+Jetzt ist es an der Zeit, die Treueprämien-Angebote zu erstellen.
 
-Auf die Liste der Angebote kann im Menü **Angebote** zugegriffen werden.
+Die Liste der Angebote ist im Menü **Angebote** verfügbar.
 
-![Menü &quot;Angebote anzeigen&quot;](assets/decisioning-offers-menu.png)
+![Menü „Angebote anzeigen“](assets/decisioning-offers-menu.png)
 
 
-### Erstellen von Angeboten für verschiedene Treueebenen
+### Erstellen von Angeboten für verschiedene Treuestufen
 
-Erstellen Sie zunächst personalisierte Angebote für die verschiedenen Treueebenen in Luma.
+Erstellen Sie zunächst personalisierte Angebote für die verschiedenen Luma-Treuestufen.
 
-Gehen Sie wie folgt vor, um das erste **Angebot** zu erstellen:
+Gehen Sie wie **vor, um das erste** Angebot“ zu erstellen:
 
 1. Klicken Sie auf **Angebot erstellen** und wählen Sie dann **Personalisiertes Angebot** aus.
 
-1. Nennen wir das erste Angebot &quot;*Luma Loyalty Tier - Gold*&quot;. Sie müssen ein Start-/Enddatum und eine Uhrzeit für dieses Angebot angeben. Sie sollten auch den **Sammlungsqualifikator** &#39;*Treuebelohnungen*&#39; mit dem Angebot verknüpfen, damit Sie sich besser in der **Angebotsbibliothek** organisieren können. Klicken Sie anschließend auf **Weiter**.
+1. Nennen wir das erste Angebot &quot;*Loyalty Tier - Gold*. Sie müssen ein Start-/Enddatum und eine Uhrzeit für dieses Angebot angeben. Sie sollten auch den **Sammlungsqualifizierer** &quot;*Treueprämien* mit dem Angebot verknüpfen, damit Sie es in der **Angebotsbibliothek“ besser organisieren**. Klicken Sie anschließend auf **Weiter**.
 
-   ![Hinzufügen von Angebotsdetails](assets/decisioning-add-offer-details.png)
+   ![Angebotsdetails hinzufügen](assets/decisioning-add-offer-details.png)
 
-1. Jetzt müssen Sie **Darstellungen** hinzufügen, um festzulegen, wo das Angebot angezeigt wird. Wählen wir den **Webkanal** aus. Wählen wir auch die zuvor konfigurierte Platzierung &quot;*Homepage-Banner*&quot; **Platzierung**&quot;. Die ausgewählte **Platzierung** ist vom HTML-Typ, sodass Sie dem Editor direkt HTML-, JSON- oder Textinhalte hinzufügen können, um das Angebot mithilfe des Optionsfelds **Benutzerdefiniert** zu erstellen.
+1. Jetzt müssen Sie &quot;**&quot; hinzufügen** um festzulegen, wo das Angebot angezeigt wird. Wählen wir den **Webkanal**. Wählen wir auch das zuvor konfigurierte &quot;*Homepage-Banner***aus**. Die ausgewählte **Platzierung** ist vom Typ HTML. Sie können also HTML-, JSON- oder TEXTINHALTE direkt zum Editor hinzufügen, um das Angebot mithilfe des Optionsfelds **Benutzerdefiniert** zu erstellen.
 
-   ![Hinzufügen von Darstellungsdetails](assets/decisioning-add-representation-details.png)
+   ![Darstellungsdetails hinzufügen](assets/decisioning-add-representation-details.png)
 
-1. Bearbeiten Sie den Angebotsinhalt direkt mit dem **Ausdruckseditor**. Denken Sie daran, dass Sie dieser Platzierung HTML-, JSON- oder TEXTinhalte hinzufügen können. Stellen Sie sicher, dass Sie je nach Inhaltstyp unten im Editor den richtigen **mode** auswählen. Sie können auch auf **validate** klicken, um sicherzustellen, dass keine Fehler auftreten.
+1. Bearbeiten Sie den Angebotsinhalt direkt mit dem **Ausdruckseditor**. Denken Sie daran, dass Sie dieser Platzierung HTML-, JSON- oder TEXT-Inhalte hinzufügen können. Stellen Sie sicher, dass Sie **Modus** am unteren Rand des Editors abhängig von Ihrem Inhaltstyp auswählen. Sie können auch auf **validate** klicken, um sicherzustellen, dass keine Fehler auftreten.
 
-   ![Angebot hinzufügen, HTML](assets/decisioning-add-offer-html.png)
+   ![Angebots-HTML hinzufügen](assets/decisioning-add-offer-html.png)
 
-1. Sie können auch den Ausdruckseditor verwenden, um in Adobe Experience Platform gespeicherte Attribute abzurufen. Fügen wir den Vornamen eines Profils zum Angebotsinhalt hinzu, um die Mitglieder des Treueprogramms auf 1:1-Ebene besser zu personalisieren.
+1. Außerdem können Sie mit dem Ausdruckseditor in Adobe Experience Platform gespeicherte Attribute abrufen. Fügen wir den Vornamen eines Profils zum Angebotsinhalt hinzu, um die Mitglieder des Treueprogramms 1:1 besser zu personalisieren.
 
-   ![Angebotspersonalisierung hinzufügen](assets/decisioning-add-offer-personalization.png)
+   ![Hinzufügen der Angebotspersonalisierung](assets/decisioning-add-offer-personalization.png)
 
-1. Fügen Sie Einschränkungen hinzu, um das Angebot nur Profilen anzuzeigen, die für die &quot;*Gold Loyalty Status Rule*&quot;-Regel qualifiziert sind.
+1. Fügen Sie Einschränkungen hinzu, um das Angebot nur Profilen anzuzeigen, die sich für die &quot;*Gold-Treuestatus-Regel“*.
 
-   ![Fügen Sie Regelbegrenzung hinzu](assets/decisioning-add-rule-constraint.png)
+   ![Regeleinschränkung hinzufügen](assets/decisioning-add-rule-constraint.png)
 
-1. Nachdem Sie die Überprüfung Ihres Angebots abgeschlossen haben, klicken Sie auf **Beenden**. Wählen Sie **Speichern und genehmigen** aus.
+1. Nachdem Sie Ihr Angebot überprüft haben, klicken Sie auf **Beenden**. Wählen Sie **Speichern und genehmigen** aus.
 
-Erstellen Sie nun den Rest der Angebote für die verschiedenen Loyalitätsstufen von Luma
+Erstellen Sie nun den Rest der Angebote für die verschiedenen Luma-Treuestufen
 
 ### Fallback-Angebote
 
-Sie möchten weiterhin ein Angebot für Besucher ohne Luma-Treueprogramm auf der Site &quot;Luma&quot;bereitstellen. Dazu können Sie ein **Fallback-Angebot** für die Kampagne konfigurieren.
+Sie möchten auch weiterhin ein Angebot für Nicht-Luma-Besucher des Treueprogramms für die Luma-Site bereitstellen. Zu diesem Zweck können Sie ein **Fallback-Angebot** für die Kampagne konfigurieren.
 
 Gehen Sie wie folgt vor, um das Fallback-Angebot zu erstellen:
 
@@ -270,22 +270,22 @@ Gehen Sie wie folgt vor, um das Fallback-Angebot zu erstellen:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Nennen wir das Fallback-Angebot &quot;*Nicht-Luma-Treue*&quot;. Sie können auch den zuvor erstellten **Sammlungsqualifikator**, &#39;*Treuebelohnungen*&#39;, dem Fallback-Angebot zuordnen, um die Organisation des Angebots zu vereinfachen.
+1. Nennen wir das Fallback-Angebot &quot;*Loyalität gegenüber Luma*&quot;. Sie können auch den zuvor erstellten **Sammlungsqualifizierer**, &quot;*Treueprämien“,* Fallback-Angebot verknüpfen, um die Organisation von Angeboten zu vereinfachen.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Fügen Sie den Inhalt des Fallback-Angebots zum **Ausdruckseditor** hinzu. Denken Sie daran, dass Sie dieser Platzierung HTML-, JSON- oder TEXTinhalte hinzufügen können. Stellen Sie sicher, dass Sie je nach Inhaltstyp unten im Editor den richtigen **mode** auswählen. Sie können auch auf **validate** klicken, um sicherzustellen, dass keine Fehler auftreten.
+1. Fügen Sie den Fallback-Angebotsinhalt zum **Ausdruckseditor“**. Denken Sie daran, dass Sie dieser Platzierung HTML-, JSON- oder TEXT-Inhalte hinzufügen können. Stellen Sie sicher, dass Sie **Modus** am unteren Rand des Editors abhängig von Ihrem Inhaltstyp auswählen. Sie können auch auf **validate** klicken, um sicherzustellen, dass keine Fehler auftreten.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Wenn alles korrekt konfiguriert ist, drücken Sie **Beenden** und dann **Speichern und genehmigen**.
+1. Wenn alles korrekt konfiguriert ist, klicken Sie auf **Beenden** und dann auf **Speichern und genehmigen**.
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
 ## Entscheidungen
 
-**Entscheidungen** sind Container für Angebote, die je nach Zielgruppe das beste für einen Kunden verfügbare Angebot auswählen.
+**Entscheidungen** sind Container für Angebote, die das beste Angebot auswählen, das je nach Zielgruppe für einen Kunden verfügbar ist.
 
 Die Liste der Entscheidungen ist auf der Registerkarte **Entscheidungen** des Menüs **Angebote** verfügbar.
 <!--
@@ -294,88 +294,88 @@ Die Liste der Entscheidungen ist auf der Registerkarte **Entscheidungen** des Me
 
 ### Erstellen einer Entscheidung für Treueangebote
 
-Erstellen wir eine Entscheidung für den Anwendungsfall &quot;Loyalitätsbelohnungen für Luma&quot;.
+Erstellen wir eine Entscheidung für den Anwendungsfall „Luma-Treueprämien“.
 
 Gehen Sie wie folgt vor, um die Entscheidung zu erstellen:
 
-1. Klicken Sie auf **Entscheidung erstellen**.
+1. Klicken Sie **Entscheidung erstellen**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Nennen wir die Entscheidung &quot;*Treueangebote für Dezember*&quot;. Die Angebote sollten einen Monat lang ausgeführt werden. Legen wir also fest, dass dies hier der Fall ist.
+1. Rufen wir die Entscheidung „Dezember *Treueangebote für Luma“*. Die Angebote sollten einen Monat lang sein. Geben wir das also hier an.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Jetzt müssen Sie die **Entscheidungsbereiche** definieren. Wählen Sie zuerst eine Platzierung aus. Sie können das zuvor erstellte &quot;*Homepage-Banner*&quot; verwenden.
+1. Jetzt müssen Sie die **Entscheidungsumfänge“**. Wählen Sie zuerst eine Platzierung aus. Sie können das zuvor erstellte &quot;*Homepage-Banner* verwenden.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Als Nächstes müssen Sie **Bewertungskriterien** für den Entscheidungsbereich hinzufügen. Klicken Sie auf **Hinzufügen** und wählen Sie die zuvor erstellte Sammlung &quot;*Treuebelohnungen*&quot;aus, die alle zu berücksichtigenden Treueangebote enthält.
+1. Als Nächstes müssen Sie **Bewertungskriterien** für den Entscheidungsumfang hinzufügen. Klicken Sie **Hinzufügen** und wählen Sie die zuvor erstellte Sammlung *Treueprämien* aus, ** alle zu berücksichtigenden Treueangebote enthält.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. In der Kollektion &#39;*Treuebelohnungen*&#39; können Sie das Feld &quot;Eignung&quot;verwenden, um den Versand von Angeboten auf eine Untergruppe von Luma-Besuchern zu beschränken. Für diesen Anwendungsfall möchten Sie jedoch, dass jeder Besucher eines der Angebote erhält. Beachten Sie, dass Sie für alle Besucher, die nicht dem Treueprogramm angehören, ein **Fallback-Angebot** konfiguriert haben. Setzen Sie die Berechtigung auf &quot;Keine&quot;.
+1. Innerhalb der Sammlung *Treueprämien* können Sie das Eignungsfeld verwenden, um den Versand von Angeboten auf eine Untergruppe von Luma-Besuchern zu beschränken. In diesem Anwendungsfall soll jedoch jeder Besucher eines der Angebote erhalten. Denken Sie daran, dass Sie ein **Fallback-Angebot** für alle Besucher konfiguriert haben, die keine Treueprogramm sind. Die Berechtigung auf „Keine“ festlegen.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Sie können auch das Feld **Ranking method** verwenden, um das beste Angebot für jeden Luma-Besucher auszuwählen, wenn mehrere Angebote für die Benutzer-/Platzierungskombination infrage kommen. Für diesen Anwendungsfall können Sie die Methode **Angebotspriorität** verwenden, die die in den Angeboten definierten Werte verwendet, um das beste Angebot bereitzustellen.
+1. Außerdem können Sie das Feld **Rangfolgenmethode** verwenden, um das beste Angebot für jeden Luma-Besucher auszuwählen, wenn mehrere Angebote für die Kombination Benutzer/Platzierung geeignet sind. Für diesen Anwendungsfall können Sie die Methode **Angebotspriorität** verwenden, die die in den Angeboten definierten Werte verwendet, um das beste Angebot zu unterbreiten.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Fügen Sie der Entscheidung jetzt das Fallback-Angebot **1} hinzu.** Beachten Sie, dass das Fallback-Angebot das Standardangebot ist, das Luma-Besuchern angezeigt wird, wenn sie keiner der Zielgruppen vom Typ &quot;Treue zu Luma&quot;angehören. Wählen Sie &quot;*Nicht-Luma-Treue*&quot;aus der Liste der verfügbaren Fallback-Angebote für die Platzierung &quot;*Homepage-Banner*&quot;aus.
+1. Fügen Sie nun das **Fallback-Angebot** zur Entscheidung hinzu. Erinnern Sie sich daran, dass das Fallback-Angebot das Standardangebot ist, das Luma-Besuchern angezeigt wird, wenn sie nicht in eine der Zielgruppen „Luma-Treue“ fallen. Wählen Sie *Nicht-Luma-Treue* aus der Liste der verfügbaren Fallback-Angebote für die Platzierung *Homepage-*&quot; aus.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Bevor wir die Entscheidung aktivieren, überprüfen wir den Umfang der Entscheidung, das Fallback-Angebot, zeigen eine Vorschau der verfügbaren Angebote an und schätzen die qualifizierten Profile. Sobald alles gut aussieht, können Sie auf **Beenden** und **Speichern und aktivieren** klicken.
+1. Vor der Aktivierung der Entscheidung sollten wir den Entscheidungsumfang, das Fallback-Angebot, die Vorschau der verfügbaren Angebote und die Schätzung der qualifizierten Profile überprüfen. Sobald alles gut aussieht, können Sie auf &quot;**&quot;** &quot;**und aktivieren** klicken.
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
 ## Simulationen
 
-Als Best Practice sollten Sie die Entscheidungslogik für das Treueprogramm von Luma validieren, um sicherzustellen, dass die richtigen Angebote an die richtigen Loyalitätszielgruppen gesendet werden. Sie können diese Validierung mit **Testprofilen** durchführen. Außerdem ist es empfehlenswert, Änderungen an Angeboten über Testprofile zu testen, bevor neue Angebotsversionen in die Produktion gepusht werden.
+Als Best Practice sollten Sie die Entscheidungslogik für die Treue zu Luma validieren, um sicherzustellen, dass die richtigen Angebote für die richtigen Treueprogramm-Zielgruppen bereitgestellt werden. Sie können diese Validierung mithilfe von **Testprofilen“**. Außerdem empfiehlt es sich, Änderungen an Angeboten über Testprofile zu testen, bevor neue Angebotsversionen in die Produktion verschoben werden.
 
-Um den Test zu starten, wählen Sie die Registerkarte **Simulationen** aus dem Menü **Angebote** aus.
+Um mit dem Testen zu beginnen, wählen Sie die **Simulationen** aus dem Menü **Angebote** aus.
 
 ### Testen von Treueangeboten
 
-1. Wählen Sie ein Testprofil aus, das für die Simulation verwendet werden soll. Klicken Sie auf **Profil verwalten**. [Befolgen Sie dieses Handbuch](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv), um ein neues Testprofil für Angebotstests zu erstellen oder festzulegen.
+1. Testprofil auswählen, das für die Simulation verwendet werden soll. Klicken Sie **Profil verwalten**. [Um ein neues Testprofil für Angebotstests zu erstellen oder festzulegen, folgen Sie diesem Handbuch](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Fügen Sie ein oder mehrere Testprofile zur Simulation hinzu und speichern Sie Ihre Auswahl. Für die Falltests sollten Sie sicherstellen, dass Sie Testprofile für jede Luma Loyalty Rewards-Zielgruppe konfiguriert haben.
+1. Fügen Sie ein oder mehrere Testprofile zur Simulation hinzu und speichern Sie Ihre Auswahl. Für die Anwendungsfalltests sollten Sie sicherstellen, dass Sie Testprofile für jede Zielgruppe mit Luma-Treueprämien konfiguriert haben.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Wählen Sie den zu testenden Entscheidungsbereich aus. Wählen Sie **Entscheidungsumfang hinzufügen** aus.
+1. Wählen Sie den zu testenden Entscheidungsumfang aus. Wählen Sie **Entscheidungsumfang hinzufügen** aus.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Wählen Sie die zuvor erstellte Platzierung &quot;*Homepage-Banner*&quot;aus.
+1. Wählen Sie die zuvor erstellte Platzierung *Homepage-*&quot; aus.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Die verfügbaren Entscheidungen werden angezeigt, wählen Sie die zuvor erstellte Entscheidung &quot;*Treueangebote für Dezember*&quot;aus und klicken Sie auf **Hinzufügen**.
+1. Die verfügbaren Entscheidungen werden angezeigt. Wählen Sie die zuvor erstellte Entscheidung *Dezember Luma-Treueangebote* und klicken Sie auf **Hinzufügen**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Nachdem Sie ein Testprofil ausgewählt haben, klicken Sie auf **Ergebnisse anzeigen**. Das beste verfügbare Angebot wird dem ausgewählten Testprofil für die Entscheidung &quot;*Treueangebote für Dezember in Luma*&quot;angezeigt.
+1. Klicken Sie nach Auswahl eines Testprofils auf **Ergebnisse anzeigen**. Das beste verfügbare Angebot wird dem ausgewählten Testprofil für die Entscheidung &quot;*Dezember Luma-Treueangebote* angezeigt.
    <!--
       ![ADD SCREENSHOT](#)
    -->
 1. Wählen Sie ein anderes Testprofil aus und klicken Sie auf **Ergebnisse anzeigen**. Idealerweise sollte ein anderes simuliertes Angebot angezeigt werden, das der Treuestufe des Testprofils entspricht.
 
-## Validierung der Entscheidungsverwaltung mithilfe von Adobe Experience Platform Debugger
+## Validierung des Entscheidungs-Managements mithilfe von Adobe Experience Platform Debugger
 
-Die sowohl für Chrome als auch Firefox verfügbare Erweiterung **Adobe Experience Platform Debugger** analysiert Ihre Webseiten, um Probleme bei der Implementierung von Adobe Experience Cloud-Lösungen zu identifizieren.
+Die Erweiterung **Adobe Experience Platform Debugger**, die sowohl für Chrome als auch für Firefox verfügbar ist, analysiert Ihre Web-Seiten, um Probleme bei der Implementierung von Adobe Experience Cloud-Lösungen zu identifizieren.
 
-Sie können den Debugger auf der Site &quot;Luma&quot;verwenden, um die Entscheidungslogik in der Produktion zu überprüfen. Diese Validierung empfiehlt sich, sobald der Anwendungsfall &quot;Treuebelohnungen&quot;aktiv ist, um sicherzustellen, dass alles korrekt konfiguriert ist.
+Sie können den Debugger auf der Luma-Site verwenden, um die Entscheidungslogik in der Produktion zu validieren. Diese Validierung empfiehlt sich, sobald der Anwendungsfall „Treueprämien“ ausgeführt wird, um sicherzustellen, dass alles korrekt konfiguriert ist.
 
-[Erfahren Sie hier, wie Sie den Debugger in Ihrem Browser mithilfe des Leitfadens konfigurieren](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 So starten Sie die Validierung mit dem Debugger:
 
-1. Navigieren Sie mit der Angebotsplatzierung zur Webseite &quot;Luma&quot;.
+1. Navigieren Sie zur Web-Seite von Luma mit der Platzierung des Angebots.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -383,19 +383,19 @@ So starten Sie die Validierung mit dem Debugger:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Navigieren Sie zu **Zusammenfassung**. Stellen Sie sicher, dass die **Datastream-ID** mit dem **Datastream** in der **Adobe-Datenerfassung** übereinstimmt, für den Sie Offer decisioning aktiviert haben.
+1. Navigieren Sie zu **Zusammenfassung**. Überprüfen Sie, ob **Datenstrom-ID** mit dem **Datenstrom** in der **Adobe-Datenerfassung** übereinstimmt, für den Sie Offer decisioning aktiviert haben.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Navigieren Sie unter **Lösungen** zum **Experience Platform Web SDK**.
+1. Navigieren **unter &quot;**&quot; zur **Experience Platform Web SDK**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Schalten Sie auf der Registerkarte **Konfiguration** die Option **Debugging aktivieren** um. Dadurch wird die Protokollierung für die Sitzung in einer **Adobe Experience Platform Assurance**-Sitzung aktiviert.
+1. Schalten Sie auf der **Konfiguration** die Option **Debugging aktivieren** ein. Dadurch wird die Protokollierung für die Sitzung innerhalb einer **Adobe Experience Platform Assurance**-Sitzung aktiviert.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Sie können sich dann mit verschiedenen Treuekonten von Luma bei der Site anmelden und den Debugger verwenden, um die an das Adobe Experience Platform Edge-Netzwerk gesendeten Anforderungen zu validieren.**** Alle diese Anfragen sollten in **Assurance** für die Protokollverfolgung erfasst werden.
+1. Sie können sich dann mit verschiedenen Luma-Treuekonten bei der Website anmelden und den Debugger verwenden, um die an das **Adobe Experience Platform Edge-Netzwerk gesendeten Anfragen zu**. Alle diese Anfragen sollten zur Protokollverfolgung in **Assurance** erfasst werden.
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -404,4 +404,4 @@ So starten Sie die Validierung mit dem Debugger:
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investiert haben, um mehr über das Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, ein allgemeines Feedback teilen oder Anregungen zu künftigen Inhalten haben möchten, teilen Sie diese bitte in diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996) mit.
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,6 +1,6 @@
 ---
-title: Experience Cloud in Websites mit Tags implementieren
-description: Die Implementierung der Experience Cloud in Websites mit Tags ist der perfekte Ausgangspunkt für Frontend-Entwickler oder technische Marketingexperten, die lernen möchten, wie die Adobe Experience Cloud-Lösungen auf ihrer Website implementiert werden.
+title: Implementieren des Experience Cloud in Websites mit Tags
+description: Die Implementierung des Experience Cloud in Websites mit Tags ist der perfekte Ausgangspunkt für Frontend-Entwickler oder technische Marketing-Experten, die lernen möchten, wie die Adobe Experience Cloud-Lösungen auf ihrer Website implementiert werden.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
@@ -12,23 +12,23 @@ ht-degree: 37%
 
 # Übersicht
 
-_Die Implementierung der Experience Cloud in Websites mit Tags_ ist der perfekte Ausgangspunkt für Frontend-Entwickler oder technische Marketingexperten, die lernen möchten, wie die Adobe Experience Cloud-Lösungen auf ihrer Website implementiert werden.
+_Implementieren des Experience Cloud in Websites mit Tags_ ist der perfekte Ausgangspunkt für Frontend-Entwickler oder technische Marketing-Experten, die lernen möchten, wie die Adobe Experience Cloud-Lösungen auf ihrer Website implementiert werden.
 
-Jede Lektion enthält Anleitungen und grundlegende Informationen, die Ihnen die Implementierung von Experience Cloud und deren Vorteile näherbringen.  Innerhalb des Tutorials werden Ihnen Demosites bereitgestellt, anhand deren Sie die zugrunde liegenden Techniken in einer sicheren Umgebung erlernen können. Nach Abschluss dieses Tutorials sollten Sie bereit sein, mit der Implementierung all Ihrer Marketing-Lösungen über Tags auf Ihrer eigenen Website zu beginnen.
+Jede Lektion enthält Anleitungen und grundlegende Informationen, die Ihnen die Implementierung von Experience Cloud und deren Vorteile näherbringen.  Innerhalb des Tutorials werden Ihnen Demosites bereitgestellt, anhand deren Sie die zugrunde liegenden Techniken in einer sicheren Umgebung erlernen können. Nach Abschluss dieses Tutorials sollten Sie bereit sein, alle Ihre Marketing-Lösungen über Tags auf Ihrer eigenen Website zu implementieren.
 
 >[!INFO]
 >
->In diesem Tutorial werden anwendungsspezifische Erweiterungen und Bibliotheken verwendet (AppMeasurement.js für Adobe Analytics, at.js für Adobe Target). Wenn Sie Adobe Experience Platform Web SDK implementieren möchten, lesen Sie das Tutorial [Adobe Experience Cloud mit Web SDK implementieren](/help/tutorial-web-sdk/overview.md) .
+>In diesem Tutorial werden anwendungsspezifische Erweiterungen und Bibliotheken verwendet (AppMeasurement.js für Adobe Analytics, at.js für Adobe Target). Wenn Sie Adobe Experience Platform Web SDK implementieren möchten, lesen Sie das Tutorial [Implementieren von Adobe Experience Cloud mit Web SDK](/help/tutorial-web-sdk/overview.md) .
 
 
 Nach Abschluss dieses Tutorials können Sie Folgendes:
 
-* Tag-Eigenschaft erstellen
+* Erstellen einer Tag-Eigenschaft
 
 * Installieren einer Tag-Eigenschaft auf einer Website
 
 * die folgenden Adobe Experience Cloud-Lösungen hinzufügen:
-   * **[Adobe Experience Platform Identity-Dienst](id-service.md)**
+   * **[Adobe Experience Platform Identity Service](id-service.md)**
    * **[Adobe Target](target.md)**
    * **[Adobe Analytics](analytics.md)**
    * **[Adobe Audience Manager](audience-manager.md)**
@@ -37,11 +37,11 @@ Nach Abschluss dieses Tutorials können Sie Folgendes:
 
 * Implementierung mit Adobe Experience Cloud Debugger überprüfen
 
-* Publish-Änderungen durch Entwicklungs-, Staging- und Produktionsumgebungen
+* Publish verändert sich durch Entwicklungs-, Staging- und Produktionsumgebungen
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
+>Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
 > * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
@@ -55,35 +55,35 @@ Nach Abschluss dieses Tutorials können Sie Folgendes:
 
 In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe ID und die erforderlichen Berechtigungen zum Ausführen der Übungen verfügen. Andernfalls müssen Sie sich an Ihren Experience Cloud-Administrator wenden, um Zugriff anzufordern.
 
-* Für Tags müssen Sie über die Berechtigungen &quot;Entwickeln&quot;, &quot;Genehmigen&quot;, &quot;Publish&quot;, &quot;Erweiterungen verwalten&quot;und &quot;Umgebungen verwalten&quot;verfügen. Weitere Informationen zu Tag-Benutzerberechtigungen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de).
+* Für Tags müssen Sie über die Berechtigung zum Entwickeln, Genehmigen, Publish, Verwalten von Erweiterungen und Verwalten von Umgebungen verfügen. Weitere Informationen zu Tag-Benutzerberechtigungen finden Sie unter [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de).
 * Für Adobe Analytics müssen Sie Ihren Trackingserver kennen und wissen, welche Report Suites Sie für dieses Tutorial verwenden.
-* Audience Manager: Sie müssen Ihre Audience Manager-Subdomäne kennen (auch als &quot;Partnername&quot;, &quot;Partner-ID&quot;oder &quot;Partner-Subdomäne&quot;bezeichnet).
+* Für den Audience Manager müssen Sie Ihre Audience Manager-Subdomain kennen (auch als „Partnername“, „Partnerkennung“ oder „Partnersubdomain“ bezeichnet)
 
-Es wird außerdem davon ausgegangen, dass Sie mit Frontend-Entwicklungssprachen wie HTML und JavaScript vertraut sind. Sie müssen kein Experte in diesen Sprachen sein, um die Lektionen abzuschließen, aber Sie werden mehr daraus lernen, wenn Sie Code bequem lesen und verstehen können.
+Es wird außerdem davon ausgegangen, dass Sie mit Frontend-Entwicklungssprachen wie HTML und JavaScript vertraut sind. Sie müssen kein Experte in diesen Sprachen sein, um den Unterricht abzuschließen, aber Sie werden mehr aus ihnen herausholen, wenn Sie Code bequem lesen und verstehen können.
 
 ## Über Tags
 
-Die Tag-Funktion von Adobe Experience Platform ist die nächste Generation der Website-Tag- und mobilen SDK-Verwaltungsfunktionen von Adobe. Mit Tags erhalten Kunden eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbelösungen bereitzustellen und zu verwalten, die zur Unterstützung entsprechender Kundenerlebnisse erforderlich sind. Für Tags fallen keine zusätzlichen Gebühren an. Launch steht jedem Adobe Experience Cloud-Kunden zur Verfügung.
+Die Tags-Funktion von Adobe Experience Platform umfasst die nächste Generation von Adobe-Verwaltungsfunktionen für Website-Tags und mobile SDK. Tags bietet Kunden eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbelösungen bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse erforderlich sind. Für Tags fallen keine zusätzlichen Kosten an. Launch steht jedem Adobe Experience Cloud-Kunden zur Verfügung.
 
-Mit Tags für Websites können Sie alle JavaScript zentral verwalten, die mit Analyse-, Marketing- und Werbelösungen verbunden sind, die auf Ihren Desktop- und mobilen Sites verwendet werden. Wenn Sie beispielsweise Adobe Analytics bereitstellen, verwalten Tags die AppMeasurement JavaScript-Bibliothek, füllen Variablen aus und lösen Anfragen aus.
+Mit Tags für Websites können Sie alle JavaScript-Lösungen für Analyse-, Marketing- und Werbelösungen, die auf Ihren Desktop- und mobilen Sites verwendet werden, zentral verwalten. Wenn Sie beispielsweise Adobe Analytics bereitstellen, verwalten Tags die AppMeasurement-JavaScript-Bibliothek, füllen Variablen auf und lösen Anfragen aus.
 
 Der Inhalt Ihres Containers wird minimiert, einschließlich Ihres benutzerspezifischen Codes. Alles ist modular. Wenn Sie ein Element nicht benötigen, ist es nicht in Ihrer Bibliothek enthalten. Das Ergebnis ist eine schnelle und kompakte Implementierung.
 
-Tags sind außerdem eine Plattform, mit der Drittanbieter Erweiterungen erstellen können, um die Bereitstellung ihrer Lösungen über Tags zu vereinfachen. Eine Erweiterung ist ein Codepaket (JavaScript, HTML und CSS), das die Tag-Oberfläche und die Client-Funktionalität erweitert. Sie können sich Tags als Betriebssystem vorstellen, und Erweiterungen sind die Apps, mit denen Sie Ihre Aufgaben erledigen.
+Tags ist auch eine Plattform, über die Drittanbieter Erweiterungen erstellen können, um die Bereitstellung ihrer Lösungen über Tags zu vereinfachen. Eine Erweiterung ist ein Codepaket (JavaScript, HTML und CSS), das die Tags-Oberfläche und die Client-Funktionalität erweitert. Sie können sich Tags wie ein Betriebssystem vorstellen, bei dem Erweiterungen die Programme sind, mit denen Sie Ihre Aufgaben erledigen.
 
 ## Informationen zu den Lektionen
 
-In diesen Lektionen implementieren Sie Adobe Experience Cloud in eine simulierte Einzelhandelswebsite mit dem Namen „Luma“. Die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) verfügt über einen umfangreichen Daten-Layer und Funktionen, mit denen Sie eine realistische Implementierung erstellen können. Sie erstellen Ihre eigene Tag-Eigenschaft in Ihrer eigenen Experience Cloud-Organisation und ordnen sie mithilfe des Experience Cloud Debuggers unserer gehosteten Site &quot;Luma&quot;zu.
+In diesen Lektionen implementieren Sie Adobe Experience Cloud in eine simulierte Einzelhandelswebsite mit dem Namen „Luma“. Die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) verfügt über einen umfangreichen Daten-Layer und Funktionen, mit denen Sie eine realistische Implementierung erstellen können. Sie erstellen Ihre eigene Tag-Eigenschaft in Ihrem eigenen Experience Cloud-Unternehmen und ordnen sie mithilfe des Experience Cloud Debuggers unserer gehosteten Luma-Site zu.
 
 [![Luma-Website](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 ## Die richtigen Tools
 
 1. Da Sie einige browserspezifische Erweiterungen verwenden werden, empfehlen wir, das Tutorial mit dem [Chrome-Webbrowser](https://www.google.com/chrome/) / abzuschließen
-1. Hinzufügen der Erweiterung [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) zum Chrome-Browser
-1. HTML-Beispielseitencode kopieren
+1. Fügen Sie die Erweiterung {0](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)Adobe Experience Platform Debugger} zu Ihrem Chrome-Browser hinzu[
+1. Kopieren Sie den HTML-Beispiel-Seiten-Code
 
-   +++HTML-Seitencode
+   +++HTML-Beispiel-Seiten-Code
 
    ```html
    <!doctype html>
@@ -137,8 +137,8 @@ In diesen Lektionen implementieren Sie Adobe Experience Cloud in eine simulier
 
 >[!NOTE]
 >
->Möglicherweise ist es einfacher, dieses Tutorial mit der in Chrome geöffneten Site &quot;Luma&quot;abzuschließen, während Sie dieses Tutorial lesen und die Schritte der Datenerfassungsoberfläche in einem anderen Browser ausführen.
+>Möglicherweise finden Sie es einfacher, dieses Tutorial abzuschließen, wenn die Luma-Site in Chrome geöffnet ist, während Sie dieses Tutorial lesen und die Schritte zur Datenerfassungs-Oberfläche in einem anderen Browser durchführen.
 
 Los geht‘s!
 
-[Weiter mit &quot;Erstellen einer Tag-Eigenschaft&quot;>](create-a-property.md)
+[Weiter „Tag-Eigenschaft erstellen“ >](create-a-property.md)

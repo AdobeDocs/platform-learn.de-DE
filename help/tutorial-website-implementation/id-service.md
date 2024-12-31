@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen des Adobe Experience Platform Identity-Diensts mit Tags
-description: Erfahren Sie, wie Sie die Adobe Experience Platform Identity Service-Erweiterung hinzufügen und Kunden-IDs mit der Aktion zum Festlegen von Kunden-IDs erfassen. Diese Lektion ist Teil des Tutorials zum Implementieren des Experience Cloud in Websites .
+title: Hinzufügen des Adobe Experience Platform Identity Services mit Tags
+description: Erfahren Sie, wie Sie die Adobe Experience Platform Identity Service-Erweiterung hinzufügen und Kunden-IDs mit der Aktion zum Festlegen von Kunden-IDs erfassen. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
@@ -14,11 +14,11 @@ ht-degree: 65%
 
 Diese Lektion führt Sie durch die Schritte, die zur Implementierung der [Adobe Experience Platform Identity Service-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) und zum Senden von Kunden-IDs erforderlich sind.
 
-Der [Adobe Experience Platform Identity-Dienst](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de) legt eine gemeinsame Besucher-ID für alle Adobe-Lösungen fest, um Experience Cloud-Funktionen wie die Freigabe von Zielgruppen zwischen-Lösungen zu unterstützen. Sie können auch eigene Kunden-IDs an den Service senden, um geräteübergreifendes Targeting und die Integration in Ihr CRM (Customer Relationship Management)-System zu ermöglichen.
+Der [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de) legt eine gemeinsame Besucher-ID für alle Adobe-Lösungen fest, um Experience Cloud-Funktionen wie die gemeinsame Nutzung von Audiences zwischen Lösungen zu ermöglichen. Sie können auch eigene Kunden-IDs an den Service senden, um geräteübergreifendes Targeting und die Integration in Ihr CRM (Customer Relationship Management)-System zu ermöglichen.
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
+>Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
 > * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
@@ -35,49 +35,49 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Sie sollten die Lektionen im Abschnitt [Tags konfigurieren](create-a-property.md) bereits abgeschlossen haben.
+Sie sollten die Lektionen bereits im Abschnitt [Konfigurieren von Tags](create-a-property.md) abgeschlossen haben.
 
 ## Identity Service-Erweiterung hinzufügen
 
-Da dies die erste Erweiterung ist, die Sie hinzufügen, hier eine kurze Übersicht über Erweiterungen. Erweiterungen sind eine der Kernfunktionen von Tags. Eine Erweiterung ist eine Integration, die von Adobe, einem Adobe-Partner oder einem Adobe-Kunden erstellt wurde und zahllose neue Optionen für die Tags bietet, die Sie auf Ihren Websites bereitstellen können. Wenn Sie sich Tags als Betriebssystem vorstellen, sind Erweiterungen die Apps, die Sie installieren, damit Tags die Dinge tun können, die Sie benötigen.
+Da dies die erste Erweiterung ist, die Sie hinzufügen, hier eine kurze Übersicht über Erweiterungen. Erweiterungen sind eine der Kernfunktionen von Tags. Eine Erweiterung ist eine Integration, die von Adobe, einem Adobe-Partner oder einem Adobe-Kunden erstellt wurde und zahllose neue Optionen für die Tags bietet, die Sie auf Ihren Websites bereitstellen können. Wenn Sie sich Tags als Betriebssystem vorstellen, sind Erweiterungen die Apps, die Sie installieren, damit Tags die Dinge tun können, die Sie tun müssen.
 
 **Hinzufügen der Identity Service-Erweiterung**
 
-1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Erweiterungen]** .
+1. Klicken Sie in der linken Navigation auf **[!UICONTROL Erweiterungen]**
 
-1. Klicken Sie auf **[!UICONTROL Katalog]** , um zur Seite &quot;Erweiterungskatalog&quot;zu wechseln.
+1. Klicken Sie **[!UICONTROL Katalog]**, um zur Seite „Erweiterungskatalog“ zu wechseln
 
 1. Beachten Sie die verschiedenen Erweiterungen, die im Katalog verfügbar sind.
 
 1. Geben Sie oben im Filter „id“ ein, um den Katalog zu filtern.
 
-1. Klicken Sie auf der Karte für den Adobe Experience Platform Identity-Dienst auf **[!UICONTROL Installieren]** .
+1. Klicken Sie auf der Karte für den Adobe Experience Platform Identity Service auf **[!UICONTROL Installieren]**
 
    ![Installieren der Identity Service-Erweiterung](images/idservice-install.png)
 
 1. Beachten Sie, dass Ihre Experience Cloud-Organisations-ID automatisch erkannt wird.
 
-1. Behalten Sie alle Standardeinstellungen bei und klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**
+1. Belassen Sie alle Standardeinstellungen und klicken Sie auf **[!UICONTROL In Bibliothek speichern und erstellen]**
 
    ![Speichern der Erweiterung](images/idservice-save.png)
 
 >[!NOTE]
 >
->Jede Version der Identity Service-Erweiterung enthält eine spezifische Version von VisitorAPI.js, die in der Erweiterungsbeschreibung vermerkt ist. Sie aktualisieren die VisitorAPI.js-Version, indem Sie die Identity Service-Erweiterung aktualisieren.
+>Jede Version der Identity Service-Erweiterung enthält eine bestimmte Version von VisitorAPI.js, die in der Beschreibung der Erweiterung aufgeführt ist. Sie aktualisieren die VisitorAPI.js-Version, indem Sie die Identity Service-Erweiterung aktualisieren.
 
 ### Überprüfen der Erweiterung
 
-Die Identity Service-Erweiterung ist eine der wenigen Tag-Erweiterungen, die Anfragen senden, ohne eine Regelaktion verwenden zu müssen. Die Erweiterung sendet beim ersten Seitenladevorgang des ersten Besuchs einer Website automatisch eine Anforderung an den Identity Service. Sobald die ID angefordert wurde, wird sie in einem Erstanbieter-Cookie gespeichert, das mit „AMCV_“ beginnt.
+Die Identity Service-Erweiterung ist eine der wenigen Tag-Erweiterungen, die eine Anfrage stellt, ohne eine Regelaktion verwenden zu müssen. Die Erweiterung sendet beim ersten Seitenladevorgang des ersten Besuchs einer Website automatisch eine Anforderung an den Identity Service. Sobald die ID angefordert wurde, wird sie in einem Erstanbieter-Cookie gespeichert, das mit „AMCV_“ beginnt.
 
 **Überprüfen der Identity Service-Erweiterung**
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion ](switch-environments.md).
 
-1. Auf der Registerkarte &quot;Zusammenfassung&quot;des Debuggers sollte der Abschnitt &quot;Tags&quot;angeben, dass die Adobe Experience Platform Identity Service-Erweiterung implementiert ist.
+1. Auf der Registerkarte Zusammenfassung des Debuggers sollte der Abschnitt Tags anzeigen, dass die Adobe Experience Platform Identity Service-Erweiterung implementiert ist.
 
-1. Außerdem sollte auf der Registerkarte &quot;Zusammenfassung&quot;im Abschnitt &quot;Identity Service&quot;dieselbe Organisations-ID angezeigt werden, die sich auf dem Erweiterungskonfigurationsbildschirm in der Datenerfassungsoberfläche befand:
+1. Außerdem sollte der Abschnitt Identity Service auf der Registerkarte Zusammenfassung mit derselben Organisations-ID ausgefüllt werden, die sich auf dem Konfigurationsbildschirm Ihrer Erweiterung in der Datenerfassungs-Oberfläche befand:
 
    ![Überprüfen, ob die Adobe Experience Platform Identity Service-Erweiterung implementiert ist](images/idservice-debugger-summary.png)
 
@@ -89,7 +89,7 @@ Die Identity Service-Erweiterung ist eine der wenigen Tag-Erweiterungen, die Anf
    1. Navigieren Sie zur Registerkarte `Application`.
    1. Erweitern Sie „`Cookies`“ auf der linken Seite.
    1. Klicken Sie auf die Domain `https://luma.enablementadobe.com`.
-   1. Suchen Sie auf der rechten Seite nach dem „AMCV_“-Cookie. Möglicherweise gibt es mehrere Fälle, in denen die Site &quot;Luma&quot;sowohl mit der fest codierten Tag-Eigenschaft als auch mit Ihrer eigenen geladen wurde.
+   1. Suchen Sie auf der rechten Seite nach dem „AMCV_“-Cookie. Möglicherweise sehen Sie mehrere , seit Sie die Luma-Site geladen haben, indem Sie sowohl ihre hartcodierte Tag-Eigenschaft als auch ihre eigene Eigenschaft zugeordnet haben.
       ![Überprüfen des „AMCV_“-Cookies](images/idservice-AMCVCookie.png)
 
 Das ist alles! Sie haben Ihre erste Erweiterung hinzugefügt! Weitere Informationen zu den Konfigurationsoptionen des Identity Service finden Sie in [der Dokumentation](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=de).
@@ -109,14 +109,14 @@ Erstellen Sie zunächst zwei Datenelemente:
 
 **Erstellen des Datenelements für den Authentifizierungsstatus**
 
-1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Datenelemente]** .
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Datenelement hinzufügen]** .
+1. Klicken Sie **[!UICONTROL linken Navigationsbereich auf]** Datenelemente“
+1. Klicken Sie auf **[!UICONTROL Schaltfläche „Datenelement]**&quot;
 
    ![Klicken Sie auf „Datenelement hinzufüge“](images/idservice-addDataElement1.png)
 
 1. Benennen Sie das Datenelement `Authentication State`.
-1. Wählen Sie für den **[!UICONTROL Datenelementtyp]** **[!UICONTROL Benutzerdefinierter Code]** aus.
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Editor öffnen]** .
+1. Wählen Sie für **[!UICONTROL Datenelementtyp]** die Option **[!UICONTROL Benutzerdefinierter Code]**
+1. Klicken Sie auf **[!UICONTROL Schaltfläche]** Editor öffnen“
 
    ![Öffnen Sie den Editor, um den benutzerdefinierten Code für das Datenelement hinzuzufügen](images/idservice-authenticationState.png)
 
@@ -129,12 +129,12 @@ Erstellen Sie zunächst zwei Datenelemente:
        return "logged out"
    ```
 
-1. Klicken Sie auf **[!UICONTROL Speichern]** , um den benutzerspezifischen Code zu speichern.
+1. Klicken Sie **[!UICONTROL Speichern]**, um den benutzerdefinierten Code zu speichern
 
    ![Speichern Sie den benutzerspezifischen Code](images/idservice-authenticationCode.png)
 
 1. Behalten Sie bei allen anderen Einstellungen die Standardwerte bei.
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]** , um das Datenelement zu speichern und zur Seite mit den Datenelementen zurückzukehren. Wir müssen erst dann einen &quot;Build&quot;erstellen, wenn wir alle Änderungen vorgenommen haben und bereit sind zu validieren.
+1. Klicken Sie **[!UICONTROL In Bibliothek speichern]**, um das Datenelement zu speichern und zur Seite „Datenelemente“ zurückzukehren. Wir müssen erst dann einen Build erstellen, wenn wir alle unsere Änderungen vorgenommen haben und bereit zur Validierung sind.
 
    ![Speichern Sie das Datenelement](images/idservice-authenticationStateFinalSave.png)
 
@@ -142,15 +142,15 @@ Indem Sie den Authentifizierungsstatus des Benutzers kennen, wissen Sie, wann ei
 
 **Hinzufügen des Datenelements für die gehashte-E-Mail**
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Datenelement hinzufügen]** .
+1. Klicken Sie auf **[!UICONTROL Schaltfläche „Datenelement]**&quot;
 
    ![Datenelemente hinzuzufügen](images/idservice-addDataElement2.png)
 
 1. Benennen Sie das Datenelement `Email (Hashed)`.
-1. Wählen Sie für den **[!UICONTROL Datenelementtyp]** **[!UICONTROL JavaScript-Variable]** aus.
-1. Verwenden Sie als **[!UICONTROL JavaScript-Variablennamen]** den folgenden Zeiger auf eine Variable im Datenschicht der Site &quot;Luma&quot;: `digitalData.user.0.profile.0.attributes.username`
+1. Wählen Sie für **[!UICONTROL Datenelementtyp]** die Option **[!UICONTROL JavaScript-Variable]**
+1. Verwenden Sie als **[!UICONTROL JavaScript]** Variablennamen den folgenden Zeiger auf eine Variable in der Datenschicht der Luma-Site: `digitalData.user.0.profile.0.attributes.username`
 1. Behalten Sie bei allen anderen Einstellungen die Standardwerte bei.
-1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]** , um das Datenelement zu speichern.
+1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**, um das Datenelement zu speichern
 
    ![Speichern Sie das Datenelement](images/idservice-emailHashed.png)
 
@@ -160,8 +160,8 @@ Adobe Experience Platform Identity Service übergibt die Kunden-IDs in Regel
 
 **Hinzufügen einer Regel zum Senden der Kunden-IDs**
 
-1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Regeln]** .
-1. Klicken Sie auf **[!UICONTROL Regel hinzufügen]** , um den Regel-Builder zu öffnen.
+1. Klicken Sie in der linken Navigation auf **[!UICONTROL Regeln]**
+1. Klicken Sie **[!UICONTROL Regel hinzufügen]**, um den Regel-Builder zu öffnen
 
    ![Eine Regel hinzufügen](images/idservice-addRule.png)
 
@@ -169,23 +169,23 @@ Adobe Experience Platform Identity Service übergibt die Kunden-IDs in Regel
 
    >[!TIP]
    >
-   >Diese Namenskonvention gibt an, dass Sie diese Regel oben auf allen Seiten auslösen, wenn der Benutzer authentifiziert wird, und dass die Reihenfolge &quot;10&quot;lautet. Die Verwendung einer Namenskonvention wie dieser – anstatt sie für die in den Aktionen ausgelösten Lösungen zu benennen – ermöglicht es Ihnen, die Gesamtzahl der von Ihrer Implementierung benötigten Regeln zu minimieren.
+   >Diese Namenskonvention gibt an, dass Sie diese Regel oben auf allen Seiten auslösen, wenn der Benutzer authentifiziert ist, und sie hat die Reihenfolge „10“. Die Verwendung einer Namenskonvention wie dieser – anstatt sie für die in den Aktionen ausgelösten Lösungen zu benennen – ermöglicht es Ihnen, die Gesamtzahl der von Ihrer Implementierung benötigten Regeln zu minimieren.
 
-1. Klicken Sie unter **[!UICONTROL Ereignisse]** auf **[!UICONTROL Hinzufügen]** .
+1. Klicken **[!UICONTROL unter &quot;]**&quot; auf **[!UICONTROL Hinzufügen]**
 
    ![Ereignis hinzufügen](images/idservice-customerId-addEvent.png)
 
-   1. Wählen Sie für den **[!UICONTROL Ereignistyp]** **[!UICONTROL Bibliothek geladen (Seitenanfang)]** aus.
-   1. Erweitern Sie den Abschnitt **[!UICONTROL Erweiterte Optionen]** und geben Sie für die **[!UICONTROL Reihenfolge]** den Wert `10` ein. Hiermit steuern Sie die Reihenfolge von Regeln, die durch dasselbe Ereignis ausgelöst werden. Regeln mit einer niedrigeren Zahl werden vor Regeln mit einer höheren Zahl ausgelöst. In diesem Fall möchten Sie die Kunden-ID festlegen, bevor Sie die Target-Anforderung auslösen. Dies wird in der nächsten Lektion behandelt – mit einer Regel mit der Reihenfolge `50`.
-   1. Klicken Sie auf die Schaltfläche **[!UICONTROL Änderungen beibehalten]** , um zum Regel-Builder zurückzukehren.
+   1. Wählen Sie für **[!UICONTROL Ereignistyp]** die Option **[!UICONTROL Bibliothek geladen (Seitenanfang)]**
+   1. Erweitern Sie den Abschnitt **[!UICONTROL Erweiterte Optionen]** und geben Sie für **[!UICONTROL Bestellung]** den `10` ein. Hiermit steuern Sie die Reihenfolge von Regeln, die durch dasselbe Ereignis ausgelöst werden. Regeln mit einer niedrigeren Zahl werden vor Regeln mit einer höheren Zahl ausgelöst. In diesem Fall möchten Sie die Kunden-ID festlegen, bevor Sie die Target-Anforderung auslösen. Dies wird in der nächsten Lektion behandelt – mit einer Regel mit der Reihenfolge `50`.
+   1. Klicken Sie auf die **[!UICONTROL Änderungen beibehalten]**, um zum Regel-Builder zurückzukehren
 
    ![Ereignis speichern](images/idservice-customerId-saveEvent.png)
 
-1. Klicken Sie unter **[!UICONTROL Bedingungen]** auf **[!UICONTROL Hinzufügen]** .
+1. Klicken **[!UICONTROL unter „Bedingungen]** auf **[!UICONTROL Hinzufügen]**
 
    ![Eine Bedingung zur Regel hinzufügen](images/idservice-customerId-addCondition.png)
 
-   1. Wählen Sie für den Bedingungstyp **** **[!UICONTROL Wertvergleich]** aus.
+   1. Wählen Sie für **[!UICONTROL Bedingungstyp]** die Option **[!UICONTROL Wertevergleich]**
    1. Klicken Sie auf das Symbol ![Datenelementsymbol](images/icon-dataElement.png), um das Datenelement-Modal zu öffnen.
 
       ![Datenelement-Modal öffnen](images/idservice-customerId-valueComparison.png)
@@ -197,24 +197,24 @@ Adobe Experience Platform Identity Service übergibt die Kunden-IDs in Regel
 1. Stellen Sie sicher, dass der Operator `Equals` lautet.
 1. Geben Sie im Textfeld „Angemeldet“ ein, wodurch die Regel ausgelöst wird, sobald das Datenelement „Authentifizierungsstatus“ den Wert „Angemeldet“ aufweist.
 
-1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**
+1. Klicken Sie **[!UICONTROL Änderungen beibehalten]**
 
    ![Bedingung speichern](images/idservice-customerId-loggedIn.png)
 
-1. Klicken Sie unter **[!UICONTROL Aktionen]** auf **[!UICONTROL Hinzufügen]** .
+1. Klicken Sie unter **[!UICONTROL Aktionen]** auf **[!UICONTROL Hinzufügen]**
 
    ![Hinzufügen einer neuen Aktion](images/idservice-customerId-addAction.png)
 
-   1. Wählen Sie für die **[!UICONTROL Erweiterung]** **[!UICONTROL Experience Cloud ID-Dienst]** aus.
-   1. Wählen Sie für den Aktionstyp **[!UICONTROL 1]** **[!UICONTROL Kunden-IDs festlegen]** aus.
-   1. Geben Sie für den **[!UICONTROL Integrationscode]** `crm_id` ein.
-   1. Geben Sie für den **[!UICONTROL Wert]** das Datenelement-Selektor-Modal ein und wählen Sie den Wert `Email (Hashed)`
-   1. Wählen Sie für den **[!UICONTROL Authentifizierungsstatus]** **[!UICONTROL Authentifiziert]** aus.
-   1. Klicken Sie auf die Schaltfläche **[!UICONTROL Änderungen beibehalten]** , um die Aktion zu speichern und zum Regel-Builder zurückzukehren.
+   1. Wählen Sie für **[!UICONTROL Erweiterung]** den **[!UICONTROL Experience Cloud-ID-Dienst aus]**
+   1. Wählen Sie für **[!UICONTROL Aktionstyp]** die Option **[!UICONTROL Kunden-IDs festlegen]**
+   1. Für den **[!UICONTROL Integrationscode]** geben Sie `crm_id`
+   1. Geben **[!UICONTROL als]** Wert“ das Modal „Datenelementauswahl öffnen“ ein und wählen Sie die `Email (Hashed)` aus
+   1. Wählen Sie für **[!UICONTROL Authentifizierungsstatus]** die Option **[!UICONTROL Authentifiziert]**
+   1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**, um die Aktion zu speichern und zum Regel-Builder zurückzukehren
 
       ![Konfigurieren Sie die Aktion und speichern Sie die Änderungen](images/idservice-customerId-action.png)
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL In Bibliothek speichern und erstellen]** , um die Regel zu speichern.
+1. Klicken Sie auf die **[!UICONTROL In Bibliothek speichern und erstellen]**, um die Regel zu speichern
 
    ![Speichern Sie die Regel](images/idservice-customerId-saveRule.png)
 
@@ -228,17 +228,17 @@ Um Ihre Arbeit zu überprüfen, melden Sie sich bei der Site „Luma“ an, um d
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihrer* Entwicklungsumgebung zuordnet, wie in der [früheren Lektion](switch-environments.md) beschrieben.
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
-   ![Ihre Tags-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
-1. Klicken Sie oben rechts auf der Site &quot;Luma&quot;auf den Link **[!UICONTROL ANMELDEN]** .
+1. Klicken Sie auf **[!UICONTROL Link]** ANMELDEN“ in der oberen rechten Ecke der Luma-Site
 
    ![Klicken Sie in der oberen Navigation auf „Anmelden“](images/idservice-loginNav.png)
 
 1. Geben Sie `test@adobe.com` als Benutzernamen ein.
 1. Geben Sie `test` als Passwort ein.
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL ANMELDEN]**
+1. Klicken Sie auf die **[!UICONTROL ANMELDEN]**-Schaltfläche
 
    ![Anmeldedaten eingeben und auf „Anmelden“ klicken](images/idservice-login.png)
 
@@ -262,12 +262,12 @@ Bestätigen Sie als Nächstes mithilfe des Dienstes, dass die Kunden-ID an die D
 
 ### Weitere Tipps zur Überprüfung
 
-Tags verfügen auch über umfassende Protokollierungsfunktionen. Um sie zu aktivieren, wechseln Sie zur Registerkarte **[!UICONTROL Tools]** im Debugger und aktivieren Sie den Umschalter **[!UICONTROL Tags-Konsolenprotokollierung]** .
+Tags verfügt außerdem über umfangreiche Konsolenprotokollierungsfunktionen. Um sie zu aktivieren, wechseln Sie zur Registerkarte **[!UICONTROL Tools]** im Debugger und aktivieren Sie den Umschalter **[!UICONTROL Protokollierung in der Tag-Konsole]**.
 
-![Umschalten auf die Konsolenprotokollierung von Tags](images/idservice-debugger-logging.png)
+![Konsolenprotokollierung für Tags ein/aus](images/idservice-debugger-logging.png)
 
 Hierdurch wird die Konsolenprotokollierung aktiviert – sowohl in Ihrer Browserkonsole als auch auf der Registerkarte „Protokolle“ im Debugger. Die Protokollierung aller bisher erstellten Regeln sollte angezeigt werden! Beachten Sie, dass neue Protokolleinträge oben in der Liste hinzugefügt werden, sodass Ihre Regel „Alle Seiten – Bibliothek geladen – Authentifiziert – 10“ vor der Regel „Alle Seiten – Bibliothek geladen“ ausgelöst und unten in der Konsolenprotokollierung des Debuggers angezeigt wird:
 
 ![Registerkarte „Protokolle“ des Debuggers](images/idservice-debugger-loggingStatements.png)
 
-[Weiter mit &quot;Adobe Target hinzufügen&quot;>](target.md)
+[Weiter &quot;Adobe Target hinzufügen“ >](target.md)

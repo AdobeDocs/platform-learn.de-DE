@@ -1,6 +1,6 @@
 ---
-title: Segmentaktivierung zum Microsoft Azure Event Hub - Konfigurieren Ihrer Microsoft Azure-Umgebung
-description: Segmentaktivierung zum Microsoft Azure Event Hub - Konfigurieren Ihrer Microsoft Azure-Umgebung
+title: Segmentaktivierung für Microsoft Azure Event Hub - Konfigurieren Ihrer Microsoft Azure-Umgebung
+description: Segmentaktivierung für Microsoft Azure Event Hub - Konfigurieren Ihrer Microsoft Azure-Umgebung
 kt: 5342
 doc-type: tutorial
 exl-id: 71200024-a56b-4705-adde-c109b4e86ea1
@@ -15,4 +15,4 @@ ht-degree: 6%
 
 test
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)
