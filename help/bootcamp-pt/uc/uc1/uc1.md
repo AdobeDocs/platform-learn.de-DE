@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Objetivos de aprendizado
 
-## Pré-equisitos
+## Voraussetzungen
 
 - Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
@@ -26,28 +26,28 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Este-Tutorial foi criado para ciliar um formatio específico de Bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um Participante de um Bootcamp e recisa das credenciais de acesso, entre em contato com seu darante da Adobe para receber as informmações notwendiárias.
+>Este tutorial foi criado para facilar um formato específico de Bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste Tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um Participante de um Bootcamp e precisa das credenciais de acesso, entre em contato com seu presentante da Adobe para receber as informações needs árias.
 
-## Übungen
+## anstrengend
 
-[1.1 Website](./ex1.md)
+[1.1 Vor-Ort-Besuch](./ex1.md)
 
-Neste übício, você irá seguir um roteiro e percorrer o site.
+Neste Exercício, você irá seguir um roteiro e percorrer o site.
 
-[1.2 Visualize seu próprio perfil de cliente em tempo real - UI](./ex2.md)
+[1.2 Visualisieren Sie seu próprio perfil de cliente em tempo real - UI](./ex2.md)
 
-Neste übício, você irá fazer login na Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI.
+Neste ercício, você irá fazer login na Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI.
 
-[1.3 Crit um segmento - UI](./ex3.md)
+[1.3 Crie um segmento - Benutzeroberfläche](./ex3.md)
 
-Neste übício, você irá criar um segmento usando o Construtor de Segmentos da Adobe Experience Platform.
+Neste ercício, você irá criar um segmento usando o o Construtor de Segmentos da Adobe Experience Platform.
 
 [1.4 Ação: envie seu segmento para o Adobe Target](./ex4.md)
 
-Verwenden Sie o segmento construído no übício 1.1 para konfigurar uma Atividade de segmentação por experiência no Adobe Target.
+Verwenden Sie o segmento construído no ercício 1.1 para configurar uma Atividade de segmentação por experiência no Adobe Target.
 
 [1.5 Ação: envie seu segmento para o Facebook](./ex5.md)
 
-Conecte o segmento que você criou no übício 1.1 ao destino Facebook.
+Conecte o segmento que você criou no ercício 1.1 ao destino Facebook.
 
-[Retornar para Todos os módulos](../../overview.md)
+[In: Retornar para Todos os módulos](../../overview.md)

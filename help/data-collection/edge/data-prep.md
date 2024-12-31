@@ -1,6 +1,6 @@
 ---
 title: Datenvorbereitung für die Datenerfassung
-description: Erfahren Sie, wie Sie Ihre Datenschicht zu einem neuen Datastream in der Datenerfassung hinzufügen.
+description: Erfahren Sie, wie Sie Ihre Datenschicht zu einem neuen Datenstrom in der Datenerfassung hinzufügen.
 feature: Datastreams
 role: Data Architect, Data Engineer, Developer
 level: Intermediate
@@ -16,6 +16,6 @@ ht-degree: 15%
 
 # Datenvorbereitung für die Datenerfassung
 
-Erfahren Sie, wie Sie Ihre Datenschicht zu einem neuen Datastream in der Datenerfassung hinzufügen. Erfahren Sie außerdem, wie Sie mit der Datenerfassungsfunktion grundlegende Zuordnungsfunktionen durchführen können. Weitere Informationen finden Sie in der Dokumentation zur [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#data-prep).
+Erfahren Sie, wie Sie Ihre Datenschicht zu einem neuen Datenstrom in der Datenerfassung hinzufügen. Außerdem erfahren Sie, wie Sie mit der Funktion Datenvorbereitung für die Datenerfassung einfache Zuordnungsfunktionen ausführen können. Weitere Informationen finden Sie in der [Dokumentation Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#data-prep).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342120/?learn=on)

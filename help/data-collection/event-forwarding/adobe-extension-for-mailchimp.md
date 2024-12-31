@@ -1,6 +1,6 @@
 ---
 title: Adobe-Erweiterung für Mailchimp
-description: Übersichtsvideo zur Adobe-Ereignisweiterleitungs-Erweiterung für Mailchimp.
+description: Übersichtsvideo der Adobe-Ereignisweiterleitungserweiterung für Mailchimp.
 feature: Event Forwarding
 level: Experienced
 jira: KT-10714
@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # Adobe-Erweiterung für Mailchimp
 
-Übersichtsvideo zur Adobe-Ereignisweiterleitungs-Erweiterung für Mailchimp. Weitere Informationen finden Sie in der Dokumentation zur [Mailchimp-Ereignisweiterleitungs-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html) .
+Übersichtsvideo der Adobe-Ereignisweiterleitungserweiterung für Mailchimp. Weitere Informationen finden Sie in der Dokumentation [Mailchimp-Ereignisweiterleitungs-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on)

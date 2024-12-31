@@ -15,6 +15,6 @@ ht-degree: 36%
 
 # Konfigurieren von Datenströmen
 
-Erfahren Sie, wie Sie Datenspeicher für Web- und Mobile SDK-Implementierungen erstellen und konfigurieren. Weitere Informationen finden Sie in der [Dokumentation zu Datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de).
+Erfahren Sie, wie Sie Datenströme für Web- und mobile SDK-Implementierungen erstellen und konfigurieren. Weitere Informationen finden Sie in [Dokumentation zu Datenströmen](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on)

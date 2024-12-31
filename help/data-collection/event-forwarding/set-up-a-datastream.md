@@ -1,6 +1,6 @@
 ---
-title: Einrichten eines Datenspeichers für die Ereignisweiterleitung
-description: Erfahren Sie, wie Sie einen Datastream für die Ereignisweiterleitung einrichten.
+title: Einrichten eines Datenstroms für die Ereignisweiterleitung
+description: Erfahren Sie, wie Sie einen Datenstrom für die Ereignisweiterleitung einrichten.
 feature: Event Forwarding, Datastreams
 level: Intermediate
 jira: KT-6421
@@ -13,14 +13,14 @@ ht-degree: 18%
 
 ---
 
-# Einrichten eines Datenspeichers für die Ereignisweiterleitung
+# Einrichten eines Datenstroms für die Ereignisweiterleitung
 
-Erfahren Sie, wie Sie einen Datastream für die Ereignisweiterleitung einrichten. Weitere Informationen finden Sie in der Dokumentation zur Ereignisweiterleitung unter [1}](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+Erfahren Sie, wie Sie einen Datenstrom für die Ereignisweiterleitung einrichten. Weitere Informationen finden Sie in [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
 
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
+>Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 > 
 > * Platform launch (Client-seitig) ist jetzt **[!DNL tags]**
 > * Platform launch Server Side ist jetzt **[!DNL event forwarding]**

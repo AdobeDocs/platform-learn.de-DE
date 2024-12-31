@@ -1,6 +1,6 @@
 ---
-title: CSC Bootcamp - Überprüfen der mobilen App
-description: CSC Bootcamp - Überprüfen der mobilen App
+title: CSC Bootcamp - Mobile App überprüfen
+description: CSC Bootcamp - Mobile App überprüfen
 doc-type: multipage-overview
 exl-id: 930d9487-7c39-4657-9fe4-436dc53343e1
 source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Android
 
-- Laden Sie die App von [hier](https://tinyurl.com/CSCBootcampApp) auf Ihr Android-Gerät herunter. Sie können es auf einen [Android Emulator](https://developer.android.com/studio/run/emulator) oder Ihr physisches Android-Gerät herunterladen.
+- Laden Sie die Mobile App von [hier](https://tinyurl.com/CSCBootcampApp) auf Ihr Android-Gerät herunter. Sie können ihn auf einen [Android-Emulator](https://developer.android.com/studio/run/emulator) oder Ihr physisches Android-Gerät herunterladen.
 
 ![App herunterladen](./images/delivery-app-android-download.png)
 
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ![Öffnen Sie die APK-Datei](./images/delivery-app-android-install.png)
 
-- Klicken Sie im Popup-Fenster auf die Schaltfläche &quot;Installieren&quot;und bestätigen Sie dann, indem Sie auf &quot;Installieren auf beliebige Weise&quot;klicken.
+- Klicken Sie im Popup auf die Schaltfläche Installieren und bestätigen Sie dann durch Klicken auf „Trotzdem installieren“.
 
-![Installieren Sie die App](./images/delivery-app-android-install-prompt.png)
+![Installieren der App](./images/delivery-app-android-install-prompt.png)
 
-![Vertrauen Sie die App](./images/delivery-app-android-install-anyway.png)
+![Vertrauen Sie der App](./images/delivery-app-android-install-anyway.png)
 
-- Nachdem die App erfolgreich installiert wurde, öffnen Sie sie, indem Sie auf die Schaltfläche &quot;Öffnen&quot;klicken.
+- Nachdem die App erfolgreich installiert wurde, öffnen Sie sie, indem Sie auf die Schaltfläche „Öffnen“ klicken.
 
 ![Öffnen Sie die App](./images/delivery-app-android-open.png)
 
@@ -37,43 +37,43 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> Stellen Sie sicher, dass Sie mit dem Bootcamp Wifi-Netzwerk verbunden sind. Dies ist wichtig, da die App nur funktioniert, wenn Sie sich im selben WLAN-Netzwerk befinden.
+> Stellen Sie sicher, dass Sie mit dem Bootcamp-WiFi-Netzwerk verbunden sind. Dies ist wichtig, da die App nur funktioniert, wenn Sie sich im selben WiFi-Netzwerk befinden.
 
-Da es sich hierbei nicht um eine offiziell verteilte App handelt, unterscheidet sich das Setup für iOS von dem, was Sie gewohnt sind.
+Da es sich hierbei nicht um eine offiziell verteilte App handelt, unterscheidet sich das Setup für iOS etwas von dem, was Sie gewohnt sind.
 
 - Laden Sie die Expo Go-App von der [App Store](https://itunes.apple.com/app/apple-store/id982107779) herunter.
 
 ![Laden Sie die Expo Go-App herunter](./images/delivery-app-ios-download.png)
 
-- Überprüfen Sie in der iPhone Camera App den QR-Code, den das Adobe-Team im Bootcamp projizieren wird. Klicken Sie nach Aufforderung auf die angezeigte Schaltfläche.
+- Scannen Sie in der iPhone Camera App den QR-Code, den das Adobe-Team im Bootcamp projiziert. Klicken Sie nach Aufforderung auf die angezeigte Schaltfläche.
 
 ![Klicken Sie auf den QR-Code](./images/delivery-app-ios-scan.png)
 
-- Dadurch wird eine Webseite geladen, auf der Sie die App in Ihrer iPhone öffnen können. Klicken Sie auf die Schaltfläche &quot;Expo Go&quot;, um sie in der soeben heruntergeladenen App zu öffnen.
+- Dadurch wird eine Web-Seite geladen, mit der Sie die App auf Ihrer iPhone öffnen können. Klicken Sie auf die Schaltfläche „Expo Go“, um sie in der soeben heruntergeladenen App zu öffnen.
 
-![Klicken Sie auf die Schaltfläche zum Gehen der Expo](./images/delivery-app-ios-open-expo.png)
+![Klicken Sie auf die Schaltfläche „Expo go“](./images/delivery-app-ios-open-expo.png)
 
-- Wählen Sie im sich öffnenden Dialogfeld &quot;Öffnen&quot;aus, damit die Expo Go-App mit den richtigen Informationen geladen werden kann.
+- Wählen Sie im Dialog, der sich öffnet, „Öffnen“, damit die Expo Go-App mit den richtigen Informationen geladen werden kann.
 
-![Klicken Sie auf die Schaltfläche &quot;Öffnen&quot;](./images/delivery-app-ios-open.png)
+![Klicken Sie auf die Schaltfläche Öffnen](./images/delivery-app-ios-open.png)
 
-- Nachdem die App Expo Go geöffnet wurde, werden Sie aufgefordert, Geräte im lokalen Netzwerk zu finden. Wie bereits erwähnt, ist dies erforderlich, damit wir die App von unseren Adobe-Geräten auf Ihr Handy herunterladen können. Klicken Sie auf &quot;Zulassen&quot;, um dies zu laden.
+- Sobald die Expo Go-App geöffnet wurde, werden Sie aufgefordert, Geräte im lokalen Netzwerk zu finden. Wie bereits erwähnt, ist dies notwendig, damit wir die App von unseren Adobe-Geräten auf Ihr Handy herunterladen können. Auf „Zulassen“ klicken, um dies zu laden.
 
-![Erlauben Sie die erforderlichen Berechtigungen](./images/delivery-app-ios-allow.png)
+![Lassen Sie die erforderlichen Berechtigungen zu](./images/delivery-app-ios-allow.png)
 
-- Möglicherweise erhalten Sie zuerst eine Fehlerseite. Klicken Sie einfach auf die Schaltfläche &quot;Erneut versuchen&quot;, um die App schließlich auf Ihr Gerät zu laden. Beachten Sie, dass das Schließen der Expo Go-App oder das Trennen des Geräts vom WLAN-Netzwerk dazu führt, dass die App nicht mehr reagiert.
+- Möglicherweise erhalten Sie zunächst eine Fehlerseite. Klicken Sie einfach auf die Schaltfläche „Erneut versuchen“, um die App endgültig auf Ihr Gerät zu laden. Bitte beachten Sie, dass das Schließen der Expo Go-App oder das Trennen Ihres Geräts vom WiFi-Netzwerk dazu führt, dass die App nicht mehr reagiert.
 
-![Wiederholen, wenn es fehlschlägt](./images/delivery-app-ios-retry.png)
+![Wiederholen, wenn dies fehlschlägt](./images/delivery-app-ios-retry.png)
 
 ## Navigieren in der App
 
-In der App können Sie Ihr Team aus dem Dropdown-Menü auswählen. Dadurch wird der in AEM erstellte Inhalt dynamisch geladen. Wenn Sie mit dem Inhalt nicht zufrieden sind, können Sie ihn immer im zuvor erstellten Inhaltsfragment aktualisieren und dann den Inhalt erneut veröffentlichen. Anschließend werden die Änderungen in der App angezeigt.
+In der App können Sie Ihr Team aus der Dropdown-Liste auswählen. Dadurch werden die in AEM erstellten Inhalte dynamisch geladen. Wenn Sie mit dem Inhalt nicht zufrieden sind, können Sie ihn immer in dem zuvor erstellten Inhaltsfragment aktualisieren und dann den Inhalt erneut veröffentlichen. Anschließend werden die Änderungen in der App angezeigt.
 
-![App vor Auswahl von Team](./images/delivery-app-initial.png)
-![App nach Auswahl von Team](./images/delivery-app-loaded.png)
+![Programm vor Auswahl des Teams](./images/delivery-app-initial.png)
+![App nach Auswahl des Teams](./images/delivery-app-loaded.png)
 
-Nächster Schritt: [Phase 3 - Bereitstellung: Seite in AEM erstellen](./page-in-aem.md)
+Nächster Schritt: [Phase 3 - Versand: Seite in AEM erstellen](./page-in-aem.md)
 
-[Zurück zu Phase 2: Produktion: Erstellen von Inhalten für mobile Apps](../production/app.md)
+[Zurück zu Phase 2 - Produktion: Erstellen von Mobile-App-Inhalten](../production/app.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

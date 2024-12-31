@@ -14,20 +14,20 @@ ht-degree: 1%
 
 ---
 
-# 2.5 Mobile App installieren und verwenden
+# 2.5 Installieren und Verwenden der Mobile App
 
 
-## Installieren der App
+## Installieren der Mobile App
 
-Bevor Sie die App installieren, müssen Sie das **Tracking** auf Ihrem iOS-Gerät aktivieren. Wechseln Sie dazu zu **Einstellungen** > **Datenschutz und Sicherheit** > **Tracking** und stellen Sie sicher, dass die Option **Zulassen, dass Apps verfolgt werden können**, verwendet wird.
+Bevor Sie die App installieren, müssen Sie **Tracking** auf Ihrem iOS-Gerät aktivieren. Navigieren Sie dazu zu **Einstellungen** > **Datenschutz und Sicherheit** > **Tracking** und stellen Sie sicher, dass die Option **Zulassen, dass Apps Tracking anfordern**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Navigieren Sie zur Apple App Store und suchen Sie nach `aepmobile-bootcamp`. Klicken Sie auf **Installieren** oder **Herunterladen**.
+Navigieren Sie zu Apple App Store und suchen Sie nach `aepmobile-bootcamp`. Klicken **auf** oder **Herunterladen**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Klicken Sie nach der Installation der App auf **Öffnen**.
+Nachdem die App installiert wurde, klicken Sie auf **Öffnen**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -35,60 +35,60 @@ Klicken Sie auf **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Klicken Sie auf **Allow**.
+Klicken Sie **Zulassen**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Klicken Sie auf **Ich stimme zu**.
+Klicken Sie **Ich stimme zu**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Klicken Sie auf **Zulassen bei Verwendung von App**.
+Klicken Sie **Erlauben bei Verwendung des -Programms**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Klicken Sie auf **Allow**.
+Klicken Sie **Zulassen**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Sie befinden sich jetzt in der App auf der Startseite und können die Journey durchlaufen.
+Jetzt sind Sie in der App, auf der Startseite, bereit, die Kunden-Journey zu durchlaufen.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Journey-Fluss des Kunden
+## Kunden-Journey-Fluss
 
-Zunächst müssen Sie sich anmelden. Klicken Sie auf **Anmelden**.
+Zunächst müssen Sie sich anmelden. Klicken Sie **Anmelden**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Nachdem Sie Ihr Konto in den vorherigen Übungen erstellt haben, haben Sie dies auf der Website gesehen. Sie müssen jetzt die E-Mail-Adresse des Kontos, das Sie in der App erstellt haben, erneut verwenden, um sich anzumelden.
+Nachdem Sie Ihr Konto in den vorherigen Übungen erstellt haben, haben Sie dies auf der Website gesehen. Sie müssen jetzt die E-Mail-Adresse des Kontos wiederverwenden, das Sie in der App erstellt haben, um sich anzumelden.
 
 ![Demo](./../uc3/images/pv1.png)
 
-Geben Sie hier die E-Mail-Adresse ein, die Sie auf der Website verwendet haben, und klicken Sie auf **Anmelden**.
+Geben Sie hier die auf der Website verwendete E-Mail-Adresse ein und klicken Sie auf **Login**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Sie erhalten dann eine Bestätigung, dass Sie angemeldet sind, und eine Push-Benachrichtigung.
+Sie erhalten dann eine Bestätigung, dass Sie angemeldet sind, und Sie erhalten eine Push-Benachrichtigung.
 
 ![DSN](./../uc3/images/app15.png)
 
-Kehren Sie zur Homepage in der App zurück und sehen Sie zusätzliche Funktionen.
+Kehren Sie zur Startseite in der App zurück, und Sie werden sehen, dass zusätzliche Funktionen angezeigt werden.
 
 ![DSN](./../uc3/images/app17.png)
 
-Wechseln Sie zu **Produkte**. Klicken Sie auf ein beliebiges Produkt, in diesem Beispiel **Kaffee, um zu gehen**.
+Navigieren Sie zu **Produkte**. Klicken Sie auf ein beliebiges Produkt, in diesem Beispiel **Coffee to go**.
 
 ![DSN](./images/app19.png)
 
-Sie sehen die Produktseite **Kaffee zum Wechseln** in der App. Klicken Sie auf **Kaufen**.
+In der App wird die **Coffee to go**-Produktseite angezeigt. Klicken Sie **Kaufen**.
 
 ![DSN](./images/app20.png)
 
-Du hast diese Übung nun beendet und bist für die nächsten Übungen bereit.
+Sie haben nun diese Übung abgeschlossen und sind bereit für die nächsten Übungen.
 
 Nächster Schritt: [2.6 Personalization im Callcenter](./ex6.md)
 
-[Zurück zum Benutzerfluss 2](./uc2.md)
+[Zurück zu Benutzerfluss 2](./uc2.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

@@ -7,6 +7,7 @@ ht-degree: 0%
 ---
 # platform-learn.en
 
-Gemeinsame Tutorials und Hilfsmaterialien für Platform.
+Kollaborative Tutorials und Aktivierungsmaterialien für Platform.
 
-bereinigtes Repo zu reduzieren Größe ...
+Repository bereinigt, um Größe zu reduzieren
+…

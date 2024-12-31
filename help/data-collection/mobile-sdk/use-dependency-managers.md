@@ -1,5 +1,5 @@
 ---
-title: Abhängigkeitsmanager verwenden
+title: Verwenden von Abhängigkeits-Managern
 description: Erfahren Sie, wie Sie mit CocoaPods und Gradle Mobile SDK-Erweiterungen und -Abhängigkeiten verwalten können.
 feature: Mobile SDK
 level: Beginner
@@ -12,9 +12,9 @@ ht-degree: 1%
 
 ---
 
-# Abhängigkeitsmanager verwenden
+# Verwenden von Abhängigkeits-Managern
 
-Erfahren Sie, wie Sie mit CocoaPods und Gradle Adobe Experience Platform Mobile SDK-Erweiterungen und -Abhängigkeiten verwalten. Weitere Informationen zum Installieren des SDK mit CocoaPods und Gradle finden Sie in der [Dokumentation](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
+Erfahren Sie, wie Sie mit CocoaPods und Gradle Erweiterungen und Abhängigkeiten für Adobe Experience Platform Mobile SDK verwalten können. Weitere Informationen zur Installation des SDK mit CocoaPods und Gradle finden Sie [der Dokumentation](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
 >[!NOTE]
 >

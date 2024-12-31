@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Prework - Brazil
-description: Bootcamp - Prework - Brazil
+title: Bootcamp - Vorbereitung - Brasilien
+description: Bootcamp - Vorbereitung - Brasilien
 jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -18,4 +18,4 @@ ht-degree: 7%
 ## Kontext
 
 
-[Zu allen Modulen zurückkehren](./overview.md)
+[Zurück zu „Alle Module“](./overview.md)

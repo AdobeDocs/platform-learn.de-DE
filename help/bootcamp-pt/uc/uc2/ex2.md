@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Journey Optimizer Erstellen Sie Ihr Ereignis - Brasilien
-description: Bootcamp - Journey Optimizer Erstellen Sie Ihr Ereignis - Brasilien
+title: Bootcamp - Journey Optimizer Event erstellen - Brasilien
+description: Bootcamp - Journey Optimizer Event erstellen - Brasilien
 jira: KT-5342
 audience: developer
 doc-type: tutorial
@@ -16,21 +16,21 @@ ht-degree: 0%
 
 ---
 
-# 2.2 Kritisches Ereignis
+# 2.2 Crie seu evento
 
-Faça meldet sich bei Adobe Journey Optimizer-Zugriff an und erhält einen [Adobe Experience Cloud](https://experience.adobe.com). Klicken Sie auf em **Journey Optimizer**.
+Faça Anmeldung auf Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). Klicken Sie auf AEM **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Você será redirecionado para a visualização da **Home** no Journey Optimizer. Primeiro, verifique se você está usando o sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternative de um sandbox para outro, clique em Prod e selecione o sandbox na lista. Neste exemplo, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Home** do seu sandbox `Bootcamp`.
+Você será redirecionado para a visualização da **Home** no Journey Optimizer. Primeiro, verifique se você está usando oder sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternative de um sandbox para outro, clique em prod e selecione o sandbox na lista. Neste exemplo, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Home** do seu sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-Kein Menü à esquerda, role para baixo e clique em **Konfigurationen**. Em seguida, klicken Sie auf botão **Manage** abaixo de **Events**.
+Kein Menü à esquerda, role para baixo e clique **Konfigurationen**. Em seguida, clique no botão **Manage** abaixo de **Events**.
 
 ![ACOP](./images/acopmenu.png)
 
-Você verá uma visão geral de todos os eventos disponíveis. Clique em **Create Event** para começar a criar seu próprio evento.
+Você verá uma visão geral de todos os eventos disponíveis. Clique em **Create Event** para começar a criar seu próprio event.
 
 ![ACOP](./images/emptyevent.png)
 
@@ -42,60 +42,60 @@ Em primeiro lugar, dê um nome ao seu evento como, por exemplo: `seuSobrenomeAcc
 
 ![ACOP](./images/eventdescription.png)
 
-Em seguida, certificate-se de que **Type** está definido como **Unitary** e, para a select ção de **Event ID Type**, selecione **System generated**.
+EM seguida, certificique-se de que **Type** está definido como **Unitary** e, para a a selecão de **Event ID Type**, selecione **System Generated**.
 
 ![ACOP](./images/eventidtype.png)
 
-Ein etapa seguinte é a selção do schema. Um schema foi vorbereitado para este übício. Verwenden Sie Schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+Ein Schema für die Sétuinte-a-selecão. Um schema foi preparation ado para este exercício. Verwenden Sie keine `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-Depois de selecionar o Schema, você verá vários campos sendo selecionados na seção **Fields**. Agora você deve passar o mouse sobre a seção **Fields** e três ícones pop-up serão exibidos. Klicken Sie auf no ícone **Bearbeiten**.
+Depois de selecionar o Schema, você verá vários campos sendo selecionados na seção **Fields**. Agora você deve passar o mouse sobre a seção **Fields** e três ícones pop-up serão exibidos. Clique no ícone **Bearbeiten**.
 
 ![ACOP](./images/eventpayload.png)
 
-Você verá uma janela pop-up de **Fields**, onde você deve selecionar alguns dos campos que preisamos para personalizar o e-mail. Escolheremos outros atributos de perfil posteriormente, utilizando os dados já existentes na Adobe Experience Platform.
+Você verá uma janela pop-up de **Fields**, onde você deve selecionar alguns dos campos que precisamos para personalizar o e-mail. Escolheremos outros atributos de perfil posteriormente, utilizando os dados já existentes na Adobe Experience Platform.
 
 ![ACOP](./images/eventfields.png)
 
-Kein Objekt `_experienceplatform.demoEnvironment`, pcertificate-se de selecionar os campos **brandLogo** e **brandName**.
+Kein Objekt `_experienceplatform.demoEnvironment`, pcertificfique-se de selecionar os campos **brandLogo** e **brandName**.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-No object `_experienceplatform.identification.core`, certificate-se de selecionar o campo **email**.
+Kein Objekt `_experienceplatform.identification.core`, Certifique-se de selecionar o campo **email**.
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-Klicken Sie em **OK** auf para salvar suas alterações.
+Clique em **Ok** to para salvar suas alterações.
 
 ![ACOP](./images/saveok.png)
 
-Em seguida, eine tela abaixo deve ser exibida. Clique em **Save** mais uma vez para salvar suas alterações..
+Em seguida, a tela abaixo deve ser exibida. Clique em **Save** mais uma vez para salvar suas alterações..
 
 ![ACOP](./images/eventsave.png)
 
-Seu evento agora está konfigurado e salvo.
+In: Seu evento agora está configurado e salvo.
 
 ![ACOP](./images/eventdone.png)
 
-Klicken Sie auf kein seu evento novamente para abrir mais uma vez a tela **Ereignis bearbeiten**. Passe o mouse sobre **Fields** para ver os 3 ícones outra vez. Klicken Sie auf no ícone **View Payload**.
+Clique no seu event to novamente para abrir mais uma vez a tela **Edit Event**. Passe o mouse sobre **Fields** para ver os 3 ícones outra vez. Clique no ícone **Nutzlast anzeigen**.
 
 ![ACOP](./images/viewevent.png)
 
 Agora você verá um exemplo da carga útil esperada.
-Seu evento tem um eventID de orquestração único, que você pode encounter rolando para baixo diena carga útil (payload) até visualizar `_experience.campaign.orchestration.eventID`.
+Seu event to tem um eventID de orquestração único, que você pode entracr rolando para baixo nessa carga útil (Payload) até visualizar `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-O eventID é o que deve ser enviado à Adobe Experience Platform para acionar a jornada que você construirá em um dos próximos übícios. Lembre-se deste eventID, você pode recisar dele posteriormente.
+O eventID é o que deve ser enviado à Adobe Experience Platform para acionar a jornada que você construirá em um dos próximos excícios. Lembre-se deste eventID, você pode precisar del posteriormente.
 `"eventID": "19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f"`
 
 Klicken Sie auf em **OK** e, em seguida, klicken Sie auf em **Abbrechen**.
 
-Agora você terminou este übício.
+Agora você terminou este exercício.
 
-Próxima etapa: [ 2.3 Crie sua mensagem de e-mail](./ex3.md)
+Próxima etapa: [ 2.3 Crie sua menagem de E-mail](./ex3.md)
 
 [Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Retornar para Todos os Módulos](../../overview.md)
+[In: Retornar para Todos os Módulos](../../overview.md)

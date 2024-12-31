@@ -20,35 +20,35 @@ ht-degree: 2%
 
 ## Kontext
 
-Die Journey von unbekanntem bis bekanntem ist eines der wichtigsten Themen der heutigen Marken, ebenso wie die Journey des Kunden von der Akquise bis zur Aufbewahrung.
+Die Journey von Unbekannt zu Bekanntem ist heutzutage eines der wichtigsten Markenthemen, ebenso wie die Kunden-Journey von der Akquise bis zur Bindung.
 
-Adobe Experience Platform spielt bei diesem Journey eine große Rolle. Plattform ist das Gehirn der Kommunikation, das **Erlebnissystem des Datensatzes**.
+Adobe Experience Platform spielt bei dieser Journey eine große Rolle. Platform ist das Gehirn für Kommunikation, das **Erlebnissystem der Aufzeichnung**.
 
-Platform ist eine Umgebung, in der das Wort Kunde breiter ist als nur die bekannten Kunden. Ein unbekannter Besucher auf der Website ist auch aus Sicht von Platform ein Kunde. Daher wird das gesamte Verhalten als unbekannter Besucher auch an Platform gesendet. Durch diesen Ansatz kann eine Marke visualisieren, was vor diesem Zeitpunkt auch passiert ist, wenn dieser Besucher schließlich ein bekannter Kunde wird. Dies hilft aus der Sicht der Attribution und Erlebnisoptimierung.
+Platform ist eine Umgebung, in der das Wort Kunde weiter gefasst ist als nur die bekannten Kunden. Ein unbekannter Besucher auf der Website ist auch aus Sicht von Platform ein Kunde. Daher wird das gesamte Verhalten eines unbekannten Besuchers ebenfalls an Platform gesendet. Dank dieses Ansatzes kann sich eine Marke, wenn dieser Besucher schließlich ein bekannter Kunde wird, auch vor diesem Moment vorstellen, was passiert ist. Dies hilft aus Sicht der Attribution und Erlebnisoptimierung.
 
-## Journey-Fluss des Kunden
+## Kunden-Journey-Fluss
 
-Wechseln Sie zu [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Klicken Sie auf **Alle zulassen**. Basierend auf Ihrem Browsing-Verhalten im vorherigen Benutzerfluss wird auf der Startseite der Website eine Personalisierung angezeigt.
+Navigieren Sie zu [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Klicken Sie **Alle zulassen**. Basierend auf Ihrem Browser-Verhalten im vorherigen Benutzerfluss sehen Sie, wie die Personalisierung auf der Homepage der Website erfolgt.
 
 ![DSN](./images/web8.png)
 
-Klicken Sie auf das Adobe-Logo-Symbol oben links im Bildschirm, um den Profilanzeige zu öffnen. Sehen Sie sich das Bedienfeld &quot;Profil-Viewer&quot;und das Echtzeit-Kundenprofil mit der **Experience Cloud-ID** als primäre Kennung für diesen derzeit unbekannten Kunden an.
+Klicken Sie auf das Adobe-Logo oben links im Bildschirm, um den Profil-Viewer zu öffnen. Sehen Sie sich das Bedienfeld Profil-Viewer und das Echtzeit-Kundenprofil mit der **Experience Cloud-ID** als primäre Kennung für diesen derzeit unbekannten Kunden an.
 
 ![Demo](./images/pv1.png)
 
-Sie können auch alle Erlebnisereignisse sehen, die basierend auf dem Kundenverhalten erfasst wurden.
+Sie können auch alle Erlebnisereignisse sehen, die basierend auf dem Verhalten des Kunden erfasst wurden.
 
 ![Demo](./images/pv3.png)
 
-Klicken Sie oben rechts auf dem Bildschirm auf das Symbol **Profil** .
+Klicken Sie auf **Profil** in der oberen rechten Ecke des Bildschirms.
 
 ![Demo](./images/pv4.png)
 
-Klicken Sie auf **Konto erstellen**.
+Klicken Sie **Konto erstellen**.
 
 ![Demo](./images/pv5.png)
 
-Füllen Sie alle Formularfelder aus. Verwenden Sie einen echten Wert für E-Mail-Adresse und Telefonnummer, da dieser Wert in späteren Übungen zum Versand von E-Mails und SMS verwendet wird.
+Füllen Sie alle Formularfelder aus. Verwenden Sie einen echten Wert für E-Mail-Adresse und Telefonnummer, da er in späteren Übungen für den Versand von E-Mails und SMS verwendet wird.
 
 ![Demo](./images/pv7.png)
 
@@ -56,22 +56,22 @@ Scrollen Sie nach unten und klicken Sie auf **Registrieren**.
 
 ![Demo](./images/pv8.png)
 
-Dann wirst du das sehen.
+Sie werden es dann sehen.
 
 ![Demo](./images/pv9.png)
 
-Sie erhalten außerdem diese E-Mail:
+Sie erhalten auch diese E-Mail:
 
 ![Demo](./images/pv10.png)
 
-Einige Minuten später erhalten Sie auch diese E-Mail:
+Und ein paar Minuten später erhalten Sie auch diese E-Mail:
 
 ![Demo](./images/pv11.png)
 
 Sehen wir uns an, wie diese Onboarding-Journey als Nächstes konfiguriert wurde.
 
-Nächster Schritt: [2.2 Ereignis erstellen](./ex2.md)
+Nächster Schritt: [2.2 Erstellen Sie Ihr Ereignis](./ex2.md)
 
-[Zurück zum Benutzerfluss 2](./uc2.md)
+[Zurück zu Benutzerfluss 2](./uc2.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

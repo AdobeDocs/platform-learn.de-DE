@@ -20,15 +20,15 @@ ht-degree: 2%
 
 ## Ziele
 
-- Grundlegendes zur Analysis Workspace-Benutzeroberfläche in CJA
-- Grundlegendes zur Datenvorbereitung in Analysis Workspace
-- Erfahren Sie, wie Sie Datenberechnungen durchführen.
+- Grundlegendes zur Benutzeroberfläche von Analysis Workspace in CJA
+- Verstehen der Konzepte der Datenvorbereitung in Analysis Workspace
+- Erfahren Sie, wie Sie Datenberechnungen durchführen
 
 ## 4.4.1 Analysis Workspace-Benutzeroberfläche in CJA
 
-Analysis Workspace beseitigt alle typischen Einschränkungen eines einzelnen Analytics-Berichts. Es bietet eine robuste, flexible Arbeitsfläche zum Erstellen benutzerdefinierter Analyseprojekte. Ziehen Sie per Drag-and-Drop eine beliebige Anzahl von Datentabellen, Visualisierungen und Komponenten (Dimensionen, Metriken, Segmente und Zeitgranularitäten) in ein Projekt. Erstellen Sie sofort Aufschlüsselungen und Segmente, erstellen Sie Kohorten für die Analyse, erstellen Sie Warnhinweise, vergleichen Sie Segmente, führen Sie Fluss- und Fallout-Analysen durch und kuratieren und planen Sie Berichte für die Freigabe für andere in Ihrem Unternehmen.
+Analysis Workspace beseitigt alle typischen Einschränkungen eines einzelnen Analytics-Berichts. Sie bietet eine robuste, flexible Arbeitsfläche zum Erstellen benutzerdefinierter Analyseprojekte. Ziehen Sie eine beliebige Anzahl von Datentabellen, Visualisierungen und Komponenten (Dimensionen, Metriken, Segmente und Zeitgranularitäten) in ein Projekt. Erstellen Sie sofort Aufschlüsselungen und Segmente, erstellen Sie Kohorten für Analysen, erstellen Sie Warnhinweise, vergleichen Sie Segmente, führen Sie Fluss- und Fallout-Analysen durch und kuratieren und planen Sie Berichte für die Freigabe für alle Personen in Ihrem Unternehmen.
 
-Customer Journey Analytics bringt diese Lösung zusätzlich zu den Platform-Daten. Es wird dringend empfohlen, sich dieses vierminütige Übersichtsvideo anzusehen:
+Customer Journey Analytics bringt diese Lösung auf die Platform-Daten. Wir empfehlen dringend, sich dieses vierminütige Übersichtsvideo anzusehen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
@@ -36,35 +36,35 @@ Wenn Sie Analysis Workspace noch nie verwendet haben, empfehlen wir dringend, si
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
-### Projekt erstellen
+### Erstellen eines Projekts
 
-Jetzt ist es an der Zeit, Ihr erstes CJA-Projekt zu erstellen. Navigieren Sie zur Registerkarte &quot;Projekte&quot;in CJA.
-Klicken Sie auf **Neu erstellen**.
+Jetzt ist es an der Zeit, Ihr erstes CJA-Projekt zu erstellen. Navigieren Sie zur Registerkarte Projekte in CJA.
+Klicken Sie **Neu erstellen**.
 
 ![demo](./images/prmenu.png)
 
-Dann wirst du das sehen. Wählen Sie **Leeres Projekt** und klicken Sie dann auf **Erstellen**.
+Sie werden es dann sehen. Wählen Sie **Leeres Projekt** aus und klicken Sie dann auf **Erstellen**.
 
 ![demo](./images/prmenu1.png)
 
-Dann sehen Sie ein leeres Projekt.
+Anschließend wird ein leeres Projekt angezeigt.
 
 ![demo](./images/premptyprojects.png)
 
-Wählen Sie zuerst die richtige Datenansicht in der oberen rechten Ecke des Bildschirms aus. In diesem Beispiel ist die auszuwählende Datenansicht `CJA Bootcamp - Omnichannel Data View`.
+Wählen Sie zunächst die richtige Datenansicht in der oberen rechten Ecke Ihres Bildschirms aus. In diesem Beispiel ist die auszuwählende Datenansicht `CJA Bootcamp - Omnichannel Data View`.
 
-Als Nächstes speichern Sie Ihr Projekt und geben ihm einen Namen. Sie können den folgenden Befehl zum Speichern verwenden:
+Als Nächstes speichern Sie Ihr Projekt und geben ihm einen Namen. Sie können den folgenden Befehl verwenden, um zu speichern:
 
-| Betriebssystem | Kurzschnitt |
+| Betriebssystem | Abkürzung |
 | ----------------- |-------------| 
-| Windows | Kontrolle + S |
+| Windows | Strg+S |
 | Mac | Befehl + S |
 
-Dieses Popup wird angezeigt:
+Daraufhin wird dieses Popup angezeigt:
 
 ![demo](./images/prsave.png)
 
-Bitte verwenden Sie diese Namenskonvention:
+Bitte diese Namenskonvention verwenden:
 
 | Name | Beschreibung |
 | ----------------- |-------------| 
@@ -76,37 +76,37 @@ Klicken Sie anschließend auf **Speichern**.
 
 ## 4.4.2 Berechnete Metriken
 
-Obwohl wir alle Komponenten in der Datenansicht organisiert haben, müssen Sie dennoch einige davon anpassen, damit Geschäftsbenutzer bereit sind, ihre Analyse zu starten. Außerdem können Sie bei jeder Analyse eine berechnete Metrik erstellen, um die Insights-Suche genauer zu untersuchen.
+Obwohl wir alle Komponenten in der Datenansicht organisiert haben, müssen Sie einige von ihnen noch anpassen, damit Business-Anwender bereit sind, mit ihrer Analyse zu beginnen. Außerdem können Sie bei jeder Analyse berechnete Metriken erstellen, um die Ergebnisse der Einblicke zu vertiefen.
 
-Als Beispiel erstellen wir eine berechnete **Konversionsrate** mit der Metrik/dem Ereignis **Einkäufe** , die/das wir in der Datenansicht definiert haben.
+Als Beispiel erstellen wir eine berechnete **Konversionsrate** unter Verwendung der Metrik **Käufe**/Ereignis, die wir in der Datenansicht definiert haben.
 
 ### Konversionsrate
 
-Beginnen wir damit, den Generator für berechnete Metriken zu öffnen. Klicken Sie auf **+** , um Ihre erste berechnete Metrik in Analysis Workspace zu erstellen.
+Öffnen wir nun den Generator für berechnete Metriken. Klicken Sie auf das **+**, um Ihre erste berechnete Metrik in Analysis Workspace zu erstellen.
 
 ![demo](./images/pradd.png)
 
-Der Generator für berechnete Metriken **wird angezeigt:**
+Der **Generator für berechnete**&quot; wird angezeigt:
 
 ![demo](./images/prbuilder.png)
 
-Suchen Sie im Menü auf der linken Seite in der Liste der Metriken den Eintrag **Einkäufe** . Klicken Sie unter **Metriken** auf **Alle anzeigen**
+Suchen Sie **Bestellungen** in der Liste der Metriken im Menü links. Klicken Sie unter **Metriken** auf **Alle anzeigen**
 
 ![demo](./images/calcbuildercr1.png)
 
-Ziehen Sie nun die Metrik **Einkäufe** in die Definition der berechneten Metrik.
+Ziehen Sie nun die Metrik **Bestellungen** per Drag-and-Drop in die Definition der berechneten Metrik.
 
 ![demo](./images/calcbuildercr2.png)
 
-Normalerweise bedeutet Konversionsrate **Konversionen/Sitzungen**. Gehen wir also dieselbe Berechnung in die Arbeitsfläche der berechneten Metrik-Definition. Suchen Sie die Metrik **Sitzungen** und ziehen Sie sie in den Definition-Builder unter dem Ereignis **Einkäufe** .
+In der Regel bedeutet Konversionsrate **Konversionen / Sitzungen**. Führen wir also dieselbe Berechnung auf der Arbeitsfläche für die berechnete Metrikdefinition durch. Suchen Sie die **Sitzungen** und ziehen Sie sie per Drag-and-Drop unter dem Ereignis **Bestellungen** in den Definitionsgenerator.
 
 ![demo](./images/calcbuildercr3.png)
 
-Beachten Sie, dass der Trennzeichen-Operator automatisch ausgewählt ist.
+Beachten Sie, dass der Operator Division automatisch ausgewählt wird.
 
 ![demo](./images/calcbuildercr4.png)
 
-Die Konversionsrate wird in der Regel in Prozent dargestellt. Ändern wir also das Format in Prozent und wählen 2 Dezimalstellen aus.
+Die Konversionsrate wird im Allgemeinen in Prozent angegeben. Ändern wir also das Format in Prozent und wählen auch zwei Dezimalstellen aus.
 
 ![demo](./images/calcbuildercr5.png)
 
@@ -116,11 +116,11 @@ Die Konversionsrate wird in der Regel in Prozent dargestellt. Ändern wir also d
 | ----------------- |-------------| 
 | yourLastName - Konversionsrate | yourLastName - Konversionsrate |
 
-Sie haben so etwas auf Ihrem Bildschirm:
+Auf dem Bildschirm wird etwas wie das folgende angezeigt:
 
 ![demo](./images/calcbuildercr6.png)
 
-Vergessen Sie nicht, die berechnete Metrik **zu speichern**.
+Vergessen Sie nicht, **berechnete** zu speichern.
 
 ![demo](./images/pr9.png)
 
@@ -128,34 +128,34 @@ Vergessen Sie nicht, die berechnete Metrik **zu speichern**.
 
 ### Filter: Berechnete Dimensionen
 
-Berechnungen sind nicht nur für Metriken vorgesehen. Bevor Sie mit einer Analyse beginnen, ist es auch interessant, einige **berechnete Dimensionen** zu erstellen. Dies bedeutete im Grunde **segments** zurück in Adobe Analytics. Unter Customer Journey Analytics werden diese Segmente als **Filter** bezeichnet.
+Berechnungen dürfen nicht nur für Metriken durchgeführt werden. Bevor Sie mit einer Analyse beginnen, ist es auch interessant, einige **berechnete Dimensionen** zu erstellen. Das bedeutete **Segmente** zurück in Adobe Analytics. Beim Customer Journey Analytics werden diese Segmente als &quot;**&quot;**.
 
 ![demo](./images/prfilters.png)
 
-Das Erstellen von Filtern hilft Benutzern aus Unternehmen, die Analyse mit einigen wertvollen berechneten Dimensionen zu beginnen. Dadurch werden einige Aufgaben automatisiert und der Adoptionsteil unterstützt. Hier einige Beispiele:
+Das Erstellen von Filtern hilft Business-Anwendern, die Analyse mit einigen wertvollen berechneten Dimensionen zu starten. Dadurch werden einige Aufgaben automatisiert und die Übernahme erleichtert. Hier einige Beispiele:
 
-1. Eigene Medien, gebührenpflichtige Medien,
+1. Eigene Medien, bezahlte Medien,
 2. Neue und wiederkehrende Besuche
-3. Kunden mit Warenkorb
+3. Kunden mit Transaktionsabbruch
 
-Diese Filter können vor oder während des Analyseabschnitts erstellt werden (was Sie in der nächsten Übung tun werden).
+Diese Filter können vor oder während des Analyseteils erstellt werden (was Sie in der nächsten Übung tun werden).
 
-### Datumsbereiche: Berechnete Dimensionen der Zeit
+### Datumsbereiche: Dimensionen für die berechnete Zeit
 
-Zeitdimensionen sind andere Dimensionen. Einige sind bereits erstellt, Sie können aber auch Ihre eigenen benutzerdefinierten Time-Dimensionen in der Datenvorbereitungsphase erstellen.
+Zeitdimensionen sind ein weiterer Typ berechneter Dimensionen. Dimension Einige werden bereits erstellt, aber Sie haben auch die Möglichkeit, in der Datenvorbereitungsphase eigene benutzerdefinierte Zeitvorgaben zu erstellen.
 
-Mithilfe dieser Dimensionen für berechnete Zeit können Analysten und Geschäftsbenutzer wichtige Daten speichern und diese zum Filtern und Ändern der Berichtszeit verwenden. Typische Fragen und Zweifel, die uns bei der Analyse in den Sinn kommen:
+Mit diesen Dimensionen für berechnete Zeiten helfen wir Analysten und Business-Anwendern, sich wichtige Daten zu merken und sie zum Filtern und Ändern der Berichtszeit zu verwenden. Typische Fragen und Zweifel, die uns bei der Analyse in den Sinn kommen:
 
-- Wann war Black Friday letztes Jahr? 21.-29.?
-- Wann haben wir diese Fernsehkampagne im Dezember geführt?
-- Von wann bis wann haben wir die Sommerverkäufe 2018 getätigt? Ich möchte es mit 2019 vergleichen. Wissen Sie übrigens genau die Tage 2019?
+- Wann war der Schwarze Freitag letztes Jahr? 21.-29.?
+- Wann haben wir diese Fernsehkampagne im Dezember gestartet?
+- Von wann bis wann haben wir die Sommerverkäufe 2018 getätigt? Ich möchte es mit 2019 vergleichen. Kennst du übrigens die genauen Tage im Jahr 2019?
 
 ![demo](./images/timedimensions.png)
 
-Sie haben die Datenvorbereitung mit CJA Analysis Workspace abgeschlossen.
+Sie haben jetzt die Datenvorbereitung mit CJA Analysis Workspace abgeschlossen.
 
-Nächster Schritt: [4.5 Visualisierung mithilfe von Customer Journey Analytics](./ex5.md)
+Nächster Schritt: [4.5-Visualisierung mithilfe von Customer Journey Analytics](./ex5.md)
 
-[Zurück zum Benutzerfluss 4](./uc4.md)
+[Zurück zu Benutzerfluss 4](./uc4.md)
 
-[Zu allen Modulen zurückkehren](./../../overview.md)
+[Zurück zu „Alle Module“](./../../overview.md)

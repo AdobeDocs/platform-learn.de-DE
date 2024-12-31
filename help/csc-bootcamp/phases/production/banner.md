@@ -1,6 +1,6 @@
 ---
-title: CSC Bootcamp - Erstellen eines Produkt-Homepage-Banners
-description: CSC Bootcamp - Erstellen eines Produkt-Homepage-Banners
+title: CSC Bootcamp - Produkt-Homepage-Banner erstellen
+description: CSC Bootcamp - Produkt-Homepage-Banner erstellen
 doc-type: multipage-overview
 exl-id: c78b6ba2-1a1a-4e95-a8ab-1b572fa2d8b1
 source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
@@ -10,127 +10,127 @@ ht-degree: 0%
 
 ---
 
-# Produkt-Startseitenbanner erstellen
+# Produkt-Homepage-Banner erstellen
 
-## Erstellung des Banners
+## Produktion des Banners
 
-Durch die Automatisierung von Inhalten wird die Leistung von Adobe Creative Cloud auf Experience Manager Assets übertragen, sodass Marketing-Experten die Asset-Produktion skaliert automatisieren und so die Erstellung von Varianten erheblich beschleunigen können. Verwenden wir diese Funktionen, um ein Banner zu generieren, das auf der Homepage verwendet werden soll!
+Durch die Inhaltsautomatisierung profitiert Experience Manager Assets von der Leistungsfähigkeit von Adobe Creative Cloud. Marketing-Experten können die Asset-Produktion skaliert automatisieren, wodurch die Erstellung von Varianten erheblich beschleunigt wird. Verwenden wir diese Funktionen, um ein Banner zu generieren, das auf der Homepage verwendet werden kann!
 
-- Wechseln Sie zum AEM-Autor auf [https://author-p105462-e991028.adobeaemcloud.com/](https://author-p105462-e991028.adobeaemcloud.com/) und melden Sie sich mit den von uns angegebenen Anmeldedaten an.
+- Gehen Sie zur AEM-Autoreninstanz auf [https://author-p105462-e991028.adobeaemcloud.com/](https://author-p105462-e991028.adobeaemcloud.com/) und melden Sie sich mit den von uns angegebenen Anmeldeinformationen an.
 
-- Navigieren Sie auf der Startseite zu Tools > Assets \> Verarbeitungsprofile .
+- Navigieren Sie auf der Startseite zu Tools \> Assets \> Verarbeitungsprofile.
 
 ![Tools > Assets > Verarbeitungsprofile](./images/prod-processing-profiles.png)
 
-- Auf der Benutzeroberfläche werden alle vorhandenen Verarbeitungsprofile angezeigt. Diese können verwendet werden, um bestimmte Automatisierungen zu ermöglichen.
+- In der Benutzeroberfläche werden alle vorhandenen Verarbeitungsprofile angezeigt. Diese können verwendet werden, um bestimmte Automatisierungen zu ermöglichen.
 
 ![Liste der Verarbeitungsprofile](./images/prod-profile-list.png)
 
 
 - Die folgenden sind für Sie von Interesse:
-   - Adobe Banner Dark: erstellt ein AdobeBike-Banner mit einer dunklen Überlagerung basierend auf dem ausgewählten Asset
-     ![dunkles Banner](./images/prod-banner-dark.jpg)
-   - Adobe Banner Light: erstellt ein AdobeBike-Banner mit einer Lichtüberlagerung basierend auf dem ausgewählten Asset
-     ![Lichtbanner](./images/prod-banner-light.jpg)
-   - Adobe Banner Green: erstellt ein AdobeBike-Banner mit einer grünen Überlagerung basierend auf dem ausgewählten Asset
-     ![grünes Banner](./images/prod-banner-green.jpg)
+   - Adobe Banner Dark: Erstellt ein Adobe Banner mit einer dunklen Überlagerung, basierend auf dem ausgewählten Asset
+     ![Dark Banner](./images/prod-banner-dark.jpg)
+   - Adobe Banner Light: Erstellt ein Adobe Banner mit einer hellen Überlagerung, basierend auf dem ausgewählten Asset
+     ![Light-Banner](./images/prod-banner-light.jpg)
+   - Adobe Banner Green : Erstellt ein Adobe Banner mit einer grünen Überlagerung, basierend auf dem ausgewählten Asset
+     ![Grünes Banner](./images/prod-banner-green.jpg)
 
-- Nachdem Sie den Bannertyp ausgewählt haben, den Sie erstellen möchten, wählen Sie dieses Verarbeitungsprofil und dann &quot;Profil auf Ordner anwenden&quot;.
+- Nachdem Sie den Bannertyp ausgewählt haben, den Sie erstellen möchten, wählen Sie dieses Verarbeitungsprofil aus und klicken Sie auf „Profil auf Ordner anwenden“.
 
 ![Profil auf Ordner anwenden](./images/prod-apply-profile.png)
 
-- Navigieren Sie auf dem nächsten Bildschirm zum Ordner Ihres Teams in AEM Assets. Wählen Sie dann oben links die Schaltfläche &quot;Erstellen&quot; aus, um einen neuen Ordner zu erstellen und ihm einen aussagekräftigen Namen zu geben, z. B. &quot;Dark Banner erstellen&quot;.
+- Navigieren Sie im nächsten Bildschirm zum Ordner Ihres Teams in AEM Assets. Wählen Sie dann oben links die Schaltfläche „Erstellen“, um einen neuen Ordner zu erstellen und ihm einen aussagekräftigen Namen zu geben, z. B. „Dunkles Banner erstellen“.
 
 ![Ordner erstellen](./images/prod-create-profile-folder.png)
 
 ![Ordnerdetails erstellen](./images/prod-profile-folder-details.png)
 
-- Markieren Sie nach der Erstellung des Ordners das Kästchen neben seinem Namen und klicken Sie dann oben rechts auf die Schaltfläche &quot;Anwenden&quot;.
+- Aktivieren Sie nach dem Erstellen des Ordners das Kontrollkästchen neben seinem Namen und klicken Sie dann oben rechts auf die Schaltfläche „Anwenden“.
 
-![auf den erstellten Ordner anwenden](./images/prod-select-profile-folder.png)
+![Auf erstellten Ordner anwenden](./images/prod-select-profile-folder.png)
 
-Nachdem wir die erforderliche Konfiguration vorgenommen haben, erstellen wir unser Banner.
+Nachdem wir nun die erforderliche Konfiguration vorgenommen haben, generieren wir unser Banner.
 
-- Klicken Sie auf das AEM Logo oben links, um die Navigation zu öffnen, und navigieren Sie dann zu Navigation \> Assets \> Dateien .
+- Klicken Sie oben links auf das AEM-Logo, um die Navigation zu öffnen, und gehen Sie dann zu Navigation \> Assets \> Dateien.
 
 ![AEM-Startbildschirm](./images/prod-select-assets.png)
-![Bildschirm &quot;aem assets&quot;](./images/prod-select-assets-2.png)
+![AEM Assets-Bildschirm](./images/prod-select-assets-2.png)
 
-- Suchen Sie den Ordner &quot;Generated Adobe Assets&quot;und öffnen Sie ihn durch Klicken auf die Karte. Hier werden die generierten Banner angezeigt.
+- Suchen Sie den Ordner „Generated AdobeBike Assets&quot; und öffnen Sie ihn durch Klicken auf die Karte. Hier werden die generierten Banner angezeigt.
 
-![generierte Adobike-Assets](./images/prod-generated-banners.png)
+![generierte AdobeBike-Assets](./images/prod-generated-banners.png)
 
-- Öffnen Sie eine neue Registerkarte und navigieren Sie erneut zu AEM Assets. Navigieren Sie dann zu dem Ordner, auf den das Verarbeitungsprofil angewendet wurde.
+- Öffnen Sie eine neue Registerkarte und navigieren Sie erneut zu AEM Assets. Navigieren Sie dann zu dem Ordner, auf den wir das Verarbeitungsprofil angewendet haben.
 
-- Laden Sie im Ordner das Bild hoch, für das Sie ein Banner erstellen möchten, indem Sie es in den Browser ziehen und dort ablegen oder oben rechts in der Benutzeroberfläche auf Dateien erstellen klicken.
+- Laden Sie im Ordner das Bild hoch, für das Sie ein Banner erstellen möchten, indem Sie es entweder per Drag-and-Drop in Ihren Browser ziehen oder indem Sie oben rechts in der Benutzeroberfläche auf Erstellen > Dateien klicken.
 
-![Upload durch Drag-and-Drop](./images/prod-drag-drop-banner.png)
+![Hochladen durch Drag-and-Drop](./images/prod-drag-drop-banner.png)
 
-![Upload mit der Erstellungsdatei](./images/prod-create-file.png)
+![Hochladen mit Datei erstellen](./images/prod-create-file.png)
 
 
-- Warten Sie eine Minute, bis Ihr Asset verarbeitet wurde, und laden Sie dann den Bildschirm neu. Wenn Ihr Asset den Status &quot;Neu&quot;aufweist, wissen Sie, dass die Verarbeitung abgeschlossen ist.
+- Warten Sie eine Minute, bis das Asset verarbeitet wurde, und laden Sie dann Ihren Bildschirm neu. Wenn Ihr Asset im Status „Neu“ angezeigt wird, wissen Sie, dass die Verarbeitung abgeschlossen ist.
 
-![Asset in neuem Status](./images/prod-asset-processed.png)
+![Asset im neuen Status](./images/prod-asset-processed.png)
 
-- Navigieren Sie zurück zur vorherigen Registerkarte und laden Sie den Bildschirm auch hier neu. Sie sollten ein neues Asset im Status &quot;Neu&quot;bemerken. Dies ist unser generiertes Banner, alles aus dem DAM! Siehst du es noch nicht? Warten Sie noch eine Minute und laden Sie dann den Bildschirm neu.
+- Navigieren Sie zurück zur vorherigen Registerkarte und laden Sie auch hier den Bildschirm neu. Beachten Sie ein neues Asset im Status „Neu“. Dies ist unser generiertes Banner, alles aus dem DAM! Siehst du es noch nicht? Warten Sie noch eine Minute und laden Sie dann Ihren Bildschirm neu.
 
 ![generiertes Banner](./images/prod-new-banner.png)
 
 >[!NOTE]
 >
-> Ist das Ergebnis nicht zufrieden? Sie können auch ein anderes Verarbeitungsprofil auf Ihren Ordner anwenden und Ihr Asset erneut hochladen, um ein anderes Banner zu generieren (oder natürlich ein anderes Asset hochladen). Während des Neuladens fragt das System Sie, was Sie mit dem vorhandenen Asset machen möchten, und wählen Sie &quot;Ersetzen&quot;.
-> ![vorhandene ersetzen](./images/prod-replace-asset.png)
+> Nicht zufrieden mit dem Ergebnis? Sie können auch ein anderes Verarbeitungsprofil auf Ihren Ordner anwenden und Ihr Asset erneut hochladen, um ein anderes Banner zu generieren (oder natürlich ein anderes Asset hochladen). Während des erneuten Uploads fragt das System Sie, was Sie mit dem vorhandenen Asset tun möchten, wählen Sie „Ersetzen“.
+> ![Vorhandenes ersetzen](./images/prod-replace-asset.png)
 
-Jetzt haben wir unser generiertes Banner, das wir später bei der Bereitstellung unserer Kampagne verwenden können. Stellen Sie sicher, dass Sie das Banner veröffentlichen, indem Sie es auswählen und dann auf die Schaltfläche &quot;Quick Publish&quot;auf dem Band klicken.
+Wir haben jetzt unser generiertes Banner, das wir später während des Versands unserer Kampagne verwenden können. Veröffentlichen Sie unbedingt das Banner, indem Sie es auswählen und dann auf der Multifunktionsleiste auf die Schaltfläche „Quick Publish&quot; klicken.
 
 ![Asset veröffentlichen](./images/prod-publish-banner.png)
 
-## Folgemaßnahmen zu Workfront
+## Folgemaßnahmen in Workfront
 
-Wenn Sie einen formellen und prüfbaren Review- und Genehmigungsprozess für Ihre Assets benötigen, ist Workfront der richtige Ort.
-
->[!NOTE]
->
-> Obwohl wir dies hier ausdrücklich erwähnen, ist es beabsichtigt, die Aufgaben in Workfront zu aktualisieren, nachdem Sie sie abgeschlossen haben. Sie sollten immer nach einem Ablauf &quot;Erstellen&quot;> &quot;Überprüfen&quot;> &quot;Genehmigen&quot;streben.
-
-- Gehen wir zurück zu unserem Projekt und erweitern Sie das Akkordeon &quot;Go/No Go Banner Review&quot;, um die Aufgabe zu öffnen, indem Sie darauf klicken:
-
-![Banner go/no-go](./images/banner-gonogo.png)
-
-- Klicken Sie in der linken Spalte auf den Bereich Dokumente der Aufgabe und dann auf den mit AEM Assets verknüpften Ordner &#39;Final&#39;. Wählen Sie unser Asset aus, indem Sie auf seine Zone klicken und auf &quot;Testversand erstellen&quot;klicken. Ein Beweis ist die Möglichkeit, Inhalte, z. B. Bild, Text, Video, Website usw., in strukturierter und kollaborativer Weise zu überprüfen, wobei Kommentare, Korrekturen, Änderungen der beteiligten Akteure erfasst werden, Versionen und Ergebnisse verglichen und durch einen Klick endgültig genehmigt werden können.
-
-![Testversand erstellen](./images/wf-create-proof.png)
-
-- Wählen Sie &quot;Erweiterter Testversand&quot;, da Sie einen detaillierten Validierungsprozess benötigen.
-
-![erweiterter Testversand](./images/wf-advanced-proof.png)
+Wenn Sie einen formellen und überprüfbaren Prüfungs- und Genehmigungsprozess für Ihre Assets benötigen, ist Workfront der richtige Ort dafür.
 
 >[!NOTE]
 >
-> Wir werden manuell entscheiden, wer unseren Testversand in diesem Bootcamp überprüfen und/oder genehmigen wird. In den meisten realen Anwendungsfällen würden wir eine voreingestellte Vorlage für den/die Validierungsfluss(e) verwenden, die bereits für jeden Testversand-Typ definiert ist/sind.
+> Obwohl wir es hier explizit erwähnen, ist es beabsichtigt, die Aufgaben in Workfront zu aktualisieren, nachdem Sie sie abgeschlossen haben. Sie sollten immer nach einem Fluss vom Typ Erstellen > Überprüfen > Genehmigen streben.
 
-- Standardmäßig befinden wir uns in einem Workflow-Typ &quot;Standard&quot; und wählen Ihren Workfront Bootcamp-Spezialisten als Reviewer &amp; Genehmiger aus. Geben Sie den Namen Ihres Bootcamp Workfront Specialist ein, in dem steht: Kontaktname oder E-Mail-Adresse, um einen Empfänger hinzuzufügen:
+- Gehen wir zurück zu unserem Projekt und erweitern das Akkordeon „Go/No Go Banner Review“, um die genannte Aufgabe durch Klicken zu öffnen:
+
+![Banner Go/No-Go](./images/banner-gonogo.png)
+
+- Klicken Sie auf den Abschnitt Dokumente der Aufgabe (linke Spalte) und dann auf den verknüpften AEM Assets-Ordner „Endgültig“. Wählen Sie Ihr Asset aus, indem Sie auf seine Zone und dann auf „Korrekturabzug erstellen“ klicken. Ein Korrekturabzug ist die Möglichkeit, Inhalte, wie z. B. Bilder, Texte, Videos, Websites usw., strukturiert und kollaborativ zu prüfen, wobei Kommentare, Korrekturen, Änderungen der beteiligten Stakeholder erfasst, Versionen und Ergebnisse verglichen und mit einem Klick endgültig genehmigt werden können.
+
+![Korrekturabzug erstellen](./images/wf-create-proof.png)
+
+- Wählen Sie „Erweiterter Korrekturabzug“ aus, da wir einen aufwändigen Genehmigungsprozess benötigen.
+
+![Erweiterter Korrekturabzug](./images/wf-advanced-proof.png)
+
+>[!NOTE]
+>
+> Wir werden manuell entscheiden, wer unseren Testversand in diesem Bootcamp überprüfen und/oder genehmigen wird. In den meisten realen Anwendungsfällen würden wir eine vordefinierte Vorlage von Genehmigungsflüssen verwenden, die bereits für jeden Testversand-Typ definiert ist bzw. sind.
+
+- Standardmäßig haben wir den Workflow-Typ „Standard“ und wählen Ihren Workfront Bootcamp-Spezialisten als Prüfer und Genehmiger aus. Geben Sie den Namen Ihres Bootcamp Workfront-Spezialisten ein, der lautet: „Kontaktnamen oder E-Mail-Adresse eingeben, um einen Empfänger hinzuzufügen:
 
 ![Testversand zuweisen](./images/wf-proof-assign.png)
 
 ![Testversand zuweisen](./images/wf-assign-proof-2.png)
 
-- Legen Sie sie als &quot;Reviewer &amp; Genehmiger&quot;fest:
+- Legen Sie sie als „Prüfende Person und genehmigende Person“ fest:
 
-![validierer und valiver](./images/wf-review-approve.png)
+![Prüfer und genehmigende Person](./images/wf-review-approve.png)
 
-- Klicken Sie auf &quot;Testversand erstellen&quot;. Workfront benötigt einen Moment, um den Testversand zu erzeugen:
+- Klicken Sie auf „Korrekturabzug erstellen“. Workfront benötigt einige Minuten, um den Testversand zu generieren:
 
-![ Testversand erzeugen](./images/wf-generating-proof.png)
+![Korrekturabzug wird erstellt](./images/wf-generating-proof.png)
 
-- Ihr Workfront-Spezialist wird jetzt über eine neue Benachrichtigung informiert, dass er über einen Nachweis zur Überprüfung und/oder Genehmigung verfügt:
+- Ihr Workfront-Spezialist erhält jetzt eine neue Benachrichtigung, die ihn darüber informiert, dass er einen Korrekturabzug zur Überprüfung und/oder Genehmigung hat:
 
-![workfront task](./images/wf-proof-task.png)
+![Workfront-Aufgabe](./images/wf-proof-task.png)
 
-- Nachdem Sie auf die Benachrichtigung geklickt haben, wird Ihr Testversand angezeigt und kann einige Kommentare abgeben und/oder diesen Testversand validieren.
+- Nachdem er auf die Benachrichtigung geklickt hat, wird er mit Ihrem Korrekturabzug konfrontiert und kann einige Kommentare abgeben und/oder diesen Korrekturabzug genehmigen.
 
-   - Wenn Anmerkungen vorhanden sind, können sie oben im Bildschirm auf &quot;Kommentar hinzufügen&quot;klicken:
+   - Er kann auf „Kommentar hinzufügen“ oben auf dem Bildschirm klicken, wenn er Anmerkungen hat:
 
   ![Kommentar hinzufügen](./images/wf-proof-add-comment.png)
 
@@ -138,30 +138,30 @@ Wenn Sie einen formellen und prüfbaren Review- und Genehmigungsprozess für Ihr
 
   ![Pin-Punkt-Kommentar](./images/wf-proof-comment.png)
 
-   - Durch Hinzufügen des Kommentars können Sie wissen, dass Sie zusätzliche Arbeit an einer neuen Version des Testversands benötigen. Aktualisieren Sie Ihren Workfront-Tab. Sie erhalten eine neue Benachrichtigung, die Sie darüber informiert. Sobald Sie wissen, welche Änderungen Sie vornehmen müssen, nehmen Sie Ihre Änderungen in AEM vor und laden Sie Ihre neue Version hier hoch:
+   - Durch Hinzufügen des Kommentars können Sie darüber informiert werden, dass Sie an einer neuen Version des Korrekturabzugs zusätzliche Arbeit leisten müssen. Aktualisieren Sie Ihre Registerkarte Workfront . Sie erhalten eine neue Benachrichtigung, die Sie genau darüber informiert. Sobald Sie wissen, welche Änderungen Sie vornehmen müssen, nehmen Sie Ihre Änderungen in AEM vor und laden Sie dann Ihre neue Version hier hoch:
 
-  ![neue Version hochladen](./images/wf-upload-version.png)
+  ![Neue Version hochladen](./images/wf-upload-version.png)
 
-   - Wählen Sie Ihr aktualisiertes Asset aus (wenn im Bootcamp-Szenario keine Änderungen erforderlich sind, laden Sie einfach dasselbe Asset erneut hoch) und klicken Sie auf &quot;Link&quot;:
+   - Wählen Sie Ihr aktualisiertes Asset aus (wenn im Bootcamp-Szenario keine Änderungen erforderlich sind, laden Sie dasselbe Asset erneut hoch) und klicken Sie auf „Link“:
 
   ![Asset verknüpfen](./images/wf-link-new-asset.png)
 
-   - Klicken Sie dann auf der rechten Seite auf &#39;Testversand erstellen&#39;.
+   - Klicken Sie dann auf der rechten Seite auf „Korrekturabzug erstellen“.
 
-  ![Testversand erstellen](./images/create-new-proof.png)
+  ![Korrekturabzug erstellen](./images/create-new-proof.png)
 
-   - Sobald der Testversand erstellt wurde (dies kann einige Augenblicke dauern), erhält Ihr Workfront-Spezialist eine Benachrichtigung und kann diese neue Version überprüfen und hoffentlich genehmigen.  Mithilfe der Schaltfläche zum Testversand-Vergleich können sie beispielsweise einen parallelen Vergleich von V1 und V2 mit allen Kommentaren sehen.
+   - Sobald der Korrekturabzug erstellt wurde (dies kann einige Augenblicke dauern), erhält Ihr Workfront-Spezialist eine Benachrichtigung und kann diese neue Version überprüfen und hoffentlich genehmigen.  Beispielsweise können sie mithilfe der Schaltfläche für den Korrekturabzug-Vergleich einen direkten Vergleich von V1 und V2 mit allen vorgenommenen Kommentaren sehen.
 
-  ![Testversand-Vergleich](./images/wf-proof-compare.png)
+  ![Korrekturabzug vergleichen](./images/wf-proof-compare.png)
 
-  ![Entscheidungsfindung](./images/make-decision-proof.png)
+  ![Entscheidung treffen](./images/make-decision-proof.png)
 
-  ![authorised](./images/approved.png)
+  ![genehmigt](./images/approved.png)
 
-Wir haben jetzt eine formelle Genehmigung für die Verwendung unseres Banners. Es ist einfach zu folgen, wo wir uns im Prozess befinden, und die Updates, die Sie automatisch Trigger-Benachrichtigungen durchführen, damit Sie so effizient wie möglich arbeiten können.
+Wir haben jetzt eine formelle Genehmigung für die Verwendung unseres Banners. Es ist einfach zu verfolgen, wo wir uns befinden, und die Updates, die Sie vornehmen, führen automatisch zu einem Trigger von Benachrichtigungen, sodass Sie so effizient wie möglich arbeiten können.
 
 Nächster Schritt: [Phase 2 - Produktion: Social-Media-Anzeige erstellen](./social.md)
 
-[Gehen Sie zurück zu Phase 1 - Planung: Sonstige Vorarbeiten](../planning/prework.md)
+[Zurück zu Phase 1 - Planung: Sonstige Vorarbeiten](../planning/prework.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

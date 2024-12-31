@@ -1,6 +1,6 @@
 ---
 title: CSC Bootcamp - Content Supply Chain in 4 Phasen
-description: Obwohl es schwierig sein kann, mit der steigenden Nachfrage nach Inhalten Schritt zu halten, können Sie Inhalte mit einer gut gestalteten Content-Lieferkette schnell und einfach planen, produzieren und bereitstellen.
+description: Obwohl es eine Herausforderung sein kann, mit der steigenden Nachfrage nach Inhalten Schritt zu halten, können Sie Inhalte mit einer gut gestalteten Inhaltslieferkette schnell und einfach planen, erstellen und bereitstellen.
 doc-type: multipage-overview
 exl-id: 7745e3ae-6e13-4cc2-9017-8bfb9d4ae1b4
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
@@ -10,90 +10,90 @@ ht-degree: 0%
 
 ---
 
-# Inhaltsversorgungskette in 4 Phasen
+# Inhaltslieferkette in 4 Phasen
 
-Die Welt ist jetzt an erster Stelle digital. Es ist eine Realität, mit der Unternehmen gezwungen wurden, sich zu einigen, und es wird nicht bald verschwinden. Als Teil dieser digitalen Welt sehen wir uns mit [ einer enormen Zunahme von Inhalten](https://www.prnewswire.com/news-releases/content-marketing-market-size-to-grow-by-usd-487-24-billion--by-objective-platform-end-user-and-geography---forecast-and-analysis-2022-2026--301562808.html) konfrontiert, die von mehr Menschen angetrieben werden, die soziale Medien durchsuchen, Zeit in digitalen Räumen verbringen und fernarbeiten.
+Die Welt ist jetzt zuerst digital. Es ist eine Realität, mit der sich Unternehmen arrangieren mussten, und sie wird nicht von heute auf morgen verschwinden. Als Teil dieser digitalen Welt stehen wir vor [einem enormen Anstieg von Inhalten](https://www.prnewswire.com/news-releases/content-marketing-market-size-to-grow-by-usd-487-24-billion--by-objective-platform-end-user-and-geography---forecast-and-analysis-2022-2026--301562808.html) angetrieben von mehr Menschen, die soziale Medien durchsuchen, Zeit in digitalen Räumen verbringen und aus der Ferne arbeiten.
 
-Das bedeutet für Sie, dass es mehr Kanäle, Märkte und Formate gibt, um Inhalte bereitzustellen - und es besteht ein größerer Bedarf an dynamischen und optimierten Inhalten.
+Das bedeutet für Sie, dass es mehr Kanäle, Märkte und Formate gibt, um Inhalte bereitzustellen - und es besteht ein höherer Bedarf an dynamischen und optimierten Inhalten.
 
-![85 % der Marketer geben an, dass sie unter Druck stehen, Inhalte schneller zu erstellen und bereitzustellen.](./images/pressure-to-create-content.png)
+![85 % der Marketer geben an, unter Druck zu stehen, Inhalte schneller zu erstellen und bereitzustellen.](./images/pressure-to-create-content.png)
 
 _Source:_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/consultancy/deloitte-uk-future-of-experience-time-to-market.pdf)
 
-Die gute Nachricht ist, so schwierig es auch sein kann, mit der Nachfrage nach Inhalten Schritt zu halten, es gibt eine Möglichkeit, Inhalte schneller und leichter zu planen, zu produzieren und bereitzustellen. Sie wird als **Inhaltslieferkette** bezeichnet. Und wenn Sie einen Prozess mit reibungslosen Prozessen, einer soliden Strategie und soliden Verfahren einrichten können, können Sie den gesamten Inhaltslebenszyklus optimieren.
+Die gute Nachricht: So schwierig es auch sein mag, mit der Nachfrage nach Inhalten Schritt zu halten, es gibt eine Möglichkeit, Inhalte schneller und einfacher zu planen, zu produzieren und bereitzustellen. Es nennt sich **Inhaltslieferkette**. Und wenn Sie eine mit reibungslosen Prozessen, einer starken Strategie und soliden Verfahren einrichten können, können Sie den gesamten Inhaltslebenszyklus optimieren.
 
-## Collaboration ist der Schlüssel zu einer reibungslosen Inhaltsbereitstellungskette
+## Collaboration ist der Schlüssel zu einer reibungslosen Inhaltslieferkette
 
-Eine Inhaltsversorgungskette ist der Prozess, der Personen, Tools und Workflows zusammenführt, um Inhalte effektiv zu planen, zu erstellen, zu verwalten und bereitzustellen. Da Kunden immer schneller mehr und bessere Erlebnisse anfordern, müssen Sie Ihre Inhalte jetzt und nicht später richtig einsetzen. Dadurch wird der Druck all Ihrer Teams verringert, indem Silos aufgeschlüsselt und Workflows vereinheitlicht werden. Und Sie werden auch mehr Wert aus Ihren Technologieinvestitionen erhalten, damit Sie Effizienz und Wert steigern können.
+Eine Inhaltslieferkette ist der Prozess, der Mitarbeiter, Tools und Arbeitsabläufe zusammenführt, um Inhalte effektiv zu planen, zu erstellen, zu verwalten und bereitzustellen. Da Kundinnen und Kunden immer mehr und bessere Erlebnisse in immer schnellerem Tempo benötigen, müssen Sie Ihre Inhalte lieber jetzt als später richtig gestalten. Auf diese Weise können Sie Druck auf alle Ihre Teams ausüben, indem Sie Silos aufbrechen und Workflows vereinheitlichen. Außerdem profitieren Sie von einem größeren Nutzen aus Ihren Technologieinvestitionen und können so Ihre Effizienz und Ihren Wert steigern.
 
-![Ein Überblick darüber, welche Phasen und Teams an einer Inhaltsbereitstellungskette beteiligt sind.](./images/csc-overview.png)
+![Ein Überblick darüber, welche Phasen und Teams an einer Inhaltslieferkette beteiligt sind.](./images/csc-overview.png)
 
-Theoretisch ist es ein Prozess, der Unternehmen überall dabei helfen sollte, ihren Inhalt schneller zu bekommen. Aber in der Praxis sind die meisten Lieferketten kaputt, weil die Lebenszyklen von funktionsübergreifenden Inhalten natürlich sind. Leider können diese Ketten, wenn sie zusammenbrechen, interne Fehlausrichtungen verursachen, Budgets reduzieren, Mitarbeiter aussparen und die Geschwindigkeit verringern, mit der wichtige Botschaften auf den Markt gebracht werden.
+Theoretisch handelt es sich dabei um einen Prozess, der Unternehmen überall dabei helfen sollte, ihre Inhalte schneller zur Verfügung zu stellen. In der Praxis werden jedoch die meisten Lieferketten unterbrochen, da funktionsübergreifende Inhaltslebenszyklen naturgemäß sind. Leider können diese Ketten, wenn sie zerbrechen, zu internen Fehlausrichtungen führen, Budgets reduzieren, Mitarbeiter verschleißen und die Geschwindigkeit der Bereitstellung wichtiger Botschaften auf dem Markt verlangsamen.
 
-### Was bricht Ihre Content-Lieferkette?
+### Was unterbricht die Wertschöpfungskette Ihrer Inhalte?
 
-- [**70%**](https://business.adobe.com/resources/reports/future-creative-experiences.html) der Zeit wird für Nicht-Kernaufgaben verwendet, bei denen manuelle Aufgaben in unterschiedlichen Systemen über Rollen hinweg verwaltet werden.
-- [**21%**](https://business.adobe.com/resources/reports/future-creative-experiences.html) der Kreativen identifizierten Engpässe im gesamten Inhaltsprozess als Herausforderung für die Erstellung effektiver Erlebnisse.
-- [**31 %**](https://www.fotoware.com/blog/dam-industry-trends-by-fotoware) der Kreativen und Marketer sagen, dass ihre größte Herausforderung darin besteht, Assets nicht für mehrere Stakeholder freizugeben.
+- [**70 %**](https://business.adobe.com/resources/reports/future-creative-experiences.html) Zeit wird für Nicht-Kernaufgaben aufgewendet, d. h. für die Verwaltung manueller Aufgaben in unterschiedlichen Systemen in verschiedenen Rollen.
+- [**21 %**](https://business.adobe.com/resources/reports/future-creative-experiences.html) Kreativen haben Engpässe im gesamten Inhaltsprozess als Herausforderung für die Erstellung effektiver Erlebnisse identifiziert.
+- [**31 %**](https://www.fotoware.com/blog/dam-industry-trends-by-fotoware) Kreativen und Marketern sagen, dass ihre größte Herausforderung die Unfähigkeit ist, Assets mit mehreren Stakeholdern zu teilen.
 
-Um die allgemeinen Schuldigen hinter kaputten Inhaltslieferketten noch besser zu betrachten, ist es hilfreich, sich jeden der drei übergeordneten Phasen anzusehen:
+Um einen noch besseren Einblick in die häufigsten Ursachen für fehlerhafte Lieferketten von Inhalten zu erhalten, ist es hilfreich, sich jede der drei Phasen auf hoher Ebene anzusehen:
 
-1. In der Phase **Planung** führt das Fehlen eines einheitlichen Projektprozesses oder einer zentralen Methode zur Ressourcenverfolgung zu mehreren Revisionen, übermäßigen Kosten, Preisverzögerungen und der Unfähigkeit, einen Ausgleich zwischen Arbeit zu schaffen. Außerdem führen Trennlinien zwischen Teammitgliedern zu verschwendeten Zyklen und langsamen Prioritätsänderungen.
-2. Während der **Produktion** werden die Live-Zusammenarbeit, die Asset-Auffindbarkeit, Verzögerungen und das Brennen durch isolierte Systeme und getrennte Workflows eingeschränkt. Da Kreative Aufgaben und Assets manuell verfolgen und sich wiederholende Aufgaben manuell ausführen müssen, entstehen dadurch höhere Kosten und mehr Fehler.
-3. Wenn es an der Zeit ist, **Versand** durchzuführen, wird durch das Fehlen eines zentralen Asset-Managementsystems (sowie einer eingeschränkten Automatisierung zur Skalierung von Inhalten) die Fähigkeit von Teams verringert, kanalübergreifend einheitliche, personalisierte Erlebnisse zu starten. Darüber hinaus wird die genaue Messung der Asset-Leistung durch fragmentierte Bereitstellungswerkzeuge und Daten begrenzt.
+1. In der **Planungs**-Phase führt das Fehlen eines einheitlichen Projektprozesses oder einer zentralen Methode zur Verfolgung von Ressourcen zu mehrfachen Überarbeitungen, übermäßigen Kosten, kostspieligen Verzögerungen und der Unfähigkeit, die Arbeit auszugleichen. Außerdem führen Trennungen zwischen Team-Mitgliedern zu verschwendeten Zyklen und langsamen Prioritätsänderungen.
+2. Während **Produktion** begrenzen isolierte Systeme und getrennte Workflows die Live-Zusammenarbeit, die Auffindbarkeit von Assets, Verzögerungen und das Burnout. Und weil Kreative Aufgaben und Assets manuell verfolgen und sich wiederholende Aufgaben manuell ausführen müssen, führt dies zu höheren Kosten und mehr Fehlern.
+3. Wenn es Zeit für **Bereitstellung** ist, kein zentrales Asset-Management-System zu haben sowie eine begrenzte Automatisierung zur Skalierung von Inhalten, reduziert dies die Fähigkeit von Teams, kanalübergreifend einheitliche, personalisierte Erlebnisse zu starten. Darüber hinaus begrenzen fragmentierte Bereitstellungs-Tools und -Daten die genaue Messung der Asset-Leistung.
 
 ![In einer kaputten Lieferkette verursachen fragmentierte Systeme Chaos.](./images/fragmented-supply-chain.png)
 
-## Es ist an der Zeit, die Inhaltslieferkette zu zerschlagen
+## Es ist an der Zeit, über die Lieferkette für Inhalte zu streiten
 
-Wie bei allem, was an Fehlschritten und Kommunikation leidet, gibt es immer eine Möglichkeit, den Prozess zu verbessern. Lassen Sie uns mit diesen drei Phasen untersuchen, wie eine große Inhaltsversorgungskette für Ihr Unternehmen aussehen könnte.
+Wie bei allem, was unter Fehltritten und Fehlkommunikation leidet, gibt es immer eine Möglichkeit, den Prozess zu verbessern. Bleiben wir bei diesen drei Phasen und schauen wir uns an, wie eine großartige Inhaltslieferkette für Ihr Unternehmen aussehen könnte.
 
-### Optimieren von Vorgängen durch optimierte Planung
+### Optimierte Betriebsabläufe durch optimierte Planung
 
-Idealerweise sollte Ihr Marketing-Team eine Lösung für das Arbeitsmanagement verwenden, die eine funktionsübergreifende Zusammenarbeit ermöglicht und Projekte mit geplanten, datengesteuerten Ergebnissen verbindet. Außerdem sollte es das Marketing-Team in die Lage versetzen, Arbeit strategisch zu priorisieren und diese Prioritäten Ihrem Kreativteam bekannt zu geben. Von dort aus sollten die kreative Kurzbeschreibung, Inhaltsversionen und Feedback in jedem Projekt verknüpft werden, damit Ihr Team nicht durch alte E-Mails suchen muss, um herauszufinden, wonach es sucht.
+Idealerweise sollte Ihr Marketing-Team eine Work-Management-Lösung verwenden, die eine funktionsübergreifende Zusammenarbeit ermöglicht und Projekte mit geplanten, datengesteuerten Ergebnissen verknüpft. Außerdem sollte es das Marketing-Team in die Lage versetzen, der Arbeit strategische Prioritäten zu setzen und diese Prioritäten Ihrem Kreativ-Team mitzuteilen. Von dort aus sollten die Kreativ-Kurzbeschreibung, die Inhaltsversionen und das Feedback in jedem Projekt miteinander verknüpft sein, sodass Ihr Team nicht nach alten E-Mails suchen muss, um zu finden, wonach es sucht.
 
-Ihr Kreativ-Team sollte mit [einem großartigen Digital Asset Management](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[System](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) ausgestattet sein, das in Ihre Kreativ- und Arbeitsverwaltungswerkzeuge integriert ist. Auf diese Weise können sie relevante Assets einfach finden, verwenden, aktualisieren oder wiederverwenden. Dadurch können Sie Ihre Markteinführung beschleunigen und interne Vorgänge und Prozesse vereinfachen.
+Ihr Kreativ-Team sollte mit [einem hervorragenden Digital Asset Management](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[System) ](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html), das mit Ihren Kreativ- und Arbeitsverwaltungs-Tools integriert ist. Auf diese Weise ist es für sie einfach, relevante Assets zu finden, zu verwenden, zu aktualisieren oder wiederzuverwenden. Auf diese Weise können Sie die Markteinführung beschleunigen und interne Abläufe und Prozesse vereinfachen.
 
-### Steigerung der Produktionseffizienz mit nahtlosen Workflows
+### Steigerung der Effizienz in der Produktion durch nahtlose Workflows
 
-Mit Ihrer Planung konzentriert sich eine hervorragende Produktionsphase auf eine einheitliche Asset-Management-Lösung, die zusammen mit Ihrer Workflow-Management-Anwendung Metadaten über alle Ihre Systeme hinweg synchronisiert. Auf diese Weise können Sie sich wiederholende Formatierungsaufgaben automatisieren, sodass Sie die Ausgabe beschleunigen können, ohne die Qualität zu beeinträchtigen. Wenn Ihre Workflow-Management-Lösung mit Kreativ-Tools integriert wird, können Ihre Kreativteams nicht nur Anforderungen, Workflows und Überprüfungen verwalten, sondern auch Inhalte genehmigen und abschließen, und zwar mit allen Tools, in denen sie bereits arbeiten.
+Bei der Planung steht eine einheitliche Asset-Management-Lösung im Mittelpunkt einer großartigen Produktionsphase, die zusammen mit Ihrer Work-Management-Anwendung Metadaten in allen Ihren Systemen synchronisiert. Auf diese Weise können Sie sich wiederholende Formatierungsaufgaben automatisieren, damit Sie die Ausgabe beschleunigen können, ohne bei der Qualität Kompromisse eingehen zu müssen. Und wenn Ihre Work-Management-Lösung mit Kreativ-Tools integriert ist, können Ihre Kreativ-Teams nicht nur Anfragen, Workflows und Überprüfungen verwalten, sondern sogar Inhalte in allen Tools, an denen sie bereits arbeiten, genehmigen und abschließen.
 
-Wenn Sie dann künstliche Intelligenz (KI) zu Ihren Inhalts-Workflows hinzufügen, können Sie personalisierte Inhalte erstellen, die auf Kundeninteressen abgestimmt sind - alles automatisch in großem Maßstab. Das bedeutet, dass Ihre Teams alles tun können, was sie am besten tun - Ihre Kreativen können ansprechende Inhalte erstellen und Ihre Marketing-Experten können Einblicke verwenden, um diese Inhalte anzupassen. Damit Sie mit der Bereitstellung erstaunlicher Erlebnisse beginnen können.
+Wenn Sie dann künstliche Intelligenz (KI) in Ihre Inhalts-Workflows einfügen, können Sie personalisierte Inhalte erstellen, die mit den Kundeninteressen abgestimmt sind, und das alles automatisch im großen Maßstab. Das bedeutet, dass Ihre Teams alle das tun können, was sie am besten können - Ihre Kreativen können ansprechende Inhalte erstellen und Ihre Marketing-Experten können Einblicke verwenden, um diese Inhalte anzupassen. Alles, damit Sie anfangen können, erstaunliche Erlebnisse bereitzustellen.
 
 ### Bereitstellen von Assets und Messen der Inhaltseffizienz
 
-Wenn es an der Zeit ist, Ihre Inhalte bereitzustellen, ist es wichtig, dass alle beteiligten kritischen Benutzer oder Teams Zugriff auf die benötigten Inhalte haben. Stellen Sie sicher, dass Ihr DAM Ihren Anforderungen gerecht wird und dass Ihre Teams Assets nach Typ oder beliebigen anderen Tags katalogisieren, tracken und suchen können. Kunden bewegen sich schnell, und Ihre Teams müssen noch schneller umziehen, Videos, Infografiken, Fotos, Messaging und mehr in einem Flash-Format finden.
+Wenn es an der Zeit ist, Ihre Inhalte bereitzustellen, ist es wichtig, dass alle wichtigen Benutzer oder Teams Zugriff auf die benötigten Inhalte haben. Stellen Sie sicher, dass Ihr DAM Ihren Anforderungen entspricht und Ihre Teams Assets nach Typ oder anderen ausgewählten Tags katalogisieren, verfolgen und finden können. Kunden bewegen sich schnell, und Ihre Teams müssen sich noch schneller bewegen und Videos, Infografiken, Fotos, Nachrichten und mehr im Handumdrehen finden.
 
-Darüber hinaus verwendet eine wirklich großartige Content-Lieferkette ein DAM, mit dem Bilder automatisch in der Größe angepasst, Versionskontrolle verwaltet und Dopplungen über Geos hinweg vermieden werden können. Es sollte auch in Ihren gesamten technischen Stack integriert werden, einschließlich Ihrer Kreativ-Tools, der Arbeitsverwaltungslösung und des Content-Management-Systems, damit Ihre Teams schnell und einfach neue Inhalte erstellen und für beliebige Kanäle bereitstellen können. Mit AI können Sie automatisch relevante Inhalte generieren, die sich an die Standorte, Interessen und Aktionen von Kunden anpassen.
+Darüber hinaus verwendet eine wirklich großartige Inhaltslieferkette einen DAM, der die Größe von Bildern automatisch ändern, die Versionskontrolle verwalten und Duplizierungen über verschiedene Orte hinweg vermeiden kann. Darüber hinaus sollte es in Ihren gesamten Technologie-Stack integriert werden, einschließlich Ihrer Kreativ-Tools, Ihrer Work-Management-Lösung und Ihres Content-Management-Systems, damit Ihre Teams schnell und einfach neue Inhalte erstellen und an jeden beliebigen Kanal bereitstellen können. Und mit KI können Sie automatisch relevante Inhalte generieren, die sich an die Standorte, Interessen und Aktionen von Kunden anpassen.
 
 ![](./images/csc-in-action.png)
 
-## Bei der Adobe erstellen wir eine erstklassige Inhaltslieferkette
+## Bei Adobe bauen wir eine erstklassige Inhaltslieferkette auf
 
-Unser eigenes [Adobe Experience Cloud-Unternehmen](https://business.adobe.com/) konzentriert sich auf die Umsetzung der zuvor beschriebenen Schritte, um unsere Kampagnen zum Leben zu erwecken und mehrere Segmente zu unterstützen. Unsere Vision war es, weltweit überzeugende Inhalte bereitzustellen, die mit unserem Kampagnen-Framework und Messaging in Einklang stehen.
+Unser eigenes [Adobe Experience Cloud-](https://business.adobe.com/) konzentriert sich darauf, die zuvor beschriebenen Schritte zu befolgen, um unsere Kampagnen zum Leben zu erwecken und mehrere Segmente zu unterstützen. Unsere Vision war es, weltweit überzeugende Inhalte bereitzustellen, die mit unserem Kampagnen-Framework und unserer Botschaft übereinstimmen.
 
-Der Schlüssel zu unserem End-to-End-Inhaltserstellungsprozess ist die Kopplung von [Adobe Workfront](https://business.adobe.com/products/workfront/main.html) und [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). Sehen wir uns an, wie wir mit diesen drei übergeordneten Phasen an unseren Prozess herangehen.
+Der Schlüssel zu unserem End-to-End-Inhaltserstellungsprozess ist die Paarung von [Adobe Workfront](https://business.adobe.com/products/workfront/main.html) und [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). Sehen wir uns an, wie wir unseren Prozess mit denselben drei Phasen auf hoher Ebene angegangen sind.
 
-Wir beginnen mit **Planung** , bei der wir Hunderte von Inhaltsanfragen aus dem gesamten Unternehmen aufnehmen und sie dann nach unseren vierteljährlichen Prioritäten priorisieren. Anschließend verwenden wir ein Dashboard mit Inhaltsvorschlägen in Workfront, um Transparenz zu gewährleisten, damit wir uns an unsere Stakeholder anpassen und unsere Marketing-, Kreativ-, Web- und Verkaufsteams schnell abmelden können. Auf diese Weise erstellen wir einen Datensatz über das, was wir für das Quartal engagieren, und geben unseren Kreativ- und Web-Teams außerdem einen Einblick in das Gesamtanfragevolumen, sodass sie Ressourcen planen können. Außerdem können Manager mühelos den Arbeitsaufwand für ihre Teams überwachen.
+Wir beginnen mit **Planung** , wo wir Hunderte von Inhaltsanfragen aus dem gesamten Unternehmen aufnehmen und sie dann nach unseren vierteljährlichen Prioritäten priorisieren. Anschließend verwenden wir in Workfront ein Dashboard für Inhaltsvorschläge, um für Transparenz zu sorgen, damit wir uns mit unseren Stakeholdern abstimmen und schnell unsere Marketing-, Kreativ-, Web- und Vertriebsteams genehmigen können. Auf diese Weise erfassen wir, was wir für das Quartal zugesagt haben, und geben unseren Kreativ- und Web-Teams Einblick in das gesamte Anfragevolumen, damit sie die Ressourcenplanung planen können. Darüber hinaus können Manager die Arbeitslast ihrer Teams einfach überwachen.
 
-Wenn wir in die **Produktion** einsteigen, werden genehmigte Anforderungen in Projekte umgewandelt, die unserem Kreativteam detailliertere Informationen liefern - zum Beispiel Kreativ-Briefs, Web-Landingpages, Werbeanforderungen und mehr. Unsere Inhaltsstrategen arbeiten dann mit Interessengruppen und Kreativen in Workfront zusammen, um Inhalte zu überprüfen und Termine einzuhalten. Da wir all dies in Workfront durchführen, haben wir doppelte Schritte, unnötige E-Mails und mehrere Formularausfüllungen eliminiert, und wir beginnen sogar, Produktionszyklen nach Asset-Typ zu verfolgen. Auf diese Weise können wir bei Bedarf die Personalausstattung ausgleichen und bei Bedarf eine Neuausrichtung vornehmen, indem wir uns die Projektdaten eingehend ansehen.
+Wenn wir zur **Produktion** übergehen, werden aus genehmigten Anfragen Projekte, die unserem Kreativ-Team mehr Details bieten - Dinge wie Creative Briefs, Standorte für die Web-Landing, Werbeanforderungen und mehr. Unsere Inhaltsstrategen arbeiten dann mit Stakeholdern und Kreativen in Workfront zusammen, um Inhalte zu überprüfen und Fristen einzuhalten. Da wir all dies in Workfront tun, haben wir doppelte Schritte, unnötige E-Mails und mehrere Formularausfüllungen eliminiert und beginnen sogar, Produktionszyklen nach Asset-Typ zu verfolgen. Auf diese Weise können wir die Ressourcenausstattung der Mitarbeiter ausgleichen und bei Bedarf neue Prioritäten setzen, indem wir uns die Projektdaten genau ansehen.
 
-Wenn unser Inhalt für **Bereitstellung** bereit ist, veröffentlichen wir [unsere Angebote, Assets und Werbeinhalte](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) in Experience Manager Assets. Insbesondere geht alles in unseren internen Marketing-Hub, wo jeder im Unternehmen schnell den gewünschten Inhalt finden kann, und zwar genau dann, wenn er ihn benötigt.
+Und wenn unsere Inhalte bereit für die **Bereitstellung** sind, [ wir (unsere Angebote, Assets und Werbeinhalte](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) in Experience Manager Assets veröffentlichen. Insbesondere geht alles in unseren internen Marketing-Hub, wo jeder im Unternehmen schnell den genauen Inhalt finden kann, den er braucht, genau dann, wenn er ihn braucht.
 
-Wir haben einige große Vorteile beim Aufbau einer funktionierenden Inhaltsversorgungskette erlebt. Insbesondere haben wir unsere doppelte Dateneingabe halbiert, indem wir zu einem einzigen Arbeitsverwaltungssystem migrieren. Und obwohl es immer Raum für Verbesserungen gibt, wissen wir, dass wir auf dem Weg zu einem Prozess sind, der uns hilft, die Kundenerwartungen einen Schritt voraus zu halten.
+Der Aufbau einer Wertschöpfungskette für Arbeitsinhalte hat sich enorm gelohnt. Insbesondere haben wir unsere doppelte Dateneingabe durch die Migration zu einem einzigen Work-Management-System halbiert. Und obwohl es immer Raum für Verbesserungen gibt, wissen wir, dass wir auf dem Weg zu einem Prozess sind, der uns hilft, den Kundenerwartungen einen Schritt voraus zu sein.
 
 >[!NOTE]
 >
-> Dieser Artikel wurde ursprünglich im [_Adobe Experience Cloud-Blog_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time) veröffentlicht.
+> Dieser Artikel wurde ursprünglich im Blog von [_Adobe Experience Cloud veröffentlicht_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time).
 
-## Die vierte Phase: Insights
+## Die vierte Phase: Erkenntnisse
 
-Die Content Supply Chain ist keine magische Lösung für alle Ihre Probleme. Dies ist eine Arbeitsmethode, mit der Sie effizienter arbeiten und alle Erlebnisse verwalten können, die Sie Ihren Kunden bringen möchten. Man muss durchsuchen, bevor man laufen und schließlich laufen kann.
+Content Supply Chain ist keine magische Lösung für alle Ihre Probleme. Dies ist eine Arbeitsweise, mit der Sie effizienter arbeiten und alle Erlebnisse verwalten können, die Sie Ihren Kunden bringen möchten. Du musst krabbeln, bevor du gehen und schließlich laufen kannst.
 
-![Lauflauf durchsuchen](./images/crawl-walk-run.png)
+![Crawl Walk Run](./images/crawl-walk-run.png)
 
-Und sobald Sie fertig sind, können Sie noch eine weitere Sache aus Ihrer End-to-End-Inhaltsversorgungskette herausfinden: Einblicke. Nach einer Weile können Sie beginnen zu erforschen, wie bestimmte Aktionen beeinflussen Zeit, Budget, ... Wir werden dies auch am Ende des Bootcamps behandeln.
+Und wenn Sie schließlich fertig sind, gibt es noch eine weitere Sache, die Sie aus Ihrer End-to-End-Inhaltslieferkette herausholen können: Einblicke. In der Tat, nach einer Weile können Sie beginnen zu erkunden, wie bestimmte Aktionen beeinflussen Zeit, Budget, … Wir werden das auch am Ende des Bootcamps behandeln.
 
 Nächster Schritt: [Creative Brief](./creative-brief.md)
 
-[Zu allen Modulen zurückkehren](./overview.md)
+[Zurück zu „Alle Module“](./overview.md)

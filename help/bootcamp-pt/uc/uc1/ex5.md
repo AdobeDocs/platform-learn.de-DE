@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Echtzeit-Kundendatenplattform - Erstellen eines Segments und Handeln - Senden Sie Ihr Segment an DV360 - Brasilien
-description: Bootcamp - Echtzeit-Kundendatenplattform - Erstellen eines Segments und Handeln - Senden Sie Ihr Segment an DV360 - Brasilien
+title: Bootcamp - Real-Time CDP - Segment erstellen und Maßnahmen ergreifen - Segment an DV360 senden - Brasilien
+description: Bootcamp - Real-Time CDP - Segment erstellen und Maßnahmen ergreifen - Segment an DV360 senden - Brasilien
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
@@ -20,27 +20,27 @@ Zugriff auf [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 ![Datenaufnahme](./images/home.png)
 
-Antes de Continuar, você recisa selecionar um **sandbox**. O nome do sandbox ein ser selecionado é Bootcamp. É besitzível fazer isso clicando no texto **[!UICONTROL Production Prod]** na linha azul na parte überlegen da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] widado.
+Antes de continuar, você precisa selecionar um **sandbox**. Auf der Startseite eine Sandbox mit einem Selektionsprogramm zum Bootcamp. É possivel fazer isso clicando no texto **[!UICONTROL Production Prod]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] deviado.
 
 ![Datenaufnahme](./images/sb1.png)
 
-Kein Menü à esquerda, vá para **Ziele** e, em seguida, vá para **Katalog**. Você verá o **Zielkatalog**. EM **Ziele**, klicken Sie auf em **Segmente aktivieren** no cartão **Benutzerdefinierte Facebook-Zielgruppe**.
+Kein Menü à esquerda, vá para **Reiseziele** e, em seguida, vá para **Katalog**. Você verá o **Zielkatalog**. em **destinations**, clique em **Segmente aktivieren** no cartão **Facebook Custom Audience**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Wählen Sie &quot;**bootcamp-facebook**&quot;und klicken Sie auf em &quot;**Next**&quot;.
+selecione o **bootcamp-facebook** e clique em **Next**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Na lista de segmentos disponíveis, selecione o segmento que você criou no übício anteriore. Klicken Sie auf em **Weiter**.
+Na lista de segmentos disponíveis, selecione o segmento que você criou no ercício anterior. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Na página **Mapping**, verifique se a caixa de selção **Apply Transformation** está marcada. Klicken Sie auf em **Weiter**.
+Na página **Mapping**, verifique se a caixa de selecção **Apply Transformation** está marcada. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Na página **Segmentplan**, wählen Sie einen **Ursprung Ihrer Audience** e defina como **Direkt von Kunden**. Klicken Sie auf em **Weiter**.
+Na página **Segmentplan**, select a **Herkunft Ihrer Zielgruppe** e defina como **Direkt von Kunden**. Klicken Sie auf **Weiter**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
@@ -50,7 +50,7 @@ Por fim, na página **Review**, clique em **Finish**.
 
 Seu segmento agora está vinculado aos Públicos Personalizados do Facebook. Sempre que um cliente se qualificar para esse segmento, um sinal será enviado ao lado do servidor (serverseitig) do Facebook para include esse cliente no Público Personalizado no lado do Facebook.
 
-No Facebook, você encontará seu segmento da Adobe Experience Platform em Públicos Personalizados:
+No Facebook, você encontrará seu segmento da Adobe Experience Platform em Públicos Personalizados:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
@@ -60,4 +60,4 @@ Agora você pode ver seu público personalizado aparecer no Facebook:
 
 [Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Retornar para Todos os Módulos](../../overview.md)
+[In: Retornar para Todos os Módulos](../../overview.md)

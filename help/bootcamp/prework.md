@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Vorarbeit
-description: Bootcamp - Vorarbeit
+title: Bootcamp - Vorbereitung
+description: Bootcamp - Vorbereitung
 jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -18,4 +18,4 @@ ht-degree: 9%
 ## Kontext
 
 
-[Zu allen Modulen zurückkehren](./overview.md)
+[Zurück zu „Alle Module“](./overview.md)

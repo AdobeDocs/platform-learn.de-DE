@@ -1,6 +1,6 @@
 ---
-title: CSC Bootcamp - Einblicke für einen Marketing Manager
-description: CSC Bootcamp - Einblicke für einen Marketing Manager
+title: CSC Bootcamp - Erkenntnisse für einen Marketing-Manager
+description: CSC Bootcamp - Erkenntnisse für einen Marketing-Manager
 doc-type: multipage-overview
 exl-id: 8a979899-7b56-427e-aede-6d4e045c89c1
 source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
@@ -10,122 +10,122 @@ ht-degree: 0%
 
 ---
 
-# Einblicke für einen Marketing-Manager
+# Einblicke für Marketing-Manager
 
-## Wochenansicht des Projektleiter
+## Wochenansicht des Projekt-Leiters
 
-Klicken Sie in der linken Spalte auf die Wochenansicht des Projektleiter:
+Klicken Sie in der linken Spalte auf „Wochenansicht des Projekt-Leaders“:
 
 ![Wochenansicht der Projektleiter](./images/weekly-view.png)
 
-Dies umfasst eine Vielzahl von Berichten, die immer angeklickt/verarbeitet werden können, um weitere Details zu erhalten:
+Dies deckt ein umfangreiches Array von Berichten ab, auf die immer geklickt werden kann bzw. für weitere Details zugegriffen werden kann:
 
-- Die **Aufgaben, die diese Woche nach Projekt fällig werden**
+- Die **Aufgaben, die diese Woche nach Projekt fällig sind**
 
 ![Diese Woche fällig](./images/tasks-due.png)
 
-- Die bevorstehenden Meilensteine des **Projektmanagements** :
+- Die **bevorstehenden Meilensteine des**:
 
-![ Bevorstehende Meilensteine](./images/upcoming-milestones.png)
+![Künftige Meilensteine](./images/upcoming-milestones.png)
 
-- Die **offenen Probleme nach Priorität**
+- Die **Offene Probleme nach Priorität**
 
 ![Probleme nach Priorität](./images/open-issues.png)
 
-- Die **verspäteten Aufgaben nach Abteilung**
+- Die **Verspätete Aufgaben nach Abteilung**
 
-![verspätete Aufgaben](./images/late-tasks.png)
+![Verspätete Aufgaben](./images/late-tasks.png)
 
-- Die **verspäteten Aufgaben von Einzelpersonen**
+- Die **Überfällige Aufgaben nach Person**
 
-![einzelne verspätete Aufgaben](./images/individual-late-tasks.png)
+![Verspätete Einzelaufgaben](./images/individual-late-tasks.png)
 
 ## SCRUM-bezogene Erkenntnisse
 
-Klicken Sie in der linken Spalte auf &quot;Iterationsstatus&quot;.
+Klicken Sie in der linken Spalte auf „Iterationsstatus“
 
-![Klickitationsstatus](./images/iteration-status.png)
+![Iterationsstatus anklicken](./images/iteration-status.png)
 
-Wenn Ihre Teams mit der SCRUM-Methodik zusammenarbeiten, ist dies ein interessanter Managementbericht:
+Wenn Ihre Teams mit der SCRUM-Methodik arbeiten, ist dies ein interessanter Berichtssatz für das Management:
 
 - **Geschwindigkeit nach Iteration**
 
-![Velocity](./images/velocity.png)
+![Geschwindigkeit](./images/velocity.png)
 
 - **Durchschnittliche Geschwindigkeit nach Team**
 
-![Durchschnittliche Geschwindigkeit](./images/average-velocity.png)
+![Durchschnittsgeschwindigkeit](./images/average-velocity.png)
 
-- **Aktuelle Iterationen, abgeschlossene Stundensummen nach Zuweisung**
+- **Aktuelle Iterationen abgeschlossen Stundensummen nach Zuweisung**
 
-![Gesamtstundensummen abgeschlossen](./images/iteration-status.png)
+![Abgeschlossene Stundensummen](./images/iteration-status.png)
 
-- **Iterationen durch Team**
+- **Iterationen nach Team**
 
 ![Iterationen nach Teams](./images/iterations-by-team.png)
 
 ## Effizienzberichte
 
-Klicken Sie in der linken Spalte auf &quot;Effizienz&quot;.
+Klicken Sie noch in der linken Spalte auf „Effizienz“
 
 ![Klickeffizienz](./images/efficiency.png)
 
-- **Geplantes/nicht geplantes Verhältnis** (der geleisteten Arbeit)
+- **Geplantes/Ungeplantes Verhältnis** (der geleisteten Arbeit)
 
-![Geplantes/unplantes Verhältnis](./images/planned-unplanned.png)
+![Geplantes/Ungeplantes Verhältnis](./images/planned-unplanned.png)
 
 - **Abgeschlossene Anfragen nach Woche**
 
-![abgeschlossene Anforderungen](./images/completed-requests.png)
+![Abgeschlossene Anfragen](./images/completed-requests.png)
 
-## Einblicke in Projekte während des Fluges
+## Projekteinblicke während des Fluges
 
-Klicken Sie in der linken Spalte auf &quot;Marketing - Projekte im Flug&quot;.
+Klicken Sie noch in der linken Spalte auf „Marketing - Projekte in Bearbeitung“
 
-- **Status von In-Flight-Projekten**
+- **Status von Projekten in Bearbeitung**
 
-![Projekte während des Fluges](./images/inflight-projects.png)
+![In-Flight-Projekte](./images/inflight-projects.png)
 
-- **Projekte nach Bedingung nach Monat**
+- **Projekte nach Bedingung und Monat**
 
 ![Projekte nach Bedingung](./images/project-by-condition.png)
 
-- Liste, Fortschritt und finanzielle Details der **In-Flight-Projekte**
+- Liste, Fortschritt und finanzielle Details der &quot;**&quot;-Projekte**
 
-![Finanzdetails](./images/inflights-projects.png)
+![Finanzielle Details](./images/inflights-projects.png)
 
 ## Visualisieren (projektübergreifender) Abhängigkeiten
 
-Klicken Sie zurück zur Zeile &quot;PIN&quot;auf &quot;Portfolio Gant View&quot;:
+Zurück zur „PIN“-Zeile, klicken Sie auf &quot;Portfolio-Gantt-Ansicht“:
 
-![Klicken Sie auf Portfolio-Grant-Ansicht](./images/gant-view.png)
+![Portfolio-Gantt-Ansicht klicken](./images/gant-view.png)
 
-Hier haben Sie eine **Gant Chart-Ansicht einer Gruppe von Projekten** mit möglichen Abhängigkeiten (Vorgänger) zwischen Projekten
+Hier sehen Sie eine **Gantt-Diagramm-Ansicht einer Gruppe von Projekten** mit möglichen Abhängigkeiten (Vorgänger) zwischen Projekten
 
 ![Abhängigkeiten zwischen Projekten](./images/gant-chart.png)
 
-## Integrationseinblicke von Dritten
+## Einblicke in die Integration von Drittanbietern
 
 >[!NOTE]
 >
-> Dies ist ein Beispiel für eine Integration mit einer Software von Drittanbietern. Dies ist eine Integration mit Adobe Campaign als Abbildung. Importiert die Ergebnisse der abgeschlossenen Kampagnen in Adobe Campaign.
+> Dies ist ein Beispiel für eine Integration mit einer Software eines Drittanbieters. Dies ist eine Integration mit Adobe Campaign als Illustration. Die Ergebnisse der abgeschlossenen Kampagnen werden in Adobe Campaign importiert.
 
-Klicken Sie in der Zeile &quot;PIN&quot;auf &quot;Kampagnenzusammenfassung&quot;:
+Klicken Sie in der Zeile „PIN“ auf „Kampagnenübersicht“:
 
-- **Adobe Campaign-Zusammenfassung**
+- **Zusammenfassung zu Adobe Campaign**
 
 ![Zusammenfassung](./images/campaign-summary.png)
 
-- **an Öffnungen gesendeter Adobe Campaign**
+- **Adobe Campaign an Öffnungen gesendet**
 
-![zum Öffnen gesendet](./images/sent-to-open.png)
+![Zum Öffnen gesendet](./images/sent-to-open.png)
 
 - **Adobe Campaign wird für Klicks geöffnet**
 
-![open to click](./images/open-to-click.png)
+![Öffnen zum Klicken](./images/open-to-click.png)
 
-Nächster Schritt: [Zusammenfassung](../../conclusion.md)
+Nächster Schritt: [Fazit](../../conclusion.md)
 
-[Zurück zu Phase 4 - Einblicke für einen Projektmanager](./project-manager.md)
+[Zurück zu Phase 4: Erkenntnisse für einen Projekt-Manager](./project-manager.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

@@ -24,11 +24,11 @@ ht-degree: 2%
 
 - Zugriff auf Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Zugriff auf die Adobe Experience Platform-Datenerfassung: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Zugriff auf die Demowebsite
+- Zugriff auf die Demo-Website
 
 >[!IMPORTANT]
 >
->Dieses Tutorial wurde erstellt, um ein bestimmtes Bootcamp-Format zu vereinfachen. Es verwendet bestimmte Systeme und Konten, auf die Sie möglicherweise keinen Zugriff haben. Auch ohne Zugriff können Sie noch viel lernen, indem Sie diesen sehr detaillierten Inhalt durchlesen. Wenn Sie an einem Bootcamp teilnehmen und Ihre Zugangsdaten benötigen, wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, der Ihnen die erforderlichen Informationen zur Verfügung stellt.
+>Dieses Tutorial wurde erstellt, um ein bestimmtes Bootcamp-Format zu vereinfachen. Sie verwendet bestimmte Systeme und Konten, auf die Sie möglicherweise keinen Zugriff haben. Selbst ohne Zugriff können Sie unserer Meinung nach noch viel lernen, wenn Sie diese sehr detaillierten Inhalte lesen. Wenn Sie an einem der Bootcamps teilnehmen und Ihre Zugangsdaten benötigen, wenden Sie sich bitte an Ihren Adobe-Ansprechpartner, der Ihnen die benötigten Informationen zur Verfügung stellt.
 
 ## Übungen
 
@@ -48,12 +48,12 @@ In dieser Übung erfahren Sie, wie Sie eine Journey und eine E-Mail-Nachricht ko
 
 In dieser Übung testen Sie die soeben erstellte Journey.
 
-[2.5 Mobile App installieren und verwenden](./ex5.md)
+[2.5 Installieren und Verwenden der Mobile App](./ex5.md)
 
-In dieser Übung installieren Sie die mobile App.
+In dieser Übung installieren Sie die Mobile App.
 
 [2.6 Personalization im Callcenter](./ex6.md)
 
-In dieser Übung werden Sie sehen, wie ein Callcenter-Erlebnis basierend auf der Intelligenz von Adobe Experience Platform optimiert werden kann.
+In dieser Übung erfahren Sie, wie ein Callcenter-Erlebnis basierend auf der Intelligenz von Adobe Experience Platform optimiert werden kann.
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

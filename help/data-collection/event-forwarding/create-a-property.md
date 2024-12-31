@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer Ereignisweiterleitungs-Eigenschaft
-description: Erfahren Sie, wie Sie eine Ereignisweiterleitungs-Eigenschaft in der Datenerfassung erstellen.
+description: Erfahren Sie, wie Sie in der Datenerfassung eine Ereignisweiterleitungseigenschaft erstellen.
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6420
@@ -15,11 +15,11 @@ ht-degree: 19%
 
 # Erstellen einer Ereignisweiterleitungs-Eigenschaft
 
-Erfahren Sie, wie Sie eine Ereignisweiterleitungs-Eigenschaft in der Datenerfassung erstellen. Weitere Informationen finden Sie in der Dokumentation [Erstellen einer Ereignisweiterleitungs-Eigenschaft](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property) .
+Erfahren Sie, wie Sie in der Datenerfassung eine Ereignisweiterleitungseigenschaft erstellen. Weitere Informationen finden Sie in der Dokumentation [Erstellen einer Ereignisweiterleitungs-Eigenschaft](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
+>Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform launch (Client-seitig) ist jetzt **[!DNL tags]**
 > * Platform launch Server Side ist jetzt **[!DNL event forwarding]**

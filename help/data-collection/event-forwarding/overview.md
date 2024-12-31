@@ -15,11 +15,11 @@ ht-degree: 41%
 
 # Übersicht über die Ereignisweiterleitung
 
-Erfahren Sie, wie die Ereignisweiterleitung die Datenerfassung zentralisiert, die in Ihren Web- und mobilen Apps erforderliche Codemenge reduziert und Daten über Adobe Experience Platform Edge Network an Nicht-Adobe-Lösungen streamt. Weitere Informationen finden Sie in der Dokumentation zur [Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) .
+Erfahren Sie, wie durch die Ereignisweiterleitung die Datenerfassung zentralisiert wird, die in Ihren Web- und Mobile Apps erforderliche Codemenge reduziert wird und Daten über das Adobe Experience Platform-Edge Network an Nicht-Adobe-Lösungen gestreamt werden. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
+>Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform launch (Client-seitig) ist jetzt **[!DNL tags]**
 > * Platform launch Server Side ist jetzt **[!DNL event forwarding]**

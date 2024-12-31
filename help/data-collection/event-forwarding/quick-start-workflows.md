@@ -1,6 +1,6 @@
 ---
 title: Schnellstart-Workflows
-description: Dieses Video führt Benutzer durch zwei erweiterte Anwendungsfälle, um die Facebook/Meta-Schnellstartarbeitsabläufe in der Datenerfassung optimal zu nutzen.
+description: Dieses Video führt den Benutzer durch zwei erweiterte Anwendungsfälle, mit denen er die Facebook/Meta-Schnellstart-Workflows in der Datenerfassung optimal nutzen kann.
 feature: Event Forwarding
 level: Intermediate
 doc-type: Technical Video
@@ -17,11 +17,11 @@ ht-degree: 1%
 # Verwenden von Schnellstart-Workflows in der Datenerfassung
 
 
-In diesem Video werden Benutzer durch zwei erweiterte Anwendungsfälle geführt, um die Facebook/Meta-Schnellstartarbeitsabläufe in der Datenerfassung optimal zu nutzen:
+Dieses Video führt den Benutzer durch zwei erweiterte Anwendungsfälle, mit denen er die Facebook/Meta-Schnellstart-Workflows in der Datenerfassung optimal nutzen kann:
 
-1. Erstellen von Referenzobjekten mithilfe des Workflows 
+1. Verwenden des Workflows zum Erstellen von Referenzobjekten. 
 1. Kopieren der Referenzobjekte in eine vorhandene Implementierung.
 
-Weitere Informationen zum Schnellstart-Workflow für die Meta Conversions-API finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=de#quick-start) .
+Weitere Informationen zum Schnellstart-Workflow für die Meta Conversions-API finden Sie [der Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=de#quick-start).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on)

@@ -10,55 +10,55 @@ ht-degree: 0%
 
 ---
 
-# Kampagne - GO/NO-GO
+# KAMPAGNE GO/NO-GO
 
-## Genehmigen der Kampagne in Adobe Workfront
+## Validieren der Kampagne in Adobe Workfront
 
-Da wir nun alle Aufgaben erledigt haben und daher alle Aufgaben auf 100 % setzen, brauchen wir nur die Aufgabe &quot;Kampagne läuft ab/geht nicht&quot; - also eine Überprüfung und Validierung -, um die Kampagne veröffentlichen zu können.
+Da wir nun alle Aufgaben abgeschlossen haben und infolgedessen alle Aufgaben auf 100 % eingestellt sind, benötigen wir nur „Kampagne gehen/nicht gehen“ - eine Überprüfungs- und Genehmigungsaufgabe -, um die Kampagne veröffentlichen zu können.
 
-Wir genehmigen natürlich unsere Kampagne, also setzen Sie die Aufgabe 20 &#39;CAMPAIGN GO/NO GO&#39; auf 100% abgeschlossen. Dadurch wird automatisch ein Prüfungs- und Genehmigungsprozess Trigger:
+Wir genehmigen natürlich unsere Kampagne, also stellen Sie die Aufgabe 20 &#39;KAMPAGNE GEHT/GEHT NICHT GEHT&#39; auf 100% fertig. Dadurch wird automatisch ein Prüfungs- und Genehmigungsprozess Trigger:
 
-Schauen wir uns den Prozess an, den wir haben. Klicken Sie auf den Namen der Aufgabe 20 &quot;CAMPAIGN GO/NO GO&quot;:
+Schauen wir uns das Verfahren an. Klicken Sie auf den Namen der Aufgabe 20 „KAMPAGNE GEHEN/KEIN GEHEN“:
 
 ![Klicken Sie auf die Aufgabe](./images/gonogo-button.png)
 
-![Aktualisieren der Details](./images/gonogo-details.png)
+![Aktualisieren Sie die Details](./images/gonogo-details.png)
 
 Sehen wir uns nun den Abschnitt Genehmigungen an:
 
 ![Klicken Sie auf die Genehmigungen](./images/gonogo-approvals.png)
 
-Wir können sehen, dass es sich um einen zweistufigen Prozess handelt, bei dem entweder ich, Petra oder einer von Ihnen diesen Schritt als ersten Schritt überprüfen und/oder genehmigen muss, und dann kann Olivia (unsere Director of Marketing Operations) ihr letztes Wort geben.
+Wir können sehen, dass es sich um einen zweistufigen Prozess handelt, bei dem entweder ich selbst, Petra oder irgendjemand von Ihnen diesen Go/No-Go als ersten Schritt überprüfen und/oder genehmigen muss, und dann Olivia (unser Director of Marketing Operations) ihr den letzten Start geben kann.
 
-Deshalb wurden meine Validierungsschaltflächen oben rechts angezeigt und ich kann jetzt &quot;Go No/Go&quot; für den ersten Schritt genehmigen. Klicken Sie zur Genehmigung auf das grüne Häkchen:
+Daher wurden oben rechts meine Genehmigungsschaltflächen angezeigt und ich kann jetzt diese „Go/No“ für den ersten Schritt genehmigen. Klicken Sie zur Genehmigung auf das grüne Häkchen:
 
-![Genehmigen der Kampagne](./images/gongo-given-approvals.png)
+![Validieren der Kampagne](./images/gongo-given-approvals.png)
 
-Alle unsere Projekte stehen nun zur Genehmigung von Olivia zur Verfügung. Sobald sie ihre Zustimmung gegeben hat - was sie natürlich tun wird -, kann unsere Kampagne veröffentlicht werden.
+Alle unsere Projekte stehen nun zur Genehmigung durch Olivia aus. Sobald sie ihre Zustimmung gegeben hat - was sie natürlich tun wird -, kann unsere Kampagne veröffentlicht werden.
 
 ## Social-Media-Kampagne starten
 
-Da wir nun verifiziert haben, dass unsere Kampagne startbereit ist und wir bereit sind, unsere Fahrräder zu verkaufen, ist es an der Zeit, einen Bazz zu machen. Und wie kann man das besser machen, dann mit einem Social Media Post?
+Nachdem wir nun überprüft haben, ob unsere Kampagne startbereit ist und wir bereit sind, unsere Fahrräder zu verkaufen, ist es an der Zeit, ein Gespräch zu führen. Und wie könnte man das besser machen, mit einem Social-Media-Post?
 
-![Die Demoseite für Instagram](./images/instagram-overview.png)
+![Die Instagram-Demoseite](./images/instagram-overview.png)
 
 Da wir bereits einen Social-Media-Beitrag erstellt und genehmigt haben, können wir ihn jetzt in unserem Demo-Instagram-Konto posten.
 
 >[!WARNING]
-> Einige Haushaltsregeln
+> Ein paar Hausregeln
 > 
-> Dies ist ein Bericht, der nur erstellt wurde, um die Geschichte unseres Bootcamps zu vervollständigen. Sie ist **nicht dazu bestimmt, freigegeben, befolgt oder öffentlich gemacht zu werden**. Behalten Sie Ihren Beitrag **respektvoll und professionell** bei. **Geben Sie die Anmeldedaten nicht für andere Personen außerhalb des Bootcamps frei, und beachten Sie, dass nach dieser Übung** alle Geräte abgemeldet werden **.**
+> Dies ist ein Bericht, der nur gemacht wurde, um die Geschichte unseres Bootcamps zu vervollständigen. Sie ist **nicht zur Weitergabe, Befolgung oder Veröffentlichung vorgesehen**. Bitte halten Sie Ihren Beitrag **respektvoll und professionell**. **Geben Sie die Anmeldeinformationen nicht** Personen außerhalb des Bootcamps weiter. Beachten Sie bitte **dass sich nach dieser Übung alle Geräte** werden.
 
-- Sie erhalten das Kennwort eines Instagram-Kontos namens &quot;csc_bootcamp_emea&quot;.
-- Erstellen Sie einen neuen Beitrag, in dem Sie als letzten Teil der Beschriftung den Ort, an dem Sie teilnehmen, sowie das Datum und Ihre Teamnummer hinzufügen.
-- Scrollen Sie einfach zu allen Beiträgen, um zu sehen, wie andere Teams mit demselben Material künstlerische Freiheit übernommen haben.
+- Sie erhalten das Passwort eines Instagram-Accounts namens „csc_bootcamp_emea“.
+- Erstellen Sie einen neuen Beitrag, in dem Sie als letzten Teil der Beschriftung den Ort hinzufügen, von dem aus Sie beitreten, sowie das Datum und Ihre Team-Nummer.
+- Scrollen Sie gerne zu allen verschiedenen Posts, um zu sehen, wie andere Teams etwas künstlerische Freiheit mit dem gleichen Material genommen haben.
 
-## Herzlichen Glückwunsch! Ihre Kampagne wurde veröffentlicht!
+## Herzlichen Glückwunsch, Ihre Kampagne wurde veröffentlicht!
 
 ![Kampagnenstart](./images/launch.jpg)
 
-Nächster Schritt: [Phase 4 - Insights: Übersicht](../insights/overview.md)
+Nächster Schritt: [Phase 4 - Einblicke: Überblick](../insights/overview.md)
 
-[Gehen Sie zurück zu Phase 3 - Versand: Seite in AEM erstellen](./app.md)
+[Zurück zu Phase 3: Versand: Seite in AEM erstellen](./app.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

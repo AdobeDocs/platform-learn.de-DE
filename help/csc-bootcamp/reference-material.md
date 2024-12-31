@@ -1,6 +1,6 @@
 ---
 title: CSC Bootcamp - Referenzmaterial
-description: Interessante Ausgangspunkte, die Ihnen helfen, die Themen dieses Bootcamps besser zu verstehen.
+description: Interessante Ausgangspunkte, die Ihnen helfen, die Themen in diesem Bootcamp besser zu verstehen.
 jira: KT-5342
 doc-type: tutorial
 activity: develop
@@ -14,38 +14,38 @@ ht-degree: 4%
 
 # Referenzmaterial
 
-## Schiebedeck
+## Dia-Deck
 
-Diese Dokumentation hilft Ihnen, sich mit dem Konzept dieses Bootcamps sowie mit einer Inhaltsversorgungskette vertraut zu machen. Es gibt jedoch immer einige Dinge, die wir zeigen wollten, aber nicht mehr einschließen konnten. Diese Informationen finden Sie im [folgenden Foliensatz](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) und in unserer [Art of the Possible demo](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
+Diese Dokumentation hilft Ihnen, sich mit dem Konzept dieses Bootcamps sowie mit der Inhaltslieferkette vertraut zu machen. Es gibt jedoch immer einige Dinge, die wir zeigen wollten, die wir aber nicht mehr einbeziehen konnten. Diese Informationen finden Sie im [folgenden Dia-Deck](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) und in unserer [Art of the Possible](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
 
-## Erfüllen Sie AdobeBike
+## AdobeBike kennenlernen
 
-AdobeBike ist ein Unternehmen mit Sitz in Brüssel und hat bereits eine etablierte Präsenz auf dem Markt. Neben ihnen gibt es eine Gemeinde von 50.000 Fahrern. Sie haben vor kurzem ein neues revolutionäres e-bike entwickelt, und in diesem Prozess verändert das Unternehmen auch das Setup seines Marketing-Teams sowie die damit verbundenen Prozesse und Technologien.
+AdobeBike ist ein Unternehmen mit Sitz in Brüssel und bereits auf dem Markt präsent. Sie haben eine Gemeinschaft von 50.000 Fahrern neben sich. Sie haben kürzlich ein neues revolutionäres E-Bike entwickelt, und in diesem Prozess verändert das Unternehmen auch das Setup ihres Marketing-Teams sowie die damit verbundenen Prozesse und Technologien.
 
 ![AdobeBike](./images/adobike-logo.png)
 
-Mit der Einführung ihres neuen Fahrrads sehen sie Probleme mit der Arbeitseffizienz. Es ist von entscheidender Bedeutung, dass sie den gesamten Arbeitszyklus von der ersten Anforderung bis zur endgültigen Lieferung in einer einzigen Lösung vollständig betrachten. Auf hoher Ebene der Orchestrierung müssen sie eine Teamübergreifende Zusammenarbeit ermöglichen.
+Mit der Einführung ihres neuen Bikes sehen sie Herausforderungen bei Problemen mit der Arbeitseffizienz. Es ist für sie von entscheidender Bedeutung, dass sie den gesamten Arbeitszyklus von der ersten Anfrage bis zur endgültigen Bereitstellung in einer einzigen Lösung vollständig einsehen können. Da sie auf einem hohen Orchestrierungsniveau arbeiten, müssen sie eine teamübergreifende Zusammenarbeit ermöglichen.
 
-Für den neuen Produktstart möchten sie neue Visualisierungen erstellen, eine neue Landingpage erstellen und die Touchpoints personalisieren, die sie für ihre Kunden haben. Für eine maßstabsgetreue Personalisierung benötigen sie viele Inhalte und Varianten, und sie benötigen auch Inhalte für ihre Social-Media-Präsenz.
+Für die Einführung des neuen Produkts möchten sie neue Visualisierungen und eine neue Landingpage erstellen und die vorhandenen Touchpoints für ihre Kunden personalisieren. Für Personalisierung in großem Maßstab benötigen sie viele Inhalte und Varianten sowie Inhalte für ihre Social-Media-Präsenz.
 
-AdobeBike möchte auch, dass es für Kunden einfach ist, das Fahrrad online zu bestellen. Sie erkennen, dass sie die richtigen Tools benötigen, um den Launch zu organisieren und die erforderlichen Inhalte in großem Maßstab zu erstellen und bereitzustellen, und dass die rechtzeitige Bereitstellung ohne einen klaren Status von Abteilungsarbeitsaufwand und Budgets gefährdet ist.
+Adobe möchte auch, dass es für Kunden einfach ist, das Fahrrad online zu bestellen. Sie stellen fest, dass sie die richtigen Tools benötigen, um den Launch zu koordinieren und die erforderlichen Inhalte skaliert zu erstellen und bereitzustellen, und dass die termingerechte Bereitstellung ohne klaren Status der Arbeitslast und der Budgets der Abteilung gefährdet ist.
 
 
 ## Nützliche Links
 
-### Inhaltsversorgungskette
+### Inhaltslieferkette
 
-- [ Erstellen einer Content-Supply-Kette, die skaliert wird](https://business.adobe.com/resources/webinars/building-a-content-supply-chain-that-scales.html)
+- [Erstellen einer skalierbaren Inhaltslieferkette](https://business.adobe.com/resources/webinars/building-a-content-supply-chain-that-scales.html)
 
 ### Adobe Experience Manager
 
-- [Überblick über die Inhaltsautomatisierung mit Creative Cloud-Diensten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
+- [Überblick über die Inhaltsautomatisierung mit Creative Cloud-Services](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
 - [Erste Schritte mit AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)
 - [Einführung in Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=en)
 
 ### Adobe Express
 
-- [Erste Schritte mit Adobe Express-Vorlagen](https://helpx.adobe.com/express/using/work-with-templates.html)
+- [Erste Schritte mit Adobe Expreß-Vorlagen](https://helpx.adobe.com/express/using/work-with-templates.html)
 
 ### Adobe Workfront
 
@@ -53,4 +53,4 @@ AdobeBike möchte auch, dass es für Kunden einfach ist, das Fahrrad online zu b
 - [Workfront für AEM Assets](https://exchange.adobe.com/apps/ec/101385/workfront-for-aem-assets)
 
 
-[Zu allen Modulen zurückkehren](./overview.md)
+[Zurück zu „Alle Module“](./overview.md)

@@ -1,6 +1,6 @@
 ---
-title: CSC Bootcamp - Andere Vorarbeiten
-description: CSC Bootcamp - Andere Vorarbeiten
+title: CSC Bootcamp - Sonstige Vorbereitung
+description: CSC Bootcamp - Sonstige Vorbereitung
 doc-type: multipage-overview
 exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
 source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
@@ -12,74 +12,74 @@ ht-degree: 0%
 
 # Sonstige Vorarbeiten
 
-## Auswählen von Brand Assets
+## Brand Assets auswählen
 
-Wie in der Kreativbeschreibung beschrieben, sind einige Assets erforderlich, um unsere Kampagne effektiv starten zu können. Diese Marken-Assets werden der Kampagne in Workfront hinzugefügt, damit wir zentral darauf zugreifen können.
+Wie im Creative Brief beschrieben, werden einige Assets benötigt, um unsere Kampagne effektiv zu starten. Diese Marken-Assets werden der Kampagne in Workfront hinzugefügt, damit wir zentral auf sie zugreifen können.
 
-- Erweitern Sie Aufgabe 1, &quot;ERSTE AUFGABEN&quot;und öffnen Sie dann die Aufgabe &quot;5 Marken-Assets auswählen (vorne, hinten, ...)&quot;, indem Sie darauf klicken.
+- Erweitern Sie Aufgabe 1, „ANFÄNGLICHE AUFGABEN“ und öffnen Sie dann die Aufgabe „5 Marken-Assets auswählen (vorne, hinten, …)“, indem Sie darauf klicken.
 
-![ Asset-Aufgabe öffnen](./images/wf-open-assets-task.png)
+![Asset-Aufgabe öffnen](./images/wf-open-assets-task.png)
 
-- Klicken Sie auf &quot;Dokumente&quot;und dann auf &quot;Neu hinzufügen&quot;:
+- Auf „Dokumente“ und dann auf „Neu hinzufügen“ klicken:
 
 ![Dokument hinzufügen](./images/wf-add-new-doc.png)
 
-- Wählen Sie &quot;Von Experience Manager&quot;aus. Auf diese Weise können wir Marken-Assets auswählen, die bereits in AEM Assets verfügbar sind:
+- Wählen Sie „Aus Experience Manager“ aus. Auf diese Weise können wir Marken-Assets auswählen, die bereits in AEM Assets verfügbar sind:
 
-![ von experience-manager](./images/wf-from-aem.png)
+![aus Experience Manager](./images/wf-from-aem.png)
 
-- Sobald die AEM Ordnerhierarchie angezeigt wird, navigieren Sie zum folgenden Pfad: experience-manager > Adobe Assets > Bike shots Wählen Sie 5 Assets aus und klicken Sie auf &quot;Link&quot;.
+- Sobald die AEM-Ordnerhierarchie angezeigt wird, navigieren Sie zum folgenden Pfad: experience-manager > AdobeBike Assets > Bike Shots Wählen Sie 5 Assets aus und klicken Sie dann auf „Link“.
 
-![ausgewählte Assets](./images/selected-assets.png)
+![Ausgewählte Assets](./images/selected-assets.png)
 
-- Wir haben jetzt unsere Marken-Assets in unserer Aufgabe. Das bedeutet, dass wir Aufgabe 2 als 100 % abgeschlossen festlegen können:
+- Wir haben jetzt unsere Marken-Assets in unserer Aufgabe. Das bedeutet, dass wir Aufgabe 2 als zu 100 % abgeschlossen festlegen können:
 
 ![Aufgabe abschließen](./images/wf-task-2-complete.png)
 
 
 ## Demo von Adobe Commerce
 
-Adobe Commerce ist eines der vielen Produkte in der Adobe Experience Cloud, mit denen Sie Ihren Kunden die besten digitalen Erlebnisse bieten können. Es gab jedoch einfach zu wenig Zeit, um alles zusammen im Bootcamp zu machen.
+Adobe Commerce ist eines der vielen Produkte in Adobe Experience Cloud, mit denen Sie Ihren Kunden die besten digitalen Erlebnisse bieten können. Allerdings war während des Bootcamps einfach zu wenig Zeit, alles gemeinsam zu machen.
 
-In diesem Video erfahren Sie mehr über Adobe Commerce und das Produkt, das wir im Bootcamp entwickelt haben. In einem realen Szenario würden Sie die zuvor ausgewählten Marken-Assets in Adobe Commerce in die Produktkonfiguration hochladen.
+Dieses Video macht Sie mit Adobe Commerce vertraut und zeigt das Produkt, das wir während des Bootcamps erstellt haben. In einem realen Szenario würden Sie die zuvor ausgewählten Marken-Assets in Adobe Commerce in die Produktkonfiguration hochladen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
 
-Nach Abschluss dieser Aufgabe können Sie Aufgabe 3 in Workfront als zu 100 % abgeschlossen markieren.
+Sobald diese Aufgabe abgeschlossen ist, können Sie Aufgabe 3 in Workfront als zu 100 % abgeschlossen markieren.
 
 ## Flexible Kampagnen sind eine Voraussetzung
 
-Bei der Überprüfung unseres Arbeitsplans haben wir ein kleines Problem bemerkt: Unser Produkt-Manager (der Anforderer) hat ein Update vorgenommen, das er vergessen hat, ein &#39;Produkt-Homepage-Banner&#39; anzufordern.  Wir werden dies zu unserem Projektplan hinzufügen.
+Bei der Durchsicht unseres Arbeitsplans ist uns ein kleines Problem aufgefallen: Unser Produkt-Manager (der Antragsteller) hat ein Update eingefügt, das er vergessen hat, um ein „Produkt-Homepage-Banner“ zu bitten.  Wir fügen dies unserem Projektplan hinzu.
 
-- Gehen Sie zur Aufgabenliste und fügen Sie unsere Aufgabe &quot;Produkt-Homepage-Banner erstellen&quot;direkt unter Aufgabe 4 &quot;PRODUKTION&quot;hinzu. Wählen Sie dazu die Aufgabe &quot;Inhalt der mobilen App vorbereiten&quot;aus und klicken Sie auf das Symbol &quot;Aufgabe hinzufügen oben&quot;:
+- Gehen Sie zur Aufgabenliste und fügen Sie unsere Aufgabe „Produkt-Homepage-Banner erstellen“ direkt unter Aufgabe 4 „PRODUKTION“ hinzu. Wählen Sie dazu die Aufgabe „Inhalt der Mobile App vorbereiten“ und klicken Sie auf das Symbol „Aufgabe hinzufügen über“:
 
-![Aufgabe über ](./images/wf-add-task-above.png) hinzufügen
+![Aufgabe hinzufügen oben](./images/wf-add-task-above.png)
 
-- Geben Sie der hinzugefügten Aufgabe einen aussagekräftigen Namen, z. B. &quot;Produkt-Homepage-Banner erstellen&quot;.
+- Benennen Sie die hinzugefügte Aufgabe sinnvoll, z. B. „Produkt-Homepage-Banner erstellen“.
 
 ![Aufgabe erstellen](./images/wf-create-banner.png)
 
-- Nachdem wir die Aufgabe erstellt haben, fügen wir ihr Inhalt hinzu. Klicken Sie auf die drei Punkte rechts neben Ihrem Projekttitel und wählen Sie &quot;Vorlage anhängen&quot;aus:
+- Nachdem wir die Aufgabe erstellt haben, fügen wir ihr nun Inhalt hinzu. Klicken Sie auf die drei Punkte rechts neben Ihrem Projekttitel und wählen Sie „Vorlage anhängen“:
 
 ![Vorlage anhängen](./images/wf-attach-template.png)
 
-- Wählen Sie &quot;Produkt-Homepage-Banner erstellen&quot;und klicken Sie auf &quot;Anpassen und anhängen&quot;:
+- Wählen Sie „Produkt-Homepage-Banner erstellen“ aus und klicken Sie auf „Anpassen und anhängen“:
 
-![Produkt-Homepage-Banner erstellen](./images/wf-homepage-banner.png)
+![Erstellen eines Produkt-Homepage-Banners](./images/wf-homepage-banner.png)
 
-- Stellen Sie sicher, dass Sie im Bildschirm &quot;Anpassung&quot;die Aufgabe &quot;Produkt-Homepage-Banner erstellen&quot;als übergeordnetes Element erwähnen:
+- Stellen Sie sicher, dass Sie im Anpassungsbildschirm die Aufgabe „Produkt-Startseitenbanner erstellen“ als übergeordnete Aufgabe erwähnen:
 
-![parent](./images/wf-create-banner-parent.png) hinzufügen
+![Übergeordnetes Element hinzufügen](./images/wf-create-banner-parent.png)
 
-- Stellen Sie abschließend sicher, dass Sie die übergeordnete Aufgabe mit &quot;Produkt-Homepage erstellen&quot;mit dem Vorgänger von Aufgabe 3 markieren, da keine Produktion gestartet werden kann, bis das Produkt in Adobe Commerce erstellt wurde:
+- Stellen Sie abschließend sicher, dass Sie die übergeordnete Aufgabe „Produkt-Startseite erstellen“ mit einem Vorgänger von Aufgabe 3 markieren, da die Produktion erst gestartet werden kann, wenn das Produkt in Adobe Commerce erstellt wurde:
 
-![fügen Sie den richtigen Vorgänger hinzu](./images/wf-predecessor.png)
+![Fügen Sie den richtigen Vorgänger hinzu](./images/wf-predecessor.png)
 
-Wir haben jetzt eine Kampagne, die vollständig und geplant ist, was bedeutet, dass wir jetzt mit der Produktion und dem Versand unserer Kampagne beginnen können!
+Wir haben jetzt eine vollständige und geplante Kampagne, sodass wir jetzt mit der Produktion und Lieferung unserer Kampagne beginnen können!
 
 
-Nächster Schritt: [Phase 2 - Produktion: Produkt-Homepage-Banner erstellen](../production/banner.md)
+Nächster Schritt: [Phase 2 - Produktion: Erstellen Sie das Produkt-Homepage-Banner](../production/banner.md)
 
-[Gehen Sie zurück zu Phase 1 - Planung: Planung](./planning.md)
+[Zurück zu Phase 1 - Planung: Planung](./planning.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

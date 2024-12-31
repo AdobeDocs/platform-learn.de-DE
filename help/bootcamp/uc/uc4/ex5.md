@@ -16,47 +16,47 @@ ht-degree: 0%
 
 ---
 
-# 4.5 Visualisierung mit Customer Journey Analytics
+# 4.5 Visualisierung mithilfe von Customer Journey Analytics
 
 ## Ziele
 
 - Grundlegendes zur Benutzeroberfläche von Analysis Workspace
-- Lernen Sie einige Funktionen kennen, die Analysis Workspace so anders machen.
-- Erfahren Sie, wie Sie mit Analysis Workspace in CJA analysieren.
+- Erfahren Sie mehr über die Funktionen, die Analysis Workspace so anders machen.
+- Erfahren Sie, wie Sie in CJA mit Analysis Workspace analysieren können
 
 ## Kontext
 
-In dieser Übung verwenden Sie Analysis Workspace in CJA, um Produktansichten, Produkttribute, Abwanderungen usw. zu analysieren.
+In dieser Übung verwenden Sie Analysis Workspace in CJA, um Produktansichten, Produkttrichter, Abwanderung usw. zu analysieren.
 
-Verwenden wir das Projekt, das Sie in der [4.4-Datenvorbereitung in Analysis Workspace](./ex4.md) erstellt haben. Wechseln Sie daher zu [https://analytics.adobe.com](https://analytics.adobe.com).
+Verwenden wir das Projekt, das Sie in [4.4 Datenvorbereitung in Analysis Workspace](./ex4.md) erstellt haben, also [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![demo](./images/prohome.png)
 
-Öffnen Sie Ihr Projekt `yourLastName - Omnichannel Analysis`.
+Öffnen Sie Ihre `yourLastName - Omnichannel Analysis`.
 
-Wenn Ihr Projekt geöffnet und die Datenansicht `CJA Bootcamp - Omnichannel Data View` ausgewählt ist, können Sie mit der Erstellung Ihrer ersten Visualisierungen beginnen.
+Wenn Ihr Projekt geöffnet und die Datenansicht ausgewählt `CJA Bootcamp - Omnichannel Data View`, können Sie mit der Erstellung Ihrer ersten Visualisierungen beginnen.
 
 ![demo](./images/prodataView1.png)
 
 ## Wie viele Produktansichten haben wir täglich?
 
-Zunächst müssen wir die richtigen Daten für die Analyse der Daten auswählen. Gehen Sie auf der rechten Seite der Arbeitsfläche zum Kalender -Dropdown. Klicken Sie darauf und wählen Sie den entsprechenden Datumsbereich aus.
+Zunächst müssen wir die richtigen Daten zur Analyse der Daten auswählen. Gehen Sie zur Kalender-Dropdown-Liste auf der rechten Seite der Arbeitsfläche. Klicken Sie darauf und wählen Sie den entsprechenden Datumsbereich aus.
 
 >[!IMPORTANT]
 >
->Die neuesten verfügbaren Daten wurden am 9.19.2022 erfasst. Bitte wählen Sie einen Datumsbereich aus, der dieses Datum enthält.
+>Die zuletzt verfügbaren Daten wurden am 19/09/2022 aufgenommen. Bitte einen Datumsbereich auswählen, der dieses Datum enthält.
 
 ![demo](./images/pro1.png)
 
-Suchen Sie im Menü auf der linken Seite (Komponentenbereich) die berechnete Metrik **Produktansichten**. Wählen Sie sie aus und ziehen Sie sie per Drag-and-Drop in die Arbeitsfläche oben rechts in der Freiformtabelle.
+Suchen Sie im Menü auf der linken Seite (Bereich „Komponenten„) die berechnete Metrik **Produktansichten**. Wählen Sie es aus und ziehen Sie es in die Arbeitsfläche, oben rechts in der Freiformtabelle.
 
 ![demo](./images/pro2.png)
 
-Automatisch wird die Dimension **Tag** hinzugefügt, um Ihre erste Tabelle zu erstellen. Jetzt können Sie sehen, wie Ihre Frage direkt beantwortet wird.
+Automatisch wird die **Tag** hinzugefügt, um die erste Tabelle zu erstellen. Jetzt können Sie sehen, wie Ihre Frage im Flug beantwortet wird.
 
 ![demo](./images/pro3.png)
 
-Klicken Sie anschließend mit der rechten Maustaste auf die Metrikzusammenfassung.
+Klicken Sie anschließend mit der rechten Maustaste auf die Metrik-Zusammenfassung.
 
 ![demo](./images/pro4.png)
 
@@ -64,15 +64,15 @@ Klicken Sie auf **Visualisieren** und wählen Sie dann **Linie** als Visualisier
 
 ![demo](./images/pro5.png)
 
-Sie werden Ihre Produktansichten nach Tag sehen.
+Sie sehen Ihre Produktansichten nach Tag.
 
 ![demo](./images/pro6.png)
 
-Sie können den Zeitbereich auf den Tag ändern, indem Sie in der Visualisierung auf **Einstellungen** klicken.
+Sie können den Zeitrahmen in einen Tag ändern, indem Sie in der Visualisierung auf **Einstellungen** klicken.
 
 ![demo](./images/pro7.png)
 
-Klicken Sie auf den Punkt neben **Zeile** auf **Data Source verwalten**.
+Klicken Sie auf den Punkt neben **Linie**, um **Data Source verwalten**.
 
 ![demo](./images/pro7a.png)
 
@@ -80,57 +80,57 @@ Klicken Sie anschließend auf **Auswahl sperren** und wählen Sie **Ausgewählte
 
 ![demo](./images/pro7b.png)
 
-## Die vier beliebtesten Produkte
+## Top 4 der angezeigten Produkte
 
-Welche Produkte werden am häufigsten angezeigt?
+Welche 4 Top-Produkte wurden angesehen?
 
-Vergessen Sie nicht, das Projekt ab und zu zu zu speichern.
+Denken Sie daran, das Projekt ab und zu zu zu speichern.
 
-| Betriebssystem | Kurzschnitt |
+| Betriebssystem | Abkürzung |
 | ----------------- |-------------| 
-| Windows | Kontrolle + S |
+| Windows | Strg+S |
 | Mac | Befehl + S |
 
-Beginnen wir damit, die vier am häufigsten angezeigten Produkte zu finden. Suchen Sie im linken Seitenmenü die Dimension **Produktname** - .
+Finden wir nun die vier am häufigsten angesehenen Produkte. Suchen Sie im Menü auf der linken Seite nach **Dimension** Produktname“.
 
 ![demo](./images/pro8.png)
 
-Ziehen Sie jetzt **Produktname** per Drag-and-Drop, um die Dimension **Tag** zu ersetzen:
+Ziehen Sie nun per Drag-and **Drop „Produktname**, um die Dimension **Tag** zu ersetzen:
 
-Dies ist das Ergebnis
+Dies wird das Ergebnis sein
 
 ![demo](./images/pro10a.png)
 
-Versuchen Sie als Nächstes, eines der Produkte nach Markenname aufzuschlüsseln. Suchen Sie nach **brandName** und ziehen Sie ihn unter den ersten Produktnamen.
+Versuchen Sie als Nächstes, eines der Produkte nach Markennamen aufzuschlüsseln. Suchen Sie nach **brandName** und ziehen Sie ihn unter den ersten Produktnamen.
 
 ![demo](./images/pro13.png)
 
-Erstellen Sie anschließend eine Aufschlüsselung anhand der Treuestufe. Suchen Sie nach **Treuestufe** und ziehen Sie sie unter den Markennamen.
+Führen Sie anschließend eine Aufschlüsselung auf der Treuestufe durch. Suchen Sie nach **Treuestufe** und ziehen Sie sie unter den Markennamen.
 
 ![demo](./images/pro15.png)
 
-Daraufhin sehen Sie Folgendes:
+Sie sehen dann Folgendes:
 
 ![demo](./images/pro15a.png)
 
-Schließlich können Sie weitere Visualisierungen hinzufügen. Suchen Sie auf der linken Seite unter &quot;Visualisierungen&quot;nach `Donut`. Nehmen Sie `Donut`, ziehen Sie es auf die Arbeitsfläche und legen Sie es unter der Visualisierung **Linie** ab.
+Schließlich können Sie weitere Visualisierungen hinzufügen. Suchen Sie auf der linken Seite unter Visualisierungen nach `Donut`. Ziehen Sie `Donut` per Drag-and-Drop auf die Arbeitsfläche unter der **Linie**-Visualisierung.
 
 ![demo](./images/pro18.png)
 
-Wählen Sie anschließend in der Tabelle die Zeilen mit der 3 **Treueebene** aus der Aufschlüsselung aus, die wir unter **Google Pixel XL 32 GB Black Smartphone** > **Citi Signal** durchgeführt haben. Halten Sie bei der Auswahl der drei Zeilen die Schaltfläche **STRG** (unter Windows) oder die Schaltfläche **Befehl** (unter Mac) gedrückt.
+Wählen Sie als Nächstes in der Tabelle die 3 Zeilen **Treuestufe** aus der Aufschlüsselung aus, die wir unter **Google Pixel XL 32 GB Black Smartphone** > **Citi Signal**. Halten Sie die Taste **STRG** (unter Windows) oder die Schaltfläche **Befehl** (unter Mac) gedrückt, während Sie die drei Zeilen auswählen.
 
 ![demo](./images/pro20.png)
 
-Das Ringdiagramm wird sich ändern:
+Das Ringdiagramm wird geändert:
 
 ![demo](./images/pro21.png)
 
-Sie können das Design sogar so anpassen, dass es besser lesbar ist, indem Sie sowohl das Diagramm **Linie** als auch das Diagramm **Donut** etwas kleiner machen, damit sie nebeneinander platziert werden können:
+Sie können das Design sogar für eine bessere Lesbarkeit anpassen, indem Sie sowohl das **Linie**-Diagramm als auch das **Ringdiagramm** etwas kleiner gestalten, damit sie nebeneinander passen:
 
 ![demo](./images/pro22.png)
 
-Klicken Sie auf den Punkt neben **Donut** , um **Data Source verwalten** zu aktivieren.
-Klicken Sie anschließend auf **Auswahl sperren** , um diese Visualisierung so zu sperren, dass immer eine Zeitleiste mit Produktansichten angezeigt wird.
+Klicken Sie auf den Punkt neben **Ringdiagramm**, um **Data Source verwalten**.
+Klicken Sie anschließend auf **Auswahl sperren**, um diese Visualisierung zu sperren, sodass immer eine Zeitleiste mit Produktansichten angezeigt wird.
 
 ![demo](./images/pro22b.png)
 
@@ -139,15 +139,15 @@ Weitere Informationen zu Visualisierungen mit Analysis Workspace finden Sie hier
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Produkt-Interaktionstrichter, vom Anzeigen bis zum Kauf
+## Produkt-Interaktionstrichter, vom Anzeigen bis zum Kaufen
 
-Es gibt viele Möglichkeiten, diese Frage zu lösen. Eine davon besteht darin, den Interaktionstyp &quot;Produkt&quot;zu verwenden und ihn in einer Freiformtabelle zu verwenden. Eine andere Möglichkeit besteht darin, eine **Fallout-Visualisierung** zu verwenden. Verwenden wir die letzte, die wir gleichzeitig visualisieren und analysieren möchten.
+Es gibt viele Möglichkeiten, diese Frage zu lösen. Eine davon ist die Verwendung des Produktinteraktionstyps und dessen Verwendung in einer Freiformtabelle. Eine andere Möglichkeit besteht in der Verwendung einer **Fallout-**. Verwenden wir den letzten, da wir ihn gleichzeitig visualisieren und analysieren möchten.
 
-Schließen Sie das aktuelle Bedienfeld, das wir haben, indem Sie hier klicken:
+Schließen Sie das aktuelle Panel, das wir haben, indem Sie hier klicken:
 
 ![demo](./images/pro23.png)
 
-Fügen Sie jetzt ein neues leeres Bedienfeld hinzu, indem Sie auf **+ Leeres Bedienfeld hinzufügen** klicken.
+Fügen Sie nun ein neues leeres Bedienfeld hinzu, indem Sie auf **+ Leeres Bedienfeld hinzufügen klicken**.
 
 ![demo](./images/pro24.png)
 
@@ -159,7 +159,7 @@ Wählen Sie denselben Datumsbereich wie in der vorherigen Übung aus.
 
 ![demo](./images/pro1.png)
 
-Dann wirst du das sehen.
+Sie werden es dann sehen.
 
 ![demo](./images/prodatefa.png)
 
@@ -175,45 +175,45 @@ Es werden alle verfügbaren Ereignistypen angezeigt.
 
 ![demo](./images/pro28.png)
 
-Wählen Sie das Element **commerce.productViews** aus und ziehen Sie es per Drag-and-Drop auf das Feld **Touchpoint hinzufügen** im Feld **Fallout-Visualisierung**.
+Wählen Sie das Element **commerce.productViews** aus und ziehen Sie es per Drag-and-Drop auf das Feld **Touchpoint hinzufügen** innerhalb der **Fallout-Visualisierung**.
 
 ![demo](./images/pro29.png)
 
-Führen Sie dasselbe mit **commerce.productListAdds** und **commerce.purchases** aus und legen Sie sie im Feld **Touchpoint hinzufügen** im Feld **Fallout-Visualisierung** ab. Ihre Visualisierung sieht nun wie folgt aus:
+Tun Sie dasselbe mit **commerce.productListAdds** und **commerce.purchases** und legen Sie sie im Feld **Touchpoint hinzufügen** innerhalb der **Fallout-Visualisierung**. Ihre Visualisierung sieht nun wie folgt aus:
 
 ![demo](./images/props1.png)
 
-Du kannst hier vieles tun. Einige Beispiele: Vergleich im Zeitverlauf, Vergleich jedes Schritts nach Gerät oder Vergleich nach Treue. Wenn wir jedoch interessante Dinge analysieren möchten, z. B. warum Kunden nach dem Hinzufügen eines Artikels zum Warenkorb keinen Kauf tätigen, können wir das beste Tool in CJA verwenden: Rechtsklick.
+Hier kann man vieles machen. Einige Beispiele: Vergleichen im Zeitverlauf, Vergleichen jedes Schritts nach Gerät oder Vergleichen nach Treue. Wenn wir jedoch interessante Dinge analysieren möchten, wie z. B. warum Kunden nach dem Hinzufügen eines Artikels zu ihrem Warenkorb keinen Kauf tätigen, können wir das beste Tool in CJA verwenden: Rechtsklick.
 
-Klicken Sie mit der rechten Maustaste auf den Touchpoint **commerce.productListAdds**. Klicken Sie dann an diesem Touchpoint auf **Aufschlüsselungs-Fallout**.
+Klicken Sie mit der rechten Maustaste auf den Touchpoint **commerce.productListAdds**. Klicken Sie dann auf **Fallout aufschlüsseln bei diesem Touchpoint**.
 
 ![demo](./images/pro32.png)
 
-Es wird eine neue Freiformtabelle erstellt, in der analysiert wird, was die Personen getan haben, wenn sie nichts gekauft haben.
+Eine neue Freiformtabelle wird erstellt, um zu analysieren, was die Personen getan haben, die keinen Kauf getätigt haben.
 
 ![demo](./images/pro33.png)
 
-Ändern Sie den **Ereignistyp** in der neuen Freiformtabelle durch **Seitenname**, um zu sehen, welche Seiten anstelle der Kaufbestätigungsseite aufgerufen werden.
+Ändern Sie **Ereignistyp** in der neuen Freiformtabelle nach **Seitenname**, um zu sehen, auf welche Seiten anstelle der Kaufbestätigungsseite gegangen wird.
 
 ![demo](./images/pro34.png)
 
-## Was machen Personen auf der Site, bevor sie die Seite &quot;Abbrechen&quot;aufrufen?
+## Was tun Personen auf der Website, bevor sie die Seite „Service abbrechen“ erreichen?
 
-Auch hier gibt es viele Möglichkeiten, diese Analyse durchzuführen. Verwenden wir die Flussanalyse, um den Erkundungsteil zu starten.
+Auch hier gibt es viele Möglichkeiten, diese Analyse durchzuführen. Beginnen wir mit der Flussanalyse, um den Erkennungsteil zu starten.
 
-Schließen Sie das aktuelle Bedienfeld, indem Sie hier klicken:
+Das aktuelle Bedienfeld schließen, indem Sie hier klicken:
 
 ![demo](./images/pro0.png)
 
-Fügen Sie jetzt ein neues leeres Bedienfeld hinzu, indem Sie auf **+ Leeres Bedienfeld hinzufügen** klicken.
+Fügen Sie nun ein neues leeres Bedienfeld hinzu, indem Sie auf **+ Leeres Bedienfeld hinzufügen klicken**.
 
 ![demo](./images/pro0a.png)
 
-Klicken Sie auf die Visualisierung **Fluss**.
+Klicken Sie auf die **„Fluss**.
 
 ![demo](./images/pro35.png)
 
-Daraufhin sehen Sie Folgendes:
+Sie sehen dann Folgendes:
 
 ![demo](./images/pro351.png)
 
@@ -229,52 +229,52 @@ Klicken Sie auf den Pfeil, um die Dimension zu öffnen:
 
 ![demo](./images/pro37.png)
 
-Sie finden alle angezeigten Seiten. Suchen Sie den Seitennamen: **Dienst abbrechen**.
-Ziehen Sie **Abbrechen-Dienst** in die Flussvisualisierung im mittleren Feld:
+Sie finden alle angesehenen Seiten. Suchen Sie den Seitennamen: **Service abbrechen**.
+Ziehen Sie **Service abbrechen** in die Flussvisualisierung im mittleren Feld:
 
 ![demo](./images/pro38.png)
 
-Daraufhin sehen Sie Folgendes:
+Sie sehen dann Folgendes:
 
 ![demo](./images/pro40.png)
 
-Lassen Sie uns nun analysieren, ob Kunden, die die Seite **Abbrechen des Dienstes** auf der Website besucht haben, auch das Callcenter genannt haben und was das Ergebnis war.
+Lassen Sie uns nun analysieren, ob Kunden, die die Seite **Service abbrechen** auf der Website besucht haben, auch Callcenter genannt haben, und was das Ergebnis war.
 
-Gehen Sie unter den Dimensionen zurück und suchen Sie dann **Interaktionstyp aufrufen**.
-Ziehen Sie **Interaktionstyp aufrufen** in den Arbeitsbereich, um die erste Interaktion rechts neben der **Flussvisualisierung** zu ersetzen.
+Gehen Sie unter den Dimensionen zurück und suchen Sie nach **Interaktionstyp des Aufrufs**.
+Drag-and-Drop **Interaktionstyp „Aufruf**, um die erste Interaktion auf der rechten Seite in der **Flussvisualisierung“**.
 
 ![demo](./images/pro43.png)
 
-Jetzt sehen Sie das Supportticket der Kunden, die das Callcenter aufgerufen haben, nachdem sie die Seite **Abbrechen des Dienstes** besucht haben.
+Sie sehen jetzt das Support-Ticket der Kunden, die das Callcenter angerufen haben, nachdem sie die Seite **Service abbrechen** aufgerufen haben.
 
 ![demo](./images/pro44.png)
 
-Suchen Sie anschließend unter den Dimensionen nach **Aufrufempfang**.  Ziehen Sie es per Drag-and-Drop in den Arbeitsbereich, um die erste Interaktion rechts neben der **Flussvisualisierung** zu ersetzen.
+Suchen Sie als Nächstes unter den Dimensionen nach **Call Feeling**.  Ziehen Sie sie per Drag-and-Drop, um die erste Interaktion rechts in der **Flussvisualisierung“** ersetzen.
 
 ![demo](./images/pro46.png)
 
-Daraufhin sehen Sie Folgendes:
+Sie sehen dann Folgendes:
 
 ![demo](./images/flow.png)
 
-Wie Sie sehen können, haben wir mithilfe der Flussvisualisierung eine Omnichannel-Analyse durchgeführt. Dadurch haben wir herausgefunden, dass einige Kunden, die daran gedacht haben, ihren Dienst abzubrechen, ein positives Gefühl hatten, nachdem sie das Callcenter angerufen hatten. Haben wir vielleicht mit einer Beförderung ihre Meinung geändert?
+Wie Sie sehen können, haben wir eine Omni-Channel-Analyse mit der Flussvisualisierung durchgeführt. Wir haben festgestellt, dass einige Kunden, die daran gedacht haben, ihren Service zu stornieren, nach dem Anruf beim Callcenter ein positives Gefühl hatten. Haben wir sie vielleicht durch eine Beförderung umgestellt?
 
 
-## Wie funktionieren Kunden mit einem positiven Callcenter-Kontakt mit den wichtigsten KPIs?
+## Wie schneiden Kunden mit einem positiven Callcenter-Kontakt mit den wichtigsten KPIs ab?
 
-Segmentieren wir zunächst die Daten, um nur Benutzer mit **positiven** -Aufrufen zu erhalten. In CJA werden Segmente als Filter bezeichnet. Navigieren Sie zu Filtern im Komponentenbereich (auf der linken Seite) und klicken Sie auf **+**.
+Segmentieren wir zunächst die Daten, um nur Benutzer mit „positiven **Aufrufen** erhalten. In CJA werden Segmente als Filter bezeichnet. Wechseln Sie zu den Filtern im Komponentenbereich (auf der linken Seite) und klicken Sie auf **+**.
 
 ![demo](./images/pro58.png)
 
-Benennen Sie den Filter im Filter-Builder.
+Benennen Sie den Filter innerhalb des Filter-Builders
 
 | Name | Beschreibung |
 | ----------------- |-------------| 
-| Rufempfindlichkeit - positiv | Rufempfindlichkeit - positiv |
+| Call Feeling - Positiv | Call Feeling - Positiv |
 
 ![demo](./images/pro47.png)
 
-Suchen Sie unter den Komponenten (innerhalb des Filteraufbaus) nach **Aufrufegefühl** und ziehen Sie es per Drag-and-Drop in die Filtergenerator-Definition.
+Suchen Sie unter den Komponenten (innerhalb des Filter Builders) nach **Call Feeling** und ziehen Sie es per Drag-and-Drop in die Filter Builder-Definition.
 
 ![demo](./images/pro48.png)
 
@@ -282,19 +282,19 @@ Wählen Sie nun **positiv** als Wert für den Filter aus.
 
 ![demo](./images/pro49.png)
 
-Ändern Sie den Gültigkeitsbereich in den Wert **Person** .
+Ändern Sie den Bereich in &quot;**&quot;**.
 
 ![demo](./images/pro50.png)
 
-Klicken Sie abschließend einfach auf **Speichern**.
+Klicken Sie abschließend auf **Speichern**.
 
 ![demo](./images/pro51.png)
 
-Du wirst dann wieder hier sein. Wenn noch nicht geschehen, schließen Sie das vorherige Bedienfeld.
+Dann bist du wieder hier. Falls noch nicht geschehen, schließen Sie das vorherige Bedienfeld.
 
 ![demo](./images/pro0c.png)
 
-Fügen Sie jetzt ein neues leeres Bedienfeld hinzu, indem Sie auf **+ Leeres Bedienfeld hinzufügen** klicken.
+Fügen Sie nun ein neues leeres Bedienfeld hinzu, indem Sie auf **+ Leeres Bedienfeld hinzufügen klicken**.
 
 ![demo](./images/pro24c.png)
 
@@ -306,27 +306,27 @@ Klicken Sie auf **Freiformtabelle**.
 
 ![demo](./images/pro52.png)
 
-Ziehen Sie nun den soeben erstellten Filter in den Arbeitsbereich.
+Ziehen Sie nun den soeben erstellten Filter per Drag-and-Drop hinüber.
 
 ![demo](./images/pro53.png)
 
-Zeit zum Hinzufügen einiger Metriken. Beginnen Sie mit **Produktansichten**. Ziehen Sie die Freiformtabelle in den Arbeitsbereich. Sie können auch die Metrik **Ereignisse** löschen.
+Zeit, einige Metriken hinzuzufügen. Beginnen Sie mit **Produktansichten**. Ziehen Sie per Drag-and-Drop in die Freiformtabelle. Sie können auch die Metrik **Ereignisse** löschen.
 
 ![demo](./images/pro54.png)
 
-Führen Sie dasselbe mit **Personen**, **Zum Warenkorb hinzufügen** und **Käufen** durch. Du wirst am Ende einen Tisch wie diesen haben.
+Tun Sie dasselbe mit **Personen**, **Zum Warenkorb hinzufügen** und **Käufe**. Du wirst so einen Tisch bekommen.
 
 ![demo](./images/pro55.png)
 
-Dank der ersten Flussanalyse kam eine neue Frage in den Sinn. Also haben wir beschlossen, diese Tabelle zu erstellen und einige KPIs mit einem Segment zu vergleichen, um diese Frage zu beantworten. Wie Sie sehen können, ist die Zeit für Einblicke viel schneller als die Verwendung von SQL oder andere BI-Lösungen.
+Dank der ersten Flussanalyse kam mir eine neue Frage in den Sinn. Wir haben uns also entschieden, diese Tabelle zu erstellen und einige KPIs mit einem Segment zu vergleichen, um diese Frage zu beantworten. Wie Sie sehen können, ist die Zeit bis zur Erkenntnis viel schneller als bei der Verwendung von SQL oder anderen BI-Lösungen.
 
-## Customer Journey Analytics- und Analysis Workspace-Neukodifizierung
+## Zusammenfassende Informationen zu Customer Journey Analytics und Analysis Workspace
 
-Wie Sie in diesem Labor erfahren haben, ordnet Analysis Workspace Daten aus allen Kanälen zu, um die vollständige Journey zu analysieren. Beachten Sie außerdem, dass Sie Daten in denselben Arbeitsbereich bringen können, der nicht mit dem Journey verbunden ist.
-Es kann sehr nützlich sein, getrennte Daten in Ihre Analyse aufzunehmen, um dem Journey Kontext zu geben. Einige Beispiele sind NPS-Daten, Umfragen, Facebook Ads-Ereignisse oder Offline-Interaktionen (nicht identifiziert).
+Wie Sie in diesem Labor erfahren haben, verknüpft Analysis Workspace Daten aus allen Kanälen miteinander, um die vollständige Kunden-Journey zu analysieren. Beachten Sie außerdem, dass Sie Daten in denselben Arbeitsbereich einbringen können, der nicht mit der Journey verknüpft ist.
+Es kann sehr nützlich sein, getrennte Daten in Ihre Analyse zu bringen, um dem Journey einen Kontext zu geben. Einige Beispiele sind Dinge wie NPS-Daten, Umfragen, Facebook Ads-Ereignisse oder Offline-Interaktionen (nicht identifiziert).
 
-Nächster Schritt: [4.6 Von Einblicken zu Aktion](./ex6.md)
+Nächster Schritt: [4.6 Von Einblicken zu Aktionen](./ex6.md)
 
-[Zurück zum Benutzerfluss 4](./uc4.md)
+[Zurück zu Benutzerfluss 4](./uc4.md)
 
-[Zu allen Modulen zurückkehren](./../../overview.md)
+[Zurück zu „Alle Module“](./../../overview.md)

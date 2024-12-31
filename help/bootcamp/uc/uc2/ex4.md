@@ -18,46 +18,46 @@ ht-degree: 2%
 
 # 2.4 Journey testen
 
-## Journey-Fluss des Kunden
+## Kunden-Journey-Fluss
 
-Öffnen Sie ein neues, sauberes Inkognito-Browserfenster und gehen Sie zu [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Klicken Sie auf **Alle zulassen**. Basierend auf Ihrem Browsing-Verhalten im vorherigen Benutzerfluss wird auf der Startseite der Website eine Personalisierung angezeigt.
+Öffnen Sie ein neues, sauberes Inkognito-Browser-Fenster und navigieren Sie zu [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Klicken Sie **Alle zulassen**. Basierend auf Ihrem Browser-Verhalten im vorherigen Benutzerfluss sehen Sie, wie die Personalisierung auf der Homepage der Website erfolgt.
 
 ![DSN](./images/web8a.png)
 
-Klicken Sie oben rechts auf dem Bildschirm auf das Symbol **Profil** .
+Klicken Sie auf **Profil** in der oberen rechten Ecke des Bildschirms.
 
 ![Demo](./images/web8b.png)
 
-Klicken Sie auf **Konto erstellen**.
+Klicken Sie **Konto erstellen**.
 
 ![Demo](./images/pv5.png)
 
-Füllen Sie alle Formularfelder aus. Verwenden Sie einen echten Wert für E-Mail-Adresse und Telefonnummer, da dieser Wert in späteren Übungen zum Versand von E-Mails und SMS verwendet wird.
+Füllen Sie alle Formularfelder aus. Verwenden Sie einen echten Wert für E-Mail-Adresse und Telefonnummer, da er in späteren Übungen für den Versand von E-Mails und SMS verwendet wird.
 
 ![Demo](./images/pv7a.png)
 
-Scrollen Sie nach unten. Sie müssen jetzt die eventID Ihres benutzerspezifischen Ereignisses eingeben, das Sie in Übung 2.2 erstellt haben. Sie finden ihn hier:
+Scroll down. Sie müssen jetzt die eventID Ihres benutzerdefinierten Ereignisses eingeben, das Sie in Übung 2.2 erstellt haben. Sie finden sie hier:
 
 ![ACOP](./images/payloadeventID.png)
 
-Die Ereignis-ID muss an Adobe Experience Platform gesendet werden, um die von Ihnen erstellte Journey Trigger. Dies ist die eventID in diesem Beispiel: `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
+Die Ereignis-ID ist das, was an Adobe Experience Platform gesendet werden muss, um die von Ihnen erstellte Journey zum Trigger zu bringen. Dies ist die eventID in diesem Beispiel: `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-Füllen Sie die eventID im Feld **Ihre Ereignis-ID für die Kontoerstellung** aus und klicken Sie auf **Registrieren**.
+Füllen Sie das Feld eventID (Ihre Ereignis **ID für die Kontoerstellung) aus** klicken Sie auf **Registrieren**.
 
 ![Demo](./images/pv8a.png)
 
-Dann wirst du das sehen.
+Sie werden es dann sehen.
 
 ![Demo](./images/pv9.png)
 
-Sie erhalten auch diese E-Mail, die die E-Mail ist, die Sie im Rahmen dieser Übung selbst erstellt haben.
+Sie erhalten auch diese E-Mail, also die E-Mail, die Sie im Rahmen dieser Übung selbst erstellt haben.
 
 ![Demo](./images/pv10a.png)
 
-Du bist jetzt mit dieser Übung fertig.
+Sie haben jetzt diese Übung beendet.
 
-Nächster Schritt: [2.5 Installieren und Verwenden der App](./ex5.md)
+Nächster Schritt: [2.5 Installieren und verwenden Sie die Mobile App](./ex5.md)
 
-[Zurück zum Benutzerfluss 2](./uc2.md)
+[Zurück zu Benutzerfluss 2](./uc2.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

@@ -16,49 +16,49 @@ ht-degree: 0%
 
 # 2.6 Personalization im Callcenter
 
-Wie bereits mehrfach während des Bootcamps besprochen wurde, sollte die Personalisierung des Kundenerlebnisses auf Omnichannel-Weise erfolgen. Ein Callcenter ist oft ziemlich vom Rest der Journey getrennt und führt oft zu frustrierenden Kundenerlebnissen, muss aber nicht sein. Lassen Sie uns Ihnen ein Beispiel dafür zeigen, wie das Callcenter in Echtzeit problemlos mit Adobe Experience Platform verbunden werden kann.
+Wie bereits mehrmals während des Bootcamps erörtert, sollte die Personalisierung des Kundenerlebnisses auf Omni-Channel-Weise erfolgen. Ein Callcenter ist oft nicht mit dem übrigen Kunden-Journey verbunden. Dies führt oft zu frustrierenden Kundenerlebnissen, aber das muss es nicht sein. Sehen wir uns ein Beispiel dafür an, wie das Callcenter in Echtzeit einfach mit Adobe Experience Platform verbunden werden kann.
 
-## Journey des Kunden
+## Kunden-Journey-Fluss
 
-In der vorherigen Übung haben Sie mit der Mobile App ein Produkt durch Klicken auf die Schaltfläche **Kaufen** gekauft.
+In der vorherigen Übung haben Sie über die Mobile App ein Produkt durch Klicken auf die Schaltfläche **Kaufen** gekauft.
 
 ![DSN](./images/app20.png)
 
-Nehmen wir an, Sie haben eine Frage zum Status Ihrer Bestellung, was würden Sie tun? Normalerweise rufen Sie das Callcenter an.
+Nehmen wir an, Sie haben eine Frage zum Status Ihrer Bestellung, was würden Sie tun? Normalerweise würden Sie das Callcenter anrufen.
 
-Bevor Sie das Callcenter aufrufen, müssen Sie Ihre **Loyalitäts-ID** kennen. Ihre Treuekennung finden Sie im Profil-Viewer der Website.
+Bevor Sie das Callcenter anrufen, müssen Sie Ihre **Treueprogramm-ID** kennen. Ihre Treue-ID finden Sie im Profil-Viewer der Website.
 
 ![DSN](./images/cc1.png)
 
-In diesem Fall lautet die **Loyalitäts-ID** **5863105**. Im Rahmen unserer benutzerdefinierten Implementierung der Callcenter-Funktion in der Demoumgebung müssen Sie Ihrer **Loyalitäts-ID** ein Präfix hinzufügen. Das Präfix ist **11373**, daher lautet die in diesem Beispiel zu verwendende Loyalitäts-ID **11373 5863105**.
+In diesem Fall wird die **Treuekennung** **5863105**. Im Rahmen unserer benutzerdefinierten Implementierung der Callcenter-Funktion in der Demo-Umgebung müssen Sie Ihrer **Treue-ID“ ein Präfix**. Das Präfix ist **11373**, daher ist die in diesem Beispiel zu verwendende Treue-ID **11373 5863105**.
 
-Machen wir das jetzt! Benutzen Sie Ihr Telefon und rufen Sie die Nummer **+1 (323) 745-1670** an.
+Lass uns das jetzt machen. Verwenden Sie Ihr Telefon und rufen Sie die Nummer **+1 (323) 745-1670**.
 
 ![DSN](./images/cc2.png)
 
-Sie werden aufgefordert, Ihre Loyalitäts-ID einzugeben, gefolgt von **#**. Geben Sie Ihre Loyalitäts-ID ein.
+Sie werden aufgefordert, Ihre Treue-ID einzugeben, gefolgt von **#**. Geben Sie Ihre Treue-ID ein.
 
 ![DSN](./images/cc3.png)
 
-Dann hören Sie **Hallo, Vorname**. Dieser Vorname stammt aus dem Echtzeit-Kundenprofil in Adobe Experience Platform. Sie haben dann drei Möglichkeiten. Drücken Sie die Nummer **1**, **Bestellstatus**.
+Sie hören dann **Hallo, Vorname**. Dieser Vorname wird aus dem Echtzeit-Kundenprofil in Adobe Experience Platform übernommen. Sie haben dann drei Möglichkeiten. Drücken Sie die Nummer **1**, **Order Status**.
 
 ![DSN](./images/cc4.png)
 
-Nachdem Sie Ihren Bestellstatus gehört haben, können Sie durch Drücken von **1** zum Hauptmenü zurückkehren, andernfalls drücken Sie 2. Drücken Sie **2**.
+Nachdem Sie Ihren Bestellstatus gehört haben, können Sie wählen, ob Sie **1** drücken möchten, um zum Hauptmenü zurückzukehren, oder drücken Sie 2. Drücken Sie **2**.
 
 ![DSN](./images/cc5.png)
 
-Sie werden dann aufgefordert, Ihr Callcenter-Erlebnis zu bewerten, indem Sie eine Zahl zwischen 1 und 5 auswählen, wobei 1 niedrig und 5 hoch ist. Treffen Sie Ihre Wahl.
+Anschließend werden Sie aufgefordert, Ihr Callcenter-Erlebnis zu bewerten, indem Sie eine Zahl zwischen 1 und 5 auswählen, wobei 1 niedrig und 5 hoch ist. Treffen Sie Ihre Wahl.
 
 ![DSN](./images/cc6.png)
 
-Ihr Anruf an das Callcenter wird nun eingestellt.
+Ihr Anruf beim Callcenter endet jetzt.
 
-Wechseln Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
+Zu [Adobe Experience Platform](https://experience.adobe.com/platform). Nach dem Login landen Sie auf der Homepage von Adobe Experience Platform.
 
 ![Datenaufnahme](./images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``Bootcamp``. Klicken Sie dazu in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **[!UICONTROL Produktions-Prod]** . Nachdem Sie die entsprechende [!UICONTROL Sandbox] ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
+Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbox hat den Namen ``Bootcamp``. Klicken Sie dazu auf den Text **[!UICONTROL Produktion]** in der blauen Linie am oberen Bildschirmrand. Nach Auswahl der entsprechenden [!UICONTROL Sandbox] wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten [!UICONTROL Sandbox].
 
 ![Datenaufnahme](./images/sb1.png)
 
@@ -66,28 +66,28 @@ Gehen Sie im linken Menü zu **Profile** und zu **Durchsuchen**.
 
 ![Kundenprofil](./images/homemenu.png)
 
-Wählen Sie den **Identitäts-Namespace** **E-Mail** aus und geben Sie die E-Mail-Adresse Ihres Kundenprofils ein. Klicken Sie auf **Ansicht**. Klicken Sie auf , um Ihr Profil zu öffnen.
+Wählen Sie **Identity-Namespace** **E-Mail** aus und geben Sie die E-Mail-Adresse Ihres Kundenprofils ein. Klicken Sie **Anzeigen**. Klicken Sie, um Ihr Profil zu öffnen.
 
 ![DSN](./images/cc7.png)
 
-Ihr Kundenprofil wird erneut angezeigt. Wechseln Sie zu **Ereignisse**.
+Ihr Kundenprofil wird erneut angezeigt. Navigieren Sie zu **Ereignisse**.
 
 ![DSN](./images/cc8.png)
 
-Unter &quot;events&quot;sehen Sie 2 Ereignisse mit dem eventType **callCenter**. Das erste Ereignis ist das Ergebnis Ihrer Antwort auf die Frage **Bewerten der Zufriedenheit Ihrer Anrufe**.
+Unter „Ereignisse“ werden zwei Ereignisse mit dem eventType „CallCenter ****. Das erste Ereignis ist das Ergebnis Ihrer Antwort auf die Frage **Bewerten Sie Ihre Anrufzufriedenheit**.
 
 ![DSN](./images/cc9.png)
 
-Scrollen Sie nach unten, und Sie sehen das Ereignis, das aufgezeichnet wurde, als Sie die Option zum Überprüfen Ihres **Bestellstatus** ausgewählt haben.
+Scrollen Sie ein wenig nach unten, und Sie sehen das Ereignis, das aufgezeichnet wurde, als Sie die Option zum Überprüfen Ihres **Bestellstatus** ausgewählt haben.
 
 ![DSN](./images/cc10.png)
 
-Wechseln Sie zu **Segmentmitgliedschaft**. Jetzt sehen Sie, dass sich zwei Segmente in Echtzeit auf Ihr Profil qualifizieren, basierend auf den Interaktionen, die Sie über das Callcenter hatten. Diese Segmentmitgliedschaften können und sollten dann verwendet werden, um zu beeinflussen, welche Kommunikation und Personalisierung über andere Kanäle hinweg erfolgt.
+Navigieren Sie zu **Segmentzugehörigkeit**. Jetzt sehen Sie, dass zwei Segmente in Echtzeit für Ihr Profil qualifiziert sind, basierend auf den Interaktionen, die Sie über das Callcenter hatten. Diese Segmentzugehörigkeiten können und sollten dann verwendet werden, um zu beeinflussen, was über einen anderen Kanal hinweg mit Kommunikation und Personalisierung geschieht.
 
 ![DSN](./images/cc11.png)
 
-Du bist jetzt mit dieser Übung fertig.
+Sie haben jetzt diese Übung beendet.
 
-[Zurück zum Benutzerfluss 2](./uc2.md)
+[Zurück zu Benutzerfluss 2](./uc2.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

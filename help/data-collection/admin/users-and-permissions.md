@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von Benutzern und Verwalten von Berechtigungen in der Datenerfassung
-description: Erfahren Sie, wie Sie Benutzer hinzufügen und Berechtigungen für die Datenerfassungsfunktionen von Adobe Experience Platform verwalten können, damit Mitarbeiter in Ihrem Unternehmen Zugriff auf ihre Aufträge erhalten.
+description: Erfahren Sie, wie Sie Benutzende hinzufügen und Berechtigungen für Datenerfassungsfunktionen von Adobe Experience Platform verwalten, damit die Mitarbeiter in Ihrem Unternehmen Zugriff auf die Aufgaben haben, die sie für ihre Arbeit benötigen.
 role: Admin
 feature: Tags
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Hinzufügen von Benutzern und Verwalten von Berechtigungen in der Datenerfassung
 
-Erfahren Sie, wie Sie Benutzer hinzufügen und Berechtigungen für die Datenerfassungsfunktionen von Adobe Experience Platform verwalten können, damit Mitarbeiter in Ihrem Unternehmen Zugriff auf ihre Aufträge erhalten.
+Erfahren Sie, wie Sie Benutzende hinzufügen und Berechtigungen für Datenerfassungsfunktionen von Adobe Experience Platform verwalten, damit die Mitarbeiter in Ihrem Unternehmen Zugriff auf die Aufgaben haben, die sie für ihre Arbeit benötigen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on)

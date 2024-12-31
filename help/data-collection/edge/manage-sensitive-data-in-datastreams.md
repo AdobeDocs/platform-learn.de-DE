@@ -1,5 +1,5 @@
 ---
-title: Verwalten vertraulicher Daten in Datenspeichern
+title: Verwalten sensibler Daten in Datenströmen
 description: Erfahren Sie, wie Sie sensible Daten in Datenströmen verwalten.
 feature: Datastreams, Data Governance
 role: Data Architect, Data Engineer, Developer
@@ -15,8 +15,8 @@ ht-degree: 26%
 
 ---
 
-# Verwalten vertraulicher Daten in Datenspeichern
+# Verwalten sensibler Daten in Datenströmen
 
-Erfahren Sie, wie Sie sensible Daten in Datastreams verwalten.  Weitere Informationen finden Sie in der [Dokumentation zu Datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=de).
+Erfahren Sie, wie Sie vertrauliche Daten in Datenströmen verwalten.  Weitere Informationen finden Sie unter [Dokumentation zu Datenströmen](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on)

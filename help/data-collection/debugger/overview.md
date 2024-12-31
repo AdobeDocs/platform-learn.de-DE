@@ -17,13 +17,13 @@ ht-degree: 54%
 
 # Übersicht über Adobe Experience Platform Debugger
 
-Erfahren Sie, wie Sie mit den Adobe Experience Platform Debuggern [Chrome-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) und [Firefox-Add-on](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/) Ihre Web-Implementierungen des Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, Tags und mehr debuggen können.
+Erfahren Sie, wie Sie mit der Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)Erweiterung und dem [Firefox-Add-on](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/) Ihre Web-Implementierungen von Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, Tags und mehr debuggen können.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ## Weitere Ressourcen
 
 * [Laden Sie das Firefox-Add-on herunter](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/)
-* [Herunterladen der Chrome-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-* [Experience Platform Debugger-Dokumentation](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=de)
-* [Debuggen einer Tagimplementierung](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=de)
+* [Chrome-Erweiterung herunterladen](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Dokumentation zum Experience Platform-Debugger](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=de)
+* [Debuggen einer Tag-Implementierung](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=de)

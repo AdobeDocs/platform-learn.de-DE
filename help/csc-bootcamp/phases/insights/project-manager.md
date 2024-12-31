@@ -1,6 +1,6 @@
 ---
-title: CSC Bootcamp - Einblicke für einen Projektmanager
-description: CSC Bootcamp - Einblicke für einen Projektmanager
+title: CSC Bootcamp - Erkenntnisse für einen Projekt-Manager
+description: CSC Bootcamp - Erkenntnisse für einen Projekt-Manager
 doc-type: multipage-overview
 exl-id: f9f552f5-b065-4246-a317-297835ea8a36
 source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
@@ -10,68 +10,68 @@ ht-degree: 0%
 
 ---
 
-# Einblicke für einen Projekt-Manager
+# Erkenntnisse für einen Projekt-Manager
 
-## Zwischenberichte zu interaktiven Projekten
+## Interaktive Projektstatusberichte
 
-Klicken Sie in der Zeile &#39;PIN&#39; auf &#39;Mobile App Awareness&#39; und dann auf &#39;Metrics&#39;:
+Klicken Sie in der Zeile „PIN“ auf „Mobile App Awareness“ und dann auf „Metriken“:
 
-![Klicken Sie auf App-Bewusstsein](./images/mobile-app-awareness.png)
+![Klicken Sie auf Mobile-App-Erkennung](./images/mobile-app-awareness.png)
 
 ![Details zum Projekt anzeigen](./images/awareness-view.png)
 
-Hier haben Sie eine grafische Ansicht des Status eines einzelnen Projekts/einer Kampagne.
+Hier sehen Sie eine grafische Übersicht über den Status eines einzelnen Projekts/einer Kampagne.
 
 >[!NOTE]
 >
-> Für weitere Details kann auf jeden Bereich geklickt werden. Dies gilt für die meisten Einblicke in Workfront. Lass es mal!
+> Für weitere Details kann jeder Bereich angeklickt werden. Dies ist der Fall für die meisten Einblicke in Workfront. Probier es mal!
 
 ## Kampagnenspezifische Berichte
 
-Klicken Sie in der Zeile &quot;PIN&quot;auf &quot;Projekte:
+Klicken Sie in der Zeile „PIN“ auf „Projekte:
 
-![Auf Projekte klicken](./images/projects.png)
+![Projekte anklicken](./images/projects.png)
 
-Klicken Sie in der linken Spalte auf &quot;Kampagnenstatus&quot;:
+Klicken Sie in der linken Spalte auf „Kampagnenstatus“:
 
-Der obere Teil bietet Einblicke in eine einzelne Kampagne über geplante 1/-Kampagne **im Vergleich zu tatsächlichen** Besuchsstunden und 2/ Die **Kampagnenbedingung** für jeden Kanal:
+Der obere Teil bietet Ihnen Einblicke zu 1 einzelnen Kampagne über 1/ **Kampagne vs.** Stunden und 2/ Die **Kampagnenbedingung** für jeden Kanal:
 
-![Kampagneneinblicke](./images/campaign-insights.png)
+![Campaign Insights](./images/campaign-insights.png)
 
-Im unteren Teil erhalten Sie Einblicke in den Status **Kampagnenversand** :
+Im unteren Teil erhalten Sie Einblicke in den Status **Ergebnisse der Kampagne**:
 
-![Kampagnenversand](./images/deliverables-status.png)
+![Ergebnisse von Campaign](./images/deliverables-status.png)
 
 ## Einblicke basierend auf mehreren Projekten
 
-Klicken Sie in der linken Spalte auf &quot;Monitoring&quot;.
+Klicken Sie noch in der linken Spalte auf „Monitoring“
 
-![Klick-Monitoring](./images/monitoring.png)
+![Klick-Überwachung](./images/monitoring.png)
 
-Der obere Teil gibt Ihnen Einblicke in den Status einer Gruppe von Projekten, sowohl aus Sicht von **Aufgaben status** als auch aus Sicht von **Projektbedingung**:
+Der obere Teil gibt Einblicke in den Status einer Gruppe von Projekten, sowohl aus **Aufgabenstatus** Sicht als auch aus der **Projektbedingung** Sicht:
 
 ![Übersicht](./images/group-status.png)
 
-Der untere Teil zeigt alle **Risikogenehmigungen** an und muss nachgeahmt werden:
+Der untere Teil zeigt alle **Risikogenehmigungen** und muss nachverfolgt werden:
 
 ![Identifizierte Risiken](./images/risk-approvals.png)
 
 ## Das Inhalts-Dashboard
 
-Klicken Sie in der linken Spalte auf &quot;CONTENT DASHBOARD&quot;:
+Klicken Sie noch in der linken Spalte auf „INHALTS-DASHBOARD“:
 
-![Klicken Sie auf das Inhalts-Dashboard](./images/content-dashboard.png)
+![Dashboard für Inhalte klicken](./images/content-dashboard.png)
 
-Der obere Teil bietet einen guten Einblick in den Status der Testversand-Genehmigung für Ihr **Dokument** (ist sie genehmigt, wie viele Versionen benötigten wir usw.)
+Der obere Teil gibt einen guten Einblick über den Status **Korrekturabzugs-Genehmigung des Dokuments** (ist es genehmigt, wie viele Versionen benötigen wir usw.)
 
-![Testversand der Genehmigungen](./images/proof-of-approval.png)
+![Genehmigungsnachweis](./images/proof-of-approval.png)
 
-Der untere Teil ist ein **Validierungsbericht für Testsendungen** , der einen weiteren Blickwinkel auf den Status der Testversandgenehmigung bietet:
+Der untere Teil ist ein **Testversand-Genehmigungsprüfung** der den Status der Testversand-Genehmigung um einen anderen Blickwinkel erweitert:
 
-![Testversand der Validierungsüberprüfungen](./images/poa-review.png)
+![Prüfung des Genehmigungsnachweises](./images/poa-review.png)
 
 Nächster Schritt: [Phase 4 - Einblicke für einen Marketing-Manager](./marketing-manager.md)
 
-[Gehen Sie zurück zu Phase 4 - Insights: Übersicht](./overview.md)
+[Zurück zu Phase 4 - Einblicke: Übersicht](./overview.md)
 
-[Zu allen Modulen zurückkehren](../../overview.md)
+[Zurück zu „Alle Module“](../../overview.md)

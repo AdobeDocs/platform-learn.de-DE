@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Vermischen von physisch und digital - Brasilien
-description: Bootcamp - Vermischen von physisch und digital - Brasilien
+title: Bootcamp - Mischung aus physischer und digitaler Technologie - Brasilien
+description: Bootcamp - Mischung aus physischer und digitaler Technologie - Brasilien
 jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Objetivos de aprendizado
 
-## Pré-equisitos
+## Voraussetzungen
 
 - Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
@@ -28,24 +28,24 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Este-Tutorial foi criado para Moderar um formatio específico de bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um Participante de um bootcamp e recisa das credenciais de acesso, entre em contato com seu darante da Adobe para receber as informmações notwendiárias.
+>Este tutorial foi criado para facilar um formato específico de bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste Tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um Participante de um bootcamp e precisa das credenciais de acesso, entre em contato com seu presentante da Adobe para receber as informações needs árias.
 
-## Übungen
+## anstrengend
 
-[3.1 Verwendung von aplicativo móvel e acione sinalizador beacon](./ex1.md)
+[3.1 Verwendung des Bakens aplicativo móvel e acione sinalizador](./ex1.md)
 
-Neste übício, você irá aprender como configuration um evento.
+Neste ercício, você irá aprender como configurar um evento.
 
-[3.2 Kritisches Ereignis](./ex2.md)
+[3.2 Crie seu evento](./ex2.md)
 
-Neste übício, você irá aprender como configuration um evento.
+Neste ercício, você irá aprender como configurar um evento.
 
 [3.3 Crie sua jornada e notificação push](./ex3.md)
 
-Neste übício, você irá aprender como konfigurar uma jornada e uma notificação push e como vincular seu evento e mensagem para a jornada.
+Neste ercício, você irá aprender como configurar uma jornada e uma notificação push e como vincular seu evento e menagem para a jornada.
 
 [3.4 Teste sua jornada](./ex4.md)
 
-Neste übício, você irá aprender como konfigurar uma jornada e como vincular seu evento e mensagem para a jornada.
+Neste ercício, você irá aprender como configurar uma jornada e como vincular seu event to e menagem para a a jornada.
 
-[Retornar para Todos os Módulos](../../overview.md)
+[In: Retornar para Todos os Módulos](../../overview.md)

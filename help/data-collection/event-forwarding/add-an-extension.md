@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen einer Ereignisweiterleitungs-Erweiterung
-description: Erfahren Sie, wie Sie in der Datenerfassung eine Ereignisweiterleitungs-Erweiterung hinzufügen.
+title: Hinzufügen einer Erweiterung für die Ereignisweiterleitung
+description: Erfahren Sie, wie Sie in der Datenerfassung eine Erweiterung für die Ereignisweiterleitung hinzufügen.
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6422
@@ -13,13 +13,13 @@ ht-degree: 19%
 
 ---
 
-# Hinzufügen einer Ereignisweiterleitungs-Erweiterung
+# Hinzufügen einer Erweiterung für die Ereignisweiterleitung
 
-Erfahren Sie, wie Sie in der Datenerfassung eine Ereignisweiterleitungs-Erweiterung hinzufügen. Weitere Informationen finden Sie in der Dokumentation zur [Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) .
+Erfahren Sie, wie Sie in der Datenerfassung eine Erweiterung für die Ereignisweiterleitung hinzufügen. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
+>Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform launch (Client-seitig) ist jetzt **[!DNL tags]**
 > * Platform launch Server Side ist jetzt **[!DNL event forwarding]**

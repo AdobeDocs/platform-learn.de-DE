@@ -1,6 +1,6 @@
 ---
-title: Erstellen von mobilen Tag-Eigenschaften
-description: Erfahren Sie, wie Sie eine mobile Tag-Eigenschaft in der Datenerfassung erstellen. Fügen Sie den Mobile Core und andere Erweiterungen hinzu, veröffentlichen Sie die Konfiguration in einer Umgebung und verweisen Sie in Ihrer Mobile App auf die Eigenschaft .
+title: Erstellen von Mobile-Tag-Eigenschaften
+description: Erfahren Sie, wie Sie in der Datenerfassung eine mobile Tag-Eigenschaft erstellen. Fügen Sie den Mobile Core und andere Erweiterungen hinzu, veröffentlichen Sie die Konfiguration in einer Umgebung und verweisen Sie auf die Eigenschaft in Ihrer Mobile App.
 feature: Mobile SDK, Tags
 level: Beginner
 jira: KT-2636
@@ -12,9 +12,9 @@ ht-degree: 1%
 
 ---
 
-# Erstellen von mobilen Tag-Eigenschaften
+# Erstellen von Mobile-Tag-Eigenschaften
 
-Erfahren Sie, wie Sie eine mobile Tag-Eigenschaft in der Datenerfassung erstellen. Fügen Sie den Mobile Core und andere Erweiterungen hinzu, veröffentlichen Sie die Konfiguration in einer Umgebung und verweisen Sie in Ihrer Mobile App auf die Eigenschaft . Weitere Informationen finden Sie in der [Mobile SDK-Dokumentation](https://developer.adobe.com/client-sdks/documentation/) .
+Erfahren Sie, wie Sie in der Datenerfassung eine mobile Tag-Eigenschaft erstellen. Fügen Sie den Mobile Core und andere Erweiterungen hinzu, veröffentlichen Sie die Konfiguration in einer Umgebung und verweisen Sie auf die Eigenschaft in Ihrer Mobile App. Weitere Informationen finden Sie in der [Dokumentation zu Mobile SDK](https://developer.adobe.com/client-sdks/documentation/).
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Ereignisweiterleitungsregel
-description: Erfahren Sie, wie Sie eine Ereignisweiterleitungsregel in der Datenerfassung erstellen.
+title: Erstellen einer Regel für die Ereignisweiterleitung
+description: Erfahren Sie, wie Sie in der Datenerfassung eine Regel für die Ereignisweiterleitung erstellen.
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6423
@@ -13,13 +13,13 @@ ht-degree: 19%
 
 ---
 
-# Erstellen einer Ereignisweiterleitungsregel
+# Erstellen einer Regel für die Ereignisweiterleitung
 
-Erfahren Sie, wie Sie eine Ereignisweiterleitungsregel in der Datenerfassung erstellen. Weitere Informationen finden Sie in der Dokumentation zur [Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) .
+Erfahren Sie, wie Sie in der Datenerfassung eine Regel für die Ereignisweiterleitung erstellen. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden verschiedene terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
+>Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform launch (Client-seitig) ist jetzt **[!DNL tags]**
 > * Platform launch Server Side ist jetzt **[!DNL event forwarding]**
