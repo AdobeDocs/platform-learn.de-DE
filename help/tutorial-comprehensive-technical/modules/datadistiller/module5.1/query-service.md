@@ -11,76 +11,76 @@ ht-degree: 1%
 
 ---
 
-# 5.1 Query Service
+# 5.1 Abfrage-Service
 
-In diesem Modul erhalten Sie eine praktische Vorschau von Adobe Experience Platform Query Service. Mit Query Service können Sie Omnichannel-Abfragen für alle Adobe Experience Cloud-Anwendungsdaten durchführen, Daten aus Adobe Campaign, Analytics, Audience Manager, Target und Advertising Cloud sowie anderen in Adobe Experience Platform geladenen/eingefügten Kundendaten verbinden und analysieren.
+In diesem Modul erhalten Sie eine praktische Vorschau des Abfrage-Service von Adobe Experience Platform. Mit Query Service können Sie Omni-Channel-Abfragen für alle Daten der Adobe Experience Cloud-Anwendung durchführen, Daten aus Adobe Campaign, Analytics, Audience Manager, Target und Advertising Cloud verbinden und analysieren und weitere Kundendaten in Adobe Experience Platform laden/einfügen.
 
-Query Service ist ein Server-loses Tool. Es unterstützt SQL-Abfragen und Konnektivität von mehreren Client-Anwendungen über seine PostgreSQL-Kompatibilität.
-Wir werden Daten verwenden, die mithilfe von Web Interaction Data oder Callcenter-Interaktionen in Kombination mit Daten aus dem Kundenloyalitätsbereich in die Plattform hochgeladen wurden.
+Query Service ist ein Server-loses Tool. Es unterstützt SQL-Abfragen und Konnektivität von mehreren Client-Anwendungen durch seine PostgreSQL-Kompatibilität.
+Wir verwenden Daten, die entweder mithilfe von Web Interaction-Daten oder mithilfe von Callcenter-Interaktionen in Kombination mit in Platform hochgeladenen Kundenloyalitätsdaten in Platform eingespeist wurden.
 
 ## Lernziele
 
-- Kennenlernen der Adobe Experience Platform-Benutzeroberfläche
-- Verbindung zu Query Service herstellen und Ihre SQL-Abfragen ausführen
-- Datensätze in Adobe Experience Platform erkunden
-- Verbinden von Tableau oder Power BI mit dem Adobe Experience Platform Query Service , um Visualisierungen und Berichte zu erstellen
+- Machen Sie sich mit der Benutzeroberfläche von Adobe Experience Platform vertraut
+- Verbinden mit dem Abfrage-Service und Ausführen von SQL-Abfragen
+- Erkunden von Datensätzen in Adobe Experience Platform
+- Verbinden von Tableau oder Power BI mit dem Adobe Experience Platform Query Service, um Visualisierungen und Berichte zu erstellen
 
 ## Voraussetzungen
 
-- Es wird empfohlen, mit SQL vertraut zu sein, dies ist jedoch nicht erforderlich.
+- Eine gewisse Vertrautheit mit SQL wird bevorzugt, ist aber nicht erforderlich
 - Zugriff auf Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Datensätze (im Labor verwendeter Datensatz, für Sie vorab geladen)
+- Datensätze (im Labor verwendeter Datensatz, für Sie vorgeladen)
 - PostgreSQL
 - Tableau oder Microsoft Power BI Desktop
-- **Laden Sie diese Assets herunter**:
+- **Diese Assets herunterladen**:
    - [JSON - Beispieldaten: Website-Interaktionen](./../../../assets/json/ee.json)
-   - [JSON - Beispieldaten: Interaktionen im Callcenter](./../../../assets/json/callcenter.json)
-   - [JSON - Beispieldaten: Treueprogramm](./../../../assets/json/loyalty.json)
+   - [JSON - Beispieldaten: Interaktionen mit Callcentern](./../../../assets/json/callcenter.json)
+   - [JSON - Beispieldaten: Treue](./../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >
->Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie unter [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben.
+>Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie in [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben
 
 ## Übungen
 
 [5.1.1 Voraussetzungen](./ex1.md)
 
-Sie müssen PSQL installieren, um die Abfragen in dieser Aktivierungsübung auszuführen. Je nach Betriebssystem müssen Sie Microsoft Power BI oder Tableau installieren. Windows-Benutzer können zwischen Power BI oder Tableau wählen. Mac-Benutzer sollten Tableau installieren.
+Sie müssen PSQL installieren, um die Abfragen in dieser Aktivierungsübung auszuführen. Abhängig von Ihrem Betriebssystem müssen Sie Microsoft Power BI oder Tableau installieren. Windows-Anwender können zwischen Power BI oder Tableau wählen. Mac-Benutzer sollten Tableau installieren.
 
 [5.1.2 Erste Schritte](./ex2.md)
 
-In dieser Übung werden Sie die Benutzeroberfläche von Adobe Experience Platform Query Service erkunden, sich über Datensätze informieren, Abfragen finden und schließlich eine Verbindung von PSQL einrichten.
+In dieser Übung erfahren Sie mehr über die Benutzeroberfläche des Adobe Experience Platform-Abfrage-Service, lernen Datensätze kennen, finden Ihre Abfragen und richten schließlich eine Verbindung über PSQL ein.
 
-[5.1.3 Query Service verwenden](./ex3.md)
+[5.1.3 Verwenden des Abfrage-Service](./ex3.md)
 
-In dieser Übung erfahren Sie mehr über die grundlegende Query Service-Syntax und Sie können die Attribute des XDM-Schemas in Ihrer Abfrage identifizieren.
+In dieser Übung lernen Sie die grundlegende Syntax des Abfrage-Service kennen und können die Attribute des XDM-Schemas in Ihrer Abfrage identifizieren.
 
-[5.1.4 Abfragen, Abfragen, Abfragen ... und Abwanderungsanalyse](./ex4.md)
+[5.1.4 Abfragen, Abfragen… und Abwanderungsanalyse](./ex4.md)
 
-In dieser Übung werden Sie Abfragen durchführen, während Sie eine Abwanderungsanalyse durchführen, um mehr über die Adobe Defined Functions zu erfahren. Am Ende schreiben Sie eine Abfrage, um einen Datensatz für die Verwendung in Microsoft Power BI vorzubereiten.
+In dieser Übung werden Sie Abfragen durchführen, um mehr über die Adobe-definierten Funktionen zu erfahren, während Sie eine Abwanderungsanalyse durchführen. Am Ende dieses Vorgangs schreiben Sie eine Abfrage, um einen Datensatz für die Verwendung im Microsoft-Power BI vorzubereiten.
 
-[5.1.5 Datensatz aus einer Abfrage generieren](./ex5.md)
+[5.1.5 Generieren eines Datensatzes aus einer Abfrage](./ex5.md)
 
-In dieser Übung generieren Sie einen Datensatz aus einer Abfrage, die in der vorherigen ausgeführt wurde, und verwenden diesen Datensatz in den nächsten Übungen.
+In dieser Übung generieren Sie einen Datensatz aus einer in der vorherigen Übung ausgeführten Abfrage und verwenden diesen Datensatz in den nächsten Übungen.
 
-[5.1.6 Query Service und Power BI](./ex6.md)
+[5.1.6 Abfrage-Service und Power BI](./ex6.md)
 
-In dieser Übung verbinden Sie Power BI mit Adobe Experience Platform und Query Service, um Callcenter-Interaktionsanalysen durchzuführen.
+In dieser Übung verbinden Sie Power BI mit Adobe Experience Platform und Query Service, um eine Callcenter-Interaktionsanalyse durchzuführen.
 
 [5.1.7 Query Service und Tableau](./ex7.md)
 
-In dieser Übung verbinden Sie Tableau mit Adobe Experience Platform und Query Service, um Callcenter-Interaktionsanalysen durchzuführen.
+In dieser Übung verbinden Sie Tableau mit Adobe Experience Platform und Query Service, um eine Callcenter-Interaktionsanalyse durchzuführen.
 
-[5.1.8 Query Service-API](./ex8.md)
+[5.1.8 Abfrage-Service-API](./ex8.md)
 
-In dieser Übung verwenden Sie die Query Service-API zum Verwalten von Abfragevorlagen und Abfrageplänen.
+In dieser Übung verwenden Sie die Abfrage-Service-API, um Abfragevorlagen und Abfragezeitpläne zu verwalten.
 
 [Zusammenfassung und Vorteile](./summary.md)
 
-Zusammenfassung dieses Moduls und Übersicht über die Vorteile.
+Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investieren, um alles über Adobe Experience Platform und seine Anwendungen zu erfahren. Wenn Sie Fragen haben, möchten Sie allgemeine Rückmeldungen von Vorschlägen zu künftigen Inhalten teilen, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com** senden.
+>Vielen Dank, dass Sie sich Zeit genommen haben, um alles über Adobe Experience Platform und seine Programme zu erfahren. Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

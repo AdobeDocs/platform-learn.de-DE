@@ -1,6 +1,6 @@
 ---
-title: Festlegen der Zustimmung mithilfe des IAB TCF 2.0-Standards
-description: Erfahren Sie, wie Sie mit dem Adobe Experience Platform Web SDK Zustimmungswerte gemäß dem IAB TCF 2.0-Standard festlegen.
+title: Festlegen des Einverständnisses mit dem IAB TCF 2.0-Standard
+description: Erfahren Sie, wie Sie mit der Adobe Experience Platform Web SDK Einverständniswerte gemäß IAB TCF 2.0 festlegen können.
 feature: Web SDK, Tags
 level: Intermediate
 jira: KT-7572
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# Festlegen der Zustimmung mithilfe des IAB TCF 2.0-Standards
+# Festlegen des Einverständnisses mit dem IAB TCF 2.0-Standard
 
-Erfahren Sie, wie Sie mit dem Adobe Experience Platform Web SDK Zustimmungswerte gemäß dem IAB TCF 2.0-Standard festlegen. Weitere Informationen finden Sie in der Dokumentation zur Unterstützung von [IAB FCF 2.0 in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) .
+Erfahren Sie, wie Sie mit der Adobe Experience Platform Web SDK Einverständniswerte gemäß IAB TCF 2.0 festlegen können. Weitere Informationen finden Sie in [ Dokumentation zur IAB FCF 2.0](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html)Unterstützung in Platform.
 
 >[!NOTE]
 >

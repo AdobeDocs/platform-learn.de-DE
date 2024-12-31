@@ -16,6 +16,6 @@ ht-degree: 46%
 
 # Daten erkunden
 
-Erfahren Sie, wie Sie erfasste Daten validieren, Daten in der Vorschau anzeigen und mithilfe von SQL-Funktionen statistische und analytische Eigenschaften von Daten untersuchen können. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+Erfahren Sie, wie Sie aufgenommene Daten validieren, Daten in der Vorschau anzeigen und mithilfe von SQL-Funktionen statistische und analytische Eigenschaften von Daten untersuchen können. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on)

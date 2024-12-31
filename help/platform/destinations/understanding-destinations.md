@@ -1,6 +1,6 @@
 ---
-title: Ziele in [!DNL Real-Time Customer Data Platform] und [!DNL Experience Platform] verstehen
-description: Erfahren Sie mehr über die Zieltypen, mit denen Sie Daten aus  [!DNL Real-Time CDP], [!DNL Experience Platform], and [!DNL Tags]  abrufen können, um eine Vielzahl von Anwendungsfällen zu unterstützen.
+title: Grundlegendes zu Zielen in [!DNL Real-Time Customer Data Platform] und [!DNL Experience Platform]
+description: Erfahren Sie mehr über die Zieltypen, aus denen Sie Daten abrufen können [!DNL Real-Time CDP], [!DNL Experience Platform], and [!DNL Tags]  um eine Vielzahl von Anwendungsfällen zu unterstützen.
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # Ziele – Übersicht
 
-Ziele sind vordefinierte Integrationen mit Zielplattformen, die Daten nahtlos aktivieren und an diese Partner exportieren. Erfahren Sie mehr über die Zieltypen, mit denen Sie Daten aus [!DNL Real-Time CDP], [!DNL Experience Platform] und [!DNL Tags] abrufen können, um eine Vielzahl von Anwendungsfällen zu unterstützen. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=de).
+Ziele sind vorgefertigte Integrationen mit Zielplattformen, die Daten nahtlos aktivieren und zu diesen Partnern exportieren. Erfahren Sie mehr über die Zieltypen, die Sie verwenden können, um Daten aus [!DNL Real-Time CDP], [!DNL Experience Platform] und [!DNL Tags] zu erhalten und so eine Vielzahl von Anwendungsfällen zu unterstützen. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29707?learn=on)
 

@@ -1,6 +1,6 @@
 ---
-title: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Einführung in die Adobe Experience Platform-Datenerfassung
-description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Einführung in die Adobe Experience Platform-Datenerfassung
+title: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web-SDK-Erweiterung - Einführung in die Adobe Experience Platform-Datenerfassung
+description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web-SDK-Erweiterung - Einführung in die Adobe Experience Platform-Datenerfassung
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
@@ -11,82 +11,82 @@ ht-degree: 10%
 
 ---
 
-# 1.1.3 Einführung in die Adobe Experience Platform-Datenerfassung
+# 1.1.3 Einführung in die Datenerfassung in Adobe Experience Platform
 
 ## Kontext
 
-Sehen wir uns nun die Bausteine der Adobe Experience Platform-Datenerfassung genauer an, um zu verstehen, was auf Ihrer Demowebsite installiert ist. Sehen Sie sich die Adobe Experience Platform Web SDK-Erweiterung genauer an, konfigurieren Sie ein Datenelement und eine Regel und lernen Sie, wie Sie eine Bibliothek veröffentlichen.
+Sehen wir uns nun die Bausteine der Adobe Experience Platform-Datenerfassung genauer an, um zu verstehen, was auf Ihrer Demo-Website installiert ist. Werfen Sie einen genaueren Blick auf die Adobe Experience Platform Web SDK-Erweiterung, konfigurieren Sie ein Datenelement und eine Regel und erfahren Sie, wie Sie eine Bibliothek veröffentlichen.
 
 ## Adobe Experience Platform Web SDK-Erweiterung
 
-Eine Erweiterung ist ein gepackter Code-Satz, der die Adobe Experience Platform-Datenerfassungsschnittstelle und die Bibliotheksfunktionalität erweitert. Die Adobe Experience Platform-Datenerfassung ist die Plattform. Erweiterungen sind wie Apps, die auf der Plattform ausgeführt werden. Alle im Tutorial verwendeten Erweiterungen werden von Adobe erstellt und verwaltet. Drittanbieter können jedoch eigene Erweiterungen erstellen, um die Anzahl der benutzerdefinierten Codes zu begrenzen, die Adobe Experience Platform Data Collection-Benutzer verwalten müssen.
+Eine Erweiterung ist ein gepackter Code-Satz, der die Datenerfassungsschnittstelle von Adobe Experience Platform und die Bibliotheksfunktion erweitert. Die Adobe Experience Platform-Datenerfassung ist die Plattform, und Erweiterungen sind wie Apps, die auf der Plattform ausgeführt werden. Alle im Tutorial verwendeten Erweiterungen werden von Adobe erstellt und verwaltet. Drittanbieter können jedoch eigene Erweiterungen erstellen, um den Umfang an benutzerdefiniertem Code zu begrenzen, den Benutzerinnen und Benutzer von Adobe Experience Platform-Datenerfassung verwalten müssen.
 
-Wechseln Sie zu [Adobe Experience Platform-Datenerfassung](https://experience.adobe.com/launch/) und wählen Sie **Tags** aus.
+Wechseln Sie zu [Adobe Experience Platform-](https://experience.adobe.com/launch/) und wählen Sie **Tags** aus.
 
-Dies ist die Seite mit den Eigenschaften der Adobe Experience Platform-Datenerfassung , die Sie zuvor gesehen haben.
+Dies ist die Seite mit den Eigenschaften der Adobe Experience Platform-Datenerfassung, die Sie zuvor gesehen haben.
 
-![Eigenschaftsseite](./images/launch1.png)
+![Eigenschaftenseite](./images/launch1.png)
 
-In **Erste Schritte** hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die mobile App. Suchen Sie sie, indem Sie im Feld **[!UICONTROL Suche]** nach `--aepUserLdap--` suchen.
-Klicken Sie auf , um die Eigenschaft **Web** zu öffnen.
+In **Erste Schritte** hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld **[!UICONTROL nach `--aepUserLdap--`]**.
+Klicken Sie, um die Eigenschaft **Web** zu öffnen.
 
 ![Suchfeld](./images/property6.png)
 
 
 
-Daraufhin wird die Seite Eigenschaftsübersicht angezeigt. Klicken Sie in der linken Leiste auf **[!UICONTROL Erweiterungen]**, klicken Sie dann auf **Adobe Experience Platform Web SDK** und dann auf **[!UICONTROL Konfigurieren]**.
+Anschließend sehen Sie die Seite Eigenschaftsübersicht . Klicken Sie in **[!UICONTROL Leiste auf]** Erweiterungen“, dann auf **Adobe Experience Platform Web SDK** und anschließend auf **[!UICONTROL Konfigurieren]**.
 
 ![Eigenschaftenübersichtsseite](./images/property7.png)
 
-Willkommen beim Adobe Experience Platform Web SDK! Hier können Sie die Erweiterung mit dem Datastream konfigurieren, den Sie in [Erste Schritte](./../../../modules/gettingstarted/gettingstarted/ex2.md) erstellt haben, sowie mit einer erweiterten Konfiguration.
+Willkommen bei der Adobe Experience Platform Web SDK! Hier können Sie die Erweiterung mit dem Datenstrom konfigurieren, den Sie in [Erste Schritte](./../../../modules/gettingstarted/gettingstarted/ex2.md) erstellt haben, sowie mit einer erweiterten Konfiguration.
 
-Die standardmäßige Edge-Domäne ist immer **edge.adobedc.net**. Wenn Sie eine CNAME-Konfiguration in Ihrer Adobe Experience Cloud- oder Adobe Experience Platform-Umgebung implementiert haben, müssen Sie die **[!UICONTROL Edge-Domäne]** aktualisieren.
+Die Standard-Edge-Domain lautet immer **edge.adobedc.net**. Wenn Sie eine CNAME-Konfiguration in Ihrer Adobe Experience Cloud- oder Adobe Experience Platform-Umgebung implementiert haben, müssen Sie die **[!UICONTROL Edge-Domain aktualisieren]**.
 
-Wenn sich die Edge-Domäne Ihrer Instanz von der Standarddomäne unterscheidet, aktualisieren Sie hier die Edge-Domäne. Wenn Sie sich nicht sicher sind, verwenden Sie die Standarddomäne. Eine Edge-Domäne ermöglicht die Konfiguration eines Trackingservers eines Erstanbieters, der dann eine CNAME-Konfiguration im Backend verwendet, um sicherzustellen, dass Daten im Adobe erfasst werden.
+Wenn sich die Edge-Domain Ihrer Instanz von der Standard-Domain unterscheidet, aktualisieren Sie die Edge-Domain hier. Wenn Sie sich nicht sicher sind, verwenden Sie die Standard-Domain. Eine Edge-Domain ermöglicht die Konfiguration eines Tracking-Servers eines Erstanbieters, der dann eine CNAME-Konfiguration im Backend verwendet, um sicherzustellen, dass Daten in Adobe erfasst werden.
 
-![Startseite der Erweiterungen](./images/property9edgedomain.png)
+![Erweiterungen - Startseite](./images/property9edgedomain.png)
 
-Unter **[!UICONTROL Datastreams]** haben Sie Ihren Datastream bereits im Abschnitt **Erste Schritte** ausgewählt. Sie haben diesen Datastream ausgewählt: `--aepUserLdap-- - Demo System Datastream` aus der Liste im Feld **[!UICONTROL Datastream]** für jede Umgebung.
+Unter **[!UICONTROL Datenströme]** haben Sie Ihren Datenstrom bereits im Abschnitt **Erste Schritte** ausgewählt. Sie haben diesen Datenstrom ausgewählt: `--aepUserLdap-- - Demo System Datastream` aus der Liste im Feld **[!UICONTROL Datenstrom]** für jede der Umgebungen.
 
-Klicken Sie auf **[!UICONTROL Speichern]** , um zur Ansicht &quot;Erweiterungen&quot;zurückzukehren.
+Klicken Sie **[!UICONTROL Speichern]**, um zur Ansicht Erweiterungen zurückzukehren.
 
-![Startseite der Erweiterungen](./images/property9edge.png)
+![Erweiterungen - Startseite](./images/property9edge.png)
 
 ## Datenelemente
 
 Datenelemente sind Bausteine für Ihr Datenwörterbuch (oder Ihre Datenkarte). Verwenden Sie Datenelemente zum Sammeln, Organisieren und Bereitstellen von Daten in Marketing- und Werbetechnologie.
 
-Ein einzelnes Datenelement ist eine Variable, deren Wert Abfragezeichenfolgen, URLs, Cookie-Werten, JavaScript-Variablen usw. zugeordnet werden kann. Sie können diesen Wert in der gesamten Adobe Experience Platform-Datenerfassung anhand seines Variablennamens referenzieren. Diese Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, mit deren Hilfe Sie eigene Regeln erstellen können (Ereignisse, Bedingungen und Aktionen). Dieses Datenwörterbuch wird für die gesamte Adobe Experience Platform-Datenerfassung verwendet und kann mit beliebigen Erweiterungen verwendet werden, die Sie Ihrer Eigenschaft hinzugefügt haben.
+Ein einzelnes Datenelement ist eine Variable, deren Wert Abfragezeichenfolgen, URLs, Cookie-Werten, JavaScript-Variablen usw. zugeordnet werden kann. Sie können diesen Wert anhand des Variablennamens in der gesamten Datenerfassung von Adobe Experience Platform referenzieren. Diese Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, mit deren Hilfe Sie eigene Regeln erstellen können (Ereignisse, Bedingungen und Aktionen). Dieses Datenwörterbuch ist für die gesamte Adobe Experience Platform-Datenerfassung freigegeben und kann mit allen Erweiterungen verwendet werden, die Sie Ihrer Eigenschaft hinzugefügt haben.
 
-Sie werden jetzt ein bereits vorhandenes Datenelement im Format Web SDK Friendly bearbeiten.
+Sie bearbeiten jetzt ein bereits vorhandenes Datenelement in einem benutzerfreundlichen Web-SDK-Format.
 
-Klicken Sie in der linken Leiste auf Datenelemente , um zur Seite Datenelemente zu gelangen.
+Klicken Sie in der linken Leiste auf Datenelemente , um zur Seite „Datenelemente“ zu gelangen.
 
-![Homepage für Datenelemente](./images/dataelement1.png)
+![Startseite für Datenelemente](./images/dataelement1.png)
 
 >[!NOTE]
 >
->Sie bearbeiten nur ein Datenelement in dieser Übung, aber Sie können die Schaltfläche **[!UICONTROL Datenelement hinzufügen]** auf dieser Seite sehen, mit der dem Datenwörterbuch eine neue Variable hinzugefügt wird. Dies kann dann für die gesamte Adobe Experience Platform-Datenerfassung verwendet werden. Sehen Sie sich auch einige andere bereits vorhandene Datenelemente an, meist unter Verwendung des lokalen Speichers als Datenquelle.
+>In dieser Übung bearbeiten Sie nur ein Datenelement, aber Sie können die Schaltfläche **[!UICONTROL Datenelement hinzufügen]** auf dieser Seite sehen. Mit dieser Schaltfläche wird dem Datenwörterbuch eine neue Variable hinzugefügt. Dies kann dann in der gesamten Adobe Experience Platform-Datenerfassung verwendet werden. Sehen Sie sich einige der anderen bereits vorhandenen Datenelemente an, wobei hauptsächlich der lokale Speicher als Datenquelle verwendet wird.
 
-Geben Sie in die Suchleiste **XDM - Product View** ein und klicken Sie auf das zurückgegebene Datenelement.
+Geben Sie in die Suchleiste **XDM - Produktansicht** ein und klicken Sie auf das zurückgegebene Datenelement.
 
 ![Suche nach ruleArticlePages](./images/dataelement2.png)
 
-Dieser Bildschirm zeigt das XDM-Objekt, das Sie bearbeiten werden. Das Experience-Datenmodell (XDM) ist ein Konzept, das in diesem Tutorial viel weiter untersucht wird. Zunächst reicht es jedoch aus, es als das Format zu verstehen, das das Adobe Experience Platform Web SDK erfordert. Sie werden den Daten, die auf den Artikelseiten der Demo-Website erfasst wurden, ein wenig mehr Informationen hinzufügen.
+Auf diesem Bildschirm wird das XDM-Objekt angezeigt, das Sie bearbeiten werden. Das Experience-Datenmodell (XDM) ist ein Konzept, das in diesem technischen Tutorial viel weiter untersucht wird. Für den Moment reicht es jedoch aus, es als das Format zu verstehen, das Adobe Experience Platform Web SDK erfordert. Sie werden den auf Artikelseiten der Demo-Website erfassten Daten etwas mehr Informationen hinzufügen.
 
-Klicken Sie unten im Baum auf die Plusschaltfläche neben **web**.
+Klicken Sie auf das Pluszeichen neben **Web** am unteren Rand der Baumstruktur.
 
-Klicken Sie auf die Plusschaltfläche neben **webPageDetails**.
+Klicken Sie auf das Pluszeichen neben **webPageDetails**.
 
-Klicken Sie auf **siteSection**. Jetzt sehen Sie, dass **siteSection** noch nicht mit einem Datenelement verknüpft ist. Ändern wir das.
+Klicken Sie auf **siteSection**. Sie sehen nun, **siteSection** noch mit keinem Datenelement verknüpft ist. Ändern wir das.
 
-![Navigieren zum Sitebereich](./images/dataelement3.png)
+![Navigieren Sie zum Site-Abschnitt](./images/dataelement3.png)
 
-Scrollen Sie nach oben und geben Sie den Text `%Product Category%` ein. Klicken Sie auf **[!UICONTROL Speichern]**.
+Scrollen Sie nach oben, und geben Sie den `%Product Category%` Text ein. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 ![Speichern](./images/dataelement4.png)
 
-An dieser Stelle wird die Adobe Experience Platform Web SDK-Erweiterung installiert und Sie haben ein Datenelement aktualisiert, um Daten anhand einer XDM-Struktur zu erfassen. Als Nächstes überprüfen wir die Regeln, die Daten zum richtigen Zeitpunkt senden.
+An dieser Stelle ist die Adobe Experience Platform Web SDK-Erweiterung installiert und Sie haben ein Datenelement aktualisiert, um Daten mit einer XDM-Struktur zu erfassen. Überprüfen wir als Nächstes die Regeln, die Daten zum richtigen Zeitpunkt senden.
 
 ## Regeln
 
@@ -94,65 +94,65 @@ Die Adobe Experience Platform-Datenerfassung ist ein regelbasiertes System. Es w
 
 Erstellen Sie Regeln, um die Daten und Funktionen von Marketing- und Werbetechnologien zu integrieren, die verschiedene Produkte in einer einzigen Lösung zusammenführen.
 
-Unterteilen wir die Regel, die Daten auf Artikelseiten sendet.
+Schlüsseln wir die Regel auf, die Daten auf Artikelseiten sendet.
 
-Klicken Sie in der linken Leiste auf **[!UICONTROL Regeln]** .
+Klicken Sie **[!UICONTROL der linken Leiste]** Regeln“.
 
 **[!UICONTROL Suche]** nach `Product View`.
 
-Klicken Sie auf die zurückgegebene Regel.
+Klicken Sie auf die Regel, die zurückgegeben wird.
 
 ![Medien - Regelsuche für Artikelseiten](./images/rule1.png)
 
-Werfen wir einen Blick auf die einzelnen Elemente, aus denen diese Regel besteht.
+Sehen wir uns die einzelnen Elemente an, aus denen diese Regel besteht.
 
-Für alle Regeln: Wenn ein angegebenes **[!UICONTROL Ereignis]** auftritt, werden die **[!UICONTROL Bedingungen]** ausgewertet, dann finden bei Bedarf die angegebenen **[!UICONTROL Aktionen]** statt.
+Für alle Regeln: Wenn ein angegebenes **[!UICONTROL Ereignis]** auftritt, werden die **[!UICONTROL Bedingungen]** ausgewertet, und dann werden bei ]**die angegebenen**[!UICONTROL  Aktionen“ ausgeführt.
 
 ![Medien - Regel für Artikelseiten](./images/rule2.png)
 
 Klicken Sie auf das Ereignis **Core - Benutzerspezifisches Ereignis**. Dies ist die Ansicht, die geladen wird.
 
-Klicken Sie auf die Dropdown-Liste **Ereignistyp** .
+Klicken Sie auf die **Ereignistyp** Dropdown.
 
-Hier werden einige der Standardinteraktionen aufgelistet, mit denen Sie signalisieren können, dass die Adobe Experience Platform-Datenerfassung die Aktionen ausführt, falls die Bedingungen wahr sind.
+In dieser Liste sind einige Standardinteraktionen aufgeführt, mit denen Sie die Adobe Experience Platform-Datenerfassung zur Ausführung der Aktionen signalisieren können, wenn die Bedingungen erfüllt sind.
 
 ![Ereignisse](./images/rule3.png)
 
-Klicken Sie auf **[!UICONTROL Abbrechen]** , um zur Regel zurückzukehren.
+Klicken Sie **[!UICONTROL Abbrechen]**, um zur Regel zurückzukehren.
 
-Klicken Sie auf die Aktion **Erlebnisereignis &quot;Produktansicht&quot;senden**.
+Klicken Sie auf die Aktion **Erlebnisereignis „Produktansicht senden**.
 
-![Ereignisaktion senden](./images/rule5a.png)
+![Aktion „Ereignis senden“](./images/rule5a.png)
 
-Hier sehen Sie die Daten, die vom Adobe Experience Platform Web SDK an den Edge gesendet werden. Genauer gesagt wird dabei die **Legierung** **[!UICONTROL Instanz]** des Web SDK verwendet. Das Ereignis **[!UICONTROL Typ]** ist auf **Commerce-Produktansichten (Warenkorb)** und die XDM-Daten, die Sie senden, sind das Datenelement **XDM - Produktansicht** , das Sie zuvor geändert haben.
+Hier sehen Sie die Daten, die von Adobe Experience Platform Web SDK an das -Edge-Netzwerk gesendet werden. Genauer gesagt wird hierbei die **Legierung** **[!UICONTROL Instanz]** des Web SDK verwendet. Das Ereignis **[!UICONTROL Typ]** ist auf **Commerce Product (Cart) Views** festgelegt und die XDM-Daten, die Sie senden, sind das Datenelement **XDM - Product View**, das Sie zuvor geändert haben.
 
-![Ereignisaktion senden](./images/rule5.png)
+![Aktion „Ereignis senden“](./images/rule5.png)
 
-Nachdem Sie sich die Regel angesehen haben, können Sie alle Ihre Änderungen in der Adobe Experience Platform-Datenerfassung veröffentlichen.
+Nachdem Sie sich die Regel angesehen haben, können Sie alle Ihre Änderungen in der Datenerfassung von Adobe Experience Platform veröffentlichen.
 
 ## Publish in einer Bibliothek
 
-Um die gerade aktualisierte Regel und das Datenelement zu validieren, müssen Sie schließlich eine Bibliothek veröffentlichen, die die bearbeiteten Elemente in unserer Eigenschaft enthält. Im Abschnitt **[!UICONTROL Veröffentlichen]** der Adobe Experience Platform-Datenerfassung müssen Sie einige schnelle Schritte ausführen.
+Um die soeben aktualisierte Regel und das Datenelement zu validieren, müssen Sie eine Bibliothek veröffentlichen, die die bearbeiteten Elemente in unserer Eigenschaft enthält. Im Abschnitt **[!UICONTROL Veröffentlichen“ der Datenerfassung von Adobe Experience Platform]** Sie einige kurze Schritte ausführen.
 
-Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Veröffentlichungsfluss]** .
+Klicken Sie **[!UICONTROL linken Navigationsbereich auf]** Publishing Flow“
 
 Klicken Sie auf die vorhandene Bibliothek mit dem Namen **Main**.
 
 ![Bibliothekszugriff](./images/publish1.png)
 
-Klicken Sie auf die Schaltfläche **Alle geänderten Ressourcen hinzufügen** . Als Nächstes
-Klicken Sie auf die Schaltfläche **Speichern und für Entwicklung erstellen** .
+Klicken Sie auf **Schaltfläche „Alle geänderten Ressourcen**&quot;. Weiter,
+Klicken Sie auf **Schaltfläche „Für Entwicklung speichern und erstellen**.
 
 ![Bibliothekszugriff](./images/publish1a.png)
 
-Die Erstellung der Bibliothek kann einige Minuten dauern. Wenn sie abgeschlossen ist, wird links neben dem Bibliotheksnamen ein grüner Punkt angezeigt.
+Es kann einige Minuten dauern, bis die Bibliothek erstellt ist. Nach Abschluss wird links neben dem Bibliotheksnamen ein grüner Punkt angezeigt.
 
 ![Inhaltsbibliothek](./images/publish2.png)
 
-Wie Sie auf dem Bildschirm &quot;Veröffentlichungsfluss&quot;sehen können, gibt es viel mehr im Veröffentlichungsprozess in der Adobe Experience Platform-Datenerfassung, was über den Rahmen dieses Tutorials hinausgeht. Wir werden nur eine einzige Bibliothek in unserer Entwicklungsumgebung verwenden.
+Wie Sie auf dem Bildschirm Veröffentlichungsablauf sehen können, gibt es wesentlich mehr beim Veröffentlichungsprozess in der Datenerfassung von Adobe Experience Platform, was den Rahmen dieses Tutorials sprengt. Wir verwenden jetzt nur eine einzige Bibliothek in unserer Entwicklungsumgebung.
 
-Nächster Schritt: [1.1.4 Clientseitige Web-Datenerfassung](./ex4.md)
+Nächster Schritt: [1.1.4 Client-seitige Web-Datenerfassung](./ex4.md)
 
-[Zurück zu Modul 1.1](./data-ingestion-launch-web-sdk.md)
+[Zurück zum Modul 1.1](./data-ingestion-launch-web-sdk.md)
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)

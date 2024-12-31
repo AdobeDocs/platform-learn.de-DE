@@ -1,5 +1,5 @@
 ---
-title: Schnittstellenübersicht
+title: Schnittstellentour
 description: Erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Experience Platform navigieren.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ---
 
-# Benutzeroberfläche von Adobe Experience Platform
+# Schnittstellentour durch Adobe Experience Platform
 
 Erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Experience Platform navigieren.
 

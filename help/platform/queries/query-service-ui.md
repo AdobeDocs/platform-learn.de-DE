@@ -16,6 +16,6 @@ ht-degree: 40%
 
 # Benutzeroberfläche von Query Service
 
-Erfahren Sie, wie Sie Abfragen schreiben und ausführen, zuvor ausgeführte Abfragen anzeigen und auf Abfragen zugreifen können, die von anderen Benutzern in Ihrer IMS-Organisation in Adobe Experience Platform Query Service gespeichert wurden. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+Erfahren Sie, wie Sie Abfragen schreiben und ausführen, zuvor ausgeführte Abfragen anzeigen und auf Abfragen zugreifen können, die von anderen Benutzenden in Ihrer IMS-Organisation im Abfrage-Service von Adobe Experience Platform gespeichert wurden. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333403?learn=on)

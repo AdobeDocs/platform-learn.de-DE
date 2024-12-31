@@ -1,6 +1,6 @@
 ---
-title: Foundation - Einrichten der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - XDM-Schema-Anforderungen in Adobe Experience Platform
-description: Foundation - Einrichten der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - XDM-Schema-Anforderungen in Adobe Experience Platform
+title: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web-SDK-Erweiterung - XDM-Schemaanforderungen in Adobe Experience Platform
+description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web-SDK-Erweiterung - XDM-Schemaanforderungen in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
@@ -11,32 +11,32 @@ ht-degree: 0%
 
 ---
 
-# 1.1.7 XDM-Schema-Anforderungen in Adobe Experience Platform
+# 1.1.7 XDM-Schemaanforderungen in Adobe Experience Platform
 
-Um sicherzustellen, dass Web SDK und legierte.js Daten in Adobe Experience Platform erfassen können, muss ein bestimmtes XDM-Mixin zum XDM-Schema in Adobe Experience Platform gehören.
+Um sicherzustellen, dass Web SDK und alloy.js Daten in Adobe Experience Platform aufnehmen können, muss ein bestimmtes XDM-Mixin Teil des XDM-Schemas in Adobe Experience Platform sein.
 
-Gehen Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform) und melden Sie sich an.
+Wechseln Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform) und melden Sie sich an.
 
 ![AEP-Debugger](./images/exp1.png)
 
-Wählen Sie nach der Anmeldung die entsprechende Sandbox aus, indem Sie in der blauen Zeile oben auf Ihrem Bildschirm auf den Text **Produktions-Prod** klicken. Wählen Sie die Sandbox `--aepSandboxName--` aus.
+Wählen Sie nach der Anmeldung die entsprechende Sandbox aus, indem Sie auf den Text **Produktions-**) in der blauen Zeile oben auf dem Bildschirm klicken. Wählen Sie die Sandbox-`--aepSandboxName--` aus.
 
-Nachdem Sie Ihre Sandbox ausgewählt haben, sehen Sie die Bildschirmänderung und befinden sich jetzt in Ihrer Sandbox.
+Nachdem Sie Ihre Sandbox ausgewählt haben, ändert sich der Bildschirm, und Sie befinden sich nun in Ihrer Sandbox.
 
 ![AEP-Debugger](./images/exp2.png)
 
-Wechseln Sie im linken Menü zu **Schemas** und öffnen Sie das Schema **Demo System - Event Schema for Website (Global v1.1)** .
+Wechseln Sie im linken Menü zu **Schemata** und öffnen Sie das Schema **Demosystem - Ereignisschema für Website (Global v1.1** .
 
 ![AEP-Debugger](./images/exp3.png)
 
-In diesem Schema sehen Sie, dass die Feldergruppe **AEP Web SDK ExperienceEvent** hinzugefügt wurde. Diese Feldergruppe fügt alle minimal erforderlichen Felder zum Schema hinzu. Jedes Erlebnisereignisschema in Adobe Experience Platform, das vom Web SDK verwendet wird, erfordert immer, dass diese Feldergruppe Teil des Schemas ist.
+In diesem Schema sehen Sie, dass die Feldergruppe **AEP Web SDK ExperienceEvent** hinzugefügt wurde. Diese Feldergruppe fügt alle minimal erforderlichen Felder zum Schema hinzu. Für jedes Erlebnisereignisschema in Adobe Experience Platform, das von Web SDK verwendet wird, muss diese Feldergruppe immer Teil des Schemas sein.
 
 ![AEP-Debugger](./images/exp4.png)
 
-In [Modul 1.2](./../module1.2/data-ingestion.md) erfahren Sie, wie Sie Schemas Feldergruppen hinzufügen.
+In [Modul 1](./../module1.2/data-ingestion.md)2 erfahren Sie, wie Sie Feldergruppen zu Schemata hinzufügen.
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 
-[Zurück zu Modul 1.1](./data-ingestion-launch-web-sdk.md)
+[Zurück zum Modul 1.1](./data-ingestion-launch-web-sdk.md)
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)

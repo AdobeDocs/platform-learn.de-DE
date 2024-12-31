@@ -1,6 +1,6 @@
 ---
-title: Daten mit Cloud Storage Source Connectors erfassen
-description: In diesem Video wird gezeigt, wie Sie Daten aus Cloud-Speicher problemlos in das Echtzeit-Kundenprofil und den Daten-Pool von Adobe Experience Platform integrieren können, und zwar nahtlos und skalierbar.
+title: Aufnehmen von Daten mithilfe von Cloud Storage Source Connectors
+description: In diesem Video wird gezeigt, wie Sie ganz einfach nahtlos und skalierbar Batch-Aufnahme-Daten aus Cloud-Speicher-Services in das Echtzeit-Kundenprofil und den Data Lake von Adobe Experience Platform aufnehmen können.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Daten mithilfe der Connectoren der Cloud Storage-Quelle erfassen
+# Aufnehmen von Daten mithilfe von Cloud-Speicher-Quell-Connectoren
 
-In diesem Video wird gezeigt, wie Sie Daten aus Cloud-Speicher problemlos in das Echtzeit-Kundenprofil und den Daten-Pool von Adobe Experience Platform integrieren können, und zwar nahtlos und skalierbar. Weitere Informationen finden Sie in der Produktdokumentation unter [Cloud-Speicher](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#cloud-storage) auf der Übersichtsseite zu Source Connectors oder in der Dokumentation zum Quell-Connector für Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=de).[
+In diesem Video wird gezeigt, wie Sie ganz einfach nahtlos und skalierbar Batch-Aufnahme-Daten aus Cloud-Speicher-Services in das Echtzeit-Kundenprofil und den Data Lake von Adobe Experience Platform aufnehmen können. Eine detailliertere Produktdokumentation finden Sie unter [Cloud-Speicher](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#cloud-storage) auf der Übersichtsseite zu Source Connectors oder in der [Amazon S3-Quell-Connector-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29695?learn=on)

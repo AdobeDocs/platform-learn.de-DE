@@ -1,6 +1,6 @@
 ---
 title: Wie verwende ich Real-Time CDP-Profilattribute in Adobe Target?
-description: Erfahren Sie, wie Sie mit Real-time Customer Data Platform-Profilattributen in Adobe Target personalisierte Erlebnisse auf Ihrer Website und in Apps bereitstellen können.
+description: Erfahren Sie, wie Sie Real-time Customer Data Platform-Profilattribute in Adobe Target verwenden, um personalisierte Erlebnisse auf Ihrer Website und in Mobile Apps bereitzustellen.
 solution: Experience Platform, Target
 feature-set: Experience Platform, Target
 feature: Destinations, Profiles, Integrations
@@ -19,12 +19,12 @@ ht-degree: 1%
 
 ---
 
-# Real-Time CDP-Profilattribute in Adobe Target verwenden
+# Verwenden von Real-Time CDP-Profilattributen in Adobe Target
 
-Erfahren Sie, wie Sie mit Adobe Real-time Customer Data Platform-Profilattributen in Adobe Target personalisierte Erlebnisse auf Ihrer Website und in Apps bereitstellen können. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/integrating-with-rtcdp.html).
+Erfahren Sie, wie Sie Adobe Real-time Customer Data Platform-Profilattribute in Adobe Target verwenden, um personalisierte Erlebnisse auf Ihrer Website und in Mobile Apps bereitzustellen. Weitere Informationen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/integrating-with-rtcdp.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419318/?learn=on)
 
 >[!CAUTION]
 >
->Platform-Profilattribute können in Recommendations-Entwürfen verwendet werden, um Attributwerte auszugeben, können aber nicht in Velocity-Logik oder -Vorgängen verwendet werden.
+>Plattformprofilattribute können in Recommendations-Designs zur Ausgabe von Attributwerten verwendet werden, jedoch nicht in Velocity-Logik oder -Vorgängen.

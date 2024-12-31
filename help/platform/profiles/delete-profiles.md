@@ -1,6 +1,6 @@
 ---
 title: Profile löschen
-description: Erfahren Sie, wie Sie Daten mithilfe der Echtzeit-Kundenprofil-API aus dem Profilspeicher löschen. Mithilfe der Profil-API können Sie Daten aus dem Profilspeicher entfernen, ohne den Daten-Pool oder das Identitätsdiagramm zu beeinträchtigen. Dies kann bei der Fehlerbehebung von Problemen mit Identitätsdiagrammen und der Korrektur gelegentlicher Fehler bei der Datenerfassung hilfreich sein, die nur einige wenige Profile betreffen.
+description: Erfahren Sie, wie Sie mit der Echtzeit-Kundenprofil-API Daten aus dem Profilspeicher löschen können. Mithilfe der Profil-API können Sie Daten aus dem Profilspeicher entfernen, ohne den Data Lake oder das Identitätsdiagramm zu beeinflussen. Dies kann bei der Fehlerbehebung bei Problemen mit Identitätsdiagrammen und bei der Korrektur gelegentlicher Fehler bei der Datenaufnahme hilfreich sein, die nur einige wenige Profile betreffen.
 feature: Profiles, Data Hygiene
 role: Data Engineer, Developer
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Profile löschen
 
-Erfahren Sie, wie Sie Daten mithilfe der Echtzeit-Kundenprofil-API aus dem Profilspeicher löschen. Mithilfe der Profil-API können Sie Daten aus dem Profilspeicher entfernen, ohne den Daten-Pool oder das Identitätsdiagramm zu beeinträchtigen. Dies kann bei der Fehlerbehebung von Problemen mit Identitätsdiagrammen und der Korrektur gelegentlicher Fehler bei der Datenerfassung hilfreich sein, die nur einige wenige Profile betreffen.
+Erfahren Sie, wie Sie mit der Echtzeit-Kundenprofil-API Daten aus dem Profilspeicher löschen können. Mithilfe der Profil-API können Sie Daten aus dem Profilspeicher entfernen, ohne den Data Lake oder das Identitätsdiagramm zu beeinflussen. Dies kann bei der Fehlerbehebung bei Problemen mit Identitätsdiagrammen und bei der Korrektur gelegentlicher Fehler bei der Datenaufnahme hilfreich sein, die nur einige wenige Profile betreffen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429807/?learn=on)

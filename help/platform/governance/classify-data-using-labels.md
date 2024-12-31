@@ -1,6 +1,6 @@
 ---
-title: Daten mithilfe von Bezeichnungen klassifizieren
-description: Erfahren Sie, wie Sie Ihre Schemas und Datensätze mit Bezeichnungen versehen.
+title: Klassifizieren von Daten mithilfe von Labels
+description: Informationen darüber, wie Schemata und Datensätze mit Labels versehen können.
 feature: Data Governance, Consent, Access Control
 role: Data Architect, Admin
 level: Beginner
@@ -11,12 +11,12 @@ exl-id: 96ef86eb-458a-4fc3-a62a-b3d5202942c8
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
-# Daten mithilfe von Bezeichnungen klassifizieren
+# Klassifizieren von Daten mithilfe von Labels
 
-Erfahren Sie, wie Sie Ihre Schemata und Datensätze mit Kennzeichnungen versehen. Mit Datennutzungsbezeichnungen können Sie Daten mit Tags versehen und klassifizieren, um Unternehmensrichtlinien, vertragliche Verpflichtungen, Compliance-Anforderungen und regionale Vorschriften in Adobe Experience Platform widerzuspiegeln. Diese Fähigkeit ist von entscheidender Bedeutung, um bekannte und unbekannte Daten zu Ihren Kunden zu unterscheiden und die Datennutzung entsprechend der Art der Daten angemessen zu steuern. Eine ausführliche Produktdokumentation finden Sie unter [Verwalten von Datennutzungsbezeichnungen in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html?lang=de) und [Verwalten von Datennutzungsbezeichnungen mit API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/dataset-api.html) .
+Informationen darüber, wie Schemata und Datensätze mit Labels versehen können. Daten können mit Datennutzungs-Labels getaggt und klassifiziert werden, um Unternehmensrichtlinien, vertragliche Verpflichtungen, Compliance-Anforderungen und regionale Vorschriften in Adobe Experience Platform widerzuspiegeln. Diese Fähigkeit ist von ausschlaggebender Bedeutung, um bekannte und unbekannte Daten zu den eigenen Kundinnen und Kunden zu unterscheiden und die Datennutzung entsprechend der Art der Daten angemessen zu steuern. Eine ausführliche Produktdokumentation ist in [Verwalten von Datennutzungs-Labels in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html?lang=de) und [Verwalten von Datennutzungs-Labels mit APIs](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/dataset-api.html?lang=de) enthalten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29709?learn=on)

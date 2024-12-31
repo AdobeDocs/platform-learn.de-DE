@@ -1,6 +1,6 @@
 ---
-title: Daten mithilfe des Adobe Analytics-Quell-Connectors erfassen
-description: Mit dem Adobe Analytics Source-Connector können Sie Daten aus Adobe Analytics einfach per Streaming, Zuordnung und Filterung an das Echtzeit-Kundenprofil und den Experience Data Lake von Adobe Experience Platform übertragen.
+title: Aufnehmen von Daten mithilfe des Adobe Analytics-Quell-Connectors
+description: Mit dem Adobe Analytics Source-Connector können Sie Daten aus Adobe Analytics einfach in das Echtzeit-Kundenprofil und den Experience Data Lake von Adobe Experience Platform streamen, zuordnen und filtern.
 feature: Sources
 topic: Integrations
 badgeIntegration: label="Integration" type="positive"
@@ -17,8 +17,8 @@ ht-degree: 1%
 
 ---
 
-# Daten mithilfe des Adobe Analytics-Quell-Connectors erfassen
+# Aufnehmen von Daten mithilfe des Adobe Analytics-Quell-Connectors
 
-Mit dem Adobe Analytics Source-Connector können Sie Daten aus Adobe Analytics einfach per Streaming, Zuordnung und Filterung an das Echtzeit-Kundenprofil und den Experience Data Lake von Adobe Experience Platform übertragen. Erfahren Sie, wie Sie mit Datenvorbereitung-Funktionen semantische und berechnete Felder erstellen können, um das Benutzererlebnis in Segment Builder- und Platform-Anwendungen zu verbessern. Regionale Report Suites werden für diesen Connector unterstützt. Weitere Informationen finden Sie in der Produktdokumentation unter [Erstellen eines Adobe Analytics-Quell-Connectors in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).
+Mit dem Adobe Analytics Source-Connector können Sie Daten aus Adobe Analytics einfach in das Echtzeit-Kundenprofil und den Experience Data Lake von Adobe Experience Platform streamen, zuordnen und filtern. Erfahren Sie, wie Sie mit Datenvorbereitungsfunktionen semantische und berechnete Felder erstellen können, um das Benutzererlebnis in Segment Builder- und Platform-Anwendungen zu verbessern. Für diesen Connector werden regionenübergreifende Report Suites unterstützt. Eine detailliertere Produktdokumentation finden Sie unter [Erstellen eines Adobe Analytics-Quell-Connectors für in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29687?learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Überwachen von Datenflüssen in Adobe Experience Platform
-description: Erfahren Sie, wie Sie mithilfe der Benutzeroberfläche und APIs Batch- und Streaming-Daten, die in Adobe Experience Platform erfasst werden, überwachen und verfolgen können.
+description: Erfahren Sie, wie Sie die in Adobe Experience Platform aufgenommenen Batch- und Streaming-Daten mithilfe der Benutzeroberfläche und APIs überwachen und verfolgen.
 feature: Data Ingestion
 role: Data Engineer, Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Überwachen von Datenflüssen in Adobe Experience Platform
 
-Erfahren Sie, wie Sie mithilfe der Benutzeroberfläche und APIs Batch- und Streaming-Daten, die in Adobe Experience Platform erfasst werden, überwachen und verfolgen können.
+Erfahren Sie, wie Sie die in Adobe Experience Platform aufgenommenen Batch- und Streaming-Daten mithilfe der Benutzeroberfläche und APIs überwachen und verfolgen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409475?learn=on)

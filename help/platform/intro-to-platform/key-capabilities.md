@@ -1,5 +1,5 @@
 ---
-title: Schlüsselfunktionen
+title: Wichtigste Funktionen
 description: Erfahren Sie mehr über die wichtigsten Funktionen von Experience Platform und wie sie Ihrem Unternehmen einen Mehrwert ermöglichen.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
@@ -14,7 +14,7 @@ ht-degree: 80%
 
 ---
 
-# Wichtige Funktionen von Adobe Experience Platform
+# Wichtigste Funktionen von Adobe Experience Platform
 
 Erfahren Sie mehr über die wichtigsten Funktionen von Experience Platform und wie sie Ihrem Unternehmen einen Mehrwert ermöglichen.
 

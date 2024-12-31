@@ -1,6 +1,6 @@
 ---
-title: Grundlegendes zum Wert der mit Query Service erstellten Dashboards
-description: Mit Adobe Experience Platform können Marken alle gespeicherten Datensätze&mdash;erfassen, speichern, strukturieren und abrufen, einschließlich Verhaltens-, CRM-, Point-of-Sale-Daten und mehr. Mithilfe von Experience Platform Query Service können Marken diese Datensätze abfragen, bestimmte Fragen zum Unternehmen beantworten und dann mit der Generierung wirkungsvoller Einblicke beginnen. In diesem Video wird der Wert des Baus von Dashboards in Business Intelligence-Tools (BI) mithilfe von Query Service veranschaulicht.
+title: Grundlegendes zum Wert von Dashboards, die mit dem Abfrage-Service erstellt wurden
+description: Mit Adobe Experience Platform können Marken alle gespeicherten Datensätze aufnehmen, speichern, strukturieren und abrufen, einschließlich Verhaltens-, CRM- und Verkaufsdaten. Mit dem Abfrage-Service von Experience Platform können Marken Abfragen zu diesen Datensätzen durchführen, spezifische Fragen zur Geschäftstätigkeit beantworten und dann nützliche Einblicke gewinnen. In diesem Video wird gezeigt, wie nützlich das Erstellen von Dashboards in Business Intelligence-Tools (BI) mithilfe von Query Service ist.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Grundlegendes zum Wert der mit Query Service erstellten Dashboards
+# Grundlegendes zum Wert von Dashboards, die mit dem Abfrage-Service erstellt wurden
 
-Mit Adobe Experience Platform können Marken alle gespeicherten Datensätze erfassen, speichern, strukturieren und abrufen - einschließlich Verhaltens-, CRM-, Point-of-Sale-Daten und mehr. Mithilfe von Experience Platform Query Service können Marken diese Datensätze abfragen, bestimmte Fragen zum Unternehmen beantworten und dann mit der Generierung wirkungsvoller Einblicke beginnen. In diesem Video wird der Wert des Baus von Dashboards in Business Intelligence-Tools (BI) mithilfe von Query Service veranschaulicht. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+Mit Adobe Experience Platform können Marken alle gespeicherten Datensätze aufnehmen, speichern, strukturieren und abrufen, einschließlich Verhaltensdaten, CRM-Daten, Verkaufsdaten und mehr. Mit dem Abfrage-Service von Experience Platform können Marken Abfragen zu diesen Datensätzen durchführen, spezifische Fragen zur Geschäftstätigkeit beantworten und dann nützliche Einblicke gewinnen. In diesem Video wird gezeigt, wie nützlich das Erstellen von Dashboards in Business Intelligence-Tools (BI) mithilfe von Query Service ist. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28981?learn=on)

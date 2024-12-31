@@ -1,6 +1,6 @@
 ---
-title: Geschäftlicher Nutzen von Platform und Commerce
-description: In diesem Video wird gezeigt, wie Adobe Experience Platform mit Magento Commerce eine zentrale Kundenansicht erstellen und Erlebnisse in einem digitalen Storefront und kanalübergreifend intelligent personalisieren kann.
+title: Geschäftswert von Platform und Commerce
+description: In diesem Video wird gezeigt, wie Adobe Experience Platform mit Magento Commerce verwendet werden kann, um eine einheitliche Sicht auf Kunden zu schaffen und Erlebnisse in einer digitalen Storefront und kanalübergreifend intelligent zu personalisieren.
 solution: Experience Platform, Commerce
 feature: Integrations
 topic: Integrations
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 ---
 
-# Geschäftlicher Nutzen von Platform und Commerce
+# Geschäftswert von Platform und Commerce
 
-In diesem Video wird gezeigt, wie Adobe Experience Platform mit Adobe Commerce eine zentrale Ansicht von Kunden erstellen und Erlebnisse in einem digitalen Storefront und kanalübergreifend intelligent personalisieren kann.
+In diesem Video wird gezeigt, wie Adobe Experience Platform mit Adobe Commerce verwendet werden kann, um eine einheitliche Sicht auf Kunden zu schaffen und Erlebnisse in einer digitalen Storefront und kanalübergreifend intelligent zu personalisieren.
 
 >[!NOTE]
 >
-> Magento wird jetzt als Adobe Commerce bezeichnet
+> Magento heißt jetzt Adobe Commerce
 
 >[!VIDEO](https://video.tv.adobe.com/v/40376?learn=on)
 

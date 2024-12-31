@@ -1,6 +1,6 @@
 ---
-title: Daten mithilfe eines Quell-Connectors erfassen
-description: In diesem Video wird erläutert, wie Sie nahtlos und skalierbar einen Batch-Datensatz aus einer Datenbankquelle in das Echtzeit-Kundenprofil von Adobe Experience Platform und den Experience Data Lake integrieren können.
+title: Aufnehmen von Daten über einen Datenbank-Quell-Connector
+description: In diesem Video wird erläutert, wie Sie nahtlos und skalierbar einen Batch-Vorgang zur Aufnahme von Daten aus einer Datenbankquelle in das Echtzeit-Kundenprofil und in Experience Data Lake von Adobe Experience Platform durchführen.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Daten mithilfe des Datenbank-Quell-Connectors erfassen
+# Aufnehmen von Daten mithilfe des Datenbank-Quell-Connectors
 
-In diesem Video wird erläutert, wie Sie nahtlos und skalierbar einen Batch-Datensatz aus einer Datenbankquelle in das Echtzeit-Kundenprofil von Adobe Experience Platform und den Experience Data Lake integrieren können. Weitere Informationen finden Sie in der Produktdokumentation unter [Datenbank](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) auf der Übersichtsseite zu Source Connectors oder in der Dokumentation zum Connector für Google Big Query ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html).[
+In diesem Video wird erläutert, wie Sie nahtlos und skalierbar einen Batch-Vorgang zur Aufnahme von Daten aus einer Datenbankquelle in das Echtzeit-Kundenprofil und in Experience Data Lake von Adobe Experience Platform durchführen. Eine ausführlichere Produktdokumentation finden Sie unter [Datenbank](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) auf der Übersichtsseite zu Source Connectors oder in der [Dokumentation zu Google Big Query Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on)

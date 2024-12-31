@@ -1,5 +1,5 @@
 ---
-title: Übersicht über das Adobe Experience Platform Web SDK und Edge Network
+title: Übersicht über Adobe Experience Platform Web SDK und Edge Network
 description: Erfahren Sie, wie Kunden mit dem Adobe Experience Platform Web SDK und Edge Network unter Verwendung einer einzigen JavaScript-Bibliothek und eines einzigen Beacon Daten an Adobe-Anwendungen und Drittanbieter-Ziele senden.
 landing-page-description: Verschaffen Sie sich einen Überblick über das Web SDK und Edge Network.
 short-description: Verschaffen Sie sich einen Überblick über das Web SDK und Edge Network.
@@ -16,7 +16,7 @@ ht-degree: 42%
 
 ---
 
-# Übersicht über das Adobe Experience Platform Web SDK und Edge Network
+# Übersicht über Adobe Experience Platform Web SDK und Edge Network
 
 Erfahren Sie, wie Kunden mit dem Adobe Experience Platform Web SDK und Edge Network unter Verwendung einer einzigen JavaScript-Bibliothek und eines einzigen Beacon Daten an Adobe-Anwendungen und Drittanbieter-Ziele senden.
 
@@ -24,13 +24,13 @@ Erfahren Sie, wie Kunden mit dem Adobe Experience Platform Web SDK und Edge Netw
 
 >[!NOTE]
 >
->Dieses Video ist ein Auszug aus der Adobe Summit 2020-Sitzung *[Erfüllen Sie Alloy.js und taggen Sie nie wieder für eine eVar oder Mbox](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Dieses Video ist ein Auszug aus der Adobe Summit 2020-Session *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
 >
->Die in diesem Video beschriebene serverseitige Weiterleitungsfunktion ist jetzt für alle lizenzierten Kunden allgemein verfügbar. Weitere Informationen finden Sie in der Dokumentation zur [Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+>Die in diesem Video besprochene Funktion zur Server-seitigen Weiterleitung ist jetzt allgemein für alle lizenzierten Kundinnen und Kunden verfügbar. Siehe die [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
 
 ## Weitere Ressourcen
 
-* [Dokumentation zum Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de)
-* [Vereinfachen von Customer Workflows mit dem Adobe Experience Platform Web SDK-Blogpost](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
-* [Optimieren von Client-Server-Integrationen mit Adobe Experience Platform Experience Edge-Blogpost](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
-* [Vereinheitlichen Ihrer Adobe Experience Platform-Dienste mit dem Adobe Experience Platform Web SDK-Blogpost](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
+* [Dokumentation zu Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de)
+* [Vereinfachen von Kunden-Workflows mit dem Adobe Experience Platform Web SDK-Blogpost](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
+* [Optimierung von Client-Server-Integrationen mit dem Adobe Experience Platform Experience Edge-Blogpost](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+* [Vereinheitlichen Sie Ihre Adobe Experience Platform-Services mit dem Adobe Experience Platform Web SDK-Blogpost](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)

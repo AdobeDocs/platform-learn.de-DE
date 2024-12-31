@@ -1,6 +1,6 @@
 ---
-title: Kursschema und -datensatz erstellen
-description: Erfahren Sie, wie Sie den Datensatz und das Schema des Data Science Workspace-Kurses erstellen, die im Rest des Kurses verwendet werden.
+title: Kursschema und Datensatz erstellen
+description: Erfahren Sie, wie Sie den Datensatz und das Schema des Data Science Workspace-Kurses erstellen, die im weiteren Verlauf des Kurses verwendet werden.
 feature: Data Science Workspace
 role: User
 level: Beginner
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ---
 
-# Kursschema und -datensatz erstellen
+# Kursschema und Datensatz erstellen
 
-Erfahren Sie, wie Sie den Datensatz und das Schema des Data Science Workspace-Kurses erstellen, die im Rest des Kurses verwendet werden. Weitere Informationen finden Sie in der Dokumentation zu [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
+Erfahren Sie, wie Sie den Datensatz und das Schema des Data Science Workspace-Kurses erstellen, die im weiteren Verlauf des Kurses verwendet werden. Weitere Informationen finden Sie in der [Dokumentation zu Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
 
-* [Beispieldaten herunterladen (ZIP-Datei mit 25 MB)](../assets/DSW-course-sample-assets.zip)
+* [Beispieldaten herunterladen (ZIP, 25 MB)](../assets/DSW-course-sample-assets.zip)
 
 >[!VIDEO](https://video.tv.adobe.com/v/333312?learn=on)

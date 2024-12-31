@@ -1,5 +1,5 @@
 ---
-title: Grundlagen zu Adobe Real-time Customer Data Platform
+title: Grundlegendes zu Adobe Real-time Customer Data Platform
 description: Erfahren Sie, wie Adobe Real-Time Customer Data Platform (CDP) bekannte und unbekannte Kundendaten zusammenführt, um zuverlässige Kundenprofile zu erstellen und zu aktivieren.
 solution: Real-Time Customer Data Platform
 feature: Destinations
@@ -15,8 +15,8 @@ ht-degree: 33%
 
 ---
 
-# Grundlagen zu Adobe Real-time Customer Data Platform
+# Grundlegendes zu Adobe Real-time Customer Data Platform
 
-Erfahren Sie, wie Adobe Real-time Customer Data Platform (CDP) bekannte und unbekannte Kundendaten zusammenführt, um vertrauenswürdige Kundenprofile zu erstellen und zu aktivieren. Weitere Informationen finden Sie in der [Real-time Customer Data Platform-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=de).
+Erfahren Sie, wie Adobe Real-time Customer Data Platform (CDP) bekannte und unbekannte Kundendaten zusammenführt, um vertrauenswürdige Kundenprofile zu erstellen und zu aktivieren. Weitere Informationen finden Sie in der Dokumentation zu [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29705?learn=on)

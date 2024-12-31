@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Audiences mit mehreren Entitäten
-description: In diesem Video erfahren Sie, wie Sie im Adobe Experience Platform-Builder für Zielgruppenregeln Zielgruppen mit mehreren Entitäten erstellen.  Die Segmentierung mit mehreren Entitäten oder die Segmentierung über Klassen hinweg ermöglichen Ihnen das Erstellen von Zielgruppen, die Daten auf der Grundlage mehrerer XDM-Klassen kombinieren.
+description: In diesem Video erfahren Sie, wie Sie im Zielgruppenregel-Builder von Adobe Experience Platform Zielgruppen mit mehreren Entitäten erstellen.  Mit der Segmentierung mehrerer Entitäten oder der Segmentierung über Klassen hinweg können Sie Zielgruppen erstellen, die Daten basierend auf mehreren XDM-Klassen kombinieren.
 feature: Segments
 role: User
 level: Intermediate
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 # Erstellen von Audiences mit mehreren Entitäten
 
-In diesem Video erfahren Sie, wie Sie im Adobe Experience Platform-Builder für Zielgruppenregeln Zielgruppen mit mehreren Entitäten erstellen.  Die Segmentierung mit mehreren Entitäten oder die Segmentierung über Klassen hinweg ermöglichen Ihnen das Erstellen von Zielgruppen, die Daten auf der Grundlage mehrerer XDM-Klassen kombinieren. Sie könnten beispielsweise einen Datensatz haben, der auf der XDM ExperienceEvent-Klasse basiert und Produkt-IDs erfasst, wenn Kunden einen Kauf tätigen, und einen anderen Datensatz, der auf einer benutzerdefinierten Produktklasse basiert und die Katalogdetails jeder Produkt-ID enthält (z. B. Farbe, Größe, Kategorie usw.). Wenn Sie eine Beziehung zwischen den Schemas herstellen, können Sie Zielgruppen basierend auf Feldern erstellen, die in beiden Schemas vorhanden sind (z. B. Personen, die Jackets gekauft haben). Weitere Informationen finden Sie in der [Dokumentation zum Segmentaufbau](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
+In diesem Video erfahren Sie, wie Sie im Zielgruppenregel-Builder von Adobe Experience Platform Zielgruppen mit mehreren Entitäten erstellen.  Mit der Segmentierung mehrerer Entitäten oder der Segmentierung über Klassen hinweg können Sie Zielgruppen erstellen, die Daten basierend auf mehreren XDM-Klassen kombinieren. Beispielsweise könnten Sie einen Datensatz basierend auf der XDM ExperienceEvent-Klasse verwenden, der Produkt-IDs erfasst, wenn Kunden einen Kauf tätigen, und einen anderen Datensatz basierend auf einer benutzerdefinierten Produktklasse, der die Katalogdetails jeder Produkt-ID enthält (z. B. Farbe, Größe, Kategorie usw.). Wenn Sie eine Beziehung zwischen den Schemata herstellen, können Sie Zielgruppen basierend auf Feldern in beiden Schemata erstellen (z. B. Personen, die Jacken gekauft haben). Weitere Informationen finden Sie in der [Segment Builder-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
 
 <!--Segment context (segment payload) allows you to provide key contextual details, such as a visitor's abandoned cart contents, in your segment definition so you can send personalized messages.-->
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmente]&quot;wurden in der Platform-Oberfläche in &quot;[!UICONTROL Zielgruppen]&quot;umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]** aus, um den Regel-Builder für dieses Video einzugeben.
+> &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32179?learn=on)

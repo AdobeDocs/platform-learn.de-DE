@@ -1,6 +1,6 @@
 ---
-title: Aktualisieren bestimmter Profilattribute mithilfe von "upsert"
-description: Erfahren Sie, wie Sie ein bestimmtes Profilattribut mit der Funktion "Hochladen"von Adobe Experience Platform aktualisieren.
+title: Aktualisieren spezifischer Profilattribute mit „upsert“
+description: Erfahren Sie, wie Sie ein bestimmtes Profilattribut mit der Funktion „upsert“ von Adobe Experience Platform aktualisieren können.
 feature: Profiles, Data Ingestion
 role: Architect, Data Architect, Data Engineer, Developer
 level: Experienced
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Aktualisieren bestimmter Profilattribute mit `upsert`
+# Aktualisieren bestimmter Profilattribute mithilfe von `upsert`
 
-Erfahren Sie, wie Sie ein bestimmtes Profilattribut mit der Funktion `upsert` von Adobe Experience Platform aktualisieren. Wenn Sie einen Datensatz nur mit dem spezifischen Attribut in Platform erfassen, aktualisiert er normalerweise den Wert, aktualisiert aber auch die anderen Attribute mit den Werten `null` . Mit `Upsert` können Sie nur das gewünschte Attribut aktualisieren, während die übrigen Felder ihre aktuellen Werte beibehalten können.
+Erfahren Sie, wie Sie ein bestimmtes Profilattribut mithilfe der `upsert` von Adobe Experience Platform aktualisieren können. In den meisten Fällen wird bei der Aufnahme eines Datensatzes in Platform nur mit dem spezifischen Attribut der Wert, aber auch die anderen Attribute mit `null` Werten aktualisiert. `Upsert` können Sie nur das gewünschte Attribut aktualisieren, während Sie den übrigen Feldern erlauben, ihre aktuellen Werte beizubehalten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416133/?learn=on)

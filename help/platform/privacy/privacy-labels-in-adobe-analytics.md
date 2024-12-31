@@ -1,6 +1,6 @@
 ---
-title: Beschriftung von Analytics-Daten für Datenschutzanfragen
-description: Erfahren Sie, wie Sie Analytics-Variablen Datenschutzbeschriftungen hinzufügen, einschließlich einer Aufschlüsselung der Bedeutung und des Verwendungszwecks der einzelnen Beschriftungstypen.
+title: Kennzeichnen von Analytics-Daten für Datenschutzanfragen
+description: Erfahren Sie, wie Sie Analytics-Variablen Datenschutzkennzeichnungen hinzufügen, einschließlich einer Aufschlüsselung der Bedeutung der einzelnen Kennzeichnungstypen und deren Verwendung.
 feature: Privacy
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Beschriftung von Analytics-Daten für Datenschutzanfragen
+# Kennzeichnen von Analytics-Daten für Datenschutzanfragen
 
-Erfahren Sie, wie Sie Analytics-Variablen Datenschutzbeschriftungen hinzufügen, einschließlich einer Aufschlüsselung der Bedeutung und des Verwendungszwecks der einzelnen Beschriftungstypen. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) .
+Erfahren Sie, wie Sie Analytics-Variablen Datenschutzkennzeichnungen hinzufügen, einschließlich einer Aufschlüsselung der Bedeutung der einzelnen Kennzeichnungstypen und deren Verwendung. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on)

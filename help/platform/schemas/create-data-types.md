@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Datentypen
-description: In diesem Video wird gezeigt, wie Sie Ihre eigenen Datentypen in Adobe Experience Platform erstellen, um sie in Experience-Datenmodell (XDM)-Schemas zu verwenden.
+description: In diesem Video erfahren Sie, wie Sie Ihre eigenen Datentypen in Adobe Experience Platform erstellen, um sie in Experience-Datenmodell-Schemata (XDM) zu verwenden.
 feature: Schemas
 role: Data Architect, Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Erstellen von Datentypen
 
-In diesem Video wird gezeigt, wie Sie Ihre eigenen Datentypen in Adobe Experience Platform erstellen, um sie in Experience-Datenmodell (XDM)-Schemas zu verwenden. Weitere Informationen finden Sie in der Dokumentation zu [Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) .
+In diesem Video erfahren Sie, wie Sie Ihre eigenen Datentypen in Adobe Experience Platform erstellen, um sie in Experience-Datenmodell-Schemata (XDM) zu verwenden. Weitere Informationen finden Sie in der [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333537?learn=on)

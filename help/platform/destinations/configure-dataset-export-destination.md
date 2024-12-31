@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren eines Datensatzexport-Ziels in  [!DNL Experience Platform]
+title: Konfigurieren eines Datensatzexport-Ziels in [!DNL Experience Platform]
 description: Erfahren Sie mehr über die Konfiguration, den Workflow und Anwendungsfälle für den Export von Datensätzen aus  [!DNL Adobe Experience Platform]  zu einem Cloud-Speicherort mithilfe einer Zielverbindung.
 solution: Real-Time Customer Data Platform, Experience Platform
 feature: Destinations
@@ -18,6 +18,6 @@ ht-degree: 35%
 
 # Konfigurieren eines Datensatzexport-Ziels in [!DNL Experience Platform]
 
-Erfahren Sie mehr über die Konfiguration, den Workflow und die Anwendungsfälle für den Export von Datensätzen aus [!DNL Adobe Experience Platform] an einen Cloud-Speicher-Speicherort mit einer Zielverbindung. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de).
+Erfahren Sie mehr über die Konfiguration, den Workflow und die Anwendungsfälle für den Export von Datensätzen von [!DNL Adobe Experience Platform] zu einem Cloud-Speicherort über eine Zielverbindung. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on)

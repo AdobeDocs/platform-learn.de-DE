@@ -3,7 +3,8 @@ title: Foundation - FAC - Zusammenfassung
 description: Foundation - FAC - Zusammenfassung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 37014ca3-8659-486a-b408-87f3f3acd3c1
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 1%
@@ -12,17 +13,17 @@ ht-degree: 1%
 
 # Zusammenfassung und Vorteile
 
-Herzlichen Glückwunsch und vielen Dank, dass Sie Ihre Zeit in das Lernen über Adobe Experience Platform investiert haben!
+Herzlichen Glückwunsch und vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform zu erfahren!
 
 ## Vorteile
 
-Lassen Sie uns die Vorteile der Datenerfassungsfunktionen der Federated Audience Komposition in Adobe Experience Platform hervorheben:
+Im Folgenden werden die Vorteile der Datenaufnahmefunktionen der Federated Audience Composition in Adobe Experience Platform hervorgehoben:
 
 
 
-## Sehen Sie sich das an
+## Hier ist alles
 
 
-[Zurück zu Modul 1.3](./fac.md)
+[Zurück zum Modul 1.3](./fac.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

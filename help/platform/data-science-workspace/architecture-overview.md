@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Architektur von Data Science Workspace
-description: In diesem Video werden die übergreifende Architektur und die Hauptkomponenten von Data Science Workspace in Adobe Experience Platform beschrieben.
+description: In diesem Video wird die übergeordnete Architektur beschrieben und die Hauptkomponenten von Data Science Workspace in Adobe Experience Platform veranschaulicht.
 feature: Data Science Workspace
 role: User
 level: Beginner
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Übersicht über die Architektur von Data Science Workspace
 
-In diesem Video wird ein Übersichtsdiagramm erläutert, in dem die Hauptkomponenten von Experience Platform im Zusammenhang mit Data Science Workspace erläutert werden. Weitere Informationen finden Sie in der Dokumentation zu [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
+Dieses Video führt Sie durch ein Übersichtsdiagramm und erläutert die Hauptkomponenten von Experience Platform in Bezug auf Data Science Workspace. Weitere Informationen finden Sie in der [Dokumentation zu Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/332368)
 

@@ -1,6 +1,6 @@
 ---
 title: Datenerfassung - FAC - Einrichten Ihres Snowflake-Kontos
-description: Foundation - FAC - Einrichten Ihres Snowflake-Kontos
+description: Foundation - FAC - Einrichten des Snowflake-Kontos
 kt: 5342
 doc-type: tutorial
 exl-id: fb8a70d9-9789-4fca-90e4-771be2cfc3dc
@@ -11,10 +11,10 @@ ht-degree: 0%
 
 ---
 
-# 1.3.1 Snowflake-Konto einrichten
+# 1.3.1 Einrichten des Snowflake-Kontos
 
-Nächster Schritt: [1.3.2 Schemas, Datenmodell und Links erstellen](./ex2.md)
+Nächster Schritt: [1.3.2 Erstellen Sie Schemata, Datenmodelle und Links](./ex2.md)
 
-[Zurück zu Modul 1.3](./fac.md)
+[Zurück zum Modul 1.3](./fac.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

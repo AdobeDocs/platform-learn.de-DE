@@ -1,6 +1,6 @@
 ---
-title: 10 Überlegungen zum verantwortungsvollen Customer Data Management
-description: Volatile Marktkräfte und unterschiedliche Datenschutzanforderungen der Verbraucher können für Experten des digitalen Marketings beängstigende Szenarien darstellen. Um Kampagnen auf der richtigen Seite der Vorschriften zu halten, benötigen Marketingteams ihre IT-Kollegen, um einen optimierten Prozess für die zukünftige Überprüfung des Data Governance-Prozesses zu haben - einer Prozess, der im Idealfall jedem ermöglicht, die Regeln für eine verantwortungsvolle Nutzung von Verbraucherdaten zu befolgen und durchzusetzen. Erfahren Sie von Adobe und Scotiabank Digital mehr über die wichtigsten Punkte für ein verantwortungsvolles Daten-Management.
+title: 10 Überlegungen zum verantwortungsvollen Kundendaten-Management
+description: Volatile Marktkräfte und unterschiedliche Datenschutzanforderungen der Verbraucher können für Experten des digitalen Marketings beängstigende Szenarien darstellen. Um Kampagnen auf der richtigen Seite der Vorschriften zu halten, benötigen Marketing-Teams ihre IT-Kollegen, um einen optimierten Prozess für die Zukunftssicherung des Data-Governance-Prozesses zu haben - einen Prozess, der idealerweise alle dazu befähigt, die Regeln für die verantwortungsvolle Nutzung von Verbraucherdaten zu befolgen und durchzusetzen. Erfahren Sie von Adobe und Scotiabank Digital mehr über die wichtigsten Punkte für ein verantwortungsvolles Daten-Management.
 feature: Privacy
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
@@ -16,8 +16,8 @@ ht-degree: 37%
 
 ---
 
-# 10 Überlegungen zum verantwortungsvollen Customer Data Management
+# 10 Überlegungen zum verantwortungsvollen Kundendaten-Management
 
-Volatile Marktkräfte und unterschiedliche Datenschutzanforderungen der Verbraucher können für Experten des digitalen Marketings beängstigende Szenarien darstellen. Um Kampagnen auf der richtigen Seite der Vorschriften zu halten, benötigen Marketingteams ihre IT-Kollegen, um einen optimierten Prozess für die zukünftige Überprüfung des Data Governance-Prozesses zu haben - einer Prozess, der im Idealfall jedem ermöglicht, die Regeln für eine verantwortungsvolle Nutzung von Verbraucherdaten zu befolgen und durchzusetzen. Erfahren Sie von Adobe und Scotiabank Digital mehr über die wichtigsten Punkte für ein verantwortungsvolles Daten-Management.
+Volatile Marktkräfte und unterschiedliche Datenschutzanforderungen der Verbraucher können für Experten des digitalen Marketings beängstigende Szenarien darstellen. Um Kampagnen auf der richtigen Seite der Vorschriften zu halten, benötigen Marketing-Teams ihre IT-Kollegen, um einen optimierten Prozess für die Zukunftssicherung des Data-Governance-Prozesses zu haben - einen Prozess, der idealerweise alle dazu befähigt, die Regeln für die verantwortungsvolle Nutzung von Verbraucherdaten zu befolgen und durchzusetzen. Erfahren Sie von Adobe und Scotiabank Digital mehr über die wichtigsten Punkte für ein verantwortungsvolles Daten-Management.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332062/?learn=on)

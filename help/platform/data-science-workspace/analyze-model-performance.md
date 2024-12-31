@@ -1,6 +1,6 @@
 ---
-title: Leistung des Modells analysieren
-description: Erfahren Sie mehr über verschiedene Methoden zur Analyse der Leistung eines Modells, z. B. eine Verwirrungsmatrix, Genauigkeit, Rückruf und Präzision.
+title: Analysieren der Modellleistung
+description: Erfahren Sie mehr über einige der verschiedenen Methoden zur Analyse der Leistung eines Modells, z. B. eine Verwirrungsmatrix, Genauigkeit, Rückruf und Präzision.
 feature: Data Science Workspace
 role: User
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Analysieren der Modellleistung in Data Science Workspace
 
-Erfahren Sie mehr über verschiedene Methoden zur Analyse der Leistung eines Modells, z. B. eine Verwirrungsmatrix, Genauigkeit, Rückruf und Präzision. Weitere Informationen finden Sie in der Dokumentation zu [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
+Erfahren Sie mehr über einige der verschiedenen Methoden zur Analyse der Leistung eines Modells, z. B. eine Verwirrungsmatrix, Genauigkeit, Rückruf und Präzision. Weitere Informationen finden Sie in der [Dokumentation zu Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333427)

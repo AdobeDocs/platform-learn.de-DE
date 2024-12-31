@@ -1,6 +1,6 @@
 ---
-title: Festlegen der Zustimmung mithilfe des Adobe-Standards
-description: Erfahren Sie, wie Sie mit dem Adobe Experience Platform Web SDK Zustimmungswerte gemäß den Adobe-Standards 1.0 und 2.0 festlegen können.
+title: Einverständnis mit dem Adobe-Standard festlegen
+description: Erfahren Sie, wie Sie mit der Adobe Experience Platform Web SDK Einverständniswerte gemäß Adobe-Standard 1.0 und 2.0 festlegen.
 feature: Web SDK, Tags
 level: Intermediate
 jira: KT-7570
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# Festlegen der Zustimmung mithilfe des Adobe-Standards
+# Einverständnis mit dem Adobe-Standard festlegen
 
-Erfahren Sie, wie Sie mit dem Adobe Experience Platform Web SDK Zustimmungswerte gemäß den Adobe-Standards 1.0 und 2.0 festlegen können. Weitere Informationen zur Verwendung des Adobe-Standards finden Sie in der Dokumentation zur Verarbeitung von [Einverständniserklärungen in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) .
+Erfahren Sie, wie Sie mit der Adobe Experience Platform Web SDK Einverständniswerte gemäß Adobe-Standard 1.0 und 2.0 festlegen. Weitere Informationen zur Verwendung [ Adobe-Standards finden Sie in der Dokumentation ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html)Einverständnisverarbeitung in Platform“.
 
 >[!NOTE]
 >

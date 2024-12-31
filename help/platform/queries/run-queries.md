@@ -1,5 +1,5 @@
 ---
-title: Ausführen von Abfragen mit Query Service
+title: Ausführen von Abfragen mit dem Abfrage-Service
 description: In diesem Video wird gezeigt, wie Abfragen in der Adobe Experience Platform-Benutzeroberfläche und in einem PSQL-Client ausgeführt werden. Darüber hinaus wird die Verwendung einzelner Eigenschaften in einem XDM-Objekt, die Verwendung von Adobe-definierten Funktionen und die Verwendung von CREATE TABLE AS SELECT (CTAS) demonstriert.
 feature: Queries
 role: Data Engineer, Developer
@@ -16,7 +16,7 @@ ht-degree: 21%
 
 # Abfragen ausführen
 
-In diesem Video wird gezeigt, wie Abfragen in der Adobe Experience Platform-Benutzeroberfläche und in einem PSQL-Client ausgeführt werden. Darüber hinaus wird die Verwendung einzelner Eigenschaften in einem XDM-Objekt, die Verwendung von Adobe-definierten Funktionen und die Verwendung von CREATE TABLE AS SELECT (CTAS) demonstriert. Eine ausführliche Produktdokumentation finden Sie im Handbuch [Benutzeroberfläche des Abfrageeditors-Handbuchs](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=de).
-Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+In diesem Video wird gezeigt, wie Abfragen in der Adobe Experience Platform-Benutzeroberfläche und in einem PSQL-Client ausgeführt werden. Darüber hinaus werden die Verwendung einzelner Eigenschaften in einem XDM-Objekt, die Verwendung von Adobe-definierten Funktionen und die Verwendung von CREATE TABLE AS SELECT (CTAS) demonstriert. Eine ausführliche Produktdokumentation finden Sie im [Handbuch zur Benutzeroberfläche des Abfrage-Editors](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=de).
+Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on)

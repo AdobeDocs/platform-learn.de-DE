@@ -1,6 +1,6 @@
 ---
 title: Erstellen und Veröffentlichen eines trainierten Modells
-description: Erfahren Sie, wie Sie ein Modell mithilfe eines mit dem JupyterLab-Rezept-Builder-Notebook erstellten Rezepts erstellen, trainieren, bewerten und veröffentlichen.
+description: Erfahren Sie, wie Sie ein Modell mit einem Rezept erstellen, trainieren, auswerten und veröffentlichen, das mit dem JupyterLab Recipe Builder-Notebook erstellt wurde.
 feature: Data Science Workspace
 role: User
 level: Beginner
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 # Erstellen und Veröffentlichen eines trainierten Modells in der Benutzeroberfläche
 
-Erfahren Sie, wie Sie ein Modell mithilfe eines mit dem JupyterLab-Rezept-Builder-Notebook erstellten Rezepts erstellen, trainieren, bewerten und veröffentlichen.
+Erfahren Sie, wie Sie ein Modell mit einem Rezept erstellen, trainieren, auswerten und veröffentlichen, das mit dem JupyterLab Recipe Builder-Notebook erstellt wurde.
 
-In Adobe Experience Platform Data Science Workspace wird ein Modell für maschinelles Lernen erstellt, indem ein vorhandenes Rezept integriert wird, das für den Zweck des Modells geeignet ist. Anschließend wird das Modell trainiert und bewertet, um seine Betriebseffizienz und Wirksamkeit zu optimieren, indem die zugehörigen Hyperparameter optimiert werden. Rezepte sind wiederverwendbar, d. h. mehrere Modelle können mit einem Rezept für bestimmte Zwecke erstellt und angepasst werden. Weitere Informationen finden Sie in der Dokumentation zu [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
+In Adobe Experience Platform Data Science Workspace wird ein Modell für maschinelles Lernen erstellt, indem ein bestehendes Rezept integriert wird, das für die Modellabsicht geeignet ist. Anschließend wird das Modell trainiert und ausgewertet, um seine Effizienz und Wirksamkeit durch eine Feinabstimmung der zugehörigen Hyperparameter zu optimieren. Rezepte sind wiederverwendbar, d. h., mit einem einzigen Rezept können mehrere Modelle erstellt und auf bestimmte Zwecke zugeschnitten werden. Weitere Informationen finden Sie in der [Dokumentation zu Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333595)
 

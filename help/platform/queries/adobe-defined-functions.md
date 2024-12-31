@@ -1,6 +1,6 @@
 ---
 title: Adobe definierte Funktionen
-description: Erfahren Sie, wie Sie mit Adobe-definierten Funktionen in Adobe Experience Platform Query Service gängige geschäftsbezogene Aufgaben für Erlebnisereignisdaten durchführen können.
+description: Erfahren Sie, wie Sie im Adobe Experience Platform Query Service mithilfe von Adobe-definierten Funktionen gängige geschäftsbezogene Aufgaben auf Daten zu Erlebnisereignissen ausführen können.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Adobe definierte Funktionen
 
-Erfahren Sie, wie Sie mit Adobe-definierten Funktionen in Adobe Experience Platform Query Service gängige geschäftsbezogene Aufgaben für Erlebnisereignisdaten durchführen können. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+Erfahren Sie, wie Sie im Adobe Experience Platform Query Service mithilfe von Adobe-definierten Funktionen gängige geschäftsbezogene Aufgaben auf Daten zu Erlebnisereignissen ausführen können. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on)

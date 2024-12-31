@@ -1,6 +1,6 @@
 ---
 title: Verwenden der Privacy Service-API
-description: Erfahren Sie, wie Sie API-Endpunkte aufrufen können, einschließlich Listen und Suchen, eine Auftragsanfrage erstellen und eine Zustimmungsanfrage erstellen.
+description: Erfahren Sie, wie Sie API-Endpunkte aufrufen, einschließlich Listen und Suchen, Erstellen einer Vorgangsanfrage und Erstellen einer Einverständnisanfrage.
 feature: Privacy
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # Verwenden der Privacy Service-API
 
-Erfahren Sie, wie Sie API-Endpunkte aufrufen können, einschließlich Listen und Suchen, eine Auftragsanfrage erstellen und eine Zustimmungsanfrage erstellen. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) .
+Erfahren Sie, wie Sie API-Endpunkte aufrufen, einschließlich Listen und Suchen, Erstellen einer Vorgangsanfrage und Erstellen einer Einverständnisanfrage. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336080?learn=on)

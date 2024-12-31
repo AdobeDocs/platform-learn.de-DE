@@ -1,6 +1,6 @@
 ---
-title: Geschäftswert von Attribution AI
-description: In diesem Video wird gezeigt, wie Marketingexperten die Ausgaben für Marketing und Werbung messen und optimieren können, indem sie die Auswirkungen jeder einzelnen Kundeninteraktion in den einzelnen Phasen der Journey der Kunden mit Attribution AI verstehen.
+title: Geschäftswert des Attribution AIS
+description: In diesem Video wird gezeigt, wie Marketing-Fachleute die Ausgaben für Marketing und Werbung messen und optimieren können, indem sie die Auswirkungen einzelner Kundeninteraktionen in jeder Phase der Journey-Attribution AI des Kunden verstehen.
 feature: Attribution AI
 role: User
 level: Beginner
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ---
 
-# Geschäftswert von Attribution AI
+# Geschäftswert des Attribution AIS
 
-In diesem Video wird gezeigt, wie Marketingexperten die Ausgaben für Marketing und Werbung messen und optimieren können, indem sie die Auswirkungen jeder einzelnen Kundeninteraktion in den einzelnen Phasen der Journey der Kunden mit Attribution AI verstehen. Weitere Informationen finden Sie in der Dokumentation zu [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+In diesem Video wird gezeigt, wie Marketing-Fachleute die Ausgaben für Marketing und Werbung messen und optimieren können, indem sie die Auswirkungen einzelner Kundeninteraktionen in jeder Phase der Journey-Attribution AI des Kunden verstehen. Weitere Informationen finden Sie in der Dokumentation zu [Attribution AI ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on)
 

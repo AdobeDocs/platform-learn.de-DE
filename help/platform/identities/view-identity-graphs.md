@@ -1,6 +1,6 @@
 ---
-title: Identitätsdiagramme anzeigen
-description: Erfahren Sie, wie Sie mit der Viewer-Funktion für Identitätsdiagramme Identitätsdiagramme suchen, untersuchen und für die Validierung und das Debugging filtern können.
+title: Anzeigen von Identitätsdiagrammen
+description: Erfahren Sie, wie Sie mit der Identitätsdiagramm-Viewer-Funktion Identitätsdiagramme zur Validierung und zum Debugging suchen, erkunden und filtern können.
 feature: Identities
 role: Data Architect, Data Engineer, Developer
 level: Beginner
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 ---
 
-# Identitätsdiagramme anzeigen
+# Anzeigen von Identitätsdiagrammen
 
-Erfahren Sie, wie Sie mit der Viewer-Funktion für Identitätsdiagramme Identitätsdiagramme suchen, untersuchen und für die Validierung und das Debugging filtern können. Weitere Informationen finden Sie in der Dokumentation zum Viewer für Identitätsdiagramme](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html?lang=de).[
+Erfahren Sie, wie Sie mit der Identitätsdiagramm-Viewer-Funktion Identitätsdiagramme zur Validierung und zum Debugging suchen, erkunden und filtern können. Weitere Informationen finden Sie in der [Dokumentation zum Identitätsdiagramm-Viewer](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331030?learn=on)
 

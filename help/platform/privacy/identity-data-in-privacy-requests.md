@@ -1,6 +1,6 @@
 ---
-title: Gespeicherte personenbezogene Daten überprüfen
-description: Erfahren Sie mehr über die wichtigsten Konzepte und Entscheidungen im Zusammenhang mit der Prüfung personenbezogener Daten und der Vorbereitung entsprechend den Datenschutzanforderungen des Unternehmens.
+title: Überprüfen der gespeicherten personenbezogenen Daten
+description: Lernen Sie die wichtigsten Konzepte und Entscheidungen im Zusammenhang mit der Prüfung personenbezogener Daten und der Vorbereitung entsprechend den Datenschutzanforderungen des Unternehmens kennen.
 feature: Privacy
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Gespeicherte personenbezogene Daten überprüfen
+# Überprüfen der gespeicherten personenbezogenen Daten
 
-Erfahren Sie mehr über die wichtigsten Konzepte und Entscheidungen im Zusammenhang mit der Prüfung personenbezogener Daten und der Vorbereitung entsprechend den Datenschutzanforderungen des Unternehmens. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) .
+Lernen Sie die wichtigsten Konzepte und Entscheidungen im Zusammenhang mit der Prüfung personenbezogener Daten und der Vorbereitung entsprechend den Datenschutzanforderungen des Unternehmens kennen. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on)

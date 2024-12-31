@@ -1,5 +1,5 @@
 ---
-title: Auswählen einer Hosting-Option für Ihre Tag-Bibliothek
+title: Hosting-Option für Ihre Tag-Bibliothek auswählen
 description: Erfahren Sie, wie Sie die beste Hosting-Option für Ihre Tag-Bibliothek auswählen.
 feature: Tags
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Hosting-Option auswählen
 
-Erfahren Sie, wie Sie die beste Hosting-Option für Ihre Tag-Bibliothek auswählen. Weitere Informationen finden Sie in der Dokumentation zu [hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html) .
+Erfahren Sie, wie Sie die beste Hosting-Option für Ihre Tag-Bibliothek auswählen. Weitere Informationen finden Sie in der [hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html)-Dokumentation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on)

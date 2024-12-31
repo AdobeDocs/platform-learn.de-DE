@@ -1,5 +1,5 @@
 ---
-title: Segmentübereinstimmung, die Daten erhält
+title: Segment Match erhält Daten
 description: Mit Segment Match können Daten von Ihren strategischen Partnern für Sie freigegeben werden. In diesem Video erfahren Sie, wie Sie die Daten genehmigen und empfangen und wo Sie sie anzeigen und zu Ihren eigenen Segmenten hinzufügen können.
 feature: Segments
 role: User
@@ -14,7 +14,7 @@ ht-degree: 90%
 
 ---
 
-# Segmentübereinstimmung, die Daten erhält
+# Segment Match erhält Daten
 
 Mit Segment Match können Daten von Ihren strategischen Partnern für Sie freigegeben werden. In diesem Video erfahren Sie, wie Sie die Daten genehmigen und empfangen und wo Sie sie anzeigen und zu Ihren eigenen Segmenten hinzufügen können.
 

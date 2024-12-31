@@ -1,6 +1,6 @@
 ---
-title: Hinter den Kulissen
-description: Im vorherigen Video haben wir gesehen, wie eine Beispiel-Marke, Luma, in der Lage war, ein reichhaltiges, lohnendes und relevantes Kundenerlebnis zu schaffen. In diesem Video wird untersucht, wie Adobe Experience Platform für diese Journey verwendet wird.
+title: 'Behind the Scenes&#58: Ein auf Adobe Experience Platform basierendes Kundenerlebnis'
+description: Im vorherigen Video haben wir gesehen, wie eine Beispielmarke, Luma, in der Lage war, ein reichhaltiges, lohnendes und relevantes Kundenerlebnis zu schaffen. In diesem Video wird gezeigt, wie Adobe Experience Platform zum Ausführen dieses Journey verwendet wird.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 jira: KT-4340
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 ---
 
-# Hinter den Kulissen: Ein Kundenerlebnis auf Basis von Adobe Experience Platform
+# Hinter den Kulissen: Ein auf Adobe Experience Platform basierendes Kundenerlebnis
 
-Im vorherigen Video haben wir gesehen, wie eine Beispiel-Marke, Luma, in der Lage war, ein reichhaltiges, lohnendes und relevantes Kundenerlebnis zu schaffen. In diesem Video wird untersucht, wie Adobe Experience Platform für diese Journey verwendet wird.
+Im vorherigen Video haben wir gesehen, wie eine Beispielmarke, Luma, in der Lage war, ein reichhaltiges, lohnendes und relevantes Kundenerlebnis zu schaffen. In diesem Video wird gezeigt, wie Adobe Experience Platform zum Ausführen dieses Journey verwendet wird.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28144?learn=on)
 

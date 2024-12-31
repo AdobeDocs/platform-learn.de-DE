@@ -1,6 +1,6 @@
 ---
-title: Query Service - Abfragen, Abfragen, Abfragen.. und Abwanderungsanalyse
-description: Query Service - Abfragen, Abfragen, Abfragen.. und Abwanderungsanalyse
+title: Query Service - Abfragen, Abfragen… und Abwanderungsanalyse
+description: Query Service - Abfragen, Abfragen… und Abwanderungsanalyse
 kt: 5342
 doc-type: tutorial
 exl-id: 85a0c8ca-9727-4019-9058-8982453fa382
@@ -11,25 +11,25 @@ ht-degree: 4%
 
 ---
 
-# 5.1.4 Abfragen, Abfragen, Abfragen ... und Abwanderungsanalyse
+# 5.1.4 Abfragen, Abfragen… und Abwanderungsanalyse
 
 ## Ziel
 
-- Abfragen für Datenanalysen schreiben
-- Schreiben Sie SQL-Abfragen, die in Adobe Experience Platform verfügbare Online-, Callcenter- und Treuedaten kombinieren
-- Erfahren Sie mehr über Adobe definierte Funktionen
+- Schreiben von Abfragen für Datenanalysen
+- Schreiben von SQL-Abfragen, die Online-, Callcenter- und Treuedaten kombinieren, die in Adobe Experience Platform verfügbar sind
+- Erfahren Sie mehr über das Adobe definierter Funktionen
 
 ## Kontext
 
-In diesen Übungen schreiben Sie Abfragen zur Analyse von Produktansichten, Produkttrichtern, Abwanderungen usw.
+In diesen Übungen schreiben Sie Abfragen zur Analyse von Produktansichten, Produkttrichter, Abwanderung usw.
 
-Alle in diesem Kapitel aufgelisteten Abfragen werden in Ihrer **PSQL-Befehlszeilenschnittstelle** ausgeführt. Sie sollten die mit **SQL** angegebenen Anweisungsblöcke kopieren (STRG+C) und in die Befehlszeilenschnittstelle **PSQL** einfügen (STRG+V). Die Bausteine **Abfrageergebnis** zeigen die eingefügte SQL-Anweisung und das zugehörige Abfrageergebnis an.
+Alle in diesem Kapitel aufgeführten Abfragen werden in Ihrer **PSQL-Befehlszeilenschnittstelle)**. Kopieren Sie (STRG-C) die mit **SQL** angegebenen Anweisungsblöcke und fügen Sie sie (STRG-V) in die **PSQL-Befehlszeilenschnittstelle ein**. Die **Abfrageergebnis**-Blöcke zeigen die eingefügte SQL-Anweisung und das zugehörige Abfrageergebnis an.
 
-## Grundlegende Abfragen für die Datenanalyse schreiben
+## Schreiben grundlegender Abfragen für die Datenanalyse
 
 ### Zeitstempel
 
-In Adobe Experience Platform erfasste Daten werden mit einem Zeitstempel versehen. Mit dem Attribut **timestamp** können Sie Daten im Zeitverlauf analysieren.
+In Adobe Experience Platform erfasste Daten sind mit einem Zeitstempel versehen. Mit **Attribut &quot;**&quot; können Sie Daten im Zeitverlauf analysieren.
 
 Wie viele Produktansichten haben wir täglich?
 
@@ -45,7 +45,7 @@ group by Day
 limit 10;
 ```
 
-Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilenschnittstelle** aus.
+Kopieren Sie die obige Anweisung und führen Sie sie in Ihrer **PSQL-Befehlszeilenschnittstelle** aus.
 
 **Abfrageergebnis**
 
@@ -63,9 +63,9 @@ limit 10;
 (1 row)
 ```
 
-### Die fünf häufigsten angezeigten Produkte
+### Top 5 der angezeigten Produkte
 
-Welche Produkte werden am häufigsten angezeigt?
+Welche 5 Top-Produkte wurden angesehen?
 
 #### SQL
 
@@ -79,7 +79,7 @@ order  by 2 desc
 limit 5;
 ```
 
-Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilenschnittstelle** aus.
+Kopieren Sie die obige Anweisung und führen Sie sie in Ihrer **PSQL-Befehlszeilenschnittstelle** aus.
 
 **Abfrageergebnis**
 
@@ -100,7 +100,7 @@ limit 5;
 (4 rows)
 ```
 
-### Produkt-Interaktionstrichter, vom Anzeigen bis zum Kauf
+### Produkt-Interaktionstrichter, vom Anzeigen bis zum Kaufen
 
 **SQL**
 
@@ -113,7 +113,7 @@ and    eventType <> ''
 group  by eventType;
 ```
 
-Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilenschnittstelle** aus.
+Kopieren Sie die obige Anweisung und führen Sie sie in Ihrer **PSQL-Befehlszeilenschnittstelle** aus.
 
 **Abfrageergebnis**
 
@@ -132,7 +132,7 @@ group  by eventType;
 (3 rows)
 ```
 
-### Besucher mit Risiko für Abwanderung identifizieren (Besuchsseite => Abbrechen-Dienst)
+### Besucherinnen und Besucher mit Abwanderungsrisiko identifizieren (Besuchsseite => Service abbrechen)
 
 **SQL**
 
@@ -145,7 +145,7 @@ group  by --aepTenantId--.identification.core.ecid
 limit 10;
 ```
 
-Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilenschnittstelle** aus.
+Kopieren Sie die obige Anweisung und führen Sie sie in Ihrer **PSQL-Befehlszeilenschnittstelle** aus.
 
 **Abfrageergebnis**
 
@@ -171,23 +171,23 @@ limit 10;
 (10 rows)
 ```
 
-Im nächsten Satz von Abfragen erweitern wir die oben stehende Abfrage, um eine vollständige Übersicht über die Kunden und ihr Verhalten zu erhalten, die die Seite &quot;Dienst abbrechen&quot;besucht haben. Sie erfahren, wie Sie mit der Adobe Defined-Funktion Informationen segmentieren, die Reihenfolge und den Zeitpunkt von Ereignissen identifizieren können. Sie werden auch Datensätze zusammenführen, um die Daten weiter anzureichern und für die Analyse in Microsoft Power BI vorzubereiten.
+Im nächsten Satz von Abfragen werden wir die obige Abfrage erweitern, um einen vollständigen Überblick über die Kunden und ihr Verhalten zu erhalten, die die Seite „Service abbrechen“ besucht haben. Sie erfahren, wie Sie mit der Adobe-definierten Funktion Informationen sitzungsbasiert darstellen, die Reihenfolge und den Zeitpunkt von Ereignissen ermitteln können. Sie werden auch Datensätze zusammenführen, um die Daten für die Analyse im Microsoft Power BI weiter anzureichern und vorzubereiten.
 
 ## Erweiterte Abfragen
 
-Der Großteil der Geschäftslogik erfordert, dass die Touchpoints für einen Kunden gesammelt und nach Zeit geordnet werden. Dies wird von Spark SQL anhand von sogenannten Fenster- bzw. „Window“-Funktionen unterstützt. Window-Funktionen sind Teil von Standard-SQL und werden von einer Vielzahl anderer SQL-Engines unterstützt.
+Für den Großteil der Geschäftslogik ist es erforderlich, die Kontaktpunkte für einen Kunden zu sammeln und nach Zeit zu sortieren. Dies wird von Spark SQL anhand von sogenannten Fenster- bzw. „Window“-Funktionen unterstützt. Window-Funktionen sind Teil von Standard-SQL und werden von einer Vielzahl anderer SQL-Engines unterstützt.
 
 ### Adobe definierte Funktionen
 
-Adobe hat der SQL-Standardsyntax einen Satz von **Adobe Defined Functions** hinzugefügt, mit dem Sie Ihre Erlebnisdaten besser verstehen können. In den nächsten Abfragen lernen Sie diese ADF-Funktionen kennen. Weitere Informationen und die vollständige Liste [finden Sie in der Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html).
+Adobe hat eine Reihe von **Adobe-definierten Funktionen** zur standardmäßigen SQL-Syntax hinzugefügt, mit denen Sie Ihre Erlebnisdaten besser verstehen können. In den nächsten Abfragen erfahren Sie mehr über diese ADF-Funktionen. Weitere Informationen und die vollständige Liste finden Sie [ der Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html).
 
-### Was machen Personen auf der Site, bevor sie die Seite &quot;Abbrechen-Dienst&quot;als dritte Seite in einer Sitzung erreichen?
+### Was tun Benutzer auf der Website, bevor sie die Seite „Service abbrechen“ als dritte Seite in einer Sitzung erreichen?
 
-Mit dieser Abfrage entdecken Sie die ersten beiden Adobe Defined Functions **SESS_TIMEOUT** und **NEXT**
+Mit dieser Abfrage werden die ersten beiden Adobe-definierten Funktionen (**_TIMEOUT** und **NEXT)**
 
-> Die **SESS_TIMEOUT()** -Funktion reproduziert die in Adobe Analytics gefundenen Besuchergruppen. Sie führt eine ähnliche zeitbasierte Gruppierung durch, aber anpassbare Parameter.
+> Die **SESS_TIMEOUT()** reproduziert die mit Adobe Analytics gefundenen Besuchergruppen. Es führt eine ähnliche zeitbasierte Gruppierung durch, jedoch anpassbare Parameter.
 >
-> **NEXT()** und **PREVIOUS()** helfen Ihnen, zu verstehen, wie Kunden durch Ihre Site navigieren.
+> **NEXT()** und **PREVIOUS()** helfen Ihnen zu verstehen, wie Kunden auf Ihrer Site navigieren.
 
 **SQL**
 
@@ -243,7 +243,7 @@ ORDER BY journeys DESC
 LIMIT 10;
 ```
 
-Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilenschnittstelle** aus.
+Kopieren Sie die obige Anweisung und führen Sie sie in Ihrer **PSQL-Befehlszeilenschnittstelle** aus.
 
 **Abfrageergebnis**
 
@@ -263,11 +263,11 @@ Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilen
 (10 rows)
 ```
 
-### Wie viel Zeit haben wir, bevor ein Besucher das Callcenter aufruft, nachdem er die Seite &quot;Dienst abbrechen&quot;besucht hat?
+### Wie viel Zeit haben wir, bevor ein Besucher nach dem Besuch der Seite „Service abbrechen“ das Callcenter anruft?
 
-Um diese Art von Abfrage zu beantworten, verwenden wir die Funktion **TIME_BETWEEN_NEXT_MATCH()** Adobe Definierte Funktion.
+Um diese Art von Abfrage zu beantworten, verwenden wir die **TIME_BETWEEN_NEXT_MATCH()** definierte Adobe-Funktion.
 
-> Die Zeit zwischen vorherigen oder nächsten Übereinstimmungsfunktionen bietet eine neue Dimension, die die seit einem bestimmten Vorfall verstrichene Zeit misst.
+> Die Zeitspanne zwischen der vorherigen oder nächsten Übereinstimmung liefert eine neue Dimension, die die Zeit misst, die seit einem bestimmten Vorfall vergangen ist.
 
 **SQL**
 
@@ -288,7 +288,7 @@ where r.webPage = 'Cancel Service'
 limit 15;
 ```
 
-Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilenschnittstelle** aus.
+Kopieren Sie die obige Anweisung und führen Sie sie in Ihrer **PSQL-Befehlszeilenschnittstelle** aus.
 
 **Abfrageergebnis**
 
@@ -315,7 +315,7 @@ Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilen
 
 ### Und was ist das Ergebnis dieses Kontakts?
 
-In dieser Abfrage verbinden Sie Datensätze. In diesem Fall fügen Sie dem Datensatz `demo_system_event_dataset_for_website_global_v1_1` den Datensatz`demo_system_event_dataset_for_call_center_global_v1_1` hinzu. Dies geschieht, um das Ergebnis der Interaktion mit dem Callcenter zu verstehen.
+In dieser Abfrage verbinden Sie Datensätze. In diesem Fall verbinden Sie die `demo_system_event_dataset_for_website_global_v1_1` mit dem Datensatz`demo_system_event_dataset_for_call_center_global_v1_1`. Dies erfolgt, um das Ergebnis der Interaktion mit dem Callcenter zu verstehen.
 
 **SQL**
 
@@ -344,7 +344,7 @@ and c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic IN ('con
 limit 15;
 ```
 
-Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilenschnittstelle** aus.
+Kopieren Sie die obige Anweisung und führen Sie sie in Ihrer **PSQL-Befehlszeilenschnittstelle** aus.
 
 **Abfrageergebnis**
 
@@ -369,9 +369,9 @@ Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilen
 (15 rows)
 ```
 
-### Welches Treueprofil haben diese Kunden?
+### Wie sieht das Treueprofil dieser Kunden aus?
 
-In dieser Abfrage verbinden wir CRM-Daten, die in Adobe Experience Platform integriert wurden. Dies ermöglicht die Anreicherung der Abwanderungsanalyse mit CRM-Daten.
+In dieser Abfrage fügen wir CRM-Daten hinzu, die in Adobe Experience Platform integriert wurden. Dies ermöglicht es, die Abwanderungsanalyse mit CRM-Daten anzureichern.
 
 **SQL**
 
@@ -402,7 +402,7 @@ and c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic IN ('con
 limit 15;
 ```
 
-Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilenschnittstelle** aus.
+Kopieren Sie die obige Anweisung und führen Sie sie in Ihrer **PSQL-Befehlszeilenschnittstelle** aus.
 
 **Abfrageergebnis**
 
@@ -427,9 +427,9 @@ Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilen
 (15 rows)
 ```
 
-### Von welcher Region besuchen sie uns?
+### Aus welcher Region besuchen sie uns?
 
-Lassen Sie uns die von der Adobe Experience Platform erfassten geografischen Informationen, wie Längengrad, Einstellung, Stadt und Ländercode einbeziehen, um geografische Einblicke über die Kundenflucht zu erhalten.
+Nehmen wir die geografischen Informationen wie Längengrad, Einstellung, Stadt, Land und Code auf, die von der Adobe Experience Platform erfasst werden, um geografische Einblicke in abwandernde Kunden zu erhalten.
 
 **SQL**
 
@@ -470,7 +470,7 @@ Lassen Sie uns die von der Adobe Experience Platform erfassten geografischen Inf
        limit 15;
 ```
 
-Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilenschnittstelle** aus.
+Kopieren Sie die obige Anweisung und führen Sie sie in Ihrer **PSQL-Befehlszeilenschnittstelle** aus.
 
 **Abfrageergebnis**
 
@@ -495,21 +495,21 @@ Kopieren Sie die obige Anweisung und führen Sie sie in der **PSQL-Befehlszeilen
 (15 rows)
 ```
 
-## Interaktionsanalyse in Call Center
+## Call-Center-Interaktionsanalyse
 
-In den obigen Abfragen haben wir uns nur die Besucher angesehen, die im Falle einer Stornierung des Dienstes das Callcenter kontaktiert haben. Wir möchten dies ein wenig erweitern und alle Interaktionen mit Callcenter berücksichtigen, einschließlich (WLAN, Sonderangebote, Rechnung, Beschwerde und Vertrag).
+In den obigen Abfragen haben wir nur die Besucher betrachtet, die sich im Falle einer Dienstkündigung an das Callcenter gewandt haben. Wir wollen dies etwas weiter fassen und alle Call Center Interaktionen berücksichtigen (einschließlich WiFi, Promo, Rechnung, Beschwerde und Vertrag).
 
-Sie müssen eine Abfrage bearbeiten. Öffnen wir also zunächst Notepad oder Klammern.
+Sie müssen eine Abfrage bearbeiten, öffnen wir also zuerst Notepad oder Brackets.
 
-Klicken Sie unter Windows auf das Symbol &quot;search&quot;(1) in der Windows-Symbolleiste und geben Sie **notepad** in das Feld &quot;search&quot;(2) ein. Klicken Sie dann auf (3) das Ergebnis &quot;notepad&quot;:
+Klicken Sie unter Windows auf „Suchen“-Symbol (1) in der Windows-Symbolleiste, geben Sie **notepad** in das Feld „Suchen“ ein (2), klicken Sie auf (3) das Ergebnis „notepad“:
 
 ![windows-start-notepad.png](./images/windows-start-notepad.png)
 
-In Mac
+auf Mac
 
 ![osx-start-brackets.png](./images/osx-start-brackets.png)
 
-Kopieren Sie die folgende Anweisung in Notepad/Brackets:
+Kopieren Sie die folgende Anweisung nach notepad/brackets:
 
 ```sql
 select /* enter your name */
@@ -539,11 +539,11 @@ und ersetzen
 enter your name
 ```
 
-Entfernen Sie nicht `/\*` und `\*/`. Ihre geänderte Anweisung in Notepad sollte wie folgt aussehen:
+`/\*` und `\*/` nicht entfernen. Ihre geänderte Anweisung in Notepad sollte wie folgt aussehen:
 
 ![edit-query-notepad.png](./images/editquerynotepad.png)
 
-Kopieren Sie Ihre geänderte Anweisung von **notepad** in das Fenster **PSQL-Befehlszeile** und drücken Sie die Eingabetaste. Das folgende Ergebnis sollte im Befehlszeilenfenster von PSQL angezeigt werden:
+Kopieren Sie Ihre geänderte Anweisung aus **notepad** in das **PSQL-Befehlszeilenfenster** und drücken Sie die Eingabetaste. Das folgende Ergebnis sollte im PSQL-Befehlszeilenfenster angezeigt werden:
 
 ```text
 tech-insiders:all=> select /* vangeluw */
@@ -576,10 +576,10 @@ and    l._experienceplatform.identification.core.ecid = e._experienceplatform.id
  24854602977644353049269284436324 | Tullich    | 57.4694803 | -3.1269422 | GB          | negative    | contract  | f                 | Bronze        |         418.0 | 831581327
 ```
 
-Im nächsten Schritt werden Sie Ihre Abfrage (auch als **Tabelle erstellen, die als select** oder **CTAS** bezeichnet wird) als neuen Datensatz beibehalten, den Sie im Microsoft Power BI verwenden werden.
+Im nächsten Schritt persistieren Sie Ihre Abfrage (auch als **Tabelle als Auswahl erstellen** oder **CTAS** bezeichnet) als neuen Datensatz, den Sie im Microsoft-Power BI verwenden werden.
 
-Nächster Schritt: [5.1.5 Datensatz aus einer Abfrage generieren](./ex5.md)
+Nächster Schritt: [5.1.5 Generieren eines Datensatzes aus einer Abfrage](./ex5.md)
 
 [Zurück zu Modul 5.1](./query-service.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

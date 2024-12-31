@@ -1,6 +1,6 @@
 ---
 title: Streamen von Daten mit Source Connectors
-description: Erfahren Sie, wie Sie Daten in Echtzeit von einer Cloud-Speicherquelle an Platform streamen und diese Daten in Echtzeit für die Kundeninteraktion verwenden können.
+description: Erfahren Sie, wie Sie Daten in Echtzeit von einer Cloud-Speicherquelle zu Platform streamen und die Daten in Echtzeit für die Kundeninteraktion verwenden können.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
@@ -16,14 +16,14 @@ ht-degree: 2%
 
 # Streamen von Daten mit Source Connectors
 
-Erfahren Sie, wie Sie Daten in Echtzeit von einer Cloud-Speicherquelle an Platform streamen und diese Daten in Echtzeit für die Kundeninteraktion verwenden können.
+Erfahren Sie, wie Sie Daten in Echtzeit von einer Cloud-Speicherquelle zu Platform streamen und die Daten in Echtzeit für die Kundeninteraktion verwenden können.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on)
 
 ## Weitere Ressourcen
 
-* [Erstellen einer Amazon Kinesis-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
-* [Erstellen einer Quell-Verbindung für Azure Event Hub in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
-* [Dokumentation zu Azure Event-Hits](https://docs.microsoft.com/en-us/azure/event-hubs/)
-* [Dokumentation zu Amazon Kinesis Data Streams](https://docs.aws.amazon.com/kinesis/index.html)
+* [Erstellen einer Amazon Kinesis-Quellverbindung über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
+* [Erstellen einer Azure Event Hubs-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
+* [Dokumentation zu Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/)
+* Dokumentation zu [Amazon Kinesis-Datenströmen](https://docs.aws.amazon.com/kinesis/index.html)

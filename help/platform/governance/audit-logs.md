@@ -15,7 +15,7 @@ ht-degree: 42%
 
 # Audit-Protokolle
 
-Erfahren Sie, wie Sie mit der Funktion für Prüfprotokolle Ihre Compliance-Anforderungen erfüllen und Fehler bei Ihrer Adobe Experience Platform-Implementierung beheben können. Weitere Informationen finden Sie in der Dokumentation zu [Auditprotokollen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=de) oder der [API-Referenz](https://developer.adobe.com/experience-platform-apis/references/audit-query/).
+Erfahren Sie, wie Sie mit der Administratorprotokoll-Funktion Ihre Compliance-Anforderungen erfüllen und Fehler bei der Implementierung von Adobe Experience Platform beheben können. Weitere Informationen finden Sie in der [Dokumentation zu Auditprotokollen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=de) oder in der [API-](https://developer.adobe.com/experience-platform-apis/references/audit-query/).
 
 >[!VIDEO](https://video.tv.adobe.com/v/341450?learn=on)
 

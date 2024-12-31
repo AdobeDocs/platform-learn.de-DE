@@ -1,6 +1,6 @@
 ---
-title: Zusammenführungsrichtlinien erstellen
-description: In diesem Video wird gezeigt, wie Zusammenführungsrichtlinien in Adobe Experience Platform erstellt werden. Zusammenführungsrichtlinien sind die Regeln, die Platform verwendet, um zu bestimmen, welche Daten beim Kombinieren von Datensätzen aus unterschiedlichen Quellen verwendet und priorisiert werden, um Kundenprofile zu erstellen.
+title: Erstellen von Zusammenführungsrichtlinien
+description: In diesem Video wird gezeigt, wie Zusammenführungsrichtlinien in Adobe Experience Platform erstellt werden. Zusammenführungsrichtlinien sind die Regeln, mit denen Platform bestimmt, welche Daten verwendet und priorisiert werden, wenn Datensätze aus unterschiedlichen Quellen kombiniert werden, um Kundenprofile zu erstellen.
 feature: Profiles
 role: Data Architect, Developer
 level: Intermediate
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Zusammenführungsrichtlinien erstellen
+# Erstellen von Zusammenführungsrichtlinien
 
-In diesem Video wird gezeigt, wie Zusammenführungsrichtlinien in Adobe Experience Platform erstellt werden. Zusammenführungsrichtlinien sind die Regeln, die Platform verwendet, um zu bestimmen, welche Daten beim Kombinieren von Datensätzen aus unterschiedlichen Quellen verwendet und priorisiert werden, um Kundenprofile zu erstellen. Weitere Informationen finden Sie in der Dokumentation zu [Zusammenführungsrichtlinien](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html) .
+In diesem Video wird gezeigt, wie Zusammenführungsrichtlinien in Adobe Experience Platform erstellt werden. Zusammenführungsrichtlinien sind die Regeln, mit denen Platform bestimmt, welche Daten verwendet und priorisiert werden, wenn Datensätze aus unterschiedlichen Quellen kombiniert werden, um Kundenprofile zu erstellen. Weitere Informationen finden Sie in der Dokumentation [ Zusammenführungsrichtlinien ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)

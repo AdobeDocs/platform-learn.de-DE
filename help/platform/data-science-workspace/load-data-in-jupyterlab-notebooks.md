@@ -1,6 +1,6 @@
 ---
-title: Daten in JupyterLab-Notebooks laden
-description: In diesem Video erfahren Sie, wie Sie ein JupyterLab-Notebook erstellen und Daten aus Adobe Experience Platform laden. Außerdem wird gezeigt, wie Sie die Leistung Ihres Notebooks bei der Arbeit mit großen Datenmengen steigern können.
+title: Laden von Daten in JupyterLab-Notebooks
+description: In diesem Video erfahren Sie, wie Sie ein JupyterLab-Notebook erstellen und Daten aus Adobe Experience Platform laden. Außerdem erfahren Sie, wie Sie die Leistung Ihres Notebooks bei der Arbeit mit großen Datenmengen steigern können.
 feature: Data Science Workspace
 role: User
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Daten in JupyterLab-Notebooks laden
+# Laden von Daten in JupyterLab-Notebooks
 
-In diesem Video erfahren Sie, wie Sie ein JupyterLab-Notebook erstellen und Daten aus Adobe Experience Platform laden. Außerdem wird gezeigt, wie Sie die Leistung Ihres Notebooks bei der Arbeit mit großen Datenmengen steigern können. Weitere Informationen finden Sie in der Dokumentation [Datenzugriff in der Jupyterlab Notebooks-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/access-notebook-data.html) .
+In diesem Video erfahren Sie, wie Sie ein JupyterLab-Notebook erstellen und Daten aus Adobe Experience Platform laden. Außerdem erfahren Sie, wie Sie die Leistung Ihres Notebooks bei der Arbeit mit großen Datenmengen steigern können. Weitere Informationen finden Sie in der Dokumentation [Datenzugriff in JupyterLab-Notebooks](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/access-notebook-data.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/329612?learn=on)

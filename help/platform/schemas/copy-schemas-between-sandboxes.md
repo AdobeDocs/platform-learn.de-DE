@@ -1,6 +1,6 @@
 ---
-title: Kopieren von Schemata zwischen Sandboxes
-description: In diesem Video erfahren Sie, wie Sie mit der Export/Import-Schema-API ein Schema aus einer Sandbox in Adobe Experience Platform kopieren.
+title: Kopieren von Schemas zwischen Sandboxes
+description: In diesem Video wird gezeigt, wie Sie ein Schema in Adobe Experience Platform mithilfe der Export/Import-Schema-API von einer Sandbox in eine andere kopieren.
 feature: Schemas, Sandboxes
 role: Data Architect, Developer
 level: Intermediate
@@ -14,12 +14,12 @@ ht-degree: 1%
 
 ---
 
-# Kopieren von Schemata zwischen Sandboxes
+# Kopieren von Schemas zwischen Sandboxes
 
-In diesem Video erfahren Sie, wie Sie mit der Export/Import-Schema-API ein Schema aus einer Sandbox in Adobe Experience Platform kopieren. Erstellen und testen Sie Ihre Schemas in Entwicklungs-Sandboxes und kopieren Sie sie dann in die Produktion. Weitere Informationen finden Sie in der Dokumentation zu [Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) .
+In diesem Video wird gezeigt, wie Sie ein Schema in Adobe Experience Platform mithilfe der Export/Import-Schema-API von einer Sandbox in eine andere kopieren. Erstellen und testen Sie Ihre Schemas in Entwicklungs-Sandboxes und kopieren Sie sie dann in die Produktion. Weitere Informationen finden Sie in der [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
 >[!TIP]
 >
->Ende 2023 wurde ein viel einfacherer, an der Oberfläche orientierter Prozess zum Verschieben von Schemas und anderen Objekten zwischen Sandboxes eingeführt, den wir stattdessen empfehlen. Siehe [Objekte zwischen Sandboxes kopieren](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=de).
+>Ende 2023 wurde ein viel einfacherer, schnittstellenorientierter Prozess zum Verschieben von Schemas und anderen Objekten zwischen Sandboxes eingeführt, für den wir stattdessen die Verwendung empfehlen. Siehe [Kopieren von Objekten zwischen Sandboxes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on)

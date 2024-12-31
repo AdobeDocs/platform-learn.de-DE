@@ -1,6 +1,6 @@
 ---
-title: Kundenerlebnis mit Adobe Experience Platform
-description: Sehen Sie sich ein hypothetisches Erlebnis an, das mit Adobe Experience Platform erstellt wurde, wie aus der Sicht eines Kunden ersichtlich ist. Erfahren Sie, wie Experience Platform ein umfangreiches, relevantes und Echtzeit-Erlebnis schafft.
+title: Ein auf Adobe Experience Platform basierendes Kundenerlebnis
+description: Sehen Sie sich eine hypothetische Erfahrung an, die mit Adobe Experience Platform erstellt wurde, aus der Perspektive eines Kunden. Erfahren Sie, wie Experience Platform ein ansprechendes, relevantes Echtzeit-Erlebnis bietet.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 jira: KT-4339
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 ---
 
-# Ein Kundenerlebnis auf Basis von Adobe Experience Platform
+# Ein auf Adobe Experience Platform basierendes Kundenerlebnis
 
-Sehen Sie sich ein hypothetisches Erlebnis an, das mit Adobe Experience Platform erstellt wurde, wie aus der Sicht eines Kunden ersichtlich ist. Erfahren Sie, wie Experience Platform ein umfangreiches, relevantes und Echtzeit-Erlebnis schafft.
+Sehen Sie sich eine hypothetische Erfahrung an, die mit Adobe Experience Platform erstellt wurde, aus der Perspektive eines Kunden. Erfahren Sie, wie Experience Platform ein ansprechendes, relevantes Echtzeit-Erlebnis bietet.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27361?learn=on)
 

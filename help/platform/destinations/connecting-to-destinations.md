@@ -1,6 +1,6 @@
 ---
-title: Verbindung zu Zielen herstellen
-description: Bevor Sie Daten von Real-Time CDP an Zielpartner senden können, müssen Sie zunächst die Verbindungen zu diesen Partnern herstellen. Dieses Video führt durch diesen Punkt (Beschreibungen sollten zwischen 60 und 160 Zeichen lang sein)
+title: Herstellen einer Verbindung zu Zielen
+description: Bevor Sie Daten von Real-Time CDP an Zielpartner senden können, müssen Sie zunächst eine Verbindung zu diesen Partnern herstellen. In diesem Video wird erläutert, wie… (Beschreibungen sollten zwischen 60 und 160 Zeichen lang sein)
 feature: Destinations
 topic: Administration
 role: Admin
@@ -15,8 +15,8 @@ ht-degree: 1%
 
 ---
 
-# Verbindung zu Zielen herstellen
+# Herstellen einer Verbindung zu Zielen
 
-Bevor Sie Daten von Real-Time CDP an Zielpartner senden können, müssen Sie zunächst die Verbindungen zu diesen Partnern herstellen. Dieses Video führt Sie durch diesen Prozess, der normalerweise von Administratoren durchgeführt wird. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=de).
+Bevor Sie Daten von Real-Time CDP an Zielpartner senden können, müssen Sie zunächst eine Verbindung zu diesen Partnern herstellen. Dieses Video führt Sie durch diesen Prozess, der normalerweise von Administratoren durchgeführt wird. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on)

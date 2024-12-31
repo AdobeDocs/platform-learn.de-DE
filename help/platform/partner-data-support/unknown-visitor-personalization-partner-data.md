@@ -1,6 +1,6 @@
 ---
-title: Personalisieren von Onsite-Erlebnissen für unbekannte Besucher mithilfe der von Partnern unterstützten Besuchererkennung
-description: Erfahren Sie, wie Sie Attribute von Drittanbietern aus dem [!DNL Adobe Experience Platform Web SDK] erfassen und Ihr Onsite-Erlebnis für unbekannte Besucher mit der von Partnern unterstützten Besuchererkennung personalisieren können.
+title: Personalisieren von Onsite-Erlebnissen für unbekannte Besucher mithilfe der partnergestützten Besuchererkennung
+description: Erfahren Sie, wie Sie Drittanbieterattribute aus der  [!DNL Adobe Experience Platform Web SDK]  erfassen und Ihr Onsite-Erlebnis für unbekannte Besucher mithilfe der partnergestützten Besuchererkennung personalisieren können.
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Personalisieren von Onsite-Erlebnissen für unbekannte Besucher mithilfe der von Partnern unterstützten Besuchererkennung
+# Personalisieren von Onsite-Erlebnissen für unbekannte Besucher mithilfe der partnergestützten Besuchererkennung
 
-Erfahren Sie, wie Sie Attribute von Drittanbietern aus dem [!DNL Adobe Experience Platform Web SDK] erfassen und Ihr Onsite-Erlebnis für unbekannte Besucher mithilfe der von Partnern unterstützten Besuchererkennung personalisieren können. Weitere Informationen finden Sie in der Dokumentation [Verwenden der von Partnern unterstützten Besuchererkennung zur Personalisierung von Onsite-Erlebnissen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) .
+Erfahren Sie, wie Sie mithilfe der partnergestützten Besuchererkennung Drittanbieterattribute aus der [!DNL Adobe Experience Platform Web SDK] erfassen und Ihr Onsite-Erlebnis für unbekannte Besucher personalisieren können. Weitere Informationen finden Sie in der Dokumentation [Verwenden der partnergestützten Besuchererkennung zum Personalisieren von Onsite-Erlebnissen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on)

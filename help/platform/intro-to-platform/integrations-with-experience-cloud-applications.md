@@ -1,5 +1,5 @@
 ---
-title: Integrationen mit Experience Cloud-Applikationen
+title: Integrationen mit Experience Cloud-Anwendungen
 description: Erfahren Sie, wie Experience Platform in Experience Cloud-Anwendungen integriert werden kann.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
@@ -14,7 +14,7 @@ ht-degree: 57%
 
 ---
 
-# Integrationen zwischen Adobe Experience Platform- und Adobe Experience Cloud-Anwendungen
+# Integrationen zwischen Adobe Experience Platform- und Adobe Experience Cloud-Programmen
 
 Erfahren Sie, wie Experience Platform in Experience Cloud-Anwendungen integriert werden kann.
 

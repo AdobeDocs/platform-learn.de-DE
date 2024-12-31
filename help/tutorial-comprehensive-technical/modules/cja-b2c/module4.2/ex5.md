@@ -1,74 +1,75 @@
 ---
-title: Daten aus Google Analytics in Adobe Experience Platform mit dem BigQuery Source Connector erfassen und analysieren - Google Analytics-Daten mithilfe von Customer Journey Analytics analysieren
-description: Daten aus Google Analytics in Adobe Experience Platform mit dem BigQuery Source Connector erfassen und analysieren - Google Analytics-Daten mithilfe von Customer Journey Analytics analysieren
+title: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector - Analysieren von Google Analytics-Daten mit Customer Journey Analytics
+description: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector - Analysieren von Google Analytics-Daten mit Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 2%
 
 ---
 
-# 4.2.5 Google Analytics-Daten mithilfe von Customer Journey Analytics analysieren
+# 4.2.5 Analysieren von Google Analytics-Daten mit Customer Journey Analytics
 
 ## Ziele
 
-- BigQuery-Datensatz mit Customer Journey Analytics (CJA) verbinden
-- Verbinden Sie Google Analytics mit Treuedaten und schließen Sie sie an.
+- Verbinden Ihres BigQuery-Datensatzes mit Customer Journey Analytics (CJA)
+- Treuedaten verbinden und Google Analytics beitreten
 - Kennenlernen der CJA-Benutzeroberfläche
 
-## 4.2.5.1 Verbindung erstellen
+## 4.2.5.1 Verbindung herstellen
 
-Wechseln Sie zu [analytics.adobe.com](https://analytics.adobe.com) , um auf Customer Journey Analytics zuzugreifen.
+Navigieren Sie zu [analytics.adobe.com](https://analytics.adobe.com), um auf Customer Journey Analytics zuzugreifen.
 
 ![demo](./images/1a.png)
 
-Wechseln Sie auf der Customer Journey Analytics-Homepage zu **Verbindungen**.
+Gehen Sie auf der Customer Journey Analytics-Homepage zu **Verbindungen**.
 
 ![demo](./images/conn1.png)
 
-Hier sehen Sie alle Verbindungen, die zwischen CJA und Platform hergestellt wurden. Diese Verbindungen haben dasselbe Ziel wie Report Suites in Adobe Analytics. Die Erfassung der Daten ist jedoch völlig anders. Alle Daten stammen aus Adobe Experience Platform-Datensätzen.
+Hier können Sie die verschiedenen Verbindungen sehen, die zwischen CJA und Platform hergestellt wurden. Diese Verbindungen verfolgen dasselbe Ziel wie Report Suites in Adobe Analytics. Die Erfassung der Daten ist jedoch völlig anders. Alle Daten stammen aus Adobe Experience Platform-Datensätzen.
 
 ![demo](./images/2.png)
 
-Klicken Sie auf **Neue Verbindung erstellen**.
+Klicken Sie **Neue Verbindung erstellen**.
 
 ![demo](./images/conn3.png)
 
-Daraufhin wird die Benutzeroberfläche **Verbindung erstellen** angezeigt.
+Anschließend wird die Benutzeroberfläche **Verbindung erstellen** angezeigt.
 
 ![demo](./images/5.png)
 
-Zunächst müssen Sie die richtige Sandbox auswählen, die verwendet werden soll. Wählen Sie im Sandbox-Menü Ihre Sandbox aus, die `--aepSandboxName--` sein soll. In diesem Beispiel lautet die zu verwendende Sandbox **AEP-Aktivierung FY21**.
+Zunächst müssen Sie die richtige zu verwendende Sandbox auswählen. Wählen Sie im Menü Sandbox Ihre Sandbox aus, die `--aepSandboxName--` werden soll. In diesem Beispiel ist die zu verwendende Sandbox **AEP-Aktivierung FY21**.
 
 ![demo](./images/cjasb.png)
 
-Nach Auswahl Ihrer Sandbox werden die verfügbaren Datensätze aktualisiert.
+Nach Auswahl der Sandbox werden die verfügbaren Datensätze aktualisiert.
 
 ![demo](./images/cjasb1.png)
 
-Im linken Menü können Sie alle verfügbaren Adobe Experience Platform-Datensätze sehen. Suchen Sie nach dem Datensatz &quot;`Demo System - Event Dataset for BigQuery (Global v1.1)`&quot;. Klicken Sie auf **+** , um den Datensatz zu dieser Verbindung hinzuzufügen.
+Im linken Menü können Sie alle verfügbaren Adobe Experience Platform-Datensätze sehen. Suchen Sie nach der `Demo System - Event Dataset for BigQuery (Global v1.1)`. Klicken Sie auf **+**, um den Datensatz zu dieser Verbindung hinzuzufügen.
 
 ![demo](./images/6.png)
 
-Nach dem Hinzufügen wird der Datensatz in der Verbindung angezeigt.
+Nach dem Hinzufügen wird der Datensatz innerhalb der Verbindung angezeigt.
 
-Jetzt müssen Sie die **Personen-ID** auswählen. Stellen Sie sicher, dass **loyaltyId** als Personen-ID ausgewählt ist.
+Jetzt müssen Sie die **Personen-ID** auswählen. Stellen Sie sicher **dass „loyaltyId** als Personen-ID ausgewählt ist.
 
 ![demo](./images/8.png)
 
-Sie ergänzen nun die Interaktionsdaten der Google Analytics-Website mit einem anderen Adobe Experience Platform-Datensatz.
+Sie reichern nun die Daten zu Google Analytics Website Interaction mit einem anderen Adobe Experience Platform-Datensatz an.
 
-Suchen Sie nach dem Datensatz `Demo System - Profile Dataset for Loyalty (Global v1.1)` -Datensatz und fügen Sie ihn dieser Verbindung hinzu.
+Suchen Sie nach dem Datensatz `Demo System - Profile Dataset for Loyalty (Global v1.1)` Datensatz und fügen Sie ihn zu dieser Verbindung hinzu.
 
 ![demo](./images/10.png)
 
-Daraufhin sehen Sie Folgendes:
+Sie sehen dann Folgendes:
 
 ![demo](./images/10a.png)
 
-Um beide Datensätze zusammenzuführen, müssen Sie eine **Personen-ID** auswählen, die denselben ID-Typ enthält. Der Datensatz `Demo System - Profile Dataset for Loyalty (Global v1.1)` verwendet die **loyaltyId** als Personen-ID, die denselben Typ von IDs wie die `Demo System - Event Dataset for BigQuery (Global v1.1)` enthält, die auch die **loyaltyId** als Personen-ID verwendet.
+Um beide Datensätze zusammenzuführen, müssen Sie eine **Personen-ID** auswählen, die denselben ID-Typ enthält. Der Datensatz verwendet `Demo System - Profile Dataset for Loyalty (Global v1.1)` die **LoyaltyId** als Personen-ID, die denselben ID-Typ wie die `Demo System - Event Dataset for BigQuery (Global v1.1)` enthält, die auch die **LoyaltyId** als Personen-ID verwendet.
 
 ![demo](./images/12.png)
 
@@ -76,94 +77,94 @@ Klicken Sie auf **Weiter**.
 
 ![demo](./images/14.png)
 
-Daraufhin sehen Sie Folgendes:
+Sie sehen dann Folgendes:
 
 ![demo](./images/15.png)
 
 Hier müssen Sie Ihrer Verbindung einen Namen geben.
 
-Verwenden Sie diese Namenskonvention: `ldap - GA + Loyalty Data Connection`.
+Bitte diese Namenskonvention verwenden: `ldap - GA + Loyalty Data Connection`.
 
 Beispiel: `vangeluw - GA + Loyalty Data Connection`
 
-Bevor Sie fertig sind, aktivieren Sie bitte auch **ab heute alle neuen Daten für alle Datensätze in dieser Verbindung automatisch importieren .** wie in der Abbildung unten.
+Bitte aktivieren Sie auch &quot;**alle neuen Daten für alle Datensätze in dieser Verbindung automatisch importieren“, bevor Sie den Vorgang abschließen.** wie in der Abbildung unten dargestellt.
 
 ![demo](./images/16.png)
 
-Dadurch wird alle 60 Minuten ein Datenfluss von Adobe Experience Platform nach CJA gestartet, bei großen Datenmengen kann es jedoch bis zu 24 Stunden dauern.
+Dadurch wird alle 60 Minuten ein Datenfluss von Adobe Experience Platform zu CJA gestartet. Bei großen Datenmengen kann dies jedoch bis zu 24 Stunden dauern.
 
-Sie müssen auch historische Daten aufstocken. Aktivieren Sie daher das Kontrollkästchen für &quot;**Alle vorhandenen Daten importieren**&quot;und wählen Sie &quot;**weniger als 1 Million**&quot;unter &quot;**Durchschnittliche Anzahl der täglichen Ereignisse**&quot;.
+Sie müssen auch historische Daten aufstocken. Aktivieren Sie daher das Kontrollkästchen für **Alle vorhandenen Daten importieren** und wählen Sie **weniger als 1 Million** unter **Durchschnittliche Anzahl der täglichen Ereignisse**.
 
 ![demo](./images/17.png)
 
-Nachdem Sie Ihre **Verbindung** erstellt haben, kann es einige Stunden dauern, bis Ihre Daten in Customer Journey Analytics verfügbar sind.
+Nachdem Sie Ihre **Verbindung** erstellt haben, kann es einige Stunden dauern, bis Ihre Daten in CJA verfügbar sind.
 
-Klicken Sie auf **Speichern** und gehen Sie zur nächsten Übung.
+Klicken Sie **Speichern** und gehen Sie zur nächsten Übung.
 
 ![demo](./images/cjasave.png)
 
-Ihre Verbindung wird dann in der Liste der verfügbaren Verbindungen angezeigt.
+Anschließend wird Ihre Verbindung in der Liste der verfügbaren Verbindungen angezeigt.
 
 ![demo](./images/18.png)
 
 ## 4.2.5.2 Datenansicht erstellen
 
-Nachdem die Verbindung hergestellt wurde, können Sie jetzt Fortschritte bei der Beeinflussung der Visualisierung erzielen. Ein Unterschied zwischen Adobe Analytics und CJA besteht darin, dass CJA eine Datenansicht benötigt, um die Daten vor der Visualisierung zu bereinigen und vorzubereiten.
+Nachdem Sie Ihre Verbindung hergestellt haben, können Sie jetzt mit der Beeinflussung der Visualisierung fortfahren. Ein Unterschied zwischen Adobe Analytics und CJA besteht darin, dass CJA eine Datenansicht benötigt, um die Daten vor der Visualisierung zu bereinigen und vorzubereiten.
 
-Eine Datenansicht ähnelt dem Konzept von Virtual Report Suites in Adobe Analytics, wo Sie kontextbezogene Besuchsdefinitionen, Filtervorgänge und auch die Art und Weise definieren, wie die Komponenten aufgerufen werden.
+Eine Datenansicht ähnelt dem Konzept von Virtual Report Suites in Adobe Analytics, wo Sie kontextabhängige Besuchsdefinitionen, Filter und auch die Aufrufart der Komponenten definieren.
 
-Sie benötigen mindestens eine Datenansicht pro Verbindung. Für einige Anwendungsfälle ist es jedoch großartig, mehrere Datenansichten für dieselbe Verbindung zu haben, um verschiedenen Teams unterschiedliche Einblicke zu geben.
+Es wird mindestens eine Datenansicht pro Verbindung benötigt. In einigen Anwendungsfällen ist es jedoch von Vorteil, mehrere Datenansichten für dieselbe Verbindung zu haben, mit dem Ziel, verschiedenen Teams unterschiedliche Einblicke zu gewähren.
 
-Wenn Sie möchten, dass Ihr Unternehmen datengesteuert wird, sollten Sie anpassen, wie Daten in den einzelnen Teams angezeigt werden. Beispiele:
+Wenn Sie möchten, dass Ihr Unternehmen datengesteuert wird, sollten Sie anpassen, wie Daten in jedem Team angezeigt werden. Einige Beispiele:
 
 - UX-Metriken nur für das UX-Design-Team
-- Verwenden Sie dieselben Namen für KPIs und Metriken für Google Analytics wie für Customer Journey Analytics, damit das Digital Analytics-Team nur 1 Sprache sprechen kann.
-- Datenansicht gefiltert, um z. B. Daten nur für 1 Markt, 1 Marke oder nur für Mobilgeräte anzuzeigen.
+- Verwenden Sie für KPIs und Metriken für Google Analytics dieselben Namen wie für Customer Journey Analytics, damit das Digital-Analytics-Team nur eine Sprache sprechen kann.
+- Die Datenansicht wurde gefiltert, um beispielsweise Daten nur für einen Markt, eine Marke oder nur für Mobilgeräte anzuzeigen.
 
-Aktivieren Sie im Bildschirm **Verbindungen** das Kontrollkästchen vor der soeben erstellten Verbindung.
+Aktivieren **auf dem Bildschirm** Verbindungen“ das Kontrollkästchen vor der soeben erstellten Verbindung.
 
 ![demo](./images/exta.png)
 
-Klicken Sie nun auf **Datenansicht erstellen**.
+Klicken Sie jetzt **Datenansicht erstellen**.
 
 ![demo](./images/extb.png)
 
-Sie werden zum Workflow **Datenansicht erstellen** weitergeleitet.
+Sie werden zum Workflow **Datenansicht erstellen“**.
 
 ![demo](./images/extc.png)
 
-Sie können jetzt die grundlegenden Definitionen für Ihre Datenansicht konfigurieren. Dinge wie Zeitzone, Sitzungs-Timeout oder die Datenansichtsfilterung (der Segmentierungsteil ähnelt Virtual Report Suites in Adobe Analytics).
+Jetzt können Sie die grundlegenden Definitionen für Ihre Datenansicht konfigurieren. Dinge wie Zeitzone, Sitzungs-Timeout oder die Filterung der Datenansicht (der Segmentierungsteil ähnelt Virtual Report Suites in Adobe Analytics).
 
-Die **Verbindung**, die Sie in der vorherigen Übung erstellt haben, ist bereits ausgewählt. Ihre Verbindung heißt `ldap - GA + Loyalty Data Connection`.
+Die **Verbindung** die Sie in der vorherigen Übung erstellt haben, ist bereits ausgewählt. Ihre Verbindung heißt `ldap - GA + Loyalty Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Geben Sie anschließend der Datenansicht einen Namen, der dieser Namenskonvention entspricht: `ldap - GA + Loyalty Data View`.
+Geben Sie als Nächstes Ihrer Datenansicht einen Namen, der dieser Namenskonvention folgt: `ldap - GA + Loyalty Data View`.
 
-Geben Sie für die Beschreibung denselben Wert ein: `ldap - GA + Loyalty Data View`.
+Geben Sie denselben Wert für die Beschreibung ein: `ldap - GA + Loyalty Data View`.
 
-Vor der Analyse oder Visualisierung müssen wir eine Datenansicht mit allen Feldern, Dimensionen und Metriken und ihren Attributionseinstellungen erstellen.
+Bevor wir eine Analyse oder Visualisierung durchführen können, müssen wir eine Datenansicht mit allen Feldern, Dimensionen und Metriken und ihren Attributionseinstellungen erstellen.
 
 | Feld | Namenskonvention | Beispiel |
 | ----------------- |-------------|-------------|  
-| Namensverbindung | ldap - GA- und Loyalitätsdatenansicht | vangeluw - GA + Loyalty Data View |
-| Beschreibung | ldap - GA- und Loyalitätsdatenansicht | vangeluw - GA + Loyalty Data View |
+| Name der Verbindung | LDAP - GA- und Treueprogramm-Datenansicht | Vangeluw - GA- und Treueprogramm-Datenansicht |
+| Beschreibung | LDAP - GA- und Treueprogramm-Datenansicht | Vangeluw - GA- und Treueprogramm-Datenansicht |
 
 ![demo](./images/22.png)
 
-Klicken Sie auf **Speichern und fortfahren**.
+Klicken Sie **Speichern und fortfahren**.
 
 ![demo](./images/23.png)
 
-Sie können Ihrer Datenansicht jetzt Komponenten hinzufügen. Wie Sie sehen können, werden einige Metriken und Dimensionen automatisch hinzugefügt.
+Sie können jetzt Komponenten zu Ihrer Datenansicht hinzufügen. Wie Sie sehen können, werden einige Metriken und Dimensionen automatisch hinzugefügt.
 
 ![demo](./images/24.png)
 
 Fügen Sie der Datenansicht die folgenden Komponenten hinzu:
 
-| Komponentenname | Komponententyp | Komponentenpfad |
+| Name der Komponente | Komponententyp | Komponentenpfad |
 | -----------------|-----------------|-----------------|
-| level | Dimension | _experienceplatform.loyaltyDetails.level |
+| Ebene | Dimension | _experienceplatform.loyaltyDetails.level |
 | Punkte | Metrik | _experienceplatform.loyaltyDetails.points |
 | commerce.checkouts.value | Metrik | commerce.checkouts.value |
 | commerce.productListRemovals.value | Metrik | commerce.productListRemovals.value |
@@ -175,47 +176,47 @@ Fügen Sie der Datenansicht die folgenden Komponenten hinzu:
 | channel.mediaType | Dimension | channel.mediaType |
 | channel.typeAtSource | Dimension | channel.typeAtSource |
 | Trackingcode | Dimension | marketing.trackingCode |
-| gaid | Dimension | _experienceplatform.identification.core.gaid |
+| GAID | Dimension | _experienceplatform.identification.core.gaid |
 | web.webPageDetails.name | Dimension | web.webPageDetails.name |
 | Ereignistyp | Dimension | eventType |
 | Anbieter | Dimension | environment.browserDetails.vendor |
 | Kennung | Dimension | _id |
 | Zeitstempel | Dimension | Zeitstempel |
 | Typ | Dimension | device.type |
-| loyaltyId | Dimension | _experiencePlatform.identification.core.loyaltyId |
+| LoyaltyId | Dimension | _experienceplatform.identification.core.loyaltyId |
 
-Dann haben Sie Folgendes:
+Sie erhalten dann Folgendes:
 
 ![demo](./images/25.png)
 
-Als Nächstes müssen Sie den Anzeigenamen einiger der oben genannten Metriken und Dimensionen ändern, damit Sie sie bei der Erstellung Ihrer Analyse einfach verwenden können. Wählen Sie dazu die Metrik oder Dimension aus und aktualisieren Sie das Feld **Name** , wie in der folgenden Abbildung angegeben.
+Als Nächstes müssen Sie den Anzeigenamen einiger der oben genannten Metriken und Dimensionen ändern, damit Sie sie beim Erstellen Ihrer Analyse einfach verwenden können. Wählen Sie dazu die Metrik oder Dimension aus und aktualisieren Sie das Feld **Name** wie in der folgenden Abbildung dargestellt.
 
 ![demo](./images/25a.png)
 
-| Ursprünglicher Name der Komponente | Anzeigename |
+| Ursprünglicher Komponentenname | Anzeigename |
 | -----------------|-----------------|
-| level | Treuestufe |
+| Ebene | Treuestufe |
 | Punkte | Treuepunkte |
 | commerce.checkouts.value | Checkouts |
-| commerce.productListRemovals.value | Entnahme aus Warenkorb |
+| commerce.productListRemovals.value | Entnahmen aus Warenkorb |
 | commerce.productListAdds | Hinzufügen zum Warenkorb |
 | commerce.productViews.value | Produktansichten |
 | commerce.purchases.value | Käufe |
 | web.webPageDetails.pageViews | Seitenansichten |
 | channel.mediaType | Traffic Medium |
 | channel.typeAtSource | Traffic-Quelle |
-| Trackingcode | Marketingkanal |
-| gaid | Google Analytics-ID |
+| Trackingcode | Marketing-Kanal |
+| GAID | Google Analytics-ID |
 | Name | Seitentitel |
 | Anbieter | Browser |
 | Typ | Device Type |
-| loyaltyId | Treue-ID |
+| LoyaltyId | Treue-ID |
 
-Sie haben dann etwas wie das:
+Sie erhalten dann etwas wie das Folgende:
 
 ![demo](./images/25b.png)
 
-Als Nächstes müssen Sie einige Änderungen am Personen- und Sitzungskontext für einige dieser Komponenten vornehmen, indem Sie die **Attributionseinstellungen** ändern.
+Als Nächstes müssen Sie einige Änderungen am Personen- und Sitzungskontext für einige dieser Komponenten vornehmen, indem Sie die &quot;**&quot;**.
 
 ![demo](./images/25c.png)
 
@@ -224,7 +225,7 @@ Als Nächstes müssen Sie einige Änderungen am Personen- und Sitzungskontext f�
 | Komponente |
 | -----------------|
 | Traffic-Quelle |
-| Marketingkanal |
+| Marketing-Kanal |
 | Browser |
 | Traffic Medium |
 | Device Type |
@@ -233,7 +234,7 @@ Als Nächstes müssen Sie einige Änderungen am Personen- und Sitzungskontext f�
 | Treuestufe |
 | Treuepunkte |
 
-Wählen Sie dazu die Komponente aus, klicken Sie auf **Benutzerdefiniertes Attributionsmodell verwenden** und legen Sie das **Modell** auf **Letztkontakt** und das **Ablaufdatum** auf **Person (Berichtsfenster)** fest. Wiederholen Sie diesen Vorgang für alle oben genannten Komponenten.
+Wählen Sie dazu die Komponente aus, klicken Sie auf **Benutzerdefiniertes Attributionsmodell verwenden** und legen Sie **Modell** auf **Letztkontakt** und **Gültigkeit** auf **Person (Reporting-Fenster)**. Wiederholen Sie dies für alle oben genannten Komponenten.
 
 ![demo](./images/27a.png)
 
@@ -245,19 +246,19 @@ Ihre Datenansicht ist jetzt konfiguriert. Klicken Sie auf **Speichern**.
 
 ![demo](./images/30.png)
 
-Sie können jetzt Google Analytics-Daten in Adobe Analytics Analysis Workspace analysieren. Lasst uns zur nächsten Übung übergehen.
+Sie können jetzt die Daten von Google Analytics in Adobe Analytics Analysis Workspace analysieren. Gehen wir zur nächsten Übung über.
 
-## 4.2.5.3 Projekt erstellen
+## 4.2.5.3 Erstellen eines Projekts
 
-Wechseln Sie unter Customer Journey Analytics zu **Projekte**.
+Gehen Sie in Customer Journey Analytics zu **Projekte**.
 
 ![demo](./images/pro1.png)
 
-Daraufhin sehen Sie Folgendes:
+Sie sehen dann Folgendes:
 
 ![demo](./images/pro2.png)
 
-Erstellen Sie ein Projekt, indem Sie auf **Neues Projekt erstellen** klicken.
+Erstellen Sie ein Projekt, indem **Neues Projekt erstellen** klicken.
 
 ![demo](./images/pro3.png)
 
@@ -265,28 +266,28 @@ Sie haben jetzt ein leeres Projekt:
 
 ![demo](./images/pro4.png)
 
-Speichern Sie zunächst Ihr Projekt und geben Sie ihm einen Namen. Sie können den folgenden Befehl zum Speichern verwenden:
+Speichern Sie zunächst Ihr Projekt und geben Sie ihm einen Namen. Sie können den folgenden Befehl verwenden, um zu speichern:
 
-| Betriebssystem | Kurzschnitt |
+| Betriebssystem | Abkürzung |
 | ----------------- |-------------| 
-| Windows | Kontrolle + S |
+| Windows | Strg+S |
 | Mac | Befehl + S |
 
-Dieses Popup wird angezeigt:
+Daraufhin wird dieses Popup angezeigt:
 
 ![demo](./images/prsave.png)
 
-Bitte verwenden Sie diese Namenskonvention:
+Bitte diese Namenskonvention verwenden:
 
 | Name | Beschreibung |
 | ----------------- |-------------| 
-| ldap - GA + Loyalty Workspace | ldap - GA + Loyalty Workspace |
+| LDAP - GA + Loyalty Workspace | LDAP - GA + Loyalty Workspace |
 
 Klicken Sie anschließend auf **Projekt speichern**.
 
 ![demo](./images/prsave2.png)
 
-Wählen Sie dann in der oberen rechten Ecke des Bildschirms die korrekte Datenansicht aus. Dies ist die Datenansicht, die Sie in der vorherigen Übung mit der Namenskonvention `ldap - GA + Loyalty Data View` erstellt haben. In diesem Beispiel ist die auszuwählende Datenansicht `ldap - GA + Loyalty Data View`.
+Wählen Sie anschließend die richtige Datenansicht in der oberen rechten Ecke Ihres Bildschirms aus. Dies ist die Datenansicht, die Sie in der vorherigen Übung erstellt haben, mit der `ldap - GA + Loyalty Data View` der Namenskonvention. In diesem Beispiel ist die auszuwählende Datenansicht `ldap - GA + Loyalty Data View`.
 
 ![demo](./images/prdvlist.png)
 
@@ -294,87 +295,87 @@ Wählen Sie dann in der oberen rechten Ecke des Bildschirms die korrekte Datenan
 
 ### 12.5.3.1 Freiformtabellen
 
-Freiformtabellen funktionieren mehr oder weniger als Pivot-Tabellen in Excel. Sie wählen etwas aus der linken Leiste aus, ziehen es in die Freiform und erhalten einen Tabellenbericht.
+Freiformtabellen funktionieren mehr oder weniger als Pivot-Tabellen in Excel. Sie wählen etwas aus der linken Leiste aus, ziehen es in die Freiform und Sie erhalten einen Tabellenbericht.
 
-Freiformtabellen sind fast grenzenlos. Sie können (fast) alles tun, was im Vergleich zu Google Analytics so viel Wert bringt (da dieses Tool einige Analyseeinschränkungen aufweist). Dies ist einer der Gründe, warum Google Analytics-Daten in ein anderes Analysetool geladen werden.
+Freiformtabellen sind nahezu unbegrenzt. Sie können (fast) alles tun, und das bringt so viel Wert im Vergleich zu Google Analytics (da dieses Tool einige Analyseeinschränkungen hat). Dies ist einer der Gründe dafür, Google Analytics-Daten in ein anderes Analyse-Tool zu laden.
 
-Sehen Sie sich zwei Beispiele an, in denen Sie SQL, BigQuery und einige Zeit benötigen, um einfache Fragen zu beantworten, die in der Google Analytics-Benutzeroberfläche oder Google Data Studio nicht möglich sind:
+Nachfolgend sehen Sie zwei Beispiele, in denen Sie SQL, BigQuery und einige Zeit benötigen, um einfache Fragen zu beantworten, die in der Google Analytics-Benutzeroberfläche oder in Google Data Studio nicht möglich sind:
 
-- Wie viele Personen gelangen zum Checkout aus dem Safari-Browser, aufgeteilt nach Marketing-Kanälen? Beachten Sie, dass die Checkout-Metrik vom Safari-Browser gefiltert wird. Die Variable Browser = Safari wurde einfach per Drag-and-Drop auf die Checkout-Spalte verschoben.
+- Wie viele Personen gelangen zur Kasse über den Safari-Browser, aufgeteilt nach Marketing-Kanal? Beachten Sie, dass die Checkout-Metrik vom Safari-Browser gefiltert wird. Wir haben gerade die Variable Browser = Safari auf die Checkout-Spalte gezogen und dort abgelegt.
 
-- Als Analytiker kann ich sehen, dass der Social Marketing-Kanal geringe Konversionen aufweist. Ich verwende die Letztkontakt-Attribution als Standard, aber was ist mit Erstkontakt? Wenn Sie den Mauszeiger über eine Metrik bewegen, werden die Metrikeinstellungen angezeigt. Dort kann ich das gewünschte Attributionsmodell auswählen. Sie können die Attribution in GA (nicht in Data Studio) als eigenständige Aktivität durchführen, aber Sie können keine anderen Metriken oder Dimensionen haben, die nicht mit der Attributionsanalyse in derselben Tabelle in Verbindung stehen.
+- Als Analyst kann ich sehen, dass der Social-Media-Marketing-Kanal niedrige Konversionen hat. Ich verwende die Attribution Letztkontakt als Standard, aber wie sieht es mit Erstkontakt aus? Wenn Sie den Mauszeiger über eine beliebige Metrik bewegen, werden die Metrikeinstellungen angezeigt. Dort kann ich das gewünschte Attributionsmodell auswählen. Sie können die Attribution in GA (nicht in Data Studio) als eigenständige Aktivität durchführen, aber Sie können nicht andere Metriken oder Dimensionen innerhalb derselben Tabelle haben, die nicht mit der Attributionsanalyse verbunden sind.
 
-Beantworten wir diese Fragen und weitere Fragen mit Analysis Workspace in CJA.
+Beantworten wir diese und einige weitere Fragen mit Analysis Workspace in CJA.
 
-Wählen Sie zunächst den richtigen Datumsbereich (**Letzte 53 volle Wochen**) auf der rechten Seite des Bedienfelds aus.
+Wählen Sie zunächst den rechten Datumsbereich (**Letzte 53 volle Wochen**) auf der rechten Seite des Bedienfelds aus.
 
 ![demo](./images/pro11.png)
 
-Klicken Sie dann auf **Anwenden** , um den Datumsbereich anzuwenden. Merken Sie sich diesen Schritt für die nächsten Übungen.
+Klicken Sie anschließend **Anwenden**, um den Datumsbereich anzuwenden. Merken Sie sich diesen Schritt für die nächsten Übungen.
 
 ![demo](./images/apply.png)
 
 >[!NOTE]
 >
->Wenn Sie gerade die **Datenverbindung** und die **Datenansicht** erstellt haben, müssen Sie möglicherweise einige Stunden warten. CJA benötigt etwas Zeit, um historische Daten aufzustocken, wenn eine große Menge an Datensätzen vorhanden ist.
+>Wenn Sie gerade die **Datenverbindung** und **Datenansicht** erstellt haben, müssen Sie möglicherweise einige Stunden warten. CJA benötigt etwas Zeit, um historische Daten aufzustocken, wenn eine große Menge an Datensätzen vorhanden ist.
 
-Ziehen wir einige Dimensionen und Metriken per Drag-and-Drop in den Arbeitsbereich, um die Marketing-Kanäle zu analysieren. Verwenden Sie zunächst die Dimension **Marketing-Kanal** und ziehen Sie sie auf die Arbeitsfläche der **Freiformtabelle**. (Klicken Sie auf **Alle anzeigen** , falls die Metrik nicht sofort im Menü &quot;Metriken&quot;angezeigt wird)
+Ziehen wir einige Dimensionen und Metriken per Drag-and-Drop in die Analyse der Marketing-Kanäle. Verwenden Sie zunächst die Dimension **Marketing-**) und ziehen Sie sie per Drag-and-Drop auf die Arbeitsfläche der **Freiformtabelle**. (Klicken Sie auf **Alle anzeigen** falls Sie die Metrik nicht sofort im Menü Metriken sehen)
 
 ![demo](./images/pro14.png)
 
-Daraufhin sehen Sie Folgendes:
+Sie sehen dann Folgendes:
 
 ![demo](./images/pro14a.png)
 
-Als Nächstes müssen Sie die Metriken zur Freiformtabelle hinzufügen. Sie sollten diese Metriken hinzufügen: **Personen**, **Sitzungen**, **Produktansichten**, **Checkouts**, **Einkäufe**, **Konversionsrate** (berechnete Metrik).
+Als Nächstes müssen Sie die Metriken zur Freiformtabelle hinzufügen. Sie sollten diese Metriken hinzufügen: **Personen**, **Sitzungen**, **Produktansichten**, **Checkouts**, **Käufe**, **Konversionsrate** (berechnete Metrik).
 
-Bevor Sie dies tun können, müssen Sie die berechnete Metrik **Konversionsrate** erstellen. Klicken Sie dazu auf das Symbol **+** neben Metriken:
+Bevor Sie dies tun können, müssen Sie die berechnete Metrik **Konversionsrate)**. Klicken Sie dazu auf das Symbol **+** neben Metriken:
 
 ![demo](./images/procalc1.png)
 
-Verwenden Sie als Namen für die berechnete Metrik **Konversionsrate**. Ziehen Sie dann die Metriken **Kauf** und **Sitzungen** auf die Arbeitsfläche. Setzen Sie **Format** auf **Prozent** und **Dezimalstellen** auf **2**. Klicken Sie abschließend auf **Speichern**.
+Verwenden Sie als Namen für die berechnete Metrik **Konversionsrate**. Ziehen Sie dann die Metriken **Kauf** und **Sitzungen** auf die Arbeitsfläche. Legen Sie **Format** auf **Prozent** und **Dezimalstellen** auf **2** fest. Klicken Sie abschließend auf **Speichern**.
 
 ![demo](./images/procalc2.png)
 
-Um alle diese Metriken als Nächstes in der **Freiformtabelle** zu verwenden, ziehen Sie sie einzeln auf die **Freiformtabelle**. Siehe Beispiel unten.
+Als Nächstes sollten Sie alle diese Metriken in der **Freiformtabelle** einzeln per Drag-and-Drop auf die **Freiformtabelle** ziehen. Siehe folgendes Beispiel.
 
 ![demo](./images/pro16.png)
 
-Am Ende steht eine Tabelle wie diese:
+Am Ende haben Sie so einen Tisch:
 
 ![demo](./images/pro16a.png)
 
-Wie oben erwähnt, geben Ihnen **Freiformtabellen** die Freiheit, die Sie für eine tiefgehende Tauchanalyse benötigen. Sie können beispielsweise eine beliebige andere Dimension auswählen, um eine bestimmte Metrik in der Tabelle aufzuschlüsseln.
+Wie bereits erwähnt **bieten Ihnen** Freiformtabellen die Freiheit, die Sie für eine umfassende Analyse benötigen. Sie können beispielsweise eine beliebige andere Dimension auswählen, um eine bestimmte Metrik in der Tabelle aufzuschlüsseln.
 
-Navigieren Sie beispielsweise zu Dimensionen, suchen Sie nach und wählen Sie die Variable **Browser** aus.
+Gehen Sie beispielsweise zu Dimensionen und suchen Sie die Variable **Browser** und wählen Sie sie aus.
 
 ![demo](./images/new1.png)
 
-Daraufhin wird eine Übersicht der für diese Dimension verfügbaren Werte angezeigt.
+Anschließend sehen Sie eine Übersicht der verfügbaren Werte für diese Dimension.
 
 ![demo](./images/new2.png)
 
-Wählen Sie die Dimension **Safari** aus und ziehen Sie sie auf eine Metrik, z. B. **Checkouts**. Daraufhin sehen Sie Folgendes:
+Wählen Sie die Dimension **Safari** und ziehen Sie sie per Drag-and-Drop auf eine Metrik, z. B **„Checkouts**. Sie sehen dann Folgendes:
 
 ![demo](./images/new3.png)
 
-Auf diese Weise haben Sie gerade eine potenzielle Frage beantwortet, die Sie hatten: Wie viele Personen gelangen mit Safari zur Checkout-Seite, aufgeteilt nach Marketing-Kanal?
+Auf diese Weise haben Sie gerade eine potenzielle Frage beantwortet, die Sie hatten: Wie viele Personen gelangen mithilfe von Safari zur Checkout-Seite, aufgeteilt nach Marketing-Kanal?
 
-Antworten wir jetzt auf die Frage Attribution .
+Beantworten wir nun die Frage der Attribution .
 
-Suchen Sie die Metrik **Kauf** in der Tabelle.
+Suchen Sie die **Kauf** in der Tabelle.
 
 ![demo](./images/pro20.png)
 
-Bewegen Sie den Mauszeiger über die Metrik. Daraufhin wird das Symbol **Einstellungen** angezeigt. Klicken Sie darauf.
+Bewegen Sie den Mauszeiger über die Metrik **und ein Symbol** Einstellungen“ wird angezeigt. Klicken Sie darauf.
 
 ![demo](./images/pro21.png)
 
-Daraufhin wird ein Kontextmenü angezeigt. Aktivieren Sie das Kontrollkästchen für **nicht standardmäßiges Attributionsmodell**.
+Ein Kontextmenü wird angezeigt. Aktivieren Sie das Kontrollkästchen für **nicht standardmäßiges Attributionsmodell**.
 
 ![demo](./images/pro22.png)
 
-Im Popup-Fenster können Sie die Attributionsmodelle und das Lookback-Fenster einfach ändern (was mit SQL sehr komplex ist).
+Im Popup, das angezeigt wird, können Sie die Attributionsmodelle und das Lookback-Fenster (was mit SQL ziemlich komplex zu erreichen ist) einfach ändern.
 
 ![demo](./images/pro23.png)
 
@@ -386,44 +387,44 @@ Wählen Sie **Person** für das Lookback-Fenster aus.
 
 ![demo](./images/pro25.png)
 
-Klicken Sie nun auf **Anwenden**.
+Klicken Sie jetzt **Apply**.
 
 ![demo](./images/pro26.png)
 
-Sie können jetzt sehen, dass das Attributionsmodell für diese bestimmte Metrik jetzt &quot;Erstkontakt&quot;ist.
+Sie können jetzt sehen, dass das Attributionsmodell für diese bestimmte Metrik jetzt Erstkontakt ist.
 
 ![demo](./images/pro27.png)
 
-Sie können beliebig viele Aufschlüsselungen ohne Einschränkungen für Variablentypen, Segmente, Dimensionen oder Datumsbereiche durchführen.
+Sie können beliebig viele Aufschlüsselungen durchführen, ohne die Typen von Variablen, Segmenten, Dimensionen oder Datumsbereichen zu begrenzen.
 
-Noch wichtiger ist die Möglichkeit, beliebige Datensätze aus Adobe Experience Platform zu verknüpfen, um die digitalen Verhaltensdaten von Google Analytics anzureichern. Zum Beispiel Offline-, Callcenter-, Treueprogramm- oder CRM-Daten.
+Noch spezieller ist die Möglichkeit, einen beliebigen Datensatz aus Adobe Experience Platform zu verbinden, um die digitalen Verhaltensdaten von Google Analytics anzureichern. Beispielsweise offline, Callcenter, Treueprogramm oder CRM-Daten.
 
-Um diese Funktion zu demonstrieren, konfigurieren wir Ihre erste Aufschlüsselung, die Offline-Daten mit Online-Daten kombiniert. Wählen Sie die Dimension **Treueebene** aus und ziehen Sie sie auf einen beliebigen **Marketingkanal**, z. B. **Organische Suche**:
+Um diese Funktion zu präsentieren, konfigurieren wir Ihre erste Aufschlüsselung, die Offline-Daten mit Online-Daten kombiniert. Wählen Sie die Dimension **Treuestufe** und ziehen Sie sie per Drag-and-Drop auf einen **Marketing-Kanal**, z. B. **Organische Suche**:
 
 ![demo](./images/pro28.png)
 
-Als Nächstes analysieren wir, welcher **Gerätetyp** von Kunden verwendet wird, die mit **Organische Suche** auf die Site gelangt sind, mit einer **Treuestufe**, die **Bronze** lautet. Nehmen Sie die Dimension **Gerätetyp** und ziehen Sie sie auf **Bronze**. Daraufhin sehen Sie Folgendes:
+Als Nächstes analysieren wir, welcher **Gerätetyp** von Kunden verwendet wird, die mit der **organischen Suche** mit einem **Treuestufe**, nämlich **Bronze**, auf die Website gekommen sind. Nehmen Sie die Dimension **Gerätetyp** und ziehen Sie sie per Drag-and-Drop auf **Bronze**. Sie sehen dann Folgendes:
 
 ![demo](./images/pro29.png)
 
-Sie können sehen, dass für Ihre erste Aufschlüsselung die Treuestufe verwendet wird. Diese Dimension stammt aus einem anderen Datensatz und aus einem anderen Schema als dem, das Sie für den BigQuery-Connector verwendet haben. Die Personen-ID **loyaltyID** (Demo-System - Ereignisschema für BigQuery (Global v1.1) und die Kennung **loyaltyID** (Demo System - Profile Schema for Loyalty (Global v1.1) stimmen überein. Daher können Sie Erlebnisereignisse aus Google Analytics mit Profildaten aus dem Treueschema kombinieren.
+Sie können sehen, dass für Ihre erste Aufschlüsselung die Treuestufe verwendet wird. Diese Dimension stammt aus einem anderen Datensatz und einem anderen Schema als dem, das Sie für den BigQuery-Connector verwendet haben. Die Personen-ID **loyaltyID** (Demosystem - Ereignisschema für BigQuery (Global v1.1)) und **loyaltyID** (Demosystem - Profilschema für Treue (Global v1.1)) stimmen überein. Daher können Sie Erlebnisereignisse von Google Analytics mit Profildaten aus dem Treueschema kombinieren.
 
-Wir können die Zeilen weiterhin mit Segmenten oder bestimmten Datumsbereichen aufteilen (um möglicherweise bestimmte Fernsehkampagnen widerzuspiegeln), um Fragen an Customer Journey Analytics zu stellen und die Antworten unterwegs zu erhalten.
+Wir können die Zeilen nach Segmenten oder bestimmten Datumsbereichen aufteilen (möglicherweise um bestimmte TV-Kampagnen widerzuspiegeln), um Fragen an Customer Journey Analytics zu stellen und die Antworten unterwegs zu erhalten.
 
-Das gleiche Endergebnis mit SQL und dann einem Visualisierungs-Tool eines Drittanbieters zu erzielen, ist eine große Herausforderung. Besonders wenn Sie Fragen stellen und versuchen, die Antworten sofort zu bekommen. Customer Journey Analytics hat diese Herausforderung nicht und ermöglicht es Data Analysten, die Daten flexibel und in Echtzeit abzufragen.
+Dasselbe Endergebnis mit SQL und einem Visualisierungs-Tool von Drittanbietern zu erreichen, ist eine ziemliche Herausforderung. Besonders, wenn man Fragen stellt und versucht, Antworten im Flug zu bekommen. Customer Journey Analytics stellt diese Herausforderung nicht dar und ermöglicht es Datenanalysten, die Daten flexibel und in Echtzeit abzufragen.
 
-## 4.2.5.3.2 Trichteranalyse oder Fallout-Analyse
+## 4.2.5.3.2 Trichter- oder Fallout-Analyse
 
-Trichter eignen sich hervorragend, um die wichtigsten Schritte einer Journey zu verstehen. Diese Schritte können auch aus Offline-Interaktionen (z. B. vom Callcenter) stammen und dann mit digitalen Touchpoints im selben Trichter kombiniert werden.
+Trichter eignen sich hervorragend, um die wichtigsten Schritte auf einer Kunden-Journey zu verstehen. Diese Schritte können auch aus Offline-Interaktionen stammen (z. B. vom Callcenter) und dann mit digitalen Touchpoints im selben Trichter kombiniert werden.
 
-Customer Journey Analytics ermöglicht Ihnen das und vieles mehr. Wenn Sie sich an Modul 13 erinnern, können wir mit der rechten Maustaste klicken und Dinge wie:
+Mit Customer Journey Analytics kann man das und vieles mehr. Wenn Sie sich an Modul 13 erinnern, können wir mit der rechten Maustaste klicken und folgende Dinge tun:
 
-- Analysieren, wohin die Benutzer nach einem Fallout-Schritt navigieren
-- Erstellen eines Segments von einem beliebigen Punkt im Trichter
-- Anzeigen des Trends in einer Liniendiagramm-Visualisierung
+- Analysieren, wo die Benutzer nach einem Fallout-Schritt navigieren
+- Erstellen eines Segments aus einem beliebigen Punkt des Trichters
+- Den Trend in einem beliebigen Stadium in einer Liniendiagramm-Visualisierung anzeigen
 
 
-Sehen wir uns noch eine Sache an, die Sie tun können: Wie steht es mit meinem Kunden-Journey-Trichter in diesem Monat im Vergleich zum Vormonat? Was ist mit Mobile vs Desktop?
+Sehen wir uns eine andere Sache an, die Sie tun können: Wie ist mein Kunde Journey Funnel diesen Monat im Vergleich zum Vormonat? Was ist mit Mobile vs. Desktop?
 
 Nachfolgend werden zwei Bedienfelder erstellt:
 
@@ -432,59 +433,59 @@ Nachfolgend werden zwei Bedienfelder erstellt:
 
 Sie werden sehen, dass wir einen Trichter über verschiedene Zeiträume (Januar und Februar) vergleichen, aufgeteilt nach Gerätetyp.
 
-Diese Art von Analyse ist in der Google Analytics-Benutzeroberfläche nicht möglich oder sehr begrenzt. CJA fügt also den von Google Analytics erfassten Daten wieder viel Wert hinzu.
+Diese Art der Analyse ist in der Benutzeroberfläche von Google Analytics nicht möglich oder sehr eingeschränkt. CJA fügt also wieder viel Wert zu den von Google Analytics erfassten Daten hinzu.
 
-So erstellen Sie Ihre erste Fallout-Visualisierung. Schließen Sie das aktuelle Bedienfeld, um mit einem neuen zu beginnen.
+So erstellen Sie Ihre erste Fallout-Visualisierung: Bitte das aktuelle Panel schließen, um mit einem neuen zu beginnen.
 
 Sehen Sie sich die rechte Seite des Bedienfelds an und klicken Sie auf den Pfeil, um es zu schließen.
 
 ![demo](./images/pro33.png)
 
-Klicken Sie anschließend auf **+** , um einen neuen Bereich zu erstellen.
+Klicken Sie anschließend auf **+**, um ein neues Bedienfeld zu erstellen.
 
 ![demo](./images/pro35.png)
 
-Wählen Sie nun die Visualisierung **Fallout** aus.
+Wählen Sie jetzt die **Fallout**-Visualisierung aus.
 
 ![demo](./images/pro36.png)
 
-Angenommen, Sie möchten wissen, was mit Ihrem Haupt-E-Commerce-Trichter passiert: Startseite > Interne Suche > Produktdetails > Checkout > Kauf.
+Analysten können sich vorstellen, dass Sie verstehen möchten, was mit Ihrem Haupt-E-Commerce-Trichter passiert: Startseite > Interne Suche > Produktdetails > Checkout > Kauf.
 
-Beginnen wir mit dem Hinzufügen neuer Schritte zum Trichter. Öffnen Sie dazu die Dimension **Seitenname** .
+Beginnen wir mit dem Hinzufügen einiger neuer Schritte zum Trichter. Öffnen Sie dazu die Dimension **Seitenname** .
 
 ![demo](./images/pro37.png)
 
-Daraufhin werden alle verfügbaren Seiten angezeigt, die besucht wurden.
+Anschließend werden alle verfügbaren Seiten angezeigt, die besucht wurden.
 
 ![demo](./images/pro38.png)
 
-Ziehen Sie **Home** in den ersten Schritt.
+Ziehen Sie **Home** per Drag-and-Drop in den ersten Schritt.
 
 ![demo](./images/pro39.png)
 
-Verwenden Sie als zweiten Schritt **Suchergebnisse speichern**
+Verwenden Sie im zweiten Schritt **Suchergebnisse speichern**
 
 ![demo](./images/pro40.png)
 
-Jetzt müssen Sie einige E-Commerce-Aktionen hinzufügen. Suchen Sie in den Dimensionen nach der Dimension Dimension **Ereignistyp** . Klicken Sie auf , um die Dimension zu öffnen.
+Jetzt müssen Sie einige E-Commerce-Aktionen hinzufügen. Suchen Sie in den Dimensionen nach der Dimension Dimension **Ereignistyp** . Klicken, um die Dimension zu öffnen.
 
 ![demo](./images/pro41.png)
 
-Wählen Sie **Product_Detail_Views** aus und ziehen Sie es in den nächsten Schritt.
+Wählen Sie **product_detail_views** aus und ziehen Sie es per Drag-and-Drop in den nächsten Schritt.
 
 ![demo](./images/pro43.png)
 
-Wählen Sie **Product_Checkouts** aus und ziehen Sie es in den nächsten Schritt.
+Wählen Sie **product_checkouts** aus und ziehen Sie es per Drag-and-Drop in den nächsten Schritt.
 
 ![demo](./images/pro44.png)
 
-Ändern Sie die Größe Ihrer Fallout-Visualisierung.
+Ändern der Größe der Fallout-Visualisierung.
 
 ![demo](./images/pro45.png)
 
 Ihre Fallout-Visualisierung ist jetzt bereit.
 
-Um die Einblicke zu analysieren und zu dokumentieren, ist es immer eine gute Idee, eine **Text** -Visualisierung zu erstellen. Um eine **Text** -Visualisierung hinzuzufügen, klicken Sie im linken Menü auf das Symbol **Diagramm** , um alle verfügbaren Visualisierungen anzuzeigen. Ziehen Sie dann die Visualisierung **Text** auf die Arbeitsfläche. Ändern Sie die Größe und verschieben Sie sie so, dass sie wie unten dargestellt aussieht.
+Um mit der Analyse und Dokumentation der Einblicke zu beginnen, ist es immer eine gute Idee, eine **Text**-Visualisierung zu erstellen. Um eine **Text**-Visualisierung hinzuzufügen, klicken Sie auf das **Diagramm**-Symbol im linken Menü, um alle verfügbaren Visualisierungen anzuzeigen. Ziehen Sie dann die Visualisierung **Text** per Drag-and-Drop auf die Arbeitsfläche. Ändern Sie die Größe und verschieben Sie sie so, dass sie wie die Abbildung unten aussieht.
 
 ![demo](./images/pro48.png)
 
@@ -492,22 +493,22 @@ Um die Einblicke zu analysieren und zu dokumentieren, ist es immer eine gute Ide
 
 ![demo](./images/pro49.png)
 
-Fallouts-Visualisierungen ermöglichen auch Aufschlüsselungen. Verwenden Sie die Dimension **Gerätetyp** , indem Sie sie öffnen und einige der Werte nacheinander auf die Visualisierung ziehen:
+Fallout-Visualisierungen ermöglichen auch Aufschlüsselungen. Verwenden Sie die Dimension **Gerätetyp**, indem Sie sie öffnen und einige der Werte einzeln auf die Visualisierung ziehen:
 
 ![demo](./images/pro50.png)
 
-Sie erhalten eine erweiterte Visualisierung:
+Zum Schluss erhalten Sie eine erweiterte Visualisierung:
 
 ![demo](./images/pro51.png)
 
-Customer Journey Analytics ermöglicht Ihnen das und vieles mehr. Durch Rechtsklick auf eine beliebige Stelle im Fallout...
+Mit Customer Journey Analytics kann man das und vieles mehr. Wenn Sie mit der rechten Maustaste auf eine beliebige Stelle im Fallout klicken, können Sie…
 
 - Analysieren, wohin die Benutzer von einem Fallout-Schritt gehen
-- Erstellen eines Segments von einem beliebigen Punkt im Trichter
-- Trend für jeden Schritt in einer Linienvisualisierung erstellen
-- Vergleichen Sie alle Trichter visuell mit verschiedenen Zeiträumen.
+- Erstellen eines Segments aus einem beliebigen Punkt des Trichters
+- Trennen beliebiger Schritte in einer Linienvisualisierung
+- Vergleichen Sie auf visuelle Weise einen beliebigen Trichter mit verschiedenen Zeiträumen.
 
-Führen Sie beispielsweise einen Rechtsklick in einen beliebigen Schritt des Fallout aus, um einige dieser Analyseoptionen anzuzeigen.
+Klicken Sie beispielsweise mit der rechten Maustaste auf einen beliebigen Schritt des Fallouts, um einige dieser Analyseoptionen anzuzeigen.
 
 ![demo](./images/pro52.png)
 
@@ -515,26 +516,26 @@ Führen Sie beispielsweise einen Rechtsklick in einen beliebigen Schritt des Fal
 
 Wenn Sie eine erweiterte Flussanalyse mit Google Analytics durchführen möchten, müssen Sie SQL verwenden, um die Daten zu extrahieren, und dann eine Drittanbieterlösung für den Visualisierungsteil verwenden. Customer Journey Analytics wird dabei helfen.
 
-In diesem Schritt konfigurieren Sie eine Flussanalyse, um diese Frage zu beantworten: Welche Hauptbeitragskanäle stehen vor einer bestimmten Landingpage zur Verfügung?  Mit zwei Drag-and-Drop-Vorgängen und einem Klick als Analytiker können Sie den Fluss des Benutzers zur Landingpage mit den beiden letzten Touches der Marketing-Kanäle erkennen.
+In diesem Schritt konfigurieren Sie eine Flussanalyse, um die folgende Frage zu beantworten: Was sind die wichtigsten Kanäle, die vor einer bestimmten Landingpage beitragen?  Mit zwei Drag-and-Drop-Aktionen und einem Klick können Sie als Analyst den Fluss der Benutzenden zur Landingpage mit den beiden letzten Berührungen der Marketing-Kanäle erkennen.
 
-Weitere Fragen, die Customer Journey Analytics Ihnen bei der Beantwortung von Fragen helfen kann:
+Andere Fragen, die Customer Journey Analytics Ihnen beantworten kann:
 
 - Was ist die Hauptkombination von Kanälen vor einer bestimmten Landingpage?
-- Was veranlasst einen Benutzer, die Sitzung zu beenden, wenn er zum Product_Checkout gelangt? Wo liegen die vorherigen Schritte?
+- Was führt dazu, dass ein Benutzer die Sitzung beendet, wenn er/sie zum Produkt-Checkout gelangt? Wo sind die vorherigen Schritte?
 
-Beginnen wir mit einem leeren Bedienfeld, um diese Fragen zu beantworten. Schließen Sie das aktuelle Bedienfeld und klicken Sie auf **+**.
+Beginnen wir mit einem leeren Bedienfeld, das diese Fragen beantwortet. Schließen Sie den aktuellen Bereich und klicken Sie auf **+**.
 
 ![demo](./images/pro53.png)
 
-Wählen Sie nun die Visualisierung **Fluss** aus.
+Wählen Sie jetzt die Visualisierung **Fluss** aus.
 
 ![demo](./images/pro54.png)
 
-Erstellen wir nun eine kanalübergreifende Analyse des Marketingkanalflusses mit mehreren Pfaden. Ziehen Sie die Dimension **Marketingkanal** in den Bereich **Einstiegs-Dimensionen**.
+Richten wir jetzt eine kanalübergreifende Marketing-Kanal-Flussanalyse ein. Ziehen Sie die Dimension **Marketing-Kanal** in den Bereich **Einstiegs-Dimensionen**.
 
 ![demo](./images/pro55.png)
 
-Sie können nun die ersten Einstiegspfade sehen:
+Die ersten Einstiegspfade werden nun angezeigt:
 
 ![demo](./images/pro56.png)
 
@@ -542,71 +543,71 @@ Klicken Sie auf den ersten Pfad, um einen Drilldown durchzuführen.
 
 ![demo](./images/pro58.png)
 
-Jetzt wird der nächste Pfad (Marketingkanal) angezeigt.
+Sie können jetzt den nächsten Pfad (Marketing-Kanal) sehen.
 
 ![demo](./images/pro59.png)
 
-Machen wir einen dritten Drilldown. Klicken Sie auf die erste Option im neuen Pfad, **Verweis**.
+Machen wir noch eine dritte Aufschlüsselung. Klicken Sie auf die erste Option im neuen Pfad **Verweis**.
 
 ![demo](./images/pro60.png)
 
-Die Visualisierung sollte nun wie folgt dargestellt werden:
+Jetzt sollte die Visualisierung wie folgt aussehen:
 
 ![demo](./images/pro61.png)
 
-Komplizieren wir die Dinge! Angenommen, Sie möchten analysieren, was die Landingpage nach zwei Marketingpfaden war? Dazu können Sie eine sekundäre Dimension verwenden, um den letzten Pfad zu ändern. Suchen Sie die Dimension **Seitenname** und ziehen Sie sie wie folgt:
+Lasst uns die Dinge verkomplizieren. Angenommen, Sie möchten analysieren, was die Landingpage nach zwei Marketing-Pfaden war? Dazu können Sie eine sekundäre Dimension verwenden, um den letzten Pfad zu ändern. Suchen Sie die Dimension **Seitenname** und ziehen Sie sie wie folgt per Drag-and-Drop hinüber:
 
 ![demo](./images/pro62n.png)
 
-Jetzt sehen Sie Folgendes:
+Sie sehen dies jetzt:
 
 ![demo](./images/pro63n.png)
 
-Lasst uns eine andere Flussanalyse durchführen. Diesmal analysieren Sie, was nach einem bestimmten Ausstiegspunkt passiert ist. Andere Analytics-Lösungen erfordern die Verwendung von SQL/ETL und wiederum ein Visualisierungstool von Drittanbietern, um dasselbe zu erreichen.
+Führen wir eine weitere Flussanalyse durch. Dieses Mal werden Sie analysieren, was nach einem bestimmten Ausgangspunkt passiert ist. Andere Analytics-Lösungen erfordern die Verwendung von SQL/ETL und ein Visualisierungs-Tool von Drittanbietern, um dasselbe zu erreichen.
 
-Bringen Sie eine neue **Flussvisualisierung** in den Bereich.
+Bringen Sie eine neue **Flussvisualisierung** in das Bedienfeld.
 
 ![demo](./images/pro64.png)
 
-Dann haben Sie Folgendes:
+Sie erhalten dann Folgendes:
 
 ![demo](./images/pro64a.png)
 
-Suchen Sie die Dimension **Ereignistyp** und ziehen Sie sie in den Bereich **Ausstiegsdimension** .
+Suchen Sie die Dimension **Ereignistyp** und ziehen Sie sie per Drag-and-Drop in den Bereich **Dimension**.
 
 ![demo](./images/pro65.png)
 
-Jetzt können Sie sehen, welche **Ereignistyp**-Pfade Kunden zum Beenden gebracht haben.
+Jetzt können Sie sehen, welche **Ereignistyp**-Pfade Kunden zum Ausgang geführt haben.
 
 ![demo](./images/pro66.png)
 
-Lassen Sie uns untersuchen, was vor dem Beenden der Kasse-Aktion passiert ist. Klicken Sie auf den Pfad **Product_Checkouts** :
+Lassen Sie uns untersuchen, was vor dem Beenden der Checkout-Aktion passiert ist. Klicken Sie auf den Pfad **product_checkouts**:
 
 ![demo](./images/pro67.png)
 
-Ein neuer Aktionspfad wird mit einigen Daten angezeigt, die nicht aufschlussreich sind.
+Ein neuer Aktionspfad wird mit Daten angezeigt, die nicht aufschlussreich sind.
 
 ![demo](./images/pro68.png)
 
-Lasst uns weiter analysieren! Suchen Sie die Dimension **Seitenname** und ziehen Sie sie in den neuen generierten Pfad.
+Lassen Sie uns das näher analysieren! Suchen Sie die Dimension **Seitenname** und ziehen Sie sie per Drag-and-Drop in den neu generierten Pfad.
 
 ![demo](./images/pro69.png)
 
-Sie haben jetzt eine erweiterte Flussanalyse in Minutenschnelle durchgeführt. Sie können auf die verschiedenen Pfade klicken, um zu sehen, wie sie sich vom Ausstieg zu den vorherigen Schritten verbinden.
+Sie haben jetzt in Minuten eine erweiterte Flussanalyse durchgeführt. Sie können auf die verschiedenen Pfade klicken, um zu sehen, wie sie eine Verbindung vom Ausgang zu den vorherigen Schritten herstellen.
 
 ![demo](./images/pro70.png)
 
-Sie verfügen jetzt über ein leistungsstarkes Kit, um Trichter zu analysieren und Wege des Kundenverhaltens über digitale, aber auch Offline-Touchpoints zu untersuchen.
+Sie verfügen jetzt über ein leistungsstarkes Kit, um Trichter zu analysieren und Kundenverhaltenspfade über digitale, aber auch Offline-Touchpoints hinweg zu erkunden.
 
-Vergiss nicht, deine Änderungen zu speichern!
+Vergessen Sie nicht, Ihre Änderungen zu speichern!
 
-## 4.2.5.4 Projekt freigeben
+## Projekt freigeben 4.2.5.4
 
 >[!IMPORTANT]
 >
->Der folgende Inhalt ist als FYI gedacht - Sie müssen Ihr Projekt **NOT** für andere freigeben.
+>Die folgenden Inhalte sind als Informationen zu Informationszwecken gedacht - Sie **Ihr Projekt** für andere freigeben.
 
-FYI - Sie können dieses Projekt mit Kollegen teilen, um zusammenzuarbeiten oder Geschäftsfragen gemeinsam zu analysieren.
+Zu Ihrer Information: Sie können dieses Projekt mit Kollegen teilen, um geschäftliche Fragen gemeinsam zu bearbeiten oder zu analysieren.
 
 ![demo](./images/pro99.png)
 
@@ -614,6 +615,6 @@ FYI - Sie können dieses Projekt mit Kollegen teilen, um zusammenzuarbeiten oder
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 
-[Zurück zu Modul 4.2](./customer-journey-analytics-bigquery-gcp.md)
+[Zurück zum Modul 4.2](./customer-journey-analytics-bigquery-gcp.md)
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)

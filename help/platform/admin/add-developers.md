@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen von Entwicklern zu Adobe Experience Platform-basierten Anwendungen
-description: Erfahren Sie, wie Sie Entwickler zu Adobe Experience Platform-basierten Anwendungen hinzufügen und Berechtigungen für API-Anmeldeinformationen erteilen.
+title: Hinzufügen von Entwicklern zu Adobe Experience Platform-basierten Programmen
+description: Erfahren Sie, wie Sie Entwickler zu Adobe Experience Platform-basierten Anwendungen hinzufügen und API-Anmeldeinformationen Berechtigungen erteilen
 feature: Access Control
 role: Admin, Developer
 level: Beginner
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ---
 
-# Entwickler hinzufügen und Berechtigungen für API-Anmeldeinformationen erteilen
+# Hinzufügen von Entwicklern und Erteilen von Berechtigungen für API-Anmeldeinformationen
 
-Erfahren Sie, wie Sie Entwickler zu Adobe Experience Platform-basierten Anwendungen wie Real-time Customer Data Platform und Journey Optimizer hinzufügen. Entwickler werden zuerst in Admin Console hinzugefügt. Nachdem sie ihr Platform-Projekt in Developer Console erstellt haben, erhalten ihre API-Anmeldeinformationen Berechtigungen in der Platform- oder Journey Optimizer-Benutzeroberfläche. Weitere Informationen finden Sie in der Dokumentation zur Zugriffskontrolle [1}.](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de)
+Erfahren Sie, wie Sie Entwickler zu Adobe Experience Platform-basierten Programmen wie Real-time Customer Data Platform und Journey Optimizer hinzufügen. Entwickler werden zuerst in Admin Console hinzugefügt. Nachdem sie ihr Platform-Projekt in der Developer Console erstellt haben, werden ihren API-Anmeldedaten in der Platform- oder Journey Optimizer-Benutzeroberfläche Berechtigungen zugewiesen. Weitere Informationen finden Sie in der [Dokumentation zur Zugriffssteuerung](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
 
@@ -26,4 +26,4 @@ Erfahren Sie, wie Sie Entwickler zu Adobe Experience Platform-basierten Anwendun
 
 >[!TIP]
 >
->Es wird empfohlen, den Entwickler auch als **Benutzer** zum Produktprofil `AEP-Default-All-Users` in Admin Console hinzuzufügen und ihn dann in der Platform-Oberfläche derselben Rolle wie die API-Berechtigung hinzuzufügen. Dadurch können sie bei Bedarf die Benutzeroberfläche verwenden. Weitere Informationen finden Sie unter [Benutzer hinzufügen](add-users.md) .
+>Es wird empfohlen, den Entwickler auch als **Benutzer** zum `AEP-Default-All-Users` Produktprofil in Admin Console hinzuzufügen und ihn dann derselben Rolle in der Platform-Oberfläche wie die API-Anmeldeinformationen hinzuzufügen. Auf diese Weise können sie bei Bedarf die -Schnittstelle verwenden. Weitere Informationen finden [ unter ](add-users.md) von Benutzern .

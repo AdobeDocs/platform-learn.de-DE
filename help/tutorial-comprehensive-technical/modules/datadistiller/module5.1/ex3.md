@@ -1,6 +1,6 @@
 ---
-title: Query Service - Verwendung des Query Service
-description: Query Service - Verwendung des Query Service
+title: Abfrage-Service - Verwenden des Abfrage-Service
+description: Abfrage-Service - Verwenden des Abfrage-Service
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
@@ -12,30 +12,30 @@ ht-degree: 0%
 
 ---
 
-# 5.1.3 Query Service verwenden
+# 5.1.3 Verwenden des Abfrage-Service
 
 ## Ziel
 
-- Suchen und Erkunden von Datensätzen
-- Erfahren Sie, wie Sie in Ihren Abfragen Experience-Datenmodellobjekte und -attribute bearbeiten.
+- Datensätze suchen und untersuchen
+- Erfahren Sie, wie Sie Experience-Datenmodellobjekte und -attribute in Ihren Abfragen adressieren
 
 ## Kontext
 
-In diesem Abschnitt erfahren Sie, wie Sie mit PSQL Informationen zu den verfügbaren Datensätzen abrufen, wie Sie Abfragen für das Experience-Datenmodell (XDM) schreiben und Ihre ersten einfachen Berichtsabfragen mit den Datensätzen Query Service und Citi Signal schreiben können.
+In diesem Video erfahren Sie, wie Sie mit PSQL Informationen zu den verfügbaren Datensätzen abrufen, Abfragen für das Experience-Datenmodell (XDM) schreiben und Ihre ersten einfachen Berichtsabfragen mithilfe der Datensätze Query Service und Citi Signal schreiben können.
 
 ## Grundlegende Abfragen
 
-In diesem Abschnitt erfahren Sie mehr über die Methoden zum Abrufen von Informationen zu den verfügbaren Datensätzen und dazu, wie Daten mit einer Abfrage aus einem XDM-Datensatz ordnungsgemäß abgerufen werden.
+In diesem Video erfahren Sie, wie Sie Informationen zu den verfügbaren Datensätzen abrufen und wie Sie Daten mit einer Abfrage aus einem XDM-Datensatz ordnungsgemäß abrufen können.
 
-Alle Datensätze, die wir Anfang 1 über Adobe Experience Platform erforscht haben, stehen auch als Tabellen über eine SQL-Schnittstelle zur Verfügung. Um diese Tabellen aufzulisten, können Sie den Befehl **Tabellen anzeigen;** verwenden.
+Alle Datensätze, die wir Anfang 1 über Adobe Experience Platform untersucht haben, stehen auch über eine SQL-Schnittstelle als Tabellen zur Verfügung. Zum Auflisten dieser Tabellen können Sie den Befehl **Tabellen anzeigen;** verwenden.
 
-Führen Sie `show tables;` in Ihrer **PSQL-Befehlszeilenschnittstelle** aus. (Vergessen Sie nicht, Ihren Befehl mit einem Semikolon zu beenden).
+Führen Sie `show tables;` in Ihrer **PSQL-Befehlszeilenschnittstelle“**. (Vergessen Sie nicht, den Befehl mit einem Semikolon zu beenden).
 
-Kopieren Sie den Befehl `show tables;` und fügen Sie ihn an der Eingabeaufforderung ein:
+Kopieren Sie den `show tables;` und fügen Sie ihn an der Eingabeaufforderung ein:
 
-![command-quick-show-show-tables.png](./images/commandpromptshowtables.png)
+![command-prompt-show-tables.png](./images/commandpromptshowtables.png)
 
-Das folgende Ergebnis wird angezeigt:
+Es wird das folgende Ergebnis angezeigt:
 
 ```text
 tech-insiders:all=> show tables;
@@ -53,17 +53,17 @@ tech-insiders:all=> show tables;
  ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset   
 ```
 
-Drücken Sie am Doppelpunkt die Leertaste, um die nächste Seite des Ergebnissatzes anzuzeigen, oder geben Sie `q` ein, um zur Eingabeaufforderung zurückzukehren.
+Drücken Sie am Doppelpunkt die Leertaste, um die nächste Seite der Ergebnismenge anzuzeigen, oder geben Sie `q` ein, um zur Eingabeaufforderung zurückzukehren.
 
-Jeder Datensatz in AEP verfügt über die zugehörige Tabelle Query Service . Die Tabelle eines Datensatzes finden Sie über die Benutzeroberfläche &quot;Datensätze&quot;:
+Jeder Datensatz in AEP verfügt über die entsprechende Abfrage-Service-Tabelle. Die Tabelle eines Datensatzes finden Sie über die Benutzeroberfläche Datensätze :
 
 ![ui-dataset-tablename.png](./images/uidatasettablename.png)
 
-Die Tabelle `demo_system_event_dataset_for_website_global_v1_1` ist die Tabelle Query Service , die dem Datensatz `Demo System - Event Schema for Website (Global v1.1)` entspricht.
+Die `demo_system_event_dataset_for_website_global_v1_1` ist die Abfrage-Service-Tabelle, die dem `Demo System - Event Schema for Website (Global v1.1)` Datensatz entspricht.
 
-Um einige Informationen darüber abzufragen, wo ein Produkt angezeigt wurde, wählen wir die **geo** -Informationen aus.
+Um Informationen darüber abzufragen, wo ein Produkt angesehen wurde, wählen Sie die **geo**-Informationen aus.
 
-Kopieren Sie die unten stehende Abfrage, fügen Sie sie an der Eingabeaufforderung in die Befehlszeilenschnittstelle **von** PSQL ein und drücken Sie die Eingabetaste:
+Kopieren Sie die unten stehende Abfrage, fügen Sie sie an der Eingabeaufforderung in die **PSQL-Befehlszeilenschnittstelle ein** drücken Sie die Eingabetaste:
 
 ```sql
 select placecontext.geo
@@ -73,7 +73,7 @@ and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
-In Ihrem Abfrageergebnis werden Sie feststellen, dass Spalten im Experience-Datenmodell (XDM) komplexe Typen und nicht nur skalare Typen sein können. In der obigen Abfrage möchten wir geografische Standorte identifizieren, an denen **commerce.productViews** aufgetreten ist. Um eine **commerce.productViews** zu identifizieren, müssen wir mithilfe von **durch das XDM-Modell navigieren.** (Punkt).
+In Ihrem Abfrageergebnis werden Sie feststellen, dass Spalten im Experience-Datenmodell (XDM) komplexe Typen sein können und nicht nur skalare Typen. In der obigen Abfrage möchten wir die geografischen Standorte identifizieren, an denen **commerce.productViews** stattgefunden hat. Um ein **commerce.productViews** zu identifizieren, müssen wir mithilfe der **durch das XDM-Modell navigieren.** (Punkt).
 
 ```text
 tech-insiders:all=> select placecontext.geo
@@ -87,11 +87,11 @@ limit 1;
 (1 row)
 ```
 
-Beachten Sie, dass das Ergebnis eher ein flaches Objekt als ein einzelner Wert ist. Das Objekt **placecontext.geo** enthält vier Attribute: Schema, Land und Stadt. Wenn ein Objekt als Spalte deklariert wird, gibt es das gesamte Objekt als Zeichenfolge zurück. Das XDM-Schema ist möglicherweise komplexer als das, was Sie kennen, aber es ist sehr leistungsstark und wurde so konzipiert, dass es viele Lösungen, Kanäle und Anwendungsfälle unterstützt.
+Beachten Sie, dass das Ergebnis eher ein flaches Objekt als ein einzelner Wert ist? Das **placeContext.geo**-Objekt enthält vier Attribute: Schema, Land und Stadt. Wenn ein Objekt als Spalte deklariert wird, wird das gesamte Objekt als Zeichenfolge zurückgegeben. Das XDM-Schema mag komplexer sein als das, was Sie kennen, aber es ist sehr leistungsstark und wurde entwickelt, um viele Lösungen, Kanäle und Anwendungsfälle zu unterstützen.
 
-Um die einzelnen Eigenschaften eines Objekts auszuwählen, verwenden Sie den **.** (Punkt).
+Um die individuellen Eigenschaften eines Objekts auszuwählen, verwenden Sie die **.** (Punkt).
 
-Kopieren Sie die unten stehende Anweisung und fügen Sie sie an der Eingabeaufforderung in Ihrer **PSQL-Befehlszeilenschnittstelle** ein:
+Kopieren Sie die unten stehende Anweisung und fügen Sie sie an der Eingabeaufforderung in die **PSQL-Befehlszeilenschnittstelle ein**:
 
 ```sql
 select placecontext.geo._schema.longitude
@@ -104,7 +104,7 @@ and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
-Das Ergebnis der obigen Abfrage sollte wie folgt aussehen:
+Das Ergebnis der obigen Abfrage sollte wie folgt aussehen.
 Das Ergebnis ist jetzt ein Satz einfacher Werte:
 
 ```text
@@ -122,13 +122,13 @@ limit 1;
 (1 row)
 ```
 
-Machen Sie sich keine Gedanken, es gibt eine einfache Möglichkeit, den Pfad zu einer bestimmten Eigenschaft zu erhalten. Im folgenden Teil erfahren Sie, wie Sie das machen.
+Keine Sorge, es gibt eine einfache Möglichkeit, den Pfad zu einer bestimmten Eigenschaft zu erhalten. Im folgenden Teil erfahren Sie, wie.
 
-Sie müssen eine Abfrage bearbeiten. Öffnen wir also zunächst einen Editor.
+Sie müssen eine Abfrage bearbeiten, öffnen wir also zuerst einen Editor.
 
-Unter Windows: Verwenden Sie **Notepad**
+Unter Windows: Verwenden **Notepad**
 
-Auf Mac: Installieren Sie eine beliebige Text Editor-App und öffnen Sie sie.
+Auf Mac: Installieren Sie eine beliebige Texteditor-App und öffnen Sie sie.
 
 Kopieren Sie die folgende Anweisung in Ihren Texteditor:
 
@@ -140,21 +140,21 @@ and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
-Gehen Sie zurück zu Ihrer Adobe Experience Platform-Benutzeroberfläche (sollte in Ihrem Browser geöffnet sein) oder navigieren Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform).
+Wechseln Sie zurück zu Ihrer Adobe Experience Platform-Benutzeroberfläche (sollte in Ihrem Browser geöffnet sein) oder zu [Adobe Experience Platform](https://experience.adobe.com/platform).
 
-Wählen Sie **Schemas** aus, geben Sie `Demo System - Event Schema for Website` in das Feld **Suche** ein und klicken Sie auf , um das Schema `Demo System - Event Schema for Website (Global v1.1) Schema` zu öffnen.
+Wählen Sie **Schemata** aus, geben Sie `Demo System - Event Schema for Website` in das Feld **Suche** ein und klicken Sie, um die `Demo System - Event Schema for Website (Global v1.1) Schema` zu öffnen.
 
 ![browse-schema.png](./images/browseschema.png)
 
-Durchsuchen Sie das XDM-Modell für **Demo System - Event Schema for Website (Global v1.1)**, indem Sie auf ein Objekt klicken. Erweitern Sie die Struktur für **placecontext**, **geo** und **schema**. Wenn Sie das tatsächliche Attribut **longitude** auswählen, wird der vollständige Pfad im markierten roten Feld angezeigt. Um den Pfad des Attributs zu kopieren, klicken Sie auf das Symbol Pfad kopieren .
+Erkunden Sie das XDM-Modell für **Demosystem - Ereignisschema für Website (Global v1.1)**, indem Sie auf ein Objekt klicken. Erweitern Sie die Struktur für **placeContext**, **geo** und **schema**. Wenn Sie das tatsächliche Attribut **Längengrad** auswählen, wird der vollständige Pfad im hervorgehobenen roten Feld angezeigt. Um den Pfad des Attributs zu kopieren, klicken Sie auf das Symbol Pfad kopieren .
 
 ![explore-schema-for-path.png](./images/exploreschemaforpath.png)
 
-Wechseln Sie zu Ihrem Notebook/Ihren Klammern und entfernen Sie **Ihr_Attribut_Pfad_hier** aus der ersten Zeile. Positionieren Sie den Cursor hinter **select** in der ersten Zeile und fügen Sie (STRG-V) ein.
+Wechseln Sie zu Ihrem Editor/Ihren Klammern und entfernen Sie **your_attribute_path_here** aus der ersten Zeile. Positionieren Sie den Cursor nach **select** auf der ersten Zeile und fügen Sie ihn ein (STRG+V).
 
 ![explore-schema-for-path.png](./images/exploreschemaforpath1.png)
 
-Kopieren Sie die geänderte Anweisung, fügen Sie sie an der Eingabeaufforderung in der Befehlszeilenschnittstelle **von** PSQL ein und drücken Sie die Eingabetaste.
+Kopieren Sie die geänderte Anweisung, fügen Sie sie an der Eingabeaufforderung in die **PSQL-Befehlszeilenschnittstelle ein** drücken Sie die Eingabetaste.
 
 Das Ergebnis sollte wie folgt aussehen:
 
@@ -170,8 +170,8 @@ limit 1;
 (1 row)
 ```
 
-Nächster Schritt: [5.1.4 Abfragen, Abfragen, Abfragen.. und Abwanderungsanalyse](./ex4.md)
+Nächster Schritt: [5.1.4 Abfragen, Abfragen… und Abwanderungsanalyse](./ex4.md)
 
 [Zurück zu Modul 5.1](./query-service.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

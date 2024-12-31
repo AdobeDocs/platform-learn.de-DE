@@ -1,6 +1,6 @@
 ---
-title: Erstellen besserer Erlebnisse mit Kundenprofilen
-description: Um ein hervorragendes Kundenerlebnis zu bieten, müssen wir über unsere Kunden Bescheid wissen. Wenn wir alles, was wir über einen Kunden wissen, in einem Echtzeit-Kundenprofil zusammenführen, können wir ihm ein Erlebnis bieten, das ihn für weitere Informationen zurück hält.
+title: Erstellen besserer Erlebnisse für Kundenprofile
+description: Für ein ausgezeichnetes Kundenerlebnis müssen wir über unsere Kunden Bescheid wissen. Wenn wir alles, was wir über einen Kunden wissen, mit einem Echtzeit-Kundenprofil zusammenführen, können wir ihm ein Erlebnis bieten, das ihn immer wieder für weitere Informationen zurückkommen lässt.
 feature: Profiles
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Erstellen besserer Erlebnisse mit Kundenprofilen
+# Erstellen besserer Erlebnisse für Kundenprofile
 
-Um ein hervorragendes Kundenerlebnis zu bieten, müssen wir über unsere Kunden Bescheid wissen. Wenn wir alles, was wir über einen Kunden wissen, in einem Echtzeit-Kundenprofil zusammenführen, können wir ihm ein Erlebnis bieten, das ihn für weitere Informationen zurück hält.
+Für ein ausgezeichnetes Kundenerlebnis müssen wir über unsere Kunden Bescheid wissen. Wenn wir alles, was wir über einen Kunden wissen, mit einem Echtzeit-Kundenprofil zusammenführen, können wir ihm ein Erlebnis bieten, das ihn immer wieder für weitere Informationen zurückkommen lässt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336939/?learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Verwenden der Privacy JavaScript-Bibliothek
-description: Erfahren Sie, wie Sie mit der Privacy JavaScript-Bibliothek Kundenidentitäten in Ihrer Anwendung erfassen können, bevor Sie sie an Privacy Service senden. Erfahren Sie beispielsweise, wie Sie die Tag-Erweiterung in der Datenerfassung (früher Launch) einrichten.
+description: Erfahren Sie, wie Sie mit der Privacy JavaScript-Bibliothek Kundenidentitäten in Ihrem Programm erfassen können, bevor Sie sie an den Privacy Service senden. Erfahren Sie zum Beispiel, wie Sie die Tag-Erweiterung in der Datenerfassung (früher Launch) einrichten.
 feature: Privacy
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # Verwenden der Privacy JavaScript-Bibliothek
 
-Erfahren Sie, wie Sie mit der Privacy JavaScript-Bibliothek Kundenidentitäten in Ihrer Anwendung erfassen können, bevor Sie sie an Privacy Service senden. Erfahren Sie beispielsweise, wie Sie die Tag-Erweiterung in der Datenerfassung (früher Launch) einrichten. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) .
+Erfahren Sie, wie Sie mit der Privacy JavaScript-Bibliothek Kundenidentitäten in Ihrem Programm erfassen können, bevor Sie sie an den Privacy Service senden. Erfahren Sie zum Beispiel, wie Sie die Tag-Erweiterung in der Datenerfassung (früher Launch) einrichten. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336078?learn=on)

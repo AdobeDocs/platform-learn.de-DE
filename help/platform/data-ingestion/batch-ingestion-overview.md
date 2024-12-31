@@ -1,6 +1,6 @@
 ---
-title: Batch-Datenerfassung - Übersicht
-description: In diesem Video erhalten Sie einen Überblick über die Batch-Erfassung in Adobe Experience Platform und darüber, wie Batch-Daten mithilfe der API erfasst werden.
+title: Übersicht über die Batch-Datenaufnahme
+description: In diesem Video erhalten Sie einen Überblick über die Batch-Aufnahme in Adobe Experience Platform und darüber, wie Sie Batch-Daten mithilfe der API aufnehmen.
 feature: Data Ingestion
 role: Data Architect, Data Engineer, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Batch-Datenerfassung - Übersicht
+# Übersicht über die Batch-Datenerfassung
 
-In diesem Video erhalten Sie einen Überblick über die Batch-Datenerfassung in Adobe Experience Platform und darüber, wie Batch-Daten mithilfe der API erfasst werden. Weitere Informationen finden Sie in der [Dokumentation zur Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de).
+In diesem Video erhalten Sie einen Überblick über die Batch-Datenaufnahme in Adobe Experience Platform und darüber, wie Sie Batch-Daten mithilfe der API aufnehmen. Weitere Informationen finden Sie in der [Dokumentation zur Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/330995?learn=on)

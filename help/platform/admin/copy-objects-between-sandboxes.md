@@ -1,6 +1,6 @@
 ---
-title: Konfigurationen zwischen Sandboxes kopieren
-description: Erfahren Sie, wie Sie Konfigurationen mithilfe von Packages zwischen Experience Platform-Sandboxes kopieren. einfache Replikation von Schemas, Datensätzen, Journey und mehr über Ihre Sandboxes hinweg.
+title: Kopieren von Konfigurationen zwischen Sandboxes
+description: Erfahren Sie, wie Sie Konfigurationen mithilfe von Paketen zwischen Experience Platform-Sandboxes kopieren. Einfaches Replizieren von Schemata, Datensätzen, Journeys und mehr über Ihre Sandboxes hinweg.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 feature: Sandboxes
 role: Admin, Developer
@@ -17,8 +17,8 @@ ht-degree: 1%
 
 ---
 
-# Konfigurationen zwischen Sandboxes kopieren
+# Kopieren von Konfigurationen zwischen Sandboxes
 
-Erfahren Sie, wie Sie Konfigurationen mithilfe von Packages zwischen Experience Platform-Sandboxes kopieren. Replizieren Sie einfach Schemas, Datensätze, Journey und mehr über Ihre Sandboxes hinweg, um Freigabeprozesse und Multi-Region-/Mehrmarkenbereitstellungen zu unterstützen. Weitere Informationen finden Sie in der Dokumentation der Sandbox-Tools ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=de).[
+Erfahren Sie, wie Sie Konfigurationen mithilfe von Paketen zwischen Experience Platform-Sandboxes kopieren. Einfaches Replizieren von Schemas, Datensätzen, Journey und mehr in Ihren Sandboxes zur Unterstützung von Veröffentlichungsprozessen und Bereitstellungen mit mehreren Regionen/Marken. Weitere Informationen finden Sie in der [Sandbox-Tools-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on)

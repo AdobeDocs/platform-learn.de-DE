@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Unterstützung von Partnerdaten in Real-Time CDP
-description: Erfahren Sie, wie [!DNL Real-Time Customer Data Platform] das vollständige Trichter-Marketing mit Partnerdaten für die Anreicherung von Erstanbieterdaten und die Prospektion von Anwendungsfällen unterstützt, da Drittanbieter-Cookies weiterhin nicht mehr unterstützt werden. 
+description: Erfahren Sie [!DNL Real-Time Customer Data Platform]  wie das Full-Funnel-Marketing mithilfe von Partnerdaten für die Anreicherung von First-Party-Daten und Anwendungsfälle für Interessenten unterstützt, da Third-Party-Cookies weiterhin veraltet sind. 
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Übersicht über die Unterstützung von Partnerdaten in [!DNL Real-Time CDP]
 
-Erfahren Sie, wie [!DNL Real-Time Customer Data Platform] das vollständige Trichter-Marketing mit Partnerdaten für die Anreicherung von Erstanbieterdaten und die Prospektion von Anwendungsfällen unterstützt, da Drittanbieter-Cookies weiterhin nicht mehr unterstützt werden. 
+Erfahren Sie, wie [!DNL Real-Time Customer Data Platform] das Full-Funnel-Marketing mithilfe von Partnerdaten für die Anreicherung von First-Party-Daten und Anwendungsfälle für Interessenten unterstützt, da Third-Party-Cookies weiterhin als veraltet gelten. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Erfassen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector
-description: Erfassen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector
+title: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector
+description: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector
 kt: 5342
 doc-type: tutorial
 exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
@@ -11,64 +11,64 @@ ht-degree: 0%
 
 ---
 
-# 4.2 Daten aus Google Analytics in Adobe Experience Platform mit BigQuery Source Connector erfassen und analysieren
+# 4.2 Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector
 
-**Autoren: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+**Autoren: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In diesem Modul richten Sie Ihre eigene Instanz von Google Cloud Platform ein, laden Beispieldaten in Google Cloud Platform und verwenden dann den BigQuery Source Connector, um diese Daten von Google Cloud Platform in Adobe Experience Platform aufzunehmen. Schließlich verwenden Sie Customer Journey Analytics, um diese Daten zu visualisieren.
+In diesem Modul richten Sie Ihre eigene Instanz von Google Cloud Platform ein, laden Beispieldaten in Google Cloud Platform und verwenden dann den BigQuery Source Connector , um diese Daten von Google Cloud Platform in Adobe Experience Platform aufzunehmen. Zum Schluss verwenden Sie Customer Journey Analytics zur Visualisierung dieser Daten.
 
-Source-Connectoren in Adobe Experience Platform erleichtern die Datenübernahme in Adobe Experience Platform. Google BigQuery ist einer der bereits verfügbaren Connectoren. Dank Adobe Experience Platform und dem BigQuery Source Connector können wir jetzt Google Analytics-Daten in Analysis Workspace in Customer Journey Analytics importieren.
+Source-Connectoren in Adobe Experience Platform erleichtern den Prozess der Datenübernahme in Adobe Experience Platform. Google BigQuery ist einer der bereits verfügbaren Connectoren. Dank Adobe Experience Platform und dem BigQuery Source Connector können wir jetzt Google Analytics-Daten in Customer Journey Analytics in Analysis Workspace einbringen.
 
-Darüber hinaus können wir diese Daten von Google Analytics anreichern, indem wir sie mit anderen Datenquellen wie CRM-, Callcenter- oder Loyalitätsdaten innerhalb von Customer Journey Analytics verbinden.
+Darüber hinaus können wir diese Google Analytics-Daten anreichern, indem wir sie mit anderen Datenquellen wie CRM, Callcenter oder Treuedaten innerhalb von Customer Journey Analytics verbinden.
 
 ## Lernziele
 
-- Kennenlernen der Google Cloud-Plattform und der BigQuery-Benutzeroberfläche
-- Daten aus Google Analytics in Adobe Experience Platform erfassen
-- Customer Journey Analytics zur Analyse von Google Analytics-Daten verwenden
+- Machen Sie sich mit der Google Cloud-Plattform und der BigQuery-Benutzeroberfläche vertraut
+- Aufnehmen von Google Analytics-Daten in Adobe Experience Platform
+- Customer Journey Analytics zur Analyse der Google Analytics-Daten verwenden
 - Anreicherung von Google Analytics-Daten mit Offline-Daten
 
 ## Voraussetzungen
 
-- Eine gewisse Vertrautheit mit Customer Journey Analytics wird empfohlen, ist jedoch nicht erforderlich
+- Eine gewisse Vertrautheit mit Customer Journey Analytics ist vorzuziehen, aber nicht erforderlich
 - Zugriff auf Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Zugriff auf Customer Journey Analytics
 - Zugriff auf Google Cloud Platform und Google BigQuery
-- **Laden Sie diese Assets herunter**:
-   - [JSON - Beispieldaten: Loyalitätsdaten](./../../../assets/json/bqLoyalty.json)
+- **Diese Assets herunterladen**:
+   - [JSON - Beispieldaten: Treueprogramm-Daten](./../../../assets/json/bqLoyalty.json)
 
 >[!NOTE]
 >
->Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie unter [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben.
+>Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie in [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben
 
 ## Übungen
 
-[4.2.1 Google Cloud Platform-Konto erstellen](./ex1.md)
+[4.2.1 Erstellen eines Google Cloud Platform-Kontos](./ex1.md)
 
 Erstellen Sie Ihr Google Cloud Platform-Konto.
 
-[4.2.2 Erste Abfrage in BigQuery erstellen](./ex2.md)
+[4.2.2 Erstellen Sie Ihre erste Abfrage in BigQuery](./ex2.md)
 
-Erfahren Sie, wie Sie BigQuery verwenden, um die Daten für das Laden in Platform vorzubereiten.
+Erfahren Sie, wie Sie mit BigQuery die Daten für das Laden in Platform vorbereiten.
 
-[4.2.3 GCP und BigQuery mit Adobe Experience Platform verbinden](./ex3.md)
+[4.2.3 Verbinden von GCP und BigQuery mit Adobe Experience Platform](./ex3.md)
 
 Erfahren Sie, wie Sie den Quell-Connector in Adobe Experience Platform einrichten.
 
-[4.2.4 Daten aus BigQuery in Adobe Experience Platform laden](./ex4.md)
+[4.2.4 Laden von Daten aus BigQuery in Adobe Experience Platform](./ex4.md)
 
-Erfahren Sie, wie Sie den Quell-Connector BigQuery in Adobe Experience Platform für die Aufnahme Ihrer Google Analytics-Daten konfigurieren.
+Erfahren Sie, wie Sie den BigQuery-Quell-Connector in Adobe Experience Platform konfigurieren, um Ihre Google Analytics-Daten aufzunehmen.
 
-[4.2.5 Google Analytics-Daten mithilfe von Customer Journey Analytics analysieren](./ex5.md)
+[4.2.5 Analysieren von Google Analytics-Daten mit Customer Journey Analytics](./ex5.md)
 
-Erfahren Sie, wie Sie Google Analytics-Daten in Customer Journey Analytics analysieren und mit Loyalitätsdaten kombinieren können.
+Erfahren Sie, wie Sie Google Analytics-Daten in Customer Journey Analytics analysieren und mit Treuedaten kombinieren können.
 
 [Zusammenfassung und Vorteile](./summary.md)
 
-Zusammenfassung dieses Moduls und Übersicht über die Vorteile.
+Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investieren, um alles über Adobe Experience Platform und seine Anwendungen zu erfahren. Wenn Sie Fragen haben, möchten Sie allgemeine Rückmeldungen von Vorschlägen zu künftigen Inhalten teilen, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com** senden.
+>Vielen Dank, dass Sie sich Zeit genommen haben, um alles über Adobe Experience Platform und seine Programme zu erfahren. Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

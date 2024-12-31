@@ -1,6 +1,6 @@
 ---
-title: Foundation - Datenerfassung - Datenerfassung aus Offline-Quellen
-description: Foundation - Datenerfassung - Datenerfassung aus Offline-Quellen
+title: Foundation - Datenaufnahme - Datenaufnahme aus Offline-Quellen
+description: Foundation - Datenaufnahme - Datenaufnahme aus Offline-Quellen
 kt: 5342
 doc-type: tutorial
 exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
@@ -11,52 +11,52 @@ ht-degree: 4%
 
 ---
 
-# 1.2.5 Einstiegszone für Daten
+# 1.2.5 Data Landing Zone
 
-In dieser Übung besteht das Ziel darin, Ihren Data Landing Zone Source-Connector mit Azure Blob Storage einzurichten.
+In dieser Übung besteht das Ziel darin, Ihren Source-Connector für die Data Landing Zone mit Azure Blob Storage einzurichten.
 
-Data Landing Zone ist eine Azure Blob-Speicherschnittstelle, die von Adobe Experience Platform bereitgestellt wird und Ihnen den Zugriff auf eine sichere, Cloud-basierte Dateispeicheranlage ermöglicht, über die Dateien in Platform importiert werden können. Data Landing Zone unterstützt SAS-basierte Authentifizierung und die Daten sind mit standardmäßigen Azure Blob Storage-Sicherheitsmechanismen im Ruhezustand und während der Übertragung geschützt. Mit der SAS-basierten Authentifizierung können Sie über eine öffentliche Internetverbindung sicher auf Ihren Data Landing Zone Container zugreifen.
+Data Landing Zone ist eine von Adobe Experience Platform bereitgestellte Azure Blob Storage-Schnittstelle, die Ihnen Zugriff auf eine sichere, Cloud-basierte Dateispeichereinrichtung gewährt, um Dateien in Platform zu bringen. Data Landing Zone unterstützt die SAS-basierte Authentifizierung, und ihre Daten werden im Ruhezustand und bei der Übertragung mit standardmäßigen Azure Blob-Speichersicherheitsmechanismen geschützt. Mit der SAS-basierten Authentifizierung können Sie sicher über eine öffentliche Internetverbindung auf Ihren Data Landing Zone-Container zugreifen.
 
 >[!NOTE]
 >
-> Adobe Experience Platform **erzwingt eine strikte Gültigkeitsdauer von sieben Tagen (TTL)** für alle Dateien, die in einen Dateneinstiegszonen-Container hochgeladen wurden. Alle Dateien werden nach sieben Tagen gelöscht.
+> Adobe Experience Platform **erzwingt eine strikte sieben Tage lange Lebensdauer („time-to-live“, TTL** für alle Dateien, die in einen Data Landing Zone-Container hochgeladen werden. Alle Dateien werden nach sieben Tagen gelöscht.
 
 
 ## Voraussetzungen
 
-Um Blobs oder Dateien in Ihre Adobe Experience Platform Data Landing Zone zu kopieren, verwenden Sie AzCopy, ein Befehlszeilen-Dienstprogramm. Sie können eine Version für Ihr Betriebssystem über &quot;[https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)&quot; herunterladen, auf dieser Seite nach unten scrollen und &quot;**Portable AzCopy-Binärdatei herunterladen**&quot;und die entsprechende Version für Ihr Betriebssystem auswählen.
+Um Blobs oder Dateien in Ihre Adobe Experience Platform Data Landing Zone zu kopieren, verwenden Sie AzCopy, ein Befehlszeilenprogramm. Sie können eine Version für Ihr Betriebssystem über [https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) herunterladen, auf dieser Seite nach unten scrollen, um zu **Herunterladen der Portable Binary AzCopy** und die passende Version für Ihr Betriebssystem auswählen.
 
 ![dlz-install-az-copy.png](./images/dlzinstallazcopy.png)
 
-- Entpacken Sie die Download-Datei.
+- Entpacken Sie die heruntergeladene Datei
 
 ![dlz-install-az-copy.png](./images/dlz1.png)
 
-- Laden Sie die Beispieldatendatei global-context-websiteinteractions.csv herunter, die Beispiel-Website-Interaktionen enthält, und speichern Sie sie in dem Ordner, in dem Sie **azcopy** entpackt haben.
+- Laden Sie die Beispieldatendatei global-context-websiteInteractions.csv herunter, die Beispiel-Website-Interaktionen enthält, und speichern Sie sie in dem Ordner, in den Sie entpackt haben **azcopy**.
 
 ![dlz-install-az-copy.png](./images/dlz2.png)
 
-- Öffnen Sie ein Terminal-Fenster und navigieren Sie zum Ordner auf Ihrem Desktop. Sie sollten den folgenden Inhalt sehen (azcopy und global-context-websiteinteractions.csv), z. B. unter OSX:
+- Öffnen Sie ein Terminal-Fenster und navigieren Sie zum Ordner auf Ihrem Desktop. Sie sollten den folgenden Inhalt (azcopy und global-context-website-interaction.csv) sehen, z. B. unter OSX:
 
 ![dlz-unzip-azcopy.png](./images/dlzunzipazcopy.png)
 
-## 1.2.5.2 Data Landing Zone mit Adobe Experience Platform verbinden
+## 1.2.5.2 Verbinden der Data Landing Zone mit Adobe Experience Platform
 
-Melden Sie sich bei Adobe Experience Platform an, indem Sie diese URL verwenden: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Melden Sie sich über die folgende URL bei Adobe Experience Platform an: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
-Nach der Anmeldung landen Sie auf der Startseite von Adobe Experience Platform.
+Nach dem Login landen Sie auf der Homepage von Adobe Experience Platform.
 
 ![Datenaufnahme](./images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox** auswählen. Die auszuwählende Sandbox heißt ``--aepSandboxName--``.  Nachdem Sie die entsprechende Sandbox ausgewählt haben, wird die Bildschirmänderung angezeigt und Sie befinden sich jetzt in Ihrer dedizierten Sandbox.
+Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbox hat den Namen ``--aepSandboxName--``.  Nach Auswahl der entsprechenden Sandbox wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten Sandbox.
 
 ![Datenaufnahme](./images/sb1.png)
 
-Gehen Sie im linken Menü zu **Quellen**. Suchen Sie im Quellkatalog nach **data landing**.
+Navigieren Sie im linken Menü zu **Quellen**. Suchen Sie im Quellkatalog nach **Data Landing**.
 
 ![Datenaufnahme](./images/sourcesdlz.png)
 
-Klicken Sie auf die Karte **Dateneinstiegszone** , um die Anmeldedaten auf der rechten Registerkarte anzuzeigen.
+Klicken Sie auf **Karte** Data Landing Zone“, die Anmeldeinformationen werden auf der rechten Registerkarte angezeigt.
 
 ![dlz-view-credentials.png](./images/dlzviewcredentials.png)
 
@@ -64,45 +64,45 @@ Klicken Sie auf das Symbol wie angegeben, um den **SASUri** zu kopieren.
 
 ![dlz-copy-sas-uri.png](./images/dlzcopysasuri.png)
 
-## Kopieren Sie Ihre CSV-Datei in Ihre AEP-Daten-Landingzone.
+## Kopieren Sie Ihre CSV-Datei in Ihre AEP Data Landing Zone
 
-Sie erfassen jetzt Daten mit Azure-Befehlszeilen-Tools mit AZCopy in Adobe Experience Platform.
+Sie erfassen jetzt Daten in Adobe Experience Platform mithilfe von Azure-Befehlszeilen-Tools mit AZCopy.
 
-Öffnen Sie ein Terminal am Speicherort Ihrer azcopy install-Position und führen Sie den folgenden Befehl aus, um eine Datei in die Daten-Landingzone von AEP zu kopieren:
+Öffnen Sie ein Terminal am Speicherort Ihres AzCopy-Installationsspeicherorts und führen Sie den folgenden Befehl aus, um eine Datei in die Data Landing Zone von AEP zu kopieren:
 
 ``./azcopy copy <your-local-file> <your SASUri>``
 
-Stellen Sie sicher, dass Sie Ihre SASUri mit doppelten Anführungszeichen umgeben. Ersetzen Sie `<your-local-file>` durch den Pfad zu Ihrer lokalen Kopie der Datei **global-context-websiteinteractions.csv** im azcopy-Verzeichnis und ersetzen Sie `<your SASUri>` durch den Wert **SASUri** , den Sie aus der Adobe Experience Platform-Benutzeroberfläche kopiert haben. Ihr Befehl sollte wie folgt aussehen:
+Stellen Sie sicher, dass Sie Ihren SASUri mit doppelten Anführungszeichen umgeben. Ersetzen Sie `<your-local-file>` durch den Pfad zu Ihrer lokalen Kopie der Datei **global-context-websiteinteractions.csv** im azcopy-Verzeichnis und ersetzen Sie `<your SASUri>` durch den **SASUri**-Wert, den Sie aus der Adobe Experience Platform-Benutzeroberfläche kopiert haben. Ihr Befehl sollte wie folgt aussehen:
 
 ```command
 ./azcopy copy global-context-websiteinteractions.csv "https://sndbxdtlnd2bimpjpzo14hp6.blob.core.windows.net/dlz-user-container?sv=2020-04-08&si=dlz-xxxxxxx-9843-4973-ae52-xxxxxxxx&sr=c&sp=racwdlm&sig=DN3kdhKzard%2BQwKASKg67Zxxxxxxxxxxxxxxxx"
 ```
 
-Nach dem Ausführen des oben genannten Befehls in Ihrem Terminal sehen Sie Folgendes:
+Nachdem Sie den obigen Befehl an Ihrem Terminal ausgeführt haben, sehen Sie Folgendes:
 
 ![dlz-exec-copy-command.png](./images/dlzexeccopycommand.png)
 
-## Suchen Ihrer Datei in Ihrer Data Landing Zone
+## Suchen der Datei in der Data Landing Zone
 
-Navigieren Sie zu Ihrer Data Landing Zone in Adobe Experience Platform.
+Wechseln Sie zu Ihrer Data Landing Zone in Adobe Experience Platform.
 
-Wählen Sie **Quellen** aus, suchen Sie nach **Daten-Landing** und klicken Sie auf die Schaltfläche **Einrichten** .
+Wählen Sie **Quellen** aus, suchen Sie nach **Data Landing** und klicken Sie auf die Schaltfläche **Setup**.
 
 ![dlz-inspect-datalanding-zone.png](./images/dlzinspectdatalandingzone.png)
 
-Dadurch wird die Dateneinstiegszone geöffnet. Die Datei, die Sie gerade hochgeladen haben, wird im Bereich **Daten auswählen** der Dateneinstiegszone angezeigt.
+Dadurch wird die Data Landing Zone geöffnet. Die Datei, die Sie gerade hochgeladen haben, wird im Bedienfeld „Daten auswählen **der Data Landing Zone**.
 
 ![dlz-datalanding-zone-open.png](./images/dlzdatalandingzoneopen.png)
 
-## Datei verarbeiten
+## Verarbeiten der Datei
 
-Wählen Sie Ihre Datei aus und wählen Sie als Datenformat **Getrennt** aus. Daraufhin wird eine Vorschau Ihrer Daten angezeigt. Klicken Sie auf **Weiter**.
+Wählen Sie Ihre Datei aus und wählen Sie **Getrennt** als Datenformat. Anschließend sehen Sie eine Vorschau Ihrer Daten. Klicken Sie auf **Weiter**.
 
 ![dlz-datalanding-select-file.png](./images/dlzdatalandingselectfile.png)
 
 Sie können jetzt mit der Zuordnung der hochgeladenen Daten zum XDM-Schema Ihres Datensatzes beginnen.
 
-Wählen Sie **Vorhandenen Datensatz** aus und wählen Sie den Datensatz **Demo System - Event Datensatz für Website (Global v1.1)**. Klicken Sie auf **Weiter**.
+Wählen Sie **Vorhandener Datensatz** und wählen Sie den Datensatz **Demosystem - Ereignisdatensatz für Website (Global v1.1)**. Klicken Sie auf **Weiter**.
 
 ![dlz-target-dataset.png](./images/dlztargetdataset.png)
 
@@ -112,19 +112,19 @@ Jetzt können Sie die eingehenden Quelldaten aus Ihrer CSV-Datei den Zielfeldern
 
 >[!NOTE]
 >
-> Die möglichen Fehler bei der Zuordnung stören Sie nicht. Sie werden die Zuordnung im nächsten Schritt korrigieren.
+> Beachten Sie die potenziellen Fehler bei der Zuordnung. Sie korrigieren die Zuordnung im nächsten Schritt.
 
-## Zuordnungsfelder
+## Felder zuordnen
 
-Klicken Sie zunächst auf die Schaltfläche **Alle Zuordnungen löschen** . Sie können dann mit einer sauberen Zuordnung beginnen.
+Klicken Sie zunächst auf die Schaltfläche **Alle Zuordnungen löschen**. Anschließend können Sie mit einer sauberen Zuordnung beginnen.
 
-![dlz-clear-mappings.png](./images/mappings1.png)
+![dlz-clear-mapping.png](./images/mappings1.png)
 
 Klicken Sie anschließend auf **Neuer Feldtyp** und wählen Sie **Neues Feld hinzufügen** aus.
 
-![dlz-clear-mappings.png](./images/dlzclearmappings.png)
+![dlz-clear-mapping.png](./images/dlzclearmappings.png)
 
-Um das Quellfeld **ecid** zuzuordnen, wählen Sie das Feld **identities.ecid** aus und klicken Sie auf **Select**.
+Um das Quellfeld **ecid** zuzuordnen, wählen Sie das Feld **identities.ecid** aus und klicken Sie auf **Auswählen**.
 
 ![dlz-map-identity.png](./images/dlzmapidentity.png)
 
@@ -136,7 +136,7 @@ Wählen Sie das Feld ``--aepTenantId--``.identification.core.ecid in der Schemas
 
 ![dlz-map-target-field.png](./images/dlzmaptargetfield.png)
 
-Sie müssen ein paar weitere Felder zuordnen, auf **+ Neuer Feldtyp** und dann auf **Neues Feld hinzufügen** klicken und Felder für diese Zuordnung hinzufügen
+Sie müssen noch einige andere Felder zuordnen. Klicken Sie auf **+ Neuer Feldtyp** dann auf **Neues Feld hinzufügen** und fügen Sie Felder für diese Zuordnung hinzu
 
 | source | target |
 |---|---|
@@ -146,7 +146,7 @@ Sie müssen ein paar weitere Felder zuordnen, auf **+ Neuer Feldtyp** und dann a
 
 ![dlz-add-other-mapping.png](./images/dlzaddothermapping.png)
 
-Wenn Sie fertig sind, sollte der Bildschirm wie folgt aussehen: Klicken Sie auf **Weiter**.
+Wenn Sie fertig sind, sollte Ihr Bildschirm wie folgt aussehen: Der folgende Bildschirm. Klicken Sie auf **Weiter**.
 
 ![dlz-mapping-result.png](./images/dlzmappingresult.png)
 
@@ -164,12 +164,12 @@ Um Ihren Datenfluss zu überwachen, gehen Sie zu **Quellen**, **Datenflüsse** u
 
 ![dlz-monitor-dataflow.png](./images/dlzmonitordataflow.png)
 
-Das Laden der Daten kann einige Minuten dauern. Wenn es erfolgreich ist, wird der Status **Erfolg** angezeigt:
+Das Laden der Daten kann einige Minuten dauern. Bei Erfolg wird der Status „Erfolg **angezeigt**:
 
 ![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 
-[Zurück zu Modul 1.2](./data-ingestion.md)
+[Zurück zum Modul 1.2](./data-ingestion.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

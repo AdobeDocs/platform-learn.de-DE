@@ -1,6 +1,6 @@
 ---
-title: Query Service-API
-description: Erfahren Sie, wie Sie Abfragen schreiben und ausführen, Abfragen planen und eine Abfragevorlage mit der Adobe Experience Platform Query Service-API erstellen.
+title: Abfrage-Service-API
+description: Erfahren Sie, wie Sie Abfragen schreiben und ausführen, planen Sie Abfragen und erstellen Sie eine Abfragevorlage mit der Adobe Experience Platform Query Service-API.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Query Service-API
+# Abfrage-Service-API
 
-Erfahren Sie, wie Sie Abfragen schreiben und ausführen, Abfragen planen und eine Abfragevorlage mit der Adobe Experience Platform Query Service-API erstellen. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+Erfahren Sie, wie Sie Abfragen schreiben und ausführen, planen Sie Abfragen und erstellen Sie eine Abfragevorlage mit der Adobe Experience Platform Query Service-API. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333700?learn=on)

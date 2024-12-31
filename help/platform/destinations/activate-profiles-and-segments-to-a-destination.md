@@ -1,6 +1,6 @@
 ---
 title: Profile und Segmente für ein Ziel aktivieren
-description: Erfahren Sie, wie Sie Zielgruppensegmente für Ziele in Real-Time CDP aktivieren.  Starten Sie diesen Workflow in der Benutzeroberfläche der Ziele oder Segmente.
+description: Erfahren Sie, wie Sie Zielgruppensegmente für Ziele in Real-Time CDP aktivieren.  Starten Sie diesen Arbeitsablauf entweder in der Ziel- oder in der Segmentoberfläche.
 feature: Destinations
 role: User, Admin
 level: Beginner
@@ -15,7 +15,7 @@ ht-degree: 21%
 
 # Profile und Segmente für ein Ziel aktivieren
 
-Erfahren Sie, wie Sie Zielgruppensegmente für Ziele in Real-Time CDP aktivieren.  Starten Sie diesen Workflow in der Benutzeroberfläche der Ziele oder Segmente. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activation-overview.html).
+Erfahren Sie, wie Sie Zielgruppensegmente für Ziele in Real-Time CDP aktivieren.  Starten Sie diesen Arbeitsablauf entweder in der Ziel- oder in der Segmentoberfläche. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activation-overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on)
 

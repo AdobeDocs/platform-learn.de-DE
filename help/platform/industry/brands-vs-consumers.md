@@ -1,6 +1,6 @@
 ---
-title: Eine Tabelle mit zwei Wahrnehmungen - Marken im Vergleich zu Verbrauchern
-description: Für Marketing-Fachleute können heutzutage die Informationen zu Identitätspraktiken recht unübersichtlich sein. Und nur 37% der Marketingfachleute gaben an, dass sie für eine kekslose Zukunft vorbereitet sind, laut aktueller Forschungsergebnisse von Adobe und Advanis. In diesem Webinar entpackt Adobe das Verständnis und die Bereitschaft von Advertisern und Herausgebern für eine Zukunft ohne Cookies, die Auswirkungen auf ihre Anwendungsfälle und ihre Wahrnehmung des weiteren Ökosystems.
+title: Eine Geschichte zweier Wahrnehmungen - Marken vs. Verbraucher
+description: Für Marketing-Fachleute können heutzutage die Informationen zu Identitätspraktiken recht unübersichtlich sein. Und nur 37% der Marketingfachleute sagten, sie seien sehr gut auf eine Cookie-lose Zukunft vorbereitet, so jüngste Forschungsergebnisse von Adobe und Advanis. In diesem Webinar-Adobe werden das Verständnis und die Bereitschaft von Werbetreibenden und Publishern für eine Cookie-freie Zukunft, die Auswirkungen auf ihre Anwendungsfälle und ihre Wahrnehmung des weiteren Ökosystems erläutert.
 feature: Identities
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
@@ -16,9 +16,9 @@ ht-degree: 16%
 
 ---
 
-# Eine Tabelle mit zwei Wahrnehmungen - Marken im Vergleich zu Verbrauchern
+# Eine Geschichte zweier Wahrnehmungen - Marken vs. Verbraucher
 
-Für Marketing-Fachleute können heutzutage die Informationen zu Identitätspraktiken recht unübersichtlich sein. Und nur 37% der Marketingfachleute gaben an, dass sie für eine Zukunft ohne Cookies vorbereitet sind, laut aktueller Forschungsergebnisse von Adobe und [!DNL Advanis]. In diesem Webinar entpackt Adobe das Verständnis und die Bereitschaft von Advertisern und Herausgebern für eine Zukunft ohne Cookies, die Auswirkungen auf ihre Anwendungsfälle und ihre Wahrnehmung des weiteren Ökosystems. Um dieses Video zu ergänzen, können Sie auch ein Whitepaper herunterladen](assets/whitepaper-a-tale-of-two-perceptions.pdf)[
+Für Marketing-Fachleute können heutzutage die Informationen zu Identitätspraktiken recht unübersichtlich sein. Und nur 37% der Marketingfachleute sagten, sie seien sehr gut auf eine Cookie-lose Zukunft vorbereitet, so jüngste Forschungsergebnisse von Adobe und [!DNL Advanis]. In diesem Webinar-Adobe werden das Verständnis und die Bereitschaft von Werbetreibenden und Publishern für eine Cookie-freie Zukunft, die Auswirkungen auf ihre Anwendungsfälle und ihre Wahrnehmung des weiteren Ökosystems erläutert. Als Ergänzung zu diesem Video können Sie auch [Whitepaper herunterladen](assets/whitepaper-a-tale-of-two-perceptions.pdf)
 
 >[!VIDEO](https://video.tv.adobe.com/v/332060/?learn=on)
 

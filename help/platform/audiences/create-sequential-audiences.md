@@ -1,6 +1,6 @@
 ---
-title: Sequenzielle Zielgruppen erstellen
-description: In diesem Video erfahren Sie, wie Sie Erlebnisereignisse zu einer Timeline in Ihrer Zielgruppe hinzufügen, um eine Zielgruppe zu erstellen, die innerhalb einer bestimmten Zeit Aktionen in einer bestimmten Reihenfolge ausgeführt hat.
+title: Erstellen sequenzieller Zielgruppen
+description: In diesem Video erfahren Sie, wie Sie Erlebnisereignisse zu einer Zeitleiste in Ihrer Zielgruppe hinzufügen, um eine Zielgruppe zu erstellen, die innerhalb eines bestimmten Zeitraums Aktionen in einer bestimmten Reihenfolge ausgeführt hat.
 feature: Segments
 role: User
 level: Intermediate
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ---
 
-# Sequenzielle Zielgruppen erstellen
+# Erstellen sequenzieller Zielgruppen
 
-In diesem Video erfahren Sie, wie Sie Erlebnisereignisse zu einer Timeline in Ihrer Zielgruppe hinzufügen, um eine Zielgruppe zu erstellen, die innerhalb einer bestimmten Zeit Aktionen in einer bestimmten Reihenfolge ausgeführt hat. Weitere Informationen finden Sie in der [Dokumentation zum Segmentaufbau](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
+In diesem Video erfahren Sie, wie Sie Erlebnisereignisse zu einer Zeitleiste in Ihrer Zielgruppe hinzufügen, um eine Zielgruppe zu erstellen, die innerhalb eines bestimmten Zeitraums Aktionen in einer bestimmten Reihenfolge ausgeführt hat. Weitere Informationen finden Sie in der [Segment Builder-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmente]&quot;wurden in der Platform-Oberfläche in &quot;[!UICONTROL Zielgruppen]&quot;umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]** aus, um den Regel-Builder für dieses Video einzugeben.
+> &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333305/?learn=on)
 

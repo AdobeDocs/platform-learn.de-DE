@@ -1,6 +1,6 @@
 ---
-title: Importieren von Beispieldaten in Adobe Experience Platform
-description: Erfahren Sie, wie Sie eine Experience Platform-Sandbox-Umgebung mit einigen Beispieldaten einrichten.
+title: Beispieldaten nach Adobe Experience Platform importieren
+description: Erfahren Sie anhand einiger Beispieldaten, wie Sie eine Experience Platform-Sandbox-Umgebung einrichten.
 feature: API
 role: Developer
 level: Experienced
@@ -14,33 +14,33 @@ ht-degree: 6%
 
 ---
 
-# Importieren von Beispieldaten in Adobe Experience Platform
+# Beispieldaten nach Adobe Experience Platform importieren
 
 Erfahren Sie, wie Sie eine Experience Platform-Sandbox-Umgebung mit Beispieldaten einrichten. Mithilfe einer Postman-Sammlung können Sie Feldergruppen, Schemata und Datensätze erstellen und dann Beispieldaten in Experience Platform importieren.
 
 ## Anwendungsfall für Beispieldaten
 
-Experience Platform-Business-Anwender müssen häufig eine Reihe von Schritten durchlaufen, darunter das Identifizieren von Feldergruppen, das Erstellen von Schemas, das Vorbereiten von Daten, das Erstellen von Datensätzen und das anschließende Erfassen von Daten, bevor sie die von Experience Platform angebotenen Marketingfunktionen untersuchen können. In diesem Tutorial werden einige der Schritte automatisiert, sodass Sie Daten so schnell wie möglich in eine Platform-Sandbox übertragen können.
+Experience Platform-Business-Anwender müssen oft eine Reihe von Schritten durchlaufen, darunter die Identifizierung von Feldergruppen, die Erstellung von Schemata, die Vorbereitung von Daten, die Erstellung von Datensätzen und die Aufnahme von Daten, bevor sie die Marketing-Funktionen von Experience Platform erkunden können. In diesem Tutorial werden einige der Schritte automatisiert, damit Sie Daten so schnell wie möglich in eine Platform-Sandbox übertragen können.
 
-Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Luma. Sie investieren in Adobe Experience Platform, um Loyalitäts-, CRM-, Produktkatalog- und Offline-Kaufdaten in Echtzeit-Kundenprofile zu kombinieren und diese Profile zu aktivieren, um ihr Marketing auf die nächste Stufe zu bringen. Wir haben Beispieldaten für Luma generiert. Im Rest dieses Tutorials importieren Sie diese Daten in eine Ihrer Experience Platform-Sandbox-Umgebungen.
+Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Luma. Sie investieren in Adobe Experience Platform, um Treue-, CRM-, Produktkatalog- und Offline-Kaufdaten in Echtzeit-Kundenprofilen zu kombinieren und diese Profile zu aktivieren, damit sie ihr Marketing auf die nächste Stufe bringen können. Wir haben Beispieldaten für Luma generiert. Im weiteren Verlauf dieses Tutorials importieren Sie diese Daten in eine Ihrer Experience Platform-Sandbox-Umgebungen.
 
 >[!NOTE]
 >
->Das Endergebnis dieses Tutorials ist eine Sandbox mit ähnlichen Daten wie das Tutorial [Erste Schritte mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de). Sie wurde im April 2023 aktualisiert, um die [Journey Optimizer-Herausforderungen](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de) zu unterstützen. Es wurde im Juni 2023 aktualisiert, um die Authentifizierungsmethode auf OAuth umzustellen.
+>Das Ergebnis dieses Tutorials ist eine Sandbox mit ähnlichen Daten wie das Tutorial [Erste Schritte mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de). Sie wurde im April 2023 aktualisiert, um die [Journey Optimizer-Herausforderungen zu ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de). Sie wurde im Juni 2023 aktualisiert, um die Authentifizierungsmethode auf OAuth umzustellen.
 
 
 ## Voraussetzungen
 
-* Sie haben Zugriff auf Experience Platform-APIs und können sich authentifizieren. Wenn nicht, lesen Sie dieses [Tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=de).
+* Sie haben Zugriff auf Experience Platform-APIs und wissen, wie Sie sich authentifizieren. Andernfalls sehen Sie sich dieses [Tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=de) an.
 * Sie haben Zugriff auf eine Experience Platform-Entwicklungs-Sandbox.
-* Sie kennen Ihre Experience Platform-Mandanten-ID. Sie können sie abrufen, indem Sie eine authentifizierte [API-Anfrage](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) stellen
-oder extrahieren Sie sie aus der URL, wenn Sie sich bei Ihrem Platform-Konto anmelden. In der folgenden URL ist der Mandant beispielsweise &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
+* Sie kennen Ihre Experience Platform-Mandanten-ID. Sie können sie erhalten, indem Sie eine authentifizierte [API-Anfrage](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)
+oder indem Sie sie bei der Anmeldung bei Ihrem Platform-Konto aus der URL extrahieren. Bei der folgenden URL lautet der Mandant beispielsweise &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
 ## Verwenden [!DNL Postman] {#postman}
 
-### Umgebungsvariablen einrichten
+### Einrichten von Umgebungsvariablen
 
-Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die Anwendung [Postman](https://www.postman.com/downloads/) heruntergeladen haben. Los geht‘s!
+Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie das Programm [Postman](https://www.postman.com/downloads/) heruntergeladen haben. Los geht‘s!
 
 1. Laden Sie die Datei [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) herunter, die alle für dieses Tutorial erforderlichen Dateien enthält.
 
@@ -49,55 +49,55 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie die Anwendung [P
    >Die in der Datei [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) enthaltenen Benutzerdaten sind fiktiv und dürfen nur zu Demonstrationszwecken verwendet werden.
 
 1. Verschieben Sie die Datei `platform-utils-main.zip` aus dem Downloads-Ordner an den gewünschten Speicherort auf Ihrem Computer und entpacken Sie sie.
-1. Öffnen Sie im Ordner `luma-data` alle `json` -Dateien in einem Texteditor und ersetzen Sie alle Instanzen von `_yourTenantId` durch Ihre eigene Mandanten-ID, der ein Unterstrich vorangestellt ist.
-1. Öffnen Sie `luma-offline-purchases.json`, `luma-inventory-events.json` und `luma-web-events.json` in einem Texteditor und aktualisieren Sie alle Zeitstempel, sodass die Ereignisse im letzten Monat auftreten (suchen Sie beispielsweise nach `"timestamp":"2022-11` und ersetzen Sie Jahr und Monat).
-1. Notieren Sie den Speicherort des entpackten Ordners, wie Sie ihn später beim Einrichten der Umgebungsvariablen `FILE_PATH` [!DNL Postman] benötigen:
+1. Öffnen Sie im Ordner `luma-data` alle `json` Dateien in einem Texteditor und ersetzen Sie alle Instanzen von `_yourTenantId` durch Ihre eigene Mandanten-ID mit vorangestelltem Unterstrich.
+1. Öffnen Sie `luma-offline-purchases.json`, `luma-inventory-events.json` und `luma-web-events.json` in einem Texteditor und aktualisieren Sie alle Zeitstempel, sodass die Ereignisse im letzten Monat auftreten (suchen Sie beispielsweise nach `"timestamp":"2022-11` und ersetzen Sie Jahr und Monat)
+1. Notieren Sie sich den Speicherort des entpackten Ordners, da Sie ihn später beim Einrichten der Umgebungsvariablen `FILE_PATH` [!DNL Postman] benötigen:
 
    >[!NOTE]
-   > Um den Dateipfad auf Ihrer Mac abzurufen, navigieren Sie zum Ordner &quot;`platform-utils-main`&quot;, klicken Sie mit der rechten Maustaste auf den Ordner und wählen Sie die Option &quot;**Info abrufen**&quot;.
+   > Um den Dateipfad auf Ihrer Mac zu erhalten, navigieren Sie zum Ordner &quot;`platform-utils-main`&quot;, klicken Sie mit der rechten Maustaste auf den Ordner und wählen Sie **Option &quot;**&quot;.
    >
    > ![MAC-Dateipfad](../assets/data-generator/images/mac-file-path.png)
 
    >[!NOTE]
-   > Um den Dateipfad in Ihren Fenstern abzurufen, klicken Sie auf den Speicherort des gewünschten Ordners und klicken Sie dann mit der rechten Maustaste rechts neben dem Pfad in der Adressleiste. Kopieren Sie die Adresse, um den Dateipfad abzurufen.
+   > Um den Dateipfad in Ihren Fenstern zu erhalten, klicken Sie auf , um den Speicherort des gewünschten Ordners zu öffnen, und klicken Sie dann mit der rechten Maustaste auf rechts neben dem Pfad in der Adressleiste. Kopieren Sie die Adresse, um den Dateipfad abzurufen.
    > 
    > ![Windows-Dateipfad](../assets/data-generator/images/windows-file-path.png)
 
-1. Öffnen Sie [!DNL Postman] und erstellen Sie einen Arbeitsbereich aus dem Dropdown-Menü **Arbeitsbereiche**:\
+1. Öffnen Sie [!DNL Postman] und erstellen Sie einen Arbeitsbereich über das **Arbeitsbereiche** Dropdown-Menü:\
    ![Arbeitsbereich erstellen](../assets/data-generator/images/create-workspace.png)
-1. Geben Sie einen **Namen** und optional eine **Zusammenfassung** für Ihren Arbeitsbereich ein und klicken Sie auf **Workspace erstellen**. [!DNL Postman] wechselt beim Erstellen zu Ihrem neuen Arbeitsbereich.
+1. Geben Sie einen **Namen** und optional **Zusammenfassung** für Ihren Arbeitsbereich ein und klicken Sie auf **Workspace erstellen**. [!DNL Postman] wechseln zu Ihrem neuen Arbeitsbereich, wenn Sie ihn erstellen.
    ![Arbeitsbereich speichern](../assets/data-generator/images/save-workspace.png)
-1. Passen Sie jetzt einige Einstellungen an, um die [!DNL Postman]-Sammlungen in diesem Arbeitsbereich auszuführen. Klicken Sie in der Kopfzeile von [!DNL Postman] auf das Zahnradsymbol und wählen Sie **Einstellungen** aus, um das Einstellungs-Modal zu öffnen. Sie können auch den Tastaturbefehl (CMD/STRG + , ) verwenden, um das Modal zu öffnen.
-1. Aktualisieren Sie auf der Registerkarte &quot;`General`&quot; das Anforderungszeitlimit in ms auf `5000 ms` und aktivieren Sie `allow reading file outside this directory`
+1. Passen Sie jetzt einige Einstellungen an, um die [!DNL Postman] Sammlungen in diesem Arbeitsbereich auszuführen. Klicken Sie in der Kopfzeile von [!DNL Postman] auf das Zahnradsymbol und wählen Sie **Einstellungen** aus, um das Modal „Einstellungen“ zu öffnen. Sie können auch den Tastaturbefehl (CMD/STRG + ,) verwenden, um das Modal zu öffnen.
+1. Aktualisieren Sie auf der Registerkarte `General` die maximale Wartezeit für Anfragen in ms, um `allow reading file outside this directory` zu `5000 ms` und zu aktivieren
    ![Einstellungen](../assets/data-generator/images/settings.png)
 
    >[!NOTE]
-   > Wenn Dateien aus dem Arbeitsverzeichnis geladen werden, wird sie geräteübergreifend reibungslos ausgeführt, wenn dieselben Dateien auf den anderen Geräten gespeichert werden. Wenn Sie jedoch Dateien von außerhalb des Arbeitsverzeichnisses ausführen möchten, muss eine Einstellung aktiviert sein, um denselben Intent anzugeben. Wenn Ihr `FILE_PATH` nicht mit dem Arbeitsverzeichnispfad von [!DNL Postman] übereinstimmt, sollte diese Option aktiviert sein.
+   > Wenn Dateien aus dem Arbeitsverzeichnis geladen werden, laufen sie problemlos auf allen Geräten, wenn dieselben Dateien auf den anderen Geräten gespeichert werden. Wenn Sie jedoch Dateien von außerhalb des Arbeitsverzeichnisses ausführen möchten, muss eine Einstellung aktiviert werden, um denselben Zweck anzugeben. Wenn Ihr `FILE_PATH` nicht mit dem Arbeitsordnerpfad des [!DNL Postman] übereinstimmt, sollte diese Option aktiviert werden.
 
-1. Schließen Sie das Bedienfeld **Einstellungen** .
-1. Wählen Sie **Umgebungen** und dann **Import** aus:
+1. Schließen Sie das Bedienfeld **Einstellungen**.
+1. Wählen Sie **Umgebungen** und dann **Importieren**:
    ![Umgebungsimport](../assets/data-generator/images/env-import.png)
-1. Importieren Sie die heruntergeladene JSON-Umgebungsdatei, `DataInExperiencePlatform.postman_environment`
-1. Wählen Sie in Postman Ihre Umgebung in der oberen rechten Dropdown-Liste aus und klicken Sie auf das Augensymbol, um die Umgebungsvariablen anzuzeigen:
+1. Importieren Sie die heruntergeladene JSON-Umgebungsdatei `DataInExperiencePlatform.postman_environment`
+1. Wählen Sie in Postman oben rechts Ihre Umgebung aus und klicken Sie auf das Augensymbol, um die Umgebungsvariablen anzuzeigen:
    ![Umgebungsauswahl](../assets/data-generator/images/env-selection.png)
 
-1. Stellen Sie sicher, dass die folgenden Umgebungsvariablen ausgefüllt sind. Informationen zum Abrufen des Werts der Umgebungsvariablen finden Sie im Tutorial [Für Experience Platform-APIs authentifizieren](/help/platform/authentication/platform-api-authentication.md) mit schrittweisen Anweisungen.
+1. Stellen Sie sicher, dass die folgenden Umgebungsvariablen ausgefüllt sind. Um zu erfahren, wie Sie den Wert der Umgebungsvariablen abrufen, lesen Sie das Tutorial [Authentifizieren bei Experience Platform-APIs](/help/platform/authentication/platform-api-authentication.md), in dem Sie schrittweise Anweisungen finden.
 
    * `CLIENT_SECRET`
-   * `API_KEY`—`Client ID` in Adobe Developer Console
+   * `API_KEY` - `Client ID` in Adobe Developer Console
    * `SCOPES`
    * `TECHNICAL_ACCOUNT_ID`
    * `IMS`
-   * `IMS_ORG`—`Organization ID` in Adobe Developer Console
+   * `IMS_ORG` - `Organization ID` in Adobe Developer Console
    * `SANDBOX_NAME`
-   * `TENANT_ID`—Stellen Sie sicher, dass ein Unterstrich angezeigt wird, z. B. `_techmarketingdemos`
+   * `TENANT_ID` - Stellen Sie sicher, dass Sie mit einem Unterstrich führen, z. B. `_techmarketingdemos`
    * `CONTAINER_ID`
    * `platform_end_point`
-   * `FILE_PATH` - Verwenden Sie den lokalen Ordnerpfad, in dem Sie die `platform-utils-main.zip`-Datei entpackt haben. Stellen Sie sicher, dass er den Ordnernamen enthält, z. B. `/Users/dwright/Desktop/platform-utils-main`
+   * `FILE_PATH` - Verwenden Sie den lokalen Ordnerpfad, in den Sie die `platform-utils-main.zip` entpackt haben. Stellen Sie sicher, dass der Ordnername enthalten ist, z. B. `/Users/dwright/Desktop/platform-utils-main`
 
 1. **Speichern** der aktualisierten Umgebung
 
-### Importieren von Postman-Sammlungen
+### Postman-Sammlungen importieren
 
 Als Nächstes müssen Sie die Sammlungen in Postman importieren.
 
@@ -116,87 +116,87 @@ Als Nächstes müssen Sie die Sammlungen in Postman importieren.
    * `6-Luma-Test-Profiles.postman_collection.json`
    * `7-Luma-Web-Events.postman_collection.json`
 
-   ![Import von Sammlungen](../assets/data-generator/images/collection-files.png)
+   ![Sammlungen importieren](../assets/data-generator/images/collection-files.png)
 
 ### Authentifizieren
 
-Als Nächstes müssen Sie sich authentifizieren und ein Benutzer-Token generieren. Bitte beachten Sie, dass die in diesem Tutorial verwendeten Methoden zur Token-Generierung nur für produktionsfremde Zwecke geeignet sind. &quot;Lokales Signieren&quot;lädt eine JavaScript-Bibliothek von einem Drittanbieter-Host, und das Remote-Signieren sendet den privaten Schlüssel an einen Adobe-eigenen und verwalteten Webdienst. Während Adobe diesen privaten Schlüssel nicht speichert, sollten Produktionsschlüssel niemals für andere freigegeben werden.
+Als Nächstes müssen Sie sich authentifizieren und ein Benutzer-Token generieren. Beachten Sie, dass die in diesem Tutorial verwendeten Methoden zur Token-Generierung nur für die Verwendung außerhalb der Produktion geeignet sind. Beim lokalen Signieren wird eine JavaScript-Bibliothek von einem Drittanbieter-Host geladen, und beim Remote-Signieren wird der private Schlüssel an einen Adobe-eigenen und betriebenen Webservice gesendet. Während Adobe diesen privaten Schlüssel nicht speichert, sollten Produktionsschlüssel niemals mit anderen geteilt werden.
 
-1. Öffnen Sie die Sammlung &quot;`0-Authentication`&quot;, wählen Sie die Anforderung &quot;`OAuth: Request Access Token`&quot;aus und klicken Sie auf &quot;`SEND`&quot;, um sich zu authentifizieren und das Zugriffstoken zu erhalten.
+1. Öffnen Sie die `0-Authentication`, wählen Sie die `OAuth: Request Access Token` aus und klicken Sie auf `SEND` , um sich zu authentifizieren und das Zugriffstoken abzurufen.
 
-   ![Import von Sammlungen](../assets/data-generator/images/authentication.png)
+   ![Sammlungen importieren](../assets/data-generator/images/authentication.png)
 
-1. Überprüfen Sie die Umgebungsvariablen und beachten Sie, dass die `ACCESS_TOKEN` jetzt gefüllt ist.
+1. Überprüfen Sie die Umgebungsvariablen, und beachten Sie, dass die `ACCESS_TOKEN` jetzt ausgefüllt ist.
 
 ### Datenimport
 
-Jetzt können Sie die Daten vorbereiten und in Ihre Platform-Sandbox importieren. Die Postman Kollektionen, die Sie importiert haben, werden die ganze Mühe tun!
+Jetzt können Sie die Daten in Ihre Platform-Sandbox vorbereiten und importieren. Die Postman-Kollektionen, die Sie importiert haben, erledigen alle Aufgaben!
 
-1. Öffnen Sie die Sammlung &quot;`1-Luma-Loyalty-Data`&quot; und klicken Sie auf der Registerkarte &quot;Übersicht&quot;auf &quot;**Ausführen**&quot;, um einen &quot;Collection Runner&quot;zu starten.
+1. Öffnen Sie die Sammlung `1-Luma-Loyalty-Data` und klicken Sie auf **Registerkarte Übersicht** Ausführen“, um einen Sammlungsrunner zu starten.
 
-   ![Import von Sammlungen](../assets/data-generator/images/loyalty.png)
+   ![Sammlungen importieren](../assets/data-generator/images/loyalty.png)
 
-1. Wählen Sie im Fenster des Sammlungs-Runners die Umgebung aus der Dropdown-Liste aus, aktualisieren Sie die Option **Verzögerung** auf `4000ms`, aktivieren Sie die Option **Antworten speichern** und stellen Sie sicher, dass die Ausführungsreihenfolge korrekt ist. Klicken Sie auf die Schaltfläche **Luma Loyalty Data ausführen** .
+1. Wählen Sie im Fenster „Sammlungsausführung“ die Umgebung aus dem Dropdown-Menü aus, aktualisieren Sie **Verzögerung** auf `4000ms`, aktivieren Sie die Option **Antworten speichern** und stellen Sie sicher, dass die Ausführungsreihenfolge korrekt ist. Klicken Sie auf **Schaltfläche „Luma-Treuedaten ausführen**
 
-   ![Import von Sammlungen](../assets/data-generator/images/loyalty-run.png)
-
-   >[!NOTE]
-   >
-   >**1-Luma-Loyalty-Data** erstellt ein Schema für Kundenloyalitätsdaten. Das Schema basiert auf der Klasse &quot;XDM Individual Profile&quot;, der Standardfeldgruppe sowie einer benutzerdefinierten Feldergruppe und einem benutzerdefinierten Datentyp. Die Sammlung erstellt einen Datensatz mithilfe des Schemas und lädt Beispieldaten zur Kundenloyalität in Adobe Experience Platform hoch.
+   ![Sammlungen importieren](../assets/data-generator/images/loyalty-run.png)
 
    >[!NOTE]
    >
-   >Wenn Sammlungsanfragen während des Postman-Sammlungs-Runners fehlschlagen, stoppen Sie die Ausführung und führen Sie die Sammlungsanfragen einzeln aus.
+   >**1-Luma-Loyalty-Data** erstellt ein Schema für Kundenloyalitätsdaten. Das Schema basiert auf der Klasse „XDM Individual Profile“, einer Standardfeldgruppe sowie einer benutzerdefinierten Feldgruppe und einem Datentyp. Die -Sammlung erstellt einen Datensatz mit dem -Schema und lädt Beispieldaten zur Kundentreue in Adobe Experience Platform hoch.
 
-1. Wenn alles gut geht, sollten alle Anforderungen in der `Luma-Loyalty-Data` -Sammlung übergeben werden.
+   >[!NOTE]
+   >
+   >Wenn Sammlungsanfragen beim Postman-Sammlungsrunner fehlschlagen, stoppen Sie die Ausführung und führen Sie die Sammlungsanfragen einzeln aus.
+
+1. Wenn alles gut geht, sollten alle Anfragen in der `Luma-Loyalty-Data`-Sammlung übergeben werden.
 
    ![Treueergebnis](../assets/data-generator/images/loyalty-result.png)
 
-1. Melden wir uns nun bei [Adobe Experience Platform-Oberfläche](https://platform.adobe.com/) an und navigieren zu Datensätzen.
-1. Öffnen Sie den Datensatz &quot;`Luma Loyalty Dataset`&quot;. Im Fenster der Datensatzaktivität können Sie eine erfolgreiche Batch-Ausführung anzeigen, die 1.000 Datensätze erfasst hat. Sie können auch auf die Option Datensatz-Vorschau klicken, um die erfassten Datensätze zu überprüfen. Möglicherweise müssen Sie einige Minuten warten, um zu bestätigen, dass 1000 [!UICONTROL neue Profilfragmente] erstellt wurden.
-   ![Treuedatensatz](../assets/data-generator/images/loyalty-dataset.png)
+1. Melden wir uns jetzt bei der [Adobe Experience Platform-](https://platform.adobe.com/) an und navigieren zu den Datensätzen.
+1. Öffnen Sie den `Luma Loyalty Dataset` Datensatz, und im Fenster Datensatzaktivität können Sie einen erfolgreichen Batch-Vorgang anzeigen, der 1.000 Datensätze aufgenommen hat. Sie können auch auf die Option Datensatz in der Vorschau anzeigen klicken, um die aufgenommenen Datensätze zu überprüfen. Möglicherweise müssen Sie mehrere Minuten warten, um zu bestätigen, dass 1000 [!UICONTROL neue Profilfragmente] erstellt wurden.
+   ![Treueprogramm-Datensatz](../assets/data-generator/images/loyalty-dataset.png)
 1. Wiederholen Sie die Schritte 1 bis 3, um die anderen Sammlungen auszuführen:
-   * `2-Luma-CRM-Data.postman_collection.json` erstellt ein Schema und einen befüllten Datensatz für CRM-Daten von Kunden. Das Schema basiert auf der Klasse &quot;XDM Individual Profile&quot;, die demografische Details, persönliche Kontaktdetails, Präferenzdetails und eine benutzerdefinierte Identitätsfeldgruppe umfasst.
-   * `3-Luma-Product-Catalog.postman_collection.json` erstellt ein Schema und einen ausgefüllten Datensatz für Produktkataloginformationen. Das Schema basiert auf einer benutzerdefinierten Produktkatalogklasse und verwendet eine benutzerdefinierte Feldgruppe für den Produktkatalog.
-   * `4-Luma-Offline-Purchase-Events.postman_collection.json` erstellt ein Schema und füllt den Datensatz für Offline-Kaufereignisdaten von Kunden. Das Schema basiert auf der XDM ExperienceEvent-Klasse und umfasst eine benutzerdefinierte Identität sowie Commerce Details-Feldergruppen.
-   * `5-Luma-Product-Inventory-Events.postman_collection.json` erstellt ein Schema und einen befüllten Datensatz für Ereignisse im Zusammenhang mit Produkten, die auf Lager sind. Das Schema basiert auf einer benutzerdefinierten Business-Event-Klasse und einer benutzerdefinierten Feldergruppe.
-   * `6-Luma-Test-Profiles.postman_collection.json` erstellt ein Schema und füllt einen Datensatz mit Testprofilen, die in Adobe Journey Optimizer verwendet werden sollen
-   * `7-Luma-Web-Events.postman_collection.json` erstellt ein Schema und füllt einen Datensatz mit einfachen historischen Webdaten.
+   * `2-Luma-CRM-Data.postman_collection.json` erstellt ein Schema und einen ausgefüllten Datensatz für CRM-Daten von Kunden. Das Schema basiert auf der Klasse „XDM Individual Profile“, die demografische Details, persönliche Kontaktdaten, Voreinstellungsdetails und eine benutzerdefinierte Identitätsfeldgruppe enthält.
+   * `3-Luma-Product-Catalog.postman_collection.json` erstellt ein Schema und einen ausgefüllten Datensatz für Produktkataloginformationen. Das Schema basiert auf einer benutzerdefinierten Produktkatalogklasse und verwendet eine benutzerdefinierte Produktkatalog-Feldergruppe.
+   * `4-Luma-Offline-Purchase-Events.postman_collection.json` erstellt ein Schema und einen ausgefüllten Datensatz für Offline-Kaufereignisdaten von Kunden. Das Schema basiert auf der XDM ExperienceEvent-Klasse und umfasst eine benutzerdefinierte Identität sowie Feldergruppen für Commerce-Details.
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` erstellt ein Schema und einen ausgefüllten Datensatz für Ereignisse im Zusammenhang mit Produkten, die auf Lager oder nicht vorrätig sind. Das Schema basiert auf einer benutzerdefinierten Geschäftsereignisklasse und einer benutzerdefinierten Feldergruppe.
+   * `6-Luma-Test-Profiles.postman_collection.json` erstellt ein Schema und einen ausgefüllten Datensatz mit Testprofilen zur Verwendung in Adobe Journey Optimizer
+   * `7-Luma-Web-Events.postman_collection.json` erstellt ein Schema und einen ausgefüllten Datensatz mit einfachen historischen Web-Daten.
 
 
 ## Validierung
 
-Die Beispieldaten wurden so konzipiert, dass bei der Ausführung der Sammlungen Echtzeit-Kundenprofile erstellt werden, die Daten aus mehreren Systemen kombinieren. Ein gutes Beispiel dafür ist der erste Datensatz der Datensätze zu Treue, CRM und Offline-Einkäufen. Überprüfen Sie dieses Profil, um zu bestätigen, dass die Daten erfasst wurden. In der [Adobe Experience Platform-Oberfläche](https://experience.adobe.com/platform/):
+Die Beispieldaten wurden so entworfen, dass nach der Ausführung der Sammlungen Echtzeit-Kundenprofile erstellt werden, die Daten aus mehreren Systemen kombinieren. Ein gutes Beispiel dafür ist der erste Datensatz der Treue-, CRM- und Offline-Kauf-Datensätze. Suchen Sie dieses Profil, um zu bestätigen, dass die Daten aufgenommen wurden. In der Benutzeroberfläche von [Adobe Experience Platform](https://experience.adobe.com/platform/):
 
-1. Navigieren Sie zu **[!UICONTROL Profile]** > **[!UICONTROL Durchsuchen]** .
-1. Wählen Sie `Luma Loyalty Id` als **[!UICONTROL Identitäts-Namespace]** aus.
-1. Suchen Sie nach `5625458` als **[!UICONTROL Identitätswert]** .
-1. Öffnen Sie das Profil `Daniel Wright` .
+1. Navigieren Sie **[!UICONTROL Profile]** > **[!UICONTROL Durchsuchen]**
+1. Wählen Sie `Luma Loyalty Id` als **[!UICONTROL Identity-Namespace]**
+1. Suchen Sie nach `5625458` als **[!UICONTROL Identitätswert]**
+1. `Daniel Wright` öffnen
 
 >[!TIP]
 >
->Wenn das Profil nicht angezeigt wird, überprüfen Sie die Seite [!UICONTROL Datensätze] , um sicherzustellen, dass alle Datensätze erfolgreich erstellt und erfasst wurden. Wenn das gut aussieht, warten Sie fünfzehn Minuten und überprüfen Sie, ob das Profil im Viewer verfügbar ist.  Wenn bei der Datenerfassung Probleme aufgetreten sind, überprüfen Sie die Fehlermeldungen, um das Problem zu finden. Sie können auch versuchen, die Fehlerdiagnose auf der Seite [!UICONTROL Datensätze] zu aktivieren, und die JSON-Datendatei per Drag-and-Drop verschieben, um die Daten erneut zu erfassen.
+>Wenn das Profil nicht angezeigt wird, überprüfen Sie die Seite [!UICONTROL Datensätze], um sicherzustellen, dass alle Datensätze erfolgreich erstellt und aufgenommen wurden. Wenn dies gut aussieht, warten Sie fünfzehn Minuten und überprüfen Sie, ob das Profil im Viewer verfügbar ist.  Wenn bei der Datenaufnahme Probleme aufgetreten sind, überprüfen Sie die Fehlermeldungen und versuchen Sie, das Problem zu finden. Sie können auch versuchen, die Fehlerdiagnose auf der Seite [!UICONTROL Datensätze] zu aktivieren und die JSON-Datendatei per Drag-and-Drop zu ziehen, um die Daten erneut aufzunehmen.
 
 
 ![Öffnen eines Profils](../assets/data-generator/images/validation-profile-open.png)
 
-Indem Sie die Daten auf den Registerkarten **[!UICONTROL Attribute]** und **[!UICONTROL Ereignisse]** durchsuchen, sollten Sie sehen, dass das Profil Daten aus den verschiedenen Datendateien enthält:
-![Ereignisdaten aus der Datei &quot;Offline-Kaufereignisse&quot;](../assets/data-generator/images/validation-profile-events.png)
+Wenn Sie die Daten auf den Registerkarten **[!UICONTROL Attribute]** und **[!UICONTROL Ereignisse]** durchsuchen, sollten Sie sehen, dass das Profil Daten aus den verschiedenen Datendateien enthält:
+![Ereignisdaten aus der Offline-Kaufereignisdatei](../assets/data-generator/images/validation-profile-events.png)
 
 ## Nächste Schritte
 
-Wenn Sie mehr über Adobe Journey Optimizer erfahren möchten, enthält diese Sandbox alles, was Sie für die [Journey Optimizer-Herausforderungen](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de) benötigen
+Wenn Sie mehr über Adobe Journey Optimizer erfahren möchten, enthält diese Sandbox alles, was Sie zur Bewältigung der [Journey Optimizer-Herausforderungen benötigen](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de)
 
-Wenn Sie mehr über Zusammenführungsrichtlinien, Data Governance, Query Service und den Segment Builder erfahren möchten, lesen Sie im Tutorial Erste Schritte für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en) die [Lektion 11 . Die früheren Lektionen dieses anderen Tutorials zeigen Ihnen, wie Sie manuell alles erstellen können, was gerade von diesen Postman-Sammlungen befüllt wurde - genießen Sie den Vorsprung!
+Wenn Sie mehr über Zusammenführungsrichtlinien, Data Governance, den Abfrage-Service und den Segment Builder erfahren möchten, springen Sie im Tutorial Erste Schritte für Datenarchitekten und Dateningenieure zu [Lektion 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Die früheren Lektionen dieses anderen Tutorials haben Sie dazu beigetragen, alles, was gerade mit diesen Postman-Sammlungen gefüllt wurde, manuell zu erstellen - genießen Sie den Vorsprung!
 
-Wenn Sie eine Web SDK-Beispielimplementierung erstellen möchten, um eine Verknüpfung zu dieser Sandbox herzustellen, gehen Sie zu
-[Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de). Nachdem Sie die Lektionen &quot;Erste Konfiguration&quot;, &quot;Tags-Konfiguration&quot;und &quot;Experience Platform einrichten&quot;des Web SDK-Tutorials eingerichtet haben, melden Sie sich mit den ersten zehn E-Mail-Adressen in der Datei `luma-crm.json` mit dem Kennwort `test` an der Luma-Website an, um zu sehen, wie die Profilfragmente mit den in diesem Tutorial hochgeladenen Daten zusammengeführt werden.
+Wenn Sie eine Beispiel-Web-SDK-Implementierung für den Link zu dieser Sandbox erstellen möchten, gehen Sie folgendermaßen vor
+[Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview). Nach dem Einrichten der Lektionen „Erstkonfiguration“, „Tags-Konfiguration“ und &quot;Experience Platform einrichten“ des Web SDK-Tutorials melden Sie sich bei der Luma-Website mit den ersten zehn E-Mail-Adressen in der `luma-crm.json`-Datei mit dem `test` Passwort an, um zu sehen, wie die Profilfragmente mit den in diesem Tutorial hochgeladenen Daten zusammengeführt werden.
 
-Wenn Sie eine Mobile SDK-Beispielimplementierung erstellen möchten, um eine Verknüpfung zu dieser Sandbox herzustellen, gehen Sie zu
-[Tutorial zur Implementierung von Adobe Experience Cloud in Apps für mobile Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de). Nachdem Sie die Lektionen &quot;Erstkonfiguration&quot;, &quot;App-Implementierung&quot;und &quot;Experience Platform&quot;des Web SDK-Tutorials eingerichtet haben, melden Sie sich mit den ersten E-Mail-Adressen in der Datei &quot;`luma-crm.json`&quot;an der Luma-Website an, um die Zusammenführung eines Profilfragments mit den in diesem Tutorial hochgeladenen Daten anzuzeigen.
+Wenn Sie eine Beispielimplementierung von Mobile SDK erstellen möchten, um eine Verknüpfung zu dieser Sandbox herzustellen, gehen Sie folgendermaßen vor
+[Tutorial zur Implementierung von Adobe Experience Cloud in Mobile Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de). Nach dem Einrichten der Lektionen „Erstkonfiguration“, „App-Implementierung“ und &quot;Experience Platform&quot; des Web SDK-Tutorials melden Sie sich bei der Luma-Website mit den ersten E-Mail-Adressen in der `luma-crm.json` an, um eine Profilfragmentzusammenführung mit den in diesem Tutorial hochgeladenen Daten zu sehen.
 
 ## Sandbox-Umgebung zurücksetzen {#reset-sandbox}
 
 Beim Zurücksetzen einer Nicht-Produktions-Sandbox werden alle mit dieser Sandbox verbundenen Ressourcen (Schemata, Datensätze usw.) gelöscht, wobei der Name der Sandbox und die zugehörigen Berechtigungen beibehalten werden. Diese „saubere“ Sandbox ist für Benutzer, die Zugriff darauf haben, unter demselben Namen weiter verfügbar.
 
-Führen Sie die Schritte [hier](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) aus, um eine Sandbox-Umgebung zurückzusetzen.
+Gehen Sie wie folgt vor [hier](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox), um eine Sandbox-Umgebung zurückzusetzen.

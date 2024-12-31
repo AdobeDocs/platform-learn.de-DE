@@ -1,19 +1,20 @@
 ---
-title: Datenerfassung - FAC - Erstellen einer zusammengeführten Komposition
-description: Foundation - FAC - Erstellen einer föderierten Komposition
+title: Datenerfassung - FAC - Erstellen einer verbundenen Komposition
+description: Foundation - FAC - Erstellen einer Verbundzusammensetzung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 8cfe1dbb528bdf5ecc828cf67ef969c885982435
+exl-id: 293bf825-d0d6-48cf-9cbf-69f622597678
+source-git-commit: 7283dc52f509c3296443c6e4f02fdcc0680d6f6a
 workflow-type: tm+mt
 source-wordcount: '33'
 ht-degree: 0%
 
 ---
 
-# 1.3.3 Föderierte Zusammensetzung erstellen
+# 1.3.3 Erstellen einer Verbundzusammensetzung
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 
-[Zurück zu Modul 1.3](./fac.md)
+[Zurück zum Modul 1.3](./fac.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

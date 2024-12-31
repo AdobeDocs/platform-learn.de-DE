@@ -1,6 +1,6 @@
 ---
 title: Daten vorbereiten
-description: Erfahren Sie, wie Sie Daten aus mehreren Datensätzen bereinigen, vorbereiten und kombinieren, um mithilfe von CTAS (Create Table AS)- und Spark SQL-Funktionen für Reporting und Dashboards einen neuen Datensatz zu erstellen.
+description: Erfahren Sie, wie Sie Daten aus mehreren Datensätzen bereinigen, vorbereiten und kombinieren können, um einen neuen Datensatz mit CTAS- (Create Table AS) und Spark SQL-Funktionen für das Reporting und Dashboard zu erstellen.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 6%
 
 # Daten vorbereiten
 
-Erfahren Sie, wie Sie Daten aus mehreren Datensätzen bereinigen, vorbereiten und kombinieren, um mithilfe von CTAS (Create Table AS)- und Spark SQL-Funktionen für Reporting und Dashboards einen neuen Datensatz zu erstellen. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+Erfahren Sie, wie Sie Daten aus mehreren Datensätzen bereinigen, vorbereiten und kombinieren können, um einen neuen Datensatz mit CTAS- (Create Table AS) und Spark SQL-Funktionen für das Reporting und Dashboard zu erstellen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on)

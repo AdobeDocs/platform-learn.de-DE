@@ -1,5 +1,5 @@
 ---
-title: Pseudonyme Profil- und Erlebnisereignisabläufe
+title: Ablauf von pseudonymen Profilen und Erlebnisereignissen
 description: Erfahren Sie, wie Sie die Ablaufeinstellungen für pseudonyme Profile und Ereignisse in Experience Platform konfigurieren und welche Vorteile sich daraus ergeben.
 feature: Data Hygiene
 role: Admin, Data Engineer, Data Architect
@@ -15,11 +15,11 @@ ht-degree: 37%
 
 ---
 
-# Pseudonyme Profil- und Erlebnisereignisabläufe
+# Ablauf von pseudonymen Profilen und Erlebnisereignissen
 
 Erfahren Sie, wie Sie die Ablaufeinstellungen für pseudonyme Profile und Ereignisse in Experience Platform konfigurieren und welche Vorteile sich daraus ergeben.
 
-Diese Einstellungen ermöglichen es Data Stewards, Ablaufdaten für nicht authentifizierte Profile und die zugehörigen Ereignisse festzulegen. So behalten Sie die [!DNL Profile Service] für Ihre Marketing- und Werbe-Anwendungsfälle bei. Weitere Informationen finden Sie in der Dokumentation zum Ablauf von [Erlebnisereignissen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/event-expirations) und zum Ablauf von [Pseudonymen Profildaten](https://experienceleague.adobe.com/en/docs/experience-platform/profile/event-expirations) .
+Mit diesen Einstellungen können Datenverwalter Ablaufdaten für nicht authentifizierte Profile und deren zugehörige Ereignisse festlegen. Auf diese Weise bleiben die [!DNL Profile Service] für Ihre Marketing- und Werbeanwendungsfälle relevant. Weitere Informationen finden Sie in der Dokumentation [Ablauf von Erlebnisereignissen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/event-expirations) und [Ablauf von Daten pseudonymer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/event-expirations) .
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on)

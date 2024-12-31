@@ -1,6 +1,6 @@
 ---
-title: Rezepte, Modelle und Dienste - Übersicht
-description: Erfahren Sie mehr über Rezepte, Modelle und Dienste in Adobe Experience Platform Data Science Workspace.
+title: Rezepte, Modelle und Services - Übersicht
+description: Erfahren Sie mehr über Rezepte, Modelle und Services in Adobe Experience Platform Data Science Workspace.
 feature: Data Science Workspace
 role: User
 level: Beginner
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ---
 
-# Rezepte, Modelle und Dienste - Übersicht
+# Rezepte, Modelle und Services - Übersicht
 
-Erfahren Sie mehr über Rezepte, Modelle und Dienste in Adobe Experience Platform Data Science Workspace. Weitere Informationen finden Sie in der Dokumentation zu [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
+Erfahren Sie mehr über Rezepte, Modelle und Services in Adobe Experience Platform Data Science Workspace. Weitere Informationen finden Sie in der [Dokumentation zu Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333380?learn=on)
 

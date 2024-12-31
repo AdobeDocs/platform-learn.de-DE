@@ -1,6 +1,6 @@
 ---
-title: Einführung in Customer AI
-description: Eine allgemeine Übersicht darüber, wie Marketing-Experten Customer AI verwenden können, um Kundenprognosen zu generieren.
+title: Einführung in Kunden-KI
+description: Ein allgemeiner Überblick darüber, wie Marketing-Experten Kunden-KI verwenden können, um Kundenprognosen zu generieren.
 solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
@@ -15,8 +15,8 @@ ht-degree: 2%
 
 ---
 
-# Einführung in Customer AI
+# Einführung in Kunden-KI
 
-Eine allgemeine Übersicht darüber, wie Marketing-Experten Customer AI verwenden können, um Kundenprognosen zu generieren. Weitere Informationen finden Sie in der Dokumentation zu [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de) .
+Ein allgemeiner Überblick darüber, wie Marketing-Experten Kunden-KI verwenden können, um Kundenprognosen zu generieren. Weitere Informationen finden Sie in der [Dokumentation zu Kunden-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on)

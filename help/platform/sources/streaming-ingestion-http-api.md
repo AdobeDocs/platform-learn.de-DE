@@ -1,5 +1,5 @@
 ---
-title: Daten mithilfe des HTTP-API-Endpunkts für Streaming-Verbindung erfassen
+title: Aufnehmen von Daten mithilfe des HTTP-API-Endpunkts der Streaming-Verbindung
 description: In diesem Video wird gezeigt, wie Daten mit dem HTTP API-Endpunkt in Echtzeit an Adobe Experience Platform gestreamt werden können.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
@@ -14,7 +14,7 @@ ht-degree: 42%
 
 ---
 
-# Daten mit HTTP-API streamen
+# Streamen von Daten mit der HTTP-API
 
 In diesem Video wird gezeigt, wie Daten mit dem HTTP API-Endpunkt in Echtzeit an Adobe Experience Platform gestreamt werden können.
 
@@ -22,7 +22,7 @@ In diesem Video wird gezeigt, wie Daten mit dem HTTP API-Endpunkt in Echtzeit an
 
 ## Weitere Informationen
 
-* [Erstellen Sie eine Streaming-Verbindung mithilfe der API-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
-* [Streamen von Datensatzdaten mithilfe der Dokumentation zu Streaming-Aufnahme-APIs](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-* [Streamen von Zeitreihendaten mithilfe der Dokumentation zu Streaming-Aufnahme-APIs](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-* [Senden mehrerer Nachrichten in einer Dokumentation zu einer einzelnen HTTP-Anforderung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+* [Erstellen einer Streaming-Verbindung mithilfe der API-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
+* [Datensatzdaten mithilfe der Dokumentation zu Streaming-Aufnahme-APIs streamen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
+* [Streamen von Zeitreihendaten mit Streaming-Aufnahme-APIs - Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
+* [Senden mehrerer Nachrichten in einer einzigen HTTP-Anfrage-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)

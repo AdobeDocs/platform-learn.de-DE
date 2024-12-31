@@ -1,6 +1,6 @@
 ---
-title: Klassen erstellen
-description: In diesem Video wird gezeigt, wie Klassen in Adobe Experience Platform für die Verwendung in Experience-Datenmodell (XDM)-Schemas erstellt werden.
+title: Erstellen von Klassen
+description: In diesem Video wird gezeigt, wie Klassen in Adobe Experience Platform zur Verwendung in Experience-Datenmodell(XDM)-Schemata erstellt werden.
 feature: Schemas
 role: Data Architect, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Klassen erstellen
+# Erstellen von Klassen
 
-In diesem Video wird gezeigt, wie Klassen in Adobe Experience Platform für die Verwendung in Experience-Datenmodell (XDM)-Schemas erstellt werden. Weitere Informationen finden Sie in der Dokumentation zu [Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) .
+In diesem Video wird gezeigt, wie Klassen in Adobe Experience Platform zur Verwendung in Experience-Datenmodell(XDM)-Schemata erstellt werden. Weitere Informationen finden Sie in der [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333538?learn=on)

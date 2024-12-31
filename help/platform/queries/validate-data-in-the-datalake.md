@@ -1,6 +1,6 @@
 ---
-title: Überprüfen von Daten im Datensatz mit Query Service
-description: Erfahren Sie, wie Sie mithilfe von Adobe Experience Platform Query Service überprüfen, ob Daten erfolgreich in den Datensatz erfasst wurden.
+title: Validieren von Daten im Data Lake mit dem Abfrage-Service
+description: Erfahren Sie, wie Sie mithilfe des Abfrage-Service von Adobe Experience Platform überprüfen können, ob Daten erfolgreich in den Datalake aufgenommen wurden.
 feature: Queries
 role: Data Engineer, Data Architect, Developer, Architect
 level: Intermediate
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Validieren von Daten im Datensatz
+# Validieren von Daten im Data Lake
 
-Erfahren Sie, wie Sie mithilfe von Adobe Experience Platform Query Service überprüfen, ob Daten erfolgreich in den Datensatz erfasst wurden. Eine ausführliche Produktdokumentation finden Sie im Handbuch [Benutzeroberfläche des Abfrageeditors-Handbuchs](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
+Erfahren Sie, wie Sie mithilfe des Abfrage-Service von Adobe Experience Platform überprüfen können, ob Daten erfolgreich in den Datalake aufgenommen wurden. Eine ausführliche Produktdokumentation finden Sie im [Handbuch zur Benutzeroberfläche des Abfrage-Editors](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on)

@@ -18,10 +18,10 @@ ht-degree: 62%
 
 # Demo zum Adobe Experience Platform Web SDK und Edge Network
 
-Siehe Adobe Experience Platform Web SDK und Edge Network in Aktion, mit einem einzigen Aufruf zum Adobe Senden von Daten an Experience Platform, Analytics, Audience Manager und Target. Weitere Informationen finden Sie in der Dokumentation zum Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de).[
+Erleben Sie Adobe Experience Platform Web SDK und Edge Network in Aktion, wobei mit einem einzigen Aufruf von Adobe Daten an Experience Platform, Analytics, Audience Manager und Target gesendet werden. Weitere Informationen finden Sie in der Dokumentation zu [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on)
 
 >[!NOTE]
 >
->Dieses Video ist ein Auszug aus der Adobe Summit 2020-Sitzung *[Erfüllen Sie Alloy.js und taggen Sie nie wieder für eine eVar oder Mbox](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Dieses Video ist ein Auszug aus der Adobe Summit 2020-Session *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.

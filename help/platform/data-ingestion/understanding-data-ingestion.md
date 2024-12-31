@@ -14,9 +14,9 @@ ht-degree: 5%
 
 ---
 
-# Datenerfassung - Übersicht
+# Übersicht über die Datenaufnahme
 
-Mit den Datenerfassungsfunktionen von Adobe Experience Platform können Sie Ihre Daten zu einer offenen und skalierbaren Plattform zusammenführen, um Echtzeit-Kundenprofile zu verwalten. Weitere Informationen finden Sie in der [Dokumentation zur Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de).
+Mit den Datenerfassungsfunktionen von Adobe Experience Platform können Sie Ihre Daten in einer offenen und skalierbaren Plattform zusammenführen, um Echtzeit-Kundenprofile zu verwalten. Weitere Informationen finden Sie in der [Dokumentation zur Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
 

@@ -1,6 +1,6 @@
 ---
-title: Einführung in Attribution AI
-description: Eine allgemeine Übersicht darüber, wie Marketingexperten und Analysten Attribution AI verwenden können, um die Auswirkungen ihrer Marketingkanäle und Kampagnen zu verstehen.
+title: Einführung in das Attribution AI
+description: Ein allgemeiner Überblick darüber, wie Marketing-Experten und Analysten Attribution AI einsetzen können, um die Auswirkungen ihrer Marketing-Kanäle und -Kampagnen zu verstehen.
 feature: Attribution AI
 role: User
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Einführung in Attribution AI
+# Einführung in das Attribution AI
 
-Eine allgemeine Übersicht darüber, wie Marketingexperten und Analysten Attribution AI verwenden können, um die Auswirkungen ihrer Marketingkanäle und Kampagnen zu verstehen. Weitere Informationen finden Sie in der Dokumentation zu [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Ein allgemeiner Überblick darüber, wie Marketing-Experten und Analysten Attribution AI einsetzen können, um die Auswirkungen ihrer Marketing-Kanäle und -Kampagnen zu verstehen. Weitere Informationen finden Sie in der Dokumentation zu [Attribution AI ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Einführung in Privacy Service
+title: Einführung in den Privacy Service
 description: Erfahren Sie mehr über Datenschutzbestimmungen und deren Auswirkungen auf Datenvorgänge. Erfahren Sie außerdem, wie Privacy Service mit diesen Herausforderungen umgeht.
 feature: Privacy
 role: Data Engineer, Data Architect, Developer
@@ -14,8 +14,8 @@ ht-degree: 38%
 
 ---
 
-# Einführung in Privacy Service
+# Einführung in den Privacy Service
 
-Erfahren Sie mehr über Datenschutzbestimmungen und deren Auswirkungen auf Datenvorgänge. Erfahren Sie außerdem, wie Privacy Service mit diesen Herausforderungen umgeht. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) .
+Erfahren Sie mehr über Datenschutzbestimmungen und deren Auswirkungen auf Datenvorgänge. Erfahren Sie außerdem, wie Privacy Service mit diesen Herausforderungen umgeht. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336074?learn=on)

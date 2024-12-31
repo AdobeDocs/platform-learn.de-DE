@@ -1,6 +1,6 @@
 ---
 title: Einverständnisübersicht
-description: Erfahren Sie, wie Sie mit der Zustimmungsverwaltung im Adobe Experience Platform Web SDK die gesetzlichen Datenschutzanforderungen erfüllen und die Voreinstellungen Ihrer Kunden einhalten können.
+description: Erfahren Sie, wie Sie mit der Einverständnisverwaltung in Adobe Experience Platform Web SDK die gesetzlichen Datenschutzanforderungen erfüllen und die Präferenzen Ihrer Kunden berücksichtigen können.
 feature: Web SDK, Tags
 level: Beginner
 jira: KT-7543
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Einverständnisübersicht
 
-Erfahren Sie, wie Sie mit der Zustimmungsverwaltung im Adobe Experience Platform Web SDK die gesetzlichen Datenschutzanforderungen erfüllen und die Voreinstellungen Ihrer Kunden einhalten können. Weitere Informationen finden Sie in der Übersicht zu [Governance, Datenschutz und Sicherheit in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en#consent) .
+Erfahren Sie, wie Sie mit der Einverständnisverwaltung in Adobe Experience Platform Web SDK die gesetzlichen Datenschutzanforderungen erfüllen und die Präferenzen Ihrer Kunden berücksichtigen können. Weitere Informationen finden Sie in der Übersicht [Governance, Datenschutz und Sicherheit ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en#consent) Platform“.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
-title: Integration von Google-Kundenabgleich mit Adobe
-description: In diesem Video wird gezeigt, wie die Funktionen von Adobe Real-time Customer Data Platform und Google Customer Match Marken dabei helfen, mit Kunden in den von Google verwalteten und betriebenen Eigenschaften zu interagieren, um ihre Outreach-Kampagnen zu skalieren.
+title: Integrieren von Google Customer Match mit Adobe in Real-time Customer Data Platform
+description: In diesem Video wird gezeigt, wie die Funktionen von Adobe Real-time Customer Data Platform und Customer Match von Google Marken dabei helfen, mit Kunden in den unternehmenseigenen und betriebenen Eigenschaften von Google zu interagieren, um ihre Outreach-Kampagnen zu skalieren.
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Google-Kundenabgleich integrieren
+# Integrieren von Google Customer Match
 
-Erfahren Sie, wie die Funktionen von Adobe Real-time Customer Data Platform und Google Customer Match Marken dabei helfen, mit Kunden in den von Google verwalteten und betriebenen Eigenschaften zu interagieren, um ihre Outreach-Kampagnen zu skalieren. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
+Erfahren Sie, wie die Funktionen von Adobe Real-time Customer Data Platform und Customer Match von Google Marken dabei helfen, mit Kunden in den unternehmenseigenen und betriebenen Eigenschaften von Google zu interagieren, um ihre Outreach-Kampagnen zu skalieren. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/38180?learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Adobe Experience Platform Edge Network Server-API
-description: Erfahren Sie mehr über die Vorteile, die das Senden von Daten an Platform Edge Network mit einer sicheren, authentifizierten Server-API bietet.
+description: Erfahren Sie mehr über die Vorteile der Übermittlung von Daten an Platform Edge Network über eine sichere, authentifizierte Server-API.
 feature: Server API
 level: Beginner
 jira: KT-10013
@@ -15,6 +15,6 @@ ht-degree: 1%
 
 # Übersicht über die Adobe Experience Platform Edge Network Server-API
 
-Erfahren Sie mehr über die Vorteile, die das Senden von Daten an Platform Edge Network mit einer sicheren, authentifizierten Server-API bietet. Weitere Informationen finden Sie in der [Dokumentation zur Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=de) .
+Erfahren Sie mehr über die Vorteile der Übermittlung von Daten an Platform Edge Network über eine sichere, authentifizierte Server-API. Weitere Informationen finden Sie in der [ zur Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/341448?learn=on)

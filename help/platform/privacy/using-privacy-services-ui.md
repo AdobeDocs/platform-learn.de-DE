@@ -1,6 +1,6 @@
 ---
-title: Verwenden der Privacy Service-Benutzeroberfläche
-description: Erfahren Sie, wie Sie Datenschutzanfragen in der Benutzeroberfläche erstellen und ihren Status im Dashboard überwachen/überprüfen.
+title: Verwenden der Privacy Service-Oberfläche
+description: Erfahren Sie, wie Sie Datenschutzanfragen in der Benutzeroberfläche erstellen und ihren Status im Dashboard überwachen/überprüfen können.
 feature: Privacy
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -15,8 +15,8 @@ ht-degree: 1%
 ---
 
 
-# Verwenden der Privacy Service-Benutzeroberfläche
+# Verwenden der Privacy Service-Oberfläche
 
-Erfahren Sie, wie Sie Datenschutzanfragen im Privacy Service erstellen und deren Status im Dashboard überwachen und überprüfen können. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) .
+Erfahren Sie, wie Sie Datenschutzanfragen im Privacy Service erstellen und ihren Status im Dashboard überwachen und überprüfen können. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336079?learn=on)

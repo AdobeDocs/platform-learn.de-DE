@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Zielgruppen aus vorhandenen Zielgruppen
-description: Mit dem Zielgruppenregel-Builder in Experience Platform können Sie vorhandene Zielgruppen im Rahmen einer neuen Zielgruppenregeldefinition verwenden. Sehen Sie sich dieses Video an, um Tipps dazu zu erhalten.
+description: Mit dem Builder für Zielgruppenregeln in Experience Platform können Sie bestehende Zielgruppen als Teil einer neuen Zielgruppenregeldefinition verwenden. Sehen Sie sich dieses Video an, um Tipps dazu zu erhalten.
 feature: Segments
 role: User
 level: Intermediate
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 # Erstellen von Zielgruppen aus vorhandenen Zielgruppen
 
-Mit dem Zielgruppenregel-Builder in Experience Platform können Sie vorhandene Zielgruppen im Rahmen einer neuen Zielgruppenregeldefinition verwenden. Sehen Sie sich dieses Video an, um Tipps dazu zu erhalten. Weitere Informationen finden Sie in der [Dokumentation zum Segmentaufbau](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
+Mit dem Builder für Zielgruppenregeln in Experience Platform können Sie bestehende Zielgruppen als Teil einer neuen Zielgruppenregeldefinition verwenden. Sehen Sie sich dieses Video an, um Tipps dazu zu erhalten. Weitere Informationen finden Sie in der [Segment Builder-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmente]&quot;wurden in der Platform-Oberfläche in &quot;[!UICONTROL Zielgruppen]&quot;umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]** aus, um den Regel-Builder für dieses Video einzugeben.
+> &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333304/?learn=on)
 

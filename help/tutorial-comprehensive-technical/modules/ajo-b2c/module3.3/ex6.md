@@ -1,143 +1,144 @@
 ---
 title: Offer decisioning - Testen Sie Ihre Entscheidung mithilfe der API.
-description: Testen Ihrer Entscheidung mithilfe der API
+description: Testen der Entscheidung mithilfe der API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 75515a3e-5df8-42ed-95dc-daae60ee9c72
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 1%
 
 ---
 
-# 3.3.6 Entscheidung mithilfe der API testen
+# 3.3.6 Testen Sie Ihre Entscheidung mit der API
 
 ## 3.3.6.1 Arbeiten mit der Offer decisioning-API unter Verwendung von Postman
 
-Laden Sie [diese Postman-Sammlung für Offer decisioning](./../../../assets/postman/postman_offer-decisioning.zip) auf Ihren Desktop herunter und dekomprimieren Sie sie. Dann haben Sie Folgendes:
+Laden Sie [diese Postman-Sammlung zum Offer decisioning](./../../../assets/postman/postman_offer-decisioning.zip) auf Ihren Desktop herunter und entpacken Sie sie. Sie erhalten dann Folgendes:
 
-![OD API](./images/unzip.png)
+![OD-API](./images/unzip.png)
 
-Sie haben diese Datei jetzt auf Ihrem Desktop:
+Sie haben nun diese Datei auf Ihrem Desktop:
 
-- [!UICONTROL _Modul 14 - Decisioning Service.postman_collection.json]
+- [!UICONTROL _Module 14- Decisioning Service.postman_collection.json]
 
-In [Übung 2.1.3 - Postman-Authentifizierung für Adobe I/O](./../../../modules/rtcdp-b2c/module2.1/ex3.md) haben Sie Postman installiert. Sie müssen Postman erneut für diese Übung verwenden.
+In [Übung 2.1.3 - Postman-Authentifizierung auf Adobe I/O ](./../../../modules/rtcdp-b2c/module2.1/ex3.md) Sie Postman installiert. Für diese Übung müssen Sie Postman erneut verwenden.
 
-Öffnen Sie Postman. Klicken Sie auf **[!UICONTROL Importieren]**.
+Öffnen Sie Postman. Klicken Sie **[!UICONTROL Importieren]**.
 
-![Adobe I/O Neue Integration](./images/postmanui.png)
+![Neue Integration Adobe I/O](./images/postmanui.png)
 
-Klicken Sie auf **[!UICONTROL Dateien hochladen]**.
+Klicken Sie auf **[!UICONTROL Dateien]**.
 
-![Adobe I/O Neue Integration](./images/pm1.png)
+![Neue Integration Adobe I/O](./images/pm1.png)
 
-Wählen Sie die Datei **[!UICONTROL _Module 14- Decisioning Service.postman_collection.json]** aus und klicken Sie auf **[!UICONTROL Open]**.
+Wählen Sie die Datei **[!UICONTROL _Module 14- Decisioning Service.postman_collection.json]** klicken Sie auf **[!UICONTROL Öffnen]**.
 
-![Adobe I/O Neue Integration](./images/pm2.png)
+![Neue Integration Adobe I/O](./images/pm2.png)
 
 Diese Sammlung ist dann in Postman verfügbar.
 
-![Adobe I/O Neue Integration](./images/pm3.png)
+![Neue Integration Adobe I/O](./images/pm3.png)
 
-Sie haben jetzt alles, was Sie in Postman benötigen, um über die APIs mit Adobe Experience Platform zu interagieren.
+Jetzt verfügen Sie über alle Funktionen in Postman, die Sie benötigen, um über APIs mit Adobe Experience Platform zu interagieren.
 
 ### 3.3.6.1.1 Listencontainer
 
-Klicken Sie auf , um die Anforderung **[!UICONTROL GET - Listencontainer]** zu öffnen.
+Klicken, um Anfrage **[!UICONTROL GET - Container auflisten]** zu öffnen.
 
-Unter **[!UICONTROL Parameter]** sehen Sie Folgendes:
+Unter **[!UICONTROL Params]** wird Folgendes angezeigt:
 
-- property: `_instance.parentName==aepenablementfy22`
+- Eigenschaft: `_instance.parentName==aepenablementfy22`
 
-In diesem Parameter ist **[!UICONTROL aepenablementfy22]** der Name der Sandbox, die in Adobe Experience Platform verwendet wird. Die Sandbox, die Sie verwenden sollten, ist `--aepSandboxName--`. Ersetzen Sie den Text **[!UICONTROL aepenablementfy22]** durch `--aepSandboxName--`.
+In diesem Parameter **[!UICONTROL aepenablementfy22]** der Name der in Adobe Experience Platform verwendeten Sandbox. Die zu verwendende Sandbox ist `--aepSandboxName--`. Ersetzen Sie den Text **[!UICONTROL aepenablementfy22]** durch `--aepSandboxName--`.
 
-Klicken Sie nach dem Ersetzen des Sandbox-Namens auf **[!UICONTROL Senden]**.
+Nachdem Sie den Sandbox-Namen ersetzt haben, klicken Sie auf **[!UICONTROL Senden]**.
 
-![OD API](./images/api2.png)
+![OD-API](./images/api2.png)
 
-Dies ist die Antwort, die den Angebotscontainer für die von Ihnen angegebene Sandbox anzeigt. Kopieren Sie die **[!UICONTROL container instanceId]** wie unten angegeben und schreiben Sie sie in eine Textdatei auf Ihrem Computer. Sie müssen diese **[!UICONTROL container instanceId]** für die nächste Übung verwenden!
+Dies ist die Antwort, die den Angebotscontainer für die angegebene Sandbox anzeigt. Kopieren Sie die **[!UICONTROL container-instanceId]** wie unten angegeben und schreiben Sie sie in einer Textdatei auf Ihrem Computer auf. Sie müssen diese **[!UICONTROL Container-Instanz-ID]** für die nächste Übung verwenden!
 
-![OD API](./images/api3.png)
+![OD-API](./images/api3.png)
 
-### 3.3.6.1.2 Listenplatzierungen
+### 3.3.6.1.2 Platzierungen auflisten
 
-Klicken Sie auf , um die Anforderung **[!UICONTROL GET - Listenplatzierungen]** zu öffnen. Klicken Sie auf **[!UICONTROL Senden]**.
+Klicken Sie, um die Anfrage **[!UICONTROL GET - Platzierungen auflisten]** öffnen. Klicken Sie auf **[!UICONTROL Senden]**.
 
-![OD API](./images/api4.png)
+![OD-API](./images/api4.png)
 
-Jetzt werden alle verfügbaren Platzierungen in Ihrem Angebotscontainer angezeigt. Die Platzierungen, die Sie sehen, wurden in der Adobe Experience Platform-Benutzeroberfläche definiert, wie in [Übung 3.3.1.3](./ex1.md) dargestellt.
+Sie sehen jetzt alle verfügbaren Platzierungen in Ihrem Angebotscontainer. Die Platzierungen, die Sie sehen, wurden in der Benutzeroberfläche von Adobe Experience Platform definiert, wie Sie in [3.3.1.3](./ex1.md) sehen konnten.
 
-![OD API](./images/api5.png)
+![OD-API](./images/api5.png)
 
-### 3.3.6.1.3 Regeln für Listenentscheidungen
+### 3.3.6.1.3 Entscheidungsregeln auflisten
 
-Klicken Sie auf , um die Anforderung **[!UICONTROL GET - Entscheidungsregeln auflisten]** zu öffnen. Klicken Sie auf **[!UICONTROL Senden]**.
+Klicken Sie, um die Anfrage **[!UICONTROL GET - Entscheidungsregeln auflisten zu]**. Klicken Sie auf **[!UICONTROL Senden]**.
 
-![OD API](./images/api6.png)
+![OD-API](./images/api6.png)
 
-In der Antwort sehen Sie die Entscheidungsregeln, die Sie in der Adobe Experience Platform-Benutzeroberfläche definiert haben, wie in [Übung 3.3.1.4](./ex1.md) dargestellt.
+In der Antwort werden die Entscheidungsregeln angezeigt, die Sie in der Adobe Experience Platform-Benutzeroberfläche definiert haben, wie Sie in [3.3.1.4](./ex1.md) sehen konnten.
 
-![OD API](./images/api7.png)
+![OD-API](./images/api7.png)
 
 ### 3.3.6.1.4 Personalisierte Angebote auflisten
 
-Klicken Sie auf , um die Anforderung **[!UICONTROL GET - Liste personalisierter Angebote]** zu öffnen. Klicken Sie auf **[!UICONTROL Senden]**.
+Klicken Sie, um die Anfrage **[!UICONTROL GET - Personalisierte Angebote auflisten]** öffnen. Klicken Sie auf **[!UICONTROL Senden]**.
 
-![OD API](./images/api8.png)
+![OD-API](./images/api8.png)
 
-In der Antwort sehen Sie die personalisierten Angebote, die Sie in der Adobe Experience Platform-Benutzeroberfläche unter [Übung 3.3.2.1](./ex2.md) definiert haben.
+In der Antwort werden die personalisierten Angebote angezeigt, die Sie in der Adobe Experience Platform-Benutzeroberfläche unter [3.3.2.1](./ex2.md) definiert haben.
 
-![OD API](./images/api9.png)
+![OD-API](./images/api9.png)
 
 ### 3.3.6.1.5 Fallback-Angebote auflisten
 
-Klicken Sie auf , um die Anfrage **[!UICONTROL GET - Fallback-Angebote auflisten]** zu öffnen. Klicken Sie auf **[!UICONTROL Senden]**.
+Klicken, um Anfrage **[!UICONTROL GET - Fallback-Angebote auflisten]** zu öffnen. Klicken Sie auf **[!UICONTROL Senden]**.
 
-![OD API](./images/api10.png)
+![OD-API](./images/api10.png)
 
-In der Antwort sehen Sie das Fallback-Angebot, das Sie in der Adobe Experience Platform-Benutzeroberfläche unter [Übung 3.3.2.2](./ex2.md) definiert haben.
+In der Antwort wird das Fallback-Angebot angezeigt, das Sie in der Adobe Experience Platform-Benutzeroberfläche in [3.3.2.2](./ex2.md) definiert haben.
 
-![OD API](./images/api11.png)
+![OD-API](./images/api11.png)
 
-### 3.3.6.1.6 Listen-Sammlungen
+### 3.3.6.1.6 Auflisten von Sammlungen
 
-Klicken Sie auf , um die Anforderung **[!UICONTROL GET - Sammlungen auflisten]** zu öffnen.
+Klicken, um Anfrage **[!UICONTROL GET - Sammlungen auflisten]** zu öffnen.
 
-![OD API](./images/api12.png)
+![OD-API](./images/api12.png)
 
-In der Antwort sehen Sie die Sammlung, die Sie in der Adobe Experience Platform-Benutzeroberfläche unter [Übung 3.3.2.3](./ex2.md) definiert haben.
+In der Antwort wird die Sammlung angezeigt, die Sie in der Adobe Experience Platform-Benutzeroberfläche in &quot;[&quot; 3.3.2.3](./ex2.md).
 
-![OD API](./images/api13.png)
+![OD-API](./images/api13.png)
 
-### 3.3.6.1.7 Detaillierte Angebote für das Kundenprofil abrufen
+### 3.3.6.1.7 Detaillierte Angebote für Kundenprofil
 
-Klicken Sie auf , um die Anfrage **[!UICONTROL POST - Detaillierte Angebote für das Kundenprofil abrufen]** zu öffnen. Diese Anfrage ähnelt der vorherigen, gibt jedoch Details wie Bild-URLs, Text usw. zurück.
+Klicken Sie, um die Anfrage **[!UICONTROL POST - Detaillierte Angebote für Kundenprofil abrufen zu]**. Diese Anfrage ähnelt der vorherigen, gibt jedoch Details wie Bild-URLs, Text usw. zurück.
 
-![OD API](./images/api23.png)
+![OD-API](./images/api23.png)
 
-Für diese Anfrage müssen Sie, ähnlich wie bei der vorherigen Übung mit ähnlichen Anforderungen, die Werte für **[!UICONTROL xdm:placementId]** und **[!UICONTROL xdm:activityId]** angeben, um die spezifischen Angebotsdetails für einen Kunden abzurufen.
+Für diese Anfrage müssen Sie, ähnlich wie in der vorherigen Übung, die ähnliche Anforderungen hat, die Werte für **[!UICONTROL xdm:placementId]** und **[!UICONTROL xdm:activityId]** angeben, um die spezifischen Angebotsdetails für einen Kunden abzurufen.
 
-Das Feld **[!UICONTROL xdm:activityId]** muss ausgefüllt werden. Sie können dies wie unten beschrieben in der Adobe Experience Platform-Benutzeroberfläche abrufen.
+Das Feld **[!UICONTROL xdm:activityId]** muss ausgefüllt werden. Sie können dies in der Adobe Experience Platform-Benutzeroberfläche abrufen, wie unten angegeben.
 
-![OD API](./images/activityid.png)
+![OD-API](./images/activityid.png)
 
-Das Feld **[!UICONTROL xdm:placementId]** muss ausgefüllt werden. Sie können dies wie unten beschrieben in der Adobe Experience Platform-Benutzeroberfläche abrufen. Im folgenden Beispiel sehen Sie die placementId für die Platzierung **[!UICONTROL Web - Image]**.
+Das Feld **[!UICONTROL xdm:placementId]** muss ausgefüllt werden. Sie können dies in der Adobe Experience Platform-Benutzeroberfläche abrufen, wie unten angegeben. Im folgenden Beispiel sehen Sie die placementId für die Platzierung **[!UICONTROL Web - Bild]**.
 
-![OD API](./images/placementid.png)
+![OD-API](./images/placementid.png)
 
-Gehen Sie zu **[!UICONTROL Hauptteil]** und geben Sie die E-Mail-Adresse des Kunden ein, für den Sie ein Angebot anfordern möchten. Klicken Sie auf **[!UICONTROL Senden]**.
+Wechseln Sie **[!UICONTROL Textkörper]** und geben Sie die E-Mail-Adresse des Kunden ein, für den Sie ein Angebot anfordern möchten. Klicken Sie auf **[!UICONTROL Senden]**.
 
-![OD API](./images/api24.png)
+![OD-API](./images/api24.png)
 
 Schließlich sehen Sie das Ergebnis dessen, welche Art von personalisiertem Angebot und welche Assets diesem Kunden angezeigt werden müssen.
 
-![OD API](./images/api25.png)
+![OD-API](./images/api25.png)
 
-Du hast diese Übung jetzt abgeschlossen.
+Sie haben jetzt diese Übung abgeschlossen.
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 
-[Zurück zu Modul 3.3](./offer-decisioning.md)
+[Zurück zum Modul 3.3](./offer-decisioning.md)
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)

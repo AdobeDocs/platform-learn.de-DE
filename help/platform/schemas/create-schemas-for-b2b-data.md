@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Schemata für B2B
-description: Erfahren Sie, wie Sie mit Real-time Customer Data Platform, B2B Edition Schemas für Ihre Geschäftsdaten erstellen.
+description: Erfahren Sie, wie Sie mit Real-time Customer Data Platform, B2B edition Schemata für Ihre Geschäftsdaten erstellen.
 solution: Real-Time Customer Data Platform
 feature: Schemas
 role: Data Architect, Developer
@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # Erstellen von Schemata für B2B
 
-Erfahren Sie, wie Sie mit Real-time Customer Data Platform, B2B Edition Schemas für Ihre Geschäftsdaten erstellen. Erfahren Sie mehr über die Geschäftsklassen, Feldergruppen und Identitäts-Namespaces und wie Sie sie mit dem Postman-Dienstprogramm automatisch in Ihrem Konto erstellen. Weitere Informationen finden Sie in der Dokumentation zu [Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) .
+Erfahren Sie, wie Sie mit Real-time Customer Data Platform, B2B edition Schemata für Ihre Geschäftsdaten erstellen. Erfahren Sie mehr über die Geschäftsklassen, Feldergruppen und Identity-Namespaces und deren automatische Erstellung in Ihrem Konto mit dem Postman-Dienstprogramm. Weitere Informationen finden Sie in der [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on)

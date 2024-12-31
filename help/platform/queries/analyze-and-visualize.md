@@ -16,6 +16,6 @@ ht-degree: 30%
 
 # Analyse und Visualisierung von Omni-Channel-Einblicken in Tableau mithilfe von Query Service
 
-Erfahren Sie, wie Sie mithilfe eines Abwanderungsanalysebeispiels Adobe Experience Platforms Query Service mit externen Datenvisualisierungs-Tools verwenden können. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+Erfahren Sie anhand eines Beispiels zur Abwanderungsanalyse, wie Sie Adobe Experience Platform Query Service mit externen Datenvisualisierungs-Tools verwenden können. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on)

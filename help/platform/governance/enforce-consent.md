@@ -1,6 +1,6 @@
 ---
-title: Zustimmung erzwingen
-description: Erfahren Sie, wie Sie die Zustimmung erzwingen
+title: Einverständnis erzwingen
+description: Erfahren Sie, wie Sie das Einverständnis erzwingen
 feature: Consent
 role: User, Developer, Data Architect, Admin
 level: Beginner
@@ -14,12 +14,12 @@ ht-degree: 2%
 
 ---
 
-# Zustimmung erzwingen
+# Einverständnis erzwingen
 
-Erfahren Sie, wie Sie Richtlinien erstellen, um die Zustimmungsvoreinstellungen des Kunden durchzusetzen. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=de).
+Erfahren Sie, wie Sie Richtlinien erstellen, um die Einverständnisvoreinstellungen des Kunden durchzusetzen. Weitere Informationen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on)
 
 >[!IMPORTANT]
 >
-> Die Möglichkeiten zur Durchsetzung der Zustimmung in Adobe Experience Platform sind derzeit nur für Kunden des Gesundheitsschilds oder des Datenschutzschilds verfügbar.
+> Die Funktionen zur Durchsetzung von Einverständniserklärungen in Adobe Experience Platform sind derzeit nur für Kunden von Healthcare Shield oder Privacy and Security Shield verfügbar.

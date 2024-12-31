@@ -1,6 +1,6 @@
 ---
 title: Konvertieren Ihres Datenmodells in XDM
-description: In diesem Video wird gezeigt, wie Datenarchitekten ihr vorhandenes Transaktionsdatenmodell in ein Experience-Datenmodell konvertieren können. Er zeigt den Unterschied bei den Modellierungsansätzen unter Verwendung von Entitäts-Beziehungsdiagrammen.
+description: In diesem Video wird gezeigt, wie Datenarchitekten ihr vorhandenes Transaktionsdatenmodell in ein Experience-Datenmodell konvertieren können. Es zeigt den Unterschied bei der Modellierung von Ansätzen unter Verwendung von Entitäts-Beziehungsdiagrammen.
 feature: Schemas
 role: Data Architect, Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Konvertieren Ihres Datenmodells in XDM
 
-In diesem Video wird gezeigt, wie Datenarchitekten ihr vorhandenes Transaktionsdatenmodell in ein Experience-Datenmodell konvertieren können. Er zeigt den Unterschied bei den Modellierungsansätzen unter Verwendung von Entitäts-Beziehungsdiagrammen. Weitere Informationen finden Sie in der Dokumentation [Best Practices für die Datenmodellierung](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=de).
+In diesem Video wird gezeigt, wie Datenarchitekten ihr vorhandenes Transaktionsdatenmodell in ein Experience-Datenmodell konvertieren können. Es zeigt den Unterschied bei der Modellierung von Ansätzen unter Verwendung von Entitäts-Beziehungsdiagrammen. Weitere Informationen finden Sie in der Dokumentation [Best Practices für die Datenmodellierung](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333483?learn=on)

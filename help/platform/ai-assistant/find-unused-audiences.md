@@ -1,6 +1,6 @@
 ---
-title: AI Assistant - Anwendungsfall für die Zielgruppenbereinigung
-description: Erfahren Sie, wie Sie nicht verwendete Zielgruppen mit AI Assistant identifizieren können, damit Sie sie löschen und Ihre Marketing-Vorgänge effizienter gestalten können.
+title: KI-Assistent - Anwendungsfall für die Audience-Bereinigung
+description: Erfahren Sie, wie Sie mit dem KI-Assistenten nicht verwendete Zielgruppen identifizieren können, um sie zu löschen und Ihre Marketing-Vorgänge effizienter zu gestalten.
 feature: AI Assistant, Audiences
 role: User
 level: Beginner
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# KI-Assistent: Anwendungsfall für die Zielgruppenbereinigung
+# KI-Assistent: Anwendungsfall für die Audience-Bereinigung
 
-Erfahren Sie, wie Sie nicht verwendete Zielgruppen mit AI Assistant identifizieren können, damit Sie sie löschen und Ihre Marketing-Vorgänge effizienter gestalten können. Weitere Informationen zum Abfragen des AI-Assistenten finden Sie im [Fragenleitfaden für den AI-Assistenten](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
+Erfahren Sie, wie Sie mit dem KI-Assistenten nicht verwendete Zielgruppen identifizieren können, um sie zu löschen und Ihre Marketing-Vorgänge effizienter zu gestalten. Weitere Informationen zum Abfragen des KI-Assistenten finden Sie im [Handbuch zum KI-Assistenten](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on)

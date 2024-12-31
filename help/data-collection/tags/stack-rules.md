@@ -1,5 +1,5 @@
 ---
-title: Regelstapelung in Tags
+title: Stapeln von Regeln in Tags
 description: Erfahren Sie, wie Sie Regeln in einer Tag-Eigenschaft stapeln. Die Regelstapelung nutzt die Reihenfolgefunktion in Tag-Regelereignissen, um Regeln zu sequenzieren, damit Sie skalierbare Tag-Implementierungen verwalten können.
 feature: Tags
 role: Developer
@@ -15,8 +15,8 @@ ht-degree: 36%
 
 ---
 
-# Tag-Regeln stapeln
+# Stack-Tag-Regeln
 
-Erfahren Sie, wie Sie Regeln in einer Tag-Eigenschaft stapeln. Die Regelstapelung nutzt die Funktion `order` in Tag-Regel-Ereignissen, um Regeln zu sequenzieren, damit Sie skalierbare Tag-Implementierungen verwalten können. Legen Sie einige Variablen in einer globalen Regel fest, fügen Sie Variablen in einer seitenspezifischen Regel hinzu, überschreiben Sie sie und senden Sie die Daten dann an die gewünschte Marketing-Anwendung. Weitere Informationen zur Regelreihenfolge finden Sie in der Dokumentation zu [Regeln](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#rule-ordering) .
+Erfahren Sie, wie Sie Regeln in einer Tag-Eigenschaft stapeln. Beim Regeln-Stacking wird die `order`-Funktion in Tag-Regelereignissen verwendet, um Regeln zu sequenzieren und so skalierbare Tag-Implementierungen zu verwalten. Legen Sie einige Variablen in einer globalen Regel fest, fügen Sie Variablen in einer seitenspezifischen Regel hinzu und überschreiben Sie sie. Senden Sie dann die Daten an die gewünschte Marketing-Anwendung. Weitere Informationen zur Regelreihenfolge finden Sie in der Dokumentation [Regeln](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#rule-ordering) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)

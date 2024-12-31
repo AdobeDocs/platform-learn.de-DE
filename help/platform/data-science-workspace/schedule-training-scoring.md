@@ -1,6 +1,6 @@
 ---
-title: Planen automatisierter Schulungen und Auswertungen für einen Dienst
-description: Erfahren Sie, wie Sie in Data Science Workspace eine automatisierte Schulung und Auswertung für einen Dienst einrichten.
+title: Planen der automatisierten Schulung und Auswertung eines Services
+description: Erfahren Sie, wie Sie in Data Science Workspace automatisiertes Training und Scoring für einen Service einrichten.
 feature: Data Science Workspace
 role: User
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Planen automatisierter Schulungen und Auswertungen für einen Dienst
+# Planen der automatisierten Schulung und Auswertung eines Services
 
-Mit Adobe Experience Platform Data Science Workspace können Sie geplante Scoring- und Trainings-Läufe für einen maschinellen Lerndienst einrichten. Die Automatisierung des Trainings- und Scoring-Prozesses kann dazu beitragen, die Effizienz eines Dienstes im Laufe der Zeit zu erhalten und zu verbessern, indem Sie mit den verschiedenen Mustern in Ihren Daten Schritt halten. Weitere Informationen finden Sie in der Dokumentation zu [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
+Mit Adobe Experience Platform Data Science Workspace können Sie geplante Scoring- und Trainings-Läufe in einem Service für maschinelles Lernen einrichten. Die Automatisierung des Trainings- und Bewertungsprozesses kann dazu beitragen, die Effizienz eines Service im Laufe der Zeit zu erhalten und zu verbessern, indem Sie mit den verschiedenen Mustern in Ihren Daten Schritt halten. Weitere Informationen finden Sie in der [Dokumentation zu Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333596?learn=on)

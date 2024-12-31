@@ -1,5 +1,5 @@
 ---
-title: Identitätsdaten beschriften, erfassen und überprüfen
+title: Kennzeichnen, Aufnehmen und Überprüfen von Identitätsdaten
 description: Erfahren Sie, wie Sie Datenfelder als Identitäten kennzeichnen, Identitätsdaten aufnehmen und die Daten im privaten Diagramm von Adobe Experience Platform Identity Service überprüfen.
 feature: Identities
 role: Data Architect, Data Engineer, Developer
@@ -14,8 +14,8 @@ ht-degree: 35%
 
 ---
 
-# Identitätsdaten beschriften, erfassen und überprüfen
+# Kennzeichnen, Aufnehmen und Überprüfen von Identitätsdaten
 
-Erfahren Sie, wie Sie Datenfelder als Identitäten kennzeichnen, Identitätsdaten erfassen und die Daten im privaten Diagramm des Adobe Experience Platform Identity Service überprüfen. Weitere Informationen finden Sie in der Dokumentation zum [Identitätsdienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) .
+Erfahren Sie, wie Sie Datenfelder als Identitäten kennzeichnen, Identitätsdaten aufnehmen und die Daten im privaten Diagramm von Adobe Experience Platform Identity Service überprüfen. Weitere Informationen finden Sie in der [Identity Service-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de)
 
 >[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on)

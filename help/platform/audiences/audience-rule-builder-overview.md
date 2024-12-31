@@ -1,6 +1,6 @@
 ---
-title: Übersicht über Audience Rule Builder
-description: Hier erhalten Sie eine Einführung in den Audience Rule Builder in Experience Platform, einschließlich der Bausteine von Zielgruppen, der Benutzeroberfläche und ein paar Tipps zum Einstieg in die Erstellung von Zielgruppenregeln.
+title: Übersicht über den Builder für Zielgruppenregeln
+description: Hier erhalten Sie eine Einführung in den Builder für Zielgruppenregeln in Experience Platform, einschließlich der Bausteine von Zielgruppen, der Benutzeroberfläche und einiger Tipps zu den ersten Schritten beim Erstellen von Zielgruppenregeln.
 feature: Segments
 role: User
 level: Beginner
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ---
 
-# Übersicht über Audience Rule Builder
+# Übersicht über den Builder für Zielgruppenregeln
 
-Hier erhalten Sie eine Einführung in den Audience Rule Builder in Experience Platform, einschließlich der Bausteine von Zielgruppen, der Benutzeroberfläche und ein paar Tipps zum Einstieg in die Erstellung von Zielgruppenregeln. Weitere Informationen finden Sie in der [Dokumentation zum Segmentaufbau](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
+Hier erhalten Sie eine Einführung in den Builder für Zielgruppenregeln in Experience Platform, einschließlich der Bausteine von Zielgruppen, der Benutzeroberfläche und einiger Tipps zu den ersten Schritten beim Erstellen von Zielgruppenregeln. Weitere Informationen finden Sie in der [Segment Builder-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmente]&quot;wurden in der Platform-Oberfläche in &quot;[!UICONTROL Zielgruppen]&quot;umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]** aus, um den Regel-Builder für dieses Video einzugeben.
+> &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/333301/?learn=on)

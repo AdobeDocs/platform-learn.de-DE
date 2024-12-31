@@ -1,6 +1,6 @@
 ---
-title: Datenmodell planen
-description: Führen Sie diese Schritte aus, bevor Sie mit dem Erstellen Ihrer Schemas in Adobe Experience Platform beginnen.
+title: Planen des Datenmodells
+description: Führen Sie diese Schritte aus, bevor Sie mit der Erstellung Ihrer Schemata in Adobe Experience Platform beginnen.
 feature: Schemas
 role: Data Architect, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Datenmodell planen
+# Planen des Datenmodells
 
-In diesem Video wird beschrieben, was zu tun ist, bevor Sie mit dem Erstellen Ihrer Schemas in Adobe Experience Platform beginnen. Dokumentieren Sie Ihre geschäftlichen Anwendungsfälle, verstehen Sie Ihre Platform-Lizenz, kennen Sie die Produktgarantien und ermitteln Sie, welche Daten aufgenommen werden sollen, bevor Sie Ihr Datenmodell abschließen. Weitere Informationen finden Sie in der Dokumentation zu [Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) .
+In diesem Video wird beschrieben, was zu tun ist, bevor Sie mit der Erstellung Ihrer Schemata in Adobe Experience Platform beginnen. Dokumentieren Sie Ihre geschäftlichen Anwendungsfälle, verstehen Sie Ihre Platform-Lizenz, kennen Sie die Produkt-Leitplanken und identifizieren Sie, welche Daten aufgenommen werden sollen, bevor Sie Ihr Datenmodell abschließen. Weitere Informationen finden Sie in der [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333478?learn=on)

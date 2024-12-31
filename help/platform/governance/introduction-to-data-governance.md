@@ -1,6 +1,6 @@
 ---
 title: Data Governance - End-to-End-Demo
-description: Erfahren Sie, wie die Data Governance-Funktionen von Adobe Experience Platform dazu beitragen, dass Marken ihren Kunden personalisierte Erlebnisse bereitstellen und gleichzeitig die vollständige Kontrolle über Kundendaten ermöglichen.
+description: Erfahren Sie, wie die Data Governance-Funktionen von Adobe Experience Platform Marken dabei helfen, ihren Kundinnen und Kunden personalisierte Erlebnisse bereitzustellen und gleichzeitig die vollständige Kontrolle über Kundendaten zu bieten.
 feature: Data Governance
 role: User, Developer, Data Architect, Admin
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Data Governance - End-to-End-Demo
 
-Erfahren Sie, wie die Data Governance-Funktionen von Adobe Experience Platform dazu beitragen, dass Marken ihren Kunden personalisierte Erlebnisse bereitstellen und gleichzeitig die vollständige Kontrolle über Kundendaten ermöglichen. Weitere Informationen finden Sie in der [Dokumentation zur Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=de).
+Erfahren Sie, wie die Data Governance-Funktionen von Adobe Experience Platform Marken dabei helfen, ihren Kundinnen und Kunden personalisierte Erlebnisse bereitzustellen und gleichzeitig die vollständige Kontrolle über Kundendaten zu bieten. Weitere Informationen finden Sie in der [Dokumentation zu Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)

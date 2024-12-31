@@ -16,6 +16,6 @@ ht-degree: 34%
 
 # Quellen – Übersicht
 
-Erfahren Sie, wie Sie in der Adobe Experience Platform-Benutzeroberfläche Quellen oder Quell-Connectoren verwenden. Quellen sind einfach konfigurierbare Integrationen, mit denen Sie Daten aus Adobe-, Erstanbieter- und Drittanbieter-Anwendungen in das Echtzeit-Kundenprofil und den Data Lake von Platform aufnehmen können. Weitere Informationen finden Sie in der Dokumentation zu [Quellen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de) .
+Erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Experience Platform Quellen oder Quell-Connectoren verwenden. Quellen sind einfach konfigurierbare Integrationen, mit denen Sie Daten aus Adobe-, Erstanbieter- und Drittanbieterprogrammen in das Echtzeit-Kundenprofil und den Data Lake von Platform aufnehmen können. Weitere Informationen finden Sie in der [Quellendokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on)

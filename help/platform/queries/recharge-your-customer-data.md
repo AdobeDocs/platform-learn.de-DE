@@ -1,6 +1,6 @@
 ---
-title: Erneutes Laden Ihrer Kundendaten für die Bereitstellung elektrisierter Erlebnisse
-description: Erfahren Sie, wie Sie die Auswirkungen von Daten mit geringer Qualität verringern, die Zeit bis zur Wertschöpfung reduzieren und den ROI multiplizieren können, indem Sie dieselben Daten für eine Vielzahl von Anwendungsfällen verwenden.
+title: Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen
+description: Erfahren Sie, wie Sie die Auswirkungen von Daten niedriger Qualität mindern, die Time-to-Value verkürzen und den ROI multiplizieren können, indem Sie dieselben Daten für eine Vielzahl von Anwendungsfällen verwenden.
 feature: Queries
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 ---
 
-# Erneutes Laden Ihrer Kundendaten für die Bereitstellung elektrisierter Erlebnisse
+# Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen
 
-Omnichannel-Daten sind ein wichtiger Bestandteil zur Unterstützung umsetzbarer Kundenprofile, die von Marketing-Experten verwendet werden, um die Aktivierung zu orchestrieren und die resultierenden Journey zu messen. Unternehmen stehen jedoch vor Herausforderungen bei der Verwaltung der Qualität, des Umfangs und der Vielfalt dieser Daten. Sie erfordern optimierte Lösungen, um die Auswirkungen minderwertiger Daten zu verringern, die Zeit bis zur Wertschöpfung zu reduzieren und den ROI zu multiplizieren, indem dieselben Daten für eine Vielzahl von Anwendungsfällen verwendet werden.
-Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+Omni-Channel-Daten sind eine wichtige Komponente für umsetzbare Kundenprofile, die von Marketing-Experten verwendet werden, um die Aktivierung zu orchestrieren und die resultierenden Kunden-Journey zu messen. Unternehmen stehen jedoch vor der Herausforderung, die Qualität, den Umfang und die Vielfalt dieser Daten zu verwalten. Sie erfordern optimierte Lösungen, um die Auswirkungen qualitativ minderwertiger Daten zu minimieren, die Time-to-Value zu verkürzen und den ROI zu vervielfachen, indem dieselben Daten für eine Vielzahl von Anwendungsfällen verwendet werden.
+Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 In diesem Video wird Folgendes untersucht:
 
 * Adobe Experience Platform-Datenvorbereitungsfunktionen, die Sie nutzen können
-* Erhöhung des ROI von Adobe Real-Time CDP, Adobe Journey Optimizer und Customer Journey Analytics
+* Steigern des ROI von Adobe Real-Time CDP, Adobe Journey Optimizer und Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Dieses Video ist ein Auszug aus der Adobe Summit 2020-Sitzung *[Erneutes Laden von Omnichannel-Daten für die Elektrifizierung von Erlebnissen](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
+>Dieses Video ist ein Ausschnitt aus der Adobe Summit 2020-Session *[Aufladen von Omnichannel-Daten für elektrisierende Erlebnisse](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.

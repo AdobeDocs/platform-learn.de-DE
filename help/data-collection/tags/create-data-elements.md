@@ -14,8 +14,8 @@ ht-degree: 39%
 
 ---
 
-# Erstellen von Datenelementen
+# Datenelemente erstellen
 
-Erfahren Sie, wie Sie Datenelemente erstellen, um Werte zu speichern, die aus Ihrer Datenschicht abgerufen werden, und sie für Regeln und Erweiterungen in Ihrer Tag-Eigenschaft verfügbar zu machen. Weitere Informationen finden Sie in der Dokumentation zu [Datenelementen](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=de) .
+Erfahren Sie, wie Sie Datenelemente erstellen, um aus Ihrer Datenschicht abgerufene Werte zu speichern und sie für Regeln und Erweiterungen in Ihrer Tag-Eigenschaft verfügbar zu machen. Weitere Informationen finden Sie in der Dokumentation [Datenelemente](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=de) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on)

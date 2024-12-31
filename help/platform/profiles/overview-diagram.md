@@ -1,6 +1,6 @@
 ---
 title: Übersichtsdiagramm des Echtzeit-Kundenprofils
-description: Dieses Video führt Sie durch ein Übersichtsdiagramm, das die Echtzeit-Kundenprofilfunktion von Adobe Experience Platform veranschaulicht.
+description: Dieses Video führt Sie durch ein Übersichtsdiagramm, das die Echtzeit-Kundenprofilfunktionen von Adobe Experience Platform veranschaulicht.
 feature: Profiles
 role: Data Engineer, Data Architect, Developer, User
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Übersicht über das Echtzeit-Kundenprofil
+# Übersichtsdiagramm des Echtzeit-Kundenprofils
 
-Dieses Video führt Sie durch ein Übersichtsdiagramm, das die Echtzeit-Kundenprofilfunktion von Adobe Experience Platform veranschaulicht. Weitere Informationen finden Sie in der Dokumentation zum [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) .
+Dieses Video führt Sie durch ein Übersichtsdiagramm, das die Echtzeit-Kundenprofilfunktionen von Adobe Experience Platform veranschaulicht. Weitere Informationen finden Sie in der [Dokumentation zu Echtzeit-Kundenprofilen](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/33600?learn=on)

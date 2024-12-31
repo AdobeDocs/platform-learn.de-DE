@@ -1,6 +1,6 @@
 ---
 title: Einbinden von Daten in das Echtzeit-Kundenprofil
-description: Das Echtzeit-Kundenprofil ermöglicht eine skalierte kanalübergreifende Personalisierung in jeder Phase der Journey. Batch- oder Streaming-Daten können für das Echtzeit-Kundenprofil aktiviert werden, indem sowohl das Schema als auch der entsprechende Datensatz aktiviert werden.
+description: Das Echtzeit-Kundenprofil ermöglicht eine kanalübergreifende Personalisierung in jedem Schritt des Kunden-Journey. Batch- oder Streaming-Daten können für das Echtzeit-Kundenprofil aktiviert werden, indem sowohl das Schema als auch der entsprechende Datensatz aktiviert werden.
 feature: Profiles
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Einbinden von Daten in das Echtzeit-Kundenprofil
 
-Das Echtzeit-Kundenprofil ermöglicht eine skalierte kanalübergreifende Personalisierung in jeder Phase der Journey. Batch- oder Streaming-Daten können für das Echtzeit-Kundenprofil aktiviert werden, indem sowohl das Schema als auch der entsprechende Datensatz aktiviert werden. Eine ausführliche Produktdokumentation finden Sie unter [Hinzufügen von Daten zum Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html) und [Konfigurieren eines Datensatzes für Profil mit API](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html).
+Das Echtzeit-Kundenprofil ermöglicht eine kanalübergreifende Personalisierung in jedem Schritt des Kunden-Journey. Batch- oder Streaming-Daten können für das Echtzeit-Kundenprofil aktiviert werden, indem sowohl das Schema als auch der entsprechende Datensatz aktiviert werden. Eine ausführliche Produktdokumentation finden Sie unter [Hinzufügen von Daten zum Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html) und [Konfigurieren eines Datensatzes für Profil mit API](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27301?learn=on)

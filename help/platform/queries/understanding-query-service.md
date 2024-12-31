@@ -1,6 +1,6 @@
 ---
 title: Query Service – Übersicht
-description: Erfahren Sie, wie Sie mit Query Service in Adobe Experience Platform das Kundenverhalten verstehen und effektive Einblicke gewinnen können.
+description: Erfahren Sie, wie Query Service in Adobe Experience Platform Ihnen dabei helfen kann, das Kundenverhalten zu verstehen und wirkungsvolle Einblicke zu gewinnen.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 13%
 
 # Query Service – Übersicht
 
-Erfahren Sie, wie Sie mit Query Service in Adobe Experience Platform das Kundenverhalten verstehen und effektive Einblicke gewinnen können. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+Erfahren Sie, wie Query Service in Adobe Experience Platform Ihnen dabei helfen kann, das Kundenverhalten zu verstehen und wirkungsvolle Einblicke zu gewinnen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)

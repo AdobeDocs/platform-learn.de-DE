@@ -1,6 +1,6 @@
 ---
-title: Inspect und Validierung von Zustimmungssignalen
-description: Erfahren Sie, wie Sie überprüfen, ob die Zustimmungseinstellungen ordnungsgemäß auf Ihre Daten in Adobe Experience Platform angewendet wurden.
+title: Inspect und Validieren von Einverständnissignalen
+description: Erfahren Sie, wie Sie überprüfen können, ob die Einverständniseinstellungen in Adobe Experience Platform ordnungsgemäß auf Ihre Daten angewendet werden.
 feature: Web SDK, Tags
 level: Intermediate
 jira: KT-7571
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# Inspect und Validierung von Zustimmungssignalen
+# Inspect und Validieren von Einverständnissignalen
 
-Erfahren Sie, wie Sie überprüfen, ob die Zustimmungseinstellungen ordnungsgemäß auf Ihre Daten in Adobe Experience Platform angewendet wurden. Weitere Informationen zum [Testen Ihrer Implementierung](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=en#test-implementation) finden Sie in der Dokumentation zur Einwilligung .
+Erfahren Sie, wie Sie überprüfen können, ob die Einverständniseinstellungen in Adobe Experience Platform ordnungsgemäß auf Ihre Daten angewendet werden. Weitere Informationen zum Testen der Implementierung finden [ in der Dokumentation zum ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=en#test-implementation) .
 
 >[!NOTE]
 >

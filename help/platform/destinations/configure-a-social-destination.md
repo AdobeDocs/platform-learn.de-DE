@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren eines sozialen Ziels
-description: Erfahren Sie, wie Sie ein Social-Ziel in Adobe Experience Platform konfigurieren, einschließlich Authentifizierung, Segmentzuweisung, ID-Zuordnung usw.
+title: Konfigurieren eines Social-Media-Ziels
+description: Erfahren Sie, wie Sie ein Social-Media-Ziel in Adobe Experience Platform konfigurieren, einschließlich Authentifizierung, Segmentzuweisung, ID-Zuordnung usw.
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ---
 
-# Konfigurieren eines sozialen Ziels
+# Konfigurieren eines Social-Media-Ziels
 
-Erfahren Sie, wie Sie ein Social-Ziel in Adobe Experience Platform konfigurieren, einschließlich Authentifizierung, Segmentzuweisung, ID-Zuordnung usw. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html).
+Erfahren Sie, wie Sie ein Social-Media-Ziel in Adobe Experience Platform konfigurieren, einschließlich Authentifizierung, Segmentzuweisung, ID-Zuordnung usw. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on)
 

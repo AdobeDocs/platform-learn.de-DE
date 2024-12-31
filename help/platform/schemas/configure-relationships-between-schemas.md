@@ -1,6 +1,6 @@
 ---
-title: Beziehungen zwischen Schemata konfigurieren
-description: In diesem Video wird gezeigt, wie eine Beziehung zwischen zwei Schemas in Adobe Experience Platform konfiguriert wird. Beziehungen ermöglichen es Ihnen, einen Datensatz als Nachschlagetabelle für einen anderen zu verwenden.
+title: Konfigurieren von Beziehungen zwischen Schemata
+description: In diesem Video wird gezeigt, wie Sie in Adobe Experience Platform eine Beziehung zwischen zwei Schemata konfigurieren. Beziehungen ermöglichen es Ihnen, einen Datensatz als Nachschlagetabelle für einen anderen zu verwenden.
 feature: Schemas
 role: Data Architect, Developer
 level: Intermediate
@@ -14,9 +14,9 @@ ht-degree: 15%
 
 ---
 
-# Beziehungen zwischen Schemata konfigurieren
+# Konfigurieren von Beziehungen zwischen Schemata
 
-In diesem Video wird gezeigt, wie eine Beziehung zwischen zwei Schemas in Adobe Experience Platform konfiguriert wird. Beziehungen ermöglichen es Ihnen, einen Datensatz als Suchtabelle für einen anderen zu verwenden. Eine ausführliche Produktdokumentation finden Sie unter [Definieren einer Beziehung zwischen zwei Schemas mithilfe des Schema-Editors](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=de) und [Definieren einer Beziehung zwischen zwei Schemas mithilfe der Schema Registry-API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html)
+In diesem Video wird gezeigt, wie Sie in Adobe Experience Platform eine Beziehung zwischen zwei Schemata konfigurieren. Beziehungen ermöglichen es Ihnen, einen Datensatz als Lookup-Tabelle für einen anderen zu verwenden. Eine ausführliche Produktdokumentation finden Sie unter [Definieren einer Beziehung zwischen zwei Schemata mithilfe des Schema-Editors](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=de) und [Definieren einer Beziehung zwischen zwei Schemata mithilfe der Schema Registry-API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/333536?learn=on)
 

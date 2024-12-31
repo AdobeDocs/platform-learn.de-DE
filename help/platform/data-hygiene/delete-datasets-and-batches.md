@@ -1,5 +1,5 @@
 ---
-title: Datensätze und Batches löschen
+title: Löschen von Datensätzen und Batches
 description: Erfahren Sie, wie Sie Datensätze und Batches in Adobe Experience Platform (AEP) löschen.
 feature: Data Hygiene, Datasets
 role: Data Engineer, Developer
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Datensätze und Batches löschen
+# Löschen von Datensätzen und Batches
 
-Erfahren Sie, wie Sie Datensätze und Batches in Adobe Experience Platform löschen. Wenn ein Datensatz aus irgendeinem Grund aus dem System entfernt werden muss, z. B. aus der Bereinigung von Testdatensätzen in niedrigeren Umgebungen oder fehlerhaft hinzugefügten Datensätzen, können Sie diesen Datensatz einfach löschen und seinen Inhalt aus dem Daten-Pool, Identitätsdiagramm und Profilspeicher entfernen. Einzelne Batches können aus dem Data Lake gelöscht werden, jedoch nicht aus dem Identitätsdiagramm und Profilspeicher.
+Erfahren Sie, wie Sie Datensätze und Batches in Adobe Experience Platform löschen. Wenn ein Datensatz aus irgendeinem Grund aus dem System entfernt werden muss, z. B. um Testdatensätze in niedrigeren Umgebungen oder Datensätze zu bereinigen, die irrtümlich hinzugefügt wurden, können Sie diesen Datensatz einfach löschen und seine Inhalte aus dem Data Lake, dem Identitätsdiagramm und dem Profilspeicher entfernen. Einzelne Batches können aus dem Data Lake gelöscht werden, jedoch nicht aus dem Identitätsdiagramm und dem Profilspeicher.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429790/?learn=on)

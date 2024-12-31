@@ -1,6 +1,6 @@
 ---
-title: Grundlegendes zu Datennutzungsmustern mit Query Service
-description: In diesem Video werden Tipps und Best Practices für die Ausführung von Abfragen in der Benutzeroberfläche des Abfrageeditors, PSQL-Clients, Business Intelligence-Lösungen (BI) und der HTTP-API vorgestellt.
+title: Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service
+description: In diesem Video werden Tipps und Best Practices zum Ausführen von Abfragen in der Benutzeroberfläche des Abfrage-Editors, PSQL-Clients, Business Intelligence-Lösungen (BI) und der HTTP-API vorgestellt.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Datennutzungsmuster mit Query Service verstehen
+# Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service
 
-In diesem Video werden Tipps und Best Practices für die Ausführung von Abfragen in der Benutzeroberfläche des Abfrageeditors, PSQL-Clients, Business Intelligence-Lösungen (BI) und der HTTP-API vorgestellt. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+In diesem Video werden Tipps und Best Practices zum Ausführen von Abfragen in der Benutzeroberfläche des Abfrage-Editors, PSQL-Clients, Business Intelligence-Lösungen (BI) und der HTTP-API vorgestellt. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on)

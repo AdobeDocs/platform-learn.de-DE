@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Platform-basierte Anwendungen
-description: Erfahren Sie mehr über die nativen Anwendungen, die auf Adobe Experience Platform aufbauen.
+title: Auf Adobe Experience Platform aufbauende Programme
+description: Erfahren Sie mehr über die Programme, die nativ auf Adobe Experience Platform erstellt wurden.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-03T00:00:00Z
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Auf Experience Platform aufbauende Anwendungen
 
-Erfahren Sie mehr über die nativ auf Adobe Experience Platform erstellten Anwendungen: Customer Journey Analytics, Real-time Customer Data Platform, Journey Optimizer und Mix Modeler.
+Erfahren Sie mehr über die nativ auf Adobe Experience Platform erstellten Programme: Customer Journey Analytics, Real-time Customer Data Platform, Journey Optimizer und Mix Modeler.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on)
 

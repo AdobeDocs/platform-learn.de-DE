@@ -13,24 +13,24 @@ ht-degree: 2%
 
 ---
 
-# 3.3 Offer decisioning
+# 3,3 Offer decisioning
 
-**Autoren: [Rob in der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+**Autoren: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In diesem Modul erhalten Sie eine praktische Anleitung zu den Offer decisioning-Funktionen von Adobe Journey Optimizer.
 
-Adobe Journey Optimizer bietet die Möglichkeit, personalisierte Angebote zu erstellen und diese auf koordinierte Weise an alle Ziele zu übermitteln, die mit Adobe Journey Optimizer verknüpft sind.
+Adobe Journey Optimizer bietet die Möglichkeit, personalisierte Angebote zu erstellen und diese orchestriert an alle Ziele zu senden, die mit Adobe Journey Optimizer verknüpft sind.
 
-Mit Offer decisioning können Sie die beste Option aus einer Reihe verfügbarer Optionen bestimmen. Diese Optionen können Angebote, Produktempfehlungen, Inhaltskomponenten für ein Web-Erlebnis, Konversationsskripte und zu ergreifende Maßnahmen sein.
+Mit Offer decisioning können Sie aus einer Reihe von verfügbaren Optionen die beste Option bestimmen. Diese Optionen können Angebote, Produktempfehlungen, Inhaltskomponenten für ein Web-Erlebnis, Gesprächsskripte und durchzuführende Aktionen sein.
 
-Sehen Sie sich dieses Video an, um den Wert und die Journey von Kunden zu verstehen:
+Sehen Sie sich dieses Video an, um den Wert und die Kunden-Journey zu verstehen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/328829?quality=12&learn=on)
 
 ## Lernziele
 
-- Grundlegende Terminologie, die im Rahmen des Offer decisioning verwendet wird,
-- Erfahren Sie, wie Sie den Offer decisioning-Anwendungs-Service so konfigurieren, dass er sich auf reale Journey auswirkt.
+- Grundlegendes zur grundlegenden Terminologie von Offer decisioning,
+- Erfahren Sie, wie Sie den Offer decisioning-Anwendungs-Service konfigurieren, um sich auf die Echtzeit-Kunden-Journey auszuwirken.
 
 ## Voraussetzungen
 
@@ -38,19 +38,19 @@ Sehen Sie sich dieses Video an, um den Wert und die Journey von Kunden zu verste
 
 >[!NOTE]
 >
->Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie unter [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben.
+>Vergessen Sie nicht, die Chrome-Erweiterung zu installieren, zu konfigurieren und zu verwenden, wie in [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](../../gettingstarted/gettingstarted/ex1.md) beschrieben
 
 ## Übungen
 
 [3.3.1 Offer decisioning 101](./ex1.md)
 
-In dieser Übung erhalten Sie ein besseres Verständnis aller verschiedenen Konzepte von Offer decisioning und wie Sie auf Offer decisioning in Adobe Journey Optimizer zugreifen können.
+In dieser Übung erhalten Sie ein besseres Verständnis für die verschiedenen Konzepte von Offer decisioning und für den Zugriff auf Offer decisioning in Adobe Journey Optimizer.
 
-[3.3.2 Angebot und Entscheidung konfigurieren](./ex2.md)
+[3.3.2 Angebote und Entscheidungen konfigurieren](./ex2.md)
 
 In dieser Übung konfigurieren Sie Ihre eigenen personalisierten Angebote und Ihre eigene Entscheidung, die dann veröffentlicht wird.
 
-[3.3.3 Vorbereiten der Datenerfassungs-Client-Eigenschaft und des Web-SDK-Setups für Offer decisioning](./ex3.md)
+[3.3.3 Vorbereiten der Datenerfassungs-Client-Eigenschaft und des Web-SDK-Setups für das Offer decisioning](./ex3.md)
 
 In dieser Übung verwenden Sie die Demo-Website, um Ihre Entscheidung zu testen.
 
@@ -58,20 +58,20 @@ In dieser Übung verwenden Sie die Demo-Website, um Ihre Entscheidung zu testen.
 
 In dieser Übung verwenden Sie Ihre Angebote in Adobe Target.
 
-[3.3.5 Ihre Entscheidung in einer E-Mail verwenden](./ex5.md)
+[3.3.5 Entscheidung in einer E-Mail verwenden](./ex5.md)
 
 In dieser Übung verwenden Sie Ihre Entscheidung in einer E-Mail.
 
-[3.3.6 Entscheidung mithilfe der API testen](./ex6.md)
+[3.3.6 Testen Sie Ihre Entscheidung mit der API](./ex6.md)
 
 In dieser Übung verwenden Sie Postman und die Adobe Experience Platform-APIs, um Ihre Entscheidung zu testen.
 
 [Zusammenfassung und Vorteile](./summary.md)
 
-Zusammenfassung dieses Moduls und Übersicht über die Vorteile.
+Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investieren, um alles über Adobe Experience Platform und seine Anwendungen zu erfahren. Wenn Sie Fragen haben, möchten Sie allgemeine Rückmeldungen von Vorschlägen zu künftigen Inhalten teilen, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com** senden.
+>Vielen Dank, dass Sie sich Zeit genommen haben, um alles über Adobe Experience Platform und seine Programme zu erfahren. Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

@@ -1,6 +1,6 @@
 ---
 title: Dynamische Zielgruppen erstellen
-description: Dynamische Zielgruppen sind eine erweiterte Segmentierungsfunktion in Adobe Experience Platform, mit der sich die Skalierbarkeitsprobleme lösen lassen, mit denen Marketingexperten traditionell beim Erstellen von Zielgruppen für Marketingkampagnen konfrontiert sind.
+description: Dynamische Zielgruppen sind eine erweiterte Segmentierungsfunktion in Adobe Experience Platform, die die Skalierbarkeitsprobleme löst, mit denen Marketing-Experten traditionell beim Erstellen von Zielgruppen für Marketing-Kampagnen konfrontiert sind.
 feature: Segments
 role: User
 level: Intermediate
@@ -16,11 +16,11 @@ ht-degree: 7%
 
 # Dynamische Zielgruppen erstellen
 
-Dynamische Zielgruppen sind eine erweiterte Segmentierungsfunktion in Adobe Experience Platform, mit der sich die Skalierbarkeitsprobleme lösen lassen, mit denen Marketingexperten traditionell beim Erstellen von Zielgruppen für Marketingkampagnen konfrontiert sind. Weitere Informationen finden Sie in der [Dokumentation zum Segmentaufbau](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
+Dynamische Zielgruppen sind eine erweiterte Segmentierungsfunktion in Adobe Experience Platform, die die Skalierbarkeitsprobleme löst, mit denen Marketing-Experten traditionell beim Erstellen von Zielgruppen für Marketing-Kampagnen konfrontiert sind. Weitere Informationen finden Sie in der [Segment Builder-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmente]&quot;wurden in der Platform-Oberfläche in &quot;[!UICONTROL Zielgruppen]&quot;umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]** aus, um den Regel-Builder für dieses Video einzugeben.
+> &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27428?learn=on)
 

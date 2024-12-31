@@ -1,6 +1,6 @@
 ---
-title: maschinelle Lernausgabe in Segmentierung verwenden
-description: Erfahren Sie, wie die Data Science Workspace-Modellausgaben im Echtzeit-Kundenprofil und in der Segmentierung verwendet werden können.
+title: Verwenden der Ausgabe für maschinelles Lernen in der Segmentierung
+description: Erfahren Sie, wie Datenwissenschafts-Workspace-Modellausgaben im Echtzeit-Kundenprofil und in der Segmentierung verwendet werden können.
 feature: Data Science Workspace
 role: User
 level: Beginner
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ---
 
-# maschinelle Lernausgabe in Segmentierung verwenden
+# Verwenden der Ausgabe für maschinelles Lernen in der Segmentierung
 
-Erfahren Sie, wie die Data Science Workspace-Modellausgaben im Echtzeit-Kundenprofil und in der Segmentierung verwendet werden können. Weitere Informationen finden Sie in der Dokumentation zu [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
+Erfahren Sie, wie Datenwissenschafts-Workspace-Modellausgaben im Echtzeit-Kundenprofil und in der Segmentierung verwendet werden können. Weitere Informationen finden Sie in der [Dokumentation zu Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333711)
 

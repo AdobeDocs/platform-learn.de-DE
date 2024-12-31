@@ -1,6 +1,6 @@
 ---
-title: Foundation - Einrichten der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Implementieren von Adobe Analytics und Adobe Audience Manager
-description: Foundation - Einrichten der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung - Implementieren von Adobe Analytics und Adobe Audience Manager
+title: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web-SDK-Erweiterung - Implementieren von Adobe Analytics und Adobe Audience Manager
+description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web-SDK-Erweiterung - Implementieren von Adobe Analytics und Adobe Audience Manager
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# 1.1.5 Adobe Analytics und Adobe Audience Manager implementieren
+# 1.1.5 Implementieren von Adobe Analytics und Adobe Audience Manager
 
 ## Kontext
 
-Sie wissen jetzt, dass XDM-Daten in die Plattform fließen. Erfahren Sie mehr darüber, was XDM in [Modul 1.2](./../module1.2/data-ingestion.md) ist und wie Sie Ihr eigenes Schema zur Verfolgung benutzerdefinierter Variablen erstellen. Zunächst werden Sie sehen, was passiert, wenn Sie Ihren Datastream so einstellen, dass Daten an Analytics und Audience Manager weitergeleitet werden.
+Sie wissen jetzt, dass XDM-Daten in Platform fließen. Sie erfahren mehr darüber, was XDM in [Modul 1.2](./../module1.2/data-ingestion.md) ist, sowie darüber, wie Sie Ihr eigenes Schema zum Nachverfolgen benutzerdefinierter Variablen erstellen. Im Moment werden Sie sich ansehen, was passiert, wenn Sie Ihren Datenstrom so einstellen, dass Daten an Analytics und Audience Manager weitergeleitet werden.
 
 ## Zuordnen von Variablen in Analytics
 
-Die Adobe Experience Platform [!DNL Web SDK] ordnet bestimmte Werte automatisch zu, wodurch eine neue Implementierung von Analytics über das Web SDK so schnell wie möglich erfolgt. Die automatisch zugeordneten Variablen werden [hier](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection) aufgelistet.
+Die Adobe Experience Platform-[!DNL Web SDK] ordnet bestimmte Werte automatisch zu, sodass eine neue Implementierung von Analytics über die Web-SDK so schnell wie möglich erfolgt. Die automatisch zugeordneten Variablen werden [hier](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection) aufgelistet.
 
-Bei XDM-Daten, die nicht automatisch Adobe Analytics zugeordnet werden, können Sie [Kontextdaten](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=de) verwenden, um Ihrem [Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de) zu entsprechen. Anschließend kann sie mithilfe von [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) in Analytics zugeordnet werden, um Analytics-Variablen zu füllen. Kontextdaten und Verarbeitungsregeln sind Konzepte, die mit denen vertraut sind, die in der Vergangenheit mit Analytics gearbeitet haben, sich aber nicht um die Details kümmern, wenn es sich um neue Konzepte handelt.
+Bei XDM-Daten, die nicht automatisch Adobe Analytics zugeordnet werden, können Sie [Kontextdaten](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=de) verwenden, um Ihren ([) ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de). Anschließend kann sie mithilfe von [Verarbeitungsregeln“ in Analytics zugeordnet werden](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) um Analytics-Variablen aufzufüllen. Kontextdaten und Verarbeitungsregeln sind Konzepte, die denjenigen bekannt sind, die in der Vergangenheit mit Analytics gearbeitet haben. Sie sollten sich jedoch vorerst nicht um die Details kümmern, wenn es sich um neue Konzepte handelt.
 
-Sie können auch einen Standardsatz von Aktionen und Produktlisten zum Senden oder Abrufen von Daten mit dem AEP Web SDK verwenden. Weitere Informationen hierzu finden Sie unter [Produkte](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
+Sie können auch einen Standardsatz von Aktionen und Produktlisten verwenden, um Daten mit der AEP Web SDK zu senden oder abzurufen. Weitere Informationen hierzu finden Sie unter [Produkte](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
 
 ### Kontextdaten
 
-Zur Verwendung durch Analytics werden XDM-Daten mit Punktnotation reduziert und als `contextData` verfügbar gemacht. Die folgende Liste von Wertpaaren zeigt ein Beispiel für `context data`:
+Zur Verwendung in Analytics werden XDM-Daten mit Punktnotation reduziert und als `contextData` bereitgestellt. Die folgende Liste von Wertpaaren zeigt ein Beispiel für `context data`:
 
 ```javascript
 {
@@ -54,42 +54,42 @@ Zur Verwendung durch Analytics werden XDM-Daten mit Punktnotation reduziert und 
 
 ### Verarbeitungsregeln
 
-Auf alle vom Edge Network erfassten Daten kann über [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) zugegriffen werden. In Analytics können Sie Verarbeitungsregeln verwenden, um Kontextdaten in Analytics-Variablen zu integrieren.
+Auf alle vom Edge Network erfassten Daten kann über [Verarbeitungsregeln“ zugegriffen ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html). In Analytics können Sie Verarbeitungsregeln verwenden, um Kontextdaten in Analytics-Variablen einzubinden.
 
 ## Audience Manager auf dem Experience Platform-Edge Network
 
-Die serverseitige Weiterleitung ist kein neues Konzept für den Audience Manager, und es gilt der gleiche Prozess wie zuvor. Sie können auch Identitäten synchronisieren.
+Die Server-seitige Weiterleitung ist kein neues Konzept für Audience Manager und es gilt der gleiche Prozess wie zuvor. Sie können auch Identitäten synchronisieren.
 
-## Überprüfen Sie Ihren Datenspeicher, um Daten an Adobe Analytics zu senden.
+## Überprüfen Ihres Datenstroms, um Daten an Adobe Analytics zu senden
 
-Wenn Sie vom Web SDK erfasste Daten an Adobe Analytics und Adobe Audience Manager senden möchten, führen Sie die folgenden Schritte aus.
+Wenn Sie von Web SDK erfasste Daten an Adobe Analytics und Adobe Audience Manager senden möchten, führen Sie die folgenden Schritte aus.
 
-Wechseln Sie zu [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) und gehen Sie zu **Datastreams**.
+Wechseln Sie zu [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) und dann zu **Datenströme**.
 
-Wählen Sie oben rechts auf Ihrem Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` lauten soll. Öffnen Sie Ihren spezifischen Datastream mit dem Namen `--aepUserLdap-- - Demo System Datastream`.
+Wählen Sie oben rechts im Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` werden soll. Öffnen Sie Ihren spezifischen Datenstrom mit dem Namen `--aepUserLdap-- - Demo System Datastream`.
 
-![Klicken Sie auf das Symbol Edge-Konfiguration im linken Navigationsbereich](./images/edgeconfig1b.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1b.png)
 
-Dann wirst du das sehen. Um Adobe Analytics zu aktivieren, klicken Sie auf **+Dienst hinzufügen**.
+Sie werden es dann sehen. Um Adobe Analytics zu aktivieren, klicken Sie auf **+Service hinzufügen**.
 
 ![AEP-Debugger](./images/aa2.png)
 
-Dann wirst du das sehen. Wählen Sie den Dienst **Adobe Analytics** aus, nach dem Sie die Report Suite in Adobe Analytics hinzufügen müssen, an die Daten gesendet werden sollen. In diesem Tutorial ist dies nicht möglich. Klicken Sie auf **Abbrechen**.
+Sie werden es dann sehen. Wählen Sie den Dienst **Adobe Analytics** aus, nach dem Sie die Report Suite in Adobe Analytics hinzufügen müssen, um Daten an zu senden. In diesem Tutorial liegt dies außerhalb des Projektumfangs. Klicken Sie **Abbrechen**.
 
 ![AEP-Debugger](./images/aa3.png)
 
-## Überprüfen Sie Ihren Datenspeicher, um Daten an Adobe Audience Manager zu senden.
+## Überprüfen Ihres Datenstroms, um Daten an Adobe Audience Manager zu senden
 
-Dann wirst du das sehen. Um Adobe Audience Manager zu aktivieren, klicken Sie auf **+Dienst hinzufügen**.
+Sie werden es dann sehen. Um Adobe Audience Manager zu aktivieren, klicken Sie auf **+Service hinzufügen**.
 
 ![AEP-Debugger](./images/aa2.png)
 
-Dann wirst du das sehen. Wählen Sie den Dienst **Adobe Audience Manager** aus, nach dem Sie Adobe Audience Manager-Cookie-Ziele und/oder URL-Ziele aktivieren oder deaktivieren können. In diesem Tutorial ist diese Konfiguration nicht möglich. Klicken Sie auf **Abbrechen**.
+Sie werden es dann sehen. Wählen Sie den Dienst **Adobe Audience Manager** aus, nach dem Sie Adobe Audience Manager-Cookie-Ziele und/oder URL-Ziele aktivieren oder deaktivieren können. In diesem Tutorial liegt diese Konfiguration außerhalb des Bereichs. Klicken Sie **Abbrechen**.
 
 ![AEP-Debugger](./images/aam1.png)
 
-Nächster Schritt: [1.1.6 Adobe Target implementieren](./ex6.md)
+Nächster Schritt: [1.1.6 Implementieren von Adobe Target](./ex6.md)
 
-[Zurück zu Modul 1.1](./data-ingestion-launch-web-sdk.md)
+[Zurück zum Modul 1.1](./data-ingestion-launch-web-sdk.md)
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)

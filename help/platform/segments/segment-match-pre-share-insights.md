@@ -1,6 +1,6 @@
 ---
-title: Einblicke vor der Freigabe von Segmentübereinstimmungen
-description: Wenn Sie sich entscheiden, für einen strategischen Partner Daten freizugeben, müssen Sie wissen, wie Ihre Kunden zusammenpassen, damit Sie beurteilen können, wie nützlich diese Datenfreigabe sein wird. Mit der Segmentübereinstimmung können Sie die Überschneidung mit potenziellen Datenpartnern sehen, bevor Sie Daten freigeben, und auch die bidirektionale Datenfreigabe mit diesen Partnern abschließen.
+title: Einblicke vor der Freigabe durch Segment Match
+description: Wenn Sie sich entscheiden, für einen strategischen Partner Daten freizugeben, müssen Sie wissen, wie Ihre Kunden zusammenpassen, damit Sie beurteilen können, wie nützlich diese Datenfreigabe sein wird. Mit Segment Match können Sie die Überschneidung mit potenziellen Datenpartnern sehen, bevor Sie Daten freigeben, und auch die bidirektionale Datenfreigabe mit diesen Partnern abschließen.
 feature: Segments
 role: User
 level: Intermediate
@@ -14,8 +14,8 @@ ht-degree: 53%
 
 ---
 
-# Einblicke vor der Freigabe von Segmentübereinstimmungen
+# Einblicke vor der Freigabe durch Segment Match
 
-Wenn Sie sich entscheiden, für einen strategischen Partner Daten freizugeben, müssen Sie wissen, wie Ihre Kunden zusammenpassen, damit Sie beurteilen können, wie nützlich diese Datenfreigabe sein wird. Mit der Segmentübereinstimmung können Sie die Überschneidung mit potenziellen Datenpartnern sehen, bevor Sie Daten freigeben. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
+Wenn Sie sich entscheiden, für einen strategischen Partner Daten freizugeben, müssen Sie wissen, wie Ihre Kunden zusammenpassen, damit Sie beurteilen können, wie nützlich diese Datenfreigabe sein wird. Mit Segment Match können Sie Überschneidungen mit potenziellen Datenpartnern sehen, bevor Sie Daten freigeben. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on)

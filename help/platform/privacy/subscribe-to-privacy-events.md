@@ -1,6 +1,6 @@
 ---
 title: Datenschutzereignisse abonnieren
-description: Erfahren Sie, wie Sie Datenschutzereignisse abonnieren, um Auftragsstatus-basierte Workflows zu automatisieren.
+description: Erfahren Sie, wie Sie Datenschutzereignisse abonnieren, um auftragsstatusbasierte Workflows zu automatisieren.
 feature: Privacy
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -17,7 +17,7 @@ ht-degree: 21%
 
 # Datenschutzereignisse abonnieren
 
-Erfahren Sie, wie Sie Datenschutzereignisse abonnieren, um auftragsstatusbasierte Workflows zu automatisieren. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) .
+Erfahren Sie, wie Sie Datenschutzereignisse abonnieren, um auftragsstatusbasierte Workflows zu automatisieren. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on)
 

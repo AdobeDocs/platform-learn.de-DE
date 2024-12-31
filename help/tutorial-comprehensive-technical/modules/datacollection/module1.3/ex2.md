@@ -3,17 +3,18 @@ title: Datenerfassung - FAC - Erstellen von Schemata, Datenmodellen und Links
 description: Foundation - FAC - Erstellen von Schemata, Datenmodellen und Links
 kt: 5342
 doc-type: tutorial
-source-git-commit: 8cfe1dbb528bdf5ecc828cf67ef969c885982435
+exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
+source-git-commit: 7283dc52f509c3296443c6e4f02fdcc0680d6f6a
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%
 
 ---
 
-# 1.3.2 Schemas, Datenmodell und Links erstellen
+# 1.3.2 Erstellen von Schemata, Datenmodellen und Links
 
-Nächster Schritt: [1.3.3 Erstellen einer zusammengeführten Komposition](./ex3.md)
+Nächster Schritt: [1.3.3 Erstellen einer Federated Composition](./ex3.md)
 
-[Zurück zu Modul 1.3](./fac.md)
+[Zurück zum Modul 1.3](./fac.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

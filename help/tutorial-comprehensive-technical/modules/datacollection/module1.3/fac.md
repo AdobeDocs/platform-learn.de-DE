@@ -1,6 +1,6 @@
 ---
-title: Datenerfassung - Zusammengestellte Zielgruppenkomposition
-description: Datenerfassung - Zusammengestellte Zielgruppenkomposition
+title: Datenerfassung - Federated Audience-Komposition
+description: Datenerfassung - Federated Audience-Komposition
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
@@ -11,25 +11,25 @@ ht-degree: 0%
 
 ---
 
-# 1.3 Zusammengestellte Zielgruppenkomposition
+# 1.3 Federated Audience-Komposition
 
 **Autor: [Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/), [Wouter van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In diesem Modul soll alles über die Erstellung von Zielgruppen mithilfe der Zusammenstellung von Federated Audience erfahren.
+In diesem Modul erfahren Sie alles über das Erstellen von Zielgruppen mithilfe der Federated Audience-Komposition.
 
-Federated Audience Komposition (FAC) in Experience Platform ermöglicht Ihnen den Zugriff auf und die Erstellung von Zielgruppen mit entsprechenden hochwertigen Attributen aus Unternehmensdatenlagern, die das Echtzeit-Kundenprofil und die Zielgruppen in Experience Platform anreichern und ergänzen, um eine verbesserte Segmentierung, Zielgruppenbestimmung, Aktivierung und Bereitstellung wirkungsvoller Kundenerlebnisse zu ermöglichen. Mit Federated Audience Komposition wird eine virtuelle Datenbank erstellt, indem Remote-Datenbanken über Metadaten verknüpft werden. Dieser Ansatz vereinfacht den Zugriff, reduziert Duplikate und verbessert das Benutzererlebnis für Endbenutzer. Teams erhalten beim Zusammenstellen von Zielgruppen für Interaktions-Workflows die Flexibilität, Datensätze direkt in Experience Platform aufzunehmen oder auf Datensätze zuzugreifen, die in Data Warehouse gespeichert sind. Dieser Ansatz nutzt Data Warehouse-Investitionen und -Assets, um Real-Time CDP und Journey Optimizer zu ergänzen. Zusammengestellte Zielgruppenzusammensetzung ermöglicht es Kunden, Batch- und Echtzeit-Funktionen über wichtige neue Anwendungsfallmuster hinweg zu nutzen und zu kombinieren:
+Die Federated Audience Composition (FAC) in Experience Platform ermöglicht den Zugriff auf und die Erstellung von Zielgruppen mit entsprechenden hochwertigen Attributen aus Data Warehouses von Unternehmen. Dadurch werden das Echtzeit-Kundenprofil und die Zielgruppen in Experience Platform angereichert und ergänzt, was eine verbesserte Segmentierung, Zielgruppenbestimmung, Aktivierung und Bereitstellung wirkungsvoller Kundenerlebnisse ermöglicht. Mithilfe der Federated Audience Composition wird eine virtuelle Datenbank erstellt, indem Remote-Datenbanken über Metadaten verknüpft werden. Dieser Ansatz vereinfacht den Zugriff, reduziert Duplizierungen und verbessert das Anwendererlebnis. Teams haben die Möglichkeit, Datensätze direkt in Experience Platform aufzunehmen oder auf Datensätze zuzugreifen, die sich in Data Warehouses befinden, wenn Zielgruppen für Interaktions-Workflows zusammengestellt werden. Dieser Ansatz nutzt Data Warehouse-Investitionen und -Assets als Ergänzung zu Real-Time CDP und Journey Optimizer. Die Federated Audience-Komposition ermöglicht Kunden die Nutzung und Kombination von Batch- und Echtzeit-Funktionen über wichtige neue Anwendungsfallmuster hinweg:
 
-- Zusammengestellte Zielgruppensegmentierung: Ein Team kann eine Zielgruppe mithilfe der marketerfreundlichen Drag &amp; Drop-Benutzeroberfläche für die Zielgruppenzusammensetzung in Real-Time CDP und Journey Optimizer erstellen, jedoch mit einer Abfrage, die an das Data Warehouse gesendet wird, wobei sensible zugrunde liegende Daten ohne Duplizierung verbleiben und ein flexibler Zugriff auf wichtige Datensätze möglich ist.
-- Zielgruppen-Anreicherung: In Real-Time CDP und Journey Optimizer erstellte Zielgruppen können mit zusätzlichen Unternehmensdaten angereichert werden, um Targeting und Personalisierung durch zusätzliche profilbasierte und nicht profilbasierte Datensätze zu verbessern, die in Adobe Experience Platform nicht persistent sind. So kann beispielsweise eine Einzelhandelsmarke eine Audience der letzten Online-Käufer mit einer Liste der wichtigsten Orte ergänzen, um eine Audience für eine kanalübergreifende Online- und In-Store-Promotion zu erstellen.
-- Profilanreicherung: Teams können Profilattribute aus Data Warehouse auswählen, die für aktuelle Erlebnisse von entscheidender Bedeutung sind, die in umsetzbaren Kundenprofilen gespeichert und über Journey Optimizer aufgerufen werden können. Diese zusätzlichen Datenpunkte stehen dann für nachgelagerte Segmentierung und Personalisierung zur Verfügung, die durch Ereignisverhalten ausgelöst wird, abhängig von der Benutzeraktion und dem Anwendungsfall des Kunden. Auf diese Weise können neben anderen Attributen und Verhaltenssignalen, die in einem Kundenprofil beibehalten werden, auch Attribute, die mit verknüpften Zielgruppen zusammengeführt werden, für die Segmentierung und Personalisierung im Moment verfügbar sein.
+- Federated Audience-Segmentierung: Ein Team kann eine Zielgruppe mithilfe der marketerfreundlichen Benutzeroberfläche für die Drag-and-Drop-Zielgruppenkomposition in Real-Time CDP und Journey Optimizer erstellen, jedoch mit einer an das Data Warehouse gepushten Abfrage, sodass sensible zugrunde liegende Daten im Warehouse ohne Duplizierung verbleiben und ein flexibler Zugriff auf wichtige Datensätze bereitgestellt wird.
+- Zielgruppenanreicherung: In Real-Time CDP und Journey Optimizer erstellte Zielgruppen können mit zusätzlichen Unternehmensdaten angereichert werden, um das Targeting und die Personalisierung mit zusätzlichen profilbasierten und nicht profilbasierten Datensätzen zu verbessern, die in Adobe Experience Platform nicht beibehalten werden. Beispielsweise kann eine Einzelhandelsmarke eine Zielgruppe aus aktuellen Online-Käufern mit einer Liste von Top-Standorten aus Stein und Boden ergänzen, um eine Zielgruppe für eine kanalübergreifende Online- und In-Store-Promotion zu erstellen.
+- Profilanreicherung: Teams können Profilattribute aus dem Data Warehouse auswählen, die für aktuelle Erlebnisse wichtig sind, damit sie in umsetzbaren Kundenprofilen, die sich in Real-Time CDP befinden und auf die über Journey Optimizer zugegriffen werden kann, beibehalten werden. Diese zusätzlichen Datenpunkte sind dann für die nachgelagerte Segmentierung und Personalisierung verfügbar, die durch das Verhalten von Ereignissen ausgelöst wird, je nach Benutzeraktion und Kundenanwendungsfall. Auf diese Weise können Attribute, die zusammen mit verbundenen Zielgruppen übermittelt werden, für die aktuelle Segmentierung und Personalisierung neben anderen Attributen und Verhaltenssignalen, die in einem Kundenprofil gespeichert sind, verfügbar sein.
 
-Zusammengestellte Zielgruppenkomposition bietet Real-Time CDP- und Journey Optimizer-Kunden die Flexibilität zu entscheiden, welche Daten sie verwenden möchten, wenn sie möchten, und hilft, unnötige Duplizierungen von Datensätzen oder Integrationsmustern zu vermeiden. Dies stellt eine einzigartige Kombination aus einem verknüpften Ansatz zur Verwendung von Unternehmensdaten zur Kuratierung von Zielgruppen und hochwertigen Attributen dar, kombiniert mit einem System, das für die kanalübergreifende Interaktion im Moment optimiert ist. Dies führt zu weniger Datenbewegungen, aber auch zu neuen Möglichkeiten, hochwertige Zielgruppen und Attribute für eine konsistente Aktivierung mit geringer Latenz über Kanäle hinweg zu nutzen.
+Die Federated Audience-Komposition bietet Kunden von Real-Time CDP und Journey Optimizer die Flexibilität, zu entscheiden, welche Daten wann verwendet werden sollen, und hilft dabei, unnötige Duplikate von Datensätzen oder Integrationsmustern zu vermeiden. Dies stellt eine einzigartige Kombination aus einem föderierten Ansatz zur Verwendung von Unternehmensdaten zum Kuratieren von Zielgruppen und hochwertigen Attributen dar, kombiniert mit einem System, das für die aktuelle kanalübergreifende Interaktion optimiert ist. Dies führt zu weniger Datenverschiebungen, aber auch zu neuen Möglichkeiten, hochwertige Zielgruppen und Attribute für eine konsistente Aktivierung mit geringer Latenz über alle Kanäle hinweg zu nutzen.
 
 ## Lernziele
 
-- Erfahren Sie, wie Sie Snowflake mit Adobe Experience Platform verbinden.
-- Erfahren Sie, wie Sie ein Datenmodell für Ihre Federated Data in Adobe Experience Platform erstellen.
-- Erfahren Sie, wie Sie in Adobe Experience Platform zusammengestellte Zielgruppenkompositionen erstellen.
+- Erfahren Sie, wie Sie Snowflake mit Adobe Experience Platform verbinden
+- Erfahren Sie, wie Sie in Adobe Experience Platform ein Datenmodell für Ihre Federated Data erstellen
+- Erfahren Sie, wie Sie in Adobe Experience Platform Federated Audience-Kompositionen erstellen
 
 ## Voraussetzungen
 
@@ -38,24 +38,24 @@ Zusammengestellte Zielgruppenkomposition bietet Real-Time CDP- und Journey Optim
 
 ## Übungen
 
-[1.3.1 Snowflake-Konto einrichten](./ex1.md)
+[1.3.1 Einrichten des Snowflake-Kontos](./ex1.md)
 
 In dieser Übung richten Sie Ihr Snowflake-Testkonto ein und verbinden es mit Adobe Experience Platform
 
-[1.3.2 Schemas, Datenmodell und Links erstellen](./ex2.md)
+[1.3.2 Erstellen von Schemata, Datenmodellen und Links](./ex2.md)
 
-In dieser Übung konfigurieren Sie Ihr Datenmodell in AEP für die verknüpften Daten.
+In dieser Übung konfigurieren Sie Ihr Datenmodell in AEP für die Federated Data.
 
-[1.3.3 Föderierte Zusammensetzung erstellen](./ex3.md)
+[1.3.3 Erstellen einer Verbundzusammensetzung](./ex3.md)
 
-In dieser Übung konfigurieren Sie Ihr Datenmodell in AEP für die verknüpften Daten.
+In dieser Übung konfigurieren Sie Ihr Datenmodell in AEP für die Federated Data.
 
 [Zusammenfassung und Vorteile](./summary.md)
 
-Zusammenfassung dieses Moduls und Übersicht über die Vorteile.
+Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie Ihre Zeit investieren, um alles über Adobe Experience Platform und seine Anwendungen zu erfahren. Wenn Sie Fragen haben, möchten Sie allgemeine Rückmeldungen von Vorschlägen zu künftigen Inhalten teilen, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com** senden.
+>Vielen Dank, dass Sie sich Zeit genommen haben, um alles über Adobe Experience Platform und seine Programme zu erfahren. Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

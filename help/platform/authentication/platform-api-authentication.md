@@ -15,34 +15,34 @@ ht-degree: 10%
 
 ---
 
-# [!DNL Experience Platform]-APIs authentifizieren und aufrufen
+# Authentifizieren und Zugreifen auf [!DNL Experience Platform] APIs
 
-Erfahren Sie mehr über die ersten Schritte mit Adobe Experience Platform-APIs. Dieses Tutorial führt Sie durch den Prozess zum Erstellen von Authentifizierungsberechtigungen und zum Starten von Experience Platform-API-Anfragen.
+Erfahren Sie mehr über die ersten Schritte mit Adobe Experience Platform-APIs. Dieses Tutorial führt Sie durch den Prozess zum Erstellen von Authentifizierungsdaten und zum Erstellen von Experience Platform-API-Anfragen.
 
 ## Erstellen eines Projekts in Adobe Developer Console und Exportieren einer Postman-Umgebung{#export-integration-details-to-postman}
 
-[[!DNL Postman]](https://www.postman.com/) ist eine Drittanbieteranwendung, mit der Entwickler schnell und einfach mit Adobe Experience Platform-APIs interagieren können.
+[[!DNL Postman]](https://www.postman.com/) ist ein Drittanbieterprogramm, mit dem Entwickler schnell und einfach mit Adobe Experience Platform-APIs interagieren können.
 
-Die Funktion [Adobe Developer Console](https://developer.adobe.com/console/home) **Exportdetails für Postman** bietet eine einfache Möglichkeit, die Kontodetails zu exportieren, die für den Zugriff auf und die Interaktion mit Experience Platform-APIs in einer einzelnen Postman-Umgebungsdatei erforderlich sind. So müssen Werte nicht mehr aus Adobe Developer Console kopiert und in Postman eingefügt werden.
+Die Funktion [](https://developer.adobe.com/console/home)**Details für Postman exportieren** von Adobe Developer Console bietet eine einfache Möglichkeit, die Kontodetails zu exportieren, die für den Zugriff auf und die Interaktion mit Experience Platform-APIs in einer einzigen Postman-Umgebungsdatei erforderlich sind, sodass Werte nicht mehr aus Adobe Developer Console in Postman kopiert und eingefügt werden müssen.
 
 >[!IMPORTANT]
 >
->Um auf den [Adobe Developer Console](https://developer.adobe.com/console/home) zugreifen zu können, müssen Sie entweder ein [Systemadministrator](https://helpx.adobe.com/de/enterprise/using/admin-roles.html) oder ein [Entwickler](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in der [Adobe Admin Console](https://adminconsole.adobe.com) sein.
+>Um auf die [Adobe Developer Console](https://developer.adobe.com/console/home) zugreifen zu können, müssen Sie entweder [Systemadministrator](https://helpx.adobe.com/de/enterprise/using/admin-roles.html) oder [Entwickler](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in der [Adobe Admin Console ](https://adminconsole.adobe.com).
 >
-> Nachdem Sie Ihre API-Anmeldedaten erstellt haben, muss ein Systemadministrator die Berechtigung mit einer Rolle im Experience Platform verknüpfen.
+> Nachdem Sie Ihre API-Anmeldedaten erstellt haben, muss ein Systemadministrator die Anmeldedaten mit einer Rolle auf der Experience Platform verknüpfen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on)
 
-## Generieren eines Zugriffstokens mit Postman{#generate-an-access-token-with-postman}
+## Erstellen eines Zugriffs-Tokens mit Postman{#generate-an-access-token-with-postman}
 
-Verwenden Sie die [Adobe Identity Management-Dienst-APIs](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) , um ein Zugriffstoken für den Zugriff auf die Adobe Experience Platform-APIs abzurufen.
+Verwenden Sie die [Adobe-Identity Management-Service](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)APIs, um ein Zugriffstoken für den Zugriff auf die Adobe Experience Platform-APIs zu erhalten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on)
 
 
 ## Interagieren mit Experience Platform-APIs mithilfe von Postman
 
-Erkunden Sie die Interaktion mit Adobe Experience Platform-APIs mithilfe der [vom Adobe bereitgestellten Experience Platform API Postman-Sammlungen](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), basierend auf den [Adobe Developer Console-Umgebungsvariablen](#export-integration-details-to-postman) und dem [generierten Zugriffstoken](#generate-an-access-token-with-postman).
+Erkunden Sie die Interaktion mit Adobe Experience Platform-APIs mithilfe der von [Adobe bereitgestellten Experience Platform-API für Postman](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)Sammlungen, die auf den [Adobe Developer Console-Umgebungsvariablen ](#export-integration-details-to-postman) dem [generierten Zugriffstoken](#generate-an-access-token-with-postman) aufbauen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on)
 
@@ -50,7 +50,7 @@ Erkunden Sie die Interaktion mit Adobe Experience Platform-APIs mithilfe der [vo
 ## In diesen Videos referenzierte Ressourcen
 
 * [Adobe Developer Console](https://developer.adobe.com/console/home)
-* [Adobe Experience Platform Postman-Beispiele](https://github.com/adobe/experience-platform-postman-samples)
+* [Beispiele für Adobe Experience Platform Postman](https://github.com/adobe/experience-platform-postman-samples)
    * [Identity Management System Postman Collection zum Generieren von Zugriffstoken](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
    * [Adobe Experience Platform API Postman-Sammlungen](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
 * [Postman herunterladen](https://www.postman.com/)

@@ -4,7 +4,8 @@ description: Zusammenfassung und Vorteile
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: a2193f03-4744-4c7d-a5e1-23eb3800c44f
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -13,32 +14,32 @@ ht-degree: 0%
 
 # Zusammenfassung und Vorteile
 
-Herzlichen Glückwunsch und vielen Dank, dass Sie Ihre Zeit in das Lernen über Journey Optimizer investiert haben!
+Herzlichen Glückwunsch und vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Journey Optimizer zu erfahren!
 In diesem Modul haben Sie Folgendes gelernt:
 
 - Erstellen von E-Mail- und Push-Nachrichten
 - Anwenden der Personalisierung in E-Mail- und Push-Nachrichten
-- So erstellen Sie Trigger-basierte Journey, Batch-basierte Journey und ereignisbasierte Journey
-- Verwenden und Bereitstellen von Push-Benachrichtigungen auf iOS-Geräten
-- Fehlerbehebung und Testen der Push-Nachrichtenzustellung auf iOS-Geräten mit AEP Assurance
+- Wie Sie Trigger-basierte Journey, Batch-basierte Journey und Geschäftsereignis-basierte Journey erstellen
+- Verwenden und Versenden von Push-Benachrichtigungen an iOS-Geräte
+- Fehlerbehebung und Test des Push-Nachrichtenversands auf iOS-Geräten mit AEP Assurance
 
 ## Vorteile
 
 Lassen Sie uns die Vorteile von Journey Optimizer hervorheben:
 
-- **Echtzeit-Kundeneinblicke und -interaktion** - Ein integriertes Profil verbindet Live-Daten aus allen Quellen über Touchpoints der Kunden hinweg, einschließlich verhaltensbezogener, Transaktions-, Finanz- und Betriebsdaten, um persönliche und kontextbezogene Erlebnisse für Kunden in ihrer Zeit zu optimieren.  
+- **Echtzeit-Kundeneinblicke und Interaktion** - Ein integriertes Profil verbindet Live-Daten aus allen Quellen auf allen Kunden-Kontaktpunkten, einschließlich Verhaltens-, Transaktions-, Finanz- und Betriebsdaten, um persönliche und kontextuelle Erlebnisse für Kunden zeitnah zu optimieren.  
 
-- **Moderne Omnichannel-Orchestrierung und -Ausführung** - Eine einzige Arbeitsfläche, auf der die Journey für die 1:1-Kundeninteraktion und die Marketing-Interaktion harmonisiert und optimiert werden kann -, um Marken zu helfen, im gesamten Kundenlebenszyklus einen Mehrwert zu erzielen&#x200B; Durch die Konvergenz der Anwendungsfälle über eine einzige Benutzeroberfläche (E-Mail-Marketing, Interaktion auf Mobilgeräten, Echtzeit-Nutzungsszenarios, offer decisioning, Asset-Management usw.) kann der Marketing-Experte die Time-to-Market verkürzen und sowohl Technologie- als auch Organisationssilos aufschlüsseln, um eine nahtlosere und konsistentere Journey zu gewährleisten.  
+- **Moderne Omnichannel-Orchestrierung und -Ausführung** - Eine einzige Arbeitsfläche, auf der die Kunden-Journey harmonisiert und optimiert werden kann, um 1:1-Kundeninteraktionen und Marketing-Maßnahmen zu ermöglichen und Marken dabei zu helfen, im gesamten Kundenlebenszyklus einen Mehrwert zu erzielen&#x200B; Eine Konvergenz von Anwendungsfällen über eine einzige Benutzeroberfläche (E-Mail-Marketing, mobile Interaktion, Echtzeit-Anwendungsfälle, offer decisioning, Asset-Management usw.) ermöglicht es dem Marketing-Experten, die Markteinführungszeit zu beschleunigen und sowohl Technologie- als auch Organisationssilos aufzuschlüsseln, um ein nahtloseres und konsistenteres Kunden-Journey sicherzustellen.  
 
-- **Intelligente Entscheidungsfindung und Personalisierung** - Mit Adobe Journey Optimizer können Marken zentralisierte Entscheidungen treffen und künstliche Intelligenz und maschinelles Lernen integrieren, um prädiktive Einblicke über das gesamte Kundenerlebnis hinweg zu gewinnen. Dies erleichtert die Automatisierung von Entscheidungen und die Optimierung des skalierten Erlebnisses. 
+- **Intelligente Entscheidungsfindung und Personalisierung** - Mit Adobe Journey Optimizer können Marken zentralisierte Entscheidungsfindung nutzen und künstliche Intelligenz und maschinelles Lernen integrieren, um prädiktive Erkenntnisse über das gesamte Kundenerlebnis zu gewinnen, was die Automatisierung von Entscheidungen und die Optimierung eines Erlebnisses im großen Maßstab erleichtert. 
 
-- **Mit durchgängiger Skalierung, Geschwindigkeit und Flexibilität erstellt**, um die Erwartungen jedes Unternehmens zu erfüllen und die Benutzerfreundlichkeit zu gewährleisten, um die Anforderungen des modernen Lebenszyklusmarketingmitarbeiters und -praktikers für Kundenerlebnisse zu erfüllen.  Die auf Adobe Experience Platform aufbauende API-First-Architektur und das Open-Framework ermöglichen es Unternehmen, Daten aus allen Marketing- und Kundendatenquellen zu kombinieren und einfach mit externen Marketing- und Kunden-Touchpoints zu verbinden, um Aktionen, Angebote und Inhalte bereitzustellen. Darüber hinaus haben wir die Anwendung entwickelt, um Größenvorteile und Durchsatzfunktionen zu nutzen, die den Anforderungen der größten globalen Unternehmen gerecht werden. So können Milliarden von Profilen verwaltet, Nachrichten über 90 Mio.+ pro Stunde gesendet und schnelle Anforderungen für mobile Kommunikation über eine Minute unterstützt werden. 
+- **Entwickelt mit End-to-End-Skalierbarkeit, Geschwindigkeit und Flexibilität** um die Erwartungen jedes Unternehmens zu erfüllen und mit der Anwenderfreundlichkeit, um die Anforderungen des modernen Lifecycle-Marketing- und -Kundenerlebnis-Anwenders zu erfüllen.  Die nativ auf Adobe Experience Platform aufbauende API-First-Architektur und das offene Framework ermöglichen es Unternehmen, Daten aus allen Marketing- und Kundendatenquellen zu verbinden und einfach eine Verbindung mit externem Marketing und Kunden-Touchpoints herzustellen, um Aktionen, Angebote und Inhalte bereitzustellen. Wir haben die Anwendung auch entwickelt, um Skalierungs- und Durchsatzfunktionen zu erfüllen, die den Anforderungen der größten globalen Unternehmen gerecht werden - Verwaltung von Milliarden von Profilen, Nachrichtenversand von über 90 Millionen pro Stunde und die Möglichkeit, die Anforderungen an die Burst-Geschwindigkeit für Mobilkommunikation von Millionen pro Minute zu unterstützen. 
 
-## Sehen Sie sich das an
+## Hier ist alles
 
-- Techer Blog: [Mobile SDKs für Adobe Experience Platform - Umstieg auf Swift für iOS](https://medium.com/adobetech/adobe-experience-platform-mobile-sdks-move-to-swift-for-ios-6aa67b67b4d4)
-- Tech Blog: [Nutzung externer Datenplattformen in der Adobe Experience Platform-Journey Orchestration](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17)
+- Tech Blog: [Adobe Experience Platform Mobile SDKs für iOS auf Swift umstellen](https://medium.com/adobetech/adobe-experience-platform-mobile-sdks-move-to-swift-for-ios-6aa67b67b4d4)
+- Tech Blog: [Nutzung externer Datenplattformen in der Adobe Experience Platform-Journey Orchestration ](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17)
 
-[Zurück zu Modul 3.4](./journeyoptimizer.md)
+[Zurück zum Modul 3.4](./journeyoptimizer.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

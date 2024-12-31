@@ -1,5 +1,5 @@
 ---
-title: Grundlagen zum Echtzeit-Kundenprofil
+title: Grundlegendes zum Echtzeit-Kundenprofil
 description: In diesem Video wird erläutert, wie Adobe Experience Platform Echtzeit-Kundenprofile zusammenstellt und aktualisiert und wie Sie auf diese Profile zugreifen und sie verwenden können.
 feature: Profiles
 role: Data Engineer, Data Architect, Developer
@@ -16,6 +16,6 @@ ht-degree: 42%
 
 # Übersicht zum Echtzeit-Kundenprofil
 
-In diesem Video wird erläutert, wie Adobe Experience Platform Echtzeit-Kundenprofile zusammenstellt und aktualisiert und wie Sie auf diese Profile zugreifen und diese verwenden können. Weitere Informationen finden Sie in der Dokumentation zum [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) .
+In diesem Video wird erläutert, wie Adobe Experience Platform Echtzeit-Kundenprofile zusammenstellt und aktualisiert und wie Sie auf diese Profile zugreifen und sie verwenden können. Weitere Informationen finden Sie in der [Dokumentation zu Echtzeit-Kundenprofilen](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)

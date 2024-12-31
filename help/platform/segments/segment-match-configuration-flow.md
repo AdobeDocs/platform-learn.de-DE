@@ -1,6 +1,6 @@
 ---
-title: Konfigurationsfluss für Segmentübereinstimmungen
-description: Sobald eine Segmentfreigabe mit einem Datenpartner verbunden wurde, können Sie Daten untersuchen und mit Partnern teilen. Dieses Video führt Sie durch den Prozess von ... (Beschreibungen sollten zwischen 60 und 160 Zeichen lang sein)
+title: Konfiguration von Segment Match
+description: Sobald eine Segmentfreigabe für einen Datenpartner verbunden wurde, können Sie Daten erkunden und mit der Freigabe für Partner beginnen. Dieses Video führt Sie durch den Prozess von … (Beschreibungen sollten zwischen 60 und 160 Zeichen lang sein)
 feature: Segments
 role: User
 level: Intermediate
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Konfigurationsfluss für Segmentübereinstimmungen
+# Konfiguration von Segment Match
 
-Sobald eine Segmentfreigabe mit einem Datenpartner verbunden wurde, können Sie Daten untersuchen und mit Partnern teilen. Dieses Video führt Sie durch den Prozess der Konfiguration einer Segmentübereinstimmungsinstanz für eine Datenfreigabe. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
+Sobald eine Segmentfreigabe für einen Datenpartner verbunden wurde, können Sie Daten erkunden und mit der Freigabe für Partner beginnen. Dieses Video führt Sie durch den Prozess der Konfiguration einer Segment Match-Instanz für eine Datenfreigabe. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on)

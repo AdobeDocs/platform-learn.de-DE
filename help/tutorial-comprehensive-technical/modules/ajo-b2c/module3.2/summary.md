@@ -3,7 +3,8 @@ title: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Zusam
 description: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr - Zusammenfassung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 3277f646-9726-491c-a7f9-1b2e60858ffd
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%
@@ -12,24 +13,24 @@ ht-degree: 0%
 
 # Zusammenfassung und Vorteile
 
-Herzlichen Glückwunsch und vielen Dank, dass Sie Ihre Zeit in das Erlernen von Adobe Journey Optimizer und Adobe Experience Platform investiert haben!
-In diesem Modul haben Sie erfahren, wie Sie mit Adobe Journey Optimizer eine Journey konfigurieren können, die ausgelöst wird, wenn ein Kunde einen bestimmten Geofence um einen POI (Point of Interest) betritt. In diesem Fall haben Sie eine externe Datenquelle konfiguriert und genutzt, über die Sie in Echtzeit auf die aktuellen Wetterdaten des POI zugreifen können, die dann den Pfad der Journey und die an den Kunden gesendete Nachricht beeinflussen. Diese Nachricht wurde an zwei Aktionen gesendet: eine SMS mit Journey Optimizer und einen Slack-Kanal.
+Herzlichen Glückwunsch und vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Journey Optimizer und Adobe Experience Platform zu erfahren!
+In diesem Modul haben Sie gelernt, wie Sie mit Adobe Journey Optimizer eine Journey konfigurieren können, die ausgelöst wird, wenn ein Kunde einen bestimmten Geofence um einen Point of Interest (POI) betritt. In diesem Fall haben Sie eine externe Datenquelle konfiguriert und verwendet, die Ihnen in Echtzeit Zugriff auf die aktuellen Wetterdaten dieses POIs gibt, was sich dann auf den Pfad des Journey und die an den Kunden gesendete Nachricht auswirkt. Diese Nachricht wurde an zwei Aktionen gesendet, eine SMS mit Journey Optimizer und einen Slack-Kanal.
 
 ## Vorteile
 
 Lassen Sie uns die Vorteile der Verwendung von Adobe Journey Optimizer und Adobe Experience Platform hervorheben:
 
-- Die Kommunikation mit Kunden muss in Echtzeit und kontextbezogen erfolgen. Mit Adobe Journey Optimizer können Sie jetzt bestimmte kundeninitiierte Ereignisse überwachen und eine kontextbezogene Journey sorgfältig kuratieren, wenn und wann der Kunde diese spezifische Journey durchläuft.
-- Die Orchestrierung einer Journey kann Wartezeiten umfassen, Bedingungen, unter denen Daten in Adobe Experience Platform verifiziert werden, um dann die Journey an einen anderen Pfad zu senden, benutzerdefinierte externe Datenquellen wie die Wetter-API in diesem Beispiel und auch benutzerdefinierte Aktionen, bei denen Anwendungen mit einer API Anweisungen von Adobe Journey Optimizer zu Inhalten erhalten können, die dem jeweiligen Kunden angezeigt werden sollen.
-- Die Personalisierung von Interaktionen kann jetzt über jeden Kanal hinweg erfolgen, der zur Interaktion mit dem Kunden verwendet wird.
+- Die Kommunikation mit Kunden muss in Echtzeit und kontextuell erfolgen. Mit Adobe Journey Optimizer können Sie jetzt auf bestimmte kundeninitiierte Ereignisse warten und eine kontextuelle Journey sorgfältig kuratieren, falls und wann der Kunde diese spezifische Journey durchläuft.
+- Die Orchestrierung einer Journey kann Wartezeiten beinhalten, Bedingungen, unter denen Daten in Adobe Experience Platform überprüft werden, um die Journey dann an einen anderen Pfad zu senden, benutzerdefinierte externe Datenquellen wie die Wetter-API in diesem Beispiel und außerdem benutzerdefinierte Aktionen, bei denen jede Anwendung mit einer API von Adobe Journey Optimizer Anweisungen darüber erhalten kann, welche Inhalte welchem Kunden angezeigt werden sollen.
+- Personalisierte Interaktionen können jetzt wirklich über jeden Kanal hinweg stattfinden, der für die Interaktion mit dem Kunden verwendet wird.
 
-## Sehen Sie sich das an
+## Hier ist alles
 
-- Tech Blog: [Adobe Journey Optimizer in einer Omnichannel-Welt](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
-- Tech Blog: [Demonstration der Leistungsfähigkeit des neuen Adobe Journey Optimizer-Dienstes von Adobe, um in Echtzeit personalisierte Omnichannel-Erlebnisse zu erstellen](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
-- Tutorials: [Adobe Journey Optimizer-Tutorials](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html?lang=de)
+- Tech Blog: [Adobe Journey Optimizer in einer Omni-Channel-Welt](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
+- Tech Blog: [Demonstration der Leistungsfähigkeit des neuen Adobe Journey Optimizer-Services von Adobe zur Erstellung personalisierter Omni-Channel-Erlebnisse in Echtzeit](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
+- Tutorials: [Adobe Journey Optimizer Tutorials](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html?lang=de)
 - Experience Platform-Dokumentation: [Adobe Journey Optimizer-Hilfe](https://experienceleague.adobe.com/docs/journeys/using/journey-orchestration-home.html?lang=de)
 
-[Zurück zu Modul 3.2](journey-orchestration-external-weather-api-sms.md)
+[Zurück zum Modul 3.2](journey-orchestration-external-weather-api-sms.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

@@ -1,6 +1,6 @@
 ---
 title: Löschen von Datensätzen planen
-description: Erfahren Sie, wie Sie Datensätze mit der Adobe Experience Platform-Funktion zur Datenhygiene löschen.
+description: Erfahren Sie, wie Sie Datensätze mithilfe der Datenhygiene-Funktion von Adobe Experience Platform löschen können.
 feature: Data Hygiene
 role: Data Engineer, Data Architect
 level: Experienced
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Löschen von Datensätzen planen
 
-Erfahren Sie, wie Sie mit der Adobe Experience Platform-Funktion zur Datenhygiene das Löschen von Datensätzen planen.
+Erfahren Sie, wie Sie das Löschen von Datensätzen mithilfe der Datenhygiene-Funktion von Adobe Experience Platform planen.
 
-Durch das Löschen von Datensätzen können Data Stewards und Data Engineers ein Ablaufdatum für einen Datensatz festlegen. Weitere Informationen finden Sie in der [Dokumentation zur Datenhygiene](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=de).
+Mit dem Löschen von Datensätzen können Datenverwalter und Dateningenieure ein Ablaufdatum für einen Datensatz festlegen. Weitere Informationen finden Sie in der [Dokumentation zur Datenhygiene](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=de).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on)
 
 >[!NOTE]
 >
-> Alle Platform-Kunden können [Datensätze bei Bedarf löschen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). Die Löschung von Datensätzen ist derzeit nur für Kunden von Health Care Shield oder Privacy and Security Shield verfügbar.
+> Alle Platform-Kunden können [Datensätze bei Bedarf löschen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). Das Planen von Datensatzlöschungen ist derzeit nur für Kundinnen und Kunden von Healthcare Shield oder Privacy and Security Shield verfügbar.

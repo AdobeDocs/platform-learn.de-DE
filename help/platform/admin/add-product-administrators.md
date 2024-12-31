@@ -1,6 +1,6 @@
 ---
-title: Produktadministratoren für Adobe Experience Platform-basierte Anwendungen hinzufügen
-description: Erfahren Sie, wie Sie Produktadministratoren für Adobe Experience Platform- und Platform-basierte Anwendungen hinzufügen.
+title: Hinzufügen von Produktadministratoren für Adobe Experience Platform-basierte Programme
+description: Erfahren Sie, wie Sie Produktadministratoren für Adobe Experience Platform und plattformbasierte Programme hinzufügen.
 feature: Access Control
 role: Admin
 level: Beginner
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ---
 
-# Produktadministratoren hinzufügen
+# Hinzufügen von Produktadministratoren
 
-Erfahren Sie, wie Sie Produktadministratoren für Adobe Experience Platform hinzufügen. Produktadministratoren verwalten die Zugriffskontrolle für plattformbasierte Anwendungen wie Real-time Customer Data Platform und Journey Optimizer. Sie können Benutzer, Entwickler und zusätzliche Administratoren in Admin Console erstellen und ihnen dann (und API-Anmeldeinformationen) in der Benutzeroberfläche von Platform oder Journey Optimizer Berechtigungen erteilen. Weitere Informationen finden Sie in der Dokumentation zur Zugriffskontrolle [1}.](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de)
+Erfahren Sie, wie Sie Produktadministratoren für Adobe Experience Platform hinzufügen. Produktadministratoren verwalten die Zugriffssteuerung für plattformbasierte Anwendungen wie Real-time Customer Data Platform und Journey Optimizer. Sie können in Admin Console Anwender, Entwickler und zusätzliche Administratoren erstellen und ihnen dann (und API-Anmeldeinformationen) in der Platform- oder Journey Optimizer-Benutzeroberfläche Berechtigungen erteilen. Weitere Informationen finden Sie in der [Dokumentation zur Zugriffssteuerung](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on)
 
 >[!TIP]
 >
->Es wird empfohlen, den Produktadministrator auch als **Benutzer** zum Produktprofil `AEP-Default-All-Users` in Admin Console hinzuzufügen und ihn dann auf dem Bildschirm &quot;Berechtigungen&quot;der Platform-Oberfläche einer Rolle hinzuzufügen. Weitere Informationen finden Sie unter [Benutzer hinzufügen](add-users.md) .
+>Es wird empfohlen, den Produktadministrator auch als **Benutzer** zum `AEP-Default-All-Users` Produktprofil in Admin Console hinzuzufügen und ihn dann im Bildschirm „Berechtigungen“ in der Platform-Benutzeroberfläche zu einer Rolle hinzuzufügen. Weitere Informationen finden [ unter ](add-users.md) von Benutzern .

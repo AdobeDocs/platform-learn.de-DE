@@ -1,5 +1,5 @@
 ---
-title: Datenvorbereitung für Datenhygiene
+title: Datenvorbereitung für die Datenhygiene
 description: Erfahren Sie, wie Sie mit der Datenvorbereitung von Experience Platform Datenminimierungsprinzipien unterstützen. Erfahren Sie, wie Sie beim Import nur die benötigten Felder erfassen und Daten hashen können.
 feature: Data Prep, Data Ingestion
 role: Developer
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 ---
 
-# Datenvorbereitung für Datenhygiene
+# Datenvorbereitung für die Datenhygiene
 
 Erfahren Sie, wie Sie mit der Datenvorbereitung von Experience Platform Datenminimierungsprinzipien unterstützen. Erfahren Sie, wie Sie beim Import nur die benötigten Felder erfassen und Daten hashen können.
 

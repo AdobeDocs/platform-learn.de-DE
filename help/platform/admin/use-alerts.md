@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Warnhinweisen
-description: Erfahren Sie, wie Sie Warnhinweise in Adobe Experience Platform abonnieren und verwalten. Warnhinweise helfen Ihnen bei der Überwachung verschiedener Prozesse, um sicherzustellen, dass Ihre Platform-Implementierung reibungslos funktioniert.
+description: Erfahren Sie, wie Sie Warnhinweise in Adobe Experience Platform abonnieren und verwalten. Warnhinweise helfen Ihnen, verschiedene Prozesse zu überwachen, um einen reibunglosen Betrieb Ihrer Platform-Implementierung zu gewährleisten.
 feature: Alerts
 role: Data Engineer, User, Admin
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 43%
 
 # Verwenden von Warnhinweisen
 
-Erfahren Sie, wie Sie Warnhinweise in Adobe Experience Platform abonnieren und verwalten. Warnhinweise helfen Ihnen bei der Überwachung verschiedener Prozesse, um sicherzustellen, dass Ihre Platform-Implementierung reibungslos funktioniert. Weitere Informationen finden Sie in der Dokumentation zu [Warnhinweisen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=de).
+Erfahren Sie, wie Sie Warnhinweise in Adobe Experience Platform abonnieren und verwalten. Warnhinweise helfen Ihnen, verschiedene Prozesse zu überwachen, um einen reibunglosen Betrieb Ihrer Platform-Implementierung zu gewährleisten. Weitere Informationen finden Sie in der [Warnhinweisdokumentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336218?learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Durchsetzen von Richtlinien zur Datennutzung
-description: Erfahren Sie, wie Sie beim Aktivieren einer Zielgruppe für ein Ziel Datennutzungsrichtlinien durchsetzen. Erfahren Sie, wie Sie Zielen Marketing-Aktionen hinzufügen, wie Sie einen Richtlinienverstoß während der Aktivierung analysieren und wie Sie die Datenherkunft verwenden, um Richtlinienverletzungen zu verstehen und zu beheben.
+description: Erfahren Sie, wie Sie beim Aktivieren einer Zielgruppe für ein Ziel Datennutzungsrichtlinien durchsetzen können. Erfahren Sie, wie Sie Marketing-Aktionen zu Zielen hinzufügen, wie Sie eine Richtlinienverletzung während der Aktivierung analysieren und wie Sie die Datenherkunft verwenden können, um Richtlinienverletzungen zu verstehen und zu beheben.
 feature: Data Governance
 role: User, Developer, Data Architect, Admin
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 7%
 
 # Durchsetzen von Richtlinien zur Datennutzung
 
-Erfahren Sie, wie Sie beim Aktivieren einer Zielgruppe für ein Ziel Datennutzungsrichtlinien durchsetzen. Erfahren Sie, wie Sie Zielen Marketing-Aktionen hinzufügen, wie Sie einen Richtlinienverstoß während der Aktivierung analysieren und wie Sie die Datenherkunft verwenden, um Richtlinienverletzungen zu verstehen und zu beheben. Informationen zum API-basierten Ansatz finden Sie unter [Erzwingen von Datennutzungsrichtlinien mithilfe der Policy Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/api-enforcement.html).
+Erfahren Sie, wie Sie beim Aktivieren einer Zielgruppe für ein Ziel Datennutzungsrichtlinien durchsetzen können. Erfahren Sie, wie Sie Marketing-Aktionen zu Zielen hinzufügen, wie Sie eine Richtlinienverletzung während der Aktivierung analysieren und wie Sie die Datenherkunft verwenden können, um Richtlinienverletzungen zu verstehen und zu beheben. Informationen zum API-basierten Ansatz finden Sie unter [Erzwingen von Datennutzungsrichtlinien mit der Policy Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/api-enforcement.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/33631?learn=on)

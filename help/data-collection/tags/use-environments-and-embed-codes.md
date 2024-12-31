@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Tag-Umgebungen und Einbettungscodes
+title: Verwenden von Tag-Umgebungen und Einbettungs-Codes
 description: Möglichkeiten, wie Sie mit Entwicklungs-, Staging- und Produktions-Umgebungen sowie Einbettungs-Codes Ihre Tag-Eigenschaft entwickeln und validieren können.
 feature: Tags
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 34%
 
 ---
 
-# Verwenden von Tag-Umgebungen und Einbettungscodes
+# Verwenden von Tag-Umgebungen und Einbettungs-Codes
 
-Erfahren Sie, wie Sie mit Entwicklungs-, Staging- und Produktionsumgebungen und Einbettungscodes Ihre Tag-Eigenschaft entwickeln und validieren können. Weitere Informationen finden Sie in der Dokumentation zu [Umgebungen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=de) .
+Erfahren Sie, wie Sie mit Entwicklungs-, Staging- und Produktionsumgebungen und Einbettungs-Codes Ihre Tag-Eigenschaft entwickeln und validieren können. Weitere Informationen finden Sie in der Dokumentation [Umgebungen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on)

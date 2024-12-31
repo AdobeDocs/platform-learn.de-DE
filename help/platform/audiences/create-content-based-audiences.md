@@ -1,6 +1,6 @@
 ---
-title: Inhaltsbasierte Zielgruppen erstellen
-description: Erfahren Sie mehr über die Grundlagen zum Erstellen einer Inhaltsaffinitäts-Audience im Audience Rule Builder unter Experience Platform.
+title: Erstellen von inhaltsbasierten Zielgruppen
+description: Erfahren Sie mehr über die Grundlagen zum Erstellen einer Zielgruppe mit Inhaltsaffinität im Zielgruppenregel-Builder in Experience Platform.
 feature: Segments
 role: User
 level: Intermediate
@@ -14,13 +14,13 @@ ht-degree: 1%
 
 ---
 
-# Inhaltsbasierte Zielgruppen erstellen
+# Erstellen von inhaltsbasierten Zielgruppen
 
-Erfahren Sie mehr über die Grundlagen zum Erstellen einer Inhaltsaffinitäts-Audience im Audience Rule Builder unter Experience Platform. Weitere Informationen finden Sie in der [Dokumentation zum Segmentaufbau](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
+Erfahren Sie mehr über die Grundlagen zum Erstellen einer Zielgruppe mit Inhaltsaffinität im Zielgruppenregel-Builder in Experience Platform. Weitere Informationen finden Sie in der [Segment Builder-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmente]&quot;wurden in der Platform-Oberfläche in &quot;[!UICONTROL Zielgruppen]&quot;umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]** aus, um den Regel-Builder für dieses Video einzugeben.
+> &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333302/?learn=on)
 

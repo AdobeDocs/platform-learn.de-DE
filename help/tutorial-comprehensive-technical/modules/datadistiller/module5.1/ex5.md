@@ -1,6 +1,6 @@
 ---
-title: Query Service - Power BI/Tableau
-description: Query Service - Power BI/Tableau
+title: Abfrage-Service - Power BI/Tableau
+description: Abfrage-Service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
 exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# 5.1.5 Datensatz aus einer Abfrage generieren
+# 5.1.5 Generieren eines Datensatzes aus einer Abfrage
 
 ## Ziel
 
-Erfahren Sie, wie Sie Datensätze aus Abfrageergebnissen generieren.
-Microsoft Power BI Desktop/Tableau direkt mit Query Service verbinden
+Erfahren Sie, wie Sie Datensätze aus Abfrageergebnissen generieren
+Microsoft Power BI Desktop/Tableau direkt mit dem Abfrage-Service verbinden
 Erstellen eines Berichts in Microsoft Power BI Desktop/Tableau Desktop
 
 ## Kontext
 
-Eine Befehlszeilenschnittstelle zur Abfrage von Daten ist aufregend, aber nicht gut vorhanden. In dieser Lektion führen wir Sie durch einen empfohlenen Arbeitsablauf für die Verwendung von Microsoft Power BI Desktop/Tableau direkt im Query Service, um visuelle Berichte für Ihre Stakeholder zu erstellen.
+Eine Befehlszeilenschnittstelle zur Abfrage von Daten ist aufregend, bietet jedoch keine gute Präsentation. In dieser Lektion führen wir Sie durch einen empfohlenen Workflow, in dem beschrieben wird, wie Sie Microsoft Power BI Desktop/Tableau direkt über den Abfrage-Service verwenden können, um visuelle Berichte für Ihre Stakeholder zu erstellen.
 
-## Datensatz aus einer SQL-Abfrage erstellen
+## Erstellen eines Datensatzes aus einer SQL-Abfrage
 
-Die Komplexität Ihrer Abfrage wirkt sich darauf aus, wie lange es dauert, bis der Query Service Ergebnisse zurückgibt. Bei Abfragen direkt über die Befehlszeile oder andere Lösungen wie Microsoft Power BI/Tableau wird der Abfragedienst mit einem 5-minütigen Timeout (600 Sekunden) konfiguriert. In bestimmten Fällen werden diese Lösungen mit kürzeren Timeouts konfiguriert. Um größere Abfragen auszuführen und die Zeit, die zum Zurückgeben von Ergebnissen benötigt wird, vorab zu laden, bieten wir eine Funktion zum Generieren eines Datensatzes aus den Abfrageergebnissen an. Diese Funktion nutzt die SQL-Standardfunktion, die als Tabelle als Auswahl erstellen (CTAS) bezeichnet wird. Sie ist in der Platform-Benutzeroberfläche in der Abfrageliste verfügbar und kann auch direkt über die Befehlszeile mit PSQL ausgeführt werden.
+Die Komplexität Ihrer Abfrage wirkt sich darauf aus, wie lange es dauert, bis der Abfrage-Service Ergebnisse zurückgibt. Und wenn Sie direkt über die Befehlszeile oder andere Lösungen wie Microsoft Power BI/Tableau abfragen, wird der Abfrage-Service mit einer maximalen Wartezeit von 5 Minuten (600 Sekunden) konfiguriert. In bestimmten Fällen werden diese Lösungen mit kürzeren Zeitüberschreitungswerten konfiguriert. Um größere Abfragen auszuführen und die für die Ergebnisrückgabe benötigte Zeit vorab zu laden, bieten wir eine Funktion zum Generieren eines Datensatzes aus den Abfrageergebnissen. Diese Funktion nutzt die standardmäßige SQL-Funktion namens „Create Table As Select“ (CTAS). Sie ist in der Platform-Benutzeroberfläche über die Abfrageliste verfügbar und kann auch direkt über die Befehlszeile mit PSQL ausgeführt werden.
 
-Im vorherigen Schritt haben Sie **Ihren Namen** durch Ihren eigenen ldap ersetzt, bevor Sie ihn in PSQL ausführen.
+Im vorherigen Beispiel haben Sie &quot;**Name eingeben“ durch** eigenes LDAP ersetzt, bevor Sie es in PSQL ausführen.
 
 ```sql
 select /* enter your name */
@@ -53,13 +53,13 @@ and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identifica
 
 Navigieren Sie zur Adobe Experience Platform-Benutzeroberfläche - [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
-Sie suchen in der Adobe Experience Platform-Abfrage-Benutzeroberfläche nach Ihrer ausgeführten Anweisung, indem Sie Ihren ldap in das Suchfeld eingeben:
+Sie suchen Ihre ausgeführte Anweisung in der Adobe Experience Platform Query UI, indem Sie Ihr LDAP in das Suchfeld eingeben:
 
-Wählen Sie **Abfragen**, gehen Sie zu **Protokoll** und geben Sie Ihren ldap in das Suchfeld ein.
+Wählen Sie **Abfragen**, gehen Sie zu **Protokoll** und geben Sie Ihr LDAP in das Suchfeld ein.
 
 ![search-query-for-ctas.png](./images/searchqueryforctas.png)
 
-Wählen Sie Ihre Abfrage aus und klicken Sie auf **Als CTAS ausführen**.
+Wählen Sie Ihre Abfrage aus und klicken Sie **Als CTAS ausführen**.
 
 ![search-query-for-ctas.png](./images/searchqueryforctasa.png)
 
@@ -69,18 +69,18 @@ Geben Sie `--aepUserLdap-- Callcenter Interaction Analysis` als Namen und Beschr
 
 Daher wird eine neue Abfrage mit dem Status **Gesendet** angezeigt.
 
-![ctas-query-sent.png](./images/ctasquerysubmitted.png)
+![ctas-query-submitted.png](./images/ctasquerysubmitted.png)
 
-Nach Abschluss wird ein neuer Eintrag für **Datensatz erstellt** angezeigt (Sie müssen die Seite möglicherweise aktualisieren).
+Nach Abschluss wird ein neuer Eintrag für **Datensatz erstellt** angezeigt (möglicherweise müssen Sie die Seite aktualisieren).
 
 ![ctas-dataset-created.png](./images/ctasdatasetcreated.png)
 
-Sobald Ihr Datensatz erstellt wurde (was 5-10 Minuten dauern kann), können Sie die Übung fortsetzen.
+Sobald Ihr Datensatz erstellt wurde (was 5-10 Minuten dauern kann), können Sie mit der Übung fortfahren.
 
-Nächster Schritt - Option A: [5.1.6 Query Service und Power BI](./ex6.md)
+Nächster Schritt - Option A: [5.1.6 Query Service und Power BI ](./ex6.md)
 
-Nächster Schritt - Option B: [5.1.7 Query Service and Tableau](./ex7.md)
+Nächster Schritt - Option B: [5.1.7 Query Service und Tableau](./ex7.md)
 
 [Zurück zu Modul 5.1](./query-service.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

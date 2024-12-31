@@ -1,6 +1,6 @@
 ---
-title: Verbinden von Tableau mit Query Service
-description: Erfahren Sie, wie Sie von einer Vielzahl von Desktop-Clientanwendungen, die das PostgreSQL-Protokoll unterstützen, aus eine Verbindung mit Query Service herstellen und wie Sie PostgreSQL-Tools und -Treiber verwenden, um Abfragen zu verbinden und zu schreiben.
+title: Verbinden von Tableau mit dem Abfrage-Service
+description: Erfahren Sie, wie Sie eine Verbindung zum Abfrage-Service von einer Vielzahl von Desktop-Client-Anwendungen aus herstellen, die das PostgreSQL-Protokoll unterstützen, und wie Sie PostgreSQL-Tools und -Treiber verwenden können, um Abfragen zu verbinden und zu schreiben.
 feature: Queries
 role: Data Engineer, Developer
 level: Intermediate
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Verbinden von Tableau mit Query Service
+# Verbinden von Tableau mit dem Abfrage-Service
 
-Erfahren Sie, wie Sie von einer Vielzahl von Desktop-Clientanwendungen, die das PostgreSQL-Protokoll unterstützen, aus eine Verbindung mit Query Service herstellen und wie Sie PostgreSQL-Tools und -Treiber verwenden, um Abfragen zu verbinden und zu schreiben. Weitere Informationen finden Sie in der Dokumentation zu [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) .
+Erfahren Sie, wie Sie eine Verbindung zum Abfrage-Service von einer Vielzahl von Desktop-Client-Anwendungen aus herstellen, die das PostgreSQL-Protokoll unterstützen, und wie Sie PostgreSQL-Tools und -Treiber verwenden können, um Abfragen zu verbinden und zu schreiben. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333702?learn=on)

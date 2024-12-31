@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren einer Playbook-Sandbox
-description: Erfahren Sie, wie Sie eine Sandbox für Anwendungsfälle-Playbooks konfigurieren.
+title: Playbook-Sandbox konfigurieren
+description: Erfahren Sie, wie Sie eine Sandbox für Playbooks für Anwendungsfälle konfigurieren.
 feature: Playbooks
 role: Admin
 level: Beginner
@@ -16,14 +16,14 @@ ht-degree: 1%
 
 ---
 
-# Konfigurieren einer Playbook-Sandbox
+# Playbook-Sandbox konfigurieren
 
-Erfahren Sie, wie Sie eine Sandbox für Anwendungsfälle-Playbooks konfigurieren. Um mit &quot;Anwendungsfall-Playbooks&quot;zu beginnen, müssen Sie:
+Erfahren Sie, wie Sie eine Sandbox für Playbooks für Anwendungsfälle konfigurieren. Um mit Playbooks für Anwendungsfälle zu beginnen, müssen Sie:
 
-1. Erstellen einer Entwicklungs-Sandbox mit dem Suffix `-ucp` im Namen
-1. Berechtigungen und Benutzer zur Sandbox hinzufügen
-1. Konfigurieren von Kanaloberflächen für E-Mail, Push und SMS
+1. Erstellen Sie eine Entwicklungs-Sandbox mit `-ucp` als Suffix im Namen .
+1. Hinzufügen von Berechtigungen und Benutzern zur Sandbox
+1. Kanaloberflächen für E-Mail, Push und SMS konfigurieren
 
-Weitere Informationen finden Sie unter [Erste Schritte mit den Nutzungsszenarios-Playbooks](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=de).
+Weitere Informationen finden Sie unter [Erste Schritte mit Playbooks für Anwendungsfälle](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)

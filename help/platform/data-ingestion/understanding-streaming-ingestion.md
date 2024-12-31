@@ -1,6 +1,6 @@
 ---
-title: Streaming-Datenerfassung - Übersicht
-description: Mit der Streaming-Erfassung in Experience Platform können Sie sicherstellen, dass alle von Ihnen gesendeten Daten im Echtzeit-Kundenprofil verfügbar sind. Diese Daten können aus CRM- und ERP-Systemen oder aus anderen Quellen erfasst werden, die über HTTP oder eine öffentliche Cloud-Streaming-Infrastruktur kommunizieren können.
+title: Übersicht über die Streaming-Datenaufnahme
+description: Mit der Streaming-Aufnahme von Experience Platform können Sie sicher sein, dass alle von Ihnen gesendeten Daten im Echtzeit-Kundenprofil verfügbar sind. Diese Daten können von CRM- und ERP-Systemen oder von jeder anderen Quelle erfasst werden, die über HTTP oder eine öffentliche Cloud-Streaming-Infrastruktur kommunizieren kann.
 feature: Data Ingestion
 role: Data Architect, Data Engineer, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Streaming-Datenerfassung - Übersicht
+# Übersicht über die Streaming-Datenaufnahme
 
-Mit der Streaming-Erfassung in Experience Platform können Sie sicherstellen, dass alle von Ihnen gesendeten Daten im Echtzeit-Kundenprofil verfügbar sind. Diese Daten können aus CRM- und ERP-Systemen oder aus anderen Quellen erfasst werden, die über HTTP oder eine öffentliche Cloud-Streaming-Infrastruktur kommunizieren können. Anschließend können Sie diese Daten für die Echtzeit-Segmentierung und zur Aktivierung anderer Marketing-Prozesse verwenden. Weitere Informationen finden Sie in der Dokumentation zur Streaming-Aufnahme ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/streaming/overview) .[
+Mit der Streaming-Aufnahme von Experience Platform können Sie sicher sein, dass alle von Ihnen gesendeten Daten im Echtzeit-Kundenprofil verfügbar sind. Diese Daten können aus CRM- und ERP-Systemen oder aus jeder anderen Quelle erfasst werden, die über HTTP oder eine öffentliche Cloud-Streaming-Infrastruktur kommunizieren kann. Sie können diese Daten dann für die Echtzeit-Segmentierung und zur Aktivierung anderer Marketing-Prozesse verwenden. Weitere Informationen finden Sie in der Dokumentation zur [-Aufnahme](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/streaming/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)

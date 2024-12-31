@@ -13,7 +13,7 @@ ht-degree: 23%
 
 # Adobe Experience Platform-Tutorials
 
-Adobe Experience Platform ist eines der leistungsfähigsten, flexibelsten und offensten auf dem Markt verfügbaren Systeme für die Einrichtung und Verwaltung umfassender Lösungen zur Umsetzung starker Kundenerlebnisse. Experience Platform ermöglicht Unternehmen die Zentralisierung und Standardisierung von Kundendaten und -inhalten aus beliebigen Systemen sowie die Anwendung von Datenwissenschaft und maschinellem Lernen, um die Gestaltung und Bereitstellung umfassender, personalisierter Erlebnisse erheblich zu verbessern. In diesen Videos und Tutorials erfahren Sie mehr über die vielen Komponenten von Experience Platform.
+Adobe Experience Platform ist eines der leistungsfähigsten, flexibelsten und offensten auf dem Markt verfügbaren Systeme für die Einrichtung und Verwaltung umfassender Lösungen zur Umsetzung starker Kundenerlebnisse. Experience Platform ermöglicht es Unternehmen, Kundendaten und Inhalte aus beliebigen Systemen zu zentralisieren und zu standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung umfassender, personalisierter Erlebnisse erheblich zu verbessern. Benutzen Sie diese Videos und Tutorials, um die vielen Komponenten des Experience Platform kennenzulernen.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -30,20 +30,20 @@ Adobe Experience Platform ist eines der leistungsfähigsten, flexibelsten und of
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-      <img alt="Ein Kundenerlebnis auf Basis eines Experience Platform-Videos" src="assets/thumb_A-Customer-Experience.jpg" />
+      <img alt="Ein auf Experience Platform basierendes Kundenerlebnis" src="assets/thumb_A-Customer-Experience.jpg" />
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-    <strong>Ein Kundenerlebnis auf Basis von Experience Platform</strong>
+    <strong>Ein auf Experience Platform basierendes Kundenerlebnis</strong>
     </a>
     </div>
     <p>
-    <em>Erfahren Sie, wie Platform zur Unterstützung eines Kundenerlebnisses verwendet werden kann</em>
+    <em>Erfahren Sie, wie Platform zur Bereitstellung eines Kundenerlebnisses verwendet werden kann</em>
     <p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de">
-      <img alt="Miniaturbild für das Tutorial &quot;Erste Schritte für Datenarchitekten und Dateningenieure&quot;" src="assets/thumb_Getting_started.jpg" />
+      <img alt="Miniaturbild für das Tutorial „Erste Schritte für Datenarchitekten und Dateningenieure“" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de">
@@ -51,20 +51,20 @@ Adobe Experience Platform ist eines der leistungsfähigsten, flexibelsten und of
     </a>
     </div>
     <p>
-    <em> Hands-On-Übungen für die ersten Schritte</em>
+    <em>Praktische Übungen für den Einstieg</em>
     <p>
   </td>
   <td>
     <a href="sources/overview.md">
-      <img alt="Miniaturbild für das Video &quot;Grundlegendes zu Quell-Connectoren&quot;" src="assets/thumb_Sources.png" />
+      <img alt="Miniaturbild für das Video &apos;Verstehen von Quell-Connectoren&apos;" src="assets/thumb_Sources.png" />
     </a>
     <div>
       <a href="sources/overview.md">
-    <strong>Grundlegendes zu Quell-Connectoren</strong>
+    <strong>Grundlagen zu Quell-Connectoren</strong>
     </a>
     </div>
     <p>
-    <em> Einfache Erfassung Ihrer Daten</em>
+    <em>Nehmen Sie Ihre Daten einfach auf</em>
     <p>
   </td>
    <!--

@@ -1,6 +1,6 @@
 ---
-title: Geschäftlicher Nutzen von Customer AI
-description: In diesem Video wird gezeigt, wie Customer AI Kundenprofile mit KI-basierten Eigenschaften anreichert und die Kundensegmentierung und Zielgruppenbestimmung stärkt.
+title: Geschäftswert von Kunden-KI
+description: In diesem Video wird gezeigt, wie Kunden-KI Kundenprofile mit KI-basierten Tendenzen anreichert sowie die Segmentierung und Zielgruppenbestimmung von Kunden unterstützt.
 solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 ---
 
-# Geschäftlicher Nutzen von Customer AI
+# Geschäftswert von Kunden-KI
 
-In diesem Video wird gezeigt, wie Customer AI Kundenprofile mit KI-basierten Eigenschaften anreichert und die Kundensegmentierung und Zielgruppenbestimmung stärkt. Weitere Informationen finden Sie in der Dokumentation zu [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de) .
+In diesem Video wird gezeigt, wie Kunden-KI Kundenprofile mit KI-basierten Tendenzen anreichert sowie die Segmentierung und Zielgruppenbestimmung von Kunden unterstützt. Weitere Informationen finden Sie in der [Dokumentation zu Kunden-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on)
 

@@ -11,39 +11,39 @@ ht-degree: 0%
 
 ---
 
-# Website verwenden
+# Verwenden der Website
 
-## Option 1: Fortsetzung der vorherigen Übung
+## Option 1: Mit der vorherigen Übung fortfahren
 
 >[!NOTE]
 >
->Wenn Sie den unten angezeigten Bildschirm nicht mehr geöffnet haben, gehen Sie stattdessen zu Option 2 .
+>Wenn Sie den folgenden Bildschirm nicht mehr geöffnet haben, gehen Sie stattdessen zu Option 2.
 
-Nach der vorherigen Übung hatten Sie dieses Ergebnis. Klicken Sie auf , um das für Sie erstellte **Web Telco-Projekt** zu öffnen.
+Nach der vorherigen Übung hatten Sie dieses Ergebnis. Klicken Sie hier, um das **Web Telco-Projekt** zu öffnen, das für Sie erstellt wurde.
 
 ![DSN](./images/dsn5a.png)
 
-Dann wirst du das sehen. Klicken Sie auf **Integrationen**.
+Sie werden es dann sehen. Klicken Sie auf **Integrationen**.
 
 ![DSN](./images/web1.png)
 
-Wählen Sie auf der Seite **Integrationen** die Eigenschaft &quot;Datenerfassung&quot;aus, die in der vorherigen Übung erstellt wurde. Klicken Sie dazu auf **Umgebung auswählen**.
+Auf der **Integrationen** müssen Sie die Datenerfassungseigenschaft auswählen, die in der vorherigen Übung erstellt wurde. Klicken Sie dazu auf **Umgebung auswählen**.
 
 ![DSN](./images/web2.png)
 
-Klicken Sie auf **Auswählen** in der Eigenschaft &quot;Datenerfassung&quot;, die im vorherigen Schritt erstellt wurde und den Namen `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)` trägt.
+Klicken Sie **der Datenerfassungseigenschaft** die im vorherigen Schritt erstellt wurde und `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)` heißt, auf „Auswählen“.
 
 ![DSN](./images/web2a.png)
 
-Dann wirst du das sehen. Klicken Sie auf **Ausführen** , um die Demowebsite zu öffnen.
+Sie werden es dann sehen. Klicken Sie **Ausführen**, um die Demo-Website zu öffnen.
 
 ![DSN](./images/web2b.png)
 
-Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
+Anschließend wird Ihre Demo-Website geöffnet. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
 
 ![DSN](./images/web3.png)
 
-Öffnen Sie ein neues Inkognito-Browserfenster.
+Öffnen Sie ein neues Inkognito-Browser-Fenster.
 
 ![DSN](./images/web4.png)
 
@@ -55,37 +55,37 @@ Wählen Sie Ihren Kontotyp aus und schließen Sie den Anmeldevorgang ab.
 
 ![DSN](./images/web6.png)
 
-Sie sehen dann Ihre Website in einem Inkognito-Browser-Fenster geladen. Für jede Demonstration müssen Sie ein neues Inkognito-Browser-Fenster verwenden, um Ihre Demo-Website-URL zu laden.
+Ihre Website wird dann in einem Inkognito-Browser-Fenster geladen. Für jede Demonstration müssen Sie ein neues Inkognito-Browser-Fenster verwenden, um Ihre Demo-Website-URL zu laden.
 
 ![DSN](./images/web7.png)
 
 ## Option 2: Mit einem neuen Inkognito-Browser-Fenster beginnen
 
-Falls Sie Ihr Browser-Fenster versehentlich geschlossen haben oder für zukünftige Sitzungen, können Sie auch auf Ihr Website-Projekt zugreifen, indem Sie [https://dsn.adobe.com/](https://dsn.adobe.com/) aufrufen. Nach der Anmeldung bei Ihrer Adobe ID sehen Sie dies. Klicken Sie auf die drei Punkte **..** im Website-Projekt und klicken Sie dann auf **Bearbeiten**.
+Falls Sie Ihr Browser-Fenster versehentlich geschlossen haben oder auf zukünftige Sitzungen zugreifen möchten, können Sie unter [https://dsn.adobe.com/](https://dsn.adobe.com/) auf Ihr Website-Projekt zugreifen. Nachdem Sie sich mit Ihrer Adobe ID angemeldet haben, sehen Sie Folgendes. Klicken Sie auf die 3 Punkte **…** in Ihrem Website-Projekt und dann auf **Bearbeiten**.
 
 ![DSN](./images/web8.png)
 
-Sie können nun den unten stehenden Fluss zum Zugriff auf die Website ausführen. Klicken Sie auf **Integrationen**.
+Sie können jetzt dem folgenden Fluss folgen, um auf die Website zuzugreifen. Klicken Sie auf **Integrationen**.
 
 ![DSN](./images/web1.png)
 
-Wählen Sie auf der Seite **Integrationen** die Eigenschaft &quot;Datenerfassung&quot;aus, die in der vorherigen Übung erstellt wurde. Klicken Sie dazu auf **Umgebung auswählen**.
+Auf der **Integrationen** müssen Sie die Datenerfassungseigenschaft auswählen, die in der vorherigen Übung erstellt wurde. Klicken Sie dazu auf **Umgebung auswählen**.
 
 ![DSN](./images/web2.png)
 
-Klicken Sie auf **Auswählen** in der Eigenschaft &quot;Datenerfassung&quot;, die im vorherigen Schritt erstellt wurde und den Namen `--aepUserLdap - Demo System (DD/MM/YYYY) (web)` trägt.
+Klicken Sie **der Datenerfassungseigenschaft** die im vorherigen Schritt erstellt wurde und `--aepUserLdap - Demo System (DD/MM/YYYY) (web)` heißt, auf „Auswählen“.
 
 ![DSN](./images/web2a.png)
 
-Dann wirst du das sehen. Klicken Sie auf **Ausführen** , um die Demowebsite zu öffnen.
+Sie werden es dann sehen. Klicken Sie **Ausführen**, um die Demo-Website zu öffnen.
 
 ![DSN](./images/web2b.png)
 
-Sie werden dann Ihre Demowebsite öffnen sehen. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
+Anschließend wird Ihre Demo-Website geöffnet. Wählen Sie die URL aus und kopieren Sie sie in die Zwischenablage.
 
 ![DSN](./images/web3.png)
 
-Öffnen Sie ein neues Inkognito-Browserfenster.
+Öffnen Sie ein neues Inkognito-Browser-Fenster.
 
 ![DSN](./images/web4.png)
 
@@ -97,12 +97,12 @@ Wählen Sie Ihren Kontotyp aus und schließen Sie den Anmeldevorgang ab.
 
 ![DSN](./images/web6.png)
 
-Sie sehen dann Ihre Website in einem Inkognito-Browser-Fenster geladen. Für jede Demonstration müssen Sie ein neues Inkognito-Browser-Fenster verwenden, um Ihre Demo-Website-URL zu laden.
+Ihre Website wird dann in einem Inkognito-Browser-Fenster geladen. Für jede Demonstration müssen Sie ein neues Inkognito-Browser-Fenster verwenden, um Ihre Demo-Website-URL zu laden.
 
 ![DSN](./images/web7.png)
 
-Nächster Schritt: [Verwenden der mobilen App](./ex5.md)
+Nächster Schritt: [Verwenden Sie die Mobile App](./ex5.md)
 
 [Zurück zu den ersten Schritten](./getting-started.md)
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)

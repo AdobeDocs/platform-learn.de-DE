@@ -1,6 +1,6 @@
 ---
 title: Übersicht über Vereinigungsschemata
-description: Das Echtzeit-Kundenprofil ermöglicht eine skalierte kanalübergreifende Personalisierung in jeder Phase der Journey. Batch- oder Streaming-Daten können für das Echtzeit-Kundenprofil aktiviert werden, indem sowohl das Schema als auch der entsprechende Datensatz aktiviert werden.
+description: Das Echtzeit-Kundenprofil ermöglicht eine kanalübergreifende Personalisierung in jedem Schritt des Kunden-Journey. Batch- oder Streaming-Daten können für das Echtzeit-Kundenprofil aktiviert werden, indem sowohl das Schema als auch der entsprechende Datensatz aktiviert werden.
 feature: Profiles
 role: Data Engineer, Data Architect, Developer, User
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Übersicht über Vereinigungsschemata
 
-In diesem Video erhalten Sie einen Überblick über Vereinigungsschemas, die vom Echtzeit-Kundenprofil von Adobe Experience Platform verwendet werden. Mit Vereinigungsschemas können Sie eine Zusammenführung aller Felder sehen, die in Schemas enthalten sind, die dieselbe Klasse teilen. Das Echtzeit-Kundenprofil verwendet die Vereinigungsschemas, um eine ganzheitliche Sicht auf jeden einzelnen Kunden zu erstellen. Weitere Informationen finden Sie in der Dokumentation zum [Vereinigungsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html).
+In diesem Video erhalten Sie einen Überblick über die Vereinigungsschemata, die vom Echtzeit-Kundenprofil von Adobe Experience Platform verwendet werden. Vereinigungsschemata ermöglichen es, alle Felder in Schemata derselben Klasse zu vereinen. Das Echtzeit-Kundenprofil verwendet die Vereinigungsschemata , um eine ganzheitliche Ansicht jedes einzelnen Kunden zu erstellen. Weitere Informationen finden Sie in der [Dokumentation zum Vereinigungsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on)

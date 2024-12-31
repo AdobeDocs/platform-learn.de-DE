@@ -1,6 +1,6 @@
 ---
-title: Customer AI - Scoring-Dashboard und Segmentierung (Vorhersage und Aktion)
-description: Customer AI - Scoring-Dashboard und Segmentierung (Vorhersage und Aktion)
+title: Kunden-KI - Scoring-Dashboard und Segmentierung (Prognose und Maßnahmen ergreifen)
+description: Kunden-KI - Scoring-Dashboard und Segmentierung (Prognose und Maßnahmen ergreifen)
 kt: 5342
 doc-type: tutorial
 exl-id: 4dd8489a-65e4-489a-9228-3c642b10e761
@@ -11,23 +11,23 @@ ht-degree: 2%
 
 ---
 
-# 2.2.3 Customer AI - Scoring-Dashboard und Segmentierung (Vorhersagen und Handeln)
+# 2.2.3 Kunden-KI - Scoring-Dashboard und Segmentierung (Prognose und Maßnahmen ergreifen)
 
-Sobald Ihre Customer AI-Instanz einen Modelllauf abgeschlossen hat, können Sie den Tendenzwert visualisieren, der ausgewertet wird, um einen Kunden vorherzusagen, der in den nächsten 30 Tagen einen Kauf tätigt.
+Sobald Ihre Customer AI-Instanz einen Modelldurchgang abgeschlossen hat, können Sie den Tendenzwert visualisieren, der ausgewertet wird, um vorherzusagen, dass eine Kundin oder ein Kunde in den nächsten 30 Tagen einen Kauf tätigt.
 
-![KI](./images/caiinstancesummary1.png)
+![AI](./images/caiinstancesummary1.png)
 
 >[!NOTE]
 >
->Nur eine Customer AI-Instanz mit dem Status **Erfolg** ermöglicht die Vorschau der Einblicke des Dienstes.
+>Nur eine Customer AI-Instanz mit dem Status **Erfolg** ermöglicht eine Vorschau der Einblicke des Service.
 
-## Propensity Predication
+## Tendenzvorhersage
 
-Sehen wir uns nun die prognostizierte Tendenz an, die vom Customer AI-Instanzmodell generiert wurde. Klicken Sie auf den Instanznamen, um das Dashboard anzuzeigen.
+Sehen wir uns nun die prognostizierte Neigung an, die vom Kunden-KI-Instanzmodell generiert wird. Klicken Sie auf den Instanznamen, um das Dashboard anzuzeigen.
 
-![KI](./images/caimodels1.png)
+![AI](./images/caimodels1.png)
 
-Das Dashboard Customer AI zeigt die Zusammenfassung zu Bewertung, Verteilung der Population und den Einflussfaktoren für das Modell an.
+Das Dashboard der Kundinnen- und Kunden-KI zeigt die Zusammenfassung der Bewertung, die Verteilung der Population und die Einflussfaktoren für das Modell an, das ausgewertet werden soll.
 
 ![KI-Beschreibung](./images/caidescription.png)
 
@@ -35,32 +35,32 @@ Bewegen Sie den Mauszeiger über die Einflussfaktoren, um die weitere Aufschlüs
 
 ![Einflussfaktoren](./images/caiinfluencefactors.png)
 
-## Geschäftsaktionen
+## Geschäftliche Aktionen
 
-### Segmentieren von Kunden
+### Kunden segmentieren
 
-Das Dashboard Customer AI ermöglicht die Definition von Segmenten mit einem Klick. Klicken Sie auf die Schaltfläche **Segment erstellen** auf den Tendenzkarten.
+Im Dashboard der Kundinnen- und Kunden-KI können Sie Segmente mit einem Klick definieren. Klicken Sie auf den **Segment erstellen** auf den Neigungs -Karten.
 
 ![Erstellen eines Segments](./images/caiinfluencefactors1.png)
 
-Sie werden sehen, dass eine Segmentdefinition automatisch erstellt wird.
+Sie werden sehen, dass automatisch eine Segmentdefinition erstellt wird.
 
 ![Segmentregel](./images/caicreatesegment.png)
 
-Geben Sie Ihrem Segment einen Namen gemäß dieser Benennungsregel: `--aepUserLdap-- - Customer AI High Propensity`. Klicken Sie auf **Veröffentlichen**.
+Benennen Sie Ihr Segment entsprechend dieser Namenskonvention: `--aepUserLdap-- - Customer AI High Propensity`. Klicken Sie auf **Veröffentlichen**.
 
 ![Segmentregel](./images/caicreatesegment1.png)
 
-Sie können dieses Segment jetzt für das Targeting mit z. B. Echtzeit-Kundendatenplattform, Journey Optimizer und Adobe Target verwenden.
+Sie können dieses Segment jetzt für das Targeting verwenden, indem Sie beispielsweise Real-Time CDP, Journey Optimizer und Adobe Target verwenden.
 
 ## Bereinigen
 
-Um sicherzustellen, dass keine unnötigen Demodaten in Ihrer Umgebung aufbewahrt werden, löschen Sie den Datensatz `--aepUserLdap-- - Demo System - Customer Experience Event Dataset`, sobald Sie diese Übung erfolgreich abgeschlossen haben. Wenn Sie die Demodaten nicht löschen, wirkt sich dies auf Ihre AEP-Instanz aus.
+Um sicherzustellen, dass keine unnötigen Demodaten in Ihrer Umgebung aufbewahrt werden, stellen Sie sicher, dass Sie den Datensatz `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` löschen, nachdem Sie diese Übung erfolgreich abgeschlossen haben. Wenn Sie die Demodaten nicht löschen, hat dies Auswirkungen auf die Kosten für Ihre AEP-Instanz.
 
 ![Profil](./images/cleanup.png)
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 
-[Zurück zu Modul 2.2](./intelligent-services.md)
+[Zurück zum Modul 2.2](./intelligent-services.md)
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)

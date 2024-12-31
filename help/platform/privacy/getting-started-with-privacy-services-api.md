@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit der Privacy Service-API
-description: Erfahren Sie, wie Sie die Privacy Service-API einrichten und authentifizieren.
+description: Erfahren Sie, wie Sie die Privacy Service-API einrichten und sich bei ihr authentifizieren.
 feature: Privacy
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 2%
 
 # Erste Schritte mit der Privacy Service-API
 
-Erfahren Sie, wie Sie die Privacy Service-API einrichten und authentifizieren. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) .
+Erfahren Sie, wie Sie die Privacy Service-API einrichten und sich bei ihr authentifizieren. Weitere Informationen finden Sie in der Dokumentation zu [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336075?learn=on)

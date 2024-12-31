@@ -1,6 +1,6 @@
 ---
 title: Demo zur Streaming-Segmentierung
-description: Erfahren Sie, wie die Streaming-Segmentierungsfunktion in Adobe Experience Platform es Marken ermöglicht, Kundenerlebnisse basierend auf Echtzeitdaten zu personalisieren. Sehen Sie sich ein Beispiel für ein Kundenerlebnis an und erhalten Sie einen kurzen Überblick über die Benutzeroberfläche.
+description: Erfahren Sie, wie Marken mit der Streaming-Segmentierungsfunktion in Adobe Experience Platform Kundenerlebnisse auf der Grundlage von Echtzeitdaten personalisieren können. Sehen Sie sich ein Beispiel-Kundenerlebnis an und erhalten Sie einen schnellen Überblick über die Benutzeroberfläche.
 feature: Segments
 role: User
 level: Beginner
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 # Demo zur Streaming-Segmentierung
 
-Erfahren Sie, wie die Streaming-Segmentierungsfunktion in Adobe Experience Platform es Marken ermöglicht, Kundenerlebnisse basierend auf Echtzeitdaten zu personalisieren. Sehen Sie sich ein Beispiel für ein Kundenerlebnis an und erhalten Sie einen kurzen Überblick über die Benutzeroberfläche. Weitere Informationen finden Sie in der [Dokumentation zum Segmentaufbau](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
+Erfahren Sie, wie Marken mit der Streaming-Segmentierungsfunktion in Adobe Experience Platform Kundenerlebnisse auf der Grundlage von Echtzeitdaten personalisieren können. Sehen Sie sich ein Beispiel-Kundenerlebnis an und erhalten Sie einen schnellen Überblick über die Benutzeroberfläche. Weitere Informationen finden Sie in der [Segment Builder-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmente]&quot;wurden in der Platform-Oberfläche in &quot;[!UICONTROL Zielgruppen]&quot;umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]** aus, um den Regel-Builder für dieses Video einzugeben.
+> &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36184?learn=on)
 

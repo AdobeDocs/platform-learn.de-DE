@@ -1,5 +1,5 @@
 ---
-title: Übersicht über Schemas und Experience-Datenmodell (XDM)
+title: Übersicht über Schemata und das Experience-Datenmodell (XDM)
 description: Erfahren Sie mehr über das Experience-Datenmodell (XDM), das Standarddatenmodell zur Beschreibung von Kundenerlebnissen.
 feature: Schemas
 role: Data Architect, Data Engineer, Developer, User
@@ -14,8 +14,8 @@ ht-degree: 16%
 
 ---
 
-# Übersicht über Schemas und Experience-Datenmodell (XDM)
+# Übersicht über Schemata und das Experience-Datenmodell (XDM)
 
-Das Experience-Datenmodell (XDM) ist das Standarddatenmodell zur Beschreibung von Kundenerlebnissen. Wenn Sie XDM verwenden, um Schemas zu erstellen und Daten zu erfassen, die diesen Schemas entsprechen, können Sie mit der Verwendung des XDM-Systems beginnen. XDM System ist die Infrastruktur, die Echtzeit-Kundenprofile, maschinelles Lernen und Customer Journey Analytics in Adobe Experience Platform unterstützt. Weitere Informationen finden Sie in der Dokumentation zu [Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) .
+Das Experience-Datenmodell (XDM) ist das Standarddatenmodell zur Beschreibung von Kundenerlebnissen. Wenn Sie XDM verwenden, um Schemata zu erstellen und Daten aufzunehmen, die diesen Schemata entsprechen, können Sie mit der Verwendung des XDM-Systems beginnen. Das XDM-System ist die Infrastruktur, die Echtzeit-Kundenprofile, maschinelles Lernen und Customer Journey Analytics in Adobe Experience Platform unterstützt. Weitere Informationen finden Sie in der [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)

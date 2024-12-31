@@ -1,6 +1,6 @@
 ---
-title: Schema-Bausteine
-description: In diesem Video werden die wichtigsten Bausteinelemente von Experience-Datenmodell (XDM)-Schemas, einschließlich Feldern, Datentypen, Schemafeldgruppen, Klassen und Verhalten, beschrieben.
+title: Bausteine von Schemas
+description: In diesem Video werden die wichtigsten Bausteinelemente von XDM-Schemata (Experience-Datenmodell) behandelt, einschließlich Feldern, Datentypen, Schemafeldgruppen, Klassen und Verhalten.
 feature: Schemas
 role: Data Architect, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 1%
 
 ---
 
-# Schema-Bausteine
+# Bausteine von Schemas
 
-In diesem Video werden die wichtigsten Bausteinelemente von Experience-Datenmodell (XDM)-Schemas, einschließlich Feldern, Datentypen, Schemafeldgruppen, Klassen und Verhalten, beschrieben. Weitere Informationen finden Sie in der Dokumentation zu [Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) .
+In diesem Video werden die wichtigsten Bausteinelemente von XDM-Schemata (Experience-Datenmodell) behandelt, einschließlich Feldern, Datentypen, Schemafeldgruppen, Klassen und Verhalten. Weitere Informationen finden Sie in der [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333469?learn=on)

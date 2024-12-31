@@ -1,6 +1,6 @@
 ---
-title: Überblick über Real-time Customer Data Platform, B2B Edition
-description: Erfahren Sie, wie B2B-Marketer (Business-to-Business) Benutzer und Kontoprofile systemübergreifend vereinen und ein umfassendes Verständnis ihrer Kunden gewinnen können.
+title: Überblick über Real-time Customer Data Platform, B2B edition
+description: Erfahren Sie, wie B2B-Marketing-Experten Personen und Account-Profile systemübergreifend vereinheitlichen und ein umfassendes Verständnis ihrer Kundinnen und Kunden erhalten können.
 solution: Real-Time Customer Data Platform
 role: Leader, User, Developer, Admin, Data Architect, Data Engineer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Überblick über Real-time Customer Data Platform (CDP), B2B Edition
+# Überblick über Real-time Customer Data Platform (CDP), B2B edition
 
-Erfahren Sie, wie B2B-Marketer (Business-to-Business) Benutzer und Kontoprofile systemübergreifend vereinen und ein umfassendes Verständnis ihrer Kunden gewinnen können. Weitere Informationen finden Sie in der Dokumentation zu [Real-Time CDP B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).
+Erfahren Sie, wie B2B-Marketing-Experten Personen und Account-Profile systemübergreifend vereinheitlichen und ein umfassendes Verständnis ihrer Kundinnen und Kunden erhalten können. Weitere Informationen finden Sie in der Dokumentation zu [Real-Time CDP B2B edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338249?learn=on)

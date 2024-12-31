@@ -1,6 +1,6 @@
 ---
-title: Schemata aktualisieren
-description: Grundlegendes, was Sie bei der Aktualisierung vorhandener Schemas in Adobe Experience Platform beachten sollten.
+title: Aktualisieren von Schemata
+description: Grundlegende Aspekte, die Sie beim Aktualisieren vorhandener Schemata in Adobe Experience Platform beachten müssen.
 feature: Schemas
 role: Data Architect, Developer
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 2%
 
 ---
 
-# Schemata aktualisieren
+# Aktualisieren von Schemata
 
-In diesem Video werden einige der grundlegenden Dinge beschrieben, die Sie beim Aktualisieren vorhandener Schemas in Adobe Experience Platform beachten müssen. Weitere Informationen finden Sie in der Dokumentation zu [Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) .
+In diesem Video werden einige grundlegende Dinge behandelt, die bei der Aktualisierung vorhandener Schemata in Adobe Experience Platform zu beachten sind. Weitere Informationen finden Sie in der [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333612?learn=on)

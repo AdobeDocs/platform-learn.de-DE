@@ -17,7 +17,7 @@ ht-degree: 40%
 
 # Einführung in Intelligent Services
 
-Eine allgemeine Einführung in Intelligent Services, die es Marketing-Analysten und Praktikern ermöglicht, die Leistungsfähigkeit von künstlicher Intelligenz und maschinellem Lernen in Anwendungsfällen mit Kundenerlebnissen ohne datenwissenschaftliche Expertise zu nutzen. Weitere Informationen finden Sie in der Dokumentation zu [Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=de) .
+Eine allgemeine Einführung in Intelligent Services, mit der Marketing-Analysten und -Praktiker die Leistungsfähigkeit von künstlicher Intelligenz und maschinellem Lernen in Anwendungsfällen mit Kundenerlebnissen nutzen können, ohne datenwissenschaftliche Kenntnisse zu besitzen. Weitere Informationen finden Sie in der [Intelligent Services-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on)
 

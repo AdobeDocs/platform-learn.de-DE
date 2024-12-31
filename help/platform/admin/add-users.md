@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von Benutzern und Verwalten von Berechtigungen in Adobe Experience Platform-basierten Anwendungen
-description: Erfahren Sie, wie Sie in Adobe Experience Platform-basierten Anwendungen Benutzer hinzufügen und Berechtigungen verwalten können.
+description: Erfahren Sie, wie Sie in Adobe Experience Platform-basierten Anwendungen Benutzer hinzufügen und Berechtigungen verwalten.
 feature: Access Control
 role: Admin, User
 level: Beginner
@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # Hinzufügen von Benutzern und Verwalten von Berechtigungen
 
-Erfahren Sie, wie Sie Benutzer hinzufügen und Berechtigungen in Adobe Experience Platform-basierten Anwendungen wie Real-time Customer Data Platform und Journey Optimizer verwalten können. Benutzer werden zuerst in Admin Console hinzugefügt und erhalten dann Berechtigungen in der Benutzeroberfläche von Platform oder Journey Optimizer. Weitere Informationen finden Sie in der Dokumentation zur Zugriffskontrolle [1}.](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de)
+Erfahren Sie, wie Sie in Adobe Experience Platform-basierten Programmen wie Real-time Customer Data Platform und Journey Optimizer Benutzer hinzufügen und Berechtigungen verwalten. Benutzende werden zunächst in Admin Console hinzugefügt und erhalten dann Berechtigungen in der Platform- oder Journey Optimizer-Benutzeroberfläche. Weitere Informationen finden Sie in der [Dokumentation zur Zugriffssteuerung](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on)

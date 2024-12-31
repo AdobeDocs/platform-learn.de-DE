@@ -1,6 +1,6 @@
 ---
 title: Explorative Datenanalyse in Data Science Workspace
-description: Das Tutorial zur Analyse von Explorationsdaten (EDA) soll Ihnen dabei helfen, Muster in Daten zu ermitteln, die Datensicherheit zu überprüfen und die relevanten Daten für Vorhersagemodelle zusammenzufassen.
+description: Das Tutorial zur explorativen Datenanalyse (EDA) hilft Ihnen beim Erkennen von Datenmustern, Überprüfen der Datenplausibilität und Zusammenfassen der relevanten Daten für Prognosemodelle.
 feature: Data Science Workspace
 role: User
 level: Beginner
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Explorative Datenanalyse in Data Science Workspace
 
-Das Tutorial zur explatory Data Analysis (EDA) soll Ihnen dabei helfen, Muster in Daten zu verstehen, die Datensicherheit zu überprüfen und die relevanten Daten für Vorhersagemodelle zusammenzufassen. Weitere Informationen finden Sie in der Dokumentation zur [Exploratory Data Analysis](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/eda-notebook.html?lang=en) .
+Das Tutorial zur explorativen Datenanalyse (EDA) hilft Ihnen beim Verstehen von Datenmustern, Überprüfen der Datenplausibilität und Zusammenfassen der relevanten Daten für Prognosemodelle. Weitere Informationen finden Sie in der [Dokumentation zur explorativen Datenanalyse](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/eda-notebook.html?lang=en).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333310)
 

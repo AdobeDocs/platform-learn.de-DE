@@ -1,6 +1,6 @@
 ---
-title: Was ist die nächste Hit-Personalisierung mit Real-Time CDP und Adobe Target?
-description: Erfahren Sie, wie Sie beim nächsten Treffer mit Real-time Customer Data Platform (CDP) und Adobe Target personalisieren können.
+title: Was ist die Personalisierung für den nächsten Treffer mit Real-Time CDP und Adobe Target?
+description: Erfahren Sie, wie Sie mit Real-time Customer Data Platform (CDP) und Adobe Target beim nächsten Treffer personalisieren können.
 solution: Real-Time Customer Data Platform,Target
 feature-set: Experience Platform,Target
 feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experience Targeting
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 ---
 
-# Nächste Hit-Personalisierung mit Real-Time CDP und Adobe Target
+# Next-Hit-Personalisierung mit Real-Time CDP und Adobe Target
 
-Erfahren Sie, wie Sie beim nächsten Treffer mit Real-time Customer Data Platform und Adobe Target personalisieren können. Mit dem Adobe Target-Ziel in Real-Time CDP können Sie Experience Platform-Segmente in Adobe Target für die Personalisierung derselben Seite und der nächsten Seite mit Governance- und Datenschutzunterstützung verwenden. Weitere Informationen finden Sie in der Dokumentation [Personalisierungsziele für die Personalisierung derselben Seite und der nächsten Seite konfigurieren](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html) .
+Erfahren Sie, wie Sie mit Real-time Customer Data Platform und Adobe Target den nächsten Treffer personalisieren können. Mit dem Adobe Target-Ziel in Real-Time CDP können Sie Experience Platform-Segmente in Adobe Target für die Personalisierung derselben Seite und der nächsten Seite mit Governance- und Datenschutzunterstützung verwenden. Weitere Informationen finden Sie unter [Konfigurieren von Personalisierungszielen für die Personalisierungsdokumentation der gleichen Seite und der nächsten Seite](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/340091?learn=on)
 

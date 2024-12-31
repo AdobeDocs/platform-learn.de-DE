@@ -1,5 +1,5 @@
 ---
-title: Real-time Customer Data Platform-Benutzeroberfläche und -Workflow
+title: Benutzeroberfläche und Workflow von Real-time Customer Data Platform
 description: Erfahren Sie, wie die Benutzeroberfläche von Real-Time Customer Data Platform (CDP) verwendet wird und wie ihre Funktionen die Echtzeit-Aktivierung der gesamten digitalen Customer Journey ermöglichen.
 solution: Real-Time Customer Data Platform
 feature: Destinations
@@ -15,8 +15,8 @@ ht-degree: 34%
 
 ---
 
-# Real-time Customer Data Platform-Benutzeroberfläche und -Workflow
+# Benutzeroberfläche und Workflow von Real-time Customer Data Platform
 
-Erfahren Sie, wie Sie in der Benutzeroberfläche von Real-time Customer Data Platform (CDP) navigieren, um zu sehen, wie die Funktionen zusammenkommen und Echtzeit-Aktivierung über die digitale Journey ermöglichen. Weitere Informationen finden Sie in der [Real-time Customer Data Platform-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=de).
+Erfahren Sie, wie Sie in der Benutzeroberfläche von Real-time Customer Data Platform (CDP) navigieren, um zu sehen, wie die Funktionen zusammenwirken und eine Echtzeit-Aktivierung auf der gesamten digitalen Kunden-Journey bereitstellen. Weitere Informationen finden Sie in der Dokumentation zu [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29762?learn=on)

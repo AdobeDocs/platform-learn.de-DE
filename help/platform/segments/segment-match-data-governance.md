@@ -1,6 +1,6 @@
 ---
-title: Data Governance bei Segmentübereinstimmungen
-description: Erfahren Sie, wie Sie Data Governance-Steuerelemente in Real-Time CDP einrichten und verwenden, damit Sie einschränken können, welche Datensätze (und somit welche Segmente, die diesen Datensatz verwenden... (Beschreibungen sollten zwischen 60 und 160 Zeichen lang sein).
+title: Data Governance bei Segment Match
+description: Erfahren Sie, wie Sie Data Governance-Steuerelemente in Real-Time CDP einrichten und verwenden, damit Sie einschränken können, welche Datensätze (und somit welche Segmente, die diese Datensätze verwenden …) verwendet werden (Beschreibungen sollten zwischen 60 und 160 Zeichen lang sein)
 feature: Segments
 role: Admin
 level: Beginner
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ---
 
-# Data Governance bei Segmentübereinstimmungen
+# Data Governance bei Segment Match
 
 Erfahren Sie, wie Sie Data Governance-Steuerelemente in Real-Time CDP einrichten und verwenden, damit Sie einschränken können, welche Datensätze (und somit welche Segmente, die diese Datensätze verwenden) für Datenpartner freigegeben werden können. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
 

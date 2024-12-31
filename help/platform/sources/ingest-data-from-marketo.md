@@ -1,6 +1,6 @@
 ---
-title: Daten von Marketo Engage erfassen
-description: Erfahren Sie, wie Sie Daten von Marketo Engage mithilfe des Quell-Connectors mit den Standard- und Vorlagen-Workflows erfassen.
+title: Aufnehmen von Daten vom Marketo Engage
+description: Erfahren Sie, wie Sie Daten vom Marketo Engage mithilfe des Quell-Connectors unter Verwendung der Standard- und Vorlagen-Workflows aufnehmen.
 solution: Real-Time Customer Data Platform
 feature: Sources
 topic: Integrations
@@ -18,22 +18,22 @@ ht-degree: 18%
 
 ---
 
-# Daten von Marketo Engage erfassen
+# Aufnehmen von Daten vom Marketo Engage
 
 Erfahren Sie, wie Sie mit dem Quell-Connector mithilfe zweier Workflows Daten aus Marketo Engage einfach in Real-time Customer Data Platform, B2B Edition und Adobe Experience Platform erfassen können.
 
 ## Vorlagen-Workflow
 
-Erfahren Sie, wie Sie den Quell-Connector für Marketo mithilfe des Vorlagen-Workflows konfigurieren. Dieser Workflow generiert automatisch Assets, die für die Aufnahme von Marketo-Daten basierend auf Vorlagen erforderlich sind. Dadurch sparen Sie im Voraus Zeit und die Assets können entsprechend Ihren Anforderungen angepasst werden.
+Erfahren Sie, wie Sie den Quell-Connector für Marketo mithilfe des Vorlagen-Workflows konfigurieren. Dieser Workflow generiert automatisch Assets, die für die Aufnahme von Marketo-Daten basierend auf Vorlagen benötigt werden. Dadurch sparen Sie Zeit im Voraus und die Assets können Ihren Anforderungen entsprechend angepasst werden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on)
 
-## Standardarbeitsablauf
+## Standard-Workflow
 
-Erfahren Sie, wie Sie den Quell-Connector für Marketo mithilfe des Standard-Workflows konfigurieren. Der Standard-Workflow erfordert die vorzeitige Erstellung von Schemas und Identitäts-Namespaces.
+Erfahren Sie, wie Sie den Quell-Connector für Marketo mithilfe des Standard-Workflows konfigurieren. Der Standard-Workflow erfordert die Erstellung von Schemata und Identity-Namespaces im Vorfeld.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 Weitere Informationen finden Sie in der folgenden Dokumentation:
-* [Marketo Engage-Quell-Connector-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [Erstellen eines Datenflusses für Quellen mithilfe von Vorlagen in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Dokumentation zum Marketo Engage-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
+* [Erstellen eines Quellen-Datenflusses mithilfe von Vorlagen in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

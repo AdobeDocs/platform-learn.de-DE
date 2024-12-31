@@ -1,6 +1,6 @@
 ---
-title: Anzeigen Ihres Echtzeit-Kundenprofils in Aktion im Callcenter
-description: Anzeigen Ihres Echtzeit-Kundenprofils in Aktion im Callcenter
+title: Erleben Sie Ihr Echtzeit-Kundenprofil in Aktion im Callcenter
+description: Erleben Sie Ihr Echtzeit-Kundenprofil in Aktion im Callcenter
 kt: 5342
 doc-type: tutorial
 exl-id: 78e0d473-c93a-4697-a6b9-6f353b094bd2
@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # ex6
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

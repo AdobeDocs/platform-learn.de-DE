@@ -1,6 +1,6 @@
 ---
 title: Überwachen des Erfolgs der Segmentaktivierung
-description: Beim Senden von Segmentprofilen an Ihre Aktivierungspartner müssen unbedingt Informationen zum Erfolg dieser Datenübertragung angezeigt werden. Dies gilt insbesondere für y.. (Beschreibungen sollten zwischen 60 und 160 Zeichen lang sein)
+description: Wenn Sie Segmentprofile an Ihre Aktivierungspartner senden, müssen Sie unbedingt Informationen über den Erfolg dieser Datenübertragung sehen, insbesondere … (Beschreibungen sollten zwischen 60 und 160 Zeichen lang sein)
 feature: Monitoring
 role: User
 level: Beginner
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Überwachen des Erfolgs der Segmentaktivierung
 
-Beim Senden von Segmentprofilen an Ihre Aktivierungspartner müssen unbedingt Informationen zum Erfolg dieser Datenübertragung angezeigt werden, insbesondere damit Sie Probleme beheben können. In diesem Video werden zwei Hauptmethoden gezeigt, wie Sie den Fluss Ihrer Segmente zu Zielen überwachen können. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=en).
+Beim Senden von Segmentprofilen an Ihre Aktivierungspartner sind Informationen über den Erfolg dieser Datenübertragung wichtig, insbesondere damit Sie Probleme beheben können. In diesem Video werden zwei Möglichkeiten gezeigt, den Fluss Ihrer Segmente zu Zielen zu überwachen. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=en).
 
 >[!VIDEO](https://video.tv.adobe.com/v/343248/?learn=on)
 

@@ -1,6 +1,6 @@
 ---
-title: Query Service - Voraussetzungen
-description: Query Service - Voraussetzungen
+title: Abfrage-Service - Voraussetzungen
+description: Abfrage-Service - Voraussetzungen
 kt: 5342
 doc-type: tutorial
 exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # 5.1.1 Voraussetzungen
 
-## PSQL-Befehlszeilendienstprogramm installieren
+## Installieren des PSQL-Befehlszeilen-Dienstprogramms
 
-Befolgen Sie die Anweisungen in der Adobe Experience Platform-Dokumentation, um den psql-Client zu installieren:
-[PSQL-Installationsanleitung](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html)
+Befolgen Sie die in der Adobe Experience Platform-Dokumentation beschriebenen Anweisungen, um den PSQL-Client zu installieren:
+[PSQL-Installationshandbuch](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html)
 
 Nachdem Sie PSQL installiert haben, müssen Sie möglicherweise Ihren **PATH** aktualisieren, indem Sie den folgenden Befehl in einem Terminal-Fenster ausführen:
 
@@ -24,21 +24,21 @@ Für macOS (ersetzen Sie XX im folgenden Befehl durch die Versionsnummer von PSQ
 
 `export PATH=/Library/PostgreSQL/XX/bin:$PATH`
 
-## Installieren von Power BI
+## Power BI installieren
 
 Nur für Windows-Benutzer
 
-[Installieren von Microsoft Power BI](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html)
+[Microsoft-Power BI installieren](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html)
 
-Stellen Sie sicher, dass Sie die exakte Version von **npgsql** installieren, wie im Dokument erwähnt, da Sie sonst nicht in der Lage sind, Power BI mit Adobe Experience Platform Query Service zu verbinden.
+Installieren Sie unbedingt die exakte Version von **npgsql** wie im Dokument beschrieben. Andernfalls können Sie keinen Power BI mit dem Abfrage-Service von Adobe Experience Platform verbinden.
 
 ## Installieren von Tableau
 
 Für Windows- oder Mac-Benutzer
 
-[Installieren Sie Tableau Desktop](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html) gemäß der Dokumentation.
+[Installieren von Tableau Desktop](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html) gemäß der Dokumentation.
 
-Tableau gibt Ihnen automatisch eine 14-tägige Testphase.
+Tableau bietet Ihnen automatisch eine 14-tägige Testphase.
 
 Wenn Sie Tableau über diese 14 Tage hinaus verwenden möchten, benötigen Sie einen Lizenzschlüssel.
 
@@ -46,4 +46,4 @@ Nächster Schritt: [5.1.2 Erste Schritte](./ex2.md)
 
 [Zurück zu Modul 5.1](./query-service.md)
 
-[Zu allen Modulen zurückkehren](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md)

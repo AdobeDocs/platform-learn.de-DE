@@ -1,49 +1,50 @@
 ---
-title: Daten aus Google Analytics in Adobe Experience Platform mit BigQuery Source Connector erfassen und analysieren - Erstellen Sie Ihre erste Abfrage in BigQuery
-description: Daten aus Google Analytics in Adobe Experience Platform mit BigQuery Source Connector erfassen und analysieren - Erstellen Sie Ihre erste Abfrage in BigQuery
+title: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector - Erstellen Sie Ihre erste Abfrage in BigQuery
+description: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector - Erstellen Sie Ihre erste Abfrage in BigQuery
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c3c06447-3096-4f55-993b-4d41bc15c4d2
+source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 1%
 
 ---
 
-# 4.2.2 Erste Abfrage in BigQuery erstellen
+# 4.2.2 Erstellen Sie Ihre erste Abfrage in BigQuery
 
 ## Ziele
 
-- BigQuery-Benutzeroberfläche
-- SQL-Abfrage in BigQuery erstellen
+- Erkunden der BigQuery-Benutzeroberfläche
+- Erstellen einer SQL-Abfrage in BigQuery
 - Speichern Sie die Ergebnisse Ihrer SQL-Abfrage in einem Datensatz in BigQuery
 
 ## Kontext
 
-Wenn Google Analytics-Daten in BigQuery vorliegen, werden Dimensionen, Metriken und andere Variablen verschachtelt. Außerdem werden Google Analytics-Daten täglich in verschiedene Tabellen geladen. Das bedeutet, dass der Versuch, Google Analytics-Tabellen in BigQuery direkt mit Adobe Experience Platform zu verbinden, sehr schwierig ist und keine gute Idee ist.
+Wenn sich Google Analytics-Daten in BigQuery befinden, sind Dimensionen, Metriken und andere Variablen verschachtelt. Außerdem werden Google Analytics-Daten täglich in verschiedene Tabellen geladen. Das bedeutet, dass es sehr schwierig und keine gute Idee ist, Google Analytics-Tabellen innerhalb von BigQuery direkt mit Adobe Experience Platform zu verbinden.
 
-Die Lösung dieses Problems besteht darin, Google Analytics-Daten in ein lesbares Format umzuwandeln, um die Aufnahme in Adobe Experience Platform zu erleichtern.
+Die Lösung für dieses Problem besteht darin, Google Analytics-Daten in ein lesbares Format umzuwandeln, um die Aufnahme in Adobe Experience Platform zu vereinfachen.
 
-## 4.2.2.1 Datensatz zum Speichern neuer BigQuery-Tabellen erstellen
+## 4.2.2.1 Erstellen eines Datensatzes zum Speichern neuer BigQuery-Tabellen
 
 Wechseln Sie zur [BigQuery-Konsole](https://console.cloud.google.com/bigquery).
 
 ![demo](./images/ex3/1.png)
 
-In **Explorer** wird Ihre Projekt-ID angezeigt. Klicken Sie auf Ihre Projekt-ID (klicken Sie nicht auf den Datensatz **bigquery-public-data** ).
+In **Explorer** wird Ihre Projekt-ID angezeigt. Klicken Sie auf Ihre Projekt-ID (klicken Sie nicht auf den Datensatz **bigquery-public-data**).
 
 ![demo](./images/ex3/2.png)
 
-Sie können sehen, dass es noch keinen Datensatz gibt. Erstellen wir jetzt einen.
-Klicken Sie auf **DATENSATZ ERSTELLEN**.
+Sie können sehen, dass es noch keinen Datensatz gibt, also erstellen wir jetzt einen.
+Klicken Sie **DATENSATZ ERSTELLEN**.
 
 ![demo](./images/ex3/4.png)
 
-Auf der rechten Seite des Bildschirms sehen Sie das Menü **Datensatz erstellen** .
+Auf der rechten Seite des Bildschirms sehen Sie das Menü **Datensatz erstellen**.
 
 ![demo](./images/ex3/5.png)
 
-Verwenden Sie für die **Datensatz-ID** die folgende Namenskonvention. Für die anderen Felder behalten Sie die Standardeinstellungen bei.
+Verwenden Sie für **Datensatz-ID** die folgende Namenskonvention. Für die anderen Felder bleiben die Standardeinstellungen erhalten.
 
 | Benennung | Beispiel |
 | ----------------- | ------------- | 
@@ -55,17 +56,17 @@ Klicken Sie anschließend auf **Datensatz erstellen**.
 
 ![demo](./images/ex3/7.png)
 
-Sie befinden sich dann wieder in der BigQuery-Konsole, nachdem Sie Ihren Datensatz erstellt haben.
+Sie werden dann wieder in der BigQuery-Konsole sein, während Ihr Datensatz erstellt wurde.
 
 ![demo](./images/ex3/8.png)
 
-## 4.2.2.2 Erste SQL BigQuery erstellen
+## 4.2.2.2 Erstellen der ersten SQL BigQuery
 
-Als Nächstes erstellen Sie Ihre erste Abfrage in BigQuery. Ziel dieser Abfrage ist es, die Beispieldaten der Google Analytics zu nehmen und umzuwandeln, damit sie in Adobe Experience Platform aufgenommen werden können. Gehen Sie zur Registerkarte **EDITOR** .
+Als Nächstes erstellen Sie Ihre erste Abfrage in BigQuery. Ziel dieser Abfrage ist es, die Beispieldaten der Google Analytics zu nehmen und sie so umzuwandeln, dass sie in Adobe Experience Platform aufgenommen werden können. Wechseln Sie zur Registerkarte **EDITOR**.
 
 ![demo](./images/ex3/9.png)
 
-Kopieren Sie die folgende SQL-Abfrage und fügen Sie sie in den Abfrage-Editor ein. Lesen Sie die Abfrage und verstehen Sie die Google Analytics BigQuery-Syntax.
+Bitte die folgende SQL-Abfrage kopieren und in diesen Abfrage-Editor einfügen. Sie können die Abfrage lesen und die BigQuery-Syntax von Google Analytics verstehen.
 
 
 ```sql
@@ -230,33 +231,33 @@ GROUP BY
   ORDER BY 2 DESC
 ```
 
-Wenn Sie bereit sind, klicken Sie auf **Ausführen** , um die Abfrage auszuführen:
+Wenn Sie fertig sind, klicken Sie auf **Ausführen**, um die Abfrage auszuführen:
 
 ![demo](./images/ex3/10.png)
 
 Die Ausführung der Abfrage kann einige Minuten dauern.
 
-Sobald die Abfrage ausgeführt wurde, sehen Sie die folgende Ausgabe in den **Abfrageergebnissen**.
+Nachdem die Abfrage ausgeführt wurde, sehen Sie die folgende Ausgabe in den **Abfrageergebnissen**.
 
 ![demo](./images/ex3/12.png)
 
-## 4.2.2.3 Ergebnisse Ihrer BigQuery SQL-Abfrage speichern
+## 4.2.2.3 Speichern der Ergebnisse Ihrer BigQuery SQL-Abfrage
 
-Im nächsten Schritt speichern Sie die Ausgabe Ihrer Abfrage, indem Sie auf die Schaltfläche **ERGEBNISSE SPEICHERN** klicken.
+Der nächste Schritt besteht darin, die Ausgabe Ihrer Abfrage zu speichern, indem Sie auf die Schaltfläche **ERGEBNISSE SPEICHERN** klicken.
 
 ![demo](./images/ex3/13.png)
 
-Wählen Sie als Speicherort für die Ausgabe **BigQuery table** aus.
+Wählen Sie als Speicherort für Ihre Ausgabe **BigQuery-Tabelle**.
 
 ![demo](./images/ex3/14.png)
 
-Anschließend wird ein neues Popup angezeigt, in dem Ihr **Projektname** und Ihr **Datensatzname** vorausgefüllt sind. Der Datensatzname sollte der Datensatz sein, den Sie zu Beginn dieser Übung anhand dieser Namenskonvention erstellt haben:
+Anschließend wird ein neues Popup angezeigt, in dem Ihr **Projektname** und **Datensatzname** vorausgefüllt sind. Der Datensatzname sollte der Datensatz sein, den Sie zu Beginn dieser Übung mit dieser Namenskonvention erstellt haben:
 
 | Benennung | Beispiel |
 | ----------------- | ------------- | 
 | `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
 
-Jetzt müssen Sie einen Tabellennamen eingeben. Bitte verwenden Sie diese Namenskonvention:
+Geben Sie nun einen Tabellennamen ein. Bitte diese Namenskonvention verwenden:
 
 | Benennung | Beispiel |
 | ----------------- |------------- | 
@@ -264,16 +265,16 @@ Jetzt müssen Sie einen Tabellennamen eingeben. Bitte verwenden Sie diese Namens
 
 ![demo](./images/ex3/16.png)
 
-Klicken Sie auf **SPEICHERN**.
+Klicken Sie **SPEICHERN**.
 
-Es kann einige Zeit dauern, bis die Daten in der von Ihnen erstellten Tabelle bereit sind. Aktualisieren Sie den Browser nach einigen Minuten. Anschließend sollte die Tabelle `--aepUserLdap--_GAdataTableBigquery` in Ihrem Datensatz unter **Explorer** in Ihrem BigQuery-Projekt angezeigt werden.
+Es kann einige Zeit dauern, bis die Daten in der von Ihnen erstellten Tabelle bereit sind. Aktualisieren Sie den Browser nach einigen Minuten. Sie sollten dann in Ihrem Datensatz die `--aepUserLdap--_GAdataTableBigquery` Tabelle unter **Explorer** in Ihrem BigQuery-Projekt sehen.
 
 ![demo](./images/ex3/19.png)
 
-Sie fahren nun mit der nächsten Übung fort, in der Sie diese Tabelle mit Adobe Experience Platform verbinden werden.
+Fahren Sie nun mit der nächsten Übung fort, in der Sie diese Tabelle mit Adobe Experience Platform verbinden.
 
-Nächster Schritt: [4.2.3 GCP und BigQuery mit Adobe Experience Platform verbinden](./ex3.md)
+Nächster Schritt: [4.2.3 Verbinden von GCP und BigQuery mit Adobe Experience Platform](./ex3.md)
 
-[Zurück zu Modul 4.2](./customer-journey-analytics-bigquery-gcp.md)
+[Zurück zum Modul 4.2](./customer-journey-analytics-bigquery-gcp.md)
 
-[Zu allen Modulen zurückkehren](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md)

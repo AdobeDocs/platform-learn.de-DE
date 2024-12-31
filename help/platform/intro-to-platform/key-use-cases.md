@@ -1,6 +1,6 @@
 ---
-title: Wichtige Anwendungsfälle
-description: Verschaffen Sie sich einen Überblick über die fünf wichtigsten Anwendungsfälle von Experience Platform&mdash;Intelligente Wiederaufnahme, Keine Kampagnen verlieren, Kundenkonversionsoptimierung, kontextbezogene Erkennung und einmalige Wertsteigerung auf Lebenszeitwert.
+title: Häufige Anwendungsfälle
+description: Verschaffen Sie sich einen Überblick über die fünf wichtigsten Anwendungsfälle von Experience Platform&mdash;intelligenter Rückgewinnung, „Don't Lose“-Kampagnen, Kundenkonversionsoptimierung, kontextuelle Erkennung und „Einmaliger Nutzen für den Lebenszeitwert“.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Wichtige Anwendungsfälle von Adobe Experience Platform
 
-Verschaffen Sie sich einen Überblick über die fünf wichtigsten Anwendungsfälle von Experience Platform - Intelligente Wiederaufnahme, &quot;Nicht verlieren&quot;-Kampagnen, Kundenkonversionsoptimierung, kontextbezogene Erkennung und einmalige Wertschöpfung für die Lebensdauer.
+Verschaffen Sie sich einen Überblick über die fünf wichtigsten Anwendungsfälle des Experience Platform - intelligente Rückgewinnung, „Verlieren Sie nicht“-Kampagnen, Kundenkonversionsoptimierung, kontextuelle Erkennung und Einmalige Wertschöpfung bis zum Lebenszeitwert.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on)
 

@@ -17,7 +17,7 @@ ht-degree: 53%
 
 # Verwenden von Kunden-KI- und Insights-Werten
 
-Erfahren Sie, wie Sie mithilfe von Tendenzwerten und Einblicken aus Customer AI Kunden-KI konvertieren und binden können. Weitere Informationen finden Sie in der Dokumentation zu [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de) .
+Erfahren Sie, wie Sie mit den Tendenzwerten und Einblicken von Kunden-KI Kunden gewinnen und binden können. Weitere Informationen finden Sie in der [Dokumentation zu Kunden-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on)
 
