@@ -5,9 +5,9 @@ user-guide-description: Ein praktisches Tutorial, das viele Aspekte von Adobe Ex
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cf8b97f06bbe6741fc6dfa70c207c6a748f5fe85
+source-git-commit: c8f9d5258d530ef12905113dd2aea4e179d0cca9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '915'
 ht-degree: 4%
 
 ---
@@ -132,10 +132,9 @@ ht-degree: 4%
    + 3.4 Adobe Journey Optimizer: Ereignisbasierte Journey-{#module34}
       + [Übersicht](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/journeyoptimizer.md)
       + [3.4.1 Konfigurieren einer Trigger-basierten Journey - Bestellbestätigung](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex1.md)
-      + [3.4.2 Konfigurieren einer Batch-basierten Newsletter-Journey](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex2.md)
-      + [3.4.3 Personalisierung in einer E-Mail-Nachricht anwenden](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
+      + [3.4.2 Konfigurieren einer Kampagne](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex2.md)
+      + [3.4.3 Anwenden der segmentbasierten Personalisierung in einer E-Mail-Nachricht](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
       + [3.4.4 Einrichten und Verwenden von Push-Benachrichtigungen](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
-      + [3.4.5 Erstellen einer Geschäftsereignis-Journey](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex5.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4 Customer Journey Analytics B2C-{#cjab2c}

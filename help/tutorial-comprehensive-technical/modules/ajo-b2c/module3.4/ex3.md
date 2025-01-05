@@ -4,14 +4,14 @@ description: In dieser Übung wird erläutert, wie die Segmentpersonalisierung i
 kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 11%
+source-wordcount: '399'
+ht-degree: 9%
 
 ---
 
-# 3.4.3 Personalisierung in einer E-Mail-Nachricht anwenden
+# 3.4.3 Anwenden der segmentbasierten Personalisierung in einer E-Mail-Nachricht
 
 Melden Sie sich bei Adobe Experience Cloud an, indem Sie zu [Adobe Experience Cloud wechseln](https://experience.adobe.com). Auf **Adobe Journey Optimizer**.
 
@@ -23,25 +23,25 @@ Sie werden zur Ansicht **Startseite** in Journey Optimizer weitergeleitet. Bevor
 
 ## 3.4.3.1 segmentbasierte Personalisierung
 
-In dieser Übung verbessern Sie Ihre Newsletter-E-Mail-Nachricht mit einem personalisierten Text, der auf der Segmentzugehörigkeit basiert.
+In dieser Übung verbessern Sie die in der vorherigen Übung erstellte Newsletter-E-Mail-Nachricht mit einem personalisierten Text, der auf der Segmentzugehörigkeit basiert.
 
-Wechseln Sie zu **Journey**. Suchen Sie die Newsletter-Journey, die Sie in der vorherigen Übung erstellt haben. Suchen Sie nach `--aepUserLdap-- - Newsletter`. Klicken Sie auf den Journey, um ihn zu öffnen.
+Navigieren Sie zu **Kampagnen**. Suchen Sie die Newsletter-Journey, die Sie in der vorherigen Übung erstellt haben. Suchen Sie nach `--aepUserLdap-- - CitiSignal Newsletter`. Klicken Sie mit der rechten Maustaste auf die 3 Punkte **…** und klicken Sie auf **Duplizieren**.
 
 ![Journey Optimizer](./images/sbp1.png)
 
-Sie werden es dann sehen. Klicken Sie auf **Duplizieren**.
+Sie werden es dann sehen. Verwenden Sie dies für den **Titel**: `--aepUserLdap-- - CitiSignal Newsletter (SBP)`. Klicken Sie auf **Duplizieren**.
 
 ![Journey Optimizer](./images/sbp2.png)
 
-Klicken Sie auf **Duplizieren**.
+Klicken Sie auf die duplizierte Kampagne, um sie zu öffnen.
 
 ![Journey Optimizer](./images/sbp3.png)
 
-Wählen Sie Ihre Aktion **E** und klicken Sie auf **Inhalt bearbeiten**.
+Klicken Sie **Bearbeiten**, um den Inhalt zu ändern.
 
 ![Journey Optimizer](./images/sbp3a.png)
 
-Klicken Sie auf **E-Mail an Designer**.
+Klicken Sie **E-Mail-Textkörper bearbeiten**.
 
 ![Journey Optimizer](./images/sbp4.png)
 
@@ -49,88 +49,58 @@ Sie werden es dann sehen.
 
 ![Journey Optimizer](./images/sbp5.png)
 
-Öffnen Sie **Inhaltskomponenten** und ziehen Sie eine **Text**-Komponente unter den aktuellen Newsletter-Inhalt.
+Öffnen Sie **Inhaltskomponenten** und ziehen Sie eine **1:1-Spalte** über das AirPods-Angebot.
 
 ![Journey Optimizer](./images/sbp6.png)
+
+Ziehen Sie eine **Text**-Komponente per Drag-and-Drop in diese 1:1-Spalte.
+
+![Journey Optimizer](./images/sbp6a.png)
 
 Wählen Sie den gesamten Standardtext aus und löschen Sie ihn. Klicken Sie dann auf die **Personalisierung hinzufügen** in der Symbolleiste.
 
 ![Journey Optimizer](./images/sbp7.png)
 
-Sie sehen dann Folgendes:
+Sie werden es dann sehen. Klicken Sie im linken Menü auf **Zielgruppen**.
 
 ![Journey Optimizer](./images/seg1.png)
 
-Klicken Sie im linken Menü auf **Segmentzugehörigkeit**.
-
-![Journey Optimizer](./images/seg2.png)
-
->[!NOTE]
->
->Wenn Sie Ihr Segment nicht in dieser Liste finden können, scrollen Sie ein wenig nach unten, um Anweisungen zum manuellen Abrufen der Segment-ID zu finden.
-
-Wählen Sie die `Luma - Women's Category Interest` aus und klicken Sie auf das Symbol **+** , das wie folgt aussehen sollte:
+Wählen Sie die `--aepUserLdap-- - Interest in Plans` aus und klicken Sie auf das Symbol **+** , um sie zur Arbeitsfläche hinzuzufügen.
 
 ![Journey Optimizer](./images/seg3.png)
 
 Sie sollten dann die erste Zeile so lassen, wie sie ist, und Zeile 2 und 3 durch diesen Code ersetzen:
 
 ``
-    Psssst... a private sale in the women category will launch soon, we will keep you posted
+    PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
-    Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: READER10
+    PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
 ``
 
-Sie erhalten dann Folgendes:
+Dann hast du das hier. Klicken Sie auf **Speichern**.
 
 ![Journey Optimizer](./images/seg4.png)
 
-Klicken Sie auf **Validieren**, um sicherzustellen, dass der Code korrekt ist. Klicken Sie auf **Speichern**.
-
-![Journey Optimizer](./images/sbp8.png)
-
-Sie können diese Nachricht jetzt speichern, indem Sie auf die **Speichern**-Schaltfläche oben rechts klicken. Klicken Sie dann auf **Inhalt simulieren**.
+Ändern Sie die Textausrichtung in **Ausrichtung zentrieren**.
 
 ![Journey Optimizer](./images/sbp9.png)
 
-Wählen Sie eines der Profile aus, die Sie im Rahmen dieses Tutorials erstellt haben, und klicken Sie auf **Vorschau**. Anschließend werden die Ergebnisse Ihrer Konfiguration angezeigt.
+Sie können diese Nachricht jetzt speichern, indem Sie auf die **Speichern**-Schaltfläche oben rechts klicken. Klicken Sie dann **Pfeil** neben dem Betreffzeilentext in der oberen linken Ecke.
 
-![Journey Optimizer](./images/sbp10.png)
+![Journey Optimizer](./images/sbp9a.png)
 
-Sie werden es dann sehen. Klicken Sie dann auf **Schließen**.
-
-![Journey Optimizer](./images/sbp10fff.png)
-
-Kehren Sie zum Nachrichten-Dashboard zurück, indem Sie auf den **Pfeil** neben dem Betreffzeilentext in der oberen linken Ecke klicken.
-
-![Journey Optimizer](./images/sbp11.png)
-
-Klicken Sie auf den Pfeil oben links, um zu Ihrem Journey zurückzukehren.
+Klicken Sie auf **Zum Aktivieren überprüfen**.
 
 ![Journey Optimizer](./images/oc79afff.png)
 
-Klicken Sie auf **OK**, um die E-Mail-Aktion zu schließen.
+Klicken Sie **Aktivieren**.
 
 ![Journey Optimizer](./images/oc79bfff.png)
 
-Ändern Sie **Zeitplan** in **Einmal** und definieren Sie ein **Datum/Uhrzeit**. Klicken Sie auf **OK**.
+Ihr Newsletter mit segmentbasierter Personalisierung ist jetzt veröffentlicht. Ihre Newsletter-E-Mail-Nachricht wird auf der Grundlage Ihres Zeitplans gesendet und Ihr Journey wird gestoppt, sobald die letzte E-Mail gesendet wurde.
 
->[!NOTE]
->
->Datum und Uhrzeit des Nachrichtenversands müssen innerhalb von mehr als einer Stunde liegen.
-
-![Journey Optimizer](./images/sbp18.png)
-
-Klicken Sie auf die Schaltfläche **Publish** auf der Journey.
-
-![Journey Optimizer](./images/sbp19.png)
-
-Klicken Sie im Popup-Fenster erneut auf **Publish**.
-
-![Journey Optimizer](./images/sbp20.png)
-
-Ihre Standard-Newsletter-Journey ist jetzt veröffentlicht. Ihre Newsletter-E-Mail-Nachricht wird auf der Grundlage Ihres Zeitplans gesendet und Ihr Journey wird gestoppt, sobald die letzte E-Mail gesendet wurde.
+Wenn Sie sich für das verwendete Segment qualifizieren, wird dies in der E-Mail angezeigt, die Sie erhalten:
 
 ![Journey Optimizer](./images/sbp20fff.png)
 
