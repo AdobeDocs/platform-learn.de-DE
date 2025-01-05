@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '948'
 ht-degree: 4%
 
 ---
@@ -49,7 +49,7 @@ Klicken Sie im linken Menü auf **Angebote**. Jetzt sehen Sie das Menü Angebote
 
 ![Platzierungen](./images/homedec.png)
 
-Klicken Sie **Komponenten**. Jetzt sehen Sie das Menü Angebote , das Elemente wie Platzierungen, Tags, Regeln und Rankings enthält.
+Klicken Sie **Komponenten**. Sie sehen jetzt Dinge wie Platzierungen, Sammlungsqualifizierer, Regeln und Rankings.
 
 ![Platzierungen](./images/components.png)
 
@@ -61,7 +61,7 @@ Navigieren Sie zu **Platzierungen**.
 
 Auf der Registerkarte **Platzierungen** können Sie Ihre Platzierungen für Ihre Angebote definieren. Wenn Sie eine Entscheidung definieren, definiert die Platzierung, wo das resultierende Angebot angezeigt wird (Kanaltyp) und in welcher Form oder Form (Inhaltstyp).
 
-Wenn keine Platzierungen in Ihrer Adobe Experience Platform-Instanz angezeigt werden, erstellen Sie sie wie unten und im Screenshot angegeben.
+Wenn Sie keine Platzierungen in Ihrer Umgebung sehen, erstellen Sie sie wie unten und im Screenshot angegeben.
 
 | Name | Kanaltyp | Content-Typ |
 | ---------------------- | ------------ | ------------ |
@@ -101,19 +101,17 @@ Navigieren Sie zu **Regeln**. Klicken Sie auf **+ Regel erstellen**.
 
 ![Entscheidungsregeln](./images/rules.png)
 
-Anschließend sehen Sie die Segmentierungsumgebung von Adobe Experience Platform.
+Anschließend sehen Sie die Benutzeroberfläche zur Zielgruppenerstellung von Adobe Experience Platform.
 
 ![Entscheidungsregeln](./images/createrule1.png)
 
 Sie können jetzt auf alle Felder zugreifen, die Teil des Vereinigungsschemas für das Echtzeit-Kundenprofil sind, und eine beliebige Regel erstellen.
 
-Interessant ist auch, dass Sie bereits definierte Zielgruppen in Adobe Experience Platform einfach wiederverwenden können, indem Sie zu **Zielgruppen** > ``--aepTenantId--`` wechseln.
-
-![Entscheidungsregel](./images/decisionruleaud.png)
+Gut zu wissen ist auch, dass Sie bereits definierte Zielgruppen in Adobe Experience Platform einfach wiederverwenden können, indem Sie zu **Zielgruppen** > ``--aepTenantId--`` gehen.
 
 Sie sehen dann Folgendes:
 
-![Entscheidungsregel](./images/decisionruleaud1.png)
+![Entscheidungsregel](./images/decisionruleaud.png)
 
 Wenn Sie möchten, können Sie jetzt Ihre eigenen Regeln konfigurieren. Für diese Übung benötigen Sie zwei Regeln:
 

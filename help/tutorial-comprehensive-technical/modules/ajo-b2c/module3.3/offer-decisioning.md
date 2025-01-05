@@ -6,26 +6,20 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: a7218d65-422b-48e5-89fa-864c5af8d1c6
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 5d7b790830a46385ca019bcb23b0032478794591
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '344'
 ht-degree: 2%
 
 ---
 
 # 3,3 Offer decisioning
 
-**Autoren: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In diesem Modul erhalten Sie eine praktische Anleitung zu den Offer decisioning-Funktionen von Adobe Journey Optimizer.
 
 Adobe Journey Optimizer bietet die Möglichkeit, personalisierte Angebote zu erstellen und diese orchestriert an alle Ziele zu senden, die mit Adobe Journey Optimizer verknüpft sind.
 
 Mit Offer decisioning können Sie aus einer Reihe von verfügbaren Optionen die beste Option bestimmen. Diese Optionen können Angebote, Produktempfehlungen, Inhaltskomponenten für ein Web-Erlebnis, Gesprächsskripte und durchzuführende Aktionen sein.
-
-Sehen Sie sich dieses Video an, um den Wert und die Kunden-Journey zu verstehen:
-
->[!VIDEO](https://video.tv.adobe.com/v/328829?quality=12&learn=on)
 
 ## Lernziele
 

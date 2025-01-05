@@ -3,9 +3,9 @@ title: Übersicht
 description: Ausgangspunkt für Dateningenieure, Datenanalysten, Datenarchitekten, Datenwissenschaftler, Orchestrierungsingenieure und Marketing-Experten, um ein umfassendes Verständnis des Geschäftswerts von Adobe Experience Platform und aller seiner Anwendungs-Services zu erhalten.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 73c7e24e7c66053f6babd64cea1856309be377a0
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -67,6 +67,8 @@ Dieses Tutorial ist Teil eines Adobe-Zertifizierungskurses. Sie können sich neb
 Für jedes Modul, das Sie mit dem folgenden Tutorial abschließen, müssen Sie einen Abschlussnachweis wie [ angegeben ](./completion.md).
 
 ## Inhalt
+
+Um den Status der folgenden Inhalte zu überprüfen, gehen Sie bitte zur [Statusseite](./status.md).
 
 [0. Erste Schritte](./modules/gettingstarted/gettingstarted/getting-started.md)
 
