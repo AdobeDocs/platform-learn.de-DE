@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Datenvorbereitung in Analysis Workspac
 kt: 5342
 doc-type: tutorial
 exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 2%
+source-wordcount: '758'
+ht-degree: 3%
 
 ---
 
@@ -33,12 +33,12 @@ Wenn Sie Analysis Workspace noch nie verwendet haben, empfehlen wir dringend, si
 
 ### Erstellen eines Projekts
 
-Jetzt ist es an der Zeit, Ihr erstes CJA-Projekt zu erstellen. Navigieren Sie zur Registerkarte Projekte in CJA.
-Klicken Sie **Neu erstellen**.
+Jetzt ist es an der Zeit, Ihren ersten CJA-Arbeitsbereich zu erstellen. Wechseln Sie zur Registerkarte **Workspace** in CJA.
+Klicken Sie **Projekt erstellen**.
 
 ![demo](./images/prmenu.png)
 
-Sie werden es dann sehen. Wählen Sie **Leeres Projekt** aus und klicken Sie dann auf **Erstellen**.
+Sie werden es dann sehen. Wählen Sie **Leeres Workspace-Projekt** und klicken Sie dann auf **Erstellen**.
 
 ![demo](./images/prmenu1.png)
 
@@ -46,7 +46,7 @@ Anschließend wird ein leeres Projekt angezeigt.
 
 ![demo](./images/premptyprojects.png)
 
-Wählen Sie zunächst die richtige Datenansicht in der oberen rechten Ecke Ihres Bildschirms aus. In diesem Beispiel ist die auszuwählende Datenansicht `vangeluwe - Omnichannel Data View`.
+Wählen Sie zunächst die richtige Datenansicht in der oberen rechten Ecke Ihres Bildschirms aus. Die auszuwählende Datenansicht ist `--aepUserLdap-- - Omnichannel Data View`.
 
 ![demo](./images/prdv.png)
 
@@ -109,17 +109,17 @@ Die Konversionsrate wird im Allgemeinen in Prozent angegeben. Ändern wir also d
 
 Ändern Sie abschließend den Namen und die Beschreibung der berechneten Metrik:
 
-| Titel | Beschreibung |
-| ----------------- |-------------| 
-| Konversionsrate | Konversionsrate |
+| Titel | Beschreibung | Externe ID |
+| ----------------- |-------------| -------------| 
+| Konversionsrate | Konversionsrate | Konversionsrate |
 
-Auf dem Bildschirm wird etwas wie das folgende angezeigt:
+Sie werden dann dies haben. Klicken Sie auf **Speichern**.
 
 ![demo](./images/calcbuildercr6.png)
 
-Vergessen Sie nicht, **berechnete** zu speichern.
+Klicken Sie **erneut auf** Speichern“.
 
-![demo](./images/pr9.png)
+![demo](./images/calcbuildercr6a.png)
 
 ## 4.1.4.3 berechnete Dimensionen: Filter (Segmentierung) und Datumsbereiche
 

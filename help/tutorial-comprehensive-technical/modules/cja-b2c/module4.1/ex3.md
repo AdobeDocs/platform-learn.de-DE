@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Datenansicht erstellen
 kt: 5342
 doc-type: tutorial
 exl-id: 7dc6e169-3bf7-4f9b-a74d-e410b7ce2da7
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1591'
 ht-degree: 3%
 
 ---
@@ -38,13 +38,13 @@ Aktivieren **auf dem Bildschirm** Verbindungen“ das Kontrollkästchen vor der 
 
 Sie werden zum Workflow **Datenansicht erstellen“**.
 
-![demo](./images/0-v2.png)
+![demo](./images/0v2.png)
 
 ## Definition der 4.1.3.2 Datenansicht
 
 Jetzt können Sie die grundlegenden Definitionen für Ihre Datenansicht konfigurieren.
 
-![demo](./images/0-v2.png)
+![demo](./images/0v2.png)
 
 Die **Verbindung** die Sie in der vorherigen Übung erstellt haben, ist bereits ausgewählt. Ihre Verbindung heißt `--aepUserLdap-- – Omnichannel Data Connection`.
 
@@ -54,11 +54,11 @@ Geben Sie als Nächstes Ihrer Datenansicht einen Namen, der dieser Namenskonvent
 
 Geben Sie denselben Wert für die Beschreibung ein: `--aepUserLdap-- – Omnichannel Data View`.
 
-| Name | Beschreibung |
-| ----------------- |-------------| 
-| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` |
+| Name | Beschreibung | Externe ID |
+| ----------------- |-------------|-------------| 
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap--123` |
 
-![demo](./images/1-v2.png)
+![demo](./images/1v2.png)
 
 Wählen Sie für **Zeitzone** die Zeitzone **Greenwich Mean Time; Monrovia, Casablanca [GMT]**. Dies ist ein wirklich interessanter Rahmen, da einige Unternehmen in verschiedenen Ländern und Regionen tätig sind. Durch die Zuweisung der richtigen Zeitzone für jedes Land werden typische Datenfehler vermieden, wie etwa der Glaube, dass in Peru die Mehrheit der Menschen T-Shirts um 4:00 Uhr kauft.
 
@@ -68,11 +68,15 @@ Sie können auch die Namen der Hauptmetriken (Person, Sitzung und Ereignis) änd
 
 Sie sollten jetzt die folgenden Einstellungen konfiguriert haben:
 
-![demo](./images/1-v2.png)
+![demo](./images/1v2.png)
 
 Klicken Sie **Speichern und fortfahren**.
 
-![demo](./images/12-v2.png)
+![demo](./images/12v2.png)
+
+Klicken Sie auf **Speichern**.
+
+![demo](./images/12v2a.png)
 
 ## 4.1.3.3 von Datenansichtskomponenten
 
@@ -82,19 +86,13 @@ In dieser Übung konfigurieren Sie die Komponenten, die Sie zur Analyse der Date
 - Mitte: Komponenten zur Datenansicht hinzugefügt
 - Rechte Seite: Komponenteneinstellungen
 
-![demo](./images/2-v2.png)
-
->[!IMPORTANT]
->
->Wenn Sie eine bestimmte Metrik oder Dimension nicht finden können, überprüfen Sie, ob das Feld `Contains data` aus Ihrer Datenansicht entfernt wurde. Andernfalls löschen Sie bitte dieses Feld.
->
->![demo](./images/2-v2a.png)
+![demo](./images/2v2.png)
 
 Jetzt müssen Sie die für die Analyse benötigten Komponenten per Drag-and-Drop auf die Seite **Komponenten hinzugefügt** ziehen. Dazu müssen Sie die Komponenten im linken Menü auswählen und sie in der Mitte auf die Arbeitsfläche ziehen und dort ablegen.
 
 Beginnen wir mit der ersten Komponente: **Name (web.webPageDetails.name)**. Suchen Sie nach dieser Komponente und ziehen Sie sie dann auf die Arbeitsfläche.
 
-![demo](./images/3-v2.png)
+![demo](./images/3v2.png)
 
 Diese Komponente ist der Seitenname, wie er beim Lesen des Schemafelds `(web.webPageDetails.name)` werden kann.
 
@@ -102,11 +100,11 @@ Die Verwendung von **Name** als Name ist jedoch nicht die beste Namenskonvention
 
 Ändern wir den Namen in &quot;**&quot;**. Klicken Sie auf die Komponente und benennen Sie sie im Bereich **Komponenteneinstellungen** um.
 
-![demo](./images/3-0-v2.png)
+![demo](./images/30v2.png)
 
 Etwas wirklich Wichtiges ist die **Persistenzeinstellungen**. Das Konzept von eVars und Props existiert in CJA nicht, aber die Persistenzeinstellungen ermöglichen ein ähnliches Verhalten.
 
-![demo](./images/3-0-v21.png)
+![demo](./images/30v21.png)
 
 Wenn Sie diese Einstellungen nicht ändern, interpretiert CJA die Dimension als **Prop** (Trefferebene). Außerdem können wir die Persistenz ändern, um die Dimension zu einer **eVar** zu machen (den Wert über die gesamte Journey hinweg beibehalten).
 
@@ -120,21 +118,21 @@ Lassen wir den Seitennamen als Eigenschaft. Daher müssen Sie keine „Persisten
 
 Wählen Sie als Nächstes die Dimension **phoneNumber** aus und legen Sie sie auf der Arbeitsfläche ab. Der neue Name sollte &quot;**&quot;**.
 
-![demo](./images/3-1-v2.png)
+![demo](./images/31v2.png)
 
 Ändern wir abschließend die Persistenzeinstellungen, da die Mobilfunknummer auf Benutzerebene bestehen bleiben soll.
 
 Um die Persistenz zu ändern, scrollen Sie im rechten Menü nach unten und öffnen Sie die Registerkarte **Persistenz**:
 
-![demo](./images/5-v2.png)
+![demo](./images/5v2.png)
 
 Aktivieren Sie das Kontrollkästchen, um die Persistenzeinstellungen zu ändern. Wählen Sie **Zuletzt verwendet** und den **Person (Reporting-Fenster** aus, da uns nur die letzte Mobiltelefonnummer dieser Person wichtig ist. Wenn der Kunde das Mobilgerät bei zukünftigen Besuchen nicht ausfüllt, wird dieser Wert weiterhin angezeigt.
 
-![demo](./images/6-v2.png)
-
 | Zu suchender Komponentenname | Neuer Name | Persistenzeinstellungen |
 | ----------------- |-------------| --------------------| 
-| Telefonnummer | Telefonnummer | Zuletzt verwendet, Person (Reporting-Fenster) |
+| Telefonnummer | Telefonnummer | Zuletzt verwendet, Fenster „Personenberichte“ |
+
+![demo](./images/6v2.png)
 
 Die nächste Komponente ist `web.webPageDetails.pageViews.value`.
 
@@ -146,9 +144,9 @@ Suchen Sie im Menü auf der linken Seite nach `web.webPageDetails.pageViews.valu
 | ----------------- |-------------| --------------------| 
 | web.webPageDetails.pageViews.value | Seitenansichten |         |
 
-![demo](./images/7-v2.png)
+![demo](./images/7v2.png)
 
-Für die Attributionseinstellungen lassen wir dies leer.
+Für die Attributionseinstellungen müssen Sie nichts ändern.
 
 Hinweis: Persistenzeinstellungen für Metriken können auch in Analysis Workspace geändert werden. In einigen Fällen können Sie sie hier festlegen, um zu vermeiden, dass Business-Anwender überlegen müssen, welches das beste Persistenzmodell ist.
 
@@ -163,8 +161,8 @@ Als Nächstes müssen Sie viele Dimensionen und Metriken konfigurieren, wie in d
 | Call-Feeling | Call Feeling |          |
 | Anruf-ID | Interaktionstyp des Aufrufs |          |
 | callTopic | Gesprächsthema | Zuletzt verwendet, Sitzung |
-| ECID | ECID | Zuletzt verwendet, Person (Reporting-Fenster) |
-| E-Mail | E-Mail-ID | Zuletzt verwendet, Person (Reporting-Fenster) |
+| ECID | ECID | Zuletzt verwendet, Fenster „Personenberichte“ |
+| E-Mail | E-Mail-ID | Zuletzt verwendet, Fenster „Personenberichte“ |
 | Zahlungsart | Zahlungsart |          |
 | Methode zum Hinzufügen von Produkten | Methode zum Hinzufügen von Produkten | Zuletzt verwendet, Sitzung |
 | Ereignistyp | Ereignistyp |         |
@@ -181,31 +179,24 @@ Als Nächstes müssen Sie viele Dimensionen und Metriken konfigurieren, wie in d
 | Menge | Menge |          |
 | commerce.order.priceTotal | Einnahmen |         |
 
-Ihre Konfiguration sollte dann wie folgt aussehen:
+Ihre Konfiguration sollte dann wie folgt aussehen. Vergessen Sie nicht **Ihre Datenansicht** zu speichern“. Klicken Sie also **Speichern** jetzt.
 
-![demo](./images/11-v2.png)
-
-Vergessen Sie nicht **Ihre Datenansicht** zu speichern“. Klicken Sie also **Speichern** jetzt.
-
-![demo](./images/12-v2s.png)
+![demo](./images/11v2.png)
 
 ## Berechnete Metriken 4.1.3.4
 
 
-Obwohl wir alle Komponenten in der Datenansicht organisiert haben, müssen Sie einige von ihnen noch anpassen, damit Business-Anwender bereit sind, mit ihrer Analyse zu beginnen.
+Obwohl Sie alle Komponenten in der Datenansicht organisiert haben, müssen Sie einige von ihnen noch anpassen, damit Business-Anwender bereit sind, ihre Analyse zu starten.
 
-Wenn Sie sich erinnern, haben wir keine spezifischen Metriken wie „Zum Warenkorb hinzufügen“, „Produktansicht“ oder „Käufe“ in die Datenansicht eingefügt.
-Wir haben jedoch eine Dimension namens: **Ereignistyp**. Lassen Sie uns diese Interaktionstypen ableiten, indem wir drei berechnete Metriken erstellen.
+Wenn Sie sich erinnern, haben Sie keine spezifischen Metriken wie „Zum Warenkorb hinzufügen“, „Produktansicht“ oder „Käufe“ in die Datenansicht eingefügt.
+Sie haben jedoch eine Dimension mit dem Namen **Ereignistyp**. Sie können diese Interaktionstypen also ableiten, indem Sie drei berechnete Metriken erstellen.
 
 Beginnen wir mit der ersten Metrik: **Produktansichten**.
 
 Suchen Sie auf der linken Seite nach **Ereignistyp** und wählen Sie die Dimension aus. Ziehen Sie sie dann per Drag-and-Drop auf die Arbeitsfläche **Enthaltene Komponenten**.
-
-![demo](./images/calcmetr1.png)
-
 Klicken Sie auf die neue Metrik **Ereignistyp**, um sie auszuwählen.
 
-![demo](./images/calcmetr2.png)
+![demo](./images/calcmetr1.png)
 
 Ändern Sie nun den Komponentennamen und die Beschreibung in die folgenden Werte:
 
@@ -219,7 +210,7 @@ Jetzt können wir nur Ereignisse **Produktansichten** zählen. Scrollen Sie dazu
 
 ![demo](./images/calcmetr4.png)
 
-Da wir nur &quot;**&quot; zählen möchten** geben Sie **commerce.productViews** unter den Kriterien an.
+Da Sie nur „Produktansichten **zählen möchten,** Sie **commerce.productViews** unter den Kriterien an.
 
 ![demo](./images/calcmetr5.png)
 
@@ -255,7 +246,7 @@ Ziehen Sie zunächst die Dimension **Ereignistyp) per Drag-and** Drop hinüber, 
 
 Es wird ein Popup-Fenster mit einer Warnung zu einem duplizierten Feld angezeigt, da dieselbe Variable verwendet wird. Bitte klicken Sie auf **Trotzdem hinzufügen**:
 
-![demo](./images/calcmetr7.png)
+![demo](./images/calcmetr6.png)
 
 Führen Sie nun denselben Prozess aus wie bei den Metriken Produktansichten und Zum Warenkorb hinzufügen :
 - Ändern Sie zunächst den Namen und die Beschreibung.
@@ -275,7 +266,7 @@ Ihre endgültige Konfiguration sollte dann in etwa wie folgt aussehen. Klicken S
 
 Sie sollten zu diesem Bildschirm weitergeleitet werden:
 
-![demo](./images/8-v2.png)
+![demo](./images/8v2.png)
 
 Auf dieser Registerkarte können Sie einige wichtige Einstellungen ändern, um die Verarbeitung von Daten zu ändern. Beginnen wir mit der Einstellung der **Sitzungs-Timeout** auf 30 Minuten. Dank des Zeitstempels jedes Erlebnisereignisses können Sie das Konzept einer Sitzung über alle Kanäle hinweg erweitern. Was passiert zum Beispiel, wenn ein Kunde das Callcenter anruft, nachdem er die Website besucht hat? Durch die Verwendung benutzerdefinierter Sitzungszeitlimits können Sie flexibel entscheiden, was eine Sitzung ist und wie diese Sitzung Daten zusammenführt.
 
@@ -283,11 +274,11 @@ Auf dieser Registerkarte können Sie einige wichtige Einstellungen ändern, um d
 
 Auf dieser Registerkarte können Sie andere Elemente wie das Filtern der Daten mithilfe eines Segments/Filters ändern. Das brauchen Sie in dieser Übung nicht zu tun.
 
-![demo](./images/10-v2.png)
+![demo](./images/10v2.png)
 
 Wenn Sie fertig sind, klicken Sie auf **Speichern und beenden**.
 
-![demo](./images/13-v2.png)
+![demo](./images/13v2.png)
 
 >[!NOTE]
 >

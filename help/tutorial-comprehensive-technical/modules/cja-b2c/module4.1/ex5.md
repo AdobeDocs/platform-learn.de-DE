@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Visualisierung mithilfe von Customer J
 kt: 5342
 doc-type: tutorial
 exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ In diesen Übungen verwenden Sie Analysis Workspace in CJA, um Produktansichten,
 
 Wir werden einige der Abfragen behandeln, die in Modul 7 - Abfrage-Service durchgeführt wurden, damit Sie sehen können, wie einfach es ist, dieselben Abfragen auszuführen und mehr, aber ohne SQL zu verwenden und sich nur auf die Drag-and-Drop-Philosophie von Analysis Workspace zu verlassen.
 
-Verwenden wir das Projekt, das Sie in [11.4 Datenvorbereitung in Analysis Workspace](./ex4.md) erstellt haben, also [https://analytics.adobe.com](https://analytics.adobe.com).
+Verwenden wir das Projekt, das Sie in [4.1.4 Datenvorbereitung in Analysis Workspace](./ex4.md) erstellt haben, also [https://analytics.adobe.com](https://analytics.adobe.com).
+
+Klicken Sie, um Ihre `--aepUserLdap-- - Omnichannel Analysis` zu öffnen.
 
 ![demo](./images/prohome.png)
-
-Öffnen Sie Ihre `--aepUserLdap-- - Omnichannel Analysis`.
 
 Wenn Ihr Projekt geöffnet und die Datenansicht ausgewählt `--aepUserLdap-- - Omnichannel Analysis`, können Sie mit der Erstellung Ihrer ersten Visualisierungen beginnen.
 
@@ -37,7 +37,7 @@ Wenn Ihr Projekt geöffnet und die Datenansicht ausgewählt `--aepUserLdap-- - O
 
 ## Wie viele Produktansichten haben wir täglich?
 
-Zunächst müssen wir die richtigen Daten zur Analyse der Daten auswählen. Gehen Sie zur Kalender-Dropdown-Liste auf der rechten Seite der Arbeitsfläche. Klicken Sie darauf und wählen Sie den entsprechenden Datumsbereich aus.
+Zunächst müssen Sie die richtigen Daten auswählen, um die Daten zu analysieren. Gehen Sie zur Kalender-Dropdown-Liste auf der rechten Seite der Arbeitsfläche. Klicken Sie darauf und wählen Sie den entsprechenden Datumsbereich aus.
 
 ![demo](./images/pro1.png)
 

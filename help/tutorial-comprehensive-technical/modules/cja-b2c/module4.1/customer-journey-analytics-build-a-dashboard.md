@@ -4,27 +4,18 @@ description: Customer Journey Analytics - Erstellen eines Dashboards mit Analysi
 kt: 5342
 doc-type: tutorial
 exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 1%
 
 ---
 
 # 4.1 Customer Journey Analytics - Erstellen eines Dashboards mit Analysis Workspace zusätzlich zu Adobe Experience Platform
 
-**Autor: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In diesem Modul erhalten Sie praktische Erfahrungen mit dem Customer Journey Analytics-Programm-Service.
 
 Customer Journey Analytics bietet Business Intelligence- und Datenwissenschafts-Teams ein Toolkit für die Zuordnung und Analyse kanalübergreifender Daten (online und offline). Die Funktionen von Customer Journey Analytics liefern den komplexen Multi-Channel-Kunden-Journey Kontext und Klarheit. Der bereitgestellte Kontext generiert umsetzbare Einblicke, wie Sie Probleme aus dem Kundenkonvertierungsprozess entfernen und positive Erlebnisse in den Momenten bereitstellen können, die am wichtigsten sind.
-
-
-Sehen Sie sich dieses Video an, um den Wert, die Kunden-Journey und den Konfigurationsprozess zu verstehen:
-
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
-
-Weitere Informationen zum Customer Journey Analytics finden Sie [hier](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Lernziele
 

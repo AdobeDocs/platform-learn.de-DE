@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Verbinden von Adobe Experience Platfor
 kt: 5342
 doc-type: tutorial
 exl-id: 96e7a5b2-9833-430a-8eab-27651a113675
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -42,23 +42,21 @@ Sie können der Verbindung jetzt einen Namen geben.
 
 Bitte diese Namenskonvention verwenden: `--aepUserLdap-- – Omnichannel Data Connection`.
 
-Beispiel: `vangeluw - Omnichannel Data Connection`
-
-Sie müssen außerdem die richtige zu verwendende Sandbox auswählen. Wählen Sie im Menü Sandbox Ihre Sandbox aus, die `Bootcamp` werden soll. In diesem Beispiel ist die zu verwendende Sandbox **Bootcamp**. Außerdem müssen Sie die **durchschnittliche Anzahl der täglichen Ereignisse** auf **weniger als 1 Million)**.
+Sie müssen außerdem die richtige zu verwendende Sandbox auswählen. Wählen Sie im Menü Sandbox Ihre Sandbox aus, die `--aepSandboxName--` werden soll. In diesem Beispiel lautet die Sandbox **Tech Insiders**. Sie müssen auch die **durchschnittliche Anzahl der täglichen Ereignisse** auf **weniger als 1 Million)**.
 
 ![demo](./images/cjasb.png)
 
-Nach Auswahl der Sandbox werden die verfügbaren Datensätze aktualisiert.
+Nachdem Sie Ihre Sandbox ausgewählt haben, können Sie mit dem Hinzufügen von Datensätzen beginnen. Klicken Sie **Datensätze hinzufügen**.
 
 ![demo](./images/cjasb1.png)
 
 ## 4.1.2.2 Adobe Experience Platform-Datensätze auswählen
 
-Suchen Sie nach der `Demo System - Event Dataset for Website (Global v1.1)`. Klicken Sie auf **+**, um den Datensatz zu dieser Verbindung hinzuzufügen.
+Suchen Sie nach der `Demo System - Event Dataset for Website (Global v1.1)`. Aktivieren Sie das Kästchen für diesen Datensatz, um ihn dieser Verbindung hinzuzufügen.
 
 ![demo](./images/cja7.png)
 
-Suchen und aktivieren Sie nun die Kontrollkästchen für `Demo System - Event Dataset for Voice Assistants (Global v1.1)` und `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Im selben Bildschirm verbleiben und jetzt das Kontrollkästchen nach `Demo System - Event Dataset for Call Center (Global v1.1)` durchsuchen und aktivieren.
 
 Dann hast du das hier. Klicken Sie auf **Weiter**.
 
@@ -72,7 +70,7 @@ Das Ziel besteht nun darin, diese Datensätze zusammenzuführen. Für jeden ausg
 
 ![demo](./images/cja11.png)
 
-Wie Sie sehen können, ist bei den meisten Personen-IDs automatisch ausgewählt. Dies liegt daran, dass in jedem Schema in Adobe Experience Platform eine Primäre Kennung ausgewählt ist. Hier finden Sie beispielsweise das Schema für `Demo System - Event Schema for Call Center (Global v1.1)`, in dem Sie sehen können, dass die Primäre Kennung auf `phoneNumber` festgelegt ist.
+Wie Sie sehen können, ist bei den meisten Personen-IDs automatisch ausgewählt. Dies liegt daran, dass in jedem Schema in Adobe Experience Platform eine Primäre Identität ausgewählt ist. Hier finden Sie beispielsweise das Schema für `Demo System - Event Schema for Website (Global v1.1)`, in dem Sie sehen können, dass die Primäre Identität auf `ecid` festgelegt ist.
 
 ![demo](./images/cja13.png)
 
@@ -84,7 +82,7 @@ Wie bereits erwähnt, können Sie für jeden Datensatz unterschiedliche Personen
 
 Der Name des Personen-ID-Feldes ist nicht wichtig, solange der Wert in den Personen-ID-Feldern übereinstimmt. Angenommen, wir haben `email` in einem Datensatz und `emailAddress` in einem anderen Datensatz, der als Personen-ID definiert ist. Wenn `delaigle@adobe.com` für das Personen-ID-Feld in beiden Datensätzen derselbe Wert ist, kann CJA die Daten zusammenfügen.
 
-Derzeit gibt es einige andere Einschränkungen, z. B. das Zuordnen des anonymen Verhaltens zu bekannten. Lesen Sie die FAQs hier: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+Lesen Sie die häufig gestellten Fragen zu CJA hier, um die Feinheiten bei der Identitätszuordnung zu verstehen: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Daten mithilfe der Personen-ID zusammenfügen
 
@@ -92,32 +90,38 @@ Nachdem Sie nun das Konzept des Zusammenfügens von Datensätzen mit der Persone
 
 ![demo](./images/cja15.png)
 
-Gehen Sie zu jedem Datensatz, um die Personen-ID zu aktualisieren.
+Gehen Sie zu jedem Datensatz, um die Personen-ID zu aktualisieren. Füllen Sie jetzt das Feld Personen-ID aus, indem Sie die `email` in der Dropdown-Liste auswählen.
 
 ![demo](./images/cja12a.png)
 
-Füllen Sie jetzt das Feld Personen-ID aus, indem Sie die `email` in der Dropdown-Liste auswählen.
-
-![demo](./images/cja17.png)
-
-Nachdem Sie die drei Datensätze zusammengefügt haben, können wir fortfahren.
+Nachdem Sie die beiden Datensätze zugeordnet haben, können Sie fortfahren.
 
 | datensatz | Personen-ID |
 | ----------------- |-------------| 
 | Demosystem - Ereignisdatensatz für eine Website (Global v1.1) | E-Mail |
-| Demosystem - Ereignisdatensatz für Sprachassistenten (Global v1.1) | E-Mail |
 | Demosystem - Ereignisdatensatz für Callcenter (Global v1.1) | E-Mail |
 
-Sie müssen außerdem sicherstellen, dass diese Optionen für jeden Datensatz aktiviert sind:
+Sie müssen außerdem sicherstellen, dass diese Optionen für beide Datensätze aktiviert sind:
 
 - Alle neuen Daten importieren
 - Alle vorhandenen Daten aufstocken
+
+(Vergessen Sie nicht, beide Optionen für den zweiten Datensatz zu aktivieren.)
+
+Außerdem müssen Sie für jeden Datensatz **Datenquellentyp** auswählen.
+
+Dies sind die Einstellungen für den Datensatz **Demosystem - Ereignisdatensatz für die Website (Global v1.1)**.
+
+![demo](./images/cja16a.png)
+
+Dies sind die Einstellungen für den Datensatz **Demosystem - Ereignisdatensatz für die Website (Global v1.1)**.
 
 Klicken Sie **Datensätze hinzufügen**.
 
 ![demo](./images/cja16.png)
 
 Klicken Sie **Speichern** und gehen Sie zur nächsten Übung.
+
 Nachdem Sie Ihre **Verbindung** erstellt haben, kann es einige Stunden dauern, bis Ihre Daten in CJA verfügbar sind.
 
 ![demo](./images/cja20.png)

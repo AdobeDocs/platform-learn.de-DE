@@ -4,10 +4,10 @@ description: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: 793b35c6-761f-4b0a-b0bc-3eab93c82162
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 4%
+source-wordcount: '710'
+ht-degree: 3%
 
 ---
 
@@ -21,45 +21,33 @@ ht-degree: 4%
 
 ## Bevor Sie beginnen
 
-Nach Übung 12.3 sollte diese Seite in Adobe Experience Platform geöffnet sein:
+Nach der vorherigen Übung sollte diese Seite in Adobe Experience Platform geöffnet sein:
 
 ![demo](./images/datasets.png)
 
-**Wenn Sie es geöffnet haben, setzen Sie die Übung 12.4.1 fort.**
+**Wenn Sie sie geöffnet haben, fahren Sie mit der nächsten Übung fort.**
 
 **Wenn es nicht geöffnet ist, navigieren Sie zu [Adobe Experience Platform](https://experience.adobe.com/platform/home).**
 
-Navigieren Sie im linken Menü zu Quellen . Anschließend wird die Homepage **Quellen** angezeigt. Klicken Sie **Menü** Quellen“ auf **Datenbanken**.
+Navigieren Sie im linken Menü zu Quellen . Anschließend wird die Homepage **Quellen** angezeigt. Wechseln Sie im **Quellen** zum **Quell-Connector von Google BigQuery** und klicken Sie auf **Einrichten**.
 
 ![demo](./images/sourceshome.png)
 
-Wählen Sie den **Google BigQuery** Source Connector aus und klicken Sie auf **+ Konfigurieren**.
+Daraufhin wird der Auswahlbildschirm für das Google BigQuery-Konto angezeigt. Wählen Sie Ihr Konto aus und klicken Sie auf **Weiter**.
 
-![demo](./images/bq.png)
+![demo](./images/0c.png)
 
-Daraufhin wird der Auswahlbildschirm für das Google BigQuery-Konto angezeigt.
-
-![demo](./images/0-c.png)
-
-Wählen Sie Ihr Konto aus und klicken Sie auf **Weiter**.
-
-![demo](./images/ex4/0-d.png)
-
-Anschließend wird die Ansicht **Daten hinzufügen** angezeigt.
+Anschließend wird der Bildschirm **Daten auswählen** angezeigt.
 
 ![demo](./images/datasets.png)
 
 ## 4.2.4.1 BigQuery-Tabellenauswahl
 
-Wählen Sie in **Ansicht** Daten hinzufügen“ Ihren BigQuery-Datensatz aus.
-
-![demo](./images/datasets.png)
-
-Sie können jetzt eine Beispieldatenvorschau der Google Analytics-Daten in BigQuery sehen.
+Wählen **im Bildschirm „Daten**&quot; Ihren BigQuery-Datensatz aus. Sie können jetzt eine Beispieldatenvorschau der Google Analytics-Daten in BigQuery sehen.
 
 Klicken Sie auf **Weiter**.
 
-![demo](./images/ex4/3.png)
+![demo](./images/datasets1.png)
 
 ## XDM-Zuordnung 4.2.4.2
 
@@ -73,7 +61,7 @@ Wählen Sie **Vorhandener Datensatz** aus. Öffnen Sie das Dropdown-Menü, um ei
 
 ![demo](./images/xdm6.png)
 
-Scroll down. Jetzt müssen Sie jedes **Source-Feld** von Google Analytics/BigQuery einem XDM-**Target-Feld** Feld für Feld zuordnen.
+Scroll down. Jetzt müssen Sie jedes **Source-Feld** von Google Analytics/BigQuery einem XDM-**Target-Feld** Feld für Feld zuordnen. Möglicherweise wird eine Reihe von Fehlern angezeigt, die in der folgenden Zuordnungsübung behoben werden.
 
 ![demo](./images/xdm8.png)
 
@@ -81,43 +69,51 @@ Verwenden Sie die folgende Zuordnungstabelle für diese Übung.
 
 | Quellfeld | Zielfeld |
 | ----------------- |-------------| 
-| **_id** | _id |
-| **_id** | Kanal._id |
-| Zeitstempel | Zeitstempel |
-| GA_ID | ``--aepTenantId--``.identification.core.gaid |
-| customerID | ``--aepTenantId--``.identification.core.loyaltyId |
-| Seite | web.webPageDetails.name |
-| Gerät | device.type |
-| Browser | environment.browserDetails.vendor |
-| Marketing-Kanal | marketing.trackingCode |
-| Traffic-Herkunft | channel.typeAtSource |
-| Verkehrsmittel | channel.mediaType |
-| TransactionID | commerce.order.payments.transactionID |
-| ecommerce_action_type | eventType |
-| Seitenansichten | web.webPageDetails.pageViews.value |
-| Unique_Purchases | commerce.purchases.value |
-| product_detail_views | commerce.productViews.value |
-| ADDS_TO_CART | commerce.productListAdds.value |
-| product_removes_from_cart | commerce.productListRemovals.value |
-| product_checkouts | commerce.checkouts.value |
+| `_id` | `_id` |
+| `_id` | Kanal._id |
+| `timeStamp` | Zeitstempel |
+| `GA_ID` | ``--aepTenantId--``.identification.core.gaid |
+| `customerID` | ``--aepTenantId--``. identification.core.crmId |
+| `Page` | web.webPageDetails.name |
+| `Device` | device.type |
+| `Browser` | environment.browserDetails.vendor |
+| `MarketingChannel` | marketing.trackingCode |
+| `TrafficSource` | channel.typeAtSource |
+| `TrafficMedium` | channel.mediaType |
+| `TransactionID` | commerce.order.payments.transactionID |
+| `Ecommerce_Action_Type` | eventType |
+| `Pageviews` | web.webPageDetails.pageViews.value |
 
-Nachdem Sie die obige Zuordnung kopiert und in die Adobe Experience Platform-Benutzeroberfläche eingefügt haben, überprüfen Sie, ob Fehler aufgrund von Tippfehlern oder führenden/nachfolgenden Leerzeichen angezeigt werden.
 
-Sie haben jetzt eine **Zuordnung** wie diese:
+Bei einigen Feldern müssen Sie die ursprüngliche Zuordnung entfernen und eine neue erstellen, bei einem **berechneten Feld**.
 
-![demo](./images/xdm34.png)
+| Berechnetes Feld | Zielfeld |
+| ----------------- |-------------| 
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Refunds"), 1, 0)` | commerce.purchases.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Detail_Views"), 1, 0)` | commerce.productViews.value |
+| `iif("Adds_To_Cart".equalsIgnoreCase("Adds_To_Cart"), 1, 0)` | commerce.productListAdds.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Removes_From_Cart"), 1, 0)` | commerce.productListRemovals.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Checkouts"), 1, 0)` | commerce.checkouts.value |
+
+Um ein **berechnetes Feld** zu erstellen, klicken Sie auf **+ Neuer** und anschließend auf **Berechnetes Feld**.
+
+![demo](./images/xdm8a.png)
+
+Fügen Sie die obige Regel ein und klicken Sie **Speichern** für jedes der Felder in der obigen Tabelle.
+
+![demo](./images/xdm8b.png)
+
+Sie haben jetzt eine **Zuordnung** wie diese hier.
 
 Die Quellfelder **GA_ID** und **customerID** werden einer Kennung in diesem XDM-Schema zugeordnet. Auf diese Weise können Sie Google Analytics-Daten (Web-/App-Verhaltensdaten) mit anderen Datensätzen wie Treue- oder Callcenter-Daten anreichern.
 
 Klicken Sie auf **Weiter**.
 
-![demo](./images/ex4/38.png)
+![demo](./images/xdm34.png)
 
 ## 4.2.4.3 der Verbindung und Planung der Datenaufnahme
 
 Daraufhin wird die Registerkarte **Planung** angezeigt:
-
-![demo](./images/xdm38a.png)
 
 Auf der Registerkarte **Planung** können Sie eine Häufigkeit für den Datenaufnahmeprozess für diese (**)** Daten definieren.
 
@@ -125,59 +121,26 @@ Da Sie Demodaten in Google BigQuery verwenden, die nicht aktualisiert werden, be
 
 - Häufigkeit: **Woche**
 - Intervall: **200**
-
-![demo](./images/ex4/39.png)
+- Startzeit: **jederzeit in der nächsten Stunde**
 
 **Wichtig**: Stellen Sie sicher, dass Sie den Umschalter **Aufstockung** aktivieren.
 
-![demo](./images/ex4/39a.png)
-
 Zu guter Letzt müssen Sie ein Feld **delta** definieren.
-
-![demo](./images/ex4/36.png)
 
 Das **delta**-Feld wird verwendet, um die Verbindung zu planen und nur neue Zeilen hochzuladen, die in Ihren BigQuery-Datensatz gelangen. Ein Delta-Feld ist normalerweise immer eine Zeitstempelspalte. Für zukünftige geplante Datenerfassungen werden also nur die Zeilen mit einem neuen, neueren Zeitstempel aufgenommen.
 
 Wählen Sie **timeStamp** als Delta-Feld aus.
-
-![demo](./images/ex4/37.png)
-
-Jetzt hast du das.
-
-![demo](./images/xdm37a.png)
-
 Klicken Sie auf **Weiter**.
 
-![demo](./images/ex4/42.png)
+![demo](./images/ex437.png)
 
 ## Verbindung 4.2.4.4 und starten
 
-In der **Datensatzflussdetails** Ansicht. Sie müssen Ihre Verbindung benennen, damit Sie sie später finden können.
-
-Bitte diese Namenskonvention verwenden:
-
-| Feld | Benennung | Beispiel |
-| ----------------- |-------------| -------------|
-| Name des Datensatz-Flusses | DataFlow - LDAP - BigQuery Website Interaction | Datenfluss - vangeluw - BigQuery Website Interaction |
-| Beschreibung | DataFlow - LDAP - BigQuery Website Interaction | Datenfluss - vangeluw - BigQuery Website Interaction |
-
-![demo](./images/xdm44.png)
-
-Klicken Sie auf **Weiter**.
-
-![demo](./images/ex4/45.png)
-
 Jetzt sehen Sie einen detaillierten Überblick über Ihre Verbindung. Stellen Sie sicher, dass alles korrekt ist, bevor Sie fortfahren, da einige Einstellungen anschließend nicht mehr geändert werden können, z. B. die XDM-Zuordnung.
-
-![demo](./images/xdm46.png)
 
 Klicken Sie auf **Fertigstellen**.
 
-![demo](./images/ex4/finish.png)
-
-Die Einrichtung der Verbindung kann einige Zeit in Anspruch nehmen. Seien Sie also unbesorgt, wenn Sie dies sehen:
-
-![demo](./images/ex4/47.png)
+![demo](./images/xdm46.png)
 
 Nachdem die Verbindung erstellt wurde, wird Folgendes angezeigt:
 
