@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Visualisierung mithilfe von Customer J
 kt: 5342
 doc-type: tutorial
 exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -49,15 +49,15 @@ Automatisch wird die **Tag** hinzugefügt, um die erste Tabelle zu erstellen. Je
 
 ![demo](./images/pro3.png)
 
-Klicken Sie anschließend mit der rechten Maustaste auf die Metrik-Zusammenfassung.
+Klicken Sie anschließend mit der rechten Maustaste auf die Metrik-Zusammenfassung. Klicken Sie **Visualisieren**.
 
 ![demo](./images/pro4.png)
 
-Klicken Sie auf **Visualisieren** und wählen Sie dann **Linie** als Visualisierung aus.
+Klicken Sie auf **LINE**.
 
 ![demo](./images/pro5.png)
 
-Sie sehen Ihre Produktansichten nach Tag.
+Sie sehen Ihre Produktansichten nach Stunden.
 
 ![demo](./images/pro6.png)
 
@@ -90,7 +90,7 @@ Finden wir die fünf am häufigsten angezeigten Produkte. Suchen Sie im Menü au
 
 Ziehen Sie nun per Drag-and **Drop „Produktname**, um die Dimension **Tag** zu ersetzen:
 
-Dies wird das Ergebnis sein
+Dies wird das Ergebnis sein. Wählen Sie die vier Produktnamen aus, und Sie sehen das Visualisierungs-Update.
 
 ![demo](./images/pro10a.png)
 
@@ -110,13 +110,9 @@ Schließlich können Sie weitere Visualisierungen hinzufügen. Suchen Sie auf de
 
 ![demo](./images/pro18.png)
 
-Wählen Sie als Nächstes in der Tabelle die ersten 5 Zeilen **Benutzeragenten** aus der Aufschlüsselung aus, die wir unter **Google Pixel XL 32 GB Black Smartphone** > **Citi Signal** durchgeführt haben. Halten Sie die Taste **STRG** (unter Windows) oder die Schaltfläche **Befehl** (unter Mac) gedrückt, während Sie die drei Zeilen auswählen.
+Wählen Sie als Nächstes in der Tabelle die ersten 5 Zeilen **Benutzeragenten** aus der Aufschlüsselung aus, die wir unter **Google Pixel XL 32 GB Black Smartphone** > **Citi Signal** durchgeführt haben. Halten Sie die Taste **STRG** (unter Windows) oder die Schaltfläche **Befehl** (unter Mac) gedrückt, während Sie die drei Zeilen auswählen. Sie werden sehen, wie das Ringdiagramm aktualisiert wird.
 
 ![demo](./images/pro20.png)
-
-Das Ringdiagramm wird geändert:
-
-![demo](./images/pro21.png)
 
 Sie können das Design sogar für eine bessere Lesbarkeit anpassen, indem Sie sowohl das **Linie**-Diagramm als auch das **Ringdiagramm** etwas kleiner gestalten, damit sie nebeneinander passen:
 
@@ -156,13 +152,9 @@ Sie werden es dann sehen.
 
 ![demo](./images/prodatefa.png)
 
-Suchen Sie die Dimension **Ereignistyp** unter den Komponenten auf der linken Seite:
+Suchen Sie die Dimension **Ereignistyp** unter den Komponenten auf der linken Seite. Klicken Sie auf den Pfeil, um die Dimension zu öffnen.
 
 ![demo](./images/pro26.png)
-
-Klicken Sie auf den Pfeil, um die Dimension zu öffnen:
-
-![demo](./images/pro27.png)
 
 Es werden alle verfügbaren Ereignistypen angezeigt.
 
@@ -176,7 +168,7 @@ Tun Sie dasselbe mit **commerce.productListAdds** und **commerce.purchases** und
 
 ![demo](./images/props1.png)
 
-Hier kann man vieles machen. Einige Beispiele: Vergleichen im Zeitverlauf, Vergleichen jedes Schritts nach Gerät oder Vergleichen nach Treue. Wenn wir jedoch interessante Dinge analysieren möchten, wie z. B. warum Kunden nach dem Hinzufügen eines Artikels zu ihrem Warenkorb keinen Kauf tätigen, können wir das beste Tool in CJA verwenden: Rechtsklick.
+Hier kann man vieles machen. Einige Beispiele: Vergleichen im Zeitverlauf, Vergleichen jedes Schritts nach Gerät oder Vergleichen nach Treue. Wenn Sie jedoch interessante Dinge analysieren möchten, z. B. warum Kunden nach dem Hinzufügen eines Artikels zu ihrem Warenkorb keinen Kauf tätigen, können wir das beste Tool in CJA verwenden: Rechtsklick.
 
 Klicken Sie mit der rechten Maustaste auf den Touchpoint **commerce.productListAdds**. Klicken Sie dann auf **Fallout aufschlüsseln bei diesem Touchpoint**.
 
@@ -194,36 +186,24 @@ Eine neue Freiformtabelle wird erstellt, um zu analysieren, was die Personen get
 
 Auch hier gibt es viele Möglichkeiten, diese Analyse durchzuführen. Beginnen wir mit der Flussanalyse, um den Erkennungsteil zu starten.
 
-Das aktuelle Bedienfeld schließen, indem Sie hier klicken:
+Schließen Sie das aktuelle Bedienfeld, indem Sie hier klicken und dann ein neues leeres Bedienfeld hinzufügen, indem Sie auf **+ Leeres Bedienfeld hinzufügen klicken**.
 
 ![demo](./images/pro0.png)
-
-Fügen Sie nun ein neues leeres Bedienfeld hinzu, indem Sie auf **+ Leeres Bedienfeld hinzufügen klicken**.
-
-![demo](./images/pro0a.png)
 
 Klicken Sie auf die **„Fluss**.
 
 ![demo](./images/pro35.png)
 
-Sie sehen dann Folgendes:
-
-![demo](./images/pro351.png)
-
-Wählen Sie denselben Datumsbereich wie in der vorherigen Übung aus.
+Sie werden es dann sehen. Wählen Sie denselben Datumsbereich wie in der vorherigen Übung aus. Klicken Sie auf **Übernehmen**.
 
 ![demo](./images/pro0b.png)
 
-Suchen Sie die Dimension **Seitenname** unter den Komponenten auf der linken Seite:
+Suchen Sie die Dimension **Seitenname** unter den Komponenten auf der linken Seite und klicken Sie auf den Pfeil, um die Dimension zu öffnen.
 
 ![demo](./images/pro36.png)
 
-Klicken Sie auf den Pfeil, um die Dimension zu öffnen:
-
-![demo](./images/pro37.png)
-
 Sie finden alle angesehenen Seiten. Suchen Sie den Seitennamen: **Service abbrechen**.
-Ziehen Sie **Service abbrechen** in die Flussvisualisierung im mittleren Feld:
+Ziehen Sie **Service abbrechen** in die Flussvisualisierung im mittleren Feld. Klicken Sie **Erstellen**.
 
 ![demo](./images/pro38.png)
 
@@ -274,27 +254,19 @@ Wählen Sie nun **positiv** als Wert für den Filter aus.
 
 ![demo](./images/pro49.png)
 
-Ändern Sie den Bereich in &quot;**&quot;**.
+Ändern Sie den Bereich in &quot;**&quot;**. Klicken Sie auf **Speichern**.
 
 ![demo](./images/pro50.png)
 
-Klicken Sie abschließend auf **Speichern**.
-
-![demo](./images/pro51.png)
-
-Dann bist du wieder hier. Falls noch nicht geschehen, schließen Sie das vorherige Bedienfeld.
+Dann bist du wieder hier. Falls noch nicht geschehen, schließen Sie das vorherige Bedienfeld und fügen Sie ein neues leeres Bedienfeld hinzu, indem Sie auf **+ Leeres Bedienfeld hinzufügen klicken**.
 
 ![demo](./images/pro0c.png)
 
-Fügen Sie nun ein neues leeres Bedienfeld hinzu, indem Sie auf **+ Leeres Bedienfeld hinzufügen klicken**.
-
-![demo](./images/pro24c.png)
-
-Wählen Sie denselben Datumsbereich wie in der vorherigen Übung aus.
+Wählen Sie denselben Datumsbereich wie in der vorherigen Übung aus. Klicken Sie auf **Übernehmen**.
 
 ![demo](./images/pro24d.png)
 
-Klicken Sie auf **Freiformtabelle**.
+Klicken Sie **Freiformtabelle**.
 
 ![demo](./images/pro52.png)
 

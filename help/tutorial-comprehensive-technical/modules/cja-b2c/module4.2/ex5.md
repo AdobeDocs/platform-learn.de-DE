@@ -4,9 +4,9 @@ description: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3100'
 ht-degree: 2%
 
 ---
@@ -119,69 +119,44 @@ Klicken Sie **Speichern und fortfahren**.
 
 ![demo](./images/22.png)
 
+Klicken Sie auf **Speichern**.
+
+![demo](./images/22a.png)
+
 Sie können jetzt Komponenten zu Ihrer Datenansicht hinzufügen. Wie Sie sehen können, werden einige Metriken und Dimensionen automatisch hinzugefügt.
 
 ![demo](./images/24.png)
 
-Fügen Sie der Datenansicht die folgenden Komponenten hinzu:
+Fügen Sie die folgenden Komponenten zur Datenansicht hinzu. Stellen Sie außerdem sicher, dass Sie die Feldnamen in Anzeigenamen ändern. Wählen Sie dazu die Metrik oder Dimension aus und aktualisieren Sie das Feld **Komponentenname** im rechten Menü.
 
-| Name der Komponente | Komponententyp | Komponentenpfad |
-| -----------------|-----------------|-----------------|
-| Ebene | Dimension | _experienceplatform.loyaltyDetails.level |
-| Punkte | Metrik | _experienceplatform.loyaltyDetails.points |
-| commerce.checkouts.value | Metrik | commerce.checkouts.value |
-| commerce.productListRemovals.value | Metrik | commerce.productListRemovals.value |
-| commerce.productListAdds | Metrik | commerce.productListAdds |
-| commerce.productViews.value | Metrik | commerce.productViews.value |
-| commerce.purchases.value | Metrik | commerce.purchases.value |
-| web.webPageDetails.pageViews | Metrik | web.webPageDetails.pageViews |
-| Transaction ID | Dimension | commerce.order.payments.transactionID |
-| channel.mediaType | Dimension | channel.mediaType |
-| channel.typeAtSource | Dimension | channel.typeAtSource |
-| Trackingcode | Dimension | marketing.trackingCode |
-| GAID | Dimension | _experienceplatform.identification.core.gaid |
-| web.webPageDetails.name | Dimension | web.webPageDetails.name |
-| Ereignistyp | Dimension | eventType |
-| Anbieter | Dimension | environment.browserDetails.vendor |
-| Kennung | Dimension | _id |
-| Zeitstempel | Dimension | Zeitstempel |
-| Typ | Dimension | device.type |
-| LoyaltyId | Dimension | _experienceplatform.identification.core.loyaltyId |
-
-Sie erhalten dann Folgendes:
-
-![demo](./images/25.png)
-
-Als Nächstes müssen Sie den Anzeigenamen einiger der oben genannten Metriken und Dimensionen ändern, damit Sie sie beim Erstellen Ihrer Analyse einfach verwenden können. Wählen Sie dazu die Metrik oder Dimension aus und aktualisieren Sie das Feld **Name** wie in der folgenden Abbildung dargestellt.
-
-![demo](./images/25a.png)
-
-| Ursprünglicher Komponentenname | Anzeigename |
-| -----------------|-----------------|
-| Ebene | Treuestufe |
-| Punkte | Treuepunkte |
-| commerce.checkouts.value | Checkouts |
-| commerce.productListRemovals.value | Entnahmen aus Warenkorb |
-| commerce.productListAdds | Hinzufügen zum Warenkorb |
-| commerce.productViews.value | Produktansichten |
-| commerce.purchases.value | Käufe |
-| web.webPageDetails.pageViews | Seitenansichten |
-| channel.mediaType | Traffic Medium |
-| channel.typeAtSource | Traffic-Quelle |
-| Trackingcode | Marketing-Kanal |
-| GAID | Google Analytics-ID |
-| Name | Seitentitel |
-| Anbieter | Browser |
-| Typ | Device Type |
-| LoyaltyId | Treue-ID |
+| Komponententyp | Ursprünglicher Komponentenname | Anzeigename | Komponentenpfad |
+| -----------------| -----------------|-----------------|-----------------|
+| Metrik | commerce.checkouts.value | Checkouts | `commerce.checkouts.value` |
+| Metrik | commerce.productListRemovals.value | Entnahmen aus Warenkorb | `commerce.productListRemovals.value` |
+| Metrik | commerce.productListAdds | Hinzufügen zum Warenkorb | `commerce.productListAdds` |
+| Metrik | commerce.productViews.value | Produktansichten | `commerce.productViews.value` |
+| Metrik | commerce.purchases.value | Käufe | `commerce.purchases.value` |
+| Metrik | web.webPageDetails.pageViews | Seitenansichten | `web.webPageDetails.pageViews` |
+| Metrik | Punkte | Treuepunkte | `_experienceplatform.loyaltyDetails.points` |
+| Dimension | Ebene | Treuestufe | `_experienceplatform.loyaltyDetails.level` |
+| Dimension | channel.mediaType | Traffic Medium | `channel.mediaType` |
+| Dimension | channel.typeAtSource | Traffic-Quelle | `channel.typeAtSource` |
+| Dimension | Trackingcode | Marketing-Kanal | `marketing.trackingCode` |
+| Dimension | GAID | Google Analytics-ID | `_experienceplatform.identification.core.gaid` |
+| Dimension | web.webPageDetails.name | Seitentitel | `web.webPageDetails.name` |
+| Dimension | Anbieter | Browser | `environment.browserDetails.vendor` |
+| Dimension | Typ | Device Type | `device.type` |
+| Dimension | LoyaltyId | Treue-ID | `_experienceplatform.identification.core.loyaltyId` |
+| Dimension | commerce.order.payments.transactionID | Transaction ID | `commerce.order.payments.transactionID` |
+| Dimension | eventType | Ereignistyp | `eventType` |
+| Dimension | Zeitstempel | Zeitstempel | `timestamp` |
+| Dimension | `_id` | Kennung | `_id` |
 
 Sie erhalten dann etwas wie das Folgende:
 
 ![demo](./images/25b.png)
 
-Als Nächstes müssen Sie einige Änderungen am Personen- und Sitzungskontext für einige dieser Komponenten vornehmen, indem Sie die &quot;**&quot;**.
-
-![demo](./images/25c.png)
+Als Nächstes müssen Sie einige Änderungen am Personen- und Sitzungskontext für einige dieser Komponenten vornehmen, indem Sie die Einstellungen **Attribution oder Persistenz** ändern.
 
 Ändern Sie die **Attributionseinstellungen** für die folgenden Komponenten:
 
@@ -193,37 +168,30 @@ Als Nächstes müssen Sie einige Änderungen am Personen- und Sitzungskontext f�
 | Traffic Medium |
 | Device Type |
 | Google Analytics-ID |
-| Treue-ID |
-| Treuestufe |
-| Treuepunkte |
 
-Wählen Sie dazu die Komponente aus, klicken Sie auf **Benutzerdefiniertes Attributionsmodell verwenden** und legen Sie **Modell** auf **Letztkontakt** und **Gültigkeit** auf **Person (Reporting-Fenster)**. Wiederholen Sie dies für alle oben genannten Komponenten.
+Wählen Sie dazu die Komponente aus, klicken Sie auf **Benutzerdefiniertes Attributionsmodell verwenden** und legen Sie **Modell** auf **Zuletzt verwendet** und **Gültigkeit** auf **Personen-Reporting-Fenster**. Wiederholen Sie dies für alle oben genannten Komponenten.
 
 ![demo](./images/27a.png)
 
-Nachdem Sie die Änderungen an den Attributionseinstellungen für alle oben genannten Komponenten vorgenommen haben, sollten Sie diese Ansicht haben:
+Nachdem Sie die Änderungen an den Attributionseinstellungen für alle oben genannten Komponenten vorgenommen haben, sollten Sie diese Ansicht haben. Klicken Sie **Speichern und fortfahren**.
 
 ![demo](./images/27.png)
 
-Ihre Datenansicht ist jetzt konfiguriert. Klicken Sie auf **Speichern**.
+Auf dem **Einstellungen** sind keine Änderungen erforderlich. Klicken Sie auf **Speichern und beenden**.
 
-![demo](./images/30.png)
+![demo](./images/27b.png)
 
 Sie können jetzt die Daten von Google Analytics in Adobe Analytics Analysis Workspace analysieren. Gehen wir zur nächsten Übung über.
 
 ## 4.2.5.3 Erstellen eines Projekts
 
-Gehen Sie in Customer Journey Analytics zu **Projekte**.
+Wechseln Sie in Customer Journey Analytics zu **Workspace**. Klicken Sie **Projekt erstellen**
 
 ![demo](./images/pro1.png)
 
-Sie sehen dann Folgendes:
+Wählen Sie **Leeres Workspace-Projekt** und klicken Sie auf **Erstellen**.
 
 ![demo](./images/pro2.png)
-
-Erstellen Sie ein Projekt, indem **Neues Projekt erstellen** klicken.
-
-![demo](./images/pro3.png)
 
 Sie haben jetzt ein leeres Projekt:
 
@@ -236,27 +204,21 @@ Speichern Sie zunächst Ihr Projekt und geben Sie ihm einen Namen. Sie können d
 | Windows | Strg+S |
 | Mac | Befehl + S |
 
-Daraufhin wird dieses Popup angezeigt:
-
-![demo](./images/prsave.png)
-
-Bitte diese Namenskonvention verwenden:
+Es wird ein Popup angezeigt. Bitte diese Namenskonvention verwenden:
 
 | Name | Beschreibung |
 | ----------------- |-------------| 
-| LDAP - GA + Loyalty Workspace | LDAP - GA + Loyalty Workspace |
+| `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
-Klicken Sie anschließend auf **Projekt speichern**.
+Klicken Sie anschließend auf **Speichern**.
 
-![demo](./images/prsave2.png)
+![demo](./images/prsave.png)
 
-Wählen Sie anschließend die richtige Datenansicht in der oberen rechten Ecke Ihres Bildschirms aus. Dies ist die Datenansicht, die Sie in der vorherigen Übung erstellt haben, mit der `ldap - GA + Loyalty Data View` der Namenskonvention. In diesem Beispiel ist die auszuwählende Datenansicht `ldap - GA + Loyalty Data View`.
+Wählen Sie anschließend die richtige Datenansicht in der oberen rechten Ecke Ihres Bildschirms aus. Dies ist die Datenansicht, die Sie in der vorherigen Übung erstellt haben, mit der `--aepUserLdap-- - GA + Loyalty Data View` der Namenskonvention.
 
 ![demo](./images/prdvlist.png)
 
-![demo](./images/prdv.png)
-
-### 12.5.3.1 Freiformtabellen
+### 4.2.5.3.1 Freiformtabellen
 
 Freiformtabellen funktionieren mehr oder weniger als Pivot-Tabellen in Excel. Sie wählen etwas aus der linken Leiste aus, ziehen es in die Freiform und Sie erhalten einen Tabellenbericht.
 
@@ -270,13 +232,9 @@ Nachfolgend sehen Sie zwei Beispiele, in denen Sie SQL, BigQuery und einige Zeit
 
 Beantworten wir diese und einige weitere Fragen mit Analysis Workspace in CJA.
 
-Wählen Sie zunächst den rechten Datumsbereich (**Letzte 53 volle Wochen**) auf der rechten Seite des Bedienfelds aus.
+Wählen Sie zunächst den rechten Datumsbereich (**Heute**) auf der rechten Seite des Bedienfelds aus. Klicken Sie auf **Anwenden**.
 
 ![demo](./images/pro11.png)
-
-Klicken Sie anschließend **Anwenden**, um den Datumsbereich anzuwenden. Merken Sie sich diesen Schritt für die nächsten Übungen.
-
-![demo](./images/apply.png)
 
 >[!NOTE]
 >
@@ -296,9 +254,13 @@ Bevor Sie dies tun können, müssen Sie die berechnete Metrik **Konversionsrate)
 
 ![demo](./images/procalc1.png)
 
-Verwenden Sie als Namen für die berechnete Metrik **Konversionsrate**. Ziehen Sie dann die Metriken **Kauf** und **Sitzungen** auf die Arbeitsfläche. Legen Sie **Format** auf **Prozent** und **Dezimalstellen** auf **2** fest. Klicken Sie abschließend auf **Speichern**.
+Verwenden Sie als Namen für die berechnete Metrik **Konversionsrate** und verwenden Sie **conversionRate** für **Externe ID**. Ziehen Sie dann die Metriken **Kauf** und **Sitzungen** auf die Arbeitsfläche. Legen Sie **Format** auf **Prozent** und **Dezimalstellen** auf **2** fest. Klicken Sie abschließend auf **Speichern**.
 
 ![demo](./images/procalc2.png)
+
+Klicken Sie auf **Speichern**.
+
+![demo](./images/procalc2a.png)
 
 Als Nächstes sollten Sie alle diese Metriken in der **Freiformtabelle** einzeln per Drag-and-Drop auf die **Freiformtabelle** ziehen. Siehe folgendes Beispiel.
 

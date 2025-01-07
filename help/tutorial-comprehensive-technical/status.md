@@ -3,10 +3,10 @@ title: Inhaltsstatus
 description: Inhaltsstatus
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 11%
+source-wordcount: '231'
+ht-degree: 10%
 
 ---
 
@@ -31,7 +31,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | Ja | – |
 | [3.4 Adobe Journey Optimizer: Ereignisbasierte Journey ](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | Ja | – |
 | [4.1 Customer Journey Analytics: Erstellen eines Dashboards mit Analysis Workspace zusätzlich zu Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | 06/01/2025 | Ja | – |
-| [4.2 Customer Journey Analytics: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 07/01/2025 | Ja | – |
+| [4.2 Customer Journey Analytics: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 07/01/2025 | Nein | Es gibt ein Problem bei der Datenvorbereitungs-Modellierung für die Quelldaten. Die Fehlerbehebung steht aus. |
 | [5.1 Abfrage-Service](./modules/datadistiller/module5.1/query-service.md) | 04/12/2024 | Ja | – |
 
 {style="table-layout:auto"}

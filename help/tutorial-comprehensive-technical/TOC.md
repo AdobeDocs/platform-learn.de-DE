@@ -5,7 +5,7 @@ user-guide-description: Ein praktisches Tutorial, das viele Aspekte von Adobe Ex
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ac55aa9e588655c5d68abf62bff62e748c13aaa1
+source-git-commit: 7532eed1074062451d6ac171629742dbdc9c3fdc
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 4%
@@ -49,7 +49,7 @@ ht-degree: 4%
       + [Zusammenfassung und Vorteile](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
    + 1.3 Federated Audience Composition {#module13}
       + [Übersicht](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-      + [1.3.1 Einrichten des Snowflake-Kontos](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.1 Einrichten der Snowflake-Umgebung](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2 Erstellen von Schemata, Datenmodellen und Links](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
       + [1.3.3 Erstellen einer Verbundzusammensetzung](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)

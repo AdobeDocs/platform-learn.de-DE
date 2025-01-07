@@ -4,16 +4,14 @@ description: Datenerfassung - Federated Audience-Komposition
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # 1.3 Federated Audience-Komposition
-
-**Autor: [Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/), [Wouter van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In diesem Modul erfahren Sie alles über das Erstellen von Zielgruppen mithilfe der Federated Audience-Komposition.
 
@@ -38,7 +36,7 @@ Die Federated Audience-Komposition bietet Kunden von Real-Time CDP und Journey O
 
 ## Übungen
 
-[1.3.1 Einrichten des Snowflake-Kontos](./ex1.md)
+[1.3.1 Einrichten der Snowflake-Umgebung](./ex1.md)
 
 In dieser Übung richten Sie Ihr Snowflake-Testkonto ein und verbinden es mit Adobe Experience Platform
 
