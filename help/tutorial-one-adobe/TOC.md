@@ -4,10 +4,10 @@ breadcrumb-title: Umfassendes technisches Tutorial für Adobe-Anwendungen, von C
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 76723130c0b817110f348a3136246d808bc7b0a9
+source-git-commit: 7066ef48f613cb2c593b065f8c81b0d49f19968b
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 5%
+source-wordcount: '102'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,8 @@ ht-degree: 5%
    + 1.1 Adobe Firefly Services-{#module11}
       + [Übersicht](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1 Erste Schritte mit Firefly-Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
-      + [1.1.2 Anfordern von Bildern mit Spezifikationen](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
+      + [1.1.2 Optimieren Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefinierten URLs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
+      + [1.1.3 …](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
 
 + 2 Inhaltslieferketten-{#csc}

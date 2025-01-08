@@ -3,10 +3,11 @@ title: 1.1 Adobe Firefly-Services
 description: Adobe Firefly-Services
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
+source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 3%
+source-wordcount: '139'
+ht-degree: 2%
 
 ---
 
@@ -23,6 +24,10 @@ ht-degree: 3%
 ## Übungen
 
 [1.1.1 Erste Schritte mit Firefly-Services](./ex1.md)
+
+In dieser Übung erfahren Sie mehr über Firefly-Services und deren Funktionen.
+
+[1.1.2 Optimieren Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefinierten URLs](./ex2.md)
 
 In dieser Übung erfahren Sie mehr über Firefly-Services und deren Funktionen.
 
