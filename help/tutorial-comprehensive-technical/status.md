@@ -3,10 +3,10 @@ title: Inhaltsstatus
 description: Inhaltsstatus
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 10%
+source-wordcount: '240'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | [0. Erste Schritte ](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024 | Ja | – |
 | [1.1 Foundation - Einrichtung von Adobe Experience Platform-Datenerfassung und Web-SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 18/11/2024 | Ja | – |
 | [1.2 Foundation - Datenaufnahme](./modules/datacollection/module1.2/data-ingestion.md) | 18/11/2024 | Ja | – |
-| [1.3 Federated Audience-Komposition](./modules/datacollection/module1.3/fac.md) | – | Nein | Erstellung des Inhalts steht aus |
+| [1.3 Federated Audience-Komposition](./modules/datacollection/module1.3/fac.md) | 07/01/2025 | Ja, 95 % | Beispieldatendateien stehen aus, der Inhalt ist zu 95 % fertig und getestet |
 | [2.1 Foundation - Echtzeit-Kundenprofil](./modules/rtcdp-b2c/module2.1/real-time-customer-profile.md) | 19/11/2024 | Ja | – |
 | [2.2 Intelligent Services](./modules/rtcdp-b2c/module2.2/intelligent-services.md) | 03/12/2024 | Ja | – |
 | [2.3 Real-Time CDP - Zielgruppe aufbauen und Maßnahmen ergreifen](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) | 20/11/2024 | Ja | – |
