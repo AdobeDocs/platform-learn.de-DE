@@ -4,9 +4,9 @@ description: Erste Schritte mit Firefly-Services
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1114'
 ht-degree: 1%
 
 ---
@@ -119,13 +119,13 @@ Ihr Speicherkonto finden Sie dann unter **Speicherkonten**.
 
 ![Azure-Speicher](./images/az18.png)
 
-## 1.1.2.4 manueller Datei-Upload und Verwendung einer Verlaufsdatei als Stilreferenz
+## 1.1.2.4 Manueller Datei-Upload und Verwendung einer Grafikdatei als Stilreferenz
 
-Sie sollten jetzt eine Verlaufsdatei der Wahl in Ihren Container hochladen. Sie können eine beliebige Verlaufsdatei verwenden, oder Sie können [diese Datei](./images/gradient.jpg) verwenden, indem Sie sie auf Ihren Computer herunterladen.
+Sie sollten jetzt eine Bilddatei Ihrer Wahl in Ihren Container hochladen. Sie können eine beliebige Bilddatei verwenden, oder Sie können [diese Datei](./images/gradient.jpg) verwenden, indem Sie sie auf Ihren Computer herunterladen.
 
 ![Azure-Speicher](./images/gradient.jpg)
 
-Ziehen Sie die Verlaufsdatei in Ihren Container im Azure Storage Explorer.
+Legen Sie die Bilddatei im Azure Storage Explorer in Ihrem Container ab.
 
 Nach dem Hochladen wird sie in Ihrem Container angezeigt:
 
@@ -147,7 +147,7 @@ Zurück zu Postman. Öffnen Sie die Anfrage **POST - Firefly - T2I (styleref) V3
 
 ![Azure-Speicher](./images/az23.png)
 
-Ersetzen Sie die Platzhalter-URL durch die vordefinierte URL für Ihre Verlaufsdatei, die Sie aus Azure Storage Explorer kopiert haben. Dann hast du das hier. Klicken Sie auf **Senden**.
+Ersetzen Sie die Platzhalter-URL durch die vordefinierte URL für Ihre Bilddatei, die Sie aus Azure Storage Explorer kopiert haben. Dann hast du das hier. Klicken Sie auf **Senden**.
 
 ![Azure-Speicher](./images/az24.png)
 
@@ -155,7 +155,7 @@ Sie erhalten dann erneut eine Antwort von Firefly Services mit einem neuen Bild.
 
 ![Azure-Speicher](./images/az25.png)
 
-Sie sehen dann ein anderes Bild mit `horses in a field`, aber diesmal ähnelt der Stil der Verlaufsdatei, die Sie als Stilreferenz bereitgestellt haben.
+Sie sehen dann ein anderes Bild mit `horses in a field`, aber dieses Mal ähnelt der Stil der Bilddatei, die Sie als Stilreferenz bereitgestellt haben.
 
 ![Azure-Speicher](./images/az26.png)
 
@@ -195,7 +195,7 @@ Klicken Sie dann auf **Textkörper**.
 
 ![Azure-Speicher](./images/az31.png)
 
-Nun müssen Sie eine Datei auf Ihrem lokalen Computer auswählen. Sie können eine neue Bilddatei Ihrer Wahl verwenden, oder Sie können eine andere Verlaufsdatei verwenden, die Sie ([) ](./images/gradient2-p.jpg).
+Nun müssen Sie eine Datei auf Ihrem lokalen Computer auswählen. Sie können eine neue Bilddatei Ihrer Wahl verwenden, oder Sie können eine andere Bilddatei verwenden, die Sie [hier](./images/gradient2-p.jpg) finden.
 
 ![Verlaufsdatei](./images/gradient2-p.jpg)
 
@@ -223,7 +223,10 @@ Der zu verwendende Dateiname lautet `gradient2-p.jpg`, was bedeutet, dass die UR
 
 Gehen Sie dann zu **Headers**, wo Sie eine neue Kopfzeile manuell hinzufügen müssen. Verwenden Sie diesen:
 
-x-ms-blob-type BlockBlob
+| Schlüssel | Wert |
+|:-------------:| :---------------:| 
+| `x-ms-blob-type` | `BlockBlob` |
+
 
 ![Azure-Speicher](./images/az35.png)
 
@@ -238,6 +241,27 @@ Daraufhin wird diese leere Antwort in Postman angezeigt, was bedeutet, dass der 
 Wenn Sie dann zum Azure Storage Explorer zurückkehren und den Inhalt Ihres Ordners aktualisieren, finden Sie dort jetzt die neu hochgeladene Datei.
 
 ![Azure-Speicher](./images/az38.png)
+
+## 1.1.2.5 Verwendung der programmgesteuerten Datei
+
+Um Dateien programmgesteuert aus Azure Storage-Konten lesen zu können, müssen Sie ein neues **Shared Access Signature (SAS)-** mit Berechtigungen zum Lesen einer Datei erstellen. Sie könnten das in der vorherigen Übung erstellte SAS-Token technisch verwenden, es empfiehlt sich jedoch, ein separates Token nur mit &quot;**&quot;-** zu verwenden.
+
+Gehen Sie dazu zurück zum Azure Storage-Explorer. Klicken Sie mit der rechten Maustaste auf den Container und dann auf **Freigegebene Zugriffssignatur abrufen**.
+
+![Azure-Speicher](./images/az27.png)
+
+Unter **Berechtigungen** sind die folgenden Berechtigungen erforderlich:
+
+- **Lesen**
+- **Hinzufügen**
+- **Create**
+- **Write**
+- **Liste**
+
+Klicken Sie auf **Erstellen**.
+
+![Azure-Speicher](./images/az28.png)
+
 
 Nächster Schritt: [1.1.3 …](./ex3.md)
 
