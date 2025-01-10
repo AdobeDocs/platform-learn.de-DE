@@ -3,10 +3,11 @@ title: 2.1 Adobe Experience Manager-Cloud Service
 description: Adobe Experience Manager Cloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
+source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 3%
+source-wordcount: '151'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +25,11 @@ ht-degree: 3%
 
 [2.1.1 Cloud Manager-Programm erstellen](./ex1.md)
 
-In dieser Übung, …
+In dieser Übung erstellen Sie Ihr Cloud Manager-Programm, das die Produkte Sites, Assets und Edge Delivery Services für Sie erstellt.
+
+[2.1.2 Einrichten der AEM CS-Umgebung](./ex2.md)
+
+In dieser Übung richten Sie Ihre AEM CS-Umgebung ein und greifen auf Ihre CitiSignal-Website zu.
 
 [Zusammenfassung und Vorteile](./summary.md)
 
