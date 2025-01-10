@@ -3,10 +3,10 @@ title: Erstellen des Cloud Manager-Programms
 description: Erstellen des Cloud Manager-Programms
 kt: 5342
 doc-type: tutorial
-source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
+source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 2%
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
@@ -307,9 +307,38 @@ Ihre Website wird dann im **universellen Editor** geöffnet.
 
 ![AEMCS](./images/aemcssetup45.png)
 
-Sie können jetzt auch auf Ihrer Website navigieren, indem Sie `main--citisignal--woutervangeluwe.aem.live/us/en` aufrufen.
+Sie können nun auf Ihre Website zugreifen, indem Sie zu `main--citisignal--XXX.aem.page/us/en` und/oder `main--citisignal--XXX.aem.live/us/en` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
 
+In diesem Beispiel lautet die vollständige URL wie folgt:
+`https://main--citisignal--woutervangeluwe.aem.page/us/en` und/oder `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
 
+Es kann einige Zeit dauern, bis alle Assets korrekt angezeigt werden, da sie zuerst veröffentlicht werden müssen.
+
+Sie sehen dann Folgendes:
+
+![AEMCS](./images/aemcssetup46.png)
+
+Nach einigen Minuten werden die Assets alle ordnungsgemäß geladen.
+
+![AEMCS](./images/aemcssetup47.png)
+
+## 2.1.2.7 der Testseitenleistung
+
+Navigieren Sie zu [https://pagespeed.web.dev/](https://pagespeed.web.dev/). Geben Sie Ihre URL ein und klicken Sie auf **Analysieren**.
+
+![AEMCS](./images/aemcssetup48.png)
+
+Anschließend sehen Sie, dass Ihre Website sowohl in einer Mobile- als auch in einer Desktop-Visualisierung einen Highscore erhält:
+
+**Mobil**:
+
+![AEMCS](./images/aemcssetup49.png)
+
+**Desktop**:
+
+![AEMCS](./images/aemcssetup50.png)
+
+Nächster Schritt: [2.1.3 Konfigurieren eines benutzerdefinierten Blocks](./ex3.md)
 
 [Zurück zum Modul 2.1](./aemcs.md)
 
