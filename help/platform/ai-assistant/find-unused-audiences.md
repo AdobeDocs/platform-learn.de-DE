@@ -9,14 +9,14 @@ duration: 142
 last-substantial-update: 2024-10-24T00:00:00Z
 jira: KT-16401
 exl-id: 75a44602-4deb-4e27-b44a-7bf311486243
-source-git-commit: a5a45af679eec36693a33a4950cd53f4d712e7c8
+source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
 
 ---
 
-# KI-Assistent: Anwendungsfall für die Audience-Bereinigung
+# Finden nicht verwendeter Zielgruppen mit dem KI-Assistenten
 
 Erfahren Sie, wie Sie mit dem KI-Assistenten nicht verwendete Zielgruppen identifizieren können, um sie zu löschen und Ihre Marketing-Vorgänge effizienter zu gestalten. Weitere Informationen zum Abfragen des KI-Assistenten finden Sie im [Handbuch zum KI-Assistenten](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
 

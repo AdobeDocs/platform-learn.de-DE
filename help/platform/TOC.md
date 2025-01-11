@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f64623255c045396799d0d627f199ce59c794d70
+source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '957'
 ht-degree: 20%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 20%
    + [Konfigurieren der attributbasierten Zugriffssteuerung](/help/platform/admin/configure-attribute-based-access-control.md)
 + KI-Assistent {#ai-assistant}
    + [Übersicht](/help/platform/ai-assistant/overview.md)
-   + [Zugriff einrichten](/help/platform/ai-assistant/access.md)
+   + [Zugriff erhalten](/help/platform/ai-assistant/access.md)
    + [Einführung in ein neues Produkt](/help/platform/ai-assistant/onboard.md)
    + [Informationen zu Produkten](/help/platform/ai-assistant/product-knowledge.md)
    + [Antworten validieren](/help/platform/ai-assistant/validate-responses.md)
