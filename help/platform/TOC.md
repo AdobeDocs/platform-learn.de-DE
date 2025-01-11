@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
+source-git-commit: f64623255c045396799d0d627f199ce59c794d70
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '958'
 ht-degree: 20%
 
 ---
@@ -49,8 +49,13 @@ ht-degree: 20%
 + KI-Assistent {#ai-assistant}
    + [Übersicht](/help/platform/ai-assistant/overview.md)
    + [Zugriff einrichten](/help/platform/ai-assistant/access.md)
-   + [Bereinigen von Zielgruppen](/help/platform/ai-assistant/find-unused-audiences.md)
    + [Einführung in ein neues Produkt](/help/platform/ai-assistant/onboard.md)
+   + [Informationen zu Produkten](/help/platform/ai-assistant/product-knowledge.md)
+   + [Antworten validieren](/help/platform/ai-assistant/validate-responses.md)
+   + [Panel „Auffindbarkeit“](/help/platform/ai-assistant/discoverability-panel.md)
+   + [Suchen nach nicht verwendeten Zielgruppen](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Wirkungsanalyse](/help/platform/ai-assistant/impact-analysis.md)
+   + [Sicherheitsübersicht](/help/platform/ai-assistant/security-overview.md)
 + Zielgruppen und {#audiences}
    + [Einführung in Audience Portal und Komposition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Audiences hochladen](audiences/upload-audiences.md)
