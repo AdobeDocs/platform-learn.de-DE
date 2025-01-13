@@ -4,9 +4,9 @@ breadcrumb-title: Umfassendes technisches Tutorial für Adobe-Anwendungen, von C
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '180'
 ht-degree: 6%
 
 ---
@@ -25,6 +25,12 @@ ht-degree: 6%
       + [1.1.2 Optimieren Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefinierten URLs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Adobe Firefly und Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
+   + 1.2 Automatisieren von Adobe Firefly-Services {#module21}
+      + [Übersicht](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
+      + [1.2.1 Erste Schritte mit Firefly-Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
+      + [1.2.2 …](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
+      + [1.2.3 …](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
+      + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/summary.md)
 
 + 2 Inhaltslieferketten-{#csc}
    + 2.1 Adobe Experience Manager Cloud Service {#module21}
