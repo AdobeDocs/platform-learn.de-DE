@@ -2,9 +2,10 @@
 title: Überblick - Umfassendes technisches Tutorial - eine Adobe
 description: Umfassendes technisches Tutorial - eine Adobe
 doc-type: multipage-overview
-source-git-commit: b1bb17bfe451c67903424bd8da6716d0ad1c2cd3
+exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '302'
 ht-degree: 4%
 
 ---
@@ -62,8 +63,12 @@ In diesem grundlegenden Modul verwenden Sie Adobe Firefly zum …
 
 In diesem Grundmodul richten Sie Ihr Adobe Experience Manager-Cloud Service-Programm, Ihre Site und Ihr Assets-Repository ein.
 
+[2.2 Adobe Workfront](./modules/csc/module2.2/workfront.md)
+
+In diesem Grundmodul richten Sie Ihr Adobe Experience Manager-Cloud Service-Programm, Ihre Site und Ihr Assets-Repository ein.
+
 ### 3. Einheitliches Kundenerlebnis
 
-[3.1 Adobe Real-Time CDP](./modules/uce/module3.1/rtcdp.md)
+[3.1 Federated Audience-Komposition](./modules/uce/module3.1/fac.md)
 
 In diesem grundlegenden Modul erfahren Sie mehr über die Datenerfassung in Adobe Experience Platform und die neue Web-SDK-Erweiterung.

@@ -4,7 +4,7 @@ description: Erste Schritte mit Firefly-Services
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 1%
@@ -242,7 +242,7 @@ Wenn Sie dann zum Azure Storage Explorer zurückkehren und den Inhalt Ihres Ordn
 
 ![Azure-Speicher](./images/az38.png)
 
-## 1.1.2.5 Verwendung der programmgesteuerten Datei
+## 1.1.2.6 Verwendung der programmgesteuerten Datei
 
 Um langfristig programmgesteuert Dateien aus Azure Storage-Konten lesen zu können, müssen Sie ein neues **Shared Access Signature (SAS)-**-Token mit Berechtigungen zum Lesen einer Datei erstellen. Technisch gesehen könnten Sie das in der vorherigen Übung erstellte SAS-Token verwenden, es empfiehlt sich jedoch, ein separates Token mit nur **Lese-/** und ein separates Token mit nur **Schreib**-Berechtigungen zu verwenden.
 
@@ -359,7 +359,7 @@ Wenn die Variablen richtig konfiguriert wurden, wird eine Bild-URL zurückgegebe
 
 Öffnen Sie die Bild-URL, um Ihr Bild zu überprüfen.
 
-![Azure-Speicher](./images/az108.png)
+![Azure-Speicher](./images/az108.jpg)
 
 Nächster Schritt: [1.1.3 Adobe Firefly und Adobe Photoshop](./ex3.md)
 
