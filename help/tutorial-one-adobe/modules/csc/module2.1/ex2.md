@@ -3,16 +3,67 @@ title: Erstellen des Cloud Manager-Programms
 description: Erstellen des Cloud Manager-Programms
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
+exl-id: db366111-3873-4504-95f1-b240836c833f
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '761'
 ht-degree: 1%
 
 ---
 
-# 2.1.2 Einrichten der AEM CS-Umgebung
+# 2.1.2 Erstellen einer dokumentbasierten Website
 
-## 2.1.2.1 Einrichten des GitHub-Repositorys
+Während Sie auf die Erstellung Ihres Cloud Manager-Programms warten, haben Sie genügend Zeit, um Ihre erste dokumentbasierte Authoring-Website einzurichten. Die folgende Übung basiert auf dem [aem.live-Entwickler-Tutorial](https://www.aem.live/developer/tutorial). Gehen Sie wie folgt vor, um zu beginnen.
+
+## 2.1.2.1 Einrichten des Google-Laufwerks
+
+Navigieren Sie zu [https://drive.google.com](https://drive.google.com). Klicken Sie auf **+ Neu** dann auf **Neuer Ordner**.
+
+![AEMCS](./images/googledrive1.png)
+
+Benennen Sie den Ordner `aemdocb-test`. Klicken Sie auf **Erstellen**.
+
+![AEMCS](./images/googledrive2.png)
+
+Laden Sie die Datei [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip) herunter und extrahieren Sie sie auf Ihrem Computer.
+
+![AEMCS](./images/googledrive3.png)
+
+In diesem Ordner werden 3 Dateien angezeigt. Kopieren Sie diese Dateien in den neuen Google Drive-Ordner.
+
+![AEMCS](./images/googledrive4.png)
+
+Jetzt müssen Sie diese Dateien in eine native Google-Datei konvertieren. Öffnen Sie dazu jede Datei und navigieren Sie zu **Datei** > **Als Google Docs speichern**.
+
+![AEMCS](./images/googledrive5.png)
+
+Dies sollten Sie für alle drei Dateien tun. Danach werden 6 Dateien in Ihrem Google Drive-Ordner angezeigt.
+
+![AEMCS](./images/googledrive6.png)
+
+Sie haben dies dann in Ihrem Ordner.
+
+![AEMCS](./images/googledrive7.png)
+
+Damit die dokumentbasierte Authoring-Demo funktioniert, müssen Sie jetzt Ihren Google Drive-Ordner mit der E-Mail-Adresse **helix@adobe.com** freigeben. Klicken Sie auf Ihren Ordnernamen, klicken Sie auf **Freigeben** und klicken Sie dann erneut **Freigeben**.
+
+![AEMCS](./images/googledrive8.png)
+
+helix@adobe.com Geben Sie die E-Mail-Adresse **** ein und klicken Sie auf **Senden**.
+
+![AEMCS](./images/googledrive9.png)
+
+Kopieren Sie als Nächstes die URL Ihres Google Drive-Ordners und schreiben Sie sie auf, da Sie sie in der nächsten Übung benötigen werden. Klicken Sie auf den Ordnernamen, auf **Freigeben** und dann auf **Link kopieren**.
+
+![AEMCS](./images/googledrive10.png)
+
+`https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5?usp=drive_link`
+
+Sie sollten den Abfragezeichenfolgenparameter `?usp=drive_link` entfernen, sodass die URL wie folgt aussehen sollte:
+
+`https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5`
+
+## 2.1.2.2 Einrichten des GitHub-Repositorys
 
 Navigieren Sie zu [https://github.com](https://github.com). Klicken Sie auf **Anmelden**.
 
@@ -26,17 +77,17 @@ Nach der Anmeldung sehen Sie Ihr GitHub-Dashboard.
 
 ![AEMCS](./images/aemcssetup3.png)
 
-Navigieren Sie zu [https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one). Sie werden es dann sehen. Klicken Sie **Diese Vorlage verwenden** und anschließend auf **Neues Repository erstellen**.
+Navigieren Sie zu [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate). Sie werden es dann sehen. Klicken Sie **Diese Vorlage verwenden** und anschließend auf **Neues Repository erstellen**.
 
-![AEMCS](./images/aemcssetup4.png)
+![AEMCS](./images/aemdocbcssetup4.png)
 
-Verwenden Sie `citisignal` für **Repository-**). Setzen Sie die Sichtbarkeit auf **Privat**. Klicken Sie **Repository erstellen**.
+Für den **Repository-Namen** verwenden Sie `aemdocb-test`. Setzen Sie die Sichtbarkeit auf **Privat**. Klicken Sie **Repository erstellen**.
 
-![AEMCS](./images/aemcssetup5.png)
+![AEMCS](./images/aemdocbcssetup5.png)
 
 Nach einigen Sekunden wird dann Ihr Repository erstellt.
 
-![AEMCS](./images/aemcssetup6.png)
+![AEMCS](./images/aemdocbcssetup6.png)
 
 Navigieren Sie anschließend zu [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync). Klicken Sie **Konfigurieren**.
 
@@ -48,297 +99,113 @@ Klicken Sie auf Ihr GitHub-Konto.
 
 Klicken Sie **Nur Repositorys auswählen** und fügen Sie dann das soeben erstellte Repository hinzu. Klicken Sie anschließend auf **Installieren**.
 
-![AEMCS](./images/aemcssetup9.png)
+![AEMCS](./images/aemdocbcssetup9.png)
 
 Sie erhalten dann diese Bestätigung.
 
 ![AEMCS](./images/aemcssetup10.png)
 
-## 2.1.2.2 Aktualisierungsdatei fstab.yaml
+## 2.1.2.3 Aktualisierungsdatei fstab.yaml
 
 Klicken Sie in Ihrem GitHub-Repository auf , um die Datei `fstab.yaml` zu öffnen.
 
-![AEMCS](./images/aemcssetup11.png)
+![AEMCS](./images/aemdocbcssetup11.png)
 
 Klicken Sie auf **Symbol** Bearbeiten“.
 
-![AEMCS](./images/aemcssetup12.png)
+![AEMCS](./images/aemdocbcssetup12.png)
 
-Jetzt müssen Sie den Wert für das Feld (URL **in** 4 aktualisieren.
+Jetzt müssen Sie den Wert für das Feld (URL **in** 2 aktualisieren.
 
-![AEMCS](./images/aemcssetup13.png)
+![AEMCS](./images/aemdocbcssetup13.png)
 
 Sie müssen den aktuellen Wert durch die URL Ihrer spezifischen AEM CS-Umgebung in Kombination mit den Einstellungen Ihres GitHub-Repositorys ersetzen.
 
-Dies ist der aktuelle Wert der URL: `https://author-p131639-e1282833.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/citisignal-one/main`.
+Dies ist der aktuelle Wert der URL: `https://drive.google.com/drive/u/0/folders/1MGzOt7ubUh3gu7zhZIPb7R7dyRzG371j`.
 
-Es gibt drei Teile der URL, die aktualisiert werden müssen
+Ersetzen Sie diesen Wert durch die URL, die Sie `https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5` aus Ihrem Google-Laufwerksordner kopiert haben. Klicken Sie **Änderungen übernehmen…**.
 
-`https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
-
-XXX sollte durch die URL Ihrer AEM CS Author-Umgebung ersetzt werden.
-
-YYY sollte durch Ihr GitHub-Benutzerkonto ersetzt werden.
-
-ZZZ sollte durch den Namen des GitHub-Repositorys ersetzt werden, das Sie in der vorherigen Übung verwendet haben.
-
-Die URL Ihrer AEM CS-Autorenumgebung finden Sie unter [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Klicken Sie auf **Programm**, um es zu öffnen.
-
-![AEMCS](./images/aemcs6.png)
-
-Klicken Sie anschließend auf der Registerkarte **Umgebungen** auf die **mit den drei Punkten** und anschließend auf **Details anzeigen**.
-
-![AEMCS](./images/aemcs9.png)
-
-Anschließend werden die Details Ihrer Umgebung angezeigt, einschließlich der URL Ihrer **Author**-Umgebung. Kopieren Sie die URL.
-
-![AEMCS](./images/aemcs10.png)
-
-XXX = `author-p148073-e1511503.adobeaemcloud.com`
-
-Den Namen des GitHub-Benutzerkontos finden Sie leicht in der URL Ihres Browsers. In diesem Beispiel ist der Name des Benutzerkontos `woutervangeluwe`.
-
-JJJJ = `woutervangeluwe`
-
-![AEMCS](./images/aemcs11.png)
-
-Den GitHub-Repository-Namen finden Sie auch im Browser-Fenster, das Sie in GitHub geöffnet haben. In diesem Fall ist der Repository-Name `citisignal`.
-
-ZZZ = `citisignal`
-
-![AEMCS](./images/aemcs12.png)
-
-Diese drei Werte zusammen führen zu dieser neuen URL, die im `fstab.yaml` konfiguriert werden muss.
-
-`https://author-p148073-e1511503.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal/main`
-
-Klicken Sie **Änderungen übernehmen…**.
-
-![AEMCS](./images/aemcs13.png)
+![AEMCS](./images/aemdocbcssetup14.png)
 
 Klicken Sie **Änderungen übernehmen**.
 
-![AEMCS](./images/aemcs14.png)
+![AEMCS](./images/aemdocbcssetup15.png)
 
-Die Datei `fstab.yaml` wurde aktualisiert.
+## 2.1.2.4 Installieren der AEM Sidekick-Erweiterung
 
-## 2.1.2.3 Hochladen von CitiSignal-Assets
+Navigieren Sie zu [https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo). Klicken Sie **Zu Chrome hinzufügen**.
 
-Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Klicken Sie auf **Programm**, um es zu öffnen.
+![AEMCS](./images/aemdocbcssetup16.png)
 
-![AEMCS](./images/aemcs6.png)
+Die Erweiterung **AEM Sidekick** anheften.
 
-Klicken Sie anschließend auf die URL Ihrer Autorenumgebung.
+![AEMCS](./images/aemdocbcssetup17.png)
 
-![AEMCS](./images/aemcssetup18.png)
+## 2.1.2.5 der Vorschau und Publish Ihrer dokumentbasierten Website
 
-Klicken Sie **Mit Adobe anmelden**.
+Kehren Sie zu Ihrem Google Drive-Ordner zurück. Klicken Sie in der Taskleiste auf die Erweiterung **AEM Sidekick**. Daraufhin wird ein Popup mit einer AEM Sidekick-Leiste in Ihrem Ordner angezeigt.
 
-![AEMCS](./images/aemcssetup19.png)
+![AEMCS](./images/aemdocbcssetup18.png)
 
-Anschließend wird Ihre Autorenumgebung angezeigt.
+Wählen Sie die drei Dateien in Ihrem Google Drive-Ordner aus. Klicken Sie auf **Vorschau**.
 
-![AEMCS](./images/aemcssetup20.png)
+![AEMCS](./images/aemdocbcssetup19.png)
 
-Ihre URL sieht dann wie folgt aus: `https://author-p148073-e1511503.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
+Klicken **erneut auf** Vorschau“.
 
-Sie müssen jetzt auf die Umgebung **CRX Package Manager** von AEM zugreifen. Entfernen Sie dazu `ui#/aem/aem/start.html?appId=aemshell` aus der URL und ersetzen Sie sie durch `crx/packmgr`. Ihre URL sollte jetzt wie folgt aussehen:
-`https://author-p148073-e1511503.adobeaemcloud.com/crx/packmgr`.
-Drücken Sie **Eingabetaste**, um die Package Manager-Umgebung zu laden
+![AEMCS](./images/aemdocbcssetup20.png)
 
-![AEMCS](./images/aemcssetup22.png)
+Klicken, um das grüne Dialogfeld zu schließen.
 
-Klicken Sie anschließend auf **Paket hochladen**.
+![AEMCS](./images/aemdocbcssetup21.png)
 
-![AEMCS](./images/aemcssetup21.png)
+Wählen Sie die drei Dateien in Ihrem Google Drive-Ordner erneut aus. Klicken Sie jetzt auf **Publish**.
 
-Klicken Sie **Durchsuchen**, um das hochzuladende Paket zu suchen.
-
-Das Paket, das hochgeladen werden soll, heißt **Citisignal-assets.zip** und kann hier heruntergeladen werden: [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip).
-
-![AEMCS](./images/aemcssetup23.png)
-
-Wählen Sie das Paket aus und klicken Sie auf **Öffnen**.
-
-![AEMCS](./images/aemcssetup24.png)
-
-Klicken Sie anschließend auf **OK**.
-
-![AEMCS](./images/aemcssetup25.png)
-
-Das Paket wird dann hochgeladen.
-
-![AEMCS](./images/aemcssetup26.png)
-
-Klicken Sie anschließend auf **Installieren** auf dem soeben hochgeladenen Paket.
-
-![AEMCS](./images/aemcssetup27.png)
-
-Klicken Sie auf **Installieren**.
-
-![AEMCS](./images/aemcssetup28.png)
-
-Nach einigen Minuten wird Ihr Paket installiert.
-
-![AEMCS](./images/aemcssetup29.png)
-
-Sie können dieses Fenster jetzt schließen.
-
-
-## 2.1.2.4 von Publish CitiSignal-Assets
-
-Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Klicken Sie auf **Programm**, um es zu öffnen.
-
-![AEMCS](./images/aemcs6.png)
-
-Klicken Sie anschließend auf die URL Ihrer Autorenumgebung.
-
-![AEMCS](./images/aemcssetup18.png)
-
-Klicken Sie **Mit Adobe anmelden**.
-
-![AEMCS](./images/aemcssetup19.png)
-
-Anschließend wird Ihre Autorenumgebung angezeigt. Klicken Sie auf **Sites**.
-
-![AEMCS](./images/aemcsassets1.png)
-
-Klicken Sie auf **Dateien**.
-
-![AEMCS](./images/aemcsassets2.png)
-
-Klicken Sie auf den Ordner **CitiSignal** und dann auf **Veröffentlichung verwalten**.
-
-![AEMCS](./images/aemcsassets3.png)
-
-Klicken Sie auf **Weiter**.
-
-![AEMCS](./images/aemcsassets4.png)
+![AEMCS](./images/aemdocbcssetup22.png)
 
 Klicken Sie auf **Veröffentlichen**.
 
-![AEMCS](./images/aemcsassets5.png)
+![AEMCS](./images/aemdocbcssetup23.png)
 
-Ihre Assets wurden veröffentlicht.
+Klicken, um das grüne Dialogfeld wieder zu schließen. Wählen Sie nun die Datei **index**, klicken Sie auf **URLs kopieren** und klicken Sie dann auf **Live-URLs kopieren**.
 
-## 2.1.2.5 Erstellen einer CitiSignal-Website
+![AEMCS](./images/aemdocbcssetup24.png)
 
-Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Klicken Sie auf **Programm**, um es zu öffnen.
+Die kopierte URL sieht wie folgt aus: `https://main--aemdocb-test--woutervangeluwe.aem.live/`.
 
-![AEMCS](./images/aemcs6.png)
+In der obigen URL:
 
-Klicken Sie anschließend auf die URL Ihrer Autorenumgebung.
+- **main** bezieht sich auf die Verzweigung in Ihrem GitHub-Repository
+- **aemdocb-test** bezieht sich auf den GitHub-Repository-Namen
+- **wouterVangeluwe** bezieht sich auf den Namen des GitHub-Benutzerkontos
+- **.live:** auf die Live-Umgebung Ihrer AEM-Instanz
+- Sie können **.live** durch **.page ersetzen** um die Vorschauumgebung Ihrer AEM-Instanz zu öffnen
 
-![AEMCS](./images/aemcssetup18.png)
+Öffnen Sie ein neues Browser-Fenster und navigieren Sie zur URL.
 
-Klicken Sie **Mit Adobe anmelden**.
+![AEMCS](./images/aemdocbcssetup25.png)
 
-![AEMCS](./images/aemcssetup19.png)
+## 2.1.2.6 Nehmen Sie eine Änderung vor und veröffentlichen Sie Ihre Änderung
 
-Anschließend wird Ihre Autorenumgebung angezeigt. Klicken Sie auf **Sites**.
+Kehren Sie zu Ihrem Google-Laufwerk zurück und öffnen Sie den Filter **index** in Google.
 
-![AEMCS](./images/aemcssetup30.png)
+![AEMCS](./images/aemdocbcssetup27.png)
 
-Klicken Sie auf **Erstellen** und dann auf **Site aus Vorlage**.
+Ersetzen Sie den **Test** durch einen beliebigen anderen Text. Klicken Sie auf **Vorschau**.
 
-![AEMCS](./images/aemcssetup31.png)
+![AEMCS](./images/aemdocbcssetup28.png)
 
-Klicken Sie **Importieren**.
+Die Vorschauversion Ihrer Website wird dann geöffnet. Überprüfen Sie Ihre Änderung und klicken Sie auf **Publish**.
 
-![AEMCS](./images/aemcssetup32.png)
+![AEMCS](./images/aemdocbcssetup29.png)
 
-Sie müssen jetzt eine vorkonfigurierte Vorlage für Ihre Site importieren. Sie können die Vorlage ([) ](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip). Speichern Sie die Datei auf Ihrem Desktop.
+Anschließend wird die Live-Version Ihrer Website angezeigt.
 
-Wählen Sie als Nächstes die `citisignal-edge-delivery-services-template-0.0.4.zip` aus und klicken Sie auf **Öffnen**.
+![AEMCS](./images/aemdocbcssetup30.png)
 
-![AEMCS](./images/aemcssetup33.png)
+Die obige Übung war eine gute Möglichkeit, um loszulegen und das dokumentenbasierte Authoring selbst zu erleben. Sie können jetzt mit der nächsten Übung fortfahren, in der Sie Ihre eigene Demo-Website mit CitiSignal als Demo-Marke einrichten.
 
-Sie werden es dann sehen. Klicken Sie auf die gerade hochgeladene Vorlage, um sie auszuwählen, und klicken Sie dann auf **Weiter**.
-
-![AEMCS](./images/aemcssetup34.png)
-
-Nun müssen Sie einige Details ausfüllen.
-
-- Site-Titel: Verwenden **CitiSignal**
-- Site-Name: verwenden **Citisignal-One**
-- GitHub-URL: Kopieren Sie die URL des GitHub-Repositorys, das Sie zuvor verwendet haben
-
-![AEMCS](./images/aemcssetup35.png)
-
-Dann hast du das hier. Klicken Sie auf **Erstellen**.
-
-![AEMCS](./images/aemcssetup36.png)
-
-Ihre Site wird jetzt erstellt. Dies kann einige Minuten dauern. Klicken Sie auf **OK**.
-
-![AEMCS](./images/aemcssetup37.png)
-
-Aktualisieren Sie Ihren Bildschirm nach einigen Minuten. Danach sehen Sie Ihre neu erstellte CitiSignal-Website.
-
-![AEMCS](./images/aemcssetup38.png)
-
-## 2.1.2.6 Publish CitiSignal-Website
-
-Klicken Sie anschließend auf das Kontrollkästchen vor **CitiSignal**. Klicken Sie dann auf **Veröffentlichung verwalten**.
-
-![AEMCS](./images/aemcssetup39.png)
-
-Klicken Sie auf **Weiter**.
-
-![AEMCS](./images/aemcssetup40.png)
-
-Klicken Sie auf **Untergeordnete Einstellungen einschließen**.
-
-![AEMCS](./images/aemcssetup41.png)
-
-Aktivieren Sie das Kontrollkästchen **Untergeordnete Elemente einbeziehen** und heben Sie dann die Auswahl der anderen Kontrollkästchen auf. Klicken Sie auf **OK**.
-
-![AEMCS](./images/aemcssetup42.png)
-
-Klicken Sie auf **Veröffentlichen**.
-
-![AEMCS](./images/aemcssetup43.png)
-
-Sie werden dann hierher zurückgeschickt. Navigieren Sie **CitiSignal** > **us** > **en**. Aktivieren Sie das Kontrollkästchen vor **index** und klicken Sie dann auf **Bearbeiten**.
-
-![AEMCS](./images/aemcssetup44.png)
-
-Ihre Website wird dann im **universellen Editor** geöffnet.
-
-![AEMCS](./images/aemcssetup45.png)
-
-Sie können nun auf Ihre Website zugreifen, indem Sie zu `main--citisignal--XXX.aem.page/us/en` und/oder `main--citisignal--XXX.aem.live/us/en` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
-
-In diesem Beispiel lautet die vollständige URL wie folgt:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` und/oder `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
-
-Es kann einige Zeit dauern, bis alle Assets korrekt angezeigt werden, da sie zuerst veröffentlicht werden müssen.
-
-Sie sehen dann Folgendes:
-
-![AEMCS](./images/aemcssetup46.png)
-
-Nach einigen Minuten werden die Assets alle ordnungsgemäß geladen.
-
-![AEMCS](./images/aemcssetup47.png)
-
-## 2.1.2.7 der Testseitenleistung
-
-Navigieren Sie zu [https://pagespeed.web.dev/](https://pagespeed.web.dev/). Geben Sie Ihre URL ein und klicken Sie auf **Analysieren**.
-
-![AEMCS](./images/aemcssetup48.png)
-
-Anschließend sehen Sie, dass Ihre Website sowohl in einer Mobile- als auch in einer Desktop-Visualisierung einen Highscore erhält:
-
-**Mobil**:
-
-![AEMCS](./images/aemcssetup49.png)
-
-**Desktop**:
-
-![AEMCS](./images/aemcssetup50.png)
-
-Nächster Schritt: [2.1.3 Konfigurieren eines benutzerdefinierten Blocks](./ex3.md)
+Nächster Schritt: [2.1.3 Einrichten der AEM CS-Umgebung](./ex3.md)
 
 [Zurück zum Modul 2.1](./aemcs.md)
 

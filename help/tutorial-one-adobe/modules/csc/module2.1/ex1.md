@@ -4,9 +4,9 @@ description: Erstellen des Cloud Manager-Programms
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '223'
 ht-degree: 4%
 
 ---
@@ -31,11 +31,13 @@ Klicken Sie auf **Erstellen**.
 
 ![AEMCS](./images/aemcs3.png)
 
-Das Erstellen Ihrer Umgebungen dauert einige Zeit.
+Das Erstellen Ihrer Umgebungen dauert einige Zeit, 10-20 Minuten.
 
 ![AEMCS](./images/aemcs4.png)
 
-Sobald die Umgebungen erstellt und einsatzbereit sind, erhalten Sie eine E-Mail-Bestätigung.
+Während Sie warten, können Sie bereits mit der Übung [2.1.2 Erstellen einer dokumentbasierten Website beginnen](./ex2.md).
+
+Sobald die Umgebungen erstellt und einsatzbereit sind, erhalten Sie eine E-Mail-Bestätigung, nach der Sie hierher zurückkehren können.
 
 ![AEMCS](./images/aemcs5.png)
 
@@ -61,7 +63,7 @@ Anschließend werden die Details Ihrer Umgebung angezeigt, einschließlich der U
 
 Sobald die Pipeline-Ausführung abgeschlossen ist, können Sie mit der nächsten Übung fortfahren.
 
-Nächster Schritt: [2.1.2 Einrichten der AEM CS-Umgebung](./ex2.md)
+Nächster Schritt: [2.1.2 Erstellen Sie Ihre dokumentbasierte Website](./ex2.md)
 
 [Zurück zum Modul 2.1](./aemcs.md)
 

@@ -4,9 +4,9 @@ description: Erste Schritte mit Firefly-Services
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
@@ -244,7 +244,9 @@ Wenn Sie dann zum Azure Storage Explorer zurückkehren und den Inhalt Ihres Ordn
 
 ## 1.1.2.5 Verwendung der programmgesteuerten Datei
 
-Um Dateien programmgesteuert aus Azure Storage-Konten lesen zu können, müssen Sie ein neues **Shared Access Signature (SAS)-** mit Berechtigungen zum Lesen einer Datei erstellen. Sie könnten das in der vorherigen Übung erstellte SAS-Token technisch verwenden, es empfiehlt sich jedoch, ein separates Token nur mit &quot;**&quot;-** zu verwenden.
+Um langfristig programmgesteuert Dateien aus Azure Storage-Konten lesen zu können, müssen Sie ein neues **Shared Access Signature (SAS)-**-Token mit Berechtigungen zum Lesen einer Datei erstellen. Technisch gesehen könnten Sie das in der vorherigen Übung erstellte SAS-Token verwenden, es empfiehlt sich jedoch, ein separates Token mit nur **Lese-/** und ein separates Token mit nur **Schreib**-Berechtigungen zu verwenden.
+
+### Langfristiges SAS-Token lesen
 
 Gehen Sie dazu zurück zum Azure Storage-Explorer. Klicken Sie mit der rechten Maustaste auf den Container und dann auf **Freigegebene Zugriffssignatur abrufen**.
 
@@ -253,17 +255,113 @@ Gehen Sie dazu zurück zum Azure Storage-Explorer. Klicken Sie mit der rechten M
 Unter **Berechtigungen** sind die folgenden Berechtigungen erforderlich:
 
 - **Lesen**
-- **Hinzufügen**
-- **Create**
-- **Write**
 - **Liste**
+
+Legen Sie die **Ablaufzeit** auf ein Jahr fest.
 
 Klicken Sie auf **Erstellen**.
 
-![Azure-Speicher](./images/az28.png)
+![Azure-Speicher](./images/az100.png)
 
+Sie erhalten dann Ihr langfristiges SAS-Token mit Leseberechtigung. Kopieren Sie die URL und schreiben Sie sie in eine Datei auf Ihrem Computer.
 
-Nächster Schritt: [1.1.3 …](./ex3.md)
+![Azure-Speicher](./images/az101.png)
+
+Ihre URL sieht dann wie folgt aus:
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+Sie können aus der obigen URL mehrere Werte ableiten:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### Langfristiges SAS-Token schreiben
+
+Gehen Sie dazu zurück zum Azure Storage-Explorer. Klicken Sie mit der rechten Maustaste auf den Container und dann auf **Freigegebene Zugriffssignatur abrufen**.
+
+![Azure-Speicher](./images/az27.png)
+
+Unter **Berechtigungen** sind die folgenden Berechtigungen erforderlich:
+
+- **Hinzufügen**
+- **Create**
+- **Write**
+
+Legen Sie die **Ablaufzeit** auf ein Jahr fest.
+
+Klicken Sie auf **Erstellen**.
+
+![Azure-Speicher](./images/az102.png)
+
+Sie erhalten dann Ihr langfristiges SAS-Token mit Leseberechtigung. Kopieren Sie die URL und schreiben Sie sie in eine Datei auf Ihrem Computer.
+
+![Azure-Speicher](./images/az103.png)
+
+Ihre URL sieht dann wie folgt aus:
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Sie können wieder einige Werte aus der obigen URL ableiten:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Variablen in Postman
+
+Wie Sie im obigen Abschnitt sehen können, gibt es einige allgemeine Variablen sowohl im Lese- als auch im Schreib-Token.
+
+Jetzt müssen Sie in Postman Variablen erstellen, die die verschiedenen Elemente der oben genannten SAS-Token speichern.
+Es gibt einige Werte, die in beiden URLs identisch sind:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Bei zukünftigen API-Interaktionen ändert sich hauptsächlich der Asset-Name, während die oben genannten Variablen unverändert bleiben. In diesem Fall ist es sinnvoll, Variablen in Postman zu erstellen, sodass Sie sie nicht jedes Mal manuell angeben müssen.
+
+Öffnen Sie dazu Postman. Klicken Sie auf **Umgebungen**, öffnen Sie das Menü **Alle Variablen** und klicken Sie auf **Umgebung**.
+
+![Azure-Speicher](./images/az104.png)
+
+Dann sehen Sie das hier. Erstellen Sie diese 4 Variablen in der angezeigten Tabelle und geben Sie für die Spalten **Anfangswert** und **Aktueller Wert** Ihre spezifischen persönlichen Werte ein.
+
+- `AZURE_STORAGE_URL`: Ihre URL
+- `AZURE_STORAGE_CONTAINER`: Ihr Container-Name
+- `AZURE_STORAGE_SAS_READ`: Ihr SAS-Lese-Token
+- `AZURE_STORAGE_SAS_WRITE`: Ihr SAS-Schreib-Token
+
+Klicken Sie auf **Speichern**.
+
+![Azure-Speicher](./images/az105.png)
+
+In einer der vorherigen Übungen sah der **Body** Ihrer Anfrage **Firefly - T2I (styleref) V3** wie folgt aus:
+
+`"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+![Azure-Speicher](./images/az24.png)
+
+Sie können die URL wie folgt ändern:
+
+`"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+Klicken Sie **Senden**, um die vorgenommenen Änderungen zu testen.
+
+![Azure-Speicher](./images/az106.png)
+
+Wenn die Variablen richtig konfiguriert wurden, wird eine Bild-URL zurückgegeben.
+
+![Azure-Speicher](./images/az107.png)
+
+Öffnen Sie die Bild-URL, um Ihr Bild zu überprüfen.
+
+![Azure-Speicher](./images/az108.png)
+
+Nächster Schritt: [1.1.3 Adobe Firefly und Adobe Photoshop](./ex3.md)
 
 [Zurück zum Modul 1.1](./firefly-services.md)
 
