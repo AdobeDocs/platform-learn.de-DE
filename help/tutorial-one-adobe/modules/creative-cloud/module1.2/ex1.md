@@ -3,9 +3,10 @@ title: Erste Schritte mit Firefly-Services
 description: Erste Schritte mit Firefly-Services
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
+exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
+source-git-commit: a0c16a47372d322a7931578adca30a246b537183
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '703'
 ht-degree: 2%
 
 ---
@@ -191,7 +192,7 @@ Sie sollten dann diese haben. Klicken Sie auf **OK**.
 
 ![WF Fusion](./images/wffusion38.png)
 
-Klicken Sie *erneut auf* Einmal ausführen*.
+Klicken Sie **erneut auf &quot;** ausführen“.
 
 ![WF Fusion](./images/wffusion39.png)
 
@@ -227,7 +228,7 @@ Klicken Sie auf **Speichern**.
 
 ![WF Fusion](./images/wffusion47.png)
 
-Nächster Schritt: [1.2.2 Verwenden Sie mithilfe von Workfront Fusion Firefly-Text zum Bild](./ex2.md)
+Nächster Schritt: [1.2.2 Verwenden Sie Adobe-APIs in Workfront Fusion](./ex2.md)
 
 [Zurück zum Modul 1.2](./automation.md)
 
