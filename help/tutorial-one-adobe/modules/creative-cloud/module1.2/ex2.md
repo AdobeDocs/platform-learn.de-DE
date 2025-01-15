@@ -4,9 +4,9 @@ description: Erste Schritte mit Firefly-Services
 kt: 5342
 doc-type: tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: a0c16a47372d322a7931578adca30a246b537183
+source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '1759'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,227 @@ Sie sollten dann diese haben.
 
 ![WF Fusion](./images/wffusion74.png)
 
-Nächster Schritt: [1.2.3 …](./ex3.md)
+Klicken Sie **Einmal ausführen**.
+
+![WF Fusion](./images/wffusion75.png)
+
+Klicken Sie auf das **search**-Symbol im Knoten **Photoshop-**, um die Antwort anzuzeigen. Sie sollten über eine Antwort verfügen, die wie folgt aussieht, mit einem Link zu einer Statusdatei.
+
+![WF Fusion](./images/wffusion76.png)
+
+Bevor wir mit den Photoshop-API-Interaktionen fortfahren, deaktivieren wir die Route zum Knoten **Firefly T2I**, um nicht benötigte API-Aufrufe an diesen API-Endpunkt zu senden. Klicken Sie auf **Schraubenschlüssel** und wählen Sie dann **Route deaktivieren** aus.
+
+![WF Fusion](./images/wffusion77.png)
+
+Sie sollten dann diese haben.
+
+![WF Fusion](./images/wffusion78.png)
+
+Fügen Sie als Nächstes einen weiteren Knoten **Mehrere Variablen festlegen** hinzu.
+
+![WF Fusion](./images/wffusion79.png)
+
+Platzieren Sie sie nach dem Knoten **Photoshop-**:
+
+![WF Fusion](./images/wffusion80.png)
+
+Klicken Sie auf **Knoten „Mehrere Variablen festlegen** und wählen Sie **Element hinzufügen** aus. Wählen Sie den Variablenwert aus der Antwort der vorherigen Anfrage aus.
+
+| Variablenname | Variablenwert |
+|:-------------:| :---------------:| 
+| `psdStatusUrl` | `data > _links > self > href` |
+
+Klicken Sie auf **Hinzufügen**.
+
+![WF Fusion](./images/wffusion81.png)
+
+Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffusion82.png)
+
+Klicken Sie mit der rechten Maustaste auf den Knoten **Photoshop**&#x200B;Änderungstext“ und wählen Sie **Klonen**.
+
+![WF Fusion](./images/wffusion83.png)
+
+Ziehen Sie die geklonte HTTP-Anfrage nach dem Knoten **Mehrere Variablen festlegen** den Sie gerade erstellt haben.
+
+![WF Fusion](./images/wffusion83.png)
+
+Klicken Sie mit der rechten Maustaste auf die geklonte HTTP-Anfrage, wählen Sie **Umbenennen** und ändern Sie den Namen in **Photoshop-Prüfungsstatus**.
+
+![WF Fusion](./images/wffusion84.png)
+
+Klicken Sie, um die HTTP-Anfrage zu öffnen. Ändern Sie die URL so, dass sie auf die Variable verweist, die Sie im vorherigen Schritt erstellt haben, und setzen Sie **Methode** auf **GET**.
+
+![WF Fusion](./images/wffusion85.png)
+
+Entfernen Sie den **Hauptteil**, indem Sie die leere Option auswählen.
+
+![WF Fusion](./images/wffusion86.png)
+
+Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffusion87.png)
+
+Klicken Sie **Einmal ausführen**.
+
+![WF Fusion](./images/wffusion88.png)
+
+Sie sollten dann eine -Antwort erhalten, die das Feld **status** enthält, wobei der Status auf &quot;**&quot;**. Photoshop braucht einige Sekunden, um den Vorgang abzuschließen.
+
+![WF Fusion](./images/wffusion89.png)
+
+Da Sie nun wissen, dass die Antwort etwas mehr Zeit benötigt, um abgeschlossen zu werden, kann es eine gute Idee sein, vor dieser HTTP-Anfrage einen Timer hinzuzufügen, damit sie nicht sofort ausgeführt wird.
+
+Klicken Sie auf den **Tools**-Knoten und wählen Sie dann **Sleep** aus.
+
+![WF Fusion](./images/wffusion90.png)
+
+Positionieren Sie den **Sleep**-Knoten zwischen **Mehrere Variablen festlegen** und **Photoshop-**. Stellen Sie die **Verzögerung** auf **5** Sekunden ein. Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffusion91.png)
+
+Dann hast du das hier. Die Herausforderung bei der folgenden Konfiguration besteht darin, dass 5 Sekunden warten vielleicht genug ist, aber vielleicht nicht genug. In Wirklichkeit wäre es besser, eine intelligentere Lösung wie eine do…while-Schleife zu haben, die den Status alle 5 Sekunden prüft, bis der Status gleich ist **erfolgreich**. Sie werden eine solche Taktik jetzt in den nächsten Schritten implementieren.
+
+![WF Fusion](./images/wffusion92.png)
+
+Klicken Sie auf das **Schraubenschlüssel**-Symbol zwischen **Mehrere Variablen festlegen** und **Sleep**. Wählen Sie **Modul hinzufügen** aus.
+
+![WF Fusion](./images/wffusion93.png)
+
+Suchen Sie nach `flow` und wählen Sie **Flusssteuerung** aus.
+
+![WF Fusion](./images/wffusion94.png)
+
+Wählen Sie **Repeater** aus.
+
+![WF Fusion](./images/wffusion95.png)
+
+Stellen Sie den **Repeats** auf **20** ein. Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffusion96.png)
+
+Klicken Sie anschließend auf **+** auf der **Photoshop-**, um ein weiteres Modul hinzuzufügen.
+
+![WF Fusion](./images/wffusion97.png)
+
+Suchen Sie nach **flow** und wählen Sie **Fluss-Steuerung** aus.
+
+![WF Fusion](./images/wffusion98.png)
+
+Wählen Sie **Array-Aggregator** aus.
+
+![WF Fusion](./images/wffusion99.png)
+
+Setzen Sie **Source Module** auf **Repeater**. Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffusion100.png)
+
+Sie sollten dann Folgendes haben:
+
+![WF Fusion](./images/wffusion101.png)
+
+Klicken Sie auf das **Schraubenschlüssel**-Symbol und wählen Sie **Modul hinzufügen**.
+
+![WF Fusion](./images/wffusion102.png)
+
+Suchen Sie nach **tools** und wählen Sie **Tools** aus.
+
+![WF Fusion](./images/wffusion103.png)
+
+Wählen Sie **Mehrere Variablen abrufen**.
+
+![WF Fusion](./images/wffusion104.png)
+
+Klicken Sie auf **+ Element** und legen Sie **Variablenname** auf `done` fest.
+
+![WF Fusion](./images/wffusion105.png)
+
+Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffusion106.png)
+
+Klicken Sie auf **Knoten „Mehrere Variablen festlegen** den Sie zuvor konfiguriert haben. Um die Variable zu initialisieren **Done** müssen Sie sie hier auf `false` setzen. Klicken Sie auf **+ Element hinzufügen**.
+
+![WF Fusion](./images/wffusion107.png)
+
+Verwenden Sie `done` für **Variablennamen**. Zum Festlegen des Status ist ein boolescher Wert erforderlich. Um den booleschen Wert zu finden, klicken Sie auf das **Zahnradsymbol** und wählen Sie dann `false` aus. Klicken Sie auf **Hinzufügen**.
+
+![WF Fusion](./images/wffusion108.png)
+
+Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffusion109.png)
+
+Klicken Sie anschließend auf das **Schraubenschlüssel**-Symbol nach dem **Abrufen mehrerer**&quot;, den Sie konfiguriert haben.
+
+![WF Fusion](./images/wffusion110.png)
+
+Wählen Sie **Filter einrichten** aus. Jetzt müssen Sie den Wert der Variablen (**)**. Wenn dieser Wert auf **false** gesetzt ist, muss der nächste Teil der Schleife ausgeführt werden. Wenn der Wert auf **true** festgelegt ist, bedeutet dies, dass der Prozess bereits erfolgreich abgeschlossen wurde, sodass es nicht erforderlich ist, mit dem nächsten Teil der Schleife fortzufahren.
+
+![WF Fusion](./images/wffusion111.png)
+
+Verwenden Sie für die Bezeichnung **Sind wir fertig?**. Legen Sie die **Bedingung** mithilfe der bereits vorhandenen Variable **Done** fest. Der Operator sollte auf **Gleich** festgelegt werden und der Wert sollte die boolesche Variable `false` sein. Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffusion112.png)
+
+Nehmen Sie als Nächstes etwas Platz zwischen den Knoten **Photoshop-** und **Array-Aggregator**. Klicken Sie dann auf das **Schraubenschlüssel**-Symbol und wählen Sie **Router hinzufügen** aus. Dies liegt daran, dass es nach der Überprüfung des Status der Photoshop-Datei zwei Pfade geben sollte. Wenn der Status `succeeded` ist, sollte die Variable **done** auf `true` gesetzt werden. Wenn der Status nicht gleich `succeeded` ist, sollte die Schleife fortgesetzt werden. Der Router ermöglicht es, dies zu überprüfen und einzustellen.
+
+![WF Fusion](./images/wffusion113.png)
+
+Klicken Sie nach dem Hinzufügen des Routers auf **Schraubenschlüssel** und wählen Sie **Filter einrichten** aus.
+
+![WF Fusion](./images/wffusion114.png)
+
+Verwenden Sie für die Bezeichnung **Wir sind fertig**. Legen Sie die **Bedingung** mithilfe der Antwort des Knotens **Photoshop-** fest, indem Sie das Antwortfeld **data.output[].status** auswählen. Der Operator sollte auf **Gleich** gesetzt und der Wert sollte `succeeded` werden. Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffusion115.png)
+
+Klicken Sie anschließend auf den leeren Knoten mit dem Fragezeichen und suchen Sie nach **tools**. Wählen Sie dann **Tools** aus.
+
+![WF Fusion](./images/wffusion116.png)
+
+Wählen Sie **Mehrere Variablen festlegen** aus.
+
+![WF Fusion](./images/wffusion117.png)
+
+Wenn diese Verzweigung des Routers verwendet wird, bedeutet dies, dass die Erstellung der Photoshop-Datei erfolgreich abgeschlossen wurde. Das bedeutet, dass die do…while-Schleife nicht mehr mit der Überprüfung des Status in Photoshop fortfahren muss, sodass die Variable `done` auf `true` gesetzt werden sollte.
+
+Verwenden Sie `done` für **Variablennamen**. Für den **Variablenwert** sollten Sie den booleschen `true` verwenden. Klicken Sie auf **Zahnrad** und wählen Sie dann `true` aus. Klicken Sie auf **Hinzufügen**.
+
+![WF Fusion](./images/wffusion118.png)
+
+Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffusion119.png)
+
+Klicken Sie anschließend mit der rechten Maustaste auf den **Mehrere Variablen festlegen** Knoten, den Sie gerade erstellt haben, und wählen Sie **Klonen**.
+
+![WF Fusion](./images/wffusion120.png)
+
+Ziehen Sie den geklonten Knoten, sodass er eine Verbindung mit dem **Array-Aggregator)**. Klicken Sie anschließend mit der rechten Maustaste auf den Knoten und wählen **Umbenennen**, und ändern Sie den Namen in `Placeholder End`.
+
+![WF Fusion](./images/wffusion122.png)
+
+Entfernen Sie die vorhandene Variable und klicken Sie auf **+ Element hinzufügen**. Verwenden Sie für **Variablenname** den `placeholder`, für den **Variablenwert** den `end`. Klicken Sie auf **Hinzufügen** und dann auf **OK**.
+
+![WF Fusion](./images/wffusion123.png)
+
+Klicken Sie auf **Speichern**, um Ihr Szenario zu speichern. Klicken Sie anschließend auf **Einmal ausführen**.
+
+![WF Fusion](./images/wffusion124.png)
+
+Ihr Szenario wird dann ausgeführt und sollte erfolgreich abgeschlossen werden. Sie werden feststellen, dass die von Ihnen konfigurierte do…while-Schleife einwandfrei funktionierte. In der folgenden Ausführung sehen Sie, dass der **Repeater** basierend auf der Sprechblase im Knoten **Tools > Mehrere Variablen abrufen** 20 Mal ausgeführt wurde. Nach diesem Knoten haben Sie einen Filter konfiguriert, der den Status überprüft, und nur wenn der Status nicht **Erfolgreich** war, wurden die nächsten Knoten ausgeführt. In diesem Durchgang wurde das Teil nach dem Filter nur einmal ausgeführt, da der Status bereits **ersten Durchgang** erfolgreich“ war.
+
+![WF Fusion](./images/wffusion125.png)
+
+Sie können den Erstellungsstatus Ihrer neuen Photoshop-Datei überprüfen, indem Sie auf die Schaltfläche für die **HTTP-Anfrage zur** des Photoshops klicken und nach unten zum Feld **status** bohren.
+
+![WF Fusion](./images/wffusion126.png)
+
+Sie haben jetzt die Basisversion eines wiederholbaren Szenarios konfiguriert, das eine Reihe von Schritten automatisiert. In der nächsten Übung werden Sie dies durchlaufen, indem Sie Komplexität hinzufügen.
+
+Nächster Schritt: [1.2.3 Prozessautomatisierung mit Workfront Fusion](./ex3.md)
 
 [Zurück zum Modul 1.2](./automation.md)
 
