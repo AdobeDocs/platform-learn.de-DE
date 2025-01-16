@@ -1,17 +1,17 @@
 ---
-title: 1.1 Adobe Firefly-Services
-description: Adobe Firefly-Services
+title: Kreative Workflow-Automatisierung mit Workfront Fusion
+description: Kreative Workflow-Automatisierung mit Workfront Fusion
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '182'
 ht-degree: 2%
 
 ---
 
-# 1.2 Automatisieren von Adobe Firefly-Services
+# 1.2 Creative Workflow-Automatisierung mit Workfront Fusion
 
 ## Lernziele
 

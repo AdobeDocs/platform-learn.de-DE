@@ -3,9 +3,9 @@ title: Überblick - Umfassendes technisches Tutorial - eine Adobe
 description: Umfassendes technisches Tutorial - eine Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '342'
 ht-degree: 4%
 
 ---
@@ -32,6 +32,7 @@ Dieses Tutorial konzentriert sich nicht nur auf Adobe-Anwendungen, sondern berü
 - Google Cloud Platform
 - Microsoft Azure
 - Postman
+- Snowflake
 - ...
 
 Nach Abschluss der Übungen in dieser Anleitung haben Sie folgende Möglichkeiten:
@@ -55,7 +56,11 @@ Wenn Sie dieses Tutorial mit Ihrer eigenen Adobe Experience Cloud-Instanz durchf
 
 [1.1 Adobe Firefly-Services](./modules/creative-cloud/module1.1/firefly-services.md)
 
-In diesem grundlegenden Modul verwenden Sie Adobe Firefly zum …
+In diesem Modul verwenden Sie Adobe Firefly Services-APIs, Photoshop-APIs und Microsoft Azure Storage-Services, um Bilder zu generieren und programmgesteuert zu speichern.
+
+[1.2 Creative Workflow-Automatisierung mit Workfront Fusion](./modules/creative-cloud/module1.2/automation.md)
+
+In diesem grundlegenden Modul verwenden Sie Adobe Workfront Fusion, um Ihre Workflows zur Inhaltserstellung zu automatisieren und zu skalieren.
 
 ### 2. Inhaltslieferkette
 

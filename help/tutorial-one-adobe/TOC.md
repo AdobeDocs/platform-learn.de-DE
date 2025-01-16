@@ -4,9 +4,9 @@ breadcrumb-title: Umfassendes technisches Tutorial für Adobe-Anwendungen, von C
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7b88a325bcf827f951f400f310dec4fcb394fb42
+source-git-commit: 0c89770961c1f0c46685233b5446223c9ff2bc13
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 5%
 
 ---
@@ -22,10 +22,10 @@ ht-degree: 5%
    + 1.1 Adobe Firefly Services-{#module11}
       + [Übersicht](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1 Erste Schritte mit Firefly-Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
-      + [1.1.2 Optimieren Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefinierten URLs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
+      + [1.1.2 Optimieren Sie Ihre Firefly-Prozesse mit Microsoft Azure und vordefinierten URLs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Adobe Firefly und Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
-   + 1.2 Automatisieren von Adobe Firefly-Services {#module21}
+   + 1.2 Creative Workflow-Automatisierung mit Workfront Fusion {#module21}
       + [Übersicht](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
       + [1.2.1 Erste Schritte mit Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
       + [1.2.2 Verwenden von Adobe-APIs in Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
