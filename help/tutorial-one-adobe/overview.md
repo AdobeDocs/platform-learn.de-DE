@@ -2,10 +2,9 @@
 title: Überblick - Umfassendes technisches Tutorial - eine Adobe
 description: Umfassendes technisches Tutorial - eine Adobe
 doc-type: multipage-overview
-exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: 3461f494c12ee020dbea9ec3c474fe68da7357cf
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '483'
 ht-degree: 4%
 
 ---
@@ -19,8 +18,9 @@ Dieses Tutorial ist der perfekte Ausgangspunkt für
 Dieses Tutorial ist sehr vielfältig und bietet klare Einblicke in die folgenden Programme:
 
 - Adobe Firefly-Services
+- Adobe Photoshop
 - Adobe Workfront und Adobe Workfront Fusion
-- Adobe Experience Manager Cloud Service, Sites und Assets
+- Adobe Experience Manager Cloud Service, Sites, Assets und Edge Delivery Services
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
@@ -35,22 +35,27 @@ Dieses Tutorial konzentriert sich nicht nur auf Adobe-Anwendungen, sondern berü
 - Snowflake
 - ...
 
-Nach Abschluss der Übungen in dieser Anleitung haben Sie folgende Möglichkeiten:
-
-- ...
-
 ## Voraussetzungen
 
 Wenn Sie dieses Tutorial mit Ihrer eigenen Adobe Experience Cloud-Instanz durchführen möchten, müssen die folgenden Programme in Ihrer Instanz bereitgestellt werden und Sie müssen auf Folgendes zugreifen können:
 
 - Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
-- Adobe Expreß [https://new.express.adobe.com/](https://new.express.adobe.com/)
+- Adobe Photoshop
+- Adobe Workfront
 - Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/)
 - Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Zugriff auf die Adobe Experience Platform-Datenerfassung: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Adobe Experience Platform-Datenerfassung: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Zugriff auf das Demosystem: [https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## Inhalt
+
+Um den Status der folgenden Inhalte zu überprüfen, gehen Sie bitte zur [Statusseite](./status.md).
+
+### Erste Schritte
+
+[Erste Schritte](./modules/getting-started/gettingstarted/getting-started.md)
+
+In diesem grundlegenden Modul werden Sie alles so einrichten, dass Sie auf die Demo-Umgebung zugreifen und sie verwenden können.
 
 ### 1. Adobe Creative Cloud
 
@@ -64,16 +69,28 @@ In diesem grundlegenden Modul verwenden Sie Adobe Workfront Fusion, um Ihre Work
 
 ### 2. Inhaltslieferkette
 
-[2.1 Adobe Experience Manager-Cloud Service](./modules/csc/module2.1/aemcs.md)
+[2.1 Adobe Experience Manager - Cloud Service und Edge Delivery Services](./modules/csc/module2.1/aemcs.md)
 
 In diesem Grundmodul richten Sie Ihr Adobe Experience Manager-Cloud Service-Programm, Ihre Site und Ihr Assets-Repository ein.
 
-[2.2 Adobe Workfront](./modules/csc/module2.2/workfront.md)
+[2.2 Workflow-Management mit Adobe Workfront](./modules/csc/module2.2/workfront.md)
 
-In diesem Grundmodul richten Sie Ihr Adobe Experience Manager-Cloud Service-Programm, Ihre Site und Ihr Assets-Repository ein.
+In diesem grundlegenden Modul konfigurieren und verwenden Sie Adobe Workfront, um Genehmigungsflüsse zu verwalten, und Sie verwenden Integrationen mit Adobe Experience Manager Assets, dem universellen Editor, Photoshop und mehr.
 
 ### 3. Einheitliches Kundenerlebnis
 
 [3.1 Federated Audience-Komposition](./modules/uce/module3.1/fac.md)
 
 In diesem grundlegenden Modul erfahren Sie mehr über die Datenerfassung in Adobe Experience Platform und die neue Web-SDK-Erweiterung.
+
+[3.2 Adobe Journey Optimizer: Übersetzungsdienstleistungen](./modules/uce/module3.2/ajotranslationsvcs.md)
+
+In diesem Modul verwenden Sie Adobe Journey Optimizer zum Einrichten und Verwenden von Übersetzungs-Services.
+
+[3.3 Adobe Journey Optimizer: Offer decisioning](./modules/uce/module3.3/offer-decisioning.md)
+
+In diesem Modul verwenden Sie Adobe Journey Optimizer mit offer decisioning-Services in praktischer Weise, um personalisierte Angebote und Ihre eigene Entscheidung zu konfigurieren.
+
+>[!NOTE]
+>
+>Vielen Dank, dass Sie sich Zeit genommen haben, um alles über Adobe Experience Platform und seine Programme zu erfahren. Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.

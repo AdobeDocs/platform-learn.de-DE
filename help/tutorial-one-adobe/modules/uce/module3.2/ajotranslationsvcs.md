@@ -1,35 +1,30 @@
 ---
-title: Workflow-Management mit Adobe Workfront
-description: Workflow-Management mit Adobe Workfront
+title: Adobe Journey Optimizer-Übersetzungs-Services
+description: Adobe Journey Optimizer-Übersetzungs-Services
 kt: 5342
 doc-type: tutorial
-exl-id: 96685851-b446-4bae-890e-4f96a59cedba
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: 91dbf1aac923c26608528b163bbd68218d45425b
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '104'
 ht-degree: 3%
 
 ---
 
-# 2.2 Workflow-Management mit Adobe Workfront
+# 3.2 Adobe Journey Optimizer-Übersetzungsdienste
 
 ## Lernziele
 
-- Erfahren Sie, wie Sie Adobe Workfront auf verschiedene Weise verwenden.
+- Erfahren Sie, wie Sie Adobe Journey Optimizer-Übersetzungs-Services konfigurieren und verwenden.
 
 ## Voraussetzungen
 
-- Zugriff auf Workfront und Workfront Fusion
+- Zugriff auf Adobe Journey Optimizer
 
 ## Übungen
 
-[2.2.1 Erste Schritte mit Workfront](./ex1.md)
+[3.2.1 …](./ex1.md)
 
 In dieser Übung, …
-
-[2.2.5 Workfront- und Photoshop-Integration](./ex5.md)
-
-In dieser Übung richten Sie das Plug-in ein, das Adobe Photoshop mit Adobe Workfront verbindet, und beginnen mit seiner Verwendung.
 
 [Zusammenfassung und Vorteile](./summary.md)
 
