@@ -4,7 +4,7 @@ description: Kreative Workflow-Automatisierung mit Workfront Fusion
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -42,7 +42,8 @@ Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 >[!NOTE]
 >
->![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
 
 [Zurück zu „Alle Module“](../../../overview.md)

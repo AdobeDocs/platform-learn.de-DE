@@ -3,7 +3,7 @@ title: Überblick - Umfassendes technisches Tutorial - eine Adobe
 description: Umfassendes technisches Tutorial - eine Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 6fabd01d69e01255bc45c811fa37701728e032fa
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Umfassendes technisches Tutorial - eine Adobe
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="center"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Übersicht
 
@@ -96,5 +96,6 @@ In diesem Modul verwenden Sie Adobe Journey Optimizer mit offer decisioning-Serv
 
 >[!NOTE]
 >
->![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="center"}
+>![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
