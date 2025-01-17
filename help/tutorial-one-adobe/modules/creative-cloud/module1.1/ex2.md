@@ -4,9 +4,9 @@ description: Optimieren Sie Ihren Firefly-Prozess mit Microsoft Azure und vordef
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -108,6 +108,10 @@ Nach der Authentifizierung wird eine Nachricht wie die folgende angezeigt.
 ![Azure-Speicher](./images/az15.png)
 
 Wechseln Sie zurück zur Microsoft Azure Storage Explorer-App. Wählen Sie Ihr Abonnement aus und klicken Sie auf **Explorer öffnen**.
+
+>[!NOTE]
+>
+>Wenn Ihr Konto nicht angezeigt wird, klicken Sie auf das **Zahnradsymbol** neben Ihrer E-Mail-Adresse und wählen Sie **Filter aufheben**.
 
 ![Azure-Speicher](./images/az16.png)
 
