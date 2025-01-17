@@ -4,9 +4,9 @@ description: Workflow-Management mit Adobe Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 96685851-b446-4bae-890e-4f96a59cedba
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '112'
 ht-degree: 3%
 
 ---
@@ -23,20 +23,21 @@ ht-degree: 3%
 
 ## Übungen
 
-[2.2.1 Erste Schritte mit Workfront](./ex1.md)
+[2.2.1 Erste Schritte mit Workfront](./ex1.md){target="_blank"}
 
 In dieser Übung, …
 
-[2.2.5 Workfront- und Photoshop-Integration](./ex5.md)
+[2.2.5 Workfront- und Photoshop-Integration](./ex5.md){target="_blank"}
 
 In dieser Übung richten Sie das Plug-in ein, das Adobe Photoshop mit Adobe Workfront verbindet, und beginnen mit seiner Verwendung.
 
-[Zusammenfassung und Vorteile](./summary.md)
+[Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um alles über Adobe Experience Platform und seine Programme zu erfahren. Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
+>![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
 
-[Zurück zu „Alle Module“](../../../overview.md)
+[Zurück zu „Alle Module“](../../../overview.md){target="_blank"}

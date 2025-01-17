@@ -4,7 +4,7 @@ description: Erstellen des Cloud Manager-Programms
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 2.1.2 Erstellen einer dokumentbasierten Website
 
-Während Sie auf die Erstellung Ihres Cloud Manager-Programms warten, haben Sie genügend Zeit, um Ihre erste dokumentbasierte Authoring-Website einzurichten. Die folgende Übung basiert auf dem [aem.live-Entwickler-Tutorial](https://www.aem.live/developer/tutorial). Gehen Sie wie folgt vor, um zu beginnen.
+Während Sie auf die Erstellung Ihres Cloud Manager-Programms warten, haben Sie genügend Zeit, um Ihre erste dokumentbasierte Authoring-Website einzurichten. Die folgende Übung basiert auf dem [aem.live-Entwickler-Tutorial](https://www.aem.live/developer/tutorial){target="_blank"}. Gehen Sie wie folgt vor, um zu beginnen.
 
 ## 2.1.2.1 Einrichten des Google-Laufwerks
 
-Navigieren Sie zu [https://drive.google.com](https://drive.google.com). Klicken Sie auf **+ Neu** dann auf **Neuer Ordner**.
+Navigieren Sie zu [https://drive.google.com](https://drive.google.com){target="_blank"}. Klicken Sie auf **+ Neu** dann auf **Neuer Ordner**.
 
 ![AEMCS](./images/googledrive1.png)
 
@@ -25,7 +25,7 @@ Benennen Sie den Ordner `aemdocb-test`. Klicken Sie auf **Erstellen**.
 
 ![AEMCS](./images/googledrive2.png)
 
-Laden Sie die Datei [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip) herunter und extrahieren Sie sie auf Ihrem Computer.
+Laden Sie die Datei [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip){target="_blank"} herunter und extrahieren Sie sie auf Ihrem Computer.
 
 ![AEMCS](./images/googledrive3.png)
 
@@ -65,7 +65,7 @@ Sie sollten den Abfragezeichenfolgenparameter `?usp=drive_link` entfernen, sodas
 
 ## 2.1.2.2 Einrichten des GitHub-Repositorys
 
-Navigieren Sie zu [https://github.com](https://github.com). Klicken Sie auf **Anmelden**.
+Navigieren Sie zu [https://github.com](https://github.com){target="_blank"}. Klicken Sie auf **Anmelden**.
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -77,7 +77,7 @@ Nach der Anmeldung sehen Sie Ihr GitHub-Dashboard.
 
 ![AEMCS](./images/aemcssetup3.png)
 
-Navigieren Sie zu [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate). Sie werden es dann sehen. Klicken Sie **Diese Vorlage verwenden** und anschließend auf **Neues Repository erstellen**.
+Navigieren Sie zu [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate){target="_blank"}. Sie werden es dann sehen. Klicken Sie **Diese Vorlage verwenden** und anschließend auf **Neues Repository erstellen**.
 
 ![AEMCS](./images/aemdocbcssetup4.png)
 
@@ -89,7 +89,7 @@ Nach einigen Sekunden wird dann Ihr Repository erstellt.
 
 ![AEMCS](./images/aemdocbcssetup6.png)
 
-Navigieren Sie anschließend zu [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync). Klicken Sie **Konfigurieren**.
+Navigieren Sie anschließend zu [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}. Klicken Sie **Konfigurieren**.
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -133,7 +133,7 @@ Klicken Sie **Änderungen übernehmen**.
 
 ## 2.1.2.4 Installieren der AEM Sidekick-Erweiterung
 
-Navigieren Sie zu [https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo). Klicken Sie **Zu Chrome hinzufügen**.
+Navigieren Sie zu [https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo){target="_blank"}. Klicken Sie **Zu Chrome hinzufügen**.
 
 ![AEMCS](./images/aemdocbcssetup16.png)
 
@@ -205,8 +205,8 @@ Anschließend wird die Live-Version Ihrer Website angezeigt.
 
 Die obige Übung war eine gute Möglichkeit, um loszulegen und das dokumentenbasierte Authoring selbst zu erleben. Sie können jetzt mit der nächsten Übung fortfahren, in der Sie Ihre eigene Demo-Website mit CitiSignal als Demo-Marke einrichten.
 
-Nächster Schritt: [2.1.3 Einrichten der AEM CS-Umgebung](./ex3.md)
+Nächster Schritt: [2.1.3 Einrichten der AEM CS-Umgebung](./ex3.md){target="_blank"}
 
-[Zurück zum Modul 2.1](./aemcs.md)
+[Zurück zum Modul 2.1](./aemcs.md){target="_blank"}
 
-[Zurück zu „Alle Module“](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md){target="_blank"}

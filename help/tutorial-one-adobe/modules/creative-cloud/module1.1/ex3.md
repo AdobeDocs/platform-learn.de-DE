@@ -4,7 +4,7 @@ description: Arbeiten mit Photoshop-APIs
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 1.1.3.1 Aktualisieren der Adobe I/O-Integration
 
-Navigieren Sie zu [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home).
+Navigieren Sie zu [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
 ![Neue Integration Adobe I/O](./images/iohome.png)
 
@@ -49,7 +49,7 @@ Ihr Adobe I/O-Projekt wurde jetzt aktualisiert, um mit Photoshop- und Firefly-Se
 
 ## Programmgesteuerte Interaktion 1.1.3.2 PSD-Dateien
 
-Laden Sie die Datei Go to [Citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd) auf Ihren Desktop herunter.
+Laden Sie die Datei Go to [Citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} auf Ihren Desktop herunter.
 
 Öffnen Sie die Datei **Citisignal-fiber.psd** in Photoshop. Sie sollten dann diese haben.
 
@@ -229,8 +229,8 @@ Schließlich sehen Sie diese Datei dann auch in Ihrem Container mit dem Azure St
 
 Sie haben jetzt diese Übung abgeschlossen.
 
-Nächster Schritt: [1.1.4 Firefly benutzerdefinierter Modelle](./ex4.md)
+Nächster Schritt: [1.1.4 Firefly benutzerdefinierter Modelle](./ex4.md){target="_blank"}
 
-[Zurück zum Modul 1.1](./firefly-services.md)
+[Zurück zum Modul 1.1](./firefly-services.md){target="_blank"}
 
-[Zurück zu „Alle Module“](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md){target="_blank"}

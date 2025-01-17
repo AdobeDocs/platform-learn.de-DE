@@ -3,7 +3,8 @@ title: Entwickeln eines benutzerdefinierten Bausteins
 description: Entwickeln eines benutzerdefinierten Bausteins
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
+exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 ## Einrichten 2.1.4.1 lokalen Entwicklungsumgebung
 
-Wechseln Sie zu [https://desktop.github.com/download/](https://desktop.github.com/download/), laden Sie (GitHub **) herunter und installieren Sie**.
+Wechseln Sie zu [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, laden Sie (GitHub **) herunter und installieren Sie**.
 
 ![Block](./images/block1.png)
 
@@ -29,6 +30,6 @@ Ihr GitHub-Repository wird dann in GitHub Desktop geöffnet. Sie können auch de
 Ein lokales Formular
 
 
-[Zurück zum Modul 2.1](./aemcs.md)
+[Zurück zum Modul 2.1](./aemcs.md){target="_blank"}
 
-[Zurück zu „Alle Module“](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md){target="_blank"}

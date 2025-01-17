@@ -4,7 +4,7 @@ description: Erstellen des Cloud Manager-Programms
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 2.1.1 Cloud Manager-Programm erstellen
 
-Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Die gewünschte Organisation ist `--aepImsOrgName--`. Sie werden dann so etwas sehen. Klicken Sie **Programm hinzufügen**.
+Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Die gewünschte Organisation ist `--aepImsOrgName--`. Sie werden dann so etwas sehen. Klicken Sie **Programm hinzufügen**.
 
 ![AEMCS](./images/aemcs1.png)
 
@@ -35,13 +35,13 @@ Das Erstellen Ihrer Umgebungen dauert einige Zeit, 10-20 Minuten.
 
 ![AEMCS](./images/aemcs4.png)
 
-Während Sie warten, können Sie bereits mit der Übung [2.1.2 Erstellen einer dokumentbasierten Website beginnen](./ex2.md).
+Während Sie warten, können Sie bereits mit der Übung [2.1.2 Erstellen einer dokumentbasierten Website beginnen](./ex2.md){target="_blank"}.
 
 Sobald die Umgebungen erstellt und einsatzbereit sind, erhalten Sie eine E-Mail-Bestätigung, nach der Sie hierher zurückkehren können.
 
 ![AEMCS](./images/aemcs5.png)
 
-Nachdem Sie Ihre E-Mail-Bestätigung erhalten haben, gehen Sie zurück zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Anschließend sehen Sie, dass der Status Ihres Programms in &quot;**&quot;** wurde. Klicken Sie auf das Programm, um es zu öffnen.
+Nachdem Sie Ihre E-Mail-Bestätigung erhalten haben, gehen Sie zurück zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Anschließend sehen Sie, dass der Status Ihres Programms in &quot;**&quot;** wurde. Klicken Sie auf das Programm, um es zu öffnen.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -63,8 +63,8 @@ Anschließend werden die Details Ihrer Umgebung angezeigt, einschließlich der U
 
 Sobald die Pipeline-Ausführung abgeschlossen ist, können Sie mit der nächsten Übung fortfahren.
 
-Nächster Schritt: [2.1.2 Erstellen Sie Ihre dokumentbasierte Website](./ex2.md)
+Nächster Schritt: [2.1.2 Erstellen Sie Ihre dokumentbasierte Website](./ex2.md){target="_blank"}
 
-[Zurück zum Modul 2.1](./aemcs.md)
+[Zurück zum Modul 2.1](./aemcs.md){target="_blank"}
 
-[Zurück zu „Alle Module“](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md){target="_blank"}

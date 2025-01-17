@@ -3,7 +3,7 @@ title: Arbeiten mit Photoshop-APIs
 description: Arbeiten mit Photoshop-APIs
 kt: 5342
 doc-type: tutorial
-source-git-commit: b7ee794e9611afc7bee35a0f471ec50caad10f85
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # 1.1.4 Benutzerdefinierte Firefly-Modelle
 
-Navigieren Sie zu [https://firefly.adobe.com](https://firefly.adobe.com). Navigieren Sie zu **Benutzerdefinierte Modelle**.
+Navigieren Sie zu [https://firefly.adobe.com](https://firefly.adobe.com){target="_blank"}. Navigieren Sie zu **Benutzerdefinierte Modelle**.
 
 ![Firefly](./images/ffcm1.png)
 
@@ -54,8 +54,8 @@ Ihre Bilder werden jetzt hochgeladen. Dies kann einige Zeit dauern.
 
 Sie haben jetzt diese Übung abgeschlossen.
 
-Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
+Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
-[Zurück zum Modul 1.1](./firefly-services.md)
+[Zurück zum Modul 1.1](./firefly-services.md){target="_blank"}
 
-[Zurück zu „Alle Module“](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md){target="_blank"}

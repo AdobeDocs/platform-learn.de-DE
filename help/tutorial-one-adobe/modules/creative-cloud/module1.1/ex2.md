@@ -4,7 +4,7 @@ description: Optimieren Sie Ihren Firefly-Prozess mit Microsoft Azure und vordef
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >Wenn Sie bereits über ein Azure-Abonnement verfügen, können Sie diesen Schritt überspringen. Bitte fahren Sie in diesem Fall mit der nächsten Übung fort.
 
-Wechseln Sie zu [https://portal.azure.com](https://portal.azure.com) und melden Sie sich mit Ihrem Azure-Konto an. Wenn Sie noch keine haben, verwenden Sie bitte Ihre persönliche E-Mail-Adresse, um Ihr Azure-Konto zu erstellen.
+Wechseln Sie zu [https://portal.azure.com](https://portal.azure.com){target="_blank"} und melden Sie sich mit Ihrem Azure-Konto an. Wenn Sie noch keine haben, verwenden Sie bitte Ihre persönliche E-Mail-Adresse, um Ihr Azure-Konto zu erstellen.
 
 ![Azure-Speicher](./images/02azureportalemail.png)
 
@@ -83,7 +83,7 @@ Ihr Container kann jetzt verwendet werden.
 
 ## 1.1.2.3 Installieren von Azure Storage Explorer
 
-Sie verwenden den Microsoft Azure Storage Explorer, um Ihre Dateien zu verwalten. Sie können ihn über [diesen Link](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4) herunterladen. Wählen Sie die richtige Version für Ihr Betriebssystem aus, laden Sie sie herunter und installieren Sie sie.
+Sie verwenden den Microsoft Azure Storage Explorer, um Ihre Dateien zu verwalten. Sie können ihn über [diesen Link](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} herunterladen. Wählen Sie die richtige Version für Ihr Betriebssystem aus, laden Sie sie herunter und installieren Sie sie.
 
 ![Azure-Speicher](./images/az10.png)
 
@@ -125,7 +125,7 @@ Ihr Speicherkonto finden Sie dann unter **Speicherkonten**.
 
 ## 1.1.2.4 Manueller Datei-Upload und Verwendung einer Grafikdatei als Stilreferenz
 
-Sie sollten jetzt eine Bilddatei Ihrer Wahl in Ihren Container hochladen. Sie können eine beliebige Bilddatei verwenden, oder Sie können [diese Datei](./images/gradient.jpg) verwenden, indem Sie sie auf Ihren Computer herunterladen.
+Sie sollten jetzt eine Bilddatei Ihrer Wahl in Ihren Container hochladen. Sie können eine beliebige Bilddatei verwenden, oder Sie können [diese Datei](./images/gradient.jpg){target="_blank"} verwenden, indem Sie sie auf Ihren Computer herunterladen.
 
 ![Azure-Speicher](./images/gradient.jpg)
 
@@ -199,7 +199,7 @@ Klicken Sie dann auf **Textkörper**.
 
 ![Azure-Speicher](./images/az31.png)
 
-Nun müssen Sie eine Datei auf Ihrem lokalen Computer auswählen. Sie können eine neue Bilddatei Ihrer Wahl verwenden, oder Sie können eine andere Bilddatei verwenden, die Sie [hier](./images/gradient2-p.jpg) finden.
+Nun müssen Sie eine Datei auf Ihrem lokalen Computer auswählen. Sie können eine neue Bilddatei Ihrer Wahl verwenden, oder Sie können eine andere Bilddatei verwenden, die Sie [hier](./images/gradient2-p.jpg){target="_blank"} finden.
 
 ![Verlaufsdatei](./images/gradient2-p.jpg)
 
@@ -365,8 +365,8 @@ Wenn die Variablen richtig konfiguriert wurden, wird eine Bild-URL zurückgegebe
 
 ![Azure-Speicher](./images/az108.jpg)
 
-Nächster Schritt: [1.1.3 Adobe Firefly und Adobe Photoshop](./ex3.md)
+Nächster Schritt: [1.1.3 Adobe Firefly und Adobe Photoshop](./ex3.md){target="_blank"}
 
-[Zurück zum Modul 1.1](./firefly-services.md)
+[Zurück zum Modul 1.1](./firefly-services.md){target="_blank"}
 
-[Zurück zu „Alle Module“](./../../../overview.md)
+[Zurück zu „Alle Module“](./../../../overview.md){target="_blank"}
