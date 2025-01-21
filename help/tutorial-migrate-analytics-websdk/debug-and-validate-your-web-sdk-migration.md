@@ -4,13 +4,13 @@ description: Erfahren Sie, wie Sie Ihre Daten bei der Migration zur Web-SDK debu
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16763
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
 
 ---
-
 
 # Debuggen und Validieren der Web SDK-Migration
 
@@ -70,7 +70,7 @@ Es gibt vermutlich mehrere Möglichkeiten, diese Vergleiche durchzuführen, aber
 1. Erstellen eines neuen Projekts in Analysis Workspace und Hinzufügen von zwei Bedienfeldern
 1. Legen Sie die Report Suite im Bedienfeld 1 auf Ihre aktuelle Adobe Analytics Production Report Suite fest
 1. Legen Sie die Report Suite in Bedienfeld 2 auf Ihre neue Web SDK Development-Report Suite fest
-1. Fügen Sie denselben Bericht in beide Bedienfelder ein, indem Sie einen Zeitraum im Kalender verwenden, in dem die Daten mit beiden Erweiterungen in Analytics übertragen wurden
+1. Platzieren Sie denselben Bericht in beide Bedienfelder, wobei Sie einen Zeitraum verwenden, der nur volle Tage enthält, an die Daten an beide Report Suites gesendet wurden
 1. Vergleichen der Daten
 
 Dies könnte in etwa so aussehen (wenn Sie verstehen, dass in diesen leeren Demo-Report-Suites keine Daten vorhanden sind):

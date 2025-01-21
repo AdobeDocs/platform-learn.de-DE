@@ -4,13 +4,13 @@ description: Erfahren Sie, wie Sie zusätzliche seitenbasierte Regeln zur Web SD
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16764
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: d1345da7-018d-4c0c-ba9b-d4ff7b35df03
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # Migrieren zusätzlicher Seitenregeln
 
@@ -20,7 +20,7 @@ In dieser Übung erfahren Sie, wie Sie zusätzliche seitenbasierte Regeln zur We
 
 Sichern wir uns etwas und sprechen wir über Analytics-Implementierungen wie bei der Adobe Analytics-Tags-Erweiterung (auch als &quot;AppMeasurement&quot;-Implementierung bezeichnet, da dies der Name der JavaScript-Datei ist).
 
-Ich gehe nicht davon aus, dass ich genau weiß, wie Sie implementiert sind, aber in vielen Implementierungen mit Experience Platform-Tags (früher als „Launch“ bezeichnet) gibt es eine Reihe von Regeln, die nur bedingt ausgelöst werden, basierend auf etwas auf der Seite oder in der URL. Beispiele hierfür sind:
+Ich gehe nicht davon aus, dass ich genau weiß, wie Sie implementiert sind, aber in vielen Implementierungen mit Experience Platform-Tags gibt es eine beliebige Anzahl von Regeln, die nur bedingt ausgelöst werden, basierend auf etwas auf der Seite oder in der URL. Beispiele hierfür sind:
 
 * Suchergebnissregel, die nur ausgelöst wird, wenn eine interne Suche durchgeführt wurde und die Suchergebnisseite angezeigt wird
 * Landingpage-Regel in Campaign, die nur ausgelöst wird, wenn die URL einen Trackingcode enthält
@@ -68,6 +68,3 @@ Im Folgenden finden Sie ein Beispiel für das Migrieren einer Regel, die bedingt
 >[!IMPORTANT]
 >
 >Wie bei der Standardregel zum Laden von Seiten haben wir die Aktion „Variable festlegen **der Analytics-Erweiterung in** Regel gelassen, damit wir Daten bei der Validierung unserer Migration vergleichen können. Vergessen Sie nicht, später erneut einzutreten und die Aktion der Analytics-Erweiterung zu entfernen, während Sie die endgültige Bereinigung durchführen.
-
-
-
