@@ -3,9 +3,10 @@ title: Erste Schritte - Erstellen Ihres Datenstroms
 description: Erste Schritte - Erstellen Ihres Datenstroms
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1cba79313a651c929d76008943c1c5f8a64a9f7
+exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ Navigieren Sie zu [https://experience.adobe.com/#/data-collection/](https://expe
 
 ![DSN](./images/launchprop.png)
 
-Klicken Sie im linken Menü auf &quot;**[!UICONTROL &quot;]**. Nach der vorherigen Übung verfügen Sie jetzt über zwei Datenerfassungseigenschaften: eine für Web und eine für Mobilgeräte.
+Klicken Sie im linken Menü auf &quot;**[!UICONTROL &quot;]**. Nach der vorherigen Übung verfügen Sie jetzt über drei Datenerfassungseigenschaften: eine für das Web, eine für Mobilgeräte und eine für die CX-App.
 
 ![DSN](./images/launchprop1.png)
 
@@ -38,7 +39,7 @@ Klicken Sie **[!UICONTROL Neuer Datenstrom]**.
 
 ![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1.png)
 
-Geben **[!UICONTROL als]** und als optionale Beschreibung `--aepUserLdap-- - Demo System Datastream` ein. Wählen Sie **Zuordnungsschema** die Option **Demosystem - Ereignisschema für Website (Global v1.1)**. Klicken Sie auf **Speichern**.
+Geben **[!UICONTROL als]** und als optionale Beschreibung `--aepUserLdap-- - One Adobe Datastream` ein. Wählen Sie **Zuordnungsschema** die Option **Demosystem - Ereignisschema für Website (Global v1.1)**. Klicken Sie auf **Speichern**.
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig2.png)
 
@@ -58,7 +59,7 @@ Das wirst du jetzt sehen.
 
 Klicken Sie im linken Menü auf &quot;**[!UICONTROL &quot;]**.
 
-Filtern Sie die Suchergebnisse, um Ihre beiden Datenerfassungseigenschaften anzuzeigen. Öffnen Sie die Eigenschaft für **Web** durch Klicken.
+Filtern Sie die Suchergebnisse, um Ihre Datenerfassungseigenschaften anzuzeigen. Öffnen Sie die Eigenschaft für **Web** durch Klicken.
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig10a.png)
 
@@ -114,7 +115,7 @@ Klicken Sie **[!UICONTROL Neuer Datenstrom]**.
 
 ![Klicken Sie im linken Navigationsbereich auf das Datenstrom -Symbol](./images/edgeconfig1.png)
 
-Geben **[!UICONTROL als Anzeigename]** als optionale Beschreibung `--aepUserLdap-- - Demo System Datastream (Mobile)` ein. Wählen Sie **Zuordnungsschema** die Option **Demosystem - Ereignisschema für Mobile App (Global v1.1)**. Klicken Sie auf **Speichern**.
+Geben **[!UICONTROL als Anzeigename]** als optionale Beschreibung `--aepUserLdap-- - One Adobe Datastream (Mobile)` ein. Wählen Sie **Zuordnungsschema** die Option **Demosystem - Ereignisschema für Mobile App (Global v1.1)**. Klicken Sie auf **Speichern**.
 
 Klicken Sie auf **[!UICONTROL Speichern]**.
 

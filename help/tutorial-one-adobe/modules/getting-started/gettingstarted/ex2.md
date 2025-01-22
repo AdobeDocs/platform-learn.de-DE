@@ -3,7 +3,8 @@ title: Erste Schritte - Verwenden des Demosystems neben dem Setup Ihrer Launch-E
 description: Erste Schritte - Verwenden des Demosystems neben dem Setup Ihrer Launch-Eigenschaft
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,7 +33,7 @@ Klicken Sie anschließend auf **Starten**.
 
 ![DSN](./images/dsn2.png)
 
-Geben Sie im Popup einen Namen für Ihre Datenerfassungseigenschaften und Experience Builder-Projekte ein. Verwenden Sie diese Namenskonvention: **Demosystem (TT/MM/JJJJ)**. Zu Ihrer Information: Ihr LDAP wird automatisch angehängt, Sie müssen es nicht selbst hinzufügen.
+Geben Sie im Popup einen Namen für Ihre Datenerfassungseigenschaften und Experience Builder-Projekte ein. Bitte verwenden Sie diese Namenskonvention: **Eine Adobe (TT/MM/JJJJ)**. Zu Ihrer Information: Ihr LDAP wird automatisch angehängt, Sie müssen es nicht selbst hinzufügen.
 
 Klicken Sie auf **Starten**.
 

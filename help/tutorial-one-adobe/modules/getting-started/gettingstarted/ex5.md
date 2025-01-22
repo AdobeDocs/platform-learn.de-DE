@@ -3,7 +3,8 @@ title: Erste Schritte - Verwenden der Mobile App
 description: Erste Schritte - Verwenden der Mobile App
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -60,7 +61,7 @@ Auf der **Integrationen** müssen Sie die Datenerfassungseigenschaft auswählen,
 
 ![DSN](./images/web8aa.png)
 
-Klicken Sie **der Datenerfassungseigenschaft** die im vorherigen Schritt erstellt wurde und `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)` heißt, auf „Auswählen“. Klicken Sie dann auf **Speichern**.
+Klicken Sie **der Datenerfassungseigenschaft** die im vorherigen Schritt erstellt wurde und `--aepUserLdap - One Adobe (DD/MM/YYYY) (mobile)` heißt, auf „Auswählen“. Klicken Sie dann auf **Speichern**.
 
 ![DSN](./images/web8b.png)
 

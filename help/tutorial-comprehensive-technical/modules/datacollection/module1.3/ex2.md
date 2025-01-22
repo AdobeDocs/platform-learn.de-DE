@@ -4,9 +4,9 @@ description: Foundation - FAC - Erstellen von Schemata, Datenmodellen und Links
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 5%
 
 ---
@@ -152,7 +152,7 @@ Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren
 
 ![FAC](./images/fdb20.png)
 
-Als Nächstes definieren wir die Relation zwischen dem `CK_MONTHLY_DATA_USAGE` und dem `CK_USERS`.
+Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
 
@@ -164,8 +164,17 @@ Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_HO
 
 ![FAC](./images/fdb23.png)
 
-Dann bist du wieder hier. Klicken Sie **Speichern**.
+Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
+
 ![FAC](./images/fdb24.png)
+
+Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_MOBILE_DATA_USAGE`.
+
+![FAC](./images/fdb25.png)
+
+Sie sollten das dann sehen. Klicken Sie auf **Speichern**.
+
+![FAC](./images/fdb26.png)
 
 Die Einrichtung in AEP ist jetzt abgeschlossen. Sie können jetzt mit der Verwendung Ihrer Federated Data in einer Federated-Audience-Komposition beginnen.
 

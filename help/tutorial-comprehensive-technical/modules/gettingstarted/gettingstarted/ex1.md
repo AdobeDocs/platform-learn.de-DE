@@ -4,9 +4,9 @@ description: Erste Schritte - Installieren der Chrome-Erweiterung für die Exper
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,13 @@ Um die Dokumentation wiederverwendbar zu machen, **„Umgebungsvariablen** in de
 
 Ein Beispiel für solche Werte finden Sie unten. Derzeit können diese Werte noch nicht verwendet werden. Sobald Sie jedoch die Chrome-Erweiterung installieren und aktivieren, werden diese Variablen in normalen Text geändert, den Sie kopieren und wiederverwenden können.
 
-| Name | Schlüssel |
-|:-------------:| :---------------:|
-| AEP IMS-Organisations-ID | `--aepImsOrgId--` |
-| AEP-Mandanten-ID | `--aepTenantId--` |
-| AEP-Sandbox-Name | `--aepSandboxName--` |
-| LDAP für Teilnehmerprofil | `--aepUserLdap--` |
+| Name | Schlüssel | Beispiel |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS-Organisations-ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS-Organisationsname | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP-Mandanten-ID | `--aepTenantId--` | `_experienceplatform` |
+| AEP-Sandbox-Name | `--aepSandboxName--` | `tech-insiders` |
+| LDAP für Teilnehmerprofil | `--aepUserLdap--` | `vangeluw` |
 
 Im folgenden Screenshot sehen Sie beispielsweise einen Verweis auf `aepTenantId`.
 
