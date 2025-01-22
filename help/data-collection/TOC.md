@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 38696ad5f8e151d1b7a42055d844fb98e8dccb86
+source-git-commit: 3ebcb866cd16b036d09def8cf629fd0ccb348dc7
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 29%
+source-wordcount: '195'
+ht-degree: 28%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 29%
    + [Demo](web-sdk/demo.md)
    + [Implementierungs-Tutorial (mit Tags)](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
    + [Tutorial zum Migrieren von Target](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
+   + [Tutorial zum Migrieren von Analytics](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Zustimmung{#consent}
       + [Übersicht](web-sdk/consent/overview.md)
       + [Festlegen von Einverständniswerten mit dem Adobe-Standard](web-sdk/consent/set-consent-adobe.md)
