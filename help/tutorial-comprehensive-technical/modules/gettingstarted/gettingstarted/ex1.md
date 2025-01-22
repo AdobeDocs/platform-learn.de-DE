@@ -4,9 +4,9 @@ description: Erste Schritte - Installieren der Chrome-Erweiterung für die Exper
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Die IMS-Organisations-ID ist die eindeutige Kennung für Ihre Adobe Experience C
 
 Das Ermitteln der IMS-Organisations-ID kann auf verschiedene Weise erfolgen. Wenn Sie sich nicht sicher sind, wenden Sie sich an einen Systemadministrator Ihrer Instanz, um die ID zu finden.
 
-Sie können ihn möglicherweise finden, indem Sie zu [Admin Console ](https://https://adminconsole.adobe.com/) wechseln, wo Sie ihn als Teil der URL finden können.
+Sie können ihn möglicherweise finden, indem Sie zu [Admin Console ](https://adminconsole.adobe.com/) wechseln, wo Sie ihn als Teil der URL finden können.
 
 ![DSN](./images/aepid1.png)
 
@@ -100,7 +100,7 @@ Ihre Mandanten-ID ist die eindeutige Kennung der AEP-Instanz Ihres Unternehmens.
 
 ![DSN](./images/aeptenantid.png)
 
-Wenn Sie ihn in die Chrome-Erweiterung eingeben, sollten Sie sicherstellen, dass ein Unterstrich als Präfix hinzugefügt wird. In diesem Beispiel **experienceplatform** wird daher **_experienceplatform**.
+Wenn Sie ihn in die Chrome-Erweiterung eingeben, sollten Sie sicherstellen, dass ein Unterstrich als Präfix hinzugefügt wird. In diesem Beispiel **experienceplatform** wird daher **_experienceplatform**. Denken Sie außerdem daran, beim Kopieren aus der URL das Symbol **@** zu entfernen.
 
 **AEP-Sandbox-Name**
 

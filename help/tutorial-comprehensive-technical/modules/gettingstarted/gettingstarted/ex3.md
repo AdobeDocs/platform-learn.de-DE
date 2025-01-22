@@ -4,9 +4,9 @@ description: Erste Schritte - Erstellen Ihres Datenstroms
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Navigieren Sie zu [https://experience.adobe.com/#/data-collection/](https://expe
 
 ![DSN](./images/launchprop.png)
 
-Klicken Sie im linken Menü auf &quot;**[!UICONTROL &quot;]**. Nach der vorherigen Übung verfügen Sie jetzt über zwei Datenerfassungseigenschaften: eine für Web und eine für Mobilgeräte.
+Klicken Sie im linken Menü auf &quot;**[!UICONTROL &quot;]**. Nach der vorherigen Übung verfügen Sie jetzt über drei Datenerfassungseigenschaften: eine für das Web, eine für Mobilgeräte und eine für CX-Mobile-Apps.
 
 ![DSN](./images/launchprop1.png)
 
@@ -61,7 +61,7 @@ Das war&#39;s fürs Erste. In [Modul 1](./../../../modules/datacollection/module
 
 Klicken Sie im linken Menü auf &quot;**[!UICONTROL &quot;]**.
 
-Filtern Sie die Suchergebnisse, um Ihre beiden Datenerfassungseigenschaften anzuzeigen. Öffnen Sie die Eigenschaft für **Web** durch Klicken.
+Filtern Sie die Suchergebnisse, um Ihre Datenerfassungseigenschaften anzuzeigen. Öffnen Sie die Eigenschaft für **Web** durch Klicken.
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig10a.png)
 
@@ -139,7 +139,7 @@ Sie werden es dann sehen.
 
 Ihr Datenstrom kann jetzt in Ihrer Adobe Experience Platform-Datenerfassungs-Client-Eigenschaft für Mobilgeräte verwendet werden.
 
-Navigieren Sie **Tags** und filtern Sie die Suchergebnisse, um Ihre beiden Datenerfassungseigenschaften anzuzeigen. Öffnen Sie die Eigenschaft für **Mobile**, indem Sie darauf klicken.
+Navigieren Sie **Tags** und filtern Sie die Suchergebnisse, um Ihre Datenerfassungseigenschaften anzuzeigen. Öffnen Sie die Eigenschaft für **Mobile**, indem Sie darauf klicken.
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig10am.png)
 

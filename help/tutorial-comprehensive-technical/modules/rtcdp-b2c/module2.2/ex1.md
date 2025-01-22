@@ -4,9 +4,9 @@ description: Kunden-KI - Datenvorbereitung (Aufnahme)
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 4%
 
 ---
@@ -84,7 +84,7 @@ Klicken Sie **Datensatz aus Schema erstellen**.
 
 ![Datensatz](./images/createdatasetfromschema.png)
 
-Wählen Sie im nächsten Bildschirm den Datensatz aus, den Sie in der vorherigen Übung erstellt haben. Dieser heißt **[!UICONTROL ldap - Demosystem - Kundenerlebnisereignis]**. Klicken Sie auf **Weiter**.
+Wählen Sie im nächsten Bildschirm den Datensatz aus, den Sie in der vorherigen Übung mit dem Namen `--aepUserLdap-- - Demo System - Customer Experience Event` erstellt haben. Klicken Sie auf **Weiter**.
 
 ![Datensatz](./images/createds1.png)
 
