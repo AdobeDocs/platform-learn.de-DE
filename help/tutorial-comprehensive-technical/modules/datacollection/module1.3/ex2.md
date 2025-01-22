@@ -4,7 +4,7 @@ description: Foundation - FAC - Erstellen von Schemata, Datenmodellen und Links
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 5%
@@ -130,6 +130,8 @@ Wählen Sie Ihre Schemata aus und klicken Sie auf **Hinzufügen**.
 
 Sie werden es dann sehen. Klicken Sie auf **Speichern**.
 
+### `CK_USERS` – `CK_PERSONS`
+
 Sie können jetzt mit der Definition von Links zwischen Schemata beginnen. Um einen Link zu definieren, klicken Sie auf **Links erstellen**.
 
 ![FAC](./images/fdb16.png)
@@ -140,6 +142,9 @@ Klicken Sie auf **Hinzufügen**.
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` – `CK_PERSONS`
+
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
 ![FAC](./images/fdb17.png)
@@ -147,6 +152,8 @@ Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren
 Als Nächstes definieren wir die Relation zwischen dem `CK_HOUSEHOLDS` und dem `CK_PERSONS`.
 
 ![FAC](./images/fdb19.png)
+
+### `CK_USERS` – `CK_MONTHLY_DATA_USAGE`
 
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
@@ -156,6 +163,9 @@ Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_MO
 
 ![FAC](./images/fdb21.png)
 
+
+### `CK_USERS` – `CK_HOUSEHOLDS`
+
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
 ![FAC](./images/fdb22.png)
@@ -163,6 +173,8 @@ Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren
 Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
+
+### `CK_USERS` – `CK_MOBILE_DATA_USAGE`
 
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
