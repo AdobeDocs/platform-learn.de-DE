@@ -4,9 +4,9 @@ description: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,8 @@ Erfahren Sie, wie Sie Google Analytics-Daten in Customer Journey Analytics analy
 [Zusammenfassung und Vorteile](./summary.md)
 
 Zusammenfassung dieses Moduls und Überblick über die Vorteile.
+
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

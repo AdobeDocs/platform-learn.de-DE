@@ -3,9 +3,9 @@ title: Überblick - Umfassendes technisches Tutorial - eine Adobe
 description: Umfassendes technisches Tutorial - eine Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '481'
 ht-degree: 4%
 
 ---
@@ -49,6 +49,10 @@ Wenn Sie dieses Tutorial mit Ihrer eigenen Adobe Experience Cloud-Instanz durchf
 - Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
 - Adobe Experience Platform-Datenerfassung: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - Zugriff auf das Demosystem: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+
+## Vorbereitung
+
+Überprüfen Sie die erforderlichen Anwendungen, die auf Ihrem Computer installiert werden müssen [hier](./prework.md){target="_blank"}.
 
 ## Inhalt
 

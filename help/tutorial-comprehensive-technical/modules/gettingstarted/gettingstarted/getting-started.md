@@ -4,9 +4,9 @@ description: Erste Schritte - Zusammenfassung
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '248'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,8 @@ In dieser Übung richten Sie die Website ein, damit Sie sie für Demonstrationen
 [Verwenden der Mobile App](./ex5.md)
 
 In dieser Übung richten Sie die Mobile App ein, damit Sie sie für Demonstrationen und zur Aktivierung verwenden können.
+
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

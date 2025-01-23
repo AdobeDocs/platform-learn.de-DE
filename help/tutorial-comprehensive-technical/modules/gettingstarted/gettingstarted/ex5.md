@@ -4,9 +4,9 @@ description: Erste Schritte - Verwenden der Mobile App
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ Verwenden Sie die **Camera**-App auf Ihrem Smartphone, um die Mobile App für da
 >[!NOTE]
 >
 >Nachdem Sie die App zum ersten Mal auf einem iOS-Gerät installiert haben, erhalten Sie möglicherweise eine Fehlermeldung, wenn Sie versuchen, die App zu öffnen. Diese lautet: **Untrusted Enterprise Developer**. Um dieses Problem zu beheben, müssen Sie zu **Einstellungen > Allgemein > VPN- und Geräteverwaltung > Adobe Systems Inc.** gehen und auf **Adobe Systems Inc.** klicken.
+>Ihr iOS-Gerät muss wahrscheinlich neu gestartet werden, um das Vertrauen eines Entwicklers zu vervollständigen.
 
 Sobald die App installiert ist, finden Sie sie auf dem Startbildschirm Ihres Geräts. Klicken Sie auf das Symbol, um die App zu öffnen.
 

@@ -4,9 +4,9 @@ description: In diesem Modul erfahren Sie, wie Sie Ihren eigenen Apache Kafka-Cl
 kt: 5342
 doc-type: tutorial
 exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
-source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '368'
 ht-degree: 1%
 
 ---
@@ -53,6 +53,8 @@ In dieser Übung verwenden Sie Kafka Connect , um den Adobe Experience Platform 
 [Zusammenfassung und Vorteile](./summary.md)
 
 Zusammenfassung dieses Moduls und Überblick über die Vorteile.
+
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

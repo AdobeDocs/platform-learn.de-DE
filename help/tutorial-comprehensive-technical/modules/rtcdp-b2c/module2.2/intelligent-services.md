@@ -4,9 +4,9 @@ description: Intelligent Services
 kt: 5342
 doc-type: tutorial
 exl-id: 3668f06b-df76-43db-be6a-36c339256a22
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '251'
 ht-degree: 9%
 
 ---
@@ -43,6 +43,8 @@ Der Marketing-Analyst konfiguriert die gewünschten Prognosen, indem er Geschäf
 [2.2.3 Kunden-KI - Scoring-Dashboard und Segmentierung (Prognose und Maßnahmen ergreifen)](./ex3.md)
 
 Nachdem die Modelle trainiert und bewertet wurden, werden die Bewertungen wieder in Platform geschrieben. Sie können anhand der Vorhersagen entscheiden, welche Aktionen durchgeführt werden sollen, z. B. Segmente definieren, benutzerdefinierte Dashboards erstellen usw.
+
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

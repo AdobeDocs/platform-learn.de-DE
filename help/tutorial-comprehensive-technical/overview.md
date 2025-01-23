@@ -3,14 +3,16 @@ title: Übersicht
 description: Ausgangspunkt für Dateningenieure, Datenanalysten, Datenarchitekten, Datenwissenschaftler, Orchestrierungsingenieure und Marketing-Experten, um ein umfassendes Verständnis des Geschäftswerts von Adobe Experience Platform und aller seiner Anwendungs-Services zu erhalten.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
 
 # Umfassendes technisches Tutorial für Adobe Experience Platform
+
+![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Übersicht
 
@@ -182,3 +184,9 @@ In diesem Modul richten Sie Ihre eigene Instanz von Google Cloud Platform ein, l
 In diesem Modul erfahren Sie, wie Sie den Abfrage-Service von Adobe Experience Platform verwenden.
 
 **Zeitaufwand:** 90 Minuten
+
+![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.

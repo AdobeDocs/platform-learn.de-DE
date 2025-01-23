@@ -4,9 +4,9 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ Um sicherzustellen, dass Web SDK und alloy.js Daten in Adobe Experience Platform
 [Zusammenfassung und Vorteile](./summary.md)
 
 Zusammenfassung dieses Moduls und Überblick über die Vorteile.
+
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
