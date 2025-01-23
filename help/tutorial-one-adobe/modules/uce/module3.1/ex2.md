@@ -3,16 +3,17 @@ title: Datenerfassung - FAC - Erstellen von Schemata, Datenmodellen und Links
 description: Foundation - FAC - Erstellen von Schemata, Datenmodellen und Links
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
+source-git-commit: 246bb91496104818f357848f41b79523b7771638
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '638'
 ht-degree: 5%
 
 ---
 
 # 3.1.2 Erstellen von Schemata, Datenmodellen und Links
 
-Sie können jetzt Ihre Federated Database in AEP konfigurieren.
+Sie können jetzt Ihre Federated Database in Adobe Experience Platform konfigurieren.
 
 Melden Sie sich über die folgende URL bei Adobe Experience Platform an: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -129,6 +130,8 @@ Wählen Sie Ihre Schemata aus und klicken Sie auf **Hinzufügen**.
 
 Sie werden es dann sehen. Klicken Sie auf **Speichern**.
 
+### `CK_USERS` – `CK_PERSONS`
+
 Sie können jetzt mit der Definition von Links zwischen Schemata beginnen. Um einen Link zu definieren, klicken Sie auf **Links erstellen**.
 
 ![FAC](./images/fdb16.png)
@@ -139,6 +142,9 @@ Klicken Sie auf **Hinzufügen**.
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` – `CK_PERSONS`
+
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
 ![FAC](./images/fdb17.png)
@@ -147,13 +153,18 @@ Als Nächstes definieren wir die Relation zwischen dem `CK_HOUSEHOLDS` und dem `
 
 ![FAC](./images/fdb19.png)
 
+### `CK_USERS` – `CK_MONTHLY_DATA_USAGE`
+
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
 ![FAC](./images/fdb20.png)
 
-Als Nächstes definieren wir die Relation zwischen dem `CK_MONTHLY_DATA_USAGE` und dem `CK_USERS`.
+Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
+
+
+### `CK_USERS` – `CK_HOUSEHOLDS`
 
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
@@ -163,8 +174,19 @@ Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_HO
 
 ![FAC](./images/fdb23.png)
 
-Dann bist du wieder hier. Klicken Sie **Speichern**.
+### `CK_USERS` – `CK_MOBILE_DATA_USAGE`
+
+Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
+
 ![FAC](./images/fdb24.png)
+
+Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_MOBILE_DATA_USAGE`.
+
+![FAC](./images/fdb25.png)
+
+Sie sollten das dann sehen. Klicken Sie auf **Speichern**.
+
+![FAC](./images/fdb26.png)
 
 Die Einrichtung in AEP ist jetzt abgeschlossen. Sie können jetzt mit der Verwendung Ihrer Federated Data in einer Federated-Audience-Komposition beginnen.
 

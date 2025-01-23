@@ -3,9 +3,10 @@ title: Datenerfassung - FAC - Erstellen einer verbundenen Komposition
 description: Foundation - FAC - Erstellen einer Verbundzusammensetzung
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: dc044a26-f16a-491e-a795-4cd16f211256
+source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 3%
 
 ---
@@ -139,6 +140,8 @@ Deine Komposition ist jetzt fertig. Klicken Sie auf **Start**, um sie auszuführ
 Die Abfrage wird jetzt nach unten in Snowflake verschoben, wo die Quelldaten abgefragt werden. Die Ergebnisse werden zurück in AEP verschoben, Quelldaten verbleiben jedoch im Snowflake.
 
 Die Zielgruppe wird jetzt ausgefüllt und die Zielgruppe kann aus dem AEP-Ökosystem heraus angesprochen werden.
+
+![FAC](./images/fedcomp22.png)
 
 Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md)
 

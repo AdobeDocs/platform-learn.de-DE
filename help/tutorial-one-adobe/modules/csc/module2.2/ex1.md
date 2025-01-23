@@ -4,9 +4,9 @@ description: Erste Schritte mit Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: ec79d3fcfe971faee584a221eb55ddcb015a1e50
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '768'
 ht-degree: 2%
 
 ---
@@ -54,9 +54,93 @@ Klicken Sie auf **Speichern**.
 
 ![WF](./images/wfb6.png)
 
-Ihre Integration zwischen Workfront und AEM Assets CS ist jetzt konfiguriert.
+Ihre Integration von Workfront in AEM Assets CS ist jetzt konfiguriert.
 
 ![WF](./images/wfb7.png)
+
+## 2.2.1.2 Konfigurieren der Metadatenintegration mit AEM Assets
+
+Als Nächstes müssen Sie AEM Assets so konfigurieren, dass die Metadatenfelder aus dem Asset in Workfront für AEM freigegeben werden.
+
+Navigieren Sie dazu zu [https://experience.adobe.com/](https://experience.adobe.com/). Auf **Experience Manager Assets**.
+
+![WF](./images/wfbaem1.png)
+
+Klicken Sie, um Ihre AEM Assets-Umgebung auszuwählen, die `--aepUserLdap-- - Citi Signal dev` benannt werden sollte.
+
+![WF](./images/wfbaem2.png)
+
+Sie sollten das dann sehen. Wechseln Sie im linken Menü zu **Assets** klicken Sie auf **Ordner erstellen**.
+
+![WF](./images/wfbaem3.png)
+
+Benennen Sie den Ordner `--aepUserLdap-- - Workfront Assets` und klicken Sie auf **Erstellen**.
+
+![WF](./images/wfbaem4.png)
+
+Navigieren Sie dann im linken Menü zu **Metadaten-** Forms) und klicken Sie auf **Erstellen**.
+
+![WF](./images/wfbaem5.png)
+
+Verwenden Sie den `--aepUserLdap-- - Metadata Form` und klicken Sie auf **Erstellen**.
+
+![WF](./images/wfbaem6.png)
+
+Fügen Sie dem Formular **drei neue Felder** einzeiliger Text“ hinzu und wählen Sie das erste Feld aus. Klicken Sie dann auf das Symbol **Schema** neben dem Feld **Metadateneigenschaft**.
+
+![WF](./images/wfbaem7.png)
+
+Geben Sie im Suchfeld `wm:project` ein und wählen Sie dann das Feld **Projektbeschreibung** aus. Klicken Sie auf **Auswählen**.
+
+![WF](./images/wfbaem8.png)
+
+Ändern Sie die Bezeichnung des Felds in **Projektbeschreibung**.
+
+![WF](./images/wfbaem9.png)
+
+Wählen Sie als Nächstes das zweite **Einzeiliger Text**-Feld aus und klicken Sie erneut auf das **Schema**-Symbol neben dem **Metadateneigenschaft**-Feld.
+
+![WF](./images/wfbaem10b.png)
+
+Anschließend wird dieses Popup erneut angezeigt. Geben Sie im Suchfeld `wm:project` ein und wählen Sie dann das Feld **Projekt-ID** aus. Klicken Sie auf **Auswählen**.
+
+![WF](./images/wfbaem10.png)
+
+Ändern Sie die Bezeichnung des Felds in **Projekt-ID**.
+
+![WF](./images/wfbaem10a.png)
+
+Wählen Sie das dritte **Einzeiliger Text**-Feld aus und klicken Sie erneut auf das **Schema**-Symbol neben dem **Metadateneigenschaft**-Feld.
+
+![WF](./images/wfbaem11a.png)
+
+Anschließend wird dieses Popup erneut angezeigt. Geben Sie im Suchfeld `wm:project` ein und wählen Sie dann das Feld **Projektname** aus. Klicken Sie auf **Auswählen**.
+
+![WF](./images/wfbaem11.png)
+
+Ändern Sie die Bezeichnung des Felds in **Projektname**. Klicken Sie auf **Speichern**.
+
+![WF](./images/wfbaem12.png)
+
+Ändern Sie den **Registerkartennamen** im Formular in `--aepUserLdap-- - Workfront Metadata`. Klicken Sie auf **Speichern** und **Schließen**.
+
+![WF](./images/wfbaem13.png)
+
+Ihr **Metadatenformular** ist jetzt konfiguriert.
+
+![WF](./images/wfbaem14.png)
+
+Als Nächstes müssen Sie das Metadatenformular dem Ordner zuweisen, den Sie zuvor erstellt haben. Aktivieren Sie das Kontrollkästchen für Ihr Metadatenformular und klicken Sie auf **Ordner zuweisen**.
+
+![WF](./images/wfbaem15.png)
+
+Wählen Sie den Ordner aus, der `--aepUserLdap-- - Workfront Assets` benannt werden soll. Klicken Sie **Zuweisen**.
+
+![WF](./images/wfbaem16.png)
+
+Das Metadatenformular wurde jetzt erfolgreich Ihrem Ordner zugewiesen.
+
+![WF](./images/wfbaem17.png)
 
 ## 2.2.1.2 Konfigurieren der AEM Sites-Integration
 
@@ -155,6 +239,8 @@ Klicken Sie auf **Übernehmen**.
 Anschließend sollten zwei benutzerdefinierte Formulare verfügbar sein.
 
 ![WF](./images/wfb20.png)
+
+Nächster Schritt: [2.2.2 Proofing mit Workfront](./ex2.md){target="_blank"}
 
 [Zurück zum Modul 2.2](./workfront.md){target="_blank"}
 
