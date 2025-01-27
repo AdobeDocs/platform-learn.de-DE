@@ -4,9 +4,9 @@ description: Adobe Experience Manager Cloud Service und Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -35,9 +35,13 @@ In dieser ersten Übung richten Sie Ihre eigene dokumentbasierte Website ein, in
 
 In dieser Übung richten Sie Ihre AEM CS-Umgebung ein und greifen auf Ihre CitiSignal-Website zu.
 
-[2.1.4 Entwickeln eines benutzerdefinierten Blocks](./ex4.md){target="_blank"}
+[2.1.4 Benutzerdefinierter Basisblock](./ex4.md){target="_blank"}
 
-In dieser Übung entwickeln Sie eine benutzerdefinierte Blockkomponente für Ihre Website.
+In dieser Übung entwickeln Sie einen grundlegenden benutzerdefinierten Block für Ihre Website.
+
+[2.1.5 Erweiterter benutzerdefinierter Block](./ex5.md){target="_blank"}
+
+In dieser Übung entwickeln Sie einen erweiterten benutzerdefinierten Block für Ihre Website.
 
 [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 

@@ -4,9 +4,9 @@ breadcrumb-title: Umfassendes technisches Tutorial für Adobe-Anwendungen, von C
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '322'
 ht-degree: 4%
 
 ---
@@ -49,7 +49,8 @@ ht-degree: 4%
       + [2.1.1 Cloud Manager-Programm erstellen](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
       + [2.1.2 Erstellen einer dokumentbasierten Website](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
       + [2.1.3 Einrichten der AEM CS-Umgebung](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
-      + [2.1.4 Entwickeln eines benutzerdefinierten Bausteins](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
+      + [2.1.4 Benutzerdefinierter Basisblock](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
+      + [2.1.5 Erweiterter benutzerdefinierter Block](/help/tutorial-one-adobe/modules/csc/module2.1/ex5.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [Übersicht](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
