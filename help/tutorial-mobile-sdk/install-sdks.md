@@ -3,14 +3,19 @@ title: Installieren von Adobe Experience Platform Mobile SDKs
 description: Erfahren Sie, wie Sie Adobe Experience Platform Mobile SDK in einer Mobile App implementieren.
 jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 463a5d54e99ddf6587fe19081c07025f7caf648e
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
 
 # Installieren von Adobe Experience Platform Mobile SDKs
+
+>[!CONTEXTUALHELP]
+>id="platform_mobile_sdk_tutorial_install"
+>title="Installieren von Adobe Experience Platform Mobile SDKs"
+>abstract="Erfahren Sie, wie Sie Adobe Experience Platform Mobile SDK in einer Mobile App implementieren."
 
 Erfahren Sie, wie Sie Adobe Experience Platform Mobile SDK in einer Mobile App implementieren.
 
