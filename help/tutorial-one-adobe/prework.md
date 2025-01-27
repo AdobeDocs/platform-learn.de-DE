@@ -2,9 +2,10 @@
 title: Vorbereitung
 description: Vorbereitung
 doc-type: multipage-overview
-source-git-commit: 5f079d0b6f74ccc6e2cde06b32e4fd2d1f3fbcdc
+exl-id: 1799a0d1-e432-45e2-a373-192d9a351423
+source-git-commit: 8c45215e4374d8a2c1a110f2d3069c5e866767ae
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,11 @@ Navigieren Sie zu [https://creativecloud.adobe.com/apps/download/creative-cloud]
 
 ![Neue Integration Adobe I/O](./assets/images/psd.png)
 
-## 3. Postman
+## 3. API
+
+>[!NOTE]
+>
+>Wenn Sie Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen hier zum Herunterladen und Installieren [PostBuster](./postbuster.md)
 
 Navigieren Sie zu [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
 

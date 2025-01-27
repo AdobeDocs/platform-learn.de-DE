@@ -4,9 +4,9 @@ description: Entwickeln eines benutzerdefinierten Bausteins
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,21 @@ Ihr GitHub-Repository wird dann in GitHub Desktop geöffnet. Sie können auch de
 
 ![Block](./images/block3.png)
 
-Ein lokales Formular
+Ein lokaler Ordner wird jetzt erstellt.
+
+![Block](./images/block4.png)
+
+Öffnen Sie Visual Studio Code. Navigieren Sie **Datei** > **Ordner öffnen**.
+
+![Block](./images/block5.png)
+
+
+
+![Block](./images/block6.png)
+
+
+
+![Block](./images/block7.png)
 
 
 [Zurück zum Modul 2.1](./aemcs.md){target="_blank"}
