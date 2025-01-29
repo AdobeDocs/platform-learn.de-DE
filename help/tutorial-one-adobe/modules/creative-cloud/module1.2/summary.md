@@ -1,26 +1,22 @@
 ---
-title: Firefly Services Automation - Zusammenfassung
+title: Zusammenfassung und Vorteile von Firefly Services Automation
 description: Firefly Services Automation - Zusammenfassung
 kt: 5342
 doc-type: tutorial
 exl-id: 96c76fac-9acb-44ac-9534-546dc635ff73
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 2%
+source-wordcount: '38'
+ht-degree: 5%
 
 ---
 
 # Zusammenfassung und Vorteile
 
-Herzlichen Glückwunsch und vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe-Anwendungen zu erfahren!
+Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe-Anwendungen zu erfahren!
 
-## Vorteile
+## Nächste Schritte
 
-Lassen Sie uns die Vorteile der Verwendung von Workfront Fusion hervorheben.
+Zurück zu [Automatisieren von Adobe Firefly-Services](./automation.md){target="_blank"}
 
-## Hier ist alles
-
-[Zurück zum Modul 1.2](./automation.md)
-
-[Zurück zu „Alle Module“](../../../overview.md)
+Zurück zu [Alle Module](./../../../overview.md){target="_blank"}
