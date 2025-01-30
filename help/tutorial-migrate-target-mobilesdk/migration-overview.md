@@ -2,16 +2,16 @@
 title: Migrationsübersicht - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
 description: Erfahren Sie mehr über die wichtigsten Unterschiede zwischen at.js und Platform Web SDK und wie Sie Ihren Migrationsaufwand planen können.
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+source-git-commit: 6e442413c178e76183f88454d97d3896f8efa8bc
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '799'
 ht-degree: 1%
 
 ---
 
 # Übersicht über die Migration von at.js zu Platform Web SDK
 
-Der Aufwand für die Migration von at.js zu Platform Web SDK hängt von der Komplexität Ihrer aktuellen Implementierung und der verwendeten Produktfunktionen ab.
+Der Aufwand für die Migration von der Target- zur Decisioning-Erweiterung hängt von der Komplexität Ihrer aktuellen Implementierung und der verwendeten Produktfunktionen ab.
 
 Unabhängig davon, wie einfach oder komplex Ihre Implementierung ist, ist es wichtig, Ihren aktuellen Status vor der Migration vollständig zu verstehen. Dieser Leitfaden hilft Ihnen, die Komponenten Ihrer aktuellen Implementierung aufzuschlüsseln und einen überschaubaren Plan zur Migration der einzelnen Komponenten zu entwickeln.
 
@@ -19,10 +19,10 @@ Der Migrationsprozess umfasst die folgenden wichtigen Schritte:
 
 1. Bewertung der aktuellen Implementierung und Festlegung eines Migrationsansatzes
 1. Einrichten der Anfangskomponenten für die Verbindung mit dem Adobe Experience Platform-Edge Network
-1. Aktualisieren Sie die grundlegende Implementierung, um at.js durch Platform Web SDK zu ersetzen.
-1. Verbessern Sie die Implementierung von Platform Web SDK für Ihre spezifischen Anwendungsfälle. Dazu kann es gehören, zusätzliche Parameter zu übergeben, Änderungen an der Ansicht der Single Page App (SPA) zu berücksichtigen, Antwort-Token zu verwenden und vieles mehr.
-1. Aktualisieren von Objekten in der Target-Oberfläche, z. B. Profilskripte, Aktivitäten und Zielgruppendefinitionen
-1. Validieren Sie die endgültige Implementierung, bevor Sie den Wechsel in Ihrer Produktionsumgebung vornehmen
+1. Aktualisieren Sie Ihre Implementierung, um Target SDK durch XYZ zu ersetzen.
+1. Erweitern Sie die Implementierung von Platform Mobile SDK für Ihre spezifischen Anwendungsfälle. Dazu können zusätzliche Parameter übergeben werden, XYZ.
+1. Aktualisieren von Objekten in der Target-Oberfläche, z. B. Profilskripte, Aktivitäten und Zielgruppendefinitionen ???
+1. Validieren Sie die endgültige Implementierung, bevor Sie Ihre aktualisierte App veröffentlichen
 
 ## Hauptunterschiede zwischen at.js und Platform Web SDK
 
@@ -34,7 +34,7 @@ Die Platform Web SDK kombiniert die Funktionalität mehrerer Adobe-Anwendungen i
 
 | | Target at.js 2.x | Platform Web-SDK |
 |---|---|---|
-| Eigentümerschaft | Die at.js-Bibliothek ist unabhängig von anderen Anwendungsbibliotheken. Anpassungen und Eigentümerschaft dieser unterschiedlichen Bibliotheken können an verschiedene Teams in der Organisation angepasst werden. | Die Platform Web SDK-Bibliothek und die übergebenen Daten werden für alle Adobe-Anwendungen vereinheitlicht. Die Eigentümerschaft der Platform Web SDK-Implementierung sollte die Stakeholder aller nachgelagerten Anwendungen repräsentieren. |
+| Eigentümerschaft | Die Target-Erweiterung ist unabhängig von anderen Anwendungs-SDKs (GLAUBEN SIE NICHT, DASS DIES FÜR MOBILGERÄTE ZUTRIFFT). Anpassungen und Eigentümerschaft dieser unterschiedlichen Bibliotheken können an verschiedene Teams in der Organisation angepasst werden. | Die Platform Web SDK-Bibliothek und die übergebenen Daten werden für alle Adobe-Anwendungen vereinheitlicht. Die Eigentümerschaft der Platform Web SDK-Implementierung sollte die Stakeholder aller nachgelagerten Anwendungen repräsentieren. |
 | Wartung | Separate Teams können an Implementierungsverbesserungen für jede Adobe-Anwendung arbeiten, z. B. Target und Analytics. | Idealerweise sollte ein einzelnes Team für Verbesserungen verantwortlich sein, die sich auf die Implementierung von Platform Web SDK auswirken. |
 | Prozess | Änderungen an einer Target-Implementierung können auf einen Prozess folgen, der im Vergleich zu anderen Programmen wie Analytics eine andere Kadenz oder andere QS-Anforderungen hat. | Bei Änderungen an einer Platform Web SDK-Implementierung sollten alle nachgelagerten Anwendungen berücksichtigt und der QA- und Veröffentlichungsprozess entsprechend angepasst werden. |
 | Zusammenarbeit | Target-spezifische Daten können direkt in den Target-Aufrufen übergeben werden. Je nach Implementierung können zusätzliche Target-Aufrufe auftreten. Dies hat keine direkten Auswirkungen auf die Daten von Adobe Analytics, und die Koordinierung mit dem Analytics-Team ist nicht so wichtig. | Daten, die in Platform Web SDK-Aufrufen übergeben werden, können sowohl an Target als auch an Analytics weitergeleitet werden. Um sicherzustellen, dass sich Änderungen nicht negativ auf ein bestimmtes Programm auswirken, ist eine Koordinierung zwischen den Teams erforderlich. |
