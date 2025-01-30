@@ -3,9 +3,9 @@ title: Migrieren von Target aus at.js 2.x nach Web SDK
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung von at.js 2.x zu Adobe Experience Platform Web SDK migrieren. Zu den Themen gehören das Laden der JavaScript-Bibliothek, das Senden von Parametern, Rendering-Aktivitäten und andere bemerkenswerte Hinweise.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: 485e79e3569052184475fbc49ab5f43cebcac9a6
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '611'
 ht-degree: 4%
 
 ---
@@ -15,6 +15,20 @@ ht-degree: 4%
 Dieses Handbuch richtet sich an erfahrene Adobe Target-Implementierer, um zu erfahren, wie Sie eine at.js-Implementierung zu Adobe Experience Platform Web SDK migrieren.
 
 Adobe Experience Platform Web SDK ist eine Client-seitige JavaScript-Bibliothek, mit der Adobe Experience Cloud-Kunden über das Adobe Experience Platform-Edge Network mit Experience Cloud-Services interagieren können. Diese neue Bibliothek kombiniert die Funktionen der separaten Adobe-Anwendungsbibliotheken in einem einzigen, schlanken Paket, das die neuen Adobe Experience Platform-Funktionen in vollem Umfang nutzen kann.
+
+
+>[!NOTE]
+>
+>Ähnliche Migrations-Tutorials sind verfügbar für:
+>
+> * [Adobe Analytics](../tutorial-migrate-analytics-websdk/migration-to-websdk-overview.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Da Platform Web SDK mehrere Adobe-Anwendungen unterstützt, sollten alle Adobe-Bibliotheken auf einer bestimmten Seite gleichzeitig migriert werden. Beispielsweise wird eine gemischte Implementierung von Web SDK for Target und AppMeasurement for Analytics auf einer Einzelseite _nicht unterstützt_. Es wird jedoch eine gemischte Implementierung über verschiedene Seiten hinweg unterstützt, z. B. Web SDK auf Seite A und at.js mit AppMeasurement auf Seite B.
+
+
 
 ## Wesentliche Vorteile
 

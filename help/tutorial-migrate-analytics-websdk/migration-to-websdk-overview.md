@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 47b970e3659fe7ebfdf491d9c0e9356128013fb9
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,17 @@ ht-degree: 0%
 # Migrieren von Adobe Analytics zu Web SDK mithilfe von Tags
 
 Erfahren Sie, wie Sie eine Adobe Analytics-Implementierung mithilfe der Analytics-Erweiterung in Experience Platform-Tags (ehemals Launch) zu Web SDK migrieren, indem Sie die Web SDK-Erweiterung auch in Tags verwenden. Wenn die Adobe Analytics-Erweiterung in Tags verwendet wird, wird hinter den Kulissen der Code &quot;AppMeasurement.js“ verwendet. Daher können Sie sich dieses Tutorial als ein Tutorial vorstellen, das AppMeasurement zu Web SDK migriert. Dieses Tutorial befindet sich jedoch vollständig in Tags und behandelt NICHT den Wechsel zu oder von einer JavaScript-Implementierung (mit Ausnahme von JavaScript-Code, der in der Tags-Benutzeroberfläche verwendet wird). Informationen zur Migration von JavaScript-Implementierungen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
+
+>[!NOTE]
+>
+>Ähnliche Migrations-Tutorials sind verfügbar für:
+>
+> * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Da Platform Web SDK mehrere Adobe-Anwendungen unterstützt, sollten alle Adobe-Bibliotheken auf einer bestimmten Seite gleichzeitig migriert werden. Beispielsweise wird eine gemischte Implementierung von Web SDK for Target und AppMeasurement for Analytics auf einer Einzelseite _nicht unterstützt_. Es wird jedoch eine gemischte Implementierung über verschiedene Seiten hinweg unterstützt, z. B. Web SDK auf Seite A und at.js mit AppMeasurement auf Seite B.
 
 ## Was Sie aus diesem Tutorial erhalten
 

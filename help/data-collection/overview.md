@@ -3,10 +3,10 @@ title: Tutorials zur Datenerfassung
 description: Anleitungsvideos und Tutorials, um Sie zu einem Power User der Datenerfassung zu machen
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 30%
+source-wordcount: '234'
+ht-degree: 24%
 
 ---
 
@@ -23,7 +23,50 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
 
 <div id="staff-picks-section">
 
-## Mitarbeiterauswahl
+## Migrationshandbücher
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>Migrieren von Adobe Target zu Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>Ersetzen Sie at.js durch Web SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <img alt="Implementieren von Adobe Experience Cloud mit dem Web SDK" src="assets/thumb_analyticsWebSdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <strong>Migrieren von Adobe Analytics zu Web SDK in Tags</strong>
+    </a>
+    </div>
+    <p>
+    <em>Ersetzen von AppMeasurement.js durch Web SDK mit Tags</em>
+    <p>
+  </td>
+  <td>
+      <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_aamWebSdk.png" />
+    </a>
+    <div>
+      <strong>Migrieren von Adobe Audience Manager zu Web SDK</strong>
+    </div>
+    <p>
+    <em>Ersetzen <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> oder <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">Server-seitige Weiterleitung aktualisieren</a></em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## Implementierungshandbücher
 
 <table>
 <tr>
@@ -55,15 +98,15 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-      <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+      <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-    <strong>Migrieren von Adobe Target zu Web SDK</strong>
+    <strong>Implementieren veralteter Bibliotheken mit Tags</strong>
     </a>
     </div>
     <p>
-    <em>Migration von at.js zu Web SDK</em>
+    <em>Verwenden Sie Tags, um veraltete Analytics-, Target- und Audience Manager-Bibliotheken zu implementieren</em>
     <p>
   </td>
 </tr>
