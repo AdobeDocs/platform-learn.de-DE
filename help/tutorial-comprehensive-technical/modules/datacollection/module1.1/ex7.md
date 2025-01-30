@@ -4,16 +4,16 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # 1.1.7 XDM-Schemaanforderungen in Adobe Experience Platform
 
-Um sicherzustellen, dass Web SDK und alloy.js Daten in Adobe Experience Platform aufnehmen können, muss ein bestimmtes XDM-Mixin Teil des XDM-Schemas in Adobe Experience Platform sein.
+Um sicherzustellen, dass Web SDK Daten in Adobe Experience Platform aufnehmen kann, muss ein bestimmtes XDM-Mixin Teil des XDM-Schemas in Adobe Experience Platform sein.
 
 Wechseln Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform) und melden Sie sich an.
 

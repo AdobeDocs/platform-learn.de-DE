@@ -4,16 +4,16 @@ description: Erste Schritte - Verwenden des Demosystems neben dem Setup Ihrer La
 kt: 5342
 doc-type: tutorial
 exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
 # Verwenden des Demosystems Als Nächstes richten Sie Ihre Client-Eigenschaft für die Adobe Experience Platform-Datenerfassung ein
 
-Um die Lerninhalte in diesem Tutorial zu visualisieren und es Ihnen zu ermöglichen, Ihre Konfiguration in einer sicheren Umgebung zu testen, verwendet dieses Tutorial die Demo System Next-Tools von Adobe. Um dieses Tutorial optimal nutzen zu können, muss Ihre AEP-Instanz so konfiguriert sein, dass sie mit Demo System Next integriert wird.
+Um die Lerninhalte in diesem Tutorial zu visualisieren und es Ihnen zu ermöglichen, Ihre Konfiguration in einer sicheren Umgebung zu testen, verwendet dieses Tutorial die Demo System Next-Tools von Adobe. Um dieses Tutorial optimal nutzen zu können, muss Ihre Adobe Experience Platform-Instanz so konfiguriert sein, dass sie als Nächstes in das Demosystem integriert wird.
 
 Sobald Sie Zugriff auf das Demosystem haben, fahren Sie mit den folgenden Schritten fort.
 
@@ -21,7 +21,7 @@ Navigieren Sie zu [https://dsn.adobe.com/](https://dsn.adobe.com/) und dann zu *
 
 ![DSN](./images/dsnsetup.png)
 
-Wählen Sie in **Dropdown** Umgebung Ihre AEP-Instanz und Sandbox aus.
+Wählen Sie **Dropdown-** „Umgebung“ Ihre Adobe Experience Platform-Instanz und Sandbox aus.
 
 ![DSN](./images/dsnh1.png)
 

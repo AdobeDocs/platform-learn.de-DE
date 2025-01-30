@@ -4,16 +4,18 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 0%
+source-wordcount: '591'
+ht-degree: 1%
 
 ---
 
-# 1.1 Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Web SDK-Erweiterung
+# 1.1 Foundation - Einrichtung der Adobe Experience Platform-Datenerfassung und der Tag-Erweiterung „Web SDK&quot;
 
-Dieses Grundmodul führt Sie in die Datenerfassungsvision von Adobe ein und erklärt, wie Sie Daten von einer Website und einer Mobile App über die Adobe Experience Platform-Datenerfassung, die Adobe Experience Platform SDKs und das Adobe Experience Platform-Edge Network in Adobe Experience Platform und andere Anwendungen übertragen können. In diesem Modul werden einige Konzepte und Technologien vorgestellt, die Auswirkungen haben, die über den Rahmen eines technischen Tutorials für Adobe Experience Platform hinausgehen. Es sollte klar sein, welche Teile dieser Übungen für den Rest des umfassenden Tutorials grundlegend sind, in dem Sie mehr über Experience Edge und seine Funktionen erfahren und wo Sie weitere Informationen und Tutorials erhalten.
+Dieses Grundmodul führt Sie in die Datenerfassungsvision von Adobe ein und erklärt, wie Sie Daten von einer Website und einer Mobile App über die Adobe Experience Platform-Datenerfassung, die Adobe Experience Platform SDKs und das Adobe Experience Platform-Edge Network in Adobe Experience Platform und andere Anwendungen übertragen können.
+
+In diesem Modul werden einige Konzepte und Technologien vorgestellt, die Auswirkungen haben, die über den Rahmen eines technischen Tutorials für Adobe Experience Platform hinausgehen. Es sollte klar sein, welche Teile dieser Übungen für den Rest des umfassenden Tutorials grundlegend sind, in dem Sie mehr über das Edge Network und seine Möglichkeiten erfahren und wo Sie weitere Informationen und Tutorials erhalten.
 
 ## Lernziele
 
@@ -21,9 +23,9 @@ Dieses Grundmodul führt Sie in die Datenerfassungsvision von Adobe ein und erkl
 - Erfahren Sie, welche Datenflüsse eine Marke verwendet, um Daten in ihre Adobe-Produkte aufzunehmen.
 - Erfahren Sie, wie Sie Daten über das Adobe Experience Platform-Edge Network an Adobe Experience Platform und andere Produkte senden.
 - Erfahren Sie, wie Sie Datenelemente und Regeln erstellen, die Daten aus Web und Mobile erfassen.
-- Erfahren Sie mehr über die Tracking-Ereignisse von Web SDK und wie Sie deren Inhalte debuggen können.
+- Erfahren Sie mehr über [ Tracking-](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home) von „Web SDK&quot; und das Debugging ihrer Inhalte.
 - Erfahren Sie, was eine Datenschicht ist und was Adobe bei der Implementierung einer Datenschicht empfiehlt.
-- Erfahren Sie, wie Sie Web SDK von Grund auf implementieren.
+- Erfahren Sie, wie Sie [Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home) von Grund auf implementieren.
 - Machen Sie sich mit dem Unterschied zwischen einer Web- und einer mobilen Implementierung vertraut.
 
 ## Voraussetzungen
@@ -60,11 +62,11 @@ In dieser Übung sehen Sie sich die Web-Daten an, die mit dem Web-SDK in Adobe A
 
 [1.1.6 Implementieren von Adobe Target](./ex6.md)
 
-Richten Sie in dieser Übung eine Aktivität in Adobe Target ein, die über die Web-SDK implementiert wird.
+In dieser Übung richten Sie eine Aktivität in Adobe Target ein, die über die Web-SDK implementiert wird.
 
 [1.1.7 XDM-Schemaanforderungen in Adobe Experience Platform](./ex7.md)
 
-Um sicherzustellen, dass Web SDK und alloy.js Daten in Adobe Experience Platform aufnehmen können, muss ein bestimmtes XDM-Mixin Teil des XDM-Schemas in Adobe Experience Platform sein.
+Um sicherzustellen, dass Web SDK Daten in Adobe Experience Platform aufnehmen kann, muss ein bestimmtes XDM-Mixin Teil des XDM-Schemas in Adobe Experience Platform sein.
 
 [Zusammenfassung und Vorteile](./summary.md)
 

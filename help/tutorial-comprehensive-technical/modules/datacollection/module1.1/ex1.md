@@ -4,7 +4,7 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 3%
@@ -20,16 +20,16 @@ Die Datenerfassung in Adobe Experience Platform wird von Marken für eine Reihe 
 - Implementieren Sie Adobe Experience Cloud-Programme sowie Adobe Experience Platform.
 - Verwalten Sie die verschiedenen Anforderungen der verschiedenen Teile der Organisation, indem Sie jedem eine eigene **Eigenschaft** zur Verwaltung bereitstellen.
 - Ermöglicht Tests und Lebenszyklus-Management.
-- Einfügen von benutzerdefiniertem JavaScript- und Drittanbieter-Tags, die alle an einem Ort verwaltet werden
+- Fügen Sie benutzerdefinierte JavaScript- und Drittanbieter-Tags ein, die alle an einem Ort verwaltet werden.
 
 ## Erkunden der Benutzeroberfläche
 
 Zur [Adobe Experience Platform-Datenerfassung](https://experience.adobe.com/#/data-collection/).
 
-Navigieren Sie zu **Tags**. Die Ansicht **[!UICONTROL Eigenschaften]** wird angezeigt. Die hier aufgelisteten Eigenschaften dienen zur Verwaltung von Tutorials. Diese Eigenschaften stellen Folgendes dar…
+Navigieren Sie zu **Tags**. Die Ansicht **[!UICONTROL Eigenschaften]** wird angezeigt. Die hier aufgelisteten Eigenschaften dienen zur Verwaltung von Tutorials. Diese Eigenschaften stellen Folgendes dar:
 
 - App- und Web-Eigenschaften
-- Verschiedene Websites, die Kunden auf unterschiedliche Weise bedienen. Zum Beispiel hätte Luma Retail eine Eigenschaft, Luma Travel eine andere
+- Verschiedene Websites, die Kunden auf unterschiedliche Weise bedienen. Zum Beispiel hätte Luma Retail eine Eigenschaft, Luma Travel eine andere.
 - Alte und aktuelle Websites
 - Ein spezifisches Adobe Analytics-Design, das für mehrere verschiedene Websites verwendet wird
 - Interne Intranetseiten neben externen Sites

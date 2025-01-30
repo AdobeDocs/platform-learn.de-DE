@@ -4,7 +4,7 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Wählen Sie oben rechts im Bildschirm den Namen Ihrer Sandbox aus, der `--aepSan
 
 ![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1b.png)
 
-Sie werden es dann sehen. Um Adobe Analytics zu aktivieren, klicken Sie auf **+Service hinzufügen**.
+Sie werden es dann sehen. Um Adobe Analytics zu aktivieren, klicken Sie auf **Service hinzufügen**.
 
 ![AEP-Debugger](./images/aa2.png)
 
@@ -80,7 +80,7 @@ Sie werden es dann sehen. Wählen Sie den Dienst **Adobe Analytics** aus, nach d
 
 ## Überprüfen Ihres Datenstroms, um Daten an Adobe Audience Manager zu senden
 
-Sie werden es dann sehen. Um Adobe Audience Manager zu aktivieren, klicken Sie auf **+Service hinzufügen**.
+Sie werden es dann sehen. Um Adobe Audience Manager zu aktivieren, klicken Sie auf **Service hinzufügen**.
 
 ![AEP-Debugger](./images/aa2.png)
 

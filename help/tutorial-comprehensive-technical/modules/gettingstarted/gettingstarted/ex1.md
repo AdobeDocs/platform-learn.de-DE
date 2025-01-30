@@ -4,9 +4,9 @@ description: Erste Schritte - Installieren der Chrome-Erweiterung für die Exper
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ Geben Sie die Werte wie unten angegeben ein, die sich alle auf Ihre Adobe Experi
 
 Wenn Sie nicht sicher sind, welche Werte für diese Felder eingegeben werden sollen, befolgen Sie die unten stehende Anleitung.
 
-**AEP IMS-Organisationsname**
+**Adobe Experience Platform IMS-Organisationsname**
 
 Wenn Sie sich bei Ihrer Adobe Experience Platform-Instanz auf [https://platform.adobe.com/](https://platform.adobe.com/) anmelden, finden Sie den Namen Ihrer Instanz in der oberen rechten Ecke Ihres Bildschirms.
 
 ![DSN](./images/aepname.png)
 
-**AEP IMS-Organisations-ID**
+**Adobe Experience Platform IMS-Organisations-ID**
 
 Die IMS-Organisations-ID ist die eindeutige Kennung für Ihre Adobe Experience Cloud-Instanz und wird in diesem Tutorial an mehreren Stellen referenziert.
 
@@ -88,29 +88,29 @@ Sie können ihn möglicherweise finden, indem Sie zu [Admin Console ](https://ad
 
 ![DSN](./images/aepid1.png)
 
-Möglicherweise finden Sie sie auch unter **Daten-Management > Abfragen** in Ihrem AEP-Menü, wo Sie sie unter **Benutzername** finden.
+Möglicherweise finden Sie sie auch über das Menü **Daten-Management > Abfragen** in Ihrem Adobe Experience Platform, wo Sie sie unter **Benutzername** finden.
 
 ![DSN](./images/aepid2.png)
 
 Kopieren Sie den **@AdobeOrgTeil und fügen Sie** ID ein.
 
-**AEP-Mandanten-ID**
+**Adobe Experience Platform-Mandanten-ID**
 
-Ihre Mandanten-ID ist die eindeutige Kennung der AEP-Instanz Ihres Unternehmens. Wenn Sie sich auf [https://platform.adobe.com/](https://platform.adobe.com/) bei Ihrer Adobe Experience Platform-Instanz anmelden, finden Sie die Mandanten-ID in der URL.
+Ihre Mandanten-ID ist die eindeutige Kennung der Adobe Experience Platform-Instanz Ihres Unternehmens. Wenn Sie sich auf [https://platform.adobe.com/](https://platform.adobe.com/) bei Ihrer Adobe Experience Platform-Instanz anmelden, finden Sie die Mandanten-ID in der URL.
 
 ![DSN](./images/aeptenantid.png)
 
 Wenn Sie ihn in die Chrome-Erweiterung eingeben, sollten Sie sicherstellen, dass ein Unterstrich als Präfix hinzugefügt wird. In diesem Beispiel **experienceplatform** wird daher **_experienceplatform**. Denken Sie außerdem daran, beim Kopieren aus der URL das Symbol **@** zu entfernen.
 
-**AEP-Sandbox-Name**
+**Adobe Experience Platform Sandbox-Name**
 
-Ihr Sandbox-Name ist der Name der Umgebung, die Sie in Ihrer AEP-Instanz verwenden werden. Wenn Sie sich auf [https://platform.adobe.com/](https://platform.adobe.com/) bei Ihrer Adobe Experience Platform-Instanz anmelden, finden Sie die Mandanten-ID in der URL.
+Ihr Sandbox-Name ist der Name der Umgebung, die Sie in Ihrer Adobe Experience Platform-Instanz verwenden werden. Wenn Sie sich auf [https://platform.adobe.com/](https://platform.adobe.com/) bei Ihrer Adobe Experience Platform-Instanz anmelden, finden Sie die Mandanten-ID in der URL.
 
 Bevor Sie den Sandbox-Namen aus der URL übernehmen, sollten Sie sicherstellen, dass Sie sich in der Sandbox befinden, die Sie für dieses Tutorial verwenden sollten. Sie können zur rechten Sandbox wechseln, indem Sie auf das Menü Sandbox-Umschalter in der oberen rechten Ecke Ihres Bildschirms klicken.
 
 ![DSN](./images/aepsandboxsw.png)
 
-In diesem Beispiel lautet der Name der AEP-Sandbox **tech-insiders**.
+In diesem Beispiel lautet der Name der Adobe Experience Platform-Sandbox **tech-insiders**.
 
 ![DSN](./images/aepsname.png)
 
@@ -140,7 +140,7 @@ Gehen Sie als Test zu [diese Seite](https://experienceleague.adobe.com/en/docs/p
 
 Sie sollten nun sehen, dass alle **Umgebungsvariablen** basierend auf der aktivierten Umgebung in der Chrome-Erweiterung durch ihre wahren Werte ersetzt wurden.
 
-Sie sollten jetzt eine ähnliche Ansicht wie die unten haben, in der die Umgebungsvariable `aepTenantId` durch Ihre echte AEP-Mandanten-ID ersetzt wurde, in diesem Fall **_experienceplatform**.
+Sie sollten jetzt eine ähnliche Ansicht wie die unten haben, in der die Umgebungsvariable `aepTenantId` durch Ihre echte Adobe Experience Platform-Mandanten-ID ersetzt wurde, in diesem Fall **_experienceplatform**.
 
 ![DSN](./images/mod7.png)
 

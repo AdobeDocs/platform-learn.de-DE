@@ -4,9 +4,9 @@ description: Erste Schritte - Erstellen Ihres Datenstroms
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Diese Eigenschaften sind fast einsatzbereit. Bevor Sie jedoch mit der Datenerfas
 
 Führen Sie zunächst die folgenden Schritte aus.
 
-## Erstellen eines Datenstroms für das Web
+## Erstellen eines Datenstroms für die Web-Datenerfassung
 
 Klicken Sie **[!UICONTROL Datenströme]**.
 
@@ -101,7 +101,7 @@ Ihre Änderungen werden jetzt veröffentlicht und sind in einigen Minuten bereit
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig17a.png)
 
-## Erstellen eines Datenstroms für Mobilgeräte
+## Erstellen eines Datenstroms für die mobile Datenerfassung
 
 Navigieren Sie zu [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 

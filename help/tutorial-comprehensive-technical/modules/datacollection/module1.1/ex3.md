@@ -4,9 +4,9 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1272'
 ht-degree: 10%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 10%
 
 Sehen wir uns nun die Bausteine der Adobe Experience Platform-Datenerfassung genauer an, um zu verstehen, was auf Ihrer Demo-Website installiert ist. Werfen Sie einen genaueren Blick auf die Adobe Experience Platform Web SDK-Erweiterung, konfigurieren Sie ein Datenelement und eine Regel und erfahren Sie, wie Sie eine Bibliothek veröffentlichen.
 
-## Adobe Experience Platform Web SDK-Erweiterung
+## Tag-Erweiterung &quot;Adobe Experience Platform Web SDK&quot;
 
-Eine Erweiterung ist ein gepackter Code-Satz, der die Datenerfassungsschnittstelle von Adobe Experience Platform und die Bibliotheksfunktion erweitert. Die Adobe Experience Platform-Datenerfassung ist die Plattform, und Erweiterungen sind wie Apps, die auf der Plattform ausgeführt werden. Alle im Tutorial verwendeten Erweiterungen werden von Adobe erstellt und verwaltet. Drittanbieter können jedoch eigene Erweiterungen erstellen, um den Umfang an benutzerdefiniertem Code zu begrenzen, den Benutzerinnen und Benutzer von Adobe Experience Platform-Datenerfassung verwalten müssen.
+Eine Tag-Erweiterung ist ein gepackter Code-Satz, der die Datenerfassungsschnittstelle von Adobe Experience Platform und die Bibliotheksfunktion erweitert. Die Adobe Experience Platform-Datenerfassung ist die Plattform, und Tag-Erweiterungen sind wie Apps, die auf der Plattform ausgeführt werden. Alle im Tutorial verwendeten Erweiterungen werden von Adobe erstellt und verwaltet. Drittanbieter können jedoch eigene Erweiterungen erstellen, um den Umfang an benutzerdefiniertem Code zu begrenzen, den Benutzerinnen und Benutzer von Adobe Experience Platform-Datenerfassung verwalten müssen.
 
 Wechseln Sie zu [Adobe Experience Platform-](https://experience.adobe.com/launch/) und wählen Sie **Tags** aus.
 

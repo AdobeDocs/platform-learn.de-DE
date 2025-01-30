@@ -1,17 +1,17 @@
 ---
 title: Einrichten
-description: Einrichten der AEP-Instanz
+description: Einrichten der Adobe Experience Platform-Instanz
 doc-type: multipage-overview
 hide: false
 exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
-source-git-commit: 73c7e24e7c66053f6babd64cea1856309be377a0
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 5%
+source-wordcount: '1048'
+ht-degree: 4%
 
 ---
 
-# Einrichten
+# Einrichten der Adobe Experience Platform-Instanz
 
 >[!IMPORTANT]
 >
@@ -30,9 +30,9 @@ Um alle diese Tutorials praktisch nutzen zu können, müssen die folgenden Adobe
 
 Wenn für Ihre IMS-Organisation kein bestimmter Programm-Service bereitgestellt wurde, können Sie diese spezifische Übung nicht praktisch durchführen.
 
-## Sandbox erstellen
+## Erstellen einer Sandbox
 
-Um das Tutorial in Ihrer eigenen AEP-Instanz zu durchlaufen, empfiehlt es sich, zunächst eine neue Entwicklungs-Sandbox einzurichten. Um eine neue Sandbox zu erstellen, gehen Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform), gehen Sie zu Sandboxes und dann zu **Durchsuchen**. Klicken Sie **Sandbox erstellen**.
+Um das Tutorial in Ihrer eigenen Adobe Experience Platform-Instanz zu durchlaufen, empfiehlt es sich, zunächst eine neue Entwicklungs-Sandbox einzurichten. Um eine neue Sandbox zu erstellen, gehen Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform), gehen Sie zu Sandboxes und dann zu **Durchsuchen**. Klicken Sie **Sandbox erstellen**.
 
 ![Erstellen einer Sandbox](./assets/images/sandbox1.png)
 
@@ -40,7 +40,7 @@ Erstellen Sie Ihre Sandbox wie folgt:
 
 - Typ: **development**
 - Name: **aep-tutorial**
-- Titel: **AEP-Tutorial**
+- Titel: **Adobe Experience Platform-Tutorial**
 
 Klicken Sie auf **Erstellen**.
 
@@ -58,7 +58,7 @@ Klicken Sie hier, um die spezifische **Rolle** zu öffnen, die von den Lernenden
 
 ![Erstellen einer Sandbox](./assets/images/perm1.png)
 
-Geben Sie Ihrer Rolle einen Namen wie **AEP-Tutorial** und klicken Sie auf **Bestätigen**.
+Geben Sie Ihrer Rolle einen Namen wie **Adobe Experience Platform-Tutorial** und klicken Sie auf **Bestätigen**.
 
 ![Erstellen einer Sandbox](./assets/images/perm2.png)
 
@@ -78,14 +78,14 @@ Fügen Sie wie angegeben weitere Ressourcen hinzu und legen Sie Berechtigungen f
 
 ![Erstellen einer Sandbox](./assets/images/perm6.png)
 
-## Setup-Adobe I/O
+## Adobe I/O einrichten
 
 Gehe zu
 [https://developer.adobe.com/console/integrations](https://developer.adobe.com/console/integrations). Stellen Sie sicher, dass Sie sich in der richtigen Instanz befinden. Klicken Sie **Neues Projekt erstellen**.
 
 ![Erstellen einer Sandbox](./assets/images/io1.png)
 
-Klicken Sie auf **+ Zum Projekt hinzufügen** dann auf **API**.
+Klicken Sie auf **Zum Projekt hinzufügen** und dann auf **API**.
 
 ![Erstellen einer Sandbox](./assets/images/io2.png)
 
@@ -101,7 +101,7 @@ Wählen Sie eines der verfügbaren Produktprofile aus. Dieses Produktprofil best
 
 ![Erstellen einer Sandbox](./assets/images/io5.png)
 
-Klicken Sie auf **+ Zum Projekt hinzufügen** dann erneut auf **API**.
+Klicken Sie **„Zum Projekt hinzufügen** und anschließend erneut **API**.
 
 ![Erstellen einer Sandbox](./assets/images/io6.png)
 
@@ -125,7 +125,7 @@ Klicken Sie **Projekt bearbeiten**.
 
 ![Erstellen einer Sandbox](./assets/images/io11.png)
 
-Geben Sie einen neuen **Projekttitel** ein, z. B. **DSN AEP-Tutorial**. Klicken Sie auf **Speichern**.
+Geben Sie einen neuen **Projekttitel** ein, z. B. **DSN Adobe Experience Platform-Tutorial**. Klicken Sie auf **Speichern**.
 
 ![Erstellen einer Sandbox](./assets/images/io12.png)
 
@@ -238,7 +238,7 @@ Sie sehen dann den Fortschritt der laufenden Installation, die einige Minuten da
 
 ![Erstellen einer Sandbox](./assets/images/dsnorg15.png)
 
-Sobald alles erfolgreich abgeschlossen ist, ist Ihre AEP-Instanz erfolgreich konfiguriert und bereit für Lernende, das Tutorial zu absolvieren.
+Sobald alles erfolgreich abgeschlossen ist, ist Ihre Adobe Experience Platform-Instanz erfolgreich konfiguriert und bereit für Lernende, das Tutorial zu absolvieren.
 
 >[!NOTE]
 >

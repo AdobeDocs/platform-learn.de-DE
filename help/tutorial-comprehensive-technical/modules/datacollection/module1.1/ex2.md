@@ -4,10 +4,10 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 0%
+source-wordcount: '588'
+ht-degree: 1%
 
 ---
 
@@ -15,17 +15,19 @@ ht-degree: 0%
 
 ## Kontext
 
-In dieser Übung erstellen Sie einen **Datenstrom**. Ein **Datenstrom** teilt den Adobe Edge-Servern mit, wohin die Daten gesendet werden sollen, nachdem sie von Web SDK erfasst wurden. Möchten Sie beispielsweise die Daten an Adobe Experience Platform senden? Adobe Analytics? Adobe Audience Manager? Adobe Target?
+In dieser Übung erstellen Sie einen **Datenstrom**. Ein **Datenstrom** teilt den Adobe Edge-Netzwerkservern mit, wohin die Daten gesendet werden sollen, nachdem sie von Web SDK erfasst wurden. Möchten Sie beispielsweise die Daten an Adobe Experience Platform senden? Adobe Analytics? Adobe Audience Manager? Adobe Target?
 
-Datenströme werden immer in der Datenerfassungs-Benutzeroberfläche von Adobe Experience Platform verwaltet und sind für die Datenerfassung von Adobe Experience Platform mit Web SDK von entscheidender Bedeutung. Selbst wenn Sie Web SDK mit einer Nicht-Adobe-Tag-Management-Lösung implementieren, müssen Sie weiterhin Ihren Datenstrom in der Benutzeroberfläche der Datenerfassung von Adobe Experience Platform erstellen.
+Datenströme werden immer in der Experience Platform-Datenerfassungs-Benutzeroberfläche verwaltet und sind für das Experience Platform der Datenerfassung mit [Web SDK) ](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home). Selbst wenn Sie Web SDK mit einer Tag-Management-Lösung ohne Adobe implementieren, müssen Sie dennoch einen Datenstrom erstellen.
 
-In der nächsten Übung implementieren Sie die Web-SDK im Browser. Dann wird Ihnen klarer werden, wie die erfassten Daten aussehen. Vorerst teilen wir dem Datenstrom lediglich mit, wohin er die Daten weiterleiten soll.
+In der nächsten Übung implementieren Sie die Web-SDK im Browser. Dann wird Ihnen klarer werden, wie die erfassten Daten aussehen. Für den Moment sagen wir dem Datenstrom nur, wohin er die Daten weiterleiten soll.
 
-## Erstellen eines Datenstroms
+## Erstellen eines Datenspeichers
 
-In [Erste Schritte](./../../../modules/gettingstarted/gettingstarted/ex2.md) haben Sie bereits einen Datenstrom erstellt, aber wir haben die Hintergründe und den Grund für die Verwendung des Datenstroms nicht besprochen.
+In [Erste Schritte](./../../../modules/gettingstarted/gettingstarted/ex2.md) haben Sie bereits einen Datenstrom erstellt, aber wir haben nicht über den Hintergrund und den Grund gesprochen, für den Sie ihn erstellt haben.
 
-Ein Datenstrom teilt den Adobe Edge-Servern mit, wohin sie die Daten senden sollen, nachdem sie von der Web-SDK erfasst wurden. Möchten Sie beispielsweise die Daten an Adobe Experience Platform senden? Adobe Analytics? Adobe Audience Manager? Adobe Target? Datenströme werden in der Datenerfassungs-Benutzeroberfläche von Adobe Experience Platform verwaltet und sind für die Datenerfassung mit Web SDK von entscheidender Bedeutung, unabhängig davon, ob Sie Web SDK über die Datenerfassung von Adobe Experience Platform implementieren oder nicht.
+Ein [Datenstrom](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/overview) teilt den Edge Network-Servern mit, wohin die Daten gesendet werden sollen, nachdem sie von der Web-SDK erfasst wurden. In der Dokumentation für [Hinzufügen von Services zu einem Datenstrom](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services) finden Sie vollständige Details dazu, wohin Sie Ihre Daten über den Datenstrom senden können.
+
+Datenströme werden in der Experience Platform-Datenerfassungs-Benutzeroberfläche verwaltet und sind für die Datenerfassung mit Web SDK von entscheidender Bedeutung, unabhängig davon, ob Sie Web SDK über die Adobe Experience Platform-Datenerfassung implementieren oder nicht.
 
 Überprüfen wir Ihren **[!UICONTROL Datenstrom]**:
 
@@ -60,9 +62,8 @@ Für diesen Datenstrom…
 - Alle Profildaten werden standardmäßig im Datensatz erfasst **Demosystem - Profildatensatz für Website (Global v1.1)** (die native Aufnahme von Profildaten in Web SDK wird derzeit von Web SDK noch nicht unterstützt)
 - Wenn Sie den Anwendungsdienst **Offer decisioning** für diesen Datenstrom verwenden möchten, müssen Sie das Kontrollkästchen für das Offer decisioning aktivieren. (Dies ist Teil von [Modul 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
 - **Edge-**: ist standardmäßig aktiviert, d. h., dass qualifizierte Zielgruppen bei der Aufnahme von eingehendem Traffic am Edge ausgewertet werden
-- Wenn Sie die **Personalization-Ziele** verwenden möchten, müssen Sie das Kontrollkästchen für Personalization-Ziele aktivieren.
-- 
-   - Wenn Sie die Funktionen von **Adobe Journey Optimizer** in diesem Datenstrom verwenden möchten, müssen Sie das Kontrollkästchen für Adobe Journey Optimizer aktivieren.
+- Wenn Sie „Personalisierungsziele[ verwenden möchten, aktivieren ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview) das Kontrollkästchen für **Personalization-Ziele**.
+- Wenn Sie die Funktionen von **Adobe Journey Optimizer** in diesem Datenstrom verwenden möchten, müssen Sie das Kontrollkästchen für **Adobe Journey Optimizer** aktivieren.
 
 
 Für Ihren Datenstrom ist derzeit keine andere Konfiguration erforderlich.
