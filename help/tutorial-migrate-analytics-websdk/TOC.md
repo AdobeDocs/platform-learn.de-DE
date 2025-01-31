@@ -10,10 +10,10 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: 477d1dc9d626f18b6b1c397202ab9ba0d9cc3521
+source-git-commit: deac800691c130033e1d4c5c7424a3a87fc40830
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 1%
+source-wordcount: '96'
+ht-degree: 5%
 
 ---
 
@@ -24,24 +24,24 @@ ht-degree: 1%
 
 + [Erstellen einer Report Suite für die Validierung](create-a-validation-report-suite.md)
 
-+ [Erstellen und Konfigurieren eines Datenstroms](create-and-configure-the-analytics-datastream.md)
++ [Erstellen eines Datenspeichers](create-and-configure-the-analytics-datastream.md)
 
-+ [Hinzufügen und Konfigurieren der Web SDK-Erweiterung](add-and-configure-the-web-sdk-extension.md)
++ [Hinzufügen der Web SDK-Erweiterung](add-and-configure-the-web-sdk-extension.md)
 
 + [Erstellen eines Variablen-Datenelements](create-a-variable-data-element.md)
 
 + [Migrieren der standardmäßigen Seitenladeregel](migrate-your-default-page-load-rule.md)
 
-+ [Migrieren von benutzerdefiniertem Code in die Web-SDK](migrate-custom-code-to-the-web-sdk.md)
++ [Benutzerdefinierten Code migrieren](migrate-custom-code-to-the-web-sdk.md)
 
-+ [Erstellen der Implementierungsänderungen in der Entwicklungsbibliothek](build-the-implementation-changes.md)
++ [Erstellen einer Entwicklungsbibliothek](build-the-implementation-changes.md)
 
-+ [Debuggen und Validieren der Web SDK-Migration](debug-and-validate-your-web-sdk-migration.md)
++ [Debuggen und Validieren](debug-and-validate-your-web-sdk-migration.md)
 
 + [Migrieren zusätzlicher Seitenregeln](migrate-additional-page-rules.md)
 
 + [Regeln für benutzerdefinierte Links migrieren](migrate-custom-link-rules.md)
 
-+ [Löschen der Adobe Analytics-Erweiterungselemente](delete-analytics-extension-items.md)
++ [Löschen der Analytics-Erweiterung](delete-analytics-extension-items.md)
 
-+ [Publish - Die Migration zu Staging und Produktion](publish-the-migration.md)
++ [Publish zu Staging und Produktion](publish-the-migration.md)
