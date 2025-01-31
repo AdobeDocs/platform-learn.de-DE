@@ -4,9 +4,9 @@ description: Foundation - Datenaufnahme - Von unbekannt bis bekannt auf der Webs
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -66,6 +66,10 @@ Anschließend wird die Produktdetailseite angezeigt. Ein Erlebnisereignis vom Ty
 ![Demo](./images/pv5.png)
 
 Öffnen Sie das Bedienfeld Profil-Viewer und sehen Sie sich Ihre **Erlebnisereignisse“**.
+
+>[!NOTE]
+>
+>Wenn das Ereignis nicht sofort angezeigt wird, aktualisieren Sie die Seite.
 
 ![Demo](./images/pv6.png)
 

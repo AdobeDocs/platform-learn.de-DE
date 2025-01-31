@@ -4,10 +4,10 @@ description: Adobe Experience Manager Cloud Service und Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,10 @@ In dieser Übung entwickeln Sie einen grundlegenden benutzerdefinierten Block f�
 [2.1.5 Erweiterter benutzerdefinierter Block](./ex5.md){target="_blank"}
 
 In dieser Übung entwickeln Sie einen erweiterten benutzerdefinierten Block für Ihre Website.
+
+[2.1.6 AEM-Edge Delivery Services MarTech-Plug-in](./ex6.md){target="_blank"}
+
+In dieser Übung implementieren Sie das AEM-MarTech-Plug-in. Mit dem AEM MarTech-Plug-in können Sie schnell einen vollständigen MarTech-Stack für Ihr AEM-Projekt einrichten.
 
 [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 

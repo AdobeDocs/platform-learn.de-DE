@@ -4,9 +4,9 @@ description: Foundation - Datenaufnahme - Datenaufnahme aus Offline-Quellen
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1513'
 ht-degree: 6%
 
 ---
@@ -82,8 +82,11 @@ Sie verwenden einen freigegebenen Datensatz. Der freigegebene Datensatz wurde be
 
 ![Datenaufnahme](./images/emeacrmoverview.png)
 
-
 Auf dem Bildschirm Übersicht sehen Sie drei Hauptinformationen.
+
+>[!NOTE]
+>
+>Es ist möglich, dass die Ansicht Ihres Datensatzes leer ist, wenn in den letzten sieben Tagen keine Aktivität aufgetreten ist.
 
 ![Datenaufnahme](./images/dashboard.png)
 
@@ -146,6 +149,10 @@ Klicken Sie auf **Weiter**.
 Jetzt müssen Sie die Spaltenüberschriften aus Ihrer CSV-Datei einer XDM-Eigenschaft in Ihrem **[!UICONTROL Demosystem - Profildatensatz für CRM)]**.
 
 Adobe Experience Platform hat bereits einige Vorschläge für Sie unterbreitet, indem versucht wurde, die [!UICONTROL Source-Attribute] mit den [!UICONTROL Zielschemafeldern“ ].
+
+>[!NOTE]
+>
+>Machen Sie sich keine Sorgen, wenn im Zuordnungsbildschirm Fehler angezeigt werden. Nach Befolgung der folgenden Anweisungen werden diese Fehler behoben.
 
 ![Datenaufnahme](./images/mapschema.png)
 
@@ -251,7 +258,7 @@ Beschränken wir Identitätsdaten für den gesamten Datensatz. Bewegen Sie den M
 
 ![Datenaufnahme](./images/pencil.png)
 
-Navigieren Sie **[!UICONTROL Identitätsdaten]** und Sie werden sehen, dass die Option **[!UICONTROL I2]** aktiviert ist. Dabei wird davon ausgegangen, dass alle Informationen in diesem Datensatz für die Person zumindest indirekt identifizierbar sind.
+Gehen Sie **[!UICONTROL Identitätskennzeichnungen]** und Sie werden sehen, dass die Option **[!UICONTROL I2]** aktiviert ist. Dabei wird davon ausgegangen, dass alle Informationen in diesem Datensatz für die Person zumindest indirekt identifizierbar sind.
 
 Klicken Sie **[!UICONTROL Änderungen speichern]**.
 

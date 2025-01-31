@@ -4,9 +4,9 @@ description: Foundation - Datenaufnahme - Konfigurieren von Schemata und Festleg
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3138'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ Sie haben jetzt diese Schemastruktur eingerichtet.
 ![Datenaufnahme](./images/schemastructurem.png)
 
 Ihre neue [!UICONTROL Feldergruppe] ist noch leer, sodass Sie jetzt Felder zu dieser [!UICONTROL Feldergruppe“ hinzufügen ].
-Klicken Sie in der [!UICONTROL Feldergruppe]-Liste auf Ihre benutzerdefinierte [!UICONTROL Feldergruppe].
+Klicken Sie in der [!UICONTROL Feldergruppe]-Liste auf Ihre benutzerdefinierte [!UICONTROL Feldergruppe] und klicken Sie dann auf **Durchsuchen**.
 
 ![Datenaufnahme](./images/schemastructurem.png)
 
@@ -289,7 +289,7 @@ Aus der Schemaperspektive betrachten wir dies als eine **[!UICONTROL Klasse]**. 
 
 Wenn Sie also ein [!UICONTROL XDM-Schema] erstellen, um die Antwort auf zu erfassen **„Was tut dieser Kunde?** müssen Sie zunächst ein Schema erstellen und definieren, das auf die Klasse „ExperienceEvent **[!UICONTROL verweist]**.
 
-Um anzugeben, welche Art von Antworten auf diese Frage gegeben werden können, müssen Sie &quot;[!UICONTROL &quot; ]. [!UICONTROL Feldergruppen] sind Erweiterungen der [!UICONTROL ExperienceEvent]-Klasse und haben sehr spezifische Konfigurationen. Beispielsweise gehören Informationen darüber, welche Art von Produkten ein Kunde angesehen oder zum Warenkorb hinzugefügt hat, zur [!UICONTROL Feldergruppe] **Commerce Details**.
+Um anzugeben, welche Art von Antworten auf diese Frage gegeben werden können, müssen Sie &quot;[!UICONTROL &quot; ]. [!UICONTROL Feldergruppen] sind Erweiterungen der Klasse [!UICONTROL ExperienceEvent] und haben sehr spezifische Konfigurationen. Beispielsweise gehören Informationen darüber, welche Art von Produkten ein Kunde angesehen oder zum Warenkorb hinzugefügt hat, zur [!UICONTROL Feldergruppe] **Commerce Details**.
 
 Zweitens muss Ihr Unternehmen entscheiden, wie Sie das Verhalten dieses Kunden identifizieren. Da wir über Interaktionen auf einer Website sprechen, ist es möglich, dass Ihr Unternehmen den Kunden kennt, aber es ist ebenso möglich, dass ein unbekannter, anonymer Besucher auf der Website aktiv ist. Wir können also keine Kennung wie eine E-Mail-Adresse verwenden. In diesem Fall entscheidet sich Ihr Unternehmen wahrscheinlich dafür, die [!UICONTROL Experience Cloud-ID (ECID)] als primäre Kennung zu verwenden.
 
@@ -305,7 +305,7 @@ Bevor Sie fortfahren, müssen Sie eine **[!UICONTROL Sandbox“]**. Die [!UICONT
 
 ![Datenaufnahme](./images/sb1.png)
 
-Klicken Sie in Adobe Experience Platform **[!UICONTROL Schemata]** im Menü links auf Ihrem Bildschirm.
+Klicken Sie in Adobe Experience Platform **[!UICONTROL Schemata]** im Menü auf der linken Bildschirmseite und gehen Sie zu **Durchsuchen**.
 
 ![Datenaufnahme](./images/menuschemas.png)
 
@@ -446,10 +446,10 @@ Klicken Sie **[!UICONTROL Speichern]**, um Ihre Änderungen zu speichern.
 ![Datenaufnahme](./images/applyidenee.png)
 
 Beachten Sie, dass beim letztendlichen Aufnehmen von Daten für dieses Schema einige Felder erforderlich sind.
-Beispielsweise sind die Felder **[!UICONTROL _id]** und **[!UICONTROL timestamp]** erforderliche Felder.
+Beispielsweise sind die Felder **[!UICONTROL _id]** und **[!UICONTROL timestamp]** erforderliche Felder, was durch die ExperienceEvent-Klasse vorgeschrieben wird.
 
 - _id muss eine eindeutige ID für eine bestimmte Datenaufnahme enthalten
-- Der Zeitstempel muss der Zeitstempel dieses Treffers im Format **[!UICONTROL „JJJJ-MM-DDTHH:MM:SSSZ“]** sein, wie zum Beispiel: **[!UICONTROL „2024-11-18T07:20:000Z“]**
+- Zeitstempel muss der Zeitstempel dieses Treffers im Format **`"YYYY-MM-DDTHH:MM:SSSZ"`** sein, wie zum Beispiel: **`"2024-11-18T07:20:000Z"`**
 
 Sie haben jetzt ein Schema definiert, vorhandene und neu erstellte [!UICONTROL Feldergruppen“ verknüpft ] definierte Kennungen.
 

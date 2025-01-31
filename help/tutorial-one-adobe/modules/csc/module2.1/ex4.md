@@ -4,7 +4,7 @@ description: AEM CS - Benutzerdefinierter Standardblock
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: e075ac0cf4a9132eb78524b50447aa564e82fff6
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 2%
@@ -283,8 +283,6 @@ Sie sollten das dann sehen. Klicken Sie auf **Faser**.
 Hier finden Sie Ihren grundlegenden benutzerdefinierten Block, der jetzt auf der Website gerendert wird.
 
 ![AEMCS](./images/nav7.png)
-
-
 
 Nächster Schritt: [2.1.5 Erweiterter benutzerdefinierter Block](./ex5.md){target="_blank"}
 

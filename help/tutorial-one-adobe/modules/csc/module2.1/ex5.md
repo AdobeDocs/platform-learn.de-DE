@@ -3,9 +3,10 @@ title: AEM CS - Erweiterter benutzerdefinierter Block
 description: AEM CS - Erweiterter benutzerdefinierter Block
 kt: 5342
 doc-type: tutorial
-source-git-commit: baa9b176213883559fafba9be19e0c5749623d56
+exl-id: fa299668-c902-4775-a540-7555ca461d3e
+source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ Speichern Sie Ihre Änderungen.
 
 Sie haben jetzt mehrere Änderungen an Ihrem Projekt vorgenommen, die wieder in Ihr GitHub-Repository übertragen werden müssen. Öffnen Sie dazu „GitHub **Desktop**.
 
-Anschließend sollten die 3 Dateien angezeigt werden, die Sie gerade unter &quot;**&quot; bearbeitet**. Überprüfen Sie Ihre Änderungen.
+Anschließend sollten die beiden soeben bearbeiteten Dateien unter &quot;**&quot; angezeigt**. Überprüfen Sie Ihre Änderungen.
 
 Geben Sie einen Namen für Ihren PR ein, `js css`. Klicken Sie **Auf Haupt übertragen**.
 
@@ -344,7 +345,7 @@ Sie sollten das dann sehen.
 
 ![Block](./images/blockadv20.png)
 
-Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
+Nächster Schritt: [2.1.6 AEM Edge Delivery Services MarTech-Plug-in](./ex6.md){target="_blank"}
 
 [Zurück zum Modul 2.1](./aemcs.md){target="_blank"}
 

@@ -4,7 +4,7 @@ description: Foundation - Datenaufnahme - Datenaufnahme aus Offline-Quellen
 kt: 5342
 doc-type: tutorial
 exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 4%
@@ -32,7 +32,7 @@ Um Blobs oder Dateien in Ihre Adobe Experience Platform Data Landing Zone zu kop
 
 ![dlz-install-az-copy.png](./images/dlz1.png)
 
-- Laden Sie die Beispieldatendatei global-context-websiteInteractions.csv herunter, die Beispiel-Website-Interaktionen enthält, und speichern Sie sie in dem Ordner, in den Sie entpackt haben **azcopy**.
+- Laden Sie die Beispieldatendatei [global-context-websiteInteractions.csv](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv) herunter, die Beispiel-Website-Interaktionen enthält, und speichern Sie sie in dem Ordner, in den Sie entpackt haben **azcopy**.
 
 ![dlz-install-az-copy.png](./images/dlz2.png)
 
