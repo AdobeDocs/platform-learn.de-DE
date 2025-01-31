@@ -4,7 +4,7 @@ description: Erstellen und Konfigurieren eines benutzerdefinierten Webhooks
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: ca4c53ba88bc6a256fc540091413f5efb05945ee
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Erstellen eines benutzerdefinierten Webhooks
 
-Navigieren Sie zu [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Sie haben diese Anwendung bereits in [SDK für Ziele von Übung 2.3.7 verwendet](./../../../modules/rtcdp-b2c/module2.3/ex7.md)
+Navigieren Sie zu [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Sie haben diese Anwendung bereits in [SDK für Ziele von Übung 2.3.6 verwendet](./../../../modules/rtcdp-b2c/module2.3/ex6.md)
 
 Wenn Sie diesen Dienst noch nicht verwendet haben, erstellen Sie ein Konto und dann einen Arbeitsbereich. Nachdem der Arbeitsbereich erstellt wurde, sehen Sie etwas Ähnliches.
 
