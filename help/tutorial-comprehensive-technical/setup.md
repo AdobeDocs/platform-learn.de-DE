@@ -4,9 +4,9 @@ description: Einrichten der Adobe Experience Platform-Instanz
 doc-type: multipage-overview
 hide: false
 exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
-source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1076'
 ht-degree: 4%
 
 ---
@@ -253,5 +253,11 @@ Wechseln Sie zu [https://experience.adobe.com/platform](https://experience.adobe
 >[!NOTE]
 >
 >Vielen Dank, dass Sie sich Zeit genommen haben, um alles über Adobe Experience Platform und seine Programme zu erfahren. Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
+
+![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Wenn Sie Fragen haben oder ein allgemeines Feedback zu künftigen Inhalten geben möchten, wenden Sie sich bitte direkt an Tech Insiders, indem Sie eine E-Mail an **techinsiders@adobe.com senden**.
 
 [Zurück zu „Alle Module“](./overview.md)
