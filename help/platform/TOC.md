@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
+source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 20%
+source-wordcount: '873'
+ht-degree: 21%
 
 ---
 
@@ -118,22 +118,6 @@ ht-degree: 20%
    + [Mobile SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=de){target="_blank"}
 + Data Lifecycle {#data-lifecycle}
    + [Ablaufende Datensätze](/help/platform/data-lifecycle/expire-datasets.md)
-+ Data Science Workspace {#data-science-workspace}
-   + [Übersicht](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
-   + [Architektur](data-science-workspace/architecture-overview.md)
-   + [Kursschema und Datensatz erstellen](data-science-workspace/create-the-course-schema-and-dataset.md)
-   + [Laden von Daten in JupyterLab-Notebooks](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-   + [Abfragen und Auffinden von Daten in JupyterLab-Notebooks](data-science-workspace/dsw-query-service.md)
-   + [Explorative Datenanalyse](data-science-workspace/eda.md)
-   + [Rezepte, Modelle und Services - Übersicht](data-science-workspace/recipes-models-services-overview.md)
-   + [Erstellen eines Modells mit der Rezept-Builder-Vorlage](data-science-workspace/recipe-builder-template.md)
-   + [Analysieren der Modellleistung](data-science-workspace/analyze-model-performance.md)
-   + [Erstellen und Veröffentlichen eines trainierten Modells (Benutzeroberfläche)](data-science-workspace/create-model-ui.md)
-   + [Planen der automatisierten Schulung und Auswertung eines Services](data-science-workspace/schedule-training-scoring.md)
-   + [Echtzeit-Kundenprofile mit Einblicken aus maschinellem Lernen anreichern](data-science-workspace/dsw-profile-segmentation.md)
-   + [Packen von Quelldateien in ein Rezept](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [Gepacktes Rezept importieren (Benutzeroberfläche)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [Gepacktes Rezept importieren (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Ziele {#destinations}
    + [Ziele – Übersicht](/help/platform/destinations/understanding-destinations.md)
    + [Herstellen einer Verbindung zu Zielen](/help/platform/destinations/connecting-to-destinations.md)
