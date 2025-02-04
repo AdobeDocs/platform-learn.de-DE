@@ -3,7 +3,8 @@ title: Proofing mit Workfront
 description: Proofing mit Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: 246bb91496104818f357848f41b79523b7771638
+exl-id: 1b5ca13b-2a32-44a1-a3ae-342bccc6baeb
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
@@ -202,7 +203,7 @@ Geben Sie Ihre Beschreibung ein. Ihre Korrekturabzugs- und Dokumenteneinstellung
 
 ## 2.2.2.5 Datei in AEM Assets anzeigen
 
-Wechseln Sie zu Ihrem Ordner in AEM Assets, der `--aepUserLdap - Workfront Assets` heißt.
+Wechseln Sie zu Ihrem Ordner in AEM Assets, der `--aepUserLdap-- - Workfront Assets` heißt.
 
 ![WF](./images/wfppaem1.png)
 

@@ -3,7 +3,7 @@ title: Completion
 description: Wie wird der Abschluss gemessen?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Im Folgenden finden Sie die erwarteten Abschlussnachweise für jedes Modul.
 
 Der erwartete Abschlussnachweis für das Modul **Erste Schritte** ist die ID des Demosystemprojekts für das von Ihnen erstellte Web.
 
-Die ID des Demosystemprojekts für das Webformat sieht wie folgt aus: `--demoProfileLdap-- - QIMU`.
+Die ID des Demosystemprojekts für das Webformat sieht wie folgt aus: `--aepUserLdap-- - QIMU`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -52,7 +52,7 @@ Die ID des Federated Data Model sieht wie folgt aus: **DMO5110** und kann der UR
 
 ## 2.1 Echtzeit-Kundenprofil
 
-Der erwartete Abschlussnachweis für das Modul **Echtzeit-**) ist die **Zielgruppen-ID** der Zielgruppe, die Sie `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro` über die Benutzeroberfläche erstellt haben.
+Der erwartete Abschlussnachweis für das Modul **Echtzeit-**) ist die **Zielgruppen-ID** der Zielgruppe, die Sie `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro` über die Benutzeroberfläche erstellt haben.
 
 Die Zielgruppen-ID sieht wie folgt aus: **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
@@ -60,7 +60,7 @@ Die Zielgruppen-ID sieht wie folgt aus: **81a9acbe-12e6-424b-b658-abba3a435c83**
 
 ## 2.2 Intelligent Services
 
-Der erwartete Abschlussnachweis für das Modul **Intelligent Services** ist die **Zielgruppen-ID** der Zielgruppe, die Sie `--demoProfileLdap-- - Customer AI High Propensity` über die Benutzeroberfläche erstellt haben.
+Der erwartete Abschlussnachweis für das Modul **Intelligent Services** ist die **Zielgruppen-ID** der Zielgruppe, die Sie `--aepUserLdap-- - Customer AI High Propensity` über die Benutzeroberfläche erstellt haben.
 
 Die Zielgruppen-ID sieht wie folgt aus: **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
@@ -92,7 +92,7 @@ Sie finden die **Ereignisweiterleitungs-Eigenschafts-ID**, die wie folgt aussieh
 
 ## 2.6 Streamen Sie Daten von Apache Kafka nach Real-Time CDP
 
-Der erwartete Abschlussnachweis für das Modul **Streamen von Daten von Apache Kafka in Real-Time CDP** ist die ID Ihrer Quell-Connector-`--demoProfileLdap-- - Kafka`.
+Der erwartete Abschlussnachweis für das Modul **Streamen von Daten von Apache Kafka in Real-Time CDP** ist die ID Ihrer Quell-Connector-`--aepUserLdap-- - Kafka`.
 
 Die ID sieht wie folgt aus: **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**, und Sie finden sie hier:
 
@@ -132,7 +132,7 @@ Die ID der Journey sieht wie folgt aus: **5f5efc7e-49f7-44c1-85df-b23482b38d32**
 
 ## 4.1 Customer Journey Analytics: Erstellen eines Dashboards mit Analysis Workspace
 
-Der erwartete Abschlussnachweis für das Modul **Customer Journey Analytics: Erstellen eines Dashboards mit Analysis Workspace** ist die ID Ihrer `--demoProfileLdap-- - Omnichannel Analysis`.
+Der erwartete Abschlussnachweis für das Modul **Customer Journey Analytics: Erstellen eines Dashboards mit Analysis Workspace** ist die ID Ihrer `--aepUserLdap-- - Omnichannel Analysis`.
 
 Das Format sieht wie folgt aus: **677bcb247064db3c7de2a0e4**, Sie können es in der URL finden, wenn Sie Ihr Projekt geöffnet haben.
 
@@ -148,7 +148,7 @@ Sie finden die **BigQuery-Verbindungs-ID**, die wie folgt aussieht **b63a810c-a8
 
 ## 5.1 Abfrage-Service
 
-Der erwartete Abschlussnachweis für das Modul **Abfrage-Service** ist die Datensatz-ID für Ihren `--demoProfileLdap--_callcenter_interaction_analysis` - Datensatz, die Sie nach Abschluss des Moduls erhalten.
+Der erwartete Abschlussnachweis für das Modul **Abfrage-Service** ist die Datensatz-ID für Ihren `--aepUserLdap--_callcenter_interaction_analysis` - Datensatz, die Sie nach Abschluss des Moduls erhalten.
 
 Die ID sieht wie folgt aus: **675033c903fb3b2aefed8a0a**.
 

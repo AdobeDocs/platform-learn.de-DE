@@ -3,10 +3,10 @@ title: Überblick - Umfassendes technisches Tutorial - eine Adobe
 description: Umfassendes technisches Tutorial - eine Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 4%
+source-wordcount: '528'
+ht-degree: 3%
 
 ---
 
@@ -53,6 +53,12 @@ Wenn Sie dieses Tutorial mit Ihrer eigenen Adobe Experience Cloud-Instanz durchf
 ## Vorbereitung
 
 Überprüfen Sie die erforderlichen Anwendungen, die auf Ihrem Computer installiert werden müssen [hier](./prework.md){target="_blank"}.
+
+## Abschluss und Zertifizierung
+
+Dieses Tutorial ist Teil eines Adobe-Zertifizierungskurses. Sie können sich neben diesem Tutorial unter [https://certification.adobe.com für den Kurs ](https://certification.adobe.com).
+
+Für jedes Modul, das Sie mit dem folgenden Tutorial abschließen, müssen Sie einen Abschlussnachweis wie [ angegeben ](./completion.md).
 
 ## Inhalt
 
