@@ -4,9 +4,9 @@ description: Foundation - Echtzeit-Kundenprofil - Visualisieren Ihres eigenen Ec
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2299'
 ht-degree: 2%
 
 ---
@@ -132,7 +132,11 @@ Wählen Sie das neu erstellte Adobe I/O-Projekt aus und klicken Sie auf **Speich
 
 ![Berechtigungen](./images/perm4.png)
 
-## Postman-Authentifizierung für Adobe I/O
+## Authentifizierung beim Adobe I/O
+
+>[!IMPORTANT]
+>
+>Wenn Sie Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
 
 Navigieren Sie zu [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
 

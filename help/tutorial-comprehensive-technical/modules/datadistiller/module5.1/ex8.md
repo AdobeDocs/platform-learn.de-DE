@@ -4,9 +4,9 @@ description: Abfrage-Service - Abfrage-Service-API
 kt: 5342
 doc-type: tutorial
 exl-id: d356f7e2-523b-41a2-9cc6-1ea2a028c3a7
-source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 3%
 
 ---
@@ -51,6 +51,10 @@ limit 10;
 ```
 
 ## Abfragen
+
+>[!IMPORTANT]
+>
+>Wenn Sie Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
 
 Öffnen Sie Postman auf Ihrem Computer. Im Rahmen von Modul 2.1 haben Sie eine Postman-Umgebung erstellt und eine Postman-Sammlung importiert. Befolgen Sie die Anweisungen [Übung 2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md) falls Sie dies noch nicht getan haben.
 

@@ -6,23 +6,22 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
 
-# 2.3 Real-Time CDP - Segment erstellen und Maßnahmen ergreifen
+# 2.3 Real-Time CDP - Zielgruppe aufbauen und Maßnahmen ergreifen
 
-In diesem Modul konfigurieren Sie ein Streaming-Segment und aktivieren es für mehrere Ziele.
+In diesem Modul konfigurieren Sie ein Streaming-Segment und aktivieren die Zielgruppe für mehrere Ziele.
 
 ## Lernziele
 
-- Erfahren Sie, wie Sie ein Segment erstellen und für Streaming aktivieren.
+- Erfahren Sie, wie Sie eine Zielgruppe erstellen und für das Streaming aktivieren.
 - Erfahren Sie, wie Sie ein Werbeziel mithilfe der Adobe Experience Platform-Benutzeroberfläche konfigurieren.
-- Erfahren Sie, wie Sie ein Segment mit einem Ziel verbinden und aktivieren.
-- Erfahren Sie, wie Sie Adobe Experience Platform-Segmente in Adobe Audience Manager verwenden und wie Sie Adobe Audience Manager-Segmente in Adobe Experience Platform mithilfe der bidirektionalen Segmentfreigabe verwenden.
+- Erfahren Sie, wie Sie eine Zielgruppe mit einem Ziel verbinden und aktivieren.
 
 ## Voraussetzungen
 

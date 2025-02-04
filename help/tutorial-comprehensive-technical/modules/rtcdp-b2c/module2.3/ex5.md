@@ -4,7 +4,7 @@ description: Real-Time CDP - Zielgruppe aufbauen und Maßnahmen ergreifen - Ziel
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbo
 
 ## Überprüfen des Datenstroms
 
-Das Adobe Target-Ziel in Real-Time CDP ist mit dem Datenstrom verbunden, der zum Aufnehmen von Daten in das Adobe Edge Network verwendet wird. Wenn Sie Ihr Adobe Target-Ziel einrichten möchten, müssen Sie zunächst überprüfen, ob Ihr Datenstrom bereits für Adobe Target aktiviert ist. Ihr Datenstrom wurde in [Übung 0.2 - Erstellen Ihres Datenstroms](./../../../modules/gettingstarted/gettingstarted/ex2.md) konfiguriert und erhielt den Namen `--aepUserLdap-- - Demo System Datastream`.
+Das Adobe Target-Ziel in Real-Time CDP ist mit dem Datenstrom verbunden, der zum Aufnehmen von Daten in das Adobe Edge-Netzwerk verwendet wird. Wenn Sie Ihr Adobe Target-Ziel einrichten möchten, müssen Sie zunächst überprüfen, ob Ihr Datenstrom bereits für Adobe Target aktiviert ist. Ihr Datenstrom wurde in [Übung 0.2 - Erstellen Ihres Datenstroms](./../../../modules/gettingstarted/gettingstarted/ex2.md) konfiguriert und erhielt den Namen `--aepUserLdap-- - Demo System Datastream`.
 
 Scrollen Sie im linken Menü nach unten und klicken Sie auf **Datenströme**. Suchen Sie in Datenströme nach Ihrem Datenstrom mit dem Namen `--aepUserLdap-- - Demo System Datastream`. Klicken Sie auf Ihren Datenstrom, um ihn zu öffnen.
 
@@ -71,7 +71,7 @@ Klicken Sie auf **Weiter**.
 
 ![AT](./images/atdest5.png)
 
-Sie können jetzt optional eine Data Governance-Richtlinie auswählen. Klicken Sie auf **Weiter**.
+Sie können jetzt optional eine Data-Governance-Richtlinie auswählen. Klicken Sie auf **Weiter**.
 
 ![AT](./images/atdest2.png)
 
@@ -159,11 +159,16 @@ Als Nächstes müssen Sie ein Personalisierungs-Token aus den Profilattributen v
 
 Bevor Sie auf die Schaltfläche **Hinzufügen** klicken, gehen Sie zur Zeile, in der Sie `... > h1").innerHTML="Hi there ";` sehen, und setzen Sie den Cursor in die Klammern hinter dem Wort `there` wie folgt:
 
-`... > h1").innerHTML="Hi there ";`
+```
+... > h1").innerHTML="Hi there ";
+```
 
 Klicken Sie dann auf **Hinzufügen**-Schaltfläche, die anschließend das Token hinzufügen sollte. Dadurch wird der Code wie folgt aktualisiert:
 
-`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
+```
+... > h1").innerHTML="Hi there ${aep.person.name.firstName}";
+```
+
 
 Klicken Sie auf **Weiter**.
 

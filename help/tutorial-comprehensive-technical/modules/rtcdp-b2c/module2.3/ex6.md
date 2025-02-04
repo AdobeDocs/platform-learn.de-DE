@@ -4,10 +4,10 @@ description: Real-Time CDP - Ziele SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 6%
+source-wordcount: '1123'
+ht-degree: 5%
 
 ---
 
@@ -17,9 +17,17 @@ ht-degree: 6%
 
 In dieser Übung verwenden Sie erneut Adobe I/O , um die APIs von Adobe Experience Platform abzufragen. Wenn Sie Ihr Adobe I/O-Projekt noch nicht konfiguriert haben, gehen Sie zurück zu [Übung 3 in Modul 2.1](../module2.1/ex3.md) und folgen Sie dort den Anweisungen.
 
-## Postman-Authentifizierung für Adobe I/O
+>[!IMPORTANT]
+>
+>Wenn Sie Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
+
+## Authentifizierung beim Adobe I/O
 
 In dieser Übung verwenden Sie Postman erneut, um die APIs von Adobe Experience Platform abzufragen. Wenn Sie Ihr Postman-Programm noch nicht konfiguriert haben, gehen Sie zurück zu [Übung 3 in Modul 2.1](../module2.1/ex3.md) und folgen Sie dort den Anweisungen.
+
+>[!IMPORTANT]
+>
+>Wenn Sie Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
 
 ## Endpunkt und Format definieren
 
