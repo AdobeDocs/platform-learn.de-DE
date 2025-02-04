@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
+source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 21%
+source-wordcount: '881'
+ht-degree: 22%
 
 ---
 
@@ -54,6 +54,7 @@ ht-degree: 21%
    + [Antworten validieren](/help/platform/ai-assistant/validate-responses.md)
    + [Panel „Auffindbarkeit“](/help/platform/ai-assistant/discoverability-panel.md)
    + [Suchen nach nicht verwendeten Zielgruppen](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Betriebliche Erkenntnisse](/help/platform/ai-assistant/operational-insights.md)
    + [Wirkungsanalyse](/help/platform/ai-assistant/impact-analysis.md)
    + [Sicherheitsübersicht](/help/platform/ai-assistant/security-overview.md)
 + Zielgruppen und {#audiences}
@@ -141,6 +142,8 @@ ht-degree: 21%
    + [Identitäts- und Identitätsdiagramme - Übersicht](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Kennzeichnen, Aufnehmen und Überprüfen von Identitätsdaten](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Anzeigen von Identitätsdiagrammen](/help/platform/identities/view-identity-graphs.md)
+   + {#graph-linking-rules} zur Verknüpfung von Identitätsdiagramm-Regeln
+      + [Diagrammsimulation](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
    + [Übersicht](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Attribution AI – Übersicht](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
