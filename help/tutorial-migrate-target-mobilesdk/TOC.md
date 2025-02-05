@@ -10,10 +10,10 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 5%
+source-wordcount: '88'
+ht-degree: 3%
 
 ---
 
@@ -21,8 +21,6 @@ ht-degree: 5%
 # Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung{#migrate-target-to-mobile-sdk-decisioning}
 
 + [Tutorial-Einführung](overview.md)
-
-+ [Übersicht über die Migration](migration-overview.md)
 
 + [Migration planen](plan-migration.md)
 

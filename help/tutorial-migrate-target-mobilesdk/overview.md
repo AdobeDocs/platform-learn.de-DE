@@ -3,10 +3,10 @@ title: Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning 
 description: Erfahren Sie, wie Sie Ihre Mobile-App-Implementierung von der Adobe Target zur Adobe Journey Optimizer - Decisioning-Erweiterung migrieren.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 6e442413c178e76183f88454d97d3896f8efa8bc
+source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '376'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Platform Mobile SDK ermöglicht die durchgängige Interaktion m
 
 ## Wesentliche Vorteile
 
-Zu den Vorteilen der Decisioning-Erweiterung gehören unter anderem:
+Zu den Vorteilen der Adobe Journey Optimizer Decisioning-Erweiterung im Vergleich zur Target-Erweiterung gehören:
 
 * Schnellere Freigabe von Zielgruppen aus [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=de)
 * Integration von Target mit Journey Optimizer zur Unterstützung der [Offer decisioning-Bereitstellung](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
@@ -26,21 +26,6 @@ Zu den Vorteilen der Decisioning-Erweiterung gehören unter anderem:
 * Zusätzliche Implementierungsflexibilität für Entwickler
 
 Der wohl größte Vorteil der Migration für Target-Kunden liegt in der Integration mit Real-time Customer Data Platform. Real-Time CDP bietet umfangreiche Funktionen zur Zielgruppenbildung, die auf dem gesamten Spektrum der in Experience Platform aufgenommenen Daten und dessen Echtzeit-Kundenprofilfunktionen basieren. Ein integriertes Data Governance-Framework automatisiert die verantwortungsvolle Nutzung dieser Daten. Mit Kunden-KI können Sie mühelos maschinelle Lernmodelle verwenden, um Tendenz- und Abwanderungsmodelle zu erstellen, deren Ergebnisse an Adobe Target zurückgegeben werden können. Und schließlich können Kundinnen und Kunden der optionalen Add-ons für Healthcare und Privacy &amp; Security Shield die Funktion zur Durchsetzung von Einverständnissen verwenden, um die Einverständnisvoreinstellungen einzelner Kundinnen und Kunden einfach durchzusetzen. Platform Mobile SDK und die Decisioning-Erweiterung sind erforderlich, um diese Real-Time CDP-Funktionen in Ihrem mobilen Kanal verwenden zu können.
-
-## Lernziele
-
-Am Ende dieses Tutorials können Sie:
-
-* Aufzählungszeichen 1
-* Aufzählungszeichen 2
-
-
-## Voraussetzungen
-
-Um dieses Tutorial abzuschließen, sollten Sie zunächst:
-
-* Aufzählungszeichen 1
-* Aufzählungszeichen 2
 
 
 >[!NOTE]

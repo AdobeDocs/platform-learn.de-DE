@@ -1,55 +1,51 @@
 ---
-title: Planung - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
-description: Erfahren Sie, wie Sie Ihre Adobe Target-Implementierung von at.js 2.x auf Adobe Experience Platform Web SDK planen.
-exl-id: 50eefe2d-ba20-45d5-8674-c4f5d035a9eb
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+title: Planen der Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
+description: Erfahren Sie mehr über die wichtigsten Unterschiede zwischen at.js und Platform Web SDK und wie Sie Ihren Migrationsaufwand planen können.
+exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
+source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
-# Planen der Target-Migration zur Decisioning-Erweiterung
+# Migration planen
 
-Bevor Sie in Ihrer Mobile App ein Upgrade von Target von der Target-Erweiterung auf die Decisioning-Erweiterung durchführen, sollten Sie Ihre aktuelle Implementierung bewerten.
+Der Aufwand für die Migration von der Target- zur Decisioning-Erweiterung hängt von der Komplexität Ihrer aktuellen Implementierung und der verwendeten Produktfunktionen ab.
 
-## Bewertung der aktuellen Implementierung der Target-Erweiterung
+Unabhängig davon, wie einfach oder komplex Ihre Implementierung ist, ist es wichtig, Ihren aktuellen Status vor der Migration vollständig zu verstehen. Dieser Leitfaden hilft Ihnen, die Komponenten Ihrer aktuellen Implementierung aufzuschlüsseln und einen überschaubaren Plan zur Migration der einzelnen Komponenten zu entwickeln.
 
-Der erste Schritt für eine erfolgreiche Migration besteht darin, ein solides Verständnis Ihrer aktuellen Target-Erweiterungsimplementierung zu haben. Es gibt Funktionen und benutzerdefinierten Code, den Sie verwenden können und der aktualisiert werden muss. Berücksichtigen Sie bei der Bewertung Folgendes:
+Der Migrationsprozess umfasst die folgenden wichtigen Schritte:
 
-### Welche Funktionen werden unterstützt?
+1. Bewertung der aktuellen Implementierung und Festlegung eines Migrationsansatzes
+1. Einrichten der Anfangskomponenten für die Verbindung mit dem Adobe Experience Platform-Edge Network
+1. Aktualisieren Sie die grundlegende Implementierung, um die Target- und die Decisioning-Erweiterung zu ersetzen
+1. Optimieren Sie die Implementierung von SDK Optimieren für Ihre spezifischen Anwendungsfälle. Dazu kann es gehören, zusätzliche Parameter zu übergeben, Antwort-Token zu verwenden und vieles mehr.
+1. Aktualisieren von Objekten in der Target-Oberfläche, z. B. Profilskripte, Aktivitäten und Zielgruppendefinitionen
+1. Validieren Sie die endgültige Implementierung, bevor Sie den Wechsel in Ihrer Produktionsumgebung vornehmen
 
-<!--Platform Web SDK is under continuous active development and features and enhancements are added regularly. As you evaluate your current at.js implementation, refer to the [supported use cases](https://github.com/orgs/adobe/projects/18/views/1) page for the latest information.-->
+## Hauptunterschiede zwischen der Target- und der Decisioning-Erweiterung
 
-### Welche Funktionen nutzt ihr heute?
+Bevor Sie mit dem Migrationsprozess beginnen, müssen Sie die Unterschiede zwischen der Target-Erweiterung und der Decisioning-Erweiterung verstehen.
 
-<!--Platform Web SDK is a new library that consolidates all Adobe solutions for the websites into a single SDK. This enables tighter integration and enables new capabilities unique to Adobe Experience Platform. However, this also means at.js functions are not backwards compatible with Platform Web SDK. As you evaluate your current implementation, make note of the following:
+### Operative Unterschiede
 
-- at.js functions such as `getOffer()` and `applyOffer()`
-- Modifications to Target's global settings
-- Integration with Adobe Analytics
-- Use of a flicker mitigation script
-- Use of response tokens
-- Use of mbox, profile, and entity parameters
-- Custom code unique to your implementation-->
+| | Target at.js 2.x | Platform Web-SDK |
+|---|---|---|
+| Prozess | Änderungen an einer Target-Implementierung können auf einen Prozess folgen, der im Vergleich zu anderen Programmen wie Analytics eine andere Kadenz oder andere QS-Anforderungen hat. | Bei Änderungen an einer Implementierung der Decisioning-Erweiterung sollten alle nachgelagerten Anwendungen berücksichtigt und der QA- und Veröffentlichungsprozess entsprechend angepasst werden. |
+| Zusammenarbeit | Target-spezifische Daten können direkt in den Target-Aufrufen übergeben werden. Wenn die Target-Berichtsquelle Adobe Analytics ist, können Target-spezifische Daten auch an Adobe Analytics übergeben werden, wenn geeignete Tracking-Methoden in der Target-Erweiterung für die Anzeige von Target-Inhalten und die Interaktion aufgerufen werden. | In Decisioning-Erweiterungsaufrufen übergebene Daten können sowohl an Target als auch an Analytics weitergeleitet werden, wenn die Target-Berichtsquelle Adobe Analytics ist, Adobe Analytics im Daten-Stream aktiviert ist und geeignete Tracking-Methoden in der Decisioning-Erweiterung aufgerufen werden, wenn Target-Inhalte angezeigt werden und mit ihnen interagiert wird. |
 
-### Welchen Migrationsansatz wählen Sie?
+### Technische Unterschiede
 
-<!--Once you have revisited your at.js implementation, you need to determine a migration approach. There are two options:
-
-- Migrate all Adobe applications at once across the entire site
-- Migrate on a page-by-page basis
-
-Because Platform Web SDK combines and enables multiple Adobe applications, you must coordinate the Target migration of other Adobe applications like Analytics and Audience Manager. All Adobe libraries on a given page should be migrated at the same time. A mixed implementation of Platform Web SDK for Target and AppMeasurement for Analytics on a particular page is not supported. However, a mixed implementation across different pages is supported, for example Platform Web SDK on page A, and at.js with AppMeasurement on page B.
-
-As you migrate, you should plan on following your company's process for testing and releasing new code and use things like development, qa, and staging environments before you release to production.-->
-
-<!--
->[!CAUTION]
->
->Redirect offers are not supported in page-by-page migrations if redirecting from a page with one library to a page with a different library
--->
-
+| | Target-Erweiterung | Decisioning-Erweiterung |
+|---|---|---|
+| Abhängigkeiten | Hängt nur von Mobile Core SDK ab | Hängt von Mobile Core und Edge Network SDK ab |
+| Bibliotheksfunktion | Unterstützt nur das Abrufen von Inhalten aus Adobe Target | Unterstützung für das Abrufen von Inhalten von Adobe Target und Offer decisioning |
+| Anfragen | Target-Aufrufe sind weitgehend unabhängig von anderen Netzwerkaufrufen | Target-Netzwerkaufrufe werden zusammen mit Netzwerkaufrufen für andere Edge-basierte Lösungen wie Messaging in Edge SDK in die Warteschlange gestellt und seriell ausgeführt. |
+| Edge Network | Verwendet den Target-Serverwert oder das Adobe Experience Cloud-Edge Network mit dem Clientcode (clientcode.tt.omtrdc.net), die beide in der [Target-Konfiguration](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) in der Datenerfassungs-UI angegeben sind | Verwendet die Edge-Netzwerkdomäne, die in der Adobe Experience Platform-[Edge Network-Konfiguration ](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui) der Datenerfassungs-Benutzeroberfläche angegeben ist. |
+| Allgemeine Terminologie | mbox, targetParameters | Entscheidungsumfang, Zuordnung (Android)/Wörterbuch (iOS) für Zielparameter |
+| Standardinhalt | Ermöglicht die Übergabe Client-seitiger Standardinhalte in TargetRequest, die zurückgegeben wird, wenn der Netzwerkaufruf fehlschlägt oder zu einem Fehler führt. | Ermöglicht nicht die Übergabe Client-seitiger Standardinhalte. Gibt keinen Inhalt zurück, wenn der Netzwerkaufruf fehlschlägt oder zu einem Fehler führt. |
+| Zielparameter | Ermöglicht die Übergabe globaler TargetParameters pro Anfrage und verschiedener TargetParameters pro Mbox | Ermöglicht die Übergabe globaler TargetParameters nur pro Anfrage |
 
 Überprüfen Sie anschließend den detaillierten [Vergleich der Target- und der Decisioning-Erweiterung](detailed-comparison.md), um die technischen Unterschiede besser zu verstehen und Bereiche zu identifizieren, die einen zusätzlichen Fokus erfordern.
 
