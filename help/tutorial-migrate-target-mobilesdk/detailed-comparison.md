@@ -2,10 +2,10 @@
 title: Vergleich der Target-Erweiterung mit der Decisioning-Erweiterung
 description: Erfahren Sie mehr über die Unterschiede zwischen der Target-Erweiterung und der Decisioning-Erweiterung, einschließlich Funktionen, Einstellungen und Datenfluss.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 8e4e23413c842f84159891287d09e8a6cfbbbc53
+source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 5%
+source-wordcount: '1329'
+ht-degree: 4%
 
 ---
 
@@ -19,6 +19,26 @@ Nachdem Sie die folgenden Informationen durchgelesen und Ihre aktuelle Implement
 - Welche Adobe Target-Erweiterungsfunktionen über Adobe Journey Optimizer verfügen - Entscheidungsäquivalente
 - Anwenden von Target-Einstellungen mit Adobe Journey Optimizer - Decisioning
 - Fluss der Daten mithilfe der Adobe Journey Optimizer - Decisioning-Erweiterung
+
+## Operative Unterschiede
+
+| | Target-Erweiterung | Decisioning-Erweiterung |
+|---|---|---|
+| Prozess | Änderungen an einer Target-Implementierung können auf einen Prozess folgen, der im Vergleich zu anderen Programmen wie Analytics eine andere Kadenz oder andere QS-Anforderungen hat. | Bei Änderungen an einer Implementierung der Decisioning-Erweiterung sollten alle nachgelagerten Anwendungen berücksichtigt und der QA- und Veröffentlichungsprozess entsprechend angepasst werden. |
+| Zusammenarbeit | Target-spezifische Daten können direkt in den Target-Aufrufen übergeben werden. Wenn die Target-Berichtsquelle Adobe Analytics (A4T) ist, können Target-spezifische Daten auch an Adobe Analytics übergeben werden, wenn geeignete Tracking-Methoden in der Target-Erweiterung für die Anzeige von Target-Inhalten und die Interaktion aufgerufen werden. | Daten, die in den Decisioning-Erweiterungsaufrufen übergeben werden, können sowohl an Target als auch an Analytics weitergeleitet werden, wenn die Target-Berichtsquelle Adobe Analytics (A4T) ist, Adobe Analytics im Daten-Stream aktiviert ist und geeignete Tracking-Methoden in der Decisioning-Erweiterung aufgerufen werden, wenn Target-Inhalte angezeigt werden und mit ihnen interagiert wird. |
+
+## Grundlegende Unterschiede
+
+| | Target-Erweiterung | Decisioning-Erweiterung |
+|---|---|---|
+| Abhängigkeiten | Hängt nur von Mobile Core SDK ab | Hängt von Mobile Core und Edge Network SDK ab |
+| Bibliotheksfunktion | Unterstützt nur das Abrufen von Inhalten aus Adobe Target | Unterstützung für das Abrufen von Inhalten von Adobe Target und Offer decisioning |
+| Anfragen | Target-Aufrufe sind weitgehend unabhängig von anderen Netzwerkaufrufen | Target-Netzwerkaufrufe werden zusammen mit Netzwerkaufrufen für andere Edge-basierte Lösungen wie Messaging in Edge SDK in die Warteschlange gestellt und seriell ausgeführt. |
+| Edge Network | Verwendet den Target-Serverwert oder das Adobe Experience Cloud-Edge Network mit dem Clientcode (clientcode.tt.omtrdc.net), die beide in der [Target-Konfiguration](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) in der Datenerfassungs-UI angegeben sind | Verwendet die Edge-Netzwerkdomäne, die in der Adobe Experience Platform-[Edge Network-Konfiguration ](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui) der Datenerfassungs-Benutzeroberfläche angegeben ist. |
+| Allgemeine Terminologie | mbox, targetParameters | Entscheidungsumfang, Zuordnung (Android)/Wörterbuch (iOS) für Zielparameter |
+| Standardinhalt | Ermöglicht die Übergabe Client-seitiger Standardinhalte in TargetRequest, die zurückgegeben wird, wenn der Netzwerkaufruf fehlschlägt oder zu einem Fehler führt. | Ermöglicht nicht die Übergabe Client-seitiger Standardinhalte. Gibt keinen Inhalt zurück, wenn der Netzwerkaufruf fehlschlägt oder zu einem Fehler führt. |
+| Zielparameter | Ermöglicht die Übergabe globaler TargetParameters pro Anfrage und verschiedener TargetParameters pro Mbox | Ermöglicht die Übergabe globaler TargetParameters nur pro Anfrage |
+
 
 
 ## Funktionsvergleich
