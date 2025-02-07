@@ -1,10 +1,11 @@
 ---
-title: Completion
+title: Abschluss - ein Adobe-Tutorial
 description: Wie wird der Abschluss gemessen?
 doc-type: multipage-overview
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
+source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---
@@ -21,7 +22,7 @@ Im Folgenden finden Sie die erwarteten Abschlussnachweise für jedes Modul.
 
 Der erwartete Abschlussnachweis für das Modul **Erste Schritte** ist die ID des Demosystemprojekts für das von Ihnen erstellte Web.
 
-Die ID des Demosystemprojekts für das Webformat sieht wie folgt aus: `--demoProfileLdap-- - 8ERG`.
+Die ID des Demosystemprojekts für das Webformat sieht wie folgt aus: `--aepUserLdap-- - 8ERG`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -79,7 +80,7 @@ Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Übers
 
 Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Offer decisioning** ist die ID der **Entscheidung** erstellten Entscheidung.
 
-Sie finden die **Entscheidungs-ID**, die wie folgt aussieht **dps:offer-activity:1a08ba4b529b2fb2**, hier:
+Sie finden die **Entscheidungs-ID**, die wie **`dps:offer-activity:1a08ba4b529b2fb2`** aussieht, hier:
 
 ![14 ](./assets/images/offers.png)
 

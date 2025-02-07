@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer-Übersetzungs-Services
 kt: 5342
 doc-type: tutorial
 exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: b68e8578f2bd535662522e752d4cbd2947a9677d
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 4%
+source-wordcount: '134'
+ht-degree: 2%
 
 ---
 
@@ -20,12 +20,17 @@ ht-degree: 4%
 ## Voraussetzungen
 
 - Zugriff auf Adobe Journey Optimizer
+- Zugriff auf Microsoft Azure-Übersetzer
 
 ## Übungen
 
-[3.2.1 …](./ex1.md)
+[3.2.1 Übersetzungsdienstleister](./ex1.md)
 
-In dieser Übung, …
+In dieser Übung konfigurieren Sie Ihren Übersetzungsanbieter mit Microsoft Translator und richten ihn in Adobe Journey Optimizer ein.
+
+[3.2.2 Übersetzungsprojekt](./ex2.md)
+
+In dieser Übung konfigurieren Sie Ihren Übersetzungsanbieter mit Microsoft Translator und richten ihn in Adobe Journey Optimizer ein.
 
 [Zusammenfassung und Vorteile](./summary.md)
 

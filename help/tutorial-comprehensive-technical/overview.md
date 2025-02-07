@@ -1,11 +1,11 @@
 ---
-title: Übersicht
+title: Überblick - Umfassendes technisches Tutorial für AEP und Apps
 description: Ausgangspunkt für Dateningenieure, Datenanalysten, Datenarchitekten, Datenwissenschaftler, Orchestrierungsingenieure und Marketing-Experten, um ein umfassendes Verständnis des Geschäftswerts von Adobe Experience Platform und aller seiner Anwendungs-Services zu erhalten.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1258'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Viele interessante Videos finden Sie in unseren Webinaren zur Tech Academy, in B
 
 ## Abschluss und Zertifizierung
 
-Dieses Tutorial ist Teil eines Adobe-Zertifizierungskurses. Sie können sich neben diesem Tutorial unter [https://certification.adobe.com für den Kurs ](https://certification.adobe.com).
+Dieses Tutorial ist Teil eines Adobe-Zertifizierungskurses. Sie können sich neben diesem Tutorial unter [https://certification.adobe.com/courses/1258 für den Kurs ](https://certification.adobe.com/courses/1258).
 
 Für jedes Modul, das Sie mit dem folgenden Tutorial abschließen, müssen Sie einen Abschlussnachweis wie [ angegeben ](./completion.md).
 

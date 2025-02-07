@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
 
-# Erste Schritte mit Firefly-Services
+# 1.1.1 Erste Schritte mit Firefly-Services
 
 Erfahren Sie, wie Sie mit Postman und Adobe I/O Adobe Firefly-Services-APIs abfragen können.
 
-## Konfigurieren des Adobe I/O-Projekts
+## 1.1.1.2 Konfigurieren des Adobe I/O-Projekts
 
 In dieser Übung wird Adobe I/O verwendet, um Abfragen nach Firefly-Services-APIs durchzuführen. Führen Sie die folgenden Schritte aus, um das Adobe I/O einzurichten.
 
@@ -53,7 +53,7 @@ Ihre Adobe I/O-Integration ist jetzt bereit.
 
 ![Neue Integration Adobe I/O](./images/api11.png)
 
-## Herunterladen der Postman-Umgebung
+## 1.1.1.3 Herunterladen der Postman-Umgebung
 
 1. Wählen Sie **Für Postman herunterladen** und dann **OAuth-Server-zu-Server** aus, um eine Postman-Umgebung herunterzuladen.
 
@@ -75,7 +75,11 @@ Das Setup Ihrer Adobe I/O-Integration ist jetzt abgeschlossen.
 
 ![Neue Integration Adobe I/O](./images/api16.png)
 
-## Postman-Authentifizierung für Adobe I/O
+## Postman-Authentifizierung auf Adobe I/O 1.1.1.4
+
+>[!IMPORTANT]
+>
+>Wenn Sie Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
 
 1. Laden Sie unter [ Postman Downloads die entsprechende Version von Postman für Ihr Betriebssystem herunter und installieren Sie sie](https://www.postman.com/downloads/){target="_blank"}.
 
@@ -123,7 +127,7 @@ In **postman.zip**-Datei befinden sich die folgenden Dateien:
 
 Jetzt verfügen Sie über alles, was Sie in Postman benötigen, um über die APIs mit Firefly-Services zu interagieren.
 
-## Anfordern eines Zugriffstokens
+## 1.1.1.5 Anfordern eines Zugriffstokens
 
 Als Nächstes müssen Sie ein Zugriffs-Token anfordern, um sicherzustellen, dass Sie ordnungsgemäß authentifiziert sind.
 
@@ -158,7 +162,7 @@ Es sollte eine ähnliche Antwort mit den folgenden Informationen angezeigt werde
 
 Das Adobe I/O **Bearer-Token** hat einen bestimmten Wert (das sehr lange Zugriffs-Token) und ein Gültigkeitsfenster und ist jetzt 24 Stunden lang gültig. Wenn Sie also nach 24 Stunden Postman zur Authentifizierung bei Adobe I/O verwenden möchten, müssen Sie ein neues Token generieren, indem Sie diese Anfrage erneut ausführen.
 
-## Firefly Services-API, Text 2 Bild
+## 1.1.1.6 Firefly Services-API, Text 2 Bild
 
 Jetzt können Sie Ihre erste Anfrage an Firefly Services-APIs senden.
 

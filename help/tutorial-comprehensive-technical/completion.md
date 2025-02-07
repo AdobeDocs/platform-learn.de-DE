@@ -1,18 +1,20 @@
 ---
-title: Completion
+title: Abschluss - Umfassendes technisches Tutorial für Adobe Experience Platform
 description: Wie wird der Abschluss gemessen?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # Wie wird der Abschluss gemessen?
 
-Navigieren Sie zu [https://certification.adobe.com](https://certification.adobe.com) und dann zum Kurs **XXX**.
+Navigieren Sie zu [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
+
+![3](./assets/images/certcourse.png)
 
 Um ein Modul abzuschließen, wird von Ihnen ein Abschlussnachweis erwartet.
 
