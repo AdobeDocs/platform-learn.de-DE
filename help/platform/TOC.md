@@ -5,7 +5,7 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
+source-git-commit: ce28c48d554727ce42803400373826315f5b2153
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 22%
@@ -22,7 +22,7 @@ ht-degree: 22%
    + [Übersicht zu Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Wichtigste Funktionen](/help/platform/intro-to-platform/key-capabilities.md)
    + [Plattformbasierte Anwendungen](/help/platform/intro-to-platform/native-applications.md)
-   + [Integrationen mit Experience Cloud-Anwendungen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [Integrationen mit Experience Cloud-Programmen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Häufige Anwendungsfälle](/help/platform/intro-to-platform/key-use-cases.md)
    + [Grundlegende Architektur](/help/platform/intro-to-platform/basic-architecture.md)
    + [Benutzeroberfläche](/help/platform/intro-to-platform/interface-tour.md)
@@ -34,7 +34,7 @@ ht-degree: 22%
    + [Überblick über B2B edition](/help/platform/rtcdp/b2b-overview.md)
    + [Kampagnen mit Marketo Engage orchestrieren](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Erste Schritte: Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de){target="_blank"}
-+ [Authentifizierung bei Experience Platform-APIs](/help/platform/authentication/platform-api-authentication.md)
++ [Bei Experience Platform-APIs authentifizieren](/help/platform/authentication/platform-api-authentication.md)
 + [Beispieldaten nach Experience Platform importieren](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
    + [Verwenden von Warnhinweisen](/help/platform/admin/use-alerts.md)
@@ -108,7 +108,7 @@ ht-degree: 22%
    + [Zuordnen einer CSV-Datei zu XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Quellen – Übersicht](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Aufnehmen von Daten aus Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=de)
-   + [Aufnehmen von Daten aus dem Audience Manager ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Aufnehmen von Daten aus Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Aufnehmen von Daten aus dem Cloud-Speicher](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=de)
    + [Aufnehmen von Daten aus dem CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=de)
    + [Daten aus Datenbanken aufnehmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
@@ -121,7 +121,7 @@ ht-degree: 22%
    + [Ablaufende Datensätze](/help/platform/data-lifecycle/expire-datasets.md)
 + Ziele {#destinations}
    + [Ziele – Übersicht](/help/platform/destinations/understanding-destinations.md)
-   + [Herstellen einer Verbindung zu Zielen](/help/platform/destinations/connecting-to-destinations.md)
+   + [Mit Zielen verbinden](/help/platform/destinations/connecting-to-destinations.md)
    + [Erstellen von Zielen und Aktivieren von Daten](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Profile und Segmente für ein Ziel aktivieren](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [Konfigurieren eines Datensatz-Exportziels](/help/platform/destinations/configure-dataset-export-destination.md)
@@ -176,7 +176,7 @@ ht-degree: 22%
    + [Profile löschen](/help/platform/profiles/delete-profiles.md)
    + [Aktualisieren eines bestimmten Attributs mithilfe von upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Datenschutz- und {#privacy}
-   + [Einführung in den Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
+   + [Einführung in Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Identitätsdaten in Datenschutzanfragen](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [Privacy JavaScript-Bibliothek](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Datenschutzkennzeichnungen in Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
@@ -193,7 +193,7 @@ ht-degree: 22%
    + [Abfrage-Service-API](/help/platform/queries/query-service-api.md)
    + [Mehr zu Daten](/help/platform/queries/explore-data.md)
    + [Daten vorbereiten](/help/platform/queries/prepare-data.md)
-   + [Adobe definierte Funktionen](/help/platform/queries/adobe-defined-functions.md)
+   + [In Adobe definierte Funktionen](/help/platform/queries/adobe-defined-functions.md)
    + [Datennutzungsmuster](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [Abfragen ausführen](/help/platform/queries/run-queries.md)
    + [Generieren von Datensätzen aus Abfrageergebnissen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
@@ -221,7 +221,7 @@ ht-degree: 22%
 + Quellen {#sources}
    + [Übersicht](/help/platform/sources/overview.md)
    + [Aufnehmen von Daten aus Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
-   + [Aufnehmen von Daten aus dem Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
+   + [Aufnehmen von Daten aus Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
    + [Aufnehmen von Daten aus Marketo](/help/platform/sources/ingest-data-from-marketo.md)
    + [Aufnehmen von Daten aus dem Cloud-Speicher](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [Aufnehmen von Daten aus CRM](/help/platform/sources/ingest-data-from-crm.md)
@@ -233,7 +233,7 @@ ht-degree: 22%
    + [Übersicht](/help/platform/use-case-playbooks/overview.md)
    + [Playbook-Sandbox konfigurieren](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Playbook-Instanz erstellen und veröffentlichen](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Experience Cloud-Integrationen {#experience-cloud}
++ Experience Cloud Integrations-{#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=de)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
