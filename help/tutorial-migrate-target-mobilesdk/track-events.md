@@ -2,19 +2,21 @@
 title: Ereignisse verfolgen - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
 description: Erfahren Sie, wie Sie Adobe Target-Konversionsereignisse mithilfe der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung verfolgen.
 exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '199'
 ht-degree: 1%
 
 ---
 
 # Tracking von Target-Konversionsereignissen mit der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
 
+Inhalt dieser Seite: https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#tracking
+
 Konversionsereignisse für Target können verfolgt werden mit… Konversionsereignisse fallen normalerweise in die folgenden Kategorien:
 
 * Automatisch verfolgte Ereignisse, für die keine Konfiguration erforderlich ist
-* Kaufkonversionsereignisse, die für eine Best-Practice-Implementierung von Platform Web SDK angepasst werden sollten
+* Kaufkonversionsereignisse, die für eine Implementierung der Best Practice Decisioning-Erweiterung angepasst werden sollten
 * Nicht-Kauf-Konversionsereignisse, die Code-Aktualisierungen erfordern
 
 ## Vergleich der Zielverfolgung
@@ -32,7 +34,7 @@ Die folgenden Konversionsziele erfordern keine spezifischen Anpassungen an Ihrer
 
 
 
-Erfahren Sie als Nächstes, wie Sie [Domain-übergreifende ID-Freigabe aktivieren](cross-domain.md) für konsistente Besucherprofile aktivieren.
+Erfahren Sie als Nächstes, wie Sie [Domain-übergreifende ID-Freigabe aktivieren](webview.md) für konsistente Besucherprofile aktivieren.
 
 >[!NOTE]
 >

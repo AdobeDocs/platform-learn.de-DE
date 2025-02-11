@@ -2,14 +2,14 @@
 title: Rendern von Target-Aktivitäten - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung von at.js 2.x zu Adobe Experience Platform Web SDK migrieren. Zu den Themen gehören eine Übersicht über die Bibliothek, Implementierungsunterschiede und andere bemerkenswerte Hinweise.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 1%
+source-wordcount: '223'
+ht-degree: 0%
 
 ---
 
-# Rendern von Target-Aktivitäten, die den formularbasierten Composer verwenden
+# Rendering Target-Aktivitäten
 
 Einige Target-Implementierungen verwenden möglicherweise regionale Mboxes (jetzt als „Bereiche“ bezeichnet), um Inhalte aus Aktivitäten bereitzustellen, die den formularbasierten Experience Composer verwenden. Wenn Ihre at.js-Target-Implementierung Mboxes verwendet, müssen Sie Folgendes tun:
 
@@ -18,184 +18,121 @@ Einige Target-Implementierungen verwenden möglicherweise regionale Mboxes (jetz
 
 ## Anfordern und Anwenden von Inhalten bei Bedarf
 
++++ Android-Beispiel
+
+>[!BEGINTABS]
+
+>[!TAB Target SDK]
+
+```Java
+// Mboxes for Target activities
+final DecisionScope decisionScope1 = DecisionScope("myTargetMbox1");
+final DecisionScope decisionScope2 = new DecisionScope("myTargetMbox2");
+ 
+final List<DecisionScope> decisionScopes = new ArrayList<>();
+decisionScopes.add(decisionScope1);
+decisionScopes.add(decisionScope2);
+ 
+// Prefetch the Target mboxes
+Optimize.updatePropositions(decisionScopes,
+                            new HashMap<String, Object>() {
+                                {
+                                    put("xdmKey", "xdmValue");
+                                }
+                            },
+                            new HashMap<String, Object>() {
+                                {
+                                    put("dataKey", "dataValue");
+                                }
+                            },
+                            new AdobeCallbackWithOptimizeError<Map<DecisionScope, OptimizeProposition>>() {
+                                @Override
+                                public void fail(AEPOptimizeError optimizeError) {
+                                    // Log in case of error
+                                    Log.d("Target Prefetch error", optimizeError.title);
+                                }
+ 
+                                @Override
+                                public void call(Map<DecisionScope, OptimizeProposition> propositionsMap) {
+                                    // Retrieve cached propositions if prefetch succeeds
+                                    Optimize.getPropositions(scopes, new AdobeCallbackWithError<Map<DecisionScope, OptimizeProposition>>() {
+                                        @Override
+                                      public void fail(final AdobeError adobeError) {
+                                              // handle error
+                                        }
+ 
+                                        @Override
+                                        public void call(Map<DecisionScope, OptimizeProposition> propositionsMap) {
+                                              if (propositionsMap != null && !propositionsMap.isEmpty()) {
+                                                // get the propositions for the given decision scopes
+                                                if (propositionsMap.contains(decisionScope1)) {
+                                                      final OptimizeProposition proposition1 = propsMap.get(decisionScope1)
+                                                      // read proposition1 offers and display them
+                                                }
+                                                if (propositionsMap.contains(decisionScope2)) {
+                                                      final OptimizeProposition proposition2 = propsMap.get(decisionScope2)
+                                                      // read proposition2 offers and display them
+                                                }
+                                              }
+                                        }
+                                      });
+                                }
+                            });
+```
+
+>[!ENDTABS]
+
++++
+
++++ iOS-Beispiel
+
+>[!BEGINTABS]
+
+>[!TAB Target SDK]
+
+```Swift
+// Mboxes for Target activities
+let decisionScope1 = DecisionScope(name: "myTargetMbox1")
+let decisionScope2 = DecisionScope(name: "myTargetMbox2")
+ 
+// Prefetch the Target mboxes
+Optimize.updatePropositions(for: [decisionScope1, decisionScope2]
+                            withXdm: ["xdmKey": "xdmValue"]
+                            andData: ["dataKey": "dataValue"]) { data, error in
+            if let error = error as? AEPOptimizeError {
+                // handle error
+                return
+            }
+            // Retrieve cached propositions if prefetch succeeds
+            Optimize.getPropositions(for: [decisionScope1, decisionScope2]) { propositionsDict, error in
+                if let error = error {
+                    // handle error
+                    return
+                }
+ 
+                if let propositionsDict = propositionsDict {
+                    // get the propositions for the given decision scopes
+ 
+                    if let proposition1 = propositionsDict[decisionScope1] {
+                        // read proposition1 offers and display them
+                    }
+ 
+                    if let proposition2 = propositionsDict[decisionScope2] {
+                        // read proposition2 offers and display them
+                    }
+                }
+            }
+        }
+```
+
+>[!ENDTABS]
+
++++
+
+
 Aktivitäten, die mit dem formularbasierten Composer von Target erstellt und für regionale Mboxes bereitgestellt werden, können nicht automatisch von Platform Web SDK gerendert werden. Ähnlich wie at.js müssen Angebote, die an bestimmte Target-Speicherorte gesendet werden, nach Bedarf gerendert werden.
 
 
-+++at.js-Beispiel mit `getOffer()` und `applyOffer()`:
-
-1. `getOffer()` ausführen, um ein Angebot für einen Standort anzufordern
-1. `applyOffer()` ausführen, um das Angebot an einen angegebenen Selektor zu rendern
-1. Eine Aktivitäts-Impression wird zum Zeitpunkt der `getOffer()` automatisch inkrementiert
-
-```JavaScript
-// Retrieve an offer for the homepage-hero location
-adobe.target.getOffer({
-  "mbox": "homepage_hero",
-
-  // Render offer to the #hero-banner selector
-  "success": function(offers) {
-    adobe.target.applyOffer({
-      "mbox": "homepage_hero",
-      "selector": "#hero-banner",
-      "offer": offers
-    });
-  },
-  "error": {
-    console.log(error);
-  },
-  "timeout": 3000
-});
-```
-
-+++
-
-+++Platform Web SDK-Entsprechung mit dem `applyPropositions`:
-
-1. Führen Sie `sendEvent` Befehl aus, um Angebote (Vorschläge) für einen oder mehrere Standorte (Bereiche) anzufordern
-1. Führen Sie `applyPropositions` Befehl mit dem Metadatenobjekt aus, das Anweisungen zum Anwenden von Inhalten auf die Seite für jeden Bereich bereitstellt
-1. Führen Sie `sendEvent` Befehl mit eventType des `decisioning.propositionDisplay` aus, um eine Impression zu verfolgen
-
-```JavaScript
-// Retrieve propositions for homepage_hero location (scope)
-alloy("sendEvent", {
-  "decisionScopes": ["homepage_hero"]
-}).then(function(result) {
-  var retrievedPropositions = result.propositions;
-    
-  // Render offer (proposition) to the #hero-banner selector by supplying extra metadata
-  return alloy("applyPropositions", {
-    "propositions": retrievedPropositions,
-    "metadata": {
-      // Specify each regional mbox or scope name along with a selector and actionType
-      "homepage_hero": {
-        "selector": "#hero-banner",
-        "actionType": "setHtml"
-      }
-    }
-  }).then(function(applyPropositionsResult) {
-    var renderedPropositions = applyPropositionsResult.propositions;
-
-    // Send the display notifications via sendEvent command
-    alloy("sendEvent", {
-      "xdm": {
-        "eventType": "decisioning.propositionDisplay",
-        "_experience": {
-          "decisioning": {
-            "propositions": renderedPropositions
-          }
-        }
-      }
-    });
-  });
-});
-```
-
-+++
-
-Die Platform Web SDK bietet mehr Kontrolle darüber, wie formularbasierte Aktivitäten mithilfe des Befehls `applyPropositions` mit einer angegebenen `actionType` auf die Seite angewendet werden:
-
-| `actionType` | Beschreibung | at.js-`applyOffer()` | Platform Web SDK-`applyPropositions` |
-| --- | --- | --- | --- |
-| `setHtml` | Löschen Sie den Inhalt des Containers und fügen Sie dann das Angebot zum Container hinzu | Ja (immer verwendet) | Ja |
-| `replaceHtml` | Container entfernen und durch das Angebot ersetzen | Nein | Ja |
-| `appendHtml` | Fügt das Angebot nach dem angegebenen Selektor an | Nein | Ja |
-
-Weitere Informationen [ Rendering-Optionen und Beispiele finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) Dokumentation zum Rendern von Inhalten mit Platform Web SDK .
-
-## Implementierungsbeispiel
-
-Die folgende Beispielseite baut auf der im vorherigen Abschnitt beschriebenen Implementierung auf und fügt dem `sendEvent`-Befehl nur zusätzliche Bereiche hinzu.
-
-+++Platform Web SDK-Beispiel mit mehreren Bereichen
-
-```HTML
-<!doctype html>
-<html>
-<head>
-  <title>Example page</title>
-  <!--Data Layer to enable rich data collection and targeting-->
-  <script>
-    var digitalData = { 
-      // Data layer information goes here
-    };
-  </script>
-
-  <!--Third party libraries that may be used by Target offers and modifications-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-  <!--Prehiding snippet for Target with asynchronous deployment-->
-  <script>
-    !function(e,a,n,t){var i=e.head;if(i){
-    if (a) return;
-    var o=e.createElement("style");
-    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
-  </script>
-
-  <!--Platform Web SDK base code-->
-  <script>
-    !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
-    []).push(o),n[o]=function(){var u=arguments;return new Promise(
-    function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
-    (window,["alloy"]);
-  </script>
-
-  <!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
-  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
-  
-  <!--Configure Platform Web SDK then send event-->
-  <script>
-    alloy("configure", {
-      "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
-      "orgId":"ADB3LETTERSANDNUMBERS@AdobeOrg"
-    });
-    alloy("sendEvent", {
-      // Request and render VEC-based activities
-      "renderDecisions": true,
-      // Request content for form-based activities using the "homepage_hero" scope
-      "decisionScopes": ["homepage_hero"]
-    }).then(function(result) {
-      var retrievedPropositions = result.propositions;
-        
-      // Render offer (proposition) to the #hero-banner selector by supplying extra metadata
-      return alloy("applyPropositions", {
-        "propositions": retrievedPropositions,
-        "metadata": {
-          // Specify each regional mbox or scope name along with a selector and actionType
-          "homepage_hero": {
-            "selector": "#hero-banner",
-            "actionType": "setHtml"
-          }
-        }
-      }).then(function(applyPropositionsResult) {
-        var renderedPropositions = applyPropositionsResult.propositions;
-
-        // Send the display notifications via sendEvent command
-        alloy("sendEvent", {
-          "xdm": {
-            "eventType": "decisioning.propositionDisplay",
-            "_experience": {
-              "decisioning": {
-                "propositions": renderedPropositions
-              }
-            }
-          }
-        });
-      });
-    });
-  </script>
-</head>
-<body>
-  <h1 id="title">Home Page</h1><br><br>
-  <p id="bodyText">Navigation</p><br><br>
-  <a id="home" class="navigationLink" href="#">Home</a><br>
-  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
-  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
-  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
-  <div id="homepage-hero">Homepage Hero Banner Content</div>
-</body>
-</html>
-```
 
 Erfahren Sie als Nächstes, wie Sie [Target-Parameter mithilfe der Platform Web SDK übergeben](send-parameters.md).
 

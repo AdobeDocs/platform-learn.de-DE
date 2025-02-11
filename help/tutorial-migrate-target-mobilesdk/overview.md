@@ -3,7 +3,7 @@ title: Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning 
 description: Erfahren Sie, wie Sie Ihre Mobile-App-Implementierung von der Adobe Target zur Adobe Journey Optimizer - Decisioning-Erweiterung migrieren.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Der Migrationsprozess umfasst die folgenden wichtigen Schritte:
 > * **Target SDK** implementiert die Erweiterung **Adobe Target**
 > * **SDK optimieren** implementiert die Erweiterung **Adobe Journey Optimizer - Decisioning**
 
-Überprüfen Sie anschließend den detaillierten [Vergleich der Target- und der Decisioning-Erweiterung](detailed-comparison.md), um die technischen Unterschiede besser zu verstehen und Bereiche zu identifizieren, die einen zusätzlichen Fokus erfordern.
+Überprüfen Sie anschließend den detaillierten [Vergleich der Target- und der Decisioning-Erweiterung](comparison.md), um die technischen Unterschiede besser zu verstehen und Bereiche zu identifizieren, die einen zusätzlichen Fokus erfordern.
 
 >[!NOTE]
 >

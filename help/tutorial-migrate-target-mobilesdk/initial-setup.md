@@ -2,10 +2,10 @@
 title: Ersteinrichtung - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
 description: Erfahren Sie mehr über die wichtigen Grundelemente, die für Ihre Implementierung von Platform Web SDK erforderlich sind, und richten Sie sie ein
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '370'
+ht-degree: 6%
 
 ---
 
@@ -20,6 +20,8 @@ Die Migration von Target SDK zu Optimize SDK erfordert eine Ersteinrichtung, um 
 - [Erstellen eines Datenstroms](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} um die Weiterleitung von Daten aus Edge Network zu ermöglichen
 - [Konfigurieren des Datenstroms](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} um die Weiterleitung von Daten an Adobe Target zu ermöglichen
 - [Konfigurieren der Tag-Eigenschaft](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} für die Decisioning-Erweiterung
+
+## Erweiterungskonfiguration
 
 >[!BEGINTABS]
 
@@ -50,7 +52,19 @@ Bei Verwendung der Target-Erweiterung installierte Tag-Erweiterungen:
 
 >[!ENDTABS]
 
-Erfahren Sie als Nächstes, wie [ Target-SDK ](replace-library.md).
+## Datenstromkonfiguration
+
+Die Target-Erweiterung verfügt über [konfigurierbare Einstellungen](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) die mit der Entscheidungs[Erweiterung im Datenstrom konfiguriert ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup).
+
+| Target-Erweiterung | Decisioning-Erweiterung | Anmerkungen |
+| --- | --- | --- | 
+| Clientcode | n. z. | Wird automatisch vom Edge mithilfe der IMS-Organisationsdetails festgelegt |
+| Umgebungs-ID | Zielumgebungs-ID | Im Datenstrom konfiguriert |
+| Workspace-Zieleigenschaft | Eigenschafts-Token | Im Datenstrom konfiguriert |
+| Maximale Wartezeit | Nicht konfigurierbar | Die maximale Wartezeit mit der Decisioning-Erweiterung beträgt 10 Sekunden |
+| Serverdomäne | Edge Network-Domain | In der Adobe Experience Platform Edge Network-Erweiterung festgelegt |
+
+Erfahren Sie als Nächstes, wie [ Target-SDK ](replace-sdk.md).
 
 >[!NOTE]
 >

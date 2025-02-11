@@ -10,7 +10,7 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 3%
@@ -22,11 +22,11 @@ ht-degree: 3%
 
 + [Tutorial-Einführung](overview.md)
 
-+ [Erweiterungen vergleichen](detailed-comparison.md)
++ [Erweiterungen vergleichen](comparison.md)
 
 + [Ersteinrichtung durchführen](initial-setup.md)
 
-+ [Ersetzen von SDKs](replace-library.md)
++ [Ersetzen von SDKs](replace-sdk.md)
 
 + [Rendering-Aktivitäten](render-activities.md)
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 + [Konversionsereignisse verfolgen](track-events.md)
 
-+ [WebView-Unterstützung aktivieren](cross-domain.md)
++ [WebView-Unterstützung aktivieren](webview.md)
 
 + [Aktualisieren von Audiences und Profilskripten](update-audiences.md)
 
