@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '77'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 + [Ersteinrichtung durchführen](initial-setup.md)
 
-+ [Bibliothek ersetzen und Ansatz zum Vorab-Ausblenden](replace-library.md)
++ [Ersetzen von SDKs](replace-library.md)
 
 + [Rendering-Aktivitäten](render-activities.md)
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 + [Konversionsereignisse verfolgen](track-events.md)
 
-+ [Domain-übergreifende Unterstützung aktivieren](cross-domain.md)
++ [WebView-Unterstützung aktivieren](cross-domain.md)
 
 + [Aktualisieren von Audiences und Profilskripten](update-audiences.md)
 

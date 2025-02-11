@@ -1,10 +1,10 @@
 ---
 title: Tutorial-Übersicht zur Implementierung von Adobe Experience Cloud in Mobile Apps
-description: Erfahren Sie, wie Sie die Mobile Apps von Adobe Experience Cloud implementieren. Dieses Tutorial führt Sie durch eine Implementierung von Experience Cloud-Anwendungen in einer Swift-Beispiel-App.
+description: Erfahren Sie, wie Sie die Mobile Apps von Adobe Experience Cloud implementieren. Dieses Tutorial führt Sie durch eine Implementierung von Experience Cloud-Programmen in einer Swift-Beispiel-App.
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Erfahren Sie, wie Sie Adobe Experience Cloud-Programme mit dem Adobe Experience Platform Mobile SDK in Ihrer Mobile App implementieren.
 
-Experience Platform Mobile SDK ist eine Client-seitige SDK, die es Kunden von Adobe Experience Cloud ermöglicht, über das Adobe Experience Platform-Edge Network sowohl mit Adobe-Anwendungen als auch mit Drittanbieter-Services zu interagieren. Weitere Informationen finden Sie in der Dokumentation ](https://developer.adobe.com/client-sdks/home/) Adobe Experience Platform Mobile SDK .[
+Experience Platform Mobile SDK ist eine Client-seitige SDK, die es Kunden von Adobe Experience Cloud ermöglicht, sowohl mit Adobe-Anwendungen als auch mit Drittanbieter-Services über Adobe Experience Platform Edge Network zu interagieren. Weitere Informationen finden Sie in der Dokumentation ](https://developer.adobe.com/client-sdks/home/) Adobe Experience Platform Mobile SDK .[
 
 ![Architektur](assets/architecture.png)
 
@@ -31,7 +31,7 @@ Nach Abschluss dieses Tutorials haben Sie folgende Möglichkeiten:
 * Konfigurieren Sie eine mobile Tag-Eigenschaft.
 * Einrichten eines Experience Platform-Datensatzes (optional).
 * Installieren und Implementieren von Tag-Erweiterungen in einer App.
-* Experience Cloud-Parameter korrekt an eine [WebView](web-views.md) übergeben.
+* Richtige Übergabe der Experience Cloud-Parameter an eine [WebView](web-views.md).
 * Validieren Sie die Implementierung mithilfe von [Adobe Experience Platform Assurance](assurance.md).
 * Fügen Sie die folgenden Adobe Experience Cloud-Programme/-Erweiterungen hinzu:
    * [Adobe Experience Platform Edge (XDM)](events.md)
@@ -52,22 +52,22 @@ Nach Abschluss dieses Tutorials haben Sie folgende Möglichkeiten:
 >
 >Ein ähnliches Tutorial mit mehreren Lösungen ist für [Web SDK](../tutorial-web-sdk/overview.md) verfügbar.
 
-## Voraussetzungen
+## Berechtigungen
 
-In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe-ID und die erforderlichen Berechtigungen auf Benutzerebene verfügen, um die Übungen abzuschließen. Andernfalls sollten Sie sich an Ihren Adobe-Administrator wenden, um den Zugriff anzufordern.
+In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe-ID und die erforderlichen Berechtigungen auf Benutzerebene verfügen, um die Übungen abzuschließen. Wenn nicht, wenden Sie sich an Ihren Adobe-Administrator, um Zugriff anzufordern.
 
 * Bei der Datenerfassung müssen Sie über Folgendes verfügen:
    * **[!UICONTROL Plattformen]** - Berechtigungselement **[!UICONTROL Mobile]**
-   * **[!UICONTROL Eigenschaftsrechte]** - Berechtigungselemente für **[!UICONTROL Entwickeln]**, **[!UICONTROL Genehmigen]**, **[!UICONTROL Publish]**, **[!UICONTROL Erweiterungen verwalten]** und **[!UICONTROL Umgebungen verwalten]**.
+   * **[!UICONTROL Eigenschaftsrechte]** - Berechtigungselemente für **[!UICONTROL Entwickeln]**, **[!UICONTROL Genehmigen]**, **[!UICONTROL Veröffentlichen]**, **[!UICONTROL Erweiterungen verwalten]** und **[!UICONTROL Umgebungen verwalten]**.
    * **[!UICONTROL Unternehmensrechte]** - Berechtigungselemente für **[!UICONTROL Eigenschaften verwalten]** und, falls Sie die optionale Lektion für Push-Messaging abgeschlossen haben, **[!UICONTROL App-Konfigurationen verwalten]**
 
      Weitere Informationen zu Tag-Berechtigungen finden Sie unter [Benutzerberechtigungen für Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de){target="_blank"} in der Produktdokumentation.
-* Beim Experience Platform müssen Sie über Folgendes verfügen:
+* In Experience Platform müssen Sie über Folgendes verfügen:
    * **[!UICONTROL Datenmodellierung]** - Berechtigungselemente zum Verwalten und Anzeigen von Schemas.
    * **[!UICONTROL Identity Management]** - Berechtigungselemente zum Verwalten und Anzeigen von Identity-Namespaces.
    * **[!UICONTROL Datenerfassung]** - Berechtigungselemente zum Verwalten und Anzeigen von Datenströmen.
 
-   * Wenn Sie Kunde eines plattformbasierten Programms wie Real-Time CDP, Journey Optimizer oder Customer Journey Analytics sind und die entsprechenden Lektionen erledigen, sollten Sie auch über Folgendes verfügen:
+   * Wenn Sie Kunde eines plattformbasierten Programms wie Real-Time CDP, Journey Optimizer oder Customer Journey Analytics sind und die entsprechenden Lektionen ausführen, sollten Sie auch über Folgendes verfügen:
       * **[!UICONTROL Daten-]**: Berechtigungselemente zum Verwalten und Anzeigen von Datensätzen.
       * Eine Entwicklungs **Sandbox** die Sie für dieses Tutorial verwenden können.
 
