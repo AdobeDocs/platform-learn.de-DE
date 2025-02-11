@@ -1,19 +1,19 @@
 ---
-title: AJO Translations Provider
-description: AJO Translations Provider
+title: Erste Schritte mit AJO-Übersetzungs-Services
+description: Erste Schritte mit AJO-Übersetzungs-Services
 kt: 5342
 doc-type: tutorial
-exl-id: ee0b8650-a59f-4888-8228-4caafe4143e4
-source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
+exl-id: 28c925dd-8a7b-4b9a-a128-ecbfbfbeaf04
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '546'
 ht-degree: 5%
 
 ---
 
-# 3.2.1 Übersetzungsdienstleister
+# 3.5.1 Übersetzungsdienstleister
 
-## 3.2.1.1 Konfigurieren des Microsoft Azure-Übersetzers
+## 3.5.1.1 Konfigurieren des Microsoft Azure-Übersetzers
 
 Navigieren Sie zu [https://portal.azure.com/#home](https://portal.azure.com/#home).
 
@@ -47,7 +47,7 @@ Wechseln Sie im linken Menü zu **Ressourcenverwaltung** > **Schlüssel und Endp
 
 ![Übersetzungen](./images/transl7.png)
 
-## 3.2.1.2-Wörterbuch
+## 3.5.1.2-Wörterbuch
 
 Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/). Auf **Journey Optimizer**.
 
@@ -61,7 +61,7 @@ Sie sollten das dann sehen.
 
 ![Übersetzungen](./images/locale2.png)
 
-## Konfigurieren 3.2.1.3 Übersetzungsanbieters in AJO
+## Konfigurieren 3.5.1.3 Übersetzungsanbieters in AJO
 
 Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/). Auf **Journey Optimizer**.
 
@@ -91,7 +91,7 @@ Ihr **Übersetzungsanbieter** kann jetzt verwendet werden.
 
 ![Übersetzungen](./images/transl13.png)
 
-## 3.2.1.4 Konfigurieren von Übersetzungsprojekten
+## 3.5.1.4 Konfigurieren von Übersetzungsprojekten
 
 Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/). Auf **Journey Optimizer**.
 
@@ -125,7 +125,7 @@ Ihr **Übersetzungen**-Projekt kann jetzt verwendet werden.
 
 ![Übersetzungen](./images/ajoprovider9.png)
 
-## 3.2.1.5 Spracheinstellungen konfigurieren
+## 3.5.1.5 Spracheinstellungen konfigurieren
 
 Navigieren Sie **Kanäle** > **Allgemeine Einstellungen** > **Spracheinstellungen**. Klicken Sie **Spracheinstellungen erstellen**.
 
@@ -171,8 +171,8 @@ Du hast diese Übung beendet.
 
 ## Nächste Schritte
 
-Navigieren Sie zu [3.2.2 Kampagne erstellen](./ex2.md)
+Wechseln Sie zu [3.5.2 Kampagne erstellen](./ex2.md)
 
-Zurück zu [Modul 3.2](./ajotranslationsvcs.md){target="_blank"}
+Zurück zu [Modul 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Zurück zu [Alle Module](./../../../overview.md){target="_blank"}

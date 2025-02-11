@@ -4,7 +4,7 @@ description: AEM CS - Erweiterter benutzerdefinierter Block
 kt: 5342
 doc-type: tutorial
 exl-id: fa299668-c902-4775-a540-7555ca461d3e
-source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
+source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -17,7 +17,7 @@ CTA In der vorherigen Übung haben Sie einen einfachen benutzerdefinierten Block
 
 Sie können nun mit der Arbeit an diesem Block fortfahren.
 
-![AEMCS](./images/nav7.png)
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
 ## Gestalten 2.1.5.1 Blocks
 
@@ -25,23 +25,23 @@ Nachdem Sie nun über einen funktionierenden **Fiberoffer**-Block verfügen, kö
 
 Kehren Sie zu Visual Studio Code zurück und öffnen Sie den Ordner **Bausteine**. Es sollten jetzt mehrere Ordner angezeigt werden, die jeweils auf einen bestimmten Block verweisen. Um Ihren **FibreOffer**-Block zu erweitern, müssen Sie jetzt einen Ordner für Ihren benutzerdefinierten Block erstellen.
 
-![AEMCS](./images/blockadv1.png)
+![AEMCS](./images/blockadv1.png){zoomable="yes"}
 
 Wählen Sie den Ordner **Blöcke** und klicken Sie dann auf das Symbol **Neuen Ordner erstellen**.
 
-![AEMCS](./images/blockadv2.png)
+![AEMCS](./images/blockadv2.png){zoomable="yes"}
 
 Benennen Sie Ihren Ordner `fiberoffer` und drücken Sie **Eingabetaste**.
 
-![AEMCS](./images/blockadv3.png)
+![AEMCS](./images/blockadv3.png){zoomable="yes"}
 
 Wählen Sie den neuen Ordner **fiberoffer** und klicken Sie auf das Symbol **Neue Datei erstellen**.
 
-![AEMCS](./images/blockadv4.png)
+![AEMCS](./images/blockadv4.png){zoomable="yes"}
 
 Es wird jetzt eine neue Datei erstellt. Geben Sie den Namen **fiberoffer.js** ein und drücken Sie die Eingabetaste.
 
-![AEMCS](./images/blockadv5.png)
+![AEMCS](./images/blockadv5.png){zoomable="yes"}
 
 Sie können jetzt Blockdekoration implementieren, indem Sie die folgende JavaScript in die Datei &quot;**.js“**.
 
@@ -62,15 +62,15 @@ export default function decorate(block) {
 }
 ```
 
-![AEMCS](./images/blockadv6.png)
+![AEMCS](./images/blockadv6.png){zoomable="yes"}
 
 Wählen Sie den neuen Ordner **fiberoffer** aus und klicken Sie erneut auf **Symbol Neue Datei**.
 
-![AEMCS](./images/blockadv7.png)
+![AEMCS](./images/blockadv7.png){zoomable="yes"}
 
 Es wird jetzt eine neue Datei erstellt. Geben Sie den Namen **fiberoffer.css** ein und drücken Sie die Eingabetaste.
 
-![AEMCS](./images/blockadv8.png)
+![AEMCS](./images/blockadv8.png){zoomable="yes"}
 
 Kopieren Sie den folgenden CSS-Code und fügen Sie ihn in die neu erstellte Datei ein.
 
@@ -88,7 +88,7 @@ Kopieren Sie den folgenden CSS-Code und fügen Sie ihn in die neu erstellte Date
 
 Speichern Sie Ihre Änderungen.
 
-![AEMCS](./images/blockadv9.png)
+![AEMCS](./images/blockadv9.png){zoomable="yes"}
 
 Sie haben jetzt mehrere Änderungen an Ihrem Projekt vorgenommen, die wieder in Ihr GitHub-Repository übertragen werden müssen. Öffnen Sie dazu „GitHub **Desktop**.
 
@@ -96,15 +96,15 @@ Anschließend sollten die beiden soeben bearbeiteten Dateien unter &quot;**&quot
 
 Geben Sie einen Namen für Ihren PR ein, `js css`. Klicken Sie **Auf Haupt übertragen**.
 
-![Block](./images/blockadv10.png)
+![Block](./images/blockadv10.png){zoomable="yes"}
 
 Sie sollten das dann sehen. Klicken Sie auf **Push-Herkunft**.
 
-![Block](./images/blockadv11.png)
+![Block](./images/blockadv11.png){zoomable="yes"}
 
 Navigieren Sie in Ihrem Browser zu Ihrem GitHub-Konto und zu dem Repository, das Sie für CitiSignal erstellt haben. Sie sollten dann etwas wie das hier sehen, das anzeigt, dass Ihre Änderungen empfangen wurden.
 
-![Block](./images/blockadv12.png)
+![Block](./images/blockadv12.png){zoomable="yes"}
 
 Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal--XXX.aem.page/us/en` und/oder `main--citisignal--XXX.aem.live/us/en` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
 
@@ -113,7 +113,7 @@ In diesem Beispiel lautet die vollständige URL wie folgt:
 
 Sie sollten dies dann sehen, wenn der Stil auf Ihre Seite angewendet wird.
 
-![Block](./images/blockadv13.png)
+![Block](./images/blockadv13.png){zoomable="yes"}
 
 ## 2.1.5.2 Hinzufügen von Logik und Laden von Daten von einem externen Endpunkt
 
@@ -156,11 +156,11 @@ Im Modul **Erste Schritte** haben Sie bereits einen Datenstrom mit dem Namen `--
 
 Das Feld „edgeConfigId **muss** geändert werden. In der nächsten Übung können Sie dies mit dem Plug-in **MarTech** tun.
 
-![Block](./images/blockadv15.png)
+![Block](./images/blockadv15.png){zoomable="yes"}
 
 Du solltest das jetzt haben.
 
-![Block](./images/blockadv14.png)
+![Block](./images/blockadv14.png){zoomable="yes"}
 
 Fügen Sie anschließend diesen Block unter dem vorherigen Code hinzu, den Sie hinzugefügt haben.
 
@@ -185,7 +185,7 @@ Dieser Codeblock wird zum Abrufen des Werts der Experience Cloud-ID (ECID) verwe
 
 Wie Sie im obigen Code sehen können, wird nach dem Abrufen der ECID eine andere Funktion aufgerufen. Diese Funktion wird als **getOffer()** bezeichnet, die Sie als Nächstes hinzufügen.
 
-![Block](./images/blockadv16.png)
+![Block](./images/blockadv16.png){zoomable="yes"}
 
 Fügen Sie anschließend den folgenden Code unter dem folgenden Code hinzu:
 
@@ -318,7 +318,7 @@ async function getOffer(ECID) {
 
 Es ist sehr wichtig, dass dieser Code-Block unter der schließenden Klammer eingefügt wird, die Sie in diesem Beispiel in Zeile 42 sehen können. Der Code, den Sie gerade eingefügt haben, ist eine separate Funktion, die ihre eigene Position in dieser Datei benötigt und nicht in der obigen (**)** verschachtelt werden kann.
 
-![Block](./images/blockadv17.png)
+![Block](./images/blockadv17.png){zoomable="yes"}
 
 Der soeben eingefügte Code-Block simuliert eine Anfrage, die normalerweise von Web SDK/alloy.js gestellt würde. In diesem Beispiel **eine &quot;**&quot;-Anfrage an **edge.adobedc.net**.
 
@@ -330,11 +330,11 @@ Denken Sie daran: Dieser Ansatz wird nur für Aktivierungszwecke verwendet und i
 
 Speichern Sie Ihre Änderungen. Öffnen Sie dann **GitHub Desktop**, geben Sie Ihrem PR einen Namen und klicken Sie auf **Zum Haupt übertragen**.
 
-![Block](./images/blockadv18.png)
+![Block](./images/blockadv18.png){zoomable="yes"}
 
 Klicken Sie anschließend auf **Push-Herkunft**.
 
-![Block](./images/blockadv19.png)
+![Block](./images/blockadv19.png){zoomable="yes"}
 
 Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal--XXX.aem.page/us/en` und/oder `main--citisignal--XXX.aem.live/us/en` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
 
@@ -343,7 +343,7 @@ In diesem Beispiel lautet die vollständige URL wie folgt:
 
 Sie sollten das dann sehen.
 
-![Block](./images/blockadv20.png)
+![Block](./images/blockadv20.png){zoomable="yes"}
 
 Nächster Schritt: [2.1.6 AEM Edge Delivery Services MarTech-Plug-in](./ex6.md){target="_blank"}
 

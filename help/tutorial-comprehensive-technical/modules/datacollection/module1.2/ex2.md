@@ -4,9 +4,9 @@ description: Foundation - Datenaufnahme - Konfigurieren von Schemata und Festleg
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3117'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ Sie haben jetzt diese Schemastruktur eingerichtet.
 ![Datenaufnahme](./images/schemastructurem.png)
 
 Ihre neue [!UICONTROL Feldergruppe] ist noch leer, sodass Sie jetzt Felder zu dieser [!UICONTROL Feldergruppe“ hinzufügen ].
-Klicken Sie in der [!UICONTROL Feldergruppe]-Liste auf Ihre benutzerdefinierte [!UICONTROL Feldergruppe] und klicken Sie dann auf **Durchsuchen**.
+Klicken Sie in der [!UICONTROL Feldergruppe]-Liste auf Ihre benutzerdefinierte [!UICONTROL Feldergruppe].
 
 ![Datenaufnahme](./images/schemastructurem.png)
 
@@ -176,26 +176,26 @@ Sie fügen nun unter diesem Mandanten im soeben erstellten Objekt **Identifikati
 Verwenden Sie die folgenden Informationen, um diese drei neuen Felder unter dem Objekt **[!UICONTROL Identifizierung]** zu erstellen:
 
 - ECID:
-   - Feldname: **[!UICONTROL ecid]**
-   - Anzeigename: **[!UICONTROL ecid]**
+   - Feldname: **`--aepUserLdap--_ecid`**
+   - Anzeigename: **`--aepUserLdap--ecid`**
    - Typ: **[!UICONTROL String]**
    - Feldergruppe: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - emailId
-   - Feldname: **[!UICONTROL emailId]**
-   - Anzeigename: **[!UICONTROL emailId]**
+   - Feldname: **`--aepUserLdap--_emailId`**
+   - Anzeigename: **`--aepUserLdap--_emailId`**
    - Typ: **[!UICONTROL String]**
    - Feldergruppe: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - Mobilgerät
-   - Feldname: **[!UICONTROL mobilenr]**
-   - Anzeigename: **[!UICONTROL mobilenr]**
+   - Feldname: **`--aepUserLdap--_mobilenr`**
+   - Anzeigename: **`--aepUserLdap--_mobilenr`**
    - Typ: **[!UICONTROL String]**
    - Feldergruppe: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 So sollte jedes Feld nach der anfänglichen Feldkonfiguration aussehen.
 
-- Mobilgerät
+- `--aepUserLdap--_mobilenr`
 
 ![Datenaufnahme](./images/mobilenrfield.png)
 
@@ -203,13 +203,13 @@ Scrollen Sie zum Speichern des Felds nach unten in **[!UICONTROL Feldeigenschaft
 
 ![Datenaufnahme](./images/apply.png)
 
-- ECID
+- `--aepUserLdap--_ecid`
 
 ![Datenaufnahme](./images/ecidfield.png)
 
 Vergessen Sie nicht, nach unten zu scrollen und auf **Übernehmen** zu klicken.
 
-- emailId
+- `--aepUserLdap--_emailId`
 
 ![Datenaufnahme](./images/emailidfield.png)
 
@@ -223,7 +223,7 @@ Ihre drei Felder müssen jetzt als „Identität **[!UICONTROL -Felder]** werden
 
 Gehen Sie wie folgt vor, um diese Felder **[!UICONTROL Identität]**-Felder zu definieren:
 
-- Wählen Sie das Feld **[!UICONTROL emailId]** aus.
+- Wählen Sie die **`--aepUserLdap--_emailId`** aus.
 - Scrollen Sie auf der rechten Seite in den Feldeigenschaften nach unten, bis Sie **[!UICONTROL Identität]** sehen. Aktivieren Sie das Kontrollkästchen für **[!UICONTROL Identität]**.
 
 ![Datenaufnahme](./images/emailidid.png)
@@ -236,15 +236,15 @@ Gehen Sie wie folgt vor, um diese Felder **[!UICONTROL Identität]**-Felder zu d
 
 ![Datenaufnahme](./images/emailidprimidns.png)
 
-Als Nächstes müssen Sie die anderen Felder für **[!UICONTROL ecid]** und **[!UICONTROL mobilenr]** als Standardkennungen definieren.
+Als Nächstes müssen Sie die anderen Felder für **`--aepUserLdap--_ecid`** und **`--aepUserLdap--_mobilenr`** als Standardkennungen definieren.
 
-Wählen Sie das Feld **[!UICONTROL ecid]** aus. Scrollen Sie auf der rechten Seite in den Feldeigenschaften nach unten, bis Sie **[!UICONTROL Identität]** sehen. Aktivieren Sie das Kontrollkästchen für **[!UICONTROL Identität]**.
+Wählen Sie die **`--aepUserLdap--_ecid`** aus. Scrollen Sie auf der rechten Seite in den Feldeigenschaften nach unten, bis Sie **[!UICONTROL Identität]** sehen. Aktivieren Sie das Kontrollkästchen für **[!UICONTROL Identität]**.
 Wählen Sie anschließend den Namespace **[!UICONTROL ECID]** aus der Liste der **[!UICONTROL Namespaces]**.
 Klicken Sie **[!UICONTROL Übernehmen]**, um Ihre Änderungen zu speichern.
 
 ![Datenaufnahme](./images/ecidid.png)
 
-Wählen Sie das Feld **[!UICONTROL mobilenr]** aus. Scrollen Sie auf der rechten Seite in den Feldeigenschaften nach unten, bis Sie **[!UICONTROL Identität]** sehen. Aktivieren Sie das Kontrollkästchen für **[!UICONTROL Identität]**.
+Wählen Sie die **`--aepUserLdap--_mobilenr`** aus. Scrollen Sie auf der rechten Seite in den Feldeigenschaften nach unten, bis Sie **[!UICONTROL Identität]** sehen. Aktivieren Sie das Kontrollkästchen für **[!UICONTROL Identität]**.
 Wählen Sie den Namespace **[!UICONTROL Telefon]** aus der Liste der **[!UICONTROL Namespaces]**.
 Klicken Sie **[!UICONTROL Übernehmen]**, um Ihre Änderungen zu speichern.
 
@@ -415,12 +415,12 @@ Sie haben jetzt ein leeres Feld. Sie müssen das obige Feld wie angegeben konfig
 
 - ECID:
 
-   - Feldname: **[!UICONTROL ecidweb]**
-   - Anzeigename: **[!UICONTROL ecidweb]**
+   - Feldname: **`--aepUserLdap--_ecidweb`**
+   - Anzeigename: **`--aepUserLdap--_ecidweb`**
    - Typ: **[!UICONTROL String]**
    - Feldergruppe: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
-So sollte das Feld [!UICONTROL ecid]-field nach Ihrer anfänglichen Feldkonfiguration aussehen:
+So sollte das `--aepUserLdap--_ecidweb`-Feld nach der anfänglichen Feldkonfiguration aussehen:
 
 ![Datenaufnahme](./images/ecidfieldee.png)
 
@@ -432,7 +432,7 @@ Sie haben jetzt ein neues Feld, aber dieses Feld wurde noch nicht als Feld **[!U
 
 ![Datenaufnahme](./images/3fieldsee.png)
 
-Um diese Felder als „Identität **[!UICONTROL -Felder]** definieren, wählen Sie das Feld **[!UICONTROL ecid]** aus.
+Um diese Felder als „Identität **[!UICONTROL -Felder]** definieren, wählen Sie die **`--aepUserLdap--_ecidweb`** aus.
 Scrollen Sie auf der rechten Seite in den Feldeigenschaften nach unten, bis Sie **[!UICONTROL Identität]** sehen. Aktivieren Sie das Kontrollkästchen für **[!UICONTROL Identität]** und aktivieren Sie das Kontrollkästchen für **[!UICONTROL Primäre Identität]**.
 Wählen Sie den Namespace **[!UICONTROL ECID]** aus der Liste der **[!UICONTROL Namespaces]**.
 

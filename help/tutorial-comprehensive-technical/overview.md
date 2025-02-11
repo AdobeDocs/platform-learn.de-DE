@@ -3,9 +3,9 @@ title: Überblick - Umfassendes technisches Tutorial für AEP und Apps
 description: Ausgangspunkt für Dateningenieure, Datenanalysten, Datenarchitekten, Datenwissenschaftler, Orchestrierungsingenieure und Marketing-Experten, um ein umfassendes Verständnis des Geschäftswerts von Adobe Experience Platform und aller seiner Anwendungs-Services zu erhalten.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
+source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1291'
 ht-degree: 2%
 
 ---
@@ -162,6 +162,12 @@ In diesem Modul verwenden Sie den Anwendungs-Service Adobe Experience Platform -
 In diesem Modul erfahren Sie alles, was es über Journey Optimizer zu wissen gibt. Damit können Unternehmen vernetzte, kontextuelle und personalisierte Erlebnisse für ihre Kunden entwerfen und bereitstellen.
 
 **Zeitaufwand:** 120 Minuten
+
+[3.5 Adobe Journey Optimizer: Übersetzungsdienstleistungen](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+
+In diesem Modul erfahren Sie, wie Sie in Adobe Journey Optimizer Übersetzungsdienste einrichten und verwenden können, um Ihre Nachrichten für Ihre Kunden zu lokalisieren.
+
+**Zeitaufwand:** 60 Minuten
 
 ### 4. Adobe Customer Journey Analytics
 

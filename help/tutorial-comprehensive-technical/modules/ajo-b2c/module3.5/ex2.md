@@ -3,15 +3,15 @@ title: Erstellen Ihrer Kampagne mit AJO Translation Services
 description: Erstellen Ihrer Kampagne mit AJO Translation Services
 kt: 5342
 doc-type: tutorial
-exl-id: a9d674f4-6f49-4d4d-a24d-84751f3a438e
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1596'
 ht-degree: 9%
 
 ---
 
-# 3.2.2 Erstellen einer Kampagne
+# 3.5.2 Erstellen einer Kampagne
 
 Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/). Auf **Journey Optimizer**.
 
@@ -21,7 +21,11 @@ Sie werden zur Ansicht **Startseite** in Journey Optimizer weitergeleitet. Stell
 
 ![ACOP](./images/ajolp2.png)
 
-## 3.2.2.1 Erstellen des Header-Fragments
+>[!NOTE]
+>
+>Falls Sie Ihre Kopf- und Fußzeilenfragmente bereits im Rahmen der Übung ([ 3.1.2.1](./../module3.1/ex2.md) und [Übung 3.1.2.2](./../module3.1/ex2.md)) erstellt haben, springen Sie bitte zu Übung 3.5.2.3 Kampagne „Glasfaser erstellen“ vor. Erstellen Sie die Kopf- und Fußzeilenfragmente nicht erneut.
+
+## 3.5.2.1 Erstellen des Header-Fragments
 
 Klicken Sie im linken Menü auf **Fragmente**. Ein Fragment ist eine wiederverwendbare Komponente in Journey Optimizer, die Duplizierungen vermeidet und zukünftige Änderungen erleichtert, die sich auf alle Nachrichten auswirken sollten, z. B. Änderungen an einer Kopf- oder Fußzeile in einer E-Mail-Nachricht.
 
@@ -76,7 +80,7 @@ Als Nächstes sollten Sie ein neues Fragment für die Fußzeile Ihrer E-Mail-Nac
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.2.2.2 Erstellen des Fragments Fußzeile
+## 3.5.2.2 Erstellen des Fragments Fußzeile
 
 Klicken Sie **Fragment erstellen**.
 
@@ -230,7 +234,7 @@ Nach einigen Minuten sehen Sie, dass der Status Ihrer Fußzeile auf „Live **ge
 
 ![Journey Optimizer](./images/fragm38.png)
 
-## 3.2.2.3 Erstellen einer Fibre-Channel-Kampagne
+## 3.5.2.3 Erstellen einer Fibre-Channel-Kampagne
 
 Im Folgenden erstellen Sie eine Kampagne. Im Gegensatz zum ereignisbasierten Journey der vorherigen Übung, das auf eingehenden Erlebnisereignissen oder Zielgruppeneintritten oder -austritten beruht, um eine Journey für einen bestimmten Kunden Trigger, richten sich Kampagnen mit einzigartigen Inhalten wie Newslettern, einmaligen Werbeaktionen oder allgemeinen Informationen oder regelmäßig mit ähnlichen Inhalten, die regelmäßig gesendet werden, wie z. B. Geburtstagskampagnen und Erinnerungen.
 
@@ -262,7 +266,7 @@ Scrollen Sie nach oben zu **Zielgruppe**. Klicken Sie **Zielgruppe auswählen**.
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-Wählen Sie für **Zielgruppe** die Zielgruppe aus, die Sie `--aepUserLdap-- - CitiSignal Eligible for Fiber` im vorherigen Schritt erstellt haben. Klicken Sie auf **Speichern**.
+Wählen Sie für **Zielgruppe** die Zielgruppe aus, die Sie in [1.3.3 Erstellen einer Federated Composition](./../../datacollection/module1.3/ex3.md) erstellt haben, die `--aepUserLdap-- - CitiSignal Eligible for Fiber` heißt. Klicken Sie auf **Speichern**.
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -358,8 +362,8 @@ Du hast diese Übung beendet.
 
 ## Nächste Schritte
 
-Wechseln Sie zu [3.2.3 Hinzufügen von Sprachen zu Ihrer E-Mail](./ex3.md)
+Wechseln Sie zu [3.5.3 Hinzufügen von Sprachen zu Ihrer E-Mail](./ex3.md)
 
-Zurück zu [Modul 3.2](./ajotranslationsvcs.md){target="_blank"}
+Zurück zu [Modul 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Zurück zu [Alle Module](./../../../overview.md){target="_blank"}

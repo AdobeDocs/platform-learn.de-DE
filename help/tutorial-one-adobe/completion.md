@@ -3,9 +3,9 @@ title: Abschluss - ein Adobe-Tutorial
 description: Wie wird der Abschluss gemessen?
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
+source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,8 @@ Der erwartete Abschlussnachweis für das Modul **Erste Schritte** ist die ID des
 
 Die ID des Demosystemprojekts für das Webformat sieht wie folgt aus: `--aepUserLdap-- - 8ERG`.
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
+
 
 ## 1.1 Adobe Firefly-Services
 
@@ -32,7 +33,7 @@ Der erwartete Abschlussnachweis für Modul **Adobe Firefly-Services** ist die **
 
 Die URL sieht wie folgt aus: `https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`.
 
-![3](./assets/images/ps24.png)
+![3](./assets/images/ps24.png){zoomable="yes"}
 
 ## 1.2 Creative Workflow-Automatisierung mit Workfront Fusion
 
@@ -40,7 +41,7 @@ Der erwartete Abschlussnachweis für das Modul **Creative Workflow Automation wi
 
 Die URL sieht wie folgt aus: `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
-![3](./assets/images/wff.png)
+![3](./assets/images/wff.png){zoomable="yes"}
 
 ## 2.1 Adobe Experience Manager - Cloud Service und Edge Delivery Services
 
@@ -48,7 +49,7 @@ Der erwartete Abschlussnachweis für das Modul **Adobe Experience Manager Cloud 
 
 Die URL sieht wie folgt aus: `https://main--citisignal--xxx.aem.page/us/en`.
 
-![3](./assets/images/aemcsweb.png)
+![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Workflow-Management mit Adobe Workfront
 
@@ -56,13 +57,13 @@ Der erwartete Abschlussnachweis für das Modul **Workflow-Management mit Adobe W
 
 Um die URL abzurufen, klicken Sie auf **Link freigeben** auf dem in AEM Assets hochgeladenen Bild.
 
-![12 ](./assets/images/wflink1.png)
+![12 ](./assets/images/wflink1.png){zoomable="yes"}
 
 Kopieren Sie die URL, indem Sie auf **Symbol** Kopieren“ klicken.
 
 Die URL sieht wie folgt aus: `https://author-p148121-e1511399.adobeaemcloud.com/linkshare.html?sh=d63ec826_df79_4c73_a05c_2c2115baef78.dw7JBu2VxkNZvXE2oq9J6KwFRrt5VAffkuqC0nZIjHE`.
 
-![12 ](./assets/images/wflink2.png)
+![12 ](./assets/images/wflink2.png){zoomable="yes"}
 
 ## 3.1 Federated Audience-Komposition
 
@@ -70,11 +71,15 @@ Der erwartete Abschlussnachweis für das Modul **Federated-Audience-Komposition*
 
 Die ID des Federated Data Model sieht wie folgt aus: **DMO5110** und kann der URL entnommen werden, wie in der folgenden Abbildung dargestellt.
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer: Übersetzungsdienstleistungen
 
-Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Übersetzungs-**: …
+Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Translation Services** ist die **Campaign-Versions-ID** Ihrer CitiSignal-Glasfaserkampagne.
+
+Die Kampagnen-Versions-ID des Federated Data Model sieht wie folgt aus: **b11c998b-a345-4f8e-afb1-6285547eb693** und kann aus dem Kampagnen-Übersichtsbildschirm kopiert werden, wie in der folgenden Abbildung dargestellt.
+
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer: Offer decisioning
 
@@ -82,7 +87,7 @@ Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Offer 
 
 Sie finden die **Entscheidungs-ID**, die wie **`dps:offer-activity:1a08ba4b529b2fb2`** aussieht, hier:
 
-![14 ](./assets/images/offers.png)
+![14 ](./assets/images/offers.png){zoomable="yes"}
 
 >[!NOTE]
 >

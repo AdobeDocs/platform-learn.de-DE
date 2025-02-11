@@ -5,9 +5,9 @@ user-guide-description: Ein praktisches Tutorial, das viele Aspekte von Adobe Ex
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c85cd82a8d66b456a36d4915c1067f5c195139d1
+source-git-commit: cc53577700ed66a8f3f47142e0148af34c4d9135
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '939'
 ht-degree: 4%
 
 ---
@@ -137,6 +137,12 @@ ht-degree: 4%
       + [3.4.3 Anwenden der segmentbasierten Personalisierung in einer E-Mail-Nachricht](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
       + [3.4.4 Einrichten und Verwenden von Push-Benachrichtigungen](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
+   + 3.5 Adobe Journey Optimizer: Übersetzungsdienstleistungen {#module35}
+      + [Übersicht](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+      + [3.5.1 Übersetzungsdienstleister](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex1.md)
+      + [3.5.2 Erstellen einer Kampagne](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex2.md)
+      + [3.5.3 Hinzufügen von Sprachen zu E-Mails](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex3.md)
+      + [Zusammenfassung und Vorteile](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/summary.md)
 
 + 4 Customer Journey Analytics B2C-{#cjab2c}
    + 4.1 Customer Journey Analytics: Erstellen eines Dashboards mit Analysis Workspace {#module41}

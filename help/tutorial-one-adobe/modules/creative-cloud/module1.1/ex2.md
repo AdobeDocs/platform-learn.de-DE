@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: e6a549441d425801f2a554da9af803dca646009e
+source-git-commit: bb4b760335fa41b70a1693546047b5bcdfb9f5f2
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1347'
 ht-degree: 1%
 
 ---
@@ -25,33 +25,33 @@ Erfahren Sie, wie Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefiniert
 
 1. Wechseln Sie zu [https://portal.azure.com](https://portal.azure.com){target="_blank"} und melden Sie sich mit Ihrem Azure-Konto an. Wenn Sie noch keine haben, verwenden Sie bitte Ihre persönliche E-Mail-Adresse, um Ihr Azure-Konto zu erstellen.
 
-   ![Azure-Speicher](./images/02azureportalemail.png)
+   ![Azure-Speicher](./images/02azureportalemail.png){zoomable="yes"}
 
    Nach erfolgreicher Anmeldung sollte der folgende Bildschirm angezeigt werden:
 
-   ![Azure-Speicher](./images/03azureloggedin.png)
+   ![Azure-Speicher](./images/03azureloggedin.png){zoomable="yes"}
 
 1. Wählen Sie im linken Menü **Alle Ressourcen** aus. Wenn Sie noch kein Abonnement haben, wird der Azure-Abonnementbildschirm angezeigt.
 
 1. Wenn Sie noch kein Abonnement haben, wählen Sie **Mit einer kostenlosen Azure-Testversion beginnen**.
 
-   ![Azure-Speicher](./images/04azurestartsubscribe.png)
+   ![Azure-Speicher](./images/04azurestartsubscribe.png){zoomable="yes"}
 
 1. Füllen Sie das Azure-Abonnementformular aus und stellen Sie Ihr Mobiltelefon und Ihre Kreditkarte zur Aktivierung bereit (Sie haben 30 Tage lang eine kostenlose Stufe und werden nicht belastet, es sei denn, Sie führen ein Upgrade durch).
 
    Wenn der Abonnementprozess abgeschlossen ist, sind Sie bereit.
 
-   ![Azure-Speicher](./images/06azuresubscriptionok.png)
+   ![Azure-Speicher](./images/06azuresubscriptionok.png){zoomable="yes"}
 
 ## 1.1.2.2 Azure-Speicherkonto erstellen
 
 1. Suchen Sie nach `storage account` und wählen Sie **Speicherkonten** aus.
 
-   ![Azure-Speicher](./images/azs1.png)
+   ![Azure-Speicher](./images/azs1.png){zoomable="yes"}
 
 1. Wählen Sie **+ Erstellen** aus.
 
-![Azure-Speicher](./images/azs2.png)
+   ![Azure-Speicher](./images/azs2.png){zoomable="yes"}
 
 1. Wählen Sie Ihr **Abonnement** und wählen (oder erstellen) Sie eine **Ressourcengruppe**.
 
@@ -59,73 +59,73 @@ Erfahren Sie, wie Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefiniert
 
 1. Wählen Sie **Überprüfen + Erstellen** aus.
 
-   ![Azure-Speicher](./images/azs3.png)
+   ![Azure-Speicher](./images/azs3.png){zoomable="yes"}
 
 1. Wählen Sie **Erstellen** aus.
 
-   ![Azure-Speicher](./images/azs4.png)
+   ![Azure-Speicher](./images/azs4.png){zoomable="yes"}
 
 1. Wählen Sie nach der Bestätigung **Zur Ressource wechseln** aus.
 
-       ![Azure Storage](./images/azs5.png)
-   
-Ihr Azure-Speicherkonto ist jetzt einsatzbereit.
+   ![Azure-Speicher](./images/azs5.png){zoomable="yes"}
 
-    ![Azure Storage](./images/azs6.png)
+   Ihr Azure-Speicherkonto ist jetzt einsatzbereit.
+
+   ![Azure-Speicher](./images/azs6.png){zoomable="yes"}
 
 1. Wählen Sie **Datenspeicher** aus und navigieren Sie dann zu **Container**. Wählen Sie **+ Container**.
 
-   ![Azure-Speicher](./images/azs7.png)
+   ![Azure-Speicher](./images/azs7.png){zoomable="yes"}
 
 1. Verwenden Sie `--aepUserLdap--`für den Namen und wählen Sie **Erstellen**.
 
-   ![Azure-Speicher](./images/azs8.png)
+   ![Azure-Speicher](./images/azs8.png){zoomable="yes"}
 
    Ihr Container kann jetzt verwendet werden.
 
-   ![Azure-Speicher](./images/azs9.png)
+   ![Azure-Speicher](./images/azs9.png){zoomable="yes"}
 
 ## 1.1.2.3 Installieren von Azure Storage Explorer
 
 1. [Laden Sie den Microsoft Azure Storage Explorer herunter, um Ihre Dateien zu verwalten](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Wählen Sie die richtige Version für Ihr Betriebssystem aus, laden Sie sie herunter und installieren Sie sie.
 
-   ![Azure-Speicher](./images/az10.png)
+   ![Azure-Speicher](./images/az10.png){zoomable="yes"}
 
 1. Öffnen Sie die Anwendung und wählen Sie **Mit Azure anmelden** aus.
 
-   ![Azure-Speicher](./images/az11.png)
+   ![Azure-Speicher](./images/az11.png){zoomable="yes"}
 
 1. Wählen Sie **Abonnement** aus.
 
-   ![Azure-Speicher](./images/az12.png)
+   ![Azure-Speicher](./images/az12.png){zoomable="yes"}
 
 1. Wählen Sie **Azure** und dann **Weiter** aus.
 
-   ![Azure-Speicher](./images/az13.png)
+   ![Azure-Speicher](./images/az13.png){zoomable="yes"}
 
 1. Wählen Sie Ihr Microsoft Azure-Konto aus und schließen Sie den Authentifizierungsprozess ab.
 
-   ![Azure-Speicher](./images/az14.png)
+   ![Azure-Speicher](./images/az14.png){zoomable="yes"}
 
    Nach der Authentifizierung wird diese Meldung angezeigt.
 
-   ![Azure-Speicher](./images/az15.png)
+   ![Azure-Speicher](./images/az15.png){zoomable="yes"}
 
 1. Zurück in der Microsoft Azure Storage Explorer-App, wählen Sie Ihr Abonnement und dann **Explorer öffnen**.
 
->[!NOTE]
->
->Wenn Ihr Konto nicht angezeigt wird, klicken Sie auf das **Zahnradsymbol** neben Ihrer E-Mail-Adresse und wählen Sie **Filter aufheben**.
+   >[!NOTE]
+   >
+   >Wenn Ihr Konto nicht angezeigt wird, klicken Sie auf das **Zahnradsymbol** neben Ihrer E-Mail-Adresse und wählen Sie **Filter aufheben**.
 
-    ![Azure Storage](./images/az16.png)
+   ![Azure-Speicher](./images/az16.png){zoomable="yes"}
 
-Ihr Speicherkonto wird unter **Speicherkonten** angezeigt.
+   Ihr Speicherkonto wird unter **Speicherkonten** angezeigt.
 
-    ![Azure Storage](./images/az17.png)
+   ![Azure-Speicher](./images/az17.png){zoomable="yes"}
 
 1. Öffnen Sie **Blob-Container** und wählen Sie dann den Container aus, den Sie in der vorherigen Übung erstellt haben.
 
-   ![Azure-Speicher](./images/az18.png)
+   ![Azure-Speicher](./images/az18.png){zoomable="yes"}
 
 ## 1.1.2.4 Manueller Datei-Upload und Verwendung einer Grafikdatei als Stilreferenz
 
@@ -135,36 +135,36 @@ Ihr Speicherkonto wird unter **Speicherkonten** angezeigt.
 
    Nach dem Hochladen wird sie in Ihrem Container angezeigt:
 
-   ![Azure-Speicher](./images/az19.png)
+   ![Azure-Speicher](./images/az19.png){zoomable="yes"}
 
 1. Klicken Sie mit der rechten Maustaste auf `gradient.jpg` und wählen Sie **Freigegebene Zugriffssignatur abrufen**.
 
-   ![Azure-Speicher](./images/az20.png)
+   ![Azure-Speicher](./images/az20.png){zoomable="yes"}
 
 1. Unter **Berechtigungen** ist nur **Lesen** erforderlich. Wählen Sie **Erstellen** aus.
 
-   ![Azure-Speicher](./images/az21.png)
+   ![Azure-Speicher](./images/az21.png){zoomable="yes"}
 
 1. Kopieren Sie Ihre vordefinierte URL für diese Bilddatei für die nächste API-Anfrage auf Firefly.
 
-   ![Azure-Speicher](./images/az22.png)
+   ![Azure-Speicher](./images/az22.png){zoomable="yes"}
 
 1. Zurück in Postman öffnen Sie die Anfrage **POST - Firefly - T2I (styleref) V3**.
 Dieses wird in **Body** angezeigt.
 
-   ![Azure-Speicher](./images/az23.png)
+   ![Azure-Speicher](./images/az23.png){zoomable="yes"}
 
 1. Ersetzen Sie die Platzhalter-URL durch die vordefinierte URL für Ihre Bilddatei und wählen Sie **Senden**.
 
-   ![Azure-Speicher](./images/az24.png)
+   ![Azure-Speicher](./images/az24.png){zoomable="yes"}
 
 1. Öffnen Sie das neue Bild von Response Firefly Services in Ihrem Browser.
 
-   ![Azure-Speicher](./images/az25.png)
+   ![Azure-Speicher](./images/az25.png){zoomable="yes"}
 
    Mit `horses in a field` wird ein weiteres Bild angezeigt, aber dieses Mal ähnelt der Stil der Bilddatei, die Sie als Stilreferenz bereitgestellt haben.
 
-   ![Azure-Speicher](./images/az26.png)
+   ![Azure-Speicher](./images/az26.png){zoomable="yes"}
 
 ## Programmgesteuertes 1.1.2.5 von Dateien
 
@@ -172,7 +172,7 @@ Um den programmgesteuerten Datei-Upload mit Azure Storage-Konten zu verwenden, m
 
 1. Klicken Sie im Azure Storage Explorer mit der rechten Maustaste auf Ihren Container und wählen Sie **Freigegebene Zugriffssignatur abrufen**.
 
-   ![Azure-Speicher](./images/az27.png)
+   ![Azure-Speicher](./images/az27.png){zoomable="yes"}
 
 1. Wählen **unter** die folgenden erforderlichen Berechtigungen aus:
 
@@ -184,21 +184,21 @@ Um den programmgesteuerten Datei-Upload mit Azure Storage-Konten zu verwenden, m
 
 1. Wählen Sie **Erstellen** aus.
 
-   ![Azure-Speicher](./images/az28.png)
+   ![Azure-Speicher](./images/az28.png){zoomable="yes"}
 
 1. Nachdem Sie Ihr **SAS-Token** erhalten haben, wählen Sie **Kopieren** aus.
 
-   ![Azure-Speicher](./images/az29.png)
+   ![Azure-Speicher](./images/az29.png){zoomable="yes"}
 
    Verwenden Sie das **SAS-Token**, um eine Datei in Ihr Azure-Speicherkonto hochzuladen.
 
 1. Zurück in Postman, wählen Sie den Ordner **FF - Firefly Services Tech Insiders** und dann **…** im Ordner **Firefly** aus und klicken Sie dann auf **Anfrage hinzufügen**.
 
-   ![Azure-Speicher](./images/az30.png)
+   ![Azure-Speicher](./images/az30.png){zoomable="yes"}
 
 1. Ändern Sie den Namen der leeren Anfrage in **Datei in Azure-Speicherkonto hochladen** ändern Sie den **Anfragetyp** in **PUT** und fügen Sie die SAS-Token-URL in den URL-Abschnitt ein und wählen Sie dann **body**.
 
-   ![Azure-Speicher](./images/az31.png)
+   ![Azure-Speicher](./images/az31.png){zoomable="yes"}
 
 1. Wählen Sie anschließend eine Datei auf Ihrem lokalen Computer aus oder verwenden Sie eine andere Bilddatei [hier](./images/gradient2-p.jpg){target="_blank"}.
 
@@ -206,15 +206,15 @@ Um den programmgesteuerten Datei-Upload mit Azure Storage-Konten zu verwenden, m
 
 1. Wählen **Hauptteil** die Option **Binär** dann **Datei auswählen** und wählen Sie dann **+ Neue Datei vom lokalen Computer aus**.
 
-   ![Azure-Speicher](./images/az32.png)
+   ![Azure-Speicher](./images/az32.png){zoomable="yes"}
 
 1. Wählen Sie die gewünschte Datei aus und klicken Sie auf **Öffnen**.
 
-   ![Azure-Speicher](./images/az33.png)
+   ![Azure-Speicher](./images/az33.png){zoomable="yes"}
 
 1. Geben Sie als Nächstes den Dateinamen an, der in Ihrem Azure-Speicherkonto verwendet werden soll, indem Sie den Cursor vor das Fragezeichen **setzen?** in der URL wie folgt aus:
 
-   ![Azure-Speicher](./images/az34.png)
+   ![Azure-Speicher](./images/az34.png){zoomable="yes"}
 
    Die URL sieht derzeit wie folgt aus, muss jedoch geändert werden.
 
@@ -224,7 +224,7 @@ Um den programmgesteuerten Datei-Upload mit Azure Storage-Konten zu verwenden, m
 
    `https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
 
-   ![Azure-Speicher](./images/az34a.png)
+   ![Azure-Speicher](./images/az34a.png){zoomable="yes"}
 
 1. Gehen Sie dann zu **Headers**, um einen neuen Header wie den folgenden manuell hinzuzufügen:
 
@@ -233,19 +233,19 @@ Um den programmgesteuerten Datei-Upload mit Azure Storage-Konten zu verwenden, m
    | `x-ms-blob-type` | `BlockBlob` |
 
 
-   ![Azure-Speicher](./images/az35.png)
+   ![Azure-Speicher](./images/az35.png){zoomable="yes"}
 
 1. Wechseln Sie zu **Autorisierung** und legen Sie **Auth-Typ** auf **Keine Autorisierung** fest und wählen Sie **Senden**.
 
-   ![Azure-Speicher](./images/az36.png)
+   ![Azure-Speicher](./images/az36.png){zoomable="yes"}
 
 1. Als Nächstes wird diese leere Antwort in Postman angezeigt, was bedeutet, dass Ihr Datei-Upload gut ist.
 
-   ![Azure-Speicher](./images/az37.png)
+   ![Azure-Speicher](./images/az37.png){zoomable="yes"}
 
 1. Aktualisieren Sie im Azure Storage Explorer den Inhalt Ihres Ordners, und die neu hochgeladene Datei wird angezeigt.
 
-   ![Azure-Speicher](./images/az38.png)
+   ![Azure-Speicher](./images/az38.png){zoomable="yes"}
 
 ## 1.1.2.6 Verwendung der programmgesteuerten Datei
 
@@ -255,7 +255,7 @@ Um langfristig programmgesteuert Dateien aus Azure Storage-Konten lesen zu könn
 
 1. Gehen Sie zurück zum Azure Storage-Explorer, klicken Sie mit der rechten Maustaste auf Ihren Container und wählen Sie **Freigegebene Zugriffssignatur abrufen**.
 
-   ![Azure-Speicher](./images/az27.png)
+   ![Azure-Speicher](./images/az27.png){zoomable="yes"}
 
 1. Wählen **unter** die folgenden erforderlichen Berechtigungen aus:
 
@@ -266,11 +266,11 @@ Um langfristig programmgesteuert Dateien aus Azure Storage-Konten lesen zu könn
 
 1. Wählen Sie **Erstellen** aus.
 
-   ![Azure-Speicher](./images/az100.png)
+   ![Azure-Speicher](./images/az100.png){zoomable="yes"}
 
 1. Kopieren Sie die URL und schreiben Sie sie in eine Datei auf Ihrem Computer, um Ihr langfristiges SAS-Token mit Leseberechtigung zu erhalten.
 
-   ![Azure-Speicher](./images/az101.png)
+   ![Azure-Speicher](./images/az101.png){zoomable="yes"}
 
    Ihre URL sollte wie folgt aussehen:
 
@@ -286,7 +286,7 @@ Um langfristig programmgesteuert Dateien aus Azure Storage-Konten lesen zu könn
 
 1. Gehen Sie zurück zum Azure Storage-Explorer, klicken Sie mit der rechten Maustaste auf Ihren Container und wählen Sie **Freigegebene Zugriffssignatur abrufen**.
 
-   ![Azure-Speicher](./images/az27.png)
+   ![Azure-Speicher](./images/az27.png){zoomable="yes"}
 
 1. Wählen **unter** die folgenden erforderlichen Berechtigungen aus:
 
@@ -298,23 +298,23 @@ Um langfristig programmgesteuert Dateien aus Azure Storage-Konten lesen zu könn
 
 1. Wählen Sie **Erstellen** aus.
 
-   ![Azure-Speicher](./images/az102.png)
+   ![Azure-Speicher](./images/az102.png){zoomable="yes"}
 
 1. Kopieren Sie die URL und schreiben Sie sie in eine Datei auf Ihrem Computer, um Ihr langfristiges SAS-Token mit Leseberechtigung zu erhalten.
 
-   ![Azure-Speicher](./images/az103.png)
+   ![Azure-Speicher](./images/az103.png){zoomable="yes"}
 
    Ihre URL sollte wie folgt aussehen:
 
    `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
-Sie können aus der obigen URL mehrere Werte ableiten:
+   Sie können aus der obigen URL mehrere Werte ableiten:
 
-    - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-    - `AZURE_STORAGE_CONTAINER`: `vangeluw`
-     
-     
-- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&amp;st=2025-01-13T07%3A36%3A35Z&amp;se=2026-01-14T07%3A36%3A00Z&amp;sr=c&amp;sp=rl&amp;sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK_Uqh` `?sv=2023-01-03&amp;st=2025-01-13T07%3A38%3A59Z&amp;se=2026-01-14T07%3A38%3A00Z&amp;sr=c&amp;sp=acw&amp;sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovCoX
+   - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+   - `AZURE_STORAGE_CONTAINER`: `vangeluw`
+   - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+   - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
 ### Variablen in Postman
 
 >[!IMPORTANT]
@@ -334,7 +334,7 @@ Für zukünftige API-Interaktionen ändert sich hauptsächlich der Asset-Name, w
 
 1. Wählen Sie in Postman **Umgebungen**, öffnen Sie **Alle Variablen** und wählen Sie **Umgebung**.
 
-   ![Azure-Speicher](./images/az104.png)
+   ![Azure-Speicher](./images/az104.png){zoomable="yes"}
 
 1. Erstellen Sie diese 4 Variablen in der angezeigten Tabelle und geben Sie für die Spalten **Anfangswert** und **Aktueller Wert** Ihre spezifischen persönlichen Werte ein.
 
@@ -345,13 +345,13 @@ Für zukünftige API-Interaktionen ändert sich hauptsächlich der Asset-Name, w
 
 1. Wählen Sie **Speichern** aus.
 
-   ![Azure-Speicher](./images/az105.png)
+   ![Azure-Speicher](./images/az105.png){zoomable="yes"}
 
    In einer der vorherigen Übungen sah der **Body** Ihrer Anfrage **Firefly - T2I (styleref) V3** wie folgt aus:
 
    `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
-   ![Azure-Speicher](./images/az24.png)
+   ![Azure-Speicher](./images/az24.png){zoomable="yes"}
 
 1. Ändern Sie die URL in:
 
@@ -359,11 +359,11 @@ Für zukünftige API-Interaktionen ändert sich hauptsächlich der Asset-Name, w
 
 1. Wählen Sie **Senden** aus, um die vorgenommenen Änderungen zu testen.
 
-   ![Azure-Speicher](./images/az106.png)
+   ![Azure-Speicher](./images/az106.png){zoomable="yes"}
 
    Wenn die Variablen richtig konfiguriert waren, wird eine Bild-URL zurückgegeben.
 
-   ![Azure-Speicher](./images/az107.png)
+   ![Azure-Speicher](./images/az107.png){zoomable="yes"}
 
 1. Öffnen Sie die Bild-URL, um Ihr Bild zu überprüfen.
 
