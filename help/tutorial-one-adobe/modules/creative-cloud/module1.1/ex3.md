@@ -1,12 +1,12 @@
 ---
 title: Arbeiten mit Photoshop-APIs
-description: Erfahren Sie, wie Sie mit den Photoshop-APIs und Firefly-Services arbeiten
+description: Erfahren Sie, wie Sie mit den Photoshop-APIs und Firefly Services arbeiten
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # 1.1.3 Arbeiten mit Photoshop-APIs
 
-Erfahren Sie, wie Sie mit den Photoshop-APIs und Firefly-Services arbeiten.
+Erfahren Sie, wie Sie mit den Photoshop-APIs und Firefly Services arbeiten.
 
 ## 1.1.3.1 Aktualisieren der Adobe I/O-Integration
 
 1. Navigieren Sie zu [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
-![Neue Integration Adobe I/O](./images/iohome.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/iohome.png){zoomable="yes"}
 
 1. Navigieren Sie **Projekte** und wählen Sie das Projekt aus, das Sie in der vorherigen Übung erstellt haben. Diese Übung heißt `--aepUserLdap-- Firefly`.
 
@@ -31,9 +31,9 @@ Erfahren Sie, wie Sie mit den Photoshop-APIs und Firefly-Services arbeiten.
 
 ![Azure-Speicher](./images/ps2.png){zoomable="yes"}
 
-1. Wählen Sie **Creative Cloud** und **Photoshop - Firefly Services** aus. Klicken Sie auf **Weiter**.
+1. Wählen Sie **Creative Cloud** und dann Photoshop - Firefly Services **aus**. Klicken Sie auf **Weiter**.
 
-![Azure-Speicher](./images/ps3.png){zoomable="yes"}
+![Azure Storage](./images/ps3.png){zoomable="yes"}
 
 1. Klicken Sie auf **Weiter**.
 
@@ -41,7 +41,7 @@ Erfahren Sie, wie Sie mit den Photoshop-APIs und Firefly-Services arbeiten.
 
 Als Nächstes müssen Sie ein Produktprofil auswählen, das definiert, welche Berechtigungen für diese Integration verfügbar sind.
 
-1. Wählen Sie **Standardkonfiguration für Firefly-**) und **Standardkonfiguration für Creative Cloud-Automatisierungsdienste** aus.
+1. Wählen Sie **Standardkonfiguration für Firefly** und **Standardkonfiguration für Creative Cloud-Automatisierungsdienste** aus.
 
 1. Wählen Sie **Konfigurierte API speichern**.
 
@@ -51,11 +51,11 @@ Ihr Adobe I/O-Projekt wurde jetzt aktualisiert, um mit Photoshop- und Firefly Se
 
 ![Azure-Speicher](./images/ps6.png){zoomable="yes"}
 
-## Programmgesteuerte Interaktion 1.1.3.2 PSD-Dateien
+## Programmgesteuerte Interaktion von 1.1.3.2 mit einer PSD-Datei
 
 >[!IMPORTANT]
 >
->Wenn Sie Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
+>Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
 
 1. Laden Sie [Citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} auf Ihren Desktop herunter.
 
@@ -67,7 +67,7 @@ Im Bereich **Ebenen** hat der Designer der Datei jeder Ebene einen eindeutigen N
 
 Senden wir Ihre erste API-Anfrage an Photoshop-APIs.
 
-1. Bevor Sie API-Anfragen an Photoshop senden können, müssen Sie sich in Postman beim Adobe I/O authentifizieren. Öffnen Sie die vorherige Anfrage mit dem Namen **POST - Zugriffstoken abrufen**.
+1. Bevor Sie API-Anfragen an Photoshop senden können, müssen Sie sich in Postman bei Adobe I/O authentifizieren. Öffnen Sie die vorherige Anfrage mit dem Namen **POST - Zugriffs-Token abrufen**.
 
 1. Wechseln Sie zu **Parameter** und überprüfen Sie, ob der Parameter **Umfang** ordnungsgemäß festgelegt ist. Der **Wert** für **Umfang** sollte wie folgt aussehen:
 
@@ -93,7 +93,7 @@ Sie sollten die Antwort erhalten &quot;**zur Photoshop-API!**.
 
 ![Azure-Speicher](./images/ps11.png){zoomable="yes"}
 
-Als Nächstes müssen Sie die PSD-Datei **Citisignal-fiber.psd** in Ihr Speicherkonto hochladen, um programmatisch mit ihr zu interagieren. Sie können dies manuell tun, indem Sie es mit dem Azure Storage Explorer per Drag-and-Drop in Ihren Container ziehen. Diesmal sollten Sie es jedoch über die API tun.
+Als Nächstes müssen Sie die PSD-Datei **Citisignal-fiber.psd** in Ihr -Speicherkonto hochladen, um programmatisch mit ihr zu interagieren. Sie können dies manuell tun, indem Sie es mit dem Azure Storage Explorer per Drag-and-Drop in Ihren Container ziehen. Diesmal sollten Sie es jedoch über die API tun.
 
 ### PSD in Azure hochladen
 
@@ -160,13 +160,13 @@ In der Antwort wird jetzt ein Link angezeigt. Da es manchmal einige Zeit dauern 
 
 Ihr Bildschirm sollte wie folgt aussehen. Derzeit ist der Status auf **Ausstehend** festgelegt, was bedeutet, dass der Prozess noch nicht abgeschlossen ist.
 
-![Azure-Speicher](./images/ps19.png){zoomable="yes"}
+![Azure Storage](./images/ps19.png){zoomable="yes"}
 
-1. Wählen Sie Mehrere Male senden auf **Photoshop - PS-Status abrufen**, bis sich der Status auf &quot;**&quot;**. Dies kann einige Minuten dauern.
+1. Wählen Sie noch ein paar Mal auf **Photoshop - PS Status** abrufen aus, bis sich der Status in **&quot;Erfolgreich&quot;** ändert. Dies kann einige Minuten dauern.
 
-Wenn die Antwort verfügbar ist, können Sie sehen, dass die JSON-Datei Informationen zu allen Ebenen der PSD-Datei enthält. Dies ist eine nützliche Information, da Dinge wie der Ebenenname oder die Ebenenkennung identifiziert werden können.
+Wenn die Antwort verfügbar ist, können Sie sehen, dass die JSON-Datei Informationen zu allen Ebenen der PSD-Datei enthält. Dies ist eine nützliche Information, da Dinge liken den Layer-Namen oder die Layer-ID identifiziert werden können.
 
-![Azure-Speicher](./images/ps20.png){zoomable="yes"}
+![Azure Storage](./images/ps20.png){zoomable="yes"}
 
 Suchen Sie beispielsweise nach dem `2048x2048-cta`. Ihr Bildschirm sollte wie folgt aussehen:
 
@@ -239,8 +239,8 @@ Diese Datei wird auch in Ihrem Container mit dem Azure Storage-Explorer angezeig
 
 ## Nächste Schritte
 
-Wechseln Sie zur [Firefly-API für benutzerdefinierte Modelle](./ex4.md){target="_blank"}
+Zur [Firefly Custom Models-API](./ex4.md){target="_blank"}
 
-Zurück zu [Übersicht über Adobe Firefly-Services](./firefly-services.md){target="_blank"}
+Zurück zu [Übersicht über Adobe Firefly Services](./firefly-services.md){target="_blank"}
 
 Zurück zu [Alle Module](./../../../overview.md){target="_blank"}
