@@ -1,12 +1,12 @@
 ---
 title: Firefly Custom Models-API
-description: Arbeiten mit der Firefly-API für benutzerdefinierte Modelle
+description: Arbeiten mit der Firefly Custom Models-API
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0e9d1b5866d789ca2693d9c1a6ef7119c25ed009
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Nach 20-30 Minuten ist Ihr Modell jetzt trainiert und kann veröffentlicht werde
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm14.png){zoomable="yes"}
 
-Klicken Sie erneut auf **** Publish.
+Klicken **erneut auf** Veröffentlichen“.
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm15.png){zoomable="yes"}
 
@@ -100,9 +100,9 @@ Anschließend sehen Sie die Beispielaufforderung, die Sie vor der Ausführung ei
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3 Benutzerdefiniertes Modell für Firefly Services-API für benutzerdefinierte Modelle aktivieren
+## 1.1.4.3 Benutzerdefiniertes Modell für die Firefly Services-API für benutzerdefinierte Modelle aktivieren
 
-Sobald Ihr benutzerdefiniertes Modell trainiert wurde, kann es auch über die API verwendet werden. In Übung 1.1.1 haben Sie Ihr Adobe I/O-Projekt bereits für die Interaktion mit Firefly-Services über die API konfiguriert.
+Sobald Ihr benutzerdefiniertes Modell trainiert wurde, kann es auch über die API verwendet werden. In Übung 1.1.1 haben Sie Ihr Adobe I/O-Projekt bereits für die Interaktion mit Firefly Services über die API konfiguriert.
 
 Navigieren Sie zu [https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train). Klicken Sie auf das benutzerdefinierte Modell, um es zu öffnen.
 
@@ -112,7 +112,7 @@ Klicken Sie auf die 3 Punkte **…** und dann auf **Freigeben**.
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm20.png){zoomable="yes"}
 
-Um auf ein benutzerdefiniertes Firefly-Modell zugreifen zu können, muss das benutzerdefinierte Modell für die (ID **technischen Kontos)** Adobe I/O-Projekts freigegeben werden.
+Um auf ein benutzerdefiniertes Firefly-Modell zugreifen zu können, muss das benutzerdefinierte Modell für die **ID des technischen Kontos** unseres Adobe I/O-Projekts freigegeben werden.
 
 Um Ihre **ID des technischen Kontos** abzurufen, navigieren Sie zu [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects). Klicken Sie, um Ihr Projekt mit dem Namen `--aepUserLdap-- Firefly` zu öffnen.
 
@@ -134,13 +134,13 @@ Die **ID des technischen Kontos** sollte jetzt in der Lage sein, auf das benutze
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm22.png){zoomable="yes"}
 
-## 1.1.4.4 Interaktion mit der Firefly Services Custom Models-API
+## Interaktion 1.1.4.4 Firefly Services mit der API für benutzerdefinierte Modelle
 
 >[!IMPORTANT]
 >
->Wenn Sie Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
+>Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
 
-In Übung 1.1.1 Erste Schritte mit Firefly-Services haben Sie diese Datei ([postman-ff.zip](./../../../assets/postman/postman-ff.zip) auf Ihren lokalen Desktop heruntergeladen und anschließend diese Sammlung in Postman importiert.
+In Übung 1.1.1 Erste Schritte mit Firefly Services haben Sie diese Datei ([postman-ff.zip](./../../../assets/postman/postman-ff.zip) auf Ihren lokalen Desktop heruntergeladen und anschließend diese Sammlung in Postman importiert.
 
 Öffnen Sie Postman und wechseln Sie zum Ordner **FF - Custom Models API**.
 
@@ -188,4 +188,4 @@ Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Kehren Sie zurück zu [Arbeiten mit Photoshop-APIs](./ex3.md){target="_blank"}
 
-Zurück zu [Übersicht über Adobe Firefly-Services](./firefly-services.md){target="_blank"}
+Zurück zu [Übersicht über Adobe Firefly Services](./firefly-services.md){target="_blank"}

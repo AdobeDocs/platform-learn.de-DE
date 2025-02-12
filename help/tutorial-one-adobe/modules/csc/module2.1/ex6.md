@@ -4,20 +4,20 @@ description: AEM CS - MarTech-Plug-in
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
-# 2.1.6 AEM-Edge Delivery Services MarTech-Plug-in
+# 2.1.6 AEM Edge Delivery Services MarTech-Plug-in
 
 Mit dem AEM MarTech-Plug-in können Sie schnell einen vollständigen MarTech-Stack für Ihr AEM-Projekt einrichten.
 
 >[!NOTE]
 >
->Dieses Plug-in steht Kunden derzeit in Zusammenarbeit mit AEM Engineering über Co-Innovation-Projekte zur Verfügung. Weitere Informationen finden Sie unter [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
+>Dieses Plug-in steht Kunden derzeit in Zusammenarbeit mit AEM Engineering über Co-Innovationsprojekte zur Verfügung. Weitere Informationen finden Sie unter [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
 
 ## 2.1.6.1 Hinzufügen des Plug-ins zu Ihrem Repository
 
@@ -28,7 +28,7 @@ Navigieren Sie zu dem Ordner, den Sie für Ihr GitHub-Repository **Citisignal** 
 Sie werden es dann sehen. Fügen Sie den folgenden Befehl ein und drücken Sie **enter**.
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 Sie sollten das dann sehen.
@@ -171,7 +171,7 @@ Wechseln Sie im linken Menü zu **Umgebungen** und klicken Sie dann auf das **In
 
 ![AEMCS](./images/scriptsvar4.png){zoomable="yes"}
 
-Sie finden dann die URL, die Sie benötigen, aber sie befindet sich in einem HTML-`<script></script>`-Tag. Kopieren Sie nur das Teil, das mit `https` beginnt, bis `.min.js`.
+Anschließend finden Sie die URL, die Sie benötigen, sie befindet sich jedoch in einem HTML `<script></script>`-Tag. Kopieren Sie nur das Teil, das mit `https` beginnt, bis `.min.js`.
 
 ![AEMCS](./images/scriptsvar5.png){zoomable="yes"}
 
@@ -323,7 +323,7 @@ Navigieren Sie zu [https://experience.adobe.com/#/data-collection/](https://expe
 
 ![AEMCS](./images/acdl3.png){zoomable="yes"}
 
-Navigieren Sie zu **Erweiterungen**, zu **Katalog**. Klicken Sie auf die Erweiterung **Adobe Client-Datenschicht** und dann auf **Installieren**.
+Navigieren Sie zu **Erweiterungen**, zu **Katalog**. Klicken Sie auf die Erweiterung **Adobe Client Data Layer** und dann auf **Installieren**.
 
 ![AEMCS](./images/acdl4.png){zoomable="yes"}
 
@@ -341,7 +341,7 @@ Wechseln Sie zu **Veröffentlichungsfluss** und öffnen Sie Ihre **Main**-Biblio
 
 Ihre Änderungen werden jetzt bereitgestellt.
 
-## 2.1.6.5 Senden von Daten an das Adobe Experience Platform-Edge Network
+## 2.1.6.5 Senden von Daten an Adobe Experience Platform Edge Network
 
 Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal--XXX.aem.page/us/en` und/oder `main--citisignal--XXX.aem.live/us/en` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
 

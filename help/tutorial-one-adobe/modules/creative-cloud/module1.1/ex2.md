@@ -1,21 +1,21 @@
 ---
 title: Optimieren des Firefly-Prozesses mit Microsoft Azure und vordefinierten URLs
-description: Erfahren Sie, wie Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefinierten URLs optimieren können.
+description: Erfahren Sie, wie Sie Ihren Firefly-Prozess mithilfe von Microsoft Azure und vordefinierten URLs optimieren können
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: bb4b760335fa41b70a1693546047b5bcdfb9f5f2
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
 
 ---
 
-# 1.1.2 Optimieren Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefinierten URLs
+# 1.1.2 Optimieren Sie Ihren Firefly-Prozess mithilfe von Microsoft Azure und vordefinierten URLs
 
-Erfahren Sie, wie Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefinierten URLs optimieren können.
+Erfahren Sie, wie Sie Ihren Firefly-Prozess mithilfe von Microsoft Azure und vordefinierten URLs optimieren können.
 
 ## 1.1.2.1 Erstellen eines Azure-Abonnements
 
@@ -77,7 +77,7 @@ Erfahren Sie, wie Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefiniert
 
    ![Azure-Speicher](./images/azs7.png){zoomable="yes"}
 
-1. Verwenden Sie `--aepUserLdap--`für den Namen und wählen Sie **Erstellen**.
+1. Verwenden Sie `--aepUserLdap--` für den Namen und wählen Sie **Erstellen**.
 
    ![Azure-Speicher](./images/azs8.png){zoomable="yes"}
 
@@ -145,7 +145,7 @@ Erfahren Sie, wie Sie Ihren Firefly-Prozess mit Microsoft Azure und vordefiniert
 
    ![Azure-Speicher](./images/az21.png){zoomable="yes"}
 
-1. Kopieren Sie Ihre vordefinierte URL für diese Bilddatei für die nächste API-Anfrage auf Firefly.
+1. Kopieren Sie Ihre vordefinierte URL für diese Bilddatei für die nächste API-Anfrage an Firefly.
 
    ![Azure-Speicher](./images/az22.png){zoomable="yes"}
 
@@ -158,7 +158,7 @@ Dieses wird in **Body** angezeigt.
 
    ![Azure-Speicher](./images/az24.png){zoomable="yes"}
 
-1. Öffnen Sie das neue Bild von Response Firefly Services in Ihrem Browser.
+1. Öffnen Sie die Antwort Firefly Services Neues Bild in Ihrem Browser.
 
    ![Azure-Speicher](./images/az25.png){zoomable="yes"}
 
@@ -319,7 +319,7 @@ Um langfristig programmgesteuert Dateien aus Azure Storage-Konten lesen zu könn
 
 >[!IMPORTANT]
 >
->Wenn Sie Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
+>Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
 
 Wie Sie im obigen Abschnitt sehen können, gibt es einige allgemeine Variablen sowohl im Lese- als auch im Schreib-Token.
 
@@ -347,7 +347,7 @@ Für zukünftige API-Interaktionen ändert sich hauptsächlich der Asset-Name, w
 
    ![Azure-Speicher](./images/az105.png){zoomable="yes"}
 
-   In einer der vorherigen Übungen sah der **Body** Ihrer Anfrage **Firefly - T2I (styleref) V3** wie folgt aus:
+   In einer der vorherigen Übungen sah der **Hauptteil** Ihrer Anfrage **Firefly - T2I (styleref) V3** wie folgt aus:
 
    `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
@@ -373,6 +373,6 @@ Für zukünftige API-Interaktionen ändert sich hauptsächlich der Asset-Name, w
 
 Navigieren Sie zu [Arbeiten mit Photoshop-APIs](./ex3.md){target="_blank"}
 
-Zurück zu [Übersicht über Adobe Firefly-Services](./firefly-services.md){target="_blank"}
+Zurück zu [Übersicht über Adobe Firefly Services](./firefly-services.md){target="_blank"}
 
 Zurück zu [Alle Module](./../../../overview.md){target="_blank"}
