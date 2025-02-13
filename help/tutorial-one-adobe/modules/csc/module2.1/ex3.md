@@ -4,7 +4,7 @@ description: Einrichten der AEM CS-Umgebung
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0a0909b639e34d92266a326c3338d7f17db7ecc6
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -77,7 +77,7 @@ Es gibt drei Teile der URL, die aktualisiert werden müssen
 
 `https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
 
-XXX sollte durch die URL Ihrer AEM CS Author-Umgebung ersetzt werden.
+XXX sollte durch die URL Ihrer AEM CS-Autorenumgebung ersetzt werden.
 
 JJJJ sollte durch Ihr GitHub-Benutzerkonto ersetzt werden.
 
@@ -186,7 +186,7 @@ Nach einigen Minuten wird Ihr Paket installiert.
 Sie können dieses Fenster jetzt schließen.
 
 
-## 2.1.3.4 von Publish CitiSignal-Assets
+## 2.1.3.4 Veröffentlichen von CitiSignal-Assets
 
 Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Klicken Sie auf **Programm**, um es zu öffnen.
 
@@ -200,7 +200,7 @@ Klicken Sie **Mit Adobe anmelden**.
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
-Anschließend wird Ihre Autorenumgebung angezeigt. Klicken Sie auf **Sites**.
+Anschließend wird Ihre Autorenumgebung angezeigt. Auf **Assets**.
 
 ![AEMCS](./images/aemcsassets1.png){zoomable="yes"}
 
