@@ -9,9 +9,9 @@ duration: 143
 last-substantial-update: 2024-06-14T00:00:00Z
 jira: KT-15749
 exl-id: 15b9a4e3-0971-4460-859b-45118d382f64
-source-git-commit: f02bea4a92675e284be7ca86a0fcf7c17d296482
+source-git-commit: 21e6e5a29edbd5e4c74a4f5978d54b43cafc2c03
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '494'
 ht-degree: 6%
 
 ---
@@ -28,9 +28,8 @@ Diese Ressourcen helfen Ihnen beim Einrichten des KI-Assistenten und beim Kennen
 
 <!-- CARDS
 * access.md
-* validate-responses.md
 * discoverability-panel.md
-* security-overview.md
+* validate-responses.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -39,7 +38,7 @@ Diese Ressourcen helfen Ihnen beim Einrichten des KI-Assistenten und beim Kennen
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Zugriff auf den KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1739381809946" alt="Zugriff auf den KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1739486446641" alt="Zugriff auf den KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -57,35 +56,12 @@ Diese Ressourcen helfen Ihnen beim Einrichten des KI-Assistenten und beim Kennen
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Validate responses from AI Assistant">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="validate-responses.md" title="Validieren von Antworten vom KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1739381809934" alt="Validieren von Antworten vom KI-Assistenten"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="validate-responses.md" target="_blank" rel="referrer" title="Validieren von Antworten vom KI-Assistenten">Validieren von Antworten vom KI-Assistenten</a>
-                    </p>
-                    <p class="is-size-6">Erfahren Sie, wie Sie die Antworten überprüfen und validieren, die der KI-Assistent in Adobe Experience Platform bereitstellt.</p>
-                </div>
-                <a href="validate-responses.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
-                </a>
-            </div>
-        </div>
-    </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Use the discoverability panel in AI Assistant">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="Verwenden des Auffindbarkeitsbereichs im KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1739381809959" alt="Verwenden des Auffindbarkeitsbereichs im KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1739486446652" alt="Verwenden des Auffindbarkeitsbereichs im KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -103,12 +79,12 @@ Diese Ressourcen helfen Ihnen beim Einrichten des KI-Assistenten und beim Kennen
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Security overview of AI Assistant">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Validate responses from AI Assistant">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="security-overview.md" title="Sicherheitsübersicht des KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1739381809919" alt="Sicherheitsübersicht des KI-Assistenten"
+                    <a href="validate-responses.md" title="Validieren von Antworten vom KI-Assistenten" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1739486446628" alt="Validieren von Antworten vom KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -116,11 +92,11 @@ Diese Ressourcen helfen Ihnen beim Einrichten des KI-Assistenten und beim Kennen
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="security-overview.md" target="_blank" rel="referrer" title="Sicherheitsübersicht des KI-Assistenten">Sicherheitsübersicht des KI-Assistenten</a>
+                        <a href="validate-responses.md" target="_blank" rel="referrer" title="Validieren von Antworten vom KI-Assistenten">Validieren von Antworten vom KI-Assistenten</a>
                     </p>
-                    <p class="is-size-6">Dies ist ein Überblick über die Sicherheitsfunktionen für den KI-Assistenten, der auf dem Sicherheitsdatenblatt basiert.</p>
+                    <p class="is-size-6">Erfahren Sie, wie Sie die Antworten überprüfen und validieren, die der KI-Assistent in Adobe Experience Platform bereitstellt.</p>
                 </div>
-                <a href="security-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="validate-responses.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
                 </a>
             </div>
@@ -144,7 +120,7 @@ Der KI-Assistent ist ein nützliches Tool, um neue Produkte zu lernen oder schne
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="Verwenden des KI-Assistenten zur Verkürzung der Onboarding-Zeit" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1739381811116" alt="Verwenden des KI-Assistenten zur Verkürzung der Onboarding-Zeit"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1739486446837" alt="Verwenden des KI-Assistenten zur Verkürzung der Onboarding-Zeit"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +157,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="Abrufen operativer Einblicke mit dem KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1739381811248" alt="Abrufen operativer Einblicke mit dem KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1739486447052" alt="Abrufen operativer Einblicke mit dem KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -204,7 +180,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="KI-Assistent - Anwendungsfall für die Audience-Bereinigung" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1739381811234" alt="KI-Assistent - Anwendungsfall für die Audience-Bereinigung"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1739486447042" alt="KI-Assistent - Anwendungsfall für die Audience-Bereinigung"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +203,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="Wirkungsanalyse mit KI-Assistent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1739381811261" alt="Wirkungsanalyse mit KI-Assistent"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1739486447030" alt="Wirkungsanalyse mit KI-Assistent"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -240,6 +216,41 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
                     <p class="is-size-6">In diesem Video erfahren Sie, wie Sie mit dem KI-Assistenten in Adobe Experience Platform die Wirkungsanalyse effektiver gestalten können. Änderungen an freigegebenen Objekten wie Attributen und Audiences können Workflows für andere Teams stören, Prozesse verkomplizieren und wichtige Marketing-Maßnahmen gefährden.</p>
                 </div>
                 <a href="impact-analysis.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+## Sicherheit
+
+Erfahren Sie mehr über die Sicherheitsfunktionen im KI-Assistenten
+
+<!-- CARDS
+* security-overview.md
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Security overview of AI Assistant">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="security-overview.md" title="Sicherheitsübersicht des KI-Assistenten" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1739486447236" alt="Sicherheitsübersicht des KI-Assistenten"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="security-overview.md" target="_blank" rel="referrer" title="Sicherheitsübersicht des KI-Assistenten">Sicherheitsübersicht des KI-Assistenten</a>
+                    </p>
+                    <p class="is-size-6">Dies ist ein Überblick über die Sicherheitsfunktionen für den KI-Assistenten, der auf dem Sicherheitsdatenblatt basiert.</p>
+                </div>
+                <a href="security-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
                 </a>
             </div>
