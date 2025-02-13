@@ -4,7 +4,7 @@ description: Foundation - FAC - Erstellen von Schemata, Datenmodellen und Links
 kt: 5342
 doc-type: tutorial
 exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
-source-git-commit: 246bb91496104818f357848f41b79523b7771638
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 5%
@@ -31,7 +31,7 @@ Klicken Sie **linken Menü auf** Verknüpfte Datenbanken“. Klicken Sie dann au
 
 ![FAC](./images/fdb1.png)
 
-Als **label** verwenden Sie `--aepUserLdap-- - CitiSignal Snowflake` und wählen Sie für den Typ **Snowflake**.
+Verwenden **als** `--aepUserLdap-- - CitiSignal Snowflake` und wählen Sie für den Typ **Snowflake**.
 
 Unter „Details“ müssen Sie Ihre Anmeldedaten ausfüllen, die wie folgt aussehen:
 
@@ -39,7 +39,7 @@ Unter „Details“ müssen Sie Ihre Anmeldedaten ausfüllen, die wie folgt auss
 
 **Server**:
 
-Gehen Sie in Snowflake zu **Admin > Konten**. Klicken Sie auf die 3 **…** neben Ihrem Konto und dann auf **URLs verwalten**.
+Navigieren Sie in Snowflake zu **Admin > Konten**. Klicken Sie auf die 3 **…** neben Ihrem Konto und dann auf **URLs verwalten**.
 
 ![FAC](./images/fdburl1.png)
 
@@ -51,7 +51,7 @@ Sie werden es dann sehen. Kopieren Sie die **Aktuelle URL** und fügen Sie sie i
 **Password**: Das zuvor in Übung 1.3.1.1 erstellte Kennwort
 **Datenbank**: verwenden **CITISIGNAL**
 
-Am Ende sollte es also so sein. Klicken Sie **Verbindung testen**. Wenn der Test erfolgreich ist, klicken Sie auf **Funktionen bereitstellen**, um Funktionen auf der Snowflake zu erstellen, die für die Workflow-Engine erforderlich sind.
+Am Ende sollte es also so sein. Klicken Sie **Verbindung testen**. Wenn der Test erfolgreich war, klicken Sie auf **Funktionen bereitstellen**, um Funktionen auf der Snowflake-Seite zu erstellen, die für die Workflow-Engine erforderlich sind.
 
 Sobald die Verbindung erfolgreich getestet wurde und die Funktionen bereitgestellt sind, wird Ihre Konfiguration gespeichert.
 
@@ -71,13 +71,13 @@ Wählen Sie Ihre Federated Database aus und klicken Sie auf **+ Tabellen hinzuf�
 
 ![FAC](./images/fdb6.png)
 
-Sie werden es dann sehen. Wählen Sie die 5 Tabellen aus, die Sie zuvor in Snowflake erstellt haben:
+Sie werden es dann sehen. Wählen Sie die fünf Tabellen aus, die Sie zuvor in Snowflake erstellt haben:
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 Klicken Sie auf **Hinzufügen**.
 
@@ -98,7 +98,7 @@ Klicken Sie auf **Erstellen**.
 
 ![FAC](./images/fdb8.png)
 
-Sie werden es dann sehen. Sie können auf ein beliebiges Schema klicken und die Informationen überprüfen. Klicken Sie beispielsweise auf **CK_PERSONS**.
+Sie werden es dann sehen. Sie können auf ein beliebiges Schema klicken und die Informationen überprüfen. Klicken Sie beispielsweise auf **—aepUserLdap—_PERSONS**.
 
 ![FAC](./images/fdb9.png)
 
@@ -130,57 +130,57 @@ Wählen Sie Ihre Schemata aus und klicken Sie auf **Hinzufügen**.
 
 Sie werden es dann sehen. Klicken Sie auf **Speichern**.
 
-### `CK_USERS` – `CK_PERSONS`
+### `--aepUserLdap--_USERS` – `--aepUserLdap--_PERSONS`
 
 Sie können jetzt mit der Definition von Links zwischen Schemata beginnen. Um einen Link zu definieren, klicken Sie auf **Links erstellen**.
 
 ![FAC](./images/fdb16.png)
 
-Definieren wir zunächst die Relation zwischen dem `CK_USERS` und dem `CK_PERSONS`.
+Definieren wir zunächst die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_PERSONS`.
 
 Klicken Sie auf **Hinzufügen**.
 
 ![FAC](./images/fdb18.png)
 
 
-### `CK_HOUSEHOLDS` – `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` – `--aepUserLdap--_PERSONS`
 
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
 ![FAC](./images/fdb17.png)
 
-Als Nächstes definieren wir die Relation zwischen dem `CK_HOUSEHOLDS` und dem `CK_PERSONS`.
+Als Nächstes definieren wir die Relation zwischen dem `--aepUserLdap--_HOUSEHOLDS` und dem `--aepUserLdap--_PERSONS`.
 
 ![FAC](./images/fdb19.png)
 
-### `CK_USERS` – `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` – `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
 ![FAC](./images/fdb20.png)
 
-Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_MONTHLY_DATA_USAGE`.
+Als Nächstes definieren wir die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
 
 
-### `CK_USERS` – `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` – `--aepUserLdap--_HOUSEHOLDS`
 
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
 ![FAC](./images/fdb22.png)
 
-Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_HOUSEHOLDS`.
+Als Nächstes definieren wir die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
 
-### `CK_USERS` – `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` – `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren Link zu erstellen.
 
 ![FAC](./images/fdb24.png)
 
-Als Nächstes definieren wir die Relation zwischen dem `CK_USERS` und dem `CK_MOBILE_DATA_USAGE`.
+Als Nächstes definieren wir die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_MOBILE_DATA_USAGE`.
 
 ![FAC](./images/fdb25.png)
 

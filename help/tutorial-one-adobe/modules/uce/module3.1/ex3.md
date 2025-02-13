@@ -4,9 +4,9 @@ description: Foundation - FAC - Erstellen einer Verbundzusammensetzung
 kt: 5342
 doc-type: tutorial
 exl-id: dc044a26-f16a-491e-a795-4cd16f211256
-source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '494'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ Sie werden es dann sehen. Wählen Sie **Zielgruppe erstellen** aus. Klicken Sie 
 
 ![FAC](./images/fedcomp5.png)
 
-Wählen Sie das Schema **CK_HOUSEHOLDS** aus. Klicken Sie auf **Bestätigen**.
+Wählen Sie das Schema **—aepUserLdap—_HOUSEHOLDS** aus. Klicken Sie auf **Bestätigen**.
 
 ![FAC](./images/fedcomp6.png)
 
@@ -63,7 +63,7 @@ Wählen Sie das Attribut **ISELIGIBLEFORFIBER** Klicken Sie **Bestätigen**.
 
 ![FAC](./images/fedcomp9.png)
 
-Sie werden es dann sehen. Legen Sie das Feld **Wert** auf **True** fest. Klicken Sie **Berechnen**, um die Abfrage auf Snowflake zu pushen und eine Schätzung der Profile abzurufen, die jetzt qualifiziert sind.
+Sie werden es dann sehen. Legen Sie das Feld **Wert** auf **True** fest. Klicken Sie **Berechnen**, um die Abfrage an Snowflake zu senden und eine Schätzung der Profile abzurufen, die jetzt qualifiziert sind.
 
 ![FAC](./images/fedcomp10.png)
 
@@ -71,7 +71,7 @@ Klicken Sie dann erneut auf das Symbol **+** und anschließend erneut auf **Benu
 
 ![FAC](./images/fedcomp11.png)
 
-Die zweite hinzuzufügende Bedingung ist: `Is the user an existing CitiSignal Mobile subscriber?`. Die Antwort auf diese Frage besteht darin, die Beziehung zwischen dem Haushalt und dem Hauptkunden im Haushalt zu verwenden, die in einer anderen Tabelle definiert ist, **CK_PERSONS**. Sie können im Attributmenü mithilfe des Links **household2person** einen Drilldown durchführen.
+Die zweite hinzuzufügende Bedingung ist: `Is the user an existing CitiSignal Mobile subscriber?`. Die Antwort auf diese Frage ist die Verwendung der Beziehung zwischen dem Haushalt und dem Hauptkunden im Haushalt, die in einer anderen Tabelle definiert ist, **—aepUserLdap—_PERSONS**. Sie können im Attributmenü mithilfe des Links **household2person** einen Drilldown durchführen.
 
 ![FAC](./images/fedcomp12.png)
 
@@ -137,7 +137,9 @@ Klicken Sie auf **Speichern**.
 
 Deine Komposition ist jetzt fertig. Klicken Sie auf **Start**, um sie auszuführen.
 
-Die Abfrage wird jetzt nach unten in Snowflake verschoben, wo die Quelldaten abgefragt werden. Die Ergebnisse werden zurück in AEP verschoben, Quelldaten verbleiben jedoch im Snowflake.
+![FAC](./images/fedcomp21a.png)
+
+Die Abfrage wird jetzt nach unten an Snowflake gesendet, wo die Quelldaten abgefragt werden. Die Ergebnisse werden zurück in AEP verschoben, Quelldaten verbleiben jedoch in Snowflake.
 
 Die Zielgruppe wird jetzt ausgefüllt und die Zielgruppe kann aus dem AEP-Ökosystem heraus angesprochen werden.
 
