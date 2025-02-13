@@ -4,9 +4,9 @@ description: Foundation - Datenaufnahme - Datenaufnahme aus Offline-Quellen
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1562'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ In dieser Übung besteht das Ziel darin, externe Daten wie CRM-Daten in Platform
 - Erfahren Sie, wie Sie Testdaten erzeugen
 - Erfahren Sie, wie Sie CSV aufnehmen
 - Erfahren Sie, wie Sie die Web-Benutzeroberfläche für die Datenaufnahme über Workflows verwenden
-- Grundlegendes zu den Data Governance-Funktionen von Experience Platform
+- Die Data Governance-Funktionen von Experience Platform
 
 ## Ressourcen
 
@@ -53,6 +53,10 @@ In der Vorlage werden Sie die folgenden Felder bemerken:
 - Länder-Code
 - city
 - country
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 Alle diese Felder wurden definiert, um Daten zu generieren, die mit Platform kompatibel sind.
 
@@ -68,7 +72,9 @@ Wenn Ihre CSV-Datei fertig ist, können Sie mit der Aufnahme in AEP fortfahren.
 
 ### Überprüfen des Datensatzes
 
-Öffnen Sie [Adobe Experience Platform](https://experience.adobe.com/platform) und navigieren Sie zu **[!UICONTROL Datensätze]**.
+Navigieren Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+
+![Datenaufnahme](./images/home.png)
 
 Bevor Sie fortfahren, müssen Sie eine **[!UICONTROL Sandbox“]**. Die auszuwählende Sandbox hat den Namen ``--aepSandboxName--``.
 
@@ -115,8 +121,6 @@ Für jedes Schema muss ein benutzerdefinierter, primärer Deskriptor definiert s
 Sie können auch sehen, dass sich unsere primäre Identität in `--aepTenantId--.identification.core.crmId` befindet, verknüpft mit dem [!UICONTROL namespace] von **[!UICONTROL Demo System - CRMID]**.
 
 ![Datenaufnahme](./images/schema_descriptor.png)
-
-
 
 Jedes Schema und somit jeder Datensatz, der im [!UICONTROL Echtzeit-Kundenprofil“ verwendet werden soll] sollte über eine [!UICONTROL Primäre Kennung verfügen]. Diese [!UICONTROL Primäre Kennung] ist die von der Marke für einen Kunden in diesem Datensatz verwendete Kennung. Bei einem CRM-Datensatz kann es sich um die E-Mail-Adresse oder die CRM-ID handeln. Bei einem Callcenter-Datensatz kann es sich um die Mobiltelefonnummer eines Kunden handeln.
 
@@ -229,6 +233,24 @@ Das Source-Schemafeld **id** sollte mit dem Zielfeld **_id verknüpft**.
 Das Source-Schemafeld **last_name** sollte mit dem Zielfeld **person.name.lastName** verknüpft werden.
 
 ![Datenaufnahme](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+Das Source-Schemafeld **last_name** sollte mit dem Zielfeld **consents.marketing.email.val** verknüpft werden.
+
+![Datenaufnahme](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+Das Source-Schemafeld **last_name** sollte mit dem Zielfeld **consents.marketing.commercialEmail.val** verknüpft werden.
+
+![Datenaufnahme](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+Das Source-Schemafeld **last_name** sollte mit dem Zielfeld &quot;**.marketing.any.val“ verknüpft**.
+
+![Datenaufnahme](./images/cons3.png)
 
 Du solltest das jetzt haben. Klicken Sie auf **Fertigstellen**.
 
