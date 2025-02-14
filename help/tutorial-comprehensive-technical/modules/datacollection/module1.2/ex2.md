@@ -4,9 +4,9 @@ description: Foundation - Datenaufnahme - Konfigurieren von Schemata und Festleg
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3102'
 ht-degree: 4%
 
 ---
@@ -61,13 +61,9 @@ Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbo
 
 ![Datenaufnahme](./images/sb1.png)
 
-Klicken Sie in Adobe Experience Platform **[!UICONTROL Schemata]** im Menü links auf Ihrem Bildschirm. Sie sehen die Liste der verfügbaren [!UICONTROL Schemata].
+Klicken Sie in Adobe Experience Platform **[!UICONTROL Schemata]** im Menü links auf Ihrem Bildschirm. Sie sehen die Liste der verfügbaren [!UICONTROL Schemata]. Sie sollten ein neues Schema erstellen. Um ein neues Schema zu erstellen, klicken Sie auf **[!UICONTROL + Schema erstellen]**.
 
 ![Datenaufnahme](./images/menuschemas.png)
-
-Sie sollten ein neues Schema erstellen. Um ein neues Schema zu erstellen, klicken Sie auf **[!UICONTROL + Schema erstellen]**.
-
-![Datenaufnahme](./images/createschema.png)
 
 Wählen Sie **Manuell** und klicken Sie auf **Auswählen**.
 
@@ -156,8 +152,8 @@ Nachdem Sie auf die Schaltfläche **[!UICONTROL + Feld hinzufügen]** geklickt h
 
 Sie sollten jetzt die Informationen dieses neuen Feldes eingeben, indem Sie diese Objektdefinitionen verwenden:
 
-- Feldname: **[!UICONTROL identification]**
-- Anzeigename: **[!UICONTROL Identifikation]**
+- Feldname: **`--aepUserLdap--_identification`**
+- Anzeigename: **`--aepUserLdap--_identification`**
 - Typ: **[!UICONTROL Objekt]**
 - Feldergruppe: **`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -279,7 +275,7 @@ Ihr Schema ist jetzt so konfiguriert, dass es Teil des [!UICONTROL Echtzeit-Kund
 
 ![Datenaufnahme](./images/sureyps.png)
 
-### Was macht ein Kunde?
+## Was macht dieser Kunde?
 
 Erfasst die Antwort auf die Frage **Was macht dieser Kunde?** für Ihr Unternehmen erfolgt beispielsweise über eine Produktansicht auf einer Produktseite.
 
@@ -291,7 +287,7 @@ Wenn Sie also ein [!UICONTROL XDM-Schema] erstellen, um die Antwort auf zu erfas
 
 Um anzugeben, welche Art von Antworten auf diese Frage gegeben werden können, müssen Sie &quot;[!UICONTROL &quot; ]. [!UICONTROL Feldergruppen] sind Erweiterungen der Klasse [!UICONTROL ExperienceEvent] und haben sehr spezifische Konfigurationen. Beispielsweise gehören Informationen darüber, welche Art von Produkten ein Kunde angesehen oder zum Warenkorb hinzugefügt hat, zur [!UICONTROL Feldergruppe] **Commerce Details**.
 
-Zweitens muss Ihr Unternehmen entscheiden, wie Sie das Verhalten dieses Kunden identifizieren. Da wir über Interaktionen auf einer Website sprechen, ist es möglich, dass Ihr Unternehmen den Kunden kennt, aber es ist ebenso möglich, dass ein unbekannter, anonymer Besucher auf der Website aktiv ist. Wir können also keine Kennung wie eine E-Mail-Adresse verwenden. In diesem Fall entscheidet sich Ihr Unternehmen wahrscheinlich dafür, die [!UICONTROL Experience Cloud-ID (ECID)] als primäre Kennung zu verwenden.
+Zweitens muss Ihr Unternehmen entscheiden, wie Sie das Verhalten dieses Kunden identifizieren. Da wir über Interaktionen auf einer Website sprechen, ist es möglich, dass Ihr Unternehmen den Kunden kennt, aber es ist ebenso möglich, dass ein unbekannter, anonymer Besucher auf der Website aktiv ist. Wir können also keine Kennung wie eine E-Mail-Adresse verwenden. In diesem Fall entscheidet sich Ihr Unternehmen wahrscheinlich dafür, die [!UICONTROL Experience Cloud ID (ECID)] als primäre Kennung zu verwenden.
 
 Schließlich ist es wichtig, den Kanal zu unterscheiden, auf dem Daten erfasst wurden. In diesem Fall werden wir über Website-Interaktionen sprechen und das Schema, das definiert werden muss, muss widerspiegeln, **wo** die Interaktionsdaten erfasst wurden. Der Kanal spielt auch eine wichtige Rolle bei der Beeinflussung der erfassten Daten. Daher empfiehlt es sich, die Schemas für jede Kombination aus Kanal, primärer Kennung und erfasstem Datentyp zu definieren.
 
@@ -305,13 +301,9 @@ Bevor Sie fortfahren, müssen Sie eine **[!UICONTROL Sandbox“]**. Die [!UICONT
 
 ![Datenaufnahme](./images/sb1.png)
 
-Klicken Sie in Adobe Experience Platform **[!UICONTROL Schemata]** im Menü auf der linken Bildschirmseite und gehen Sie zu **Durchsuchen**.
+Klicken Sie in Adobe Experience Platform **[!UICONTROL Schemata]** im Menü auf der linken Bildschirmseite und gehen Sie zu **Durchsuchen**. Sie sollten ein neues Schema erstellen. Um ein neues Schema zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL + Schema erstellen]**.
 
 ![Datenaufnahme](./images/menuschemas.png)
-
-In [!UICONTROL Schemata] werden alle vorhandenen Schemata angezeigt. Sie sollten ein neues Schema erstellen. Um ein neues Schema zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL + Schema erstellen]**.
-
-![Datenaufnahme](./images/schemasee.png)
 
 Wählen Sie **Manuell** und klicken Sie auf **Auswählen**.
 
@@ -390,8 +382,8 @@ Nachdem Sie auf die Schaltfläche **+** geklickt haben, wird jetzt ein neues, ni
 
 Hier können Sie Ihr neues Feld definieren:
 
-- Feldname: **[!UICONTROL identification]**
-- Anzeigename: **[!UICONTROL Identifikation]**
+- Feldname: **`--aepUserLdap--_identification`**
+- Anzeigename: **`--aepUserLdap--_identification`**
 - Typ: **[!UICONTROL Objekt]**
 - Feldergruppe: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
