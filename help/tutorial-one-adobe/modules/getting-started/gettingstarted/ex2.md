@@ -4,16 +4,16 @@ description: Erste Schritte - Verwenden des Demosystems neben dem Setup Ihrer La
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 0%
+source-wordcount: '330'
+ht-degree: 1%
 
 ---
 
 # Verwenden des Demosystems Als Nächstes richten Sie Ihre Client-Eigenschaft für die Adobe Experience Platform-Datenerfassung ein
 
-Um die Lerninhalte in diesem Tutorial zu visualisieren und es Ihnen zu ermöglichen, Ihre Konfiguration in einer sicheren Umgebung zu testen, verwendet dieses Tutorial die Demo System Next-Tools von Adobe. Um dieses Tutorial optimal nutzen zu können, muss Ihre AEP-Instanz so konfiguriert sein, dass sie mit Demo System Next integriert wird.
+Um die in diesem Tutorial gewonnenen Erkenntnisse zu visualisieren und es Ihnen zu ermöglichen, Ihre Konfiguration in einer sicheren Umgebung zu testen, verwendet dieses Tutorial das Demo System Next von Adobe. Um dieses Tutorial optimal nutzen zu können, muss Ihre AEP-Instanz so konfiguriert sein, dass sie mit Demo System Next integriert wird.
 
 Sobald Sie Zugriff auf das Demosystem haben, fahren Sie mit den folgenden Schritten fort.
 
@@ -33,7 +33,7 @@ Klicken Sie anschließend auf **Starten**.
 
 ![DSN](./images/dsn2.png)
 
-Geben Sie im Popup einen Namen für Ihre Datenerfassungseigenschaften und Experience Builder-Projekte ein. Bitte verwenden Sie diese Namenskonvention: **Eine Adobe (TT/MM/JJJJ)**. Zu Ihrer Information: Ihr LDAP wird automatisch angehängt, Sie müssen es nicht selbst hinzufügen.
+Geben Sie im Popup einen Namen für Ihre Datenerfassungseigenschaften und Experience Builder-Projekte ein. Verwenden Sie diese Namenskonvention: **One Adobe (TT/MM/JJJJ)**. Zu Ihrer Information: Ihr LDAP wird automatisch angehängt, Sie müssen es nicht selbst hinzufügen.
 
 Klicken Sie auf **Starten**.
 
@@ -55,8 +55,10 @@ Sobald der Schnelleinrichtungsprozess abgeschlossen ist, verfügen Sie über:
 
 Lassen Sie diesen Bildschirm offen, da Sie ihn in den nächsten Schritten benötigen werden.
 
-Nächster Schritt: [Erstellen Sie Ihren Datenstrom](./ex3.md)
+## Nächste Schritte
 
-[Zurück zu den ersten Schritten](./getting-started.md)
+Navigieren Sie zu [Erstellen eines Datenstroms](./ex3.md)
 
-[Zurück zu „Alle Module“](./../../../overview.md)
+Zurück zu [Erste Schritte](./getting-started.md){target="_blank"}
+
+Zurück zu [Alle Module](./../../../overview.md){target="_blank"}

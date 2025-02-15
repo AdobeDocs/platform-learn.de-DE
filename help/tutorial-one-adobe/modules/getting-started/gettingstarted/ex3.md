@@ -4,10 +4,10 @@ description: Erste Schritte - Erstellen Ihres Datenstroms
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 1%
+source-wordcount: '827'
+ht-degree: 2%
 
 ---
 
@@ -145,7 +145,7 @@ Sie werden es dann sehen. Klicken Sie **Erweiterungen**.
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig11m.png)
 
-Klicken Sie auf die Erweiterung **Adobe Experience PlatformEdge Network** und dann auf **Konfigurieren**.
+Klicken Sie auf die Erweiterung **Adobe Experience Platform Edge Network** und dann auf **Konfigurieren**.
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig12m.png)
 
@@ -173,8 +173,10 @@ Ihre Änderungen werden jetzt veröffentlicht und sind in einigen Minuten bereit
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig17ma.png)
 
-Nächster Schritt: [Verwenden der Website](./ex4.md)
+## Nächste Schritte
 
-[Zurück zu den ersten Schritten](./getting-started.md)
+Navigieren Sie zu [Website verwenden](./ex4.md)
 
-[Zurück zu „Alle Module“](./../../../overview.md)
+Zurück zu [Erste Schritte](./getting-started.md){target="_blank"}
+
+Zurück zu [Alle Module](./../../../overview.md){target="_blank"}

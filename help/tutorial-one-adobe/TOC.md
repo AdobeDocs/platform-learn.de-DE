@@ -1,18 +1,18 @@
 ---
-user-guide-title: Umfassendes technisches Tutorial für Adobe-Anwendungen, von Creative Cloud bis Experience Cloud
-breadcrumb-title: Umfassendes technisches Tutorial für Adobe-Anwendungen, von Creative Cloud bis Experience Cloud
+user-guide-title: Umfassendes technisches Tutorial für Adobe-Anwendungen von Creative Cloud bis Experience Cloud
+breadcrumb-title: Umfassendes technisches Tutorial für Adobe-Anwendungen von Creative Cloud bis Experience Cloud
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
+source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 4%
+source-wordcount: '361'
+ht-degree: 3%
 
 ---
 
 
-# Umfassendes technisches Tutorial - eine Adobe {#tutorial-one-adobe}
+# Umfassendes technisches Tutorial - One Adobe {#tutorial-one-adobe}
 
 + [Tutorial-Überblick](/help/tutorial-one-adobe/overview.md)
 + [Inhaltsstatus](/help/tutorial-one-adobe/status.md)
@@ -26,13 +26,16 @@ ht-degree: 4%
       + [Erstellen eines Datenstroms](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [Verwenden der Website](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [Verwenden der Mobile App](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+      + [Konfigurieren des Adobe I/O-Projekts](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex6.md)
+      + [Option 1: Postman-Einrichtung](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
+      + [Option 2: PostBuster-Einrichtung](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
+      + [Zu installierende Anwendungen](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
    + [Vorbereitung](/help/tutorial-one-adobe/prework.md)
-   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 {#production} für Erstellung und Produktion
    + 1.1 Überblick über Adobe Firefly Services {#module11}
       + [Übersicht](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
-      + [1.1.1 Erste Schritte mit Firefly-Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
+      + [1.1.1 Erste Schritte mit Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Optimieren Sie Ihre Firefly-Prozesse mit Microsoft Azure und vordefinierten URLs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Arbeiten mit Photoshop-APIs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [1.1.4 Firefly Custom Models-API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
@@ -52,7 +55,7 @@ ht-degree: 4%
       + [2.1.3 Einrichten der AEM CS-Umgebung](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
       + [2.1.4 Benutzerdefinierter Basisblock](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
       + [2.1.5 Erweiterter benutzerdefinierter Block](/help/tutorial-one-adobe/modules/csc/module2.1/ex5.md)
-      + [2.1.6 AEM-Edge Delivery Services MarTech-Plug-in](/help/tutorial-one-adobe/modules/csc/module2.1/ex6.md)
+      + [2.1.6 AEM Edge Delivery Services MarTech-Plug-in](/help/tutorial-one-adobe/modules/csc/module2.1/ex6.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [Übersicht](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
@@ -74,12 +77,12 @@ ht-degree: 4%
       + [3.2.2 Erstellen einer Kampagne](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
       + [3.2.3 Hinzufügen von Sprachen zu E-Mails](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
-   + 3.3 Adobe Journey Optimizer: Offer decisioning {#module33}
+   + 3.3 Adobe Journey Optimizer: Offer Decisioning {#module33}
       + [Übersicht](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)
-      + [3.3.1 Offer decisioning 101](/help/tutorial-one-adobe/modules/uce/module3.3/ex1.md)
+      + [3.3.1 Offer Decisioning 101](/help/tutorial-one-adobe/modules/uce/module3.3/ex1.md)
       + [3.3.2 Konfigurieren von Angeboten und Entscheidungen](/help/tutorial-one-adobe/modules/uce/module3.3/ex2.md)
-      + [3.3.3 Vorbereiten der Client-Eigenschaft der Adobe Experience Platform-Datenerfassung und des Web-SDK-Setups für das Offer decisioning](/help/tutorial-one-adobe/modules/uce/module3.3/ex3.md)
-      + [3.3.4 Adobe Target und Offer decisioning kombinieren](/help/tutorial-one-adobe/modules/uce/module3.3/ex4.md)
+      + [3.3.3 Vorbereiten der Client-Eigenschaft für die Datenerfassung in Adobe Experience Platform und des Web-SDK-Setups für Offer Decisioning](/help/tutorial-one-adobe/modules/uce/module3.3/ex3.md)
+      + [3.3.4 Adobe Target und Offer Decisioning kombinieren](/help/tutorial-one-adobe/modules/uce/module3.3/ex4.md)
       + [3.3.5 Entscheidung in einer E-Mail verwenden](/help/tutorial-one-adobe/modules/uce/module3.3/ex5.md)
       + [3.3.6 Testen Sie Ihre Entscheidung mithilfe der API](/help/tutorial-one-adobe/modules/uce/module3.3/ex6.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/uce/module3.3/summary.md)

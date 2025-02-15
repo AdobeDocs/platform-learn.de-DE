@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
+source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Erfahren Sie, wie Sie mit den Photoshop-APIs und Firefly Services arbeiten.
 
 ![Azure-Speicher](./images/ps2.png){zoomable="yes"}
 
-1. Wählen Sie **Creative Cloud** und dann Photoshop - Firefly Services **aus**. Klicken Sie auf **Weiter**.
+1. Wählen Sie **Creative Cloud** und **Photoshop - Firefly Services** aus. Klicken Sie auf **Weiter**.
 
-![Azure Storage](./images/ps3.png){zoomable="yes"}
+![Azure-Speicher](./images/ps3.png){zoomable="yes"}
 
 1. Klicken Sie auf **Weiter**.
 
@@ -52,10 +52,6 @@ Ihr Adobe I/O-Projekt wurde jetzt aktualisiert, um mit Photoshop- und Firefly Se
 ![Azure-Speicher](./images/ps6.png){zoomable="yes"}
 
 ## Programmgesteuerte Interaktion von 1.1.3.2 mit einer PSD-Datei
-
->[!IMPORTANT]
->
->Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
 
 1. Laden Sie [Citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} auf Ihren Desktop herunter.
 
@@ -160,13 +156,13 @@ In der Antwort wird jetzt ein Link angezeigt. Da es manchmal einige Zeit dauern 
 
 Ihr Bildschirm sollte wie folgt aussehen. Derzeit ist der Status auf **Ausstehend** festgelegt, was bedeutet, dass der Prozess noch nicht abgeschlossen ist.
 
-![Azure Storage](./images/ps19.png){zoomable="yes"}
+![Azure-Speicher](./images/ps19.png){zoomable="yes"}
 
-1. Wählen Sie noch ein paar Mal auf **Photoshop - PS Status** abrufen aus, bis sich der Status in **&quot;Erfolgreich&quot;** ändert. Dies kann einige Minuten dauern.
+1. Wählen Sie Mehrere Male senden auf **Photoshop - PS-Status abrufen**, bis sich der Status auf &quot;**&quot;**. Dies kann einige Minuten dauern.
 
-Wenn die Antwort verfügbar ist, können Sie sehen, dass die JSON-Datei Informationen zu allen Ebenen der PSD-Datei enthält. Dies ist eine nützliche Information, da Dinge liken den Layer-Namen oder die Layer-ID identifiziert werden können.
+Wenn die Antwort verfügbar ist, können Sie sehen, dass die JSON-Datei Informationen zu allen Ebenen der PSD-Datei enthält. Dies ist eine nützliche Information, da Dinge wie der Ebenenname oder die Ebenenkennung identifiziert werden können.
 
-![Azure Storage](./images/ps20.png){zoomable="yes"}
+![Azure-Speicher](./images/ps20.png){zoomable="yes"}
 
 Suchen Sie beispielsweise nach dem `2048x2048-cta`. Ihr Bildschirm sollte wie folgt aussehen:
 

@@ -4,10 +4,10 @@ description: Erste Schritte - eine Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 2%
 
 ---
 
@@ -47,6 +47,26 @@ In dieser Übung richten Sie die Website ein, damit Sie sie für Demonstrationen
 [Verwenden der Mobile App](./ex5.md)
 
 In dieser Übung richten Sie die Mobile App ein, damit Sie sie für Demonstrationen und zur Aktivierung verwenden können.
+
+[Konfigurieren des Adobe I/O-Projekts](./ex6.md)
+
+In dieser Übung konfigurieren Sie Ihr Adobe I/O-Projekt, das für die Interaktion mit verschiedenen Adobe-API-Endpunkten verwendet wird.
+
+[Option 1: Postman-Einrichtung](./ex7.md)
+
+>[!NOTE]
+>
+>Wenn Sie kein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum Installieren von Postman!
+
+In dieser Übung bereiten Sie Ihre Postman-Umgebung auf die Interaktion mit verschiedenen Adobe-API-Endpunkten vor
+
+[Option 2: PostBuster-Einrichtung](./ex8.md)
+
+>[!NOTE]
+>
+>Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum Installieren von PostBuster!
+
+In dieser Übung bereiten Sie Ihre PostBuster-Umgebung auf die Interaktion mit verschiedenen Adobe-API-Endpunkten vor
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -4,7 +4,7 @@ description: Foundation - Datenaufnahme - Datenaufnahme aus Offline-Quellen
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 6%
@@ -236,19 +236,19 @@ Das Source-Schemafeld **last_name** sollte mit dem Zielfeld **person.name.lastNa
 
 #### consents.marketing.email.val
 
-Das Source-Schemafeld **last_name** sollte mit dem Zielfeld **consents.marketing.email.val** verknüpft werden.
+Das Source-Schemafeld **consent.email** sollte mit dem Zielfeld **consents.marketing.email.val** verknüpft werden.
 
 ![Datenaufnahme](./images/cons1.png)
 
 #### consents.marketing.commercialEmail.val
 
-Das Source-Schemafeld **last_name** sollte mit dem Zielfeld **consents.marketing.commercialEmail.val** verknüpft werden.
+Das Source-Schemafeld **consent.commercialEmail** sollte mit dem Zielfeld **consents.marketing.commercialEmail.val** verknüpft werden.
 
 ![Datenaufnahme](./images/cons2.png)
 
 #### consents.marketing.any.val
 
-Das Source-Schemafeld **last_name** sollte mit dem Zielfeld &quot;**.marketing.any.val“ verknüpft**.
+Das Source-Schemafeld **consent.any** sollte mit dem Zielfeld **consents.marketing.any.val** verknüpft werden.
 
 ![Datenaufnahme](./images/cons3.png)
 

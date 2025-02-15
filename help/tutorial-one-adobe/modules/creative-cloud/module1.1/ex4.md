@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 0e9d1b5866d789ca2693d9c1a6ef7119c25ed009
+source-git-commit: 219945c74c620b9a4b93cb2b7462137118d42d33
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '823'
 ht-degree: 1%
 
 ---
@@ -135,10 +135,6 @@ Die **ID des technischen Kontos** sollte jetzt in der Lage sein, auf das benutze
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm22.png){zoomable="yes"}
 
 ## Interaktion 1.1.4.4 Firefly Services mit der API für benutzerdefinierte Modelle
-
->[!IMPORTANT]
->
->Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
 
 In Übung 1.1.1 Erste Schritte mit Firefly Services haben Sie diese Datei ([postman-ff.zip](./../../../assets/postman/postman-ff.zip) auf Ihren lokalen Desktop heruntergeladen und anschließend diese Sammlung in Postman importiert.
 

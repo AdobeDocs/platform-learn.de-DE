@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
+source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1334'
 ht-degree: 1%
 
 ---
@@ -316,10 +316,6 @@ Um langfristig programmgesteuert Dateien aus Azure Storage-Konten lesen zu könn
    - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 ### Variablen in Postman
-
->[!IMPORTANT]
->
->Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie bitte die Anweisungen hier zur Verwendung von [PostBuster](./../../../postbuster.md).
 
 Wie Sie im obigen Abschnitt sehen können, gibt es einige allgemeine Variablen sowohl im Lese- als auch im Schreib-Token.
 

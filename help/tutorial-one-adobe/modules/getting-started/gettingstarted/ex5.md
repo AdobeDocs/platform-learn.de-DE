@@ -4,10 +4,10 @@ description: Erste Schritte - Verwenden der Mobile App
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 0%
+source-wordcount: '434'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Verwenden Sie die **Camera**-App auf Ihrem Smartphone, um die Mobile App für da
 
 >[!NOTE]
 >
->Nachdem Sie die App zum ersten Mal auf einem iOS-Gerät installiert haben, erhalten Sie möglicherweise eine Fehlermeldung, wenn Sie versuchen, die App zu öffnen. Diese lautet: **Untrusted Enterprise Developer**. Um dieses Problem zu beheben, müssen Sie zu **Einstellungen > Allgemein > VPN- und Geräteverwaltung > Adobe Systems Inc.** gehen und auf **Adobe Systems Inc.** klicken.
+>Nachdem Sie die App zum ersten Mal auf einem iOS-Gerät installiert haben, erhalten Sie möglicherweise eine Fehlermeldung, wenn Sie versuchen, die App zu öffnen. Diese lautet: **Untrusted Enterprise Developer**. Um dies zu beheben, müssen Sie zu **Einstellungen > Allgemein > VPN- und Geräteverwaltung > Adobe Systems Inc.** gehen und auf **Adobe Systems Inc.** klicken.
 
 Sobald die App installiert ist, finden Sie sie auf dem Startbildschirm Ihres Geräts. Klicken Sie auf das Symbol, um die App zu öffnen.
 
@@ -81,8 +81,10 @@ Gehen Sie nun zurück zu **Startseite** in der App. Ihre App kann jetzt verwende
 
 ![DSN](./images/mobileappn8.png)
 
-Sie haben jetzt das Modul Erste Schritte abgeschlossen und können mit den nächsten Übungen beginnen.
+## Nächste Schritte
 
-[Zurück zu den ersten Schritten](./getting-started.md)
+Navigieren Sie zu [Adobe I/O-Projekt konfigurieren](./ex6.md)
 
-[Zurück zu „Alle Module“](./../../../overview.md)
+Zurück zu [Erste Schritte](./getting-started.md){target="_blank"}
+
+Zurück zu [Alle Module](./../../../overview.md){target="_blank"}

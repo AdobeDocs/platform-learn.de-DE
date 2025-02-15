@@ -4,9 +4,9 @@ description: Erste Schritte - Installieren der Chrome-Erweiterung für die Exper
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Die IMS-Organisations-ID ist die eindeutige Kennung für Ihre Adobe Experience C
 
 Das Ermitteln der IMS-Organisations-ID kann auf verschiedene Weise erfolgen. Wenn Sie sich nicht sicher sind, wenden Sie sich an einen Systemadministrator Ihrer Instanz, um die ID zu finden.
 
-Sie können ihn möglicherweise finden, indem Sie zu [Admin Console ](https://https://adminconsole.adobe.com/) wechseln, wo Sie ihn als Teil der URL finden können.
+Sie können ihn möglicherweise finden, indem Sie zu [Admin Console](https://https://adminconsole.adobe.com/) wechseln, wo Sie ihn als Teil der URL finden können.
 
 ![DSN](./images/aepid1.png)
 
@@ -143,8 +143,10 @@ Sie sollten jetzt eine ähnliche Ansicht wie die unten haben, in der die Umgebun
 
 ![DSN](./images/mod7.png)
 
-Nächster Schritt: [Verwenden Sie das Demosystem Weiter , um Ihre Client-Eigenschaft für die Datenerfassung in Adobe Experience Platform einzurichten](./ex2.md)
+## Nächste Schritte
 
-[Zurück zu den ersten Schritten](./getting-started.md)
+Navigieren Sie zu [Demosystem verwenden als Nächstes, um Ihre Client-Eigenschaft für die Datenerfassung in Adobe Experience Platform einzurichten](./ex2.md)
 
-[Zurück zu „Alle Module“](./../../../overview.md)
+Zurück zu [Erste Schritte](./getting-started.md){target="_blank"}
+
+Zurück zu [Alle Module](./../../../overview.md){target="_blank"}
