@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -290,6 +290,8 @@ Um langfristig programmgesteuert Dateien aus Azure Storage-Konten lesen zu könn
 
 1. Wählen **unter** die folgenden erforderlichen Berechtigungen aus:
 
+   - **Lesen**
+   - **Liste**
    - **Hinzufügen**
    - **Create**
    - **Write**
@@ -343,11 +345,36 @@ Für zukünftige API-Interaktionen ändert sich hauptsächlich der Asset-Name, w
 
    ![Azure-Speicher](./images/az105.png){zoomable="yes"}
 
-   In einer der vorherigen Übungen sah der **Hauptteil** Ihrer Anfrage **Firefly - T2I (styleref) V3** wie folgt aus:
+### Variablen in PostBuster
 
-   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+Wie Sie im obigen Abschnitt sehen können, gibt es einige allgemeine Variablen sowohl im Lese- als auch im Schreib-Token.
 
-   ![Azure-Speicher](./images/az24.png){zoomable="yes"}
+Als Nächstes müssen Sie Variablen in PostBuster erstellen, die die verschiedenen Elemente der oben genannten SAS-Token speichern. Es gibt einige Werte, die in beiden URLs identisch sind:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Öffnen Sie PostBuster. Wählen Sie **Basisumgebung** und klicken Sie dann auf das Symbol **Bearbeiten**, um die Basisumgebung zu öffnen.
+
+![Azure-Speicher](./images/pbbe1.png)
+
+Anschließend werden 4 leere Variablen angezeigt. Geben Sie hier Ihre Azure Storage-Kontodetails ein.
+
+![Azure-Speicher](./images/pbbe2.png)
+
+Ihre Basisumgebungsdatei sollte jetzt wie folgt aussehen. Klicken Sie auf **Schließen**.
+
+![Azure-Speicher](./images/pbbe3.png)
+
+### Testen der Konfiguration
+
+In einer der vorherigen Übungen sah der **Hauptteil** Ihrer Anfrage **Firefly - T2I (styleref) V3** wie folgt aus:
+
+    `„url“: &quot;https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&amp;st=2025-01-13T07%3A16%3A52Z&amp;se=2026-01-14T07%3A16%3A00Z&amp;sr=b&amp;sp=r&amp;sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D&quot;`
+    
+    ![Azure Storage](./images/az24.png){zoomable="yes"}
 
 1. Ändern Sie die URL in:
 

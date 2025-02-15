@@ -3,9 +3,10 @@ title: Erste Schritte - Einrichten von Postman
 description: Erste Schritte - Einrichten von Postman
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '430'
 ht-degree: 3%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Wenn Sie kein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum [ von Postman](./ex7.md). Die folgenden Anweisungen sind nur für Adobe-Mitarbeiter gedacht. Wenn Sie Postman bereits konfiguriert haben, überspringen Sie diese Übung und wechseln Sie zu [Anwendungen zu installieren](./ex9.md).
+>Wenn Sie kein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum [ von Postman](./ex7.md). Die folgenden Anweisungen sind nur für Adobe-Mitarbeiter gedacht.
 
 ## Installieren von PostBuster
 

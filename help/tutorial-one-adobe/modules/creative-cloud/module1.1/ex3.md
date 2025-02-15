@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -17,65 +17,27 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie mit den Photoshop-APIs und Firefly Services arbeiten.
 
-## 1.1.3.1 Aktualisieren der Adobe I/O-Integration
+## Voraussetzungen für 1.1.3.1
 
-1. Navigieren Sie zu [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
+Bevor Sie mit dieser Übung fortfahren, müssen Sie das Setup von [Ihr Adobe I/O-Projekt](./../../../modules/getting-started/gettingstarted/ex6.md) abgeschlossen haben. Außerdem müssen Sie eine Anwendung für die Interaktion mit APIs konfiguriert haben, z. B. [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) oder [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-![Neue Adobe I/O-Integration](./images/iohome.png){zoomable="yes"}
+## 1.1.3.2 Adobe I/O - access_token
 
-1. Navigieren Sie **Projekte** und wählen Sie das Projekt aus, das Sie in der vorherigen Übung erstellt haben. Diese Übung heißt `--aepUserLdap-- Firefly`.
+Wählen Sie in der Sammlung **Adobe IO - OAuth** die Anfrage mit dem Namen **POST - Zugriffstoken abrufen** und klicken Sie auf **Senden**. Die Antwort sollte ein neues &quot;**&quot;**.
 
-![Azure-Speicher](./images/ps1.png){zoomable="yes"}
+![Postman](./images/ioauthresp.png){zoomable="yes"}
 
-1. Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
+## Programmgesteuerte Interaktion von 1.1.3.3 mit einer PSD-Datei
 
-![Azure-Speicher](./images/ps2.png){zoomable="yes"}
+Laden Sie [Citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} auf Ihren Desktop herunter.
 
-1. Wählen Sie **Creative Cloud** und **Photoshop - Firefly Services** aus. Klicken Sie auf **Weiter**.
-
-![Azure-Speicher](./images/ps3.png){zoomable="yes"}
-
-1. Klicken Sie auf **Weiter**.
-
-![Azure-Speicher](./images/ps4.png){zoomable="yes"}
-
-Als Nächstes müssen Sie ein Produktprofil auswählen, das definiert, welche Berechtigungen für diese Integration verfügbar sind.
-
-1. Wählen Sie **Standardkonfiguration für Firefly** und **Standardkonfiguration für Creative Cloud-Automatisierungsdienste** aus.
-
-1. Wählen Sie **Konfigurierte API speichern**.
-
-![Azure-Speicher](./images/ps5.png){zoomable="yes"}
-
-Ihr Adobe I/O-Projekt wurde jetzt aktualisiert, um mit Photoshop- und Firefly Services-APIs arbeiten zu können.
-
-![Azure-Speicher](./images/ps6.png){zoomable="yes"}
-
-## Programmgesteuerte Interaktion von 1.1.3.2 mit einer PSD-Datei
-
-1. Laden Sie [Citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} auf Ihren Desktop herunter.
-
-1. Öffnen Sie **Citisignal-fiber.psd** in Photoshop.
+Öffnen Sie **Citisignal-fiber.psd** in Photoshop.
 
 ![Azure-Speicher](./images/ps7.png){zoomable="yes"}
 
 Im Bereich **Ebenen** hat der Designer der Datei jeder Ebene einen eindeutigen Namen gegeben. Sie können die Ebeneninformationen anzeigen, indem Sie die PSD-Datei in Photoshop öffnen. Sie können dies aber auch programmgesteuert tun.
 
 Senden wir Ihre erste API-Anfrage an Photoshop-APIs.
-
-1. Bevor Sie API-Anfragen an Photoshop senden können, müssen Sie sich in Postman bei Adobe I/O authentifizieren. Öffnen Sie die vorherige Anfrage mit dem Namen **POST - Zugriffs-Token abrufen**.
-
-1. Wechseln Sie zu **Parameter** und überprüfen Sie, ob der Parameter **Umfang** ordnungsgemäß festgelegt ist. Der **Wert** für **Umfang** sollte wie folgt aussehen:
-
-`openid,session,AdobeID,read_organizations,additional_info.projectedProductContext, ff_apis, firefly_api`
-
-1. Wählen Sie **Senden** aus.
-
-![Azure-Speicher](./images/ps8.png){zoomable="yes"}
-
-Jetzt verfügen Sie über ein gültiges Zugriffstoken für die Interaktion mit Photoshop-APIs.
-
-![Azure-Speicher](./images/ps9.png){zoomable="yes"}
 
 ### Photoshop-API - Hello World
 
