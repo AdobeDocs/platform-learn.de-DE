@@ -1,10 +1,10 @@
 ---
 title: Erstellen von Tag-Regeln für Platform Web SDK
-description: Erfahren Sie, wie Sie mithilfe einer Tag-Regel ein -Ereignis mit Ihrem XDM-Objekt an das Platform-Edge Network senden. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
+description: Erfahren Sie, wie Sie mithilfe einer Tag-Regel ein -Ereignis mit Ihrem XDM-Objekt an Platform Edge Network senden. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Tag-Regeln erstellen
 
-Erfahren Sie, wie Sie mithilfe von Tag-Regeln Ereignisse mit Ihrem XDM-Objekt an das Adobe Experience Platform-Edge Network senden. Eine Tag-Regel ist eine Kombination aus Ereignissen, Bedingungen und Aktionen, die die Tag-Eigenschaft anweist, etwas zu tun. Bei Platform Web SDK werden Regeln verwendet, um Ereignisse mit den richtigen Daten an das Platform-Edge Network zu senden.
+Erfahren Sie, wie Sie Ereignisse mithilfe von Tag-Regeln mit Ihrem XDM-Objekt an Adobe Experience Platform Edge Network senden. Eine Tag-Regel ist eine Kombination aus Ereignissen, Bedingungen und Aktionen, die die Tag-Eigenschaft anweist, etwas zu tun. Bei Platform Web SDK werden Regeln verwendet, um Ereignisse mit den richtigen Daten an Platform Edge Network zu senden.
 
 ## Lernziele
 
@@ -23,7 +23,7 @@ Am Ende dieser Lektion können Sie:
 * Senden eines Ereignisses mit XDM-Feldern mithilfe der Aktionen „Variable aktualisieren“ und „Ereignis senden“
 * Stapeln mehrerer Sätze von XDM-Feldern über mehrere Regeln hinweg
 * Ordnen Sie einzelne oder gesamte Array-Datenelemente dem XDM-Objekt zu
-* Publish einer Tag-Regel in eine Entwicklungsbibliothek
+* Veröffentlichen einer Tag-Regel in einer Entwicklungsbibliothek
 
 
 ## Voraussetzungen
@@ -56,7 +56,7 @@ wenn:
 In Tags werden Regeln verwendet, um Aktionen (Feueraufrufe) unter verschiedenen Bedingungen auszuführen. Die Platform Web SDK Tags-Erweiterung umfasst zwei Aktionen, die in dieser Lektion verwendet werden:
 
 * **[!UICONTROL Variable aktualisieren]** ordnet Datenelemente Eigenschaften in einem XDM-Objekt zu
-* **[!UICONTROL Ereignis senden]** sendet das XDM-Objekt zum Experience Platform-Edge Network
+* **[!UICONTROL Ereignis senden]** sendet das XDM-Objekt an Experience Platform Edge Network
 
 Im weiteren Verlauf dieser Lektion werden wir:
 
@@ -64,13 +64,13 @@ Im weiteren Verlauf dieser Lektion werden wir:
 
 1. Erstellen Sie zusätzliche Regeln mit der Aktion **[!UICONTROL Variable aktualisieren]** die unsere „globale Konfiguration“ überschreiben und unter bestimmten Bedingungen zusätzliche XDM-Felder bereitstellen (z. B. Hinzufügen von Produktdetails auf Produktseiten).
 
-1. Erstellen Sie eine weitere Regel mit der Aktion **[!UICONTROL Ereignis senden]** die das vollständige XDM-Objekt an das Adobe Experience Platform-Edge Network sendet.
+1. Erstellen Sie eine weitere Regel mit der Aktion **[!UICONTROL Ereignis senden]** die das vollständige XDM-Objekt an Adobe Experience Platform Edge Network sendet.
 
 Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; ].
 
 In diesem Video erhalten Sie einen Überblick über den Prozess:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Globale Konfigurationsfelder
 
@@ -157,7 +157,7 @@ Ordnen Sie nun Ihre [!UICONTROL Datenelemente] dem [!UICONTROL Schema] zu, das v
 
 ### Felder der Produktseite
 
-Beginnen Sie jetzt mit der Verwendung von **[!UICONTROL Variable aktualisieren]** in zusätzlichen, sequenziellen Regeln, um das XDM-Objekt anzureichern, bevor Sie es an das -[!UICONTROL -Edge Network senden].
+Beginnen Sie jetzt mit der Verwendung von **[!UICONTROL Variable aktualisieren]** in zusätzlichen, sequenziellen Regeln, um das XDM-Objekt anzureichern, bevor Sie es an [!UICONTROL Platform Edge Network] senden.
 
 >[!TIP]
 >
@@ -332,7 +332,7 @@ Wenn Sie fertig sind, sollten Sie die folgenden Regeln erstellt sehen.
 
 ### Ereignisregel senden
 
-Nachdem Sie die Variablen festgelegt haben, können Sie mit der Aktion „Ereignis senden **[!UICONTROL die Regel erstellen, um das vollständige XDM-Objekt an]** Platform-Edge Network zu senden.
+Nachdem Sie die Variablen festgelegt haben, können Sie mit der Aktion „Ereignis senden **[!UICONTROL die Regel erstellen, um das vollständige XDM-Objekt]** Platform Edge Network zu senden.
 
 1. Klicken Sie auf der rechten Seite auf **[!UICONTROL Regel hinzufügen]**, um eine weitere Regel zu erstellen
 
@@ -362,7 +362,7 @@ Nachdem Sie die Variablen festgelegt haben, können Sie mit der Aktion „Ereign
 
    ![Speichern der Regel](assets/create-rule-save-rule.png)
 
-## Publish - Regeln in einer Bibliothek
+## Regeln in einer Bibliothek veröffentlichen
 
 Als Nächstes veröffentlichen Sie die Regel in Ihrer Entwicklungsumgebung, damit Sie überprüfen können, ob sie funktioniert.
 
@@ -391,10 +391,10 @@ Es kann einige Minuten dauern, bis die Bibliothek erstellt ist. Nach Abschluss w
 
 Wie Sie auf dem Bildschirm [!UICONTROL Publishing-Ablauf] sehen können, gibt es sehr viel mehr am Publishing-Prozess, was den Rahmen dieses Tutorials sprengt. Dieses Tutorial verwendet nur eine einzige Bibliothek in Ihrer Entwicklungsumgebung.
 
-Jetzt können Sie die Daten in der Anfrage mit dem Adobe Experience Platform Debugger validieren.
+Jetzt können Sie die Daten in der Anfrage mithilfe der Adobe Experience Platform Debugger validieren.
 
 [Weiter ](validate-with-debugger.md)
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

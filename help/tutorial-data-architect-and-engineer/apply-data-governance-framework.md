@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 5%
@@ -24,9 +24,9 @@ In dieser Lektion wenden Sie das Data Governance-Framework auf die Daten an, die
 Mit Data Governance in Adobe Experience Platform können Sie Kundendaten verwalten und bei der Verwendung von Daten die Einhaltung von Vorschriften, Einschränkungen und Richtlinien sicherstellen. Die Funktion spielt in Experience Platform auf verschiedenen Ebenen eine wichtige Rolle, u. a. bei der Steuerung der Datennutzung.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich diese kurzen Videos über Data Governance an:
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required
@@ -84,9 +84,9 @@ Sie können Ihre eigenen Richtlinien erstellen, indem Sie auf die Schaltfläche 
 
 ## Durchsetzung von Governance-Richtlinien
 
-Die Durchsetzung der Governance-Politik ist offensichtlich ein Schlüsselelement des Rahmens. Die Durchsetzung erfolgt nachgelagert, wenn Daten aktiviert und aus Platform heraus gesendet werden, insbesondere mit der Real-time Customer Data Platform, die Sie möglicherweise lizenzieren oder nicht. In beiden Fällen ist dies nicht Gegenstand dieses Tutorials. Aber damit Sie nicht hängen bleiben, können Sie mehr darüber erfahren, wie Richtlinien durchgesetzt werden in diesem Video, das ich in die Warteschlange gestellt habe, um den entsprechenden Teil. Außerdem erfahren Sie, was passiert, wenn eine Richtlinie verletzt wird.
+Die Durchsetzung der Governance-Politik ist offensichtlich ein Schlüsselelement des Rahmens. Die Durchsetzung erfolgt nachgelagert, wenn Daten aktiviert und aus Platform heraus gesendet werden, insbesondere mit der Real-Time Customer Data Platform, die Sie möglicherweise lizenzieren oder nicht. In beiden Fällen ist dies nicht Gegenstand dieses Tutorials. Aber damit Sie nicht hängen bleiben, können Sie mehr darüber erfahren, wie Richtlinien durchgesetzt werden in diesem Video, das ich in die Warteschlange gestellt habe, um den entsprechenden Teil. Außerdem erfahren Sie, was passiert, wenn eine Richtlinie verletzt wird.
 
->[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on&enablevpops)
 
 
 ## Weitere Ressourcen

@@ -8,7 +8,7 @@ doc-type: Event
 thumbnail: 337665.jpg
 jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 19%
@@ -19,7 +19,7 @@ ht-degree: 19%
 
 Bereitstellung von Erlebnissen trotz eingeschränkten Datenzugriffs. Unabhängig davon, ob Sie ein Advertiser, ein Publisher oder eine Agentur sind, hilft Ihnen dieses Webinar, die Möglichkeiten der Datenerfassung in einer Zukunft ohne Drittanbieter-Cookies zu erschließen.
 
->[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on&enablevpops)
 
 ## Wichtige Vorteile:
 

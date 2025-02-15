@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-2705
 thumbnail: 27428.jpg
 exl-id: 5e3b7d65-10e6-418f-98ab-99a3ac47e839
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 7%
@@ -22,5 +22,5 @@ Dynamische Zielgruppen sind eine erweiterte Segmentierungsfunktion in Adobe Expe
 >
 > &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
->[!VIDEO](https://video.tv.adobe.com/v/27428?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27428?learn=on&enablevpops)
 

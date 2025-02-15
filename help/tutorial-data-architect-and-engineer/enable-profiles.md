@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Es gibt wichtige [Leitplanken für Echtzeit-Kundenprofildaten](https://experienc
 **Datenarchitekten** müssen das Echtzeit-Kundenprofil außerhalb dieses Tutorials aktivieren.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über das Echtzeit-Kundenprofil zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## Erforderliche Berechtigungen
 

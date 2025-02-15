@@ -2,13 +2,13 @@
 title: Batch-Daten erfassen
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Batch-Daten erfassen
-description: In dieser Lektion nehmen Sie mit verschiedenen Methoden Batch-Daten in Experience Platform auf.
+description: In dieser Lektion nehmen Sie Batch-Daten mit verschiedenen Methoden in Experience Platform auf.
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2465'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 # Batch-Daten erfassen
 
 <!-- 1hr-->
-In dieser Lektion nehmen Sie mit verschiedenen Methoden Batch-Daten in Experience Platform auf.
+In dieser Lektion nehmen Sie Batch-Daten mit verschiedenen Methoden in Experience Platform auf.
 
 Die Batch-Datenaufnahme ermöglicht es Ihnen, eine große Datenmenge gleichzeitig in Adobe Experience Platform aufzunehmen. Sie können Batch-Daten in einem einmaligen Upload in die Benutzeroberfläche von Platform aufnehmen oder die API verwenden. Sie können auch regelmäßig geplante Batch-Uploads von Drittanbieterdiensten wie Cloud-Speicher-Services mithilfe von Source-Connectoren konfigurieren.
 
@@ -26,7 +26,7 @@ Die Batch-Datenaufnahme ermöglicht es Ihnen, eine große Datenmenge gleichzeiti
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über die Datenaufnahme zu erfahren:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## Erforderliche Berechtigungen
@@ -191,7 +191,7 @@ Abschließen des Batches:
 1. **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]** auswählen
 1. Geben Sie auf **Registerkarte** Parameter`COMPLETE` als **Aktion**
 1. Geben **auf der Registerkarte** Parameter“ Ihre Batch-ID ein. Machen Sie sich keine Gedanken über die Datensatz-ID oder den Dateipfad, falls vorhanden.
-1. Vergewissern Sie sich, dass die URL der POST `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` ist und dass es keine unnötigen Verweise auf die `datasetId` oder `filePath` gibt
+1. Vergewissern Sie sich, dass die URL des POST `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` ist und dass es keine unnötigen Verweise auf die `datasetId` oder `filePath` gibt
 1. Wählen Sie **Senden** und Sie sollten eine Antwort von 200 OK mit „1“ im Antworttext erhalten
 
    ![Batch abgeschlossen](assets/ingestion-crm-complete.png)
@@ -335,7 +335,7 @@ Suchen Sie erneut das Profil mit dem Wert `5625458` im `loyaltyId`-Namespace, um
 Adobe arbeitet mit mehreren ETL-Anbietern zusammen, um die Datenaufnahme in Experience Platform zu unterstützen. Aufgrund der Vielzahl von Drittanbietern wird ETL in diesem Tutorial nicht behandelt. Sie können jedoch gerne einige dieser Ressourcen lesen:
 
 * [Entwickeln von ETL-Integrationen für Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* [Informatica Adobe Experience Platform Connector-Seite auf Adobe Exchange ](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
+* [Informatica Adobe Experience Platform Connector-Seite auf Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
 * [Informatica-Dokumentation zum Adobe Experience Platform-Connector](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 

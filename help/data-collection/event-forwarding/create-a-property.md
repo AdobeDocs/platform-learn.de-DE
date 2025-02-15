@@ -6,7 +6,7 @@ level: Intermediate
 jira: KT-6420
 thumbnail: 331938.jpeg
 exl-id: 63a578d3-1220-4588-b289-7310f4905d52
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 19%
@@ -21,8 +21,8 @@ Erfahren Sie, wie Sie in der Datenerfassung eine Ereignisweiterleitungseigenscha
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * Platform launch (Client-seitig) ist jetzt **[!DNL tags]**
-> * Platform launch Server Side ist jetzt **[!DNL event forwarding]**
+> * Platform Launch (Client-seitig) ist jetzt **[!DNL tags]**
+> * Platform Launch Server Side ist jetzt **[!DNL event forwarding]**
 > * Edge-Konfigurationen sind jetzt **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331938?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331938?learn=on&enablevpops)

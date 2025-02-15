@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -24,4 +24,4 @@ In diesem Video erfahren Sie, wie Sie im Zielgruppenregel-Builder von Adobe Expe
 >
 > &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
->[!VIDEO](https://video.tv.adobe.com/v/32179?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32179?learn=on&enablevpops)

@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Sobald Sie über Echtzeit-Kundenprofile verfügen, können Sie Segmente von Einz
 **Datenarchitekten** müssen außerhalb dieses Tutorials Segmente erstellen und ihre Kollegen bei dieser Aufgabe unterstützen.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über das Erstellen von Segmenten zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
 
 
 ## Erforderliche Berechtigungen

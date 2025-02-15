@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-7891
 thumbnail: 333304.jpg
 exl-id: a98e43e1-4b5e-42fa-8806-aab702947da5
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -22,5 +22,5 @@ Mit dem Builder für Zielgruppenregeln in Experience Platform können Sie besteh
 >
 > &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
->[!VIDEO](https://video.tv.adobe.com/v/333304/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333304/?learn=on&enablevpops)
 

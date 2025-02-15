@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: 70b06cca-879a-451b-8126-de2f830f056a
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -24,7 +24,7 @@ O Customer Journey Analytics fornece uma interface em que os times de Analytics,
 
 Assista a este video para compreender o valor, a jornada do cliente e o processo de configuração:
 
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on&enablevpops)
 
 Mais informações sobre o Customer Journey Analytics podem ser encontra das [aqui](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
@@ -44,7 +44,7 @@ Mais informações sobre o Customer Journey Analytics podem ser encontra das [aq
 
 >[!IMPORTANT]
 >
->Este tutorial foi criado para facilar um formato específico de Bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste Tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um Participante de um Bootcamp e precisa das credenciais de acesso, entre em contato com seu presentante da Adobe para receber as informações needs árias.
+>Este tutorial foi criado para facilar um formato específico de Bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste Tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um Participante de um Bootcamp e precisa das credenciais de acesso, entre em contato com seu presentante da Adobe para receber as informações necárias.
 
 ## anstrengend
 
@@ -52,7 +52,7 @@ Mais informações sobre o Customer Journey Analytics podem ser encontra das [aq
 
 Saiba tudo sobre os conceitos do Customer Journey Analytics.
 
-[4.2 Verknüpfte Datensätze da Adobe Experience Platform ohne Customer Journey Analytics](./ex2.md)
+[4.2 Verknüpfte Datensätze mit Adobe Experience Platform ohne Customer Journey Analytics](./ex2.md)
 
 Saiba como consumir múltiplos datasets da Adobe Experience Platform no Customer Journey Analytics.
 
@@ -60,7 +60,7 @@ Saiba como consumir múltiplos datasets da Adobe Experience Platform no Customer
 
 Saiba como configurar uma visualização de dados no Customer Journey Analytics.
 
-[4.4 Vorbereitung des Customer Journey Analytics](./ex4.md)
+[4.4 Vorbereitung von dados em Customer Journey Analytics](./ex4.md)
 
 Aprenda como fazer alguma preparation ação de dados antes de continuar com a análise.
 

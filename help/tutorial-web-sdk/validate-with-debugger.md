@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Ado
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 3%
@@ -15,16 +15,16 @@ ht-degree: 3%
 
 Erfahren Sie, wie Sie Ihre Adobe Experience Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren.
 
-Der Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die in Ihren Web-Seiten implementierte Adobe-Technologie zu sehen. Laden Sie die Version für Ihren bevorzugten Browser herunter:
+Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die auf Ihren Web-Seiten implementierte Adobe-Technologie zu sehen. Laden Sie die Version für Ihren bevorzugten Browser herunter:
 
 * [Firefox-Erweiterung](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome-Erweiterung](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Wenn Sie den Debugger noch nie verwendet haben, sollten Sie sich dieses 5-minütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) um die Tag-Eigenschaft auf der Demo-Site [Luma“ hartcodiert durch ](https://luma.enablementadobe.com/content/luma/us/en.html) eigene Eigenschaft zu ersetzen.
+In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) um die Tag-Eigenschaft, die auf der Demo-Site [Luma“ hartcodiert ](https://luma.enablementadobe.com/content/luma/us/en.html), durch Ihre eigene Eigenschaft zu ersetzen.
 
 Diese Technik wird als Umgebungsumschaltung bezeichnet und ist später hilfreich, wenn Sie auf Ihrer eigenen Website mit Tags arbeiten. Damit können Sie Ihre Produktions-Website in Ihren Browser laden, jedoch mit Ihrer *Entwicklungs-)*. Mit dieser Funktion können Sie Tag-Änderungen unabhängig von Ihren regulären Code-Versionen sicher vornehmen und validieren. Schließlich ist diese Trennung der Marketing-Tag-Versionen von Ihren regulären Code-Versionen einer der Hauptgründe, warum Kunden Tags überhaupt verwenden!
 
@@ -33,8 +33,8 @@ Diese Technik wird als Umgebungsumschaltung bezeichnet und ist später hilfreich
 Am Ende dieser Lektion können Sie den Debugger für folgende Aufgaben verwenden:
 
 * Laden einer alternativen Tag-Bibliothek
-* Überprüfen Sie, ob das Client-seitige XDM-Ereignis Daten wie erwartet erfasst und an das Platform-Edge Network sendet
-* Aktivieren von Edge Trace, um Server-seitige Anforderungen anzuzeigen, die vom Platform-Edge Network gesendet werden
+* Überprüfen Sie, ob das Client-seitige XDM-Ereignis Daten wie erwartet erfasst und an Platform Edge Network sendet
+* Aktivieren von Edge Trace, um Server-seitige Anforderungen anzuzeigen, die von Platform Edge Network gesendet werden
 
 ## Voraussetzungen
 
@@ -52,11 +52,11 @@ Sie sind mit Datenerfassungs-Tags und der [Demo-Site von Luma](https://luma.enab
 
 Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie eine vorhandene Tag-Bibliothek durch eine andere ersetzen können. Diese Technik ist für die Validierung nützlich und ermöglicht es uns, viele Implementierungsschritte in diesem Tutorial zu überspringen.
 
-1. Vergewissern Sie sich, dass Sie die [Demo-Website von Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} geöffnet haben, und wählen Sie das Symbol Experience Platform Debugger-Erweiterung aus
+1. Vergewissern Sie sich, dass Sie die [Demo-Website von Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} geöffnet haben, und wählen Sie das Symbol für die Experience Platform Debugger-Erweiterung aus
 1. Der Debugger wird geöffnet und zeigt einige Details der hartcodierten Implementierung an (möglicherweise müssen Sie die Luma-Site nach dem Öffnen des Debuggers neu laden)
 1. Vergewissern Sie sich, dass der Debugger **[!UICONTROL mit Luma verbunden]** ist, wie unten dargestellt, und wählen Sie dann das Symbol &quot;**[!UICONTROL lock]**&quot; aus, um den Debugger für die Luma-Site zu sperren.
 1. Klicken Sie auf **[!UICONTROL Schaltfläche „Anmelden]** und melden Sie sich mit Ihrer Adobe-ID bei Adobe Experience Cloud an.
-1. Experience Platform Wechseln Sie jetzt im linken Navigationsbereich zu ****-Tags .
+1. Navigieren Sie jetzt zu **[!UICONTROL Experience Platform Tags]** im linken Navigationsbereich
 
    ![Debugger-Tag-Bildschirm](assets/validate-launch-screen.png)
 
@@ -77,15 +77,15 @@ Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie
 
 Während Sie mit dem Tutorial fortfahren, verwenden Sie diese Methode, um die Luma-Site Ihrer eigenen Tag-Eigenschaft zuzuordnen, um Ihre Implementierung von Platform Web SDK zu validieren. Wenn Sie Tags auf Ihrer eigenen Website verwenden, können Sie dieselbe Methode zur Validierung von Entwicklungs-Tag-Bibliotheken auf Ihrer Produktions-Website verwenden.
 
-## Client-seitige Netzwerkanfragen mit Experience Platform Debugger überprüfen
+## Überprüfen Client-seitiger Netzwerkanfragen mit Experience Platform Debugger
 
-Sie können den Debugger verwenden, um Client-seitige Beacons zu validieren, die von Ihrer Platform Web SDK-Implementierung ausgelöst werden, um die an das Platform-Edge Network gesendeten Daten anzuzeigen:
+Sie können den Debugger verwenden, um Client-seitige Beacons zu validieren, die von Ihrer Platform Web SDK-Implementierung ausgelöst werden, um die an Platform Edge Network gesendeten Daten anzuzeigen:
 
 1. Navigieren Sie **[!UICONTROL linken]** zu „Zusammenfassung“, um die Details Ihrer Tag-Eigenschaft anzuzeigen
 
    ![Registerkarte Zusammenfassung](assets/validate-summary.png)
 
-1. Wechseln Sie jetzt zum **[!UICONTROL Experience Platform Web SDK]** im linken Navigationsbereich, um die **[!UICONTROL Netzwerkanfragen“ anzuzeigen]**
+1. Wechseln Sie jetzt zu **[!UICONTROL Experience Platform Web SDK]** im linken Navigationsbereich, um die **[!UICONTROL Netzwerkanfragen“ anzuzeigen]**
 1. Öffnen Sie die **[!UICONTROL Ereignisse]** Zeile
 
    ![Adobe Experience Platform Web SDK-Anfrage](assets/validate-aep-screen.png)
@@ -112,7 +112,7 @@ Sie können auch die Details der Identitätszuordnung überprüfen:
 
 1. Kehren Sie zur [Startseite „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) zurück.
 
-1. Öffnen Sie den Abschnitt **[!UICONTROL Experience Platform Web SDK]** im linken Navigationsbereich
+1. Öffnen Sie den Abschnitt **[!UICONTROL Experience Platform Web]** SDK&quot; im linken Navigationsbereich
 
    ![Web SDK in Debugger](assets/identity-debugger-websdk-dark.png)
 
@@ -141,7 +141,7 @@ Diese Arten von Anfragedetails sind auch auf der Registerkarte Web-Entwickler-To
 
 ## Validieren von Server-seitigen Netzwerkanfragen mit Experience Platform Debugger
 
-Wie Sie in der Lektion [Konfigurieren eines Datenstroms](configure-datastream.md) gelernt haben, sendet Platform Web SDK zunächst Daten von Ihrer digitalen Eigenschaft an Platform Edge Network. Dann führt Platform Edge Network zusätzliche Server-seitige Anfragen an die entsprechenden Services durch, die in Ihrem Datenstrom aktiviert sind. Sie können die Server-seitigen Anforderungen von Platform Edge Network mithilfe von Edge Trace im Debugger überprüfen.
+Wie Sie in der Lektion [Konfigurieren eines Datenstroms](configure-datastream.md) gelernt haben, sendet Platform Web SDK zunächst Daten von Ihrer digitalen Eigenschaft an Platform Edge Network. Anschließend sendet Platform Edge Network zusätzliche Server-seitige Anfragen an die entsprechenden Services, die in Ihrem Datenstrom aktiviert sind. Sie können die Server-seitigen Anforderungen von Platform Edge Network mithilfe von Edge Trace im Debugger überprüfen.
 
 <!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
@@ -150,7 +150,7 @@ Wie Sie in der Lektion [Konfigurieren eines Datenstroms](configure-datastream.md
 
 So aktivieren Sie Edge Trace:
 
-1. Wählen Sie im linken Navigationsbereich von **[!UICONTROL Experience Platform Debugger]** Protokolle **[!UICONTROL aus]**
+1. Wählen Sie im linken Navigationsbereich von **[!UICONTROL Experience Platform Debugger]** die Option **[!UICONTROL Protokolle]**
 1. Wählen Sie die Registerkarte **[!UICONTROL Edge]** und dann **[!UICONTROL Verbinden]**
 
    ![Edge Trace verbinden](assets/analytics-debugger-edgeTrace.png)
@@ -163,10 +163,10 @@ So aktivieren Sie Edge Trace:
 
    ![Analytics-Beacon Edge Trace](assets/validate-edge-trace.png)
 
-Zu diesem Zeitpunkt können Sie keine Platform-Edge Network-Anfragen an Adobe-Programme anzeigen, da Sie keine im Datenstrom aktiviert haben. In zukünftigen Lektionen verwenden Sie Edge Trace, um die ausgehenden Server-seitigen Anforderungen an Adobe-Anwendungen und die Ereignisweiterleitung anzuzeigen. Lernen Sie jedoch zunächst ein anderes Tool zur Validierung von Server-seitigen Anfragen durch Platform Edge Network kennen: Adobe Experience Platform Assurance!
+Zu diesem Zeitpunkt können Sie keine Platform Edge Network-Anfragen anzeigen, die an Adobe-Programme gesendet werden, da Sie keine im Datenstrom aktiviert haben. In zukünftigen Lektionen verwenden Sie Edge Trace, um die ausgehenden Server-seitigen Anforderungen an Adobe-Programme und die Ereignisweiterleitung anzuzeigen. Lernen Sie jedoch zunächst ein anderes Tool zur Validierung von Server-seitigen Anfragen kennen, die von Platform Edge Network - Adobe Experience Platform Assurance - gestellt werden.
 
 [Weiter: ](validate-with-assurance.md)
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

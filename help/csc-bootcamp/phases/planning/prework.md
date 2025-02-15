@@ -3,7 +3,7 @@ title: CSC Bootcamp - Sonstige Vorbereitung
 description: CSC Bootcamp - Sonstige Vorbereitung
 doc-type: multipage-overview
 exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
-source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Adobe Commerce ist eines der vielen Produkte in Adobe Experience Cloud, mit dene
 
 Dieses Video macht Sie mit Adobe Commerce vertraut und zeigt das Produkt, das wir während des Bootcamps erstellt haben. In einem realen Szenario würden Sie die zuvor ausgewählten Marken-Assets in Adobe Commerce in die Produktkonfiguration hochladen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on&enablevpops)
 
 Sobald diese Aufgabe abgeschlossen ist, können Sie Aufgabe 3 in Workfront als zu 100 % abgeschlossen markieren.
 

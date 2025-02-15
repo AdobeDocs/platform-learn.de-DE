@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Workspace Basics, Calculated Metrics
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 2%
@@ -28,13 +28,13 @@ ht-degree: 2%
 
 Analysis Workspace beseitigt alle typischen Einschränkungen eines einzelnen Analytics-Berichts. Sie bietet eine robuste, flexible Arbeitsfläche zum Erstellen benutzerdefinierter Analyseprojekte. Ziehen Sie eine beliebige Anzahl von Datentabellen, Visualisierungen und Komponenten (Dimensionen, Metriken, Segmente und Zeitgranularitäten) in ein Projekt. Erstellen Sie sofort Aufschlüsselungen und Segmente, erstellen Sie Kohorten für Analysen, erstellen Sie Warnhinweise, vergleichen Sie Segmente, führen Sie Fluss- und Fallout-Analysen durch und kuratieren und planen Sie Berichte für die Freigabe für alle Personen in Ihrem Unternehmen.
 
-Customer Journey Analytics bringt diese Lösung auf die Platform-Daten. Wir empfehlen dringend, sich dieses vierminütige Übersichtsvideo anzusehen:
+Customer Journey Analytics stellt diese Lösung auf Platform-Daten bereit. Wir empfehlen dringend, sich dieses vierminütige Übersichtsvideo anzusehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 Wenn Sie Analysis Workspace noch nie verwendet haben, empfehlen wir dringend, sich dieses Video anzusehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### Erstellen eines Projekts
 
@@ -128,7 +128,7 @@ Vergessen Sie nicht, **berechnete** zu speichern.
 
 ### Filter: Berechnete Dimensionen
 
-Berechnungen dürfen nicht nur für Metriken durchgeführt werden. Bevor Sie mit einer Analyse beginnen, ist es auch interessant, einige **berechnete Dimensionen** zu erstellen. Das bedeutete **Segmente** zurück in Adobe Analytics. Beim Customer Journey Analytics werden diese Segmente als &quot;**&quot;**.
+Berechnungen dürfen nicht nur für Metriken durchgeführt werden. Bevor Sie mit einer Analyse beginnen, ist es auch interessant, einige **berechnete Dimensionen** zu erstellen. Das bedeutete **Segmente** zurück in Adobe Analytics. In Customer Journey Analytics werden diese Segmente als &quot;**&quot;**.
 
 ![demo](./images/prfilters.png)
 
@@ -140,11 +140,11 @@ Das Erstellen von Filtern hilft Business-Anwendern, die Analyse mit einigen wert
 
 Diese Filter können vor oder während des Analyseteils erstellt werden (was Sie in der nächsten Übung tun werden).
 
-### Datumsbereiche: Dimensionen für die berechnete Zeit
+### Datumsbereiche: Berechnete Zeitdimensionen
 
-Zeitdimensionen sind ein weiterer Typ berechneter Dimensionen. Dimension Einige werden bereits erstellt, aber Sie haben auch die Möglichkeit, in der Datenvorbereitungsphase eigene benutzerdefinierte Zeitvorgaben zu erstellen.
+Zeitdimensionen sind ein weiterer Typ berechneter Dimensionen. Einige werden bereits erstellt, aber Sie haben auch die Möglichkeit, in der Datenvorbereitungsphase eigene benutzerdefinierte Zeitdimensionen zu erstellen.
 
-Mit diesen Dimensionen für berechnete Zeiten helfen wir Analysten und Business-Anwendern, sich wichtige Daten zu merken und sie zum Filtern und Ändern der Berichtszeit zu verwenden. Typische Fragen und Zweifel, die uns bei der Analyse in den Sinn kommen:
+Mit diesen berechneten Zeitdimensionen helfen wir Analysten und Business-Anwendern, sich wichtige Daten zu merken und sie zum Filtern und Ändern der Berichtszeit zu verwenden. Typische Fragen und Zweifel, die uns bei der Analyse in den Sinn kommen:
 
 - Wann war der Schwarze Freitag letztes Jahr? 21.-29.?
 - Wann haben wir diese Fernsehkampagne im Dezember gestartet?

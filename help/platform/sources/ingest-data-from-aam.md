@@ -9,7 +9,7 @@ level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Aufnehmen von Daten mit dem Adobe Audience Manager Data Connector
 
-In diesem Integrationsvideo erfahren Sie, wie Sie mit dem Audience Manager Data Connector Eigenschaften und Segmente aus AAM in Platform importieren und mit anderen Rich-Daten kombinieren können. Weitere Informationen finden Sie in der Dokumentation zum [Audience Manager-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
+In diesem Integrationsvideo erfahren Sie, wie Sie mit dem Audience Manager Data Connector Merkmale und Segmente aus AAM in Platform importieren und mit anderen Rich-Daten kombinieren können. Weitere Informationen finden Sie in der Dokumentation zum [Audience Manager-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 
-Wenn Sie Ihre Prozesse und Mitarbeiter neu konfigurieren, um von Adobe Audience Manager zu Real-time Customer Data Platform (Real-Time CDP) zu wechseln, können Sie mit dem Audience Manager-Daten-Connector Eigenschaften und Segmente aus AAM in Platform importieren, mit anderen Rich-Daten (einschließlich PII) kombinieren und an Zielpartner senden. Dieses Video führt Sie durch die Konfiguration des AAM Data Connectors für Real-Time CDP.
+Wenn Sie Ihre Prozesse und Mitarbeiter neu konfigurieren, um von Adobe Audience Manager zu Real-Time Customer Data Platform (Real-Time CDP) zu wechseln, können Sie den Audience Manager-Daten-Connector verwenden, um Eigenschaften und Segmente aus AAM in Platform zu importieren, sie mit anderen Rich-Daten (einschließlich PII) zu kombinieren und an Zielpartner zu senden. Dieses Video führt Sie durch die Konfiguration des AAM Data Connectors für Real-Time CDP.
 
 >[!WARNING]
 >

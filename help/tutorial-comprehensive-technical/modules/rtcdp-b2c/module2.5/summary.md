@@ -4,7 +4,7 @@ description: Zusammenfassung und Vorteile
 kt: 5342
 doc-type: tutorial
 exl-id: 7086f844-f21c-45d4-a7d9-3e695233b4b7
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Dank der Datenerfassung von Adobe Experience Platform sind Sie als Marke nun in 
 - Tech Blog: [Lösen von Implementierungsproblemen mit Adobe Experience Platform Web SDK und Edge Network](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - Tech Blog: [Verbesserung der Leistung von Websites mit Adobe Experience Platform Web SDK und Edge Network](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
 - Dokumentation: [Serverseitige Übersicht über die Adobe Experience Platform-Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
-- Video: [Implementieren von Edge und Adobe Experience Platform-Datenerfassungsserver mithilfe einer Tag Management-Lösung ohne Adobe](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
+- Video: [Implementieren von Edge und Adobe Experience Platform-Datenerfassungsserver mit einer Tag Management-Lösung, die nicht von Adobe stammt](https://video.tv.adobe.com/v/331986?quality=12&learn=on&enablevpops)
 
 [Zurück zum Modul 2.5](./aep-data-collection-ssf.md)
 

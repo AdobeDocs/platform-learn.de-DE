@@ -2,13 +2,13 @@
 title: Aufnehmen von Streaming-Daten
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Aufnehmen von Streaming-Daten
-description: In dieser Lektion werden Sie Daten mit der Web-SDK auf Experience Platform streamen.
+description: In dieser Lektion werden Sie Daten mithilfe der Web-SDK in Experience Platform streamen.
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '3309'
 ht-degree: 0%
@@ -31,13 +31,13 @@ Es gibt zwei Hauptaufgaben, die wir in der Datenerfassungsoberfläche ausführen
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich diese beiden kurzen Videos an, um mehr über die Streaming-Datenaufnahme und Web SDK zu erfahren:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Während sich dieses Tutorial auf die Streaming-Aufnahme von Websites mit Web SDK konzentriert, können Sie Daten auch mit dem [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect) und anderen Methoden streamen.
+>Während sich dieses Tutorial auf die Streaming-Aufnahme von Websites mit Web SDK konzentriert, können Sie Daten auch mit dem [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect) und anderen Mechanismen streamen.
 
 ## Erforderliche Berechtigungen
 
@@ -101,7 +101,7 @@ Im nächsten Bildschirm geben Sie an, wohin Sie Daten senden möchten. So senden
 1. Schalten Sie **[!UICONTROL Adobe Experience Platform ein]** um zusätzliche Felder anzuzeigen
 1. Wählen **[!UICONTROL für]** Sandbox`Luma Tutorial`
 1. Wählen **[!UICONTROL für]** Ereignisdatensatz`Luma Web Events Dataset`
-1. Wenn Sie andere Adobe-Programme verwenden, können Sie die anderen Abschnitte lesen, um zu sehen, welche Informationen in der Edge-Konfiguration dieser anderen Lösungen erforderlich sind. Denken Sie daran, dass Web SDK nicht nur entwickelt wurde, um Daten auf Experience Platform zu streamen, sondern auch, um alle bisherigen JavaScript-Bibliotheken zu ersetzen, die von anderen Adobe-Anwendungen verwendet wurden. Die Edge-Konfiguration wird verwendet, um die Kontodetails der einzelnen Anwendungen anzugeben, an die Sie die Daten senden möchten.
+1. Wenn Sie andere Adobe-Programme verwenden, können Sie die anderen Abschnitte lesen, um zu sehen, welche Informationen in der Edge-Konfiguration dieser anderen Lösungen erforderlich sind. Denken Sie daran, dass Web SDK nicht nur entwickelt wurde, um Daten in Experience Platform zu streamen, sondern auch, um alle vorherigen JavaScript-Bibliotheken zu ersetzen, die von anderen Adobe-Programmen verwendet wurden. Die Edge-Konfiguration wird verwendet, um die Kontodetails der einzelnen Anwendungen anzugeben, an die Sie die Daten senden möchten.
 1. Wählen Sie **[!UICONTROL Speichern]**
    ![Konfigurieren des Datenstroms und Speichern](assets/websdk-edgeConfig-addEnvironment.png)
 
@@ -188,7 +188,7 @@ Jetzt erstellen wir eine Regel, um Daten an Platform zu senden. Eine Regel ist e
 1. Wählen **[!UICONTROL Speichern]**, um die Regel zu speichern\
    ![Speichern der Regel](assets/websdk-property-saveRule.png)
 
-## Publish der Regel in einer Bibliothek
+## Veröffentlichen der Regel in einer Bibliothek
 
 Als Nächstes veröffentlichen wir die Regel in unserer Entwicklungsumgebung, damit wir überprüfen können, ob sie funktioniert.
 
@@ -248,14 +248,14 @@ Wie Sie auf dem Bildschirm [!UICONTROL Publishing-Ablauf] sehen können, gibt es
 
 ### Adobe Experience Platform Debugger hinzufügen
 
-Der Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die in Ihren Web-Seiten implementierte Adobe-Technologie zu sehen. Laden Sie die Version für Ihren bevorzugten Browser herunter:
+Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die auf Ihren Web-Seiten implementierte Adobe-Technologie zu sehen. Laden Sie die Version für Ihren bevorzugten Browser herunter:
 
 * [Firefox-Erweiterung](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Wenn Sie den Debugger noch nie verwendet haben - und dieser unterscheidet sich vom älteren Adobe Experience Cloud Debugger - sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Öffnen der Luma-Website
 
@@ -268,11 +268,11 @@ Diese gehostete Website ist der Grund, warum wir `enablementadobe.com` im Feld [
 
 ![Luma-Homepage](assets/websdk-luma-homepage.png)
 
-### Verwenden Sie den Experience Platform-Debugger, um eine Zuordnung zu Ihrer Tag-Eigenschaft vorzunehmen
+### Verwenden Sie den Experience Platform Debugger, um eine Zuordnung zu Ihrer Tag-Eigenschaft vorzunehmen
 
 Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie eine vorhandene Tag-Eigenschaft durch eine andere ersetzen können. Dies ist für die Validierung nützlich und ermöglicht es uns, viele Implementierungsschritte in diesem Tutorial zu überspringen.
 
-1. Stellen Sie sicher, dass die Luma-Site geöffnet ist und wählen Sie das Symbol Experience Platform Debugger-Erweiterung aus
+1. Stellen Sie sicher, dass die Luma-Site geöffnet ist und wählen Sie das Symbol für die Experience Platform Debugger-Erweiterung aus
 1. Der Debugger wird geöffnet und zeigt einige Details der hartcodierten Implementierung an, die nicht mit diesem Tutorial zusammenhängt (Sie müssen die Luma-Site möglicherweise nach dem Öffnen des Debuggers neu laden)
 1. Vergewissern Sie sich, dass der Debugger **[!UICONTROL mit Luma verbunden]** ist, wie unten dargestellt, und wählen Sie dann das Symbol &quot;**[!UICONTROL lock]**&quot; aus, um den Debugger für die Luma-Site zu sperren.
 1. Wählen Sie die **[!UICONTROL Anmelden]**-Schaltfläche oben rechts aus, um sich zu authentifizieren.
@@ -301,7 +301,7 @@ Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie
 
 
 
-## Daten auf Experience Platform validieren
+## Validieren der Daten in Experience Platform
 
 Sie können überprüfen, ob Daten in Platform landen, indem Sie sich die in der `Luma Web Events Dataset` eingehenden Datenstapel ansehen. (Ich weiß, es heißt Streaming-Datenaufnahme, aber jetzt sage ich, es kommt in Batches! Er wird in Echtzeit an Profile gestreamt, sodass er für die Echtzeit-Segmentierung und -Aktivierung verwendet werden kann, aber in Batches alle 15 Minuten an den Data Lake gesendet wird.)
 
@@ -389,7 +389,7 @@ Sie können auch überprüfen, ob die Seitennamen-Daten in Platform empfangen wu
 
 ## Zusätzliche Identitäten senden
 
-Ihre Web SDK-Implementierung sendet jetzt Ereignisse mit der Experience Cloud-ID (ECID) als primärer Kennung. Die ECID wird automatisch von der Web-SDK generiert und ist pro Gerät und Browser eindeutig. Ein Kunde kann über mehrere ECIDs verfügen, je nachdem, welches Gerät und welchen Browser er verwendet. Wie können wir uns also einen einheitlichen Überblick über diesen Kunden verschaffen und seine Online-Aktivitäten mit unseren CRM-, Treue- und Offline-Kaufdaten verknüpfen? Wir tun dies, indem wir während ihrer Sitzung zusätzliche Identitäten erfassen und ihr Profil durch Identitätszuordnung deterministisch verknüpfen.
+Ihre Web-SDK-Implementierung sendet jetzt Ereignisse mit der Experience Cloud-ID (ECID) als primärer Kennung. Die ECID wird automatisch von der Web-SDK generiert und ist pro Gerät und Browser eindeutig. Ein Kunde kann über mehrere ECIDs verfügen, je nachdem, welches Gerät und welchen Browser er verwendet. Wie können wir uns also einen einheitlichen Überblick über diesen Kunden verschaffen und seine Online-Aktivitäten mit unseren CRM-, Treue- und Offline-Kaufdaten verknüpfen? Wir tun dies, indem wir während ihrer Sitzung zusätzliche Identitäten erfassen und ihr Profil durch Identitätszuordnung deterministisch verknüpfen.
 
 Wenn Sie sich erinnern, erwähnte ich, dass wir die ECID und CRM-ID als Identitäten für unsere Web-Daten in der Lektion [Identitäten zuordnen](map-identities.md) verwenden würden. Lassen Sie uns also die CRM-ID mit der Web-SDK erfassen!
 

@@ -4,7 +4,7 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ## Validieren der Daten in der Anfrage
 
-### Installieren des Adobe Experience Platform Debuggers
+### Installieren von Adobe Experience Platform Debugger
 
-Der Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die in Ihren Web-Seiten implementierte Adobe-Technologie zu sehen. Installieren Sie die Version für Ihren bevorzugten Browser:
+Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die auf Ihren Web-Seiten implementierte Adobe-Technologie zu sehen. Installieren Sie die Version für Ihren bevorzugten Browser:
 
 - [Firefox-Erweiterung](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -25,9 +25,9 @@ Der Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Fire
 
 Wenn Sie den Debugger noch nie verwendet haben - und dieser unterscheidet sich vom vorherigen Adobe Experience Cloud Debugger - sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on&enablevpops)
 
-Da Sie die Demo-Website im Inkognito-Modus laden werden, müssen Sie sicherstellen, dass der Experience Platform-Debugger auch im Inkognito-Modus verfügbar ist. Navigieren Sie dazu zu **chrome://extensions** in Ihrem Browser und öffnen Sie die Experience Platform-Debugger-Erweiterung.
+Da Sie die Demo-Website im Inkognito-Modus laden werden, müssen Sie sicherstellen, dass der Experience Platform-Debugger auch im Inkognito-Modus verfügbar ist. Navigieren Sie dazu zu **chrome://extensions** in Ihrem Browser und öffnen Sie die Experience Platform Debugger-Erweiterung.
 
 Stellen Sie sicher, dass diese beiden Einstellungen aktiviert sind:
 
@@ -62,9 +62,9 @@ Ihre Website wird dann in einem Inkognito-Browser-Fenster geladen. Für jede Dem
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web7.png)
 
-### Verwenden Sie den Experience Platform-Debugger, um die Aufrufe an die Edge anzuzeigen
+### Verwenden Sie den Experience Platform Debugger, um die Aufrufe an die Edge anzuzeigen
 
-Stellen Sie sicher, dass die Demo-Website geöffnet ist und klicken Sie auf das Symbol Experience Platform Debugger-Erweiterung .
+Stellen Sie sicher, dass die Demo-Website geöffnet ist und klicken Sie auf das Symbol der Experience Platform Debugger-Erweiterung .
 
 ![EXP News Homepage](./images/ext2.png)
 
@@ -90,7 +90,7 @@ Rufen Sie als Nächstes eine beliebige Seite der Demo-Website auf, z. B. die Kat
 
 ![AEP Debugger AEP Web SDK-Erweiterung](./images/validate4.png)
 
-Klicken Sie nun im linken Navigationsbereich auf **[!UICONTROL Experience Platform Web]** SDK, um die **[!UICONTROL Netzwerkanfragen“]**.
+Klicken Sie jetzt im linken Navigationsbereich auf ]**0}Experience Platform Web SDK, um die**[!UICONTROL  Netzwerkanfragen“ ]**.**[!UICONTROL 
 
 Jede Anfrage enthält eine **[!UICONTROL Ereignis]**-Zeile.
 

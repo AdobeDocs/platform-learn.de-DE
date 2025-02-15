@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Identity-Namespaces konfigurieren, die mit Ad
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -15,13 +15,13 @@ ht-degree: 12%
 
 Erfahren Sie, wie Sie Identity-Namespaces für die Verwendung mit dem Adobe Experience Platform Web SDK konfigurieren.
 
-Der [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/de/docs/id-service/using/home) legt eine gemeinsame Besucher-ID (die ECID) für SDK-basierte Adobe-Anwendungen fest, um Experience Cloud-Funktionen wie die gemeinsame Nutzung von Audiences zwischen Anwendungen zu ermöglichen. Sie können auch eigene Kunden-IDs an den Service senden, um geräteübergreifendes Targeting und Integrationen mit anderen Systemen zu ermöglichen, z. B. Ihrem CRM-System (Customer Relationship Management).
+Der [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/de/docs/id-service/using/home) legt eine gemeinsame Besucher-ID (die ECID) für alle SDK-basierten Adobe-Anwendungen fest, um Experience Cloud-Funktionen wie die gemeinsame Nutzung von Audiences zwischen Programmen zu unterstützen. Sie können auch eigene Kunden-IDs an den Service senden, um geräteübergreifendes Targeting und Integrationen mit anderen Systemen zu ermöglichen, z. B. Ihrem CRM-System (Customer Relationship Management).
 
 Der [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (ja, es gibt zwei!) verwendet die ECIDs und Kunden-IDs, um Identitätsdiagramme zu generieren, sodass Sie Attribute und Verhaltensweisen in Echtzeit-Kundenprofilen zusammenführen können.
 
 >[!NOTE]
 >
->Ein benutzerdefinierter Identity-Namespace ist _nicht erforderlich_ um Adobe Analytics, Adobe Target oder Adobe Audience Manager mit Web SDK zu implementieren (authentifizierte Identitäten können im `data`-Objekt anstelle des `xdm`-Objekts übergeben werden, wie Sie später sehen werden). Identity-Namespaces sind für plattformnative Programme wie Journey Optimizer, Real-time Customer Data Platform und Customer Journey Analytics erforderlich. Sie können sich zwar dafür entscheiden, in Ihrer eigenen Implementierung keinen Identity-Namespace zu verwenden, dies wird jedoch im Rahmen dieses Tutorials erwartet.
+>Ein benutzerdefinierter Identity-Namespace ist _nicht erforderlich_ um Adobe Analytics, Adobe Target oder Adobe Audience Manager mit Web SDK zu implementieren (authentifizierte Identitäten können im `data`-Objekt anstelle des `xdm`-Objekts übergeben werden, wie Sie später sehen werden). Identity-Namespaces sind für plattformnative Programme wie Journey Optimizer, Real-Time Customer Data Platform und Customer Journey Analytics erforderlich. Sie können sich zwar dafür entscheiden, in Ihrer eigenen Implementierung keinen Identity-Namespace zu verwenden, dies wird jedoch im Rahmen dieses Tutorials erwartet.
 
 >[!NOTE]
 >
@@ -43,9 +43,9 @@ Sie müssen die vorherigen Lektionen bereits abgeschlossen haben:
 
 >[!IMPORTANT]
 >
->Die [Experience Cloud-ID-Erweiterung](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) wird bei der Implementierung von Adobe Experience Platform Web SDK nicht benötigt, da die Web SDK JavaScript-Bibliothek die Funktionalität des Besucher-ID-Diensts enthält.
+>Die [Experience Cloud ID-Erweiterung](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) wird bei der Implementierung von Adobe Experience Platform Web SDK nicht benötigt, da die Web SDK JavaScript-Bibliothek die Funktionalität des Besucher-ID-Diensts enthält.
 >
-> Wenn Ihre Website bereits den Experience Cloud-ID-Dienst auf Ihrer Website verwendet - entweder über die Besucher-API oder die Experience Cloud-ID-Dienst-Tag-Erweiterung - und Sie ihn während der Migration zu Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Besucher-API oder die Tag-Erweiterung des Experience Cloud-ID-Dienstes verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) für weitere Informationen.
+> Wenn Ihre Website bereits den Experience Cloud ID-Service auf Ihrer Website verwendet - entweder über die Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service - und Sie ihn während der Migration zu Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) für weitere Informationen.
 
 ## Erstellen eines Identity-Namespace
 
@@ -53,7 +53,7 @@ In dieser Übung erstellen Sie einen Identity-Namespace für das benutzerdefinie
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Identitäten in Adobe Experience Platform zu erfahren:
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 Erstellen Sie jetzt einen Namespace für die Luma CRM-ID:
 
@@ -100,4 +100,4 @@ Nachdem Identitäten eingerichtet sind, kann der Datenstrom konfiguriert werden.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
