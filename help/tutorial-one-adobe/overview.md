@@ -3,9 +3,9 @@ title: Überblick - Umfassendes technisches Tutorial - One Adobe
 description: Umfassendes technisches Tutorial - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 2%
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Übersicht
-
-Dieses Tutorial ist der perfekte Ausgangspunkt für
 
 Dieses Tutorial ist sehr vielfältig und bietet klare Einblicke in die folgenden Programme:
 
@@ -50,17 +48,13 @@ Wenn Sie dieses Tutorial mit Ihrer eigenen Adobe Experience Cloud-Instanz durchf
 - Adobe Experience Platform-Datenerfassung: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - Zugriff auf das Demosystem: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
-## Vorbereitung
-
-Überprüfen Sie die erforderlichen Anwendungen, die auf Ihrem Computer installiert werden müssen [hier](./prework.md){target="_blank"}.
-
 ## Abschluss und Zertifizierung
 
 Dieses Tutorial ist Teil eines Adobe-Zertifizierungskurses. Sie können sich neben diesem Tutorial unter [https://certification.adobe.com für den Kurs ](https://certification.adobe.com).
 
 Für jedes Modul, das Sie mit dem folgenden Tutorial abschließen, müssen Sie einen Abschlussnachweis wie [ angegeben ](./completion.md).
 
-## Inhalt
+## Inhaltsstatus
 
 Um den Status der folgenden Inhalte zu überprüfen, gehen Sie bitte zur [Statusseite](./status.md){target="_blank"}.
 
@@ -68,7 +62,7 @@ Um den Status der folgenden Inhalte zu überprüfen, gehen Sie bitte zur [Status
 
 [Erste Schritte](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-In diesem grundlegenden Modul werden Sie alles so einrichten, dass Sie auf die Demo-Umgebung zugreifen und sie verwenden können.
+In diesem grundlegenden Modul bereiten Sie alles vor, damit Sie auf die Demo-Umgebung zugreifen und sie verwenden können.
 
 ### 1. Workflow und Planung
 
