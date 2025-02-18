@@ -1,18 +1,18 @@
 ---
-title: Publish - Die Migration zu Staging und Produktion
+title: Veröffentlichen der Migration in der Staging- und Produktionsumgebung
 description: Wenn die gesamte Entwicklung für die Migration abgeschlossen und validiert ist, erstellen Sie in der Staging-Umgebung und veröffentlichen Sie dann in der Produktionsumgebung, wenn Sie bereit sind.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
-source-git-commit: 15f2122c53a3b2f3dc1942502e908403e55519ab
+exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
+source-git-commit: 3084590685bee9cd139c27b9a27026f08abf897f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-
-# Publish - Die Migration zu Staging und Produktion
+# Veröffentlichen der Migration in der Staging- und Produktionsumgebung
 
 Wenn die gesamte Entwicklung für die Migration abgeschlossen und validiert ist, erstellen Sie in der Staging-Umgebung und veröffentlichen Sie dann in der Produktionsumgebung, wenn Sie bereit sind.
 
@@ -51,6 +51,6 @@ Ich füge hier einen wichtigen Hinweis hinzu, den wir am Anfang dieses Tutorials
 
 >[!IMPORTANT]
 >
->Beachten Sie, dass einer der Hauptgründe für diese Migration Ihrer Implementierung die Vorbereitung auf die Verwendung von Adobe Experience Platform-Programmen wie Customer Journey Analytics, Real-Time CDP oder Journey Optimizer ist (wie oben #3). Die Verwendung Ihrer Website-Daten zu diesem Zweck umfasst zusätzliche Schritte, die in diesem Tutorial nicht enthalten sind, aber dieses Tutorial ist sicherlich eine Voraussetzung für diesen weiteren Fortschritt Ihrer Implementierung. Schließen Sie daher dieses Tutorial ab, und führen Sie dann die Schritte aus, die erforderlich sind, um dieselben Website-Daten auch an die Experience Platform zu senden.
+>Beachten Sie, dass einer der Hauptgründe für diese Migration Ihrer Implementierung die Vorbereitung auf die Verwendung von Adobe Experience Platform-Programmen wie Customer Journey Analytics, Real-Time CDP oder Journey Optimizer ist. Die Verwendung Ihrer Website-Daten zu diesem Zweck umfasst zusätzliche Schritte, die in diesem Tutorial nicht enthalten sind, aber dieses Tutorial ist sicherlich eine Voraussetzung für diesen weiteren Fortschritt Ihrer Implementierung. Nachdem Sie dieses Tutorial abgeschlossen haben, können Sie nun die Schritte ausführen, die erforderlich sind, um dieselben Website-Daten auch an Experience Platform zu senden.
 
 Viel Glück auf Ihrem Journey mit Analytics und anderen Inhalts- und Marketingbemühungen!
