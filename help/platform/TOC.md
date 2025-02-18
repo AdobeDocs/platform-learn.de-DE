@@ -5,15 +5,57 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: ce28c48d554727ce42803400373826315f5b2153
+source-git-commit: 4d403a6694f856a9020fe9dfd541693603c57c69
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '882'
 ht-degree: 22%
 
 ---
 
 
 # Adobe Experience Platform-Tutorials {#tutorials}
+
+<!--
+
+Data Modeling
+
+Profile vs Data Lake vs Identity
+how a record becomes an audience member
+
+Profiles
+Identities
+Audience
+
+Data Lake
+
+Data Ingestion
+-Batch
+-Streaming
+-Edge (Data Collection)
+-Monitoring
+
+Data Governance
+Privacy
+Consent
+Audit logs
+
+Administration
+-Sandboxes
+-Permissions
+-License usage
+
+
+---
+App specific
+
+Destinations
+
+Journeys
+
+Campaigns
+
+-->
+
 
 + [Platform-Tutorials](/help/platform/overview.md)
 + Einführung in Platform {#intro-to-platform}
@@ -37,15 +79,16 @@ ht-degree: 22%
 + [Bei Experience Platform-APIs authentifizieren](/help/platform/authentication/platform-api-authentication.md)
 + [Beispieldaten nach Experience Platform importieren](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
-   + [Verwenden von Warnhinweisen](/help/platform/admin/use-alerts.md)
-   + [Verwenden von Sandboxes](/help/platform/admin/use-sandboxes.md)
-   + [Kopieren von Paketen zwischen Sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [Freigeben von Paketen in IMS-Organisationen](/help/platform/admin/share-packages-across-orgs.md)
+   + [Übersicht](/help/platform/admin/overview.md)
    + [Benutzer hinzufügen](/help/platform/admin/add-users.md)
-   + [Benutzer zur Datenerfassung hinzufügen](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
+   + [Benutzer zur Datenerfassung hinzufügen](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
    + [Hinzufügen von Entwicklern](/help/platform/admin/add-developers.md)
    + [Hinzufügen von Produktadministratoren](/help/platform/admin/add-product-administrators.md)
    + [Konfigurieren der attributbasierten Zugriffssteuerung](/help/platform/admin/configure-attribute-based-access-control.md)
+   + [Verwenden von Sandboxes](/help/platform/admin/use-sandboxes.md)
+   + [Kopieren von Paketen zwischen Sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Freigeben von Paketen in IMS-Organisationen](/help/platform/admin/share-packages-across-orgs.md)
+   + [Verwenden von Warnhinweisen](/help/platform/admin/use-alerts.md)
 + KI-Assistent {#ai-assistant}
    + [Übersicht](/help/platform/ai-assistant/overview.md)
    + [Zugriff erhalten](/help/platform/ai-assistant/access.md)
