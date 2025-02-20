@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 4d403a6694f856a9020fe9dfd541693603c57c69
+source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
 workflow-type: tm+mt
 source-wordcount: '882'
-ht-degree: 22%
+ht-degree: 21%
 
 ---
 
@@ -166,7 +166,7 @@ Campaigns
    + [Ziele – Übersicht](/help/platform/destinations/understanding-destinations.md)
    + [Mit Zielen verbinden](/help/platform/destinations/connecting-to-destinations.md)
    + [Erstellen von Zielen und Aktivieren von Daten](/help/platform/destinations/create-destinations-and-activate-data.md)
-   + [Profile und Segmente für ein Ziel aktivieren](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [Profile und Audiences für ein Ziel aktivieren](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [Konfigurieren eines Datensatz-Exportziels](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Integration mit Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Konfigurieren des Azure Blob-Ziels](/help/platform/destinations/configure-the-azure-blob-destination.md)
