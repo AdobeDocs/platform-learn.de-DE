@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
 
 # 1.2.3 Prozessautomatisierung mit Workfront Fusion
 
-Erfahren Sie, wie Sie die Automatisierung mit Workfront Fusion verarbeiten können.
+Erfahren Sie, wie Sie die Prozessautomatisierung mit Workfront Fusion durchführen.
 
 ## Iteration über mehrere Werte 1.2.3.1
 
@@ -200,7 +200,7 @@ Bisher haben Sie Ihr Szenario zum Testen manuell ausgeführt. Aktualisieren wir 
 
 ## Nächste Schritte
 
-Wechseln Sie zu [Zusammenfassung und Vorteile von Firefly Services Automation](./summary.md){target="_blank"}
+Wechseln Sie zur Automatisierung von [1.2.4 mithilfe von Connectoren](./ex4.md){target="_blank"}
 
 Zurück zu [Automatisieren von Adobe Firefly-Services](./automation.md){target="_blank"}
 
