@@ -5,7 +5,7 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
+source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 21%
@@ -103,19 +103,19 @@ Campaigns
 + Zielgruppen und {#audiences}
    + [Einführung in Audience Portal und Komposition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Audiences hochladen](audiences/upload-audiences.md)
-   + [Übersicht über die Komposition einer zusammengeführten Zielgruppe](audiences/overview-of-federated-audience-composition.md)
-   + [Verbinden und Konfigurieren der Federated Audience-Komposition](audiences/connect-and-configure-federated-audience-composition.md)
-   + [Erstellen einer Federated-Audience-Komposition](audiences/create-a-federated-audience-composition.md)
-   + [Übersicht über den Builder für Zielgruppenregeln](audiences/audience-rule-builder-overview.md)
-   + [Erstellen von Zielgruppen](audiences/create-audiences.md)
-   + [Zeitbeschränkungen verwenden](audiences/time-constraints.md)
-   + [Erstellen von inhaltsbasierten Zielgruppen](audiences/create-content-based-audiences.md)
-   + [Erstellen von Konversionszielgruppen](audiences/create-conversion-audiences.md)
-   + [Erstellen von Zielgruppen aus vorhandenen Zielgruppen](audiences/create-audiences-from-existing-audiences.md)
-   + [Erstellen sequenzieller Zielgruppen](audiences/create-sequential-audiences.md)
-   + [Dynamische Zielgruppen erstellen](audiences/create-dynamic-audiences.md)
-   + [Erstellen von Audiences mit mehreren Entitäten](audiences/create-multi-entity-audiences.md)
-   + [Erstellen und Aktivieren von Konto-Zielgruppen (B2B)](audiences/create-audiences-with-b2b-data.md)
+   + [Übersicht über die Komposition einer zusammengeführten Zielgruppe](audiences/fac/overview-of-federated-audience-composition.md)
+   + [Verbinden und Konfigurieren der Federated Audience-Komposition](audiences/fac/connect-and-configure-federated-audience-composition.md)
+   + [Erstellen einer Federated-Audience-Komposition](audiences/fac/create-a-federated-audience-composition.md)
+   + [Übersicht über den Builder für Zielgruppenregeln](audiences/audience-builder/audience-rule-builder-overview.md)
+   + [Erstellen von Zielgruppen](audiences/audience-builder/create-audiences.md)
+   + [Zeitbeschränkungen verwenden](audiences/audience-builder/time-constraints.md)
+   + [Erstellen von inhaltsbasierten Zielgruppen](audiences/audience-builder/create-content-based-audiences.md)
+   + [Erstellen von Konversionszielgruppen](audiences/audience-builder/create-conversion-audiences.md)
+   + [Erstellen von Zielgruppen aus vorhandenen Zielgruppen](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+   + [Erstellen sequenzieller Zielgruppen](audiences/audience-builder/create-sequential-audiences.md)
+   + [Dynamische Zielgruppen erstellen](audiences/audience-builder/create-dynamic-audiences.md)
+   + [Erstellen von Audiences mit mehreren Entitäten](audiences/audience-builder/create-multi-entity-audiences.md)
+   + [Erstellen und Aktivieren von Konto-Zielgruppen (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Demo zur Streaming-Segmentierung](/help/platform/audiences/streaming-segmentation-demo.md)
    + [Auswerten einer Zielgruppenregel](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Erstellen eines Datensatzes zum Exportieren von Daten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
