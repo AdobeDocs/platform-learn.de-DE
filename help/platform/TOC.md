@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
+source-git-commit: 19d1ea02c33685f250e4fdf2a94c90fa66c5ee7b
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '888'
 ht-degree: 21%
 
 ---
@@ -70,7 +70,7 @@ Campaigns
    + [Benutzeroberfläche](/help/platform/intro-to-platform/interface-tour.md)
    + [Rollen und Projektphasen](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Einführung in Real-Time CDP {#rtcdp}
-   + [Übersicht](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+   + [Überblick](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [End-to-End-Demo](/help/platform/rtcdp/demo.md)
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [Überblick über B2B edition](/help/platform/rtcdp/b2b-overview.md)
@@ -90,7 +90,7 @@ Campaigns
    + [Freigeben von Paketen in IMS-Organisationen](/help/platform/admin/share-packages-across-orgs.md)
    + [Verwenden von Warnhinweisen](/help/platform/admin/use-alerts.md)
 + KI-Assistent {#ai-assistant}
-   + [Übersicht](/help/platform/ai-assistant/overview.md)
+   + [Überblick](/help/platform/ai-assistant/overview.md)
    + [Zugriff erhalten](/help/platform/ai-assistant/access.md)
    + [Einführung in ein neues Produkt](/help/platform/ai-assistant/onboard.md)
    + [Informationen zu Produkten](/help/platform/ai-assistant/product-knowledge.md)
@@ -126,6 +126,8 @@ Campaigns
    + [Segment Match erhält Daten](/help/platform/segments/segment-match-receiving-data.md)
 + [Audit-Protokolle](/help/platform/governance/audit-logs.md)
 + [Datenerfassung](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ Collaboration {#collaboration}
+   + [Übersicht über Real-Time CDP Collaboration](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
 + Dashboards-{#dashboards}
    + [Dashboard erstellen](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
@@ -137,7 +139,7 @@ Campaigns
    + [Einverständnis erzwingen](/help/platform/governance/enforce-consent.md)
    + [Integration mit IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + {#data-hygiene} zur Datenhygiene
-   + [Übersicht](/help/platform/data-hygiene/overview.md)
+   + [Überblick](/help/platform/data-hygiene/overview.md)
    + [Datenvorbereitung für die Datenhygiene](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Löschen von Datensätzen und Batches](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Datensätze ablaufen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
@@ -145,7 +147,7 @@ Campaigns
    + [Löschen von Profilen](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [Aktualisieren eines Profilattributs](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + {#data-ingestion} zur Datenaufnahme
-   + [Übersicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
+   + [Überblick](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Übersicht über die Batch-Aufnahme](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Erstellen und Auffüllen eines Datensatzes](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [Löschen von Datensätzen und Batches](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
@@ -189,7 +191,7 @@ Campaigns
    + {#graph-linking-rules} zur Verknüpfung von Identitätsdiagramm-Regeln
       + [Diagrammsimulation](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
-   + [Übersicht](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+   + [Überblick](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Attribution AI – Übersicht](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
    + [Attribution AI-Wert](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
    + [Konfigurieren von Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
@@ -232,7 +234,7 @@ Campaigns
    + [10 Überlegungen zum verantwortungsvollen Kundendaten-Management](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [Aufwertung der Rolle des Marketing-Experten als Data Steward](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
 + Abfragen {#queries}
-   + [Übersicht](/help/platform/queries/understanding-query-service.md)
+   + [Überblick](/help/platform/queries/understanding-query-service.md)
    + [Benutzeroberfläche von Query Service](/help/platform/queries/query-service-ui.md)
    + [Abfrage-Service-API](/help/platform/queries/query-service-api.md)
    + [Mehr zu Daten](/help/platform/queries/explore-data.md)
@@ -248,7 +250,7 @@ Campaigns
    + [Clients mit dem Abfrage-Service verbinden](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [Validieren von Daten im Data Lake](/help/platform/queries/validate-data-in-the-datalake.md)
 + Schemata {#schemas}
-   + [Übersicht](/help/platform/schemas/schemas-and-experience-data-model.md)
+   + [Überblick](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [Bausteine](/help/platform/schemas/schema-building-blocks.md)
    + [Planen des Datenmodells](/help/platform/schemas/plan-your-data-model.md)
    + [Konvertieren Ihres Datenmodells in XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
@@ -263,7 +265,7 @@ Campaigns
    + [Aktualisieren von Schemata](/help/platform/schemas/update-schemas.md)
    + [Erstellen eines Ad-hoc-Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Quellen {#sources}
-   + [Übersicht](/help/platform/sources/overview.md)
+   + [Überblick](/help/platform/sources/overview.md)
    + [Aufnehmen von Daten aus Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [Aufnehmen von Daten aus Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
    + [Aufnehmen von Daten aus Marketo](/help/platform/sources/ingest-data-from-marketo.md)
@@ -274,7 +276,7 @@ Campaigns
    + [Streamen von Daten mit Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Fehlerbehebung: SFTP-Connector](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Anwendungsfall-Playbooks {#use-case-playbooks}
-   + [Übersicht](/help/platform/use-case-playbooks/overview.md)
+   + [Überblick](/help/platform/use-case-playbooks/overview.md)
    + [Playbook-Sandbox konfigurieren](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Playbook-Instanz erstellen und veröffentlichen](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud Integrations-{#experience-cloud}
