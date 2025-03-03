@@ -3,9 +3,9 @@ title: Globale Variablen migrieren
 description: Erfahren Sie, wie Sie globale Variablen von der Analytics-Erweiterungskonfiguration zu Web SDK migrieren
 solution: Data Collection, Analytics
 feature: Web SDK
-jira: KT-16764
+jira: KT-17277
 exl-id: 0917e951-c7e0-4723-8354-d308890bdaac
-source-git-commit: d01889ca317e29ed0c37b20e17291c4cb5a3abd1
+source-git-commit: 744b26da58307f0d6f6e8715a534ca814e02371c
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 In dieser Übung erfahren Sie, wie Sie globale Variablen von der Analytics-Erweiterungskonfiguration zu Web SDK migrieren.
 
-## Übersicht
+## Überblick
 
 In der Adobe Analytics-Erweiterung gibt es einen Konfigurationsabschnitt namens „Globale Variablen“.
 
@@ -66,7 +66,7 @@ Wenn Sie keine für Sie definierten Schritte benötigen, gehen Sie zu und Sie si
    1. Wählen **für „Aktionstyp** „Variable aktualisieren“
    1. Wählen Sie rechts Ihre Variable **Datenelement** (für dieses Tutorial hieß es „Seitenansichts-Datenelement“, aber Ihr Name kann variieren)
    1. Wählen Sie **Analytics** unter dem Datenobjekt aus.
-   1. Füllen Sie die Variablen, die Sie im Abschnitt Globale Variablen in der Konfiguration der Analytics-Erweiterung gespeichert haben (in diesem Tutorial legen Sie beispielsweise eVar10 auf das Datenelement „Seitentyp“ fest)
+   1. Füllen Sie die Variablen aus, die Sie im Abschnitt „Globale Variablen“ in der Konfiguration der Analytics-Erweiterung gespeichert haben (in diesem Tutorial wird beispielsweise eVar10 auf das Datenelement „Seitentyp“ gesetzt)
 
    ![websdk-global-variables-action](assets/websdk-global-variables-action.jpg)
 
