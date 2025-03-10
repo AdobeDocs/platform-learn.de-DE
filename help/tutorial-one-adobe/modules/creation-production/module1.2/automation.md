@@ -1,14 +1,14 @@
 ---
-title: Kreative Workflow-Automatisierung mit Workfront Fusion
+title: Creative Workflow-Automatisierung mit Workfront Fusion
 description: Erfahren Sie, wie Sie Kreativ-Workflows mit Workfront Fusion automatisieren
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '197'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,10 @@ In dieser Übung verfeinern Sie Ihren Journey weiter, um den Bilderstellungsproz
 [1.2.4 Automatisierung mithilfe von Connectoren](./ex4.md){target="_blank"}
 
 In dieser Übung verfeinern Sie Ihren Journey weiter, um den Bilderstellungsprozess zu automatisieren.
+
+[1.2.5 Frame I/O und Workfront Fusion](./ex5.md){target="_blank"}
+
+In dieser Übung verbinden Sie Frame I/O mit Ihrem Workfront Fusion-Szenario.
 
 [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 

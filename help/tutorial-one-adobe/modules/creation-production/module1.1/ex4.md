@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '819'
 ht-degree: 1%
 
 ---
@@ -112,9 +112,9 @@ Klicken Sie auf die 3 Punkte **…** und dann auf **Freigeben**.
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm20.png){zoomable="yes"}
 
-Um auf ein benutzerdefiniertes Firefly-Modell zugreifen zu können, muss das benutzerdefinierte Modell für die **ID des technischen Kontos** unseres Adobe I/O-Projekts freigegeben werden.
+Um auf ein benutzerdefiniertes Firefly-Modell zugreifen zu können, muss das benutzerdefinierte Modell für die E-Mail-Adresse **technischen Kontos** Adobe I/O-Projekts freigegeben werden.
 
-Um Ihre **ID des technischen Kontos** abzurufen, navigieren Sie zu [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects). Klicken Sie, um Ihr Projekt mit dem Namen `--aepUserLdap-- Firefly` zu öffnen.
+Um Ihre E **Mail zum technischen Konto abzurufen**, navigieren Sie zu [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects). Klicken Sie, um Ihr Projekt mit dem Namen `--aepUserLdap-- One Adobe tutorial` zu öffnen.
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm24.png){zoomable="yes"}
 
@@ -122,15 +122,15 @@ Klicken Sie **OAuth Server-zu-Server**.
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm25.png){zoomable="yes"}
 
-Klicken Sie, um Ihre **ID des technischen Kontos** zu kopieren.
+Klicken Sie, um Ihre E **Mail mit dem technischen Konto zu**.
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm23.png){zoomable="yes"}
 
-Fügen Sie Ihre **ID des technischen Kontos** ein und klicken Sie auf **Zum Bearbeiten einladen**.
+Fügen Sie Ihre **E-Mail des technischen Kontos** ein und klicken Sie auf **Zum Bearbeiten einladen**.
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm21.png){zoomable="yes"}
 
-Die **ID des technischen Kontos** sollte jetzt in der Lage sein, auf das benutzerdefinierte Modell zuzugreifen.
+Das **E-Mail-** des technischen Kontos) sollte jetzt auf das benutzerdefinierte Modell zugreifen können.
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm22.png){zoomable="yes"}
 
