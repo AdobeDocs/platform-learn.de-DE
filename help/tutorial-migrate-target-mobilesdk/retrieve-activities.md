@@ -2,9 +2,9 @@
 title: Abrufen von Target-Aktivitäten - Migrieren der Adobe Target-Implementierung in Ihrer Mobile App zur Adobe Journey Optimizer - Decisioning-Erweiterung
 description: Erfahren Sie, wie Sie Adobe Target-Aktivitäten bei der Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung abrufen.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,11 @@ Stellen Sie sicher, dass Sie eine Fehlerbehandlung einschließen, um unter Fehle
 
 
 ## Anfordern und Anwenden von Inhalten bei Bedarf
+
+>[!IMPORTANT]
+>
+>Nachdem Sie Inhalte auf die App angewendet haben, müssen Sie `displayed` API auslösen, damit Target weiß, dass der Besucher den in der Aktivität angegebenen alternativen oder Standardinhalt gesehen hat. Weitere Einzelheiten finden Sie auf [ Seite ](track-events.md)Verfolgen von Target-Konversionsereignissen“.
+
 
 +++ Android-Beispiel
 
