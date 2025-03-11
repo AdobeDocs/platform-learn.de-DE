@@ -1,15 +1,15 @@
 ---
-title: Validieren von Target-Implementierungen mit der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
-description: Erfahren Sie, wie Sie Aktivitäten validieren und eine Adobe Target-Implementierung mithilfe der Adobe Journey Optimizer - Decisioning Mobile-Erweiterung debuggen.
+title: Validieren und Fehlerbehebung bei der Implementierung der Decisioning-Erweiterung
+description: Erfahren Sie, wie Sie eine Adobe Target Mobile-Implementierung mithilfe der Decisioning-Erweiterung validieren und Fehler beheben können.
 exl-id: edc6e25a-58d7-4145-97c3-bf48e980914f
-source-git-commit: 348554b5a2d43d7a882e8259b39a57af13d41ff4
+source-git-commit: a4fe85580776e5d84f6deaf3c0224f0513ba8415
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 1%
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
-# Validieren der Implementierung der Adobe Journey Optimizer Decisioning Mobile-Erweiterung
+# Validieren und Fehlerbehebung bei der Implementierung der Decisioning-Erweiterung
 
 Nachdem Sie Ihre Target-Implementierung von der Target-Erweiterung zur Decisioning-Erweiterung migriert haben, müssen Sie überprüfen, ob alles ordnungsgemäß funktioniert, bevor Sie Änderungen an Ihrer Produktions-App veröffentlichen. Adobe empfiehlt Folgendes. Ausführliche Informationen finden Sie auf dieser Seite:
 
@@ -17,47 +17,23 @@ Nachdem Sie Ihre Target-Implementierung von der Target-Erweiterung zur Decisioni
 * Sicherstellen, dass Target-Aktivitäten ordnungsgemäß bereitgestellt und gerendert werden
 * Überprüfen, ob das Reporting ordnungsgemäß funktioniert
 * Gehen Sie zu Zielgruppen und Profilskripten zurück, um sicherzustellen, dass sie mit Platform Mobile SDK und der Erweiterung Optimime kompatibel sind
-* Sicherstellen, dass Integrationen mit Adobe- oder Drittanbieterprogrammen ordnungsgemäß funktionieren
+* Sicherstellen, dass Integrationen mit Adobe oder Anwendungen von Drittanbietern ordnungsgemäß funktionieren
 
-Jede Target-Implementierung unterscheidet sich je nach Site-Architektur und verwendeten Funktionen. Sie können die folgenden Tabellen als Ausgangspunkt verwenden und alle Elemente hinzufügen, die für Ihre Implementierung eindeutig sind. Auf [ Seite „Debugging](debugging.md) dieses Tutorials werden Tools angezeigt, die Sie bei dieser Validierung verwenden können.
+Jede Target-Implementierung unterscheidet sich je nach Site-Architektur und verwendeten Funktionen. Sie können die folgenden Tabellen als Ausgangspunkt verwenden und alle Elemente hinzufügen, die für Ihre Implementierung eindeutig sind.
 
-## Technische Validierung
+## Technische Validierung und Fehlerbehebung
 
-| Validierungselement | Anmerkungen |
-|---|---|
-| | |
+Die technische Validierung und Fehlerbehebung mit Platform Mobile SDK und der Decisioning-Erweiterung wurde mit Assurance erheblich verbessert. Auf den folgenden Dokumentationsseiten erfahren Sie mehr über dieses wichtige Tool:
 
+* [Einrichten von Decisioning-Plug-ins in Assurance](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/){target=_blank}
 
-## Aktivitätsbereitstellung und -rendering
+* [Validieren und Optimieren der SDK-Einrichtung](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/){target=_blank}
 
-| Validierungselement | Notizen |
-| | |
-
-## Reporting
-
-| Validierungselement | Notizen |
-| | |
-
-## Zielgruppen und Profilskripte
-
-| Validierungselement | Anmerkungen |
-|---|---|
-| | |
-
-## Integrationen mit Adobe-Anwendungen
-
-| Validierungselement | Notizen |
-| | |
-
-## Integrationen mit Anwendungen von Drittanbietern
-
-| Validierungselement | Anmerkungen |
-|---|---|
-| | |
+* [Prüfen Sie Anfragen und simulieren Sie verschiedene Erlebnisse](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/){target=_blank}
 
 Nachdem Sie die oben genannten Validierungsschritte ausgeführt haben, können Sie sich darauf verlassen, dass die SDK-Implementierung von Platform Mobile mit der Decisioning-Erweiterung bereit für den Wechsel zur Produktionsumgebung ist.
 
-Erfahren Sie als Nächstes, wie [ eine Target-Implementierung mithilfe von Platform Web SDK ](debugging.md).
+Herzlichen Glückwunsch, Sie haben das Ende des Tutorials erreicht! Viel Glück bei der Migration Ihrer Adobe Target-Implementierung zur Decisioning-Erweiterung!
 
 >[!NOTE]
 >

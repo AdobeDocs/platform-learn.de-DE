@@ -1,10 +1,10 @@
 ---
-title: Ersteinrichtung - Migration von der Adobe Target zur Adobe Journey Optimizer - Decisioning Mobile-Erweiterung
+title: Ersteinrichtung - Migrieren der Adobe Target-Implementierung in Ihrer Mobile App zur Erweiterung Adobe Journey Optimizer - Decisioning
 description: Erfahren Sie mehr über die wichtigen Grundelemente, die für Ihre Implementierung von Platform Web SDK erforderlich sind, und richten Sie sie ein
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '373'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ Die Target-Erweiterung verfügt über [konfigurierbare Einstellungen](https://de
 
 | Target-Erweiterung | Decisioning-Erweiterung | Anmerkungen |
 | --- | --- | --- | 
-| Clientcode | n. z. | Wird automatisch vom Edge mithilfe der IMS-Organisationsdetails festgelegt |
+| Clientcode | k. A. | Wird automatisch vom Edge mithilfe der IMS-Organisationsdetails festgelegt |
 | Umgebungs-ID | Zielumgebungs-ID | Im Datenstrom konfiguriert |
 | Workspace-Zieleigenschaft | Eigenschafts-Token | Im Datenstrom konfiguriert |
 | Maximale Wartezeit | Nicht konfigurierbar | Die maximale Wartezeit mit der Decisioning-Erweiterung beträgt 10 Sekunden |
