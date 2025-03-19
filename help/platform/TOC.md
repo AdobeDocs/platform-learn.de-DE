@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 7d300c94d4d52ad4785908497afc5ec4ace038bf
+source-git-commit: 65b1ecd8b12173399d0e834a95f78a0d6d1bf6fe
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '897'
 ht-degree: 21%
 
 ---
@@ -127,7 +127,11 @@ Campaigns
 + [Audit-Protokolle](/help/platform/governance/audit-logs.md)
 + [Datenerfassung](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Collaboration {#collaboration}
-   + [Übersicht über Real-Time CDP Collaboration](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
+   + [Übersicht über Real-Time CDP Collaboration](collaboration/real-time-cdp-collaboration-overview.md)
+   + [Berechtigungen festlegen](collaboration/set-permissions-for-collaboration.md)
+   + [Advertiser-Konto einrichten](collaboration/set-up-an-advertiser-account.md)
+   + [Referenzieren von Zielgruppen als Advertiser](collaboration/reference-audiences-as-an-advertiser.md)
+   + [Verbinden mit Herausgebern](collaboration/connect-with-publishers.md)
 + Dashboards-{#dashboards}
    + [Dashboard erstellen](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
