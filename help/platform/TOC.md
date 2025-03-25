@@ -5,9 +5,9 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 65b1ecd8b12173399d0e834a95f78a0d6d1bf6fe
+source-git-commit: 0523b4508927a4995af907371e43b48c272e973c
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '902'
 ht-degree: 21%
 
 ---
@@ -117,6 +117,7 @@ Campaigns
    + [Erstellen von Audiences mit mehreren Entitäten](audiences/audience-builder/create-multi-entity-audiences.md)
    + [Erstellen und Aktivieren von Konto-Zielgruppen (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Demo zur Streaming-Segmentierung](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [Batch-Zielgruppen bei Bedarf auswerten](/help/platform/audiences/evaluate-audiences-on-demand.md)
    + [Auswerten einer Zielgruppenregel](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Erstellen eines Datensatzes zum Exportieren von Daten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [Einrichten der Segment Match-Verbindung](/help/platform/segments/segment-match-connection-setup.md)

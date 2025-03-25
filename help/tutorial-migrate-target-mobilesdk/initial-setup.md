@@ -2,9 +2,9 @@
 title: Ersteinrichtung - Migrieren der Adobe Target-Implementierung in Ihrer Mobile App zur Erweiterung Adobe Journey Optimizer - Decisioning
 description: Erfahren Sie mehr über die wichtigen Grundelemente, die für Ihre Implementierung von Platform Web SDK erforderlich sind, und richten Sie sie ein
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 45a47cde8bb5ac3baba24d7527fc4029ca3d6596
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '379'
 ht-degree: 6%
 
 ---
@@ -61,7 +61,7 @@ Die Target-Erweiterung verfügt über [konfigurierbare Einstellungen](https://de
 | Clientcode | k. A. | Wird automatisch vom Edge mithilfe der IMS-Organisationsdetails festgelegt |
 | Umgebungs-ID | Zielumgebungs-ID | Im Datenstrom konfiguriert |
 | Workspace-Zieleigenschaft | Eigenschafts-Token | Im Datenstrom konfiguriert |
-| Maximale Wartezeit | Nicht konfigurierbar | Die maximale Wartezeit mit der Decisioning-Erweiterung beträgt 10 Sekunden |
+| Maximale Wartezeit | Maximale Wartezeit | Konfigurierbar in der Decisioning-Erweiterung und in der Optimize SDK. Die standardmäßige maximale Wartezeit beträgt 10 Sekunden. |
 | Serverdomäne | Edge Network-Domain | In der Adobe Experience Platform Edge Network-Erweiterung festgelegt |
 
 Erfahren Sie als Nächstes, wie [ Target-SDK ](replace-sdk.md).
