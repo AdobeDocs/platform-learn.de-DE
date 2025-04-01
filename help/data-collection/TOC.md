@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 3ebcb866cd16b036d09def8cf629fd0ccb348dc7
+source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 28%
+source-wordcount: '199'
+ht-degree: 27%
 
 ---
 
@@ -29,30 +29,32 @@ ht-degree: 28%
    + [Erstellen und Veröffentlichen einer Bibliothek](tags/build-and-publish-a-library.md)
    + [Implementieren von in Websites mit Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
    + [Implementieren von in Websites mit Lösungs-SDKs](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=de){target="_blank"}
-   + [Implementierung in Mobile Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de){target="_blank"}
+   + [Implementierung in Mobile Apps](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + Web-SDK{#web-sdk}
-   + [Übersicht](web-sdk/overview.md)
+   + [Überblick](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
    + [Implementierungs-Tutorial (mit Tags)](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [Tutorial zum Migrieren von Target](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
-   + [Tutorial zum Migrieren von Analytics](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
+   + [Tutorial zum Migrieren von Target](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [Tutorial zum Migrieren von Analytics](https://experienceleague.adobe.com/de/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Zustimmung{#consent}
-      + [Übersicht](web-sdk/consent/overview.md)
+      + [Überblick](web-sdk/consent/overview.md)
       + [Festlegen von Einverständniswerten mit dem Adobe-Standard](web-sdk/consent/set-consent-adobe.md)
       + [Festlegen von Einverständniswerten mit dem IAB TCF 2.0-Standard](web-sdk/consent/set-consent-iab.md)
-      + [Inspect und Validieren von Einverständnisdaten](web-sdk/consent/inspect.md)
+      + [Einverständnisdaten überprüfen und validieren](web-sdk/consent/inspect.md)
       + [Tutorial mit der Einverständnisverarbeitung von Anfang bis Ende](web-sdk/consent/tutorial.md)
 + Mobile SDK{#mobile-sdk}
-   + [Übersicht](mobile-sdk/overview.md)
+   + [Überblick](mobile-sdk/overview.md)
    + [Mobile-Eigenschaften erstellen](mobile-sdk/create-mobile-properties.md)
    + [Verwenden von Abhängigkeits-Managern](mobile-sdk/use-dependency-managers.md)
-   + [Implementierung in Mobile Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de){target="_blank"}
+   + [Implementierung in Mobile Apps](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+
+   + [Tutorial zum Migrieren von Target](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + Server-API{#server-api}
-   + [Übersicht](server-api/overview.md)
+   + [Überblick](server-api/overview.md)
    + [Grundlagen von APIs](server-api/introduction.md)
 + Ereignisweiterleitung{#event-forwarding}
    + [Webinar](event-forwarding/webinar.md)
-   + [Übersicht](event-forwarding/overview.md)
+   + [Überblick](event-forwarding/overview.md)
    + [Erstellen einer Eigenschaft](event-forwarding/create-a-property.md)
    + [Einrichten eines Datenstroms](event-forwarding/set-up-a-datastream.md)
    + [Hinzufügen einer Erweiterung](event-forwarding/add-an-extension.md)
@@ -62,10 +64,10 @@ ht-degree: 28%
    + [Client-seitige Tags verschieben](event-forwarding/consider-moving-tags.md)
    + [Einrichten von erweiterten Konvertierungen für Google Ads](event-forwarding/set-up-google-ads-enhanced-conversions.md)
    + [Adobe-Erweiterung für Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
-+ Datenströme und Edge Network {#edge-network}
++ Datenströme und Edge Network{#edge-network}
    + [Konfigurieren von Datenströmen](edge/configure-datastreams.md)
    + [Datenvorbereitung](edge/data-prep.md)
    + [Verwalten sensibler Daten](edge/manage-sensitive-data-in-datastreams.md)
    + [IDs von Erstanbieter-Geräten](edge/generate-first-party-device-ids.md)
 + Debugger{#debugger}
-   + [Übersicht](debugger/overview.md)
+   + [Überblick](debugger/overview.md)

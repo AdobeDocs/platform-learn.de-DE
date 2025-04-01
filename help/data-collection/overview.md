@@ -3,10 +3,10 @@ title: Tutorials zur Datenerfassung
 description: Anleitungsvideos und Tutorials, um Sie zu einem Power User der Datenerfassung zu machen
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
+source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 24%
+source-wordcount: '263'
+ht-degree: 22%
 
 ---
 
@@ -28,11 +28,11 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrieren von Adobe Target zu Web SDK</strong>
     </a>
     </div>
@@ -41,16 +41,16 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
       <img alt="Implementieren von Adobe Experience Cloud mit dem Web SDK" src="assets/thumb_analyticsWebSdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
     <strong>Migrieren von Adobe Analytics zu Web SDK in Tags</strong>
     </a>
     </div>
     <p>
-    <em>Ersetzen von AppMeasurement.js durch Web SDK mit Tags</em>
+    <em>Ersetzen Sie AppMeasurement.js durch Web SDK mit Tags</em>
     <p>
   </td>
   <td>
@@ -64,6 +64,25 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
     <p>
   </td>
 </tr>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+      <img alt="Migrieren von Target zu Mobile SDK auf Edge Network" src="assets/thumb_targetMobileSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+    <strong>Migrieren von Adobe Target zu Mobile SDK auf Edge Network</strong>
+    </a>
+    </div>
+    <p>
+    <em>Ersetzen Sie die Target-Erweiterung durch die Journey Optimizer - Decisioning-Erweiterung</em>
+    <p>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  </tr>
 </table>
 
 ## Implementierungshandbücher
@@ -76,7 +95,7 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-    <strong>Implementieren des Experience Cloud mit Web SDK</strong>
+    <strong>Implementieren von Experience Cloud mit Web SDK</strong>
     </a>
     </div>
     <p>
@@ -89,7 +108,7 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de" target="_blank">
-    <strong>Implementieren des Experience Cloud in Mobile Apps</strong>
+    <strong>Implementieren von Experience Cloud in Mobile Apps</strong>
     </a>
     </div>
     <p>
