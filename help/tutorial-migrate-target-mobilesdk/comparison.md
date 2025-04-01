@@ -2,10 +2,10 @@
 title: Vergleich der Target-Erweiterung mit der Decisioning-Erweiterung
 description: Erfahren Sie mehr über die Unterschiede zwischen der Target-Erweiterung und der Decisioning-Erweiterung, einschließlich Funktionen, Einstellungen und Datenfluss.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 4%
+source-wordcount: '791'
+ht-degree: 3%
 
 ---
 
@@ -57,7 +57,6 @@ Nachdem Sie die folgenden Informationen durchgelesen und Ihre aktuelle Implement
 | thirdPartyId (mbox3rdPartyId) | Unterstützt | Unterstützt über Identity Map und Target Third-Party-ID-Namespace im Datenstrom |
 | Benachrichtigungen (Anzeige, Klick) | Unterstützt | Unterstützt |
 | Antwort-Token | Unterstützt | Unterstützt |
-| Analytics for Target (A4T) | Nur Client-seitig | Client- und Server-seitig |
 | Mobile-Vorschau (QA-Modus) | Unterstützt | Eingeschränkter Support mit Assurance |
 
 >[!IMPORTANT]

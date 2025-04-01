@@ -1,30 +1,22 @@
 ---
-title: Migrieren der Adobe Target-Implementierung in Ihrer Mobile App zur Erweiterung Adobe Journey Optimizer - Decisioning
+title: Mobile App von der Adobe Target zur Adobe Journey Optimizer - Decisioning-Erweiterung migrieren
 description: Erfahren Sie, wie Sie Ihre Mobile-App-Implementierung von der Adobe Target zur Adobe Journey Optimizer - Decisioning-Erweiterung migrieren.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '650'
 ht-degree: 1%
 
 ---
 
-# Migrieren der Adobe Target-Implementierung in Ihrer Mobile App zur Erweiterung Adobe Journey Optimizer - Decisioning
+# Mobile App von der Adobe Target zur Adobe Journey Optimizer - Decisioning-Erweiterung migrieren
 
 Dieses Handbuch richtet sich an erfahrene Adobe Target-Implementierer, um zu erfahren, wie Sie bestehende Adobe Experience Platform Mobile SDK-Implementierungen von der Adobe Target-Erweiterung zur Adobe Journey Optimizer-Entscheidungserweiterung migrieren.
 
 Adobe Experience Platform Mobile SDK ermöglicht die durchgängige Interaktion mit Ihren Mobile Apps. Die Target-Erweiterung baut auf der mobilen SDK auf, um Ihnen bei der Personalisierung von App-Erlebnissen mit Adobe Target zu helfen. Die Decisioning-Erweiterung ist ein neuerer Ansatz zur Implementierung von Adobe Target in Mobile Apps, der Adobe Experience Platform Edge Network-Funktionen verwendet, die die Integration von Target in Platform-basierte Apps wie Real-Time CDP und Journey Optimizer erleichtern.
 
 ![Abbildung der Verbindung von Mobile SDK mit Target über Edge Network mit der Decisioning-Erweiterung](assets/datacollection.png)
-
->[!INFO]
->
->Innerhalb des Adobe Experience Platform Mobile SDK-Ökosystems werden Erweiterungen durch SDKs implementiert, die in Ihre Anwendungen importiert werden, die unterschiedliche Namen haben können:
->
-> * **Target SDK** implementiert die Erweiterung **Adobe Target**
-> * **SDK optimieren** implementiert die Erweiterung **Adobe Journey Optimizer - Decisioning**
-
 
 ## Wichtigste Vorteile
 
