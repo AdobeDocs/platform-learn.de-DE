@@ -8,9 +8,9 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '937'
 ht-degree: 6%
 
 ---
@@ -148,7 +148,7 @@ Wiederholen Sie den Vorgang für einige Ihrer anderen Schemata:
 >
 >Mit Web SDK erfasste Daten bilden eine Ausnahme von der üblichen Praxis der Kennzeichnung von Identitätsfeldern im Schema. Web SDK verwendet die Identitätszuordnung , um Identitäten *implementierungsseitig) zu kennzeichnen* und so bestimmen wir die Identitäten für die `Luma Web Events Schema`, wenn wir Web SDK auf der Luma-Website implementieren. In dieser Lektion erfassen wir die Experience Cloud-Besucher-ID (ECID) als primäre ID und die crmId als sekundäre ID.
 
-Mit unserer Auswahl primärer Identitäten ist klar zu sehen, wie `Luma CRM Schema` eine Verbindung zum `Luma Offline Purchase Events Schema` herstellen können, da beide `loyaltyId` als Kennung verwenden. Aber wie können wir unsere Offline-Einkäufe mit dem Online-Verhalten verbinden? Wie können wir die mit unserem Produktkatalog gekauften Produkte klassifizieren? Wir verwenden zusätzliche Identitätsfelder und Schemabeziehungen.
+Mit unserer Auswahl primärer Identitäten ist klar zu sehen, wie `Luma Loyalty Schema` eine Verbindung zur `Luma Offline Purchase Events Schema` herstellen können, da beide LoyaltyId als Kennung verwenden. Aber wie kann das CRM eine Verbindung zu Offline-Kaufereignissen herstellen? Wie können wir unsere Offline-Käufe mit dem Online-Verhalten verbinden? Und wie können wir die mit unserem Produktkatalog gekauften Produkte einordnen? Wir verwenden zusätzliche Identitätsfelder und Schemabeziehungen.
 
 <!--use a visual-->
 
