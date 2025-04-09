@@ -2,7 +2,7 @@
 title: Sendeparameter - Migrieren der Adobe Target-Implementierung in Ihrer Mobile App zur Adobe Journey Optimizer - Decisioning-Erweiterung
 description: Erfahren Sie, wie Sie Mbox-, Profil- und Entitätsparameter mithilfe von Experience Platform Web SDK an Adobe Target senden.
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Profilparameter speichern Daten für einen längeren Zeitraum im Zielprofil des 
 
 ## Entitätsparameter
 
-[Entitätsparameter](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) werden verwendet, um Verhaltensdaten und zusätzliche Kataloginformationen für Target Recommendations zu übergeben. Ähnlich wie Profilparameter sollten die meisten Entitätsparameter unter dem `data.__adobe.target` Objekt übergeben werden. Die einzige Ausnahme ist, dass das `xdm.productListItems`-Array vorhanden ist, dann wird der erste `SKU` als `entity.id` verwendet.
+[Entitätsparameter](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes) werden verwendet, um Verhaltensdaten und zusätzliche Kataloginformationen für Target Recommendations zu übergeben. Ähnlich wie Profilparameter sollten die meisten Entitätsparameter unter dem `data.__adobe.target` Objekt übergeben werden. Die einzige Ausnahme ist, dass das `xdm.productListItems`-Array vorhanden ist, dann wird der erste `SKU` als `entity.id` verwendet.
 
 Entitätsparameter für ein bestimmtes Element müssen mit dem Präfix `entity.` versehen werden, um eine ordnungsgemäße Datenerfassung zu gewährleisten. Die reservierten `cartIds`- und `excludedIds`-Parameter für Recommendations-Algorithmen sollten nicht mit einem Präfix versehen werden und der Wert für jedes muss eine kommagetrennte Liste von Entitäts-IDs enthalten.
 
@@ -55,7 +55,7 @@ Target ermöglicht die Synchronisierung von Profilen über Geräte und Systeme h
 
 | Beispiel für den Parameter „at.js“ | Platform Web SDK-Option | Anmerkungen |
 | --- | --- | --- |
-| `at_property` | K. A. | Eigenschafts-Token sind im [Datenstrom](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) konfiguriert und können im `sendEvent` nicht festgelegt werden. |
+| `at_property` | K. A. | Eigenschafts-Token sind im [Datenstrom](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target) konfiguriert und können im `sendEvent` nicht festgelegt werden. |
 | `pageName` | `xdm.web.webPageDetails.name` oder <br> `data.__adobe.target.pageName` | Mbox-Zielparameter können entweder als Teil des `xdm` oder als Teil des `data.__adobe.target` übergeben werden. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Alle Zielprofilparameter müssen als Teil des `data` übergeben werden und das Präfix `profile.` aufweisen, damit sie entsprechend zugeordnet werden können. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Reservierter Parameter, der für die Zielkategorie-Affinitätsfunktion verwendet wird und als Teil des `data` übergeben werden muss. |
@@ -64,11 +64,11 @@ Target ermöglicht die Synchronisierung von Profilen über Geräte und Systeme h
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Benutzerdefinierte Entitätsparameter werden zum Aktualisieren des Recommendations-Produktkatalogs verwendet. Diese benutzerdefinierten Parameter müssen als Teil des `data` übergeben werden. |
 | `cartIds` | `data.__adobe.target.cartIds` | Wird für die Warenkorb-basierten Empfehlungsalgorithmen von Target verwendet. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Wird verwendet, um zu verhindern, dass bestimmte Entitäts-IDs in einem Recommendations-Design zurückgegeben werden. |
-| `mbox3rdPartyId` | Wird im `xdm.identityMap` festgelegt | Wird zum Synchronisieren von Target-Profilen über Geräte und Kundenattribute hinweg verwendet. Der für die Kunden-ID zu verwendende Namespace muss in der [Target-Konfiguration des Datenstroms“ angegeben ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | Wird im `xdm.identityMap` festgelegt | Wird zum Synchronisieren von Target-Profilen über Geräte und Kundenattribute hinweg verwendet. Der für die Kunden-ID zu verwendende Namespace muss in der [Target-Konfiguration des Datenstroms“ angegeben ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid). |
 | `orderId` | `xdm.commerce.order.purchaseID`<br> (wenn `commerce.purchases.value` auf `1` gesetzt ist)<br> oder<br> `data.__adobe.target.orderId` | Wird zur Identifizierung einer eindeutigen Reihenfolge für das Target-Konversions-Tracking verwendet. |
 | `orderTotal` | `xdm.commerce.order.priceTotal`<br> (wenn `commerce.purchases.value` auf `1` gesetzt ist)<br> oder<br> `data.__adobe.target.orderTotal` | Wird zum Tracking der Bestellsummen für Konversions- und Optimierungsziele von Target verwendet. |
 | `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (wenn `commerce.purchases.value` auf `1` gesetzt ist) <br>ODER<br> `data.__adobe.target.productPurchasedId` | Wird für Target-Konversionsverfolgungs- und Recommendations-Algorithmen verwendet. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Wird für das Aktivitätsziel [benutzerdefinierte Bewertung](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) verwendet. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Wird für das Aktivitätsziel [benutzerdefinierte Bewertung](https://experienceleague.adobe.com/en/docs/target/using/activities/success-metrics/capture-score) verwendet. |
 
 {style="table-layout:auto"}
 
@@ -206,4 +206,4 @@ Erfahren Sie als Nächstes, wie Sie [Target-Konversionsereignisse ](track-events
 
 >[!NOTE]
 >
->Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) posten.

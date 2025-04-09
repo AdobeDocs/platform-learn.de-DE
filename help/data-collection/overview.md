@@ -3,7 +3,7 @@ title: Tutorials zur Datenerfassung
 description: Anleitungsvideos und Tutorials, um Sie zu einem Power User der Datenerfassung zu machen
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 22%
@@ -103,11 +103,11 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="In Mobile Apps implementieren" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>Implementieren von Experience Cloud in Mobile Apps</strong>
     </a>
     </div>
@@ -116,11 +116,11 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Implementieren veralteter Bibliotheken mit Tags</strong>
     </a>
     </div>
