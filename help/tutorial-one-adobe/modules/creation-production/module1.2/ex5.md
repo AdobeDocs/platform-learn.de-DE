@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
+source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2674'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,10 @@ In einer der vorherigen Übungen haben Sie „Citisignal[fiber.psd“ ](./../../
 ## 1.2.5.2 Workfront Fusion und Frame.io
 
 In der vorherigen Übung haben Sie das Szenario `--aepUserLdap-- - Firefly + Photoshop` erstellt, das mit einem benutzerdefinierten Webhook begann und mit einer Webhook-Antwort endete. Die Verwendung der Webhooks wurde dann mit Postman getestet, aber offensichtlich soll ein solches Szenario von einer externen Anwendung aufgerufen werden. Wie bereits erwähnt, wird Frame.io diese Übung sein, aber zwischen Frame.io und dem `--aepUserLdap-- - Firefly + Photoshop` ist ein weiteres Workfront Fusion-Szenario erforderlich. Das Szenario wird jetzt konfiguriert.
+
+Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/). Öffnen Sie **Workfront Fusion**.
+
+![WF Fusion](./images/wffusion1.png)
 
 Gehen Sie im linken Menü zu **Szenarien** und wählen Sie Ihre `--aepUserLdap--` aus. Klicken Sie **Neues Szenario erstellen**.
 
@@ -122,7 +126,7 @@ Schalten Sie den Bildschirm wieder auf Workfront Fusion um. Jetzt sollte ein gr�
 
 ![Frame-IO](./images/frame22.png)
 
-Die Detailansicht der Blase zeigt die Daten an, die von Frame.io empfangen wurden. Es sollten verschiedene IDs angezeigt werden. Beispielsweise zeigt das Feld **resource.id** die eindeutige ID in Frame.io des Assets **citsignal-fiber.psd**
+Die Detailansicht der Blase zeigt die Daten an, die von Frame.io empfangen wurden. Es sollten verschiedene IDs angezeigt werden. Beispielsweise zeigt das Feld **resource.id** die eindeutige ID in Frame.io des Assets **citsignal-fiber.psd**.
 
 ![Frame-IO](./images/frame23.png)
 
