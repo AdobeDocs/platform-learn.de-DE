@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
+source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 1%
+source-wordcount: '234'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ Erfahren Sie, wie Sie Kreativ-Workflows mit Workfront Fusion automatisieren kön
 
 [1.2.1 Erste Schritte mit Workfront Fusion](./ex1.md){target="_blank"}
 
-In dieser Übung erfahren Sie mehr über Workfront Fusion in Kombination mit Firefly Services und deren Funktionen.
+In dieser Übung erfahren Sie mehr über Workfront Fusion in Kombination mit Firefly Services und dessen Funktionen.
 
 [1.2.2 Verwenden Sie Adobe-APIs in Workfront Fusion](./ex2.md){target="_blank"}
 
@@ -39,9 +39,13 @@ In dieser Übung verfeinern Sie Ihren Journey weiter, um den Bilderstellungsproz
 
 In dieser Übung verfeinern Sie Ihren Journey weiter, um den Bilderstellungsprozess zu automatisieren.
 
-[1.2.5 Frame I/O und Workfront Fusion](./ex5.md){target="_blank"}
+[1.2.5 Frame.io and Workfront Fusion](./ex5.md){target="_blank"}
 
-In dieser Übung verbinden Sie Frame I/O mit Ihrem Workfront Fusion-Szenario.
+In this exercise, you&#39;ll connect Frame.io to your Workfront Fusion scenario.
+
+[1.2.6 Frame.io to Workfront Fusion to AEM Assets](./ex6.md){target="_blank"}
+
+In this exercise, you&#39;ll further refine your setup, so that your approved asset in Frame.io uses a Workfront Fusion scenario to then export a PNG rendition of the asset towards AEM Assets.
 
 [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 

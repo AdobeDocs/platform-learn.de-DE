@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
+source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1722'
 ht-degree: 1%
 
 ---
@@ -346,8 +347,8 @@ Und ein paar Minuten später wurde eine neue PSD-Datei mit neuem Hintergrund ers
 
 ## Nächste Schritte
 
-Wechseln Sie zu [Zusammenfassung und Vorteile von Firefly Services Automation](./summary.md){target="_blank"}
+Navigieren Sie zu [1.2.5 Frame.io und Workfront Fusion](./ex5.md){target="_blank"}
 
-Zurück zu [Automatisieren von Adobe Firefly-Services](./automation.md){target="_blank"}
+Zurück zur [Creative-Workflow-Automatisierung mit Workfront Fusion](./automation.md){target="_blank"}
 
 Zurück zu [Alle Module](./../../../overview.md){target="_blank"}
