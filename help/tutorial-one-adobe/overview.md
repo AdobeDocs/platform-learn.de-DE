@@ -3,10 +3,10 @@ title: Überblick - Umfassendes technisches Tutorial - One Adobe
 description: Umfassendes technisches Tutorial - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
+source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -14,18 +14,16 @@ ht-degree: 2%
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## Übersicht
+## Überblick
 
 Dieses Tutorial ist sehr vielfältig und bietet klare Einblicke in die folgenden Programme:
 
-- Adobe Firefly Services
-- Adobe Photoshop
+- Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
 - Adobe Workfront und Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets und Edge Delivery Services
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
-
 
 Dieses Tutorial konzentriert sich nicht nur auf Adobe-Anwendungen, sondern berücksichtigt das allgemeinere Ökosystem, in dem Marken operieren. Um dies zu erreichen, konzentrieren sich einige Lektionen darauf, wie Nicht-Adobe-Anwendungen in Adobe-Anwendungen integriert werden. Auf diese Weise erhalten Sie einen tiefen Einblick in die Zusammenarbeit der folgenden Programme mit Adobe Experience Platform:
 
@@ -38,15 +36,14 @@ Dieses Tutorial konzentriert sich nicht nur auf Adobe-Anwendungen, sondern berü
 
 ## Voraussetzungen
 
-Wenn Sie dieses Tutorial mit Ihrer eigenen Adobe Experience Cloud-Instanz durchführen möchten, müssen die folgenden Programme in Ihrer Instanz bereitgestellt werden und Sie müssen auf Folgendes zugreifen können:
+If you want to take this tutorial using your own Adobe Experience Cloud instance, the following applications need to be provisioned in your instance and you need to be able to access:
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
-- Adobe Photoshop
+- Adobe Firefly
+- Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
 - Adobe Workfront
-- Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/){target="_blank"}
-- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
-- Adobe Experience Platform-Datenerfassung: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
-- Zugriff auf das Demosystem: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+- Adobe Workfront Fusion
+- Datenerfassung in Adobe Experience Platform und Adobe Experience Platform
+- Zugriff auf das Demosystem Weiter: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
 ## Abschluss und Zertifizierung
 
@@ -68,13 +65,17 @@ In diesem grundlegenden Modul bereiten Sie alles vor, damit Sie auf die Demo-Umg
 
 ### 2. Erstellung und Produktion
 
-[1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
-In diesem Modul verwenden Sie Adobe Firefly Services-APIs, Photoshop-APIs und Microsoft Azure Storage-Services, um Bilder zu generieren und programmgesteuert zu speichern.
+In diesem Modul verwenden Sie Adobe Firefly Services-APIs, Photoshop-APIs und Microsoft Azure Storage Services, um Bilder zu generieren und programmgesteuert zu speichern.
 
 [1.2 Creative Workflow-Automatisierung mit Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 In diesem grundlegenden Modul verwenden Sie Adobe Workfront Fusion, um Ihre Workflows zur Inhaltserstellung zu automatisieren und zu skalieren.
+
+[.3 Adobe Express und Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+
+In diesem grundlegenden Modul verwenden Sie Adobe Express zum Erstellen von Bildern und Videos und geben diese Assets für das gesamte Adobe Experience Cloud-Ökosystem frei.
 
 ### 3. Asset-Management
 
@@ -104,7 +105,7 @@ In diesem Modul erfahren Sie, wie Sie ein Federated-Audiences-Modell einrichten 
 
 #### Real-Time CDP B2C
 
-[2.1 Foundation - Echtzeit-Kundenprofil](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
+[2.1 Foundation - Real-time Customer Profile](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
 
 In diesem grundlegenden Modul lernen Sie das Echtzeit-Kundenprofil in Adobe Experience Platform kennen, indem Sie die Benutzeroberfläche und API verwenden.
 
@@ -148,7 +149,7 @@ In diesem Modul erfahren Sie alles, was es über Journey Optimizer zu wissen gib
 
 [3.5 Adobe Journey Optimizer: Übersetzungsdienstleistungen](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
 
-In diesem Modul erfahren Sie, wie Sie in Adobe Journey Optimizer Übersetzungsdienste einrichten und verwenden können, um Ihre Nachrichten für Ihre Kunden zu lokalisieren.
+In this module, you&#39;ll learn how to setup and use Translation Services within Adobe Journey Optimizer to localize your messages to your customers.
 
 ### 5. Reporting und Erkenntnisse
 
