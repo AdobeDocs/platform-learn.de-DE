@@ -1,16 +1,16 @@
 ---
 title: Übersicht über Real-Time CDP Collaboration
 description: Hier erhalten Sie eine Einführung in Adobe Real-Time Collaboration, eine speziell entwickelte Anwendung für die Datenerfassung, die es Ihnen ermöglicht, hochwertige Zielgruppen zu entdecken und zu aktivieren und Messfunktionen zu nutzen, um greifbare Ergebnisse zu erzielen.
-feature: Use Cases
+feature: Collaboration
 role: Leader, User
 level: Beginner
 duration: 92
-last-substantial-update: 2025-03-18T00:00:00Z
+last-substantial-update: 2025-04-17T00:00:00Z
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: cccb57946ca67afba7988aa2097aa322b4dd2107
+source-git-commit: c61d6117d523340b233a1bd1f58b35400e760b20
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ Mit Adobe Real-Time Customer Data Platform (CDP) Collaboration können Sie hochw
 Nachstehend finden Sie Videos und andere Ressourcen, in denen Sie erfahren, wie Sie Real-Time CDP Collaboration einrichten, verwenden und nutzen können. Zusätzliche Assets werden zu dieser Seite und Site hinzugefügt. Besuchen Sie sie daher öfter. Frohes Lernen!
 
 Weitere Informationen finden Sie in der Real-Time CDP Collaboration [Dokumentation](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}.
+
+[![ExL LIVE 10. April 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## Einführung
 
