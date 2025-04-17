@@ -4,7 +4,7 @@ description: Erste Schritte - Installieren der Chrome-Erweiterung für die Exper
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Ein Beispiel für solche Werte finden Sie unten. Derzeit können diese Werte noc
 | AEP IMS-Organisations-ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
 | AEP IMS-Organisationsname | `--aepImsOrgName--` | `Experience Platform International` |
 | AEP-Mandanten-ID | `--aepTenantId--` | `_experienceplatform` |
-| AEP-Sandbox-Name | `--aepSandboxName--` | `one-adobe` |
+| AEP Sandbox-Name | `--aepSandboxName--` | `one-adobe` |
 | LDAP für Teilnehmerprofil | `--aepUserLdap--` | `vangeluw` |
 
 Im folgenden Screenshot sehen Sie beispielsweise einen Verweis auf `aepSandboxName`.
@@ -88,7 +88,7 @@ Sie können ihn möglicherweise finden, indem Sie zu [Admin Console](https://htt
 
 ![DSN](./images/aepid1.png)
 
-Möglicherweise finden Sie sie auch unter **Daten-Management > Abfragen** in Ihrem AEP-Menü, wo Sie sie unter **Benutzername** finden.
+Möglicherweise finden Sie sie auch über das Menü **Daten-Management > Abfragen** in Ihrem AEP, wo Sie sie unter **Benutzername** finden.
 
 ![DSN](./images/aepid2.png)
 
@@ -102,7 +102,7 @@ Ihre Mandanten-ID ist die eindeutige Kennung der AEP-Instanz Ihres Unternehmens.
 
 Wenn Sie ihn in die Chrome-Erweiterung eingeben, sollten Sie sicherstellen, dass ein Unterstrich als Präfix hinzugefügt wird. In diesem Beispiel **experienceplatform** wird daher **_experienceplatform**.
 
-**AEP-Sandbox-Name**
+**AEP Sandbox-Name**
 
 Ihr Sandbox-Name ist der Name der Umgebung, die Sie in Ihrer AEP-Instanz verwenden werden. Wenn Sie sich auf [https://platform.adobe.com/](https://platform.adobe.com/) bei Ihrer Adobe Experience Platform-Instanz anmelden, finden Sie die Mandanten-ID in der URL.
 
@@ -110,7 +110,7 @@ Bevor Sie den Sandbox-Namen aus der URL übernehmen, sollten Sie sicherstellen, 
 
 ![DSN](./images/aepsandboxsw.png)
 
-In diesem Beispiel lautet der AEP-Sandbox-Name **one-adobe**.
+In diesem Beispiel lautet der Name der AEP-Sandbox **one-adobe**.
 
 ![DSN](./images/aepsname.png)
 
@@ -135,7 +135,7 @@ Nach der Aktivierung der Konfiguration wird neben den Initialen der Umgebung ein
 
 ## Überprüfen des Tutorial-Inhalts
 
-Gehen Sie als Test zu [diese Seite](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
+Gehen Sie als Test zu [diese Seite](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
 
 Sie sollten jetzt sehen, dass alle **Umgebungsvariablen** auf dieser Seite durch ihre wahren Werte ersetzt wurden, basierend auf der aktivierten Umgebung in der Chrome-Erweiterung.
 
