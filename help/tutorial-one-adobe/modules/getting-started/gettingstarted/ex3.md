@@ -4,7 +4,7 @@ description: Erste Schritte - Erstellen Ihres Datenstroms
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 2%
@@ -149,7 +149,7 @@ Klicken Sie auf die Erweiterung **Adobe Experience Platform Edge Network** und d
 
 ![Benennen Sie die Edge-Konfiguration und speichern Sie](./images/edgeconfig12m.png)
 
-Sie werden es dann sehen. Jetzt müssen Sie die richtige Sandbox und den richtigen Datenstrom auswählen, die Sie gerade konfiguriert haben. Die zu verwendende Sandbox wird `--aepSandboxName--` und der Datenstrom heißt `--aepUserLdap-- - Demo System Datastream (Mobile)`.
+Sie werden es dann sehen. Jetzt müssen Sie die richtige Sandbox und den richtigen Datenstrom auswählen, die Sie gerade konfiguriert haben. Die zu verwendende Sandbox wird `--aepSandboxName--` und der Datenstrom heißt `--aepUserLdap-- - One Adobe Datastream (Mobile)`.
 
 Für die **Edge Network-Domain** verwenden Sie die Standard-Domain.
 

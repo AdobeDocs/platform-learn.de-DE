@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
+source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '2050'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Sie sollten das dann sehen. Klicken Sie auf **Speichern**.
 
 ![WF Fusion](./images/wffc5.png)
 
-Sie sollten das dann sehen. Klicken Sie auf **Knoten** Webhook“.
+Sie sollten das dann sehen. Klicken Sie auf das **Webhook**-Modul.
 
 ![WF Fusion](./images/wffc6.png)
 
@@ -83,33 +83,81 @@ Nachdem Sie auf **Senden** geklickt haben, sollte die Nachricht in **Erfolgreich
 
 ![WF Fusion](./images/wffc12.png)
 
-## 1.2.4.2 Firefly T2I-Knoten aktualisieren
+## 1.2.4.2 Aktualisieren des Firefly T2I-Moduls
 
-Klicken Sie auf den Knoten **Firefly T2I**. Sie sollten das dann sehen. Die Eingabeaufforderung in dieser Anfrage war zuvor hartcodiert **Pferde in einem Feld**. Sie entfernen nun diesen hartcodierten Text und ersetzen ihn durch ein Feld aus dem Webhook.
+Klicken Sie mit der rechten Maustaste auf das Modul **Firefly T2I** und wählen Sie **Modul löschen**.
 
-![WF Fusion](./images/wffcfft2i1.png)
+![WF Fusion](./images/wffcff1.png)
 
-Entfernen Sie den Text **Pferde in einem Feld** und ersetzen Sie ihn durch die Variable **prompt** die unter den **Webhook**-Variablen zu finden ist. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+Klicken Sie auf das Symbol **+**, geben Sie den Suchbegriff `firefly` ein und wählen Sie dann **Adobe Firefly** aus.
 
-![WF Fusion](./images/wffcfft2i2.png)
+![WF Fusion](./images/wffcff2.png)
+
+Wählen Sie **Bild erstellen** aus.
+
+![WF Fusion](./images/wffcff3.png)
+
+Ziehen Sie das Modul **Adobe Firefly** per Drag-and-Drop, sodass es eine Verbindung zum Modul **Router** herstellt.
+
+![WF Fusion](./images/wffcff4.png)
+
+Klicken Sie auf das **Adobe Firefly**-Modul, um es zu öffnen, und klicken Sie dann auf **Hinzufügen**, um eine neue Verbindung zu erstellen.
+
+![WF Fusion](./images/wffcff5.png)
+
+Füllen Sie die folgenden Felder aus:
+
+- **Verbindungsname**: Verwenden Sie `--aepUserLdap-- - Firefly connection`.
+- **Umgebung**: Verwenden Sie **Produktion**.
+- **Type**: verwenden **Persönliches Konto**.
+- **Client-ID**: Kopieren Sie die **Client-ID** aus Ihrem Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- - One Adobe tutorial`.
+- **Client-Geheimnis**: Kopieren Sie das **Client-Geheimnis** aus Ihrem Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- - One Adobe tutorial`.
+
+Die **Client-ID** und **Client-Geheimnis** Ihres Adobe I/O-Projekts finden Sie [hier](https://developer.adobe.com/console/projects.).
+
+![WF Fusion](./images/wffc20.png)
+
+Nachdem Sie alle Felder ausgefüllt haben, klicken Sie auf **Weiter**. Ihre Verbindung wird dann automatisch validiert.
+
+![WF Fusion](./images/wffcff6.png)
+
+Wählen Sie als Nächstes die Variable **Eingabeaufforderung** aus, die dem Szenario vom eingehenden **benutzerdefinierten Webhook“ bereitgestellt**. Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffcff7.png)
+
+Bevor Sie fortfahren, müssen Sie im Szenario die alte Route deaktivieren. Für diese Übung verwenden Sie nur die neue Route, die Sie gerade konfigurieren. Klicken Sie dazu auf das **Schraubenschlüssel**-Symbol zwischen dem **Router**-Modul und dem **Iterator**-Modul und wählen Sie **Route deaktivieren**.
+
+![WF Fusion](./images/wffcff7a.png)
+
+Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern, und klicken Sie dann auf **Einmal ausführen**, um Ihre Konfiguration zu testen.
+
+![WF Fusion](./images/wffcff8.png)
+
+Wechseln Sie zu Postman, überprüfen Sie die Eingabeaufforderung in Ihrer Anfrage und klicken Sie dann auf **Senden**.
+
+![WF Fusion](./images/wffcff8a.png)
+
+Nachdem Sie auf Senden geklickt haben, gehen Sie zurück zu Workfront Fusion und klicken Sie auf das Blasensymbol im Modul **Adobe Firefly**, um die Details zu überprüfen.
+
+![WF Fusion](./images/wffcff9.png)
+
+Navigieren Sie **AUSGABE** zu **Details** > **url**, um die URL des von **Adobe Firefly generierten Bildes** finden.
+
+![WF Fusion](./images/wffcff10.png)
+
+Jetzt sollte ein Bild angezeigt werden, das die von der Postman-Anfrage gesendete Eingabeaufforderung darstellt, in diesem Fall **Misty Meadows**.
+
+![WF Fusion](./images/wffcff11.png)
 
 ## 1.2.4.2 Ändern des Hintergrunds der PSD-Datei
 
-Sie aktualisieren Ihr Szenario jetzt, um es durch die Verwendung von vorkonfigurierten Connectoren intelligenter zu gestalten. Sie werden auch die Ausgabe von Firefly mit Photoshop verbinden, damit sich das Hintergrundbild der PSD-Datei dynamisch ändert, indem Sie die Ausgabe der Aktion &quot;Firefly-Bild generieren“ verwenden.
+Sie aktualisieren Ihr Szenario jetzt, um es durch die Verwendung von mehr vorkonfigurierten Connectoren intelligenter zu gestalten. Sie werden auch die Ausgabe von Firefly mit Photoshop verbinden, damit sich das Hintergrundbild der PSD-Datei dynamisch ändert, indem Sie die Ausgabe der Aktion &quot;Firefly-Bild generieren“ verwenden.
 
-In der vorherigen Übung hatten Sie die Route **Firefly T2I** deaktiviert. Sie sollten das jetzt rückgängig machen. Klicken Sie auf **stop**, um die Route wieder zu aktivieren.
-
-![WF Fusion](./images/wffc13.png)
-
-Sie werden dann sehen, dass das **Stopp**-Symbol verschwindet. Klicken Sie als Nächstes auf **Schraubenschlüssel**-Symbol auf der anderen Route zur Konfiguration der vorherigen Übung und wählen Sie **Route deaktivieren** aus.
-
-![WF Fusion](./images/wffc14.png)
-
-Sie sollten das dann sehen. Bewegen Sie als Nächstes den Mauszeiger über den Knoten **Firefly T2I** und klicken Sie auf das Symbol **+** .
+Sie sollten das dann sehen. Bewegen Sie als Nächstes den Mauszeiger über das Modul **Adobe Firefly** und klicken Sie auf das Symbol **+** .
 
 ![WF Fusion](./images/wffc15.png)
 
-Geben Sie im Menü Suche den Befehl `Photoshop`und klicken Sie dann auf die Aktion **Adobe Photoshop**.
+Geben Sie im Suchmenü `Photoshop` ein und klicken Sie dann auf die Aktion **Adobe Photoshop**.
 
 ![WF Fusion](./images/wffc16.png)
 
@@ -164,9 +212,9 @@ Fügen Sie den Namen **2048x2048-background** in das Dialogfeld &quot;Workfront 
 
 ![WF Fusion](./images/wffc27.png)
 
-Scrollen Sie nach unten, bis Sie &quot;**&quot;**. Jetzt müssen Sie definieren, was in die Hintergrundebene eingefügt werden soll. In diesem Fall müssen Sie die Ausgabe des Firefly T2I-Objekts auswählen, das das dynamisch generierte Bild enthält.
+Scrollen Sie nach unten, bis Sie &quot;**&quot;**. Jetzt müssen Sie definieren, was in die Hintergrundebene eingefügt werden soll. In diesem Fall müssen Sie die Ausgabe des Moduls **Adobe Firefly** auswählen, das das dynamisch generierte Bild enthält.
 
-Wählen **für** die Option **Extern** aus. Suchen Sie für **Dateispeicherort** die Variable `data.outputs[].image.url` in der Ausgabe der **Firefly T2I**-Anfrage und suchen Sie sie.
+Wählen **für** die Option **Extern** aus. Für **Dateispeicherort** kopieren Sie die `{{XX.details[].url}}` aus der Ausgabe des **Adobe Firefly**-Moduls und fügen Sie sie ein. Ersetzen Sie **XX** in der Variablen durch die Sequenznummer des **Adobe Firefly**-Moduls, in diesem Beispiel **22**.
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -191,11 +239,27 @@ Sie sollten dann diese haben. Klicken Sie auf **OK**.
 
 ![WF Fusion](./images/wffc33.png)
 
+Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern, und klicken Sie dann auf **Einmal ausführen**, um Ihre Konfiguration zu testen.
+
+![WF Fusion](./images/wffc33a.png)
+
+Wechseln Sie zu Postman, überprüfen Sie die Eingabeaufforderung in Ihrer Anfrage und klicken Sie dann auf **Senden**.
+
+![WF Fusion](./images/wffcff8a.png)
+
+Sie sollten das dann sehen. Klicken Sie auf den Kreis im Modul **Adobe Photoshop - PSD-Bearbeitungen anwenden**.
+
+![WF Fusion](./images/wffc33b.png)
+
+Sie können jetzt sehen, dass erfolgreich eine neue PSD-Datei generiert und in Ihrem Microsoft Azure-Speicherkonto gespeichert wurde.
+
+![WF Fusion](./images/wffc33c.png)
+
 ## 1.2.4.3 Ändern der Textebenen einer PSD-Datei
 
 ### Aktionsaufruf-Text
 
-Bewegen Sie als Nächstes den Mauszeiger über den Knoten **Adobe Photoshop - PSD** Bearbeitungen anwenden und klicken Sie auf das Symbol **+** .
+Bewegen Sie als Nächstes den Mauszeiger über das Modul **Adobe Photoshop - PSD** Bearbeitungen anwenden und klicken Sie auf das Symbol **+** .
 
 ![WF Fusion](./images/wffc34.png)
 
@@ -237,9 +301,13 @@ Scrollen Sie nach unten, bis Sie **Ausgabe** sehen. Wählen Sie **Speicher** die
 
 ### Schaltflächentext
 
-Klicken Sie mit der rechten Maustaste auf den soeben erstellten Knoten und wählen Sie **Klonen**. Dadurch wird ein zweites ähnliches Objekt erstellt.
+Klicken Sie mit der rechten Maustaste auf das soeben erstellte Modul und wählen Sie **Klonen**. Dadurch wird ein zweites ähnliches Modul erstellt.
 
 ![WF Fusion](./images/wffc42.png)
+
+Verbinden Sie das geklonte Modul mit dem vorherigen Modul **Adobe Photoshop - Textebenen bearbeiten** .
+
+![WF Fusion](./images/wffc42a.png)
 
 Sie sollten das dann sehen. Wählen Sie zunächst die zuvor bereits konfigurierte Adobe Photoshop-Verbindung aus, die `--aepUserLdap-- Adobe IO` benannt werden soll.
 
@@ -253,11 +321,11 @@ Wählen Sie für **Eingabedatei** die Option **Azure** für **Eingabedateispeich
 
 ![WF Fusion](./images/wffc44.png)
 
-Geben Sie den Namen **2048x2048-cta** unter **Name** im Dialogfeld ein.
+Geben Sie den Namen **2048x2048-button-text** unter **Name** im Dialogfeld ein.
 
 ![WF Fusion](./images/wffc43.png)
 
-Scrollen Sie nach unten, bis **Text** > **Inhalt** angezeigt wird. Wählen Sie die Variable **cta** aus der Webhook-Payload aus.
+Scrollen Sie nach unten, bis **Text** > **Inhalt** angezeigt wird. Wählen Sie die Variable **Schaltfläche** aus der Webhook-Payload aus.
 
 ![WF Fusion](./images/wffc45.png)
 
@@ -275,11 +343,11 @@ Klicken Sie **Speichern**, um Ihre Änderungen zu speichern.
 
 Nachdem Sie diese Änderungen auf Ihre Photoshop-Datei angewendet haben, müssen Sie jetzt eine „Webhook **Antwort“ konfigurieren** die an die Anwendung zurückgesendet wird, die dieses Szenario aktiviert hat.
 
-Bewegen Sie den Mauszeiger über den Knoten **Adobe Photoshop - Textebenen bearbeiten** klicken Sie auf das Symbol **+** .
+Bewegen Sie den Mauszeiger über das Modul **Adobe Photoshop - Textebenen bearbeiten** klicken Sie auf das Symbol **+** .
 
 ![WF Fusion](./images/wffc48.png)
 
-Suchen Sie nach **Webhook** und wählen Sie **Webhook** aus.
+Suchen Sie nach `webhooks` und wählen Sie **Webhook**.
 
 ![WF Fusion](./images/wffc49.png)
 
@@ -297,11 +365,11 @@ Sie sollten das dann sehen. Fügen Sie die folgende Payload in &quot;**&quot;**.
 
 ![WF Fusion](./images/wffc51.png)
 
-Wählen Sie den Pfad `data[]._links.renditions[].href` aus der Ausgabe der vorherigen Anfrage aus. Aktivieren Sie das Kontrollkästchen für **Erweiterte Einstellungen anzeigen** und klicken Sie dann auf **Element hinzufügen**.
+Kopieren Sie die Variable `{{XX.data[]._links.renditions[].href}}` und fügen Sie sie ein. Ersetzen **XX** durch die Sequenznummer des letzten **Adobe Photoshop -**-Moduls, in diesem Fall **25**. Aktivieren Sie das Kontrollkästchen für **Erweiterte Einstellungen anzeigen** und klicken Sie dann auf **Element hinzufügen**.
 
 ![WF Fusion](./images/wffc52.png)
 
-Geben Sie im Feld **Schlüssel** `Content-Type` ein. Geben Sie im Feld **Wert** `application/json` ein. Klicken Sie auf **Speichern**.
+Geben Sie im Feld **Schlüssel** `Content-Type` ein. Geben Sie im Feld **Wert** `application/json` ein. Klicken Sie auf **Hinzufügen**.
 
 ![WF Fusion](./images/wffc52a.png)
 
@@ -313,7 +381,7 @@ Klicken Sie **Automatisch ausrichten**.
 
 ![WF Fusion](./images/wffc54.png)
 
-Sie sollten das dann sehen. Klicken Sie **Einmal ausführen**.
+Sie sollten das dann sehen. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern, und klicken Sie dann auf **Einmal ausführen**, um Ihr Szenario zu testen.
 
 ![WF Fusion](./images/wffc55.png)
 
@@ -325,7 +393,7 @@ Anschließend wird das Szenario aktiviert und nach einiger Zeit wird in Postman 
 
 ![WF Fusion](./images/wffc58.png)
 
-Zur Erinnerung: Sobald das Szenario in Workfront Fusion ausgeführt wurde, können Sie Informationen zu den einzelnen Knoten anzeigen, indem Sie auf die Sprechblase über jedem Knoten klicken.
+Zur Erinnerung: Sobald das Szenario in Workfront Fusion ausgeführt wurde, können Sie Informationen zu den einzelnen Modulen anzeigen, indem Sie auf die Sprechblase über jedem Modul klicken.
 
 ![WF Fusion](./images/wffc59.png)
 
