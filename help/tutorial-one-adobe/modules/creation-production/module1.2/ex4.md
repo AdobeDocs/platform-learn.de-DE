@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Sie verwenden jetzt die vordefinierten Connectoren in Workfront Fusion für Phot
 
 ## 1.2.4.1 Duplizieren und Vorbereiten des Szenarios
 
-Gehen Sie im linken Menü zu **Szenarien** und wählen Sie Ihre `--aepUserLdap--` aus. Anschließend sollte das zuvor erstellte Szenario mit dem Namen `--aepUSerLdap-- - Adobe I/O Authentication` angezeigt werden.
+Gehen Sie im linken Menü zu **Szenarien** und wählen Sie Ihre `--aepUserLdap--` aus. Anschließend sollte das zuvor erstellte Szenario mit dem Namen `--aepUserLdap-- - Adobe I/O Authentication` angezeigt werden.
 
 ![WF Fusion](./images/wffc1.png)
 
@@ -113,7 +113,7 @@ Füllen Sie die folgenden Felder aus:
 - **Client-ID**: Kopieren Sie die **Client-ID** aus Ihrem Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- - One Adobe tutorial`.
 - **Client-Geheimnis**: Kopieren Sie das **Client-Geheimnis** aus Ihrem Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- - One Adobe tutorial`.
 
-Die **Client-ID** und **Client-Geheimnis** Ihres Adobe I/O-Projekts finden Sie [hier](https://developer.adobe.com/console/projects.).
+Die **Client-ID** und **Client-Geheimnis** Ihres Adobe I/O-Projekts finden Sie [hier](https://developer.adobe.com/console/projects.){target="_blank"}.
 
 ![WF Fusion](./images/wffc20.png)
 

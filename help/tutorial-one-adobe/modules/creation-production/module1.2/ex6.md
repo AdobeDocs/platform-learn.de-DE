@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 297fba1810934e6ce4d9b8dfaea0e1250e761ab5
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Die Business-Teams benötigen jedoch keine PSD-Datei, sondern eine PNG-Datei ode
 
 ## 1.2.6.1 Erstellen eines neuen Szenarios
 
-Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/). Öffnen Sie **Workfront Fusion**.
+Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Öffnen Sie **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -59,7 +59,7 @@ Sie sollten das dann sehen. Klicken Sie **Adresse in Zwischenablage kopieren**.
 
 ## 1.2.6.2 Webhook in Frame.io konfigurieren
 
-Navigieren Sie zu [https://developer.frame.io/](https://developer.frame.io/). Klicken Sie **ENTWICKLER-TOOLS** und wählen Sie dann **Benutzerdefinierte Aktionen**.
+Navigieren Sie zu [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Klicken Sie **ENTWICKLER-TOOLS** und wählen Sie dann **Benutzerdefinierte Aktionen**.
 
 ![Frame-IO](./images/aemf7.png)
 
@@ -83,7 +83,7 @@ Sie sollten das dann sehen.
 
 ![Frame-IO](./images/aemf11.png)
 
-Wechseln Sie zu [https://app.frame.io/projects](https://app.frame.io/projects) und zu dem zuvor erstellten Ordner, der `--aepUserLdap--` heißen soll. Doppelklicken Sie, um das in der vorherigen Übung erstellte Asset zu öffnen.
+Wechseln Sie zu [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} und zu dem zuvor erstellten Ordner, der `--aepUserLdap--` heißen soll. Doppelklicken Sie, um das in der vorherigen Übung erstellte Asset zu öffnen.
 
 ![Frame-IO](./images/aemf11a.png)
 
@@ -271,7 +271,7 @@ Ihre Verbindung wird dann validiert. Nach erfolgreicher Authentifizierung wird I
 
 ![Frame-IO](./images/aemf51.png)
 
-Um einen neuen dedizierten Ordner zu erstellen, navigieren Sie zu [https://experience.adobe.com](https://experience.adobe.com/). Stellen Sie sicher, dass die richtige Experience Cloud-Instanz ausgewählt ist, die `--aepImsOrgName--` werden soll. Klicken Sie dann auf **Experience Manager Assets**.
+Um einen neuen dedizierten Ordner zu erstellen, navigieren Sie zu [https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}. Stellen Sie sicher, dass die richtige Experience Cloud-Instanz ausgewählt ist, die `--aepImsOrgName--` werden soll. Klicken Sie dann auf **Experience Manager Assets**.
 
 ![Frame-IO](./images/aemf52.png)
 

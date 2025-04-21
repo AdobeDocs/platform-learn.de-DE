@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie Workfront Fusion und Adobe I/O verwenden, um Adobe Firefly
 
 ## 1.2.1.1 Neues Szenario erstellen
 
-Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/). Öffnen Sie **Workfront Fusion**.
+Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Öffnen Sie **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -47,11 +47,11 @@ Verschieben Sie das **Uhr**-Symbol auf das neu hinzugefügte **Mehrere Variablen
 
 ![WF Fusion](./images/wffusion5.png)
 
-Ihr Bildschirm sollte liken diesem aussehen.
+Ihr Bildschirm sollte wie folgt aussehen.
 
 ![WF Fusion](./images/wffusion6.png)
 
-Klicken Sie mit der rechten Maustaste auf das Fragezeichen und wählen Sie Löschen Modul **aus**.
+Klicken Sie mit der rechten Maustaste auf das Fragezeichen und wählen Sie **Modul löschen**.
 
 ![WF Fusion](./images/wffusion7.png)
 
@@ -59,9 +59,9 @@ Klicken Sie anschließend mit der rechten Maustaste auf **Mehrere Variablen fest
 
 ![WF Fusion](./images/wffusion8.png)
 
-## 1.2.1.2 Adobe Systems-E/A-Authentifizierung konfigurieren
+## 1.2.1.2 Konfigurieren der Adobe I/O-Authentifizierung
 
-Konfigurieren Sie nun die Variablen, die für die Authentifizierung bei Adobe Systems I/O erforderlich sind. In der vorherigen Übung haben Sie ein Adobe Systems E/A-Projekt erstellt. Die Variablen dieses Adobe Systems E/A-Projekts müssen jetzt in Workfront Fusion definiert werden.
+Jetzt müssen Sie die Variablen konfigurieren, die zur Authentifizierung bei Adobe I/O erforderlich sind. In der vorherigen Übung haben Sie ein Adobe I/O-Projekt erstellt. Die Variablen dieses Adobe I/O-Projekts müssen jetzt in Workfront Fusion definiert werden.
 
 Die folgenden Variablen müssen definiert werden:
 
@@ -71,7 +71,7 @@ Die folgenden Variablen müssen definiert werden:
 | `CONST_client_secret` | Ihr Adobe I/O-Projekt - Client-Geheimnis |
 | `CONST_scope` | Ihr Adobe I/O-Projektumfang |
 
-Suchen Sie diese Variablen, indem Sie zu [https://developer.adobe.com/console/projects wechseln ](https://developer.adobe.com/console/projects) Ihr Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- One Adobe tutorial` öffnen.
+Suchen Sie diese Variablen, indem Sie zu [https://developer.adobe.com/console/projects wechseln ](https://developer.adobe.com/console/projects){target="_blank"} Ihr Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- One Adobe tutorial` öffnen.
 
 ![WF Fusion](./images/wffusion9.png)
 
@@ -158,11 +158,11 @@ Konfiguration für `grant_type`.
 
 ![WF Fusion](./images/wffusion28.png)
 
-Scrollen Sie nach unten und aktivieren Sie das Kontrollkästchen für **Antwort analysieren**. Wählen Sie **OK**.
+Scrollen Sie nach unten und aktivieren Sie das Kontrollkästchen für **Antwort analysieren**. Klicken Sie **OK**.
 
 ![WF Fusion](./images/wffusion27.png)
 
-Ihr Bildschirm sollte liken diesem aussehen. Wählen Sie **Einmal ausführen** aus.
+Ihr Bildschirm sollte wie folgt aussehen. Wählen Sie **Einmal ausführen** aus.
 
 ![WF Fusion](./images/wffusion29.png)
 
@@ -170,11 +170,11 @@ Nach Ausführung des Szenarios sollte Ihr Bildschirm wie folgt aussehen:
 
 ![WF Fusion](./images/wffusion30.png)
 
-Wählen Sie das **Fragezeichen-Symbol** auf dem **Objekt mit mehreren Variablen Festlegen, um zu sehen, was beim Ausführen dieses Objekts** passiert ist.
+Wählen Sie das **Fragezeichen** auf dem Objekt **Mehrere Variablen festlegen** um zu sehen, was bei der Ausführung dieses Objekts passiert ist.
 
 ![WF Fusion](./images/wffusion31.png)
 
-Wählen Sie das **Fragezeichensymbol** im **HTTP (Erstellen Sie ein Anfrage** Objekt), um zu sehen, was beim Ausführen dieses Objekts passiert ist. **In OUTPUT**, sehen Sie die access_token **, die** von Adobe Systems I/O zurückgegeben werden.
+Wählen Sie das Symbol **Fragezeichen** auf dem Objekt **HTTP -** erstellen) aus, um zu sehen, was bei der Ausführung dieses Objekts passiert ist. In **OUTPUT** wird das **access_token** von Adobe I/O zurückgegeben.
 
 ![WF Fusion](./images/wffusion32.png)
 
@@ -190,7 +190,7 @@ Wählen Sie **Mehrere Variablen festlegen** aus.
 
 ![WF Fusion](./images/wffusion35.png)
 
-Wählen Sie **Element hinzufügen**.
+Wählen Sie **Element hinzufügen** aus.
 
 ![WF Fusion](./images/wffusion36.png)
 
@@ -198,15 +198,15 @@ Legen Sie **Variablenname** auf `bearer_token` fest. Wählen Sie `access_token` 
 
 ![WF Fusion](./images/wffusion37.png)
 
-Ihr Bildschirm sollte liken diesem aussehen. Wählen Sie **OK**.
+Ihr Bildschirm sollte wie folgt aussehen. Klicken Sie **OK**.
 
 ![WF Fusion](./images/wffusion38.png)
 
-Wählen Sie erneut **Ausführen aus**.
+Wählen **erneut** Einmal ausführen“ aus.
 
 ![WF Fusion](./images/wffusion39.png)
 
-Sobald das Szenario ausgeführt wird, wählen Sie das **Fragezeichensymbol** auf der letzten **Festlegen Objekts mit mehreren Variablen** aus. Sie sollten sehen, dass das Zugriffstoken in der Variablen `bearer_token` gespeichert wird.
+Wählen Sie nach Ausführung des Szenarios das Symbol **Fragezeichen** im letzten Objekt **Mehrere Variablen festlegen** aus. Sie sollten sehen, dass das Zugriffstoken in der Variablen `bearer_token` gespeichert wird.
 
 ![WF Fusion](./images/wffusion40.png)
 

@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+exl-id: b2ffab2f-566e-4d7d-9790-1bbba76f8732
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
@@ -25,6 +26,14 @@ Erfahren Sie, wie Sie Kreativ-Workflows mit Workfront Fusion automatisieren kön
 [1.3.1 Erste Schritte mit Adobe Express](./ex1.md){target="_blank"}
 
 In dieser Übung erfahren Sie mehr über Adobe Express in Kombination mit Firefly Services und dessen Funktionen.
+
+[1.3.2 Animation und Video in Adobe Express](./ex2.md){target="_blank"}
+
+In dieser Übung verwenden Sie Adobe Express, um Bilder zu animieren und Videos zu erstellen.
+
+[1.3.3 Massenproduktion von Assets in Adobe Express](./ex3.md){target="_blank"}
+
+In dieser Übung arbeiten Sie mit Adobe Express zusammen, um mehrere Versionen eines Assets zu erstellen, indem Sie vordefinierte Automatisierungsfunktionen von Adobe Express verwenden.
 
 [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 

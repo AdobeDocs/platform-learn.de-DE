@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -23,7 +23,7 @@ In der vorherigen Übung haben Sie den Szenario-`--aepUserLdap-- - Firefly + Pho
 
 ## 1.2.5.1 Zugriff auf Frame.io
 
-Navigieren Sie zu [https://app.frame.io/projects](https://app.frame.io/projects).
+Navigieren Sie zu [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}.
 
 Klicken Sie auf das Symbol **+**, um in Frame.io ein eigenes Projekt zu erstellen.
 
@@ -42,7 +42,7 @@ In einer der vorherigen Übungen haben Sie „Citisignal[fiber.psd“ ](./../../
 
 In der vorherigen Übung haben Sie das Szenario `--aepUserLdap-- - Firefly + Photoshop` erstellt, das mit einem benutzerdefinierten Webhook begann und mit einer Webhook-Antwort endete. Die Verwendung der Webhooks wurde dann mit Postman getestet, aber offensichtlich soll ein solches Szenario von einer externen Anwendung aufgerufen werden. Wie bereits erwähnt, wird Frame.io diese Übung sein, aber zwischen Frame.io und dem `--aepUserLdap-- - Firefly + Photoshop` ist ein weiteres Workfront Fusion-Szenario erforderlich. Das Szenario wird jetzt konfiguriert.
 
-Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/). Öffnen Sie **Workfront Fusion**.
+Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Öffnen Sie **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -74,7 +74,7 @@ Sie sollten das dann sehen. Lassen Sie diesen Bildschirm offen und unberührt, d
 
 ![Frame-IO](./images/frame10.png)
 
-Navigieren Sie zu [https://developer.frame.io/](https://developer.frame.io/). Klicken Sie **ENTWICKLER-TOOLS** und wählen Sie dann **Benutzerdefinierte Aktionen**.
+Navigieren Sie zu [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Klicken Sie **ENTWICKLER-TOOLS** und wählen Sie dann **Benutzerdefinierte Aktionen**.
 
 ![Frame-IO](./images/frame11.png)
 
@@ -98,7 +98,7 @@ Sie sollten das dann sehen.
 
 ![Frame-IO](./images/frame14.png)
 
-Zurück zu [https://app.frame.io/projects](https://app.frame.io/projects). Aktualisieren Sie die Seite.
+Zurück zu [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}. Aktualisieren Sie die Seite.
 
 ![Frame-IO](./images/frame16.png)
 
@@ -298,7 +298,7 @@ Wählen Sie **Frame.io API Key** aus und geben Sie den Namen `--aepUserLdap-- - 
 
 ![Frame-IO](./images/frame49.png)
 
-Um ein API-Token zu erhalten, navigieren Sie zu [https://developer.frame.io/](https://developer.frame.io/). Klicken Sie **ENTWICKLER-TOOLS** und wählen Sie dann **Token** aus.
+Um ein API-Token zu erhalten, navigieren Sie zu [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Klicken Sie **ENTWICKLER-TOOLS** und wählen Sie dann **Token** aus.
 
 ![Frame-IO](./images/frame50.png)
 
