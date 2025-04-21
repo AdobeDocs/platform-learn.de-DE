@@ -3,10 +3,10 @@ title: Migrieren von Target aus at.js 2.x nach Web SDK
 description: Erfahren Sie, wie Sie eine Adobe Target-Implementierung von at.js 2.x zu Adobe Experience Platform Web SDK migrieren. Zu den Themen gehören das Laden der JavaScript-Bibliothek, das Senden von Parametern, Rendering-Aktivitäten und andere bemerkenswerte Hinweise.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '611'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Dieses Handbuch richtet sich an erfahrene Adobe Target-Implementierer, um zu erfahren, wie Sie eine at.js-Implementierung zu Adobe Experience Platform Web SDK migrieren.
 
-Adobe Experience Platform Web SDK ist eine Client-seitige JavaScript-Bibliothek, mit der Adobe Experience Cloud-Kunden über das Adobe Experience Platform-Edge Network mit Experience Cloud-Services interagieren können. Diese neue Bibliothek kombiniert die Funktionen der separaten Adobe-Anwendungsbibliotheken in einem einzigen, schlanken Paket, das die neuen Adobe Experience Platform-Funktionen in vollem Umfang nutzen kann.
+Adobe Experience Platform Web SDK ist eine Client-seitige JavaScript-Bibliothek, die es Adobe Experience Cloud-Kunden ermöglicht, über Adobe Experience Platform Edge Network mit Experience Cloud-Services zu interagieren. Diese neue Bibliothek kombiniert die Funktionen der separaten Adobe-Anwendungsbibliotheken in einem einzigen, schlanken Paket, das die neuen Adobe Experience Platform-Funktionen in vollem Umfang nutzen kann.
 
 
 >[!NOTE]
@@ -26,21 +26,21 @@ Adobe Experience Platform Web SDK ist eine Client-seitige JavaScript-Bibliothek,
 
 >[!CAUTION]
 >
-> Da Platform Web SDK mehrere Adobe-Anwendungen unterstützt, sollten alle Adobe-Bibliotheken auf einer bestimmten Seite gleichzeitig migriert werden. Beispielsweise wird eine gemischte Implementierung von Web SDK for Target und AppMeasurement for Analytics auf einer Einzelseite _nicht unterstützt_. Es wird jedoch eine gemischte Implementierung über verschiedene Seiten hinweg unterstützt, z. B. Web SDK auf Seite A und at.js mit AppMeasurement auf Seite B.
+> Da Platform Web SDK mehrere Adobe-Programme unterstützt, sollten alle Adobe-Bibliotheken auf einer bestimmten Seite gleichzeitig migriert werden. Beispielsweise wird eine gemischte Implementierung von Web SDK for Target und AppMeasurement for Analytics auf einer Einzelseite _nicht unterstützt_. Es wird jedoch eine gemischte Implementierung über verschiedene Seiten hinweg unterstützt, z. B. Web SDK auf Seite A und at.js mit AppMeasurement auf Seite B.
 
 
 
-## Wesentliche Vorteile
+## Wichtigste Vorteile
 
 Zu den Vorteilen von Platform Web SDK im Vergleich zur eigenständigen at.js-Bibliothek gehören unter anderem:
 
-* Schnellere Freigabe von Zielgruppen aus [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=de)
-* Integration von Target mit Journey Optimizer zur Unterstützung der [Offer decisioning-Bereitstellung](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
-* Möglichkeit zur Verwendung [Erstanbieter-IDs](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=de) zum Generieren der ECID für eine längere Besucheridentifizierung
+* Schnellere Freigabe von Zielgruppen aus [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+* Integration von Target mit Journey Optimizer zur Unterstützung der Bereitstellung von [Offer Decisioning](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
+* Möglichkeit zur Verwendung [Erstanbieter-IDs](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) zum Generieren der ECID für eine längere Besucheridentifizierung
 * Geringerer Platzbedarf für verbesserte Metriken zur Seitengeschwindigkeit
 * Zusätzliche Implementierungsflexibilität für Entwickler
 
-Der wohl größte Vorteil der Migration für Target-Kunden liegt in der Integration mit Real-time Customer Data Platform. Real-Time CDP bietet umfangreiche Funktionen zur Zielgruppenbildung, die auf dem gesamten Spektrum der in Experience Platform aufgenommenen Daten und dessen Echtzeit-Kundenprofilfunktionen basieren. Ein integriertes Data Governance-Framework automatisiert die verantwortungsvolle Nutzung dieser Daten. Mit Kunden-KI können Sie mühelos maschinelle Lernmodelle verwenden, um Tendenz- und Abwanderungsmodelle zu erstellen, deren Ergebnisse an Adobe Target zurückgegeben werden können. Und schließlich können Kundinnen und Kunden der optionalen Add-ons für Healthcare und Privacy &amp; Security Shield die Funktion zur Durchsetzung von Einverständnissen verwenden, um die Einverständnisvoreinstellungen einzelner Kundinnen und Kunden einfach durchzusetzen. Platform Web SDK ist eine Voraussetzung für die Verwendung dieser Real-Time CDP-Funktionen in Ihrem Web-Kanal.
+Der wohl größte Vorteil der Migration für Target-Kunden liegt in der Integration mit Real-Time Customer Data Platform. Real-Time CDP bietet umfangreiche Funktionen zur Zielgruppenbildung, die auf dem gesamten Spektrum der in Experience Platform aufgenommenen Daten und dessen Echtzeit-Kundenprofilfunktionen basieren. Ein integriertes Data Governance-Framework automatisiert die verantwortungsvolle Nutzung dieser Daten. Mit Kunden-KI können Sie mühelos maschinelle Lernmodelle verwenden, um Tendenz- und Abwanderungsmodelle zu erstellen, deren Ergebnisse an Adobe Target zurückgegeben werden können. Und schließlich können Kundinnen und Kunden der optionalen Add-ons für Healthcare und Privacy &amp; Security Shield die Funktion zur Durchsetzung von Einverständnissen verwenden, um die Einverständnisvoreinstellungen einzelner Kundinnen und Kunden einfach durchzusetzen. Platform Web SDK ist eine Voraussetzung für die Verwendung dieser Real-Time CDP-Funktionen in Ihrem Web-Kanal.
 
 ## Lernziele
 

@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Sch
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 3%
@@ -17,11 +17,11 @@ Erfahren Sie, wie Sie ein XDM-Schema für Web-Daten in der Datenerfassungsoberfl
 
 Experience-Datenmodell-Schemas (XDM) sind die Bausteine, Grundsätze und Best Practices für die Datenerfassung in Adobe Experience Platform.
 
-Platform Web SDK verwendet Ihr Schema, um Ihre Web-Ereignisdaten zu standardisieren, an das Platform-Edge Network zu senden und letztendlich an alle im Datenstrom konfigurierten Experience Cloud-Anwendungen zu übermitteln. Dieser Schritt ist wichtig, da er ein Standarddatenmodell definiert, das für die Aufnahme von Kundenerlebnisdaten in Experience Platform erforderlich ist, und nachgelagerte Services und Anwendungen ermöglicht, die auf diesen Standards basieren.
+Platform Web SDK verwendet Ihr Schema, um Ihre Web-Ereignisdaten zu standardisieren, an Platform Edge Network zu senden und letztendlich an alle im Datenstrom konfigurierten Experience Cloud-Anwendungen zu übermitteln. Dieser Schritt ist wichtig, da er ein Standarddatenmodell definiert, das für die Aufnahme von Kundenerlebnisdaten in Experience Platform erforderlich ist, und nachgelagerte Services und Anwendungen ermöglicht, die auf diesen Standards basieren.
 
 >[!NOTE]
 >
->Ein XDM-Schema ist _nicht erforderlich_ um Adobe Analytics, Adobe Target oder Adobe Audience Manager mit Web SDK zu implementieren (Daten können im `data`-Objekt anstelle des `xdm`-Objekts übergeben werden, wie Sie später sehen werden). Für die leistungsfähigsten Implementierungen plattformnativer Anwendungen wie Journey Optimizer, Real-time Customer Data Platform und Customer Journey Analytics ist ein XDM-Schema erforderlich. Sie können sich zwar entscheiden, kein XDM-Schema in Ihrer eigenen Implementierung zu verwenden, dies wird jedoch im Rahmen dieses Tutorials erwartet.
+>Ein XDM-Schema ist _nicht erforderlich_ um Adobe Analytics, Adobe Target oder Adobe Audience Manager mit Web SDK zu implementieren (Daten können im `data`-Objekt anstelle des `xdm`-Objekts übergeben werden, wie Sie später sehen werden). Für die leistungsfähigsten Implementierungen plattformnativer Anwendungen wie Journey Optimizer, Real-Time Customer Data Platform und Customer Journey Analytics ist ein XDM-Schema erforderlich. Sie können sich zwar entscheiden, kein XDM-Schema in Ihrer eigenen Implementierung zu verwenden, dies wird jedoch im Rahmen dieses Tutorials erwartet.
 
 ## Warum sollten die Daten modelliert werden?
 
@@ -51,14 +51,14 @@ Viele Unternehmen bearbeiten beispielsweise Bestellungen. Was wäre, wenn diese 
 
 Wenn sich alle Unternehmen, die mit Bestellungen zu tun haben, dafür entscheiden würden, ihre Auftragsdaten konsistent nach branchenüblichen Begriffen zu modellieren, könnten magische Dinge passieren. Informationen können innerhalb und außerhalb Ihres Unternehmens flüssiger ausgetauscht werden, anstatt die Daten ständig zu interpretieren und zu übersetzen (Props und eVars, irgendjemand?). Maschinelles Lernen könnte leichter verstehen, was Ihre Daten _bedeuten_ und umsetzbare Einblicke bieten. Die Benutzeroberflächen zum Aufdecken relevanter Daten könnten intuitiver werden. Ihre Daten können nahtlos mit Partnern und Anbietern integriert werden, die dieselbe Modellierung verfolgen.
 
-Dies ist das Ziel von Adobe [Experience-Datenmodell](https://business.adobe.com/products/experience-platform/experience-data-model.html). XDM bietet eine präskriptive Datenmodellierung, die in der Branche üblich ist, und ermöglicht es Ihnen gleichzeitig, das Modell für Ihre spezifischen Anforderungen zu erweitern. Adobe Experience Platform basiert auf XDM und daher müssen Daten, die in Experience Platform gesendet werden, in XDM gespeichert werden. Anstatt darüber nachzudenken, wo und wie Sie Ihre aktuellen Datenmodelle in XDM umwandeln können, bevor Sie die Daten an Experience Platform senden, sollten Sie eher in Betracht ziehen, XDM in Ihrem gesamten Unternehmen zu übernehmen, sodass Übersetzungen selten auftreten müssen.
+Dies ist das Ziel des [Experience-Datenmodells](https://business.adobe.com/products/experience-platform/experience-data-model.html) von Adobe. XDM bietet eine präskriptive Datenmodellierung, die in der Branche üblich ist, und ermöglicht es Ihnen gleichzeitig, das Modell für Ihre spezifischen Anforderungen zu erweitern. Adobe Experience Platform basiert auf XDM und daher müssen in Experience Platform gesendete Daten in XDM gespeichert werden. Anstatt darüber nachzudenken, wo und wie Sie Ihre aktuellen Datenmodelle in XDM umwandeln können, bevor Sie die Daten an Experience Platform senden, sollten Sie eher in Betracht ziehen, XDM in Ihrem Unternehmen pervasiv anzuwenden, sodass Übersetzungen selten auftreten müssen.
 
 
 >[!NOTE]
 >
 > Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema zur Erfassung von Inhalten und Produkten, die von Kundinnen und Kunden auf der [Demo-Site von Luma) angesehen ](https://luma.enablementadobe.com/content/luma/us/en.html). Sie können diese Schritte zwar verwenden, um ein anderes Schema für Ihre eigenen Zwecke zu erstellen, es wird jedoch empfohlen, zunächst das Beispielschema zu erstellen, um mehr über die Funktionen des Schema-Editors zu erfahren.
 
-Weitere Informationen zu XDM-Schemata finden Sie in der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oder in der [XDM-Systemübersicht](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
+Weitere Informationen zu XDM-Schemata finden Sie in der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oder in der [XDM-Systemübersicht](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home).
 
 ## Lernziele
 
@@ -74,11 +74,11 @@ Alle erforderlichen Bereitstellungs- und Benutzerberechtigungen für die Datener
 
 ## Erstellen eines XDM-Schemas
 
-XDM-Schemata sind die Standardmethode zur Beschreibung von Daten in Experience Platform. Dadurch können alle Daten, die den Schemata entsprechen, innerhalb eines Unternehmens ohne Konflikte wiederverwendet oder sogar von mehreren Organisationen gemeinsam genutzt werden. Weitere Informationen finden Sie unter [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition).
+XDM-Schemata sind die Standardmethode zur Beschreibung von Daten in Experience Platform. Dadurch können alle Daten, die den Schemata entsprechen, innerhalb einer Organisation ohne Konflikte wiederverwendet oder sogar von mehreren Organisationen gemeinsam genutzt werden. Weitere Informationen finden Sie unter [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition).
 
 In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen grundlegenden Feldergruppen für die Erfassung von Web-Ereignisdaten auf der [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
-1. Öffnen Sie die [Datenerfassungsschnittstelle](https://launch.adobe.com/){target="_blank"}
+1. Öffnen Sie die [Datenerfassungsschnittstelle](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Stellen Sie sicher, dass Sie sich in der richtigen Sandbox befinden. Suchen Sie die Sandbox in der oberen rechten Ecke
 
    >[!NOTE]
@@ -150,7 +150,7 @@ Es ist ein unverzichtbares Objekt für jede Web-bezogene Datenerfassung, da es d
 > Es ist möglich, &quot;**[!UICONTROL &quot; für]** Schema zu aktivieren, bevor das Schema gespeichert wird. **Aktivieren Sie** jetzt nicht. Nachdem ein Schema für das Profil aktiviert wurde, kann es nicht mehr deaktiviert oder gelöscht werden, ohne dass die gesamte Sandbox zurückgesetzt wird. Felder können derzeit auch nicht aus Schemata entfernt werden, obwohl es möglich ist, Felder in der Benutzeroberfläche [ verwerfen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Auswirkungen sollten Sie später im Auge behalten, wenn Sie mit Ihren eigenen Daten in Ihrer Produktionsumgebung arbeiten.
 >
 >
->Diese Einstellung wird in der Lektion [Setup-Experience Platform](setup-experience-platform.md) näher erläutert.
+>Diese Einstellung wird in der Lektion [Einrichten von Experience Platform](setup-experience-platform.md) näher erläutert.
 >![Profilschema](assets/schema-profile.png)
 
 Um diese Lektion abzuschließen, wählen **[!UICONTROL oben]** auf „Speichern“.
@@ -165,4 +165,4 @@ Jetzt können Sie auf dieses Schema verweisen, wenn Sie die Web SDK-Erweiterung 
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

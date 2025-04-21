@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die Tag-Erweiterung „Platform Web SDK" in d
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # Installieren der Tag-Erweiterung &quot;Adobe Experience Platform Web SDK&quot;
 
-Erfahren Sie, wie Sie die Tag-Erweiterung &quot;Adobe Experience Platform Web SDK&quot; installieren und konfigurieren. Die einfachste Möglichkeit, Web SDK zu implementieren, ist die Verwendung des Tag-Managers Adobe (ehemals Launch). Die Platform Web SDK-Tag-Erweiterung ist die _einzige Tag_ Erweiterung, die zum Senden von Daten an _alle Adobe Experience Cloud-_, einschließlich [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager ](setup-audience-manager.md), Real-time Customer Data Platform und [Journey Optimizer](setup-web-channel.md)!
+Erfahren Sie, wie Sie die Tag-Erweiterung &quot;Adobe Experience Platform Web SDK&quot; installieren und konfigurieren. Die einfachste Möglichkeit, Web SDK zu implementieren, besteht in der Verwendung des Tag-Managers von Adobe, Tags (ehemals Launch). Die Platform Web SDK-Tag-Erweiterung ist die _einzige Tag_ Erweiterung, die zum Senden von Daten an _alle Adobe Experience Cloud-_, einschließlich [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform und [Journey Optimizer](setup-web-channel.md)!
 
 ## Lernziele
 
@@ -35,7 +35,7 @@ Zunächst benötigen Sie eine Tag-Eigenschaft. Eine Eigenschaft ist ein Containe
 
 Erstellen Sie eine neue Tag-Eigenschaft für das Tutorial:
 
-1. Öffnen Sie die [Datenerfassungsschnittstelle](https://launch.adobe.com/){target="_blank"}
+1. Öffnen Sie die [Datenerfassungsschnittstelle](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Wählen **[!UICONTROL Tags]** im linken Navigationsbereich aus.
 1. Klicken Sie auf **[!UICONTROL Schaltfläche „Neue Eigenschaft]**.
    ![Neue Eigenschaft hinzufügen](assets/websdk-property-addNewProperty.png)
@@ -87,4 +87,4 @@ Nachdem Sie Platform Web SDK installiert und mit dem Datenstrom verknüpft haben
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

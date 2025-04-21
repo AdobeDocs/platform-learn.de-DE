@@ -2,7 +2,7 @@
 title: Sendeparameter - Migrieren der Adobe Target-Implementierung in Ihrer Mobile App zur Adobe Journey Optimizer - Decisioning-Erweiterung
 description: Erfahren Sie, wie Sie Mbox-, Profil- und Entitätsparameter mithilfe von Experience Platform Web SDK an Adobe Target senden.
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Target ermöglicht die Synchronisierung von Profilen über Geräte und Systeme h
 
 | Beispiel für den Parameter „at.js“ | Platform Web SDK-Option | Anmerkungen |
 | --- | --- | --- |
-| `at_property` | K. A. | Eigenschafts-Token sind im [Datenstrom](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target) konfiguriert und können im `sendEvent` nicht festgelegt werden. |
+| `at_property` | K. A. | Eigenschafts-Token sind im [Datenstrom](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target) konfiguriert und können im `sendEvent` nicht festgelegt werden. |
 | `pageName` | `xdm.web.webPageDetails.name` oder <br> `data.__adobe.target.pageName` | Mbox-Zielparameter können entweder als Teil des `xdm` oder als Teil des `data.__adobe.target` übergeben werden. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Alle Zielprofilparameter müssen als Teil des `data` übergeben werden und das Präfix `profile.` aufweisen, damit sie entsprechend zugeordnet werden können. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Reservierter Parameter, der für die Zielkategorie-Affinitätsfunktion verwendet wird und als Teil des `data` übergeben werden muss. |

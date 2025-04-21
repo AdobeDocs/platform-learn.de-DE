@@ -5,10 +5,10 @@ user-guide-description: Lernen Sie die vielen Komponenten von Experience Platfor
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 20%
+ht-degree: 23%
 
 ---
 
@@ -79,7 +79,7 @@ Campaigns
 + [Bei Experience Platform-APIs authentifizieren](/help/platform/authentication/platform-api-authentication.md)
 + [Beispieldaten nach Experience Platform importieren](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
-   + [Übersicht](/help/platform/admin/overview.md)
+   + [Überblick](/help/platform/admin/overview.md)
    + [Benutzer hinzufügen](/help/platform/admin/add-users.md)
    + [Benutzer zur Datenerfassung hinzufügen](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
    + [Hinzufügen von Entwicklern](/help/platform/admin/add-developers.md)
@@ -89,7 +89,7 @@ Campaigns
    + [Kopieren von Paketen zwischen Sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Freigeben von Paketen in IMS-Organisationen](/help/platform/admin/share-packages-across-orgs.md)
    + [Verwenden von Warnhinweisen](/help/platform/admin/use-alerts.md)
-+ KI-Assistent {#ai-assistant}
++ KI-Assistent {#ai-assistant}
    + [Überblick](/help/platform/ai-assistant/overview.md)
    + [Zugriff erhalten](/help/platform/ai-assistant/access.md)
    + [Einführung in ein neues Produkt](/help/platform/ai-assistant/onboard.md)
@@ -100,7 +100,7 @@ Campaigns
    + [Betriebliche Erkenntnisse](/help/platform/ai-assistant/operational-insights.md)
    + [Wirkungsanalyse](/help/platform/ai-assistant/impact-analysis.md)
    + [Sicherheitsübersicht](/help/platform/ai-assistant/security-overview.md)
-+ Zielgruppen und {#audiences}
++ Zielgruppen und Segmentierung {#audiences}
    + [Einführung in Audience Portal und Komposition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Audiences hochladen](audiences/upload-audiences.md)
    + [Übersicht über die Komposition einer zusammengeführten Zielgruppe](audiences/fac/overview-of-federated-audience-composition.md)
@@ -127,23 +127,23 @@ Campaigns
    + [Segment Match erhält Daten](/help/platform/segments/segment-match-receiving-data.md)
 + [Audit-Protokolle](/help/platform/governance/audit-logs.md)
 + [Datenerfassung](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ Collaboration {#collaboration}
++ Zusammenarbeit {#collaboration}
    + [Übersicht über Real-Time CDP Collaboration](collaboration/real-time-cdp-collaboration-overview.md)
    + [Berechtigungen festlegen](collaboration/set-permissions-for-collaboration.md)
    + [Advertiser-Konto einrichten](collaboration/set-up-an-advertiser-account.md)
    + [Referenzieren von Zielgruppen als Advertiser](collaboration/reference-audiences-as-an-advertiser.md)
    + [Verbinden mit Herausgebern](collaboration/connect-with-publishers.md)
-+ Dashboards-{#dashboards}
++ Dashboards {#dashboards}
    + [Dashboard erstellen](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
-   + [Übersicht](/help/platform/governance/understanding-data-governance.md)
+   + [Überblick](/help/platform/governance/understanding-data-governance.md)
    + [End-to-End-Demo](/help/platform/governance/introduction-to-data-governance.md)
    + [Klassifizieren von Daten mithilfe von Labels](/help/platform/governance/classify-data-using-labels.md)
    + [Erstellen von Datennutzungsrichtlinien](/help/platform/governance/create-data-usage-policies.md)
    + [Durchsetzen von Richtlinien zur Datennutzung](/help/platform/governance/enforce-data-usage-policies.md)
    + [Einverständnis erzwingen](/help/platform/governance/enforce-consent.md)
    + [Integration mit IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
-+ {#data-hygiene} zur Datenhygiene
++ Datenhygiene {#data-hygiene}
    + [Überblick](/help/platform/data-hygiene/overview.md)
    + [Datenvorbereitung für die Datenhygiene](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Löschen von Datensätzen und Batches](/help/platform/data-hygiene/delete-datasets-and-batches.md)
@@ -151,7 +151,7 @@ Campaigns
    + [Ablauf pseudonymer Profile und Ereignisse (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [Löschen von Profilen](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [Aktualisieren eines Profilattributs](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
-+ {#data-ingestion} zur Datenaufnahme
++ Datenaufnahme {#data-ingestion}
    + [Überblick](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Übersicht über die Batch-Aufnahme](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Erstellen und Auffüllen eines Datensatzes](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
@@ -168,7 +168,7 @@ Campaigns
    + [Streamen von Daten mithilfe von Source Connectors](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=de)
    + [Web SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK-Tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=de){target="_blank"}
-+ Data Lifecycle {#data-lifecycle}
++ Datenlebenszyklus {#data-lifecycle}
    + [Ablaufende Datensätze](/help/platform/data-lifecycle/expire-datasets.md)
 + Ziele {#destinations}
    + [Ziele – Übersicht](/help/platform/destinations/understanding-destinations.md)
@@ -193,7 +193,7 @@ Campaigns
    + [Identitäts- und Identitätsdiagramme - Übersicht](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Kennzeichnen, Aufnehmen und Überprüfen von Identitätsdaten](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Anzeigen von Identitätsdiagrammen](/help/platform/identities/view-identity-graphs.md)
-   + {#graph-linking-rules} zur Verknüpfung von Identitätsdiagramm-Regeln
+   + Verknüpfungsregeln für Identitätsdiagramme {#graph-linking-rules}
       + [Überblick](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [Diagrammsimulation](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
@@ -206,11 +206,11 @@ Campaigns
    + [Kunden-KI-Wert](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Konfigurieren von Kunden-KI](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Verwenden von Kunden-KI- und Insights-Werten](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Monitoring {#monitoring}
++ Überwachung {#monitoring}
    + [Überwachen der Datenaufnahme](/help/platform/monitoring/monitoring-dashboard.md)
    + [Segmentaktivierung überwachen](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Überwachen von Datenflüssen](/help/platform/monitoring/data-monitoring.md)
-+ {#partner-data-support} zur Unterstützung von Partnerdaten
++ Partner Data Support {#partner-data-support}
    + [Übersicht über die Unterstützung von Partnerdaten](/help/platform/partner-data-support/partner-data-support-overview.md)
    + [Unterstützung bei der Offsite-Kundenakquise](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
    + [Hinzufügen von Partnerattributen zu Profilen](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
@@ -227,7 +227,7 @@ Campaigns
    + [Ablauf von pseudonymen Profilen (TTL)](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [Profile löschen](/help/platform/profiles/delete-profiles.md)
    + [Aktualisieren eines bestimmten Attributs mithilfe von upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
-+ Datenschutz- und {#privacy}
++ Datenschutz und Sicherheit {#privacy}
    + [Einführung in Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Identitätsdaten in Datenschutzanfragen](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [Privacy JavaScript-Bibliothek](/help/platform/privacy/using-privacy-javascript-library.md)
@@ -285,13 +285,13 @@ Campaigns
    + [Überblick](/help/platform/use-case-playbooks/overview.md)
    + [Playbook-Sandbox konfigurieren](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Playbook-Instanz erstellen und veröffentlichen](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Experience Cloud Integrations-{#experience-cloud}
++ Experience Cloud-Integrationen {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=de)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Zielgruppe](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
-+ Branchen-Trends {#industry}
+   + [Zielgruppe](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
++ Branchentrends {#industry}
    + [Die Zukunft des Daten-Managements und die sich wandelnde Umgebung](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Eine Geschichte zweier Wahrnehmungen - Marken vs. Verbraucher](/help/platform/industry/brands-vs-consumers.md)
    + [Weiterentwicklung Ihres Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)

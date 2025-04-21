@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 * Wenn Sie die Funktion für Inhaltsexperimente verwenden, stellen Sie sicher, dass Ihr Web-Datensatz auch in Ihrer Berichtskonfiguration enthalten ist.
 * Derzeit werden zwei Arten von Implementierungen unterstützt, um die Erstellung und Bereitstellung von Web-Kanal-Kampagnen in Ihren Web-Eigenschaften zu ermöglichen:
    * Nur Client-seitig: Um Ihre Website zu ändern, müssen Sie die Adobe Experience Platform Web SDK implementieren.
-   * Hybridmodus: Sie können die Platform Edge Network Server-API verwenden, um die Personalisierung Server-seitig anzufordern. Die Antwort der API wird dann zur Client-seitigen Rendering-Änderung an die Adobe Experience Platform Web SDK übermittelt. Weitere Informationen finden Sie in der Dokumentation zur Adobe Experience Platform Edge Network Server-API . Weitere Details und Implementierungsbeispiele für den Hybridmodus finden Sie in diesem Blogpost .
+   * Hybridmodus: Sie können die Platform Edge Network Server-API verwenden, um eine Personalisierung Server-seitig anzufordern. Die Antwort der API wird dann zur Client-seitigen Rendering-Änderung an die Adobe Experience Platform Web SDK übermittelt. Weitere Informationen finden Sie in der Dokumentation zur Adobe Experience Platform Edge Network-Server-API . Weitere Details und Implementierungsbeispiele für den Hybridmodus finden Sie in diesem Blogpost .
 
   >[!NOTE]
   >
@@ -105,7 +105,7 @@ So konfigurieren Sie Adobe Journey Optimizer im Datenstrom:
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Dadurch wird sichergestellt, dass eingehende Ereignisse für Journey Optimizer korrekt vom Adobe Experience Platform-Edge Network verarbeitet werden.
+Dadurch wird sichergestellt, dass eingehende Ereignisse für Journey Optimizer von Adobe Experience Platform Edge Network korrekt verarbeitet werden.
 
 ## Konfigurieren der Zusammenführungsrichtlinie
 
@@ -113,7 +113,7 @@ Stellen Sie sicher, dass eine Zusammenführungsrichtlinie definiert ist, wenn **
 
 So konfigurieren Sie die Option in der Zusammenführungsrichtlinie:
 
-1. Navigieren Sie auf der **[!UICONTROL Kunden]** > **[!UICONTROL Profile]** entweder auf der Experience Platform- oder der Journey Optimizer-Benutzeroberfläche.
+1. Gehen Sie auf die **[!UICONTROL Kunde]** > **[!UICONTROL Profile]** in der Benutzeroberfläche von Experience Platform oder Journey Optimizer.
 1. Wählen Sie die **[!UICONTROL Zusammenführungsrichtlinien]** aus.
 1. Wählen Sie Ihre Richtlinie aus (es ist in der Regel am besten, die Richtlinie [!UICONTROL Standardzeitbasiert] zu verwenden) und schalten Sie die **[!UICONTROL Zusammenführungsrichtlinie von Active]** On-Edge) im **[!UICONTROL Konfigurieren]** ein.
 
@@ -123,7 +123,7 @@ So konfigurieren Sie die Option in der Zusammenführungsrichtlinie:
 
 Um Inhaltsexperimente in Web-Kanal-Kampagnen zu verwenden, müssen Sie sicherstellen, dass der verwendete Web-Datensatz auch in Ihrer Berichtskonfiguration enthalten ist. Das Journey Optimizer-Berichtssystem verwendet den Datensatz schreibgeschützt, um vordefinierte Inhaltsexperimentberichte auszufüllen.
 
-[Das Hinzufügen von Datensätzen für das Reporting zu Inhaltsexperimenten wird in diesem Abschnitt beschrieben](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration#add-datasets).
+[Das Hinzufügen von Datensätzen für das Reporting zu Inhaltsexperimenten wird in diesem Abschnitt beschrieben](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## Anwendungsfall - Übersicht - Treueprämien
 
@@ -131,7 +131,7 @@ In dieser Lektion wird ein Beispiel für einen Anwendungsfall mit Treueprämien 
 
 In diesem Anwendungsbeispiel erfahren Sie, wie Journey Optimizer Ihren Kunden mithilfe von Journey Optimizer-Kampagnen und dem Web-Designer die besten eingehenden Erlebnisse bereitstellen kann.
 
-Da sich dieses Tutorial an Implementierer richtet, sollten Sie beachten, dass diese Lektion umfangreiche Schnittstellenarbeiten in Journey Optimizer umfasst. Obwohl diese Aufgaben der Benutzeroberfläche normalerweise von Marketing-Experten durchgeführt werden, kann es für Implementierer von Vorteil sein, Einblicke in den Prozess zu erhalten, auch wenn sie normalerweise nicht für die Erstellung von Web-Kanal-Kampagnen verantwortlich sind.
+Da sich dieses Tutorial an Implementierer richtet, sollten Sie beachten, dass diese Lektion umfangreiche Schnittstellenarbeiten in Journey Optimizer umfasst. Obwohl diese Schnittstellenaufgaben normalerweise von Marketing-Experten durchgeführt werden, kann es für Implementierer von Vorteil sein, insight in den Prozess zu integrieren, auch wenn sie normalerweise nicht für die Erstellung von Web-Kanal-Kampagnen verantwortlich sind.
 
 ### Erstellen einer Treueprämien-Kampagne
 
@@ -248,9 +248,9 @@ Fügen Sie im Editor die HTML für die `Luma Loyalty Rewards – Gold Status` Au
 
 ![HTML validieren](assets/web-channel-add-custom-html-validate.png)
 
-Sehen Sie sich jetzt die neue benutzerdefinierte HTML-Komponente an, um sie besser anpassen zu können.
+Überprüfen Sie jetzt die neue benutzerdefinierte HTML-Komponente auf Anpassungsfähigkeit.
 
-![Benutzerdefiniertes HTML überprüfen](assets/web-channel-review-custom-html.png)
+![Benutzerdefinierte HTML überprüfen](assets/web-channel-review-custom-html.png)
 
 Bearbeiten Sie eine bestimmte Komponente mit der **[!UICONTROL CSS-Selektortyp]**-Änderung.
 
@@ -296,9 +296,9 @@ Es empfiehlt sich, für die kampagnenspezifischen KPIs die Registerkarte **[!UIC
 
 ![Web-Bericht anzeigen](assets/web-channel-web-report.png)
 
-### Web-Kanalvalidierung mithilfe von Adobe Experience Platform Debugger
+### Web-Kanalvalidierung mit Adobe Experience Platform Debugger
 
-Die Adobe Experience Platform Debugger-Erweiterung, die sowohl für Chrome als auch für Firefox verfügbar ist, analysiert Ihre Web-Seiten, um Probleme bei der Implementierung von Adobe Experience Cloud-Lösungen zu identifizieren.
+Die für Chrome und Firefox verfügbare Adobe Experience Platform Debugger-Erweiterung analysiert Ihre Web-Seiten, um Probleme bei der Implementierung von Adobe Experience Cloud-Lösungen zu identifizieren.
 
 Sie können den Debugger auf der Luma-Site verwenden, um das Web-Kanalerlebnis in der Produktion zu validieren. Dies ist eine Best Practice, sobald der Anwendungsfall Treueprämien ausgeführt wird, um sicherzustellen, dass alles richtig konfiguriert ist.
 
@@ -310,15 +310,15 @@ So starten Sie die Validierung mit dem Debugger:
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Öffnen Sie auf der Webseite den Adobe Experience Platform Debugger ****.
+1. Öffnen Sie auf der Webseite die **[!UICONTROL Adobe Experience Platform Debugger]**.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Navigieren Sie zu **Zusammenfassung**. Überprüfen Sie, ob **[!UICONTROL Datenstrom-ID]** mit dem **[!UICONTROL Datenstrom]** in der **[!UICONTROL Adobe-Datenerfassung]** übereinstimmt, für den Sie Adobe Journey Optimizer aktiviert haben.
+1. Navigieren Sie zu **Zusammenfassung**. Überprüfen Sie, ob **[!UICONTROL Datenstrom-ID]** mit dem **[!UICONTROL Datenstrom]** in der **[!UICONTROL Adobe-]** übereinstimmt, für den Sie Adobe Journey Optimizer aktiviert haben.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Sie können sich dann mit verschiedenen Luma-Treuekonten bei der Website anmelden und den Debugger verwenden, um die an das Adobe Experience Platform-Edge Network gesendeten Anfragen zu validieren.
+1. Sie können sich dann mit verschiedenen Luma-Treuekonten bei der Website anmelden und den Debugger verwenden, um die an die Adobe Experience Platform-Edge Network gesendeten Anfragen zu validieren.
    <!--
     ![ADD SCREENSHOT](#)
     -->
@@ -339,4 +339,4 @@ So starten Sie die Validierung mit dem Debugger:
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
