@@ -4,7 +4,7 @@ description: Erste Schritte - Verwenden des Demosystems neben dem Setup Ihrer La
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # Verwenden des Demosystems Als Nächstes richten Sie Ihre Client-Eigenschaft für die Adobe Experience Platform-Datenerfassung ein
 
-Um die in diesem Tutorial gewonnenen Erkenntnisse zu visualisieren und es Ihnen zu ermöglichen, Ihre Konfiguration in einer sicheren Umgebung zu testen, verwendet dieses Tutorial das Demo System Next von Adobe. Um dieses Tutorial optimal nutzen zu können, muss Ihre AEP-Instanz so konfiguriert sein, dass sie mit Demo System Next integriert wird.
+Um die in diesem Tutorial gewonnenen Erkenntnisse zu visualisieren und es Ihnen zu ermöglichen, Ihre Konfiguration in einer sicheren Umgebung zu testen, verwendet dieses Tutorial das Demo System Next von Adobe. Um dieses Tutorial optimal nutzen zu können, muss Ihre AEP-Instanz so konfiguriert sein, dass sie als Nächstes in das Demosystem integriert wird.
 
 Sobald Sie Zugriff auf das Demosystem haben, fahren Sie mit den folgenden Schritten fort.
 
-Navigieren Sie zu [https://dsn.adobe.com/](https://dsn.adobe.com/) und dann zu **Setup**.
+Navigieren Sie zu [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} und dann zu **Setup**.
 
 ![DSN](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ Wählen Sie in **Dropdown** Umgebung Ihre AEP-Instanz und Sandbox aus.
 
 ![DSN](./images/dsnh1.png)
 
-Wählen Sie als Nächstes die Voreinstellung **AEP-Tutorial-Benutzer** aus.
+Wählen Sie als Nächstes die Voreinstellung **AEP Tutorial User** aus.
 
 ![DSN](./images/dsnhome.png)
 
@@ -57,7 +57,7 @@ Lassen Sie diesen Bildschirm offen, da Sie ihn in den nächsten Schritten benöt
 
 ## Nächste Schritte
 
-Navigieren Sie zu [Erstellen eines Datenstroms](./ex3.md)
+Navigieren Sie zu [Erstellen eines Datenstroms](./ex3.md){target="_blank"}
 
 Zurück zu [Erste Schritte](./getting-started.md){target="_blank"}
 

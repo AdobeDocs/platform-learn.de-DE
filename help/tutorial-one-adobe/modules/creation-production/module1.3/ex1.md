@@ -6,16 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c1b1d78d-9374-4ccd-82cf-e71c682fc907
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
 # 1.3.1 Erste Schritte mit Adobe Express
 
-Öffnen Sie ein neues Inkognito-Browser-Fenster und navigieren Sie zu [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}. Melden Sie sich mit Ihrem **Firmen- oder Schulkonto** an und wählen Sie dann die **- aepImsOrgName -**.
+## 1.3.1.1 Anmelden bei Adobe Express
+
+Öffnen Sie ein neues Inkognito-Browser-Fenster und navigieren Sie zu [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}. Melden Sie sich mit Ihrem **Firmen- oder Schulkonto** an und wählen Sie dann die **`--aepImsOrgName--`** aus.
 
 ![Adobe Express](./images/express1.png)
 
@@ -37,7 +39,7 @@ Sie sind jetzt bei **Adobe Express angemeldet**.
 
 ![Adobe Express](./images/express5.png)
 
-## 1.3.1.1 Erste Schritte mit einer Markenvorlage
+## 1.3.1.2 Erste Schritte mit einer Markenvorlage
 
 Navigieren Sie in Adobe Express zu **Marken**. Ihre Markenvorlagenbibliothek ist derzeit wahrscheinlich leer. CitiSignal hat zuvor eine Markenvorlage definiert, und Sie sollten diese vorhandene Vorlage jetzt wiederverwenden.
 

@@ -2,7 +2,8 @@
 title: Erste Schritte - Zu installierende Anwendungen
 description: Erste Schritte - Zu installierende Anwendungen
 doc-type: multipage-overview
-source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
+exl-id: 25f80da8-88c3-4273-962a-476675cf6047
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 2%
@@ -15,7 +16,7 @@ Nachstehend finden Sie einen Überblick über die Vorbereitung, die vor der Teil
 
 ## Adobe Creative Cloud
 
-Navigieren Sie zu [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud).
+Navigieren Sie zu [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}.
 
 ![Neue Adobe I/O-Integration](./images/cc.png)
 

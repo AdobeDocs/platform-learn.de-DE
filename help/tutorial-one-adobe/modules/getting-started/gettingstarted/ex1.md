@@ -4,7 +4,7 @@ description: Erste Schritte - Installieren der Chrome-Erweiterung für die Exper
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Sobald die Erweiterung installiert ist, wird derselbe Text automatisch geändert
 
 ## Installieren der Chrome-Erweiterung
 
-Um diese Chrome-Erweiterung zu installieren, öffnen Sie den Chrome-Browser und navigieren Sie zu: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Sie werden es dann sehen.
+Um diese Chrome-Erweiterung zu installieren, öffnen Sie den Chrome-Browser und navigieren Sie zu: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}. Sie werden es dann sehen.
 
 Klicken Sie **Zu Chrome hinzufügen**.
 
@@ -58,7 +58,7 @@ Im **Erweiterungen**-Menü klicken Sie auf das Symbol **Puzzleteil** und heften 
 
 ## Konfigurieren der Chrome-Erweiterung
 
-Wechseln Sie zu [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) und klicken Sie dann auf das Erweiterungssymbol, um es zu öffnen.
+Wechseln Sie zu [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} und klicken Sie dann auf das Erweiterungssymbol, um es zu öffnen.
 
 ![DSN](./images/tuthome.png)
 
@@ -74,7 +74,7 @@ Wenn Sie nicht sicher sind, welche Werte für diese Felder eingegeben werden sol
 
 **AEP IMS-Organisationsname**
 
-Wenn Sie sich bei Ihrer Adobe Experience Platform-Instanz auf [https://platform.adobe.com/](https://platform.adobe.com/) anmelden, finden Sie den Namen Ihrer Instanz in der oberen rechten Ecke Ihres Bildschirms.
+Wenn Sie sich bei Ihrer Adobe Experience Platform-Instanz auf [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"} anmelden, finden Sie den Namen Ihrer Instanz in der oberen rechten Ecke Ihres Bildschirms.
 
 ![DSN](./images/aepname.png)
 
@@ -84,7 +84,7 @@ Die IMS-Organisations-ID ist die eindeutige Kennung für Ihre Adobe Experience C
 
 Das Ermitteln der IMS-Organisations-ID kann auf verschiedene Weise erfolgen. Wenn Sie sich nicht sicher sind, wenden Sie sich an einen Systemadministrator Ihrer Instanz, um die ID zu finden.
 
-Sie können ihn möglicherweise finden, indem Sie zu [Admin Console](https://https://adminconsole.adobe.com/) wechseln, wo Sie ihn als Teil der URL finden können.
+Sie können ihn möglicherweise finden, indem Sie zu [Admin Console](https://adminconsole.adobe.com/){target="_blank"} wechseln, wo Sie ihn als Teil der URL finden können.
 
 ![DSN](./images/aepid1.png)
 
@@ -96,7 +96,7 @@ Kopieren Sie den **@AdobeOrgTeil und fügen Sie** ID ein.
 
 **AEP-Mandanten-ID**
 
-Ihre Mandanten-ID ist die eindeutige Kennung der AEP-Instanz Ihres Unternehmens. Wenn Sie sich auf [https://platform.adobe.com/](https://platform.adobe.com/) bei Ihrer Adobe Experience Platform-Instanz anmelden, finden Sie die Mandanten-ID in der URL.
+Ihre Mandanten-ID ist die eindeutige Kennung der AEP-Instanz Ihres Unternehmens. Wenn Sie sich auf [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"} bei Ihrer Adobe Experience Platform-Instanz anmelden, finden Sie die Mandanten-ID in der URL.
 
 ![DSN](./images/aeptenantid.png)
 
@@ -104,7 +104,7 @@ Wenn Sie ihn in die Chrome-Erweiterung eingeben, sollten Sie sicherstellen, dass
 
 **AEP Sandbox-Name**
 
-Ihr Sandbox-Name ist der Name der Umgebung, die Sie in Ihrer AEP-Instanz verwenden werden. Wenn Sie sich auf [https://platform.adobe.com/](https://platform.adobe.com/) bei Ihrer Adobe Experience Platform-Instanz anmelden, finden Sie die Mandanten-ID in der URL.
+Ihr Sandbox-Name ist der Name der Umgebung, die Sie in Ihrer AEP-Instanz verwenden werden. Wenn Sie sich auf [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"} bei Ihrer Adobe Experience Platform-Instanz anmelden, finden Sie die Mandanten-ID in der URL.
 
 Bevor Sie den Sandbox-Namen aus der URL übernehmen, sollten Sie sicherstellen, dass Sie sich in der Sandbox befinden, die Sie für dieses Tutorial verwenden sollten. Sie können zur rechten Sandbox wechseln, indem Sie auf das Menü Sandbox-Umschalter in der oberen rechten Ecke Ihres Bildschirms klicken.
 
@@ -135,7 +135,7 @@ Nach der Aktivierung der Konfiguration wird neben den Initialen der Umgebung ein
 
 ## Überprüfen des Tutorial-Inhalts
 
-Gehen Sie als Test zu [diese Seite](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
+Gehen Sie als Test zu [diese Seite](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Sie sollten jetzt sehen, dass alle **Umgebungsvariablen** auf dieser Seite durch ihre wahren Werte ersetzt wurden, basierend auf der aktivierten Umgebung in der Chrome-Erweiterung.
 
@@ -145,7 +145,7 @@ Sie sollten jetzt eine ähnliche Ansicht wie die unten haben, in der die Umgebun
 
 ## Nächste Schritte
 
-Navigieren Sie zu [Demosystem verwenden als Nächstes, um Ihre Client-Eigenschaft für die Datenerfassung in Adobe Experience Platform einzurichten](./ex2.md)
+Navigieren Sie zu [Demosystem verwenden als Nächstes, um Ihre Client-Eigenschaft für die Datenerfassung in Adobe Experience Platform einzurichten](./ex2.md){target="_blank"}
 
 Zurück zu [Erste Schritte](./getting-started.md){target="_blank"}
 

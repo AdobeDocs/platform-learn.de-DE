@@ -4,7 +4,7 @@ description: Erste Schritte - Erstellen Ihres Datenstroms
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Erstellen eines Datenstroms
 
-Navigieren Sie zu [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
+Navigieren Sie zu [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 ![DSN](./images/launchprop.png)
 
@@ -101,7 +101,7 @@ Ihre Änderungen werden jetzt veröffentlicht und sind in einigen Minuten bereit
 
 ## Erstellen eines Datenstroms für Mobilgeräte
 
-Navigieren Sie zu [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
+Navigieren Sie zu [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 Klicken Sie **[!UICONTROL Datenströme]**.
 
@@ -175,7 +175,7 @@ Ihre Änderungen werden jetzt veröffentlicht und sind in einigen Minuten bereit
 
 ## Nächste Schritte
 
-Navigieren Sie zu [Website verwenden](./ex4.md)
+Navigieren Sie zu [Website verwenden](./ex4.md){target="_blank"}
 
 Zurück zu [Erste Schritte](./getting-started.md){target="_blank"}
 

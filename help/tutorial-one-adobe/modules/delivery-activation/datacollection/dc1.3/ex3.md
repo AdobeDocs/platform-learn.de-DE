@@ -4,9 +4,9 @@ description: Foundation - FAC - Erstellen einer Verbundzusammensetzung
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Nach dem Login landen Sie auf der Homepage von Adobe Experience Platform.
 
 ![Datenaufnahme](./../dc1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbox hat den Namen ``--aepSandboxName--``. Nach Auswahl der entsprechenden Sandbox wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten Sandbox.
+Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbox hat den Namen `--aepSandboxName--`. Nach Auswahl der entsprechenden Sandbox wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten Sandbox.
 
 ![Datenaufnahme](./../dc1.2/images/sb1.png)
 
@@ -47,7 +47,7 @@ Sie werden es dann sehen. Wählen Sie **Zielgruppe erstellen** aus. Klicken Sie 
 
 ![FAC](./images/fedcomp5.png)
 
-Wählen Sie das Schema **—aepUserLdap—_HOUSEHOLDS** aus. Klicken Sie auf **Bestätigen**.
+Wählen Sie die **`--aepUserLdap--_HOUSEHOLDS`** aus. Klicken Sie auf **Bestätigen**.
 
 ![FAC](./images/fedcomp6.png)
 
@@ -71,7 +71,7 @@ Klicken Sie dann erneut auf das Symbol **+** und anschließend erneut auf **Benu
 
 ![FAC](./images/fedcomp11.png)
 
-Die zweite hinzuzufügende Bedingung ist: `Is the user an existing CitiSignal Mobile subscriber?`. Die Antwort auf diese Frage ist die Verwendung der Beziehung zwischen dem Haushalt und dem Hauptkunden im Haushalt, die in einer anderen Tabelle definiert ist, **—aepUserLdap—_PERSONS**. Sie können im Attributmenü mithilfe des Links **household2person** einen Drilldown durchführen.
+Die zweite hinzuzufügende Bedingung ist: `Is the user an existing CitiSignal Mobile subscriber?`. Die Antwort auf diese Frage besteht darin, die Beziehung zwischen dem Haushalt und dem Hauptkunden im Haushalt zu verwenden, die in einer anderen Tabelle **`--aepUserLdap--_PERSONS`** definiert ist. Sie können im Attributmenü mithilfe des Links **household2person** einen Drilldown durchführen.
 
 ![FAC](./images/fedcomp12.png)
 

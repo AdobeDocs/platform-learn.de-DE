@@ -4,9 +4,9 @@ description: Foundation - FAC - Erstellen von Schemata, Datenmodellen und Links
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '646'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ Nach dem Login landen Sie auf der Homepage von Adobe Experience Platform.
 
 ![Datenaufnahme](./../dc1.2/images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbox hat den Namen ``--aepSandboxName--``. Nach Auswahl der entsprechenden Sandbox wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten Sandbox.
+Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbox hat den Namen `--aepSandboxName--`. Nach Auswahl der entsprechenden Sandbox wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten Sandbox.
 
 ![Datenaufnahme](./../dc1.2/images/sb1.png)
 
@@ -98,7 +98,7 @@ Klicken Sie auf **Erstellen**.
 
 ![FAC](./images/fdb8.png)
 
-Sie werden es dann sehen. Sie können auf ein beliebiges Schema klicken und die Informationen überprüfen. Klicken Sie beispielsweise auf **—aepUserLdap—_PERSONS**.
+Sie werden es dann sehen. Sie können auf ein beliebiges Schema klicken und die Informationen überprüfen. Klicken Sie beispielsweise auf **`--aepUserLdap--_PERSONS`**.
 
 ![FAC](./images/fdb9.png)
 

@@ -4,7 +4,7 @@ description: Erste Schritte - Verwenden der Mobile App
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Herunterladen der App
 
-Navigieren Sie zu [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) auf Ihrem Computer. Sie werden es dann sehen.
+Navigieren Sie zu [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"} auf Ihrem Computer. Sie werden es dann sehen.
 
 ![DSN](./images/mobileapp.png)
 
@@ -53,7 +53,7 @@ Nach der vorherigen Übung hatten Sie dieses Ergebnis. Klicken Sie hier, um das 
 
 ![DSN](./images/dsn5b.png)
 
-Falls Sie Ihr Browser-Fenster versehentlich geschlossen haben oder zukünftige Demo- oder Aktivierungssitzungen geplant sind, können Sie unter [https://dsn.adobe.com](https://dsn.adobe.com) auch auf Ihr Website-Projekt zugreifen. Nachdem Sie sich mit Ihrer Adobe ID angemeldet haben, sehen Sie Folgendes. Klicken Sie auf die drei Punkte **…** in Ihrem Mobile-App-Projekt und dann auf **Bearbeiten**.
+Falls Sie Ihr Browser-Fenster versehentlich geschlossen haben oder zukünftige Demo- oder Aktivierungssitzungen geplant sind, können Sie unter [https://dsn.adobe.com](https://dsn.adobe.com){target="_blank"} auch auf Ihr Website-Projekt zugreifen. Nachdem Sie sich mit Ihrer Adobe ID angemeldet haben, sehen Sie Folgendes. Klicken Sie auf die drei Punkte **…** in Ihrem Mobile-App-Projekt und dann auf **Bearbeiten**.
 
 ![DSN](./images/web8a.png)
 
@@ -83,7 +83,7 @@ Gehen Sie nun zurück zu **Startseite** in der App. Ihre App kann jetzt verwende
 
 ## Nächste Schritte
 
-Navigieren Sie zu [Adobe I/O-Projekt konfigurieren](./ex6.md)
+Navigieren Sie zu [Adobe I/O-Projekt konfigurieren](./ex6.md){target="_blank"}
 
 Zurück zu [Erste Schritte](./getting-started.md){target="_blank"}
 

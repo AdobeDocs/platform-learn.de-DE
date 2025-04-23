@@ -4,7 +4,7 @@ description: Erste Schritte - Verwenden der Website
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Ihre Website wird dann in einem Inkognito-Browser-Fenster geladen. Für jede Dem
 
 ## Option 2: Mit einem neuen Inkognito-Browser-Fenster beginnen
 
-Falls Sie Ihr Browser-Fenster versehentlich geschlossen haben oder auf zukünftige Sitzungen zugreifen möchten, können Sie unter [https://dsn.adobe.com/](https://dsn.adobe.com/) auf Ihr Website-Projekt zugreifen. Nachdem Sie sich mit Ihrer Adobe ID angemeldet haben, sehen Sie Folgendes. Klicken Sie auf die 3 Punkte **…** in Ihrem Website-Projekt und dann auf **Bearbeiten**.
+Falls Sie Ihr Browser-Fenster versehentlich geschlossen haben oder auf zukünftige Sitzungen zugreifen möchten, können Sie unter [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} auf Ihr Website-Projekt zugreifen. Nachdem Sie sich mit Ihrer Adobe ID angemeldet haben, sehen Sie Folgendes. Klicken Sie auf die 3 Punkte **…** in Ihrem Website-Projekt und dann auf **Bearbeiten**.
 
 ![DSN](./images/web8.png)
 
@@ -103,7 +103,7 @@ Ihre Website wird dann in einem Inkognito-Browser-Fenster geladen. Für jede Dem
 
 ## Nächste Schritte
 
-Navigieren Sie zu [Mobile App verwenden](./ex5.md)
+Navigieren Sie zu [Mobile App verwenden](./ex5.md){target="_blank"}
 
 Zurück zu [Erste Schritte](./getting-started.md){target="_blank"}
 
