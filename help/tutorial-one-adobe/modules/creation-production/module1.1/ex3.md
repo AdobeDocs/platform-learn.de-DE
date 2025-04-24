@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 45f6f9db7d5b3e79e10d508a44a532261bd9cdb3
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Senden wir Ihre erste API-Anfrage an Photoshop-APIs.
 
 Als Nächstes begrüßen wir Photoshop-APIs, um zu testen, ob alle Berechtigungen und der Zugriff richtig festgelegt sind.
 
-1. Öffnen Sie in der Sammlung **Photoshop** die Anfrage **Photoshop Hello (Test Auth.)**. Wählen Sie **Senden** aus.
+Öffnen Sie in der Sammlung **Photoshop** die Anfrage **Photoshop Hello (Test Auth.)**. Wählen Sie **Senden** aus.
 
 ![Azure-Speicher](./images/ps10.png){zoomable="yes"}
 
@@ -55,7 +55,7 @@ Als Nächstes müssen Sie die PSD-Datei **Citisignal-fiber.psd** in Ihr -Speiche
 
 ### PSD in Azure hochladen
 
-1. Öffnen Sie in Postman die Anfrage **PSD in Azure-Speicherkonto hochladen**. In der vorherigen Übung haben Sie diese Umgebungsvariablen in Postman konfiguriert, die Sie jetzt verwenden werden:
+Öffnen Sie in Postman die Anfrage **PSD in Azure-Speicherkonto hochladen**. In der vorherigen Übung haben Sie diese Umgebungsvariablen in Postman konfiguriert, die Sie jetzt verwenden werden:
 
 - `AZURE_STORAGE_URL`
 - `AZURE_STORAGE_CONTAINER`
@@ -66,11 +66,11 @@ Wie Sie in der Anfrage **PSD in Azure-Speicherkonto hochladen** sehen können, i
 
 ![Azure-Speicher](./images/ps12.png){zoomable="yes"}
 
-1. Wählen **in &quot;**&quot; die Datei **citsignal-fiber.psd** aus.
+Wählen **in &quot;**&quot; die Datei **citsignal-fiber.psd** aus.
 
 ![Azure-Speicher](./images/ps13.png){zoomable="yes"}
 
-1. Ihr Bildschirm sollte wie folgt aussehen. Wählen Sie **Senden** aus.
+Ihr Bildschirm sollte wie folgt aussehen. Wählen Sie **Senden** aus.
 
 ![Azure-Speicher](./images/ps14.png){zoomable="yes"}
 
@@ -86,33 +86,33 @@ Wenn Sie Azure Storage Explorer verwenden, um Ihre Datei zu überprüfen, müsse
 
 Als Nächstes müssen Sie die Manifestdatei Ihrer PSD-Datei abrufen.
 
-1. Öffnen Sie in Postman die Anfrage **Photoshop - PSD-Manifest abrufen**. Wechseln Sie zu **Textkörper**.
+Öffnen Sie in Postman die Anfrage **Photoshop - PSD-Manifest abrufen**. Wechseln Sie zu **Textkörper**.
 
 Der Textkörper sollte wie folgt aussehen:
 
 ```json
-{
-  "inputs": [
-    {
-      "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-    }
-  ],
-  "options": {
-    "thumbnails": {
-      "type": "image/jpeg"
+  {
+    "inputs": [
+      {
+        "storage": "external",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+      }
+    ],
+    "options": {
+      "thumbnails": {
+        "type": "image/jpeg"
+      }
     }
   }
-}
 ```
 
-1. Wählen Sie **Senden** aus.
+Wählen Sie **Senden** aus.
 
 In der Antwort wird jetzt ein Link angezeigt. Da es manchmal einige Zeit dauern kann, bis Vorgänge in Photoshop abgeschlossen sind, stellt Photoshop eine Statusdatei als Antwort auf die meisten eingehenden Anfragen bereit. Um zu verstehen, was mit Ihrer Anfrage passiert, müssen Sie die Statusdatei lesen.
 
 ![Azure-Speicher](./images/ps17.png){zoomable="yes"}
 
-1. Um die Statusdatei zu lesen, öffnen Sie die Anfrage **Photoshop - Get PS Status**. Sie können sehen, dass diese Anfrage eine Variable als URL verwendet. Dies ist eine Variable, die von der vorherigen Anfrage festgelegt wurde, die Sie gesendet haben: **Photoshop - PSD-Manifest abrufen**. Variablen werden in den **Skripten** jeder Anfrage festgelegt. Wählen Sie **Senden** aus.
+Um die Statusdatei zu lesen, öffnen Sie die Anfrage **Photoshop - Get PS Status**. Sie können sehen, dass diese Anfrage eine Variable als URL verwendet. Dies ist eine Variable, die von der vorherigen Anfrage festgelegt wurde, die Sie gesendet haben: **Photoshop - PSD-Manifest abrufen**. Variablen werden in den **Skripten** jeder Anfrage festgelegt. Wählen Sie **Senden** aus.
 
 ![Azure-Speicher](./images/ps18.png){zoomable="yes"}
 
@@ -120,7 +120,7 @@ Ihr Bildschirm sollte wie folgt aussehen. Derzeit ist der Status auf **Ausstehen
 
 ![Azure-Speicher](./images/ps19.png){zoomable="yes"}
 
-1. Wählen Sie Mehrere Male senden auf **Photoshop - PS-Status abrufen**, bis sich der Status auf &quot;**&quot;**. Dies kann einige Minuten dauern.
+Wählen Sie Mehrere Male senden auf **Photoshop - PS-Status abrufen**, bis sich der Status auf &quot;**&quot;**. Dies kann einige Minuten dauern.
 
 Wenn die Antwort verfügbar ist, können Sie sehen, dass die JSON-Datei Informationen zu allen Ebenen der PSD-Datei enthält. Dies ist eine nützliche Information, da Dinge wie der Ebenenname oder die Ebenenkennung identifiziert werden können.
 
@@ -132,9 +132,9 @@ Suchen Sie beispielsweise nach dem `2048x2048-cta`. Ihr Bildschirm sollte wie fo
 
 ### Photoshop-API - Text ändern
 
-Als Nächstes müssen Sie den Text für den Aktionsaufruf mithilfe der APIs ändern.
+Als Nächstes müssen Sie den Text für die call to action mithilfe der APIs ändern.
 
-1. Öffnen Sie in Postman die Anfrage **Photoshop - Text ändern** und navigieren Sie zu **Hauptteil**.
+Öffnen Sie in Postman die Anfrage **Photoshop - Text ändern** und navigieren Sie zu **Hauptteil**.
 
 Ihr Bildschirm sollte wie folgt aussehen:
 
@@ -143,37 +143,37 @@ Ihr Bildschirm sollte wie folgt aussehen:
 - Drittens wird eine Ausgabedatei angegeben: `citisignal-fiber-changed-text.psd`
 
 ```json
-{
-  "inputs": [
-    {
-      "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-    }
-  ],
-  "options": {
-    "layers": [
+  {
+    "inputs": [
       {
-        "name": "2048x2048-cta",
-        "text": {
-          "content": "Get Fiber now!"
+        "storage": "external",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+      }
+    ],
+    "options": {
+      "layers": [
+        {
+          "name": "2048x2048-cta",
+          "text": {
+            "content": "Get Fiber now!"
+          }
         }
+      ]
+    },
+    "outputs": [
+      {
+        "storage": "azure",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
+        "type": "vnd.adobe.photoshop",
+        "overwrite": true
       }
     ]
-  },
-  "outputs": [
-    {
-      "storage": "azure",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
-      "type": "vnd.adobe.photoshop",
-      "overwrite": true
-    }
-  ]
-}
+  }
 ```
 
 Die Ausgabedatei hat einen anderen Namen, da die ursprüngliche Eingabedatei nicht überschrieben werden soll.
 
-1. Wählen Sie **Senden** aus.
+Wählen Sie **Senden** aus.
 
 ![Azure-Speicher](./images/ps23.png){zoomable="yes"}
 
@@ -181,13 +181,13 @@ Wie zuvor enthält die Antwort einen Link, der auf die Statusdatei verweist, die
 
 ![Azure-Speicher](./images/ps22.png){zoomable="yes"}
 
-1. Um die Statusdatei zu lesen, öffnen Sie die Anfrage **Photoshop - PS-Status abrufen** und wählen Sie **Senden**. Wenn der Status nicht sofort auf **Erfolgreich** festgelegt ist, warten Sie einige Sekunden und wählen Sie dann erneut **Senden** aus.
+Um die Statusdatei zu lesen, öffnen Sie die Anfrage **Photoshop - PS-Status abrufen** und wählen Sie **Senden**. Wenn der Status nicht sofort auf **Erfolgreich** festgelegt ist, warten Sie einige Sekunden und wählen Sie dann erneut **Senden** aus.
 
-1. Wählen Sie die URL aus, um die Ausgabedatei herunterzuladen.
+Wählen Sie die URL aus, um die Ausgabedatei herunterzuladen.
 
 ![Azure-Speicher](./images/ps24.png){zoomable="yes"}
 
-1. Öffnen Sie **citsignal-fiber-changed-text.psd** nach dem Herunterladen der Datei auf Ihren Computer. Der Platzhalter für den Aktionsaufruf wurde durch den Text „Jetzt Fibre **!** ersetzt.
+Öffnen Sie **citsignal-fiber-changed-text.psd** nach dem Herunterladen der Datei auf Ihren Computer. Sie sollten sehen, dass der Platzhalter für die call to action durch den Text &quot;**jetzt abrufen!** ersetzt wurde.
 
 ![Azure-Speicher](./images/ps25.png){zoomable="yes"}
 
