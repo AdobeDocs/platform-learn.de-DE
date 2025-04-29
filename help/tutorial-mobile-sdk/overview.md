@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Mobile Apps von Adobe Experience Cloud im
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 3%
+source-wordcount: '815'
+ht-degree: 4%
 
 ---
 
@@ -59,7 +59,7 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe-ID und die
 * Bei der Datenerfassung müssen Sie über Folgendes verfügen:
    * **[!UICONTROL Plattformen]** - Berechtigungselement **[!UICONTROL Mobile]**
    * **[!UICONTROL Eigenschaftsrechte]** - Berechtigungselemente für **[!UICONTROL Entwickeln]**, **[!UICONTROL Genehmigen]**, **[!UICONTROL Veröffentlichen]**, **[!UICONTROL Erweiterungen verwalten]** und **[!UICONTROL Umgebungen verwalten]**.
-   * **[!UICONTROL Unternehmensrechte]** - Berechtigungselemente für **[!UICONTROL Eigenschaften verwalten]** und, falls Sie die optionale Lektion für Push-Messaging abgeschlossen haben, **[!UICONTROL App-Konfigurationen verwalten]**
+   * **[!UICONTROL Unternehmensrechte]** - Berechtigungselemente für **[!UICONTROL Eigenschaften verwalten]**
 
      Weitere Informationen zu Tag-Berechtigungen finden Sie unter [Benutzerberechtigungen für Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de){target="_blank"} in der Produktdokumentation.
 * In Experience Platform müssen Sie über Folgendes verfügen:

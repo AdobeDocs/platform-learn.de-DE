@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
+source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 0%
+source-wordcount: '1607'
+ht-degree: 9%
 
 ---
 
@@ -55,31 +55,50 @@ In dieser Lektion werden Sie
 >Wenn Sie Ihre Umgebung bereits im Rahmen der Lektion [Journey Optimizer-Push-Messaging](journey-optimizer-push.md) eingerichtet haben, haben Sie möglicherweise bereits einige der Schritte in diesem Setup-Abschnitt ausgeführt.
 
 
-### Hinzufügen einer Programmoberfläche in der Datenerfassung
+### Erstellen einer Kanalkonfiguration in Journey Optimizer
 
-1. Wählen Sie in [Datenerfassungsoberfläche](https://experience.adobe.com/data-collection/) im linken ]**die Option**[!UICONTROL  App-Oberflächen aus.
-1. Um eine Konfiguration zu erstellen, wählen Sie **[!UICONTROL App-Oberfläche erstellen]** aus.
-   ![App-Oberfläche - Startseite](assets/push-app-surface.png)
-1. Geben Sie einen **[!UICONTROL Namen]** für die Konfiguration ein, z. B. `Luma App Tutorial` .
-1. Wählen **[!UICONTROL unter „Konfiguration von Mobile]**&quot; die Option **[!UICONTROL Apple iOS]** aus.
-1. Geben Sie die Bundle ID der Mobile App im Feld **[!UICONTROL App ID (iOS Bundle ID)]** ein. Beispiel: `com.adobe.luma.tutorial.swiftui`.
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+Zunächst müssen Sie eine Kanalkonfiguration erstellen, damit Sie über Journey Optimizer Benachrichtigungen zu Mobile Apps senden können.
 
-   ![App-Oberflächenkonfiguration](assets/push-app-surface-config-inapp.png)
+1. Öffnen Sie in der Journey Optimizer **[!UICONTROL Benutzeroberfläche das Menü]** Kanäle > **[!UICONTROL Allgemeine Einstellungen]** > **[!UICONTROL Kanalkonfigurationen]** und wählen Sie dann **[!UICONTROL Kanalkonfiguration erstellen]**.
+
+   ![Erstellen einer Kanalkonfiguration](assets/push-config-9.png)
+
+1. Geben Sie einen Namen und eine Beschreibung (optional) für die Konfiguration an.
+
+   >[!NOTE]
+   >
+   > Namen müssen mit einem Buchstaben (A–Z) beginnen. Ein Name darf nur alphanumerische Zeichen enthalten. Sie können auch die Zeichen Unterstrich `_`, Punkt `.` und Bindestrich `-` verwenden.
+
+
+1. Um der Konfiguration benutzerdefinierte oder grundlegende Datennutzungskennzeichnungen zuzuweisen, können Sie **[!UICONTROL Zugriff verwalten]** auswählen. [Erfahren Sie mehr über die Zugriffssteuerung auf Objektebene (Object Level Access Control, OLAC)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+
+1. Wählen Sie den **In-App-Messaging** Kanal aus.
+
+1. Wählen Sie eine **[!UICONTROL Marketing-Aktion]** aus, um Einverständnisrichtlinien mit den Nachrichten zu verknüpfen, die diese Konfiguration verwenden. Es werden alle mit dieser Marketing-Aktion verknüpften Einverständnisrichtlinien genutzt, um die Voreinstellungen Ihrer Kundinnen und Kunden zu respektieren. [Weitere Informationen zu Marketing-Aktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+
+1. Wählen Sie die Plattform aus, für die Sie die Einstellungen definieren möchten. Auf diese Weise können Sie die Ziel-App für jede Plattform festlegen und eine konsistente Inhaltsbereitstellung über mehrere Plattformen hinweg sicherstellen.
+
+   >[!NOTE]
+   >
+   >Bei iOS- und Android-Plattformen basiert der Versand ausschließlich auf der App-ID. Wenn beide Apps dieselbe App-ID verwenden, werden Inhalte für beide bereitgestellt, unabhängig von der in der **[!UICONTROL Kanalkonfiguration]** ausgewählten Plattform.
+
+1. Klicken Sie **[!UICONTROL Senden]**, um Ihre Änderungen zu speichern.
+
+   ![Konfigurieren des In-App-Kanals](assets/inapp_config_10.png)
 
 ### Aktualisieren der Datenstromkonfiguration
 
-Um sicherzustellen, dass Daten von Ihrer Mobile App an das Edge Network Journey Optimizer weitergeleitet werden, aktualisieren Sie Ihre Experience Edge-Konfiguration.
+Aktualisieren Sie Ihre Experience Edge-Konfiguration, um sicherzustellen, dass Daten von Ihrer Mobile App an Edge Network Journey Optimizer weitergeleitet werden.
 
 
 
 1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche **[!UICONTROL Datenströme]** und wählen Sie Ihren Datenstrom aus, z. B. **[!DNL Luma Mobile App]**.
-1. Experience Platform Wählen Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) für **** und wählen Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus dem Kontextmenü.
+1. Wählen Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) für **[!UICONTROL Experience Platform]** und wählen Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus dem Kontextmenü.
 1. Stellen Sie **[!UICONTROL Bildschirm]** Datenströme“ > ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** sicher, dass **[!UICONTROL Adobe Journey Optimizer]** ausgewählt ist. Weitere Informationen finden Sie unter {](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)}Adobe Experience Platform-Einstellungen.[
 1. Um Ihre Datenstromkonfiguration zu speichern, wählen Sie **[!UICONTROL Speichern]** aus.
 
 
-   ![AEP-Datenstromkonfiguration](assets/datastream-ajo-inapp-configuration.png)
+   ![Konfiguration des AEP-Datenstroms](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Installieren der Journey Optimizer Tags-Erweiterung
@@ -104,7 +123,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
 >Wenn Sie den Abschnitt [Installieren von SDKs](install-sdks.md) abgeschlossen haben, ist die SDK bereits installiert und Sie können diesen Schritt überspringen.
 >
 
-1. Stellen Sie in Xcode sicher[ dass „AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) zur Liste der Pakete in den Paketabhängigkeiten hinzugefügt wird. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Stellen Sie in Xcode sicher, dass [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) zur Liste der Pakete in den Paketabhängigkeiten hinzugefügt wird. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigieren Sie im Xcode-Projekt ]**Navigator zu **[!DNL Luma]**>**[!DNL Luma]**>**[!UICONTROL  AppDelegate.
 1. Stellen Sie sicher, dass `AEPMessaging` Teil Ihrer Importliste ist.
 
@@ -230,7 +249,7 @@ Sie können Ihre In-App-Nachrichten über die Benutzeroberfläche von Assurance 
 1. Wählen Sie **[!UICONTROL In-App-Messaging]** aus.
 1. Wählen Sie **[!UICONTROL Ereignisliste]** aus.
 1. Wählen Sie einen **[!UICONTROL Nachricht anzeigen]**-Eintrag aus.
-1. Inspect : Das Raw-Ereignis, insbesondere das `html`, das das vollständige Layout und den Inhalt der In-App-Nachricht enthält.
+1. Überprüfen Sie das Rohereignis, insbesondere das `html`, das das vollständige Layout und den Inhalt der In-App-Nachricht enthält.
    ![Assurance-In-App-Nachricht](assets/assurance-in-app-display-message.png)
 
 
@@ -240,7 +259,7 @@ Sie sollten jetzt über alle Tools verfügen, um ggf. In-App-Nachrichten hinzuzu
 
 >[!SUCCESS]
 >
->Sie haben die App für In-App-Nachrichten aktiviert und eine In-App-Nachrichtenkampagne mit Journey Optimizer und der Journey Optimizer-Erweiterung für das Experience Platform Mobile SDK hinzugefügt.
+>Sie haben die App für In-App-Nachrichten aktiviert und eine In-App-Nachrichtenkampagne mit Journey Optimizer und der Journey Optimizer-Erweiterung für Experience Platform Mobile SDK hinzugefügt.
 >
 >Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
