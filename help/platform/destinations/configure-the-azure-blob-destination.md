@@ -1,23 +1,26 @@
 ---
 title: Konfigurieren des Azure Blob-Ziels
-description: Erfahren Sie, wie Sie das Azure Blob Storage-Ziel in Real-Time Customer Data Platform (Real-Time CDP) einrichten und konfigurieren.
+description: Erfahren Sie, wie Sie in Real-Time Customer Data Platform eine Verbindung einrichten und Daten an das Azure Blob Storage-Ziel senden.
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
 level: Intermediate
 jira: KT-7068
 thumbnail: 331082.jpg
+last-substantial-update: 2025-04-30T00:00:00Z
 exl-id: 17340357-2e3a-4c94-b010-442fba70b216
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 75c01a5afa311bfbd23ff8602807aefb71c44be3
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 1%
+source-wordcount: '78'
+ht-degree: 0%
 
 ---
 
 # Konfigurieren des Azure Blob-Ziels
 
-Erfahren Sie, wie Sie das Azure Blob Storage-Ziel in Real-Time Customer Data Platform (Real-Time CDP) einrichten und konfigurieren. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html?lang=de).
+Erfahren Sie, wie Sie in Real-Time Customer Data Platform eine Verbindung einrichten und Daten an das Azure Blob Storage-Ziel senden. Dieses Ziel unterstützt den Export von Datensätzen und Audiences und ermöglicht Ihnen das Anpassen der Dateikopfzeilen und Datenattribute.
+
+Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
 
