@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
+source-git-commit: 83046a6c56353ba8750c4e500f70ef2ca887fbe8
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2885'
 ht-degree: 6%
 
 ---
@@ -75,9 +75,9 @@ Die folgenden Schritte sind nicht Adobe Experience Cloud-spezifisch und sollen S
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
    ![Neuen Schlüssel konfigurieren](assets/mobile-push-apple-dev-config-key.png)
 1. Überprüfen Sie die Konfiguration und wählen Sie **[!UICONTROL Registrieren]**.
-1. Laden Sie den privaten `.p8`-Schlüssel herunter. Er wird in der nächsten Übung in der Konfiguration des Journey Optimizer-Kanals verwendet.
-1. Notieren Sie sich die **[!UICONTROL Schlüssel-ID]**. Er wird in der Journey Optimizer-Kanalkonfiguration verwendet.
-1. Notieren Sie sich die **[!UICONTROL Team ID]**. Er wird in der Journey Optimizer-Kanalkonfiguration verwendet.
+1. Laden Sie den privaten `.p8`-Schlüssel herunter. Er wird in der nächsten Übung verwendet, wenn Sie Ihre Journey Optimizer-Push-Anmeldedaten konfigurieren.
+1. Notieren Sie sich die **[!UICONTROL Schlüssel-ID]**. Er wird in der nächsten Übung verwendet, wenn Sie Ihre Journey Optimizer-Push-Anmeldedaten konfigurieren.
+1. Notieren Sie sich die **[!UICONTROL Team ID]**. Er wird in der nächsten Übung verwendet, wenn Sie Ihre Journey Optimizer-Push-Anmeldedaten konfigurieren.
    ![Wichtige Details](assets/push-apple-dev-key-details.png)
 
 Weitere Dokumentationen finden Sie [hier](https://help.apple.com/developer-account/#/devcdfbb56a3).
@@ -96,19 +96,17 @@ Die Registrierung der Push-Anmeldedaten für Mobile Apps ist erforderlich, um Ad
 
    ![Erstellen Sie eine neue Konfiguration für Push-Anmeldeinformationen in Journey Optimizer](assets/add-push-credential-ios.png)
 
-1. Wählen Sie in **[!UICONTROL Dropdown]** Liste „Plattform“ das Betriebssystem {2 **iOS} aus:**
+1. Wählen Sie in der **[!UICONTROL -]**-Liste das Betriebssystem **iOS** aus.
 
+1. Geben Sie die Bundle ID der Mobile App in das Feld **[!UICONTROL App-ID]** (iOS Bundle ID) ein. Beispiel: com.adobe.luma.tutorial.swiftui
 
-   1. Geben Sie die Bundle ID der Mobile App in das Feld **[!UICONTROL App-ID]** (iOS Bundle ID) ein. Beispiel: com.adobe.luma.tutorial.swiftui
+1. Aktivieren Sie die Option **[!UICONTROL Auf alle Sandboxes anwenden]**, um diese Push-Anmeldedaten für alle Sandboxes verfügbar zu machen. Wenn eine bestimmte Sandbox über eigene Anmeldedaten für dasselbe Platform- und App-ID-Paar verfügt, haben diese Sandbox-spezifischen Anmeldedaten Vorrang.
 
-   1. Aktivieren Sie die Option **[!UICONTROL Auf alle Sandboxes anwenden]**, um diese Push-Anmeldedaten für alle Sandboxes verfügbar zu machen. Wenn eine bestimmte Sandbox über eigene Anmeldedaten für dasselbe Platform- und App-ID-Paar verfügt, haben diese Sandbox-spezifischen Anmeldedaten Vorrang.
+1. Ziehen Sie die aus der vorherigen Übung erhaltene .p8 **Apple Push Notification Authentication Key**-Datei per Drag-and-Drop hinüber.
 
+1. Geben Sie die **[!UICONTROL Schlüssel-ID]** an, eine 10-stellige Zeichenfolge, die bei der Erstellung `p8` Authentifizierungsschlüssels zugewiesen wurde. Sie finden diese auf der Registerkarte **[!UICONTROL Schlüssel]** auf der Seite **Zertifikate, Kennungen und Profile** der Apple Developer Portal-Seiten. (Sie sollten dies während der vorherigen Übung notiert haben.)
 
-   1. Ziehen Sie die aus der vorherigen Übung erhaltene .p8 **Apple Push Notification Authentication Key**-Datei per Drag-and-Drop hinüber.
-
-   1. Geben Sie die **[!UICONTROL Schlüssel-ID]** an, eine 10-stellige Zeichenfolge, die bei der Erstellung `p8` Authentifizierungsschlüssels zugewiesen wurde. Sie finden diese auf der Registerkarte **[!UICONTROL Schlüssel]** auf der Seite **Zertifikate, Kennungen und Profile** der Apple Developer Portal-Seiten. (Sie sollten dies während der vorherigen Übung notiert haben.)
-
-   1. Geben Sie die **[!UICONTROL Team ID]** an. Die Team-ID ist ein Wert, der auf der Registerkarte **Mitgliedschaft** oder oben auf der Apple Developer Portal-Seite zu finden ist. (Sie sollten dies während der vorherigen Übung notiert haben.)
+1. Geben Sie die **[!UICONTROL Team ID]** an. Die Team-ID ist ein Wert, der auf der Registerkarte **Mitgliedschaft** oder oben auf der Apple Developer Portal-Seite zu finden ist. (Sie sollten dies während der vorherigen Übung notiert haben.)
 
    ![Konfiguration von Push-Anmeldeinformationen in Journey Optimizer](assets/add-app-config-ios.png)
 
