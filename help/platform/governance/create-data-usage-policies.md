@@ -18,4 +18,4 @@ ht-degree: 48%
 
 Erfahren Sie, wie Sie Datennutzungsrichtlinien in der Benutzeroberfläche von Adobe Experience Platform erstellen und verwalten. Mit Datennutzungsrichtlinien können Sie die Datennutzung für bestimmte Zwecke auf Grundlage der Datenkennzeichnung einschränken. Informationen zum API-basierten Ansatz finden Sie unter [Erstellen von Datennutzungsrichtlinien mit der API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/create.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/32977?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37126?learn=on&enablevpops&captions=ger)

@@ -31,9 +31,9 @@ Es gibt zwei Hauptaufgaben, die wir in der Datenerfassungsoberfläche ausführen
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich diese beiden kurzen Videos an, um mehr über die Streaming-Datenaufnahme und Web SDK zu erfahren:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31577?learn=on&enablevpops&captions=ger)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37260?learn=on&enablevpops&captions=ger)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-
 
 Wenn Sie den Debugger noch nie verwendet haben - und dieser unterscheidet sich vom älteren Adobe Experience Cloud Debugger - sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35916?learn=on&enablevpops&captions=ger)
 
 ### Öffnen der Luma-Website
 

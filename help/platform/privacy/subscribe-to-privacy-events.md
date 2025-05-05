@@ -19,5 +19,5 @@ ht-degree: 21%
 
 Erfahren Sie, wie Sie Datenschutzereignisse abonnieren, um auftragsstatusbasierte Workflows zu automatisieren. Weitere Informationen finden Sie in der [Dokumentation zu Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448181?learn=on&enablevpops&captions=ger)
 

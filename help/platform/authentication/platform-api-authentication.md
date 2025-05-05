@@ -31,20 +31,20 @@ Die Funktion [&#128279;](https://developer.adobe.com/console/home)**Details für
 >
 > Nachdem Sie Ihre API-Anmeldedaten erstellt haben, muss ein Systemadministrator die Anmeldedaten mit einer Rolle in der Experience Platform verknüpfen.
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31575/?learn=on&enablevpops&captions=ger)
 
 ## Erstellen eines Zugriffs-Tokens mit Postman{#generate-an-access-token-with-postman}
 
 Verwenden Sie die [Adobe Identity Management Service APIs](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) um ein Zugriffstoken für den Zugriff auf die Adobe Experience Platform APIs zu erhalten.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32919/?learn=on&enablevpops&captions=ger)
 
 
 ## Interagieren mit Experience Platform-APIs mithilfe von Postman
 
 Erkunden Sie die Interaktion mit Adobe Experience Platform-APIs mithilfe der [von Adobe bereitgestellten Experience Platform-API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)Postman-Sammlungen, die auf den [Adobe Developer Console-Umgebungsvariablen ](#export-integration-details-to-postman) dem [generierten Zugriffstoken](#generate-an-access-token-with-postman) aufbauen.
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32918/?learn=on&enablevpops&captions=ger)
 
 
 ## In diesen Videos referenzierte Ressourcen

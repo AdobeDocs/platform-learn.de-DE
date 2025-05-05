@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie Benutzende hinzufügen und Berechtigungen für Datenerfassungsfunktionen von Adobe Experience Platform verwalten, damit die Mitarbeiter in Ihrem Unternehmen Zugriff auf die Aufgaben haben, die sie für ihre Arbeit benötigen.
 
->[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33394/?learn=on&enablevpops&captions=ger)

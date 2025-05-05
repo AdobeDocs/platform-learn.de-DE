@@ -19,5 +19,5 @@ ht-degree: 1%
 
 In diesem Video wird gezeigt, wie Kunden-KI Kundenprofile mit KI-basierten Tendenzen anreichert sowie die Segmentierung und Zielgruppenbestimmung von Kunden unterstützt. Weitere Informationen finden Sie in der [Dokumentation zu Kunden-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328476?learn=on&enablevpops&captions=ger)
 

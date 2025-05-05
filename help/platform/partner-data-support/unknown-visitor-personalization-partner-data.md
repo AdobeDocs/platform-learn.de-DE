@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie mithilfe der partnergestützten Besuchererkennung Drittanbieterattribute aus der [!DNL Adobe Experience Platform Web SDK] erfassen und Ihr Onsite-Erlebnis für unbekannte Besucher personalisieren können. Weitere Informationen finden Sie in der Dokumentation [Verwenden der partnergestützten Besuchererkennung zum Personalisieren von Onsite-Erlebnissen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html?lang=de) .
 
->[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449261/?learn=on&enablevpops&captions=ger)

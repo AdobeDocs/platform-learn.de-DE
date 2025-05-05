@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie das Bedienfeld „Auffindbarkeit“ im KI-Assistenten verwenden. Weitere Informationen finden Sie im [Handbuch zur Benutzeroberfläche des KI-Assistenten](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).
 
->[!VIDEO](https://video.tv.adobe.com/v/3440962/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440971/?learn=on&enablevpops&captions=ger)

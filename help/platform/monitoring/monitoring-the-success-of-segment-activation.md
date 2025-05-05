@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Beim Senden von Segmentprofilen an Ihre Aktivierungspartner sind Informationen über den Erfolg dieser Datenübertragung wichtig, insbesondere damit Sie Probleme beheben können. In diesem Video werden zwei Möglichkeiten gezeigt, den Fluss Ihrer Segmente zu Zielen zu überwachen. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/343248/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3415760/?learn=on&enablevpops&captions=ger)
 

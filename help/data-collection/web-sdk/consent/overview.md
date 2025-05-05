@@ -20,5 +20,5 @@ Erfahren Sie, wie Sie mit der Einverständnisverwaltung in Adobe Experience Plat
 >
 > Launch ist jetzt **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3437797/?learn=on&enablevpops&captions=ger)
 

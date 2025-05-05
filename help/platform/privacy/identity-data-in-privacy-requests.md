@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Lernen Sie die wichtigsten Konzepte und Entscheidungen im Zusammenhang mit der Prüfung personenbezogener Daten und der Vorbereitung entsprechend den Datenschutzanforderungen des Unternehmens kennen. Weitere Informationen finden Sie in der [Dokumentation zu Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447657?learn=on&enablevpops&captions=ger)

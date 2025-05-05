@@ -17,4 +17,4 @@ ht-degree: 1%
 
 Erfahren Sie mehr über die Vorteile der Übermittlung von Daten an Platform Edge Network über eine sichere, authentifizierte Server-API. Weitere Informationen finden Sie in der [ zur Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/341448?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3409525?learn=on&enablevpops&captions=ger)

@@ -33,7 +33,7 @@ Es gibt wichtige [Leitplanken für Echtzeit-Kundenprofildaten](https://experienc
 **Datenarchitekten** müssen das Echtzeit-Kundenprofil außerhalb dieses Tutorials aktivieren.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über das Echtzeit-Kundenprofil zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31581?learn=on&enablevpops&captions=ger)
 
 ## Erforderliche Berechtigungen
 

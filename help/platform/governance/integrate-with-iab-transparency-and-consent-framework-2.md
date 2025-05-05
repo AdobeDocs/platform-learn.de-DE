@@ -19,4 +19,4 @@ ht-degree: 50%
 
 In diesem Video wird gezeigt, wie Marken mit Adobe Real-Time Customer Data Platform das Einverständnis der Verbraucher bei der Nutzung digitaler Objekte honorieren können. Durch Unterstützung für Transparency &amp; Consent Framework 2.0 von IAB erhalten Marken mehr Flexibilität bei der Interaktion mit Verbrauchern, während Verbraucher von einer besseren Kontrolle über ihr Einverständnis profitieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/38346?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/326477?learn=on&enablevpops&captions=ger)

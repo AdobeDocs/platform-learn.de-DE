@@ -18,7 +18,7 @@ ht-degree: 20%
 
 Erfahren Sie, wie Sie die vollständige Kontrolle über Ihre Daten übernehmen können, von dem Punkt an, an dem sie in Datenquellen erfasst werden, bis zu dem Zeitpunkt, an dem sie für Ziele außerhalb von Adobe Experience Platform syndiziert werden. Data Governance ist ein leicht erweiterbares Framework, das tief in Datennutzungs-Workflows eingebettet ist. Das Framework baut auf drei zentralen Aspekten auf: Kennzeichnungen, Richtlinien und Durchsetzung. Weitere Informationen finden Sie in der [Dokumentation zu Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33153?learn=on&enablevpops&captions=ger)
 
 ## Demo
 
@@ -35,7 +35,7 @@ Sehen Sie sich eine umfassende Demo der Data Governance-Funktionen in Adobe Expe
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="Data Governance - End-to-End-Demo" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="Data Governance - End-to-End-Demo"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41320?format=jpeg&nocache=1740179989077&captions=ger" alt="Data Governance - End-to-End-Demo"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -73,7 +73,7 @@ Erfahren Sie, wie Kennzeichnungen, Richtlinien und Marketing-Aktionen zusammenwi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="Klassifizieren von Daten mithilfe von Labels" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="Klassifizieren von Daten mithilfe von Labels"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422789?format=jpeg&nocache=1740179989358&captions=ger" alt="Klassifizieren von Daten mithilfe von Labels"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +96,7 @@ Erfahren Sie, wie Kennzeichnungen, Richtlinien und Marketing-Aktionen zusammenwi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="Erstellen von Datennutzungsrichtlinien" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="Erstellen von Datennutzungsrichtlinien"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37126?format=jpeg&nocache=1740179989347&captions=ger" alt="Erstellen von Datennutzungsrichtlinien"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -156,7 +156,7 @@ Erfahren Sie, wie Experience Platform das Kundeneinverständnis berücksichtigt.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="Integration von IAB-Transparenz und -Einverständnis - Framework 2.0" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="Integration von IAB-Transparenz und -Einverständnis - Framework 2.0"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326477?format=jpeg&nocache=1740179989597&captions=ger" alt="Integration von IAB-Transparenz und -Einverständnis - Framework 2.0"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -179,7 +179,7 @@ Erfahren Sie, wie Experience Platform das Kundeneinverständnis berücksichtigt.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="Einverständnis erzwingen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="Einverständnis erzwingen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413764?format=jpeg&nocache=1740179989584&captions=ger" alt="Einverständnis erzwingen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

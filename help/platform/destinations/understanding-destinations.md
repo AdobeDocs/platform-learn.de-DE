@@ -20,5 +20,5 @@ ht-degree: 3%
 
 Ziele sind vorgefertigte Integrationen mit Zielplattformen, die Daten nahtlos aktivieren und zu diesen Partnern exportieren. Erfahren Sie mehr über die Zieltypen, die Sie verwenden können, um Daten aus [!DNL Real-Time CDP], [!DNL Experience Platform] und [!DNL Tags] zu erhalten und so eine Vielzahl von Anwendungsfällen zu unterstützen. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/29707?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33170?learn=on&enablevpops&captions=ger)
 

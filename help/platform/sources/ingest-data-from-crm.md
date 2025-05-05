@@ -23,13 +23,13 @@ Erfahren Sie, wie Sie ganz einfach durch einen Batch die Aufnahme von Daten aus 
 
 Erfahren Sie, wie Sie den Quell-Connector für Salesforce CRM mithilfe des Standard-Workflows konfigurieren. Der Standard-Workflow erfordert die Erstellung von Schemata und Identity-Namespaces im Vorfeld. Andere CRM-Quell-Connectoren unterstützen möglicherweise nur den Standard-Workflow.
 
->[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33159?learn=on&enablevpops&captions=ger)
 
 ## Vorlagen-Workflow (Salesforce)
 
 Erfahren Sie, wie Sie den Quell-Connector für Salesforce CRM mithilfe des Vorlagen-Workflows konfigurieren. Dieser Workflow generiert automatisch Assets, die für die Aufnahme von Salesforce-Daten basierend auf Vorlagen benötigt werden. Dadurch sparen Sie Zeit im Voraus und die Assets können Ihren Anforderungen entsprechend angepasst werden. Dieser Workflow wird nicht für alle CRM-Quell-Connectoren unterstützt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453332?learn=on&enablevpops&captions=ger)
 
 Weitere Informationen finden Sie in der folgenden Dokumentation:
 * [Salesforce erstellt eine Verbindungsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=de).

@@ -20,4 +20,4 @@ ht-degree: 100%
 
 Erfahren Sie, wie Sie die attributbasierte Zugriffssteuerung konfigurieren, um den Zugriff auf bestimmte Experience-Platform-Ressourcen zu beschränken. Weiterführende Informationen finden Sie unter [Zugriffssteuerung – Übersicht](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/345641?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451847?learn=on&enablevpops&captions=ger)

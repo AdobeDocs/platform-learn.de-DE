@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Erfahren Sie mehr über den Workflow, mit dem neue Interessenten von Partnern in [!DNL Real-Time CDP] aufgenommen werden, die Targeting vor einem Besuch durchführen. Weitere Informationen finden Sie in der Dokumentation [Engage und Gewinnung von Neukunden durch Interessenten-Anwendungsfälle](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html?lang=de) .
 
->[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452867/?learn=on&enablevpops&captions=ger)

@@ -22,6 +22,6 @@ Erfahren Sie, wie Marken mit der Streaming-Segmentierungsfunktion in Adobe Exper
 >
 > &quot;[!UICONTROL Segmente]&quot; wurden in der Platform- in &quot;Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
->[!VIDEO](https://video.tv.adobe.com/v/36184?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40063?learn=on&enablevpops&captions=ger)
 
 

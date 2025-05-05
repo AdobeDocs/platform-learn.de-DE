@@ -21,5 +21,5 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie das Marketo-Ziel in Adobe Experience Platform konfigurieren, damit Sie Ihre Platform-Segmente für Ihre Marketo Engage-Instanz aktivieren können. Weitere Informationen finden Sie in der [Dokumentation zu Profilen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440167?learn=on&enablevpops&captions=ger)
 

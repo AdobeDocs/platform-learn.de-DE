@@ -26,7 +26,7 @@ Sandboxes bieten isolierte Umgebungen, in denen Sie Funktionen ausprobieren kön
 **Datenarchitekten** und **Dateningenieure** müssen außerhalb dieses Tutorials Sandboxes erstellen.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Sandboxes zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430292/?learn=on&enablevpops&captions=ger)
 
 ## Erforderliche Berechtigungen
 

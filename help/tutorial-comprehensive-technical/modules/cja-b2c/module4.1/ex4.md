@@ -29,7 +29,7 @@ Customer Journey Analytics stellt diese Lösung auf Platform-Daten bereit. Wir e
 
 Wenn Sie Analysis Workspace noch nie verwendet haben, empfehlen wir dringend, sich dieses Video anzusehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35525?quality=12&learn=on&enablevpops&captions=ger)
 
 ### Erstellen eines Projekts
 

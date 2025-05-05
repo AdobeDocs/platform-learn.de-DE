@@ -35,7 +35,7 @@ Mit den Datenerfassungsfunktionen von Adobe Experience Platform können Sie Ihre
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/overview.md" title="Quellen – Übersicht" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29694?format=jpeg&nocache=1740414616559" alt="Quellen – Übersicht"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33165?format=jpeg&nocache=1740414616559&captions=ger" alt="Quellen – Übersicht"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ Mit den Datenerfassungsfunktionen von Adobe Experience Platform können Sie Ihre
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Übersicht über Adobe Experience Platform Web SDK und Edge Network" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616573" alt="Übersicht über Adobe Experience Platform Web SDK und Edge Network"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37260?format=jpeg&nocache=1740414616573&captions=ger" alt="Übersicht über Adobe Experience Platform Web SDK und Edge Network"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -118,7 +118,7 @@ Mit den Datenerfassungsfunktionen von Adobe Experience Platform können Sie Ihre
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-streaming-ingestion.md" title="Übersicht über die Streaming-Datenaufnahme" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28425?format=jpeg&nocache=1740414616825" alt="Übersicht über die Streaming-Datenaufnahme"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31577?format=jpeg&nocache=1740414616825&captions=ger" alt="Übersicht über die Streaming-Datenaufnahme"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -141,7 +141,7 @@ Mit den Datenerfassungsfunktionen von Adobe Experience Platform können Sie Ihre
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Übersicht über Adobe Experience Platform Web SDK und Edge Network" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616799" alt="Übersicht über Adobe Experience Platform Web SDK und Edge Network"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37260?format=jpeg&nocache=1740414616799&captions=ger" alt="Übersicht über Adobe Experience Platform Web SDK und Edge Network"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +178,7 @@ Mit den Datenerfassungsfunktionen von Adobe Experience Platform können Sie Ihre
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-crm.md" title="Aufnehmen von Daten mithilfe von CRM Source Connectoren" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740414616941" alt="Aufnehmen von Daten mithilfe von CRM Source Connectoren"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33159?format=jpeg&nocache=1740414616941&captions=ger" alt="Aufnehmen von Daten mithilfe von CRM Source Connectoren"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,7 +201,7 @@ Mit den Datenerfassungsfunktionen von Adobe Experience Platform können Sie Ihre
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-cloud-storage.md" title="Aufnehmen von Daten mithilfe von Cloud Storage Source Connectors" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740414616962" alt="Aufnehmen von Daten mithilfe von Cloud Storage Source Connectors"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33155?format=jpeg&nocache=1740414616962&captions=ger" alt="Aufnehmen von Daten mithilfe von Cloud Storage Source Connectors"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -284,7 +284,7 @@ Mit den Datenerfassungsfunktionen von Adobe Experience Platform können Sie Ihre
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="Aufnehmen von Daten mithilfe des Adobe Analytics-Quell-Connectors" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="Aufnehmen von Daten mithilfe des Adobe Analytics-Quell-Connectors"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432289?format=jpeg&nocache=1740414617197&captions=ger" alt="Aufnehmen von Daten mithilfe des Adobe Analytics-Quell-Connectors"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +307,7 @@ Mit den Datenerfassungsfunktionen von Adobe Experience Platform können Sie Ihre
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="Aufnehmen von Daten aus Marketo Engage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="Aufnehmen von Daten aus Marketo Engage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451869?format=jpeg&nocache=1740414617186&captions=ger" alt="Aufnehmen von Daten aus Marketo Engage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

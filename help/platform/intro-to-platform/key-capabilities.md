@@ -18,5 +18,5 @@ ht-degree: 80%
 
 Erfahren Sie mehr über die wichtigsten Funktionen von Experience Platform und wie sie Ihrem Unternehmen einen Mehrwert ermöglichen.
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428504?learn=on&enablevpops&captions=ger)
 

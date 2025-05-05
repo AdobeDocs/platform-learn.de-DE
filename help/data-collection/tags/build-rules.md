@@ -18,4 +18,4 @@ ht-degree: 37%
 
 Erfahren Sie, wie Sie Regeln erstellen, damit Sie Befehle in Tags ausführen können. Ereignisse und Bedingungen bestimmen, *wann* Aufgaben auszuführen sind, während Aktionen bestimmen *was* tun ist. Weitere Informationen finden Sie in der Dokumentation [Regeln](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=de) .
 
->[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430491/?learn=on&enablevpops&captions=ger)

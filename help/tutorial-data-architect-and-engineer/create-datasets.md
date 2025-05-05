@@ -26,7 +26,7 @@ Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen werden, ble
 **Datenarchitekten** müssen Datensätze außerhalb dieses Tutorials erstellen.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Datensätze zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34310?learn=on&enablevpops&captions=ger)
 
 ## Erforderliche Berechtigungen
 

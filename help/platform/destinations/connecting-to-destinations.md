@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Bevor Sie Daten von Real-Time CDP an Zielpartner senden können, müssen Sie zunächst eine Verbindung zu diesen Partnern herstellen. Dieses Video führt Sie durch diesen Prozess, der normalerweise von Administratoren durchgeführt wird.
 
->[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413525/?learn=on&enablevpops&captions=ger)
 
 Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/ui/connect-destination).

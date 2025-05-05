@@ -21,4 +21,4 @@ ht-degree: 2%
 
 Erfahren Sie mehr über Adobe Experience Platform-Programme vom KI-Assistenten. Weitere Informationen finden Sie in der [Dokumentation zum KI-Assistenten](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/3441024/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441033/?learn=on&enablevpops&captions=ger)

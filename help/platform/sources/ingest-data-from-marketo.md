@@ -26,13 +26,13 @@ Erfahren Sie, wie Sie mit dem Quell-Connector mithilfe zweier Workflows Daten au
 
 Erfahren Sie, wie Sie den Quell-Connector für Marketo mithilfe des Vorlagen-Workflows konfigurieren. Dieser Workflow generiert automatisch Assets, die für die Aufnahme von Marketo-Daten basierend auf Vorlagen benötigt werden. Dadurch sparen Sie Zeit im Voraus und die Assets können Ihren Anforderungen entsprechend angepasst werden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451869?learn=on&enablevpops&captions=ger)
 
 ## Standard-Workflow
 
 Erfahren Sie, wie Sie den Quell-Connector für Marketo mithilfe des Standard-Workflows konfigurieren. Der Standard-Workflow erfordert die Erstellung von Schemata und Identity-Namespaces im Vorfeld.
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452917?learn=on&enablevpops&captions=ger)
 
 Weitere Informationen finden Sie in der folgenden Dokumentation:
 * [Dokumentation zum Marketo Engage-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=de).

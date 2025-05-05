@@ -22,5 +22,5 @@ Erfahren Sie, wie Sie in Adobe Experience Platform Zielgruppen erstellen. Erstel
 >
 > &quot;[!UICONTROL Segmente]&quot; wurden in der Platform- in &quot;Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31580?learn=on&enablevpops&captions=ger)
 

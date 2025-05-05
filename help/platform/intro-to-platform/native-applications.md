@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Erfahren Sie mehr über die Programme, die nativ auf Adobe Experience Platform erstellt wurden: Customer Journey Analytics, Real-Time Customer Data Platform, Journey Optimizer und Mix Modeler.
 
->[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428515?learn=on&enablevpops&captions=ger)
 

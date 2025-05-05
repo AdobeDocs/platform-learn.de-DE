@@ -21,4 +21,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie Konfigurationen mithilfe von Paketen zwischen Experience Platform-Sandboxes kopieren. Einfaches Replizieren von Schemas, Datensätzen, Journey und mehr in Ihren Sandboxes zur Unterstützung von Veröffentlichungsprozessen und Bereitstellungen mit mehreren Regionen/Marken. Weitere Informationen finden Sie in der [Sandbox-Tools-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446097/?learn=on&enablevpops&captions=ger)

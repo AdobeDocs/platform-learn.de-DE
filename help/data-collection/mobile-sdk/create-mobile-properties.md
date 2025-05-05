@@ -20,4 +20,4 @@ Erfahren Sie, wie Sie in der Datenerfassung eine mobile Tag-Eigenschaft erstelle
 >
 > Launch ist jetzt **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26264/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40316/?learn=on&enablevpops&captions=ger)

@@ -20,4 +20,4 @@ ht-degree: 85%
 
 Erfahren Sie, wie Sie mit der Datenvorbereitung von Experience Platform Datenminimierungsprinzipien unterstützen. Erfahren Sie, wie Sie beim Import nur die benötigten Felder erfassen und Daten hashen können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449284/?learn=on&enablevpops&captions=ger)

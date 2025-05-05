@@ -22,7 +22,7 @@ Erfahren Sie, wie Sie das Löschen von Datensätzen mithilfe der Datenhygiene-Fu
 Mit dem Löschen von Datensätzen können Datenverwalter und Dateningenieure ein Ablaufdatum für einen Datensatz festlegen. Weitere Informationen finden Sie in der [Dokumentation zur Datenhygiene](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=de).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430310?learn=on&enablevpops&captions=ger)
 
 >[!NOTE]
 >

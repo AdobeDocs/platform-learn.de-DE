@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie mit dem KI-Assistenten betriebliche Einblicke in Geschäftsobjekte wie Zielgruppen, Datensätze, Schemata, Ziele und Journey in Adobe Experience Platform gewinnen können
 
->[!VIDEO](https://video.tv.adobe.com/v/3444031/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444041/?learn=on&enablevpops&captions=ger)

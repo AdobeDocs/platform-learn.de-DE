@@ -18,4 +18,4 @@ ht-degree: 61%
 
 Erfahren Sie, wie Sie mit dem Monitoring-Dashboard Daten überwachen und verfolgen, die in Adobe Experience Platform aufgenommen werden. Dieses Überwachungs-Dashboard bietet eine Top-down-Ansicht der Quelldatenverarbeitung über den Data Lake zu Profil und Identity Services mit umsetzbaren Einblicken. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/331776?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411990?learn=on&enablevpops&captions=ger)

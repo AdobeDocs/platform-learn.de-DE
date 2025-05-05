@@ -57,7 +57,7 @@ Erfahren Sie, wie Sie Benutzerberechtigungen verwalten.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="Hinzufügen von Entwicklern" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="Hinzufügen von Entwicklern"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446407?format=jpeg&nocache=1740173302176&captions=ger" alt="Hinzufügen von Entwicklern"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -103,7 +103,7 @@ Erfahren Sie, wie Sie Benutzerberechtigungen verwalten.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="Konfigurieren der attributbasierten Zugriffssteuerung" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="Konfigurieren der attributbasierten Zugriffssteuerung"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451847?format=jpeg&nocache=1740173302190&captions=ger" alt="Konfigurieren der attributbasierten Zugriffssteuerung"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -126,7 +126,7 @@ Erfahren Sie, wie Sie Benutzerberechtigungen verwalten.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/users-and-permissions" title="Hinzufügen von Benutzern zur Datenerfassung" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="Hinzufügen von Benutzern zur Datenerfassung"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33394/?format=jpeg&nocache=1740173302543&captions=ger" alt="Hinzufügen von Benutzern zur Datenerfassung"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Erfahren Sie, wie Sie Sandbox-Umgebungen verwalten.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="Verwenden von Sandboxes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="Verwenden von Sandboxes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430292/?format=jpeg&nocache=1740173302789&captions=ger" alt="Verwenden von Sandboxes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Erfahren Sie, wie Sie Sandbox-Umgebungen verwalten.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="Kopieren von Konfigurationen zwischen Sandboxes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="Kopieren von Konfigurationen zwischen Sandboxes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446097/?format=jpeg&nocache=1740173302776&captions=ger" alt="Kopieren von Konfigurationen zwischen Sandboxes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ Erfahren Sie, wie Sie Sandbox-Umgebungen verwalten.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="Freigeben von Paketen in IMS-Organisationen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="Freigeben von Paketen in IMS-Organisationen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443926/?format=jpeg&nocache=1740173302764&captions=ger" alt="Freigeben von Paketen in IMS-Organisationen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

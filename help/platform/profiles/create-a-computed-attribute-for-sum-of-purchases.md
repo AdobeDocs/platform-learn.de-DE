@@ -18,4 +18,4 @@ ht-degree: 16%
 
 Erfahren Sie, wie Sie mithilfe berechneter Attribute die von einem Benutzer getätigten Käufe über mehrere Vertriebskanäle hinweg summieren können. Eine Kundin oder ein Kunde kann auf Ihrer Website, in Ihrer mobilen App und in Ihrem stationären Geschäft kaufen. Mit der Funktion „Berechnete Attribute“ können Sie die von einem Kunden über diese Kanäle getätigten Kaufbeträge summieren und diese Summe verwenden, um Zielgruppen und andere Personalisierungen zu definieren. Weitere Informationen finden Sie im [Handbuch zur Benutzeroberfläche für berechnete Attribute](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?lang=de&).
 
->[!VIDEO](https://video.tv.adobe.com/v/3425899?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443560?learn=on&enablevpops&captions=ger)

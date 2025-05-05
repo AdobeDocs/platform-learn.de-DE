@@ -25,7 +25,7 @@ Sobald Sie über Echtzeit-Kundenprofile verfügen, können Sie Segmente von Einz
 **Datenarchitekten** müssen außerhalb dieses Tutorials Segmente erstellen und ihre Kollegen bei dieser Aufgabe unterstützen.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über das Erstellen von Segmenten zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31580?learn=on&enablevpops&captions=ger)
 
 
 ## Erforderliche Berechtigungen

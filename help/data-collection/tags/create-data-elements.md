@@ -18,4 +18,4 @@ ht-degree: 39%
 
 Erfahren Sie, wie Sie Datenelemente erstellen, um aus Ihrer Datenschicht abgerufene Werte zu speichern und sie für Regeln und Erweiterungen in Ihrer Tag-Eigenschaft verfügbar zu machen. Weitere Informationen finden Sie in der Dokumentation [Datenelemente](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=de) .
 
->[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430471/?learn=on&enablevpops&captions=ger)

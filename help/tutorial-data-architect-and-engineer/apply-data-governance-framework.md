@@ -24,9 +24,9 @@ In dieser Lektion wenden Sie das Data Governance-Framework auf die Daten an, die
 Mit Data Governance in Adobe Experience Platform können Sie Kundendaten verwalten und bei der Verwendung von Daten die Einhaltung von Vorschriften, Einschränkungen und Richtlinien sicherstellen. Die Funktion spielt in Experience Platform auf verschiedenen Ebenen eine wichtige Rolle, u. a. bei der Steuerung der Datennutzung.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich diese kurzen Videos über Data Governance an:
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41320?learn=on&enablevpops&captions=ger)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33153?learn=on&enablevpops&captions=ger)
 
 <!--
 ## Permissions required

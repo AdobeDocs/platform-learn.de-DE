@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Ein allgemeiner Überblick darüber, wie Marketing-Experten und Analysten Attribution AI verwenden können, um die Auswirkungen ihrer Marketing-Kanäle und -Kampagnen zu verstehen. Weitere Informationen finden Sie in der [Dokumentation zur Attributions-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36551?learn=on&enablevpops&captions=ger)

@@ -20,6 +20,6 @@ ht-degree: 100%
 
 Erfahren Sie, wie Experience Platform-Sandboxes isolierte Umgebungen bereitstellen, um neue oder vorhandene Funktionen auszuprobieren und mit einem Fail-Fast-Ansatz zu arbeiten. Erfahren Sie, wie Sie die Entwicklungsumgebungen zurücksetzen, neu starten und Sandboxes mit API-Aufrufen verwenden. Weitere Informationen dazu finden Sie im [Sandboxes-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430292/?learn=on&enablevpops&captions=ger)
 
 

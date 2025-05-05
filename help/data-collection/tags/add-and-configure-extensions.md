@@ -18,4 +18,4 @@ ht-degree: 15%
 
 Erfahren Sie, wie Sie Erweiterungen in Ihrer Tag-Eigenschaft hinzufügen und konfigurieren. Erweiterungen sind vorkonfigurierte „Apps“, die Sie auf Ihrer Site installieren, um Ihnen die benötigten Tracking-, Personalisierungs- oder anderen Funktionen zu bieten. Der Marketplace für Erweiterungen wächst ständig, da Adobe, Partner und Kunden Erweiterungen erstellen, um Anwendungsfälle zu unterstützen. Weitere Informationen finden Sie in der Dokumentation [Erweiterungen](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=de) .
 
->[!VIDEO](https://video.tv.adobe.com/v/28732/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428582/?learn=on&enablevpops&captions=ger)

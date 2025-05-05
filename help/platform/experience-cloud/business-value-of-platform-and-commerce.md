@@ -25,5 +25,5 @@ In diesem Video wird gezeigt, wie Adobe Experience Platform mit Adobe Commerce v
 >
 > Magento heißt jetzt Adobe Commerce
 
->[!VIDEO](https://video.tv.adobe.com/v/40376?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328481?learn=on&enablevpops&captions=ger)
 

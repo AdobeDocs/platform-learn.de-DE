@@ -43,7 +43,7 @@ Key terms:
 **Datenarchitekten** müssen außerhalb dieses Tutorials Schemata erstellen, aber **Dateningenieure** arbeiten eng mit den Schemata zusammen, die vom Datenarchitekten erstellt wurden.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Schemata und das Experience-Datenmodell (XDM) zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/38505?learn=on&enablevpops&captions=ger)
 
 >[!TIP]
 >

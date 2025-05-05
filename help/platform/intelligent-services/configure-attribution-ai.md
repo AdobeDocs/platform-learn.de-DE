@@ -18,4 +18,4 @@ ht-degree: 46%
 
 Erfahren Sie, wie Sie eine Instanz der Attributions-KI erstellen, um die Auswirkungen Ihrer Marketing-Kanäle und -Kampagnen zu verstehen. Weitere Informationen finden Sie in der [Dokumentation zur Attributions-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36557?learn=on&enablevpops&captions=ger)

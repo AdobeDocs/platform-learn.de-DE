@@ -19,4 +19,4 @@ ht-degree: 21%
 In diesem Video wird gezeigt, wie Abfragen in der Adobe Experience Platform-Benutzeroberfläche und in einem PSQL-Client ausgeführt werden. Darüber hinaus werden die Verwendung einzelner Eigenschaften in einem XDM-Objekt, die Verwendung von Adobe-definierten Funktionen und die Verwendung von CREATE TABLE AS SELECT (CTAS) demonstriert. Eine ausführliche Produktdokumentation finden Sie im [Handbuch zur Benutzeroberfläche des Abfrage-Editors](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=de).
 Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33392?learn=on&enablevpops&captions=ger)

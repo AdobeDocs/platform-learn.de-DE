@@ -18,7 +18,7 @@ ht-degree: 10%
 
 Erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Experience Platform Quellen oder Quell-Connectoren verwenden. Quellen sind einfach konfigurierbare Integrationen, mit denen Sie Daten aus Adobe-, Erstanbieter- und Drittanbieterprogrammen in das Echtzeit-Kundenprofil und den Data Lake von Platform aufnehmen können. Weitere Informationen finden Sie in der [Quellendokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33165?learn=on&enablevpops&captions=ger)
 
 <!--should have a whole section for data prep-->
 
@@ -38,7 +38,7 @@ Erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Experience Platform Q
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-crm.md" title="Aufnehmen von Daten mithilfe von CRM Source Connectoren" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740415500926" alt="Aufnehmen von Daten mithilfe von CRM Source Connectoren"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33159?format=jpeg&nocache=1740415500926&captions=ger" alt="Aufnehmen von Daten mithilfe von CRM Source Connectoren"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Experience Platform Q
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-cloud-storage.md" title="Aufnehmen von Daten mithilfe von Cloud Storage Source Connectors" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740415500914" alt="Aufnehmen von Daten mithilfe von Cloud Storage Source Connectors"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33155?format=jpeg&nocache=1740415500914&captions=ger" alt="Aufnehmen von Daten mithilfe von Cloud Storage Source Connectors"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ Erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Experience Platform Q
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="Aufnehmen von Daten mithilfe des Adobe Analytics-Quell-Connectors" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="Aufnehmen von Daten mithilfe des Adobe Analytics-Quell-Connectors"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432289?format=jpeg&nocache=1740415502122&captions=ger" alt="Aufnehmen von Daten mithilfe des Adobe Analytics-Quell-Connectors"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +188,7 @@ Erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Experience Platform Q
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="Aufnehmen von Daten aus Marketo Engage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="Aufnehmen von Daten aus Marketo Engage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451869?format=jpeg&nocache=1740415502109&captions=ger" alt="Aufnehmen von Daten aus Marketo Engage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -244,7 +244,7 @@ Erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Experience Platform Q
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="Fehlerbehebung - Verbindung zum SFTP-Quell-Connector nicht möglich" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="Fehlerbehebung - Verbindung zum SFTP-Quell-Connector nicht möglich"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443483?format=jpeg&nocache=1740415502267&captions=ger" alt="Fehlerbehebung - Verbindung zum SFTP-Quell-Connector nicht möglich"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -29,7 +29,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-audience-portal-and-composition.md" title="Einführung in Audience Portal und Komposition" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421713/?format=jpeg&nocache=1740173577252" alt="Einführung in Audience Portal und Komposition"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423366/?format=jpeg&nocache=1740173577252&captions=ger" alt="Einführung in Audience Portal und Komposition"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -52,7 +52,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-audiences.md" title="Hochladen von Zielgruppen in Adobe Experience Platform" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421714/?format=jpeg&nocache=1740173577237" alt="Hochladen von Zielgruppen in Adobe Experience Platform"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423357/?format=jpeg&nocache=1740173577237&captions=ger" alt="Hochladen von Zielgruppen in Adobe Experience Platform"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,7 +94,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-audiences.md" title="Erstellen von Zielgruppen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27254?format=jpeg&nocache=1740173578323" alt="Erstellen von Zielgruppen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31580?format=jpeg&nocache=1740173578323&captions=ger" alt="Erstellen von Zielgruppen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-dynamic-audiences.md" title="Dynamische Zielgruppen erstellen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27428?format=jpeg&nocache=1740173578383" alt="Dynamische Zielgruppen erstellen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34307?format=jpeg&nocache=1740173578383&captions=ger" alt="Dynamische Zielgruppen erstellen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -336,7 +336,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/create-a-federated-audience-composition.md" title="Erstellen einer Federated-Audience-Komposition" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433247/?format=jpeg&nocache=1740173579467" alt="Erstellen einer Federated-Audience-Komposition"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3448587/?format=jpeg&nocache=1740173579467&captions=ger" alt="Erstellen einer Federated-Audience-Komposition"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -369,7 +369,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-segmentation-demo.md" title="Demo zur Streaming-Segmentierung" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36184?format=jpeg&nocache=1740173579663" alt="Demo zur Streaming-Segmentierung"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40063?format=jpeg&nocache=1740173579663&captions=ger" alt="Demo zur Streaming-Segmentierung"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -406,7 +406,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-configuration-flow.md" title="Konfiguration von Segment Match" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342336/?format=jpeg&nocache=1740173579850" alt="Konfiguration von Segment Match"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3411815/?format=jpeg&nocache=1740173579850&captions=ger" alt="Konfiguration von Segment Match"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -429,7 +429,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-connection-setup.md" title="Einrichten der Segment Match-Verbindung" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342211/?format=jpeg&nocache=1740173579840" alt="Einrichten der Segment Match-Verbindung"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413523/?format=jpeg&nocache=1740173579840&captions=ger" alt="Einrichten der Segment Match-Verbindung"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -452,7 +452,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-data-governance.md" title="Data Governance bei Segment Match" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342212/?format=jpeg&nocache=1740173579862" alt="Data Governance bei Segment Match"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413524/?format=jpeg&nocache=1740173579862&captions=ger" alt="Data Governance bei Segment Match"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -475,7 +475,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-pre-share-insights.md" title="Einblicke vor der Freigabe durch Segment Match" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342378/?format=jpeg&nocache=1740173579872" alt="Einblicke vor der Freigabe durch Segment Match"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413522/?format=jpeg&nocache=1740173579872&captions=ger" alt="Einblicke vor der Freigabe durch Segment Match"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -498,7 +498,7 @@ Informationen zu Zielgruppen in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-receiving-data.md" title="Segment Match erhält Daten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/344419/?format=jpeg&nocache=1740173579825" alt="Segment Match erhält Daten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3417573/?format=jpeg&nocache=1740173579825&captions=ger" alt="Segment Match erhält Daten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

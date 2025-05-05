@@ -25,7 +25,7 @@ Der Abfrage-Service von Adobe Experience Platform hilft Ihnen, Ihre Daten zu ver
 **Datenarchitekten** und **Dateningenieure** müssen den Abfrage-Service außerhalb dieses Tutorials verwenden.
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über den Abfrage-Service zu erfahren:
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32948?learn=on&enablevpops&captions=ger)
 
 ## Erforderliche Berechtigungen
 

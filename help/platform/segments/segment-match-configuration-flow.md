@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Sobald eine Segmentfreigabe für einen Datenpartner verbunden wurde, können Sie Daten erkunden und mit der Freigabe für Partner beginnen. Dieses Video führt Sie durch den Prozess der Konfiguration einer Segment Match-Instanz für eine Datenfreigabe. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411815/?learn=on&enablevpops&captions=ger)

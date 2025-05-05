@@ -17,5 +17,5 @@ ht-degree: 0%
 
 Im vorherigen Video haben wir gesehen, wie eine Beispielmarke, Luma, in der Lage war, ein reichhaltiges, lohnendes und relevantes Kundenerlebnis zu schaffen. In diesem Video wird gezeigt, wie Adobe Experience Platform zum Ausführen dieses Journey verwendet wird.
 
->[!VIDEO](https://video.tv.adobe.com/v/28144?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35470?learn=on&enablevpops&captions=ger)
 

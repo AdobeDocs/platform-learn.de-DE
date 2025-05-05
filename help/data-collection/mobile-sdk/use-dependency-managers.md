@@ -20,4 +20,4 @@ Erfahren Sie, wie Sie mit CocoaPods und Gradle Erweiterungen und Abhängigkeiten
 >
 > Launch ist jetzt **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26263/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40320/?learn=on&enablevpops&captions=ger)

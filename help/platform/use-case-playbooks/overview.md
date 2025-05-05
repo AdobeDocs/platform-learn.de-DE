@@ -20,7 +20,7 @@ ht-degree: 25%
 
 Möglichkeiten, wie Use Case Playbooks der Kundschaft von Real-Time Customer Data Platform und Journey Optimizer zu einer schnelleren Wertschöpfung verhelfen können. Use Case Playbooks ist ein Katalog mit Dutzenden von Vorlagen, die mehrere Branchen und Marketing-Ziele abdecken. Playbooks generieren technische Assets wie Zielgruppen, Journey und Schemata, die dann angepasst und in anderen Sandboxes veröffentlicht werden können. Weitere Informationen finden Sie in der [Dokumentation zu Anwendungsfällen für Playbooks](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441824/?learn=on&enablevpops&captions=ger)
 
 ## Erste Schritte
 
@@ -37,7 +37,7 @@ Erfahren Sie, wie Sie Ihr Platform-Konto für Playbooks mit Anwendungsfällen ko
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="Playbook-Sandbox konfigurieren" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="Playbook-Sandbox konfigurieren"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449835/?format=jpeg&nocache=1739379898120&captions=ger" alt="Playbook-Sandbox konfigurieren"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

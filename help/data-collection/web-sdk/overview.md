@@ -20,7 +20,7 @@ ht-degree: 42%
 
 Erfahren Sie, wie Kunden mit dem Adobe Experience Platform Web SDK und Edge Network unter Verwendung einer einzigen JavaScript-Bibliothek und eines einzigen Beacon Daten an Adobe-Anwendungen und Drittanbieter-Ziele senden.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37260?learn=on&enablevpops&captions=ger)
 
 >[!NOTE]
 >

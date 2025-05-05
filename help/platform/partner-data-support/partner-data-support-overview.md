@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie [!DNL Real-Time Customer Data Platform] das Full-Funnel-Marketing mithilfe von Partnerdaten für die Anreicherung von First-Party-Daten und Anwendungsfälle für Interessenten unterstützt, da Third-Party-Cookies weiterhin als veraltet gelten. 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449698/?learn=on&enablevpops&captions=ger)

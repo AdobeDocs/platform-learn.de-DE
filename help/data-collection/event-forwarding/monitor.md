@@ -17,4 +17,4 @@ ht-degree: 28%
 
 Erfahren Sie, wie Sie die Ereignisweiterleitung in der Datenerfassungsoberfläche überwachen. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3412565?learn=on&enablevpops&captions=ger)

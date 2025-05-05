@@ -23,4 +23,4 @@ Erfahren Sie, wie Sie eine Instanz der Kunden-KI erstellen, um das Kundenverhalt
 >
 >Kunden-KI unterstützt sowohl Adobe Analytics- als auch Adobe Audience Manager-Datensätze, ohne dass Ihre Daten einem ETL-Prozess unterzogen werden müssen, um dem Schema Consumer Experience Event (CEE) zu entsprechen. Weitere Informationen finden Sie im [Handbuch zur Datenvorbereitung in Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36559?learn=on&enablevpops&captions=ger)

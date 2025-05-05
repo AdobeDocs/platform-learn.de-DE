@@ -19,4 +19,4 @@ ht-degree: 2%
 
 Ein allgemeiner Überblick darüber, wie Marketing-Experten Kunden-KI verwenden können, um Kundenprognosen zu generieren. Weitere Informationen finden Sie in der [Dokumentation zu Kunden-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36449?learn=on&enablevpops&captions=ger)

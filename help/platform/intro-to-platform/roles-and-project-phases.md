@@ -17,5 +17,5 @@ ht-degree: 0%
 
 Erfahren Sie mehr über die Rollen, Phasen und wichtigsten Ergebnisse eines erfolgreichen Experience Platform-Projekts.
 
->[!VIDEO](https://video.tv.adobe.com/v/32807?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430446?learn=on&enablevpops&captions=ger)
 

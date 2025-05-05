@@ -22,4 +22,4 @@ Erfahren Sie, wie Sie die Ablaufeinstellungen für pseudonyme Profile und Ereign
 Mit diesen Einstellungen können Datenverwalter Ablaufdaten für nicht authentifizierte Profile und deren zugehörige Ereignisse festlegen. Auf diese Weise bleiben die [!DNL Profile Service] für Ihre Marketing- und Werbeanwendungsfälle relevant. Weitere Informationen finden Sie in der Dokumentation [Ablauf von Erlebnisereignissen](https://experienceleague.adobe.com/de/docs/experience-platform/profile/event-expirations) und [Ablauf von Daten pseudonymer Profile](https://experienceleague.adobe.com/de/docs/experience-platform/profile/event-expirations) .
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449865?learn=on&enablevpops&captions=ger)

@@ -24,4 +24,4 @@ ht-degree: 1%
 Erfahren Sie, wie Sie Segmente und Profilattribute von Adobe Real-Time Customer Data Platform für Adobe Target aktivieren, um in Echtzeit personalisierte Inhalte in Ihren Websites, Mobile Apps und anderen digitalen Eigenschaften anzuzeigen. Weitere Informationen finden Sie in der Dokumentation [Aktivieren von Zielgruppendaten für Profilanfrageziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html?lang=de).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3419036/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447364/?learn=on&enablevpops&captions=ger)

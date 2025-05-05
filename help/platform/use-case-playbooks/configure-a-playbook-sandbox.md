@@ -26,4 +26,4 @@ Erfahren Sie, wie Sie eine Sandbox für Playbooks für Anwendungsfälle konfigur
 
 Weitere Informationen finden Sie unter [Erste Schritte mit Playbooks für Anwendungsfälle](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449835/?learn=on&enablevpops&captions=ger)

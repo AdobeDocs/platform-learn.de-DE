@@ -19,5 +19,5 @@ ht-degree: 53%
 
 Erfahren Sie, wie Sie mit den Tendenzwerten und Einblicken von Kunden-KI Kunden gewinnen und binden können. Weitere Informationen finden Sie in der [Dokumentation zu Kunden-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36558?learn=on&enablevpops&captions=ger)
 

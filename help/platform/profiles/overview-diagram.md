@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Dieses Video führt Sie durch ein Übersichtsdiagramm, das die Echtzeit-Kundenprofilfunktionen von Adobe Experience Platform veranschaulicht. Weitere Informationen finden Sie in der [Dokumentation zu Echtzeit-Kundenprofilen](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/33600?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36759?learn=on&enablevpops&captions=ger)

@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Adobe Audiences in Adobe Experience Platform neu definiert, einschließlich der Möglichkeit, Audiences zu importieren, zu erstellen und zu verwalten. Weitere Informationen finden Sie in der [Segment Builder-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/3421713/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423366/?learn=on&enablevpops&captions=ger)

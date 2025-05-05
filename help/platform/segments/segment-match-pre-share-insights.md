@@ -18,4 +18,4 @@ ht-degree: 53%
 
 Wenn Sie sich entscheiden, für einen strategischen Partner Daten freizugeben, müssen Sie wissen, wie Ihre Kunden zusammenpassen, damit Sie beurteilen können, wie nützlich diese Datenfreigabe sein wird. Mit Segment Match können Sie Überschneidungen mit potenziellen Datenpartnern sehen, bevor Sie Daten freigeben. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413522/?learn=on&enablevpops&captions=ger)

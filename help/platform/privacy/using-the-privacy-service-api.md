@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie API-Endpunkte aufrufen, einschließlich Listen und Suchen, Erstellen einer Vorgangsanfrage und Erstellen einer Einverständnisanfrage. Weitere Informationen finden Sie in der [Dokumentation zu Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/336080?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448882?learn=on&enablevpops&captions=ger)

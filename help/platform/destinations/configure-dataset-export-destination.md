@@ -22,4 +22,4 @@ Erfahren Sie, wie Sie eine Verbindung einrichten und den Workflow für Datensatz
 
 Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/ui/activate/export-datasets).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448827/?learn=on&enablevpops&captions=ger)

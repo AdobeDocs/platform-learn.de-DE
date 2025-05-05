@@ -23,4 +23,4 @@ Erfahren Sie, wie Sie in Adobe Experience Platform ein Dashboard erstellen. Weit
 >
 >Die Funktion für benutzerdefinierte Dashboards befindet sich in der Beta-Phase. Ihre Funktionen und Dokumentation können sich ändern.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422737/?learn=on&enablevpops&captions=ger)

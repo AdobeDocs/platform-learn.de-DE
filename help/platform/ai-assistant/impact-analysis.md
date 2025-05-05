@@ -20,4 +20,4 @@ ht-degree: 0%
 
 In diesem Video erfahren Sie, wie Sie mit dem KI-Assistenten in Adobe Experience Platform die Wirkungsanalyse effektiver gestalten können. Änderungen an freigegebenen Objekten wie Attributen und Audiences können Workflows für andere Teams stören, Prozesse verkomplizieren und wichtige Marketing-Maßnahmen gefährden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441680/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441689/?learn=on&enablevpops&captions=ger)

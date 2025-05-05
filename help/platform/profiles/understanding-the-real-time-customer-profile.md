@@ -18,7 +18,7 @@ ht-degree: 13%
 
 In diesem Video wird erläutert, wie Adobe Experience Platform Echtzeit-Kundenprofile zusammenstellt und aktualisiert und wie Sie auf diese Profile zugreifen und sie verwenden können. Weitere Informationen finden Sie in der [Dokumentation zu Echtzeit-Kundenprofilen](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31581?learn=on&enablevpops&captions=ger)
 
 ## Architektur und Funktionen
 
@@ -35,7 +35,7 @@ In diesem Video wird erläutert, wie Adobe Experience Platform Echtzeit-Kundenpr
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="Übersichtsdiagramm des Echtzeit-Kundenprofils" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="Übersichtsdiagramm des Echtzeit-Kundenprofils"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36759?format=jpeg&nocache=1740415066741&captions=ger" alt="Übersichtsdiagramm des Echtzeit-Kundenprofils"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +81,7 @@ In diesem Video wird erläutert, wie Adobe Experience Platform Echtzeit-Kundenpr
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="union-schemas-overview.md" title="Übersicht über Vereinigungsschemata" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329940?format=jpeg&nocache=1740415066755" alt="Übersicht über Vereinigungsschemata"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/343540?format=jpeg&nocache=1740415066755&captions=ger" alt="Übersicht über Vereinigungsschemata"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -104,7 +104,7 @@ In diesem Video wird erläutert, wie Adobe Experience Platform Echtzeit-Kundenpr
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="Berechnetes Attribut für die Summe der Bestellungen erstellen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="Berechnetes Attribut für die Summe der Bestellungen erstellen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443560?format=jpeg&nocache=1740415066775&captions=ger" alt="Berechnetes Attribut für die Summe der Bestellungen erstellen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -139,7 +139,7 @@ In diesem Video wird erläutert, wie Adobe Experience Platform Echtzeit-Kundenpr
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="bring-data-into-the-real-time-customer-profile.md" title="Einbinden von Daten in das Echtzeit-Kundenprofil" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27301?format=jpeg&nocache=1740415067018" alt="Einbinden von Daten in das Echtzeit-Kundenprofil"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34308?format=jpeg&nocache=1740415067018&captions=ger" alt="Einbinden von Daten in das Echtzeit-Kundenprofil"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -185,7 +185,7 @@ In diesem Video wird erläutert, wie Adobe Experience Platform Echtzeit-Kundenpr
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="Aktualisieren spezifischer Profilattribute mit „upsert“" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="Aktualisieren spezifischer Profilattribute mit „upsert“"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443450/?format=jpeg&nocache=1740415067029&captions=ger" alt="Aktualisieren spezifischer Profilattribute mit „upsert“"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -218,7 +218,7 @@ In diesem Video wird erläutert, wie Adobe Experience Platform Echtzeit-Kundenpr
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-account-profiles.md" title="Kontoprofile anzeigen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/338251?format=jpeg&nocache=1740415067214" alt="Kontoprofile anzeigen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446586?format=jpeg&nocache=1740415067214&captions=ger" alt="Kontoprofile anzeigen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

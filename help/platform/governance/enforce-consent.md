@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Erfahren Sie, wie Sie Richtlinien erstellen, um die Einverständnisvoreinstellungen des Kunden durchzusetzen. Weitere Informationen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413764?learn=on&enablevpops&captions=ger)
 
 >[!IMPORTANT]
 >

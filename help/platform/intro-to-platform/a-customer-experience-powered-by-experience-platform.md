@@ -17,5 +17,5 @@ ht-degree: 0%
 
 Sehen Sie sich eine hypothetische Erfahrung an, die mit Adobe Experience Platform erstellt wurde, aus der Perspektive eines Kunden. Erfahren Sie, wie Experience Platform ein eindrucksvolles, relevantes und Echtzeiterlebnis bietet.
 
->[!VIDEO](https://video.tv.adobe.com/v/27361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35313?learn=on&enablevpops&captions=ger)
 

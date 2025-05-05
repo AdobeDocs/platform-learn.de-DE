@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Verschaffen Sie sich einen Überblick über die fünf wichtigsten Anwendungsfälle von Experience Platform: intelligente Rückgewinnung, „Don&#39;t Lose“-Kampagnen, Optimierung der Kundenkonversion, kontextuelle Erkennung und einmaliger Wert-zu-Lebenswert.
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430464?learn=on&enablevpops&captions=ger)
 

@@ -20,5 +20,5 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie in Adobes Real-Time Customer Data Platform Ziele erstellen und Daten aktivieren. Eine detailliertere Produktdokumentation finden Sie unter [Aktivieren von Profilen und Segmenten für ein Ziel](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html?lang=de), [Verbinden eines Ziels](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html?lang=de) und [Verbinden mit Streaming-Zielen und Aktivieren von Daten mit der API](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/29710?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33169?learn=on&enablevpops&captions=ger)
 

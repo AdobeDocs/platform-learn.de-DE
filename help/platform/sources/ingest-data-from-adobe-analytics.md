@@ -21,4 +21,4 @@ ht-degree: 1%
 
 Mit dem Adobe Analytics Source-Connector können Sie Daten aus Adobe Analytics einfach in das Echtzeit-Kundenprofil und den Experience Data Lake von Adobe Experience Platform streamen, zuordnen und filtern. Erfahren Sie, wie Sie mit Datenvorbereitungsfunktionen semantische und berechnete Felder erstellen können, um das Benutzererlebnis in Segment Builder- und Platform-Anwendungen zu verbessern. Für diesen Connector werden regionenübergreifende Report Suites unterstützt. Eine detailliertere Produktdokumentation finden Sie unter [Erstellen eines Adobe Analytics-Quell-Connectors für in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/29687?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3432289?learn=on&enablevpops&captions=ger)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie Experience Platform-Konfigurationen mithilfe von Paketen zwischen IMS-Organisationen kopieren. Einfaches Replizieren von Schemata, Datensätzen, Journey und mehr über mehrere IMS-Organisationen hinweg, um Veröffentlichungsprozesse und Bereitstellungen mit mehreren Regionen/mehreren Marken zu unterstützen. Weitere Informationen finden Sie in der [Sandbox-Tools-Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs).
 
->[!VIDEO](https://video.tv.adobe.com/v/3435815/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443926/?learn=on&enablevpops&captions=ger)

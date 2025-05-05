@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie eine Federated Audience-Komposition erstellen und wie Sie die Abfrage in der Benutzeroberfläche erstellen, die in Ihr Data Warehouse eingreift und die richtigen Daten auswählt. Weitere Informationen finden Sie unter [Dokumentation zur Federated-Audience-Komposition](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448587/?learn=on&enablevpops&captions=ger)

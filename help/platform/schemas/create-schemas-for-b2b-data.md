@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie mit Real-Time Customer Data Platform, B2B edition Schemata für Ihre Geschäftsdaten erstellen. Erfahren Sie mehr über die Geschäftsklassen, Feldergruppen und Identity-Namespaces und deren automatische Erstellung in Ihrem Konto mit dem Postman-Dienstprogramm. Weitere Informationen finden Sie in der [Schemadokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453404?learn=on&enablevpops&captions=ger)

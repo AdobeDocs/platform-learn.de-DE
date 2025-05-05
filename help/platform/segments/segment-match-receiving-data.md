@@ -18,5 +18,5 @@ ht-degree: 90%
 
 Mit Segment Match können Daten von Ihren strategischen Partnern für Sie freigegeben werden. In diesem Video erfahren Sie, wie Sie die Daten genehmigen und empfangen und wo Sie sie anzeigen und zu Ihren eigenen Segmenten hinzufügen können.
 
->[!VIDEO](https://video.tv.adobe.com/v/344419/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3417573/?learn=on&enablevpops&captions=ger)
 

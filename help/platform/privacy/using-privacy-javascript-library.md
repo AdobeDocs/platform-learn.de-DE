@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie mit der Privacy JavaScript-Bibliothek Kundenidentitäten in Ihrem Programm erfassen können, bevor Sie sie an Privacy Service senden. Erfahren Sie zum Beispiel, wie Sie die Tag-Erweiterung in der Datenerfassung (früher Launch) einrichten. Weitere Informationen finden Sie in der [Dokumentation zu Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/336078?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452089?learn=on&enablevpops&captions=ger)

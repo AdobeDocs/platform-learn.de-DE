@@ -19,4 +19,4 @@ ht-degree: 100%
 
 Informationen darüber, wie Schemata und Datensätze mit Labels versehen können. Daten können mit Datennutzungs-Labels getaggt und klassifiziert werden, um Unternehmensrichtlinien, vertragliche Verpflichtungen, Compliance-Anforderungen und regionale Vorschriften in Adobe Experience Platform widerzuspiegeln. Diese Fähigkeit ist von ausschlaggebender Bedeutung, um bekannte und unbekannte Daten zu den eigenen Kundinnen und Kunden zu unterscheiden und die Datennutzung entsprechend der Art der Daten angemessen zu steuern. Eine ausführliche Produktdokumentation ist in [Verwalten von Datennutzungs-Labels in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html?lang=de) und [Verwalten von Datennutzungs-Labels mit APIs](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/dataset-api.html?lang=de) enthalten.
 
->[!VIDEO](https://video.tv.adobe.com/v/29709?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422789?learn=on&enablevpops&captions=ger)

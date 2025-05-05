@@ -20,4 +20,4 @@ Erfahren Sie, wie Sie überprüfen können, ob die Einverständniseinstellungen 
 >
 > Launch ist jetzt **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332696/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443798/?learn=on&enablevpops&captions=ger)

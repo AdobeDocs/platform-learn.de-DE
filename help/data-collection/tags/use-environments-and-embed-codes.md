@@ -18,4 +18,4 @@ ht-degree: 34%
 
 Erfahren Sie, wie Sie mit Entwicklungs-, Staging- und Produktionsumgebungen und Einbettungs-Codes Ihre Tag-Eigenschaft entwickeln und validieren können. Weitere Informationen finden Sie in der Dokumentation [Umgebungen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430479/?learn=on&enablevpops&captions=ger)

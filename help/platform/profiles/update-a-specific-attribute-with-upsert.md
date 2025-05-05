@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie ein bestimmtes Profilattribut mithilfe der `upsert` von Adobe Experience Platform aktualisieren können. In den meisten Fällen wird bei der Aufnahme eines Datensatzes in Platform nur mit dem spezifischen Attribut der Wert, aber auch die anderen Attribute mit `null` Werten aktualisiert. `Upsert` können Sie nur das gewünschte Attribut aktualisieren, während Sie den übrigen Feldern erlauben, ihre aktuellen Werte beizubehalten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416133/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443450/?learn=on&enablevpops&captions=ger)

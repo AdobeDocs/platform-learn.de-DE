@@ -47,7 +47,7 @@ Die Datenvorbereitungsfunktion hilft Ihnen dabei, nur die Felder aufzunehmen, di
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="Datenvorbereitung für die Datenhygiene" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="Datenvorbereitung für die Datenhygiene"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449284/?format=jpeg&nocache=1740251397387&captions=ger" alt="Datenvorbereitung für die Datenhygiene"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -109,7 +109,7 @@ Es gibt viele Funktionen, mit denen Sie die Daten aus dem System entfernen könn
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="Löschen von Datensätzen planen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="Löschen von Datensätzen planen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430310?format=jpeg&nocache=1740251397716&captions=ger" alt="Löschen von Datensätzen planen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +132,7 @@ Es gibt viele Funktionen, mit denen Sie die Daten aus dem System entfernen könn
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="Ablauf von pseudonymen Profilen und Erlebnisereignissen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="Ablauf von pseudonymen Profilen und Erlebnisereignissen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449865?format=jpeg&nocache=1740251397705&captions=ger" alt="Ablauf von pseudonymen Profilen und Erlebnisereignissen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +216,7 @@ Es gibt viele Funktionen, mit denen Sie die Daten aus dem System entfernen könn
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="Aktualisieren spezifischer Profilattribute mit „upsert“" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="Aktualisieren spezifischer Profilattribute mit „upsert“"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443450/?format=jpeg&nocache=1740251398874&captions=ger" alt="Aktualisieren spezifischer Profilattribute mit „upsert“"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

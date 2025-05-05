@@ -18,4 +18,4 @@ ht-degree: 1%
 
 In diesem Video wird gezeigt, wie Sie ganz einfach nahtlos und skalierbar Batch-Aufnahme-Daten aus Cloud-Speicher-Services in das Echtzeit-Kundenprofil und den Data Lake von Adobe Experience Platform aufnehmen können. Eine detailliertere Produktdokumentation finden Sie unter [Cloud-Speicher](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de#cloud-storage) auf der Übersichtsseite zu Source Connectors oder in der [Amazon S3-Quell-Connector-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/29695?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33155?learn=on&enablevpops&captions=ger)

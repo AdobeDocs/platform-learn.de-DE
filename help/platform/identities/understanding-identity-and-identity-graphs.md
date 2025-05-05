@@ -18,7 +18,7 @@ ht-degree: 10%
 
 Erfahren Sie mehr über die wichtigsten Funktionen der Identitätsauflösung in Adobe Experience Platform - Identitätssammlung, Identitätsdiagramme und APIs. Erfahren Sie, wie der Identity Service getrennte Identitäten verknüpft, um durch die Erstellung eines einheitlichen Profils ein konsistentes vernetztes Erlebnis zu bieten. Weitere Informationen finden Sie in der [Identity Service-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422772?learn=on&enablevpops&captions=ger)
 
 ## Konfigurieren von Identitäten
 
@@ -32,7 +32,7 @@ Erfahren Sie mehr über die wichtigsten Funktionen der Identitätsauflösung in 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="Kennzeichnen, Aufnehmen und Überprüfen von Identitätsdaten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="Kennzeichnen, Aufnehmen und Überprüfen von Identitätsdaten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31579?format=jpeg&nocache=1740414775790&captions=ger" alt="Kennzeichnen, Aufnehmen und Überprüfen von Identitätsdaten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -65,7 +65,7 @@ Erfahren Sie mehr über die wichtigsten Funktionen der Identitätsauflösung in 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="Regeln zur Verknüpfung von Identitätsdiagrammen - Diagrammsimulation" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="Regeln zur Verknüpfung von Identitätsdiagrammen - Diagrammsimulation"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444052/?format=jpeg&nocache=1740414776009&captions=ger" alt="Regeln zur Verknüpfung von Identitätsdiagrammen - Diagrammsimulation"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

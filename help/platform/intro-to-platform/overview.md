@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Verschaffen Sie sich einen Überblick darüber, was Experience Platform ist und welche geschäftlichen Herausforderungen damit gelöst werden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/32797?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428492?learn=on&enablevpops&captions=ger)
 
 

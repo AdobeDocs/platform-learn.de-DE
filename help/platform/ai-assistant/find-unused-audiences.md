@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie mit dem KI-Assistenten nicht verwendete Zielgruppen identifizieren können, um sie zu löschen und Ihre Marketing-Vorgänge effizienter zu gestalten. Weitere Informationen zum Abfragen des KI-Assistenten finden Sie im [Handbuch zum KI-Assistenten](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/questions).
 
->[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441996/?learn=on&enablevpops&captions=ger)
