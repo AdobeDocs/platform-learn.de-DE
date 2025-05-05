@@ -84,6 +84,7 @@ Jetzt, da wir eine Vorstellung davon haben, welchen Inhalt wir haben sollten, k�
 - Im sich öffnenden Modal sehen Sie, dass einige Felder noch nicht bearbeitbar sind. Das ist logisch: Je nachdem, wo wir unser Fragment erstellen, werden verschiedene Modelle verfügbar sein.
   ![Inhaltsfragment erstellen](./images/prod-app-create-cf-details.png)
    - Wählen Sie zunächst aus, wo wir unser Fragment erstellen werden, indem Sie auf das Ordnersymbol neben dem Feld „Standort“ klicken. Erweitern Sie die Inhaltsstruktur, indem Sie auf die Ordner „adobike“ \> „en“ \> „mobile-app“ klicken, und bestätigen Sie Ihre Auswahl, indem Sie auf die Schaltfläche „Auswählen“ klicken.
+
      ![Wählen Sie den richtigen Speicherort aus](./images/prod-app-folder.png)
    - Sie werden feststellen, dass das Feld „Inhaltsfragmentmodell“ jetzt bearbeitbar ist. Klicken Sie auf den Pfeil neben dem Feld, um das Dropdown-Menü zu öffnen, und wählen Sie das Inhaltsmodell aus, das wir zuvor betrachtet haben: „Mobile App Homepage“.
    - Geben Sie als Nächstes Ihrem Inhaltsfragment einen aussagekräftigen Titel (Tipp: Geben Sie Ihre Team-Nummer an, damit Sie Ihren Inhalt schnell finden können). Sie werden feststellen, dass das Feld „Name“ automatisch ausgefüllt wird - dies soll Ihnen das Leben erleichtern: Es ist der Name, den das System verwendet, um Ihr Fragment zu identifizieren, und sollte nicht berührt werden.
@@ -94,6 +95,7 @@ Jetzt, da wir eine Vorstellung davon haben, welchen Inhalt wir haben sollten, k�
    - Um Bild-Assets auszuwählen, klicken Sie auf das Ordnersymbol, um AEM Assets nach dem richtigen Bild zu durchsuchen.
    - Klicken Sie für das angezeigte Produkt auf das Produktsuchsymbol, damit Sie einfach unser Commerce-Produkt „AdobeBike 1“ auswählen können, damit die Commerce-bezogenen Details in die App geladen werden.
    - Klicken Sie auf die Schaltfläche „Speichern“, wenn Sie fertig sind, um alle Ihre erstellten Inhalte zu speichern und Ihre Änderungen zu veröffentlichen.
+
      ![Änderungen veröffentlichen](./images/prod-app-publish.png)
 
 Nachdem wir nun die Mobile App mit einigen Inhalten vorhergesehen haben, sind wir bereit, unsere Kampagne bereitzustellen.

@@ -334,7 +334,7 @@ Wählen Sie **Array Aggregator** aus.
 
 ![WF Fusion](./images/wffusion99.png)
 
-**Festlegen Quelle Modul** an Repeater ****. Wählen Sie **OK**.
+**Festlegen Quelle Modul** an Repeater **&#x200B;**. Wählen Sie **OK**.
 
 ![WF Fusion](./images/wffusion100.png)
 
@@ -396,7 +396,7 @@ Klicken Sie nach dem Hinzufügen des Routers auf das Symbol **Schraubenschlüsse
 
 ![WF Fusion](./images/wffusion114.png)
 
-Verwenden Sie für die Bezeichnung **Wir sind fertig**. Festlegen die **Bedingung**, die die Antwort aus dem **Photoshop Überprüfen Sie Status** Knoten verwenden, indem Sie das Resposne-Feld **data.outputs.status**[] wählen, sollte der Operator auf **Gleich und der Wert auf gesetzt** werden`succeeded`. Klicken Sie **OK**.
+Verwenden Sie für die Bezeichnung **Wir sind fertig**. Festlegen die **Bedingung**, die die Antwort aus dem **Photoshop Überprüfen Sie Status** Knoten verwenden, indem Sie das Resposne-Feld **data.outputs.status**&#x200B;[] wählen, sollte der Operator auf **Gleich und der Wert auf gesetzt** werden`succeeded`. Klicken Sie **OK**.
 
 ![WF Fusion](./images/wffusion115.png)
 
@@ -428,7 +428,7 @@ Ziehen Sie das geklonte Knoten so, dass es mit dem **Array Aggregator** verbunde
 
 ![WF Fusion](./images/wffusion122.png)
 
-Entfernen die vorhandene Variable und wählen Sie + hinzufügen Element **aus**. Verwenden Sie für den **Variable** Namen , verwenden Sie `end``placeholder`für den **Variable Wert**. Wählen Sie **hinzufügen** und dann OK **aus**.
+Entfernen die vorhandene Variable und wählen Sie + hinzufügen Element **aus**. Verwenden Sie für den **Variable** Namen , verwenden Sie `end` `placeholder`für den **Variable Wert**. Wählen Sie **hinzufügen** und dann OK **aus**.
 
 ![WF Fusion](./images/wffusion123.png)
 

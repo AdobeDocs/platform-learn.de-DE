@@ -128,7 +128,7 @@ In Xcode:
 In Ihrem Browser:
 
 1. Navigieren Sie zur Datenerfassungs-Benutzeroberfläche.
-1. Wählen Sie in der ]**Leiste**[!UICONTROL  Assurance aus.
+1. Wählen Sie in der **Leiste** Assurance aus.
 1. Wählen Sie **[!UICONTROL Sitzung erstellen]** aus.
 1. Wählen Sie **[!UICONTROL Starten]** aus.
 1. Geben Sie einen **[!UICONTROL Sitzungsnamen“]**. B. `Luma Mobile App Session` und die **[!UICONTROL Basis-URL]** an. Dies sind die URL-Schemata, die Sie in Xcode eingegeben haben, gefolgt von `://` Beispiel: `lumatutorialswiftui://`
@@ -146,6 +146,7 @@ In Ihrem Browser:
 
    1. Wählen Sie **[!UICONTROL Link kopieren]** aus.
    1. Kopieren Sie den Deep-Link mit ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) und verwenden Sie den Deep-Link, um die App mit Safari im Simulator zu öffnen.
+
       ![Assurance Copy-Link](assets/assurance-copy-link.png)
 
 1. Beim Laden der App wird ein modales Dialogfeld angezeigt, in dem Sie aufgefordert werden, die in Schritt 7 angezeigte PIN einzugeben.

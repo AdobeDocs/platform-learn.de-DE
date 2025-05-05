@@ -74,7 +74,7 @@ Ihr Kundenprofil wird erneut angezeigt. Navigieren Sie zu **Ereignisse**.
 
 ![DSN](./images/cc8.png)
 
-Unter „Ereignisse“ werden zwei Ereignisse mit dem eventType „CallCenter ****. Das erste Ereignis ist das Ergebnis Ihrer Antwort auf die Frage **Bewerten Sie Ihre Anrufzufriedenheit**.
+Unter „Ereignisse“ werden zwei Ereignisse mit dem eventType „CallCenter **&#x200B;**. Das erste Ereignis ist das Ergebnis Ihrer Antwort auf die Frage **Bewerten Sie Ihre Anrufzufriedenheit**.
 
 ![DSN](./images/cc9.png)
 

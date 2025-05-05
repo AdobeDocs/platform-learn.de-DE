@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Erfahren Sie, wie Sie Adobe Experience Cloud-Programme mit dem Adobe Experience Platform Mobile SDK in Ihrer Mobile App implementieren.
 
-Experience Platform Mobile SDK ist eine Client-seitige SDK, die es Kunden von Adobe Experience Cloud ermöglicht, sowohl mit Adobe-Anwendungen als auch mit Drittanbieter-Services über Adobe Experience Platform Edge Network zu interagieren. Weitere Informationen finden Sie in der Dokumentation ](https://developer.adobe.com/client-sdks/home/) Adobe Experience Platform Mobile SDK .[
+Experience Platform Mobile SDK ist eine Client-seitige SDK, die es Kunden von Adobe Experience Cloud ermöglicht, sowohl mit Adobe-Anwendungen als auch mit Drittanbieter-Services über Adobe Experience Platform Edge Network zu interagieren. Weitere Informationen finden Sie in der Dokumentation [&#128279;](https://developer.adobe.com/client-sdks/home/) Adobe Experience Platform Mobile SDK .
 
 ![Architektur](assets/architecture.png)
 
@@ -84,8 +84,8 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe-ID und die
 
 ## Versionsverlauf
 
-* 29. November 2023: Umfangreiche Überarbeitung mit neuer Beispiel-App und neuen Lektionen für In-App-Messaging, Entscheidungs-Management und Adobe Target.
-* 9. März 2022: Erste Veröffentlichung
+* &#x200B;29. November 2023: Umfangreiche Überarbeitung mit neuer Beispiel-App und neuen Lektionen für In-App-Messaging, Entscheidungs-Management und Adobe Target.
+* &#x200B;9. März 2022: Erste Veröffentlichung
 
 ## Herunterladen der Luma-App
 

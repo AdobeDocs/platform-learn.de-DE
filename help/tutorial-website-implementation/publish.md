@@ -106,7 +106,7 @@ Sobald Ihr QA-Team die Änderungen in der Staging-Umgebung überprüft und best�
 
    ![Klicken Sie auf „Erstellen und in Produktion veröffentlichen“](images/publishing-buildAndPublishToProduction.png)
 
-1. Klicken Sie im Dialogfeld auf ]****[!UICONTROL  Publish:
+1. Klicken Sie im Dialogfeld auf **&#x200B;**&#x200B;Publish:
 
    ![Klicken Sie auf Veröffentlichen](images/publishing-publish.png)
 

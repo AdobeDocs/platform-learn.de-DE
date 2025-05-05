@@ -49,7 +49,7 @@ Damit die dokumentbasierte Authoring-Demo funktioniert, müssen Sie jetzt Ihren 
 
 ![AEMCS](./images/googledrive8.png){zoomable="yes"}
 
-helix@adobe.com Geben Sie die E-Mail-Adresse **** ein und klicken Sie auf **Senden**.
+helix@adobe.com Geben Sie die E-Mail-Adresse **&#x200B;**&#x200B;ein und klicken Sie auf **Senden**.
 
 ![AEMCS](./images/googledrive9.png){zoomable="yes"}
 

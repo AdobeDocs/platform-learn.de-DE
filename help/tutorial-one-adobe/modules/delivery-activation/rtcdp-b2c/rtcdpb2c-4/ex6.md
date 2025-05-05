@@ -19,10 +19,12 @@ Mit Azure-Funktionen können Sie kleine Code-Abschnitte (so genannte **) ausfüh
 Eine Funktion wird **einem** Ereignistyp ausgelöst. Zu den unterstützten Trigger gehören die Reaktion auf Datenänderungen, die Reaktion auf Nachrichten (z. B. Event Hubs), die nach einem Zeitplan oder als Ergebnis einer HTTP-Anfrage ausgeführt werden.
 Azure Functions ist ein Server-loser Compute-Service, mit dem Sie ereignisgesteuerten Code ausführen können, ohne die Infrastruktur explizit bereitstellen oder verwalten zu müssen.
 Azure Event Hubs lässt sich mit Azure-Funktionen für eine Server-lose Architektur integrieren.
+
 ## Öffnen Sie Visual Studio Code und melden Sie sich bei Azure an
 
 Visual Studio Code erleichtert das…
 - Definieren und Binden von Azure-Funktionen an Event Hubs- Lokaler Test- Bereitstellen in Azure- Remote-Protokollfunktion
+
 ### Visual Studio Code öffnen
 
 ### Bei Azure anmelden
@@ -36,6 +38,7 @@ Wenn der folgende Bildschirm im Browser angezeigt wird, sind Sie mit Visual Code
 ![3-03-vsc-login-ok.png](./images/303vscloginok.png)
 Kehren Sie zu Visual Code Studio zurück (Sie sehen den Namen Ihres Azure-Abonnements, z. B. **Azure-Abonnement 1**):
 ![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
 ## Erstellen eines Azure-Projekts
 
 Klicken Sie **Funktionsprojekt erstellen…**:
@@ -65,6 +68,7 @@ Sie erhalten dann möglicherweise eine Nachricht wie diese. Klicken Sie dann auf
 Öffnen Sie nach dem Erstellen des Projekts die Datei `--aepUserLdap---aep-event-hub-trigger.js` im Editor:
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 Die Payload, die von Adobe Experience Platform an Ihren Event Hub gesendet wird, sieht wie folgt aus:
+
 ```json
 {
   "identityMap": {
@@ -92,16 +96,19 @@ Die Payload, die von Adobe Experience Platform an Ihren Event Hub gesendet wird,
 
 Aktualisieren Sie den Code in der `--aepUserLdap---aep-event-hub-trigger.js` Ihres Visual Studio-Codes mit dem folgenden Code. Dieser Code wird jedes Mal ausgeführt, wenn Real-Time CDP Zielgruppenqualifikationen an Ihr Event Hub-Ziel sendet. In diesem Beispiel geht es im Code nur um die Anzeige eingehender Payload. Sie können sich jedoch jede Art zusätzlicher Funktionen vorstellen, um Zielgruppenqualifikationen in Echtzeit zu verarbeiten und sie weiter unten in Ihrem Datenpipeline-Ökosystem zu verwenden.
 Zeile 11 in Ihrer Datei `--aepUserLdap---aep-event-hub-trigger.js` zeigt derzeit Folgendes:
+
 ```javascript
 context.log('Event hub message:', message);
 ```
 
 Ändern Sie Zeile 11 in `--aepUserLdap---aep-event-hub-trigger.js` so, dass sie wie folgt aussieht:
+
 ```javascript
 context.log('Event hub message:', JSON.stringify(message));
 ```
 
 Die gesamte Payload sollte dann wie folgt aussehen:
+
 ```javascript
 const { app } = require('@azure/functions');
 
@@ -125,6 +132,7 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 Das Ergebnis sollte wie folgt aussehen:
 ![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
+
 ## Azure-Projekt ausführen
 
 Jetzt ist es Zeit, Ihr Projekt auszuführen. In dieser Phase werden wir das Projekt nicht in Azure bereitstellen. Wir führen es lokal im Debug-Modus aus. Wählen Sie das Symbol Ausführen aus und klicken Sie auf den grünen Pfeil.
@@ -135,10 +143,12 @@ Wählen Sie anschließend das zuvor erstellte Speicherkonto mit dem Namen `--aep
 ![3-17-vsc-run-project.png](./images/vsc14b.png)
 Ihr Projekt läuft jetzt und wird für Ereignisse im Event Hub aufgelistet. In der nächsten Übung demonstrieren Sie das Verhalten auf der Demo-Website von CitiSignal, das Sie für Zielgruppen qualifiziert. Als Ergebnis erhalten Sie eine Payload zur Zielgruppen-Qualifizierung im Terminal Ihrer Event Hub-Trigger-Funktion.
 ![3-24-vsc-application-stop.png](./images/vsc18.png)
+
 ## Azure-Projekt stoppen
 
 Um Ihr Projekt zu stoppen, gehen Sie zum Lenu **CALL STACK** in VSC, klicken Sie auf den Pfeil Ihres laufenden Projekts und dann auf **Stopp**.
 ![3-24-vsc-application-stop.png](./images/vsc17.png)
+
 ## Nächste Schritte
 
 Zum End-to-End-Szenario [2.4.7](./ex7.md){target="_blank"}

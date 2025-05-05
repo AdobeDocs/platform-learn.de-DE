@@ -66,7 +66,7 @@ Im weiteren Verlauf dieser Lektion werden wir:
 
 1. Erstellen Sie eine weitere Regel mit der Aktion **[!UICONTROL Ereignis senden]** die das vollständige XDM-Objekt an Adobe Experience Platform Edge Network sendet.
 
-Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; ].
+Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; &#x200B;].
 
 In diesem Video erhalten Sie einen Überblick über den Prozess:
 

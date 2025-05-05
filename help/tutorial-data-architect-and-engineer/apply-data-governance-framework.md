@@ -62,7 +62,7 @@ Jetzt ist es an der Zeit, die Daten zu kennzeichnen, deren Verwendung beschränk
 1. Sie können Kennzeichnungen entweder auf einzelne Felder anwenden oder sie auf den gesamten Datensatz anwenden. Wir wenden die Kennzeichnung auf den gesamten Datensatz an. Klicken Sie auf das Stiftsymbol. Wenn das Symbol nicht angezeigt wird, versuchen Sie, den Browser breiter zu gestalten oder das mittlere Bedienfeld nach rechts zu scrollen.
    ![Data Governance](assets/governance-dataset.png)
 1. Erweitern Sie im modalen Fenster den Abschnitt **[!UICONTROL Vertrags-Kennzeichnungen]** und überprüfen Sie die **[!UICONTROL C2]**-Kennzeichnung
-1. Klicken Sie auf **[!UICONTROL Schaltfläche]**Änderungen speichern“
+1. Klicken Sie auf **[!UICONTROL Schaltfläche]**&#x200B;Änderungen speichern“
    ![Data Governance](assets/governance-applyLabel.png)
 1. Wenn Sie zum Hauptbildschirm [!UICONTROL Data Governance] mit dem **[!UICONTROL Übernommene Kennzeichnungen anzeigen]** zurückkehren, können Sie sehen, wie die Kennzeichnung auf alle Felder im Datensatz angewendet wurde.
    ![Data Governance](assets/governance-labelsAdded.png)

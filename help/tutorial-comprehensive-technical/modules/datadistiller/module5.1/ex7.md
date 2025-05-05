@@ -73,7 +73,7 @@ Sie erhalten nun eine Karte mit Punkten in verschiedenen Größen. Die Größe g
 
 ![tableau-variation-size-dots.png](./images/tableauvarysizedots.png)
 
-Ziehen Sie die Dimension **** Thema aufrufen **auf „Seiten**, um die Daten pro **Thema aufzurufen**. Navigieren Sie durch die verschiedenen **Anrufthemen** mithilfe des **Anrufthemas** auf der rechten Seite des Bildschirms:
+Ziehen Sie die Dimension **&#x200B;**&#x200B;Thema aufrufen **auf „Seiten**, um die Daten pro **Thema aufzurufen**. Navigieren Sie durch die verschiedenen **Anrufthemen** mithilfe des **Anrufthemas** auf der rechten Seite des Bildschirms:
 
 ![tableau-call-topic-navigation.png](./images/tableaucalltopicnavigation.png)
 

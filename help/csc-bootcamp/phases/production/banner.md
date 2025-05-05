@@ -29,10 +29,13 @@ Durch die Inhaltsautomatisierung profitiert Experience Manager Assets von der Le
 
 - Die folgenden sind für Sie von Interesse:
    - Adobe Banner Dark: Erstellt ein Adobe Banner mit einer dunklen Überlagerung, basierend auf dem ausgewählten Asset
+
      ![Dark Banner](./images/prod-banner-dark.jpg)
    - Adobe Banner Light: Erstellt ein Adobe Banner mit einer hellen Überlagerung, basierend auf dem ausgewählten Asset
+
      ![Light-Banner](./images/prod-banner-light.jpg)
    - Adobe Banner Green : Erstellt ein Adobe Banner mit einer grünen Überlagerung, basierend auf dem ausgewählten Asset
+
      ![Grünes Banner](./images/prod-banner-green.jpg)
 
 - Nachdem Sie den Bannertyp ausgewählt haben, den Sie erstellen möchten, wählen Sie dieses Verarbeitungsprofil aus und klicken Sie auf „Profil auf Ordner anwenden“.

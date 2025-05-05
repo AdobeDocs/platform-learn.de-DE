@@ -62,8 +62,8 @@ In dieser Lektion werden Sie
 Um sicherzustellen, dass Daten, die von Ihrer Mobile App an Platform Edge Network gesendet werden, an Journey Optimizer - Entscheidungs-Management weitergeleitet werden, aktualisieren Sie Ihren Datenstrom.
 
 1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche **[!UICONTROL Datenströme]** und wählen Sie Ihren Datenstrom aus, z. B. **[!DNL Luma Mobile App]**.
-1. Experience Platform Wählen Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) für **** und wählen Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus dem Kontextmenü.
-1. Stellen Sie sicher **[!UICONTROL dass im Bildschirm]** Datenströme![ > Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** **[!UICONTROL Offer decisioning]**, **[!UICONTROL Edge-Segmentierung]** und **[!UICONTROL Adobe Journey Optimizer]** ausgewählt sind. Wenn Sie die Target-Lektion durchführen, wählen Sie auch {0 ]**Personalization Destinations aus.**[!UICONTROL  Weitere Informationen finden Sie unter {](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)}Adobe Experience Platform-Einstellungen.[
+1. Experience Platform Wählen Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) für **&#x200B;**&#x200B;und wählen Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus dem Kontextmenü.
+1. Stellen Sie sicher **[!UICONTROL dass im Bildschirm]** Datenströme![ > Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** **[!UICONTROL Offer decisioning]**, **[!UICONTROL Edge-Segmentierung]** und **[!UICONTROL Adobe Journey Optimizer]** ausgewählt sind. Wenn Sie die Target-Lektion durchführen, wählen Sie auch &lbrace;0 &rbrack;**Personalization Destinations aus.**&#x200B;[[!UICONTROL &#x200B; Weitere Informationen finden Sie unter {]](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)}Adobe Experience Platform-Einstellungen.&lbrack;
 1. Um Ihre Datenstromkonfiguration zu speichern, wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![AEP-Datenstromkonfiguration](assets/datastream-aep-configuration-offers.png)
@@ -134,6 +134,7 @@ So erstellen Sie die mobile JSON-Platzierung:
 1. Im Schritt **[!UICONTROL Details]** von **[!UICONTROL Neues personalisiertes Angebot erstellen]**:
    1. Geben Sie einen **[!UICONTROL Namen]** für das Angebot ein, z. B. `Luma - Juno Jacket`, und geben Sie ein **[!UICONTROL Startdatum und -zeit]** und ein **[!UICONTROL Enddatum und -zeit]** ein. Außerhalb dieses Datumsbereichs wird das Angebot nicht von der Entscheidungs-Engine ausgewählt.
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
+
       ![Angebote - Details](assets/ajo-offers-details.png)
 
 1. Im Schritt **[!UICONTROL Darstellungen hinzufügen]** von **[!UICONTROL Neues personalisiertes Angebot erstellen]**:
@@ -152,14 +153,17 @@ So erstellen Sie die mobile JSON-Platzierung:
          ```
 
       1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
          ![Angebote - Benutzerdefinierte Inhalte](assets/ajo-offers-customcontent.png)
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
+
       ![Angebotsdarstellungen](assets/ajo-offers-representations.png)
 
 1. Im Schritt **[!UICONTROL Einschränkungen hinzufügen]** des **[!UICONTROL Neues personalisiertes Angebot erstellen]**:
    1. Legen **[!UICONTROL Priorität]** auf `10` fest.
    1. Schalten Sie **[!UICONTROL Begrenzung einschließen]** aus.
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
+
       ![Angebote - Einschränkungen](assets/ajo-offers-constraints.png)
 
 1. Im Schritt **[!UICONTROL Überprüfen]** von **[!UICONTROL Neues personalisiertes]** erstellen:
@@ -253,9 +257,11 @@ Siehe [Wichtige Schritte zum Erstellen und Verwalten von Angeboten](https://expe
    1. Wählen **[!UICONTROL in der Kachel]** Auswertungskriterien“ ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Hinzufügen]** aus.
       1. Wählen **[!UICONTROL im Dialogfeld &quot;]** hinzufügen“ Ihre Angebotssammlung aus. Beispiel: **[!DNL Luma - Mobile App Collection]**.
       1. Wählen Sie **[!UICONTROL Hinzufügen]** aus.
+
          ![Entscheidung - Sammlung auswählen](assets/ajo-decision-selectcollection.png)
    1. Stellen Sie sicher **[!UICONTROL dass]** Keine“ für **[!UICONTROL Eignung]** und **[!UICONTROL Angebotspriorität]** als **[!UICONTROL ausgewählt ist]**.
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
+
       ![Entscheidungsbereiche](assets/ajo-decision-scopes.png).
 1. Im Schritt **[!UICONTROL Fallback-Angebot hinzufügen]** von **[!UICONTROL Neue Angebotsentscheidung erstellen]**:
    1. Wählen Sie Ihr Fallback-Angebot aus, z. B. die **[!DNL Luma - Fallback offer]**.
@@ -292,7 +298,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
 >
 
 1. Stellen Sie in Xcode sicher[ dass „AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios) zur Liste der Pakete in den Paketabhängigkeiten hinzugefügt wird. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigieren Sie im Xcode-Projekt ]**Navigator zu **[!DNL Luma]**>**[!DNL Luma]**>**[!UICONTROL  AppDelegate.
+1. Navigieren Sie im Xcode-Projekt **Navigator zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>** AppDelegate.
 1. Stellen Sie sicher, dass `AEPOptimize` Teil Ihrer Importliste ist.
 
    ```swift
@@ -319,7 +325,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
 
 1. Navigieren Sie im Xcode-Projekt-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** **[!UICONTROL Entscheidungen]**. Aktualisieren Sie die `activityId`- und `placementId` mit den Details zum Entscheidungsumfang , die Sie aus der Journey Optimizer-Oberfläche kopiert haben.
 
-1. Navigieren Sie im Xcode-Projekt ]**Navigator zu **[!DNL Luma]**>**[!DNL Luma]**>**[!DNL Utils]**>**[!UICONTROL  MobileSDK“. Suchen Sie die `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async`. Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie im Xcode-Projekt **Navigator zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>**&#x200B;[!DNL Utils]&#x200B;**>** MobileSDK“. Suchen Sie die `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async`. Fügen Sie den folgenden Code hinzu:
 
    ```swift
    // set up the XDM dictionary, define decision scope and call update proposition API
@@ -353,7 +359,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
 
    * ruft zwei APIs auf: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac) und [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  Diese Funktionen löschen alle zwischengespeicherten Vorschläge und aktualisieren die Vorschläge für dieses Profil.
 
-1. Navigieren Sie im Xcode-Projekt-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > {]**}Personalization>**[!UICONTROL  EdgeOffersView ]**.**[!UICONTROL  Suchen Sie die Funktion `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` und überprüfen Sie den Code dieser Funktion. Der wichtigste Teil dieser Funktion ist der [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate)-API-Aufruf, der
+1. Navigieren Sie im Xcode-Projekt-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > {**}Personalization>**&#x200B;[!UICONTROL &#x200B; EdgeOffersView &#x200B;]&#x200B;**.** Suchen Sie die Funktion `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` und überprüfen Sie den Code dieser Funktion. Der wichtigste Teil dieser Funktion ist der [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate)-API-Aufruf, der
 
    * ruft die Vorschläge für das aktuelle Profil basierend auf dem Entscheidungsumfang ab (den Sie unter Journey Optimizer - Entscheidungs-Management definiert haben),
    * das Angebot aus dem Vorschlag abruft,

@@ -29,7 +29,7 @@ ht-degree: 4%
       + [Verwenden der Mobile App](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
    + [PostBuster](/help/tutorial-comprehensive-technical/postbuster.md)
 
-+ 1 {#datacollection} zur Datenerfassung
++ 1 zur Datenerfassung {#datacollection}
    + 1.1 Adobe Experience Platform-Datenerfassung und Web SDK-{#module11}
       + [Übersicht](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
       + [1.1.1 Grundlagen zur Datenerfassung in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
@@ -40,7 +40,7 @@ ht-degree: 4%
       + [1.1.6 Implementieren von Adobe Target](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex6.md)
       + [1.1.7 XDM-Schemaanforderungen in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex7.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/summary.md)
-   + 1.2 {#module12} zur Datenaufnahme
+   + 1.2 zur Datenaufnahme {#module12}
       + [Übersicht](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/data-ingestion.md)
       + [1.2.1 Erkunden der Website](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex1.md)
       + [1.2.2 Konfigurieren von Schema- und Set-Kennungen](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex2.md)

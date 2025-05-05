@@ -200,7 +200,7 @@ Wählen Sie den Standardtext in dieser Komponente aus **Geben Sie hier Ihren Tex
 
 ![Journey Optimizer](./images/oc23.png)
 
-Gehen Sie dann zu **Inhalte** und ziehen Sie per Drag-and-Drop eine **** HTML)-Komponente in die fünfte Zeile. Klicken Sie auf die HTML-Komponente und dann auf **Quellcode anzeigen**.
+Gehen Sie dann zu **Inhalte** und ziehen Sie per Drag-and-Drop eine **&#x200B;**&#x200B;HTML)-Komponente in die fünfte Zeile. Klicken Sie auf die HTML-Komponente und dann auf **Quellcode anzeigen**.
 
 ![Journey Optimizer](./images/oc24.png)
 
@@ -216,7 +216,7 @@ Dann hast du das hier. Klicken Sie **Speichern**, um Ihren Fortschritt zu speich
 
 ![Journey Optimizer](./images/oc26.png)
 
-HTML Wechseln Sie zu **Inhalte** und ziehen Sie per Drag-and-Drop eine ****-Komponente in die sechste Zeile. Klicken Sie auf die HTML-Komponente und dann auf **Quellcode anzeigen**.
+HTML Wechseln Sie zu **Inhalte** und ziehen Sie per Drag-and-Drop eine **&#x200B;**-Komponente in die sechste Zeile. Klicken Sie auf die HTML-Komponente und dann auf **Quellcode anzeigen**.
 
 ![Journey Optimizer](./images/oc57.png)
 
@@ -266,7 +266,7 @@ Jetzt sind Sie wieder im E-Mail-Designer. Klicken Sie **Speichern**, um Ihren Fo
 
 ![Journey Optimizer](./images/oc67.png)
 
-Gehen Sie dann zu **Inhalte** und ziehen Sie per Drag-and-Drop eine **** HTML)-Komponente in die siebte Zeile. Klicken Sie auf die HTML-Komponente und dann auf **Quellcode anzeigen**.
+Gehen Sie dann zu **Inhalte** und ziehen Sie per Drag-and-Drop eine **&#x200B;**&#x200B;HTML)-Komponente in die siebte Zeile. Klicken Sie auf die HTML-Komponente und dann auf **Quellcode anzeigen**.
 
 ![Journey Optimizer](./images/oc68.png)
 
@@ -337,7 +337,7 @@ Klicken Sie auf **Publish**, um Ihren Journey zu veröffentlichen.
 
 ![Journey Optimizer](./images/oc511.png)
 
-Klicken Sie erneut auf **** Publish.
+Klicken Sie erneut auf **&#x200B;**&#x200B;Publish.
 
 ![Journey Optimizer](./images/oc512.png)
 

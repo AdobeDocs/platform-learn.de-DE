@@ -33,6 +33,7 @@ In dieser Aktivität erstellen wir eine Web SDK-Aktion, die der Aktion &quot;**&
 
    ![Adobe Analytics - Variablen festlegen](assets/aa-set-variables.jpg)
    1. Beachten Sie, welche Variablen in dieser Regel festgelegt werden
+
       ![Variablen werden festgelegt](assets/aa-vars-set.jpg)
 
 1. Ändern Sie oben auf der Seite das Optionsfeld in **JSON bereitstellen**. Daraufhin wird eine Code-Ansicht der festgelegten Variablen angezeigt. Diese Code- und die Benutzeroberflächenansicht sind austauschbar. Wenn Sie auf einer Benutzeroberfläche etwas festlegen, wird diese auch auf der anderen Benutzeroberfläche aktualisiert.

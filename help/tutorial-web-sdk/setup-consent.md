@@ -204,7 +204,7 @@ Falls sich ein Besucher für das Opt-in entscheidet (Tracking-Cookies akzeptiere
 
    ![Opt-in-Aktion für Einverständnisregel](assets/consent-rule-optin-action.png)
 
-   An dieser Stelle ist zu beachten, dass [!UICONTROL  Aktion „Einverständnis festlegen] die erste Anfrage ist, die ausgeführt wird und eine Identität herstellt. Aus diesem Grund kann es wichtig sein, Identitäten bei der ersten Anfrage selbst zu synchronisieren. Die Identitätszuordnung kann zur Aktion [!UICONTROL Einverständnis festlegen“ hinzugefügt ], indem ein Identitätstyp-Datenelement übergeben wird.
+   An dieser Stelle ist zu beachten, dass [!UICONTROL &#x200B; Aktion „Einverständnis festlegen] die erste Anfrage ist, die ausgeführt wird und eine Identität herstellt. Aus diesem Grund kann es wichtig sein, Identitäten bei der ersten Anfrage selbst zu synchronisieren. Die Identitätszuordnung kann zur Aktion [!UICONTROL Einverständnis festlegen“ hinzugefügt &#x200B;], indem ein Identitätstyp-Datenelement übergeben wird.
 
 1. Wählen Sie **[!UICONTROL In Bibliothek speichern und erstellen]**:
 

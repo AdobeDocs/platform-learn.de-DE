@@ -58,7 +58,7 @@ Navigieren Sie zunächst zurück zur Startseite von Google Cloud Platform. Klick
 
 ![demo](./images/ex25.png)
 
-Sobald Sie sich auf der Startseite befinden, suchen Sie in der Suchleiste nach **0}Google-Authentifizierungsplattform.** Klicken Sie auf das erste Ergebnis, um es zu öffnen.
+Sobald Sie sich auf der Startseite befinden, suchen Sie in der Suchleiste nach **0&rbrace;Google-Authentifizierungsplattform.** Klicken Sie auf das erste Ergebnis, um es zu öffnen.
 
 ![demo](./images/ex24.png)
 

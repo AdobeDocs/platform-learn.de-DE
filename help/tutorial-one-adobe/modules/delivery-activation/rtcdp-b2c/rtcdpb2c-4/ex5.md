@@ -27,7 +27,7 @@ Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbo
 
 ![Datenaufnahme](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
-Gehen Sie zu **Ziele** und klicken Sie dann auf **Durchsuchen**. Anschließend werden alle verfügbaren Ziele angezeigt. Suchen Sie Ihr Ziel und klicken Sie auf die drei Punkte**…** wie unten angegeben und klicken Sie dann auf **Zielgruppen aktivieren**.
+Gehen Sie zu **Ziele** und klicken Sie dann auf **Durchsuchen**. Anschließend werden alle verfügbaren Ziele angezeigt. Suchen Sie Ihr Ziel und klicken Sie auf die drei Punkte&#x200B;**…** wie unten angegeben und klicken Sie dann auf **Zielgruppen aktivieren**.
 
 ![5-01-select-destination.png](./images/501selectdestination.png)
 

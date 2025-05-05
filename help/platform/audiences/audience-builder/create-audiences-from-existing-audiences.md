@@ -20,7 +20,7 @@ Mit dem Builder für Zielgruppenregeln in Experience Platform können Sie besteh
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmente]&quot; wurden in der Platform-] in &quot;[!UICONTROL Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
+> &quot;[!UICONTROL Segmente]&quot; wurden in der Platform- in &quot;Zielgruppen“ umbenannt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** > **[!UICONTROL Regel erstellen]**, um den in diesem Video vorgestellten Regel-Builder aufzurufen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333304/?learn=on&enablevpops)
 

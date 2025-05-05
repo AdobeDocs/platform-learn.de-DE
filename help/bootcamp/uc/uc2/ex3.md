@@ -172,7 +172,7 @@ Sie können Ihren Journey jetzt veröffentlichen, indem Sie auf **Publish** klic
 
 ![ACOP](./images/publishjourney.png)
 
-Klicken Sie erneut auf **** Publish.
+Klicken Sie erneut auf **&#x200B;**&#x200B;Publish.
 
 ![ACOP](./images/publish1.png)
 

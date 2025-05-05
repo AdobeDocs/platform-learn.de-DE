@@ -80,7 +80,7 @@ In diesen Lektionen implementieren Sie Adobe Experience Cloud in eine simulier
 ## Die richtigen Tools
 
 1. Da Sie einige browserspezifische Erweiterungen verwenden werden, empfehlen wir, das Tutorial mit dem [Chrome-Webbrowser](https://www.google.com/chrome/) / abzuschließen
-1. Fügen Sie die Erweiterung {0](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)Adobe Experience Platform Debugger} zu Ihrem Chrome-Browser hinzu[
+1. Fügen Sie die Erweiterung {0[&#128279;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)Adobe Experience Platform Debugger} zu Ihrem Chrome-Browser hinzu
 1. Kopieren Sie den HTML-Beispiel-Seiten-Code
 
    +++HTML-Beispiel-Seiten-Code
@@ -130,7 +130,7 @@ In diesen Lektionen implementieren Sie Adobe Experience Cloud in eine simulier
    </html>
    ```
 
-+++
+   +++
 
 1. Installieren Sie einen Texteditor, in dem Sie Änderungen an der HTML-Beispielseite vornehmen können. (Wenn Sie keinen haben, sollten Sie [Brackets](https://brackets.io/) ausprobieren.)
 1. Setzen Sie ein Lesezeichen für die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).

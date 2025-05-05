@@ -37,7 +37,7 @@ Um mit der Datenerfassung beginnen zu können, müssen Sie die Zustimmung des Be
 
 1. Sie möchten den Benutzer nur einmal um Zustimmung bitten. Sie können dies tun, indem Sie das SDK-Einverständnis für Mobile mit der erforderlichen Autorisierung für das Tracking mit dem Tracking-[-Framework von Apple kombinieren](https://developer.apple.com/documentation/apptrackingtransparency). Bei dieser App gehen Sie davon aus, dass der Benutzer mit der Erfassung von Ereignissen einverstanden ist, wenn er das Tracking autorisiert.
 
-1. Navigieren Sie im Xcode-Projekt ]**Navigator zu **[!DNL Luma]**>**[!DNL Luma]**>**[!DNL Utils]**>**[!UICONTROL  MobileSDK“.
+1. Navigieren Sie im Xcode-Projekt **Navigator zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>**&#x200B;[!DNL Utils]&#x200B;**>** MobileSDK“.
 
    Fügen Sie diesen Code zur `updateConsent` hinzu.
 

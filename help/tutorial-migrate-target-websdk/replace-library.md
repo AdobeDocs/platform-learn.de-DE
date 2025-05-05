@@ -236,7 +236,7 @@ alloy("configure", {
 
 >[!TAB Tags]
 
-In Tags-Implementierungen werden viele Felder automatisch ausgefüllt oder können aus Dropdown-Menüs ausgewählt werden. Beachten Sie, dass [!UICONTROL  Platform-] und [!UICONTROL Datenströme] für jede Umgebung ausgewählt werden können. Der Datenstrom ändert sich je nach Status der Tag-Bibliothek im Veröffentlichungsprozess.
+In Tags-Implementierungen werden viele Felder automatisch ausgefüllt oder können aus Dropdown-Menüs ausgewählt werden. Beachten Sie, dass [!UICONTROL &#x200B; Platform-] und [!UICONTROL Datenströme] für jede Umgebung ausgewählt werden können. Der Datenstrom ändert sich je nach Status der Tag-Bibliothek im Veröffentlichungsprozess.
 
 ![Konfigurieren der Tag-Erweiterung „Web SDK&quot;](assets/tags-config.png){zoomable="yes"}
 >[!ENDTABS]

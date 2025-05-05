@@ -54,7 +54,7 @@ Klicken Sie auf **Seite „Namespace** Ereignis-Hubs“ auf **Einstellungen > Ri
 
 ### SAS-Schlüsselwert
 
-Klicken Sie anschließend auf **RootManageSharedAccessKey**, um den SAS-Schlüsselwert abzurufen. und drücken Sie das Symbol **In Zwischenablage kopieren**, um die Primäre **** Taste zu kopieren, in diesem Fall `pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=`.
+Klicken Sie anschließend auf **RootManageSharedAccessKey**, um den SAS-Schlüsselwert abzurufen. und drücken Sie das Symbol **In Zwischenablage kopieren**, um die Primäre **&#x200B;**&#x200B;Taste zu kopieren, in diesem Fall `pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=`.
 
 ![2-07-sas-key-value.png](./images/207saskeyvalue.png)
 

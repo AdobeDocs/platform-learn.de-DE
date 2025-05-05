@@ -113,7 +113,7 @@ Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein pro
 
 >[!TIP]
 > 
->In dieser Übung fügen Sie die empfohlenen vordefinierten Feldergruppen für die Web-Datenerfassung hinzu: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ und _**[!UICONTROL Consumer Experience Event]**_.
+>In dieser Übung fügen Sie die empfohlenen vordefinierten Feldergruppen für die Web-Datenerfassung hinzu: _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_ und _&#x200B;**[!UICONTROL Consumer Experience Event]**&#x200B;_.
 >
 
 

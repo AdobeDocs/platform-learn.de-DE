@@ -144,7 +144,7 @@ In der Platform-Oberfläche
 
 ![Identitätswert nachschlagen](assets/platform-profile-lookup.png)
 
-Auf dem Bildschirm **[!UICONTROL Detail]** können Sie grundlegende Informationen über den Benutzer sehen, einschließlich der **[!UICONTROL ** verknüpften Identitäten **]**:
+Auf dem Bildschirm **[!UICONTROL Detail]** können Sie grundlegende Informationen über den Benutzer sehen, einschließlich der **[!UICONTROL **&#x200B; verknüpften Identitäten &#x200B;**]**:
 ![Profildetails](assets/platform-profile-details.png)
 
 Auf der **[!UICONTROL Ereignisse]** können Sie die Ereignisse sehen, die von Ihrer Mobile-App-Implementierung für diesen Benutzer erfasst wurden:

@@ -136,7 +136,7 @@ Da Sie jetzt Administrator des Produktprofils `Luma Tutorial Data Collection` si
 
 Jetzt fügen Sie die einzelnen Berechtigungselemente zum Profil hinzu:
 
-1. Adobe Admin Console Navigieren Sie in der ](https://adminconsole.adobe.com) [zu **[!UICONTROL Produkte]** > **[!UICONTROL Datenerfassung]**
+1. Adobe Admin Console Navigieren Sie in der [&#128279;](https://adminconsole.adobe.com) zu **[!UICONTROL Produkte]** > **[!UICONTROL Datenerfassung]**
 1. `Luma Tutorial Data Collection` öffnen
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Berechtigungen]** .
 1. Öffnen Sie **[!UICONTROL Plattformen]**

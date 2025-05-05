@@ -61,7 +61,7 @@ Die Analytics-Erweiterung besteht aus zwei Hauptteilen:
 
    ![Installieren der Analytics-Erweiterung](images/analytics-catalog-install.png)
 
-1. Geben [!UICONTROL  unter „Bibliotheksverwaltung > Report ]&quot; die Report Suite-IDs ein, die Sie für jede Tag-Umgebung verwenden möchten. Wenn Ihre Benutzerinnen und Benutzer Zugriff auf Adobe Analytics haben, beachten Sie, dass beim Eingeben in das Feld eine vorausgefüllte Liste aller Ihrer Report Suites angezeigt wird. (In diesem Tutorial können Sie eine Report Suite für alle Umgebungen verwenden. Doch in der Praxis sollten Sie verschiedene Report Suites verwenden, wie in der Abbildung unten gezeigt.)
+1. Geben [!UICONTROL &#x200B; unter „Bibliotheksverwaltung > Report &#x200B;]&quot; die Report Suite-IDs ein, die Sie für jede Tag-Umgebung verwenden möchten. Wenn Ihre Benutzerinnen und Benutzer Zugriff auf Adobe Analytics haben, beachten Sie, dass beim Eingeben in das Feld eine vorausgefüllte Liste aller Ihrer Report Suites angezeigt wird. (In diesem Tutorial können Sie eine Report Suite für alle Umgebungen verwenden. Doch in der Praxis sollten Sie verschiedene Report Suites verwenden, wie in der Abbildung unten gezeigt.)
 
    ![Report Suite-IDs eingeben](images/analytics-config-reportSuite.png)
 
@@ -69,11 +69,11 @@ Die Analytics-Erweiterung besteht aus zwei Hauptteilen:
    >
    >Es wird empfohlen, die Option [!UICONTROL Bibliothek für mich verwalten] als [!UICONTROL Bibliotheksverwaltung] zu verwenden, da es dadurch wesentlich einfacher wird, die `AppMeasurement.js`-Bibliothek auf dem neuesten Stand zu halten.
 
-1. Geben [!UICONTROL  unter „Allgemein > Tracking-]&quot; Ihren Tracking-Server ein, z. B. `tmd.sc.omtrdc.net`. Geben Sie Ihren SSL-Trackingserver ein, wenn Ihre Site `https://` unterstützt.
+1. Geben [!UICONTROL &#x200B; unter „Allgemein > Tracking-]&quot; Ihren Tracking-Server ein, z. B. `tmd.sc.omtrdc.net`. Geben Sie Ihren SSL-Trackingserver ein, wenn Ihre Site `https://` unterstützt.
 
    ![Trackingserver eingeben](images/analytics-config-trackingServer.png)
 
-1. Legen [!UICONTROL  im Abschnitt „Globale ]&quot; unter [!UICONTROL Zusätzliche Einstellungen] die Variable [!UICONTROL Seitenname] mithilfe Ihres `Page Name` Datenelements fest. Klicken Sie auf das Symbol ![Datenelementsymbol](images/icon-dataElement.png), um das Modal zu öffnen und das `Page Name`-Seitendatenelement auszuwählen.
+1. Legen [!UICONTROL &#x200B; im Abschnitt „Globale &#x200B;]&quot; unter [!UICONTROL Zusätzliche Einstellungen] die Variable [!UICONTROL Seitenname] mithilfe Ihres `Page Name` Datenelements fest. Klicken Sie auf das Symbol ![Datenelementsymbol](images/icon-dataElement.png), um das Modal zu öffnen und das `Page Name`-Seitendatenelement auszuwählen.
 
 1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**
 

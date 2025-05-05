@@ -333,7 +333,7 @@ Klicken Sie auf **Veröffentlichen**.
 
 ![DSN](./images/sjourney10.png)
 
-Klicken Sie erneut auf **** Publish.
+Klicken Sie erneut auf **&#x200B;**&#x200B;Publish.
 
 ![DSN](./images/sjourney10a.png)
 

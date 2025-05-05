@@ -128,12 +128,12 @@ Die **gute Nachricht** ist, dass dies **jederzeit) ausgeführt** ein Sendeereign
 
 Nun, ja und nein. Ja, Sie müssen einige kleine Dinge ändern, aber nein, Sie müssen den Großteil Ihres Codes nicht ändern, solange Sie diese kleinen Dinge ändern:
 
-_**Code-Änderung 1:**_
+_&#x200B;**Code-Änderung 1:**&#x200B;_
 Nachdem (oder vor Ihrer Wahl) Sie Ihren „Plug-in“-Code in das Code-Fenster in der Web SDK-Erweiterung eingefügt haben, **entfernen** die „doPlugin“-Zeilen aus Ihrem Code. Sie werden sie nicht benötigen und sie werden einen Fehler verursachen, da sie Teil von appMeasurement.js, aber nicht des Web-SDK-Codes sind.
 
 ![Entfernen Sie doPlugins-Code-Zeilen](assets/remove-doplugins.jpg)
 
-_**Code-Änderung 2:**_
+_&#x200B;**Code-Änderung 2:**&#x200B;_
 Die andere Änderung, die Sie vornehmen müssen, besteht darin, Code hinzuzufügen, sodass das Objekt „s“ definiert wird. Dies ähnelt dem, was oben bezüglich des Codes in Regelaktionen besprochen wurde. In diesem Fall müssen wir den Code nur ein wenig anders definieren, indem wir einen „Daten“-Knoten hinzufügen, der bereits in der Regelaktion, aber nicht hier definiert ist.
 Diese Definition sollte am oberen Rand des Code-Fensters platziert werden. Der Code, der (beim Platzieren des Codes in die Web SDK-Erweiterung) kopiert werden muss, lautet wie folgt:
 
@@ -143,7 +143,7 @@ content.data.__adobe.analytics = content.data.__adobe.analytics || {};
 const s = content.data.__adobe.analytics;
 ```
 
-_**Mit beiden Code-Änderungen:**_
+_&#x200B;**Mit beiden Code-Änderungen:**&#x200B;_
 Hier ist der oben aufgeführte Code, aber mit beiden Änderungen haben wir gerade besprochen:
 
 ![Code aktualisiert](assets/update-code.jpg)

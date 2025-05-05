@@ -131,7 +131,7 @@ Fügen wir dem `Luma Loyalty Schema` eine primäre Identität hinzu:
 1. `Luma Identity profile field group` auswählen
 1. `loyaltyId` auswählen
 1. Aktivieren Sie das **[!UICONTROL Identität]**.
-1. Aktivieren Sie auch das Kontrollkästchen {]**}Primäre Identität**[!UICONTROL 
+1. Aktivieren Sie auch das Kontrollkästchen {**}Primäre Identität**
 1. Wählen Sie den `Luma Loyalty Id`-Namespace aus **[!UICONTROL Dropdown-Liste]** Identity-Namespaces“ aus
 1. Wählen Sie **[!UICONTROL Übernehmen]**
 1. Wählen Sie **[!UICONTROL Speichern]**

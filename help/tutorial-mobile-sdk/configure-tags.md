@@ -37,6 +37,7 @@ In dieser Lektion erfahren Sie Folgendes:
 1. Erstellen Sie eine neue mobile Tag-Eigenschaft in der Datenerfassungsoberfläche:
    1. Wählen **[!UICONTROL Tags]** im linken Navigationsbereich aus.
    1. Wählen Sie **[!UICONTROL Neue Eigenschaft]**
+
       ![Erstellen einer Tag-Eigenschaft](assets/tags-new-property.png).
    1. Geben Sie für **[!UICONTROL Name]** &quot;`Luma Mobile App Tutorial`&quot; ein.
    1. Wählen Sie für **[!UICONTROL Platform]** die Option **[!UICONTROL Mobile]** aus.
@@ -65,6 +66,7 @@ In dieser Lektion erfahren Sie Folgendes:
       ![Bibliothek erstellen](assets/tags-save-library.png)
 
    1. Wählen Sie abschließend **[!UICONTROL Anfänglicher Build]** als Arbeitsbibliothek aus dem Menü **[!UICONTROL Arbeitsbibliothek auswählen]** aus.
+
       ![Wählen Sie als Arbeitsbibliothek aus](assets/tags-working-library.png)
 1. Erweiterungen überprüfen:
 

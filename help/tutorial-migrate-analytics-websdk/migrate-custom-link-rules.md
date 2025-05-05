@@ -19,7 +19,7 @@ In dieser Übung erfahren Sie, wie Sie Regeln migrieren, die benutzerdefinierte 
 ## Übersicht
 
 Wenn Sie einen benutzerspezifischen Link-Treffer mit der Analytics-Erweiterung oder dem AppMeasurement-Code senden, wählen Sie bei der Konfiguration der Aktion **Beacon senden** auch aus, ob Sie einen Seitenansichtstreffer oder einen benutzerspezifischen Link-Treffer senden möchten. Bei Auswahl eines benutzerspezifischen Link-Treffers werden Sie nach dem **Link-Namen** und dem **Link-Typ** für diesen Treffer gefragt. Wenn Sie neben dem Link-Namen und -Typ keine anderen Variablendaten senden, benötigen Sie keine zusätzliche Aktion, die Variablen (Props, eVars und Ereignisse) festlegt.
-Aus diesem Grund haben Sie beim Migrieren von Regeln, bei denen es sich um Regeln für benutzerdefinierte Links handelt**in den Regeln (eines** beiden) Szenarien:
+Aus diesem Grund haben Sie beim Migrieren von Regeln, bei denen es sich um Regeln für benutzerdefinierte Links handelt&#x200B;**in den Regeln (eines** beiden) Szenarien:
 
 1. Die bestehende Regel enthält die Aktion **Adobe Analytics - Variablen festlegen** mit der Props, eVars, Ereignisse usw. festgelegt werden und die dann die Aktion **Adobe Analytics - Beacon senden** enthält, die den Treffer auf einen benutzerdefinierten Link-Treffer (auch als s.tl()-Treffer bezeichnet) setzt, den Link-Namen und -Typ festlegt und die Daten sendet.
    1. In diesem Fall enthält sie wahrscheinlich auch eine letzte Aktion namens **Adobe Analytics - Variablen löschen**, um den Wert aus den Variablen zu „null“, nachdem die Daten an Adobe-Server gesendet wurden.

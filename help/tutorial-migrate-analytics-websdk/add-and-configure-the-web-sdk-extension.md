@@ -19,13 +19,15 @@ Führen Sie die folgenden Schritte aus, um die Erweiterung hinzuzufügen und zu 
 
 1. Navigieren Sie zur Experience Platform-Datenerfassung. Dies lässt sich auf zwei Arten erreichen:
    1. Wechseln Sie zur [Adobe Experience Platform](https://platform.adobe.com/)Benutzeroberfläche und wählen Sie **[!UICONTROL Tags]** unten im linken Navigationsbereich aus.
+
       ![Zugriff auf Tags 1](assets/access-tags-1.jpg)
    1. Wenn Sie keinen Zugriff auf Platform haben, können Sie den Programmumschalter (9 Punkte) oben rechts im Fenster verwenden und Datenerfassung auswählen (nachdem Sie sich bei Experience.Adobe.com angemeldet haben).
+
       ![Zugriff auf Tags 2](assets/access-tags-2.jpg)
 1. Suchen Sie Ihre Tag-Eigenschaft, die Sie in die Web-SDK migrieren, und wählen Sie sie aus.
 1. Wählen Sie im linken Navigationsbereich der Tag-Eigenschaft die Option **[!UICONTROL Erweiterungen]** aus.
 1. Wählen Sie **[!UICONTROL Katalog]** oben aus, um eine Liste aller verfügbaren Erweiterungen anzuzeigen.
-1. Suchen Sie nach der Erweiterung **[!UICONTROL Adobe Experience Platform Web SDK]** und wählen Sie sie aus. Klicken Sie dann ]**rechts auf**[!UICONTROL  Installieren“.
+1. Suchen Sie nach der Erweiterung **[!UICONTROL Adobe Experience Platform Web SDK]** und wählen Sie sie aus. Klicken Sie dann **rechts auf** Installieren“.
 
    ![Suchen der Web SDK-Erweiterung](assets/find-the-websdk-extension.jpg){style="border:1px solid lightslategray"}
 

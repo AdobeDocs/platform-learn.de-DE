@@ -94,7 +94,7 @@ Aktualisieren Sie Ihre Experience Edge-Konfiguration, um sicherzustellen, dass D
 
 1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche **[!UICONTROL Datenströme]** und wählen Sie Ihren Datenstrom aus, z. B. **[!DNL Luma Mobile App]**.
 1. Wählen Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) für **[!UICONTROL Experience Platform]** und wählen Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus dem Kontextmenü.
-1. Stellen Sie **[!UICONTROL Bildschirm]** Datenströme“ > ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** sicher, dass **[!UICONTROL Adobe Journey Optimizer]** ausgewählt ist. Weitere Informationen finden Sie unter {](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)}Adobe Experience Platform-Einstellungen.[
+1. Stellen Sie **[!UICONTROL Bildschirm]** Datenströme“ > ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** sicher, dass **[!UICONTROL Adobe Journey Optimizer]** ausgewählt ist. Weitere Informationen finden Sie unter {[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)}Adobe Experience Platform-Einstellungen.
 1. Um Ihre Datenstromkonfiguration zu speichern, wählen Sie **[!UICONTROL Speichern]** aus.
 
 
@@ -124,7 +124,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
 >
 
 1. Stellen Sie in Xcode sicher, dass [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) zur Liste der Pakete in den Paketabhängigkeiten hinzugefügt wird. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigieren Sie im Xcode-Projekt ]**Navigator zu **[!DNL Luma]**>**[!DNL Luma]**>**[!UICONTROL  AppDelegate.
+1. Navigieren Sie im Xcode-Projekt **Navigator zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>** AppDelegate.
 1. Stellen Sie sicher, dass `AEPMessaging` Teil Ihrer Importliste ist.
 
    `import AEPMessaging`
@@ -180,6 +180,7 @@ Der SDK Event Hub veröffentlicht und empfängt Ereignisdaten von registrierten 
 1. Im Bildschirm **[!UICONTROL Kampagne erstellen]**:
    1. Wählen Sie **[!UICONTROL In-App-Nachricht]** und wählen Sie eine Programmoberfläche aus der Liste **[!UICONTROL Programmoberfläche]**, z. B. **[!DNL Luma Mobile App]**.
    1. Wählen Sie **[!UICONTROL Erstellen]**
+
       ![Kampagneneigenschaften](assets/ajo-campaign-properties.png)
 1. Geben Sie im Bildschirm der Kampagnendefinition unter **[!UICONTROL Eigenschaften]** einen **[!UICONTROL Namen]** für die Kampagne, z. B. `Luma - In-App Messaging Campaign`, und einen **[!UICONTROL Beschreibung]** z. B. `In-app messaging campaign for Luma app` ein.
    ![Kampagnenname](assets/ajo-campaign-properties-name.png)
@@ -191,6 +192,7 @@ Der SDK Event Hub veröffentlicht und empfängt Ereignisdaten von registrierten 
    4. Geben Sie **[!UICONTROL Schließen]** als **[!UICONTROL Schaltflächen-#1 (primär)]** ein.
    5. Beachten Sie, wie die Vorschau aktualisiert wird.
    6. Wählen Sie **[!UICONTROL Zum Aktivieren überprüfen]** aus.
+
       ![In-App-Editor](assets/ajo-in-app-editor.png)
 1. Wählen **[!UICONTROL im Bildschirm Zu aktivierende Überprüfung (Luma - In-App-Messaging-Kampagne)]** die Option ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) in der Kachel **[!UICONTROL Zeitplan]** aus.
    ![Zeitplan überprüfen, Zeitplan auswählen](assets/ajo-review-select-schedule.png)
@@ -199,6 +201,7 @@ Der SDK Event Hub veröffentlicht und empfängt Ereignisdaten von registrierten 
    1. Um das **[!UICONTROL Anwendungsstartereignis“ zu entfernen]** wählen Sie ![Schließen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) aus.
    1. Verwenden Sie ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Bedingung hinzufügen]** wiederholt, um die folgende Logik für &quot;**[!UICONTROL Meldung anzeigen, wenn]** zu erstellen.
    1. Klicken Sie auf **[!UICONTROL Fertig]**.
+
       ![Trigger-Logik](assets/ajo-trigger-logic.png)
 
    Sie haben eine Verfolgungsaktion definiert, bei der **[!UICONTROL Aktion]** gleich `in-app` ist und die **[!UICONTROL Kontextdaten]** mit der Aktion ein Schlüssel-Wert-Paar von `"showMessage" : "true"` ist.

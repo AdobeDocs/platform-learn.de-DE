@@ -59,7 +59,7 @@ So erstellen Sie einen neuen Identity-Namespace:
 
 Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinierte Identität (Luma CRM ID) aktualisieren, wenn sich der Benutzer bei der App anmeldet.
 
-1. Navigieren Sie im Xcode-Projekt-]**zu **[!DNL Luma]**>**[!DNL Luma]**>**[!DNL Utils]**>**[!UICONTROL  MobileSDK) und suchen Sie nach der Implementierung der `func updateIdentities(emailAddress: String, crmId: String)`. Fügen Sie der Funktion den folgenden Code hinzu.
+1. Navigieren Sie im Xcode-Projekt-**zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>**&#x200B;[!DNL Utils]&#x200B;**>** MobileSDK) und suchen Sie nach der Implementierung der `func updateIdentities(emailAddress: String, crmId: String)`. Fügen Sie der Funktion den folgenden Code hinzu.
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -118,7 +118,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 
 Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity)-API verwenden, um die Identität aus der gespeicherten Client-seitigen Identitätszuordnung zu entfernen. Die Identitätserweiterung stoppt das Senden der Kennung an das Edge Network. Bei Verwendung dieser API wird die Kennung nicht aus dem serverseitigen Identitätsdiagramm entfernt. Weitere [ zu Identitätsdiagrammen finden Sie ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) „Anzeigen von Identitätsdiagrammen“.
 
-1. Navigieren Sie im Xcode-Projekt-]**zu **[!DNL Luma]**>**[!DNL Luma]**>**[!DNL Utils]**>**[!UICONTROL  MobileSDK) und fügen Sie den folgenden Code zur `func removeIdentities(emailAddress: String, crmId: String)` hinzu:
+1. Navigieren Sie im Xcode-Projekt-**zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>**&#x200B;[!DNL Utils]&#x200B;**>** MobileSDK) und fügen Sie den folgenden Code zur `func removeIdentities(emailAddress: String, crmId: String)` hinzu:
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults

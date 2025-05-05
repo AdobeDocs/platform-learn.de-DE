@@ -54,6 +54,7 @@ Wenn Sie keine für Sie definierten Schritte benötigen, gehen Sie zu und Sie si
    1. **Ereignistyp** kann je nach Ihrer Implementierung DOM-fähig sein
    1. Erweitern Sie die **Erweiterte Optionen**
    1. Legen Sie **Reihenfolge** auf eine niedrigere Zahl als Ihre anderen Regeln fest, sodass sie zuerst ausgeführt werden.
+
       ![Globales Variablenereignis konfigurieren](assets/configure-global-variable-event.jpg)
       >[!NOTE]
       >

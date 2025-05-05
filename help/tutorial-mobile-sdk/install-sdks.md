@@ -85,7 +85,7 @@ Tun Sie dasselbe für **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[
 
 ## AppDelegate aktualisieren
 
-Navigieren Sie im Xcode-Projekt **Navigator zu **[!DNL Luma]**>**[!DNL Luma]**>** AppDelegate.
+Navigieren Sie im Xcode-Projekt **Navigator zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>** AppDelegate.
 
 1. Ersetzen Sie den `@AppStorage`-Wert, der für `environmentFileId` auf den Datei-ID-Wert der Entwicklungsumgebung `YOUR_ENVIRONMENT_ID_GOES_HERE` ist, den Sie von Tags in [Installationsanweisungen für SDK generieren](configure-tags.md#generate-sdk-install-instructions) abgerufen haben.
 

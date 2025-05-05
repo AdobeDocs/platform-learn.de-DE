@@ -152,7 +152,7 @@ Klicken Sie auf **Weiter**.
 
 Jetzt müssen Sie die Spaltenüberschriften aus Ihrer CSV-Datei einer XDM-Eigenschaft in Ihrem **[!UICONTROL Demosystem - Profildatensatz für CRM)]**.
 
-Adobe Experience Platform hat bereits einige Vorschläge für Sie unterbreitet, indem versucht wurde, die [!UICONTROL Source-Attribute] mit den [!UICONTROL Zielschemafeldern“ ].
+Adobe Experience Platform hat bereits einige Vorschläge für Sie unterbreitet, indem versucht wurde, die [!UICONTROL Source-Attribute] mit den [!UICONTROL Zielschemafeldern“ &#x200B;].
 
 >[!NOTE]
 >
@@ -194,7 +194,7 @@ Das Source-Schemafeld **email** sollte mit dem Zielfeld **personalEmail.address)
 
 #### crmid
 
-Das Source-Schemafeld **crmid** sollte mit dem Zielfeld **`--aepTenantId--`.identification.core.crmId} verknüpft**.
+Das Source-Schemafeld **crmid** sollte mit dem Zielfeld **`--aepTenantId--`.identification.core.crmId&rbrace; verknüpft**.
 
 ![Datenaufnahme](./images/tfemail1.png)
 

@@ -198,7 +198,7 @@ Sie sollten dann etwas wie das folgende haben:
 
 ![Kafka](./images/kc21.png)
 
-Kopieren Sie als Nächstes Ihr vollständiges Erlebnisereignis in die Zwischenablage. Der Leerraum Ihrer JSON-Payload muss entfernt werden, und wir werden ein Online-Tool verwenden, um dies zu tun. Gehen Sie dazu zu [](http://jsonviewer.stack.hu/)http://jsonviewer.stack.hu/.
+Kopieren Sie als Nächstes Ihr vollständiges Erlebnisereignis in die Zwischenablage. Der Leerraum Ihrer JSON-Payload muss entfernt werden, und wir werden ein Online-Tool verwenden, um dies zu tun. Gehen Sie dazu zu [&#128279;](http://jsonviewer.stack.hu/)http://jsonviewer.stack.hu/.
 
 Fügen Sie Ihr Erlebnisereignis in den Editor ein und klicken Sie auf **Leerzeichen entfernen**.
 

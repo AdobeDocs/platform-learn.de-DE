@@ -114,7 +114,7 @@ Jetzt müssen Sie Ihre Datensätze aktivieren, damit sie Teil des Echtzeit-Kunde
 Öffnen Sie Ihre `--aepUserLdap-- - Demo System - Profile Dataset for Website`, indem Sie darauf klicken.
 
 Suchen Sie das [!UICONTROL Profil] Umschalter-Symbol auf der rechten Seite des Bildschirms.
-Klicken Sie auf [!UICONTROL  Umschalter ]Profil“, um diesen Datensatz für &quot;[!UICONTROL &quot; ] aktivieren.
+Klicken Sie auf [!UICONTROL &#x200B; Umschalter &#x200B;]Profil“, um diesen Datensatz für &quot;[!UICONTROL &quot; &#x200B;] aktivieren.
 
 ![Datenaufnahme](./images/ds1.png)
 
@@ -122,11 +122,11 @@ Klicken Sie **[!UICONTROL Aktivieren]**.
 
 ![Datenaufnahme](./images/ds3.png)
 
-Ihr Datensatz ist jetzt für &quot;[!UICONTROL &quot; ].
+Ihr Datensatz ist jetzt für &quot;[!UICONTROL &quot; &#x200B;].
 
 Kehren Sie zur Datensatzübersicht zurück und öffnen Sie Ihre `--aepUserLdap-- - Demo System - Event Dataset` für die -Website, indem Sie darauf klicken.
 
-Suchen Sie das [!UICONTROL Profil] Umschalter-Symbol auf der rechten Seite des Bildschirms. Klicken Sie auf [!UICONTROL  Umschalter ]Profil[!UICONTROL , um ] zu aktivieren.
+Suchen Sie das [!UICONTROL Profil] Umschalter-Symbol auf der rechten Seite des Bildschirms. Klicken Sie auf [!UICONTROL &#x200B; Umschalter &#x200B;]Profil[!UICONTROL , um &#x200B;] zu aktivieren.
 
 ![Datenaufnahme](./images/ds4.png)
 
@@ -134,7 +134,7 @@ Klicken Sie **[!UICONTROL Aktivieren]**.
 
 ![Datenaufnahme](./images/ds5.png)
 
-Ihr Datensatz ist jetzt für &quot;[!UICONTROL &quot; ].
+Ihr Datensatz ist jetzt für &quot;[!UICONTROL &quot; &#x200B;].
 
 Nächster Schritt: [1.2.4 Datenaufnahme aus Offline-Quellen](./ex4.md)
 

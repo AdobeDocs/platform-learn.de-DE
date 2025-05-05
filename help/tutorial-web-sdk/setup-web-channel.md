@@ -99,7 +99,7 @@ So konfigurieren Sie Adobe Journey Optimizer im Datenstrom:
 
    ![Datenstrom bearbeiten](assets/web-channel-edit-datastream.png)
 
-1. Aktivieren Sie das Kontrollkästchen **** Adobe Journey Optimizer.
+1. Aktivieren Sie das Kontrollkästchen **&#x200B;**&#x200B;Adobe Journey Optimizer.
 
    ![Kontrollkästchen AJO aktivieren](assets/web-channel-check-ajo-box.png)
 
@@ -145,7 +145,7 @@ So erstellen Sie eine Beispielkampagne:
    >
    > Schema, Datensätze und Zielgruppen können auch in der Journey Optimizer-Benutzeroberfläche erstellt werden, da sie alle gängige Experience Platform-Konstrukte sind.
 
-1. Navigieren Sie im linken Navigationsbereich zu {0 ]**JourneyManagement >**[!UICONTROL  Kampagnen ]**.**[!UICONTROL 
+1. Navigieren Sie im linken Navigationsbereich zu &lbrace;0 **JourneyManagement >**&#x200B;[!UICONTROL &#x200B; Kampagnen &#x200B;]&#x200B;**.**
 1. Klicken **[!UICONTROL oben]** auf „Kampagne erstellen“.
 1. Geben Sie im Abschnitt **[!UICONTROL Eigenschaften]** an, wann Sie die Kampagne ausführen möchten. Wählen Sie für den Anwendungsfall „Treueprämien“ die Option **Geplant**.
 

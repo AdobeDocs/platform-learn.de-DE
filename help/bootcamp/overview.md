@@ -32,7 +32,7 @@ Personalisierung in jedem Maßstab beginnt damit, dass wir verstehen, was verbes
 
 :00: Pause
 
-12. :15: der Lösungsarchitektur (Whiteboard)
+&#x200B;12. :15: der Lösungsarchitektur (Whiteboard)
 
 13:00: Mittagessen
 

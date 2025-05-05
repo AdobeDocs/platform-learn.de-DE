@@ -77,7 +77,7 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über ein Adobe-Konto und d
 
 ## Updates
 
-* 24. April 2024: Wichtige Updates, einschließlich des Hinzufügens von „Variable festlegen“/„Variable aktualisieren“, Aufspaltungs-Personalisierungs- und Analytics-Anfragen, Journey Optimizer-Lektionen
+* &#x200B;24. April 2024: Wichtige Updates, einschließlich des Hinzufügens von „Variable festlegen“/„Variable aktualisieren“, Aufspaltungs-Personalisierungs- und Analytics-Anfragen, Journey Optimizer-Lektionen
 
 ## Laden der Luma-Website
 

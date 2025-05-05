@@ -144,8 +144,10 @@ Die neue, leere Feldergruppe wird Ihrem Schema hinzugefügt. Mit den Schaltfläc
    1. **[!UICONTROL Anzeigename]**: `System Identifier`
    1. **[!UICONTROL type]**: **[!UICONTROL object]**
    1. Wählen Sie im **[!UICONTROL Feldergruppe]** die Feldergruppe **Luma-Identitätsprofil** aus, die wir erstellt haben.
+
       ![Neue Feldergruppe hinzufügen](assets/schemas-loyalty-addSystemIdentifier.png)
    1. Wählen Sie **[!UICONTROL Übernehmen]**
+
       ![Anwenden neuer Feldeigenschaften](assets/schemas-loyalty-applySystemIdentifier.png)
 
 Fügen Sie nun zwei Felder unter dem `systemIdentifier` hinzu:
@@ -349,7 +351,7 @@ Zunächst müssen wir ein Schema für den Produktkatalog von Luma mithilfe einer
 1. Klicken Sie auf **[!UICONTROL Schaltfläche]** Klasse erstellen“
 1. Benennen Sie ihn `Luma Product Catalog Class`
 1. Belassen Sie **[!UICONTROL Verhalten]** als **[!UICONTROL Eintrag]**
-1. Klicken Sie auf **[!UICONTROL Schaltfläche]**Erstellen“.
+1. Klicken Sie auf **[!UICONTROL Schaltfläche]**&#x200B;Erstellen“.
    ![Neue Klasse erstellen](assets/schemas-productClass.png)
 1. Die **Luma-Produktkatalogklasse** die Sie erstellt haben, wird in der unten stehenden Tabelle „Klassen“ angezeigt. Stellen Sie sicher, dass die Klasse ausgewählt ist, und klicken Sie dann auf **[!UICONTROL Weiter]**.
    ![Neue Klasse hinzugefügt](assets/schemas-productClassSelected.png)

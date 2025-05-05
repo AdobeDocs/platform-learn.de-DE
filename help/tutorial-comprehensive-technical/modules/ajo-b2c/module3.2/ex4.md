@@ -291,7 +291,7 @@ Ihr Journey ist jetzt vollständig konfiguriert. Klicken Sie auf **Veröffentlic
 
 ![Demo](./images/jodone.png)
 
-Klicken Sie erneut auf **** Publish.
+Klicken Sie erneut auf **&#x200B;**&#x200B;Publish.
 
 ![Demo](./images/jopublish1.png)
 

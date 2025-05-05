@@ -106,7 +106,7 @@ Klicken Sie auf die Regel, die zurückgegeben wird.
 
 Sehen wir uns die einzelnen Elemente an, aus denen diese Regel besteht.
 
-Für alle Regeln: Wenn ein angegebenes **[!UICONTROL Ereignis]** auftritt, werden die **[!UICONTROL Bedingungen]** ausgewertet, und dann werden bei ]**die angegebenen**[!UICONTROL  Aktionen“ ausgeführt.
+Für alle Regeln: Wenn ein angegebenes **[!UICONTROL Ereignis]** auftritt, werden die **[!UICONTROL Bedingungen]** ausgewertet, und dann werden bei **die angegebenen** Aktionen“ ausgeführt.
 
 ![Medien - Regel für Artikelseiten](./images/rule2.png)
 

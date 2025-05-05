@@ -127,7 +127,7 @@ Sie haben verschiedene Commerce-produktbezogene Aktionen in Ihrer App und möcht
 
 Um den wiederverwendbaren Versand von Commerce-bezogenen Erlebnisereignissen zu implementieren, verwenden Sie eine dedizierte Funktion:
 
-1. Navigieren Sie im Xcode-Projekt-]**zu **[!DNL Luma]**>**[!DNL Luma]**>**[!DNL Utils]**>**[!UICONTROL  MobileSDK) und fügen Sie Folgendes zur `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` hinzu.
+1. Navigieren Sie im Xcode-Projekt-**zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>**&#x200B;[!DNL Utils]&#x200B;**>** MobileSDK) und fügen Sie Folgendes zur `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` hinzu.
 
    ```swift
    // Set up a data dictionary, create an experience event and send the event.
@@ -262,7 +262,7 @@ Angenommen, Sie möchten Bildschirmansichten und Interaktionen in der App selbst
 
 Erneut implementieren wir diesen Code in Ihrem Xcode-Projekt.
 
-1. Zur Vereinfachung definieren Sie zwei Funktionen in **[!UICONTROL MobileSDK]**. Navigieren Sie in Ihrem Xcode-Projekt ]**Navigator zu **[!DNL Luma]**>**[!DNL Luma]**>**[!DNL Utils]**>**[!UICONTROL  MobileSDK.
+1. Zur Vereinfachung definieren Sie zwei Funktionen in **[!UICONTROL MobileSDK]**. Navigieren Sie in Ihrem Xcode-Projekt **Navigator zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>**&#x200B;[!DNL Utils]&#x200B;**>** MobileSDK.
 
    1. Eines für App-Interaktionen. Fügen Sie den folgenden Code zur `func sendAppInteractionEvent(actionName: String)` hinzu:
 

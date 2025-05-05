@@ -140,7 +140,7 @@ Gehen Sie im linken Menü zu **Ziele** und dann zu **Katalog**. Anschließend se
 
 ![RTCDP](./images/rtcdpmenudest1.png)
 
-Klicken Sie auf **Cloud-Speicher** und dann auf der Karte {6 **Amazon S3** auf die Schaltfläche Einrichten **(oder** Zielgruppen aktivieren **, je nach Ihrer Umgebung).**
+Klicken Sie auf **Cloud-Speicher** und dann auf der Karte &lbrace;6 **Amazon S3** auf die Schaltfläche Einrichten **(oder** Zielgruppen aktivieren **, je nach Ihrer Umgebung).**
 
 ![RTCDP](./images/rtcdp2.png)
 

@@ -42,7 +42,7 @@ ht-degree: 25%
 + Einverständnisverwaltungs-{#consent-management}
    + [Einrichten des Einverständnisses](setup-consent.md)
 
-+ {#event-forwarding} der Ereignisweiterleitung
++ der Ereignisweiterleitung{#event-forwarding}
    + [Einrichten der Ereignisweiterleitung](setup-event-forwarding.md)
 
 + [Zusammenfassung](conclusion.md)

@@ -90,7 +90,7 @@ Rufen Sie als Nächstes eine beliebige Seite der Demo-Website auf, z. B. die Kat
 
 ![AEP Debugger AEP Web SDK-Erweiterung](./images/validate4.png)
 
-Klicken Sie jetzt im linken Navigationsbereich auf ]**0}Experience Platform Web SDK, um die**[!UICONTROL  Netzwerkanfragen“ ]**.**[!UICONTROL 
+Klicken Sie jetzt im linken Navigationsbereich auf **0&rbrace;Experience Platform Web SDK, um die**&#x200B;[!UICONTROL &#x200B; Netzwerkanfragen“ &#x200B;]&#x200B;**.**
 
 Jede Anfrage enthält eine **[!UICONTROL Ereignis]**-Zeile.
 

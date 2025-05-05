@@ -42,7 +42,7 @@ Aus Sicht des Schemas betrachten wir dies als eine **Klasse**. Die Frage: **Wer 
 
 Wenn Sie also ein XDM-Schema erstellen, um die Antwort auf „Wer **dieser Kunde?** müssen Sie zunächst ein Schema erstellen und definieren, das auf die Klasse „XDM Individual Profile **[!UICONTROL verweist]**.
 
-Um anzugeben, welche Art von Antworten auf diese Frage gegeben werden können, müssen Sie [!UICONTROL Feldergruppen“ ]. [!UICONTROL Feldergruppen] sind Erweiterungen der Profile-Klasse und haben sehr spezifische Konfigurationen. Demografische Informationen wie Vorname, Nachname, Geschlecht und Geburtstag sind beispielsweise Teil der [!UICONTROL Feldergruppe]: **[!UICONTROL Demografische Details]**.
+Um anzugeben, welche Art von Antworten auf diese Frage gegeben werden können, müssen Sie [!UICONTROL Feldergruppen“ &#x200B;]. [!UICONTROL Feldergruppen] sind Erweiterungen der Profile-Klasse und haben sehr spezifische Konfigurationen. Demografische Informationen wie Vorname, Nachname, Geschlecht und Geburtstag sind beispielsweise Teil der [!UICONTROL Feldergruppe]: **[!UICONTROL Demografische Details]**.
 
 Zweitens muss Ihr Unternehmen entscheiden, wie Sie diesen Kunden identifizieren. Im Falle Ihres Unternehmens kann die Hauptkennung eines bekannten Kunden eine bestimmte Kunden-ID sein, wie z. B. eine E-Mail-Adresse. Technisch gesehen gibt es jedoch andere Möglichkeiten, einen Kunden in Ihrem Unternehmen zu identifizieren, z. B. mithilfe einer Mobiltelefonnummer.
 In diesem Labor definieren wir die E-Mail-Adresse als primäre Kennung und die Telefonnummer als sekundäre Kennung.
@@ -102,7 +102,7 @@ Klicken Sie auf die Schaltfläche **+** unter **Feldergruppen**.
 
 Wählen Sie auf dem **[!UICONTROL Feldergruppe hinzufügen]** die Optionen [!UICONTROL Feldergruppe] **[!UICONTROL Demografische]**, **[!UICONTROL Persönliche Kontaktdetails]** und **[!UICONTROL Einverständnis und Voreinstellungen]**.
 
-Klicken Sie auf **[!UICONTROL Feldergruppen hinzufügen]**, um die [!UICONTROL Feldergruppe“ ] Schema hinzuzufügen.
+Klicken Sie auf **[!UICONTROL Feldergruppen hinzufügen]**, um die [!UICONTROL Feldergruppe“ &#x200B;] Schema hinzuzufügen.
 
 ![Datenaufnahme](./images/ppfd.png)
 
@@ -135,7 +135,7 @@ Sie haben jetzt diese Schemastruktur eingerichtet.
 
 ![Datenaufnahme](./images/schemastructurem.png)
 
-Ihre neue [!UICONTROL Feldergruppe] ist noch leer, sodass Sie jetzt Felder zu dieser [!UICONTROL Feldergruppe“ hinzufügen ].
+Ihre neue [!UICONTROL Feldergruppe] ist noch leer, sodass Sie jetzt Felder zu dieser [!UICONTROL Feldergruppe“ hinzufügen &#x200B;].
 Klicken Sie in der [!UICONTROL Feldergruppe]-Liste auf Ihre benutzerdefinierte [!UICONTROL Feldergruppe].
 
 ![Datenaufnahme](./images/schemastructurem.png)
@@ -271,7 +271,7 @@ Klicken Sie auf **[!UICONTROL Aktivieren]**, um dieses Schema für das Profil zu
 
 ![Datenaufnahme](./images/sureps.png)
 
-Ihr Schema ist jetzt so konfiguriert, dass es Teil des [!UICONTROL Echtzeit-Kundenprofils) ]. Klicken Sie auf **[!UICONTROL Speichern]**, um Ihr Schema zu speichern.
+Ihr Schema ist jetzt so konfiguriert, dass es Teil des [!UICONTROL Echtzeit-Kundenprofils) &#x200B;]. Klicken Sie auf **[!UICONTROL Speichern]**, um Ihr Schema zu speichern.
 
 ![Datenaufnahme](./images/sureyps.png)
 
@@ -285,7 +285,7 @@ Aus der Schemaperspektive betrachten wir dies als eine **[!UICONTROL Klasse]**. 
 
 Wenn Sie also ein [!UICONTROL XDM-Schema] erstellen, um die Antwort auf zu erfassen **„Was tut dieser Kunde?** müssen Sie zunächst ein Schema erstellen und definieren, das auf die Klasse „ExperienceEvent **[!UICONTROL verweist]**.
 
-Um anzugeben, welche Art von Antworten auf diese Frage gegeben werden können, müssen Sie &quot;[!UICONTROL &quot; ]. [!UICONTROL Feldergruppen] sind Erweiterungen der Klasse [!UICONTROL ExperienceEvent] und haben sehr spezifische Konfigurationen. Beispielsweise gehören Informationen darüber, welche Art von Produkten ein Kunde angesehen oder zum Warenkorb hinzugefügt hat, zur [!UICONTROL Feldergruppe] **Commerce Details**.
+Um anzugeben, welche Art von Antworten auf diese Frage gegeben werden können, müssen Sie &quot;[!UICONTROL &quot; &#x200B;]. [!UICONTROL Feldergruppen] sind Erweiterungen der Klasse [!UICONTROL ExperienceEvent] und haben sehr spezifische Konfigurationen. Beispielsweise gehören Informationen darüber, welche Art von Produkten ein Kunde angesehen oder zum Warenkorb hinzugefügt hat, zur [!UICONTROL Feldergruppe] **Commerce Details**.
 
 Zweitens muss Ihr Unternehmen entscheiden, wie Sie das Verhalten dieses Kunden identifizieren. Da wir über Interaktionen auf einer Website sprechen, ist es möglich, dass Ihr Unternehmen den Kunden kennt, aber es ist ebenso möglich, dass ein unbekannter, anonymer Besucher auf der Website aktiv ist. Wir können also keine Kennung wie eine E-Mail-Adresse verwenden. In diesem Fall entscheidet sich Ihr Unternehmen wahrscheinlich dafür, die [!UICONTROL Experience Cloud ID (ECID)] als primäre Kennung zu verwenden.
 
@@ -297,7 +297,7 @@ Nach dem Login landen Sie auf der Homepage von Adobe Experience Platform.
 
 ![Datenaufnahme](./images/home.png)
 
-Bevor Sie fortfahren, müssen Sie eine **[!UICONTROL Sandbox“]**. Die [!UICONTROL  auszuwählende ]Sandbox“ heißt ``--aepSandboxName--``. Nach Auswahl der entsprechenden Sandbox wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten Sandbox.
+Bevor Sie fortfahren, müssen Sie eine **[!UICONTROL Sandbox“]**. Die [!UICONTROL &#x200B; auszuwählende &#x200B;]Sandbox“ heißt ``--aepSandboxName--``. Nach Auswahl der entsprechenden Sandbox wird der Bildschirm geändert und Sie befinden sich nun in Ihrer dedizierten Sandbox.
 
 ![Datenaufnahme](./images/sb1.png)
 
@@ -354,7 +354,7 @@ Sie erstellen jetzt Ihre eigene benutzerdefinierte [!UICONTROL Feldergruppe] und
 
 Eine [!UICONTROL Feldergruppe] ist mit einer [!UICONTROL Klasse] verknüpft, was bedeutet, dass Sie die zuvor erstellte [!UICONTROL Feldergruppe] nicht einfach wiederverwenden können.
 
-Klicken Sie auf die Schaltfläche **[!UICONTROL + Hinzufügen]**, um mit dem Hinzufügen einer [!UICONTROL Feldergruppe“ ].
+Klicken Sie auf die Schaltfläche **[!UICONTROL + Hinzufügen]**, um mit dem Hinzufügen einer [!UICONTROL Feldergruppe“ &#x200B;].
 
 ![Datenaufnahme](./images/addmixinee2.png)
 
@@ -443,7 +443,7 @@ Beispielsweise sind die Felder **[!UICONTROL _id]** und **[!UICONTROL timestamp]
 - _id muss eine eindeutige ID für eine bestimmte Datenaufnahme enthalten
 - Zeitstempel muss der Zeitstempel dieses Treffers im Format **`"YYYY-MM-DDTHH:MM:SSSZ"`** sein, wie zum Beispiel: **`"2024-11-18T07:20:000Z"`**
 
-Sie haben jetzt ein Schema definiert, vorhandene und neu erstellte [!UICONTROL Feldergruppen“ verknüpft ] definierte Kennungen.
+Sie haben jetzt ein Schema definiert, vorhandene und neu erstellte [!UICONTROL Feldergruppen“ verknüpft &#x200B;] definierte Kennungen.
 
 Die letzte Möglichkeit besteht darin, das Schema zu aktivieren, das mit dem (Profil **[!UICONTROL verknüpft]**.
 Wenn Sie Ihr Schema für [!UICONTROL Profile] aktivieren, stellen Sie sicher, dass alle Daten, die mit diesem Schema an Adobe Experience Platform gesendet werden, Teil des Echtzeit-Kundenprofils sind, wodurch sichergestellt wird, dass alle diese Daten in Echtzeit für Abfragen, Segmentierung und Aktivierung verwendet werden können.
@@ -452,7 +452,7 @@ Klicken Sie dazu auf den Namen Ihres Schemas.
 
 ![Datenaufnahme](./images/schemastructureeee.png)
 
-Auf der rechten Registerkarte Ihres Schemas sehen Sie einen **[!UICONTROL Profil]-Umschalter** der derzeit deaktiviert ist. Klicken Sie auf [!UICONTROL  Umschalter ]Profil“, um ihn zu aktivieren.
+Auf der rechten Registerkarte Ihres Schemas sehen Sie einen **[!UICONTROL Profil]-Umschalter** der derzeit deaktiviert ist. Klicken Sie auf [!UICONTROL &#x200B; Umschalter &#x200B;]Profil“, um ihn zu aktivieren.
 
 ![Datenaufnahme](./images/upswitcheree.png)
 

@@ -45,19 +45,19 @@ Erstellen wir eine Sandbox:
 
 1. Melden Sie sich bei der [Adobe Experience Platform](https://experience.adobe.com/platform)-Benutzeroberfläche an
 1. Navigieren Sie **[!UICONTROL linken Navigationsbereich zu]** Sandboxes“
-1. Wählen **[!UICONTROL oben rechts]**Sandbox erstellen“ aus
+1. Wählen **[!UICONTROL oben rechts]**&#x200B;Sandbox erstellen“ aus
    ![Wählen Sie Sandbox erstellen aus](assets/sandbox-createSandbox.png)
 
 1. Wählen Sie **[!UICONTROL Entwicklung]** als **[!UICONTROL Typ]**
 1. Benennen Sie Ihre Sandbox-`luma-tutorial` (fügen Sie ggf. Ihren Namen am Ende hinzu)
 1. Titel des Tutorial-`Luma Tutorial` (Erwägen Sie, am Ende Ihren Namen hinzuzufügen)
-1. Klicken Sie auf **[!UICONTROL Schaltfläche]**Erstellen“
+1. Klicken Sie auf **[!UICONTROL Schaltfläche]**&#x200B;Erstellen“
    ![Erstellen Sie Ihre Sandbox](assets/sandbox-nameSandbox.png)
    >[!NOTE]
    >
    >Sie können zwar beliebige Werte für Ihren Sandbox-Namen und -Titel verwenden, es wird jedoch empfohlen, an den vorgeschlagenen Werten festzuhalten, da wir im gesamten Tutorial auf diese Beschriftungen verweisen werden. Wenn mehrere Personen in Ihrer Organisation dieses Tutorial abschließen, sollten Sie erwägen, Ihren Namen am Ende des Sandbox-Titels und -Namens hinzuzufügen, z. B. luma-tutorial-ignatiusjreilly.
 
-Die Erstellung von Sandboxes dauert etwa 30 Sekunden. Während dieser Zeit wird der Status [!UICONTROL Wird erstellt] angezeigt. Wenn die Sandbox vollständig erstellt ist, wird sie als &quot;[!UICONTROL &quot; ]:
+Die Erstellung von Sandboxes dauert etwa 30 Sekunden. Während dieser Zeit wird der Status [!UICONTROL Wird erstellt] angezeigt. Wenn die Sandbox vollständig erstellt ist, wird sie als &quot;[!UICONTROL &quot; &#x200B;]:
 ![Aktiver Status](assets/sandbox-active.png)
 
 Warten Sie, bis Ihre Sandbox &quot;[!UICONTROL aktiv] ist, bevor Sie mit der nächsten Übung fortfahren.

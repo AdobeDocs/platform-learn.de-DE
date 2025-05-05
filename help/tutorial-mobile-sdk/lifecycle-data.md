@@ -53,7 +53,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Jetzt können Sie Ihr Projekt aktualisieren, um die Lebenszyklus-Ereignisse zu registrieren.
 
-1. Navigieren Sie im Xcode-Projekt ]**Navigator zu **[!DNL Luma]**>**[!DNL Luma]**>**[!UICONTROL  SceneDelegate.
+1. Navigieren Sie im Xcode-Projekt **Navigator zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>** SceneDelegate.
 
 1. Wenn Ihre App nach dem Start in einem Hintergrundzustand fortgesetzt wird, ruft iOS möglicherweise Ihre `sceneWillEnterForeground:`-Delegatmethode auf, und an dieser Stelle möchten Sie ein Lebenszyklusstartereignis Trigger haben. Fügen Sie diesen Code zu `func sceneWillEnterForeground(_ scene: UIScene)` hinzu:
 
@@ -73,7 +73,7 @@ Jetzt können Sie Ihr Projekt aktualisieren, um die Lebenszyklus-Ereignisse zu r
 
 1. Lesen Sie den Abschnitt [Setup-Anweisungen](assurance.md#connecting-to-a-session), um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Senden Sie die App in den Hintergrund. Suchen Sie in **[!UICONTROL Benutzeroberfläche von Assurance nach]** LifecyclePause).
-1. App in den Vordergrund bringen. Suchen Sie in **[!UICONTROL Benutzeroberfläche von Assurance nach]**LifecycleResume“-Ereignissen.
+1. App in den Vordergrund bringen. Suchen Sie in **[!UICONTROL Benutzeroberfläche von Assurance nach]**&#x200B;LifecycleResume“-Ereignissen.
    ![Lebenszyklus validieren](assets/lifecycle-lifecycle-assurance.png)
 
 
@@ -93,6 +93,7 @@ In der vorherigen Übung werden die Vordergrund- und Hintergrundereignisse an Ad
    1. Wählen Sie **[!UICONTROL Mobile Core]** als **[!UICONTROL Erweiterung]**.
    1. Wählen Sie **[!UICONTROL Vordergrund]** als **[!UICONTROL Ereignistyp]**.
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+
       ![Konfiguration von Regelereignissen](assets/rule-event-configuration.png)
 1. Zurück im Bildschirm **[!UICONTROL Regel erstellen]** wählen Sie ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Hinzufügen]** neben **[!UICONTROL Mobile Core - Vordergrund]**.
    ![Konfiguration des nächsten Ereignisses](assets/rule-event-configuration-next.png)
@@ -100,6 +101,7 @@ In der vorherigen Übung werden die Vordergrund- und Hintergrundereignisse an Ad
    1. Wählen Sie **[!UICONTROL Mobile Core]** als **[!UICONTROL Erweiterung]**.
    1. Wählen Sie **[!UICONTROL Hintergrund]** als **[!UICONTROL Ereignistyp]**.
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+
       ![Konfiguration von Regelereignissen](assets/rule-event-configuration-background.png)
 1. Wählen Sie im Bildschirm **[!UICONTROL Regel erstellen]** unter **[!UICONTROL ACTIONS]** die Option ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Hinzufügen]**.
    ![Aktion zum Hinzufügen von Regeln](assets/rule-action-button.png)
@@ -107,6 +109,7 @@ In der vorherigen Übung werden die Vordergrund- und Hintergrundereignisse an Ad
    1. Wählen Sie **[!UICONTROL Adobe Experience Edge Network]** als **[!UICONTROL Erweiterung]** aus.
    1. Wählen Sie **[!UICONTROL Ereignis an Edge Network weiterleiten]** als **[!UICONTROL Aktionstyp]**.
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+
       ![Konfiguration von Regelaktionen](assets/rule-action-configuration.png)
 1. Wählen Sie **[!UICONTROL In Bibliothek speichern]**.
    ![Regel - In Bibliothek speichern](assets/rule-save-to-library.png)

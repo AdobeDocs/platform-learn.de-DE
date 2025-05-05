@@ -138,7 +138,7 @@ So erstellen Sie eine Datenansicht:
 
         ![CJA-Datenansicht 2a](assets/cja-dataview-2a.png)
 
-      - Wechseln Sie zum Schemafeld in ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignis-]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Beispiel: ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignisdatensätze]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)![ Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)****![](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) Chevron![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **** productListAdds![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
+      - Wechseln Sie zum Schemafeld in ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignis-]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Beispiel: ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignisdatensätze]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)![ Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)**&#x200B;**![](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) Chevron![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **&#x200B;**&#x200B;productListAdds![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
 
         ![CJA-Datenansicht 2a](assets/cja-dataview-2b.png)
 
@@ -213,7 +213,7 @@ Sie haben Ihre Datenansicht definiert und alles ist bereit, um mit der Erstellun
 
 ## Erstellen eines Projekts
 
-Workspace-Projekte werden in Customer Journey Analytics zum Erstellen von Berichten und Visualisierungen verwendet. Es gibt viele Möglichkeiten, umfassende Berichte und ansprechende Visualisierungen zu erstellen, aber dies überschreitet den Rahmen dieses Tutorials. Workspace Weitere Informationen finden Sie unter {](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview)}Übersicht über [ und ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project)Neues Projekt erstellen“.[
+Workspace-Projekte werden in Customer Journey Analytics zum Erstellen von Berichten und Visualisierungen verwendet. Es gibt viele Möglichkeiten, umfassende Berichte und ansprechende Visualisierungen zu erstellen, aber dies überschreitet den Rahmen dieses Tutorials. Workspace Weitere Informationen finden Sie unter {[&#128279;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview)}Übersicht über [ und ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project)Neues Projekt erstellen“.
 
 In diesem Abschnitt der Lektion erstellen Sie ein Projekt, das Berichte und Visualisierungen zu folgenden Themen anzeigt:
 
@@ -279,7 +279,7 @@ So erstellen Sie Berichte zu den in der App angezeigten Bildschirmen:
    ![CJA-Projekte 7](assets/cja-projects-7.png)
 Ihre Freiformtabelle zeigt jetzt für jeden Tag für Ihren ausgewählten Zeitraum eine Bildschirmansicht an. Sie möchten jedoch die Anzahl der Bildschirmansichten für jeden der verschiedenen in der App verwendeten Bildschirme anzeigen.
 
-1. Dimension Um die Komponentenliste **** anzuzeigen, wählen Sie ![Cross](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) aus, um den Filter ![Ereignis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL Metriken]** aus der Komponentenleiste zu entfernen.
+1. Dimension Um die Komponentenliste **&#x200B;**&#x200B;anzuzeigen, wählen Sie ![Cross](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) aus, um den Filter ![Ereignis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL Metriken]** aus der Komponentenleiste zu entfernen.
    ![CJA-Projekt 8](assets/cja-projects-8.png)
 
 1. Wählen **[!UICONTROL Alle anzeigen]** unter der Liste **[!UICONTROL DIMENSIONEN]** aus.
@@ -305,7 +305,7 @@ Als Nächstes erstellen Sie eine Freiformtabelle, in der die Interaktion der Ben
 
 1. Benennen **[!UICONTROL Freiformtabelle (2))]** &quot;`App Interactions`&quot; um.
 
-1. Ziehen Sie die Metrik **[!UICONTROL App Interactions]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**hier (oder eine andere Komponente_)].
+1. Ziehen Sie die Metrik **[!UICONTROL App Interactions]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**&#x200B;hier (oder eine andere Komponente_)].
 
 1. Ziehen Sie die Dimension **[!UICONTROL App Interaction Name]** in die Kopfzeile **[!UICONTROL Day]**, um diese Dimension zu ersetzen.
 
@@ -339,7 +339,7 @@ Jetzt möchten Sie in einem separaten Bereich über in der App auftretende Comme
 
 1. Ziehen Sie die Metrik **[!UICONTROL Produktansichten]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**(oder eine andere Komponente)_].
 
-1. Ziehen Sie die Metrik **[!UICONTROL Produkt zu Listen hinzufügen]** rechts neben die Spalte **[!UICONTROL Produktansichten]**, um diese Spalte in die Freiformtabelle einzufügen. Stellen Sie sicher, ]**beim Einfügen der Spalte**[!UICONTROL + Hinzufügen (in Blau) angezeigt wird.
+1. Ziehen Sie die Metrik **[!UICONTROL Produkt zu Listen hinzufügen]** rechts neben die Spalte **[!UICONTROL Produktansichten]**, um diese Spalte in die Freiformtabelle einzufügen. Stellen Sie sicher, **beim Einfügen der Spalte**+ Hinzufügen (in Blau) angezeigt wird.
    ![CJA-Projekte 15](assets/cja-projects-15.png)
 
 1. Wiederholen Sie den vorherigen Schritt, um die Metrik **[!UICONTROL Für später speichern]** und die Metrik **[!UICONTROL Käufe]** zur Freiformtabelle hinzuzufügen.
@@ -390,7 +390,7 @@ Sie möchten berichten, wie viele Angebote und welche Angebote den Benutzern Ihr
 
 1. Benennen Sie die **[!UICONTROL Freiformtabelle]** in `Monthly Overview` um.
 
-1. Ziehen Sie die Metrik **[!UICONTROL Anzeige]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**(oder eine beliebige andere Komponente_) ].
+1. Ziehen Sie die Metrik **[!UICONTROL Anzeige]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**(oder eine beliebige andere Komponente_) &#x200B;].
 
 1. Ziehen Sie die Dimension **[!UICONTROL Monat]** per Drag-and-Drop auf die Spalte **[!UICONTROL Tag]**, um die Dimension zu ersetzen.
 
@@ -411,7 +411,7 @@ Sie möchten auch einen Bericht, der den Benutzern der App zeigt, welche Angebot
 
 1. Benennen **[!UICONTROL Freiformtabelle (2))]** &quot;`People`&quot; um.
 
-1. Ziehen Sie die Metrik **[!UICONTROL Personen]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**hier (oder eine beliebige andere Komponente_ ab)].
+1. Ziehen Sie die Metrik **[!UICONTROL Personen]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**&#x200B;hier (oder eine beliebige andere Komponente_ ab)].
 
 1. Ziehen Sie den **[!UICONTROL Aktivitätsnamen]** per Drag-and-Drop auf die Spalte **[!UICONTROL Tag]**, um die Dimension zu ersetzen.
 
