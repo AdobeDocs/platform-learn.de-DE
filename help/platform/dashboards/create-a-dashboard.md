@@ -17,7 +17,7 @@ ht-degree: 37%
 
 # Dashboard erstellen
 
-Erfahren Sie, wie Sie in Adobe Experience Platform ein Dashboard erstellen. Weitere Informationen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html).
+Erfahren Sie, wie Sie in Adobe Experience Platform ein Dashboard erstellen. Weitere Informationen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html?lang=de).
 
 >[!IMPORTANT]
 >

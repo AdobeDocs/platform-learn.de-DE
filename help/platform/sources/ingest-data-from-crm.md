@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Aufnehmen von Daten mithilfe von CRM-Quell-Connectoren
 
-Erfahren Sie, wie Sie ganz einfach durch einen Batch die Aufnahme von Daten aus CRM-Quellen in das Echtzeit-Kundenprofil und den Data Lake von Adobe Experience Platform nahtlos gestalten können. Eine detailliertere Produktdokumentation finden Sie unter [Customer Relationship Management (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) auf der Übersichtsseite zu Source Connectors.
+Erfahren Sie, wie Sie ganz einfach durch einen Batch die Aufnahme von Daten aus CRM-Quellen in das Echtzeit-Kundenprofil und den Data Lake von Adobe Experience Platform nahtlos gestalten können. Eine detailliertere Produktdokumentation finden Sie unter [Customer Relationship Management (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de#access-control-for-sources-in-data-ingestion) auf der Übersichtsseite zu Source Connectors.
 
 ## Standard-Workflow
 
@@ -32,6 +32,6 @@ Erfahren Sie, wie Sie den Quell-Connector für Salesforce CRM mithilfe des Vorla
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
 
 Weitere Informationen finden Sie in der folgenden Dokumentation:
-* [Salesforce erstellt eine Verbindungsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
-* [Erstellen eines Quellen-Datenflusses mithilfe von Vorlagen in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
+* [Salesforce erstellt eine Verbindungsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=de).
+* [Erstellen eines Quellen-Datenflusses mithilfe von Vorlagen in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=de#).
 

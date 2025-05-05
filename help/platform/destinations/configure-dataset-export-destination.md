@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie eine Verbindung einrichten und den Workflow für Datensatzexporte mithilfe eines Cloud Service-Ziels verwenden. Die Vorteile und Anwendungsfälle für diese Funktion werden ebenfalls behandelt.
 
-Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets).
+Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)

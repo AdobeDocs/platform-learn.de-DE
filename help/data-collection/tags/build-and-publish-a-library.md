@@ -16,6 +16,6 @@ ht-degree: 25%
 
 # Erstellen und Veröffentlichen einer Tag-Bibliothek
 
-Erfahren Sie, wie Sie eine Bibliothek in Ihrer Tag-Eigenschaft erstellen und Änderungen über Ihre Entwicklungs-, Staging- und Produktionsumgebungen übertragen. Erfahren Sie, wie Sie mehrere Entwicklungsumgebungen verwenden können, um mehrere Teams dabei zu unterstützen, die Eigenschaft in parallelen Arbeitsabläufen zu aktualisieren. Weitere Informationen finden Sie in der Dokumentation [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
+Erfahren Sie, wie Sie eine Bibliothek in Ihrer Tag-Eigenschaft erstellen und Änderungen über Ihre Entwicklungs-, Staging- und Produktionsumgebungen übertragen. Erfahren Sie, wie Sie mehrere Entwicklungsumgebungen verwenden können, um mehrere Teams dabei zu unterstützen, die Eigenschaft in parallelen Arbeitsabläufen zu aktualisieren. Weitere Informationen finden Sie in der Dokumentation [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28731/?learn=on&enablevpops)

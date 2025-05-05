@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Übersicht über die Streaming-Datenaufnahme
 
-Mit der Streaming-Aufnahme von Experience Platform können Sie sicherstellen, dass alle von Ihnen gesendeten Daten im Echtzeit-Kundenprofil verfügbar sind. Diese Daten können aus CRM- und ERP-Systemen oder aus jeder anderen Quelle erfasst werden, die über HTTP oder eine öffentliche Cloud-Streaming-Infrastruktur kommunizieren kann. Sie können diese Daten dann für die Echtzeit-Segmentierung und zur Aktivierung anderer Marketing-Prozesse verwenden. Weitere Informationen finden Sie in der Dokumentation zur [-Aufnahme](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/streaming/overview).
+Mit der Streaming-Aufnahme von Experience Platform können Sie sicherstellen, dass alle von Ihnen gesendeten Daten im Echtzeit-Kundenprofil verfügbar sind. Diese Daten können aus CRM- und ERP-Systemen oder aus jeder anderen Quelle erfasst werden, die über HTTP oder eine öffentliche Cloud-Streaming-Infrastruktur kommunizieren kann. Sie können diese Daten dann für die Echtzeit-Segmentierung und zur Aktivierung anderer Marketing-Prozesse verwenden. Weitere Informationen finden Sie in der Dokumentation zur [-Aufnahme](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/streaming/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)

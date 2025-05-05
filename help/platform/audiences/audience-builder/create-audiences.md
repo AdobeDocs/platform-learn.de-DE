@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # Erstellen von Zielgruppen
 
-Erfahren Sie, wie Sie in Adobe Experience Platform Zielgruppen erstellen. Erstellen Sie Zielgruppenregeln und wenden Sie sie auf Ihre Echtzeit-Kundenprofile an, um die Zielgruppen zu erstellen, die Kundenerlebnisse unterstützen. Eine ausführliche Produktdokumentation finden Sie unter [Erstellen eines Segments in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=de) und [Erstellen eines Segments mit API](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html).
+Erfahren Sie, wie Sie in Adobe Experience Platform Zielgruppen erstellen. Erstellen Sie Zielgruppenregeln und wenden Sie sie auf Ihre Echtzeit-Kundenprofile an, um die Zielgruppen zu erstellen, die Kundenerlebnisse unterstützen. Eine ausführliche Produktdokumentation finden Sie unter [Erstellen eines Segments in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=de) und [Erstellen eines Segments mit API](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=de).
 
 >[!NOTE]
 >

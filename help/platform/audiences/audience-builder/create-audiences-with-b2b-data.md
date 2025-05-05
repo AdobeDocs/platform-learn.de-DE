@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Kontozielgruppen für [!DNL B2B] und [!DNL B2P] erstellen und aktivieren
 
-Erfahren Sie mehr über die Funktionen von Account-Based Marketing in den [!DNL B2B] und [!DNL B2P] Editionen von [!DNL Real-Time Customer Data Platform], einschließlich der Erstellung und Aktivierung von Konto-Zielgruppen. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
+Erfahren Sie mehr über die Funktionen von Account-Based Marketing in den [!DNL B2B] und [!DNL B2P] Editionen von [!DNL Real-Time Customer Data Platform], einschließlich der Erstellung und Aktivierung von Konto-Zielgruppen. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on&enablevpops)
 

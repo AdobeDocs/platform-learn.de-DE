@@ -41,7 +41,7 @@ AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungs
 1. Inhalts-API für die Bereitstellung
    - Die AEM GraphQL-API unterstützt die Bereitstellung von Inhaltsfragmenten.
    - Die AEM Assets-REST-API unterstützt CRUD-Vorgänge für Inhaltsfragmente.
-   - Die direkte Bereitstellung von Inhalten ist auch mit dem [JSON-Export der Inhaltsfragment-Kernkomponente) ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en).
+   - Die direkte Bereitstellung von Inhalten ist auch mit dem [JSON-Export der Inhaltsfragment-Kernkomponente) ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de).
 
 ## Übung
 

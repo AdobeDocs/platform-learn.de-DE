@@ -17,6 +17,6 @@ ht-degree: 36%
 
 # Stack-Tag-Regeln
 
-Erfahren Sie, wie Sie Regeln in einer Tag-Eigenschaft stapeln. Beim Regeln-Stacking wird die `order`-Funktion in Tag-Regelereignissen verwendet, um Regeln zu sequenzieren und so skalierbare Tag-Implementierungen zu verwalten. Legen Sie einige Variablen in einer globalen Regel fest, fügen Sie Variablen in einer seitenspezifischen Regel hinzu und überschreiben Sie sie. Senden Sie dann die Daten an die gewünschte Marketing-Anwendung. Weitere Informationen zur Regelreihenfolge finden Sie in der Dokumentation [Regeln](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#rule-ordering) .
+Erfahren Sie, wie Sie Regeln in einer Tag-Eigenschaft stapeln. Beim Regeln-Stacking wird die `order`-Funktion in Tag-Regelereignissen verwendet, um Regeln zu sequenzieren und so skalierbare Tag-Implementierungen zu verwalten. Legen Sie einige Variablen in einer globalen Regel fest, fügen Sie Variablen in einer seitenspezifischen Regel hinzu und überschreiben Sie sie. Senden Sie dann die Daten an die gewünschte Marketing-Anwendung. Weitere Informationen zur Regelreihenfolge finden Sie in der Dokumentation [Regeln](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=de#rule-ordering) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)

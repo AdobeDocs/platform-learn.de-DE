@@ -14,6 +14,6 @@ ht-degree: 0%
 
 # Webinar: Entsperren Ihrer Marketing-Daten mit Ereignisweiterleitung
 
-Erfahren Sie mehr über die Anwendungsfälle und Funktionen der Ereignisweiterleitung in Adobe Experience Platform, z. B. die Verwaltung von Konversions-API-Aufrufen an Drittanbieterziele und das Senden von Ereignisdaten an Ihr Data Warehouse. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Erfahren Sie mehr über die Anwendungsfälle und Funktionen der Ereignisweiterleitung in Adobe Experience Platform, z. B. die Verwaltung von Konversions-API-Aufrufen an Drittanbieterziele und das Senden von Ereignisdaten an Ihr Data Warehouse. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434936?learn=on&enablevpops)

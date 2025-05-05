@@ -54,11 +54,11 @@ Um Ihre XDM-Daten aus dem Edge Network an Adobe Analytics zu senden, konfigurier
 
 ## Automatische Zuordnung
 
-Viele der XDM-Standardfelder werden automatisch Analytics-Variablen zugeordnet. Die vollständige Liste finden Sie [hier](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en).
+Viele der XDM-Standardfelder werden automatisch Analytics-Variablen zugeordnet. Die vollständige Liste finden Sie [hier](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=de).
 
 ### #1 - s.products
 
-Ein gutes Beispiel ist die [Variable „products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) die nicht mit Verarbeitungsregeln ausgefüllt werden kann. Bei einer XDM-Implementierung übergeben Sie alle erforderlichen Daten in `productListItems` und die `s.products` werden automatisch über die Analytics-Zuordnung gefüllt.
+Ein gutes Beispiel ist die [Variable „products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=de) die nicht mit Verarbeitungsregeln ausgefüllt werden kann. Bei einer XDM-Implementierung übergeben Sie alle erforderlichen Daten in `productListItems` und die `s.products` werden automatisch über die Analytics-Zuordnung gefüllt.
 
 Dieses Objekt:
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->Wenn `productListItems[].SKU` und `productListItems[].name` beide Daten enthalten, wird der Wert in `productListItems[].SKU` verwendet. Weitere Informationen finden [ unter „Analytics-Variablenzuordnung in Adobe Edge Experience ](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en)&quot;.
+>Wenn `productListItems[].SKU` und `productListItems[].name` beide Daten enthalten, wird der Wert in `productListItems[].SKU` verwendet. Weitere Informationen finden [ unter „Analytics-Variablenzuordnung in Adobe Edge Experience ](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=de)&quot;.
 
 
 ### #2 - scAdd
@@ -211,7 +211,7 @@ Um diese XDM-Kontextdaten Ihren Analytics-Daten in Ihrer Report Suite zuzuordnen
 
 ### Merchandising-eVars
 
-Wenn Sie [Merchandising-eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) in Ihrer Analytics-Einrichtung verwenden, um z. B. die Farbe von Produkten wie `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60` zu erfassen, müssen Sie Ihre XDM-Payload, die Sie unter &quot;[ von Ereignisdaten“ definiert haben](events.md) erweitern, um diese Merchandising-Informationen zu erfassen.
+Wenn Sie [Merchandising-eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=de) in Ihrer Analytics-Einrichtung verwenden, um z. B. die Farbe von Produkten wie `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60` zu erfassen, müssen Sie Ihre XDM-Payload, die Sie unter &quot;[ von Ereignisdaten“ definiert haben](events.md) erweitern, um diese Merchandising-Informationen zu erfassen.
 
 * In JSON:
 
@@ -301,7 +301,7 @@ So könnte eine Verarbeitungsregel, die diese Daten verwendet, aussehen:
 >Wenn Sie eine Verarbeitungsregel zum ersten Mal zuordnen, zeigt die Benutzeroberfläche die Kontextdatenvariablen aus dem XDM-Objekt nicht an. Um dies zu beheben, wählen Sie einen beliebigen Wert aus, speichern Sie und kehren Sie zur Bearbeitung zurück. Alle XDM-Variablen sollten jetzt angezeigt werden.
 
 
-Weitere Informationen zu Verarbeitungsregeln und Kontextdaten finden Sie [hier](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+Weitere Informationen zu Verarbeitungsregeln und Kontextdaten finden Sie [hier](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=de).
 
 >[!TIP]
 >

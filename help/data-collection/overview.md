@@ -28,11 +28,11 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrieren von Adobe Target zu Web SDK</strong>
     </a>
     </div>
@@ -60,17 +60,17 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
       <strong>Migrieren von Adobe Audience Manager zu Web SDK</strong>
     </div>
     <p>
-    <em>Ersetzen <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> oder <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">Server-seitige Weiterleitung aktualisieren</a></em>
+    <em>Ersetzen <a href="https://experienceleague.adobe.com/de/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> oder <a href="https://experienceleague.adobe.com/de/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">Server-seitige Weiterleitung aktualisieren</a></em>
     <p>
   </td>
 </tr>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
       <img alt="Migrieren von Target zu Mobile SDK auf Edge Network" src="assets/thumb_targetMobileSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
     <strong>Migrieren von Adobe Target zu Mobile SDK auf Edge Network</strong>
     </a>
     </div>
@@ -103,11 +103,11 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="In Mobile Apps implementieren" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>Implementieren von Experience Cloud in Mobile Apps</strong>
     </a>
     </div>
@@ -116,11 +116,11 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Implementieren veralteter Bibliotheken mit Tags</strong>
     </a>
     </div>

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Erstellen von Zusammenführungsrichtlinien
 
-In diesem Video wird gezeigt, wie Zusammenführungsrichtlinien in Adobe Experience Platform erstellt werden. Zusammenführungsrichtlinien sind die Regeln, mit denen Platform bestimmt, welche Daten verwendet und priorisiert werden, wenn Datensätze aus unterschiedlichen Quellen kombiniert werden, um Kundenprofile zu erstellen. Weitere Informationen finden Sie in der Dokumentation [ Zusammenführungsrichtlinien ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html).
+In diesem Video wird gezeigt, wie Zusammenführungsrichtlinien in Adobe Experience Platform erstellt werden. Zusammenführungsrichtlinien sind die Regeln, mit denen Platform bestimmt, welche Daten verwendet und priorisiert werden, wenn Datensätze aus unterschiedlichen Quellen kombiniert werden, um Kundenprofile zu erstellen. Weitere Informationen finden Sie in der Dokumentation [ Zusammenführungsrichtlinien ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)

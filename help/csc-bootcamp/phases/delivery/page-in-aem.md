@@ -176,7 +176,7 @@ Wenn Sie Adobe Commerce in AEM integrieren, können Sie eine allgemeine Produktd
 
 >[!NOTE]
 >
-> Möchten Sie mehr über Live Copies erfahren? Weitere Informationen finden Sie unter [Erstellen und Synchronisieren von Live Copies“.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=en)
+> Möchten Sie mehr über Live Copies erfahren? Weitere Informationen finden Sie unter [Erstellen und Synchronisieren von Live Copies“.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=de)
 
 - Danach sollte der Speicher auf Ihrer Website verfügbar sein. Wählen Sie es aus und klicken Sie dann auf Erstellen \> Seite, um unsere inspirierende Produktseite zu erstellen.
 

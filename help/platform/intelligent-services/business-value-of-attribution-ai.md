@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Geschäftswert von Attributions-KI
 
-In diesem Video erfahren Marketing-Experten, wie sie die Ausgaben für Marketing und Werbung messen und optimieren können, indem sie die Auswirkungen einzelner Kundeninteraktionen in jeder Phase der Journey-Teams von Kunden mit Attribution AI untersuchen. Weitere Informationen finden Sie in der [Dokumentation zur Attributions-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+In diesem Video erfahren Marketing-Experten, wie sie die Ausgaben für Marketing und Werbung messen und optimieren können, indem sie die Auswirkungen einzelner Kundeninteraktionen in jeder Phase der Journey-Teams von Kunden mit Attribution AI untersuchen. Weitere Informationen finden Sie in der [Dokumentation zur Attributions-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on&enablevpops)
 

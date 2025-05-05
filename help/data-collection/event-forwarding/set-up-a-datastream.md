@@ -15,7 +15,7 @@ ht-degree: 18%
 
 # Einrichten eines Datenstroms für die Ereignisweiterleitung
 
-Erfahren Sie, wie Sie einen Datenstrom für die Ereignisweiterleitung einrichten. Weitere Informationen finden Sie in [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+Erfahren Sie, wie Sie einen Datenstrom für die Ereignisweiterleitung einrichten. Weitere Informationen finden Sie in [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=de#create-a-datastream)
 
 
 >[!NOTE]

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Aufnehmen von Daten mithilfe des Datenbank-Quell-Connectors
 
-In diesem Video wird erläutert, wie Sie nahtlos und skalierbar einen Batch-Vorgang zur Aufnahme von Daten aus einer Datenbankquelle in das Echtzeit-Kundenprofil und in Experience Data Lake von Adobe Experience Platform durchführen. Eine ausführlichere Produktdokumentation finden Sie unter [Datenbank](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) auf der Übersichtsseite zu Source Connectors oder in der [Dokumentation zu Google Big Query Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html).
+In diesem Video wird erläutert, wie Sie nahtlos und skalierbar einen Batch-Vorgang zur Aufnahme von Daten aus einer Datenbankquelle in das Echtzeit-Kundenprofil und in Experience Data Lake von Adobe Experience Platform durchführen. Eine ausführlichere Produktdokumentation finden Sie unter [Datenbank](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de#database) auf der Übersichtsseite zu Source Connectors oder in der [Dokumentation zu Google Big Query Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on&enablevpops)

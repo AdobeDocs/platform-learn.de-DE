@@ -23,7 +23,7 @@ Erfahren Sie, wie Sie Daten in Echtzeit von einer Cloud-Speicherquelle zu Platfo
 
 ## Weitere Ressourcen
 
-* [Erstellen einer Amazon Kinesis-Quellverbindung über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
-* [Erstellen einer Azure Event Hubs-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
+* [Erstellen einer Amazon Kinesis-Quellverbindung über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html?lang=de)
+* [Erstellen einer Azure Event Hubs-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html?lang=de)
 * [Dokumentation zu Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/)
 * [Dokumentation zu Amazon Kinesis Data Streams](https://docs.aws.amazon.com/kinesis/index.html)

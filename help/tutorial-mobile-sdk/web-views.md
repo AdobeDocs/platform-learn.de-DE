@@ -27,7 +27,7 @@ In dieser Lektion erfahren Sie Folgendes:
 
 ## Mögliche Tracking-Probleme
 
-Wenn Sie Daten aus dem nativen Teil der App und von einer WebView innerhalb der App senden, generiert jede ihre eigene Experience Cloud-ID (ECID), was zu getrennten Treffern und überhöhten Besuchs-/Besucherdaten führt. Weitere Informationen zur ECID finden Sie in der [ECID-Übersicht](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+Wenn Sie Daten aus dem nativen Teil der App und von einer WebView innerhalb der App senden, generiert jede ihre eigene Experience Cloud-ID (ECID), was zu getrennten Treffern und überhöhten Besuchs-/Besucherdaten führt. Weitere Informationen zur ECID finden Sie in der [ECID-Übersicht](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=de).
 
 Um diese unerwünschte Situation zu beheben, ist es wichtig, die ECID des Benutzers aus dem nativen Teil Ihrer App an eine WebView zu übergeben, die Sie möglicherweise in Ihrer App verwenden möchten.
 
@@ -102,6 +102,6 @@ Leider ist das Debugging der Websitzung eingeschränkt. Beispielsweise können S
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass Inhalte basierend auf einer URL in einer Webansicht mit derselben ECID angezeigt werden, die bereits von Adobe Experience Platform Mobile SDK ausgegeben wurde.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
 
 Weiter: **[Identität](identity.md)**

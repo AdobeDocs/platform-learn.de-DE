@@ -39,7 +39,7 @@ Ermöglichen Sie Marketing-Experten, sofort mit KI/ML zu beginnen und die Market
 
 ## Hier ist alles
 
-- Intelligent Services - Übersicht: [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en)
+- Intelligent Services - Übersicht: [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=de](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=de)
 
 [Zurück zum Modul 2.2](./intelligent-services.md)
 

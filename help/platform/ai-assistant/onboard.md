@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Verwenden des KI-Assistenten zur Verkürzung der Onboarding-Zeit
 
-Erfahren Sie, wie Sie mit dem KI-Assistenten schnell neue Funktionen entwickeln und die Onboarding-Zeit verkürzen können. Weitere Informationen finden Sie im &quot;[ für den KI-Assistenten](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
+Erfahren Sie, wie Sie mit dem KI-Assistenten schnell neue Funktionen entwickeln und die Onboarding-Zeit verkürzen können. Weitere Informationen finden Sie im &quot;[ für den KI-Assistenten](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/questions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)

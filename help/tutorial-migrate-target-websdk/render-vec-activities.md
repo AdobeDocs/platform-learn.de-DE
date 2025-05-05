@@ -32,11 +32,11 @@ Die Browser-Erweiterung Visual Editing Helper kann für Websites verwendet werde
 
 Die Visual Editing Helper wird automatisch aktiviert, wenn eine Website im VEC von Target geöffnet wird, um die Inhaltserstellung zu unterstützen. Die Erweiterung verfügt über keine bedingten Einstellungen. Die Erweiterung verarbeitet alle Einstellungen automatisch, einschließlich der SameSite-Cookie-Einstellungen.
 
-Weitere Informationen zur Erweiterung „Visual Editing Helper[ und zur Fehlerbehebung Visual Experience ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) finden Sie in [ entsprechenden Dokumentation ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+Weitere Informationen zur Erweiterung „Visual Editing Helper[ und zur Fehlerbehebung Visual Experience ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=de) finden Sie in [ entsprechenden Dokumentation ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=de).
 
 >[!IMPORTANT]
 >
->Die neue [Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)-Erweiterung ersetzt die vorherige [Target VEC Helper-Browser-Erweiterung](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Wenn die ältere VEC Helper-Erweiterung installiert ist, sollte sie entfernt oder deaktiviert werden, bevor die Visual Editing Helper-Erweiterung verwendet wird.
+>Die neue [Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)-Erweiterung ersetzt die vorherige [Target VEC Helper-Browser-Erweiterung](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=de). Wenn die ältere VEC Helper-Erweiterung installiert ist, sollte sie entfernt oder deaktiviert werden, bevor die Visual Editing Helper-Erweiterung verwendet wird.
 
 ## Inhalt automatisch anfordern und anwenden
 
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->Es ist möglich, [ in Visual Experience Composer ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) Änderungen manuell zu rendern. Das manuelle Rendern von VEC-basierten Änderungen ist nicht üblich. Überprüfen Sie, ob Ihre at.js-Implementierung die `getOffers()`-Funktion verwendet, um eine Target-`pageLoad`-Anfrage manuell auszuführen, ohne `applyOffers()` zum Anwenden des Inhalts auf die Seite zu verwenden.
+>Es ist möglich, [ in Visual Experience Composer ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=de#manually-rendering-content) Änderungen manuell zu rendern. Das manuelle Rendern von VEC-basierten Änderungen ist nicht üblich. Überprüfen Sie, ob Ihre at.js-Implementierung die `getOffers()`-Funktion verwendet, um eine Target-`pageLoad`-Anfrage manuell auszuführen, ohne `applyOffers()` zum Anwenden des Inhalts auf die Seite zu verwenden.
 
-Die Platform Web SDK bietet Entwicklern eine große Flexibilität beim Anfordern und Rendern von Inhalten. Weitere Informationen zu Optionen [ Details finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) Dokumentation zum Rendern personalisierter Inhalte .
+Die Platform Web SDK bietet Entwicklern eine große Flexibilität beim Anfordern und Rendern von Inhalten. Weitere Informationen zu Optionen [ Details finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=de) Dokumentation zum Rendern personalisierter Inhalte .
 
 ## Implementierungsbeispiel
 
@@ -263,4 +263,4 @@ Erfahren Sie als Nächstes, wie Sie formularbasierte Target[Aktivitäten anforde
 
 >[!NOTE]
 >
->Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=de#M463) posten.

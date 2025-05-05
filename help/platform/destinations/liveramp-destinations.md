@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Für Werbepartner über die LiveRamp-Ziele aktivieren
 
-Erfahren Sie, wie Sie die LiveRamp-Ziele in Real-Time CDP konfigurieren, um Zielgruppen an Ihre Aktivierungspartner zu senden. Eine ausführliche Dokumentation finden Sie unter [LiveRamp - Onboarding-](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html) und [LiveRamp - Verteilungsverbindung](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html).
+Erfahren Sie, wie Sie die LiveRamp-Ziele in Real-Time CDP konfigurieren, um Zielgruppen an Ihre Aktivierungspartner zu senden. Eine ausführliche Dokumentation finden Sie unter [LiveRamp - Onboarding-](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=de) und [LiveRamp - Verteilungsverbindung](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425367/?learn=on&enablevpops)

@@ -35,7 +35,7 @@ In dieser Lektion erfahren Sie, wie Sie das System so erstellen und konfiguriere
 
    >[!NOTE]
    >
-   >Sie müssen nur bei Verwendung der Funktion [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/data-prep) ein Schema auswählen, was wir in diesem Tutorial nicht tun werden. Weitere Informationen finden Sie unter dem Link .
+   >Sie müssen nur bei Verwendung der Funktion [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/edge-network/data-prep) ein Schema auswählen, was wir in diesem Tutorial nicht tun werden. Weitere Informationen finden Sie unter dem Link .
 
 1. Wählen Sie **[!UICONTROL Speichern]**
 

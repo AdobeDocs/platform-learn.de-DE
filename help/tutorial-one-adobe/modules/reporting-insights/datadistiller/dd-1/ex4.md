@@ -179,7 +179,7 @@ Für den Großteil der Geschäftslogik ist es erforderlich, die Kontaktpunkte f�
 
 ### In Adobe definierte Funktionen
 
-Adobe hat eine Reihe von **in Adobe definierten Funktionen** zur standardmäßigen SQL-Syntax hinzugefügt, mit denen Sie Ihre Erlebnisdaten besser verstehen können. In den nächsten Abfragen erfahren Sie mehr über diese ADF-Funktionen. Weitere Informationen und die vollständige Liste finden Sie [ der Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html).
+Adobe hat eine Reihe von **in Adobe definierten Funktionen** zur standardmäßigen SQL-Syntax hinzugefügt, mit denen Sie Ihre Erlebnisdaten besser verstehen können. In den nächsten Abfragen erfahren Sie mehr über diese ADF-Funktionen. Weitere Informationen und die vollständige Liste finden Sie [ der Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=de).
 
 ### Was tun Benutzer auf der Website, bevor sie die Seite „Service abbrechen“ als dritte Seite in einer Sitzung erreichen?
 

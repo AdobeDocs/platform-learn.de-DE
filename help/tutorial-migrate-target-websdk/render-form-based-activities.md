@@ -100,7 +100,7 @@ Die Platform Web SDK bietet mehr Kontrolle darüber, wie formularbasierte Aktivi
 | `replaceHtml` | Container entfernen und durch das Angebot ersetzen | Nein | Ja |
 | `appendHtml` | Fügt das Angebot nach dem angegebenen Selektor an | Nein | Ja |
 
-Weitere Informationen [ Rendering-Optionen und Beispiele finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) Dokumentation zum Rendern von Inhalten mit Platform Web SDK .
+Weitere Informationen [ Rendering-Optionen und Beispiele finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=de) Dokumentation zum Rendern von Inhalten mit Platform Web SDK .
 
 ## Implementierungsbeispiel
 
@@ -201,4 +201,4 @@ Erfahren Sie als Nächstes, wie Sie [Target-Parameter mithilfe der Platform Web 
 
 >[!NOTE]
 >
->Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=de#M463) posten.

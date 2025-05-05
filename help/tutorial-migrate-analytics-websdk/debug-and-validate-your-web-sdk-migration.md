@@ -21,7 +21,7 @@ In dieser Übung erfahren Sie, wie Sie Ihre Daten bei der Migration zur Web-SDK 
 
 ## Der Adobe Experience Platform Debugger
 
-Dieser Debugger ist eine Browser-Erweiterung und im Chrome Store verfügbar. Es gibt ein [Video-Tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview) in dem erläutert wird, wie Sie den Debugger herunterladen und verwenden. Es wird empfohlen, dies zuerst zu durchlaufen, um die grundlegende Verwendung zu erfahren.
+Dieser Debugger ist eine Browser-Erweiterung und im Chrome Store verfügbar. Es gibt ein [Video-Tutorial](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/debugger/overview) in dem erläutert wird, wie Sie den Debugger herunterladen und verwenden. Es wird empfohlen, dies zuerst zu durchlaufen, um die grundlegende Verwendung zu erfahren.
 
 Sobald der Debugger eingerichtet ist und ausgeführt wird, können Sie damit sicherstellen, dass die Daten ordnungsgemäß von Ihrer Site und durch das Edge Network fließen. Dieses Tutorial bleibt bei der ziemlich einfachen Verwendung, aber verwenden Sie den Debugger bitte nicht, um Ihre Daten mit voller Kapazität zu überprüfen.
 

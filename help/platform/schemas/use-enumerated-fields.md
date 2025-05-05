@@ -17,6 +17,6 @@ ht-degree: 33%
 
 # Verwendung von Aufzählungsfeldern und empfohlenen Werten
 
-Erfahren Sie, wie Sie Aufzählungsfelder und empfohlene Werte verwenden können, um in der Segment Builder-Benutzeroberfläche benutzerfreundliche Dropdown-Menüs zu erstellen. Weitere Informationen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html).
+Erfahren Sie, wie Sie Aufzählungsfelder und empfohlene Werte verwenden können, um in der Segment Builder-Benutzeroberfläche benutzerfreundliche Dropdown-Menüs zu erstellen. Weitere Informationen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)

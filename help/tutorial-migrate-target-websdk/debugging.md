@@ -40,7 +40,7 @@ Der Adobe Experience Platform Debugger kann in den Browsern Google Chrome oder M
 
 Nach der Installation der Chrome-Erweiterung oder des Firefox-Add-ons wird ein Symbol (![](assets/start-icon.jpg)) zur Erweiterungsleiste hinzugefügt. Wählen Sie dieses Symbol aus, um die Erweiterung zu öffnen.
 
-Weitere Informationen zur Erweiterung [Adobe Experience Platform Debugger und zum Debugging ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) Adobe-Web-Anwendungen finden Sie im entsprechenden Handbuch.
+Weitere Informationen zur Erweiterung [Adobe Experience Platform Debugger und zum Debugging ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=de) Adobe-Web-Anwendungen finden Sie im entsprechenden Handbuch.
 
 ## Vorschau von Target-Aktivitäten mit QA-URLs
 
@@ -52,7 +52,7 @@ Target-QA-URLs, die funktionieren, indem at.js oder Platform Web SDK angewiesen 
 >
 >Die Funktionalität des Target-QA-Modus wird von Platform Web SDK ab Version 2.13.0 unterstützt. Der QA-Modus von Target wird basierend auf dem im `sendEvent`-Aufruf übergebenen `xdm.web.webPageDetails.URL` aktiviert. Änderungen an diesem Wert, wie die Kleinschreibung aller Zeichen, können dazu führen, dass der Target-QA-Modus nicht ordnungsgemäß funktioniert.
 
-Weitere Informationen zu Target-Aktivitäts-QA finden [ im entsprechenden Handbuch ](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+Weitere Informationen zu Target-Aktivitäts-QA finden [ im entsprechenden Handbuch ](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=de).
 
 ## Target-Implementierung debuggen
 
@@ -130,7 +130,7 @@ Nach Auswahl **[!UICONTROL Ansicht]** wird eine Überlagerung angezeigt, in der 
 - Anfragedetails
 - Profil-Snapshot
 
-Weitere Informationen zu Target-Traces finden Sie [ entsprechenden Handbuch ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) Debugging der Bereitstellung von Target-Inhalten .
+Weitere Informationen zu Target-Traces finden Sie [ entsprechenden Handbuch ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=de) Debugging der Bereitstellung von Target-Inhalten .
 
 ### Fehlerbehebung bei Assurance
 
@@ -181,4 +181,4 @@ Herzlichen Glückwunsch, Sie haben das Ende des Tutorials erreicht! Viel Glück 
 
 >[!NOTE]
 >
->Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=de#M463) posten.

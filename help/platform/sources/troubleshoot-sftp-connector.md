@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Fehlerbehebung: Verbindung zum SFTP-Quell-Connector nicht möglich
 
-Erfahren Sie mehr über Best Practices zur Vermeidung von Verbindungsproblemen mit dem SFTP-Quell-Connector. Überprüfen Sie bestimmte Checkpoints, um Ihren SFTP-Server erfolgreich mit Adobe Experience Platform zu verbinden. Weitere Informationen finden Sie in der [SFTP-Quell-Connector-](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html).
+Erfahren Sie mehr über Best Practices zur Vermeidung von Verbindungsproblemen mit dem SFTP-Quell-Connector. Überprüfen Sie bestimmte Checkpoints, um Ihren SFTP-Server erfolgreich mit Adobe Experience Platform zu verbinden. Weitere Informationen finden Sie in der [SFTP-Quell-Connector-](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416134?learn=on&enablevpops)

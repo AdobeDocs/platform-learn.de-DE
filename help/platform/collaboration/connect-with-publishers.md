@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Verbinden mit Herausgebern in Real-Time CDP Collaboration
 
-Erfahren Sie, wie Sie als Werbetreibender eine Verbindung zu einem Herausgeber herstellen können, um mit ihm zusammenzuarbeiten. Eine ausführliche Dokumentation finden Sie unter [Verbinden mit Werbetreibenden oder Publishern](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}.
+Erfahren Sie, wie Sie als Werbetreibender eine Verbindung zu einem Herausgeber herstellen können, um mit ihm zusammenzuarbeiten. Eine ausführliche Dokumentation finden Sie unter [Verbinden mit Werbetreibenden oder Publishern](https://experienceleague.adobe.com/de/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452218/?learn=on&enablevpops)

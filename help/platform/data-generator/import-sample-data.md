@@ -33,7 +33,7 @@ Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Lum
 
 * Sie haben Zugriff auf Experience Platform-APIs und wissen, wie Sie sich authentifizieren. Andernfalls sehen Sie sich dieses [Tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=de) an.
 * Sie haben Zugriff auf eine Experience Platform-Entwicklungs-Sandbox.
-* Sie kennen Ihre Experience Platform-Mandanten-ID. Sie können sie erhalten, indem Sie eine authentifizierte [API-Anfrage](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)
+* Sie kennen Ihre Experience Platform-Mandanten-ID. Sie können sie erhalten, indem Sie eine authentifizierte [API-Anfrage](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=de#know-your-tenant_id)
 oder indem Sie sie bei der Anmeldung bei Ihrem Platform-Konto aus der URL extrahieren. Bei der folgenden URL lautet der Mandant beispielsweise &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
 ## Verwenden [!DNL Postman] {#postman}
@@ -187,7 +187,7 @@ Wenn Sie die Daten auf den Registerkarten **[!UICONTROL Attribute]** und **[!UIC
 
 Wenn Sie mehr über Adobe Journey Optimizer erfahren möchten, enthält diese Sandbox alles, was Sie zur Bewältigung der [Journey Optimizer-Herausforderungen benötigen](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de)
 
-Wenn Sie mehr über Zusammenführungsrichtlinien, Data Governance, den Abfrage-Service und den Segment Builder erfahren möchten, springen Sie im Tutorial Erste Schritte für Datenarchitekten und Dateningenieure zu [Lektion 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Die früheren Lektionen dieses anderen Tutorials haben Sie dazu beigetragen, alles, was gerade mit diesen Postman-Sammlungen gefüllt wurde, manuell zu erstellen - genießen Sie den Vorsprung!
+Wenn Sie mehr über Zusammenführungsrichtlinien, Data Governance, den Abfrage-Service und den Segment Builder erfahren möchten, springen Sie im Tutorial Erste Schritte für Datenarchitekten und Dateningenieure zu [Lektion 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=de). Die früheren Lektionen dieses anderen Tutorials haben Sie dazu beigetragen, alles, was gerade mit diesen Postman-Sammlungen gefüllt wurde, manuell zu erstellen - genießen Sie den Vorsprung!
 
 Wenn Sie eine Beispiel-Web-SDK-Implementierung für den Link zu dieser Sandbox erstellen möchten, gehen Sie folgendermaßen vor
 [Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview). Nach dem Einrichten der Lektionen „Erstkonfiguration“, „Tags-Konfiguration“ und &quot;Experience Platform einrichten“ des Web SDK-Tutorials melden Sie sich bei der Luma-Website mit den ersten zehn E-Mail-Adressen in der `luma-crm.json`-Datei mit dem `test` Passwort an, um zu sehen, wie die Profilfragmente mit den in diesem Tutorial hochgeladenen Daten zusammengeführt werden.
@@ -199,4 +199,4 @@ Wenn Sie eine Beispielimplementierung von Mobile SDK erstellen möchten, um eine
 
 Beim Zurücksetzen einer Nicht-Produktions-Sandbox werden alle mit dieser Sandbox verbundenen Ressourcen (Schemata, Datensätze usw.) gelöscht, wobei der Name der Sandbox und die zugehörigen Berechtigungen beibehalten werden. Diese „saubere“ Sandbox ist für Benutzer, die Zugriff darauf haben, unter demselben Namen weiter verfügbar.
 
-Gehen Sie wie folgt vor [hier](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox), um eine Sandbox-Umgebung zurückzusetzen.
+Gehen Sie wie folgt vor [hier](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=de#reset-a-sandbox), um eine Sandbox-Umgebung zurückzusetzen.

@@ -81,7 +81,7 @@ So ist es vorerst. In den nächsten Lektionen erfahren Sie mehr über diese Bena
 ## Weitere Ressourcen
 
 * [Webhook.site](https://webhook.site/)
-* [Dokumentation zu Datenerfassungsbenachrichtigungen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [Dokumentation zu Datenerfassungsbenachrichtigungen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=de)
 * [Erste Schritte mit der Dokumentation zu Adobe I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 Ok, fangen wir endlich an [Daten aufzunehmen](ingest-batch-data.md)!

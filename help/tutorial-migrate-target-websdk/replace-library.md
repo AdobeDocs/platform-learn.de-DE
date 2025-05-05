@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie Ihre Adobe Target-Implementierung auf der Seite ersetzen, 
 
 >[!NOTE]
 >
->Die angegebenen Beispiele dienen nur zur Veranschaulichung, und Ihre tatsächliche Target-Implementierung kann abweichen. Wenn Ihre bestehende Target-Implementierung den Datenerfassungs-Tag-Manager von Adobe verwendet, können Sie auch im Tutorial [Platform Web SDK Target-Implementierung](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html) weitere Informationen einsehen.
+>Die angegebenen Beispiele dienen nur zur Veranschaulichung, und Ihre tatsächliche Target-Implementierung kann abweichen. Wenn Ihre bestehende Target-Implementierung den Datenerfassungs-Tag-Manager von Adobe verwendet, können Sie auch im Tutorial [Platform Web SDK Target-Implementierung](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=de) weitere Informationen einsehen.
 
 
 ## Überprüfen der Target-Administrationseinstellungen
@@ -52,7 +52,7 @@ Die Platform Web SDK verwendet eine Datenstromkonfiguration, mit der Sie explizi
 >
 >Wenn in der Datenstromkonfiguration keine Umgebungs-ID angegeben ist, verwendet Target die Domain-zu-Umgebung-Zuordnung, wie im Abschnitt **Hosts** angegeben.
 
-Weitere Informationen finden Sie im Handbuch [Datenstromkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) und in der Dokumentation [Hosts](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=de).
+Weitere Informationen finden Sie im Handbuch [Datenstromkonfiguration](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de#target) und in der Dokumentation [Hosts](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=de).
 
 ## Bereitstellen von Platform Web SDK
 
@@ -213,9 +213,9 @@ Das Vorab-Ausblendverhalten wird durch zwei Konfigurationen am Ende des Ausschni
 
 Adobe empfiehlt, Platform Web SDK asynchron zu implementieren, um eine optimale Gesamtseitenleistung zu erzielen. Wenn jedoch die alloy.js-Bibliothek oder der Tag-Einbettungs-Code synchron geladen wird, ist das Code-Fragment zum Vorab-Ausblenden nicht erforderlich. Stattdessen wird der Vorab-Ausblendungsstil in der Konfiguration von Platform Web SDK festgelegt.
 
-Der Stil zum Vorab-Ausblenden für synchrone Implementierungen kann mit der Option [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) konfiguriert werden. Die Konfiguration von Platform Web SDK wird im nächsten Abschnitt behandelt.
+Der Stil zum Vorab-Ausblenden für synchrone Implementierungen kann mit der Option [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=de#prehidingStyle) konfiguriert werden. Die Konfiguration von Platform Web SDK wird im nächsten Abschnitt behandelt.
 
-Weitere Informationen zur Verwaltung von Flackern in Platform Web SDK finden Sie im Handbuch unter [Verwalten von Flackern für personalisierte Erlebnisse](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
+Weitere Informationen zur Verwaltung von Flackern in Platform Web SDK finden Sie im Handbuch unter [Verwalten von Flackern für personalisierte Erlebnisse](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=de)
 
 ## Konfigurieren von Platform Web SDK
 
@@ -274,7 +274,7 @@ Die bemerkenswerten Konfigurationsoptionen in Bezug auf Target sind unten beschr
 | `thirdPartyCookiesEnabled` | Aktiviert die Einstellung von Adobe-Drittanbieter-Cookies. Die SDK kann die Besucher-ID in einem Drittanbieterkontext beibehalten, damit dieselbe Besucher-ID Website-übergreifend verwendet werden kann. Verwenden Sie diese Option, wenn Sie mehrere Sites haben. Manchmal ist diese Option jedoch aus Datenschutzgründen nicht erwünscht. | `true` |
 | `prehidingStyle` | Wird verwendet, um eine CSS-Stildefinition zu erstellen, die Inhaltsbereiche Ihrer Web-Seite ausblendet, während personalisierter Inhalt vom Server geladen wird. Dies wird nur bei synchronen Bereitstellungen der SDK verwendet. | `body { opacity: 0 !important }` |
 
-Eine vollständige Liste der Optionen finden Sie im Handbuch [Konfigurieren von Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+Eine vollständige Liste der Optionen finden Sie im Handbuch [Konfigurieren von Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=de).
 
 ## Implementierungsbeispiel
 
@@ -400,4 +400,4 @@ Erfahren Sie als Nächstes, wie [ (VEC-basierte Aktivitäten anfordern ](render-
 
 >[!NOTE]
 >
->Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=de#M463) posten.

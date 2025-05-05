@@ -71,7 +71,7 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe-ID und die
       * **[!UICONTROL Daten-]**: Berechtigungselemente zum Verwalten und Anzeigen von Datensätzen.
       * Eine Entwicklungs **Sandbox** die Sie für dieses Tutorial verwenden können.
 
-   * Für die Journey Optimizer-Lektionen benötigen Sie Berechtigungen zum Konfigurieren des **Push-Benachrichtigungs-**) und zum Erstellen einer **Programmoberfläche** einer **Journey**, einer **Nachricht** und **Nachrichtenvoreinstellungen**. Für das Entscheidungs-Management benötigen Sie die entsprechenden Berechtigungen zum **Verwalten von Angeboten** und **Entscheidungen** wie [hier beschrieben](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+   * Für die Journey Optimizer-Lektionen benötigen Sie Berechtigungen zum Konfigurieren des **Push-Benachrichtigungs-**) und zum Erstellen einer **Programmoberfläche** einer **Journey**, einer **Nachricht** und **Nachrichtenvoreinstellungen**. Für das Entscheidungs-Management benötigen Sie die entsprechenden Berechtigungen zum **Verwalten von Angeboten** und **Entscheidungen** wie [hier beschrieben](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=de#decisions-permissions).
 
 * Für Adobe Analytics müssen Sie wissen, welche **Report Suites** Sie verwenden können, um dieses Tutorial abzuschließen.
 
@@ -109,6 +109,6 @@ Los geht‘s!
 
 >[!SUCCESS]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
 
 Weiter: **[Erstellen eines XDM-Schemas](create-schema.md)**

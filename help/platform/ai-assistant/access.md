@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Zugriff auf den KI-Assistenten
 
-Erfahren Sie, wie Sie den Zugriff und die Berechtigungen für den KI-Assistenten in Adobe Experience Platform einrichten. Weitere Informationen finden Sie unter [Zugriff auf den KI-Assistenten in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access).
+Erfahren Sie, wie Sie den Zugriff und die Berechtigungen für den KI-Assistenten in Adobe Experience Platform einrichten. Weitere Informationen finden Sie unter [Zugriff auf den KI-Assistenten in Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/access).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3436470/?learn=on&enablevpops)

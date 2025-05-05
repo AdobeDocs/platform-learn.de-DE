@@ -22,4 +22,4 @@ Bevor Sie Daten von Real-Time CDP an Zielpartner senden können, müssen Sie zun
 
 >[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
 
-Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination).
+Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/ui/connect-destination).

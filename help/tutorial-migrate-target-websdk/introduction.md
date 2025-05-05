@@ -22,7 +22,7 @@ Adobe Experience Platform Web SDK ist eine Client-seitige JavaScript-Bibliothek,
 >Ähnliche Migrations-Tutorials sind verfügbar für:
 >
 > * [Adobe Analytics](../tutorial-migrate-analytics-websdk/migration-to-websdk-overview.md)
-> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/de/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
 
 >[!CAUTION]
 >
@@ -34,9 +34,9 @@ Adobe Experience Platform Web SDK ist eine Client-seitige JavaScript-Bibliothek,
 
 Zu den Vorteilen von Platform Web SDK im Vergleich zur eigenständigen at.js-Bibliothek gehören unter anderem:
 
-* Schnellere Freigabe von Zielgruppen aus [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
-* Integration von Target mit Journey Optimizer zur Unterstützung der Bereitstellung von [Offer Decisioning](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
-* Möglichkeit zur Verwendung [Erstanbieter-IDs](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) zum Generieren der ECID für eine längere Besucheridentifizierung
+* Schnellere Freigabe von Zielgruppen aus [Real-Time Customer Data Platform](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+* Integration von Target mit Journey Optimizer zur Unterstützung der Bereitstellung von [Offer Decisioning](https://experienceleague.adobe.com/de/docs/target/using/integrate/ajo/offer-decision)
+* Möglichkeit zur Verwendung [Erstanbieter-IDs](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) zum Generieren der ECID für eine längere Besucheridentifizierung
 * Geringerer Platzbedarf für verbesserte Metriken zur Seitengeschwindigkeit
 * Zusätzliche Implementierungsflexibilität für Entwickler
 
@@ -63,14 +63,14 @@ Am Ende dieses Tutorials können Sie:
 Um dieses Tutorial abzuschließen, sollten Sie zunächst:
 
 * Über technische Kenntnisse Ihrer aktuellen Target-at.js-Implementierung verfügen
-* Stellen Sie sicher, dass Sie [Editor- oder Publisher-Rolle](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) für Ihre Zielinstanz haben, damit Sie Beispiele selbst versuchen können
+* Stellen Sie sicher, dass Sie [Editor- oder Publisher-Rolle](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=de#section_8C425E43E5DD4111BBFC734A2B7ABC80) für Ihre Zielinstanz haben, damit Sie Beispiele selbst versuchen können
 * Wissen, wie Sie Aktivitäten in Adobe Target einrichten. Wenn Sie eine Auffrischung benötigen, sind die folgenden Tutorials und Handbücher für diese Lektion hilfreich:
-   * [Visual Experience Composer verwenden](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
-   * [Verwenden des formularbasierten Experience Composers](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
-   * [Erstellen von Experience Targeting-Aktivitäten](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
+   * [Visual Experience Composer verwenden](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html?lang=de)
+   * [Verwenden des formularbasierten Experience Composers](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html?lang=de)
+   * [Erstellen von Experience Targeting-Aktivitäten](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html?lang=de)
 
 Wenn Sie bereit sind, besteht der erste Schritt für eine erfolgreiche Migration darin, [mehr über den Migrationsprozess zu erfahren](migration-overview.md) und darüber, wie sich at.js und Platform Web SDK unterscheiden.
 
 >[!NOTE]
 >
->Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) posten.
+>Wir möchten Sie bei der erfolgreichen Migration von at.js zu Web SDK unterstützen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=de#M463) posten.

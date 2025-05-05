@@ -189,13 +189,13 @@ Lassen Sie uns nun unseren ersten API-Aufruf durchführen:
 1. In [!DNL Postman] importieren
 1. Öffnen Sie **Schema Registry-API > Schemata > Schemata auflisten**
 1. Sehen Sie sich die **Parameter** und **Kopfzeilen** an und beachten Sie, wie sie einige der zuvor eingegebenen Umgebungsvariablen enthalten.
-1. Beachten Sie, dass **Feld „Kopfzeilen > Wert akzeptieren** auf `application/vnd.adobe.xed-id+json` gesetzt ist. Die Schema Registry-APIs erfordern einen der [angegebenen Accept-Header](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept)Werte, die verschiedene Formate in der Antwort bereitstellen.
+1. Beachten Sie, dass **Feld „Kopfzeilen > Wert akzeptieren** auf `application/vnd.adobe.xed-id+json` gesetzt ist. Die Schema Registry-APIs erfordern einen der [angegebenen Accept-Header](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=de#accept)Werte, die verschiedene Formate in der Antwort bereitstellen.
 1. Wählen Sie **Senden**, um Ihren ersten Platform-API-Aufruf durchzuführen!
 
 Wir hoffen, dass Sie eine erfolgreiche `200 OK` erhalten haben, die eine Liste der verfügbaren Adobe-bereitgestellten XDM-Schemas in Ihrer Sandbox enthält, wie unten dargestellt.
 
 ![Erster API-Aufruf in Postman](assets/postman-firstAPICall.png)
 
-Wenn Ihr Aufruf nicht erfolgreich war, nehmen Sie sich einen Moment Zeit, um mit den Details zur Fehlerantwort des API-Aufrufs zu debuggen, und überprüfen Sie die oben genannten Schritte. Wenn Sie hängen bleiben, bitten wir Sie um Hilfe im [Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?lang=de) oder verwenden Sie den Link rechts auf dieser Seite, um „ein Problem zu melden“.
+Wenn Ihr Aufruf nicht erfolgreich war, nehmen Sie sich einen Moment Zeit, um mit den Details zur Fehlerantwort des API-Aufrufs zu debuggen, und überprüfen Sie die oben genannten Schritte. Wenn Sie hängen bleiben, bitten wir Sie um Hilfe im [Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=de&lang=de) oder verwenden Sie den Link rechts auf dieser Seite, um „ein Problem zu melden“.
 
 Nachdem Sie Platform-Berechtigungen, Sandbox und [!DNL Postman] eingerichtet haben, können Sie Daten [in Schemata modellieren](model-data-in-schemas.md)!

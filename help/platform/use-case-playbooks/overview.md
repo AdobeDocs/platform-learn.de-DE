@@ -18,7 +18,7 @@ ht-degree: 25%
 
 # Anwendungsfall - Playbooks - Übersicht
 
-Möglichkeiten, wie Use Case Playbooks der Kundschaft von Real-Time Customer Data Platform und Journey Optimizer zu einer schnelleren Wertschöpfung verhelfen können. Use Case Playbooks ist ein Katalog mit Dutzenden von Vorlagen, die mehrere Branchen und Marketing-Ziele abdecken. Playbooks generieren technische Assets wie Zielgruppen, Journey und Schemata, die dann angepasst und in anderen Sandboxes veröffentlicht werden können. Weitere Informationen finden Sie in der [Dokumentation zu Anwendungsfällen für Playbooks](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html).
+Möglichkeiten, wie Use Case Playbooks der Kundschaft von Real-Time Customer Data Platform und Journey Optimizer zu einer schnelleren Wertschöpfung verhelfen können. Use Case Playbooks ist ein Katalog mit Dutzenden von Vorlagen, die mehrere Branchen und Marketing-Ziele abdecken. Playbooks generieren technische Assets wie Zielgruppen, Journey und Schemata, die dann angepasst und in anderen Sandboxes veröffentlicht werden können. Weitere Informationen finden Sie in der [Dokumentation zu Anwendungsfällen für Playbooks](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 

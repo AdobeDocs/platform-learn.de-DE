@@ -15,7 +15,7 @@ ht-degree: 19%
 
 # Erstellen einer Ereignisweiterleitungs-Eigenschaft
 
-Erfahren Sie, wie Sie in der Datenerfassung eine Ereignisweiterleitungseigenschaft erstellen. Weitere Informationen finden Sie in der Dokumentation [Erstellen einer Ereignisweiterleitungs-Eigenschaft](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).
+Erfahren Sie, wie Sie in der Datenerfassung eine Ereignisweiterleitungseigenschaft erstellen. Weitere Informationen finden Sie in der Dokumentation [Erstellen einer Ereignisweiterleitungs-Eigenschaft](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=de#create-an-event-forwarding-property).
 
 >[!NOTE]
 >

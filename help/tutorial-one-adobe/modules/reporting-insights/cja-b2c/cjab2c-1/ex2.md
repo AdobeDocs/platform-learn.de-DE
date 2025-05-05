@@ -82,7 +82,7 @@ Wie bereits erwähnt, können Sie für jeden Datensatz unterschiedliche Personen
 
 Der Name des Personen-ID-Feldes ist nicht wichtig, solange der Wert in den Personen-ID-Feldern übereinstimmt. Angenommen, wir haben `email` in einem Datensatz und `emailAddress` in einem anderen Datensatz, der als Personen-ID definiert ist. Wenn `delaigle@adobe.com` für das Personen-ID-Feld in beiden Datensätzen derselbe Wert ist, kann CJA die Daten zusammenfügen.
 
-Lesen Sie die häufig gestellten Fragen zu CJA hier, um die Feinheiten bei der Identitätszuordnung zu verstehen: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+Lesen Sie die häufig gestellten Fragen zu CJA hier, um die Feinheiten bei der Identitätszuordnung zu verstehen: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de).
 
 ### Daten mithilfe der Personen-ID zusammenfügen
 

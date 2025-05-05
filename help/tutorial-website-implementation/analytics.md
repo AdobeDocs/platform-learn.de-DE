@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # Hinzufügen von Adobe Analytics
 
-In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) und erstellen Regeln, um Daten an Adobe Analytics zu senden.
+In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de) und erstellen Regeln, um Daten an Adobe Analytics zu senden.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=de) ist eine branchenführende Lösung, mit der Sie Ihre Kunden besser verstehen und Ihr Geschäft mit Customer Intelligence steuern können.
 
@@ -21,7 +21,7 @@ In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de)**
 > * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
@@ -426,7 +426,7 @@ Sie werden in diesem Code zwei Plugins aufrufen, aber eines davon ist in der App
 
 Dieses Plugin soll verhindern, dass Werte fälschlicherweise im Code dupliziert werden, wenn ein Besucher eine Seite aktualisiert oder die Zurück-Schaltfläche des Browsers verwendet, um zu einer Seite zurückzukehren, auf der ein Wert festgelegt wurde. In dieser Lektion verwenden Sie es, um zu verhindern, dass das `clickthrough`-Ereignis dupliziert wird.
 
-Der Code für dieses Plugin befindet sich in der [Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html) und ist hier zum einfachen Kopieren/Einfügen ebenfalls aufgeführt.
+Der Code für dieses Plugin befindet sich in der [Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=de) und ist hier zum einfachen Kopieren/Einfügen ebenfalls aufgeführt.
 
 1. Kopieren Sie den folgenden Code:
 

@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Einrichten von erweiterten Konvertierungen für Google Ads
 
-Verbessern Sie Google-Konversionsdaten mit Hash-Daten von Erstanbietern mithilfe der Ereignisweiterleitung und der Google Ads-API. Weitere Informationen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html)
+Verbessern Sie Google-Konversionsdaten mit Hash-Daten von Erstanbietern mithilfe der Ereignisweiterleitung und der Google Ads-API. Weitere Informationen finden Sie unter [die Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=de)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)

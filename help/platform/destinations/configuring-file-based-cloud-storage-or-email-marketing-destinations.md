@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Erhalten Sie Tipps während einer Anleitung zur Konfiguration eines dateibasierten Ziels in Adobe Real-Time Customer Data Platform (CDP). Dies gilt für [!UICONTROL Cloud-Speicher]-Ziele (z. B. S3 oder SFTP) und auch [!UICONTROL E-Mail-Marketing]-Ziele. Eine ausführlichere Produktdokumentation finden Sie unter:
 
-* [Aktivieren von Zielgruppendaten für Batch-Profil-](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html)) finden Sie Anweisungen zum Aktivieren von Daten für Batch- oder E-Mail-Marketing-Ziele mithilfe der Experience Platform-Benutzeroberfläche
-* [Verbinden mit Batch-Zielen und Aktivieren von Daten mithilfe der Flow Service-API](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) finden Sie Anweisungen zum Aktivieren von Daten für Batch- oder E-Mail-Marketing-Ziele mithilfe der Flow Service-API
+* [Aktivieren von Zielgruppendaten für Batch-Profil-](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=de)) finden Sie Anweisungen zum Aktivieren von Daten für Batch- oder E-Mail-Marketing-Ziele mithilfe der Experience Platform-Benutzeroberfläche
+* [Verbinden mit Batch-Zielen und Aktivieren von Daten mithilfe der Flow Service-API](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=de) finden Sie Anweisungen zum Aktivieren von Daten für Batch- oder E-Mail-Marketing-Ziele mithilfe der Flow Service-API
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)

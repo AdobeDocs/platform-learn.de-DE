@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Übersicht über Vereinigungsschemata
 
-In diesem Video erhalten Sie einen Überblick über die Vereinigungsschemata, die vom Echtzeit-Kundenprofil von Adobe Experience Platform verwendet werden. Vereinigungsschemata ermöglichen es, alle Felder in Schemata derselben Klasse zu vereinen. Das Echtzeit-Kundenprofil verwendet die Vereinigungsschemata , um eine ganzheitliche Ansicht jedes einzelnen Kunden zu erstellen. Weitere Informationen finden Sie in der [Dokumentation zum Vereinigungsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html).
+In diesem Video erhalten Sie einen Überblick über die Vereinigungsschemata, die vom Echtzeit-Kundenprofil von Adobe Experience Platform verwendet werden. Vereinigungsschemata ermöglichen es, alle Felder in Schemata derselben Klasse zu vereinen. Das Echtzeit-Kundenprofil verwendet die Vereinigungsschemata , um eine ganzheitliche Ansicht jedes einzelnen Kunden zu erstellen. Weitere Informationen finden Sie in der [Dokumentation zum Vereinigungsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on&enablevpops)

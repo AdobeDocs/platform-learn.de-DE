@@ -20,7 +20,7 @@ ht-degree: 3%
 ## Gut zu wissen
 
 Adobe Experience Platform unterstützt verschiedene Amazon-Services als Ziel.
-Kinesis und S3 sind beide [Profilexportziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) und können als Teil von Adobe Experience Platforms Real-Time CDP verwendet werden.
+Kinesis und S3 sind beide [Profilexportziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=de) und können als Teil von Adobe Experience Platforms Real-Time CDP verwendet werden.
 Sie können mühelos hochwertige Segmentereignisse und zugehörige Profilattribute in Ihre gewünschten Systeme einfließen lassen.
 
 In dieser Übung erfahren Sie, wie Sie Ihren eigenen Amazon Kinesis-Stream einrichten, um Ereignisdaten aus dem Adobe Experience Platform Edge-Ökosystem an ein Cloud-Speicherziel wie Amazon S3 zu streamen. Dies ist nützlich, wenn Sie Erlebnisereignisse aus Web- und Mobile-Eigenschaften erfassen und für Analysen und operative Berichte in Ihren Data Lake pushen möchten. DataLake nimmt im Allgemeinen Daten im Batch-Modus mit großen täglichen Dateiimporten auf, sie stellen keinen öffentlichen HTTP-Endpunkt bereit, der in Verbindung mit der Ereignisweiterleitung verwendet werden könnte.

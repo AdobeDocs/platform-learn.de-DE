@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Batch-Zielgruppen bei Bedarf auswerten
 
-Auswerten von Batch-Zielgruppen nach Bedarf mit der flexiblen Zielgruppenauswertungsfunktion von Adobe Experience Platform. Weitere Informationen und Leitplanken finden Sie [Handbuch zur flexiblen Zielgruppenbewertung](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
+Auswerten von Batch-Zielgruppen nach Bedarf mit der flexiblen Zielgruppenauswertungsfunktion von Adobe Experience Platform. Weitere Informationen und Leitplanken finden Sie [Handbuch zur flexiblen Zielgruppenbewertung](https://experienceleague.adobe.com/de/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)

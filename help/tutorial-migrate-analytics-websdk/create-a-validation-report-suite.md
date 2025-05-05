@@ -35,5 +35,5 @@ Je nach Größe und Komplexität Ihrer Analytics-Implementierung kann die Migrat
 
 >[!TIP]
 >
->Eine Videoeinführung zum Erstellen von Report Suites finden Sie unter [Grundlagen und Erstellen von Report Suites](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
+>Eine Videoeinführung zum Erstellen von Report Suites finden Sie unter [Grundlagen und Erstellen von Report Suites](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
 

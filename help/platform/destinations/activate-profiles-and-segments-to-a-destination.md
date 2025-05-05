@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Profile und Audiences für ein Ziel aktivieren
 
-Erfahren Sie, wie Sie in der Real-Time CDP Profile und Audiences für Ziele aktivieren.  Starten Sie diesen Workflow entweder in der Benutzeroberfläche „Ziele“ oder „Zielgruppen“. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview).
+Erfahren Sie, wie Sie in der Real-Time CDP Profile und Audiences für Ziele aktivieren.  Starten Sie diesen Workflow entweder in der Benutzeroberfläche „Ziele“ oder „Zielgruppen“. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/ui/activate/activation-overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on&enablevpops)
 

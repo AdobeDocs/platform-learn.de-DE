@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Playbook-Instanzen erstellen und veröffentlichen
 
-In diesem durchgängigen Demo-Video erfahren Sie, wie Sie eine Instanz eines Anwendungsfall-Playbooks finden, erstellen, veröffentlichen und Fehlerbehebungen durchführen. Weitere Informationen finden Sie unter [Playbook-Instanzen erstellen, freigeben und wiederverwenden](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
+In diesem durchgängigen Demo-Video erfahren Sie, wie Sie eine Instanz eines Anwendungsfall-Playbooks finden, erstellen, veröffentlichen und Fehlerbehebungen durchführen. Weitere Informationen finden Sie unter [Playbook-Instanzen erstellen, freigeben und wiederverwenden](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on&enablevpops)

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Einverständnis mit dem Adobe-Standard festlegen
 
-Erfahren Sie, wie Sie mit der Adobe Experience Platform Web SDK Einverständniswerte gemäß Adobe-Standard 1.0 und 2.0 festlegen. Weitere Informationen zur Verwendung [ Adobe-Standards finden Sie in ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) Dokumentation unter Einverständnisverarbeitung in Platform .
+Erfahren Sie, wie Sie mit der Adobe Experience Platform Web SDK Einverständniswerte gemäß Adobe-Standard 1.0 und 2.0 festlegen. Weitere Informationen zur Verwendung [ Adobe-Standards finden Sie in ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=de) Dokumentation unter Einverständnisverarbeitung in Platform .
 
 >[!NOTE]
 >

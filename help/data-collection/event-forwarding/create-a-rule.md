@@ -15,7 +15,7 @@ ht-degree: 19%
 
 # Erstellen einer Regel für die Ereignisweiterleitung
 
-Erfahren Sie, wie Sie in der Datenerfassung eine Regel für die Ereignisweiterleitung erstellen. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Erfahren Sie, wie Sie in der Datenerfassung eine Regel für die Ereignisweiterleitung erstellen. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de).
 
 >[!NOTE]
 >

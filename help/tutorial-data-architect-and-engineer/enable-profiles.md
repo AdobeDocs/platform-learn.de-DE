@@ -26,7 +26,7 @@ Das Echtzeit-Kundenprofil liefert eine ganzheitliche Sicht auf jeden einzelnen K
 
 So erstaunlich das alles klingt, Sie müssen nicht (*Ihre gesamten Daten)* Profil aktivieren. Tatsächlich sollten Sie nur die Daten aktivieren, die Sie für Aktivierungs-Anwendungsfälle benötigen. Aktivieren Sie Daten, die Sie für Marketing-Anwendungsfälle, Callcenter-Integrationen usw. verwenden möchten, bei denen Sie schnellen Zugriff auf ein robustes Kundenprofil benötigen. Wenn Sie Daten nur zur Analyse hochladen, sollten sie wahrscheinlich nicht für das Profil aktiviert werden.
 
-Es gibt wichtige [Leitplanken für Echtzeit-Kundenprofildaten](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) die Sie überprüfen sollten, wenn Sie entscheiden, welche Ihrer eigenen Daten Sie für das Profil aktivieren sollten.
+Es gibt wichtige [Leitplanken für Echtzeit-Kundenprofildaten](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=de) die Sie überprüfen sollten, wenn Sie entscheiden, welche Ihrer eigenen Daten Sie für das Profil aktivieren sollten.
 
 <!--is this accurate. Are there other considerations to point out? -->
 

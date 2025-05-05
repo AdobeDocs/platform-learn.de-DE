@@ -21,7 +21,7 @@ In diesem Video wird gezeigt, wie Daten mit dem HTTP API-Endpunkt in Echtzeit an
 
 ## Weitere Informationen
 
-* [Erstellen einer Streaming-Verbindung mithilfe der API-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
-* [Datensatzdaten mithilfe der Dokumentation zu Streaming-Aufnahme-APIs streamen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-* [Streamen von Zeitreihendaten mit Streaming-Aufnahme-APIs - Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-* [Senden mehrerer Nachrichten in einer einzigen HTTP-Anfrage-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+* [Erstellen einer Streaming-Verbindung mithilfe der API-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=de).
+* [Datensatzdaten mithilfe der Dokumentation zu Streaming-Aufnahme-APIs streamen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=de)
+* [Streamen von Zeitreihendaten mit Streaming-Aufnahme-APIs - Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=de)
+* [Senden mehrerer Nachrichten in einer einzigen HTTP-Anfrage-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=de)

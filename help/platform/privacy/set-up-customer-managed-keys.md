@@ -17,7 +17,7 @@ ht-degree: 19%
 
 # Einrichten von kundenverwalteten Schlüsseln (CMK)
 
-Verwalten Sie die Verschlüsselung statischer Daten mit Ihren eigenen Verschlüsselungsschlüsseln. Weitere Informationen finden Sie in der [Dokumentation zu kundenverwalteten Schlüsseln](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
+Verwalten Sie die Verschlüsselung statischer Daten mit Ihren eigenen Verschlüsselungsschlüsseln. Weitere Informationen finden Sie in der [Dokumentation zu kundenverwalteten Schlüsseln](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
 

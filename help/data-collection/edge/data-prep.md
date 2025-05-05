@@ -16,6 +16,6 @@ ht-degree: 15%
 
 # Datenvorbereitung für die Datenerfassung
 
-Erfahren Sie, wie Sie Ihre Datenschicht zu einem neuen Datenstrom in der Datenerfassung hinzufügen. Außerdem erfahren Sie, wie Sie mit der Funktion Datenvorbereitung für die Datenerfassung einfache Zuordnungsfunktionen ausführen können. Weitere Informationen finden Sie in der [Dokumentation Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#data-prep).
+Erfahren Sie, wie Sie Ihre Datenschicht zu einem neuen Datenstrom in der Datenerfassung hinzufügen. Außerdem erfahren Sie, wie Sie mit der Funktion Datenvorbereitung für die Datenerfassung einfache Zuordnungsfunktionen ausführen können. Weitere Informationen finden Sie in der [Dokumentation Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de#data-prep).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342120/?learn=on&enablevpops)

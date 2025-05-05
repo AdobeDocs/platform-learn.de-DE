@@ -83,7 +83,7 @@ Personalisierung in jedem Maßstab beginnt damit, dass wir verstehen, was verbes
 
 Bevor Sie mit den praktischen Übungen beginnen, werfen Sie einen Blick auf die Architektur hinter diesem Tutorial. Dieses Bootcamp wird eine Reihe von Funktionen rund um Adobe Experience Platform vertiefen und auch mehrere Integrationen über eine Vielzahl von Quellen und Zielen hinweg erörtern. Damit Sie die Architektur hinter diesem Tutorial und die Gesamtpositionierung von Adobe Experience Platform in Ihrem Unternehmens-Ökosystem richtig verstehen können, lesen Sie zunächst das Architekturvideo und das Diagramm.
 
-Wechseln Sie zu [Architektur](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+Wechseln Sie zu [Architektur](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=de).
 
 ## Videos
 
@@ -93,7 +93,7 @@ Das Hauptziel unseres Experience Makers Bootcamps besteht darin, Organisationen 
 
 Es wurden mehrere weitere Videos erstellt, die Elemente des Bootcamps und leistungsstarke Integrationen zwischen Adobe Experience Platform und Nicht-Adobe-Anwendungen zeigen. Klicken Sie auf den unten stehenden Link, um einen Überblick über diese Videos zu erhalten.
 
-Navigieren Sie zu [Videos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Navigieren Sie zu [Videos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=de).
 
 ## YouTube
 

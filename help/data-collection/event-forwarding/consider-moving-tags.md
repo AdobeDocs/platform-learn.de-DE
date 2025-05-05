@@ -17,7 +17,7 @@ ht-degree: 4%
 
 Es gibt mehrere überzeugende Gründe, Client-seitige Anbieter-Tags aus Browsern und Geräten auf einen Server zu verschieben. In diesem Artikel besprechen wir, wie ein Client-seitiges Anbieter-Tag ausgewertet werden kann, um es möglicherweise in eine Ereignisweiterleitungs-Eigenschaft zu verschieben.
 
-Diese Auswertung ist nur erforderlich, wenn Sie erwägen, ein Client-seitiges Anbieter-Tag zu entfernen und es in einer Ereignisweiterleitungseigenschaft durch eine Server-seitige Datenverteilung zu ersetzen. In diesem Artikel wird davon ausgegangen, dass Sie mit den Grundlagen der [Datenerfassung](https://experienceleague.adobe.com/docs/data-collection.html) und [Ereignisweiterleitung“ ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) sind.
+Diese Auswertung ist nur erforderlich, wenn Sie erwägen, ein Client-seitiges Anbieter-Tag zu entfernen und es in einer Ereignisweiterleitungseigenschaft durch eine Server-seitige Datenverteilung zu ersetzen. In diesem Artikel wird davon ausgegangen, dass Sie mit den Grundlagen der [Datenerfassung](https://experienceleague.adobe.com/docs/data-collection.html?lang=de) und [Ereignisweiterleitung“ ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de) sind.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Verfügt der Anbieter über APIs für die Server-zu-Server-Übertragung von Erei
 - Sind die API-Endpunkte vorhanden, um die erforderlichen Daten zu senden? Die Endpunkte, die Ihre Anwendungsfälle unterstützen, finden Sie in der Entwickler- oder API-Dokumentation des Anbieters.
 - Sind Streaming-Ereignisdaten zulässig oder nur Batch-Daten?
 - Welche Authentifizierungsmethoden werden unterstützt? Token, HTTP, OAuth-Client-Anmeldedaten, Version oder andere? Siehe [hier](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets?lang=de) für Methoden, die von der Ereignisweiterleitung unterstützt werden.
-- Was ist der Aktualisierungsversatz ihrer API? Ist diese Beschränkung mit den Mindestwerten für die Ereignisweiterleitung vereinbar? Details [hier](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
+- Was ist der Aktualisierungsversatz ihrer API? Ist diese Beschränkung mit den Mindestwerten für die Ereignisweiterleitung vereinbar? Details [hier](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html?lang=de#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
 - Welche Daten benötigen sie für die entsprechenden Endpunkte?
 - Benötigen sie bei jedem Aufruf des Endpunkts eine anbieterspezifische Benutzerkennung?
 - Wenn sie diese Kennung benötigen, wo und wie kann sie ohne Client-seitigen Code generiert oder erfasst werden?
@@ -87,11 +87,11 @@ Wenn der Anbieter nicht über die API-Endpunkte zur Unterstützung unserer Anwen
 
 Was passiert, wenn sie APIs haben, aber bei jedem API-Aufruf auch eine Unique-Visitor- oder Benutzer-ID benötigen? Wie können wir auf diese ID zugreifen, wenn der Client-seitige Code (Tag) des Anbieters nicht auf der Website ausgeführt wird?
 
-Einige Anbieter ändern ihre Systeme für die neue Welt ohne Drittanbieter-Cookies. Zu diesen Änderungen gehört die Verwendung alternativer eindeutiger Kennungen wie [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) oder anderer [kundengenerierter ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). Wenn der Anbieter eine vom Kunden generierte ID zulässt, können wir sie entweder vom Client an das Platform-Edge Network mit Web- oder Mobile SDK senden oder sie möglicherweise von einem API-Aufruf in der Ereignisweiterleitung erhalten. Wenn wir Daten in einer Ereignisweiterleitungsregel an diesen Anbieter senden, schließen wir diese Kennung einfach nach Bedarf ein.
+Einige Anbieter ändern ihre Systeme für die neue Welt ohne Drittanbieter-Cookies. Zu diesen Änderungen gehört die Verwendung alternativer eindeutiger Kennungen wie [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) oder anderer [kundengenerierter ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=de). Wenn der Anbieter eine vom Kunden generierte ID zulässt, können wir sie entweder vom Client an das Platform-Edge Network mit Web- oder Mobile SDK senden oder sie möglicherweise von einem API-Aufruf in der Ereignisweiterleitung erhalten. Wenn wir Daten in einer Ereignisweiterleitungsregel an diesen Anbieter senden, schließen wir diese Kennung einfach nach Bedarf ein.
 
 Wenn der Anbieter Daten benötigt (z. B. eine anbieterspezifische eindeutige ID), die nur von seinem eigenen Client-seitigen Tag generiert oder aufgerufen werden können, ist dieses Anbieter-Tag wahrscheinlich kein guter Kandidat, um verschoben zu werden. _Es wird davon abgeraten, ein Client-seitiges Tag so zu rekonstruieren, dass diese Datenerfassung in die Ereignisweiterleitung ohne die entsprechenden APIs verschoben wird._
 
-Die Erweiterung [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) kann bei Bedarf HTTP-Anfragen an Anbieter stellen, die über die entsprechenden APIs für die Server-zu-Server-Ereignisdatenübertragung verfügen. Während anbieterspezifische Erweiterungen schön zu haben sind und derzeit weitere Erweiterungen aktiv entwickelt werden, können wir heute Ereignisweiterleitungsregeln mit der Cloud Connector-Erweiterung implementieren, ohne auf zusätzliche Anbietererweiterungen warten zu müssen.
+Die Erweiterung [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html?lang=de) kann bei Bedarf HTTP-Anfragen an Anbieter stellen, die über die entsprechenden APIs für die Server-zu-Server-Ereignisdatenübertragung verfügen. Während anbieterspezifische Erweiterungen schön zu haben sind und derzeit weitere Erweiterungen aktiv entwickelt werden, können wir heute Ereignisweiterleitungsregeln mit der Cloud Connector-Erweiterung implementieren, ohne auf zusätzliche Anbietererweiterungen warten zu müssen.
 
 ## Tools {#tools}
 
@@ -102,5 +102,5 @@ Das Untersuchen und Testen von API-Endpunkten von Anbietern ist mit Tools wie [P
 Dieser Artikel enthält eine Sequenz von Schritten, um ein Client-seitiges Tag des Anbieters zu bewerten und es möglicherweise Server-seitig in eine Ereignisweiterleitungseigenschaft zu verschieben. Weitere Informationen zu verwandten Themen finden Sie unter den folgenden Links:
 
 - [Tag-Management](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) in Adobe Experience Platform
-- [Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) für Server-seitige Verarbeitung
+- [Ereignisweiterleitung](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de) für Server-seitige Verarbeitung
 - [Terminologieaktualisierungen](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=de) in der Datenerfassung

@@ -140,7 +140,7 @@ Ein wichtiger Anwendungsfall für Zusammenführungsrichtlinien ist Data Governan
 
 ## Weitere Ressourcen
 
-* [Dokumentation zu Zusammenführungsrichtlinien](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [Dokumentation zu Zusammenführungsrichtlinien](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=de)
 * [Zusammenführungsrichtlinien-API (Teil der Echtzeit-Kundenprofil-API)-Referenz](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Fahren wir nun mit dem [Data Governance-Framework](apply-data-governance-framework.md) fort.

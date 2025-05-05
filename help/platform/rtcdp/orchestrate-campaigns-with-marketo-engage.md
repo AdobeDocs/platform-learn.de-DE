@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Orchestrieren von Kampagnen mit Marketo Engage und Real-Time Customer Data Platform (CDP), B2B edition.
 
-Erfahren Sie, wie Sie B2B-Kampagnen mit Marketo Engage und Real-Time Customer Data Platform (CDP), B2B edition, orchestrieren. Erfahren Sie, wie Datenaufnahme, Kontoprofile, Segmentierung und Ziele zusammenarbeiten, um die B2B-Kampagnenorchestrierung zu unterstützen. Erhalten Sie Antworten auf häufig gestellte Fragen. Weitere Informationen finden Sie in der Dokumentation zu [Real-Time CDP B2B edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).
+Erfahren Sie, wie Sie B2B-Kampagnen mit Marketo Engage und Real-Time Customer Data Platform (CDP), B2B edition, orchestrieren. Erfahren Sie, wie Datenaufnahme, Kontoprofile, Segmentierung und Ziele zusammenarbeiten, um die B2B-Kampagnenorchestrierung zu unterstützen. Erhalten Sie Antworten auf häufig gestellte Fragen. Weitere Informationen finden Sie in der Dokumentation zu [Real-Time CDP B2B edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338254?learn=on&enablevpops)

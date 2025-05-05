@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie in Real-Time Customer Data Platform eine Verbindung einrichten und Daten an das Azure Blob Storage-Ziel senden. Dieses Ziel unterstützt den Export von Datensätzen und Audiences und ermöglicht Ihnen das Anpassen der Dateikopfzeilen und Datenattribute.
 
-Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
+Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
 

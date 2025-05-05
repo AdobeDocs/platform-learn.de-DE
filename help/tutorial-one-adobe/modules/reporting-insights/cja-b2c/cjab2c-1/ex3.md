@@ -108,7 +108,7 @@ Etwas wirklich Wichtiges ist die **Persistenzeinstellungen**. Das Konzept von eV
 
 Wenn Sie diese Einstellungen nicht ändern, interpretiert CJA die Dimension als **Prop** (Trefferebene). Außerdem können wir die Persistenz ändern, um die Dimension zu einer **eVar** zu machen (den Wert über die gesamte Journey hinweg beibehalten).
 
-Wenn Sie nicht mit eVars und Props vertraut sind, können Sie [weitere Informationen hierzu finden Sie in der Dokumentation](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+Wenn Sie nicht mit eVars und Props vertraut sind, können Sie [weitere Informationen hierzu finden Sie in der Dokumentation](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=de).
 
 Lassen wir den Seitennamen als Eigenschaft. Daher müssen Sie keine „Persistenzeinstellungen **ändern**.
 

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Sicherheitsübersicht des KI-Assistenten
 
-Dies ist ein Überblick über die Sicherheitsfunktionen für den KI-Assistenten, der auf dem <a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf">Sicherheitsdatenblatt“ </a>.  Weitere Informationen finden Sie in der [Dokumentation zum Datenschutz des KI-Assistenten](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/privacy).
+Dies ist ein Überblick über die Sicherheitsfunktionen für den KI-Assistenten, der auf dem <a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf">Sicherheitsdatenblatt“ </a>.  Weitere Informationen finden Sie in der [Dokumentation zum Datenschutz des KI-Assistenten](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/privacy).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441066/?learn=on&enablevpops)

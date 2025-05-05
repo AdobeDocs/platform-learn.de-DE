@@ -26,4 +26,4 @@ Mit dem Löschen von Datensätzen können Datenverwalter und Dateningenieure ein
 
 >[!NOTE]
 >
-> Alle Platform-Kunden können [Datensätze bei Bedarf löschen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). Das Planen von Datensatzlöschungen ist derzeit nur für Kundinnen und Kunden von Healthcare Shield oder Privacy and Security Shield verfügbar.
+> Alle Platform-Kunden können [Datensätze bei Bedarf löschen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=de#delete). Das Planen von Datensatzlöschungen ist derzeit nur für Kundinnen und Kunden von Healthcare Shield oder Privacy and Security Shield verfügbar.

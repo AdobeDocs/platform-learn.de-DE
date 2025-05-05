@@ -16,7 +16,7 @@ ht-degree: 15%
 
 # Konfigurieren von Beziehungen zwischen Schemata
 
-In diesem Video wird gezeigt, wie Sie in Adobe Experience Platform eine Beziehung zwischen zwei Schemata konfigurieren. Beziehungen ermöglichen es Ihnen, einen Datensatz als Lookup-Tabelle für einen anderen zu verwenden. Eine ausführliche Produktdokumentation finden Sie unter [Definieren einer Beziehung zwischen zwei Schemata mithilfe des Schema-Editors](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=de) und [Definieren einer Beziehung zwischen zwei Schemata mithilfe der Schema Registry-API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html)
+In diesem Video wird gezeigt, wie Sie in Adobe Experience Platform eine Beziehung zwischen zwei Schemata konfigurieren. Beziehungen ermöglichen es Ihnen, einen Datensatz als Lookup-Tabelle für einen anderen zu verwenden. Eine ausführliche Produktdokumentation finden Sie unter [Definieren einer Beziehung zwischen zwei Schemata mithilfe des Schema-Editors](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=de) und [Definieren einer Beziehung zwischen zwei Schemata mithilfe der Schema Registry-API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html?lang=de)
 
 >[!VIDEO](https://video.tv.adobe.com/v/333536?learn=on&enablevpops)
 

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Einrichten eines Advertiser-Kontos in Real-Time CDP Collaboration
 
-Erfahren Sie, wie Sie in Real-Time CDP Collaboration ein Advertiser-Konto (eine Organisation) einrichten. Eine ausführliche Dokumentation finden Sie unter [Onboarding und Verwalten der Organisation](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}.
+Erfahren Sie, wie Sie in Real-Time CDP Collaboration ein Advertiser-Konto (eine Organisation) einrichten. Eine ausführliche Dokumentation finden Sie unter [Onboarding und Verwalten der Organisation](https://experienceleague.adobe.com/de/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452264/?learn=on&enablevpops)

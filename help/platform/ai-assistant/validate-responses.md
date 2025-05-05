@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Validieren von Antworten vom KI-Assistenten
 
-Erfahren Sie, wie Sie die Antworten überprüfen und validieren, die der KI-Assistent in Adobe Experience Platform bereitstellt. Weitere Informationen finden Sie im [Handbuch zur Benutzeroberfläche des KI-Assistenten](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#verify-responses).
+Erfahren Sie, wie Sie die Antworten überprüfen und validieren, die der KI-Assistent in Adobe Experience Platform bereitstellt. Weitere Informationen finden Sie im [Handbuch zur Benutzeroberfläche des KI-Assistenten](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/ui-guide#verify-responses).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)

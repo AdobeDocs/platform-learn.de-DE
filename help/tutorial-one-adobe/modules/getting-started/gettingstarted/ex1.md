@@ -58,7 +58,7 @@ Im **Erweiterungen**-Menü klicken Sie auf das Symbol **Puzzleteil** und heften 
 
 ## Konfigurieren der Chrome-Erweiterung
 
-Wechseln Sie zu [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} und klicken Sie dann auf das Erweiterungssymbol, um es zu öffnen.
+Wechseln Sie zu [https://experienceleague.adobe.com/de/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/de/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} und klicken Sie dann auf das Erweiterungssymbol, um es zu öffnen.
 
 ![DSN](./images/tuthome.png)
 
@@ -135,7 +135,7 @@ Nach der Aktivierung der Konfiguration wird neben den Initialen der Umgebung ein
 
 ## Überprüfen des Tutorial-Inhalts
 
-Gehen Sie als Test zu [diese Seite](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
+Gehen Sie als Test zu [diese Seite](https://experienceleague.adobe.com/de/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Sie sollten jetzt sehen, dass alle **Umgebungsvariablen** auf dieser Seite durch ihre wahren Werte ersetzt wurden, basierend auf der aktivierten Umgebung in der Chrome-Erweiterung.
 
