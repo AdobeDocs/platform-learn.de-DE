@@ -13,13 +13,13 @@ ht-degree: 6%
 
 Die Migration von Target SDK zu Optimize SDK erfordert eine Ersteinrichtung, um die ordnungsgemäße Datenerfassung, Funktionen und Funktionen von Optimize SDK zu ermöglichen. Die folgenden Schritte müssen abgeschlossen sein, bevor Änderungen an der Implementierung von Mobile Apps vorgenommen werden:
 
-- [Konfigurieren der entsprechenden Berechtigungen](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} in der Adobe Admin Console für die Datenerfassung
-- [Konfigurieren eines XDM-](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"}) zum Übergeben strukturierter Daten an die Edge Network
-- [Konfigurieren des Schemas](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"} um Adobe Target-Daten zu empfangen
-- [Konfigurieren eines Identity-Namespace](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"} für geräteübergreifende Personalisierung und mbox3rdPartyId-Funktionen
-- [Erstellen eines Datenstroms](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} um die Weiterleitung von Daten aus Edge Network zu ermöglichen
-- [Konfigurieren des Datenstroms](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} um die Weiterleitung von Daten an Adobe Target zu ermöglichen
-- [Konfigurieren der Tag-Eigenschaft](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} für die Decisioning-Erweiterung
+- [Konfigurieren der entsprechenden Berechtigungen](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} in der Adobe Admin Console für die Datenerfassung
+- [Konfigurieren eines XDM-](https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"}) zum Übergeben strukturierter Daten an die Edge Network
+- [Konfigurieren des Schemas](https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"} um Adobe Target-Daten zu empfangen
+- [Konfigurieren eines Identity-Namespace](https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"} für geräteübergreifende Personalisierung und mbox3rdPartyId-Funktionen
+- [Erstellen eines Datenstroms](https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} um die Weiterleitung von Daten aus Edge Network zu ermöglichen
+- [Konfigurieren des Datenstroms](https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} um die Weiterleitung von Daten an Adobe Target zu ermöglichen
+- [Konfigurieren der Tag-Eigenschaft](https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} für die Decisioning-Erweiterung
 
 ## Erweiterungskonfiguration
 
@@ -68,4 +68,4 @@ Erfahren Sie als Nächstes, wie [ Target-SDK ](replace-sdk.md).
 
 >[!NOTE]
 >
->Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) posten.
+>Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=de#M625) posten.
