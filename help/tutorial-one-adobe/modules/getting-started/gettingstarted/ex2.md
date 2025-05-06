@@ -4,9 +4,9 @@ description: Erste Schritte - Verwenden des Demosystems neben dem Setup Ihrer La
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '329'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Navigieren Sie zu [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blan
 
 ![DSN](./images/dsnsetup.png)
 
-Wählen Sie in **Dropdown** Umgebung Ihre AEP-Instanz und Sandbox aus.
+Wählen Sie in **Dropdown** Umgebung Ihre Instanz und Sandbox aus.
 
 ![DSN](./images/dsnh1.png)
 

@@ -4,10 +4,10 @@ description: Erste Schritte - Installieren der Chrome-Erweiterung für die Exper
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
+source-wordcount: '911'
+ht-degree: 1%
 
 ---
 
@@ -15,15 +15,16 @@ ht-degree: 0%
 
 ## Über die Chrome-Erweiterung
 
-Die Dokumentation wurde generisch gestaltet, sodass sie von jedem mithilfe einer beliebigen Adobe Experience Platform-Instanz einfach wiederverwendet werden kann.
-Um die Dokumentation wiederverwendbar zu machen, **„Umgebungsvariablen** in der Dokumentation eingeführt, was bedeutet, dass Sie die folgenden **(Platzhalter** in der Dokumentation finden. Jeder Platzhalter ist eine spezifische Variable für eine bestimmte Umgebung. Die Chrome-Erweiterung ändert diese Variable, damit Sie Code und Text aus den Tutorial-Seiten einfach kopieren und in die verschiedenen Benutzeroberflächen einfügen können, die Sie im Rahmen des Tutorials verwenden werden.
+Dieses Tutorial wurde generisch gestaltet, damit es von jedem mithilfe einer beliebigen Adobe Experience Cloud-Instanz einfach wiederverwendet werden kann.
+
+Um die Dokumentation wiederverwendbar zu machen, **im Tutorial &quot;**&quot; eingeführt, was bedeutet, dass Sie die folgenden **in** Dokumentation finden. Jeder Platzhalter ist eine spezifische Variable für eine bestimmte Umgebung. Die Chrome-Erweiterung ändert diese Variable, damit Sie Code und Text aus den Tutorial-Seiten einfach kopieren und in die verschiedenen Benutzeroberflächen einfügen können, die Sie im Rahmen des Tutorials verwenden werden.
 
 Ein Beispiel für solche Werte finden Sie unten. Derzeit können diese Werte noch nicht verwendet werden. Sobald Sie jedoch die Chrome-Erweiterung installieren und aktivieren, werden diese Variablen in normalen Text geändert, den Sie kopieren und wiederverwenden können.
 
 | Name | Schlüssel | Beispiel |
 |:-------------:| :---------------:| :---------------:|
-| AEP IMS-Organisations-ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| AEP IMS-Organisationsname | `--aepImsOrgName--` | `Experience Platform International` |
+| Kennung der IMS-Organisation | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| IMS-Organisationsname | `--aepImsOrgName--` | `Experience Platform International` |
 | AEP-Mandanten-ID | `--aepTenantId--` | `_experienceplatform` |
 | AEP Sandbox-Name | `--aepSandboxName--` | `one-adobe` |
 | LDAP für Teilnehmerprofil | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ Im **Erweiterungen**-Menü klicken Sie auf das Symbol **Puzzleteil** und heften 
 
 ## Konfigurieren der Chrome-Erweiterung
 
-Wechseln Sie zu [https://experienceleague.adobe.com/de/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/de/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} und klicken Sie dann auf das Erweiterungssymbol, um es zu öffnen.
+Wechseln Sie zu [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} und klicken Sie dann auf das Erweiterungssymbol, um es zu öffnen.
 
 ![DSN](./images/tuthome.png)
 
@@ -135,7 +136,7 @@ Nach der Aktivierung der Konfiguration wird neben den Initialen der Umgebung ein
 
 ## Überprüfen des Tutorial-Inhalts
 
-Gehen Sie als Test zu [diese Seite](https://experienceleague.adobe.com/de/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
+Gehen Sie als Test zu [diese Seite](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Sie sollten jetzt sehen, dass alle **Umgebungsvariablen** auf dieser Seite durch ihre wahren Werte ersetzt wurden, basierend auf der aktivierten Umgebung in der Chrome-Erweiterung.
 

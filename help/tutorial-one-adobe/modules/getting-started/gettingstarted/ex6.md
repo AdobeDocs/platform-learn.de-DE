@@ -3,9 +3,10 @@ title: Erste Schritte - Adobe I/O
 description: Erste Schritte - Adobe I/O
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '435'
 ht-degree: 4%
 
 ---
@@ -21,6 +22,11 @@ Navigieren Sie zu [https://developer.adobe.com/console/home](https://developer.a
 ![Neue Adobe I/O-Integration](./images/iohome.png){zoomable="yes"}
 
 Achten Sie darauf, dass Sie die richtige Instanz in der oberen rechten Ecke Ihres Bildschirms auswählen. Ihre Instanz ist `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+> Der folgende Screenshot zeigt, wie eine bestimmte Organisation ausgewählt wird. Wenn Sie dieses Tutorial durchlaufen, hat Ihre Organisation höchstwahrscheinlich einen anderen Namen. Wenn Sie sich für dieses Tutorial angemeldet haben, wurden Ihnen die zu verwendenden Umgebungsdetails zur Verfügung gestellt. Befolgen Sie bitte diese Anweisungen.
+
 Wählen Sie anschließend **Neues Projekt erstellen**.
 
 ![Neue Adobe I/O-Integration](./images/iocomp.png){zoomable="yes"}
@@ -43,7 +49,7 @@ Geben Sie einen Namen für Ihre Berechtigung ein: `--aepUserLdap-- - One Adobe O
 
 ![Neue Adobe I/O-Integration](./images/api4.png){zoomable="yes"}
 
-Wählen Sie das Standardprofil **Standardkonfiguration für Firefly Services** und dann **Konfigurierte API speichern** aus.
+Wählen Sie das Standardprofil **Standardkonfiguration für Firefly Services** und anschließend **Konfigurierte API speichern** aus.
 
 ![Neue Adobe I/O-Integration](./images/api9.png){zoomable="yes"}
 
@@ -57,7 +63,7 @@ Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
 
 ![Azure-Speicher](./images/ps2.png){zoomable="yes"}
 
-Wählen Sie **Creative Cloud** und **Photoshop - Firefly Services** aus. Klicken Sie auf **Weiter**.
+Wählen Sie **Creative Cloud** und dann **Photoshop - Firefly Services**. Klicken Sie auf **Weiter**.
 
 ![Azure-Speicher](./images/ps3.png){zoomable="yes"}
 
@@ -67,7 +73,7 @@ Klicken Sie auf **Weiter**.
 
 Als Nächstes müssen Sie ein Produktprofil auswählen, das definiert, welche Berechtigungen für diese Integration verfügbar sind.
 
-Wählen Sie **Standardkonfiguration für Firefly** und **Standardkonfiguration für Creative Cloud-Automatisierungsdienste** aus.
+Wählen Sie **Standardkonfiguration für Firefly Services** und **Standardkonfiguration für Creative Cloud-Automatisierungsdienste** aus.
 
 Wählen Sie **Konfigurierte API speichern**.
 
