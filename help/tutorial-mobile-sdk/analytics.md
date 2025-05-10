@@ -171,7 +171,7 @@ Beachten Sie Folgendes in der Analytics-Zuordnung:
 
 ## Zuordnung mit Kontextdaten
 
-An Analytics weitergeleitete XDM-Daten werden in [Kontextdaten](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en) einschließlich standardmäßiger und benutzerdefinierter Felder, konvertiert.
+An Analytics weitergeleitete XDM-Daten werden in [Kontextdaten](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=de) einschließlich standardmäßiger und benutzerdefinierter Felder, konvertiert.
 
 Der Kontextdatenschlüssel wird mit dieser Syntax erstellt:
 
