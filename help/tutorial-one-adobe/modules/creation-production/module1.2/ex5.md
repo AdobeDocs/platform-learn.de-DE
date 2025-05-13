@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -146,7 +146,7 @@ Wenn die benutzerdefinierte Aktion in Frame.io aufgerufen wird, erwartet Frame.i
 }
 ```
 
-Damit das Szenario `--aepUserLdap-- - Firefly + Photoshop` erfolgreich ausgeführt werden kann, sind daher Felder wie **&#x200B;**, **cta**, **button** und **psdTemplate** erforderlich.
+Damit das Szenario `--aepUserLdap-- - Firefly + Photoshop` erfolgreich ausgeführt werden kann, sind daher Felder wie ****, **cta**, **button** und **psdTemplate** erforderlich.
 
 Die ersten drei Felder **Eingabeaufforderung**, **cta**, **button** erfordern Benutzereingaben, die in Frame.io erfasst werden müssen, wenn der Benutzer die benutzerdefinierte Aktion aufruft. Daher muss in Workfront Fusion zunächst überprüft werden, ob diese Variablen verfügbar sind. Ist dies nicht der Fall, sollte Workfront Fusion auf Frame.io zurückantworten, um die Eingabe dieser Variablen anzufordern. Dies erreichen Sie, indem Sie ein Formular in Frame.io verwenden.
 
@@ -250,7 +250,7 @@ Es sollte nun eine Eingabeaufforderung in Frame.io angezeigt werden. Füllen Sie
 
 ![Frame-IO](./images/frame38.png)
 
-Wechseln Sie zurück zu Workfront Fusion und klicken Sie auf die Blase im Modul **Webhook-Antwort**. Daraufhin wird unter **OUTPUT** der Text mit der JSON-Payload für das Formular angezeigt. Klicken Sie **erneut auf &quot;** ausführen“.
+Wechseln Sie zurück zu Workfront Fusion und klicken Sie auf die Blase im Modul **Webhook-Antwort**. Sie sehen unter &quot;**&quot; den** mit der JSON-Payload für das Formular. Klicken Sie **erneut auf &quot;** ausführen“.
 
 ![Frame-IO](./images/frame40.png)
 

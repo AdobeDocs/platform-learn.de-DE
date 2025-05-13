@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 45f6f9db7d5b3e79e10d508a44a532261bd9cdb3
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1438'
 ht-degree: 1%
 
 ---
@@ -186,7 +186,7 @@ Wählen Sie **Erstellen** aus.
 
 ![Azure-Speicher](./images/az28.png){zoomable="yes"}
 
-Nachdem Sie Ihr **SAS-Token** erhalten haben, wählen Sie **Kopieren** aus.
+Nachdem Sie Ihre **Shared Access Signature** erhalten haben, wählen Sie **Kopieren** aus, um die URL zu kopieren.
 
 ![Azure-Speicher](./images/az29.png){zoomable="yes"}
 

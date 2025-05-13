@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1877'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Sie sollten das dann sehen. Klicken Sie **Adresse in Zwischenablage kopieren**.
 
 ## 1.2.6.2 Webhook in Frame.io konfigurieren
 
-Navigieren Sie zu [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Klicken Sie **ENTWICKLER-TOOLS** und wählen Sie dann **Benutzerdefinierte Aktionen**.
+Navigieren Sie zu [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Klicken Sie **ENTWICKLER-TOOLS** und wählen Sie dann **Webhooks** aus.
 
 ![Frame-IO](./images/aemf7.png)
 
@@ -303,7 +303,7 @@ Wählen **unter &quot;**&quot; die Variable `{{3.files[]}}`.
 
 >[!NOTE]
 >
->Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3&rbrace;**. Das bedeutet, dass die Variable `{{3.filenames[]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
+>Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3}**. Das bedeutet, dass die Variable `{{3.filenames[]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
 
 Klicken Sie auf **OK**.
 

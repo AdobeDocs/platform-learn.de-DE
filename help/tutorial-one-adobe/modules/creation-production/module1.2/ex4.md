@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ Klicken Sie auf den Pfeil, um das Dropdown-Menü zu öffnen, und wählen Sie **K
 ![WF Fusion](./images/wffc2.png)
 
 Legen Sie **Name** des geklonten Szenarios auf `--aepUserLdap-- - Firefly + Photoshop` fest und wählen Sie das entsprechende **Target-Team**. Klicken Sie **Hinzufügen**, um einen neuen Webhook hinzuzufügen.
+
+>[!NOTE]
+>
+>Möglicherweise wird die Option zum Auswählen eines **Target-Teams** nicht angezeigt. Diese Option wird nur angezeigt, wenn Sie Benutzer in mehr als einem Team in Workfront Fusion sind. Wenn Sie diese Option nicht sehen, bedeutet dies einfach, dass Sie nur zu 1 Team hinzugefügt wurden, sodass keine Auswahl erforderlich ist.
 
 ![WF Fusion](./images/wffc3.png)
 
@@ -214,7 +218,7 @@ Fügen Sie den Namen **2048x2048-background** in das Dialogfeld &quot;Workfront 
 
 Scrollen Sie nach unten, bis Sie &quot;**&quot;**. Jetzt müssen Sie definieren, was in die Hintergrundebene eingefügt werden soll. In diesem Fall müssen Sie die Ausgabe des Moduls **Adobe Firefly** auswählen, das das dynamisch generierte Bild enthält.
 
-Wählen **für** die Option **Extern** aus. Für **Dateispeicherort** kopieren Sie die `{{XX.details[].url}}` aus der Ausgabe des **Adobe Firefly**-Moduls und fügen Sie sie ein. Ersetzen Sie **XX** in der Variablen durch die Sequenznummer des **Adobe Firefly**-Moduls, in diesem Beispiel **22**.
+Wählen **für** die Option **Extern** aus. Für **Dateispeicherort** müssen Sie die Variable `{{XX.details[].url}}` aus der Ausgabe des **Adobe Firefly**-Moduls kopieren und einfügen, aber Sie müssen **XX** in der Variablen durch die Sequenznummer des **Adobe Firefly**-Moduls ersetzen, in diesem Beispiel **22**.
 
 ![WF Fusion](./images/wffc28.png)
 
