@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 9ddabdf0b66ea4772352f5aa82c612fa07891db3
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2058'
 ht-degree: 1%
 
 ---
@@ -125,9 +125,13 @@ Nachdem Sie alle Felder ausgefüllt haben, klicken Sie auf **Weiter**. Ihre Verb
 
 ![WF Fusion](./images/wffcff6.png)
 
-Wählen Sie als Nächstes die Variable **Eingabeaufforderung** aus, die dem Szenario vom eingehenden **benutzerdefinierten Webhook“ bereitgestellt**. Klicken Sie auf **OK**.
+Wählen Sie als Nächstes die Variable **Eingabeaufforderung** aus, die dem Szenario vom eingehenden **benutzerdefinierten Webhook“ bereitgestellt**.
 
 ![WF Fusion](./images/wffcff7.png)
+
+Legen Sie anschließend die **Modellversion** **prompt** auf **image4 standard** fest. Klicken Sie auf **OK**.
+
+![WF Fusion](./images/wffcff7b.png)
 
 Bevor Sie fortfahren, müssen Sie im Szenario die alte Route deaktivieren. Für diese Übung verwenden Sie nur die neue Route, die Sie gerade konfigurieren. Klicken Sie dazu auf das **Schraubenschlüssel**-Symbol zwischen dem **Router**-Modul und dem **Iterator**-Modul und wählen Sie **Route deaktivieren**.
 
@@ -261,8 +265,6 @@ Sie können jetzt sehen, dass erfolgreich eine neue PSD-Datei generiert und in I
 
 ## 1.2.4.3 Ändern der Textebenen einer PSD-Datei
 
-### Aktionsaufruf-Text
-
 Bewegen Sie als Nächstes den Mauszeiger über das Modul **Adobe Photoshop - PSD** Bearbeitungen anwenden und klicken Sie auf das Symbol **+** .
 
 ![WF Fusion](./images/wffc34.png)
@@ -277,67 +279,59 @@ Wählen Sie **Textebenen bearbeiten**.
 
 Sie sollten das dann sehen. Wählen Sie zunächst die zuvor bereits konfigurierte Adobe Photoshop-Verbindung aus, die `--aepUserLdap-- Adobe IO` benannt werden soll.
 
-Jetzt müssen Sie den Speicherort der **Eingabedatei** definieren, die die Ausgabe des vorherigen Schritts ist, und unter **Ebenen** müssen Sie den **Namen** der Textebene eingeben, die Sie ändern möchten.
+Jetzt müssen Sie den Speicherort der **Eingabedatei** definieren, die die Ausgabe des vorherigen Schritts ist, und unter **Ebenen** müssen Sie auf **+ Element hinzufügen** für jede Ebene klicken, für die der Text geändert werden muss.
 
 ![WF Fusion](./images/wffc37.png)
 
-Wählen Sie für **Eingabedatei** die Option **Azure** für **Eingabedateispeicherung** und stellen Sie sicher, dass Sie die Ausgabe aus der vorherigen Anforderung **Adobe Photoshop - PSD-Bearbeitungen anwenden** auswählen, die Sie hier übernehmen können: `data[]._links.renditions[].href`
+Wählen Sie für **Eingabedatei** die Option **Azure** für **Eingabedateispeicherung** und stellen Sie sicher, dass Sie die Ausgabe aus der vorherigen Anforderung **Adobe Photoshop - PSD-Bearbeitungen anwenden** auswählen, die Sie wie folgt definieren können: ``{{XX.data[].`_links`.renditions[].href}}`` (ersetzen Sie XX durch die Sequenznummer des vorherigen Moduls Adobe Photoshop - PSD-Bearbeitungen anwenden).
+
+Klicken Sie anschließend auf **+Element hinzufügen** unter **Ebenen**, um mit dem Hinzufügen der Textebenen zu beginnen, die aktualisiert werden müssen.
 
 ![WF Fusion](./images/wffc37a.png)
 
-Öffnen Sie die Datei **citsignal-fiber.psd**. In der Datei werden Sie feststellen, dass die Ebene, die den Aktionsaufruf enthält, **2048x2048-cta** heißt.
+Es sind zwei Änderungen vorzunehmen. Der CTA-Text und der Schaltflächentext in der Datei **Citisignal-fiber.psd** müssen aktualisiert werden.
+
+Um die Ebenennamen zu finden, öffnen Sie die Datei &quot;**-fiber.psd**. In der Datei werden Sie feststellen, dass die Ebene, die den Aktionsaufruf enthält, **2048x2048-cta** heißt.
 
 ![WF Fusion](./images/wffc38.png)
 
-Geben Sie den Namen **2048x2048-cta** unter **Name** im Dialogfeld ein.
+In der Datei **citsignal-fiber.psd** werden Sie auch feststellen, dass die Ebene, die die call to action enthält, **2048x2048-button-text** heißt.
+
+![WF Fusion](./images/wffc44.png)
+
+Zunächst müssen Sie die Änderungen konfigurieren, die an der Ebene (2048x2048 **cta) vorgenommen** müssen. Geben Sie den Namen **2048x2048-cta** unter **Name** im Dialogfeld ein.
 
 ![WF Fusion](./images/wffc39.png)
 
-Scrollen Sie nach unten, bis **Text** > **Inhalt** angezeigt wird. Wählen Sie die Variable **cta** aus der Webhook-Payload aus.
+Scrollen Sie nach unten, bis **Text** > **Inhalt** angezeigt wird. Wählen Sie die Variable **cta** aus der Webhook-Payload aus. Klicken Sie auf **Hinzufügen**.
 
 ![WF Fusion](./images/wffc40.png)
 
-Scrollen Sie nach unten, bis Sie **Ausgabe** sehen. Wählen Sie **Speicher** die Option **Azure** aus. Geben Sie **Dateispeicherort** den folgenden Speicherort ein. Beachten Sie, dass dem Dateinamen die Variable `{{timestamp}}` hinzugefügt wurde. Dadurch wird sichergestellt, dass jede generierte Datei einen eindeutigen Namen hat. Legen Sie außerdem **Type** auf &quot;**.adobe.photoshop** fest. Klicken Sie auf **OK**.
+Sie sollten das dann sehen. Klicken Sie auf **+Element hinzufügen** unter **Ebenen**, um mit dem Hinzufügen der Textebenen zu beginnen, die aktualisiert werden müssen.
+
+![WF Fusion](./images/wffc40a.png)
+
+Geben Sie den Namen **2048x2048-button-text** unter **Name** im Dialogfeld ein.
+
+![WF Fusion](./images/wffc40b.png)
+
+Scrollen Sie nach unten, bis **Text** > **Inhalt** angezeigt wird. Wählen Sie die Variable **Schaltfläche** aus der Webhook-Payload aus. Klicken Sie auf **Hinzufügen**.
+
+![WF Fusion](./images/wffc40c.png)
+
+Sie sollten das dann sehen.
+
+![WF Fusion](./images/wffc40d.png)
+
+Scrollen Sie nach unten, bis Sie **Ausgabe** sehen. Wählen Sie **Speicher** die Option **Azure** aus. Geben Sie **Dateispeicherort** den folgenden Speicherort ein. Beachten Sie, dass dem Dateinamen die Variable `{{timestamp}}` hinzugefügt wurde. Dadurch wird sichergestellt, dass jede generierte Datei einen eindeutigen Namen hat. Legen Sie außerdem **Type** auf &quot;**.adobe.photoshop** fest.
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
 ![WF Fusion](./images/wffc41.png)
 
-### Schaltflächentext
+Legen Sie **Type** auf **vnd.adobe.photoshop** fest. Klicken Sie auf **OK**.
 
-Klicken Sie mit der rechten Maustaste auf das soeben erstellte Modul und wählen Sie **Klonen**. Dadurch wird ein zweites ähnliches Modul erstellt.
-
-![WF Fusion](./images/wffc42.png)
-
-Verbinden Sie das geklonte Modul mit dem vorherigen Modul **Adobe Photoshop - Textebenen bearbeiten** .
-
-![WF Fusion](./images/wffc42a.png)
-
-Sie sollten das dann sehen. Wählen Sie zunächst die zuvor bereits konfigurierte Adobe Photoshop-Verbindung aus, die `--aepUserLdap-- Adobe IO` benannt werden soll.
-
-Jetzt müssen Sie den Speicherort der **Eingabedatei** definieren, die die Ausgabe des vorherigen Schritts ist, und unter **Ebenen** müssen Sie den **Namen** der Textebene eingeben, die Sie ändern möchten.
-
-![WF Fusion](./images/wffc43.png)
-
-Wählen Sie für **Eingabedatei** die Option **Azure** für **Eingabedateispeicherung** und stellen Sie sicher, dass Sie die Ausgabe aus der vorherigen Anforderung **Adobe Photoshop - Textebenen bearbeiten** auswählen, die Sie hier verwenden können: `data[]._links.renditions[].href`
-
-Öffnen Sie die Datei **citsignal-fiber.psd**. In der Datei werden Sie feststellen, dass die Ebene, die den Aktionsaufruf enthält, **2048x2048-button-text** heißt.
-
-![WF Fusion](./images/wffc44.png)
-
-Geben Sie den Namen **2048x2048-button-text** unter **Name** im Dialogfeld ein.
-
-![WF Fusion](./images/wffc43.png)
-
-Scrollen Sie nach unten, bis **Text** > **Inhalt** angezeigt wird. Wählen Sie die Variable **Schaltfläche** aus der Webhook-Payload aus.
-
-![WF Fusion](./images/wffc45.png)
-
-Scrollen Sie nach unten, bis Sie **Ausgabe** sehen. Wählen Sie **Speicher** die Option **Azure** aus. Geben Sie **Dateispeicherort** den folgenden Speicherort ein. Beachten Sie, dass dem Dateinamen die Variable `{{timestamp}}` hinzugefügt wurde. Dadurch wird sichergestellt, dass jede generierte Datei einen eindeutigen Namen hat. Legen Sie außerdem **Type** auf &quot;**.adobe.photoshop** fest. Klicken Sie auf **OK**.
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-![WF Fusion](./images/wffc46.png)
+![WF Fusion](./images/wffc41a.png)
 
 Klicken Sie **Speichern**, um Ihre Änderungen zu speichern.
 
@@ -369,9 +363,13 @@ Sie sollten das dann sehen. Fügen Sie die folgende Payload in &quot;**&quot;**.
 
 ![WF Fusion](./images/wffc51.png)
 
-Kopieren Sie die Variable `{{XX.data[]._links.renditions[].href}}` und fügen Sie sie ein. Ersetzen **XX** durch die Sequenznummer des letzten **Adobe Photoshop -**-Moduls, in diesem Fall **25**. Aktivieren Sie das Kontrollkästchen für **Erweiterte Einstellungen anzeigen** und klicken Sie dann auf **Element hinzufügen**.
+Kopieren Sie die Variable `{{XX.data[]._links.renditions[].href}}` und fügen Sie sie ein. Ersetzen **XX** durch die Sequenznummer des letzten **Adobe Photoshop -**-Moduls, in diesem Fall **30**.
 
 ![WF Fusion](./images/wffc52.png)
+
+Aktivieren Sie das Kontrollkästchen für **Erweiterte Einstellungen anzeigen** und klicken Sie dann auf **Element hinzufügen**.
+
+![WF Fusion](./images/wffc52b.png)
 
 Geben Sie im Feld **Schlüssel** `Content-Type` ein. Geben Sie im Feld **Wert** `application/json` ein. Klicken Sie auf **Hinzufügen**.
 
