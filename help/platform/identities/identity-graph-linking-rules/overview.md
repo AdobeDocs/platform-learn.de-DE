@@ -22,7 +22,7 @@ ht-degree: 17%
 >
 >Regeln zur Identitätsdiagramm-Verknüpfung sind derzeit nur eingeschränkt verfügbar. Wenden Sie sich an Ihr Adobe-Accountteam, um Informationen zum Zugriff auf die Funktion in Entwicklungs-Sandboxes zu erhalten.
 
-Verschaffen Sie sich einen Überblick darüber, wie Regeln zur Identitätsdiagramm-Verknüpfung Datenarchitekten dabei helfen, genaue Kundenprofile zu verwalten und das Ausblenden von Diagrammen zu verhindern. Weitere Informationen finden Sie in der [Dokumentation zu Regeln für die Identitätsdiagramm-Verknüpfung](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
+Verschaffen Sie sich einen Überblick darüber, wie Regeln zur Identitätsdiagramm-Verknüpfung Datenarchitekten dabei helfen, genaue Kundenprofile zu verwalten und das Ausblenden von Diagrammen zu verhindern. Weitere Informationen finden Sie in der [Dokumentation zu Regeln für die Identitätsdiagramm-Verknüpfung](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 

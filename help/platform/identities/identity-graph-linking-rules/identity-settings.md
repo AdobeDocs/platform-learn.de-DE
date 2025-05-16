@@ -21,6 +21,6 @@ ht-degree: 0%
 >
 >Regeln zur Identitätsdiagramm-Verknüpfung sind derzeit nur eingeschränkt verfügbar. Wenden Sie sich an Ihr Adobe-Accountteam, um Informationen zum Zugriff auf die Funktion in Entwicklungs-Sandboxes zu erhalten.
 
-Erfahren Sie, wie Sie in Adobe Experience Platform Regeln zur Identitätsdiagramm-Verknüpfung aktivieren und konfigurieren, um genaue Kundenprofile zu erstellen. In diesem Video werden die Namespace-Priorisierung, die Einstellungen für die Eindeutigkeit und die Validierung behandelt, sodass Sie diese Funktionen in Ihren Sandboxes effektiv verwenden können. Weitere Informationen finden Sie im [Handbuch zur Benutzeroberfläche für Identitätseinstellungen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-settings-ui).
+Erfahren Sie, wie Sie in Adobe Experience Platform Regeln zur Identitätsdiagramm-Verknüpfung aktivieren und konfigurieren, um genaue Kundenprofile zu erstellen. In diesem Video werden die Namespace-Priorisierung, die Einstellungen für die Eindeutigkeit und die Validierung behandelt, sodass Sie diese Funktionen in Ihren Sandboxes effektiv verwenden können. Weitere Informationen finden Sie im [Handbuch zur Benutzeroberfläche für Identitätseinstellungen](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-settings-ui).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458487/?learn=on&enablevpops)
