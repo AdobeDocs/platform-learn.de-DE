@@ -6,22 +6,58 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1918'
 ht-degree: 1%
 
 ---
 
 # 1.1.2 Optimieren Sie Ihren Firefly-Prozess mithilfe von Microsoft Azure und vordefinierten URLs
 
-Erfahren Sie, wie Sie Ihren Firefly-Prozess mithilfe von Microsoft Azure und vordefinierten URLs optimieren können.
+Erfahren Sie, wie Sie Ihren Firefly-Prozess mithilfe von Microsoft Azure und vorsignierten URLs optimieren können.
 
-## 1.1.2.1 Erstellen eines Azure-Abonnements
+## 1.1.2.1 Was sind vorsignierte URLs?
+
+Eine vordefinierte URL ist eine URL, die Ihnen temporären Zugriff auf ein bestimmtes Objekt an einem Speicherort gewährt. Mithilfe der URL kann ein Benutzer beispielsweise entweder das Objekt LESEN oder ein Objekt SCHREIBEN (oder ein vorhandenes Objekt aktualisieren). Die URL enthält bestimmte Parameter, die von Ihrer Anwendung festgelegt werden.
+
+Im Zusammenhang mit der Erstellung der Automatisierung der Content-Supply-Chain gibt es oft mehrere Dateivorgänge, die für einen bestimmten Anwendungsfall erfolgen müssen. Beispielsweise kann es erforderlich sein, den Hintergrund einer Datei zu ändern, den Text verschiedener Ebenen zu ändern usw. Es ist nicht immer möglich, alle Dateioperationen gleichzeitig auszuführen, was einen mehrstufigen Ansatz erforderlich macht. Nach jedem Zwischenschritt ist die Ausgabe dann eine temporäre Datei, die für die Ausführung des nächsten Schritts benötigt wird. Sobald dieser nächste Schritt ausgeführt wird, verliert die temporäre Datei schnell an Wert und wird oft nicht mehr benötigt, sodass sie gelöscht werden sollte.
+
+Adobe Firefly Services unterstützt derzeit die folgenden Domains:
+
+- Amazon AWS: *.amazonaws.com
+- Microsoft Azure: *.windows.net
+- Dropbox: *.dropboxusercontent.com
+
+Der Grund, warum häufig Cloud-Speicherlösungen verwendet werden, ist, dass die Zwischenelemente, die erstellt werden, schnell an Wert verlieren. Das Problem, das durch vorsignierte URLs gelöst wird, lässt sich am besten mit einer Massenspeicherlösung lösen, die in der Regel einer der oben genannten Cloud-Services ist.
+
+Innerhalb des Adobe-Ökosystems gibt es auch Speicherlösungen wie Frame.io, Workfront Fusion und Adobe Experience Manager Assets. Diese Lösungen unterstützen auch vorsignierte URLs, sodass während der Implementierung häufig eine Auswahl getroffen werden muss. Die Auswahl basiert dann oft auf einer Kombination aus bereits verfügbaren Anwendungen und Speicherkosten.
+
+Vorsignierte URLs werden daher aus folgenden Gründen in Kombination mit Adobe Firefly Services-Vorgängen verwendet:
+
+- Unternehmen müssen häufig mehrere Änderungen am selben Image in Zwischenschritten verarbeiten. Dazu ist ein Zwischenspeicher erforderlich.
+- Der Zugriff auf das Lesen und Schreiben von Cloud-Speicherorten sollte sicher sein. In einer Server-seitigen Umgebung ist es nicht möglich, sich manuell anzumelden, sodass die Sicherheit direkt in die URL integriert werden muss.
+
+Eine vorsignierte URL verwendet drei Parameter, um den Zugriff auf den Benutzer zu beschränken:
+
+- Speicherort: Dies könnte ein AWS S3-Bucket-Speicherort, ein Microsoft Azure-Speicherkontospeicherort mit Container sein
+- Dateiname: Die spezifische Datei, die gelesen, aktualisiert und gelöscht werden muss.
+- Abfragezeichenfolgenparameter: Ein Abfragezeichenfolgenparameter beginnt immer mit einem Fragezeichen und wird von einer komplexen Reihe von Parametern gefolgt
+
+Beispiel:
+
+- **Amazon AWS**: `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
+- **Microsoft Azure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+
+## 1.1.2.2 Erstellen eines Azure-Abonnements
 
 >[!NOTE]
 >
 >Wenn Sie bereits über ein Azure-Abonnement verfügen, können Sie diesen Schritt überspringen. Bitte fahren Sie in diesem Fall mit der nächsten Übung fort.
+
+>[!NOTE]
+>
+>Wenn Sie dieses Tutorial im Rahmen eines persönlich angeleiteten Workshops oder einer angeleiteten On-Demand-Schulung durchlaufen, haben Sie wahrscheinlich bereits Zugriff auf ein Microsoft Azure-Speicherkonto. In diesem Fall müssen Sie kein eigenes Konto erstellen - verwenden Sie bitte das Konto, das Ihnen im Rahmen der Schulung bereitgestellt wurde.
 
 Wechseln Sie zu [https://portal.azure.com](https://portal.azure.com){target="_blank"} und melden Sie sich mit Ihrem Azure-Konto an. Wenn Sie noch keine haben, verwenden Sie bitte Ihre persönliche E-Mail-Adresse, um Ihr Azure-Konto zu erstellen.
 
@@ -43,7 +79,7 @@ Wenn der Abonnementprozess abgeschlossen ist, sind Sie bereit.
 
 ![Azure-Speicher](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.2 Azure-Speicherkonto erstellen
+## 1.1.2.3 Azure-Speicherkonto erstellen
 
 Suchen Sie nach `storage account` und wählen Sie **Speicherkonten** aus.
 
@@ -85,7 +121,7 @@ Ihr Container kann jetzt verwendet werden.
 
 ![Azure-Speicher](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.3 Installieren von Azure Storage Explorer
+## 1.1.2.4 Installieren von Azure Storage Explorer
 
 [Laden Sie den Microsoft Azure Storage Explorer herunter, um Ihre Dateien zu verwalten](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Wählen Sie die richtige Version für Ihr Betriebssystem aus, laden Sie sie herunter und installieren Sie sie.
 
@@ -127,7 +163,7 @@ Ihr Speicherkonto wird unter **Speicherkonten** angezeigt.
 
 ![Azure-Speicher](./images/az18.png){zoomable="yes"}
 
-## 1.1.2.4 Manueller Datei-Upload und Verwendung einer Grafikdatei als Stilreferenz
+## 1.1.2.5 Manueller Datei-Upload und Verwendung einer Grafikdatei als Stilreferenz
 
 Laden Sie eine Bilddatei Ihrer Wahl oder [diese Datei](./images/gradient.jpg){target="_blank"} in den Container hoch.
 
@@ -166,7 +202,7 @@ Mit `horses in a field` wird ein weiteres Bild angezeigt, aber dieses Mal ähnel
 
 ![Azure-Speicher](./images/az26.png){zoomable="yes"}
 
-## Programmgesteuertes 1.1.2.5 von Dateien
+## Programmgesteuertes 1.1.2.6 von Dateien
 
 Um den programmgesteuerten Datei-Upload mit Azure Storage-Konten zu verwenden, müssen Sie ein neues **Shared Access Signature (SAS)-** mit Berechtigungen erstellen, die Ihnen das Schreiben einer Datei ermöglichen.
 
@@ -247,7 +283,7 @@ Aktualisieren Sie im Azure Storage Explorer den Inhalt Ihres Ordners, und die ne
 
 ![Azure-Speicher](./images/az38.png){zoomable="yes"}
 
-## 1.1.2.6 Verwendung der programmgesteuerten Datei
+## 1.1.2.7 Verwendung der programmgesteuerten Datei
 
 Um langfristig programmgesteuert Dateien aus Azure Storage-Konten lesen zu können, müssen Sie ein neues **Shared Access Signature (SAS)-Token** Berechtigungen erstellen, mit denen Sie eine Datei lesen können. Technisch gesehen könnten Sie das in der vorherigen Übung erstellte SAS-Token verwenden, aber es empfiehlt sich, ein separates Token mit nur **Lese**-Berechtigungen und ein separates Token mit nur **Schreib**-Berechtigungen zu verwenden.
 
