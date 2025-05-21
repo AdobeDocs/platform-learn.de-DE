@@ -20,7 +20,7 @@ ht-degree: 20%
 
 Verschaffen Sie sich einen Überblick darüber, wie Regeln zur Identitätsdiagramm-Verknüpfung Datenarchitekten dabei helfen, genaue Kundenprofile zu verwalten und das Ausblenden von Diagrammen zu verhindern. Weitere Informationen finden Sie in der [Dokumentation zu Regeln für die Identitätsdiagramm-Verknüpfung](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448281/?learn=on&enablevpops&captions=ger)
 
 ## Konfiguration
 
@@ -37,7 +37,7 @@ Erfahren Sie, wie Sie Ihre Regeln simulieren und anwenden.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="Regeln zur Verknüpfung von Identitätsdiagrammen - Diagrammsimulation" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="Regeln zur Verknüpfung von Identitätsdiagrammen - Diagrammsimulation"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444052/?format=jpeg&nocache=1747355376342&captions=ger" alt="Regeln zur Verknüpfung von Identitätsdiagrammen - Diagrammsimulation"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
