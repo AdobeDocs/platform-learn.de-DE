@@ -6,16 +6,53 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
+source-git-commit: 29a0f77f113daace66ffbba63fabac7237f7d5f3
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 1%
+source-wordcount: '1253'
+ht-degree: 0%
 
 ---
 
 # 1.1.4 Firefly Custom Models-API
 
-## Konfigurieren 1.1.4.1 benutzerdefinierten Modells
+## 1.1.4.1 Was sind benutzerdefinierte Firefly-Modelle?
+
+Mit benutzerdefinierten Firefly-Modellen können Sie mit der Funktion „Text in Bild“ Bildvarianten generieren, die Ihrer Marke entsprechen. Indem Sie diese Modelle mit Ihren eigenen Bildern trainieren, können Sie Inhalte generieren, die die Identität Ihrer Marke widerspiegeln.
+Transformieren Sie Ihren Stil oder Ihr Thema, um neue Ideen zu erkunden, visualisieren Sie verschiedene Umgebungen, generieren Sie innovative Inhalte und passen Sie Inhalte an bestimmte Segmente an.
+
+Mit benutzerdefinierten Firefly-Modellen können Sie…
+
+- Erstellen von markeninternen Ideen und Konzepten
+- Erstellen von Zeichendesigns mit konsistenten Stilen
+- Erstellen konsistenter Markenstile zur schnellen Erweiterung von Kampagnen
+
+Um dies zu erreichen, unterstützen benutzerdefinierte Firefly-Modelle:
+
+- Benutzerdefinierte Betreffmodelle
+- Benutzerdefinierte Stilmodelle
+
+### Benutzerdefinierte Betreffmodelle
+
+Beim Trainieren benutzerdefinierter Modelle für ein bestimmtes Subjekt - ob Objekte oder Charaktere - besteht das Ziel darin, die wesentlichen Funktionen des Subjekts zu identifizieren und dem Modell zu helfen, sie über verschiedene Kontexte und Positionen hinweg zu replizieren.
+
+Suchen Sie beim Trainieren eines Subjektmodells nach Bildern mit den folgenden Merkmalen:
+
+- Objektkonsistenz: Stellen Sie Bilder mit demselben Fabrikat und Modell wie das Objekt bereit, während Sie sicherstellen, dass das Objekt über Bilder hinweg nicht sehr unterschiedlich aussieht. Vermeiden Sie das Mischen mehrerer Farben und stellen Sie ein gemeinsames Design oder Muster unter den Bildern sicher. Das Motiv kann jedoch je nach Szene, Haltung, Kleidung und Hintergrund variieren.
+- Objektfokus: Verwenden Sie Bilder des Objekts im klaren Fokus ohne unnötige Ablenkungen. Belassen Sie das Motiv in der Nähe der Bildmitte und stellen Sie sicher, dass es mindestens 25 % der Bildfläche einnimmt.
+- Umgebungskontext: Stellen Sie Bilder des Themas in verschiedenen Ansichten und Kontexten bereit und zeigen Sie es in einer Vielzahl von Lichtbedingungen. Während Bilder mit weißem oder transparentem Hintergrund verwendet werden können, ist es am besten, auch einen Mix mit komplexeren Umgebungen zu haben.
+- Andere Objekte vermeiden: Große Elemente im Hintergrund oder in Zusammenhang mit dem Zeichen vermeiden. Jedes große Element, das in den Bildern angezeigt wird, wird vom Modell gespeichert und wird in den generierten Bildern angezeigt, ähnlich wie dasselbe Element im Trainings-Datensatz.
+
+### Benutzerdefinierte Stilmodelle
+
+Benutzerdefinierte Modelle, die auf einem Stil trainiert wurden, identifizieren das Erscheinungsbild der Assets, um bei Aufforderung ähnliche Bilder zu generieren.
+
+So trainieren Sie ein effektives Stilmodell:
+
+- Für ähnliche Ästhetik sorgen: Verwenden Sie Bilder, die verschiedene Szenen und Objekte zeigen und dabei dasselbe Look-and-Feel beibehalten.
+- Verschiedene Bilder verwenden: Verwenden Sie so viele Bilder wie möglich, um zu verhindern, dass sich das Modell zu sehr auf unerwünschte Objekte oder Objekte konzentriert.
+- Vermeiden Sie feste Phrasen: Ein festes Muster hat eine größere Gewichtung als andere Phrasen. Wenn beispielsweise jede Beschriftung „Der Hintergrund ist einfarbig schwarz“ oder „Nette Cartoon-Stile“ enthält, hängt das Modell von dieser Phrase ab. Ohne diese Phrase werden bei jeder Testaufforderung keine gewünschten Ergebnisse generiert.
+
+## Konfigurieren 1.1.4.2 benutzerdefinierten Modells
 
 Navigieren Sie zu [https://firefly.adobe.com/](https://firefly.adobe.com/). Klicken Sie **Benutzerdefinierte Modelle**.
 
@@ -86,7 +123,7 @@ Schließen Sie das Popup **Benutzerdefiniertes Modell freigeben**.
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm16.png){zoomable="yes"}
 
-## 1.1.4.2 Benutzerdefiniertes Modell in der Benutzeroberfläche verwenden
+## 1.1.4.3 Benutzerdefiniertes Modell in der Benutzeroberfläche verwenden
 
 Navigieren Sie zu [https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train). Klicken Sie auf das benutzerdefinierte Modell, um es zu öffnen.
 
@@ -100,7 +137,7 @@ Anschließend sehen Sie die Beispielaufforderung, die Sie vor der Ausführung ei
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3 Benutzerdefiniertes Modell für die Firefly Services-API für benutzerdefinierte Modelle aktivieren
+## 1.1.4.4 Benutzerdefiniertes Modell für die Firefly Services Custom Models-API aktivieren
 
 Sobald Ihr benutzerdefiniertes Modell trainiert wurde, kann es auch über die API verwendet werden. In Übung 1.1.1 haben Sie Ihr Adobe I/O-Projekt bereits für die Interaktion mit Firefly Services über die API konfiguriert.
 
@@ -134,7 +171,7 @@ Das **E-Mail-** des technischen Kontos) sollte jetzt auf das benutzerdefinierte 
 
 ![Benutzerdefinierte Firefly-Modelle](./images/ffcm22.png){zoomable="yes"}
 
-## Interaktion 1.1.4.4 Firefly Services mit der API für benutzerdefinierte Modelle
+## 1.1.4.5 Interaktion mit der Firefly Services Custom Models-API
 
 In Übung 1.1.1 Erste Schritte mit Firefly Services haben Sie diese Datei ([postman-ff.zip](./../../../assets/postman/postman-ff.zip) auf Ihren lokalen Desktop heruntergeladen und anschließend diese Sammlung in Postman importiert.
 
