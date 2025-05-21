@@ -18,7 +18,7 @@ ht-degree: 20%
 
 # Überblick über die Verknüpfungsregeln für Identitätsdiagramme
 
-Verschaffen Sie sich einen Überblick darüber, wie Regeln zur Identitätsdiagramm-Verknüpfung Datenarchitekten dabei helfen, genaue Kundenprofile zu verwalten und das Ausblenden von Diagrammen zu verhindern. Weitere Informationen finden Sie in der [Dokumentation zu Regeln für die Identitätsdiagramm-Verknüpfung](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
+Verschaffen Sie sich einen Überblick darüber, wie Regeln zur Identitätsdiagramm-Verknüpfung Datenarchitekten dabei helfen, genaue Kundenprofile zu verwalten und das Ausblenden von Diagrammen zu verhindern. Weitere Informationen finden Sie in der [Dokumentation zu Regeln für die Identitätsdiagramm-Verknüpfung](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 

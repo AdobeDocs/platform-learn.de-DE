@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Regeln zur Verknüpfung von Identitätsdiagrammen - Diagrammsimulation
 
-Erfahren Sie, wie Sie mit dem Diagrammsimulator Identitätsdiagramm-Verknüpfungsregeln in Adobe Experience Platform testen können. Experimentieren Sie mit verschiedenen Szenarien und spielen Sie mit „Eindeutig pro Diagramm“ und Prioritätseinstellungen, um zu überprüfen, welche Regeln Sie für Ihr Unternehmen benötigen, um das Ausblenden von Diagrammen zu verhindern. Weitere Informationen finden Sie im [Handbuch zur Diagrammsimulations-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation).
+Erfahren Sie, wie Sie mit dem Diagrammsimulator Identitätsdiagramm-Verknüpfungsregeln in Adobe Experience Platform testen können. Experimentieren Sie mit verschiedenen Szenarien und spielen Sie mit „Eindeutig pro Diagramm“ und Prioritätseinstellungen, um zu überprüfen, welche Regeln Sie für Ihr Unternehmen benötigen, um das Ausblenden von Diagrammen zu verhindern. Weitere Informationen finden Sie im [Handbuch zur Diagrammsimulations-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444032/?learn=on&enablevpops)
