@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e26f2add184031fd95561bd560b24ad73bb73d01
 workflow-type: tm+mt
-source-wordcount: '3309'
+source-wordcount: '3272'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Es gibt zwei Hauptaufgaben, die wir in der Datenerfassungsoberfläche ausführen
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich diese beiden kurzen Videos an, um mehr über die Streaming-Datenaufnahme und Web SDK zu erfahren:
 
->[!VIDEO](https://video.tv.adobe.com/v/31577?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37260?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Nachdem Sie nun über die Eigenschaft verfügen, können Sie die Web-SDK mithilf
 1. Navigieren Sie **[!UICONTROL linken Navigationsbereich]** Erweiterungen“.
 1. Wechseln Sie zur Registerkarte **[!UICONTROL Katalog]**.
 1. Für Tags stehen viele Erweiterungen zur Verfügung. Katalog mit dem Begriff `Web SDK` filtern
-1. Klicken Sie in der Erweiterung **[!UICONTROL Adobe Experience Platform Web]** SDK **[!UICONTROL auf die Schaltfläche]**&#x200B;Installieren“
+1. Klicken Sie in der Erweiterung **[!UICONTROL Adobe Experience Platform Web]** SDK **[!UICONTROL auf die Schaltfläche]**Installieren“
    ![Installieren der Adobe Experience Platform Web SDK-Erweiterung](assets/websdk-property-addExtension.png)
 1. Es gibt mehrere Konfigurationen für die Web-SDK-Erweiterung, aber es gibt nur zwei, die wir für dieses Tutorial konfigurieren werden. Aktualisieren Sie die **[!UICONTROL Edge]** Domäne auf `data.enablementadobe.com`. Mit dieser Einstellung können Sie Erstanbieter-Cookies mit Ihrer Web SDK-Implementierung festlegen. Dies wird empfohlen. Später in dieser Lektion ordnen Sie eine Website in der `enablementadobe.com` Domain Ihrer Tag-Eigenschaft zu. Der CNAME für die `enablementadobe.com` Domain wurde bereits so konfiguriert, dass `data.enablementadobe.com` an Adobe-Server weiterleitet. Wenn Sie Web SDK auf Ihrer eigenen Website implementieren, müssen Sie einen CNAME für Ihre eigenen Datenerfassungszwecke erstellen, z. B. `data.YOUR_DOMAIN.com`
 1. Wählen Sie **[!UICONTROL Dropdown-]** „Datenstrom“ Ihren `Luma Platform Tutorial` Datenstrom aus.
@@ -255,7 +255,7 @@ Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-
 
 Wenn Sie den Debugger noch nie verwendet haben - und dieser unterscheidet sich vom älteren Adobe Experience Cloud Debugger - sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/35916?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Öffnen der Luma-Website
 
@@ -288,7 +288,7 @@ Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie
    ![Tag-Eigenschaft ersetzt](assets/websdk-debugger-propertyReplaced.png)
 1. Navigieren Sie **[!UICONTROL linken]** zu „Zusammenfassung“, um die Details Ihrer „Launch[!UICONTROL -] anzuzeigen
    ![Registerkarte Zusammenfassung](assets/websdk-debugger-summary.png)
-1. Navigieren Sie jetzt zu **[!UICONTROL AEP Web SDK]** im linken Navigationsbereich, um die **[!UICONTROL Netzwerkanfragen“]**
+1. Wechseln Sie jetzt zu **[!UICONTROL AEP Web SDK]** im linken Navigationsbereich, um die **[!UICONTROL Netzwerkanfragen“ anzuzeigen]**
 1. Öffnen Sie die **[!UICONTROL Ereignisse]** Zeile
 
    ![Adobe Experience Platform Web SDK-Anfrage](assets/websdk-debugger-platformNetwork.png)
@@ -418,7 +418,14 @@ Nachdem wir nun den CRM-ID-Wert erfasst haben, müssen wir ihn mit einem speziel
 
 1. Wählen Sie **[!UICONTROL ID]** das Symbol aus, um das Datenelement-Auswahlmodal zu öffnen, und wählen Sie Ihr `CRM Id` Datenelement aus
 1. Wählen Sie als **[!UICONTROL Authentifizierungsstatus]** die Option **[!UICONTROL Authentifiziert]**
-1. **[!UICONTROL Primär]** _deaktiviert_. Da die CRM-ID für die meisten Besucher der Luma-Website nicht vorhanden ist, _Sie die ECID definitiv nicht als primäre Kennung_. Es wäre ein seltener Anwendungsfall, eine andere als die ECID als primäre Kennung zu verwenden. Normalerweise erwähne ich die Standardeinstellungen in diesen Anweisungen nicht, aber ich rufe diese zurück, um Ihnen zu helfen, später in Ihrer eigenen Implementierung Kopfschmerzen zu vermeiden.
+1. **[!UICONTROL Primäre]**
+
+   >[!TIP]
+   >
+   > Adobe empfiehlt, Identitäten, die eine Person darstellen, wie `Luma CRM Id`, als [!UICONTROL primäre] Identität zu senden.
+   >
+   > Wenn die Identitätszuordnung die Personenkennung enthält (z. B. `Luma CRM Id`), wird die Personenkennung zur [!UICONTROL primären] Identität. Andernfalls wird `ECID` zur [!UICONTROL primären] Identität.
+
 1. Klicken Sie auf **[!UICONTROL Schaltfläche „In Bibliothek speichern]** (`Luma Platform Tutorial` sollte immer noch Ihre Arbeitsbibliothek sein)
    ![Fügen Sie die CRM-ID zum Datenelement „Identitätszuordnung“ hinzu](assets/websdk-property-dataElement-identityMap.png)
 
