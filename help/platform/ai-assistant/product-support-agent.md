@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Der Produkt Support Agent ist ein ständig verfügbarer KI-Agent, der Sie bei der Lösung von Problemen mit der Kundenunterstützung unterstützt, indem er eine Vielzahl von Wissensquellen nutzt, die von den erfahrenen Support-Teams von Adobe kuratiert wurden, und sogar Ihre eigenen Daten nutzt, um Ihnen die Fehlerbehebung in Ihren Workflows zu ermöglichen. Wenn Sie zusätzliche Hilfe benötigen, kann der Produktsupport-Agent einen Support-Fall mit detaillierten kontextuellen Informationen erstellen, wodurch der Zeit- und Arbeitsaufwand für die Erstellung von Support-Tickets erheblich reduziert wird. Weitere Informationen finden Sie in der [Dokumentation zum Product Support Agent](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/new-features/customer-support).
 
->[!VIDEO](https://video.tv.adobe.com/v/3443183/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443192/?learn=on&enablevpops&captions=ger)
