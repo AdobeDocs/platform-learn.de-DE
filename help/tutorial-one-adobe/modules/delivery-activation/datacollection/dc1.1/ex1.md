@@ -4,9 +4,9 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '573'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,13 @@ Die Datenerfassung in Adobe Experience Platform wird von Marken für eine Reihe 
 
 ## Erkunden der Benutzeroberfläche
 
-Zur [Adobe Experience Platform-Datenerfassung](https://experience.adobe.com/#/data-collection/).
+Zur [Adobe Experience Platform-Datenerfassung](https://experience.adobe.com/#/data-collection/). Stellen Sie sicher, dass Sie die richtige Umgebung verwenden, die `--aepImsOrgName--` werden sollte.
+
+>[!NOTE]
+>
+>Dieses Tutorial wird mithilfe der Umgebung **Experience Platform International** dokumentiert. Ihr Umgebungsname ist wahrscheinlich anders. Wenn Sie also den Namen **Experience Platform International** in einem Screenshot sehen, sollten Sie ihn durch den Namen Ihrer eigenen Umgebung ersetzen, der `--aepImsOrgName--` werden sollte.
+
+![Launch-Eigenschaften anzeigen](./images/launch0.png)
 
 Navigieren Sie zu **Tags**. Die Ansicht **[!UICONTROL Eigenschaften]** wird angezeigt. Die hier aufgelisteten Eigenschaften dienen zur Verwaltung von Tutorials. Diese Eigenschaften stellen Folgendes dar:
 

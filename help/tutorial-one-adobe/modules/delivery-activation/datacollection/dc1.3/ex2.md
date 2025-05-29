@@ -4,10 +4,10 @@ description: Foundation - FAC - Erstellen von Schemata, Datenmodellen und Links
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 915054a0342a0e5bb003d2fbc73d1540725aa5f0
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 6%
+source-wordcount: '683'
+ht-degree: 7%
 
 ---
 
@@ -67,7 +67,7 @@ Klicken Sie im linken Menü auf **Modelle** und gehen Sie dann zu **Schemata**. 
 
 ![FAC](./images/fdb5.png)
 
-Wählen Sie Ihre Federated Database aus und klicken Sie auf **+ Tabellen hinzufügen**.
+Wählen Sie Ihre Federated Database aus und klicken Sie auf **Weiter**.
 
 ![FAC](./images/fdb6.png)
 
@@ -79,7 +79,7 @@ Sie werden es dann sehen. Wählen Sie die fünf Tabellen aus, die Sie zuvor in S
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-Klicken Sie auf **Hinzufügen**.
+Klicken Sie auf **Weiter**.
 
 ![FAC](./images/fdb7.png)
 
@@ -94,7 +94,7 @@ Für jede Tabelle können Sie folgende Vorgänge durchführen:
 
 Für diese Übung sind keine Änderungen erforderlich.
 
-Klicken Sie auf **Erstellen**.
+Klicken Sie auf **Fertig**.
 
 ![FAC](./images/fdb8.png)
 
@@ -106,7 +106,7 @@ Anschließend sehen Sie dies mit der Möglichkeit, die Konfiguration zu bearbeit
 
 ![FAC](./images/fdb10.png)
 
-Anschließend sehen Sie ein Beispiel der Daten.
+Anschließend sehen Sie ein Beispiel der Daten. Diese Daten werden direkt aus Snowflake geladen und nicht in AEP beibehalten.
 
 ![FAC](./images/fdb11.png)
 
@@ -136,9 +136,9 @@ Sie werden es dann sehen. Klicken Sie auf **Speichern**.
 
 Sie können jetzt mit der Definition von Links zwischen Schemata beginnen. Um einen Link zu definieren, klicken Sie auf **Links erstellen**.
 
-![FAC](./images/fdb16.png)
+![FAC](./images/fdb16a.png)
 
-Definieren wir zunächst die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_PERSONS`.
+Zunächst müssen Sie die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_PERSONS` definieren.
 
 Klicken Sie auf **Hinzufügen**.
 
@@ -150,7 +150,9 @@ Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren
 
 ![FAC](./images/fdb17.png)
 
-Als Nächstes definieren wir die Relation zwischen dem `--aepUserLdap--_HOUSEHOLDS` und dem `--aepUserLdap--_PERSONS`.
+Als Nächstes müssen Sie die Relation zwischen dem `--aepUserLdap--_HOUSEHOLDS` und dem `--aepUserLdap--_PERSONS` definieren.
+
+Klicken Sie auf **Hinzufügen**.
 
 ![FAC](./images/fdb19.png)
 
@@ -160,10 +162,11 @@ Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren
 
 ![FAC](./images/fdb20.png)
 
-Als Nächstes definieren wir die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+Als Nächstes müssen Sie die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_MONTHLY_DATA_USAGE` definieren.
+
+Klicken Sie auf **Hinzufügen**.
 
 ![FAC](./images/fdb21.png)
-
 
 ### BENUTZER - HAUSHALTE
 
@@ -171,7 +174,9 @@ Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren
 
 ![FAC](./images/fdb22.png)
 
-Als Nächstes definieren wir die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_HOUSEHOLDS`.
+Als Nächstes müssen Sie die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_HOUSEHOLDS` definieren.
+
+Klicken Sie auf **Hinzufügen**.
 
 ![FAC](./images/fdb23.png)
 
@@ -181,7 +186,9 @@ Dann bist du wieder hier. Klicken Sie auf **Links erstellen**, um einen weiteren
 
 ![FAC](./images/fdb24.png)
 
-Als Nächstes definieren wir die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_MOBILE_DATA_USAGE`.
+Als Nächstes müssen Sie die Relation zwischen dem `--aepUserLdap--_USERS` und dem `--aepUserLdap--_MOBILE_DATA_USAGE` definieren.
+
+Klicken Sie auf **Hinzufügen**.
 
 ![FAC](./images/fdb25.png)
 
@@ -189,7 +196,7 @@ Sie sollten das dann sehen. Klicken Sie auf **Speichern**.
 
 ![FAC](./images/fdb26.png)
 
-Die Einrichtung in AEP ist jetzt abgeschlossen. Sie können jetzt mit der Verwendung Ihrer Federated Data in einer Federated-Audience-Komposition beginnen.
+Die Federated Database in Adobe Experience Platform ist jetzt eingerichtet. Sie können jetzt mit der Verwendung Ihrer Federated Data in einer Federated-Audience-Komposition beginnen.
 
 ## Nächste Schritte
 

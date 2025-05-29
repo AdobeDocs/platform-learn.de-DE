@@ -4,9 +4,9 @@ description: Foundation - Echtzeit-Kundenprofil - Erstellen einer Zielgruppe - B
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '709'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Wählen Sie **Regel erstellen** und klicken Sie auf **Erstellen**.
 
 ![Segmentierung](./images/menusegbr.png)
 
-Sobald Sie sich im neuen Audience Builder befinden, beachten Sie sofort die Menüoption **Attribute** und die Referenz **XDM Individual Profile**.
+Sobald Sie sich im Audience Builder befinden, bemerken Sie sofort die Menüoption **Attribute** und die Referenz **XDM Individual Profile**.
 
 ![Segmentierung](./images/segmentationui.png)
 
@@ -83,6 +83,10 @@ Der Vergleichsparameter sollte **Gleich** lauten und im Eingabefeld **iPhone 15 
 
 ![Segmentierung](./images/pv.png)
 
+Legen Sie die Zeitbedingung für Ihr Segment auf „In den **24 Stunden“**.
+
+![Segmentierung](./images/pv1.png)
+
 Jedes Mal, wenn Sie ein Element zum Audience Builder hinzufügen, können Sie auf die Schaltfläche **Schätzung aktualisieren** klicken, um eine neue Schätzung der Population in Ihrer Audience zu erhalten.
 
 Bisher haben Sie die Benutzeroberfläche nur zum Erstellen Ihrer Zielgruppe verwendet, es gibt aber auch eine Code-Option, um eine Zielgruppe zu erstellen.
@@ -102,7 +106,7 @@ Sie können auch eine Vorschau einer Auswahl der Kundenprofile anzeigen, die zu 
 ![Segmentierung](./images/previewprofilesdtl.png)
 
 Schließlich geben wir Ihrer Zielgruppe einen Namen,
-Legen Sie die **Auswertungsmethode** auf **Streaming)** klicken Sie auf **Veröffentlichen**.
+Legen Sie die **Auswertungsmethode** auf **Edge** fest und klicken Sie auf **Veröffentlichen**.
 
 Verwenden Sie als Namenskonvention:
 
