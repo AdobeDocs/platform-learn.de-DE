@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie Adobe skalierbare und zuverlässige Abläufe für AEP mit klaren Prozessen und Tooling-Strategien sicherstellt.
 
 <!-- 62_S655_3442541_134_run-and-operate-strategies-for-scaling-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458255/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3461122/?learn=on&enablevpops=true&captions=ger)

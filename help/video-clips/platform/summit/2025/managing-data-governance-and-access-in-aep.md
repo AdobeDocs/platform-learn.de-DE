@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie Sie Daten in Adobe Experience Platform mithilfe von rollen- und attributbasierten Zugriffssteuerelementen effektiv steuern können.
 
 <!-- 62_S601_3442532_118_managing-data-governance-and-access-in-aep -->
->[!VIDEO](https://video.tv.adobe.com/v/3458316/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460539/?learn=on&enablevpops=true&captions=ger)

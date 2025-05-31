@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie das Zielgruppenportal in Real-Time CDP die Vereinheitlichung von Kundendaten, die Verwaltung von Zielgruppen und die Aktivierung in Echtzeit ermöglicht.
 
 <!-- 62_S508_3442517_101_audience-portal-centralizing-and-managing-audiences -->
->[!VIDEO](https://video.tv.adobe.com/v/3458287/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459746/?learn=on&enablevpops=true&captions=ger)

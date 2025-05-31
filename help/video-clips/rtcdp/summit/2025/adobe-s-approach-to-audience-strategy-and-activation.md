@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie Adobe Experience Platform die Erstellung und Aktivierung von Zielgruppen für Cross-Channel-Journey ermöglicht.
 
 <!-- 62_S655_3442541_49_adobes-approach-to-audience-strategy-and-activation -->
->[!VIDEO](https://video.tv.adobe.com/v/3458225/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459629/?learn=on&enablevpops=true&captions=ger)

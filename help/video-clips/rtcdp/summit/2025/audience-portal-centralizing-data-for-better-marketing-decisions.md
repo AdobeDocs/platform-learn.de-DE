@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie das Zielgruppenportal in Adobe Real-Time CDP Kundendaten vereinheitlicht und so eine erweiterte Zielgruppenverwaltung und Echtzeit-Aktivierung ermöglicht.
 
 <!-- 72_S508_3442517_82_audience-portal-centralizing-data-for-better-marketing-decisions -->
->[!VIDEO](https://video.tv.adobe.com/v/3458185/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459691/?learn=on&enablevpops=true&captions=ger)

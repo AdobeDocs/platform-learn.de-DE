@@ -20,4 +20,4 @@ ht-degree: 0%
 Vermeiden Sie kostspielige Fehler beim Schema-Design mit diesen Best Practices für Erweiterbarkeit, Validierung und Ausrichtung am Datenmodell von Adobe Experience Platform.
 
 <!-- 72_S655_3442541_260_best-practices-for-schema-design-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458268/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460130/?learn=on&enablevpops=true&captions=ger)

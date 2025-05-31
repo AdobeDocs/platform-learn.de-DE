@@ -20,4 +20,4 @@ ht-degree: 0%
 Entdecken Sie ein einfaches dreistufiges Framework zum Erstellen, Skalieren und Optimieren von Zielgruppenstrategien mit Real-Time CDP.
 
 <!-- 72_S508_3442517_213_threephased-approach-to-audiencedriven-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458299/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462999/?learn=on&enablevpops=true&captions=ger)

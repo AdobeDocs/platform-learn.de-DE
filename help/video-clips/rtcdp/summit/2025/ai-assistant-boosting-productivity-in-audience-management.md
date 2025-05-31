@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie der Adobe-KI-Assistent Zielgruppen-Management-Aufgaben vereinfacht, Einblicke bietet und Trends vorhersagt.
 
 <!-- 82_OS512_3442427_158_ai-assistant-boosting-productivity-in-audience-management -->
->[!VIDEO](https://video.tv.adobe.com/v/3458182/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459603/?learn=on&enablevpops=true&captions=ger)

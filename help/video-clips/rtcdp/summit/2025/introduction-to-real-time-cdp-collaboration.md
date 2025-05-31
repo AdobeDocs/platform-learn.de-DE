@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie Real-Time CDP Collaboration von Adobe die Datenbereinigung für Marketing-Experten vereinfacht und eine nahtlose Zielgruppenerkennung, -aktivierung und -messung ermöglicht.
 
 <!-- 65_OS511_3442426_34_introduction-to-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458279/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459976/?learn=on&enablevpops=true&captions=ger)

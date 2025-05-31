@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie mehr über den schrittweisen Prozess des Onboarding von Zielgruppen, der Zusammenarbeit mit Herausgebern und der Aktivierung von Kampagnen mit Adobe Real-Time CDP Collaboration.
 
 <!-- 62_OS511_3442426_61_how-realtime-cdp-collaboration-works -->
->[!VIDEO](https://video.tv.adobe.com/v/3458278/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459954/?learn=on&enablevpops=true&captions=ger)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Lernen Sie Best Practices für die Strukturierung und Kommunikation innerhalb von Tiger-Teams kennen, um die Zusammenarbeit zu verbessern und Ineffizienzen in AEP-Projekten zu reduzieren.
 
 <!-- 62_S926_3442625_155_how-to-operate-and-communicate-effectively-in-tiger-teams -->
->[!VIDEO](https://video.tv.adobe.com/v/3458270/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460225/?learn=on&enablevpops=true&captions=ger)

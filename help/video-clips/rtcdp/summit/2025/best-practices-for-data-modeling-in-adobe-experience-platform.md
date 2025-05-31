@@ -20,4 +20,4 @@ ht-degree: 0%
 Machen Sie sich mit der Bedeutung des Schemadesigns, der Erweiterbarkeit und der Vermeidung kostspieliger Fehler in Adobe Experience Platform vertraut.
 
 <!-- 85_S655_3442541_276_best-practices-for-data-modeling-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458291/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460141/?learn=on&enablevpops=true&captions=ger)

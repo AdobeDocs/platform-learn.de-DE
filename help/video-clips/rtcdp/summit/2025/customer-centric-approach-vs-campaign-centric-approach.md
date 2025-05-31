@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie Sie den Übergang von einem kampagnenorientierten zu einem kundenorientierten Ansatz schaffen können, um nachhaltiges Wachstum zu fördern und Kundenerlebnisse zu verbessern.
 
 <!-- 85_S651_3442537_125_customercentric-approach-vs-campaigncentric-approach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458235/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460118/?learn=on&enablevpops=true&captions=ger)

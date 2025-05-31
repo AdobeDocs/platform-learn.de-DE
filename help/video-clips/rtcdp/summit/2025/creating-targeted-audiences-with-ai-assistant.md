@@ -20,4 +20,4 @@ ht-degree: 0%
 Sehen Sie, wie KI-Assistent Marketing-Experten dabei hilft, Prognosemodelle zu erstellen und hochgradig zielgerichtete Zielgruppen für Kampagnen zu erstellen.
 
 <!-- 62_OS512_3442427_175_creating-targeted-audiences-with-ai-assistant -->
->[!VIDEO](https://video.tv.adobe.com/v/3458186/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460196/?learn=on&enablevpops=true&captions=ger)

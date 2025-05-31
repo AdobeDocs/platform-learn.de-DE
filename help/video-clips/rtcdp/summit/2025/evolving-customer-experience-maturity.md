@@ -20,4 +20,4 @@ ht-degree: 0%
 Erkunden Sie das Crawl-, Walk-, Run-Framework, um Daten, Zielgruppen, Journey, Messungen und die Personalisierung von Inhalten voranzutreiben.
 
 <!-- 85_S651_3442537_240_evolving-customer-experience-maturity -->
->[!VIDEO](https://video.tv.adobe.com/v/3458293/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460182/?learn=on&enablevpops=true&captions=ger)

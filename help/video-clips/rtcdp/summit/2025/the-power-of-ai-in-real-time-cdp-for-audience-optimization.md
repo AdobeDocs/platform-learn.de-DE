@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie der KI-Assistent für Zielgruppen in Adobe Real-Time CDP Marketing-Experten bei der Optimierung von Zielgruppenstrategien mit Größenschätzung, Tendenzauswertung und Echtzeiteinblicken hilft.
 
 <!-- 62_S508_3442517_109_the-power-of-ai-in-realtime-cdp-for-audience-optimization -->
->[!VIDEO](https://video.tv.adobe.com/v/3458207/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463025/?learn=on&enablevpops=true&captions=ger)

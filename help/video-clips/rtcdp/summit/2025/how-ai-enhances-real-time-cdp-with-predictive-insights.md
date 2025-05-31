@@ -20,4 +20,4 @@ ht-degree: 0%
 Entdecken Sie, wie die prädiktiven KI-Funktionen von Adobe in Real-Time CDP Marketing-Experten dabei helfen, Segmentierung, Personalisierung und Zielgruppeneinblicke zu optimieren.
 
 <!-- 85_OS512_3442427_65_how-ai-enhances-realtime-cdp-with-predictive-insights -->
->[!VIDEO](https://video.tv.adobe.com/v/3458200/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459968/?learn=on&enablevpops=true&captions=ger)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie Adobe datengesteuerte Insights und AJO nutzt, um das Onboarding von Mitgliedern zu verbessern und die Kundenbindung zu fördern.
 
 <!-- 62_S655_3442541_35_adobes-approach-to-member-onboarding-and-retention -->
->[!VIDEO](https://video.tv.adobe.com/v/3458282/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459647/?learn=on&enablevpops=true&captions=ger)

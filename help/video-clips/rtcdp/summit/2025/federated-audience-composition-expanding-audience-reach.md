@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie Sie mit der Federated Audience-Komposition externe Data Warehouses mit Real-Time CDP für aktuelles Marketing verbinden können.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-audience-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458295/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459800/?learn=on&enablevpops=true&captions=ger)

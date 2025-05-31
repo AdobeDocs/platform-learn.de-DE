@@ -20,4 +20,4 @@ ht-degree: 0%
 Machen Sie sich mit den Kernfunktionen von Adobe Real-Time CDP Collaboration vertraut: Zielgruppenerkennung, sichere Aktivierung und Leistungsmessung.
 
 <!-- 72_OS511_3442426_179_discover-activate-and-measure-with-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458275/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460183/?learn=on&enablevpops=true&captions=ger)

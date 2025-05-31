@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie die Federated Audience Composition Echtzeit-Marketing ermöglicht, indem externe Datenquellen in Real-Time CDP integriert werden.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-your-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458250/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459910/?learn=on&enablevpops=true&captions=ger)

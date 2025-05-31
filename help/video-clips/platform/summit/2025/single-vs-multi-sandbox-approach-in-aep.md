@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie mehr über die Kompromisse zwischen Single- und Multi-Sandbox-Strategien für die Verwaltung von Daten und Workflows in Adobe Experience Platform.
 
 <!-- 62_S601_3442532_179_single-vs-multisandbox-approach-in-aep -->
->[!VIDEO](https://video.tv.adobe.com/v/3458324/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462671/?learn=on&enablevpops=true&captions=ger)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie Adobe Experience Platform vernetzte Kunden-Journey durch Daten, Inhalte und kanalübergreifende Aktivierung ermöglicht.
 
 <!-- 62_S655_3442541_51_adobe-experience-platform-building-connected-customer-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3458326/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459636/?learn=on&enablevpops=true&captions=ger)

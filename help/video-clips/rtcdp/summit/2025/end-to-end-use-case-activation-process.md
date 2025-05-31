@@ -20,4 +20,4 @@ ht-degree: 0%
 Machen Sie sich mit den sechs Phasen des End-to-End-Aktivierungsprozesses von Adobe vertraut, von der Ideenfindung bis zur Optimierung.
 
 <!-- 65_S651_3442537_212_endtoend-use-case-activation-process -->
->[!VIDEO](https://video.tv.adobe.com/v/3458248/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460251/?learn=on&enablevpops=true&captions=ger)

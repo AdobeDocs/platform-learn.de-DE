@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie der KI-Assistent für Zielgruppen dazu beiträgt, hochwertige Segmente zu identifizieren, Zielgruppenstrategien zu optimieren und Zeit zu sparen.
 
 <!-- 62_S508_3442517_109_ai-assistant-for-audiences-optimizing-audience-strategies -->
->[!VIDEO](https://video.tv.adobe.com/v/3458285/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459669/?learn=on&enablevpops=true&captions=ger)

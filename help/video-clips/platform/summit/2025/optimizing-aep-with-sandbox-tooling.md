@@ -20,4 +20,4 @@ ht-degree: 0%
 Erfahren Sie, wie Sie mit Sandbox-Tools Workflows optimieren und die Zusammenarbeit zwischen Teams in Adobe Experience Platform ermöglichen.
 
 <!-- 62_S601_3442532_175_optimizing-aep-with-sandbox-tooling -->
->[!VIDEO](https://video.tv.adobe.com/v/3458320/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460561/?learn=on&enablevpops=true&captions=ger)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Entdecken Sie das Fünf-Fragen-Framework von Adobe zur Definition von Anwendungsfällen für Kundenerlebnisse, um Teams abzustimmen und Geschäftsergebnisse zu optimieren.
 
 <!-- 85_S651_3442537_47_defining-customer-experience-use-cases -->
->[!VIDEO](https://video.tv.adobe.com/v/3458292/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459789/?learn=on&enablevpops=true&captions=ger)
