@@ -4,10 +4,10 @@ description: Erste Schritte - eine Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 2%
+source-wordcount: '583'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +20,49 @@ In diesem Modul werden Sie alles so einrichten, dass Sie Daten erfassen, auf die
 - Erfahren Sie, wie Sie Ihre Aktivierungsumgebung einrichten
 - Erfahren Sie, wie Sie die Website und die Mobile App verwenden
 
-## Voraussetzungen
+## Lernpfade
 
-- Zugriff auf Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Zugriff auf die Adobe Experience Platform-Datenerfassung: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Zugriff auf das Demosystem Weiter: [https://dsn.adobe.com](https://dsn.adobe.com)
+### Pfad: Firefly Services
+
+Wenn Sie sich für eine On-Demand-Schulung zu **Adobe Firefly Services** angemeldet haben, sind nur die folgenden Übungen erforderlich:
+
+- [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](./ex1.md)
+- [Konfigurieren des Adobe I/O-Projekts](./ex6.md)
+- [Option 1: Postman-Setup](./ex7.md) ODER [Option 2: PostBuster-Setup](./ex8.md)
+- [Zu installierende Anwendungen](./ex9.md)
+
+### Pfad: Workfront Fusion
+
+Wenn Sie sich für eine On-Demand-Schulung zu **Adobe Workfront Fusion** angemeldet haben, sind nur die folgenden Übungen erforderlich:
+
+- [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](./ex1.md)
+- [Konfigurieren des Adobe I/O-Projekts](./ex6.md)
+- [Option 1: Postman-Setup](./ex7.md) ODER [Option 2: PostBuster-Setup](./ex8.md)
+- [Zu installierende Anwendungen](./ex9.md)
+
+### Pfad: AEM CS + EDS
+
+Wenn Sie sich für eine On-Demand-Schulung zu **Adobe Experience Manager Cloud Service** und **Edge Delivery Services** angemeldet haben, sind nur die folgenden Übungen erforderlich:
+
+- [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](./ex1.md)
+- [Zu installierende Anwendungen](./ex9.md)
+
+### Pfad: LIVE, ALLE oder AEP + Apps
+
+Wenn Sie an einem **Live-Workshop** teilnehmen oder sich für eine On-Demand-Schulung mit dem Schwerpunkt **ALLE** der Übungen angemeldet haben oder sich für eine On-Demand-Schulung mit dem Schwerpunkt **AEP +** Apps angemeldet haben, sind die folgenden Übungen erforderlich:
+
+- [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](./ex1.md)
+- [Verwenden des Demosystems Als Nächstes richten Sie Ihre Client-Eigenschaft für die Adobe Experience Platform-Datenerfassung ein](./ex2.md)
+- [Erstellen eines Datenstroms](./ex3.md)
+- [Verwenden der Website](./ex4.md)
+- [Verwenden der Mobile App](./ex5.md)
+- [Konfigurieren des Adobe I/O-Projekts](./ex6.md)
+- [Option 1: Postman-Setup](./ex7.md) ODER [Option 2: PostBuster-Setup](./ex8.md)
+- [Zu installierende Anwendungen](./ex9.md)
 
 ## Übungen
+
+Je nach Lernpfad sind einige der folgenden Übungen erforderlich, während andere möglicherweise nicht erforderlich sind.
 
 [Installieren der Chrome-Erweiterung für die Experience League-Dokumentation](./ex1.md)
 
@@ -67,6 +103,10 @@ In dieser Übung bereiten Sie Ihre Postman-Umgebung auf die Interaktion mit vers
 >Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum Installieren von PostBuster!
 
 In dieser Übung bereiten Sie Ihre PostBuster-Umgebung auf die Interaktion mit verschiedenen Adobe-API-Endpunkten vor
+
+[Zu installierende Anwendungen](./ex9.md)
+
+In dieser Übung finden Sie Anweisungen zum Installieren aller Anwendungen, die Sie auf Ihrem Computer benötigen, bevor Sie mit dem Tutorial beginnen.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

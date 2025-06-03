@@ -4,10 +4,10 @@ description: Erste Schritte - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 3%
+source-wordcount: '661'
+ht-degree: 2%
 
 ---
 
@@ -32,6 +32,10 @@ Wählen Sie anschließend **Neues Projekt erstellen**.
 ![Neue Adobe I/O-Integration](./images/iocomp.png){zoomable="yes"}
 
 ### Firefly Services-API
+
+>[!IMPORTANT]
+>
+>Je nach ausgewähltem Lernpfad haben Sie möglicherweise keinen Zugriff auf die Firefly Services-API. Sie haben nur Zugriff auf die Firefly Services-API, wenn Sie sich auf dem Lernpfad **Firefly**, **Workfront Fusion**, **ALL** befinden oder wenn Sie an einem **Live-Workshop**. Sie können diesen Schritt überspringen, wenn Sie nicht auf einem dieser Lernpfade sind.
 
 Sie sollten das dann sehen. Wählen Sie **+ Zu Projekt hinzufügen** und dann **API**.
 
@@ -59,6 +63,10 @@ Sie sollten das dann sehen.
 
 ### Photoshop Services-API
 
+>[!IMPORTANT]
+>
+>Je nach ausgewähltem Lernpfad haben Sie möglicherweise keinen Zugriff auf die Photoshop Services-API. Sie haben nur Zugriff auf die Photoshop Services-API, wenn Sie sich auf dem Lernpfad **Firefly**, **Workfront Fusion**, **ALL** befinden oder wenn Sie an einem **Live-Workshop**. Sie können diesen Schritt überspringen, wenn Sie nicht auf einem dieser Lernpfade sind.
+
 Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
 
 ![Azure-Speicher](./images/ps2.png){zoomable="yes"}
@@ -84,6 +92,10 @@ Sie sollten das dann sehen.
 ![Neue Adobe I/O-Integration](./images/ps7.png){zoomable="yes"}
 
 ### Adobe Experience Platform-API
+
+>[!IMPORTANT]
+>
+>Je nach ausgewähltem Lernpfad haben Sie möglicherweise keinen Zugriff auf die Adobe Experience Platform-API. Sie haben nur Zugriff auf die Adobe Experience Platform-API, wenn Sie sich auf dem Lernpfad **AEP + Apps**, **ALL** befinden oder wenn Sie an einem **Live-Workshop**. Sie können diesen Schritt überspringen, wenn Sie nicht auf einem dieser Lernpfade sind.
 
 Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
 

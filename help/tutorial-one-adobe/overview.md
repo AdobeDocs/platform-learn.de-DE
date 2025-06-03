@@ -3,10 +3,10 @@ title: Überblick - Umfassendes technisches Tutorial - One Adobe
 description: Umfassendes technisches Tutorial - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 3%
+source-wordcount: '944'
+ht-degree: 2%
 
 ---
 
@@ -34,22 +34,16 @@ Dieses Tutorial konzentriert sich nicht nur auf Adobe-Anwendungen, sondern berü
 - Snowflake
 - ...
 
-## Voraussetzungen
+## Zeigen Sie Ihr Wissen
 
-If you want to take this tutorial using your own Adobe Experience Cloud instance, the following applications need to be provisioned in your instance and you need to be able to access:
+![Adobe qualifiziert](./assets/images/badge.png){width="100px" align="left"}
 
-- Adobe Firefly
-- Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront
-- Adobe Workfront Fusion
-- Datenerfassung in Adobe Experience Platform und Adobe Experience Platform
-- Zugriff auf das Demosystem Weiter: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+Nachdem Sie einige der Module in diesem Tutorial abgeschlossen haben, können Sie an einer Adobe-Berechtigungsprüfung teilnehmen, um ein **Adobe Qualified**-Abzeichen zu erhalten.
 
-## Abschluss und Zertifizierung
-
-Dieses Tutorial ist Teil eines Adobe-Zertifizierungskurses. Sie können sich neben diesem Tutorial unter [https://certification.adobe.com für den Kurs ](https://certification.adobe.com).
-
-Für jedes Modul, das Sie mit dem folgenden Tutorial abschließen, müssen Sie einen Abschlussnachweis wie [ angegeben ](./completion.md).
+- Wenn Sie das Modul [Übersicht über Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} abgeschlossen haben, können Sie die **Adobe Qualified**-Prüfung (AD2 **E901)**:
+  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential).
+- Wenn Sie das Modul [Creative Workflow-Automatisierung mit Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"} abschließen, können Sie die **Adobe Qualified**-Prüfung (**)**:
+  [TBC](https://certification.adobe.com/certification/services-qualified-credential).
 
 ## Inhaltsstatus
 
@@ -61,11 +55,11 @@ Um den Status der folgenden Inhalte zu überprüfen, gehen Sie bitte zur [Status
 
 In diesem grundlegenden Modul bereiten Sie alles vor, damit Sie auf die Demo-Umgebung zugreifen und sie verwenden können.
 
-### 1. Workflow und Planung
+### &#x200B;1. Workflow und Planung
 
-### 2. Erstellung und Produktion
+### &#x200B;2. Erstellung und Produktion
 
-[.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Überblick über Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 In diesem Modul verwenden Sie Adobe Firefly Services-APIs, Photoshop-APIs und Microsoft Azure Storage Services, um Bilder zu generieren und programmgesteuert zu speichern.
 
@@ -77,7 +71,7 @@ In diesem grundlegenden Modul verwenden Sie Adobe Workfront Fusion, um Ihre Work
 
 In diesem grundlegenden Modul verwenden Sie Adobe Express zum Erstellen von Bildern und Videos und geben diese Assets für das gesamte Adobe Experience Cloud-Ökosystem frei.
 
-### 3. Asset-Management
+### &#x200B;3. Asset-Management
 
 [1.1 Adobe Experience Manager Cloud Service und Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
@@ -87,7 +81,7 @@ In diesem Grundmodul richten Sie Ihr Adobe Experience Manager Cloud Service-Prog
 
 In diesem grundlegenden Modul konfigurieren und verwenden Sie Adobe Workfront, um Genehmigungsflüsse zu verwalten, und Sie verwenden Integrationen mit Adobe Experience Manager Assets, dem universellen Editor, Photoshop und mehr.
 
-### 4. Versand und Aktivierung
+### &#x200B;4. Versand und Aktivierung
 
 #### Datenerfassung
 
@@ -105,7 +99,7 @@ In diesem Modul erfahren Sie, wie Sie ein Federated-Audiences-Modell einrichten 
 
 #### Real-Time CDP B2C
 
-[2.1 Foundation - Real-time Customer Profile](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
+[2.1 Foundation - Echtzeit-Kundenprofil](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
 
 In diesem grundlegenden Modul lernen Sie das Echtzeit-Kundenprofil in Adobe Experience Platform kennen, indem Sie die Benutzeroberfläche und API verwenden.
 
@@ -149,9 +143,9 @@ In diesem Modul erfahren Sie alles, was es über Journey Optimizer zu wissen gib
 
 [3.5 Adobe Journey Optimizer: Übersetzungsdienstleistungen](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
 
-In this module, you&#39;ll learn how to setup and use Translation Services within Adobe Journey Optimizer to localize your messages to your customers.
+In diesem Modul erfahren Sie, wie Sie in Adobe Journey Optimizer Übersetzungsdienste einrichten und verwenden können, um Ihre Nachrichten für Ihre Kunden zu lokalisieren.
 
-### 5. Reporting und Erkenntnisse
+### &#x200B;5. Reporting und Erkenntnisse
 
 #### Adobe Customer Journey Analytics
 
