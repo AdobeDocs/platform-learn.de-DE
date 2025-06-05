@@ -90,6 +90,7 @@ Die Identity Service-Erweiterung ist eine der wenigen Tag-Erweiterungen, die ein
    1. Erweitern Sie „`Cookies`“ auf der linken Seite.
    1. Klicken Sie auf die Domain `https://luma.enablementadobe.com`.
    1. Suchen Sie auf der rechten Seite nach dem „AMCV_“-Cookie. Möglicherweise sehen Sie mehrere , seit Sie die Luma-Site geladen haben, indem Sie sowohl ihre hartcodierte Tag-Eigenschaft als auch ihre eigene Eigenschaft zugeordnet haben.
+
       ![Überprüfen des „AMCV_“-Cookies](images/idservice-AMCVCookie.png)
 
 Das ist alles! Sie haben Ihre erste Erweiterung hinzugefügt! Weitere Informationen zu den Konfigurationsoptionen des Identity Service finden Sie in [der Dokumentation](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=de).

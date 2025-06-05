@@ -155,7 +155,7 @@ Nachdem Sie nun über die Eigenschaft verfügen, können Sie die Web-SDK mithilf
 1. Navigieren Sie **[!UICONTROL linken Navigationsbereich]** Erweiterungen“.
 1. Wechseln Sie zur Registerkarte **[!UICONTROL Katalog]**.
 1. Für Tags stehen viele Erweiterungen zur Verfügung. Katalog mit dem Begriff `Web SDK` filtern
-1. Klicken Sie in der Erweiterung **[!UICONTROL Adobe Experience Platform Web]** SDK **[!UICONTROL auf die Schaltfläche]**Installieren“
+1. Klicken Sie in der Erweiterung **[!UICONTROL Adobe Experience Platform Web]** SDK **[!UICONTROL auf die Schaltfläche]**&#x200B;Installieren“
    ![Installieren der Adobe Experience Platform Web SDK-Erweiterung](assets/websdk-property-addExtension.png)
 1. Es gibt mehrere Konfigurationen für die Web-SDK-Erweiterung, aber es gibt nur zwei, die wir für dieses Tutorial konfigurieren werden. Aktualisieren Sie die **[!UICONTROL Edge]** Domäne auf `data.enablementadobe.com`. Mit dieser Einstellung können Sie Erstanbieter-Cookies mit Ihrer Web SDK-Implementierung festlegen. Dies wird empfohlen. Später in dieser Lektion ordnen Sie eine Website in der `enablementadobe.com` Domain Ihrer Tag-Eigenschaft zu. Der CNAME für die `enablementadobe.com` Domain wurde bereits so konfiguriert, dass `data.enablementadobe.com` an Adobe-Server weiterleitet. Wenn Sie Web SDK auf Ihrer eigenen Website implementieren, müssen Sie einen CNAME für Ihre eigenen Datenerfassungszwecke erstellen, z. B. `data.YOUR_DOMAIN.com`
 1. Wählen Sie **[!UICONTROL Dropdown-]** „Datenstrom“ Ihren `Luma Platform Tutorial` Datenstrom aus.
@@ -348,7 +348,7 @@ Jetzt ordnen wir unseren Seitennamen der Web-SDK zu.
 >[!IMPORTANT]
 >
 >Um diese Aufgabe abzuschließen, müssen wir sicherstellen, dass Ihre Benutzerin bzw. Ihr Benutzer zuerst Zugriff auf die Produktions-Sandbox hat. Wenn Sie noch keinen Zugriff auf die Produktions-Sandbox von einem anderen Produktprofil aus haben, öffnen Sie schnell Ihr `Luma Tutorial Platform` und fügen Sie das Berechtigungselement **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]** hinzu. Führen Sie danach auf der Seite „Datenelemente“ die UMSCHALTTASTE Neu laden aus, um den Cache zu löschen
->>![Fügen Sie die Produktions-Sandbox hinzu](assets/websdk-property-permissionToLoadSchema.png)
+>&#x200B;>![Fügen Sie die Produktions-Sandbox hinzu](assets/websdk-property-permissionToLoadSchema.png)
 
 Auf der Seite **[!UICONTROL Datenelemente]**:
 

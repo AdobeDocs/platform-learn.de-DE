@@ -362,7 +362,7 @@ Im Folgenden finden Sie eine optionale Übung für Target Premium-Kunden, wenn 
 
 1. Navigieren Sie **[!UICONTROL Administration > Eigenschaften]**
 
-1. Identifizieren Sie die gewünschte Eigenschaft und klicken Sie auf die ]****[!UICONTROL &lt;/>oder erstellen Sie eine neue Eigenschaft
+1. Identifizieren Sie die gewünschte Eigenschaft und klicken Sie auf die **&#x200B;**&lt;/>oder erstellen Sie eine neue Eigenschaft
 
 1. Kopieren Sie den Code-Ausschnitt aus dem `<script></script>` in die Zwischenablage
 

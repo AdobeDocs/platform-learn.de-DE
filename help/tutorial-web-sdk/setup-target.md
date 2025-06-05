@@ -214,7 +214,7 @@ Mit der Einstellung Visuelle Personalisierungsentscheidungen rendern wendet Plat
 
 >[!NOTE]
 >
->In der Regel sollte [!UICONTROL  Einstellung „Visuelle Personalisierungsentscheidungen rendern] nur für eine einzige Sendeereignis-Aktion pro vollständigem Seitenladevorgang aktiviert sein. Wenn diese Einstellung für mehrere Sendeereignis-Aktionen aktiviert ist, werden nachfolgende Render-Anfragen ignoriert.
+>In der Regel sollte [!UICONTROL &#x200B; Einstellung „Visuelle Personalisierungsentscheidungen rendern] nur für eine einzige Sendeereignis-Aktion pro vollständigem Seitenladevorgang aktiviert sein. Wenn diese Einstellung für mehrere Sendeereignis-Aktionen aktiviert ist, werden nachfolgende Render-Anfragen ignoriert.
 
 Wenn Sie es vorziehen, diese Entscheidungen selbst mit benutzerdefiniertem Code zu rendern oder zu bearbeiten, können Sie die Einstellung [!UICONTROL Visuelle Personalisierungsentscheidungen rendern] deaktiviert lassen. Platform Web SDK ist flexibel und bietet diese Funktion, um Ihnen vollständige Kontrolle zu geben. Weitere Informationen zum manuellen Rendern personalisierter Inhalte [ Sie im Handbuch ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content).
 
@@ -285,7 +285,7 @@ Wenn Sie eine Aktivität einrichten, sollte der Inhalt auf der Seite gerendert w
 
 Benutzerdefinierte Entscheidungsumfänge (ehemals als „Mboxes“ bezeichnet) können verwendet werden, um HTML- oder JSON-Inhalte mithilfe des formularbasierten Experience Composers von Target strukturiert bereitzustellen. Inhalte, die für einen dieser benutzerdefinierten Bereiche bereitgestellt werden, werden von Platform Web SDK nicht automatisch gerendert. Sie kann mithilfe einer Aktion in Tags gerendert werden.
 
-### Fügen Sie der [!UICONTROL Aktion „Ereignis senden“ einen Bereich ]
+### Fügen Sie der [!UICONTROL Aktion „Ereignis senden“ einen Bereich &#x200B;]
 
 Ändern Sie Ihre Seitenladeregel, um einen benutzerdefinierten Entscheidungsumfang hinzuzufügen:
 
