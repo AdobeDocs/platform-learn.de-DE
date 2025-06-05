@@ -1,10 +1,10 @@
 ---
-title: Einrichten von Adobe Analytics mithilfe von Experience Platform Web SDK
+title: Einrichten von Adobe Analytics mit Experience Platform Web SDK
 description: Erfahren Sie, wie Sie Adobe Analytics mithilfe von Experience Platform Web SDK einrichten. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '2865'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Einrichten von Adobe Analytics mit Adobe Experience Platform Web SDK
 
-Erfahren Sie, wie Sie Adobe Analytics mithilfe von [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/web-sdk/overview) einrichten, Tag-Regeln erstellen, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics die Daten erwartungsgemäß erfasst.
+Erfahren Sie, wie Sie Adobe Analytics mithilfe von [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview) einrichten, Tag-Regeln erstellen, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics die Daten erwartungsgemäß erfasst.
 
 [Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics) ist eine branchenführende Anwendung, mit der Sie Ihre Kunden als Mitarbeiter verstehen und Ihr Unternehmen mit Customer Intelligence steuern können.
 
@@ -35,13 +35,13 @@ Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 * Machen Sie sich mit Adobe Analytics vertraut und haben Sie Zugriff darauf.
 
-* Sie verfügen über mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie keine Test-/Entwicklungs-Report Suite haben, die Sie für dieses Tutorial verwenden können, erstellen [ eine](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Sie verfügen über mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie keine Test-/Entwicklungs-Report Suite haben, die Sie für dieses Tutorial verwenden können, erstellen [ eine](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Die vorherigen Lektionen in den Abschnitten Erstkonfiguration und Tags-Konfiguration dieses Tutorials absolvieren.
 
 ## Konfigurieren des Datenstroms
 
-Platform Web SDK sendet Daten von Ihrer Website an das Platform-Edge Network. Ihr Datenstrom teilt dann Platform Edge Network mit, an welche Adobe Analytics Report Suites Ihre Daten gesendet werden sollen.
+Platform Web SDK sendet Daten von Ihrer Website an Platform Edge Network. Ihr Datenstrom teilt dann Platform Edge Network mit, an welche Adobe Analytics Report Suites Ihre Daten gesendet werden sollen.
 
 1. Zur [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} wechseln
 1. Wählen Sie in der linken Navigation **[!UICONTROL Datenströme]**
@@ -74,13 +74,13 @@ Es gibt mehrere Möglichkeiten, Analytics-Variablen in einer Web SDK-Implementie
 1. Zuordnen von XDM-Feldern zu Analytics-Variablen in Analytics-Verarbeitungsregeln (nicht mehr empfohlen).
 1. Zuordnen zu Analytics-Variablen direkt im XDM-Schema (nicht mehr empfohlen).
 
-Ab Mai 2024 müssen Sie kein XDM-Schema mehr erstellen, um Adobe Analytics mit Platform Web SDK zu implementieren. Das `data` (und das `data.variable` Datenelement, das Sie in der Lektion [Datenelemente erstellen](create-data-elements.md) erstellt haben) können zum Festlegen aller benutzerdefinierten Analytics-Variablen verwendet werden. Das Festlegen dieser Variablen im Datenobjekt ist bestehenden Analytics-Kunden vertraut, ist effizienter als die Verwendung der Benutzeroberfläche für Verarbeitungsregeln und verhindert, dass unnötige Daten in Echtzeit-Kundenprofilen Speicherplatz belegen (wichtig, wenn Sie über Real-time Customer Data Platform oder Journey Optimizer verfügen).
+Ab Mai 2024 müssen Sie kein XDM-Schema mehr erstellen, um Adobe Analytics mit Platform Web SDK zu implementieren. Das `data` (und das `data.variable` Datenelement, das Sie in der Lektion [Datenelemente erstellen](create-data-elements.md) erstellt haben) können zum Festlegen aller benutzerdefinierten Analytics-Variablen verwendet werden. Das Festlegen dieser Variablen im Datenobjekt ist bestehenden Analytics-Kunden vertraut, ist effizienter als die Verwendung der Benutzeroberfläche für Verarbeitungsregeln und verhindert, dass unnötige Daten in Echtzeit-Kundenprofilen Speicherplatz belegen (wichtig, wenn Sie über Real-Time Customer Data Platform oder Journey Optimizer verfügen).
 
 ### Automatisch zugeordnete Felder
 
-Viele XDM-Felder werden automatisch Analytics-Variablen zugeordnet. Die aktuelle Liste der Zuordnungen finden Sie unter [Analytics-Variablenzuordnung in Adobe Experience Edge](https://experienceleague.adobe.com/de/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Viele XDM-Felder werden automatisch Analytics-Variablen zugeordnet. Die aktuelle Liste der Zuordnungen finden Sie unter [Analytics-Variablenzuordnung in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-Dies tritt auf, _(auch wenn Sie kein benutzerdefiniertes Schema definiert haben_. Experience Platform Web SDK erfasst automatisch einige Daten und sendet sie als XDM-Felder an das Platform-Edge Network. Beispielsweise liest Web SDK die URL der aktuellen Seite und sendet sie als XDM-`web.webPageDetails.URL`. Dieses Feld wird an Adobe Analytics weitergeleitet und die Seiten-URL-Berichte in Adobe Analytics werden automatisch ausgefüllt.
+Dies tritt auf, _(auch wenn Sie kein benutzerdefiniertes Schema definiert haben_. Experience Platform Web SDK erfasst automatisch einige Daten und sendet sie als XDM-Felder an Platform Edge Network. Beispielsweise liest Web SDK die URL der aktuellen Seite und sendet sie als XDM-`web.webPageDetails.URL`. Dieses Feld wird an Adobe Analytics weitergeleitet und die Seiten-URL-Berichte in Adobe Analytics werden automatisch ausgefüllt.
 
 Wenn Sie Web SDK für Adobe Analytics mit einem XDM-Schema implementieren, wie Sie es in diesem Tutorial getan haben, verfügen einige der XDM-Felder, die Sie anwenderdefiniert implementiert haben, über eine automatische Zuordnung zu Analytics-Variablen, wie in dieser Tabelle beschrieben:
 
@@ -106,15 +106,15 @@ Die einzelnen Abschnitte der Analytics-Produktzeichenfolge werden durch verschie
 >[!NOTE]
 >
 >Seit dem 18. August 2022 hat `productListItems[].SKU` Priorität für die Zuordnung zum Produktnamen in der s.products-Variablen.
->Der auf `productListItems[].name` festgelegte Wert wird nur dann dem Produktnamen zugeordnet, wenn `productListItems[].SKU` nicht vorhanden ist. Andernfalls ist sie nicht zugeordnet und in Kontextdaten verfügbar.
->Legen Sie keine leere Zeichenfolge oder Null auf `productListItems[].SKU` fest. Dies hat den unerwünschten Effekt der Zuordnung zum Produktnamen in der s.products-Variablen.
+>>Der auf `productListItems[].name` festgelegte Wert wird nur dann dem Produktnamen zugeordnet, wenn `productListItems[].SKU` nicht vorhanden ist. Andernfalls ist sie nicht zugeordnet und in Kontextdaten verfügbar.
+>>Legen Sie keine leere Zeichenfolge oder Null auf `productListItems[].SKU` fest. Dies hat den unerwünschten Effekt der Zuordnung zum Produktnamen in der s.products-Variablen.
 
 
 ### Festlegen von Variablen im Datenobjekt
 
 Aber was ist mit eVars, Props und Ereignissen? Das Festlegen von Variablen im `data` ist die empfohlene Methode zum Festlegen dieser Analytics-Variablen mit Web SDK. Durch Festlegen von Variablen im Datenobjekt können auch alle automatisch zugeordneten Variablen überschrieben werden.
 
-Erstens, was ist das `data`? In jedem Web-SDK-Ereignis können Sie zwei Objekte mit benutzerdefinierten Daten senden, das `xdm`-Objekt und das `data`-Objekt. Beide werden an das Platform-Edge Network gesendet, aber nur das `xdm`-Objekt wird an den Experience Platform-Datensatz gesendet. Eigenschaften im `data` können in der Edge `xdm` Feldern mithilfe der Funktion „Datenvorbereitung für die Datenerfassung“ zugeordnet werden, werden andernfalls jedoch nicht an Experience Platform gesendet. Dies macht sie zu einer idealen Möglichkeit, Daten an Anwendungen wie Analytics zu senden, die nicht nativ auf Experience Platform erstellt wurden.
+Erstens, was ist das `data`? In jedem Web-SDK-Ereignis können Sie zwei Objekte mit benutzerdefinierten Daten senden, das `xdm`-Objekt und das `data`-Objekt. Beide werden an Platform Edge Network gesendet, aber nur das `xdm` wird an den Experience Platform-Datensatz gesendet. Eigenschaften im `data` können in der Edge `xdm` Feldern mithilfe der Funktion „Datenvorbereitung für die Datenerfassung“ zugeordnet werden, werden andernfalls jedoch nicht an Experience Platform gesendet. Dies macht sie zu einer idealen Möglichkeit, Daten an Programme wie Analytics zu senden, die nicht nativ auf Experience Platform basieren.
 
 Im Folgenden finden Sie die beiden Objekte in einem generischen Web-SDK-Aufruf:
 
@@ -306,18 +306,18 @@ Herzlichen Glückwunsch! Der nächste Schritt besteht darin, Ihre Adobe Analytic
 
 Erfahren Sie, wie Sie überprüfen können, ob Adobe Analytics die ECID, Seitenansichten, die Produktzeichenfolge und E-Commerce-Ereignisse mit der Edge Trace-Funktion von Experience Platform Debugger erfasst.
 
-In der [Debugger](validate-with-debugger.md)-Lektion haben Sie gelernt, wie Sie die Client-seitige XDM-Anfrage mit Platform Debugger und der Browser-Entwicklerkonsole überprüfen können, was dem Debuggen einer `AppMeasurement.js` Analytics-Implementierung ähnelt. Sie haben auch etwas über die Validierung von Server-seitigen Platform-Edge Network-Anfragen erfahren, die an Adobe-Anwendungen gesendet werden, und darüber, wie Sie eine vollständig verarbeitete Payload mit Assurance anzeigen können.
+In der [Debugger](validate-with-debugger.md)-Lektion haben Sie gelernt, wie Sie die Client-seitige XDM-Anfrage mit Platform Debugger und der Browser-Entwicklerkonsole überprüfen können, was dem Debuggen einer `AppMeasurement.js` Analytics-Implementierung ähnelt. Sie haben auch etwas über die Validierung von Server-seitigen Platform-Edge Network-Anfragen erfahren, die an Adobe-Programme gesendet werden, und darüber, wie Sie eine vollständig verarbeitete Payload mit Assurance anzeigen können.
 
-Um zu überprüfen, ob Analytics die ordnungsgemäße Datenerfassung durch Experience Platform Web SDK gewährleistet, müssen Sie zwei Schritte weiter gehen, um:
+Um zu überprüfen, ob Analytics Daten ordnungsgemäß über Experience Platform Web SDK erfasst, müssen Sie zwei Schritte weiter gehen, um:
 
-1. Überprüfen Sie mithilfe der Edge Trace-Funktion von Experience Platform Debugger, wie Daten vom XDM-Objekt im Platform-Edge Network verarbeitet werden
+1. Überprüfen Sie mithilfe der Edge Trace-Funktion von Experience Platform Debugger, wie Daten vom XDM-Objekt in Platform Edge Network verarbeitet werden
 1. Überprüfen, wie Daten von Analytics mithilfe von Adobe Experience Platform Assurance vollständig verarbeitet werden
 
-### Experience Cloud-ID-Validierung
+### Experience Cloud ID-Validierung
 
 1. Navigieren Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
-1. Klicken Sie auf die Schaltfläche Anmelden oben rechts und verwenden Sie die Anmeldedaten u: test@adobe.com p: Test zur Authentifizierung
-1. Öffnen Sie den Experience Platform-Debugger und [wechseln Sie die Tag-Eigenschaft auf der Site zu Ihrer eigenen Entwicklungseigenschaft](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Klicken Sie auf die Schaltfläche Anmelden oben rechts und verwenden Sie die Anmeldedaten u: test@test.com p: Test zur Authentifizierung
+1. Öffnen Sie den Experience Platform-Debugger und [ Sie die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft um](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
 
 1. Um den Edge-Trace zu aktivieren, wechseln Sie zum Experience Platform-Debugger, wählen Sie im linken Navigationsbereich **[!UICONTROL Protokolle]** und dann die Registerkarte **[!UICONTROL Edge]** aus und klicken Sie auf **[!UICONTROL Verbinden]**
@@ -338,14 +338,14 @@ Um zu überprüfen, ob Analytics die ordnungsgemäße Datenerfassung durch Exper
    >Die zweite Dropdown-Liste entspricht der Analytics Report Suite-ID , an die Sie Daten senden. Sie sollte mit Ihrer eigenen Report Suite übereinstimmen, nicht mit der im Screenshot.
 
 1. Scrollen Sie nach unten, um `[!UICONTROL c.a.x.identitymap.ecid.[0].id]` zu finden. Es ist eine Kontextdatenvariable, die ECID erfasst
-1. Scrollen Sie nach unten, bis Sie die Variable Analytics-`[!UICONTROL mid]` sehen. Beide IDs stimmen mit der Experience Cloud-ID Ihres Geräts überein.
-1. Auf der Website von Luma
+1. Scrollen Sie nach unten, bis Sie die Variable Analytics-`[!UICONTROL mid]` sehen. Beide IDs stimmen mit der Experience Cloud ID Ihres Geräts überein.
+1. Auf der Website von Luma:
 
    ![Analytics-ECID](assets/analytics-debugger-ecid.png)
 
    >[!NOTE]
    >
-   >Da Sie angemeldet sind, sollten Sie kurz überprüfen, ob die authentifizierte ID `112ca06ed53d3db37e4cea49cc45b71e` für den Benutzer **`test@adobe.com`** auch in der `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]` erfasst wird
+   >Da Sie angemeldet sind, sollten Sie kurz überprüfen, ob die authentifizierte ID `b642b4217b34b1e8d3bd915fc65c4452` für den Benutzer **`test@test.com`** auch in der `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]` erfasst wird
 
 ### Validierung der Report Suite-Überschreibung
 
@@ -370,7 +370,7 @@ Navigieren Sie zu einer Produktseite wie der [Didi Sport Watch-Produktseite](htt
 
 ### Validierung von Produktzeichenfolgen und E-Commerce-Ereignissen
 
-Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weiterhin dieselbe Edge Trace, um zu überprüfen, ob Produktdaten von Analytics erfasst werden. Sowohl die Produktzeichenfolge als auch die E-Commerce-Ereignisse werden Analytics automatisch XDM-Variablen zugeordnet. Sofern Sie beim Konfigurieren [ XDM-Schemas für Adobe Analytics der richtigen `productListItem`-XDM-Variable ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) haben, mappt das Platform-Edge Network die Daten den richtigen Analytics-Variablen zu.
+Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weiterhin dieselbe Edge Trace, um zu überprüfen, ob Produktdaten von Analytics erfasst werden. Sowohl die Produktzeichenfolge als auch die E-Commerce-Ereignisse werden Analytics automatisch XDM-Variablen zugeordnet. Sofern Sie beim Konfigurieren [ XDM-Schemas für Adobe Analytics der richtigen `productListItem`-XDM-Variablen zugeordnet haben](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) übernimmt Platform Edge Network die Zuordnung der Daten zu den richtigen Analytics-Variablen.
 
 **Überprüfen Sie zunächst, ob die `Product String` festgelegt ist**
 
@@ -381,9 +381,9 @@ Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weit
 
    ![Analytics-Produktzeichenfolge](assets/analytics-debugger-prodstring.png)
 
-   Edge Trace behandelt `commerce` Ereignisse geringfügig anders als `productList` Dimensionen. Eine Kontextdatenvariable wird nicht auf die gleiche Weise zugeordnet angezeigt wie der Produktname, der `[!UICONTROL c.a.x.productlistitem.[0].name]` oben zugeordnet ist. Stattdessen zeigt Edge Trace die endgültige automatische Ereigniszuordnung in der Analytics-`event` an. Das Platform-Edge Network ordnet es entsprechend zu, solange Sie es bei der [Konfiguration des Schemas für Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) der richtigen XDM-`commerce` zuordnen. In diesem Fall ist dies die `commerce.productViews.value=1`.
+   Edge Trace behandelt `commerce` Ereignisse geringfügig anders als `productList` Dimensionen. Eine Kontextdatenvariable wird nicht auf die gleiche Weise zugeordnet angezeigt wie der Produktname, der `[!UICONTROL c.a.x.productlistitem.[0].name]` oben zugeordnet ist. Stattdessen zeigt Edge Trace die endgültige automatische Ereigniszuordnung in der Analytics-`event` an. Platform Edge Network ordnet sie entsprechend zu, solange Sie sie bei der [Konfiguration des Schemas für Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) der richtigen XDM-`commerce`-Variablen zuordnen. In diesem Fall ist dies die `commerce.productViews.value=1`.
 
-1. Scrollen Sie im Fenster Experience Platform-Debugger nach unten zur Variablen `[!UICONTROL events]` und legen Sie sie auf `[!UICONTROL prodView]` fest
+1. Führen Sie im Fenster Experience Platform Debugger einen Bildlauf nach unten zur Variablen `[!UICONTROL events]` durch. Sie ist auf `[!UICONTROL prodView]` festgelegt
 
 1. Beachten Sie außerdem, dass `[!UICONTROL c.a.x.eventType]` auf `commerce.productViews` gesetzt ist, da Sie sich auf einer Produktseite befinden.
 
@@ -432,13 +432,13 @@ Mit Adobe Experience Platform Assurance können Sie die Art und Weise, wie Sie D
 
 In der vorherigen Übung haben Sie überprüft, ob Adobe Analytics die ECID, Seitenansichten, die Produktzeichenfolge und E-Commerce-Ereignisse mit der Edge Trace-Funktion von Experience Platform Debugger erfasst.  Als Nächstes validieren Sie dieselben Ereignisse mit Adobe Experience Platform Assurance, einer alternativen Schnittstelle für den Zugriff auf dieselben Daten in Edge Trace.
 
-Wie Sie in der Lektion zu [Assurance](validate-with-assurance.md) gelernt haben, gibt es mehrere Möglichkeiten, eine Assurance-Sitzung zu starten. Da Sie bereits über Adobe Experience Platform Debugger mit einer Edge Trace-Sitzung verfügen, die in der letzten Übung initiiert wurde, empfehlen wir Ihnen, über den Debugger auf Assurance zuzugreifen:
+Wie Sie in der Lektion zu [Assurance](validate-with-assurance.md) gelernt haben, gibt es mehrere Möglichkeiten, eine Assurance-Sitzung zu starten. Da Adobe Experience Platform Debugger bereits mit einer Edge Trace-Sitzung geöffnet ist, die in der letzten Übung initiiert wurde, empfehlen wir, über den Debugger auf Assurance zuzugreifen:
 ![Assurance über die Adobe Experience Platform-Datenerfassung](assets/assurance-open-aep-debugger.png)
 
 Geben Sie im **[!UICONTROL „Web SDK Tutorial 3“]** Assurance Session **[!UICONTROL „hitdebugger“]** in die Ereignissuchleiste ein, um die Ergebnisse nach den in Adobe Analytics nachbearbeiteten Daten zu filtern.
 ![Nachverarbeitete Daten von Assurance Adobe Analytics](assets/assurance-hitdebugger.png)
 
-### Experience Cloud-ID-Validierung
+### Experience Cloud ID-Validierung
 
 Um zu überprüfen, ob Adobe Analytics die ECID erfasst, wählen Sie ein Beacon aus und öffnen Sie die Payload.  Der Anbieter dieses Beacons sollte **[!UICONTROL com.adobe.analytics.hitdebugger]** sein
 ![Adobe Analytics-Validierung mit Assurance](assets/assurance-hitdebugger-payload.png)
@@ -454,7 +454,7 @@ Scrollen Sie nach unten zu **[!UICONTROL pageName]**, um zu überprüfen, ob die
 
 ### Validierung von Produktzeichenfolgen und E-Commerce-Ereignissen
 
-Nach denselben Validierungsanwendungsfällen, die bei der Validierung mit dem Experience Platform-Debugger oben verwendet wurden, verwenden Sie weiterhin denselben Beacon, um die `Ecommerce Events` und die `Product String` zu validieren.
+Nach denselben Validierungsanwendungsfällen, die bei der Validierung mit dem Experience Platform Debugger oben verwendet wurden, verwenden Sie weiterhin denselben Beacon, um die `Ecommerce Events` und die `Product String` zu validieren.
 
 1. Suchen Sie nach Payload, in der die **[!UICONTROL Ereignisse]** `prodView` enthalten
    ![Validierung von Produktzeichenfolgen mit Assurance](assets/assurance-hitdebugger-prodView-event.png)
@@ -481,4 +481,4 @@ Herzlichen Glückwunsch! Du hast es geschafft! Dies ist das Ende der Lektion. Je
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

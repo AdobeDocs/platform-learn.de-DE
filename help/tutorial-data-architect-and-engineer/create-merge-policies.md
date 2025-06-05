@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Mal sehen, ob die Zusammenführungsrichtlinie das tut, was wir erwarten würden:
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Durchsuchen]**.
 1. Ändern Sie die **[!UICONTROL Zusammenführungsrichtlinie]** in Ihre neue `Loyalty Prioritized`
 1. Verwenden Sie als **[!UICONTROL Identity-Namespace]** Ihren `Luma CRM Id`
-1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `112ca06ed53d3db37e4cea49cc45b71e`
+1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `b642b4217b34b1e8d3bd915fc65c4452`
 1. Klicken Sie auf **[!UICONTROL Schaltfläche Profil anzeigen]**
 1. `Daniel` ist zurück!
 
@@ -110,7 +110,7 @@ Sehen wir uns nun an, was diese Zusammenführungsrichtlinie bewirkt:
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Durchsuchen]**.
 1. Ändern Sie die **[!UICONTROL Zusammenführungsrichtlinie]** in Ihre neue `Loyalty Only`
 1. Verwenden Sie als **[!UICONTROL Identity-Namespace]** Ihren `Luma CRM Id`
-1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `112ca06ed53d3db37e4cea49cc45b71e`
+1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `b642b4217b34b1e8d3bd915fc65c4452`
 1. Klicken Sie auf **[!UICONTROL Schaltfläche Profil anzeigen]**
 1. Bestätigen Sie, dass keine Profile gefunden wurden:
    ![Nur Treue - keine CRM-ID-Suche.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
@@ -140,7 +140,7 @@ Ein wichtiger Anwendungsfall für Zusammenführungsrichtlinien ist Data Governan
 
 ## Weitere Ressourcen
 
-* [Dokumentation zu Zusammenführungsrichtlinien](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=de)
+* [Dokumentation zu Zusammenführungsrichtlinien](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Zusammenführungsrichtlinien-API (Teil der Echtzeit-Kundenprofil-API)-Referenz](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Fahren wir nun mit dem [Data Governance-Framework](apply-data-governance-framework.md) fort.

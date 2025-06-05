@@ -3,7 +3,7 @@ title: Hinzufügen des Adobe Experience Platform Identity Services mit Tags
 description: Erfahren Sie, wie Sie die Adobe Experience Platform Identity Service-Erweiterung hinzufügen und Kunden-IDs mit der Aktion zum Festlegen von Kunden-IDs erfassen. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1945'
 ht-degree: 65%
@@ -12,7 +12,7 @@ ht-degree: 65%
 
 # Adobe Experience Platform Identity Service hinzufügen
 
-Diese Lektion führt Sie durch die Schritte, die zur Implementierung der [Adobe Experience Platform Identity Service-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de) und zum Senden von Kunden-IDs erforderlich sind.
+Diese Lektion führt Sie durch die Schritte, die zur Implementierung der [Adobe Experience Platform Identity Service-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) und zum Senden von Kunden-IDs erforderlich sind.
 
 Der [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de) legt eine gemeinsame Besucher-ID für alle Adobe-Lösungen fest, um Experience Cloud-Funktionen wie die gemeinsame Nutzung von Audiences zwischen Lösungen zu ermöglichen. Sie können auch eigene Kunden-IDs an den Service senden, um geräteübergreifendes Targeting und die Integration in Ihr CRM (Customer Relationship Management)-System zu ermöglichen.
 
@@ -20,8 +20,8 @@ Der [Adobe Experience Platform Identity Service](https://experienceleague.adobe.
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de)**
+> * Platform Launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
@@ -90,14 +90,13 @@ Die Identity Service-Erweiterung ist eine der wenigen Tag-Erweiterungen, die ein
    1. Erweitern Sie „`Cookies`“ auf der linken Seite.
    1. Klicken Sie auf die Domain `https://luma.enablementadobe.com`.
    1. Suchen Sie auf der rechten Seite nach dem „AMCV_“-Cookie. Möglicherweise sehen Sie mehrere , seit Sie die Luma-Site geladen haben, indem Sie sowohl ihre hartcodierte Tag-Eigenschaft als auch ihre eigene Eigenschaft zugeordnet haben.
-
       ![Überprüfen des „AMCV_“-Cookies](images/idservice-AMCVCookie.png)
 
 Das ist alles! Sie haben Ihre erste Erweiterung hinzugefügt! Weitere Informationen zu den Konfigurationsoptionen des Identity Service finden Sie in [der Dokumentation](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=de).
 
 ## Senden von Kunden-IDs
 
-Als Nächstes senden Sie eine [Kunden-ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=de) an den Identity Service. Dadurch können Sie [Ihr CRM in Experience Cloud integrieren](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=de) und Besucher geräteübergreifend verfolgen.
+Als Nächstes senden Sie eine [Kunden-ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) an den Identity Service. Dadurch können Sie [Ihr CRM in Experience Cloud integrieren](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=de) und Besucher geräteübergreifend verfolgen.
 
 In der früheren Lektion [Hinzufügen von Datenelementen, Regeln und Bibliotheken](add-data-elements-rules.md) haben Sie ein Datenelement erstellt und in einer Regel verwendet. Jetzt werden Sie dieselben Methoden verwenden, um eine Kunden-ID zu senden, wenn der Besucher authentifiziert wird.
 
@@ -106,7 +105,7 @@ In der früheren Lektion [Hinzufügen von Datenelementen, Regeln und Bibliotheke
 Erstellen Sie zunächst zwei Datenelemente:
 
 1. `Authentication State` zur Erfassung, ob der Besucher angemeldet ist oder nicht.
-1. `Email (Hashed)` erfasst die gehashte Version der E-Mail-Adresse (als Kunden-ID verwendet) aus dem Daten-Layer.
+1. `Email (Hashed)` erfasst die gehashte Version der E-Mail-Adresse (als Kunden-ID verwendet) aus der Datenschicht.
 
 **Erstellen des Datenelements für den Authentifizierungsstatus**
 
@@ -121,7 +120,7 @@ Erstellen Sie zunächst zwei Datenelemente:
 
    ![Öffnen Sie den Editor, um den benutzerdefinierten Code für das Datenelement hinzuzufügen](images/idservice-authenticationState.png)
 
-1. Verwenden Sie im Fenster [!UICONTROL Code bearbeiten] den folgenden Code, um die Werte „angemeldet“ oder „abgemeldet“ basierend auf einem Attribut im Daten-Layer der Site „Luma“ zurückzugeben:
+1. Verwenden Sie im Fenster [!UICONTROL Code bearbeiten] den folgenden Code, um die Werte „angemeldet“ oder „abgemeldet“ basierend auf einem Attribut in der Datenschicht der Site „Luma“ zurückzugeben:
 
    ```javascript
    if (digitalData.user[0].profile[0].attributes.loggedIn)
@@ -206,7 +205,7 @@ Adobe Experience Platform Identity Service übergibt die Kunden-IDs in Regel
 
    ![Hinzufügen einer neuen Aktion](images/idservice-customerId-addAction.png)
 
-   1. Wählen Sie für **[!UICONTROL Erweiterung]** den **[!UICONTROL Experience Cloud-ID-Dienst aus]**
+   1. Wählen Sie für **[!UICONTROL Erweiterung]** den **[!UICONTROL Experience Cloud ID-Service aus]**
    1. Wählen Sie für **[!UICONTROL Aktionstyp]** die Option **[!UICONTROL Kunden-IDs festlegen]**
    1. Für den **[!UICONTROL Integrationscode]** geben Sie `crm_id`
    1. Geben **[!UICONTROL als]** Wert“ das Modal „Datenelementauswahl öffnen“ ein und wählen Sie die `Email (Hashed)` aus
@@ -237,7 +236,7 @@ Um Ihre Arbeit zu überprüfen, melden Sie sich bei der Site „Luma“ an, um d
 
    ![Klicken Sie in der oberen Navigation auf „Anmelden“](images/idservice-loginNav.png)
 
-1. Geben Sie `test@adobe.com` als Benutzernamen ein.
+1. Geben Sie `test@test.com` als Benutzernamen ein.
 1. Geben Sie `test` als Passwort ein.
 1. Klicken Sie auf die **[!UICONTROL ANMELDEN]**-Schaltfläche
 

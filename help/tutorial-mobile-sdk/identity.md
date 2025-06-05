@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Identity-Namespaces sind Komponenten von [Identity Service](https://experiencele
 
 >[!NOTE]
 >
->Die Mobile SDK generiert eine eindeutige Identität in einem eigenen Namespace, der als Experience Cloud-ID (ECID) bezeichnet wird, wenn die App installiert wird. Diese ECID wird im permanenten Speicher auf dem Mobilgerät gespeichert und bei jedem Treffer gesendet. Die ECID wird entfernt, wenn Benutzende die App deinstallieren oder den globalen Datenschutzstatus von Mobile SDK auf „Opt-out“ setzen. In der Beispiel-Luma-App sollten Sie die App entfernen und erneut installieren, um ein neues Profil mit einer eigenen eindeutigen ECID zu erstellen.
+>Die Mobile SDK generiert eine eindeutige Identität in einem eigenen Namespace, der als Experience Cloud ID (ECID) bezeichnet wird, wenn die App installiert wird. Diese ECID wird im permanenten Speicher auf dem Mobilgerät gespeichert und bei jedem Treffer gesendet. Die ECID wird entfernt, wenn Benutzende die App deinstallieren oder den globalen Datenschutzstatus von Mobile SDK auf „Opt-out“ setzen. In der Beispiel-Luma-App sollten Sie die App entfernen und erneut installieren, um ein neues Profil mit einer eigenen eindeutigen ECID zu erstellen.
 
 
 So erstellen Sie einen neuen Identity-Namespace:
@@ -59,7 +59,7 @@ So erstellen Sie einen neuen Identity-Namespace:
 
 Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinierte Identität (Luma CRM ID) aktualisieren, wenn sich der Benutzer bei der App anmeldet.
 
-1. Navigieren Sie im Xcode-Projekt-**zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>**&#x200B;[!DNL Utils]&#x200B;**>** MobileSDK) und suchen Sie nach der Implementierung der `func updateIdentities(emailAddress: String, crmId: String)`. Fügen Sie der Funktion den folgenden Code hinzu.
+1. Navigieren Sie im Xcode-Projekt-]**zu **[!DNL Luma]**>**[!DNL Luma]**>**[!DNL Utils]**>**[!UICONTROL  MobileSDK) und suchen Sie nach der Implementierung der `func updateIdentities(emailAddress: String, crmId: String)`. Fügen Sie der Funktion den folgenden Code hinzu.
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -95,7 +95,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
       ```
 
-   1. Sendet das `IdentityItem`-Objekt als Teil des `Identity.updateIdentities`-API-Aufrufs an das -Edge Network.
+   1. Sendet das `IdentityItem` als Teil des `Identity.updateIdentities`-API-Aufrufs an die Edge Network.
 
       ```swift
       Identity.updateIdentities(with: identityMap) 
@@ -116,16 +116,16 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 
 ## Entfernen einer Identität
 
-Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity)-API verwenden, um die Identität aus der gespeicherten Client-seitigen Identitätszuordnung zu entfernen. Die Identitätserweiterung stoppt das Senden der Kennung an das Edge Network. Bei Verwendung dieser API wird die Kennung nicht aus dem serverseitigen Identitätsdiagramm entfernt. Weitere [ zu Identitätsdiagrammen finden Sie ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=de) „Anzeigen von Identitätsdiagrammen“.
+Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity)-API verwenden, um die Identität aus der gespeicherten Client-seitigen Identitätszuordnung zu entfernen. Die Identity-Erweiterung sendet die Kennung nicht mehr an die Edge Network. Bei Verwendung dieser API wird die Kennung nicht aus dem serverseitigen Identitätsdiagramm entfernt. Weitere [ zu Identitätsdiagrammen finden Sie ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) „Anzeigen von Identitätsdiagrammen“.
 
-1. Navigieren Sie im Xcode-Projekt-**zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>**&#x200B;[!DNL Utils]&#x200B;**>** MobileSDK) und fügen Sie den folgenden Code zur `func removeIdentities(emailAddress: String, crmId: String)` hinzu:
+1. Navigieren Sie im Xcode-Projekt-]**zu **[!DNL Luma]**>**[!DNL Luma]**>**[!DNL Utils]**>**[!UICONTROL  MobileSDK) und fügen Sie den folgenden Code zur `func removeIdentities(emailAddress: String, crmId: String)` hinzu:
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
    currentEmailId = "testUser@gmail.com"
-   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   currentCRMId = "b642b4217b34b1e8d3bd915fc65c4452"
    ```
 
 1. Navigieren Sie im Xcode-Projekt-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** und suchen Sie den Code, der ausgeführt werden soll, wenn Sie die Schaltfläche **[!UICONTROL Abmelden]** auswählen. Fügen Sie den folgenden Code hinzu:
@@ -158,7 +158,7 @@ Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 
 ## Mit Identitätsdiagramm validieren
 
-Nachdem Sie die Schritte in der [Experience Platform-Lektion abgeschlossen haben](platform.md) können Sie die Identitätserfassung in der Identitätsdiagramm-Anzeige von Platform bestätigen:
+Nachdem Sie die Schritte in der [Experience Platform-Lektion](platform.md) abgeschlossen haben, können Sie die Identitätserfassung in der Identitätsdiagramm-Anzeige von Platform bestätigen:
 
 1. Wählen **[!UICONTROL Identitäten]** in der Datenerfassungs-Benutzeroberfläche aus.
 1. Wählen Sie **[!UICONTROL Identitätsdiagramm]** in der oberen Leiste aus.
@@ -174,8 +174,8 @@ Nachdem Sie die Schritte in der [Experience Platform-Lektion abgeschlossen haben
 
 >[!SUCCESS]
 >
->Sie haben jetzt Ihre App so eingerichtet, dass Identitäten im Edge Network und (wenn eingerichtet) in Adobe Experience Platform aktualisiert werden.
+>Sie haben jetzt Ihre App so eingerichtet, dass Identitäten in der Edge Network und (wenn eingerichtet) in Adobe Experience Platform aktualisiert werden.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[Erfassen von Profildaten](profile.md)**

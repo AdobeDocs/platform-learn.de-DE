@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '2446'
 ht-degree: 0%
@@ -79,8 +79,8 @@ Rufen Sie zunächst die Beispieldaten ab und passen Sie sie für Ihren Mandanten
 >
 >Es gibt einige Optionen, **[!UICONTROL Fehlerdiagnose]** und **[!UICONTROL Partielle Aufnahme]**, die Sie in dieser Lektion auf verschiedenen Bildschirmen sehen werden. Diese Optionen werden im Tutorial nicht behandelt. Einige kurze Informationen:
 >
->* Durch Aktivierung der Fehlerdiagnose werden Daten über die Aufnahme Ihrer Daten generiert, die Sie dann mithilfe der Datenzugriffs-API überprüfen können. Weitere Informationen hierzu finden Sie in [der Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=de).
->* Die partielle Aufnahme erlaubt Ihnen, fehlerhafte Daten bis zu einem gewissen Schwellenwert, den Sie angeben können, aufzunehmen. Weitere Informationen hierzu finden Sie in [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=de)
+>* Durch Aktivierung der Fehlerdiagnose werden Daten über die Aufnahme Ihrer Daten generiert, die Sie dann mithilfe der Datenzugriffs-API überprüfen können. Weitere Informationen hierzu finden Sie in [der Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
+>* Die partielle Aufnahme erlaubt Ihnen, fehlerhafte Daten bis zu einem gewissen Schwellenwert, den Sie angeben können, aufzunehmen. Weitere Informationen hierzu finden Sie in [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
 ### Validieren der Daten
 
@@ -115,7 +115,7 @@ Wenn Sie in der vorherigen Lektion Datenerfassungsereignisse abonniert haben, ü
 
 ![Webhook zur Datenaufnahme](assets/ingestion-loyalty-webhook.png)
 
-Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=de#available-status-notification-events) in der (Dokumentation).
+Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) in der (Dokumentation).
 
 ## Daten mit der Platform-API in Batches aufnehmen
 
@@ -179,7 +179,7 @@ Jetzt können wir die Daten in den Batch hochladen:
 
    ![Daten hochgeladen](assets/ingestion-crm-uploadFile.png)
 
-Wenn Sie sich jetzt den Batch in der Platform-Benutzeroberfläche ansehen, sehen Sie, dass er den Status &quot;[!UICONTROL &quot; &#x200B;]:
+Wenn Sie sich jetzt den Batch in der Platform-Benutzeroberfläche ansehen, sehen Sie, dass er den Status &quot;[!UICONTROL &quot; ]:
 ![Batch-](assets/ingestion-crm-loading.png)
 
 Da die Batch-API häufig zum Hochladen mehrerer Dateien verwendet wird, müssen Sie Platform mitteilen, wann ein Batch abgeschlossen ist, was wir im nächsten Schritt tun werden.
@@ -210,7 +210,7 @@ Bestätigen Sie als Nächstes den Batch mithilfe des Vorschau-Datensatzes:
 
 ![Batch-Vorschau](assets/ingestion-crm-preview.png)
 
-Bestätigen Sie abschließend, dass eines Ihrer Profile erstellt wurde, indem Sie eines der Profile anhand des `Luma CRM Id` Namespace nachschlagen, z. B. `112ca06ed53d3db37e4cea49cc45b71e`
+Bestätigen Sie abschließend, dass eines Ihrer Profile erstellt wurde, indem Sie eines der Profile anhand des `Luma CRM Id` Namespace nachschlagen, z. B. `b642b4217b34b1e8d3bd915fc65c4452`
 
 ![Profil aufgenommen](assets/ingestion-crm-profile.png)
 
@@ -226,7 +226,7 @@ Wenn Sie in der vorherigen Lektion Datenerfassungsereignisse abonniert haben, ü
 
 ![Webhook zur Datenaufnahme](assets/ingestion-crm-webhook.png)
 
-Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=de#available-status-notification-events) in der (Dokumentation).
+Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) in der (Dokumentation).
 
 ## Aufnehmen von Daten mit Workflows
 
@@ -282,14 +282,14 @@ Viele Quellen verfügen über einen ähnlichen Konfigurations-Workflow, in dem S
 
 >[!NOTE]
 >
->Die Offline-Kaufdaten, die wir in dieser Übung verwenden werden, enthalten Datums-/Uhrzeitdaten. Datetime-Daten sollten entweder in [ISO 8061-formatierten Zeichenfolgen](https://www.iso.org/iso-8601-date-and-time-format.html) („2018-07-10T15:05:59.000-08:00„) oder in Unix-Zeit in Millisekunden (1531263959000) formatiert sein und zur Aufnahmezeit in den Ziel-XDM-Typ konvertiert werden. Weitere Informationen zur Datenkonvertierung und zu anderen Einschränkungen finden Sie unter [Dokumentation zur Batch-Aufnahme-API](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=de#types).
+>Die Offline-Kaufdaten, die wir in dieser Übung verwenden werden, enthalten Datums-/Uhrzeitdaten. Datetime-Daten sollten entweder in [ISO 8061-formatierten Zeichenfolgen](https://www.iso.org/iso-8601-date-and-time-format.html) („2018-07-10T15:05:59.000-08:00„) oder in Unix-Zeit in Millisekunden (1531263959000) formatiert sein und zur Aufnahmezeit in den Ziel-XDM-Typ konvertiert werden. Weitere Informationen zur Datenkonvertierung und zu anderen Einschränkungen finden Sie unter [Dokumentation zur Batch-Aufnahme-API](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
 
 ### Herunterladen, Vorbereiten und Hochladen der Daten an Ihren bevorzugten Cloud-Speicheranbieter
 
 1. Sie sollten „luma-data.zip[ bereits heruntergeladen und in ](assets/luma-data.zip) Ordner &quot;`Luma Tutorial Assets`&quot; entpackt haben.
 1. Öffnen Sie `luma-offline-purchases.json` in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` durch Ihre eigene Unterstrich-Mandanten-ID, wie in Ihren Schemata dargestellt
 1. Aktualisieren Sie alle Zeitstempel, sodass die Ereignisse im letzten Monat auftreten (suchen Sie beispielsweise nach `"timestamp":"2022-06` und ersetzen Sie Jahr und Monat)
-1. Wählen Sie Ihren bevorzugten Cloud-Speicheranbieter aus und stellen Sie sicher, dass er im [!UICONTROL Quellen“ &#x200B;] ist
+1. Wählen Sie Ihren bevorzugten Cloud-Speicheranbieter aus und stellen Sie sicher, dass er im [!UICONTROL Quellen“ ] ist
 1. Laden Sie `luma-offline-purchases.json` an einen Speicherort in Ihrem bevorzugten Cloud-Speicheranbieter hoch
 
 ### Aufnehmen der Daten an Ihrem bevorzugten Cloud-Speicherort
@@ -334,12 +334,12 @@ Suchen Sie erneut das Profil mit dem Wert `5625458` im `loyaltyId`-Namespace, um
 
 Adobe arbeitet mit mehreren ETL-Anbietern zusammen, um die Datenaufnahme in Experience Platform zu unterstützen. Aufgrund der Vielzahl von Drittanbietern wird ETL in diesem Tutorial nicht behandelt. Sie können jedoch gerne einige dieser Ressourcen lesen:
 
-* [Entwickeln von ETL-Integrationen für Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=de)
+* [Entwickeln von ETL-Integrationen für Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Weitere Ressourcen
 
-* [Dokumentation zur Batch-Aufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=de)
+* [Dokumentation zur Batch-Aufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [Referenz zur Batch-Aufnahme-API](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Jetzt lassen Sie uns [Daten mit der Web-SDK streamen](ingest-streaming-data.md)
