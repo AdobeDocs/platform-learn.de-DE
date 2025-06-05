@@ -79,8 +79,8 @@ Rufen Sie zunächst die Beispieldaten ab und passen Sie sie für Ihren Mandanten
 >
 >Es gibt einige Optionen, **[!UICONTROL Fehlerdiagnose]** und **[!UICONTROL Partielle Aufnahme]**, die Sie in dieser Lektion auf verschiedenen Bildschirmen sehen werden. Diese Optionen werden im Tutorial nicht behandelt. Einige kurze Informationen:
 >
->* Durch Aktivierung der Fehlerdiagnose werden Daten über die Aufnahme Ihrer Daten generiert, die Sie dann mithilfe der Datenzugriffs-API überprüfen können. Weitere Informationen hierzu finden Sie in [der Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
->* Die partielle Aufnahme erlaubt Ihnen, fehlerhafte Daten bis zu einem gewissen Schwellenwert, den Sie angeben können, aufzunehmen. Weitere Informationen hierzu finden Sie in [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
+>* Durch Aktivierung der Fehlerdiagnose werden Daten über die Aufnahme Ihrer Daten generiert, die Sie dann mithilfe der Datenzugriffs-API überprüfen können. Weitere Informationen hierzu finden Sie in [der Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=de).
+>* Die partielle Aufnahme erlaubt Ihnen, fehlerhafte Daten bis zu einem gewissen Schwellenwert, den Sie angeben können, aufzunehmen. Weitere Informationen hierzu finden Sie in [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=de)
 
 ### Validieren der Daten
 
@@ -115,7 +115,7 @@ Wenn Sie in der vorherigen Lektion Datenerfassungsereignisse abonniert haben, ü
 
 ![Webhook zur Datenaufnahme](assets/ingestion-loyalty-webhook.png)
 
-Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) in der (Dokumentation).
+Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=de#available-status-notification-events) in der (Dokumentation).
 
 ## Daten mit der Platform-API in Batches aufnehmen
 
@@ -226,7 +226,7 @@ Wenn Sie in der vorherigen Lektion Datenerfassungsereignisse abonniert haben, ü
 
 ![Webhook zur Datenaufnahme](assets/ingestion-crm-webhook.png)
 
-Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) in der (Dokumentation).
+Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=de#available-status-notification-events) in der (Dokumentation).
 
 ## Aufnehmen von Daten mit Workflows
 
@@ -282,7 +282,7 @@ Viele Quellen verfügen über einen ähnlichen Konfigurations-Workflow, in dem S
 
 >[!NOTE]
 >
->Die Offline-Kaufdaten, die wir in dieser Übung verwenden werden, enthalten Datums-/Uhrzeitdaten. Datetime-Daten sollten entweder in [ISO 8061-formatierten Zeichenfolgen](https://www.iso.org/iso-8601-date-and-time-format.html) („2018-07-10T15:05:59.000-08:00„) oder in Unix-Zeit in Millisekunden (1531263959000) formatiert sein und zur Aufnahmezeit in den Ziel-XDM-Typ konvertiert werden. Weitere Informationen zur Datenkonvertierung und zu anderen Einschränkungen finden Sie unter [Dokumentation zur Batch-Aufnahme-API](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
+>Die Offline-Kaufdaten, die wir in dieser Übung verwenden werden, enthalten Datums-/Uhrzeitdaten. Datetime-Daten sollten entweder in [ISO 8061-formatierten Zeichenfolgen](https://www.iso.org/iso-8601-date-and-time-format.html) („2018-07-10T15:05:59.000-08:00„) oder in Unix-Zeit in Millisekunden (1531263959000) formatiert sein und zur Aufnahmezeit in den Ziel-XDM-Typ konvertiert werden. Weitere Informationen zur Datenkonvertierung und zu anderen Einschränkungen finden Sie unter [Dokumentation zur Batch-Aufnahme-API](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=de#types).
 
 ### Herunterladen, Vorbereiten und Hochladen der Daten an Ihren bevorzugten Cloud-Speicheranbieter
 
@@ -334,12 +334,12 @@ Suchen Sie erneut das Profil mit dem Wert `5625458` im `loyaltyId`-Namespace, um
 
 Adobe arbeitet mit mehreren ETL-Anbietern zusammen, um die Datenaufnahme in Experience Platform zu unterstützen. Aufgrund der Vielzahl von Drittanbietern wird ETL in diesem Tutorial nicht behandelt. Sie können jedoch gerne einige dieser Ressourcen lesen:
 
-* [Entwickeln von ETL-Integrationen für Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
+* [Entwickeln von ETL-Integrationen für Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=de)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Weitere Ressourcen
 
-* [Dokumentation zur Batch-Aufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
+* [Dokumentation zur Batch-Aufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=de)
 * [Referenz zur Batch-Aufnahme-API](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Jetzt lassen Sie uns [Daten mit der Web-SDK streamen](ingest-streaming-data.md)
