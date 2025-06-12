@@ -3,10 +3,10 @@ title: Erste Schritte - Zu installierende Anwendungen
 description: Erste Schritte - Zu installierende Anwendungen
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,15 @@ Navigieren Sie zu [https://creativecloud.adobe.com/apps/download/creative-cloud]
 
 ![Neue Adobe I/O-Integration](./images/cc.png)
 
-## Photoshop
+## Adobe Photoshop
 
 Öffnen Sie die App **Adobe Creative Cloud** und navigieren Sie zu **Apps**. Installieren Sie Photoshop auf Ihrem Computer.
+
+![Neue Adobe I/O-Integration](./images/psd.png)
+
+## Adobe Illustrator
+
+Öffnen Sie die App **Adobe Creative Cloud** und navigieren Sie zu **Apps**. Installieren Sie Illustrator auf Ihrem Computer.
 
 ![Neue Adobe I/O-Integration](./images/psd.png)
 

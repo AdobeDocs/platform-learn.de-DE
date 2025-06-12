@@ -4,9 +4,9 @@ description: Erste Schritte - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ In dieser Übung wird Adobe I/O verwendet, um verschiedene Adobe-Endpunkte abzuf
 
 Navigieren Sie zu [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
-![Neue Adobe I/O-Integration](./images/iohome.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/iohome.png)
 
 Achten Sie darauf, dass Sie die richtige Instanz in der oberen rechten Ecke Ihres Bildschirms auswählen. Ihre Instanz ist `--aepImsOrgName--`.
 
@@ -29,7 +29,7 @@ Achten Sie darauf, dass Sie die richtige Instanz in der oberen rechten Ecke Ihre
 
 Wählen Sie anschließend **Neues Projekt erstellen**.
 
-![Neue Adobe I/O-Integration](./images/iocomp.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/iocomp.png)
 
 ### Firefly Services-API
 
@@ -39,45 +39,45 @@ Wählen Sie anschließend **Neues Projekt erstellen**.
 
 Sie sollten das dann sehen. Wählen Sie **+ Zu Projekt hinzufügen** und dann **API**.
 
-![Neue Adobe I/O-Integration](./images/adobe_io_access_api.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/adobe_io_access_api.png)
 
 Ihr Bildschirm sollte wie folgt aussehen.
 
-![Neue Adobe I/O-Integration](./images/api1.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/api1.png)
 
 Wählen Sie **Creative Cloud** und **Firefly - Firefly Services** aus und klicken Sie dann auf **Weiter**.
 
-![Neue Adobe I/O-Integration](./images/api3.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/api3.png)
 
 Geben Sie einen Namen für Ihre Berechtigung ein: `--aepUserLdap-- - One Adobe OAuth credential` und wählen Sie **Weiter**.
 
-![Neue Adobe I/O-Integration](./images/api4.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/api4.png)
 
 Wählen Sie das Standardprofil **Standardkonfiguration für Firefly Services** und anschließend **Konfigurierte API speichern** aus.
 
-![Neue Adobe I/O-Integration](./images/api9.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/api9.png)
 
 Sie sollten das dann sehen.
 
-![Neue Adobe I/O-Integration](./images/api10.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/api10.png)
 
 ### Photoshop Services-API
 
 >[!IMPORTANT]
 >
 >Je nach ausgewähltem Lernpfad haben Sie möglicherweise keinen Zugriff auf die Photoshop Services-API. Sie haben nur Zugriff auf die Photoshop Services-API, wenn Sie sich auf dem Lernpfad **Firefly**, **Workfront Fusion**, **ALL** befinden oder wenn Sie an einem **Live-Workshop**. Sie können diesen Schritt überspringen, wenn Sie nicht auf einem dieser Lernpfade sind.
-
+>
 Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
 
-![Azure-Speicher](./images/ps2.png){zoomable="yes"}
+![Azure-Speicher](./images/ps2.png)
 
 Wählen Sie **Creative Cloud** und dann **Photoshop - Firefly Services**. Klicken Sie auf **Weiter**.
 
-![Azure-Speicher](./images/ps3.png){zoomable="yes"}
+![Azure-Speicher](./images/ps3.png)
 
 Klicken Sie auf **Weiter**.
 
-![Azure-Speicher](./images/ps4.png){zoomable="yes"}
+![Azure-Speicher](./images/ps4.png)
 
 Als Nächstes müssen Sie ein Produktprofil auswählen, das definiert, welche Berechtigungen für diese Integration verfügbar sind.
 
@@ -85,11 +85,11 @@ Wählen Sie **Standardkonfiguration für Firefly Services** und **Standardkonfig
 
 Wählen Sie **Konfigurierte API speichern**.
 
-![Azure-Speicher](./images/ps5.png){zoomable="yes"}
+![Azure-Speicher](./images/ps5.png)
 
 Sie sollten das dann sehen.
 
-![Neue Adobe I/O-Integration](./images/ps7.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/ps7.png)
 
 ### Adobe Experience Platform-API
 
@@ -99,15 +99,15 @@ Sie sollten das dann sehen.
 
 Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
 
-![Azure-Speicher](./images/aep1.png){zoomable="yes"}
+![Azure-Speicher](./images/aep1.png)
 
 Wählen Sie **Adobe Experience** und **Experience Platform API**. Klicken Sie auf **Weiter**.
 
-![Azure-Speicher](./images/aep2.png){zoomable="yes"}
+![Azure-Speicher](./images/aep2.png)
 
 Klicken Sie auf **Weiter**.
 
-![Azure-Speicher](./images/aep3.png){zoomable="yes"}
+![Azure-Speicher](./images/aep3.png)
 
 Als Nächstes müssen Sie ein Produktprofil auswählen, das definiert, welche Berechtigungen für diese Integration verfügbar sind.
 
@@ -119,11 +119,43 @@ Wählen Sie **Adobe Experience Platform - Alle Benutzer - PROD** aus.
 
 Wählen Sie **Konfigurierte API speichern**.
 
-![Azure-Speicher](./images/aep4.png){zoomable="yes"}
+![Azure-Speicher](./images/aep4.png)
 
 Sie sollten das dann sehen.
 
-![Neue Adobe I/O-Integration](./images/aep5.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/aep5.png)
+
+### Frame.io-API
+
+>[!IMPORTANT]
+>
+>Je nach ausgewähltem Lernpfad haben Sie möglicherweise keinen Zugriff auf die Frame.io-API. Sie haben nur Zugriff auf die Frame.io-API, wenn Sie sich auf dem Lernpfad **Workfront Fusion**, **ALL** befinden oder wenn Sie einen **Live-Workshop** besuchen. Sie können diesen Schritt überspringen, wenn Sie nicht auf einem dieser Lernpfade sind.
+
+Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
+
+![Azure-Speicher](./images/fiops2.png)
+
+Wählen Sie **Creative Cloud** und dann **Frame.io API**. Klicken Sie auf **Weiter**.
+
+![Azure-Speicher](./images/fiops3.png)
+
+Wählen Sie **Server-zu-Server-Authentifizierung** aus und klicken Sie dann auf **Weiter**.
+
+![Azure-Speicher](./images/fiops4.png)
+
+Wählen Sie **OAuth Server-zu-Server** aus und klicken Sie dann auf **Weiter**.
+
+![Azure-Speicher](./images/fiops5.png)
+
+Als Nächstes müssen Sie ein Produktprofil auswählen, das definiert, welche Berechtigungen für diese Integration verfügbar sind.
+
+Wählen Sie **Default Frame.io Enterprise - Prime Configuration** und klicken Sie auf **Konfigurierte API speichern**.
+
+![Azure-Speicher](./images/fiops6.png)
+
+Sie sollten das dann sehen.
+
+![Neue Adobe I/O-Integration](./images/fiops7.png)
 
 ### Projektname
 

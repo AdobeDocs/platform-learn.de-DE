@@ -4,9 +4,9 @@ description: AEM CS - Benutzerdefinierter Standardblock
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
@@ -259,7 +259,7 @@ Fügen Sie eine Menüoption zum Navigationsmenü mit dem `Fiber` hinzu. Wählen 
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-Geben Sie dies für die `/us/en/citisignal-fiber` **URL** ein und klicken Sie zum Bestätigen auf das Symbol **V** .
+Geben Sie dies für die `/us/en//citisignal-fiber` **URL** ein und klicken Sie zum Bestätigen auf das Symbol **V** .
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 
@@ -271,10 +271,10 @@ Klicken **erneut auf** Veröffentlichen“.
 
 ![AEMCS](./images/nav5.png){zoomable="yes"}
 
-Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal--XXX.aem.page/us/en` und/oder `main--citisignal--XXX.aem.live/us/en` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
+Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal--XXX.aem.page/us/en/` und/oder `main--citisignal--XXX.aem.live/us/en/` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
 
 In diesem Beispiel lautet die vollständige URL wie folgt:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` und/oder `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` und/oder `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Sie sollten das dann sehen. Klicken Sie auf **Faser**.
 

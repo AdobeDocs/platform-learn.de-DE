@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 1%
 
 ---
@@ -233,7 +233,7 @@ Nachdem Sie Ihre **Shared Access Signature** erhalten haben, wählen Sie **Kopie
 
 ![Azure-Speicher](./images/az29.png){zoomable="yes"}
 
-Verwenden Sie das **SAS-Token**, um eine Datei in Ihr Azure-Speicherkonto hochzuladen.
+Verwenden Sie die **SAS-Token-URL**, um eine Datei in Ihr Azure-Speicherkonto hochzuladen.
 
 Zurück in Postman, wählen Sie den Ordner **FF - Firefly Services Tech Insiders** und dann **…** im Ordner **Firefly** aus und klicken Sie dann auf **Anfrage hinzufügen**.
 
@@ -345,7 +345,7 @@ Wählen Sie **Erstellen** aus.
 
 ![Azure-Speicher](./images/az102.png){zoomable="yes"}
 
-Kopieren Sie die URL und schreiben Sie sie in eine Datei auf Ihrem Computer, um Ihr langfristiges SAS-Token mit Leseberechtigung zu erhalten.
+Kopieren Sie die URL und schreiben Sie sie in eine Datei auf Ihrem Computer, um Ihr langfristiges SAS-Token mit Lese-/Schreibberechtigungen zu erhalten.
 
 ![Azure-Speicher](./images/az103.png){zoomable="yes"}
 

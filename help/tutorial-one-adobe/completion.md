@@ -3,9 +3,9 @@ title: Abschluss - ein Adobe-Tutorial
 description: Wie wird der Abschluss gemessen?
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Die ID des Demosystemprojekts für das Webformat sieht wie folgt aus: `--aepUser
 ![3](./assets/images/module0dtl.png){zoomable="yes"}
 
 
-## 1.1 Adobe Firefly-Services
+## 1.1 Adobe Firefly Services
 
-Der erwartete Abschlussnachweis für Modul **Adobe Firefly-Services** ist die **URL** der PSD-Datei, die am Ende von Übung 1.1.3 generiert wurde, nachdem Sie den Schritt **Photoshop-API - Text ändern** durchlaufen haben.
+Der erwartete Abschlussnachweis für das Modul **Adobe Firefly Services** ist die **URL** der PSD-Datei, die am Ende von Übung 1.1.3 generiert wurde, nachdem Sie den Schritt **Photoshop-API - Text ändern** durchlaufen haben.
 
 Die URL sieht wie folgt aus: `https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`.
 
@@ -37,23 +37,23 @@ Die URL sieht wie folgt aus: `https://ldap.blob.core.windows.net/folder/citisign
 
 ## 1.2 Creative Workflow-Automatisierung mit Workfront Fusion
 
-Der erwartete Abschlussnachweis für das Modul **Creative Workflow Automation with Workfront Fusion** ist die **URL** des Webhooks, der in Übung 1.2.3 erstellt wurde, nachdem Sie den Schritt **Aktivieren Ihres Szenarios mit einem Webhook** durchlaufen haben.
+Der erwartete Abschlussnachweis für das Modul **Creative Workflow Automation mit Workfront Fusion** ist die **URL** des Webhooks, der in Übung 1.2.3 erstellt wurde, nachdem Sie den Schritt **Aktivieren Ihres Szenarios mit einem Webhook“** haben.
 
 Die URL sieht wie folgt aus: `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
 ![3](./assets/images/wff.png){zoomable="yes"}
 
-## 2.1 Adobe Experience Manager - Cloud Service und Edge Delivery Services
+## 2.1 Adobe Experience Manager Cloud Service und Edge Delivery Services
 
-Der erwartete Abschlussnachweis für das Modul **Adobe Experience Manager Cloud Service und Edge Delivery Services** ist die **URL** der erstellten Website.
+Der erwartete Abschlussnachweis für das Modul **Adobe Experience Manager Cloud Service &amp; Edge Delivery Services** ist die **URL** der erstellten Website.
 
-Die URL sieht wie folgt aus: `https://main--citisignal--xxx.aem.page/us/en`.
+Die URL sieht wie folgt aus: `https://main--citisignal--xxx.aem.page/us/en/`.
 
 ![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Workflow-Management mit Adobe Workfront
 
-Der erwartete Abschlussnachweis für das Modul **Workflow-Management mit Adobe Workfront** ist die **URL** des Bildes, das im Rahmen der Übung **2.2.2.5 Anzeigen Ihrer Datei in AEM Assets in AEM Assets hochgeladen wurde**.
+Der erwartete Abschlussnachweis für das Modul **Workflow-Management mit Adobe Workfront** ist die **URL** des Bildes, das im Rahmen der Übung **2.2.2.5Anzeigen Ihrer Datei in AEM Assets in AEM Assets hochgeladen wurde**.
 
 Um die URL abzurufen, klicken Sie auf **Link freigeben** auf dem in AEM Assets hochgeladenen Bild.
 
@@ -81,9 +81,9 @@ Die Kampagnen-Versions-ID des Federated Data Model sieht wie folgt aus: **b11c99
 
 ![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
-## 3.3 Adobe Journey Optimizer: Offer decisioning
+## 3.3 Adobe Journey Optimizer: Offer Decisioning
 
-Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Offer decisioning** ist die ID der **Entscheidung** erstellten Entscheidung.
+Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Offer Decisioning** ist die ID der **Entscheidung** erstellten Entscheidung.
 
 Sie finden die **Entscheidungs-ID**, die wie **`dps:offer-activity:1a08ba4b529b2fb2`** aussieht, hier:
 

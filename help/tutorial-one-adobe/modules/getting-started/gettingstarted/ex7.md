@@ -4,9 +4,9 @@ description: Erste Schritte - Einrichten von Postman
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 Wechseln Sie zu [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} und öffnen Sie Ihr Projekt.
 
-![Neue Adobe I/O-Integration](./images/iopr.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/iopr.png)
 
 Klicken Sie auf die **Firefly - Firefly Services**-API. Klicken Sie dann auf **Für Postman herunterladen** und wählen Sie **OAuth Server-zu-Server** aus, um eine Postman-Umgebung herunterzuladen.
 
-![Neue Adobe I/O-Integration](./images/iopm.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/iopm.png)
 
 ## Postman-Authentifizierung bei Adobe I/O
 
 Laden Sie unter [ Postman Downloads die entsprechende Version von Postman für Ihr Betriebssystem herunter und installieren Sie sie](https://www.postman.com/downloads/){target="_blank"}.
 
-![Neue Adobe I/O-Integration](./images/getstarted.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/getstarted.png)
 
 Starten Sie die Anwendung.
 
@@ -39,41 +39,46 @@ In Postman gibt es zwei Konzepte: Umgebungen und Sammlungen.
 
 Die Umgebungsdatei enthält alle Umgebungsvariablen, die mehr oder weniger konsistent sind. In der Umgebung finden Sie Dinge wie die IMSOrg Ihrer Adobe-Umgebung sowie Sicherheitsberechtigungen wie Ihre Client-ID und andere. Sie haben die Umgebungsdatei zuvor während des Adobe I/O-Setups heruntergeladen und sie heißt **`oauth_server_to_server.postman_environment.json`**.
 
-Die Sammlung enthält eine Reihe von API-Anfragen, die Sie verwenden können. Wir werden 2 Kollektionen verwenden
+Die Sammlung enthält eine Reihe von API-Anfragen, die Sie verwenden können. Sie verwenden die folgenden Sammlungen:
 
 - 1 Sammlung für die Authentifizierung bei Adobe I/O
-- 1 Sammlung für die Übungen in diesem Modul
+- 1 Sammlung der Adobe Firefly Services-Übungen in diesem Modul
+- 1 Sammlung für die Adobe Frame.io V4-Übungen in diesem Modul
 
 Laden Sie [postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"} auf Ihren lokalen Desktop herunter.
 
-![Neue Adobe I/O-Integration](./images/pmfolder.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/pmfolder.png)
 
 In **postman-ff.zip**-Datei befinden sich die folgenden Dateien:
 
 - `Adobe IO - OAuth.postman_collection.json`
 - `FF - Firefly Services Tech Insiders.postman_collection.json`
+- `Frame.io V4 - Tech Insiders.postman_collection.json`
 
-Entpacken Sie **postman-ff.zip** und speichern Sie die folgenden zwei Dateien in einem Ordner auf Ihrem Desktop:
+Entpacken Sie **postman-ff.zip** und speichern Sie die folgenden Dateien in einem Ordner auf Ihrem Desktop:
 
 - `Adobe IO - OAuth.postman_collection.json`
 - `FF - Firefly Services Tech Insiders.postman_collection.json`
+- `Frame.io V4 - Tech Insiders.postman_collection.json`
 - `oauth_server_to_server.postman_environment.json`
 
-![Neue Adobe I/O-Integration](./images/pmfolder1.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/pmfolder1.png)
 
 Wählen Sie in Postman **Importieren** aus.
 
-![Neue Adobe I/O-Integration](./images/postmanui.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/postmanui.png)
 
 Wählen Sie **Dateien** aus.
 
-![Neue Adobe I/O-Integration](./images/choosefiles.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/choosefiles.png)
 
-Wählen Sie die drei Dateien aus dem Ordner aus und klicken Sie dann auf **Öffnen** und **Importieren**.
+Wählen Sie alle Dateien aus dem Ordner aus und klicken Sie dann auf **Öffnen** und **Importieren**.
 
-![Neue Adobe I/O-Integration](./images/selectfiles.png){zoomable="yes"}
+![Neue Adobe I/O-Integration](./images/selectfiles.png)
 
-![Neue Adobe I/O-Integration](./images/impconfirm.png){zoomable="yes"}
+Klicken Sie **Importieren**.
+
+![Neue Adobe I/O-Integration](./images/impconfirm.png)
 
 Jetzt verfügen Sie über alles, was Sie in Postman benötigen, um über APIs mit Firefly Services zu interagieren.
 
@@ -83,11 +88,11 @@ Als Nächstes müssen Sie ein Zugriffs-Token anfordern, um sicherzustellen, dass
 
 Vergewissern Sie sich, dass Sie die richtige Umgebung ausgewählt haben, bevor Sie eine Anfrage ausführen, indem Sie die Dropdown-Liste „Umgebung“ oben rechts überprüfen. Die ausgewählte Umgebung sollte einen Namen haben, der `--aepUserLdap-- One Adobe OAuth Credential` diesem ähnelt.
 
-![Postman](./images/envselemea1.png){zoomable="yes"}
+![Postman](./images/envselemea1.png)
 
 Die ausgewählte Umgebung sollte einen Namen haben, der `--aepUserLdap-- One Adobe OAuth Credential` diesem ähnelt.
 
-![Postman](./images/envselemea.png){zoomable="yes"}
+![Postman](./images/envselemea.png)
 
 Nachdem Ihre Postman-Umgebung und Sammlungen konfiguriert wurden und funktionieren, können Sie sich von Postman bei Adobe I/O authentifizieren.
 
@@ -95,11 +100,11 @@ Wählen Sie in der Sammlung **Adobe IO - OAuth** die Anfrage mit dem Namen **POS
 
 Beachten Sie, **unter „Abfrageparameter** zwei Variablen referenziert werden, `API_KEY` und `CLIENT_SECRET`. Diese Variablen werden `--aepUserLdap-- One Adobe OAuth Credential` aus der ausgewählten Umgebung übernommen.
 
-![Postman](./images/ioauth.png){zoomable="yes"}
+![Postman](./images/ioauth.png)
 
 Bei Erfolg wird eine Antwort mit einem Bearer-Token, einem Zugriffs-Token und einem Ablauffenster im Abschnitt **body** von Postman angezeigt.
 
-![Postman](./images/ioauthresp.png){zoomable="yes"}
+![Postman](./images/ioauthresp.png)
 
 Es sollte eine ähnliche Antwort mit den folgenden Informationen angezeigt werden:
 
@@ -111,7 +116,7 @@ Es sollte eine ähnliche Antwort mit den folgenden Informationen angezeigt werde
 
 Das Adobe I/O **Bearer-Token** hat einen bestimmten Wert (das sehr lange Zugriffs-Token) und ein Gültigkeitsfenster und ist jetzt 24 Stunden lang gültig. Wenn Sie also nach 24 Stunden Postman zur Interaktion mit Adobe-APIs verwenden möchten, müssen Sie ein neues Token generieren, indem Sie diese Anfrage erneut ausführen.
 
-Ihre Postman-Umgebung ist jetzt eingerichtet und funktioniert.
+Ihre Postman-Umgebung ist jetzt konfiguriert und funktioniert.
 
 ## Nächste Schritte
 

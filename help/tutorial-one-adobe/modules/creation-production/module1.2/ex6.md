@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1981'
 ht-degree: 1%
 
 ---
@@ -59,35 +59,27 @@ Sie sollten das dann sehen. Klicken Sie **Adresse in Zwischenablage kopieren**.
 
 ## 1.2.6.2 Webhook in Frame.io konfigurieren
 
-Navigieren Sie zu [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Klicken Sie **ENTWICKLER-TOOLS** und wählen Sie dann **Webhooks** aus.
+Wechseln Sie zu Postman und öffnen Sie die Anfrage **POST - Zugriffs-Token** in der Sammlung **Adobe IO - OAuth**. Klicken Sie anschließend auf **Senden**, um ein neues **Zugriffs-Token** anzufordern.
 
-![Frame-IO](./images/aemf7.png)
+![Frame-IO](./images/frameV4api2.png)
 
-Klicken Sie **Webhook erstellen**.
+Gehen Sie im linken Menü zurück zu **Sammlungen**. Öffnen Sie die Anfrage **POST - Webhook erstellen** in der Sammlung **Frame.io V4 - Tech Insiders** im Ordner **Webhooks**.
 
-![Frame-IO](./images/aemf8.png)
+Navigieren Sie zum **Hauptteil** der Anfrage. Ändern Sie das Feld **name** in `--aepUserLdap--  - Fusion to AEM Assets` und ändern Sie dann das Feld **url** in den Wert der Webhook-URL, die Sie aus Workfront Fusion kopiert haben.
 
-Geben Sie die folgenden Werte ein:
+Klicken Sie auf **Senden**.
 
-- **NAME**: `--aepUserLdap-- - Asset Labels Updated` verwenden
-- **URL**: Geben Sie die URL des Webhooks ein, den Sie gerade in Workfront Fusion erstellt haben
-- **TEAM**: Wählen Sie das entsprechende Frame.io-Team aus, in diesem Fall &quot;**Adobe-Tutorial**.
+![Frame-IO](./images/framewh1.png)
 
-![Frame-IO](./images/aemf9.png)
+Ihre benutzerdefinierte Frame.io V4-Aktion wurde jetzt erstellt.
 
-Scrollen Sie nach unten und aktivieren Sie das Kontrollkästchen neben **Asset-Kennzeichnungen - Aktualisiert**. Klicken Sie auf **Absenden**.
+![Frame-IO](./images/framewh2.png)
 
-![Frame-IO](./images/aemf10.png)
-
-Sie sollten das dann sehen.
-
-![Frame-IO](./images/aemf11.png)
-
-Wechseln Sie zu [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} und zu dem zuvor erstellten Ordner, der `--aepUserLdap--` heißen soll. Doppelklicken Sie, um das in der vorherigen Übung erstellte Asset zu öffnen.
+Wechseln Sie zu [https://next.frame.io/project](https://next.frame.io/project){target="_blank"} und gehen Sie zu dem zuvor erstellten Projekt, das den Namen `--aepUserLdap--` erhalten soll, und öffnen Sie den Ordner **CitiSignal Fibre Campaign**. Jetzt sollten die Assets angezeigt werden, die in der vorherigen Übung erstellt wurden.
 
 ![Frame-IO](./images/aemf11a.png)
 
-Sie sollten dann so etwas sehen. Klicken Sie auf das Feld **Kein Status** und ändern Sie den Status in **In Bearbeitung**.
+Klicken Sie auf das **Status** und ändern Sie den Status in **In Bearbeitung**.
 
 ![Frame-IO](./images/aemf12.png)
 
@@ -113,23 +105,45 @@ Die Detailansicht der Blase zeigt die Daten an, die von Frame.io empfangen wurde
 
 Nachdem die Kommunikation zwischen Frame.io und Workfront Fusion über einen benutzerdefinierten Webhook hergestellt wurde, sollten Sie weitere Details zu dem Asset erhalten, für das die Statuskennzeichnung aktualisiert wurde. Dazu verwenden Sie in Workfront Fusion erneut den Frame.io-Connector, ähnlich wie in der vorherigen Übung.
 
-Auf die **klicken?** und geben Sie den Suchbegriff `frame` ein. Klicken Sie auf **Frame.io**.
+Bewegen Sie den Mauszeiger über **Benutzerdefinierter Webhook**-Objekt und klicken Sie auf das Symbol **+** , um ein weiteres Modul hinzuzufügen.
+
+![Frame-IO](./images/aemf18a.png)
+
+Geben Sie den Suchbegriff `frame` ein. Klicken Sie auf **Frame.io**.
 
 ![Frame-IO](./images/aemf18.png)
 
-Klicken Sie auf **Frame.io (Legacy)**.
+Klicken Sie auf **Frame.io**.
 
 ![Frame-IO](./images/aemf19.png)
 
-Klicken Sie **Asset abrufen**.
+Klicken Sie **Benutzerdefinierten API-Aufruf durchführen**.
 
 ![Frame-IO](./images/aemf20.png)
 
-Stellen Sie sicher, dass für die Verbindung dieselbe Einstellung festgelegt ist wie in der vorherigen Übung, die `--aepUserLdap-- - Frame.io Token` benannt werden sollte.
+Stellen Sie sicher, dass für die Verbindung dieselbe Einstellung festgelegt ist wie in der vorherigen Übung, die `--aepUserLdap-- - Adobe I/O - Frame.io S2S` benannt werden sollte.
 
 ![Frame-IO](./images/aemf21.png)
 
-Als Nächstes müssen Sie die (Asset **ID)**. Die **Asset-ID** wird von Frame.io im Rahmen der ersten **benutzerdefinierten Webhook“-** für Workfront Fusion freigegeben und befindet sich unter dem Feld **resource.id**. Wählen Sie **resource.id** aus und klicken Sie auf **OK**.
+Verwenden Sie für die Konfiguration des Moduls **Frame.io - Erstellen eines benutzerdefinierten API-**: `/v4/accounts/{{1.account.id}}/files/{{1.resource.id}}`.
+
+>[!NOTE]
+>
+>Variablen in Workfront Fusion können manuell mit dieser Syntax angegeben werden: `{{1.account.id}}` und `{{1.resource.id}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das erste Modul im Szenario **Webhooks** heißt und die Sequenznummer **1 hat**. Das bedeutet, dass die Variablen `{{1.account.id}}` und `{{1.resource.id}}` vom Modul mit der Sequenznummer 1 auf dieses Feld zugreifen. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
+
+Klicken Sie anschließend auf **+ Element hinzufügen** unter **Abfragezeichenfolge**.
+
+![Frame-IO](./images/aemf21a.png)
+
+Geben Sie diese Werte ein und klicken Sie auf **Hinzufügen**.
+
+| Schlüssel | Wert |
+|:-------------:| :---------------:| 
+| `include` | `media_links.original` |
+
+![Frame-IO](./images/aemf21b.png)
+
+Du solltest das jetzt haben. Klicken Sie auf **OK**.
 
 ![Frame-IO](./images/aemf22.png)
 
@@ -137,21 +151,36 @@ Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern, und klicken Sie
 
 ![Frame-IO](./images/aemf23.png)
 
-Wechseln Sie zurück zu Frame.io und klicken Sie auf das Feld **Überprüfung erforderlich** und ändern Sie den Status in **In Bearbeitung**.
+Wechseln Sie zurück zu Frame.io und ändern Sie den Status in **In Bearbeitung**.
 
 ![Frame-IO](./images/aemf24.png)
 
-Gehen Sie zurück zu Workfront Fusion und klicken Sie auf das Bubble-Symbol **Frame.io - Asset abrufen**-Modul. Sie sollten dann einen ähnlichen Überblick sehen.
+Gehen Sie zurück zu Workfront Fusion und klicken Sie auf die Blase im Modul **Frame.io -** eines benutzerdefinierten API-Aufrufs“. Sie sollten dann einen ähnlichen Überblick sehen.
 
 ![Frame-IO](./images/aemf25.png)
 
-In den Asset-Details, die von Frame.io bereitgestellt wurden, finden Sie ein Feld mit dem Namen **Label**, das auf &quot;**_progress“**. Sie müssen dieses Feld zu einem späteren Zeitpunkt verwenden, um einen Filter zu konfigurieren.
+Als Nächstes sollten Sie einen Filter einrichten, um sicherzustellen, dass nur für Assets mit dem Status **Genehmigt** eine PNG-Datei gerendert wird. Klicken Sie dazu auf das Symbol **Schraubenschlüssel** zwischen den Modulen **Benutzerdefinierter Webhook** und **Frame.io - Erstellen Sie einen benutzerdefinierten API-Aufruf** und wählen Sie dann **Filter einrichten**.
 
-![Frame-IO](./images/aemf26.png)
+![Frame-IO](./images/aemf25a.png)
+
+Konfigurieren Sie die folgenden Felder:
+
+- **label**: Verwenden Sie `Status = Approved`.
+- **condition**: `{{1.metadata.value[]}}`.
+- **Standardoperatoren**: Wählen Sie **Gleich**.
+- **Wert**: `Approved`.
+
+Klicken Sie auf **OK**.
+
+![Frame-IO](./images/aemf35.png)
+
+Sie sollten dann diese haben. Klicken Sie **Speichern**, um Ihre Änderungen zu speichern.
+
+![Frame-IO](./images/aemf35a.png)
 
 ## 1.2.6.4 In PNG konvertieren
 
-Bewegen Sie den Mauszeiger über das Modul **Frame.io - Asset abrufen** und klicken Sie auf das Symbol **+**.
+Bewegen Sie den Mauszeiger über das Modul **Frame.io - Erstellen Sie einen benutzerdefinierten API-Aufruf** und klicken Sie auf das Symbol **+** .
 
 ![Frame-IO](./images/aemf27.png)
 
@@ -165,13 +194,13 @@ Klicken Sie **Bildformat konvertieren**.
 
 Vergewissern Sie sich, **das Feld** Verbindung“ Ihre zuvor erstellte Verbindung verwendet, die `--aepUserLdap-- - Adobe IO` heißt.
 
-Legen Sie unter **Input** das Feld **Storage** auf **External** fest und legen Sie **File Location** fest, um die Variable **Original** zu verwenden, die vom Modul **Frame.io - Asset abrufen zurückgegeben wird**.
+Legen Sie unter **Input** das Feld **Storage** auf **External** fest und legen Sie **File Location** fest, um die Variable **Original** zu verwenden, die vom Modul **Frame.io - Erstellen eines benutzerdefinierten API-Aufrufs zurückgegeben wird**.
 
 Klicken Sie anschließend auf **Element hinzufügen** unter **Ausgaben**.
 
 ![Frame-IO](./images/aemf30.png)
 
-Legen Sie für **Konfiguration** Ausgaben“ das Feld **Speicher** auf **Interner Speicher** und **Typ** auf **image/png** fest. Klicken Sie auf **Speichern**.
+Legen Sie für **Konfiguration** Ausgaben“ das Feld **Speicher** auf **Interner Speicher** und **Typ** auf **image/png** fest. Klicken Sie auf **Hinzufügen**.
 
 ![Frame-IO](./images/aemf31.png)
 
@@ -179,28 +208,9 @@ Klicken Sie auf **OK**.
 
 ![Frame-IO](./images/aemf33.png)
 
-Klicken Sie **Speichern**, um Ihre Änderungen zu speichern.
-
-![Frame-IO](./images/aemf32.png)
-
-Als Nächstes sollten Sie einen Filter einrichten, um sicherzustellen, dass nur für Assets mit dem Status **Genehmigt** eine PNG-Datei gerendert wird. Klicken Sie dazu auf das Symbol **Schraubenschlüssel** zwischen den Modulen **Frame.io - Asset abrufen** und **Adobe Photoshop - Bildformat konvertieren** und wählen Sie **Filter einrichten**.
-
-![Frame-IO](./images/aemf34.png)
-
-Konfigurieren Sie die folgenden Felder:
-
-- **label**: Verwenden Sie `Is Asset Approved`.
-- **Bedingung**: Wählen Sie das Feld **Beschriftung** aus der Antwort des Moduls **Frame.io - Asset**.
-- **Standardoperatoren**: Wählen Sie **Gleich**.
-- **Wert**: `approved`.
-
-Klicken Sie auf **OK**.
-
-![Frame-IO](./images/aemf35.png)
-
 Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern, und klicken Sie dann auf **Einmal ausführen**, um Ihre Konfiguration zu testen.
 
-![Frame-IO](./images/aemf36.png)
+![Frame-IO](./images/aemf32.png)
 
 Wechseln Sie zurück zu Frame.io, klicken Sie auf das Feld **In Bearbeitung** und ändern Sie den Status in **Genehmigt**.
 
@@ -255,15 +265,23 @@ Klicken Sie **Mit Adobe anmelden**.
 
 ![Frame-IO](./images/aemf47.png)
 
-Sie werden dann zur **Developer Console** weitergeleitet. Klicken Sie **Neues technisches Konto erstellen**.
+Navigieren Sie **Tools** > **Integrationen**.
+
+![Frame-IO](./images/aemf47a.png)
+
+Klicken Sie **Neues technisches Konto erstellen**.
 
 ![Frame-IO](./images/aemf48.png)
 
-Sie sollten dann so etwas sehen. Kopieren Sie die vollständige JSON-Payload in die Zwischenablage.
+Sie sollten dann so etwas sehen. Öffnen Sie das neu erstellte technische Konto. Klicken Sie auf die 3 Punkte **…** und wählen Sie **Ansicht**.
+
+![Frame-IO](./images/aemf48a.png)
+
+Anschließend sollte eine ähnliche Payload für das Token des technischen Kontos angezeigt werden. Kopieren Sie die vollständige JSON-Payload in die Zwischenablage.
 
 ![Frame-IO](./images/aemf50.png)
 
-Gehen Sie zurück zu Workfront Fusion und fügen Sie die vollständige JSON-Payload in das Feld **Anmeldedaten des technischen Kontos im JSON-Format** ein. Klicken Sie auf **Weiter**.
+Gehen Sie zurück zu Workfront Fusion und fügen Sie die vollständige JSON-Payload in das Feld **Anmeldedaten des technischen Kontos im JSON-Format** ein. Klicken Sie auf **Fortfahren**.
 
 ![Frame-IO](./images/aemf49.png)
 
@@ -283,7 +301,7 @@ Gehen Sie zu **Assets** und klicken Sie auf **Ordner erstellen**.
 
 ![Frame-IO](./images/aemf54.png)
 
-Geben Sie den `--aepUserLdap-- - Frame.io PNG` ein und klicken Sie auf **Erstellen**.
+Geben Sie den `--aepUserLdap-- - CitiSignal Fiber Campaign` ein und klicken Sie auf **Erstellen**.
 
 ![Frame-IO](./images/aemf55.png)
 
@@ -291,19 +309,19 @@ Ihr Ordner wird dann erstellt.
 
 ![Frame-IO](./images/aemf56.png)
 
-Gehen Sie zurück zu Workfront Fusion, klicken Sie auf **Hier klicken, um den Ordner auszuwählen** und wählen Sie dann die `--aepUserLdap-- - Frame.io PNG` aus.
+Gehen Sie zurück zu Workfront Fusion, wählen Sie **Hier klicken, um Ordner auszuwählen** und wählen Sie dann den `--aepUserLdap-- - CitiSignal Fiber Campaign` aus.
 
 ![Frame-IO](./images/aemf57.png)
 
-Stellen Sie sicher, dass das Ziel auf `--aepUserLdap-- - Frame.io PNG` gesetzt ist. Wählen Sie dann unter **Source** die Option **Map** aus.
+Stellen Sie sicher, dass das Ziel auf `--aepUserLdap-- - CitiSignal Fiber Campaign` gesetzt ist. Wählen Sie dann unter **Source** die Option **Map** aus.
 
-Wählen **unter „Dateiname** die Variable `{{3.filenames[]}}`.
+Wählen **unter „Dateiname** die Variable `{{3.filenames[1]}}`.
 
-Wählen **unter &quot;**&quot; die Variable `{{3.files[]}}`.
+Wählen **unter &quot;**&quot; die Variable `{{3.files[1]}}`.
 
 >[!NOTE]
 >
->Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3&rbrace;**. Das bedeutet, dass die Variable `{{3.filenames[]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
+>Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[1]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3}**. Das bedeutet, dass die Variable `{{3.filenames[1]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
 
 Klicken Sie auf **OK**.
 
