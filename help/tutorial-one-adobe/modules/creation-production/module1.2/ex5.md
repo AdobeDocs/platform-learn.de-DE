@@ -191,7 +191,7 @@ Wenn die benutzerdefinierte Aktion in Frame.io aufgerufen wird, erwartet Frame.i
 }
 ```
 
-Damit das Szenario `--aepUserLdap-- - Firefly + Photoshop` erfolgreich ausgeführt werden kann, sind daher Felder wie ****, **cta**, **button** und **psdTemplate** erforderlich.
+Damit das Szenario `--aepUserLdap-- - Firefly + Photoshop` erfolgreich ausgeführt werden kann, sind daher Felder wie **&#x200B;**, **cta**, **button** und **psdTemplate** erforderlich.
 
 Die ersten drei Felder **Eingabeaufforderung**, **cta**, **button** erfordern Benutzereingaben, die in Frame.io erfasst werden müssen, wenn der Benutzer die benutzerdefinierte Aktion aufruft. Daher muss in Workfront Fusion zunächst überprüft werden, ob diese Variablen verfügbar sind. Ist dies nicht der Fall, sollte Workfront Fusion auf Frame.io zurückantworten, um die Eingabe dieser Variablen anzufordern. Dies erreichen Sie, indem Sie ein Formular in Frame.io verwenden.
 
@@ -529,9 +529,9 @@ Sie müssen XXX in der obigen URL durch die ID des Ordners ersetzen
 >[!NOTE]
 >
 >Wie bereits erwähnt, können Variablen in Workfront Fusion mithilfe der folgenden Syntax manuell angegeben werden: `{{1.account_id}}` und `{{4.body.data.parent_id}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario.
->>In diesem Beispiel sehen Sie, dass das erste Modul im Szenario **Webhooks** heißt und die Sequenznummer **1 hat**. Das bedeutet, dass die Variable `{{1.account_id}}` auf dieses Feld aus dem Modul mit der Sequenznummer 1 zugreift.
->>In diesem Beispiel sehen Sie, dass das vierte Modul im Szenario **Frame.io - Erstellen eines benutzerdefinierten API-Aufrufs** heißt und die Sequenznummer **4** hat. Das bedeutet, dass die Variable `{{4.body.data.parent_id}}` auf dieses Feld aus dem Modul mit der Sequenznummer 4 zugreift.
->>Wenn die Sequenznummern Ihrer Module unterschiedlich sind, müssen Sie die Variablen in der obigen URL aktualisieren, um mit dem richtigen Modul verknüpft zu werden.
+>&#x200B;>In diesem Beispiel sehen Sie, dass das erste Modul im Szenario **Webhooks** heißt und die Sequenznummer **1 hat**. Das bedeutet, dass die Variable `{{1.account_id}}` auf dieses Feld aus dem Modul mit der Sequenznummer 1 zugreift.
+>&#x200B;>In diesem Beispiel sehen Sie, dass das vierte Modul im Szenario **Frame.io - Erstellen eines benutzerdefinierten API-Aufrufs** heißt und die Sequenznummer **4** hat. Das bedeutet, dass die Variable `{{4.body.data.parent_id}}` auf dieses Feld aus dem Modul mit der Sequenznummer 4 zugreift.
+>&#x200B;>Wenn die Sequenznummern Ihrer Module unterschiedlich sind, müssen Sie die Variablen in der obigen URL aktualisieren, um mit dem richtigen Modul verknüpft zu werden.
 
 ![Frame-IO](./images/frame78.png)
 
@@ -551,7 +551,7 @@ Kopieren Sie das folgende JSON-Fragment und fügen Sie es in das Feld **Textkör
 >[!NOTE]
 >
 >Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{6.data.newPsdTemplate}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das sechste Modul im Szenario **HTTP - Eine Anfrage stellen“ heißt** eine Sequenznummer von **6** hat. Das bedeutet, dass die Variable `{{6.data.newPsdTemplate}}` auf das Feld **data.newPsdTemplate** aus dem Modul mit der Sequenznummer 6 zugreift.
->>Wenn die Sequenznummern Ihres Moduls unterschiedlich sind, müssen Sie die Variable in der obigen URL aktualisieren, um mit dem richtigen Modul verknüpft zu werden.
+>&#x200B;>Wenn die Sequenznummern Ihres Moduls unterschiedlich sind, müssen Sie die Variable in der obigen URL aktualisieren, um mit dem richtigen Modul verknüpft zu werden.
 
 Klicken Sie auf **OK**.
 

@@ -321,7 +321,7 @@ Wählen **unter &quot;**&quot; die Variable `{{3.files[1]}}`.
 
 >[!NOTE]
 >
->Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[1]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3}**. Das bedeutet, dass die Variable `{{3.filenames[1]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
+>Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[1]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3&rbrace;**. Das bedeutet, dass die Variable `{{3.filenames[1]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
 
 Klicken Sie auf **OK**.
 
