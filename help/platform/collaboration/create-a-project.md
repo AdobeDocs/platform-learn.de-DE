@@ -22,4 +22,4 @@ Lernen Sie die Grundlagen der Erstellung von Projekten in Collaboration kennen, 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
 
-Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
