@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
+source-git-commit: a9f2e42d001e260f79439850bc5a364a64d1fc0e
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3788'
 ht-degree: 0%
 
 ---
@@ -239,13 +239,13 @@ Wählen Sie in der Sammlung **Adobe IO - OAuth** die Anfrage mit dem Namen **POS
 
 Nachdem Sie nun über ein gültiges und neues Zugriffs-Token verfügen, können Sie Ihre erste Anfrage an Firefly Services-APIs senden.
 
-Die Anfrage, die Sie hier verwenden werden, ist eine **synchrone** Anfrage, die Ihnen innerhalb weniger Sekunden eine Antwort liefert, die das angeforderte Bild enthält.
+Die Anfrage, die Sie hier verwenden werden, ist eine **asynchrone** Anfrage, die Ihnen eine Antwort liefert, die die URL des gesendeten Auftrags enthält. Das bedeutet, dass Sie eine zweite Anfrage verwenden müssen, um den Status des Auftrags zu überprüfen und auf das generierte Bild zuzugreifen.
 
 >[!NOTE]
 >
->Mit der Veröffentlichung von Firefly Image 4 und Image 4 Ultra werden synchrone Anfragen zugunsten asynchroner Anfragen eingestellt. Übungen zu asynchronen Anfragen finden Sie weiter unten in diesem Tutorial.
+>Mit der Veröffentlichung von Firefly Image 4 und Image 4 Ultra werden synchrone Anfragen zugunsten asynchroner Anfragen eingestellt.
 
-Wählen Sie die Anfrage **POST - Firefly - T2I V3** aus der Sammlung **FF - Firefly Services Tech Insiders** aus. Navigieren Sie zu **Kopfzeilen** und überprüfen Sie die Schlüssel/Wert-Paarkombinationen.
+Wählen Sie die Anfrage **POST - Firefly - T2I V3 async** aus der Sammlung **FF - Firefly Services Tech Insiders** aus. Navigieren Sie zu **Kopfzeilen** und überprüfen Sie die Schlüssel/Wert-Paarkombinationen.
 
 | Schlüssel | Wert |
 |:-------------:| :---------------:| 
@@ -254,7 +254,7 @@ Wählen Sie die Anfrage **POST - Firefly - T2I V3** aus der Sammlung **FF - Fire
 
 Beide Werte in dieser Anfrage beziehen sich auf Umgebungsvariablen, die zuvor definiert wurden. `{{API_KEY}}` bezieht sich auf das Feld **Client-ID** Ihres Adobe I/O-Projekts. Im Rahmen des Abschnitts **Erste Schritte** dieses Tutorials haben Sie dies in Postman konfiguriert.
 
-Der Wert für das Feld **Autorisierung** ist etwas spezieller: `Bearer {{ACCESS_TOKEN}}`. Sie enthält einen Verweis auf das **Zugriffstoken**, das Sie im vorherigen Schritt generiert haben. Wenn Sie Ihr **Zugriffs-Token** mithilfe der Anfrage **POST - Zugriffs-Token abrufen** in der **Adobe IO - OAuth**-Sammlung erhalten haben, wurde in Postman ein Skript ausgeführt, das das Feld **Zugriffs-Token** als Umgebungsvariable speichert hat, auf das jetzt in der Anfrage **POST - Firefly - T2I V3** verwiesen wird. Bitte beachten Sie die spezifische Ergänzung des Wortes **Träger** und ein Leerzeichen vor dem `{{ACCESS_TOKEN}}`. Bei dem Wort „Bearer“ wird zwischen Groß- und Kleinschreibung unterschieden und es wird ein Leerzeichen benötigt. Wenn dies nicht korrekt ausgeführt wird, gibt Adobe I/O den Fehler **401 Unauthorized** zurück, da es Ihr (Zugriffs **Token)** kann.
+Der Wert für das Feld **Autorisierung** ist etwas spezieller: `Bearer {{ACCESS_TOKEN}}`. Sie enthält einen Verweis auf das **Zugriffstoken**, das Sie im vorherigen Schritt generiert haben. Wenn Sie Ihr **Zugriffs-Token** mithilfe der Anfrage **POST - Zugriffs-Token abrufen** in der **Adobe IO - OAuth**-Sammlung erhalten haben, wurde in Postman ein Skript ausgeführt, das das Feld **Zugriffs-Token** als Umgebungsvariable speichert. Auf dieses wird jetzt in der Anfrage **POST - Firefly - T2I V3 asynchron**. Bitte beachten Sie die spezifische Ergänzung des Wortes **Träger** und ein Leerzeichen vor dem `{{ACCESS_TOKEN}}`. Bei dem Wort „Bearer“ wird zwischen Groß- und Kleinschreibung unterschieden und es wird ein Leerzeichen benötigt. Wenn dies nicht korrekt ausgeführt wird, gibt Adobe I/O den Fehler **401 Unauthorized** zurück, da es Ihr (Zugriffs **Token)** kann.
 
 ![Firefly](./images/ff0.png)
 
@@ -262,7 +262,23 @@ Wechseln Sie dann zum **Textkörper** und überprüfen Sie die Eingabeaufforderu
 
 ![Firefly](./images/ff1.png)
 
-Kopieren Sie die Bild-URL aus der Antwort (oder klicken Sie darauf) und öffnen Sie sie in Ihrem Webbrowser, um das Bild anzuzeigen.
+Sie erhalten dann eine sofortige Antwort. Diese Antwort enthält nicht die Bild-URLs des generierten Bildes, sondern eine URL des Statusberichts des von Ihnen ausgeführten Auftrags sowie eine weitere URL, mit der Sie den ausgeführten Auftrag abbrechen können.
+
+>[!NOTE]
+>
+>Die von Ihnen verwendete Postman-Sammlung wurde für die Verwendung dynamischer Variablen konfiguriert. Beispielsweise wurde das Feld **statusUrl** dank der in Postman konfigurierten **Scripts** in Postman als dynamische Variable gespeichert.
+
+![Firefly](./images/ff1a.png)
+
+Um den Statusbericht Ihres laufenden Auftrags zu überprüfen, wählen Sie die Anfrage mit dem Namen **GET - Firefly - Statusbericht abrufen** aus der Sammlung **FF - Firefly Services Tech Insiders** aus. Klicken Sie auf , um es zu öffnen, und klicken Sie dann auf **Senden**. Wählen Sie die URL des generierten Bildes aus und öffnen Sie es in Ihrem Browser.
+
+>[!NOTE]
+>
+>Die von Ihnen verwendete Postman-Sammlung wurde für die Verwendung dynamischer Variablen konfiguriert. Beispielsweise wurde das Feld **statusUrl** der vorherigen Anfrage als dynamische Variable in Postman gespeichert. Es wird jetzt als URL für die Anfrage **GET - Firefly - Statusbericht abrufen** verwendet.
+
+![Firefly](./images/ff1b.png)
+
+Sie sollten eine ähnliche Antwort erhalten haben. Dies ist die Übersicht über den ausgeführten Auftrag. Sie können das Feld **url** sehen, das das generierte Bild enthält. Kopieren Sie die Bild-URL aus der Antwort (oder klicken Sie darauf) und öffnen Sie sie in Ihrem Webbrowser, um das Bild anzuzeigen.
 
 ![Firefly](./images/ff2.png)
 
@@ -270,7 +286,7 @@ Sie sollten ein schönes Bild sehen, das `horses in a field` darstellt.
 
 ![Firefly](./images/ff3.png)
 
-Fügen Sie im **Hauptteil** Ihrer Anfrage **POST - Firefly - T2I V3** Folgendes unter dem Feld `"promptBiasingLocaleCode": "en-US"` hinzu und ersetzen Sie die `XXX` durch eine der Seed-Nummern, die von der Firefly Services-Benutzeroberfläche zufällig verwendet wurden. In diesem Beispiel wird die **Seed**-Nummer `142194`.
+Fügen Sie im **Hauptteil** Ihrer Anfrage **POST - Firefly - T2I V3 async** Folgendes unter dem Feld `"promptBiasingLocaleCode": "en-US"` hinzu und ersetzen Sie die Variable `XXX` durch eine der Seed-Nummern, die von der Firefly Services-Benutzeroberfläche zufällig verwendet wurden. In diesem Beispiel wird die **Seed**-Nummer `142194`.
 
 ```json
 ,
@@ -279,7 +295,11 @@ Fügen Sie im **Hauptteil** Ihrer Anfrage **POST - Firefly - T2I V3** Folgendes 
   ]
 ```
 
-Klicken Sie **Senden**. Sie erhalten dann eine Antwort mit einem neuen Bild, das von Firefly Services generiert wurde. Öffnen Sie das Bild, um es anzuzeigen.
+Klicken Sie **Senden**. Sie erhalten dann erneut eine Antwort mit einem Link zum Statusbericht des gerade gesendeten Auftrags.
+
+![Firefly](./images/ff3a.png)
+
+Um den Statusbericht Ihres laufenden Auftrags zu überprüfen, wählen Sie die Anfrage mit dem Namen **GET - Firefly - Statusbericht abrufen** aus der Sammlung **FF - Firefly Services Tech Insiders** aus. Klicken Sie auf , um es zu öffnen, und klicken Sie dann auf **Senden**. Wählen Sie die URL des generierten Bildes aus und öffnen Sie es in Ihrem Browser.
 
 ![Firefly](./images/ff4.png)
 
@@ -287,7 +307,7 @@ Anschließend sollte ein neues Bild mit leichten Unterschieden angezeigt werden,
 
 ![Firefly](./images/ff5.png)
 
-Fügen Sie als Nächstes im **Hauptteil** Ihrer Anfrage **POST - Firefly - T2I V3** das folgende **styles**-Objekt unter das **seed**-Objekt ein. Dadurch wird der Stil des erzeugten Bildes in &quot;**_deco“**.
+Fügen Sie als Nächstes im **Hauptteil** Ihrer Anfrage **POST - Firefly - T2I V3 async** das folgende **styles**-Objekt unter das **seed**-Objekt ein. Dadurch wird der Stil des erzeugten Bildes in &quot;**_deco“**.
 
 ```json
 ,
@@ -300,11 +320,11 @@ Fügen Sie als Nächstes im **Hauptteil** Ihrer Anfrage **POST - Firefly - T2I V
   }
 ```
 
-Sie sollten dann diese haben. Klicken Sie auf **Senden**.
+Sie sollten dann diese haben. Klicken Sie **Senden**. Sie erhalten dann erneut eine Antwort mit einem Link zum Statusbericht des gerade gesendeten Auftrags.
 
 ![Firefly](./images/ff6.png)
 
-Klicken Sie auf die Bild-URL, um sie zu öffnen.
+Um den Statusbericht Ihres laufenden Auftrags zu überprüfen, wählen Sie die Anfrage mit dem Namen **GET - Firefly - Statusbericht abrufen** aus der Sammlung **FF - Firefly Services Tech Insiders** aus. Klicken Sie auf , um es zu öffnen, und klicken Sie dann auf **Senden**. Wählen Sie die URL des generierten Bildes aus und öffnen Sie es in Ihrem Browser.
 
 ![Firefly](./images/ff7.png)
 
@@ -312,7 +332,7 @@ Ihr Bild hat sich jetzt etwas verändert. Beim Anwenden von Stilvorgaben wird da
 
 ![Firefly](./images/ff8.png)
 
-Entfernen Sie den Code für das **seed**-Objekt aus **body** Ihrer Anfrage. Klicken Sie **Senden** und dann auf die Bild-URL, die Sie aus der Antwort erhalten.
+Entfernen Sie den Code für das **seed**-Objekt aus dem **body** Ihrer **POST - Firefly - T2I V3 async**-Anfrage. Klicken Sie **Senden** und dann auf die Bild-URL, die Sie aus der Antwort erhalten. Sie erhalten dann erneut eine Antwort mit einem Link zum Statusbericht des gerade gesendeten Auftrags.
 
 ```json
 ,
@@ -323,13 +343,17 @@ Entfernen Sie den Code für das **seed**-Objekt aus **body** Ihrer Anfrage. Klic
 
 ![Firefly](./images/ff9.png)
 
+Um den Statusbericht Ihres laufenden Auftrags zu überprüfen, wählen Sie die Anfrage mit dem Namen **GET - Firefly - Statusbericht abrufen** aus der Sammlung **FF - Firefly Services Tech Insiders** aus. Klicken Sie auf , um es zu öffnen, und klicken Sie dann auf **Senden**. Wählen Sie die URL des generierten Bildes aus und öffnen Sie es in Ihrem Browser.
+
+![Firefly](./images/ff9a.png)
+
 Ihr Bild hat sich jetzt wieder etwas verändert.
 
 ![Firefly](./images/ff10.png)
 
 ## 1.1.1.7 Firefly Services-API, Gen-Erweiterung
 
-Wählen Sie die Anfrage **POST - Firefly - Gen Expand** aus der **FF - Firefly Services Tech Insiders**-Sammlung aus und navigieren Sie zum **Hauptteil** der Anfrage.
+Wählen Sie die Anfrage **POST - Firefly - Gen Expand** async) aus der **FF - Firefly Services Tech Insiders**-Sammlung aus und navigieren Sie zum **Hauptteil** der Anfrage.
 
 - **size**: Geben Sie die gewünschte Auflösung ein. Der hier eingegebene Wert sollte größer als die Originalgröße des Bildes sein und darf nicht größer als 3999 sein.
 - **image.source.url**: Dieses Feld erfordert einen Link zu dem Bild, das erweitert werden muss. In diesem Beispiel wird eine Variable verwendet, um auf das in der vorherigen Übung generierte Bild zu verweisen.
@@ -339,7 +363,11 @@ Wählen Sie die Anfrage **POST - Firefly - Gen Expand** aus der **FF - Firefly S
 
 ![Firefly](./images/ff11.png)
 
-Klicken Sie auf die Bild-URL, die Teil der Antwort ist.
+Sie erhalten dann erneut eine Antwort mit einem Link zum Statusbericht des gerade gesendeten Auftrags.
+
+![Firefly](./images/ff11a.png)
+
+Um den Statusbericht Ihres laufenden Auftrags zu überprüfen, wählen Sie die Anfrage mit dem Namen **GET - Firefly - Statusbericht abrufen** aus der Sammlung **FF - Firefly Services Tech Insiders** aus. Klicken Sie auf , um es zu öffnen, und klicken Sie dann auf **Senden**. Wählen Sie die URL des generierten Bildes aus und öffnen Sie es in Ihrem Browser.
 
 ![Firefly](./images/ff12.png)
 
@@ -347,9 +375,27 @@ Sie sehen nun, dass das in der vorherigen Übung generierte Bild auf die Auflös
 
 ![Firefly](./images/ff13.png)
 
-Wenn Sie die Ausrichtung der Platzierung ändern, unterscheidet sich die Ausgabe ebenfalls geringfügig. In diesem Beispiel wird die Platzierung in &quot;**, unten“**. Klicken Sie auf **Senden** und dann auf , um die generierte Bild-URL zu öffnen.
+Erstellen Sie ein neues Bild mithilfe der asynchronen Anfrage **Firefly - T2I V3**.
+
+![Firefly](./images/ff13a.png)
+
+Um den Statusbericht Ihres laufenden Auftrags zu überprüfen, wählen Sie die Anfrage mit dem Namen **GET - Firefly - Statusbericht abrufen** aus der Sammlung **FF - Firefly Services Tech Insiders** aus. Klicken Sie auf , um es zu öffnen, und klicken Sie dann auf **Senden**. Wählen Sie die URL des generierten Bildes aus und öffnen Sie es in Ihrem Browser.
+
+![Firefly](./images/ff13b.png)
+
+Anschließend sollten Sie ein ähnliches Bild sehen.
+
+![Firefly](./images/ff13c.png)
+
+Wählen Sie die Anfrage **POST - Firefly - Gen Expand** async) aus der **FF - Firefly Services Tech Insiders**-Sammlung aus und navigieren Sie zum **Hauptteil** der Anfrage.
+
+Wenn Sie die Ausrichtung der Platzierung ändern, unterscheidet sich die Ausgabe ebenfalls geringfügig. In diesem Beispiel wird die Platzierung in &quot;**, unten“**. Klicken Sie **Senden**. Sie erhalten dann erneut eine Antwort mit einem Link zum Statusbericht des gerade gesendeten Auftrags.
 
 ![Firefly](./images/ff14.png)
+
+Um den Statusbericht Ihres laufenden Auftrags zu überprüfen, wählen Sie die Anfrage mit dem Namen **GET - Firefly - Statusbericht abrufen** aus der Sammlung **FF - Firefly Services Tech Insiders** aus. Klicken Sie auf , um es zu öffnen, und klicken Sie dann auf **Senden**. Wählen Sie die URL des generierten Bildes aus und öffnen Sie es in Ihrem Browser.
+
+![Firefly](./images/ff14a.png)
 
 Anschließend sollte man sehen, dass das Originalbild an einer anderen Stelle verwendet wird, was das gesamte Bild beeinflusst.
 
@@ -381,7 +427,7 @@ Navigieren Sie zum **Hauptteil** der Anfrage. Sie sollten sehen, dass im Hauptte
 
 ![Firefly](./images/ffim4_2.png)
 
-Sie erhalten dann eine sofortige Antwort. Im Gegensatz zu den vorherigen synchronen Anfragen, die Sie verwendet haben, enthält diese Antwort keine Bild-URLs generierter Bilder. Er enthält eine URL des Statusberichts des von Ihnen ausgeführten Auftrags und eine weitere URL, mit der Sie den ausgeführten Auftrag abbrechen können.
+Sie erhalten dann eine sofortige Antwort. Diese Antwort enthält nicht die Bild-URLs des generierten Bildes, sondern eine URL des Statusberichts des von Ihnen ausgeführten Auftrags sowie eine weitere URL, mit der Sie den ausgeführten Auftrag abbrechen können.
 
 ![Firefly](./images/ffim4_3.png)
 
