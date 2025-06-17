@@ -29,7 +29,7 @@ Weitere Informationen finden Sie in der Real-Time CDP Collaboration [Dokumentati
 
 Hier erhalten Sie eine Einführung in Adobe Real-Time Collaboration, eine speziell entwickelte Anwendung für die Datenerfassung, die es Ihnen ermöglicht, hochwertige Zielgruppen zu entdecken und zu aktivieren und Messfunktionen zu nutzen, um greifbare Ergebnisse zu erzielen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446810?learn=on&enablevpops&captions=ger)
 
 
 ## Einrichten
@@ -47,7 +47,7 @@ Hier erhalten Sie eine Einführung in Adobe Real-Time Collaboration, eine spezie
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Festlegen von Berechtigungen für Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1750198179177" alt="Festlegen von Berechtigungen für Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452239/?format=jpeg&nocache=1750198179177&captions=ger" alt="Festlegen von Berechtigungen für Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
