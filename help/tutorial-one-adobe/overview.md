@@ -3,7 +3,7 @@ title: Überblick - Umfassendes technisches Tutorial - One Adobe
 description: Umfassendes technisches Tutorial - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 2%
@@ -41,9 +41,9 @@ Dieses Tutorial konzentriert sich nicht nur auf Adobe-Anwendungen, sondern berü
 Nachdem Sie einige der Module in diesem Tutorial abgeschlossen haben, können Sie an einer Adobe-Berechtigungsprüfung teilnehmen, um ein **Adobe Qualified**-Abzeichen zu erhalten.
 
 - Wenn Sie das Modul [Übersicht über Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} abgeschlossen haben, können Sie die **Adobe Qualified**-Prüfung (AD2 **E901)**:
-  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential).
-- Wenn Sie das Modul [Creative Workflow-Automatisierung mit Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"} abschließen, können Sie die **Adobe Qualified**-Prüfung (**)**:
-  [TBC](https://certification.adobe.com/certification/services-qualified-credential).
+  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
+- Wenn Sie das Modul [Creative Workflow-Automatisierung mit Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"} abschließen, können Sie die **Adobe Qualified**-Prüfung (AD2-**E902)**:
+  [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## Inhaltsstatus
 
