@@ -5,18 +5,27 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 32f7cfc1aafb7a58dca99be3be9149c90bcfd040
+exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
 
 # 1.3.2 Konfiguration: Rollen, Produkte und Vorlagen
 
+Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Öffnen Sie **GenStudio**.
+
+![GSPeM](./images/gspem1.png)
+
 ## 1.3.2.1 Produkte
 
-Klicken Sie auf die 3 Punkte **…** und wählen Sie **Produkte**.
+Produkte in GenStudio for Performance Marketing nutzen ein umfassendes Verständnis von Produktspezifikationen, Vorteilen und Unterscheidungsfaktoren, um wirkungsvolle Inhalte zu generieren.
+
+Produkte umfassen alle Elemente eines bestimmten Produkts, z. B. Bilder, Beschreibungen und Wertangebote, um eine kohärente Markendarstellung zu schaffen. Durch die Nutzung der fortschrittlichen KI-Technologie von Adobe arbeiten GenStudio for Performance Marketing-Richtlinien - Marken, Produkte und Rollen - zusammen, um überzeugende Inhalte zu generieren, die die Stärken Ihrer Produkte aufzeigen und Konsistenz über alle Messaging-Bereiche hinweg sicherstellen.
+
+Um Ihre eigenen Produkte zu erstellen, klicken Sie auf die 3 Punkte **…** und wählen Sie **Produkte**.
 
 ![GSPeM](./images/gspem101.png)
 
@@ -102,7 +111,11 @@ Sie sollten dann die beiden Produkte sehen, die Sie konfiguriert haben.
 
 ## 1.3.2.2 Personas
 
-Klicken Sie auf die 3 Punkte **…** und wählen Sie **Personas**.
+Personas bieten eine authentische Darstellung Ihrer Kundensegmente, einschließlich Informationen, Interessen, Problembereichen, Voreinstellungen und Verhaltenseigenschaften.
+
+GenStudio for Performance Marketing nutzt die Leistungsfähigkeit von Richtlinien - Marken, Produkte und Personas - sowie die generative KI-Technologie von Adobe, um personalisierte Marketing-Inhalte für Ihre Zielkunden zu kuratieren&#x200B;
+
+Um mit der Erstellung Ihrer Personas zu beginnen, klicken Sie auf die 3 Punkte **…** und wählen Sie dann **Personas** aus.
 
 ![GSPeM](./images/gspem111.png)
 
@@ -213,6 +226,10 @@ Sie sollten dann die drei von Ihnen konfigurierten Personas sehen.
 ![GSPeM](./images/gspem124.png)
 
 ## Vorlagen 1.3.2.3
+
+GenStudio for Performance Marketing ermöglicht es Inhaltserstellern, anhand von Vorlagen schnell konsistente markeninterne Marketing-Inhalte zu erstellen. Eine Vorlage reduziert den Zeit- und Arbeitsaufwand für die Erstellung neuer Inhalte erheblich, indem sie einen Ausgangspunkt bereitstellt, der vorkonfigurierte Layouts und Design-Elemente umfasst.
+
+GenStudio for Performance Marketing unterstützt zwar nicht die direkte Erstellung von Vorlagen innerhalb des Programms, aber Sie können Vorlagen einfach mit gängigen Design-Tools wie Adobe InDesign, Illustrator oder Express entwerfen und vorbereiten. Sobald Ihr Design abgeschlossen ist, können Sie es für die Verwendung in GenStudio for Performance Marketing anpassen. In dieser Übung importieren Sie eine Reihe vordefinierter Vorlagen in GenStudio for Performance Marketing.
 
 In der vorherigen Übung haben Sie die Datei [CitiSignal-GSPeM-assets.zip](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) auf Ihren Desktop heruntergeladen und entpackt. Dieser Ordner enthält vier Beispielvorlagen, die Sie jetzt in GenStudio importieren müssen.
 
