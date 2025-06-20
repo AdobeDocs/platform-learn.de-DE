@@ -1,23 +1,21 @@
 ---
-title: Erste Schritte mit Adobe Express
-description: Erste Schritte mit Adobe Express
+title: GenStudio for Performance Marketing Configuration Personas Product Templates
+description: GenStudio for Performance Marketing Configuration Personas Product Templates
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 2%
+source-wordcount: '961'
+ht-degree: 1%
 
 ---
 
 # 1.3.2 Konfiguration: Rollen, Produkte und Vorlagen
 
-Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Öffnen Sie **GenStudio**.
-
-![GSPeM](./images/gspem1.png)
+In dieser Übung konfigurieren Sie Rollen, Produkte und Vorlagen in GenStudio for Performance Marketing.
 
 ## 1.3.2.1 Produkte
 

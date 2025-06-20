@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '462'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,9 @@ In diesem Modul erfahren Sie, wie Sie alle oben genannten Schritte selbst durchf
 
 ## Voraussetzungen
 
-- Zugriff auf Adobe GenStudio for Performance Marketing [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
+- Zugriff auf Adobe GenStudio for Performance Marketing
+- Zugriff auf Adobe Workfront und Adobe Workfront Planning
+- Zugriff auf eine Adobe Experience Manager Cloud Service-Sandbox mit aktiviertem Content Hub
 
 ## Übungen
 
@@ -40,11 +42,11 @@ In dieser Übung konfigurieren Sie eine CitiSignal-Marke in GenStudio for Perfor
 
 [1.3.2 Konfiguration: Rollen, Produkte und Vorlagen](./ex2.md){target="_blank"}
 
-In dieser Übung konfigurieren Sie Rollen und Produkte in GenStudio for Performance Marketing.
+In dieser Übung konfigurieren Sie Rollen, Produkte und Vorlagen in GenStudio for Performance Marketing.
 
 [1.3.3 Kampagnenaktivierung für Meta](./ex3.md){target="_blank"}
 
-In dieser Übung konfigurieren Sie eine Verbindung zu Meta und führen alle Schritte durch, die erforderlich sind, um eine Anzeige zu erstellen, eine Anzeige mit Adobe Workfront zu genehmigen und eine Anzeige in Meta zu veröffentlichen.
+In dieser Übung erstellen Sie eine Kampagne. Sie konfigurieren auch eine Verbindung zu Meta und führen alle Schritte durch, die erforderlich sind, um eine Anzeige zu erstellen, eine Anzeige mit Adobe Workfront zu genehmigen und eine Anzeige in Meta zu veröffentlichen.
 
 [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
