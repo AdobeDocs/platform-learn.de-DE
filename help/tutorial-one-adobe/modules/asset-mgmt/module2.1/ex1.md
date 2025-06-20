@@ -84,7 +84,7 @@ Klicken Sie **Aktivieren**.
 
 ![AEMCS](./images/aemcsact1.png)
 
-Die Aktivierung von **** Content Hub&quot; wurde jetzt gestartet. Dies kann 10 Minuten oder länger dauern.
+Die Aktivierung von **&#x200B;**&#x200B;Content Hub&quot; wurde jetzt gestartet. Dies kann 10 Minuten oder länger dauern.
 
 ![AEMCS](./images/aemcsact2.png)
 
