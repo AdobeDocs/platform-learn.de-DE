@@ -153,7 +153,7 @@ Hier erhalten Sie eine Einführung in Adobe Real-Time Collaboration, eine spezie
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Erstellen eines Projekts in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1750198179535" alt="Erstellen eines Projekts in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464043/?format=jpeg&nocache=1750198179535&captions=ger" alt="Erstellen eines Projekts in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

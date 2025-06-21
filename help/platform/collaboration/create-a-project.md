@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Lernen Sie die Grundlagen der Erstellung von Projekten in Collaboration kennen, einschließlich einer kurzen Übersicht über Erkennung, Aktivierung und Messung.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464043/?learn=on&enablevpops&captions=ger)
 
 Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
