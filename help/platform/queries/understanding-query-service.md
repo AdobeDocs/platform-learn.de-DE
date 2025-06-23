@@ -16,7 +16,7 @@ ht-degree: 17%
 
 # Übersicht über Query Service und Data Distiller
 
-Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundenerlebnisdaten, die im Data Lake gespeichert sind, mithilfe von SQL untersuchen, validieren und transformieren, wobei erweiterte Funktionen wie Datenausgabe und Planung über das Add-on Data Distiller verfügbar sind. In diesem Video erhalten Sie einen Überblick über die Kernfunktionen, die Benutzern dabei helfen, die Verwendung des Abfrage-Service in verschiedenen Platform-basierten Anwendungen zu verstehen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundenerlebnisdaten, die im Data Lake gespeichert sind, mithilfe von SQL untersuchen, validieren und transformieren, wobei erweiterte Funktionen wie Datenausgabe und Planung über das Add-on Data Distiller verfügbar sind. In diesem Video erhalten Sie einen Überblick über die Kernfunktionen, die Benutzern dabei helfen, die Verwendung des Abfrage-Service in verschiedenen Platform-basierten Anwendungen zu verstehen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
