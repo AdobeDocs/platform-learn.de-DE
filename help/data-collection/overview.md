@@ -3,7 +3,7 @@ title: Tutorials zur Datenerfassung
 description: Anleitungsvideos und Tutorials, um Sie zu einem Power User der Datenerfassung zu machen
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: d818b07dbd7f58254083fd0696b81b0bab1ee9d3
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 22%
@@ -23,16 +23,62 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
 
 <div id="staff-picks-section">
 
+## Implementierungshandbücher
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+      <img alt="Implementieren von Adobe Experience Cloud mit dem Web SDK" src="assets/thumb_websdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+    <strong>Implementieren von Experience Cloud mit Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>Verwenden von Tags zur Implementierung von Platform Web SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <img alt="In Mobile Apps implementieren" src="assets/thumb_swift.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <strong>Implementieren von Experience Cloud in Mobile Apps</strong>
+    </a>
+    </div>
+    <p>
+    <em>Verwenden Sie Tags, um Platform Mobile SDK zu implementieren</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_legacy.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <strong>Implementieren veralteter Bibliotheken mit Tags</strong>
+    </a>
+    </div>
+    <p>
+    <em>Verwenden Sie Tags, um veraltete Analytics-, Target- und Audience Manager-Bibliotheken zu implementieren</em>
+    <p>
+  </td>
+</tr>
+</table>
+
 ## Migrationshandbücher
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrieren von Adobe Target zu Web SDK</strong>
     </a>
     </div>
@@ -60,7 +106,7 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
       <strong>Migrieren von Adobe Audience Manager zu Web SDK</strong>
     </div>
     <p>
-    <em>Ersetzen <a href="https://experienceleague.adobe.com/de/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> oder <a href="https://experienceleague.adobe.com/de/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">Server-seitige Weiterleitung aktualisieren</a></em>
+    <em>Ersetzen <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> oder <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">Server-seitige Weiterleitung aktualisieren</a></em>
     <p>
   </td>
 </tr>
@@ -83,52 +129,6 @@ Datenerfassung ist die nächste Generation der Verwaltungsfunktionen für Websit
   <td>
   </td>
   </tr>
-</table>
-
-## Implementierungshandbücher
-
-<table>
-<tr>
-  <td>
-    <a href="https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-      <img alt="Implementieren von Adobe Experience Cloud mit dem Web SDK" src="assets/thumb_websdk.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-    <strong>Implementieren von Experience Cloud mit Web SDK</strong>
-    </a>
-    </div>
-    <p>
-    <em>Verwenden von Tags zur Implementierung von Platform Web SDK</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-      <img alt="In Mobile Apps implementieren" src="assets/thumb_swift.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-    <strong>Implementieren von Experience Cloud in Mobile Apps</strong>
-    </a>
-    </div>
-    <p>
-    <em>Verwenden Sie Tags, um Platform Mobile SDK zu implementieren</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-      <img alt="Migrieren von Target zu Web SDK" src="assets/thumb_legacy.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-    <strong>Implementieren veralteter Bibliotheken mit Tags</strong>
-    </a>
-    </div>
-    <p>
-    <em>Verwenden Sie Tags, um veraltete Analytics-, Target- und Audience Manager-Bibliotheken zu implementieren</em>
-    <p>
-  </td>
-</tr>
 </table>
 
 </div>

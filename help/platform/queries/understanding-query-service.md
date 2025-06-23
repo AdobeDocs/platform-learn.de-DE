@@ -1,24 +1,24 @@
 ---
-title: Query Service – Übersicht
-description: Erfahren Sie, wie Query Service in Adobe Experience Platform Ihnen dabei helfen kann, das Kundenverhalten zu verstehen und wirkungsvolle Einblicke zu gewinnen.
+title: Übersicht über Query Service und Data Distiller
+description: Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundenerlebnisdaten, die im Data Lake gespeichert sind, mithilfe von SQL untersuchen, validieren und transformieren, wobei erweiterte Funktionen wie Datenausgabe und Planung über das Add-on Data Distiller verfügbar sind. In diesem Video erhalten Sie einen Überblick über die Kernfunktionen, die Benutzern dabei helfen, die Verwendung des Abfrage-Service in verschiedenen Platform-basierten Anwendungen zu verstehen.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-3139
 thumbnail: 29795.jpg
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
-source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
+source-git-commit: 8092c5f120a51b35f068261b70131ef303b4c51d
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 20%
+source-wordcount: '727'
+ht-degree: 17%
 
 ---
 
-# Query Service – Übersicht
+# Übersicht über Query Service und Data Distiller
 
-Erfahren Sie, wie Query Service in Adobe Experience Platform Ihnen dabei helfen kann, das Kundenverhalten zu verstehen und wirkungsvolle Einblicke zu gewinnen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
+Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundenerlebnisdaten, die im Data Lake gespeichert sind, mithilfe von SQL untersuchen, validieren und transformieren, wobei erweiterte Funktionen wie Datenausgabe und Planung über das Add-on Data Distiller verfügbar sind. In diesem Video erhalten Sie einen Überblick über die Kernfunktionen, die Benutzern dabei helfen, die Verwendung des Abfrage-Service in verschiedenen Platform-basierten Anwendungen zu verstehen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/32948?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Grundlegende Verwendung
 
@@ -105,7 +105,7 @@ Erfahren Sie, wie Query Service in Adobe Experience Platform Ihnen dabei helfen 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="Ausführen von Abfragen mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33392?format=jpeg&nocache=1740415310683&captions=ger" alt="Ausführen von Abfragen mit dem Abfrage-Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1740415310683" alt="Ausführen von Abfragen mit dem Abfrage-Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ Erfahren Sie, wie Query Service in Adobe Experience Platform Ihnen dabei helfen 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-data-usage-patterns-with-query-service.md" title="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32951?format=jpeg&nocache=1740415310706&captions=ger" alt="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29811?format=jpeg&nocache=1740415310706" alt="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Erfahren Sie, wie Query Service in Adobe Experience Platform Ihnen dabei helfen 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-data-in-the-datalake.md" title="Validieren von Daten im Data Lake mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445686?format=jpeg&nocache=1740415312076&captions=ger" alt="Validieren von Daten im Data Lake mit dem Abfrage-Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416130?format=jpeg&nocache=1740415312076" alt="Validieren von Daten im Data Lake mit dem Abfrage-Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -257,7 +257,7 @@ Erfahren Sie, wie Query Service in Adobe Experience Platform Ihnen dabei helfen 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-data-usage-patterns-with-query-service.md" title="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32951?format=jpeg&nocache=1740415313190&captions=ger" alt="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29811?format=jpeg&nocache=1740415313190" alt="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +326,7 @@ Erfahren Sie, wie Query Service in Adobe Experience Platform Ihnen dabei helfen 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454955?format=jpeg&nocache=1740415313218&captions=ger" alt="Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1740415313218" alt="Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

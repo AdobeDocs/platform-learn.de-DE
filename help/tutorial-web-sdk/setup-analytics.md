@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Adobe Analytics mithilfe von Experience Platf
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
 
 # Einrichten von Adobe Analytics mit Adobe Experience Platform Web SDK
 
-Erfahren Sie, wie Sie Adobe Analytics mithilfe von [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/web-sdk/overview) einrichten, Tag-Regeln erstellen, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics die Daten erwartungsgemäß erfasst.
+Erfahren Sie, wie Sie Adobe Analytics mithilfe von [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview) einrichten, Tag-Regeln erstellen, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics die Daten erwartungsgemäß erfasst.
 
 [Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics) ist eine branchenführende Anwendung, mit der Sie Ihre Kunden als Mitarbeiter verstehen und Ihr Unternehmen mit Customer Intelligence steuern können.
 
@@ -35,7 +35,7 @@ Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 * Machen Sie sich mit Adobe Analytics vertraut und haben Sie Zugriff darauf.
 
-* Sie verfügen über mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie keine Test-/Entwicklungs-Report Suite haben, die Sie für dieses Tutorial verwenden können, erstellen [ eine](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Sie verfügen über mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie keine Test-/Entwicklungs-Report Suite haben, die Sie für dieses Tutorial verwenden können, erstellen [ eine](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Die vorherigen Lektionen in den Abschnitten Erstkonfiguration und Tags-Konfiguration dieses Tutorials absolvieren.
 
@@ -78,7 +78,7 @@ Ab Mai 2024 müssen Sie kein XDM-Schema mehr erstellen, um Adobe Analytics mit P
 
 ### Automatisch zugeordnete Felder
 
-Viele XDM-Felder werden automatisch Analytics-Variablen zugeordnet. Die aktuelle Liste der Zuordnungen finden Sie unter [Analytics-Variablenzuordnung in Adobe Experience Edge](https://experienceleague.adobe.com/de/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Viele XDM-Felder werden automatisch Analytics-Variablen zugeordnet. Die aktuelle Liste der Zuordnungen finden Sie unter [Analytics-Variablenzuordnung in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Dies tritt auf, _(auch wenn Sie kein benutzerdefiniertes Schema definiert haben_. Experience Platform Web SDK erfasst automatisch einige Daten und sendet sie als XDM-Felder an Platform Edge Network. Beispielsweise liest Web SDK die URL der aktuellen Seite und sendet sie als XDM-`web.webPageDetails.URL`. Dieses Feld wird an Adobe Analytics weitergeleitet und die Seiten-URL-Berichte in Adobe Analytics werden automatisch ausgefüllt.
 
@@ -106,8 +106,8 @@ Die einzelnen Abschnitte der Analytics-Produktzeichenfolge werden durch verschie
 >[!NOTE]
 >
 >Seit dem 18. August 2022 hat `productListItems[].SKU` Priorität für die Zuordnung zum Produktnamen in der s.products-Variablen.
->&#x200B;>Der auf `productListItems[].name` festgelegte Wert wird nur dann dem Produktnamen zugeordnet, wenn `productListItems[].SKU` nicht vorhanden ist. Andernfalls ist sie nicht zugeordnet und in Kontextdaten verfügbar.
->&#x200B;>Legen Sie keine leere Zeichenfolge oder Null auf `productListItems[].SKU` fest. Dies hat den unerwünschten Effekt der Zuordnung zum Produktnamen in der s.products-Variablen.
+>>Der auf `productListItems[].name` festgelegte Wert wird nur dann dem Produktnamen zugeordnet, wenn `productListItems[].SKU` nicht vorhanden ist. Andernfalls ist sie nicht zugeordnet und in Kontextdaten verfügbar.
+>>Legen Sie keine leere Zeichenfolge oder Null auf `productListItems[].SKU` fest. Dies hat den unerwünschten Effekt der Zuordnung zum Produktnamen in der s.products-Variablen.
 
 
 ### Festlegen von Variablen im Datenobjekt
@@ -366,6 +366,10 @@ Navigieren Sie zu einer Produktseite wie der [Didi Sport Watch-Produktseite](htt
 1. Suchen Sie nach `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. Scrollen Sie nach unten, um die Variable `[!UICONTROL gn]` anzuzeigen. Dies ist die dynamische Analytics-Syntax für die `[!UICONTROL s.pageName]`. Erfasst den Seitennamen aus der Datenschicht.
 
+   >[!NOTE]
+   >
+   > Der `gn` kann `test` sein, wenn Sie das `xdm` in der vorherigen Übung mit dem `data` überschrieben haben.
+
    ![Analytics-Produktzeichenfolge](assets/analytics-debugger-edge-page-view.png)
 
 ### Validierung von Produktzeichenfolgen und E-Commerce-Ereignissen
@@ -389,7 +393,7 @@ Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weit
 
    >[!TIP]
    >
-   > Die `ecommerce - pdp library loaded - AA (order 20)`-Regel überschreibt den Wert der `eventType`, die durch die `all pages global content variables - library loaded - AA (order 1)`-Regel festgelegt wird, da sie später in der Sequenz auf Trigger festgelegt wird
+   > Die `ecommerce - library loaded - set product details variables - 20`-Regel überschreibt den Wert der `eventType`, die durch die `all pages - library loaded - set global variables - 1`-Regel festgelegt wird, da sie später in der Sequenz auf Trigger festgelegt wird
 
 
    ![Analytics-Produktansicht](assets/analytics-debugger-prodView.png)
@@ -449,8 +453,14 @@ Scrollen Sie dann nach unten zu **[!UICONTROL mcvisId]**, um zu überprüfen, ob
 ### Validierung der Inhaltsseitenansichten
 
 Überprüfen Sie mithilfe desselben Beacons, ob die Inhaltsseitenansichten der richtigen Adobe Analytics-Variablen zugeordnet sind.
-Scrollen Sie nach unten zu **[!UICONTROL pageName]**, um zu überprüfen, ob die `Page Name` korrekt erfasst wird
-![Validierung des Seitennamens mit Assurance](assets/assurance-hitdebugger-content-pagename.png)
+Scrollen Sie nach unten **[!UICONTROL pageName]**, um zu überprüfen, ob die `Page Name` korrekt erfasst wird:
+
+
+    >[!NOTE]
+    >
+    > Der Wert „pageName“ könnte „test“ sein, wenn Sie in der vorherigen Übung das Objekt „xdm“ mit dem Objekt „data“ überschrieben haben.
+    
+    ![Validierung des Seitennamens mit Assurance](assets/assurance-hitdebugger-content-pagename.png)
 
 ### Validierung von Produktzeichenfolgen und E-Commerce-Ereignissen
 
@@ -481,4 +491,4 @@ Herzlichen Glückwunsch! Du hast es geschafft! Dies ist das Ende der Lektion. Je
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
