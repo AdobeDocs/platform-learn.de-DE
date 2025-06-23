@@ -72,7 +72,7 @@ Ein Datensatz ist jetzt so konfiguriert, dass er mit der Erfassung von Daten aus
 
 ## Konfigurieren des Datenstroms
 
-Jetzt können Sie Ihren [!UICONTROL Datenstrom) so konfigurieren] dass Daten an [!UICONTROL Adobe Experience Platform gesendet ]. Der Datenstrom ist die Verknüpfung zwischen Ihrer Tag-Eigenschaft, der Platform Edge Network und dem Experience Platform-Datensatz.
+Jetzt können Sie Ihren [!UICONTROL Datenstrom) so konfigurieren] dass Daten an [!UICONTROL Adobe Experience Platform gesendet &#x200B;]. Der Datenstrom ist die Verknüpfung zwischen Ihrer Tag-Eigenschaft, der Platform Edge Network und dem Experience Platform-Datensatz.
 
 1. Öffnen Sie die [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"}.
 1. Wählen **[!UICONTROL Datenströme]** in der linken Navigationsleiste aus
@@ -126,7 +126,7 @@ Jetzt sollten die Daten im `Luma Web Event Data` Datensatz ausgefüllt und für 
 
 Um zu bestätigen, dass die Daten im Data Lake von Platform gelandet sind, besteht eine schnelle Option darin, die Funktion **[!UICONTROL Datensatz in der Vorschau anzeigen]** zu verwenden. Web SDK-Daten werden in Mikro-Batches mit dem Data Lake verknüpft und in der Platform-Oberfläche regelmäßig aktualisiert. Es kann 10-15 Minuten dauern, bis die von Ihnen generierten Daten angezeigt werden.
 
-1. Wählen Sie in der ](https://experience.adobe.com/platform/) von [Experience Platform **[!UICONTROL im linken]** die Option Daten-Management > Datensätze aus, um das Dashboard **[!UICONTROL Datensätze]** zu öffnen.
+1. Wählen Sie in der [&#128279;](https://experience.adobe.com/platform/) von Experience Platform **[!UICONTROL im linken]** die Option Daten-Management > Datensätze aus, um das Dashboard **[!UICONTROL Datensätze]** zu öffnen.
 
    Das Dashboard listet alle verfügbaren Datensätze für Ihre Organisation auf. Zu jedem aufgelisteten Datensatz werden Details angezeigt, einschließlich seines Namens, des Schemas, dem der Datensatz entspricht, und des Status des letzten Erfassungslaufs.
 
@@ -147,7 +147,7 @@ Um zu bestätigen, dass die Daten im Data Lake von Platform gelandet sind, beste
 
 ### Daten abfragen
 
-1. Wählen Sie in der ](https://experience.adobe.com/platform/) von [Experience Platform **[!UICONTROL im linken Navigationsbereich die Option Daten-Management >]** Abfragen) aus, um den Bildschirm **[!UICONTROL Abfragen]** zu öffnen.
+1. Wählen Sie in der [&#128279;](https://experience.adobe.com/platform/) von Experience Platform **[!UICONTROL im linken Navigationsbereich die Option Daten-Management >]** Abfragen) aus, um den Bildschirm **[!UICONTROL Abfragen]** zu öffnen.
 1. Wählen Sie **[!UICONTROL Abfrage erstellen]**
 1. Führen Sie zunächst eine Abfrage aus, um alle Namen der Tabellen im Data Lake anzuzeigen. Geben Sie `SHOW TABLES` im Abfrage-Editor ein und klicken Sie auf das Wiedergabesymbol, um die Abfrage auszuführen.
 1. Beachten Sie in den Ergebnissen, dass der Tabellenname in etwa `luma_web_event_data` lautet
@@ -228,7 +228,7 @@ Sie können in der Platform-Benutzeroberfläche (oder der Journey Optimizer-Benu
 
 Zunächst müssen Sie mehr Beispieldaten generieren. Wiederholen Sie die Schritte oben in dieser Lektion, um sich bei der Luma-Website anzumelden, wenn sie Ihrer Tag-Eigenschaft zugeordnet ist. Überprüfen Sie die Platform Web SDK-Anfrage, um sicherzustellen, dass Daten mit der `lumaCRMId` gesendet werden.
 
-1. Experience Platform Wählen Sie in der ](https://experience.adobe.com/platform/) von [im linken Navigationsbereich **[!UICONTROL Kunde]** > **[!UICONTROL Profile]** aus
+1. Experience Platform Wählen Sie in der [&#128279;](https://experience.adobe.com/platform/) von im linken Navigationsbereich **[!UICONTROL Kunde]** > **[!UICONTROL Profile]** aus
 
 1. Verwenden Sie `lumaCRMId` als **[!UICONTROL Identity]** Namespace
 1. Kopieren Sie den Wert der `lumaCRMId`, die bei dem von Ihnen im Experience Platform Debugger geprüften Aufruf übergeben wurde, und fügen Sie ihn ein, in diesem Fall `b642b4217b34b1e8d3bd915fc65c4452`.
@@ -269,7 +269,7 @@ Erstellen Sie das Treueschema:
 1. Benennen des `Luma Loyalty Schema`
 1. Fügen Sie die [!UICONTROL Treuedetails] hinzu
 1. Fügen Sie die [!UICONTROL Demografische Details] hinzu
-1. Wählen Sie das Feld `Person ID` aus und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre ] mithilfe des `Luma CRM Id`[!UICONTROL Identity-Namespace].
+1. Wählen Sie das Feld `Person ID` aus und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre &#x200B;] mithilfe des `Luma CRM Id`[!UICONTROL Identity-Namespace].
 1. Aktivieren Sie das Schema für [!UICONTROL Profil]. Wenn Sie den Umschalter Profil nicht finden können, klicken Sie oben links auf den Schemanamen.
 1. Schema speichern
 

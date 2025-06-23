@@ -106,8 +106,8 @@ Die einzelnen Abschnitte der Analytics-Produktzeichenfolge werden durch verschie
 >[!NOTE]
 >
 >Seit dem 18. August 2022 hat `productListItems[].SKU` Priorität für die Zuordnung zum Produktnamen in der s.products-Variablen.
->>Der auf `productListItems[].name` festgelegte Wert wird nur dann dem Produktnamen zugeordnet, wenn `productListItems[].SKU` nicht vorhanden ist. Andernfalls ist sie nicht zugeordnet und in Kontextdaten verfügbar.
->>Legen Sie keine leere Zeichenfolge oder Null auf `productListItems[].SKU` fest. Dies hat den unerwünschten Effekt der Zuordnung zum Produktnamen in der s.products-Variablen.
+>&#x200B;>Der auf `productListItems[].name` festgelegte Wert wird nur dann dem Produktnamen zugeordnet, wenn `productListItems[].SKU` nicht vorhanden ist. Andernfalls ist sie nicht zugeordnet und in Kontextdaten verfügbar.
+>&#x200B;>Legen Sie keine leere Zeichenfolge oder Null auf `productListItems[].SKU` fest. Dies hat den unerwünschten Effekt der Zuordnung zum Produktnamen in der s.products-Variablen.
 
 
 ### Festlegen von Variablen im Datenobjekt
