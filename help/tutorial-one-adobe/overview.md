@@ -3,9 +3,9 @@ title: Überblick - Umfassendes technisches Tutorial - One Adobe
 description: Umfassendes technisches Tutorial - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
+source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1069'
 ht-degree: 2%
 
 ---
@@ -137,9 +137,9 @@ In diesem Modul werden Sie Adobe Journey Optimizer verwenden, um eine Trigger-ba
 
 In diesem Modul verwenden Sie Adobe Journey Optimizer, um das Kundenverhalten sowohl online als auch offline zu überwachen und auf verschiedene Kanäle intelligent, kontextbezogen und in Echtzeit zu reagieren.
 
-[3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
+[3.3 Adobe Journey Optimizer: Push- und In-App-Nachrichten](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
 
-In diesem Modul verwenden Sie Adobe Journey Optimizer zum Konfigurieren personalisierter Angebote und Ihrer eigenen Angebotsentscheidung.
+In diesem Modul verwenden Sie Adobe Journey Optimizer zum Konfigurieren von Push-Benachrichtigungen und In-App-Nachrichten.
 
 [3.4 Adobe Journey Optimizer: Veranstaltungsbasierte Journey](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
 
@@ -148,6 +148,18 @@ In diesem Modul erfahren Sie alles, was es über Journey Optimizer zu wissen gib
 [3.5 Adobe Journey Optimizer: Übersetzungsdienstleistungen](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
 
 In diesem Modul erfahren Sie, wie Sie in Adobe Journey Optimizer Übersetzungsdienste einrichten und verwenden können, um Ihre Nachrichten für Ihre Kunden zu lokalisieren.
+
+[3.6 Adobe Journey Optimizer: Content-Management](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+
+In diesem Modul erfahren Sie, wie Sie Inhaltskarten und Landingpages in Adobe Journey Optimizer einrichten und verwenden und die Integration zwischen Adobe Journey Optimizer und GenStudio for Performance Marketing vertiefen.
+
+[3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
+
+In diesem Modul erfahren Sie, wie Sie Entscheidungs- und Code-basierte Erlebnisse in Adobe Journey Optimizer einrichten und verwenden.
+
+[3.8 Adobe Journey Optimizer: Kampagnen](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
+
+In diesem Modul erfahren Sie, wie Sie Kampagnen in Adobe Journey Optimizer einrichten und verwenden.
 
 ### &#x200B;5. Reporting und Erkenntnisse
 

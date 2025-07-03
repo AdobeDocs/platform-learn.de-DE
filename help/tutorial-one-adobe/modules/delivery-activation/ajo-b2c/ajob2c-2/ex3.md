@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr -
 kt: 5342
 doc-type: tutorial
 exl-id: 92752e84-3bbe-4d11-b187-bd9fdbbee709
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '416'
 ht-degree: 3%
 
 ---
@@ -54,10 +54,6 @@ Verwenden Sie für **URL** Konfiguration Folgendes:
 
 ![Demo](./images/slackname.png)
 
-Sie müssen die Header-Felder nicht ändern.
-
-![Demo](./images/slackurl.png)
-
 **Authentifizierung** sollte auf &quot;**Authentifizierung“** werden.
 
 ![Demo](./images/slackauth.png)
@@ -84,7 +80,7 @@ Kopieren Sie den unten stehenden Text und fügen Sie ihn in das leere Popup-Fens
 }
 ```
 
-Sie sehen dann Folgendes:
+Sie werden es dann sehen. Klicken Sie auf **Speichern**.
 
 ![Demo](./images/slackmsgpopup1.png)
 
@@ -96,7 +92,7 @@ Ihre benutzerdefinierte Aktion ist jetzt Teil der Liste **Aktionen** .
 
 ![Demo](./images/slackdone.png)
 
-Sie haben Ereignisse, externe Datenquellen und Aktionen definiert. Lassen Sie uns das alles in einer Journey zusammenfassen.
+Sie haben Ereignisse, externe Datenquellen und Aktionen definiert. Als Nächstes kombinieren Sie all das in einer Journey.
 
 ## Nächste Schritte
 

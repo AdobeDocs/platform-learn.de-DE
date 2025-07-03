@@ -4,7 +4,7 @@ description: Erste Schritte - Verwenden des Demosystems neben dem Setup Ihrer La
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Um die in diesem Tutorial gewonnenen Erkenntnisse zu visualisieren und es Ihnen 
 
 Sobald Sie Zugriff auf das Demosystem haben, fahren Sie mit den folgenden Schritten fort.
 
-Navigieren Sie zu [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} und dann zu **Setup**.
+Navigieren Sie zu [https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup){target="_blank"} und dann zu **Setup**.
 
 ![DSN](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ Wählen Sie in **Dropdown** Umgebung Ihre Instanz und Sandbox aus.
 
 ![DSN](./images/dsnh1.png)
 
-Wählen Sie als Nächstes die Voreinstellung **AEP Tutorial User** aus.
+Wählen Sie als Nächstes die Vorgabe **Ein Adobe-Tutorial** aus.
 
 ![DSN](./images/dsnhome.png)
 

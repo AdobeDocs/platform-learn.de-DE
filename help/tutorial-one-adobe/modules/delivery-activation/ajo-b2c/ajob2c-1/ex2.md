@@ -4,9 +4,9 @@ description: Journey Optimizer - Erstellen von Fragmenten
 kt: 5342
 doc-type: tutorial
 exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1052'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ Anschließend wird ein Popup geöffnet, in dem Ihre AEM Assets Media Library ang
 
 >[!NOTE]
 >
->Wenn Sie die Citi Signal-Bilder in Ihrer AEM Assets-Bibliothek nicht sehen, finden Sie sie [hier](./../../../../assets/ajo/CitiSignal-images.zip). Laden Sie sie auf Ihren Desktop herunter, erstellen Sie den Ordner **citi-signal-images** und laden Sie alle Bilder in diesem Ordner hoch.
+>Wenn Sie die CitiSignal-Bilder in Ihrer AEM Assets-Bibliothek nicht sehen, finden Sie sie [hier](./../../../../assets/ajo/CitiSignal-images.zip). Laden Sie sie auf Ihren Desktop herunter, erstellen Sie den Ordner **citi-signal-images** und laden Sie alle Bilder in diesem Ordner hoch.
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -231,8 +231,6 @@ Klicken Sie **Veröffentlichen**, um Ihre Fußzeile zu veröffentlichen, damit s
 Nach einigen Minuten sehen Sie, dass der Status Ihrer Fußzeile auf „Live **geändert**.
 
 ![Journey Optimizer](./images/fragm38.png)
-
-Sie haben jetzt diese Übung beendet.
 
 ## Nächste Schritte
 

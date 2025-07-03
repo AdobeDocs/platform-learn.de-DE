@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - Externe Wetter-API, SMS-Aktion und mehr
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Stellen Sie sicher **dass** Typ“ auf **Unitär** und wählen Sie für die Ausw
 
 ![Demo](./images/evname.png)
 
-Als Nächstes müssen Sie ein Schema auswählen. Alle hier gezeigten Schemata sind Adobe Experience Platform-Schemata.
+Als Nächstes müssen Sie ein Schema auswählen.
 
 ![Demo](./images/evschema.png)
 
@@ -109,7 +109,7 @@ Durch Klicken auf das **Payload anzeigen** wird eine Beispiel-XDM-Payload für d
 
 Notieren Sie sich die `eventID`, da Sie sie zum Testen Ihrer Konfiguration benötigen werden.
 
-In diesem Beispiel ist der `eventID` `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`.
+In diesem Beispiel ist der `eventID` `209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7`.
 
 Sie haben jetzt das Ereignis definiert, durch das die von uns erstellte Journey Trigger wird. Sobald die Journey ausgelöst wird, werden die Geofencing-Felder wie Stadt und alle anderen, die Sie ausgewählt haben (wie Land, Breitengrad und Längengrad) der Journey zur Verfügung gestellt.
 

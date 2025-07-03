@@ -4,9 +4,9 @@ description: Journey Optimizer - Ereignis erstellen
 kt: 5342
 doc-type: tutorial
 exl-id: 2c03cc8d-0106-4fa5-80c6-e25712ca2eab
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Nach Auswahl des Schemas werden Sie eine Reihe von Feldern sehen, die im Abschni
 
 ![ACOP](./images/eventpayload.png)
 
-Es wird ein Popup-Fenster **Felder** angezeigt, in dem Sie einige der Felder auswählen können, die wir zur Personalisierung der E-Mail benötigen.  Wir wählen später unter Verwendung der bereits in Adobe Experience Platform vorhandenen Daten andere Profilattribute aus.
+Es wird ein Popup-Fenster **Felder** angezeigt, in dem Sie einige der Felder auswählen können, die wir zur Personalisierung der E-Mail benötigen.  Sie wählen später unter Verwendung der bereits in Adobe Experience Platform vorhandenen Daten andere Profilattribute aus.
 
 ![ACOP](./images/eventfields.png)
 
@@ -58,7 +58,7 @@ Wählen Sie im `--aepTenantId--.identification.core` das Feld **E-Mail** aus. Kl
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-Sie sollten das dann sehen. Legen Sie den **Namespace** auf **ECID (ECID)** fest. Klicken Sie auf **Speichern**.
+Sie sollten das dann sehen. Stellen Sie sicher, dass **Namespace** auf **ECID (ECID) festgelegt ist**. Klicken Sie auf **Speichern**.
 
 ![ACOP](./images/eventsave.png)
 
@@ -77,17 +77,15 @@ Im Folgenden sehen Sie ein Beispiel für die erwartete Payload.
 Ihr Ereignis verfügt über eine eindeutige Orchestrierungs-eventID, die Sie finden können, indem Sie in dieser Payload nach unten scrollen, bis Sie `_experience.campaign.orchestration.eventID` sehen.
 
 Die Ereignis-ID ist die, die an Adobe Experience Platform gesendet werden muss, um die Journey, die Sie als Nächstes erstellen, in einen Trigger zu bringen. Merken Sie sich diese eventID, da Sie sie in einer der nächsten Übungen benötigen werden.
-`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+`"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`
 
 Klicken Sie auf **OK**.
 
 ![ACOP](./images/payloadeventID.png)
 
-Klicken Sie **Abbrechen**.
+Klicken Sie **Abbrechen**, um dieses Fenster zu schließen.
 
 ![ACOP](./images/payloadeventID1.png)
-
-Sie haben jetzt diese Übung beendet.
 
 ## Nächste Schritte
 

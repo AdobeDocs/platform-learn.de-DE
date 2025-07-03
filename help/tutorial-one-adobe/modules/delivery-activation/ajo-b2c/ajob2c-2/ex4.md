@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer - Journey und Nachricht konfigurieren
 kt: 5342
 doc-type: tutorial
 exl-id: 687eb818-2d50-4293-88e6-7e5945b91db6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 5%
+source-wordcount: '1484'
+ht-degree: 4%
 
 ---
 
@@ -43,7 +43,7 @@ Verwenden Sie `--aepUserLdap-- - Geofence Entry Journey` als Namen für die Jour
 
 ![Demo](./images/joname.png)
 
-Sehen Sie sich auf der linken Seite Ihres Bildschirms &quot;**&quot;**. In dieser Liste sollte das zuvor erstellte Ereignis angezeigt werden. Wählen Sie es aus und ziehen Sie es dann per Drag-and-Drop auf die Journey-Arbeitsfläche. Ihr Journey sieht dann wie folgt aus: Klicken Sie auf **Speichern**.
+Sehen Sie sich auf der linken Seite Ihres Bildschirms &quot;**&quot;**. Ihr zuvor erstelltes Ereignis sollte in dieser Liste mit dem Namen `--aepUserLdap--GeofenceEntry` angezeigt werden. Wählen Sie es aus und ziehen Sie es dann per Drag-and-Drop auf die Journey-Arbeitsfläche. Ihr Journey sieht dann wie folgt aus:
 
 ![Demo](./images/joevents.png)
 
@@ -201,7 +201,7 @@ Gehen Sie im linken Menü zurück zu **Aktionen** wählen Sie die `--aepUserLdap
 
 ![Demo](./images/joa18.png)
 
-Wechseln Sie **Aktionsparameter** und klicken Sie auf das Symbol **Bearbeiten** für die `textToSlack`.
+Scrollen Sie nach unten **Anforderungsparameter** und klicken Sie auf das Symbol **Bearbeiten** für die `textToSlack`.
 
 ![Demo](./images/joa19.png)
 
@@ -215,7 +215,7 @@ Wählen Sie den folgenden Code aus, kopieren Sie ihn und fügen Sie ihn in den *
 
 ![Demo](./images/joa21.png)
 
-Ihre abgeschlossene Aktion wird angezeigt. Klicken Sie auf **Speichern**.
+Ihre abgeschlossene Aktion wird angezeigt. Scrollen Sie nach oben und klicken Sie auf **Speichern**.
 
 ![Demo](./images/joa22.png)
 
@@ -233,7 +233,7 @@ Gehen Sie im linken Menü zurück zu **Aktionen** wählen Sie die `--aepUserLdap
 
 ![Demo](./images/jop18.png)
 
-Wechseln Sie **Aktionsparameter** und klicken Sie auf das Symbol **Bearbeiten** für die `textToSlack`.
+Scrollen Sie nach unten **Anforderungsparameter** und klicken Sie auf das Symbol **Bearbeiten** für die `textToSlack`.
 
 ![Demo](./images/joa19z.png)
 
@@ -247,7 +247,7 @@ Wählen Sie den folgenden Code aus, kopieren Sie ihn und fügen Sie ihn in den *
 
 ![Demo](./images/jop21.png)
 
-Ihre abgeschlossene Aktion wird angezeigt. Klicken Sie auf **OK**.
+Ihre abgeschlossene Aktion wird angezeigt. Scrollen Sie nach oben und klicken Sie auf **Speichern**.
 
 ![Demo](./images/jop22.png)
 
@@ -265,7 +265,7 @@ Gehen Sie im linken Menü zurück zu **Aktionen** wählen Sie die `--aepUserLdap
 
 ![Demo](./images/jod18.png)
 
-Wechseln Sie **Aktionsparameter** und klicken Sie auf das Symbol **Bearbeiten** für die `textToSlack`.
+Scrollen Sie nach unten **Anforderungsparameter** und klicken Sie auf das Symbol **Bearbeiten** für die `textToSlack`.
 
 ![Demo](./images/joa19zzz.png)
 

@@ -4,14 +4,14 @@ description: Journey Optimizer E-Mail-Nachricht erstellen
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1283'
 ht-degree: 5%
 
 ---
 
-# 3.1.3 Erstellen von Journey, Fragmenten und Nachrichten
+# 3.1.3 Journey und E-Mail erstellen
 
 In dieser Übung konfigurieren Sie die Journey und die Nachricht, die ausgelöst werden muss, wenn jemand ein Konto auf der Demo-Website erstellt.
 
@@ -33,7 +33,7 @@ Daraufhin wird ein leerer Journey-Bildschirm angezeigt.
 
 ![ACOP](./images/journeyempty.png)
 
-In der vorherigen Übung haben Sie ein neues &quot;**&quot;**. Sie haben ihn wie `--aepUserLdap--AccountCreationEvent` benannt und `ldap` durch Ihr LDAP ersetzt. Dies war das Ergebnis der Erstellung des Ereignisses:
+In der vorherigen Übung haben Sie ein neues &quot;**&quot;**. Du hast es so benannt wie `--aepUserLdap--AccountCreationEvent`. Dies war das Ergebnis der Erstellung des Ereignisses:
 
 ![ACOP](./images/eventdone.png)
 
@@ -57,7 +57,7 @@ Als dritten Schritt auf der Journey müssen Sie eine „E-**&quot;-** hinzufüge
 
 ![ACOP](./images/journeyactions.png)
 
-Legen Sie die **Kategorie** auf **Marketing** fest und wählen Sie eine E-Mail-Konfiguration aus, mit der Sie E-Mails senden können. In diesem Fall ist die auszuwählende E-Mail-Konfiguration **E**. Stellen Sie sicher, dass die Kontrollkästchen für **Klicks auf E-**) und **E-Mail-Öffnungen** beide aktiviert sind.
+Legen Sie die **Kategorie** auf **Marketing** fest und wählen Sie eine E-Mail-Konfiguration aus, mit der Sie E-Mails senden können. In diesem Fall ist die auszuwählende E-Mail-Konfiguration **Email-TI**.
 
 ![ACOP](./images/journeyactions1.png)
 

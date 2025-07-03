@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer - Externe Datenquellen und benutzerdefinier
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 0%
+source-wordcount: '638'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Dies ist die Seite mit den Eigenschaften der Adobe Experience Platform-Datenerfa
 
 ![Eigenschaftenseite](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Erste Schritte** hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld **[!UICONTROL nach `--aepUserLdap--`]**. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
+In **Erste Schritte** hat Demosystem Next Tags-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap--` nach ****. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
 
 ![Suchfeld](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -53,7 +53,7 @@ Sie sehen dann Folgendes:
 
 Navigieren Sie zur `_experience.campaign.orchestration.eventID`. Entfernen Sie den aktuellen Wert und fügen Sie Ihre eventID dort ein.
 
-Zur Erinnerung: Die Ereignis-ID finden Sie in Adobe Journey Optimizer unter **Konfigurationen > Ereignisse** und Sie finden die Ereignis-ID in der Beispiel-Payload Ihres Ereignisses, die wie folgt aussieht: `"eventID": "4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e"`.
+Zur Erinnerung: Die Ereignis-ID finden Sie in Adobe Journey Optimizer unter **Konfigurationen > Ereignisse** und Sie finden die Ereignis-ID in der Beispiel-Payload Ihres Ereignisses, die wie folgt aussieht: `"eventID": "209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7"`.
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -103,11 +103,17 @@ Klicken Sie auf das Adobe-Logo oben links im Bildschirm, um den Profil-Viewer zu
 
 ![Demo](./images/pv2.png)
 
-Klicken Sie im Profil-Viewer-Fenster auf **DIENSTPROGRAMME**. Geben Sie `geofenceevent` ein und klicken Sie auf **Senden**.
+Klicken Sie im Profil-Viewer-Fenster auf **DIENSTPROGRAMME** und wählen Sie dann **Direktaufruf** aus.
 
 >[!NOTE]
 >
 >Falls Sie im Profil-Viewer-Bereich nicht die Möglichkeit haben, ein Direktaufrufereignis zu senden, können Sie eines manuell senden, indem Sie die Entwickleransicht Ihres Browsers öffnen und zu **Konsole** wechseln und dann diesen Befehl einfügen und senden: `_satellite.track('geofenceevent')`.
+
+![Demo](./images/pv3.png)
+
+Geben Sie `geofenceevent` ein und klicken Sie auf **Senden**.
+
+![Demo](./images/pv4.png)
 
 Ein paar Sekunden später wird die Nachricht von Adobe Journey Optimizer im Slack-Kanal angezeigt.
 

@@ -1,341 +1,156 @@
 ---
-title: Offer Decisioning - Konfigurieren von Angeboten und Entscheidungs-ID
-description: Offer Decisioning - Konfigurieren von Angeboten und Entscheidungs-ID
+title: Konfigurieren einer Journey mit Push-Nachrichten
+description: Konfigurieren einer Journey mit Push-Nachrichten
 kt: 5342
 doc-type: tutorial
-exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 4%
+source-wordcount: '622'
+ht-degree: 3%
 
 ---
 
-# 3.3.2 Angebote und Entscheidungen konfigurieren
+# 3.3.2 Konfigurieren eines Journey mit Push-Nachrichten
 
-## 3.3.2.1 Personalisierte Angebote erstellen
 
-In dieser Übung erstellen Sie vier **personalisierte Angebote**. Im Folgenden finden Sie die Details, die bei der Erstellung dieser Angebote zu berücksichtigen sind:
+## 3.4.4.6 Neues Ereignis erstellen
 
-| Name | Datumsbereich | Bild-Link für E-Mail | Bildlink für Web | Text | Priorität | Eignung | Sprache | Begrenzungsfrequenz | Bildname |
-|-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|:-------:|:-------:|
-| `--aepUserLdap-- - AirPods Max` | Heute - 1 Monat später | https://bit.ly/4a9RJ5d | Aus Assets Library auswählen | `{{ profile.person.name.firstName }}, 10% discount on AirPods Max` | 25 | Alle - Weibliche Kunden | Englisch (USA) | 3 | Apple AirPods Max - Weiblich.jpg |
-| `--aepUserLdap-- - Galaxy S24` | Heute - 1 Monat später | https://bit.ly/3W8yuDv | Aus Assets Library auswählen | `{{ profile.person.name.firstName }}, 5% discount on Galaxy S24` | 15 | Alle - Weibliche Kunden | Englisch (USA) | 3 | Galaxy S24 - Weiblich.jpg |
-| `--aepUserLdap-- - Apple Watch` | Heute - 1 Monat später | https://bit.ly/4fGwfxX | https://bit.ly/4fGwfxX | `{{ profile.person.name.firstName }}, 10% discount on Apple Watch` | 25 | Alle - Männliche Kunden | Englisch (USA) | 3 | Apple Watch - Male.jpg |
-| `--aepUserLdap-- - Galaxy Watch 7` | Heute - 1 Monat später | https://bit.ly/4gTrkeo | Aus Assets Library auswählen | `{{ profile.person.name.firstName }}, 5% discount on Galaxy Watch 7` | 15 | Alle - Männliche Kunden | Englisch (USA) | 3 | Galaxy Watch7 - Männlich.jpg |
+Zu **Journey Optimizer**. Wechseln Sie im linken Menü zu **Konfigurationen** und klicken Sie unter **Ereignisse** auf **Verwalten**.
 
-{style="table-layout:auto"}
+![ACOP](./images/acopmenu.png)
 
-Melden Sie sich bei Adobe Journey Optimizer an, indem Sie zu [Adobe Experience Cloud wechseln](https://experience.adobe.com). Auf **Journey Optimizer**.
+Auf dem **Ereignisse** wird eine ähnliche Ansicht angezeigt. Klicken Sie **Ereignis erstellen**.
 
-![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP](./images/add.png)
 
-Sie werden zur Ansicht **Startseite** in Journey Optimizer weitergeleitet. Stellen Sie zunächst sicher, dass Sie die richtige Sandbox verwenden. Die zu verwendende Sandbox heißt `--aepSandboxName--`. Sie befinden sich dann in der **Startseite**-Ansicht Ihres Sandbox-`--aepSandboxName--`.
+Anschließend wird eine leere Ereigniskonfiguration angezeigt.
+Geben Sie Ihrem Ereignis zunächst einen Namen wie den folgenden: `--aepUserLdap--StoreEntryEvent` und legen Sie die Beschreibung auf `Store Entry Event` fest.
+Als Nächstes sehen Sie **Auswahl** Ereignistyp). Wählen Sie **Unitär** aus.
+Als Nächstes sehen Sie die Auswahl **Ereignis-ID-**). Wählen Sie **Systemgeneriert** aus.
 
-![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP](./images/eventname.png)
 
-Klicken Sie im linken Menü auf **Angebote** und gehen Sie dann zu **Angebote**. Klicken Sie auf **+ Angebot erstellen**.
+Als Nächstes sehen Sie die Schemaauswahl. Für diese Übung wurde ein Schema vorbereitet. Verwenden Sie das Schema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
-![Entscheidungsregel](./images/offers1.png)
+Nach Auswahl des Schemas werden Sie eine Reihe von Feldern sehen, die im Abschnitt **Payload** ausgewählt sind. Ihr Ereignis ist jetzt vollständig konfiguriert.
 
-Dann sehen Sie dieses Popup. Wählen Sie **Personalisiertes Angebot** aus und klicken Sie auf **Weiter**.
+Klicken Sie auf **Speichern**.
 
-![Entscheidungsregel](./images/offers2.png)
+![ACOP](./images/eventschema.png)
 
-Sie befinden sich jetzt in der Ansicht **Details**.
+Ihr Ereignis ist jetzt konfiguriert und gespeichert. Klicken Sie erneut auf Ihr Ereignis, um den Bildschirm **Ereignis bearbeiten** erneut zu öffnen.
 
-![Entscheidungsregel](./images/offers3.png)
+![ACOP](./images/eventdone.png)
 
-In diesem Fall müssen Sie den `--aepUserLdap-- - AirPods Max` konfigurieren. Füllen Sie die Felder anhand der Informationen in der obigen Tabelle aus. In diesem Beispiel lautet der Name des personalisierten Angebots **vangeluw - AirPods Max**. Legen Sie außerdem **Startdatum und -uhrzeit** auf „Heute“ und **Enddatum und -uhrzeit** auf ein Datum in einem Monat fest.
+Bewegen Sie den Mauszeiger über **Feld** Payload“ und klicken Sie auf das Symbol **Payload anzeigen**.
 
-Sobald das erledigt ist, sollten Sie es haben. Klicken Sie auf **Weiter**.
+![ACOP](./images/hover.png)
 
-![Entscheidungsregel](./images/offers4.png)
+Im Folgenden sehen Sie ein Beispiel für die erwartete Payload.
 
-Sie sehen dann Folgendes:
+Ihr Ereignis verfügt über eine eindeutige Orchestrierungs-eventID, die Sie finden können, indem Sie in dieser Payload nach unten scrollen, bis Sie `_experience.campaign.orchestration.eventID` sehen.
 
-![Entscheidungsregel](./images/constraints.png)
+![ACOP](./images/payloadeventID.png)
 
-Wählen Sie **Nach definierter Entscheidungsregel** und klicken Sie auf das Symbol **+** , um die Regel **Alle - Weibliche Kunden“**.
+Die Ereignis-ID muss an Adobe Experience Platform gesendet werden, um die Journey, die Sie im nächsten Schritt erstellen, zum Trigger zu bringen. Notieren Sie sich diese eventID, da Sie sie im nächsten Schritt benötigen werden.
+`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
 
-Füllen Sie die **Priorität** wie in der obigen Tabelle angegeben aus. Klicken Sie anschließend auf **+ Begrenzung erstellen** um festzulegen, wie oft dieses Angebot einer Kundin oder einem Kunden angezeigt werden kann.
+Klicken Sie **OK** gefolgt von **Abbrechen**.
 
-![Entscheidungsregel](./images/constraints1.png)
+## 3.4.4.7 Erstellen einer Journey
 
-Wählen Sie für die Begrenzung Folgendes aus:
+Wechseln Sie im Menü zu **Journey** und klicken Sie auf **Journey erstellen**.
 
-- **Begrenzungsereignis auswählen**: **Entscheidungsereignis**
-- **Begrenzungstyp**: **Pro Profil (Begrenzung für jedes Profil anwenden)**
-- **Anzahl der Begrenzungsereignisse**: **3**
-- **Begrenzungshäufigkeit zurücksetzen**: **Täglich**
-- **Jeden**: **1 Tag**
+![DSN](./images/sjourney1.png)
 
-Dadurch wird sichergestellt, dass dieses Angebot nicht öfter als dreimal pro Tag und Kunde angezeigt wird.
+Sie werden es dann sehen. Geben Sie Ihrem Journey einen Namen. Verwenden Sie `--aepUserLdap-- - Store Entry journey`. Klicken Sie auf **Speichern**.
 
-Klicken Sie auf **Erstellen**.
+![DSN](./images/sjourney3.png)
 
-![Entscheidungsregel](./images/constraints2.png)
+Zunächst müssen Sie Ihr Ereignis als Ausgangspunkt Ihres Journey hinzufügen. Suchen Sie nach Ihrer `--aepUserLdap--StoreEntryEvent` und ziehen Sie sie per Drag-and-Drop auf die Arbeitsfläche. Klicken Sie auf **Speichern**.
 
-Dann bist du wieder hier. Klicken Sie auf **Weiter**.
+![DSN](./images/sjourney4.png)
 
-![Entscheidungsregel](./images/constraints3.png)
+Suchen Sie als Nächstes unter **Aktionen** nach der **Push**-Aktion. Ziehen Sie die Aktion **Push** per Drag-and-Drop auf die Arbeitsfläche.
 
-Jetzt müssen Sie (**)**. Darstellungen sind eine Kombination aus einer **Platzierung** und einem echten Asset.
+Legen Sie die **Kategorie** auf **Marketing** fest und wählen Sie eine Push-Oberfläche aus, mit der Sie Push-Benachrichtigungen senden können. In diesem Fall ist die auszuwählende E-Mail-Oberfläche **Push-iOS-Android**.
 
-Wählen Sie für **Darstellung 1** Folgendes aus:
+>[!NOTE]
+>
+>Es muss ein Kanal in Journey Optimizer vorhanden sein, der die **App-Oberfläche** wie zuvor beschrieben verwendet.
 
-- Kanal: Web
-- Platzierung: Web - Bild
-- Inhalt: URL
-- Öffentlicher Speicherort: Kopieren Sie die URL aus der Spalte **Bildlink für Web** in der obigen Tabelle
+![ACOP](./images/journeyactions1push.png)
 
-![Entscheidungsregel](./images/addcontent1.png)
+Der nächste Schritt besteht darin, Ihre Nachricht zu erstellen. Klicken Sie dazu auf **Inhalt bearbeiten**.
 
-Alternativ können Sie **Asset-Bibliothek** für den Inhalt auswählen und dann auf **Durchsuchen** klicken.
+![ACOP](./images/journeyactions2push.png)
 
-![Entscheidungsregel](./images/addcontent2.png)
+Sie werden es dann sehen. Klicken Sie auf **Personalisierung** für das Feld **Titel**.
 
-Anschließend wird ein Popup der Assets-Bibliothek angezeigt. Wechseln Sie zum Ordner **enable-assets** und wählen Sie die Bilddatei **Apple AirPods Max - Female.jpg** aus. Klicken Sie dann auf **Auswählen**.
+![Push-Benachrichtigung](./images/bp5.png)
 
-![Entscheidungsregel](./images/addcontent3.png)
+Sie werden es dann sehen. Sie können jetzt jedes Profilattribut direkt aus dem Echtzeit-Kundenprofil auswählen.
 
-Sie werden es dann sehen. Klicken Sie auf **+ Darstellung**.
+Suchen Sie nach dem Feld **Vorname** und klicken Sie dann auf das Symbol **+** neben dem Feld **Vorname**. Anschließend wird das Personalisierungs-Token für Vorname hinzugefügt: **{{profile.person.name.firstName}}**.
 
-![Entscheidungsregel](./images/addcontentrep20.png)
+![Push-Benachrichtigung](./images/bp9.png)
 
-Wählen Sie für **Darstellung**:
+Als Nächstes fügen Sie den Text **hinzu, willkommen in unserem Shop!** hinter **{{profile.person.name.firstName}}**.
 
-- Kanal: E-Mail
-- Platzierung: E-Mail - Bild
-- Inhalt: URL
-- Öffentlicher Speicherort: Wählen Sie **Asset-Bibliothek** aus. Klicken Sie auf **Durchsuchen**
+Klicken Sie auf **Speichern**.
 
-![Entscheidungsregel](./images/addcontentrep21.png)
+![Push-Benachrichtigung](./images/bp10.png)
 
-Anschließend wird ein Popup der Assets-Bibliothek angezeigt. Wechseln Sie zum Ordner **enable-assets** und wählen Sie die Bilddatei **Apple AirPods Max - Female.jpg** aus. Klicken Sie dann auf **Auswählen**.
+Jetzt hast du das. Klicken Sie auf **Personalisierung** für das Feld **Hauptteil**.
 
-![Entscheidungsregel](./images/addcontent3b.png)
+![Push-Benachrichtigung](./images/bp11.png)
 
-Sie werden es dann sehen. Klicken Sie anschließend auf **+ Darstellung hinzufügen**.
+Geben Sie diesen Text ein **Klicken Sie hier, um einen Rabatt von 10 % zu erhalten, wenn Sie heute kaufen!** und klicken Sie auf **Speichern**.
 
-![Entscheidungsregel](./images/addcontentrep20b.png)
+![Push-Benachrichtigung](./images/bp12.png)
 
-Wählen Sie **Darstellung 3** Folgendes aus:
+Dann hast du das hier. Klicken Sie auf den Pfeil oben links, um zu Ihrem Journey zurückzukehren.
 
-- Kanal: Nicht digital
-- Platzierung: Nicht digital - Text
+![Journey Optimizer](./images/bp12a.png)
 
-Als Nächstes müssen Sie Inhalte hinzufügen. In diesem Fall bedeutet dies, dass der Text hinzugefügt wird, der als Aktionsaufruf verwendet werden soll.
+Klicken Sie **Speichern**, um die Push-Aktion zu schließen.
 
-Wählen Sie **Benutzerdefiniert** und klicken Sie auf **Inhalt hinzufügen**.
+![DSN](./images/sjourney8.png)
 
-![Entscheidungsregel](./images/addcontentrep31.png)
+Klicken Sie auf **Veröffentlichen**.
 
-Dann sehen Sie dieses Popup.
+![DSN](./images/sjourney10.png)
 
-![Entscheidungsregel](./images/addcontent3text.png)
+Klicken **erneut auf** Veröffentlichen“.
 
-Schauen Sie sich das **Text** Feld aus der obigen Tabelle an und geben Sie diesen Text hier ein, in diesem Fall: `{{ profile.person.name.firstName }}, 10% discount on AirPods Max`.
+![DSN](./images/sjourney10a.png)
 
-Sie werden auch feststellen, dass Sie ein beliebiges Profilattribut auswählen und es als dynamisches Feld in den Angebotstext aufnehmen können. In diesem Beispiel stellt die `{{ profile.person.name.firstName }}` sicher, dass der Vorname des Kunden, der dieses Angebot erhält, im Angebotstext enthalten ist.
+Ihr Journey ist jetzt veröffentlicht.
 
-Sie werden es dann sehen. Klicken Sie auf **Speichern**.
+![DSN](./images/sjourney11.png)
 
-![Entscheidungsregel](./images/addcontentrep3text.png)
+## 3.4.4.8 Testen von Journey- und Push-Nachrichten
 
-Jetzt hast du das. Klicken Sie auf **Weiter**.
+Rufen Sie in Ihrer DX Demo 2.0-Mobile-App den Bildschirm &quot;**&quot;**. Klicken Sie auf **Schaltfläche** Store-Eintrag“.
 
-![Entscheidungsregel](./images/addcontentrep3textdone.png)
+>[!NOTE]
+>
+>Die **Store Entry**-Schaltfläche wird derzeit implementiert. Sie werden sie noch nicht in der App finden.
 
-Anschließend sehen Sie einen Überblick über Ihr neues **personalisiertes Angebot**. Klicken Sie auf **Fertigstellen**.
+![DSN](./images/demo1b.png)
 
-![Entscheidungsregel](./images/offeroverview.png)
+Stellen Sie sicher, dass Sie die App sofort schließen, nachdem Sie auf **Store-Eintrag**-Symbol geklickt haben, da sonst die Push-Nachricht nicht angezeigt wird.
 
-Klicken Sie **Speichern und genehmigen**.
+Nach einigen Sekunden wird die Meldung angezeigt.
 
-![Entscheidungsregel](./images/saveapprove.png)
+![DSN](./images/demo2.png)
 
-Anschließend wird Ihr neu erstelltes personalisiertes Angebot in der Angebotsübersicht verfügbar:
-
-![Entscheidungsregel](./images/offeroverview1.png)
-
-Sie sollten nun die obigen Schritte wiederholen, um die drei anderen personalisierten Angebote für die Produkte zu erstellen, die Sie in der obigen Tabelle finden.
-
-Danach sollte der Bildschirm **Angebotsübersichten** für **Personalisierte Angebote** alle Ihre Angebote anzeigen.
-
-![Endgültige Angebote](./images/finaloffers.png)
-
-## 3.3.2.2 Fallback-Angebot erstellen
-
-Nachdem Sie vier personalisierte Angebote erstellt haben, sollten Sie jetzt ein **Fallback-Angebot“**.
-
-Stellen Sie sicher, dass Sie sich in der Ansicht **Angebote** befinden. Klicken Sie auf **+ Angebot erstellen**.
-
-![Entscheidungsregel](./images/createoffer.png)
-
-Dann sehen Sie dieses Popup. Wählen Sie **Fallback-Angebot** aus und klicken Sie auf **Weiter**.
-
-![Entscheidungsregel](./images/foffers2.png)
-
-Sie werden es dann sehen. Geben Sie folgenden Namen für Ihr Fallback-Angebot ein: `--aepUserLdap-- - CitiSignal Fallback Offer`. Klicken Sie auf **Weiter**.
-
-![Entscheidungsregel](./images/foffers4.png)
-
-Jetzt müssen Sie (**)**. Darstellungen sind eine Kombination aus einer **Platzierung** und einem echten Asset.
-
-Wählen Sie für **Darstellung 1** Folgendes aus:
-
-- **channel**: **web**
-- **Placement**: **Web - Bild**
-- **Content**: **Asset-Bibliothek**
-
-Klicken Sie **Durchsuchen**, um Ihr Bild auszuwählen.
-
-![Entscheidungsregel](./images/addcontent1fb.png)
-
-Sie sehen dann ein Popup der Assets-Bibliothek, wechseln Sie zum Ordner **citi-signal-images** und wählen Sie die Bilddatei **App-Banner-Ad.jpg** aus. Klicken Sie dann auf **Auswählen**.
-
-![Entscheidungsregel](./images/addcontent3fb.png)
-
-Sie werden es dann sehen. Klicken Sie auf **+ Darstellung hinzufügen**.
-
-![Entscheidungsregel](./images/addcontentrep20fb.png)
-
-Wählen Sie für **Darstellung**:
-
-- **channel**: **email**
-- **Platzierung**: **E-Mail - Bild**
-- **Content**: **Asset-Bibliothek**
-
-Klicken Sie **Durchsuchen**, um Ihr Bild auszuwählen.
-
-![Entscheidungsregel](./images/addcontentrep21fb.png)
-
-Sie sehen dann ein Popup der Assets-Bibliothek, wechseln Sie zum Ordner **citi-signal-images** und wählen Sie die Bilddatei **App-Banner-Ad.jpg** aus. Klicken Sie dann auf **Auswählen**.
-
-![Entscheidungsregel](./images/addcontent3bfb.png)
-
-Sie werden es dann sehen. Klicken Sie auf **+ Darstellung hinzufügen**.
-
-![Entscheidungsregel](./images/addcontentrep20bfb.png)
-
-Wählen Sie **Darstellung 3** Folgendes aus:
-
-- **Kanal**: **Nicht digital**
-- **Platzierung**: **Nicht digital - Text**
-- **content**: **custom**
-
-Klicken Sie **Inhalt hinzufügen**.
-
-![Entscheidungsregel](./images/addcontentrep21text.png)
-
-Dann sehen Sie dieses Popup. Geben Sie den `{{ profile.person.name.firstName }}, download the CitiSignal app now!` ein und klicken Sie auf **Speichern**.
-
-![Entscheidungsregel](./images/faddcontent3text.png)
-
-Sie werden es dann sehen. Klicken Sie auf **Weiter**.
-
-![Entscheidungsregel](./images/faddcontentrep3.png)
-
-Anschließend sehen Sie einen Überblick über Ihr neues **Fallback-Angebot**. Klicken Sie auf **Fertigstellen**.
-
-![Entscheidungsregel](./images/fofferoverview.png)
-
-Klicken Sie abschließend auf **Speichern und genehmigen**.
-
-![Entscheidungsregel](./images/saveapprovefb.png)
-
-Auf dem Bildschirm **Angebotsübersichten** wird nun Folgendes angezeigt:
-
-![Endgültige Angebote](./images/ffinaloffers.png)
-
-## 3.3.2.3 Sammlung erstellen
-
-Eine Sammlung wird verwendet **um eine Untergruppe von Angeboten aus der personalisierten Angebotsliste** herauszufiltern) und diese als Teil einer Entscheidung zu verwenden, um den Entscheidungsprozess zu beschleunigen.
-
-Navigieren Sie zu **Sammlungen**. Klicken Sie auf **+ Sammlung erstellen**.
-
-![Entscheidungsregel](./images/collections.png)
-
-Daraufhin wird dieses Popup angezeigt. Konfigurieren Sie Ihre Sammlung wie folgt. Klicken Sie auf **Weiter**.
-
-- Sammlungsname: Verwenden Sie `--aepUserLdap-- - CitiSignal Collection`
-- Wählen Sie **Statische Sammlung erstellen** aus.
-
-Klicken Sie auf **Weiter**.
-
-![Entscheidungsregel](./images/createcollectionpopup1.png)
-
-Wählen Sie im nächsten Bildschirm die vier **Personalisierten Angebote** aus, die Sie in der vorherigen Übung erstellt haben. Klicken Sie auf **Speichern**.
-
-![Entscheidungsregel](./images/createcollectionpopup2.png)
-
-Sie sehen dies jetzt:
-
-![Entscheidungsregel](./images/colldone.png)
-
-## 3.3.2.4 Entscheidung erstellen
-
-Eine Entscheidung kombiniert Platzierungen, eine Sammlung personalisierter Angebote und ein Fallback-Angebot, das letztendlich von der Offer Decisioning-Engine verwendet wird, um das beste Angebot für ein bestimmtes Profil zu finden, basierend auf den individuellen personalisierten Angebotsmerkmalen wie Priorität, Eignungsbegrenzung und Gesamtbegrenzung / Benutzerobergrenze.
-
-Um Ihre **Entscheidung** zu konfigurieren, navigieren Sie zu **Entscheidungen**. Klicken Sie auf **+ Entscheidung erstellen**.
-
-![Entscheidungsregel](./images/activitydd.png)
-
-Sie werden es dann sehen. Füllen Sie die Felder wie folgt aus. Klicken Sie auf **Weiter**.
-
-- Name: `--aepUserLdap-- - CitiSignal Decision`
-- Startdatum und -uhrzeit: heute
-- Enddatum und -uhrzeit: heute + 1 Monat
-
-![Entscheidungsregel](./images/activity2.png)
-
-Im nächsten Bildschirm müssen Sie Platzierungen zu Entscheidungsumfängen hinzufügen. Sie müssen Entscheidungsumfänge für die Platzierungen (Web **Bild),** E-**Bild** und **Nicht digital - Text** erstellen.
-
-![Entscheidungsregel](./images/addplacements.png)
-
-Erstellen Sie zunächst den Entscheidungsumfang für **Nicht digital - Text**, indem Sie diese Platzierung in der Dropdown-Liste auswählen. Klicken Sie dann auf **Hinzufügen**, um Bewertungskriterien hinzuzufügen.
-
-![Entscheidungsregel](./images/activity3.png)
-
-Wählen Sie Ihre `--aepUserLdap-- - CitiSignal Collection` aus und klicken Sie auf **Hinzufügen**.
-
-![Entscheidungsregel](./images/activity4text.png)
-
-Sie werden es dann sehen. Klicken Sie auf die Schaltfläche **+**, um einen neuen Entscheidungsumfang hinzuzufügen.
-
-![Entscheidungsregel](./images/activity5text.png)
-
-Wählen Sie die Platzierung **Web - Bild** aus und fügen Sie Ihre `--aepUserLdap-- - CitiSignal Collection` unter Auswertungskriterien hinzu. Klicken Sie dann erneut auf die Schaltfläche **+**, um einen neuen Entscheidungsumfang hinzuzufügen.
-
-![Entscheidungsregel](./images/activity6text.png)
-
-Wählen Sie die Platzierung **E-Mail - Bild** aus und fügen Sie Ihre `--aepUserLdap-- - CitiSignal Collection` unter „Auswertungskriterien“ hinzu. Klicken Sie dann auf **Weiter**.
-
-![Entscheidungsregel](./images/activity4.png)
-
-Nun müssen Sie Ihr **Fallback-Angebot** auswählen, das `--aepUserLdap-- - CitiSignal Fallback Offer` heißt. Klicken Sie auf **Weiter**.
-
-![Entscheidungsregel](./images/activity10.png)
-
-Überprüfen Sie Ihre Entscheidung. Klicken Sie auf **Fertigstellen**.
-
-![Entscheidungsregel](./images/activity11.png)
-
-Klicken Sie im Popup auf **Speichern und**.
-
-![Entscheidungsregel](./images/activity12.png)
-
-Und schließlich sehen Sie jetzt Ihre Entscheidung in der Übersicht:
-
-![Entscheidungsregel](./images/activity13.png)
-
-Sie haben Ihre Entscheidung jetzt erfolgreich konfiguriert. Ihre Entscheidung ist jetzt live und kann verwendet werden, um Ihren Kunden optimierte und personalisierte Angebote in Echtzeit bereitzustellen.
+Du hast diese Übung beendet.
 
 ## Nächste Schritte
 
-Wechseln Sie zu [3.3.3 Vorbereiten der Datenerfassungs-Client-Eigenschaft und des Web-SDK-Setups für Offer Decisioning](./ex3.md){target="_blank"}
+Navigieren Sie zu [3.3.3 Konfigurieren einer Kampagne mit In-App-Nachrichten](./ex3.md){target="_blank"}
 
-Zurück zu [Offer Decisioning](offer-decisioning.md){target="_blank"}
+Zurück zu [Adobe Journey Optimizer: Push- und In-App-Nachrichten](ajopushinapp.md){target="_blank"}
 
 Zurück zu [Alle Module](./../../../../overview.md){target="_blank"}
