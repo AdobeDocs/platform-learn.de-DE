@@ -23,7 +23,7 @@ Dies ist die Seite mit den Eigenschaften der Adobe Experience Platform-Datenerfa
 
 ![Eigenschaftenseite](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Erste Schritte** hat Demosystem Next Tags-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap--` nach ****. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
+In **Erste Schritte** hat Demosystem Next Tags-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap--` nach **&#x200B;**. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
 
 ![Suchfeld](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
