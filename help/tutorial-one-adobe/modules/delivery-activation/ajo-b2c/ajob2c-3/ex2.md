@@ -143,7 +143,7 @@ Ihr Journey ist jetzt veröffentlicht.
 
 ## 3.3.2.3 Aktualisieren der Datenerfassungseigenschaft für Mobilgeräte
 
-In **Erste Schritte** hat Demosystem Next Tags-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap--` nach ****. Klicken Sie, um die Eigenschaft **Mobil** zu öffnen.
+In **Erste Schritte** hat Demosystem Next Tags-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap--` nach **&#x200B;**. Klicken Sie, um die Eigenschaft **Mobil** zu öffnen.
 
 ![DSN](./images/pushpoi1.png)
 

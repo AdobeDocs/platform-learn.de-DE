@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Herunterladen der App
 
-Navigieren Sie auf Ihrem Computer zu [0}https://dsn.adobe.com/installund dann zu ](https://dsn.adobe.com/install){target="_blank"}Beta-Version **.** Melden Sie sich mit Ihrer Adobe ID an. Sie sehen dann Folgendes.
+Navigieren Sie auf Ihrem Computer zu [0&rbrace;https://dsn.adobe.com/installund dann zu ](https://dsn.adobe.com/install){target="_blank"}Beta-Version **.** Melden Sie sich mit Ihrer Adobe ID an. Sie sehen dann Folgendes.
 
 ![DSN](./images/mobileapp.png)
 
