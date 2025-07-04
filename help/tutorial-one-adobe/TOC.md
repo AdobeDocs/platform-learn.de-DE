@@ -1,18 +1,18 @@
 ---
-user-guide-title: Umfassendes technisches Tutorial für Adobe-Anwendungen von Creative Cloud bis Experience Cloud
-breadcrumb-title: Umfassendes technisches Tutorial für Adobe-Anwendungen von Creative Cloud bis Experience Cloud
+user-guide-title: Ein technisches Tutorial zu Adobe
+breadcrumb-title: Ein technisches Tutorial zu Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: decd2a5545cf3bb856d893d6af178b1f96ae20ae
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1200'
 ht-degree: 3%
 
 ---
 
 
-# Umfassendes technisches Tutorial - One Adobe {#tutorial-one-adobe}
+# Ein technisches Tutorial zu Adobe {#tutorial-one-adobe}
 
 + [Tutorial-Überblick](/help/tutorial-one-adobe/overview.md)
 + [Inhaltsstatus](/help/tutorial-one-adobe/status.md)

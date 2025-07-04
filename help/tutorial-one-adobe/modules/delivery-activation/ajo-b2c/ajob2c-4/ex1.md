@@ -4,9 +4,9 @@ description: In diesem Abschnitt wird eine Trigger-basierte Journey konfiguriert
 kt: 5342
 doc-type: tutorial
 exl-id: e8cf1274-2a18-4870-b1e3-378e1779fac1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1895'
 ht-degree: 8%
 
 ---
@@ -78,7 +78,7 @@ Im Folgenden sehen Sie ein Beispiel für die erwartete Payload. Ihr Ereignis ver
 ![Journey Optimizer](./images/oc42.png)
 
 Die Ereignis-ID muss an Adobe Journey Optimizer gesendet werden, um die Journey, die Sie im nächsten Schritt erstellen, zum Trigger zu bringen. Notieren Sie sich diese eventID, da Sie sie in einem der nächsten Schritte benötigen werden.
-`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
+`"eventID": "618da2a203c3392e43a538d40ff5deef0bd1e7c64f6b6bfe131d4a38a67193ae"`
 
 Klicken Sie **OK** gefolgt von **Abbrechen**.
 
@@ -102,19 +102,15 @@ Suchen Sie dann unter **Aktionen** nach der Aktion **E-Mail** und fügen Sie sie
 
 ![Journey Optimizer](./images/oc47.png)
 
-Legen Sie die **Kategorie** auf **Marketing** fest und wählen Sie eine E-Mail-Oberfläche aus, mit der Sie E-Mails senden können. In diesem Fall ist die auszuwählende E-Mail-Oberfläche **E-Mail**. Stellen Sie sicher, dass die Kontrollkästchen für **Klicks auf E-**) und **E-Mail-Öffnungen** beide aktiviert sind.
+Legen Sie die **Kategorie** auf **Marketing** fest und wählen Sie eine E-Mail-Oberfläche aus, mit der Sie E-Mails senden können. In diesem Fall ist die auszuwählende E-Mail-Oberfläche **E-Mail**. Der nächste Schritt besteht darin, Ihre Nachricht zu erstellen. Klicken Sie dazu auf **Inhalt bearbeiten**.
 
 ![ACOP](./images/journeyactions1.png)
-
-Der nächste Schritt besteht darin, Ihre Nachricht zu erstellen. Klicken Sie dazu auf **Inhalt bearbeiten**.
-
-![ACOP](./images/journeyactions2.png)
 
 Jetzt seht ihr das. Klicken Sie auf **Textfeld** Betreffzeile“.
 
 ![ACOP](./images/journeyactions3.png)
 
-Beginnen Sie im Textbereich mit dem Schreiben von **Vielen Dank für Ihre Bestellung** und klicken Sie auf das Symbol **Personalization**.
+Beginnen Sie im Textbereich mit dem Schreiben von `Thanks for your order, ` und klicken Sie auf das Symbol **Personalization**.
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -349,11 +345,11 @@ Ihr Journey ist jetzt veröffentlicht.
 
 Wechseln Sie zu [Adobe Experience Platform-](https://experience.adobe.com/launch/) und wählen Sie **Tags** aus.
 
-Dies ist die Seite mit den Eigenschaften der Adobe Experience Platform-Datenerfassung, die Sie zuvor gesehen haben.
+Dies ist die Eigenschaftenseite der Adobe Experience Platform-Datenerfassung, die Sie zuvor gesehen haben.
 
 ![Eigenschaftenseite](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Erste Schritte** hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld **[!UICONTROL nach `--aepUserLdap--`]**. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
+In **Erste Schritte** hat Demo System zwei Client-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap--` nach ****. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
 
 ![Suchfeld](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -403,15 +399,11 @@ Sehen Sie sich das Bedienfeld Profil-Viewer und das Echtzeit-Kundenprofil mit de
 
 ![Demo](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
-Navigieren Sie zur Anmelde-/Anmeldeseite. Klicken Sie **KONTO ERSTELLEN**.
+Gehen Sie zur Seite **Anmelden**, klicken Sie auf **KONTO ERSTELLEN** und füllen Sie diese Felder aus. Klicken Sie **Registrieren** und Sie werden zur vorherigen Seite weitergeleitet.
 
 ![Demo](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
 
-Füllen Sie Ihre Daten aus und klicken Sie **Registrieren**, woraufhin Sie zur vorherigen Seite weitergeleitet werden.
-
-![Demo](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
-
-Beliebiges Produkt zum Warenkorb hinzufügen
+Fügen Sie ein beliebiges Produkt in Ihren Warenkorb.
 
 ![Journey Optimizer](./images/cart1a.png)
 
