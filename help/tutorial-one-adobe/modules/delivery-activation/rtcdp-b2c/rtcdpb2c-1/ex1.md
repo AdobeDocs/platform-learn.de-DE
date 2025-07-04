@@ -4,9 +4,9 @@ description: Foundation - Echtzeit-Kundenprofil - Von unbekannt bis bekannt auf 
 kt: 5342
 doc-type: tutorial
 exl-id: f33a7448-e1b9-47e7-97c7-509ad36cf991
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2264f26a0778c2570c36abe1bae4d6a1dc3a465c
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -59,41 +59,39 @@ Sie können auch alle Erlebnisereignisse sehen, die basierend auf dem Verhalten 
 
 ![Demo](../../datacollection/dc1.2/images/pv3.png)
 
-Navigieren Sie zur Produktkategorie **Telefone und Geräte** . Klicken Sie anschließend auf das Produkt **iPhone 15 Pro**.
+Navigieren Sie zur Produktkategorie **Telefone und Geräte** . Klicken Sie anschließend auf das Produkt **iPhone 16 Pro**.
 
 ![Demo](../../datacollection/dc1.2/images/pv4.png)
 
-Anschließend wird die Produktdetailseite angezeigt. Ein Erlebnisereignis vom Typ **Produktansicht** wurde jetzt mithilfe der Web-SDK-Implementierung, die Sie in Modul 1 überprüft haben, an Adobe Experience Platform gesendet.
+Anschließend wird die Produktdetailseite angezeigt. Ein Ereignis vom Typ **Produktansicht** wurde jetzt mithilfe der Web-SDK-Implementierung, die Sie in Modul 1 überprüft haben, an Adobe Experience Platform gesendet.
 
 ![Demo](../../datacollection/dc1.2/images/pv5.png)
 
-Öffnen Sie das Bedienfeld Profil-Viewer und sehen Sie sich Ihre **Erlebnisereignisse“**.
+Öffnen Sie das Bedienfeld Profil-Viewer und sehen Sie sich Ihre **Ereignisse** an.
 
 ![Demo](../../datacollection/dc1.2/images/pv6.png)
 
-Gehen Sie zurück zur Kategorieseite **Telefone und Geräte** und klicken Sie auf ein anderes Produkt. Ein weiteres Erlebnisereignis wurde an Adobe Experience Platform gesendet. Öffnen Sie das Bedienfeld Profil-Viewer . Es werden jetzt zwei Erlebnisereignisse vom Typ **Produktansicht** angezeigt. Während das Verhalten anonym ist, können Sie bei ordnungsgemäßem Einverständnis jeden Klick verfolgen und in Adobe Experience Platform speichern. Sobald der anonyme Kunde bekannt wird, können wir das gesamte anonyme Verhalten automatisch mit dem bekannten Profil zusammenführen.
+Gehen Sie zurück zur Kategorieseite **Telefone und Geräte** und klicken Sie auf ein anderes Produkt. Ein weiteres Erlebnisereignis wurde an Adobe Experience Platform gesendet. Öffnen Sie das Bedienfeld Profil-Viewer . Es werden jetzt zwei Ereignisse des Typs **Produktansicht** angezeigt. Während das Verhalten anonym ist, können Sie bei ordnungsgemäßem Einverständnis jeden Klick verfolgen und in Adobe Experience Platform speichern. Sobald der anonyme Kunde bekannt wird, können wir das gesamte anonyme Verhalten automatisch mit dem bekannten Profil zusammenführen.
+
+Klicken Sie auf **Anmelden**.
 
 ![Demo](../../datacollection/dc1.2/images/pv7.png)
 
-Navigieren Sie zur Anmelde-/Anmeldeseite. Klicken Sie auf **Anmelden**.
+Klicken Sie **Konto erstellen**.
 
 ![Demo](../../datacollection/dc1.2/images/pv8.png)
 
-Klicken Sie **Konto erstellen**.
+Füllen Sie Ihre Daten aus und klicken Sie **Registrieren**, woraufhin Sie zur vorherigen Seite weitergeleitet werden.
 
 ![Demo](../../datacollection/dc1.2/images/pv9.png)
 
-Füllen Sie Ihre Daten aus und klicken Sie **Registrieren**, woraufhin Sie zur vorherigen Seite weitergeleitet werden.
+Öffnen Sie das Bedienfeld Profil-Viewer und navigieren Sie zum Echtzeit-Kundenprofil. Im Profil-Viewer-Fenster sollten Sie alle Ihre personenbezogenen Daten angezeigt bekommen, z. B. Ihre neu hinzugefügten E-Mail- und Telefonkennungen.
 
 ![Demo](../../datacollection/dc1.2/images/pv10.png)
 
-Öffnen Sie das Bedienfeld Profil-Viewer und navigieren Sie zum Echtzeit-Kundenprofil. Im Profil-Viewer-Fenster sollten Sie alle Ihre personenbezogenen Daten angezeigt bekommen, z. B. Ihre neu hinzugefügten E-Mail- und Telefonkennungen.
-
-![Demo](../../datacollection/dc1.2/images/pv11.png)
-
 Wechseln Sie im Bedienfeld Profil-Viewer zu Erlebnisereignisse . Die beiden Produkte, die Sie zuvor angezeigt haben, werden im Bedienfeld Profil-Viewer angezeigt. Beide Ereignisse sind jetzt auch mit Ihrem „bekannten“ Profil verbunden.
 
-![Demo](../../datacollection/dc1.2/images/pv12.png)
+![Demo](../../datacollection/dc1.2/images/pv11.png)
 
 Sie haben jetzt Daten in Adobe Experience Platform aufgenommen und diese Daten mit Kennungen wie ECIDs und E-Mail-Adressen verknüpft. Das Ziel ist, den Geschäftskontext von dem zu verstehen, was Sie tun werden. In der nächsten Übung beginnen Sie mit der Konfiguration aller erforderlichen Elemente, um die gesamte Datenaufnahme zu ermöglichen.
 
@@ -105,21 +103,33 @@ Wenn Sie die App nicht mehr installiert haben oder Sie sich nicht mehr an die In
 
 Nachdem Sie die App wie angewiesen installiert haben, sehen Sie die Landingpage der App, auf der die Marke Citi Signal geladen ist. Klicken Sie auf das Konto -Symbol oben links im Bildschirm.
 
-![Demo](./images/app_hp1.png)
+![Demo](./images/app_hpz.png)
 
 Melden Sie sich auf dem Anmeldebildschirm mit der auf der Desktop-Website verwendeten E-Mail-Adresse an. Klicken Sie **Anmelden**.
 
 ![Demo](./images/app_acc.png)
 
-Gehen Sie zum Startbildschirm der App und klicken Sie darauf, um ein beliebiges Produkt zu öffnen.
+Sie erhalten dann eine Bestätigung, dass Sie angemeldet sind.
 
-![Demo](./images/app_hp.png)
+![Demo](./images/app_acc1.png)
+
+Gehen Sie zum Startbildschirm der App und gehen Sie zur Seite **Telefone und Geräte**.
+
+![Demo](./images/app_hp1.png)
+
+Klicken Sie auf ein Produkt auf der Seite.
+
+![Demo](./images/app_hp2.png)
 
 Anschließend wird die Produktdetailseite angezeigt.
 
 ![Demo](./images/app_galaxy.png)
 
-Wechseln Sie zum Startbildschirm in der App und wischen Sie auf dem Bildschirm nach links, um das Bedienfeld Profil-Viewer anzuzeigen. Anschließend sehen Sie das soeben angezeigte Produkt im Abschnitt **Erlebnisereignisse** zusammen mit allen Produktansichten, die in der vorherigen Website-Sitzung generiert wurden.
+Rufen Sie in der App den Startbildschirm auf und klicken Sie auf das Adobe-Symbol, um das Bedienfeld „Profil-Viewer“ anzuzeigen. Anschließend wird die Ansicht **Profilattribute** angezeigt, die jetzt eine kombinierte Ansicht Ihrer Web- und Mobile-App-Aktivität anzeigt. Navigieren Sie zu **Ereignisse**
+
+![Demo](./images/app_hp3.png)
+
+Anschließend sehen Sie das soeben angezeigte Produkt im Abschnitt **Erlebnisereignisse** zusammen mit allen Produktansichten, die in der vorherigen Website-Sitzung generiert wurden.
 
 >[!NOTE]
 >
