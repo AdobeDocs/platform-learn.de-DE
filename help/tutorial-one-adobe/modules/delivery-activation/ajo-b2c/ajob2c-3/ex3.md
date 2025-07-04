@@ -39,7 +39,7 @@ Stellen Sie sicher **dass „Einzelne Seite** aktiviert ist.
 
 Geben Sie **Web** die URL der Website ein, die zuvor als Teil des Moduls **Erste Schritte** erstellt wurde. Sie sieht wie folgt aus: `https://dsn.adobe.com/web/--aepUserLdap---XXXX`. Vergessen Sie nicht, den **XXXX** in den eindeutigen Code Ihrer Website zu ändern.
 
-Geben Sie für {0 **iOS** und **Android** ein.`com.adobe.dsn.dxdemo`
+Geben Sie für &lbrace;0 **iOS** und **Android** ein.`com.adobe.dsn.dxdemo`
 
 ![InApp](./images/inapp4.png)
 
