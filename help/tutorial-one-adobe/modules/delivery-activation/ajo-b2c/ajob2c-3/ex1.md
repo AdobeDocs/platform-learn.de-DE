@@ -86,7 +86,7 @@ Anschließend sehen Sie, dass Ihr Datenstrom für Mobilgeräte hier verknüpft i
 
 ![Adobe Experience Platform – Datenerfassung](./images/launchprop2.png)
 
-Dann bist du wieder hier. Es wird die Erweiterung für **AEP Assurance** angezeigt. Mit AEP Assurance können Sie die Datenerfassung und die Bereitstellung von Erlebnissen in Ihrer Mobile App untersuchen, testen, simulieren und validieren. Weitere Informationen zu AEP Assurance finden Sie hier: [https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/de/docs/experience-platform/assurance/home).
+Dann bist du wieder hier. Es wird die Erweiterung für **AEP Assurance** angezeigt. Mit AEP Assurance können Sie die Datenerfassung und die Bereitstellung von Erlebnissen in Ihrer Mobile App untersuchen, testen, simulieren und validieren. Weitere Informationen zu AEP Assurance finden Sie hier: [https://experienceleague.adobe.com/de/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/de/docs/experience-platform/assurance/home).
 
 ![Adobe Experience Platform – Datenerfassung](./images/launchprop8.png)
 
