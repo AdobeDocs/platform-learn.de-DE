@@ -22,7 +22,7 @@ Erfahren Sie mehr über die ersten Schritte mit Adobe Experience Platform-APIs. 
 
 [[!DNL Postman]](https://www.postman.com/) ist ein Drittanbieterprogramm, mit dem Entwickler schnell und einfach mit Adobe Experience Platform-APIs interagieren können.
 
-Die Funktion [](https://developer.adobe.com/console/home)**Details für Postman exportieren** von Adobe Developer Console bietet eine einfache Möglichkeit, die Kontodetails zu exportieren, die für den Zugriff auf und die Interaktion mit Experience Platform-APIs in einer einzigen Postman-Umgebungsdatei erforderlich sind, sodass Werte von Adobe Developer Console nicht mehr kopiert und in Postman eingefügt werden müssen.
+Die Funktion [&#128279;](https://developer.adobe.com/console/home)**Details für Postman exportieren** von Adobe Developer Console bietet eine einfache Möglichkeit, die Kontodetails zu exportieren, die für den Zugriff auf und die Interaktion mit Experience Platform-APIs in einer einzigen Postman-Umgebungsdatei erforderlich sind, sodass Werte von Adobe Developer Console nicht mehr kopiert und in Postman eingefügt werden müssen.
 
 >[!IMPORTANT]
 >
