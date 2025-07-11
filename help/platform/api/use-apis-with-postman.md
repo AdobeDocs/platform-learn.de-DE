@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Erkunden Sie Adobe Experience Platform-APIs mithilfe der von [Adobe bereitgestellten Experience Platform-API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)Postman-Sammlungen, die auf den [Adobe Developer Console-](platform-api-authentication.md) und [generierten Zugriffstoken](generate-an-access-token.md) aufbauen.
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32918/?learn=on&enablevpops&captions=ger)
