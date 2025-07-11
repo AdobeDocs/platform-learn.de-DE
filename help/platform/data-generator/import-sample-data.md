@@ -7,7 +7,7 @@ level: Experienced
 jira: KT-7349
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
+source-git-commit: 1836e80bbf3d38b600f120d83d6628a9cb3c257b
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 6%
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie eine Experience Platform-Sandbox-Umgebung mit Beispieldate
 
 ## Anwendungsfall für Beispieldaten
 
-Experience Platform-Business-Anwender müssen oft eine Reihe von Schritten durchlaufen, darunter die Identifizierung von Feldergruppen, die Erstellung von Schemata, die Vorbereitung von Daten, die Erstellung von Datensätzen und die Aufnahme von Daten, bevor sie die Marketing-Funktionen von Experience Platform erkunden können. In diesem Tutorial werden einige der Schritte automatisiert, damit Sie Daten so schnell wie möglich in eine Platform-Sandbox übertragen können.
+Experience Platform-Business-Anwender müssen oft eine Reihe von Schritten durchlaufen, darunter die Identifizierung von Feldergruppen, die Erstellung von Schemata, die Vorbereitung von Daten, die Erstellung von Datensätzen und die Aufnahme von Daten, bevor sie die von Experience Platform angebotenen Marketing-Funktionen erkunden können. In diesem Tutorial werden einige der Schritte automatisiert, damit Sie Daten so schnell wie möglich in eine Platform-Sandbox übertragen können.
 
 Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Luma. Sie investieren in Adobe Experience Platform, um Treue-, CRM-, Produktkatalog- und Offline-Kaufdaten in Echtzeit-Kundenprofilen zu kombinieren und diese Profile zu aktivieren, damit sie ihr Marketing auf die nächste Stufe bringen können. Wir haben Beispieldaten für Luma generiert. Im weiteren Verlauf dieses Tutorials importieren Sie diese Daten in eine Ihrer Experience Platform-Sandbox-Umgebungen.
 
@@ -33,7 +33,7 @@ Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Lum
 
 * Sie haben Zugriff auf Experience Platform-APIs und wissen, wie Sie sich authentifizieren. Andernfalls sehen Sie sich dieses [Tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=de) an.
 * Sie haben Zugriff auf eine Experience Platform-Entwicklungs-Sandbox.
-* Sie kennen Ihre Experience Platform-Mandanten-ID. Sie können sie erhalten, indem Sie eine authentifizierte [API-Anfrage](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=de#know-your-tenant_id)
+* Sie kennen Ihre Experience Platform-Mandanten-ID. Sie können sie erhalten, indem Sie eine authentifizierte [API-Anfrage](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)
 oder indem Sie sie bei der Anmeldung bei Ihrem Platform-Konto aus der URL extrahieren. Bei der folgenden URL lautet der Mandant beispielsweise &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
 ## Verwenden [!DNL Postman] {#postman}
@@ -68,7 +68,7 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie das Programm [Po
 1. Geben Sie einen **Namen** und optional **Zusammenfassung** für Ihren Arbeitsbereich ein und klicken Sie auf **Workspace erstellen**. [!DNL Postman] wechseln zu Ihrem neuen Arbeitsbereich, wenn Sie ihn erstellen.
    ![Arbeitsbereich speichern](../assets/data-generator/images/save-workspace.png)
 1. Passen Sie jetzt einige Einstellungen an, um die [!DNL Postman] Sammlungen in diesem Arbeitsbereich auszuführen. Klicken Sie in der Kopfzeile von [!DNL Postman] auf das Zahnradsymbol und wählen Sie **Einstellungen** aus, um das Modal „Einstellungen“ zu öffnen. Sie können auch den Tastaturbefehl (CMD/STRG + ,) verwenden, um das Modal zu öffnen.
-1. Aktualisieren Sie auf der Registerkarte `General` die maximale Wartezeit für Anfragen in ms, um `allow reading file outside this directory` zu `5000 ms` und zu aktivieren
+1. Aktualisieren Sie auf der Registerkarte `General` die maximale Wartezeit für Anfragen in ms, um `5000 ms` zu `allow reading file outside this directory` und zu aktivieren
    ![Einstellungen](../assets/data-generator/images/settings.png)
 
    >[!NOTE]
@@ -81,7 +81,7 @@ Bevor Sie die Schritte ausführen, stellen Sie sicher, dass Sie das Programm [Po
 1. Wählen Sie in Postman oben rechts Ihre Umgebung aus und klicken Sie auf das Augensymbol, um die Umgebungsvariablen anzuzeigen:
    ![Umgebungsauswahl](../assets/data-generator/images/env-selection.png)
 
-1. Stellen Sie sicher, dass die folgenden Umgebungsvariablen ausgefüllt sind. Um zu erfahren, wie Sie den Wert der Umgebungsvariablen abrufen, lesen Sie das Tutorial [Authentifizieren bei Experience Platform-APIs](/help/platform/authentication/platform-api-authentication.md), in dem Sie schrittweise Anweisungen finden.
+1. Stellen Sie sicher, dass die folgenden Umgebungsvariablen ausgefüllt sind. Um zu erfahren, wie Sie den Wert der Umgebungsvariablen abrufen, lesen Sie das Tutorial [Authentifizieren bei Experience Platform](/help/platform/api/platform-api-authentication.md), in dem Sie schrittweise Anweisungen finden.
 
    * `CLIENT_SECRET`
    * `API_KEY` - `Client ID` in Adobe Developer Console
@@ -120,7 +120,7 @@ Als Nächstes müssen Sie die Sammlungen in Postman importieren.
 
 ### Authentifizieren
 
-Als Nächstes müssen Sie sich authentifizieren und ein Benutzer-Token generieren. Beachten Sie, dass die in diesem Tutorial verwendeten Methoden zur Token-Generierung nur für die Verwendung außerhalb der Produktion geeignet sind. Beim lokalen Signieren wird eine JavaScript-Bibliothek von einem Drittanbieter-Host geladen, und beim Remote-Signieren wird der private Schlüssel an einen Adobe-eigenen und betriebenen Webservice gesendet. Während Adobe diesen privaten Schlüssel nicht speichert, sollten Produktionsschlüssel niemals mit anderen geteilt werden.
+Als Nächstes müssen Sie sich authentifizieren und ein Benutzer-Token generieren. Beachten Sie, dass die in diesem Tutorial verwendeten Methoden zur Token-Generierung nur für die Verwendung außerhalb der Produktion geeignet sind. Beim lokalen Signieren wird eine JavaScript-Bibliothek von einem Drittanbieter-Host geladen, und beim Remote-Signieren wird der private Schlüssel an einen von Adobe verwalteten und betriebenen Webservice gesendet. Adobe speichert diesen privaten Schlüssel zwar nicht, aber die Produktionsschlüssel sollten niemals für andere freigegeben werden.
 
 1. Öffnen Sie die `0-Authentication`, wählen Sie die `OAuth: Request Access Token` aus und klicken Sie auf `SEND` , um sich zu authentifizieren und das Zugriffstoken abzurufen.
 
@@ -187,16 +187,16 @@ Wenn Sie die Daten auf den Registerkarten **[!UICONTROL Attribute]** und **[!UIC
 
 Wenn Sie mehr über Adobe Journey Optimizer erfahren möchten, enthält diese Sandbox alles, was Sie zur Bewältigung der [Journey Optimizer-Herausforderungen benötigen](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de)
 
-Wenn Sie mehr über Zusammenführungsrichtlinien, Data Governance, den Abfrage-Service und den Segment Builder erfahren möchten, springen Sie im Tutorial Erste Schritte für Datenarchitekten und Dateningenieure zu [Lektion 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=de). Die früheren Lektionen dieses anderen Tutorials haben Sie dazu beigetragen, alles, was gerade mit diesen Postman-Sammlungen gefüllt wurde, manuell zu erstellen - genießen Sie den Vorsprung!
+Wenn Sie mehr über Zusammenführungsrichtlinien, Data Governance, den Abfrage-Service und den Segment Builder erfahren möchten, springen Sie im Tutorial Erste Schritte für Datenarchitekten und Dateningenieure zu [Lektion 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Die früheren Lektionen dieses anderen Tutorials haben Sie dazu beigetragen, alles, was gerade mit diesen Postman-Sammlungen gefüllt wurde, manuell zu erstellen - genießen Sie den Vorsprung!
 
 Wenn Sie eine Beispiel-Web-SDK-Implementierung für den Link zu dieser Sandbox erstellen möchten, gehen Sie folgendermaßen vor
 [Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview). Nach dem Einrichten der Lektionen „Erstkonfiguration“, „Tags-Konfiguration“ und &quot;Experience Platform einrichten“ des Web SDK-Tutorials melden Sie sich bei der Luma-Website mit den ersten zehn E-Mail-Adressen in der `luma-crm.json`-Datei mit dem `test` Passwort an, um zu sehen, wie die Profilfragmente mit den in diesem Tutorial hochgeladenen Daten zusammengeführt werden.
 
 Wenn Sie eine Beispielimplementierung von Mobile SDK erstellen möchten, um eine Verknüpfung zu dieser Sandbox herzustellen, gehen Sie folgendermaßen vor
-[Tutorial zur Implementierung von Adobe Experience Cloud in Mobile Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de). Nach dem Einrichten der Lektionen „Erstkonfiguration“, „App-Implementierung“ und &quot;Experience Platform&quot; des Web SDK-Tutorials melden Sie sich bei der Luma-Website mit den ersten E-Mail-Adressen in der `luma-crm.json` an, um eine Profilfragmentzusammenführung mit den in diesem Tutorial hochgeladenen Daten zu sehen.
+[Tutorial zur Implementierung von Adobe Experience Cloud in Mobile Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de). Nach dem Einrichten der Lektionen „Erstkonfiguration“, „App-Implementierung“ und &quot;Experience Platform&quot; des Web-SDK-Tutorials melden Sie sich bei der Luma-Website mit den ersten E-Mail-Adressen in der `luma-crm.json` an, um eine Profilfragmentzusammenführung mit den in diesem Tutorial hochgeladenen Daten zu sehen.
 
 ## Sandbox-Umgebung zurücksetzen {#reset-sandbox}
 
 Beim Zurücksetzen einer Nicht-Produktions-Sandbox werden alle mit dieser Sandbox verbundenen Ressourcen (Schemata, Datensätze usw.) gelöscht, wobei der Name der Sandbox und die zugehörigen Berechtigungen beibehalten werden. Diese „saubere“ Sandbox ist für Benutzer, die Zugriff darauf haben, unter demselben Namen weiter verfügbar.
 
-Gehen Sie wie folgt vor [hier](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=de#reset-a-sandbox), um eine Sandbox-Umgebung zurückzusetzen.
+Gehen Sie wie folgt vor [hier](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox), um eine Sandbox-Umgebung zurückzusetzen.
