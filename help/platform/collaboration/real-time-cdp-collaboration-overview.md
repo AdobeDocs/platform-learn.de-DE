@@ -64,7 +64,7 @@ Weitere Informationen finden Sie in der Real-Time CDP Collaboration [Dokumentati
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="Überblick über Real-Time CDP für Agenturpraktiker" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1751925455060" alt="Überblick über Real-Time CDP für Agenturpraktiker"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464667/?format=jpeg&nocache=1751925455060&captions=ger" alt="Überblick über Real-Time CDP für Agenturpraktiker"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ Weitere Informationen finden Sie in der Real-Time CDP Collaboration [Dokumentati
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - Prozesse und Personen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1751925455067" alt="Real-Time CDP Collaboration - Prozesse und Personen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464678/?format=jpeg&nocache=1751925455067&captions=ger" alt="Real-Time CDP Collaboration - Prozesse und Personen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

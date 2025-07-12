@@ -20,4 +20,4 @@ ht-degree: 0%
 
 In diesem Video erhalten Anwenderinnen und Anwender von Real-Time CDP Collaboration, sowohl Agenturpraktiker als auch Mar-Tech-Teams, Anleitungen dazu, wie diese funktionsübergreifenden Teams über unterschiedliche Anwendungsfälle, Datenquellen, Zielgruppen und Ziele hinweg zusammenarbeiten sollten, um den Erfolg und die betriebliche Effizienz bei der Einführung von Real-Time CDP Collaboration sicherzustellen
 
->[!VIDEO](https://video.tv.adobe.com/v/3464658/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464678/?learn=on&enablevpops&captions=ger)
