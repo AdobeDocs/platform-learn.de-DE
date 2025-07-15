@@ -1,35 +1,35 @@
 ---
-title: Vergleich der Target-Erweiterung mit der Decisioning-Erweiterung
-description: Erfahren Sie mehr über die Unterschiede zwischen der Target-Erweiterung und der Decisioning-Erweiterung, einschließlich Funktionen, Einstellungen und Datenfluss.
+title: Vergleich der Target-Erweiterung mit der Offer Decisioning- und Target-Erweiterung
+description: Erfahren Sie mehr über die Unterschiede zwischen der Target-Erweiterung und der Offer Decisioning- und Target-Erweiterung, einschließlich Funktionen, Einstellungen und Datenfluss.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '833'
 ht-degree: 3%
 
 ---
 
-# Vergleich der Target-Erweiterung mit der Decisioning-Erweiterung
+# Vergleich der Target-Erweiterung mit der Offer Decisioning- und Target-Erweiterung
 
-Die Adobe Journey Optimizer - Decisioning-Erweiterung unterscheidet sich von der Adobe Target-Erweiterung für Mobile Apps. Die folgenden Tabellen dienen als Referenz bei der Bewertung von Bereichen Ihrer Implementierung, auf die Sie sich während des Migrationsprozesses möglicherweise konzentrieren müssen.
+Die Offer Decisioning- und Target-Erweiterung unterscheidet sich von der Adobe Target-Erweiterung für Mobile Apps. Die folgenden Tabellen dienen als Referenz bei der Bewertung von Bereichen Ihrer Implementierung, auf die Sie sich während des Migrationsprozesses möglicherweise konzentrieren müssen.
 
 Nachdem Sie die folgenden Informationen durchgelesen und Ihre aktuelle Implementierung der technischen Target-Erweiterung bewertet haben, sollten Sie Folgendes verstehen:
 
-- Welche Target-Funktionen von Adobe Journey Optimizer unterstützt werden - Decisioning
-- Welche Adobe Target-Erweiterungsfunktionen über Adobe Journey Optimizer verfügen - Entscheidungsäquivalente
-- Anwenden von Target-Einstellungen mit Adobe Journey Optimizer - Decisioning
-- Fluss der Daten mithilfe der Adobe Journey Optimizer - Decisioning-Erweiterung
+- Welche Target-Funktionen von Offer Decisioning und Target unterstützt werden
+- Welche Adobe Target-Erweiterungsfunktionen über Offer Decisioning- und Target-Entsprechungen verfügen
+- Anwenden von Target-Einstellungen mit Offer Decisioning und Target
+- Fluss der Daten mithilfe der Offer Decisioning- und Target-Erweiterung
 
 ## Operative Unterschiede
 
-| | Target-Erweiterung | Decisioning-Erweiterung |
+| | Target-Erweiterung | Offer Decisioning- und Target-Erweiterung |
 |---|---|---|
-| Prozess | Änderungen an einer Target-Implementierung können auf einen Prozess folgen, der im Vergleich zu anderen Programmen wie Analytics eine andere Kadenz oder andere QS-Anforderungen hat. | Bei Änderungen an einer Implementierung der Decisioning-Erweiterung sollten alle nachgelagerten Anwendungen berücksichtigt und der QA- und Veröffentlichungsprozess entsprechend angepasst werden. |
-| Zusammenarbeit | Target-spezifische Daten können direkt in den Target-Aufrufen übergeben werden. Wenn die Target-Berichtsquelle Adobe Analytics (A4T) ist, können Target-spezifische Daten auch an Adobe Analytics übergeben werden, wenn geeignete Tracking-Methoden in der Target-Erweiterung für die Anzeige von Target-Inhalten und die Interaktion aufgerufen werden. | Daten, die in den Decisioning-Erweiterungsaufrufen übergeben werden, können sowohl an Target als auch an Analytics weitergeleitet werden, wenn die Target-Berichtsquelle Adobe Analytics (A4T) ist, Adobe Analytics im Daten-Stream aktiviert ist und geeignete Tracking-Methoden in der Decisioning-Erweiterung aufgerufen werden, wenn Target-Inhalte angezeigt werden und mit ihnen interagiert wird. |
+| Prozess | Änderungen an einer Target-Implementierung können auf einen Prozess folgen, der im Vergleich zu anderen Programmen wie Analytics eine andere Kadenz oder andere QS-Anforderungen hat. | Bei Änderungen an einer Implementierung einer Offer Decisioning- und Target-Erweiterung sollten alle nachgelagerten Anwendungen berücksichtigt und der QA- und Veröffentlichungsprozess entsprechend angepasst werden. |
+| Zusammenarbeit | Target-spezifische Daten können direkt in den Target-Aufrufen übergeben werden. Wenn die Target-Berichtsquelle Adobe Analytics (A4T) ist, können Target-spezifische Daten auch an Adobe Analytics übergeben werden, wenn geeignete Tracking-Methoden in der Target-Erweiterung für die Anzeige von Target-Inhalten und die Interaktion aufgerufen werden. | Daten, die bei den Offer Decisioning- und Target-Erweiterungsaufrufen übergeben werden, können sowohl an Target als auch an Analytics weitergeleitet werden, wenn die Target-Berichtsquelle Adobe Analytics (A4T) ist, Adobe Analytics im Daten-Stream aktiviert ist und geeignete Tracking-Methoden in Offer Decisioning und der Target-Erweiterung aufgerufen werden, wenn Target-Inhalte angezeigt werden und mit ihnen interagiert wird. |
 
 ## Grundlegende Unterschiede
 
-| | Target-Erweiterung | Decisioning-Erweiterung |
+| | Target-Erweiterung | Offer Decisioning- und Target-Erweiterung |
 |---|---|---|
 | Abhängigkeiten | Hängt nur von Mobile Core SDK ab | Hängt von Mobile Core und Edge Network SDK ab |
 | Bibliotheksfunktion | Unterstützt nur das Abrufen von Inhalten aus Adobe Target | Unterstützung für das Abrufen von Inhalten aus Adobe Target und Offer Decisioning |
@@ -43,7 +43,7 @@ Nachdem Sie die folgenden Informationen durchgelesen und Ihre aktuelle Implement
 
 ## Funktionsvergleich
 
-| Funktion | Target-Erweiterung | Decisioning-Erweiterung (Target über Edge) |
+| Funktion | Target-Erweiterung | Offer Decisioning- und Target-Erweiterung (Target über Edge) |
 |---|---|---|
 | Vorheriger Abrufmodus | Unterstützt | Unterstützt |
 | Ausführungsmodus | Unterstützt | Nicht unterstützt |
@@ -69,9 +69,9 @@ Nachdem Sie die folgenden Informationen durchgelesen und Ihre aktuelle Implement
 
 >[!NOTE]
 >
->Behalten Sie die Konfiguration und die Einstellungen für Target-Erweiterungs-Tags bei, auch nachdem Sie Ihren App-Code zur Decisioning-Erweiterung migriert haben. Dadurch wird sichergestellt, dass Target auch für Kunden funktioniert, die die App noch nicht auf die neue Version aktualisiert haben.
+>Behalten Sie die Konfiguration und die Einstellungen für Target-Erweiterungs-Tags bei, auch nachdem Sie Ihren App-Code zur Offer Decisioning- und Target-Erweiterung migriert haben. Dadurch wird sichergestellt, dass Target auch für Kunden funktioniert, die die App noch nicht auf die neue Version aktualisiert haben.
 >
->Wenn Sie die Analytics for Target-Integration (A4T) verwenden, müssen Sie auch Ihre Analytics-Implementierung mit der Edge Bridge-Erweiterung migrieren, während Sie gleichzeitig Ihre Target-Implementierung in die Decisioning-Erweiterung migrieren.
+>Wenn Sie die Analytics for Target-Integration (A4T) verwenden, müssen Sie auch Ihre Analytics-Implementierung mit der Edge Bridge-Erweiterung migrieren, wenn Sie gleichzeitig Ihre Target-Implementierung zur Offer Decisioning- und Target-Erweiterung migrieren.
 
 
 
@@ -79,15 +79,15 @@ Nachdem Sie die folgenden Informationen durchgelesen und Ihre aktuelle Implement
 
 >[!IMPORTANT]
 >
-> Behalten Sie die Einstellungen der Target-Erweiterung bei, auch nachdem Sie Ihren App-Code zur Decisioning-Erweiterung migriert haben. Dadurch wird sichergestellt, dass Target auch weiterhin für Benutzende funktioniert, die ihre App noch nicht aktualisiert haben.
+> Behalten Sie die Target-Erweiterungseinstellungen bei, auch nachdem Sie Ihren App-Code zur Offer Decisioning- und Target-Erweiterung migriert haben. Dadurch wird sichergestellt, dass Target auch weiterhin für Benutzende funktioniert, die ihre App noch nicht aktualisiert haben.
 
-## Systemdiagramm der Decisioning-Erweiterung
+## Systemdiagramm der Offer Decisioning- und Target-Erweiterung
 
-Das folgende Diagramm soll Ihnen dabei helfen, den Datenfluss mithilfe der Adobe Journey Optimizer - Decisioning-Erweiterung zu verstehen.
+Das folgende Diagramm soll Ihnen dabei helfen, den Datenfluss mithilfe der Offer Decisioning- und Target-Erweiterung zu verstehen.
 
 ![Adobe Target Edge Decisioning mit Client-seitigem Mobile SDK](assets/diagram.png)
 
 
 >[!NOTE]
 >
->Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Decisioning-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=de#M625) posten.
+>Wir möchten Ihnen dabei helfen, Ihre mobile Target-Migration von der Target-Erweiterung zur Offer Decisioning- und Target-Erweiterung erfolgreich durchzuführen. Wenn Sie auf Hindernisse bei Ihrer Migration stoßen oder das Gefühl haben, dass wichtige Informationen in diesem Handbuch fehlen, lassen Sie es uns bitte wissen, indem Sie in [diese Community-Diskussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) posten.

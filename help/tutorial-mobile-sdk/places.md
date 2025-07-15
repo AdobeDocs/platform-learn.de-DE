@@ -3,9 +3,9 @@ title: Verwenden von Places mit Platform Mobile SDK
 description: Erfahren Sie, wie Sie den Orte-Geolokalisierungs-Service in Ihrer Mobile App verwenden.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1591'
 ht-degree: 3%
 
 ---
@@ -74,13 +74,12 @@ Einige interessante Punkte definieren Sie im Places-Service.
 1. Suchen Sie nach der **[!UICONTROL Places]**-Erweiterung.
 1. Installieren Sie die Erweiterung .
 
-   ![Entscheidungserweiterung hinzufügen](assets/tag-places-extension.png)
+   ![Offer Decisioning- und Target-Erweiterung hinzufügen](assets/tag-places-extension.png)
 
 1. Im Dialogfeld **[!UICONTROL Erweiterung installieren]**:
    1. Wählen Sie **[!DNL Luma]** aus der Liste **[!UICONTROL Bibliothek]**.
    1. Stellen Sie sicher, dass Sie Ihre Arbeitsbibliothek ausgewählt haben, z. B **[!UICONTROL „Initial Build]**.
    1. Wählen Sie **[!UICONTROL In Bibliothek speichern und erstellen]** unter **[!UICONTROL In Bibliothek speichern]**.
-
       ![Install Places-Erweiterung](assets/places-install-extension.png).
 
 1. Die Bibliothek wurde neu erstellt.
@@ -140,7 +139,6 @@ Als Nächstes definieren Sie Regeln für die Arbeit mit diesen Datenelementen.
 1. Wählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) unter **[!UICONTROL EREIGNISSE]** aus.
    1. Wählen Sie **[!UICONTROL Places]** aus der Liste **[!UICONTROL Extension]** und wählen Sie **[!UICONTROL Enter POI]** aus der Liste **[!UICONTROL Event Type]** aus.
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
-
       ![Tag-](assets/tags-event-mobile-core.png).
 1. Wählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) unter **[!UICONTROL AKTIONEN]** aus.
    1. Wählen Sie **[!UICONTROL Mobile Core]** aus der Liste **[!UICONTROL Erweiterung]** und wählen Sie **[!UICONTROL Daten anhängen]** aus **[!UICONTROL Aktionstyp]** der Liste aus. Diese Aktion hängt Payload-Daten an.
@@ -171,11 +169,10 @@ Als Nächstes definieren Sie Regeln für die Arbeit mit diesen Datenelementen.
       Sie können auch `{%% ... %%}` Platzhalterwerte für Datenelemente in die JSON einfügen, indem Sie die Option ![Daten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) auswählen. In einem Popup-Dialogfeld können Sie jedes von Ihnen erstellte Datenelement auswählen.
 
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
-
       ![Aktion für Tags](assets/tags-action-mobile-core.png)
 
 1. Wählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben der Aktion **[!UICONTROL Mobile Core - Daten]**) aus.
-   1. Wählen Sie **[!UICONTROL Adobe Experience Platform-Edge Network]** aus der Liste **[!UICONTROL Erweiterung]** und wählen Sie **[!UICONTROL Ereignis an Edge Network weiterleiten]**. Dadurch wird sichergestellt, dass das Ereignis und die zusätzlichen Payload-Daten an das Platform-Edge Network weitergeleitet werden.
+   1. Wählen Sie **[!UICONTROL Adobe Experience Platform Edge Network]** aus der Liste **[!UICONTROL Erweiterung]** und wählen Sie **[!UICONTROL Ereignis an Edge Network weiterleiten]**. Dadurch wird sichergestellt, dass das Ereignis und die zusätzlichen Payload-Daten an Platform Edge Network weitergeleitet werden.
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
 1. Wählen Sie zum Speichern der Regel **[!UICONTROL In Bibliothek speichern]** aus.
@@ -217,7 +214,7 @@ Erstellen wir eine weitere Regel
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
 1. Wählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben der Aktion **[!UICONTROL Mobile Core - Daten]**) aus.
-   1. Wählen Sie **[!UICONTROL Adobe Experience Platform-Edge Network]** aus der Liste **[!UICONTROL Erweiterung]** und wählen Sie **[!UICONTROL Ereignis an Edge Network weiterleiten]**.
+   1. Wählen Sie **[!UICONTROL Adobe Experience Platform Edge Network]** aus der Liste **[!UICONTROL Erweiterung]** und wählen Sie **[!UICONTROL Ereignis an Edge Network weiterleiten]**.
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
 1. Wählen Sie zum Speichern der Regel **[!UICONTROL In Bibliothek speichern]** aus.
@@ -260,7 +257,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
 >Wenn Sie den Abschnitt [Installieren von SDKs](install-sdks.md) abgeschlossen haben, ist Places SDK bereits installiert und Sie können diesen Schritt überspringen.
 >
 
-1. Stellen Sie in Xcode sicher[ dass „AEP Places](https://github.com/adobe/aepsdk-places-ios) zur Liste der Pakete in den Paketabhängigkeiten hinzugefügt wird. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Stellen Sie in Xcode sicher, dass [AEP Places](https://github.com/adobe/aepsdk-places-ios) zur Liste der Pakete in den Paketabhängigkeiten hinzugefügt wird. Siehe [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigieren Sie im Xcode-Projekt-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** .
 1. Stellen Sie sicher, dass `AEPPlaces` Teil Ihrer Importliste ist.
 
@@ -286,7 +283,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
    ]
    ```
 
-1. Navigieren Sie im Xcode-Projekt-**zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>**&#x200B;[!DNL Utils]&#x200B;**>** MobileSDK und suchen Sie nach der `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async`. Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie im Xcode-Projekt-**[!DNL Luma]** zu **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL >]** MobileSDK und suchen Sie nach der `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async`. Fügen Sie den folgenden Code hinzu:
 
    ```swift
    // Process geolocation event
@@ -339,7 +336,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
 
 ## Nächste Schritte
 
-Sie sollten jetzt über alle Tools verfügen, um Ihrer Geolocation-Funktion in der App weitere Funktionen hinzuzufügen. Nachdem Sie die Ereignisse an das Edge Network weitergeleitet haben, sollten nach dem Einrichten der App für [Experience Platform](platform.md) die Erlebnisereignisse für das in der App verwendete Profil angezeigt werden.
+Sie sollten jetzt über alle Tools verfügen, um Ihrer Geolocation-Funktion in der App weitere Funktionen hinzuzufügen. Nachdem Sie die Ereignisse an die Edge Network weitergeleitet haben, sollten nach der Einrichtung der App für [Experience Platform](platform.md) die Erlebnisereignisse für das in der App verwendete Profil angezeigt werden.
 
 Im Abschnitt Journey Optimizer dieses Tutorials sehen Sie, dass Erlebnisereignisse zum Trigger von Journey verwendet werden können (siehe [Push-Benachrichtigung](journey-optimizer-inapp.md) und [In-App-Messaging](journey-optimizer-push.md) mit Journey Optimizer). Dies ist beispielsweise das übliche Beispiel für das Senden einer Push-Benachrichtigung an den App-Benutzer mit einer Produktwerbung, wenn dieser den Geofence eines physischen Geschäfts betritt.
 
@@ -347,8 +344,8 @@ Es wurde eine Implementierung von Funktionen für Ihre App gesehen, die hauptsä
 
 >[!SUCCESS]
 >
->Sie haben die App jetzt für Geolocation-Services mit der Places-Erweiterung in der Experience Platform Mobile SDK aktiviert.
+>Sie haben die App jetzt für Geolocation-Services mithilfe der Places-Erweiterung in der Experience Platform Mobile SDK aktiviert.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Daten Adobe Analytics zuordnen](analytics.md)**
