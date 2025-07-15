@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 4c9ac30ecc0f41b7d6cd9a6653bca50e602cbc13
 workflow-type: tm+mt
 source-wordcount: '2475'
 ht-degree: 2%
@@ -21,7 +21,7 @@ Mit dem Journey Optimizer Entscheidungs-Management können Sie Ihren Kunden übe
 
 ![Architektur](assets/architecture-ajo.png)
 
-Entscheidungs-Management erleichtert die Personalisierung durch eine zentrale Bibliothek mit Marketing-Angeboten und eine Entscheidungs-Engine, die Regeln und Einschränkungen auf die von Adobe Experience Platform erstellten Echtzeitprofile anwendet. Dadurch können Sie Ihren Kunden das richtige Angebot zum richtigen Zeitpunkt senden. Weitere Informationen [ Sie unter ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=de)Über das Entscheidungs-Management“.
+Entscheidungs-Management erleichtert die Personalisierung durch eine zentrale Bibliothek mit Marketing-Angeboten und eine Entscheidungs-Engine, die Regeln und Einschränkungen auf die von Adobe Experience Platform erstellten Echtzeitprofile anwendet. Dadurch können Sie Ihren Kunden das richtige Angebot zum richtigen Zeitpunkt senden. Weitere Informationen [ Sie unter ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en)Über das Entscheidungs-Management“.
 
 
 
@@ -35,7 +35,7 @@ Entscheidungs-Management erleichtert die Personalisierung durch eine zentrale Bi
 
 * App mit installierten und konfigurierten SDKs erfolgreich erstellt und ausgeführt.
 * Richten Sie die App für Adobe Experience Platform ein.
-* Zugriff auf Journey Optimizer - Entscheidungs-Management mit den entsprechenden Berechtigungen zum Verwalten von Angeboten und Entscheidungen, wie [ beschrieben](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=de#decisions-permissions).
+* Zugriff auf Journey Optimizer - Entscheidungs-Management mit den entsprechenden Berechtigungen zum Verwalten von Angeboten und Entscheidungen, wie [ beschrieben](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
 ## Lernziele
@@ -63,7 +63,7 @@ Um sicherzustellen, dass Daten, die von Ihrer Mobile App an Platform Edge Networ
 
 1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche **[!UICONTROL Datenströme]** und wählen Sie Ihren Datenstrom aus, z. B. **[!DNL Luma Mobile App]**.
 1. Wählen Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) für **[!UICONTROL Experience Platform]** und wählen Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus dem Kontextmenü.
-1. Stellen Sie sicher **[!UICONTROL dass im Bildschirm]** Datenströme![ > Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge-Segmentierung]** und **[!UICONTROL Adobe Journey Optimizer]** ausgewählt sind. Wenn Sie die Target-Lektion durchführen, wählen Sie auch &lbrace;0 **[!UICONTROL Personalization Destinations aus.]** Weitere Informationen finden Sie unter {[}Adobe Experience Platform-Einstellungen.](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=de#aep)
+1. Stellen Sie sicher **[!UICONTROL dass im Bildschirm]** Datenströme![ > Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge-Segmentierung]** und **[!UICONTROL Adobe Journey Optimizer]** ausgewählt sind. Wenn Sie die Target-Lektion durchführen, wählen Sie auch {0 **[!UICONTROL Personalization Destinations aus.]** Weitere Informationen finden Sie unter {[}Adobe Experience Platform-Einstellungen.](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)
 1. Um Ihre Datenstromkonfiguration zu speichern, wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![Konfiguration des AEP-Datenstroms](assets/datastream-aep-configuration-offers.png)
@@ -98,7 +98,7 @@ Um sicherzustellen, dass Daten, die von Ihrer Mobile App an Platform Edge Networ
 So validieren Sie das Setup in Assurance:
 
 1. Navigieren Sie zur Assurance-Benutzeroberfläche.
-1. Wählen Sie **[!UICONTROL Konfigurieren]** in der linken Leiste und wählen Sie ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben **[!UICONTROL Setup überprüfen]** unter **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
+1. Wählen Sie **[!UICONTROL Konfigurieren]** in der linken Leiste und wählen Sie ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben **[!UICONTROL Setup überprüfen]** unter **[!UICONTROL OFFER DECISIONING AND TARGET]**.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Wählen **[!UICONTROL in der]** Leiste Setup validieren aus. Sowohl die Datenstromeinrichtung als auch die SDK-Einrichtung in Ihrem Programm werden validiert.
    ![AJO Decisioning-Validierung](assets/ajo-decisioning-validation.png)
@@ -134,7 +134,6 @@ So erstellen Sie die mobile JSON-Platzierung:
 1. Im Schritt **[!UICONTROL Details]** von **[!UICONTROL Neues personalisiertes Angebot erstellen]**:
    1. Geben Sie einen **[!UICONTROL Namen]** für das Angebot ein, z. B. `Luma - Juno Jacket`, und geben Sie ein **[!UICONTROL Startdatum und -zeit]** und ein **[!UICONTROL Enddatum und -zeit]** ein. Ein Angebot außerhalb dieses Datumsbereichs wird nicht von der Entscheidungs-Engine ausgewählt.
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
-
       ![Angebote - Details](assets/ajo-offers-details.png)
 
 1. Im Schritt **[!UICONTROL Darstellungen hinzufügen]** von **[!UICONTROL Neues personalisiertes Angebot erstellen]**:
@@ -153,17 +152,14 @@ So erstellen Sie die mobile JSON-Platzierung:
          ```
 
       1. Wählen Sie **[!UICONTROL Speichern]** aus.
-
          ![Angebote - Benutzerdefinierte Inhalte](assets/ajo-offers-customcontent.png)
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
-
       ![Angebotsdarstellungen](assets/ajo-offers-representations.png)
 
 1. Im Schritt **[!UICONTROL Einschränkungen hinzufügen]** des **[!UICONTROL Neues personalisiertes Angebot erstellen]**:
    1. Legen **[!UICONTROL Priorität]** auf `10` fest.
    1. Schalten Sie **[!UICONTROL Begrenzung einschließen]** aus.
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
-
       ![Angebote - Einschränkungen](assets/ajo-offers-constraints.png)
 
 1. Im Schritt **[!UICONTROL Überprüfen]** von **[!UICONTROL Neues personalisiertes]** erstellen:
@@ -243,7 +239,7 @@ Ein Bewertungskriterium ist die Kombination aus
 * Eignungsregeln: Ist das Angebot beispielsweise nur für eine bestimmte Zielgruppe verfügbar,
 * eine Ranking-Methode: Wenn mehrere Angebote zur Auswahl verfügbar sind, nach welcher Methode werden sie sortiert (z. B. nach Angebotspriorität, mithilfe einer Formel oder eines KI-Modells)?
 
-Siehe [Wichtige Schritte zum Erstellen und Verwalten von Angeboten](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=de), wenn Sie besser verstehen möchten, wie Platzierungen, Regeln, Rankings, Angebote, Darstellungen, Sammlungen, Entscheidungen usw. interagieren und miteinander in Beziehung stehen. Diese Lektion konzentriert sich ausschließlich auf die Verwendung der Ausgabe einer Entscheidung und nicht auf die Flexibilität bei der Definition von Entscheidungen innerhalb von Journey Optimizer - Entscheidungs-Management.
+Siehe [Wichtige Schritte zum Erstellen und Verwalten von Angeboten](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en), wenn Sie besser verstehen möchten, wie Platzierungen, Regeln, Rankings, Angebote, Darstellungen, Sammlungen, Entscheidungen usw. interagieren und miteinander in Beziehung stehen. Diese Lektion konzentriert sich ausschließlich auf die Verwendung der Ausgabe einer Entscheidung und nicht auf die Flexibilität bei der Definition von Entscheidungen innerhalb von Journey Optimizer - Entscheidungs-Management.
 
 1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche **[!UICONTROL Angebote]** in der linken Leiste aus.
 1. Wählen Sie **[!UICONTROL Entscheidungen]** in der oberen Leiste aus.
@@ -257,11 +253,9 @@ Siehe [Wichtige Schritte zum Erstellen und Verwalten von Angeboten](https://expe
    1. Wählen **[!UICONTROL in der Kachel]** Auswertungskriterien“ ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Hinzufügen]** aus.
       1. Wählen **[!UICONTROL im Dialogfeld &quot;]** hinzufügen“ Ihre Angebotssammlung aus. Beispiel: **[!DNL Luma - Mobile App Collection]**.
       1. Wählen Sie **[!UICONTROL Hinzufügen]** aus.
-
          ![Entscheidung - Sammlung auswählen](assets/ajo-decision-selectcollection.png)
    1. Stellen Sie sicher **[!UICONTROL dass]** Keine“ für **[!UICONTROL Eignung]** und **[!UICONTROL Angebotspriorität]** als **[!UICONTROL ausgewählt ist]**.
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
-
       ![Entscheidungsbereiche](assets/ajo-decision-scopes.png).
 1. Im Schritt **[!UICONTROL Fallback-Angebot hinzufügen]** von **[!UICONTROL Neue Angebotsentscheidung erstellen]**:
    1. Wählen Sie Ihr Fallback-Angebot aus, z. B. die **[!DNL Luma - Fallback offer]**.
@@ -424,6 +418,6 @@ Sie sollten jetzt über alle Tools verfügen, um Ihrer Implementierung von Journ
 >
 >Sie haben die App aktiviert, um Angebote mithilfe der Offer Decisioning- und Target-Erweiterung für Experience Platform Mobile SDK anzuzeigen.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Durchführen von A/B-Tests](target.md)**
