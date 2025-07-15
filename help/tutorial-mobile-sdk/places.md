@@ -80,6 +80,7 @@ Einige interessante Punkte definieren Sie im Places-Service.
    1. Wählen Sie **[!DNL Luma]** aus der Liste **[!UICONTROL Bibliothek]**.
    1. Stellen Sie sicher, dass Sie Ihre Arbeitsbibliothek ausgewählt haben, z. B **[!UICONTROL „Initial Build]**.
    1. Wählen Sie **[!UICONTROL In Bibliothek speichern und erstellen]** unter **[!UICONTROL In Bibliothek speichern]**.
+
       ![Install Places-Erweiterung](assets/places-install-extension.png).
 
 1. Die Bibliothek wurde neu erstellt.
@@ -139,6 +140,7 @@ Als Nächstes definieren Sie Regeln für die Arbeit mit diesen Datenelementen.
 1. Wählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) unter **[!UICONTROL EREIGNISSE]** aus.
    1. Wählen Sie **[!UICONTROL Places]** aus der Liste **[!UICONTROL Extension]** und wählen Sie **[!UICONTROL Enter POI]** aus der Liste **[!UICONTROL Event Type]** aus.
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+
       ![Tag-](assets/tags-event-mobile-core.png).
 1. Wählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) unter **[!UICONTROL AKTIONEN]** aus.
    1. Wählen Sie **[!UICONTROL Mobile Core]** aus der Liste **[!UICONTROL Erweiterung]** und wählen Sie **[!UICONTROL Daten anhängen]** aus **[!UICONTROL Aktionstyp]** der Liste aus. Diese Aktion hängt Payload-Daten an.
@@ -169,6 +171,7 @@ Als Nächstes definieren Sie Regeln für die Arbeit mit diesen Datenelementen.
       Sie können auch `{%% ... %%}` Platzhalterwerte für Datenelemente in die JSON einfügen, indem Sie die Option ![Daten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) auswählen. In einem Popup-Dialogfeld können Sie jedes von Ihnen erstellte Datenelement auswählen.
 
    1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+
       ![Aktion für Tags](assets/tags-action-mobile-core.png)
 
 1. Wählen ![Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben der Aktion **[!UICONTROL Mobile Core - Daten]**) aus.
