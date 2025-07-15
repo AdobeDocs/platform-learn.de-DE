@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie die Erlebnisse in Ihren Mobile Apps mit Platform Mobile SDK und Adobe Target optimieren und personalisieren können.
 
-Target bietet alles, was Sie für die Anpassung und Personalisierung Ihrer Kundenerlebnisse benötigen. Mit Target können Sie den Umsatz Ihrer Websites, mobilen Sites, Apps, Social Media und anderer digitaler Kanäle maximieren. Target kann A/B-Tests durchführen, multivariate Tests durchführen, Produkte und Inhalte empfehlen, Inhalte als Ziel festlegen, Inhalte mit KI automatisch personalisieren und vieles mehr. Im Mittelpunkt dieser Lektion steht die A/B-Testfunktion von Target. Weitere Informationen finden Sie unter [A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en)Tests - Übersicht .
+Target bietet alles, was Sie für die Anpassung und Personalisierung Ihrer Kundenerlebnisse benötigen. Mit Target können Sie den Umsatz Ihrer Websites, mobilen Sites, Apps, Social Media und anderer digitaler Kanäle maximieren. Target kann A/B-Tests durchführen, multivariate Tests durchführen, Produkte und Inhalte empfehlen, Inhalte als Ziel festlegen, Inhalte mit KI automatisch personalisieren und vieles mehr. Im Mittelpunkt dieser Lektion steht die A/B-Testfunktion von Target. Weitere Informationen finden Sie unter [A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=de)Tests - Übersicht .
 
 ![Architektur](assets/architecture-at.png)
 
@@ -66,9 +66,9 @@ Um sicherzustellen, dass Daten, die von Ihrer Mobile App an Experience Platform 
 
    Ihre Eigenschaften finden Sie in der Target-Benutzeroberfläche unter **[!UICONTROL Administration]** > **[!UICONTROL Eigenschaften]**. Wählen Sie ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) aus, um das Eigenschafts-Token für die Eigenschaft anzuzeigen, die Sie verwenden möchten. Das Eigenschafts-Token hat ein Format wie `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`. Sie dürfen nur den Wert `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx` eingeben.
 
-   Optional können Sie eine Zielumgebungs-ID angeben. Target nutzt Umgebungen, um Ihre Sites und Vorproduktionsumgebungen zu organisieren, und ermöglicht so ein einfaches Management und separates Reporting. Zu den voreingestellten Umgebungen gehören Produktion, Staging und Entwicklung. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) und [Target](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id)Umgebungs-ID).
+   Optional können Sie eine Zielumgebungs-ID angeben. Target nutzt Umgebungen, um Ihre Sites und Vorproduktionsumgebungen zu organisieren, und ermöglicht so ein einfaches Management und separates Reporting. Zu den voreingestellten Umgebungen gehören Produktion, Staging und Entwicklung. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=de) und [Target](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=de#target-environment-id)Umgebungs-ID).
 
-   Optional können Sie einen Target-ID-Namespace eines Drittanbieters angeben, um die Profilsynchronisierung mit einem Identity-Namespace (z. B. einer CRM-ID) zu unterstützen. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace)-Namespace für Target-Drittanbieter-ID .
+   Optional können Sie einen Target-ID-Namespace eines Drittanbieters angeben, um die Profilsynchronisierung mit einem Identity-Namespace (z. B. einer CRM-ID) zu unterstützen. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=de#target-third-party-id-namespace)-Namespace für Target-Drittanbieter-ID .
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -81,7 +81,7 @@ Aktualisieren Sie Ihre Datenstromkonfiguration, um sicherzustellen, dass Daten v
 
 1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche **[!UICONTROL Datenströme]** und wählen Sie Ihren Datenstrom aus, z. B. **[!DNL Luma Mobile App]**.
 1. Wählen Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) für **[!UICONTROL Experience Platform]** und wählen Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus dem Kontextmenü.
-1. Stellen Sie **[!UICONTROL Bildschirm Datenströme]** > ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** sicher, dass **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge-Segmentierung]** und **[!UICONTROL Personalization-Ziele]** ausgewählt sind. Wenn Sie auch den Journey Optimizer-Lektionen folgen, wählen Sie **[!UICONTROL Adobe Journey Optimizer]**. Weitere Informationen finden Sie unter {[}Adobe Experience Platform-Einstellungen.](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)
+1. Stellen Sie **[!UICONTROL Bildschirm Datenströme]** > ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** sicher, dass **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge-Segmentierung]** und **[!UICONTROL Personalization-Ziele]** ausgewählt sind. Wenn Sie auch den Journey Optimizer-Lektionen folgen, wählen Sie **[!UICONTROL Adobe Journey Optimizer]**. Weitere Informationen finden Sie unter {[}Adobe Experience Platform-Einstellungen.](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=de#aep)
 1. Um Ihre Datenstromkonfiguration zu speichern, wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![Konfiguration des AEP-Datenstroms](assets/datastream-aep-configuration-target.png)
@@ -293,6 +293,6 @@ Sie sollten jetzt über alle Tools verfügen, um Ihrer App weitere A/B-Tests ode
 >
 >Sie haben die App für A/B-Tests aktiviert und die Ergebnisse eines A/B-Tests mit der Offer Decisioning- und Target-Erweiterung für Adobe Experience Platform Mobile SDK angezeigt.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
 
 Weiter: **[Abschluss und nächste Schritte](conclusion.md)**
