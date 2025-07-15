@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: a9f2e42d001e260f79439850bc5a364a64d1fc0e
+source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
 workflow-type: tm+mt
 source-wordcount: '3788'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Das erste, was benötigt wird, um dies zu erreichen, ist eine Schwarz-Weiß-Vers
 
 ### 1.1.1.3.1 Erstellen des Referenzbilds für die Komposition
 
-Sie können [dieses Beispielbild](./images/CitiSignal.jpg) verwenden oder Ihren eigenen Text zum Experimentieren erstellen. Gehen Sie in Adobe Illustrator wie folgt vor, um Ihre eigene Bilddatei zu erstellen. Wenn Sie das vordefinierte Bild verwenden möchten, überspringen Sie den folgenden Abschnitt und fahren Sie direkt mit Schritt **1.1.1.2.2** Bild erstellen fort.
+Sie können [dieses Beispielbild](./images/CitiSignal.jpg) verwenden oder Ihren eigenen Text zum Experimentieren erstellen. Gehen Sie in Adobe Illustrator wie folgt vor, um Ihre eigene Bilddatei zu erstellen. Wenn Sie das vordefinierte Bild verwenden möchten, überspringen Sie den folgenden Abschnitt und fahren Sie direkt mit Schritt **1.1.1.3.2** Bild erstellen fort.
 
 Öffnen Sie **Adobe Illustrator**. Klicken Sie auf **Neue Datei**.
 
@@ -451,7 +451,7 @@ Dann sollte man ein hyperrealistisches Bild von **Pferden auf einem Feld** sehen
 
 Kehren Sie zur Anfrage mit dem Namen **POST - Firefly - T2I V4** aus der **FF - Firefly Services Tech Insiders**-Sammlung zurück und navigieren Sie zu **Headers** der Anfrage.
 
-Ändern Sie die Variable **x-model-version** in `image4_ultra`. In diesem Beispiel verwenden Sie `image4_standard`.
+Ändern Sie die Variable **x-model-version** in `image4_ultra`. In diesem Beispiel verwenden Sie `image4_ultra`.
 
 ![Firefly](./images/ffim4_11.png)
 

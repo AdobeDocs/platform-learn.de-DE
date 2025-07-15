@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 1%
+source-wordcount: '1038'
+ht-degree: 2%
 
 ---
 
@@ -233,6 +233,8 @@ In der vorherigen Übung haben Sie die Datei [CitiSignal-GSPeM-assets.zip](../..
 
 ![GSPeM](./images/gspem17.png)
 
+### Meta-Vorlage
+
 Navigieren Sie **Inhalt** > **Vorlagen**. Klicken Sie auf **+ Vorlage hinzufügen**.
 
 ![GSPeM](./images/gspem125.png)
@@ -261,6 +263,8 @@ Verwenden Sie dies für das Feld **Vorlagenname**:
 Ihre Vorlage wurde jetzt gespeichert und ist in der Vorlagenbibliothek verfügbar.
 
 ![GSPeM](./images/gspem131.png)
+
+### Anzeigen von Banner-Anzeigenvorlagen
 
 Klicken Sie auf **+ Vorlage hinzufügen**.
 
@@ -348,6 +352,39 @@ Verwenden Sie dies für das Feld **Vorlagenname**:
 Ihre Vorlage wurde jetzt gespeichert und ist in der Vorlagenbibliothek verfügbar.
 
 ![GSPeM](./images/gspem152.png)
+
+### E-Mail-Vorlage
+
+Klicken Sie auf **+ Vorlage hinzufügen**.
+
+![GSPeM](./images/gspem153.png)
+
+Wählen Sie **E-Mail** aus und klicken Sie dann auf **Durchsuchen**.
+
+![GSPeM](./images/gspem154.png)
+
+Navigieren Sie im Ordner, der die heruntergeladenen **CitiSignal-GSPeM-assets**-Dateien enthält, zum Ordner **templates**. Wählen Sie die Datei **Citisignal-email-template.html** aus und klicken Sie auf **Öffnen**.
+
+![GSPeM](./images/gspem155.png)
+
+Sie sollten das dann sehen. Klicken Sie auf **Weiter**.
+
+![GSPeM](./images/gspem156.png)
+
+Klicken Sie auf **Weiter**.
+
+![GSPeM](./images/gspem157.png)
+
+Verwenden Sie dies für das Feld **Vorlagenname**:
+`--aepUserLdap---citisignal-email-template`.
+
+Klicken Sie **Vorlage veröffentlichen**.
+
+![GSPeM](./images/gspem158.png)
+
+Ihre Vorlage wurde jetzt gespeichert und ist in der Vorlagenbibliothek verfügbar.
+
+![GSPeM](./images/gspem159.png)
 
 Sie haben jetzt die Vorlagen konfiguriert, die Sie für die nächste Übung benötigen.
 

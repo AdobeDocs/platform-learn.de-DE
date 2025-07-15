@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,10 @@ In dieser Übung konfigurieren Sie Rollen, Produkte und Vorlagen in GenStudio fo
 [1.3.3 Kampagnenaktivierung für Meta](./ex3.md){target="_blank"}
 
 In dieser Übung erstellen Sie eine Kampagne. Sie konfigurieren auch eine Verbindung zu Meta und führen alle Schritte durch, die erforderlich sind, um eine Anzeige zu erstellen, eine Anzeige mit Adobe Workfront zu genehmigen und eine Anzeige in Meta zu veröffentlichen.
+
+[1.3.4 E-Mail-Erlebnis für AJO erstellen](./ex4.md){target="_blank"}
+
+In dieser Übung erstellen Sie ein E-Mail-Erlebnis mithilfe einer Vorlage in GenStudio for Performance Marketing und teilen dieses Erlebnis mit Adobe Journey Optimizer, um eine E-Mail-Kampagne zu senden.
 
 [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
