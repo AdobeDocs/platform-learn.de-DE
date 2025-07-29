@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie Oracle-Datenbanken in Adobe Experience Platform verbinden, um Schemata zu ermitteln, Datenmodelle zu erstellen und die Daten zur Zielgruppenanreicherung zu verwenden. Das Video führt Sie schrittweise durch das Hinzufügen einer Federated Oracle-Datenbank, von der Navigation zum Abschnitt Federated Data bis zur Eingabe von Verbindungsdetails.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470069/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470085/?learn=on&enablevpops&captions=ger)

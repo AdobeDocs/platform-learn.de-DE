@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie mit dem Abfrage-Editor von Adobe Experience Platform SQL-Abfragen effizient erstellen, ausführen und verwalten können. Betrachterinnen und Betrachter erfahren, wie Sie Funktionen wie den Objektbrowser, automatische Vervollständigung, parametrisierte Abfragen und Planungs-Tools verwenden können, um Daten-Workflows zu optimieren und in ihrer gesamten Organisation umsetzbare Einblicke zu generieren. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33392?learn=on&enablevpops&captions=ger)

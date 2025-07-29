@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie Warnhinweise zur Federated-Audience-Komposition abonnieren, um In-App- oder E-Mail-Benachrichtigungen für erfolgreiche und fehlgeschlagene Ausführungen zu erhalten. Um dies zu aktivieren, konfigurieren Sie deren Voreinstellungen in den Benachrichtigungseinstellungen unter dem Experience Platform-Produkt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470063/?learn=on&enablevpops&captions=ger)
 
 
 ## Aktivieren von Benachrichtigungen
