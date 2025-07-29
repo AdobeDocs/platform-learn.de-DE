@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Source-Zielgruppen als Advertiser in Real-Time CDP Collaboration
 
-Erfahren Sie, wie Sie als Werbetreibender Zielgruppen beschaffen und in Ihre Benutzeroberfläche integrieren können, damit diese bei der Zusammenarbeit mit Partnern verwendet werden können. Eine ausführliche Dokumentation finden Sie unter [Zielgruppen abrufen und verwalten](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
+Erfahren Sie, wie Sie als Werbetreibender Zielgruppen beschaffen und in Ihre Benutzeroberfläche integrieren können, damit diese bei der Zusammenarbeit mit Partnern verwendet werden können. Eine ausführliche Dokumentation finden Sie unter [Zielgruppen abrufen und verwalten](https://experienceleague.adobe.com/de/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)

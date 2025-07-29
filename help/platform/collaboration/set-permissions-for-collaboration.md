@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Festlegen von Berechtigungen für Real-Time CDP Collaboration
 
-Erfahren Sie, wie Sie die erforderlichen Berechtigungen für den Zugriff auf und die Verwendung von Real-Time CDP Collaboration einrichten. Eine ausführliche Dokumentation finden Sie unter [Zugriffskontrolle - Übersicht](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}.
+Erfahren Sie, wie Sie die erforderlichen Berechtigungen für den Zugriff auf und die Verwendung von Real-Time CDP Collaboration einrichten. Eine ausführliche Dokumentation finden Sie unter [Zugriffskontrolle - Übersicht](https://experienceleague.adobe.com/de/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452216/?learn=on&enablevpops)
 
