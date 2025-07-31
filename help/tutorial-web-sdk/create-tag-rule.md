@@ -70,7 +70,7 @@ Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot;
 
 In diesem Video erhalten Sie einen Überblick über den Prozess:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454036/?learn=on&enablevpops&captions=ger)
 
 ### Globale Konfigurationsfelder
 
