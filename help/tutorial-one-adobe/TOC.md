@@ -4,9 +4,9 @@ breadcrumb-title: Ein technisches Tutorial zu Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1222'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,17 @@ ht-degree: 3%
       + [Option 2: PostBuster-Einrichtung](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [Zu installierende Anwendungen](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
 
-+ Workflow und Planung {#planning}
++ Workflow und Planung {#wfplanning}
+   + 1.1 Workfront-Planung {#wfpl1}
+      + [Überblick](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
+      + [1.1.1 Erste Schritte mit Workfront Planning](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
+      + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
+   + 1.2 Workfront {#wfpl2}
+      + [Überblick](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
+      + [1.2.1 Erste Schritte mit Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+      + [1.2.2 Proofing mit Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
+      + [1.2.5 Integration von Workfront und Photoshop](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
+      + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 
 + Erstellung und Produktion {#production}
    + 1.1 Überblick über Adobe Firefly Services {#crpr1}
@@ -74,12 +84,6 @@ ht-degree: 3%
       + [1.1.5 Erweiterter benutzerdefinierter Block](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [1.1.6 AEM Edge Delivery Services MarTech-Plug-in](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
-   + 1.2 Workfront {#assetm2}
-      + [Überblick](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/workfront.md)
-      + [1.2.1 Erste Schritte mit Workfront](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
-      + [1.2.2 Proofing mit Workfront](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex2.md)
-      + [1.2.5 Integration von Workfront und Photoshop](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex5.md)
-      + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + Versand und Aktivierung {#activation}
    + Datenerfassung {#dc}
