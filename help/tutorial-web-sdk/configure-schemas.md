@@ -58,7 +58,7 @@ Dies ist das Ziel des [Experience-Datenmodells](https://business.adobe.com/produ
 >
 > Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema zur Erfassung von Inhalten und Produkten, die von Kundinnen und Kunden auf der [Demo-Site von Luma) angesehen ](https://luma.enablementadobe.com/content/luma/us/en.html). Sie können diese Schritte zwar verwenden, um ein anderes Schema für Ihre eigenen Zwecke zu erstellen, es wird jedoch empfohlen, zunächst das Beispielschema zu erstellen, um mehr über die Funktionen des Schema-Editors zu erfahren.
 
-Weitere Informationen zu XDM-Schemata finden Sie in der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oder in der [XDM-Systemübersicht](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home).
+Weitere Informationen zu XDM-Schemata finden Sie in der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/de/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oder in der [XDM-Systemübersicht](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home).
 
 ## Lernziele
 
@@ -107,9 +107,9 @@ In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen grundlegenden 
 
 ## Feldergruppen hinzufügen
 
-Wie bereits erwähnt, ist XDM das zentrale Framework, das Kundenerlebnisdaten standardisiert, indem gemeinsame Strukturen und Definitionen für nachgelagerte Adobe Experience Platform-Services bereitgestellt werden. Durch die Einhaltung von XDM-Standards _alle Kundenerlebnisdaten_ in eine gemeinsame Darstellung integriert werden. Mit diesem Ansatz können Sie wertvolle Einblicke aus Kundenaktionen gewinnen, Zielgruppen mithilfe von Segmenten definieren und Kundenattribute für Personalisierungszwecke mithilfe von Daten aus verschiedenen Quellen ausdrücken. Weitere Informationen finden [ unter „Best Practices ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) Datenmodellierung“.
+Wie bereits erwähnt, ist XDM das zentrale Framework, das Kundenerlebnisdaten standardisiert, indem gemeinsame Strukturen und Definitionen für nachgelagerte Adobe Experience Platform-Services bereitgestellt werden. Durch die Einhaltung von XDM-Standards _alle Kundenerlebnisdaten_ in eine gemeinsame Darstellung integriert werden. Mit diesem Ansatz können Sie wertvolle Einblicke aus Kundenaktionen gewinnen, Zielgruppen mithilfe von Segmenten definieren und Kundenattribute für Personalisierungszwecke mithilfe von Daten aus verschiedenen Quellen ausdrücken. Weitere Informationen finden [ unter „Best Practices ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/best-practices) Datenmodellierung“.
 
-Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein produktunabhängiges Modell und Namenskonventionen einzuhalten. Für alle unternehmensspezifischen Daten, die nicht zu den oben vordefinierten Feldergruppen passen, können Sie eine benutzerdefinierte Feldergruppe erstellen. Unter [Erstellen eines Schemas mit dem Schema-Editor](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) finden Sie detailliertere Schritte zu benutzerdefinierten Schemata.
+Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein produktunabhängiges Modell und Namenskonventionen einzuhalten. Für alle unternehmensspezifischen Daten, die nicht zu den oben vordefinierten Feldergruppen passen, können Sie eine benutzerdefinierte Feldergruppe erstellen. Unter [Erstellen eines Schemas mit dem Schema-Editor](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#create) finden Sie detailliertere Schritte zu benutzerdefinierten Schemata.
 
 >[!TIP]
 > 
@@ -133,7 +133,7 @@ Beachten Sie bei beiden Feldergruppen, dass Sie Zugriff auf die am häufigsten v
 
 ![Schemafeldgruppen](assets/schema-consumer-experience-event.png)
 
-Diese Lektion ist nur ein Anfang. Beim Erstellen eines eigenen Web-Ereignisschemas müssen Sie Ihre Geschäftsanforderungen untersuchen und dokumentieren. Dieser Prozess ähnelt dem Erstellen eines [Geschäftsanforderungsdokuments](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) und einer [Lösungs-Design-Referenz](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) für eine Adobe Analytics-Implementierung, sollte jedoch Anforderungen für _alle nachgelagerten Datenempfänger_ wie Platform-, Target- und Ereignisweiterleitungsziele enthalten.
+Diese Lektion ist nur ein Anfang. Beim Erstellen eines eigenen Web-Ereignisschemas müssen Sie Ihre Geschäftsanforderungen untersuchen und dokumentieren. Dieser Prozess ähnelt dem Erstellen eines [Geschäftsanforderungsdokuments](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) und einer [Lösungs-Design-Referenz](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) für eine Adobe Analytics-Implementierung, sollte jedoch Anforderungen für _alle nachgelagerten Datenempfänger_ wie Platform-, Target- und Ereignisweiterleitungsziele enthalten.
 
 
 ### Das identityMap-Objekt
@@ -147,7 +147,7 @@ Es ist ein unverzichtbares Objekt für jede Web-bezogene Datenerfassung, da es d
 
 >[!IMPORTANT]
 >
-> Es ist möglich, &quot;**[!UICONTROL &quot; für]** Schema zu aktivieren, bevor das Schema gespeichert wird. **Aktivieren Sie** jetzt nicht. Nachdem ein Schema für das Profil aktiviert wurde, kann es nicht mehr deaktiviert oder gelöscht werden, ohne dass die gesamte Sandbox zurückgesetzt wird. Felder können derzeit auch nicht aus Schemata entfernt werden, obwohl es möglich ist, Felder in der Benutzeroberfläche [ verwerfen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Auswirkungen sollten Sie später im Auge behalten, wenn Sie mit Ihren eigenen Daten in Ihrer Produktionsumgebung arbeiten.
+> Es ist möglich, &quot;**[!UICONTROL &quot; für]** Schema zu aktivieren, bevor das Schema gespeichert wird. **Aktivieren Sie** jetzt nicht. Nachdem ein Schema für das Profil aktiviert wurde, kann es nicht mehr deaktiviert oder gelöscht werden, ohne dass die gesamte Sandbox zurückgesetzt wird. Felder können derzeit auch nicht aus Schemata entfernt werden, obwohl es möglich ist, Felder in der Benutzeroberfläche [ verwerfen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Auswirkungen sollten Sie später im Auge behalten, wenn Sie mit Ihren eigenen Daten in Ihrer Produktionsumgebung arbeiten.
 >
 >
 >Diese Einstellung wird in der Lektion [Einrichten von Experience Platform](setup-experience-platform.md) näher erläutert.
@@ -162,4 +162,4 @@ Jetzt können Sie auf dieses Schema verweisen, wenn Sie die Web SDK-Erweiterung 
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)

@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Einrichten des Journey Optimizer-Webkanals mit Web SDK
 
-Erfahren Sie, wie Sie den Adobe Journey Optimizer [Webkanal) ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Adobe Experience Platform Web SDK implementieren. In dieser Lektion werden die grundlegenden Voraussetzungen für den Web-Kanal, detaillierte Schritte für die Konfiguration und ein tiefer Einblick in einen Anwendungsfall mit Schwerpunkt auf dem Treuestatus behandelt.
+Erfahren Sie, wie Sie den Adobe Journey Optimizer [Webkanal) ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/web/get-started-web) Adobe Experience Platform Web SDK implementieren. In dieser Lektion werden die grundlegenden Voraussetzungen für den Web-Kanal, detaillierte Schritte für die Konfiguration und ein tiefer Einblick in einen Anwendungsfall mit Schwerpunkt auf dem Treuestatus behandelt.
 
 In dieser Lektion können Journey Optimizer-Benutzer den Web-Kanal für die erweiterte Online-Personalisierung mit dem Journey Optimizer-Web-Designer verwenden.
 
@@ -52,7 +52,7 @@ Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
   > 1. Die Website ist in einen iframe eingebettet.
   > 1. Die QA- oder Staging-Site des Kunden ist nicht von außen zugänglich (es handelt sich um eine interne Site).
 
-* Beim Erstellen von Web-Erlebnissen und Einschließen von Inhalten aus der Adobe Experience Manager Assets Essentials-Bibliothek ist es erforderlich, [die Subdomain zum Veröffentlichen dieses Inhalts zu konfigurieren](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
+* Beim Erstellen von Web-Erlebnissen und Einschließen von Inhalten aus der Adobe Experience Manager Assets Essentials-Bibliothek ist es erforderlich, [die Subdomain zum Veröffentlichen dieses Inhalts zu konfigurieren](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Wenn Sie die Funktion für Inhaltsexperimente verwenden, stellen Sie sicher, dass Ihr Web-Datensatz auch in Ihrer Berichtskonfiguration enthalten ist.
 * Derzeit werden zwei Arten von Implementierungen unterstützt, um die Erstellung und Bereitstellung von Web-Kanal-Kampagnen in Ihren Web-Eigenschaften zu ermöglichen:
    * Nur Client-seitig: Um Ihre Website zu ändern, müssen Sie die Adobe Experience Platform Web SDK implementieren.
@@ -123,7 +123,7 @@ So konfigurieren Sie die Option in der Zusammenführungsrichtlinie:
 
 Um Inhaltsexperimente in Web-Kanal-Kampagnen zu verwenden, müssen Sie sicherstellen, dass der verwendete Web-Datensatz auch in Ihrer Berichtskonfiguration enthalten ist. Das Journey Optimizer-Berichtssystem verwendet den Datensatz schreibgeschützt, um vordefinierte Inhaltsexperimentberichte auszufüllen.
 
-[Das Hinzufügen von Datensätzen für das Reporting zu Inhaltsexperimenten wird in diesem Abschnitt beschrieben](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
+[Das Hinzufügen von Datensätzen für das Reporting zu Inhaltsexperimenten wird in diesem Abschnitt beschrieben](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## Anwendungsfall - Übersicht - Treueprämien
 
@@ -302,7 +302,7 @@ Die für Chrome und Firefox verfügbare Adobe Experience Platform Debugger-Erwei
 
 Sie können den Debugger auf der Luma-Site verwenden, um das Web-Kanalerlebnis in der Produktion zu validieren. Dies ist eine Best Practice, sobald der Anwendungsfall Treueprämien ausgeführt wird, um sicherzustellen, dass alles richtig konfiguriert ist.
 
-[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/debugger/overview).
 
 So starten Sie die Validierung mit dem Debugger:
 
@@ -337,4 +337,4 @@ So starten Sie die Validierung mit dem Debugger:
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)

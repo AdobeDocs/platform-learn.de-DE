@@ -56,7 +56,7 @@ Ereignisbasierte Angebote werden derzeit in Adobe Journey Optimizer nicht unters
 
 ## Zugriff auf das Entscheidungs-Management gewähren
 
-Um Zugriff auf die Funktionen des Entscheidungs-Managements zu gewähren, müssen Sie ein **Produktprofil** erstellen und den Benutzern die entsprechenden Berechtigungen zuweisen. [ Weitere Informationen zur Verwaltung von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Um Zugriff auf die Funktionen des Entscheidungs-Managements zu gewähren, müssen Sie ein **Produktprofil** erstellen und den Benutzern die entsprechenden Berechtigungen zuweisen. [ Weitere Informationen zur Verwaltung von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Konfigurieren des Datenstroms
 
@@ -339,7 +339,7 @@ Um mit dem Testen zu beginnen, wählen Sie die **Simulationen** aus dem Menü **
 
 ### Testen von Treueangeboten
 
-1. Testprofil auswählen, das für die Simulation verwendet werden soll. Klicken Sie **Profil verwalten**. [Um ein neues Testprofil für Angebotstests zu erstellen oder festzulegen, folgen Sie diesem Handbuch](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Testprofil auswählen, das für die Simulation verwendet werden soll. Klicken Sie **Profil verwalten**. [Um ein neues Testprofil für Angebotstests zu erstellen oder festzulegen, folgen Sie diesem Handbuch](https://experienceleague.adobe.com/de/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ Die Erweiterung **Adobe Experience Platform Debugger**, die für Chrome und Fire
 
 Sie können den Debugger auf der Luma-Site verwenden, um die Entscheidungslogik in der Produktion zu validieren. Diese Validierung empfiehlt sich, sobald der Anwendungsfall „Treueprämien“ ausgeführt wird, um sicherzustellen, dass alles korrekt konfiguriert ist.
 
-[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/debugger/overview).
 
 So starten Sie die Validierung mit dem Debugger:
 
@@ -402,4 +402,4 @@ So starten Sie die Validierung mit dem Debugger:
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
