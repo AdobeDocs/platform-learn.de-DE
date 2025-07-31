@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Ado
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '605'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,7 @@ Adobe Experience Platform Assurance ist eine Funktion, mit der Sie die Datenerfa
 Am Ende dieser Lektion können Sie:
 
 * Starten einer Assurance-Sitzung
-* Anzeigen von Anfragen, die an das und vom Platform-Edge Network gesendet werden
+* Anzeigen von Anfragen, die an und von Platform Edge Network gesendet werden
 
 ## Voraussetzungen
 
@@ -43,12 +43,12 @@ Es gibt mehrere Möglichkeiten, eine Assurance-Sitzung zu starten.
 
 ### Starten einer Assurance-Sitzung im Debugger
 
-Jedes Mal, wenn Sie Edge Trace im Adobe Experience Platform Debugger aktivieren, wird eine Assurance-Sitzung im Hintergrund gestartet.
+Jedes Mal, wenn Sie Edge Trace in Adobe Experience Platform Debugger aktivieren, wird eine Assurance-Sitzung im Hintergrund gestartet.
 
 Überprüfen Sie dies in der Debugger-Lektion:
 
 1. Wechseln Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html) und verwenden Sie den Debugger, [ die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. Wählen Sie im linken Navigationsbereich von **[!UICONTROL Experience Platform Debugger]** Protokolle **[!UICONTROL aus]**
+1. Wählen Sie im linken Navigationsbereich von **[!UICONTROL Experience Platform Debugger]** die Option **[!UICONTROL Protokolle]**
 1. Wählen Sie die Registerkarte **[!UICONTROL Edge]** und dann **[!UICONTROL Verbinden]**
 
    ![Edge Trace verbinden](assets/analytics-debugger-edgeTrace.png)
@@ -76,7 +76,7 @@ Jedes Mal, wenn Sie Edge Trace im Adobe Experience Platform Debugger aktivieren,
 
 ## Überprüfen des aktuellen Status Ihrer Web SDK-Implementierung
 
-Es gibt nur wenige Informationen, die Sie in diesem Stadium Ihrer Implementierung anzeigen können. Ein angezeigter Wert ist die Experience Cloud-ID (ECID), die auf dem Platform-Edge Network generiert wird:
+Es gibt nur wenige Informationen, die Sie in diesem Stadium Ihrer Implementierung anzeigen können. Ein möglicher Wert ist die Experience Cloud-ID (ECID), die in Platform Edge Network generiert wird:
 
 1. Wählen Sie die Zeile mit dem Ereignis `Alloy Response Handle`.
 1. Auf der rechten Seite wird ein Menü angezeigt. Klicken Sie auf das `+` neben `[!UICONTROL ACPExtensionEventData]`
@@ -88,12 +88,10 @@ Es gibt nur wenige Informationen, die Sie in diesem Stadium Ihrer Implementierun
    >
    >Aufgrund der Breite des Fensters wird möglicherweise ein gekürzter ECID-Wert angezeigt. Wählen Sie einfach den Ziehgriff in der Benutzeroberfläche aus und ziehen Sie ihn nach links, um die gesamte ECID anzuzeigen.
 
-In zukünftigen Lektionen verwenden Sie Assurance, um vollständig verarbeitete Payloads zu validieren, die eine in Ihrem Datenstrom aktivierte Adobe-Anwendung erreichen.
+In zukünftigen Lektionen verwenden Sie Assurance, um vollständig verarbeitete Payloads zu validieren, sodass sie ein in Ihrem Datenstrom aktiviertes Adobe-Programm erreichen.
 
-Da ein XDM-Objekt jetzt auf einer Seite ausgelöst wird und Sie wissen, wie Sie Ihre Datenerfassung validieren, können Sie mit Platform Web SDK Experience Platform und die einzelnen Adobe-Anwendungen einrichten.
-
-[Weiter: ](setup-experience-platform.md)
+Da ein XDM-Objekt jetzt auf einer Seite ausgelöst wird und Sie wissen, wie Sie Ihre Datenerfassung validieren, können Sie Experience Platform und die einzelnen Adobe-Programme mithilfe von Platform Web SDK einrichten.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

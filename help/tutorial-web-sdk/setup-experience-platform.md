@@ -3,9 +3,9 @@ title: Streamen von Daten an Adobe Experience Platform mit Platform Web SDK
 description: Erfahren Sie, wie Sie Web-Daten mit Web SDK an Adobe Experience Platform streamen. Diese Lektion ist Teil des Tutorials „Implementieren von Adobe Experience Cloud mit Web SDK“.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2306'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ Richten wir einen Datensatz für Ihre Luma-Web-Ereignisdaten ein:
 
    ![Datensatz aus Schema erstellen](assets/experience-platform-create-dataset-schema.png)
 
-1. Wählen Sie das in der [ Lektion erstellte `Luma Web Event Data` Schema ](configure-schemas.md) und klicken Sie dann auf **[!UICONTROL Weiter]**
+1. Wählen Sie das in der `Luma Web Event Data` Lektion erstellte [ Schema ](configure-schemas.md) und klicken Sie dann auf **[!UICONTROL Weiter]**
 
    ![Datensatz, Schema auswählen](assets/experience-platform-create-dataset-schema-selection.png)
 
@@ -72,7 +72,7 @@ Ein Datensatz ist jetzt so konfiguriert, dass er mit der Erfassung von Daten aus
 
 ## Konfigurieren des Datenstroms
 
-Jetzt können Sie Ihren [!UICONTROL Datenstrom) so konfigurieren] dass Daten an [!UICONTROL Adobe Experience Platform gesendet &#x200B;]. Der Datenstrom ist die Verknüpfung zwischen Ihrer Tag-Eigenschaft, der Platform Edge Network und dem Experience Platform-Datensatz.
+Jetzt können Sie Ihren [!UICONTROL Datenstrom) so konfigurieren] dass Daten an [!UICONTROL Adobe Experience Platform gesendet ]. Der Datenstrom ist die Verknüpfung zwischen Ihrer Tag-Eigenschaft, der Platform Edge Network und dem Experience Platform-Datensatz.
 
 1. Öffnen Sie die [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"}.
 1. Wählen **[!UICONTROL Datenströme]** in der linken Navigationsleiste aus
@@ -126,7 +126,7 @@ Jetzt sollten die Daten im `Luma Web Event Data` Datensatz ausgefüllt und für 
 
 Um zu bestätigen, dass die Daten im Data Lake von Platform gelandet sind, besteht eine schnelle Option darin, die Funktion **[!UICONTROL Datensatz in der Vorschau anzeigen]** zu verwenden. Web SDK-Daten werden in Mikro-Batches mit dem Data Lake verknüpft und in der Platform-Oberfläche regelmäßig aktualisiert. Es kann 10-15 Minuten dauern, bis die von Ihnen generierten Daten angezeigt werden.
 
-1. Wählen Sie in der [&#128279;](https://experience.adobe.com/platform/) von Experience Platform **[!UICONTROL im linken]** die Option Daten-Management > Datensätze aus, um das Dashboard **[!UICONTROL Datensätze]** zu öffnen.
+1. Wählen Sie in der [ von ](https://experience.adobe.com/platform/)Experience Platform **[!UICONTROL im linken]** die Option Daten-Management > Datensätze aus, um das Dashboard **[!UICONTROL Datensätze]** zu öffnen.
 
    Das Dashboard listet alle verfügbaren Datensätze für Ihre Organisation auf. Zu jedem aufgelisteten Datensatz werden Details angezeigt, einschließlich seines Namens, des Schemas, dem der Datensatz entspricht, und des Status des letzten Erfassungslaufs.
 
@@ -147,7 +147,7 @@ Um zu bestätigen, dass die Daten im Data Lake von Platform gelandet sind, beste
 
 ### Daten abfragen
 
-1. Wählen Sie in der [&#128279;](https://experience.adobe.com/platform/) von Experience Platform **[!UICONTROL im linken Navigationsbereich die Option Daten-Management >]** Abfragen) aus, um den Bildschirm **[!UICONTROL Abfragen]** zu öffnen.
+1. Wählen Sie in der [ von ](https://experience.adobe.com/platform/)Experience Platform **[!UICONTROL im linken Navigationsbereich die Option Daten-Management >]** Abfragen) aus, um den Bildschirm **[!UICONTROL Abfragen]** zu öffnen.
 1. Wählen Sie **[!UICONTROL Abfrage erstellen]**
 1. Führen Sie zunächst eine Abfrage aus, um alle Namen der Tabellen im Data Lake anzuzeigen. Geben Sie `SHOW TABLES` im Abfrage-Editor ein und klicken Sie auf das Wiedergabesymbol, um die Abfrage auszuführen.
 1. Beachten Sie in den Ergebnissen, dass der Tabellenname in etwa `luma_web_event_data` lautet
@@ -160,14 +160,14 @@ Um zu bestätigen, dass die Daten im Data Lake von Platform gelandet sind, beste
 
 >[!INFO]
 >
->  Weitere Informationen zum Abfrage-Service von Adobe Experience Platform finden Sie unter [Erkunden von Daten](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/queries/explore-data) im Abschnitt Platform-Tutorials .
+>  Weitere Informationen zum Abfrage-Service von Adobe Experience Platform finden Sie unter [Erkunden von Daten](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) im Abschnitt Platform-Tutorials .
 
 
 ## Aktivieren von Datensatz und Schema für das Echtzeit-Kundenprofil
 
 Für Kunden von Real-Time Customer Data Platform und Journey Optimizer besteht der nächste Schritt darin, den Datensatz und das Schema für das Echtzeit-Kundenprofil zu aktivieren. Das Daten-Streaming aus Web SDK ist eine von vielen Datenquellen, die in Platform fließen, und Sie möchten Ihre Web-Daten mit anderen Datenquellen verbinden, um 360-Grad-Kundenprofile zu erstellen. Weitere Informationen zum Echtzeit-Kundenprofil finden Sie in diesem kurzen Video:
 
->[!VIDEO](https://video.tv.adobe.com/v/31581?learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -228,9 +228,9 @@ Sie können in der Platform-Benutzeroberfläche (oder der Journey Optimizer-Benu
 
 Zunächst müssen Sie mehr Beispieldaten generieren. Wiederholen Sie die Schritte oben in dieser Lektion, um sich bei der Luma-Website anzumelden, wenn sie Ihrer Tag-Eigenschaft zugeordnet ist. Überprüfen Sie die Platform Web SDK-Anfrage, um sicherzustellen, dass Daten mit der `lumaCRMId` gesendet werden.
 
-1. Experience Platform Wählen Sie in der [&#128279;](https://experience.adobe.com/platform/) von im linken Navigationsbereich **[!UICONTROL Kunde]** > **[!UICONTROL Profile]** aus
+1. Experience Platform Wählen Sie in der [ von ](https://experience.adobe.com/platform/)im linken Navigationsbereich **[!UICONTROL Kunde]** > **[!UICONTROL Profile]** aus
 
-1. Verwenden Sie `lumaCRMId` als **[!UICONTROL Identity]** Namespace
+1. Verwenden Sie **[!UICONTROL als]** Identity`lumaCRMId`Namespace
 1. Kopieren Sie den Wert der `lumaCRMId`, die bei dem von Ihnen im Experience Platform Debugger geprüften Aufruf übergeben wurde, und fügen Sie ihn ein, in diesem Fall `b642b4217b34b1e8d3bd915fc65c4452`.
 
    ![Profil](assets/experience-platform-validate-dataset-profile.png)
@@ -269,7 +269,7 @@ Erstellen Sie das Treueschema:
 1. Benennen des `Luma Loyalty Schema`
 1. Fügen Sie die [!UICONTROL Treuedetails] hinzu
 1. Fügen Sie die [!UICONTROL Demografische Details] hinzu
-1. Wählen Sie das Feld `Person ID` aus und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre &#x200B;] mithilfe des `Luma CRM Id`[!UICONTROL Identity-Namespace].
+1. Wählen Sie das Feld `Person ID` aus und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre ] mithilfe des `Luma CRM Id`[!UICONTROL Identity-Namespace].
 1. Aktivieren Sie das Schema für [!UICONTROL Profil]. Wenn Sie den Umschalter Profil nicht finden können, klicken Sie oben links auf den Schemanamen.
 1. Schema speichern
 
@@ -338,8 +338,6 @@ Zielgruppen gruppieren Profile anhand gemeinsamer Eigenschaften. Erstellen Sie e
 Da es sich um eine sehr einfache Zielgruppe handelt, können wir die Edge-Auswertungsmethode verwenden. Edge-Zielgruppen werden am Edge ausgewertet. Daher können wir mit derselben Anfrage, die der Web SDK an Platform Edge Network gestellt hat, die Zielgruppendefinition auswerten und sofort bestätigen, ob der Benutzer sich qualifiziert.
 
 
-[Weiter: ](setup-analytics.md)
-
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

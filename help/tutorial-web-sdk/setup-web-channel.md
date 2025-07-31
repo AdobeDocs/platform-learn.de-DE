@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2562'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Einrichten des Journey Optimizer-Webkanals mit Web SDK
 
-Erfahren Sie, wie Sie den Adobe Journey Optimizer [Webkanal) ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/web/get-started-web) Adobe Experience Platform Web SDK implementieren. In dieser Lektion werden die grundlegenden Voraussetzungen für den Web-Kanal, detaillierte Schritte für die Konfiguration und ein tiefer Einblick in einen Anwendungsfall mit Schwerpunkt auf dem Treuestatus behandelt.
+Erfahren Sie, wie Sie den Adobe Journey Optimizer [Webkanal) ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Adobe Experience Platform Web SDK implementieren. In dieser Lektion werden die grundlegenden Voraussetzungen für den Web-Kanal, detaillierte Schritte für die Konfiguration und ein tiefer Einblick in einen Anwendungsfall mit Schwerpunkt auf dem Treuestatus behandelt.
 
 In dieser Lektion können Journey Optimizer-Benutzer den Web-Kanal für die erweiterte Online-Personalisierung mit dem Journey Optimizer-Web-Designer verwenden.
 
@@ -52,7 +52,7 @@ Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
   > 1. Die Website ist in einen iframe eingebettet.
   > 1. Die QA- oder Staging-Site des Kunden ist nicht von außen zugänglich (es handelt sich um eine interne Site).
 
-* Beim Erstellen von Web-Erlebnissen und Einschließen von Inhalten aus der Adobe Experience Manager Assets Essentials-Bibliothek ist es erforderlich, [die Subdomain zum Veröffentlichen dieses Inhalts zu konfigurieren](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
+* Beim Erstellen von Web-Erlebnissen und Einschließen von Inhalten aus der Adobe Experience Manager Assets Essentials-Bibliothek ist es erforderlich, [die Subdomain zum Veröffentlichen dieses Inhalts zu konfigurieren](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Wenn Sie die Funktion für Inhaltsexperimente verwenden, stellen Sie sicher, dass Ihr Web-Datensatz auch in Ihrer Berichtskonfiguration enthalten ist.
 * Derzeit werden zwei Arten von Implementierungen unterstützt, um die Erstellung und Bereitstellung von Web-Kanal-Kampagnen in Ihren Web-Eigenschaften zu ermöglichen:
    * Nur Client-seitig: Um Ihre Website zu ändern, müssen Sie die Adobe Experience Platform Web SDK implementieren.
@@ -99,7 +99,7 @@ So konfigurieren Sie Adobe Journey Optimizer im Datenstrom:
 
    ![Datenstrom bearbeiten](assets/web-channel-edit-datastream.png)
 
-1. Aktivieren Sie das Kontrollkästchen **&#x200B;**&#x200B;Adobe Journey Optimizer.
+1. Aktivieren Sie das Kontrollkästchen **** Adobe Journey Optimizer.
 
    ![Kontrollkästchen AJO aktivieren](assets/web-channel-check-ajo-box.png)
 
@@ -123,7 +123,7 @@ So konfigurieren Sie die Option in der Zusammenführungsrichtlinie:
 
 Um Inhaltsexperimente in Web-Kanal-Kampagnen zu verwenden, müssen Sie sicherstellen, dass der verwendete Web-Datensatz auch in Ihrer Berichtskonfiguration enthalten ist. Das Journey Optimizer-Berichtssystem verwendet den Datensatz schreibgeschützt, um vordefinierte Inhaltsexperimentberichte auszufüllen.
 
-[Das Hinzufügen von Datensätzen für das Reporting zu Inhaltsexperimenten wird in diesem Abschnitt beschrieben](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
+[Das Hinzufügen von Datensätzen für das Reporting zu Inhaltsexperimenten wird in diesem Abschnitt beschrieben](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## Anwendungsfall - Übersicht - Treueprämien
 
@@ -145,7 +145,7 @@ So erstellen Sie eine Beispielkampagne:
    >
    > Schema, Datensätze und Zielgruppen können auch in der Journey Optimizer-Benutzeroberfläche erstellt werden, da sie alle gängige Experience Platform-Konstrukte sind.
 
-1. Navigieren Sie im linken Navigationsbereich zu &lbrace;0 **JourneyManagement >**&#x200B;[!UICONTROL &#x200B; Kampagnen &#x200B;]&#x200B;**.**
+1. Navigieren Sie im linken Navigationsbereich zu {0 **[!UICONTROL JourneyManagement >]** Kampagnen **[!UICONTROL .]**
 1. Klicken **[!UICONTROL oben]** auf „Kampagne erstellen“.
 1. Geben Sie im Abschnitt **[!UICONTROL Eigenschaften]** an, wann Sie die Kampagne ausführen möchten. Wählen Sie für den Anwendungsfall „Treueprämien“ die Option **Geplant**.
 
@@ -302,7 +302,7 @@ Die für Chrome und Firefox verfügbare Adobe Experience Platform Debugger-Erwei
 
 Sie können den Debugger auf der Luma-Site verwenden, um das Web-Kanalerlebnis in der Produktion zu validieren. Dies ist eine Best Practice, sobald der Anwendungsfall Treueprämien ausgeführt wird, um sicherzustellen, dass alles richtig konfiguriert ist.
 
-[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/debugger/overview).
+[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 So starten Sie die Validierung mit dem Debugger:
 
@@ -335,8 +335,6 @@ So starten Sie die Validierung mit dem Debugger:
    ![ADD SCREENSHOT](#)
 -->
 
-[Weiter: ](setup-decision-management.md)
-
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

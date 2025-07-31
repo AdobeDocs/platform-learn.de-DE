@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mithilfe einer Tag-Regel ein -Ereignis mit Ih
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 2%
 
 ---
@@ -66,11 +66,11 @@ Im weiteren Verlauf dieser Lektion werden wir:
 
 1. Erstellen Sie eine weitere Regel mit der Aktion **[!UICONTROL Ereignis senden]** die das vollständige XDM-Objekt an Adobe Experience Platform Edge Network sendet.
 
-Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; &#x200B;].
+Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; ].
 
 In diesem Video erhalten Sie einen Überblick über den Prozess:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454036/?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Globale Konfigurationsfelder
 
@@ -171,7 +171,7 @@ Beginnen Sie, indem Sie die Produktansichten auf der Produktdetailseite von Luma
 1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Core]**
 1. Wählen **[!UICONTROL unter „Ereignistyp]** die Option **[!UICONTROL Bibliothek geladen (Seitenanfang)]**
-1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]** die `20` aus. Dieser Reihenfolgenwert stellt sicher, dass die Regel _dem `all pages - library loaded - set global variables - 1` ausgeführt wird_ der die globale Konfiguration festlegt.
+1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]** die `20` aus. Dieser Reihenfolgenwert stellt sicher, dass die Regel _dem_ ausgeführt wird`all pages - library loaded - set global variables - 1` der die globale Konfiguration festlegt.
 1. Wählen **[!UICONTROL Änderungen beibehalten]**
 
    ![Analytics-XDM-Regeln](assets/set-up-analytics-pdp.png)
@@ -238,7 +238,7 @@ Vergleichen Sie das Datenelement mit der `productListItems` (Hinweis, es sollte 
 >[!IMPORTANT]
 >
 >Beachten Sie, wie numerische Variablen übersetzt werden und Zeichenfolgenwerte in der Datenschicht, wie `price` und `qty`, im Datenelement in Zahlen umformatiert werden. Diese Formatanforderungen sind für die Datenintegrität in Platform wichtig und werden im Schritt [Schemas konfigurieren](configure-schemas.md) festgelegt. Im Beispiel verwendet **[!UICONTROL quantity]** den Datentyp **[!UICONTROL Integer]**.
-> ![Datentyp des XDM-Schemas](assets/set-up-analytics-quantity-integer.png)
+>> ![Datentyp des XDM-Schemas](assets/set-up-analytics-quantity-integer.png)
 
 Ordnen wir nun unser Array dem XDM-Objekt zu:
 
@@ -393,8 +393,6 @@ Wie Sie auf dem Bildschirm [!UICONTROL Publishing-Ablauf] sehen können, gibt es
 
 Jetzt können Sie die Daten in der Anfrage mithilfe der Adobe Experience Platform Debugger validieren.
 
-[Weiter ](validate-with-debugger.md)
-
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

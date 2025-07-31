@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Identity-Namespaces konfigurieren, die mit Ad
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '654'
 ht-degree: 12%
 
 ---
@@ -45,7 +45,7 @@ Sie müssen die vorherigen Lektionen bereits abgeschlossen haben:
 >
 >Die [Experience Cloud ID-Erweiterung](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) wird bei der Implementierung von Adobe Experience Platform Web SDK nicht benötigt, da die Web SDK JavaScript-Bibliothek die Funktionalität des Besucher-ID-Diensts enthält.
 >
-> Wenn Ihre Website bereits den Experience Cloud ID-Service auf Ihrer Website verwendet - entweder über die Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service - und Sie ihn während der Migration zu Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/de/docs/experience-platform/edge/identity/overview) für weitere Informationen.
+> Wenn Ihre Website bereits den Experience Cloud ID-Service auf Ihrer Website verwendet - entweder über die Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service - und Sie ihn während der Migration zu Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) für weitere Informationen.
 
 ## Erstellen eines Identity-Namespace
 
@@ -53,7 +53,7 @@ In dieser Übung erstellen Sie einen Identity-Namespace für das benutzerdefinie
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Identitäten in Adobe Experience Platform zu erfahren:
 
->[!VIDEO](https://video.tv.adobe.com/v/3422772?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 Erstellen Sie jetzt einen Namespace für die Luma CRM-ID:
 
@@ -96,8 +96,6 @@ Erstellen Sie jetzt einen Namespace für die Luma CRM-ID:
 
 Nachdem Identitäten eingerichtet sind, kann der Datenstrom konfiguriert werden.
 
-[Weiter: ](configure-datastream.md)
-
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

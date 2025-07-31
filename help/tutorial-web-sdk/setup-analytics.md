@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Adobe Analytics mithilfe von Experience Platf
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2903'
 ht-degree: 1%
 
 ---
 
 # Einrichten von Adobe Analytics mit Adobe Experience Platform Web SDK
 
-Erfahren Sie, wie Sie Adobe Analytics mithilfe von [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/web-sdk/overview) einrichten, Tag-Regeln erstellen, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics die Daten erwartungsgemäß erfasst.
+Erfahren Sie, wie Sie Adobe Analytics mithilfe von [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview) einrichten, Tag-Regeln erstellen, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics die Daten erwartungsgemäß erfasst.
 
 [Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics) ist eine branchenführende Anwendung, mit der Sie Ihre Kunden als Mitarbeiter verstehen und Ihr Unternehmen mit Customer Intelligence steuern können.
 
@@ -35,7 +35,7 @@ Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 * Machen Sie sich mit Adobe Analytics vertraut und haben Sie Zugriff darauf.
 
-* Sie verfügen über mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie keine Test-/Entwicklungs-Report Suite haben, die Sie für dieses Tutorial verwenden können, erstellen [ eine](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Sie verfügen über mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie keine Test-/Entwicklungs-Report Suite haben, die Sie für dieses Tutorial verwenden können, erstellen [ eine](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Die vorherigen Lektionen in den Abschnitten Erstkonfiguration und Tags-Konfiguration dieses Tutorials absolvieren.
 
@@ -78,7 +78,7 @@ Ab Mai 2024 müssen Sie kein XDM-Schema mehr erstellen, um Adobe Analytics mit P
 
 ### Automatisch zugeordnete Felder
 
-Viele XDM-Felder werden automatisch Analytics-Variablen zugeordnet. Die aktuelle Liste der Zuordnungen finden Sie unter [Analytics-Variablenzuordnung in Adobe Experience Edge](https://experienceleague.adobe.com/de/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Viele XDM-Felder werden automatisch Analytics-Variablen zugeordnet. Die aktuelle Liste der Zuordnungen finden Sie unter [Analytics-Variablenzuordnung in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Dies tritt auf, _(auch wenn Sie kein benutzerdefiniertes Schema definiert haben_. Experience Platform Web SDK erfasst automatisch einige Daten und sendet sie als XDM-Felder an Platform Edge Network. Beispielsweise liest Web SDK die URL der aktuellen Seite und sendet sie als XDM-`web.webPageDetails.URL`. Dieses Feld wird an Adobe Analytics weitergeleitet und die Seiten-URL-Berichte in Adobe Analytics werden automatisch ausgefüllt.
 
@@ -106,8 +106,8 @@ Die einzelnen Abschnitte der Analytics-Produktzeichenfolge werden durch verschie
 >[!NOTE]
 >
 >Seit dem 18. August 2022 hat `productListItems[].SKU` Priorität für die Zuordnung zum Produktnamen in der s.products-Variablen.
->&#x200B;>Der auf `productListItems[].name` festgelegte Wert wird nur dann dem Produktnamen zugeordnet, wenn `productListItems[].SKU` nicht vorhanden ist. Andernfalls ist sie nicht zugeordnet und in Kontextdaten verfügbar.
->&#x200B;>Legen Sie keine leere Zeichenfolge oder Null auf `productListItems[].SKU` fest. Dies hat den unerwünschten Effekt der Zuordnung zum Produktnamen in der s.products-Variablen.
+>>Der auf `productListItems[].name` festgelegte Wert wird nur dann dem Produktnamen zugeordnet, wenn `productListItems[].SKU` nicht vorhanden ist. Andernfalls ist sie nicht zugeordnet und in Kontextdaten verfügbar.
+>>Legen Sie keine leere Zeichenfolge oder Null auf `productListItems[].SKU` fest. Dies hat den unerwünschten Effekt der Zuordnung zum Produktnamen in der s.products-Variablen.
 
 
 ### Festlegen von Variablen im Datenobjekt
@@ -374,7 +374,7 @@ Navigieren Sie zu einer Produktseite wie der [Didi Sport Watch-Produktseite](htt
 
 ### Validierung von Produktzeichenfolgen und E-Commerce-Ereignissen
 
-Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weiterhin dieselbe Edge Trace, um zu überprüfen, ob Produktdaten von Analytics erfasst werden. Sowohl die Produktzeichenfolge als auch die E-Commerce-Ereignisse werden Analytics automatisch XDM-Variablen zugeordnet. Sofern Sie beim Konfigurieren [ XDM-Schemas für Adobe Analytics der richtigen `productListItem`-XDM-Variablen zugeordnet haben](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) übernimmt Platform Edge Network die Zuordnung der Daten zu den richtigen Analytics-Variablen.
+Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weiterhin dieselbe Edge Trace, um zu überprüfen, ob Produktdaten von Analytics erfasst werden. Sowohl die Produktzeichenfolge als auch die E-Commerce-Ereignisse werden Analytics automatisch XDM-Variablen zugeordnet. Sofern Sie beim Konfigurieren `productListItem` XDM-Schemas für Adobe Analytics der richtigen [-XDM-Variablen zugeordnet haben](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) übernimmt Platform Edge Network die Zuordnung der Daten zu den richtigen Analytics-Variablen.
 
 **Überprüfen Sie zunächst, ob die `Product String` festgelegt ist**
 
@@ -385,7 +385,7 @@ Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weit
 
    ![Analytics-Produktzeichenfolge](assets/analytics-debugger-prodstring.png)
 
-   Edge Trace behandelt `commerce` Ereignisse geringfügig anders als `productList` Dimensionen. Eine Kontextdatenvariable wird nicht auf die gleiche Weise zugeordnet angezeigt wie der Produktname, der `[!UICONTROL c.a.x.productlistitem.[0].name]` oben zugeordnet ist. Stattdessen zeigt Edge Trace die endgültige automatische Ereigniszuordnung in der Analytics-`event` an. Platform Edge Network ordnet sie entsprechend zu, solange Sie sie bei der [Konfiguration des Schemas für Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) der richtigen XDM-`commerce`-Variablen zuordnen. In diesem Fall ist dies die `commerce.productViews.value=1`.
+   Edge Trace behandelt `commerce` Ereignisse geringfügig anders als `productList` Dimensionen. Eine Kontextdatenvariable wird nicht auf die gleiche Weise zugeordnet angezeigt wie der Produktname, der `[!UICONTROL c.a.x.productlistitem.[0].name]` oben zugeordnet ist. Stattdessen zeigt Edge Trace die endgültige automatische Ereigniszuordnung in der Analytics-`event` an. Platform Edge Network ordnet sie entsprechend zu, solange Sie sie bei der `commerce`Konfiguration des Schemas für Adobe Analytics[ der richtigen XDM-](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)-Variablen zuordnen. In diesem Fall ist dies die `commerce.productViews.value=1`.
 
 1. Führen Sie im Fenster Experience Platform Debugger einen Bildlauf nach unten zur Variablen `[!UICONTROL events]` durch. Sie ist auf `[!UICONTROL prodView]` festgelegt
 
@@ -487,8 +487,6 @@ Validieren Sie Ihre Implementierung weiter, indem Sie die Warenkorb-, Checkout- 
 
 Herzlichen Glückwunsch! Du hast es geschafft! Dies ist das Ende der Lektion. Jetzt können Sie Adobe Analytics mit Platform Web SDK für Ihre eigene Website implementieren.
 
-[Weiter: ](setup-audience-manager.md)
-
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

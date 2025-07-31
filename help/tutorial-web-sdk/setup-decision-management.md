@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2511'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ Am Ende dieser Lektion können Sie:
 
 * Machen Sie sich mit den Kernkonzepten des Entscheidungs-Managements in Adobe Journey Optimizer und seiner Integration mit Adobe Experience Platform Web SDK vertraut.
 
-* Lernen Sie den schrittweisen Prozess zum Konfigurieren von Web SDK für Offer decisioning kennen, um eine nahtlose Integration in Journey Optimizer sicherzustellen.
+* Erfahren Sie mehr über den schrittweisen Prozess zum Konfigurieren der Web-SDK für Offer Decisioning, um eine nahtlose Integration in Journey Optimizer sicherzustellen.
 
 * Erkunden Sie ein detailliertes Anwendungsbeispiel, in dem es um Treuestatus-Angebote geht und erhalten Sie Einblicke in die Erstellung und Verwaltung von Angeboten, Entscheidungen und Platzierungen effektiv.
 
@@ -42,7 +42,7 @@ Am Ende dieser Lektion können Sie:
 
 Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 
-* Stellen Sie sicher, dass Ihr Unternehmen Zugriff auf Adobe Journey Optimizer Ultimate (Journey Optimizer und Offer decisioning) oder Adobe Experience Platform und das Offer decisioning-Add-on hat.
+* Stellen Sie sicher, dass Ihr Unternehmen Zugriff auf Adobe Journey Optimizer Ultimate (Journey Optimizer und Offer Decisioning) oder Adobe Experience Platform und das Offer Decisioning-Add-on hat.
 
 * Schließen Sie alle Lektionen für die Erstkonfiguration von Platform Web SDK ab.
 
@@ -56,13 +56,13 @@ Ereignisbasierte Angebote werden derzeit in Adobe Journey Optimizer nicht unters
 
 ## Zugriff auf das Entscheidungs-Management gewähren
 
-Um Zugriff auf die Funktionen des Entscheidungs-Managements zu gewähren, müssen Sie ein **Produktprofil** erstellen und den Benutzern die entsprechenden Berechtigungen zuweisen. [ Weitere Informationen zur Verwaltung von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Um Zugriff auf die Funktionen des Entscheidungs-Managements zu gewähren, müssen Sie ein **Produktprofil** erstellen und den Benutzern die entsprechenden Berechtigungen zuweisen. [ Weitere Informationen zur Verwaltung von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Konfigurieren des Datenstroms
 
-Offer decisioning muss in der Konfiguration **Datenstrom** aktiviert werden, bevor Entscheidungs-Management-Aktivitäten von Platform Web SDK bereitgestellt werden können.
+Offer Decisioning muss in der Konfiguration **Datenstrom** aktiviert werden, bevor Entscheidungs-Management-Aktivitäten von Platform Web SDK bereitgestellt werden können.
 
-So konfigurieren Sie Offer decisioning im Datenstrom:
+So konfigurieren Sie Offer Decisioning im Datenstrom:
 
 1. Navigieren Sie zur [Datenerfassung](https://experience.adobe.com/#/data-collection).
 
@@ -76,7 +76,7 @@ So konfigurieren Sie Offer decisioning im Datenstrom:
 
    ![Service bearbeiten](assets/decisioning-edit-datastream.png)
 
-1. Markieren Sie das Kästchen **Offer decisioning**.
+1. Aktivieren Sie das Kontrollkästchen **** Offer Decisioning.
 
    ![SCREENSHOT HINZUFÜGEN](assets/decisioning-check-offer-box.png)
 
@@ -143,7 +143,7 @@ In diesem Anwendungsbeispiel erfahren Sie, wie Journey Optimizer Ihren Kunden mi
 
 >[!NOTE]
 >
-> Da sich dieses Tutorial an Implementierer richtet, sollten Sie beachten, dass diese Lektion umfangreiche Schnittstellenarbeiten in Journey Optimizer umfasst. Obwohl diese Schnittstellenaufgaben normalerweise von Marketing-Experten durchgeführt werden, kann es für Implementierer von Vorteil sein, Einblicke in den Prozess zu erhalten, auch wenn sie langfristig nicht für die Erstellung von Entscheidungs-Management-Kampagnen verantwortlich sind.
+> Da sich dieses Tutorial an Implementierer richtet, sollten Sie beachten, dass diese Lektion umfangreiche Schnittstellenarbeiten in Journey Optimizer umfasst. Obwohl diese Schnittstellenaufgaben normalerweise von Marketing-Experten durchgeführt werden, kann es für Implementierer von Vorteil sein, insight in den Prozess zu integrieren, auch wenn sie langfristig nicht für die Erstellung von Entscheidungs-Management-Kampagnen verantwortlich sind.
 
 ## Komponenten
 
@@ -166,7 +166,7 @@ Gehen Sie wie folgt vor, um die Platzierung zu erstellen:
 1. Definieren Sie die Eigenschaften der Platzierung:
    * **Name**: der Name der Platzierung. Rufen wir die Beispielplatzierung *&#39;Homepage Banner&#39;*.
    * **Kanaltyp** Der Kanal, für den die Platzierung verwendet wird. Verwenden wir *&#39;Web&#39;*, da die Angebote auf der Luma-Website angezeigt werden.
-   * **Content-**: Der Inhaltstyp, den die Platzierung anzeigen darf: Text, HTML, Bild-Link oder JSON. Sie können *&#39;HTML&#39;* für das Angebot verwenden.
+   * **Content-**: Der Inhaltstyp, den die Platzierung anzeigen darf: Text, HTML, Bild-Link oder JSON. Für das Angebot können Sie *HTML* verwenden.
    * **Beschreibung**: eine Beschreibung der Platzierung (optional).
 
    ![Details hinzufügen](assets/decisioning-placement-details.png)
@@ -240,15 +240,15 @@ Gehen Sie wie **vor, um das erste** Angebot“ zu erstellen:
 
    ![Angebotsdetails hinzufügen](assets/decisioning-add-offer-details.png)
 
-1. Jetzt müssen Sie &quot;**&quot; hinzufügen** um festzulegen, wo das Angebot angezeigt wird. Wählen wir den **Webkanal**. Wählen wir auch das zuvor konfigurierte &quot;*Homepage-Banner&#x200B;***aus**. Die ausgewählte **Platzierung** ist vom Typ HTML. Sie können also HTML-, JSON- oder TEXTINHALTE direkt zum Editor hinzufügen, um das Angebot mithilfe des Optionsfelds **Benutzerdefiniert** zu erstellen.
+1. Jetzt müssen Sie &quot;**&quot; hinzufügen** um festzulegen, wo das Angebot angezeigt wird. Wählen wir den **Webkanal**. Wählen wir auch das zuvor konfigurierte &quot;*Homepage-Banner***aus**. Die ausgewählte **Platzierung** ist vom Typ HTML, sodass Sie HTML-, JSON- oder TEXT-Inhalte direkt zum Editor hinzufügen können, um das Angebot mithilfe des **Benutzerdefiniert**-Optionsfelds zu erstellen.
 
    ![Darstellungsdetails hinzufügen](assets/decisioning-add-representation-details.png)
 
 1. Bearbeiten Sie den Angebotsinhalt direkt mit dem **Ausdruckseditor**. Denken Sie daran, dass Sie dieser Platzierung HTML-, JSON- oder TEXT-Inhalte hinzufügen können. Stellen Sie sicher, dass Sie **Modus** am unteren Rand des Editors abhängig von Ihrem Inhaltstyp auswählen. Sie können auch auf **validate** klicken, um sicherzustellen, dass keine Fehler auftreten.
 
-   ![Angebots-HTML hinzufügen](assets/decisioning-add-offer-html.png)
+   ![HTML-Angebot hinzufügen](assets/decisioning-add-offer-html.png)
 
-1. Außerdem können Sie mit dem Ausdruckseditor in Adobe Experience Platform gespeicherte Attribute abrufen. Fügen wir den Vornamen eines Profils zum Angebotsinhalt hinzu, um die Mitglieder des Treueprogramms 1:1 besser zu personalisieren.
+1. Außerdem können Sie mit dem Ausdruckseditor in Adobe Experience Platform gespeicherte Attribute abrufen. Fügen wir den Vornamen eines Profils zum Angebotsinhalt hinzu, um die Mitglieder des Treueprogramms auf 1::1-Ebene besser zu personalisieren.
 
    ![Hinzufügen der Angebotspersonalisierung](assets/decisioning-add-offer-personalization.png)
 
@@ -339,7 +339,7 @@ Um mit dem Testen zu beginnen, wählen Sie die **Simulationen** aus dem Menü **
 
 ### Testen von Treueangeboten
 
-1. Testprofil auswählen, das für die Simulation verwendet werden soll. Klicken Sie **Profil verwalten**. [Um ein neues Testprofil für Angebotstests zu erstellen oder festzulegen, folgen Sie diesem Handbuch](https://experienceleague.adobe.com/de/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Testprofil auswählen, das für die Simulation verwendet werden soll. Klicken Sie **Profil verwalten**. [Um ein neues Testprofil für Angebotstests zu erstellen oder festzulegen, folgen Sie diesem Handbuch](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -365,13 +365,13 @@ Um mit dem Testen zu beginnen, wählen Sie die **Simulationen** aus dem Menü **
    -->
 1. Wählen Sie ein anderes Testprofil aus und klicken Sie auf **Ergebnisse anzeigen**. Idealerweise sollte ein anderes simuliertes Angebot angezeigt werden, das der Treuestufe des Testprofils entspricht.
 
-## Validierung des Entscheidungs-Managements mithilfe von Adobe Experience Platform Debugger
+## Validierung des Entscheidungs-Managements mit Adobe Experience Platform Debugger
 
-Die Erweiterung **Adobe Experience Platform Debugger**, die sowohl für Chrome als auch für Firefox verfügbar ist, analysiert Ihre Web-Seiten, um Probleme bei der Implementierung von Adobe Experience Cloud-Lösungen zu identifizieren.
+Die Erweiterung **Adobe Experience Platform Debugger**, die für Chrome und Firefox verfügbar ist, analysiert Ihre Web-Seiten, um Probleme bei der Implementierung von Adobe Experience Cloud-Lösungen zu identifizieren.
 
 Sie können den Debugger auf der Luma-Site verwenden, um die Entscheidungslogik in der Produktion zu validieren. Diese Validierung empfiehlt sich, sobald der Anwendungsfall „Treueprämien“ ausgeführt wird, um sicherzustellen, dass alles korrekt konfiguriert ist.
 
-[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/debugger/overview).
+[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 So starten Sie die Validierung mit dem Debugger:
 
@@ -383,7 +383,7 @@ So starten Sie die Validierung mit dem Debugger:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Navigieren Sie zu **Zusammenfassung**. Überprüfen Sie, ob **Datenstrom-ID** mit dem **Datenstrom** in der **Adobe-Datenerfassung** übereinstimmt, für den Sie Offer decisioning aktiviert haben.
+1. Navigieren Sie zu **Zusammenfassung**. Überprüfen Sie, ob **Datenstrom-ID** mit dem **Datenstrom** in der **Adobe-** übereinstimmt, für den Sie Offer Decisioning aktiviert haben.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -400,8 +400,6 @@ So starten Sie die Validierung mit dem Debugger:
    ![ADD SCREENSHOT](#)
 -->
 
-[Weiter: ](setup-consent.md)
-
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

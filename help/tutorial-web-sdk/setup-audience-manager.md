@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Adobe Audience Manager mithilfe der Platform 
 solution: Data Collection, Audience Manager
 jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1339'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Erfahren Sie, wie Sie Adobe Audience Manager mit Adobe Experience Platform Web SDK einrichten und die Implementierung mit einem Cookie-Ziel validieren.
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/de/docs/audience-manager) ist die Adobe Experience Cloud-Lösung, die alles bietet, was erforderlich ist, um geschäftlich relevante Informationen über Site-Besucher zu sammeln, marktfähige Segmente zu erstellen und zielgruppengerechte Werbung und Inhalte für die richtige Zielgruppe bereitzustellen.
+[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) ist die Adobe Experience Cloud-Lösung, die alles bietet, was erforderlich ist, um geschäftlich relevante Informationen über Site-Besucher zu sammeln, marktfähige Segmente zu erstellen und zielgruppengerechte Werbung und Inhalte für die richtige Zielgruppe bereitzustellen.
 
 ![Web-SDK und Adobe Audience Manager-Diagramm](assets/dc-websdk-aam.png)
 
@@ -23,20 +23,20 @@ Erfahren Sie, wie Sie Adobe Audience Manager mit Adobe Experience Platform Web S
 
 Am Ende dieser Lektion können Sie:
 
-* Konfigurieren eines Datenstroms zum Aktivieren von Audience Manager
+* Konfigurieren eines Datenstroms zur Aktivierung von Audience Manager
 * Aktivieren eines Cookie-Ziels in Audience Manager
-* Validieren der Audience Manager-Implementierung durch Bestätigen der Zielgruppen-Qualifizierung mit dem Adobe Experience Platform Debugger
+* Validieren Sie die Audience Manager-Implementierung, indem Sie die Zielgruppen-Qualifizierung mit Adobe Experience Platform Debugger bestätigen
 
 ## Voraussetzungen
 
 Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 * Die vorherigen Lektionen in den Abschnitten Erstkonfiguration und Tags-Konfiguration dieses Tutorials absolvieren.
-* Zugriff auf Adobe Audience Manager und die entsprechenden Berechtigungen zum Erstellen, Lesen und Schreiben von Eigenschaften, Segmenten und Zielen. Weitere Informationen finden Sie unter Rollenbasierte Zugriffssteuerung für [Audience Manager ](https://experienceleague.adobe.com/de/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Zugriff auf Adobe Audience Manager und die entsprechenden Berechtigungen zum Erstellen, Lesen und Schreiben von Eigenschaften, Segmenten und Zielen. Weitere Informationen finden Sie im Abschnitt Rollenbasierte Zugriffssteuerung für [Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## Konfigurieren des Datenstroms
 
-Die Audience Manager-Implementierung mit Platform Web SDK unterscheidet sich von der Implementierung mit [Server-seitiger Weiterleitung (SSF)](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). Die Server-seitige Weiterleitung übergibt Adobe Analytics-Anfragedaten an den Audience Manager. Bei einer Implementierung von Platform Web SDK werden XDM-Daten, die an das Platform-Edge Network gesendet werden, an den Audience Manager weitergeleitet. Audience Manager ist im Datenstrom aktiviert:
+Die Audience Manager-Implementierung mit Platform Web SDK unterscheidet sich von der Implementierung mit [Server-seitiger Weiterleitung (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). Die Server-seitige Weiterleitung übergibt Adobe Analytics-Anfragedaten an Audience Manager. Bei einer Implementierung von Platform Web SDK werden XDM-Daten, die an Platform Edge Network gesendet werden, an Audience Manager weitergeleitet. Audience Manager ist im Datenstrom aktiviert:
 
 1. Zur [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"} wechseln
 1. Wählen Sie in der linken Navigation **[!UICONTROL Datenströme]**
@@ -53,9 +53,9 @@ Die Audience Manager-Implementierung mit Platform Web SDK unterscheidet sich von
 
 ## Erstellen einer Datenquelle
 
-Erstellen Sie anschließend ein [Daten-Source](https://experienceleague.adobe.com/de/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), ein grundlegendes Tool zum Organisieren von Daten in Audience Manager:
+Als Nächstes erstellen Sie ein [Daten-Source](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), ein grundlegendes Tool für die Organisation von Daten in Audience Manager:
 
-1. Zur [Audience Manager ](https://experience.adobe.com/#/audience-manager/)-Benutzeroberfläche
+1. Zur [Audience Manager](https://experience.adobe.com/#/audience-manager/)-Benutzeroberfläche
 1. Wählen **[!UICONTROL Zielgruppendaten]** in der oberen Navigationsleiste aus.
 1. Wählen Sie **[!UICONTROL Dropdown]** Menü „Datenquellen“ aus
 1. Wählen Sie **[!UICONTROL Schaltfläche]** hinzufügen oben auf der Seite „Datenquellen“ aus
@@ -73,25 +73,25 @@ Erstellen Sie anschließend ein [Daten-Source](https://experienceleague.adobe.co
 
 ## Erstellen einer Eigenschaft
 
-Richten Sie nach dem Speichern der Daten-Source eine [Eigenschaft](https://experienceleague.adobe.com/de/docs/audience-manager/user-guide/features/traits/traits-overview) ein. Eigenschaften sind eine Kombination aus einem oder mehreren Signalen im Audience Manager. Erstellen Sie eine Eigenschaft für Homepage-Besucher.
+Richten Sie nach dem Speichern der Daten-Source eine [Eigenschaft](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview) ein. Merkmale sind eine Kombination aus einem oder mehreren Signalen in Audience Manager. Erstellen Sie eine Eigenschaft für Homepage-Besucher.
 
 >[!NOTE]
 >
->Alle XDM-Daten werden an den -Audience Manager gesendet, wenn sie im Datenstrom aktiviert sind. Es kann jedoch 24 Stunden dauern, bis die Daten im Bericht „Nicht verwendete Signale“ verfügbar sind. Erstellen Sie explizite Eigenschaften für die XDM-Daten, die Sie sofort im Audience Manager verwenden möchten, wie in dieser Übung beschrieben.
+>Alle XDM-Daten werden an Audience Manager gesendet, wenn sie im Datenstrom aktiviert sind. Es kann jedoch 24 Stunden dauern, bis die Daten im Bericht „Unused Signals“ verfügbar sind. Erstellen Sie explizite Eigenschaften für die XDM-Daten, die Sie sofort in Audience Manager verwenden möchten, wie in dieser Übung beschrieben.
 
 1. Wählen Sie **[!UICONTROL Zielgruppendaten]** > **[!UICONTROL Eigenschaften]**
 1. Wählen Sie **[!UICONTROL Neu hinzufügen]** > **[!UICONTROL Regelbasiert]** Eigenschaft aus
 
-   ![Regelbasierte Eigenschaft des Adobe Experience Platform-Audience Managers ](assets/rule-based-trait.jpg)
+   ![Regelbasierte Eigenschaft von Adobe Experience Platform Audience Manager](assets/rule-based-trait.jpg)
 
 1. Geben Sie Ihrem Merkmal einen Anzeigenamen und eine Beschreibung, `Luma homepage view`
 1. Wählen Sie **[!UICONTROL Daten-Source]** aus, die Sie im vorherigen Abschnitt erstellt haben.
 1. **[!UICONTROL Ordner auswählen]** in dem die Eigenschaft gespeichert werden soll, wird im Bereich rechts angezeigt. Sie können einen Ordner erstellen, indem Sie **das Symbol &quot;+&quot;** einem vorhandenen übergeordneten Ordner auswählen. Sie können diesen neuen Ordner `Platform Web SDK tutorial` benennen.
 1. Erweitern Sie das **[!UICONTROL Eigenschaftsausdruck]**-Caret und wählen Sie **[!UICONTROL Ausdrucksgenerator]**. Sie müssen ein Schlüsselwertpaar angeben, das einen Homepage-Besuch bedeutet.
-1. Öffnen Sie die [Luma-Homepage](https://luma.enablementadobe.com/content/luma/us/en.html) (der Ihrer Tag-Eigenschaft zugeordnet) und den **Adobe Experience Platform Debugger** und aktualisieren Sie die Seite.
+1. Öffnen Sie die [Luma-Startseite](https://luma.enablementadobe.com/content/luma/us/en.html) (die Ihrer Tag-Eigenschaft zugeordnet ist) und die **Adobe Experience Platform Debugger** und aktualisieren Sie die Seite.
 1. Sehen Sie sich die Netzwerkanfragen und Ereignisdetails für Platform Web SDK an, um den Schlüssel und den Namenswert für die Homepage zu finden.
-   ![XDM-Daten des Adobe Experience Platform-Audience Managers ](assets/xdm-keyvalue.jpg)
-1. Kehren Sie zum Expression Builder in der Audience Manager-Benutzeroberfläche zurück und geben Sie den Schlüssel als **`web.webPageDetails.name`** und den Wert von **`content:luma:us:en`** ein. Dieser Schritt stellt sicher, dass Sie beim Laden der Homepage eine Eigenschaft auslösen.
+   ![XDM-Daten in Adobe Experience Platform Audience Manager](assets/xdm-keyvalue.jpg)
+1. Kehren Sie zum Ausdrucksgenerator in der Audience Manager-Benutzeroberfläche zurück und geben Sie den Schlüssel als **`web.webPageDetails.name`** und den Wert von **`content:luma:us:en`** ein. Dieser Schritt stellt sicher, dass Sie beim Laden der Homepage eine Eigenschaft auslösen.
 1. **[!UICONTROL Speichern]** die Eigenschaft.
 
 
@@ -109,9 +109,9 @@ Die nächsten Schritte bestehen darin, ein **Segment** zu erstellen und diesem S
 1. Wählen Sie **[!UICONTROL Eigenschaft hinzufügen]** aus.
 1. Klicken **[!UICONTROL unten]** der Seite auf „Speichern“
 
-   ![Adobe Experience Platform-Audience Manager - Eigenschaft hinzufügen](assets/add-trait-segment.jpg)
+   ![Adobe Experience Platform Audience Manager-Eigenschaft hinzufügen](assets/add-trait-segment.jpg)
 
-   ![Adobe Experience Platform-Audience Manager - Eigenschaft hinzufügen](assets/saved-segment.jpg)
+   ![Adobe Experience Platform Audience Manager-Eigenschaft hinzufügen](assets/saved-segment.jpg)
 
 ## Erstellen eines Ziels
 
@@ -123,17 +123,17 @@ Erstellen Sie anschließend ein **Cookie-basiertes Ziel** mithilfe des **Destina
 1. Wählen Sie als **[!UICONTROL Kategorie]** die Option **[!UICONTROL Benutzerdefiniert]**
 1. Wählen Sie als **[!UICONTROL Typ]** &quot;**[!UICONTROL &quot;]**
 
-   ![Adobe Experience Platform-Audience Manager - Eigenschaft hinzufügen](assets/destination-settings.jpg)
+   ![Adobe Experience Platform Audience Manager-Eigenschaft hinzufügen](assets/destination-settings.jpg)
 
 1. Öffnen Sie den **[!UICONTROL Konfiguration]**, um die Details zu Ihrem Cookie-Ziel einzugeben
 1. Geben Sie Ihrem Cookie einen Anzeigenamen, `platform_web_sdk_tutorial`
 1. Fügen Sie als **[!UICONTROL Cookie-Domain]** die Domain der Site hinzu, auf der Sie die Integration planen, für das Tutorial zur Eingabe der Luma-Domain `luma.enablementadobe.com`
-1. Wählen Sie als Option **[!UICONTROL Publish-Daten an]** die Option **[!UICONTROL Nur ausgewählte Domains]**
+1. Wählen Sie als **[!UICONTROL Daten veröffentlichen in]** die Option **[!UICONTROL Nur ausgewählte Domains]**
 1. Domain auswählen, falls noch nicht hinzugefügt
 1. Wählen Sie als **[!UICONTROL Datenformat]** die Option **[!UICONTROL Einzelschlüssel]** und geben Sie Ihrem Cookie einen Schlüssel. Verwenden Sie für dieses Tutorial `segment` als Schlüsselwert.
 1. Wählen Sie abschließend **[!UICONTROL Speichern]**, um die Details der Zielkonfiguration zu speichern.
 
-   Abschnitt zur Konfiguration des ![Audience Manager-Ziels](assets/aam-destination-config-dw.png)
+   ![Abschnitt zur Audience Manager-Zielkonfiguration](assets/aam-destination-config-dw.png)
 
 <!--
    ![Adobe Experience Platform Audience Manager Add Trait](assets/aam-destination-config.jpg)
@@ -150,9 +150,9 @@ Erstellen Sie anschließend ein **Cookie-basiertes Ziel** mithilfe des **Destina
 1. Wählen Sie **[!UICONTROL Speichern]**
 
 1. Wählen Sie **[!UICONTROL Fertig]**
-   ![Adobe Experience Platform-Audience Manager - Eigenschaft hinzufügen](assets/luma-cookie-segment-dw.png)
+   ![Adobe Experience Platform Audience Manager-Eigenschaft hinzufügen](assets/luma-cookie-segment-dw.png)
 
-Der Zeitraum für die Segmentzuordnung dauert einige Stunden, bis er aktiviert ist. Nach Abschluss des Vorgangs können Sie die Benutzeroberfläche des Audience Managers aktualisieren und sehen, dass die Liste **Zugeordnete Segmente** aktualisiert wurde.
+Der Zeitraum für die Segmentzuordnung dauert einige Stunden, bis er aktiviert ist. Nach Abschluss des Vorgangs können Sie die Audience Manager-Benutzeroberfläche aktualisieren und sehen, dass die Liste **Zugeordnete Segmente** aktualisiert wurde.
 
 ## Segment validieren
 
@@ -166,23 +166,21 @@ Bestätigen Sie zunächst, dass Sie sich für das Segment qualifizieren können
 1. Wählen Sie einen Aufruf aus und öffnen Sie die **Vorschau**, um die Antwortdetails anzuzeigen
 1. Erweitern Sie die **Payload**, um die erwarteten Cookie-Details anzuzeigen, wie zuvor in Audience Manager konfiguriert. In diesem Beispiel wird der erwartete Cookie-Name `platform_web_sdk_tutorial` angezeigt.
 
-   ![Adobe Experience Platform-Audience Manager - Eigenschaft hinzufügen](assets/segment-validate-response.jpg)
+   ![Adobe Experience Platform Audience Manager-Eigenschaft hinzufügen](assets/segment-validate-response.jpg)
 
 1. Öffnen Sie die **Anwendung** und öffnen Sie **Cookies** über das Menü **Speicherung**.
 1. Wählen Sie die **`https://luma.enablementadobe.com`** Domain aus und bestätigen Sie, dass Ihr Cookie ordnungsgemäß in der Liste geschrieben wurde
 
-   ![Adobe Experience Platform-Audience Manager - Eigenschaft hinzufügen](assets/validate-cookie.jpg)
+   ![Adobe Experience Platform Audience Manager-Eigenschaft hinzufügen](assets/validate-cookie.jpg)
 
 
-Audience Manager Schließlich sollten Sie das Segment in der Segmentoberfläche öffnen und sicherstellen, dass **Segmentpopulationen** erhöht wurde:
+Schließlich sollten Sie das Segment in der Audience Manager-Benutzeroberfläche öffnen und sicherstellen, dass die **Segmentpopulationen** erhöht wurde:
 
-![Adobe Experience Platform-Audience Manager - Eigenschaft hinzufügen](assets/segment-population.jpg)
+![Adobe Experience Platform Audience Manager-Eigenschaft hinzufügen](assets/segment-population.jpg)
 
 
 Nachdem Sie nun diese Lektion abgeschlossen haben, sollten Sie sehen können, wie Platform Web SDK Daten an Audience Manager übergibt, und ein segmentspezifisches Erstanbieter-Cookie mit einem Cookie-Ziel setzen können.
 
-[Weiter: ](setup-target.md)
-
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League-Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
