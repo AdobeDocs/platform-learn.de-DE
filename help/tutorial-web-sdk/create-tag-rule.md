@@ -66,7 +66,7 @@ Im weiteren Verlauf dieser Lektion werden wir:
 
 1. Erstellen Sie eine weitere Regel mit der Aktion **[!UICONTROL Ereignis senden]** die das vollständige XDM-Objekt an Adobe Experience Platform Edge Network sendet.
 
-Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; ].
+Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; &#x200B;].
 
 In diesem Video erhalten Sie einen Überblick über den Prozess:
 
@@ -238,7 +238,7 @@ Vergleichen Sie das Datenelement mit der `productListItems` (Hinweis, es sollte 
 >[!IMPORTANT]
 >
 >Beachten Sie, wie numerische Variablen übersetzt werden und Zeichenfolgenwerte in der Datenschicht, wie `price` und `qty`, im Datenelement in Zahlen umformatiert werden. Diese Formatanforderungen sind für die Datenintegrität in Platform wichtig und werden im Schritt [Schemas konfigurieren](configure-schemas.md) festgelegt. Im Beispiel verwendet **[!UICONTROL quantity]** den Datentyp **[!UICONTROL Integer]**.
->> ![Datentyp des XDM-Schemas](assets/set-up-analytics-quantity-integer.png)
+>&#x200B;> ![Datentyp des XDM-Schemas](assets/set-up-analytics-quantity-integer.png)
 
 Ordnen wir nun unser Array dem XDM-Objekt zu:
 

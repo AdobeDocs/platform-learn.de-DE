@@ -48,7 +48,7 @@ Am Ende dieser Lektion haben Sie folgende Möglichkeiten:
 
 * Eine Softwarelizenz, die die Ereignisweiterleitung enthält. Die Ereignisweiterleitung ist eine gebührenpflichtige Funktion der Datenerfassung. Weitere Informationen erhalten Sie von Ihrem Adobe Account Team.
 * Die Ereignisweiterleitung ist in Ihrer Experience Cloud-Organisation aktiviert.
-* Benutzerberechtigung für die Ereignisweiterleitung. (In [Admin Console](https://adminconsole.adobe.com/) unter dem Adobe Experience Platform Launch-Produkt Berechtigungselemente für[!UICONTROL Plattformen] > [!UICONTROL Edge] und alle [!UICONTROL Eigenschaftsrechte]). Nach der Gewährung [!UICONTROL  im linken Navigationsbereich ] Datenerfassungsoberfläche „Ereignisweiterleitung“ angezeigt werden:
+* Benutzerberechtigung für die Ereignisweiterleitung. (In [Admin Console](https://adminconsole.adobe.com/) unter dem Adobe Experience Platform Launch-Produkt Berechtigungselemente für[!UICONTROL Plattformen] > [!UICONTROL Edge] und alle [!UICONTROL Eigenschaftsrechte]). Nach der Gewährung [!UICONTROL &#x200B; im linken Navigationsbereich &#x200B;] Datenerfassungsoberfläche „Ereignisweiterleitung“ angezeigt werden:
   ![Eigenschaften der Ereignisweiterleitung](assets/event-forwarding-menu.png)
 
 * Adobe Experience Platform Web oder Mobile SDK ist so konfiguriert, dass Daten an Edge Network gesendet werden. Sie müssen die folgenden Lektionen dieses Tutorials abgeschlossen haben:
@@ -143,7 +143,7 @@ In dieser Übung leiten Sie die Höhe des Browser-Darstellungsfelds und die Expe
 >[!TIP]
 >
 >Sie können den XDM-Objektpfad auch finden, indem Sie Ihre Webbrowser-Netzwerkwerkzeuge verwenden, nach `/ee`-Anfragen filtern, den Beacon [!UICONTROL **Payload**] öffnen und eine Drilldown-Liste für die gesuchte Variable durchführen. Klicken Sie dann mit der rechten Maustaste und wählen Sie „Eigenschaftspfad kopieren“. Im Folgenden finden Sie ein Beispiel für die Höhe des Browser-Ansichtsfensters:
->> ![XDM-Pfad für die Ereignisweiterleitung](assets/event-forwarding-xdm-path.png)
+>&#x200B;> ![XDM-Pfad für die Ereignisweiterleitung](assets/event-forwarding-xdm-path.png)
 
 1. Navigieren Sie zur Eigenschaft **[!UICONTROL Ereignisweiterleitung]**, die Sie kürzlich erstellt haben
 

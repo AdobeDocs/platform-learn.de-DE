@@ -76,7 +76,7 @@ So konfigurieren Sie Offer Decisioning im Datenstrom:
 
    ![Service bearbeiten](assets/decisioning-edit-datastream.png)
 
-1. Aktivieren Sie das Kontrollkästchen **** Offer Decisioning.
+1. Aktivieren Sie das Kontrollkästchen **&#x200B;**&#x200B;Offer Decisioning.
 
    ![SCREENSHOT HINZUFÜGEN](assets/decisioning-check-offer-box.png)
 
@@ -240,7 +240,7 @@ Gehen Sie wie **vor, um das erste** Angebot“ zu erstellen:
 
    ![Angebotsdetails hinzufügen](assets/decisioning-add-offer-details.png)
 
-1. Jetzt müssen Sie &quot;**&quot; hinzufügen** um festzulegen, wo das Angebot angezeigt wird. Wählen wir den **Webkanal**. Wählen wir auch das zuvor konfigurierte &quot;*Homepage-Banner***aus**. Die ausgewählte **Platzierung** ist vom Typ HTML, sodass Sie HTML-, JSON- oder TEXT-Inhalte direkt zum Editor hinzufügen können, um das Angebot mithilfe des **Benutzerdefiniert**-Optionsfelds zu erstellen.
+1. Jetzt müssen Sie &quot;**&quot; hinzufügen** um festzulegen, wo das Angebot angezeigt wird. Wählen wir den **Webkanal**. Wählen wir auch das zuvor konfigurierte &quot;*Homepage-Banner&#x200B;***aus**. Die ausgewählte **Platzierung** ist vom Typ HTML, sodass Sie HTML-, JSON- oder TEXT-Inhalte direkt zum Editor hinzufügen können, um das Angebot mithilfe des **Benutzerdefiniert**-Optionsfelds zu erstellen.
 
    ![Darstellungsdetails hinzufügen](assets/decisioning-add-representation-details.png)
 

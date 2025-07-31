@@ -72,7 +72,7 @@ Ein Datensatz ist jetzt so konfiguriert, dass er mit der Erfassung von Daten aus
 
 ## Konfigurieren des Datenstroms
 
-Jetzt können Sie Ihren [!UICONTROL Datenstrom) so konfigurieren] dass Daten an [!UICONTROL Adobe Experience Platform gesendet ]. Der Datenstrom ist die Verknüpfung zwischen Ihrer Tag-Eigenschaft, der Platform Edge Network und dem Experience Platform-Datensatz.
+Jetzt können Sie Ihren [!UICONTROL Datenstrom) so konfigurieren] dass Daten an [!UICONTROL Adobe Experience Platform gesendet &#x200B;]. Der Datenstrom ist die Verknüpfung zwischen Ihrer Tag-Eigenschaft, der Platform Edge Network und dem Experience Platform-Datensatz.
 
 1. Öffnen Sie die [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"}.
 1. Wählen **[!UICONTROL Datenströme]** in der linken Navigationsleiste aus
@@ -269,7 +269,7 @@ Erstellen Sie das Treueschema:
 1. Benennen des `Luma Loyalty Schema`
 1. Fügen Sie die [!UICONTROL Treuedetails] hinzu
 1. Fügen Sie die [!UICONTROL Demografische Details] hinzu
-1. Wählen Sie das Feld `Person ID` aus und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre ] mithilfe des `Luma CRM Id`[!UICONTROL Identity-Namespace].
+1. Wählen Sie das Feld `Person ID` aus und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre &#x200B;] mithilfe des `Luma CRM Id`[!UICONTROL Identity-Namespace].
 1. Aktivieren Sie das Schema für [!UICONTROL Profil]. Wenn Sie den Umschalter Profil nicht finden können, klicken Sie oben links auf den Schemanamen.
 1. Schema speichern
 
