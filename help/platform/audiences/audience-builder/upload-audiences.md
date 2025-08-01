@@ -18,4 +18,4 @@ ht-degree: 28%
 
 Erfahren Sie, wie Sie Zielgruppen im CSV-Format in Adobe Experience Platform hochladen. Weitere Informationen finden Sie in der [Segment Builder-Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/segmentation/ui/audience-portal#import-audience).
 
->[!VIDEO](https://video.tv.adobe.com/v/3421714/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423357/?learn=on&enablevpops&captions=ger)

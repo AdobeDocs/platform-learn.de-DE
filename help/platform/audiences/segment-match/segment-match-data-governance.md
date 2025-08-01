@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie Data Governance-Steuerelemente in Real-Time CDP einrichten und verwenden, damit Sie einschränken können, welche Datensätze (und somit welche Segmente, die diese Datensätze verwenden) für Datenpartner freigegeben werden können. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/342212/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413524/?learn=on&enablevpops&captions=ger)

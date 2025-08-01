@@ -18,4 +18,4 @@ ht-degree: 1%
 
 In diesem Video erfahren Sie, wie Sie eine Verbindung zwischen Ihnen und einem Partner herstellen, damit Sie Audiences freigeben können. Nach der Konfiguration dieser Segment Match-Funktion können Sie Daten mit Ihrem Datenpartner austauschen. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413523/?learn=on&enablevpops&captions=ger)

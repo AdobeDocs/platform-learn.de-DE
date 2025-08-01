@@ -20,4 +20,4 @@ ht-degree: 19%
 
 Auswerten von Batch-Zielgruppen nach Bedarf mit der flexiblen Zielgruppenauswertungsfunktion von Adobe Experience Platform. Weitere Informationen und Leitplanken finden Sie [Handbuch zur flexiblen Zielgruppenbewertung](https://experienceleague.adobe.com/de/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
 
->[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453649/?learn=on&enablevpops&captions=ger)
