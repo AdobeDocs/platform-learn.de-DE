@@ -4,9 +4,9 @@ description: Proofing mit Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -224,6 +224,14 @@ Klicken Sie **Ordner auswählen**.
 Nach 1-2 Minuten wird Ihr Dokument jetzt in AEM Assets veröffentlicht. Neben Ihrem Dokumentnamen wird ein AEM-Symbol angezeigt.
 
 ![WF](./images/wfp37a.png)
+
+Klicken Sie **Als erledigt markieren**, um diese Aufgabe abzuschließen.
+
+![WF](./images/wfp37b.png)
+
+Sie sollten das dann sehen.
+
+![WF](./images/wfp37c.png)
 
 ## 1.2.2.5 Datei in AEM Assets anzeigen
 

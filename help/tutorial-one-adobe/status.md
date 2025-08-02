@@ -3,9 +3,9 @@ title: Inhaltsstatus
 description: Inhaltsstatus
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '414'
 ht-degree: 14%
 
 ---
@@ -24,8 +24,8 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 
 | Name | Letzte Aktualisierung | 100 % arbeiten | Bemerkungen          |
 | ---------------------- | ------------ | ------------ |------------ |
-| [1.1 Adobe Workfront-Planung](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 29/07/2025 | Nein | Inhalt noch nicht abgeschlossen |
-| [1.2 Workflow-Management mit Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 29/07/2025 | Nein | Inhalt noch nicht abgeschlossen |
+| [1.1 Adobe Workfront-Planung](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 02/08/2025 | Ja | – |
+| [1.2 Workflow-Management mit Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | Ja | Inhalt noch nicht abgeschlossen |
 
 ## &#x200B;2. Erstellung und Produktion
 
@@ -35,6 +35,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | [1.2 Creative Workflow-Automatisierung mit Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"} | 04/06/2025 | Ja | – |
 | [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025 | Ja | – |
 | [.4 Adobe Express und Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | Ja | – |
+| [1.5 Optimieren Sie Ihren Workflow mit Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | Ja | – |
 
 
 ## &#x200B;3. Asset-Management
@@ -72,6 +73,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | [1.1 Customer Journey Analytics: Erstellen eines Dashboards mit Analysis Workspace zusätzlich zu Adobe Experience Platform](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md){target="_blank"} | 06/01/2025 | Ja | – |
 | [1.2 Customer Journey Analytics: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 07/01/2025 | Nein | Es gibt ein Problem bei der Datenvorbereitungs-Modellierung für die Quelldaten. Die Fehlerbehebung steht aus. |
 | [2.1 Abfrage-Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 04/12/2024 | Ja | – |
+| [.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 02/08/2025 | Nein | Content wird entwickelt |
 
 {style="table-layout:auto"}
 

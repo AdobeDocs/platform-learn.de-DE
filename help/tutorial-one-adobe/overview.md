@@ -3,9 +3,9 @@ title: Überblick - Umfassendes technisches Tutorial - One Adobe
 description: Umfassendes technisches Tutorial - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1166'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,11 @@ In diesem Modul verwenden Sie Adobe GenStudio for Performance Marketing, eine KI
 
 [.4 Adobe Express und Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
-In diesem grundlegenden Modul verwenden Sie Adobe Express zum Erstellen von Bildern und Videos und geben diese Assets für das gesamte Adobe Experience Cloud-Ökosystem frei.
+In diesem Modul verwenden Sie Adobe Express zum Erstellen von Bildern und Videos und geben diese Assets für das gesamte Adobe Experience Cloud-Ökosystem frei.
+
+[1.5 Optimieren Sie Ihren Workflow mit Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+In diesem Modul verwenden Sie Adobe Frame.io in Kombination mit Adobe Premiere Pro, um Bilder und Videos gemeinsam zu bearbeiten und zu überprüfen.
 
 ### &#x200B;3. Asset-Management
 
@@ -185,6 +189,12 @@ In diesem Modul richten Sie Ihre eigene Instanz von Google Cloud Platform ein, l
 [2.1 Abfrage-Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
 
 In diesem Modul erfahren Sie, wie Sie den Abfrage-Service von Adobe Experience Platform verwenden.
+
+#### Content Analytics
+
+[3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
+
+In diesem Modul erfahren Sie, wie Sie Adobe Content Analytics implementieren und verwenden.
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 

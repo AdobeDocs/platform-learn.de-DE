@@ -3,9 +3,9 @@ title: Erste Schritte - Zu installierende Anwendungen
 description: Erste Schritte - Zu installierende Anwendungen
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,26 @@ Navigieren Sie zu [https://creativecloud.adobe.com/apps/download/creative-cloud]
 Öffnen Sie die App **Adobe Creative Cloud** und navigieren Sie zu **Apps**. Installieren Sie Illustrator auf Ihrem Computer.
 
 ![Neue Adobe I/O-Integration](./images/psd.png)
+
+## Adobe Premiere Pro
+
+Installieren Sie die Adobe Premiere Pro Beta-Version von [https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html auf Ihrem Computer](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)
+
+![Neue Adobe I/O-Integration](./images/prpro.png)
+
+Klicken Sie **Creative Cloud Desktop-Programm öffnen**.
+
+![Neue Adobe I/O-Integration](./images/prpro1.png)
+
+Klicken Sie **der Karte** die App **Premiere Pro (Beta)** auf „Installieren“.
+
+![Neue Adobe I/O-Integration](./images/prpro2.png)
+
+## Frame.io Transfer App
+
+Wechseln Sie zu [https://frame.io/transfer](https://frame.io/transfer) und laden Sie die Version für Ihren Computer herunter.
+
+![Frame.io](./images/frameio11.png)
 
 ## Visual Studio Code
 
