@@ -3,9 +3,10 @@ title: Erste Schritte mit Workfront Planning
 description: Erste Schritte mit Workfront Planning
 kt: 5342
 doc-type: tutorial
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -196,7 +197,7 @@ In der Übersicht sollte dann die neu erstellte Kampagne zu sehen sein.
 
 ![Workfront-Planung](./images/wfpl35.png)
 
-## Automatisierung 1.1.1.7
+## 1.1.1.7 Erstellen von Portfolio und benutzerdefinierten Formularen
 
 Im nächsten Schritt erstellen Sie eine Automatisierung, die Informationen aus der in Workfront Planning erstellten Kampagne übernimmt und diese Informationen in Workfront zum Erstellen eines Programms verwendet. Bevor Sie die Automatisierung erstellen können, müssen Sie in Workfront zunächst zwei Dinge konfigurieren: ein Portfolio und ein benutzerdefiniertes Formular.
 
@@ -224,7 +225,7 @@ Wählen Sie **Programm** aus und klicken Sie auf **Weiter**.
 
 ![Workfront-Planung](./images/wfplss6.png)
 
-Ändern Sie den Namen des Formulars in `--aepUserLdap-- Program Information`.
+Ändern Sie den Namen des Formulars in `--aepUserLdap-- - Program Information`.
 
 ![Workfront-Planung](./images/wfplss7.png)
 
