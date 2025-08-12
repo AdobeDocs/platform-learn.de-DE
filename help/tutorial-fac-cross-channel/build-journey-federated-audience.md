@@ -69,7 +69,7 @@ In dieser Lektion erfahren Sie, wie eine Federated Audience in Journey in Adobe 
 
 11. Nachdem die Personalisierung mit dem Vornamen hinzugefügt wurde, fügen Sie `Hi, ` vor der Personalisierungsvariablen hinzu. Klicken Sie dann auf **Speichern**.
 
-   ![Journey-email-save](assets/journey-email-save.png)
+    ![Journey-email-save](assets/journey-email-save.png)
 
 12. Klicken Sie zweimal auf **Zurück**, um zur Journey-Arbeitsfläche zurückzukehren. Klicken Sie dann im Menü **Aktion: E** Mail“ auf der rechten Seite auf **Speichern**.
 
