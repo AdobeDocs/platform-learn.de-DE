@@ -65,6 +65,6 @@ Diese Übung führt Sie durch die Erstellung einer Zielgruppe aus Ihrer Data War
 
 **Hinweis:** Wir haben Produkt- und Kreditinformationen verwendet, um unsere Zielgruppe zu erstellen, die keine sensiblen Daten wie z. B. die Kreditwürdigkeit zur Aktivierung auf nachgelagerte Plattformen verschoben hat.
 
-Weitere Informationen zur Komposition von Audiences finden Sie unter [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Weitere Informationen zur Komposition von Audiences finden Sie unter [Experience League](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Nachdem wir nun unsere Federated Audience erstellt haben, fahren wir mit dem [Zuordnen zu einem S3-Konto](map-federated-audience-to-s3.md) fort.
