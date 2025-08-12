@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: fcfadca95c12d0123cfb221e44909f7e0fa8abab
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -27,13 +27,13 @@ In dieser Lektion erfahren Sie, wie eine Federated Audience in Journey in Adobe 
 
    ![create-a-Journey](assets/create-journey.png)
 
-2. Aktualisieren Sie die Journey-Eigenschaften mit einem neuen Namen: `SecurFinancial - Home Loan Offer - [your lab user ID]`.
+2. Aktualisieren Sie die Journey-Eigenschaften mit einem neuen Namen: **`SecurFinancial - Home Loan Offer`**.
 
 3. Klicken Sie auf **Orchestrierung** und ziehen Sie die Kachel **Zielgruppe lesen** auf die Arbeitsfläche.
 
 4. Klicken Sie auf **Stiftsymbol** dem Feld Zielgruppe auf der rechten Seite des Bildschirms.
 
-5. Suchen Sie in der Suchleiste nach `SecureFinancial Customers - No Loans, Good Credit` und klicken Sie dann auf **Speichern**.
+5. Suchen Sie in der Suchleiste nach **`SecureFinancial Customers - No Loans, Good Credit`** und klicken Sie dann auf **Speichern**.
 
    ![create-a-Journey](assets/select-audience.png)
 
@@ -47,7 +47,7 @@ In dieser Lektion erfahren Sie, wie eine Federated Audience in Journey in Adobe 
 
 2. Klicken Sie im Menü rechts auf **E-Mail-Konfiguration** und wählen Sie **E-Mail-Marketing**. Klicken Sie dann auf **Inhalt bearbeiten**.
 
-3. Fügen Sie in der Betreffzeile hinzu: `Learn more about SecurFinancial Home Loan`. Klicken Sie dann auf **E-Mail-Textkörper bearbeiten**.
+3. Fügen Sie in der Betreffzeile hinzu: **`Learn more about SecurFinancial Home Loan`**. Klicken Sie dann auf **E-Mail-Textkörper bearbeiten**.
 
 4. Klicken Sie auf **Inhaltsvorlage** oben rechts. Suchen Sie die `SecureFinancial Template`, wählen Sie sie aus und klicken Sie auf **Bestätigen**.
 
@@ -59,7 +59,7 @@ In dieser Lektion erfahren Sie, wie eine Federated Audience in Journey in Adobe 
 
 6. Sie befinden sich nun in der E-Mail-Designer. Bewegen Sie den Mauszeiger über das `{profile.person.name.firstName}` Makro und klicken Sie auf **Personalisierungsavatar**.
 
-7. Führen Sie im Personalisierungsfenster einen Drilldown in den folgenden Ordnerpfad durch: `[sandbox] > audienceEnrichment > CustomerAudienceUpload`
+7. Führen Sie im Personalisierungsfenster einen Drilldown in den folgenden Ordnerpfad durch: **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. Klicken Sie in den Ordner **Zielgruppe lesen**. Die Anreicherungsattribute Ihrer Federated Audience finden Sie hier .
 
@@ -69,7 +69,7 @@ In dieser Lektion erfahren Sie, wie eine Federated Audience in Journey in Adobe 
 
 11. Nachdem die Personalisierung mit dem Vornamen hinzugefügt wurde, fügen Sie `Hi, ` vor der Personalisierungsvariablen hinzu. Klicken Sie dann auf **Speichern**.
 
-    ![Journey-email-save](assets/journey-email-save.png)
+   ![Journey-email-save](assets/journey-email-save.png)
 
 12. Klicken Sie zweimal auf **Zurück**, um zur Journey-Arbeitsfläche zurückzukehren. Klicken Sie dann im Menü **Aktion: E** Mail“ auf der rechten Seite auf **Speichern**.
 
