@@ -4,9 +4,9 @@ description: Erste Schritte mit Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1098'
 ht-degree: 2%
 
 ---
@@ -177,9 +177,11 @@ Wählen Sie **Anfrage senden** und klicken Sie auf **Weiter**.
 
 ![Workfront-Planung](./images/wfpl32.png)
 
-`vangeluw - New Campaign Creation Request`
+Legen Sie den **Betreff** auf `--aepUserLdap-- - New Campaign Creation Request` fest.
 
-`vangeluw - CitiSignal Fiber Launch`
+Legen Sie **Kampagnenname** auf `--aepUserLdap-- - CitiSignal Fiber Launch` fest.
+
+Legen Sie die **Kampagnenübersicht** auf fest:
 
 ```
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
