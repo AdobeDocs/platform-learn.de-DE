@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Zunächst konfigurieren wir eine Verbindung zwischen Adobe Experience Platform und Ihrer Unternehmens-Data Warehouse, um die Federated Audience Composition zu aktivieren. Auf diese Weise können Sie Daten ohne Replikation direkt aus unterstützten Warehouses abfragen. Zusätzlich erstellen wir Schemata und Datenmodelle basierend auf den Data Warehouse-Tabellen.
 
-Um dies zu demonstrieren, stellen wir eine Verbindung zu einem Snowflake-Konto her. Die Federated Audience-Komposition unterstützt eine wachsende Liste von Cloud-Warehouse-Verbindungen. Siehe die [aktualisierte Liste der Integrationen](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+Um dies zu demonstrieren, stellen wir eine Verbindung zu einem Snowflake-Konto her. Die Federated Audience-Komposition unterstützt eine wachsende Liste von Cloud-Warehouse-Verbindungen. Siehe die [aktualisierte Liste der Integrationen](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Schritte
 
