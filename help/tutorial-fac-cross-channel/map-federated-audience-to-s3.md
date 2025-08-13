@@ -2,22 +2,22 @@
 title: Zuordnen einer Federated Audience zu S3
 seo-title: Map a federated audience to S3 | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Zuordnen einer Federated Audience zu S3
-description: In dieser Lektion ordnen wir eine Federated Audience einem nachgelagerten Real-Time CDP-Ziel zu, um ein personalisiertes Offline-Erlebnis zu unterstützen.
+description: In dieser visuellen Übung ordnen wir eine zusammengeführte Zielgruppe einem nachgelagerten Real-Time CDP-Ziel zu, um ein personalisiertes Offline-Erlebnis zu unterstützen.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-
 # Verknüpfte Zielgruppe zu S3 zuordnen, um Zielgruppenattribute für die Anreicherung zu nutzen
 
-In dieser Übung erfahren Sie, wie Sie Zielgruppenattribute in Ihrem Data Warehouse nutzen können, um das Erlebnis Ihrer Zielgruppe in nachgelagerten Aktivierungs-Workflows mit RTCDP-Zielen zu bereichern. Für SecurFinancial können diese Federated Attributes verwendet werden, um das Personalisierungserlebnis der Kunden-Zielgruppe offline zu verbessern. In diesem Beispiel ordnen wir die Federated Audience einem vorkonfigurierten Amazon S3-Ziel zu.
+Sie können Zielgruppenattribute in Ihrem Data Warehouse nutzen, um das Erlebnis Ihrer Zielgruppe in nachgelagerten Aktivierungs-Workflows mit RTCDP-Zielen zu bereichern. Für SecurFinancial können diese Federated Attributes verwendet werden, um das Personalisierungserlebnis der Kunden-Zielgruppe offline zu verbessern. Nachfolgend wird die Federated Audience einem vorkonfigurierten Amazon S3-Ziel zugeordnet.
 
 ## Schritte
 
@@ -31,22 +31,26 @@ In dieser Übung erfahren Sie, wie Sie Zielgruppenattribute in Ihrem Data Wareho
 
    ![select-s3-destination](assets/select-s3-destination.png)
 
-4. Wählen Sie die Zielgruppe **SecureFinancial Customers - Keine Kredite, Gute**.
+4. Wählen Sie die entsprechende Zielgruppe aus. In unserem Beispiel: **SecureFinancial Customers - Keine Kredite, gute**, Zielgruppe.
 
    ![select-s3-audience](assets/select-s3-audience.png)
 
-5. Lassen Sie im **Planung** alle Standardeinstellungen unverändert und klicken Sie auf **Weiter**.
+5. Verwenden **im Abschnitt** die Standardeinstellungen und klicken Sie auf **Weiter**.
 
-6. Stellen Sie **Schritt** Zuordnung“ sicher, dass `xdm: personalEmail.address` enthalten ist und als **Deduplizierungsschlüssel)**. Klicken Sie dann auf **Weiter**:
+6. Wählen Sie **Schritt** Zuordnung“ den Deduplizierungsschlüssel aus. In unserem Beispiel wird `xdm: personalEmail.address` als **Deduplizierungsschlüssel“**. Klicken Sie dann auf **Weiter**:
 
    ![deduplizierungsschlüssel](assets/deduplication-key.png)
 
-7. Im folgenden Zuordnungsschritt können Sie Anreicherungsattribute auswählen, die auf Zielgruppenfeld-Zuordnungen in der Federated-Audience-Komposition basieren. Klicken Sie auf **Stiftsymbol (Bearbeiten**, um die vorab ausgewählten Attribute anzuzeigen.
+7. Wählen Sie im Zuordnungsschritt Anreicherungsattribute basierend auf Zielgruppenfeld-Zuordnungen in der Federated-Audience-Komposition aus. Klicken Sie auf **Stiftsymbol (Bearbeiten**, um die vorab ausgewählten Attribute anzuzeigen.
 
    ![edit-attributes](assets/edit-attributes.png)
 
    ![final-attributes](assets/final-attribution.png)
 
 8. Überprüfen Sie Ihre Zielgruppenzuordnung und klicken Sie auf **Beenden**.
+
+>[**ZUSAMMENFASSUNG**]
+>
+> Wir haben erfolgreich eine Zielgruppe erstellt und sie mit Leichtigkeit für ein S3-Ziel aktiviert. Die benutzerfreundliche Oberfläche der Plattform ermöglicht es Marketing-Teams, Zielgruppen schnell zu erstellen und zu aktivieren und so die Wertschöpfungszeit zu verkürzen. Kundinnen und Kunden, die diesen Ansatz verfolgen, haben drei erste Anwendungsfälle in weniger als zwei Monaten live geschaltet.
 
 Wir sind bereit, mit dem &quot;[ einer Journey&quot; ](build-journey-federated-audience.md).

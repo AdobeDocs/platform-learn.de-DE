@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: 0bbdc93969b4716407ecf51499d572cb50f5a0d3
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 5%
+source-wordcount: '81'
+ht-degree: 4%
 
 ---
 
@@ -22,5 +22,6 @@ ht-degree: 5%
 + [&#x200B;2. Übung zur Zielgruppenerstellung](audience-creation-exercise.md)
 + [&#x200B;3. Verknüpfte Zielgruppe S3 zuordnen](map-federated-audience-to-s3.md)
 + [&#x200B;4. Erstellen einer Journey mit Daten einer verbundenen Zielgruppe](build-journey-federated-audience.md)
-+ [&#x200B;5. Demo zur Zielgruppenanreicherung](audience-enrichment-demo.md)
++ [&#x200B;5. Anreichern von Zielgruppen mit Federated Data](federated-audience-composition.md)
++ [&#x200B;6. Personalisierung im Augenblick auf der Edge fördern](drive-in-the-moment-personalization.md)
 + [Zusammenfassung](conclusion.md)

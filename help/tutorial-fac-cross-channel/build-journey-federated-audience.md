@@ -2,22 +2,24 @@
 title: Erstellen einer Journey mit Daten einer verbundenen Zielgruppe
 seo-title: Build a journey with federated audience data | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Erstellen einer Journey mit Daten einer verbundenen Zielgruppe
-description: In dieser Lektion verwenden wir eine Federated Audience auf einer Journey Optimizer-Journey.
+description: In dieser visuellen Übung wird eine Federated Audience auf einer Journey Optimizer-Journey verwendet.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 0%
+source-wordcount: '421'
+ht-degree: 1%
 
 ---
 
-
 # Erstellen einer Journey mit Daten einer verbundenen Zielgruppe
 
-In dieser Lektion erfahren Sie, wie eine Federated Audience in Journey in Adobe Journey Optimizer (AJO) verwendet werden kann. Dazu gehört die Verwendung von abgefragten Attributen aus der Federated Audience-Komposition zur Personalisierung von Nachrichten. Um mit der SecurFinancial-Kundengeschichte fortzufahren und den Anwendungsfall des Kunden-Retargeting und der Personalisierung zu behandeln, orchestrieren wir eine Journey für vorqualifizierte Kunden. Ziel ist es, eine personalisierte E-Mail zu senden, die auf Attributen basiert, die aus der Data Warehouse von SecurFinancial zusammengeführt werden.
+Federated Audiences können in Journey innerhalb von Adobe Journey Optimizer (AJO) verwendet werden. Dazu gehört die Verwendung von abgefragten Attributen aus der Federated Audience-Komposition zur Personalisierung von Nachrichten.
+
+Um mit der SecurFinancial-Story fortzufahren, insbesondere mit dem Anwendungsfall Kunden-Retargeting und Personalisierung, orchestrieren wir eine Journey für vorqualifizierte Kunden. Ziel ist es, eine personalisierte E-Mail zu senden, die auf Attributen basiert, die aus der Data Warehouse von SecurFinancial zusammengeführt werden.
 
 ## Schritte
 
@@ -27,13 +29,13 @@ In dieser Lektion erfahren Sie, wie eine Federated Audience in Journey in Adobe 
 
    ![create-a-Journey](assets/create-journey.png)
 
-2. Aktualisieren Sie die Journey-Eigenschaften mit einem neuen Namen: **`SecurFinancial - Home Loan Offer`**.
+2. Aktualisieren Sie die Journey-Eigenschaften mit einem neuen Namen. In unserem Beispiel: **`SecurFinancial - Home Loan Offer`**.
 
 3. Klicken Sie auf **Orchestrierung** und ziehen Sie die Kachel **Zielgruppe lesen** auf die Arbeitsfläche.
 
 4. Klicken Sie auf **Stiftsymbol** dem Feld Zielgruppe auf der rechten Seite des Bildschirms.
 
-5. Suchen Sie in der Suchleiste nach **`SecureFinancial Customers - No Loans, Good Credit`** und klicken Sie dann auf **Speichern**.
+5. Suchen Sie in der Suchleiste nach der Zielgruppe. In unserem Beispiel: **`SecureFinancial Customers - No Loans, Good Credit`**. Klicken Sie auf **Speichern**.
 
    ![create-a-Journey](assets/select-audience.png)
 
@@ -47,9 +49,9 @@ In dieser Lektion erfahren Sie, wie eine Federated Audience in Journey in Adobe 
 
 2. Klicken Sie im Menü rechts auf **E-Mail-Konfiguration** und wählen Sie **E-Mail-Marketing**. Klicken Sie dann auf **Inhalt bearbeiten**.
 
-3. Fügen Sie in der Betreffzeile hinzu: **`Learn more about SecurFinancial Home Loan`**. Klicken Sie dann auf **E-Mail-Textkörper bearbeiten**.
+3. Fügen Sie eine Betreffzeile hinzu. In unserem Beispiel: **`Learn more about SecurFinancial Home Loan`**. Klicken Sie dann auf **E-Mail-Textkörper bearbeiten**.
 
-4. Klicken Sie auf **Inhaltsvorlage** oben rechts. Suchen Sie die `SecureFinancial Template`, wählen Sie sie aus und klicken Sie auf **Bestätigen**.
+4. Klicken Sie auf **Inhaltsvorlage** oben rechts. Suchen und wählen Sie die entsprechende Vorlage aus. In unserem Beispiel wird die `SecureFinancial Template` verwendet. Klicken Sie dann auf **Bestätigen**.
 
    ![Journey-email-config](assets/journey-email-config.png)
 
@@ -59,7 +61,7 @@ In dieser Lektion erfahren Sie, wie eine Federated Audience in Journey in Adobe 
 
 6. Sie befinden sich nun in der E-Mail-Designer. Bewegen Sie den Mauszeiger über das `{profile.person.name.firstName}` Makro und klicken Sie auf **Personalisierungsavatar**.
 
-7. Führen Sie im Personalisierungsfenster einen Drilldown in den folgenden Ordnerpfad durch: **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
+7. Führen Sie im Personalisierungsfenster einen Drilldown zum Ordnerpfad mit der hochgeladenen Federated Audience durch. In unserem Beispiel: **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. Klicken Sie in den Ordner **Zielgruppe lesen**. Die Anreicherungsattribute Ihrer Federated Audience finden Sie hier .
 
@@ -69,12 +71,12 @@ In dieser Lektion erfahren Sie, wie eine Federated Audience in Journey in Adobe 
 
 11. Nachdem die Personalisierung mit dem Vornamen hinzugefügt wurde, fügen Sie `Hi, ` vor der Personalisierungsvariablen hinzu. Klicken Sie dann auf **Speichern**.
 
-    ![Journey-email-save](assets/journey-email-save.png)
+   ![Journey-email-save](assets/journey-email-save.png)
 
 12. Klicken Sie zweimal auf **Zurück**, um zur Journey-Arbeitsfläche zurückzukehren. Klicken Sie dann im Menü **Aktion: E** Mail“ auf der rechten Seite auf **Speichern**.
 
    ![save-final-Journey](assets/save-final-journey.png)
 
-Herzlichen Glückwunsch! Sie haben eine Journey in AJO mit einer verbundenen Zielgruppe und den Attributen „Federated Enrichment“ erstellt.
+Wir haben eine Journey in AJO mit einer Federated Audience und Federated Enrichment-Attributen erstellt.
 
-Jetzt schauen wir uns an, wie [ bestehende Zielgruppen ](audience-enrichment-demo.md) Experience Platform mit Federated Data Warehouse anreichern können.
+Jetzt schauen wir uns an, wie [ bestehende Zielgruppen ](federated-audience-composition.md) Experience Platform mit Federated Data Warehouse anreichern können.
