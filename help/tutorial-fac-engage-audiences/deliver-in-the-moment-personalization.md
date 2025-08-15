@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Bereitstellen von Personalisierung „im Moment“ mit Edge Network
 
-Die Federated Audience-Komposition ermöglicht es Ihnen, bestehende Audiences in Adobe Experience Platform (AEP) anzureichern, indem Sie zusammengestellte Audience-Daten verwenden, die aus dem Enterprise Data Warehouse verbunden wurden. Diese Daten werden nicht in Adobe Experience Platform gespeichert, aber Sie können die Funktionen [Ereignisweiterleitung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} verwenden, um diese Daten direkt an Ihr Data Warehouse zu senden.
+Die Federated Audience-Komposition ermöglicht es Ihnen, bestehende Audiences in Adobe Experience Platform (AEP) anzureichern, indem Sie zusammengestellte Audience-Daten verwenden, die aus dem Enterprise Data Warehouse verbunden wurden. Diese Daten werden nicht in Adobe Experience Platform gespeichert, aber Sie können die Funktionen [Ereignisweiterleitung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} verwenden, um diese Daten direkt an Ihr Data Warehouse zu senden.
 
 In dieser Übung verwenden wir eine verbundene Zielgruppe, die mit der Kreditwürdigkeit und der Darlehensaktivität abgefragt wird, um die verhaltensbezogene Zielgruppe der Web-Seitenbesucher des Darlehensantrags anzureichern.
 
