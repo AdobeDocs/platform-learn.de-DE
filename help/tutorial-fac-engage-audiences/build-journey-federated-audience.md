@@ -1,13 +1,13 @@
 ---
 title: Erstellen einer Journey mit einer Federated Audience
-seo-title: Build a Journey with a Federated Audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Erstellen einer Journey mit einer Federated Audience
 description: In dieser Übung wird eine Federated Audience auf einer Journey Optimizer-Journey verwendet.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Federated Audiences können in Journey innerhalb von Adobe Journey Optimizer (AJO) verwendet werden. Dazu gehört die Verwendung von abgefragten Attributen aus der Federated Audience-Komposition zur Personalisierung von Nachrichten.
 
-Um mit der SecurFinancial-Story fortzufahren, insbesondere mit dem Anwendungsfall Kunden-Retargeting und Personalisierung, orchestrieren wir eine Journey für vorqualifizierte Kunden. Ziel ist es, eine personalisierte E-Mail zu senden, die auf Attributen basiert, die aus der Data Warehouse von SecurFinancial zusammengeführt werden.
+Um mit der SecurFinancial-Story fortzufahren, insbesondere mit dem Anwendungsfall Kunden-Retargeting und Personalisierung, orchestrieren wir eine Journey für vorqualifizierte Kunden. Das Ziel ist es, eine personalisierte E-Mail zu senden, die auf Attributen basiert, die aus dem Data Warehouse von SecurFinancial zusammengeführt werden.
 
 ## Schritte
 
@@ -70,7 +70,7 @@ Um mit der SecurFinancial-Story fortzufahren, insbesondere mit dem Anwendungsfal
 
 11. Nachdem die Personalisierung mit dem Vornamen hinzugefügt wurde, fügen Sie `Hi, ` vor der Personalisierungsvariablen hinzu. Klicken Sie dann auf **Speichern**.
 
-    ![Journey-email-save](assets/journey-email-save.png)
+   ![Journey-email-save](assets/journey-email-save.png)
 
 12. Klicken Sie zweimal auf **Zurück**, um zur Journey-Arbeitsfläche zurückzukehren. Klicken Sie dann im Menü **Aktion: E** Mail“ auf der rechten Seite auf **Speichern**.
 

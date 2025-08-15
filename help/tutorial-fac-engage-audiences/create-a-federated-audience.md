@@ -1,22 +1,22 @@
 ---
 title: Erstellen einer Federated Audience
-seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Erstellen einer Federated Audience
-description: In dieser Übung konfigurieren wir eine Verbindung zwischen Adobe Experience Platform und Ihrem Unternehmens-Data Warehouse, um die Federated Audience Composition zu aktivieren.
+description: In dieser Übung erstellen wir eine Zielgruppe aus dem Snowflake Data Warehouse mithilfe der Federated Audience Composition.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '339'
 ht-degree: 1%
 
 ---
 
 # Erstellen einer Federated Audience
 
-Als Nächstes führen wir Sie durch die Erstellung einer Zielgruppe aus unserer Data Warehouse mithilfe der Federated Audience-Komposition. Die Zielgruppe besteht aus SecurFinancial-Kunden, die eine Kreditwürdigkeit von 650 oder höher haben und derzeit keinen Kredit in ihrem SecurFinancial-Portfolio haben.
+Als Nächstes führen wir Sie durch die Erstellung einer Zielgruppe aus dem Snowflake Data Warehouse mithilfe der Federated Audience-Komposition. Die Zielgruppe besteht aus SecurFinancial-Kunden, die eine Kreditwürdigkeit von 650 oder höher haben und derzeit keinen Kredit in ihrem SecurFinancial-Portfolio haben.
 
 ## Schritte
 
@@ -64,6 +64,6 @@ Als Nächstes führen wir Sie durch die Erstellung einer Zielgruppe aus unserer 
 >
 > In diesem Beispiel wurden Produkt- und Bonitätsinformationen verwendet, um unsere Zielgruppe durch direkten Zugriff auf Unternehmensdaten aus Snowflake aufzubauen, ohne eine Kopie davon aus Adobe Experience Platform zu erstellen. Sobald das externe System die Abfrage verarbeitet, werden nur die relevanten E-Mail-, aktuellen Produkt- und Vornamenwerte zur nachgelagerten Aktivierung an die Zielgruppendefinition übergeben. Dies gilt für alle von RTCDP unterstützten Ziele.
 
-Weitere Informationen zur Komposition von Audiences finden Sie unter [Experience League](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Weitere Informationen zur Komposition von Audiences finden Sie unter [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Nachdem unsere Federated Audience erstellt wurde, ordnen [ sie einem S3-Konto ](map-federated-audience-to-s3.md).

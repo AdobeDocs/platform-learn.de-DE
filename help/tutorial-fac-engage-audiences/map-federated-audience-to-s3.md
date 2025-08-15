@@ -1,20 +1,20 @@
 ---
-title: Zuordnen einer Federated Audience zu S3
-seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+title: Zuordnen einer Federated Audience zu einem S3-Ziel
+seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Zuordnen einer Federated Audience zu S3
 description: In dieser Übung ordnen wir eine zusammengeführte Zielgruppe einem nachgelagerten Real-Time CDP-Ziel zu, um ein personalisiertes Offline-Erlebnis zu unterstützen.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# Verknüpfte Zielgruppe zu S3 zuordnen, um Zielgruppenattribute für die Anreicherung zu nutzen
+# Zuordnen einer Federated Audience zu einem S3-Ziel, um Zielgruppenattribute zur Anreicherung zu nutzen
 
 Sie können Zielgruppenattribute in Ihrem Data Warehouse nutzen, um das Erlebnis Ihrer Zielgruppe in nachgelagerten Aktivierungs-Workflows mit RTCDP-Zielen zu bereichern. Für SecurFinancial können diese Federated Attributes verwendet werden, um das Personalisierungserlebnis der Kunden-Zielgruppe offline zu verbessern. Nachfolgend wird die Federated Audience einem vorkonfigurierten Amazon S3-Ziel zugeordnet.
 
@@ -50,6 +50,6 @@ Sie können Zielgruppenattribute in Ihrem Data Warehouse nutzen, um das Erlebnis
 
 >[**!SUMMARY**]
 >
-> Wir haben erfolgreich eine Zielgruppe erstellt und sie mit Leichtigkeit für ein S3-Ziel aktiviert. Die benutzerfreundliche Oberfläche ermöglicht es Marketing-Teams, Zielgruppen schnell zu erstellen und zu aktivieren, ohne die zugrunde liegenden Daten zu verschieben.
+> Wir haben erfolgreich eine Zielgruppe erstellt und sie mit Leichtigkeit für ein S3-Ziel aktiviert. Jede andere Lösung kann diese Zielgruppe sofort verwenden. Die benutzerfreundliche Oberfläche ermöglicht es Marketing-Teams, Zielgruppen schnell zu erstellen und zu aktivieren, ohne die zugrunde liegenden Daten zu verschieben. Kunden, die diesen Ansatz verwenden, sind seit etwa einem Monat mit ihrer ersten Verwendung LIVE.
 
 Jetzt bauen wir [eine Journey](build-journey-federated-audience.md).
