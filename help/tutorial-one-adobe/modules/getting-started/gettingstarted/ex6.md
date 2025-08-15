@@ -4,9 +4,9 @@ description: Erste Schritte - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 53b252df80801e521ad3df2fe4c158039adfa365
+source-git-commit: 947ce5880c88fcf0211c5d16270dfcf2d6416131
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '788'
 ht-degree: 2%
 
 ---
@@ -41,10 +41,6 @@ Sie sollten das dann sehen. Wählen Sie **+ Zu Projekt hinzufügen** und dann **
 
 ![Neue Adobe I/O-Integration](./images/adobe_io_access_api.png)
 
-Ihr Bildschirm sollte wie folgt aussehen.
-
-![Neue Adobe I/O-Integration](./images/api1.png)
-
 Wählen Sie **Adobe Firefly Services** und **Firefly - Firefly Services** aus und klicken Sie dann auf **Weiter**.
 
 ![Neue Adobe I/O-Integration](./images/api3.png)
@@ -67,7 +63,7 @@ Sie sollten das dann sehen.
 >
 >Je nach ausgewähltem Lernpfad haben Sie möglicherweise keinen Zugriff auf die Photoshop Services-API. Sie haben nur Zugriff auf die Photoshop Services-API, wenn Sie sich auf dem Lernpfad **Firefly**, **Workfront Fusion**, **ALL** befinden oder wenn Sie an einem **Live-Workshop**. Sie können diesen Schritt überspringen, wenn Sie nicht auf einem dieser Lernpfade sind.
 >
->Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
+Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
 
 ![Azure-Speicher](./images/ps2.png)
 
