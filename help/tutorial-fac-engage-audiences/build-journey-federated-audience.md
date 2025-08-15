@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Um mit der SecurFinancial-Story fortzufahren, insbesondere mit dem Anwendungsfal
 
 11. Nachdem die Personalisierung mit dem Vornamen hinzugefügt wurde, fügen Sie `Hi, ` vor der Personalisierungsvariablen hinzu. Klicken Sie dann auf **Speichern**.
 
-    ![Journey-email-save](assets/journey-email-save.png)
+   ![Journey-email-save](assets/journey-email-save.png)
 
 12. Klicken Sie zweimal auf **Zurück**, um zur Journey-Arbeitsfläche zurückzukehren. Klicken Sie dann im Menü **Aktion: E** Mail“ auf der rechten Seite auf **Speichern**.
 
@@ -78,4 +78,4 @@ Um mit der SecurFinancial-Story fortzufahren, insbesondere mit dem Anwendungsfal
 
 Wir haben eine Journey in AJO mit einer Federated Audience und Federated Enrichment-Attributen erstellt.
 
-Jetzt schauen wir uns an, wie [ bestehende Zielgruppen ](federated-audience-composition.md) Experience Platform mit Federated Data Warehouse anreichern können.
+Jetzt schauen wir uns an, wie [ eine Zielgruppe ](federated-audience-composition.md) Experience Platform mit Daten aus dem Data Warehouse anreichern können.

@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '342'
 ht-degree: 1%
 
 ---
@@ -64,6 +64,6 @@ Als Nächstes führen wir Sie durch die Erstellung einer Zielgruppe aus dem Snow
 >
 > In diesem Beispiel wurden Produkt- und Bonitätsinformationen verwendet, um unsere Zielgruppe durch direkten Zugriff auf Unternehmensdaten aus Snowflake aufzubauen, ohne eine Kopie davon aus Adobe Experience Platform zu erstellen. Sobald das externe System die Abfrage verarbeitet, werden nur die relevanten E-Mail-, aktuellen Produkt- und Vornamenwerte zur nachgelagerten Aktivierung an die Zielgruppendefinition übergeben. Dies gilt für alle von RTCDP unterstützten Ziele.
 
-Weitere Informationen zur Komposition von Audiences finden Sie unter [Experience League](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Weitere Informationen zur Komposition von Audiences finden Sie unter [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
-Nachdem unsere Federated Audience erstellt wurde, ordnen [ sie einem S3-Konto ](map-federated-audience-to-s3.md).
+Nachdem wir nun unsere Federated Audience erstellt haben, [ wir sie einem S3-Ziel in Experience Platform ](map-federated-audience-to-s3.md).
