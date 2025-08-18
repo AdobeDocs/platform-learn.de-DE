@@ -3,22 +3,31 @@ title: Adobe Workfront-Planung
 description: Adobe Workfront-Planung
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 08ed2cca-4670-4038-b2f0-aa7adb3fc2bf
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 4%
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
 # 1.1 Adobe Workfront-Planung
 
+Diese Übung führt Sie durch die grundlegenden Aspekte der Workfront-Planung, einschließlich der Erstellung von Arbeitsbereichen, der Definition von Datensatztypen, der Verwaltung von Datensätzen und der Verwendung des KI-Assistenten für optimierte Vorgänge. Wenn Sie dieses Labor durchführen, machen Sie sich mit dieser leistungsstarken Lösung vertraut und erhalten einen Ausgangspunkt, um die Funktionen weiter unten zu erkunden.
+
 ## Lernziele
 
-- Erfahren Sie, wie Sie Adobe Workfront Planning verwenden.
+Nach Abschluss dieses Labors werden Sie mit den folgenden Elementen vertraut:
+
+- Machen Sie sich mit den Kernkomponenten von Workfront Planning vertraut: Arbeitsbereiche, Datensatztypen und Datensätze.
+- Erstellen Sie eine neue Workspace, die auf einen bestimmten Betriebslebenszyklus zugeschnitten ist.
+- Definieren und Anpassen von Datensatztypen in der Workspace.
+- Verwalten Sie Datensätze, einschließlich Erstellen, Aktualisieren und Löschen von Einträgen.
+- Verwenden Sie den KI-Assistenten, um Aktionen effizient durchzuführen.
 
 ## Voraussetzungen
 
-- Zugriff auf Workfront Planning.
+- Zugriff auf das Adobe Workfront-Konto mit dem Workfront Planning-Paket.
 
 ## Übungen
 

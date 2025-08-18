@@ -4,10 +4,10 @@ description: Erste Schritte mit Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 2%
+source-wordcount: '1234'
+ht-degree: 1%
 
 ---
 
@@ -85,7 +85,7 @@ Klicken Sie, um den neu erstellten Datensatztyp **Geschäftseinheit** zu öffnen
 
 ![Workfront-Planung](./images/wfpl10.png)
 
-Es wird jetzt eine leere Tabellenansicht angezeigt, da für den neu erstellten Datensatztyp noch kein Feld definiert wurde.
+Es wird jetzt eine leere Tabellenansicht angezeigt, da für Ihren neu erstellten Datensatztyp noch keine Geschäftseinheitendatensätze definiert sind.
 
 ![Workfront-Planung](./images/wfpl11.png)
 
@@ -115,7 +115,49 @@ Klicken Sie auf **Speichern**.
 
 ![Workfront-Planung](./images/wfpl17.png)
 
-Sie haben jetzt einen neuen Datensatztyp erstellt und sowohl Felder gelöscht als auch erstellt. Kehren Sie zum Workspace-Übersichtsbildschirm zurück, indem Sie auf den Pfeil oben links klicken.
+Klicken Sie auf die 3 Punkte **…** auf dem ersten Datensatz und wählen Sie **Anzeigen**.
+
+![Workfront-Planung](./images/wfpla1.png)
+
+Legen Sie **Name** auf `Consumer Services` fest.
+
+Legen Sie **Beschreibung** auf `Handles residential offerings like mobile plans, internet packages, and customer support.` fest.
+
+Legen Sie **Business Unit Lead** selbst fest.
+
+Klicken Sie abschließend auf den Pfeil, um zum vorherigen Bildschirm zurückzukehren.
+
+![Workfront-Planung](./images/wfpla2.png)
+
+Klicken Sie auf die 3 Punkte **…** auf dem zweiten Datensatz und wählen Sie **Anzeigen**.
+
+![Workfront-Planung](./images/wfpla3.png)
+
+Legen Sie **Name** auf `Enterprise & Business Solutions` fest
+
+Legen Sie **Beschreibung** auf `Provides connectivity, cloud, and managed services to corporate clients and government entities.` fest
+
+Legen Sie **Business Unit Lead** selbst fest.
+
+Klicken Sie abschließend auf den Pfeil, um zum vorherigen Bildschirm zurückzukehren.
+
+![Workfront-Planung](./images/wfpla4.png)
+
+Klicken Sie auf die 3 Punkte **…** auf dem dritten Eintrag und wählen Sie **Anzeigen**.
+
+![Workfront-Planung](./images/wfpla5.png)
+
+Legen Sie **Name** auf `Sales & Marketing` fest
+
+Legen Sie **Beschreibung** auf `Drives customer acquisition, brand strategy, advertising, and market segmentation.` fest
+
+Legen Sie **Business Unit Lead** selbst fest.
+
+Klicken Sie abschließend auf den Pfeil, um zum vorherigen Bildschirm zurückzukehren.
+
+![Workfront-Planung](./images/wfpla6.png)
+
+Sie haben jetzt einen neuen Datensatztyp erstellt, Sie haben sowohl Felder gelöscht als auch erstellt und Sie haben drei Geschäftseinheiten erstellt. Kehren Sie zum Workspace-Übersichtsbildschirm zurück, indem Sie auf den Pfeil oben links klicken.
 
 ![Workfront-Planung](./images/wfpl18.png)
 
@@ -129,7 +171,7 @@ Zum Öffnen hier klicken **Kampagnen**.
 
 ![Workfront-Planung](./images/wfpl20.png)
 
-Klicken Sie auf das Symbol **+** , um ein neues Feld zu erstellen. Wählen Sie **Neue Verbindung** und dann **Personas** aus.
+Klicken Sie auf das Symbol **+** , um ein neues Feld zu erstellen. Wählen Sie **Neue Verbindung** und dann **Geschäftseinheit** aus.
 
 ![Workfront-Planung](./images/wfpl21.png)
 
@@ -151,7 +193,7 @@ Klicken Sie im Bildschirm Kampagnen - Überblick auf die 3 Punkte **…** und w�
 
 ![Workfront-Planung](./images/wfpl25.png)
 
-Ändern Sie den Namen in `Campaign Request Form`. Klicken Sie auf **Speichern**.
+Ändern Sie den Namen in `Campaign Request Form`. Klicken Sie auf **Erstellen**.
 
 ![Workfront-Planung](./images/wfpl26.png)
 
@@ -187,6 +229,8 @@ Legen Sie die **Kampagnenübersicht** auf fest:
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
 
+Füllen Sie die anderen Felder wie gewünscht aus.
+
 Klicken Sie **Senden-Anfrage**.
 
 ![Workfront-Planung](./images/wfpl33.png)
@@ -195,7 +239,7 @@ Klicken Sie auf **X**, um das Popup zu schließen.
 
 ![Workfront-Planung](./images/wfpl34.png)
 
-In der Übersicht sollte dann die neu erstellte Kampagne zu sehen sein.
+Die neu erstellte Kampagne sollte dann in der Übersicht zu sehen sein.
 
 ![Workfront-Planung](./images/wfpl35.png)
 
@@ -297,19 +341,15 @@ Nach einigen Sekunden sollte eine Bestätigung angezeigt werden, dass die Automa
 
 ![Workfront-Planung](./images/wfpl47.png)
 
-Um das Programm in Workfront zu überprüfen, öffnen Sie das Menü und klicken Sie auf **Portfolios**.
+Um das Programm in Workfront zu überprüfen, scrollen Sie nach rechts und klicken Sie in der Spalte **Verbundenes Programm** auf das Programm.
 
 ![Workfront-Planung](./images/wfpl48.png)
 
-Öffnen Sie Ihr Portfolio, das den Namen `--aepUserLdap-- - Marketing` erhalten soll.
-
-![Workfront-Planung](./images/wfpl49.png)
-
-Navigieren Sie **Programme** und Sie sollten dann das Programm sehen, das gerade von der von Ihnen konfigurierten Automatisierung erstellt wurde.
+Sie sollten dann das Programm sehen, das gerade von der von Ihnen konfigurierten Automatisierung erstellt wurde.
 
 ![Workfront-Planung](./images/wfpl50.png)
 
-Nächster Schritt: [1.2.2 TBD](./ex1.md){target="_blank"}
+Nächster Schritt: [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Zurück zu [Einführung in Workfront Planning](./wfplanning.md){target="_blank"}
 
