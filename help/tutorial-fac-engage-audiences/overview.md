@@ -8,7 +8,7 @@ thumbnail: 18743-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2025-08-11T00:00:00Z
 exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: ab9563d1ac4a0b97f45de0fd18186b34c98e2a36
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Interagieren mit Audiences direkt aus Ihrem Data Warehouse mithilfe der Übersicht über die Federated Audience Composition
 
-Federated Audience Composition (FAC) ist ein Modul für Adobe Real-Time Customer Data Platform (Real-Time CDP) und Adobe Journey Optimizer. Sie ist auch mit Adobe Real-Time CDP Composable Audiences verfügbar (eine maßgeschneiderte Lösung für Kunden wie Composable CDP). Datenarchitekten und Dateningenieure können hochwertige Zielgruppen direkt in [unterstützten Unternehmens-Data-Warehouses“ kuratieren und aktivieren](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} ohne Kundendaten in Adobe Experience Platform (AEP) kopieren oder verschieben zu müssen. Dieser zusammensetzbare CDP-Ansatz (eine maßgeschneiderte Lösung für Kunden) stimmt mit Branchentrends überein und ermöglicht es Unternehmen, ihre Dateninfrastruktur für personalisierte digitale Erlebnisse zu nutzen und gleichzeitig die Data Governance beizubehalten.
+Federated Audience Composition (FAC) ist ein Modul für Adobe Real-Time Customer Data Platform (Real-Time CDP) und Adobe Journey Optimizer. Sie ist auch mit Adobe Real-Time CDP Composable Audiences verfügbar (eine maßgeschneiderte Lösung für Kunden wie Composable CDP). Datenarchitekten und Dateningenieure können hochwertige Zielgruppen direkt in [unterstützten Unternehmens-Data-Warehouses“ kuratieren und aktivieren](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} ohne Kundendaten in Adobe Experience Platform (AEP) kopieren oder verschieben zu müssen. Dieser zusammensetzbare CDP-Ansatz (eine maßgeschneiderte Lösung für Kunden) stimmt mit Branchentrends überein und ermöglicht es Unternehmen, ihre Dateninfrastruktur für personalisierte digitale Erlebnisse zu nutzen und gleichzeitig die Data Governance beizubehalten.
 
 ## Geschäftskontext
 
@@ -51,10 +51,10 @@ Um ähnliche Aktivitäten in Ihrer Umgebung durchzuführen, müssen Sie Folgende
 
 - Zugriff auf ein Adobe Experience Platform-Konto, das mit Real-Time CDP oder Journey Optimizer bereitgestellt wurde.
 - Systemadministratorberechtigungen oder die Möglichkeit, Berechtigungen konfigurieren zu lassen.
-- Vertrautheit mit Adobe Experience Platform-Konzepten wie Schemata, Datensätzen und Zielgruppen (empfohlen: Absolvieren Sie die Seite [Einführung in die Adobe Experience Platform-](https://experienceleague.adobe.com/de/playlists/experience-platform-introduction?lang=en){target="_blank"}) in Experience League.
-- Zugriff auf ein unterstütztes [Enterprise Data Warehouse](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+- Vertrautheit mit Adobe Experience Platform-Konzepten wie Schemata, Datensätzen und Zielgruppen (empfohlen: Absolvieren Sie die Seite [Einführung in die Adobe Experience Platform-](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"}) in Experience League.
+- Zugriff auf ein unterstütztes [Enterprise Data Warehouse](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 - Grundlegende Kenntnisse von SQL für die Abfrage von Data Warehouses.
 - **Sandbox-Umgebungen**: Erstellen Sie eine Sandbox in der Instanz Ihrer Organisation, um sicher zu experimentieren, ohne die Produktionsdaten zu beeinflussen.
-- **Data Warehouse-Verbindung**: In diesem Tutorial wird eine Snowflake-Verbindung verwendet, Sie können jedoch jedes [unterstützte Data Warehouse“ ](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/start/access-prerequisites).
+- **Data Warehouse-Verbindung**: In diesem Tutorial wird eine Snowflake-Verbindung verwendet, Sie können jedoch jedes [unterstützte Data Warehouse“ ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites).
 
 Sehen wir uns zunächst die [Hochrangige Architektur und Fluss für Federated Audience-Komposition“ ](fac-architecture-and-flow.md).

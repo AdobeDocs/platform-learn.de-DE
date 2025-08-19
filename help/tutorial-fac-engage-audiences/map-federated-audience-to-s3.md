@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ Sie können Zielgruppenattribute in Ihrem Data Warehouse nutzen, um das Erlebnis
 
 8. Überprüfen Sie Ihre Zielgruppenzuordnung und klicken Sie auf **Beenden**.
 
->[**!SUMMARY**]
->
-> Wir haben erfolgreich eine Zielgruppe erstellt und sie mit Leichtigkeit für ein S3-Ziel aktiviert. Jede andere Lösung kann diese Zielgruppe sofort verwenden. Die benutzerfreundliche Oberfläche ermöglicht es Marketing-Teams, Zielgruppen schnell zu erstellen und zu aktivieren, ohne die zugrunde liegenden Daten zu verschieben. Kunden, die diesen Ansatz verfolgen, sind seit etwa einem Monat mit ihrem ersten Anwendungsfall live.
+### ZUSAMMENFASSUNG
+
+Wir haben erfolgreich eine Zielgruppe erstellt und sie mit Leichtigkeit für ein S3-Ziel aktiviert. Jede andere Lösung kann diese Zielgruppe sofort verwenden. Die benutzerfreundliche Oberfläche ermöglicht es Marketing-Teams, Zielgruppen schnell zu erstellen und zu aktivieren, ohne die zugrunde liegenden Daten zu verschieben. Kunden, die diesen Ansatz verfolgen, sind seit etwa einem Monat mit ihrem ersten Anwendungsfall live.
 
 
 Jetzt bauen wir [eine Journey](build-journey-federated-audience.md).
