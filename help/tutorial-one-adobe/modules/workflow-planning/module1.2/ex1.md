@@ -63,7 +63,7 @@ Scrollen Sie im linken Menü nach unten zu **Dokumente** und klicken Sie dann au
 
 Verwenden Sie für den Namen Ihrer Integration `--aepUserLdap-- - CitiSignal AEM`.
 
-Öffnen Sie das Dropdown-**** Experience Manager-Repository und wählen Sie Ihre AEM CS-Instanz aus, die `--aepUserLdap-- - CitiSignal` benannt werden soll.
+Öffnen Sie das Dropdown-**&#x200B;** Experience Manager-Repository und wählen Sie Ihre AEM CS-Instanz aus, die `--aepUserLdap-- - CitiSignal` benannt werden soll.
 
 ![WF](./images/wfb5.png)
 
