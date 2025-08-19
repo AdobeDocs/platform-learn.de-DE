@@ -64,6 +64,6 @@ Als Nächstes führen wir Sie durch die Erstellung einer Zielgruppe aus dem Snow
 
 In diesem Beispiel wurden Produkt- und Bonitätsinformationen verwendet, um unsere Zielgruppe durch direkten Zugriff auf Unternehmensdaten aus Snowflake aufzubauen, ohne eine Kopie davon aus Adobe Experience Platform zu erstellen. Sobald das externe System die Abfrage verarbeitet, werden nur die relevanten E-Mail-, aktuellen Produkt- und Vornamenwerte zur nachgelagerten Aktivierung an die Zielgruppendefinition übergeben. Dies gilt für alle von RTCDP unterstützten Ziele.
 
-Weitere Informationen zur Komposition von Audiences finden Sie unter [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Weitere Informationen zur Komposition von Audiences finden Sie unter [Experience League](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Nachdem wir nun unsere Federated Audience erstellt haben, [ wir sie einem S3-Ziel in Experience Platform ](map-federated-audience-to-s3.md).
