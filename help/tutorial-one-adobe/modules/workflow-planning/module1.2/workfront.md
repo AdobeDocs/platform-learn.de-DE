@@ -4,10 +4,10 @@ description: Workflow-Management mit Adobe Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '225'
+ht-degree: 1%
 
 ---
 
@@ -15,11 +15,17 @@ ht-degree: 2%
 
 ## Lernziele
 
-- Erfahren Sie, wie Sie Adobe Workfront auf verschiedene Weise verwenden.
+Nach Abschluss dieses Labors werden Sie mit den folgenden Elementen vertraut:
+
+- Grundlegendes zur Hierarchie von Workfront-Objekten, einschließlich Portfolios, Programmen, Projekten und Aufgaben
+- Erstellen Sie ein neues Projekt mit einer Vorlage, die auf eine Marketing-Kampagne zugeschnitten ist.
+- Zuweisen von Aufgaben zu Ressourcen nach Rolle und Verfügbarkeit.
+- Dokument hochladen und Genehmigung anfordern
+- Senden des genehmigten Dokuments an AEM Assets CS mit integrierter Integration
 
 ## Voraussetzungen
 
-- Zugriff auf Workfront und Workfront Fusion
+- Zugriff auf Adobe Workfront mit einer Workfront Standard-/Planerlizenz.
 
 ## Übungen
 

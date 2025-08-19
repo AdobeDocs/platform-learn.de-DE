@@ -4,9 +4,9 @@ description: Erste Schritte mit Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '1099'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,22 @@ ht-degree: 2%
 >[!IMPORTANT]
 >
 >Wenn Sie zuvor ein AEM CS-Programm mit einer AEM Assets CS-Umgebung konfiguriert haben, kann es sein, dass Ihre AEM CS-Sandbox in den Ruhezustand versetzt wurde. Da der Ruhezustand einer solchen Sandbox 10-15 Minuten dauert, ist es ratsam, den Ruhezustand jetzt zu beenden, damit Sie nicht zu einem späteren Zeitpunkt warten müssen.
+
+## Terminologie 1.2.1.1 Workfront-Workflows
+
+Im Folgenden finden Sie die wichtigsten Workfront-Objekte und -Konzepte:
+
+| Name | Letzte Aktualisierung |
+| ---------------------- | ------------ | 
+| Portfolio | Eine Sammlung von Projekten mit einheitlichen Merkmalen. Diese Projekte konkurrieren normalerweise um dieselben Ressourcen, Budgets oder Zeitfenster. |
+| Programm | Eine Untergruppe innerhalb eines Portfolios, in der ähnliche Projekte gruppiert werden können, um einen klar definierten Nutzen zu erzielen. |
+| Projekt | Ein großer Arbeitsaufwand, der innerhalb eines bestimmten Zeitrahmens abgeschlossen werden muss und ein bestimmtes Budget und eine bestimmte Anzahl von Ressourcen erfordern muss. Um es überschaubar zu machen, unterteilen Sie das Projekt in eine Reihe von Aufgaben. Das Abschließen aller Aufgaben führt zum Abschluss des Projekts. |
+| Projektvorlage | Sie können Projektvorlagen verwenden, um die meisten wiederholbaren Prozesse, Informationen und Einstellungen zu erfassen, die mit den Projekten in Ihrer Organisation verbunden sind. Nach dem Erstellen von Vorlagen können Sie sie an vorhandene Projekte anhängen oder zum Erstellen neuer Projekte verwenden. |
+| Aufgabe | Eine Aktivität, die als Schritt zum Erreichen eines endgültigen Ziels (Abschluss des Projekts) ausgeführt werden muss. Aufgaben können niemals unabhängig voneinander existieren. Sie sind immer Teil eines Projekts. |
+| Zuweisung | Ein Benutzer, ein Aufgabengebiet oder ein Team, das bzw. das einem Problem oder einer Aufgabe zugewiesen ist. Projekte, Portfolios oder Programme dürfen keine Zuweisungen haben. |
+| Dokument/Version | Jede Datei, die an ein Objekt in Workfront angehängt ist. Jedes Mal, wenn dasselbe Dokument in dasselbe Objekt hochgeladen wird, wird ihm eine Versionsnummer zugewiesen. Benutzer können mehrere Optionen für eine frühere Version eines Dokuments anzeigen und ändern. |
+| Validierung | Für ein bestimmtes Arbeitselement, z. B. eine Aufgabe, ein Dokument oder eine Arbeitszeittabelle, kann es erforderlich sein, dass ein Verantwortlicher oder ein anderer Benutzer das Arbeitselement abzeichnet. Dieser Prozess der Abzeichnung wird als Genehmigung bezeichnet. |
+
 
 Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Klicken, um **Workfront zu**.
 
@@ -47,7 +63,7 @@ Scrollen Sie im linken Menü nach unten zu **Dokumente** und klicken Sie dann au
 
 Verwenden Sie für den Namen Ihrer Integration `--aepUserLdap-- - CitiSignal AEM`.
 
-Öffnen Sie das Dropdown-**&#x200B;** Experience Manager-Repository und wählen Sie Ihre AEM CS-Instanz aus, die `--aepUserLdap-- - CitiSignal` benannt werden soll.
+Öffnen Sie das Dropdown-**** Experience Manager-Repository und wählen Sie Ihre AEM CS-Instanz aus, die `--aepUserLdap-- - CitiSignal` benannt werden soll.
 
 ![WF](./images/wfb5.png)
 
