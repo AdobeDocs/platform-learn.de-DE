@@ -4,7 +4,7 @@ description: Proofing mit Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -197,7 +197,7 @@ Sie sollten das dann sehen.
 
 Im Rahmen dieser Aufgabe müssen Sie ein neues Bild erstellen und es dann als Dokument in Workfront hochladen. Sie erstellen dieses Asset jetzt selbst mit Adobe Express.
 
-## 1.2.2.5 Erstellen von Assets mit Adobe Firely Services und Adobe Express
+## 1.2.2.5 Erstellen von Assets mit Adobe Firefly Services und Adobe Express
 
 Navigieren Sie zu [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}. Geben Sie den `a neon rabbit running very fast through space` ein und klicken Sie auf **Generieren**.
 

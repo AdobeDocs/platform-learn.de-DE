@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
+exl-id: 09e8fdfd-e02f-43ff-a4f4-fa92eb3f01a3
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 1%
+source-wordcount: '466'
+ht-degree: 0%
 
 ---
 
@@ -114,37 +115,9 @@ Nach dem Hochladen wird der neue Ordner in Frame.io verfügbar.
 
 ![Frame.io](./images/frameio21.png)
 
-## 1.5.1.3 Einrichten von Adobe Premiere Pro Beta
-
-Sie haben Adobe Premiere Pro Beta bereits als Teil des Moduls Erste Schritte installiert. Um Frame.io in Kombination mit Adobe Premiere Pro Beta zu nutzen, können Sie das für diese Integration entwickelte Plugin nutzen.
-
-Öffnen Sie die Creative Cloud-App und suchen Sie nach `frame.io`.
-
-![Frame.io](./images/frameio23.png)
-
-Scrollen Sie in den Suchergebnissen nach unten, um das Plug-in **Frame.io V4-Kommentare** zu finden. Klicken Sie darauf.
-
-![Frame.io](./images/frameio24.png)
-
-Sie sollten das dann sehen. Klicken Sie auf **Installieren**.
-
-![Frame.io](./images/frameio25.png)
-
-Wenn Adobe Premiere Pro Beta geöffnet ist, müssen Sie **Schließen** bevor Sie das Plug-in installieren können.
-
-![Frame.io](./images/frameio26.png)
-
-Klicken Sie auf **OK**. Das Plug-in wird jetzt installiert.
-
-![Frame.io](./images/frameio27.png)
-
-Öffnen Sie nach der Installation des Plug-ins Adobe Premiere Pro Beta auf Ihrem Computer.
-
-![Frame.io](./images/frameio22.png)
-
 ## Nächste Schritte
 
-Gehe zu [-](./ex1.md){target="_blank"}
+Gehen Sie zu [1.5.2-Genehmigungen mit Frame.io](./ex2.md){target="_blank"}
 
 Gehen Sie zurück zu [Optimieren Sie Ihren Workflow mit Frame.io](./frameio.md){target="_blank"}
 

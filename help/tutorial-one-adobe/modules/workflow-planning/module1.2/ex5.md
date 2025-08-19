@@ -3,16 +3,17 @@ title: Photoshop- und Workfront-Plug-in einrichten
 description: Photoshop- und Workfront-Plug-in einrichten
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 0695845e-d18e-416d-a8f4-34464618995a
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
 
 ---
 
-# 2.2.5 Photoshop- und Workfront-Plug-in einrichten
+# 1.2.5 Photoshop- und Workfront-Plug-in einrichten
 
-## Plug-in 2.2.5.1 Installieren von Workfront für Photoshop
+## Plug-in 1.2.5.1 Installieren von Workfront für Photoshop
 
 Um die Integration zwischen Workfront und Photoshop einzurichten, installieren Sie die Creative Cloud-Anwendung auf Ihrem Computer. Melden Sie sich mit Ihrer Adobe ID an.
 
@@ -42,7 +43,7 @@ Sie werden es dann sehen.
 
 ![WF](./images/wf7.png)
 
-## 2.2.5.2 Konfigurieren des Plug-ins in Photoshop
+## 1.2.5.2 Konfigurieren des Plug-ins in Photoshop
 
 Öffnen Sie Photoshop. Gehen Sie in der Taskleiste zu **Plug-ins** > **Workfront für Adobe Photoshop** > klicken Sie auf **Adobe Workfront**.
 
