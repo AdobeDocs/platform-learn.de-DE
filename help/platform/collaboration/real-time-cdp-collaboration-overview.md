@@ -41,7 +41,7 @@ Weitere Informationen finden Sie in der Real-Time CDP Collaboration [Dokumentati
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration-Einführung" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1755703749870" alt="Real-Time CDP Collaboration-Einführung"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446810/?format=jpeg&nocache=1755703749870&captions=ger" alt="Real-Time CDP Collaboration-Einführung"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -64,7 +64,7 @@ Weitere Informationen finden Sie in der Real-Time CDP Collaboration [Dokumentati
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="Überblick über Real-Time CDP für Agenturpraktiker" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1755703749854" alt="Überblick über Real-Time CDP für Agenturpraktiker"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464667/?format=jpeg&nocache=1755703749854&captions=ger" alt="Überblick über Real-Time CDP für Agenturpraktiker"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ Weitere Informationen finden Sie in der Real-Time CDP Collaboration [Dokumentati
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - Prozesse und Personen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1755703749860" alt="Real-Time CDP Collaboration - Prozesse und Personen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464678/?format=jpeg&nocache=1755703749860&captions=ger" alt="Real-Time CDP Collaboration - Prozesse und Personen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ Wenden Sie sich zunächst an Ihren Adobe Experience Platform-Administrator, um s
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Festlegen von Berechtigungen für Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1755703750284" alt="Festlegen von Berechtigungen für Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452239/?format=jpeg&nocache=1755703750284&captions=ger" alt="Festlegen von Berechtigungen für Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -258,7 +258,7 @@ Wenden Sie sich zunächst an Ihren Adobe Experience Platform-Administrator, um s
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Erstellen eines Projekts in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1755703750674" alt="Erstellen eines Projekts in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464043/?format=jpeg&nocache=1755703750674&captions=ger" alt="Erstellen eines Projekts in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -281,7 +281,7 @@ Wenden Sie sich zunächst an Ihren Adobe Experience Platform-Administrator, um s
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="brand-to-brand-collaboration.md" title="Brand to Brand Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1755703750685" alt="Brand to Brand Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470945/?format=jpeg&nocache=1755703750685&captions=ger" alt="Brand to Brand Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
