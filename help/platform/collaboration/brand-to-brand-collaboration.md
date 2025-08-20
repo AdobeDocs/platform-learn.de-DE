@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Erfahren Sie mehr über Anwendungsfälle, die von der Zusammenarbeit zwischen Marken und Marken unterstützt werden, und über die spezifischen Funktionen, die zur Unterstützung dieser Workflows eingeführt wurden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470936/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470945/?learn=on&enablevpops&captions=ger)
