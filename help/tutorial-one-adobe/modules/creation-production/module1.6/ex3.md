@@ -5,14 +5,15 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 1%
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
-# 1.6.3 Externe DAM-App erstellen
+# 1.6.3 Externe DAM-App erstellen und bereitstellen
 
 ## 1.6.3.1 Herunterladen von Beispiel-App-Dateien
 
@@ -131,15 +132,15 @@ AWS_REGION=
 AWS_BUCKET_NAME=
 ```
 
-Die Felder **AWS_ACCESS_KEY_ID** und **AWS_SECRET_ACCESS_KEY** waren verfügbar, nachdem der IAM-Benutzer in der vorherigen Übung erstellt wurde. Sie wurden gebeten, sie aufzuschreiben. Sie können jetzt die Werte kopieren.
+Die **`AWS_ACCESS_KEY_ID`** und **`AWS_SECRET_ACCESS_KEY`** waren verfügbar, nachdem der IAM-Benutzer in der vorherigen Übung erstellt wurde. Sie wurden gebeten, sie aufzuschreiben. Sie können jetzt die Werte kopieren.
 
 ![ETL](./images/cred1.png)
 
-Das Feld **AWS_REGION** kann aus der AWS S3-Startansicht neben Ihrem -Behälternamen entnommen werden. In diesem Beispiel lautet die Region **us-west-2**.
+Das Feld **`AWS_REGION`** kann aus der AWS S3-Startansicht neben Ihrem -Behälternamen übernommen werden. In diesem Beispiel lautet die Region **us-west-2**.
 
 ![ETL](./images/bucket2.png)
 
-Das Feld **AWS_BUCKET_NAME** sollte `--aepUserLdap---gspem-dam` sein.
+Das Feld **`AWS_BUCKET_NAME`** sollte `--aepUserLdap---gspem-dam` sein.
 
 Mit diesen Informationen können Sie die Werte der einzelnen Variablen aktualisieren.
 
@@ -169,9 +170,53 @@ Führen Sie im Terminal-Fenster den Befehl `aio app run` aus. Dies sollte dann n
 
 ![EXT DAM](./images/extdam24.png)
 
+Sie haben jetzt bestätigt, dass Ihre App ausgeführt wird. Der nächste Schritt besteht darin, sie bereitzustellen.
+
+Drücken Sie zunächst **STRG+C**, um die Ausführung der App zu stoppen. Geben Sie dann den `aio app deploy` ein. Mit diesem Befehl wird der Code für Adobe IO bereitgestellt.
+
+Daher erhalten Sie eine ähnliche URL für den Zugriff auf Ihr bereitgestelltes Programm:
+
+`https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+![EXT DAM](./images/extdam27.png)
+
+Zu Testzwecken können Sie diese URL jetzt als Abfragezeichenfolgenparameter verwenden, indem Sie `?ext=` als Präfix zur obigen URL hinzufügen. Dies führt zu diesem Abfragezeichenfolgen-Parameter:
+
+`?ext=https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+Navigieren Sie zu [https://experience.adobe.com/genstudio/create](https://experience.adobe.com/genstudio/create).
+
+![EXT DAM](./images/extdam25.png)
+
+Fügen Sie als Nächstes den Abfragezeichenfolgenparameter unmittelbar vor dem **#** hinzu. Ihre neue URL sollte wie folgt aussehen:
+
+`https://experience.adobe.com/?ext=https://133309-201burgundyguan.adobeio-static.net/index.html#/@experienceplatform/genstudio/create`
+
+Die Seite wird normal geladen. Klicken Sie auf **Banner**, um mit der Erstellung eines neuen Banners zu beginnen.
+
+![EXT DAM](./images/extdam26.png)
+
+Wählen Sie eine Vorlage aus und klicken Sie auf **Verwenden**.
+
+![EXT DAM](./images/extdam28.png)
+
+Klicken Sie **Aus Inhalt auswählen**.
+
+![EXT DAM](./images/extdam29.png)
+
+Anschließend sollten Sie in der Lage sein, Ihr externes DAM aus der Dropdown-Liste auszuwählen.
+
+![EXT DAM](./images/extdam30.png)
+
+Wenn Sie Änderungen am Code auf Ihrem lokalen Computer vornehmen, müssen Sie Ihre App erneut bereitstellen. Verwenden Sie bei der erneuten Bereitstellung diesen Terminal-Befehl:
+
+`aio app deploy --force-build --force-deploy`
+
+Ihre App kann jetzt veröffentlicht werden.
+
 ## Nächste Schritte
 
-Gehen Sie zu [Code bereitstellen und Ihre App privat veröffentlichen](./ex4.md){target="_blank"}
+Gehen Sie zu [App privat veröffentlichen](./ex4.md){target="_blank"}
 
 Zurück zu [GenStudio for Performance Marketing - Erweiterbarkeit](./genstudioext.md){target="_blank"}
 
