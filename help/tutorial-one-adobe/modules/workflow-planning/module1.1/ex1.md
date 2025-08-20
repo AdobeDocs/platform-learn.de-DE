@@ -4,16 +4,20 @@ description: Erste Schritte mit Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
+source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1258'
 ht-degree: 1%
 
 ---
 
 # 1.1.1 Erste Schritte mit Workfront Planning
 
-## 1.1.1.1 Workfront-Planungsterminologie
+## 1.1.1.1 CitiSignal-Kampagnenbeschreibung
+
+Um den Kontext von CitiSignal und das, was sie erreichen wollen, zu verstehen, laden Sie sich die Campaign Brief von CitiSignal hier herunter: [CitiSignal-Fiber-Launch-Winter-2026.pdf](./../../../assets/brief/CitiSignal-Fiber-Launch-Winter-2026.pdf).
+
+## 1.1.1.2 Workfront-Planungsterminologie
 
 Im Folgenden finden Sie die wichtigsten Workfront-Planungsobjekte und -konzepte:
 
@@ -31,7 +35,7 @@ Im Folgenden finden Sie die wichtigsten Workfront-Planungsobjekte und -konzepte:
 
 Sie werden nun praktisch anfangen, einige dieser Objekte selbst zu erstellen.
 
-## 1.1.1.2 Workspace, Datensatztyp, Felder
+## 1.1.1.3 Workspace, Datensatztyp, Felder
 
 Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Klicken, um **Workfront zu**.
 
@@ -61,7 +65,7 @@ Sie sollten dann diese haben.
 
 ![Workfront-Planung](./images/wfpl7a.png)
 
-## 1.1.1.3-Taxonomien: Datensatztyp und Felder
+## 1.1.1.4-Taxonomien: Datensatztyp und Felder
 
 Klicken **unter &quot;**&quot; auf **+ Datensatztyp hinzufügen** wählen Sie dann **Manuell hinzufügen** aus.
 
@@ -165,7 +169,7 @@ Sie sollten das dann sehen.
 
 ![Workfront-Planung](./images/wfpl19.png)
 
-## 1.1.1.4 operative Datensatztypen: Felder
+## 1.1.1.5 operative Datensatztypen: Felder
 
 Zum Öffnen hier klicken **Kampagnen**.
 
@@ -187,7 +191,7 @@ Das neue Feld wird dann in der Tabellenansicht angezeigt.
 
 ![Workfront-Planung](./images/wfpl24.png)
 
-## 1.1.1.5 Erstellen eines Anfrageformulars
+## 1.1.1.6 Erstellen eines Anfrageformulars
 
 Klicken Sie im Bildschirm Kampagnen - Überblick auf die 3 Punkte **…** und wählen Sie dann **Anfrageformular erstellen**.
 
@@ -209,7 +213,7 @@ Klicken Sie auf den Pfeil oben links, um zum Bildschirm Kampagnen - Übersicht z
 
 ![Workfront-Planung](./images/wfpl29.png)
 
-## 1.1.1.6 Senden eines neuen Datensatzes mit dem Anfrageformular
+## 1.1.1.7 Senden eines neuen Datensatzes mit dem Anfrageformular
 
 Klicken Sie im Bildschirm Kampagnenübersicht auf **+ Neuer Datensatz**.
 
@@ -243,7 +247,7 @@ Die neu erstellte Kampagne sollte dann in der Übersicht zu sehen sein.
 
 ![Workfront-Planung](./images/wfpl35.png)
 
-## 1.1.1.7 Erstellen von Portfolio und benutzerdefinierten Formularen
+## 1.1.1.8 Erstellen von Portfolio und benutzerdefinierten Formularen
 
 Im nächsten Schritt erstellen Sie eine Automatisierung, die Informationen aus der in Workfront Planning erstellten Kampagne übernimmt und diese Informationen in Workfront zum Erstellen eines Programms verwendet. Bevor Sie die Automatisierung erstellen können, müssen Sie in Workfront zunächst zwei Dinge konfigurieren: ein Portfolio und ein benutzerdefiniertes Formular.
 
