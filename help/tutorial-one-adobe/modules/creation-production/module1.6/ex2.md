@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 044677e4-7ca3-4dfe-9067-640983681ea7
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 6%
+source-wordcount: '502'
+ht-degree: 7%
 
 ---
 
@@ -139,19 +140,39 @@ Sie sollten das dann sehen.
 
 ![ETL](./images/bucket4.png)
 
-Sie können CitiSignal-Bilddateien ([) ](./../../asset-mgmt/module2.2/images/CitiSignal_Neon_Rabbit.zip){target="_blank"}.
+Sie können CitiSignal-Bilddateien ([) ](./images/package.zip){target="_blank"}.
 
 Exportieren Sie die Dateien auf Ihren Desktop.
 
 ![ETL](./images/bucket5.png)
 
-Nehmen Sie die zwei Bilddateien in diesem Ordner und legen Sie sie im Fenster „S3-Bucket-Upload“ ab. Klicken Sie **Hochladen**.
+Klicken Sie **Ordner hinzufügen**.
 
 ![ETL](./images/bucket6.png)
 
-Sie sollten das dann sehen. Ihr S3-Bucket, Ihre Bilddateien und Ihr IAM-Benutzer können jetzt von Ihrer externen DAM-App verwendet werden.
+Wählen Sie den Ordner **Assets** aus dem Download-Ordner **Package**. Klicken Sie **Hochladen**.
 
 ![ETL](./images/bucket7.png)
+
+Sie sollten das dann sehen. Klicken Sie **erneut auf** Ordner hinzufügen“.
+
+![ETL](./images/bucket8.png)
+
+Wählen Sie den Ordner **Miniaturen** aus dem Download-Ordner **Paket**. Klicken Sie **Hochladen**.
+
+![ETL](./images/bucket9.png)
+
+Sie sollten das dann sehen. Klicken Sie **Hochladen**.
+
+![ETL](./images/bucket10.png)
+
+Ihr Upload ist jetzt abgeschlossen. Klicken Sie auf **Schließen**.
+
+![ETL](./images/bucket11.png)
+
+Diese Ordnerstruktur sollte jetzt in Ihrem S3-Bucket vorhanden sein.
+
+![ETL](./images/bucket12.png)
 
 ## Nächste Schritte
 

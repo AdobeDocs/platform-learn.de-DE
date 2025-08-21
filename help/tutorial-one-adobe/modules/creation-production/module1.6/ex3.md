@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 0%
+source-wordcount: '877'
+ht-degree: 1%
 
 ---
 
@@ -17,25 +17,13 @@ ht-degree: 0%
 
 ## 1.6.3.1 Herunterladen von Beispiel-App-Dateien
 
-Navigieren Sie zu [https://github.com/adobe/genstudio-extensibility-examples](https://github.com/adobe/genstudio-extensibility-examples). Klicken Sie auf **Code** und wählen Sie dann **ZIP herunterladen**.
+Navigieren Sie zu [https://github.com/woutervangeluwe/genstudio-external-dam-app](https://github.com/woutervangeluwe/genstudio-external-dam-app). Klicken Sie auf **Code** und wählen Sie dann **ZIP herunterladen**.
 
 ![EXT DAM](./images/extdam1.png)
 
 Entpacken Sie die ZIP-Datei auf Ihrem Desktop.
 
 ![EXT DAM](./images/extdam2.png)
-
-Öffnen Sie den Ordner **genstudio-extensibility-samples-main**. Es werden mehrere Beispiel-Apps angezeigt. Das Programm, das für diese Übung interessant ist, ist **genstudio-external-dam-app**.
-
-Kopieren Sie dieses Verzeichnis und fügen Sie es auf Ihrem Desktop ein.
-
-![EXT DAM](./images/extdam4.png)
-
-Sie sollten dies jetzt auf Ihrem Desktop haben:
-
-![EXT DAM](./images/extdam3.png)
-
-Für die nächsten Übungen verwenden Sie nur den Ordner **genstudio-external-dam-app**.
 
 ## 1.6.3.2 Konfigurieren der Adobe Developer-Befehlszeilenschnittstelle
 
@@ -75,7 +63,7 @@ Zurück zum Terminal-Fenster. Geben Sie den `aio app use XXX-YYY-Production.json
 
 >[!NOTE]
 >
->Sie müssen den Dateinamen so ändern, dass er mit dem Namen Ihrer Datei übereinstimmt.
+>Sie müssen den Dateinamen im obigen Befehl ändern, damit er mit dem Namen Ihrer Datei übereinstimmt.
 
 Sobald der Befehl ausgeführt wurde, wird Ihre externe DAM-App mit dem zuvor erstellten Adobe IO-Projekt mit App Builder verbunden.
 
@@ -101,7 +89,7 @@ Nach einigen Minuten wird die SDK installiert.
 
 ![EXT DAM](./images/extdam15.png)
 
-Wählen Sie den Ordner **genstudio-external-dam-app** aus, der die zuvor heruntergeladene App enthält.
+Wählen Sie den Ordner **genstudio-external-dam-app-main** aus, der die zuvor heruntergeladene App enthält. Klicken Sie auf **Öffnen**.
 
 ![EXT DAM](./images/extdam16.png)
 
@@ -113,17 +101,7 @@ Die Datei **.env** wurde vom `aio app use` erstellt, den Sie im vorherigen Schri
 
 ![EXT DAM](./images/extdam18.png)
 
-Erstellen Sie nun zwei neue Dateien im Stammverzeichnis Ihres Ordners:
-
-- `.env.dev`. Klicken Sie auf **Neue Datei** und geben Sie dann den `.env.dev` Dateinamen ein.
-
-![EXT DAM](./images/extdam19.png)
-
-- `.env.prod`.  Klicken Sie auf **Neue Datei** und geben Sie dann den `.env.prod` Dateinamen ein.
-
-![EXT DAM](./images/extdam20.png)
-
-Diese Dateien enthalten die Anmeldeinformationen, die zum Herstellen einer Verbindung mit dem zuvor erstellten AWS S3-Bucket erforderlich sind.
+Sie müssen jetzt die folgenden Details zur Datei **.env** hinzufügen, damit die externe DAM-App eine Verbindung zu dem zuvor erstellten AWS S3-Bucket herstellen kann.
 
 ```
 AWS_ACCESS_KEY_ID=
@@ -155,14 +133,21 @@ Sie sollten diesen Text nun in beide Dateien, `.env.dev` und `.env.prod`, einfü
 
 ![EXT DAM](./images/extdam21.png)
 
-
-![EXT DAM](./images/extdam22.png)
-
 Gehen Sie dann zurück zu Ihrem Terminal-Fenster. Führen Sie diesen Befehl aus:
 
-`export $(grep -v '^#' .env.dev | xargs)`
+`export $(grep -v '^#' .env | xargs)`
 
 ![EXT DAM](./images/extdam23.png)
+
+Schließlich müssen Sie die Beschriftung ändern, die in GenStudio for Performance Marketing angezeigt wird, damit Sie Ihre externe DAM-App von anderen Integrationen unterscheiden können. Öffnen Sie dazu die Datei **Constants.ts** die Sie finden können, indem Sie im Explorer nach &quot;**/genstudiopem > web-src > src“**.
+
+Zeile 14 muss geändert werden in
+
+`export const extensionLabel: string = "--aepUserLdap-- - External S3 DAM";`
+
+Vergessen Sie nicht, Ihre Änderungen zu speichern.
+
+![EXT DAM](./images/extdam22.png)
 
 ## 1.6.3.5 Ausführen einer externen DAM-App
 
@@ -204,13 +189,23 @@ Klicken Sie **Aus Inhalt auswählen**.
 
 ![EXT DAM](./images/extdam29.png)
 
-Anschließend sollten Sie in der Lage sein, Ihr externes DAM aus der Dropdown-Liste auszuwählen.
+Anschließend sollten Sie in der Lage sein, Ihr externes DAM auszuwählen, das `--aepUserLdap-- - External S3 DAM` aus der Dropdown-Liste benannt werden sollte.
 
 ![EXT DAM](./images/extdam30.png)
+
+Sie sollten das dann sehen. Wählen Sie das Bild **neon_rabbit_banner.jpg** aus und klicken Sie auf **Verwenden**.
+
+![EXT DAM](./images/extdam31.png)
+
+Sie haben jetzt ein Bild aus Ihrem externen DAM ausgewählt, das in einem S3-Bucket ausgeführt wird. Wenn Sie das Bild ausgewählt haben, können Sie jetzt dem normalen Workflow folgen, wie in der Übung [1.3.3.4 Erstellen und Genehmigen der Meta-Anzeige beschrieben](./../module1.3/ex3.md#create--approve-meta-ad).
+
+![EXT DAM](./images/extdam32.png)
 
 Wenn Sie Änderungen am Code auf Ihrem lokalen Computer vornehmen, müssen Sie Ihre App erneut bereitstellen. Verwenden Sie bei der erneuten Bereitstellung diesen Terminal-Befehl:
 
 `aio app deploy --force-build --force-deploy`
+
+![EXT DAM](./images/extdam33.png)
 
 Ihre App kann jetzt veröffentlicht werden.
 
