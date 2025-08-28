@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 5a77ccdd-4000-4fb7-b696-dec40d01b41b
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,10 @@ Klicken Sie auf **Senden**.
 ![GSPeM-Erweiterbarkeit](./images/gspemextpub6.png)
 
 ## 1.6.4.2 App genehmigen
+
+>[!IMPORTANT]
+>
+>Dieser Schritt kann nur von Systemadministratoren in Adobe Admin Console ausgeführt werden. Wenn Sie kein Systemadministrator sind, können Sie diesen Befehl nicht ausführen. Wenden Sie sich stattdessen an Ihren Systemadministrator, um die Genehmigung Ihrer App anzufordern.
 
 Sobald ein Entwickler eine neue App zur Veröffentlichung einreicht, werden die Systemadministratoren Ihrer Organisation benachrichtigt und aufgefordert, sie zu überprüfen und zu genehmigen.
 

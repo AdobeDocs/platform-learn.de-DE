@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
-source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '912'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ AWS_REGION=us-west-2
 AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 ```
 
-Sie sollten diesen Text nun in beide Dateien, `.env.dev` und `.env.prod`, einfügen. Vergessen Sie nicht, Ihre Änderungen zu speichern.
+Sie sollten diesen Text jetzt in die `.env`-Datei einfügen. Vergessen Sie nicht, Ihre Änderungen zu speichern.
 
 ![EXT DAM](./images/extdam21.png)
 
@@ -152,6 +152,10 @@ Vergessen Sie nicht, Ihre Änderungen zu speichern.
 ## 1.6.3.5 Ausführen einer externen DAM-App
 
 Führen Sie im Terminal-Fenster den Befehl `aio app run` aus. Dies sollte dann nach 1-2 Minuten angezeigt werden.
+
+>[!NOTE]
+>
+>Wenn Sie `aio app run` zum ersten Mal ausführen, werden Sie möglicherweise zum Browser weitergeleitet, um ein neues Zertifikat zu akzeptieren. Akzeptieren Sie in diesem Fall das Zertifikat und Sie können mit den folgenden Schritten fortfahren.
 
 ![EXT DAM](./images/extdam24.png)
 
