@@ -25,5 +25,5 @@ Erfahren Sie, wie das [!DNL Marketo Engage]-Ziel die nahtlose Echtzeit-Synchroni
 
 Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection).
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440167?learn=on&enablevpops&captions=ger)
 
