@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Erfahren Sie, wie das [!DNL Marketo Engage]-Ziel die nahtlose Echtzeit-Synchronisierung von Zielgruppendaten und Profilattributen ermöglicht und so ein einheitliches Marketing für Ihren gesamten Technologie-Stack ermöglicht. Mit flexiblen Synchronisierungsoptionen und optimierter Einrichtung unterstützt sie Anwendungsfälle wie die erneute Kontaktaufnahme mit Leads, die Aktualisierung von Profilen und die Erweiterung der Reichweite für personalisierte B2B-Journey.
 
-Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection).
+Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 
