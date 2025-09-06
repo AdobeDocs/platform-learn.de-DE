@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie Zielgruppenüberschneidungen in Real-Time CDP Collaboration-Projekten vergleichen. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3471698/?learn=on&enablevpops&captions=ger)
