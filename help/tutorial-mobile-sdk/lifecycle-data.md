@@ -150,6 +150,6 @@ Es sollten die Ereignisse **[!UICONTROL Anwendungsschluss (Hintergrund)]** und *
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass Anwendungsstatusereignisse (Vordergrund, Hintergrund) an die Adobe Experience Platform Edge Network und alle Services gesendet werden, die Sie in Ihrem Datenstrom definiert haben.
 >
-> Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+> Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
 
 Weiter: **[Verfolgen von Ereignisdaten](events.md)**
