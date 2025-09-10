@@ -33,7 +33,7 @@ In dieser Lektion erfahren Sie Folgendes:
 
 ## Erstellen eines Datenspeichers
 
-Datenströme können in der Benutzeroberfläche [!UICONTROL Datenerfassung) mithilfe ] Konfigurations-Tools [!UICONTROL Datenstrom] erstellt werden. So erstellen Sie einen Datenstrom:
+Datenströme können in der Benutzeroberfläche [!UICONTROL Datenerfassung) mithilfe &#x200B;] Konfigurations-Tools [!UICONTROL Datenstrom] erstellt werden. So erstellen Sie einen Datenstrom:
 
 1. Stellen Sie sicher, dass Sie sich in der richtigen Experience Platform-Sandbox befinden, da Datenströme auf Sandbox-Ebene definiert sind.
 1. Wählen **[!UICONTROL Datenströme]** in der linken Leiste aus.

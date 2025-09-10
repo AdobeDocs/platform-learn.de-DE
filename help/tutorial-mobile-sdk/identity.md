@@ -115,7 +115,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 
 >[!TAB Android]
 
-1. Android Navigieren Sie im Android Studio-Navigator zu ****![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und suchen Sie nach der Implementierung der `fun updateIdentities(emailAddress: String, crmId: String) `. Fügen Sie der Funktion den folgenden Code hinzu.
+1. Android Navigieren Sie im Android Studio-Navigator zu **&#x200B;**![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und suchen Sie nach der Implementierung der `fun updateIdentities(emailAddress: String, crmId: String) `. Fügen Sie der Funktion den folgenden Code hinzu.
 
    ```kotlin
    // Set up identity map, add identities to map and update identities
@@ -205,7 +205,7 @@ Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 
 >[!TAB Android]
 
-1. Android Navigieren Sie im Android Studio-Navigator zu ****![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und fügen Sie den folgenden Code zur `fun removeIdentities(emailAddress: String, crmId: String)` hinzu:
+1. Android Navigieren Sie im Android Studio-Navigator zu **&#x200B;**![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und fügen Sie den folgenden Code zur `fun removeIdentities(emailAddress: String, crmId: String)` hinzu:
 
    ```kotlin
    // Remove identities and reset email and CRM Id to their defaults

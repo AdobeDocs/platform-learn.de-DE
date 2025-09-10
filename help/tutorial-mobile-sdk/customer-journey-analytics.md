@@ -18,7 +18,7 @@ Die Mobile-App-Ereignisdaten, die Sie in früheren Lektionen erfasst und an Plat
 
 Im Gegensatz zu Adobe Analytics *Customer Journey Analytics Daten* in Experience Platform erstellten Datensätzen (verwendet). Daten werden mit Adobe Experience Platform Mobile SDK nicht direkt an Customer Journey Analytics gesendet. Stattdessen werden die Daten an Datensätze gesendet. Verbindungen werden dann in Customer Journey Analytics konfiguriert, um die Datensätze auszuwählen, die Sie in Ihren Reporting- und Analyseprojekten verwenden werden.
 
-Diese Lektion im Tutorial konzentriert sich auf das Reporting und die Analyse der Daten, die von der Luma-Tutorial-App erfasst werden. Eine der einzigartigen Funktionen von Customer Journey Analytics ist die Kombination von Daten aus verschiedenen Quellen (CRM, Point-of-Sale, Treueprogramm, Callcenter) und Kanälen (Web, Mobile, Offline), um detaillierte Einblicke in die Journey der Kunden zu erhalten. Diese Fähigkeit würde den Rahmen dieser Lektion sprengen. Weitere Informationen finden Sie unter Übersicht über [ ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)Customer Journey Analytics .
+Diese Lektion im Tutorial konzentriert sich auf das Reporting und die Analyse der Daten, die von der Luma-Tutorial-App erfasst werden. Eine der einzigartigen Funktionen von Customer Journey Analytics ist die Kombination von Daten aus verschiedenen Quellen (CRM, Point-of-Sale, Treueprogramm, Callcenter) und Kanälen (Web, Mobile, Offline), um detaillierte Einblicke in die Journey der Kunden zu erhalten. Diese Fähigkeit würde den Rahmen dieser Lektion sprengen. Weitere Informationen finden Sie unter Übersicht über [&#128279;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)Customer Journey Analytics .
 
 
 ## Voraussetzungen
@@ -138,7 +138,7 @@ So erstellen Sie eine Datenansicht:
 
         ![CJA-Datenansicht 2a](assets/cja-dataview-2a.png){zoomable="yes"}
 
-      - Wechseln Sie zum Schemafeld in ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignis-]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Beispiel: ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignisdatensätze]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)![ Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)****![](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) Chevron![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **** productListAdds![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
+      - Wechseln Sie zum Schemafeld in ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignis-]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Beispiel: ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignisdatensätze]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)![ Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)**&#x200B;**![](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) Chevron![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **&#x200B;**&#x200B;productListAdds![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
 
         ![CJA-Datenansicht 2a](assets/cja-dataview-2b.png){zoomable="yes"}
 
@@ -305,7 +305,7 @@ Als Nächstes erstellen Sie eine Freiformtabelle, in der die Interaktion der Ben
 
 1. Benennen **[!UICONTROL Freiformtabelle (2))]** &quot;`App Interactions`&quot; um.
 
-1. Ziehen Sie die Metrik **[!UICONTROL App Interactions]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**hier (oder eine andere Komponente_)].
+1. Ziehen Sie die Metrik **[!UICONTROL App Interactions]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**&#x200B;hier (oder eine andere Komponente_)].
 
 1. Ziehen Sie die Dimension **[!UICONTROL App Interaction Name]** in die Kopfzeile **[!UICONTROL Day]**, um diese Dimension zu ersetzen.
 
@@ -390,7 +390,7 @@ Sie möchten berichten, wie viele Angebote und welche Angebote den Benutzern Ihr
 
 1. Benennen Sie die **[!UICONTROL Freiformtabelle]** in `Monthly Overview` um.
 
-1. Ziehen Sie die Metrik **[!UICONTROL Anzeige]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**(oder eine beliebige andere Komponente_) ].
+1. Ziehen Sie die Metrik **[!UICONTROL Anzeige]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**(oder eine beliebige andere Komponente_) &#x200B;].
 
 1. Ziehen Sie die Dimension **[!UICONTROL Monat]** per Drag-and-Drop auf die Spalte **[!UICONTROL Tag]**, um die Dimension zu ersetzen.
 
@@ -411,7 +411,7 @@ Sie möchten auch einen Bericht, der den Benutzern der App zeigt, welche Angebot
 
 1. Benennen **[!UICONTROL Freiformtabelle (2))]** &quot;`People`&quot; um.
 
-1. Ziehen Sie die Metrik **[!UICONTROL Personen]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**hier (oder eine beliebige andere Komponente_ ab)].
+1. Ziehen Sie die Metrik **[!UICONTROL Personen]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**&#x200B;hier (oder eine beliebige andere Komponente_ ab)].
 
 1. Ziehen Sie den **[!UICONTROL Aktivitätsnamen]** per Drag-and-Drop auf die Spalte **[!UICONTROL Tag]**, um die Dimension zu ersetzen.
 

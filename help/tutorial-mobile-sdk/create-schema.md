@@ -177,7 +177,7 @@ Sie erstellen zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 
 1. Um zu messen, wie oft eine Aktion stattgefunden hat, fügen Sie ein Feld hinzu, indem Sie die ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)-Schaltfläche neben dem **[!UICONTROL appInteraction]**-Objekt auswählen.
 
-1. Geben Sie ihm einen **[!UICONTROL (Feldname]** `appAction`, **[!UICONTROL Anzeigename]** von `App Action` und **** Typ`Measure`.
+1. Geben Sie ihm einen **[!UICONTROL (Feldname]** `appAction`, **[!UICONTROL Anzeigename]** von `App Action` und **&#x200B;**&#x200B;Typ`Measure`.
 
    Dieser Schritt entspricht einem Erfolgsereignis in Adobe Analytics.
 

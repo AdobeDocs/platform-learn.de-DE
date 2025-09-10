@@ -610,7 +610,7 @@ Implementieren Sie diesen Code erneut in Ihrem Projekt.
       * ein Erlebnisereignis mithilfe der Zuordnung einrichtet,
       * sendet das Erlebnisereignis über die [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)-API.
 
-1. Navigieren Sie zu **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL  views ]**>**[!UICONTROL  LoginSheet.kt ]**
+1. Navigieren Sie zu **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B; views &#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
 
    1. Fügen Sie den folgenden hervorgehobenen Code zum Ereignis **[!UICONTROL Button]** **[!UICONTROL onClick]** hinzu:
 

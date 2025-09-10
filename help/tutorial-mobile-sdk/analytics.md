@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >Benutzerdefinierte Felder werden unter Ihrer Experience Cloud-Organisationskennung platziert.
 >
-Der Mandantenname `_techmarketingdemos` wird durch den eindeutigen Wert Ihrer Organisation ersetzt.
+>Der Mandantenname `_techmarketingdemos` wird durch den eindeutigen Wert Ihrer Organisation ersetzt.
 
 
 
