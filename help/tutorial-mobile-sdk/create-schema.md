@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie ein XDM-Schema für Ereignisse von Mobile App
 feature: Mobile SDK,Schemas
 jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 14%
+source-wordcount: '1445'
+ht-degree: 13%
 
 ---
 
@@ -25,11 +25,11 @@ Schemata dienen in Experience Platform zur konsistenten und wiederverwendbaren B
 
 Bevor Daten in Platform aufgenommen werden können, muss ein Schema erstellt werden, das die Datenstruktur beschreibt und den Datentyp entsprechend des jeweiligen Feldes einschränkt. Schemata bestehen aus einer Basisklasse und keiner oder mehreren Schema-Feldergruppen.
 
-Weitere Informationen zum Schemakompositionsmodell, einschließlich Planungsgrundsätzen und Best Practices, finden Sie in den [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de) oder der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/de/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
+Weitere Informationen zum Schemakompositionsmodell, einschließlich Planungsgrundsätzen und Best Practices, finden Sie in den [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) oder der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
 
 >[!TIP]
 >
->Wenn Sie mit Analytics Solution Design Reference (SDRs) vertraut sind, können Sie sich ein Schema als robustere SDR vorstellen. Weitere [ finden Sie unter „Erstellen und Verwalten einer Lösungs-Design-Referenz (](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=de))“.
+>Wenn Sie mit Analytics Solution Design Reference (SDRs) vertraut sind, können Sie sich ein Schema als robustere SDR vorstellen. Weitere [ finden Sie unter „Erstellen und Verwalten einer Lösungs-Design-Referenz (](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr))“.
 
 ## Voraussetzungen
 
@@ -53,16 +53,16 @@ In dieser Lektion erfahren Sie Folgendes:
 
 1. Wählen **[!UICONTROL Datenerfassung]** aus dem Menü aus.
 
-   ![Beim Experience Cloud anmelden](assets/experiencecloud-login.png)
+   ![Bei Experience Cloud anmelden](assets/experiencecloud-login.png){zoomable="yes"}
 
    >[!NOTE]
    >
    > Kunden von Platform-basierten Programmen wie Real-Time CDP sollten für dieses Tutorial eine Entwicklungs-Sandbox verwenden. Andere Kunden verwenden die standardmäßige Produktions-Sandbox.
 
 
-1. Wählen Sie **[!UICONTROL Schemata]** unter **[!UICONTROL Daten-Management]** in der linken Leiste aus.
+1. Wählen Sie ![Schemas](/help/assets/icons/Schemas.svg) **[!UICONTROL Schemas]** unter **[!UICONTROL Daten-Management]** in der linken Leiste aus.
 
-   ![Tags-Startbildschirm](assets/mobile-schema-navigate.png)
+   ![Tags-Startbildschirm](assets/mobile-schema-navigate.png){zoomable="yes"}
 
 Sie befinden sich nun auf der Hauptseite für Schemata und erhalten eine Liste aller vorhandenen Schemata. Außerdem werden Registerkarten angezeigt, die den Grundbausteinen eines Schemas entsprechen:
 
@@ -70,13 +70,13 @@ Sie befinden sich nun auf der Hauptseite für Schemata und erhalten eine Liste a
 * **Klassen** definieren die Verhaltensaspekte der Daten, die das Schema enthält. Beispiel: `XDM ExperienceEvent` erfasst Zeitreihen- und Ereignisdaten und `XDM Individual Profile` Attributdaten zu einem Kontakt.
 * **Datentypen** werden als Referenzfeldtypen in Klassen oder Feldergruppen auf dieselbe Weise wie grundlegende Literalfelder verwendet.
 
-Die obigen Beschreibungen bieten einen allgemeinen Überblick. Weitere Informationen finden Sie im [Schemabausteine](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=de) Video oder lesen Sie [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de) in der Produktdokumentation.
+Die obigen Beschreibungen bieten einen allgemeinen Überblick. Weitere Informationen finden Sie im [Schemabausteine](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks) Video oder lesen Sie [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) in der Produktdokumentation.
 
 In diesem Tutorial verwenden Sie die Feldergruppe Consumer Experience Event und erstellen eine benutzerdefinierte Feldergruppe, um den Prozess zu demonstrieren.
 
 >[!NOTE]
 >
->Beim Adobe werden weiterhin mehr Standardfeldgruppen hinzugefügt. Diese sollten nach Möglichkeit verwendet werden, da diese Felder von Experience Platform-Services implizit verstanden werden und eine größere Konsistenz bei der Verwendung über Platform-Komponenten hinweg bieten. Die Verwendung von Standardfeldgruppen bietet greifbare Vorteile wie die automatische Zuordnung in Analytics- und KI-Funktionen in Platform.
+>Adobe fügt weiterhin weitere Standardfeldgruppen hinzu und sie sollten nach Möglichkeit verwendet werden. Diese Felder werden von Experience Platform-Services implizit verstanden und bieten eine größere Konsistenz bei der Verwendung über Platform-Komponenten hinweg. Die Verwendung von Standardfeldgruppen bietet greifbare Vorteile wie automatische Zuordnung in Analytics und KI-Funktionen in Platform.
 
 ## Architektur des Luma-App-Schemas
 
@@ -95,13 +95,17 @@ Zu Lernzwecken verwenden Sie vorgefertigte und benutzerdefinierte Feldergruppen.
 
 ## Erstellen eines Schemas
 
-1. Wählen Sie **[!UICONTROL Schema erstellen]** aus.
+1. Wählen Sie ![Kreis hinzufügen](/help/assets/icons/AddCircle.svg) **[!UICONTROL Schema erstellen]**.
+
+1. Wählen **[!UICONTROL im Dialogfeld „Schema erstellen]** die Option **[!UICONTROL Manuell]** aus. Verwenden Sie **[!UICONTROL Auswählen]**, um fortzufahren.
+
+   ![Manuelles Schema](assets/schema-manual.png){zoomable="yes"}
 
 1. Wählen Sie im **[!UICONTROL Klasse auswählen]** des Assistenten **[!UICONTROL Schema erstellen]** die Option **[!UICONTROL Erlebnisereignis]** unter **[!UICONTROL Basisklasse für dieses Schema auswählen]**.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![Basisklasse des Schema-Assistenten](assets/schema-wizard-base-class.png)
+   ![Basisklasse des Schema-Assistenten](assets/schema-wizard-base-class.png){zoomable="yes"}
 
 1. Geben Sie im **[!UICONTROL Name und]**) des Assistenten **[!UICONTROL Schema erstellen]** einen **[!UICONTROL Schema-Anzeigenamen]** ein, z. B. `Luma Mobile Event Schema` und eine [!UICONTROL Beschreibung], z. B. `Schema for Luma mobile app experience events`.
 
@@ -111,12 +115,12 @@ Zu Lernzwecken verwenden Sie vorgefertigte und benutzerdefinierte Feldergruppen.
 
 1. Wählen Sie **[!UICONTROL Beenden]** aus, um den Assistenten abzuschließen.
 
-   ![Name und Überprüfung des Schemas](assets/schema-wizard-name-and-review.png)
+   ![Name und Überprüfung des Schemas](assets/schema-wizard-name-and-review.png){zoomable="yes"}
 
 
 1. Wählen Sie ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Hinzufügen** neben **[!UICONTROL Feldergruppen]**.
 
-   ![Hinzufügen einer Feldergruppe](assets/add-field-group.png)
+   ![Hinzufügen einer Feldergruppe](assets/add-field-group.png){zoomable="yes"}
 
 1. Suchen Sie nach `Consumer Experience Event`.
 
@@ -126,11 +130,12 @@ Zu Lernzwecken verwenden Sie vorgefertigte und benutzerdefinierte Feldergruppen.
 
 1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
 
-   ![Auswahl der Feldergruppe](assets/schema-select-field-groups.png)
+   ![Auswahl der Feldergruppe](assets/schema-select-field-groups.png){zoomable="yes"}
 
    Sie gelangen zurück zum Hauptbildschirm für die Schemakomposition, wo Sie alle verfügbaren Felder sehen können.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Wählen Sie ![Schemas](/help/assets/icons/Schemas.svg) **[!UICONTROL Schemas]** unter **[!UICONTROL Daten-Management]** aus, um zur **[!UICONTROL (Schemas]** Hauptschnittstelle zurückzukehren.
 
 >[!NOTE]
 >
@@ -139,6 +144,7 @@ Zu Lernzwecken verwenden Sie vorgefertigte und benutzerdefinierte Feldergruppen.
 Die [!UICONTROL Consumer Experience Event]-Feldergruppe verfügt über einen Datentyp namens [!UICONTROL Web-Informationen] der Ereignisse wie Seitenansichten und Link-Klicks beschreibt. Zum Zeitpunkt des Verfassens gibt es keine Parität zwischen Mobile Apps für diese Funktion, sodass Sie eine eigene erstellen werden.
 
 ## Erstellen eines benutzerdefinierten Datentyps
+
 
 Sie erstellen zunächst einen benutzerdefinierten Datentyp, der die beiden Ereignisse beschreibt:
 
@@ -149,15 +155,15 @@ Sie erstellen zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 
 1. Wählen **[!UICONTROL Datentyp erstellen]**.
 
-   ![Auswahl des Menüs Datentyp](assets/schema-datatype-create.png)
+   ![Auswahl des Menüs Datentyp](assets/schema-datatype-create.png){zoomable="yes"}
 
 1. Geben Sie einen **[!UICONTROL Anzeigenamen]** und **[!UICONTROL Beschreibung]** an, z. B. `App Information` und `Custom data type describing "Screen Views" & "App Actions"`
 
-   ![Angabe von Name und Beschreibung](assets/schema-datatype-name.png)
+   ![Angabe von Name und Beschreibung](assets/schema-datatype-name.png){zoomable="yes"}
 
    >[!TIP]
    >
-   > Verwenden Sie immer lesbare, beschreibende [!UICONTROL Anzeigenamen] für Ihre benutzerdefinierten Felder, da diese Praxis sie für Marketing-Experten leichter zugänglich macht, wenn die Felder in nachgelagerten Services wie Segment Builder angezeigt werden.
+   > Verwenden Sie immer lesbare, beschreibende [!UICONTROL Anzeigenamen] für Ihre benutzerdefinierten Felder. Durch diese Vorgehensweise wird der Zugriff auf benutzerdefinierte Felder für Marketing-Experten erleichtert, wenn die Felder in nachgelagerten Services wie Segment Builder angezeigt werden.
 
 
 1. Um ein Feld hinzuzufügen, klicken Sie auf die Schaltfläche ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg).
@@ -167,17 +173,17 @@ Sie erstellen zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 
 1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
-   ![Neues App-Aktionsereignis hinzufügen](assets/schema-datatype-app-action.png)
+   ![Neues App-Aktionsereignis hinzufügen](assets/schema-datatype-app-action.png){zoomable="yes"}
 
 1. Um zu messen, wie oft eine Aktion stattgefunden hat, fügen Sie ein Feld hinzu, indem Sie die ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)-Schaltfläche neben dem **[!UICONTROL appInteraction]**-Objekt auswählen.
 
-1. Geben Sie ihm einen **[!UICONTROL (Feldname]** `appAction`, **[!UICONTROL Anzeigename]** von `App Action` und **&#x200B;**&#x200B;Typ`Measure`.
+1. Geben Sie ihm einen **[!UICONTROL (Feldname]** `appAction`, **[!UICONTROL Anzeigename]** von `App Action` und **** Typ`Measure`.
 
    Dieser Schritt entspricht einem Erfolgsereignis in Adobe Analytics.
 
 1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
-   ![Feld für Aktionsnamen hinzufügen](assets/schema-datatype-action-name.png)
+   ![Feld für Aktionsnamen hinzufügen](assets/schema-datatype-action-name.png){zoomable="yes"}
 
 1. Fügen Sie ein Feld hinzu, das den Interaktionstyp beschreibt, indem Sie auf die Schaltfläche ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben dem Objekt **[!UICONTROL appInteraction]** klicken.
 
@@ -185,7 +191,7 @@ Sie erstellen zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 
    Dieser Schritt entspricht einer Dimension in Adobe Analytics.
 
-   ![Anwenden auswählen](assets/schema-datatype-apply.png)
+   ![Anwenden auswählen](assets/schema-datatype-apply.png){zoomable="yes"}
 
 1. Scrollen Sie nach unten in der rechten Leiste und wählen Sie **[!UICONTROL Anwenden]** aus.
 
@@ -193,7 +199,7 @@ Sie erstellen zunächst einen benutzerdefinierten Datentyp, der die beiden Ereig
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-   ![Endgültiger Status des Datentyps](assets/schema-datatype-final.png)
+   ![Endgültiger Status des Datentyps](assets/schema-datatype-final.png){zoomable="yes"}
 
 ## Hinzufügen einer benutzerdefinierten Feldergruppe
 
@@ -203,7 +209,7 @@ Fügen Sie jetzt eine benutzerdefinierte Feldergruppe mit Ihrem benutzerdefinier
 
 1. Wählen Sie ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Hinzufügen]** neben **[!UICONTROL Feldergruppen]**.
 
-   ![Hinzufügen einer neuen Feldergruppe](assets/schema-fieldgroup-add.png)
+   ![Hinzufügen einer neuen Feldergruppe](assets/schema-fieldgroup-add.png){zoomable="yes"}
 
 1. Wählen Sie **[!UICONTROL Neue Feldergruppe erstellen]** aus.
 
@@ -211,7 +217,7 @@ Fügen Sie jetzt eine benutzerdefinierte Feldergruppe mit Ihrem benutzerdefinier
 
 1. Wählen Sie **Feldergruppen hinzufügen** aus.
 
-   ![Angabe von Name und Beschreibung](assets/schema-fieldgroup-name.png)
+   ![Angabe von Name und Beschreibung](assets/schema-fieldgroup-name.png){zoomable="yes"}
 
 1. Wählen Sie im Hauptkompositionsbildschirm **[!UICONTROL App Interactions**] aus.
 
@@ -225,7 +231,7 @@ Fügen Sie jetzt eine benutzerdefinierte Feldergruppe mit Ihrem benutzerdefinier
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-   ![Anwenden auswählen](assets/schema-fieldgroup-apply.png)
+   ![Anwenden auswählen](assets/schema-fieldgroup-apply.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -236,6 +242,6 @@ Fügen Sie jetzt eine benutzerdefinierte Feldergruppe mit Ihrem benutzerdefinier
 >
 >Sie haben jetzt ein Schema, das Sie für den Rest des Tutorials verwenden können.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Erstellen eines [!UICONTROL Datenstroms]](create-datastream.md)**

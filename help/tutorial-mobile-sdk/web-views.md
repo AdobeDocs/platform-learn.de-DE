@@ -3,10 +3,10 @@ title: Verarbeiten von WebViews mit Platform Mobile SDK
 description: Erfahren Sie, wie Sie die Datenerfassung mit WebViews in einer Mobile App handhaben.
 jira: KT-14632
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 0%
+source-wordcount: '564'
+ht-degree: 1%
 
 ---
 
@@ -27,13 +27,19 @@ In dieser Lektion erfahren Sie Folgendes:
 
 ## Mögliche Tracking-Probleme
 
-Wenn Sie Daten aus dem nativen Teil der App und von einer WebView innerhalb der App senden, generiert jede ihre eigene Experience Cloud-ID (ECID), was zu getrennten Treffern und überhöhten Besuchs-/Besucherdaten führt. Weitere Informationen zur ECID finden Sie in der [ECID-Übersicht](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=de).
+Separate ECIDs (Experience Cloud Identity) werden generiert, wenn Sie Daten aus dem nativen Teil Ihrer App und aus einer WebView innerhalb der App senden. Diese separaten ECIDs führen zu getrennten Treffern und überhöhten Besuchs- und Besucherdaten. Weitere Informationen zur ECID finden Sie in der [ECID-Übersicht](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid).
 
-Um diese unerwünschte Situation zu beheben, ist es wichtig, die ECID des Benutzers aus dem nativen Teil Ihrer App an eine WebView zu übergeben, die Sie möglicherweise in Ihrer App verwenden möchten.
+Um die getrennten Treffer und überhöhten Daten zu beheben, müssen Sie die ECID des Benutzers aus dem nativen Teil Ihrer App an eine WebView übergeben, die Sie möglicherweise in Ihrer App verwenden möchten.
 
 Die in der WebView verwendete AEP Edge Identity-Erweiterung erfasst die aktuelle ECID und fügt sie zur URL hinzu, anstatt eine Anfrage für eine neue ID an Adobe zu senden. Die Implementierung verwendet dann diese ECID, um die URL anzufordern.
 
 ## Implementierung
+
+So implementieren Sie die Web-Ansicht:
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]** und suchen Sie die `func loadUrl()` in der `final class SwiftUIWebViewModel: ObservableObject`. Fügen Sie den folgenden Aufruf hinzu, um die Web-Ansicht zu verarbeiten:
 
@@ -60,9 +66,39 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
 Die [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables)-API richtet die Variablen für die URL so ein, dass sie alle relevanten Informationen wie ECID und mehr enthalten. Im Beispiel verwenden Sie eine lokale Datei, aber für Remote-Seiten gelten dieselben Konzepte.
 
-Weitere Informationen zur `Identity.getUrlVariables`-API finden Sie im [API-Referenzhandbuch für Erweiterungen von Identity for Edge Network ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
+Weitere Informationen zur `Identity.getUrlVariables`-API finden Sie im [API-Referenzhandbuch für Erweiterungen von Edge Network](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
-## Überprüfen
+
+>[!TAB Android]
+
+Navigieren Sie zu **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL views]** > **[!DNL WebViewModel]** und suchen Sie im `fun loadUrl()` nach der `class WebViewModel: ViewModel()`. Fügen Sie den folgenden Aufruf hinzu, um die Web-Ansicht zu verarbeiten:
+
+```kotlin
+// Handle web view
+Identity.getUrlVariables {
+    urlVariables = it
+    val baseUrl = getHtmlFileUrl("tou.html")
+
+    val finalUrl = if (urlVariables.isNotEmpty()) {
+        "$baseUrl?$urlVariables"
+    } else {
+        baseUrl
+    }
+
+    Handler(Looper.getMainLooper()).post {
+        webView.loadUrl(finalUrl)
+    }
+    MobileSDK.shared.logInfo("TermsOfServiceSheet - loadUrl: Successfully loaded WebView with URL: $finalUrl")
+}
+```
+
+Die [`Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables)-API richtet die Variablen für die URL so ein, dass sie alle relevanten Informationen wie ECID und mehr enthalten. Im Beispiel verwenden Sie eine lokale Datei, aber für Remote-Seiten gelten dieselben Konzepte.
+
+Weitere Informationen zur `Identity.getUrlVariables`-API finden Sie im [API-Referenzhandbuch für Erweiterungen von Edge Network](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
+
+>[!ENDTABS]
+
+## In der App validieren
 
 So führen Sie den Code aus:
 
@@ -70,12 +106,25 @@ So führen Sie den Code aus:
 1. Navigieren Sie zu **[!UICONTROL Einstellungen]** in der App.
 1. Tippen Sie auf die Schaltfläche **[!DNL View...]** , um die **[!DNL Terms of Use]** anzuzeigen.
 
-   <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
+<img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
+
+>[!TAB Android]
+
+<img src="./assets/tou1-android.png" width="300" /> <img src="./assets/tou2-android.png" width="300" />
+
+>[!ENDTABS]
+
+
+## Mit Assurance validieren
 
 1. Suchen Sie in der Assurance-Benutzeroberfläche nach dem Ereignis **[!UICONTROL Edge Identity Response URL Variables]** vom Anbieter **[!UICONTROL com.adobe.griffon.mobile]**.
 1. Wählen Sie das Ereignis aus und überprüfen Sie das **[!UICONTROL urlVariable]** im **[!UICONTROL ACPExtensionEventData]**-Objekt, um zu bestätigen, dass die folgenden Parameter in der URL vorhanden sind: `adobe_mc`, `mcmid` und `mcorgid`.
 
-   ![WebView-Validierung](assets/webview-validation.png)
+   ![WebView-Validierung](assets/webview-validation.png){zoomable="yes"}
 
    Nachfolgend finden Sie ein Beispiel für ein `urvariables`:
 
@@ -91,7 +140,7 @@ So führen Sie den Code aus:
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
 
-Leider ist das Debugging der Websitzung eingeschränkt. Beispielsweise können Sie den Adobe Experience Platform Debugger in Ihrem Browser nicht verwenden, um mit dem Debugging der Webansichtssitzung fortzufahren.
+Leider ist das Debugging der Websitzung eingeschränkt. Beispielsweise können Sie die Adobe Experience Platform Debugger in Ihrem Browser nicht verwenden, um mit dem Debugging der Webansichtssitzung fortzufahren.
 
 >[!NOTE]
 >
@@ -102,6 +151,6 @@ Leider ist das Debugging der Websitzung eingeschränkt. Beispielsweise können S
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass Inhalte basierend auf einer URL in einer Webansicht mit derselben ECID angezeigt werden, die bereits von Adobe Experience Platform Mobile SDK ausgegeben wurde.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[Identität](identity.md)**

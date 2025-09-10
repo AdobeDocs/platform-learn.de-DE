@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Einverständnis in einer Mobile App imple
 feature: Mobile SDK,Consent
 jira: KT-14629
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '673'
 ht-degree: 1%
 
 ---
@@ -35,9 +35,13 @@ Wenn Sie das Tutorial von Anfang an verfolgt haben, erinnern Sie sich vielleicht
 
 Um mit der Datenerfassung beginnen zu können, müssen Sie die Zustimmung des Benutzers einholen. In einer realen App sollten Sie die Best Practices zum Einverständnis für Ihre Region konsultieren. In diesem Tutorial erhalten Sie die Zustimmung der Benutzenden, indem Sie sie einfach mit einem Warnhinweis darum bitten:
 
-1. Sie möchten den Benutzer nur einmal um Zustimmung bitten. Sie können dies tun, indem Sie das SDK-Einverständnis für Mobile mit der erforderlichen Autorisierung für das Tracking mit dem Tracking-[-Framework von Apple kombinieren](https://developer.apple.com/documentation/apptrackingtransparency). Bei dieser App gehen Sie davon aus, dass der Benutzer mit der Erfassung von Ereignissen einverstanden ist, wenn er das Tracking autorisiert.
+>[!BEGINTABS]
 
-1. Navigieren Sie im Xcode-Projekt **Navigator zu &#x200B;** [!DNL Luma]&#x200B;**>**&#x200B;[!DNL Luma]&#x200B;**>**&#x200B;[!DNL Utils]&#x200B;**>** MobileSDK“.
+>[!TAB iOS]
+
+1. Sie möchten den Benutzer nur einmal um Zustimmung bitten. Sie kombinieren das SDK-Einverständnis für Mobile mit der erforderlichen Autorisierung für das Tracking mit dem Tracking-[-Transparenzframework von Apple](https://developer.apple.com/documentation/apptrackingtransparency). Bei dieser App gehen Sie davon aus, dass der Benutzer mit der Erfassung von Ereignissen einverstanden ist, wenn er das Tracking autorisiert.
+
+1. Navigieren Sie im Xcode-Projekt **[!DNL Luma]** Navigator zu **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL >]** MobileSDK“.
 
    Fügen Sie diesen Code zur `updateConsent` hinzu.
 
@@ -49,7 +53,7 @@ Um mit der Datenerfassung beginnen zu können, müssen Sie die Zustimmung des Be
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Navigieren Sie zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** im Projektnavigator von Xcode. Dies ist die Ansicht, die angezeigt wird, nachdem die Anwendung installiert oder neu installiert und die App zum ersten Mal gestartet wurde. Der Benutzer wird aufgefordert, das Tracking gemäß dem Apple-Framework [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency) zu genehmigen. Wenn der Benutzer autorisiert, aktualisieren Sie auch das Einverständnis.
+1. Navigieren Sie im Projekt-Navigator von Xcode zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** **[!UICONTROL DisclaimerView]**. Der Projekt-Navigator des Codes ist die Ansicht, die angezeigt wird, nachdem die Anwendung installiert oder neu installiert und die Anwendung zum ersten Mal gestartet wurde. Der Benutzer wird aufgefordert, das Tracking gemäß dem Apple-Framework [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency) zu genehmigen. Wenn der Benutzer autorisiert, aktualisieren Sie auch das Einverständnis.
 
    Fügen Sie den folgenden Code zum `ATTrackingManager.requestTrackingAuthorization { status in` hinzu.
 
@@ -65,9 +69,57 @@ Um mit der Datenerfassung beginnen zu können, müssen Sie die Zustimmung des Be
    }
    ```
 
+>[!TAB Android]
+
+1. Sie möchten den Benutzer nur einmal um Zustimmung bitten. Bei dieser App gehen Sie davon aus, dass der Benutzer mit der Erfassung von Ereignissen einverstanden ist, wenn er das Tracking autorisiert.
+
+1. Navigieren Sie **[!UICONTROL Android]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]**.
+
+   Fügen Sie diesen Code zur `updateConsent(value: String)` hinzu.
+
+   ```kotlin
+   // Update consent
+   val collectConsent = mapOf("collect" to mapOf("val" to value))
+   val currentConsents = mapOf("consents" to collectConsent)
+   Consent.update(currentConsents)
+   MobileCore.updateConfiguration(currentConsents)
+   ```
+
+1. Android Navigieren Sie im **[!UICONTROL Studio-Navigator zu app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.]** > **[!UICONTROL views]** > **[!UICONTROL DisclaimerView.kt]**.
+
+   Fügen Sie der `DisclaimerView(navController: NavController)` Funktion unter `// Set content to yes` den folgenden Code hinzu und `// Set content to no` Sie.
+
+   ```kotlin
+   // Add consent based on authorization
+   if (status) {
+      showPersonalizationWarning = false
+   
+      // Set consent to yes
+      MobileSDK.shared.updateTrackingStatus(TrackingStatus.AUTHORIZED)
+      MobileSDK.shared.updateConsent("y")
+   } else {
+      Toast.makeText(
+            context,
+            "You will not receive offers and location tracking will be disabled.",
+            Toast.LENGTH_LONG
+      ).show()
+      showPersonalizationWarning = true
+   
+      // Set consent to no
+      MobileSDK.shared.updateTrackingStatus(TrackingStatus.DENIED)
+      MobileSDK.shared.updateConsent("n")
+   }
+   ```
+
+>[!ENDTABS]
+
 ## Aktuellen Einverständnisstatus abrufen
 
 Die Mobile Consent-Erweiterung unterdrückt automatisch das Tracking / ausstehend / ermöglicht es basierend auf dem aktuellen Einverständniswert. Sie können auch selbst auf den aktuellen Einverständnisstatus zugreifen:
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Navigieren Sie im Projekt-Navigator von Xcode zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** **[!UICONTROL Mobile]** SDK).
 
@@ -94,18 +146,47 @@ Die Mobile Consent-Erweiterung unterdrückt automatisch das Tracking / ausstehen
 
 Im obigen Beispiel protokollieren Sie einfach den Einverständnisstatus in der Konsole in Xcode. In einem realen Szenario können Sie damit ändern, welche Menüs oder Optionen dem Benutzer angezeigt werden.
 
+>[!TAB Android]
+
+1. Navigieren Sie **[!UICONTROL Android]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]**.
+
+   Fügen Sie der `getConsents()`-Funktion den folgenden Code hinzu:
+
+   ```kotlin
+   // Get consents
+   Consent.getConsents { callback ->
+      if (callback != null) {
+            val jsonStr = JSONObject(callback).toString(4)
+            Log.i("MobileSDK", "Consent getConsents: $jsonStr")
+      }
+   }
+   ```
+
+1. Navigieren Sie **[!UICONTROL Android]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL HomeView.kt]**.
+
+   Fügen Sie den folgenden Code zu `LaunchedEffect(unit)` hinzu:
+
+   ```kotlin
+   // Ask status of consents
+   MobileSDK.shared.getConsents()   
+   ```
+
+Im obigen Beispiel protokollieren Sie einfach den Einverständnisstatus in der Konsole in Android Studio. In einem realen Szenario können Sie damit ändern, welche Menüs oder Optionen dem Benutzer angezeigt werden.
+
+>[!ENDTABS]
+
 ## Mit Assurance validieren
 
 1. Löschen Sie die Anwendung von Ihrem Gerät oder Simulator, um das Tracking und das Einverständnis ordnungsgemäß zurückzusetzen und zu initialisieren.
 1. Um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden, lesen Sie den Abschnitt [Setup-Anweisungen](assurance.md#connecting-to-a-session).
 1. Wenn Sie in der App vom Bildschirm **[!UICONTROL Startseite]** zum Bildschirm **[!UICONTROL Produkte]** und zurück zum Bildschirm **[!UICONTROL Startseite]** wechseln, sollte in der Benutzeroberfläche von Assurance ein Ereignis **[!UICONTROL Antwort zum Einverständnis]** angezeigt werden.
-   ![Einverständnis validieren](assets/consent-update.png)
+   ![Einverständnis validieren](assets/consent-update.png){zoomable="yes"}
 
 
 >[!SUCCESS]
 >
 >Sie haben jetzt Ihre App aktiviert, um den Benutzer beim ersten Start nach der Installation (oder Neuinstallation) aufzufordern, mit der Adobe Experience Platform Mobile SDK zuzustimmen.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[Erfassen von Lebenszyklusdaten](lifecycle-data.md)**

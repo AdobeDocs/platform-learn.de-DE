@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie in Adobe Experience Platform einen Datenstrom
 feature: Mobile SDK,Datastreams
 jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '425'
 ht-degree: 7%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 7%
 
 Erfahren Sie, wie Sie in Adobe Experience Platform einen Datenstrom erstellen können.
 
-Ein Datenstrom ist eine Server-seitige Konfiguration auf dem Platform-Edge Network. Der Datenstrom stellt sicher, dass eingehende Daten an das Platform-Edge Network ordnungsgemäß an Adobe Experience Cloud-Programme und -Services weitergeleitet werden. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=de) oder in diesem [Video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=de).
+Ein Datenstrom ist eine Server-seitige Konfiguration auf Platform Edge Network. Der Datenstrom stellt sicher, dass eingehende Daten an Platform Edge Network entsprechend an Adobe Experience Cloud-Programme und -Services weitergeleitet werden. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/overview) oder in diesem [Video](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams).
 
-![Architektur](assets/architecture.png)
+![Architektur](assets/architecture.png){zoomable="yes"}
 
 ## Voraussetzungen
 
-Um einen Datenstrom zu erstellen, muss Ihre Organisation für diese Funktion in der Datenerfassungsoberfläche (früher [!UICONTROL Launch]) ausgestattet sein und Sie müssen über Benutzerberechtigungen zum Verwalten und Anzeigen von Datenströmen verfügen.
+Um einen Datenstrom zu erstellen, muss Ihre Organisation für diese Funktion in der Datenerfassungsoberfläche (ehemals [!UICONTROL Launch]) ausgestattet sein und Sie müssen über Benutzerberechtigungen zum Verwalten und Anzeigen von Datenströmen verfügen.
 
 ## Lernziele
 
@@ -33,13 +33,13 @@ In dieser Lektion erfahren Sie Folgendes:
 
 ## Erstellen eines Datenspeichers
 
-Datenströme können in der Benutzeroberfläche [!UICONTROL Datenerfassung) mithilfe &#x200B;] Konfigurations-Tools [!UICONTROL Datenstrom] erstellt werden. So erstellen Sie einen Datenstrom:
+Datenströme können in der Benutzeroberfläche [!UICONTROL Datenerfassung) mithilfe ] Konfigurations-Tools [!UICONTROL Datenstrom] erstellt werden. So erstellen Sie einen Datenstrom:
 
 1. Stellen Sie sicher, dass Sie sich in der richtigen Experience Platform-Sandbox befinden, da Datenströme auf Sandbox-Ebene definiert sind.
 1. Wählen **[!UICONTROL Datenströme]** in der linken Leiste aus.
 1. Wählen Sie **[!UICONTROL Neuer Datenstrom]** aus.
 
-   ![Datenströme - Startseite](assets/datastream-new.png)
+   ![Datenströme - Startseite](assets/datastream-new.png){zoomable="yes"}
 
 1. Geben Sie einen **[!UICONTROL Namen]**, z. B. `Luma Mobile App`, und einen **[!UICONTROL Beschreibung]**, z. B. `Datastream for Luma Mobile App`, an.
 
@@ -50,7 +50,7 @@ Datenströme können in der Benutzeroberfläche [!UICONTROL Datenerfassung) mith
 1. Wählen Sie das Schema, das Sie in der vorherigen Lektion erstellt haben, in der Liste **Ereignisschema** aus.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-   ![neue Datenströme](assets/datastream-name.png)
+   ![neue Datenströme](assets/datastream-name.png){zoomable="yes"}
 
 
 ## Dienste hinzufügen
@@ -71,7 +71,7 @@ Wenn Sie in diesem Tutorial die (optionalen) [Analytics](analytics.md)- und [Exp
 
 1. Select **[!UICONTROL Save]**.
 
-   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png){zoomable="yes"}
 
 
 ### Adobe Experience Platform
@@ -92,24 +92,24 @@ You might also want to enable the Adobe Experience Platform service.
 
 1. Select **[!UICONTROL Save]**.
 
-   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png){zoomable="yes"}
 1. The final configuration should look something like this.
    
-   ![datastream settings](assets/datastream-settings.png)
+   ![datastream settings](assets/datastream-settings.png){zoomable="yes"}
 
 -->
 
 
 >[!NOTE]
 >
->Durch die Aktivierung der einzelnen Services, die Ihr Unternehmen verwendet, wird sichergestellt, dass die in der Mobile App erfassten Daten überall verwendet werden können. Weitere Informationen zu Datenstromeinstellungen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=de).
+>Durch die Aktivierung der einzelnen Services, die Ihr Unternehmen verwendet, wird sichergestellt, dass die in der Mobile App erfassten Daten überall verwendet werden können. Weitere Informationen [ Sie unter ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/overview)Datenstromeinstellungen“.
 
-Wenn Sie Platform Mobile SDK in Ihrer eigenen App implementieren, sollten Sie letztendlich drei Datenströme erstellen, die Ihren drei Tag-Umgebungen (Entwicklung, Staging und Produktion) zugeordnet werden können. Wenn Sie Platform Mobile SDK mit plattformbasierten Anwendungen wie Adobe Real-time Customer Data Platform oder Adobe Journey Optimizer verwenden, sollten Sie sicherstellen, dass Sie diese Datenströme in den entsprechenden Sandboxes erstellen.
+Wenn Sie Platform Mobile SDK in Ihrer eigenen App implementieren, sollten Sie letztendlich drei Datenströme erstellen, die Ihren drei Tag-Umgebungen (Entwicklung, Staging und Produktion) zugeordnet werden können. Wenn Sie Platform Mobile SDK mit plattformbasierten Anwendungen wie Adobe Real-Time Customer Data Platform oder Adobe Journey Optimizer verwenden, sollten Sie sicherstellen, dass Sie diese Datenströme in den entsprechenden Sandboxes erstellen.
 
 >[!SUCCESS]
 >
 >Sie haben jetzt einen Datenstrom, der für den Rest des Tutorials verwendet werden kann.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[Konfigurieren einer Tag-Eigenschaft](configure-tags.md)**
