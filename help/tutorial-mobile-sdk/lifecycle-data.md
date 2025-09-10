@@ -98,7 +98,7 @@ Jetzt können Sie Ihr Projekt aktualisieren, um die Lebenszyklus-Ereignisse zu r
 
 1. Lesen Sie den Abschnitt [Setup-Anweisungen](assurance.md#connecting-to-a-session), um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Senden Sie die App in den Hintergrund. Suchen Sie in **[!UICONTROL Benutzeroberfläche von Assurance nach]** LifecyclePause).
-1. Die App in den Vordergrund bringen. Suchen Sie in **[!UICONTROL Benutzeroberfläche von Assurance nach]**LifecycleResume“-Ereignissen.
+1. Die App in den Vordergrund bringen. Suchen Sie in **[!UICONTROL Benutzeroberfläche von Assurance nach]**&#x200B;LifecycleResume“-Ereignissen.
    ![Lebenszyklus validieren](assets/lifecycle-lifecycle-assurance.png){zoomable="yes"}
 
 
