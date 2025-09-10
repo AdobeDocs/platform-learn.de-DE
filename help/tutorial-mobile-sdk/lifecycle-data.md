@@ -3,7 +3,7 @@ title: Erfassen von Lebenszyklusdaten mit Platform Mobile SDK
 description: Erfahren Sie, wie Sie Lebenszyklusdaten in einer Mobile App erfassen.
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 2%
@@ -86,7 +86,7 @@ Jetzt können Sie Ihr Projekt aktualisieren, um die Lebenszyklus-Ereignisse zu r
 
 1. Wenn die App in den Hintergrund eintritt, sollten Sie die Lebenszyklusdatenerfassung über die `override fun onActivityPaused` Ihrer App pausieren. Fügen Sie diesen Code zu `override fun onActivityPaused(activity: Activity)` hinzu:
 
-   ```swift
+   ```kotlin
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
@@ -98,7 +98,7 @@ Jetzt können Sie Ihr Projekt aktualisieren, um die Lebenszyklus-Ereignisse zu r
 
 1. Lesen Sie den Abschnitt [Setup-Anweisungen](assurance.md#connecting-to-a-session), um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. Senden Sie die App in den Hintergrund. Suchen Sie in **[!UICONTROL Benutzeroberfläche von Assurance nach]** LifecyclePause).
-1. Die App in den Vordergrund bringen. Suchen Sie in **[!UICONTROL Benutzeroberfläche von Assurance nach]**&#x200B;LifecycleResume“-Ereignissen.
+1. Die App in den Vordergrund bringen. Suchen Sie in **[!UICONTROL Benutzeroberfläche von Assurance nach]**LifecycleResume“-Ereignissen.
    ![Lebenszyklus validieren](assets/lifecycle-lifecycle-assurance.png){zoomable="yes"}
 
 
@@ -150,6 +150,6 @@ Es sollten die Ereignisse **[!UICONTROL Anwendungsschluss (Hintergrund)]** und *
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass Anwendungsstatusereignisse (Vordergrund, Hintergrund) an die Adobe Experience Platform Edge Network und alle Services gesendet werden, die Sie in Ihrem Datenstrom definiert haben.
 >
-> Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
+> Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[Verfolgen von Ereignisdaten](events.md)**
