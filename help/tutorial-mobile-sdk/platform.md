@@ -106,7 +106,7 @@ Nachdem Sie nun einen Datensatz erstellt und Ihren Datenstrom aktualisiert haben
 Sie sollten auch Beispieldatensätze und -felder mit der Funktion **[!UICONTROL Datensatz in der Vorschau anzeigen]** sehen:
 ![Validieren des an den Platform-Datensatz gesendeten Lebenszyklus](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
-Ein robusteres Tool zur Datenvalidierung ist der [Abfrage-Service](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) von Platform.
+Ein robusteres Tool zur Datenvalidierung ist der [Abfrage-Service](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/queries/explore-data) von Platform.
 
 ## Echtzeit-Kundenprofil aktivieren
 
@@ -169,7 +169,7 @@ Marketing-Experten und Analytiker können noch viel mehr mit den in Experience P
 
 >[!SUCCESS]
 >
->Sie haben jetzt Ihre App so eingerichtet, dass Daten nicht nur an die Edge Network, sondern auch an Adobe Experience Platform gesendet werden.<br>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Sie haben jetzt Ihre App so eingerichtet, dass Daten nicht nur an die Edge Network, sondern auch an Adobe Experience Platform gesendet werden.<br>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
 >
 
 Weiter: **[Push-Benachrichtigungen erstellen und senden](journey-optimizer-push.md)**

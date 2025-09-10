@@ -25,11 +25,11 @@ Schemata dienen in Experience Platform zur konsistenten und wiederverwendbaren B
 
 Bevor Daten in Platform aufgenommen werden können, muss ein Schema erstellt werden, das die Datenstruktur beschreibt und den Datentyp entsprechend des jeweiligen Feldes einschränkt. Schemata bestehen aus einer Basisklasse und keiner oder mehreren Schema-Feldergruppen.
 
-Weitere Informationen zum Schemakompositionsmodell, einschließlich Planungsgrundsätzen und Best Practices, finden Sie in den [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) oder der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
+Weitere Informationen zum Schemakompositionsmodell, einschließlich Planungsgrundsätzen und Best Practices, finden Sie in den [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) oder der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/de/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
 
 >[!TIP]
 >
->Wenn Sie mit Analytics Solution Design Reference (SDRs) vertraut sind, können Sie sich ein Schema als robustere SDR vorstellen. Weitere [ finden Sie unter „Erstellen und Verwalten einer Lösungs-Design-Referenz (](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr))“.
+>Wenn Sie mit Analytics Solution Design Reference (SDRs) vertraut sind, können Sie sich ein Schema als robustere SDR vorstellen. Weitere [ finden Sie unter „Erstellen und Verwalten einer Lösungs-Design-Referenz (](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr))“.
 
 ## Voraussetzungen
 
@@ -70,7 +70,7 @@ Sie befinden sich nun auf der Hauptseite für Schemata und erhalten eine Liste a
 * **Klassen** definieren die Verhaltensaspekte der Daten, die das Schema enthält. Beispiel: `XDM ExperienceEvent` erfasst Zeitreihen- und Ereignisdaten und `XDM Individual Profile` Attributdaten zu einem Kontakt.
 * **Datentypen** werden als Referenzfeldtypen in Klassen oder Feldergruppen auf dieselbe Weise wie grundlegende Literalfelder verwendet.
 
-Die obigen Beschreibungen bieten einen allgemeinen Überblick. Weitere Informationen finden Sie im [Schemabausteine](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks) Video oder lesen Sie [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) in der Produktdokumentation.
+Die obigen Beschreibungen bieten einen allgemeinen Überblick. Weitere Informationen finden Sie im [Schemabausteine](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/schemas/schema-building-blocks) Video oder lesen Sie [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) in der Produktdokumentation.
 
 In diesem Tutorial verwenden Sie die Feldergruppe Consumer Experience Event und erstellen eine benutzerdefinierte Feldergruppe, um den Prozess zu demonstrieren.
 
@@ -242,6 +242,6 @@ Fügen Sie jetzt eine benutzerdefinierte Feldergruppe mit Ihrem benutzerdefinier
 >
 >Sie haben jetzt ein Schema, das Sie für den Rest des Tutorials verwenden können.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
 
 Weiter: **[Erstellen eines [!UICONTROL Datenstroms]](create-datastream.md)**

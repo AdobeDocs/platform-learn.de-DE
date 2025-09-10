@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Erfahren Sie, wie Sie über die Schnittstelle für die [!UICONTROL Datenerfassung] eine Tag-Eigenschaft konfigurieren.
 
-Tags in Adobe Experience Platform sind die nächste Generation von Funktionen für das Tag-Management von Adobe. Tags bieten Kunden eine einfache Möglichkeit, Analyse-, Marketing- und Werbe-Tags bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse erforderlich sind. Weitere Informationen zu [Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) finden Sie in der Produktdokumentation.
+Tags in Adobe Experience Platform sind die nächste Generation von Funktionen für das Tag-Management von Adobe. Tags bieten Kunden eine einfache Möglichkeit, Analyse-, Marketing- und Werbe-Tags bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse erforderlich sind. Weitere Informationen zu [Tags](https://experienceleague.adobe.com/de/docs/experience-platform/tags/home) finden Sie in der Produktdokumentation.
 
 ## Voraussetzungen
 
@@ -23,7 +23,7 @@ Um die Lektion abzuschließen, benötigen Sie die Berechtigung zum Erstellen ein
 
 >[!NOTE]
 >
-> Platform Launch (Client-seitig) heißt jetzt [Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+> Platform Launch (Client-seitig) heißt jetzt [Tags](https://experienceleague.adobe.com/de/docs/experience-platform/tags/home)
 
 ## Lernziele
 
@@ -186,6 +186,6 @@ Wenn Sie mit der Web-Version von Tags (früher Launch) vertraut sind, müssen Si
 >
 >Sie haben jetzt eine mobile Tag-Eigenschaft, die Sie im Rest dieses Tutorials verwenden können.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
 
 Weiter: **[Installieren von SDKs](install-sdks.md)**

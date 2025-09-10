@@ -15,7 +15,7 @@ ht-degree: 7%
 
 Erfahren Sie, wie Sie in Adobe Experience Platform einen Datenstrom erstellen können.
 
-Ein Datenstrom ist eine Server-seitige Konfiguration auf Platform Edge Network. Der Datenstrom stellt sicher, dass eingehende Daten an Platform Edge Network entsprechend an Adobe Experience Cloud-Programme und -Services weitergeleitet werden. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/overview) oder in diesem [Video](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams).
+Ein Datenstrom ist eine Server-seitige Konfiguration auf Platform Edge Network. Der Datenstrom stellt sicher, dass eingehende Daten an Platform Edge Network entsprechend an Adobe Experience Cloud-Programme und -Services weitergeleitet werden. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/overview) oder in diesem [Video](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/edge-network/configure-datastreams).
 
 ![Architektur](assets/architecture.png){zoomable="yes"}
 
@@ -110,6 +110,6 @@ Wenn Sie Platform Mobile SDK in Ihrer eigenen App implementieren, sollten Sie le
 >
 >Sie haben jetzt einen Datenstrom, der für den Rest des Tutorials verwendet werden kann.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
 
 Weiter: **[Konfigurieren einer Tag-Eigenschaft](configure-tags.md)**
