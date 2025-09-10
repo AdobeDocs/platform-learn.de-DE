@@ -4,7 +4,7 @@ description: Erste Schritte mit Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
+source-git-commit: 42c9c3bbf0958794d5a65c37d4771345c6ff584c
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 1%
@@ -161,7 +161,7 @@ Klicken Sie abschließend auf den Pfeil, um zum vorherigen Bildschirm zurückzuk
 
 ![Workfront-Planung](./images/wfpla6.png)
 
-Sie haben jetzt einen neuen Datensatztyp erstellt, Sie haben sowohl Felder gelöscht als auch erstellt und Sie haben drei Geschäftseinheiten erstellt. Kehren Sie zum Workspace-Übersichtsbildschirm zurück, indem Sie auf den Pfeil oben links klicken.
+Sie haben jetzt einen neuen Datensatztyp erstellt, Sie haben sowohl Felder gelöscht als auch erstellt und 3 Geschäftseinheiten erstellt. Kehren Sie zum Workspace-Übersichtsbildschirm zurück, indem Sie auf den Pfeil oben links klicken.
 
 ![Workfront-Planung](./images/wfpl18.png)
 

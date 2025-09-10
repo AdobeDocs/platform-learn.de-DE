@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3787'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Im Folgenden finden Sie ein Beispiel für häufig verwendete Antwort-Codes:
 
 ## 1.1.1.3 Erkunden Sie firefly.adobe.com - Schritt 1
 
-Beginnen wir mit der Erforschung von Adobe Firefly Services. Die Untersuchung beginnt mit einem Beispiel für die CitiSignal-Bilderstellung. Das CitiSignal-Designteam möchte eine Neonversion des CitiSignal-Markennamens generieren. Sie würden gerne Adobe Firefly Services nutzen, um das zu tun.
+Beginnen wir mit der Erforschung von Adobe Firefly Services. Zur Untersuchung beginnen Sie mit einem Beispiel für die CitiSignal-Bilderzeugung. Das CitiSignal-Designteam möchte eine Neonversion des CitiSignal-Markennamens generieren. Sie würden gerne Adobe Firefly Services nutzen, um das zu tun.
 
 Das erste, was benötigt wird, um dies zu erreichen, ist eine Schwarz-Weiß-Version des CitiSignal Markennamen, etwas, das wie folgt aussieht:
 
@@ -200,7 +200,7 @@ Die Anfrage, die Sie hier sehen, ist die Anfrage, die an das Server-seitige Back
 
 ![Postman](./images/ffui7.png)
 
-Sehen Sie sich die Benutzeroberfläche noch einmal an. Ändern Sie das **Seitenverhältnis** auf **Breitbild (16:9)**.
+Sehen Sie sich die Benutzeroberfläche noch einmal an. Ändern Sie das **Seitenverhältnis** in **Breitbild (16:9)**.
 
 ![Postman](./images/ffui8.png)
 
@@ -407,9 +407,9 @@ Mit der kürzlich veröffentlichten Version von Firefly Image Model 4 wurden meh
 
 - Firefly Image Model 4 bietet 2K-Auflösungsausgabe mit verbesserter Auflösung und Detailgenauigkeit.
 - Firefly Image Model 4 bietet signifikante Verbesserungen bei Text-Rendering, Menschen, Tieren und Architektur.
-- Firefly Image Model 4 hält an Adobes Engagement für IP-freundliche, kommerziell sichere generative KI fest.
+- Firefly Image Model 4 setzt das Engagement von Adobe für IP-freundliche, kommerziell sichere generative KI fort.
 
-Mit Firefly Image Model 4 erhalten Sie außergewöhnliche Bilder von Menschen, Tieren und detaillierten Szenen. Mit Image Model 4 Ultra können Sie Bilder mit hyperrealistischen menschlichen Interaktionen, Architekturelementen und komplexen Landschaften erzeugen&#x200B;
+Firefly Image Model 4 liefert außergewöhnliche Bilder von Menschen, Tieren und detaillierten Szenen. Mit Image Model 4 Ultra können Sie Bilder mit hyperrealistischen menschlichen Interaktionen, Architekturelementen und komplexen Landschaften erzeugen&#x200B;
 
 ### 1.1.1.8.1 image4_standard
 
