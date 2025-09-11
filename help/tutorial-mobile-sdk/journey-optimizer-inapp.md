@@ -21,7 +21,7 @@ Mit Journey Optimizer können Sie Kampagnen erstellen, um In-App-Nachrichten an 
 
 ![Architektur](assets/architecture-ajo.png){zoomable="yes"}
 
-Bevor Sie In-App-Nachrichten mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von In-App-Nachrichten in Journey Optimizer finden Sie in [Dokumentation](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/in-app/inapp-configuration).
+Bevor Sie In-App-Nachrichten mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von In-App-Nachrichten in Journey Optimizer finden Sie in [Dokumentation](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/in-app/inapp-configuration).
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Bevor Sie In-App-Nachrichten mit Journey Optimizer senden, müssen Sie sicherste
 
 * App mit installierten und konfigurierten SDKs erfolgreich erstellt und ausgeführt.
 * Richten Sie die App für Adobe Experience Platform ein.
-* Zugriff auf Journey Optimizer und [ausreichende Berechtigungen für Push-Benachrichtigungen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/push/push-config/push-configuration). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
+* Zugriff auf Journey Optimizer und [ausreichende Berechtigungen für Push-Benachrichtigungen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/push/push-config/push-configuration). Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
    * Verwalten von Kampagnen.
 * Physikalisches iOS-Gerät oder Simulator für Tests.
 
@@ -67,11 +67,11 @@ Zunächst müssen Sie eine Kanalkonfiguration erstellen, damit Sie über Journey
    >
    > Namen müssen mit einem Buchstaben (A–Z) beginnen. Ein Name darf nur alphanumerische Zeichen enthalten. Sie können auch die Zeichen Unterstrich `_`, Punkt `.` und Bindestrich `-` verwenden.
 
-1. Um der Konfiguration benutzerdefinierte oder grundlegende Datennutzungs-Labels zuzuweisen, können Sie **[!UICONTROL Zugriff verwalten]** auswählen. [Erfahren Sie mehr über die Zugriffssteuerung auf Objektebene (Object Level Access Control, OLAC)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+1. Um der Konfiguration benutzerdefinierte oder grundlegende Datennutzungs-Labels zuzuweisen, können Sie **[!UICONTROL Zugriff verwalten]** auswählen. [Erfahren Sie mehr über die Zugriffssteuerung auf Objektebene (Object Level Access Control, OLAC)](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. Wählen Sie den **In-App-Messaging** Kanal aus.
 
-1. Wählen Sie **[!UICONTROL Marketing-Aktion]**, um mit dieser Konfiguration Einverständnisrichtlinien mit den Nachrichten zu verknüpfen. Alle mit der Marketing-Aktion verknüpften Einverständnisrichtlinien werden genutzt, um die Voreinstellungen Ihrer Kundinnen und Kunden zu berücksichtigen. [Weitere Informationen zu Marketing-Aktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). Beispiel: Push-Targeting.
+1. Wählen Sie **[!UICONTROL Marketing-Aktion]**, um mit dieser Konfiguration Einverständnisrichtlinien mit den Nachrichten zu verknüpfen. Alle mit der Marketing-Aktion verknüpften Einverständnisrichtlinien werden genutzt, um die Voreinstellungen Ihrer Kundinnen und Kunden zu berücksichtigen. [Weitere Informationen zu Marketing-Aktionen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). Beispiel: Push-Targeting.
 
 1. Wählen Sie die Plattform aus, für die Sie die Einstellungen definieren möchten. Mit dieser Einstellung können Sie die Ziel-App für jede Plattform angeben und eine konsistente Inhaltsbereitstellung über mehrere Plattformen hinweg sicherstellen.
 
@@ -354,6 +354,6 @@ Sie sollten jetzt über alle Tools verfügen, um ggf. In-App-Nachrichten hinzuzu
 >
 >Sie haben die App für In-App-Nachrichten aktiviert und eine In-App-Nachrichtenkampagne mit Journey Optimizer und der Journey Optimizer-Erweiterung für Experience Platform Mobile SDK hinzugefügt.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
 
 Weiter: **[Angebote erstellen und anzeigen](journey-optimizer-offers.md)**

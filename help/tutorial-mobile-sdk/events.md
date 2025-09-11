@@ -681,6 +681,6 @@ Nachdem Sie nun die Ereignisse erfasst und an Platform Edge Network gesendet hab
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass Commerce-, App-Interaktions- und Bildschirm-Tracking-Ereignisse über die Adobe Experience Platform Edge Network verfolgt werden. Und für alle -Services, die Sie in Ihrem Datenstrom definiert haben.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
 
 Weiter: **[WebViews behandeln](web-views.md)**
