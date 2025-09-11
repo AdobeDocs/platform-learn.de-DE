@@ -8,18 +8,18 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
+source-git-commit: 323702d37425b22b0a5270d410e8b000aa0d5434
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 71%
+source-wordcount: '79'
+ht-degree: 72%
 
 ---
 
 
-# Implementieren des Experience Cloud in Mobile Apps {#implement-mobile-sdk}
+# Implementieren von Experience Cloud in Mobile Apps {#implement-mobile-sdk}
 
 + [Tutorial-Überblick](overview.md)
-+ Ausgangskonfiguration {#initial-configuration}
++ Erstkonfiguration {#initial-configuration}
    + [Erstellen eines Schemas](create-schema.md)
    + [Erstellen eines Datenspeichers](create-datastream.md)
    + [Konfigurieren von Tags](configure-tags.md)
@@ -33,14 +33,15 @@ ht-degree: 71%
    + [Identität](identity.md)
    + [Profil](profile.md)
    + [Places](places.md)
-+ Experience Cloud {#experience-cloud}
++ Experience Cloud{#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
    + Journey Optimizer{#journey-optimizer}
       + [Push-Benachrichtigungen ](journey-optimizer-push.md)
       + [In-App-Nachrichten](journey-optimizer-inapp.md)
       + [Entscheidungs-Management](journey-optimizer-offers.md)
-   + [Target](target.md)
+   + [Ziel](target.md)
    + [Customer Journey Analytics](customer-journey-analytics.md)
+   + [Test](test.md)
 + [Zusammenfassung](conclusion.md)
 
