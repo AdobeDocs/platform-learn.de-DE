@@ -3,7 +3,7 @@ title: Verarbeiten von WebViews mit Platform Mobile SDK
 description: Erfahren Sie, wie Sie die Datenerfassung mit WebViews in einer Mobile App handhaben.
 jira: KT-14632
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 1%
@@ -27,7 +27,7 @@ In dieser Lektion erfahren Sie Folgendes:
 
 ## Mögliche Tracking-Probleme
 
-Separate ECIDs (Experience Cloud Identity) werden generiert, wenn Sie Daten aus dem nativen Teil Ihrer App und aus einer WebView innerhalb der App senden. Diese separaten ECIDs führen zu getrennten Treffern und überhöhten Besuchs- und Besucherdaten. Weitere Informationen zur ECID finden Sie in der [ECID-Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/ecid).
+Separate ECIDs (Experience Cloud Identity) werden generiert, wenn Sie Daten aus dem nativen Teil Ihrer App und aus einer WebView innerhalb der App senden. Diese separaten ECIDs führen zu getrennten Treffern und überhöhten Besuchs- und Besucherdaten. Weitere Informationen zur ECID finden Sie in der [ECID-Übersicht](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid).
 
 Um die getrennten Treffer und überhöhten Daten zu beheben, müssen Sie die ECID des Benutzers aus dem nativen Teil Ihrer App an eine WebView übergeben, die Sie möglicherweise in Ihrer App verwenden möchten.
 
@@ -110,11 +110,11 @@ So führen Sie den Code aus:
 
 >[!TAB iOS]
 
-<img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
+<img src="./assets/tou1.png" width="300"> <img src="./assets/tou2.png" width="300">
 
 >[!TAB Android]
 
-<img src="./assets/tou1-android.png" width="300" /> <img src="./assets/tou2-android.png" width="300" />
+<img src="./assets/tou1-android.png" width="300"> <img src="./assets/tou2-android.png" width="300">
 
 >[!ENDTABS]
 
@@ -151,6 +151,6 @@ Leider ist das Debugging der Websitzung eingeschränkt. Beispielsweise können S
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass Inhalte basierend auf einer URL in einer Webansicht mit derselben ECID angezeigt werden, die bereits von Adobe Experience Platform Mobile SDK ausgegeben wurde.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[Identität](identity.md)**

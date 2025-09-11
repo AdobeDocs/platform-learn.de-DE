@@ -3,7 +3,7 @@ title: Erfassen von Profildaten mit Platform Mobile SDK
 description: Erfahren Sie, wie Sie Profildaten in einer Mobile App erfassen.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 2%
@@ -71,7 +71,7 @@ Für Targeting und Personalisierung in der App ist es hilfreich, schnell zu wiss
 
 >[!TAB Android]
 
-1. Android Navigieren Sie im Android Studio-Navigator zu **&#x200B;**![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und suchen Sie nach der `func updateUserAttribute(attributeName: String, attributeValue: String)`. Fügen Sie den folgenden Code hinzu:
+1. Android Navigieren Sie im Android Studio-Navigator zu ****![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und suchen Sie nach der `func updateUserAttribute(attributeName: String, attributeValue: String)`. Fügen Sie den folgenden Code hinzu:
 
    ```kotlin
    // Create a profile map, add attributes to the map and update profile using the map
@@ -123,7 +123,7 @@ Nachdem Sie das Attribut eines Benutzers aktualisiert haben, ist es für andere 
    Dieser Code:
 
    1. Ruft die [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)-API mit dem `isPaidUser` Attributnamen als einzelnes Element im `attributeNames`-Array auf.
-   1. Prüft dann auf den Wert des `isPaidUser` Attributs und platziert `yes` ein Badge auf dem <img src="assets/paiduser.png" width="20" /> oben rechts in der Symbolleiste.
+   1. Prüft dann auf den Wert des `isPaidUser` Attributs und platziert `yes` ein Badge auf dem <img src="assets/paiduser.png" width="20"> oben rechts in der Symbolleiste.
 
 >[!TAB Android]
 
@@ -139,7 +139,7 @@ Nachdem Sie das Attribut eines Benutzers aktualisiert haben, ist es für andere 
    Dieser Code:
 
    1. Ruft die [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)-API mit dem `isPaidUser` Attributnamen als einzelnes Element im `attributeNames`-Array auf.
-   1. Prüft dann auf den Wert des `isPaidUser`. Wenn `yes`, ersetzt der Code das Personensymbol durch ein Badge auf der <img src="assets/paiduser.png" width="20" /> oben rechts in der Symbolleiste.
+   1. Prüft dann auf den Wert des `isPaidUser`. Wenn `yes`, ersetzt der Code das Personensymbol durch ein Badge auf der <img src="assets/paiduser.png" width="20"> oben rechts in der Symbolleiste.
 
 >[!ENDTABS]
 
@@ -168,7 +168,7 @@ Weitere Informationen finden Sie [API](https://developer.adobe.com/client-sdks/d
 1. Wählen Sie **[!DNL Products]** in der Registerkartenleiste aus.
 1. Ein Produkt auswählen.
 1. Auswählen <img src="assets/saveforlater.png" width="15" />.
-1. Auswählen <img src="assets/addtocart.png" width="20" />.
+1. Auswählen <img src="assets/addtocart.png" width="20">.
 1. Auswählen <img src="assets/purchase.png" width="15" />.
 
    <img src="./assets/mobile-app-events-3.png" width="300">
@@ -193,8 +193,8 @@ Weitere Informationen finden Sie [API](https://developer.adobe.com/client-sdks/d
 
 1. Wählen Sie **[!DNL Products]** in der Registerkartenleiste aus.
 1. Ein Produkt auswählen.
-1. Auswählen<img src="assets/heart.png" width="25" />.
-1. Auswählen <img src="assets/addtocart.png" width="20" />.
+1. Auswählen<img src="assets/heart.png" width="25">.
+1. Auswählen <img src="assets/addtocart.png" width="20">.
 1. Auswählen <img src="assets/purchase.png" width="15" />.
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
@@ -214,6 +214,6 @@ In der Assurance-Benutzeroberfläche sollten die Ereignisse **[!UICONTROL UserPr
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass Attribute von Profilen in der Edge Network und (wenn eingerichtet) in Adobe Experience Platform aktualisiert werden.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Verwenden Sie Orte](places.md)**

@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Erfahren Sie, wie Sie mit Experience Platform Mobile SDK und Journey Optimizer Push-Benachrichtigungen für Mobile Apps erstellen.
 
-Mit Journey Optimizer können Sie Journey erstellen und Nachrichten an ausgewählte Zielgruppen senden. Bevor Sie Push-Benachrichtigungen mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von Push-Benachrichtigungen in Journey Optimizer finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/channels/push/push-config/push-gs).
+Mit Journey Optimizer können Sie Journey erstellen und Nachrichten an ausgewählte Zielgruppen senden. Bevor Sie Push-Benachrichtigungen mit Journey Optimizer senden, müssen Sie sicherstellen, dass die richtigen Konfigurationen und Integrationen vorhanden sind. Informationen zum Datenfluss von Push-Benachrichtigungen in Journey Optimizer finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-gs).
 
 ![Architektur](assets/architecture-ajo.png){zoomable="yes"}
 
@@ -30,7 +30,7 @@ Mit Journey Optimizer können Sie Journey erstellen und Nachrichten an ausgewäh
 
 * Die App wurde erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert wurden.
 * Richten Sie die App für Adobe Experience Platform ein.
-* Zugriff auf Journey Optimizer und [ausreichende ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/channels/push/push-config/push-configuration)) Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
+* Zugriff auf Journey Optimizer und [ausreichende ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-configuration)) Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
    * Erstellen Sie Push-Anmeldedaten.
    * Erstellen Sie eine Konfiguration für den Push-Kanal.
    * Erstellen Sie eine Journey.
@@ -174,12 +174,12 @@ Nachdem Sie eine Konfiguration für Push-Anmeldeinformationen erstellt haben, m�
    > Namen müssen mit einem Buchstaben (A–Z) beginnen. Ein Name darf nur alphanumerische Zeichen enthalten. Sie können auch die Zeichen Unterstrich `_`, Punkt `.` und Bindestrich `-` verwenden.
 
 
-1. Um der Konfiguration benutzerdefinierte oder grundlegende Datennutzungs-Labels zuzuweisen, können Sie **[!UICONTROL Zugriff verwalten]** auswählen. [Erfahren Sie mehr über die Zugriffssteuerung auf Objektebene (Object Level Access Control, OLAC)](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/object-based-access).
+1. Um der Konfiguration benutzerdefinierte oder grundlegende Datennutzungs-Labels zuzuweisen, können Sie **[!UICONTROL Zugriff verwalten]** auswählen. [Erfahren Sie mehr über die Zugriffssteuerung auf Objektebene (Object Level Access Control, OLAC)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. Wählen Sie den Kanal **Push** aus.
 
 
-1. Wählen Sie **[!UICONTROL Marketing-Aktion(en)]** aus, um mit dieser Konfiguration Einverständnisrichtlinien mit den Nachrichten zu verknüpfen. Alle mit den Marketing-Aktionen verknüpften Einverständnisrichtlinien werden genutzt, um die Voreinstellungen Ihrer Kundinnen und Kunden zu berücksichtigen. [Weitere Informationen zu Marketing-Aktionen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+1. Wählen Sie **[!UICONTROL Marketing-Aktion(en)]** aus, um mit dieser Konfiguration Einverständnisrichtlinien mit den Nachrichten zu verknüpfen. Alle mit den Marketing-Aktionen verknüpften Einverständnisrichtlinien werden genutzt, um die Voreinstellungen Ihrer Kundinnen und Kunden zu berücksichtigen. [Weitere Informationen zu Marketing-Aktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
 
 1. Wählen Sie Ihre **[!UICONTROL Plattform]**. Sie können sowohl **[!UICONTROL iOS]** als auch **[!UICONTROL Android]** für eine Kanalkonfiguration konfigurieren.
 
@@ -256,11 +256,11 @@ Damit Ihre App mit Journey Optimizer verwendet werden kann, müssen Sie Ihre Tag
 
 >[!TAB iOS]
 
-<img src="assets/luma-app-push.png" width="300" />
+<img src="assets/luma-app-push.png" width="300">
 
 >[!TAB Android]
 
-<img src="assets/luma-app-push-android.png" width="300" />
+<img src="assets/luma-app-push-android.png" width="300">
 
 >[!ENDTABS]
 
@@ -299,7 +299,7 @@ So aktualisieren Sie die Signatur für Ihre App:
 
 1. Wählen Sie in Xcode **[!DNL Luma]** aus der Liste **[!UICONTROL TARGETS]**, wählen Sie die Registerkarte **[!UICONTROL Signierung und Funktionen]** aus, klicken Sie auf die Schaltfläche **[!UICONTROL + Funktion]** und klicken Sie dann auf **[!UICONTROL Push-Benachrichtigungen]**. Mit dieser Auswahl kann Ihre App Push-Benachrichtigungen erhalten.
 
-1. Als Nächstes müssen Sie der App eine Benachrichtigungserweiterung hinzufügen. Gehen Sie zurück zur Registerkarte &quot;**[!DNL General]**&quot; und wählen Sie unten im Abschnitt „ZIELE **[!UICONTROL das Symbol]**+**&#x200B;** aus.
+1. Als Nächstes müssen Sie der App eine Benachrichtigungserweiterung hinzufügen. Gehen Sie zurück zur Registerkarte &quot;**[!DNL General]**&quot; und wählen Sie unten im Abschnitt „ZIELE **[!UICONTROL das Symbol]**+**** aus.
 
 1. Sie werden aufgefordert, die Vorlage für Ihre neue Zielgruppe auszuwählen. Wählen Sie **[!UICONTROL Erweiterung für den Benachrichtigungsdienst]** und dann **[!UICONTROL Weiter]** aus.
 
@@ -419,7 +419,7 @@ Sie müssen das Geräte-Token für Push-Benachrichtigungen registrieren.
 >[!IMPORTANT]
 >
 >**Nur für iOS**: Die `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` bestimmt, ob Push-Benachrichtigungen eine APNs-Sandbox oder einen Produktions-Server zum Senden von Push-Benachrichtigungen verwenden. Stellen Sie beim Testen Ihrer App im Simulator oder auf einem Gerät sicher, dass die `messaging.useSandbox` auf `true` eingestellt ist, damit Sie Push-Benachrichtigungen erhalten. Stellen Sie beim Bereitstellen Ihrer App für Produktions- oder Testzwecke mit Apple Testflight sicher, dass Sie `messaging.useSandbox` auf `false` setzen, da Ihre Produktions-App sonst keine Push-Benachrichtigungen empfangen kann.<br/><br/>
->&#x200B;>Firebase Cloud Messaging (FCM) unterstützt **nicht** das Konzept von Sandboxes für Push-Benachrichtigungen.
+>>Firebase Cloud Messaging (FCM) unterstützt **nicht** das Konzept von Sandboxes für Push-Benachrichtigungen.
 
 
 ## Erstellen einer eigenen Push-Benachrichtigung
@@ -443,7 +443,7 @@ Sie werden einen neuen Ereignistyp definieren, der noch nicht als Teil der Liste
 
 ### Ereignis definieren
 
-Mit Ereignissen in Journey Optimizer können Sie Trigger-Journey zum Senden von Nachrichten, z. B. Push-Benachrichtigungen, hinzufügen. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events)Über Ereignisse“.
+Mit Ereignissen in Journey Optimizer können Sie Trigger-Journey zum Senden von Nachrichten, z. B. Push-Benachrichtigungen, hinzufügen. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events)Über Ereignisse“.
 
 1. Wählen Sie in der Benutzeroberfläche von Journey Optimizer **[!UICONTROL Konfigurationen]** in der linken Leiste aus.
 
@@ -635,7 +635,7 @@ Beachten Sie, dass Sie ausschließlich zu Illustrationszwecken eine Push-Benachr
    }
    ```
 
-1. Android Navigieren Sie im Android Studio-Navigator zu **&#x200B;**![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und fügen Sie den folgenden Code zu `func sendTestPushEvent(applicationId: String, eventType: String)` hinzu:
+1. Android Navigieren Sie im Android Studio-Navigator zu ****![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und fügen Sie den folgenden Code zu `func sendTestPushEvent(applicationId: String, eventType: String)` hinzu:
 
    ```kotlin
    // Create payload and send experience event
@@ -682,7 +682,7 @@ So validieren Sie das Push-Benachrichtigungsereignis und das Journey:
 
    Die Push-Benachrichtigung wird über der App angezeigt.
 
-   <img src="assets/ajo-test-push.png" width="300" />
+   <img src="assets/ajo-test-push.png" width="300">
 
 >[!TAB Android]
 
@@ -694,7 +694,7 @@ So validieren Sie das Push-Benachrichtigungsereignis und das Journey:
 
    Die Push-Benachrichtigung wird über der App angezeigt.
 
-   <img src="assets/ajo-test-push-android.png" width="300" />
+   <img src="assets/ajo-test-push-android.png" width="300">
 
 >[!ENDTABS]
 
@@ -711,6 +711,6 @@ Sie sollten jetzt über alle Tools verfügen, um Push-Benachrichtigungen in Ihre
 >
 >Sie haben jetzt die App für Push-Benachrichtigungen mit Journey Optimizer und die Journey Optimizer-Erweiterung für Experience Platform Mobile SDK aktiviert.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Erstellen und Senden von In-App-Nachrichten](journey-optimizer-inapp.md)**

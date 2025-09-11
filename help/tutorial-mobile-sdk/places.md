@@ -3,7 +3,7 @@ title: Verwenden von Places mit Platform Mobile SDK
 description: Erfahren Sie, wie Sie den Orte-Geolokalisierungs-Service in Ihrer Mobile App verwenden.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 2%
@@ -400,15 +400,15 @@ So validieren Sie die Geolocation-Funktionen in Ihrer App:
 
 1. Verschieben Sie die Karte, und ziehen Sie sie, um sicherzustellen, dass sich der blaue mittlere Kreis über einem Ihrer POI befindet, z. B. in London.
 
-1. Tippen <img src="assets/geobutton.png" width="20" />, bis Kategorie und Name im Etikett an der roten Stelle mit der Nadel angezeigt werden.
+1. Tippen <img src="assets/geobutton.png" width="20">, bis Kategorie und Name im Etikett an der roten Stelle mit der Nadel angezeigt werden.
 
 1. Tippen Sie auf den Titel des POI, wodurch das Blatt &quot;**[!UICONTROL POI“ geöffnet]**.
 
-   <img src="assets/appgeolocation.png" width="300" />
+   <img src="assets/appgeolocation.png" width="300">
 
 1. Drücken Sie die **[!UICONTROL Eintritt]** oder **[!UICONTROL Austritt]**, um Geofence-Eintritts- und Geofence-Ausstiegsereignisse aus der App zu simulieren.
 
-   <img src="assets/appentryexit.png" width="300" />
+   <img src="assets/appentryexit.png" width="300">
 
 1. Die Ereignisse sollten in der Assurance-Benutzeroberfläche zu sehen sein. Sowohl in den Ereignissen als auch in den Places Service-Ereignissen.
 
@@ -420,12 +420,12 @@ So validieren Sie die Geolocation-Funktionen in Ihrer App:
 
 1. Tippen Sie auf eine Stelle innerhalb des roten Kreises, der angezeigt wird.
 
-   <img src="assets/appgeolocation-android.png" width="300" />
+   <img src="assets/appgeolocation-android.png" width="300">
 
 
 1. Drücken Sie die **[!UICONTROL Eintritt]** oder **[!UICONTROL Austritt]**, um Geofence-Eintritts- und Geofence-Ausstiegsereignisse aus der App zu simulieren.
 
-   <img src="assets/appentryexit-android.png" width="300" />
+   <img src="assets/appentryexit-android.png" width="300">
 
 1. Die Ereignisse sollten in der Assurance-Benutzeroberfläche zu sehen sein.
 
@@ -446,6 +446,6 @@ Diese Implementierung der Geolokalisierungsfunktion für Ihre App minimiert den 
 >
 >Sie haben die App jetzt für Geolocation-Services mithilfe der Places-Erweiterung in der Experience Platform Mobile SDK aktiviert.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Daten Adobe Analytics zuordnen](analytics.md)**
