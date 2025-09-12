@@ -3,10 +3,10 @@ title: Erfassen von Profildaten mit Platform Mobile SDK
 description: Erfahren Sie, wie Sie Profildaten in einer Mobile App erfassen.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 2%
+source-wordcount: '786'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +62,7 @@ Für Targeting und Personalisierung in der App ist es hilfreich, schnell zu wiss
 
    1. Verwendet das `profileMap` als Wert für den `attributeDict` des [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes)-API-Aufrufs.
 
-1. Navigieren Sie im Xcode-Projekt-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** und suchen Sie den Aufruf an `updateUserAttributes` (im Code für die Bestellungen) <img src="assets/purchase.png" width="15" />). Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie im Xcode-Projekt-Navigator zu **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** und suchen Sie den Aufruf an `updateUserAttributes` (im Code für die Schaltfläche Bestellungen ![Kreditkarte](/help/assets/icons/CreditCard.svg)). Fügen Sie den folgenden Code hinzu:
 
    ```swift
    // Update attributes
@@ -71,7 +71,7 @@ Für Targeting und Personalisierung in der App ist es hilfreich, schnell zu wiss
 
 >[!TAB Android]
 
-1. Android Navigieren Sie im Android Studio-Navigator zu **&#x200B;**![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und suchen Sie nach der `func updateUserAttribute(attributeName: String, attributeValue: String)`. Fügen Sie den folgenden Code hinzu:
+1. Android Navigieren Sie im Android Studio-Navigator zu ****![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und suchen Sie nach der `func updateUserAttribute(attributeName: String, attributeValue: String)`. Fügen Sie den folgenden Code hinzu:
 
    ```kotlin
    // Create a profile map, add attributes to the map and update profile using the map
@@ -87,7 +87,7 @@ Für Targeting und Personalisierung in der App ist es hilfreich, schnell zu wiss
 
    1. Verwendet die `profileMap` Zuordnung als Wert zum `attributeDict` des [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes)-API-Aufrufs.
 
-1. Navigieren Sie zu **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL ProductView.kt]** und suchen Sie den Aufruf an `updateUserAttributes` (im Code für die Bestellungen ) <img src="assets/purchase.png" width="15" />). Fügen Sie den folgenden Code hinzu:
+1. Navigieren Sie zu **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL ProductView.kt]** und suchen Sie den Aufruf an `updateUserAttributes` (im Code für die Schaltfläche ![CreditCard](/help/assets/icons/CreditCard.svg)). Fügen Sie den folgenden Code hinzu:
 
    ```kotlin
    // Update attributes
@@ -123,7 +123,7 @@ Nachdem Sie das Attribut eines Benutzers aktualisiert haben, ist es für andere 
    Dieser Code:
 
    1. Ruft die [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)-API mit dem `isPaidUser` Attributnamen als einzelnes Element im `attributeNames`-Array auf.
-   1. Prüft dann auf den Wert des `isPaidUser` Attributs und platziert `yes` ein Badge auf dem <img src="assets/paiduser.png" width="20"> oben rechts in der Symbolleiste.
+   1. Sucht dann nach dem Wert des `isPaidUser` Attributs und platziert `yes` oben rechts in der Symbolleiste ein Badge ![ das Symbol UserCheckedOut](/help/assets/icons/UserCheckedOut.svg).
 
 >[!TAB Android]
 
@@ -139,7 +139,7 @@ Nachdem Sie das Attribut eines Benutzers aktualisiert haben, ist es für andere 
    Dieser Code:
 
    1. Ruft die [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)-API mit dem `isPaidUser` Attributnamen als einzelnes Element im `attributeNames`-Array auf.
-   1. Prüft dann auf den Wert des `isPaidUser`. Wenn `yes`, ersetzt der Code das Personensymbol durch ein Badge auf der <img src="assets/paiduser.png" width="20"> oben rechts in der Symbolleiste.
+   1. Prüft dann auf den Wert des `isPaidUser`. Wenn `yes`, ersetzt der Code das Personensymbol durch ein Badge-Symbol in der Symbolleiste oben rechts.
 
 >[!ENDTABS]
 
@@ -156,24 +156,24 @@ Weitere Informationen finden Sie [API](https://developer.adobe.com/client-sdks/d
 
 1. Wählen Sie **[!UICONTROL Startseite]** in der Registerkartenleiste aus.
 1. Verschieben Sie das Assurance-Symbol nach links.
-1. Um die Anmeldeseite zu öffnen, wählen Sie die <img src="assets/login.png" width="15" />.
+1. Um die Anmeldungsseite zu öffnen, klicken Sie auf die Schaltfläche ![Benutzer](/help/assets/icons/User.svg).
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. Um eine zufällige E-Mail und Kunden-ID einzufügen, wählen Sie die Schaltfläche <img src="assets/insert.png" width="15" /> .
+1. Um eine zufällige E-Mail und Kunden-ID einzufügen, klicken Sie auf die Schaltfläche > .
 1. Wählen Sie **[!UICONTROL Anmelden]** aus.
 
    <img src="./assets/mobile-app-events-2.png" width="300">
 
 1. Wählen Sie **[!DNL Products]** in der Registerkartenleiste aus.
 1. Ein Produkt auswählen.
-1. Auswählen <img src="assets/saveforlater.png" width="15" />.
-1. Auswählen <img src="assets/addtocart.png" width="20">.
-1. Auswählen <img src="assets/purchase.png" width="15" />.
+1. Wählen Sie ![Herz](/help/assets/icons/Heart.svg) aus.
+1. Wählen Sie ![Warenkorb](/help/assets/icons/ShoppingCart.svg) aus.
+1. Wählen Sie ![Kreditkarte](/help/assets/icons/CreditCard.svg) aus.
 
    <img src="./assets/mobile-app-events-3.png" width="300">
 
-1. Kehren Sie zum Bildschirm **[!UICONTROL Startseite]** zurück. Sie sollten sehen, dass ein Abzeichen hinzugefügt wurde <img src="assets/person-badge-icon.png" width="15" />.
+1. Kehren Sie zum Bildschirm **[!UICONTROL Startseite]** zurück. Sie sollten sehen, dass ein Abzeichen hinzugefügt wurde ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg).
 
    <img src="./assets/personbadges.png" width="300">
 
@@ -182,20 +182,20 @@ Weitere Informationen finden Sie [API](https://developer.adobe.com/client-sdks/d
 
 1. Wählen Sie **[!UICONTROL Startseite]** in der Registerkartenleiste aus.
 1. Verschieben Sie das Assurance-Symbol nach links.
-1. Um die Anmeldeseite zu öffnen, wählen Sie die <img src="assets/login.png" width="15" />.
+1. Um die Anmeldungsseite zu öffnen, klicken Sie auf die Schaltfläche ![Benutzer](/help/assets/icons/User.svg).
 
    <img src="./assets/mobile-app-events-1-android.png" width="300">
 
-1. Um eine zufällige E-Mail und Kunden-ID einzufügen, wählen Sie die Schaltfläche <img src="assets/insert.png" width="15" /> .
+1. Um eine zufällige E-Mail und Kunden-ID einzufügen, wählen Sie **[!UICONTROL Zufällige E-Mail generieren]** aus.
 1. Wählen Sie **[!UICONTROL Anmelden]** aus.
 
    <img src="./assets/mobile-app-events-2-android.png" width="300">
 
 1. Wählen Sie **[!DNL Products]** in der Registerkartenleiste aus.
 1. Ein Produkt auswählen.
-1. Auswählen<img src="assets/heart.png" width="25">.
-1. Auswählen <img src="assets/addtocart.png" width="20">.
-1. Auswählen <img src="assets/purchase.png" width="15" />.
+1. Wählen Sie ![ThumbUp](/help/assets/icons/ThumbUp.svg)
+1. Wählen Sie ![Warenkorb](/help/assets/icons/ShoppingCart.svg) aus.
+1. Wählen Sie ![Kreditkarte](/help/assets/icons/CreditCard.svg) aus.
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
 
@@ -214,6 +214,6 @@ In der Assurance-Benutzeroberfläche sollten die Ereignisse **[!UICONTROL UserPr
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass Attribute von Profilen in der Edge Network und (wenn eingerichtet) in Adobe Experience Platform aktualisiert werden.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Verwenden Sie Orte](places.md)**

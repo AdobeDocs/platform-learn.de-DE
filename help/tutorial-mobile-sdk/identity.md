@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Identitätsdaten in einer Mobile App erfassen
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '962'
 ht-degree: 2%
 
 ---
@@ -115,7 +115,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 
 >[!TAB Android]
 
-1. Android Navigieren Sie im Android Studio-Navigator zu **&#x200B;**![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und suchen Sie nach der Implementierung der `fun updateIdentities(emailAddress: String, crmId: String) `. Fügen Sie der Funktion den folgenden Code hinzu.
+1. Android Navigieren Sie im Android Studio-Navigator zu ****![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und suchen Sie nach der Implementierung der `fun updateIdentities(emailAddress: String, crmId: String) `. Fügen Sie der Funktion den folgenden Code hinzu.
 
    ```kotlin
    // Set up identity map, add identities to map and update identities
@@ -179,7 +179,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 
 ## Entfernen einer Identität
 
-Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity)-API verwenden, um die Identität aus der gespeicherten Client-seitigen Identitätszuordnung zu entfernen. Die Identity-Erweiterung sendet die Kennung nicht mehr an die Edge Network. Bei Verwendung dieser API wird die Kennung nicht aus dem serverseitigen Identitätsdiagramm entfernt. Weitere [ zu Identitätsdiagrammen finden Sie ](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/identities/view-identity-graphs) „Anzeigen von Identitätsdiagrammen“.
+Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity)-API verwenden, um die Identität aus der gespeicherten Client-seitigen Identitätszuordnung zu entfernen. Die Identity-Erweiterung sendet die Kennung nicht mehr an die Edge Network. Bei Verwendung dieser API wird die Kennung nicht aus dem serverseitigen Identitätsdiagramm entfernt. Weitere [ zu Identitätsdiagrammen finden Sie ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs) „Anzeigen von Identitätsdiagrammen“.
 
 
 >[!BEGINTABS]
@@ -205,7 +205,7 @@ Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 
 >[!TAB Android]
 
-1. Android Navigieren Sie im Android Studio-Navigator zu **&#x200B;**![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und fügen Sie den folgenden Code zur `fun removeIdentities(emailAddress: String, crmId: String)` hinzu:
+1. Android Navigieren Sie im Android Studio-Navigator zu ****![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** und fügen Sie den folgenden Code zur `fun removeIdentities(emailAddress: String, crmId: String)` hinzu:
 
    ```kotlin
    // Remove identities and reset email and CRM Id to their defaults
@@ -233,7 +233,7 @@ MobileSDK.shared.removeIdentities(
 1. Lesen Sie den Abschnitt [Setup-Anweisungen](assurance.md#connecting-to-a-session), um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. In der Luma-App
    1. Wählen Sie die **[!UICONTROL Startseite]** und verschieben Sie das Assurance-Symbol nach links.
-   1. Wählen Sie die <img src="assets/login.png" width="15" /> oben rechts.
+   1. Wählen Sie oben ![ das Symbol ](/help/assets/icons/User.svg)Benutzer“ aus.
 
 >[!BEGINTABS]
 
@@ -248,7 +248,7 @@ MobileSDK.shared.removeIdentities(
 >[!ENDTABS]
 
 1. Geben Sie eine E-Mail-Adresse und eine CRM-ID an oder
-1. Auswählen <img src="assets/insert.png" width="15" /> (iOS) oder **[!UICONTROL Zufällige E-Mail generieren]** (Android), um nach dem Zufallsprinzip eine **[!UICONTROL E-Mail]**- und **[!UICONTROL CRM-ID]** generieren.
+1. Select **[!UICONTROL a |]** (iOS) oder **[!UICONTROL Zufällige E-Mail generieren]** (Android), um nach dem Zufallsprinzip eine **[!UICONTROL E-Mail]**- und **[!UICONTROL CRM-ID]** generieren.
 1. Wählen Sie **[!UICONTROL Anmelden]** aus.
 
 >[!BEGINTABS]
@@ -290,6 +290,6 @@ Nachdem Sie die Schritte in der [Experience Platform-Lektion](platform.md) abges
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass Identitäten in der Edge Network und (wenn eingerichtet) in Adobe Experience Platform aktualisiert werden.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Weiter: **[Erfassen von Profildaten](profile.md)**
