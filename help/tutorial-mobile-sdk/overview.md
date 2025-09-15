@@ -64,7 +64,7 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe-ID und die
    * **[!UICONTROL Eigenschaftsrechte]** - Berechtigungselemente für **[!UICONTROL Entwickeln]**, **[!UICONTROL Genehmigen]**, **[!UICONTROL Veröffentlichen]**, **[!UICONTROL Erweiterungen verwalten]** und **[!UICONTROL Umgebungen verwalten]**.
    * **[!UICONTROL Unternehmensrechte]** - Berechtigungselemente für **[!UICONTROL Eigenschaften verwalten]**
 
-     Weitere Informationen zu Tag-Berechtigungen finden Sie unter [Benutzerberechtigungen für Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} in der Produktdokumentation.
+     Weitere Informationen zu Tag-Berechtigungen finden Sie unter [Benutzerberechtigungen für Tags](https://experienceleague.adobe.com/de/docs/experience-platform/tags/admin/user-permissions){target="_blank"} in der Produktdokumentation.
 * In Experience Platform müssen Sie über Folgendes verfügen:
    * **[!UICONTROL Datenmodellierung]** - Berechtigungselemente zum Verwalten und Anzeigen von Schemas.
    * **[!UICONTROL Identity Management]** - Berechtigungselemente zum Verwalten und Anzeigen von Identity-Namespaces.
@@ -74,7 +74,7 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe-ID und die
       * **[!UICONTROL Daten-]**: Berechtigungselemente zum Verwalten und Anzeigen von Datensätzen.
       * Eine Entwicklungs **Sandbox** die Sie für dieses Tutorial verwenden können.
 
-   * Für die Journey Optimizer-Lektionen benötigen Sie Berechtigungen zum Konfigurieren des **Push-Benachrichtigungs-**) und zum Erstellen einer **Programmoberfläche** einer **Journey**, einer **Nachricht** und **Nachrichtenvoreinstellungen**. Darüber hinaus benötigen Sie für das Entscheidungs-Management die entsprechenden Berechtigungen zum **Verwalten von Angeboten** und **Entscheidungen**, wie unter [Berechtigungsebenen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions) beschrieben.
+   * Für die Journey Optimizer-Lektionen benötigen Sie Berechtigungen zum Konfigurieren des **Push-Benachrichtigungs-**) und zum Erstellen einer **Programmoberfläche** einer **Journey**, einer **Nachricht** und **Nachrichtenvoreinstellungen**. Darüber hinaus benötigen Sie für das Entscheidungs-Management die entsprechenden Berechtigungen zum **Verwalten von Angeboten** und **Entscheidungen**, wie unter [Berechtigungsebenen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/high-low-permissions) beschrieben.
 
 * Für Adobe Analytics müssen Sie wissen, welche **Report Suites** Sie verwenden können, um dieses Tutorial abzuschließen.
 
@@ -128,6 +128,6 @@ Los geht‘s!
 
 >[!SUCCESS]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
 
 Weiter: **[Erstellen eines XDM-Schemas](create-schema.md)**
