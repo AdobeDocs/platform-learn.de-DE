@@ -1,6 +1,6 @@
 ---
 title: KI-Assistent
-description: Erfahren Sie, was Sie mit dem KI-Assistenten in auf Adobe Experience Platform basierenden Anwendungen wie Real-time Customer Data Platform, Journey Optimizer und Customer Journey Analytics alles tun können.
+description: Erfahren Sie, was Sie mit dem KI-Assistenten in auf Adobe Experience Platform basierenden Anwendungen wie Real-Time Customer Data Platform, Journey Optimizer und Customer Journey Analytics alles tun können.
 feature: AI Assistant
 role: Admin, Architect, Data Architect, Data Engineer, Developer, Leader, User
 level: Beginner
@@ -12,7 +12,7 @@ exl-id: 15b9a4e3-0971-4460-859b-45118d382f64
 source-git-commit: f003a65188c0201030b8ecca0c0838088c814e47
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -51,7 +51,7 @@ Richten Sie sich mit dem KI-Assistenten ein und lernen Sie seine grundlegenden F
                     <p class="is-size-6">Erfahren Sie, wie Sie den Zugriff und die Berechtigungen für den KI-Assistenten in Adobe Experience Platform einrichten.</p>
                 </div>
                 <a href="access.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
                 </a>
             </div>
         </div>
@@ -61,7 +61,7 @@ Richten Sie sich mit dem KI-Assistenten ein und lernen Sie seine grundlegenden F
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="Verwenden des Auffindbarkeitsbereichs im KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440971/?format=jpeg&nocache=1748392732984&captions=ger" alt="Verwenden des Auffindbarkeitsbereichs im KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1748392732984" alt="Verwenden des Auffindbarkeitsbereichs im KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -74,7 +74,7 @@ Richten Sie sich mit dem KI-Assistenten ein und lernen Sie seine grundlegenden F
                     <p class="is-size-6">Erfahren Sie, wie Sie das Bedienfeld „Auffindbarkeit“ im KI-Assistenten verwenden.</p>
                 </div>
                 <a href="discoverability-panel.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
                 </a>
             </div>
         </div>
@@ -84,7 +84,7 @@ Richten Sie sich mit dem KI-Assistenten ein und lernen Sie seine grundlegenden F
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="Validieren von Antworten vom KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441748/?format=jpeg&nocache=1748392733006&captions=ger" alt="Validieren von Antworten vom KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1748392733006" alt="Validieren von Antworten vom KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -97,7 +97,7 @@ Richten Sie sich mit dem KI-Assistenten ein und lernen Sie seine grundlegenden F
                     <p class="is-size-6">Erfahren Sie, wie Sie die Antworten überprüfen und validieren, die der KI-Assistent in Adobe Experience Platform bereitstellt.</p>
                 </div>
                 <a href="validate-responses.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
                 </a>
             </div>
         </div>
@@ -122,7 +122,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="Abrufen operativer Einblicke mit dem KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444041/?format=jpeg&nocache=1748392734347&captions=ger" alt="Abrufen operativer Einblicke mit dem KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1748392734347" alt="Abrufen operativer Einblicke mit dem KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -135,7 +135,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
                     <p class="is-size-6">Erfahren Sie, wie Sie mit dem KI-Assistenten betriebliche Einblicke in Geschäftsobjekte wie Zielgruppen, Datensätze, Schemata, Ziele und Journey in Adobe Experience Platform gewinnen können</p>
                 </div>
                 <a href="operational-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
                 </a>
             </div>
         </div>
@@ -145,7 +145,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="KI-Assistent - Anwendungsfall für die Audience-Bereinigung" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441996/?format=jpeg&nocache=1748392734324&captions=ger" alt="KI-Assistent - Anwendungsfall für die Audience-Bereinigung"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1748392734324" alt="KI-Assistent - Anwendungsfall für die Audience-Bereinigung"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -158,7 +158,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
                     <p class="is-size-6">Erfahren Sie, wie Sie mit dem KI-Assistenten nicht verwendete Zielgruppen identifizieren können, um sie zu löschen und Ihre Marketing-Vorgänge effizienter zu gestalten.</p>
                 </div>
                 <a href="find-unused-audiences.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
                 </a>
             </div>
         </div>
@@ -168,7 +168,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="Wirkungsanalyse mit KI-Assistent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441689/?format=jpeg&nocache=1748392734336&captions=ger" alt="Wirkungsanalyse mit KI-Assistent"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1748392734336" alt="Wirkungsanalyse mit KI-Assistent"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +181,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
                     <p class="is-size-6">Erfahren Sie, wie Sie mit dem KI-Assistenten potenzielle Auswirkungen erkennen können, bevor Sie freigegebene Objekte ändern. Änderungen an freigegebenen Objekten wie Attributen und Audiences können Workflows für andere Teams stören, Prozesse verkomplizieren und wichtige Marketing-Maßnahmen gefährden.</p>
                 </div>
                 <a href="impact-analysis.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
                 </a>
             </div>
         </div>
@@ -204,7 +204,7 @@ Der KI-Assistent ist ein nützliches Tool, um neue Produkte zu lernen oder schne
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="Erfahren Sie mehr über Experience Platform-Programme mit dem KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441033/?format=jpeg&nocache=1748392735046&captions=ger" alt="Erfahren Sie mehr über Experience Platform-Programme mit dem KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1748392735046" alt="Erfahren Sie mehr über Experience Platform-Programme mit dem KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -217,7 +217,7 @@ Der KI-Assistent ist ein nützliches Tool, um neue Produkte zu lernen oder schne
                     <p class="is-size-6">Erfahren Sie mehr über Adobe Experience Platform-Programme vom KI-Assistenten.</p>
                 </div>
                 <a href="product-knowledge.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
                 </a>
             </div>
         </div>
@@ -240,7 +240,7 @@ Der KI-Assistent ist ein nützliches Tool, um neue Produkte zu lernen oder schne
                     <p class="is-size-6">Erfahren Sie, wie Sie mit dem KI-Assistenten schnell neue Funktionen entwickeln und die Onboarding-Zeit verkürzen können.</p>
                 </div>
                 <a href="onboard.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
                 </a>
             </div>
         </div>
@@ -262,7 +262,7 @@ Fehlerbehebung und Öffnen von Kundenunterstützungs-Tickets.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="Produktsupport-Agent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443192/?format=jpeg&nocache=1748392735554&captions=ger" alt="Produktsupport-Agent"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1748392735554" alt="Produktsupport-Agent"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -275,7 +275,7 @@ Fehlerbehebung und Öffnen von Kundenunterstützungs-Tickets.
                     <p class="is-size-6">Product Support Agent kann Ihnen bei der Lösung von Problemen helfen, indem Sie eine Vielzahl von Wissensquellen nutzen, die von den erfahrenen Support-Teams von Adobe kuratiert wurden, und sogar Ihre eigenen Daten nutzen. Wenn Sie zusätzliche Hilfe benötigen, kann der Produktsupport-Agent jetzt einen Support-Fall mit detaillierten kontextuellen Informationen erstellen.</p>
                 </div>
                 <a href="product-support-agent.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
                 </a>
             </div>
         </div>
@@ -297,7 +297,7 @@ Erfahren Sie mehr über die Sicherheitsfunktionen im KI-Assistenten.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="Sicherheitsübersicht des KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441089/?format=jpeg&nocache=1748392736016&captions=ger" alt="Sicherheitsübersicht des KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1748392736016" alt="Sicherheitsübersicht des KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -310,7 +310,7 @@ Erfahren Sie mehr über die Sicherheitsfunktionen im KI-Assistenten.
                     <p class="is-size-6">Dies ist ein Überblick über die Sicherheitsfunktionen für den KI-Assistenten, der auf dem Sicherheitsdatenblatt basiert.</p>
                 </div>
                 <a href="security-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">beobachten</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
                 </a>
             </div>
         </div>
