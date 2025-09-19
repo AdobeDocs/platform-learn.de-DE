@@ -1,23 +1,25 @@
 ---
 title: Konfigurieren eines Social-Media-Ziels
-description: Erfahren Sie, wie Sie ein Social-Media-Ziel in Adobe Experience Platform konfigurieren, einschließlich Authentifizierung, Segmentzuweisung, ID-Zuordnung usw.
+description: Erfahren Sie, wie Sie in Adobe Real-Time CDP Zielgruppen mit einem Social-Media-Ziel verbinden und aktivieren.
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
 level: Intermediate
 jira: KT-7206
 thumbnail: 332599.jpg
+last-substantial-update: 2025-09-17T00:00:00Z
+duration: 277
 exl-id: 9ec200e6-8ef9-47f5-98ca-1c1a2da3fb29
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d53f3faa6ccb71dffbd13f4060ad56c3cc19b5e4
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '58'
 ht-degree: 0%
 
 ---
 
 # Konfigurieren eines Social-Media-Ziels
 
-Erfahren Sie, wie Sie ein Social-Media-Ziel in Adobe Experience Platform konfigurieren, einschließlich Authentifizierung, Segmentzuweisung, ID-Zuordnung usw. Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html?lang=de).
+Erfahren Sie, wie Sie Zielgruppen mit einem Social-Media-Ziel verbinden und aktivieren können. In diesem Video wird der Workflow unter Verwendung eines Ziels für abgeglichene LinkedIn-Zielgruppen in Adobe Real-Time Customer Data Platform veranschaulicht.  Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
 
