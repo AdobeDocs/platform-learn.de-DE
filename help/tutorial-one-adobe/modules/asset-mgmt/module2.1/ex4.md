@@ -4,16 +4,16 @@ description: AEM CS - Benutzerdefinierter Standardblock
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 2%
 
 ---
 
-# 1.1.4 Entwickeln eines einfachen benutzerdefinierten Bausteins
+# 1.1.3 Entwickeln eines einfachen benutzerdefinierten Bausteins
 
-## Einrichten 1.1.4.1 lokalen Entwicklungsumgebung
+## Einrichten 1.1.3.1 lokalen Entwicklungsumgebung
 
 Wechseln Sie zu [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, laden Sie (GitHub **) herunter und installieren Sie**.
 
@@ -43,7 +43,7 @@ Sie sehen nun, dass der Ordner in Visual Studio Code geöffnet ist und Sie nun b
 
 ![Block](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 Erstellen eines einfachen benutzerdefinierten Blocks
+## 1.1.3.2 Erstellen eines einfachen benutzerdefinierten Blocks
 
 Adobe empfiehlt, Bausteine in einem dreistufigen Ansatz zu entwickeln:
 
@@ -145,7 +145,7 @@ Speichern Sie Ihre Änderungen.
 
 ![Block](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 Übertragen Sie Ihre Änderungen
+## 1.1.3.3 Übertragen Sie Ihre Änderungen
 
 Sie haben jetzt mehrere Änderungen an Ihrem Projekt vorgenommen, die wieder in Ihr GitHub-Repository übertragen werden müssen. Öffnen Sie dazu „GitHub **Desktop**.
 
@@ -169,7 +169,7 @@ Navigieren Sie in Ihrem Browser zu Ihrem GitHub-Konto und zu dem Repository, das
 
 ![Block](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Hinzufügen eines Blocks zu einer Seite
+## 1.1.3.4 Hinzufügen eines Blocks zu einer Seite
 
 Nachdem Sie nun Ihren einfachen Zitatblock definiert und an das CitiSignal-Projekt übergeben haben, können Sie einen **fiberoffer**-Block zu einer vorhandenen Seite hinzufügen.
 
@@ -249,7 +249,7 @@ Klicken **erneut auf** Veröffentlichen“.
 
 Ihre neue Seite wurde jetzt veröffentlicht.
 
-## 1.1.4.5 Hinzufügen einer neuen Seite zum Navigationsmenü
+## 1.1.3.5 Hinzufügen einer neuen Seite zum Navigationsmenü
 
 AEM Sites Gehen Sie in der Übersicht zu **CitiSignal** > **Fragments** und aktivieren Sie das Kontrollkästchen für **Header**. Klicken Sie auf **Bearbeiten**.
 
@@ -259,7 +259,7 @@ Fügen Sie eine Menüoption zum Navigationsmenü mit dem `Fiber` hinzu. Wählen 
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-Geben Sie dies für die **&#x200B;**&#x200B;URL`/us/en/citisignal-fiber` ein und klicken Sie zum Bestätigen auf das Symbol **V** .
+Geben Sie dies für die **** URL`/us/en/citisignal-fiber` ein und klicken Sie zum Bestätigen auf das Symbol **V** .
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 
@@ -284,7 +284,7 @@ Hier finden Sie Ihren grundlegenden benutzerdefinierten Block, der jetzt auf der
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-Nächster Schritt: [1.1.5 Erweiterter benutzerdefinierter Block](./ex5.md){target="_blank"}
+Nächster Schritt: [Erweiterter benutzerdefinierter Block](./ex5.md){target="_blank"}
 
 Zurück zu [Adobe Experience Manager Cloud Service und Edge Delivery Services](./aemcs.md){target="_blank"}
 

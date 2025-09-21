@@ -4,9 +4,9 @@ description: Erstellen des Cloud Manager-Programms
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '344'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.ad
 
 ![AEMCS](./images/aemcs1.png)
 
-Verwenden Sie für **Programmnamen** &quot;`--aepUserLdap-- - CitiSignal`&quot;. Wählen Sie die Option **Einrichten einer Sandbox**. Klicken Sie auf **Fortfahren**.
+Verwenden Sie für **Programmnamen** &quot;`--aepUserLdap-- - CitiSignal AEM+ACCS`&quot;. Wählen Sie die Option **Einrichten einer Sandbox**. Klicken Sie auf **Fortfahren**.
 
 ![AEMCS](./images/aemcs2.png)
 
@@ -52,8 +52,6 @@ Das Erstellen Ihrer Umgebung dauert einige Zeit, 10-20mins.
 
 ![AEMCS](./images/aemcs4.png)
 
-Während Sie warten, können Sie bereits mit Übung [1.1.2 beginnen Erstellen Sie Ihre dokumentbasierte Website](./ex2.md){target="_blank"}.
-
 Sobald die Umgebungen erstellt und einsatzbereit sind, erhalten Sie eine E-Mail-Bestätigung, nach der Sie hierher zurückkehren können.
 
 ![AEMCS](./images/aemcs5.png)
@@ -84,7 +82,7 @@ Klicken Sie **Aktivieren**.
 
 ![AEMCS](./images/aemcsact1.png)
 
-Die Aktivierung von **&#x200B;**&#x200B;Content Hub&quot; wurde jetzt gestartet. Dies kann 10 Minuten oder länger dauern.
+Die Aktivierung von **** Content Hub&quot; wurde jetzt gestartet. Dies kann 10 Minuten oder länger dauern.
 
 ![AEMCS](./images/aemcsact2.png)
 
@@ -107,7 +105,7 @@ Nach etwa 10 Minuten erfolgt die Aktivierung **Dynamic Media**.
 
 Sobald die Pipeline-Ausführung abgeschlossen ist, können Sie mit der nächsten Übung fortfahren.
 
-Nächster Schritt: [1.1.2 Erstellen Sie Ihre dokumentbasierte Website](./ex2.md){target="_blank"}
+Nächster Schritt: [Einrichten der AEM CS-Umgebung](./ex3.md){target="_blank"}
 
 Zurück zu [Adobe Experience Manager Cloud Service und Edge Delivery Services](./aemcs.md){target="_blank"}
 

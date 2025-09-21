@@ -4,14 +4,14 @@ description: AEM CS - MarTech-Plug-in
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
-# 1.1.6 AEM Edge Delivery Services MarTech-Plug-in
+# 1.1.5 AEM Edge Delivery Services MarTech-Plug-in
 
 Mit dem AEM MarTech-Plug-in können Sie schnell einen vollständigen MarTech-Stack für Ihr AEM-Projekt einrichten.
 
@@ -19,7 +19,7 @@ Mit dem AEM MarTech-Plug-in können Sie schnell einen vollständigen MarTech-Sta
 >
 >Dieses Plug-in steht Kunden derzeit in Zusammenarbeit mit AEM Engineering über Co-Innovationsprojekte zur Verfügung. Weitere Informationen finden Sie unter [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
 
-## 1.1.6.1 Hinzufügen des Plug-ins zu Ihrem Repository
+## 1.1.5.1 Hinzufügen des Plug-ins zu Ihrem Repository
 
 Navigieren Sie zu dem Ordner, den Sie für Ihr GitHub-Repository **Citisignal** verwenden. Klicken Sie mit der rechten Maustaste auf den Ordnernamen und wählen Sie **Neues Terminal unter Ordner**.
 
@@ -39,7 +39,7 @@ Navigieren Sie zu dem Ordner, den Sie für Ihr GitHub-Repository **Citisignal** 
 
 ![AEMCS](./images/mtplugin4.png){zoomable="yes"}
 
-## 1.1.6.2 head.html
+## 1.1.5.2 head.html
 
 Öffnen Sie in Visual Studio Code die Datei **head.html**. Kopieren Sie den folgenden Code und fügen Sie ihn in die Datei **head.html** ein.
 
@@ -54,7 +54,7 @@ Speichern Sie Ihre Änderungen.
 
 ![AEMCS](./images/mtplugin5.png){zoomable="yes"}
 
-## 1.1.6.3 scripts.js
+## 1.1.5.3 scripts.js
 
 Wechseln Sie in Visual Studio Code zum Ordner **scripts** und öffnen Sie die Datei **scripts.js**. Kopieren Sie den folgenden Code und fügen Sie ihn in die Datei **scripts.js** unter den vorhandenen Importskripten ein.
 
@@ -88,25 +88,25 @@ Fügen Sie **const AUDIENCES = {...};** folgenden Code ein:
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -157,7 +157,7 @@ Wechseln Sie zu [https://platform.adobe.com/](https://platform.adobe.com/) und d
 
 ### orgId
 
-Wechseln Sie zu [&#128279;](https://platform.adobe.com/)https://platform.adobe.com/&quot; und dann **Menü links zu** Abfragen“. Unter **Anmeldeinformationen** finden Sie die **IMS-Organisations-ID** als **Benutzername**. Klicken Sie auf **copy**, um die **IMS-Organisations-ID** zu kopieren und in Visual Studio Code in die Datei **scripts.js** einzufügen, indem Sie den Platzhalterwert `XXX` neben `orgId:` ersetzen.
+Wechseln Sie zu [](https://platform.adobe.com/)https://platform.adobe.com/&quot; und dann **Menü links zu** Abfragen“. Unter **Anmeldeinformationen** finden Sie die **IMS-Organisations-ID** als **Benutzername**. Klicken Sie auf **copy**, um die **IMS-Organisations-ID** zu kopieren und in Visual Studio Code in die Datei **scripts.js** einzufügen, indem Sie den Platzhalterwert `XXX` neben `orgId:` ersetzen.
 
 ![AEMCS](./images/scriptsvar2.png){zoomable="yes"}
 
@@ -175,7 +175,7 @@ Anschließend finden Sie die URL, die Sie benötigen, sie befindet sich jedoch i
 
 ![AEMCS](./images/scriptsvar5.png){zoomable="yes"}
 
-Die URL sieht wie folgt aus: `https://assets.adobedtm.com/b754ed1bed61/b9f7c7c484de/launch-5fcd90e5b482-development.min.js`. Bitte stellen Sie sicher, dass kein anderer Text mitkopiert wird, da dies zu Fehlern führen würde. Ersetzen Sie in Visual Studio Code in der Datei **scripts.js** den im `launchUrls:`-Array `XXX` Platzhalterwert.
+Die URL sieht wie folgt aus: `https://assets.adobedtm.com/b754ed1bed61/b9f7c7c484de/launch-5fcd90e5b482-development.min.js`. Bitte stellen Sie sicher, dass kein anderer Text mitkopiert wird, da dies zu Fehlern führen würde. Ersetzen Sie in Visual Studio Code in der Datei **scripts.js** den im `XXX`-Array `launchUrls:` Platzhalterwert.
 
 Jetzt verfügen Sie über die drei erforderlichen Variablen. Ihre `scripts.js` sollte jetzt wie folgt aussehen:
 
@@ -315,7 +315,7 @@ Klicken Sie **Ursprung per Push übertragen**, um Ihre Änderungen an Ihr GitHub
 
 ![AEMCS](./images/mtplugin13.png){zoomable="yes"}
 
-## 1.1.6.4 der ACDL-Erweiterung in der Tags-Eigenschaft
+## 1.1.5.4 der ACDL-Erweiterung in der Tags-Eigenschaft
 
 Damit das MarTech-Plug-in von AEM Edge Delivery Services ordnungsgemäß funktioniert, müssen Sie die Erweiterung für hinzufügen.
 
@@ -341,7 +341,7 @@ Wechseln Sie zu **Veröffentlichungsfluss** und öffnen Sie Ihre **Main**-Biblio
 
 Ihre Änderungen werden jetzt bereitgestellt.
 
-## 1.1.6.5 Senden von Daten an Adobe Experience Platform Edge Network
+## 1.1.5.5 Senden von Daten an Adobe Experience Platform Edge Network
 
 Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal--XXX.aem.page/us/en/` und/oder `main--citisignal--XXX.aem.live/us/en/` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
 
@@ -366,7 +366,7 @@ In **Konsolenansicht** wird eine Reihe von Zeilen angezeigt, die mit `[alloy]` b
 
 ![AEMCS](./images/plweb3.png){zoomable="yes"}
 
-## 1.1.6.6 Kundenprofil in Adobe Experience Platform anzeigen
+## 1.1.5.6 Kundenprofil in Adobe Experience Platform anzeigen
 
 Melden Sie sich über die folgende URL bei Adobe Experience Platform an: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 

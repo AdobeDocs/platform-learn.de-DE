@@ -4,14 +4,14 @@ description: AEM CS - Erweiterter benutzerdefinierter Block
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
-# 1.1.5 Erweiterter benutzerdefinierter Block
+# 1.1.4 Erweiterter benutzerdefinierter Block
 
 CTA In der vorherigen Übung haben Sie einen einfachen benutzerdefinierten Block mit dem Namen &quot;**&quot; konfiguriert** der Felder wie **Angebotstext**, **Angebotsbild** und **Angebotsbild** auf Ihrer Website anzeigt.
 
@@ -19,7 +19,7 @@ Sie können nun mit der Arbeit an diesem Block fortfahren.
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-## Gestalten 1.1.5.1 Blocks
+## Gestalten 1.1.4.1 Blocks
 
 Nachdem Sie nun über einen funktionierenden **Fiberoffer**-Block verfügen, können Sie Stile darauf anwenden.
 
@@ -115,7 +115,7 @@ Sie sollten dies dann sehen, wenn der Stil auf Ihre Seite angewendet wird.
 
 ![Block](./images/blockadv13.png){zoomable="yes"}
 
-## 1.1.5.2 Hinzufügen von Logik und Laden von Daten von einem externen Endpunkt
+## 1.1.4.2 Hinzufügen von Logik und Laden von Daten von einem externen Endpunkt
 
 In dieser Übung konfigurieren Sie Adobe Web SDK im Rohformat und fordern das nächstbeste Angebot von Adobe Journey Optimizer Offer Decisioning an.
 
@@ -345,7 +345,7 @@ Sie sollten das dann sehen.
 
 ![Block](./images/blockadv20.png){zoomable="yes"}
 
-Nächster Schritt: [1.1.6 AEM Edge Delivery Services MarTech-Plug-in](./ex6.md){target="_blank"}
+Nächster Schritt: [MarTech-Plug-in für AEM Edge Delivery Services](./ex6.md){target="_blank"}
 
 Zurück zu [Adobe Experience Manager Cloud Service und Edge Delivery Services](./aemcs.md){target="_blank"}
 

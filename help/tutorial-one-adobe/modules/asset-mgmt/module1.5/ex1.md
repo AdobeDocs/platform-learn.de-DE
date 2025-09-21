@@ -3,10 +3,10 @@ title: Erste Schritte mit Adobe Commerce as a Cloud Service
 description: Erste Schritte mit Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 16%
+source-wordcount: '688'
+ht-degree: 15%
 
 ---
 
@@ -100,6 +100,16 @@ Klicken Sie **Store-Ansicht speichern**.
 Sie sollten dann diese Meldung sehen. Klicken Sie auf **OK**.
 
 ![AEM Assets](./images/accs15.png)
+
+Dann solltest du wieder hier sein. Klicken Sie auf die **CitiSignal**-Website, um sie zu öffnen.
+
+![AEM Assets](./images/accs16.png)
+
+Aktivieren Sie das Kontrollkästchen, um diese Website als Standard-Website festzulegen.
+
+Klicken Sie **Website speichern**.
+
+![AEM Assets](./images/accs16a.png)
 
 Dann solltest du wieder hier sein.
 
@@ -212,7 +222,7 @@ Geben Sie den Wert `Space-Black` ein. Klicken Sie **Alle auswählen**
 
 ![AEM Assets](./images/accs39.png)
 
-Wählen Sie alle drei Optionen unter **&#x200B;**&#x200B;aus und klicken Sie auf **Weiter**.
+Wählen Sie alle drei Optionen unter **** aus und klicken Sie auf **Weiter**.
 
 ![AEM Assets](./images/accs40.png)
 

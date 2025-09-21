@@ -4,9 +4,9 @@ description: Adobe Experience Manager Cloud Service und Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '209'
 ht-degree: 1%
 
 ---
@@ -27,23 +27,19 @@ ht-degree: 1%
 
 In dieser Übung erstellen Sie Ihr Cloud Manager-Programm, mit dem die Sites-, Assets- und Edge Delivery Services-Produkte für Sie erstellt werden.
 
-[1.1.2 Erstellen Sie Ihre dokumentbasierte Website](./ex2.md){target="_blank"}
-
-In dieser ersten Übung richten Sie Ihre eigene dokumentbasierte Website ein, indem Sie eine vorhandene Website-Vorlage kopieren.
-
-[1.1.3 Einrichten der AEM CS-Umgebung](./ex3.md){target="_blank"}
+[1.1.2 Einrichten der AEM CS-Umgebung](./ex3.md){target="_blank"}
 
 In dieser Übung richten Sie Ihre AEM CS-Umgebung ein und greifen auf Ihre CitiSignal-Website zu.
 
-[1.1.4 Benutzerdefinierter Basisblock](./ex4.md){target="_blank"}
+[1.1.3 Benutzerdefinierter Basisblock](./ex4.md){target="_blank"}
 
 In dieser Übung entwickeln Sie einen grundlegenden benutzerdefinierten Block für Ihre Website.
 
-[1.1.5 Erweiterter benutzerdefinierter Block](./ex5.md){target="_blank"}
+[1.1.4 Erweiterter benutzerdefinierter Block](./ex5.md){target="_blank"}
 
 In dieser Übung entwickeln Sie einen erweiterten benutzerdefinierten Block für Ihre Website.
 
-[1.1.6 AEM Edge Delivery Services MarTech-Plug-in](./ex6.md){target="_blank"}
+[1.1.5 AEM Edge Delivery Services MarTech-Plug-in](./ex6.md){target="_blank"}
 
 In dieser Übung implementieren Sie das AEM MarTech-Plug-in. Mit dem AEM MarTech-Plug-in können Sie schnell einen vollständigen MarTech-Stack für Ihr AEM-Projekt einrichten.
 
