@@ -157,7 +157,7 @@ Wechseln Sie zu [https://platform.adobe.com/](https://platform.adobe.com/) und d
 
 ### orgId
 
-Wechseln Sie zu [](https://platform.adobe.com/)https://platform.adobe.com/&quot; und dann **Menü links zu** Abfragen“. Unter **Anmeldeinformationen** finden Sie die **IMS-Organisations-ID** als **Benutzername**. Klicken Sie auf **copy**, um die **IMS-Organisations-ID** zu kopieren und in Visual Studio Code in die Datei **scripts.js** einzufügen, indem Sie den Platzhalterwert `XXX` neben `orgId:` ersetzen.
+Wechseln Sie zu [&#128279;](https://platform.adobe.com/)https://platform.adobe.com/&quot; und dann **Menü links zu** Abfragen“. Unter **Anmeldeinformationen** finden Sie die **IMS-Organisations-ID** als **Benutzername**. Klicken Sie auf **copy**, um die **IMS-Organisations-ID** zu kopieren und in Visual Studio Code in die Datei **scripts.js** einzufügen, indem Sie den Platzhalterwert `XXX` neben `orgId:` ersetzen.
 
 ![AEMCS](./images/scriptsvar2.png){zoomable="yes"}
 
