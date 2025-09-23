@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Audience Agent optimiert das Zielgruppen-Management mit Erstellung, Optimierung, Einblicken und sicherer Integration über B2B/B2C-Apps hinweg.
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 >[!SLIDE](audience-agent-overview)
 
