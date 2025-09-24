@@ -263,7 +263,7 @@ Fügen Sie eine Menüoption zum Navigationsmenü mit dem `Fiber` hinzu. Wählen 
 
 ![AEMCS](./images/nav1.png)
 
-Geben Sie dies für die **** URL`/content/CitiSignal/fiber.html` ein und klicken Sie zum Bestätigen auf das Symbol **V** .
+Geben Sie dies für die **&#x200B;**&#x200B;URL`/content/CitiSignal/fiber.html` ein und klicken Sie zum Bestätigen auf das Symbol **V** .
 
 ![AEMCS](./images/nav3.png)
 

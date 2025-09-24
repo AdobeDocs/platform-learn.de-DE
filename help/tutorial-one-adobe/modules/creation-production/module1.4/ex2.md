@@ -243,7 +243,7 @@ Wählen Sie Ihre AEM Assets CS-Umgebung aus, die `--aepUserLdap-- - Citi Signal 
 
 ![Adobe Express](./images/aemf53.png)
 
-Navigieren Sie in **0}Assets** zum Ordner . **`--aepUserLdap-- - Frame.io PNG`** Doppelklicken Sie auf die Asset-**`--aepUserLdap-- - Mobile Video`**, um sie zu öffnen.
+Navigieren Sie in **0&rbrace;Assets** zum Ordner . **`--aepUserLdap-- - Frame.io PNG`** Doppelklicken Sie auf die Asset-**`--aepUserLdap-- - Mobile Video`**, um sie zu öffnen.
 
 ![Adobe Express](./images/expressv57.png)
 
