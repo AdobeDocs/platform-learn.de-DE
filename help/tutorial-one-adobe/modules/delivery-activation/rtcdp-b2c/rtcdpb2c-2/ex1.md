@@ -4,10 +4,10 @@ description: Kunden-KI - Datenvorbereitung (Aufnahme)
 kt: 5342
 doc-type: tutorial
 exl-id: 2b49d86a-af75-4ecd-ab3f-0182f3b8da2f
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ Bevor Sie fortfahren, müssen Sie eine **Sandbox“**. Die auszuwählende Sandbo
 
 ![Datenaufnahme](../../datacollection/dc1.2/images/sb1.png)
 
-Klicken Sie im linken Menü auf **Schemata** und gehen Sie zu **Durchsuchen**. Klicken Sie **Schema erstellen**.
+Klicken Sie im linken Menü auf **Schemata** und gehen Sie zu **Durchsuchen**. Klicken Sie auf **Schema erstellen**.
 
 ![Neues Schema erstellen](./images/createschemabutton.png)
 
@@ -112,7 +112,7 @@ Sobald **Schema** und **Datensatz** konfiguriert sind, können Sie jetzt Erlebni
 
 Die in dieser Übung für die Erlebnisereignisse vorbereiteten Daten müssen den Anforderungen und dem Schema der Feldergruppe [Consumer Experience Event XDM“ ](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
-Bitte laden Sie die ZIP-Datei mit Demodaten von diesem Speicherort herunter: [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
+Bitte laden Sie die ZIP-Datei mit Demodaten von diesem Speicherort herunter: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
 Sie haben jetzt eine Datei mit dem Namen &quot;**-CAI-EVENTS-WEB.zip“**. Platzieren Sie die Datei auf dem Desktop Ihres Computers und entpacken Sie sie. Danach wird ein Ordner mit dem Namen **CUSTOM-CAI-EVENTS-WEB** angezeigt.
 

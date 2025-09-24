@@ -4,9 +4,9 @@ description: AEM CS - Benutzerdefinierter Standardblock
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---
@@ -17,31 +17,31 @@ ht-degree: 2%
 
 Wechseln Sie zu [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, laden Sie (GitHub **) herunter und installieren Sie**.
 
-![Block](./images/block1.png){zoomable="yes"}
+![Block](./images/block1.png)
 
 Sobald GitHub Desktop installiert ist, wechseln Sie zum GitHub-Repository, das Sie in der vorherigen Übung erstellt haben. Klicken Sie auf **&lt;> Code** dann auf **Mit GitHub Desktop öffnen**.
 
-![Block](./images/block2.png){zoomable="yes"}
+![Block](./images/block2.png)
 
 Ihr GitHub-Repository wird dann in GitHub Desktop geöffnet. Sie können auch den **Lokaler Pfad** ändern. Klicken Sie **Klonen**.
 
-![Block](./images/block3.png){zoomable="yes"}
+![Block](./images/block3.png)
 
 Ein lokaler Ordner wird jetzt erstellt.
 
-![Block](./images/block4.png){zoomable="yes"}
+![Block](./images/block4.png)
 
 Öffnen Sie Visual Studio Code. Navigieren Sie **Datei** > **Ordner öffnen**.
 
-![Block](./images/block5.png){zoomable="yes"}
+![Block](./images/block5.png)
 
-Wählen Sie den Ordner aus, der von Ihrem GitHub-Setup für **Citisignal** verwendet wird.
+Wählen Sie den Ordner aus, der von Ihrem GitHub-Setup für &quot;**-aem-accs“ verwendet**.
 
-![Block](./images/block6.png){zoomable="yes"}
+![Block](./images/block6.png)
 
 Sie sehen nun, dass der Ordner in Visual Studio Code geöffnet ist und Sie nun bereit sind, einen neuen Block zu erstellen.
 
-![Block](./images/block7.png){zoomable="yes"}
+![Block](./images/block7.png)
 
 ## 1.1.3.2 Erstellen eines einfachen benutzerdefinierten Blocks
 
@@ -55,11 +55,11 @@ Adobe empfiehlt, Bausteine in einem dreistufigen Ansatz zu entwickeln:
 
 Öffnen Sie in Visual Studio Code die Datei **component-definition.json**.
 
-![Block](./images/block8.png){zoomable="yes"}
+![Block](./images/block8.png)
 
-Scrollen Sie nach unten, bis Sie die Komponente **Zitat** sehen. Setzen Sie den Cursor neben die schließende Klammer der letzten Komponente.
+Scrollen Sie nach unten, bis Sie die **Blöcke“**. Setzen Sie den Cursor unter die schließende Klammer der Komponente **Karten**
 
-![Block](./images/block9.png){zoomable="yes"}
+![Block](./images/block9.png)
 
 Fügen Sie diesen Code ein und geben Sie **nach dem Codeblock ein** ein:
 
@@ -86,17 +86,17 @@ Fügen Sie diesen Code ein und geben Sie **nach dem Codeblock ein** ein:
 
 Speichern Sie Ihre Änderungen.
 
-![Block](./images/block10.png){zoomable="yes"}
+![Block](./images/block10.png)
 
 ### component-models.json
 
 Öffnen Sie in Visual Studio Code die Datei **component-models.json**.
 
-![Block](./images/block11.png){zoomable="yes"}
+![Block](./images/block11.png)
 
 Scrollen Sie nach unten, bis Sie das letzte Element sehen. Setzen Sie den Cursor neben die schließende Klammer der letzten Komponente.
 
-![Block](./images/block12.png){zoomable="yes"}
+![Block](./images/block12.png)
 
 Geben Sie einen **ein,** drücken Sie dann die Eingabetaste, und fügen Sie in der nächsten Zeile diesen Code ein:
 
@@ -131,19 +131,19 @@ Geben Sie einen **ein,** drücken Sie dann die Eingabetaste, und fügen Sie in d
 
 Speichern Sie Ihre Änderungen.
 
-![Block](./images/block13.png){zoomable="yes"}
+![Block](./images/block13.png)
 
 ### component-filters.json
 
 Öffnen Sie in Visual Studio Code die Datei **component-filters.json**.
 
-![Block](./images/block14.png){zoomable="yes"}
+![Block](./images/block14.png)
 
-Geben **unter** Abschnitt“ einen **,** und die ID Ihrer Komponente **Fiberoffer** nach der aktuellen letzten Zeile ein.
+Geben **unter** Abschnitt“ einen `,` ein und fügen Sie die ID Ihrer `"fiberoffer"` nach der aktuellen letzten Zeile ein.
 
 Speichern Sie Ihre Änderungen.
 
-![Block](./images/block15.png){zoomable="yes"}
+![Block](./images/block15.png)
 
 ## 1.1.3.3 Übertragen Sie Ihre Änderungen
 
@@ -151,23 +151,23 @@ Sie haben jetzt mehrere Änderungen an Ihrem Projekt vorgenommen, die wieder in 
 
 Anschließend sollten die 3 Dateien angezeigt werden, die Sie gerade unter &quot;**&quot; bearbeitet**. Überprüfen Sie Ihre Änderungen.
 
-![Block](./images/block16.png){zoomable="yes"}
+![Block](./images/block16.png)
 
 Geben Sie einen Namen für Ihren PR ein, `Fiber Offer custom block`. Klicken Sie **Auf Haupt übertragen**.
 
-![Block](./images/block17.png){zoomable="yes"}
+![Block](./images/block17.png)
 
 Sie sollten das dann sehen. Klicken Sie auf **Push-Herkunft**.
 
-![Block](./images/block18.png){zoomable="yes"}
+![Block](./images/block18.png)
 
 Nach einigen Sekunden wurden Ihre Änderungen an Ihr GitHub-Repository gepusht.
 
-![Block](./images/block19.png){zoomable="yes"}
+![Block](./images/block19.png)
 
 Navigieren Sie in Ihrem Browser zu Ihrem GitHub-Konto und zu dem Repository, das Sie für CitiSignal erstellt haben. Sie sollten dann etwas wie das hier sehen, das anzeigt, dass Ihre Änderungen empfangen wurden.
 
-![Block](./images/block20.png){zoomable="yes"}
+![Block](./images/block20.png)
 
 ## 1.1.3.4 Hinzufügen eines Blocks zu einer Seite
 
@@ -175,11 +175,11 @@ Nachdem Sie nun Ihren einfachen Zitatblock definiert und an das CitiSignal-Proje
 
 Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Klicken Sie auf **Programm**, um es zu öffnen.
 
-![AEMCS](./images/aemcs6.png){zoomable="yes"}
+![AEMCS](./images/aemcs6.png)
 
 Klicken Sie anschließend auf der Registerkarte **Umgebungen** auf die **mit den drei Punkten** und anschließend auf **Details anzeigen**.
 
-![AEMCS](./images/aemcs9.png){zoomable="yes"}
+![AEMCS](./images/aemcs9.png)
 
 Anschließend werden Ihre Umgebungsdetails angezeigt. Klicken Sie auf die URL Ihrer **Author**-Umgebung.
 
@@ -187,89 +187,97 @@ Anschließend werden Ihre Umgebungsdetails angezeigt. Klicken Sie auf die URL Ih
 >
 >Möglicherweise befindet sich Ihre Umgebung im Ruhezustand. In diesem Fall müssen Sie zunächst den Ruhezustand Ihrer Umgebung aufheben.
 
-![AEMCS](./images/aemcs10.png){zoomable="yes"}
+![AEMCS](./images/aemcs10.png)
 
 Anschließend sollte Ihre AEM-Autorenumgebung angezeigt werden. Navigieren Sie zu **Sites**.
 
-![AEMCS](./images/block21.png){zoomable="yes"}
+![AEMCS](./images/block21.png)
 
-Gehen Sie **CitiSignal** > **us** > **en**.
+Gehen Sie zu **CitiSignal**. Klicken Sie **Erstellen** und wählen Sie **Seite** aus.
 
-![AEMCS](./images/block22.png){zoomable="yes"}
-
-Klicken Sie **Erstellen** und wählen Sie **Seite** aus.
-
-![AEMCS](./images/block23.png){zoomable="yes"}
+![AEMCS](./images/block23.png)
 
 Wählen Sie **Seite** aus und klicken Sie auf **Weiter**.
 
-![AEMCS](./images/block24.png){zoomable="yes"}
+![AEMCS](./images/block24.png)
 
 Geben Sie die folgenden Werte ein:
 
-- Titel: **CitiSignal Fibre**
-- Name: **citsignal-fiber**
-- Seitentitel: **CitiSignal Fibre**
+- Titel: **Faser**
+- Name: **fiber**
+- Seitentitel: **Faser**
 
 Klicken Sie auf **Erstellen**.
 
-![AEMCS](./images/block25.png){zoomable="yes"}
+![AEMCS](./images/block25.png)
+
+Wählen Sie **Öffnen** aus.
+
+![AEMCS](./images/block22.png)
 
 Sie sollten das dann sehen.
 
-![AEMCS](./images/block26.png){zoomable="yes"}
+![AEMCS](./images/block26.png)
 
 Klicken Sie in den leeren Bereich, um die Komponente **Abschnitt** auszuwählen. Klicken Sie dann im rechten Menü auf das Pluszeichen **+**.
 
-![AEMCS](./images/block27.png){zoomable="yes"}
+![AEMCS](./images/block27.png)
 
 Anschließend sollte der benutzerdefinierte Block in der Liste der verfügbaren Blöcke angezeigt werden. Zur Auswahl klicken.
 
-![AEMCS](./images/block28.png){zoomable="yes"}
+![AEMCS](./images/block28.png)
 
 CTA Anschließend werden Felder wie **Angebotstext**, **Angebotsbild** und **Angebotsbild** zum Editor hinzugefügt. Klicken Sie im Feld **Angebotsbild** auf **+ Hinzufügen**, um ein Bild auszuwählen.
 
-![AEMCS](./images/block29.png){zoomable="yes"}
+![AEMCS](./images/block29.png)
 
 Sie sollten das dann sehen. Klicken, um den Ordner **Citisignal** zu öffnen.
 
-![AEMCS](./images/blockpub1.png){zoomable="yes"}
+![AEMCS](./images/blockpub1.png)
 
 Wählen Sie das Bild **product-enrichment-1.png** aus. Klicken Sie auf **Auswählen**.
 
-![AEMCS](./images/blockpub2.png){zoomable="yes"}
+![AEMCS](./images/blockpub2.png)
 
 Sie sollten dann diese haben. Klicken Sie auf **Veröffentlichen**.
 
-![AEMCS](./images/blockpub3.png){zoomable="yes"}
+![AEMCS](./images/blockpub3.png)
 
 Klicken **erneut auf** Veröffentlichen“.
 
-![AEMCS](./images/blockpub4.png){zoomable="yes"}
+![AEMCS](./images/blockpub4.png)
 
 Ihre neue Seite wurde jetzt veröffentlicht.
 
 ## 1.1.3.5 Hinzufügen einer neuen Seite zum Navigationsmenü
 
-AEM Sites Gehen Sie in der Übersicht zu **CitiSignal** > **Fragments** und aktivieren Sie das Kontrollkästchen für **Header**. Klicken Sie auf **Bearbeiten**.
+Gehen Sie in Ihrer AEM Sites-Übersicht zu **CitiSignal** und aktivieren Sie das Kontrollkästchen für die Datei **Header/nav**. Klicken Sie auf **Bearbeiten**.
 
-![AEMCS](./images/nav0.png){zoomable="yes"}
+![AEMCS](./images/nav0.png)
+
+Wählen Sie das **Text**-Feld im Vorschaubildschirm aus und klicken Sie dann auf das **Text**-Feld auf der rechten Bildschirmseite, um es zu bearbeiten.
+
+![AEMCS](./images/nav0a.png)
 
 Fügen Sie eine Menüoption zum Navigationsmenü mit dem `Fiber` hinzu. Wählen Sie den Text **Faser** und klicken Sie auf das **link**-Symbol.
 
-![AEMCS](./images/nav1.png){zoomable="yes"}
+![AEMCS](./images/nav1.png)
 
-Geben Sie dies für die **&#x200B;**&#x200B;URL`/us/en/citisignal-fiber` ein und klicken Sie zum Bestätigen auf das Symbol **V** .
+Geben Sie dies für die **** URL`/content/CitiSignal/fiber.html` ein und klicken Sie zum Bestätigen auf das Symbol **V** .
 
-![AEMCS](./images/nav3.png){zoomable="yes"}
+![AEMCS](./images/nav3.png)
+
+Sie sollten dann diese haben. Klicken Sie auf **Fertig**.
+
+![AEMCS](./images/nav4.png)
 
 Sie sollten dann diese haben. Klicken Sie auf **Veröffentlichen**.
 
-![AEMCS](./images/nav4.png){zoomable="yes"}
+![AEMCS](./images/nav4a.png)
 
 Klicken **erneut auf** Veröffentlichen“.
 
-![AEMCS](./images/nav5.png){zoomable="yes"}
+![AEMCS](./images/nav5.png)
 
 Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal--XXX.aem.page/us/en/` und/oder `main--citisignal--XXX.aem.live/us/en/` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
 
@@ -278,13 +286,13 @@ In diesem Beispiel lautet die vollständige URL wie folgt:
 
 Sie sollten das dann sehen. Klicken Sie auf **Faser**.
 
-![AEMCS](./images/nav6.png){zoomable="yes"}
+![AEMCS](./images/nav6.png)
 
 Hier finden Sie Ihren grundlegenden benutzerdefinierten Block, der jetzt auf der Website gerendert wird.
 
-![AEMCS](./images/nav7.png){zoomable="yes"}
+![AEMCS](./images/nav7.png)
 
-Nächster Schritt: [Erweiterter benutzerdefinierter Block](./ex5.md){target="_blank"}
+Nächster Schritt: [Erweiterter benutzerdefinierter Block](./ex4.md){target="_blank"}
 
 Zurück zu [Adobe Experience Manager Cloud Service und Edge Delivery Services](./aemcs.md){target="_blank"}
 

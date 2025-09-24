@@ -3,10 +3,10 @@ title: Inhaltsstatus
 description: Inhaltsstatus
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: 47d036564be9c009e26903b20778e61fd1c78635
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 14%
+source-wordcount: '473'
+ht-degree: 15%
 
 ---
 
@@ -45,7 +45,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | ---------------------- | ------------ | ------------ |------------ |
 | [1.1 Adobe Experience Manager Cloud Service und Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | Ja | – |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | Ja | – |
-| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 19/09/2025 | Ja | – |
+| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 23/09/2025 | Ja | – |
 
 ## &#x200B;4. Versand und Aktivierung
 
@@ -82,8 +82,8 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 
 | Name | Letzte Aktualisierung | 100 % arbeiten | Bemerkungen          |
 | ---------------------- | ------------ | ------------ |------------ |
-| [1.1 Agentische KI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | NEIN | – |
-| [1.2 Agentische KI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | NEIN | – |
+| [1.1 Agentische KI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | Nein | In Bearbeitung |
+| [1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md){target="_blank"} | 23/09/2025 | Nein | In Bearbeitung |
 
 {style="table-layout:auto"}
 
