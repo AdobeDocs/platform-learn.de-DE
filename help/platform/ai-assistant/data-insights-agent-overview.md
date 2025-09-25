@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Übersicht über Data Insights Agent
 
-Data Insight Agent greift auf Ereignis-, Profil-, Journey- und Offline-Daten zu, vereinfacht die Erkennung und ermöglicht sofort personalisierte Dashboards. Weitere Informationen finden Sie in der Dokumentation zu [Data Insights Agent](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai).
+Data Insight Agent greift auf Ereignis-, Profil-, Journey- und Offline-Daten zu, vereinfacht die Erkennung und ermöglicht sofort personalisierte Dashboards. Weitere Informationen finden Sie in der Dokumentation zu [Data Insights Agent](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai).
 
 >[!SLIDE](data-insights-agent-overview)
