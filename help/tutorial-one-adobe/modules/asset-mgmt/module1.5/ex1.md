@@ -223,7 +223,7 @@ Geben Sie den Wert `Space-Black` ein. Klicken Sie **Alle auswählen**
 
 ![AEM Assets](./images/accs39.png)
 
-Wählen Sie alle drei Optionen unter **** aus und klicken Sie auf **Weiter**.
+Wählen Sie alle drei Optionen unter **&#x200B;**&#x200B;aus und klicken Sie auf **Weiter**.
 
 ![AEM Assets](./images/accs40.png)
 
