@@ -3,9 +3,10 @@ title: Verbinden von ACS mit der AEM Sites CS/EDS-Storefront
 description: Verbinden von ACS mit der AEM Sites CS/EDS-Storefront
 kt: 5342
 doc-type: tutorial
-source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
+exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -75,6 +76,11 @@ Klicken Sie **Änderungen übernehmen**.
 ![ACCS+AEM Sites](./images/accsaemsites10.png)
 
 Die **config.json** wurde jetzt aktualisiert. Sie sollten Ihre Änderungen innerhalb weniger Minuten auf der Website sehen. Die Möglichkeit, zu überprüfen, ob die Änderungen erfolgreich erfasst wurden, besteht darin, zur Produktseite **Telefone** zu wechseln. Auf der Seite sollte nun **iPhone Air** angezeigt werden.
+
+Um auf Ihre Website zuzugreifen, müssen Sie zu `main--citisignal-aem-accs--XXX.aem.page` und/oder `main--citisignal-aem-accs--XXX.aem.live` gehen, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
+
+In diesem Beispiel lautet die vollständige URL wie folgt:
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` und/oder `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 

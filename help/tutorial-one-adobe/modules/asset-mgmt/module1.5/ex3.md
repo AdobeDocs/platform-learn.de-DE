@@ -3,9 +3,10 @@ title: Verbinden von ACS mit AEM Assets CS
 description: Verbinden von ACS mit AEM Assets CS
 kt: 5342
 doc-type: tutorial
-source-git-commit: 58448049d54ee6124985159577df0e307896a312
+exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -90,7 +91,9 @@ Stellen Sie sicher, dass das Verzeichnis leer ist.
 
 ![ACCS+AEM Assets](./images/accsaemassets15.png)
 
-Navigieren Sie zu [https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce).
+Navigieren Sie zu [https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce). Klicken Sie auf **&lt;> Code** und wählen Sie dann **ZIP herunterladen**. Laden Sie die Datei herunter und legen Sie sie dann auf Ihrem Desktop ab.
+
+![ACCS+AEM Assets](./images/accsaemassets15a.png)
 
 Kopieren Sie als Nächstes die Datei **assets-commerce-main.zip** auf Ihren Desktop und entpacken Sie sie. Öffnen Sie den Ordner **assets-commerce-main**.
 

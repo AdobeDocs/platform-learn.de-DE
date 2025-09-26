@@ -3,10 +3,11 @@ title: Erste Schritte mit Adobe Commerce as a Cloud Service
 description: Erste Schritte mit Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -181,7 +182,7 @@ Konfigurieren Sie die zweite Option mit dem in allen 3 Spalten `512GB` Namen und
 
 ![AEM Assets](./images/accs30.png)
 
-Konfigurieren Sie die dritte Option mit dem in allen 3 Spalten `1TB` Namen und klicken Sie dann erneut **Option hinzufügen**.
+Konfigurieren Sie die dritte Option mit dem `1TB` in allen 3 Spalten.
 
 ![AEM Assets](./images/accs31.png)
 
@@ -222,7 +223,7 @@ Geben Sie den Wert `Space-Black` ein. Klicken Sie **Alle auswählen**
 
 ![AEM Assets](./images/accs39.png)
 
-Wählen Sie alle drei Optionen unter **&#x200B;**&#x200B;aus und klicken Sie auf **Weiter**.
+Wählen Sie alle drei Optionen unter **** aus und klicken Sie auf **Weiter**.
 
 ![AEM Assets](./images/accs40.png)
 
@@ -234,7 +235,7 @@ Sie sollten das dann sehen. Klicken Sie **Produkte generieren**.
 
 ![AEM Assets](./images/accs42.png)
 
-Klicken Sie auf **Speichern**.
+Stellen Sie **Menge** jedes Produkts auf `10000` ein. Klicken Sie auf **Speichern**.
 
 ![AEM Assets](./images/accs43.png)
 
@@ -255,7 +256,6 @@ Sie sollten das dann sehen. Klicken Sie auf **Zurück**.
 Jetzt sehen Sie das Produkt **iPhone Air** und seine Varianten im Produktkatalog.
 
 ![AEM Assets](./images/accs47.png)
-
 
 Nächster Schritt: [Verbinden von ACCS mit der AEM Sites CS/EDS-Storefront](./ex2.md){target="_blank"}
 
