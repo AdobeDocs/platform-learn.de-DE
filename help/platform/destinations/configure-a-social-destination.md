@@ -21,5 +21,5 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie Zielgruppen mit einem Social-Media-Ziel verbinden und aktivieren können. In diesem Video wird der Workflow unter Verwendung eines Ziels für abgeglichene LinkedIn-Zielgruppen in Adobe Real-Time Customer Data Platform veranschaulicht.  Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/social/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475120/?learn=on&enablevpops&captions=ger)
 

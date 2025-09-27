@@ -18,4 +18,4 @@ ht-degree: 6%
 
 Erfahren Sie, wie Sie Daten aus mehreren Datensätzen bereinigen, vorbereiten und kombinieren können, um einen neuen Datensatz mit CTAS- (Create Table AS) und Spark SQL-Funktionen für das Reporting und Dashboard zu erstellen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475299?learn=on&enablevpops&captions=ger)

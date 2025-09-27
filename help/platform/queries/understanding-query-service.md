@@ -221,7 +221,7 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="Daten vorbereiten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1740415313086" alt="Daten vorbereiten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475299?format=jpeg&nocache=1740415313086&captions=ger" alt="Daten vorbereiten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
