@@ -7,105 +7,35 @@ level: Beginner
 jira: KT-3139
 last-substantial-update: 2025-06-23T00:00:00Z
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
-source-git-commit: b0466e114d657c2584b23bfd76e4f6c185c83c06
+source-git-commit: c21e15b0cac5e97cf2234a951b54d5a66aff9810
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 17%
+source-wordcount: '467'
+ht-degree: 10%
 
 ---
 
 # Übersicht über Query Service und Data Distiller
 
-Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundenerlebnisdaten, die im Data Lake gespeichert sind, mithilfe von SQL untersuchen, validieren und transformieren, wobei erweiterte Funktionen wie Datenausgabe und Planung über das Add-on Data Distiller verfügbar sind. In diesem Video erhalten Sie einen Überblick über die Kernfunktionen, die Benutzern dabei helfen, die Verwendung des Abfrage-Service in verschiedenen Platform-basierten Anwendungen zu verstehen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home).
+Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundenerlebnisdaten, die im Data Lake gespeichert sind, mithilfe von SQL untersuchen, validieren und transformieren, wobei erweiterte Funktionen wie Datenausgabe und Planung über das Add-on Data Distiller verfügbar sind. In diesem Video erhalten Sie einen Überblick über die Kernfunktionen, die Benutzern dabei helfen, die Verwendung des Abfrage-Service in verschiedenen Platform-basierten Anwendungen zu verstehen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/32948?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Grundlegende Verwendung
 
 <!-- CARDS
-* query-service-ui.md
-* query-service-api.md
-* adobe-defined-functions.md
 * run-queries.md
-* understanding-data-usage-patterns-with-query-service.md
+* explore-data.md
+* prepare-data.md
+
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Query Service UI">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="query-service-ui.md" title="Benutzeroberfläche von Query Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333403?format=jpeg&nocache=1740415310696" alt="Benutzeroberfläche von Query Service"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="query-service-ui.md" target="_blank" rel="referrer" title="Benutzeroberfläche von Query Service">Benutzeroberfläche des Abfrage-Service</a>
-                    </p>
-                    <p class="is-size-6">Erfahren Sie, wie Sie Abfragen schreiben und ausführen, zuvor ausgeführte Abfragen anzeigen und auf Abfragen zugreifen können, die von anderen Benutzern in Ihrer IMS-Organisation im Abfrage-Service von Adobe Experience Platform gespeichert wurden.</p>
-                </div>
-                <a href="query-service-ui.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Query Service API">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="query-service-api.md" title="Abfrage-Service-API" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333700?format=jpeg&nocache=1740415310716" alt="Abfrage-Service-API"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="query-service-api.md" target="_blank" rel="referrer" title="Abfrage-Service-API">Query Service-API</a>
-                    </p>
-                    <p class="is-size-6">Erfahren Sie, wie Sie Abfragen schreiben und ausführen, planen Sie Abfragen und erstellen Sie eine Abfragevorlage mit der Adobe Experience Platform Query Service-API.</p>
-                </div>
-                <a href="query-service-api.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Adobe Defined Functions">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="adobe-defined-functions.md" title="In Adobe definierte Funktionen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333701?format=jpeg&nocache=1740415310668" alt="In Adobe definierte Funktionen"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="adobe-defined-functions.md" target="_blank" rel="referrer" title="In Adobe definierte Funktionen">Adobe-definierte Funktionen</a>
-                    </p>
-                    <p class="is-size-6">Erfahren Sie, wie Sie in Adobe Experience Platform Query Service mithilfe von Adobe-definierten Funktionen gängige geschäftsbezogene Aufgaben auf Daten zu Erlebnisereignissen ausführen können.</p>
-                </div>
-                <a href="adobe-defined-functions.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
-                </a>
-            </div>
-        </div>
-    </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Run Queries with Query Service">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="Ausführen von Abfragen mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33392?format=jpeg&nocache=1740415310683&captions=ger" alt="Ausführen von Abfragen mit dem Abfrage-Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="Ausführen von Abfragen mit dem Abfrage-Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -115,7 +45,7 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="run-queries.md" target="_blank" rel="referrer" title="Ausführen von Abfragen mit dem Abfrage-Service">Ausführen von Abfragen mit dem Abfrage-Service</a>
                     </p>
-                    <p class="is-size-6">In diesem Video wird gezeigt, wie Abfragen in der Adobe Experience Platform-Benutzeroberfläche und in einem PSQL-Client ausgeführt werden. Darüber hinaus wird die Verwendung einzelner Eigenschaften in einem XDM-Objekt, die Verwendung von Adobe-definierten Funktionen und die Verwendung von CREATE TABLE AS SELECT (CTAS) demonstriert.</p>
+                    <p class="is-size-6">Erfahren Sie, wie Sie mit dem Abfrage-Editor von Adobe Experience Platform SQL-Abfragen effizient erstellen, ausführen und verwalten können. Betrachterinnen und Betrachter erfahren, wie Sie Funktionen wie den Objektbrowser, automatische Vervollständigung, parametrisierte Abfragen und Planungs-Tools verwenden können, um Daten-Workflows zu optimieren und in ihrer gesamten Organisation umsetzbare Einblicke zu generieren.</p>
                 </div>
                 <a href="run-queries.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
@@ -123,12 +53,12 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Understanding Data Usage Patterns with Query Service">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Validate data with Query Service">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="understanding-data-usage-patterns-with-query-service.md" title="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32951?format=jpeg&nocache=1740415310706&captions=ger" alt="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service"
+                    <a href="explore-data.md" title="Validieren von Daten mit dem Abfrage-Service" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="Validieren von Daten mit dem Abfrage-Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -136,44 +66,9 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="understanding-data-usage-patterns-with-query-service.md" target="_blank" rel="referrer" title="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service">Verstehen von Datennutzungsmustern mit dem Abfrage-Service</a>
+                        <a href="explore-data.md" target="_blank" rel="referrer" title="Validieren von Daten mit dem Abfrage-Service">Validieren von Daten mit dem Abfrage-Service</a>
                     </p>
-                    <p class="is-size-6">In diesem Video werden Tipps und Best Practices zum Ausführen von Abfragen in der Benutzeroberfläche des Abfrage-Editors, PSQL-Clients, Business Intelligence-Lösungen (BI) und der HTTP-API vorgestellt.</p>
-                </div>
-                <a href="understanding-data-usage-patterns-with-query-service.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-
-## Datenvalidierung und -exploration
-
-<!-- CARDS
-* explore-data.md
-* validate-data-in-the-datalake.md
-* 
--->
-<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
-<div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Explore data">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="explore-data.md" title="Daten erkunden" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1740415312087" alt="Daten erkunden"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="explore-data.md" target="_blank" rel="referrer" title="Daten erkunden">Erkunden von Daten</a>
-                    </p>
-                    <p class="is-size-6">Erfahren Sie, wie Sie erfasste Daten validieren, Daten in der Vorschau anzeigen und mithilfe von SQL-Funktionen statistische und analytische Eigenschaften von Daten untersuchen können.</p>
+                    <p class="is-size-6">Erfahren Sie, wie Sie aufgenommene Daten mithilfe von SQL-Funktionen validieren können.</p>
                 </div>
                 <a href="explore-data.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
@@ -181,12 +76,12 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Validate data in the datalake with Query Service">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Derive data with Data Distiller">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="validate-data-in-the-datalake.md" title="Validieren von Daten im Data Lake mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445686?format=jpeg&nocache=1740415312076&captions=ger" alt="Validieren von Daten im Data Lake mit dem Abfrage-Service"
+                    <a href="prepare-data.md" title="Ableiten von Daten mit Data Distiller" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="Ableiten von Daten mit Data Distiller"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -194,44 +89,9 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="validate-data-in-the-datalake.md" target="_blank" rel="referrer" title="Validieren von Daten im Data Lake mit dem Abfrage-Service">Validieren von Daten im Datalake mit dem Abfrage-Service</a>
+                        <a href="prepare-data.md" target="_blank" rel="referrer" title="Ableiten von Daten mit Data Distiller">Ableiten von Daten mit Data Distiller</a>
                     </p>
-                    <p class="is-size-6">Erfahren Sie, wie Sie mithilfe des Abfrage-Service von Adobe Experience Platform überprüfen können, ob Daten erfolgreich in den Datalake aufgenommen wurden.</p>
-                </div>
-                <a href="validate-data-in-the-datalake.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-
-## Datenumwandlung mit Data Distiller
-
-<!-- CARDS
-* 
-* prepare-data.md
-* 
--->
-<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
-<div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Prepare data">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="prepare-data.md" title="Daten vorbereiten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475299?format=jpeg&nocache=1740415313086&captions=ger" alt="Daten vorbereiten"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="prepare-data.md" target="_blank" rel="referrer" title="Daten vorbereiten">Vorbereiten von Daten</a>
-                    </p>
-                    <p class="is-size-6">Erfahren Sie, wie Sie Daten aus mehreren Datensätzen bereinigen, vorbereiten und kombinieren können, um einen neuen Datensatz mit CTAS- (Create Table AS) und Spark SQL-Funktionen für das Reporting und Dashboard zu erstellen.</p>
+                    <p class="is-size-6">Erfahren Sie, wie Dateningenieure den Abfrage-Service verwenden können, um Daten umzuwandeln und neue Datensätze auszugeben. Führen Sie diese Abfragen nach einem Zeitplan aus, um automatisierte Dashboards und die Segmentierung zu ermöglichen.</p>
                 </div>
                 <a href="prepare-data.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
@@ -242,45 +102,22 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## Anwendungsfälle
+
+## Datenvisualisierung in externen Tools
 
 <!-- CARDS
-* understanding-data-usage-patterns-with-query-service.md
 * psql-client-tableau.md
 * analyze-and-visualize.md
 * recharge-your-customer-data.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Understanding Data Usage Patterns with Query Service">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="understanding-data-usage-patterns-with-query-service.md" title="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32951?format=jpeg&nocache=1740415313190&captions=ger" alt="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="understanding-data-usage-patterns-with-query-service.md" target="_blank" rel="referrer" title="Grundlegendes zu Datennutzungsmustern mit dem Abfrage-Service">Verstehen von Datennutzungsmustern mit dem Abfrage-Service</a>
-                    </p>
-                    <p class="is-size-6">In diesem Video werden Tipps und Best Practices zum Ausführen von Abfragen in der Benutzeroberfläche des Abfrage-Editors, PSQL-Clients, Business Intelligence-Lösungen (BI) und der HTTP-API vorgestellt.</p>
-                </div>
-                <a href="understanding-data-usage-patterns-with-query-service.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
-                </a>
-            </div>
-        </div>
-    </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Connect Tableau to Query Service">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="psql-client-tableau.md" title="Verbinden von Tableau mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1740415313229" alt="Verbinden von Tableau mit dem Abfrage-Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1759180596876" alt="Verbinden von Tableau mit dem Abfrage-Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -303,7 +140,7 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="analyze-and-visualize.md" title="Analyse und Visualisierung von Omni-Channel-Einblicken in Tableau mithilfe von Query Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342115?format=jpeg&nocache=1740415313204" alt="Analyse und Visualisierung von Omni-Channel-Einblicken in Tableau mithilfe von Query Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342115?format=jpeg&nocache=1759180596850" alt="Analyse und Visualisierung von Omni-Channel-Einblicken in Tableau mithilfe von Query Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +163,7 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454955?format=jpeg&nocache=1740415313218&captions=ger" alt="Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
