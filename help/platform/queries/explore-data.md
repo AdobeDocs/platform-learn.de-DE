@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Validieren von Daten mit dem Abfrage-Service
 
-Erfahren Sie, wie Sie aufgenommene Daten mithilfe von SQL-Funktionen validieren können. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Erfahren Sie, wie Sie aufgenommene Daten mithilfe von SQL-Funktionen validieren können. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # In Adobe definierte Funktionen
 
-Erfahren Sie, wie Sie in Adobe Experience Platform Query Service mithilfe von Adobe-definierten Funktionen gängige geschäftsbezogene Aufgaben auf Daten zu Erlebnisereignissen ausführen können. Weitere Informationen finden Sie unter [Adobe-definierte SQL-Funktionen im Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions).
+Erfahren Sie, wie Sie in Adobe Experience Platform Query Service mithilfe von Adobe-definierten Funktionen gängige geschäftsbezogene Aufgaben auf Daten zu Erlebnisereignissen ausführen können. Weitere Informationen finden Sie unter [Adobe-definierte SQL-Funktionen im Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/sql/adobe-defined-functions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on&enablevpops)

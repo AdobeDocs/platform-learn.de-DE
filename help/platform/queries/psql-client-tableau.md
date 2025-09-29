@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Verbinden von Tableau mit dem Abfrage-Service
 
-Erfahren Sie, wie Sie eine Verbindung zum Abfrage-Service von einer Vielzahl von Desktop-Client-Anwendungen aus herstellen, die das PostgreSQL-Protokoll unterstützen, und wie Sie PostgreSQL-Tools und -Treiber verwenden können, um Abfragen zu verbinden und zu schreiben. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Erfahren Sie, wie Sie eine Verbindung zum Abfrage-Service von einer Vielzahl von Desktop-Client-Anwendungen aus herstellen, die das PostgreSQL-Protokoll unterstützen, und wie Sie PostgreSQL-Tools und -Treiber verwenden können, um Abfragen zu verbinden und zu schreiben. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333702?learn=on&enablevpops)
