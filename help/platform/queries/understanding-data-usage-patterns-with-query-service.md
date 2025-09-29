@@ -19,4 +19,4 @@ ht-degree: 0%
 
 In diesem Video werden Tipps und Best Practices zum Ausführen von Abfragen in der Benutzeroberfläche des Abfrage-Editors, PSQL-Clients, Business Intelligence-Lösungen (BI) und der HTTP-API vorgestellt. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32951?learn=on&enablevpops&captions=ger)

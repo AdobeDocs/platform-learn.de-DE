@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Dateningenieure den Abfrage-Service verwenden können, um Daten umzuwandeln und neue Datensätze auszugeben. Führen Sie diese Abfragen nach einem Zeitplan aus, um automatisierte Dashboards und die Segmentierung zu ermöglichen. Weitere Informationen finden Sie unter [Generieren von Ausgabedatensätzen aus Abfrageergebnissen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/create-datasets).
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475299?learn=on&enablevpops&captions=ger)

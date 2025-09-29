@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie mithilfe des Abfrage-Service von Adobe Experience Platform überprüfen können, ob Daten erfolgreich in den Datalake aufgenommen wurden. Eine ausführliche Produktdokumentation finden Sie im [Handbuch zur Benutzeroberfläche des Abfrage-Editors](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445686?learn=on&enablevpops&captions=ger)

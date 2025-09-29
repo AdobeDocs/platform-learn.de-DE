@@ -18,7 +18,7 @@ ht-degree: 10%
 
 Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundenerlebnisdaten, die im Data Lake gespeichert sind, mithilfe von SQL untersuchen, validieren und transformieren, wobei erweiterte Funktionen wie Datenausgabe und Planung über das Add-on Data Distiller verfügbar sind. In diesem Video erhalten Sie einen Überblick über die Kernfunktionen, die Benutzern dabei helfen, die Verwendung des Abfrage-Service in verschiedenen Platform-basierten Anwendungen zu verstehen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464268?learn=on&enablevpops&captions=ger)
 
 ## Grundlegende Verwendung
 
@@ -35,7 +35,7 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="Ausführen von Abfragen mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="Ausführen von Abfragen mit dem Abfrage-Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33392?format=jpeg&nocache=1759180596408&captions=ger" alt="Ausführen von Abfragen mit dem Abfrage-Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +81,7 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="Ableiten von Daten mit Data Distiller" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="Ableiten von Daten mit Data Distiller"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475299?format=jpeg&nocache=1759180596403&captions=ger" alt="Ableiten von Daten mit Data Distiller"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454955?format=jpeg&nocache=1759180596865&captions=ger" alt="Laden Sie Ihre Kundendaten auf, um elektrisierende Erlebnisse bereitzustellen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
