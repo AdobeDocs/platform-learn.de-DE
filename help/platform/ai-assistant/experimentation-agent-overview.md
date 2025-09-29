@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Übersicht über den Experimentationsagenten
 
-Experimentierungs-Agent beschleunigt die digitale Optimierung mit Einblicken, geführter Einrichtung und automatisierter Analyse für Marketing-Experten, Analysten und Administratoren. Weitere Informationen finden Sie in der [Dokumentation zu Experimentbeschleunigern](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
+Experimentierungs-Agent beschleunigt die digitale Optimierung mit Einblicken, geführter Einrichtung und automatisierter Analyse für Marketing-Experten, Analysten und Administratoren. Weitere Informationen finden Sie in der [Dokumentation zu Experimentbeschleunigern](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
 
 >[!SLIDE](experimentation-agent-overview)

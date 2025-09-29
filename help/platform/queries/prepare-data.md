@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Ableiten von Daten mit Data Distiller
 
-Erfahren Sie, wie Dateningenieure den Abfrage-Service verwenden können, um Daten umzuwandeln und neue Datensätze auszugeben. Führen Sie diese Abfragen nach einem Zeitplan aus, um automatisierte Dashboards und die Segmentierung zu ermöglichen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Erfahren Sie, wie Dateningenieure den Abfrage-Service verwenden können, um Daten umzuwandeln und neue Datensätze auszugeben. Führen Sie diese Abfragen nach einem Zeitplan aus, um automatisierte Dashboards und die Segmentierung zu ermöglichen. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
