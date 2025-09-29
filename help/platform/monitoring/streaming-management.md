@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Die Dashboards zur Kapazitäts- und Streaming-Überwachung bieten Unternehmen Transparenz und Kontrolle über die Plattformnutzung. Sie helfen bei der Zuweisung von Durchsatz, der Erkennung von Spitzen oder unzureichender Nutzung und bieten Echtzeiteinblicke in die Leistung, was proaktive Entscheidungen und Warnhinweise ermöglicht, um Überlastungen zu verhindern und sicherzustellen, dass kritische Services stabil bleiben.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475272/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475282/?learn=on&enablevpops&captions=ger)
