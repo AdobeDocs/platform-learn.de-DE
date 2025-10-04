@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie aufgenommene Daten mithilfe von SQL-Funktionen validieren können. Weitere Informationen finden Sie in der [Dokumentation zum Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475332?learn=on&enablevpops&captions=ger)

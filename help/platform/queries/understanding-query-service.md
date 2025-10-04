@@ -58,7 +58,7 @@ Mit dem Abfrage-Service von Adobe Experience Platform können Benutzende Kundene
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="Validieren von Daten mit dem Abfrage-Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="Validieren von Daten mit dem Abfrage-Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475332?format=jpeg&nocache=1759180596397&captions=ger" alt="Validieren von Daten mit dem Abfrage-Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
