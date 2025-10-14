@@ -21,7 +21,7 @@ Wechseln Sie zu [https://experience.adobe.com/launch/](https://experience.adobe.
 
 Wählen Sie oben rechts im Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` werden soll. Öffnen Sie Ihren spezifischen Datenstrom mit dem Namen `--aepUserLdap-- - Demo System Datastream`.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1b.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1b.png)
 
 Sie werden es dann sehen. Um Adobe Target zu aktivieren, klicken Sie auf **Service hinzufügen**.
 

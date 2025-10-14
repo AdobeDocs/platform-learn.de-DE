@@ -26,7 +26,7 @@ Dieses Tutorial konzentriert sich auf eine fiktive Einzelhandelsmarke namens Lum
 
 >[!NOTE]
 >
->Das Ergebnis dieses Tutorials ist eine Sandbox mit ähnlichen Daten wie das Tutorial [Erste Schritte mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de). Sie wurde im April 2023 aktualisiert, um die [Journey Optimizer-Herausforderungen zu ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de). Sie wurde im Juni 2023 aktualisiert, um die Authentifizierungsmethode auf OAuth umzustellen.
+>Das Ergebnis dieses Tutorials ist eine Sandbox mit ähnlichen Daten wie das Tutorial [Erste Schritte mit Adobe Experience Platform für Datenarchitekten und Dateningenieure](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=de). Sie wurde im April 2023 aktualisiert, um die [Journey Optimizer-Herausforderungen zu &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=de). Sie wurde im Juni 2023 aktualisiert, um die Authentifizierungsmethode auf OAuth umzustellen.
 
 
 ## Voraussetzungen

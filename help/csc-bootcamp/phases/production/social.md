@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Unabhängig davon, ob Sie als Unternehmen versuchen, Ihre Zielgruppe zu erreichen, oder ob Sie nur eine Einzelperson sind, die Ihre Stimmung teilt, kann Adobe Express Ihnen dabei helfen, beeindruckende Social-Media-Bilder für jede Plattform zu erstellen. Wenn Ihnen die Ideen fehlen, dann erkunden Sie die Vorlagenbibliothek, um Ihre Kreativität zu fördern. Adobe Express enthält Tausende von professionell gestalteten Social-Media-Grafiken wie die folgenden Beispiele sowie kostenlose Bilder, Symbole und Grafiken, die Sie per Drag-and-Drop direkt auf Ihr Design ziehen können.
 
-- Navigieren Sie zum [Adobe Expreß ](https://www.adobe.com/express/create/social-media-graphic) und klicken Sie auf die Schaltfläche „Jetzt eine Social-Media-Grafik erstellen“, um zu beginnen.
+- Navigieren Sie zum [Adobe Expreß &#x200B;](https://www.adobe.com/express/create/social-media-graphic) und klicken Sie auf die Schaltfläche „Jetzt eine Social-Media-Grafik erstellen“, um zu beginnen.
 
 ![Adobe Expreß - Startseite](./images/prod-express-home.png)
 

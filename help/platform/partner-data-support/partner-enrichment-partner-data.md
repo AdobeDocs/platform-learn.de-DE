@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Hinzufügen von Partnerattributen zu Erstanbieterprofilen in [!DNL Real-Time CDP]
 
-Erfahren Sie, wie Sie Ihren Erstanbieterprofilen Partnerattribute hinzufügen können, um die Reichweite durch zusätzliche Kanäle in [!DNL Real-Time CDP] zu erweitern. Weitere Informationen finden Sie in der Dokumentation [Erstanbieterprofile mit von Partnern bereitgestellten Attributen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=de).
+Erfahren Sie, wie Sie Ihren Erstanbieterprofilen Partnerattribute hinzufügen können, um die Reichweite durch zusätzliche Kanäle in [!DNL Real-Time CDP] zu erweitern. Weitere Informationen finden Sie in der Dokumentation [Erstanbieterprofile mit von Partnern bereitgestellten Attributen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452468/?learn=on&enablevpops&captions=ger)

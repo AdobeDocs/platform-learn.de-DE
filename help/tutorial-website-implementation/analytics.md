@@ -128,7 +128,7 @@ Nachdem Sie eine Regel zum Senden eines Analytics-Beacons erstellt haben, sollte
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser.
 1. Klicken Sie auf das Debugger-Symbol ![Experience Cloud Debugger öffnen](images/analytics-debuggerIcon.png), um den **[!UICONTROL Adobe Experience Cloud-Debugger zu öffnen]**
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 

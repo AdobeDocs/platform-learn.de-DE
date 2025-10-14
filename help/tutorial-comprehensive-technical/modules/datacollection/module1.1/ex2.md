@@ -17,7 +17,7 @@ ht-degree: 1%
 
 In dieser Übung erstellen Sie einen **Datenstrom**. Ein **Datenstrom** teilt den Adobe Edge-Netzwerkservern mit, wohin die Daten gesendet werden sollen, nachdem sie von Web SDK erfasst wurden. Möchten Sie beispielsweise die Daten an Adobe Experience Platform senden? Adobe Analytics? Adobe Audience Manager? Adobe Target?
 
-Datenströme werden immer in der Experience Platform-Datenerfassungs-Benutzeroberfläche verwaltet und sind für das Experience Platform der Datenerfassung mit [Web SDK) ](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home). Selbst wenn Sie Web SDK mit einer Tag-Management-Lösung ohne Adobe implementieren, müssen Sie dennoch einen Datenstrom erstellen.
+Datenströme werden immer in der Experience Platform-Datenerfassungs-Benutzeroberfläche verwaltet und sind für das Experience Platform der Datenerfassung mit [Web SDK) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home). Selbst wenn Sie Web SDK mit einer Tag-Management-Lösung ohne Adobe implementieren, müssen Sie dennoch einen Datenstrom erstellen.
 
 In der nächsten Übung implementieren Sie die Web-SDK im Browser. Dann wird Ihnen klarer werden, wie die erfassten Daten aussehen. Für den Moment sagen wir dem Datenstrom nur, wohin er die Daten weiterleiten soll.
 
@@ -62,7 +62,7 @@ Für diesen Datenstrom…
 - Alle Profildaten werden standardmäßig im Datensatz erfasst **Demosystem - Profildatensatz für Website (Global v1.1)** (die native Aufnahme von Profildaten in Web SDK wird derzeit von Web SDK noch nicht unterstützt)
 - Wenn Sie den Anwendungsdienst **Offer decisioning** für diesen Datenstrom verwenden möchten, müssen Sie das Kontrollkästchen für das Offer decisioning aktivieren. (Dies ist Teil von [Modul 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
 - **Edge-**: ist standardmäßig aktiviert, d. h., dass qualifizierte Zielgruppen bei der Aufnahme von eingehendem Traffic am Edge ausgewertet werden
-- Wenn Sie „Personalisierungsziele[ verwenden möchten, aktivieren ](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/personalization/overview) das Kontrollkästchen für **Personalization-Ziele**.
+- Wenn Sie „Personalisierungsziele[&#x200B; verwenden möchten, aktivieren &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/personalization/overview) das Kontrollkästchen für **Personalization-Ziele**.
 - Wenn Sie die Funktionen von **Adobe Journey Optimizer** in diesem Datenstrom verwenden möchten, müssen Sie das Kontrollkästchen für **Adobe Journey Optimizer** aktivieren.
 
 

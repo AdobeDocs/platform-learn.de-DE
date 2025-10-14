@@ -440,7 +440,7 @@ Sie sollten jetzt über alle Tools verfügen, um Ihrer Geolocation-Funktion in d
 
 Im Abschnitt Journey Optimizer dieses Tutorials sehen Sie, dass Erlebnisereignisse zum Trigger von Journey verwendet werden können (siehe [Push-Benachrichtigung](journey-optimizer-inapp.md) und [In-App-Messaging](journey-optimizer-push.md) mit Journey Optimizer). Dies ist beispielsweise das übliche Beispiel für das Senden einer Push-Benachrichtigung an den App-Benutzer mit einer Produktwerbung, wenn dieser den Geofence eines physischen Geschäfts betritt.
 
-Diese Implementierung der Geolokalisierungsfunktion für Ihre App minimiert den Code. Der Places-Service, die Datenelemente und Regeln, die Sie in Ihrer Tag-Eigenschaft definiert haben, bieten den Großteil der Funktionalität. Alternativ können Sie dieselben Funktionen auch direkt in Ihrer App implementieren, indem Sie die [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)-API (weitere Informationen finden [ unter &quot;](events.md)„) mit einer XDM-Payload verwenden, die ein ausgefülltes `placeContext`-Objekt enthält.
+Diese Implementierung der Geolokalisierungsfunktion für Ihre App minimiert den Code. Der Places-Service, die Datenelemente und Regeln, die Sie in Ihrer Tag-Eigenschaft definiert haben, bieten den Großteil der Funktionalität. Alternativ können Sie dieselben Funktionen auch direkt in Ihrer App implementieren, indem Sie die [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)-API (weitere Informationen finden [&#x200B; unter &quot;](events.md)„) mit einer XDM-Payload verwenden, die ein ausgefülltes `placeContext`-Objekt enthält.
 
 >[!SUCCESS]
 >

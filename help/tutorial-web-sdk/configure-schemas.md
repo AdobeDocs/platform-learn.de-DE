@@ -56,7 +56,7 @@ Dies ist das Ziel des [Experience-Datenmodells](https://business.adobe.com/produ
 
 >[!NOTE]
 >
-> Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema zur Erfassung von Inhalten und Produkten, die von Kundinnen und Kunden auf der [Demo-Site von Luma) angesehen ](https://luma.enablementadobe.com/content/luma/us/en.html). Sie können diese Schritte zwar verwenden, um ein anderes Schema für Ihre eigenen Zwecke zu erstellen, es wird jedoch empfohlen, zunächst das Beispielschema zu erstellen, um mehr über die Funktionen des Schema-Editors zu erfahren.
+> Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema zur Erfassung von Inhalten und Produkten, die von Kundinnen und Kunden auf der [Demo-Site von Luma) angesehen &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html). Sie können diese Schritte zwar verwenden, um ein anderes Schema für Ihre eigenen Zwecke zu erstellen, es wird jedoch empfohlen, zunächst das Beispielschema zu erstellen, um mehr über die Funktionen des Schema-Editors zu erfahren.
 
 Weitere Informationen zu XDM-Schemata finden Sie in der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/de/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oder in der [XDM-Systemübersicht](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home).
 
@@ -107,7 +107,7 @@ In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen grundlegenden 
 
 ## Feldergruppen hinzufügen
 
-Wie bereits erwähnt, ist XDM das zentrale Framework, das Kundenerlebnisdaten standardisiert, indem gemeinsame Strukturen und Definitionen für nachgelagerte Adobe Experience Platform-Services bereitgestellt werden. Durch die Einhaltung von XDM-Standards _alle Kundenerlebnisdaten_ in eine gemeinsame Darstellung integriert werden. Mit diesem Ansatz können Sie wertvolle Einblicke aus Kundenaktionen gewinnen, Zielgruppen mithilfe von Segmenten definieren und Kundenattribute für Personalisierungszwecke mithilfe von Daten aus verschiedenen Quellen ausdrücken. Weitere Informationen finden [ unter „Best Practices ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/best-practices) Datenmodellierung“.
+Wie bereits erwähnt, ist XDM das zentrale Framework, das Kundenerlebnisdaten standardisiert, indem gemeinsame Strukturen und Definitionen für nachgelagerte Adobe Experience Platform-Services bereitgestellt werden. Durch die Einhaltung von XDM-Standards _alle Kundenerlebnisdaten_ in eine gemeinsame Darstellung integriert werden. Mit diesem Ansatz können Sie wertvolle Einblicke aus Kundenaktionen gewinnen, Zielgruppen mithilfe von Segmenten definieren und Kundenattribute für Personalisierungszwecke mithilfe von Daten aus verschiedenen Quellen ausdrücken. Weitere Informationen finden [&#x200B; unter „Best Practices &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/best-practices) Datenmodellierung“.
 
 Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein produktunabhängiges Modell und Namenskonventionen einzuhalten. Für alle unternehmensspezifischen Daten, die nicht zu den oben vordefinierten Feldergruppen passen, können Sie eine benutzerdefinierte Feldergruppe erstellen. Unter [Erstellen eines Schemas mit dem Schema-Editor](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#create) finden Sie detailliertere Schritte zu benutzerdefinierten Schemata.
 
@@ -147,7 +147,7 @@ Es ist ein unverzichtbares Objekt für jede Web-bezogene Datenerfassung, da es d
 
 >[!IMPORTANT]
 >
-> Es ist möglich, &quot;**[!UICONTROL &quot; für]** Schema zu aktivieren, bevor das Schema gespeichert wird. **Aktivieren Sie** jetzt nicht. Nachdem ein Schema für das Profil aktiviert wurde, kann es nicht mehr deaktiviert oder gelöscht werden, ohne dass die gesamte Sandbox zurückgesetzt wird. Felder können derzeit auch nicht aus Schemata entfernt werden, obwohl es möglich ist, Felder in der Benutzeroberfläche [ verwerfen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Auswirkungen sollten Sie später im Auge behalten, wenn Sie mit Ihren eigenen Daten in Ihrer Produktionsumgebung arbeiten.
+> Es ist möglich, &quot;**[!UICONTROL &quot; für]** Schema zu aktivieren, bevor das Schema gespeichert wird. **Aktivieren Sie** jetzt nicht. Nachdem ein Schema für das Profil aktiviert wurde, kann es nicht mehr deaktiviert oder gelöscht werden, ohne dass die gesamte Sandbox zurückgesetzt wird. Felder können derzeit auch nicht aus Schemata entfernt werden, obwohl es möglich ist, Felder in der Benutzeroberfläche [&#x200B; verwerfen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Auswirkungen sollten Sie später im Auge behalten, wenn Sie mit Ihren eigenen Daten in Ihrer Produktionsumgebung arbeiten.
 >
 >
 >Diese Einstellung wird in der Lektion [Einrichten von Experience Platform](setup-experience-platform.md) näher erläutert.

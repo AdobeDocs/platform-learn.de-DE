@@ -133,7 +133,7 @@ Anschließend sollte ein neues, identisches Bild angezeigt werden. Klicken Sie a
 
 >[!IMPORTANT]
 >
->Um diese Übung abzuschließen, benötigen Sie Zugriff auf eine funktionierende AEM Assets CS Author-Umgebung. Wenn Sie der Übung [Adobe Experience Manager Cloud Service und Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}, haben Sie Zugriff auf eine solche Umgebung.
+>Um diese Übung abzuschließen, benötigen Sie Zugriff auf eine funktionierende AEM Assets CS Author-Umgebung. Wenn Sie der Übung [Adobe Experience Manager Cloud Service und Edge Delivery Services &#x200B;](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}, haben Sie Zugriff auf eine solche Umgebung.
 
 Wechseln Sie zu **Assets** Wählen Sie im linken Menü Ihr AEM Assets CS-Repository aus, das `--aepUserLdap-- - CitiSignal dev` benannt werden soll. Gehen Sie dann zum Ordner **Citisignal**.
 

@@ -114,7 +114,7 @@ Wiederholen Sie diese Schritte für Staging- und Produktions-Datenströme, wenn 
 
 ## Weiterleiten von Daten von Platform Edge Network an eine Nicht-Adobe-Lösung
 
-In dieser Übung erfahren Sie, wie Sie ein Datenelement für die Ereignisweiterleitung einrichten, eine Regel für die Ereignisweiterleitung konfigurieren und mit dem Tool eines Drittanbieters namens „Webhook[site“ ](https://webhook.site/).
+In dieser Übung erfahren Sie, wie Sie ein Datenelement für die Ereignisweiterleitung einrichten, eine Regel für die Ereignisweiterleitung konfigurieren und mit dem Tool eines Drittanbieters namens „Webhook[site“ &#x200B;](https://webhook.site/).
 
 >[!NOTE]
 >
@@ -290,7 +290,7 @@ Erstellen Sie eine Bibliothek und erstellen Sie alle Änderungen an Ihrer Entwic
 
 Jetzt können Sie Ihre Ereignisweiterleitungseigenschaft mit dem Platform Debugger und Webhook.site überprüfen:
 
-1. Führen Sie die Schritte aus[ um die Tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Bibliothek auf der [Luma Demo-Site](https://luma.enablementadobe.com/content/luma/us/en/men.html) auf die Tag-Eigenschaft von Web SDK zu wechseln, der Sie Ihre Ereignisweiterleitungs-Eigenschaft im Datenstrom zugeordnet haben.
+1. Führen Sie die Schritte aus[&#x200B; um die Tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Bibliothek auf der [Luma Demo-Site](https://luma.enablementadobe.com/content/luma/us/en/men.html) auf die Tag-Eigenschaft von Web SDK zu wechseln, der Sie Ihre Ereignisweiterleitungs-Eigenschaft im Datenstrom zugeordnet haben.
 
 1. Bevor Sie die Seite neu laden, öffnen Sie im Experience Platform Debugger **[!UICONTROL Protokolle]** im linken Navigationsbereich
 

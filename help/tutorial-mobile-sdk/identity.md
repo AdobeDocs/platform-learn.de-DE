@@ -179,7 +179,7 @@ Sie möchten sowohl die Standardidentität (E-Mail) als auch die benutzerdefinie
 
 ## Entfernen einer Identität
 
-Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity)-API verwenden, um die Identität aus der gespeicherten Client-seitigen Identitätszuordnung zu entfernen. Die Identity-Erweiterung sendet die Kennung nicht mehr an die Edge Network. Bei Verwendung dieser API wird die Kennung nicht aus dem serverseitigen Identitätsdiagramm entfernt. Weitere [ zu Identitätsdiagrammen finden Sie ](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/identities/view-identity-graphs) „Anzeigen von Identitätsdiagrammen“.
+Sie können die [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity)-API verwenden, um die Identität aus der gespeicherten Client-seitigen Identitätszuordnung zu entfernen. Die Identity-Erweiterung sendet die Kennung nicht mehr an die Edge Network. Bei Verwendung dieser API wird die Kennung nicht aus dem serverseitigen Identitätsdiagramm entfernt. Weitere [&#x200B; zu Identitätsdiagrammen finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/identities/view-identity-graphs) „Anzeigen von Identitätsdiagrammen“.
 
 
 >[!BEGINTABS]
@@ -233,7 +233,7 @@ MobileSDK.shared.removeIdentities(
 1. Lesen Sie den Abschnitt [Setup-Anweisungen](assurance.md#connecting-to-a-session), um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 1. In der Luma-App
    1. Wählen Sie die **[!UICONTROL Startseite]** und verschieben Sie das Assurance-Symbol nach links.
-   1. Wählen Sie oben ![ das Symbol ](/help/assets/icons/User.svg)Benutzer“ aus.
+   1. Wählen Sie oben ![&#x200B; das Symbol &#x200B;](/help/assets/icons/User.svg)Benutzer“ aus.
 
 >[!BEGINTABS]
 

@@ -15,6 +15,6 @@ ht-degree: 1%
 
 # Übersicht über die Adobe Experience Platform Edge Network-Server-API
 
-Erfahren Sie mehr über die Vorteile der Übermittlung von Daten an Platform Edge Network über eine sichere, authentifizierte Server-API. Weitere Informationen finden Sie in der [ zur Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=de).
+Erfahren Sie mehr über die Vorteile der Übermittlung von Daten an Platform Edge Network über eine sichere, authentifizierte Server-API. Weitere Informationen finden Sie in der [&#x200B; zur Server-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409525?learn=on&enablevpops&captions=ger)

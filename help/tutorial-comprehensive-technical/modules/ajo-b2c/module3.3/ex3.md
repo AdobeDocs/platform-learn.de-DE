@@ -23,7 +23,7 @@ Navigieren Sie dazu zu [https://experience.adobe.com/#/data-collection/](https:/
 
 Wählen Sie oben rechts im Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` werden soll.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1b.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1b.png)
 
 Suchen Sie nach Ihrem **Datenstrom**, der `--aepUserLdap-- - Demo System Datastream` heißt. Klicken Sie auf **Datenstrom**, um ihn zu öffnen.
 

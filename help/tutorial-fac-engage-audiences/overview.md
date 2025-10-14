@@ -55,6 +55,6 @@ Um ähnliche Aktivitäten in Ihrer Umgebung durchzuführen, müssen Sie Folgende
 - Zugriff auf ein unterstütztes [Enterprise Data Warehouse](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 - Grundlegende Kenntnisse von SQL für die Abfrage von Data Warehouses.
 - **Sandbox-Umgebungen**: Erstellen Sie eine Sandbox in der Instanz Ihrer Organisation, um sicher zu experimentieren, ohne die Produktionsdaten zu beeinflussen.
-- **Data Warehouse-Verbindung**: In diesem Tutorial wird eine Snowflake-Verbindung verwendet, Sie können jedoch jedes [unterstützte Data Warehouse“ ](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/start/access-prerequisites).
+- **Data Warehouse-Verbindung**: In diesem Tutorial wird eine Snowflake-Verbindung verwendet, Sie können jedoch jedes [unterstützte Data Warehouse“ &#x200B;](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/start/access-prerequisites).
 
-Sehen wir uns zunächst die [Hochrangige Architektur und Fluss für Federated Audience-Komposition“ ](fac-architecture-and-flow.md).
+Sehen wir uns zunächst die [Hochrangige Architektur und Fluss für Federated Audience-Komposition“ &#x200B;](fac-architecture-and-flow.md).

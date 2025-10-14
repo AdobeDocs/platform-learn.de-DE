@@ -71,7 +71,7 @@ Obwohl FPIDs in diesem Tutorial nicht verwendet werden, wird empfohlen, FPIDs in
 
 Wie bereits erwähnt, wird allen Besuchern Ihrer digitalen Objekte bei der Verwendung von Platform Web SDK von Adobe eine ECID zugewiesen. ECID ist die Standardidentität zum Tracking von nicht authentifiziertem digitalem Verhalten.
 
-Sie können auch eine authentifizierte Benutzer-ID senden, damit Platform [Identitätsdiagramme) erstellen ](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) Target seine [Drittanbieter-ID](https://experienceleague.adobe.com/de/docs/target/using/audiences/visitor-profiles/3rd-party-id) festlegen kann. Das Festlegen der authentifizierten ID erfolgt mithilfe des Datenelementtyps [!UICONTROL Identitätszuordnung].
+Sie können auch eine authentifizierte Benutzer-ID senden, damit Platform [Identitätsdiagramme) erstellen &#x200B;](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) Target seine [Drittanbieter-ID](https://experienceleague.adobe.com/de/docs/target/using/audiences/visitor-profiles/3rd-party-id) festlegen kann. Das Festlegen der authentifizierten ID erfolgt mithilfe des Datenelementtyps [!UICONTROL Identitätszuordnung].
 
 So erstellen Sie [!UICONTROL &#x200B; Datenelement &#x200B;]Identitätszuordnung“:
 

@@ -77,7 +77,7 @@ Nach Abschluss wird ein neuer Eintrag für **Datensatz erstellt** angezeigt (mö
 
 Sobald Ihr Datensatz erstellt wurde (was 5-10 Minuten dauern kann), können Sie mit der Übung fortfahren.
 
-Nächster Schritt - Option A: [5.1.6 Query Service und Power BI ](./ex6.md)
+Nächster Schritt - Option A: [5.1.6 Query Service und Power BI &#x200B;](./ex6.md)
 
 Nächster Schritt - Option B: [5.1.7 Query Service und Tableau](./ex7.md)
 

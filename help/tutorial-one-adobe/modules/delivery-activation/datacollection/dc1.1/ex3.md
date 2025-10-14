@@ -153,7 +153,7 @@ Wie Sie auf dem Bildschirm Veröffentlichungsablauf sehen können, gibt es wesen
 
 ## Nächste Schritte
 
-Wechseln Sie zur Client-seitigen [ 1.1.4-Web-Datenerfassung](./ex4.md){target="_blank"}
+Wechseln Sie zur Client-seitigen [&#x200B; 1.1.4-Web-Datenerfassung](./ex4.md){target="_blank"}
 
 Kehren Sie zurück zu [Einrichtung der Adobe Experience Platform-Datenerfassung und der Tag-Erweiterung „Web SDK&quot;](./data-ingestion-launch-web-sdk.md){target="_blank"}
 

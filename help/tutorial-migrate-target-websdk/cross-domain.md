@@ -62,7 +62,7 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->Bei Verwendung der Tags-Funktion (früher Launch) zur Implementierung von Web SDK kann die Domain-übergreifende ID-Freigabe ohne benutzerdefinierten Code durchgeführt werden. Weitere Informationen finden Sie in [dedizierten ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=de#tags-extension)).
+>Bei Verwendung der Tags-Funktion (früher Launch) zur Implementierung von Web SDK kann die Domain-übergreifende ID-Freigabe ohne benutzerdefinierten Code durchgeführt werden. Weitere Informationen finden Sie in [dedizierten &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=de#tags-extension)).
 
 >[!NOTE]
 >

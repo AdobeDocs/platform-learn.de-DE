@@ -21,7 +21,7 @@ Je nach Größe und Komplexität Ihrer Analytics-Implementierung kann die Migrat
 
 1. Öffnen Sie Adobe Analytics und navigieren Sie zu **Report Suite**-Einstellungen in der Admin Console
 
-   ![Admin Console ](assets/aa-admin-console.jpg).
+   ![Admin Console &#x200B;](assets/aa-admin-console.jpg).
 
 1. Wählen Sie **[!UICONTROL Report Suite hinzufügen]**
 

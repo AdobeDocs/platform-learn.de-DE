@@ -21,7 +21,7 @@ ht-degree: 2%
 
 In dieser Lektion konfigurieren Sie Benutzerberechtigungen für Adobe Experience Platform mithilfe von [!DNL Adobe's Admin Console] und dem Bildschirm [!UICONTROL Berechtigungen] in der Platform-Benutzeroberfläche.
 
-Die Zugriffssteuerung ist eine wichtige Datenschutzfunktion beim Experience Platform. Wir empfehlen, die Berechtigungen auf das Minimum zu beschränken, das erforderlich ist, damit Benutzer ihre Aufgaben ausführen können. Weitere Informationen finden [ in der ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de) zur Zugriffssteuerung .
+Die Zugriffssteuerung ist eine wichtige Datenschutzfunktion beim Experience Platform. Wir empfehlen, die Berechtigungen auf das Minimum zu beschränken, das erforderlich ist, damit Benutzer ihre Aufgaben ausführen können. Weitere Informationen finden [&#x200B; in der &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de) zur Zugriffssteuerung .
 
 Datenarchitekten und Dateningenieure sind erfahrene Benutzer von Adobe Experience Platform und Sie benötigen viele Berechtigungen, um dieses Tutorial und später in Ihrer täglichen Arbeit abzuschließen. Datenarchitekten sind wahrscheinlich an der Verwaltung von *anderen Platform-Benutzern* in ihrem Unternehmen beteiligt, z. B. Marketing-Experten, Analysten und Datenwissenschaftler. Wenn Sie diese Lektion abgeschlossen haben, sollten Sie darüber nachdenken, wie Sie diese Funktionen verwenden können, um andere Benutzer in Ihrem Unternehmen zu verwalten.
 
@@ -29,7 +29,7 @@ Datenarchitekten und Dateningenieure sind erfahrene Benutzer von Adobe Experienc
 
 >[!IMPORTANT]
 >
->Ein Systemadministrator von Adobe Experience Cloud-Produkten muss einige der Schritte in dieser Lektion ausführen, die in den Abschnittsüberschriften ausgeführt wird. Wenn Sie kein Systemadministrator sind, wenden Sie sich an einen Systemadministrator in Ihrem Unternehmen und bitten Sie ihn, diese Aufgaben durchzuführen. Es gibt auch eine Aufgabe, die sie während der Lektion [Einrichten von Developer Console und Postman&quot; ](set-up-developer-console-and-postman.md) müssen.
+>Ein Systemadministrator von Adobe Experience Cloud-Produkten muss einige der Schritte in dieser Lektion ausführen, die in den Abschnittsüberschriften ausgeführt wird. Wenn Sie kein Systemadministrator sind, wenden Sie sich an einen Systemadministrator in Ihrem Unternehmen und bitten Sie ihn, diese Aufgaben durchzuführen. Es gibt auch eine Aufgabe, die sie während der Lektion [Einrichten von Developer Console und Postman&quot; &#x200B;](set-up-developer-console-and-postman.md) müssen.
 
 ## Über die Admin Console
 
@@ -53,7 +53,7 @@ In dieser Übung fügen Sie oder ein System- oder Produktadministrator Sie als B
 
 So fügen Sie den Tutorial-Teilnehmer als [!UICONTROL Benutzer] und [!UICONTROL Entwickler] hinzu:
 
-1. Melden Sie sich bei der [Adobe Admin Console ](https://adminconsole.adobe.com)
+1. Melden Sie sich bei der [Adobe Admin Console &#x200B;](https://adminconsole.adobe.com)
 1. Wählen Sie **[!UICONTROL Produkte]** in der oberen Navigationsleiste aus.
 1. **Adobe Experience Platform**
    ![Adobe Experience Platform auswählen](assets/adminconsole-experiencePlatform.png)
@@ -107,7 +107,7 @@ Berechtigungen werden in Rollen verwaltet. Erstellen Sie eine Rolle für das Tut
 1. Nachdem Sie alle Berechtigungselemente hinzugefügt haben, klicken Sie unbedingt auf die Schaltfläche Speichern .
    ![Berechtigungselemente speichern](assets/permissions-savePermissions.png)
 
-Developer Console Nach den Lektionen [Erstellen einer Sandbox“ und „Einrichten von ](create-a-sandbox.md) und Postman&quot; [ Sie diese Rolle ](set-up-developer-console-and-postman.md).
+Developer Console Nach den Lektionen [Erstellen einer Sandbox“ und „Einrichten von &#x200B;](create-a-sandbox.md) und Postman&quot; [&#x200B; Sie diese Rolle &#x200B;](set-up-developer-console-and-postman.md).
 
 ## Erstellen eines Datenerfassungs-Produktprofils (erfordert einen Systemadministrator oder Produktadministrator)
 

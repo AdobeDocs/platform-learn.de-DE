@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Einrichten des Journey Optimizer-Webkanals mit Web SDK
 
-Erfahren Sie, wie Sie den Adobe Journey Optimizer [Webkanal) ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/web/get-started-web) Adobe Experience Platform Web SDK implementieren. In dieser Lektion werden die grundlegenden Voraussetzungen für den Web-Kanal, detaillierte Schritte für die Konfiguration und ein tiefer Einblick in einen Anwendungsfall mit Schwerpunkt auf dem Treuestatus behandelt.
+Erfahren Sie, wie Sie den Adobe Journey Optimizer [Webkanal) &#x200B;](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/web/get-started-web) Adobe Experience Platform Web SDK implementieren. In dieser Lektion werden die grundlegenden Voraussetzungen für den Web-Kanal, detaillierte Schritte für die Konfiguration und ein tiefer Einblick in einen Anwendungsfall mit Schwerpunkt auf dem Treuestatus behandelt.
 
 In dieser Lektion können Journey Optimizer-Benutzer den Web-Kanal für die erweiterte Online-Personalisierung mit dem Journey Optimizer-Web-Designer verwenden.
 
@@ -41,7 +41,7 @@ Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 * Schließen Sie alle Lektionen für die Erstkonfiguration von Platform Web SDK ab, einschließlich der Einrichtung von Datenelementen und Regeln.
 * Stellen Sie sicher, dass Ihre Adobe Experience Platform Web SDK Tags-Erweiterungsversion 2.16 oder höher ist.
 * Wenn Sie den Journey Optimizer-Web-Designer zum Erstellen Ihres Web-Kanal-Erlebnisses verwenden, stellen Sie sicher, dass Sie entweder den Google Chrome- oder den Microsoft® Edge-Browser verwenden.
-* Stellen Sie außerdem sicher, dass Sie die Browser-Erweiterung [Adobe Experience Cloud Visual Editing Helper heruntergeladen und aktiviert ](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
+* Stellen Sie außerdem sicher, dass Sie die Browser-Erweiterung [Adobe Experience Cloud Visual Editing Helper heruntergeladen und aktiviert &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 * Stellen Sie sicher, dass Drittanbieter-Cookies in Ihrem Browser zulässig sind. Möglicherweise müssen Sie auch alle Anzeigenblocker in Ihrem Browser deaktivieren.
 
   >[!CAUTION]

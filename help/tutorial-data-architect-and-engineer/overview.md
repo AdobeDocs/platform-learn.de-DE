@@ -50,7 +50,7 @@ Adobe Experience Platform ist eine technische Plattform, mit der Sie Marketing-Z
 
 * Sie haben die [Einführung in die Adobe Experience Platform-Playlist](https://experienceleague.adobe.com/de/playlists/experience-platform-introduction) auf Experience League gesehen und sind mit den Funktionen von Platform vertraut
 * Sie haben Zugriff auf ein Konto, das mit Adobe Experience Platform (oder einem plattformbasierten Programm wie Real-Time CDP oder Journey Optimizer) und der Datenerfassung (früher Launch) bereitgestellt wurde.
-* Sie sind Systemadministrator dieses Kontos oder können über eine ([ Benutzerberechtigungen) ](configure-permissions.md).
+* Sie sind Systemadministrator dieses Kontos oder können über eine ([&#x200B; Benutzerberechtigungen) &#x200B;](configure-permissions.md).
 
 ## Verwenden dieses Tutorials
 

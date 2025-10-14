@@ -29,4 +29,4 @@ Durch die Auswertung dieser Zielgruppe auf der Edge sprechen wir die zuvor geneh
 1. **Speichern und Starten** Ihrer Federated-Audience-Komposition. Sobald die Komposition ausgeführt wurde, wird die verbundene Zielgruppe im Zielgruppen-Portal angezeigt.
 2. **Erstellen einer Zielgruppenregel** Verwenden von Profilattributen und Erlebnisereignissen aus dem Profil-Service, einschließlich der verbundenen Zielgruppe.
 
-Lassen Sie uns dies mit einer „Zusammenfassung [ Erkenntnisse und endgültigen Schlussfolgerungen“ ](conclusion.md).
+Lassen Sie uns dies mit einer „Zusammenfassung [&#x200B; Erkenntnisse und endgültigen Schlussfolgerungen“ &#x200B;](conclusion.md).

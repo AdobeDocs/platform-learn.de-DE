@@ -29,15 +29,15 @@ Führen Sie zunächst die folgenden Schritte aus.
 
 Klicken Sie **[!UICONTROL Datenströme]**.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1a.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1a.png)
 
 Wählen Sie oben rechts im Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` werden soll.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1b.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1b.png)
 
 Klicken Sie **[!UICONTROL Neuer Datenstrom]**.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1.png)
 
 Geben **[!UICONTROL als]** und als optionale Beschreibung `--aepUserLdap-- - Demo System Datastream` ein. Wählen Sie **Zuordnungsschema** die Option **Demosystem - Ereignisschema für Website (Global v1.1)**. Klicken Sie auf **Speichern**.
 
@@ -111,7 +111,7 @@ Klicken Sie **[!UICONTROL Datenströme]**.
 
 Wählen Sie oben rechts im Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` werden soll.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1b.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1b.png)
 
 Klicken Sie **[!UICONTROL Neuer Datenstrom]**.
 

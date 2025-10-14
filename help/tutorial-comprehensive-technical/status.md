@@ -16,7 +16,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 
 | Name | Letzte Aktualisierung | 100 % arbeiten | Bemerkungen          |
 | ---------------------- | ------------ | ------------ |------------ |
-| [0. Erste Schritte ](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024 | Ja | – |
+| [0. Erste Schritte &#x200B;](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024 | Ja | – |
 | [1.1 Foundation - Einrichtung von Adobe Experience Platform-Datenerfassung und Web-SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 18/11/2024 | Ja | – |
 | [1.2 Foundation - Datenaufnahme](./modules/datacollection/module1.2/data-ingestion.md) | 18/11/2024 | Ja | – |
 | [1.3 Federated Audience-Komposition](./modules/datacollection/module1.3/fac.md) | 07/01/2025 | Ja | – |
@@ -29,7 +29,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | [3.1 Adobe Journey Optimizer: Orchestrierung](./modules/ajo-b2c/module3.1/journey-orchestration-create-account.md) | 30/12/2024 | Ja | – |
 | [3.2 Adobe Journey Optimizer: Externe Datenquellen und benutzerdefinierte Aktionen](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 30/12/2024 | Ja | – |
 | [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | Ja | – |
-| [3.4 Adobe Journey Optimizer: Ereignisbasierte Journey ](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | Ja | – |
+| [3.4 Adobe Journey Optimizer: Ereignisbasierte Journey &#x200B;](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | Ja | – |
 | [3.5 Adobe Journey Optimizer: Übersetzungsdienstleistungen](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md) | 08/02/2025 | Ja | – |
 | [4.1 Customer Journey Analytics: Erstellen eines Dashboards mit Analysis Workspace zusätzlich zu Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | 06/01/2025 | Ja | – |
 | [4.2 Customer Journey Analytics: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 07/01/2025 | Nein | Es gibt ein Problem bei der Datenvorbereitungs-Modellierung für die Quelldaten. Die Fehlerbehebung steht aus. |

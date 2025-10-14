@@ -54,7 +54,7 @@ Bei Verwendung der Target-Erweiterung installierte Tag-Erweiterungen:
 
 ## Datenstromkonfiguration
 
-Die Target-Erweiterung verfügt über [konfigurierbare Einstellungen](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) die mit der Entscheidungs[Erweiterung im Datenstrom konfiguriert ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup).
+Die Target-Erweiterung verfügt über [konfigurierbare Einstellungen](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) die mit der Entscheidungs[Erweiterung im Datenstrom konfiguriert &#x200B;](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup).
 
 | Target-Erweiterung | Offer Decisioning- und Target-Erweiterung | Anmerkungen |
 | --- | --- | --- | 
@@ -64,7 +64,7 @@ Die Target-Erweiterung verfügt über [konfigurierbare Einstellungen](https://de
 | Timeout | Timeout | Konfigurierbar in der Offer Decisioning- und Target-Erweiterung sowie in der SDK optimieren . Die standardmäßige maximale Wartezeit beträgt 10 Sekunden. |
 | Serverdomäne | Edge Network-Domain | In der Adobe Experience Platform Edge Network-Erweiterung festgelegt |
 
-Erfahren Sie als Nächstes, wie [ Target-SDK ](replace-sdk.md).
+Erfahren Sie als Nächstes, wie [&#x200B; Target-SDK &#x200B;](replace-sdk.md).
 
 >[!NOTE]
 >

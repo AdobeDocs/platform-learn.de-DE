@@ -84,7 +84,7 @@ Die IMS-Organisations-ID ist die eindeutige Kennung für Ihre Adobe Experience C
 
 Das Ermitteln der IMS-Organisations-ID kann auf verschiedene Weise erfolgen. Wenn Sie sich nicht sicher sind, wenden Sie sich an einen Systemadministrator Ihrer Instanz, um die ID zu finden.
 
-Sie können ihn möglicherweise finden, indem Sie zu [Admin Console ](https://adminconsole.adobe.com/) wechseln, wo Sie ihn als Teil der URL finden können.
+Sie können ihn möglicherweise finden, indem Sie zu [Admin Console &#x200B;](https://adminconsole.adobe.com/) wechseln, wo Sie ihn als Teil der URL finden können.
 
 ![DSN](./images/aepid1.png)
 

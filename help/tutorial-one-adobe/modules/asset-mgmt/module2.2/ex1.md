@@ -38,7 +38,7 @@ Geben Sie den `--aepUserLdap--` für Ihren Ordner ein und klicken Sie auf **Erst
 
 Öffnen Sie den neu erstellten Ordner. In einer der vorherigen Übungen haben Sie zwei Bilder erstellt, die `CitiSignal - Neon Rabbit - Get On Board Now!.png` und `CitiSignal - Neon Rabbit - Timetravel now!.png` heißen. Sie müssen diese Bilder jetzt in diesen Ordner hochladen, wenn sie noch nicht vorhanden sind.
 
-Falls Sie diese Dateien nicht mehr haben, können Sie sie ([) ](./images/CitiSignal_Neon_Rabbit.zip){target="_blank"}.
+Falls Sie diese Dateien nicht mehr haben, können Sie sie ([) &#x200B;](./images/CitiSignal_Neon_Rabbit.zip){target="_blank"}.
 
 Klicken Sie **Assets hinzufügen**.
 

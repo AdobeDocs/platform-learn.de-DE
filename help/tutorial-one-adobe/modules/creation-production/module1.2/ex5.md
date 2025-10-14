@@ -53,7 +53,7 @@ Klicken Sie **Hochladen**.
 
 ![Frame-IO](./images/framev4_5.png)
 
-In einer der vorherigen Übungen haben Sie „Citisignal[fiber.psd“ ](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Wählen Sie diese Datei aus und klicken Sie auf **Öffnen**.
+In einer der vorherigen Übungen haben Sie „Citisignal[fiber.psd“ &#x200B;](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Wählen Sie diese Datei aus und klicken Sie auf **Öffnen**.
 
 ![Frame-IO](./images/framev4_6.png)
 

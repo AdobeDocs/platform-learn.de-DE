@@ -67,7 +67,7 @@ Behalten Sie die meisten Standardeinstellungen bei und aktualisieren Sie sie bei
 
    >[!NOTE]
    >
-   > Wenn Sie Ihren Datenstrom nicht finden können, gehen Sie zur Lektion [Konfigurieren eines ](configure-datastream.md)) und führen Sie die Schritte aus, um einen zu erstellen
+   > Wenn Sie Ihren Datenstrom nicht finden können, gehen Sie zur Lektion [Konfigurieren eines &#x200B;](configure-datastream.md)) und führen Sie die Schritte aus, um einen zu erstellen
 
    ![Datenstromauswahl](assets/extension-luma-web-sdk-datastream-extension.png)
 

@@ -64,9 +64,9 @@ Viele interessante Videos finden Sie in unseren Webinaren zur Tech Academy, in B
 
 ## Abschluss und Zertifizierung
 
-Dieses Tutorial ist Teil eines Adobe-Zertifizierungskurses. Sie können sich neben diesem Tutorial unter [https://certification.adobe.com/courses/1258 für den Kurs ](https://certification.adobe.com/courses/1258).
+Dieses Tutorial ist Teil eines Adobe-Zertifizierungskurses. Sie können sich neben diesem Tutorial unter [https://certification.adobe.com/courses/1258 für den Kurs &#x200B;](https://certification.adobe.com/courses/1258).
 
-Für jedes Modul, das Sie mit dem folgenden Tutorial abschließen, müssen Sie einen Abschlussnachweis wie [ angegeben ](./completion.md).
+Für jedes Modul, das Sie mit dem folgenden Tutorial abschließen, müssen Sie einen Abschlussnachweis wie [&#x200B; angegeben &#x200B;](./completion.md).
 
 ## Inhalt
 

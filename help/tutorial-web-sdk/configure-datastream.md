@@ -57,7 +57,7 @@ Jetzt können Sie einen Datenstrom erstellen, um Platform Edge Network mitzuteil
    >
    >Sie müssen kein Schema auswählen. Eine Schemaauswahl ist nur erforderlich, wenn Sie die Funktion [Datenvorbereitung für die Datenerfassung](/help/data-collection/edge/data-prep.md) verwenden.
 
-Auf dem nächsten Bildschirm können Sie dem Datenstrom Services wie Adobe-Programme hinzufügen, Sie werden jedoch derzeit keine Services hinzufügen. Experience Platform Dies wird später im Abschnitt &quot;[ einrichten“, ](setup-experience-platform.md) [Analytics einrichten](setup-analytics.md), [Audience Manager einrichten](setup-audience-manager.md), [Target einrichten](setup-target.md) oder [Ereignisweiterleitung](setup-event-forwarding.md).
+Auf dem nächsten Bildschirm können Sie dem Datenstrom Services wie Adobe-Programme hinzufügen, Sie werden jedoch derzeit keine Services hinzufügen. Experience Platform Dies wird später im Abschnitt &quot;[&#x200B; einrichten“, &#x200B;](setup-experience-platform.md) [Analytics einrichten](setup-analytics.md), [Audience Manager einrichten](setup-audience-manager.md), [Target einrichten](setup-target.md) oder [Ereignisweiterleitung](setup-event-forwarding.md).
 
 >[!NOTE]
 >

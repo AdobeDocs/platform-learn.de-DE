@@ -17,7 +17,7 @@ ht-degree: 4%
 
 Es gibt mehrere überzeugende Gründe, Client-seitige Anbieter-Tags aus Browsern und Geräten auf einen Server zu verschieben. In diesem Artikel besprechen wir, wie ein Client-seitiges Anbieter-Tag ausgewertet werden kann, um es möglicherweise in eine Ereignisweiterleitungs-Eigenschaft zu verschieben.
 
-Diese Auswertung ist nur erforderlich, wenn Sie erwägen, ein Client-seitiges Anbieter-Tag zu entfernen und es in einer Ereignisweiterleitungseigenschaft durch eine Server-seitige Datenverteilung zu ersetzen. In diesem Artikel wird davon ausgegangen, dass Sie mit den Grundlagen der [Datenerfassung](https://experienceleague.adobe.com/docs/data-collection.html?lang=de) und [Ereignisweiterleitung“ ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de) sind.
+Diese Auswertung ist nur erforderlich, wenn Sie erwägen, ein Client-seitiges Anbieter-Tag zu entfernen und es in einer Ereignisweiterleitungseigenschaft durch eine Server-seitige Datenverteilung zu ersetzen. In diesem Artikel wird davon ausgegangen, dass Sie mit den Grundlagen der [Datenerfassung](https://experienceleague.adobe.com/docs/data-collection.html?lang=de) und [Ereignisweiterleitung“ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de) sind.
 
 >[!NOTE]
 >

@@ -78,4 +78,4 @@ Um mit der SecurFinancial-Story fortzufahren, insbesondere mit dem Anwendungsfal
 
 Wir haben eine Journey in AJO mit einer Federated Audience und Federated Enrichment-Attributen erstellt.
 
-Jetzt schauen wir uns an, wie [ eine Zielgruppe ](federated-audience-composition.md) Experience Platform mit Daten aus dem Data Warehouse anreichern können.
+Jetzt schauen wir uns an, wie [&#x200B; eine Zielgruppe &#x200B;](federated-audience-composition.md) Experience Platform mit Daten aus dem Data Warehouse anreichern können.

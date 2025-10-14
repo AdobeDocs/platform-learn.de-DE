@@ -22,7 +22,7 @@ ht-degree: 4%
 In dieser Lektion abonnieren Sie Datenerfassungsereignisse, indem Sie einen Webhook mit dem Adobe Developer Console und ein Online-Webhook-Entwicklungs-Tool einrichten. Sie verwenden diese Ereignisse, um den Status Ihrer Datenaufnahmevorgänge in den nachfolgenden Lektionen zu überwachen.
 
 **Dateningenieure** können Datenaufnahmeereignisse außerhalb dieses Tutorials abonnieren.
-**Datenarchitekten** _können diese Lektion_ überspringen und zur Lektion [Batch-Aufnahme“ ](ingest-batch-data.md).
+**Datenarchitekten** _können diese Lektion_ überspringen und zur Lektion [Batch-Aufnahme“ &#x200B;](ingest-batch-data.md).
 
 ## Erforderliche Berechtigungen
 

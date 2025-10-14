@@ -36,7 +36,7 @@ Am Ende dieser Lektion können Sie:
 
 Um diese Lektion abzuschließen:
 
-1. , um die Lektionen in &quot;[ Tags konfigurieren](create-a-property.md), [Adobe Analytics hinzufügen](analytics.md) und [Identity Service hinzufügen](id-service.md) abgeschlossen zu haben
+1. , um die Lektionen in &quot;[&#x200B; Tags konfigurieren](create-a-property.md), [Adobe Analytics hinzufügen](analytics.md) und [Identity Service hinzufügen](id-service.md) abgeschlossen zu haben
 
 1. benötigen Sie Administratorzugriff auf Adobe Analytics, damit Sie die serverseitige Weiterleitung für die Report Suite aktivieren können, die Sie für diese Übung verwenden. Alternativ können Sie auch einen Administrator in Ihrem Unternehmen bitten, dies anhand der unten stehenden Anleitung für Sie zu übernehmen.
 

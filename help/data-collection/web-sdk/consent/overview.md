@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Einverständnisübersicht
 
-Erfahren Sie, wie Sie mit der Einverständnisverwaltung in Adobe Experience Platform Web SDK die gesetzlichen Datenschutzanforderungen erfüllen und die Präferenzen Ihrer Kunden berücksichtigen können. Weitere Informationen finden Sie in der Übersicht [Governance, Datenschutz und Sicherheit ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=de#consent) Platform“.
+Erfahren Sie, wie Sie mit der Einverständnisverwaltung in Adobe Experience Platform Web SDK die gesetzlichen Datenschutzanforderungen erfüllen und die Präferenzen Ihrer Kunden berücksichtigen können. Weitere Informationen finden Sie in der Übersicht [Governance, Datenschutz und Sicherheit &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=de#consent) Platform“.
 
 >[!NOTE]
 >

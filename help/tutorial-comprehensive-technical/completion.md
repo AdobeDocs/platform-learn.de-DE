@@ -72,7 +72,7 @@ Der erwartete Abschlussnachweis für das Modul **Intelligent Services** ist die 
 
 Die Zielgruppen-ID sieht wie folgt aus: **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
-![12 ](./assets/images/completemodule10.png){zoomable="yes"}
+![12 &#x200B;](./assets/images/completemodule10.png){zoomable="yes"}
 
 ## 2.3 Real-Time CDP: Zielgruppe aufbauen und Maßnahmen ergreifen!
 
@@ -80,7 +80,7 @@ Der erwartete Abschlussnachweis für das Modul **Real-Time CDP: Erstellen Sie ei
 
 Die ID Ihres Webhook-Ziels sieht wie folgt aus: **b5b4b959-3166-40e2-8279-8223d00c3987** und kann der URL entnommen werden, wie in der folgenden Abbildung dargestellt.
 
-![12 ](./assets/images/vec4.png){zoomable="yes"}
+![12 &#x200B;](./assets/images/vec4.png){zoomable="yes"}
 
 ## 2.4 Real-Time CDP: Audience Activation zum Microsoft Azure Event Hub
 
@@ -88,7 +88,7 @@ Der erwartete Abschlussnachweis für das Modul **Real-Time CDP: Audience Activat
 
 Sie finden die **Microsoft Azure Event Hub-Ziel-ID**, die wie folgt aussieht: **43cf85bc-3d01-49fd-80c9-a2913db45e3c**, in der URL wie unten angegeben:
 
-![14 ](./assets/images/azuredestid.png){zoomable="yes"}
+![14 &#x200B;](./assets/images/azuredestid.png){zoomable="yes"}
 
 ## 2.5 Real-Time CDP-Verbindungen: Ereignisweiterleitung
 
@@ -96,7 +96,7 @@ Der erwartete Abschlussnachweis für das Modul **Real-Time CDP Connections: Erei
 
 Sie finden die **Ereignisweiterleitungs-Eigenschafts-ID**, die wie folgt aussieht **PRa18819171c1241dfb16d74a49993dd5b**, in der URL, wie in der folgenden Abbildung dargestellt:
 
-![14 ](./assets/images/launchssfid.png){zoomable="yes"}
+![14 &#x200B;](./assets/images/launchssfid.png){zoomable="yes"}
 
 ## 2.6 Streamen Sie Daten von Apache Kafka nach Real-Time CDP
 
@@ -104,7 +104,7 @@ Der erwartete Abschlussnachweis für das Modul **Streamen von Daten von Apache K
 
 Die ID sieht wie folgt aus: **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**, und Sie finden sie hier:
 
-![14 ](./assets/images/kafkaflowid.png){zoomable="yes"}
+![14 &#x200B;](./assets/images/kafkaflowid.png){zoomable="yes"}
 
 ## 3.1 Adobe Journey Optimizer: Orchestrierung
 
@@ -112,7 +112,7 @@ Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Orches
 
 Die ID der Journey sieht wie folgt aus: **594fa01f-1a3b-450c-ba09-b7e3ff377c0f**, und kann der URL entnommen werden, wie in der folgenden Abbildung dargestellt.
 
-![12 ](./assets/images/ajoo.png){zoomable="yes"}
+![12 &#x200B;](./assets/images/ajoo.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer: Externe Datenquellen und benutzerdefinierte Aktionen
 
@@ -120,7 +120,7 @@ Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Extern
 
 Die ID der Journey sieht wie folgt aus: **6962d3bc-4f44-4f9c-b326-83978f245f2a**, und kann der URL entnommen werden, wie in der folgenden Abbildung dargestellt.
 
-![12 ](./assets/images/jofinal.png){zoomable="yes"}
+![12 &#x200B;](./assets/images/jofinal.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer: Offer decisioning
 
@@ -128,7 +128,7 @@ Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Offer 
 
 Sie finden die **Entscheidungs-ID**, die wie folgt aussieht **dps:offer-activity:1a08ba4b529b2fb2**, hier:
 
-![14 ](./assets/images/offers.png){zoomable="yes"}
+![14 &#x200B;](./assets/images/offers.png){zoomable="yes"}
 
 ## 3.4 Adobe Journey Optimizer: Veranstaltungsbasierte Journey
 
@@ -136,7 +136,7 @@ Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Ereign
 
 Die ID der Journey sieht wie folgt aus: **5f5efc7e-49f7-44c1-85df-b23482b38d32**, und kann der URL entnommen werden, wie in der folgenden Abbildung dargestellt.
 
-![14 ](./assets/images/jojourneyid.png){zoomable="yes"}
+![14 &#x200B;](./assets/images/jojourneyid.png){zoomable="yes"}
 
 ## 3.5 Adobe Journey Optimizer: Übersetzungsdienstleistungen
 
@@ -152,7 +152,7 @@ Der erwartete Abschlussnachweis für das Modul **Customer Journey Analytics: Ers
 
 Das Format sieht wie folgt aus: **677bcb247064db3c7de2a0e4**, Sie können es in der URL finden, wenn Sie Ihr Projekt geöffnet haben.
 
-![12 ](./assets/images/cjacompletion.png){zoomable="yes"}
+![12 &#x200B;](./assets/images/cjacompletion.png){zoomable="yes"}
 
 ## 4.2 Customer Journey Analytics: Aufnehmen und Analysieren von Google Analytics-Daten in Adobe Experience Platform mit dem BigQuery Source Connector
 
@@ -160,7 +160,7 @@ Der erwartete Abschlussnachweis für das Modul **Customer Journey Analytics: Auf
 
 Sie finden die **BigQuery-Verbindungs-ID**, die wie folgt aussieht **b63a810c-a8cc-4c6b-a57e-dcb7e3368cf8**, hier:
 
-![14 ](./assets/images/bqid.png){zoomable="yes"}
+![14 &#x200B;](./assets/images/bqid.png){zoomable="yes"}
 
 ## 5.1 Abfrage-Service
 
@@ -168,7 +168,7 @@ Der erwartete Abschlussnachweis für das Modul **Abfrage-Service** ist die Daten
 
 Die ID sieht wie folgt aus: **675033c903fb3b2aefed8a0a**.
 
-![12 ](./assets/images/completemodule7.png)
+![12 &#x200B;](./assets/images/completemodule7.png)
 
 ![Tech Insiders](./assets/images/techinsiders.png){zoomable="yes"}{width="50px" align="left"}
 

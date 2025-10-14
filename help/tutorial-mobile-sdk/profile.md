@@ -123,7 +123,7 @@ Nachdem Sie das Attribut eines Benutzers aktualisiert haben, ist es für andere 
    Dieser Code:
 
    1. Ruft die [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)-API mit dem `isPaidUser` Attributnamen als einzelnes Element im `attributeNames`-Array auf.
-   1. Sucht dann nach dem Wert des `isPaidUser` Attributs und platziert `yes` oben rechts in der Symbolleiste ein Badge ![ das Symbol UserCheckedOut](/help/assets/icons/UserCheckedOut.svg).
+   1. Sucht dann nach dem Wert des `isPaidUser` Attributs und platziert `yes` oben rechts in der Symbolleiste ein Badge ![&#x200B; das Symbol UserCheckedOut](/help/assets/icons/UserCheckedOut.svg).
 
 >[!TAB Android]
 

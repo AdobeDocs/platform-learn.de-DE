@@ -23,7 +23,7 @@ Sie werden zur Ansicht **Startseite** in Journey Optimizer weitergeleitet. Stell
 
 >[!NOTE]
 >
->Falls Sie Ihre Kopf- und Fußzeilenfragmente bereits im Rahmen der Übung ([ 3.1.2.1](./../ajob2c-1/ex2.md) und [Übung 3.1.2.2](./../ajob2c-1/ex2.md)) erstellt haben, springen Sie bitte zu Übung 3.5.2.3 Kampagne „Glasfaser erstellen“ vor. Erstellen Sie die Kopf- und Fußzeilenfragmente nicht erneut.
+>Falls Sie Ihre Kopf- und Fußzeilenfragmente bereits im Rahmen der Übung ([&#x200B; 3.1.2.1](./../ajob2c-1/ex2.md) und [Übung 3.1.2.2](./../ajob2c-1/ex2.md)) erstellt haben, springen Sie bitte zu Übung 3.5.2.3 Kampagne „Glasfaser erstellen“ vor. Erstellen Sie die Kopf- und Fußzeilenfragmente nicht erneut.
 
 ## 3.5.2.1 Erstellen des Header-Fragments
 

@@ -29,7 +29,7 @@ Weitere Informationen zum Schemakompositionsmodell, einschließlich Planungsgrun
 
 >[!TIP]
 >
->Wenn Sie mit Analytics Solution Design Reference (SDRs) vertraut sind, können Sie sich ein Schema als robustere SDR vorstellen. Weitere [ finden Sie unter „Erstellen und Verwalten einer Lösungs-Design-Referenz (](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr))“.
+>Wenn Sie mit Analytics Solution Design Reference (SDRs) vertraut sind, können Sie sich ein Schema als robustere SDR vorstellen. Weitere [&#x200B; finden Sie unter „Erstellen und Verwalten einer Lösungs-Design-Referenz (](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr))“.
 
 ## Voraussetzungen
 

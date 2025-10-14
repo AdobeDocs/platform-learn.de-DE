@@ -18,7 +18,7 @@ In der folgenden Tabelle sind die Funktionen und die Unterstützung für Tests u
 | Funktion oder Tool | at.js-Unterstützung | Platform Web SDK-Unterstützung |
 | --- | --- | --- |
 | Aktivitäts-QA-URLs | Ja | Ja |
-| `mboxDisable` URL-Parameter | Ja | Informationen zum Deaktivieren der Target[Funktion finden Sie ](#disable-target-functionality) |
+| `mboxDisable` URL-Parameter | Ja | Informationen zum Deaktivieren der Target[Funktion finden Sie &#x200B;](#disable-target-functionality) |
 | `mboxDebug` URL-Parameter | Ja | Verwenden Sie `alloy_debug` Parameter für ähnliche Debugging-Informationen |
 | `mboxTrace` URL-Parameter | Ja | Verwenden der Browser-Erweiterung &quot;Experience Platform Debugger“ |
 | Adobe Experience Platform Debugger-Erweiterung | Ja | Ja |
@@ -40,7 +40,7 @@ Der Adobe Experience Platform Debugger kann in den Browsern Google Chrome oder M
 
 Nach der Installation der Chrome-Erweiterung oder des Firefox-Add-ons wird ein Symbol (![](assets/start-icon.jpg)) zur Erweiterungsleiste hinzugefügt. Wählen Sie dieses Symbol aus, um die Erweiterung zu öffnen.
 
-Weitere Informationen zur Erweiterung [Adobe Experience Platform Debugger und zum Debugging ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=de) Adobe-Web-Anwendungen finden Sie im entsprechenden Handbuch.
+Weitere Informationen zur Erweiterung [Adobe Experience Platform Debugger und zum Debugging &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=de) Adobe-Web-Anwendungen finden Sie im entsprechenden Handbuch.
 
 ## Vorschau von Target-Aktivitäten mit QA-URLs
 
@@ -52,7 +52,7 @@ Target-QA-URLs, die funktionieren, indem at.js oder Platform Web SDK angewiesen 
 >
 >Die Funktionalität des Target-QA-Modus wird von Platform Web SDK ab Version 2.13.0 unterstützt. Der QA-Modus von Target wird basierend auf dem im `sendEvent`-Aufruf übergebenen `xdm.web.webPageDetails.URL` aktiviert. Änderungen an diesem Wert, wie die Kleinschreibung aller Zeichen, können dazu führen, dass der Target-QA-Modus nicht ordnungsgemäß funktioniert.
 
-Weitere Informationen zu Target-Aktivitäts-QA finden [ im entsprechenden Handbuch ](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=de).
+Weitere Informationen zu Target-Aktivitäts-QA finden [&#x200B; im entsprechenden Handbuch &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=de).
 
 ## Target-Implementierung debuggen
 
@@ -121,7 +121,7 @@ Gehen Sie wie folgt vor, um Platform Web SDK Target-Ablaufverfolgungen mit dem A
 1. Laden Sie die Seite neu. Das Protokoll sollte nun detaillierte Informationen zu den Edge Network-Interaktionen enthalten.
 1. Konzentrieren Sie sich auf die Protokolleinträge, die mit „Target Traces“ in der Beschreibung beginnen, und wählen Sie **[!UICONTROL Anzeigen]**, um Details zur Target-Verfolgung anzuzeigen
 
-![Anzeigen von Target-Spuren mit dem Adobe Experience Platform Debugger ](assets/target-trace-debugger.png){zoomable="yes"}
+![Anzeigen von Target-Spuren mit dem Adobe Experience Platform Debugger &#x200B;](assets/target-trace-debugger.png){zoomable="yes"}
 
 Nach Auswahl **[!UICONTROL Ansicht]** wird eine Überlagerung angezeigt, in der die folgenden Informationen zur Anfrage angezeigt werden:
 
@@ -130,7 +130,7 @@ Nach Auswahl **[!UICONTROL Ansicht]** wird eine Überlagerung angezeigt, in der 
 - Anfragedetails
 - Profil-Snapshot
 
-Weitere Informationen zu Target-Traces finden Sie [ entsprechenden Handbuch ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=de) Debugging der Bereitstellung von Target-Inhalten .
+Weitere Informationen zu Target-Traces finden Sie [&#x200B; entsprechenden Handbuch &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=de) Debugging der Bereitstellung von Target-Inhalten .
 
 ### Fehlerbehebung bei Assurance
 

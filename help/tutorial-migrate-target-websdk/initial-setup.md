@@ -25,7 +25,7 @@ Für die Migration von at.js zu Platform Web SDK ist eine Ersteinrichtung erford
 
 Sobald die Erstkonfiguration abgeschlossen ist, sollte die Target-Funktion mithilfe des Adobe Experience Platform-Edge Networks aktiviert werden.
 
-Erfahren Sie als Nächstes, wie [ die at.js-Bibliothek ersetzen und eine einfache Platform Web SDK-Implementierung einrichten](replace-library.md).
+Erfahren Sie als Nächstes, wie [&#x200B; die at.js-Bibliothek ersetzen und eine einfache Platform Web SDK-Implementierung einrichten](replace-library.md).
 
 >[!NOTE]
 >

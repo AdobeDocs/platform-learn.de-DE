@@ -35,7 +35,7 @@ Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 * Machen Sie sich mit Adobe Analytics vertraut und haben Sie Zugriff darauf.
 
-* Sie verfügen über mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie keine Test-/Entwicklungs-Report Suite haben, die Sie für dieses Tutorial verwenden können, erstellen [ eine](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Sie verfügen über mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie keine Test-/Entwicklungs-Report Suite haben, die Sie für dieses Tutorial verwenden können, erstellen [&#x200B; eine](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Die vorherigen Lektionen in den Abschnitten Erstkonfiguration und Tags-Konfiguration dieses Tutorials absolvieren.
 
@@ -317,7 +317,7 @@ Um zu überprüfen, ob Analytics Daten ordnungsgemäß über Experience Platform
 
 1. Navigieren Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
 1. Klicken Sie auf die Schaltfläche Anmelden oben rechts und verwenden Sie die Anmeldedaten u: test@test.com p: Test zur Authentifizierung
-1. Öffnen Sie den Experience Platform-Debugger und [ Sie die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft um](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Öffnen Sie den Experience Platform-Debugger und [&#x200B; Sie die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft um](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
 
 1. Um den Edge-Trace zu aktivieren, wechseln Sie zum Experience Platform-Debugger, wählen Sie im linken Navigationsbereich **[!UICONTROL Protokolle]** und dann die Registerkarte **[!UICONTROL Edge]** aus und klicken Sie auf **[!UICONTROL Verbinden]**
@@ -385,7 +385,7 @@ Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weit
 
    ![Analytics-Produktzeichenfolge](assets/analytics-debugger-prodstring.png)
 
-   Edge Trace behandelt `commerce` Ereignisse geringfügig anders als `productList` Dimensionen. Eine Kontextdatenvariable wird nicht auf die gleiche Weise zugeordnet angezeigt wie der Produktname, der `[!UICONTROL c.a.x.productlistitem.[0].name]` oben zugeordnet ist. Stattdessen zeigt Edge Trace die endgültige automatische Ereigniszuordnung in der Analytics-`event` an. Platform Edge Network ordnet sie entsprechend zu, solange Sie sie bei der `commerce`Konfiguration des Schemas für Adobe Analytics[ der richtigen XDM-](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)-Variablen zuordnen. In diesem Fall ist dies die `commerce.productViews.value=1`.
+   Edge Trace behandelt `commerce` Ereignisse geringfügig anders als `productList` Dimensionen. Eine Kontextdatenvariable wird nicht auf die gleiche Weise zugeordnet angezeigt wie der Produktname, der `[!UICONTROL c.a.x.productlistitem.[0].name]` oben zugeordnet ist. Stattdessen zeigt Edge Trace die endgültige automatische Ereigniszuordnung in der Analytics-`event` an. Platform Edge Network ordnet sie entsprechend zu, solange Sie sie bei der `commerce`Konfiguration des Schemas für Adobe Analytics[&#x200B; der richtigen XDM-](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)-Variablen zuordnen. In diesem Fall ist dies die `commerce.productViews.value=1`.
 
 1. Führen Sie im Fenster Experience Platform Debugger einen Bildlauf nach unten zur Variablen `[!UICONTROL events]` durch. Sie ist auf `[!UICONTROL prodView]` festgelegt
 

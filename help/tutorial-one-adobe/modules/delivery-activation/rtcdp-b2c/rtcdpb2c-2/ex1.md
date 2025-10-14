@@ -110,7 +110,7 @@ Sie können jetzt mit der Aufnahme von Kundenerlebnisereignisdaten beginnen und 
 
 Sobald **Schema** und **Datensatz** konfiguriert sind, können Sie jetzt Erlebnisereignisdaten aufnehmen. Da Kunden-KI spezifische Datenanforderungen erfordert, müssen Sie extern vorbereitete Daten aufnehmen.
 
-Die in dieser Übung für die Erlebnisereignisse vorbereiteten Daten müssen den Anforderungen und dem Schema der Feldergruppe [Consumer Experience Event XDM“ ](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
+Die in dieser Übung für die Erlebnisereignisse vorbereiteten Daten müssen den Anforderungen und dem Schema der Feldergruppe [Consumer Experience Event XDM“ &#x200B;](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
 Bitte laden Sie die ZIP-Datei mit Demodaten von diesem Speicherort herunter: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 

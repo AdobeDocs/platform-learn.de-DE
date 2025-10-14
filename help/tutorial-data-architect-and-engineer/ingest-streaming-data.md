@@ -471,6 +471,6 @@ Gut gemacht! Das waren eine Menge Informationen über Web SDK und Launch. An ein
 >Nachdem Sie die Lektion Streaming-Aufnahme abgeschlossen haben, können Sie die [!UICONTROL Prod]-Sandbox aus Ihrem `Luma Tutorial Platform`-Produktprofil entfernen
 
 
-Dateningenieure, wenn Sie möchten, können Sie zur Lektion [Ausführen von Abfragen“ ](run-queries.md).
+Dateningenieure, wenn Sie möchten, können Sie zur Lektion [Ausführen von Abfragen“ &#x200B;](run-queries.md).
 
-Datenarchitekten können mit „Zusammenführungsrichtlinien[ fortfahren](create-merge-policies.md).
+Datenarchitekten können mit „Zusammenführungsrichtlinien[&#x200B; fortfahren](create-merge-policies.md).

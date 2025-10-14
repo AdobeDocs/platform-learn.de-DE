@@ -138,13 +138,13 @@ Tags enthalten Anweisungen und Code-Snippets zur Installation von Adobe Experien
 
 1. Wählen Sie **[!UICONTROL Dialogfeld „Mobile-]**&quot; die Registerkarte **[!UICONTROL iOS]** aus.
 
-1. Sie können die ![ kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) um Ihr Projekt mit CocoaPods einzurichten. CocoaPods werden verwendet, um SDK-Versionen und -Downloads zu verwalten. Weitere Informationen finden Sie in der [Dokumentation zu CocoaPods](https://cocoapods.org/).
+1. Sie können die ![&#x200B; kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) um Ihr Projekt mit CocoaPods einzurichten. CocoaPods werden verwendet, um SDK-Versionen und -Downloads zu verwalten. Weitere Informationen finden Sie in der [Dokumentation zu CocoaPods](https://cocoapods.org/).
 
    Die [Installationsanweisungen](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) bieten Ihnen einen guten Ausgangspunkt für die Implementierung.
 
    Für den Rest dieses Tutorials verwenden Sie **nicht** die CocoaPods-Anweisungen. Stattdessen verwenden Sie die native Swift Package Manager (SPM)-basierte Einrichtung.
 
-1. Wählen Sie die Registerkarte **[!UICONTROL Swift]** unter **[!UICONTROL Initialisierungs-Code hinzufügen]**. Dieser Code-Block zeigt, wie Sie die erforderlichen SDKs importieren und die Erweiterungen beim Start registrieren. Dieser Import und die Registrierung werden in „Installieren von [&quot; ausführlicher ](install-sdks.md).
+1. Wählen Sie die Registerkarte **[!UICONTROL Swift]** unter **[!UICONTROL Initialisierungs-Code hinzufügen]**. Dieser Code-Block zeigt, wie Sie die erforderlichen SDKs importieren und die Erweiterungen beim Start registrieren. Dieser Import und die Registrierung werden in „Installieren von [&quot; ausführlicher &#x200B;](install-sdks.md).
 
 1. Kopieren Sie ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) die **[!UICONTROL Umgebungsdatei-ID]** und speichern Sie sie an einem Ort, wie Sie sie später benötigen. Diese eindeutige ID verweist auf Ihre Entwicklungsumgebung. Jede Umgebung (Produktion, Staging, Entwicklung) verfügt über einen eigenen eindeutigen ID-Wert.
 
@@ -158,11 +158,11 @@ Tags enthalten Anweisungen und Code-Snippets zur Installation von Adobe Experien
    ![Umgebungen - Startbildschirm](assets/tags-environments.png){zoomable="yes"}
 
 1. Wählen Sie **[!UICONTROL Dialogfeld „Mobile-]**&quot; die Registerkarte **[!UICONTROL Android]** aus.
-1. Sie können die ![ kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) um Ihr Projekt mit Gradle einzurichten. Gradle wird zur Verwaltung von SDK-Versionen und -Downloads verwendet. Weitere Informationen finden Sie in der [Gradle-Dokumentation](https://gradle.org/)
+1. Sie können die ![&#x200B; kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) um Ihr Projekt mit Gradle einzurichten. Gradle wird zur Verwaltung von SDK-Versionen und -Downloads verwendet. Weitere Informationen finden Sie in der [Gradle-Dokumentation](https://gradle.org/)
 
    Die [Installationsanweisungen](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) bieten Ihnen einen guten Ausgangspunkt für die Implementierung.
 
-1. Dieser Code-Block zeigt, wie Sie die erforderlichen SDKs importieren und die Erweiterungen beim Start registrieren. Dieser Import und die Registrierung werden in „Installieren von [&quot; ausführlicher ](install-sdks.md).
+1. Dieser Code-Block zeigt, wie Sie die erforderlichen SDKs importieren und die Erweiterungen beim Start registrieren. Dieser Import und die Registrierung werden in „Installieren von [&quot; ausführlicher &#x200B;](install-sdks.md).
 
 1. Kopieren Sie ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) die **[!UICONTROL Umgebungsdatei-ID]** und speichern Sie sie an einem Ort, wie Sie sie später benötigen. Diese eindeutige ID verweist auf Ihre Entwicklungsumgebung. Jede Umgebung (Produktion, Staging, Entwicklung) verfügt über einen eigenen eindeutigen ID-Wert.
 

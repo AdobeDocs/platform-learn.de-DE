@@ -42,7 +42,7 @@ Am Ende dieser Lektion können Sie mit einer Web SDK-Implementierung von Target 
 Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 
 * Schließen Sie alle Lektionen für die Erstkonfiguration von Platform Web SDK ab, einschließlich der Einrichtung von Datenelementen und Regeln.
-* Adobe Target Stellen Sie sicher, dass Sie in [ über eine ](https://experienceleague.adobe.com/de/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)- oder Genehmigerrolle verfügen.
+* Adobe Target Stellen Sie sicher, dass Sie in [&#x200B; über eine &#x200B;](https://experienceleague.adobe.com/de/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)- oder Genehmigerrolle verfügen.
 * Installieren Sie die [Visual Experience Composer Helper](https://experienceleague.adobe.com/de/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)-Erweiterung, wenn Sie den Google Chrome-Browser verwenden.
 * Wissen, wie Sie Aktivitäten in Target einrichten. Wenn Sie eine Auffrischung benötigen, sind die folgenden Tutorials und Handbücher für diese Lektion hilfreich:
    * [Verwenden der Visual Experience Composer (VEC) Helper-Erweiterung](https://experienceleague.adobe.com/de/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
@@ -117,7 +117,7 @@ Der Stil zum Vorab-Ausblenden für synchrone Implementierungen kann wie folgt ko
 >
 >Die Einstellung für den vorab ausgeblendeten Stil soll nur für synchrone Implementierungen verwendet werden. Dieser Stil sollte leer sein oder auskommentiert sein, wenn Sie eine asynchrone Implementierung von Tags verwenden.
 
-Weitere Informationen zur Verwaltung von Flackern in Platform Web SDK finden Sie im Abschnitt Handbuch: [ von Flackern für personalisierte Erlebnisse](https://experienceleague.adobe.com/de/docs/experience-platform/edge/personalization/manage-flicker).
+Weitere Informationen zur Verwaltung von Flackern in Platform Web SDK finden Sie im Abschnitt Handbuch: [&#x200B; von Flackern für personalisierte Erlebnisse](https://experienceleague.adobe.com/de/docs/experience-platform/edge/personalization/manage-flicker).
 
 
 ## Konfigurieren des Datenstroms
@@ -142,7 +142,7 @@ So konfigurieren Sie Target im Datenstrom:
 
 ### Eigenschafts-Token
 
-Target Premium-Kunden haben die Möglichkeit, Benutzerberechtigungen mit Eigenschaften zu verwalten. Mit den Target-Eigenschaften können Sie Grenzen für Benutzerinnen und Benutzer festlegen, an denen Target-Aktivitäten ausgeführt werden können. Weitere Informationen finden Sie [ Abschnitt ](https://experienceleague.adobe.com/de/docs/target/using/administer/manage-users/enterprise/properties-overview)Enterprise-Berechtigungen“ in der Target-Dokumentation.
+Target Premium-Kunden haben die Möglichkeit, Benutzerberechtigungen mit Eigenschaften zu verwalten. Mit den Target-Eigenschaften können Sie Grenzen für Benutzerinnen und Benutzer festlegen, an denen Target-Aktivitäten ausgeführt werden können. Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](https://experienceleague.adobe.com/de/docs/target/using/administer/manage-users/enterprise/properties-overview)Enterprise-Berechtigungen“ in der Target-Dokumentation.
 
 Um Eigenschafts-Token einzurichten oder zu finden, navigieren Sie zu **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Eigenschaften]**. Das Symbol `</>` zeigt den Implementierungs-Code an. Der `at_property` Wert ist das Eigenschafts-Token, das Sie in Ihrem Datenstrom verwenden würden.
 
@@ -176,7 +176,7 @@ Die Identitätssymbole befinden sich in der Identitätsliste unter **Datenerfass
 
 ![Identitätsliste](assets/target-identities.png)
 
-Für dieses Tutorial zur Verwendung der Luma-Site verwenden Sie das Identitätssymbol, `lumaCrmId` während der Lektion über (Identitäten[ eingerichtet ](configure-identities.md).
+Für dieses Tutorial zur Verwendung der Luma-Site verwenden Sie das Identitätssymbol, `lumaCrmId` während der Lektion über (Identitäten[&#x200B; eingerichtet &#x200B;](configure-identities.md).
 
 
 
@@ -216,12 +216,12 @@ Mit der Einstellung Visuelle Personalisierungsentscheidungen rendern wendet Plat
 >
 >In der Regel sollte [!UICONTROL &#x200B; Einstellung „Visuelle Personalisierungsentscheidungen rendern] nur für eine einzige Sendeereignis-Aktion pro vollständigem Seitenladevorgang aktiviert sein. Wenn diese Einstellung für mehrere Sendeereignis-Aktionen aktiviert ist, werden nachfolgende Render-Anfragen ignoriert.
 
-Wenn Sie es vorziehen, diese Entscheidungen selbst mit benutzerdefiniertem Code zu rendern oder zu bearbeiten, können Sie die Einstellung [!UICONTROL Visuelle Personalisierungsentscheidungen rendern] deaktiviert lassen. Platform Web SDK ist flexibel und bietet diese Funktion, um Ihnen vollständige Kontrolle zu geben. Weitere Informationen zum manuellen Rendern personalisierter Inhalte [ Sie im Handbuch ](https://experienceleague.adobe.com/de/docs/experience-platform/edge/personalization/rendering-personalization-content).
+Wenn Sie es vorziehen, diese Entscheidungen selbst mit benutzerdefiniertem Code zu rendern oder zu bearbeiten, können Sie die Einstellung [!UICONTROL Visuelle Personalisierungsentscheidungen rendern] deaktiviert lassen. Platform Web SDK ist flexibel und bietet diese Funktion, um Ihnen vollständige Kontrolle zu geben. Weitere Informationen zum manuellen Rendern personalisierter Inhalte [&#x200B; Sie im Handbuch &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/edge/personalization/rendering-personalization-content).
 
 
 ### Einrichten einer Target-Aktivität mit dem Visual Experience Composer
 
-Nachdem die grundlegende Implementierung abgeschlossen ist, erstellen Sie eine Experience Targeting (XT)-Aktivität in Target, um zu überprüfen, ob alles ordnungsgemäß funktioniert. Weitere Informationen finden Sie im Target-Tutorial zum Erstellen [ Experience Targeting](https://experienceleague.adobe.com/de/docs/target-learn/tutorials/activities/create-experience-targeting-activities)Aktivitäten .
+Nachdem die grundlegende Implementierung abgeschlossen ist, erstellen Sie eine Experience Targeting (XT)-Aktivität in Target, um zu überprüfen, ob alles ordnungsgemäß funktioniert. Weitere Informationen finden Sie im Target-Tutorial zum Erstellen [&#x200B; Experience Targeting](https://experienceleague.adobe.com/de/docs/target-learn/tutorials/activities/create-experience-targeting-activities)Aktivitäten .
 
 >[!NOTE]
 >
@@ -264,7 +264,7 @@ Wenn Sie eine Aktivität einrichten, sollte der Inhalt auf der Seite gerendert w
 >Wenn Sie Google Chrome verwenden und die [Visual Experience Composer (VEC) Helper-Erweiterung](https://experienceleague.adobe.com/de/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) installiert haben, stellen Sie sicher, dass die Einstellung **Target-Bibliotheken**) deaktiviert ist. Die Aktivierung dieser Einstellung führt zu zusätzlichen Target-Anforderungen.
 
 1. Öffnen der Adobe Experience Platform Debugger-Browser-Erweiterung
-1. Wechseln Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html) und verwenden Sie den Debugger, [ die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Wechseln Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html) und verwenden Sie den Debugger, [&#x200B; die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Seite neu laden
 1. Wählen Sie das **[!UICONTROL Netzwerk]**-Tool im Debugger aus
 1. Filtern nach **[!UICONTROL Experience Platform Web SDK]**
@@ -417,7 +417,7 @@ Nachdem Sie nun über eine Regel zum manuellen Rendern eines benutzerdefinierten
 Wenn Sie Ihre Aktivität aktiviert haben, sollte der gerenderte Inhalt auf der Seite angezeigt werden. Selbst wenn keine Aktivitäten live sind, können Sie sich jedoch auch den Netzwerkaufruf [!UICONTROL Ereignis senden] ansehen, um zu bestätigen, dass Target Inhalte für Ihre benutzerdefinierten Bereiche anfordert.
 
 1. Öffnen Sie die Browser-Erweiterung Adobe Experience Platform Debugger .
-1. Wechseln Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html) und verwenden Sie den Debugger, [ die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Wechseln Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html) und verwenden Sie den Debugger, [&#x200B; die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Seite neu laden
 1. Wählen Sie im Debugger **[!UICONTROL Tool]** Netzwerk“ aus.
 1. Filtern nach **[!UICONTROL Adobe Experience Platform Web SDK]**
@@ -530,7 +530,7 @@ Nachdem die Regeln aktualisiert wurden, können Sie mit der Adobe Debugger über
 
 1. Navigieren Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html) und melden Sie sich mit der E-Mail-`test@test.com` und dem `test` an
 1. Navigieren zu einer Produktdetailseite
-1. Öffnen Sie die Browser-Erweiterung Adobe Experience Platform Debugger und [ Sie die Tag-Eigenschaft in Ihre eigene Entwicklungseigenschaft](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Öffnen Sie die Browser-Erweiterung Adobe Experience Platform Debugger und [&#x200B; Sie die Tag-Eigenschaft in Ihre eigene Entwicklungseigenschaft](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Seite neu laden
 1. Wählen Sie das **Netzwerk**-Tool im Debugger aus und filtern Sie nach **Adobe Experience Platform Web SDK**
 1. Wählen Sie den Wert in der Ereigniszeile für den ersten Aufruf aus

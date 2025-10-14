@@ -38,23 +38,23 @@ Geben Sie die erforderlichen Details für die Kunden-KI-Instanz ein:
 
 Klicken Sie **Speichern und fortfahren**.
 
-![Seite 1 ](./images/setuppage1.png)
+![Seite 1 &#x200B;](./images/setuppage1.png)
 
 Sie werden es dann sehen. Wählen Sie den Datensatz aus, den Sie in der vorherigen Übung mit dem Namen `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` erstellt haben. Klicken Sie auf **Hinzufügen**.
 
-![Seite 1 ](./images/custai2.png)
+![Seite 1 &#x200B;](./images/custai2.png)
 
 Sie werden es dann sehen. Sie müssen das Feld **Identität** definieren. Klicken Sie **Keine**.
 
-![Seite 1 ](./images/custai2a.png)
+![Seite 1 &#x200B;](./images/custai2a.png)
 
 Wählen Sie im Popup die Option **Identitätszuordnung (identityMap)** und wählen Sie dann den Namespace **Demo System - CRMID (crmId)**. Klicken Sie anschließend auf **Speichern**.
 
-![Seite 1 ](./images/custai2b.png)
+![Seite 1 &#x200B;](./images/custai2b.png)
 
 Klicken Sie **Speichern und fortfahren**.
 
-![Seite 1 ](./images/custai2c.png)
+![Seite 1 &#x200B;](./images/custai2c.png)
 
 Wählen Sie **Wird auftreten** in Ihrem spezifischen Datensatz aus und definieren Sie das Feld **commerce.purchases.value** als Zielvariable.
 

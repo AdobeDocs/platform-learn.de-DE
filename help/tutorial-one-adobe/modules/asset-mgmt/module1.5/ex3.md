@@ -185,7 +185,7 @@ Sie sollten das dann sehen.
 
 ## 1.5.3.3 Aktualisierung von config.json
 
-Gehen Sie zum GitHub-Repository, das beim Einrichten Ihrer AEM Sites CS/EDS-Umgebung erstellt wurde. Dieses Repository wurde in der Übung [1.1.2 Einrichten der AEM CS-Umgebung erstellt ](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} sollte den Namen &quot;**-aem-accs** erhalten.
+Gehen Sie zum GitHub-Repository, das beim Einrichten Ihrer AEM Sites CS/EDS-Umgebung erstellt wurde. Dieses Repository wurde in der Übung [1.1.2 Einrichten der AEM CS-Umgebung erstellt &#x200B;](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} sollte den Namen &quot;**-aem-accs** erhalten.
 
 Scrollen Sie im Stammverzeichnis nach unten und klicken Sie, um die Datei (**.json)** öffnen. Klicken Sie auf **Bearbeiten**, um Änderungen an der Datei vorzunehmen.
 
@@ -235,7 +235,7 @@ Ihre AEM Assets CS-Umgebung unterstützt jetzt die Commerce-Integration. Sie kö
 
 ## 1.5.3.4 Produkt-Assets hochladen und mit Produkten verknüpfen
 
-[Laden Sie hier die Produktbilder ](./images/Product_Images.zip). Exportieren Sie die Dateien nach dem Download auf Ihren Desktop.
+[Laden Sie hier die Produktbilder &#x200B;](./images/Product_Images.zip). Exportieren Sie die Dateien nach dem Download auf Ihren Desktop.
 
 ![ACCS+AEM Assets](./images/accsaemassets35.png)
 

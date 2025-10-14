@@ -21,7 +21,7 @@ Sie wissen jetzt, dass XDM-Daten in Platform fließen. Sie erfahren mehr darübe
 
 Die Adobe Experience Platform-[!DNL Web SDK] ordnet bestimmte Werte automatisch zu, sodass eine neue Implementierung von Analytics über die Web-SDK so schnell wie möglich erfolgt. Die automatisch zugeordneten Variablen werden [hier](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=de#data-collection) aufgelistet.
 
-Bei XDM-Daten, die nicht automatisch Adobe Analytics zugeordnet werden, können Sie [Kontextdaten](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=de) verwenden, um Ihren ([) ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de). Anschließend kann sie mithilfe von [Verarbeitungsregeln“ in Analytics zugeordnet werden](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=de) um Analytics-Variablen aufzufüllen. Kontextdaten und Verarbeitungsregeln sind Konzepte, die denjenigen bekannt sind, die in der Vergangenheit mit Analytics gearbeitet haben. Sie sollten sich jedoch vorerst nicht um die Details kümmern, wenn es sich um neue Konzepte handelt.
+Bei XDM-Daten, die nicht automatisch Adobe Analytics zugeordnet werden, können Sie [Kontextdaten](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=de) verwenden, um Ihren ([) &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de). Anschließend kann sie mithilfe von [Verarbeitungsregeln“ in Analytics zugeordnet werden](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=de) um Analytics-Variablen aufzufüllen. Kontextdaten und Verarbeitungsregeln sind Konzepte, die denjenigen bekannt sind, die in der Vergangenheit mit Analytics gearbeitet haben. Sie sollten sich jedoch vorerst nicht um die Details kümmern, wenn es sich um neue Konzepte handelt.
 
 Sie können auch einen Standardsatz von Aktionen und Produktlisten verwenden, um Daten mit der AEP Web SDK zu senden oder abzurufen. Weitere Informationen hierzu finden Sie unter [Produkte](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=de#data-collection).
 
@@ -54,7 +54,7 @@ Zur Verwendung in Analytics werden XDM-Daten mit Punktnotation reduziert und als
 
 ### Verarbeitungsregeln
 
-Auf alle vom Edge Network erfassten Daten kann über [Verarbeitungsregeln“ zugegriffen ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=de). In Analytics können Sie Verarbeitungsregeln verwenden, um Kontextdaten in Analytics-Variablen einzubinden.
+Auf alle vom Edge Network erfassten Daten kann über [Verarbeitungsregeln“ zugegriffen &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=de). In Analytics können Sie Verarbeitungsregeln verwenden, um Kontextdaten in Analytics-Variablen einzubinden.
 
 ## Audience Manager auf dem Experience Platform-Edge Network
 
@@ -68,7 +68,7 @@ Wechseln Sie zu [https://experience.adobe.com/launch/](https://experience.adobe.
 
 Wählen Sie oben rechts im Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` werden soll. Öffnen Sie Ihren spezifischen Datenstrom mit dem Namen `--aepUserLdap-- - Demo System Datastream`.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1b.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1b.png)
 
 Sie werden es dann sehen. Um Adobe Analytics zu aktivieren, klicken Sie auf **Service hinzufügen**.
 

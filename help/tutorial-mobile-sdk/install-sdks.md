@@ -22,9 +22,9 @@ Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK in einer App impl
 
 ## Voraussetzungen
 
-* Eine Tag-Bibliothek mit den in der vorherigen Lektion beschriebenen Erweiterungen wurde [ erstellt](configure-tags.md).
+* Eine Tag-Bibliothek mit den in der vorherigen Lektion beschriebenen Erweiterungen wurde [&#x200B; erstellt](configure-tags.md).
 * Datei-ID der Entwicklungsumgebung aus der [Installationsanweisungen für Mobilgeräte](configure-tags.md#generate-sdk-install-instructions).
-* hat die [Beispielanwendung für iOS](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) oder [Beispielanwendung für Android&quot; ](https://github.com/adobe/Luma-Android).
+* hat die [Beispielanwendung für iOS](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) oder [Beispielanwendung für Android&quot; &#x200B;](https://github.com/adobe/Luma-Android).
 * Erfahrung mit [Xcode](https://developer.apple.com/xcode/) (iOS) oder [Android Studio](https://developer.android.com/studio/intro?utm_source=android-studio) (Android)
 
 ## Lernziele
@@ -141,8 +141,8 @@ Der obige Code bewirkt Folgendes:
 1. Registriert die erforderlichen Erweiterungen.
 1. Konfiguriert MobileCore und andere Erweiterungen für die Verwendung Ihrer Tag-Eigenschaftskonfiguration.
 1. Aktiviert die Debug-Protokollierung. Weitere Informationen und Optionen finden Sie in der Dokumentation zu [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
-1. Startet die Lebenszyklusüberwachung. Weitere [ finden Sie ](lifecycle-data.md) Schritt „Lebenszyklus“ im Tutorial .
-1. Setzt das Standard-Einverständnis auf unbekannt. Weitere [ finden Sie ](consent.md) Schritt „Einverständnis“ im Tutorial .
+1. Startet die Lebenszyklusüberwachung. Weitere [&#x200B; finden Sie &#x200B;](lifecycle-data.md) Schritt „Lebenszyklus“ im Tutorial .
+1. Setzt das Standard-Einverständnis auf unbekannt. Weitere [&#x200B; finden Sie &#x200B;](consent.md) Schritt „Einverständnis“ im Tutorial .
 
 Stellen Sie sicher, dass Sie `MobileCore.configureWith(appId: self.environmentFileId)` mit der `appId` aktualisieren, basierend auf der `environmentFileId` aus der Tag-Umgebung, für die Sie sie erstellen (Entwicklung, Staging oder Produktion).
 
@@ -241,8 +241,8 @@ In der Ansicht **[!UICONTROL Android]** navigieren Sie zu **[!UICONTROL app]** >
    1. Registriert die erforderlichen Erweiterungen.
    1. Konfiguriert MobileCore und andere Erweiterungen für die Verwendung Ihrer Tag-Eigenschaftskonfiguration.
    1. Aktiviert die Debug-Protokollierung. Weitere Informationen und Optionen finden Sie in der Dokumentation zu [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
-   1. Startet die Lebenszyklusüberwachung. Weitere [ finden Sie ](lifecycle-data.md) Schritt „Lebenszyklus“ im Tutorial .
-   1. Setzt das Standard-Einverständnis auf unbekannt. Weitere [ finden Sie ](consent.md) Schritt „Einverständnis“ im Tutorial .
+   1. Startet die Lebenszyklusüberwachung. Weitere [&#x200B; finden Sie &#x200B;](lifecycle-data.md) Schritt „Lebenszyklus“ im Tutorial .
+   1. Setzt das Standard-Einverständnis auf unbekannt. Weitere [&#x200B; finden Sie &#x200B;](consent.md) Schritt „Einverständnis“ im Tutorial .
 
 Stellen Sie sicher, dass Sie `MobileCore.configureWith(environmentFileId)` mit der `environmentFileId` aktualisieren, basierend auf der Umgebungsdatei-ID aus der Tag-Umgebung, für die Sie sie erstellen (Entwicklung, Staging oder Produktion).
 

@@ -30,7 +30,7 @@ Mit Journey Optimizer können Sie Journey erstellen und Nachrichten an ausgewäh
 
 * Die App wurde erfolgreich erstellt und ausgeführt, wobei SDKs installiert und konfiguriert wurden.
 * Richten Sie die App für Adobe Experience Platform ein.
-* Zugriff auf Journey Optimizer und [ausreichende ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/channels/push/push-config/push-configuration)) Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
+* Zugriff auf Journey Optimizer und [ausreichende &#x200B;](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/channels/push/push-config/push-configuration)) Außerdem benötigen Sie ausreichende Berechtigungen für die folgenden Journey Optimizer-Funktionen.
    * Erstellen Sie Push-Anmeldedaten.
    * Erstellen Sie eine Konfiguration für den Push-Kanal.
    * Erstellen Sie eine Journey.
@@ -311,7 +311,7 @@ Ihrer App sollte jetzt eine Push-Benachrichtigungs-Erweiterung hinzugefügt werd
 
 >[!TAB Android]
 
-Das Android Studio-Projekt ist bereits für Push-Benachrichtigungen eingerichtet. Sie müssen keine zusätzlichen Schritte ausführen, um die Android-Version der Luma-App für Push-Benachrichtigungen zu aktivieren. Weitere Informationen finden [ unter ](https://developer.android.com/develop/ui/views/notifications)Über Benachrichtigungen“.
+Das Android Studio-Projekt ist bereits für Push-Benachrichtigungen eingerichtet. Sie müssen keine zusätzlichen Schritte ausführen, um die Android-Version der Luma-App für Push-Benachrichtigungen zu aktivieren. Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.android.com/develop/ui/views/notifications)Über Benachrichtigungen“.
 
 Android-Push-Benachrichtigungen erfordern, dass Sie eine Benachrichtigungskanal-ID definieren, sowohl in Ihrer Mobile App als auch beim Senden einer Push-Benachrichtigung. Die in der Android Luma-App verwendete Kanalbenachrichtigungs-ID ist `LUMA_CHANNEL ID`.
 
@@ -443,7 +443,7 @@ Sie werden einen neuen Ereignistyp definieren, der noch nicht als Teil der Liste
 
 ### Ereignis definieren
 
-Mit Ereignissen in Journey Optimizer können Sie Trigger-Journey zum Senden von Nachrichten, z. B. Push-Benachrichtigungen, hinzufügen. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events)Über Ereignisse“.
+Mit Ereignissen in Journey Optimizer können Sie Trigger-Journey zum Senden von Nachrichten, z. B. Push-Benachrichtigungen, hinzufügen. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events)Über Ereignisse“.
 
 1. Wählen Sie in der Benutzeroberfläche von Journey Optimizer **[!UICONTROL Konfigurationen]** in der linken Leiste aus.
 
@@ -474,7 +474,7 @@ Mit Ereignissen in Journey Optimizer können Sie Trigger-Journey zum Senden von 
    1. Klicken Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) neben dem Feld **[!UICONTROL Ereignis-ID-Bedingung]**.
 
       1. Ziehen Sie **[!UICONTROL Dialogfeld „Ereignis-ID-Bedingung hinzufügen]** per Drag-and-Drop **[!UICONTROL Ereignistyp (eventType)]** auf **[!UICONTROL Ziehen Sie ein Element hierher]**.
-      1. Scrollen Sie im Popover nach unten und wählen Sie **[!UICONTROL application.test]** aus (dies ist der Ereignistyp, den Sie zuvor als Teil von „Schema aktualisieren[ zur Liste der Ereignistypen hinzugefügt ](#update-your-schema)). Scrollen Sie dann nach oben und wählen Sie **[!UICONTROL OK]** aus.
+      1. Scrollen Sie im Popover nach unten und wählen Sie **[!UICONTROL application.test]** aus (dies ist der Ereignistyp, den Sie zuvor als Teil von „Schema aktualisieren[&#x200B; zur Liste der Ereignistypen hinzugefügt &#x200B;](#update-your-schema)). Scrollen Sie dann nach oben und wählen Sie **[!UICONTROL OK]** aus.
       1. Klicken Sie **[!UICONTROL OK]**, um die Bedingung zu speichern.
          ![Ereignisbedingung bearbeiten](assets/ajo-edit-condition.png){zoomable="yes"}
 
@@ -498,7 +498,7 @@ Als Nächstes erstellen Sie die Journey, die den Versand der Push-Benachrichtigu
    1. Klicken Sie auf **[!UICONTROL OK]**.
       ![Journey-Eigenschaften](assets/ajo-journey-properties.png){zoomable="yes"}
 
-1. Ziehen Sie auf der Journey-Arbeitsfläche von **[!UICONTROL EREIGNISSE]** Ihren ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)Ereignis **[!DNL LumaTestEvent]** auf die Arbeitsfläche, auf der er angezeigt wird **[!UICONTROL Wählen Sie ein Eintrittsereignis oder eine Aktivität zum Lesen einer Zielgruppe aus]**.
+1. Ziehen Sie auf der Journey-Arbeitsfläche von **[!UICONTROL EREIGNISSE]** Ihren ![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)Ereignis **[!DNL LumaTestEvent]** auf die Arbeitsfläche, auf der er angezeigt wird **[!UICONTROL Wählen Sie ein Eintrittsereignis oder eine Aktivität zum Lesen einer Zielgruppe aus]**.
 
    * Geben Sie im **[!UICONTROL Ereignisse: LumaTestEvent]** einen **[!UICONTROL Titel]** ein, z. B. `Luma Test Event`.
 

@@ -67,7 +67,7 @@ Führen Sie daher die folgenden Schritte aus, um den benutzerdefinierten Code zu
 1. Schließen Sie dieses Code-Fenster und schließen Sie die Aktion (brechen Sie sie ab).
 1. Öffnen Sie die Aktion Web SDK - Variable aktualisieren , indem Sie darauf klicken (oder, falls Sie noch keine haben, fügen Sie eine hinzu).
 
-   ![Aktion „Variable aktualisieren“ ](assets/open-sdk-update-variable.jpg)
+   ![Aktion „Variable aktualisieren“ &#x200B;](assets/open-sdk-update-variable.jpg)
 
 1. Wählen Sie oben im rechten Fenster das Analytics-Objekt aus
 

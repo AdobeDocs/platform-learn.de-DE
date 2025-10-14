@@ -101,7 +101,7 @@ Sie können die Kennungen finden, indem Sie ein Schema öffnen und die `_experie
 
 ![demo](./images/commerce.png)
 
-- Vorschau für alle [Datensätze](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) und Datenansicht
+- Vorschau für alle [Datensätze](https://experience.adobe.com/platform/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created) und Datenansicht
 
 Sie können jetzt mit der Verwendung der Customer Journey Analytics-Benutzeroberfläche beginnen.
 

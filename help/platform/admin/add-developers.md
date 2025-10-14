@@ -27,4 +27,4 @@ Erfahren Sie, wie Sie Entwickler zu Adobe Experience Platform-basierten Programm
 
 >[!TIP]
 >
->Es wird empfohlen, den Entwickler auch als **Benutzer** zum `AEP-Default-All-Users` Produktprofil in Admin Console hinzuzufügen und ihn dann derselben Rolle in der Platform-Oberfläche wie die API-Anmeldeinformationen hinzuzufügen. Auf diese Weise können sie bei Bedarf die -Schnittstelle verwenden. Weitere Informationen finden [ unter ](add-users.md) von Benutzern .
+>Es wird empfohlen, den Entwickler auch als **Benutzer** zum `AEP-Default-All-Users` Produktprofil in Admin Console hinzuzufügen und ihn dann derselben Rolle in der Platform-Oberfläche wie die API-Anmeldeinformationen hinzuzufügen. Auf diese Weise können sie bei Bedarf die -Schnittstelle verwenden. Weitere Informationen finden [&#x200B; unter &#x200B;](add-users.md) von Benutzern .

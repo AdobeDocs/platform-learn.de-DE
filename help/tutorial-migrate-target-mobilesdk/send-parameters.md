@@ -64,7 +64,7 @@ Target ermöglicht die Synchronisierung von Profilen über Geräte und Systeme h
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Benutzerdefinierte Entitätsparameter werden zum Aktualisieren des Recommendations-Produktkatalogs verwendet. Diese benutzerdefinierten Parameter müssen als Teil des `data` übergeben werden. |
 | `cartIds` | `data.__adobe.target.cartIds` | Wird für die Warenkorb-basierten Empfehlungsalgorithmen von Target verwendet. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Wird verwendet, um zu verhindern, dass bestimmte Entitäts-IDs in einem Recommendations-Design zurückgegeben werden. |
-| `mbox3rdPartyId` | Wird im `xdm.identityMap` festgelegt | Wird zum Synchronisieren von Target-Profilen über Geräte und Kundenattribute hinweg verwendet. Der für die Kunden-ID zu verwendende Namespace muss in der [Target-Konfiguration des Datenstroms“ angegeben ](https://experienceleague.adobe.com/de/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid). |
+| `mbox3rdPartyId` | Wird im `xdm.identityMap` festgelegt | Wird zum Synchronisieren von Target-Profilen über Geräte und Kundenattribute hinweg verwendet. Der für die Kunden-ID zu verwendende Namespace muss in der [Target-Konfiguration des Datenstroms“ angegeben &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid). |
 | `orderId` | `xdm.commerce.order.purchaseID`<br> (wenn `commerce.purchases.value` auf `1` gesetzt ist)<br> oder<br> `data.__adobe.target.orderId` | Wird zur Identifizierung einer eindeutigen Reihenfolge für das Target-Konversions-Tracking verwendet. |
 | `orderTotal` | `xdm.commerce.order.priceTotal`<br> (wenn `commerce.purchases.value` auf `1` gesetzt ist)<br> oder<br> `data.__adobe.target.orderTotal` | Wird zum Tracking der Bestellsummen für Konversions- und Optimierungsziele von Target verwendet. |
 | `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (wenn `commerce.purchases.value` auf `1` gesetzt ist) <br>ODER<br> `data.__adobe.target.productPurchasedId` | Wird für Target-Konversionsverfolgungs- und Recommendations-Algorithmen verwendet. |
@@ -202,7 +202,7 @@ let targetParameters = TargetParameters(parameters: mboxParameters, profileParam
 
 
 
-Erfahren Sie als Nächstes, wie Sie [Target-Konversionsereignisse ](track-events.md) Platform Web SDK verfolgen.
+Erfahren Sie als Nächstes, wie Sie [Target-Konversionsereignisse &#x200B;](track-events.md) Platform Web SDK verfolgen.
 
 >[!NOTE]
 >

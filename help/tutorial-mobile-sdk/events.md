@@ -80,7 +80,7 @@ var xdmData: [String: Any] = [
 
 In diesem Code:
 
-* `eventType`: Beschreibt das aufgetretene Ereignis. Verwenden Sie nach Möglichkeit einen [bekannten ](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values)&quot;.
+* `eventType`: Beschreibt das aufgetretene Ereignis. Verwenden Sie nach Möglichkeit einen [bekannten &#x200B;](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values)&quot;.
 
 * `commerce.productViews.value`: Der numerische oder boolesche Wert des Ereignisses. Wenn es sich um einen booleschen Wert (oder „Zähler“ in Adobe Analytics) handelt, wird der Wert immer auf 1 festgelegt. Wenn es sich um ein numerisches oder ein Währungsereignis handelt, kann der Wert > 1 sein.
 
@@ -99,7 +99,7 @@ val xdmData = mapOf(
 
 In diesem Code:
 
-* `eventType`: Beschreibt das aufgetretene Ereignis. Verwenden Sie nach Möglichkeit einen [bekannten ](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values)&quot;.
+* `eventType`: Beschreibt das aufgetretene Ereignis. Verwenden Sie nach Möglichkeit einen [bekannten &#x200B;](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values)&quot;.
 
 * `commerce.productViews.value`: Der numerische oder boolesche Wert des Ereignisses. Wenn es sich um einen booleschen Wert (oder „Zähler“ in Adobe Analytics) handelt, wird der Wert immer auf 1 festgelegt. Wenn es sich um ein numerisches oder ein Währungsereignis handelt, kann der Wert > 1 sein.
 
@@ -194,7 +194,7 @@ Edge.sendEvent(productViewEvent, null)
 >[!ENDTABS]
 
 
-Die [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)-API entspricht der AEP Mobile SDK den [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction)- und [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate)-API-Aufrufen. Weitere [ finden Sie unter „Migrieren von der Analytics Mobile-Erweiterung ](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) Adobe Experience Platform Edge Network&quot;.
+Die [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)-API entspricht der AEP Mobile SDK den [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction)- und [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate)-API-Aufrufen. Weitere [&#x200B; finden Sie unter „Migrieren von der Analytics Mobile-Erweiterung &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) Adobe Experience Platform Edge Network&quot;.
 
 Sie werden diesen Code jetzt in Ihrem Projekt implementieren.
 Sie haben verschiedene Commerce-produktbezogene Aktionen in Ihrer App und möchten Ereignisse senden, die auf diesen Aktionen basieren und vom Benutzer ausgeführt werden:
@@ -556,7 +556,7 @@ Implementieren Sie diesen Code erneut in Ihrem Projekt.
 
 >[!TAB Android]
 
-1. Zur Vereinfachung definieren Sie zwei Funktionen in **[!UICONTROL MobileSDK]**. Android Navigieren Sie in Ihrem Android **[!UICONTROL -Navigator zu {]**}![ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** models **[!UICONTROL >]** MobileSDK **[!UICONTROL .]**
+1. Zur Vereinfachung definieren Sie zwei Funktionen in **[!UICONTROL MobileSDK]**. Android Navigieren Sie in Ihrem Android **[!UICONTROL -Navigator zu {]**}![ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** models **[!UICONTROL >]** MobileSDK **[!UICONTROL .]**
 
    * Eines für App-Interaktionen. Fügen Sie den folgenden Code zur `fun sendAppInteractionEvent(actionName: String)` hinzu:
 
@@ -610,7 +610,7 @@ Implementieren Sie diesen Code erneut in Ihrem Projekt.
       * ein Erlebnisereignis mithilfe der Zuordnung einrichtet,
       * sendet das Erlebnisereignis über die [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)-API.
 
-1. Navigieren Sie zu **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B; views &#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
+1. Navigieren Sie zu **[!UICONTROL Android]** ![ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B; views &#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
 
    1. Fügen Sie den folgenden hervorgehobenen Code zum Ereignis **[!UICONTROL Button]** **[!UICONTROL onClick]** hinzu:
 
@@ -675,7 +675,7 @@ Sie sollten jetzt über alle Tools verfügen, um mit dem Hinzufügen der Datener
 
 ## Senden von Ereignissen an Analytics und Platform
 
-Nachdem Sie nun die Ereignisse erfasst und an Platform Edge Network gesendet haben, werden sie an die Programme und Services gesendet, die in Ihrem [Datenstrom“ konfiguriert ](create-datastream.md). In späteren Lektionen ordnen Sie diese Daten [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) und anderen Adobe Experience Cloud-Lösungen (wie [Adobe Target](target.md) und Adobe Journey Optimizer) zu.
+Nachdem Sie nun die Ereignisse erfasst und an Platform Edge Network gesendet haben, werden sie an die Programme und Services gesendet, die in Ihrem [Datenstrom“ konfiguriert &#x200B;](create-datastream.md). In späteren Lektionen ordnen Sie diese Daten [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) und anderen Adobe Experience Cloud-Lösungen (wie [Adobe Target](target.md) und Adobe Journey Optimizer) zu.
 
 >[!SUCCESS]
 >

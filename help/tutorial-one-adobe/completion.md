@@ -57,13 +57,13 @@ Der erwartete Abschlussnachweis für das Modul **Workflow-Management mit Adobe W
 
 Um die URL abzurufen, klicken Sie auf **Link freigeben** auf dem in AEM Assets hochgeladenen Bild.
 
-![12 ](./assets/images/wflink1.png){zoomable="yes"}
+![12 &#x200B;](./assets/images/wflink1.png){zoomable="yes"}
 
 Kopieren Sie die URL, indem Sie auf **Symbol** Kopieren“ klicken.
 
 Die URL sieht wie folgt aus: `https://author-p148121-e1511399.adobeaemcloud.com/linkshare.html?sh=d63ec826_df79_4c73_a05c_2c2115baef78.dw7JBu2VxkNZvXE2oq9J6KwFRrt5VAffkuqC0nZIjHE`.
 
-![12 ](./assets/images/wflink2.png){zoomable="yes"}
+![12 &#x200B;](./assets/images/wflink2.png){zoomable="yes"}
 
 ## 3.1 Federated Audience-Komposition
 
@@ -87,7 +87,7 @@ Der erwartete Abschlussnachweis für das Modul **Adobe Journey Optimizer: Offer 
 
 Sie finden die **Entscheidungs-ID**, die wie **`dps:offer-activity:1a08ba4b529b2fb2`** aussieht, hier:
 
-![14 ](./assets/images/offers.png){zoomable="yes"}
+![14 &#x200B;](./assets/images/offers.png){zoomable="yes"}
 
 >[!NOTE]
 >

@@ -58,7 +58,7 @@ limit 10;
 
 Öffnen Sie Postman auf Ihrem Computer. Im Rahmen von Modul 2.1 haben Sie eine Postman-Umgebung erstellt und eine Postman-Sammlung importiert. Befolgen Sie die Anweisungen [Übung 2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) falls Sie dies noch nicht getan haben.
 
-Als Teil der von Ihnen importierten Postman-Sammlung wird der Ordner **3 angezeigt. Abfrage-**. Wenn dieser Ordner nicht angezeigt wird, laden Sie die [Postman-Sammlung erneut ](./../../../../assets/postman/postman_profile.zip) und importieren Sie diese Sammlung erneut in Postman, wie in [Übung 2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) beschrieben.
+Als Teil der von Ihnen importierten Postman-Sammlung wird der Ordner **3 angezeigt. Abfrage-**. Wenn dieser Ordner nicht angezeigt wird, laden Sie die [Postman-Sammlung erneut &#x200B;](./../../../../assets/postman/postman_profile.zip) und importieren Sie diese Sammlung erneut in Postman, wie in [Übung 2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) beschrieben.
 
 ![QS](./images/pm3.png)
 

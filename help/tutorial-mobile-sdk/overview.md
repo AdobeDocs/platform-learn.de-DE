@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie Adobe Experience Cloud-Anwendungen mit Adobe Experience Platform Mobile SDK in Ihrer Mobile App implementieren.
 
-Experience Platform Mobile SDK ist eine Client-seitige SDK, die es Kunden von Adobe Experience Cloud ermöglicht, sowohl mit Adobe-Anwendungen als auch mit Drittanbieter-Services über Adobe Experience Platform Edge Network zu interagieren. Weitere Informationen finden Sie in der Dokumentation [ Adobe Experience Platform Mobile SDK .](https://developer.adobe.com/client-sdks/home/)
+Experience Platform Mobile SDK ist eine Client-seitige SDK, die es Kunden von Adobe Experience Cloud ermöglicht, sowohl mit Adobe-Anwendungen als auch mit Drittanbieter-Services über Adobe Experience Platform Edge Network zu interagieren. Weitere Informationen finden Sie in der Dokumentation [&#x200B; Adobe Experience Platform Mobile SDK .](https://developer.adobe.com/client-sdks/home/)
 
 ![Architektur](assets/architecture.png){zoomable="yes"}
 
@@ -99,7 +99,7 @@ In diesen Lektionen wird davon ausgegangen, dass Sie über eine Adobe-ID und die
 
 >[!TAB iOS]
 
-Zwei Versionen der Beispiel-App stehen zum Download zur Verfügung. Beide Versionen können von (GitHub[ heruntergeladen/geklont ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). Es gibt zwei Ordner:
+Zwei Versionen der Beispiel-App stehen zum Download zur Verfügung. Beide Versionen können von (GitHub[&#x200B; heruntergeladen/geklont &#x200B;](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). Es gibt zwei Ordner:
 
 1. [Start](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: Ein Projekt ohne Code oder mit Platzhaltercode für den Großteil des Experience Platform Mobile SDK-Codes, den Sie verwenden müssen, um die praktischen Übungen in diesem Tutorial abzuschließen.
 1. [Beenden](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: eine Version mit der vollständigen Implementierung als Referenz.
@@ -112,14 +112,14 @@ Sie können die endgültige produktbezogene Version der App von der App Store he
 
 >[!TAB Android]
 
-Zwei Versionen der Beispiel-App stehen zum Download zur Verfügung. Beide Versionen können von (GitHub[ heruntergeladen oder geklont ](https://github.com/adobe/Luma-Android). Es gibt zwei Ordner:
+Zwei Versionen der Beispiel-App stehen zum Download zur Verfügung. Beide Versionen können von (GitHub[&#x200B; heruntergeladen oder geklont &#x200B;](https://github.com/adobe/Luma-Android). Es gibt zwei Ordner:
 
 1. [Start](https://github.com/adobe/Luma-Android){target="_blank"}: Ein Projekt ohne Code oder mit Platzhaltercode für den Großteil des Experience Platform Mobile SDK-Codes, den Sie verwenden müssen, um die praktischen Übungen in diesem Tutorial abzuschließen.
 1. [Beenden](https://github.com/adobe/Luma-Android){target="_blank"}: eine Version mit der vollständigen Implementierung als Referenz.
 
 Sie verwenden Android als Plattform, [!DNL Kotlin]+[!DNL Java] als Programmiersprache, [!DNL JetPack Compose] als UI-Framework und [!DNL Android Studio] als integrierte Entwicklungsumgebung (IDE). Viele der erläuterten Implementierungskonzepte sind jedoch für andere Entwicklungsplattformen ähnlich. Viele haben dieses Tutorial bereits mit wenig bis gar keiner Erfahrung in Android / Kotlin+Java / JetPack Compose erfolgreich abgeschlossen. Sie müssen kein Experte sein, um die Lektionen zu vervollständigen, aber Sie erhalten mehr aus den Lektionen, wenn Sie Code bequem lesen und verstehen können.
 
-Wenn Sie es vorziehen, können [ aus Google Play an einem Test für eine produktbezogene Version ](https://play.google.com/apps/internaltest/4700642199234438150) App teilnehmen.
+Wenn Sie es vorziehen, können [&#x200B; aus Google Play an einem Test für eine produktbezogene Version &#x200B;](https://play.google.com/apps/internaltest/4700642199234438150) App teilnehmen.
 
 
 >[!ENDTABS]

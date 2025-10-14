@@ -26,7 +26,7 @@ Lassen Sie uns die Vorteile der Verwendung von Web SDK zur Aufnahme von Daten in
 ## Hier ist alles
 
 - Tech Blog: [Vereinfachen von Kunden-Workflows mit Adobe Experience Platform Web SDK](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
-- Tech Blog: [Rationalisierung von Client-Server-Integrationen mit dem Adobe Experience Platform-Edge Network ](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+- Tech Blog: [Rationalisierung von Client-Server-Integrationen mit dem Adobe Experience Platform-Edge Network &#x200B;](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
 - Tech Blog: [Vereinheitlichen Sie Ihre Adobe Experience Platform-Services mit Adobe Experience Platform Web SDK](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
 
 [Zurück zu Modul 1](./data-ingestion-launch-web-sdk.md)

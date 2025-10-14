@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In dieser Lektion richten Sie ein Projekt in der Adobe Developer Console ein und laden [!DNL Postman] Sammlungen herunter, damit Sie Platform-APIs verwenden können.
 
-Um die API-Übungen in diesem Tutorial abzuschließen, laden [ die Postman-App für Ihr Betriebssystem herunter.](https://www.postman.com/downloads/) Für die Verwendung von Experience Platform-APIs ist Postman zwar nicht erforderlich, erleichtert aber API-Workflows. Adobe Experience Platform stellt Dutzende von Postman-Sammlungen bereit, mit denen Sie API-Aufrufe ausführen und lernen können, wie sie funktionieren. Für den Rest dieses Tutorials werden Kenntnisse über Postman vorausgesetzt. Unterstützung erhalten Sie in der [Dokumentation zu Postman](https://learning.postman.com/).
+Um die API-Übungen in diesem Tutorial abzuschließen, laden [&#x200B; die Postman-App für Ihr Betriebssystem herunter.](https://www.postman.com/downloads/) Für die Verwendung von Experience Platform-APIs ist Postman zwar nicht erforderlich, erleichtert aber API-Workflows. Adobe Experience Platform stellt Dutzende von Postman-Sammlungen bereit, mit denen Sie API-Aufrufe ausführen und lernen können, wie sie funktionieren. Für den Rest dieses Tutorials werden Kenntnisse über Postman vorausgesetzt. Unterstützung erhalten Sie in der [Dokumentation zu Postman](https://learning.postman.com/).
 
 Platform wird API-First erstellt. Auch wenn Schnittstellenoptionen für alle wichtigen Aufgaben vorhanden sind, sollten Sie die Platform-API zu einem späteren Zeitpunkt verwenden. So können Sie beispielsweise Daten aufnehmen, Elemente zwischen Sandboxes verschieben, Routineaufgaben automatisieren oder neue Platform-Funktionen verwenden, bevor die Benutzeroberfläche erstellt wurde.
 

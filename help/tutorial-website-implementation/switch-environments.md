@@ -11,7 +11,7 @@ ht-degree: 24%
 
 # Wechseln von Tag-Umgebungen mit dem Experience Cloud Debugger
 
-In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) um die Tag-Eigenschaft auf der Demo-Site [Luma“ hartcodiert ](https://luma.enablementadobe.com/content/luma/us/en.html) Ihre eigene Eigenschaft zu ersetzen.
+In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) um die Tag-Eigenschaft auf der Demo-Site [Luma“ hartcodiert &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) Ihre eigene Eigenschaft zu ersetzen.
 
 Diese Technik wird als Umgebungsumschaltung bezeichnet und ist später hilfreich, wenn Sie auf Ihrer eigenen Website mit Tags arbeiten. Sie können Ihre Produktions-Website in Ihrem Browser laden, jedoch mit Ihrer *Entwicklungs-)*. Auf diese Weise können Sie Tag-Änderungen unabhängig von Ihren regulären Code-Versionen sicher vornehmen und validieren.  Schließlich ist diese Trennung der Marketing-Tag-Versionen von Ihren regulären Code-Versionen einer der Hauptgründe, warum Kunden Tags überhaupt verwenden!
 
@@ -34,7 +34,7 @@ Am Ende dieser Lektion können Sie:
 
 1. Öffnen Sie in Ihrer Tag-Eigenschaft die `Environments`
 
-1. Klicken Sie in **[!UICONTROL Zeile]** Entwicklung“ auf das Symbol „Installieren![, ](images/launch-installIcon.png) das Modal zu öffnen
+1. Klicken Sie in **[!UICONTROL Zeile]** Entwicklung“ auf das Symbol „Installieren![, &#x200B;](images/launch-installIcon.png) das Modal zu öffnen
 
 1. Klicken Sie auf das Kopiersymbol ![Kopiersymbol](images/launch-copyIcon.png), um den Einbettungscode in die Zwischenablage zu kopieren.
 

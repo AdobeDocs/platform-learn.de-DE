@@ -136,7 +136,7 @@ Fügen wir dem `Luma Loyalty Schema` eine primäre Identität hinzu:
 1. Wählen Sie **[!UICONTROL Übernehmen]**
 1. Wählen Sie **[!UICONTROL Speichern]**
 
-   ![Primäre ](assets/identity-loyalty-primary.png)
+   ![Primäre &#x200B;](assets/identity-loyalty-primary.png)
 
 Wiederholen Sie den Vorgang für einige Ihrer anderen Schemata:
 

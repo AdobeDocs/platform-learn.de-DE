@@ -42,7 +42,7 @@ Schauen Sie sich jetzt die linke Leiste an.
 
 - **[!UICONTROL Tags]** bietet einen Überblick über alle Client-seitigen Eigenschaften
 - **[!UICONTROL App-Oberflächen]** bietet einen Überblick über alle App-Konfigurationen zum Aktivieren von Push-Benachrichtigungen (die in Kombination mit Project Sierra verwendet/aktiviert wird)
-- **[!UICONTROL Datenströme]** werden in der [ Übung untersucht](./ex2.md)
+- **[!UICONTROL Datenströme]** werden in der [&#x200B; Übung untersucht](./ex2.md)
 - **[!UICONTROL Ereignisweiterleitung]** bietet einen Überblick über alle Server-seitigen Eigenschaften, die in untersucht werden [Modul 2.5 - Real-Time CDP Connections: Ereignisweiterleitung](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
 - **[!UICONTROL Monitoring]** bietet einen Überblick über den eingehenden und ausgehenden Ereignisdatenverkehr durch die Ereignisweiterleitung
 - **[!UICONTROL Assurance]** bietet Zugriff zum Debuggen einer Implementierung mithilfe des Adobe Debuggers

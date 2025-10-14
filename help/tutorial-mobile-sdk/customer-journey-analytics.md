@@ -67,7 +67,7 @@ Eine Verbindung in Customer Journey Analytics definiert die Datensätze (und die
 
       1. Die folgenden Datensätze auswählen:
 
-         - **[!UICONTROL Luma Mobile App Event Dataset]** der Datensatz, den Sie im Rahmen des Abschnitts [Erstellen eines ](platform.md#create-a-dataset)&quot; in der Experience Platform-Lektion erstellt haben.
+         - **[!UICONTROL Luma Mobile App Event Dataset]** der Datensatz, den Sie im Rahmen des Abschnitts [Erstellen eines &#x200B;](platform.md#create-a-dataset)&quot; in der Experience Platform-Lektion erstellt haben.
          - **[!UICONTROL ODE DecisionEvents - *Sandbox-Name*] Decisioning**
          - **[!UICONTROL AJO-Push-Tracking-Ereignisdatensätze]**
 
@@ -113,7 +113,7 @@ Nachdem die Datensätze aus den Datensätzen zu Customer Journey Analytics hinzu
 
 Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden. Sie können Standard- und Schemafelder aus jedem Datensatz konfigurieren, den Sie in Ihrer Verbindung als Komponenten (Dimensionen, Metriken) in Analysis Workspace definiert haben.
 
-Eine Datenansicht in Customer Journey Analytics bietet eine enorme Flexibilität beim ordnungsgemäßen Einrichten und Definieren der Daten aus Ihrer Verbindung. In diesem Tutorial verwenden Sie nur die Funktionen, die für Ihre Berichterstellung und Analyse erforderlich sind. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/data-views)Datenansichten“.
+Eine Datenansicht in Customer Journey Analytics bietet eine enorme Flexibilität beim ordnungsgemäßen Einrichten und Definieren der Daten aus Ihrer Verbindung. In diesem Tutorial verwenden Sie nur die Funktionen, die für Ihre Berichterstellung und Analyse erforderlich sind. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/data-views)Datenansichten“.
 
 
 So erstellen Sie eine Datenansicht:
@@ -138,7 +138,7 @@ So erstellen Sie eine Datenansicht:
 
         ![CJA-Datenansicht 2a](assets/cja-dataview-2a.png){zoomable="yes"}
 
-      - Wechseln Sie zum Schemafeld in ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignis-]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Beispiel: ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignisdatensätze]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)![ Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)**&#x200B;**![](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) Chevron![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **&#x200B;**&#x200B;productListAdds![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
+      - Wechseln Sie zum Schemafeld in ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignis-]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Beispiel: ![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignisdatensätze]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)![&#x200B; Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)**&#x200B;**![](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) Chevron![Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **&#x200B;**&#x200B;productListAdds![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
 
         ![CJA-Datenansicht 2a](assets/cja-dataview-2b.png){zoomable="yes"}
 
@@ -213,7 +213,7 @@ Sie haben Ihre Datenansicht definiert und alles ist bereit, um mit der Erstellun
 
 ## Erstellen eines Projekts
 
-Workspace-Projekte werden in Customer Journey Analytics zum Erstellen von Berichten und Visualisierungen verwendet. Es gibt viele Möglichkeiten, umfassende Berichte und ansprechende Visualisierungen zu erstellen, aber dies überschreitet den Rahmen dieses Tutorials. Workspace Weitere Informationen finden Sie unter {[}Übersicht über ](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) und [Neues Projekt erstellen“.](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project)
+Workspace-Projekte werden in Customer Journey Analytics zum Erstellen von Berichten und Visualisierungen verwendet. Es gibt viele Möglichkeiten, umfassende Berichte und ansprechende Visualisierungen zu erstellen, aber dies überschreitet den Rahmen dieses Tutorials. Workspace Weitere Informationen finden Sie unter {[}Übersicht über &#x200B;](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) und [Neues Projekt erstellen“.](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project)
 
 In diesem Abschnitt der Lektion erstellen Sie ein Projekt, das Berichte und Visualisierungen zu folgenden Themen anzeigt:
 
@@ -263,7 +263,7 @@ Sie haben jetzt Ihr Projekt eingerichtet. Eine Freiformtabelle wird standardmä�
 
 ### App Usage
 
-Jetzt können Sie einen Bericht über die Verwendung der App erstellen. Sie haben den erforderlichen Code in der App hinzugefügt, um App-Interaktionen zu registrieren und zu ermitteln, welche Bildschirme in der App verwendet werden (siehe [Lektion „Ereignisse ](events.md) verfolgen„), und Sie möchten nun über diese Daten berichten.
+Jetzt können Sie einen Bericht über die Verwendung der App erstellen. Sie haben den erforderlichen Code in der App hinzugefügt, um App-Interaktionen zu registrieren und zu ermitteln, welche Bildschirme in der App verwendet werden (siehe [Lektion „Ereignisse &#x200B;](events.md) verfolgen„), und Sie möchten nun über diese Daten berichten.
 
 #### Bildschirmnamen
 
@@ -443,7 +443,7 @@ Abschließend möchten Sie einen Bericht zu Store-Besuchen erstellen.
 
 1. Benennen Sie **[!UICONTROL Freiformtabelle]** in `Store Entries / Exits Across Cities` um.
 
-1. Ziehen Sie die Metrik **[!UICONTROL Standortereignisse]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**(oder eine andere Komponente)_]. Der Bericht zeigt jetzt einen täglichen Überblick über alle Standortereignisse an, die in der App aufgetreten sind. Denken Sie daran, wie Sie diese Dimension speziell im Rahmen Ihrer [Datenansicht“ konfiguriert ](#create-a-data-view).
+1. Ziehen Sie die Metrik **[!UICONTROL Standortereignisse]** per Drag-and-Drop auf [!UICONTROL _Legen Sie eine **Metrik**(oder eine andere Komponente)_]. Der Bericht zeigt jetzt einen täglichen Überblick über alle Standortereignisse an, die in der App aufgetreten sind. Denken Sie daran, wie Sie diese Dimension speziell im Rahmen Ihrer [Datenansicht“ konfiguriert &#x200B;](#create-a-data-view).
 
 1. Ziehen Sie die Dimension **[!UICONTROL Stadt]** per Drag-and-Drop auf die **[!UICONTROL Tag]**-Spaltenüberschrift, um die Dimension zu ersetzen. Der Bericht zeigt nun die Städte für die Standortereignisse an.
 

@@ -44,7 +44,7 @@ In dieser Lektion erfahren Sie, wie Sie das System so erstellen und konfiguriere
 1. Nachdem der Datenstrom gespeichert wurde, wird ein neuer Bildschirm angezeigt, in dem Sie wissen, dass Sie noch keine Services konfiguriert haben. Mit anderen Worten: Ihre Daten werden an Edge-Server gesendet, jedoch erst dann an Anwendungen, wenn wir einen Service hinzufügen. Wir konfigurieren nun den Datenstrom, um die Daten an Adobe Analytics zu senden. Klicken Sie **[!UICONTROL Service hinzufügen]**.
    ![Service hinzufügen](assets/datastream-add-service.jpg)
 1. Wählen Sie im Dropdown-Menü Service die Option **[!UICONTROL Adobe Analytics]**.
-1. Geben Sie im Feld Report Suite-ID die ID (nicht den Titel, sondern die Report Suite-ID) der Validierungs-Report Suite ein, die Sie in der Aktivität &quot;[ einer Validierungs-Report Suite“ ](create-a-validation-report-suite.md) haben. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Geben Sie im Feld Report Suite-ID die ID (nicht den Titel, sondern die Report Suite-ID) der Validierungs-Report Suite ein, die Sie in der Aktivität &quot;[&#x200B; einer Validierungs-Report Suite“ &#x200B;](create-a-validation-report-suite.md) haben. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Staging- und Produktionsdatenströme
 

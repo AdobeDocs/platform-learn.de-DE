@@ -120,7 +120,7 @@ Klicken Sie **HTML importieren**. Alternativ können Sie auf **Gespeicherte Vorl
 
 ![Journey Optimizer](./images/msg12.png)
 
-Wenn Sie **HTML importieren** ausgewählt haben, können Sie jetzt die Datei **mailtemplatebootcamp.html) per Drag-and-Drop**, die Sie ([) ](../../assets/html/mailtemplatebootcamp.html.zip) können. Klicken Sie auf Importieren.
+Wenn Sie **HTML importieren** ausgewählt haben, können Sie jetzt die Datei **mailtemplatebootcamp.html) per Drag-and-Drop**, die Sie ([) &#x200B;](../../assets/html/mailtemplatebootcamp.html.zip) können. Klicken Sie auf Importieren.
 
 ![Journey Optimizer](./images/msg13.png)
 

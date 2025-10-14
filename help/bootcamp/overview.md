@@ -97,11 +97,11 @@ Navigieren Sie zu [Videos](https://experienceleague.adobe.com/docs/platform-lear
 
 ## YouTube
 
-Weitere interessante Videos finden Sie [ unserem YouTube-](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+Weitere interessante Videos finden Sie [&#x200B; unserem YouTube-](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Benutzerflüsse
 
-[1. Akquise ](./uc/uc1/uc1.md)
+[1. Akquise &#x200B;](./uc/uc1/uc1.md)
 
 In diesem Benutzerablauf erfahren Sie alles, was Sie benötigen, um akquisitionsorientierte Anwendungsfälle für unbekannte, nicht authentifizierte Benutzende sowie für bekannte, authentifizierte Benutzende, die Real-Time CDP verwenden, zu implementieren.
 

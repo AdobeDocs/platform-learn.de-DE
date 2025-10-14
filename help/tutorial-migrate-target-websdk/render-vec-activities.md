@@ -32,7 +32,7 @@ Die Browser-Erweiterung Visual Editing Helper kann für Websites verwendet werde
 
 Die Visual Editing Helper wird automatisch aktiviert, wenn eine Website im VEC von Target geöffnet wird, um die Inhaltserstellung zu unterstützen. Die Erweiterung verfügt über keine bedingten Einstellungen. Die Erweiterung verarbeitet alle Einstellungen automatisch, einschließlich der SameSite-Cookie-Einstellungen.
 
-Weitere Informationen zur Erweiterung „Visual Editing Helper[ und zur Fehlerbehebung Visual Experience ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=de) finden Sie in [ entsprechenden Dokumentation ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=de).
+Weitere Informationen zur Erweiterung „Visual Editing Helper[&#x200B; und zur Fehlerbehebung Visual Experience &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=de) finden Sie in [&#x200B; entsprechenden Dokumentation &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=de).
 
 >[!IMPORTANT]
 >
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->Es ist möglich, [ in Visual Experience Composer ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=de#manually-rendering-content) Änderungen manuell zu rendern. Das manuelle Rendern von VEC-basierten Änderungen ist nicht üblich. Überprüfen Sie, ob Ihre at.js-Implementierung die `getOffers()`-Funktion verwendet, um eine Target-`pageLoad`-Anfrage manuell auszuführen, ohne `applyOffers()` zum Anwenden des Inhalts auf die Seite zu verwenden.
+>Es ist möglich, [&#x200B; in Visual Experience Composer &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=de#manually-rendering-content) Änderungen manuell zu rendern. Das manuelle Rendern von VEC-basierten Änderungen ist nicht üblich. Überprüfen Sie, ob Ihre at.js-Implementierung die `getOffers()`-Funktion verwendet, um eine Target-`pageLoad`-Anfrage manuell auszuführen, ohne `applyOffers()` zum Anwenden des Inhalts auf die Seite zu verwenden.
 
-Die Platform Web SDK bietet Entwicklern eine große Flexibilität beim Anfordern und Rendern von Inhalten. Weitere Informationen zu Optionen [ Details finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=de) Dokumentation zum Rendern personalisierter Inhalte .
+Die Platform Web SDK bietet Entwicklern eine große Flexibilität beim Anfordern und Rendern von Inhalten. Weitere Informationen zu Optionen [&#x200B; Details finden Sie in der &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=de) Dokumentation zum Rendern personalisierter Inhalte .
 
 ## Implementierungsbeispiel
 

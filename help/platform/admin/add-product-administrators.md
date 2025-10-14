@@ -24,4 +24,4 @@ Erfahren Sie, wie Sie Produktadministratoren für Adobe Experience Platform hinz
 
 >[!TIP]
 >
->Es wird empfohlen, den Produktadministrator auch als **Benutzer** zum `AEP-Default-All-Users` Produktprofil in Admin Console hinzuzufügen und ihn dann im Bildschirm „Berechtigungen“ in der Platform-Benutzeroberfläche einer Rolle hinzuzufügen. Weitere Informationen finden [ unter ](add-users.md) von Benutzern .
+>Es wird empfohlen, den Produktadministrator auch als **Benutzer** zum `AEP-Default-All-Users` Produktprofil in Admin Console hinzuzufügen und ihn dann im Bildschirm „Berechtigungen“ in der Platform-Benutzeroberfläche einer Rolle hinzuzufügen. Weitere Informationen finden [&#x200B; unter &#x200B;](add-users.md) von Benutzern .

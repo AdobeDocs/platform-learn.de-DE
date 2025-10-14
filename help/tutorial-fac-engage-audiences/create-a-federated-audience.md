@@ -66,4 +66,4 @@ In diesem Beispiel wurden Produkt- und Bonitätsinformationen verwendet, um unse
 
 Weitere Informationen zur Komposition von Audiences finden Sie unter [Experience League](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
-Nachdem wir nun unsere Federated Audience erstellt haben, [ wir sie einem S3-Ziel in Experience Platform ](map-federated-audience-to-s3.md).
+Nachdem wir nun unsere Federated Audience erstellt haben, [&#x200B; wir sie einem S3-Ziel in Experience Platform &#x200B;](map-federated-audience-to-s3.md).

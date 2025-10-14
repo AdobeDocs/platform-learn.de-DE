@@ -27,7 +27,7 @@ Sie haben nun diese Datei auf Ihrem Desktop:
 
 - `_AJO- Decisioning Service.postman_collection.json`
 
-In [Übung 2.1.3 - Postman-Authentifizierung auf Adobe I/O ](./../../../modules/rtcdp-b2c/module2.1/ex3.md) Sie Postman installiert. Für diese Übung müssen Sie Postman erneut verwenden.
+In [Übung 2.1.3 - Postman-Authentifizierung auf Adobe I/O &#x200B;](./../../../modules/rtcdp-b2c/module2.1/ex3.md) Sie Postman installiert. Für diese Übung müssen Sie Postman erneut verwenden.
 
 Öffnen Sie Postman und importieren Sie die Datei `_AJO- Decisioning Service.postman_collection.json`. Diese Sammlung ist dann in Postman verfügbar.
 

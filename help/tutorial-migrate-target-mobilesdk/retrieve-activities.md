@@ -27,7 +27,7 @@ Stellen Sie sicher, dass Sie eine Fehlerbehandlung einschließen, um unter Fehle
 
 >[!IMPORTANT]
 >
->Nachdem Sie Inhalte auf die App angewendet haben, müssen Sie `displayed` API auslösen, damit Target weiß, dass der Besucher den in der Aktivität angegebenen alternativen oder Standardinhalt gesehen hat. Weitere Einzelheiten finden Sie auf [ Seite ](track-events.md)Verfolgen von Target-Konversionsereignissen“.
+>Nachdem Sie Inhalte auf die App angewendet haben, müssen Sie `displayed` API auslösen, damit Target weiß, dass der Besucher den in der Aktivität angegebenen alternativen oder Standardinhalt gesehen hat. Weitere Einzelheiten finden Sie auf [&#x200B; Seite &#x200B;](track-events.md)Verfolgen von Target-Konversionsereignissen“.
 
 
 +++ Android-Beispiel

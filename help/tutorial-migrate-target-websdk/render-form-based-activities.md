@@ -100,7 +100,7 @@ Die Platform Web SDK bietet mehr Kontrolle darüber, wie formularbasierte Aktivi
 | `replaceHtml` | Container entfernen und durch das Angebot ersetzen | Nein | Ja |
 | `appendHtml` | Fügt das Angebot nach dem angegebenen Selektor an | Nein | Ja |
 
-Weitere Informationen [ Rendering-Optionen und Beispiele finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=de) Dokumentation zum Rendern von Inhalten mit Platform Web SDK .
+Weitere Informationen [&#x200B; Rendering-Optionen und Beispiele finden Sie in der &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=de) Dokumentation zum Rendern von Inhalten mit Platform Web SDK .
 
 ## Implementierungsbeispiel
 

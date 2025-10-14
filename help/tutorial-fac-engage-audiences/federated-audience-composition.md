@@ -34,4 +34,4 @@ In dieser Übung verwenden wir die Zielgruppe **SecurFinancial Loan Application 
 
 ![federated-method-1-2](assets/federated-method-1-2.png)
 
-Wir werden uns ein weiteres Beispiel für die Verwendung von Federated Data ansehen[ um eine „In-the-Moment“-Personalisierung bereitzustellen](deliver-in-the-moment-personalization.md)!
+Wir werden uns ein weiteres Beispiel für die Verwendung von Federated Data ansehen[&#x200B; um eine „In-the-Moment“-Personalisierung bereitzustellen](deliver-in-the-moment-personalization.md)!

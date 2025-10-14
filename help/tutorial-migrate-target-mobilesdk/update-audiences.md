@@ -84,7 +84,7 @@ Beispiel eines JSON-Angebots mit XDM-Objektparameternamen:
 Wenn Sie nach der Migration Anpassungen vornehmen möchten, um die neuen XDM-Mbox-Parameternamen zu berücksichtigen, achten Sie darauf, alle betroffenen Aktivitäten während des Migrationsereignisses anzuhalten, um Fehler bei der Aktivitätsanzeige für Besucher zu vermeiden.
 
 
-Erfahren Sie als Nächstes, wie [ die Target-Implementierung validieren](validate.md).
+Erfahren Sie als Nächstes, wie [&#x200B; die Target-Implementierung validieren](validate.md).
 
 >[!NOTE]
 >

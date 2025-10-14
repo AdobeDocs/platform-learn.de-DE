@@ -66,9 +66,9 @@ Um sicherzustellen, dass Daten, die von Ihrer Mobile App an Experience Platform 
 
    Ihre Eigenschaften finden Sie in der Target-Benutzeroberfläche unter **[!UICONTROL Administration]** > **[!UICONTROL Eigenschaften]**. Wählen Sie ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) aus, um das Eigenschafts-Token für die Eigenschaft anzuzeigen, die Sie verwenden möchten. Das Eigenschafts-Token hat ein Format wie `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`. Sie dürfen nur den Wert `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx` eingeben.
 
-   Optional können Sie eine Zielumgebungs-ID angeben. Target nutzt Umgebungen, um Ihre Sites und Vorproduktionsumgebungen zu organisieren, und ermöglicht so ein einfaches Management und separates Reporting. Zu den voreingestellten Umgebungen gehören Produktion, Staging und Entwicklung. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/target/using/administer/environments) und [Target](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)Umgebungs-ID).
+   Optional können Sie eine Zielumgebungs-ID angeben. Target nutzt Umgebungen, um Ihre Sites und Vorproduktionsumgebungen zu organisieren, und ermöglicht so ein einfaches Management und separates Reporting. Zu den voreingestellten Umgebungen gehören Produktion, Staging und Entwicklung. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/target/using/administer/environments) und [Target](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)Umgebungs-ID).
 
-   Optional können Sie einen Target-ID-Namespace eines Drittanbieters angeben, um die Profilsynchronisierung mit einem Identity-Namespace (z. B. einer CRM-ID) zu unterstützen. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)-Namespace für Target-Drittanbieter-ID .
+   Optional können Sie einen Target-ID-Namespace eines Drittanbieters angeben, um die Profilsynchronisierung mit einem Identity-Namespace (z. B. einer CRM-ID) zu unterstützen. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)-Namespace für Target-Drittanbieter-ID .
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -180,7 +180,7 @@ Es gibt viele Arten von Aktivitäten, die Sie in Adobe Target erstellen und in e
 
 1. Zurück im Bildschirm **[!UICONTROL Alle Aktivitäten]**:
 
-   1. Wählen Sie ![ Aktivität ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)Mehr“ aus.
+   1. Wählen Sie ![&#x200B; Aktivität &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)Mehr“ aus.
    1. Wählen Sie ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) **[!UICONTROL Activate]** aus, um Ihren A/B-Test zu aktivieren.
 
    ![Aktivieren](assets/target-activate.png){zoomable="yes"}

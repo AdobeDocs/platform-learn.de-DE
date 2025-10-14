@@ -20,7 +20,7 @@ Die Adobe Experience Platform Mobile SDK Lifecycle-Erweiterung ermöglicht die E
 ## Voraussetzungen
 
 * App mit installierten und konfigurierten SDKs erfolgreich erstellt und ausgeführt. Im Rahmen dieser Lektion haben Sie bereits mit der Lebenszyklusüberwachung begonnen. Siehe [Installieren von SDKs - Aktualisieren von AppDelegate](install-sdks.md#update-appdelegate) zur Überprüfung.
-* Die Assurance-Erweiterung wurde wie in der vorherigen [ beschrieben registriert](install-sdks.md).
+* Die Assurance-Erweiterung wurde wie in der vorherigen [&#x200B; beschrieben registriert](install-sdks.md).
 
 ## Lernziele
 

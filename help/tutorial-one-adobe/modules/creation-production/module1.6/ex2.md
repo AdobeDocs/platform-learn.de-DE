@@ -140,7 +140,7 @@ Sie sollten das dann sehen.
 
 ![ETL](./images/bucket4.png)
 
-Sie können CitiSignal-Bilddateien ([) ](./images/package.zip){target="_blank"}.
+Sie können CitiSignal-Bilddateien ([) &#x200B;](./images/package.zip){target="_blank"}.
 
 Exportieren Sie die Dateien auf Ihren Desktop.
 

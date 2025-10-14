@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->Wenn `productListItems[].SKU` und `productListItems[].name` beide Daten enthalten, wird der Wert in `productListItems[].SKU` verwendet. Weitere Informationen finden [ unter „Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping)Variablenzuordnung in Adobe Experience Edge&quot;
+>Wenn `productListItems[].SKU` und `productListItems[].name` beide Daten enthalten, wird der Wert in `productListItems[].SKU` verwendet. Weitere Informationen finden [&#x200B; unter „Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping)Variablenzuordnung in Adobe Experience Edge&quot;
 
 
 ### #2 - scAdd
@@ -129,7 +129,7 @@ s.events = "scAdd:321435"
 
 ## Mit Assurance validieren
 
-Mit der [Assurance ](assurance.md) Sie bestätigen, dass Sie ein Erlebnisereignis senden, die XDM-Daten korrekt sind und die Analytics-Zuordnung erwartungsgemäß erfolgt.
+Mit der [Assurance &#x200B;](assurance.md) Sie bestätigen, dass Sie ein Erlebnisereignis senden, die XDM-Daten korrekt sind und die Analytics-Zuordnung erwartungsgemäß erfolgt.
 
 1. Lesen Sie den Abschnitt [Setup-Anweisungen](assurance.md#connecting-to-a-session), um Ihren Simulator oder Ihr Gerät mit Assurance zu verbinden.
 
@@ -205,13 +205,13 @@ Um diese XDM-Kontextdaten Ihren Analytics-Daten in Ihrer Report Suite zuzuordnen
 
   ![Analytics ExperienceEvent FullExtension-Feldergruppe](assets/schema-analytics-extension.png){zoomable="yes"}
 
-* Erstellen Sie XDM-Payloads in Ihrer App entsprechend der Adobe Analytics ExperienceEvent Full Extension-Feldergruppe, ähnlich dem, was Sie in der Lektion [Nachverfolgen von ](events.md)) oder
+* Erstellen Sie XDM-Payloads in Ihrer App entsprechend der Adobe Analytics ExperienceEvent Full Extension-Feldergruppe, ähnlich dem, was Sie in der Lektion [Nachverfolgen von &#x200B;](events.md)) oder
 * Erstellen Sie Regeln in Ihrer Tags-Eigenschaft, die Regelaktionen verwenden, um Daten an die Feldergruppe Adobe Analytics ExperienceEvent Full Extension anzuhängen oder zu ändern. Weitere Informationen finden Sie unter [Anhängen von Daten an SDK-](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) oder [Ändern von Daten in SDK-Ereignissen](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
 
 
 ### Merchandising-eVars
 
-Wenn Sie [Merchandising-eVars](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) in Ihrer Analytics-Einrichtung verwenden, müssen Sie Ihre XDM-Payload, die Sie unter &quot;[ von Ereignisdaten“ definiert haben, erweitern](events.md) um diese Merchandising-Informationen zu erfassen. Ein Beispiel für eine Merchandising-Var ist `evar1`, wo Sie die Farbe von Produkten erfassen möchten, z. B. `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
+Wenn Sie [Merchandising-eVars](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) in Ihrer Analytics-Einrichtung verwenden, müssen Sie Ihre XDM-Payload, die Sie unter &quot;[&#x200B; von Ereignisdaten“ definiert haben, erweitern](events.md) um diese Merchandising-Informationen zu erfassen. Ein Beispiel für eine Merchandising-Var ist `evar1`, wo Sie die Farbe von Produkten erfassen möchten, z. B. `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
 
 * In JSON:
 
@@ -313,8 +313,8 @@ Wenn Sie Ihre Mobile App mit der [Adobe Analytics Mobile-Erweiterung](https://de
 
 Wenn Sie sich für die Migration zur Verwendung der empfohlenen Edge Network entscheiden, haben Sie keine Optionen:
 
-* Implementieren Sie die Erweiterung [Edge Network](configure-tags.md#extension-configuration) und verwenden Sie die [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent)-APIs, wie in der Lektion zum [ von Ereignisdaten ](events.md). Dieses Tutorial konzentriert sich auf diese Implementierung.
-* Implementieren Sie die [Edge Bridge](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)Erweiterung und verwenden Sie weiterhin Ihre [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) und [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API-Aufrufe. Weitere [ und ein separates Tutorial finden Sie unter ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)Implementieren der Edge Bridge-Erweiterung“.
+* Implementieren Sie die Erweiterung [Edge Network](configure-tags.md#extension-configuration) und verwenden Sie die [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent)-APIs, wie in der Lektion zum [&#x200B; von Ereignisdaten &#x200B;](events.md). Dieses Tutorial konzentriert sich auf diese Implementierung.
+* Implementieren Sie die [Edge Bridge](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)Erweiterung und verwenden Sie weiterhin Ihre [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) und [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API-Aufrufe. Weitere [&#x200B; und ein separates Tutorial finden Sie unter &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)Implementieren der Edge Bridge-Erweiterung“.
 
 
 

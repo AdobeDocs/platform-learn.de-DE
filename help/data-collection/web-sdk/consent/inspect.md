@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Einverständnissignale untersuchen und validieren
 
-Erfahren Sie, wie Sie überprüfen können, ob die Einverständniseinstellungen in Adobe Experience Platform ordnungsgemäß auf Ihre Daten angewendet werden. Weitere Informationen zum Testen der Implementierung finden [ in der Dokumentation zum ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=de#test-implementation) .
+Erfahren Sie, wie Sie überprüfen können, ob die Einverständniseinstellungen in Adobe Experience Platform ordnungsgemäß auf Ihre Daten angewendet werden. Weitere Informationen zum Testen der Implementierung finden [&#x200B; in der Dokumentation zum &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=de#test-implementation) .
 
 >[!NOTE]
 >

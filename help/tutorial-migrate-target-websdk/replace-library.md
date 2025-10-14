@@ -173,7 +173,7 @@ Fügen Sie in der Tag-Eigenschaft die Adobe Experience Platform Web SDK-Erweiter
 
 Die vordefinierte eigenständige Version erfordert einen „Basis-Code“, der direkt zur Seite hinzugefügt wird. Dadurch wird eine globale Funktion namens „Alloy“ erstellt. Verwenden Sie diese Funktion, um mit dem SDK zu interagieren. Wenn Sie der globalen Funktion einen anderen Namen geben möchten, ändern Sie den `alloy`.
 
-Weitere Informationen zu [ und Bereitstellungsoptionen finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=de) zur Installation von Platform Web SDK .
+Weitere Informationen zu [&#x200B; und Bereitstellungsoptionen finden Sie in der &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=de) zur Installation von Platform Web SDK .
 
 
 ## Ansatz zum Verbergen von Inhalten aktualisieren
@@ -396,7 +396,7 @@ Fügen Sie die gewünschten Konfigurationen hinzu:
 
 Beachten Sie, dass durch einfaches Einschließen und Konfigurieren der Platform Web SDK-Bibliothek wie oben gezeigt keine Netzwerkaufrufe an das Adobe Edge-Netzwerk ausgeführt werden.
 
-Erfahren Sie als Nächstes, wie [ (VEC-basierte Aktivitäten anfordern ](render-vec-activities.md) auf die Seite anwenden).
+Erfahren Sie als Nächstes, wie [&#x200B; (VEC-basierte Aktivitäten anfordern &#x200B;](render-vec-activities.md) auf die Seite anwenden).
 
 >[!NOTE]
 >

@@ -125,7 +125,7 @@ Die Datensätze müssen auch für das Profil aktiviert werden, und der Prozess i
 1. Schalten Sie den **[!UICONTROL Profil]** um
 1. Drücken Sie im Bestätigungs-Modal zur Bestätigung die **[!UICONTROL Aktivieren]**-Taste
 
-   ![ Profil-Umschalter](assets/profile-loyalty-enableDataset.png)
+   ![&#x200B; Profil-Umschalter](assets/profile-loyalty-enableDataset.png)
 
 Wiederholen Sie die obigen Schritte für diese anderen Datensätze:
 
@@ -191,4 +191,4 @@ Sie können auch bestätigen, dass auf der Benutzeroberfläche der Datensatz akt
 
 
 **Dateningenieure** sollten mit der Lektion [Abonnieren von Datenerfassungsereignissen](subscribe-to-data-ingestion-events.md) fortfahren.
-**Datenarchitekten** _können_ überspringen und zur Lektion [Batch-Aufnahme“ ](ingest-batch-data.md).
+**Datenarchitekten** _können_ überspringen und zur Lektion [Batch-Aufnahme“ &#x200B;](ingest-batch-data.md).

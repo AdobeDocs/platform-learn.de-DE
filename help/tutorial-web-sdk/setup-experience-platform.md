@@ -60,13 +60,13 @@ Richten wir einen Datensatz für Ihre Luma-Web-Ereignisdaten ein:
 
    ![Datensatz aus Schema erstellen](assets/experience-platform-create-dataset-schema.png)
 
-1. Wählen Sie das in der `Luma Web Event Data` Lektion erstellte [ Schema ](configure-schemas.md) und klicken Sie dann auf **[!UICONTROL Weiter]**
+1. Wählen Sie das in der `Luma Web Event Data` Lektion erstellte [&#x200B; Schema &#x200B;](configure-schemas.md) und klicken Sie dann auf **[!UICONTROL Weiter]**
 
    ![Datensatz, Schema auswählen](assets/experience-platform-create-dataset-schema-selection.png)
 
 1. Geben Sie einen **[!UICONTROL Namen]** und optional **[!UICONTROL Beschreibung]** für den Datensatz an. Verwenden Sie für diese Übung `Luma Web Event Data` und wählen Sie dann **[!UICONTROL Beenden]**
 
-   ![Datensatzname ](assets/experience-platform-create-dataset-schema-name.png)
+   ![Datensatzname &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
 
 Ein Datensatz ist jetzt so konfiguriert, dass er mit der Erfassung von Daten aus Ihrer Platform Web SDK-Implementierung beginnt.
 
@@ -126,7 +126,7 @@ Jetzt sollten die Daten im `Luma Web Event Data` Datensatz ausgefüllt und für 
 
 Um zu bestätigen, dass die Daten im Data Lake von Platform gelandet sind, besteht eine schnelle Option darin, die Funktion **[!UICONTROL Datensatz in der Vorschau anzeigen]** zu verwenden. Web SDK-Daten werden in Mikro-Batches mit dem Data Lake verknüpft und in der Platform-Oberfläche regelmäßig aktualisiert. Es kann 10-15 Minuten dauern, bis die von Ihnen generierten Daten angezeigt werden.
 
-1. Wählen Sie in der [ von ](https://experience.adobe.com/platform/)Experience Platform **[!UICONTROL im linken]** die Option Daten-Management > Datensätze aus, um das Dashboard **[!UICONTROL Datensätze]** zu öffnen.
+1. Wählen Sie in der [&#x200B; von &#x200B;](https://experience.adobe.com/platform/)Experience Platform **[!UICONTROL im linken]** die Option Daten-Management > Datensätze aus, um das Dashboard **[!UICONTROL Datensätze]** zu öffnen.
 
    Das Dashboard listet alle verfügbaren Datensätze für Ihre Organisation auf. Zu jedem aufgelisteten Datensatz werden Details angezeigt, einschließlich seines Namens, des Schemas, dem der Datensatz entspricht, und des Status des letzten Erfassungslaufs.
 
@@ -147,7 +147,7 @@ Um zu bestätigen, dass die Daten im Data Lake von Platform gelandet sind, beste
 
 ### Daten abfragen
 
-1. Wählen Sie in der [ von ](https://experience.adobe.com/platform/)Experience Platform **[!UICONTROL im linken Navigationsbereich die Option Daten-Management >]** Abfragen) aus, um den Bildschirm **[!UICONTROL Abfragen]** zu öffnen.
+1. Wählen Sie in der [&#x200B; von &#x200B;](https://experience.adobe.com/platform/)Experience Platform **[!UICONTROL im linken Navigationsbereich die Option Daten-Management >]** Abfragen) aus, um den Bildschirm **[!UICONTROL Abfragen]** zu öffnen.
 1. Wählen Sie **[!UICONTROL Abfrage erstellen]**
 1. Führen Sie zunächst eine Abfrage aus, um alle Namen der Tabellen im Data Lake anzuzeigen. Geben Sie `SHOW TABLES` im Abfrage-Editor ein und klicken Sie auf das Wiedergabesymbol, um die Abfrage auszuführen.
 1. Beachten Sie in den Ergebnissen, dass der Tabellenname in etwa `luma_web_event_data` lautet
@@ -228,7 +228,7 @@ Sie können in der Platform-Benutzeroberfläche (oder der Journey Optimizer-Benu
 
 Zunächst müssen Sie mehr Beispieldaten generieren. Wiederholen Sie die Schritte oben in dieser Lektion, um sich bei der Luma-Website anzumelden, wenn sie Ihrer Tag-Eigenschaft zugeordnet ist. Überprüfen Sie die Platform Web SDK-Anfrage, um sicherzustellen, dass Daten mit der `lumaCRMId` gesendet werden.
 
-1. Experience Platform Wählen Sie in der [ von ](https://experience.adobe.com/platform/)im linken Navigationsbereich **[!UICONTROL Kunde]** > **[!UICONTROL Profile]** aus
+1. Experience Platform Wählen Sie in der [&#x200B; von &#x200B;](https://experience.adobe.com/platform/)im linken Navigationsbereich **[!UICONTROL Kunde]** > **[!UICONTROL Profile]** aus
 
 1. Verwenden Sie **[!UICONTROL als]** Identity`lumaCRMId`Namespace
 1. Kopieren Sie den Wert der `lumaCRMId`, die bei dem von Ihnen im Experience Platform Debugger geprüften Aufruf übergeben wurde, und fügen Sie ihn ein, in diesem Fall `b642b4217b34b1e8d3bd915fc65c4452`.
@@ -280,7 +280,7 @@ So erstellen Sie den Datensatz und nehmen die Beispieldaten auf:
 1. Erstellen eines neuen Datensatzes aus dem `Luma Loyalty Schema`
 1. Benennen des Datensatzes `Luma Loyalty Dataset`
 1. Aktivieren des Datensatzes für [!UICONTROL Profil]
-1. Laden Sie die Beispieldatei [luma-loyalty-forWeb.json) ](assets/luma-loyalty-forWeb.json)
+1. Laden Sie die Beispieldatei [luma-loyalty-forWeb.json) &#x200B;](assets/luma-loyalty-forWeb.json)
 1. Ziehen Sie die Datei per Drag-and-Drop in den Datensatz
 1. Bestätigen, dass die Daten erfolgreich aufgenommen wurden
 

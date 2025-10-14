@@ -122,10 +122,10 @@ In der folgenden Tabelle ist beschrieben, wie die Beispielparameter mithilfe von
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Benutzerdefinierte Entitätsparameter werden zum Aktualisieren des Recommendations-Produktkatalogs verwendet. Diese benutzerdefinierten Parameter müssen als Teil des `data` übergeben werden. |
 | `cartIds` | `data.__adobe.target.cartIds` | Wird für die Warenkorb-basierten Empfehlungsalgorithmen von Target verwendet. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Wird verwendet, um zu verhindern, dass bestimmte Entitäts-IDs in einem Recommendations-Design zurückgegeben werden. |
-| `mbox3rdPartyId` | Wird im `xdm.identityMap` festgelegt | Wird zum Synchronisieren von Target-Profilen über Geräte und Kundenattribute hinweg verwendet. Der für die Kunden-ID zu verwendende Namespace muss in der [Target-Konfiguration des Datenstroms“ angegeben ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html?lang=de). |
+| `mbox3rdPartyId` | Wird im `xdm.identityMap` festgelegt | Wird zum Synchronisieren von Target-Profilen über Geräte und Kundenattribute hinweg verwendet. Der für die Kunden-ID zu verwendende Namespace muss in der [Target-Konfiguration des Datenstroms“ angegeben &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html?lang=de). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Wird zur Identifizierung einer eindeutigen Reihenfolge für das Target-Konversions-Tracking verwendet. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Wird zum Tracking der Bestellsummen für Konversions- und Optimierungsziele von Target verwendet. |
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>ODER<br> `xdm.productListItems[0-n].SKU` | Wird für Target-Konversionsverfolgungs- und Recommendations-Algorithmen verwendet. Weitere Informationen finden Sie [ Abschnitt ](#entity-parameters)Entitätsparameter“. |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>ODER<br> `xdm.productListItems[0-n].SKU` | Wird für Target-Konversionsverfolgungs- und Recommendations-Algorithmen verwendet. Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](#entity-parameters)Entitätsparameter“. |
 | `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Wird für das Aktivitätsziel [benutzerdefinierte Bewertung](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html?lang=de) verwendet. |
 
 {style="table-layout:auto"}
@@ -178,7 +178,7 @@ Fügen Sie dann Ihr [!UICONTROL XDM-Objekt] in Ihr [!UICONTROL Ereignis senden] 
 
 >[!NOTE]
 >
->Da benutzerdefinierte Mbox-Parameter Teil `xdm` -Objekts sind, müssen Sie alle Zielgruppen, Aktivitäten oder Profilskripte aktualisieren, die mit ihren neuen Namen auf diese Mbox-Parameter verweisen. Weitere Informationen finden [ auf der Seite Aktualisieren von Target-Zielgruppen und Profilskripten für die Kompatibilität mit Platform Web ](update-audiences.md) SDK in diesem Tutorial .
+>Da benutzerdefinierte Mbox-Parameter Teil `xdm` -Objekts sind, müssen Sie alle Zielgruppen, Aktivitäten oder Profilskripte aktualisieren, die mit ihren neuen Namen auf diese Mbox-Parameter verweisen. Weitere Informationen finden [&#x200B; auf der Seite Aktualisieren von Target-Zielgruppen und Profilskripten für die Kompatibilität mit Platform Web &#x200B;](update-audiences.md) SDK in diesem Tutorial .
 
 
 ## Profilparameter
@@ -600,7 +600,7 @@ Nachdem Sie nun wissen, wie die verschiedenen Zielparameter mithilfe der Platfor
 
 +++
 
-Erfahren Sie als Nächstes, wie Sie [Target-Konversionsereignisse ](track-events.md) Platform Web SDK verfolgen.
+Erfahren Sie als Nächstes, wie Sie [Target-Konversionsereignisse &#x200B;](track-events.md) Platform Web SDK verfolgen.
 
 >[!NOTE]
 >

@@ -61,7 +61,7 @@ Für diesen Datenstrom…
 - Alle Erlebnisereignisdaten werden standardmäßig im Datensatz erfasst **Demosystem - Ereignisdatensatz für die Website (Global v1.1)**
 - Alle Profildaten werden standardmäßig im Datensatz erfasst **Demosystem - Profildatensatz für Website (Global v1.1)** (die native Aufnahme von Profildaten in Web SDK wird derzeit von Web SDK noch nicht unterstützt)
 - **Edge-**: ist standardmäßig aktiviert, d. h., dass qualifizierte Zielgruppen bei der Aufnahme von eingehendem Traffic am Edge ausgewertet werden
-- Wenn Sie „Personalisierungsziele[ verwenden möchten, aktivieren ](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/personalization/overview) das Kontrollkästchen für **Personalization-Ziele**.
+- Wenn Sie „Personalisierungsziele[&#x200B; verwenden möchten, aktivieren &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/personalization/overview) das Kontrollkästchen für **Personalization-Ziele**.
 - Wenn Sie die Funktionen von **Adobe Journey Optimizer** in diesem Datenstrom verwenden möchten, müssen Sie das Kontrollkästchen für **Adobe Journey Optimizer** aktivieren.
 
 Für Ihren Datenstrom ist derzeit keine andere Konfiguration erforderlich.

@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->Durch die Aktivierung der einzelnen Services, die Ihr Unternehmen verwendet, wird sichergestellt, dass die in der Mobile App erfassten Daten überall verwendet werden können. Weitere Informationen [ Sie unter ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/overview)Datenstromeinstellungen“.
+>Durch die Aktivierung der einzelnen Services, die Ihr Unternehmen verwendet, wird sichergestellt, dass die in der Mobile App erfassten Daten überall verwendet werden können. Weitere Informationen [&#x200B; Sie unter &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/overview)Datenstromeinstellungen“.
 
 Wenn Sie Platform Mobile SDK in Ihrer eigenen App implementieren, sollten Sie letztendlich drei Datenströme erstellen, die Ihren drei Tag-Umgebungen (Entwicklung, Staging und Produktion) zugeordnet werden können. Wenn Sie Platform Mobile SDK mit plattformbasierten Anwendungen wie Adobe Real-Time Customer Data Platform oder Adobe Journey Optimizer verwenden, sollten Sie sicherstellen, dass Sie diese Datenströme in den entsprechenden Sandboxes erstellen.
 

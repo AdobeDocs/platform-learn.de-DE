@@ -78,4 +78,4 @@ Nachfolgend finden Sie eine Vorschau des Links, der in den oben genannten Schrit
 
 ![preview-data-model](assets/preview-data-model.png)
 
-Jetzt sind wir bereit, eine [ Zielgruppe zu ](create-a-federated-audience.md).
+Jetzt sind wir bereit, eine [&#x200B; Zielgruppe zu &#x200B;](create-a-federated-audience.md).

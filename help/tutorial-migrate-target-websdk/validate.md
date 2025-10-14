@@ -19,7 +19,7 @@ Nachdem Sie Ihre Target-Implementierung von at.js zu Platform Web SDK migriert h
 * Gehen Sie zu Zielgruppen und Profilskripten zurück, um sicherzustellen, dass sie mit Platform Web SDK kompatibel sind
 * Sicherstellen, dass Integrationen mit Adobe- oder Drittanbieterprogrammen ordnungsgemäß funktionieren
 
-Jede Target-Implementierung unterscheidet sich je nach Site-Architektur und verwendeten Funktionen. Sie können die folgenden Tabellen als Ausgangspunkt verwenden und alle Elemente hinzufügen, die für Ihre Implementierung eindeutig sind. Auf [ Seite „Debugging](debugging.md) dieses Tutorials werden Tools angezeigt, die Sie bei dieser Validierung verwenden können.
+Jede Target-Implementierung unterscheidet sich je nach Site-Architektur und verwendeten Funktionen. Sie können die folgenden Tabellen als Ausgangspunkt verwenden und alle Elemente hinzufügen, die für Ihre Implementierung eindeutig sind. Auf [&#x200B; Seite „Debugging](debugging.md) dieses Tutorials werden Tools angezeigt, die Sie bei dieser Validierung verwenden können.
 
 ## Technische Validierung
 
@@ -92,7 +92,7 @@ Jede Target-Implementierung unterscheidet sich je nach Site-Architektur und verw
 
 Nachdem Sie die oben genannten Validierungsschritte ausgeführt haben, können Sie sich darauf verlassen, dass die Platform Web SDK-Implementierung bereit für den Wechsel zur Produktionsumgebung ist.
 
-Erfahren Sie als Nächstes, wie [ eine Target-Implementierung mithilfe von Platform Web SDK ](debugging.md).
+Erfahren Sie als Nächstes, wie [&#x200B; eine Target-Implementierung mithilfe von Platform Web SDK &#x200B;](debugging.md).
 
 >[!NOTE]
 >

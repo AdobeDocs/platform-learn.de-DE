@@ -56,7 +56,7 @@ Ereignisbasierte Angebote werden derzeit in Adobe Journey Optimizer nicht unters
 
 ## Zugriff auf das Entscheidungs-Management gewähren
 
-Um Zugriff auf die Funktionen des Entscheidungs-Managements zu gewähren, müssen Sie ein **Produktprofil** erstellen und den Benutzern die entsprechenden Berechtigungen zuweisen. [ Weitere Informationen zur Verwaltung von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Um Zugriff auf die Funktionen des Entscheidungs-Managements zu gewähren, müssen Sie ein **Produktprofil** erstellen und den Benutzern die entsprechenden Berechtigungen zuweisen. [&#x200B; Weitere Informationen zur Verwaltung von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt &#x200B;](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Konfigurieren des Datenstroms
 
@@ -175,7 +175,7 @@ Gehen Sie wie folgt vor, um die Platzierung zu erstellen:
 1. Nachdem die Platzierung erstellt wurde, wird sie in der Liste der Platzierungen angezeigt.
 1. Wählen Sie die Zeile aus, die Ihre neue Platzierungs-ID enthält, und notieren Sie sich die Platzierungs-ID, da dies für die Konfiguration in Ihrem Entscheidungsumfang erforderlich sein kann.
 
-   ![Siehe Platzierungs-ID ](assets/decisioning-placement-id.png)
+   ![Siehe Platzierungs-ID &#x200B;](assets/decisioning-placement-id.png)
 
 ### Entscheidungsregeln für den Treuestatus
 

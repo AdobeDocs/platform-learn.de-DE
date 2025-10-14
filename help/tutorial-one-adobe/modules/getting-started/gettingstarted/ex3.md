@@ -38,7 +38,7 @@ Führen Sie zunächst die folgenden Schritte aus.
 
 Klicken Sie **[!UICONTROL Datenströme]**.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1a.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1a.png)
 
 Wählen Sie oben rechts im Bildschirm den Namen Ihrer Sandbox aus, der `--aepSandboxName--` werden soll.
 
@@ -46,11 +46,11 @@ Wählen Sie oben rechts im Bildschirm den Namen Ihrer Sandbox aus, der `--aepSan
 >
 > Der folgende Screenshot zeigt, wie eine bestimmte Sandbox ausgewählt wird. Wenn Sie dieses Tutorial durchlaufen, hat Ihre Sandbox höchstwahrscheinlich einen anderen Namen. Wenn Sie sich für dieses Tutorial angemeldet haben, wurden Ihnen die zu verwendenden Umgebungsdetails zur Verfügung gestellt. Befolgen Sie bitte diese Anweisungen.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1b.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1b.png)
 
 Klicken Sie **[!UICONTROL Neuer Datenstrom]**.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1.png)
 
 Geben **als** und als optionale Beschreibung `--aepUserLdap-- - One Adobe Datastream` ein. Wählen Sie **Zuordnungsschema** die Option **Demosystem - Ereignisschema für Website (Global v1.1)**. Klicken Sie auf **Speichern**.
 
@@ -126,7 +126,7 @@ Wählen Sie oben rechts im Bildschirm den Namen Ihrer Sandbox aus, der `--aepSan
 >
 > Der folgende Screenshot zeigt, wie eine bestimmte Sandbox ausgewählt wird. Wenn Sie dieses Tutorial durchlaufen, hat Ihre Sandbox höchstwahrscheinlich einen anderen Namen. Wenn Sie sich für dieses Tutorial angemeldet haben, wurden Ihnen die zu verwendenden Umgebungsdetails zur Verfügung gestellt. Befolgen Sie bitte diese Anweisungen.
 
-![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration ](./images/edgeconfig1b.png)
+![Klicken Sie im linken Navigationsbereich auf das Symbol Edge-Konfiguration &#x200B;](./images/edgeconfig1b.png)
 
 Klicken Sie **[!UICONTROL Neuer Datenstrom]**.
 

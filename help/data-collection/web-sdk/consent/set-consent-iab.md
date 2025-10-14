@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Festlegen des Einverständnisses mit dem IAB TCF 2.0-Standard
 
-Erfahren Sie, wie Sie mit der Adobe Experience Platform Web SDK Einverständniswerte gemäß IAB TCF 2.0 festlegen können. Weitere Informationen finden Sie in [ Dokumentation zur IAB FCF 2.0](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=de)Unterstützung in Platform.
+Erfahren Sie, wie Sie mit der Adobe Experience Platform Web SDK Einverständniswerte gemäß IAB TCF 2.0 festlegen können. Weitere Informationen finden Sie in [&#x200B; Dokumentation zur IAB FCF 2.0](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=de)Unterstützung in Platform.
 
 >[!NOTE]
 >

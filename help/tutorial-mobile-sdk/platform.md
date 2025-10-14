@@ -69,7 +69,7 @@ Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen werden, ble
 
 ## Adobe Experience Platform-Datenstrom-Service hinzufügen
 
-Um Ihre XDM-Daten von der Edge Network an Adobe Experience Platform zu senden, fügen Sie den Adobe Experience Platform-Service zu dem Datenstrom hinzu, den Sie im Rahmen von [Erstellen eines Datenstroms) ](create-datastream.md).
+Um Ihre XDM-Daten von der Edge Network an Adobe Experience Platform zu senden, fügen Sie den Adobe Experience Platform-Service zu dem Datenstrom hinzu, den Sie im Rahmen von [Erstellen eines Datenstroms) &#x200B;](create-datastream.md).
 
 >[!IMPORTANT]
 >
