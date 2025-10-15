@@ -52,7 +52,7 @@ Wie bei allem, was unter Fehltritten und Fehlkommunikation leidet, gibt es immer
 
 Idealerweise sollte Ihr Marketing-Team eine Work-Management-Lösung verwenden, die eine funktionsübergreifende Zusammenarbeit ermöglicht und Projekte mit geplanten, datengesteuerten Ergebnissen verknüpft. Außerdem sollte es das Marketing-Team in die Lage versetzen, der Arbeit strategische Prioritäten zu setzen und diese Prioritäten Ihrem Kreativ-Team mitzuteilen. Von dort aus sollten die Kreativ-Kurzbeschreibung, die Inhaltsversionen und das Feedback in jedem Projekt miteinander verknüpft sein, sodass Ihr Team nicht nach alten E-Mails suchen muss, um zu finden, wonach es sucht.
 
-Ihr Kreativ-Team sollte mit [einem hervorragenden Digital Asset Management](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [System) &#x200B;](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html), das mit Ihren Kreativ- und Arbeitsverwaltungs-Tools integriert ist. Auf diese Weise ist es für sie einfach, relevante Assets zu finden, zu verwenden, zu aktualisieren oder wiederzuverwenden. Auf diese Weise können Sie die Markteinführung beschleunigen und interne Abläufe und Prozesse vereinfachen.
+Ihr Kreativ-Team sollte mit [einem hervorragenden Digital Asset Management](https://business.adobe.com/de/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/de/products/experience-manager/assets/digital-asset-management.html) [System) &#x200B;](https://business.adobe.com/de/products/experience-manager/assets/digital-asset-management.html), das mit Ihren Kreativ- und Arbeitsverwaltungs-Tools integriert ist. Auf diese Weise ist es für sie einfach, relevante Assets zu finden, zu verwenden, zu aktualisieren oder wiederzuverwenden. Auf diese Weise können Sie die Markteinführung beschleunigen und interne Abläufe und Prozesse vereinfachen.
 
 ### Steigerung der Effizienz in der Produktion durch nahtlose Workflows
 
@@ -70,9 +70,9 @@ Darüber hinaus verwendet eine wirklich großartige Inhaltslieferkette einen DAM
 
 ## Bei Adobe bauen wir eine erstklassige Inhaltslieferkette auf
 
-Unser eigenes [Adobe Experience Cloud-](https://business.adobe.com/) konzentriert sich darauf, die zuvor beschriebenen Schritte zu befolgen, um unsere Kampagnen zum Leben zu erwecken und mehrere Segmente zu unterstützen. Unsere Vision war es, weltweit überzeugende Inhalte bereitzustellen, die mit unserem Kampagnen-Framework und unserer Botschaft übereinstimmen.
+Unser eigenes [Adobe Experience Cloud-](https://business.adobe.com/de/) konzentriert sich darauf, die zuvor beschriebenen Schritte zu befolgen, um unsere Kampagnen zum Leben zu erwecken und mehrere Segmente zu unterstützen. Unsere Vision war es, weltweit überzeugende Inhalte bereitzustellen, die mit unserem Kampagnen-Framework und unserer Botschaft übereinstimmen.
 
-Der Schlüssel zu unserem End-to-End-Inhaltserstellungsprozess ist die Paarung von [Adobe Workfront](https://business.adobe.com/products/workfront/main.html) und [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). Sehen wir uns an, wie wir unseren Prozess mit denselben drei Phasen auf hoher Ebene angegangen sind.
+Der Schlüssel zu unserem End-to-End-Inhaltserstellungsprozess ist die Paarung von [Adobe Workfront](https://business.adobe.com/de/products/workfront/main.html) und [Adobe Experience Manager Assets](https://business.adobe.com/de/products/experience-manager/assets/aem-assets.html). Sehen wir uns an, wie wir unseren Prozess mit denselben drei Phasen auf hoher Ebene angegangen sind.
 
 Wir beginnen mit **Planung** , wo wir Hunderte von Inhaltsanfragen aus dem gesamten Unternehmen aufnehmen und sie dann nach unseren vierteljährlichen Prioritäten priorisieren. Anschließend verwenden wir in Workfront ein Dashboard für Inhaltsvorschläge, um für Transparenz zu sorgen, damit wir uns mit unseren Stakeholdern abstimmen und schnell unsere Marketing-, Kreativ-, Web- und Vertriebsteams genehmigen können. Auf diese Weise erfassen wir, was wir für das Quartal zugesagt haben, und geben unseren Kreativ- und Web-Teams Einblick in das gesamte Anfragevolumen, damit sie die Ressourcenplanung planen können. Darüber hinaus können Manager die Arbeitslast ihrer Teams einfach überwachen.
 
@@ -84,7 +84,7 @@ Der Aufbau einer Wertschöpfungskette für Arbeitsinhalte hat sich enorm gelohnt
 
 >[!NOTE]
 >
-> Dieser Artikel wurde ursprünglich im Blog von [_Adobe Experience Cloud veröffentlicht_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time).
+> Dieser Artikel wurde ursprünglich im Blog von [_Adobe Experience Cloud veröffentlicht_](https://business.adobe.com/de/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time).
 
 ## Die vierte Phase: Erkenntnisse
 

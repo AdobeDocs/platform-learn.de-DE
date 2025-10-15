@@ -47,7 +47,7 @@ Wenn auf einen Link geklickt wird, sendet der Browser eine Anfrage an einen Serv
 
 Die meisten Browser verfügen über eine „Adressleiste“, die einige oder alle „Adressen“ für eine Web-Seite anzeigt. Wenn der Browser die Seite für den angeklickten Link „abruft“, wird die „Adresse“ der Seite in dieser Adressleiste angezeigt. Was ist also die „Adresse“ für eine Webseite?
 
-Das `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` oben ist die Adresse einer Web-Seite. Sie wird als URL oder Uniform Resource Locator bezeichnet. URLs können auf eine Seite wie diese oder eine Bilddatei, ein Video oder andere Dateitypen verweisen.
+Das `https://business.adobe.com/de/products/experience-platform/adobe-experience-platform.html` oben ist die Adresse einer Web-Seite. Sie wird als URL oder Uniform Resource Locator bezeichnet. URLs können auf eine Seite wie diese oder eine Bilddatei, ein Video oder andere Dateitypen verweisen.
 
 ![Teile einer URL](../assets/api101-url-parts.jpg)
 
@@ -69,7 +69,7 @@ Es ist sehr üblich, dass der Begriff _Host“_ einen vollständigen Domain-Name
 
 **Herkunft**
 
-„Herkunft“ ist ein weiterer Begriff, der zu beachten ist, der eng mit den Teilen einer URL verbunden ist. Auf einer grundlegenden Ebene ist ein Ursprung ungefähr der `scheme` plus der `host` plus der `domain` wie `https://business.adobe.com`. Unterschiedliche Werte stellen häufig unterschiedliche Ursprünge dar, z. B. `https://business.adobe.com` und `http://business.adobe.com` sind nicht dieselben Ursprünge, da sie unterschiedliche Schemata haben. `https://www.adobe.com` und `https://business.adobe.com` sind aufgrund der verschiedenen Subdomains bei vielen Anwendungen ebenfalls nicht identisch.
+„Herkunft“ ist ein weiterer Begriff, der zu beachten ist, der eng mit den Teilen einer URL verbunden ist. Auf einer grundlegenden Ebene ist ein Ursprung ungefähr der `scheme` plus der `host` plus der `domain` wie `https://business.adobe.com/de`. Unterschiedliche Werte stellen häufig unterschiedliche Ursprünge dar, z. B. `https://business.adobe.com/de` und `http://business.adobe.com/de` sind nicht dieselben Ursprünge, da sie unterschiedliche Schemata haben. `https://www.adobe.com` und `https://business.adobe.com/de` sind aufgrund der verschiedenen Subdomains bei vielen Anwendungen ebenfalls nicht identisch.
 
 **Pfad**
 
@@ -133,13 +133,13 @@ Es gibt mehrere andere, aber dies ist eine Liste der häufigsten Methoden beim A
 
 Nachdem Sie nun über die grundlegenden Begriffe, Konzepte und Schritte bei -APIs verfügen, können wir uns ein Beispiel für eine API-Anfrage in der Praxis ansehen.
 
-Die Seite aus unserem Browser-Beispiel hat eine URL von `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Wenn auf den Adobe Experience Platform-Link geklickt wird, führt der Browser eine `GET` Anfrage für diese Seite durch. Da wir den Browser haben, um die Arbeit für uns zu erledigen, müssen wir nur klicken, aber wenn ein Programmierer möchte, dass diese Anfrage in einer Software-Anwendung geschieht, müssen sie alle erforderlichen Details angeben, damit die API-Anfrage erfolgreich erfüllt wird.
+Die Seite aus unserem Browser-Beispiel hat eine URL von `https://business.adobe.com/de/products/experience-platform/adobe-experience-platform.html`. Wenn auf den Adobe Experience Platform-Link geklickt wird, führt der Browser eine `GET` Anfrage für diese Seite durch. Da wir den Browser haben, um die Arbeit für uns zu erledigen, müssen wir nur klicken, aber wenn ein Programmierer möchte, dass diese Anfrage in einer Software-Anwendung geschieht, müssen sie alle erforderlichen Details angeben, damit die API-Anfrage erfolgreich erfüllt wird.
 
 So könnte das im Code aussehen:
 
 ```js
 fetch(
-  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/de/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:
