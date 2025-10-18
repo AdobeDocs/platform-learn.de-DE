@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie eine Verbindung zu Ihrem Data Warehouse herstellen und diese Verbindung für Federated Audience Composition konfigurieren. Weitere Informationen finden Sie unter [Dokumentation zur Federated-Audience-Komposition](https://experienceleague.adobe.com/de/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451565/?captions=ger&learn=on&enablevpops)

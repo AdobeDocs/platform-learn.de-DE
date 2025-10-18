@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie in Adobe Experience Platform-basierten Programmen wie Real-Time Customer Data Platform und Journey Optimizer Benutzer hinzufügen und Berechtigungen verwalten. Benutzer werden zunächst in Admin Console hinzugefügt und dann Berechtigungen in der Platform- oder Journey Optimizer-Benutzeroberfläche erteilt. Weitere Informationen finden Sie in der [Dokumentation zur Zugriffssteuerung](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475982?captions=ger&learn=on&enablevpops)

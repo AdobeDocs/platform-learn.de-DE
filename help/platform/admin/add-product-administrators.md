@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie Produktadministratoren für Adobe Experience Platform hinzufügen. Produktadministratoren verwalten die Zugriffssteuerung für plattformbasierte Anwendungen wie Real-Time Customer Data Platform und Journey Optimizer. Sie können Benutzende, Entwickler und zusätzliche Administratoren in Admin Console erstellen und ihnen dann Berechtigungen (und API-Anmeldeinformationen) in der Platform- oder Journey Optimizer-Benutzeroberfläche erteilen. Weitere Informationen finden Sie in der [Dokumentation zur Zugriffssteuerung](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475950?captions=ger&learn=on&enablevpops)
 
 >[!TIP]
 >

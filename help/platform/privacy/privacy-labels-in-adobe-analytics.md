@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Erfahren Sie, wie Sie Analytics-Variablen Datenschutzkennzeichnungen hinzufügen, einschließlich einer Aufschlüsselung der Bedeutung der einzelnen Kennzeichnungstypen und deren Verwendung. Weitere Informationen finden Sie in der [Dokumentation zu Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450671?captions=ger&learn=on&enablevpops)

@@ -38,7 +38,7 @@ Richten Sie sich mit dem KI-Assistenten ein und lernen Sie seine grundlegenden F
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Zugriff auf den KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="Zugriff auf den KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475928/?captions=ger&format=jpeg&nocache=1748392732990" alt="Zugriff auf den KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ Der KI-Assistent ist ein nützliches Tool, um neue Produkte zu lernen oder schne
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="Verwenden des KI-Assistenten zur Verkürzung der Onboarding-Zeit" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="Verwenden des KI-Assistenten zur Verkürzung der Onboarding-Zeit"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475939/?captions=ger&format=jpeg&nocache=1748392735030" alt="Verwenden des KI-Assistenten zur Verkürzung der Onboarding-Zeit"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

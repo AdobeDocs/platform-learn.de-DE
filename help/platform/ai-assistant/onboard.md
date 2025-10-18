@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie mit dem KI-Assistenten schnell neue Funktionen entwickeln und die Onboarding-Zeit verkürzen können. Weitere Informationen finden Sie im &quot;[&#x200B; für den KI-Assistenten](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/questions).
 
->[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475939/?captions=ger&learn=on&enablevpops)

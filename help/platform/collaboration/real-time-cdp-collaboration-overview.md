@@ -128,7 +128,7 @@ Wenden Sie sich zunächst an Ihren Adobe Experience Platform-Administrator, um s
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Hinzufügen von Produktadministratoren für Adobe Experience Platform-basierte Programme" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1756504085478" alt="Hinzufügen von Produktadministratoren für Adobe Experience Platform-basierte Programme"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475950?captions=ger&format=jpeg&nocache=1756504085478" alt="Hinzufügen von Produktadministratoren für Adobe Experience Platform-basierte Programme"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
