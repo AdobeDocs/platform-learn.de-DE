@@ -35,7 +35,7 @@ In dieser Lektion erfahren Sie Folgendes:
 
 ## Zugriff bestätigen
 
-Vergewissern Sie sich, dass Ihr Unternehmen Zugriff auf Assurance hat. Als Benutzer sollten Sie zum Profil für Adobe Experience Platform hinzugefügt werden. Weitere Informationen [&#x200B; Sie im &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) „Benutzerzugriff“ im Assurance-Handbuch.
+Vergewissern Sie sich, dass Ihr Unternehmen Zugriff auf Assurance hat. Als Benutzer sollten Sie zum Profil für Adobe Experience Platform hinzugefügt werden. Weitere Informationen [&#x200B; Sie im &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/assurance/user-access) „Benutzerzugriff“ im Assurance-Handbuch.
 
 ## Implementierung
 
@@ -388,7 +388,7 @@ Wenn Sie veraltete Erweiterungen sehen, lesen Sie die [Dokumentation zu Android 
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass sie für den Rest des Tutorials Assurance verwendet.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
 
 
 Weiter: **[Implementieren des Einverständnisses](consent.md)**
