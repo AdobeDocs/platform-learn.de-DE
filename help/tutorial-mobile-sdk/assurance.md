@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Assurance-Erweiterung in einer Mobile App
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
+source-git-commit: 2784282b91692832786aa478363374f5f4066662
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1661'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ In dieser Lektion erfahren Sie Folgendes:
 
 ## Zugriff bestätigen
 
-Vergewissern Sie sich, dass Ihr Unternehmen Zugriff auf Assurance hat. Als Benutzer sollten Sie zum Profil für Adobe Experience Platform hinzugefügt werden. Weitere Informationen [&#x200B; Sie im &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/assurance/user-access) „Benutzerzugriff“ im Assurance-Handbuch.
+Vergewissern Sie sich, dass Ihr Unternehmen Zugriff auf Assurance hat. Als Benutzer sollten Sie zum Profil für Adobe Experience Platform hinzugefügt werden. Weitere Informationen [ Sie im ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) „Benutzerzugriff“ im Assurance-Handbuch.
 
 ## Implementierung
 
@@ -45,7 +45,7 @@ So implementieren Sie Assurance in Ihrer App:
 
 >[!TAB iOS]
 
-Zusätzlich zur allgemeinen Installation von [SDK &#x200B;](install-sdks.md) iOS auch den folgenden zusätzlichen Code, um die Assurance-Sitzung für Ihre App zu starten.
+Zusätzlich zur allgemeinen Installation von [SDK ](install-sdks.md) iOS auch den folgenden zusätzlichen Code, um die Assurance-Sitzung für Ihre App zu starten.
 
 1. Navigieren Sie im Projekt-Navigator Ihres Xcode zu **[!DNL Luma]** > **[!DNL Luma]** **[!UICONTROL SceneDelegate]**.
 
@@ -63,7 +63,7 @@ Zusätzlich zur allgemeinen Installation von [SDK &#x200B;](install-sdks.md) iOS
 
 >[!TAB Android]
 
-Zusätzlich zur allgemeinen Installation von [SDK &#x200B;](install-sdks.md) Android auch den folgenden zusätzlichen Code, um die Assurance-Sitzung für Ihre App zu starten.
+Zusätzlich zur allgemeinen Installation von [SDK ](install-sdks.md) Android auch den folgenden zusätzlichen Code, um die Assurance-Sitzung für Ihre App zu starten.
 
 1. Navigieren Sie in Android Studio in der Ansicht **[!UICONTROL Android]** zu **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**.
 
@@ -138,7 +138,7 @@ Sie müssen eine Basis-URL einrichten, um sicherzustellen, dass Deep-Linking fun
 
    ![Assurance-URL](assets/assurance-url-type.png){zoomable="yes"}
 
-Stellen Sie sicher _dass Sie eine_ eindeutige“ Bundle-Kennung verwenden und die `com.adobe.luma.tutorial.swiftui` Bundle-Kennung ersetzen, da jede Bundle-Kennung eindeutig sein muss. Normalerweise verwenden Sie ein Reverse-DNS-Format für Paket-ID-Zeichenfolgen wie `com.organization.brand.uniqueidentifier`. Sie können dieselbe Bundle-ID verwenden, die Sie unter „Bundle-[&#x200B; definieren“ &#x200B;](#define-bundle-identifier) haben.<br/>Verwenden Sie auf ähnliche Weise ein eindeutiges URL-Schema und ersetzen Sie die bereits bereitgestellte `lumatutorialswiftui` durch Ihr eindeutiges URL-Schema.
+Stellen Sie sicher _dass Sie eine_ eindeutige“ Bundle-Kennung verwenden und die `com.adobe.luma.tutorial.swiftui` Bundle-Kennung ersetzen, da jede Bundle-Kennung eindeutig sein muss. Normalerweise verwenden Sie ein Reverse-DNS-Format für Paket-ID-Zeichenfolgen wie `com.organization.brand.uniqueidentifier`. Sie können dieselbe Bundle-ID verwenden, die Sie unter „Bundle-[ definieren“ ](#define-bundle-identifier) haben.<br/>Verwenden Sie auf ähnliche Weise ein eindeutiges URL-Schema und ersetzen Sie die bereits bereitgestellte `lumatutorialswiftui` durch Ihr eindeutiges URL-Schema.
 
 Weitere Informationen zu URL-Schemata in iOS finden Sie in der Dokumentation zu [Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -172,7 +172,7 @@ Assurance öffnet eine URL entweder über einen Browser oder einen QR-Code. Dies
 
 Stellen Sie sicher, dass Sie eine `android:scheme` angeben (z. B. `lumatutorialandroid`) und `android:host` (zum Beispiel `default`), um die Basis-URL zu definieren.
 
-Weitere Informationen zu Deep-Links in Android finden Sie unter [Erstellen von Deep-Links zu App-Inhalten](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+Weitere Informationen zu Deep-Links in Android finden Sie unter [Erstellen von Deep-Links](https://developer.android.com/training/app-links/create-deeplinks){target="_blank"} in der Dokumentation zu Android.
 
 Assurance öffnet eine URL entweder über einen Browser oder einen QR-Code. Diese URL beginnt mit der Basis-URL, die die App öffnet und zusätzliche Parameter enthält. Diese eindeutigen Parameter werden verwendet, um die Sitzung zu verbinden.  In der Beispiel-App wird der Deep-Link `lumatutorialandroid://default`.
 
@@ -370,7 +370,7 @@ Um Ihre Erweiterungsversionen (z. B. **[!UICONTROL Messaging]** und **[!UICONTRO
 
 ![Erweiterungsversionen](assets/assurance-extension-versions-android.png){zoomable="yes"}
 
-Wenn Sie veraltete Erweiterungen sehen, lesen Sie die [Dokumentation zu Android &#x200B;](https://developer.android.com/build/agp-upgrade-assistant), wie Sie Ihre Abhängigkeitsmodule für Ihr Projekt aktualisieren können.
+Wenn Sie veraltete Erweiterungen sehen, lesen Sie die [Dokumentation zu Android ](https://developer.android.com/build/agp-upgrade-assistant), wie Sie Ihre Abhängigkeitsmodule für Ihr Projekt aktualisieren können.
 
 
 >[!ENDTABS]
@@ -388,7 +388,7 @@ Wenn Sie veraltete Erweiterungen sehen, lesen Sie die [Dokumentation zu Android 
 >
 >Sie haben jetzt Ihre App so eingerichtet, dass sie für den Rest des Tutorials Assurance verwendet.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Weiter: **[Implementieren des Einverständnisses](consent.md)**
