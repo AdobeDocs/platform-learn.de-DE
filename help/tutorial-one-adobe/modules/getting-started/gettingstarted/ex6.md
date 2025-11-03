@@ -69,7 +69,7 @@ Sie sollten das dann sehen.
 >
 >Je nach ausgewähltem Lernpfad haben Sie möglicherweise keinen Zugriff auf die Photoshop Services-API. Sie haben nur Zugriff auf die Photoshop Services-API, wenn Sie sich auf dem Lernpfad **Firefly**, **Workfront Fusion**, **ALL** befinden oder wenn Sie an einem **Live-Workshop**. Sie können diesen Schritt überspringen, wenn Sie nicht auf einem dieser Lernpfade sind.
 >
-Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
+>Wählen Sie **+ Zu Projekt hinzufügen** dann **API** aus.
 
 ![Azure-Speicher](./images/ps2.png)
 

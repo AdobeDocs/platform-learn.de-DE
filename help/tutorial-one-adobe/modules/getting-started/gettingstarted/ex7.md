@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum [ von PostBuster](./ex8.md){target="_blank"}!
+>Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum [&#x200B; von PostBuster](./ex8.md){target="_blank"}!
 
 ## Video
 
@@ -35,7 +35,7 @@ Klicken Sie auf die **Firefly - Firefly Services**-API. Klicken Sie dann auf **F
 
 ## Postman-Authentifizierung bei Adobe I/O
 
-Laden Sie unter [ Postman Downloads die entsprechende Version von Postman für Ihr Betriebssystem herunter und installieren Sie sie](https://www.postman.com/downloads/){target="_blank"}.
+Laden Sie unter [&#x200B; Postman Downloads die entsprechende Version von Postman für Ihr Betriebssystem herunter und installieren Sie sie](https://www.postman.com/downloads/){target="_blank"}.
 
 ![Neue Adobe I/O-Integration](./images/getstarted.png)
 
