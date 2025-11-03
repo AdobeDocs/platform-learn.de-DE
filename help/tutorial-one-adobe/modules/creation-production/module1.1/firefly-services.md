@@ -6,30 +6,36 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '176'
 ht-degree: 2%
 
 ---
 
 # 1.1 Überblick über Adobe Firefly Services
 
-Lernen Sie die verschiedenen Möglichkeiten kennen, Adobe Firefly Services zu verwenden.
+Lernen Sie die verschiedenen Verwendungsmöglichkeiten von Adobe Firefly Services kennen.
 
 ## Voraussetzungen
 
 Zugriff auf Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
 
+## Video
+
+In diesem Video erhalten Sie eine Erklärung und Demonstration aller Schritte, die an dieser Übung beteiligt sind.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476493?quality=12&learn=on)
+
 ## Übungen
 
 [1.1.1 Erste Schritte mit Firefly Services](./ex1.md){target="_blank"}
 
-In dieser Übung erfahren Sie mehr über Firefly Services und deren Funktionen.
+In dieser Übung erfahren Sie mehr über Firefly Services und seine Funktionen.
 
 [1.1.2 Optimieren Sie Ihren Firefly-Prozess mithilfe von Microsoft Azure und vordefinierten URLs](./ex2.md){target="_blank"}
 
-In dieser Übung erfahren Sie mehr über Firefly Services und deren Funktionen.
+In dieser Übung erfahren Sie mehr über Firefly Services und seine Funktionen.
 
 [1.1.3 Arbeiten mit Photoshop-APIs](./ex3.md){target="_blank"}
 

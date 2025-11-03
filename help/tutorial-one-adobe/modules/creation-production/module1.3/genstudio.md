@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '533'
 ht-degree: 2%
 
 ---
@@ -33,6 +33,16 @@ In diesem Modul erfahren Sie, wie Sie alle oben genannten Schritte selbst durchf
 - Zugriff auf Adobe GenStudio for Performance Marketing
 - Zugriff auf Adobe Workfront und Adobe Workfront Planning
 - Zugriff auf eine Adobe Experience Manager Cloud Service-Sandbox mit aktiviertem Content Hub
+
+## Video
+
+In diesem Video erhalten Sie eine Erklärung und Demonstration aller Schritte, die an dieser Übung beteiligt sind.
+
+>[!NOTE]
+>
+>Dieses Video hat noch kein Audio. Sobald Audio verfügbar ist, wird eine neue Version hochgeladen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
 
 ## Übungen
 

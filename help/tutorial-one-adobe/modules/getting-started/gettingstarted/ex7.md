@@ -4,10 +4,10 @@ description: Erste Schritte - Einrichten von Postman
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 0%
+source-wordcount: '553'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum [&#x200B; von PostBuster](./ex8.md){target="_blank"}!
+>Wenn Sie ein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum [ von PostBuster](./ex8.md){target="_blank"}!
+
+## Video
+
+In diesem Video erhalten Sie eine Erklärung und Demonstration aller Schritte, die an dieser Übung beteiligt sind.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476495?quality=12&learn=on)
 
 ## Herunterladen der Postman-Umgebung
 
@@ -29,7 +35,7 @@ Klicken Sie auf die **Firefly - Firefly Services**-API. Klicken Sie dann auf **F
 
 ## Postman-Authentifizierung bei Adobe I/O
 
-Laden Sie unter [&#x200B; Postman Downloads die entsprechende Version von Postman für Ihr Betriebssystem herunter und installieren Sie sie](https://www.postman.com/downloads/){target="_blank"}.
+Laden Sie unter [ Postman Downloads die entsprechende Version von Postman für Ihr Betriebssystem herunter und installieren Sie sie](https://www.postman.com/downloads/){target="_blank"}.
 
 ![Neue Adobe I/O-Integration](./images/getstarted.png)
 
