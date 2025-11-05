@@ -1,448 +1,393 @@
 ---
-title: Automatisierung mithilfe von Connectoren
-description: Automatisierung mithilfe von Connectoren
+title: Frame I/O zu Workfront Fusion zu AEM Assets
+description: Frame I/O zu Workfront Fusion zu AEM Assets
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
+source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1983'
 ht-degree: 1%
 
 ---
 
-# 1.2.4 Automatisierung mithilfe von Connectoren
+# 1.2.4 Frame I/O zu Workfront Fusion zu AEM Assets
 
-Sie verwenden jetzt die vordefinierten Connectoren in Workfront Fusion für Photoshop und verbinden die Firefly Text-2-Image-Anforderung und die Photoshop-Anforderungen in einem Szenario.
+>[!IMPORTANT]
+>
+>Um diese Übung abzuschließen, benötigen Sie Zugriff auf eine funktionierende AEM Assets CS Author-Umgebung. Wenn Sie der Übung [Adobe Experience Manager Cloud Service und Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}, haben Sie Zugriff auf eine solche Umgebung.
 
-## 1.2.4.1 Variablen aktualisieren
+>[!IMPORTANT]
+>
+>Wenn Sie zuvor ein AEM Assets CS-Programm mit einer Autorenumgebung konfiguriert haben, kann es sein, dass sich Ihre AEM CS-Sandbox im Ruhezustand befand. Da der Ruhezustand einer solchen Sandbox 10-15 Minuten dauert, ist es ratsam, den Ruhezustand jetzt zu deaktivieren, damit Sie nicht zu einem späteren Zeitpunkt hängen bleiben.
 
-Bevor Sie mit der Connector-Einrichtung fortfahren, müssen die folgenden Variablen zum Modul **Initialize Constants** hinzugefügt werden.
+In der vorherigen Übung haben Sie ein Szenario konfiguriert, das mithilfe von Adobe Firefly, Photoshop-APIs und Workfront Fusion automatisch Varianten einer Adobe Photoshop PSD-Datei generiert. Die Ausgabe dieses Szenarios war eine neue Photoshop PSD-Datei.
 
-- `AZURE_STORAGE_URL`
-- `AZURE_STORAGE_CONTAINER`
-- `AZURE_STORAGE_SAS_READ`
-- `AZURE_STORAGE_SAS_WRITE`
+Die Business-Teams benötigen jedoch keine PSD-Datei, sondern eine PNG-Datei oder eine JPG-Datei. In dieser Übung konfigurieren Sie eine neue Automatisierung, die dazu führt, dass eine PNG-Datei generiert wird, sobald das Asset in Frame I/O genehmigt wurde, und dass diese PNG-Datei automatisch in AEM Assets gespeichert wird.
 
-Gehen Sie zurück zu Ihrem ersten Knoten, wählen Sie **Konstanten initialisieren** und wählen Sie dann **Element hinzufügen** für jede dieser Variablen aus.
+## 1.2.4.1 Erstellen eines neuen Szenarios
 
-![WF Fusion](./images/wffusion69.png)
+Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Öffnen Sie **Workfront Fusion**.
 
-| Schlüssel | Beispielwert |
+![WF Fusion](./images/wffusion1.png)
+
+Gehen Sie im linken Menü zu **Szenarien** und wählen Sie Ihre `--aepUserLdap--` aus. Klicken Sie **Neues Szenario erstellen**.
+
+![Frame-IO](./images/aemf1.png)
+
+Verwenden Sie den Namen `--aepUserLdap-- - Asset Approved PNG AEM Assets`. Klicken Sie als Nächstes auf die **?** Modul geben Sie den Suchbegriff `webhook` ein und klicken Sie dann auf **Webhooks**.
+
+![Frame-IO](./images/aemf2.png)
+
+Klicken Sie auf **Benutzerdefinierter Webhook**.
+
+![Frame-IO](./images/aemf3.png)
+
+Klicken Sie auf **Hinzufügen**, um einen neuen Webhook zu erstellen.
+
+![Frame-IO](./images/aemf4.png)
+
+Verwenden Sie den Namen `--aepUserLdap-- - Frame.io Webhook`. Klicken Sie auf **Speichern**.
+
+![Frame-IO](./images/aemf5.png)
+
+Sie sollten das dann sehen. Klicken Sie **Adresse in Zwischenablage kopieren**.
+
+![Frame-IO](./images/aemf6.png)
+
+## 1.2.4.2 Webhook in Frame.io konfigurieren
+
+Wechseln Sie zu Postman und öffnen Sie die Anfrage **POST - Zugriffs-Token** in der Sammlung **Adobe IO - OAuth**. Klicken Sie anschließend auf **Senden**, um ein neues **Zugriffs-Token** anzufordern.
+
+![Frame-IO](./images/frameV4api2.png)
+
+Gehen Sie im linken Menü zurück zu **Sammlungen**. Öffnen Sie die Anfrage **POST - Webhook erstellen** in der Sammlung **Frame.io V4 - Tech Insiders** im Ordner **Webhooks**.
+
+Navigieren Sie zum **Hauptteil** der Anfrage. Ändern Sie das Feld **name** in `--aepUserLdap--  - Fusion to AEM Assets` und ändern Sie dann das Feld **url** in den Wert der Webhook-URL, die Sie aus Workfront Fusion kopiert haben.
+
+Klicken Sie auf **Senden**.
+
+![Frame-IO](./images/framewh1.png)
+
+Ihre benutzerdefinierte Frame.io V4-Aktion wurde jetzt erstellt.
+
+![Frame-IO](./images/framewh2.png)
+
+Wechseln Sie zu [https://next.frame.io/project](https://next.frame.io/project){target="_blank"} und gehen Sie zu dem zuvor erstellten Projekt, das den Namen `--aepUserLdap--` erhalten soll, und öffnen Sie den Ordner **CitiSignal Fibre Campaign**. Jetzt sollten die Assets angezeigt werden, die in der vorherigen Übung erstellt wurden.
+
+![Frame-IO](./images/aemf11a.png)
+
+Klicken Sie auf das **Status** und ändern Sie den Status in **In Bearbeitung**.
+
+![Frame-IO](./images/aemf12.png)
+
+Wechseln Sie zurück zu Workfront Fusion. Sie sollten jetzt sehen, dass die Verbindung **Erfolgreich ermittelt** wurde.
+
+![Frame-IO](./images/aemf13.png)
+
+Klicken Sie **Speichern**, um Ihre Änderungen zu speichern, und klicken Sie dann auf **Einmal ausführen**, um einen Schnelltest durchzuführen.
+
+![Frame-IO](./images/aemf14.png)
+
+Wechseln Sie zurück zu Frame.io und klicken Sie auf das Feld **In Bearbeitung** und ändern Sie den Status in **Erforderliche Überprüfung**.
+
+![Frame-IO](./images/aemf15.png)
+
+Wechseln Sie zurück zu Workfront Fusion und klicken Sie auf die Blase im Modul **Benutzerdefinierter Webhook**.
+
+Die Detailansicht der Blase zeigt die Daten an, die von Frame.io empfangen wurden. Es sollten verschiedene IDs angezeigt werden. Beispielsweise zeigt das Feld **resource.id** die eindeutige ID in Frame.io des Assets **citsignal-fiber.psd**.
+
+![Frame-IO](./images/aemf16.png)
+
+## 1.2.4.3 Asset-Details von Frame.io abrufen
+
+Nachdem die Kommunikation zwischen Frame.io und Workfront Fusion über einen benutzerdefinierten Webhook hergestellt wurde, sollten Sie weitere Details zu dem Asset erhalten, für das die Statuskennzeichnung aktualisiert wurde. Dazu verwenden Sie in Workfront Fusion erneut den Frame.io-Connector, ähnlich wie in der vorherigen Übung.
+
+Bewegen Sie den Mauszeiger über **Benutzerdefinierter Webhook**-Objekt und klicken Sie auf das Symbol **+** , um ein weiteres Modul hinzuzufügen.
+
+![Frame-IO](./images/aemf18a.png)
+
+Geben Sie den Suchbegriff `frame` ein. Klicken Sie auf **Frame.io**.
+
+![Frame-IO](./images/aemf18.png)
+
+Klicken Sie auf **Frame.io**.
+
+![Frame-IO](./images/aemf19.png)
+
+Klicken Sie **Benutzerdefinierten API-Aufruf durchführen**.
+
+![Frame-IO](./images/aemf20.png)
+
+Stellen Sie sicher, dass für die Verbindung dieselbe Einstellung festgelegt ist wie in der vorherigen Übung, die `--aepUserLdap-- - Adobe I/O - Frame.io S2S` benannt werden sollte.
+
+![Frame-IO](./images/aemf21.png)
+
+Verwenden Sie für die Konfiguration des Moduls **Frame.io - Erstellen eines benutzerdefinierten API-**: `/v4/accounts/{{1.account.id}}/files/{{1.resource.id}}`.
+
+>[!NOTE]
+>
+>Variablen in Workfront Fusion können manuell mit dieser Syntax angegeben werden: `{{1.account.id}}` und `{{1.resource.id}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das erste Modul im Szenario **Webhooks** heißt und die Sequenznummer **1 hat**. Das bedeutet, dass die Variablen `{{1.account.id}}` und `{{1.resource.id}}` vom Modul mit der Sequenznummer 1 auf dieses Feld zugreifen. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
+
+Klicken Sie anschließend auf **+ Element hinzufügen** unter **Abfragezeichenfolge**.
+
+![Frame-IO](./images/aemf21a.png)
+
+Geben Sie diese Werte ein und klicken Sie auf **Hinzufügen**.
+
+| Schlüssel | Wert |
 |:-------------:| :---------------:| 
-| `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
-| `AZURE_STORAGE_CONTAINER` | `vangeluw` |
-| `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
-| `AZURE_STORAGE_SAS_WRITE` | `?sv=2023-01-03&st=2025-01-13T17%3A21%3A09Z&se=2025-01-14T17%3A21%3A09Z&sr=c&sp=racwl&sig=FD4m0YyyqUj%2B5T8YyTFJDi55RiTDC9xKtLTgW0CShps%3D` |
+| `include` | `media_links.original` |
 
-Sie können Ihre Variablen finden, indem Sie zurück zu Postman gehen und Ihre **Umgebungsvariablen** öffnen.
+![Frame-IO](./images/aemf21b.png)
 
-![Azure-Speicher](./../module1.1/images/az105.png)
+Du solltest das jetzt haben. Klicken Sie auf **OK**.
 
-Kopieren Sie diese Werte nach Workfront Fusion und fügen Sie für jede dieser vier Variablen ein neues Element hinzu.
-
-Ihr Bildschirm sollte wie folgt aussehen. Klicken Sie **OK**.
-
-![WF Fusion](./images/wffusion68.png)
-
-## 1.2.4.2 Aktivieren Ihres Szenarios mithilfe eines Webhooks
-
-Bisher haben Sie Ihr Szenario zum Testen manuell ausgeführt. Aktualisieren wir nun Ihr Szenario mit einem Webhook, damit es von einer externen Umgebung aus aktiviert werden kann.
-
-Wählen Sie **+** aus, suchen Sie nach **Webhook** und wählen Sie dann **Webhooks** aus.
-
-![WF Fusion](./images/wffusion216.png)
-
-Wählen Sie **Benutzerdefinierter Webhook** aus.
-
-![WF Fusion](./images/wffusion217.png)
-
-Ziehen Sie das **Benutzerdefinierter Webhook**-Modul an den Anfang Ihres Szenarios. Wählen Sie als Nächstes das **Uhr**-Symbol aus und ziehen Sie es auf das Modul **Benutzerdefinierter Webhook**.
-
-![WF Fusion](./images/wffusion217a.png)
-
-Sie sollten das dann sehen. Ziehen Sie als Nächstes den roten Punkt auf dem ersten Modul in Richtung des lilafarbenen Punkts auf dem zweiten Modul.
-
-![WF Fusion](./images/wffusion217b.png)
-
-Sie sollten das dann sehen. Klicken Sie anschließend auf das Modul **Benutzerdefinierter Webhook**.
-
-![WF Fusion](./images/wffusion217c.png)
-
-Klicken Sie auf **Hinzufügen**.
-
-![WF Fusion](./images/wffusion218.png)
-
-Legen Sie den **Webhook-Namen** auf `--aepUserLdap-- - Firefly + Photoshop Webhook` fest. Klicken Sie auf **Speichern**.
-
-![WF Fusion](./images/wffusion219.png)
-
-Ihre Webhook-URL ist jetzt verfügbar. Klicken Sie auf **Adresse in Zwischenablage kopieren**, um die URL zu kopieren.
-
-![WF Fusion](./images/wffusion221.png)
-
-Öffnen Sie Postman und fügen Sie einen neuen Ordner in der Sammlung **FF - Firefly Services Tech Insiders** hinzu.
-
-![WF Fusion](./images/wffusion222.png)
-
-Benennen Sie den Ordner `--aepUserLdap-- - Workfront Fusion`.
-
-![WF Fusion](./images/wffusion223.png)
-
-Wählen Sie in dem soeben erstellten Ordner die 3 Punkte **…** und dann **Anfrage hinzufügen**.
-
-![WF Fusion](./images/wffusion224.png)
-
-Legen Sie den **Methodentyp** auf **POST** fest und fügen Sie die URL Ihres Webhooks in die Adressleiste ein.
-
-![WF Fusion](./images/wffusion225.png)
-
-Sie müssen einen benutzerdefinierten Hauptteil senden, damit die Variablenelemente von einer externen Quelle für Ihr Workfront Fusion-Szenario bereitgestellt werden können.
-
-Wechseln Sie zu **Textkörper** und wählen Sie **Roh** aus.
-
-![WF Fusion](./images/wffusion226.png)
-
-Fügen Sie den folgenden Text in den Textkörper Ihrer Anfrage ein. Wählen Sie **Senden** aus.
-
-```json
-{
-    "psdTemplate": "citisignal-fiber.psd",
-    "xlsFile": "placeholder",
-    "prompt":"misty meadows",
-    "cta": "Buy this now!",
-    "button": "Click here to buy!"
-}
-```
-
-![WF Fusion](./images/wffusion229.png)
-
-Zurück in Workfront Fusion wird eine Meldung auf Ihrem benutzerdefinierten Webhook angezeigt, die lautet: **Erfolgreich ermittelt**.
-
-![WF Fusion](./images/wffusion227.png)
-
-## Adobe Firefly-Connector 1.2.4.3
-
-Klicken Sie auf das Symbol **+** , um ein neues Modul hinzuzufügen.
-
-![WF Fusion](./images/wffcff2.png)
-
-Geben Sie den Suchbegriff `Adobe Firefly` ein und wählen Sie dann **Adobe Firefly**.
-
-![WF Fusion](./images/wffcff2a.png)
-
-Wählen Sie **Bild erstellen** aus.
-
-![WF Fusion](./images/wffcff3.png)
-
-Klicken Sie auf das **Adobe Firefly**-Modul, um es zu öffnen, und klicken Sie dann auf **Hinzufügen**, um eine neue Verbindung zu erstellen.
-
-![WF Fusion](./images/wffcff5.png)
-
-Füllen Sie die folgenden Felder aus:
-
-- **Verbindungsname**: Verwenden Sie `--aepUserLdap-- - Firefly connection`.
-- **Umgebung**: Verwenden Sie **Produktion**.
-- **Type**: verwenden **Persönliches Konto**.
-- **Client-ID**: Kopieren Sie die **Client-ID** aus Ihrem Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- - One Adobe tutorial`.
-- **Client-Geheimnis**: Kopieren Sie das **Client-Geheimnis** aus Ihrem Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- - One Adobe tutorial`.
-
-Die **Client-ID** und **Client-Geheimnis** Ihres Adobe I/O-Projekts finden Sie [hier](https://developer.adobe.com/console/projects.){target="_blank"}.
-
-![WF Fusion](./images/wffc20.png)
-
-Nachdem Sie alle Felder ausgefüllt haben, klicken Sie auf **Weiter**. Ihre Verbindung wird dann automatisch validiert.
-
-![WF Fusion](./images/wffcff6.png)
-
-Wählen Sie als Nächstes die Variable **Eingabeaufforderung** aus, die dem Szenario vom eingehenden **benutzerdefinierten Webhook“ bereitgestellt**.
-
-![WF Fusion](./images/wffcff7.png)
-
-Setzen Sie **Modellversion** **prompt** auf **image4 standard**. Klicken Sie auf **OK**.
-
-![WF Fusion](./images/wffcff7b.png)
+![Frame-IO](./images/aemf22.png)
 
 Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern, und klicken Sie dann auf **Einmal ausführen**, um Ihre Konfiguration zu testen.
 
-![WF Fusion](./images/wffcff8.png)
+![Frame-IO](./images/aemf23.png)
 
-Wechseln Sie zu Postman, überprüfen Sie die Eingabeaufforderung in Ihrer Anfrage und klicken Sie dann auf **Senden**.
+Wechseln Sie zurück zu Frame.io und ändern Sie den Status in **In Bearbeitung**.
 
-![WF Fusion](./images/wffcff8a.png)
+![Frame-IO](./images/aemf24.png)
 
-Nachdem Sie auf Senden geklickt haben, gehen Sie zurück zu Workfront Fusion und klicken Sie auf das Blasensymbol im Modul **Adobe Firefly**, um die Details zu überprüfen.
+Gehen Sie zurück zu Workfront Fusion und klicken Sie auf die Blase im Modul **Frame.io -** eines benutzerdefinierten API-Aufrufs“. Sie sollten dann einen ähnlichen Überblick sehen.
 
-![WF Fusion](./images/wffcff9.png)
+![Frame-IO](./images/aemf25.png)
 
-Navigieren Sie **AUSGABE** zu **Details** > **url**, um die URL des von **Adobe Firefly generierten Bildes** finden.
+Als Nächstes sollten Sie einen Filter einrichten, um sicherzustellen, dass nur für Assets mit dem Status **Genehmigt** eine PNG-Datei gerendert wird. Klicken Sie dazu auf das Symbol **Schraubenschlüssel** zwischen den Modulen **Benutzerdefinierter Webhook** und **Frame.io - Erstellen Sie einen benutzerdefinierten API-Aufruf** und wählen Sie dann **Filter einrichten**.
 
-![WF Fusion](./images/wffcff10.png)
+![Frame-IO](./images/aemf25a.png)
 
-Kopieren Sie die URL und fügen Sie sie in Ihren Browser ein. Jetzt sollte ein Bild angezeigt werden, das die von der Postman-Anfrage gesendete Eingabeaufforderung darstellt, in diesem Fall **Misty Meadows**.
+Konfigurieren Sie die folgenden Felder:
 
-![WF Fusion](./images/wffcff11.png)
+- **label**: Verwenden Sie `Status = Approved`.
+- **condition**: `{{1.metadata.value[]}}`.
+- **Standardoperatoren**: Wählen Sie **Gleich**.
+- **Wert**: `Approved`.
 
-## 1.2.4.2 Ändern des Hintergrunds der PSD-Datei
+Klicken Sie auf **OK**.
 
-Sie aktualisieren Ihr Szenario jetzt, um es durch die Verwendung von mehr vorkonfigurierten Connectoren intelligenter zu gestalten. Sie werden auch die Ausgabe von Firefly mit Photoshop verbinden, damit sich das Hintergrundbild der PSD-Datei dynamisch ändert, indem Sie die Ausgabe der Aktion &quot;Firefly-Bild generieren“ verwenden.
+![Frame-IO](./images/aemf35.png)
 
-Sie sollten das dann sehen. Bewegen Sie als Nächstes den Mauszeiger über das Modul **Adobe Firefly** und klicken Sie auf das Symbol **+** .
+Sie sollten dann diese haben. Klicken Sie **Speichern**, um Ihre Änderungen zu speichern.
 
-![WF Fusion](./images/wffc15.png)
+![Frame-IO](./images/aemf35a.png)
 
-Geben Sie im Suchmenü `Photoshop` ein und klicken Sie dann auf die Aktion **Adobe Photoshop**.
+## 1.2.4.4 In PNG konvertieren
 
-![WF Fusion](./images/wffc16.png)
+Bewegen Sie den Mauszeiger über das Modul **Frame.io - Erstellen Sie einen benutzerdefinierten API-Aufruf** und klicken Sie auf das Symbol **+** .
 
-Wählen **PSD-Bearbeitungen anwenden**.
+![Frame-IO](./images/aemf27.png)
 
-![WF Fusion](./images/wffc17.png)
+Geben Sie den Suchbegriff `photoshop` ein und klicken Sie dann auf **Adobe Photoshop**.
 
-Sie sollten das dann sehen. Klicken Sie **Hinzufügen**, um eine neue Verbindung zu Adobe Photoshop hinzuzufügen.
+![Frame-IO](./images/aemf28.png)
 
-![WF Fusion](./images/wffc18.png)
+Klicken Sie **Bildformat konvertieren**.
 
-Konfigurieren Sie Ihre Verbindung wie folgt:
+![Frame-IO](./images/aemf29.png)
 
-- Verbindungstyp: **Adobe Photoshop (Server-zu-Server) auswählen**
-- Verbindungsname: `--aepUserLdap-- - Adobe I/O` eingeben
-- Client ID: Fügen Sie Ihre Client ID ein.
-- Client-Geheimnis: Fügen Sie Ihr Client-Geheimnis ein.
+Vergewissern Sie sich, **das Feld** Verbindung“ Ihre zuvor erstellte Verbindung verwendet, die `--aepUserLdap-- - Adobe IO` heißt.
 
-Klicken Sie auf **Fortfahren**.
+Legen Sie unter **Input** das Feld **Storage** auf **External** fest und legen Sie **File Location** fest, um die Variable **Original** zu verwenden, die vom Modul **Frame.io - Erstellen eines benutzerdefinierten API-Aufrufs zurückgegeben wird**.
 
-![WF Fusion](./images/wffc19.png)
+Klicken Sie anschließend auf **Element hinzufügen** unter **Ausgaben**.
 
-Um Ihre **Client-ID** und Ihr **Client-Geheimnis** zu finden, navigieren Sie zu [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} und öffnen Sie Ihr Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- One Adobe tutorial`. Wechseln Sie zu **OAuth Server-zu-Server**, um Ihre Client-ID und Ihr Client-Geheimnis zu finden. Kopieren Sie diese Werte und fügen Sie sie in die Verbindungseinrichtung in Workfront Fusion ein.
+![Frame-IO](./images/aemf30.png)
 
-![WF Fusion](./images/wffc20.png)
+Legen Sie für **Konfiguration** Ausgaben“ das Feld **Speicher** auf **Interner Speicher** und **Typ** auf **image/png** fest. Klicken Sie auf **Hinzufügen**.
 
-Nachdem Sie auf **Weiter** geklickt haben, wird ein Popup-Fenster angezeigt, während Ihre Anmeldeinformationen überprüft werden. Sobald Sie fertig sind, sollten Sie dies sehen.
+![Frame-IO](./images/aemf31.png)
 
-![WF Fusion](./images/wffc21.png)
+Klicken Sie auf **OK**.
 
-Jetzt müssen Sie den Dateispeicherort der PSD-Datei eingeben, mit der Fusion arbeiten soll. Wählen **für** Speicher **die Option Azure** und geben Sie für **Dateispeicherort** `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/{{1.AZURE_STORAGE_SAS_READ}}` ein. Platzieren Sie den Cursor neben die zweite `/`. Sehen Sie sich dann die verfügbaren Variablen an und scrollen Sie nach unten, um die Variable **psdTemplate** zu finden. Klicken Sie auf die Variable **psdTemplate**, um sie auszuwählen.
-
-![WF Fusion](./images/wffc22.png)
-
-Sie sollten das dann sehen.
-
-![WF Fusion](./images/wffc23.png)
-
-Scrollen Sie ganz nach unten, bis Sie „Ebenen **sehen**. Klicken Sie **Element hinzufügen**.
-
-![WF Fusion](./images/wffc24.png)
-
-Sie sollten das dann sehen. Jetzt müssen Sie den Namen der Ebene in Ihrer Photoshop PSD-Vorlage eingeben, die für den Hintergrund der Datei verwendet wird.
-
-![WF Fusion](./images/wffc25.png)
-
-In der Datei **citsignal-fiber.psd** finden Sie die Ebene, die für den Hintergrund verwendet wird. In diesem Beispiel erhält diese Ebene den Namen **2048x2048-background**.
-
-![WF Fusion](./images/wffc26.png)
-
-Fügen Sie den Namen **2048x2048-background** in das Dialogfeld &quot;Workfront Fusion“ ein.
-
-![WF Fusion](./images/wffc27.png)
-
-Scrollen Sie nach unten, bis Sie &quot;**&quot;**. Jetzt müssen Sie definieren, was in die Hintergrundebene eingefügt werden soll. In diesem Fall müssen Sie die Ausgabe des Moduls **Adobe Firefly** auswählen, das das dynamisch generierte Bild enthält.
-
-Wählen **für** die Option **Extern** aus. Für **Dateispeicherort** müssen Sie die Variable `{{XX.details[].url}}` aus der Ausgabe des **Adobe Firefly**-Moduls kopieren und einfügen, aber Sie müssen **XX** in der Variablen durch die Sequenznummer des **Adobe Firefly**-Moduls ersetzen, die in diesem Beispiel **5** lautet.
-
-![WF Fusion](./images/wffc28.png)
-
-Scrollen Sie dann nach unten, bis Sie **Bearbeiten** sehen. Legen Sie **Bearbeiten** auf **Ja** und **Typ** auf **Layer** fest. Klicken Sie auf **Hinzufügen**.
-
-![WF Fusion](./images/wffc29.png)
-
-Sie sollten das dann sehen. Als Nächstes müssen Sie die Ausgabe der Aktion definieren. Klicken Sie **Element hinzufügen** unter **Ausgaben**.
-
-![WF Fusion](./images/wffc30.png)
-
-Wählen Sie **Azure** für **Storage** aus, fügen Sie diesen `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` unter **File Location** ein und wählen Sie **vnd.adobe.photoshop** unter **Type**. Klicken, um **Erweiterte Einstellungen anzeigen** zu aktivieren.
-
-![WF Fusion](./images/wffc31.png)
-
-Wählen **unter „Erweiterte**&quot; die Option **Ja**, um Dateien mit demselben Namen zu überschreiben.
-Klicken Sie auf **Hinzufügen**.
-
-![WF Fusion](./images/wffc32.png)
-
-Sie sollten dann diese haben. Klicken Sie auf **OK**.
-
-![WF Fusion](./images/wffc33.png)
+![Frame-IO](./images/aemf33.png)
 
 Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern, und klicken Sie dann auf **Einmal ausführen**, um Ihre Konfiguration zu testen.
 
-![WF Fusion](./images/wffc33a.png)
+![Frame-IO](./images/aemf32.png)
 
-Wechseln Sie zu Postman, überprüfen Sie die Eingabeaufforderung in Ihrer Anfrage und klicken Sie dann auf **Senden**.
+Wechseln Sie zurück zu Frame.io, klicken Sie auf das Feld **In Bearbeitung** und ändern Sie den Status in **Genehmigt**.
 
-![WF Fusion](./images/wffcff8a.png)
+![Frame-IO](./images/aemf37.png)
 
-Sie sollten das dann sehen. Klicken Sie auf den Kreis im Modul **Adobe Photoshop - PSD-Bearbeitungen anwenden**.
+Zurück zu Workfront Fusion. Sie sollten jetzt sehen, dass alle Module in Ihrem Szenario erfolgreich ausgeführt wurden. Klicken Sie auf den Kreis im Modul **Adobe Photoshop - Bildformat** .
 
-![WF Fusion](./images/wffc33b.png)
+![Frame-IO](./images/aemf38.png)
 
-Sie können jetzt sehen, dass erfolgreich eine neue PSD-Datei generiert und in Ihrem Microsoft Azure-Speicherkonto gespeichert wurde.
+In den Details der Ausführung des Moduls **Adobe Photoshop - Bildformat konvertieren** können Sie sehen, dass jetzt eine PNG-Datei generiert wurde. Der nächste Schritt besteht darin, diese Datei dann in AEM Assets CS zu speichern.
 
-![WF Fusion](./images/wffc33c.png)
+![Frame-IO](./images/aemf39.png)
 
-## 1.2.4.3 Ändern der Textebenen einer PSD-Datei
+## PNG-Datei in AEM Assets CS 1.2.4.5
 
-Bewegen Sie als Nächstes den Mauszeiger über das Modul **Adobe Photoshop - PSD** Bearbeitungen anwenden und klicken Sie auf das Symbol **+** .
+Bewegen Sie den Mauszeiger über das Modul **Adobe Photoshop - Bildformat** und klicken Sie auf das Symbol **+** .
 
-![WF Fusion](./images/wffc34.png)
+![Frame-IO](./images/aemf40.png)
 
-**Adobe Photoshop**.
+Geben Sie den Suchbegriff `aem` ein und wählen Sie **AEM Assets**.
 
-![WF Fusion](./images/wffc35.png)
+![Frame-IO](./images/aemf41.png)
 
-Wählen Sie **Textebenen bearbeiten**.
+Klicken Sie **Asset hochladen**.
 
-![WF Fusion](./images/wffc36.png)
+![Frame-IO](./images/aemf42.png)
 
-Sie sollten das dann sehen. Wählen Sie zunächst die zuvor bereits konfigurierte Adobe Photoshop-Verbindung aus, die `--aepUserLdap-- Adobe I/O` benannt werden soll.
+Jetzt müssen Sie Ihre Verbindung zu AEM Assets CS konfigurieren. Klicken Sie auf **Hinzufügen**.
 
-![WF Fusion](./images/wffc37.png)
+![Frame-IO](./images/aemf43.png)
 
-Wählen Sie für **Eingabedatei** die Option **Azure** für **Eingabedateispeicherung** und stellen Sie sicher, dass Sie die Ausgabe aus der vorherigen Anforderung **Adobe Photoshop - PSD-Bearbeitungen anwenden** auswählen, die Sie wie folgt definieren können: ``{{XX.data[].`_links`.renditions[].href}}`` (ersetzen Sie XX durch die Sequenznummer des vorherigen Moduls Adobe Photoshop - PSD-Bearbeitungen anwenden).
+Verwenden Sie die folgenden Einstellungen:
 
-Klicken Sie anschließend auf **+Element hinzufügen** unter **Ebenen**, um mit dem Hinzufügen der Textebenen zu beginnen, die aktualisiert werden müssen.
+- **Verbindungstyp**: **AEM Assets as a Cloud Service**.
+- **Verbindungsname**: `--aepUserLdap-- AEM Assets CS`.
+- **Instanz-URL**: Kopieren Sie die Instanz-URL Ihrer AEM Assets CS-Autorenumgebung, die wie folgt aussehen sollte: `https://author-pXXXXX-eXXXXXXX.adobeaemcloud.com`.
+- **Auffülloptionen für Zugriffsdetails**: Wählen Sie **JSON bereitstellen** aus.
 
-![WF Fusion](./images/wffc37a.png)
+Jetzt müssen Sie die Anmeldeinformationen für das **-Konto im JSON-Format**. Dazu müssen Sie mit AEM Cloud Manager eine Reihe von Schritten ausführen. Lassen Sie dabei diesen Bildschirm geöffnet.
 
-Es sind zwei Änderungen vorzunehmen. Der CTA-Text und der Schaltflächentext in der Datei **Citisignal-fiber.psd** müssen aktualisiert werden.
+![Frame-IO](./images/aemf44.png)
 
-Um die Ebenennamen zu finden, öffnen Sie die Datei &quot;**-fiber.psd**. In der Datei werden Sie feststellen, dass die Ebene, die die call to action enthält, **2048x2048-cta** heißt.
+Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Die gewünschte Organisation ist `--aepImsOrgName--`. Sie werden dann so etwas sehen. Klicken Sie, um das Programm zu öffnen, das `--aepUserLdap-- - Citi Signal` benannt werden sollte.
 
-![WF Fusion](./images/wffc38.png)
+![Frame-IO](./images/aemf45.png)
 
-In der Datei **citsignal-fiber.psd** werden Sie auch feststellen, dass die Ebene, die die call to action enthält, **2048x2048-button-text** heißt.
+Klicken Sie auf die **mit den drei Punkten…** und wählen Sie **Developer Console**.
 
-![WF Fusion](./images/wffc44.png)
+![Frame-IO](./images/aemf46.png)
 
-Zunächst müssen Sie die Änderungen konfigurieren, die an der Ebene (2048x2048 **cta) vorgenommen** müssen. Geben Sie den Namen **2048x2048-cta** unter **Name** im Dialogfeld ein.
+Klicken Sie **Mit Adobe anmelden**.
 
-![WF Fusion](./images/wffc39.png)
+![Frame-IO](./images/aemf47.png)
 
-Scrollen Sie nach unten, bis **Text** > **Inhalt** angezeigt wird. Wählen Sie die Variable **cta** aus der Webhook-Payload aus. Klicken Sie auf **Hinzufügen**.
+Navigieren Sie **Tools** > **Integrationen**.
 
-![WF Fusion](./images/wffc40.png)
+![Frame-IO](./images/aemf47a.png)
 
-Sie sollten das dann sehen. Klicken Sie auf **+Element hinzufügen** unter **Ebenen**, um mit dem Hinzufügen der nächsten Textebene zu beginnen, die aktualisiert werden muss.
+Klicken Sie **Neues technisches Konto erstellen**.
 
-![WF Fusion](./images/wffc40a.png)
+![Frame-IO](./images/aemf48.png)
 
-Geben Sie den Namen **2048x2048-button-text** unter **Name** im Dialogfeld ein.
+Sie sollten dann so etwas sehen. Öffnen Sie das neu erstellte technische Konto. Klicken Sie auf die 3 Punkte **…** und wählen Sie **Ansicht**.
 
-![WF Fusion](./images/wffc40b.png)
+![Frame-IO](./images/aemf48a.png)
 
-Scrollen Sie nach unten, bis **Text** > **Inhalt** angezeigt wird. Wählen Sie die Variable **Schaltfläche** aus der Webhook-Payload aus. Klicken Sie auf **Hinzufügen**.
+Anschließend sollte eine ähnliche Payload für das Token des technischen Kontos angezeigt werden. Kopieren Sie die vollständige JSON-Payload in die Zwischenablage.
 
-![WF Fusion](./images/wffc40c.png)
+![Frame-IO](./images/aemf50.png)
 
-Sie sollten das dann sehen.
+Gehen Sie zurück zu Workfront Fusion und fügen Sie die vollständige JSON-Payload in das Feld **Anmeldedaten des technischen Kontos im JSON-Format** ein. Klicken Sie auf **Fortfahren**.
 
-![WF Fusion](./images/wffc40d.png)
+![Frame-IO](./images/aemf49.png)
 
-Scrollen Sie nach unten, bis Sie **Ausgabe** sehen. Wählen Sie **Speicher** die Option **Azure** aus. Geben Sie **Dateispeicherort** den folgenden Speicherort ein. Beachten Sie, dass dem Dateinamen die Variable `{{timestamp}}` hinzugefügt wurde. Dadurch wird sichergestellt, dass jede generierte Datei einen eindeutigen Namen hat. Legen Sie außerdem **Type** auf &quot;**.adobe.photoshop** fest.
+Ihre Verbindung wird dann validiert. Nach erfolgreicher Authentifizierung wird Ihre Verbindung automatisch im AEM Assets-Modul ausgewählt. Als Nächstes müssen Sie einen Ordner konfigurieren. Im Rahmen der Übung sollten Sie einen neuen dedizierten Ordner erstellen.
 
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
+![Frame-IO](./images/aemf51.png)
 
-Legen Sie **Type** auf **vnd.adobe.photoshop** fest. Klicken Sie auf **OK**.
+Um einen neuen dedizierten Ordner zu erstellen, navigieren Sie zu [https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}. Stellen Sie sicher, dass die richtige Experience Cloud-Instanz ausgewählt ist, die `--aepImsOrgName--` werden soll. Klicken Sie dann auf **Experience Manager Assets**.
 
-![WF Fusion](./images/wffc41.png)
+![Frame-IO](./images/aemf52.png)
+
+Klicken **in** AEM Assets CS-Umgebung auf „Auswählen“, die `--aepUserLdap-- - Citi Signal dev` benannt werden sollte.
+
+![Frame-IO](./images/aemf53.png)
+
+Gehen Sie zu **Assets** und klicken Sie auf **Ordner erstellen**.
+
+![Frame-IO](./images/aemf54.png)
+
+Geben Sie den `--aepUserLdap-- - CitiSignal Fiber Campaign` ein und klicken Sie auf **Erstellen**.
+
+![Frame-IO](./images/aemf55.png)
+
+Ihr Ordner wird dann erstellt.
+
+![Frame-IO](./images/aemf56.png)
+
+Gehen Sie zurück zu Workfront Fusion, wählen Sie **Hier klicken, um Ordner auszuwählen** und wählen Sie dann den `--aepUserLdap-- - CitiSignal Fiber Campaign` aus.
+
+![Frame-IO](./images/aemf57.png)
+
+Stellen Sie sicher, dass das Ziel auf `--aepUserLdap-- - CitiSignal Fiber Campaign` gesetzt ist. Wählen Sie dann unter **Source** die Option **Map** aus.
+
+Wählen **unter „Dateiname** die Variable `{{3.filenames[1]}}`.
+
+Wählen **unter &quot;**&quot; die Variable `{{3.files[1]}}`.
+
+>[!NOTE]
+>
+>Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[1]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3}**. Das bedeutet, dass die Variable `{{3.filenames[1]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
+
+Klicken Sie auf **OK**.
+
+![Frame-IO](./images/aemf58.png)
 
 Klicken Sie **Speichern**, um Ihre Änderungen zu speichern.
 
-![WF Fusion](./images/wffc47.png)
+![Frame-IO](./images/aemf59.png)
 
-## Webhook-Antwort 1.2.4.4
+Als Nächstes müssen Sie bestimmte Berechtigungen für das soeben erstellte technische Konto festlegen. Als das Konto in **Developer Console** in **Cloud Manager** erstellt wurde, erhielt es **Lese**-Zugriffsrechte, aber für diesen Anwendungsfall sind **Schreib**-Zugriffsrechte erforderlich. Dies können Sie tun, indem Sie zu Ihrer AEM CS Author-Umgebung wechseln.
 
-Nachdem Sie diese Änderungen auf Ihre Photoshop-Datei angewendet haben, müssen Sie jetzt eine „Webhook **Antwort“ konfigurieren** die an die Anwendung zurückgesendet wird, die dieses Szenario aktiviert hat.
+Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Die gewünschte Organisation ist `--aepImsOrgName--`. Klicken Sie, um das Programm zu öffnen, das `--aepUserLdap-- - Citi Signal` benannt werden sollte. Sie werden dann so etwas sehen. Klicken Sie auf die Autoren-URL.
 
-Bewegen Sie den Mauszeiger über das Modul **Adobe Photoshop - Textebenen bearbeiten** klicken Sie auf das Symbol **+** .
+![Frame-IO](./images/aemf60.png)
 
-![WF Fusion](./images/wffc48.png)
+Klicken Sie **Mit Adobe anmelden**.
 
-Suchen Sie nach `webhooks` und wählen Sie **Webhook**.
+![Frame-IO](./images/aemf61.png)
 
-![WF Fusion](./images/wffc49.png)
+Navigieren Sie **Einstellungen** > **Sicherheit** > **Benutzer**.
 
-Wählen Sie **Webhook-Antwort** aus.
+![Frame-IO](./images/aemf62.png)
 
-![WF Fusion](./images/wffc50.png)
+Klicken Sie, um das Benutzerkonto des technischen Kontos zu öffnen.
 
-Sie sollten das dann sehen. Fügen Sie die folgende Payload in &quot;**&quot;**.
+![Frame-IO](./images/aemf63.png)
 
-```json
-{
-    "newPsdTemplate": ""
-}
-```
+Gehen Sie **Gruppen** und fügen Sie diesen Benutzer des technischen Kontos zur Gruppe **DAM-Users** hinzu.
 
-![WF Fusion](./images/wffc51.png)
+![Frame-IO](./images/aemf64.png)
 
-Kopieren Sie die Variable `{{XX.data[]._links.renditions[].href}}` und fügen Sie sie ein. Ersetzen **XX** durch die Sequenznummer des letzten **Adobe Photoshop -**-Moduls, in diesem Fall **7**.
+Klicken Sie **Speichern und schließen**.
 
-![WF Fusion](./images/wffc52.png)
+![Frame-IO](./images/aemf65.png)
 
-Aktivieren Sie das Kontrollkästchen für **Erweiterte Einstellungen anzeigen** und klicken Sie dann auf **Element hinzufügen**.
+Zurück zu Workfront Fusion. Klicken Sie **Einmal ausführen**, um Ihr Szenario zu testen.
 
-![WF Fusion](./images/wffc52b.png)
+![Frame-IO](./images/aemf66.png)
 
-Geben Sie im Feld **Schlüssel** `Content-Type` ein. Geben Sie im Feld **Wert** `application/json` ein. Klicken Sie auf **Hinzufügen**.
+Wechseln Sie zurück zu Frame.io und stellen Sie sicher, dass der Status Ihres Assets erneut auf **Genehmigt** geändert wird.
 
-![WF Fusion](./images/wffc52a.png)
+>[!NOTE]
+>
+>Möglicherweise müssen Sie sie zunächst zurück in **In Bearbeitung** oder **Überprüfung erforderlich** ändern und dann wieder zurück in **Genehmigt**.
 
-Sie sollten dann diese haben. Klicken Sie auf **OK**.
+![Frame-IO](./images/aemf15.png)
 
-![WF Fusion](./images/wffc53.png)
+Ihr Workfront Fusio-Szenario wird dann aktiviert und sollte erfolgreich abgeschlossen werden. Wenn Sie die Informationen im Bubble im Modul **AEM Assets** anzeigen, können Sie bereits sehen, dass die PNG-Datei erfolgreich in AEM Assets CS gespeichert wurde.
 
-Klicken Sie **Automatisch ausrichten**.
+![Frame-IO](./images/aemf67.png)
 
-![WF Fusion](./images/wffc54.png)
+Kehren Sie zu AEM Assets CS zurück und öffnen Sie die `--aepUserLdap-- - Frame.io PNG`. Jetzt sollte die PNG-Datei angezeigt werden, die im Rahmen des Workfront Fusion-Szenarios generiert wurde. Doppelklicken Sie auf die Datei, um sie zu öffnen.
 
-Sie sollten das dann sehen. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern, und klicken Sie dann auf **Einmal ausführen**, um Ihr Szenario zu testen.
+![Frame-IO](./images/aemf68.png)
 
-![WF Fusion](./images/wffc55.png)
+Sie können jetzt weitere Details zu den Metadaten der generierten PNG-Datei sehen.
 
-Gehen Sie zurück zu Postman und klicken Sie auf **Senden**. Die hier verwendete Eingabeaufforderung lautet **Misty Meadows**.
+![Frame-IO](./images/aemf69.png)
 
-![WF Fusion](./images/wffc56.png)
-
-Anschließend wird das Szenario aktiviert und nach einiger Zeit wird in Postman eine Antwort angezeigt, die die URL der neu erstellten PSD-Datei enthält.
-
-![WF Fusion](./images/wffc58.png)
-
-Zur Erinnerung: Sobald das Szenario in Workfront Fusion ausgeführt wurde, können Sie Informationen zu den einzelnen Modulen anzeigen, indem Sie auf die Sprechblase über jedem Modul klicken.
-
-![WF Fusion](./images/wffc59.png)
-
-Mit Azure Storage Explorer können Sie dann die neu erstellte PSD-Datei suchen und öffnen, indem Sie in Azure Storage Explorer darauf doppelklicken.
-
-![WF Fusion](./images/wffc60.png)
-
-Ihre Datei sollte dann wie folgt aussehen, mit dem Hintergrund, der durch einen Hintergrund mit &quot;**Wiesen“ ersetzt**.
-
-![WF Fusion](./images/wffc61.png)
-
-Wenn Sie Ihr Szenario erneut ausführen und dann eine neue Anfrage aus Postman mit einer anderen Eingabeaufforderung senden, werden Sie sehen, wie einfach und wiederverwendbar Ihr Szenario geworden ist. In diesem Beispiel ist die neue Eingabeaufforderung (Sunny **)**.
-
-![WF Fusion](./images/wffc62.png)
-
-Und ein paar Minuten später wurde eine neue PSD-Datei mit neuem Hintergrund erstellt.
-
-![WF Fusion](./images/wffc63.png)
+Sie haben diese Übung jetzt erfolgreich abgeschlossen.
 
 ## Nächste Schritte
 
-Navigieren Sie zu [1.2.5 Frame.io und Workfront Fusion](./ex5.md){target="_blank"}
+Wechseln Sie zu [Zusammenfassung und Vorteile der Creative-Workflow-Automatisierung mit Workfront Fusion](./summary.md){target="_blank"}
 
 Zurück zur [Creative-Workflow-Automatisierung mit Workfront Fusion](./automation.md){target="_blank"}
 
 Zurück zu [Alle Module](./../../../overview.md){target="_blank"}
+1,2,4
