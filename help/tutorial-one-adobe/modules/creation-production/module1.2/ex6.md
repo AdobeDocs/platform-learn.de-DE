@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Um diese Übung abzuschließen, benötigen Sie Zugriff auf eine funktionierende AEM Assets CS Author-Umgebung. Wenn Sie der Übung [Adobe Experience Manager Cloud Service und Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}, haben Sie Zugriff auf eine solche Umgebung.
+>Um diese Übung abzuschließen, benötigen Sie Zugriff auf eine funktionierende AEM Assets CS Author-Umgebung. Wenn Sie der Übung [Adobe Experience Manager Cloud Service und Edge Delivery Services &#x200B;](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}, haben Sie Zugriff auf eine solche Umgebung.
 
 >[!IMPORTANT]
 >
@@ -321,7 +321,7 @@ Wählen **unter &quot;**&quot; die Variable `{{3.files[1]}}`.
 
 >[!NOTE]
 >
->Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[1]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3}**. Das bedeutet, dass die Variable `{{3.filenames[1]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
+>Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[1]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3&rbrace;**. Das bedeutet, dass die Variable `{{3.filenames[1]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
 
 Klicken Sie auf **OK**.
 

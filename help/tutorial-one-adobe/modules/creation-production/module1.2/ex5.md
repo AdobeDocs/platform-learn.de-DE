@@ -53,7 +53,7 @@ Klicken Sie **Hochladen**.
 
 ![Frame-IO](./images/framev4_5.png)
 
-In einer der vorherigen Übungen haben Sie „Citisignal[fiber.psd“ ](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Wählen Sie diese Datei aus und klicken Sie auf **Öffnen**.
+In einer der vorherigen Übungen haben Sie „Citisignal[fiber.psd“ &#x200B;](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Wählen Sie diese Datei aus und klicken Sie auf **Öffnen**.
 
 ![Frame-IO](./images/framev4_6.png)
 
@@ -191,7 +191,7 @@ Wenn die benutzerdefinierte Aktion in Frame.io aufgerufen wird, erwartet Frame.i
 }
 ```
 
-Damit das Szenario `--aepUserLdap-- - Firefly + Photoshop` erfolgreich ausgeführt werden kann, sind daher Felder wie ****, **cta**, **button** und **psdTemplate** erforderlich.
+Damit das Szenario `--aepUserLdap-- - Firefly + Photoshop` erfolgreich ausgeführt werden kann, sind daher Felder wie **&#x200B;**, **cta**, **button** und **psdTemplate** erforderlich.
 
 Die ersten drei Felder **Eingabeaufforderung**, **cta**, **button** erfordern Benutzereingaben, die in Frame.io erfasst werden müssen, wenn der Benutzer die benutzerdefinierte Aktion aufruft. Daher muss in Workfront Fusion zunächst überprüft werden, ob diese Variablen verfügbar sind. Ist dies nicht der Fall, sollte Workfront Fusion auf Frame.io zurückantworten, um die Eingabe dieser Variablen anzufordern. Dies erreichen Sie, indem Sie ein Formular in Frame.io verwenden.
 
