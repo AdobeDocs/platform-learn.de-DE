@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1983'
 ht-degree: 1%
 
 ---
 
-# 1.2.6 Frame I/O zu Workfront Fusion zu AEM Assets
+# 1.2.4 Frame I/O zu Workfront Fusion zu AEM Assets
 
 >[!IMPORTANT]
 >
->Um diese Übung abzuschließen, benötigen Sie Zugriff auf eine funktionierende AEM Assets CS Author-Umgebung. Wenn Sie der Übung [Adobe Experience Manager Cloud Service und Edge Delivery Services &#x200B;](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}, haben Sie Zugriff auf eine solche Umgebung.
+>Um diese Übung abzuschließen, benötigen Sie Zugriff auf eine funktionierende AEM Assets CS Author-Umgebung. Wenn Sie der Übung [Adobe Experience Manager Cloud Service und Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}, haben Sie Zugriff auf eine solche Umgebung.
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ In der vorherigen Übung haben Sie ein Szenario konfiguriert, das mithilfe von A
 
 Die Business-Teams benötigen jedoch keine PSD-Datei, sondern eine PNG-Datei oder eine JPG-Datei. In dieser Übung konfigurieren Sie eine neue Automatisierung, die dazu führt, dass eine PNG-Datei generiert wird, sobald das Asset in Frame I/O genehmigt wurde, und dass diese PNG-Datei automatisch in AEM Assets gespeichert wird.
 
-## 1.2.6.1 Erstellen eines neuen Szenarios
+## 1.2.4.1 Erstellen eines neuen Szenarios
 
 Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Öffnen Sie **Workfront Fusion**.
 
@@ -57,7 +57,7 @@ Sie sollten das dann sehen. Klicken Sie **Adresse in Zwischenablage kopieren**.
 
 ![Frame-IO](./images/aemf6.png)
 
-## 1.2.6.2 Webhook in Frame.io konfigurieren
+## 1.2.4.2 Webhook in Frame.io konfigurieren
 
 Wechseln Sie zu Postman und öffnen Sie die Anfrage **POST - Zugriffs-Token** in der Sammlung **Adobe IO - OAuth**. Klicken Sie anschließend auf **Senden**, um ein neues **Zugriffs-Token** anzufordern.
 
@@ -101,7 +101,7 @@ Die Detailansicht der Blase zeigt die Daten an, die von Frame.io empfangen wurde
 
 ![Frame-IO](./images/aemf16.png)
 
-## 1.2.6.3 Asset-Details von Frame.io abrufen
+## 1.2.4.3 Asset-Details von Frame.io abrufen
 
 Nachdem die Kommunikation zwischen Frame.io und Workfront Fusion über einen benutzerdefinierten Webhook hergestellt wurde, sollten Sie weitere Details zu dem Asset erhalten, für das die Statuskennzeichnung aktualisiert wurde. Dazu verwenden Sie in Workfront Fusion erneut den Frame.io-Connector, ähnlich wie in der vorherigen Übung.
 
@@ -178,7 +178,7 @@ Sie sollten dann diese haben. Klicken Sie **Speichern**, um Ihre Änderungen zu 
 
 ![Frame-IO](./images/aemf35a.png)
 
-## 1.2.6.4 In PNG konvertieren
+## 1.2.4.4 In PNG konvertieren
 
 Bewegen Sie den Mauszeiger über das Modul **Frame.io - Erstellen Sie einen benutzerdefinierten API-Aufruf** und klicken Sie auf das Symbol **+** .
 
@@ -224,7 +224,7 @@ In den Details der Ausführung des Moduls **Adobe Photoshop - Bildformat konvert
 
 ![Frame-IO](./images/aemf39.png)
 
-## PNG-Datei in AEM Assets CS 1.2.6.5
+## PNG-Datei in AEM Assets CS 1.2.4.5
 
 Bewegen Sie den Mauszeiger über das Modul **Adobe Photoshop - Bildformat** und klicken Sie auf das Symbol **+** .
 
@@ -321,7 +321,7 @@ Wählen **unter &quot;**&quot; die Variable `{{3.files[1]}}`.
 
 >[!NOTE]
 >
->Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[1]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3&rbrace;**. Das bedeutet, dass die Variable `{{3.filenames[1]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
+>Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{3.filenames[1]}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das dritte Modul im Szenario **Adobe Photoshop - Bildformat konvertieren** eine Sequenznummer von **3}**. Das bedeutet, dass die Variable `{{3.filenames[1]}}` auf das Feld **Dateinamen[]** aus dem Modul mit der Sequenznummer 3 zugreift. Sequenznummern können manchmal unterschiedlich sein. Achten Sie daher beim Kopieren/Einfügen dieser Variablen darauf, dass die verwendete Sequenznummer immer die richtige ist.
 
 Klicken Sie auf **OK**.
 
@@ -390,3 +390,4 @@ Wechseln Sie zu [Zusammenfassung und Vorteile der Creative-Workflow-Automatisier
 Zurück zur [Creative-Workflow-Automatisierung mit Workfront Fusion](./automation.md){target="_blank"}
 
 Zurück zu [Alle Module](./../../../overview.md){target="_blank"}
+1,2,4

@@ -4,9 +4,9 @@ description: Proofing mit Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -197,25 +197,25 @@ Sie sollten das dann sehen.
 
 Im Rahmen dieser Aufgabe müssen Sie ein neues Bild erstellen und es dann als Dokument in Workfront hochladen. Sie erstellen dieses Asset jetzt selbst mit Adobe Express.
 
-## 1.2.2.5 Ein neues Dokument zu Ihrer Aufgabe hinzufügen und den Genehmigungsfluss starten
+## 1.2.2.5 Ein neues Dokument zu Ihrem Projekt hinzufügen und den Genehmigungsfluss starten
 
 Für diese Übung müssen Sie dieses Asset herunterladen und verwenden: [timetravelnow.png](./images/timetravelnow.png)
 
 ![WF](./images/timetravelnow.png)
 
-Kehren Sie zum Bildschirm **Aufgabendetails** zurück. Navigieren Sie zu **Dokumente**. Klicken Sie auf **+ Neu hinzufügen** wählen Sie dann Ihr AEM Assets CS-Repository aus, das `--aepUserLdap-- - CitiSignal` benannt werden soll.
+Kehren Sie zum Bildschirm **Projektdetails** zurück. Navigieren Sie zu **Dokumente**. Klicken Sie auf **+ Neu hinzufügen** wählen Sie dann **Dokument** aus.
 
 ![WF](./images/wfp10.png)
 
-Doppelklicken Sie, um die `--aepUserLdap-- CitiSignal Fiber Campaign` zu öffnen.
+Klicken, um die `timetravelnow.png` auszuwählen. Klicken Sie auf **Öffnen**.
 
 ![WF](./images/wfp10a.png)
 
-Wählen Sie die Datei aus, die Sie im vorherigen Schritt erstellt haben. Sie heißt **CitiSignal - Neon Rabbit - Timetravel Now!PNG**. Klicken Sie auf **Auswählen**.
+Sie sollten dann diese haben.
 
-![WF](./images/2048x2048.png){width="50px" align="left"}
+![WF](./images/wfp10b.png)
 
-Sie sollten dann diese haben. Bewegen Sie den Mauszeiger über das hochgeladene Dokument. Klicken Sie **Korrekturabzug erstellen** und wählen Sie dann **Erweiterter Korrekturabzug**.
+Bewegen Sie den Mauszeiger über das hochgeladene Dokument. Klicken Sie **Korrekturabzug erstellen** und wählen Sie dann **Erweiterter Korrekturabzug**.
 
 ![WF](./images/wfp13.png)
 

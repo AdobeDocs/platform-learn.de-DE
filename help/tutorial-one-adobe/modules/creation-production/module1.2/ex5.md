@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
 source-wordcount: '3352'
 ht-degree: 1%
 
 ---
 
-# 1.2.5 Frame.io und Workfront Fusion
+# 1.2.3 Frame.io und Workfront Fusion
 
 In der vorherigen Übung haben Sie den Szenario-`--aepUserLdap-- - Firefly + Photoshop` konfiguriert und einen eingehenden Webhook konfiguriert, um das Szenario Trigger, und eine Webhook-Antwort, wenn das Szenario erfolgreich abgeschlossen wurde. Anschließend haben Sie Postman zum Trigger dieses Szenarios verwendet. Postman ist ein großartiges Tool zum Testen, aber in einem echten Geschäftsszenario würden Business-Anwender Postman nicht zum Trigger eines Szenarios verwenden. Stattdessen würden sie eine andere Anwendung verwenden und erwarten, dass diese andere Anwendung ein Szenario in Workfront Fusion aktiviert. In dieser Übung ist genau das, was Sie mit Frame.io tun werden.
 
@@ -21,11 +21,11 @@ In der vorherigen Übung haben Sie den Szenario-`--aepUserLdap-- - Firefly + Pho
 >
 >Diese Übung wurde für Frame.io V4 erstellt. Einige der folgenden in der Übung verwendeten Funktionen befinden sich derzeit in der Alpha-Phase und sind noch nicht allgemein verfügbar.
 
-## Voraussetzungen für 1.2.5.1
+## Voraussetzungen für 1.2.3.1
 
 Bevor Sie mit dieser Übung fortfahren, müssen Sie die Einrichtung von [Ihrem Adobe I/O-Projekt](./../../../modules/getting-started/gettingstarted/ex6.md) einschließlich des Hinzufügens der **Frame.io-API** zu Ihrem Adobe I/O-Projekt abgeschlossen haben und außerdem eine Anwendung konfiguriert haben, die mit APIs interagiert, z. B. [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) oder [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-## 1.2.5.2 Zugriff auf Frame.io
+## 1.2.3.2 Zugriff auf Frame.io
 
 Navigieren Sie zu [https://next.frame.io/](https://next.frame.io/){target="_blank"}.
 
@@ -53,7 +53,7 @@ Klicken Sie **Hochladen**.
 
 ![Frame-IO](./images/framev4_5.png)
 
-In einer der vorherigen Übungen haben Sie „Citisignal[fiber.psd“ &#x200B;](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Wählen Sie diese Datei aus und klicken Sie auf **Öffnen**.
+In einer der vorherigen Übungen haben Sie „Citisignal[fiber.psd“ ](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Wählen Sie diese Datei aus und klicken Sie auf **Öffnen**.
 
 ![Frame-IO](./images/framev4_6.png)
 
@@ -61,7 +61,7 @@ Die Datei **Citisignal-fiber.psd** steht dann in Ihrem neu erstellten Ordner zur
 
 ![Frame-IO](./images/framev4_7.png)
 
-## 1.2.5.3 Workfront Fusion und Frame.io
+## 1.2.3.3 Workfront Fusion und Frame.io
 
 In der vorherigen Übung haben Sie das Szenario `--aepUserLdap-- - Firefly + Photoshop` erstellt, das mit einem benutzerdefinierten Webhook begann und mit einer Webhook-Antwort endete. Die Verwendung der Webhooks wurde dann mit Postman getestet, aber offensichtlich soll ein solches Szenario von einer externen Anwendung aufgerufen werden. Wie bereits erwähnt, wird Frame.io diese Übung sein, aber zwischen Frame.io und dem `--aepUserLdap-- - Firefly + Photoshop` ist ein weiteres Workfront Fusion-Szenario erforderlich. Das Szenario wird jetzt konfiguriert.
 
@@ -97,7 +97,7 @@ Sie sollten das dann sehen. Lassen Sie diesen Bildschirm offen und unberührt, d
 
 ![Frame-IO](./images/frame10.png)
 
-## 1.2.5.4 Frame.io v4-API für benutzerdefinierte Aktionen
+## 1.2.3.4 Frame.io v4-API für benutzerdefinierte Aktionen
 
 Wechseln Sie zu Postman und öffnen Sie die Anfrage **POST - Zugriffs-Token** in der Sammlung **Adobe IO - OAuth**. Überprüfen Sie das Feld **Umfang** unter **params**. Das Feld **Umfang** sollte die `frame.s2s.all` des Umfangs enthalten. Wenn sie fehlt, fügen Sie sie hinzu. Klicken Sie anschließend auf **Senden**, um ein neues **Zugriffs-Token** anzufordern.
 
@@ -177,7 +177,7 @@ Die Detailansicht der Blase zeigt die Daten an, die von Frame.io empfangen wurde
 
 Nachdem die Kommunikation zwischen Frame.io und Workfront Fusion hergestellt wurde, können Sie Ihre Konfiguration fortsetzen.
 
-## 1.2.5.5 Bereitstellen einer benutzerdefinierten Formularantwort für Frame.io
+## 1.2.3.5 Bereitstellen einer benutzerdefinierten Formularantwort für Frame.io
 
 Wenn die benutzerdefinierte Aktion in Frame.io aufgerufen wird, erwartet Frame.io eine Antwort von Workfront Fusion. Wenn Sie an das Szenario denken, das Sie in der vorherigen Übung erstellt haben, ist eine Reihe von Variablen erforderlich, um die standardmäßige Photoshop PSD-Datei zu aktualisieren. Diese Variablen werden in der von Ihnen verwendeten Payload definiert:
 
@@ -191,7 +191,7 @@ Wenn die benutzerdefinierte Aktion in Frame.io aufgerufen wird, erwartet Frame.i
 }
 ```
 
-Damit das Szenario `--aepUserLdap-- - Firefly + Photoshop` erfolgreich ausgeführt werden kann, sind daher Felder wie **&#x200B;**, **cta**, **button** und **psdTemplate** erforderlich.
+Damit das Szenario `--aepUserLdap-- - Firefly + Photoshop` erfolgreich ausgeführt werden kann, sind daher Felder wie ****, **cta**, **button** und **psdTemplate** erforderlich.
 
 Die ersten drei Felder **Eingabeaufforderung**, **cta**, **button** erfordern Benutzereingaben, die in Frame.io erfasst werden müssen, wenn der Benutzer die benutzerdefinierte Aktion aufruft. Daher muss in Workfront Fusion zunächst überprüft werden, ob diese Variablen verfügbar sind. Ist dies nicht der Fall, sollte Workfront Fusion auf Frame.io zurückantworten, um die Eingabe dieser Variablen anzufordern. Dies erreichen Sie, indem Sie ein Formular in Frame.io verwenden.
 
@@ -309,7 +309,7 @@ Gehen Sie zurück zu Frame.io und füllen Sie die Felder wie angegeben aus.
 - **CTA**: Jetzt zeitlich reisen!
 - **Schaltflächentext**: Steigen Sie ein!
 
-Klicken Sie auf **Absenden**.
+Klicken Sie auf **Senden**.
 
 ![Frame-IO](./images/frame39.png)
 
@@ -321,7 +321,7 @@ Wechseln Sie zurück zu Workfront Fusion und klicken Sie auf die Blase im Modul 
 
 ![Frame-IO](./images/frame43.png)
 
-## 1.2.5.6 Dateispeicherort von Frame.io abrufen
+## 1.2.3.6 Dateispeicherort von Frame.io abrufen
 
 Wie bereits erwähnt, werden Felder wie **prompt**, **cta**, **button** und **psdTemplate** benötigt, damit dieses Szenario funktioniert. Die ersten drei Felder sind bereits verfügbar, aber die **psdTemplate** , die verwendet werden soll, fehlt noch. Die **psdTemplate** verweist jetzt auf einen Frame.io-Speicherort, da die Datei **citsignal-fiber.psd** in Frame.io gehostet wird. Um den Speicherort dieser Datei abzurufen, müssen Sie die Frame.io-Verbindung in Workfront Fusion konfigurieren und verwenden.
 
@@ -349,7 +349,7 @@ Geben Sie anschließend die **Client-ID** und das **Client-Geheimnis** des Adobe
 
 ![Frame-IO](./images/frame50.png)
 
-Kehren Sie zu Ihrem Szenario in Workfront Fusion zurück. Fügen Sie die Werte von **Client-ID** und **Client-Geheimnis** in das entsprechende Feld im Fenster „Verbindungseinrichtung“ ein. Klicken Sie **Weiter**. Ihre Verbindung wird jetzt von Workfront Fusion getestet.
+Kehren Sie zu Ihrem Szenario in Workfront Fusion zurück. Fügen Sie die Werte von **Client-ID** und **Client-Geheimnis** in das entsprechende Feld im Fenster „Verbindungseinrichtung“ ein. Klicken Sie auf **Fortfahren**. Ihre Verbindung wird jetzt von Workfront Fusion getestet.
 
 ![Frame-IO](./images/frame55.png)
 
@@ -415,7 +415,7 @@ Wechseln Sie zurück zu Workfront Fusion. Klicken Sie **erneut auf &quot;** ausf
 
 ![Frame-IO](./images/frame59.png)
 
-Gehen Sie zurück zu Frame.io und füllen Sie die Felder wie angegeben aus. Klicken Sie auf **Absenden**.
+Gehen Sie zurück zu Frame.io und füllen Sie die Felder wie angegeben aus. Klicken Sie auf **Senden**.
 
 - **Prompt**: futuristische Laserstrahlen, die durch den Weltraum laufen
 - **CTA**: Jetzt zeitlich reisen!
@@ -437,7 +437,7 @@ Die spezifische Information, die für diesen Anwendungsfall benötigt wird, ist 
 
 Ihnen stehen jetzt alle Informationen (**prompt**, **cta**, **button** und **psdTemplate**) zur Verfügung, die für diesen Anwendungsfall erforderlich sind, um zu funktionieren.
 
-## Workfront-Szenario 1.2.5.7 aufrufen
+## Workfront-Szenario 1.2.3.7 aufrufen
 
 In der vorherigen Übung haben Sie das Szenario `--aepUserLdap-- - Firefly + Photoshop` konfiguriert. Jetzt müssen Sie an diesem Szenario eine geringfügige Änderung vornehmen.
 
@@ -502,7 +502,7 @@ Klicken Sie **Speichern**, um Ihre Änderungen zu speichern.
 
 ![Frame-IO](./images/frame73.png)
 
-## 1.2.5.8 Speichern eines neuen Assets in Frame.io
+## 1.2.3.8 Speichern eines neuen Assets in Frame.io
 
 Nachdem das andere Workfront Fusion-Szenario aufgerufen wurde, ist das Ergebnis eine neue Photoshop PSD-Vorlage, die verfügbar ist. Diese PSD-Datei muss wieder in Frame.io gespeichert werden, was der letzte Schritt in diesem Szenario ist.
 
@@ -527,9 +527,9 @@ Verwenden Sie für die Konfiguration des Moduls **Frame.io - Erstellen eines ben
 >[!NOTE]
 >
 >Wie bereits erwähnt, können Variablen in Workfront Fusion mithilfe der folgenden Syntax manuell angegeben werden: `{{1.account_id}}` und `{{4.body.data.parent_id}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario.
->&#x200B;>In diesem Beispiel sehen Sie, dass das erste Modul im Szenario **Webhooks** heißt und die Sequenznummer **1 hat**. Das bedeutet, dass die Variable `{{1.account_id}}` auf dieses Feld aus dem Modul mit der Sequenznummer 1 zugreift.
->&#x200B;>In diesem Beispiel sehen Sie, dass das vierte Modul im Szenario **Frame.io - Erstellen eines benutzerdefinierten API-Aufrufs** heißt und die Sequenznummer **4** hat. Das bedeutet, dass die Variable `{{4.body.data.parent_id}}` auf dieses Feld aus dem Modul mit der Sequenznummer 4 zugreift.
->&#x200B;>Wenn die Sequenznummern Ihrer Module unterschiedlich sind, müssen Sie die Variablen in der obigen URL aktualisieren, um mit dem richtigen Modul verknüpft zu werden.
+>In diesem Beispiel sehen Sie, dass das erste Modul im Szenario **Webhooks** heißt und die Sequenznummer **1 hat**. Das bedeutet, dass die Variable `{{1.account_id}}` auf dieses Feld aus dem Modul mit der Sequenznummer 1 zugreift.
+>In diesem Beispiel sehen Sie, dass das vierte Modul im Szenario **Frame.io - Erstellen eines benutzerdefinierten API-Aufrufs** heißt und die Sequenznummer **4** hat. Das bedeutet, dass die Variable `{{4.body.data.parent_id}}` auf dieses Feld aus dem Modul mit der Sequenznummer 4 zugreift.
+>Wenn die Sequenznummern Ihrer Module unterschiedlich sind, müssen Sie die Variablen in der obigen URL aktualisieren, um mit dem richtigen Modul verknüpft zu werden.
 
 ![Frame-IO](./images/frame78.png)
 
@@ -549,7 +549,7 @@ Kopieren Sie das folgende JSON-Fragment und fügen Sie es in das Feld **Textkör
 >[!NOTE]
 >
 >Variablen in Workfront Fusion können manuell mit der folgenden Syntax angegeben werden: `{{6.data.newPsdTemplate}}`. Die Zahl in der Variablen verweist auf das Modul im Szenario. In diesem Beispiel sehen Sie, dass das sechste Modul im Szenario **HTTP - Eine Anfrage stellen“ heißt** eine Sequenznummer von **6** hat. Das bedeutet, dass die Variable `{{6.data.newPsdTemplate}}` auf das Feld **data.newPsdTemplate** aus dem Modul mit der Sequenznummer 6 zugreift.
->&#x200B;>Wenn die Sequenznummern Ihres Moduls unterschiedlich sind, müssen Sie die Variable in der obigen URL aktualisieren, um mit dem richtigen Modul verknüpft zu werden.
+>Wenn die Sequenznummern Ihres Moduls unterschiedlich sind, müssen Sie die Variable in der obigen URL aktualisieren, um mit dem richtigen Modul verknüpft zu werden.
 
 Klicken Sie auf **OK**.
 
@@ -559,9 +559,9 @@ Klicken Sie **Speichern**, um Ihre Änderungen zu speichern.
 
 ![Frame-IO](./images/frame81.png)
 
-## 1.2.5.9 Testen des End-to-End-Anwendungsfalls
+## 1.2.3.9 Testen des End-to-End-Anwendungsfalls
 
-Klicken Sie **Ihrer `--aepUserLdap-- - Frame IO Custom Action` auf** Einmal ausführen“.
+Klicken Sie **Ihrer** auf `--aepUserLdap-- - Frame IO Custom Action`Einmal ausführen“.
 
 ![Frame-IO](./images/frame85.png)
 
@@ -573,7 +573,7 @@ Es sollte nun eine Eingabeaufforderung in Frame.io angezeigt werden. Füllen Sie
 
 ![Frame-IO](./images/frame38.png)
 
-Wechseln Sie zurück zu Workfront Fusion. Klicken Sie **Ihrer `--aepUserLdap-- - Frame IO Custom Action V4` auf** Einmal ausführen“.
+Wechseln Sie zurück zu Workfront Fusion. Klicken Sie **Ihrer** auf `--aepUserLdap-- - Frame IO Custom Action V4`Einmal ausführen“.
 
 ![Frame-IO](./images/frame86.png)
 
@@ -581,7 +581,7 @@ Wechseln Sie zurück zu Workfront Fusion. Klicken Sie **Ihrer `--aepUserLdap-- -
 
 ![Frame-IO](./images/frame87.png)
 
-Gehen Sie zurück zu Frame.io und füllen Sie die Felder wie angegeben aus. Klicken Sie auf **Absenden**.
+Gehen Sie zurück zu Frame.io und füllen Sie die Felder wie angegeben aus. Klicken Sie auf **Senden**.
 
 - **Prompt**: futuristische Laserstrahlen, die durch den Weltraum laufen
 - **CTA**: Jetzt zeitlich reisen!

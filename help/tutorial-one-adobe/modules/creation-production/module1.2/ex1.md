@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 4b38b40c47b5c373f74a85261adce46f291303a8
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Die folgenden Variablen müssen definiert werden:
 | `CONST_client_secret` | Ihr Adobe I/O-Projekt - Client-Geheimnis |
 | `CONST_scope` | Ihr Adobe I/O-Projektumfang |
 
-Suchen Sie diese Variablen, indem Sie zu [https://developer.adobe.com/console/projects wechseln &#x200B;](https://developer.adobe.com/console/projects){target="_blank"} Ihr Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- One Adobe tutorial` öffnen.
+Suchen Sie diese Variablen, indem Sie zu [https://developer.adobe.com/console/projects wechseln ](https://developer.adobe.com/console/projects){target="_blank"} Ihr Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- One Adobe tutorial` öffnen.
 
 ![WF Fusion](./images/wffusion9.png)
 
@@ -83,7 +83,7 @@ Mithilfe der oben genannten Schlüssel und Werte können Sie das Objekt **Mehrer
 
 ![WF Fusion](./images/wffusion11.png)
 
-Geben Sie den **Variablennamen**: **CONST_CLIENT_ID** und **Variablenwert** ein und wählen Sie **Hinzufügen**.
+Geben Sie den **Variablennamen** ein: **`CONST_client_id`** und seinen **Variablenwert** wählen Sie **Hinzufügen**.
 
 ![WF Fusion](./images/wffusion12.png)
 
@@ -91,7 +91,7 @@ Wählen Sie **Element hinzufügen** aus.
 
 ![WF Fusion](./images/wffusion13.png)
 
-Geben Sie **Variablenname**: **CONST_CLIENT_SECRET** und **Variablenwert** ein und wählen Sie **Hinzufügen**.
+Geben Sie **Variablenname** ein: **`CONST_client_secret`** und seinen **Variablenwert** wählen Sie **Hinzufügen**.
 
 ![WF Fusion](./images/wffusion14.png)
 
@@ -99,7 +99,7 @@ Wählen Sie **Element hinzufügen** aus.
 
 ![WF Fusion](./images/wffusion15.png)
 
-Geben Sie **Variablenname**: **CONST_scope** und den **Variablenwert** ein und wählen Sie **Hinzufügen**.
+Geben Sie **Variablenname** ein: **`CONST_scope`** und seinen **Variablenwert** wählen Sie **Hinzufügen**.
 
 ![WF Fusion](./images/wffusion16.png)
 
@@ -230,7 +230,7 @@ Ihr Bildschirm sollte wie folgt aussehen:
 
 ![WF Fusion](./images/wffusion45.png)
 
-Ändern Sie als Nächstes den Namen Ihres Szenarios in `--aepUserLdap-- - Adobe I/O Authentication`.
+Ändern Sie als Nächstes den Namen Ihres Szenarios in `--aepUserLdap-- - Firefly + Photoshop`.
 
 ![WF Fusion](./images/wffusion46.png)
 
@@ -240,7 +240,7 @@ Wählen Sie **Speichern** aus.
 
 ## Nächste Schritte
 
-Navigieren Sie zu [Verwenden von Adobe-APIs in Workfront Fusion](./ex2.md){target="_blank"}
+Gehen Sie zu [Automatisierung mithilfe von Connectoren](./ex4.md){target="_blank"}
 
 Zurück zur [Creative-Workflow-Automatisierung mit Workfront Fusion](./automation.md){target="_blank"}
 
