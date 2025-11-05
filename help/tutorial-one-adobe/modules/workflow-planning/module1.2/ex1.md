@@ -4,7 +4,7 @@ description: Erste Schritte mit Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Scrollen Sie im linken Menü nach unten zu **Dokumente** und klicken Sie dann au
 
 Verwenden Sie für den Namen Ihrer Integration `--aepUserLdap-- - CitiSignal AEM`.
 
-Öffnen Sie das Dropdown-**&#x200B;** Experience Manager-Repository und wählen Sie Ihre AEM CS-Instanz aus, die `--aepUserLdap-- - CitiSignal` benannt werden soll.
+Öffnen Sie das Dropdown-**** Experience Manager-Repository und wählen Sie Ihre AEM CS-Instanz aus, die `--aepUserLdap-- - CitiSignal` benannt werden soll.
 
 ![WF](./images/wfb5.png)
 
@@ -109,7 +109,7 @@ Klicken Sie anschließend auf **Ordner erstellen**.
 
 ![WF](./images/wfbaem3a.png)
 
-Benennen Sie den Ordner `--aepUserLdap-- - CitiSignal Fiber Launch Assets` und klicken Sie auf **Erstellen**.
+Benennen Sie den Ordner `--aepUserLdap-- - CitiSignal Fiber Campaign` und klicken Sie auf **Erstellen**.
 
 ![WF](./images/wfbaem4.png)
 
@@ -161,7 +161,7 @@ Wählen Sie als Nächstes das vierte Feld aus und klicken Sie erneut auf **Schem
 
 ![WF](./images/wfbaem11a.png)
 
-Anschließend wird dieses Popup erneut angezeigt. Geben Sie im Suchfeld `wm:document` ein und wählen Sie dann das Feld **Projekt-ID** aus. Klicken Sie auf **Auswählen**.
+Anschließend wird dieses Popup erneut angezeigt. Geben Sie im Suchfeld `wm:document` ein und wählen Sie dann das Feld **Dokumentstatus** aus. Klicken Sie auf **Auswählen**.
 
 ![WF](./images/wfbaem101.png)
 
@@ -173,7 +173,7 @@ Wählen Sie als Nächstes das fünfte Feld aus und klicken Sie erneut auf **Sche
 
 ![WF](./images/wfbaem103.png)
 
-Anschließend wird dieses Popup erneut angezeigt. Geben Sie im Suchfeld `wm:document` ein und wählen Sie dann das Feld **Projekt-ID** aus. Klicken Sie auf **Auswählen**.
+Anschließend wird dieses Popup erneut angezeigt. Geben Sie im Suchfeld `wm:document` ein und wählen Sie dann das Feld **Dokumentname** aus. Klicken Sie auf **Auswählen**.
 
 ![WF](./images/wfbaem104.png)
 
@@ -221,7 +221,7 @@ Als Nächstes müssen Sie das Metadatenformular dem Ordner zuweisen, den Sie zuv
 
 ![WF](./images/wfbaem15.png)
 
-Wählen Sie den Ordner aus, der `--aepUserLdap-- - CitiSignal Fiber Launch Assets` benannt werden soll. Klicken Sie **Zuweisen**.
+Wählen Sie den Ordner aus, der `--aepUserLdap-- - CitiSignal Fiber Campaign` benannt werden soll. Klicken Sie **Zuweisen**.
 
 ![WF](./images/wfbaem16.png)
 

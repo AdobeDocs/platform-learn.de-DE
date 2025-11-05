@@ -4,9 +4,9 @@ description: Proofing mit Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ Für diese Übung müssen Sie dieses Asset herunterladen und verwenden: [timetra
 
 ![WF](./images/timetravelnow.png)
 
-Kehren Sie zum Bildschirm **Projektdetails** zurück. Navigieren Sie zu **Dokumente**. Klicken Sie auf **+ Neu hinzufügen** wählen Sie dann **Dokument** aus.
+Navigieren Sie **Dokumente** für Ihre Aufgabe. Klicken Sie auf **+ Neu hinzufügen** wählen Sie dann **Dokument** aus.
 
 ![WF](./images/wfp10.png)
 
@@ -243,7 +243,7 @@ Gehen Sie zurück zu Ihrer **Aufgabe** und dem **Dokument**. Dort wird auch der 
 
 ![WF](./images/wfp25.png)
 
-Jetzt müssen Sie Design-Änderungen vornehmen, was Sie in Adobe Express tun werden.
+Jetzt müssen Sie Änderungen am Design vornehmen und eine neue Version des Bildes hochladen.
 
 ## 1.2.2.6 Neue Version des Dokuments zu Ihrer Aufgabe hinzufügen
 
@@ -251,11 +251,11 @@ Für diese Übung müssen Sie dieses Asset herunterladen und verwenden: [getonbo
 
 ![WF](./images/getonboard.png)
 
-Wählen Sie in Ihrer Aufgabenansicht in Adobe Workfront die alte Bilddatei aus, die nicht genehmigt wurde. Klicken Sie dann auf **+ Neu hinzufügen**, wählen Sie **Version** und wählen Sie dann Ihr AEM Assets CS-Repository aus, das `--aepUserLdap-- - CitiSignal` benannt werden soll.
+Wählen Sie in Ihrer Aufgabenansicht in Adobe Workfront die alte Bilddatei aus, die nicht genehmigt wurde. Klicken Sie dann auf **+ Neu hinzufügen** wählen Sie **Version** und dann **Dokument** aus.
 
 ![WF](./images/wfp26.png)
 
-Navigieren Sie zur `--aepUserLdap-- CitiSignal Fiber Campaign` und wählen Sie die `CitiSignal - Neon Rabit - Get On Board Now!.png` aus. Klicken Sie auf **Auswählen**.
+Klicken, um die `getonboardnow.png` auszuwählen. Klicken Sie auf **Öffnen**.
 
 ![WF](./images/wfp26a.png)
 
@@ -291,11 +291,11 @@ Sie werden dann mit einem genehmigten Asset wieder in Ihrer Aufgabenansicht ange
 
 ![WF](./images/wfp34.png)
 
-Wählen Sie das genehmigte Dokument aus. Klicken Sie auf das **Freigabe** Pfeilsymbol und wählen Sie Ihre AEM Assets-Integration aus, die `--aepUserLdap-- - CitiSignal AEM` benannt werden soll.
+Wählen Sie das genehmigte Dokument aus. Klicken Sie auf das **Freigabe** Pfeilsymbol und wählen Sie Ihre AEM Assets-Integration aus, die `--aepUserLdap-- - CitiSignal AEM+ACCS` benannt werden soll.
 
 ![WF](./images/wfp35.png)
 
-Doppelklicken Sie auf den zuvor erstellten Ordner, der `--aepUserLdap-- - CitiSignal Fiber Launch Assets` benannt werden soll.
+Doppelklicken Sie auf den zuvor erstellten Ordner, der `--aepUserLdap-- - CitiSignal Fiber Campaign` benannt werden soll.
 
 ![WF](./images/wfp36.png)
 
@@ -317,7 +317,7 @@ Sie sollten das dann sehen.
 
 ## 1.2.2.7 Datei in AEM Assets anzeigen
 
-Navigieren Sie zu Ihrem Ordner in AEM Assets CS mit dem Namen `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
+Navigieren Sie zu Ihrem Ordner in AEM Assets CS mit dem Namen `--aepUserLdap-- - CitiSignal Fiber Campaign`.
 
 ![WF](./images/wfppaem1.png)
 
