@@ -17,4 +17,4 @@ ht-degree: 36%
 
 Erfahren Sie, wie Sie Datenströme für Web- und mobile SDK-Implementierungen erstellen und konfigurieren. Weitere Informationen finden Sie in [Dokumentation zu Datenströmen](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346218?captions=ger&learn=on&enablevpops)

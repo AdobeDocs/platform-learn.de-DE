@@ -19,7 +19,7 @@ ht-degree: 45%
 
 Eine allgemeine Einführung in Intelligent Services, mit der Marketing-Analysten und -Praktiker die Leistungsfähigkeit von künstlicher Intelligenz und maschinellem Lernen in Anwendungsfällen mit Kundenerlebnissen nutzen können, ohne datenwissenschaftliche Kenntnisse zu besitzen. Weitere Informationen finden Sie in der [Intelligent Services-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36560?captions=ger&learn=on&enablevpops)
 
 ## Kunden-KI
 
@@ -39,7 +39,7 @@ Erfahren Sie, wie Sie die Tendenz und Abwanderung von Kunden ermitteln, die zu E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-customer-ai.md" title="Einführung in Kunden-KI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32664?format=jpeg&nocache=1740250112240" alt="Einführung in Kunden-KI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36449?captions=ger&format=jpeg&nocache=1740250112240" alt="Einführung in Kunden-KI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ Erfahren Sie, wie Sie die Tendenz und Abwanderung von Kunden ermitteln, die zu E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-customer-ai.md" title="Konfigurieren von Kunden-KI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32665?format=jpeg&nocache=1740250112226" alt="Konfigurieren von Kunden-KI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36559?captions=ger&format=jpeg&nocache=1740250112226" alt="Konfigurieren von Kunden-KI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -85,7 +85,7 @@ Erfahren Sie, wie Sie die Tendenz und Abwanderung von Kunden ermitteln, die zu E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-customer-ai-scores-and-insights.md" title="Verwenden von Kunden-KI- und Insights-Werten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="Verwenden von Kunden-KI- und Insights-Werten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36558?captions=ger&format=jpeg&nocache=1740250112262" alt="Verwenden von Kunden-KI- und Insights-Werten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -108,7 +108,7 @@ Erfahren Sie, wie Sie die Tendenz und Abwanderung von Kunden ermitteln, die zu E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-customer-ai.md" title="Geschäftswert von Kunden-KI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40374?format=jpeg&nocache=1740250112251" alt="Geschäftswert von Kunden-KI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328476?captions=ger&format=jpeg&nocache=1740250112251" alt="Geschäftswert von Kunden-KI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -147,7 +147,7 @@ Erfahren Sie, wie Sie mit Modellen die Auswirkungen Ihres Marketings verstehen k
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-attribution-ai.md" title="Einführung in Attributions-KI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32667?format=jpeg&nocache=1740250113366" alt="Einführung in Attributions-KI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36551?captions=ger&format=jpeg&nocache=1740250113366" alt="Einführung in Attributions-KI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -170,7 +170,7 @@ Erfahren Sie, wie Sie mit Modellen die Auswirkungen Ihres Marketings verstehen k
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribution-ai.md" title="Konfigurieren von Attribution AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32668?format=jpeg&nocache=1740250113378" alt="Konfigurieren von Attribution AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36557?captions=ger&format=jpeg&nocache=1740250113378" alt="Konfigurieren von Attribution AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +216,7 @@ Erfahren Sie, wie Sie mit Modellen die Auswirkungen Ihres Marketings verstehen k
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-attribution-ai.md" title="Geschäftswert von Attributions-KI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40375?format=jpeg&nocache=1740250113390" alt="Geschäftswert von Attributions-KI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328467?captions=ger&format=jpeg&nocache=1740250113390" alt="Geschäftswert von Attributions-KI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

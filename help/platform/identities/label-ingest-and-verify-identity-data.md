@@ -18,4 +18,4 @@ ht-degree: 35%
 
 Erfahren Sie, wie Sie Datenfelder als Identitäten kennzeichnen, Identitätsdaten aufnehmen und die Daten im privaten Diagramm von Adobe Experience Platform Identity Service überprüfen. Weitere Informationen finden Sie in der [Identity Service-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de)
 
->[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31579?captions=ger&learn=on&enablevpops)

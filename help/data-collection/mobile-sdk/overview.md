@@ -20,4 +20,4 @@ Erfahren Sie, wie das Adobe Experience Platform Mobile SDK die durchgängige Int
 >
 > Launch ist jetzt **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28948?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33544?captions=ger&learn=on&enablevpops)
