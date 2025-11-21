@@ -9,7 +9,7 @@ role: Developer, Data Engineer
 source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 27%
+ht-degree: 32%
 
 ---
 
@@ -24,19 +24,19 @@ ht-degree: 27%
    + [Verwenden von Umgebungen und Einbettungs-Codes](tags/use-environments-and-embed-codes.md)
    + [Hinzufügen und Konfigurieren von Erweiterungen](tags/add-and-configure-extensions.md)
    + [Datenelemente erstellen](tags/create-data-elements.md)
-   + [Regeln erstellen](tags/build-rules.md)
+   + [Erstellen von Regeln](tags/build-rules.md)
    + [Stapelregeln](tags/stack-rules.md)
    + [Erstellen und Veröffentlichen einer Bibliothek](tags/build-and-publish-a-library.md)
    + [Implementieren von in Websites mit Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
    + [Implementieren von in Websites mit Lösungs-SDKs](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=de){target="_blank"}
-   + [Implementierung in Mobile Apps](https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
-+ Web-SDK{#web-sdk}
+   + [Implementierung in Mobile Apps](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
++ Web SDK{#web-sdk}
    + [Überblick](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
    + [Implementierungs-Tutorial (mit Tags)](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [Tutorial zum Migrieren von Target](https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [Tutorial zum Migrieren von Target](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
    + [Tutorial zum Migrieren von Analytics](https://experienceleague.adobe.com/de/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
-   + Zustimmung{#consent}
+   + Einverständnis{#consent}
       + [Überblick](web-sdk/consent/overview.md)
       + [Festlegen von Einverständniswerten mit dem Adobe-Standard](web-sdk/consent/set-consent-adobe.md)
       + [Festlegen von Einverständniswerten mit dem IAB TCF 2.0-Standard](web-sdk/consent/set-consent-iab.md)
@@ -46,7 +46,7 @@ ht-degree: 27%
    + [Überblick](mobile-sdk/overview.md)
    + [Mobile-Eigenschaften erstellen](mobile-sdk/create-mobile-properties.md)
    + [Verwenden von Abhängigkeits-Managern](mobile-sdk/use-dependency-managers.md)
-   + [Implementierung in Mobile Apps](https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [Implementierung in Mobile Apps](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 
    + [Tutorial zum Migrieren von Target](https://experienceleague.adobe.com/de/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + Server-API{#server-api}

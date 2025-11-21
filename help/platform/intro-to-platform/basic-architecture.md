@@ -18,6 +18,6 @@ ht-degree: 80%
 
 Erfahren Sie in einer geführten Tour durch ein Übersichtsdiagramm mehr über die allgemeine Architektur von Adobe Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422781?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/32456?learn=on&enablevpops)
 
 

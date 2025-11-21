@@ -37,7 +37,7 @@ ht-degree: 72%
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
    + Journey Optimizer{#journey-optimizer}
-      + [Push-Benachrichtigungen &#x200B;](journey-optimizer-push.md)
+      + [Push-Benachrichtigungen ](journey-optimizer-push.md)
       + [In-App-Nachrichten](journey-optimizer-inapp.md)
       + [Entscheidungs-Management](journey-optimizer-offers.md)
    + [Ziel](target.md)
