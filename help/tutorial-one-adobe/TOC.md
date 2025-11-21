@@ -4,7 +4,7 @@ breadcrumb-title: Ein technisches Tutorial zu Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: d295b93f2370b2f464d4e52714029ca70880d71d
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 + [Tutorial-Überblick](/help/tutorial-one-adobe/overview.md)
 + [Technische Unterstützung für GenStudio Content Supply chain](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Inhaltsstatus](/help/tutorial-one-adobe/status.md)
-+ [Completion](/help/tutorial-one-adobe/completion.md)
++ [Architektur](/help/tutorial-one-adobe/architecture.md)
 
 + Erste Schritte {#gettingstarted}
    + Erste Schritte {#gettingstarted}
@@ -268,8 +268,8 @@ ht-degree: 3%
          + [Überblick](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Erste Schritte mit Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ [WIP - Agent KI](/help/tutorial-one-adobe/ai.md)
-+ WIP - Agent KI {#agenticai}
++ (WIP) Agent-KI {#agenticai}
+   + [Agentenbezogene KI - Übersicht](/help/tutorial-one-adobe/ai.md)
    + 1.1 Erste Schritte mit Agenten und KI {#agenticai1}
       + [Überblick](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
       + [1.1.1 Erste Schritte mit Agentic AI](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)

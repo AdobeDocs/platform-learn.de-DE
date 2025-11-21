@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -71,7 +71,7 @@ Die folgenden Variablen müssen definiert werden:
 | `CONST_client_secret` | Ihr Adobe I/O-Projekt - Client-Geheimnis |
 | `CONST_scope` | Ihr Adobe I/O-Projektumfang |
 
-Suchen Sie diese Variablen, indem Sie zu [https://developer.adobe.com/console/projects wechseln &#x200B;](https://developer.adobe.com/console/projects){target="_blank"} Ihr Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- One Adobe tutorial` öffnen.
+Suchen Sie diese Variablen, indem Sie zu [https://developer.adobe.com/console/projects wechseln ](https://developer.adobe.com/console/projects){target="_blank"} Ihr Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- One Adobe tutorial` öffnen.
 
 ![WF Fusion](./images/wffusion9.png)
 
@@ -170,11 +170,11 @@ Nach Ausführung des Szenarios sollte Ihr Bildschirm wie folgt aussehen:
 
 ![WF Fusion](./images/wffusion30.png)
 
-Wählen Sie das **Fragezeichen** auf dem Objekt **Mehrere Variablen festlegen** um zu sehen, was bei der Ausführung dieses Objekts passiert ist.
+Wählen Sie das Symbol **Lupe** auf dem Objekt **Mehrere Variablen festlegen** um zu sehen, was passiert ist, als dieses Objekt ausgeführt wurde.
 
 ![WF Fusion](./images/wffusion31.png)
 
-Wählen Sie das Symbol **Fragezeichen** auf dem Objekt **HTTP -** erstellen) aus, um zu sehen, was bei der Ausführung dieses Objekts passiert ist. In **OUTPUT** wird das **access_token** von Adobe I/O zurückgegeben.
+Wählen Sie das **Lupensymbol** auf dem Objekt **HTTP - Anfrage stellen** aus, um zu sehen, was passiert ist, als dieses Objekt ausgeführt wurde. In **OUTPUT** wird das **access_token** von Adobe I/O zurückgegeben.
 
 ![WF Fusion](./images/wffusion32.png)
 
@@ -206,7 +206,7 @@ Wählen **erneut** Einmal ausführen“ aus.
 
 ![WF Fusion](./images/wffusion39.png)
 
-Wählen Sie nach Ausführung des Szenarios das Symbol **Fragezeichen** im letzten Objekt **Mehrere Variablen festlegen** aus. Sie sollten sehen, dass das Zugriffstoken in der Variablen `bearer_token` gespeichert wird.
+Wählen Sie nach Ausführung des Szenarios das Symbol **Lupe** im letzten Objekt **Mehrere Variablen festlegen** aus. Sie sollten sehen, dass das Zugriffstoken in der Variablen `bearer_token` gespeichert wird.
 
 ![WF Fusion](./images/wffusion40.png)
 

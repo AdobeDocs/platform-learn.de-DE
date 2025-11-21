@@ -1,14 +1,14 @@
 ---
-title: GenStudio for Performance Marketing Campaign Activation to Meta
-description: GenStudio for Performance Marketing Campaign Activation to Meta
+title: GenStudio for Performance Marketing-Kampagnenaktivierung für Meta
+description: GenStudio for Performance Marketing-Kampagnenaktivierung für Meta
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1333'
 ht-degree: 1%
 
 ---
@@ -127,17 +127,17 @@ Anschließend sollte ein Kampagnenkalender angezeigt werden, der einen visueller
 
 ![GSPeM](./images/gscampaign8.png)
 
-## 1.3.3.2-Setup-Verbindung mit Meta
+## 1.3.3.2 Setup-Verbindung mit Meta
 
 >[!IMPORTANT]
 >
->Um Ihre Verbindung mit Meta einzurichten, benötigen Sie ein Meta-Benutzerkonto. Dieses Benutzerkonto muss einem Meta Business-Konto hinzugefügt werden.
+>Um Ihre Verbindung mit Meta einzurichten, müssen Sie über ein Meta-Benutzerkonto verfügen und dieses Benutzerkonto muss einem Meta Business-Konto hinzugefügt werden.
 
-Um die Verbindung zu Meta einzurichten, klicken Sie auf die 3 Punkte **…** und wählen Sie **Einstellungen**.
+Um die Verbindung zu Meta herzustellen, klicken Sie auf die **mit den drei Punkten…** und wählen Sie **Einstellungen**.
 
 ![GSPeM](./images/gsconnection1.png)
 
-Klicken Sie auf **Verbinden** für **Meta-Anzeigen**.
+Klicken Sie **Verbinden** für **Meta Ads**.
 
 ![GSPeM](./images/gsconnection2.png)
 
@@ -191,7 +191,7 @@ Klicken Sie anschließend auf **Freigeben**.
 
 ![GSPeM](./images/gsasset8.png)
 
-Klicken Sie **Ordner auswählen**.
+Klicken Sie **Ordner auswählen**. Ändern Sie den Namen des Assets in `--aepUserLdap-- - neon rabbit`.
 
 ![GSPeM](./images/gsasset9.png)
 
@@ -231,13 +231,13 @@ Wechseln Sie zurück zu GenStudio for Performance Marketing. Wechseln Sie im lin
 
 ![GSPeM](./images/gsasset18.png)
 
-## 1.3.3.4 Erstellen und Genehmigen einer Meta-Anzeige
+## 1.3.3.4 Erstellen und Genehmigen von Meta-Anzeigen
 
-Navigieren Sie im linken Menü zu **Erstellen**. Wählen Sie **Meta** aus.
+Navigieren Sie im linken Menü zu **Erstellen**. **Meta**.
 
 ![GSPeM](./images/gsad1.png)
 
-Wählen Sie die **Meta-Anzeige** Vorlage aus, die Sie zuvor importiert haben und die `--aepUserLdap---citisignal-meta-ad` heißt. Klicken Sie **Verwenden**.
+Wählen Sie die zuvor importierte Vorlage **0}Meta-Anzeige“ aus, die** heißt. `--aepUserLdap---citisignal-meta-ad` Klicken Sie **Verwenden**.
 
 ![GSPeM](./images/gsad2.png)
 
@@ -332,17 +332,17 @@ Der Status Ihrer Anzeige ist jetzt auf &quot;**&quot;**, was einige Minuten daue
 
 ![GSPeM](./images/gsmetaad7.png)
 
-Nach einigen Minuten ändert sich der Status der Anzeige in &quot;**&quot;**. Das bedeutet, dass die Anzeige von GenStudio for Performance Marketing an Meta gesendet wurde. Das bedeutet nicht, dass die Anzeige bereits in Meta veröffentlicht wurde! Im Meta Business Account gibt es noch eine Reihe von Schritten zu unternehmen, um die Anzeige aufzunehmen und zu veröffentlichen, damit sie für Benutzer auf den verschiedenen Meta-Plattformen sichtbar ist.
+Nach einigen Minuten ändert sich der Status der Anzeige in &quot;**&quot;**. Das bedeutet, dass die Anzeige von GenStudio for Performance Marketing an Meta gesendet wurde. Das bedeutet nicht, dass die Anzeige bereits in Meta veröffentlicht wurde! Im Geschäftskonto von Meta müssen Sie noch eine Reihe von Schritten ausführen, um die Anzeige zu erstellen und zu veröffentlichen, damit sie für die Benutzenden auf den verschiedenen Meta-Plattformen sichtbar ist.
 
 Klicken Sie **Details anzeigen**.
 
 ![GSPeM](./images/gsmetaad8.png)
 
-Klicken Sie auf **Öffnen**, um zu Ihrem Meta Business-Konto zu gelangen.
+Klicken Sie **Öffnen**, um zu Ihrem Meta Business-Konto zu gelangen.
 
 >[!IMPORTANT]
 >
->Wenn Sie keinen Zugriff auf das Meta Business-Konto haben, das mit Ihrer Umgebung verbunden ist, können Sie diese Anzeige in Meta nicht visualisieren.
+>Wenn Sie keinen Zugriff auf das mit Ihrer Umgebung verbundene Meta Business-Konto haben, können Sie diese Anzeige in Meta nicht visualisieren.
 
 ![GSPeM](./images/gsmetaad9.png)
 

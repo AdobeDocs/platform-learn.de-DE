@@ -4,9 +4,9 @@ description: Proofing mit Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,8 @@ Klicken Sie auf **Fortfahren**.
 
 ![WF](./images/blueprint3.png)
 
+Ändern Sie **Name der Projektvorlage** in `--aepUserLdap-- - Integrated Campaign Execution`.
+
 Klicken Sie **Unverändert installieren…**.
 
 ![WF](./images/blueprint4.png)
@@ -89,7 +91,7 @@ Navigieren Sie in Ihrem Programm zu **Projekte**. Klicken Sie auf **+ Neues Proj
 
 ![WF](./images/wfp6.png)
 
-Wählen Sie die Vorlage **Integrierte Kampagnenausführung** und klicken Sie auf **Vorlage verwenden**.
+Wählen Sie die `--aepUserLdap-- - Integrated Campaign Execution` aus und klicken Sie auf **Vorlage verwenden**.
 
 ![WF](./images/wfp6g.png)
 

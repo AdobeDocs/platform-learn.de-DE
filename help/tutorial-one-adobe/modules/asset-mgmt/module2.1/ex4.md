@@ -4,7 +4,7 @@ description: AEM CS - Erweiterter benutzerdefinierter Block
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
@@ -106,10 +106,10 @@ Navigieren Sie in Ihrem Browser zu Ihrem GitHub-Konto und zu dem Repository, das
 
 ![Block](./images/blockadv12.png){zoomable="yes"}
 
-Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal--XXX.aem.page/us/en/` und/oder `main--citisignal--XXX.aem.live/us/en/` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
+Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal-aem-accs--XXX.aem.page` und/oder `main--citisignal-aem-accs--XXX.aem.live` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
 
 In diesem Beispiel lautet die vollständige URL wie folgt:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` und/oder `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` und/oder `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 Sie sollten dies dann sehen, wenn der Stil auf Ihre Seite angewendet wird.
 
@@ -336,10 +336,10 @@ Klicken Sie anschließend auf **Push-Herkunft**.
 
 ![Block](./images/blockadv19.png){zoomable="yes"}
 
-Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal--XXX.aem.page/us/en/` und/oder `main--citisignal--XXX.aem.live/us/en/` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
+Sie können nun die Änderungen an Ihrer Website anzeigen, indem Sie zu `main--citisignal-aem-accs--XXX.aem.page` und/oder `main--citisignal-aem-accs--XXX.aem.live` wechseln, nachdem Sie XXX durch Ihr GitHub-Benutzerkonto ersetzt haben, was in diesem Beispiel `woutervangeluwe` ist.
 
 In diesem Beispiel lautet die vollständige URL wie folgt:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` und/oder `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` und/oder `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 Sie sollten das dann sehen.
 
