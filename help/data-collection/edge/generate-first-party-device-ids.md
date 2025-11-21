@@ -21,7 +21,7 @@ Adobe Experience Cloud-Anwendungen haben herkömmlicherweise Cookies generiert, 
 1. Erstanbieter-Cookies, die von einem Adobe-Server mithilfe der CNAME-Konfiguration eines Domain-Namens gesetzt werden
 1. Erstanbieter-Cookies, die von JavaScript gesetzt werden
 
-Jüngste Browser-Änderungen beschränken die Dauer dieser Cookie-Typen. Erstanbieter-Cookies sind am effektivsten, wenn sie mit einem kundeneigenen Server gesetzt werden, der einen DNS-A/AAAA-Eintrag anstelle eines DNS-CNAME verwendet. Mit [&#x200B; Funktion „First-Party Device ID (FPID)“ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) Kunden, die Adobe Experience Platform Web SDK implementieren, Geräte-IDs in Cookies von Servern verwenden, die DNS-A/AAAA-Einträge verwenden. Diese IDs können dann an Adobe gesendet und als Seeds zum Generieren von Experience Cloud-IDs (ECIDs) verwendet werden, die weiterhin die primäre Kennung in Adobe Experience Cloud-Programmen sind.
+Jüngste Browser-Änderungen beschränken die Dauer dieser Cookie-Typen. Erstanbieter-Cookies sind am effektivsten, wenn sie mit einem kundeneigenen Server gesetzt werden, der einen DNS-A/AAAA-Eintrag anstelle eines DNS-CNAME verwendet. Mit [&#x200B; Funktion „First-Party Device ID (FPID)“ &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/identity/first-party-device-ids) Kunden, die Adobe Experience Platform Web SDK implementieren, Geräte-IDs in Cookies von Servern verwenden, die DNS-A/AAAA-Einträge verwenden. Diese IDs können dann an Adobe gesendet und als Seeds zum Generieren von Experience Cloud-IDs (ECIDs) verwendet werden, die weiterhin die primäre Kennung in Adobe Experience Cloud-Programmen sind.
 
 Im Folgenden finden Sie ein kurzes Beispiel dafür, wie die Funktion funktioniert:
 
@@ -152,4 +152,4 @@ Der letzte Schritt besteht darin, PHP zu verwenden, um den Cookie-Wert in die Id
 1. Senden Sie eine weitere Anfrage an Platform Edge Network.
 1. Bestätigen Sie, dass der Wert im `AMCV_<IMSORGID@AdobeOrg>`-Cookie mit dem `ECID` Wert im gelöschten `AMCV_`-Cookie übereinstimmt. Wenn der Cookie-Wert für eine bestimmte FPID gleich ist, war der Seeding-Prozess für die ECID erfolgreich.
 
-Weitere Informationen zu dieser Funktion finden Sie unter [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).
+Weitere Informationen zu dieser Funktion finden Sie unter [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=de).

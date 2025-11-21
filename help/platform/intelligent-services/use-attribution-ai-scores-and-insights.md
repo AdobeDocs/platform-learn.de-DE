@@ -16,6 +16,6 @@ ht-degree: 51%
 
 # Verwenden von Attribution AI-Bewertungen und -Insights
 
-Erfahren Sie, wie Sie die Insights-Seite „Attributions-KI“ verwenden, um den ROI von Marketing-Kanälen und -Kampagnen zu verstehen. Weitere Informationen finden Sie in der [Dokumentation zur Attributions-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Erfahren Sie, wie Sie die Insights-Seite „Attributions-KI“ verwenden, um den ROI von Marketing-Kanälen und -Kampagnen zu verstehen. Weitere Informationen finden Sie in der [Dokumentation zur Attributions-KI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on&enablevpops)

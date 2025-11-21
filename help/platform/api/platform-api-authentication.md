@@ -26,7 +26,7 @@ Die Funktion [&#128279;](https://developer.adobe.com/console/home)**Details für
 
 >[!IMPORTANT]
 >
->Um auf die [Adobe Developer Console](https://developer.adobe.com/console/home) zugreifen zu können, müssen Sie entweder [Systemadministrator](https://helpx.adobe.com/de/enterprise/using/admin-roles.html) oder [Entwickler](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in der [Adobe Admin Console &#x200B;](https://adminconsole.adobe.com).
+>Um auf die [Adobe Developer Console](https://developer.adobe.com/console/home) zugreifen zu können, müssen Sie entweder [Systemadministrator](https://helpx.adobe.com/de/enterprise/using/admin-roles.html) oder [Entwickler](https://helpx.adobe.com/de/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in der [Adobe Admin Console &#x200B;](https://adminconsole.adobe.com).
 >
 > Nachdem Sie Ihre API-Anmeldedaten erstellt haben, muss ein Systemadministrator die Anmeldedaten mit einer Rolle in der Experience Platform verknüpfen.
 >
