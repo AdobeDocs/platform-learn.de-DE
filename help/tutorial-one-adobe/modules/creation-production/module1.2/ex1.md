@@ -71,7 +71,7 @@ Die folgenden Variablen müssen definiert werden:
 | `CONST_client_secret` | Ihr Adobe I/O-Projekt - Client-Geheimnis |
 | `CONST_scope` | Ihr Adobe I/O-Projektumfang |
 
-Suchen Sie diese Variablen, indem Sie zu [https://developer.adobe.com/console/projects wechseln ](https://developer.adobe.com/console/projects){target="_blank"} Ihr Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- One Adobe tutorial` öffnen.
+Suchen Sie diese Variablen, indem Sie zu [https://developer.adobe.com/console/projects wechseln &#x200B;](https://developer.adobe.com/console/projects){target="_blank"} Ihr Adobe I/O-Projekt mit dem Namen `--aepUserLdap-- One Adobe tutorial` öffnen.
 
 ![WF Fusion](./images/wffusion9.png)
 

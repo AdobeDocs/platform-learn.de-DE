@@ -237,7 +237,7 @@ Navigieren Sie im linken Menü zu **Erstellen**. **Meta**.
 
 ![GSPeM](./images/gsad1.png)
 
-Wählen Sie die zuvor importierte Vorlage **0}Meta-Anzeige“ aus, die** heißt. `--aepUserLdap---citisignal-meta-ad` Klicken Sie **Verwenden**.
+Wählen Sie die zuvor importierte Vorlage **0&rbrace;Meta-Anzeige“ aus, die** heißt. `--aepUserLdap---citisignal-meta-ad` Klicken Sie **Verwenden**.
 
 ![GSPeM](./images/gsad2.png)
 
