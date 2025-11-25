@@ -3,42 +3,52 @@ title: Erste Schritte mit Agent Orchestrator
 description: Erste Schritte mit Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: e90dee164dfe098c9fc56a04c481a733c0843858
+source-git-commit: 9011c4093b5fd6612426baf7003cd7b99523b6e8
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1296'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Erste Schritte mit Agent Orchestrator
 
-## 1.1.1 Festlegen des Kontexts in Agent Orchestrator
+## 1.1.1.1 in Agent Orchestrator
 
-Navigieren Sie zum KI-Assistenten und zeigen Sie eine große Ansicht an.
+Navigieren Sie zu [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
-Vergewissern Sie sich, dass Sie sich im CJA-Kontext für Analyseaufgaben befinden.
+Sie sollten das dann sehen. Stellen Sie sicher, dass Sie sich in der Organisation **Experience Platform International** befinden.
+
+![Agent Orchestrator](./images/ao1.png)
+
+Klicken Sie auf **Fenster** Kontext“.
+
+![Agent Orchestrator](./images/ao2.png)
+
+Legen Sie den Kontext fest auf:
+
+- **Dokumentations-Source**: **Customer Journey Analytics**
+- **Sandbox**: **Accelerate**
+- **Datenansicht**: **Accelerate 2026 B2C**
+
+Klicken Sie **Kontext festlegen**.
+
+![Agent Orchestrator](./images/ao3.png)
 
 >[!NOTE]
 >
->Verwenden Sie den Kontextwechsel, wenn Sie zwischen der Analyse (CJA) und der Orchestrierung (JO) wechseln.
+>In diesem Labor wechseln Sie beim Wechsel zwischen Analyse und Orchestrierung zwischen Kontext.
 
-## 1.1.2 Beginnen Sie mit allgemeinen Kauftrends, um den Kontext zu verankern und in Fasern zu zoomen.
-
-**Eingabeaufforderung**:
-
-```javascript
-Show me purchases by mainCategory over the last 2 month
-```
+## 1.1.1.2 Beginnen Sie mit den allgemeinen Kauftrends, um den Kontext zu verankern und in Fasern zu zoomen.
 
 **Intent**: Erhalten Sie einen Top-Level-Puls auf Kategorieabfrage - Mobil, Festnetz, Internet, TV, Glasfaser - speziell für die letzten 60 Tage. Damit werden die Grundlinien für die Saisonabhängigkeit, die Werbewirkungseffekte und die regionale Varianz nach dem Rollout von NY festgelegt.
 
-Denken:
+**Denken**:
 
 „Werden Glasfaser-Anteile nach NY? Erleben wir eine Kannibalisierung des Kupfer-/DSL-Internets? Was ist der Mix-Wechsel im Vergleich zu TV-Paketen?“
 
 „Das wird mir helfen, das adressierbare Publikum für Wien zu bestimmen und realistische Ziele zu setzen.“
 
-Vom Marketing-Experten erwartete umsetzbare Lesevorgänge:
+**Vom Marketing-Experten erwartete umsetzbare**:
 
 Ein gestapeltes Balken-/Liniendiagramm der Käufe nach Hauptkategorie (tägliche/wöchentliche Körnung).
 
@@ -46,35 +56,37 @@ Prozentualer Anteil der Käufe nach Kategorie im Vergleich zum vorherigen Zeitra
 
 Wesentliche Spitzen, die mit Promotiondaten korrelieren.
 
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
+
+```javascript
+Show me purchases by mainCategory over the last 2 months.
+```
+
+![Agent Orchestrator](./images/ao4.png)
+
+Sie sollten dies dann sehen:
+
 >[!NOTE]
 >
 >Behalten Sie die verzögerte Attribution im Auge: Fibre-Bestellungen können in einigen Legacy-Schemata unter „Internet“ erfasst werden. Wenn ja, stimmen Sie die Taxonomie vor den Entscheidungen ab.
 
- 
+![Agent Orchestrator](./images/ao5.png)
 
-**Eingabeaufforderung**:
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
 
-```javascript
-Show me purchases by mainCategory over the last 2 monthzoom into fiber performance
-```
+`Show me purchases by mainCategory = Fiber over the last 2 months per week`
 
-**Nächste Eingabeaufforderung**
+![Agent Orchestrator](./images/ao6.png)
 
-`Show me purchases by mainCategory = Fiber over the last 2 months`
+Sie sollten das dann sehen, welches sich detailliert mit faserspezifischen Trends beschäftigt.
 
-Aufschlüsselung der Fibre-spezifischen Trends.
+**Aktion**: Beachten Sie die Wachstumskurve und regionale Spitzen.
 
-**Aktion** Beachten Sie die Wachstumskurve und regionale Spitzen.
+![Agent Orchestrator](./images/ao7.png)
 
-## 1.1.3 Ordnungen mit Inhaltsvoreinstellungen korrelieren
+## 1.1.1.3 Korrelieren von Bestellungen mit Inhaltseinstellungen
 
-**Eingabeaufforderung**:
-
-```javascript
-Show me ordersYTD by preferred genre for the last 2 months
-```
-
-**Intent** Testen Sie die Hypothese, dass die Präferenz für Inhalte (z. B. SciFi, Sport, Drama) das Verhalten bei Breitband-Upgrades vorhersagt - insbesondere für Anforderungen mit hoher Bandbreite.
+**Intent**: Testen Sie die Hypothese, dass die Präferenz für Inhalte (z. B. SciFi, Sport, Drama) das Verhalten bei Breitband-Upgrades vorhersagt - insbesondere für Anforderungen mit hoher Bandbreite.
 
 **Denken**
 
@@ -90,23 +102,37 @@ Sortiert Genres nach Konversionsrate der Reihenfolge und AOV (durchschnittlicher
 
 Entscheidung: Zeigt SciFi ein starkes Signal, wird dies zu einer primären kreativen Säule für die Einführung von Wiens Fiber Max (z.B. „Niemals wieder puffern“-Messaging, Premium-Bundles).
 
-**Eingabeaufforderung**
-
-`Show me ordersYTD by preferred genre for the last 2 months`
-
 **Absicht**
 
 Konversionen nach Genre analysieren (z. B. Sci-Fi, Sport).
 
 **Goal** Überprüfen Sie, ob Sci-Fi-Fans bei Fibre-Upgrades den Index überschreiben.
 
-## 1.1.4 Identifizieren bestehender Journey
-
-**Eingabeaufforderung**:
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
 
 ```javascript
-What journey was running and had Fiber in the name
+Show me ordersYTD by preferredGenre for the last 2 months
 ```
+
+![Agent Orchestrator](./images/ao8.png)
+
+Sie sollten dies dann sehen:
+
+![Agent Orchestrator](./images/ao9.png)
+
+## 1.1.1.4 Identifizieren vorhandener Fibre-Journey
+
+Klicken Sie auf **Fenster** Kontext“.
+
+![Agent Orchestrator](./images/ao10.png)
+
+Legen Sie den Kontext fest auf:
+
+- **Dokumentations-Source**: **Adobe Journey Optimizer**
+- **Sandbox**: **Accelerate**
+- **Datenansicht**: **Accelerate 2026 B2C**
+
+![Agent Orchestrator](./images/ao11.png)
 
 **Intent** Entdecken Sie, welche aktiven oder kürzlich abgeschlossenen Journey „Fibre“ im Titel enthalten - z. B. „Fibre Upgrade NYC - Sept“, „Fibre Trial - Streaming Bundle“.
 
@@ -122,23 +148,39 @@ Liste der Journey mit Status (aktiv, angehalten, beendet), Datumsbereichen, Ziel
 
 Nächster Schritt: Ein oder zwei erfolgreiche Faser-Journey für Klonen/Adaptieren in die engere Wahl ziehen.
 
-**Eingabeaufforderung**
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
 
-`What journey was running and had Fiber in the name?`
+```javascript
+What journeys exist? 
+```
+
+![Agent Orchestrator](./images/ao12.png)
+
+Sie sollten dies dann sehen:
+
+![Agent Orchestrator](./images/ao13.png)
 
 Auflisten der aktiven oder vergangenen Journey mit Fibre-Messaging.
 
 Aktion: Hochleistungsfähige Journey für das Klonen in die engere Wahl ziehen.
 
-## 1.1.5 Überprüfen der Testzielgruppe auf relevante historische Promotions
-
-**Eingabeaufforderung**:
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
 
 ```javascript
-What was the initial audience in that SCi-Fi promo 2024 - jl journey
+Which of these journeys has 'Fiber' in its name?
 ```
 
-**Intent** Verstehen Sie die Seed-Definition der Journey „SciFi Promo 2024 - jl“, d. h. welche Eigenschaften zum Targeting führten (z. B. „SciFi Genre Preference“, „4+ Devices“, „Stream ≥ 300 GB/Monat„).
+![Agent Orchestrator](./images/ao14.png)
+
+Sie sollten dies dann sehen:
+
+![Agent Orchestrator](./images/ao15.png)
+
+## 1.1.1.5 Testadressen prüfen
+
+**Intent**:
+
+Machen Sie sich mit der Testdefinition der Journey „CitiSignal - Fibre Max Launch Promotion“ vertraut, d. h. welche Eigenschaften das Targeting begünstigt haben (z. B. „SciFi Genre Preference“, „4+ devices“, „Stream ≥ 300 GB/Monat„).
 
 **Denken**
 
@@ -156,41 +198,44 @@ Zielgruppenkriterien (Einschluss/Ausschluss), Zielgruppengröße, Regionsfilter,
 
 Von diesem Punkt an wechselt der Marketer in den Analysemodus, um ein ordnungsgemäßes Reporting zu gewährleisten.
 
-**Eingabeaufforderung**:
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
 
 ```javascript
-What was the initial audience in that SCi-Fi promo 2024 - jl journey?
+What was the initial audience in the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
+![Agent Orchestrator](./images/ao16.png)
 Überprüfen Sie die Zielgruppenkriterien (Streaming-Gewohnheiten, Anzahl der Geräte).
 
-Ziel: Eigenschaften für Anforderungen mit hoher Bandbreite verstehen.
+**Ziel**: Eigenschaften für Anforderungen mit hoher Bandbreite verstehen.
 
-## 1.1.6 Validieren der Journey-Performance über Fallout-Analyse
+## 1.1.1.6 Validieren der Journey-Performance über Fallout-Analyse
 
-**Eingabeaufforderung**:
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
 
 ```javascript
-Create a fall-out report on the "Sci-Fi Promo 2024 - jl" journey
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
 >[!NOTE]
 >
 >Kontext in CJA ändern)
 
-**Absicht** Erstellen eines schrittweisen funnel in Customer Journey Analytics
+**Intent**:
+
+Erstellen eines schrittweisen funnels in Customer Journey Analytics
 
 Zugestellt → geöffnet → geklickt → → Produktansicht → Zum Warenkorb hinzufügen → Checkout → Bestellung abgeschlossen
 
 Schließen Sie faserbezogene SKU-Ansichten als Verzweigung ein.
 
-Denken:
+**Denken**:
 
 „Wo verlieren wir Personen - E-Mail-Öffnungen, Laden von Landingpages, PDPs, Kassenreibungsfehler?“
 
 „Führen SciFi-Benutzer auf Fiber-PDPs mehr oder weniger häufig einen Bounce aus?“
 
-Erwartete Ergebnisse:
+**Erwartete Ausgaben**:
 
 Eine Fallout-Visualisierung mit Abbruchraten bei jedem Schritt.
 
@@ -198,7 +243,7 @@ Segmentüberlagerungen (SciFi vs. Sport vs. Andere).
 
 Geräte-/Browser-Ausfall für technische Reibung.
 
-Entscheidungen:
+**Entscheidungen**:
 
 Wenn der Checkout-Abfall hoch ist, stimmen Sie sich mit dem Produkt/UX ab, um den Zahlungsfluss zu beheben.
 
@@ -210,20 +255,19 @@ Wenn der PDP-Austritt hoch ist, muss die Klarheit der Nachbearbeitungsansprüche
 
 Jetzt wechselt der Marketing-Experte zu Adobe Journey Optimizer für Orchestrierung und Audience Ops.
 
-**Eingabeaufforderung**:
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
 
 ```javascript
-Create a fall-out report on the "Sci-Fi Promo 2024 - jl" journey 
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey 
 ```
 
 Funnel-Visualisierung erstellen: Lieferung → geöffnet → auf → Checkout → Bestellung geklickt.
 
-Aktion: Identifizieren Sie Abbruchstellen und optimieren Sie Messaging oder UX.
+**Action**: Identifizieren Sie Abfallpunkte und optimieren Sie Messaging oder UX.
 
+## 1.1.1.7 Finden Sie vorhandene Zielgruppen, die auf eine hohe Nutzung ausgerichtet sind
 
-## 1.1.7 Finden Sie vorhandene Zielgruppen, die auf eine hohe Nutzung ausgerichtet sind
-
-**Eingabeaufforderung**:
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
 
 ```javascript
 Is there an audience that has "heavy downloaders" in the title?
@@ -233,77 +277,67 @@ Is there an audience that has "heavy downloaders" in the title?
 >
 >Kontext in Adobe Journey Optimizer ändern
 
-Absicht: Suchen Sie eine beliebige Job-Zielgruppe mit dem Namen „starke Downloader“, die wahrscheinlich durch monatliche Datennutzungsschwellen, Streaming-Stunden oder die Gleichzeitigkeit von Geräten definiert wird.
+**Intent**:
 
-Denken:
+Suchen Sie eine Job-Zielgruppe mit dem Namen „starke Downloader“, die wahrscheinlich durch monatliche Datennutzungsschwellen, Streaming-Stunden oder die gleichzeitige Nutzung von Geräten definiert wird.
+
+**Denken**:
 
 „Wenn es eine Audience wie Heavy Downloaders gibt, ist es perfekt für die Positionierung von Fibre Max: Geschwindigkeit, Zuverlässigkeit, unbegrenzte Stufen.“
 
-Erwartete Ergebnisse:
+**Erwartete Ausgaben**:
 
 Zielgruppen-Metadaten: Definitionskriterien, Größe, letzte Aktualisierung, Governance-Tags, Regionsverfügbarkeit.
 
-**Eingabeaufforderung**:
-
-```javascript
-Is there an audience that has " heavy downloaders" in the title 
-```
-
 Suchen Sie Zielgruppen mit hoher Datennutzung.
 
-Ziel: Kombination mit Sci-Fi-Präferenz für Fibre-Max-Targeting.
+**Ziel**: Kombinieren Sie mit Sci-Fi-Präferenz für Fibre-Max-Targeting.
 
-## 1.1.8 Ermitteln, ob diese Zielgruppen bereits verwendet werden
+## 1.1.1.8 Ermitteln, ob diese Zielgruppen bereits verwendet werden
 
-**Eingabeaufforderung**:
+**Intent**:
 
-```javascript
-Which of the above are used in a journey? 
-```
+Überprüfen Sie die Verknüpfung von Zielgruppe zu Journey. Vergewissern Sie sich, dass keine doppelte Nachricht gesendet wird und dass keine Konflikte mit aktuellen Programmen auftreten.
 
-Absicht: Überprüfen Sie die Verbindung zwischen Zielgruppe und Journey. Stellen Sie sicher, dass wir keine doppelte Nachricht senden und nicht mit aktuellen Programmen kollidieren.
-
-Denken:
+**Denken**:
 
 „Wenn sich Heavy Downloader bereits auf einer Retentions-Journey befindet, benötigen wir eine Unterdrückungslogik oder Frequenzlimitierung, um Ermüdung zu vermeiden.“
 
-Erwartete Ergebnisse:
+**Erwartete Ausgaben**:
 
 Zuordnungen: Name der Zielgruppe → Journey, Status, Kontaktrichtlinie, letzter Versand, Leistung.
 
-Entscheidung:
+**Entscheidung**:
 
 Wenn verwendet, erstellen Sie Ausschlüsse oder eine freigegebene Unterdrückung für den Wiener Launch.
 
 Wenn nicht in Gebrauch, grünes Licht für neue Journey.
 
-Eingabeaufforderung:
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
 
-Welche der oben genannten werden in einer Journey verwendet?
+```javascript
+Which of the above are used in a journey? 
+```
 
 Überschneidungen mit aktiven Kampagnen vermeiden.
 
-Aktion: Bei Bedarf Unterdrückung anwenden.
+**Aktion**: Bei Bedarf Unterdrückung anwenden.
 
-## 1.1.9 Neue Journey für Fiber Max Launch erstellen
+## 1.1.1.9 Neue Journey für Fibre Max Launch erstellen
 
-**Eingabeaufforderung**:
+**Intent**:
 
-```javascript
-Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
-```
-
-Absicht: Erstellen Sie eine neue JO-Journey, die auf die zusammengesetzte Zielgruppe abzielt:
+Erstellen Sie eine neue Journey für die zusammengesetzte Zielgruppe:
 
 Umfangreiche Downloader ∩ SciFi-Voreinstellungen (Zielgruppenschlüssel kbaa_5207bf).
 
-Denken:
+**Denken**:
 
 „Das ist der Clou für Fiber Max: hohe Tendenz + kreative Relevanz.“
 
 „Wir werden ein Multitouch-Erlebnis organisieren, das mit der Verfügbarkeit von Wien verknüpft ist.“
 
-Journey-Design (JO):
+**Journey-Design (JO)**:
 
 Einstiegskriterien:
 
@@ -353,7 +387,7 @@ Wie das alles zusammenpasst (das mentale Modell des Marketing-Experten)
 
 Bedarfsdiagnose (allgemeine Kategorien → Glasfaserkomponenten).
 
-Beweisen Sie das Content-Konversionssignal (Bestellungen nach Genre).
+Beweisen Sie den Inhalt für das Konversionssignal (Bestellungen nach Genre).
 
 Meine erfolgreichen Journey (finden Sie Fibernames Journeys und die SciFi-Promo-Zielgruppe).
 
@@ -361,6 +395,11 @@ Reibungspunkte validieren (CJA-Fallout auf SciFi-Journey).
 
 Aktivieren Sie für Segmente mit hoher Neigung (starke Downloader ∩ SciFi).
 
+Geben Sie den folgenden **Prompt** ein und klicken Sie auf die Schaltfläche **Generate**.
+
+```javascript
+Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+```
 
 Zurück zu [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
