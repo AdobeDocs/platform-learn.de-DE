@@ -3,9 +3,9 @@ title: Überblick über Agent AI Tech Labs
 description: Überblick über Agent AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
+source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,22 @@ ht-degree: 0%
 
 ## Übersicht - laufende Arbeiten
 
-Die Agentic AI Tech Labs sind noch in Arbeit und werden im November/Dezember 2025 veröffentlicht.
+[1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
-[1.1 Erste Schritte mit Agenten und KI](./modules/agentic-ai/module1.1/agenticai.md)
+**Ziel**
+
+Erfahren Sie, wie Sie Adobe Experience Platform-Agenten und Agent Orchestrator für Folgendes verwenden:
+
+- Kauftrends analysieren
+- Identifizieren von Zielgruppen mit hoher Neigung
+- Validieren der Journey-Leistung
+- Erstellen Sie eine neue Journey für den CitiSignal Fiber Max Rollout
+
+[1.2 Erste Schritte mit Agenten und KI](./modules/agents/module1.2/agenticai.md)
+
+>[!NOTE]
+>
+>Dieses Modul wurde noch nicht veröffentlicht.
 
 **Ziel**
 
@@ -38,7 +51,11 @@ Technische Elemente:
 - MCP-Server, Python-Notebook
 - Adobe-APIs
 
-[1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
+[1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md)
+
+>[!NOTE]
+>
+>Dieses Modul wurde noch nicht veröffentlicht.
 
 **Ziel**
 

@@ -3,9 +3,9 @@ title: Inhaltsstatus
 description: Inhaltsstatus
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 715b96b7ba92d63ef3ab39b6083ebf4418f67c8a
+source-git-commit: 8b05c619c8101e4ba8e5c301954d15b27fe395cf
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '540'
 ht-degree: 11%
 
 ---
@@ -18,7 +18,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 
 | Name | Letzte Aktualisierung | 100 % arbeiten | Bemerkungen          | Zeitinvestition |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Erste Schritte &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Ja | – | 45 Min |
+| [0. Erste Schritte ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Ja | – | 45 Min |
 
 ## &#x200B;1. Workflow und Planung
 
@@ -63,7 +63,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | [3.1 Adobe Journey Optimizer: Orchestrierung](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.2 Adobe Journey Optimizer: Externe Datenquellen und benutzerdefinierte Aktionen](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.3 Adobe Journey Optimizer: Push- und In-App-Nachrichten](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"} | 03/07/2025/2025 | Ja | – | 2 Std |
-| [3.4 Adobe Journey Optimizer: Ereignisbasierte Journey &#x200B;](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
+| [3.4 Adobe Journey Optimizer: Ereignisbasierte Journey ](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.5 Adobe Journey Optimizer: Übersetzungsdienstleistungen](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.6 Adobe Journey Optimizer: Content-Management](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 03/07/2025 | Nein | Content wird entwickelt | TBD |
@@ -82,8 +82,9 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 
 | Name | Letzte Aktualisierung | 100 % arbeiten | Bemerkungen          | Zeitinvestition |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agentische KI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | Nein | Laufende Arbeiten | TBD |
-| [1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md){target="_blank"} | 23/09/2025 | Nein | Laufende Arbeiten | TBD |
+| [.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 25/11/2025 | Nein | Laufende Arbeiten | TBD |
+| [1.2 Agentische KI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 25/11/2025 | Nein | Laufende Arbeiten | TBD |
+| [1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"} | 25/11/2025 | Nein | Laufende Arbeiten | TBD |
 
 {style="table-layout:auto"}
 
