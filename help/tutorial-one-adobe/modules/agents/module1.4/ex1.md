@@ -125,7 +125,7 @@ Sie sollten das dann sehen. Klicken Sie auf **Bring me home**.
 
 ![Brand Concierge](./images/bc11.png)
 
-Sie sollten das dann sehen. Klicken Sie **** der Karte **Produktberatung für Verbraucher** auf „Erste Schritte“.
+Sie sollten das dann sehen. Klicken Sie **&#x200B;**&#x200B;der Karte **Produktberatung für Verbraucher** auf „Erste Schritte“.
 
 ![Brand Concierge](./images/bc12.png)
 
