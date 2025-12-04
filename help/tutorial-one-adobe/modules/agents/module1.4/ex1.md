@@ -3,14 +3,18 @@ title: Erste Schritte mit Brand Concierge
 description: Erste Schritte mit Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6642acb3fdce2c9d3a9b919d5c9457191e4780a6
+source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Erste Schritte mit Brand Concierge
+
+>[!IMPORTANT]
+>
+>An dieser Übung wird gearbeitet und sie ist noch nicht abgeschlossen.
 
 ## Video
 
@@ -73,7 +77,7 @@ Sie sollten das dann sehen. Klicken Sie auf das **Sandbox-Auswahl** Menü.
 
 ![Brand Concierge](./images/bc2.png)
 
-Wählen Sie die Sandbox aus, die Ihnen zugewiesen wurde. Diese Sandbox sollte `--aepUserLdap--` benannt werden.
+Wählen Sie die Sandbox aus, die Ihnen zugewiesen wurde. Diese Sandbox sollte `--aepUserLdap-- - bc` benannt werden.
 
 ![Brand Concierge](./images/bc3.png)
 
@@ -125,19 +129,25 @@ Sie sollten das dann sehen. Klicken Sie auf **Bring me home**.
 
 ![Brand Concierge](./images/bc11.png)
 
-Sie sollten das dann sehen. Klicken Sie **&#x200B;**&#x200B;der Karte **Produktberatung für Verbraucher** auf „Erste Schritte“.
+Sie sollten das dann sehen. Klicken Sie **** der Karte **Produktberatung für Verbraucher** auf „Erste Schritte“.
 
 ![Brand Concierge](./images/bc12.png)
 
+Sie sollten das dann sehen. Füllen Sie die folgenden Felder mithilfe des folgenden Texts aus.
 
+**Was sollte der Concierge über das Produkt oder das Publikum wissen, bevor er Empfehlungen gibt?**
 
 ```
 CitiSignal is a telecommunications company that sells devices such as phones and watches and that sells internet services such as their lead product CitiSignal Fiber Max. On top of that, CitiSignal sells entertainment services that offer premium streaming services at a discounted price. CitiSignal is targeting these 3 personas primarily: Smart Home Families, Online Gamers and Remote Professionals.
 ```
 
+**Gibt es Geschäftsregeln oder Einschränkungen, die der Concierge bei der Abgabe von Empfehlungen befolgen sollte?**
+
 ```
 Prioritize positioning the CitiSignal Fiber Max offering.
 ```
+
+**Gibt es bestimmte Keywords oder Phrasen, die der Concierge befolgen oder vermeiden sollte?**
 
 ```
 Competitor pricing, competitor products
@@ -151,7 +161,7 @@ Sie sollten das dann sehen. Klicken Sie **Erste Schritte** um Ihren Markenausdru
 
 ![Brand Concierge](./images/bc14.png)
 
-Sie können Ihre eigenen Entscheidungen auf der Seite **Markenausdruck** treffen.
+Sie können auf der Seite „Markenausdruck **Ihre eigenen** treffen und sicherstellen, dass für jede Frage eine Option ausgewählt ist.
 
 ![Brand Concierge](./images/bc15.png)
 
@@ -165,6 +175,73 @@ Scrollen Sie nach oben und klicken Sie auf den **Pfeil**, um zum vorherigen Bild
 
 ![Brand Concierge](./images/bc17.png)
 
+Dann bist du wieder hier. Klicken Sie **Wissensquellen**.
+
+![Brand Concierge](./images/bc18.png)
+
+Klicken Sie **Wissensquellen erstellen**.
+
+![Brand Concierge](./images/bc19.png)
+
+Wählen Sie **Produktkatalog** aus und klicken Sie auf **Weiter**.
+
+![Brand Concierge](./images/bc20.png)
+
+Sie sollten das dann sehen. Geben Sie `CitiSignal Products` als Namen für Ihre Wissensquelle ein.
+
+![Brand Concierge](./images/bc21.png)
+
+Sie müssen jetzt eine CSV-Datei hochladen, die die Links Ihrer Website enthält. Laden Sie [CitiSignal Produktkatalog](./assets/CitiSignal-catalog.json.zip) auf Ihren Desktop herunter und entpacken Sie ihn.
+
+![Brand Concierge](./images/bc26.png)
+
+Klicken Sie auf **Dateien durchsuchen** und wählen Sie dann **Durchsuchen auf Ihrem Gerät** aus.
+
+![Brand Concierge](./images/bc22.png)
+
+Wählen Sie die Datei **CitiSignal-catalog.json** aus und klicken Sie auf **Öffnen**.
+
+![Brand Concierge](./images/bc23.png)
+
+Sie sollten das dann sehen. Klicken Sie auf **Hinzufügen**.
+
+![Brand Concierge](./images/bc24.png)
+
+Dann bist du wieder hier.
+
+![Brand Concierge](./images/bc25.png)
+
+## Onboarding-Schritte für 1.4.1.3 AEP
+
+Brand Concierge verwendet Adobe Experience Platform, um Interaktionsdaten aus Konversationen zu speichern. Für die Verbindung zwischen Brand Concierge und Experience Platform muss ein Datenstrom konfiguriert und von Brand Concierge verwendet werden.
+
+### Datenstrom
+
+Navigieren Sie zu [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Öffnen Sie **Experience Platform**.
+
+![Brand Concierge](./images/aep1.png)
+
+Stellen Sie sicher, dass Sie die richtige Sandbox ausgewählt haben, die `--aepUserLdap-- - bc` benannt werden sollte. Scrollen Sie im linken Menü nach unten und wählen Sie **Datenströme**.
+
+![Brand Concierge](./images/aep2.png)
+
+Klicken Sie **Neuer Datenstrom**.
+
+![Brand Concierge](./images/aep3.png)
+
+Geben Sie den **** Datenstromname`--aepUserLdap-- - Brand Concierge` ein und wählen Sie dann die **** Zuordnungsschema`cja-brand-concierge-sb-XXX` aus.
+
+Klicken Sie auf **Speichern**.
+
+![Brand Concierge](./images/aep4.png)
+
+Ihr Datenstrom ist jetzt konfiguriert. Kopieren Sie den Datenstromnamen und die Datenstrom-ID und schreiben Sie sie in einer Textdatei auf Ihrem Computer auf.
+
+![Brand Concierge](./images/aep5.png)
+
+### Brand Concierge-Konfigurationsverwaltungs-API
+
+Der nächste Schritt besteht darin, die Brand Concierge Configuration Management-API zu aktivieren, um den soeben erstellten Datenstrom zu konfigurieren. Dies ist erforderlich, um Dinge wie die IMS-Organisations-ID und Sandbox-Details während der Anfrageverarbeitung aufzulösen.
 
 Zurück zu [Brand Concierge](./brandconcierge.md){target="_blank"}
 
