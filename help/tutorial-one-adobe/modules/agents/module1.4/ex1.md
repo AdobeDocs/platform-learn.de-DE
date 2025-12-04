@@ -3,18 +3,14 @@ title: Erste Schritte mit Brand Concierge
 description: Erste Schritte mit Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
+source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Erste Schritte mit Brand Concierge
-
->[!IMPORTANT]
->
->An dieser Übung wird gearbeitet und sie ist noch nicht abgeschlossen.
 
 ## Video
 
@@ -129,7 +125,7 @@ Sie sollten das dann sehen. Klicken Sie auf **Bring me home**.
 
 ![Brand Concierge](./images/bc11.png)
 
-Sie sollten das dann sehen. Klicken Sie **&#x200B;**&#x200B;der Karte **Produktberatung für Verbraucher** auf „Erste Schritte“.
+Sie sollten das dann sehen. Klicken Sie **** der Karte **Produktberatung für Verbraucher** auf „Erste Schritte“.
 
 ![Brand Concierge](./images/bc12.png)
 
@@ -211,6 +207,34 @@ Dann bist du wieder hier.
 
 ![Brand Concierge](./images/bc25.png)
 
+Nach 10-20 Minuten sollte **Status** beider Wissensquellen &quot;**&quot;**. Klicken Sie auf **Home**.
+
+![Brand Concierge](./images/bc27.png)
+
+Sie sollten das dann sehen. Klicken Sie auf **+ Verbinden** auf der Karte **Website-Links**.
+
+![Brand Concierge](./images/bc28.png)
+
+Wählen Sie die Wissensquelle **CitiSignal Website** und klicken Sie auf **Speichern**.
+
+![Brand Concierge](./images/bc29.png)
+
+Sie sollten das dann sehen. Klicken Sie auf der Karte **Produktkatalog** auf **+ Verbinden**.
+
+![Brand Concierge](./images/bc30.png)
+
+Wählen Sie die Wissensquelle **CitiSignal Produkte** und klicken Sie auf **Speichern**.
+
+![Brand Concierge](./images/bc31.png)
+
+Sie sollten das dann sehen. Klicken Sie auf **Vorschau**, um mit Ihrer Brand Concierge zu interagieren.
+
+![Brand Concierge](./images/bc32.png)
+
+Sie können jetzt beginnen, Fragen zu den bereitgestellten Wissensquellen zu stellen.
+
+![Brand Concierge](./images/bc33.png)
+
 ## Onboarding-Schritte für 1.4.1.3 AEP
 
 Brand Concierge verwendet Adobe Experience Platform, um Interaktionsdaten aus Konversationen zu speichern. Für die Verbindung zwischen Brand Concierge und Experience Platform muss ein Datenstrom konfiguriert und von Brand Concierge verwendet werden.
@@ -229,7 +253,7 @@ Klicken Sie **Neuer Datenstrom**.
 
 ![Brand Concierge](./images/aep3.png)
 
-Geben Sie den **&#x200B;**&#x200B;Datenstromname`--aepUserLdap-- - Brand Concierge` ein und wählen Sie dann die **&#x200B;**&#x200B;Zuordnungsschema`cja-brand-concierge-sb-XXX` aus.
+Geben Sie den **** Datenstromname`--aepUserLdap-- - Brand Concierge` ein und wählen Sie dann die **** Zuordnungsschema`cja-brand-concierge-sb-XXX` aus.
 
 Klicken Sie auf **Speichern**.
 
@@ -242,6 +266,10 @@ Ihr Datenstrom ist jetzt konfiguriert. Kopieren Sie den Datenstromnamen und die 
 ### Brand Concierge-Konfigurationsverwaltungs-API
 
 Der nächste Schritt besteht darin, die Brand Concierge Configuration Management-API zu aktivieren, um den soeben erstellten Datenstrom zu konfigurieren. Dies ist erforderlich, um Dinge wie die IMS-Organisations-ID und Sandbox-Details während der Anfrageverarbeitung aufzulösen.
+
+Dies ist derzeit ein interner Adobe-Schritt, der ausgeführt werden muss. Dieser Schritt ist erforderlich, da andernfalls die Einrichtung des Datenstroms für die Verwendung durch Brand Concierge nicht korrekt ist.
+
+Nächster Schritt: [Implementieren von Brand Concierge auf Ihrer Website](./ex2.md){target="_blank"}
 
 Zurück zu [Brand Concierge](./brandconcierge.md){target="_blank"}
 
