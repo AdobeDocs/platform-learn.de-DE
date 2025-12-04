@@ -125,7 +125,7 @@ Sie sollten das dann sehen. Klicken Sie auf **Bring me home**.
 
 ![Brand Concierge](./images/bc11.png)
 
-Sie sollten das dann sehen. Klicken Sie **** der Karte **Produktberatung für Verbraucher** auf „Erste Schritte“.
+Sie sollten das dann sehen. Klicken Sie **&#x200B;**&#x200B;der Karte **Produktberatung für Verbraucher** auf „Erste Schritte“.
 
 ![Brand Concierge](./images/bc12.png)
 
@@ -253,7 +253,7 @@ Klicken Sie **Neuer Datenstrom**.
 
 ![Brand Concierge](./images/aep3.png)
 
-Geben Sie den **** Datenstromname`--aepUserLdap-- - Brand Concierge` ein und wählen Sie dann die **** Zuordnungsschema`cja-brand-concierge-sb-XXX` aus.
+Geben Sie den **&#x200B;**&#x200B;Datenstromname`--aepUserLdap-- - Brand Concierge` ein und wählen Sie dann die **&#x200B;**&#x200B;Zuordnungsschema`cja-brand-concierge-sb-XXX` aus.
 
 Klicken Sie auf **Speichern**.
 
