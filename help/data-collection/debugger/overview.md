@@ -19,7 +19,7 @@ ht-degree: 51%
 
 Erfahren Sie, wie Sie mit der Adobe Experience Platform Debugger [Chrome-](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Ihre Implementierungen von Adobe Experience Platform Web SDK, AppMeasurement.js und at.js debuggen können - die Bibliotheken, die Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Adobe Target, Adobe Audience Manager,, Tags und mehr unterstützen.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35916?captions=ger&learn=on&enablevpops)
 
 ## Weitere Ressourcen
 
