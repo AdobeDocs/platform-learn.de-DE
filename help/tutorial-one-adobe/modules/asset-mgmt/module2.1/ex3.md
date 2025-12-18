@@ -4,9 +4,9 @@ description: AEM CS - Benutzerdefinierter Standardblock
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -185,7 +185,9 @@ Anschließend werden Ihre Umgebungsdetails angezeigt. Klicken Sie auf die URL Ih
 
 >[!NOTE]
 >
->Möglicherweise befindet sich Ihre Umgebung im Ruhezustand. In diesem Fall müssen Sie zunächst den Ruhezustand Ihrer Umgebung aufheben.
+>Möglicherweise befindet sich Ihre Umgebung im Ruhezustand. In diesem Fall müssen Sie zunächst den Ruhezustand Ihrer Umgebung aufheben. Anweisungen zum Deaktivieren des Ruhezustands finden Sie im folgenden Video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 
@@ -263,7 +265,7 @@ Fügen Sie eine Menüoption zum Navigationsmenü mit dem `Fiber` hinzu. Wählen 
 
 ![AEMCS](./images/nav1.png)
 
-Geben Sie dies für die **&#x200B;**&#x200B;URL`/content/CitiSignal/fiber.html` ein und klicken Sie zum Bestätigen auf das Symbol **V** .
+Geben Sie dies für die **** URL`/content/CitiSignal/fiber.html` ein und klicken Sie zum Bestätigen auf das Symbol **V** .
 
 ![AEMCS](./images/nav3.png)
 

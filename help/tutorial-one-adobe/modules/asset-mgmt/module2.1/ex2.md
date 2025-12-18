@@ -4,9 +4,9 @@ description: Einrichten der AEM CS-Umgebung
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
+source-git-commit: 13f74467a74eb3d8bbd135f5b8c7d9bb1a177f8b
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1218'
 ht-degree: 1%
 
 ---
@@ -120,6 +120,17 @@ ZZZ = `citisignal-aem-accs`
 Diese drei Werte zusammen führen zu dieser neuen URL, die im `fstab.yaml` konfiguriert werden muss.
 
 `https://author-p166717-e1786231.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal-aem-accs/main`
+
+Sie sollten auch überprüfen, ob diese Codezeilen ebenfalls zur Datei hinzugefügt werden:
+
+```
+folders:
+  /products/: /products/default
+```
+
+>[!IMPORTANT]
+>
+>Sie können diese Codezeilen in den Zeilen 6 und 7 in der folgenden Abbildung sehen. Falls diese Zeilen fehlen, bitte manuell hinzufügen.
 
 Klicken Sie **Änderungen übernehmen…**.
 
@@ -278,7 +289,7 @@ Füllen Sie jetzt die Felder **Organisation** und **Site-Name** aus. Sehen Sie s
 - **Organisation**: Verwenden Sie den Namen Ihrer GitHub-Organisation, in diesem Beispiel ist er `woutervangeluwe`
 - **Site-Name**: Verwenden Sie den Namen des GitHub-Repositorys, der `citisignal-aem-accs` werden soll.
 
-Klicken Sie **Speichern und schließen**.
+Klicken Sie auf **Speichern und Schließen**.
 
 ![AEMCS](./images/aemcssetup33.png)
 
