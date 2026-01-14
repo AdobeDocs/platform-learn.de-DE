@@ -11,9 +11,9 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 10d36ee194c8da937f667c1ba438681959c5fc68
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Die CRM-ID ist ein Identitätsfeld in der `Luma Loyalty Dataset`, zum Nachschlag
 1. Klicken Sie auf **[!UICONTROL Schaltfläche Profil anzeigen]**
 1. Profil-ID auswählen, um das Profil zu öffnen
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Attribute]**
-1. Beachten Sie, dass andere Profildetails aus dem CRM-Datensatz, wie z. B. die Mobiltelefonnummer und die E-Mail-Adresse, nicht verfügbar sind, da wir nur
+1. Beachten Sie, dass andere Profildetails aus dem CRM-Datensatz, wie z. B. die Mobiltelefonnummer und die E-Mail-Adresse, nicht verfügbar sind, da unsere `Loyalty Only`-Zusammenführungsrichtlinie den CRM-Datensatz nicht enthält.
    ![CRM-Daten können nicht in der Richtlinie „Nur Treue“ angezeigt werden](assets/mergepolicies-loyaltyOnly-attributes.png)
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Ereignisse]**
 1. ExperienceEvent-Daten sind verfügbar, auch wenn sie nicht explizit in die Datensätze der Zusammenführungsrichtlinie aufgenommen wurden:
