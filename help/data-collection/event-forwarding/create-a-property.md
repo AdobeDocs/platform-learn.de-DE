@@ -4,9 +4,8 @@ description: Erfahren Sie, wie Sie in der Datenerfassung eine Ereignisweiterleit
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6420
-thumbnail: 331938.jpeg
 exl-id: 63a578d3-1220-4588-b289-7310f4905d52
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 19%
@@ -15,7 +14,7 @@ ht-degree: 19%
 
 # Erstellen einer Ereignisweiterleitungs-Eigenschaft
 
-Erfahren Sie, wie Sie in der Datenerfassung eine Ereignisweiterleitungseigenschaft erstellen. Weitere Informationen finden Sie in der Dokumentation [Erstellen einer Ereignisweiterleitungs-Eigenschaft](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=de#create-an-event-forwarding-property).
+Erfahren Sie, wie Sie in der Datenerfassung eine Ereignisweiterleitungseigenschaft erstellen. Weitere Informationen finden Sie in der Dokumentation [Erstellen einer Ereignisweiterleitungs-Eigenschaft](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).
 
 >[!NOTE]
 >

@@ -3,9 +3,9 @@ title: Adobe Target mit Tags hinzufügen
 description: Erfahren Sie, wie Sie Adobe Target mithilfe von Tags mit at.js, einer Seitenladeanfrage, Parametern, einer Bestellanfrage und benutzerdefiniertem Kopf-/Fußzeilen-Code implementieren. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
 workflow-type: tm+mt
-source-wordcount: '4252'
+source-wordcount: '4245'
 ht-degree: 68%
 
 ---
@@ -91,11 +91,11 @@ Laden Sie Ihre Musterseite erneut. Sie werden feststellen, dass die Seite drei S
 * `body {opacity: 0 !important}` gibt die CSS-Definition an, die für die Vorab-Ausblendung bis zum Laden von Target verwendet werden soll. Standardmäßig wird der gesamte Seiteninhalt ausgeblendet. Wenn Sie eine einheitliche DOM-Struktur mit einem Containerelement nutzen, das einfach zu identifizieren ist und z. B. den gesamten Inhalt unter Ihrer Navigation umfasst, und die Navigation in keinem Fall testen oder personalisieren möchten, können Sie diese Einstellung nutzen, um die Vorab-Ausblendung auf dieses Containerelement zu beschränken.
 * `3000` Gibt die Zeitüberschreitungseinstellung für die Voraub-Ausblendung an. Standardmäßig gilt: Wenn Target nach drei Sekunden nicht geladen wurde, wird die Seite angezeigt. Dieser Fall sollte nur extrem selten auftreten.
 
-Weitere Informationen sowie den nicht minimierten Codeausschnitt zur Vorab-Ausblendung finden Sie unter [Adobe Target-Erweiterung mit einer asynchronen Bereitstellung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=de#adobe-target-extension-with-an-asynchronous-deployment).
+Weitere Informationen sowie den nicht minimierten Codeausschnitt zur Vorab-Ausblendung finden Sie unter [Adobe Target-Erweiterung mit einer asynchronen Bereitstellung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment).
 
 ## Hinzufügen der Target-Erweiterung
 
-Die Adobe Target-Erweiterung unterstützt clientseitige Implementierungen mithilfe des JavaScript SDK von Target für das moderne Web: at.js. Kunden und Kundinnen, die noch die ältere Bibliothek von Target, mbox.js, verwenden[&#x200B; sollten auf at.js 2.x aktualisieren](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html?lang=de) um Tags verwenden zu können.
+Die Adobe Target-Erweiterung unterstützt Client-seitige Implementierungen mithilfe der JavaScript-Bibliothek at.js von Target. Informationen zu Web SDK-Implementierungen von Adobe Target finden Sie im [Tutorial zu Experience Platform Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/applications-setup/setup-target).
 
 Die Target v2-Erweiterung besteht aus zwei Hauptteilen:
 
@@ -126,7 +126,7 @@ Zu diesem Zeitpunkt führt Target noch keine Aktionen aus, weshalb auch nichts z
 
 >[!NOTE]
 >
->Jede Version der Target-Erweiterung enthält eine bestimmte Version von at.js, die in der Beschreibung der Erweiterung aufgeführt ist. Sie aktualisieren die ar.js-Version, indem Sie die Target-Erweiterung aktualisieren.
+>Jede Version der Target-Erweiterung enthält eine bestimmte Version von at.js, die in der Beschreibung der Erweiterung aufgeführt ist. Sie aktualisieren die at.js-Version, indem Sie die Target-Erweiterung aktualisieren.
 
 ## Laden von Target und Auslösen der Seitenladeanforderung
 
@@ -186,7 +186,7 @@ Nachdem Sie nun die Target v2-Erweiterung hinzugefügt und die `Load Target`- un
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -208,9 +208,9 @@ Herzlichen Glückwunsch! Sie haben Target implementiert!
 
 Die Übergabe von Parametern in der Target-Anforderung ermöglicht leistungsstarke Funktionen für Targeting-, Test- und Personalisierungsaktivitäten. Die Tag-Erweiterung bietet zwei Aktionen zum Übergeben von Parametern:
 
-1. `Add Params to Page Load Request` fügt Parameter zu Seitenladeanforderungen hinzu (entspricht der [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=de)-Methode)
+1. `Add Params to Page Load Request` fügt Parameter zu Seitenladeanforderungen hinzu (entspricht der [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html)-Methode)
 
-1. `Add Params to All Requests` fügt Parameter in allen Target-Anforderungen hinzufügt, z. B. in der Seitenladeanforderung und zusätzlichen Anforderungen, die von Aktionen mit benutzerdefiniertem Code ausgeführt oder auf Ihrer Site fest codiert wurden (entspricht der [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=de)-Methode)
+1. `Add Params to All Requests` fügt Parameter in allen Target-Anforderungen hin, z. B. in der Seitenladeanforderung und zusätzlichen Anforderungen, die von Aktionen mit benutzerdefiniertem Code ausgeführt oder auf Ihrer Site fest codiert wurden (entspricht der [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html)-Methode)
 
 Diese Aktionen können *vor* der `Load Target`-Aktion verwendet werden und basierend auf Ihren Regelkonfigurationen auf verschiedenen Seiten unterschiedliche Parameter festlegen. Verwenden Sie die Funktion zur Regelsortierung, die Sie beim Festlegen von Kunden-IDs mit dem Identity Service verwendet haben, um zusätzliche Parameter für das `Library Loaded`-Ereignis festzulegen, bevor die Regel die Seitenladeanforderung auslöst.
 >[!TIP]
@@ -266,7 +266,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 1. Laden Sie die Luma-Site neu und stellen Sie sicher, dass sie Ihrer eigenen Tag-Eigenschaft zugeordnet ist.
 1. Öffnen Sie die Entwicklertools Ihres Browsers.
 1. Klicken Sie auf die Registerkarte „Netzwerk“.
-1. Filtern Sie die Anforderungen nach `tt.omtrdc` (oder Ihrer CNAMEd-Domäne für Target-Anforderungen).
+1. Filtern Sie die Anforderungen nach `tt.omtrdc` (oder Ihrer CNAME-Domäne für Target-Anforderungen).
 1. Erweitern Sie den Abschnitt `Headers` > `Request Payload` > `execute.pageLoad.parameters`, um den `pageName`-Parameter und -Wert zu überprüfen.
 
 ![Parameter „pageName“ im Debugger](images/target-debugger-pageName-browser.png)
@@ -277,15 +277,15 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 ### Profilparameter
 
-Ähnlich wie Anforderungsparameter werden Profilparameter auch über die Target-Anforderungen übergeben. Profilparameter werden jedoch in der Besucherprofildatenbank von Target gespeichert und bleiben für die [Dauer des Besucherprofils](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=de) bestehen. Sie können sie auf einer Seite Ihrer Site festlegen und in Target-Aktivitäten auf einer anderen Seite verwenden. Im Folgenden finden Sie ein Beispiel einer Automobilwebsite. Wenn ein Besucher zu einer Fahrzeugseite wechselt, können Sie den Profilparameter „profile.lastViewed=sportscar“ übergeben, um sein Interesse an diesem bestimmten Fahrzeug aufzuzeichnen. Wenn der Besucher zu anderen Seiten als einer Fahrzeugseite navigiert, können Sie die Inhalte auf der Grundlage des zuletzt angezeigten Fahrzeugs anpassen.  Profilparameter eignen sich ideal für Attribute, die sich selten ändern oder nur auf bestimmten Seiten verfügbar sind
+Ähnlich wie Anforderungsparameter werden Profilparameter auch über die Target-Anforderungen übergeben. Profilparameter werden jedoch in der Besucherprofildatenbank von Target gespeichert und bleiben für die [Dauer des Besucherprofils](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html) bestehen. Sie können sie auf einer Seite Ihrer Site festlegen und in Target-Aktivitäten auf einer anderen Seite verwenden. Im Folgenden finden Sie ein Beispiel einer Automobilwebsite. Wenn ein Besucher zu einer Fahrzeugseite wechselt, können Sie den Profilparameter „profile.lastViewed=sportscar“ übergeben, um sein Interesse an diesem bestimmten Fahrzeug aufzuzeichnen. Wenn der Besucher zu anderen Seiten als einer Fahrzeugseite navigiert, können Sie die Inhalte auf der Grundlage des zuletzt angezeigten Fahrzeugs anpassen.  Profilparameter eignen sich ideal für Attribute, die sich selten ändern oder nur auf bestimmten Seiten verfügbar sind
 
-Sie werden in diesem Tutorial keine Profilparameter übergeben, doch der Arbeitsablauf ist fast identisch mit den Schritten zur Übergabe des `pageName`-Parameters. Der einzige Unterschied besteht darin, dass Sie Profilparametern ein `profile.`-Präfix voranstellen müssen. So würde ein Profilparameter namens „userType“ in der `Add Params to Page Load Request`-Aktion aussehen:
+Sie werden in diesem Tutorial keine Profilparameter übergeben, doch der Workflow ist fast identisch mit den Schritten zur Übergabe des `pageName`-Parameters. Der einzige Unterschied besteht darin, dass Sie Profilparametern ein `profile.`-Präfix voranstellen müssen. So würde ein Profilparameter namens „userType“ in der `Add Params to Page Load Request`-Aktion aussehen:
 
 ![Profilparameter festlegen](images/target-profileParameter.png)
 
 ### Entitätsparameter
 
-Entitätsparameter sind spezielle Parameter, die aus drei Hauptgründen in [Recommendations-Implementierungen](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=de) verwendet werden:
+Entitätsparameter sind spezielle Parameter, die aus drei Hauptgründen in [Recommendations-Implementierungen](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html) verwendet werden:
 
 1. Als Schlüssel zum Auslösen von Produktempfehlungen: Wenn Sie beispielsweise einen Empfehlungsalgorithmus verwenden, z. B. „Personen, die Produkt X angesehen haben, haben auch Produkt Y angesehen“, ist „X“ der „Schlüssel“ der Empfehlung. Es handelt sich normalerweise um die Produkt-SKU (`entity.id`) oder -kategorie (`entity.categoryId`), die der Besucher gerade anzeigt.
 1. Zur Erfassung des Besucherverhaltens für Empfehlungsalgorithmen, wie z. B. „Zuletzt angezeigte Produkte“ oder „Am häufigsten angezeigte Produkte“
@@ -297,7 +297,7 @@ In diesem Tutorial müssen Sie keine Entitätsparameter übergeben, aber der Wor
 
 ### Hinzufügen von Kunden-ID-Parametern
 
-Die Erfassung von Kunden-IDs mit Adobe Experience Platform Identity Service erleichtert den Import von CRM-Daten in Target mithilfe der Funktion [Kundenattribute](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=de) in Adobe Experience Cloud. Sie ermöglicht auch die [geräteübergreifende Besucherzuordnung](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html?lang=de), sodass Sie eine einheitliche Benutzererfahrung gewährleisten können, wenn Ihre Kunden zwischen ihren Laptops und ihren Mobilgeräten wechseln.
+Die Erfassung von Kunden-IDs mit Adobe Experience Platform Identity Service erleichtert den Import von CRM-Daten in Target mithilfe der Funktion [Kundenattribute](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=de) in Adobe Experience Cloud. Sie ermöglicht auch die [geräteübergreifende Besucherzuordnung](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), sodass Sie eine einheitliche Benutzererfahrung gewährleisten können, wenn Ihre Kunden zwischen ihren Laptops und ihren Mobilgeräten wechseln.
 
 Es ist unbedingt erforderlich, die Kunden-ID in der `Set Customer IDs`-Aktion des Identity Service festzulegen, bevor die Seitenladeanforderung ausgelöst wird. Zu diesem Zweck müssen Sie die folgenden Funktionen auf Ihrer Site bereitstellen:
 
@@ -316,7 +316,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -325,7 +325,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 1. Öffnen Sie die Entwicklertools Ihres Browsers.
 1. Klicken Sie auf die Registerkarte „Netzwerk“.
-1. Filtern Sie die Anforderungen nach `tt.omtrdc` (oder Ihrer CNAMEd-Domäne für Target-Anforderungen).
+1. Filtern Sie die Anforderungen nach `tt.omtrdc` (oder Ihrer CNAME-Domäne für Target-Anforderungen).
 1. Erweitern Sie den Abschnitt `Headers` > `Request Payload` > `id.customerIds.0`, um die Kunden-ID-Einstellungen und -Werte zu überprüfen:
 
 ![Kunden-ID-Einstellungen im Debugger](images/target-debugger-customerId-browser.png)
@@ -334,7 +334,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
-1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=de):
+1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html):
 
 ![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)
 -->
@@ -362,7 +362,7 @@ Im Folgenden finden Sie eine optionale Übung für Target Premium-Kunden, wenn 
 
 1. Navigieren Sie **[!UICONTROL Administration > Eigenschaften]**
 
-1. Identifizieren Sie die gewünschte Eigenschaft und klicken Sie auf die **&#x200B;**&lt;/>oder erstellen Sie eine neue Eigenschaft
+1. Identifizieren Sie die gewünschte Eigenschaft und klicken Sie auf die ****&lt;/>oder erstellen Sie eine neue Eigenschaft
 
 1. Kopieren Sie den Code-Ausschnitt aus dem `<script></script>` in die Zwischenablage
 
@@ -400,13 +400,13 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 **Überprüfen des Eigenschafts-Token-Parameters**
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Öffnen Sie die Entwicklertools Ihres Browsers.
 1. Klicken Sie auf die Registerkarte „Netzwerk“.
-1. Filtern Sie die Anforderungen nach `tt.omtrdc` (oder Ihrer CNAMEd-Domäne für Target-Anforderungen).
+1. Filtern Sie die Anforderungen nach `tt.omtrdc` (oder Ihrer CNAME-Domäne für Target-Anforderungen).
 1. Erweitern Sie den Abschnitt `Headers` > `Request Payload` > `property.token`, um den Wert zu überprüfen.
    ![Das Eigenschafts-Token sollte in jeder Anforderung als Parameter „at_property“ sichtbar sein](images/target-debugger-atProperty-browser.png)
 
@@ -430,7 +430,7 @@ Die Bestellbestätigungsanforderung ist ein spezieller Anforderungstyp, mit dem 
 
 Es empfiehlt sich, eine Anfrage zur Bestellbestätigung in allen Auftragstrichtern zu verwenden, auch auf Websites, die nicht zum Einzelhandel gehören. Sites zur Lead-Generierung verfügen beispielsweise in der Regel über Lead-Trichter, bei denen am Ende eine eindeutige „Lead-ID“ generiert wird. Auf diesen Sites sollte eine Bestellanforderung mit einem statischen Wert (z. B. „1“) für orderTotal implementiert werden.
 
-Kunden, die die Analytics for Target (A4T)-Integration für die meisten Berichte verwenden, möchten möglicherweise auch die Bestellanfrage implementieren, wenn sie Automated Personalization-Aktivitäten verwenden, die A4T nicht unterstützen. Darüber hinaus ist die Bestellanfrage ein wichtiges Element bei Recommendations-Implementierungen, die Algorithmen basierend auf dem Kaufverhalten unterstützen. Die neuesten Informationen zur A4T-Unterstützung finden Sie in [Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de#section_F487896214BF4803AF78C552EF1669AA).
+Kunden, die die Analytics for Target (A4T)-Integration für die meisten Berichte verwenden, möchten möglicherweise auch die Bestellanfrage implementieren, wenn sie Automated Personalization-Aktivitäten verwenden, die A4T nicht unterstützen. Darüber hinaus ist die Bestellanfrage ein wichtiges Element bei Recommendations-Implementierungen, die Algorithmen basierend auf dem Kaufverhalten unterstützen. Die neuesten Informationen zur A4T-Unterstützung finden Sie in [Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
 Die Bestellbestätigungsanforderung sollte über eine Regel ausgelöst werden, die nur auf Ihrer Bestellbestätigungsseite oder im entsprechenden Bestellbestätigungsereignis ausgelöst wird. Häufig kann sie mit einer Regel kombiniert werden, die das Kaufereignis von Adobe Analytics festlegt. Sie muss mithilfe einer Aktion vom Typ „Benutzerdefinierter Code:“ der Core-Erweiterung konfiguriert werden, indem Sie über die entsprechenden Datenelemente orderId, orderTotal und productPurchasedId festlegen.
 
@@ -532,7 +532,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -545,7 +545,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 1. Klicken Sie auf der Seite „Bestellung überprüfen“ auf die Schaltfläche `Place Order`.
 1. Öffnen Sie die Entwicklertools Ihres Browsers.
 1. Klicken Sie auf die Registerkarte „Netzwerk“.
-1. Filtern Sie die Anforderungen nach `tt.omtrdc` (oder Ihrer CNAMEd-Domäne für Target-Anforderungen).
+1. Filtern Sie die Anforderungen nach `tt.omtrdc` (oder Ihrer CNAME-Domäne für Target-Anforderungen).
 1. Klicken Sie auf die zweite Anforderung.
 1. Erweitern Sie den Abschnitt `Headers` > `Request Payload` > `execute.mboxes.0`, um den Anforderungsnamen und die Bestellparameter zu überprüfen:
 
@@ -564,12 +564,12 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 Es gibt seltene Fälle, in denen Sie andere Target-Anfragen als die Seitenlade- und Bestellbestätigungsanfrage stellen müssen. Manchmal werden beispielsweise wichtige Daten, die Sie für die Personalisierung verwenden möchten, nicht auf der Seite vor dem Tag-Einbettungs-Code definiert. Sie können am Seitenende hartcodiert sein oder von einer asynchronen API-Anfrage zurückgegeben werden. Diese Daten können mithilfe einer zusätzlichen Anfrage an Target gesendet werden. Es ist jedoch nicht optimal, diese Anfrage für die Bereitstellung von Inhalten zu verwenden, da die Seite bereits sichtbar ist. Diese Daten können verwendet werden, um das Besucherprofil für die spätere Verwendung anzureichern (mithilfe von Profilparametern) oder um den Recommendations-Katalog zu füllen.
 
-Verwenden Sie unter diesen Umständen die Aktion für benutzerspezifischen Code in der Haupterweiterung, um eine Anfrage mit den Methoden [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html?lang=de)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html?lang=de) und [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=de) auszulösen. Dies ähnelt dem, was Sie gerade in der Übung [Bestellbestätigungsanfrage](#order-confirmation-request) getan haben, aber Sie werden nur einen anderen Anfragenamen verwenden und nicht die speziellen Bestellparameter verwenden. Stellen Sie sicher, dass Sie die Aktion **[!UICONTROL Target laden]** verwenden, bevor Sie Target-Anfragen aus benutzerdefiniertem Code stellen.
+Verwenden Sie unter diesen Umständen die Aktion für benutzerspezifischen Code in der Haupterweiterung, um eine Anfrage mit den Methoden [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) und [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) auszulösen. Dies ähnelt dem, was Sie gerade in der Übung [Bestellbestätigungsanfrage](#order-confirmation-request) getan haben, aber Sie werden nur einen anderen Anfragenamen verwenden und nicht die speziellen Bestellparameter verwenden. Stellen Sie sicher, dass Sie die Aktion **[!UICONTROL Target laden]** verwenden, bevor Sie Target-Anfragen aus benutzerdefiniertem Code stellen.
 
 ## Bibliothekskopf- und -fußzeile
 
 Der Bildschirm „at.js bearbeiten“ in der Target-Benutzeroberfläche enthält Felder, in denen Sie benutzerspezifischen JavaScript-Code einfügen können, damit er unmittelbar vor oder nach der Datei „at.js“ ausgeführt wird. Die Bibliothekskopfzeile wird manchmal verwendet, um at.js-Einstellungen über die
-[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html?lang=de)-Funktion zu überschreiben oder Daten von Drittanbietern mithilfe der [Datenanbieter-Funktion](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=de) weiterzugeben. Die Bibliotheksfußzeile wird manchmal verwendet, um [at.js benutzerdefinierte Ereignis](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html?lang=de) -Listener hinzuzufügen.
+[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html)-Funktion zu überschreiben oder Daten von Drittanbietern mithilfe der [Datenanbieter-Funktion](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) weiterzugeben. Die Bibliotheksfußzeile wird manchmal verwendet, um [at.js benutzerdefinierte Ereignis](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html) -Listener hinzuzufügen.
 
 Um diese Funktion in Tags zu replizieren, verwenden Sie einfach die Aktion „Benutzerdefinierter Code“ in der Haupterweiterung und sequenzieren Sie die Aktion vor (Bibliothekskopfzeile) oder nach (Bibliotheksfußzeile) der Aktion „Target laden“. Hierfür können Sie dieselbe Regel nutzen wie für die `Load Target`-Aktion (siehe unten) oder separate Regeln mit Ereignissen oder Reihenfolgen verwenden, die zuverlässig vor oder nach der Regel mit `Load Target` ausgelöst werden:
 
@@ -577,8 +577,8 @@ Um diese Funktion in Tags zu replizieren, verwenden Sie einfach die Aktion „Be
 
 Weitere Informationen zu Anwendungsfällen für benutzerdefinierte Kopf- und Fußzeilen finden Sie in den folgenden Ressourcen:
 
-* [Verwenden von dataProviders zur Integration von Drittanbieterdaten in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=de)
-* [Implementierung von dataProviders zur Integration von Drittanbieterdaten in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=de)
-* [Verwenden von Antwort-Token und benutzerspezifischen at.js-Ereignissen mit Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html?lang=de)
+* [Verwenden von dataProviders zur Integration von Drittanbieterdaten in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)
+* [Implementierung von dataProviders zur Integration von Drittanbieterdaten in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
+* [Verwenden von Antwort-Token und benutzerspezifischen at.js-Ereignissen mit Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
 
 [Weiter &quot;Adobe Analytics hinzufügen“ >](analytics.md)

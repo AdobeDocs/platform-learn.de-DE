@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3266'
 ht-degree: 0%
 
 ---
@@ -31,15 +31,15 @@ Es gibt zwei Hauptaufgaben, die wir in der Datenerfassungsoberfläche ausführen
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich diese beiden kurzen Videos an, um mehr über die Streaming-Datenaufnahme und Web SDK zu erfahren:
 
->[!VIDEO](https://video.tv.adobe.com/v/31577?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37260?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
 >Während sich dieses Tutorial auf die Streaming-Aufnahme von Websites mit Web SDK konzentriert, können Sie Daten auch mit dem [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect) und anderen Mechanismen streamen.
 
-## Erforderliche Berechtigungen
+## Berechtigungen erforderlich
 
 In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten Sie alle Zugriffssteuerungen ein, die zum Abschließen dieser Lektion erforderlich sind.
 
@@ -155,7 +155,7 @@ Nachdem Sie nun über die Eigenschaft verfügen, können Sie die Web-SDK mithilf
 1. Navigieren Sie **[!UICONTROL linken Navigationsbereich]** Erweiterungen“.
 1. Wechseln Sie zur Registerkarte **[!UICONTROL Katalog]**.
 1. Für Tags stehen viele Erweiterungen zur Verfügung. Katalog mit dem Begriff `Web SDK` filtern
-1. Klicken Sie in der Erweiterung **[!UICONTROL Adobe Experience Platform Web]** SDK **[!UICONTROL auf die Schaltfläche]**&#x200B;Installieren“
+1. Klicken Sie in der Erweiterung **[!UICONTROL Adobe Experience Platform Web]** SDK **[!UICONTROL auf die Schaltfläche]**Installieren“
    ![Installieren der Adobe Experience Platform Web SDK-Erweiterung](assets/websdk-property-addExtension.png)
 1. Es gibt mehrere Konfigurationen für die Web-SDK-Erweiterung, aber es gibt nur zwei, die wir für dieses Tutorial konfigurieren werden. Aktualisieren Sie die **[!UICONTROL Edge]** Domäne auf `data.enablementadobe.com`. Mit dieser Einstellung können Sie Erstanbieter-Cookies mit Ihrer Web SDK-Implementierung festlegen. Dies wird empfohlen. Später in dieser Lektion ordnen Sie eine Website in der `enablementadobe.com` Domain Ihrer Tag-Eigenschaft zu. Der CNAME für die `enablementadobe.com` Domain wurde bereits so konfiguriert, dass `data.enablementadobe.com` an Adobe-Server weiterleitet. Wenn Sie Web SDK auf Ihrer eigenen Website implementieren, müssen Sie einen CNAME für Ihre eigenen Datenerfassungszwecke erstellen, z. B. `data.YOUR_DOMAIN.com`
 1. Wählen Sie **[!UICONTROL Dropdown-]** „Datenstrom“ Ihren `Luma Platform Tutorial` Datenstrom aus.
@@ -248,14 +248,13 @@ Wie Sie auf dem Bildschirm [!UICONTROL Publishing-Ablauf] sehen können, gibt es
 
 ### Adobe Experience Platform Debugger hinzufügen
 
-Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die auf Ihren Web-Seiten implementierte Adobe-Technologie zu sehen. Laden Sie die Version für Ihren bevorzugten Browser herunter:
+Experience Platform Debugger ist eine für Chrome verfügbare Erweiterung, mit der Sie die in Ihren Web-Seiten implementierte Adobe-Technologie sehen können. Laden Sie die Version für Ihren bevorzugten Browser herunter:
 
-* [Firefox-Erweiterung](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Wenn Sie den Debugger noch nie verwendet haben - und dieser unterscheidet sich vom älteren Adobe Experience Cloud Debugger - sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/35916?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Öffnen der Luma-Website
 
@@ -348,7 +347,7 @@ Jetzt ordnen wir unseren Seitennamen der Web-SDK zu.
 >[!IMPORTANT]
 >
 >Um diese Aufgabe abzuschließen, müssen wir sicherstellen, dass Ihre Benutzerin bzw. Ihr Benutzer zuerst Zugriff auf die Produktions-Sandbox hat. Wenn Sie noch keinen Zugriff auf die Produktions-Sandbox von einem anderen Produktprofil aus haben, öffnen Sie schnell Ihr `Luma Tutorial Platform` und fügen Sie das Berechtigungselement **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]** hinzu. Führen Sie danach auf der Seite „Datenelemente“ die UMSCHALTTASTE Neu laden aus, um den Cache zu löschen
->&#x200B;>![Fügen Sie die Produktions-Sandbox hinzu](assets/websdk-property-permissionToLoadSchema.png)
+>![Fügen Sie die Produktions-Sandbox hinzu](assets/websdk-property-permissionToLoadSchema.png)
 
 Auf der Seite **[!UICONTROL Datenelemente]**:
 
@@ -471,6 +470,6 @@ Gut gemacht! Das waren eine Menge Informationen über Web SDK und Launch. An ein
 >Nachdem Sie die Lektion Streaming-Aufnahme abgeschlossen haben, können Sie die [!UICONTROL Prod]-Sandbox aus Ihrem `Luma Tutorial Platform`-Produktprofil entfernen
 
 
-Dateningenieure, wenn Sie möchten, können Sie zur Lektion [Ausführen von Abfragen“ &#x200B;](run-queries.md).
+Dateningenieure, wenn Sie möchten, können Sie zur Lektion [Ausführen von Abfragen“ ](run-queries.md).
 
-Datenarchitekten können mit „Zusammenführungsrichtlinien[&#x200B; fortfahren](create-merge-policies.md).
+Datenarchitekten können mit „Zusammenführungsrichtlinien[ fortfahren](create-merge-policies.md).
