@@ -21,7 +21,7 @@ Experience Platform Debugger ist eine für Chrome verfügbare Erweiterung, mit d
 
 Wenn Sie den Debugger noch nie verwendet haben, sollten Sie sich dieses 5-minütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35916?captions=ger&learn=on&enablevpops)
 
 In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) um die Tag-Eigenschaft, die auf der Demo-Site [Luma“ hartcodiert &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html), durch Ihre eigene Eigenschaft zu ersetzen.
 
