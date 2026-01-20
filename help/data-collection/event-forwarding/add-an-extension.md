@@ -14,7 +14,7 @@ ht-degree: 19%
 
 # Hinzufügen einer Erweiterung für die Ereignisweiterleitung
 
-Erfahren Sie, wie Sie in der Datenerfassung eine Erweiterung für die Ereignisweiterleitung hinzufügen. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+Erfahren Sie, wie Sie in der Datenerfassung eine Erweiterung für die Ereignisweiterleitung hinzufügen. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >

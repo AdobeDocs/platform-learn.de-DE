@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Aufnehmen von Daten mit dem Adobe Audience Manager Data Connector
 
-In diesem Integrationsvideo erfahren Sie, wie Sie mit dem Audience Manager Data Connector Merkmale und Segmente aus AAM in Platform importieren und mit anderen Rich-Daten kombinieren können. Weitere Informationen finden Sie in der Dokumentation zum [Audience Manager-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
+In diesem Integrationsvideo erfahren Sie, wie Sie mit dem Audience Manager Data Connector Merkmale und Segmente aus AAM in Platform importieren und mit anderen Rich-Daten kombinieren können. Weitere Informationen finden Sie in der Dokumentation zum [Audience Manager-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

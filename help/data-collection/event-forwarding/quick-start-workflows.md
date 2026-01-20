@@ -22,6 +22,6 @@ Dieses Video führt Benutzenden durch zwei erweiterte Anwendungsfälle, mit dene
 1. Verwenden des Workflows zum Erstellen von Referenzobjekten. 
 1. Kopieren der Referenzobjekte in eine vorhandene Implementierung.
 
-Weitere Informationen zum Schnellstart-Workflow für die Meta Conversions-API finden Sie [Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview#quick-start).
+Weitere Informationen zum Schnellstart-Workflow für die Meta Conversions-API finden Sie [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/server/meta/overview#quick-start).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)

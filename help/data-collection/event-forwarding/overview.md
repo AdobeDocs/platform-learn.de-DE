@@ -14,7 +14,7 @@ ht-degree: 41%
 
 # Übersicht über die Ereignisweiterleitung
 
-Erfahren Sie, wie durch die Ereignisweiterleitung die Datenerfassung zentralisiert wird, die in Ihren Web- und Mobile Apps erforderliche Codemenge reduziert wird und Daten über Adobe Experience Platform Edge Network an Nicht-Adobe-Lösungen gestreamt werden. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+Erfahren Sie, wie durch die Ereignisweiterleitung die Datenerfassung zentralisiert wird, die in Ihren Web- und Mobile Apps erforderliche Codemenge reduziert wird und Daten über Adobe Experience Platform Edge Network an Nicht-Adobe-Lösungen gestreamt werden. Weitere Informationen finden Sie in der [Dokumentation zur Ereignisweiterleitung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >

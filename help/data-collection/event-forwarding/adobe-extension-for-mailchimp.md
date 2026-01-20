@@ -14,6 +14,6 @@ ht-degree: 0%
 
 # Adobe-Erweiterung für Mailchimp
 
-Übersichtsvideo zur Adobe-Ereignisweiterleitungserweiterung für Mailchimp. Weitere Informationen finden Sie in der Dokumentation [Mailchimp-Ereignisweiterleitungs-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html).
+Übersichtsvideo zur Adobe-Ereignisweiterleitungserweiterung für Mailchimp. Weitere Informationen finden Sie in der Dokumentation [Mailchimp-Ereignisweiterleitungs-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html?lang=de).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on&enablevpops)
