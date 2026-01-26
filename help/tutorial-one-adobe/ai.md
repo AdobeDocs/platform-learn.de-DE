@@ -3,9 +3,9 @@ title: Überblick über Agent AI Tech Labs
 description: Überblick über Agent AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -51,25 +51,16 @@ Technische Elemente:
 - MCP-Server, Python-Notebook
 - Adobe-APIs
 
-[1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md)
-
->[!NOTE]
->
->Dieses Modul wurde noch nicht veröffentlicht.
+[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Ziel**
 
-Verbinden Sie Ihren eigenen Agenten mit Adobe-Agenten. Teilnehmer richten das Agent2Agent-Protokoll (A2A) ein, um ihre Agenten mit AEP Agent Orchestrator zu verbinden.
+Brand Concierge ist ein KI-gestützter digitaler Begleiter, der die Art und Weise verändert, wie Marken mit ihren Website-Besuchern interagieren. Im Gegensatz zu generischen Chatbots bietet Brand Concierge personalisierte, dialogorientierte Erlebnisse, die auf die Intention jedes Besuchers zugeschnitten sind. Es hilft Besuchern, Produkte zu entdecken, Optionen zu vergleichen, sofortige Antworten zu erhalten und angeleitete Empfehlungen in Echtzeit zu erhalten. Die Plattform dient sowohl für B2C als auch für B2B und dient als intelligente Erweiterung Ihrer Marke auf jedem digitalen Kanal, während Ihre Markensprache, Inhaltsintegrität und Compliance erhalten bleiben.
 
-- Agent-Verkettung
-- Agent-Collaboration
+In dieser Übung lernen Sie Folgendes:
 
-Wie sieht die Architektur hinter einem Adobe-Agenten aus?
-Was ist die Architektur hinter A2A?
-
-Technische Elemente:
-
-- Agent-Interoperabilität mit dem A2A-Protokoll von Google
+- Konfigurieren der Brand Concierge-Instanz in der Adobe Experience Platform-Sandbox
+- Brand Concierge auf Ihrer AEM CS/EDS-Website implementieren
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 

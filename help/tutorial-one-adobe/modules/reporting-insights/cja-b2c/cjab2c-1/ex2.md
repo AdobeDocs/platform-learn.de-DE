@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Verbinden von Adobe Experience Platfor
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -80,9 +80,9 @@ Sie können jedoch weiterhin beeinflussen, welche Kennung zum Zusammenfügen von
 
 Wie bereits erwähnt, können Sie für jeden Datensatz unterschiedliche Personen-IDs festlegen. Auf diese Weise können Sie verschiedene Datensätze aus verschiedenen Ursprüngen in CJA zusammenführen. Stellen Sie sich vor, NPS- oder Umfragedaten einzubringen, die sehr interessant und hilfreich wären, um den Kontext zu verstehen und warum etwas passiert ist.
 
-Der Name des Personen-ID-Feldes ist nicht wichtig, solange der Wert in den Personen-ID-Feldern übereinstimmt. Angenommen, wir haben `email` in einem Datensatz und `emailAddress` in einem anderen Datensatz, der als Personen-ID definiert ist. Wenn `delaigle@adobe.com` für das Personen-ID-Feld in beiden Datensätzen derselbe Wert ist, kann CJA die Daten zusammenfügen.
+Der Name des Personen-ID-Feldes ist nicht wichtig, solange der Wert in den Personen-ID-Feldern übereinstimmt. Angenommen, wir haben `email` in einem Datensatz und `emailAddress` in einem anderen Datensatz, der als Personen-ID definiert ist. Wenn `delaigle@adobe.com` für das Personen-ID-Feld in beiden Datensätzen denselben Wert aufweist, kann CJA die Daten zusammenfügen.
 
-Lesen Sie die häufig gestellten Fragen zu CJA hier, um die Feinheiten bei der Identitätszuordnung zu verstehen: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de).
+Lesen Sie die häufig gestellten Fragen zu CJA hier, um die Feinheiten beim Identitätszuordnen zu verstehen: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Daten mithilfe der Personen-ID zusammenfügen
 
@@ -98,8 +98,8 @@ Nachdem Sie die beiden Datensätze zugeordnet haben, können Sie fortfahren.
 
 | datensatz | Personen-ID |
 | ----------------- |-------------| 
-| Demosystem - Ereignisdatensatz für eine Website (Global v1.1) | E-Mail |
-| Demosystem - Ereignisdatensatz für Callcenter (Global v1.1) | E-Mail |
+| Demosystem - Ereignisdatensatz für eine Website (Global v1.1) | email |
+| Demosystem - Ereignisdatensatz für Callcenter (Global v1.1) | email |
 
 Sie müssen außerdem sicherstellen, dass diese Optionen für beide Datensätze aktiviert sind:
 
@@ -128,7 +128,7 @@ Nachdem Sie Ihre **Verbindung** erstellt haben, kann es einige Stunden dauern, b
 
 ## Nächste Schritte
 
-Navigieren Sie zu [1.1.3 Datenansicht erstellen](./ex3.md)(./ex2.md){target="_blank"}
+Navigieren Sie zu [1.1.3 Datenansicht erstellen](./ex3.md){target="_blank"}
 
 Zurück zu [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 
