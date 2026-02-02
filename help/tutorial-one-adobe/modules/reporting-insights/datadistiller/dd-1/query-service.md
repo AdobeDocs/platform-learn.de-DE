@@ -4,9 +4,9 @@ description: Abfrage-Service
 kt: 5342
 doc-type: tutorial
 exl-id: 881dcff5-3637-4b67-9e61-88690babe83b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -32,10 +32,6 @@ Wir verwenden Daten, die entweder mithilfe von Web Interaction-Daten oder mithil
 - Datensätze (im Labor verwendeter Datensatz, für Sie vorgeladen)
 - PostgreSQL
 - Tableau oder Microsoft Power BI Desktop
-- **Diese Assets herunterladen**:
-   - [JSON - Beispieldaten: Website-Interaktionen](./../../../../assets/json/ee.json)
-   - [JSON - Beispieldaten: Interaktionen mit Callcentern](./../../../../assets/json/callcenter.json)
-   - [JSON - Beispieldaten: Treue](./../../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >

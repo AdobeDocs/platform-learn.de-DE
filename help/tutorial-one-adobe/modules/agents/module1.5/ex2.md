@@ -3,9 +3,9 @@ title: CJA & Claude.ai mit MCP-Server
 description: CJA & Claude.ai mit MCP-Server
 kt: 5342
 doc-type: tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ Durch die Nutzung der CJA &amp; Claude.ai mit dem MCP-Server Alpha erkennen Sie 
 
 In diesem Video erhalten Sie eine Erklärung und Demonstration aller Schritte, die an dieser Übung beteiligt sind.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479159?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3479561?quality=12&learn=on)
 
-## 1.5.1.1 Erstellen einer benutzerdefinierten App in Claude.ai für CJA
+## 1.5.2.1 Erstellen einer benutzerdefinierten App in Claude.ai für CJA
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Klicken Sie auf **Hinzufügen**.
 
 ![Claude.ai](./images/claude4.png)
 
-Sie sollten das dann sehen. Klicken Sie auf **Hinzufügen**.
+Sie sollten das dann sehen. Klicken Sie auf **Verbinden**.
 
 ![Claude.ai](./images/claude5.png)
 
@@ -75,8 +75,7 @@ Sie können nun mit der Datenanalyse beginnen.
 
 ![Claude.ai](./images/claude7.png)
 
-
-## 1.5.1.2 in CJA festlegen
+## 1.5.2.2 in CJA festlegen
 
 Bevor Sie über Claude.ai weiter mit CJA interagieren, muss der Kontext festgelegt werden.
 
@@ -120,7 +119,7 @@ Sie sollten das dann sehen.
 
 Ihr Kontext ist jetzt ordnungsgemäß festgelegt, sodass Sie als Nächstes bestimmte Eingabeaufforderungen senden können.
 
-## 1.5.1.3 Erkunden der Datenansicht
+## 1.5.2.3 Erkunden der Datenansicht
 
 >[!NOTE]
 >
@@ -142,7 +141,7 @@ Sie sollten dann diese Antwort sehen, die die Metriken und Dimensionen enthält,
 
 ![Claude.ai und CJA](./images/claude102.png)
 
-## 1.5.1.4 Freiformtabelle - Produktansichten
+## 1.5.2.4 Freiformtabelle - Produktansichten
 
 Jetzt können Sie beginnen, die Daten zu untersuchen. Beginnen Sie, indem Sie die unten stehende Eingabeaufforderung eingeben und auf **Senden** klicken, um Ihre Berichtsanfrage zu senden.
 
@@ -212,7 +211,7 @@ Sie sollten das dann sehen.
 
 ![Claude.ai und CJA](./images/claude117.png)
 
-## 1.5.1.5 Fallout-Visualisierung
+## 1.5.2.5 Fallout-Visualisierung
 
 Geben Sie die folgende **ein** klicken Sie auf die Schaltfläche **Senden**.
 
@@ -225,6 +224,8 @@ can you create a fallout visualization for the product interaction funnel, start
 Sie sollten dann so etwas sehen, das eine Visualisierung enthält, die von Claude.ai basierend auf den von Customer Journey Analytics bereitgestellten Daten generiert wurde.
 
 ![Claude.ai und CJA](./images/claude119.png)
+
+Nächster Schritt: [Adobe Analytics &amp; Claude.ai mit MCP-Server](./ex3.md){target="_blank"}
 
 Zurück zu [Analytics und Agenten](./analyticsagents.md){target="_blank"}
 
