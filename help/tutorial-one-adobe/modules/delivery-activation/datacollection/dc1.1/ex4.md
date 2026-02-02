@@ -4,9 +4,9 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: 6ba82c35-1087-45c5-85a3-8bca7408cfec
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,11 @@ ht-degree: 0%
 
 Experience Platform Debugger ist eine Erweiterung, die für Chrome- und Firefox-Browser verfügbar ist und Ihnen dabei hilft, die auf Ihren Web-Seiten implementierte Adobe-Technologie zu sehen. Installieren Sie die Version für Ihren bevorzugten Browser:
 
-- [Firefox-Erweiterung](https://addons.mozilla.org/de/firefox/addon/adobe-experience-platform-dbg/)
-
 - [Chrome-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Wenn Sie den Debugger noch nie verwendet haben - und dieser unterscheidet sich vom vorherigen Adobe Experience Cloud Debugger - sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/35916?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
 
 Da Sie die Demo-Website im Inkognito-Modus laden werden, müssen Sie sicherstellen, dass der Experience Platform-Debugger auch im Inkognito-Modus verfügbar ist. Navigieren Sie dazu zu **chrome://extensions** in Ihrem Browser und öffnen Sie die Experience Platform Debugger-Erweiterung.
 
@@ -72,25 +70,25 @@ Der Debugger wird geöffnet und zeigt die Details der Implementierung an, die in
 
 Klicken Sie oben rechts auf **[!UICONTROL Schaltfläche]** Anmelden“, um sich zu authentifizieren. Wenn Sie bereits eine Browser-Registerkarte mit der Datenerfassungsoberfläche von Adobe Experience Platform geöffnet haben, wird der Authentifizierungsschritt automatisch durchgeführt und Sie müssen Ihren Benutzernamen und Ihr Kennwort nicht erneut eingeben.
 
-![AEP-Debugger](./images/validate2.png)
+![AEP Debugger](./images/validate2.png)
 
 Sie werden dann im Debugger angemeldet.
 
-![AEP-Debugger](./images/validate2ab.png)
+![AEP Debugger](./images/validate2ab.png)
 
 Klicken Sie auf der Demo-Website auf die Schaltfläche Neu laden , um den Debugger mit dieser bestimmten Registerkarte zu verbinden.
 
-![AEP-Debugger](./images/validate2a.png)
+![AEP Debugger](./images/validate2a.png)
 
 Bestätigen Sie, dass der Debugger **[!UICONTROL Mit Startseite verbunden]** ist, wie oben abgebildet, und klicken Sie dann auf das **[!UICONTROL Sperren]**-Symbol, um den Debugger für die Demo-Website zu sperren. Andernfalls wechselt der Debugger immer wieder, um die Implementierungsdetails der Browser-Registerkarte anzuzeigen, die im Fokus ist, was verwirrend sein kann. Sobald der Debugger gesperrt ist, ändert sich das Symbol in **Entsperren**.
 
-![AEP-Debugger](./images/validate3.png)
+![AEP Debugger](./images/validate3.png)
 
 Rufen Sie als Nächstes eine beliebige Seite der Demo-Website auf, z. B. die Kategorieseite **Pläne** .
 
 ![AEP Debugger AEP Web SDK-Erweiterung](./images/validate4.png)
 
-Klicken Sie jetzt im linken Navigationsbereich auf **0&rbrace;Experience Platform Web SDK, um die**&#x200B;[!UICONTROL &#x200B; Netzwerkanfragen“ &#x200B;]&#x200B;**.**
+Klicken Sie jetzt im linken Navigationsbereich auf **[!UICONTROL 0}Experience Platform Web SDK, um die]** Netzwerkanfragen“ **[!UICONTROL .]**
 
 Jede Anfrage enthält eine **[!UICONTROL Ereignis]**-Zeile.
 

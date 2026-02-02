@@ -3,9 +3,9 @@ title: Überblick über Agent AI Tech Labs
 description: Überblick über Agent AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Technische Elemente:
 - MCP-Server, Python-Notebook
 - Adobe-APIs
 
-[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
+[1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Ziel**
 
@@ -61,6 +61,17 @@ In dieser Übung lernen Sie Folgendes:
 
 - Konfigurieren der Brand Concierge-Instanz in der Adobe Experience Platform-Sandbox
 - Brand Concierge auf Ihrer AEM CS/EDS-Website implementieren
+
+[1.5 Analytics und Agenten](./modules/agents/module1.5/analyticsagents.md)
+
+**Ziel**
+
+Als Datenanalyst, KI-Entwickler oder KI-Anwendungsarchitekt erfahren Sie, wie Sie Berichtsaufgaben wie die Berichterstellung, die Planung von Analysen mithilfe von externen Agenten automatisieren können. Sie erfahren, wie Sie neue Kampagnendaten, Zielgruppendaten oder Leistungsdaten in Ihre agenten Workflows ziehen.
+
+In dieser Übung lernen Sie Folgendes:
+
+- Verbinden von ChatGPT und/oder Claude.ai mit **Customer Journey Analytics** und Ausführen von Datenanalyseaufgaben
+- Verbinden von ChatGPT und/oder Claude.ai mit **Adobe Analytics** und Ausführen von Datenanalyseaufgaben
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -4,9 +4,9 @@ description: Erste Schritte - Einrichten von Postman
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '462'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Wenn Sie kein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum [&#x200B; von Postman](./ex7.md){target="_blank"}. Die folgenden Anweisungen sind nur für Adobe-Mitarbeiter gedacht.
+>Wenn Sie kein Adobe-Mitarbeiter sind, befolgen Sie die Anweisungen zum [ von Postman](./ex7.md){target="_blank"}. Die folgenden Anweisungen sind nur für Adobe-Mitarbeiter gedacht.
 
 ## Video
 
@@ -25,15 +25,19 @@ In diesem Video erhalten Sie eine Erklärung und Demonstration aller Schritte, d
 
 ## Installieren von PostBuster
 
-Navigieren Sie zu [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
+Navigieren Sie zu [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
 
 Klicken Sie hier, um die neueste Version von **PostBuster** herunterzuladen.
 
 ![PostBuster](./images/pb1.png)
 
-Laden Sie die richtige Version für Ihr Betriebssystem herunter.
+Klicken Sie auf die richtige Version für Ihr Betriebssystem.
 
 ![PostBuster](./images/pb2.png)
+
+Datei herunterladen.
+
+![PostBuster](./images/pb2a.png)
 
 Sobald der Download abgeschlossen ist und installiert wurde, öffnen Sie PostBuster. Sie sollten das dann sehen. Klicken Sie **Importieren**.
 

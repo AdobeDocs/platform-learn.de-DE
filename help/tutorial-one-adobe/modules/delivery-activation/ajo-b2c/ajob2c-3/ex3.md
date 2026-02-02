@@ -1,12 +1,12 @@
 ---
-title: Offer Decisioning - Testen der Entscheidung
-description: Offer Decisioning - Testen der Entscheidung
+title: Konfigurieren einer Kampagne mit In-App-Nachrichten
+description: Konfigurieren einer Kampagne mit In-App-Nachrichten
 kt: 5342
 doc-type: tutorial
 exl-id: c40b9b8c-9717-403c-bf02-6b8f42a59c05
-source-git-commit: 2e856759e1a9b5509ad0632e28b269bcfc4ae861
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Stellen Sie sicher **dass „Einzelne Seite** aktiviert ist.
 
 Geben Sie **Web** die URL der Website ein, die zuvor als Teil des Moduls **Erste Schritte** erstellt wurde. Sie sieht wie folgt aus: `https://dsn.adobe.com/web/--aepUserLdap---XXXX`. Vergessen Sie nicht, den **XXXX** in den eindeutigen Code Ihrer Website zu ändern.
 
-Geben Sie für &lbrace;0 **iOS** und **Android** ein.`com.adobe.dsn.dxdemo`
+Geben Sie für {0 **iOS** und **Android** ein.`com.adobe.dsn.dxdemo`
 
 ![InApp](./images/inapp4.png)
 

@@ -4,9 +4,9 @@ breadcrumb-title: Ein technisches Tutorial zu Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1459'
 ht-degree: 3%
 
 ---
@@ -86,6 +86,9 @@ ht-degree: 3%
       + [1.6.3 Externe DAM-App erstellen und bereitstellen](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 App privat veröffentlichen](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
+   + 1.7 Workflow Builder {#crpr7}
+      + [Übersicht](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
+      + [1.7.1 Erste Schritte mit Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
 
 + Asset-Management {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -268,6 +271,7 @@ ht-degree: 3%
          + [Übersicht](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Erste Schritte mit Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
 + Agenten {#agents}
    + [Agentenbezogene KI - Übersicht](/help/tutorial-one-adobe/ai.md)
    + 1.1 Agent Orchestrator {#agents1}

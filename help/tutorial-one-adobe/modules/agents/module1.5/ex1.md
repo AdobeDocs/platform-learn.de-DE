@@ -3,19 +3,21 @@ title: CJA und ChatGPT mit MCP-Server
 description: CJA und ChatGPT mit MCP-Server
 kt: 5342
 doc-type: tutorial
-source-git-commit: ca2812e14a22b80b7f00066f9cc482e708b4ac6a
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # 1.5.1 CJA und ChatGPT mit MCP-Server
 
->[!IMPORTANT]
->
->In diesem Labor wird eine Funktion verwendet, die noch nicht veröffentlicht wurde. Die Funktion wird noch entwickelt, sodass sie noch nicht allgemein verfügbar ist.
+[!BADGE Alpha]
 
++++Alpha-Details
+Durch die Nutzung der CJA &amp; Claude.ai mit dem MCP-Server Alpha erkennen Sie hiermit an, dass die Alpha ohne Mängelgewähr und ohne Gewährleistung jeglicher Art bereitgestellt wird. Adobe ist nicht verpflichtet, die Alpha zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen. Es wird empfohlen, Vorsicht walten zu lassen und sich nicht auf die ordnungsgemäße Funktionsweise oder Leistung solcher Alpha und/oder Begleitmaterialien zu verlassen. Die Alpha gilt als vertrauliche Information von Adobe. Jedes „Feedback“ (Informationen zur Alpha, einschließlich, aber nicht beschränkt auf Probleme oder Mängel, auf die Sie bei der Verwendung der Alpha stoßen, Vorschläge, Verbesserungen und Empfehlungen), das Sie Adobe zur Verfügung stellen, wird hiermit Adobe zugewiesen, einschließlich aller Rechte, Titel und Interessen an diesem Feedback.
+
++++
 
 >[!NOTE]
 >
