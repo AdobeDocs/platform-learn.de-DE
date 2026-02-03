@@ -3,9 +3,9 @@ title: Inhaltsstatus
 description: Inhaltsstatus
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
+source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '553'
 ht-degree: 11%
 
 ---
@@ -18,7 +18,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 
 | Name | Letzte Aktualisierung | 100 % arbeiten | Bemerkungen          | Zeitinvestition |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Erste Schritte &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Ja | – | 45 Min |
+| [0. Erste Schritte ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Ja | – | 45 Min |
 
 ## &#x200B;1. Workflow und Planung
 
@@ -37,6 +37,8 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | [.4 Adobe Express und Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | Ja | – | 45 Min |
 | [1.5 Optimieren Sie Ihren Workflow mit Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | Ja | – | 1h |
 | [1.6 GenStudio for Performance Marketing - Erweiterbarkeit](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | Ja | – | 1 Stunde 30 Min. |
+| [1.7 Workflow Builder](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 02/02/2026 | Nein | Inhalt in Entwicklung | – |
+| [1.8 Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"} | 02/02/2026 | Nein | Inhalt in Entwicklung | – |
 
 
 ## &#x200B;3. Asset-Management
@@ -63,7 +65,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | [3.1 Adobe Journey Optimizer: Orchestrierung](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.2 Adobe Journey Optimizer: Externe Datenquellen und benutzerdefinierte Aktionen](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.3 Adobe Journey Optimizer: Push- und In-App-Nachrichten](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"} | 03/07/2025/2025 | Ja | – | 2 Std |
-| [3.4 Adobe Journey Optimizer: Ereignisbasierte Journey &#x200B;](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
+| [3.4 Adobe Journey Optimizer: Ereignisbasierte Journey ](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.5 Adobe Journey Optimizer: Übersetzungsdienstleistungen](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.6 Adobe Journey Optimizer: Content-Management](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 03/07/2025 | Nein | Content wird entwickelt | TBD |
@@ -82,10 +84,10 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 
 | Name | Letzte Aktualisierung | 100 % arbeiten | Bemerkungen          | Zeitinvestition |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 23/01/2026 | Ja | – | 90 Min |
-| [1.2 Agentische KI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 23/01/2026 | Nein | Content wird entwickelt | TBD |
+| [.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 02/02/2026 | Ja | – | 60 Min |
+| [1.2 Agentische KI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | Nein | Content wird entwickelt | TBD |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | Ja | – | 90 Min |
-| [1.5 Analytics und Agenten](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 23/01/2026 | Nein | Content wird entwickelt | TBD |
+| [1.5 Analytics und Agenten](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | Ja | – | 45 Min |
 
 {style="table-layout:auto"}
 
