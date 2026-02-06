@@ -4,9 +4,9 @@ breadcrumb-title: Ein technisches Tutorial zu Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
+source-git-commit: bed1141b0b51063637684a29a9bd946c934fc2ba
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1518'
 ht-degree: 3%
 
 ---
@@ -108,6 +108,9 @@ ht-degree: 3%
       + [Überblick](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
       + [1.2.1 Erste Schritte mit AEM Assets](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
       + [Zusammenfassung und Vorteile](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
+   + 1.4 Adobe Experience Manager Assets und Dynamic Media {#assetm4}
+      + [Überblick](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
+      + [1.4.1 Erste Schritte mit AEM Assets und Dynamic Media](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
    + 1.5 Adobe Commerce as a Cloud Service {#assetm3}
       + [Überblick](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/accs.md)
       + [1.5.1 Erste Schritte mit Adobe Commerce as a Cloud Service](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
