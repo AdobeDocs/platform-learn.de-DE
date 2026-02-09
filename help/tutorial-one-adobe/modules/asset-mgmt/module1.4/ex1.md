@@ -47,7 +47,7 @@ Sie sollten das dann sehen.
 
 ![AEM Assets Dynamic Media](./images/aaemassdmcomp4.png)
 
-Sie sollten jetzt eine E-Mail wie die folgende erhalten, die Ihr temporäres Kennwort enthält. Um Ihr Kennwort zu ändern oder abzurufen, falls Sie keine E-Mail erhalten haben, sollten Sie die **Adobe Dynamic Media Classic Desktop App** installieren. Installationsanweisungen finden Sie hier: [https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
+Sie sollten jetzt eine E-Mail wie die folgende erhalten, die Ihr temporäres Kennwort enthält. Um Ihr Kennwort zu ändern oder abzurufen, falls Sie keine E-Mail erhalten haben, sollten Sie die **Adobe Dynamic Media Classic Desktop App** installieren. Installationsanweisungen finden Sie hier: [https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
 
 Folgen Sie den Anweisungen dort und kehren Sie hierher zurück, sobald die App auf Ihrem System installiert ist.
 
