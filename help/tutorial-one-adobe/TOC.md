@@ -4,9 +4,9 @@ breadcrumb-title: Ein technisches Tutorial zu Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: bed1141b0b51063637684a29a9bd946c934fc2ba
+source-git-commit: 9d3e39cf99f3cfa6c1198c53f30b21fa8fbf7854
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1529'
 ht-degree: 3%
 
 ---
@@ -89,11 +89,10 @@ ht-degree: 3%
    + 1.7 Workflow Builder {#crpr7}
       + [Überblick](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Erste Schritte mit Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
-   + 1.8 Speichermanagement für Unternehmen {#crpr8}
+   + 1.8 Einheitliche Prüfung und Genehmigung mit Workfront, Frame.io und Enterprise Storage Management {#crpr8}
       + [Überblick](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
-      + [1.8.1 Workfront und ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
-      + [1.8.2 Frame.io und ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
-      + [1.8.3 Adobe Express und ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex3.md)
+      + [1.8.1 Erste Schritte mit Workfront, Frame.io und ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+      + [1.8.2 Neues Asset erstellen, überprüfen und genehmigen](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
 
 + Asset-Management {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
