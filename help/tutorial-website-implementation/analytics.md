@@ -3,16 +3,21 @@ title: Hinzufügen von Adobe Analytics
 description: Erfahren Sie, wie Sie Adobe Analytics mit der Tag-Erweiterung "Adobe Analytics" implementieren, den Seitenansichts-Beacon senden, Variablen hinzufügen, Ereignisse verfolgen und Plug-ins hinzufügen. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 solution: Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
-source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3859'
 ht-degree: 69%
 
 ---
 
 # Hinzufügen von Adobe Analytics
 
-In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de) und erstellen Regeln, um Daten an Adobe Analytics zu senden.
+In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) und erstellen Regeln, um Daten an Adobe Analytics zu senden.
+
+
+>[!WARNING]
+>
+> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=de) ist eine branchenführende Lösung, mit der Sie Ihre Kunden besser verstehen und Ihr Geschäft mit Customer Intelligence steuern können.
 
@@ -21,7 +26,7 @@ In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform Launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de)**
+> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
@@ -41,7 +46,7 @@ Es gibt viele Dinge, die für Analytics in Tags implementiert werden könnten. I
 
 Sie sollten bereits die Lektionen in [Konfigurieren von Tags](create-a-property.md) und [Hinzufügen des Identity Service](id-service.md) abgeschlossen haben.
 
-Darüber hinaus benötigen Sie mindestens eine Report Suite-ID sowie Ihren Trackingserver. Wenn Sie nicht über eine Report Suite für Tests/Entwicklung verfügen, die Sie für dieses Tutorial verwenden können, erstellen Sie eine. Weitere Hilfestellung und Anweisungen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Sie können Ihren Trackingserver aus Ihrer aktuellen Implementierung abrufen oder bei Ihrem Adobe-Berater oder Kundenbetreuer erfragen.
+Darüber hinaus benötigen Sie mindestens eine Report Suite-ID sowie Ihren Trackingserver. Wenn Sie nicht über eine Report Suite für Tests/Entwicklung verfügen, die Sie für dieses Tutorial verwenden können, erstellen Sie eine. Weitere Hilfestellung und Anweisungen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Sie können Ihren Trackingserver aus Ihrer aktuellen Implementierung abrufen oder bei Ihrem Adobe-Berater oder Kundenbetreuer erfragen.
 
 ## Hinzufügen der Analytics-Erweiterung
 
@@ -61,7 +66,7 @@ Die Analytics-Erweiterung besteht aus zwei Hauptteilen:
 
    ![Installieren der Analytics-Erweiterung](images/analytics-catalog-install.png)
 
-1. Geben [!UICONTROL &#x200B; unter „Bibliotheksverwaltung > Report &#x200B;]&quot; die Report Suite-IDs ein, die Sie für jede Tag-Umgebung verwenden möchten. Wenn Ihre Benutzerinnen und Benutzer Zugriff auf Adobe Analytics haben, beachten Sie, dass beim Eingeben in das Feld eine vorausgefüllte Liste aller Ihrer Report Suites angezeigt wird. (In diesem Tutorial können Sie eine Report Suite für alle Umgebungen verwenden. Doch in der Praxis sollten Sie verschiedene Report Suites verwenden, wie in der Abbildung unten gezeigt.)
+1. Geben [!UICONTROL  unter „Bibliotheksverwaltung > Report ]&quot; die Report Suite-IDs ein, die Sie für jede Tag-Umgebung verwenden möchten. Wenn Ihre Benutzerinnen und Benutzer Zugriff auf Adobe Analytics haben, beachten Sie, dass beim Eingeben in das Feld eine vorausgefüllte Liste aller Ihrer Report Suites angezeigt wird. (In diesem Tutorial können Sie eine Report Suite für alle Umgebungen verwenden. Doch in der Praxis sollten Sie verschiedene Report Suites verwenden, wie in der Abbildung unten gezeigt.)
 
    ![Report Suite-IDs eingeben](images/analytics-config-reportSuite.png)
 
@@ -69,11 +74,11 @@ Die Analytics-Erweiterung besteht aus zwei Hauptteilen:
    >
    >Es wird empfohlen, die Option [!UICONTROL Bibliothek für mich verwalten] als [!UICONTROL Bibliotheksverwaltung] zu verwenden, da es dadurch wesentlich einfacher wird, die `AppMeasurement.js`-Bibliothek auf dem neuesten Stand zu halten.
 
-1. Geben [!UICONTROL &#x200B; unter „Allgemein > Tracking-]&quot; Ihren Tracking-Server ein, z. B. `tmd.sc.omtrdc.net`. Geben Sie Ihren SSL-Trackingserver ein, wenn Ihre Site `https://` unterstützt.
+1. Geben [!UICONTROL  unter „Allgemein > Tracking-]&quot; Ihren Tracking-Server ein, z. B. `tmd.sc.omtrdc.net`. Geben Sie Ihren SSL-Trackingserver ein, wenn Ihre Site `https://` unterstützt.
 
    ![Trackingserver eingeben](images/analytics-config-trackingServer.png)
 
-1. Legen [!UICONTROL &#x200B; im Abschnitt „Globale &#x200B;]&quot; unter [!UICONTROL Zusätzliche Einstellungen] die Variable [!UICONTROL Seitenname] mithilfe Ihres `Page Name` Datenelements fest. Klicken Sie auf das Symbol ![Datenelementsymbol](images/icon-dataElement.png), um das Modal zu öffnen und das `Page Name`-Seitendatenelement auszuwählen.
+1. Legen [!UICONTROL  im Abschnitt „Globale ]&quot; unter [!UICONTROL Zusätzliche Einstellungen] die Variable [!UICONTROL Seitenname] mithilfe Ihres `Page Name` Datenelements fest. Klicken Sie auf das Symbol ![Datenelementsymbol](images/icon-dataElement.png), um das Modal zu öffnen und das `Page Name`-Seitendatenelement auszuwählen.
 
 1. Klicken Sie auf **[!UICONTROL In Bibliothek speichern]**
 
@@ -128,7 +133,7 @@ Nachdem Sie eine Regel zum Senden eines Analytics-Beacons erstellt haben, sollte
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser.
 1. Klicken Sie auf das Debugger-Symbol ![Experience Cloud Debugger öffnen](images/analytics-debuggerIcon.png) um den **[!UICONTROL Adobe Experience Cloud Debugger zu öffnen]**
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -426,7 +431,7 @@ Sie werden in diesem Code zwei Plugins aufrufen, aber eines davon ist in der App
 
 Dieses Plugin soll verhindern, dass Werte fälschlicherweise im Code dupliziert werden, wenn ein Besucher eine Seite aktualisiert oder die Zurück-Schaltfläche des Browsers verwendet, um zu einer Seite zurückzukehren, auf der ein Wert festgelegt wurde. In dieser Lektion verwenden Sie es, um zu verhindern, dass das `clickthrough`-Ereignis dupliziert wird.
 
-Der Code für dieses Plugin befindet sich in der [Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=de) und ist hier zum einfachen Kopieren/Einfügen ebenfalls aufgeführt.
+Der Code für dieses Plugin befindet sich in der [Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html) und ist hier zum einfachen Kopieren/Einfügen ebenfalls aufgeführt.
 
 1. Kopieren Sie den folgenden Code:
 

@@ -2,10 +2,10 @@
 title: Hinzufügen eines Datenelements, einer Regel und einer Bibliothek
 description: Erfahren Sie, wie Sie Datenelemente, Regeln und eine Bibliothek in Tags erstellen. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 54%
+source-wordcount: '1473'
+ht-degree: 53%
 
 ---
 
@@ -15,12 +15,17 @@ In dieser Lektion erstellen Sie Ihr erstes Datenelement, Ihre erste Regel und Ih
 
 Datenelemente und Regeln sind die Grundbausteine von Tags. Datenelemente speichern die Attribute, die Sie an Ihre Marketing- und Werbelösungen senden möchten, während Regeln die Anforderungen an diese Lösungen unter den richtigen Bedingungen auslösen.  Bibliotheken sind die JavaScript-Dateien, die auf der Seite geladen werden, um alle Aufgaben auszuführen. In dieser Lektion werden Sie alle drei verwenden, damit unsere Beispielseite etwas tut.
 
+
+>[!WARNING]
+>
+> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de)**
+> * Platform Launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
@@ -28,7 +33,7 @@ Datenelemente und Regeln sind die Grundbausteine von Tags. Datenelemente speiche
 Am Ende dieser Lektion können Sie:
 
 * ein Datenelement erstellen
-* eine Regel erstellen
+* Erstellen einer Regel
 * eine Bibliothek erstellen
 * Änderungen zu einer Bibliothek hinzufügen
 * überprüfen, ob Ihre Bibliothek in Ihrem Webbrowser geladen wird
@@ -36,7 +41,7 @@ Am Ende dieser Lektion können Sie:
 
 ## Erstellen eines Datenelements für Seitennamen
 
-Datenelemente sind die Tags-Version einer Datenschicht. Sie können Werte aus Ihrem eigenen Daten-Layer-Objekt, Ihren Cookies, Ihren lokalen Speicherobjekten, Ihren Abfragezeichenfolgenparametern, Ihren Seitenelementen, Ihren Meta-Tags usw. speichern. In dieser Übung erstellen Sie ein Datenelement für den Seitennamen, das Sie später in Ihren Target- und Analytics-Implementierungen verwenden werden.
+Datenelemente sind die Tags-Version einer Datenschicht. Sie können Werte aus Ihrem eigenen Datenschicht-Objekt, Ihren Cookies, Ihren lokalen Speicherobjekten, Ihren Abfragezeichenfolgenparametern, Ihren Seitenelementen, Ihren Meta-Tags usw. speichern. In dieser Übung erstellen Sie ein Datenelement für den Seitennamen, das Sie später in Ihren Target- und Analytics-Implementierungen verwenden werden.
 
 **Erstellen eines Datenelements**
 
@@ -50,7 +55,7 @@ Datenelemente sind die Tags-Version einer Datenschicht. Sie können Werte aus Ih
 
 1. Benennen Sie das Datenelement, z. B. `Page Name`
 
-1. Verwenden Sie den [!UICONTROL JavaScript-Variablen]-Datenelementtyp, um auf einen Wert im Daten-Layer Ihrer Beispielseite zu verweisen: `digitalData.page.pageInfo.pageName`
+1. Verwenden Sie den [!UICONTROL JavaScript-Variablen]-Datenelementtyp, um auf einen Wert in der Datenschicht Ihrer Beispielseite zu verweisen: `digitalData.page.pageInfo.pageName`
 
 1. Markieren Sie die Kästchen für **[!UICONTROL Kleinbuchstaben erzwingen]** und **[!UICONTROL Text bereinigen]**, um die Groß-/Kleinschreibung zu standardisieren und überflüssige Leerzeichen zu entfernen
 
@@ -123,7 +128,7 @@ Auf der Seite Regeln sollte Ihre neue Regel angezeigt werden:
 
 Nachdem Sie eine Sammlung von Erweiterungen, Datenelementen und Regeln in der Datenerfassungsschnittstelle konfiguriert haben, müssen Sie diese Funktionen und Logik in einen Satz von JavaScript-Code packen, den Sie auf Ihrer Website bereitstellen können, damit Marketing-Tags ausgelöst werden, wenn Besucher zur Website kommen. Bei einer Bibliothek handelt es sich um den Satz von JavaScript-Code, der dies ausführt.
 
-In einer früheren Lektion haben Sie den Einbettungscode Ihrer Entwicklungsumgebung auf der Beispielseite implementiert. Beim Laden der Beispielseite wurde ein 404-Fehler für die Einbettungs-Code-URL zurückgegeben, da noch keine Tag-Bibliothek erstellt und der Umgebung zugewiesen wurde. Fügen Sie jetzt Ihr neues Datenelement und Ihre Regel in eine Bibliothek ein, damit Ihre Beispielseite etwas tun kann.
+In einer früheren Lektion haben Sie den Einbettungs-Code Ihrer Entwicklungsumgebung auf der Beispielseite implementiert. Beim Laden der Beispielseite wurde ein 404-Fehler für die Einbettungs-Code-URL zurückgegeben, da noch keine Tag-Bibliothek erstellt und der Umgebung zugewiesen wurde. Fügen Sie jetzt Ihr neues Datenelement und Ihre Regel in eine Bibliothek ein, damit Ihre Beispielseite etwas tun kann.
 
 **Hinzufügen und Aufbauen einer Bibliothek**
 
@@ -195,4 +200,4 @@ Warten Sie einen Augenblick, bis der grüne Punkt neben dem Dropdown-Menü [!UIC
 
 Dies ist eine viel schnellere Arbeitsweise und Sie werden diesen Ansatz für den Rest des Tutorials verwenden.
 
-[Weiter „Wechseln von Umgebungen mit dem Experience Cloud Debugger&quot; >](switch-environments.md)
+[Weiter „Wechseln von Umgebungen mit dem Experience Cloud Debugger“ >](switch-environments.md)

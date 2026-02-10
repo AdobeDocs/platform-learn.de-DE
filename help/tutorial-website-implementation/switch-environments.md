@@ -1,17 +1,22 @@
 ---
 title: Wechseln von Tag-Umgebungen mit dem Adobe Experience Cloud Debugger
-description: Erfahren Sie, wie Sie mit dem -Experience Cloud Debugger verschiedene Tag-Einbettungs-Codes laden können. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
+description: Erfahren Sie, wie Sie mit Experience Cloud Debugger verschiedene Tag-Einbettungs-Codes laden können. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 24%
+source-wordcount: '620'
+ht-degree: 23%
 
 ---
 
 # Wechseln von Tag-Umgebungen mit dem Experience Cloud Debugger
 
-In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) um die Tag-Eigenschaft auf der Demo-Site [Luma“ hartcodiert &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) Ihre eigene Eigenschaft zu ersetzen.
+In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob), um die Tag-Eigenschaft auf der Demo-Site [Luma“ hartcodiert ](https://luma.enablementadobe.com/content/luma/us/en.html) Ihre eigene Eigenschaft zu ersetzen.
+
+
+>[!WARNING]
+>
+> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 Diese Technik wird als Umgebungsumschaltung bezeichnet und ist später hilfreich, wenn Sie auf Ihrer eigenen Website mit Tags arbeiten. Sie können Ihre Produktions-Website in Ihrem Browser laden, jedoch mit Ihrer *Entwicklungs-)*. Auf diese Weise können Sie Tag-Änderungen unabhängig von Ihren regulären Code-Versionen sicher vornehmen und validieren.  Schließlich ist diese Trennung der Marketing-Tag-Versionen von Ihren regulären Code-Versionen einer der Hauptgründe, warum Kunden Tags überhaupt verwenden!
 
@@ -19,8 +24,8 @@ Diese Technik wird als Umgebungsumschaltung bezeichnet und ist später hilfreich
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de)**
+> * Platform Launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
@@ -34,9 +39,9 @@ Am Ende dieser Lektion können Sie:
 
 1. Öffnen Sie in Ihrer Tag-Eigenschaft die `Environments`
 
-1. Klicken Sie in **[!UICONTROL Zeile]** Entwicklung“ auf das Symbol „Installieren![, &#x200B;](images/launch-installIcon.png) das Modal zu öffnen
+1. Klicken Sie in **[!UICONTROL Zeile]** Entwicklung“ auf das Symbol „Installieren![, ](images/launch-installIcon.png) das Modal zu öffnen
 
-1. Klicken Sie auf das Kopiersymbol ![Kopiersymbol](images/launch-copyIcon.png), um den Einbettungscode in die Zwischenablage zu kopieren.
+1. Klicken Sie auf das Kopiersymbol ![Kopiersymbol](images/launch-copyIcon.png), um den Einbettungs-Code in die Zwischenablage zu kopieren.
 
 1. Klicken Sie auf **[!UICONTROL Schließen]**, um das Modal zu schließen
 
@@ -46,7 +51,7 @@ Am Ende dieser Lektion können Sie:
 
 1. Öffnen Sie die [Demosite „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser.
 
-1. Öffnen Sie die Erweiterung [Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) indem Sie auf das Symbol ![Debugger-Symbol](images/icon-debugger.png) klicken
+1. Öffnen Sie die Erweiterung [Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) indem Sie auf das Symbol ![Debugger](images/icon-debugger.png) klicken
 
    ![Klicken Sie auf das Debugger-Symbol](images/switchEnvironments-openDebugger.png)
 
@@ -56,7 +61,7 @@ Am Ende dieser Lektion können Sie:
 
 1. Navigieren Sie zur Registerkarte „Tools“.
 1. Scrollen Sie zum Abschnitt **[!UICONTROL Launch-Einbettungs-Code ersetzen]**
-1. Stellen Sie sicher, dass die Registerkarte Chrome mit der Luma-Site hinter dem Debugger im Fokus ist (nicht die Registerkarte mit diesem Tutorial oder die Registerkarte mit der Datenerfassungsoberfläche).  Fügen Sie den Einbettungscode aus der Zwischenablage in das Eingabefeld ein.
+1. Stellen Sie sicher, dass die Registerkarte Chrome mit der Luma-Site hinter dem Debugger im Fokus ist (nicht die Registerkarte mit diesem Tutorial oder die Registerkarte mit der Datenerfassungsoberfläche).  Fügen Sie den Einbettungs-Code aus der Zwischenablage in das Eingabefeld ein.
 1. Schalten Sie die Funktion „Apply across luma.enablementadobe.com“ ein, damit alle Seiten auf der Luma-Site Ihrer Tag-Eigenschaft zugeordnet werden
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**
 

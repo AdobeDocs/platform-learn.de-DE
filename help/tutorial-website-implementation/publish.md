@@ -1,24 +1,29 @@
 ---
-title: Publish - Ihre Tag-Eigenschaft
+title: Veröffentlichen der Tag-Eigenschaft
 description: Erfahren Sie, wie Sie Ihre Tag-Eigenschaft aus der Entwicklungsumgebung in der Staging- und Produktionsumgebung veröffentlichen. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 58%
+source-wordcount: '603'
+ht-degree: 55%
 
 ---
 
-# Publish - Ihre Tag-Eigenschaft
+# Veröffentlichen der Tag-Eigenschaft
 
 Nachdem Sie nun einige wichtige Adobe Experience Cloud-Lösungen in Ihrer Entwicklungsumgebung implementiert haben, ist es Zeit, den Veröffentlichungs-Workflow kennenzulernen.
+
+
+>[!WARNING]
+>
+> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de)**
+> * Platform Launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
@@ -61,7 +66,7 @@ In einem realen Szenario würde nun Ihr QA-Team die Änderungen in der Staging-B
 
    ![Wechseln Sie zur Seite „Umgebungen“ und klicken Sie, um das Modal zu öffnen](images/publishing-getStagingCode.png)
 
-1. Klicken Sie auf das Kopiersymbol ![Kopiersymbol](images/launch-copyIcon.png), um den Einbettungscode in die Zwischenablage zu kopieren.
+1. Klicken Sie auf das Kopiersymbol ![Kopiersymbol](images/launch-copyIcon.png), um den Einbettungs-Code in die Zwischenablage zu kopieren.
 
 1. Klicken Sie auf **[!UICONTROL Schließen]**, um das Modal zu schließen
 
@@ -69,13 +74,13 @@ In einem realen Szenario würde nun Ihr QA-Team die Änderungen in der Staging-B
 
 1. Öffnen Sie die [Demosite „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html) in Ihrem Chrome-Browser.
 
-1. Öffnen Sie die Erweiterung [Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) indem Sie auf das Symbol ![Debugger-Symbol](images/icon-debugger.png) klicken
+1. Öffnen Sie die Erweiterung [Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) indem Sie auf das Symbol ![Debugger](images/icon-debugger.png) klicken
 
    ![Klicken Sie auf das Debugger-Symbol](images/switchEnvironments-openDebugger.png)
 
 1. Navigieren Sie zur Registerkarte „Tools“.
 
-1. Fügen Sie im Abschnitt **[!UICONTROL Adobe-Launch > Launch-Einbettungs-Code ersetzen]** den Einbettungs-Code für das Staging in die Zwischenablage ein
+1. Fügen Sie im Abschnitt **[!UICONTROL Adobe Launch > Einbettungs-Code für Launch ersetzen]** den Einbettungs-Code für das Staging in die Zwischenablage ein
 1. Schalten Sie den **[!UICONTROL Apply across luma.enablementadobe.com]** ein
 
 1. Klicken Sie auf das Diskettensymbol, um zu speichern.
@@ -102,11 +107,11 @@ Sobald Ihr QA-Team die Änderungen in der Staging-Umgebung überprüft und best�
 
 1. Die Bibliothek wird jetzt in der Spalte [!UICONTROL Genehmigt] im nicht erstellten Status (gelber Punkt) angezeigt:
 
-1. Öffnen Sie das Dropdown-Menü und wählen Sie **[!UICONTROL Erstellen und Publish in Produktion]**:
+1. Öffnen Sie das Dropdown-Menü und wählen Sie **[!UICONTROL Erstellen und in Produktion veröffentlichen]**:
 
    ![Klicken Sie auf „Erstellen und in Produktion veröffentlichen“](images/publishing-buildAndPublishToProduction.png)
 
-1. Klicken Sie im Dialogfeld auf **&#x200B;**&#x200B;Publish:
+1. Klicken Sie **[!UICONTROL Dialogfeld auf]** Veröffentlichen“:
 
    ![Klicken Sie auf Veröffentlichen](images/publishing-publish.png)
 

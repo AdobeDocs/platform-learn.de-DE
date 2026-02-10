@@ -2,10 +2,10 @@
 title: Hinzufügen des Einbettungs-Codes
 description: Erfahren Sie, wie Sie die Einbettungs-Codes Ihrer Tag-Eigenschaft abrufen und in Ihrer Website implementieren können. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 45%
+source-wordcount: '1069'
+ht-degree: 43%
 
 ---
 
@@ -13,12 +13,17 @@ ht-degree: 45%
 
 In dieser Lektion implementieren Sie den asynchronen Einbettungs-Code der Entwicklungsumgebung Ihrer Tag-Eigenschaft. Auf dem Weg lernen Sie zwei Hauptkonzepte von Tags kennen: Umgebungen und Einbettungs-Codes.
 
+
+>[!WARNING]
+>
+> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
-> * Platform launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * Platform launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de)**
+> * Platform Launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
+> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
@@ -30,9 +35,9 @@ Am Ende dieser Lektion können Sie:
 * Hinzufügen eines Tag-Einbettungs-Codes zu einem HTML-Dokument
 * Erklären Sie die optimale Position des Tag-Einbettungs-Codes in Bezug auf anderen Code im `<head>` eines HTML-Dokuments
 
-## Kopieren des Einbettungscodes
+## Kopieren des Einbettungs-Codes
 
-Der Einbettungs-Code ist ein `<script>`-Tag, das Sie auf Ihren Web-Seiten einfügen, um die in Tags erstellte Logik zu laden und auszuführen. Wenn Sie die Bibliothek asynchron laden, lädt der Browser weiterhin die Seite, ruft die Tag-Bibliothek ab und führt sie parallel aus. In diesem Fall ist nur ein Einbettungscode vorhanden, den Sie in den `<head>` einfügen. (Wenn Tags synchron bereitgestellt werden, gibt es zwei Einbettungs-Codes, einen, den Sie in die `<head>` einfügen, und einen anderen, den Sie vor die `</body>` stellen.)
+Der Einbettungs-Code ist ein `<script>`-Tag, das Sie auf Ihren Web-Seiten einfügen, um die in Tags erstellte Logik zu laden und auszuführen. Wenn Sie die Bibliothek asynchron laden, lädt der Browser weiterhin die Seite, ruft die Tag-Bibliothek ab und führt sie parallel aus. In diesem Fall ist nur ein Einbettungs-Code vorhanden, den Sie in den `<head>` einfügen. (Wenn Tags synchron bereitgestellt werden, gibt es zwei Einbettungs-Codes, einen, den Sie in die `<head>` einfügen, und einen anderen, den Sie vor die `</body>` stellen.)
 
 Klicken Sie im Eigenschaftenübersichtsbildschirm im linken Navigationsbereich auf **[!UICONTROL Umgebungen]**, um zur Seite „Umgebungen“ zu gelangen. Beachten Sie, dass die Entwicklungs-, Staging- und Produktionsumgebungen für Sie erstellt wurden.
 
@@ -44,25 +49,25 @@ Tags ermöglichen zusätzliche Entwicklungsumgebungen, was in großen Organisati
 
 Dies sind die einzigen Umgebungen, die wir zum Abschluss des Tutorials benötigen. Umgebungen ermöglichen es Ihnen, verschiedene funktionierende Versionen Ihrer Tag-Bibliotheken unter verschiedenen URLs zu hosten, sodass Sie neue Funktionen sicher hinzufügen und sie den richtigen Benutzern (z. B. Entwicklern, QA-Technikern, der Öffentlichkeit usw.) zur richtigen Zeit zur Verfügung stellen können.
 
-Kopieren wir nun den Einbettungscode:
+Kopieren wir nun den Einbettungs-Code:
 
-1. Klicken Sie in **[!UICONTROL Zeile]** Entwicklung“ auf das Symbol „Installieren![&#x200B; (](images/launch-installIcon.png)), um das Modal zu öffnen.
+1. Klicken Sie in **[!UICONTROL Zeile]** Entwicklung“ auf das Symbol „Installieren![ (](images/launch-installIcon.png)), um das Modal zu öffnen.
 
 1. Beachten Sie, dass Tags standardmäßig auf die asynchronen Einbettungs-Codes gesetzt werden
 
-1. Klicken Sie auf das Kopiersymbol ![Kopiersymbol](images/launch-copyIcon.png), um den Einbettungscode in die Zwischenablage zu kopieren.
+1. Klicken Sie auf das Kopiersymbol ![Kopiersymbol](images/launch-copyIcon.png), um den Einbettungs-Code in die Zwischenablage zu kopieren.
 
 1. Klicken Sie auf **[!UICONTROL Schließen]**, um das Modal zu schließen.
 
    ![Installationssymbol](images/launch-copyInstallCode.png)
 
-## Implementieren des Einbettungscodes im `<head>` der HTML-Beispielseite
+## Implementieren des Einbettungs-Codes im `<head>` der HTML-Beispielseite
 
-Der Einbettungscode sollte im `<head>`-Element aller HTML-Seiten implementiert werden, die die Eigenschaft gemeinsam nutzen werden. Möglicherweise verfügen Sie über eine oder mehrere Vorlagendateien, die die `<head>` auf der gesamten Site global steuern. Dies macht das Hinzufügen von Tags zu einem unkomplizierten Prozess.
+Der Einbettungs-Code sollte im `<head>`-Element aller HTML-Seiten implementiert werden, die die Eigenschaft gemeinsam nutzen werden. Möglicherweise verfügen Sie über eine oder mehrere Vorlagendateien, die die `<head>` auf der gesamten Site global steuern. Dies macht das Hinzufügen von Tags zu einem unkomplizierten Prozess.
 
 Falls noch nicht geschehen, kopieren Sie den Beispiel-HTML-Seiten-Code und fügen Sie ihn in einen Code-Editor ein. [Brackets](https://brackets.io/) ist ein kostenloser Open-Source-Editor, falls Sie einen benötigen.
 
-+++HTML-Beispiel-Seiten-Code
++++HTML-Seiten-Code als Beispiel
 
 ```html
 <!doctype html>
@@ -104,14 +109,14 @@ Falls noch nicht geschehen, kopieren Sie den Beispiel-HTML-Seiten-Code und füge
 <body>
     <h1>Tags: Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/de-DE/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
 </body>
 </html>
 ```
 
 +++
 
-Ersetzen Sie den vorhandenen Einbettungscode in Zeile 34 (oder den umliegenden Zeilen) durch den Code in der Zwischenablage und speichern Sie die Seite. Öffnen Sie die Seite jetzt in einem Webbrowser. Wenn Sie die Seite mit dem `file://`-Protokoll laden, müssen Sie in Ihrem Code-Editor „https:“ am Anfang der Einbettungscode-URL hinzufügen). Die Zeilen 33 bis 36 Ihrer Beispielseite sollten etwa wie folgt aussehen:
+Ersetzen Sie den vorhandenen Einbettungs-Code in Zeile 34 (oder den umliegenden Zeilen) durch den Code in der Zwischenablage und speichern Sie die Seite. Öffnen Sie die Seite jetzt in einem Webbrowser. Wenn Sie die Seite mit dem `file://`-Protokoll laden, müssen Sie in Ihrem Code-Editor „https:“ am Anfang der Einbettungscode-URL hinzufügen). Die Zeilen 33 bis 36 Ihrer Beispielseite sollten etwa wie folgt aussehen:
 
 ```html
     <!--Tags Header Embed Code: REPLACE LINE 39 WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
@@ -122,15 +127,15 @@ Ersetzen Sie den vorhandenen Einbettungscode in Zeile 34 (oder den umliegenden 
 Öffnen Sie die Entwicklertools Ihres Webbrowsers und rufen Sie die Registerkarte „Netzwerk“ auf. An dieser Stelle sollte ein 404-Fehler für die Tag-Umgebungs-URL angezeigt werden:
 ![404-Fehler](images/samplepage-404.png)
 
-Der 404-Fehler wird erwartet, da Sie noch keine Bibliothek in dieser Tags-Umgebung erstellt haben. Hierzu kommen wir in der nächsten Lektion. Wenn anstelle eines 404-Fehlers die Meldung „Fehlgeschlagen“ angezeigt wird, haben Sie wahrscheinlich vergessen, das `https://`-Protokoll im Einbettungscode hinzuzufügen. Sie müssen das `https://`-Protokoll nur angeben, wenn Sie die Beispielseite mit dem `file://`-Protokoll laden. Nehmen Sie die Änderung vor und laden Sie die Seite neu, bis der 404-Fehler angezeigt wird.
+Der 404-Fehler wird erwartet, da Sie noch keine Bibliothek in dieser Tags-Umgebung erstellt haben. Hierzu kommen wir in der nächsten Lektion. Wenn anstelle eines 404-Fehlers die Meldung „Fehlgeschlagen“ angezeigt wird, haben Sie wahrscheinlich vergessen, das `https://`-Protokoll im Einbettungs-Code hinzuzufügen. Sie müssen das `https://`-Protokoll nur angeben, wenn Sie die Beispielseite mit dem `file://`-Protokoll laden. Nehmen Sie die Änderung vor und laden Sie die Seite neu, bis der 404-Fehler angezeigt wird.
 
 ## Best Practices für die Implementierung von Tags
 
 Sehen wir uns einige der Best Practices für die Implementierung von Tags an, die auf der Beispielseite demonstriert werden:
 
-* **Daten-Layer**:
+* **Datenschicht**:
 
-   * Es *dringend*, auf Ihrer Site eine Datenschicht zu erstellen, die alle Attribute enthält, die zum Ausfüllen von Variablen in Analytics, Target und anderen Marketing-Lösungen erforderlich sind. Diese Beispielseite enthält nur einen sehr einfachen Daten-Layer. Ein echter Daten-Layer kann viele weitere Details über Seite, Besucher, Warenkorbdetails usw. enthalten. Weitere Informationen zu Daten-Layern finden Sie in [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf).
+   * Es *dringend*, auf Ihrer Site eine Datenschicht zu erstellen, die alle Attribute enthält, die zum Ausfüllen von Variablen in Analytics, Target und anderen Marketing-Lösungen erforderlich sind. Diese Beispielseite enthält nur eine sehr einfache Datenschicht. Eine echte Datenschicht kann viele weitere Details über Seite, Besucher, Warenkorbdetails usw. enthalten. Weitere Informationen zu Datenschichten finden Sie in [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf).
 
    * Definieren Sie Ihre Datenschicht vor dem Tag-Einbettungs-Code, um zu maximieren, was Sie mit Experience Cloud-Lösungen tun können.
 

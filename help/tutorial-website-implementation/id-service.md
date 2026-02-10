@@ -3,25 +3,30 @@ title: Hinzufügen des Adobe Experience Platform Identity Services mit Tags
 description: Erfahren Sie, wie Sie die Adobe Experience Platform Identity Service-Erweiterung hinzufügen und Kunden-IDs mit der Aktion zum Festlegen von Kunden-IDs erfassen. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1945'
-ht-degree: 65%
+source-wordcount: '1977'
+ht-degree: 62%
 
 ---
 
 # Adobe Experience Platform Identity Service hinzufügen
 
-Diese Lektion führt Sie durch die Schritte, die zur Implementierung der [Adobe Experience Platform Identity Service-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de) und zum Senden von Kunden-IDs erforderlich sind.
+Diese Lektion führt Sie durch die Schritte, die zur Implementierung der [Adobe Experience Platform Identity Service-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) und zum Senden von Kunden-IDs erforderlich sind.
 
 Der [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de) legt eine gemeinsame Besucher-ID für alle Adobe-Lösungen fest, um Experience Cloud-Funktionen wie die gemeinsame Nutzung von Audiences zwischen Lösungen zu ermöglichen. Sie können auch eigene Kunden-IDs an den Service senden, um geräteübergreifendes Targeting und die Integration in Ihr CRM (Customer Relationship Management)-System zu ermöglichen.
+
+
+>[!WARNING]
+>
+> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform Launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de)**
+> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
@@ -73,7 +78,7 @@ Die Identity Service-Erweiterung ist eine der wenigen Tag-Erweiterungen, die ein
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion &#x200B;](switch-environments.md).
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion ](switch-environments.md).
 
 1. Auf der Registerkarte Zusammenfassung des Debuggers sollte der Abschnitt Tags anzeigen, dass die Adobe Experience Platform Identity Service-Erweiterung implementiert ist.
 
@@ -90,14 +95,13 @@ Die Identity Service-Erweiterung ist eine der wenigen Tag-Erweiterungen, die ein
    1. Erweitern Sie „`Cookies`“ auf der linken Seite.
    1. Klicken Sie auf die Domain `https://luma.enablementadobe.com`.
    1. Suchen Sie auf der rechten Seite nach dem „AMCV_“-Cookie. Möglicherweise sehen Sie mehrere , seit Sie die Luma-Site geladen haben, indem Sie sowohl ihre hartcodierte Tag-Eigenschaft als auch ihre eigene Eigenschaft zugeordnet haben.
-
       ![Überprüfen des „AMCV_“-Cookies](images/idservice-AMCVCookie.png)
 
 Das ist alles! Sie haben Ihre erste Erweiterung hinzugefügt! Weitere Informationen zu den Konfigurationsoptionen des Identity Service finden Sie in [der Dokumentation](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=de).
 
 ## Senden von Kunden-IDs
 
-Als Nächstes senden Sie eine [Kunden-ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=de) an den Identity Service. Dadurch können Sie [Ihr CRM in Experience Cloud integrieren](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=de) und Besucher geräteübergreifend verfolgen.
+Als Nächstes senden Sie eine [Kunden-ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) an den Identity Service. Dadurch können Sie [Ihr CRM in Experience Cloud integrieren](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=de) und Besucher geräteübergreifend verfolgen.
 
 In der früheren Lektion [Hinzufügen von Datenelementen, Regeln und Bibliotheken](add-data-elements-rules.md) haben Sie ein Datenelement erstellt und in einer Regel verwendet. Jetzt werden Sie dieselben Methoden verwenden, um eine Kunden-ID zu senden, wenn der Besucher authentifiziert wird.
 
@@ -157,7 +161,7 @@ Indem Sie den Authentifizierungsstatus des Benutzers kennen, wissen Sie, wann ei
 
 ### Hinzufügen einer Regel zum Senden der Kunden-IDs
 
-Adobe Experience Platform Identity Service übergibt die Kunden-IDs in Regeln mit der Aktion „Festlegen von Kunden-IDs“.  Erstellen Sie nun eine Regel, die diese Aktion auslöst, wenn der Besucher authentifiziert wird.
+Der Adobe Experience Platform Identity Service übergibt die Kunden-IDs in Regeln mithilfe einer Aktion namens „Festlegen von Kunden-IDs“.  Erstellen Sie nun eine Regel, die diese Aktion auslöst, wenn der Besucher authentifiziert wird.
 
 **Hinzufügen einer Regel zum Senden der Kunden-IDs**
 
@@ -196,7 +200,7 @@ Adobe Experience Platform Identity Service übergibt die Kunden-IDs in Regel
       ![Authentifizierungsstatus festlegen](images/idservice-customerId-authStateCondition.png)
 
 1. Stellen Sie sicher, dass der Operator `Equals` lautet.
-1. Geben Sie im Textfeld „Angemeldet“ ein, wodurch die Regel ausgelöst wird, sobald das Datenelement „Authentifizierungsstatus“ den Wert „Angemeldet“ aufweist.
+1. Geben Sie in das Textfeld „login“ ein, was dazu führt, dass die Regel ausgelöst wird, wenn das Datenelement „Authentifizierungsstatus“ den Wert „logged in“ aufweist
 
 1. Klicken Sie **[!UICONTROL Änderungen beibehalten]**
 
@@ -229,7 +233,7 @@ Um Ihre Arbeit zu überprüfen, melden Sie sich bei der Site „Luma“ an, um d
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 

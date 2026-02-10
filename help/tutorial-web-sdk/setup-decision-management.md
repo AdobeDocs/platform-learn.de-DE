@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2543'
 ht-degree: 3%
 
 ---
@@ -19,6 +19,10 @@ Erfahren Sie, wie Sie die Entscheidungs-Management-Funktionen von Adobe Journey 
 
 In diesem Tutorial können Journey Optimizer-Benutzende Entscheidungs-Management-Funktionen verwenden, die die Personalisierung und Relevanz ihrer Kundeninteraktionen verbessern.
 
+
+>[!WARNING]
+>
+> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 ![Web-SDK und Adobe Analytics-Diagramm](assets/dc-websdk-ajo.png)
 
@@ -56,7 +60,7 @@ Ereignisbasierte Angebote werden derzeit in Adobe Journey Optimizer nicht unters
 
 ## Zugriff auf das Entscheidungs-Management gewähren
 
-Um Zugriff auf die Funktionen des Entscheidungs-Managements zu gewähren, müssen Sie ein **Produktprofil** erstellen und den Benutzern die entsprechenden Berechtigungen zuweisen. [&#x200B; Weitere Informationen zur Verwaltung von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt &#x200B;](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Um Zugriff auf die Funktionen des Entscheidungs-Managements zu gewähren, müssen Sie ein **Produktprofil** erstellen und den Benutzern die entsprechenden Berechtigungen zuweisen. [ Weitere Informationen zur Verwaltung von Journey Optimizer-Benutzern und -Berechtigungen finden Sie in diesem Abschnitt ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Konfigurieren des Datenstroms
 
@@ -76,7 +80,7 @@ So konfigurieren Sie Offer Decisioning im Datenstrom:
 
    ![Service bearbeiten](assets/decisioning-edit-datastream.png)
 
-1. Aktivieren Sie das Kontrollkästchen **&#x200B;**&#x200B;Offer Decisioning.
+1. Aktivieren Sie das Kontrollkästchen **** Offer Decisioning.
 
    ![SCREENSHOT HINZUFÜGEN](assets/decisioning-check-offer-box.png)
 
@@ -175,7 +179,7 @@ Gehen Sie wie folgt vor, um die Platzierung zu erstellen:
 1. Nachdem die Platzierung erstellt wurde, wird sie in der Liste der Platzierungen angezeigt.
 1. Wählen Sie die Zeile aus, die Ihre neue Platzierungs-ID enthält, und notieren Sie sich die Platzierungs-ID, da dies für die Konfiguration in Ihrem Entscheidungsumfang erforderlich sein kann.
 
-   ![Siehe Platzierungs-ID &#x200B;](assets/decisioning-placement-id.png)
+   ![Siehe Platzierungs-ID ](assets/decisioning-placement-id.png)
 
 ### Entscheidungsregeln für den Treuestatus
 
@@ -240,7 +244,7 @@ Gehen Sie wie **vor, um das erste** Angebot“ zu erstellen:
 
    ![Angebotsdetails hinzufügen](assets/decisioning-add-offer-details.png)
 
-1. Jetzt müssen Sie &quot;**&quot; hinzufügen** um festzulegen, wo das Angebot angezeigt wird. Wählen wir den **Webkanal**. Wählen wir auch das zuvor konfigurierte &quot;*Homepage-Banner&#x200B;***aus**. Die ausgewählte **Platzierung** ist vom Typ HTML, sodass Sie HTML-, JSON- oder TEXT-Inhalte direkt zum Editor hinzufügen können, um das Angebot mithilfe des **Benutzerdefiniert**-Optionsfelds zu erstellen.
+1. Jetzt müssen Sie &quot;**&quot; hinzufügen** um festzulegen, wo das Angebot angezeigt wird. Wählen wir den **Webkanal**. Wählen wir auch das zuvor konfigurierte &quot;*Homepage-Banner***aus**. Die ausgewählte **Platzierung** ist vom Typ HTML, sodass Sie HTML-, JSON- oder TEXT-Inhalte direkt zum Editor hinzufügen können, um das Angebot mithilfe des **Benutzerdefiniert**-Optionsfelds zu erstellen.
 
    ![Darstellungsdetails hinzufügen](assets/decisioning-add-representation-details.png)
 
@@ -339,7 +343,7 @@ Um mit dem Testen zu beginnen, wählen Sie die **Simulationen** aus dem Menü **
 
 ### Testen von Treueangeboten
 
-1. Testprofil auswählen, das für die Simulation verwendet werden soll. Klicken Sie **Profil verwalten**. [Um ein neues Testprofil für Angebotstests zu erstellen oder festzulegen, folgen Sie diesem Handbuch](https://experienceleague.adobe.com/de/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Testprofil auswählen, das für die Simulation verwendet werden soll. Klicken Sie **Profil verwalten**. [Um ein neues Testprofil für Angebotstests zu erstellen oder festzulegen, folgen Sie diesem Handbuch](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +375,7 @@ Die Erweiterung **Adobe Experience Platform Debugger**, die für Chrome und Fire
 
 Sie können den Debugger auf der Luma-Site verwenden, um die Entscheidungslogik in der Produktion zu validieren. Diese Validierung empfiehlt sich, sobald der Anwendungsfall „Treueprämien“ ausgeführt wird, um sicherzustellen, dass alles korrekt konfiguriert ist.
 
-[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/debugger/overview).
+[Hier erfahren Sie, wie Sie den Debugger in Ihrem Browser mithilfe des Handbuchs konfigurieren](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 So starten Sie die Validierung mit dem Debugger:
 
@@ -402,4 +406,4 @@ So starten Sie die Validierung mit dem Debugger:
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

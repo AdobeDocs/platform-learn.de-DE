@@ -2,16 +2,21 @@
 title: Implementieren von Experience Cloud-Integrationen mit Tags
 description: Erfahren Sie, wie Sie die Integrationen von Zielgruppen, A4T und Kundenattributen in Ihrer Adobe Experience Cloud-Implementierung überprüfen. Diese Lektion ist Teil des Tutorials Implementieren von Experience Cloud in Websites .
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 85%
+source-wordcount: '1231'
+ht-degree: 83%
 
 ---
 
 # Experience Cloud-Integrationen
 
 In dieser Lektion werden Sie die wichtigsten Integrationen zwischen den soeben implementierten Lösungen überprüfen. Die gute Nachricht ist, dass Sie mit dem Abschluss der früheren Lektionen bereits die Code-Aspekte der Integrationen implementiert haben! In dieser Lektion müssen Sie also lediglich lesen und überprüfen.
+
+
+>[!WARNING]
+>
+> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 ## Lernziele
 
@@ -28,8 +33,8 @@ Bevor Sie die Anleitungen in dieser Lektion befolgen, sollten Sie alle vorherige
 >
 >Es gibt viele Anforderungen an Benutzerberechtigungen, Kontokonfigurationen und Bereitstellungsschritte, die erforderlich sind, um diese Integrationen vollständig zu nutzen, und die den Rahmen dieses Tutorials sprengen. Wenn Sie diese Integrationen noch nicht in Ihrer aktuellen Experience Cloud-Implementierung verwenden, sollten Sie Folgendes berücksichtigen:
 >
->* Überprüfen Sie die vollständigen Anforderungen der [Core Services-Integrationen.](https://experienceleague.adobe.com/de/docs/core-services/interface/services/getting-started)
->* Überprüfen Sie die vollständigen Anforderungen für die [Integration von Analytics for Target](https://experienceleague.adobe.com/de/docs/target/using/integrate/a4t/before-implement)
+>* Überprüfen Sie die vollständigen Anforderungen der [Core Services-Integrationen.](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
+>* Überprüfen Sie die vollständigen Anforderungen für die [Integration von Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
 
 ## Zielgruppen
 
@@ -49,7 +54,7 @@ Diese Überprüfungsschritte konzentrieren sich auf den wichtigsten Teil, der in
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -71,7 +76,7 @@ Diese Überprüfungsschritte konzentrieren sich auf den wichtigsten Teil, der in
 
 ## Analytics for Target (A4T)
 
-Mit der Integration von [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de) können Sie Ihre Analytics-Daten als Quelle für die Berichterstellungsmetriken in Target nutzen.
+Mit der Integration von [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) können Sie Ihre Analytics-Daten als Quelle für die Berichterstellungsmetriken in Target nutzen.
 
 Die wichtigsten Voraussetzungen für die Implementierung von A4T – die Sie bereits erfüllt haben – sind:
 
@@ -88,7 +93,7 @@ Der beste Weg, die A4T-Integration zu validieren, besteht darin, eine Target-Akt
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
