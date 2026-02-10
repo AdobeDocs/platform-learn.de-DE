@@ -57,7 +57,7 @@ In dieser Übung erstellen Sie einen Identity-Namespace für das benutzerdefinie
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Identitäten in Adobe Experience Platform zu erfahren:
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422772?captions=ger&learn=on&enablevpops)
 
 Erstellen Sie jetzt einen Namespace für die Luma CRM-ID:
 
