@@ -37,7 +37,7 @@ Geben Sie den Namen ein: `Final Deliverables` und drücken Sie **Enter**. Dieser
 
 >[!NOTE]
 >
->Falls Sie es vorziehen, das neue Asset nicht selbst zu erstellen, können Sie die fertige Version ([) ](./images/timetravelnow.png).
+>Falls Sie es vorziehen, das neue Asset nicht selbst zu erstellen, können Sie die fertige Version ([) &#x200B;](./images/timetravelnow.png).
 
 Navigieren Sie zu [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}. Geben Sie den `a neon rabbit running very fast through space` ein und klicken Sie auf **Generieren**.
 
