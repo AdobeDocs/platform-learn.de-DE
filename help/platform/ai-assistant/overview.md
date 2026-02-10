@@ -38,7 +38,7 @@ Richten Sie sich mit dem KI-Assistenten ein und lernen Sie seine grundlegenden F
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Zugriff auf den KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1770666472991" alt="Zugriff auf den KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475928/?captions=ger&format=jpeg&nocache=1770666472991" alt="Zugriff auf den KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Richten Sie sich mit dem KI-Assistenten ein und lernen Sie seine grundlegenden F
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="Verwenden des Auffindbarkeitsbereichs im KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1770666473011" alt="Verwenden des Auffindbarkeitsbereichs im KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440971/?captions=ger&format=jpeg&nocache=1770666473011" alt="Verwenden des Auffindbarkeitsbereichs im KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ Richten Sie sich mit dem KI-Assistenten ein und lernen Sie seine grundlegenden F
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="Validieren von Antworten vom KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1770666473002" alt="Validieren von Antworten vom KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441748/?captions=ger&format=jpeg&nocache=1770666473002" alt="Validieren von Antworten vom KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -350,7 +350,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="Abrufen operativer Einblicke mit dem KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1770666474551" alt="Abrufen operativer Einblicke mit dem KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444041/?captions=ger&format=jpeg&nocache=1770666474551" alt="Abrufen operativer Einblicke mit dem KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -373,7 +373,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="KI-Assistent - Anwendungsfall für die Audience-Bereinigung" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1770666474555" alt="KI-Assistent - Anwendungsfall für die Audience-Bereinigung"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441996/?captions=ger&format=jpeg&nocache=1770666474555" alt="KI-Assistent - Anwendungsfall für die Audience-Bereinigung"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -396,7 +396,7 @@ Es gibt viele andere Anwendungsfälle, in denen KI-Assistent Ihnen bei der Verwa
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="Wirkungsanalyse mit KI-Assistent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1770666474559" alt="Wirkungsanalyse mit KI-Assistent"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441689/?captions=ger&format=jpeg&nocache=1770666474559" alt="Wirkungsanalyse mit KI-Assistent"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -432,7 +432,7 @@ Der KI-Assistent ist ein nützliches Tool, um neue Produkte zu lernen oder schne
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="Erfahren Sie mehr über Experience Platform-Programme mit dem KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1770666474659" alt="Erfahren Sie mehr über Experience Platform-Programme mit dem KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441033/?captions=ger&format=jpeg&nocache=1770666474659" alt="Erfahren Sie mehr über Experience Platform-Programme mit dem KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -455,7 +455,7 @@ Der KI-Assistent ist ein nützliches Tool, um neue Produkte zu lernen oder schne
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="Verwenden des KI-Assistenten zur Verkürzung der Onboarding-Zeit" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1770666474665" alt="Verwenden des KI-Assistenten zur Verkürzung der Onboarding-Zeit"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475939/?captions=ger&format=jpeg&nocache=1770666474665" alt="Verwenden des KI-Assistenten zur Verkürzung der Onboarding-Zeit"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -491,7 +491,7 @@ Fehlerbehebung und Öffnen von Kundenunterstützungs-Tickets.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="Produktsupport-Agent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1770666474768" alt="Produktsupport-Agent"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443192/?captions=ger&format=jpeg&nocache=1770666474768" alt="Produktsupport-Agent"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -549,7 +549,7 @@ Erfahren Sie mehr über die Sicherheitsfunktionen im KI-Assistenten.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="Sicherheitsübersicht des KI-Assistenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1770666475529" alt="Sicherheitsübersicht des KI-Assistenten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441089/?captions=ger&format=jpeg&nocache=1770666475529" alt="Sicherheitsübersicht des KI-Assistenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
