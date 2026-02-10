@@ -11,7 +11,7 @@ ht-degree: 23%
 
 # Wechseln von Tag-Umgebungen mit dem Experience Cloud Debugger
 
-In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob), um die Tag-Eigenschaft auf der Demo-Site [Luma“ hartcodiert ](https://luma.enablementadobe.com/content/luma/us/en.html) Ihre eigene Eigenschaft zu ersetzen.
+In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob), um die Tag-Eigenschaft auf der Demo-Site [Luma“ hartcodiert &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) Ihre eigene Eigenschaft zu ersetzen.
 
 
 >[!WARNING]
@@ -39,7 +39,7 @@ Am Ende dieser Lektion können Sie:
 
 1. Öffnen Sie in Ihrer Tag-Eigenschaft die `Environments`
 
-1. Klicken Sie in **[!UICONTROL Zeile]** Entwicklung“ auf das Symbol „Installieren![, ](images/launch-installIcon.png) das Modal zu öffnen
+1. Klicken Sie in **[!UICONTROL Zeile]** Entwicklung“ auf das Symbol „Installieren![, &#x200B;](images/launch-installIcon.png) das Modal zu öffnen
 
 1. Klicken Sie auf das Kopiersymbol ![Kopiersymbol](images/launch-copyIcon.png), um den Einbettungs-Code in die Zwischenablage zu kopieren.
 

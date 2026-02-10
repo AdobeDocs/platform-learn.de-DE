@@ -78,7 +78,7 @@ Die Identity Service-Erweiterung ist eine der wenigen Tag-Erweiterungen, die ein
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion ](switch-environments.md).
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion &#x200B;](switch-environments.md).
 
 1. Auf der Registerkarte Zusammenfassung des Debuggers sollte der Abschnitt Tags anzeigen, dass die Adobe Experience Platform Identity Service-Erweiterung implementiert ist.
 
@@ -233,7 +233,7 @@ Um Ihre Arbeit zu überprüfen, melden Sie sich bei der Site „Luma“ an, um d
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 

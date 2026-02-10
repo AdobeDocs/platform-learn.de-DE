@@ -160,7 +160,7 @@ Nachdem Sie nun über die Eigenschaft verfügen, können Sie die Web-SDK mithilf
 1. Navigieren Sie **[!UICONTROL linken Navigationsbereich]** Erweiterungen“.
 1. Wechseln Sie zur Registerkarte **[!UICONTROL Katalog]**.
 1. Für Tags stehen viele Erweiterungen zur Verfügung. Katalog mit dem Begriff `Web SDK` filtern
-1. Klicken Sie in der Erweiterung **[!UICONTROL Adobe Experience Platform Web]** SDK **[!UICONTROL auf die Schaltfläche]**Installieren“
+1. Klicken Sie in der Erweiterung **[!UICONTROL Adobe Experience Platform Web]** SDK **[!UICONTROL auf die Schaltfläche]**&#x200B;Installieren“
    ![Installieren der Adobe Experience Platform Web SDK-Erweiterung](assets/websdk-property-addExtension.png)
 1. Es gibt mehrere Konfigurationen für die Web-SDK-Erweiterung, aber es gibt nur zwei, die wir für dieses Tutorial konfigurieren werden. Aktualisieren Sie die **[!UICONTROL Edge]** Domäne auf `data.enablementadobe.com`. Mit dieser Einstellung können Sie Erstanbieter-Cookies mit Ihrer Web SDK-Implementierung festlegen. Dies wird empfohlen. Später in dieser Lektion ordnen Sie eine Website in der `enablementadobe.com` Domain Ihrer Tag-Eigenschaft zu. Der CNAME für die `enablementadobe.com` Domain wurde bereits so konfiguriert, dass `data.enablementadobe.com` an Adobe-Server weiterleitet. Wenn Sie Web SDK auf Ihrer eigenen Website implementieren, müssen Sie einen CNAME für Ihre eigenen Datenerfassungszwecke erstellen, z. B. `data.YOUR_DOMAIN.com`
 1. Wählen Sie **[!UICONTROL Dropdown-]** „Datenstrom“ Ihren `Luma Platform Tutorial` Datenstrom aus.
@@ -475,6 +475,6 @@ Gut gemacht! Das waren eine Menge Informationen über Web SDK und Launch. An ein
 >Nachdem Sie die Lektion Streaming-Aufnahme abgeschlossen haben, können Sie die [!UICONTROL Prod]-Sandbox aus Ihrem `Luma Tutorial Platform`-Produktprofil entfernen
 
 
-Dateningenieure, wenn Sie möchten, können Sie zur Lektion [Ausführen von Abfragen“ ](run-queries.md).
+Dateningenieure, wenn Sie möchten, können Sie zur Lektion [Ausführen von Abfragen“ &#x200B;](run-queries.md).
 
-Datenarchitekten können mit „Zusammenführungsrichtlinien[ fortfahren](create-merge-policies.md).
+Datenarchitekten können mit „Zusammenführungsrichtlinien[&#x200B; fortfahren](create-merge-policies.md).

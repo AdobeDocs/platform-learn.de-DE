@@ -52,7 +52,7 @@ Am Ende dieser Lektion haben Sie folgende Möglichkeiten:
 
 * Eine Softwarelizenz, die die Ereignisweiterleitung enthält. Die Ereignisweiterleitung ist eine gebührenpflichtige Funktion der Datenerfassung. Weitere Informationen erhalten Sie von Ihrem Adobe Account Team.
 * Die Ereignisweiterleitung ist in Ihrer Experience Cloud-Organisation aktiviert.
-* Benutzerberechtigung für die Ereignisweiterleitung. (In [Admin Console](https://adminconsole.adobe.com/) unter dem Adobe Experience Platform Launch-Produkt Berechtigungselemente für[!UICONTROL Plattformen] > [!UICONTROL Edge] und alle [!UICONTROL Eigenschaftsrechte]). Nach der Gewährung [!UICONTROL  im linken Navigationsbereich ] Datenerfassungsoberfläche „Ereignisweiterleitung“ angezeigt werden:
+* Benutzerberechtigung für die Ereignisweiterleitung. (In [Admin Console](https://adminconsole.adobe.com/) unter dem Adobe Experience Platform Launch-Produkt Berechtigungselemente für[!UICONTROL Plattformen] > [!UICONTROL Edge] und alle [!UICONTROL Eigenschaftsrechte]). Nach der Gewährung [!UICONTROL &#x200B; im linken Navigationsbereich &#x200B;] Datenerfassungsoberfläche „Ereignisweiterleitung“ angezeigt werden:
   ![Eigenschaften der Ereignisweiterleitung](assets/event-forwarding-menu.png)
 
 * Adobe Experience Platform Web oder Mobile SDK ist so konfiguriert, dass Daten an Edge Network gesendet werden. Sie müssen die folgenden Lektionen dieses Tutorials abgeschlossen haben:
@@ -118,7 +118,7 @@ Wiederholen Sie diese Schritte für Staging- und Produktions-Datenströme, wenn 
 
 ## Weiterleiten von Daten von Platform Edge Network an eine Nicht-Adobe-Lösung
 
-In dieser Übung erfahren Sie, wie Sie ein Datenelement für die Ereignisweiterleitung einrichten, eine Regel für die Ereignisweiterleitung konfigurieren und mit dem Tool eines Drittanbieters namens „Webhook[site“ ](https://webhook.site/).
+In dieser Übung erfahren Sie, wie Sie ein Datenelement für die Ereignisweiterleitung einrichten, eine Regel für die Ereignisweiterleitung konfigurieren und mit dem Tool eines Drittanbieters namens „Webhook[site“ &#x200B;](https://webhook.site/).
 
 >[!NOTE]
 >
@@ -294,7 +294,7 @@ Erstellen Sie eine Bibliothek und erstellen Sie alle Änderungen an Ihrer Entwic
 
 Jetzt können Sie Ihre Ereignisweiterleitungseigenschaft mit dem Platform Debugger und Webhook.site überprüfen:
 
-1. Führen Sie die Schritte aus[ um die Tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Bibliothek auf der [Luma Demo-Site](https://luma.enablementadobe.com/content/luma/us/en/men.html) auf die Tag-Eigenschaft von Web SDK zu wechseln, der Sie Ihre Ereignisweiterleitungs-Eigenschaft im Datenstrom zugeordnet haben.
+1. Führen Sie die Schritte aus[&#x200B; um die Tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Bibliothek auf der [Luma Demo-Site](https://luma.enablementadobe.com/content/luma/us/en/men.html) auf die Tag-Eigenschaft von Web SDK zu wechseln, der Sie Ihre Ereignisweiterleitungs-Eigenschaft im Datenstrom zugeordnet haben.
 
 1. Bevor Sie die Seite neu laden, öffnen Sie im Experience Platform Debugger **[!UICONTROL Protokolle]** im linken Navigationsbereich
 

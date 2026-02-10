@@ -71,7 +71,7 @@ Im weiteren Verlauf dieser Lektion werden wir:
 
 1. Erstellen Sie eine weitere Regel mit der Aktion **[!UICONTROL Ereignis senden]** die das vollständige XDM-Objekt an Adobe Experience Platform Edge Network sendet.
 
-Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; ].
+Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; &#x200B;].
 
 In diesem Video erhalten Sie einen Überblick über den Prozess:
 
@@ -173,7 +173,7 @@ Beginnen Sie, indem Sie die Produktansichten auf der Produktdetailseite von Luma
 
 1. Wählen Sie **[!UICONTROL Regel hinzufügen]**
 1. Benennen Sie ihn [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
-1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
+1. Wählen Sie das Symbol ![+ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Core]**
 1. Wählen **[!UICONTROL unter „Ereignistyp]** die Option **[!UICONTROL Bibliothek geladen (Seitenanfang)]**
 1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]** die `20` aus. Dieser Reihenfolgenwert stellt sicher, dass die Regel _dem_ ausgeführt wird`all pages - library loaded - set global variables - 1` der die globale Konfiguration festlegt.
@@ -249,7 +249,7 @@ Ordnen wir nun unser Array dem XDM-Objekt zu:
 
 
 1. Erstellen Sie eine neue Regel mit dem Namen `ecommerce - library loaded - set shopping cart variables - 20`
-1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
+1. Wählen Sie das Symbol ![+ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Core]**
 1. Wählen **[!UICONTROL unter „Ereignistyp]** die Option **[!UICONTROL Bibliothek geladen (Seitenanfang)]**
 1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]** die folgende Option aus`20`

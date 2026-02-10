@@ -51,7 +51,7 @@ Dies sind die einzigen Umgebungen, die wir zum Abschluss des Tutorials benötige
 
 Kopieren wir nun den Einbettungs-Code:
 
-1. Klicken Sie in **[!UICONTROL Zeile]** Entwicklung“ auf das Symbol „Installieren![ (](images/launch-installIcon.png)), um das Modal zu öffnen.
+1. Klicken Sie in **[!UICONTROL Zeile]** Entwicklung“ auf das Symbol „Installieren![&#x200B; (](images/launch-installIcon.png)), um das Modal zu öffnen.
 
 1. Beachten Sie, dass Tags standardmäßig auf die asynchronen Einbettungs-Codes gesetzt werden
 

@@ -77,11 +77,11 @@ Nun, wenn Sie mit den Klaro-Konfigurationen fertig sind, erstellen Sie Tag-Regel
 * [!UICONTROL Ereignis]: [!UICONTROL Bibliothek geladen (Seitenanfang)] mit [!UICONTROL Erweiterte Optionen] > [!UICONTROL Reihenfolge] auf 1 gesetzt
 * [!UICONTROL Action]: [!UICONTROL Benutzerdefinierter Code], [!UICONTROL Language]: HTML zum Laden des CMP-Skripts.
 
-![CMP-Regel ](assets/consent-cmp-inject-rule-1.png)
+![CMP-Regel &#x200B;](assets/consent-cmp-inject-rule-1.png)
 
 Der benutzerdefinierte Code-Block sollte etwa wie folgt aussehen:
 
-![CMP-Regel ](assets/consent-cmp-inject-rule-2.png)
+![CMP-Regel &#x200B;](assets/consent-cmp-inject-rule-2.png)
 
 Speichern und erstellen Sie nun diese Regel in Ihrer Entwicklungsbibliothek. Überprüfen Sie, ob das Einverständnisbanner angezeigt wird, indem Sie die Tag-Bibliothek von der Luma-Site zu Ihrer eigenen wechseln. Auf der Website sollte ein CMP-Banner angezeigt werden, wie unten dargestellt. Um die Einverständnisberechtigung des aktuellen Besuchers zu überprüfen, können Sie folgenden Code-Ausschnitt in der Browser-Konsole verwenden.
 
@@ -209,7 +209,7 @@ Falls sich ein Besucher für das Opt-in entscheidet (Tracking-Cookies akzeptiere
 
    ![Opt-in-Aktion für Einverständnisregel](assets/consent-rule-optin-action.png)
 
-   An dieser Stelle ist zu beachten, dass [!UICONTROL  Aktion „Einverständnis festlegen] die erste Anfrage ist, die ausgeführt wird und eine Identität herstellt. Aus diesem Grund kann es wichtig sein, Identitäten bei der ersten Anfrage selbst zu synchronisieren. Die Identitätszuordnung kann zur Aktion [!UICONTROL Einverständnis festlegen“ hinzugefügt ], indem ein Identitätstyp-Datenelement übergeben wird.
+   An dieser Stelle ist zu beachten, dass [!UICONTROL &#x200B; Aktion „Einverständnis festlegen] die erste Anfrage ist, die ausgeführt wird und eine Identität herstellt. Aus diesem Grund kann es wichtig sein, Identitäten bei der ersten Anfrage selbst zu synchronisieren. Die Identitätszuordnung kann zur Aktion [!UICONTROL Einverständnis festlegen“ hinzugefügt &#x200B;], indem ein Identitätstyp-Datenelement übergeben wird.
 
 1. Wählen Sie **[!UICONTROL In Bibliothek speichern und erstellen]**:
 
@@ -222,7 +222,7 @@ Sobald Sie diese Regel eingerichtet haben, sollte die Ereignissammlung beginnen,
 ![Option „Einverständnisnachrichtenbesucher“](assets/consent-post-user-optin.png)
 
 
-Weitere Informationen zum Einverständnis in Web SDK finden Sie unter [Unterstützen von Voreinstellungen für das Einverständnis ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
+Weitere Informationen zum Einverständnis in Web SDK finden Sie unter [Unterstützen von Voreinstellungen für das Einverständnis &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
 Weitere Informationen zur Aktion [!UICONTROL Einverständnis festlegen] finden Sie unter [Einverständnis festlegen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).

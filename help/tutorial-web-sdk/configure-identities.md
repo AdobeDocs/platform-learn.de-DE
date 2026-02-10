@@ -29,7 +29,7 @@ Der [Adobe Experience Platform Identity Service](https://experienceleague.adobe.
 
 >[!NOTE]
 >
-> Zu Demonstrationszwecken werden in den Übungen in dieser Lektion die Identitätsdetails eines fiktiven Kunden erfasst, der bei der Demo-Site [Luma“ angemeldet ](https://luma.enablementadobe.com/content/luma/us/en.html), und zwar mithilfe der Anmeldeinformationen **Benutzer: `test@test.com` / Kennwort: test**.
+> Zu Demonstrationszwecken werden in den Übungen in dieser Lektion die Identitätsdetails eines fiktiven Kunden erfasst, der bei der Demo-Site [Luma“ angemeldet &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html), und zwar mithilfe der Anmeldeinformationen **Benutzer: `test@test.com` / Kennwort: test**.
 
 ## Lernziele
 

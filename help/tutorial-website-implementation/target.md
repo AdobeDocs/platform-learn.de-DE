@@ -191,7 +191,7 @@ Nachdem Sie nun die Target v2-Erweiterung hinzugefügt und die `Load Target`- un
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -321,7 +321,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -367,7 +367,7 @@ Im Folgenden finden Sie eine optionale Übung für Target Premium-Kunden, wenn 
 
 1. Navigieren Sie **[!UICONTROL Administration > Eigenschaften]**
 
-1. Identifizieren Sie die gewünschte Eigenschaft und klicken Sie auf die ****&lt;/>oder erstellen Sie eine neue Eigenschaft
+1. Identifizieren Sie die gewünschte Eigenschaft und klicken Sie auf die **&#x200B;**&lt;/>oder erstellen Sie eine neue Eigenschaft
 
 1. Kopieren Sie den Code-Ausschnitt aus dem `<script></script>` in die Zwischenablage
 
@@ -405,7 +405,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 **Überprüfen des Eigenschafts-Token-Parameters**
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -537,7 +537,7 @@ Derzeit sind benutzerdefinierte Parameter, die mit at.js 2.x-Anforderungen über
 
 1. Öffnen Sie die [Site „Luma“](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [ Lektion beschrieben](switch-environments.md)
+1. Stellen Sie sicher, dass der Debugger die Tag-Eigenschaft *Ihre* zuordnet, wie in der [&#x200B; Lektion beschrieben](switch-environments.md)
 
    ![Die Tag-Entwicklungsumgebung wird im Debugger angezeigt](images/switchEnvironments-debuggerOnWeRetail.png)
 
