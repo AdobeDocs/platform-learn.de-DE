@@ -33,8 +33,8 @@ Bevor Sie die Anleitungen in dieser Lektion befolgen, sollten Sie alle vorherige
 >
 >Es gibt viele Anforderungen an Benutzerberechtigungen, Kontokonfigurationen und Bereitstellungsschritte, die erforderlich sind, um diese Integrationen vollständig zu nutzen, und die den Rahmen dieses Tutorials sprengen. Wenn Sie diese Integrationen noch nicht in Ihrer aktuellen Experience Cloud-Implementierung verwenden, sollten Sie Folgendes berücksichtigen:
 >
->* Überprüfen Sie die vollständigen Anforderungen der [Core Services-Integrationen.](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
->* Überprüfen Sie die vollständigen Anforderungen für die [Integration von Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
+>* Überprüfen Sie die vollständigen Anforderungen der [Core Services-Integrationen.](https://experienceleague.adobe.com/de/docs/core-services/interface/services/getting-started)
+>* Überprüfen Sie die vollständigen Anforderungen für die [Integration von Analytics for Target](https://experienceleague.adobe.com/de/docs/target/using/integrate/a4t/before-implement)
 
 ## Zielgruppen
 
@@ -76,7 +76,7 @@ Diese Überprüfungsschritte konzentrieren sich auf den wichtigsten Teil, der in
 
 ## Analytics for Target (A4T)
 
-Mit der Integration von [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) können Sie Ihre Analytics-Daten als Quelle für die Berichterstellungsmetriken in Target nutzen.
+Mit der Integration von [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de) können Sie Ihre Analytics-Daten als Quelle für die Berichterstellungsmetriken in Target nutzen.
 
 Die wichtigsten Voraussetzungen für die Implementierung von A4T – die Sie bereits erfüllt haben – sind:
 

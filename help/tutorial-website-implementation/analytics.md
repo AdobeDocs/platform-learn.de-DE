@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # Hinzufügen von Adobe Analytics
 
-In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) und erstellen Regeln, um Daten an Adobe Analytics zu senden.
+In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de) und erstellen Regeln, um Daten an Adobe Analytics zu senden.
 
 
 >[!WARNING]
@@ -26,7 +26,7 @@ In dieser Lektion implementieren Sie die [Adobe Analytics-Erweiterung](https://
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform Launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de)**
 > * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
@@ -46,7 +46,7 @@ Es gibt viele Dinge, die für Analytics in Tags implementiert werden könnten. I
 
 Sie sollten bereits die Lektionen in [Konfigurieren von Tags](create-a-property.md) und [Hinzufügen des Identity Service](id-service.md) abgeschlossen haben.
 
-Darüber hinaus benötigen Sie mindestens eine Report Suite-ID sowie Ihren Trackingserver. Wenn Sie nicht über eine Report Suite für Tests/Entwicklung verfügen, die Sie für dieses Tutorial verwenden können, erstellen Sie eine. Weitere Hilfestellung und Anweisungen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Sie können Ihren Trackingserver aus Ihrer aktuellen Implementierung abrufen oder bei Ihrem Adobe-Berater oder Kundenbetreuer erfragen.
+Darüber hinaus benötigen Sie mindestens eine Report Suite-ID sowie Ihren Trackingserver. Wenn Sie nicht über eine Report Suite für Tests/Entwicklung verfügen, die Sie für dieses Tutorial verwenden können, erstellen Sie eine. Weitere Hilfestellung und Anweisungen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Sie können Ihren Trackingserver aus Ihrer aktuellen Implementierung abrufen oder bei Ihrem Adobe-Berater oder Kundenbetreuer erfragen.
 
 ## Hinzufügen der Analytics-Erweiterung
 
@@ -431,7 +431,7 @@ Sie werden in diesem Code zwei Plugins aufrufen, aber eines davon ist in der App
 
 Dieses Plugin soll verhindern, dass Werte fälschlicherweise im Code dupliziert werden, wenn ein Besucher eine Seite aktualisiert oder die Zurück-Schaltfläche des Browsers verwendet, um zu einer Seite zurückzukehren, auf der ein Wert festgelegt wurde. In dieser Lektion verwenden Sie es, um zu verhindern, dass das `clickthrough`-Ereignis dupliziert wird.
 
-Der Code für dieses Plugin befindet sich in der [Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html) und ist hier zum einfachen Kopieren/Einfügen ebenfalls aufgeführt.
+Der Code für dieses Plugin befindet sich in der [Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=de) und ist hier zum einfachen Kopieren/Einfügen ebenfalls aufgeführt.
 
 1. Kopieren Sie den folgenden Code:
 

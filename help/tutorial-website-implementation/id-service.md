@@ -12,7 +12,7 @@ ht-degree: 62%
 
 # Adobe Experience Platform Identity Service hinzufügen
 
-Diese Lektion führt Sie durch die Schritte, die zur Implementierung der [Adobe Experience Platform Identity Service-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) und zum Senden von Kunden-IDs erforderlich sind.
+Diese Lektion führt Sie durch die Schritte, die zur Implementierung der [Adobe Experience Platform Identity Service-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de) und zum Senden von Kunden-IDs erforderlich sind.
 
 Der [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de) legt eine gemeinsame Besucher-ID für alle Adobe-Lösungen fest, um Experience Cloud-Funktionen wie die gemeinsame Nutzung von Audiences zwischen Lösungen zu ermöglichen. Sie können auch eigene Kunden-IDs an den Service senden, um geräteübergreifendes Targeting und die Integration in Ihr CRM (Customer Relationship Management)-System zu ermöglichen.
 
@@ -26,7 +26,7 @@ Der [Adobe Experience Platform Identity Service](https://experienceleague.adobe.
 >Adobe Experience Platform Launch wird als eine Suite von Datenerfassungstechnologien in Adobe Experience Platform integriert. In der Benutzeroberfläche wurden mehrere terminologische Änderungen eingeführt, die Sie bei der Verwendung dieses Inhalts beachten sollten:
 >
 > * Platform Launch (Client-seitig) ist jetzt **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)**
-> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform Launch Server Side ist jetzt **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=de)**
 > * Edge-Konfigurationen sind jetzt **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=de)**
 
 ## Lernziele
@@ -101,7 +101,7 @@ Das ist alles! Sie haben Ihre erste Erweiterung hinzugefügt! Weitere Informatio
 
 ## Senden von Kunden-IDs
 
-Als Nächstes senden Sie eine [Kunden-ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) an den Identity Service. Dadurch können Sie [Ihr CRM in Experience Cloud integrieren](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=de) und Besucher geräteübergreifend verfolgen.
+Als Nächstes senden Sie eine [Kunden-ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=de) an den Identity Service. Dadurch können Sie [Ihr CRM in Experience Cloud integrieren](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=de) und Besucher geräteübergreifend verfolgen.
 
 In der früheren Lektion [Hinzufügen von Datenelementen, Regeln und Bibliotheken](add-data-elements-rules.md) haben Sie ein Datenelement erstellt und in einer Regel verwendet. Jetzt werden Sie dieselben Methoden verwenden, um eine Kunden-ID zu senden, wenn der Besucher authentifiziert wird.
 

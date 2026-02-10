@@ -49,7 +49,7 @@ Sie müssen die vorherigen Lektionen bereits abgeschlossen haben:
 >
 >Die [Experience Cloud ID-Erweiterung](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) wird bei der Implementierung von Adobe Experience Platform Web SDK nicht benötigt, da die Web SDK JavaScript-Bibliothek die Funktionalität des Besucher-ID-Diensts enthält.
 >
-> Wenn Ihre Website bereits den Experience Cloud ID-Service auf Ihrer Website verwendet - entweder über die Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service - und Sie ihn während der Migration zu Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) für weitere Informationen.
+> Wenn Ihre Website bereits den Experience Cloud ID-Service auf Ihrer Website verwendet - entweder über die Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service - und Sie ihn während der Migration zu Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/de/docs/experience-platform/edge/identity/overview) für weitere Informationen.
 
 ## Erstellen eines Identity-Namespace
 
@@ -102,4 +102,4 @@ Nachdem Identitäten eingerichtet sind, kann der Datenstrom konfiguriert werden.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)

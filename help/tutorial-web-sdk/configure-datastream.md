@@ -69,7 +69,7 @@ Auf dem nächsten Bildschirm können Sie dem Datenstrom Services wie Adobe-Progr
 
 ## Überschreiben eines Datenstroms
 
-[Datenstromüberschreibungen](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) ermöglichen es Ihnen, zusätzliche Konfigurationen für Ihren Datenstrom zu definieren und dann Ihre Standardkonfiguration unter bestimmten Bedingungen zu überschreiben.
+[Datenstromüberschreibungen](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/overrides) ermöglichen es Ihnen, zusätzliche Konfigurationen für Ihren Datenstrom zu definieren und dann Ihre Standardkonfiguration unter bestimmten Bedingungen zu überschreiben.
 
 Die Überschreibung der Datenstromkonfiguration ist ein zweistufiger Prozess:
 
@@ -82,4 +82,4 @@ Jetzt können Sie die Platform Web SDK-Erweiterung in Ihrer Tag-Eigenschaft inst
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
