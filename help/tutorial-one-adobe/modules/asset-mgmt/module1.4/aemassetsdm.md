@@ -4,9 +4,9 @@ description: Adobe Experience Manager Assets und Dynamic Media
 kt: 5342
 doc-type: tutorial
 exl-id: f287d101-2ebc-480a-adad-9fc180cf614e
-source-git-commit: 3c56760cee47197130cdf7bfc32540c208a86917
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 2%
 ## Lernziele
 
 - Erfahren Sie, wie Sie AEM Assets und Dynamic Media auf verschiedene Weise verwenden.
+
+## Video
+
+In diesem Video erhalten Sie eine Erklärung und Demonstration aller Schritte, die an dieser Übung beteiligt sind.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479788?quality=12&learn=on)
 
 ## Voraussetzungen
 

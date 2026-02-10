@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 39854816-4572-46e5-8fe4-861da1eb41cf
-source-git-commit: c92e21cbc385eb1cf31887c1f829af0e9ddf6ae6
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Geben Sie den Namen ein: `Final Deliverables` und drücken Sie **Enter**. Dieser
 
 >[!NOTE]
 >
->Falls Sie es vorziehen, das neue Asset nicht selbst zu erstellen, können Sie die fertige Version ([) &#x200B;](./images/timetravelnow.png).
+>Falls Sie es vorziehen, das neue Asset nicht selbst zu erstellen, können Sie die fertige Version ([) ](./images/timetravelnow.png).
 
 Navigieren Sie zu [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}. Geben Sie den `a neon rabbit running very fast through space` ein und klicken Sie auf **Generieren**.
 
@@ -143,9 +143,13 @@ Sie sollten das dann sehen. Bewegen Sie den Mauszeiger über die Datei **timetra
 
 ![WF](./images/wffio14.png)
 
-Als Projekt-Manager können Sie jetzt die aktuelle Version des Bildes sehen, damit Sie wissen, was passiert und dass daran aktiv gearbeitet wird.
+Als Projekt-Manager können Sie jetzt die aktuelle Version des Bildes sehen, damit Sie wissen, was passiert und dass daran aktiv gearbeitet wird. Klicken Sie **In Frame.io öffnen**.
 
 ![WF](./images/wffio15.png)
+
+Daraufhin wird ein neues Fenster geöffnet, in dem das Asset in Frame.io angezeigt wird.
+
+![WF](./images/wffio15a.png)
 
 ## 1.8.2.5 Asset genehmigen
 
