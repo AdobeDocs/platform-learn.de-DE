@@ -23,7 +23,7 @@ In diesem Modul werden einige Konzepte und Technologien vorgestellt, die Auswirk
 - Erfahren Sie, welche Datenflüsse eine Marke verwendet, um Daten in ihre Adobe-Produkte aufzunehmen.
 - Erfahren Sie, wie Sie Daten über Adobe Experience Platform Edge Network an Adobe Experience Platform und andere Produkte senden.
 - Erfahren Sie, wie Sie Datenelemente und Regeln erstellen, die Daten aus Web und Mobile erfassen.
-- Erfahren Sie mehr über [ Tracking-](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home) von „Web SDK&quot; und das Debugging ihrer Inhalte.
+- Erfahren Sie mehr über [&#x200B; Tracking-](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home) von „Web SDK&quot; und das Debugging ihrer Inhalte.
 - Erfahren Sie, was eine Datenschicht ist und was Adobe bei der Implementierung einer Datenschicht empfiehlt.
 - Erfahren Sie, wie Sie [Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home) von Grund auf implementieren.
 - Machen Sie sich mit dem Unterschied zwischen einer Web- und einer mobilen Implementierung vertraut.

@@ -19,7 +19,7 @@ Wechseln Sie zu [Adobe Experience Platform-](https://experience.adobe.com/data-c
 
 ![Eigenschaftenseite](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Erste Schritte** hat Demosystem Next mehrere Tags-Eigenschaften für Sie erstellt, darunter eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap-- - One Adobe` nach ****. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
+In **Erste Schritte** hat Demosystem Next mehrere Tags-Eigenschaften für Sie erstellt, darunter eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap-- - One Adobe` nach **&#x200B;**. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
 
 ![Suchfeld](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 

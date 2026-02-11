@@ -243,7 +243,7 @@ Wählen Sie die zuvor erstellte Zielgruppe mit dem Namen `--aepUserLdap-- - Inte
 
 ![Datenaufnahme](./images/destsdk6.png)
 
-Sie werden es dann sehen. Stellen Sie sicher, dass Sie die **** SOURCE`--aepTenantId--.identification.core.ecid` der `Identity: ecid` zuordnen. Klicken Sie auf **Weiter**.
+Sie werden es dann sehen. Stellen Sie sicher, dass Sie die **&#x200B;**&#x200B;SOURCE`--aepTenantId--.identification.core.ecid` der `Identity: ecid` zuordnen. Klicken Sie auf **Weiter**.
 
 ![Datenaufnahme](./images/destsdk7.png)
 

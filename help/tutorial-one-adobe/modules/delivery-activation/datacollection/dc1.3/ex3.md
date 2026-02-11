@@ -129,7 +129,7 @@ Wählen Sie das Feld **E-MAIL** aus. Klicken Sie auf **Bestätigen**.
 
 ![FAC](./images/fedcomp20c.png)
 
-Sie werden es dann sehen. Jetzt müssen Sie das Primäre Identitätsfeld **** auf „Household2person_**&quot;**. Legen Sie **Identity-Namespace** auf **email** fest.
+Sie werden es dann sehen. Jetzt müssen Sie das Primäre Identitätsfeld **&#x200B;**&#x200B;auf „Household2person_&#x200B;**&quot;**. Legen Sie **Identity-Namespace** auf **email** fest.
 
 Klicken Sie auf **Speichern**.
 
