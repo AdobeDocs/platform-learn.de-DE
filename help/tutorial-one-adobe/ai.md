@@ -3,9 +3,9 @@ title: Überblick über Agent AI Tech Labs
 description: Überblick über Agent AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,12 @@ In dieser Übung lernen Sie Folgendes:
 
 - Verbinden von ChatGPT und/oder Claude.ai mit **Customer Journey Analytics** und Ausführen von Datenanalyseaufgaben
 - Verbinden von ChatGPT und/oder Claude.ai mit **Adobe Analytics** und Ausführen von Datenanalyseaufgaben
+
+[1.7 Intelligent Developer Tools für Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
+
+**Ziel**
+
+In diesem Modul verwenden Sie intelligente Entwickler-Tools wie Cursor.ai, um eine Erweiterung für Ihre Adobe Commerce as a Cloud Service-Umgebung zu entwickeln. Das Ziel dieser Erweiterung besteht darin, eingehende Bestellungsereignisse an einen Drittanbieter-Endpunkt weiterzuleiten. Die Ereignisweiterleitung in Adobe Commerce as a Cloud Service beruht auf Adobe I/O App Builder, Adobe I/O Events und Adobe I/O Runtime. Die Konfiguration all dieser Dienste wird von Cursor.ai unterstützt.
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 

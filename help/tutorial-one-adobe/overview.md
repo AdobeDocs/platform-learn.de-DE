@@ -3,9 +3,9 @@ title: Überblick - Umfassendes technisches Tutorial - One Adobe
 description: Umfassendes technisches Tutorial - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -94,6 +94,14 @@ In diesem Modul verwenden Sie Adobe Frame.io in Kombination mit Adobe Premiere P
 
 In diesem Modul erstellen Sie ein benutzerdefiniertes Programm, um die Funktion in GenStudio for Performance Marketing mithilfe von Adobe IO und App Builder zu erweitern.
 
+[1.7 Workflow Builder](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+
+In diesem Modul verwenden Sie Workflow Builder, um Lösungen für wiederholbare Anwendungsfälle des kreativen Designs und der Automatisierung zu finden.
+
+[1.8 Einheitliche Prüfung und Genehmigung mit Workfront, Frame.io und Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}
+
+In diesem Modul verbinden Sie die Projekt- und Arbeitsmanagement-Funktionen von Workfront direkt mit der Echtzeit-Überprüfung und Zusammenarbeit von Frame.io.
+
 ### &#x200B;3. Asset-Management und Sites
 
 [1.1 Adobe Experience Manager Cloud Service und Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -103,6 +111,10 @@ In diesem Modul richten Sie Ihr Adobe Experience Manager Cloud Service-Programm,
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 In diesem Modul lernen Sie AEM Assets kennen.
+
+[1.4 Adobe Experience Manager Assets und Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
+
+In diesem Modul richten Sie AEM Assets Dynamic Media ein und verwenden Ihre Dynamic Media-Vorlage in Adobe Journey Optimizer.
 
 [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
 
@@ -140,7 +152,7 @@ In diesem Modul konfigurieren Sie eine Zielgruppe und aktivieren die Zielgruppe 
 
 [2.4 Real-Time CDP: Audience Activation zu Microsoft Azure Event Hub](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
 
-In diesem Modul richten Sie ein Microsoft Azure EventHub-Ziel als Echtzeit-Ziel für Adobe Experience Platform Real-Time CDP ein.
+In diesem Modul richten Sie ein Microsoft Azure EventHub-Ziel als Echtzeit-Ziel für Adobe Experience Platform Real-time CDP ein.
 
 [2.5 Real-Time CDP-Verbindungen: Ereignisweiterleitung](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
 
