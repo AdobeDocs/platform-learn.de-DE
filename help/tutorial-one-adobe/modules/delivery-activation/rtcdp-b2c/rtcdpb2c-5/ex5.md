@@ -4,9 +4,9 @@ description: Weiterleiten von Ereignissen an das AWS-Ökosystem
 kt: 5342
 doc-type: tutorial
 exl-id: 9b5f1466-d173-40a0-beed-d4e859e64e40
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1566'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 ## Gut zu wissen
 
 Adobe Experience Platform unterstützt verschiedene Amazon-Services als Ziel.
-Kinesis und S3 sind beide [Profilexportziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=de) und können als Teil von Adobe Experience Platforms Real-Time CDP verwendet werden.
+Kinesis und S3 sind beide [Profilexportziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) und können als Teil von Adobe Experience Platforms Real-Time CDP verwendet werden.
 Sie können mühelos hochwertige Segmentereignisse und zugehörige Profilattribute in Ihre gewünschten Systeme einfließen lassen.
 
 In dieser Übung erfahren Sie, wie Sie Ihren eigenen Amazon Kinesis-Stream einrichten, um Ereignisdaten aus dem Adobe Experience Platform Edge-Ökosystem an ein Cloud-Speicherziel wie Amazon S3 zu streamen. Dies ist nützlich, wenn Sie Erlebnisereignisse aus Web- und Mobile-Eigenschaften erfassen und für Analysen und operative Berichte in Ihren Data Lake pushen möchten. DataLake nimmt im Allgemeinen Daten im Batch-Modus mit großen täglichen Dateiimporten auf, sie stellen keinen öffentlichen HTTP-Endpunkt bereit, der in Verbindung mit der Ereignisweiterleitung verwendet werden könnte.
@@ -344,8 +344,6 @@ Wenn Sie eine solche Datei herunterladen und in einem Texteditor öffnen, sehen 
 >Sobald Ihr Setup erwartungsgemäß funktioniert, vergessen Sie nicht, Ihren AWS Kinesis Data Stream und Data Firehose abzuschalten, um Gebühren zu vermeiden!
 
 ## Nächste Schritte
-
-Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Zurück zu [Real-Time CDP Connections: Ereignisweiterleitung](./aep-data-collection-ssf.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: Installieren und konfigurieren Sie Kafka Connect und den Adobe Expe
 kt: 5342
 doc-type: tutorial
 exl-id: 51ddfdfc-fa5c-4bf4-bfc2-b4a88b0b8a4d
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Sie werden es dann sehen. Geben Sie den `pwd` ein, um den vollständigen Pfad f�
 
 ![Kafka](./images/kc6.png)
 
-Gehen Sie zurück zu Ihrem Texteditor, zur Datei **connect-distributed.properties** und scrollen Sie bis zur letzten Zeile (Zeile 89 im Screenshot). Sie sollten die Auskommentierung der Zeile, die mit `# plugin.path=` beginnt (`#` entfernen), aufheben und den vollständigen Pfad in den Ordner mit dem Namen `connectors` einfügen. Das Ergebnis sollte in etwa wie folgt aussehen:
+Gehen Sie zurück zu Ihrem Texteditor, zur Datei **connect-distributed.properties** und scrollen Sie bis zur letzten Zeile (Zeile 89 im Screenshot). Sie sollten die Auskommentierung der Zeile, die mit `#` beginnt (`# plugin.path=` entfernen), aufheben und den vollständigen Pfad in den Ordner mit dem Namen `connectors` einfügen. Das Ergebnis sollte in etwa wie folgt aussehen:
 
 `plugin.path=/Users/woutervangeluwe/Desktop/Kafka_AEP/kafka_2.13-3.9.0/connectors`
 
@@ -97,7 +97,7 @@ Sie werden es dann sehen. Klicken Sie auf die blaue **Senden**-Schaltfläche, na
 
 ![Kafka](./images/kc11.png)
 
-Um einen Connector zu erstellen, klicken Sie auf , um die zweite Anforderung in der Kafka-Sammlung **POST - AEP-Sink-Connector erstellen** zu öffnen, und gehen Sie zu **Body**. Sie werden es dann sehen. In Zeile 11, in der es **„aep.endpoint“ lautet: &quot;**, müssen Sie die HTTP-API-Streaming-Endpunkt-URL einfügen, die Sie am Ende einer der vorherigen Übungen erhalten haben. Die HTTP-API-Streaming-Endpunkt-URL sieht wie folgt aus: `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`.
+Um einen Connector zu erstellen, klicken Sie auf , um die zweite Anforderung in der Kafka-Sammlung **POST Create AEP Sink Connector** zu öffnen, und gehen Sie zu **Body**. Sie werden es dann sehen. In Zeile 11, in der es **„aep.endpoint“ lautet: &quot;**, müssen Sie die HTTP-API-Streaming-Endpunkt-URL einfügen, die Sie am Ende einer der vorherigen Übungen erhalten haben. Die HTTP-API-Streaming-Endpunkt-URL sieht wie folgt aus: `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`.
 
 ![Kafka](./images/kc12a.png)
 
@@ -198,7 +198,7 @@ Sie sollten dann etwas wie das folgende haben:
 
 ![Kafka](./images/kc21.png)
 
-Kopieren Sie als Nächstes Ihr vollständiges Erlebnisereignis in die Zwischenablage. Der Leerraum Ihrer JSON-Payload muss entfernt werden, und wir werden ein Online-Tool verwenden, um dies zu tun. Gehen Sie dazu zu [&#128279;](http://jsonviewer.stack.hu/)http://jsonviewer.stack.hu/.
+Kopieren Sie als Nächstes Ihr vollständiges Erlebnisereignis in die Zwischenablage. Der Leerraum Ihrer JSON-Payload muss entfernt werden, und wir werden ein Online-Tool verwenden, um dies zu tun. Gehen Sie dazu zu [](http://jsonviewer.stack.hu/)http://jsonviewer.stack.hu/.
 
 Fügen Sie Ihr Erlebnisereignis in den Editor ein und klicken Sie auf **Leerzeichen entfernen**.
 
@@ -232,8 +232,6 @@ Gehen Sie dann zurück zu Ihrer Demo-Website und aktualisieren Sie die Seite. Je
 Du hast diese Übung beendet.
 
 ## Nächste Schritte
-
-Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Gehen Sie zurück zu [Streamen Sie Daten von Apache Kafka nach Adobe Experience Platform](./aep-apache-kafka.md){target="_blank"}
 

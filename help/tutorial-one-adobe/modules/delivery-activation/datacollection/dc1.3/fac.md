@@ -4,9 +4,9 @@ description: Datenerfassung - Federated Audience-Komposition
 kt: 5342
 doc-type: tutorial
 exl-id: a2449e72-794a-4ff0-a208-28303fd574d1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -47,10 +47,6 @@ In dieser Übung konfigurieren Sie Ihr Datenmodell in AEP für die Federated Dat
 [1.3.3 Erstellen einer Verbundzusammensetzung](./ex3.md)
 
 In dieser Übung konfigurieren Sie Ihr Datenmodell in AEP für die Federated Data.
-
-[Zusammenfassung und Vorteile](./summary.md)
-
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -4,9 +4,9 @@ description: In diesem Modul verwenden Sie die zuvor konfigurierten Datensätze,
 kt: 5342
 doc-type: tutorial
 exl-id: dbf5e995-9c2e-4f72-b336-e942cb22cde5
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -58,10 +58,6 @@ In dieser Übung erstellen und konfigurieren Sie eine Google-Cloud-Funktion und 
 [2.5.5 Weiterleiten von Veranstaltungen an AWS Kinesis und AWS S3](./ex5.md)
 
 In dieser Übung konfigurieren Sie Ihre AWS-Umgebung mit AWS IAM, AWS Kinesis, AWS Firehose und AWS S3. Danach beginnen Sie mit der Weiterleitung von Ereignisdaten, die von Web SDK erfasst werden.
-
-[Zusammenfassung und Vorteile](./summary.md)
-
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

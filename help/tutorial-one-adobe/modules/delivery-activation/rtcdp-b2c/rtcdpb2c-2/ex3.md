@@ -4,9 +4,9 @@ description: Kunden-KI - Scoring-Dashboard und Segmentierung (Prognose und Maßn
 kt: 5342
 doc-type: tutorial
 exl-id: a6df3ff1-f907-4185-8189-f0b39c67c943
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '269'
 ht-degree: 3%
 
 ---
@@ -55,13 +55,11 @@ Sie können dieses Segment jetzt für das Targeting verwenden, indem Sie beispie
 
 ## Bereinigen
 
-Um sicherzustellen, dass keine unnötigen Demodaten in Ihrer Umgebung aufbewahrt werden, stellen Sie sicher, dass Sie den Datensatz `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` löschen, nachdem Sie diese Übung erfolgreich abgeschlossen haben. Wenn Sie die Demodaten nicht löschen, hat dies Auswirkungen auf die Kosten für Ihre AEP-Instanz.
+Um sicherzustellen, dass keine unnötigen Demodaten in Ihrer Umgebung aufbewahrt werden, stellen Sie sicher, dass Sie den Datensatz `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` löschen, nachdem Sie diese Übung erfolgreich abgeschlossen haben. Wenn Sie die Demodaten nicht löschen, hat dies Auswirkungen auf die Kosten Ihrer AEP-Instanz.
 
 ![Profil](./images/cleanup.png)
 
 ## Nächste Schritte
-
-Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Zurück zu [Intelligent Services](./intelligent-services.md){target="_blank"}
 

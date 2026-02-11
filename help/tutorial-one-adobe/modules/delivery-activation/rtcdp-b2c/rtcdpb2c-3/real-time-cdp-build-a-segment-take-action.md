@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: f427235f-a7ee-49fb-af46-c0e8baf47789
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '282'
 ht-degree: 1%
 
 ---
@@ -58,10 +58,6 @@ Verwenden Sie die von Ihnen erstellte Zielgruppe, um eine Experience Targeting-A
 [2.3.6 Ziele SDK](./ex6.md)
 
 Konfigurieren Sie Ihr eigenes Ziel mit Destinations SDK.
-
-[Zusammenfassung und Vorteile](./summary.md)
-
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: f18a0ec9-ee56-42b9-98bd-b5e433d77043
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -60,10 +60,6 @@ Kombinieren Sie Ereignisse, Datenquellen und Aktionen zu einer intelligenten und
 [3.2.5 Trigger des Journey](./ex5.md)
 
 Trigger der spezifischen Journey.
-
-[Zusammenfassung und Vorteile](./summary.md)
-
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

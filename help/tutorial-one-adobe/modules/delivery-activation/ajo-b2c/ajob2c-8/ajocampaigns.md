@@ -3,14 +3,26 @@ title: Adobe Journey Optimizer-Kampagnen
 description: Adobe Journey Optimizer-Kampagnen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
+source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '170'
+ht-degree: 6%
 
 ---
 
-# 3.8 Adobe Journey Optimizer: Kampagnen
+# 3.8 Adobe Journey Optimizer: Kampagnenorchestrierung
+
+Mit Adobe Journey Optimizer Campaign Orchestration können Marken anspruchsvolle Anwendungsfälle für die Kampagnenorchestrierung lösen, die sich auf die markeninitiierte Kundeninteraktion konzentrieren, um den Umsatz und die Kundentreue zu steigern.
+
+Adobe Journey Optimizer Campaign Orchestration unterstützt:
+
+- On-Demand-Zielgruppen
+- Segmentierung mit mehreren Entitäten
+- Sichtbarkeit und Präzision vor dem Versand
+- Mehrstufige Kampagnen-Workflows
+
+Adobe Journey Optimizer Campaign Orchestration enthält ein relationales XDM-Schema, das zur bestehenden Architektur hinzugefügt wird, um Anwendungsfälle für die Kampagnenorchestrierung zu ermöglichen.
 
 ## Lernziele
 
@@ -22,13 +34,13 @@ ht-degree: 4%
 
 ## Übungen
 
-[3.8.1 Erste Schritte mit Kampagnen](./ex1.md)
+[3.8.1 Einrichten der Grundlage für relationale Daten](./ex1.md)
 
 In dieser Übung konfigurieren und verwenden Sie Kampagnen in Adobe Journey Optimizer.
 
-[Zusammenfassung und Vorteile](./summary.md)
+[3.8.2 Erstellen einer orchestrierten Kampagne](./ex2.md)
 
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
+In dieser Übung erstellen Sie eine orchestrierte Kampagne.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

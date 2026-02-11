@@ -4,9 +4,9 @@ description: In diesem Modul erfahren Sie, wie Sie Ihren eigenen Apache Kafka-Cl
 kt: 5342
 doc-type: tutorial
 exl-id: 28c63675-272e-46ff-88fc-6cd4096d66ca
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -49,10 +49,6 @@ In dieser Übung konfigurieren Sie einen HTTP-API-Source-Connector in Adobe Expe
 [2.6.4 Installieren und konfigurieren Sie Kafka Connect und den Adobe Experience Platform Sink Connector](./ex4.md)
 
 In dieser Übung verwenden Sie Kafka Connect , um den Adobe Experience Platform Sink Connector zu installieren und zu verwenden, und Sie senden Ereignisse manuell in Adobe Experience Platform.
-
-[Zusammenfassung und Vorteile](./summary.md)
-
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

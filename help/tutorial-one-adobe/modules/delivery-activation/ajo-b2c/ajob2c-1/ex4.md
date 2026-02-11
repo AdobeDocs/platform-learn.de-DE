@@ -4,9 +4,9 @@ description: Aktualisieren Sie Ihre Konfigurations-ID und testen Sie Ihre Journe
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '629'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Wechseln Sie zu [Adobe Experience Platform-](https://experience.adobe.com/data-c
 
 ![Eigenschaftenseite](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Erste Schritte** hat Demosystem Next mehrere Tags-Eigenschaften für Sie erstellt, darunter eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap-- - One Adobe` nach **&#x200B;**. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
+In **Erste Schritte** hat Demosystem Next mehrere Tags-Eigenschaften für Sie erstellt, darunter eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap-- - One Adobe` nach ****. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
 
 ![Suchfeld](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -122,8 +122,6 @@ Außerdem werden der Journey-Eintrag und der Fortschritt durch die Journey im Jo
 ![Launch-Einrichtung](./images/emaildash.png)
 
 ## Nächste Schritte
-
-Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Zurück zu [Adobe Journey Optimizer: Orchestrierung](./journey-orchestration-create-account.md){target="_blank"}
 

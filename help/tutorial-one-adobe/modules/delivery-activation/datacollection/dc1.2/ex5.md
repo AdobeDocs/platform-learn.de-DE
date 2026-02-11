@@ -4,9 +4,9 @@ description: Foundation - Datenaufnahme - Datenaufnahme aus Offline-Quellen
 kt: 5342
 doc-type: tutorial
 exl-id: 9fce6ece-f454-45de-9c95-35d604b3ae95
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '767'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 In dieser Übung besteht das Ziel darin, Ihren Source-Connector für die Data Landing Zone mit Azure Blob Storage einzurichten.
 
-Data Landing Zone ist eine von Adobe Experience Platform bereitgestellte Azure Blob Storage-Schnittstelle, die Ihnen Zugriff auf eine sichere, Cloud-basierte Dateispeichereinrichtung gewährt, um Dateien in Platform zu bringen. Data Landing Zone unterstützt die SAS-basierte Authentifizierung, und ihre Daten werden im Ruhezustand und bei der Übertragung mit standardmäßigen Azure Blob-Speichersicherheitsmechanismen geschützt. Mit der SAS-basierten Authentifizierung können Sie sicher über eine öffentliche Internetverbindung auf Ihren Data Landing Zone-Container zugreifen.
+Data Landing Zone ist eine von Adobe Experience Platform bereitgestellte Azure Blob Storage-Schnittstelle, die Ihnen Zugriff auf eine sichere, Cloud-basierte Dateispeichereinrichtung gewährt, um Dateien in Platform zu laden. Data Landing Zone unterstützt die SAS-basierte Authentifizierung, und die Daten werden im Ruhezustand und bei der Übertragung mit standardmäßigen Azure Blob-Speichersicherheitsmechanismen geschützt. Mit der SAS-basierten Authentifizierung können Sie sicher über eine öffentliche Internetverbindung auf Ihren Data Landing Zone-Container zugreifen.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Klicken Sie auf das Symbol wie angegeben, um den **SASUri** zu kopieren.
 
 ## Kopieren Sie Ihre CSV-Datei in Ihre AEP Data Landing Zone
 
-Sie erfassen jetzt Daten in Adobe Experience Platform mithilfe von Azure-Befehlszeilen-Tools mit AZCopy.
+Sie nehmen jetzt Daten mithilfe von Azure-Befehlszeilen-Tools mithilfe von AZCopy in Adobe Experience Platform auf.
 
 Öffnen Sie ein Terminal am Speicherort Ihres AzCopy-Installationsspeicherorts und führen Sie den folgenden Befehl aus, um eine Datei in die Data Landing Zone von AEP zu kopieren:
 
@@ -114,7 +114,7 @@ Jetzt können Sie die eingehenden Quelldaten aus Ihrer CSV-Datei den Zielfeldern
 >
 > Beachten Sie die potenziellen Fehler bei der Zuordnung. Sie korrigieren die Zuordnung im nächsten Schritt.
 
-## Felder zuordnen
+## Zuordnen von Feldern
 
 Klicken Sie zunächst auf die Schaltfläche **Alle Zuordnungen löschen**. Anschließend können Sie mit einer sauberen Zuordnung beginnen.
 
@@ -169,8 +169,6 @@ Das Laden der Daten kann einige Minuten dauern. Bei Erfolg wird der Status „Er
 ![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 ## Nächste Schritte
-
-Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Zurück zu [Datenaufnahme](./data-ingestion.md){target="_blank"}
 

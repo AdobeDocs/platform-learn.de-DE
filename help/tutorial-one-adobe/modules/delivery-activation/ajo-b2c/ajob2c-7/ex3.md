@@ -3,9 +3,10 @@ title: Offer Decisioning - Testen der Entscheidung
 description: Offer Decisioning - Testen der Entscheidung
 kt: 5342
 doc-type: tutorial
-source-git-commit: 13d790855601fa6f36c1afa0f2d5faad5fc07eb0
+exl-id: 8cfe3d33-9451-46f4-b468-b93cd37d0806
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '148'
 ht-degree: 2%
 
 ---
@@ -29,8 +30,6 @@ Wechseln Sie zu [https://experience.adobe.com/#/data-collection/](https://experi
 In der nächsten Übung erfahren Sie, wie Sie Ihre in Adobe Journey Optimizer erstellten Angebote und Entscheidungen mit einer Adobe Target Experience Targeting-Aktivität kombinieren können.
 
 ## Nächste Schritte
-
-Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Zurück zu [Experience Decisioning](ajo-decisioning.md){target="_blank"}
 

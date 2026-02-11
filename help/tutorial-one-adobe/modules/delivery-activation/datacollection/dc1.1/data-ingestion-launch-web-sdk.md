@@ -4,9 +4,9 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: 8c613648-9007-49fb-898f-039c366297da
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ In diesem Modul werden einige Konzepte und Technologien vorgestellt, die Auswirk
 - Erfahren Sie, welche Datenflüsse eine Marke verwendet, um Daten in ihre Adobe-Produkte aufzunehmen.
 - Erfahren Sie, wie Sie Daten über Adobe Experience Platform Edge Network an Adobe Experience Platform und andere Produkte senden.
 - Erfahren Sie, wie Sie Datenelemente und Regeln erstellen, die Daten aus Web und Mobile erfassen.
-- Erfahren Sie mehr über [&#x200B; Tracking-](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home) von „Web SDK&quot; und das Debugging ihrer Inhalte.
+- Erfahren Sie mehr über [ Tracking-](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home) von „Web SDK&quot; und das Debugging ihrer Inhalte.
 - Erfahren Sie, was eine Datenschicht ist und was Adobe bei der Implementierung einer Datenschicht empfiehlt.
 - Erfahren Sie, wie Sie [Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/home) von Grund auf implementieren.
 - Machen Sie sich mit dem Unterschied zwischen einer Web- und einer mobilen Implementierung vertraut.
@@ -67,10 +67,6 @@ In dieser Übung richten Sie eine Aktivität in Adobe Target ein, die über die 
 [1.1.7 XDM-Schemaanforderungen in Adobe Experience Platform](./ex7.md)
 
 Um sicherzustellen, dass Web SDK Daten in Adobe Experience Platform aufnehmen kann, muss ein bestimmtes XDM-Mixin Teil des XDM-Schemas in Adobe Experience Platform sein.
-
-[Zusammenfassung und Vorteile](./summary.md)
-
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

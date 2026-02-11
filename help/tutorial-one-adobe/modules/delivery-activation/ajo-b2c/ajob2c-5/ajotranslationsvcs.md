@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer-Übersetzungs-Services
 kt: 5342
 doc-type: tutorial
 exl-id: c0b3e37f-69f5-41e3-8663-0dcf736d1fc0
-source-git-commit: b407941266a3d6151363f07592bd445034d44909
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 ## Voraussetzungen
 
 - Zugriff auf Adobe Journey Optimizer
-- Zugriff auf Microsoft Azure-Übersetzer
+- Zugriff auf Microsoft Azure Translators
 
 ## Übungen
 
@@ -35,10 +35,6 @@ In dieser Übung konfigurieren Sie Ihren Übersetzungsanbieter mit Microsoft Tra
 [3.5.3 Hinzufügen von Sprachen zu E-Mails](./ex3.md)
 
 In dieser Übung fügen Sie der E-Mail in Ihrer Kampagne Sprachen hinzu.
-
-[Zusammenfassung und Vorteile](./summary.md)
-
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

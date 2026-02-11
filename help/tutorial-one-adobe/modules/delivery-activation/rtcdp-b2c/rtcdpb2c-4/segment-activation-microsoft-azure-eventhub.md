@@ -4,16 +4,16 @@ description: Audience Activation zu Microsoft Azure Event Hub
 kt: 5342
 doc-type: tutorial
 exl-id: c1f5566d-0f57-4554-95ee-950d66373716
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # 2.4 Real-Time CDP: Audience Activation zu Microsoft Azure Event Hub
 
-In diesem Modul richten Sie ein Microsoft Azure EventHub-Ziel als Echtzeit-Ziel für Adobe Experience Platform Real-Time CDP ein. Sie werden auch eine Azure-Funktion einrichten und bereitstellen, die in Echtzeit ausgelöst wird, wenn Adobe Experience Platform eine Zielgruppen-Payload an Ihr Azure EventHub-Ziel sendet. Die Azure-Funktion, die Sie in den Trigger nehmen, zeigt den Mechanismus der Aktivierungsfunktionen von Adobe Experience Platform Real-time CDP.
+In diesem Modul richten Sie ein Microsoft Azure EventHub-Ziel als Echtzeit-Ziel für Adobe Experience Platform Real-time CDP ein. Sie werden auch eine Azure-Funktion einrichten und bereitstellen, die in Echtzeit ausgelöst wird, wenn Adobe Experience Platform eine Zielgruppen-Payload an Ihr Azure EventHub-Ziel sendet. Die Azure-Funktion, die Sie in die Trigger nehmen, zeigt den Mechanismus der Aktivierungsfunktionen von Adobe Experience Platform Real-time CDP.
 
 In diesem Modul erfahren Sie auch, welche Trigger Real-Time CDP-Programme tatsächlich eine Payload an ein bestimmtes Ziel senden. Wir besprechen auch den Status einer Zielgruppen-Qualifizierung und wie sie mit der Aktivierung zusammenhängt.
 
@@ -67,10 +67,6 @@ In dieser Übung erstellen Sie eine Azure-Funktion, die in Echtzeit ausgelöst w
 [2.4.7 End-to-End-Szenario](./ex7.md)
 
 An dieser Stelle ist alles eingerichtet. Sie können jetzt auf Ihrer Demo-Website surfen und Zielgruppenqualifikationen für Ihre Microsoft Azure Event Hub-Trigger-Funktion erhalten.
-
-[Zusammenfassung und Vorteile](./summary.md)
-
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

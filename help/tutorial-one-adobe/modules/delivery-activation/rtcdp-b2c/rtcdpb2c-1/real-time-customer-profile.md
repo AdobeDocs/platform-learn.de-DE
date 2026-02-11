@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
@@ -53,10 +53,6 @@ In dieser Übung erstellen Sie ein Segment, indem Sie den Segment Builder von Ad
 [2.1.5 Sehen Sie Ihr Echtzeit-Kundenprofil in Aktion im Callcenter](./ex5.md)
 
 In dieser Übung geben Sie die Identität eines Callcenter-Mitarbeiters an, der einen Anruf von einem Kunden erhält. Um wirklich etwas für das Kundenerlebnis zu tun, benötigen Sie Zugriff auf alle verfügbaren Informationen in Echtzeit.
-
-[Zusammenfassung und Vorteile](./summary.md)
-
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

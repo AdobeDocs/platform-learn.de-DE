@@ -4,9 +4,9 @@ description: Foundation - FAC - Erstellen einer Verbundzusammensetzung
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -129,7 +129,7 @@ Wählen Sie das Feld **E-MAIL** aus. Klicken Sie auf **Bestätigen**.
 
 ![FAC](./images/fedcomp20c.png)
 
-Sie werden es dann sehen. Jetzt müssen Sie das Primäre Identitätsfeld **&#x200B;**&#x200B;auf „Household2person_&#x200B;**&quot;**. Legen Sie **Identity-Namespace** auf **email** fest.
+Sie werden es dann sehen. Jetzt müssen Sie das Primäre Identitätsfeld **** auf „Household2person_**&quot;**. Legen Sie **Identity-Namespace** auf **email** fest.
 
 Klicken Sie auf **Speichern**.
 
@@ -146,8 +146,6 @@ Die Zielgruppe wird jetzt ausgefüllt und die Zielgruppe kann aus dem AEP-Ökosy
 ![FAC](./images/fedcomp22.png)
 
 ## Nächste Schritte
-
-Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Zurück zu [Federated-Audience-Komposition](./fac.md){target="_blank"}
 

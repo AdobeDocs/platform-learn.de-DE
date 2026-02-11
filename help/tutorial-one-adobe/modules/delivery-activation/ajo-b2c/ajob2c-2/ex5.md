@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - Externe Datenquellen und benutzerdefinier
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '633'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Dies ist die Seite mit den Eigenschaften der Adobe Experience Platform-Datenerfa
 
 ![Eigenschaftenseite](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Erste Schritte** hat Demosystem Next Tags-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap--` nach **&#x200B;**. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
+In **Erste Schritte** hat Demosystem Next Tags-Eigenschaften für Sie erstellt: eine für die Website und eine für die Mobile App. Suchen Sie sie, indem Sie im Feld `--aepUserLdap--` nach ****. Klicken Sie, um die Eigenschaft **Web** zu öffnen.
 
 ![Suchfeld](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -120,8 +120,6 @@ Ein paar Sekunden später wird die Nachricht von Adobe Journey Optimizer im Slac
 ![Demo](./images/smsdemo4.png)
 
 ## Nächste Schritte
-
-Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Zurück zu [Adobe Journey Optimizer: Externe Datenquellen und benutzerdefinierte Aktionen](journey-orchestration-external-weather-api-sms.md){target="_blank"}
 

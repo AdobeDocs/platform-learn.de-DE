@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer Content-Management
 description: Adobe Journey Optimizer Content-Management
 kt: 5342
 doc-type: tutorial
-source-git-commit: 37e7d88e77f424d30e4f7c210f703cd1748a6c13
+exl-id: 43161ace-b2bc-418c-8f2b-a8fe0e3d0ebf
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '185'
 ht-degree: 2%
 
 ---
@@ -35,10 +36,6 @@ In dieser Übung konfigurieren und verwenden Sie Landingpages in Adobe Journey O
 [3.6.3 AJO und GenStudio for Performance Marketing](./ex3.md)
 
 In dieser Übung importieren Sie eine Markenvorlage aus GenStudio for Performance Marketing und verwenden sie in Adobe Journey Optimizer. Sie verwenden dann Generative KI in GenStudio for Performance Marketing, um ein E-Mail-Erlebnis zu erstellen, und Sie verwenden diese dann in Adobe Journey Optimizer.
-
-[Zusammenfassung und Vorteile](./summary.md)
-
-Zusammenfassung dieses Moduls und Überblick über die Vorteile.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -4,9 +4,9 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: 124c9c54-27f1-4784-9a5c-2c9d8ba620d5
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -17,29 +17,27 @@ Um sicherzustellen, dass Web SDK Daten in Adobe Experience Platform aufnehmen ka
 
 Wechseln Sie zu [https://experience.adobe.com/platform](https://experience.adobe.com/platform) und melden Sie sich an.
 
-![AEP-Debugger](./images/exp1.png)
+![AEP Debugger](./images/exp1.png)
 
 Wählen Sie nach der Anmeldung die entsprechende Sandbox aus, indem Sie auf den Text **Produktions-**) in der blauen Zeile oben auf dem Bildschirm klicken. Wählen Sie die Sandbox-`--aepSandboxName--` aus.
 
 Nachdem Sie Ihre Sandbox ausgewählt haben, ändert sich der Bildschirm, und Sie befinden sich nun in Ihrer Sandbox.
 
-![AEP-Debugger](./images/exp2.png)
+![AEP Debugger](./images/exp2.png)
 
 Wechseln Sie im linken Menü zu **Schemata** und öffnen Sie das Schema **Demosystem - Ereignisschema für Website (Global v1.1** .
 
-![AEP-Debugger](./images/exp3.png)
+![AEP Debugger](./images/exp3.png)
 
 In diesem Schema sehen Sie, dass die Feldergruppe **AEP Web SDK ExperienceEvent** hinzugefügt wurde. Diese Feldergruppe fügt alle minimal erforderlichen Felder zum Schema hinzu. Für jedes Erlebnisereignisschema in Adobe Experience Platform, das von Web SDK verwendet wird, muss diese Feldergruppe immer Teil des Schemas sein.
 
-![AEP-Debugger](./images/exp4.png)
+![AEP Debugger](./images/exp4.png)
 
 In [Modul 1.2 Datenaufnahme](./../dc1.2/data-ingestion.md) erfahren Sie, wie Sie Feldergruppen zu Schemata hinzufügen.
 
 Nächster Schritt:
 
 ## Nächste Schritte
-
-Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
 
 Kehren Sie zurück zu [Einrichtung der Adobe Experience Platform-Datenerfassung und der Tag-Erweiterung „Web SDK&quot;](./data-ingestion-launch-web-sdk.md){target="_blank"}
 

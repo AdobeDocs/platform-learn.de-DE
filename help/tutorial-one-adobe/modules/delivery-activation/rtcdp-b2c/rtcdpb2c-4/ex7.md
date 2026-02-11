@@ -4,9 +4,9 @@ description: Audience Activation zu Microsoft Azure Event Hub - Aktion
 kt: 5342
 doc-type: tutorial
 exl-id: bff4d2ee-eaff-4b56-9fa0-4ffc3c368141
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Um die Payload anzuzeigen, die von Adobe Experience Platform Real-time CDP nach 
 
 Stellen Sie sicher, dass das Visual Studio Code-Projekt geöffnet ist und ausgeführt wird
 
-Informationen zum Starten/Stoppen/Neustarten Ihrer Azure-Funktion in Visual Studio Code finden Sie in der vorherigen Übung.
+Informationen zum Starten/Stoppen/Neustarten der Azure-Funktion in Visual Studio Code finden Sie in der vorherigen Übung.
 
 Der Visual Studio Code-**Terminal** sollte etwas Ähnliches erwähnen:
 
@@ -110,8 +110,6 @@ Der Zielgruppenstatus **Realisiert** bedeutet, dass Ihr Profil Teil der Zielgrup
 
 ## Nächste Schritte
 
-Wechseln Sie zu [Zusammenfassung und Vorteile](./summary.md){target="_blank"}
-
-Zurück zu [Real-Time CDP: Audience Activation zum Microsoft Azure Event Hub](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+Zurück zum [Real-Time CDP: Audience Activation zum Microsoft Azure Event Hub](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
 Zurück zu [Alle Module](./../../../../overview.md){target="_blank"}
