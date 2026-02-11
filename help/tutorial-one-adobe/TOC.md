@@ -4,7 +4,7 @@ breadcrumb-title: Ein technisches Tutorial zu Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 3%
@@ -289,4 +289,4 @@ ht-degree: 3%
    + 1.7 Intelligent Developer Tools für Adobe Commerce {#agents7}
       + [Überblick](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 Einrichten der Entwicklungsumgebung](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
-      + [1.7.2 Verwenden Sie Cursor.ai, um Ihr Projekt zu entwickeln](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
+      + [1.7.2 Verwenden Sie Cursor, um Ihr Projekt zu entwickeln](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)

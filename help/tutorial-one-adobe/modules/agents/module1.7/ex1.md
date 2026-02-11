@@ -4,7 +4,7 @@ description: Einrichten der Entwicklungsumgebung
 kt: 5342
 doc-type: tutorial
 exl-id: c9bfb327-362f-4475-89da-8e9788940d56
-source-git-commit: ce3ee3dde103383a6f7897cba36d548058879ea7
+source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 5%
@@ -31,7 +31,7 @@ Wählen Sie anschließend **Projekt aus Vorlage erstellen**.
 
 ![GSPeM-Erweiterbarkeit](./images/commerceagent2.png)
 
-Geben Sie den `--aepUserLdap-- vangeluw Commerce Events` ein. Klicken Sie auf **Speichern**.
+Geben Sie den `--aepUserLdap-- Commerce Events` ein. Klicken Sie auf **Speichern**.
 
 ![GSPeM-Erweiterbarkeit](./images/commerceagent4.png)
 
@@ -175,7 +175,7 @@ Sie haben jetzt die Grundelemente eingerichtet, damit Sie ein App Builder-Projek
 
 ## Nächste Schritte
 
-Navigieren Sie zu [Verwenden Sie Cursor.ai, um Ihr Projekt zu entwickeln](./ex2.md){target="_blank"}
+Navigieren Sie zu [Verwenden Sie den Cursor, um Ihr Projekt zu entwickeln](./ex2.md){target="_blank"}
 
 Zurück zu [Intelligent Developer Tools for Adobe Commerce](./aiassisteddev.md){target="_blank"}
 

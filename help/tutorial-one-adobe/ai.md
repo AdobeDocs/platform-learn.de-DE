@@ -3,7 +3,7 @@ title: Überblick über Agent AI Tech Labs
 description: Überblick über Agent AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -77,7 +77,7 @@ In dieser Übung lernen Sie Folgendes:
 
 **Ziel**
 
-In diesem Modul verwenden Sie intelligente Entwickler-Tools wie Cursor.ai, um eine Erweiterung für Ihre Adobe Commerce as a Cloud Service-Umgebung zu entwickeln. Das Ziel dieser Erweiterung besteht darin, eingehende Bestellungsereignisse an einen Drittanbieter-Endpunkt weiterzuleiten. Die Ereignisweiterleitung in Adobe Commerce as a Cloud Service beruht auf Adobe I/O App Builder, Adobe I/O Events und Adobe I/O Runtime. Die Konfiguration all dieser Dienste wird von Cursor.ai unterstützt.
+In diesem Modul verwenden Sie intelligente Entwickler-Tools wie Cursor, um eine Erweiterung für Ihre Adobe Commerce as a Cloud Service-Umgebung zu entwickeln. Das Ziel dieser Erweiterung besteht darin, eingehende Bestellungsereignisse an einen Drittanbieter-Endpunkt weiterzuleiten. Die Ereignisweiterleitung in Adobe Commerce as a Cloud Service beruht auf Adobe I/O App Builder, Adobe I/O Events und Adobe I/O Runtime. Die Konfiguration all dieser Dienste wird von Cursor unterstützt.
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
