@@ -3,9 +3,10 @@ title: Erstellen einer orchestrierten Kampagne
 description: Erstellen einer orchestrierten Kampagne
 kt: 5342
 doc-type: tutorial
-source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
+exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
+source-git-commit: d5008825c083357b5b1479157cb01f795120d409
 workflow-type: tm+mt
-source-wordcount: '67'
+source-wordcount: '68'
 ht-degree: 2%
 
 ---
@@ -32,6 +33,6 @@ Sie sollten das dann sehen. Klicken Sie auf das Symbol **+**.
 
 ## Nächste Schritte
 
-Zurück zu [Adobe Journey Optimizer: Kampagnen](./ajocampaigns.md){target="_blank"}
+Zurück zu [Adobe Journey Optimizer: Orchestrierte Kampagnen](./ajocampaigns.md){target="_blank"}
 
 Zurück zu [Alle Module](./../../../../overview.md){target="_blank"}
