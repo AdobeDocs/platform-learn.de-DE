@@ -3,9 +3,9 @@ title: Überblick - Umfassendes technisches Tutorial - One Adobe
 description: Umfassendes technisches Tutorial - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 461024fe62167c26e88688c553b47b8a816bdaa8
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1328'
 ht-degree: 2%
 
 ---
@@ -94,9 +94,9 @@ In diesem Modul verwenden Sie Adobe Frame.io in Kombination mit Adobe Premiere P
 
 In diesem Modul erstellen Sie ein benutzerdefiniertes Programm, um die Funktion in GenStudio for Performance Marketing mithilfe von Adobe IO und App Builder zu erweitern.
 
-[1.7 Workflow Builder](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+[1.7 Benutzerdefinierte Firefly-Workflows](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
 
-In diesem Modul verwenden Sie Workflow Builder, um Lösungen für wiederholbare Anwendungsfälle des kreativen Designs und der Automatisierung zu finden.
+In diesem Modul verwenden Sie benutzerdefinierte Workflows in Firefly, um wiederholbare Anwendungsfälle für kreatives Design und Automatisierung zu lösen.
 
 [1.8 Einheitliche Prüfung und Genehmigung mit Workfront, Frame.io und Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}
 
