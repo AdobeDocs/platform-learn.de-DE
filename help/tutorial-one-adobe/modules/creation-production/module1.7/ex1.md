@@ -205,7 +205,7 @@ Nach einigen Minuten sollten Sie eine ähnliche Ausgabe sehen, wobei 3 Bilder un
 
 ## Nächste Schritte
 
-Zu [ gehen…](./ex1.md){target="_blank"}
+Zu [&#x200B; gehen…](./ex1.md){target="_blank"}
 
 Zurück zu [Workflow Builder](./workflowbuilder.md){target="_blank"}
 
