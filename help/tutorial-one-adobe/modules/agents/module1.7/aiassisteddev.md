@@ -4,9 +4,9 @@ description: Intelligent Developer Tools für Adobe Commerce
 kt: 5342
 doc-type: tutorial
 exl-id: d6ff0907-260f-4f83-98e2-d22954a03678
-source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
+source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,12 @@ In diesem Modul verwenden Sie intelligente Entwickler-Tools wie Cursor, um eine 
 - Zugriff auf den Cursor.
 - Sie sollten dieses Modul abgeschlossen haben, da es Abhängigkeiten gibt: [Adobe Experience Manager Cloud Service und Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md).
 - Sie sollten dieses Modul abgeschlossen haben, da es Abhängigkeiten gibt: [Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md).
+
+## Video
+
+In diesem Video erhalten Sie eine Erklärung und Demonstration aller Schritte, die an dieser Übung beteiligt sind.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479939?quality=12&learn=on)
 
 ## Übungen
 
