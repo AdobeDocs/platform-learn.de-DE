@@ -284,7 +284,7 @@ Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie
 1. Der Debugger wird geöffnet und zeigt einige Details der hartcodierten Implementierung an, die nicht mit diesem Tutorial zusammenhängt (Sie müssen die Luma-Site möglicherweise nach dem Öffnen des Debuggers neu laden)
 1. Vergewissern Sie sich, dass der Debugger **[!UICONTROL mit Luma verbunden]** ist, wie unten dargestellt, und wählen Sie dann das Symbol &quot;**[!UICONTROL lock]**&quot; aus, um den Debugger für die Luma-Site zu sperren.
 1. Wählen Sie die **[!UICONTROL Anmelden]**-Schaltfläche oben rechts aus, um sich zu authentifizieren.
-1. Navigieren Sie jetzt zu **[!UICONTROL Experience Platform-]** Tags} im linken Navigationsbereich
+1. Navigieren Sie jetzt zu **[!UICONTROL Experience Platform-]** Tags&rbrace; im linken Navigationsbereich
 1. Wählen Sie die Registerkarte Konfiguration aus
 1. Öffnen Sie rechts neben der Stelle, an der die **[!UICONTROL Seiteneinbettungs-Codes]** angezeigt werden, das **[!UICONTROL Aktionen]** und wählen Sie **[!UICONTROL Ersetzen]**
    ![Wählen Sie Aktionen > Ersetzen](assets/websdk-debugger-replaceLibrary.png)
@@ -482,6 +482,6 @@ Gut gemacht! Das waren eine Menge Informationen über Web SDK und Launch. An ein
 >Nachdem Sie die Lektion Streaming-Aufnahme abgeschlossen haben, können Sie die [!UICONTROL Prod]-Sandbox aus Ihrem `Luma Tutorial Platform`-Produktprofil entfernen
 
 
-Dateningenieure, wenn Sie möchten, können Sie zur Lektion [Ausführen von Abfragen“ ](run-queries.md).
+Dateningenieure, wenn Sie möchten, können Sie zur Lektion [Ausführen von Abfragen“ &#x200B;](run-queries.md).
 
-Datenarchitekten können mit „Zusammenführungsrichtlinien[ fortfahren](create-merge-policies.md).
+Datenarchitekten können mit „Zusammenführungsrichtlinien[&#x200B; fortfahren](create-merge-policies.md).

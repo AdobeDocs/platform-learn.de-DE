@@ -115,7 +115,7 @@ Wenn Sie in der vorherigen Lektion Datenerfassungsereignisse abonniert haben, ü
 
 ![Webhook zur Datenaufnahme](assets/ingestion-loyalty-webhook.png)
 
-Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) in der (Dokumentation).
+Weitere Informationen zu den [&#x200B; finden &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) in der (Dokumentation).
 
 ## Daten mit der Platform-API in Batches aufnehmen
 
@@ -127,7 +127,7 @@ Laden wir jetzt Daten mit der API hoch.
 
 ### Daten herunterladen und vorbereiten
 
-1. Sie sollten „luma-data.zip[ bereits heruntergeladen und in ](assets/luma-data.zip) Ordner &quot;`Luma Tutorial Assets`&quot; entpackt haben.
+1. Sie sollten „luma-data.zip[&#x200B; bereits heruntergeladen und in &#x200B;](assets/luma-data.zip) Ordner &quot;`Luma Tutorial Assets`&quot; entpackt haben.
 2. Öffnen Sie `luma-crm.json` in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` durch Ihre eigene Unterstrich-Mandanten-ID, wie in Ihren Schemata dargestellt
 3. Speichern Sie die aktualisierte Datei
 
@@ -179,7 +179,7 @@ Jetzt können wir die Daten in den Batch hochladen:
 
    ![Daten hochgeladen](assets/ingestion-crm-uploadFile.png)
 
-Wenn Sie sich jetzt den Batch in der Platform-Benutzeroberfläche ansehen, sehen Sie, dass er den Status &quot;[!UICONTROL &quot; ]:
+Wenn Sie sich jetzt den Batch in der Platform-Benutzeroberfläche ansehen, sehen Sie, dass er den Status &quot;[!UICONTROL &quot; &#x200B;]:
 ![Batch-](assets/ingestion-crm-loading.png)
 
 Da die Batch-API häufig zum Hochladen mehrerer Dateien verwendet wird, müssen Sie Platform mitteilen, wann ein Batch abgeschlossen ist, was wir im nächsten Schritt tun werden.
@@ -218,7 +218,7 @@ Es gibt eine interessante Sache, die gerade passiert ist, auf die ich hinweisen 
 
 Herzlichen Glückwunsch, Sie haben soeben Profile zusammengeführt!
 
-![Zusammengeführtes Profil ](assets/ingestion-crm-profileLinkedIdentities.png)
+![Zusammengeführtes Profil &#x200B;](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### Validieren mit Datenerfassungsereignissen
 
@@ -226,7 +226,7 @@ Wenn Sie in der vorherigen Lektion Datenerfassungsereignisse abonniert haben, ü
 
 ![Webhook zur Datenaufnahme](assets/ingestion-crm-webhook.png)
 
-Weitere Informationen zu den [ finden ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) in der (Dokumentation).
+Weitere Informationen zu den [&#x200B; finden &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) in der (Dokumentation).
 
 ## Aufnehmen von Daten mit Workflows
 
@@ -234,7 +234,7 @@ Sehen wir uns eine andere Möglichkeit zum Hochladen von Daten an. Mit der Workf
 
 ### Daten herunterladen und vorbereiten
 
-1. Sie sollten „luma-data.zip[ bereits heruntergeladen und in ](assets/luma-data.zip) Ordner &quot;`Luma Tutorial Assets`&quot; entpackt haben.
+1. Sie sollten „luma-data.zip[&#x200B; bereits heruntergeladen und in &#x200B;](assets/luma-data.zip) Ordner &quot;`Luma Tutorial Assets`&quot; entpackt haben.
 1. Vergewissern Sie sich, dass Sie Folgendes haben`luma-products.csv`
 
 ### Erstellen eines Workflows
@@ -286,10 +286,10 @@ Viele Quellen verfügen über einen ähnlichen Konfigurations-Workflow, in dem S
 
 ### Herunterladen, Vorbereiten und Hochladen der Daten an Ihren bevorzugten Cloud-Speicheranbieter
 
-1. Sie sollten „luma-data.zip[ bereits heruntergeladen und in ](assets/luma-data.zip) Ordner &quot;`Luma Tutorial Assets`&quot; entpackt haben.
+1. Sie sollten „luma-data.zip[&#x200B; bereits heruntergeladen und in &#x200B;](assets/luma-data.zip) Ordner &quot;`Luma Tutorial Assets`&quot; entpackt haben.
 1. Öffnen Sie `luma-offline-purchases.json` in einem Texteditor und ersetzen Sie alle Instanzen von `_techmarketingdemos` durch Ihre eigene Unterstrich-Mandanten-ID, wie in Ihren Schemata dargestellt
 1. Aktualisieren Sie alle Zeitstempel, sodass die Ereignisse im letzten Monat auftreten (suchen Sie beispielsweise nach `"timestamp":"2022-06` und ersetzen Sie Jahr und Monat)
-1. Wählen Sie Ihren bevorzugten Cloud-Speicheranbieter aus und stellen Sie sicher, dass er im [!UICONTROL Quellen“ ] ist
+1. Wählen Sie Ihren bevorzugten Cloud-Speicheranbieter aus und stellen Sie sicher, dass er im [!UICONTROL Quellen“ &#x200B;] ist
 1. Laden Sie `luma-offline-purchases.json` an einen Speicherort in Ihrem bevorzugten Cloud-Speicheranbieter hoch
 
 ### Aufnehmen der Daten an Ihrem bevorzugten Cloud-Speicherort
