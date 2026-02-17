@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 10d36ee194c8da937f667c1ba438681959c5fc68
+source-git-commit: 48a38fd96ea9072d207173a1b51153c6498090e0
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 0%
@@ -33,7 +33,7 @@ In dieser Lektion halten wir uns an die Benutzeroberfläche. Es gibt jedoch auch
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Zusammenführungsrichtlinien zu erfahren:
 >[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
-## Erforderliche Berechtigungen
+## Berechtigungen erforderlich
 
 In der Lektion [Berechtigungen konfigurieren](configure-permissions.md) richten Sie alle Zugriffssteuerungen ein, die zum Abschließen dieser Lektion erforderlich sind.
 
@@ -83,7 +83,7 @@ Mal sehen, ob die Zusammenführungsrichtlinie das tut, was wir erwarten würden:
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Durchsuchen]**.
 1. Ändern Sie die **[!UICONTROL Zusammenführungsrichtlinie]** in Ihre neue `Loyalty Prioritized`
 1. Verwenden Sie als **[!UICONTROL Identity-Namespace]** Ihren `Luma CRM Id`
-1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `b642b4217b34b1e8d3bd915fc65c4452`
+1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `f660ab912ec121d1b1e928a0bb4bc61b`
 1. Klicken Sie auf **[!UICONTROL Schaltfläche Profil anzeigen]**
 1. `Daniel` ist zurück!
 
@@ -110,7 +110,7 @@ Sehen wir uns nun an, was diese Zusammenführungsrichtlinie bewirkt:
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Durchsuchen]**.
 1. Ändern Sie die **[!UICONTROL Zusammenführungsrichtlinie]** in Ihre neue `Loyalty Only`
 1. Verwenden Sie als **[!UICONTROL Identity-Namespace]** Ihren `Luma CRM Id`
-1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `b642b4217b34b1e8d3bd915fc65c4452`
+1. Verwenden Sie als **[!UICONTROL Identitätswert]** den `f660ab912ec121d1b1e928a0bb4bc61b`
 1. Klicken Sie auf **[!UICONTROL Schaltfläche Profil anzeigen]**
 1. Bestätigen Sie, dass keine Profile gefunden wurden:
    ![Nur Treue - keine CRM-ID-Suche.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
@@ -138,7 +138,7 @@ Was ist hier los? Nun, Profilzusammenführungen sind keine einmalige Sache. Echt
 
 Ein wichtiger Anwendungsfall für Zusammenführungsrichtlinien ist Data Governance. Angenommen, Sie nehmen Daten von Drittanbietern in Platform auf, die nicht für Personalisierungs-Anwendungsfälle verwendet werden können _aber_ für Werbe-Anwendungsfälle verwendet werden können. Sie können eine Zusammenführungsrichtlinie erstellen, die diesen Drittanbieterdatensatz ausschließt, und diese Zusammenführungsrichtlinie zum Erstellen von Segmenten für Ihre Werbeanwendungsfälle verwenden.
 
-## Weitere Ressourcen
+## Zusätzliche Ressourcen
 
 * [Dokumentation zu Zusammenführungsrichtlinien](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=de)
 * [Zusammenführungsrichtlinien-API (Teil der Echtzeit-Kundenprofil-API)-Referenz](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)

@@ -10,7 +10,7 @@ thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 source-git-commit: 45fec5b2a82e12bdc4a9d017664e8c11d5625cef
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3125'
 ht-degree: 0%
 
 ---
@@ -91,32 +91,31 @@ Zunächst konfigurieren wir den Datenstrom. Ein Datenstrom teilt Experience Plat
 
 So erstellen Sie [!UICONTROL Datenstrom]:
 
-1. Melden Sie sich bei der Datenerfassungs-Benutzeroberfläche von [Experience Platform an](https://experience.adobe.com/launch/)
-   <!--when will the edge config go live?-->
-
+1. Stellen Sie sicher, dass Sie sich noch in der Sandbox ` Luma Tutorial`.
 1. Wählen **[!UICONTROL Datenströme]** im linken Navigationsbereich aus
 1. Klicken Sie auf **[!UICONTROL Neuer Datenstrom]** in der oberen rechten Ecke
 
-   ![Wählen Sie Datenströme im linken Navigationsbereich aus](assets/websdk-edgeConfig-clickNav.png)
+   ![Wählen Sie Datenströme im linken Navigationsbereich aus](assets/websdk-datastream-newDatastream.png)
 
 
 1. Geben Sie als **[!UICONTROL Anzeigename]** den `Luma Platform Tutorial` ein (fügen Sie am Ende Ihren Namen hinzu, wenn mehrere Personen in Ihrem Unternehmen an diesem Tutorial teilnehmen)
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-   ![Benennen Sie den Datenstrom und speichern Sie ihn](assets/websdk-edgeConfig-name.png)
+   ![Benennen Sie den Datenstrom und speichern Sie ihn](assets/websdk-datastream-name.png)
 
-Im nächsten Bildschirm geben Sie an, wohin Sie Daten senden möchten. So senden Sie Daten an Experience Platform:
+Sobald Daten bei der Edge eingehen, leitet [!UICONTROL Datenstrom] sie an die konfigurierten [!UICONTROL Services] weiter. So senden Sie Daten an Experience Platform:
 
-1. Schalten Sie **[!UICONTROL Adobe Experience Platform ein]** um zusätzliche Felder anzuzeigen
-1. Wählen **[!UICONTROL für]** Sandbox`Luma Tutorial`
-1. Wählen **[!UICONTROL für]** Ereignisdatensatz`Luma Web Events Dataset`
-1. Wenn Sie andere Adobe-Programme verwenden, können Sie die anderen Abschnitte lesen, um zu sehen, welche Informationen in der Edge-Konfiguration dieser anderen Lösungen erforderlich sind. Denken Sie daran, dass Web SDK nicht nur entwickelt wurde, um Daten in Experience Platform zu streamen, sondern auch, um alle vorherigen JavaScript-Bibliotheken zu ersetzen, die von anderen Adobe-Programmen verwendet wurden. Die Edge-Konfiguration wird verwendet, um die Kontodetails der einzelnen Anwendungen anzugeben, an die Sie die Daten senden möchten.
+1. Wählen Sie **[!UICONTROL Service hinzufügen]**
+   ![Service hinzufügen](assets/websdk-datastream-addService.png)
+
+1. `Luma Web Events Dataset` auswählen
 1. Wählen Sie **[!UICONTROL Speichern]**
-   ![Konfigurieren des Datenstroms und Speichern](assets/websdk-edgeConfig-addEnvironment.png)
 
-Nachdem die Edge-Konfiguration gespeichert wurde, zeigt der resultierende Bildschirm an, dass drei Umgebungen für Entwicklung, Staging und Produktion erstellt wurden. Zusätzliche Entwicklungsumgebungen können hinzugefügt werden:
-![Jede Edge-Konfiguration kann über mehrere Umgebungen verfügen](assets/websdk-edgeConfig-environments.png)
-Alle drei Umgebungen enthalten die soeben eingegebenen Platform-Details. Diese Details können jedoch je nach Umgebung unterschiedlich konfiguriert werden. Beispielsweise könnte jede Umgebung Daten an eine andere Platform-Sandbox senden. In diesem Tutorial nehmen wir keine zusätzliche Anpassung an unseren Datenstrom vor.
+   ![Datensatz auswählen und speichern](assets/websdk-datastream-addPlatformService.png)
+
+Obwohl in der Datenstromkonfiguration eine Option für einen Profildatensatz vorhanden ist, sollte diese nicht verwendet werden, um normale XDM-Profildaten an Platform zu senden. Diese Einstellung sollte nur verwendet werden, um Details zu Einverständnis, Push-Token und Benutzeraktivitäten zu senden.
+
+Die Kontrollkästchen für [!UICONTROL Offer Decisioning], [!UICONTROL Edge-Segmentierung], [!UICONTROL Personalization-Ziele] und [!UICONTROL Adobe Journey Optimizer] ermöglichen es Ihnen, Daten in Edge zu aktivieren, werden jedoch in diesem Tutorial nicht verwendet.
 
 ## Installieren der Web SDK-Erweiterung
 
@@ -126,8 +125,8 @@ Zunächst müssen wir eine Tag-Eigenschaft (früher eine Tag-Eigenschaft) erstel
 
 So erstellen Sie eine Eigenschaft:
 
-1. Navigieren Sie **[!UICONTROL linken Navigationsbereich zu]** Eigenschaften“.
-1. Klicken Sie auf **[!UICONTROL Schaltfläche „Neue Eigenschaft]**.
+1. Navigieren Sie **[!UICONTROL linken Navigationsbereich zu]** Tags“.
+1. Wählen Sie **[!UICONTROL Neue Eigenschaft]**
    ![Neue Eigenschaft hinzufügen](assets/websdk-property-addNewProperty.png)
 1. Geben **[!UICONTROL als]** Name`Luma Platform Tutorial` ein (fügen Sie am Ende Ihren Namen hinzu, wenn mehrere Personen in Ihrem Unternehmen an diesem Tutorial teilnehmen)
 1. Geben Sie als **[!UICONTROL Domains]** den `enablementadobe.com` ein (siehe Erklärung weiter unten)
@@ -164,10 +163,11 @@ Nachdem Sie nun über die Eigenschaft verfügen, können Sie die Web-SDK mithilf
 1. Navigieren Sie **[!UICONTROL linken Navigationsbereich]** Erweiterungen“.
 1. Wechseln Sie zur Registerkarte **[!UICONTROL Katalog]**.
 1. Für Tags stehen viele Erweiterungen zur Verfügung. Katalog mit dem Begriff `Web SDK` filtern
-1. Klicken Sie in der Erweiterung **[!UICONTROL Adobe Experience Platform Web]** SDK **[!UICONTROL auf die Schaltfläche]**Installieren“
+1. Wählen Sie die Erweiterung **[!UICONTROL Adobe Experience Platform Web SDK]** aus, um den Seitenbereich zu öffnen
+1. Klicken Sie auf **[!UICONTROL Schaltfläche „Installieren]**.
    ![Installieren der Adobe Experience Platform Web SDK-Erweiterung](assets/websdk-property-addExtension.png)
 1. Es gibt mehrere Konfigurationen für die Web-SDK-Erweiterung, aber es gibt nur zwei, die wir für dieses Tutorial konfigurieren werden. Aktualisieren Sie die **[!UICONTROL Edge]** Domäne auf `data.enablementadobe.com`. Mit dieser Einstellung können Sie Erstanbieter-Cookies mit Ihrer Web SDK-Implementierung festlegen. Dies wird empfohlen. Später in dieser Lektion ordnen Sie eine Website in der `enablementadobe.com` Domain Ihrer Tag-Eigenschaft zu. Der CNAME für die `enablementadobe.com` Domain wurde bereits so konfiguriert, dass `data.enablementadobe.com` an Adobe-Server weiterleitet. Wenn Sie Web SDK auf Ihrer eigenen Website implementieren, müssen Sie einen CNAME für Ihre eigenen Datenerfassungszwecke erstellen, z. B. `data.YOUR_DOMAIN.com`
-1. Wählen Sie **[!UICONTROL Dropdown-]** „Datenstrom“ Ihren `Luma Platform Tutorial` Datenstrom aus.
+1. Wählen **[!UICONTROL im Abschnitt]** für die Produktionsumgebung Ihre `Luma Tutorial` Sandbox und Ihren `Luma Platform Tutorial` Datenstrom aus.
 1. Sie können sich auch die anderen Konfigurationsoptionen ansehen (aber nicht ändern!) und dann auf &quot;**[!UICONTROL &quot;]**
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
@@ -179,7 +179,7 @@ Nachdem Sie nun über die Eigenschaft verfügen, können Sie die Web-SDK mithilf
 
 Jetzt erstellen wir eine Regel, um Daten an Platform zu senden. Eine Regel ist eine Kombination aus Ereignissen, Bedingungen und Aktionen, die Tags anweisen, etwas zu tun. Erstellen einer Regel:
 
-1. Navigieren Sie **[!UICONTROL linken Navigationsbereich zu]** Regeln“
+1. Navigieren Sie zu **[!UICONTROL Regeln]**
 1. Klicken Sie auf **[!UICONTROL Schaltfläche „Neue Regel]**&quot;
    ![Regel erstellen](assets/websdk-property-createRule.png)
 1. Geben Sie einen Namen für die Regel ein `All Pages - Library Loaded`.
@@ -191,7 +191,7 @@ Jetzt erstellen wir eine Regel, um Daten an Platform zu senden. Eine Regel ist e
 1. Lassen Sie **[!UICONTROL Bedingungen]** leer, da diese Regel gemäß dem angegebenen Namen auf allen Seiten ausgelöst werden soll
 1. Klicken **[!UICONTROL unter &quot;]**&quot; auf die **[!UICONTROL Hinzufügen]**-Schaltfläche
 1. Verwenden Sie **[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL Extension]** und wählen Sie **[!UICONTROL Ereignis senden]** als **[!UICONTROL Aktionstyp]**
-1. Wählen Sie auf der rechten Seite **[!UICONTROL web.webpagedetails.pageViews]** aus dem **[!UICONTROL Typ]** Dropdown. Dies ist eines der XDM-Felder in unserem `Luma Web Events Schema`
+1. Wählen Sie auf der rechten Seite **[!UICONTROL Webseitendetails Seitenansichten]** aus dem Dropdown **[!UICONTROL Typ]** aus. Dadurch wird das Feld eventType unserer `Luma Web Events Schema` ausgefüllt
 1. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus, um zum Hauptbildschirm für Regeln zurückzukehren
    ![Hinzufügen der Aktion „Ereignis senden“](assets/websdk-property-addAction.png)
 1. Wählen **[!UICONTROL Speichern]**, um die Regel zu speichern\
@@ -261,7 +261,7 @@ Experience Platform Debugger ist eine für Chrome verfügbare Erweiterung, mit d
 
 * [Chrome-Erweiterung](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-Wenn Sie den Debugger noch nie verwendet haben - und dieser unterscheidet sich vom älteren Adobe Experience Cloud Debugger - sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
+Wenn Sie den Debugger noch nie verwendet haben, sollten Sie sich dieses fünfminütige Übersichtsvideo ansehen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
@@ -284,7 +284,7 @@ Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie
 1. Der Debugger wird geöffnet und zeigt einige Details der hartcodierten Implementierung an, die nicht mit diesem Tutorial zusammenhängt (Sie müssen die Luma-Site möglicherweise nach dem Öffnen des Debuggers neu laden)
 1. Vergewissern Sie sich, dass der Debugger **[!UICONTROL mit Luma verbunden]** ist, wie unten dargestellt, und wählen Sie dann das Symbol &quot;**[!UICONTROL lock]**&quot; aus, um den Debugger für die Luma-Site zu sperren.
 1. Wählen Sie die **[!UICONTROL Anmelden]**-Schaltfläche oben rechts aus, um sich zu authentifizieren.
-1. Navigieren Sie jetzt **[!UICONTROL Launch]** im linken Navigationsbereich
+1. Navigieren Sie jetzt zu **[!UICONTROL Experience Platform-]** Tags} im linken Navigationsbereich
 1. Wählen Sie die Registerkarte Konfiguration aus
 1. Öffnen Sie rechts neben der Stelle, an der die **[!UICONTROL Seiteneinbettungs-Codes]** angezeigt werden, das **[!UICONTROL Aktionen]** und wählen Sie **[!UICONTROL Ersetzen]**
    ![Wählen Sie Aktionen > Ersetzen](assets/websdk-debugger-replaceLibrary.png)
@@ -292,16 +292,16 @@ Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie
 1. `Development` auswählen
 1. Klicken Sie auf die **[!UICONTROL Apply]**-Schaltfläche
    ![Wählen Sie die alternative Tag-Eigenschaft aus](assets/websdk-debugger-selectProperty.png)
-1. Die Luma-Website wird jetzt neu geladen _mit Ihrer Tag-Eigenschaft_. Hilfe, ich wurde gehackt! Das war nur ein Scherz.
+1. Die Luma-Website wird jetzt neu geladen _mit Ihrer Tag-Eigenschaft_.
    ![Tag-Eigenschaft ersetzt](assets/websdk-debugger-propertyReplaced.png)
 1. Navigieren Sie **[!UICONTROL linken]** zu „Zusammenfassung“, um die Details Ihrer „Launch[!UICONTROL -] anzuzeigen
    ![Registerkarte Zusammenfassung](assets/websdk-debugger-summary.png)
-1. Wechseln Sie jetzt zu **[!UICONTROL AEP Web SDK]** im linken Navigationsbereich, um die **[!UICONTROL Netzwerkanfragen“ anzuzeigen]**
+1. Wechseln Sie jetzt zu **[!UICONTROL Experience Platform Web SDK]** im linken Navigationsbereich, um die **[!UICONTROL Netzwerkanfragen“ anzuzeigen]**
 1. Öffnen Sie die **[!UICONTROL Ereignisse]** Zeile
+1. Beachten Sie, dass wir den `web.webpagedetails.pageView` Ereignistyp sehen können, den wir in unserer Aktion [!UICONTROL Ereignis senden] angegeben haben
 
    ![Adobe Experience Platform Web SDK-Anfrage](assets/websdk-debugger-platformNetwork.png)
-1. Beachten Sie, dass wir den `web.webpagedetails.pageView` Ereignistyp, den wir in unserer Aktion [!UICONTROL Ereignis senden] angegeben haben, und andere vordefinierte Variablen sehen können, die dem `AEP Web SDK ExperienceEvent Mixin` entsprechen
-   ![Ereignisdetails](assets/websdk-debugger-eventDetails.png)
+
 1. Diese Arten von Anfragedetails sind auch auf der Registerkarte „Netzwerk“ der Web-Entwickler **Tools** Browsers sichtbar. Öffnen Sie sie und laden Sie die Seite neu. Filtern Sie nach Aufrufen mit `interact`, um den Aufruf zu finden, ihn auszuwählen und dann in der Registerkarte **Kopfzeilen** im Bereich **Anfrage-**&quot; nachzuschlagen.
    ![Registerkarte „Netzwerk“](assets/websdk-debugger-networkTab.png)
 1. Wechseln Sie zur Registerkarte **Antwort** und beachten Sie, wie der ECID-Wert in der Antwort enthalten ist. Kopieren Sie diesen Wert, da Sie ihn zur Validierung der Profilinformationen in der nächsten Übung verwenden werden.
@@ -334,16 +334,34 @@ Sie können auch bestätigen, dass das neue Profil angezeigt wird:
 
 ## Hinzufügen benutzerdefinierter Daten zum Ereignis
 
-### Datenelement für Seitennamen erstellen
+### Erstellen eines Datenelements zum Speichern von XDM-Daten
 
-1. Öffnen Sie in der Datenerfassungs-Tags-Benutzeroberfläche in der oberen rechten Ecke der `Luma Platform Tutorial` die Dropdown-Liste **[!UICONTROL Arbeitsbibliothek auswählen]** und wählen Sie Ihre `Luma Platform Tutorial` aus. Diese Einstellung erleichtert das Veröffentlichen zusätzlicher Aktualisierungen in unserer Bibliothek.
+1. Zurück zur `Luma Platform Tutorial` Tag-Eigenschaft navigieren
+1. Öffnen Sie das **[!UICONTROL Arbeitsbibliothek auswählen]** und wählen Sie Ihre `Luma Platform Tutorial` aus. Diese Einstellung erleichtert das Veröffentlichen zusätzlicher Aktualisierungen in unserer Bibliothek.
 1. Navigieren Sie jetzt zu **[!UICONTROL Datenelemente]** im linken Navigationsbereich
 1. Klicken Sie auf **[!UICONTROL Schaltfläche Neues Datenelement erstellen]**
 
    ![Neues Datenelement erstellen](assets/websdk-property-createNewDataElement.png)
+
+Auf der Seite **[!UICONTROL Datenelemente]**:
+
+
+1. Geben Sie als **[!UICONTROL Name]** `XDM Object`
+1. Wählen Sie als **[!UICONTROL Erweiterung]** die Option `Adobe Experience Platform Web SDK`
+1. Wählen Sie als **[!UICONTROL Datenelementtyp]** die Option `XDM object`
+1. Wählen Sie als **[!UICONTROL Sandbox]** Ihre `Luma Tutorial` Sandbox aus
+1. Wählen Sie als **[!UICONTROL Schema]** Ihre `Luma Web Events Schema` aus
+1. `web.webPageDetails.name` auswählen
+1. Wählen Sie **[!UICONTROL Wert]** das Symbol aus, um das Datenelement-Auswahlmodal zu öffnen, und wählen Sie Ihr `Page Name` Datenelement aus
+1. Wählen Sie **[!UICONTROL In Bibliothek speichern]**
+   ![Ordnen Sie den Seitennamen dem XDM-Objekt-Datenelement zu](assets/websdk-property-dataElement-createXDMVariable.png)
+
+### Datenelement für Seitennamen erstellen
+
+1. Erstellen eines neuen Datenelements
 1. Geben Sie als **[!UICONTROL Name]** `Page Name`
 1. Wählen Sie als **[!UICONTROL Datenelementtyp]** die Option `JavaScript Variable`
-1. Geben Sie als **[!UICONTROL JavaScript]** Variablennamen `digitalData.page.pageInfo.pageName` ein
+1. Geben Sie als **[!UICONTROL JavaScript]** Variablennamen `adobeDataLayer.0.page.name` ein
 1. Um das Format der Werte zu standardisieren, aktivieren Sie die Kontrollkästchen für **[!UICONTROL Kleinbuchstaben erzwingen]** und **[!UICONTROL Text]**
 1. Stellen Sie sicher, dass `Luma Platform Tutorial` als Arbeitsbibliothek ausgewählt ist
 1. Wählen Sie **[!UICONTROL In Bibliothek speichern]**
@@ -353,25 +371,10 @@ Sie können auch bestätigen, dass das neue Profil angezeigt wird:
 
 Jetzt ordnen wir unseren Seitennamen der Web-SDK zu.
 
->[!IMPORTANT]
->
->Um diese Aufgabe abzuschließen, müssen wir sicherstellen, dass Ihre Benutzerin bzw. Ihr Benutzer zuerst Zugriff auf die Produktions-Sandbox hat. Wenn Sie noch keinen Zugriff auf die Produktions-Sandbox von einem anderen Produktprofil aus haben, öffnen Sie schnell Ihr `Luma Tutorial Platform` und fügen Sie das Berechtigungselement **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]** hinzu. Führen Sie danach auf der Seite „Datenelemente“ die UMSCHALTTASTE Neu laden aus, um den Cache zu löschen
->![Fügen Sie die Produktions-Sandbox hinzu](assets/websdk-property-permissionToLoadSchema.png)
 
-Auf der Seite **[!UICONTROL Datenelemente]**:
 
-1. Erstellen eines neuen Datenelements
-1. Geben Sie als **[!UICONTROL Name]** `XDM Object`
-1. Wählen Sie als **[!UICONTROL Erweiterung]** die Option `Adobe Experience Platform Web SDK`
-1. Wählen Sie als **[!UICONTROL Datenelementtyp]** die Option `XDM object`
-1. Wählen Sie als **[!UICONTROL Sandbox]** Ihre `Luma Tutorial` Sandbox aus
-1. Wählen Sie als **[!UICONTROL Schema]** Ihre `Luma Web Events Schema` aus
-1. `web.webPageDetails.name` auswählen
-1. Wählen Sie **[!UICONTROL Wert]** das Symbol aus, um das Datenelement-Auswahlmodal zu öffnen, und wählen Sie Ihr `Page Name` Datenelement aus
-1. Wählen Sie **[!UICONTROL In Bibliothek speichern]**
-   ![Ordnen Sie den Seitennamen dem XDM-Objekt-Datenelement zu](assets/websdk-property-dataElement-createXDMObject.png)
 
-Derselbe Prozess wird verwendet, um zusätzliche benutzerdefinierte Daten auf Ihrer Website XDM-Feldern zuzuordnen.
+
 
 ### Hinzufügen der XDM-Daten zur Aktion „Ereignis senden“
 
