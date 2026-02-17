@@ -64,7 +64,7 @@ Weitere Informationen für diejenigen, die die Datenerfassung in Adobe Experienc
 - [Benutzerhandbuch zur Datenerfassung in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)
 - [Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de)
 - [Einrichten von Benutzerberechtigungen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de)
-- [API-Handbuch](https://experienceleague.adobe.com/en/docs/experience-platform/tags/api/overview)
+- [API-Handbuch](https://experienceleague.adobe.com/de/docs/experience-platform/tags/api/overview)
 
 ## Nächste Schritte
 
