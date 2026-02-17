@@ -41,7 +41,7 @@ Bevor Sie mit den Übungen beginnen, sehen Sie sich diese beiden kurzen Videos a
 
 >[!NOTE]
 >
->Während sich dieses Tutorial auf die Streaming-Aufnahme von Websites mit Web SDK konzentriert, können Sie Daten auch mit der [Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), der [Edge Network Server-API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) und der [HTTP-API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http) streamen.
+>Während sich dieses Tutorial auf die Streaming-Aufnahme von Websites mit Web SDK konzentriert, können Sie Daten auch mit der [Mobile SDK](https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/overview), der [Edge Network Server-API](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/server-api/overview) und der [HTTP-API](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/streaming/http) streamen.
 
 ## Berechtigungen erforderlich
 
