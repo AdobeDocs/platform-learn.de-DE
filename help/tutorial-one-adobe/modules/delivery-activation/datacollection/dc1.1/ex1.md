@@ -4,7 +4,7 @@ description: Foundation - Einrichtung der Adobe Experience Platform-Datenerfassu
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
+source-git-commit: f9aab1a556e1d58a3f76f0ca877ecbd5f5e6e12f
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Die Datenerfassung in Adobe Experience Platform wird von Marken für eine Reihe 
 - Ermöglicht Tests und Lebenszyklus-Management.
 - Fügen Sie benutzerdefinierte JavaScript- und Drittanbieter-Tags ein, die alle an einem Ort verwaltet werden.
 
-## Erkunden der Benutzeroberfläche
+## Benutzeroberfläche erkunden
 
 Zur [Adobe Experience Platform-Datenerfassung](https://experience.adobe.com/#/data-collection/). Stellen Sie sicher, dass Sie die richtige Umgebung verwenden, die `--aepImsOrgName--` werden sollte.
 
@@ -48,7 +48,7 @@ Schauen Sie sich jetzt die linke Leiste an.
 
 - **[!UICONTROL Tags]** bietet einen Überblick über alle Client-seitigen Eigenschaften
 - **[!UICONTROL App-Oberflächen]** bietet einen Überblick über alle App-Konfigurationen zum Aktivieren von Push-Benachrichtigungen (die in Kombination mit Project Sierra verwendet/aktiviert wird)
-- **[!UICONTROL Datenströme]** werden in der [&#x200B; Übung untersucht](./ex2.md)
+- **[!UICONTROL Datenströme]** werden in der [ Übung untersucht](./ex2.md)
 - **[!UICONTROL Ereignisweiterleitung]** bietet einen Überblick über alle Server-seitigen Eigenschaften, die in untersucht werden [Modul 2.5 - Real-Time CDP Connections: Ereignisweiterleitung](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
 - **[!UICONTROL Monitoring]** bietet einen Überblick über den eingehenden und ausgehenden Ereignisdatenverkehr durch die Ereignisweiterleitung
 - **[!UICONTROL Assurance]** Ermöglicht den Zugriff zum Debuggen einer Implementierung mithilfe von Adobe Debugger
@@ -62,9 +62,9 @@ Die Adobe Experience Platform-Datenerfassung ist ein sehr fortschrittliches Tool
 Weitere Informationen für diejenigen, die die Datenerfassung in Adobe Experience Platform besser verstehen möchten, finden Sie im Folgenden.
 
 - [Benutzerhandbuch zur Datenerfassung in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)
-- [Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/overview)
+- [Tutorial zur Implementierung von Adobe Experience Cloud mit Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=de)
 - [Einrichten von Benutzerberechtigungen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de)
-- [API-Handbuch](https://developer.adobelaunch.com/api/)
+- [API-Handbuch](https://experienceleague.adobe.com/en/docs/experience-platform/tags/api/overview)
 
 ## Nächste Schritte
 
