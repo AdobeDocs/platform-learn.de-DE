@@ -1,12 +1,12 @@
 ---
-title: Content Production Agent
-description: Content Production Agent
+title: Erste Schritte mit AEM-Agenten
+description: Erste Schritte mit AEM-Agenten
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
-source-git-commit: 7ea3bdc9557ea9e88ddd9693f9ffbfbc634857f8
+source-git-commit: abec60dbd2a67228fb5bbcedaadc7494e0057eda
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '1636'
 ht-degree: 1%
 
 ---
@@ -200,7 +200,7 @@ Sie können dann auch alle anderen verfügbaren Metadaten überprüfen.
 
 ## 1.6.1.2 Experience Production Agent
 
-### Inhaltsaktualisierung
+### Inhaltsaktualisierung - Assets
 
 Die Fähigkeit zur Inhaltsaktualisierung aktualisiert vorhandene Inhalte - einschließlich Inhaltsfragmenten, Seiten, Formularen und Assets - mit Leichtigkeit. Der Agent kann Aktionen wie das Aktualisieren, Entfernen, Ersetzen oder Hinzufügen von Inhaltselementen durchführen, um Erlebnisse genau und aktuell zu halten. Eingaben können Beschreibungen in natürlicher Sprache sein und bei Verwendung mit Jira-PDFs und Screenshots auch Eingaben liefern.
 
@@ -222,10 +222,246 @@ Nach einigen Minuten sollten Sie eine ähnliche Antwort sehen.
 
 ![AEM-Agenten](./images/aemagents42.png)
 
-### Formularerstellung
+### Inhaltsaktualisierung - Seiten
+
+Gehen Sie zurück zu Ihrer Adobe Experience Manager-Autorenumgebung und dann zu **Sites**.
+
+![AEM-Agenten](./images/aemagents43.png)
+
+Gehen Sie zu **CitiSignal**. Klicken Sie **Erstellen** und wählen Sie **Seite** aus.
+
+![AEM-Agenten](./images/aemagents44.png)
+
+Wählen Sie **Seite** aus und klicken Sie auf **Weiter**.
+
+![AEM-Agenten](./images/aemagents45.png)
+
+Geben Sie die folgenden Werte ein:
+
+- Titel: **Fibre Max**
+- Name: **fiber-max**
+- Seitentitel: **Fibre Max**
+
+Klicken Sie auf **Erstellen**.
+
+![AEM-Agenten](./images/aemagents46.png)
+
+Wählen Sie **Öffnen** aus.
+
+![AEM-Agenten](./images/aemagents47.png)
+
+Sie sollten das dann sehen.
+
+![AEM-Agenten](./images/aemagents48.png)
+
+Klicken Sie in den leeren Bereich, um die Komponente **Abschnitt** auszuwählen. Klicken Sie dann auf das Pluszeichen **+** im rechten Menü und wählen Sie **Hero**.
+
+![AEM-Agenten](./images/aemagents49.png)
+
+Sie sollten das dann sehen. Klicken Sie auf **+**, um ein Bild hinzuzufügen.
+
+![AEM-Agenten](./images/aemagents50.png)
+
+Wählen Sie Ihr Assets-Repository aus. Öffnen Sie dann den Ordner **CitiSignal**.
+
+![AEM-Agenten](./images/aemagents51.png)
+
+Wählen Sie das Bild des Löwen, das Sie zuvor hochgeladen haben. Klicken Sie auf **Auswählen**.
+
+![AEM-Agenten](./images/aemagents52.png)
+
+Sie sollten das dann sehen. Klicken Sie auf **Text**-Bereich, um den Text zu ändern.
+
+![AEM-Agenten](./images/aemagents53.png)
+
+Fügen Sie diesen Text in den Bereich ein:
+
+```
+This winter, be as fast as a lion.
+```
+
+Wählen Sie **Überschrift 1** aus und klicken Sie dann auf **Fertig**.
+
+![AEM-Agenten](./images/aemagents54.png)
+
+Sie sollten das dann sehen. Navigieren Sie **Inhaltsstruktur** und wählen Sie den Bereich **Abschnitt** aus.
+
+![AEM-Agenten](./images/aemagents55.png)
+
+Klicken Sie auf das Symbol **+** und wählen Sie dann **Karten** aus.
+
+![AEM-Agenten](./images/aemagents56.png)
+
+Sie sollten das dann sehen. Stellen Sie sicher, dass in der **Inhaltsstruktur** die Option **Karten** ausgewählt ist.
+
+Klicken Sie dann viermal auf die Schaltfläche **+**.
+
+![AEM-Agenten](./images/aemagents57.png)
+
+Sie sollten dies nun sehen, wo es vier **Card**-Objekte im **Cards**-Objekt gibt.
+
+![AEM-Agenten](./images/aemagents58.png)
+
+Wählen Sie die erste **Karte** aus. Klicken Sie auf **Text**-Bereich, um den Text zu ändern.
+
+![AEM-Agenten](./images/aemagents59.png)
+
+Fügen Sie den folgenden Text ein. Stellen Sie sicher, dass in der ersten Textzeile „Überschrift **&quot; verwendet**. Klicken Sie auf **Fertig**.
+
+```
+99.9% network reliability
+
+Game, video chat and stream on multiple devices with ultra low lag.
+```
+
+![AEM-Agenten](./images/aemagents60.png)
+
+Wählen Sie die zweite **Karte** aus. Klicken Sie auf **Text**-Bereich, um den Text zu ändern.
+
+![AEM-Agenten](./images/aemagents61.png)
+
+Fügen Sie den folgenden Text ein. Stellen Sie sicher, dass in der ersten Textzeile „Überschrift **&quot; verwendet**. Klicken Sie auf **Fertig**.
+
+```
+3-year
+
+price lock guarantee
+
+For new and existing Fiber Max customers on all internet plans.
+
+No hidden fees.
+```
+
+![AEM-Agenten](./images/aemagents62.png)
+
+Wählen Sie die dritte **Karte** aus. Klicken Sie auf **Text**-Bereich, um den Text zu ändern.
+
+![AEM-Agenten](./images/aemagents63.png)
+
+Fügen Sie den folgenden Text ein. Stellen Sie sicher, dass in der ersten Textzeile „Überschrift **&quot; verwendet**. Klicken Sie auf **Fertig**.
+
+```
+More ways to save
+
+Save over 45% on the best entertainment with CitiSignal
+```
+
+![AEM-Agenten](./images/aemagents64.png)
+
+Wählen Sie die vierte **Karte** aus. Klicken Sie auf **Text**-Bereich, um den Text zu ändern.
+
+![AEM-Agenten](./images/aemagents65.png)
+
+Fügen Sie den folgenden Text ein. Stellen Sie sicher, dass in der ersten Textzeile „Überschrift **&quot; verwendet**. Klicken Sie auf **Fertig**.
+
+```
+Get Fiber Max now!
+
+Fill out the form here to get started.
+```
+
+![AEM-Agenten](./images/aemagents66.png)
+
+Du solltest das jetzt haben. Klicken Sie auf **Veröffentlichen**.
+
+![AEM-Agenten](./images/aemagents67.png)
+
+Klicken **erneut auf** Veröffentlichen“.
+
+![AEM-Agenten](./images/aemagents68.png)
+
+Klicken Sie **Seite öffnen**.
+
+![AEM-Agenten](./images/aemagents69.png)
+
+Kopieren Sie die URL der Seite so, wie Sie sie als Nächstes benötigen.
+
+Die URL sollte etwa wie folgt lauten: `https://author-pXXXXXX-eXXXXXXX.adobeaemcloud.com/content/CitiSignal/fiber-max.html`.
+
+![AEM-Agenten](./images/aemagents70.png)
+
+Navigieren Sie zu [https://experience.adobe.com/#/experiencemanager/](https://experience.adobe.com/#/experiencemanager/). Klicken, um **KI-Assistent** zu öffnen.
+
+![AEM-Agenten](./images/aemagents71.png)
+
+Fügen Sie die folgende Eingabeaufforderung ein und klicken Sie auf **Senden**. Ersetzen Sie XXX in dieser Eingabeaufforderung durch die URL, die Sie im vorherigen Schritt kopiert haben.
+
+```
+On the page XXX, please make the following changes:
+
+- change the word 'winter' to 'spring'
+- change the word 'lion' to 'leopard'
+- change the image in the hero block to use the image 'citisignal_leopard.png'
+- change the text '99.9% network reliability' to '99.999% network reliability'
+```
+
+![AEM-Agenten](./images/aemagents72.png)
+
+Nach 1-2 Minuten sollten Sie dies sehen. Geben Sie den `generate` ein und klicken Sie auf **Senden**.
+
+![AEM-Agenten](./images/aemagents74.png)
+
+Einige Minuten später sollten Sie eine Bestätigung wie die folgende sehen, dass die Änderungen durchgeführt wurden. Klicken Sie **Vorschau der aktualisierten Seite anzeigen**.
+
+![AEM-Agenten](./images/aemagents75.png)
+
+Sie erhalten jetzt eine visuelle Bestätigung der vorgenommenen Änderungen. Diese Vorschauseite dient nur zu Informationszwecken. Sie können von dieser Seite aus keine Aktion ausführen.
+
+![AEM-Agenten](./images/aemagents76.png)
+
+Um eine Aktion durchzuführen, klicken Sie auf **In AEM bearbeiten**.
+
+![AEM-Agenten](./images/aemagents75a.png)
+
+Im universellen Editor sehen Sie nun alle Änderungen im Detail, mit der Möglichkeit, alles zu ändern. Nachdem Sie die Seite überprüft haben, klicken Sie auf **Veröffentlichen**.
+
+![AEM-Agenten](./images/aemagents77.png)
+
+Klicken **erneut auf** Veröffentlichen“. Die von Ihnen vorgenommene Änderung wird noch nicht in Ihrer Produktionsumgebung veröffentlicht. Stattdessen wurde es unter &quot;**&quot;** AEM veröffentlicht.
+
+Launches ermöglichen die effiziente Entwicklung von Inhalten für eine zukünftige Version. Ein Launch wird erstellt, damit Sie Änderungen in Vorbereitung auf eine zukünftige Veröffentlichung vornehmen und gleichzeitig Ihre aktuellen Seiten pflegen können. Das bedeutet, dass Sie effektiv zwei Versionen gleichzeitig bearbeiten: Seiten, die derzeit veröffentlicht sind, und eine Version dieser Seiten, die zu einem späteren Zeitpunkt veröffentlicht werden sollen. Sobald diese Zeit gekommen ist, können Sie die Originalseiten ersetzen und die neue Version veröffentlichen.
+
+![AEM-Agenten](./images/aemagents78.png)
+
+Um **ausstehenden** für eine zukünftige Version zu bewerben, gehen Sie zurück zu AEM. Klicken Sie oben auf **Seite auf** Adobe Experience Manager, klicken Sie auf das **Hammer**-Symbol und wählen Sie dann **Launches** aus.
+
+![AEM-Agenten](./images/aemagents79.png)
+
+Es sollte jetzt ein ausstehender &quot;**&quot;**. Aktivieren Sie das Kontrollkästchen vor dem ausstehenden **Launch**.
+
+![AEM-Agenten](./images/aemagents80.png)
+
+Klicken Sie auf **Bewerben**.
+
+![AEM-Agenten](./images/aemagents81.png)
+
+Wählen Sie **Vollständigen Launch hochstufen** und klicken Sie auf **Weiter**.
+
+![AEM-Agenten](./images/aemagents82.png)
+
+Klicken Sie auf **Bewerben**.
+
+![AEM-Agenten](./images/aemagents83.png)
+
+Sie sollten das jetzt sehen. Ihre Änderungen sind jetzt in Produktion.
+
+![AEM-Agenten](./images/aemagents84.png)
+
+Aktualisieren Sie Ihre Seite. Jetzt sollten alle Ihre Änderungen auf der veröffentlichten Seite angezeigt werden.
+
+![AEM-Agenten](./images/aemagents85.png)
+
+Anstatt den manuellen Weiterleitungsprozess zu durchlaufen, können Sie auch die `accept` im KI-Assistenten eingeben.
+
+![AEM-Agenten](./images/aemagents86.png)
+
+Sie sollten dann eine Bestätigung erhalten, dass Änderungen veröffentlicht werden.
+
+![AEM-Agenten](./images/aemagents87.png)
+
+### Inhaltsaktualisierung - Formularerstellung
 
 Die Fähigkeit zur Formularerstellung ermöglicht es Benutzenden, adaptive Formulare über Eingabeaufforderungen in natürlicher Sprache zu erstellen, ohne von Entwicklungs- oder IT-Teams abhängig zu sein. Diese Funktion beschleunigt die Formularentwicklung, während die Markenkonsistenz gewahrt bleibt und es Geschäftsbenutzern ermöglicht wird, Formulare ohne fundierte technische Produktkenntnisse zu erstellen.
-
 
 ## Nächste Schritte
 

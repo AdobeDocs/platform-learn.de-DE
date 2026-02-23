@@ -1,22 +1,22 @@
 ---
-title: Technische Unterstützung für GenStudio für die Inhaltslieferkette
-description: Technische Unterstützung für GenStudio für die Inhaltslieferkette
+title: Technische Unterstützung für GenStudio Content Supply chain
+description: Technische Unterstützung für GenStudio Content Supply chain
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
+source-git-commit: 9ff92b0c295f854219631f1463c3ccabc1a65938
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Überblick - Technische Unterstützung für GenStudio für die Inhaltslieferkette
+# Überblick - Technische Unterstützung für GenStudio Content Supply chain
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Überblick
 
-Wenn Sie an einem unserer fokussierten GenStudio-Workshops zur technischen Aktivierung der Inhaltslieferkette teilnehmen, ist dies der Ausgangspunkt für die Tech Labs, die Sie nutzen werden.
+Wenn Sie an einem unserer fokussierten GenStudio Content Supply chain Technical Enablement -Workshops teilnehmen, ist dies der Ausgangspunkt für die Tech Labs, die Sie nutzen werden.
 
 In den Tech Labs lernen Sie im Rahmen dieses technischen Workshops praxisnah die folgenden Anwendungen kennen:
 
@@ -28,7 +28,7 @@ In den Tech Labs lernen Sie im Rahmen dieses technischen Workshops praxisnah die
 
 Die Tech Labs, an denen Sie teilnehmen werden, sind Teil eines umfassenderen Tutorials zu One Adobe, in dem Sie noch mehr über die umfassenden Lösungen von Adobe Creative Cloud und Adobe Experience Cloud erfahren können. Wenn Sie wissen möchten, was verfügbar ist, schauen Sie hier: [Eine Adobe-Tutorial-Übersicht](./overview.md)
 
-## GenStudio für Content Supply Chain Tech Labs
+## GenStudio für Inhalte Supply chain Tech Labs
 
 Im Folgenden finden Sie die Tech Labs, an denen Sie im Rahmen dieses Workshops zur technischen Unterstützung teilnehmen werden.
 

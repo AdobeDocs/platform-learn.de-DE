@@ -3,9 +3,9 @@ title: Inhaltsstatus
 description: Inhaltsstatus
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 1e20509f0005c6060764fa3f572acbd14fb76600
+source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '595'
 ht-degree: 11%
 
 ---
@@ -18,7 +18,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 
 | Name | Letzte Aktualisierung | 100 % arbeiten | Bemerkungen          | Zeitinvestition |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Erste Schritte &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Ja | – | 45 Min |
+| [0. Erste Schritte ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Ja | – | 45 Min |
 
 ## Workflow und Planung
 
@@ -47,6 +47,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Experience Manager Cloud Service und Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | Ja | – | 1 Stunde 30 Min. |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | Ja | – | 30 Min |
+| [1.3 Adobe Experience Manager Forms mit Edge Delivery Services](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"} | 23/02/2026 | Ja | – | 60 Min |
 | [1.4 Adobe Experience Manager Assets und Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"} | 17/02/2026 | Ja | – | 1 Std. 30 Min |
 | [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 23/09/2025 | Ja | – | 1 Std. 30 Min |
 
@@ -66,7 +67,7 @@ Im Folgenden finden Sie einen Überblick über den Status der Inhalte in diesem 
 | [3.1 Adobe Journey Optimizer: Orchestrierung](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.2 Adobe Journey Optimizer: Externe Datenquellen und benutzerdefinierte Aktionen](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.3 Adobe Journey Optimizer: Push- und In-App-Nachrichten](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"} | 03/07/2025/2025 | Ja | – | 2 Std |
-| [3.4 Adobe Journey Optimizer: Ereignisbasierte Journey &#x200B;](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
+| [3.4 Adobe Journey Optimizer: Ereignisbasierte Journey ](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.5 Adobe Journey Optimizer: Übersetzungsdienstleistungen](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.6 Adobe Journey Optimizer: Content-Management](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | Ja | – | 2 Std |
 | [3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 03/07/2025 | Nein | Content wird entwickelt | TBD |
