@@ -4,9 +4,9 @@ description: Erste Schritte mit AEM-Agenten
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
-source-git-commit: abec60dbd2a67228fb5bbcedaadc7494e0057eda
+source-git-commit: c7108c2818ee7fad820af33b99f277181bcf6a02
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1674'
 ht-degree: 1%
 
 ---
@@ -461,7 +461,24 @@ Sie sollten dann eine Bestätigung erhalten, dass Änderungen veröffentlicht we
 
 ### Inhaltsaktualisierung - Formularerstellung
 
-Die Fähigkeit zur Formularerstellung ermöglicht es Benutzenden, adaptive Formulare über Eingabeaufforderungen in natürlicher Sprache zu erstellen, ohne von Entwicklungs- oder IT-Teams abhängig zu sein. Diese Funktion beschleunigt die Formularentwicklung, während die Markenkonsistenz gewahrt bleibt und es Geschäftsbenutzern ermöglicht wird, Formulare ohne fundierte technische Produktkenntnisse zu erstellen.
+Im Modul [Adobe Experience Manager Forms mit Edge Delivery Services ](./../../asset-mgmt/module1.3/aemforms.md){target="_blank"} Sie die Schritte, die bei der manuellen Erstellung eines Formulars erforderlich sind.
+
+Die Fähigkeit zur Formularerstellung ermöglicht es Benutzenden jetzt, adaptive Formulare über Eingabeaufforderungen in natürlicher Sprache zu erstellen, ohne von Entwicklungs- oder IT-Teams abhängig zu sein. Diese Funktion beschleunigt die Formularentwicklung, während die Markenkonsistenz gewahrt bleibt und es Geschäftsbenutzern ermöglicht wird, Formulare ohne fundierte technische Produktkenntnisse zu erstellen.
+
+Navigieren Sie zu [https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat).
+
+![AEM-Agenten](./images/aemagentsforms1.png)
+
+Geben Sie die folgende Eingabeaufforderung ein und klicken Sie auf **Senden**.
+
+```
+Create a new adaptive form using Edge Delivery Services with the following details:
+- Form name: "citisignal-fiber-max-interest-2"
+- Form fields: 4 text input fields are needed, for "first-name", "last-name", "email" and "city"
+- When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
+```
+
+
 
 ## Nächste Schritte
 
