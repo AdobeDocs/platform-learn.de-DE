@@ -29,7 +29,7 @@ Bevor Sie Ihr erstes Formular konfigurieren, müssen Sie eine Reihe von Anforder
 
 ### Programm-Setup
 
-In den **Lösungen und Add** ons Ihres Cloud Manager Forms-Programms muss **** aktiviert sein.
+In den **Lösungen und Add** ons Ihres Cloud Manager Forms-Programms muss **&#x200B;**&#x200B;aktiviert sein.
 
 ![AEM Forms](./images/program.png)
 
