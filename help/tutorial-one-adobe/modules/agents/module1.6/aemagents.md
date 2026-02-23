@@ -4,10 +4,10 @@ description: Adobe Experience Manager und Agenten
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: 7ea3bdc9557ea9e88ddd9693f9ffbfbc634857f8
+source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 2%
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,11 @@ In diesem Video erhalten Sie eine Erklärung und Demonstration aller Schritte, d
 [1.6.1 Erste Schritte mit AEM-Agenten](./ex1.md){target="_blank"}
 
 In dieser Übung erkunden Sie **Discovery Agent** und **Experience Production Agent**.
+
+[1.6.2 AEM MCP-Server und Cursor](./ex2.md)
+
+In dieser Übung verbinden Sie Ihre Cursor-Umgebung mit AEM mithilfe des AEM MCP-Servers.
+
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

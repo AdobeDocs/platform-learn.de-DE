@@ -3,7 +3,8 @@ title: Erstellen des ersten Formulars
 description: Erstellen des ersten Formulars
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9aad8cb1fdfa739d1660bc25376b874fa8ed8c89
+exl-id: 288e113f-2e9e-4352-8ddd-ca231b552b70
+source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 10%
@@ -28,7 +29,7 @@ Bevor Sie Ihr erstes Formular konfigurieren, müssen Sie eine Reihe von Anforder
 
 ### Programm-Setup
 
-In den **Lösungen und Add** ons Ihres Cloud Manager Forms-Programms muss **&#x200B;**&#x200B;aktiviert sein.
+In den **Lösungen und Add** ons Ihres Cloud Manager Forms-Programms muss **** aktiviert sein.
 
 ![AEM Forms](./images/program.png)
 
@@ -100,7 +101,7 @@ if (block.dataset.aueModel === 'form') {
 
 Wenn diese Anforderungen erfüllt sind, können Sie Ihr erstes Formular erstellen.
 
-## 1.3.1.1 Formular erstellen
+## 1.3.1.2 Formular erstellen
 
 Navigieren Sie zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Die gewünschte Organisation ist `--aepImsOrgName--`. Öffnen Sie Ihre Umgebung.
 
@@ -270,7 +271,7 @@ Nach dem Veröffentlichen des Formulars ist es jetzt auch in Ihrer Edge Delivery
 
 ![AEM Forms](./images/aemforms29.png)
 
-## 1.3.1.2 Formular senden
+## 1.3.1.3 Formular senden
 
 Um Ihr Formular abschicken zu können, sind zwei Dinge erforderlich:
 

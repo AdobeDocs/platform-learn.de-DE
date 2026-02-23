@@ -3,9 +3,9 @@ title: Überblick über Agent AI Tech Labs
 description: Überblick über Agent AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,20 @@ In dieser Übung lernen Sie Folgendes:
 
 - Verbinden von ChatGPT und/oder Claude.ai mit **Customer Journey Analytics** und Ausführen von Datenanalyseaufgaben
 - Verbinden von ChatGPT und/oder Claude.ai mit **Adobe Analytics** und Ausführen von Datenanalyseaufgaben
+
+[1.6 AEM und Agenten](./modules/agents/module1.6/aemagents.md){target="_blank"}
+
+**Ziel**
+
+Adobe Experience Manager umfasst jetzt mehrere speziell entwickelte Agenten, von denen jeder so konzipiert ist, dass er Aufgaben übernimmt, die bisher haufenweise manuellen Aufwand erforderten. Dabei handelt es sich nicht um generische KI-Assistenten, sondern um in der Domain geschulte Agenten, die AEM gut verstehen und in den Bereichen Inhalte, Code, Assets, Governance und Optimierung agieren.
+
+- **Experience Production Agent** beschleunigt Aktualisierungen, Inhaltsänderungen und sogar vollständige Site-Migrationen.
+- **Governance-Agent** setzt Marken-, Rechte- und Compliance-Regeln automatisch um.
+- **Discovery Agent** bereitet Inhalte für die KI-native Erkennung vor und fungiert als intelligenter Stratege.
+- **Content Optimization Agent** erstellt sofort leistungsfähige, kanalspezifische Asset-Varianten.
+- **Entwicklungsagent** beschleunigt Entwickler mit KI-unterstützter Fehlerbehebung und Leistungsoptimierung.
+
+In dieser Übung erfahren Sie, wie Sie diese Agenten verwenden, indem Sie sowohl den KI-Assistenten als auch den Cursor über die benutzerdefinierte MCP-Server-Einrichtung verwenden.
 
 [1.7 Intelligent Developer Tools für Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
 

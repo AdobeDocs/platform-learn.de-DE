@@ -4,9 +4,9 @@ breadcrumb-title: Ein technisches Tutorial zu Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7315383e72017a9922cc5f06b727c465c07f4052
+source-git-commit: 13a411645ea4e06d06ee6ab27e4f726e87dbbf22
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1531'
 ht-degree: 3%
 
 ---
@@ -289,6 +289,7 @@ ht-degree: 3%
    + 1.6 AEM und Agenten {#agents6}
       + [Überblick](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
       + [1.6.1 Erste Schritte mit AEM-Agenten](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.2 AEM MCP-Server und Cursor](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
    + 1.7 Intelligent Developer Tools für Adobe Commerce {#agents7}
       + [Überblick](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 Einrichten der Entwicklungsumgebung](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
