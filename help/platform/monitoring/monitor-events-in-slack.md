@@ -52,7 +52,7 @@ Adobe App Builder ist ein vollständiges Framework, mit dem Unternehmensentwickl
 
 * **Projektvorlage**: App Builder-Projekte werden speziell mithilfe der Vorlage **[!UICONTROL App Builder]** im [!DNL Developer Console] erstellt ([!UICONTROL Projekt aus Vorlage] > [!UICONTROL App Builder]). Die Vorlage richtet automatisch die erforderlichen Arbeitsbereiche und Laufzeitumgebungen ein.
 
-* **Erste Schritte mit App Builder**: Lesen Sie die Dokumentation [um Ihr erstes Projekt aus der Vorlage bereitzustellen und zu ](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app){target=_blank}.
+* **Erste Schritte mit App Builder**: Lesen Sie die Dokumentation [um Ihr erstes Projekt aus der Vorlage bereitzustellen und zu &#x200B;](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app){target=_blank}.
 
 ### Was ist Adobe I/O Runtime?
 
@@ -71,7 +71,7 @@ Bevor Sie beginnen, stellen Sie Folgendes sicher:
 * **Zugriff auf Adobe Developer Console**: Sie müssen Zugriff auf eine Systemadministrator- oder [Entwicklerrolle](../admin/add-developers.md) innerhalb eines Unternehmens haben, für das App Builder aktiviert ist.
 
   >[!TIP]
-  > Um die Bereitstellung von App Builder zu überprüfen, melden Sie sich bei [Adobe Developer Console](https://developer.adobe.com/console/){target=_blank} an, stellen Sie sicher, dass Sie sich in der gewünschten Organisation befinden, wählen Sie **[!UICONTROL Projekt aus Vorlage erstellen]** und stellen Sie sicher, dass die App Builder-Vorlage verfügbar ist. Ist dies nicht der Fall, lesen Sie bitte den Abschnitt „Häufig gestellte Fragen zu App Builder[ „So erhalten Sie App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/faq#how-to-get-app-builder){target=_blank}&quot;
+  > Um die Bereitstellung von App Builder zu überprüfen, melden Sie sich bei [Adobe Developer Console](https://developer.adobe.com/console/){target=_blank} an, stellen Sie sicher, dass Sie sich in der gewünschten Organisation befinden, wählen Sie **[!UICONTROL Projekt aus Vorlage erstellen]** und stellen Sie sicher, dass die App Builder-Vorlage verfügbar ist. Ist dies nicht der Fall, lesen Sie bitte den Abschnitt „Häufig gestellte Fragen zu App Builder[&#x200B; „So erhalten Sie App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/faq#how-to-get-app-builder){target=_blank}&quot;
 
 
 * **Node.js &amp; npm**: Dieses Projekt erfordert Node.js, das NPM (Node Package Manager) enthält. NPM wird verwendet, um die Adobe-CLI zu installieren und Projektabhängigkeiten zu verwalten.
@@ -322,10 +322,10 @@ Ihre Aktion wird in Adobe I/O Runtime bereitgestellt und steht in der Developer 
 
 Nachdem Ihre Aktion bereitgestellt wurde, registrieren Sie sie als Ziel für Adobe Events.
 
-1. Navigieren Sie zur [Adobe Developer Console ](https://developer.adobe.com/console){target=_blank} öffnen Sie Ihr App Builder-Projekt.
+1. Navigieren Sie zur [Adobe Developer Console &#x200B;](https://developer.adobe.com/console){target=_blank} öffnen Sie Ihr App Builder-Projekt.
 1. **[!UICONTROL Workspace auswählen]**
 1. Wählen Sie **[!UICONTROL Service hinzufügen]** und wählen Sie **[!UICONTROL Ereignis]** aus.
-1. Adobe Experience Platform Wählen Sie **** als Produkt aus.
+1. Adobe Experience Platform Wählen Sie **&#x200B;**&#x200B;als Produkt aus.
 1. Wählen Sie **[!UICONTROL Platform-]**) als Ereignistyp aus.
 1. Wählen Sie die spezifischen Ereignisse (oder alle) aus, über die Sie in Slack benachrichtigt werden möchten, und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Wählen Sie oder [erstellen Sie Ihre OAuth-Anmeldedaten](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
