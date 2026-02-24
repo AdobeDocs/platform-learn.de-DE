@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie das Snowflake-Batch-Ziel in Adobe Real-Time CDP konfigurieren und verwenden, um tägliche, vollständig aktualisierte Zielgruppen-Momentaufnahmen in Ihrem Snowflake-Konto bereitzustellen. Sehen Sie sich den End-to-End-Workflow in Adobe Experience Platform an, wie die Daten als dynamische Tabelle in Snowflake angezeigt werden und die wichtigsten Einrichtungsschritte und Validierungen, um eine erfolgreiche Integration sicherzustellen.
 
-Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
+Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
