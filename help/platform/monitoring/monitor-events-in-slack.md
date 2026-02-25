@@ -326,7 +326,7 @@ Nachdem Ihre Aktion bereitgestellt wurde, registrieren Sie sie als Ziel für Ado
 1. Adobe Experience Platform Wählen Sie **&#x200B;**&#x200B;als Produkt aus.
 1. Wählen Sie **[!UICONTROL Platform-]**) als Ereignistyp aus.
 1. Wählen Sie die spezifischen Ereignisse (oder alle) aus, über die Sie in Slack benachrichtigt werden möchten, und klicken Sie auf **[!UICONTROL Weiter]**.
-1. Wählen Sie oder [erstellen Sie Ihre OAuth-Anmeldedaten](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
+1. Wählen Sie oder [erstellen Sie Ihre OAuth-Anmeldedaten](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
 1. Konfigurieren Sie **[!UICONTROL Details zur Ereignisregistrierung]**:
    1. **[!UICONTROL Registrierungsname]**: Geben Sie Ihrer Registrierung einen beschreibenden Namen.
    1. **[!UICONTROL Registrierungsbeschreibung]**: Stellen Sie sicher, dass dies explizit ist, damit andere Mitwirkende wissen, was es tut.
