@@ -4,9 +4,9 @@ description: Erstellen einer orchestrierten Kampagne
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 0328260e8699107bc82103af98caae684319a60d
+source-git-commit: 72aee2daa489f00dfc753e6986f0cab2271c6a7f
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1112'
 ht-degree: 2%
 
 ---
@@ -578,6 +578,30 @@ Fügen Sie für **Betreffzeile** Folgendes ein:
 Klicken Sie **E-Mail-Textkörper bearbeiten**.
 
 ![AJO OC](./images/ajooc126.png)
+
+Laden Sie die Datei [family_account_review.zip](./assets/family_account_review.zip) auf Ihren Desktop herunter.
+
+![AJO OC](./images/ajooc127.png)
+
+Klicken Sie **HTML importieren**.
+
+![AJO OC](./images/ajooc128.png)
+
+Klicken Sie, um die Datei auszuwählen.
+
+![AJO OC](./images/ajooc129.png)
+
+Wählen Sie die **`family_account_review.zip`** aus.
+
+![AJO OC](./images/ajooc130.png)
+
+Klicken Sie auf **Weiter**.
+
+![AJO OC](./images/ajooc131.png)
+
+Sie sollten das dann sehen.
+
+![AJO OC](./images/ajooc132.png)
 
 ## Nächste Schritte
 
