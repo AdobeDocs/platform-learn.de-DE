@@ -4,9 +4,9 @@ description: Erstellen einer orchestrierten Kampagne
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 53be5cf34db144e346f9810359b583072743382f
+source-git-commit: 0328260e8699107bc82103af98caae684319a60d
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '1075'
 ht-degree: 2%
 
 ---
@@ -195,6 +195,10 @@ Wählen Sie **`account_id`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc41.png)
 
+Legen Sie **Feld „Profilzuordnung** auf **`--aepUserLdap--_citisignal_recipients - account_id`** fest.
+
+![AJO OC](./images/ajooc41a.png)
+
 ### Anreicherung: Internetabonnement
 
 Klicken Sie auf das Symbol **+**.
@@ -253,7 +257,7 @@ Klicken Sie **Attribut hinzufügen**.
 
 ![AJO OC](./images/ajooc53.png)
 
-Wählen Sie **`avg_dowload_usage_gb`** und klicken Sie auf **Bestätigen**.
+Wählen Sie **`avg_bandwidth_usage_gb`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc54.png)
 
@@ -303,11 +307,15 @@ Drilldown zur **Zielgruppendimension**.
 
 ![AJO OC](./images/ajooc64.png)
 
-Drilldown nach **`citisignal_mobile_subscriptions`**.
+Drilldown nach **`citisignal_accounts`**.
 
 ![AJO OC](./images/ajooc65.png)
 
-Wählen Sie **`account_id`** und klicken Sie auf **Bestätigen**.
+Drilldown nach **`citisignal_mobile_subscriptions`**.
+
+![AJO OC](./images/ajooc65a.png)
+
+Wählen Sie **`phone_number`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc66.png)
 
@@ -315,15 +323,23 @@ Klicken Sie **Attribut hinzufügen**.
 
 ![AJO OC](./images/ajooc67.png)
 
-Wählen Sie **`subscription_id`** und klicken Sie auf **Bestätigen**.
+Drilldown nach **`citisignal_equipment_subscriptions`**.
 
 ![AJO OC](./images/ajooc68.png)
+
+Wählen Sie **`model`** und klicken Sie auf **Bestätigen**.
+
+![AJO OC](./images/ajooc68a.png)
 
 Klicken Sie **Attribut hinzufügen**.
 
 ![AJO OC](./images/ajooc69.png)
 
-Wählen Sie **`phone_number`** und klicken Sie auf **Bestätigen**.
+Drilldown nach **`citisignal_equipment_subscriptions`**.
+
+![AJO OC](./images/ajooc69a.png)
+
+Wählen Sie **`recommended_device_model`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc70.png)
 
@@ -331,15 +347,35 @@ Klicken Sie **Attribut hinzufügen**.
 
 ![AJO OC](./images/ajooc71.png)
 
-Wählen Sie **`renewal_eligibility_date`** und klicken Sie auf **Bestätigen**.
+Drilldown nach **`citisignal_equipment_subscriptions`**.
+
+![AJO OC](./images/ajooc71a.png)
+
+Wählen Sie **`is_upgrade_eligible`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc72.png)
+
+Sie können jetzt Ihren Fortschritt testen, indem Sie einen Testlauf durchführen und sehen, welche Daten in Ihrer Kampagne verfügbar sind.
+
+Speichern Sie Ihre Änderungen und klicken Sie dann auf **Starten**.
+
+![AJO OC](./images/ajooctest1.png)
+
+Nach einiger Zeit sollten Sie dies sehen. Klicken Sie **Vorschau der Ergebnisse**.
+
+![AJO OC](./images/ajooctest2.png)
+
+Sie sollten dann etwas Ähnliches sehen. Klicken Sie auf **Schließen**.
+
+![AJO OC](./images/ajooctest3.png)
+
+Kehren Sie zum Knoten zurück **Anreicherung: Mobile-Geräte-Abonnement**.
 
 Klicken Sie **Attribut hinzufügen**.
 
 ![AJO OC](./images/ajooc73.png)
 
-Wählen Sie **`line_user_recipient_id`** und klicken Sie auf **Bestätigen**.
+Wählen Sie **`account_id`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc74.png)
 
@@ -347,7 +383,7 @@ Klicken Sie **Attribut hinzufügen**.
 
 ![AJO OC](./images/ajooc75.png)
 
-Wählen Sie **`is_upgrade_eligible`** und klicken Sie auf **Bestätigen**.
+Wählen Sie **`subscription_id`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc76.png)
 
@@ -355,7 +391,7 @@ Klicken Sie **Attribut hinzufügen**.
 
 ![AJO OC](./images/ajooc77.png)
 
-Wählen Sie **`current_device_id`** und klicken Sie auf **Bestätigen**.
+Wählen Sie **`renewal_eligibility_date`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc78.png)
 
@@ -363,7 +399,7 @@ Klicken Sie **Attribut hinzufügen**.
 
 ![AJO OC](./images/ajooc79.png)
 
-Wählen Sie **`contract_start_date`** und klicken Sie auf **Bestätigen**.
+Wählen Sie **`line_user_recipient_id`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc80.png)
 
@@ -371,25 +407,17 @@ Klicken Sie **Attribut hinzufügen**.
 
 ![AJO OC](./images/ajooc81.png)
 
-Drilldown nach **`citisignal_equipment_subscriptions`**.
+Wählen Sie **`current_device_id`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc82.png)
-
-Wählen Sie **`model`** und klicken Sie auf **Bestätigen**.
-
-![AJO OC](./images/ajooc83.png)
 
 Klicken Sie **Attribut hinzufügen**.
 
 ![AJO OC](./images/ajooc86.png)
 
-Drilldown nach **`citisignal_equipment_subscriptions`**.
+Wählen Sie **`contract_start_date`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc87.png)
-
-Wählen Sie **`manufacturer`** und klicken Sie auf **Bestätigen**.
-
-![AJO OC](./images/ajooc88.png)
 
 Klicken Sie **Attribut hinzufügen**.
 
@@ -399,7 +427,7 @@ Drilldown nach **`citisignal_equipment_subscriptions`**.
 
 ![AJO OC](./images/ajooc90.png)
 
-Wählen Sie **`device_age_months`** und klicken Sie auf **Bestätigen**.
+Wählen Sie **`manufacturer`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc91.png)
 
@@ -411,7 +439,7 @@ Drilldown nach **`citisignal_equipment_subscriptions`**.
 
 ![AJO OC](./images/ajooc93.png)
 
-Wählen Sie **`is_upgrade_eligible`** und klicken Sie auf **Bestätigen**.
+Wählen Sie **`device_age_months`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc94.png)
 
@@ -423,7 +451,7 @@ Drilldown nach **`citisignal_equipment_subscriptions`**.
 
 ![AJO OC](./images/ajooc96.png)
 
-Wählen Sie **`recommended_upgrade_product_id`** und klicken Sie auf **Bestätigen**.
+Wählen Sie **`trade_in_value`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc97.png)
 
@@ -439,48 +467,117 @@ Wählen Sie **`monthly_payment`** und klicken Sie auf **Bestätigen**.
 
 ![AJO OC](./images/ajooc100.png)
 
-Klicken Sie **Attribut hinzufügen**.
+### Anreicherung: Mobilgeräte-Abonnement
+
+Sie sollten dann diese haben. Klicken Sie auf **Speichern**. Klicken Sie dann auf das Symbol **+** , um einen neuen Knoten hinzuzufügen, und wählen Sie **Anreicherung** aus.
 
 ![AJO OC](./images/ajooc101.png)
 
-Drilldown nach **`citisignal_equipment_subscriptions`**.
+Sie sollten das dann sehen. Klicken Sie auf **Anreicherungsdaten hinzufügen**.
 
 ![AJO OC](./images/ajooc102.png)
 
-Aktivieren Sie den Umschalter für **Sortierung aktivieren**. Verwenden Sie das Symbol **Bearbeiten**.
+Drilldown zur **Zielgruppendimension**.
 
 ![AJO OC](./images/ajooc103.png)
 
-Wählen Sie **`phone_number`** und klicken Sie auf **Bestätigen**.
+Drilldown nach **`citisignal_offer_eligibility`**.
 
 ![AJO OC](./images/ajooc104.png)
 
-Sie sollten dann diese haben.
+Drilldown nach **`citisignal_offers`**.
 
 ![AJO OC](./images/ajooc105.png)
 
+Wählen Sie **`offer_name`** und klicken Sie auf **Bestätigen**.
 
+![AJO OC](./images/ajooc106.png)
 
+Klicken Sie **Attribut hinzufügen**.
 
-Sie sollten dann diese haben. Klicken Sie auf **Speichern**.
+![AJO OC](./images/ajooc107.png)
 
-![AJO OC](./images/ajooc80a.png)
+Drilldown nach **`citisignal_offers`**.
 
+![AJO OC](./images/ajooc108.png)
 
+Wählen Sie **`offer_code`** und klicken Sie auf **Bestätigen**.
 
+![AJO OC](./images/ajooc109.png)
 
+Klicken Sie **Attribut hinzufügen**.
 
+![AJO OC](./images/ajooc110.png)
 
+Drilldown nach **`citisignal_offers`**.
 
+![AJO OC](./images/ajooc111.png)
 
+Wählen Sie **`offer_description`** und klicken Sie auf **Bestätigen**.
 
+![AJO OC](./images/ajooc112.png)
 
+Klicken Sie **Attribut hinzufügen**.
 
+![AJO OC](./images/ajooc110.png)
 
+Drilldown nach **`citisignal_offers`**.
 
+![AJO OC](./images/ajooc113.png)
 
-![AJO OC](./images/ajooc103.png)
+Wählen Sie **`offer_description`** und klicken Sie auf **Bestätigen**.
 
+![AJO OC](./images/ajooc114.png)
+
+Aktivieren Sie **Sortierung aktivieren**.
+
+![AJO OC](./images/ajooc115.png)
+
+Drilldown nach **`citisignal_offers`**.
+
+![AJO OC](./images/ajooc116.png)
+
+Wählen Sie **`offer_priority`** und klicken Sie auf **Bestätigen**.
+
+![AJO OC](./images/ajooc117.png)
+
+Jetzt können Sie Ihre Kampagne testen. Klicken Sie auf **Starten**.
+
+![AJO OC](./images/ajooc118.png)
+
+Nach einiger Zeit sollten Sie dies sehen. Klicken Sie auf **Ergebnis** und wählen Sie dann **Vorschau der Ergebnisse** aus.
+
+![AJO OC](./images/ajooc120.png)
+
+Sie sollten dann etwas Ähnliches sehen.
+
+![AJO OC](./images/ajooc121.png)
+
+### E-Mail-Aktivität
+
+Klicken Sie auf das Symbol **+** und wählen Sie **E-Mail** aus.
+
+![AJO OC](./images/ajooc122.png)
+
+Klicken Sie **E-Mail bearbeiten**.
+
+![AJO OC](./images/ajooc123.png)
+
+Navigieren Sie zu **Aktionen**.
+
+![AJO OC](./images/ajooc124.png)
+
+Wählen Sie die **E-Mail-Kanalkonfiguration** aus, die Sie zuvor erstellt haben, und klicken Sie dann auf **Inhalt bearbeiten**.
+
+![AJO OC](./images/ajooc125.png)
+
+Fügen Sie für **Betreffzeile** Folgendes ein:
+
+`{{target.--aepUserLdap--_citisignal_recipients.first_name}}, Your CitiSignal Family Account Summary`
+
+Klicken Sie **E-Mail-Textkörper bearbeiten**.
+
+![AJO OC](./images/ajooc126.png)
 
 ## Nächste Schritte
 

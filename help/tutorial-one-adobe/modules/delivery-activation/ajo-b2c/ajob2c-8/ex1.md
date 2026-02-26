@@ -4,10 +4,10 @@ description: Einrichten der Grundlage für relationale Daten
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 4d420ad101c87b58a2bcc425cd4d8da08ad04c8e
+source-git-commit: defdae3329e1409159f59c4a0ef2aa21c7e3949b
 workflow-type: tm+mt
-source-wordcount: '2051'
-ht-degree: 9%
+source-wordcount: '2159'
+ht-degree: 8%
 
 ---
 
@@ -730,6 +730,52 @@ Klicken Sie auf **Speichern**.
 Sie sollten dann diese haben.
 
 ![AJO OC](./images/ajoocptd8.png)
+
+## E-Mail-Kanal 3.8.1.4
+
+Navigieren Sie im linken Menü zu **Kanäle**. Klicken Sie **Kanalkonfiguration erstellen**.
+
+![AJO OC](./images/ajoocchannel1.png)
+
+Verwenden Sie den Namen `--aepUserLdap---citisignal-email-oc`. Wählen Sie den Kanal **E-Mail**
+
+![AJO OC](./images/ajoocchannel2.png)
+
+Wählen Sie eine verfügbare **Subdomain** und **IP-Pool** aus.
+
+![AJO OC](./images/ajoocchannel3.png)
+
+Scrollen Sie nach unten und füllen Sie die **Kopfzeilenparameter“**.
+
+- **Absendername**: `info@techinsiders.org`
+- **Von E-Mail-Präfix**: `info`
+- **Antwort an Name**: `info@techinsiders.org`
+- **Antwort auf E-Mail**: `info@techinsiders.org`
+- **Fehler-E-Mail** Präfix: `error`
+
+![AJO OC](./images/ajoocchannel4.png)
+
+Scroll down. Gehen Sie zu **Orchestrierte Kampagne**. Aktivieren Sie das Kontrollkästchen für **Aktiviert**. Wählen Sie **Zielgruppendimension** aus.
+
+![AJO OC](./images/ajoocchannel5.png)
+
+Wählen Sie **Profil-Target-Dimension** die Option `--aepUserLdap--_citisignal_recipients - email` aus.
+
+Wählen Sie **Target Dimension** und klicken Sie auf das Symbol **Ordner öffnen**.
+
+![AJO OC](./images/ajoocchannel6.png)
+
+Klicken Sie auf `--aepUserLdap--_citisignal_recipients`.
+
+![AJO OC](./images/ajoocchannel7.png)
+
+Wählen Sie das Feld **E-Mail** aus und klicken Sie auf **Auswählen**.
+
+![AJO OC](./images/ajoocchannel8.png)
+
+Scrollen Sie nach oben und klicken Sie auf **Absenden**.
+
+![AJO OC](./images/ajoocchannel9.png)
 
 In der nächsten Übung beginnen Sie mit der Verwendung dieser Daten als Teil einer orchestrierten Kampagne.
 
