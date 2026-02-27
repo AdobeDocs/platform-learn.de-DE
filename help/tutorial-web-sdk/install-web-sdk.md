@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Tag-Erweiterung „Platform Web SDK" in d
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 10%
+source-wordcount: '602'
+ht-degree: 11%
 
 ---
 
@@ -16,9 +16,6 @@ ht-degree: 10%
 Erfahren Sie, wie Sie die Tag-Erweiterung &quot;Adobe Experience Platform Web SDK&quot; installieren und konfigurieren. Die einfachste Möglichkeit, Web SDK zu implementieren, besteht in der Verwendung des Tag-Managers von Adobe, Tags (ehemals Launch). Die Platform Web SDK-Tag-Erweiterung ist die _einzige Tag_ Erweiterung, die zum Senden von Daten an _alle Adobe Experience Cloud-_, einschließlich [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform und [Journey Optimizer](setup-web-channel.md)!
 
 
->[!WARNING]
->
-> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 ## Lernziele
 
@@ -44,7 +41,7 @@ Erstellen Sie eine neue Tag-Eigenschaft für das Tutorial:
 1. Wählen **[!UICONTROL Tags]** im linken Navigationsbereich aus.
 1. Klicken Sie auf **[!UICONTROL Schaltfläche „Neue Eigenschaft]**.
    ![Neue Eigenschaft hinzufügen](assets/websdk-property-addNewProperty.png)
-1. Geben **[!UICONTROL als]** Name`Web SDK Course` ein (fügen Sie am Ende Ihren Namen hinzu, wenn mehrere Personen in Ihrem Unternehmen an diesem Tutorial teilnehmen)
+1. Geben **[!UICONTROL als]** Name`Luma Web SDK Tutorial` ein (fügen Sie am Ende Ihren Namen hinzu, wenn mehrere Personen in Ihrem Unternehmen an diesem Tutorial teilnehmen)
 1. Geben Sie als **[!UICONTROL Domains]** den `enablementadobe.com` ein (siehe Erklärung weiter unten)
 1. Wählen Sie **[!UICONTROL Speichern]**
    ![Eigenschaftsdetails](assets/websdk-property-propertyDetails.png)
@@ -66,17 +63,14 @@ Nachdem Sie Ihr XDM-Schema, Ihren Datenstrom und Ihre Tag-Eigenschaft erstellt h
 Behalten Sie die meisten Standardeinstellungen bei und aktualisieren Sie sie bei Bedarf später. Das einzige, was Sie jetzt tun müssen, ist, die Erweiterung mit Ihrem Datenstrom zu verknüpfen:
 
 1. Wählen **[!UICONTROL unter]** die Eingabemethode **[!UICONTROL Aus Liste auswählen]** aus
-1. Sandbox auswählen, in der Sie das Schema, den Identity-Namespace und den Datenstrom erstellt haben
-1. Wählen Sie den zuvor erstellten Datenstrom aus, `Luma Web SDK`
+1. Konfigurieren der **[!UICONTROL Produktionsumgebung]**. (Die anderen Tag-Umgebungen in der Eigenschaft übernehmen die Produktionseinstellungen):
+   1. Sandbox auswählen, in der Sie das Schema, den Identity-Namespace und den Datenstrom erstellt haben
+   1. Wählen Sie den zuvor erstellten Datenstrom aus, `Luma Web SDK: Development Environment`
 1. Wählen Sie **[!UICONTROL Speichern]**
-
-   >[!NOTE]
-   >
-   > Wenn Sie Ihren Datenstrom nicht finden können, gehen Sie zur Lektion [Konfigurieren eines &#x200B;](configure-datastream.md)) und führen Sie die Schritte aus, um einen zu erstellen
 
    ![Datenstromauswahl](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Weitere Informationen zu den einzelnen Abschnitten der Erweiterung finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Weitere Informationen zu den einzelnen Abschnitten der Erweiterung finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -90,4 +84,4 @@ Nachdem Sie Platform Web SDK installiert und mit dem Datenstrom verknüpft haben
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

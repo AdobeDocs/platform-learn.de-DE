@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Datenschutzeinstellungen der Tag-Erweiter
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1605'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 1%
 Erfahren Sie, wie Sie die Datenschutzeinstellungen der Tag-Erweiterung &quot;Adobe Experience Platform Web SDK&quot; konfigurieren. Legen Sie das Einverständnis basierend auf der Interaktion des Besuchers mit einem Banner von einer Einverständnisverwaltungs-Plattform (CMP) fest.
 
 
->[!WARNING]
->
-> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 >[!NOTE]
 > 
@@ -53,10 +50,10 @@ Bevor Sie zu den Tag-Konfigurationen springen, erfahren Sie in diesem Tutorial K
 1. Gehen Sie **Privacy Manager** und erstellen Sie eine Instanz entsprechend den Anweisungen.
 1. Verwenden Sie den **Integrationscode**, um Klaro in Ihre Tag-Eigenschaft zu injizieren (Anweisungen befinden sich in der nächsten Übung).
 1. Überspringen Sie den **Scannen**-Abschnitt, da er die Tag-Eigenschaft erkennt, die auf der Luma-Demo-Website hartcodiert ist und nicht die, die Sie für dieses Tutorial erstellt haben.
-1. Fügen Sie einen Dienst mit dem Namen `aep web sdk` hinzu und schalten Sie auf **Standardstatus des Dienstes** um. Wenn diese Option aktiviert ist, wird der standardmäßige Einverständniswert `true`, andernfalls wird er `false`. Diese Konfiguration ist praktisch, wenn Sie entscheiden möchten, wie der standardmäßige Einverständnisstatus (vor dem Einverständnis des Besuchers) für Ihre Web-Anwendung aussehen soll. Beispiel:
+1. Fügen Sie einen Dienst mit dem Namen `aep-web-sdk` hinzu und schalten Sie auf **Standardstatus des Dienstes** um. Wenn diese Option aktiviert ist, wird der standardmäßige Einverständniswert `true`, andernfalls wird er `false`. Diese Konfiguration ist praktisch, wenn Sie entscheiden möchten, wie der standardmäßige Einverständnisstatus (vor dem Einverständnis des Besuchers) für Ihre Web-Anwendung aussehen soll. Beispiel:
    * Für CCPA wird im Allgemeinen das Standardeinverständnis auf `true` festgelegt. In diesem Tutorial werden Sie auf dieses Szenario als **implizites Opt-in** verweisen
    * Für die DSGVO ist die standardmäßige Einwilligung normalerweise auf `false` festgelegt. In diesem Tutorial werden Sie auf dieses Szenario als **implizites Opt-out** verweisen.
-
+1. Aktivieren der Konfiguration
 <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
 -->
@@ -77,11 +74,11 @@ Nun, wenn Sie mit den Klaro-Konfigurationen fertig sind, erstellen Sie Tag-Regel
 * [!UICONTROL Ereignis]: [!UICONTROL Bibliothek geladen (Seitenanfang)] mit [!UICONTROL Erweiterte Optionen] > [!UICONTROL Reihenfolge] auf 1 gesetzt
 * [!UICONTROL Action]: [!UICONTROL Benutzerdefinierter Code], [!UICONTROL Language]: HTML zum Laden des CMP-Skripts.
 
-![CMP-Regel &#x200B;](assets/consent-cmp-inject-rule-1.png)
+![CMP-Regel ](assets/consent-cmp-inject-rule-1.png)
 
 Der benutzerdefinierte Code-Block sollte etwa wie folgt aussehen:
 
-![CMP-Regel &#x200B;](assets/consent-cmp-inject-rule-2.png)
+![CMP-Regel ](assets/consent-cmp-inject-rule-2.png)
 
 Speichern und erstellen Sie nun diese Regel in Ihrer Entwicklungsbibliothek. Überprüfen Sie, ob das Einverständnisbanner angezeigt wird, indem Sie die Tag-Bibliothek von der Luma-Site zu Ihrer eigenen wechseln. Auf der Website sollte ein CMP-Banner angezeigt werden, wie unten dargestellt. Um die Einverständnisberechtigung des aktuellen Besuchers zu überprüfen, können Sie folgenden Code-Ausschnitt in der Browser-Konsole verwenden.
 
@@ -111,7 +108,7 @@ Implizites Opt-in bedeutet, dass das Unternehmen die Zustimmung des Besuchers (o
 
 Jetzt konfigurieren und implementieren Sie das Einverständnis für dieses Szenario:
 
-1. Stellen Sie **[!UICONTROL Abschnitt Datenschutz]** der Tag-Erweiterung &quot;Experience Platform Web SDK&quot; sicher, dass **[!UICONTROL Standardeinverständnis]** auf **[!UICONTROL In]** festgelegt ist:
+1. Stellen Sie **[!UICONTROL Abschnitt]** Einverständnis“ der Tag-Erweiterung &quot;Experience Platform Web SDK&quot; sicher, dass **[!UICONTROL Standardeinverständnis]** auf **[!UICONTROL In]** festgelegt ist:
 
 
    ![Einverständniserweiterung für AEP - Datenschutzkonfiguration](assets/consent-web-sdk-privacy-in.png)
@@ -127,7 +124,7 @@ Jetzt konfigurieren und implementieren Sie das Einverständnis für dieses Szena
 2. Speichern und erstellen Sie diese Änderung in Ihrer Tag-Bibliothek
 3. Laden Sie Ihre Tag-Bibliothek auf der Demo-Site von Luma .
 4. Aktivieren Sie das Tags-Debugging auf der Luma-Site und laden Sie die Seite neu. In der Entwicklerkonsole Ihres Browsers sollten Sie sehen, dass „defaultConsent“ gleich &quot;**[!UICONTROL &quot;]**
-5. Mit dieser Konfiguration stellt die Experience Platform Web SDK-Erweiterung weiterhin Netzwerkanfragen, es sei denn, ein Besucher entscheidet sich dafür, die Cookies abzulehnen und sich abzumelden:
+5. Mit dieser Konfiguration stellt die Experience Platform Web SDK-Erweiterung Netzwerkanfragen an Platform Edge Network, bis ein Besucher die Cookies ablehnt und sich abmeldet:
 
    ![Einverständnis impliziert Opt-in](assets/consent-Implied-optin-default.png)
 
@@ -161,13 +158,12 @@ Wenn sich ein Besucher für ein Opt-out entscheidet (Tracking-Cookies ablehnen),
 
    ![Regelbedingung - Benutzer klickt auf „Ich lehne ab“](assets/consent-optOut-clickEvent.png)
 
-1. Verwenden Sie jetzt Experience Platform Web SDK, [!UICONTROL Einverständnis festlegen] [!UICONTROL Aktionstyp], um das Einverständnis als „out“ festzulegen:
+1. Verwenden Sie als **[!UICONTROL Aktion]** die Experience Platform Web SDK-Erweiterung [!UICONTROL Einverständnis festlegen] [!UICONTROL Aktionstyp], um das Einverständnis als „out“ festzulegen:
 
    ![Aktion zum Opt-out von Einverständnisregeln](assets/consent-rule-optout-action.png)
 
-1. Wählen Sie **[!UICONTROL In Bibliothek speichern und erstellen]**:
+1. Bibliothek speichern und neu erstellen
 
-   ![Bibliothek speichern und erstellen](assets/consent-rule-optout-saveAndBuild.png)
 
 Wenn sich ein Besucher jetzt abmeldet, wird die auf die oben beschriebene Weise konfigurierte Regel ausgelöst und die Web SDK-Zustimmung auf &quot;**[!UICONTROL &quot;]**.
 
@@ -180,13 +176,14 @@ Implizites Opt-out bedeutet, dass Besucher standardmäßig als Opt-out behandelt
 
 So können Sie die Konfiguration für ein implizites Opt-out-Szenario einrichten:
 
-1. Schalten Sie in Klaro den **Service-Standardstatus** in Ihrem `aep web sdk`-Service aus und speichern Sie die aktualisierte Konfiguration.
+1. Schalten Sie in Klaro den **Service-Standardstatus** in Ihrem `aep-web-sdk`-Service aus und speichern Sie die aktualisierte Konfiguration.
 
-1. Legen **[!UICONTROL im Abschnitt]** Datenschutz“ der Experience Platform Web SDK-Erweiterung das Standardeinverständnis auf **[!UICONTROL Out]** oder **[!UICONTROL Pending]** fest.
-
-   ![Einverständniserweiterung für AEP - Datenschutzkonfiguration](assets/consent-implied-opt-out.png)
+1. Legen **[!UICONTROL im Abschnitt]** Einverständnis“ der Experience Platform Web SDK-Erweiterung das standardmäßige Einverständnis auf **[!UICONTROL Out]** oder **[!UICONTROL Pending]** fest.
 
 1. **Speichern** Sie die aktualisierte Konfiguration in Ihrer Tag-Bibliothek und erstellen Sie sie neu.
+
+   ![Einverständniskonfiguration für AEP-Erweiterungen](assets/consent-implied-opt-out.png)
+
 
    Mit dieser Konfiguration stellt Experience Platform Web SDK sicher, dass keine Anfrage ausgelöst wird, es sei denn, die Einverständnisberechtigung ändert sich in **[!UICONTROL In]**. Dies kann vorkommen, wenn ein Besucher die Cookies manuell akzeptiert, indem er sich anmeldet.
 
@@ -209,11 +206,7 @@ Falls sich ein Besucher für das Opt-in entscheidet (Tracking-Cookies akzeptiere
 
    ![Opt-in-Aktion für Einverständnisregel](assets/consent-rule-optin-action.png)
 
-   An dieser Stelle ist zu beachten, dass [!UICONTROL &#x200B; Aktion „Einverständnis festlegen] die erste Anfrage ist, die ausgeführt wird und eine Identität herstellt. Aus diesem Grund kann es wichtig sein, Identitäten bei der ersten Anfrage selbst zu synchronisieren. Die Identitätszuordnung kann zur Aktion [!UICONTROL Einverständnis festlegen“ hinzugefügt &#x200B;], indem ein Identitätstyp-Datenelement übergeben wird.
-
-1. Wählen Sie **[!UICONTROL In Bibliothek speichern und erstellen]**:
-
-   ![Opt-out von Einverständnisregeln](assets/consent-rule-optin-saveAndBuild.png)
+   An dieser Stelle ist zu beachten, dass [!UICONTROL  Aktion „Einverständnis festlegen] die erste Anfrage ist, die ausgeführt wird und eine Identität herstellt. Aus diesem Grund kann es wichtig sein, Identitäten bei der ersten Anfrage selbst zu synchronisieren. Die Identitätszuordnung kann zur Aktion [!UICONTROL Einverständnis festlegen“ hinzugefügt ], indem ein Identitätstyp-Datenelement übergeben wird.
 
 1. **[!UICONTROL Speichern]** Sie die Regel in Ihrer Bibliothek und erstellen Sie sie neu.
 
@@ -222,11 +215,16 @@ Sobald Sie diese Regel eingerichtet haben, sollte die Ereignissammlung beginnen,
 ![Option „Einverständnisnachrichtenbesucher“](assets/consent-post-user-optin.png)
 
 
-Weitere Informationen zum Einverständnis in Web SDK finden Sie unter [Unterstützen von Voreinstellungen für das Einverständnis &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/edge/consent/supporting-consent).
+Weitere Informationen zum Einverständnis in Web SDK finden Sie unter [Unterstützen von Voreinstellungen für das Einverständnis ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
+
+>[!TIP]
+>
+> Nach Abschluss dieser Lektion empfehlen wir, die drei neuen Regeln zu deaktivieren.
 
 
-Weitere Informationen zur Aktion [!UICONTROL Einverständnis festlegen] finden Sie unter [Einverständnis festlegen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+
+Weitere Informationen zur Aktion [!UICONTROL Einverständnis festlegen] finden Sie unter [Einverständnis festlegen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

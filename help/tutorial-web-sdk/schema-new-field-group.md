@@ -6,7 +6,7 @@ jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1547'
 ht-degree: 3%
 
 ---
@@ -91,6 +91,7 @@ In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen grundlegenden 
 1. Klicken Sie auf **[!UICONTROL Schaltfläche]** Schema erstellen“ oben rechts
 
    ![Schema erstellen](assets/schema-xdm-create-schema.png)
+1. Wählen Sie **[!UICONTROL nächsten Bildschirm]** Manuell“ aus.
 1. Wählen **[!UICONTROL Erlebnisereignis]** im folgenden Bildschirm aus.
 1. Wählen Sie **[!UICONTROL Weiter]**
 
@@ -103,7 +104,7 @@ In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen grundlegenden 
    >Eine gängige Namenskonvention für XDM-Schemata besteht darin, das Schema nach der Quelle der Daten zu benennen.
 
 
-1. Wählen Sie Beenden aus
+1. Wählen Sie **[!UICONTROL Beenden]** aus
 
    ![Beendigung des Schema-Erlebnisereignisses](assets/schema-name-schema.png)
 

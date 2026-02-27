@@ -4,23 +4,20 @@ description: Erfahren Sie, wie Sie Identitäten in XDM erstellen und das Datenel
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '830'
 ht-degree: 3%
 
 ---
 
 # Erstellen von Identitäten
 
-Erfahren Sie, wie Sie Identitäten mit Adobe Experience Platform Web SDK erfassen. Erfassen Sie sowohl nicht authentifizierte als auch authentifizierte Identitätsdaten auf der [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Erfahren Sie, wie Sie die zuvor erstellten Datenelemente zum Erfassen authentifizierter Daten mit einem Platform Web SDK-Datenelementtyp namens Identitätszuordnung verwenden.
+Erfahren Sie, wie Sie Identitäten mit Adobe Experience Platform Web SDK erfassen. Erfassen Sie sowohl nicht authentifizierte als auch authentifizierte Identitätsdaten auf der [Demo-Site von Luma](https://newluma.enablementadobe.com). Erfahren Sie, wie Sie die zuvor erstellten Datenelemente zum Erfassen authentifizierter Daten mit einem Platform Web SDK-Datenelementtyp namens Identitätszuordnung verwenden.
 
 Diese Lektion konzentriert sich auf das Identitätszuordnungs-Datenelement, das mit der Adobe Experience Platform Web SDK-Tag-Erweiterung verfügbar ist. Sie ordnen Datenelemente, die eine authentifizierte Benutzer-ID und einen Authentifizierungsstatus enthalten, XDM zu.
 
 
->[!WARNING]
->
-> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 ## Lernziele
 
@@ -32,7 +29,7 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Sie haben ein Verständnis davon, was eine Datenschicht ist, kennen die [Luma-Demo-Site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Datenschicht und wissen, wie Sie in Tags auf Datenelemente verweisen. Sie müssen die vorherigen Lektionen im Tutorial abgeschlossen haben:
+Sie haben ein Verständnis davon, was eine Datenschicht ist, kennen die [Luma-Demo-Site](https://newluma.enablementadobe.com){target="_blank"} Datenschicht und wissen, wie Sie in Tags auf Datenelemente verweisen. Sie müssen die vorherigen Lektionen im Tutorial abgeschlossen haben:
 
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Konfigurieren eines Identity-Namespace](configure-identities.md)
@@ -43,7 +40,7 @@ Sie haben ein Verständnis davon, was eine Datenschicht ist, kennen die [Luma-De
 
 ## Experience Cloud ID
 
-Die [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/ecid) ist ein freigegebener Identity-Namespace, der in Adobe Experience Platform- und Adobe Experience Cloud-Anwendungen verwendet wird. ECID bildet die Grundlage für die Kundenidentität und ist die Standardidentität für digitale Eigenschaften. ECID ist die ideale Kennung zum Tracking nicht authentifizierten Benutzerverhaltens, da es immer vorhanden ist.
+Die [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) ist ein freigegebener Identity-Namespace, der in Adobe Experience Platform- und Adobe Experience Cloud-Anwendungen verwendet wird. ECID bildet die Grundlage für die Kundenidentität und ist die Standardidentität für digitale Eigenschaften. ECID ist die ideale Kennung zum Tracking nicht authentifizierten Benutzerverhaltens, da es immer vorhanden ist.
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -52,7 +49,7 @@ Die [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/de/docs/expe
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Erfahren Sie mehr darüber, wie [ECIDs mit Platform Web SDK verfolgt werden](https://experienceleague.adobe.com/de/docs/experience-platform/edge/identity/overview).
+Erfahren Sie mehr darüber, wie [ECIDs mit Platform Web SDK verfolgt werden](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
 
 ECIDs werden mithilfe einer Kombination aus Erstanbieter-Cookies und Platform Edge Network festgelegt. Standardmäßig werden die Erstanbieter-Identitäts-Cookies Client-seitig von der Web-SDK gesetzt. Um Browser-Einschränkungen hinsichtlich der Cookie-Lebensdauer zu berücksichtigen, können Sie stattdessen eigene Erstanbieter-Identitäts-Cookies Server-seitig setzen. Diese Identitäts-Cookies werden als First-Party-Geräte-IDs (FPIDs) bezeichnet.
 
@@ -66,7 +63,7 @@ FPIDs sind Erstanbieter-Cookies _Sie setzen sie mithilfe Ihrer eigenen Webserver
 
 Sobald ein FPID-Cookie gesetzt wurde, kann sein Wert abgerufen und bei der Erfassung von Ereignisdaten an Adobe gesendet werden. Die erfassten FPIDs werden als Seeds verwendet, um ECIDs auf Platform Edge Network zu generieren, die weiterhin die Standardkennungen in Adobe Experience Cloud-Programmen sind.
 
-Obwohl FPIDs in diesem Tutorial nicht verwendet werden, wird empfohlen, FPIDs in Ihrer eigenen Web SDK-Implementierung zu verwenden. Weitere Informationen zu [Erstanbieter-Geräte-IDs“ finden Sie in der Platform Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/edge/identity/first-party-device-ids)
+Obwohl FPIDs in diesem Tutorial nicht verwendet werden, wird empfohlen, FPIDs in Ihrer eigenen Web SDK-Implementierung zu verwenden. Weitere Informationen zu [Erstanbieter-Geräte-IDs“ finden Sie in der Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -76,32 +73,21 @@ Obwohl FPIDs in diesem Tutorial nicht verwendet werden, wird empfohlen, FPIDs in
 
 Wie bereits erwähnt, wird allen Besuchern Ihrer digitalen Objekte bei der Verwendung von Platform Web SDK von Adobe eine ECID zugewiesen. ECID ist die Standardidentität zum Tracking von nicht authentifiziertem digitalem Verhalten.
 
-Sie können auch eine authentifizierte Benutzer-ID senden, damit Platform [Identitätsdiagramme) erstellen &#x200B;](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) Target seine [Drittanbieter-ID](https://experienceleague.adobe.com/de/docs/target/using/audiences/visitor-profiles/3rd-party-id) festlegen kann. Das Festlegen der authentifizierten ID erfolgt mithilfe des Datenelementtyps [!UICONTROL Identitätszuordnung].
+Sie können auch eine authentifizierte Benutzer-ID senden, damit Platform [Identitätsdiagramme) erstellen ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) Target seine [Drittanbieter-ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) festlegen kann. Das Festlegen der authentifizierten ID erfolgt mithilfe des Datenelementtyps [!UICONTROL Identitätszuordnung].
 
-So erstellen Sie [!UICONTROL &#x200B; Datenelement &#x200B;]Identitätszuordnung“:
+So erstellen Sie [!UICONTROL  Datenelement ]Identitätszuordnung“:
 
 1. Wechseln Sie zu **[!UICONTROL Datenelemente]** und wählen Sie **[!UICONTROL Datenelement hinzufügen]**
 
-1. **[!UICONTROL Name]** die `identityMap.loginID` des Datenelements
+1. **[!UICONTROL Name]** die `Identity Map` des Datenelements
 
 1. Wählen Sie als **[!UICONTROL Erweiterung]** die Option `Adobe Experience Platform Web SDK`
 
 1. Wählen Sie als **[!UICONTROL Datenelementtyp]** die Option `Identity map`
 
-1. Dadurch wird rechts in der **[!UICONTROL Datenerfassungs-Oberfläche) ein Bildschirmbereich]**, in dem Sie die Identität konfigurieren können:
+1. Wählen **[!UICONTROL als]** den `lumaCrmId` Namespace aus, der in der Lektion [Konfigurieren von Identitäten](configure-identities.md) erstellt wurde. Wenn er nicht im Dropdown-Menü angezeigt wird, geben Sie ihn ein.
 
-   ![Datenerfassungsschnittstelle](assets/identity-identityMap-setup.png)
-
-1. Wählen Sie **[!UICONTROL Namespace]** den `lumaCrmId` Namespace aus, den Sie zuvor in der Lektion [Konfigurieren von Identitäten](configure-identities.md) erstellt haben. Wenn er nicht im Dropdown-Menü angezeigt wird, geben Sie ihn ein.
-
-1. Nachdem **[!UICONTROL Namespace]** ausgewählt wurde, muss eine ID festgelegt werden. Wählen Sie das `user.profile.attributes.username` Datenelement aus, das zuvor in der Lektion [Datenelemente erstellen](create-data-elements.md#create-data-elements-to-capture-the-data-layer) erstellt wurde, die eine ID erfasst, wenn Benutzer bei der Luma-Site angemeldet sind.
-
-   <!--  >[!TIP]
-    >
-    >You can verify the **[!UICONTROL Luma CRM ID]** is collected in a data element on the web property by going to the [Luma Demo site](https://luma.enablementadobe.com/content/luma/us/en.html), logging in, [switching the tag environment](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) to your own, and typing `_satellite.getVar("user.profile.attributes.username")` in the web browser developer console.
-    >
-    >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
-    -->
+1. Wählen Sie als **[!UICONTROL ID]** das `User Id` Datenelement aus, das in der Lektion [Datenelemente erstellen](create-data-elements.md#create-data-elements-to-capture-the-data-layer) erstellt wurde.
 
 1. Wählen Sie als **[!UICONTROL Authentifizierungsstatus]** die Option **[!UICONTROL Authentifiziert]**
 1. **[!UICONTROL Primär]**
@@ -138,20 +124,19 @@ Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt sein:
 
 | Datenelemente der Haupterweiterung | Datenelemente der Platform Web SDK-Erweiterung |
 -----------------------------|-------------------------------
-| `cart.orderId` | `data.variable` |
-| `cart.productInfo` | `identityMap.loginID` |
-| `cart.productInfo.purchase` | `xdm.variable.content` |
-| `page.pageInfo.hierarchie1` | |
-| `page.pageInfo.pageName` | |
-| `page.pageInfo.server` | |
-| `product.category` | |
-| `product.productInfo.sku` | |
-| `product.productInfo.title` | |
-| `user.profile.attributes.loggedIn` | |
-| `user.profile.attributes.username` | |
+| `Ecommerce Cart Products` | `Data Variable` |
+| `Ecommerce Checkout Products` | `Identity Map` |
+| `Ecommerce Checkout Products` | `XDM Variable` |
+| `Ecommerce Product Category` | |
+| `Ecommerce Product Id` | |
+| `Ecommerce Product Name` | |
+| `Ecommerce Purchase Id` | |
+| `Page Name` | |
+| `User Id` | |
+| `User Logged In` | |
 
 Wenn diese Datenelemente eingerichtet sind, können Sie beginnen, Daten an Platform Edge Network zu senden, indem Sie eine Regel in Tags erstellen.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

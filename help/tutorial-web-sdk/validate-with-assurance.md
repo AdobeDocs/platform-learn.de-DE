@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Ado
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '605'
 ht-degree: 7%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 7%
 Adobe Experience Platform Assurance ist eine Funktion, mit der Sie die Datenerfassung und die Bereitstellung von Erlebnissen untersuchen, testen, simulieren und validieren können. Lesen Sie mehr über [Adobe Assurance](https://experienceleague.adobe.com/de/docs/experience-platform/assurance/home).
 
 
->[!WARNING]
->
-> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 ## Lernziele
 
@@ -29,7 +26,7 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Sie sind mit Datenerfassungs-Tags und der [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} vertraut und haben die vorherigen Lektionen im Tutorial abgeschlossen:
+Sie sind mit Datenerfassungs-Tags und der [Demo-Site von Luma](https://newluma.enablementadobe.com){target="_blank"} vertraut und haben die vorherigen Lektionen im Tutorial abgeschlossen:
 
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Konfigurieren eines Identity-Namespace](configure-identities.md)
@@ -51,7 +48,7 @@ Jedes Mal, wenn Sie Edge Trace in Adobe Experience Platform Debugger aktivieren,
 
 Überprüfen Sie dies in der Debugger-Lektion:
 
-1. Wechseln Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html) und verwenden Sie den Debugger, [&#x200B; die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Wechseln Sie zur [Demo-Site von Luma](https://newluma.enablementadobe.com) und verwenden Sie den Debugger, [ die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Wählen Sie im linken Navigationsbereich von **[!UICONTROL Experience Platform Debugger]** die Option **[!UICONTROL Protokolle]**
 1. Wählen Sie die Registerkarte **[!UICONTROL Edge]** und dann **[!UICONTROL Verbinden]**
 
@@ -70,7 +67,7 @@ Jedes Mal, wenn Sie Edge Trace in Adobe Experience Platform Debugger aktivieren,
    ![Erstellen einer Assurance-Sitzung](assets/assurance-create-session.png)
 1. Start auswählen
 1. Geben Sie der Sitzung einen Namen, z. B. `Luma Web SDK validation`
-1. Geben Sie als **[!UICONTROL Basis]** URL `https://luma.enablementadobe.com/` ein
+1. Geben Sie als **[!UICONTROL Basis]** URL `https://newluma.enablementadobe.com/` ein
    ![Benennen Sie die Assurance-Sitzung](assets/assurance-name-session.png)
 1. Klicken Sie im nächsten Bildschirm auf **[!UICONTROL Link kopieren]**
 1. Wählen Sie das Symbol aus, um den Link in die Zwischenablage zu kopieren
@@ -98,4 +95,4 @@ Da ein XDM-Objekt jetzt auf einer Seite ausgelöst wird und Sie wissen, wie Sie 
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

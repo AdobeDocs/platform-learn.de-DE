@@ -4,21 +4,18 @@ description: Erfahren Sie, wie Sie ein XDM-Objekt erstellen und ihm Datenelement
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 30581466024454c7e8f5bd469864161f48f4ce5a
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1275'
 ht-degree: 2%
 
 ---
 
 # Datenelemente erstellen
 
-Erfahren Sie, wie Sie Datenelemente in Tags für Inhalts-, Commerce- und Identitätsdaten auf der [Demo-Site von Luma](https://luma.enablementadobe.com/content/luma/us/en.html) erstellen. Füllen Sie dann Felder in Ihrem XDM-Schema mit dem Datenelementtyp Variable der Adobe Experience Platform Web SDK-Erweiterung aus.
+Erfahren Sie, wie Sie Datenelemente in Tags für Inhalts-, Commerce- und Identitätsdaten auf der [Demo-Site von Luma](https://newluma.enablementadobe.com) erstellen. Füllen Sie dann Felder in Ihrem XDM-Schema mit dem Datenelementtyp Variable der Adobe Experience Platform Web SDK-Erweiterung aus.
 
 
->[!WARNING]
->
-> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 ## Lernziele
 
@@ -41,7 +38,7 @@ Sie wissen, was eine Datenschicht ist, und haben die vorherigen Lektionen im Tut
 
 >[!IMPORTANT]
 >
->Die Daten für diese Lektion stammen aus der `[!UICONTROL digitalData]` Datenschicht auf der Luma-Site. Um die Datenschicht anzuzeigen, öffnen Sie die Entwicklerkonsole und geben Sie ein, `[!UICONTROL digitalData]` die vollständige verfügbare Datenschicht anzuzeigen.![digitalData-Datenschicht](assets/data-element-data-layer.png)
+>Die Daten für diese Lektion stammen aus der `[!UICONTROL adobeDataLayer]` Datenschicht auf der Luma-Site. Um die Datenschicht anzuzeigen, öffnen Sie die Entwicklerkonsole und geben Sie ein, `[!UICONTROL adobeDataLayer]` die vollständige verfügbare Datenschicht anzuzeigen.![adobeDataLayer-Datenschicht](assets/data-element-data-layer-new.png)
 
 
 ## Ansätze für Datenschichten
@@ -59,7 +56,7 @@ Es gibt mehrere Möglichkeiten, Daten aus Ihrer Datenschicht mithilfe der Tags-F
 
 ### Implementieren von XDM in der Datenschicht
 
-Dieser Ansatz beinhaltet die Verwendung des vollständig definierten XDM-Objekts als Struktur für Ihre Datenschicht. Anschließend ordnen Sie die gesamte Datenschicht einem XDM-Objekt-Datenelement in Tags zu. Wenn Ihre Implementierung keinen Tag-Manager verwendet, kann dieser Ansatz ideal sein, da Sie mit dem Befehl „XDM sendEvent[&#x200B; Daten direkt aus Ihrer Anwendung an XDM senden &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Wenn Sie Tags verwenden, können Sie ein benutzerdefiniertes Code-Datenelement erstellen, das die gesamte Datenschicht als Passthrough-JSON-Objekt an das XDM erfasst. Anschließend ordnen Sie die Passthrough-JSON dem XDM-Objektfeld in der Aktion „Ereignis senden“ zu.
+Dieser Ansatz beinhaltet die Verwendung des vollständig definierten XDM-Objekts als Struktur für Ihre Datenschicht. Anschließend ordnen Sie die gesamte Datenschicht einem XDM-Objekt-Datenelement in Tags zu. Wenn Ihre Implementierung keinen Tag-Manager verwendet, kann dieser Ansatz ideal sein, da Sie mit dem Befehl „XDM sendEvent[ Daten direkt aus Ihrer Anwendung an XDM senden ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Wenn Sie Tags verwenden, können Sie ein benutzerdefiniertes Code-Datenelement erstellen, das die gesamte Datenschicht als Passthrough-JSON-Objekt an das XDM erfasst. Anschließend ordnen Sie die Passthrough-JSON dem XDM-Objektfeld in der Aktion „Ereignis senden“ zu.
 
 Im Folgenden finden Sie ein Beispiel dafür, wie die Datenschicht bei Verwendung des Adobe Client-Datenschichtformats aussehen würde:
 
@@ -84,7 +81,7 @@ window.adobeDataLayer.push({
                "id":"",
                "value":"1"
             },
-            "URL":"https://luma.enablementadobe.com/",
+            "URL":"https://newluma.enablementadobe.com/",
             "isErrorPage":"",
             "isHomePage":"",
             "name":"luma:home",
@@ -112,7 +109,7 @@ Nachteile
 * Vollständige Abhängigkeit vom Entwicklungsteam und vom Entwicklungszyklus zur Aktualisierung der an XDM gesendeten Daten
 * Eingeschränkte Flexibilität, da XDM die genaue Payload von der Datenschicht erhält
 * Integrierte Tags-Funktionen wie Scraping, Persistenz und Funktionen für schnelle Bereitstellungen können nicht verwendet werden.
-* Die Verwendung der Datenschicht für Pixel von Drittanbietern ist schwieriger (Sie sollten diese Pixel jedoch möglicherweise in die [Ereignisweiterleitung“ &#x200B;](setup-event-forwarding.md)!
+* Die Verwendung der Datenschicht für Pixel von Drittanbietern ist schwieriger (Sie sollten diese Pixel jedoch möglicherweise in die [Ereignisweiterleitung“ ](setup-event-forwarding.md)!
 * Keine Möglichkeit, die Daten zwischen der Datenschicht und XDM umzuwandeln
 
 ### Zuordnen der Datenschicht in Tags
@@ -134,17 +131,17 @@ Dieser Ansatz beinhaltet die Zuordnung einzelner Datenschichtvariablen ODER Date
 >
 > Google-Datenschicht
 > 
-> Wenn Ihr Unternehmen bereits Google Analytics verwendet und das herkömmliche Google-Datenschichtobjekt auf Ihrer Website hat, können Sie die [Google-Datenschichterweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in Tags verwenden. Dadurch können Sie Adobe-Technologie schneller bereitstellen, ohne den Support von Ihrem IT-Team anfordern zu müssen. Wenn Sie die Google-Datenschicht XDM zuordnen, gehen Sie wie oben beschrieben vor.
+> Wenn Ihr Unternehmen bereits Google Analytics verwendet und das herkömmliche Google-Datenschichtobjekt auf Ihrer Website hat, können Sie die [Google-Datenschichterweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in Tags verwenden. Dadurch können Sie Adobe-Technologie schneller bereitstellen, ohne den Support von Ihrem IT-Team anfordern zu müssen. Wenn Sie die Google-Datenschicht XDM zuordnen, gehen Sie wie oben beschrieben vor.
 
 ### Zu XDM im Datenstrom zuordnen
 
-Dieser Ansatz verwendet Funktionen, die in die Datenstromkonfiguration integriert sind ([&#x200B; für die Datenerfassung), &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep) die Zuordnung von Datenschichtvariablen zu XDM in Tags übersprungen.
+Dieser Ansatz verwendet Funktionen, die in die Datenstromkonfiguration integriert sind ([ für die Datenerfassung), ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) die Zuordnung von Datenschichtvariablen zu XDM in Tags übersprungen.
 
 #### Vorteile
 
 * Flexibel, da Sie einzelne Variablen XDM zuordnen können
-* Möglichkeit [&#x200B; „Berechnung neuer Werte](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/functions) oder [Umwandlung von Datentypen](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/data-handling) aus einer Datenschicht, bevor sie an XDM gesendet wird
-* Nutzen Sie eine [Zuordnungs](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep#create-mapping)Benutzeroberfläche, um Felder in Ihren Quelldaten mithilfe einer Point-and-Click-Benutzeroberfläche XDM zuzuordnen
+* Möglichkeit [ „Berechnung neuer Werte](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) oder [Umwandlung von Datentypen](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) aus einer Datenschicht, bevor sie an XDM gesendet wird
+* Nutzen Sie eine [Zuordnungs](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping)Benutzeroberfläche, um Felder in Ihren Quelldaten mithilfe einer Point-and-Click-Benutzeroberfläche XDM zuzuordnen
 
 #### Nachteile
 
@@ -160,14 +157,14 @@ Dieser Ansatz verwendet Funktionen, die in die Datenstromkonfiguration integrier
 
 ## Erstellen von Datenelementen zur Erfassung der Datenschicht
 
-Bevor Sie das XDM-Objekt erstellen, erstellen Sie den folgenden Satz von Datenelementen für die Datenschicht [Demo-Site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} von Luma:
+Bevor Sie das XDM-Objekt erstellen, erstellen Sie den folgenden Satz von Datenelementen für die Datenschicht [Demo-Site](https://newluma.enablementadobe.com){target="_blank"} von Luma:
 
 1. Wechseln Sie zu **[!UICONTROL Datenelemente]** und wählen Sie **[!UICONTROL Datenelement hinzufügen]** (oder **[!UICONTROL Neues Datenelement erstellen]** wenn in der Tag-Eigenschaft keine Datenelemente vorhanden sind)
 
    ![Datenelement erstellen](assets/data-element-create.png)
 
-1. Benennen Sie das Datenelement `page.pageInfo.pageName`.
-1. Verwenden Sie den **[!UICONTROL JavaScript]** Variablen **[!UICONTROL Datenelementtyp,]** auf einen Wert in der Datenschicht von Luma zu verweisen: `digitalData.page.pageInfo.pageName`
+1. Benennen Sie das Datenelement `Page Name`.
+1. Verwenden Sie den **[!UICONTROL JavaScript]** Variablen **[!UICONTROL Datenelementtyp,]** auf einen Wert in der Datenschicht von Luma zu verweisen: `adobeDataLayer.0.page.name`
 
 1. Markieren Sie die Kästchen für **[!UICONTROL Kleinbuchstaben erzwingen]** und **[!UICONTROL Text bereinigen]**, um die Groß-/Kleinschreibung zu standardisieren und überflüssige Leerzeichen zu entfernen
 
@@ -179,96 +176,56 @@ Bevor Sie das XDM-Objekt erstellen, erstellen Sie den folgenden Satz von Datenel
 
 Erstellen Sie diese zusätzlichen Datenelemente, indem Sie die gleichen Schritte ausführen:
 
-* **`page.pageInfo.server`** zugeordnet zu
-  `digitalData.page.pageInfo.server`
+* **`User Id`** zugeordnet zu
+  `adobeDataLayer.0.user.id`
 
-* **`page.pageInfo.hierarchie1`** zugeordnet zu
-  `digitalData.page.pageInfo.hierarchie1`
+* **`User Logged In`** zugeordnet zu
+  `adobeDataLayer.0.user.loggedIn`
 
-* **`user.profile.attributes.username`** zugeordnet zu
-  `digitalData.user.0.profile.0.attributes.username`
-
-* **`user.profile.attributes.loggedIn`** zugeordnet zu
-  `digitalData.user.0.profile.0.attributes.loggedIn`
-
-* **`product.productInfo.sku`** zugeordnet zu `digitalData.product.0.productInfo.sku`
-<!--digitalData.product.0.productInfo.sku
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.sku;
-    });
-    return cartItem;
-    ```
-    -->
-* **`product.productInfo.title`** zugeordnet zu `digitalData.product.0.productInfo.title`
-* **`cart.orderId`** zugeordnet zu `digitalData.cart.orderId`
-<!--
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.title;
-    });
-    return cartItem;
-    ```
-    -->
-* **`product.category`** Verwendung des **[!UICONTROL benutzerspezifischer Code]** **[!UICONTROL Datenelementtyps)]** folgenden benutzerdefinierten Code, um die Website-URL für die Kategorie der obersten Ebene zu analysieren:
+* **`Ecommerce Product Id`** zugeordnet zu `adobeDataLayer.0.ecommerce.detail.products.0.id`
+* **`Ecommerce Product Name`** zugeordnet zu `adobeDataLayer.0.ecommerce.detail.products.0.name`
+* **`Ecommerce Purchase Id`** zugeordnet zu `adobeDataLayer.0.ecommerce.purchase.actionField.id`
+* **`Ecommerce Product Category`** mit dem **[!UICONTROL Benutzerdefinierter Code]** **[!UICONTROL Datenelementtyp]** und dem folgenden benutzerdefinierten Code:
 
   ```javascript
-  var cat = location.pathname.split(/[/.]+/);
-  if (cat[5] == 'products') {
-     return (cat[6]);
-  } else if (cat[5] != 'html') { 
-     return (cat[5]);
-  }
+  return adobeDataLayer[0].ecommerce.detail.products[0].category+":"+adobeDataLayer[0].ecommerce.detail.products[0].subcategory;
   ```
 
-* **`cart.productInfo`** mit dem folgenden benutzerdefinierten Code:
+* **`Ecommerce Cart Products`** mit dem folgenden benutzerdefinierten Code:
 
   ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  cartItem.push({
-  "SKU": item.sku
-  });
-  });
-  return cartItem; 
+  const cartProducts = adobeDataLayer
+  .flatMap(evt => Array.isArray(evt?.ecommerce?.cart?.items) ? evt.ecommerce.cart.items : [])
+  .filter(item => item && item.id && item.name && item.brand)
+  .map(({ id, name, brand }) => ({ id, name, brand }));
+  
+  return cartProducts;
   ```
 
-* **`cart.productInfo.purchase`** mit dem folgenden benutzerdefinierten Code:
+* **`Ecommerce Checkout Products`** mit dem folgenden benutzerdefinierten Code:
 
   ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  var qty = parseInt(item.qty);
-  var price = parseInt(item.price);
-  cartItem.push({
-  "SKU": item.sku,
-  "quantity": qty,
-  "priceTotal": price
-  });
-  });
-  return cartItem; 
+  const checkoutProducts = adobeDataLayer
+  .flatMap(evt => Array.isArray(evt?.ecommerce?.checkout?.products) ? evt.ecommerce.checkout.products : [])
+  .filter(item => item && item.id && item.name && item.brand)
+  .map(({ id, name, brand }) => ({ id, name, brand }));
+  
+  return checkoutProducts;
   ```
-
 
 
 >[!CAUTION]
 >
->Der Datenelementtyp [!UICONTROL JavaScript] behandelt Array-Verweise als Punkte anstatt als Klammern, sodass das Verweisen auf das Datenelement Benutzername als `digitalData.user[0].profile[0].attributes.username`**nicht funktioniert**.
+>Der Datenelementtyp [!UICONTROL JavaScript] behandelt Array-Verweise als Punkte anstatt als Klammern, sodass das Verweisen auf das Datenelement Benutzername als `adobeDataLayer[0].page.name`**nicht funktioniert**.
 
 ## Erstellen variabler Datenelemente für XDM und Datenobjekte
 
 Die soeben erstellten Datenelemente werden zum Erstellen eines XDM-Objekts (für Platform-Programme) und eines Datenobjekts (für Analytics, Target und Audience Manager) verwendet. Diese Objekte haben ihre eigenen speziellen Datenelemente namens **[!UICONTROL Variable]** Datenelemente, die sehr einfach zu erstellen sind.
 
-Um das Datenelement „Variable“ für XDM zu erstellen, binden Sie es an das Schema, das Sie in der Lektion [Konfigurieren eines Schemas“ erstellt &#x200B;](configure-schemas.md):
+Um das Datenelement „Variable“ für XDM zu erstellen, binden Sie es an das Schema, das Sie in der Lektion [Konfigurieren eines Schemas“ erstellt ](configure-schemas.md):
 
 1. Wählen Sie **[!UICONTROL Datenelement hinzufügen]**
-1. Benennen Sie Ihr Datenelement `xdm.variable.content`. Es wird empfohlen, den XDM-spezifischen Datenelementen „xdm“ voranzustellen, um Ihre Tag-Eigenschaft besser zu organisieren
+1. Benennen Sie Ihr Datenelement `XDM Variable`. Es wird empfohlen, den XDM-spezifischen Datenelementen „xdm“ voranzustellen, um Ihre Tag-Eigenschaft besser zu organisieren
 1. Wählen Sie **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Erweiterung]**
 1. Wählen Sie **[!UICONTROL Variable]** als **[!UICONTROL Datenelementtyp]**
 1. Wählen Sie **[!UICONTROL XDM]** als **[!UICONTROL Eigenschaft]**
@@ -281,38 +238,33 @@ Um das Datenelement „Variable“ für XDM zu erstellen, binden Sie es an das S
 Erstellen Sie anschließend das Datenelement Variable für Ihr Datenobjekt:
 
 1. Wählen Sie **[!UICONTROL Datenelement hinzufügen]**
-1. Benennen Sie Ihr Datenelement `data.variable`. Es wird empfohlen, den für das Datenobjekt spezifischen Datenelementen das Präfix „data“ voranzustellen, um Ihre Tag-Eigenschaft besser zu organisieren
+1. Benennen Sie Ihr Datenelement `Data Variable`.
 1. Wählen Sie **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Erweiterung]**
 1. Wählen Sie **[!UICONTROL Variable]** als **[!UICONTROL Datenelementtyp]**
 1. Wählen Sie **[!UICONTROL data]** als **[!UICONTROL property]**
 1. Wählen Sie die Experience Cloud-Lösungen aus, die Sie im Rahmen dieses Tutorials implementieren möchten
 1. Wählen Sie **[!UICONTROL Speichern]**
 
-   ![Variables Datenelement für das Datenobjekt](assets/data-element-data-variable.png.png)
+   ![Variables Datenelement für das Datenobjekt](assets/data-element-data-variable.png)
 
 
 Am Ende dieser Schritte sollten die folgenden Datenelemente erstellt sein:
 
 | Datenelemente der Haupterweiterung | Datenelemente der Platform Web SDK-Erweiterung |
 -----------------------------|-------------------------------
-| `cart.orderId` | `data.variable` |
-| `cart.productInfo` | `xdm.variable.content` |
-| `cart.productInfo.purchase` | |
-| `page.pageInfo.hierarchie1` | |
-| `page.pageInfo.pageName` | |
-| `page.pageInfo.server` | |
-| `product.category` | |
-| `product.productInfo.sku` | |
-| `product.productInfo.title` | |
-| `user.profile.attributes.loggedIn` | |
-| `user.profile.attributes.username` | |
-
->[!TIP]
->
->In einer zukünftigen Lektion [Erstellen von Tag](create-tag-rule.md)Regeln) erfahren Sie, wie Sie mit den **[!UICONTROL Variable]**-Datenelementen mehrere Regeln in Tags mithilfe des **[!UICONTROL Aktionstyps „Variable aktualisieren“]** können.
+| `Ecommerce Cart Products` | `Data Variable` |
+| `Ecommerce Checkout Products` | `XDM Variable` |
+| `Ecommerce Checkout Products` | |
+| `Ecommerce Product Category` | |
+| `Ecommerce Product Id` | |
+| `Ecommerce Product Name` | |
+| `Ecommerce Purchase Id` | |
+| `Page Name` | |
+| `User Id` | |
+| `User Logged In` | |
 
 Wenn diese Datenelemente eingerichtet sind, können Sie mit einer Tag-Regel Daten an Platform Edge Network senden. Erfahren Sie jedoch zuerst mehr über das Erfassen von Identitäten mit Web SDK.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

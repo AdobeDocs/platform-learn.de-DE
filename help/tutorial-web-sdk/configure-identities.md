@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Identity-Namespaces konfigurieren, die mit Ad
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '656'
 ht-degree: 12%
 
 ---
@@ -19,9 +19,6 @@ Der [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com
 
 Der [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home) (ja, es gibt zwei!) verwendet die ECIDs und Kunden-IDs, um Identitätsdiagramme zu generieren, sodass Sie Attribute und Verhaltensweisen in Echtzeit-Kundenprofilen zusammenführen können.
 
->[!WARNING]
->
-> Die in diesem Tutorial verwendete Luma-Website wird voraussichtlich in der Woche vom 16. Februar 2026 ersetzt. Die im Rahmen dieses Tutorials durchgeführten Arbeiten sind möglicherweise nicht auf die neue Website anwendbar.
 
 >[!NOTE]
 >
@@ -29,7 +26,7 @@ Der [Adobe Experience Platform Identity Service](https://experienceleague.adobe.
 
 >[!NOTE]
 >
-> Zu Demonstrationszwecken werden in den Übungen in dieser Lektion die Identitätsdetails eines fiktiven Kunden erfasst, der bei der Demo-Site [Luma“ angemeldet &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html), und zwar mithilfe der Anmeldeinformationen **Benutzer: `test@test.com` / Kennwort: test**.
+> Zu Demonstrationszwecken werden in den Übungen in dieser Lektion die Identitätsdetails eines fiktiven Kunden erfasst, der bei der Demo-Site [Luma“ angemeldet ](https://newluma.enablementadobe.com), und zwar mithilfe der Anmeldeinformationen **Benutzer: `test@test.com` / Kennwort: test**.
 
 ## Lernziele
 
@@ -49,7 +46,7 @@ Sie müssen die vorherigen Lektionen bereits abgeschlossen haben:
 >
 >Die [Experience Cloud ID-Erweiterung](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) wird bei der Implementierung von Adobe Experience Platform Web SDK nicht benötigt, da die Web SDK JavaScript-Bibliothek die Funktionalität des Besucher-ID-Diensts enthält.
 >
-> Wenn Ihre Website bereits den Experience Cloud ID-Service auf Ihrer Website verwendet - entweder über die Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service - und Sie ihn während der Migration zu Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/de/docs/experience-platform/edge/identity/overview) für weitere Informationen.
+> Wenn Ihre Website bereits den Experience Cloud ID-Service auf Ihrer Website verwendet - entweder über die Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service - und Sie ihn während der Migration zu Adobe Experience Platform Web SDK weiterhin verwenden möchten, müssen Sie die neueste Version der Visitor-API oder die Tag-Erweiterung des Experience Cloud ID-Service verwenden. Siehe [ID-Migration](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) für weitere Informationen.
 
 ## Erstellen eines Identity-Namespace
 
@@ -57,7 +54,7 @@ In dieser Übung erstellen Sie einen Identity-Namespace für das benutzerdefinie
 
 Bevor Sie mit den Übungen beginnen, sehen Sie sich dieses kurze Video an, um mehr über Identitäten in Adobe Experience Platform zu erfahren:
 
->[!VIDEO](https://video.tv.adobe.com/v/3422772?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 Erstellen Sie jetzt einen Namespace für die Luma CRM-ID:
 
@@ -69,7 +66,7 @@ Erstellen Sie jetzt einen Namespace für die Luma CRM-ID:
    >Wenn Sie Kunde eines plattformbasierten Programms wie Real-Time CDP oder Journey Optimizer sind, empfehlen wir, für dieses Tutorial eine Entwicklungs-Sandbox zu verwenden. Andernfalls verwenden Sie die **[!UICONTROL Prod]**-Sandbox.
 
 1. Wählen **[!UICONTROL Identitäten]** im linken Navigationsbereich aus
-1. Wählen Sie **[!UICONTROL Durchsuchen]** aus
+1. Wählen Sie **[!UICONTROL Namespaces]**
 
    In der Hauptbenutzeroberfläche der Seite wird eine Liste mit Identitäts-Namespaces angezeigt, die Namen, Identitätssymbole, das Datum der letzten Aktualisierung und Informationen darüber enthalten, ob es sich um standardmäßige oder benutzerdefinierte Namespaces handelt. Die rechte Leiste enthält Informationen zur [!UICONTROL Stärke des Identitätsdiagramms].
 
@@ -89,9 +86,9 @@ Erstellen Sie jetzt einen Namespace für die Luma CRM-ID:
    ![Erstellen von Namespaces](assets/identities-create-namespace.png)
 
 
-   Der Identity-Namespace wird im Bildschirm **[!UICONTROL Identitäten]** angezeigt.
+   Der neue Identity-Namespace sollte auf dem Bildschirm **[!UICONTROL Namespaces]** angezeigt werden.
 
-   ![Erstellen von Namespaces](assets/configure-identities-namespace-lumaCrmId.png)
+   ![Namespace erstellt](assets/configure-identities-namespace-lumaCrmId.png)
 
 
 >[!NOTE]
@@ -102,4 +99,4 @@ Nachdem Identitäten eingerichtet sind, kann der Datenstrom konfiguriert werden.
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
