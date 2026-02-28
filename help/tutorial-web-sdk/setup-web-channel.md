@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Einrichten des Journey Optimizer-Webkanals mit Web SDK
 
-Erfahren Sie, wie Sie den Adobe Journey Optimizer [Webkanal) ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Adobe Experience Platform Web SDK implementieren. In dieser Lektion werden die grundlegenden Voraussetzungen für den Web-Kanal, detaillierte Schritte für die Konfiguration und ein tiefer Einblick in einen Anwendungsfall mit Schwerpunkt auf dem Treuestatus behandelt.
+Erfahren Sie, wie Sie den Adobe Journey Optimizer [Webkanal) &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Adobe Experience Platform Web SDK implementieren. In dieser Lektion werden die grundlegenden Voraussetzungen für den Web-Kanal, detaillierte Schritte für die Konfiguration und ein tiefer Einblick in einen Anwendungsfall mit Schwerpunkt auf dem Treuestatus behandelt.
 
 In dieser Lektion können Journey Optimizer-Benutzer den Web-Kanal für die erweiterte Online-Personalisierung mit dem Journey Optimizer-Web-Designer verwenden.
 
@@ -43,7 +43,7 @@ Um die Lektionen in diesem Abschnitt abzuschließen, müssen Sie zunächst:
 * Schließen Sie alle Lektionen für die Erstkonfiguration von Platform Web SDK ab, einschließlich der Einrichtung von Datenelementen und Regeln.
 * Stellen Sie sicher, dass Ihre Adobe Experience Platform Web SDK Tags-Erweiterungsversion 2.16 oder höher ist.
 * Schließen Sie die Lektion Einrichten von Experience Platform ab, einschließlich der Übung zum Erstellen der `Luma Loyalty Rewards – Gold Status` Zielgruppe.
-* hat die Browser-Erweiterung [Adobe Experience Cloud Visual Editing Helper heruntergeladen und ](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
+* hat die Browser-Erweiterung [Adobe Experience Cloud Visual Editing Helper heruntergeladen und &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 * Wenn Sie den Journey Optimizer-Web-Designer zum Erstellen Ihres Web-Kanal-Erlebnisses verwenden, stellen Sie sicher, dass Sie entweder den Google Chrome- oder den Microsoft® Edge-Browser verwenden.
 * Stellen Sie sicher, dass Drittanbieter-Cookies in Ihrem Browser zulässig sind. Möglicherweise müssen Sie auch alle Anzeigenblocker in Ihrem Browser deaktivieren.
 
@@ -102,7 +102,7 @@ So konfigurieren Sie Adobe Journey Optimizer im Datenstrom:
 
    ![Datenstrom bearbeiten](assets/web-channel-edit-datastream.png)
 
-1. Aktivieren Sie das Kontrollkästchen **** Adobe Journey Optimizer.
+1. Aktivieren Sie das Kontrollkästchen **&#x200B;**&#x200B;Adobe Journey Optimizer.
 
 1. **[!UICONTROL Speichern]** der aktualisierten Konfiguration.
 
@@ -150,7 +150,7 @@ So erstellen Sie eine Beispielkampagne:
    >
    > Schema, Datensätze und Zielgruppen können auch in der Journey Optimizer-Benutzeroberfläche erstellt werden, da sie alle gängige Experience Platform-Konstrukte sind.
 
-1. Navigieren Sie im linken Navigationsbereich zu {0 **[!UICONTROL JourneyManagement >]** Kampagnen **[!UICONTROL .]**
+1. Navigieren Sie im linken Navigationsbereich zu &lbrace;0 **[!UICONTROL JourneyManagement >]** Kampagnen **[!UICONTROL .]**
 1. Klicken **[!UICONTROL oben]** auf „Kampagne erstellen“.
 1. Wählen Sie den Kampagnentyp aus. Wählen Sie für den Anwendungsfall „Treueprämien“ die Option **Geplant - Marketing**.
 
@@ -318,7 +318,7 @@ Sie werden aufgefordert, die Kampagnendetails ein letztes Mal zu bestätigen. W�
 
 ### Treueprämien-QA
 
-Es gibt einige Anmeldedaten, mit denen Sie „Gold-Status“-Benutzer simulieren und sich für Ihre Kampagne qualifizieren können. Sie müssen die Beispieldaten in &quot;Experience Platform einrichten[ hochgeladen haben ](setup-experience-platform.md) mithilfe dieser Anmeldeinformationen auf der Website Konten erstellen, damit diese funktionieren.
+Es gibt einige Anmeldedaten, mit denen Sie „Gold-Status“-Benutzer simulieren und sich für Ihre Kampagne qualifizieren können. Sie müssen die Beispieldaten in &quot;Experience Platform einrichten[&#x200B; hochgeladen haben &#x200B;](setup-experience-platform.md) mithilfe dieser Anmeldeinformationen auf der Website Konten erstellen, damit diese funktionieren.
 
 1. `cleavlandeuler@emailsim.io`/`test`
 1. `leftybeagen@emailsim.io`/`test`

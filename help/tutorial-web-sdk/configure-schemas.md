@@ -58,7 +58,7 @@ Dies ist das Ziel von Adobes [Experience-Datenmodell](https://business.adobe.com
 
 >[!NOTE]
 >
-> Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema zur Erfassung von Inhalten und Produkten, die von Kunden auf der [Demo-Website von Luma) angesehen ](https://newluma.enablementadobe.com). In diesem Beispielschema erfahren Sie mehr über die Funktionen des Schema-Editors und lernen, wie Sie später ein Schema für Ihr eigenes Unternehmen erstellen.
+> Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema zur Erfassung von Inhalten und Produkten, die von Kunden auf der [Demo-Website von Luma) angesehen &#x200B;](https://newluma.enablementadobe.com). In diesem Beispielschema erfahren Sie mehr über die Funktionen des Schema-Editors und lernen, wie Sie später ein Schema für Ihr eigenes Unternehmen erstellen.
 
 Weitere Informationen zu XDM-Schemata finden Sie in der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oder in der [XDM-Systemübersicht](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home).
 
@@ -115,7 +115,7 @@ Es wird empfohlen, nach Möglichkeit vorhandene Feldergruppen zu verwenden und s
 
 >[!TIP]
 > 
->In dieser Übung fügen Sie die empfohlenen vordefinierten Feldergruppen für die Web-Datenerfassung hinzu: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ und _**[!UICONTROL Consumer Experience Event]**_.
+>In dieser Übung fügen Sie die empfohlenen vordefinierten Feldergruppen für die Web-Datenerfassung hinzu: _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_ und _&#x200B;**[!UICONTROL Consumer Experience Event]**&#x200B;_.
 >
 
 
@@ -149,7 +149,7 @@ Es ist ein unverzichtbares Objekt für jede Web-bezogene Datenerfassung, da es d
 
 >[!IMPORTANT]
 >
-> Es ist möglich, ein Schema für **[!UICONTROL Profil]** jetzt zu aktivieren, es **jedoch jetzt** aktivieren. Nachdem ein Schema für das Profil aktiviert und Daten aufgenommen wurden, können sie nicht mehr deaktiviert oder gelöscht werden, ohne dass die gesamte Sandbox zurückgesetzt wird. Felder können derzeit auch nicht aus Schemata entfernt werden, obwohl es möglich ist, Felder in der Benutzeroberfläche [ verwerfen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Auswirkungen sollten Sie später im Auge behalten, wenn Sie mit Ihren eigenen Daten in Ihrer Produktionsumgebung arbeiten.
+> Es ist möglich, ein Schema für **[!UICONTROL Profil]** jetzt zu aktivieren, es **jedoch jetzt** aktivieren. Nachdem ein Schema für das Profil aktiviert und Daten aufgenommen wurden, können sie nicht mehr deaktiviert oder gelöscht werden, ohne dass die gesamte Sandbox zurückgesetzt wird. Felder können derzeit auch nicht aus Schemata entfernt werden, obwohl es möglich ist, Felder in der Benutzeroberfläche [&#x200B; verwerfen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Auswirkungen sollten Sie später im Auge behalten, wenn Sie mit Ihren eigenen Daten in Ihrer Produktionsumgebung arbeiten.
 >
 >
 >Diese Einstellung wird in der Lektion [Einrichten von Experience Platform](setup-experience-platform.md) näher erläutert.
