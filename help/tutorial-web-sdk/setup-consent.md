@@ -215,7 +215,7 @@ Sobald Sie diese Regel eingerichtet haben, sollte die Ereignissammlung beginnen,
 ![Option „Einverständnisnachrichtenbesucher“](assets/consent-post-user-optin.png)
 
 
-Weitere Informationen zum Einverständnis in Web SDK finden Sie unter [Unterstützen von Voreinstellungen für das Einverständnis &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
+Weitere Informationen zum Einverständnis in Web SDK finden Sie unter [Unterstützen von Voreinstellungen für das Einverständnis &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +223,8 @@ Weitere Informationen zum Einverständnis in Web SDK finden Sie unter [Unterstü
 
 
 
-Weitere Informationen zur Aktion [!UICONTROL Einverständnis festlegen] finden Sie unter [Einverständnis festlegen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Weitere Informationen zur Aktion [!UICONTROL Einverständnis festlegen] finden Sie unter [Einverständnis festlegen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=de)
