@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie einen Datenstrom aktivieren und Experience Cl
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 8%
@@ -58,7 +58,7 @@ Jetzt können Sie einen Datenstrom erstellen, um Platform Edge Network mitzuteil
    >
    >Sie müssen kein Schema auswählen. Eine Schemaauswahl ist nur erforderlich, wenn Sie die Funktion [Datenvorbereitung für die Datenerfassung](/help/data-collection/edge/data-prep.md) verwenden.
 
-Auf dem nächsten Bildschirm können Sie dem Datenstrom Services wie Adobe-Programme hinzufügen, Sie werden jedoch derzeit keine Services hinzufügen. Experience Platform Dies wird später im Abschnitt &quot;[&#x200B; einrichten“, &#x200B;](setup-experience-platform.md) [Analytics einrichten](setup-analytics.md), [Audience Manager einrichten](setup-audience-manager.md), [Target einrichten](setup-target.md) oder [Ereignisweiterleitung](setup-event-forwarding.md).
+Auf dem nächsten Bildschirm können Sie dem Datenstrom Services wie Adobe-Programme hinzufügen, Sie werden jedoch derzeit keine Services hinzufügen. Experience Platform Dies wird später im Abschnitt &quot;[ einrichten“, ](setup-experience-platform.md)[Analytics einrichten](setup-analytics.md), [Audience Manager einrichten](setup-audience-manager.md), [Target einrichten](setup-target.md) oder [Ereignisweiterleitung](setup-event-forwarding.md).
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Auf dem nächsten Bildschirm können Sie dem Datenstrom Services wie Adobe-Progr
 
 ## Überschreiben eines Datenstroms
 
-[Datenstromüberschreibungen](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/overrides) ermöglichen es Ihnen, zusätzliche Konfigurationen für Ihren Datenstrom zu definieren und dann Ihre Standardkonfiguration unter bestimmten Bedingungen zu überschreiben.
+[Datenstromüberschreibungen](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) ermöglichen es Ihnen, zusätzliche Konfigurationen für Ihren Datenstrom zu definieren und dann Ihre Standardkonfiguration unter bestimmten Bedingungen zu überschreiben.
 
 Die Überschreibung der Datenstromkonfiguration ist ein zweistufiger Prozess:
 
@@ -79,4 +79,4 @@ Jetzt können Sie die Platform Web SDK-Erweiterung in Ihrer Tag-Eigenschaft inst
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

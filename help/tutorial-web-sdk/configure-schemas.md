@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie in der Datenerfassungsoberfläche ein XDM-Sch
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1510'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Platform Web SDK verwendet Ihr Schema, um Ihre Web-Ereignisdaten zu standardisie
 
 ## Warum sollten die Daten modelliert werden?
 
-Unternehmen haben ihre eigene Sprache für die Kommunikation über ihren Bereich. Autohäuser beschäftigen sich mit Marken, Modellen und Zylindern. Fluggesellschaften kümmern sich um Flugnummern, Serviceklasse und Sitzplatzzuweisungen. Einige dieser Begriffe beziehen sich ausschließlich auf ein bestimmtes Unternehmen, andere werden in vertikalen Branchen verwendet und wieder andere werden von fast allen Unternehmen verwendet. Für Begriffe, die in einer vertikalen Branche verwendet werden oder sogar noch weiter gefasst sind, können Sie in Ihren Daten bereits viele wichtige Funktionen übernehmen, wenn Sie diese Begriffe gemeinsam benennen und strukturieren.
+Unternehmen haben ihre eigene Sprache für die Kommunikation über ihren Bereich. Die Autohäuser verfügen über Fabrikate, Modelle und Zylinder. Fluggesellschaften haben Flugnummern, Serviceklasse und Sitzplatzzuweisungen. Einige dieser Begriffe beziehen sich ausschließlich auf ein bestimmtes Unternehmen, andere werden in vertikalen Branchen verwendet und wieder andere werden von fast allen Unternehmen verwendet. Für Begriffe, die in einer vertikalen Branche verwendet werden oder sogar noch weiter gefasst sind, können Sie in Ihren Daten bereits viele wichtige Funktionen übernehmen, wenn Sie diese Begriffe gemeinsam benennen und strukturieren.
 
 Viele Unternehmen bearbeiten beispielsweise Bestellungen. Was wäre, wenn diese Unternehmen gemeinsam beschließen, eine Bestellung auf ähnliche Weise zu modellieren? Was wäre beispielsweise, wenn das Datenmodell aus einem Objekt mit einer `priceTotal` besteht, die den Gesamtpreis der Bestellung darstellt? Was wäre, wenn dieses Objekt auch Eigenschaften mit den Namen `currencyCode` und `purchaseOrderNumber` hätte? Möglicherweise enthält das Bestellobjekt eine Eigenschaft mit dem Namen `payments`, die ein Array von Zahlungsobjekten wäre. Jedes Objekt würde eine Zahlung für die Bestellung darstellen. Vielleicht hat ein Kunde einen Teil der Bestellung mit einer Geschenkkarte bezahlt und der Rest mit einer Kreditkarte. Sie können mit dem Erstellen eines Modells beginnen, das in etwa wie folgt aussieht:
 
@@ -51,22 +51,22 @@ Viele Unternehmen bearbeiten beispielsweise Bestellungen. Was wäre, wenn diese 
 }
 ```
 
-Wenn sich alle Unternehmen, die mit Bestellungen zu tun haben, dafür entscheiden würden, ihre Auftragsdaten konsistent nach branchenüblichen Begriffen zu modellieren, könnten magische Dinge passieren. Informationen können innerhalb und außerhalb Ihres Unternehmens flüssiger ausgetauscht werden, anstatt die Daten ständig zu interpretieren und zu übersetzen (Props und eVars, irgendjemand?). Maschinelles Lernen könnte leichter verstehen, was Ihre Daten _bedeuten_ und umsetzbare Einblicke bieten. Die Benutzeroberflächen zum Aufdecken relevanter Daten könnten intuitiver werden. Ihre Daten können nahtlos mit Partnern und Anbietern integriert werden, die dieselbe Modellierung verfolgen.
+Wenn sich alle Unternehmen, die mit Bestellungen zu tun haben, dafür entscheiden würden, ihre Auftragsdaten konsistent nach branchenüblichen Begriffen zu modellieren, könnten magische Dinge passieren. Informationen können innerhalb und außerhalb Ihres Unternehmens flüssiger ausgetauscht werden, anstatt die Daten ständig zu interpretieren und zu übersetzen (Props und eVars, irgendjemand?). Maschinelles Lernen könnte leichter verstehen, was Ihre Daten _bedeuten_ und umsetzbare Einblicke bieten. Die Benutzeroberflächen zum Aufdecken relevanter Daten könnten intuitiver werden. Ihre Daten können nahtlos mit Partnern und Anbietern integriert werden, die dieselbe Modellierung verwenden.
 
-Dies ist das Ziel des [Experience-Datenmodells](https://business.adobe.com/de/products/experience-platform/experience-data-model.html) von Adobe. XDM bietet eine präskriptive Datenmodellierung, die in der Branche üblich ist, und ermöglicht es Ihnen gleichzeitig, das Modell für Ihre spezifischen Anforderungen zu erweitern. Adobe Experience Platform basiert auf XDM und daher müssen in Experience Platform gesendete Daten in XDM gespeichert werden. Anstatt darüber nachzudenken, wo und wie Sie Ihre aktuellen Datenmodelle in XDM umwandeln können, bevor Sie die Daten an Experience Platform senden, sollten Sie eher in Betracht ziehen, XDM in Ihrem Unternehmen pervasiv anzuwenden, sodass Übersetzungen selten auftreten müssen.
+Dies ist das Ziel von Adobes [Experience-Datenmodell](https://business.adobe.com/products/experience-platform/experience-data-model.html) oder XDM. XDM bietet eine präskriptive Datenmodellierung, die in der Branche üblich ist, und ermöglicht es Ihnen gleichzeitig, das Modell für Ihre spezifischen Anforderungen zu erweitern. Adobe Experience Platform basiert auf XDM und daher müssen in Experience Platform gesendete Daten in XDM gespeichert werden. Anstatt darüber nachzudenken, wo und wie Sie Ihre aktuellen Datenmodelle in XDM umwandeln können, bevor Sie die Daten an Experience Platform senden, sollten Sie eher in Betracht ziehen, XDM in Ihrem Unternehmen pervasiv anzuwenden, sodass Übersetzungen selten auftreten müssen.
 
 
 >[!NOTE]
 >
-> Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema zur Erfassung von Inhalten und Produkten, die von Kundinnen und Kunden auf der [Demo-Site von Luma) angesehen &#x200B;](https://newluma.enablementadobe.com). Sie können diese Schritte zwar verwenden, um ein anderes Schema für Ihre eigenen Zwecke zu erstellen, es wird jedoch empfohlen, zunächst das Beispielschema zu erstellen, um mehr über die Funktionen des Schema-Editors zu erfahren.
+> Zu Demonstrationszwecken erstellen die Übungen in dieser Lektion ein Beispielschema zur Erfassung von Inhalten und Produkten, die von Kunden auf der [Demo-Website von Luma) angesehen ](https://newluma.enablementadobe.com). In diesem Beispielschema erfahren Sie mehr über die Funktionen des Schema-Editors und lernen, wie Sie später ein Schema für Ihr eigenes Unternehmen erstellen.
 
-Weitere Informationen zu XDM-Schemata finden Sie in der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/de/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oder in der [XDM-Systemübersicht](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home).
+Weitere Informationen zu XDM-Schemata finden Sie in der Wiedergabeliste [Modellieren Ihrer Kundenerlebnisdaten mit XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oder in der [XDM-Systemübersicht](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home).
 
 ## Lernziele
 
 Am Ende dieser Lektion können Sie:
 
-* Erstellen eines XDM-Schemas über die Datenerfassungsoberfläche
+* Erstellen eines XDM-Schemas in der Datenerfassungs-Oberfläche
 * Hinzufügen von Feldergruppen zu Ihrem XDM-Schema
 * Erstellen von XDM-Schemata für Web-Ereignisdaten mithilfe von Best Practices
 
@@ -76,16 +76,16 @@ Alle erforderlichen Bereitstellungs- und Benutzerberechtigungen für die Datener
 
 ## Erstellen eines XDM-Schemas
 
-XDM-Schemata sind die Standardmethode zur Beschreibung von Daten in Experience Platform. Dadurch können alle Daten, die den Schemata entsprechen, innerhalb einer Organisation ohne Konflikte wiederverwendet oder sogar von mehreren Organisationen gemeinsam genutzt werden. Weitere Informationen finden Sie unter [Grundlagen der Schemakomposition](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition).
+XDM-Schemata sind die Standardmethode zur Beschreibung von Daten in Experience Platform. So können Daten, die den Schemata entsprechen, innerhalb einer Organisation ohne Konflikte wiederverwendet oder sogar von mehreren Organisationen gemeinsam genutzt werden.
 
-In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen grundlegenden Feldergruppen für die Erfassung von Web-Ereignisdaten auf der [Demo-Site von Luma](https://newluma.enablementadobe.com){target="_blank"}:
+In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen grundlegenden Feldergruppen für die Erfassung von Web-Ereignisdaten auf der [Demo-Website von Luma](https://newluma.enablementadobe.com){target="_blank"}:
 
 1. Öffnen Sie die [Datenerfassungsschnittstelle](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Stellen Sie sicher, dass Sie sich in der richtigen Sandbox befinden. Suchen Sie die Sandbox in der oberen rechten Ecke
 
    >[!NOTE]
    >
-   >Wenn Sie Kunde eines plattformbasierten Programms wie Real-Time CDP oder Journey Optimizer sind, empfehlen wir, für dieses Tutorial eine Entwicklungs-Sandbox zu verwenden. Andernfalls verwenden Sie die **[!UICONTROL Prod]**-Sandbox.
+   >Wenn Sie Kunde einer Platform-Anwendung wie Real-Time CDP oder Journey Optimizer sind, empfehlen wir Ihnen, für dieses Tutorial eine neue Entwicklungs-Sandbox zu verwenden. Wenn Sie nicht Kunde einer Platform-Anwendung sind, verwenden Sie die **[!UICONTROL Prod]**-Sandbox.
 
 1. Navigieren Sie **[!UICONTROL linken Navigationsbereich]** Schemata“.
 1. Klicken Sie auf **[!UICONTROL Schaltfläche]** Schema erstellen“ oben rechts
@@ -109,13 +109,13 @@ In dieser Übung erstellen Sie ein XDM-Schema mit den empfohlenen grundlegenden 
 
 ## Feldergruppen hinzufügen
 
-Wie bereits erwähnt, ist XDM das zentrale Framework, das Kundenerlebnisdaten standardisiert, indem gemeinsame Strukturen und Definitionen für nachgelagerte Adobe Experience Platform-Services bereitgestellt werden. Durch die Einhaltung von XDM-Standards _alle Kundenerlebnisdaten_ in eine gemeinsame Darstellung integriert werden. Mit diesem Ansatz können Sie wertvolle Einblicke aus Kundenaktionen gewinnen, Zielgruppen mithilfe von Segmenten definieren und Kundenattribute für Personalisierungszwecke mithilfe von Daten aus verschiedenen Quellen ausdrücken. Weitere Informationen finden [&#x200B; unter „Best Practices &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/best-practices) Datenmodellierung“.
+Wie bereits erwähnt, ist XDM das zentrale Framework, das Kundenerlebnisdaten standardisiert, indem gemeinsame Strukturen und Definitionen bereitgestellt werden. Durch die Einhaltung von XDM-Standards _alle Kundenerlebnisdaten_ in eine gemeinsame Darstellung integriert werden. Dieser Ansatz ermöglicht es Ihnen, wertvolle Einblicke aus Kundenaktionen zu gewinnen, Zielgruppen durch Segmente zu definieren und personalisierte Nachrichten mit Kundenattributen unter Verwendung von Daten aus mehreren Quellen zu erstellen.
 
-Wenn möglich, wird empfohlen, vorhandene Feldergruppen zu verwenden und ein produktunabhängiges Modell und Namenskonventionen einzuhalten. Für alle unternehmensspezifischen Daten, die nicht zu den oben vordefinierten Feldergruppen passen, können Sie eine benutzerdefinierte Feldergruppe erstellen. Unter [Erstellen eines Schemas mit dem Schema-Editor](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#create) finden Sie detailliertere Schritte zu benutzerdefinierten Schemata.
+Es wird empfohlen, nach Möglichkeit vorhandene Feldergruppen zu verwenden und semantische Benennungskonventionen einzuhalten. Für alle unternehmensspezifischen Daten, die nicht zu den oben vordefinierten Feldergruppen passen, können Sie eine benutzerdefinierte Feldergruppe erstellen. Unter [Erstellen eines Schemas mit dem Schema-Editor](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) finden Sie detailliertere Schritte zu benutzerdefinierten Schemata.
 
 >[!TIP]
 > 
->In dieser Übung fügen Sie die empfohlenen vordefinierten Feldergruppen für die Web-Datenerfassung hinzu: _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_ und _&#x200B;**[!UICONTROL Consumer Experience Event]**&#x200B;_.
+>In dieser Übung fügen Sie die empfohlenen vordefinierten Feldergruppen für die Web-Datenerfassung hinzu: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ und _**[!UICONTROL Consumer Experience Event]**_.
 >
 
 
@@ -135,7 +135,7 @@ Beachten Sie bei beiden Feldergruppen, dass Sie Zugriff auf die am häufigsten v
 
 ![Schemafeldgruppen](assets/schema-consumer-experience-event.png)
 
-Diese Lektion ist nur ein Anfang. Beim Erstellen eines eigenen Web-Ereignisschemas müssen Sie Ihre Geschäftsanforderungen untersuchen und dokumentieren. Dieser Prozess ähnelt dem Erstellen eines [Geschäftsanforderungsdokuments](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) und einer [Lösungs-Design-Referenz](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) für eine Adobe Analytics-Implementierung, sollte jedoch Anforderungen für _alle nachgelagerten Datenempfänger_ wie Platform-, Target- und Ereignisweiterleitungsziele enthalten.
+Diese Lektion ist nur ein Anfang. Beim Erstellen eines eigenen Web-Ereignisschemas müssen Sie Ihre Geschäftsanforderungen untersuchen und dokumentieren. Dieser Prozess ähnelt dem Erstellen eines [Geschäftsanforderungsdokuments](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) und einer [Lösungs-Design-Referenz](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) für eine Adobe Analytics-Implementierung, sollte jedoch Anforderungen für _alle nachgelagerten Datenempfänger_ wie Platform-, Target- und Ereignisweiterleitungsziele enthalten.
 
 
 ### Das identityMap-Objekt
@@ -149,7 +149,7 @@ Es ist ein unverzichtbares Objekt für jede Web-bezogene Datenerfassung, da es d
 
 >[!IMPORTANT]
 >
-> Es ist möglich, &quot;**[!UICONTROL &quot; für]** Schema zu aktivieren, bevor das Schema gespeichert wird. **Aktivieren Sie** jetzt nicht. Nachdem ein Schema für das Profil aktiviert wurde, kann es nicht mehr deaktiviert oder gelöscht werden, ohne dass die gesamte Sandbox zurückgesetzt wird. Felder können derzeit auch nicht aus Schemata entfernt werden, obwohl es möglich ist, Felder in der Benutzeroberfläche [&#x200B; verwerfen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Auswirkungen sollten Sie später im Auge behalten, wenn Sie mit Ihren eigenen Daten in Ihrer Produktionsumgebung arbeiten.
+> Es ist möglich, ein Schema für **[!UICONTROL Profil]** jetzt zu aktivieren, es **jedoch jetzt** aktivieren. Nachdem ein Schema für das Profil aktiviert und Daten aufgenommen wurden, können sie nicht mehr deaktiviert oder gelöscht werden, ohne dass die gesamte Sandbox zurückgesetzt wird. Felder können derzeit auch nicht aus Schemata entfernt werden, obwohl es möglich ist, Felder in der Benutzeroberfläche [ verwerfen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Diese Auswirkungen sollten Sie später im Auge behalten, wenn Sie mit Ihren eigenen Daten in Ihrer Produktionsumgebung arbeiten.
 >
 >
 >Diese Einstellung wird in der Lektion [Einrichten von Experience Platform](setup-experience-platform.md) näher erläutert.
@@ -164,4 +164,4 @@ Jetzt können Sie auf dieses Schema verweisen, wenn Sie die Web SDK-Erweiterung 
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

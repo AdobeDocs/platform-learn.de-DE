@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
 workflow-type: tm+mt
 source-wordcount: '2882'
 ht-degree: 2%
@@ -21,7 +21,7 @@ Mit dem Journey Optimizer Entscheidungs-Management können Sie Ihren Kunden übe
 
 ![Architektur](assets/architecture-ajo.png){zoomable="yes"}
 
-Entscheidungs-Management erleichtert die Personalisierung durch eine zentrale Bibliothek mit Marketing-Angeboten und eine Entscheidungs-Engine, die Regeln und Einschränkungen auf die von Adobe Experience Platform erstellten Echtzeitprofile anwendet. Dadurch können Sie Ihren Kunden das richtige Angebot zum richtigen Zeitpunkt senden. Weitere Informationen [&#x200B; Sie unter &#x200B;](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)Über das Entscheidungs-Management“.
+Entscheidungs-Management erleichtert die Personalisierung durch eine zentrale Bibliothek mit Marketing-Angeboten und eine Entscheidungs-Engine, die Regeln und Einschränkungen auf die von Adobe Experience Platform erstellten Echtzeitprofile anwendet. Dadurch können Sie Ihren Kunden das richtige Angebot zum richtigen Zeitpunkt senden. Weitere Informationen [ Sie unter ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)Über das Entscheidungs-Management“.
 
 
 
@@ -35,7 +35,7 @@ Entscheidungs-Management erleichtert die Personalisierung durch eine zentrale Bi
 
 * App mit installierten und konfigurierten SDKs erfolgreich erstellt und ausgeführt.
 * Richten Sie die App für Adobe Experience Platform ein.
-* Zugriff auf Journey Optimizer - Entscheidungs-Management mit den [entsprechenden Berechtigungen zum Verwalten von Angeboten und Entscheidungen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/high-low-permissions).
+* Zugriff auf Journey Optimizer - Entscheidungs-Management mit den [entsprechenden Berechtigungen zum Verwalten von Angeboten und Entscheidungen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 
 ## Lernziele
@@ -63,7 +63,7 @@ Um sicherzustellen, dass Daten, die von Ihrer Mobile App an Platform Edge Networ
 
 1. Wählen Sie in der Datenerfassungs-Benutzeroberfläche **[!UICONTROL Datenströme]** und wählen Sie Ihren Datenstrom aus, z. B. **[!DNL Luma Mobile App]**.
 1. Wählen Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) für **[!UICONTROL Experience Platform]** und wählen Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus dem Kontextmenü.
-1. Stellen Sie sicher **[!UICONTROL dass im Bildschirm]** Datenströme![&#x200B; > Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge-Segmentierung]** und **[!UICONTROL Adobe Journey Optimizer]** ausgewählt sind. Wenn Sie die Target-Lektion durchführen, wählen Sie auch &lbrace;0 **[!UICONTROL Personalization Destinations aus.]** Weitere Informationen finden Sie unter {[}Adobe Experience Platform-Einstellungen.](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)
+1. Stellen Sie sicher **[!UICONTROL dass im Bildschirm]** Datenströme![ > Ordner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge-Segmentierung]** und **[!UICONTROL Adobe Journey Optimizer]** ausgewählt sind. Wenn Sie die Target-Lektion durchführen, wählen Sie auch {0 **[!UICONTROL Personalization Destinations aus.]** Weitere Informationen finden Sie unter {[}Adobe Experience Platform-Einstellungen.](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)
 1. Um Ihre Datenstromkonfiguration zu speichern, wählen Sie **[!UICONTROL Speichern]** aus.
 
    ![Konfiguration des AEP-Datenstroms](assets/datastream-aep-configuration-offers.png){zoomable="yes"}
@@ -145,7 +145,7 @@ So erstellen Sie die mobile JSON-Platzierung:
          { 
              "title": "Juno Jacket",
              "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performance Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
-             "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj06-purple_main.jpg" 
+             "image": "https://newluma.enablementadobe.com/images/wj06-purple_main.jpg" 
          }  
          ```
 
@@ -166,7 +166,7 @@ So erstellen Sie die mobile JSON-Platzierung:
 
 1. Wiederholen Sie die Schritte 3 bis 8, um vier weitere Angebote mit unterschiedlichen Namen und Inhalten zu erstellen. Alle anderen Konfigurationswerte, z. B. Startdatum und -zeit oder Priorität, ähneln dem ersten von Ihnen erstellten Angebot. Sie können Angebote schnell duplizieren und bearbeiten.
 
-   1. Wählen Sie in der Journey Optimizer![Benutzeroberfläche &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg)Angebote **[!UICONTROL Angebote]** in der linken Leiste und dann Angebote in der oberen Leiste aus.
+   1. Wählen Sie in der Journey Optimizer![Benutzeroberfläche ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg)Angebote **[!UICONTROL Angebote]** in der linken Leiste und dann Angebote in der oberen Leiste aus.
    1. Wählen Sie die Zeile des erstellten Angebots aus.
    1. Wählen Sie im rechten Bereich ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmall_18_N.svg) **[!UICONTROL Mehr Aktionen]** und wählen Sie im Kontextmenü ![Duplizieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Duplicate_18_N.svg) **[!UICONTROL Duplizieren]**.
 
@@ -174,10 +174,10 @@ So erstellen Sie die mobile JSON-Platzierung:
 
       | Name des Angebots | Angebotsinhalte in JSON |
       |---|---|
-      | Luma - Flasche Wasser bestätigen | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
-      | Luma - Desiree Fitness-T-Shirt | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
-      | Luma - Adrienne Trek Jacke | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
-      | Luma - Aero Daily Fitness-T-Shirt | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/tops/tees/ms01-black_main.jpg" }` |
+      | Luma - Flasche Wasser bestätigen | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://newluma.enablementadobe.com/images/ug06-lb-0.jpg" }` |
+      | Luma - Desiree Fitness-T-Shirt | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://newluma.enablementadobe.com/images/ws05-yellow_main.jpg" }` |
+      | Luma - Adrienne Trek Jacke | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://newluma.enablementadobe.com/images/wj08-gray_main.jpg" }` |
+      | Luma - Aero Daily Fitness-T-Shirt | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://newluma.enablementadobe.com/images/ms01-black_main.jpg" }` |
 
       {style="table-layout:fixed"}
 
@@ -196,7 +196,7 @@ So erstellen Sie die mobile JSON-Platzierung:
          {  
             "title": "Luma",
             "text": "Your store for sports wear and equipment.", 
-            "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
+            "image": "https://newluma.enablementadobe.com/images/logo.png" 
          }  
          ```
 
@@ -225,7 +225,7 @@ Um Ihrem Mobile-App-Benutzer ein Angebot zu unterbreiten, müssen Sie eine Angeb
    ![Angebote - Sammlung](assets/ajo-collection-offersselected.png){zoomable="yes"}
 
 
-## Eine Entscheidung erstellen
+## Erstellen einer Entscheidung
 
 Der letzte Schritt besteht darin, eine Entscheidung zu definieren, bei der es sich um die Kombination aus einem oder mehreren Entscheidungsumfängen und Ihrem Fallback-Angebot handelt.
 
@@ -237,7 +237,7 @@ Ein Bewertungskriterium ist die Kombination aus
 * Eignungsregeln: Ist das Angebot beispielsweise nur für eine bestimmte Zielgruppe verfügbar,
 * eine Ranking-Methode: Wenn mehrere Angebote zur Auswahl verfügbar sind, nach welcher Methode werden sie sortiert (z. B. nach Angebotspriorität, mithilfe einer Formel oder eines KI-Modells)?
 
-Siehe [Wichtige Schritte zum Erstellen und Verwalten von &#x200B;](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps)), wenn Sie verstehen möchten, wie Platzierungen, Regeln, Rankings, Angebote, Darstellungen, Sammlungen, Entscheidungen usw. interagieren und miteinander in Beziehung stehen. Diese Lektion konzentriert sich ausschließlich auf die Verwendung der Ausgabe einer Entscheidung und nicht auf die Flexibilität bei der Definition von Entscheidungen innerhalb von Journey Optimizer - Entscheidungs-Management.
+Siehe [Wichtige Schritte zum Erstellen und Verwalten von ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps)), wenn Sie verstehen möchten, wie Platzierungen, Regeln, Rankings, Angebote, Darstellungen, Sammlungen, Entscheidungen usw. interagieren und miteinander in Beziehung stehen. Diese Lektion konzentriert sich ausschließlich auf die Verwendung der Ausgabe einer Entscheidung und nicht auf die Flexibilität bei der Definition von Entscheidungen innerhalb von Journey Optimizer - Entscheidungs-Management.
 
 1. Wählen Sie in der Journey Optimizer-Benutzeroberfläche **[!UICONTROL Angebote]** in der linken Leiste aus.
 1. Wählen Sie **[!UICONTROL Entscheidungen]** in der oberen Leiste aus.
@@ -348,7 +348,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
    Diese Funktion:
 
    * richtet eine XDM-`xdmData` ein, die die ECID enthält, um das Profil zu identifizieren, für das Sie Angebote unterbreiten müssen.
-   * definiert `decisionScope`, ein Objekt, das auf der von Ihnen in der Benutzeroberfläche von Journey Optimizer - Entscheidungs-Management definierten Entscheidung basiert und mithilfe des kopierten Entscheidungsumfangs aus [Entscheidung erstellen“ definiert &#x200B;](#create-a-decision).  Die Luma-App verwendet eine Konfigurationsdatei (`decisions.json`), die die Bereichsparameter basierend auf dem folgenden JSON-Format abruft:
+   * definiert `decisionScope`, ein Objekt, das auf der von Ihnen in der Benutzeroberfläche von Journey Optimizer - Entscheidungs-Management definierten Entscheidung basiert und mithilfe des kopierten Entscheidungsumfangs aus [Entscheidung erstellen“ definiert ](#create-a-decision).  Die Luma-App verwendet eine Konfigurationsdatei (`decisions.json`), die die Bereichsparameter basierend auf dem folgenden JSON-Format abruft:
 
      ```json
      "scopes": [
@@ -416,9 +416,9 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
    )
    ```
 
-1. Android Navigieren Sie im Xcode-Projekt **[!UICONTROL Navigator zu {}]** ChevronDown![&#x200B; > &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** decisions.json **[!UICONTROL .]** Aktualisieren Sie die `activityId`- und `placementId` mit den Details zum Entscheidungsumfang , die Sie aus der Journey Optimizer-Oberfläche kopiert haben.
+1. Android Navigieren Sie im Xcode-Projekt **[!UICONTROL Navigator zu {}]** ChevronDown![ > ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** decisions.json **[!UICONTROL .]** Aktualisieren Sie die `activityId`- und `placementId` mit den Details zum Entscheidungsumfang , die Sie aus der Journey Optimizer-Oberfläche kopiert haben.
 
-1. Android Navigieren Sie im Android **[!UICONTROL -Navigator zu {]**}ChevronDown![&#x200B; > &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** models **[!UICONTROL >]** MobileSDK **[!UICONTROL .]** Suchen Sie die `suspend fun updatePropositionsOD(ecid: String,        activityId: String, placementId: String, itemCount: Int) `. Fügen Sie den folgenden Code hinzu:
+1. Android Navigieren Sie im Android **[!UICONTROL -Navigator zu {]**}ChevronDown![ > ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** models **[!UICONTROL >]** MobileSDK **[!UICONTROL .]** Suchen Sie die `suspend fun updatePropositionsOD(ecid: String,        activityId: String, placementId: String, itemCount: Int) `. Fügen Sie den folgenden Code hinzu:
 
    ```kotlin
    // set up the XDM dictionary, define decision scope and call update proposition API
@@ -445,7 +445,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
    Diese Funktion:
 
    * richtet eine XDM-`xdmData` ein, die die ECID enthält, um das Profil zu identifizieren, für das Sie Angebote unterbreiten müssen.
-   * definiert `decisionScope`, ein Objekt, das auf der von Ihnen in der Benutzeroberfläche von Journey Optimizer - Entscheidungs-Management definierten Entscheidung basiert und mithilfe des kopierten Entscheidungsumfangs aus [Entscheidung erstellen“ definiert &#x200B;](#create-a-decision).  Die Luma-App verwendet eine Konfigurationsdatei (`decisions.json`), die die Bereichsparameter basierend auf dem folgenden JSON-Format abruft:
+   * definiert `decisionScope`, ein Objekt, das auf der von Ihnen in der Benutzeroberfläche von Journey Optimizer - Entscheidungs-Management definierten Entscheidung basiert und mithilfe des kopierten Entscheidungsumfangs aus [Entscheidung erstellen“ definiert ](#create-a-decision).  Die Luma-App verwendet eine Konfigurationsdatei (`decisions.json`), die die Bereichsparameter basierend auf dem folgenden JSON-Format abruft:
 
      ```json
      "scopes": [
@@ -462,7 +462,7 @@ Wie in den vorherigen Lektionen erläutert, wird bei der Installation einer mobi
 
    * ruft zwei APIs auf: [`Optimize.clearCachePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) und [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandler).  Diese Funktionen löschen alle zwischengespeicherten Vorschläge und aktualisieren die Vorschläge für dieses Profil.
 
-1. Android Navigieren Sie im Xcode-Projekt **[!UICONTROL Navigator zu {]**}ChevronDown![&#x200B; > &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** views **[!UICONTROL >]** EdgeOffers.**[!UICONTROL .]** Suchen Sie die Funktion `suspend fun onPropositionsUpdateOD(ecid: String, activityId: String, placementId: String, itemCount: Int)` und überprüfen Sie den Code dieser Funktion. Der wichtigste Teil dieser Funktion ist der [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate)-API-Aufruf, der
+1. Android Navigieren Sie im Xcode-Projekt **[!UICONTROL Navigator zu {]**}ChevronDown![ > ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** views **[!UICONTROL >]** EdgeOffers.**[!UICONTROL .]** Suchen Sie die Funktion `suspend fun onPropositionsUpdateOD(ecid: String, activityId: String, placementId: String, itemCount: Int)` und überprüfen Sie den Code dieser Funktion. Der wichtigste Teil dieser Funktion ist der [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate)-API-Aufruf, der
 
    * ruft die Vorschläge für das aktuelle Profil basierend auf dem Entscheidungsumfang ab (den Sie unter Journey Optimizer - Entscheidungs-Management definiert haben),
    * das Angebot aus dem Vorschlag abruft,
@@ -543,6 +543,6 @@ Sie sollten jetzt über alle Tools verfügen, um Ihrer Implementierung von Journ
 >
 >Sie haben die App aktiviert, um Angebote mithilfe der Offer Decisioning- und Target-Erweiterung für Experience Platform Mobile SDK anzuzeigen.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Durchführen von A/B-Tests](target.md)**
