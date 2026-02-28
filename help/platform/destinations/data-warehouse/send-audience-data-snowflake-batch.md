@@ -24,4 +24,4 @@ Erfahren Sie, wie Sie das Snowflake-Batch-Ziel in Adobe Real-Time CDP konfigurie
 Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480193/?captions=ger&learn=on&enablevpops)
