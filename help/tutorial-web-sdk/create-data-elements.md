@@ -56,7 +56,7 @@ Es gibt mehrere Möglichkeiten, Daten aus Ihrer Datenschicht mithilfe der Tags-F
 
 ### Implementieren von XDM in der Datenschicht
 
-Bei diesem Ansatz implementieren Webentwickler ein vollständig definiertes XDM-Objekt als Struktur für die Datenschicht. Anschließend ordnen Sie einfach die gesamte Datenschicht einem XDM-Objekt in Tags zu. Wenn Ihre Implementierung keinen Tag-Manager verwendet, kann dieser Ansatz ideal sein, da Sie mit dem Befehl „XDM sendEvent[ Daten direkt aus Ihrer Anwendung an XDM senden ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Wenn Sie Tags verwenden, können Sie ein benutzerdefiniertes Code-Datenelement erstellen, das die gesamte Datenschicht als Passthrough-JSON-Objekt an das XDM erfasst. Anschließend ordnen Sie die Passthrough-JSON dem XDM-Objektfeld in der Aktion „Ereignis senden“ zu.
+Bei diesem Ansatz implementieren Webentwickler ein vollständig definiertes XDM-Objekt als Struktur für die Datenschicht. Anschließend ordnen Sie einfach die gesamte Datenschicht einem XDM-Objekt in Tags zu. Wenn Ihre Implementierung keinen Tag-Manager verwendet, kann dieser Ansatz ideal sein, da Sie mit dem Befehl „XDM sendEvent[&#x200B; Daten direkt aus Ihrer Anwendung an XDM senden &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Wenn Sie Tags verwenden, können Sie ein benutzerdefiniertes Code-Datenelement erstellen, das die gesamte Datenschicht als Passthrough-JSON-Objekt an das XDM erfasst. Anschließend ordnen Sie die Passthrough-JSON dem XDM-Objektfeld in der Aktion „Ereignis senden“ zu.
 
 Im Folgenden finden Sie ein Beispiel dafür, wie die Datenschicht bei Verwendung des Adobe Client-Datenschichtformats aussehen würde:
 
@@ -133,12 +133,12 @@ Dieser Ansatz beinhaltet die Zuordnung einzelner Datenschichtvariablen zu Datene
 
 ### Zu XDM im Datenstrom zuordnen
 
-Dieser Ansatz verwendet Funktionen, die in die Datenstromkonfiguration integriert sind ([ für die Datenerfassung), ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) die Zuordnung von Datenschichtvariablen zu XDM in Tags übersprungen.
+Dieser Ansatz verwendet Funktionen, die in die Datenstromkonfiguration integriert sind ([&#x200B; für die Datenerfassung), &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) die Zuordnung von Datenschichtvariablen zu XDM in Tags übersprungen.
 
 #### Vorteile
 
 * Flexible Zuordnung einzelner Variablen zu XDM in einer Point-and-Click-Benutzeroberfläche
-* Möglichkeit [ „Berechnung neuer Werte](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) oder [Umwandlung von Datentypen](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) aus einer Datenschicht, bevor sie an XDM gesendet wird
+* Möglichkeit [&#x200B; „Berechnung neuer Werte](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) oder [Umwandlung von Datentypen](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) aus einer Datenschicht, bevor sie an XDM gesendet wird
 
 #### Nachteile
 
@@ -233,7 +233,7 @@ Erstellen Sie diese zusätzlichen Datenelemente, indem Sie die gleichen Schritte
 
 Die soeben erstellten Datenelemente werden zum Erstellen eines XDM-Objekts (für Platform-Programme) und eines Datenobjekts (für Analytics, Target und Audience Manager) verwendet. Diese Objekte haben ihre eigenen speziellen Datenelemente namens **[!UICONTROL Variable]** Datenelemente, die sehr einfach zu erstellen sind.
 
-Um das Datenelement „Variable“ für XDM zu erstellen, binden Sie es an das Schema, das Sie in der Lektion [Konfigurieren eines Schemas“ erstellt ](configure-schemas.md):
+Um das Datenelement „Variable“ für XDM zu erstellen, binden Sie es an das Schema, das Sie in der Lektion [Konfigurieren eines Schemas“ erstellt &#x200B;](configure-schemas.md):
 
 1. Wählen Sie **[!UICONTROL Datenelement hinzufügen]**
 1. Benennen Sie Ihr Datenelement `XDM Variable`. Es wird empfohlen, den XDM-spezifischen Datenelementen „XDM“ voranzustellen, um Ihre Tag-Eigenschaft besser zu organisieren
