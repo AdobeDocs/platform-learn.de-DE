@@ -50,7 +50,7 @@ Es gibt mehrere Möglichkeiten, eine Assurance-Sitzung zu starten.
 
 So aktivieren Sie Edge Trace:
 
-1. Wechseln Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com) und verwenden Sie den Debugger, [ die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Wechseln Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com) und verwenden Sie den Debugger, [&#x200B; die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Stellen Sie sicher, dass Sie beim Debugger angemeldet sind und der Name Ihrer Organisation angezeigt wird. Wenn stattdessen Ihr Benutzername angezeigt wird, melden Sie sich ab und versuchen Sie, sich wieder anzumelden.
 1. Wählen Sie im linken Navigationsbereich von **[!UICONTROL Experience Platform Debugger]** die Option **[!UICONTROL Protokolle]**
 1. Wählen Sie die Registerkarte **[!UICONTROL Edge]** und dann **[!UICONTROL Verbinden]**
