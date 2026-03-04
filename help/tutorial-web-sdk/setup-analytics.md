@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Adobe Analytics mithilfe von Experience Platf
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 17adeb23768ee005428a204a98d18f4e76b9d945
 workflow-type: tm+mt
 source-wordcount: '2895'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Einrichten von Adobe Analytics mit Adobe Experience Platform Web SDK
 
-Erfahren Sie, wie Sie Adobe Analytics mithilfe von [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/web-sdk/overview) einrichten, Tag-Regeln erstellen, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics die Daten erwartungsgemäß erfasst.
+Erfahren Sie, wie Sie Adobe Analytics mithilfe von [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview) einrichten, Tag-Regeln erstellen, um Daten an Adobe Analytics zu senden, und überprüfen, ob Analytics die Daten erwartungsgemäß erfasst.
 
 [Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics) ist eine branchenführende Anwendung, mit der Sie Ihre Kunden als Mitarbeiter verstehen und Ihr Unternehmen mit Customer Intelligence steuern können.
 
@@ -37,7 +37,7 @@ Um diese Lektion abzuschließen, müssen Sie zunächst:
 
 * Machen Sie sich mit Adobe Analytics vertraut und haben Sie Zugriff darauf.
 
-* Sie verfügen über mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie keine Test-/Entwicklungs-Report Suite haben, die Sie für dieses Tutorial verwenden können, erstellen [&#x200B; eine](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Sie verfügen über mindestens eine Test-/Entwicklungs-Report Suite-ID. Wenn Sie keine Test-/Entwicklungs-Report Suite haben, die Sie für dieses Tutorial verwenden können, erstellen [ eine](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Die vorherigen Lektionen in den Abschnitten Erstkonfiguration und Tags-Konfiguration dieses Tutorials absolvieren.
 
@@ -80,7 +80,7 @@ Ab Mai 2024 müssen Sie kein XDM-Schema mehr erstellen, um Adobe Analytics mit P
 
 ### Automatisch zugeordnete Felder
 
-Viele XDM-Felder werden automatisch Analytics-Variablen zugeordnet. Die aktuelle Liste der Zuordnungen finden Sie unter [Analytics-Variablenzuordnung in Adobe Experience Edge](https://experienceleague.adobe.com/de/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Viele XDM-Felder werden automatisch Analytics-Variablen zugeordnet. Die aktuelle Liste der Zuordnungen finden Sie unter [Analytics-Variablenzuordnung in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Dies tritt auf, _(auch wenn Sie kein benutzerdefiniertes Schema definiert haben_. Experience Platform Web SDK erfasst automatisch einige Daten und sendet sie als XDM-Felder an Platform Edge Network. Beispielsweise liest Web SDK die URL der aktuellen Seite und sendet sie als XDM-`web.webPageDetails.URL`. Dieses Feld wird an Adobe Analytics weitergeleitet und die Seiten-URL-Berichte in Adobe Analytics werden automatisch ausgefüllt.
 
@@ -250,9 +250,9 @@ Um zu überprüfen, ob Analytics Daten ordnungsgemäß über Experience Platform
 
 ### Experience Cloud ID-Validierung
 
-1. Navigieren Sie zur [Demo-Site von Luma](https://newluma.enablementadobe.com){target="_blank"}
+1. Navigieren Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com){target="_blank"}
 1. Klicken Sie auf die Schaltfläche Anmelden oben rechts und verwenden Sie die Anmeldedaten u: test@test.com p: Test zur Authentifizierung
-1. Öffnen Sie den Experience Platform-Debugger und [&#x200B; Sie die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft um](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Öffnen Sie den Experience Platform-Debugger und [ Sie die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft um](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
 
 1. Um den Edge-Trace zu aktivieren, wechseln Sie zum Experience Platform-Debugger, wählen Sie im linken Navigationsbereich **[!UICONTROL Protokolle]** und dann die Registerkarte **[!UICONTROL Edge]** aus und klicken Sie auf **[!UICONTROL Verbinden]**
@@ -284,7 +284,7 @@ Um zu überprüfen, ob Analytics Daten ordnungsgemäß über Experience Platform
 
 ### Validierung der Report Suite-Überschreibung
 
-Oben haben Sie eine Datenstrom-Überschreibung für die (Luma[Homepage konfiguriert](https://newluma.enablementadobe.com).  So validieren Sie diese Konfiguration
+Oben haben Sie eine Datenstrom-Überschreibung für die (Luma[Homepage konfiguriert](https://luma.enablementadobe.com).  So validieren Sie diese Konfiguration
 
 1. Suchen Sie nach einer Zeile mit **[!UICONTROL Datastream-Konfiguration nach angewendeter Überschreibung]**. Hier finden Sie die primäre Report Suite und die zusätzlichen Report Suites, die für die Überschreibungen der Report Suite konfiguriert wurden.
 
@@ -296,7 +296,7 @@ Oben haben Sie eine Datenstrom-Überschreibung für die (Luma[Homepage konfiguri
 
 ### Validierung der Inhaltsseitenansichten
 
-Navigieren Sie zu einer Produktseite wie der [Livingston All-Purpose Tight-Produktseite](https://newluma.enablementadobe.com/product.html?id=LLMP09).  Überprüfen Sie, ob Inhalts-Seitenansichten von Analytics erfasst werden.
+Navigieren Sie zu einer Produktseite wie der [Livingston All-Purpose Tight-Produktseite](https://luma.enablementadobe.com/product.html?id=LLMP09).  Überprüfen Sie, ob Inhalts-Seitenansichten von Analytics erfasst werden.
 
 1. Suchen Sie nach `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. Scrollen Sie nach unten, um die Variable `[!UICONTROL gn]` anzuzeigen. Dies ist die dynamische Analytics-Syntax für die `[!UICONTROL s.pageName]`. Erfasst den Seitennamen aus der Datenschicht.
@@ -320,7 +320,7 @@ Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weit
 
    ![Analytics-Produktzeichenfolge](assets/analytics-debugger-prodstring.png)
 
-   Edge Trace behandelt `commerce` Ereignisse geringfügig anders als `productList` Dimensionen. Eine Kontextdatenvariable wird nicht auf die gleiche Weise zugeordnet angezeigt wie der Produktname, der `[!UICONTROL c.a.x.productlistitem.[0].name]` oben zugeordnet ist. Stattdessen zeigt Edge Trace die endgültige automatische Ereigniszuordnung in der Analytics-`event` an. Platform Edge Network ordnet sie entsprechend zu, solange Sie sie bei der `commerce`Konfiguration des Schemas für Adobe Analytics[&#x200B; der richtigen XDM-](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)-Variablen zuordnen. In diesem Fall ist dies die `commerce.productViews.value=1`.
+   Edge Trace behandelt `commerce` Ereignisse geringfügig anders als `productList` Dimensionen. Eine Kontextdatenvariable wird nicht auf die gleiche Weise zugeordnet angezeigt wie der Produktname, der `[!UICONTROL c.a.x.productlistitem.[0].name]` oben zugeordnet ist. Stattdessen zeigt Edge Trace die endgültige automatische Ereigniszuordnung in der Analytics-`event` an. Platform Edge Network ordnet sie entsprechend zu, solange Sie sie bei der `commerce`Konfiguration des Schemas für Adobe Analytics[ der richtigen XDM-](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)-Variablen zuordnen. In diesem Fall ist dies die `commerce.productViews.value=1`.
 
 1. Führen Sie im Fenster Experience Platform Debugger einen Bildlauf nach unten zur Variablen `[!UICONTROL events]` durch. Sie ist auf `[!UICONTROL prodView]` festgelegt
 
@@ -335,8 +335,8 @@ Da Sie sich bereits auf einer Produktseite befinden, verwendet diese Übung weit
 
 **Validieren Sie den Rest der E-Commerce-Ereignisse und Produktzeichenfolgen, die für Analytics festgelegt sind**
 
-1. Fügen Sie [Marco Lightweight Active Hoodie](https://newluma.enablementadobe.com/product.html?id=LLMH13) dem Warenkorb hinzu
-1. Gehen Sie zur [Warenkorbseite](https://newluma.enablementadobe.com/cart.html) und überprüfen Sie Edge Trace auf
+1. Fügen Sie [Marco Lightweight Active Hoodie](https://luma.enablementadobe.com/product.html?id=LLMH13) dem Warenkorb hinzu
+1. Gehen Sie zur [Warenkorbseite](https://luma.enablementadobe.com/cart.html) und überprüfen Sie Edge Trace auf
 
    * `eventType` festgelegt auf `commerce.productListViews`
    * `[!UICONTROL events: "scView"]` und
@@ -426,4 +426,4 @@ Herzlichen Glückwunsch! Du hast es geschafft! Dies ist das Ende der Lektion. Je
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

@@ -6,7 +6,7 @@ feature-set: Target
 feature: A/B Tests
 jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
+source-git-commit: 86489e09514dda647382ca2d20b53c955f3f7efb
 workflow-type: tm+mt
 source-wordcount: '2102'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Bevor Sie A/B-Tests mit Target durchführen können, müssen Sie sicherstellen, 
 ## Voraussetzungen
 
 * App mit installierten und konfigurierten SDKs erfolgreich erstellt und ausgeführt.
-* Zugriff auf Adobe Target mit [Berechtigungen, ordnungsgemäß konfigurierten Rollen, Arbeitsbereichen und Eigenschaften](https://experienceleague.adobe.com/de/docs/target/using/administer/manage-users/enterprise/property-channel).
+* Zugriff auf Adobe Target mit [Berechtigungen, ordnungsgemäß konfigurierten Rollen, Arbeitsbereichen und Eigenschaften](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/property-channel).
 
 
 ## Lernziele
@@ -66,9 +66,9 @@ Um sicherzustellen, dass Daten, die von Ihrer Mobile App an Experience Platform 
 
    Ihre Eigenschaften finden Sie in der Target-Benutzeroberfläche unter **[!UICONTROL Administration]** > **[!UICONTROL Eigenschaften]**. Wählen Sie ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) aus, um das Eigenschafts-Token für die Eigenschaft anzuzeigen, die Sie verwenden möchten. Das Eigenschafts-Token hat ein Format wie `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`. Sie dürfen nur den Wert `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx` eingeben.
 
-   Optional können Sie eine Zielumgebungs-ID angeben. Target nutzt Umgebungen, um Ihre Sites und Vorproduktionsumgebungen zu organisieren, und ermöglicht so ein einfaches Management und separates Reporting. Zu den aktuellen Umgebungen gehören Produktion, Staging und Entwicklung. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/target/using/administer/environments) und [Target](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)Umgebungs-ID).
+   Optional können Sie eine Zielumgebungs-ID angeben. Target nutzt Umgebungen, um Ihre Sites und Vorproduktionsumgebungen zu organisieren, und ermöglicht so ein einfaches Management und separates Reporting. Zu den aktuellen Umgebungen gehören Produktion, Staging und Entwicklung. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) und [Target](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)Umgebungs-ID).
 
-   Optional können Sie einen Target-ID-Namespace eines Drittanbieters angeben, um die Profilsynchronisierung mit einem Identity-Namespace (z. B. einer CRM-ID) zu unterstützen. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)-Namespace für Target-Drittanbieter-ID .
+   Optional können Sie einen Target-ID-Namespace eines Drittanbieters angeben, um die Profilsynchronisierung mit einem Identity-Namespace (z. B. einer CRM-ID) zu unterstützen. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)-Namespace für Target-Drittanbieter-ID .
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -140,7 +140,7 @@ Es gibt viele Arten von Aktivitäten, die Sie in Adobe Target erstellen und in e
 
       ```json
       { 
-          "title": "Luma Anaolog Watch",
+          "title": "Luma Analog Watch",
           "text": "Designed to stand up to your active lifestyle, this women's Luma Analog Watch features a tasteful brushed chrome finish and a stainless steel, water-resistant construction for lasting durability.", 
           "image": "https://newluma.enablementadobe.com/images/Luma_Analog_Watch.jpg" 
       }
@@ -180,7 +180,7 @@ Es gibt viele Arten von Aktivitäten, die Sie in Adobe Target erstellen und in e
 
 1. Zurück im Bildschirm **[!UICONTROL Alle Aktivitäten]**:
 
-   1. Wählen Sie ![&#x200B; Aktivität &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)Mehr“ aus.
+   1. Wählen Sie ![ Aktivität ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)Mehr“ aus.
    1. Wählen Sie ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) **[!UICONTROL Activate]** aus, um Ihren A/B-Test zu aktivieren.
 
    ![Aktivieren](assets/target-activate.png){zoomable="yes"}
@@ -399,6 +399,6 @@ Sie sollten jetzt über alle Tools verfügen, um Ihrer App weitere A/B-Tests ode
 >
 >Sie haben die App für A/B-Tests aktiviert und die Ergebnisse eines A/B-Tests mit der Offer Decisioning- und Target-Erweiterung für Adobe Experience Platform Mobile SDK angezeigt.
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=de).
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Mobile SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Weiter: **[Abschluss und nächste Schritte](conclusion.md)**
