@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Ado
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
+source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 3%
+source-wordcount: '1471'
+ht-degree: 2%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 3%
 Erfahren Sie, wie Sie Ihre Adobe Experience Platform Web SDK-Implementierung mit Adobe Experience Platform Debugger validieren.
 
 
+Experience Platform Debugger ist eine [Chrome](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)Erweiterung, mit der Sie die in Ihren Web-Seiten implementierte Adobe-Technologie sehen können. Experience Platform Debugger und die Entwicklerkonsole Ihres Browsers sind die besten Möglichkeiten, die browserseitigen Aspekte Ihrer Web-SDK-Implementierung zu überprüfen und zu debuggen. Adobe Experience Platform Assurance, das in der nächsten Lektion behandelt wird, bietet die beste Ansicht der Daten, wenn sie in Platform Edge Network ein- und ausgehen.
 
-Experience Platform Debugger ist eine für Chrome verfügbare Erweiterung, mit der Sie die in Ihren Web-Seiten implementierte Adobe-Technologie sehen können:
+![Validierungsdiagramm für Web SDK und Adobe Experience Platform](assets/dc-websdk-validation.png)
 
-* [Chrome-Erweiterung](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Wenn Sie den Debugger noch nie verwendet haben, sollten Sie sich dieses 5-minütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/35916?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) um die Tag-Eigenschaft, die auf der Demo-Site [Luma“ hartcodiert &#x200B;](https://luma.enablementadobe.com), durch Ihre eigene Eigenschaft zu ersetzen.
+In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) um die Tag-Eigenschaft, die auf der Demo-Site [Luma“ hartcodiert ](https://luma.enablementadobe.com), durch Ihre eigene Eigenschaft zu ersetzen.
 
 Diese Technik wird als Umgebungsumschaltung bezeichnet und ist später hilfreich, wenn Sie auf Ihrer eigenen Website mit Tags arbeiten. Damit können Sie Ihre Produktions-Website in Ihren Browser laden, jedoch mit Ihrer *Entwicklungs-)*. Mit dieser Funktion können Sie Tag-Änderungen unabhängig von Ihren regulären Code-Versionen sicher vornehmen und validieren. Schließlich ist diese Trennung der Marketing-Tag-Versionen von Ihren regulären Code-Versionen einer der Hauptgründe, warum Kunden Tags überhaupt verwenden!
 
@@ -56,11 +56,16 @@ Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie
 1. Vergewissern Sie sich, dass Sie die [Demo-Website von Luma](https://luma.enablementadobe.com){target="_blank"} geöffnet haben, und wählen Sie das Symbol für die Experience Platform Debugger-Erweiterung aus
 1. Der Debugger wird geöffnet und zeigt einige Details der hartcodierten Implementierung an (möglicherweise müssen Sie die Luma-Site nach dem Öffnen des Debuggers neu laden)
 1. Vergewissern Sie sich, dass der Debugger **[!UICONTROL mit Luma verbunden]** ist, wie unten dargestellt, und wählen Sie dann das Symbol &quot;**[!UICONTROL lock]**&quot; aus, um den Debugger für die Luma-Site zu sperren.
-1. Klicken Sie auf **[!UICONTROL Schaltfläche „Anmelden]** und melden Sie sich mit Ihrer Adobe-ID bei Adobe Experience Cloud an.
-1. Navigieren Sie jetzt zu **[!UICONTROL Experience Platform Tags]** im linken Navigationsbereich
+1. Wählen Sie die Schaltfläche **[!UICONTROL Anmelden]**, melden Sie sich mit Ihrer Adobe-ID bei Adobe Experience Cloud an und wählen Sie Ihr Unternehmen aus.
+
+   >[!TIP]
+   >
+   > Wenn der Debugger nach der Anmeldung Ihren Benutzernamen anstelle des Organisationsnamens anzeigt, melden Sie sich ab und versuchen Sie es erneut.
+
 
    ![Debugger-Tag-Bildschirm](assets/validate-launch-screen.png)
 
+1. Navigieren Sie jetzt zu **[!UICONTROL Experience Platform Tags]** im linken Navigationsbereich
 1. Wählen Sie die **[!UICONTROL Konfiguration]** aus
 1. Öffnen Sie rechts neben der Stelle, an der die **[!UICONTROL Seiteneinbettungs-Codes]** angezeigt werden, das **[!UICONTROL Aktionen]** und wählen Sie **[!UICONTROL Ersetzen]**
 
@@ -68,9 +73,14 @@ Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie
 
 1. Da Sie authentifiziert sind, ruft der Debugger Ihre verfügbaren Tag-Eigenschaften und Umgebungen ab. Eigenschaft auswählen
 1. `Development` auswählen
-1. Klicken Sie auf die **[!UICONTROL Apply]**-Schaltfläche
-
    ![Wählen Sie die alternative Tag-Eigenschaft aus](assets/validate-switch-selection.png)
+
+   >[!TIP]
+   >
+   > Wenn Sie Ihre Eigenschaft und Umgebung nicht über die Dropdown-Listen auswählen können, gehen Sie stattdessen zu [!UICONTROL Tags] > [!UICONTROL Umgebungen] > [!UICONTROL Entwicklung] > [!UICONTROL Installieren] und klicken Sie auf das Symbol, um den Einbettungs-Code zu kopieren und in den Debugger einzufügen:
+   > ![Wählen Sie die alternative Tag-Eigenschaft aus](assets/validate-copy-embed-code.png)
+
+1. Klicken Sie auf die **[!UICONTROL Apply]**-Schaltfläche
 
 1. Die Luma-Website wird jetzt neu geladen _mit Ihrer eigenen Tag-Eigenschaft_.
 
@@ -78,7 +88,11 @@ Der Experience Platform-Debugger verfügt über eine coole Funktion, mit der Sie
 
 Während Sie mit dem Tutorial fortfahren, verwenden Sie diese Methode, um die Luma-Site Ihrer eigenen Tag-Eigenschaft zuzuordnen, um Ihre Implementierung von Platform Web SDK zu validieren. Wenn Sie Tags auf Ihrer eigenen Website verwenden, können Sie dieselbe Methode zur Validierung von Entwicklungs-Tag-Bibliotheken auf Ihrer Produktions-Website verwenden.
 
-## Überprüfen Client-seitiger Netzwerkanfragen mit Experience Platform Debugger
+
+
+## Validieren mit Debugger
+
+### Überprüfen von Netzwerkanfragen und XDM
 
 Sie können den Debugger verwenden, um Client-seitige Beacons zu validieren, die von Ihrer Platform Web SDK-Implementierung ausgelöst werden, um die an Platform Edge Network gesendeten Daten anzuzeigen:
 
@@ -91,48 +105,48 @@ Sie können den Debugger verwenden, um Client-seitige Beacons zu validieren, die
 
    ![Adobe Experience Platform Web SDK-Anfrage](assets/validate-aep-screen.png)
 
-1. Beachten Sie, wie Sie den `web.webpagedetails.pageView` Ereignistyp, den Sie in Ihrer Aktion [!UICONTROL Variable aktualisieren] angegeben haben, und andere vordefinierte Variablen sehen können, die der `AEP Web SDK ExperienceEvent` Feldergruppe entsprechen
+1. Beachten Sie, wie Sie den `web.webPageDetails.pageView` Ereignistyp, den Sie in Ihrer Aktion [!UICONTROL Variable aktualisieren] angegeben haben, und andere vordefinierte Variablen sehen können, die der `AEP Web SDK ExperienceEvent` Feldergruppe entsprechen
 
    ![Ereignisdetails](assets/validate-event-pageViews.png)
 
-1. Scrollen Sie nach unten zum `web` Objekt, wählen Sie es aus, um es zu öffnen, und überprüfen Sie die `webPageDetails.name`, `webPageDetails.server` und `webPageDetails.siteSection`. Sie sollten mit den entsprechenden `digitalData` Datenschichtvariablen auf der Homepage übereinstimmen
+1. Scrollen Sie nach unten zum `web`, wählen Sie es aus, um es zu öffnen, und überprüfen Sie die `webPageDetails.name`. Sie sollten mit den entsprechenden `adobeDataLayer` Datenschichtvariablen auf der Homepage übereinstimmen
 
 >[!TIP]
 >
-> So zeigen Sie die `digitalData` Datenschicht auf der Homepage an und vergleichen sie:
+> So zeigen Sie die `adobeDataLayer` Datenschicht auf der Homepage an und vergleichen sie:
 >
 > 1. Öffnen Sie auf der Luma-Homepage die Browser-Entwickler-Tools. Wählen Sie bei Chrome die Schaltfläche `F12` auf der Tastatur aus.
 > 1. Wählen Sie die Registerkarte **[!UICONTROL Konsole]** aus
-> 1. Geben Sie `digitalData` ein und wählen Sie `Enter` auf der Tastatur aus, um die Datenschichtwerte aufzurufen
+> 1. Geben Sie `adobeDataLayer` ein und wählen Sie `Enter` auf der Tastatur aus, um die Datenschichtwerte aufzurufen
 
 ![Registerkarte „Netzwerk“](assets/validate-xdm-content.png)
 
+Validieren Sie die Ereignisse und Variablen, die auf den Produktseiten, auf der Warenkorbseite und auf der Bestellbestätigungsseite festgelegt sind.
+
+### Identitätszuordnung validieren
+
 Sie können auch die Details der Identitätszuordnung überprüfen:
 
-1. Melden Sie sich mit den Anmeldedaten `test@test.com`/`test` bei der Luma-Site an
+1. Wählen Sie **[!DNL Sign In]** auf der [Luma-Website](https://luma.enablementadobe.com/){target=_blank}. Wählen Sie **[!DNL Create Account]** aus und erstellen Sie ein Konto mit den Anmeldedaten `test@test.com`/`test`
 
-1. Kehren Sie zur [Startseite „Luma“](https://luma.enablementadobe.com) zurück.
+1. Verwenden Sie den **[!UICONTROL Jump to latest]** im Debugger, um schnell zum neuesten Web SDK-Ereignis zu wechseln (es ist die letzte Spalte). Wählen Sie die **[!UICONTROL Ereignisse]** aus, um das Modal „Details“ zu öffnen.
 
-1. Öffnen Sie den Abschnitt **[!UICONTROL Experience Platform Web]** SDK&quot; im linken Navigationsbereich
-
-   ![Web SDK in Debugger](assets/identity-debugger-websdk-dark.png)
-
-1. Wählen Sie die **[!UICONTROL Ereignisse]** aus, um Details in einem Popup zu öffnen
-
-   ![Web SDK in Debugger](assets/identity-deugger-websdk-event-dark.png)
-
-1. Suchen Sie nach **identityMap** im Popup. Hier sollten `lumaCrmId` mit den drei Schlüsseln AuthenticatedState, ID und primary angezeigt werden:
+1. Suchen Sie im Modal nach **identityMap**. Hier sollten `lumaCrmId` mit drei Schlüsseln für „AuthenticatedState“, „ID“ und die primäre Bezeichnung angezeigt werden:
    ![Web SDK in Debugger](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
 
-### Validieren von Client-seitigen Anfragen mit Browser-Entwicklungs-Tools
+## Validieren mit Browser-Entwickler-Tools
 
-Diese Arten von Anfragedetails sind auch auf der Registerkarte Web-Entwickler-Tools des Browsers **Netzwerk** sichtbar (vorausgesetzt, die Website lädt Ihre Tag-Bibliothek).
+Viele Web-Entwickler ziehen es möglicherweise vor, die Implementierung in den Entwickler-Tools ihres Browsers anzuzeigen. Dies ist besonders wichtig, da nicht alle Browser die Debugger-Erweiterung unterstützen. Aufgrund des flexiblen Frameworks stehen außerdem zusätzliche Implementierungsdetails zur Verfügung, die Sie einsehen können, z. B. Cookies und Antwortdetails.
+
+### Prüfen von Netzwerkanfragen
+
+Details zu Web SDK-Anfragen finden Sie auch auf der Registerkarte Web-Entwickler-Tools **Netzwerk** (vorausgesetzt, die Website lädt Ihre Tag-Bibliothek).
 
 1. Öffnen Sie im Browser die Registerkarte Web-Entwickler-Tools **Netzwerk** und laden Sie die Seite neu. Filtern Sie nach Aufrufen mit `/ee`, um den Aufruf zu finden, ihn auszuwählen und dann auf der Registerkarte **Kopfzeilen** und auf der Registerkarte **Payload** zu suchen
 
    ![Registerkarte „Netzwerk“](assets/validate-dev-console.png)
 
-1. Wechseln Sie zur Registerkarte **Antwort** und beachten Sie, wie der ECID-Wert in der Antwort enthalten ist.
+1. Wechseln Sie zur Registerkarte **Vorschau** und beachten Sie, wie der ECID-Wert in der Netzwerkantwort enthalten ist.
 
    ![Registerkarte „Netzwerk“](assets/validate-dev-console-ecid.png)
 
@@ -140,32 +154,32 @@ Diese Arten von Anfragedetails sind auch auf der Registerkarte Web-Entwickler-To
    >
    > Der ECID-Wert ist in der Netzwerkantwort sichtbar. Sie ist nicht im `identityMap` Teil der Netzwerkanfrage enthalten und wird auch nicht in diesem Format in einem Cookie gespeichert.
 
-## Validieren von Server-seitigen Netzwerkanfragen mit Experience Platform Debugger
+### Cookies im Web SDK
 
-Wie Sie in der Lektion [Konfigurieren eines Datenstroms](configure-datastream.md) gelernt haben, sendet Platform Web SDK zunächst Daten von Ihrer digitalen Eigenschaft an Platform Edge Network. Anschließend sendet Platform Edge Network zusätzliche Server-seitige Anfragen an die entsprechenden Services, die in Ihrem Datenstrom aktiviert sind. Sie können die Server-seitigen Anforderungen von Platform Edge Network mithilfe von Edge Trace im Debugger überprüfen.
+Sehen wir uns einige der Cookies, die Web SDK im Browser setzt, an, während wir uns mit den Entwickler-Tools beschäftigen. Öffnen Sie Anwendung > Cookies > https://luma.enablementadobe.com
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/de/docs/experience-platform/assurance/home). -->
+Es sollten mehrere Cookies angezeigt werden, die von Web SDK gesetzt werden:
+
+* kndctr_[IMS_ORGID]_AdobeOrg_identity: speichert Daten zur ECID
+* kndctr_[IMS_ORGID]_AdobeOrg_cluster: speichert den verwendeten Rechenzentrumsstandort, damit nachfolgende Netzwerkaufrufe an dieselben Edge-Server weitergeleitet werden
+* AMCV_[IMS_ORGID]%40AdobeOrg: Dies ist das veraltete AMCV-Cookie, das von Pre-Web SDK Experience Cloud-Bibliotheken verwendet wird. Es wird festgelegt, weil die Standardeinstellung **[!UICONTROL Migrieren von ECID zu VisitorAPI zur Web SDK]** in der Adobe Experience Platform Web SDK Tags-Erweiterung ausgewählt wurde. Diese Einstellung muss aktiviert sein, wenn Sie Ihre Seiten von älteren Bibliotheken zu Web SDK migrieren. Sie kann jedoch deaktiviert werden, nachdem alle Ihre Seiten für eine bestimmte Zeit migriert wurden.
+
+![Registerkarte „Cookies“](assets/debugger-cookies.png)
+
+Wenn Sie diese Cookies löschen und die Seite neu laden, werden Sie möglicherweise feststellen, dass zusätzliche Drittanbieter-Cookies in der `.demdex.net` Domain gesetzt wurden. Diese sind festgelegt, weil wir die Standardeinstellung **[!UICONTROL Verwenden von Cookies von Drittanbietern]**: **[!UICONTROL Aktiviert]** in der Tags-Erweiterung von Adobe Experience Platform Web SDK beibehalten haben. Wenn Ihr Browser keine Third-Party-Cookies zulässt, werden diese beim Neuladen der Seite entfernt.
+
+![Demdex-Cookies](assets/debugger-demdex-cookies.png)
 
 
-### Edge Trace aktivieren
+### Lokaler Speicher von Luma
 
-So aktivieren Sie Edge Trace:
+Die Demo-Website von Luma verwendet ausschließlich Client-seitige Technologien wie HTML, CSS und JavaScript. Es gibt keine Backend-Speichermechanismen außer der Experience Cloud-Implementierung, die vom Standardstatus der Website verwendet wird. Informationen wie Benutzernamen-Details werden nur lokal in Ihrem Browser mit localStorage gespeichert. Wenn Sie also diese Informationen löschen oder ein Inkognitor-Fenster verwenden, werden Sie feststellen, dass Sie möglicherweise ein zuvor erstelltes Testbenutzerkonto neu erstellen müssen.
 
-1. Wählen Sie im linken Navigationsbereich von **[!UICONTROL Experience Platform Debugger]** die Option **[!UICONTROL Protokolle]**
-1. Wählen Sie die Registerkarte **[!UICONTROL Edge]** und dann **[!UICONTROL Verbinden]**
+![Lokaler Speicher](assets/debugger-local-storage.png)
 
-   ![Edge Trace verbinden](assets/analytics-debugger-edgeTrace.png)
 
-1. Es ist vorerst leer
-
-   ![Connected Edge Trace](assets/analytics-debugger-edge-connected.png)
-
-1. Aktualisieren Sie die [Luma-Startseite](https://luma.enablementadobe.com/) und überprüfen Sie **[!UICONTROL Experience Platform Debugger]** erneut, um zu sehen, wie die Daten durchlaufen werden.
-
-   ![Analytics-Beacon Edge Trace](assets/validate-edge-trace.png)
-
-Zu diesem Zeitpunkt können Sie keine Platform Edge Network-Anfragen anzeigen, die an Adobe-Programme gesendet werden, da Sie keine im Datenstrom aktiviert haben. In zukünftigen Lektionen verwenden Sie Edge Trace, um die ausgehenden Server-seitigen Anforderungen an Adobe-Programme und die Ereignisweiterleitung anzuzeigen. Lernen Sie jedoch zunächst ein anderes Tool zur Validierung von Server-seitigen Anfragen kennen, die von Platform Edge Network - Adobe Experience Platform Assurance - gestellt werden.
+Erfahren Sie als Nächstes, wie Sie diese Netzwerkanfragen validieren, wenn sie von Platform Edge Network mithilfe von Adobe Experience Platform Assurance empfangen und übertragen werden!
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
