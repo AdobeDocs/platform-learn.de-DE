@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die Ereignisweiterleitungseigenschaft mit Exp
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Erfahren Sie, wie Sie die Ereignisweiterleitung mit Daten von Adobe Experience Platform Web SDK verwenden.
 
-Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassung verfügbar ist. Die Ereignisweiterleitung bietet Ihnen die Möglichkeit, Daten direkt über Adobe Experience Platform Edge Network anstelle des herkömmlichen Client-seitigen Browsers an Drittanbieter, die nicht mit Adobe verbunden sind, zu senden. Erfahren Sie mehr über die Vorteile der Ereignisweiterleitung in der [Übersicht über die Ereignisweiterleitung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/event-forwarding/overview).
+Die Ereignisweiterleitung ist ein neuer Eigenschaftstyp, der in der Datenerfassung verfügbar ist. Die Ereignisweiterleitung bietet Ihnen die Möglichkeit, Daten direkt über Adobe Experience Platform Edge Network anstelle des herkömmlichen Client-seitigen Browsers an Drittanbieter, die nicht mit Adobe verbunden sind, zu senden. Erfahren Sie mehr über die Vorteile der Ereignisweiterleitung in der [Übersicht über die Ereignisweiterleitung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
 
@@ -25,7 +25,7 @@ Um die Ereignisweiterleitung in Adobe Experience Platform zu verwenden, müssen 
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/de/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -49,7 +49,7 @@ Am Ende dieser Lektion haben Sie folgende Möglichkeiten:
 
 * Eine Softwarelizenz, die die Ereignisweiterleitung enthält. Die Ereignisweiterleitung ist eine gebührenpflichtige Funktion der Datenerfassung. Weitere Informationen erhalten Sie von Ihrem Adobe Account Team.
 * Die Ereignisweiterleitung ist in Ihrer Experience Cloud-Organisation aktiviert.
-* Benutzerberechtigung für die Ereignisweiterleitung. (In [Admin Console](https://adminconsole.adobe.com/) unter dem Adobe Experience Platform Launch-Produkt Berechtigungselemente für[!UICONTROL Plattformen] > [!UICONTROL Edge] und alle [!UICONTROL Eigenschaftsrechte]). Nach der Gewährung [!UICONTROL &#x200B; im linken Navigationsbereich &#x200B;] Datenerfassungsoberfläche „Ereignisweiterleitung“ angezeigt werden:
+* Benutzerberechtigung für die Ereignisweiterleitung. (In [Admin Console](https://adminconsole.adobe.com/) unter dem Adobe Experience Platform Launch-Produkt Berechtigungselemente für[!UICONTROL Plattformen] > [!UICONTROL Edge] und alle [!UICONTROL Eigenschaftsrechte]). Nach der Gewährung [!UICONTROL  im linken Navigationsbereich ] Datenerfassungsoberfläche „Ereignisweiterleitung“ angezeigt werden:
   ![Eigenschaften der Ereignisweiterleitung](assets/event-forwarding-menu.png)
 
 * Adobe Experience Platform Web oder Mobile SDK ist so konfiguriert, dass Daten an Edge Network gesendet werden. Sie müssen die folgenden Lektionen dieses Tutorials abgeschlossen haben:
@@ -115,7 +115,7 @@ Wiederholen Sie diese Schritte für Staging- und Produktions-Datenströme, wenn 
 
 ## Weiterleiten von Daten von Platform Edge Network an eine Nicht-Adobe-Lösung
 
-In dieser Übung erfahren Sie, wie Sie ein Datenelement für die Ereignisweiterleitung einrichten, eine Regel für die Ereignisweiterleitung konfigurieren und mit dem Tool eines Drittanbieters namens „Webhook[site“ &#x200B;](https://webhook.site/).
+In dieser Übung erfahren Sie, wie Sie ein Datenelement für die Ereignisweiterleitung einrichten, eine Regel für die Ereignisweiterleitung konfigurieren und mit dem Tool eines Drittanbieters namens „Webhook[site“ ](https://webhook.site/).
 
 >[!NOTE]
 >
@@ -291,7 +291,7 @@ Erstellen Sie eine Bibliothek und erstellen Sie alle Änderungen an Ihrer Entwic
 
 Jetzt können Sie Ihre Ereignisweiterleitungseigenschaft mit dem Platform Debugger und Webhook.site überprüfen:
 
-1. Führen Sie die Schritte aus[&#x200B; um die Tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Bibliothek auf der [Luma Demo-Site](https://luma.enablementadobe.com/category-men.html) auf die Tag-Eigenschaft von Web SDK zu wechseln, der Sie Ihre Ereignisweiterleitungs-Eigenschaft im Datenstrom zugeordnet haben.
+1. Führen Sie die Schritte aus[ um die Tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Bibliothek auf der [Luma-Demo-Website ](https://luma.enablementadobe.com/category-men.html) die Tag-Eigenschaft von Web SDK zu wechseln, der Sie Ihre Ereignisweiterleitungs-Eigenschaft im Datenstrom zugeordnet haben.
 
 1. Bevor Sie die Seite neu laden, öffnen Sie im Experience Platform Debugger **[!UICONTROL Protokolle]** im linken Navigationsbereich
 
@@ -324,4 +324,4 @@ Herzlichen Glückwunsch! Sie haben die Ereignisweiterleitung konfiguriert!
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

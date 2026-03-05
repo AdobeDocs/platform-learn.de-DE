@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mithilfe von Tag-Regeln ein Ereignis an Platf
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: d15ce3b51424dba51b5b621b6d92eff85edd5b27
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1863'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Sie sind mit Datenerfassungs-Tags und der [Demo-Site von Luma](https://luma.enablementadobe.com) vertraut und haben die vorherigen Lektionen im Tutorial abgeschlossen:
+Sie sind mit Datenerfassungs-Tags und der [Demo-Website von Luma](https://luma.enablementadobe.com) vertraut und haben die vorherigen Lektionen im Tutorial abgeschlossen:
 
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Konfigurieren eines Identity-Namespace](configure-identities.md)
@@ -87,11 +87,11 @@ Im weiteren Verlauf dieser Lektion werden wir:
 
 1. Verwenden Sie die **[!UICONTROL Ereignis senden]** Aktion, um die Daten an Adobe Experience Platform Edge Network zu senden.
 
-Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; &#x200B;].
+Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; ].
 
 In diesem Video erhalten Sie einen Überblick über den Prozess:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454036/?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Globale Konfigurationsfelder
 
@@ -170,7 +170,7 @@ Beginnen Sie, indem Sie die Produktansichten auf der Produktdetailseite von Luma
 
 1. Wählen Sie **[!UICONTROL Regel hinzufügen]**
 1. Benennen Sie ihn [!UICONTROL `product detail pages - adobeDataLayer push - set product details variables - 20`]
-1. Wählen Sie das Symbol ![+ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
+1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Adobe Client-Datenschicht]**
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Daten gepusht]**
 1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]** die `20` aus. Dieser Reihenfolgenwert stellt sicher, dass die Regel _nach)_ globalen Variablenregel ausgeführt wird.
@@ -231,7 +231,7 @@ Ordnen wir nun unser Array dem XDM-Objekt zu:
 
 
 1. Erstellen Sie eine neue Regel mit dem Namen `cart page - adobeDataLayer push - set cart variables - 20`
-1. Wählen Sie das Symbol ![+ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
+1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Adobe Client-Datenschicht]**
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Daten gepusht]**
 1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]** die `20` aus. Dieser Reihenfolgenwert stellt sicher, dass die Regel _nach)_ globalen Variablenregel ausgeführt wird.
@@ -268,7 +268,7 @@ Ordnen wir nun unser Array dem XDM-Objekt zu:
 Erstellen Sie eine weitere Regel für Kaufereignisse:
 
 1. Erstellen Sie eine neue Regel mit dem Namen `order confirmation - adobeDataLayer push - set purchase variables -  20`
-1. Wählen Sie das Symbol ![+ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
+1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Adobe Client-Datenschicht]**
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Daten gepusht]**
 1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]** die `20` aus. Dieser Reihenfolgenwert stellt sicher, dass die Regel _nach)_ globalen Variablenregel ausgeführt wird.
@@ -304,7 +304,7 @@ Nachdem Sie die Variablen festgelegt haben, können Sie mit der Aktion „Ereign
 
 
 1. Erstellen Sie eine neue Regel mit dem Namen `all pages - adobeDataLayer push - send event - 50`
-1. Wählen Sie das Symbol ![+ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
+1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Adobe Client-Datenschicht]**
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Daten gepusht]**
 1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]**, geben Sie `50` ein (was wahrscheinlich der Standard ist). Dieser Reihenfolgenwert stellt sicher, dass die Regel _nach_ den Regeln zum Festlegen der Variablen ausgeführt wird.
@@ -329,7 +329,7 @@ Nachdem Sie die Variablen festgelegt haben, können Sie mit der Aktion „Ereign
 
 In Ihrer Eigenschaft sollten die folgenden Regeln vorhanden sein:
 
-    ![Liste der Regeln überprüfen](assets/create-rule-list-of-rules.png)
+![Liste der Regeln überprüfen](assets/create-rule-list-of-rules.png)
 
 ## Regeln in einer Bibliothek veröffentlichen
 
@@ -364,4 +364,4 @@ Jetzt können Sie die Daten in der Anfrage mithilfe der Adobe Experience Platfor
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

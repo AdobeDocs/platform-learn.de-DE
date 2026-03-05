@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Ado
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 2%
@@ -23,9 +23,9 @@ Experience Platform Debugger ist eine [Chrome](https://chromewebstore.google.com
 
 Wenn Sie den Debugger noch nie verwendet haben, sollten Sie sich dieses 5-minütige Übersichtsvideo ansehen:
 
->[!VIDEO](https://video.tv.adobe.com/v/35916?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) um die Tag-Eigenschaft, die auf der Demo-Site [Luma“ hartcodiert &#x200B;](https://luma.enablementadobe.com), durch Ihre eigene Eigenschaft zu ersetzen.
+In dieser Lektion verwenden Sie die Erweiterung [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) um die Tag-Eigenschaft, die auf der Demo-Website von [Luma“ hartcodiert ](https://luma.enablementadobe.com), durch Ihre eigene Eigenschaft zu ersetzen.
 
 Diese Technik wird als Umgebungsumschaltung bezeichnet und ist später hilfreich, wenn Sie auf Ihrer eigenen Website mit Tags arbeiten. Damit können Sie Ihre Produktions-Website in Ihren Browser laden, jedoch mit Ihrer *Entwicklungs-)*. Mit dieser Funktion können Sie Tag-Änderungen unabhängig von Ihren regulären Code-Versionen sicher vornehmen und validieren. Schließlich ist diese Trennung der Marketing-Tag-Versionen von Ihren regulären Code-Versionen einer der Hauptgründe, warum Kunden Tags überhaupt verwenden!
 
@@ -39,7 +39,7 @@ Am Ende dieser Lektion können Sie den Debugger für folgende Aufgaben verwenden
 
 ## Voraussetzungen
 
-Sie sind mit Datenerfassungs-Tags und der [Demo-Site von Luma](https://luma.enablementadobe.com/){target="_blank"} vertraut und haben die vorherigen Lektionen im Tutorial abgeschlossen:
+Sie sind mit Datenerfassungs-Tags und der [Demo-Website von Luma](https://luma.enablementadobe.com/){target="_blank"} vertraut und haben die vorherigen Lektionen im Tutorial abgeschlossen:
 
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Konfigurieren eines Identity-Namespace](configure-identities.md)
@@ -182,4 +182,4 @@ Erfahren Sie als Nächstes, wie Sie diese Netzwerkanfragen validieren, wenn sie 
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

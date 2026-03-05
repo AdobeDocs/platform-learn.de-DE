@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre Platform Web SDK-Implementierung mit Ado
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 5%
@@ -29,7 +29,7 @@ Am Ende dieser Lektion können Sie:
 
 ## Voraussetzungen
 
-Sie sind mit Datenerfassungs-Tags und der [Demo-Site von Luma](https://luma.enablementadobe.com){target="_blank"} vertraut und haben die vorherigen Lektionen im Tutorial abgeschlossen:
+Sie sind mit Datenerfassungs-Tags und der [Demo-Website von Luma](https://luma.enablementadobe.com){target="_blank"} vertraut und haben die vorherigen Lektionen im Tutorial abgeschlossen:
 
 * [Konfigurieren eines XDM-Schemas](configure-schemas.md)
 * [Konfigurieren eines Identity-Namespace](configure-identities.md)
@@ -50,7 +50,7 @@ Es gibt mehrere Möglichkeiten, eine Assurance-Sitzung zu starten.
 
 So aktivieren Sie Edge Trace:
 
-1. Wechseln Sie zur [Demo-Site von Luma](https://luma.enablementadobe.com) und verwenden Sie den Debugger, [&#x200B; die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Wechseln Sie zur [Demo-Website von Luma](https://luma.enablementadobe.com) und verwenden Sie den Debugger, [ die Tag-Eigenschaft auf der Site in Ihre eigene Entwicklungseigenschaft zu wechseln](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Stellen Sie sicher, dass Sie beim Debugger angemeldet sind und der Name Ihrer Organisation angezeigt wird. Wenn stattdessen Ihr Benutzername angezeigt wird, melden Sie sich ab und versuchen Sie, sich wieder anzumelden.
 1. Wählen Sie im linken Navigationsbereich von **[!UICONTROL Experience Platform Debugger]** die Option **[!UICONTROL Protokolle]**
 1. Wählen Sie die Registerkarte **[!UICONTROL Edge]** und dann **[!UICONTROL Verbinden]**
@@ -124,4 +124,4 @@ Da ein XDM-Objekt jetzt auf einer Seite ausgelöst wird und Sie wissen, wie Sie 
 
 >[!NOTE]
 >
->Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=de)
+>Vielen Dank, dass Sie sich Zeit genommen haben, um mehr über Adobe Experience Platform Web SDK zu erfahren. Wenn Sie Fragen haben, allgemeines Feedback geben möchten oder Vorschläge für zukünftige Inhalte haben, teilen Sie diese bitte auf diesem [Experience League Community-Diskussionsbeitrag](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
