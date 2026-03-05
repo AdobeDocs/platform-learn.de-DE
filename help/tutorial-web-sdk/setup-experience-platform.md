@@ -60,19 +60,19 @@ Richten wir einen Datensatz für Ihre Luma-Web-Ereignisdaten ein:
 
    ![Datensatz aus Schema erstellen](assets/experience-platform-create-dataset-schema.png)
 
-1. Wählen Sie das in der `Luma Web Event Data` Lektion erstellte [ Schema ](configure-schemas.md) und klicken Sie dann auf **[!UICONTROL Weiter]**
+1. Wählen Sie das in der `Luma Web Event Data` Lektion erstellte [&#x200B; Schema &#x200B;](configure-schemas.md) und klicken Sie dann auf **[!UICONTROL Weiter]**
 
    ![Datensatz, Schema auswählen](assets/experience-platform-create-dataset-schema-selection.png)
 
 1. Geben Sie einen **[!UICONTROL Namen]** und optional **[!UICONTROL Beschreibung]** für den Datensatz an. Verwenden Sie für diese Übung `Luma Web Event Data` und wählen Sie dann **[!UICONTROL Beenden]**
 
-   ![Datensatzname ](assets/experience-platform-create-dataset-schema-name.png)
+   ![Datensatzname &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
 
 Ein Datensatz ist jetzt so konfiguriert, dass er mit der Erfassung von Daten aus Ihrer Platform Web SDK-Implementierung beginnt.
 
 ## Konfigurieren des Datenstroms
 
-Jetzt können Sie Ihren [!UICONTROL Datenstrom) so konfigurieren] dass Daten an [!UICONTROL Adobe Experience Platform gesendet ]. Der Datenstrom ist die Verknüpfung zwischen Ihrer Tag-Eigenschaft, der Platform Edge Network und dem Experience Platform-Datensatz.
+Jetzt können Sie Ihren [!UICONTROL Datenstrom) so konfigurieren] dass Daten an [!UICONTROL Adobe Experience Platform gesendet &#x200B;]. Der Datenstrom ist die Verknüpfung zwischen Ihrer Tag-Eigenschaft, der Platform Edge Network und dem Experience Platform-Datensatz.
 
 1. Öffnen Sie die [Datenerfassung](https://experience.adobe.com/#/data-collection){target="blank"}.
 1. Wählen **[!UICONTROL Datenströme]** in der linken Navigationsleiste aus
@@ -137,7 +137,7 @@ Sie haben bestätigt, dass die Anfrage von Platform Edge Network empfangen und a
 
 Schauen wir uns den Datensatz an! Eine schnelle Option besteht darin, die Funktion **[!UICONTROL Datensatz in der Vorschau anzeigen]** zu verwenden. Web SDK-Daten werden in Mikro-Batches mit dem Data Lake verknüpft und in der Platform-Oberfläche regelmäßig aktualisiert. Es kann 10-15 Minuten dauern, bis die von Ihnen generierten Daten angezeigt werden.
 
-1. Wählen Sie in der [ von ](https://experience.adobe.com/platform/)Experience Platform **[!UICONTROL im linken]** die Option Daten-Management > Datensätze aus, um das Dashboard **[!UICONTROL Datensätze]** zu öffnen.
+1. Wählen Sie in der [&#x200B; von &#x200B;](https://experience.adobe.com/platform/)Experience Platform **[!UICONTROL im linken]** die Option Daten-Management > Datensätze aus, um das Dashboard **[!UICONTROL Datensätze]** zu öffnen.
 
    Das Dashboard listet alle verfügbaren Datensätze für Ihre Organisation auf. Zu jedem aufgelisteten Datensatz werden Details angezeigt, einschließlich seines Namens, des Schemas, dem der Datensatz entspricht, und des Status des letzten Aufnahmelaufs.
 
@@ -161,7 +161,7 @@ Schauen wir uns den Datensatz an! Eine schnelle Option besteht darin, die Funkti
 
 Sie können auch benutzerdefinierte Abfragen der Daten ausführen, um die Datenaufnahme zu validieren:
 
-1. Wählen Sie in der [ von ](https://experience.adobe.com/platform/)Experience Platform **[!UICONTROL im linken Navigationsbereich die Option Daten-Management > Abfragen]** aus, um den Bildschirm **[!UICONTROL Abfragen]** zu öffnen.
+1. Wählen Sie in der [&#x200B; von &#x200B;](https://experience.adobe.com/platform/)Experience Platform **[!UICONTROL im linken Navigationsbereich die Option Daten-Management > Abfragen]** aus, um den Bildschirm **[!UICONTROL Abfragen]** zu öffnen.
 1. Wählen Sie **[!UICONTROL Abfrage erstellen]**
 1. Führen Sie zunächst eine Abfrage aus, um alle Namen der Tabellen im Data Lake anzuzeigen. Geben Sie `SHOW TABLES` im Abfrage-Editor ein und klicken Sie auf das Wiedergabesymbol, um die Abfrage auszuführen.
 1. Beachten Sie in den Ergebnissen, wie der Tabellenname `luma_web_event_data` ist

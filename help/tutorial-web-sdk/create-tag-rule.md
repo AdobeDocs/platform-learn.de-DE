@@ -87,7 +87,7 @@ Im weiteren Verlauf dieser Lektion werden wir:
 
 1. Verwenden Sie die **[!UICONTROL Ereignis senden]** Aktion, um die Daten an Adobe Experience Platform Edge Network zu senden.
 
-Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; ].
+Alle diese Regeln werden ordnungsgemäß mit der Option &quot;[!UICONTROL &quot; &#x200B;].
 
 In diesem Video erhalten Sie einen Überblick über den Prozess:
 
@@ -170,7 +170,7 @@ Beginnen Sie, indem Sie die Produktansichten auf der Produktdetailseite von Luma
 
 1. Wählen Sie **[!UICONTROL Regel hinzufügen]**
 1. Benennen Sie ihn [!UICONTROL `product detail pages - adobeDataLayer push - set product details variables - 20`]
-1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
+1. Wählen Sie das Symbol ![+ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Adobe Client-Datenschicht]**
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Daten gepusht]**
 1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]** die `20` aus. Dieser Reihenfolgenwert stellt sicher, dass die Regel _nach)_ globalen Variablenregel ausgeführt wird.
@@ -231,7 +231,7 @@ Ordnen wir nun unser Array dem XDM-Objekt zu:
 
 
 1. Erstellen Sie eine neue Regel mit dem Namen `cart page - adobeDataLayer push - set cart variables - 20`
-1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
+1. Wählen Sie das Symbol ![+ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Adobe Client-Datenschicht]**
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Daten gepusht]**
 1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]** die `20` aus. Dieser Reihenfolgenwert stellt sicher, dass die Regel _nach)_ globalen Variablenregel ausgeführt wird.
@@ -268,7 +268,7 @@ Ordnen wir nun unser Array dem XDM-Objekt zu:
 Erstellen Sie eine weitere Regel für Kaufereignisse:
 
 1. Erstellen Sie eine neue Regel mit dem Namen `order confirmation - adobeDataLayer push - set purchase variables -  20`
-1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
+1. Wählen Sie das Symbol ![+ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Adobe Client-Datenschicht]**
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Daten gepusht]**
 1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]** die `20` aus. Dieser Reihenfolgenwert stellt sicher, dass die Regel _nach)_ globalen Variablenregel ausgeführt wird.
@@ -304,7 +304,7 @@ Nachdem Sie die Variablen festgelegt haben, können Sie mit der Aktion „Ereign
 
 
 1. Erstellen Sie eine neue Regel mit dem Namen `all pages - adobeDataLayer push - send event - 50`
-1. Wählen Sie das Symbol ![+ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
+1. Wählen Sie das Symbol ![+ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ereignis aus, um einen neuen Trigger hinzuzufügen
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Adobe Client-Datenschicht]**
 1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Daten gepusht]**
 1. Wählen Sie zum Öffnen **[!UICONTROL Erweiterte Optionen]**, geben Sie `50` ein (was wahrscheinlich der Standard ist). Dieser Reihenfolgenwert stellt sicher, dass die Regel _nach_ den Regeln zum Festlegen der Variablen ausgeführt wird.

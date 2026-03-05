@@ -104,7 +104,7 @@ Zunächst müssen Sie weitere Beispieldaten in Ihren profilaktivierten Datensatz
 
 Suchen wir nun nach unserem Profil in Experience Platform:
 
-1. Experience Platform Wählen Sie in der [ von ](https://experience.adobe.com/platform/)im linken Navigationsbereich **[!UICONTROL Kunde]** > **[!UICONTROL Profile]** aus
+1. Experience Platform Wählen Sie in der [&#x200B; von &#x200B;](https://experience.adobe.com/platform/)im linken Navigationsbereich **[!UICONTROL Kunde]** > **[!UICONTROL Profile]** aus
 
 1. Verwenden Sie **[!UICONTROL als]** Identity`Luma CRM ID`Namespace
 1. Kopieren Sie den Wert der `lumaCrmId`, die bei dem von Ihnen im Experience Platform Debugger geprüften Aufruf übergeben wurde, und fügen Sie ihn ein, in diesem Fall `f660ab912ec121d1b1e928a0bb4bc61b`
@@ -177,7 +177,7 @@ Um das Problem des Diagrammreduzierens vorab zu beheben, verwenden Sie die Funkt
 >
 > Diese Schritte werden normalerweise von einem Datenarchitekten konfiguriert, der die gesamte Platform-Implementierung verwaltet. Es gibt viel mehr an der Funktion als hier gezeigt wird und viele komplexe Szenarien, die zuerst sorgfältig simuliert werden sollten.
 >
-> Führen Sie diese Schritte nur aus, wenn Sie dieses Tutorial in einer dedizierten Entwicklungs-Sandbox abschließen, die nach Abschluss dieses Tutorials gelöscht werden kann. Diese Änderungen an der Sandbox können nicht rückgängig gemacht werden. Weitere Informationen finden [ in den Tutorials ](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) Identitätsdiagramm-Verknüpfungsregeln .
+> Führen Sie diese Schritte nur aus, wenn Sie dieses Tutorial in einer dedizierten Entwicklungs-Sandbox abschließen, die nach Abschluss dieses Tutorials gelöscht werden kann. Diese Änderungen an der Sandbox können nicht rückgängig gemacht werden. Weitere Informationen finden [&#x200B; in den Tutorials &#x200B;](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) Identitätsdiagramm-Verknüpfungsregeln .
 
 So aktivieren Sie die Verknüpfungsregeln für Identitätsdiagramme:
 
@@ -221,7 +221,7 @@ Erstellen Sie das Treueschema:
 1. Benennen des `Luma Loyalty Schema`
 1. Fügen Sie die [!UICONTROL Treuedetails] hinzu
 1. Fügen Sie die [!UICONTROL Demografische Details] hinzu
-1. Wählen Sie das Feld `Person ID` aus und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre ] mithilfe des `Luma CRM Id`[!UICONTROL Identity-Namespace].
+1. Wählen Sie das Feld `Person ID` aus und markieren Sie es als [!UICONTROL Identität] und [!UICONTROL Primäre &#x200B;] mithilfe des `Luma CRM Id`[!UICONTROL Identity-Namespace].
 1. Aktivieren Sie das Schema für [!UICONTROL Profil]. Wenn Sie den Umschalter Profil nicht finden können, klicken Sie oben links auf den Schemanamen.
 1. Schema speichern
 
@@ -232,7 +232,7 @@ So erstellen Sie den Datensatz und nehmen die Beispieldaten auf:
 1. Erstellen eines neuen Datensatzes aus dem `Luma Loyalty Schema`
 1. Benennen des Datensatzes `Luma Loyalty Dataset`
 1. Aktivieren des Datensatzes für [!UICONTROL Profil]
-1. Laden Sie die Beispieldatei [luma-loyalty-forWeb.json) ](assets/luma-loyalty-forWeb.json)
+1. Laden Sie die Beispieldatei [luma-loyalty-forWeb.json) &#x200B;](assets/luma-loyalty-forWeb.json)
 1. Ziehen Sie die Datei per Drag-and-Drop in den Datensatz
 1. Bestätigen, dass die Daten erfolgreich aufgenommen wurden
 
